@@ -9,3 +9,8 @@ Credits:
 - Nic333#4835
 - solution#0286
 
+## Decrypted assets, data, and media files
+
+https://assets.atlasacademy.io/GameData/NA/files.txt
+
+example: https://assets.atlasacademy.io/GameData/NA/master/mstSvt.json
