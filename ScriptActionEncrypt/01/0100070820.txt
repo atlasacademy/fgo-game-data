@@ -1,0 +1,113 @@
+
+
+
+＄01-00-07-08-2-0
+[soundStopAll]
+[charaSet A 8001002 1 Mash]
+
+[charaSet B 98106200 1 Merlin]
+[charaSet C 98107500 1 "Uruk Soldier"]
+[charaSet D 98006000 1 "Demonic Beast"]
+
+
+
+
+[bgm BGM_EVENT_4 0.1]
+[scene 32930]
+[se ad5]
+[seVolume ad5 0 0.05]
+[seVolume ad5 1.5 0.4]
+[fadein black 1.5]
+[wait fade]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+
+
+＠Mash
+Wow! Look at this, Senpai!
+[k]
+
+＠Mash
+It's every bit as bustling as Uruk! It's a fortress, but there are lots of people besides soldiers working!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+
+＠Merlin
+Of course there are. They've kept up defenses of this scale for six months. You'd need a city to maintain something like this.
+[k]
+
+[charaFace B 0]
+＠Merlin
+Oh, but be careful. The walls repel the Demonic Beasts, but...
+[k]
+
+[messageOff]
+[seStop ad5 0.7]
+[bgmStop BGM_EVENT_4 0.4]
+[wipeout rectangleStripRightToLeft 0.3 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+
+[bgm BGM_EVENT_3 0.1]
+[se ad16]
+[seVolume ad16 0 0.4]
+
+＠Uruk Soldier
+Alert! Alert! Breach at G-17! All nearby citizens, evacuate! Lion squad, roll out!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFadein D 0.1 1]
+[se ad23]
+
+＠Demonic Beast
+Guuuuruuaaaaaaaaaaaa!
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.3 1]
+[wait wipe]
+
+＠Merlin
+As you can see, Demonic Beasts with strong legs will run up the walls on their own!
+[k]
+
+＠Merlin
+Don't worry, there's no need to hold back, [%1]. Weren't you bored on the way here?
+[k]
+
+＠Merlin
+Let's start off strong by showing these guys what we can do!
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.5]
+[seStop ad16 0.5]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+
+

@@ -1,0 +1,332 @@
+
+＄91-90-02-01-3-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[seLoop ad14]
+[shake 0.05 1.5 1.5 0]
+[charaSet A 8001001 1 Mash]
+[charaSet B 98003000 1 "Dr. Roman"]
+[charaSet C 9002001 1 "Amakusa Shirou"]
+[charaSet D 11001001 1 "Aŋra Mainiiu"]
+
+[se ad33]
+[wait se ad33]
+[se ad32]
+[wt 0.5]
+[se ad33]
+
+[scene 20230]
+[fadein black 1.0]
+[wt 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+[wt 0.4]
+[charaEffect C bit_talk_14]
+[charaFace C 5]
+[wt 0.1]
+[charaMove C -50,0 0.1]
+[se bac10]
+[wait se bac10]
+
+[wt 1.5]
+[charaFace C 4]
+[wt 0.5]
+
+＠Amakusa Shirou
+...It seems... [wt 0.7]I'm the one who lost this fight.
+[k]
+
+[wait charaMove C]
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠Mash
+But the Grail...!
+[k]
+
+[charaFadeout A 0.1]
+
+[communicationChara 98003003 1 5 0 2]
+
+＠Dr. Roman
+This is bad. I'm getting you all out of there now!
+[k]
+
+＠Dr. Roman
+Without a way to destroy it, you have no choice but to evacuate...!
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠Amakusa Shirou
+No,[wt 0.5][charaFace C 0] I will destroy it. Now that I've lost, this is my way of taking responsibility.
+[k]
+
+[charaFace C 1]
+
+＠Amakusa Shirou
+...My conversation with you was worthwhile,[sr]Aŋra Mainiiu. Farewell.
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Aŋra Mainiiu
+Yeah? If it helped you vent a bit, then I guess it was worth the risk.
+[k]
+
+[charaFace D 1]
+
+＠Aŋra Mainiiu
+I'll let you clean up after yourselves. I'm a slacker at heart, you know. Don't go knocking on my door too often!
+[k]
+
+
+[messageOff]
+[charaSpecialEffect D flashErasure 1 3]
+[wt 1]
+[se ad52]
+[wait charaSpecialEffect D]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[wt 1.5]
+[charaFace C 5]
+[wt 0.7]
+
+[charaFace C 2]
+
+[se ad39]
+[charaEffect C bit_talk_36]
+
+＠Amakusa Shirou
+Activating Noble Phantasm.[wt 1.0][sr]Twin Arm - Big Crunch...!
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 1.0]
+[se ad39]
+[wait se ad39]
+[charaEffectStop C bit_talk_36]
+[flashin once 0.5 0.1 FFFFFFFF FFFFFF40]
+[shake 0.05 10 10 2.0]
+[se ad401]
+[seStop ad401 2.0]
+
+[fadeout white 2.0]
+[se ad402]
+[seStop ad402 6.0]
+[seStop ad14]
+
+[wait fade]
+[wt 5.0]
+
+[charaEffectStop C bit_talk_37]
+
+[charaFadeout C 0.1]
+[wt 1.0]
+
+
+[bgm BGM_EVENT_2 0.5]
+
+[scene 10204]
+[fadein white 2.0]
+[wt 1.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.7 1]
+
+＠Dr. Roman
+...That was a close one.
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Amakusa Shirou
+Indeed. But unfortunately, I don't feel bad at all.
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠Dr. Roman
+Now then... [%1], you're his Master.
+[k]
+
+＠Dr. Roman
+Since he's rebelled against you, it's up to you to decide on his punishment.
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Amakusa Shirou
+...
+[k]
+
+？1：Rain check.
+？2：Just don't do it again.
+？！
+
+[charaFace C 4]
+
+＠Amakusa Shirou
+Is that all?
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠Dr. Roman
+(Sigh) I had a feeling you'd say something like that...
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠Amakusa Shirou
+Master. To me, the Grail is[line 2]no, the power the Grail brings is my greatest desire.
+[k]
+
+＠Amakusa Shirou
+If the same thing happens again, I can say with almost certainty that I'll try once more for the Grail.
+[k]
+
+？1：It can't be helped.
+？！
+
+＠Amakusa Shirou
+It can't be...helped...?
+[k]
+
+＠Amakusa Shirou
+...Um, if it happens again, what will you do, Master?
+[k]
+
+[charaFace C 5]
+
+＠Amakusa Shirou
+Will you stop me again?
+[k]
+
+？1：Yes.
+？！
+
+[charaFace C 4]
+
+＠Amakusa Shirou
+I see... We'll never see eye to eye on this matter.
+[k]
+
+？1：That's fine.
+？！
+
+[charaFace C 5]
+
+＠Amakusa Shirou
+What did you say?
+[k]
+
+？1：I'll stop you as many times as it takes.
+？！
+
+＠Amakusa Shirou
+As long as you're my Master, you'll stop me?[sr]As many times...as it takes?
+[k]
+
+[charaFace C 4]
+
+＠Amakusa Shirou
+Well, that's a problem. As a Servant, I cannot betray my Master.
+[k]
+
+[wt 1.2]
+[charaFace C 0]
+[wt 0.5]
+[charaFace C 1]
+
+＠Amakusa Shirou
+...Very well. As long as you're my Master, I won't pursue my dream.
+[k]
+
+＠Amakusa Shirou
+Even if we can't understand each other, we can fight together. Even if we must someday part, we can still hold hands.
+[k]
+
+＠Amakusa Shirou
+If you will believe in me like that, I swear that I won't give in to my desire.
+[k]
+
+[wt 0.5]
+
+[charaFace C 3]
+
+＠Amakusa Shirou
+...Anyway, at least give me some form of punishment.
+[k]
+
+＠Amakusa Shirou
+It wouldn't sit well with me otherwise.
+[k]
+
+？1：...Clean my room, or something...?
+？！
+
+[charaFace C 0]
+
+＠Amakusa Shirou
+Thank you, Master.
+[k]
+
+[charaFace C 1]
+
+＠Amakusa Shirou
+I, Amakusa Shirou Tokisada, will give your room the best cleaning ever!
+[k]
+
+[messageOff]
+[fadeout black 3.0]
+[bgmStop BGM_EVENT_2 3.0]
+[wait fade]
+[soundStopAll]
+[end]
+
+
+
+

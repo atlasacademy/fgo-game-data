@@ -1,0 +1,41 @@
+＄01-00-02-03-3-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[scene 20401 0]
+[charaSet A 8001000 1 Mash]
+[charaSet B 98003003 1 "Dr. Roman"]
+[charaSet C 98002000 1 Fou]
+[charaSet D 1005001 1 Nero]
+[charaSet E 98016000 1 "Roman Soldier"]
+[charaFace A 0]
+[charaFadein A 0 1]
+[fadein black 1]
+[wait fade]
+＠Mash
+The sun is setting, but it seems the attack isn't over yet.
+[k]
+
+[se ad13]
+[wait se ad13]
+[charaFadeout A 0]
+[charaTalk B]
+[charaFadein A 0.1 2]
+[communicationChara 98003003 0 5 0 0]
+＠Dr. Roman
+I'm worried about the enemy's numbers. Keep an[sr]eye on [%1]'s stamina and magical energy consumption.
+[k]
+
+[charaFace A 7]
+＠Mash
+Yes Doctor. Master, try not to exert yourself too much.
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[communicationCharaClear]
+[wait communicationChara]
+[wait fade]
+[soundStopAll]
+[end]

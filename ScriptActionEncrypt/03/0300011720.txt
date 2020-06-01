@@ -1,0 +1,872 @@
+
+
+＄03-00-01-17-2-0
+[soundStopAll]
+
+[charaSet A 5036001 1 Avicebron]
+[charaSet B 7030001 1 "Atalante Alter"]
+[charaSet C 1098123210 1 Goredolf]
+[charaSet E 1098124510 1 "Da Vinci"]
+[charaSet F 99502600 1 Mash]
+[charaSet G 1098128400 1 "Yaga Rebel Soldier"]
+[charaSet H 5009000 1 "Effect Dummy"]
+
+[cameraMove 0.1 60,0 1.2]
+[wt 0.1]
+
+[scene 54903]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_82 0.1]
+
+[cameraMove 2.5 0,0 1.2]
+[wt 1.0]
+
+＠Atalante Alter
+As you can see,[sr]we are still in the construction phase.
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[cameraHome 0.1]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠Atalante Alter
+I will begin by dividing our forces into two groups.
+[k]
+
+＠Atalante Alter
+One group will cut down trees and gather lumber,[sr]while the other will dig out the tunnel.
+[k]
+
+[charaFace B 0]
+
+＠Atalante Alter
+...[%1], I would like you and your Servants[sr]to keep the Yaga in one of these groups safe.
+[k]
+
+＠Atalante Alter
+Both groups are certain to encounter Demonic Beasts, whether they are procuring lumber or digging.
+[k]
+
+[charaFace B 6]
+
+＠Atalante Alter
+We will begin work once you have made your decision.[sr]Which group will you help?
+[k]
+
+[messageOff]
+[wt 0.7]
+
+[input selectBranch]
+
+[charaSet A 5036001 1 Avicebron]
+[charaSet B 7030001 1 "Atalante Alter"]
+[charaSet C 1098123210 1 Goredolf]
+[charaSet E 1098124510 1 "Da Vinci"]
+[charaSet F 99502600 1 Mash]
+[charaSet G 1098128400 1 "Yaga Rebel Soldier"]
+[charaSet H 5009000 1 "Effect Dummy"]
+
+[scene 54903]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+
+
+[bgm BGM_EVENT_82 0.1]
+
+[messageOff]
+[maskin black 1.0]
+[wait mask]
+[label selectBranch]
+
+
+？1：We'll help the lumberjacks.
+？2：We'll help with the tunnel excavation.
+？！
+
+
+
+
+[branch INPUT_SELECT_BRANCH_2 INPUT_SELECT_BRANCH 1]
+
+[label INPUT_SELECT_BRANCH_1]
+
+[charaSet D 11006001 1 Salieri]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Atalante Alter
+I see.
+[k]
+
+＠Atalante Alter
+Very well then, Avicebron and[sr]I will help with the excavation.
+[k]
+
+[charaFace B 6]
+
+＠Atalante Alter
+I would like you to give the[sr]Yaga orders in my absence.
+[k]
+
+？1：Got it!
+？2：You take care out there too.
+？！
+
+[charaFace B 1]
+
+＠Atalante Alter
+I will.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Avicebron
+I'll leave a number of defensive[sr]golems here with you. Good luck.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠Yaga Rebel Soldier
+Thanks for helping us, human.
+[k]
+
+？1：Just call me [%1].
+？！
+
+＠Yaga Rebel Soldier
+Yes [&sir:ma'am].
+[k]
+
+＠Yaga Rebel Soldier
+We're just about to head into the forest and begin chopping down trees now. We'll be counting on you to keep us safe while we work...
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace G 0]
+[charaFadein G 0.1 0]
+[charaFace D 6]
+[charaFadein D 0.1 2]
+
+＠Salieri
+How long do you expect the work to last?
+[k]
+
+＠Yaga Rebel Soldier
+Hmm. Well, a fortress of that size...
+[k]
+
+＠Yaga Rebel Soldier
+...I'd say it'll probably take a day to build the outer walls, another day to reinforce them, and two more days to build the inner structure.
+[k]
+
+＠Salieri
+Very well.
+[k]
+
+[charaFace D 4]
+
+＠Salieri
+Ordinarily, this sort of job would fall well outside the purview of a court musician, but such is a Servant's fate.
+[k]
+
+[charaFace D 6]
+
+＠Salieri
+I would be honored to accept this task.
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[bgmStop BGM_EVENT_82 1.2]
+[wait fade]
+[charaFadeout G 0.1]
+[charaFadeout D 0.1]
+[scene 55300]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠Mash
+We've only gone a little way into the forest,[sr]and things already feel completely different...
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠Yaga Rebel Soldier
+According to the local villagers...
+[k]
+
+＠Yaga Rebel Soldier
+...if you go too deep into these woods, a pack of D'yavol Tron will rip you to shreds and devour you before you can so much as blink.
+[k]
+
+＠Yaga Rebel Soldier
+We ARE encroaching on their territory pretty solidly right now, so we're counting on you to keep us alive!
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠Salieri
+...Hmm.
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout D 0.1]
+[wt 0.4]
+[se ade80]
+[seVolume ade80 0 0]
+[wt 0.3]
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.9]
+[seVolume ade80 0.3 1.0]
+[shake 0.1 3 6 0.2]
+[wt 0.5]
+[se ad495]
+[seVolume ad495 0 0.7]
+[wt 0.3]
+[se ad517]
+[wt 0.6]
+[se ade82]
+
+[charaPut H 2]
+[charaTalk F]
+[charaFace D 6]
+[charaFadein D 0.1 0]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+
+
+＠Mash
+How are you doing, Salieri?[se ad517][seVolume ad517 0 0.7]
+[k]
+
+[charaFace D 4]
+
+＠Salieri
+I'm terribly sorry, but [se ade82]I'm afraid I'm finding it[sr]difficult to concentrate with all this noise.
+[k]
+
+[messageOff]
+[se ad495]
+[wt 0.5]
+[se ad517]
+[seVolume ad517 0 0.6]
+[wt 0.2]
+[se ade82]
+
+＠Salieri
+Would you mind not contacting me for a while,[sr]barring an emergency?[se ad495]
+[k]
+
+[charaFace F 8]
+
+＠Mash
+Oh, right. I'm sorry.
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[charaPut H 1200,1200]
+[charaPut H 0,-50]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+[wt 0.3]
+[wipeFilter cinema 0.5 0]
+[fadein black 0.3]
+[wait fade]
+
+＠Mash
+(I have to say though, Master,[sr]I can't believe how quickly the Yaga are working.)
+[k]
+
+？1：(You'd think they were using chainsaws or something.)
+？！
+
+＠Mash
+(I know. Their stamina is incredible.[charaFace F 12][sr]...Although, when you think about it another way...)
+[k]
+
+＠Mash
+(...they HAVE to be this strong just to survive[sr]in this world. There's no other choice.)
+[k]
+
+＠Mash
+(If they had been humans in our own world,[sr]they might have already gone extinct.)
+[k]
+
+＠Salieri
+...Stop!
+[k]
+
+[messageOff]
+[fadeout black 0.3]
+[wait fade]
+[charaFadeout F 0.1]
+[charaPut H 1200,1200]
+[wt 0.2]
+[wipeOff]
+[fadein black 0.2]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[wt 0.3]
+[charaMove D 0,-60 0.3]
+[se ad581]
+[wt 1.5]
+
+＠Salieri
+I hear a faint rumbling in the ground.[sr]There are very large Demonic Beasts nearby...
+[k]
+
+[bgmStop BGM_EVENT_81 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_80 0.1]
+
+＠Salieri
+It's a D'yavol Tron!
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.3 0.5]
+[wait wipe]
+[charaFadeout D 0.1]
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.3 0.5]
+[wait wipe]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠Mash
+Tell everyone to fall back!
+[k]
+
+[se ad599]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[wt 1.4]
+[seStop ad599 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+
+＠Salieri
+Come, Master.
+[k]
+
+＠Salieri
+We must help the Yaga evacuate, then defeat the D'yavol Tron!
+[k]
+
+[charaFace D 4]
+
+＠Salieri
+Unfortunately, is quite a powerful foe, so I will[sr]need to...what is the phrase? Psych myself up.
+[k]
+
+？1：...Psych yourself up?
+？！
+
+[bgm BGM_EVENT_80 0.3 0.4]
+
+[charaFace D 14]
+
+＠Salieri
+[f small]That is Mozart... The very man himself... That is indeed Mozart... I knew it... I knew it... There you are, Mozart...![-]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+
+＠Mash
+I'm...not sure how I feel about this.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[bgm BGM_EVENT_80 0.5 1.0]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+
+[messageShake 0.05 5 5 0.5]
+＠Salieri
+MOZART!!! Your foul mouth has made its last filthy[sr]joke. I shall rip out your tongue myself!
+[k]
+
+[messageOff]
+[charaMoveReturn D 0,-20 0.3]
+[wt 0.15]
+[charaEffect D bit_talk_quickmove]
+[charaSpecialEffect D erasureReverse 1 0.3]
+[se ad73]
+[charaFadeout D 0.1]
+[wt 0.4]
+
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_2]
+
+
+[charaSet D 98101700 1 "Demon Boar"]
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠Atalante Alter
+Understood. Then Salieri and I will take the forest.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Avicebron
+That leaves the tunnel for me. Master, we must head for the cave in the mountain range outside the forest.
+[k]
+
+＠Avicebron
+Let's take golems, so that we can get there as quickly as possible. Come, there's not a moment to waste.
+[k]
+
+？1：You're really fired up about this, aren't you?
+
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+
+＠Avicebron
+...Is that how I seem to you?
+[k]
+
+＠Avicebron
+...If so, then I suppose I must be a bit more excited than I thought at the prospect of creating new golems.
+[k]
+
+＠Avicebron
+There are bound to be crystals in the area[sr]that should make excellent cores as well.
+[k]
+
+[flag Kuma 1]
+
+？2：What's with you, Avicebron?
+
+＠Avicebron
+...Hm? What do you mean?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠Mash
+Master, I think...!
+[k]
+
+[charaFace F 2]
+
+＠Mash
+I think Avicebron is just excited!
+[k]
+
+[flag Kuma 2]
+
+？！
+
+[branch Kuma_1 Kuma 1]
+
+？1：That's it!
+？2：You're totally pumped!
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Avicebron
+Truly?
+[k]
+
+＠Avicebron
+...I suppose I am, to employ the modern parlance.[sr]So this is what it is to be “pumped.”
+[k]
+
+[label Kuma_1]
+
+
+＠Avicebron
+All the more reason for us[sr]to hurry to the cave at once.
+[k]
+
+[charaTalk A]
+[charaScale A 1.3]
+[charaFadein A 0.1 0,10]
+[charaPut H 1]
+[charaEffect H bit_talk_41]
+[shake 0.05 2 4 0.5]
+
+＠Avicebron
+Let's do this!
+[k]
+
+[messageOff]
+[wipeout downToUp 0.3 2]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaPut H 1200,1200]
+[charaScale A 1.0]
+[charaEffectStop H bit_talk_41]
+[wt 0.5]
+[charaEffect H bit_talk_10_LowLevel]
+[wipein downToUp 0.5 2]
+[wait wipe]
+
+[wt 0.7]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠Mash
+W-wait! Slow down! Come on, Master,[sr]we need to go after him before he gets lost!
+[k]
+
+[messageOff]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout F 0.1]
+[charaPut H 1200,1200]
+[scene 54100]
+[wt 0.5]
+[se ad586]
+[effect bit_talk_41]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+[wt 2.0]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[scene 54700]
+[effectStop bit_talk_41]
+[wt 0.7]
+[seStop ad586 0.1]
+[wt 0.3]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+
+[wt 0.7]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[se ad186]
+＠Avicebron
+[f large]This will be my new workshop!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠Mash
+Avicebron!?
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 21]
+[charaFadein E 0.1 0,0]
+
+＠Da Vinci
+It's no use. He's so pumped at seeing all[sr]these materials that he's completely lost it!
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Goredolf
+So, um, do you think you might be able to do something about the Shadow Border's armor with these?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Avicebron
+[f large][messageShake 0.04 5 5 0.4]Something!?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠Goredolf
+Er, uh, yes![sr]If it's not too much trouble!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Avicebron
+Of course I can!
+[k]
+
+＠Avicebron
+I'll start loading up golems with materials right away. There's so much to move, we have no time to waste.
+[k]
+
+[bgmStop BGM_EVENT_82 0.5]
+
+＠Avicebron
+Oh, yes, I almost forgot. Would you all mind[sr]taking care of those Giant Demon Boars?
+[k]
+
+[messageOff]
+[cameraMove 0.9 32,0 1.1]
+[charaMove A 32,0 0.4]
+[charaFadeout A 0.4]
+[wt 1.4]
+
+[se ade156]
+[seVolume ade156 0 0.0]
+[seVolume ade156 0.7 1.0]
+[cameraMove 0.8 32,0 1.25]
+[wt 0.5]
+
+[charaTalk off]
+[charaFace D 9]
+[charaScale D 0.66]
+[charaFadein D 0.1 -40,-140]
+[charaMoveScale D 0.77 0.3]
+[charaMove D -20,-80 0.3]
+[shake 0.05 6 4 0.4]
+[seStop ade156 0.4]
+[wt 1.2]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 0.5]
+[wait wipe]
+[charaFadeout D 0.1]
+[charaScale D 1.0]
+[cameraHome 0.1]
+[wt 0.1]
+[charaScale D 1.0]
+[wipein rectangleStripRightToLeft 0.4 0.5]
+[wait wipe]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk on]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠Mash
+...Why didn't you mention them sooner!?
+[k]
+
+？1：Come on Avicebron, we need your help too!
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Avicebron
+...[sr]...Oh, all right.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠Mash
+(I've never heard him so petulant before, Senpai...!)
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Avicebron
+Very well, let's hurry up and get this over with.
+[k]
+
+＠Avicebron
+Then I can get back to making new golems, and maybe use them to excavate the tunnel if time permits.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠Yaga Rebel Soldier
+Um, the tunnel's the main[sr]reason we're here, Mr. Mask.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠Mash
+Here come the Demon Boars!
+[k]
+
+[charaFace F 14]
+
+＠Mash
+Avicebron, please hurry and[sr]summon some combat golems!
+[k]
+
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_3]
+
+[messageOff]
+[seStop ad555 0.4]
+[bgmStop BGM_EVENT_80 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

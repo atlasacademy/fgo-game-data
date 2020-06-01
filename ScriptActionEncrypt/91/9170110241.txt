@@ -1,0 +1,132 @@
+＄91-70-11-02-4-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[scene 20700]
+[charaSet A 8001001 1 Mash]
+[charaSet B 98003003 2 "Dr. Roman"]
+[charaSet C 98002000 2 Fou]
+[charaSet D 7011001 2 "Darius III"]
+[charaSet E 4015001 1 Alexander]
+[charaSet F 4002001 0 Iskandar]
+[charaTalk D]
+[charaFace F 4]
+[charaFadein F 0]
+[charaFace D 4]
+[charaFadein D 0]
+[fadein black 1]
+[wait fade]
+＠Darius III
+...
+[k]
+
+＠Iskandar
+What's going on? Why did you suddenly turn into a tame kitten? Is that all you've got? How unsatisfying!
+[k]
+
+？1：Sorry, but this is as far as I can...
+
+？2：I-I can't take it any more.
+
+？！
+
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠Mash
+...Senpai's magical energy is depleted.[sr]I'm afraid, anymore combat would...
+[k]
+
+[charaFadeout A 0.1]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠Darius III
+...
+[k]
+
+[charaFadeout D 0.1]
+[bgmStop BGM_EVENT_3 0.4]
+[wt 0.4]
+[bgm BGM_EVENT_2 0.1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠Iskandar
+...I see. Well, to tell the truth,[sr]I have reached my limit as well.
+[k]
+
+＠Iskandar
+Not only was I not properly summoned, I was forcefully materialized without a Holy Grail[line 2]
+[k]
+
+[effect bit_talk_06]
+[charaFace F 0]
+＠Iskandar
+It only makes sense it turned out like this. Darius III, you are the enormous wall that stood before me.
+[k]
+
+＠Iskandar
+Now that your magical energy supply is down, my voice probably won't reach you anymore[line 2]
+[k]
+
+＠Iskandar
+But the next time we meet, let's face each other[line 2]
+[k]
+
+[messageOff]
+[se ad52]
+[charaSpecialEffect F flashErasure 1 1.7]
+[wt 1]
+[effectStop bit_talk_06]
+[wait charaSpecialEffect F]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠Darius III
+...
+[k]
+
+[charaFadeout D 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠Mash
+Servant Iskandar, elimination confirmed.[sr][line 2]The battle is over.
+[k]
+
+[charaFadeout A 0.1]
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 4]
+＠Dr. Roman
+Whew. He left without causing too much trouble. Thank goodness he's the understanding type. I'm so glad.
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠Mash
+...Yes, you're right.[sr]Any further combat is too much.
+[k]
+
+？1：I...can't...
+
+？2：I'm...beat...
+
+？！
+
+[charaFace A 6]
+＠Mash
+Oh! Senpai!?[sr]Quick, Doctor! Rayshift!
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[soundStopAll]
+[end]

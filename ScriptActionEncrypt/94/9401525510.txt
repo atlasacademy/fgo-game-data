@@ -1,0 +1,218 @@
+
+＄94-01-52-55-1-0
+
+
+
+[soundStopAll]
+
+[bgm BGM_EVENT_65 0.1]
+
+
+
+[messageOff]
+[effectPause bit_talk_parasolwipe]
+[wait effectStart bit_talk_parasolwipe]
+
+
+[branch _PlayEffect_1st PM4 1]
+
+
+[label _PlayEffect_etc]
+
+[tapSkip _from_TapSkip_etc]
+
+[scene 10001]
+
+[fadein white 1.0]
+[wait fade]
+
+[effectPause bit_talk_goal1_6]
+[wait effectStart bit_talk_goal1_6]
+
+[effectStart bit_talk_parasolwipe]
+[wt 1.0]
+
+[effectStart bit_talk_goal1_6]
+[wait effect bit_talk_goal1_6]
+[label _from_TapSkip_etc]
+
+[effectDestroy bit_talk_goal1_6]
+[effectDestroy bit_talk_parasolwipe]
+[fadein black 0]
+[wait fade]
+
+[branch _PlayEffect_End]
+
+
+[label _PlayEffect_1st]
+
+[tapSkip _from_TapSkip_1st]
+
+[effectPause bit_talk_winner1_6]
+[wait effectStart bit_talk_winner1_6]
+
+[scene 10001]
+
+[fadein white 1.0]
+[wait fade]
+
+[effectStart bit_talk_winner1_6]
+
+[wt 4.9]
+[voice 402600_0_M820]
+
+[wt 1.0]
+[voice 402600_0_M821]
+
+[wt 5.0]
+
+[effectStart bit_talk_parasolwipe]
+[scene 10001]
+[wt 1.0]
+[scene 44300]
+[wait effect bit_talk_parasolwipe]
+
+[label _from_TapSkip_1st]
+
+[voiceStop]
+[scene 44300]
+[effectDestroy bit_talk_winner1_6]
+[effectDestroy bit_talk_parasolwipe]
+[fadein black 0]
+[wait fade]
+
+
+[label _PlayEffect_End]
+
+[bgmStop BGM_EVENT_65 0.3]
+[wt 0.4]
+
+[branch _PlayVoice_Start PM4 1]
+
+[branch _PlayVoice_End]
+
+
+
+
+[label _PlayVoice_Start]
+
+[charaSet A 5030001 1 "Caster of Storytelling"]
+[charaSet B 6028001 1 Nitocris]
+
+[flagRandom _PlayVoiceNo 1 3]
+
+
+[branch _PlayVoice_3rd _PlayVoiceNo 3]
+[branch _PlayVoice_2nd _PlayVoiceNo 2]
+[branch _PlayVoice_1st _PlayVoiceNo 1]
+
+
+[label _PlayVoice_1st]
+
+[bgm BGM_EVENT_64 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFace A 0]
+[charaDepth B 1]
+[charaDepth A 9]
+[charaFadein B 0.4 2]
+[charaFadein A 0.4 0]
+[wt 0.7]
+
+[charaFace B 9]
+＠Nitocris
+I [voice 9010005_0_M670]hear them! I hear the people cheering for the pharaohs![wait voice 9010005_0_M670][charaFace B 1][sr]Even [voice 9010005_0_M671]if my victory is assured, it's still nice to hear!
+[k]
+[wait voice 9010005_0_M671]
+
+[charaFace A 3]
+＠Caster of Storytelling
+If [voice 9010005_0_M672]someone guaranteed to win does indeed win, and people rejoice at that...[wait voice 9010005_0_M672][sr]the [voice 9010005_0_M673]story must be one of royalty.[wt 0.8][charaFace A 7][wt 2.6][charaFace A 0]
+[k]
+[wait voice 9010005_0_M673]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_2nd]
+
+[bgm BGM_EVENT_64 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFace A 0]
+[charaDepth B 1]
+[charaDepth A 9]
+[charaFadein B 0.4 2]
+[charaFadein A 0.4 0]
+[wt 0.7]
+
+[charaFace B 2]
+＠Nitocris
+There, [voice 9010005_0_M680]you see!? [wait voice 9010005_0_M680][charaFace B 9][sr]A [voice 9010005_0_M681]new glorious chapter has been added to the legend of the pharaohs!
+[k]
+[wait voice 9010005_0_M681]
+
+[charaFace A 7]
+＠Caster of Storytelling
+I [voice 9010005_0_M682]only pray that this tale will have a happy ending.
+[k]
+[wait voice 9010005_0_M682]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_3rd]
+
+[bgm BGM_EVENT_64 0.1]
+
+[charaTalk A]
+[charaFace B 0]
+[charaFace A 0]
+[charaDepth B 1]
+[charaDepth A 9]
+[charaFadein B 0.4 2]
+[charaFadein A 0.4 0]
+[wt 0.7]
+
+[charaFace A 0]
+＠Caster of Storytelling
+As [voice 9010005_0_M690]I suspected, the key to winning a race is putting safety first.
+[k]
+[wait voice 9010005_0_M690]
+
+[charaFace B 8]
+＠Nitocris
+Since [voice 9010005_0_M691]we did actually win, I guess I can't deny that it worked... [wait voice 9010005_0_M691][charaFace B 7][sr]But [voice 9010005_0_M692]I still think it depends on the situation.
+[k]
+[wait voice 9010005_0_M692]
+
+[charaFace A 2]
+＠Caster of Storytelling
+Not [voice 9010005_0_M693]at all. One must always give everything one has.[wait voice 9010005_0_M693][charaFace A 7][sr]One [voice 9010005_0_M694]must dedicate oneself, fully and sincerely, to putting safety first.
+[k]
+[wait voice 9010005_0_M694]
+
+[charaFace A 3]
+＠Caster of Storytelling
+Hu[voice 9010005_0_M695]rrah for safety. Home is where the safety is.
+[k]
+[wait voice 9010005_0_M695]
+
+[charaFace B 7]
+＠Nitocris
+(Sigh)[voice 9010005_0_M696] ...Well, for now, I might as well enjoy my victory![wt 1.7][charaFace B 9]
+[k]
+[wait voice 9010005_0_M696]
+
+
+[label _PlayVoice_End]
+
+
+[messageOff]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_64 0.4]
+[wait fade]
+[soundStopAll]
+[end]

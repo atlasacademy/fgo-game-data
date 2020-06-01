@@ -1,0 +1,121 @@
+＄01-00-00-06-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[scene 10700]
+[charaSet A 8001000 1 Mash]
+[charaSet B 98003003 2 "Dr. Roman"]
+[charaSet C 98002000 2 Fou]
+[charaSet D 98004000 1 Lev]
+[charaSet E 98005000 1 "Olga Marie"]
+[charaSet F 6002001 0 Servant]
+[charaSet G 3006001 2 Servant]
+[charaSet H 5021001 1 Caster]
+[charaShadow F true]
+[charaFace F 0]
+[charaFadein F 0]
+[charaShadow G true]
+[charaFace G 0]
+[charaFadein G 0]
+[fadein black 1]
+[wait fade]
+＠F：Servant
+Ugh[line 3] Curse you, with the Holy Grail,[sr]before my eyes[line 3]
+[k]
+
+[messageOff]
+[charaSpecialEffect F darkEnemyErasure 0 3]
+[charaSpecialEffect G darkEnemyErasure 2 3]
+[wt 1]
+[se ba5]
+[wait charaSpecialEffect F]
+[wait charaSpecialEffect G]
+[bgmStop BGM_EVENT_3 0.4]
+[bgm BGM_EVENT_2 0.1]
+[wt 0.5]
+[charaFace A 7]
+[charaFadein A 0.1 2]
+[charaFace H 1]
+[charaFadein H 0.1 0]
+＠Mash
+Um, excuse me...[sr]Thank you very much, for saving us from danger...
+[k]
+
+＠Caster
+Hey, good work.[sr]You don't owe me for this, so don't worry about it.
+[k]
+
+[charaFace H 0]
+＠Caster
+You should be more worried about your body.[sr]That damn Assassin kept targeting your butt like a pest!
+[k]
+
+[charaMoveReturn H 2 0]
+[charaShake A 0.05 2 0 0.5]
+[charaFace A 3]
+＠Mash
+Oh!
+[k]
+
+[charaFace H 1]
+＠Caster
+Hey, you look fragile but you have a pretty nice body![sr]Icing on the cake!
+[k]
+
+[charaFace H 0]
+＠Caster
+I have no idea what class you are, but you're pretty[sr]sturdy... Maybe Saber? No, you don't have a sword.
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout H 0.1]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠Olga Marie
+...Hey [%1], what did you think of that?
+[k]
+
+？1：Without a doubt, he's an old pervert.
+
+？2：...He's an ally, maybe?
+
+？！
+
+[se ad13]
+[wait se ad13]
+[charaFadeout E 0]
+[charaTalk B]
+[charaFadein E 0.1 0]
+[communicationChara 98003003 2 5 0 0]
+＠Dr. Roman
+For now, let's get some information.[sr]He seems to be a decent Heroic Spirit.
+[k]
+
+[charaFadeout E 0]
+[charaFace H 0]
+[charaFadein H 0.1 0]
+＠Caster
+Oh, so someone who wants to cut to the chase.[sr]What is this? Some means of communication through magecraft?
+[k]
+
+＠Dr. Roman
+Well met, Caster Servant. I don't know which Heroic[sr]Spirit you are, but we have nothing but respect and awe for you.
+[k]
+
+＠Caster
+Oh, spare me your remarks. I'm sick of hearing them.[sr]State your business, weakling. Isn't that what you're good at?
+[k]
+
+[communicationCharaFace 4]
+＠Dr. Roman
+Uh... I-I see. All right then... Weakling... I got called[sr]a weakling from someone I've met for the first time.
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[communicationCharaClear]
+[wait communicationChara]
+[bgmStop BGM_EVENT_2 0.4]
+[wait fade]
+[soundStopAll]
+[end]

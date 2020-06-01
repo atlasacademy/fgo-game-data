@@ -1,0 +1,220 @@
+
+
+＄03-00-01-14-2-0
+[soundStopAll]
+[scene 54105]
+
+[charaSet A 99502600 1 Mash]
+[charaSet B 5036001 1 Avicebron]
+[charaSet C 2010001 1 Billy]
+[charaSet D 98115000 1 Effect]
+
+[charaSet F 98115000 1 "Effect 2"]
+
+[charaSet G 98115000 1 "Effect 2"]
+
+[charaPut F 1]
+[charaEffect F bit_talk_snowstorm_03]
+
+[charaPut D 1200,1200]
+[charaEffect D bit_talk_10_LowLevel]
+
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad603]
+[seVolume ad603 0 0.3]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10]
+[wt 0.1]
+[se ad31]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠Mash
+[line 3][sr][line 3]
+[k]
+
+[messageOff]
+[charaFace A 14]
+[charaFadeTime A 0.2 0.7]
+[wt 0.2]
+
+＠Mash
+[line 3]□*#[sr]>"#$[line 3]
+[k]
+
+[messageOff]
+[seStop ad31 0.5]
+[charaEffectStop G bit_talk_10]
+[wt 0.1]
+[charaPut D 1]
+[wt 0.3]
+[charaFadeTime A 0.3 1.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠Mash
+...Sorry, we're back online!
+[k]
+
+＠Mash
+I'm afraid our transmission is cutting in and out.[sr]It might be because of how fast you're moving.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut D 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Avicebron
+Can't you track Master even[sr]without communicating with [&him:her]?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Mash
+Yes, of course.[sr]I'm monitoring [&him:her] right now.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut D 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Avicebron
+Perhaps we should slow down for a while and take a moment to make a report. Why don't we take a break, or even set up camp for the night?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Billy
+Well that sounds like a fine idea.[sr]I confess, I'm about ridden down.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Mash
+What do you think, Master?[sr]You must be tired as well, no?
+[k]
+
+？1：You bet I am! Woohoo, break time!
+
+＠Mash
+Right! Okay everyone, please[sr]start getting ready to make camp.
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut D 1200,1200]
+
+[seVolume ad603 1.0 0.0]
+
+[cueSe Servants_103200 bac512]
+[cameraMove 0.4 0,0 1.2]
+[wt 1.0]
+[charaPut F 1500,1500]
+[cameraHome 0.7]
+[wt 0.7]
+[bgmStop BGM_EVENT_77 1.0]
+[wt 1.5]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Avicebron
+...Incidentally, I believe we should begin by eliminating the nearby Demonic Beasts and securing the area.
+[k]
+
+＠Avicebron
+We certainly wouldn't want them[sr]attacking us while we are asleep.
+[k]
+
+？2：Well, before we do...
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut D 1200,1200]
+
+[seVolume ad603 1.0 0.0]
+
+[cueSe Servants_103200 bac512]
+[cameraMove 0.4 0,0 1.2]
+[wt 1.0]
+[charaPut F 1500,1500]
+[cameraHome 0.7]
+[wt 0.7]
+[bgmStop BGM_EVENT_77 1.0]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Avicebron
+Hm?[sr]...Ah, I see. There are Demonic Beasts nearby.
+[k]
+
+[bgm BGM_EVENT_80 0.1]
+
+＠Avicebron
+Then let us take care of them first.
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Billy
+All right then, it's huntin' time!
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

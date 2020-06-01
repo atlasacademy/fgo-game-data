@@ -1,0 +1,119 @@
+
+
+＄94-02-00-12-1-1
+
+[soundStopAll]
+
+[charaSet A 99502600 1 Mash]
+[charaSet B 2021002 1 "General Setsubun"]
+[charaSet C 6021000 1 Shuten-Douji]
+
+[charaSet G 98115000 1 Effect]
+[charaSet H 98115000 1 Effect]
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 53000]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.4 1]
+
+＠Shuten-Douji
+Mmm...ouch. This doesn’t look great.
+[k]
+
+[charaFace C 0]
+
+＠Shuten-Douji
+But it'd be sooo dull if I went out here and now, so...[sr]Hup!
+[k]
+
+[messageOff]
+[se ad73]
+[seVolume ad73 0 0.7]
+[charaFadeout C 0.1]
+[wt 0.4]
+[se ad73]
+[seVolume ad73 0 0.5]
+[wt 0.3]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠Mash
+Shuten's running away! She just leaped through the window and...appears to be climbing even higher!?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Shuten-Douji
+Oh, just so you all know, the exhaustion's[sr]gonna hit you the hardest up on the roof.
+[k]
+
+＠Shuten-Douji
+So you might want to be careful not to send anyone up there unless you're reeeally sure they can take it.
+[k]
+
+[messageOff]
+[charaEffect C bit_talk_quickmove]
+[charaSpecialEffect C erasureReverse 1 0.3]
+[bgmStop BGM_EVENT_24 1.0]
+[se ad73]
+[seVolume ad73 0 0.5]
+[wt 1.5]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠General Setsubun
+In that case...[bgm BGM_EVENT_4 0.1]it seems that I must be the one to[sr]go after her, since I am the least susceptible.
+[k]
+
+＠General Setsubun
+My apologies, Master, but it is bound to be unstable up there, so I cannot bring you with me. Please wait here until I return.
+[k]
+
+？1：I'm sorry. I suppose it's all up to you, General.
+？2：Just don't be TOO hard on her, okay?
+？！
+
+[messageOff]
+[charaMoveReturn B 0,-10 0.4]
+[wt 1.0]
+[charaFace B 1]
+
+＠General Setsubun
+Worry not, Master.[sr]Just leave everything to me!
+[k]
+
+[messageOff]
+[charaEffect B bit_talk_quickmove]
+[charaSpecialEffect B erasureReverse 1 0.3]
+[se ad73]
+[wt 1.0]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_4 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

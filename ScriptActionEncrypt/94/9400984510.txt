@@ -1,0 +1,208 @@
+
+＄94-00-98-45-1-0
+
+[charaSet A 1022001 1 "Gilles de Rais"]
+[charaSet B 9001001 1 "Jeanne_Silhouette"]
+[charaSet C 9001001 1 Jeanne]
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+
+[scene 10310]
+
+[fadein black 2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.6]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+＠Gilles de Rais
+Valentine's Day chocolates... I see.
+[k]
+
+＠Gilles de Rais
+To gift them to a geezer like me is quite humbling.
+[k]
+
+＠Gilles de Rais
+...I must offer you a return gift. If only I could return to France, I could offer you mountains of gold, silver, and jewels.
+[k]
+
+？1：Respectfully...
+？2：Thank you, but no thank you...
+？！
+
+[charaFace A 1]
+＠Gilles de Rais
+...Oh yes, I know! There is one thing!
+[k]
+
+[charaFace A 0]
+＠Gilles de Rais
+Please wait a moment.
+[k]
+
+[messageOff]
+
+[se ad95]
+[charaFadeout A 0.4]
+[wt 1.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[scene 10310]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠Gilles de Rais
+Here it is. Please take this.
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+
+？1：This is...?
+？！
+
+[bgmStop BGM_EVENT_2 0.3]
+[wt 0.3]
+[bgm BGM_EVENT_7 0.3]
+
+[charaFace A 1]
+＠Gilles de Rais
+This is a magazine from the Jeanne Fan Club.
+[k]
+
+？1：Jeanne...fan club?
+？！
+
+
+＠Gilles de Rais
+Yes. Not only does it cover the Normal Saint, White Saint, Black Saint, Little Saint, and High School Girl Saint Jeanne, but also the Yellow version that manifested that one time.
+[k]
+
+＠Gilles de Rais
+It's the most perfect and complete fanzine! Details about Jeanne's childhood, how she came to her ultimate fate, her most loved and hated foods...
+[k]
+
+＠Gilles de Rais
+Intimate details about her daily schedule, what she does... This gem of a magazine covers it ALL!
+[k]
+
+[charaFilter B silhouette 00000000]
+
+[charaFadein B 0.2 -512,0]
+[charaMove B -288,0 1.4]
+
+＠Gilles de Rais
+Sir Blackbeard DID make a questionable comment, saying, “The book is too thin. Is it really any good?” Anyway, this magazine was made with the love of true fans, and in the end,
+[k]
+
+＠Gilles de Rais
+with the help of Sir Tesla, they managed to get an interview with Heroine X and the cover photograph was made possible with the help of Anne and Mata Hari,
+[k]
+
+＠Gilles de Rais
+who managed to talk Jeanne into wearing a swimsuit, since Jeanne lamented that she couldn't go to the sea last year even though she had a swimsuit ready...
+[k]
+
+＠Gilles de Rais
+so they were able to get that miraculous shot! And then, the Little Saint said, “Am I going to look like that when I grow up!? Really!? Yes!” And so this magazine that received the highest prais[line 3]
+[k]
+
+[se ad181]
+[charaShake A 0.05 2 4 1.0]
+
+[charaTalk A]
+[charaFace A 2]
+＠Gilles de Rais
+Ouch ouch ouch ouch! My neck! You'll break my neck!
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Jeanne
+Yes. Yes, I will.
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFace A 4]
+[charaFadein A 0.1 2]
+＠Gilles de Rais
+Ooh, my Jeanne! Forgive me for keeping this mum!
+[k]
+
+[charaTalk C]
+＠Jeanne
+...It is wonderful that you are enthusiastically interacting with the other Servants...
+[k]
+
+[charaTalk C]
+[charaFace C 5]
+＠Jeanne
+I will gather everyone here to give you a scolding!
+[k]
+
+[charaTalk off]
+[charaMove C 1 1.0]
+[wait charaMove C]
+
+[wt 0.2]
+
+[se ad181]
+[charaShake A 0.05 2 4 1.0]
+[charaFace A 5]
+
+[wt 0.5]
+
+[charaFace A 2]
+＠Gilles de Rais
+[charaShake A 0.1 1 2 0][charaMove C -1000,0 2.0][wt 0.2][charaMove A -1000,0 2.5]I'm...terribly...honestly...sorry...and...apologize...!
+[k]
+
+[wt 0.5]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+
+[messageOff]
+
+？1：...I'm taking this.
+？2：And so passes a great knight... How sad...
+？！
+
+[fadeout white 1]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+[soundStopAll]
+[end]

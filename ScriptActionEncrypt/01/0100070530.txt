@@ -1,0 +1,410 @@
+
+
+
+＄01-00-07-05-3-0
+[soundStopAll]
+[charaSet A 8001002 1 Mash]
+[charaSet B 98106200 1 Merlin]
+[charaSet C 3027000 1 Ana]
+[charaSet D 98003000 1 "Dr. Roman"]
+[charaSet E 5009001 1 "Da Vinci"]
+[charaSet F 3028001 1 "Jaguar Warrior"]
+
+
+
+[se ad220]
+[seVolume ad220 0 0.05]
+[scene 30400]
+[fadein black 1.5]
+[seVolume ad220 2.0 0.3]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.4 1]
+
+
+＠Mash
+...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠Merlin
+...
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+
+＠Ana
+...
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[se ad13]
+[charaTalk D]
+[communicationChara 98003003 1 5 0 0]
+[wt 0.3]
+
+
+＠Dr. Roman
+...? Everyone got quiet when you entered the forest. What's wrong?
+[k]
+
+＠Dr. Roman
+I mean, it's a dense forest, so I know you're worried about getting lost, but...
+[k]
+
+
+？1：It's SUPER hot!
+
+？！
+
+[seStop ad220 1.5]
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk C]
+[bgm BGM_EVENT_5 0.1]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+
+＠Ana
+...I agree. The heat is intense... I thought forests were...cooler... And quieter...
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+
+＠Mash
+I know how Ana feels... I underestimated this as well...
+[k]
+
+＠Mash
+The heat rising up from the ground, the strong smell of dirt, the cries of the animals that are sure to drive you crazy...
+[k]
+
+＠Mash
+So this is...what they call a jungle...
+[k]
+
+＠Mash
+Was this what Earth was like 65 million years ago, just before the asteroid hit?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 0]
+
+＠Dr. Roman
+Haha, are you talking about the great extinction? The one where an asteroid hit the Yucatán Peninsula and wiped out the dinosaurs?
+[k]
+
+＠Dr. Roman
+I can only watch you guys on the screen, but that's gotta be an exaggeration, right?
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠Merlin
+It's no exaggeration! This is terrible! The heat! So many flies! And it's so hard to walk!
+[k]
+
+＠Merlin
+And this Ether is incredible! Much denser than the Isle of Britain!
+[k]
+
+＠Merlin
+Romani, are you monitoring the density of magical energy? It's on par with a Reality Marble!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 4]
+
+
+＠Dr. Roman
+Oh, um... I'm embarrassed to say, but the instruments are unstable.
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[communicationCharaLoop 98111500 1 5 0 0]
+
+
+＠Da Vinci
+It's like Egypt. This is a different world, or rather, the mythological system itself is different.
+[k]
+
+＠Da Vinci
+I can only do so much by pointing Sheba towards Uruk. I can't distinguish heat sources, let alone details of your surroundings.
+[k]
+
+＠Da Vinci
+You'll have to rely on your senses. Utilize your eyes and noses to detect danger.
+[k]
+
+？1：...So, basically, we can't use radar...
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 4]
+
+＠Dr. Roman
+I'm sorry... The problem is the sea of trees there. If there were fewer of them, I could help, but...
+[k]
+
+？2：...Eyes, sure. But nose...?
+[communicationCharaFace 1]
+
+＠Da Vinci
+Yup. In a jungle, your sense of smell is an important source of information. It tells you the past better than any echolocators.
+[k]
+
+＠Da Vinci
+The smell of an animal lingers in an area. If you could visualize it as a number, you could easily deduce what, when, and where it went.
+[k]
+
+＠Da Vinci
+It's not only animals that hunt by sense of smell.
+[k]
+
+＠Da Vinci
+Humans can use their brains to do something similar.
+[k]
+
+？！
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Mash
+According to the map, Ur is one kilometer south. That means we only have to endure this heat for another 20 minutes, Master.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠Merlin
+Yeah. I seriously hope we're done after that! And next time let's hire a guide or a camel!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+＠F：???
+Heh... What a commendable idea! You wimps from the plains won't last a day without a guide!
+[k]
+
+＠F：???
+Next time you want to enter the jungle, give money to a local, and lower your head to the ground and say this:
+[k]
+
+＠F：???
+“Buenas noches, señorita! Señor, señor, do you want some peyote?”
+[k]
+
+[messageOff]
+[se ad221]
+[seVolume ad221 0 0.05]
+[seVolume ad221 0.5 0.5]
+[wt 1.5]
+[seStop ad221 1.5]
+
+[bgm BGM_EVENT_3 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Mash
+Master! I can't make it out, but something's there![sr]It's moving at high speed above the trees!
+[k]
+
+[messageOff]
+[wipeout downToUp 0.3 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.1]
+[se ad221]
+[seVolume ad221 0 0.05]
+[seVolume ad221 0.5 0.3]
+[effect bit_talk_42]
+[wipein upToDown 0.3 1]
+[wait wipe]
+
+＠F：???
+Hahahaha! Hahahahahahahahaha!
+[k]
+
+＠F：???
+Meowhahahahahaha! I'm not just something![sr]I am[line 3]I am...[effectStop bit_talk_42][seStop ad221 0.7] Hmm. What am I?
+[k]
+
+＠F：???
+Wait a minute. Asking meow for details puts meow into a tight spot... I know I'm a purretty girl, but...
+[k]
+
+[se ad221]
+[seStop ad221 0.4]
+
+＠F：???
+(Gasp) Oh no! While I was thinking I forgot where I put my booby (read: amusing) traps!
+[k]
+
+＠F：???
+Tch! Curse you! You nerds should be ashamed of yourselves for challenging someone you've never met to a battle of wits!
+[k]
+
+
+＠Merlin
+I got it! She's a dummy!
+[k]
+
+[messageOff]
+[se ad221]
+[seStop ad221 0.4]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[charaShake F 0.05 5 5 0.4]
+
+＠F：???
+I'm not a bunny! Why does everybody think I'm a bunny!?
+[k]
+
+[messageOff]
+[charaMoveReturn F 0,20 0.3]
+[wait charaMove F]
+[charaMove F 0,-256 0.1]
+[wait charaMove F]
+[charaFadeout F 0.1]
+[wt 0.1]
+[wipeout upToDown 0.1 1]
+[wait wipe]
+[wt 0.1]
+[wipein downToUp 0.1 1]
+[wait wipe]
+
+[se ad223]
+[wt 0.4]
+
+？1：The not-bunny fell from above!
+？2：Bwah!?
+
+？！
+
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 2]
+
+＠Dr. Roman
+What is this strange creature!? Did we just discover a new species!?
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+
+＠F：???
+No! I am no one! You might call meow an avatar of the jungle! An embodiment of great warriors!
+[k]
+
+[charaEffect F bit_talk_41]
+[se ad139]
+
+＠F：???
+You can call meow Jaguar Warrior! Servant Jaguar Warrior makes an appearance!
+[k]
+
+[charaEffectStop F bit_talk_41]
+[wt 0.4]
+
+
+[charaFace F 5]
+＠Jaguar Warrior
+Now everybody focus on meow! I spent a year on this catchphrase and I want you all to hear it!
+[k]
+
+＠Jaguar Warrior
+“You may make fun of my name, you may forget about meow, but I am still here, for I am the ultimate tiger, Jaguar Warrior!” (Hero pose)
+[k]
+
+[charaFace F 0]
+＠Jaguar Warrior
+Hehe! (Satisfied grin)
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+
+＠Ana
+[%1], give us your orders. The cold water of Ur awaits us.
+[k]
+
+？1：Okay, we'll move on by taking out the local wildlife!
+[charaFace C 2]
+
+＠Ana
+Roger! Tiger massacre commencing.
+[k]
+
+
+？2：Is that...the goddess of the sou...
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+
+＠Mash
+Master! You mustn't say it! Let's pretend we saw nothing and fight!
+[k]
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.5]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+
+
+

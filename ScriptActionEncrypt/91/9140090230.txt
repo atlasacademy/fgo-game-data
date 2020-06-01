@@ -1,0 +1,164 @@
+＄91-40-09-02-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_5 0.1]
+[scene 21410]
+[charaSet A 8001000 2 Mash]
+[charaSet B 98003000 1 "Dr. Roman"]
+[charaSet C 98002000 1 Fou]
+[charaSet D 4009200 2 Anne]
+[charaSet E 4009100 2 Mary]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+[charaFace D 0]
+[charaFadein D 0.1 2]
+[fadein black 1]
+[wait fade]
+
+＠Mary
+Whew. Homunculi and zombies.[sr]Were the zombies people killed by the Templars?
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr. Roman
+If that is true, they must have been there a long time. Let's pray their souls find rest.
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0]
+[charaFace D 0]
+[charaFadein D 0.1 2]
+＠Mary
+We're almost to the end.[sr]The treasure should be there!
+[k]
+
+[se ad14]
+
+[wt 0.4]
+[messageOff]
+[wipeout rightToLeft 1.0 1]
+[bgmStop BGM_EVENT_5 1.0]
+[wait wipe]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[charaEffect C bit_talk_06]
+[scene 20112]
+[wt 1.5]
+[seStop ad14 1.0]
+[wipein leftToRight 1.0 1]
+[wait wipe]
+[cameraMove 1.0 150,100 1.5]
+[wait camera]
+[cameraMove 1.5 -150,100 1.5]
+[wait camera]
+[cameraMove 1.0 0,0 1.0]
+[wait camera]
+[charaEffectStop C bit_talk_06]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace E 1]
+[charaFadein E 0.4 0]
+[charaFace D 1]
+[charaFadein D 0.4 2]
+＠Anne
+Wow...
+[k]
+
+＠Mary
+Ah...
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[bgm BGM_EVENT_4 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠Mash
+This is...
+[k]
+
+？1：Treasure!
+
+？2：Mounds of riches!
+
+？！
+
+[charaFadeout A 0.1]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠Mary
+We did it, Master!
+[k]
+
+[charaFadeout E 0.1]
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr. Roman
+H-Hold it! Hold it! I-In that cave, I'm picking up a life-form signal that we have all become very familiar with!
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_4 0.1]
+[communicationCharaClear]
+[wait communicationChara]
+
+[effect bit_talk_41]
+[se ad17]
+[shake 0.05 0 4 0]
+[wt 2.15]
+[effectStop bit_talk_41]
+[wt 0.5]
+[shakeStop]
+
+[bgm BGM_EVENT_3 0.1]
+
+[wt 0.4]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠Mash
+Some say the Templars used black magic, others that they didn't.
+[k]
+
+[charaFadeout A 0.1]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0]
+[charaFace D 4]
+[charaFadein D 0.1 2]
+＠Mary
+Maybe they were, maybe they weren't.[sr]I'm sure there are tons of stories like that.
+[k]
+
+＠Anne
+But would you normally go to these lengths?
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr. Roman
+A dragon!? Um... I can only say...well... F-Fight!!
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[communicationCharaClear]
+[wait communicationChara]
+[soundStopAll]
+[end]

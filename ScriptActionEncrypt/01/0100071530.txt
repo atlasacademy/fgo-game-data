@@ -1,0 +1,148 @@
+
+
+
+＄01-00-07-15-3-0
+[soundStopAll]
+[charaSet A 98106200 1 Merlin]
+[charaSet B 8001002 1 Mash]
+[charaSet C 2020001 1 Ishtar]
+[charaSet D 98003000 1 "Dr. Roman"]
+[charaSet E 3028000 1 "Jaguar Warrior"]
+
+[bgm BGM_EVENT_24 0.1]
+[scene 34600]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Merlin
+It's time. We already have troops assembled inside the Northern Wall.
+[k]
+
+＠Merlin
+An hour after we leave here, the troops will be deployed to prepare for the decisive battle on the Demonic Front.
+[k]
+
+＠Merlin
+I'd give it about a fifty-fifty chance that Gorgon will be lured by our diversion. But the Demonic Beasts will definitely come out of the Cedar Forest.
+[k]
+
+＠Merlin
+That's how strong their desire for revenge against humans is.
+[k]
+
+＠Merlin
+They won't be able to suppress their urges if the humans form a line against the wall.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠Mash
+...Once we have confirmation of that, we will infiltrate the Cedar Forest from the ruined city of Babylon and head for the Blood Fort.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠Merlin
+Yes, Quetzalcoatl will defend the Northern Wall...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,-50]
+[charaMove E 0,0 0.2]
+[wait charaMove E]
+
+＠Jaguar Warrior
+And me of course! ME-ow! Here I am, just in the nick of time!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+
+＠Ishtar
+The infiltration team will be me, [%1], Mash, Ana, and Merlin.
+[k]
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[se ad13]
+[charaTalk D]
+[communicationChara 98003003 1 5 0 5]
+
+＠Dr. Roman
+Roger that. I'll redirect three slides of Sheba on Quetzalcoatl, and monitor the situation at the Northern Wall.
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+
+＠Merlin
+All right. Let's begin. [%1], give me your orders!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[messageOff]
+
+？1：Operation Marduk Blitz, begin!
+
+？！
+
+[se ad16]
+[wt 1.5]
+[messageOff]
+[bgmStop BGM_EVENT_24 1.0]
+[seStop ad16 1.5]
+[fadeout black 1.5]
+[wait fade]
+[scene 32940]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1]
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 5]
+
+＠Dr. Roman
+We've got enemy signatures already! It looks like a group of rogue Demonic Beasts from Babylon!
+[k]
+
+＠Dr. Roman
+This will be a skirmish before you enter the Cedar Forest! Let's do this, [%1]!
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.5]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+
+

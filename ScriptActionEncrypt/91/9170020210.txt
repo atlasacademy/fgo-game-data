@@ -1,0 +1,131 @@
+＄91-70-02-02-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 10202]
+[charaSet A 98001000 2 Mash]
+[charaSet B 98003000 0 "Dr. Roman"]
+[charaSet C 98002000 2 Fou]
+[charaSet D 7002001 1 Lancelot]
+[charaSet E 98013000 1 Critter]
+[charaSet F 98006000 1 Werebeast]
+[charaTalk A]
+[charaFace B 0]
+[charaFadein B 0]
+[charaFace A 6]
+[charaFadein A 0]
+[fadein black 1]
+[wait fade]
+＠Mash
+Lancelot's...face?
+[k]
+
+＠Dr. Roman
+Yeah. See, he's always wearing that helmet, right?[sr]Don't you want to see what's under there?
+[k]
+
+？1：Yes, I totally do.
+
+？2：He's probably quite handsome.
+
+？！
+
+[charaFadeout A 0.1]
+[charaFace C 0]
+[charaFadein C 0.1 2]
+＠Fou
+Foou?
+[k]
+
+[charaFace B 1]
+＠Dr. Roman
+You'll have to admit, Lancelot is the ideal image of a knight! He's the most popular Heroic Spirit among the ladies in this world.
+[k]
+
+[charaFadeout C 0.1]
+[charaFace A 4]
+[charaFadein A 0.1]
+＠Mash
+Haa...[sr]But how can we get his helmet off?
+[k]
+
+[charaFace B 0]
+＠Dr. Roman
+Plan A: A slip of the hand during battle![sr]All right, let's give it a try!
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+[charaSet A 8001000 2 Mash]
+[charaFadeout A 0.5]
+[charaFadeout B 0.5]
+[wt 0.5]
+[scene 20300]
+[communicationChara 98003003 1 5 0 0]
+[fadein black 0.5]
+[wait fade]
+＠Dr. Roman
+Now then, I'm going to start the battle simulation[sr]program. Is everybody ready?
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFace A 7]
+[charaFadein A 0.1 2]
+＠Lancelot
+...
+[k]
+
+＠Mash
+(I feel really bad about tricking him...)[sr]...Got it, Doctor. I'm ready any time.
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 1]
+＠Dr. Roman
+The enemy's a simulated Servant used for trainings,[sr]so it's not dangerous. Don't worry.
+[k]
+
+[communicationCharaFace 0]
+＠Dr. Roman
+(I'm going to set the parameters at the highest, though.)
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 7]
+[charaFadein A 0.1 2]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+＠Mash
+Let's begin, Master.
+[k]
+
+？1：All right! Let's do our best!
+
+？2：Am I supposed to slip and pull his helmet off?
+
+？！
+
+[charaFace A 6]
+＠Mash
+Senpai![sr]Shhh! Shhh!
+[k]
+
+[se ad1]
+[wait se ad1]
+[charaFace D 2]
+＠Lancelot
+[image berserker_language_2][line 2]!!!
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_2 0.4]
+[wait fade]
+[soundStopAll]
+[end]

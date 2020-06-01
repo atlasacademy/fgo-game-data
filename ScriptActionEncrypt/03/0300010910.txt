@@ -1,0 +1,314 @@
+
+
+＄03-00-01-09-1-0
+[soundStopAll]
+
+
+[charaSet A 99502600 1 Mash]
+[charaSet B 5036001 1 Avicebron]
+[charaSet H 5009000 1 "Effect Dummy"]
+
+[scene 54100]
+
+[effect bit_talk_snowstorm_02]
+[se ad555]
+[seVolume ad555 0 0.1]
+
+[fadein black 1.5]
+[seVolume ad555 1.5 0.6]
+[wait fade]
+
+[wt 2.0]
+[seVolume ad555 1.0 0.4]
+[wt 1.0]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Mash
+...It's just around midday now,[sr]but this blizzard isn't letting up at all...
+[k]
+
+[charaFace A 7]
+
+＠Mash
+I placed a waypoint marking the location of the rebel army's hideout. Please take care not to get turned around on your way there.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[effectStop bit_talk_snowstorm_02]
+[effect bit_talk_snowstorm_01]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Avicebron
+...![sr]Stop, [%1].
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 2]
+[charaTalk A]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+[charaFace A 6]
+[charaFadein A 0.1 2]
+
+＠Mash
+Avicebron?
+[k]
+
+＠Avicebron
+Shh...
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[cameraMove 1.0 70,30 1.2]
+[se ad553]
+[seVolume ad553 0 0.0]
+[se ad14]
+[seVolume ad14 0 0.0]
+[wt 0.7]
+[seVolume ad14 0.5 0.5]
+[seVolume ad555 0.5 0.2]
+[seVolume ad553 0.8 0.6]
+[wt 2.0]
+[seStop ad553 0.3]
+[seStop ad14 1.0]
+
+[bgm BGM_EVENT_81 0.1]
+
+[cameraHome 1.0]
+[wt 1.2]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠Mash
+What was that sound...?
+[k]
+
+？1：It sounds like something is...crawling.
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Avicebron
+Something quite large, at that...
+[k]
+
+＠Avicebron
+You know, I've heard rumors that giants used[sr]to walk the earth back in the Age of Gods...
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠Mash
+...I wonder if that's what Patxi was talking about.
+[k]
+
+？1：You mean the D'yavol Tron?
+？！
+
+＠Mash
+Right. The Demonic Beast that can[sr]destroy a whole village on its own.
+[k]
+
+＠Mash
+Looking at it now,[sr]it seems that was no exaggeration...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Avicebron
+It appears to resemble a large hydra...[sr]Well, Master? What would you have us do?
+[k]
+
+＠Avicebron
+Shall we fight it, or avoid it?[sr]I believe there is no wrong answer here.
+[k]
+
+＠Avicebron
+...I will go along with whatever you decide.
+[k]
+
+[input selectBranch]
+[seStop ad13 0.1]
+[seStop ad553 0.1]
+[seStop ad555 0.1]
+
+[charaSet A 99502600 1 Mash]
+[charaSet B 5036001 1 Avicebron]
+[charaSet H 5009000 1 "Effect Dummy"]
+
+[scene 54100]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[charaEffect H bit_talk_10_LowLevel]
+[effect bit_talk_snowstorm_02]
+
+[se ad555]
+[seVolume ad555 0 0.1]
+[seVolume ad555 0.5 0.2]
+
+[bgm BGM_EVENT_81 0.1]
+
+[messageOff]
+[maskin black 1.0]
+[wait mask]
+[label selectBranch]
+
+
+？1：Let's get out of here before it sees us.
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Mash
+I think that's a smart choice.[sr]All right, I'll guide you on a detour.
+[k]
+
+[messageOff]
+[wipeout rightToLeft 1.0 1]
+[seStop ad555 1.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaPut H 1200,1200]
+[wt 1.0]
+
+[wipein leftToRight 1.0 1]
+[wait wipe]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Avicebron
+Wait. I can see a number of Krichat'.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Mash
+...They must be waiting to pick[sr]off the D'yavol Tron's leftovers.
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[bgmStop BGM_EVENT_81 0.3]
+[wt 0.5]
+
+[bgm BGM_EVENT_80 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Avicebron
+It doesn't seem like that serpent has noticed them.[sr]I believe we should take them down quickly and quietly.
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_80 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+
+？2：It might attack a village if we don't take it down.
+
+[seStop ad555 0.5]
+[bgmStop BGM_EVENT_81 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_82 0.1]
+
+＠Avicebron
+As you wish.
+[k]
+
+＠Avicebron
+We will certainly need to face this enemy sooner[sr]or later if we are to survive here in this Russia.
+[k]
+
+＠Avicebron
+I will begin by slowing it down with my golems.[sr]Mash Kyrielight, would you mind analyzing it for us?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠Mash
+Right! I'll do everything I can to compile[sr]as much data about it as possible!
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_82 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+
+？！
+

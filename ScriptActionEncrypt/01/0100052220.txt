@@ -1,0 +1,152 @@
+
+＄01-00-05-22-2-0
+
+
+[soundStopAll]
+[bgm BGM_EVENT_5 0.1]
+
+[charaSet A 7020001 1 "Cú Chulainn Alter"]
+[charaSet B 8001001 1 Mash]
+[charaSet C 3005002 1 Elisabeth]
+[charaSet D 2003001 1 "Robin Hood"]
+[charaSet E 7020000 1 "Cú Chulainn Alter"]
+
+[charaSet H 98003003 1 "Dr. Roman"]
+
+[scene 20903]
+[fadein black 2]
+[wait fade]
+
+
+[charaTalk off]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.4]
+
+[se ad42]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.7 1]
+[wt 0.7]
+[charaTalk on]
+[charaFadeout E 0.1]
+＠Cú Chulainn Alter
+...
+[k]
+
+[charaFadeout A 0]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠Mash
+His form...changed!?
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+
+[charaTalk H]
+[se ad13]
+[communicationChara 98003003 1 5 0 5]
+[wt 0.3]
+＠Dr. Roman
+It seems the Holy Grail's wish is still driving him.[sr]“A better king”[line 2]in his case, “stronger.”
+[k]
+
+[communicationCharaFace 2]
+＠Dr. Roman
+He's going to attack with even more strength than before! Be careful!
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_5 1.5]
+[wait fade]
+
+[wt 0.5]
+[bgm BGM_EVENT_3 0.1]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFace D 5]
+[charaFadein C 0.1 2]
+[charaFadein D 0.1 0]
+
+[scene 12000]
+
+
+[fadein black 1.5]
+[wait fade]
+
+＠Elisabeth
+...Hah ...Hah ...Hah!
+[k]
+
+[charaFace D 2]
+＠Robin Hood
+[line 2]Oh tree of mourning, sharpen your fangs! “Yew Bow!”
+[k]
+
+[se ad14]
+[effect bit_talk_21]
+[wt 1.0]
+[fowardEffect bit_talk_17]
+[flashin once 0.1 0.3 9ACD32AF 9ACD3200]
+[seStop ad14 0.4]
+[se ad34]
+[shake 0.05 0 5 1.0]
+[wt 1.0]
+[effectStop bit_talk_21]
+[fowardEffectStop bit_talk_17]
+[wt 0.5]
+[flashin once 1.0 1.0 9400D3DF 9400D300]
+[wt 0.5]
+[se bac34]
+[seStop bac34 1.5]
+[wt 2.5]
+
+[charaFace D 4]
+＠Robin Hood
+Oh man, this isn't good.[sr]It's not working at all!
+[k]
+
+[charaFace C 2]
+＠Elisabeth
+Manager, give me some water![sr]My throat's all dry!
+[k]
+
+[charaFace D 2]
+＠Robin Hood
+...By manager, you mean me!?[sr]That being said, I do have water!
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠Elisabeth
+I won't lose!
+[k]
+
+[charaFadeout C 0.4]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+
+[se bac14]
+[wait se bac14]
+[wt 0.4]
+
+
+[soundStopAll]
+[end]

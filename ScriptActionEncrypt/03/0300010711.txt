@@ -1,0 +1,277 @@
+
+＄03-00-01-07-1-1
+
+[soundStopAll]
+
+[charaSet A 5036001 1 Avicebron]
+[charaSet B 1098126400 1 Patxi]
+[charaSet C 1098126900 1 "Yaga Chief"]
+[charaSet D 1098128400 1 "Yaga Rebel Soldier 1"]
+[charaSet E 1098128500 1 "Yaga Rebel Soldier 2"]
+[charaSet G 1098127000 1 Golem]
+[charaSet H 98115000 1 Effect]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 54800]
+
+[charaTalk off]
+[charaFace A 0]
+[charaFace G 0]
+[charaFadein A 0.1 300,0]
+[charaFadein G 0.1 -150,0]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+[se ade25]
+[charaMoveReturn A 298,0 0.25]
+[wt 0.5]
+[charaFadeout A 0.4]
+
+[se ad57]
+[charaMoveScale G 1.2 1.0]
+[charaMove G -150,-50 0.3]
+[wt 0.3]
+[charaMove G -150,0 0.4]
+[wt 0.4]
+[seStop ad57]
+[charaMove G -150,-50 0.3]
+[se ad57]
+[wt 0.3]
+[charaFadeout G 0.1]
+[wt 0.1]
+[seStop ad57 1.0]
+
+[wt 0.1]
+[se ad85]
+[charaPut H 1]
+[charaEffect H bit_talk_42]
+[wt 1.0]
+
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_42]
+
+[charaFace D 2]
+[charaFace E 0]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+[wt 0.2]
+
+[se bac150]
+[charaFace D 3]
+[charaEffect D bit_talk_13]
+[charaShake D 0.05 3 3 0.3]
+[wt 0.2]
+[se bac150]
+[charaFace E 3]
+[charaEffect E bit_talk_13]
+[charaShake E 0.05 3 3 0.3]
+[wt 0.2]
+[charaMove D 256,-50 0.3]
+[wt 0.1]
+[charaMove E -256,-50 0.3]
+[charaFadeout D 0.3]
+[wt 0.1]
+[charaFadeout E 0.3]
+[wt 0.1]
+[se ad144]
+[wt 0.1]
+[se ad144]
+[wt 0.5]
+
+[se ad85]
+[effect bit_talk_42 0,0 H]
+[wt 1.0]
+
+[effectStop bit_talk_42]
+
+[charaFace D 0]
+[charaFace E 2]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+[wt 0.2]
+
+[se bac150]
+[charaFace E 3]
+[charaEffect E bit_talk_13]
+[charaShake E 0.05 3 3 0.3]
+[wt 0.2]
+[se bac150]
+[charaFace D 3]
+[charaEffect D bit_talk_13]
+[charaShake D 0.05 3 3 0.3]
+[wt 0.2]
+[charaMove E -256,-50 0.3]
+[wt 0.1]
+[charaMove D 256,-50 0.3]
+[charaFadeout E 0.3]
+[wt 0.1]
+[charaFadeout D 0.3]
+[wt 0.1]
+[se ad144]
+[wt 0.1]
+[se ad144]
+[wt 0.5]
+
+[charaScale G 1.0]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+[wt 0.3]
+[se ade25]
+[wt 0.5]
+
+[se ad575]
+[shake 0.05 3 3 1.5]
+[charaSpecialEffect G erasure 1 1.5]
+[wt 1.5]
+[seStop ad575 1.0]
+[wt 0.5]
+[bgmStop BGM_EVENT_80 0.3]
+[wt 0.5]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Avicebron
+That should do it.[sr]As you can see, they are still very much alive.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace A 0]
+[charaFace C 3]
+[charaFadein A 0.1 2]
+[charaFadein C 0.1 0]
+
+＠Yaga Chief
+You mean, you really didn't kill a single one...?[sr]Are you...a Servant...?
+[k]
+
+＠Avicebron
+Why, yes, I am.
+[k]
+
+[charaFace C 0]
+
+＠Yaga Chief
+I see...
+[k]
+
+＠Yaga Chief
+We have heard of Servants before.
+[k]
+
+＠Yaga Chief
+They say you are monsters from another world, and that you are terribly powerful, despite looking like humans.
+[k]
+
+＠Yaga Chief
+I've even heard that some Servants possess[sr]power great enough to rival the Tsar...
+[k]
+
+＠Yaga Chief
+...Are you one of them?
+[k]
+
+＠Avicebron
+No, there is nothing particularly special about me.
+[k]
+
+＠Avicebron
+I am just a simple scholar and golem keeper. A perfectly ordinary human, as you might find anywhere in the world.
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Yaga Chief
+...On behalf of our village, I promise to[sr]offer our full support to the rebel army.
+[k]
+
+＠Yaga Chief
+Though I'm afraid we can only spare a little[sr]in the way of food and medical supplies...
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠Patxi
+That's okay. Even a little bit goes a long way.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Yaga Chief
+By the way, I trust you'll be delivering your manifesto to the two neighboring villages as well?
+[k]
+
+＠Yaga Chief
+Let me write you a letter of recommendation. It should help things go more smoothly when you visit them.
+[k]
+
+？1：Thank you so much!
+？！
+
+[charaFace C 2]
+
+＠Yaga Chief
+...Although, I'm afraid we've lost contact with the other two villages recently. They may have been overrun by bandits, or Demonic Beasts.
+[k]
+
+＠Yaga Chief
+If they have, could I ask you[sr]to give them a proper burial?
+[k]
+
+？1：Okay. We will.
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Avicebron
+Please store any food or medicine you can spare[sr]in this carrier golem, if you don't mind.
+[k]
+
+＠Avicebron
+Now then, let us head to the next village.
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

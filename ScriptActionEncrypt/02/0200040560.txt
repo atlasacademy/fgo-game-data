@@ -1,0 +1,172 @@
+
+
+＄02-00-04-05-6-0
+
+[soundStopAll]
+
+[charaSet A 1098121200 1 Captain]
+[charaSet B 1098121200 1 Soldier]
+
+[charaSet C 98006200 1 Ghost]
+
+[charaSet D 6014001 1 "Mata Hari"]
+[charaSet E 2003001 1 "Robin Hood"]
+
+[charaSet F 98115000 1 Effect]
+
+[charaSet G 1098120400 1 Carter]
+
+[bgm BGM_EVENT_3 0.1]
+
+
+[scene 49502]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad84]
+[wt 1.0]
+[se ad83]
+[wt 1.0]
+
+＠
+　　　　　　　 Massachusetts Army – Cavalry
+[k]
+
+＠Captain
+Move aside! Citizens, make way!
+[k]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Robin Hood
+...What's this? We're getting reinforcements now?
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Mata Hari
+Mr. Carter's on one of the horses.[sr]He must have brought them here.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Robin Hood
+Yeah, but against things like these, he's just leading more people to their dea[line 2]Hm?
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[seLoop ad84]
+[seVolume ad84 0 0.1]
+[seVolume ad84 1.6 1.0]
+[wt 1.6]
+[seStop ad84 0.1]
+[se ad83]
+[wt 1.0]
+[seStop ad83 0.5]
+[wt 0.7]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.2 1]
+[charaMove A 0,-30 0.2]
+[wt 0.1]
+[se ad223]
+[charaMove A 1 0.3]
+[wt 0.3]
+
+＠Captain
+Take aim! ...Fire a volley!
+[k]
+
+[messageOff]
+[se ad346]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠Carter
+Here! Use these silver bullets![sr]Don't worry, I've got plenty to go around!
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Soldier
+What difference is that going to...
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[se ade64]
+[wt 0.5]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+[fowardEffect bit_shot_01]
+[charaShake C 0.05 3 3 0.5]
+[se bac16]
+[wt 0.5]
+
+[se ad22]
+[charaSpecialEffect C enemyErasure 1 1.0]
+[wt 2.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Captain
+Hey... It worked! All right, Professor!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Soldier
+So now we just shoot 'em like any other enemy, huh? They're not that fast either. We can do this!
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

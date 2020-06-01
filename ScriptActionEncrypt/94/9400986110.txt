@@ -1,0 +1,256 @@
+
+＄94-00-98-61-1-0
+
+[charaSet A 7008001 1 Beowulf]
+[charaSet B 98006000 1 Announcement]
+[charaSet C 98006000 1 Enemy]
+[charaSet D 98002000 1 Fou]
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[scene 20800]
+
+[fadein black 2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+＠Beowulf
+Take this!
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.5]
+
+[se bac10]
+[effect bit_talk_13]
+[wt 0.1]
+[charaShake C 0.01 2 2 0.5]
+[wt 0.3]
+
+[charaSpecialEffect C enemyErasure]
+[wt 0.5]
+[se ad18]
+[wt 1.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wt 0.5]
+
+＠[51d4ff]Announcement[-]
+[51d4ff]Enemy has been eliminated.[sr][-][51d4ff]All targets eradicated.[-]
+[k]
+
+[charaFadeout C 0.1]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Beowulf
+All done. Master, isn't it time for you to eat?
+[k]
+
+＠Beowulf
+Don't you think you should call it a day?
+[k]
+
+？1：I guess so.
+？2：Good work today!
+？！
+
+[charaFace A 1]
+
+＠Beowulf
+Yep. Good work.
+[k]
+
+？1：By the way...
+？2：These are chocolates.
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+[charaFace A 0]
+
+＠Beowulf
+Hm? What's this?[sr]Chocolate? Why chocolate?
+[k]
+
+＠Beowulf
+...
+[k]
+
+[charaFace A 2]
+＠Beowulf
+Ah! I get it! That's what everyone's so excited about.
+[k]
+
+＠Beowulf
+Val...Valen...Valendies Day!
+[k]
+
+？1：Absolutely wrong.
+？！
+
+[charaFace A 0]
+＠Beowulf
+Hm? Wrong? Whatever. But chocolates?[sr]Did you mention chocolates?
+[k]
+
+[charaFace A 1]
+＠Beowulf
+Hahaha! Well, then I'll take them!
+[k]
+
+
+[se ad217]
+[seStop ad217 0.5]
+
+＠Beowulf
+So sweet! These are sweet! Thanks!
+[k]
+
+＠Beowulf
+Hm? Was I not supposed to eat them? It's fine? Hahahaha. Guess so.
+[k]
+
+[charaFace A 0]
+＠Beowulf
+But since I have the chance, I'm going to give you a gift too. Let's see... Wait in your room for a bit!
+[k]
+
+[messageOff]
+
+[wipeout leftToRight 1.0 1.0]
+[wait wipe]
+
+[charaFadeout A 0.4]
+
+[wt 1.0]
+
+[scene 10400]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+＠Fou
+Fou...
+[k]
+
+？1：I'm hungry...
+？！
+
+＠Fou
+...![sr]Fou, fou, fou!
+[k]
+
+[charaFadeout D 0.1]
+[messageOff]
+
+[se ad8]
+[wait se ad8]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠Beowulf
+Sorry 'bout that. I made you wait.[sr]Here ya go!
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+
+？1：Steak!?
+？！
+
+＠Beowulf
+Yeah. Emiya made the side dishes, but I cooked the meat.
+[k]
+
+[wt 0.3]
+
+？1：Delicious!
+
+[charaFace A 1]
+
+＠Beowulf
+Yeah, eat up. Glad I hunted it down!
+[k]
+
+？2：My taste buds have awakened!
+
+[charaFace A 1]
+
+＠Beowulf
+Well I just cooked the meat, and Boudica made the sauce.
+[k]
+
+？！
+
+＠Beowulf
+I like the way you eat.
+[k]
+
+？1：What part of the animal is this?
+？！
+
+
+＠Beowulf
+It's the throat. That animal breathes fire through its mouth, so the throat is most used part of its body. Delicious!
+[k]
+
+？1：...What did you just say?
+
+？2：...What kind of meat is this?
+？！
+
+[charaFace A 0]
+＠Beowulf
+Hm?
+[k]
+
+＠Beowulf
+Dragons breathe fire. That's why their throats go through a lot, and it makes them delicious.
+[k]
+
+[charaFace A 1]
+＠Beowulf
+Seeing the happy look on your face makes all that work worthwhile!
+[k]
+
+？1：Well...
+？2：Guess it's okay since it's delicious!
+？！
+
+＠Beowulf
+Yeah, eat up! Eat up!
+[k]
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+[soundStopAll]
+[end]
+

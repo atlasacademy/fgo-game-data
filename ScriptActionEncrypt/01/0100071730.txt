@@ -1,0 +1,223 @@
+
+
+
+＄01-00-07-17-3-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 98107800 1 Laḫmu]
+[charaSet B 98107800 1 Laḫmu]
+[charaSet C 98107800 1 Laḫmu]
+[charaSet D 98024000 1 "Uruk Civilian"]
+[charaSet E 98024000 1 "Uruk Civilian"]
+[charaSet F 98107500 1 "Uruk Soldier"]
+[charaSet G 98107500 1 "Uruk Soldier"]
+
+[scene 34310]
+[fadein black 2.0]
+[wait fade]
+
+[wt 0.2]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 0]
+[charaFace E 1]
+[charaFadein E 0.1 2]
+[wt 0.7]
+
+[charaMoveReturn D -192,0 0.3]
+[wt 0.1]
+[charaEffect E bit_talk_12_blue_L]
+[wt 0.1]
+[se bac4]
+[charaShake E 0.05 3 3 0.4]
+[charaEffect E bit_talk_35]
+[wt 0.3]
+[charaFadeout E 0.4]
+[wt 0.3]
+[se ad144]
+[shake 0.05 0 2 0.2]
+＠D：Uruk Civilian
+(Panting)
+[k]
+
+＠D：Uruk Civilian
+I did it... I did it... I'm sorry... I'm sorry...! Ugh... I did it... I did it!
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠D：Uruk Civilian
+This is what you wanted, right? Once I'm the only one left, you'll let me go, right?
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+[charaFace C 0]
+[charaFadein C 0.1 2]
+＠Laḫmu
+...!
+[k]
+
+[se ad202]
+[wt 0.2]
+[charaMoveReturn A 0,10 0.4]
+[wt 0.3]
+[charaMoveReturn B -256,5 0.2]
+[wt 0.2]
+[charaMoveReturn C 256,7 0.3]
+[wait se ad202]
+[wt 0.4]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+[wt 0.7]
+[charaEffect D bit_talk_12_red_R]
+[wt 0.1]
+[se bac137]
+[charaShake D 0.05 4 4 0.4]
+[charaEffect D bit_talk_35]
+[wt 0.3]
+[charaFadeout D 0.4]
+[wt 0.3]
+[se ad144]
+[shake 0.05 0 2 0.2]
+[wt 2.0]
+
+[se bac9]
+
+[charaFace F 0]
+[charaFadein F 0.4 0]
+[charaShake F 0.05 3 3 0.5]
+[charaFace G 0]
+[charaFadein G 0.4 2]
+[charaShake G 0.05 3 3 0.5]
+[wt 1.0]
+[charaTalk F]
+＠F：Uruk Soldier
+So they kill you even if you kill the others!? What do they want from us? How do we survive?
+[k]
+
+[charaTalk G]
+＠G：Uruk Soldier
+Ugh... Uggh... Dammit! Dammit! Uwaahh! Die! Please!
+[k]
+
+[messageOff]
+[charaMoveReturn G 192,0 0.3]
+[wt 0.1]
+[charaEffect F bit_talk_12_blue_R]
+[wt 0.1]
+[se bac7]
+[charaShake F 0.05 3 3 0.4]
+[wt 0.1]
+[fadeout white 0.2]
+[wait fade]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.2]
+[fadein white 1.0]
+[wait fade]
+
+[wt 0.4]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+[charaFace C 0]
+[charaFadein C 0.1 2]
+[wt 0.2]
+[se ad202]
+＠Laḫmu
+...!
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaSet A 8001002 1 Mash]
+[charaSet B 4018001 1 Quetzalcoatl]
+[charaSet C 2020001 1 Ishtar]
+[charaSet D 98003000 1 "Dr. Roman"]
+[wt 0.2]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+
+[wt 0.2]
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr. Roman
+...This is bad. They're making humans kill each other.
+[k]
+
+＠Dr. Roman
+They make them kill each other in groups of ten, and then laugh as they kill the last survivor[line 3]
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+＠Mash
+Master, your orders!
+[k]
+
+？1：We're going in, Mash!
+？2：We're going to save them!
+
+？！
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠Ishtar
+I agree! I was naïve to say we should wait and see! Quetzalcoatl, I'll annihilate the ones outside the plaza!
+[k]
+
+＠Ishtar
+I was saving my Divinity, but now I'll blow those things away at full power!
+[k]
+
+＠Ishtar
+You back up [%1]!
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠Quetzalcoatl
+Claro. I've reached my boiling point, too! This time, I'm really going to rip out their hearts!
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

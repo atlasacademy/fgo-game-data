@@ -1,0 +1,289 @@
+
+
+＄03-00-01-21-3-0
+[soundStopAll]
+
+[charaSet A 1098128300 1 Minotaur]
+[charaSet B 98115300 1 Holmes]
+[charaSet C 7030001 1 "Atalante Alter"]
+[charaSet D 1017001 1 Musashi]
+[charaSet E 7008001 1 Beowulf]
+[charaSet F 1098128400 1 "Yaga Rebel Soldier"]
+[charaSet H 5009000 1 "Effect Dummy"]
+
+[scene 55400]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Minotaur
+HEEHEE, HEEHEEHEEHEE![sr]YOU LOOK...GOOD ENOUGH TO EAT!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠Holmes
+I'm picking up a spike in magical energy.[sr]He's about to use his Noble Phantasm.
+[k]
+
+[charaFace B 2]
+
+＠Holmes
+Now, do it!
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+？1：Atalante!
+？！
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠Atalante Alter
+I told you to stay back...!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠Minotaur
+CHAOS LABYRINTH...!
+[k]
+
+[messageOff]
+[charaEffect A bit_talk_36]
+[voice NP_700900_1]
+
+[wt 1.5]
+[fadeout white 1.0]
+
+[wait fade]
+[charaFadeout A 0.1]
+[charaEffectStop A bit_talk_36]
+
+
+＠Atalante Alter
+Huh? What in the world are you[line 2]
+[k]
+
+[messageOff]
+[voice NP_700900_2]
+[wt 1.2]
+
+[scene 21500]
+
+[fadein white 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠Musashi
+All right, so far so good!
+[k]
+
+？1：Now's our chance...!
+？！
+
+[charaFace D 5]
+
+＠Musashi
+Hang on. Don't move a muscle...!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace C 6]
+[charaFadein C 0.1 0]
+[charaFace D 5]
+[charaFadein D 0.1 2]
+
+[messageOff]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[se ad618]
+[wt 0.7]
+
+＠Atalante Alter
+So, you cut through my shackles.[sr]Impressive.
+[k]
+
+[charaFace D 6]
+
+＠Musashi
+I'm just glad it worked! My fingertips are feeling a little numb in this freezing cold!
+[k]
+
+＠Atalante Alter
+Now I see.
+[k]
+
+＠Atalante Alter
+So you allowed the Minotaur to use his Noble[sr]Phantasm on purpose in order to rescue us.
+[k]
+
+[charaFace D 1]
+
+＠Musashi
+Yup! They said kicking the enemy's asses[sr]could wait until we rendezvoused with you.
+[k]
+
+
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Yaga Rebel Soldier
+...[sr]...
+[k]
+
+？1：Is this everyone?
+？！
+
+[charaFace F 2]
+
+＠Yaga Rebel Soldier
+No... This is only a few of us.[sr]There...there are still children on the outside...
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+[charaFace C 2]
+[charaFadein C 0.1 0]
+
+＠Atalante Alter
+Get a hold of yourself!
+[k]
+
+＠Atalante Alter
+Rushing in headfirst will solve nothing.[sr]The first thing we must do is take down the Minotaur.
+[k]
+
+＠Atalante Alter
+The rest of you will remain on standby until then.[sr]Make sure [%1] stays safe!
+[k]
+
+＠Yaga Rebel Soldier
+Yes, Boss!
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Beowulf
+All right, now comes the hard part![sr]We gotta actually[line 2]
+[k]
+
+[charaFadeout E 0.1]
+[messageOff]
+[wt 0.1]
+
+[se ad57]
+[seVolume ad57 0 0.1]
+[wt 0.1]
+[seVolume ad57 2.0 1.0]
+[shake 0.05 3 3 2.0]
+[bgmStop BGM_EVENT_81 0.1]
+[wt 2.0]
+[seStop ad57 0.5]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.7 1]
+[wt 0.9]
+
+＠Minotaur
+HEEHEE... HEEHEEHEE... THERE YOU ARE...!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠Musashi
+Anyone who's not a Servant, get back![sr]This guy is no joke.
+[k]
+
+＠Musashi
+Once we start fighting him,[sr]we won't be able to worry about you too!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠Beowulf
+...Dammit! I knew it! He's even stronger than before! Guess the labyrinth gives him a serious home field advantage!
+[k]
+
+[charaFace E 0]
+
+＠Beowulf
+Still, if you were hoping that'd surprise us, demon of the labyrinth, you've got another thing coming.
+[k]
+
+[charaFace E 2]
+
+＠Beowulf
+Let's find out once and for all if[sr]you're a worthier foe than Grendel!
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_80 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

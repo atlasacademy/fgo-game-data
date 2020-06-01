@@ -1,0 +1,354 @@
+
+＄02-00-03-09-3-0
+[bgm BGM_EVENT_3 0.1]
+
+
+[charaSet A 1017001 1 Musashi]
+[charaSet B 6019001 1 "Fuuma Kotarou"]
+[charaSet C 98110000 1 "Yagyu Tajima-no-Kami"]
+[charaSet D 1098117900 1 "Assassin of Paraíso"]
+[charaSet E 1098119210 1 Kiyohime]
+[charaSet G 5009000 1 "Effect Dummy 1"]
+[charaSet H 5009000 1 "Effect Dummy 2"]
+
+[se ad11]
+[seVolume ad11 0 0.3]
+[scene 46902]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_gouka]
+
+[fadein black 1.0]
+[wait fade]
+
+＠Kiyohime
+...I'm going to kill you.
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaScale H 1.5]
+[charaEffect H bit_talk_29]
+[se ad392]
+[wt 0.6]
+
+[wipeout rectangleStripRightToLeft 0.2 1]
+[wait wipe]
+[charaPut G 1200,1200]
+[charaPut H 1200,1200]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0 1]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.2 1]
+[wait wipe]
+
+
+＠Fuuma Kotarou
+Master!!!
+[k]
+
+[messageOff]
+
+[charaFace B 5]
+[wt 0.2]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[wt 0.1]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+[wipeout rectangleStripLeftToRight 0.2 1]
+[wait wipe]
+[charaPut G 1]
+[charaPut H 1]
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.2 1]
+[wait wipe]
+
+[seStop ad11 2.0]
+[fadeout white 2.0]
+[bgmStop BGM_EVENT_3 2.0]
+
+[wt 1.9]
+[fowardEffect bit_talk_quickmove]
+
+[wait fade]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_gouka]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_29]
+[scene 10001]
+[fadein white 0.1]
+[wait fade]
+[wt 0.5]
+[wipeout openEye 1.5 1.0]
+[wait wipe]
+[scene 46902]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 2.0]
+[wipein openEye 1.5 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_5 0.1]
+[wt 0.4]
+
+＠Fuuma Kotarou
+Master... Thank goodness...you're okay...
+[k]
+
+[charaMove B 0,-50 0.5]
+[wt 0.2]
+[charaFadeout B 0.4]
+[wt 0.3]
+[se ad144]
+[seVolume ad144 0 0.4]
+[seStop ad144 0.5]
+[wt 0.7]
+
+？1：Hang in there, Kotarou!
+？2：You shielded me from the fire!?
+
+？！
+
+
+＠Musashi
+Kotarou, are you still alive!?[sr]I can't look away from Paraíso to check!
+[k]
+
+＠Fuuma Kotarou
+...I'm fine. My Spirit Core is intact...[sr]I can still stand...
+[k]
+
+[messageOff]
+[wt 0.3]
+
+
+[charaTalk B]
+[charaFace B 5]
+[charaShake B 0.04 1 1 0.4]
+[charaFadein B 0.4 0,-50]
+[charaMove B 1 0.6]
+[wt 1.0]
+
+＠Fuuma Kotarou
+Never mind me! We have to snap Lady Kiyohime out of whatever this is!
+[k]
+
+？1：That's right. Kiyohime, she... I don’t understand!
+？2：She...she just started acting oddly and attacked!
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Kiyohime
+Can I...tell you all...a story...?
+[k]
+
+[charaFace E 1]
+
+＠Kiyohime
+Some time ago, I...I destroyed a serpent's nest...
+[k]
+
+＠Kiyohime
+I didn't mean to.[sr]I knew serpents were living creatures...
+[k]
+
+[charaFace E 0]
+
+＠Kiyohime
+And yet...
+[k]
+
+＠Kiyohime
+I still completely destroyed their nest...
+[k]
+
+＠Kiyohime
+...They were just eggs. Such tiny things,[sr]just struggling to be born. And I...
+[k]
+
+[charaFace E 2]
+
+＠Kiyohime
+...Why did I ever do such a horrible thing?[sr]I...I have regretted it ever since...
+[k]
+
+＠Kiyohime
+And yet, they have never forgiven me. The serpents...they keep coming towards my body... Look! Look...!
+[k]
+
+＠Kiyohime
+Even now...they come...
+[k]
+
+[bgmStop BGM_EVENT_5 0.3]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[wt 0.7]
+
+[se ad342]
+[se ad53]
+[seStop ad53 1.2]
+[wt 1.2]
+
+[se ad17]
+[shake 0.03 4 4 0.7]
+[wt 1.5]
+
+[bgm BGM_EVENT_3 0.1]
+
+？1：The giant snake just came back to life!
+？2：But how!? It was burned to a crisp!
+
+？！
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠Yagyu Tajima-no-Kami
+...
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Musashi
+You're kidding me! It came back to life after being reduced to ash!? Is that a Saigyou revival technique!?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 19]
+[charaFadein D 0.1 1]
+
+＠Assassin of Paraíso
+Hehehe. A good strategy is always at least two[sr]steps ahead of the opposition, Shinmen Musashi!
+[k]
+
+[messageOff]
+
+[charaFadeout D 0.7]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace E 1]
+[charaFadein E 0.1 0]
+[charaFace D 13]
+[charaFadein D 0.1 2]
+
+＠Assassin of Paraíso
+Now, go on, princess. The snakes still have yet to forgive you. Just look at how many of their children are here.
+[k]
+
+＠Assassin of Paraíso
+You have no choice! Kill all these people![sr]Kill them all! Only then will the snakes forgive you!
+[k]
+
+[charaFace D 19]
+
+＠Assassin of Paraíso
+Then, I will kill you myself, so you can finally be at peace. Now go, and lay waste to everything with your fire!
+[k]
+
+[charaFace E 0]
+
+＠Kiyohime
+...Yes. That...sounds good...
+[k]
+
+？1：Kiyohime!
+？2：Is Paraíso controlling her!?
+
+？！
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠Fuuma Kotarou
+Those two kunai Paraíso threw at her last night... What[sr]if they were a feint, and her real objective was...!?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Musashi
+You mean she put Kiyohime under a spell!? [charaFace A 4]Ugh, I hate[sr]magic duels. I have no knowledge of it whatsoever!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace E 1]
+[charaFadein E 0.1 0]
+[charaFace D 19]
+[charaFadein D 0.1 2]
+
+＠Assassin of Paraíso
+Ah, good job! You figured it out![sr]Now come, Kiyohime, and atone for your sins!
+[k]
+
+[charaFace E 2]
+
+＠Kiyohime
+Yes... I will atone...
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[wt 0.3]
+
+[se ad17]
+[wt 0.3]
+[shake 0.03 4 4 0.7]
+[wt 0.4]
+[seStop ad17 1.2]
+[wt 1.0]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

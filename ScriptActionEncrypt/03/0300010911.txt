@@ -1,0 +1,151 @@
+
+
+＄03-00-01-09-1-1
+[soundStopAll]
+
+[charaSet A 98006000 1 Krichat']
+[charaSet B 5036001 1 Avicebron]
+[charaSet C 99502600 1 Mash]
+[charaSet D 1098123210 1 Goredolf]
+[charaSet H 5009000 1 "Effect Dummy"]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[scene 54100]
+
+
+[fadein black 1.0]
+
+
+[branch INPUT_SELECT_BRANCH_2 INPUT_SELECT_BRANCH 1]
+
+[label INPUT_SELECT_BRANCH_1]
+
+[bgm BGM_EVENT_80 0.1]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[wt 1.2]
+[charaSpecialEffect A enemyErasure 1]
+[se ad26]
+[wait charaSpecialEffect A]
+[wt 1.5]
+
+[bgmStop BGM_EVENT_80 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_77 0.1]
+
+[wt 0.7]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Avicebron
+It seems we were successful in disposing of the Krichat' before they could alert the D'yavol Tron to our presence.
+[k]
+
+＠Avicebron
+Now, let us move on before it spots us. I must say, I am quite pleased with how this turned out.
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_2]
+
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Mash
+You did it! I've confirmed the D'yavol Tron's vital signs have disappeared!
+[k]
+
+＠Mash
+I think I was able to run a fairly thorough analysis on it, too. It looks like its body produces alcohol.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠Goredolf
+Oh? You don't mean...vodka!?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠Mash
+Huh? Uh, no, it isn't distilled liquor. If anything, it looks like it's closer to the fermented kind...
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠Goredolf
+Fermented!? That peasant swill!?[sr]Ugh, never mind!
+[k]
+
+[charaFace D 6]
+
+＠Goredolf
+[%1], hurry up and get yourself back to the rebel army's hideout!
+[k]
+
+[charaFace D 10]
+
+＠Goredolf
+Any decent Russian military installation should have SOME vodka lying around! Make sure to bring back anything you can get them to share!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Avicebron
+I only hope the Yaga are still able to afford such luxuries. Come, [%1], let us hurry on.
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_3]
+
+[wt 1.0]
+[soundStopAll]
+[end]

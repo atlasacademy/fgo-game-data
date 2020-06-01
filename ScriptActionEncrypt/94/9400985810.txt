@@ -1,0 +1,213 @@
+
+＄94-00-98-58-1-0
+
+[charaSet A 2009102 1 Orion]
+[charaSet B 2009201 1 Artemis]
+
+[soundStopAll]
+[bgm BGM_EVENT_7 0.1]
+
+[scene 20803]
+
+[fadein black 2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠Orion
+Chocolate...chocolates, you say!?
+[k]
+
+[se ad55]
+[seVolume ad55 0 0.5]
+
+＠Orion
+Gimme gimme gimme[charaShake A 0.1 5 4 0][charaFace A 3][charaFadein A 0.1 -32,32][charaScale A 1.1][charaFadeout A 0.1] gimme gimme[charaFace A 3][charaFadein A 0.1 32,284][charaScale A 2.0][charaFadeout A 0.1] gimme[sr]gimme [charaFace A 3][charaFadein A 0.1 -24,536][charaScale A 3.5][fowardEffect bit_talk_41] gimme gimme gimme gimme gimme![wt 0.3][seStop ad55 0.1]
+[k]
+
+？1：Jack!?
+？2：Scary!
+？！
+
+[fowardEffectStop bit_talk_41]
+[charaShakeStop A]
+
+[wt 0.4]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[wt 0.4]
+
+[se ad7]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaScale A 1.0]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠Orion
+My apologies. I got excited.[sr]Ah, chocolates are great.
+[k]
+
+＠Orion
+Heh heh. You wouldn't know.
+[k]
+
+[charaFace A 4]
+
+＠Orion
+You don't know the terror I experience on this day every year... I'm forced to eat something that only loosely resembles chocolate...
+[k]
+
+[charaFace A 0]
+
+＠Orion
+Heh heh. I'll hide your chocolate so I can eat it after Artemis's chocolates.
+[k]
+
+＠Orion
+As for your gift... Let's see...
+[k]
+
+[charaFace A 1]
+＠Orion
+Master. I assume you've been eating tons of chocolates. Then reset your flavor profile with this.
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+
+？1：...Orion stick puffs?
+
+＠Orion
+Yes.
+[k]
+
+？2：Isn't this like a Cheet[line 3]
+
+[charaFace A 0]
+＠Orion
+Stop right there.
+[k]
+
+？！
+
+＠Orion
+Well, enjoy! Hm? What the heck are you doing?
+[k]
+
+＠Orion
+You're opening two Orion stick puffs...and handing me one...
+[k]
+
+＠Orion
+Now you're assuming a battle stance...
+[k]
+
+[charaFace A 1]
+＠Orion
+Heh. How childish, Master.
+[k]
+
+[charaFace A 0]
+＠Orion
+You may have forgotten, but I'm a skilled huntsman! Especially with a club.
+[k]
+
+？1：Come at me!
+
+？2：[%1], ready to attack!
+
+？！
+
+[charaFace A 2]
+＠Orion
+[fontSize large]Here I come! Yaaah!
+[k]
+
+[messageOff]
+
+
+[charaMoveReturn A 0,20 0.2]
+
+[se ad76]
+[flashin once 0.15 0.15 FFFFFFA0 FFFFFF00]
+[shake 0.01 3 3 0.5]
+[wt 0.8]
+
+[se ad76]
+[fowardEffect bit_talk_12_platinum_L]
+[wt 0.1]
+[charaFace A 4]
+[charaShake A 0.03 3 3 0.3]
+[charaFace A 4]
+[wt 0.6]
+
+[charaMoveReturn A 0,20 0.2]
+
+[se ad76]
+[flashin once 0.15 0.15 FFFFFFA0 FFFFFF00]
+[charaFace A 2]
+[shake 0.01 3 3 0.5]
+[wt 0.4]
+
+[se ad76]
+[fowardEffect bit_talk_12_platinum_R]
+[wt 0.1]
+[charaFace A 4]
+[charaShake A 0.03 3 3 0.3]
+
+[wt 0.2]
+
+[se ad76]
+[fowardEffect bit_talk_12_platinum_L]
+[wt 0.1]
+[charaFace A 4]
+[charaShake A 0.03 3 3 0.3]
+
+[wt 0.1]
+
+[se ad76]
+[fowardEffect bit_talk_12_platinum_R]
+[wt 0.1]
+[charaFace A 4]
+[charaShake A 0.03 3 3 0.3]
+
+[wt 0.4]
+
+[charaMove A 0,-128 0.6]
+[wt 0.1]
+[charaFadeout A 0.4]
+
+[wait charaMove A]
+[se ad144]
+[seVolume ad144 0 0.1]
+[wait se ad144]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.4 1]
+
+＠Artemis
+Hey! You two are playing![sr]No fair! I want to join!
+[k]
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_7 0.9]
+[wait fade]
+[soundStopAll]
+[end]

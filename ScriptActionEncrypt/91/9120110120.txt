@@ -1,0 +1,158 @@
+＄91-20-11-01-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 10902]
+[charaSet A 8001000 1 Mash]
+[charaSet B 98003000 2 "Dr. Roman"]
+[charaSet C 2011001 1 "Nikola Tesla"]
+[charaSet D 98002000 1 Fou]
+[charaSet E 98006100 1 ???]
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0 1]
+[fadein black 1]
+[wait fade]
+＠Mash
+Enemies destroyed.[sr]Battle complete[line 2]
+[k]
+
+[charaFadeout A 0.1]
+[bgmStop BGM_EVENT_2 0.4]
+[bgm BGM_EVENT_3 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[se ad21]
+[wt 0.3]
+＠???
+[line 6]
+[k]
+
+[charaFadeout E 0.1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠Mash
+...Ugh![sr]There's still more!
+[k]
+
+[charaFadeout A 0.1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠Nikola Tesla
+Lightning flash!
+[k]
+
+[messageOff]
+[se ad61]
+[seStop ad61 4.0]
+[backEffect bit_talk_lightning_01t]
+[wt 1.0]
+[charaFadeout C 0.1]
+[wt 0.2]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.2]
+[effect bit_talk_lightning_03t]
+[backEffectStop bit_talk_lightning_01t]
+[se ad63]
+[flashin once 0.1 0.3 FFFFFFAF 00000000]
+[flashin once 0.1 1.2 FFFFFFAF 00000000]
+[wt 0.8]
+[charaSpecialEffect E enemyErasure 1 3]
+[wt 1.0]
+[se ba5]
+[wait charaSpecialEffect E]
+[bgmStop BGM_EVENT_3 0.4]
+[wt 0.5]
+[bgm BGM_EVENT_2 0.1]
+[charaTalk C]
+[charaFace A 14]
+[charaFadein A 0.1 2]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+＠Nikola Tesla
+Letting your guard down means death.[sr]Remember that.
+[k]
+
+＠Nikola Tesla
+That grimoire contains a great spell[sr]equal to the Presence Concealment skill.
+[k]
+
+[charaTalk A]
+[charaFace A 8]
+＠Mash
+Thank you, Mister.[sr]...I'll be more careful in the future.
+[k]
+
+[charaTalk C]
+[charaFace C 4]
+＠Nikola Tesla
+Catch your breath.[sr]The big one is coming.
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr. Roman
+He noticed it before me again[line 2][sr]He's right! A huge magical energy response is incoming!
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠Mash
+...I can feel it too.[sr]A huge collection of magical energy, similar to a dragon!
+[k]
+
+[charaTalk E]
+[bgmStop BGM_EVENT_2 0.4]
+[se ad23]
+[wt 0.3]
+[bgm BGM_EVENT_3 0.1]
+＠???
+[fontSize large]GAAAAAH!
+[k]
+
+[charaFadeout A 0.1]
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr. Roman
+T-That response![sr]Is that a real demon or something[line 2]!?
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠Nikola Tesla
+Hahahaha![sr]No problem at all!
+[k]
+
+＠Nikola Tesla
+Mysteries of the old world! Hahaha![sr]No matter how vast, strong, or mighty you may be!
+[k]
+
+[charaFace C 2]
+＠Nikola Tesla
+I am here! Pioneer of a new world,[sr]my wisdom guiding the myths of humanity!
+[k]
+
+＠Nikola Tesla
+In other words! Human Mythology,[sr]Lightning and Thunder Descend[line 2]!
+[k]
+
+[charaFadeout C 0.5]
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

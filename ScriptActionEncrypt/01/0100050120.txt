@@ -1,0 +1,70 @@
+
+＄01-00-05-01-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[charaSet A 8001001 1 Mash]
+[charaSet B 98022000 1 Soldier]
+[charaSet C 99360000 1 "Celtic Warrior"]
+
+[scene 20720]
+[fadein black 2]
+[wait fade]
+
+[charaTalk B]
+[charaFadein B 0.1 1]
+＠Soldier
+I-Impossible! The enhanced exoskeleton “Hard Work Mk-2” given by His Excellency was destroyed!?
+[k]
+
+＠Soldier
+And by such a frail-looking girl? Could she be...the Servant-Type enemy I read about in my report?
+[k]
+
+＠Soldier
+Fine! Retreat! We'll move our front line back until the reinforcements arrive! Hurry!
+[k]
+
+[charaFadeout B 0.1]
+
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠Mash
+Hah... Hah... We did it, Master!
+[k]
+
+[charaFace A 12]
+＠Mash
+I can't grasp the situation yet, but it seems one side has retreated[line 3]
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFadein C 0.1 1]
+[se ad25]
+[seStop ad25 1.5]
+＠???
+[line 6]!
+[k]
+
+[charaFadeout C 0.1]
+
+[wt 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr. Roman
+Be careful! Now the other side has targeted you! Please hang on for a little bit longer, [%1]!
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[communicationCharaClear]
+[wait communicationChara]
+[soundStopAll]
+[end]

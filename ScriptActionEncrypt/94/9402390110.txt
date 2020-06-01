@@ -1,0 +1,1541 @@
+
+＄94-02-39-01-1-0
+
+
+[soundStopAll]
+
+[charaSet A 9005001 1 Holmes]
+[charaSet B 6010000 1 Juliet]
+[charaSet C 2023000 1 Hawthorne]
+[charaSet D 5014000 1 Cain]
+[charaSet E 7023000 1 Eva]
+[charaSet F 2012000 1 Harriet]
+[charaSet G 1020000 1 Adamska]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_spotlight]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 1.0 1]
+[wt 1.6]
+
+
+
+＠Holmes
+Have you ever seen a face where you oughtn't to? In a stain on the ceiling, or the wood grain on a wall, or even a scuff mark on a desk, perhaps?
+[k]
+
+[charaFace A 6]
+＠Holmes
+...Hmm, you have, eh?[sr]That is certainly no surprise.
+[k]
+
+[charaFace A 0]
+＠Holmes
+It is human nature to seek patterns, to find meaning[sr]and make connections, whether real or imagined.
+[k]
+
+[bgm BGM_MAP_6 5.0]
+[cameraMove 10.0 0,-40 1.2]
+
+＠Holmes
+To be quite frank, this is all a mistake.[sr]An illusion. A mismatch owing to human perception.
+[k]
+
+＠Holmes
+People inevitably favor their own thoughts and ideas over anyone else's. To be human is to be forever out of reach of true objectivity.
+[k]
+
+＠Holmes
+Now, let me tell you the tale of a curious group[sr]of people and their subjective mistakes.
+[k]
+
+[charaFace A 4]
+＠Holmes
+This is a tragedy of two families...
+[k]
+
+[charaFace A 0]
+＠Holmes
+...one that may have begun when bonds were mistakenly believed to exist among those attending a certain gathering.
+[k]
+
+＠Holmes
+This story has no real relevance to you,[sr]and might have taken place anywhere...
+[k]
+
+[messageOff]
+
+[fadeout black 2.0]
+[bgmStop BGM_MAP_6 2.0]
+[wait fade]
+[effectStop bit_talk_spotlight]
+[charaFadeout A 0.1]
+
+[scene 10000]
+[cameraHome 0.1]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[input selectBranch]
+[messageOff]
+[skip false]
+[cameraHome 0.1]
+[bgmStop BGM_MAP_6 0.4]
+[charaFadeout A 0.1]
+[effectStop bit_talk_spotlight]
+[charaSet A 9005001 1 Holmes]
+[charaSet B 6010000 1 Juliet]
+[charaSet C 2023000 1 Hawthorne]
+[charaSet D 5014000 1 Cain]
+[charaSet E 7023000 1 Eva]
+[charaSet F 2012000 1 Harriet]
+[charaSet G 1020000 1 Adamska]
+[scene 10000]
+[wt 0.4]
+[soundStopAll]
+[maskin black 1]
+[wait mask]
+[label selectBranch]
+[skip false]
+[wt 1.0]
+[effect bit_queststart94023901]
+[wait effect bit_queststart94023901]
+[skip true]
+[wt 1.0]
+
+[wipeout openEye 0.1 1]
+[wait wipe]
+[scene 11000]
+[wt 0.5]
+[wipein openEye 1.0 1]
+[wt 0.5]
+[wipeout openEye 0.5 1]
+[wt 1.0]
+[wipein openEye 1.0 1]
+[wait wipe]
+
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠B：???
+Are you okay?
+[k]
+
+？1：Huh? Stheno...?
+？2：Do I...know you?
+
+？！
+
+＠B：???
+Did you hit your head or something?[sr]...My name's Juliet.
+[k]
+
+＠B：???
+Juliet Violet.
+[k]
+
+＠Juliet
+We go to the same college, remember?
+[k]
+
+[charaFace B 2]
+
+＠Juliet
+We eat lunch together every couple of days?[sr]Hang out maybe once a week? You know, friends?
+[k]
+
+＠Juliet
+You ditched class so you could come with[sr]me on our four-day family trip. Remember?
+[k]
+
+[charaFace B 4]
+
+＠Juliet
+Hmm, it looks like none of this is ringing a bell, huh.[sr]Do you even know what the date is?
+[k]
+
+？1：I know it's May 2019...
+
+[charaFace B 0]
+
+＠Juliet
+Oh good, so you do have your head on straight.[sr]That's right. It's May 2019.
+[k]
+
+？2：I know it's May 2020...
+
+＠Juliet
+...Are you sure you're okay? You got the month right,[sr]but you're off by a whole year. It's still 2019.
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠C：???
+See, this is why head injuries are so scary.[sr]You appear to have a mild case of amnesia.
+[k]
+
+[charaFace C 0]
+
+＠C：???
+Well, then I shall introduce myself as well.[sr]My name is Hawthorne. I'm the Violet family's doctor.
+[k]
+
+＠Hawthorne
+I think I've been at this for about twenty years or so?[sr]I'm afraid my memory isn't what it used to be, much to my chagrin.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFace C 0]
+[charaFadein B 0.1 2]
+[charaFadein C 0.1 0]
+
+＠Juliet
+Is [%1] going to be okay, Doctor?
+[k]
+
+＠Hawthorne
+Their condition doesn't seem to be serious, but you can't take head injuries lightly. One can seem to be in perfect health one day, then collapse the next.
+[k]
+
+＠Hawthorne
+As a doctor, I'm afraid I can't give them a clean bill of health just yet. If they start to feel bad again, make sure you call for me at once.
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 0,-120]
+[charaMove D 1 0.3]
+[wt 0.2]
+[se ad7]
+[wt 0.2]
+
+＠D：???
+Oh good, you're awake. Ahahaha, are you[sr]feeling all right now, [%1]?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠Juliet
+Is that all you've got to say, Cain!? You're the one who hit them with that ball in the first place!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Cain
+Oh yeah, I guess I did, huh?[sr]Sorry about that.
+[k]
+
+[charaFace D 1]
+
+＠Cain
+Everything good now that I've apologized?[sr]Great! Then I'm gonna get back to the game.
+[k]
+
+[messageOff]
+[se ad456]
+[charaMove D -50,0 0.4]
+[charaFadeout D 0.4]
+[wt 0.8]
+[seStop ad456 0.3]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠Juliet
+Ugh. I'm sorry about my little brother.
+[k]
+
+＠Juliet
+You'd think he'd finally grow up a little[sr]now that he's in high school, but nope...
+[k]
+
+？1：...High school? Really? That doesn't seem right...
+
+[charaFace B 0]
+
+＠Juliet
+Because he's still so childish?
+[k]
+
+[charaFace B 4]
+
+＠Juliet
+...I know what you mean.[sr]We're all kind of worried about him...
+[k]
+
+？2：It's okay. I probably should've been paying more attention.
+
+[charaFace B 0]
+
+＠Juliet
+If you say so. You know, for a moment there,[sr]you looked like you'd seen a ghost or something.
+[k]
+
+？！
+
+[charaFace B 1]
+
+＠Juliet
+Anyway...don't feel like you have to go easy[sr]on him, okay? He could've seriously hurt you.
+[k]
+
+[charaFace B 5]
+
+＠Juliet
+It was bad enough that Cain kicked that ball[sr]into your face, but then it tripped you up...
+[k]
+
+＠Juliet
+...and you ended up tumbling down the[sr]nearby stairs like a barrel, remember?
+[k]
+
+＠Juliet
+I'm not sure what I would do to[sr]him if I were in your shoes.
+[k]
+
+[charaFace B 0]
+
+＠Juliet
+But you just laughed it off with a joke about him becoming a pro soccer player someday. I couldn't believe it.
+[k]
+
+＠Juliet
+But then, that's one of your best qualities.[sr]You've always been good at finding the silver lining.
+[k]
+
+？1：I see. By the way, where are we again?
+？2：What is this place? It seems like a really fancy hotel...
+
+？！
+
+[charaFace B 4]
+
+＠Juliet
+Uh-oh... You might have it worse than I thought.[sr]This is the Kogetsukan.
+[k]
+
+＠Juliet
+You're here with my family on our[line 2]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ade74]
+[wt 0.2]
+[se ad95]
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+[seStop ade74]
+[seStop ad95]
+
+＠E：???
+Oh good, you look like you're all right.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Hawthorne
+Hello, Eva.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠F：???
+I was so worried after I heard what Cain did.[sr]I'm glad to see you seem fine.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Hawthorne
+I see you're here too, Harriet.[sr]I must say, you both look especially beautiful today.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠Harriet
+Hehe, maybe that's because[sr]I just got out of the bath.
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+？1：Who are those two again?
+
+？！
+
+[charaFace B 4]
+
+＠Juliet
+...That's my mom, and my little sister. I'd have thought that was obvious... Maybe there's not as much family resemblance as I thought?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFace B 4]
+[charaFadein F 0.1 0]
+[charaFadein B 0.1 2]
+
+＠Harriet
+Why don't you go take a bath too, Juliet?[sr]It's really spacious.
+[k]
+
+＠Juliet
+Maybe later.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+
+＠Eva
+Now, now, you mustn't let your appearance slide over something like this. Haven't you noticed your hair getting sticky from the ocean breeze?
+[k]
+
+＠Juliet
+Not really. It's not like I've been to the beach.
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Hawthorne
+I must say, it's always fascinating to see twins with such...different personalities.
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[bgmStop BGM_EVENT_2 0.5]
+[wt 0.1]
+
+[se ad59]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.4 1]
+[wt 0.5]
+[seStop ad59]
+
+＠G：???
+Can you all come with me for a moment?
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠Juliet
+Daddy?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFace G 2]
+[charaFadein C 0.1 0]
+[charaFadein G 0.1 2]
+
+＠Hawthorne
+What is it, Adamska?
+[k]
+
+[charaFace G 4]
+
+＠Adamska
+Dorothy lost a valuable necklace,[sr]and...it's become a bit of a problem.
+[k]
+
+[charaFace C 4]
+
+＠Hawthorne
+Well, if the lady of the Goldie family is in trouble, we certainly can't turn our backs on her. After all[line 2]
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠Juliet
+No need to get into all that now.[sr]Come on, everyone, let's go.
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[se ade74]
+[wt 0.2]
+[se ad95]
+[wait fade]
+
+[charaSet A 4017000 1 Dorothy]
+[charaSet D 6026000 1 Wǔ]
+[charaSet E 7028000 1 Laurie]
+[charaSet F 3028002 1 Ann]
+[charaSet H 1009001 1 Morris]
+
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[scene 58500]
+
+[fadein black 1.0]
+[seStop ade74 0.5]
+[seStop ad95 0.5]
+[wait fade]
+
+
+
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠A：???
+WHY is my necklace missing?[sr]It couldn't have just walked away on its own!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠D：???
+We're doing everything we can to find it, madam.[sr]Please, just give us a little more time.
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠Adamska
+Over there. You can see for yourselves how it's turning into kind of a mess...
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Hawthorne
+...That furious lady over there is Dorothy Goldie, and the man trying to placate her is Wǔ, from the Marble Company.
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+＠Dorothy
+I'll wait for as long as I must for it to be found.[sr]That necklace is very precious to me...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+
+＠E：???
+Mommy, I'm hungryyy.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠Dorothy
+Be patient, Laurie. It'll be time for snacks soon, and Mommy's having a very important conversation right now.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠Laurie
+Okay.[sr]I'll go play with Cain then.
+[k]
+
+[messageOff]
+[se ad456]
+[charaFadeout E 0.4]
+[charaMove E 50,0 0.4]
+[wt 1.0]
+[seStop ad456]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+
+＠F：???
+What's going on here, Wǔ?
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠Wǔ
+Oh, hey Sis. I'm afraid we've got[sr]a problem on our hands. You see...
+[k]
+
+[messageOff]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.5]
+
+＠Hawthorne
+That dignified-looking woman there is Ann, the vice president of the Marble Company. And the girl we saw earlier was Laurie Goldie.
+[k]
+
+＠Ann
+I see. So Ms. Dorothy's necklace[sr]went missing in the bathhouse...
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Dorothy
+It took ten minutes for me to realize I'd forgotten my necklace in the changing room and go back to check on it. Someone must have taken it while I was out.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Ann
+Weren't you standing guard[sr]over the bathhouse then, Wǔ?
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠Wǔ
+Yeah, I was. I can promise you that no men went in or out while I was keeping watch. In fact, nobody went in at all after Ms. Dorothy left...
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFace D 4]
+[charaFadein A 0.1 2]
+[charaFadein D 0.1 0]
+
+＠Dorothy
+Then YOU must have taken my necklace![sr]Well? Let's have it!
+[k]
+
+＠Wǔ
+PLEASE calm down, Ms. Dorothy...
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.4 1]
+[wt 0.4]
+
+＠H：???
+Ugh, could you keep it down?[sr]I was having a great nap until you woke me.
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠Dorothy
+Oh Morris...[sr]Can't you be a little more polite?
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaSet E 3011000 1 Aaron]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+[wt 0.5]
+
+？1：Mo?
+
+？！
+
+[charaFace H 2]
+
+＠Morris
+Huh? Who the hell do you think you are, talking to me like we're buddies or something? You want a piece?
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace H 2]
+[charaFace B 4]
+[charaFadein H 0.1 0]
+[charaFadein B 0.1 2]
+
+＠Juliet
+I'm sorry about that.[sr]They're still a little loopy.
+[k]
+
+[charaFace H 0]
+
+＠Morris
+Hm? Oh, right, you brought them here...[sr]Eh, not bad. I guess you pass.
+[k]
+
+[charaFace B 2]
+
+＠Juliet
+You're one to talk, seeing how[sr]you slept most of the way here.
+[k]
+
+[charaFace H 4]
+
+＠Morris
+What do you expect? I was busy living it up all night.[sr]So what is this person to you, anyway?
+[k]
+
+[charaFace B 4]
+
+＠Juliet
+...They're a friend from school. I wanted someone outside our families to be here, so that I didn't end up suffocating.
+[k]
+
+[charaFace H 0]
+
+＠Morris
+That so. All right, I'll let it go this once, outta respect for you. But there won't be a next time.
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[se ad95]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.5]
+[seStop ad95 0.3]
+
+＠E：???
+Are you all right, Morris!?
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Wǔ
+Oh, Mr. Aaron.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+[charaFadein H 0.1 2]
+
+＠Morris
+I'm fine, Pops.
+[k]
+
+[charaFace E 1]
+
+＠Aaron
+Good, good. For a moment,[sr]I was worried something had happened to you.
+[k]
+
+[messageOff]
+[wt 0.5]
+
+＠Hawthorne
+...That's Aaron, the head of the Goldie family.[sr]And you've already met Morris, his son.
+[k]
+
+＠Morris
+You're such a worrywart, old man. Don't worry, I'll be taking over soon. Just relax and enjoy that whisky you've been saving.
+[k]
+
+[charaFace E 0]
+
+＠Aaron
+I can't say I approve of the way[sr]you disappointed your bride, though.
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+？1：Bride?
+
+？！
+
+[charaFace B 4]
+
+＠Juliet
+...I'm sorry, but I don't want to explain it again.[sr]You'll see soon enough.
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[bgmStop BGM_EVENT_5 0.3]
+[wt 0.5]
+
+[bgm BGM_EVENT_2 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein C 0.1 2]
+[charaFadein D 0.1 0]
+
+＠Hawthorne
+Wǔ, may I have a word?
+[k]
+
+＠Wǔ
+What is it, Doc?
+[k]
+
+＠Hawthorne
+I'm not saying this just to clear my own name,[sr]but...the three of us have airtight alibis.
+[k]
+
+＠Hawthorne
+Juliet, [%1], and myself were all in[sr]the same room. We can all vouch for one another.
+[k]
+
+[charaFace C 1]
+
+＠Hawthorne
+Since there's no question of their guilt, why not let the two of them handle the investigation?
+[k]
+
+＠Wǔ
+Well, I guess that'd be better than me looking into it, since Ms. Dorothy obviously doesn't trust me anymore.
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠Dorothy
+As long as I get my necklace back,[sr]I don't care who finds it.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Ann
+Now that that's clear,[sr]I will leave it up to you two for now.
+[k]
+
+＠Ann
+But if it still doesn't turn up, then I'll take matters into my own hands. In our line of business, trust is everything, after all.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠Adamska
+Are you sure you'll be okay, Juliet?
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠Juliet
+You're such a worrywart, Daddy. I told you, I'm fine.[sr][wt 0.5][charaFace B 4]...Now what's the big idea, Doctor?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFace B 4]
+[charaFadein C 0.1 0]
+[charaFadein B 0.1 2]
+
+＠Hawthorne
+Oh, just a little unorthodox treatment.
+[k]
+
+＠Hawthorne
+I thought it might be a good way for [%1] to rehabilitate their memory, you see.
+[k]
+
+[charaFace B 0]
+
+＠Juliet
+You know...that's a good point.
+[k]
+
+[charaFace C 0]
+
+＠Hawthorne
+All right, tell me, [%1].
+[k]
+
+＠Hawthorne
+How is your memory doing now that you've[sr]met everyone from both families?
+[k]
+
+？1：What's the Marble Company?
+
+？！
+
+[charaFace C 4]
+
+＠Hawthorne
+Hmm... Not so well, I see. They're some of[sr]the most famous people in the business world.
+[k]
+
+[charaFace C 0]
+
+＠Hawthorne
+It's even said that any contract they're[sr]present for will never, ever be broken.
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[scene 58400]
+
+[fadein black 1.0]
+[wait fade]
+
+＠Juliet
+The Marble Company doesn't just own the Kogetsukan, they even own the island it's on. So you never have to worry about unwanted visitors out here.
+[k]
+
+＠Hawthorne
+Of course, that also means if they DID steal the necklace, we would have no hope of getting it back.
+[k]
+
+＠Juliet
+I think we can trust them, don't you?[sr]Trust IS everything for them, after all.
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[scene 58500]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+＠Juliet
+I'm sure that necklace wasn't cheap, but it couldn't possibly be worth ruining their reputation.
+[k]
+
+？1：Sounds like they really ARE impressive.
+
+？！
+
+＠Juliet
+They have clients all over the world, so that DOES give them a lot of power. Neither of our families could hope to match them, even if we combined forces.
+[k]
+
+＠Juliet
+Of course, we wouldn't have[sr]asked them to be here otherwise.
+[k]
+
+＠Juliet
+While we're on the subject, Ann is the company's second in command, and despite his young age, Wǔ is one of the top five most powerful people in the company.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Hawthorne
+With people that high up in the company here,[sr]just shows you how seriously they take all this.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Juliet
+...But never mind that now.[sr]Let's go talk to them.
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[fadein black 1.0]
+[wait fade]
+
+＠Ann
+Yes, I knew that everyone would be tired thanks to the early departure, so I opened up the women's bath first.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠Juliet
+I think we got here a little after noon, and yeah, we were all pretty tired. I'm glad that at least my mom and sister were able to freshen up.
+[k]
+
+[charaFace B 0]
+
+＠Juliet
+What about you, Wǔ? Did you ever take[sr]your eyes off the bath's entrance?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠Wǔ
+Psh, what do you think? Yeah, I was sitting right there the whole time, but I was busy peeling vegetables.[sr]We're short on staff right now.
+[k]
+
+[charaFace D 0]
+
+＠Wǔ
+But even if I couldn't keep an eye on it the whole time,[sr]I would've noticed if any lechers had tried to get in.
+[k]
+
+＠Wǔ
+From what I remember, Ms. Harriet[sr]and Ms. Eva went in first.
+[k]
+
+＠Wǔ
+Then Ms. Dorothy and Ms. Laurie went in just[sr]as Ms. Harriet and Ms. Eva were leaving.
+[k]
+
+＠Wǔ
+I'm pretty sure nobody else went in after[sr]Ms. Dorothy and Ms. Laurie came out.
+[k]
+
+[charaFace D 4]
+
+＠Wǔ
+Though I sure didn't expect to see Ms. Dorothy back again so soon. Especially not looking like she was ready to carve me up.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Juliet
+So if my mom and my sister couldn't have taken it...[wt 0.7][charaFace B 4][sr]then who possibly could? There's no other viable suspects.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠Hawthorne
+True. A woman may have been able to make it past Wǔ without drawing suspicion, but there don't seem to be any women who could have done it...
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaSet E 7028000 1 Laurie]
+[charaSet D 2012000 1 Harriet]
+[charaSet F 7023000 1 Eva]
+
+[wipeFilter cinema 0.5 0]
+
+[charaTalk off]
+[charaFace A 0]
+[charaFace H 0]
+[charaFace E 0]
+[charaFadein A 0.1 0,-50]
+[charaFadein H 0.1 256,-50]
+[charaFadein E 0.1 -256,-50]
+
+[effect bit_sepia01]
+[fadein black 0.5]
+[se ad592]
+[seVolume ad592 0 0.5]
+[wait fade]
+
+[wt 1.2]
+[charaFadeout A 0.1]
+[charaFadeout H 0.1]
+[charaFadeout E 0.1]
+[wt 0.3]
+
+[charaFace B 0]
+[charaFace D 0]
+[charaFace F 0]
+[charaFadein B 0.1 256,-50]
+[charaFadein D 0.1 0,-50]
+[charaFadein F 0.1 -256,-50]
+[wt 1.2]
+
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[wipeOff]
+
+[charaSet D 98115000 1 Effect]
+[charaSet E 6026000 1 Wǔ]
+[charaSet F 1012001 1 Chris]
+
+[effectStop bit_sepia01]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠Juliet
+Oh? Did something occur to you, [%1]?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad95]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.5]
+[seStop ad95 0.3]
+
+＠Morris
+So we're just supposed to believe[sr]you've got an alibi, huh?
+[k]
+
+＠Morris
+I mean, hypothetically speaking, couldn't twins swap places to pull this kinda thing off? Just sayin'.
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠Wǔ
+...No way. No one would get them mixed up like that.[sr]I know I wouldn't...
+[k]
+
+？1：What about a woman who usually dresses like a man?[csr]She could've slipped in, right?
+
+？！
+
+＠Wǔ
+...Sure, that's possible.[sr]But only if there was anyone like that here.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠Morris
+Hah! Cross-dressers here in the mansion?[sr]Gimme a break.
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.0]
+[cameraMove 1.0 0,-30 1.1]
+[wt 1.2]
+[cameraMove 2.0 0,-0 1.1]
+[wt 2.2]
+[cameraHome 1.0]
+[wt 1.5]
+[charaFace H 5]
+
+＠Morris
+...Huh? Why're you looking at me like that?[sr]You think I stole it?
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠Juliet
+Hey! No fighting!
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+[wt 0.5]
+[se ad7]
+[charaPut D 1]
+[charaEffect D bit_talk_41]
+[cameraMove 0.3 0,-10 1.1]
+[wt 0.3]
+[charaPut D 1200,1200]
+[charaEffectStop D bit_talk_41]
+[wt 0.2]
+[charaFace H 2]
+[shake 0.05 5 4 0.2]
+[se ade33]
+[wt 0.5]
+
+？1：(Gasp) There's something down below!
+？2：(Gasp) There's nothing up top!
+
+？！
+
+[wt 0.3]
+[se ad7]
+[charaMoveScale H 1.03 0.2]
+[wt 0.3]
+[shake 0.05 5 4 0.2]
+[wt 0.1]
+[cameraHome 0.4]
+[charaFace H 5]
+[wt 1.0]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠Juliet
+Of course Morris is a man.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠Morris
+This punk friend of yours is calling me a woman!
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠Juliet
+Stop it, Morris![sr]I told you, they're[line 2]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠Morris
+I don't care if they're your guest anymore![sr]You and me, outside! Now!
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[se ad95]
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.4 1]
+[wt 0.5]
+[seStop ad95 0.3]
+
+＠F：???
+I'm afraid I can't let you do that, Mr. Morris.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠Wǔ
+Oh, hey Chris. Thanks for[line 2][wt 0.5][charaFace E 2][sr]Wait, NOW you show up!?
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠Morris
+You wanna stop me, Chris?[sr]Fine, I'll just beat your ass first then. Bring it!
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠Chris
+Then it seems you leave me no choice.[sr]My apologies!
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

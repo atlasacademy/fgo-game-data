@@ -1,0 +1,179 @@
+
+＄94-01-19-14-2-0
+[soundStopAll]
+[charaSet A 2003001 1 "Robin Hood"]
+[charaSet B 7016000 1 "Tamamo Cat"]
+[charaSet C 10002000 1 Meltryllis]
+[charaSet D 98112700 1 Passionlip]
+[charaSet E 23001000 1 BB]
+[charaSet F 98006300 1 "Enemy 1"]
+[charaSet G 98006300 1 "Enemy 2"]
+[charaSet H 98006300 1 "Enemy 3"]
+
+[scene 41000]
+[fadein white 1.5]
+[wait fade]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+＠Robin Hood
+We're here![sr][bgm BGM_EVENT_3 0.1]...What the hell? BB didn't say anything about this!
+[k]
+
+[messageOff]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.1]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+[charaTalk off]
+[charaDepth F 1]
+[charaDepth G 0]
+[charaDepth H 0]
+[se ad21]
+[charaFadein F 0.4 1]
+[wt 0.4]
+[charaFadein G 0.4 0]
+[wt 0.4]
+[charaFadein H 0.4 2]
+[wt 0.7]
+
+？1：So many enemies!
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠Tamamo Cat
+And they're not all small potatoes either, Master![sr]Some of them are Servants in disguise!
+[k]
+
+＠Tamamo Cat
+Those cowardly cretins! Not even an Assassin would have the gall to hide in a crowd like this! I'm THIS close to losing it!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？2：So this was a trap after all!?
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠Meltryllis
+BB didn't send these guys! She's incapable of doing anything that would make people truly hate her!
+[k]
+
+＠Meltryllis
+...Now I see. So it wasn't a coincidence when Lip showed up at the Separator!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？！
+[messageOff]
+[wt 0.4]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.4 1]
+[charaEffect D bit_talk_voice01]
+＠Passionlip
+Aaaaaahhhhhh!!!
+[k]
+
+[shake 0.01 0 5 0]
+[se ad14]
+[charaFadeout D 0.1]
+[charaEffectStop D bit_talk_voice01]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+＠Robin Hood
+Dammit, now Passionlip's acting up too!
+[k]
+[charaFadeout A 0.1]
+[imageSet H back41330 2]
+[bgmStop BGM_EVENT_3 0.1]
+[shakeStop]
+[seStop ad14 0.1]
+[wt 0.1]
+[charaDepth E 3]
+[charaScale H 1.01]
+[charaDepth H 1]
+[charaFadein H 0.1 0,312]
+[bgm BGM_EVENT_52 0.1]
+[messageOff]
+[charaMove H 0,-200 0.3]
+[charaMove E 0,0 0.3]
+[wait charaMove]
+[charaMove H 0,-170 0.15]
+[wait charaMove]
+[charaMove H 0,-200 0.15]
+[wait charaMove]
+[charaMove H 0,-170 0.2]
+[wait charaMove]
+[charaMove H 0,-200 0.2]
+[wait charaMove]
+[charaTalk E]
+[charaFace E 2]
+[charaPut F 0,0]
+[charaEffect F bit_talk_noise_pink01]
+[charaFadein E 0.4 0,0]
+＠BB
+Okay, settle down![sr]Keep your shit together, you brats!
+[k]
+
+？1：BB!?
+？2：Brats!?
+
+？！
+
+＠BB
+Yes, we had a few technical issues, but I've already accounted for these kinds of difficulty spikes!
+[k]
+
+＠BB
+Matcha, Melty, Kitty![sr]Start by taking out those Attack Programs!
+[k]
+
+[charaFace E 5]
+＠BB
+You can free Lip after you're done with that![sr]Don't worry, I believe in you, Senpai!
+[k]
+
+[bgmStop BGM_EVENT_52 0.4]
+[wt 0.2]
+[messageOff]
+[charaFadeout E 0.1]
+[charaFadeout H 0.1]
+[charaPut F 0,-1000]
+[charaEffectStop F bit_talk_noise_pink01]
+[scene 41000 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[bgm BGM_EVENT_3 0.1]
+＠Robin Hood
+All right, I guess I can afford to put in a little overtime, paid or not! Come on, Master of Chaldea!
+[k]
+
+＠Robin Hood
+I'll show you how much better my technique is after BB put me through the wringer.
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

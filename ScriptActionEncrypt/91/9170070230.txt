@@ -1,0 +1,353 @@
+＄91-70-07-02-3-0
+[charaSet A 7007001 1 "Vlad III"]
+[charaSet B 99502600 1 Mash]
+[charaSet C 98006300 1 Mage]
+[charaSet D 98013200 1 Dragon]
+
+[bgm BGM_EVENT_5 0.1]
+[scene 10912]
+[fadein black 1.5]
+[wait fade]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+
+＠Vlad III
+Now all that's left is the mage.[sr]I will not ask him to come to me.
+[k]
+
+＠Vlad III
+No...I'll chase him round perdition's flames before I give him up. I shall show them what it is to be Lord Impaler.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[charaShake C 0.01 4 4 0.7]
+[bgmStop BGM_EVENT_5 0.7]
+＠Mage
+...Wh-who the hell are you guys?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[bgm BGM_EVENT_1 0.1]
+
+＠Vlad III
+You do not know me?[sr]I am Vlad Tepes[line 2]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Mage
+Vlad III...of Wallachia? You lie.[sr]Lord Vlad perished long ago!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Vlad III
+Yes, that is correct.[sr]I fought and died as the ruler of Wallachia.
+[k]
+
+＠Vlad III
+What is done is done. The story of my life has been swallowed in the annals of history. However,[charaFace A 5] I will not tolerate anyone who glosses over the truth in later years.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Mage
+...What are you talking about?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[bgmStop BGM_EVENT_1 0.7]
+
+＠Vlad III
+There's no need for you to know.[sr]After all, I'm going to destroy you.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaShake C 0.01 0 5 0.4]
+[bgm BGM_EVENT_3 0.1]
+
+＠Mage
+Ack! N-no![sr]Summon...I summon thee! Come forth! Save me!
+[k]
+
+[charaPut D 0,0]
+[charaEffect D bit_talk_36]
+＠Mage
+Help me...!!! [se ad39]
+[k]
+
+[charaFadeout C 0.1]
+[charaPut D 0,-1000]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 14]
+[charaEffect B bit_talk_10]
+[charaFadein B 0.1 1]
+＠Mash
+A summoning circle...![sr]Is he trying to summon something again!?
+[k]
+
+[messageOff]
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+[wt 0.4]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[effect bit_talk_36]
+[se su4]
+[fadeout white 2.0]
+[wait fade]
+[charaEffectStop D bit_talk_36]
+[effectStop bit_talk_36]
+[shake 0.01 1 1 0]
+[wt 1.0]
+[fadein white 2.0]
+[wait fade]
+[se ad14]
+[seVolume ad14 0 0.4]
+
+＠Mage
+Ahhh! It's here... It's here![sr]Kill them! Kill them all...!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Vlad III
+...Now what has he summoned this time?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 6]
+[charaEffect B bit_talk_10]
+[charaFadein B 0.1 1]
+＠Mash
+This's a super giant organism reaction... Could it be...!?
+[k]
+
+[messageOff]
+[charaPut B 0,-10000]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[se ad17]
+[shake 0.01 0 5 2.0]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 2.0]
+[shakeStop]
+[seStop ad14]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠Mash
+Did he manage to summon...a dragon to the 19th century...?
+[k]
+
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠Vlad III
+There's no need to be surprised.
+[k]
+
+＠Vlad III
+The seven eras had stood once under fire. If they are undergoing repairs, it wouldn't be surprising something like this can happen.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOff]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaPut D 0,0]
+
+＠Mage
+Y-yes... I did it! My clan's ambitions have finally been fulfilled!
+[k]
+
+＠Mage
+Using this dragonkin, I shall bring all of London's mages under my command!
+[k]
+
+＠Mage
+Now all the Lords of the Clock Tower will be erad[charaShake C 0.01 0 5 0.4][se ad46][charaEffect D bit_talk_35][line 3]
+[k]
+
+
+＠Mage
+...Huh?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 15]
+[charaEffect B bit_talk_10]
+[charaFadein B 0.1 1]
+
+＠Mash
+The mage...!
+[k]
+
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaShake C 0.01 5 5 0.7]
+＠Mage
+Gyaaaaaaahhhhhhhh!!![sr]It's... IT'S EATING MEEEEEE!!!
+[k]
+
+＠Mage
+Why!? I was the one who summoned it...! Why!?[sr]Sto[se ad46][charaEffect D bit_talk_35][line 2][charaShake C 0.01 5 5 0.7]Gyaaaaaaaaahhhhhh!!!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.7]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠Vlad III
+Pathetic. Only through luck and coincidence did he succeed in his summoning. Without the ability to control his thrall, there is no point summoning it.
+[k]
+
+＠Vlad III
+Fine.[sr]O[charaFace A 2] almighty Phantasmal Beast... Dragonkin!
+[k]
+
+＠Vlad III
+My father revered thy name, and deemed thy form perfect for battle!
+[k]
+
+＠Vlad III
+And as his son, I have been despised by my enemies, by the people, by history itself... Not as a dragon, but as the devil!
+[k]
+
+＠Vlad III
+And now, I shall grapple with thee...a being Father deemed perfection itself. What irony!
+[k]
+
+＠Vlad III
+But I am grateful for this evil fortune! It may be twisted, but I will make a most worthy opponent for you!
+[k]
+
+＠Vlad III
+I, Vlad III, the son of Dracul...shall sink my fangs into your neck!
+[k]
+
+[messageOff]
+[se ad17]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+[charaTalk B]
+[charaFace B 2]
+[charaEffect B bit_talk_10]
+[charaFadein B 0.1 1]
+
+＠Mash
+Dragonkin...incoming!
+[k]
+
+？1：Let's do this!
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Vlad III
+Indeed! Taste my deadly spear!
+[k]
+
+？2：Protect the people of the city!
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Vlad III
+...Yes! How like my Master to be conscious of such a thing, even in a situation like this!
+[k]
+
+＠Vlad III
+If we were in the right era, you might have made a respectable king.
+[k]
+
+＠Vlad III
+Now, let's do this!
+[k]
+
+？！
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

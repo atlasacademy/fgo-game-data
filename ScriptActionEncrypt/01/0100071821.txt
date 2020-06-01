@@ -1,0 +1,228 @@
+
+
+
+＄01-00-07-18-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 98107400 1 Ushiwakamaru]
+[charaSet B 8001002 1 Mash]
+[charaSet C 4018001 1 Quetzalcoatl]
+[charaSet D 98003000 1 "Dr. Roman"]
+[charaSet E 98107800 1 Laḫmu]
+[charaSet F 98107800 1 Laḫmu]
+[charaSet G 98107800 1 Laḫmu]
+
+[scene 35000]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[wt 0.4]
+[charaEffect A bit_talk_13]
+[wt 0.1]
+[se bac10]
+[charaShake A 0.05 5 5 0.4]
+[wt 1.0]
+＠Ushiwakamaru
+Humph... Perhaps you really weren't all talk.
+[k]
+
+[charaFace A 1]
+＠Ushiwakamaru
+But you can't win. While we fought, the Grail was delivered to Mother.
+[k]
+
+？1：...We couldn't stop it...!
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+＠Mash
+...Yes. We failed... We couldn't get past Ushiwakamaru...
+[k]
+
+[charaFadeout B 0.1]
+
+？2：Ushiwakamaru, how could you...?
+
+[charaFace A 0]
+＠Ushiwakamaru
+...Why? I don't know.
+[k]
+
+[charaFace A 4]
+＠Ushiwakamaru
+The old me died in the sea of mud. What you see before you is a dead woman, stripped of her reason and turned into a being of pure instinct.
+[k]
+
+＠Ushiwakamaru
+The truth is, I always had this in me, [%1].
+[k]
+
+[charaFace A 1]
+＠Ushiwakamaru
+There was a black, inhuman part of me that hated the world of man, and wanted to kill more than anything.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？！
+
+[messageOff]
+[wt 0.7]
+[se bac112]
+[charaTalk off]
+[charaFace E 0]
+[charaFadein E 0.4 0,-64]
+[charaMove E 0,0 0.4]
+[wt 0.2]
+[se bac112]
+[charaFace F 0]
+[charaFadein F 0.4 -320,-64]
+[charaMove F -320,0 0.4]
+[wt 0.2]
+[se bac112]
+[charaFace G 0]
+[charaFadein G 0.4 320,-64]
+[charaMove G 320,0 0.4]
+[wt 1.0]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+＠Mash
+A huge number of Laḫmu has appeared again...! So...so many! Uruk isn't in any state to handle this many!
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠Ushiwakamaru
+...So it's begun, huh? I must go, then. I don't want to run out of things to kill.
+[k]
+
+＠Ushiwakamaru
+Now, should I destroy Uruk while its people try to fortify its little walls, or play with the refugees trying to escape beyond the Northern Wall?
+[k]
+
+[charaFace A 0]
+＠Ushiwakamaru
+Either way, I'm abandoning this body. I have no interest in clinging to something so wounded.
+[k]
+
+＠Ushiwakamaru
+Farewell, survivors of Chaldea. I commend your efforts in slaying me...
+[k]
+
+[charaFace A 4]
+＠Ushiwakamaru
+...Hollow victory though it is. Death no longer holds meaning for me.
+[k]
+
+[messageOff]
+[se ad161]
+[charaSpecialEffect A enemyErasure 1 1.8]
+[wt 0.4]
+[se ad42]
+[wt 0.5]
+[effect bit_talk_tokeru01]
+[wait effect bit_talk_tokeru01]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠Mash
+...Let's head back to Uruk, Master! Even if we don't make it in time, we can't just stay here!
+[k]
+
+？1：No, let's head to the observation point first.
+？2：Mash, first you need to calm down.
+
+？！
+
+[bgmStop BGM_EVENT_3 1.0]
+[se ad7]
+[charaShake B 0.05 3 3 0.5]
+
+[charaFace B 3]
+＠Mash
+Y-you're right, but...! Holding my hand like that is helping...!
+[k]
+
+[charaFadeout B 0.1]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Quetzalcoatl
+Yes, that's a good idea. I agree with [%1].
+[k]
+
+＠Quetzalcoatl
+...And I'm sorry. I failed to stop the Laḫmu from escaping.
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr. Roman
+No, it's not your fault. Nobody could've predicted something like that would happen.
+[k]
+
+＠Dr. Roman
+More importantly, we need to do what [%1] said, and head for the observation point!
+[k]
+
+＠Dr. Roman
+It's an emergency, but that doesn't mean we can run around blindly! First we need to know what's going on!
+[k]
+
+[communicationCharaFace 0]
+＠Dr. Roman
+And we need to rest, if even only for a few minutes.
+[k]
+
+＠Dr. Roman
+You've been fighting this whole time. I want to at least get these two some rest in a room with a roof.
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠Quetzalcoatl
+Yes, of course! Good idea, Doctor, yes! First, let's eat! Eat!
+[k]
+
+＠Quetzalcoatl
+Like the great lucha announcers say, you can't get in the ring on an empty stomach, yes!
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_5 1.4]
+[wait fade]
+[soundStopAll]
+[end]

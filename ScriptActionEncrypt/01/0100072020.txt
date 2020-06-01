@@ -1,0 +1,78 @@
+
+
+
+＄01-00-07-20-2-0
+
+[soundStopAll]
+[charaSet A 8001002 1 Mash]
+[charaSet B 2020001 1 Ishtar]
+[charaSet C 4018001 1 Quetzalcoatl]
+[charaSet D 98003000 1 "Dr. Roman"]
+
+[se ad158]
+[seVolume ad158 0 0.8]
+[se ad2]
+[seVolume ad2 0 0.2]
+[scene 20733]
+[fadein black 2.0]
+[wait fade]
+
+[wt 1.0]
+[bgm BGM_EVENT_24 0.1]
+[seStop ad158 1.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠Mash
+Master, we've entered Tiamat's field of vision! Laḫmu incoming!
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠Ishtar
+It's been two hours since we departed Uruk. I'm tired of waiting! I'll take the vanguard. You okay with that, Quetzalcoatl?
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠Quetzalcoatl
+Sí, of course. I can fight too, but if possible, let me save up my strength, yes!
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr. Roman
+I think you're already aware, but you're in Tiamat's territory!
+[k]
+
+＠Dr. Roman
+No matter what you do, the Chaos Tide will also be eating away at you! Be careful!
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠Mash
+Yes...! Commencing battle, Master!
+[k]
+
+
+[messageOff]
+[seStop ad2 0.4]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

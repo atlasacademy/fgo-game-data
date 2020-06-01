@@ -1,0 +1,158 @@
+＄01-00-06-08-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 8001001 1 Mash]
+[charaSet B 98003000 1 "Dr. Roman"]
+[charaSet D 5009001 1 "Da Vinci"]
+[charaSet E 1012001 1 Bedivere]
+[charaSet F 98084000 1 "Enforcement Knight"]
+
+[scene 29020]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠Da Vinci
+Okay, we've managed to break through the line.[sr]What's the situation, Romani!?
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr. Roman
+The knights' formation has broken in two places, and refugees are escaping through them.
+[k]
+
+＠Dr. Roman
+I detect about 50 life signs around [%1], and about 100 from the other location!
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠Mash
+There are more over there... But none of them can fight back, right!?
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0]
+[charaFace A 15]
+[charaFadein A 0.1 2]
+＠Bedivere
+...We have to leave them on their own. Considering how far they are, if we tried to join them, we'd all be rounded up together.
+[k]
+
+＠Bedivere
+The only thing we can do now is escape in different directions!
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠Da Vinci
+Lucius[line 2] Bedivere is correct. We need to guard the rear for the refugees here.
+[k]
+
+＠Da Vinci
+Fortunately, Sir Gawain isn't pursuing us.[sr]Look, the sky has turned back to night.
+[k]
+
+＠Da Vinci
+I would hazard a guess that he hasn't received orders to leave the gate and give chase.
+[k]
+
+[charaFace D 2]
+＠Da Vinci
+Before that happens, we'll use the cover of darkness and get as far away from the Holy City as we can!
+[k]
+
+[charaFace D 5]
+＠Da Vinci
+Oh, but before that[line 3]
+[k]
+
+[charaFadeout D 0.1]
+
+[se ad166]
+[wt 1.0]
+[seStop ad166 3.0]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Enforcement Knight
+Don't let them escape! Those given Holy Punishment must be purged! They will cause calamity if left alive!
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠Bedivere
+We need to crush these pursuers first![sr]Are you ready, [%1]!?
+[k]
+
+？1：Of course, leave the rear to us!
+
+[charaFadeout E 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠Da Vinci
+Wow, you've gotten pretty gallant, [%1]!
+[k]
+
+＠Da Vinci
+I'll take charge of leading the refugees! Our efforts will be in vain if the refugees end up scattering everywhere!
+[k]
+
+？2：Da Vinci, take the lead!
+
+[charaFadeout E 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠Da Vinci
+Yes, good decision, [%1]![sr]I won't let you down!
+[k]
+
+＠Da Vinci
+This is such a large group of panicked people after all. Someone needs to take charge here!
+[k]
+
+？！
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠Mash
+Enforcement Knights are closing in on the refugee group! Engaging!
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

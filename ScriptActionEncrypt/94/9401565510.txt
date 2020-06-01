@@ -1,0 +1,200 @@
+
+＄94-01-56-55-1-0
+
+
+
+[soundStopAll]
+
+
+
+[messageOff]
+
+
+[branch _PlayEffect_1st PM4 1]
+
+
+[label _PlayEffect_etc]
+
+[tapSkip _from_TapSkip_etc]
+
+[scene 10001]
+
+[effectPause bit_talk_goal2_6]
+[wait effectStart bit_talk_goal2_6]
+
+[fadein white 0.5]
+[wait fade]
+
+[effectStart bit_talk_goal2_6]
+[wait effect bit_talk_goal2_6]
+
+[label _from_TapSkip_etc]
+
+[effectDestroy bit_talk_goal2_6]
+[fadein black 0]
+[wait fade]
+
+[branch _PlayEffect_End]
+
+
+[label _PlayEffect_1st]
+
+[bgm BGM_EVENT_3 0.1]
+
+[tapSkip _from_TapSkip_1st]
+
+[effectPause bit_talk_winner2_6]
+[wait effectStart bit_talk_winner2_6]
+
+[scene 10001]
+
+[fadein white 0.5]
+[wait fade]
+
+[effectStart bit_talk_winner2_6]
+
+[bgmStop BGM_EVENT_3 3.7]
+
+[wt 3.9]
+[se ad251]
+[seVolume ad251 0 0.7]
+
+[wt 0.6]
+
+[voice 402600_0_M820]
+
+[scene 10000]
+
+[wait effect bit_talk_winner2_6]
+[wt 1.4]
+
+[label _from_TapSkip_1st]
+
+[voiceStop]
+[scene 10000]
+[effectDestroy bit_talk_winner2_6]
+[fadein black 0]
+[wait fade]
+
+
+[label _PlayEffect_End]
+
+[branch _PlayVoice_Start PM4 1]
+
+[branch _PlayVoice_End]
+
+
+
+
+[label _PlayVoice_Start]
+
+[charaSet A 5030001 1 "Caster of Storytelling"]
+[charaSet B 6028001 1 Nitocris]
+
+[bgm BGM_EVENT_64 0.1]
+
+[scene 45201 1.0]
+[wt 1.0]
+
+[flagRandom _PlayVoiceNo 1 3]
+
+
+[branch _PlayVoice_3rd _PlayVoiceNo 3]
+[branch _PlayVoice_2nd _PlayVoiceNo 2]
+[branch _PlayVoice_1st _PlayVoiceNo 1]
+
+
+[label _PlayVoice_1st]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFace A 0]
+[charaDepth B 1]
+[charaDepth A 9]
+[charaFadein B 0.4 2]
+[charaFadein A 0.4 0]
+[wt 0.7]
+
+＠Nitocris
+Shine[voice 9010005_0_M700] forth, light! [wait voice 9010005_0_M700][charaFace B 9]Sure we can call this the new dawn [voice 9010005_0_M701] for the just and true age of the pharaoh!
+[k]
+[wait voice 9010005_0_M701]
+
+[charaFace A 3]
+＠Caster of Storytelling
+The light of[voice 9010005_0_M702] dawn...[wait voice 9010005_0_M702][sr]Indeed,[voice 9010005_0_M703] seeing it always gives me a sense of relief.
+[k]
+[wait voice 9010005_0_M703]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_2nd]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFace A 0]
+[charaDepth B 1]
+[charaDepth A 9]
+[charaFadein B 0.4 2]
+[charaFadein A 0.4 0]
+[wt 0.7]
+
+＠Nitocris
+Digging[voice 9010005_0_M710] and burying are basically the same thing.[wait voice 9010005_0_M710][charaFace B 9][voice 9010005_0_M711] I am the incarnation of the god of the underworld and the master of burial! I could not possibly lose at this!
+[k]
+[wait voice 9010005_0_M711]
+
+[charaFace A 7]
+＠Caster of Storytelling
+Cave-ins,[voice 9010005_0_M712] lack of oxygen, flooding underground...[wait voice 9010005_0_M712][charaFace A 0][sr]We were[voice 9010005_0_M713] fortunate not to be literally buried...
+[k]
+[wait voice 9010005_0_M713]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_3rd]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFace A 0]
+[charaDepth B 1]
+[charaDepth A 9]
+[charaFadein B 0.4 2]
+[charaFadein A 0.4 0]
+[wt 0.7]
+
+＠Nitocris
+(Gasp)[voice 9010005_0_M720] ...! [wait voice 9010005_0_M720][voice 9010005_0_M721]I was so intent on listening to your stories, I didn't realize we managed to dig through! [wait voice 9010005_0_M721][charaFace B 9][voice 9010005_0_M722]We did great, didn't we!?
+[k]
+[wait voice 9010005_0_M722]
+
+[charaFace A 3]
+＠Caster of Storytelling
+I am humbled [voice 9010005_0_M723]to receive such praise.[wt 3.0][charaFace A 0][sr]Then we shall revisit the story another time...
+[k]
+[wait voice 9010005_0_M723]
+
+[charaFace B 7]
+＠Nitocris
+([voice 9010005_0_M724]It's wonderful that we lost track of time, but it's[sr]bad to be so wrapped up in what comes next, right?)
+[k]
+[wait voice 9010005_0_M724]
+
+[charaFace B 8]
+＠Nitocris
+([voice 9010005_0_M725]I wonder how that story ends...?)
+[k]
+[wait voice 9010005_0_M725]
+
+
+[label _PlayVoice_End]
+
+
+[messageOff]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_64 0.4]
+[wait fade]
+[soundStopAll]
+[end]

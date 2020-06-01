@@ -1,0 +1,72 @@
+＄01-00-02-10-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 20700 0]
+[charaSet A 8001000 1 Mash]
+[charaSet B 98003003 1 "Dr. Roman"]
+[charaSet C 98002000 1 Fou]
+[charaSet D 1005001 1 Nero]
+[charaSet E 98016000 1 "Roman Soldier"]
+[charaFace A 0]
+[charaFadein A 0 2]
+[charaFace D 0]
+[charaFadein D 0 0]
+[fadein black 1]
+[wait fade]
+＠Mash
+That's strange... We're running into[sr]the same amount of enemies as before.
+[k]
+
+＠Nero
+You're right. Even though we already[sr]regained control of nearby Gaul.
+[k]
+
+[charaFace D 5]
+＠Nero
+Don't tell me they're attacking from the sea![sr]If our scouts haven't noticed, then...
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 3]
+＠Dr. Roman
+The scouts were discovered and killed.[sr]We might be dealing with an elite battalion.
+[k]
+
+[communicationCharaFace 5]
+＠Dr. Roman
+Well, that explains it.[sr]But if so, that would mean[line 2]
+[k]
+
+[bgmStop BGM_EVENT_2 0.4]
+[bgm BGM_EVENT_3 0.1]
+[communicationCharaFace 2]
+＠Dr. Roman
+It's as I feared.[sr]I'm detecting even more enemies now!
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 2]
+[charaFadein A 0.1 2]
+[charaFadein E 0.1 0]
+＠Mash
+Brave soldiers, please be safe.[sr]I'm going to do what I can.
+[k]
+
+＠Roman Soldier
+Good luck to you too, Miss Mash!
+[k]
+
+[charaFace A 7]
+＠Mash
+Your orders please, Master.[sr]Commencing battle.
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,111 @@
+＄91-30-02-01-1-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 8001001 1 Mash]
+[charaSet B 98003000 1 "Dr. Roman"]
+[charaSet C 98002000 1 Fou]
+[charaSet D 3002001 1 Diarmuid]
+[charaSet E 3011001 1 Finn]
+[charaSet F 98006200 1 ???]
+[charaSet G 98006200 1 Enemy]
+[charaSet H 98006200 1 Enemy]
+
+[scene 20800]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk F]
+[charaFadein F 0.1 1]
+[wt 0.4]
+[fowardEffect bit_talk_13]
+[wt 0.1]
+[se bac13]
+[charaShake F 0.05 3 3 0.2]
+
+[wt 0.4]
+[charaSpecialEffect F enemyErasure 1 1.7]
+[se ad22]
+[wait charaSpecialEffect F enemyErasure]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.4 1]
+＠Diarmuid
+We are finished here!
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Mash
+Yes. We got them all on our end, too.
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠Diarmuid
+I guess we are lucky the enemy was not formidable... Hmm?
+[k]
+
+[wt 0.7]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.1]
+[wt 0.1]
+[se ad39]
+[flashin once 0.7 0.7 FFFFFFAF FFFFFF00]
+[wt 0.7]
+[fowardEffect bit_talk_30]
+[fowardEffectStop bit_talk_30]
+[wait fowardEffect bit_talk_30]
+
+[wt 1.0]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[bgm BGM_EVENT_2 0.1]
+＠Mash
+What happened?[sr]The light was...
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠Diarmuid
+I see. I think I understand now.
+[k]
+
+＠Diarmuid
+By defeating the enemies in my mental landscape, the true brilliance of my Noble Phantasm is restored.
+[k]
+
+[charaFace D 5]
+＠Diarmuid
+Master, I'm sorry to ask you but I would like to ask for your assistance a while longer.
+[k]
+
+[wt 0.4]
+[charaFace D 0]
+＠Diarmuid
+Well, let's move onto the next spot.
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[wt 0.4]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

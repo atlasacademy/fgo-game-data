@@ -1,0 +1,200 @@
+
+＄94-00-98-11-1-0
+
+[charaSet A 2006001 1 David]
+
+[soundStopAll]
+[bgm BGM_EVENT_5 1.0]
+[scene 10310]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 6]
+
+[fadein black 2]
+[wait fade]
+
+[wt 2.0]
+
+？1：I sense...
+？2：A presence...
+
+？！
+
+
+＠???
+...
+[k]
+
+？1：Someone's...
+？2：Watching...
+
+？！
+
+[charaFace A 4]
+
+＠???
+Unbelievable. I wasn't ready for this.
+[k]
+
+＠???
+Sheesh. Even I struggle to keep my modesty at a certain point. I guess I have no choice but to help out.
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_5 0.3]
+
+[se ad60]
+[charaFadeout A 0.4]
+[wt 1.0]
+[seStop ad60 0.3]
+
+[bgm BGM_EVENT_2 0.3]
+
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠David
+Hey, [%1].[sr]Good day. You are looking well.
+[k]
+
+[flag MALE false]
+[flag FEMALE false]
+
+[selectionUse masterMale]
+？1：Hello.
+[flag MALE true]
+？2：What lovely weather today.
+[flag MALE true]
+
+？！
+
+[selectionUse masterFemale]
+？1：Hello.
+[flag FEMALE true]
+？2：What lovely weather today.
+[flag FEMALE true]
+
+？！
+
+[charaFace A 0]
+＠David
+There's no need to be so formal. Today is a wonderful day. Both commercially and systematically. What a wonderful combination.
+[k]
+
+＠David
+Valentine's Day, was it? It started in the Mediterranean, and it seems to have even gained commercial success in the Far East.
+[k]
+
+＠David
+To put it eloquently, it's a blend of multiple cultures. The interesting part, you see, is that the sweets use cocoa originating from South America.
+[k]
+
+＠David
+The Mediterranean, the Far East, South America. I have to say that this truly has crossed the world in a monopoliz[line 2]I mean, wonderful way.
+[k]
+
+
+＠David
+Eh? [wt 0.5][charaFace A 1]Of course I celebrate Valentine's Day.[sr]Yes, wholeheartedly.
+[k]
+
+＠David
+Whether it be a sign of gratitude, or a confession of secret love...
+[k]
+
+＠David
+It's a day to convey one's feelings.[sr]How efficient. It's so systematic, I love it.
+[k]
+
+[charaFace A 0]
+＠David
+If it were up to me, I would say we should do this every week. But no matter. Everything in moderation.
+[k]
+
+＠David
+That goes for business, contracts, battle...even love.
+[k]
+
+[charaFace A 1]
+＠David
+Anyway, I am a thoughtful individual, so I never fail to return a favor. You gave me chocolates this morning, correct? Here's a return gift from me.
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[equipSet B 9805230 1]
+[wait equipSet B]
+[charaFace B 0]
+[charaFadein B 0.5 0,-70]
+[wt 2.0]
+[charaFadeout B 0.4]
+[wt 0.5]
+
+？1：Th-thank you very much...King David...
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠David
+Oh? Are you so moved to the core of your soul that you're trembling? You're like a little sheep that strayed away from its flock.
+[k]
+
+？2：(Speechless)
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠David
+Hm? Too moved to speak? You truly are refined. Hmmm, how virtuous.
+[k]
+
+？！
+
+＠David
+But this is nothing extravagant.[sr]I'd feel best if you just accepted it without any ado.
+[k]
+
+[branch _branchEnd MALE 1]
+[branch _isFemale FEMALE 1]
+
+[label _isFemale]
+
+＠David
+Though, if you want to do your duties as Abishag, I wouldn't mind that either.
+[k]
+
+＠David
+If that is the case, let us head to a private room.[sr]Eh? No? Can't trust the look in my eyes?
+[k]
+
+
+
+
+＠David
+Hahahaha. Oh come on. Hahaha.[wt 0.3][charaFace A 1][se ad186][backEffect bit_talk_41 -23,168] Why, that's because I'm serious!
+[k]
+
+[label _branchEnd]
+
+
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+[soundStopAll]
+[end]

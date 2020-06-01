@@ -1,0 +1,508 @@
+
+
+
+
+
+
+
+＄01-00-07-15-4-1
+[soundStopAll]
+[charaSet A 98106200 1 Merlin]
+[charaSet B 8001002 1 Mash]
+[charaSet C 2020001 1 Ishtar]
+[charaSet D 98003000 1 "Dr. Roman"]
+[charaSet E 4018001 1 Quetzalcoatl]
+[charaSet F 3027001 1 Ana]
+[charaSet G 98106000 1 Kingu]
+[charaSet H 3028001 1 "Jaguar Warrior"]
+
+[bgm BGM_EVENT_24 0.1]
+[scene 34700]
+[fadein black 1.5]
+[wait fade]
+
+[se ad13]
+[charaTalk D]
+[communicationChara 98003003 1 5 0 2]
+[wt 0.3]
+
+＠Dr. Roman
+Wait. Stop, Merlin! I'm picking up signs of Divinity from three hundred meters ahead!
+[k]
+
+＠Dr. Roman
+It's the Blood Fort! Send the signal to Quetzalcoatl!
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Merlin
+All right, leave it to me![sr]Special Britain Spell: Altria, It's Time for Dinner!
+[k]
+
+[charaFadeout A 0.1]
+[messageOff]
+[se ad39]
+[effect bit_talk_21]
+[wt 0.7]
+[messageOff]
+[wipeout downToUp 0.4 1]
+[wait wipe]
+[effectStop bit_talk_21]
+[scene 20320]
+[wipein upToDown 0.4 1]
+[wait wipe]
+
+[effect bit_talk_22]
+[se bac132]
+[wt 3.0]
+[messageOff]
+[wipeout upToDown 0.4 1]
+[wait wipe]
+[scene 34700]
+[effectStop bit_talk_22]
+
+[wipein downToUp 0.4 1]
+[wait wipe]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+
+＠Mash
+A flare!? Senpai, a flare-like thing just went up!
+[k]
+
+？1：...Tell me more about that spell!
+？2：RUUUUUUN!!!
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+
+＠Ishtar
+Dummy, we still haven't taken cover! That massive thing is going to come down right on top of us!
+[k]
+
+＠Ishtar
+If we're not at least three hundred meters away from the impact, we're going to get blown away too!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+
+＠Merlin
+Oh, whoops. My hand just slipped.[sr]Womp womp?
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 0.4]
+[charaFadeout A 0.1]
+[se ad110]
+[messageOff]
+[se ad75]
+[seStop ad75 2.0]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[scene 32600]
+[wt 0.1]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+
+
+＠Mash
+Oh.
+[k]
+
+
+＠Ishtar
+Hey!
+[k]
+
+
+＠Ana
+I will murder you, Merlin!
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[scene 34700]
+[wt 0.1]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠Dr. Roman
+...? What's wrong, everyone? For a second I thought there was lag... You're all so still. Did something happen?
+[k]
+
+？1：Merlin... threw his staff...
+？2：Merlin might've just killed us...
+
+？！
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[messageOff]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[scene 32600]
+[wt 0.4]
+[se ad239]
+[seVolume ad239 0 0.4]
+[seVolume ad239 2.0 0.95]
+[wt 2.0]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+[wt 1.2]
+[seStop ad239]
+[se ad237]
+[shake 0.01 8 8 4.0]
+[effect bit_talk_40]
+[scene 32610 2.0]
+[fadeout white 1.5]
+[wait fade]
+[wt 1.0]
+[fadein white 1.5]
+[effectStop bit_talk_40]
+[wait fade]
+
+
+[messageShake 0.03 5 5 1.0]
+＠Quetzalcoatl
+SUUUIIIIICIIIIIDAAAAA!!!???
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[scene 34700]
+[wt 0.1]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠Mash
+I just heard Quetzalcoatl scream many miles away in Babylon...
+[k]
+
+＠Mash
+Yeah... That was...
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠Ishtar
+Yeah... It was terrible...
+[k]
+
+[charaFadeout C 0.1]
+[charaSet C 98002000 1 Fou]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠Merlin
+I can't help it if my hand slipped...
+[k]
+
+[charaFace A 4]
+＠Merlin
+I didn't think my staff would become a beacon that would lead the axe there. My bad, my bad.
+[k]
+
+＠Merlin
+It looks like the axe didn't hit us, but instead buried itself right in the Blood Fort...
+[k]
+
+[charaFace A 1]
+＠Merlin
+Well then! That worked out perfectly![sr]We can't let Quetzalcoatl's noble sacrifice go to waste!
+[k]
+
+[charaFace A 0]
+＠Merlin
+We have things we need to do![sr]Now it's time for the final battle!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFadein C 0.1 1]
+[charaShake C 0.01 0 10 0.7]
+
+＠Fou
+Fooo, fofofoooooooooo!
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout C 0.1]
+[scene 34600]
+[wt 1.0]
+[fadein black 1.5]
+[wt 0.5]
+[bgm BGM_EVENT_24 1.0]
+[wait fade]
+
+[se ad180]
+[wt 0.4]
+[effect bit_talk_14]
+[wt 0.1]
+[shake 0.05 5 5 0.7]
+[se ad170]
+[wt 1.4]
+
+[messageOff]
+[wipeout downToUp 0.4 1]
+[wait wipe]
+[scene 20320]
+[wt 0.1]
+[wipein upToDown 0.4 1]
+[wait wipe]
+
+[effect bit_talk_22]
+[se bac132]
+[seVolume bac132 0 0.2]
+[wt 3.0]
+
+[wipeout upToDown 0.4 1]
+[wait wipe]
+[effectStop bit_talk_22]
+[scene 34600]
+[wt 0.1]
+[wipein downToUp 0.4 1]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠Quetzalcoatl
+(...The signal!) Playtime is over, Kingu!
+[k]
+
+[se ad238]
+[shake 0.05 5 5 0.4]
+[charaFadeout E 0.1]
+[wt 0.5]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+
+＠Kingu
+The Axe of Marduk...! You brought that all the way here from Eridu!?
+[k]
+
+[charaFace G 5]
+＠Kingu
+Still!
+[k]
+
+[se ad239]
+[seStop ad239 4.0]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.4]
+[charaMoveReturn G -80,0 0.4]
+[wt 0.5]
+[charaFace G 7]
+＠Kingu
+Something that large isn't going to do you any good. You're supposed to use your trump cards after stopping your opponent, bird brain!
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Quetzalcoatl
+That's just uncalled for, yes!
+[k]
+
+＠Quetzalcoatl
+I considered pounding your face into the ground to make you think on what you said...but I'll forgive you this once, yes!
+[k]
+
+[charaFace E 1]
+＠Quetzalcoatl
+Things have gone exactly according to plan, yes![sr]The axe was just a mere ticket to get through!
+[k]
+
+＠Quetzalcoatl
+I'm just a courier who delivers things to their destination at the appointed time for[line 3]
+[k]
+
+[messageOff]
+[fadeout white 0.5]
+[wait fade]
+[charaFadeout E 0.1]
+[se ad62]
+
+＠Quetzalcoatl
+S[messageShake 0.01 10 10 1.0]UUUIIIIICIIIIIDAAAAA!!!???
+[k]
+
+
+[seStop ad62 1.5]
+[fadein white 1.5 1]
+[wait fade]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠Jaguar Warrior
+Oh no! Kuku turned into fried chicken![sr]And in Spanish, “suicida” means suicide!
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 2]
+[charaFadein H 0.1 0]
+
+
+＠Quetzalcoatl
+I'm not fried chicken. I'm a bird of fire![sr]Argh, divine punishment fell from the heavens!
+[k]
+
+[charaFace H 1]
+＠Jaguar Warrior
+Meow... Kuku had so much Divinity, but now...it's dropped by over half!
+[k]
+
+＠Jaguar Warrior
+Hmmm, you broke the goddesses' pact, but maybe it was okay because you didn't really mean to?
+[k]
+
+[charaFace E 5]
+＠Quetzalcoatl
+Merlin, you'll pay for this!
+[k]
+
+＠Quetzalcoatl
+I am totally, and I mean one hundred percent maximum goddess fury mode, going to punish you with the ultimate lucha!
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+
+＠Kingu
+Gorgon's Divinity is falling...[sr]Did the axe destroy the temple!?
+[k]
+
+[charaFace G 2]
+＠Kingu
+Quetzalcoatl...! You still dare to back the humans!?
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+
+＠Quetzalcoatl
+Yes, I wasn't planning on going this far, but I guess I did in the end!
+[k]
+
+[charaFace E 0]
+＠Quetzalcoatl
+But don't worry, Kingu. This is as far as my help goes.
+[k]
+
+＠Quetzalcoatl
+I won't lay a finger on Gorgon.[sr]Destroying her is a job for the humans.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+
+＠Kingu
+Dammit, that little goddess isn't here!
+[k]
+
+＠Kingu
+This is terrible... She's the one Servant I can't let go![sr]I have to go save her... Save Gorgon...
+[k]
+
+[charaFace G 5]
+＠Kingu
+Looks like you get to live a bit longer, Quetzalcoatl.[sr]I'll take care of you after I save Gorgon!
+[k]
+
+[messageOff]
+
+[charaSpecialEffect G erasureReverse 1 0.1]
+[charaEffect G bit_talk_21]
+[se ad73]
+[wt 0.1]
+[charaEffectStop G bit_talk_21]
+[wt 0.4]
+[se ad136]
+[wt 0.7]
+[seStop ad136 0.8]
+[wt 1.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Quetzalcoatl
+Seems the rest is in [%1]'s hands, yes.
+[k]
+
+＠Quetzalcoatl
+But that was surprising.[sr]Kingu was really concerned about Gorgon.
+[k]
+
+＠Quetzalcoatl
+I know Kingu is using Gorgon for their own benefit, but maybe they love her in their own way...?
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_24 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]
+

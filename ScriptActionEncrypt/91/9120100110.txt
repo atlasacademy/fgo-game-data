@@ -1,0 +1,941 @@
+
+＄91-20-10-01-1-0
+[soundStopAll]
+[charaSet A 99502600 1 Mash]
+[charaSet B 98111500 1 "Da Vinci"]
+[charaSet C 2010002 1 Billy]
+[charaSet D 98025000 1 ???]
+[charaSet E 98018100 1 Scoundrel]
+[charaSet F 99360000 1 "Celtic Soldier"]
+[charaSet G 99360000 1 "Celtic Soldier"]
+[charaSet H 99360000 1 "Celtic Soldier"]
+
+
+[messageOff]
+[scene 28300]
+[bgm BGM_EVENT_11 0.1]
+[fadein black 1.5]
+[wait fade]
+[wt 1.0]
+＠Billy
+This is a hypothetical question.
+[k]
+
+＠Billy
+Say you were asked to protect a town,[sr]even if your chances of surviving were...uh, low.
+[k]
+
+＠Billy
+Tons of powerful, heavily armed enemies and you've got some scrounged up gear and just about no allies.
+[k]
+
+＠Billy
+Would you fight, even without a reward?[sr]Or would you not?
+[k]
+
+？1：Fight.
+
+＠Billy
+Your bravery always impresses me.
+[k]
+
+？2：Protect.
+
+＠Billy
+Yeah, you always have the right answers.
+[k]
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.5]
+[scene 10000 1.5]
+[wait scene]
+[wt 1.0]
+[effect bit_talk_haboob_01 -80,-350]
+[se ad2]
+[seVolume ad2 0 0.01]
+[seVolume ad2 3.0 0.90]
+
+[scene 11110 1.5]
+[wait scene]
+[wt 1.5]
+
+[scene 11210 1.5]
+[wait scene]
+
+[seStop ad2 6.0]
+[effectStop bit_talk_haboob_01]
+[wt 2.0]
+[bgm BGM_EVENT_3 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+＠Billy
+After you.
+[k]
+
+[seStop ad2 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠Scoundrel
+You bastard![se ad346][seStop ad346 0.5]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.7]
+[se bac22]
+[fowardEffect bit_talk_14]
+[charaShake E 0.05 3 3 0.25]
+[wt 0.5]
+
+[se ad144]
+[shake 0.05 1 4 0.5]
+[charaFadeout E 0.2]
+[charaMove E 0,-256 0.2]
+[wait charaMove E]
+[wt 1.5]
+[bgm BGM_EVENT_5 0.1]
+[charaTalk E]
+[charaFadein E 0.8 0,-256]
+[charaMove E 0,-50 0.8]
+＠Scoundrel
+Oww...ow![sr]Damn...you...!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠Billy
+With a hand that slow, nobody would hire you as a gunman.[sr]Well, might as well do some honest work. Who knows, good things might happen!
+[k]
+
+[charaFadeout C 0.1]
+[messageOff]
+[bgmStop BGM_EVENT_5 0.4]
+[wt 0.7]
+
+[charaEffect A bit_talk_10]
+[se ad13]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[bgm BGM_EVENT_2 0.1]
+＠Mash
+Look how he moves. I never imagined the human body could move so quickly...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 0,-90]
+＠Da Vinci
+The best quickdraw in the West,[sr]a move so great, it's almost legendary.
+[k]
+
+[charaFace B 0]
+＠Da Vinci
+I'd like to see that for myself someday.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠Billy
+Um...Master?[sr]Master, do you have a minute?
+[k]
+
+？1：What's wrong?
+
+[charaFace C 4]
+＠Billy
+I just got some news at a saloon.[sr]Seems like this town's getting targeted.
+[k]
+
+？2：Sure!
+
+[charaFace C 1]
+＠Billy
+Haha, my Master's sure upbeat!
+[k]
+
+[charaFace C 5]
+＠Billy
+Anyway.[sr]I hear that this town's getting targeted.
+[k]
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠Mash
+Targeted...by whom?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠Billy
+Bandits, scoundrels. Like that lot we encountered earlier. Spooked the sheriff and now he's useless.
+[k]
+
+＠Billy
+And the townspeople are afraid to go out.[sr]I wanna help them. That's not a bad thing, right?
+[k]
+
+？1：I think that's great.
+
+[charaFace C 1]
+＠Billy
+Oh, okay! Then let's do it!
+[k]
+
+？2：Unforgiven!
+
+[charaFace C 1]
+＠Billy
+I knew my Master'd be up for anything![sr]I'm really starting to like you!
+[k]
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠Mash
+Senpai, I don't know if you should have accepted this task so lightly. You should at least have asked how many you're going up against...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠Billy
+Oh, I don't know either.[sr]Hold on. I'll go ask.
+[k]
+
+[se ad59]
+[seStop ad59 1.0]
+[charaFadeout C 0.3]
+[charaMove C 0 0.3]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Mash
+Protecting this town from scoundrels...[charaFace A 6][sr](Gasp) This is a standard setup for a Western movie!
+[k]
+
+[charaFace A 1]
+＠Mash
+Oh my...what a very cowboy-ish setting, Master!
+[k]
+
+？1：Do you like that sorta thing?
+
+[charaFace A 3]
+＠Mash
+Um, well, not exactly... But there were books about it in the library, and I got engrossed in the story...
+[k]
+
+？2：You seem to know a lot.
+
+[charaFace A 13]
+＠Mash
+Yes, there were Westerns in the library, so I studied them as if they were classic stories.
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[se ad59]
+[seVolume ad59 0.6 0.99]
+[wt 0.3]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.3 0]
+[charaMove C 1 0.3]
+[wt 0.3]
+[seStop ad59]
+＠Billy
+Hey Master, Master![sr]I asked around to see how many there are.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Mash
+So how many are there?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Billy
+About a thousand.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠Mash
+1,000. I see. It's a typical Western setting[line 2][charaFace A 6][sr]Ehhh!? [messageShake 0.02 3 3 0.5]A THOUSAND!?
+[k]
+
+[bgmStop BGM_EVENT_2 1.5]
+[messageOff]
+[wipeout rollRight 1.5 0.5]
+[wait wipe]
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[charaPut A 1200,1200]
+[wt 1.0]
+[scene 20720]
+[wipein rollLeft 1.5 0.5]
+[wait wipe]
+[bgm BGM_EVENT_1 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+＠Billy
+Master, give me your binoculars.[sr]Okay, I see them...[charaFace C 2] Hey, isn't that...!?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[messageOff]
+[wt 0.5]
+[bgm BGM_EVENT_1 1.0 0.4]
+[cameraMove 1.0 100,-50 2.0]
+[wipeout diaOut 1.0 0.5]
+[wait wipe]
+[cameraHome 0.1]
+[messageOff]
+[charaFadein F 0.1 1]
+[charaFadein G 0.1 0]
+[charaFadein H 0.1 2]
+[charaShake F 0.2 3 3 5.0]
+[charaShake G 0.2 3 3 5.0]
+[charaShake H 0.2 3 3 5.0]
+[wt 0.3]
+[se ad173]
+[seVolume ad173 0 0.1]
+[seVolume ad173 1.0 0.6]
+[se ad166]
+[seVolume ad166 0 0.1]
+[seVolume ad166 1.0 0.2]
+[wipein diaOut 1.0 0.5]
+[wait wipe]
+[wt 1.5]
+[seStop ad173 1.0]
+[seStop ad166 1.0]
+[wipeout diaOut 1.0 0.5]
+[wait wipe]
+[charaShakeStop F]
+[charaShakeStop G]
+[charaShakeStop H]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.3]
+[bgm BGM_EVENT_1 1.0]
+[wipein diaOut 1.0 0.5]
+[wait wipe]
+[wt 0.3]
+[charaPut A 0,0]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 0,-90]
+＠Da Vinci
+Hmmm. It appears that your opponent has hired a bunch of leftover Celtic soldiers.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠Mash
+Impossible...that army should have disappeared when Queen Medb was defeated!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-90]
+＠Da Vinci
+They've been summoned to this time and place before, and the area is still very unstable in space time.
+[k]
+
+＠Da Vinci
+With a bit of coincidence and sheer luck, they could very well be summoned again by employing the proper technique.
+[k]
+
+＠Da Vinci
+That said, it would be impossible for an amateur with no knowledge of magecraft to just pull off a freak summoning out of nowhere. Which means...
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠Billy
+The other side has a mage, too...or someone like that.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut A 0,0]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-90]
+＠Da Vinci
+Naturally.[sr]That's what worries me.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠Billy
+One thousand Celtic soldiers...that's quite the number.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.3]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Mash
+Master![sr]Take a look at this!
+[k]
+
+？1：This can't be...
+？2：A Servant signature?
+？！
+
+[charaFace A 7]
+＠Mash
+Yes! It appears that numerous Servants are getting summoned as countermeasures.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 0,-90]
+＠Da Vinci
+I can't believe that many Heroic Spirits are willing to come. Maybe they're spoiling for a fight. Or they're just natural heroes down to their core.
+[k]
+
+[charaFace B 5]
+
+＠Da Vinci
+Well, doesn't matter.[sr]We'll take all the help we can get.
+[k]
+
+＠Da Vinci
+We'll operate as if we're fixing a Singularity,[sr][%1]. Explain to the Servants and ask them for help.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Billy
+Haha, Master![sr]This is really turning into a Western!
+[k]
+
+？1：Teamwork!
+
+[charaFace C 0]
+
+＠Billy
+Roger that, Master![sr]All right, let's do this!
+[k]
+
+？2：Gunfight at the corral!
+
+[charaFace C 0]
+
+＠Billy
+Haha, okay, Master! You'll get front row seats to watch how I handle my guns!
+[k]
+
+？！
+
+[messageOff]
+
+[bgmStop BGM_EVENT_1 1.5]
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[wt 1.0]
+
+
+[scene 20720]
+
+[bgm BGM_EVENT_5 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+
+＠D：???
+Listen up...that town ahead has tons of people, food, and gold.
+[k]
+
+＠D：???
+...Take them all.[sr]Loot everything you can find.
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk off]
+
+[charaFadein F 0.1 1]
+[charaFadein G 0.1 0]
+[charaFadein H 0.1 2]
+
+[shake 0.05 2 1 0.7]
+
+＠Celtic Soldier
+Yeah!!!
+[k]
+
+[shakeStop]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+
+[charaTalk on]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠D：???
+We are hungry wolves.[sr]We are beasts who only know how to fight and eat.
+[k]
+
+＠D：???
+That's fine. If we don't do so,[sr]we can't lay our roots down on this continent.
+[k]
+
+＠D：???
+Steal the leylines and make this grand continent our own. No gun or sword is a match for you.
+[k]
+
+＠D：???
+Now, go!
+[k]
+
+[messageOff]
+[se ad16]
+[seVolume ad16 0 0.7]
+[wt 0.5]
+
+＠D：???
+Use this place as a base so our clan can prosper once again!
+[k]
+
+[seStop ad16 0.4]
+[messageOff]
+[se ad55]
+[seVolume ad55 0.7 0.99]
+
+[wt 0.3]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFace F 0]
+[charaFadein F 0.4 5]
+[charaMove F 2 0.4]
+
+[wt 0.4]
+
+[seStop ad55]
+
+＠Celtic Soldier
+Reporting! A hundred of our front line soldiers have been annihilated.
+[k]
+
+＠D：???
+I see that our enemy is quite the adversary.
+[k]
+
+＠D：???
+...
+[k]
+
+[messageShake 0.05 6 6 0.5]
+
+＠D：???
+What!?
+[k]
+
+[messageShakeStop]
+
+＠Celtic Soldier
+Our enemies also have Servants.
+[k]
+
+＠D：???
+...
+[k]
+
+＠D：???
+Servants...why you...!
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_5 1.4]
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+
+[wt 0.5]
+
+[charaSet B 3009001 1 Leonidas]
+[charaSet C 3016001 1 Hektor]
+[charaSet D 7005001 1 Spartacus]
+[charaSet E 5014001 1 Mephistopheles]
+[charaSet F 6003001 1 "Hundred Personas"]
+[charaSet G 3002001 1 Diarmuid]
+[charaSet H 2010002 1 Billy]
+
+[fadein black 1.5]
+[wait fade]
+
+＠
+Let's wind the clock back a bit here.
+[k]
+
+[bgm BGM_EVENT_4 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.4 1]
+
+＠Billy
+And so, in order to protect this town from a thousand Celtic bandits, I need everyone's help!
+[k]
+
+[charaFadeout H 0.1]
+
+＠B：???
+Hahaha! So it's Thermopylae once again![sr]That does get me fired up!
+[k]
+
+[charaFadeout H 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.4 1]
+
+＠Leonidas
+I, Leonidas I, shall offer my shield in protection of this town!
+[k]
+
+＠Leonidas
+Any one Servant is a match for a thousand soldiers, and we have seven. There's nothing to fear!
+[k]
+
+[charaFadeout B 0.1]
+
+＠C：???
+No wonder Servants who are experts in defense got summoned.
+[k]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.4 1]
+
+＠Hektor
+But do you think this old man will be useful in this modern world?
+[k]
+
+[charaFace C 0]
+
+＠Hektor
+Either way, I got it. Hektor of Troy...[sr]I ask that you don't overwork me.
+[k]
+
+[charaFadeout C 0.1]
+
+＠D：???
+Bandits are oppression.[sr]That means this town is being oppressed right now!
+[k]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+
+＠Spartacus
+It is my duty to destroy all oppressors!
+[k]
+
+[charaFadeout D 0.1]
+
+＠E：???
+Understood, agreed, and ready to succeed! Defense may not be my forte, but leave surprising the enemy and sowing chaos in their ranks to me!
+[k]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.4 1]
+
+＠Mephistopheles
+For I am Mephistopheles![sr]I shall spread the joy of confusion to the enemies!
+[k]
+
+[charaFace E 1]
+
+＠Mephistopheles
+Ah, despair is so delicious!
+[k]
+
+[charaFadeout E 0.1]
+
+＠F：???
+Assignment accepted. I can see why we were called, as many enemies as there are.
+[k]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+
+＠Hundred Personas
+Hmph. As long as you have Hassan of the Hundred Personas, I shall fill out our numbers to match theirs!
+[k]
+
+[charaFace F 4]
+
+＠Hundred Personas
+Admittedly, protecting a town is not the typical duty of an assassin, but it's not as if I have no experience in doing such a thing.
+[k]
+
+[charaFadeout F 0.1]
+
+＠G：???
+Well, summoning me makes sense, at least.
+[k]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.4 1]
+
+＠Diarmuid
+I, Diarmuid Ua Duibhne, have apparently run amok in this land before.
+[k]
+
+[charaFace G 0]
+
+＠Diarmuid
+But that was as an enemy.[sr]I would like to wield my dual lances as an ally this time.
+[k]
+
+[charaFace G 1]
+
+＠Diarmuid
+...Amazing. A handful of heroes facing off against a horde or enemies... This is what I've waited for!
+[k]
+
+[charaFace G 2]
+
+＠Diarmuid
+Master! What is your command!?[sr]I shall paint this entire battlefield red with blood!
+[k]
+
+[charaFadeout G 0.1]
+
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠Billy
+Wow, I didn't think everyone would agree to join!
+[k]
+
+？1：That's good.
+
+[charaFace H 1]
+
+＠Billy
+They may say otherwise, but they're all softies at heart. After all, there's nothing to gain from this.
+[k]
+
+？2：It's all thanks to Billy running around.
+
+[charaFace H 1]
+
+＠Billy
+You think so? Heh.[sr]That's flattering if it's true.
+[k]
+
+？！
+
+[charaFadeout H 0.1]
+
+[messageOff]
+[se ad13]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠Mash
+Mash Kyrielight shall help you all by navigating for you!
+[k]
+
+＠Mash
+I will immediately inform you all if there are any changes in the town.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠Billy
+All right.[sr]Let's start by evacuating everyone in the town.
+[k]
+
+
+＠Billy
+We're going to take them to the cave inside a forest nearby. I've already spoken to the sheriff.
+[k]
+
+[charaFadeout H 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein F 0.1 0]
+[charaFadein G 0.1 2]
+
+＠Hundred Personas
+Then we shall be in charge of leading the way. We do have a Hassan persona who is good at organizing lines.
+[k]
+
+[charaFace G 5]
+
+＠Diarmuid
+...It's true. Fighting on the front line is not the only way to do it. Miss Hassan has the role of establishing communication with everyone.
+[k]
+
+＠Diarmuid
+It's not as exciting or glorious, but I will also accompany Miss Hassan. We need to avoid getting attacked from both sides.
+[k]
+
+？1：Thanks, you two!
+？！
+
+[charaTalk off]
+
+＠Both
+Roger that!
+[k]
+
+[se ad73]
+[charaFadeout F 0.2]
+[charaFadeout G 0.2]
+[charaMove F 4 0.2]
+[charaMove G 1 0.2]
+
+[charaTalk on]
+
+[wt 1.0]
+
+[seStop ad73]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠Billy
+Think about it, Master.[sr]We now have seven reliable Servants.
+[k]
+
+[charaFace H 2]
+
+＠Billy
+Let's start with the enemy's front line!
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_4 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

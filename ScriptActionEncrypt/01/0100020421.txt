@@ -1,0 +1,168 @@
+＄01-00-02-04-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 20700 0]
+[charaSet A 8001000 1 Mash]
+[charaSet B 98003003 1 "Dr. Roman"]
+[charaSet C 98002000 1 Fou]
+[charaSet D 1005001 1 Nero]
+[charaSet E 98016000 1 "Roman Soldier"]
+[charaSet F 98006300 1 "Unidentified Humanoid"]
+[communicationCharaLoop 98003003 0 5 0 5]
+[charaFace A 0]
+[charaFadein A 0 2]
+[fadein black 1]
+[wait fade]
+＠Mash
+[line 2]No sign of any nearby enemies.
+[k]
+
+[communicationCharaFace 0]
+＠Dr. Roman
+This time we're safe for sure. Let's head down[sr]while keeping an eye out for enemy soldiers.
+[k]
+
+[charaFadeout A 0.1]
+[charaFadein C 0.1 2]
+＠Fou
+Fou! Foooou!
+[k]
+
+[fadeout black 0.5]
+[messageOff]
+[wait fade]
+[charaFadeout C 0.1]
+[communicationCharaClear]
+[wait communicationChara]
+[wt 0.5]
+[scene 20300 0]
+[communicationCharaLoop 98003003 0 5 0 0]
+[charaFace A 0]
+[charaFadein A 0 2]
+[fadein black 0.5]
+[wait fade]
+＠Mash
+United Roman Empire...[sr]They seem to have taken in Servants.
+[k]
+
+[charaFace A 7]
+＠Mash
+Who is the mastermind anyway?[sr]Is it Lev Lainur, or perhaps[line 2]
+[k]
+
+[communicationCharaFace 3]
+＠Dr. Roman
+I still can't pick up anything, but if there's a Servant here it'd be hard to avoid combat.
+[k]
+
+＠Dr. Roman
+Servants are being implemented in wars[sr]without hesitation. This is clearly unusual.
+[k]
+
+[communicationCharaFace 5]
+＠Dr. Roman
+If you weren't here, the emperor would've been killed for sure.
+[k]
+
+＠Dr. Roman
+Please do your best, I'll proceed with my analysis.
+[k]
+
+？1：Understood.
+
+？2：Do your best, Doctor.
+
+？！
+
+[charaFadeout A 0.1]
+[charaFadein C 0.1 2]
+＠Fou
+Fou!
+[k]
+
+[fadeout black 0.5]
+[messageOff]
+[wait fade]
+[communicationCharaClear]
+[wait communicationChara]
+[charaFadeout C 0.1]
+[wt 0.5]
+[scene 20602 0]
+[charaTalk D]
+[charaFace A 0]
+[charaFadein A 0 2]
+[charaFace D 1]
+[charaFadein D 0 0]
+[fadein black 0.5]
+[wait fade]
+＠Nero
+Ah, you're back, [%1].
+[k]
+
+[charaFace D 0]
+＠Nero
+I know you only just returned, but I'm thinking of launching an expedition to Gaul.
+[k]
+
+＠Nero
+It's to aid and give encouragement to my fellow[sr]subordinates. Of course, if I don't go there's no point.
+[k]
+
+[charaFace D 1]
+＠Nero
+I'd like [%1] and Mash to join me.[sr]Well? Will you come?
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0]
+[wt 0.5]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠Mash
+...What should we do, Senpai?
+[k]
+
+[se ad13]
+[wait se ad13]
+＠Dr. Roman
+The emperor's given me details of the situation. Gaul[sr]seems to be a front line in the war with the United Empire.
+[k]
+
+＠Dr. Roman
+There's a chance that the Servant with the Grail[sr]could be rampaging there. Lev could be there too.
+[k]
+
+＠Dr. Roman
+I think you should go with her.[sr]Naturally, it'll be dangerous, but[line 2]
+[k]
+
+？1：It can't be helped.
+
+？2：We'll do our best and be careful.
+
+？！
+
+[charaFace A 13]
+＠Mash
+...Right Senpai, I agree.
+[k]
+
+[charaFadeout A 0.1]
+[charaFace D 2]
+[charaFadein D 0.1 0]
+[charaFadein E 0.1 2]
+＠Nero
+It's decided! An imperial expedition![sr]Prepare at once!
+[k]
+
+＠Roman Soldier
+Yes, Your Majesty!
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_2 0.4]
+[wait fade]
+[soundStopAll]
+[end]

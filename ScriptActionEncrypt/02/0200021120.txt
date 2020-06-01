@@ -1,0 +1,669 @@
+
+
+＄02-00-02-11-2-0
+[soundStopAll]
+[charaSet A 4004001 1 Astolfo]
+[charaSet B 98002000 1 Fou]
+[charaSet C 99502600 1 Mash]
+[charaSet D 98114600 1 "Resistance Man A"]
+[charaSet E 98114620 1 "Resistance Man B"]
+[charaSet F 4025000 1 Rider]
+[charaSet G 98113900 1 Fergus]
+[charaSet H 5030001 1 Scheherazade]
+
+[scene 42404]
+[fadein black 1.5]
+[wait fade]
+[charaPut B 0,0]
+[charaEffect A bit_talk_sparks]
+[se ad11]
+[wt 2.5]
+[fadeout black 0.4]
+[wait fade]
+[scene 42501]
+[fadein black 0.4]
+[wait fade]
+[bgm BGM_EVENT_3 0.1]
+[seVolume ad11 0 0.5]
+[se ad93]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+＠Astolfo
+Master, wake up![sr]We've got serious trouble!
+[k]
+
+？1：Nnn... Just five more minutes...
+
+？2：TIL...Astolfo is soft and fluffy...
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Fou
+F[charaMoveReturn B 20,0 0.3]ou fou?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠Astolfo
+Master[messageShake 0.01 5 5 0.7] this is not the time to get all cuddly with Fou!!!
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 2]
+[charaEffect C bit_talk_10_LowLevel]
+[se ad13]
+[wt 0.1]
+[charaFadein C 0.1 1]
+＠Mash
+Astolfo, Master's safety comes first![sr]Please get [&him:her] out of there!
+[k]
+
+[charaPut C 0,-10000]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Astolfo
+Yes! On it! Hup!
+[k]
+
+[messageOff]
+[charaMoveScale ast 1.1 0.3]
+[wt 0.3]
+[se ad7]
+[charaFadeout A 0.1]
+[wt 0.1]
+[fadeout black 0.4]
+[wait fade]
+[scene 42404]
+[charaScale A 1]
+[wt 2.0]
+[charaSet B 1026001 1 d'Eon]
+[fadein black 1.5]
+[wait fade]
+
+？1：Wh-what the...!?
+？2：Everything's on fire...!?
+？！
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠Astolfo
+I've been trying to tell you that, sleepyhead![sr]The whole grove's gone up like a match!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠Resistance Man A
+Dammit! [charaMoveReturn D 256,-20 0.4][se ad7]Put it out! [wait charaMove D][charaMoveReturn D 256,-20 0.4]Put it out![se ad7]
+[k]
+
+[charaShake E 0.01 5 5 0.4]
+＠Resistance Man B
+We can't! The fire's spread too much!
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠D：Resistance Man C
+How did this happen?
+[k]
+
+[charaShake E 0.01 5 5 0.7]
+＠E：Resistance Man D
+The Amazons set it on fire![sr]Everything's going up in flames!
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠Rider
+[messageShake 0.01 7 7 0.7]Keep it together!
+[k]
+
+[charaFace F 0]
+＠Rider
+First, make sure nobody's trapped in the flames.[sr]Things can be replaced. People can't!
+[k]
+
+＠Rider
+And make sure we're keeping an eye on our perimeter.[sr]The enemy may take this chance to attack!
+[k]
+
+[charaFace F 5]
+＠Rider
+Alternatively, whoever set the fire might still be close by. If you see them, don't let them escape!
+[k]
+
+＠Rider
+Once all that's done, gather our resources![sr]Get everything that's still intact to a safe place!
+[k]
+
+[charaFace F 2]
+＠Rider
+Now get moving, or we really will lose everything to the fire!
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[charaFadeout F 0.1]
+[wt 0.4]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.4 1]
+＠Fergus
+I'm so ashamed.[sr]I didn't even notice until it was too late.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+＠Scheherazade
+I was careless...[sr]I never thought they would attack our home base.
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠d'Eon
+No time for regret. Servants have less to fear from the flames, so we should all help tend to the injured.
+[k]
+
+？1：Do it. I'll help everyone out over here.
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Astolfo
+Okay Master, let's get you somewhere safe!
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 1.5]
+[seStop ad11 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaPut A 0,-10000]
+[charaEffectStop A bit_talk_sparks]
+[charaFadeout A 0.1]
+[wt 2.0]
+[scene 42401]
+[fadein black 1.5]
+[wait fade]
+[bgm BGM_EVENT_5 0.1]
+[charaTalk D]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠Resistance Man A
+It's... It's all gone...
+[k]
+
+＠Resistance Man B
+They finally found our hideout.
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠D：Resistance Man C
+Yesterday...we were all so focused on just getting away. Maybe we didn't cover our tracks well enough.
+[k]
+
+[charaShake D 0.01 5 5 0.7]
+＠D：Resistance Man C
+And...that may have let them follow us all the way here...
+[k]
+
+＠E：Resistance Man D
+Th-then they could all show up here at any time![sr]Wh-what're we gonna do!?
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFadein D 0.1 1]
+＠D：Resistance Man E
+Don't [messageShake 0.01 5 5 0.7]ask me!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠Rider
+You know what we're going to do.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk off]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠Resistance Men
+Rider...
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Rider
+I've been telling you the same thing every day.[sr]I'm not about to change my tune now.
+[k]
+
+＠Rider
+Never give up. Keep moving forward.[sr]That's all we can do.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠Resistance Men
+But...Rider...
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Rider
+I know. Everything's gone now.[sr]It's all burned down.
+[k]
+
+＠Rider
+The peach trees we depended on for food.[sr]The houses we worked tirelessly to build.
+[k]
+
+＠Rider
+The resources we collected a bit at a time from our enemies. ...Even the graves of our dead comrades.
+[k]
+
+＠Rider
+All of that is ash now.[sr]This peach tree grove was an ideal hideout, but it's gone.
+[k]
+
+[bgmStop BGM_EVENT_5 0.7]
+[charaFace F 2]
+＠Rider
+And I have only one thing to say to you now, something we should all be saying:
+[k]
+
+[bgm BGM_EVENT_4 0.1]
+[charaFace F 0]
+＠Rider
+“So what?”
+[k]
+
+＠Rider
+We're still here. We're still alive.[sr]Our legs can still take us wherever we want to go.
+[k]
+
+＠Rider
+We are NOT done for yet.[sr]There is still plenty we can do.
+[k]
+
+＠Rider
+This may be laughingly obvious, but I'll say it again.[sr]I'll say it as many times as it takes.
+[k]
+
+[charaFace F 1]
+＠Rider
+It's not over till it's over.[sr]As long as you don't give up, dreams DO come true.
+[k]
+
+＠Rider
+I know that deep in my soul, better than anyone.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk off]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠Resistance Men
+...
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠Rider
+What about you? You have all been brave enough to fight alongside me all this time!
+[k]
+
+＠Rider
+Are you just going to give up and let it end here!?[sr]Or are you going to keep facing forward with me!?
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk on]
+[charaTalk D]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+
+＠Resistance Man A
+Yeah...that's true.[sr]We ARE still alive.
+[k]
+
+＠Resistance Man B
+If we gave up now...we'd never be able to show our faces to the men who died.
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠D：Resistance Man C
+I thought I was gonna die a slave when I first fell down here, and now look how far we've come.
+[k]
+
+＠D：Resistance Man C
+It'd be wrong for us not to see it through to the end!
+[k]
+
+＠E：Resistance Man D
+I'm in, Rider! I'm with you all the way!
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk off]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠Resistance Men
+Me too!
+[k]
+
+[messageOff]
+[se ad16]
+[wt 2.0]
+[seStop ad16 1.5]
+[messageOff]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.4]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠d'Eon
+Remarkable. It's as though he brought them back from the dead.
+[k]
+
+＠d'Eon
+According to all logic and good sense, this was a hopeless situation. So perhaps it is fitting that such logic isn't what they needed to hear.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠Fergus
+Indeed. No amount of gentle cajoling or reasoning can move a soldier with a broken spirit.
+[k]
+
+＠Fergus
+And yet, amazingly, a leader with the right qualities merely commanding them to get moving can be enough to motivate them all to do so.
+[k]
+
+＠Fergus
+Rider looks to have those qualities in spades. I only wish they lent themselves to slightly less self-destructive tendencies.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Astolfo
+I think the word you're looking for is charisma!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠Mash
+...
+[k]
+
+[charaPut C 0,-10000]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠Fergus
+Well, yes, I suppose so.
+[k]
+
+＠Fergus
+Still, while kings, queens, generals, and noble warriors may all possess charisma...
+[k]
+
+＠Fergus
+...I think each has a very different KIND of charisma.[sr]In my estimation, Rider's is more like...
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠Scheherazade
+...
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Rider
+There you are.[sr]We're going to need your help again, tactician.
+[k]
+
+＠Rider
+I might've talked a good game, but to be honest, I can't see where we go from here.
+[k]
+
+＠Rider
+Do you have any ideas about how we can turn this situation around?
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠Scheherazade
+...I do. In fact, I just now thought of one.
+[k]
+
+？1：Good timing! Let's hear it.
+？！
+
+[charaFace H 6]
+＠Scheherazade
+Simply put...we launch another sneak attack.
+[k]
+
+＠Scheherazade
+Although, with our current numbers...I'm afraid it may be more of a suicide attack...
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠Rider
+That'd be fine with me...as long as it doesn't turn out like it did yesterday. How do we know it won't?
+[k]
+
+＠Rider
+I could see trying the same thing twice giving us an edge in terms of surprise, but there's no guarantee our enemy won't see through it again.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+＠Scheherazade
+It won't be the same as yesterday. There will be major differences in both our means and our method.
+[k]
+
+＠Scheherazade
+...This is something we can only do now that things have changed. It's a shame, though, that the changes have not been for the better.
+[k]
+
+＠Scheherazade
+Firstly, the Resistance is smaller now. Secondly, we no longer have to worry about returning home, since we no longer have a home.
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠Astolfo
+...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠Scheherazade
+And there is one last reason why I believe this attack will succeed: you, Rider.
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Rider
+...Me?
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠Scheherazade
+I already had some idea based on your outfit and fighting style...but after seeing how you inspired your men just now, I'm all but certain.
+[k]
+
+＠Scheherazade
+I believe that everyone else will agree with me.
+[k]
+
+＠Scheherazade
+You treat everyone under your command, along with yourself, as part of a single whole.
+[k]
+
+＠Scheherazade
+You have the ability to bring them all together and lead them toward achieving a common goal.
+[k]
+
+＠Scheherazade
+That is neither the aloof rule of a king, nor the hierarchical inspiration of a general. It is the charisma of one who is inextricably tied to those they lead.
+[k]
+
+＠Scheherazade
+In other words... You are the captain of a ship.
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Rider
+...
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠Scheherazade
+And in that case, there is a role that you are best suited to fill.
+[k]
+
+＠Scheherazade
+It is a role that only you can play, precisely because of who you are.
+[k]
+
+＠Scheherazade
+And it is the key to this operation...
+[k]
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_4 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

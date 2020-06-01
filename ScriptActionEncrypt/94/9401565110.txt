@@ -1,0 +1,265 @@
+
+＄94-01-56-51-1-0
+
+
+
+[soundStopAll]
+
+
+
+[messageOff]
+
+
+[branch _PlayEffect_1st PM4 1]
+
+
+[label _PlayEffect_etc]
+
+[tapSkip _from_TapSkip_etc]
+
+[scene 10001]
+
+[effectPause bit_talk_goal2_4]
+[wait effectStart bit_talk_goal2_4]
+
+[fadein white 0.5]
+[wait fade]
+
+[effectStart bit_talk_goal2_4]
+[wait effect bit_talk_goal2_4]
+
+[label _from_TapSkip_etc]
+
+[effectDestroy bit_talk_goal2_4]
+[fadein black 0]
+[wait fade]
+
+[branch _PlayEffect_End]
+
+
+[label _PlayEffect_1st]
+
+[bgm BGM_EVENT_3 0.1]
+
+[tapSkip _from_TapSkip_1st]
+
+[effectPause bit_talk_winner2_4]
+[wait effectStart bit_talk_winner2_4]
+
+[scene 10001]
+
+[fadein white 0.5]
+[wait fade]
+
+[effectStart bit_talk_winner2_4]
+
+[bgmStop BGM_EVENT_3 3.7]
+
+[wt 3.9]
+[se ad251]
+[seVolume ad251 0 0.7]
+
+[wt 0.6]
+
+[voice 402600_0_M800]
+
+[scene 10000]
+
+[wait effect bit_talk_winner2_4]
+[wt 1.4]
+
+[label _from_TapSkip_1st]
+
+[voiceStop]
+[scene 10000]
+[effectDestroy bit_talk_winner2_4]
+[fadein black 0]
+[wait fade]
+
+
+[label _PlayEffect_End]
+
+[branch _PlayVoice_Start PM4 1]
+
+[branch _PlayVoice_End]
+
+
+
+
+[label _PlayVoice_Start]
+
+[charaSet A 1098117200 1 Helena]
+[charaSet B 5025001 1 Edison]
+[charaSet C 2011001 1 "Nikola Tesla"]
+
+[bgm BGM_EVENT_64 0.1]
+
+[scene 45201 1.0]
+[wt 1.0]
+
+[flagRandom _PlayVoiceNo 1 3]
+
+
+[branch _PlayVoice_3rd _PlayVoiceNo 3]
+[branch _PlayVoice_2nd _PlayVoiceNo 2]
+[branch _PlayVoice_1st _PlayVoiceNo 1]
+
+
+[label _PlayVoice_1st]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFace C 0]
+[charaFadein B 0.4 2]
+[charaFadein C 0.4 0]
+[wt 0.7]
+
+＠Edison
+Such an[voice 9010002_0_M700] outcome is only to be expected when the three of us combine our powers,[wait voice 9010002_0_M700] but being called[voice 9010002_0_M701] the number one hole digger is not something to be happy about![wt 3.6][charaFace B 2][wt 0.7][charaShake B 0.05 4 0 0.7]
+[k]
+[wait voice 9010002_0_M701]
+
+[charaFace C 1]
+[charaShake C 0.05 0 4 0.4]
+＠Nikola Tesla
+Heh[voice 9010002_0_M702] heh...a mole...a mole-lion...
+[k]
+[wait voice 9010002_0_M702]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠Helena
+Cut[voice 9010002_0_M703] it out! Don't tease him.[wait voice 9010002_0_M703][charaFace A 0][sr]Besides,[voice 9010002_0_M704] being the best at digging is wonderful.
+[k]
+[wait voice 9010002_0_M704]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_2nd]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.7]
+
+＠Helena
+Eh[voice 9010002_0_M710]? Does that mean we dug the most?
+[k]
+[wait voice 9010002_0_M710]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 0.1 2]
+[charaFadein C 0.1 0]
+＠Nikola Tesla
+Say[voice 9010002_0_M711] what...? It's true that I was serious, but I never expected this outcome...
+[k]
+[wait voice 9010002_0_M711]
+
+＠Edison
+So this[voice 9010002_0_M712] is the true power of DC...or at least a part of it...[wait voice 9010002_0_M712][charaFace B 1] Wonderful[voice 9010002_0_M713]...just wonderful, is it not...?
+[k]
+[wait voice 9010002_0_M713]
+
+[charaFace C 2]
+[charaShake C 0.05 4 0 0.7]
+＠Nikola Tesla
+WH[voice 9010002_0_M714]AT???[charaFace B 5]
+[k]
+[wait voice 9010002_0_M714]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠Helena
+Yes,[voice 9010002_0_M715] yes, don't get all testy over the little stuff.[wt 3.4][charaFace A 1] Let's just be happy about our accomplishment! Yay!
+[k]
+[wait voice 9010002_0_M715]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk off]
+[charaFace B 5]
+[charaFace C 5]
+[charaFadein B 0.1 2]
+[charaFadein C 0.1 0]
+
+[wt 0.8]
+[charaTalk on]
+[charaTalk C]
+[charaFace B 0]
+[charaFace C 0]
+＠Nikola Tesla
+Y-[voice 9010002_0_M716]yes. Good work!
+[k]
+[wait voice 9010002_0_M716]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_3rd]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Helena
+I'm[voice 9010002_0_M720] beat![wt 2.4][charaFace A 1][sr]We dug a lot, so let's take a break!
+[k]
+[wait voice 9010002_0_M720]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 0.1 2]
+[charaFadein C 0.1 0]
+＠Edison
+I[voice 9010002_0_M721] agree...[wt 2.2][charaFace B 1][charaShake B 0.05 4 0 0.7] Zzzzz...
+[k]
+[wait voice 9010002_0_M721]
+
+＠Nikola Tesla
+Even[voice 9010002_0_M722] geniuses need rest...[wt 3.8][charaFace C 4][charaShake C 0.05 4 0 0.7] Zzzzz...
+[k]
+[wait voice 9010002_0_M722]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠Helena
+Oh[voice 9010002_0_M723] my... They both fell asleep standing up.[wait voice 9010002_0_M723][charaFace A 1][sr]Teehee...[voice 9010002_0_M724] Even big as they are, they're like children.
+[k]
+[wait voice 9010002_0_M724]
+
+
+[label _PlayVoice_End]
+
+
+[messageOff]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_64 0.4]
+[wait fade]
+[soundStopAll]
+[end]

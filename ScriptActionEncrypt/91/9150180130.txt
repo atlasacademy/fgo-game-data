@@ -1,0 +1,582 @@
+
+＄91-50-18-01-3-0
+
+[soundStopAll]
+
+[charaSet A 99502600 1 Mash]
+[charaSet B 5010001 1 Paracelsus]
+[charaSet C 5018001 1 Gilgamesh]
+[charaSet D 98111500 1 "Da Vinci"]
+[charaSet E 11001000 1 "Aŋra Mainiiu"]
+
+[charaSet F 98115000 1 "For Effect"]
+[charaSet G 98115000 1 "For Effect"]
+[charaSet H 98115000 1 "For Effect"]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 10710]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se bac135]
+[charaFace B 2]
+[charaShake B 0.05 3 3 0.3]
+[effect bit_talk_Slash_white_01]
+[wt 0.3]
+[se bac136]
+[charaShake B 0.05 3 3 0.3]
+[effect bit_talk_Slash_white_01_L]
+[wt 0.3]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+[wt 0.2]
+[se ad39]
+[charaPut F 1]
+[charaDepth F 10]
+[charaEffect F bit_talk_15]
+[wt 1.5]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_15]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.2]
+[se bac279]
+[charaPut F 1]
+[charaPut G -300,0]
+[charaPut H 300,0]
+
+[charaShake B 0.05 3 3 2.0]
+[charaEffect F bit_talk_32]
+[wt 0.2]
+[charaEffect G bit_talk_32]
+[wt 0.2]
+[charaEffect H bit_talk_32]
+[charaMove F -250,0 0.5]
+[charaMove G 250,0 0.5]
+[charaMove H 0,0 0.5]
+[wt 0.5]
+[seStop bac279 0.5]
+[charaMove F 200,0 0.5]
+[charaMove G 0,0 0.5]
+[charaMove H -200,0 0.5]
+[wt 0.5]
+
+
+[charaPut F 1200,1200]
+[charaPut G 1200,1200]
+[charaPut H 1200,1200]
+
+[charaEffectStop F bit_talk_32]
+[charaEffectStop G bit_talk_32]
+[charaEffectStop H bit_talk_32]
+[bgmStop BGM_EVENT_3 1.0]
+[wt 0.3]
+[charaMove B 0,-40 0.2]
+[charaShake B 0.05 3 3 0.2]
+[wt 0.2]
+[se ad144]
+[charaFadeout B 0.1]
+[wt 1.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠Gilgamesh
+That should take care of matters.[sr]Have you learned your lesson, Hohenheim?
+[k]
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-60]
+[charaMove B 1 1.5]
+[charaShake B 0.07 4 1 1.5]
+[wt 2.0]
+
+＠Paracelsus
+It...hurts...very much.[sr]So much so that I want to try my own medicine...
+[k]
+
+＠Paracelsus
+They were homunculi that I raised myself, but were not strong enough to compensate for my rather unremarkable fighting ability.
+[k]
+
+＠Paracelsus
+It pains me to use them as mere pawns...
+[k]
+[messageOff]
+[se bac23]
+[charaMoveReturn B 10,0 0.2]
+[wt 0.2]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠Gilgamesh
+Hm?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Paracelsus
+I'm leading you into a trap.[sr]Would you still care to accompany me?
+[k]
+[messageOff]
+[charaFadeout B 0.4]
+[se ad132]
+[wt 1.0]
+[seStop ad132 0.5]
+
+？1：Wait, Paracelsus!
+？2：We'd better stop Dr. Feelbad over there!
+
+？！
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Gilgamesh
+Hold it. I understand how you feel, but calm down, mongrel. There's no need to rush in like fools.
+[k]
+
+＠Gilgamesh
+He's a Caster. Unlike the Assassin we encountered, he will be easy to track.
+[k]
+
+＠Gilgamesh
+However, we should try to discern their intent before we do anything.
+[k]
+
+？1：...Does he want to separate us from something?
+
+[charaFace C 1]
+
+＠Gilgamesh
+Correct.[sr]See, you can do it if you try.
+[k]
+
+？2：...He doesn't want to get scolded?
+
+[charaFace C 4]
+
+＠Gilgamesh
+...Unbelievable... So this is the level of idiocy I should expect from today's youth...
+[k]
+
+＠Gilgamesh
+Think, mongrel. He is trying to lure us to follow him, so what is the one thing he would not want us to do?
+[k]
+
+？！
+
+[charaFace C 0]
+
+＠Gilgamesh
+His retreat is an obvious diversion. Don't you think there is somewhere else we should be searching?
+[k]
+
+？1：...The Greater Grail!
+
+？！
+
+＠Gilgamesh
+Right. There's nothing else more valuable than that here.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaPut F 1]
+[charaEffect F bit_talk_10]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Mash
+Do you think that's the key in figuring out why Jack and Paracelsus are acting strange?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Gilgamesh
+...
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.7 1]
+[bgmStop BGM_EVENT_2 0.7]
+[wait wipe]
+
+[charaSet B 9002001 1 "Amakusa Shirou"]
+
+[charaFadeout C 0.1]
+[wt 0.5]
+[scene 20200]
+
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+＠Aŋra Mainiiu
+What the hell, guys? So you just came straight here? Skipped the clever diversion and everything?
+[k]
+
+＠Aŋra Mainiiu
+Shoulda figured casting the low-energy dweeb as a decoy was a crap decision from the word go.
+[k]
+
+＠Aŋra Mainiiu
+Anyway! Guess it's greeting time! Hiya, Master and[sr]Lord King Sparkly! Nice job getting here and stuff.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-90]
+
+＠Da Vinci
+Is that...the Servant detected at the Greater Grail during the Zero incident?
+[k]
+
+＠Da Vinci
+His Spirit Origin isn't registered at Chaldea.[sr]What is he doing here?
+[k]
+
+＠Da Vinci
+Were you the one who abducted Dr. Roman?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Aŋra Mainiiu
+Doctor, huh?[sr]Nope, no doctor or scientist friends here.
+[k]
+
+＠Aŋra Mainiiu
+But that guy?[sr]Doctor Roomy...was it?
+[k]
+
+＠Aŋra Mainiiu
+Well I've got him, obviously![sr]Cuz I accepted that job!
+[k]
+
+＠Aŋra Mainiiu
+Anyway, you wanna go, punks?[sr]I better warn you, though...
+[k]
+
+＠Aŋra Mainiiu
+Eh? Warn you what, you ask? Well, I'm super weak![sr]So don't bitch when you kill me with that first punch!
+[k]
+
+＠Aŋra Mainiiu
+But y'know... If you kill me with one punch,[sr]you'll never find that Doctor of yours!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠Gilgamesh
+What!? If we just attack, we'll never get the information we want!?
+[k]
+
+＠Gilgamesh
+That is quite the novel hostage tactic, mongrel! A Servant putting his life on the line for negotiations alone...unbelievable!
+[k]
+
+？1：Take it eas[line 2]no, go all-out!
+？2：Mash will find the Doctor!
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut F 1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Mash
+Yes! I'm scanning the surrounding area right now![sr]So please deal with this enemy, King Gilgamesh!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Gilgamesh
+Oh? Is that so? Did you hear that, Avenger who even I didn't expect here? What's your next move?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Aŋra Mainiiu
+Hmmm, well, I really liked the bit where you don't care if I die. Not bad.
+[k]
+
+＠Aŋra Mainiiu
+Honestly, this was supposed to be an ambush.[sr]I was never super worried about living or dying.
+[k]
+
+＠Aŋra Mainiiu
+As long as my words held your attention, that's all that matters.
+[k]
+[messageOff]
+
+[se bac23]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[wt 0.5]
+
+[charaPut F 1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠Mash
+Master!
+[k]
+
+？1：Behind you, King Gilgamesh!
+
+？！
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[charaPut G 1]
+[se ad32]
+[charaFace C 2]
+[charaEffect G bit_talk_GuardMagic]
+[wt 1.0]
+[charaEffectStop G bit_talk_GuardMagic]
+[wt 0.5]
+
+
+＠Gilgamesh
+You call that a warning!? That was close![sr]It would've been fatal had it hit anyone but me!
+[k]
+
+＠Gilgamesh
+I suppose I'll let it go.[sr]Show yourself...third Servant!
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.7 1]
+[wt 0.7]
+＠Amakusa Shirou
+It appears I missed my opportunity. I should have moved a heartbeat earlier for a proper surprise attack.
+[k]
+
+＠Amakusa Shirou
+Or was it a matter of execution?[sr]Was our teamwork, perhaps, not so great?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Mash
+Impossible... You too, Amakusa? Please tell us...[sr]What did you do the Doctor, and why?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Amakusa Shirou
+Well, you see...[sr]Avenger, do you have something to say about this?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Aŋra Mainiiu
+You're askin' me? Wasn't it something like...Operation Eradicate Chaldea, or something?
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Amakusa Shirou
+Well, that's not exactly artful, but I suppose it will do. Yes, it's exactly what he said.
+[k]
+
+＠Amakusa Shirou
+It was the opportune moment...let us leave it at that.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Gilgamesh
+Always vague and guarded, I see.[sr]Is this the second time we've met?
+[k]
+
+＠Gilgamesh
+I suppose it was not ME, specifically, who met you,[sr]but our connection is engraved on my Spirit Origin.
+[k]
+
+＠Gilgamesh
+I really must give it to you, apocryphal saint...[sr]I heard you died very easily in Uruk's jungles.
+[k]
+
+＠Gilgamesh
+It never occurred to me that you'd have the spine to rebel. Did the ways of modern man wear on you?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Amakusa Shirou
+Hahahaha! You may have made some valid points, but I'll leave the particulars to your imagination.
+[k]
+
+＠Amakusa Shirou
+The one thing I can tell you is that I am and always will be myself, no matter where I am.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Aŋra Mainiiu
+Hey! Now that your surprise attack failed, hurry up and get this over with. Our opponent's not the type to be convinced in conversation.
+[k]
+
+＠Aŋra Mainiiu
+Besides, these two are used to hearing your speechifying.
+[k]
+
+＠Aŋra Mainiiu
+Anyway, it's just one dinky Caster. Instead of wasting your energy talking, how about you just kick his ass?
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[bgmStop BGM_EVENT_5 0.5]
+[wt 0.5]
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Gilgamesh
+Fine. I'll bite, Avenger.
+[k]
+
+＠Gilgamesh
+This magical staff is another of my precious treasures. I'm going to give you a taste of its power!
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

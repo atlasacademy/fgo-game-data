@@ -1,0 +1,165 @@
+
+
+＄02-00-04-05-5-0
+
+[soundStopAll]
+
+
+[charaSet A 98018000 1 "Eyepatch Sailor"]
+[charaSet B 98018100 1 "Sailor B"]
+[charaSet C 98018100 1 "Sailor C"]
+[charaSet D 1098120700 1 "Middle-Aged Man (Villager)"]
+
+[charaSet E 2003001 1 "Robin Hood"]
+
+[charaSet F 98115000 1 Effect]
+
+[charaSet G 5033001 1 Circe]
+
+[charaSet H 98006200 1 Ghost]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 49502]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠D：Villager
+A-aah! Somebody, saaave meee![sr]There are monsters everywhere!
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.1]
+[se ad21]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_3 0.1]
+[charaDepth F 10]
+
+[se ade64]
+[wt 0.2]
+[se ade64]
+[charaPut F 1]
+[wt 0.2]
+[charaEffect F bit_shot_01]
+[se bac15]
+[wt 0.3]
+[se bac16]
+[charaShake H 0.05 3 3 0.7]
+[wt 1.0]
+[se ad22]
+[charaSpecialEffect H enemyErasure 1 1.0]
+[wt 2.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein A 0.4 1]
+[wt 0.1]
+[charaFadein B 0.4 2]
+[wt 0.1]
+[charaFadein C 0.4 0]
+[wt 0.4]
+[bgm BGM_EVENT_4 0.1]
+＠Eyepatch Sailor
+Well there, if it ain't [%1] and[sr]comrades! Looks like yer in a spot o' trouble!
+[k]
+
+？1：The sailors from the wharf?
+？！
+
+＠Eyepatch Sailor
+Yer play may've been duller 'n a windless day at sea, but that don't mean I'm gonna let yer cute little actress bite the dust!
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaSet D 1098120900 1 "Old Man"]
+[charaSet F 3031001 1 Nezha]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠Circe
+Call me “little” again,[sr]and I'll turn you into a literal pig!
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[bgmStop BGM_EVENT_4 0.4]
+[wt 0.7]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.2]
+[se ad21]
+[effect bit_talk_41]
+[wt 0.7]
+[effectStop bit_talk_41]
+[wt 0.2]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.3 -100,0]
+[charaMove D 1 0.3]
+[wt 0.3]
+[charaShake D 0.05 3 3 0.5]
+
+＠D：Villager
+This is the end! Our village is done for!
+[k]
+
+[messageOff]
+[charaFadeout D 0.3]
+[charaMove D 100,0 0.3]
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Robin Hood
+I TOLD you to be careful, Gramps![sr]Ugh, this is such a frigging pain!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠Nezha
+We are still. Outnumbered! These enemies are strange. Handling them. Difficult!
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

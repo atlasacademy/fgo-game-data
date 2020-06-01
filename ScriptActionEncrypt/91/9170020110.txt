@@ -1,0 +1,193 @@
+＄91-70-02-01-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 20300]
+[charaSet A 8001000 1 Mash]
+[charaSet B 98003000 2 "Dr. Roman"]
+[charaSet C 98002000 2 Fou]
+[charaSet D 7002001 1 Lancelot]
+[charaSet E 98006300 1 Critter]
+[charaFace A 1]
+[charaFadein A 0]
+[fadein black 1]
+[wait fade]
+＠Mash
+Ahh...[sr]This breeze certainly feels nice, doesn't it Senpai?
+[k]
+
+？1：It sure does, by the way...
+
+？2：It sure does, come to think of it...
+
+？！
+
+[charaFadeout A 0.1]
+[communicationChara 98003003 1 5 0 3]
+＠Dr. Roman
+I was wondering why you brought a Berserker to such a peaceful picnic.
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠Lancelot
+...
+[k]
+
+＠Mash
+Doctor, Lancelot may be a Berserker, but I think if you talk to him he'll understand.
+[k]
+
+＠Mash
+He's a reasonable Berserker, so I think it's all right.
+[k]
+
+[charaFadeout D 0.1]
+[communicationCharaLoop 98003003 1 5 0 4]
+＠Dr. Roman
+A reasonable Berserker...[sr]He couldn't be a Berserker then, could he...
+[k]
+
+？1：He can understand us?
+
+？2：To be honest, it seems that way.
+
+？！
+
+＠Mash
+Yes...[sr]He does seem to understand us.
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFadein C 0.1 1]
+＠Fou
+Foou?
+[k]
+
+[charaFadeout C 0.1]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠Lancelot
+[image berserker_language_2][line 2]!!!
+[k]
+
+＠Dr. Roman
+Gah! I knew it![sr]He doesn't understand us!
+[k]
+
+[charaFadeout D 0.1]
+[bgmStop BGM_EVENT_2]
+[bgm BGM_EVENT_3]
+[charaFadein E 0.1 1]
+＠Mash
+No, that's not it! [line 2]Senpai! It's an enemy attack![sr]Get behind me! I'll intercept th...
+[k]
+
+＠Mash
+Huh?[sr]Where's my shield?
+[k]
+
+？1：Come to think of it, where is it?
+
+？2：Sorry, I put our lunches on it...
+
+？！
+
+＠Mash
+Oh! It still has our lunches on it![sr]Senpai, watch out!
+[k]
+
+[charaFadeout E 0.1]
+[charaFadein D 0.1 2]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+[wt 0.5]
+[messageOff]
+[flashin once 0.4 2 FF000080 00000000]
+[se ad32]
+[wait se ad32]
+[charaEffect D bit_talk_12 2]
+[wait flash]
+[flashout 0.7]
+[wait flash]
+[charaEffectStop D]
+[wait charaEffect D]
+＠Lancelot
+[image berserker_language_2][line 2]!!!
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadein D 0.1 1]
+＠Mash
+Lancelot!
+[k]
+
+[se ad33]
+[wait se ad33]
+[charaFadeout D 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr. Roman
+He used the chopsticks[line 2][sr]to stop the attack... That's amazing...
+[k]
+
+＠Mash
+So that's the skill of the Knight of Owner.[sr]Bravo, Lancelot!
+[k]
+
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr. Roman
+But those chopsticks won't hold out for long!
+[k]
+
+？1：Can he use something else as a weapon?
+
+？2：I think we need to get Mash's shield...
+
+？！
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Fou
+Foou!
+[k]
+
+[charaFadeout C 0.1]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠Dr. Roman
+Huh? ...What did you find, Fou?[sr]That's a log! Well done, Fou!
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠Mash
+Take it, Lancelot!
+[k]
+
+[se ad7]
+[wait se ad7]
+[charaFace D 2]
+＠Lancelot
+[image berserker_language_2][line 2]!!!
+[k]
+
+[charaFadeout D 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr. Roman
+Whoa! Just touching that log he instantly[sr]transformed it into a Noble Phantasm-level weapon!
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[communicationCharaClear]
+[wait fade]
+[soundStopAll]
+[end]

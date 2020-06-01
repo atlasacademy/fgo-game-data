@@ -1,0 +1,197 @@
+＄91-70-07-02-1-0
+[charaSet A 7007001 1 "Vlad III"]
+[charaSet B 99502600 1 Mash]
+[charaSet C 98021100 1 Woman]
+[charaSet D 98006200 1 Monster]
+
+
+[bgm BGM_EVENT_5 0.1]
+[scene 10902]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠Vlad III
+Hm... London again? We've already taken care of that devil... Is there something else?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[se ad13]
+[charaTalk B]
+[charaFace B 0]
+[charaEffect B bit_talk_10]
+[charaFadein B 0.1 1]
+
+＠Mash
+I'm not sure, but we picked up something in in the area.
+[k]
+
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Vlad III
+Perfect, then! Even the defeat of a small foe would be a worthy addition to my legend!
+[k]
+
+＠Vlad III
+My name remains infamous, but I shall not be known as demonic nor as vampiric.
+[k]
+
+＠Vlad III
+Very well. Let's go, Master!
+[k]
+
+？1：Let's do our best!
+？！
+
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout A 0.1]
+[scene 10952]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[se ad21]
+[wt 2.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠Vlad III
+...Ah. It seems we've found it. It seems our foe is a mere wraith this time, rather than a devil.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 7]
+[charaEffect B bit_talk_10]
+[charaFadein B 0.1 1]
+
+＠Mash
+Yes, but that doesn't mean it is not malicious.[sr]The Demonic Fog still seems to be lingering in the city.
+[k]
+
+＠Mash
+It may normally be “just a wraith,” but right now it's a deadly evil spirit.
+[k]
+
+[bgmStop BGM_EVENT_5 0.7]
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+＠Woman
+Heeelp...!
+[k]
+
+？1：Let's go rescue her!
+？！
+
+[bgm BGM_EVENT_3 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+
+＠Vlad III
+Oh, I know. I shall do what I did before: Kazikli Bey!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[messageOff]
+[se ad397]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaShake D 0.01 5 5 0.7]
+[charaEffect D bit_talk_14]
+[flashin once 0.1 0.1 FF000080 FF000080]
+[wait flash]
+[flashin once 0.1 0.1 FF000080 FF000080]
+[wait flash]
+[flashin once 0.1 0.1 FF000080 FF000080]
+[wait flash]
+[seStop ad397 1.0]
+[wt 1.0]
+
+[se ad22]
+[charaShake D 0.01 5 5 0.7]
+[wt 1.5]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[wt 0.4]
+
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+
+＠Woman
+Wh-what!?
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Vlad III
+Woman. Stand back.
+[k]
+
+[charaFace A 5]
+＠Vlad III
+That creature has crept into your world, but it is a being that should not exist.
+[k]
+
+＠Vlad III
+Touch it and you will die.[sr]If you value your life, leave!
+[k]
+
+＠Woman
+B-but, but...I can't...move...!
+[k]
+
+[charaFace A 0]
+＠Vlad III
+Oh... Then I have no choice.[sr]Master, stay back and protect her.
+[k]
+
+[charaFace A 5]
+＠Vlad III
+I shall impale that wraith.[sr]Normally, my stakes are reserved for punishment...
+[k]
+
+[charaFace A 2]
+＠Vlad III
+To threaten to harm civilians even after death... Unforgivable! I shall destroy you!
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

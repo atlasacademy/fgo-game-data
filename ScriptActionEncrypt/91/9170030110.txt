@@ -1,0 +1,186 @@
+＄91-70-03-01-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 21002]
+[charaSet A 8001001 1 Mash]
+[charaSet B 98003000 2 "Dr. Roman"]
+[charaSet C 98002000 1 Fou]
+[charaSet D 7003001 1 "Lu Bu"]
+[charaTalk C]
+[charaFace A 13]
+[charaFadein A 0 2]
+[charaFace C 0]
+[charaFadein C 0 0]
+[fadein black 1]
+[wait fade]
+＠Fou
+Foou...
+[k]
+
+＠Mash
+Make yourself comfortable, Senpai.[sr]Here's your coffee.
+[k]
+
+？1：Thank you, for everything.
+
+[charaFace A 3]
+＠Mash
+No, it's nothing... Oh, the Doctor has[sr]something he wants to talk to you about.
+[k]
+
+？2：Why don't you rest for a bit.
+
+[charaFace A 12]
+＠Mash
+Well...about that... There's something[sr]the Doctor wants to talk to you about, Senpai.
+[k]
+
+？！
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[communicationChara 98003003 1 5 0 0]
+＠Dr. Roman
+Sorry to bother you so late.[sr]And, as to what I need to talk to you about...
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠Lu Bu
+...
+[k]
+
+[charaFadeout D 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr. Roman
+It's him! Him!! Berserker! Don't you think[sr]it's a bit odd having a Berserker for a guard?
+[k]
+
+？1：Really? You think so?
+
+？2：What? I can't?
+
+？！
+
+[communicationCharaFace 3]
+＠Dr. Roman
+Well, think about it...
+[k]
+
+＠Dr. Roman
+A Berserker is a Servant that has lost its reason, so in a way, they can be said to be the most loyal.
+[k]
+
+[communicationCharaFace 5]
+＠Dr. Roman
+However, this Berserker is different.[sr]Even you have heard of his tales, right?
+[k]
+
+＠Dr. Roman
+He is known by numerous titles, such as "Unrivaled," "Flying General" and "Lu Bu the Peerless,"
+[k]
+
+＠Dr. Roman
+but he betrayed so many people[sr]and became so detested, that people called him...
+[k]
+
+＠Dr. Roman
+"Tiger and Wolf"[sr]...just so you know.
+[k]
+
+[communicationCharaFace 4]
+＠Dr. Roman
+What I'm trying to say is, it's not good to have him as[sr]your guard. It's dangerous, [%1]...
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠Lu Bu
+...
+[k]
+
+[charaFadeout D 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr. Roman
+Yikes![sr]Was he just glaring at me?
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠Lu Bu
+[image berserker_language_2][line 2]!!!
+[k]
+
+[charaFadeout D 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr. Roman
+Eeek!![sr]I knew it!!
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[se ad32]
+[wait se ad32]
+[messageOff]
+[charaEffect D bit_talk_14]
+[wt 0.5]
+[charaEffectStop D]
+[wait charaEffect D]
+[charaFadeout D 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr. Roman
+P-Please, forgive me! ...Huh?[sr]What the?
+[k]
+
+[se ad16]
+[wt 1]
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFace A 7]
+[charaFadein A 0.1 2]
+＠Fou
+Fou!
+[k]
+
+[bgmStop BGM_EVENT_2 0.4]
+[bgm BGM_EVENT_3 0.1]
+＠Mash
+Wait, this is...[sr]Master, enemy attack!
+[k]
+
+[seStop ad16 3]
+？1：You're here to help, right?
+
+？2：Bravo, Flying General!
+
+？！
+
+[charaFadeout C 0.1]
+[charaFace D 2]
+[charaFadein D 0.1 0]
+＠Lu Bu
+[image berserker_language_2][line 2]!!!
+[k]
+
+[charaFace A 2]
+＠Mash
+Here they come![sr]Intercept!
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

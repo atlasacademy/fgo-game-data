@@ -1,0 +1,687 @@
+
+
+＄03-00-01-19-2-1
+[soundStopAll]
+
+[charaSet A 99502600 1 Mash]
+[charaSet B 1098126400 1 Patxi]
+[charaSet C 2010001 1 Billy]
+[charaSet D 1098123600 1 "Oprichnik 1"]
+[charaSet E 1098123600 1 "Oprichnik 2"]
+[charaSet F 1017001 1 Musashi]
+[charaSet H 98115000 1 Effect]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 21500]
+
+[fadein black 0.8]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠Billy
+Fire!
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[charaEffect D bit_shot_01 0,180]
+[se ad563]
+[wt 0.1]
+[charaShake D 0.05 4 4 0.6]
+[se ad563]
+[wt 0.1]
+[se ad563]
+[wt 1.2]
+[charaEffectStop D bit_shot_01]
+
+[charaFadeout D 0.7]
+[wt 0.1]
+[charaMove D 0,-30 0.6]
+
+[wt 0.3]
+[se ad144]
+[wt 1.5]
+
+[bgmStop BGM_EVENT_80 2.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠Musashi
+All right, that's that!
+[k]
+
+[flag MALE false]
+[flag FEMALE false]
+
+[selectionUse masterMale]
+？1：Musashi!
+[flag MALE true]
+？！
+
+[selectionUse masterFemale]
+？1：Musashi!
+[flag FEMALE true]
+？！
+
+＠Musashi
+Yup, that's me![bgm BGM_EVENT_77 0.1][sr]And look at YOU! You've grown up so much since I last saw you.
+[k]
+
+[charaFace F 7]
+
+＠Musashi
+I'm glad you're doing so well. And that you're still fighting the good fight, just like I thought you'd be.
+[k]
+
+[charaFace F 0]
+
+＠Musashi
+And that means I bet I can help you out! Don't worry about all the gory details; I've got a pretty good idea of what's going on!
+[k]
+
+[charaFace F 1]
+
+＠Musashi
+So from now on, I'll be your personal bodyguard! Let's get that formal contract stuff over with real quick♪
+[k]
+
+[messageOff]
+
+[charaPut H 1]
+
+[se ad452]
+[charaMoveScale F 1.2 0.4]
+[charaMove F 0,30 0.4]
+[wt 0.3]
+[seStop ad452 0.3]
+[wt 0.5]
+[charaMoveReturn F 0,25 0.4]
+[se ad215]
+[wt 1.0]
+
+[branch play01 MALE 1]
+[branch play02 FEMALE 1]
+
+[label play01]
+[charaEffect H bit_talk_CommandMantra_01 0,64]
+[branch play03]
+
+[label play02]
+[charaEffect H bit_talk_CommandMantra_02 0,64]
+[branch play03]
+
+[label play03]
+
+[se bas16]
+[wait charaEffect H]
+[charaPut H 1200,1200]
+[charaEffectStop H]
+
+[charaFace F 7]
+
+[wt 1.5]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaEffect H bit_talk_10_LowLevel]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠Mash
+I-I can't believe how fast that was. She just...took Master's hand and forged a simple contract right on the spot, almost instantly.
+[k]
+
+？1：That's all it took...!?
+？2：(I've never had a Servant make the connection before...)
+
+？！
+
+[charaScale F 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠Musashi
+Yay! Now I can fight at full strength ALL the time! Oh, for payment, I'll accept ten gold coins and one bowl of udon a day, please. Thank yooou!
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠Billy
+Now she wants food and money!? You ain't from[sr]the Wild West yourself, are you, Ms. Samurai?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Musashi
+Oh yeah, the Wild West was great. There were duels[sr]to be fought every day, so I never went hungry.
+[k]
+
+[charaFace F 5]
+
+＠Musashi
+By the way, uh...Billy, was it? What is this place?
+[k]
+
+＠Musashi
+I thought this was the hideout for the bandits some Yaga hired me to take care of, but I'm not so sure anymore.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Billy
+This is the Minotaur's labyrinth.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠Musashi
+The Minotaur? ...Oh, you mean the monster from Greek mythology!? Well damn, no wonder I got lost.
+[k]
+
+＠Musashi
+That's what I get for just charging headlong into the entrance of some weird labyrinth that springs up outta nowhere...
+[k]
+
+？1：Uh-huh...
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠Mash
+...Master told me about what happened in Shimousa...
+[k]
+
+＠Mash
+...but I don't think I could really[sr]picture how it all went until now...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Patxi
+Wow, she's even more reckless than [%1].[sr]I didn't think that was possible.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaDepth B 9]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 2]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+
+＠Musashi
+Wait. Yaga! Let me see your face for a second!
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad7]
+[charaMove F 150,0 0.3]
+[wt 0.3]
+
+[charaMove B -200,0 0.1]
+[wt 0.1]
+[charaShake B 0.1 2 2 1.5]
+[se ad180]
+[charaFace B 2]
+[wt 0.6]
+
+[charaTalk on]
+
+＠Patxi
+Aah! What're you doing!? And how're you so strong!?
+[k]
+
+[charaShakeStop B]
+＠Musashi
+Hmm, it looks like you don't have any of the features in the bandits' descriptions... Okay, you're clear.
+[k]
+
+[charaFace F 0]
+
+＠Musashi
+Sorry about that, but a job's a job, you know?[sr]I'm afraid I still have trouble telling Yaga apart.
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠Musashi
+Plus, they kept attacking me ever[sr]since I wandered into this world...
+[k]
+
+[charaFace F 1]
+
+＠Musashi
+I only recently got to a point where we could do the whole “you scratch my back, I scratch yours” thing!
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠Billy
+Aha! So YOU'RE the killer those[sr]Yaga were talking about!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+
+＠Musashi
+Huh? Killer?
+[k]
+
+[bgmStop BGM_EVENT_77 1.5]
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFace F 4]
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+＠Musashi
+...Oh, right.[bgm BGM_EVENT_7 0.1][sr]Yup, that was me.
+[k]
+
+[charaFace F 5]
+
+＠Musashi
+But I swear on my honor, I only went around[sr]killing bandits and Oprichniki, okay?
+[k]
+
+？1：How come you said you were from Chaldea?
+？！
+
+[charaFace F 3]
+
+＠Musashi
+Oh yeah, I almost forgot about that. At one point, I ran into a Yaga having some trouble with a Krichat'.
+[k]
+
+[charaFace F 8]
+
+＠Musashi
+For a race that's all about survival of the fittest, they're weirdly grateful when you save their lives, and this one insisted that I tell him my name.
+[k]
+
+＠Musashi
+So I thought I'd play it cool and be all “I am the finest swordmaster in all of Chaldea!” Um...sorry!
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace F 8]
+[charaFadein F 0.1 200,0]
+[charaFace B 4]
+[charaFadein B 0.1 -200,0]
+
+[se ad180]
+[charaShake B 0.05 2 2 1.5]
+[wt 1.0]
+[charaTalk on]
+[charaTalk C]
+＠Patxi
+Let go of me already![sr]What the hell's your deal, anyway!?
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Billy
+That...is a damn good question.
+[k]
+
+
+[messageOff]
+[bgm BGM_EVENT_7 1.5 0.5]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[scene 51600]
+[wt 0.5]
+
+[charaSet A 98001000 1 Mash]
+[charaSet D 98086000 1 Holmes]
+
+[wipeFilter cinema 0.5 0]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+[fadein black 0.5]
+[wait fade]
+
+＠Holmes
+(Miyamoto Musashi...[sr]The stranger [%1] encountered in Shimousa...)
+[k]
+
+＠Holmes
+(As I recall, she possesses the unusual ability to travel between parallel worlds without Rayshifting.)
+[k]
+
+＠Holmes
+(She must have ended up in here right as[sr]the base world's surface was wiped clean.)
+[k]
+
+＠Holmes
+(That would explain why she wasn't[sr]swallowed up by the abnormality...)
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠Mash
+Holmes? Is something wrong?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 0,-50]
+
+＠Holmes
+I was just admiring [&Mr.:Ms.] [%1]'s extraordinary good fortune...or perhaps I should say, [&his:her] talent for making connections.
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.5]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wipeOff]
+
+[charaSet A 99502600 1 Mash]
+[charaSet D 98115300 1 Holmes]
+[charaSet E 1098124510 1 "Da Vinci"]
+
+[wt 0.5]
+
+[scene 21500]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠Holmes
+Ms. Miyamoto, rest assured that we have no issue [bgm BGM_EVENT_77 0.1]with your willingness to cooperate with Chaldea. You've already been a great help to us in the past.
+[k]
+
+＠Holmes
+In fact, your carelessness has already been helpful. I never would have guessed that your unique temperament held such significance.
+[k]
+
+＠Holmes
+Here in this Lostbelt, the entire world is against us, and there was no one we could trust...until we ran into you.
+[k]
+
+＠Holmes
+You have been to many different worlds,[sr]yet retain your sense of right and wrong.
+[k]
+
+＠Holmes
+[&Mr.:Ms.] [%1] could[sr]not ask for a better assistant.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaDepth F 9]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 2]
+
+[charaPut H 0]
+[charaFace D 5]
+[charaFadein D 0.1 0]
+
+＠Musashi
+What do you mean, carelessness!? It's not like[sr]I ASKED to go flitting around from world to[line 2]
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[wt 0.8]
+[charaFace F 9]
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 3]
+
+＠Musashi
+Oh. My. BUDDHA! I've never seen such a beautiful man! He might be a little past his prime, but I could still stare at that face for days!
+[k]
+
+[charaFace D 6]
+
+＠Holmes
+Th-thank you. I must say, I'm used to being complimented, but I've never had someone be quite so...effusive.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 17]
+[charaFadein E 0.1 0]
+
+＠Da Vinci
+Okay, Holmes, put the pocket mirror down. So we can just call you Musashi, right? You're clearly a Saber, that much is obvious.
+[k]
+
+[charaFace F 10]
+
+＠Musashi
+(ANOTHER supercute girl!?)
+[k]
+
+[charaFace E 0]
+
+＠Da Vinci
+I'm Leonardo da Vinci.[sr]But please, just call me Da Vinci.
+[k]
+
+＠Da Vinci
+You said you came into this labyrinth from the entrance, right? Do you remember how to get back?
+[k]
+
+[charaFace F 3]
+
+＠Musashi
+Ahahaha.
+[k]
+
+＠Musashi
+Sorry! Not a clue!
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠Patxi
+...Yeah, that's about what I expected.[sr]Guess we're right back to square one then.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Holmes
+At least we now have a significant[sr]addition to our fighting force.
+[k]
+
+＠Holmes
+In the meantime, I will keep track of your coordinate data and attempt to make a map of the place.
+[k]
+
+＠Holmes
+However, by their nature, labyrinths are[sr]designed to be impenetrable from the outside.
+[k]
+
+＠Holmes
+So I'm afraid you'll need to keep doing your[sr]best to make it out of there on your own.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Billy
+Well, we'd best get movin' then.[sr]No sense just standin' around.
+[k]
+
+＠Billy
+[%1], you and Musashi are old friends, right? How 'bout we all walk while we talk so you two can share what you've learned so far?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Musashi
+Well, my side won't take long. I've been here for three months so far, and I've learned one thing: Russia is cold.
+[k]
+
+＠Musashi
+But knowing you, [%1], I bet you've[sr]already got this whole situation all figured out.
+[k]
+
+[charaFace F 1]
+
+＠Musashi
+And I know you won't mind filling ME in![sr]I love that about you!
+[k]
+
+？1：Of course!
+？2：It's good to see you again, Musashi.
+？！
+
+[messageOff]
+[charaFace F 7]
+[wt 1.0]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

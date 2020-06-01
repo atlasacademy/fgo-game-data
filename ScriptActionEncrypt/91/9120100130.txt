@@ -1,0 +1,225 @@
+
+
+
+＄91-20-10-01-3-0
+[soundStopAll]
+[charaSet A 99502600 1 Mash]
+[charaSet B 7005001 1 Spartacus]
+[charaSet C 2010002 1 Billy]
+[charaSet D 99360000 1 "Celtic Soldier"]
+[charaSet E 99360000 1 "Celtic Soldier"]
+[charaSet F 99360000 1 "Celtic Soldier"]
+[charaSet G 5014001 1 Mephistopheles]
+
+[scene 11110]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaEffect A bit_talk_10]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Mash
+There's still so many townspeople left...!
+[k]
+
+[charaPut A 1200,1200]
+
+[messageOff]
+
+[wt 0.3]
+
+[charaTalk off]
+
+[charaFadein D 0.4 1]
+[charaFadein E 0.4 0]
+[charaFadein F 0.4 2]
+
+[se ad173]
+[seVolume ad173 0 0.1]
+[seVolume ad173 1.0 0.6]
+[se ad166]
+[seVolume ad166 0 0.1]
+[seVolume ad166 1.0 0.2]
+[charaShake D 0.15 3 3 5.0]
+[charaShake E 0.15 3 3 5.0]
+[charaShake F 0.15 3 3 5.0]
+
+[wt 2.0]
+[seStop ad173 1.0]
+[seStop ad166 1.0]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+[wt 0.1]
+[se ad7]
+[charaShake B 0.05 3 3 0.5]
+[charaMove B 0,-20 0.3]
+[wt 0.7]
+[se ad183]
+[charaShake B 0.05 3 3 0.5]
+[charaMove B 0,-40 0.3]
+[wt 0.7]
+
+＠Spartacus
+OPPRESSOOOOOOOOORRRRRRSSS!!!
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠Billy
+Crap, Spartacus is getting pinned down!
+[k]
+
+[charaFadeout C 0.1]
+
+[messageOff]
+
+[se ade28]
+[wt 2.3]
+[seStop ade28]
+[se ad101]
+[wt 0.5]
+[seStop ad101 0.1]
+
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Celtic Soldier
+Huh?
+[k]
+
+[messageOff]
+
+[wt 0.3]
+
+[se bac61]
+[shake 0.05 4 4 1.0]
+
+[charaEffect D bit_talk_explosion]
+[charaFadeout D 0.1]
+
+[wt 0.1]
+
+[se bac61]
+[charaPut D 0]
+[charaEffect D bit_talk_explosion]
+
+[wt 0.2]
+
+[se bac61]
+[charaPut D 2]
+[charaEffect D bit_talk_explosion]
+
+[wt 0.5]
+
+[charaEffectStop D]
+
+[wt 2.5]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+＠Mephistopheles
+Tick-tock, tick-tock, tick-tock, tick-tock.[sr]Ahhh, watching an explosion is always so exciting!
+[k]
+
+[charaFadeout G 0.1]
+
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠Mash
+The townspeople are spooked by Mephistopheles,[sr]and they've slowed down even more...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠Billy
+Okay. Master, what should we do!?
+[k]
+
+
+
+[input selectBranch]
+[scene 11110]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 99502600 1 Mash]
+[charaSet B 7005001 1 Spartacus]
+[charaSet C 2010002 1 Billy]
+[charaSet D 99360000 1 "Celtic Soldier"]
+[charaSet E 99360000 1 "Celtic Soldier"]
+[charaSet F 99360000 1 "Celtic Soldier"]
+[charaSet G 5014001 1 Mephistopheles]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+[messageOff]
+[shakeStop]
+[maskin black 1]
+[wait mask]
+
+[label selectBranch]
+
+？1：Rescue Spartacus!
+
+[charaFace C 0]
+＠Billy
+Okay, Master.[sr]BANG! BANG! BANG!
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+
+？2：Fight alongside Mephistopheles!
+
+[charaFace C 0]
+＠Billy
+Okay, Master.[sr]BANG! BANG! BANG!
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+
+？！
+

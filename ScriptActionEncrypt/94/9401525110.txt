@@ -1,0 +1,282 @@
+
+＄94-01-52-51-1-0
+
+
+
+[soundStopAll]
+
+[bgm BGM_EVENT_65 0.1]
+
+
+
+[messageOff]
+[effectPause bit_talk_parasolwipe]
+[wait effectStart bit_talk_parasolwipe]
+
+
+[branch _PlayEffect_1st PM4 1]
+
+
+[label _PlayEffect_etc]
+
+[tapSkip _from_TapSkip_etc]
+
+[scene 10001]
+
+[fadein white 1.0]
+[wait fade]
+
+[effectPause bit_talk_goal1_4]
+[wait effectStart bit_talk_goal1_4]
+
+[effectStart bit_talk_parasolwipe]
+[wt 1.0]
+
+[effectStart bit_talk_goal1_4]
+[wait effect bit_talk_goal1_4]
+[label _from_TapSkip_etc]
+
+[effectDestroy bit_talk_goal1_4]
+[effectDestroy bit_talk_parasolwipe]
+[fadein black 0]
+[wait fade]
+
+[branch _PlayEffect_End]
+
+
+[label _PlayEffect_1st]
+
+[tapSkip _from_TapSkip_1st]
+
+[effectPause bit_talk_winner1_4]
+[wait effectStart bit_talk_winner1_4]
+
+[scene 10001]
+
+[fadein white 1.0]
+[wait fade]
+
+[effectStart bit_talk_winner1_4]
+
+[wt 4.9]
+
+[voice 402600_0_M800]
+
+[wt 1.0]
+[voice 402600_0_M801]
+
+[wt 5.0]
+
+[effectStart bit_talk_parasolwipe]
+[scene 10001]
+[wt 1.0]
+[scene 44300]
+[wait effect bit_talk_parasolwipe]
+
+[label _from_TapSkip_1st]
+
+[voiceStop]
+[scene 44300]
+[effectDestroy bit_talk_winner1_4]
+[effectDestroy bit_talk_parasolwipe]
+[fadein black 0]
+[wait fade]
+
+
+[label _PlayEffect_End]
+
+[bgmStop BGM_EVENT_65 0.3]
+[wt 0.4]
+
+[branch _PlayVoice_Start PM4 1]
+
+[branch _PlayVoice_End]
+
+
+
+
+[label _PlayVoice_Start]
+
+[charaSet A 2028001 1 Helena]
+[charaSet B 5025001 1 Edison]
+[charaSet C 2011001 1 "Nikola Tesla"]
+
+[bgm BGM_EVENT_64 0.1]
+
+[flagRandom _PlayVoiceNo 1 3]
+
+
+[branch _PlayVoice_3rd _PlayVoiceNo 3]
+[branch _PlayVoice_2nd _PlayVoiceNo 2]
+[branch _PlayVoice_1st _PlayVoiceNo 1]
+
+
+[label _PlayVoice_1st]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.7]
+
+[charaMoveReturn A 0,16 0.2]
+＠Helena
+We're [voice 9010002_0_M670]first! Hurray![wt 1.5][charaFace A 0]
+[k]
+[wait voice 9010002_0_M670]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFace C 0]
+[charaFadein B 0.1 2]
+[charaFadein C 0.1 0]
+
+＠Edison
+In[voice 9010002_0_M671]deed. The way we're going, we can even aim for the championship!
+[k]
+[wait voice 9010002_0_M671]
+
+[charaFace C 1]
+＠Nikola Tesla
+I [voice 9010002_0_M672]say our victory is certain!
+[k]
+[wait voice 9010002_0_M672]
+
+[charaFace C 2]
+＠Nikola Tesla
+Why, [voice 9010002_0_M673]you ask!? [wait voice 9010002_0_M673][charaFace C 5][sr]By [voice 9010002_0_M674]manifesting divine lightning on the ground, we[line 2]
+[k]
+[wait voice 9010002_0_M674]
+
+[charaFace B 5]
+＠Edison
+What [voice 9010002_0_M675]do you think you're doing getting in front of me, tightsuit!?[wt 3.6][charaFace B 2][charaShake B 0.05 7 0 0.7]
+[k]
+[wait voice 9010002_0_M675]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Helena
+Now, [voice 9010002_0_M676]now!
+[k]
+[wait voice 9010002_0_M676]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_2nd]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.7]
+
+[charaMoveReturn A 0,16 0.2]
+＠Helena
+Go[voice 9010002_0_M680]aaal! That went great![wt 2.0][charaFace A 0][wait voice 9010002_0_M680][sr]I [charaFace A 1][voice 9010002_0_M681]guess Master must have been cheering for us!
+[k]
+[wait voice 9010002_0_M681]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace B 0]
+[charaFace C 1]
+[charaFadein B 0.1 2]
+[charaFadein C 0.1 0]
+
+＠Nikola Tesla
+That [voice 9010002_0_M682]is surely part of it. But our assistance has also been invaluable![wt 1.8][charaFace C 0]
+[k]
+[wait voice 9010002_0_M682]
+
+[charaFace B 1]
+＠Edison
+Indeed. [voice 9010002_0_M683]You are exactly right!
+[k]
+[wait voice 9010002_0_M683]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠Helena
+He[voice 9010002_0_M684]hehe, we're in perfect sync!
+[k]
+[wait voice 9010002_0_M684]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_3rd]
+
+[charaTalk off]
+[charaFace B 2]
+[charaFace C 2]
+[charaFadein B 0.1 2]
+[charaFadein C 0.1 0]
+
+＠Edison & Nikola Tesla
+Go[voice 9010002_0_M690][charaShake B 0.05 7 0 0.7][charaShake C 0.05 7 0 0.7]aaal!
+[k]
+[wait voice 9010002_0_M690]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[charaFace A 2]
+[charaMoveReturn A 0,24 0.2]
+＠Helena
+Yikes, [voice 9010002_0_M691]you surprised me. [wt 2.3][charaFace A 0]I'm glad you two are getting along.[wait voice 9010002_0_M691][sr]He[charaFace A 1][voice 9010002_0_M692]he, it's wonderful!
+[k]
+[wait voice 9010002_0_M692]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFace C 2]
+[charaFadein B 0.1 2]
+[charaFadein C 0.1 0]
+
+[charaFace B 3]
+＠Edison
+No, [voice 9010002_0_M693]that was more coincidence than anyth[line 2]
+[k]
+[wait voice 9010002_0_M693]
+
+[charaFace C 4]
+＠Nikola Tesla
+Don't [voice 9010002_0_M694]say it. This will have to be our little secret...
+[k]
+[wait voice 9010002_0_M694]
+
+
+[label _PlayVoice_End]
+
+
+[messageOff]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_64 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,97 @@
+＄01-00-00-05-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_5 0.1]
+[scene 10720]
+[charaSet A 8001000 1 Mash]
+[charaSet B 98003003 2 "Dr. Roman"]
+[charaSet C 98002000 2 Fou]
+[charaSet D 98004000 1 Lev]
+[charaSet E 98005000 1 "Olga Marie"]
+[charaSet F 4001001 1 Servant]
+[charaFace A 13]
+[charaFadein A 0]
+[fadein black 1]
+[wait fade]
+＠Mash
+Phew![sr]Thank goodness, we managed it yet again Master.
+[k]
+
+[charaFadeout A 0]
+[charaTalk E]
+[charaFadein A 0.1 2]
+[charaFace E 2]
+[charaFadein E 0.1 0]
+＠Olga Marie
+I see you're getting used to being a Servant.[sr]Is it because now that you know what we're up against, you're not afraid anymore?
+[k]
+
+[charaFace A 12]
+＠Mash
+I don't know about that. No matter how good I am[sr]with my weapon, when it comes to the battle itself...
+[k]
+
+[se ad13]
+[wait se ad13]
+[bgmStop BGM_EVENT_5 0.4]
+[bgm BGM_EVENT_3 0.1]
+[charaFadeout A 0]
+[charaFadeout E 0]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr. Roman
+Sorry, let's talk later![sr]The three of you need to get out of there now!
+[k]
+
+＠Dr. Roman
+I'm still picking up something![sr]And this is[line 3]
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaShadow F true]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 1.5]
+[charaFadeout F 0]
+[wt 0.5]
+[charaShadow F false]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 2]
+[communicationCharaLoop 98003003 0 5 0 0]
+＠Olga Marie
+Wha[line 3]is that...
+[k]
+
+[communicationCharaFace 2]
+＠Dr. Roman
+A Servant is there!
+[k]
+
+＠Dr. Roman
+Don't fight it, [%1], Mash![sr]It's too soon for you to fight a Servant!
+[k]
+
+[charaFace E 1]
+＠Olga Marie
+Even so, we can't escape!
+[k]
+
+＠Olga Marie
+Mash, prepare for battle![sr]It's a Servant, you can do something about it, right?
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 15]
+[charaFadein A 0.1 0]
+＠Mash
+...Yes.[sr]I will do my best!
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,201 @@
+
+
+＄94-00-91-06-1-1
+
+[charaSet A 98003000 1 "Dr. Roman"]
+[charaSet B 5004001 1 "Nursery Rhyme"]
+[charaSet C 3026000 1 "Jeanne Alter Santa Lily"]
+[charaSet D 98105700 1 Santam]
+[charaSet E 98105600 1 "Santa Island Mask"]
+
+[soundStopAll]
+
+[bgm BGM_EVENT_2 0.1]
+[scene 21803]
+
+[fadein black 2.0]
+[wait fade]
+
+
+
+？1：Victory!
+？！
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Santam
+Heh... And defeat for me.
+[k]
+
+[messageOff]
+
+[charaMove D 0,-256 0.7]
+[wt 0.4]
+[charaFadeout D 0.7]
+[wait charaMove D]
+[wt 0.4]
+
+[se ad144]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Jeanne Alter Santa Lily
+...It felt like you were taking it super easy on us...[sr]But we won! And that's what matters!
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.7 0,-64]
+[charaShake D 0.05 0 2 1.0]
+[charaMove D 1 1.0]
+[wait charaMove D]
+＠Santam
+Then move forward.[sr]Never forget that you are a true Santa.
+[k]
+
+＠Santam
+And no matter who the enemy is...[sr]Do not forget your duties as Santa.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠Nursery Rhyme
+Don't worry, Jeanne is a great Santa!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠Santam
+Then we shall disappear as the defeated should.
+[k]
+
+[messageOff]
+[charaSpecialEffect D erasure 1 1.2]
+[wait charaSpecialEffect D]
+[charaFadeout D 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠Jeanne Alter Santa Lily
+...
+[k]
+
+？1：What's wrong?
+
+[charaFace C 0]
+＠Jeanne Alter Santa Lily
+Oh, nothing![sr]We've almost reached the sea!
+[k]
+
+？2：You don't look too well...
+
+＠Jeanne Alter Santa Lily
+It's nothing! I'm fine, yes, I'll be fine...
+[k]
+
+？！
+
+[wipeout circleIn 2.0 1.0]
+[wt 0.4]
+[messageOff]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[wt 0.7]
+
+[scene 30640]
+[wt 0.1]
+
+[wipein circleIn 0.7 1.0]
+
+[bgm BGM_EVENT_5 0.4]
+[wait wipe]
+
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.7 2]
+＠Santa Island Mask
+Let us hurry ahead to play the role of the final blockade!
+[k]
+
+[charaTalk A]
+[se ad13]
+[communicationChara 98003003 0 5 0 1]
+[wt 0.3]
+＠Dr. Roman
+You look like you're enjoying yourself, Ama...[sr]I mean, Santa Island Mask.
+[k]
+
+[charaTalk E]
+[charaFace E 0]
+＠Santa Island Mask
+Well, it's been a while since I had a chance to play the villain!
+[k]
+
+[charaFace E 1]
+＠Santa Island Mask
+And with this impending betrayal, I'm getting all fired up!
+[k]
+
+＠Dr. Roman
+Hahahahaha. Are you sure you're a Ruler?
+[k]
+
+[charaTalk E]
+[charaFace E 0]
+＠Santa Island Mask
+Heheheh, whatever do you mean?[sr]Right now I am just the mysterious Santa Island Mask.
+[k]
+
+＠Santa Island Mask
+A masked man can only be a traitor, a villain, or a hero that cannot show his face.
+[k]
+
+[communicationCharaFace 0]
+
+＠Dr. Roman
+Oh, so you're not a hero?
+[k]
+
+[charaTalk E]
+[charaFace E 0]
+＠Santa Island Mask
+I certainly will not call a man who gets in the way of a girl's dream a hero.
+[k]
+
+＠Santa Island Mask
+...Now onward![sr]Santa Island Mask is coming...
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_5 1.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+[communicationCharaClear]
+[wait communicationChara]
+
+[soundStopAll]
+[end]

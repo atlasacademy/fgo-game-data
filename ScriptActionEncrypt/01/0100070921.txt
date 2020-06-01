@@ -1,0 +1,520 @@
+
+
+
+＄01-00-07-09-2-1
+[soundStopAll]
+[charaSet A 8001002 1 Mash]
+[charaSet B 98106200 1 Merlin]
+[charaSet C 98003000 1 "Dr. Roman"]
+[charaSet D 4014001 1 Ushiwakamaru]
+[charaSet E 98106900 1 Tiamat]
+[charaSet F 4014001 1 NPC]
+[charaSet G 4014001 1 NPC]
+
+
+[bgm BGM_EVENT_24 0.1]
+[scene 32940]
+[fadein black 1.5]
+[wait fade]
+[charaScale E 1.01]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.4 1]
+
+
+＠Tiamat
+I don't understand at all.[sr]This is the first time I've felt baffled.
+[k]
+
+＠Tiamat
+Even with life as fragile as yours, you still have all of your limbs attached. That makes no sense at all.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+
+＠Mash
+I don't see any damage to Tiamat![sr]The second we wound her she regenerates!
+[k]
+
+＠Mash
+Is that the Authority given to her in the Mesopotamian creation myth as mother of the Demonic Beasts!?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠Merlin
+No, that's not an Authority of a goddess. She's regenerating from the Holy Grail's supply of magical energy.
+[k]
+
+＠Merlin
+I just confirmed it. That Servant has the King of Mages' Holy Grail!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠Tiamat
+Oh? It seems you have a knowledgeable one with you. That is indeed what I possess.
+[k]
+
+＠Tiamat
+But don't make light of me. I am not using the Holy Grail's magical energy at all. I have manifested as the Goddess of Demonic Beasts...
+[k]
+
+＠Tiamat
+I wouldn't use power from elsewhere to destroy the humans.
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,-50 1.1]
+[wait camera]
+[charaPut B 0,170]
+[charaEffect B bit_talk_41]
+[se bas1]
+[wt 0.2]
+[charaFace E 3]
+＠Tiamat
+I am using my own power, my own hatred, my own anger, and that's enough to destroy you three times over!
+[k]
+
+[wt 0.4]
+[messageOff]
+
+[se ad14]
+[shake 0.05 3 3 3.0]
+[cameraHome 1.5]
+[wait camera]
+
+[wt 1.5]
+[charaEffectStop B bit_talk_41]
+[wt 0.3]
+[charaFadeout E 0.1]
+[seStop ad14 1.0]
+
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 2]
+
+
+＠Dr. Roman
+Ugh... We're practically useless against a goddess's Authority, and now she has a Holy Grail, too!?
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Tiamat
+Now...I've had enough of this nonsense.[sr]You will die screaming! Playtime is over!
+[k]
+
+
+？1：Run, everyone!
+
+？！
+
+[messageOff]
+[se ad59]
+[charaFadeout E 0.4]
+[wt 0.4]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[cameraMove 0.1 40,-50 1.1]
+[shake 0.05 0 2 0]
+[wt 0.1]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 -100,0]
+＠Mash
+It's only one hundred meters to the Nippur gates![sr]But we won't make it! She's just too big!
+[k]
+
+＠Mash
+We're not going to make it! We can't even get out of her arm's reach! ...At least, I need to get Senpai out of here!
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.2 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[seStop ad59]
+[cameraMove 0.1 -40,-50 1.1]
+[shakeStop]
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.2 1]
+[wait wipe]
+[se ad73]
+[wt 0.4]
+[effect bit_talk_42]
+＠Ushiwakamaru
+You've done well in holding out this long![sr]Leave the rest to me, Mash!
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.2 1]
+[wait wipe]
+[seStop ad55 0.4]
+[effectStop bit_talk_42]
+[cameraMove 0.1 0,-50 1.1]
+[wt 0.1]
+[charaShakeStop A]
+[wipein rectangleStripRightToLeft 0.2 1]
+[wait wipe]
+
+[se ad59]
+[shake 0.05 0 2 0]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠Mash
+U-Ushiwakamaru!?
+[k]
+
+？1：Ushiwakamaru!?
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.2 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[effect bit_talk_42]
+[se ad59]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.2 1]
+[wait wipe]
+[se ad73]
+
+＠Ushiwakamaru
+Run to the gates and don't look back![sr]I'll hold back that monster!
+[k]
+
+？2：Where's Benkei!?
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.2 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[effect bit_talk_42]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.2 1]
+[wait wipe]
+[effect bit_talk_42]
+
+＠Ushiwakamaru
+He couldn't keep up with me![sr]...Tell him not to worry!
+[k]
+
+？！
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.2 1]
+[wait wipe]
+[effectStop bit_talk_42]
+[seStop ad59 1.0]
+[cameraHome 0.1]
+[wait camera]
+[shakeStop]
+[wt 2.0]
+[fadeout black 0.1]
+[wait fade]
+[wipein rectangleStripRightToLeft 0.1 1]
+[wait wipe]
+[fadein black 1.5]
+[se ad55]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 1]
+
+[seStop ad55 1.5]
+＠Ushiwakamaru
+It's fine, Lord [%1]. Please be cheerful. Victory won't come to those who cannot smile.
+[k]
+
+[charaFace D 5]
+＠Ushiwakamaru
+In my past life...Minamoto-no-Yoshitsune's life, I didn't have that. Thus, even in victory, I kept losing until the end.
+[k]
+
+[charaFace D 1]
+＠Ushiwakamaru
+That sort of end wouldn't fit you.
+[k]
+
+[messageOff]
+[seStop ad55 0.4]
+[se ad51]
+[wt 0.4]
+[charaMove D 0,-50 0.2]
+[wait charaMove D]
+[se ad73]
+[charaMove D 0,50 0.1]
+[wait charaMove D]
+[charaFadeout D 0.1]
+[wt 0.1]
+[messageOff]
+[wipeout downToUp 0.2 1]
+[wait wipe]
+[se ad171]
+[wipein upToDown 0.2 1]
+[wait wipe]
+[charaTalk depthOff]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+[charaDepth B 1]
+[charaPut B 300,-200]
+[charaEffect B bit_talk_ichimon01re]
+[se bac95]
+[charaShake E 0.1 3 3 0.7]
+[wt 1.0]
+
+＠Tiamat
+Another bug, huh? You're an eyesore![sr]I will crush you!
+[k]
+
+
+[messageOff]
+[wipeout upToDown 0.2 1]
+[wait wipe]
+[charaFadeout E 0.1]
+[wt 0.1]
+[wipein downToUp 0.2 1]
+[effect bit_talk_goltail01]
+[wait wipe]
+
+[se bac78]
+[wt 2.5]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,50]
+[se ad73]
+[effectStop bit_talk_goltail01]
+[charaMove D 1 0.1]
+[wait charaMove D]
+＠Ushiwakamaru
+Ridiculous! You're no Miyamoto. You cannot catch a bug with that body of yours!
+[k]
+
+[effect bit_talk_42]
+[se ad73]
+[wt 0.4]
+[se ad73]
+[charaMove D -1000,0 0.2]
+[messageOff]
+[wipeout upToDown 0.2 1]
+[wait wipe]
+[wait charaMove D]
+[charaFadeout D 0.1]
+[effectStop bit_talk_42]
+[se ad385]
+[scene 10000]
+[fadeMove black 0.1 0.4]
+[wt 0.1]
+[wipein downToUp 0.2 1]
+[wait wipe]
+
+[charaPut F -400,-200]
+[charaEffect F bit_talk_14]
+[wt 0.5]
+[charaPut G 350,-160]
+[charaEffect G bit_talk_14]
+[wt 0.5]
+[charaPut F -300,-120]
+[charaEffect F bit_talk_14]
+[wt 0.4]
+[charaPut G 250,-80]
+[charaEffect G bit_talk_14]
+[wt 0.3]
+[charaPut F -200,-40]
+[charaEffect F bit_talk_14]
+[wt 0.3]
+[charaPut G 150,0]
+[charaEffect G bit_talk_14]
+[wt 0.2]
+[charaPut F -100,40]
+[charaEffect F bit_talk_14]
+[wt 0.2]
+[charaPut G 50,80]
+[charaEffect G bit_talk_14]
+[wt 0.6]
+[fadein black 0.1]
+[wt 0.1]
+[charaPut F 0,0]
+[charaEffect F bit_talk_21]
+[wt 0.5]
+[charaClear F]
+[charaClear G]
+[wt 0.7]
+
+[wipeout upToDown 0.2 1]
+[wait wipe]
+[scene 32940]
+[wt 0.1]
+[wipein downToUp 0.2 1]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠Tiamat
+How dare you run on top of my tail!
+[k]
+
+
+[messageOff]
+[wipeout downToUp 0.2 1]
+[wait wipe]
+[charaFadeout E 0.1]
+[wt 0.1]
+[wipein upToDown 0.2 1]
+[wait wipe]
+
+[charaTalk D]
+[se ad73]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠Ushiwakamaru
+That serpent form has gotten the better of you!
+[k]
+
+＠Ushiwakamaru
+The Wandering Tales of Shana-oh, Act Two, Usumidori: Heavenly Blade Steps[seStop ad59 0.4]! Taste my sword!
+[k]
+
+
+[messageOff]
+[wipeout upToDown 0.2 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[se ad73]
+[cameraMove 0.1 0,-60 1.2]
+[wait camera]
+[wipein downToUp 0.2 1]
+[wait wipe]
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+[charaDepth B 1]
+[charaPut B 0,65]
+[charaEffect B bit_talk_ichimon01re]
+[se ad386]
+[charaShake E 0.05 3 3 0.4]
+[wt 1.0]
+
+
+[cameraHome 0.4]
+[wait camera]
+
+＠Tiamat
+How DARE you wound my face with your blade![sr]I won't forgive you. Begone!
+[k]
+
+
+[messageOff]
+[se ad75]
+[wipeout rightDownToLeftUp 0.2 1]
+[wait wipe]
+[charaFadeout E 0.1]
+[scene 20320]
+[wt 0.1]
+[wipein leftUpToRightDown 0.2 1]
+[effect bit_talk_goltail01]
+[wait wipe]
+
+[se ad85]
+[wt 1.0]
+[effectStop bit_talk_goltail01]
+
+[fadeout white 0.4]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[charaFadeout D 0.1]
+[scene 20320]
+[wt 2.0]
+[effect bit_sepia01]
+[fadein white 1.5]
+[wait fade]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 1]
+[bgm BGM_EVENT_11 0.1]
+
+＠Ushiwakamaru
+(This is useless. I can't even run through the skies without any ships.)
+[k]
+
+＠Ushiwakamaru
+(It takes a master to grab a fly with chopsticks, but anyone, even Lady Masako, could hit such a beast with a sword.)
+[k]
+
+＠Ushiwakamaru
+(I never thought I would be done in by a snake's tail.[sr]I seem to have come to another pathetic end...)
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 3.0]
+[fadeout white 3.0]
+[wait fade]
+[scene 10001]
+[charaFadeout D 0.1]
+[effectStop bit_sepia01]
+[wt 1.0]
+[fadein white 0.1]
+[wait fade]
+[effect bit_talk_12]
+[wt 0.1]
+[se bac151]
+[se bac70]
+[wt 1.0]
+[fadeout white 0.1]
+[wait fade]
+[scene 32940]
+[fadein white 2.0]
+[se ad34]
+[shake 0.05 0 5 0.7]
+[wt 0.7]
+[se bac78]
+[effect bit_talk_goltail01]
+[wait fade]
+[effect bit_talk_35]
+[charaShake D 0.01 2 2 0.7]
+[charaFace D 4]
+[shake 0.05 0 5 0.4]
+[flashin once 0.2 0.1 FF0000FF FF000000]
+[wt 0.3]
+[flashin once 0.2 0.1 FF0000FF FF000000]
+[se ad161]
+
+
+[wt 2.0]
+
+[messageOff]
+[fadeout black 3.0]
+[wait fade]
+[wt 0.4]
+[soundStopAll]
+[end]
+
+

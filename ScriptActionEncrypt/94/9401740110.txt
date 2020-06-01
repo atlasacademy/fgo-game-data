@@ -1,0 +1,1473 @@
+
+
+＄94-01-74-01-1-0
+[soundStopAll]
+
+[charaSet A 3030000 1 Pārvatī]
+[charaSet B 98111500 1 "Da Vinci"]
+[charaSet C 99502600 1 Mash]
+[charaSet D 98109000 1 Mohawk]
+[charaSet E 6002001 1 "Cursed Arm"]
+[charaSet H 5009000 1 "Dummy for Effect"]
+
+[scene 10000]
+[fadein black 1.0]
+[wait fade]
+
+
+[effect bit_talk_07]
+[se ad12]
+[wt 4]
+[fadeout white 1.0]
+[wait fade]
+[wt 2.0]
+
+
+[scene 45700]
+
+[fadein white 2.0]
+[wait fade]
+
+[wt 1.0]
+
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[wt 0.3]
+
+＠Mash
+All systems green.[sr]Rayshift is a success.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+＠Da Vinci
+Good, good.[sr]Now then, [%1].
+[k]
+
+＠Da Vinci
+Let me go over this again:[sr]you're in Fuyuki, a rural Japanese city.
+[k]
+
+＠Da Vinci
+You're here to investigate the[sr]odd reading we got in this area.
+[k]
+
+＠Da Vinci
+So...see anything?
+[k]
+
+＠Da Vinci
+Anything or anyone that seems out of place or that catches your attention in your general vicinity?
+[k]
+
+？1：Let's see...
+？！
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaPut H 1200,1200]
+[cameraMove 0.1 -86,0 1.2]
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 4]
+[charaScale A 0.83]
+[charaFadein A 0.4 0,-48]
+[wt 0.2]
+
+
+
+
+[seLoop ad95]
+[seVolume ad95 0 0.8]
+[cameraMove 0.7 -46,0 1.2]
+[charaMove A -60,-48 0.8]
+[charaShake A 0.2 0 2 0.8]
+[wait charaMove A]
+[wait camera]
+[seStop ad95]
+[wt 0.7]
+
+[seLoop ad95]
+[seVolume ad95 0 0.8]
+[cameraMove 1.8 0,0 1.2]
+[charaFace A 8]
+[charaMove A 60,-48 2.0]
+[charaShake A 0.2 0 2 2.0]
+[wait charaMove A]
+[wait camera]
+[seStop ad95]
+[wt 0.7]
+
+[seLoop ad95]
+[seVolume ad95 0 0.8]
+[cameraMove 1.0 40,0 1.2]
+[charaFace A 9]
+[charaMove A 0,-48 1.5]
+[charaShake A 0.2 0 2 1.5]
+[wait charaMove A]
+[wait camera]
+[seStop ad95]
+[wt 1.0]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+[cameraHome 0.1]
+[charaFadeout A 0.1]
+[charaScale A 1.0]
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+？1：There is a woman...dressed in Indian attire...
+？！
+
+＠Da Vinci
+Hmmm...
+[k]
+
+[charaFace B 7]
+
+＠Da Vinci
+Ah, good work, [%1].[sr]Looks like you got it in one!
+[k]
+
+＠Da Vinci
+She's definitely the source of the odd reading we got. Looks like she's a Servant.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Mash
+But she is no ordinary Servant.[sr]I'm getting a Divine Spirit response from her.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+＠Da Vinci
+Oh-ho. I knew this would be a special case since Sheba interpreted it as irregular when we detected it, but I never imagined it would be a Divine Spirit Servant.
+[k]
+
+＠Da Vinci
+She doesn't seem hostile, but we don't know what's going to happen. Proceed with caution, [%1].
+[k]
+
+？1：Okay... Um, excuse me, do you have a moment?
+？2：Hello. You there. Can I speak to you for a bit...?
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+[wt 0.3]
+[charaMoveReturn A 0,5 0.1]
+
+＠A：???
+!? Eh? Uh, yes...?[sr]Wh-what is it!?
+[k]
+
+＠A：???
+Um, I know I've been wandering around[sr]the same spot for a while now...
+[k]
+
+＠A：???
+So of course you think I'm suspicious,[sr]but I promise I am absolutely not a shady sort!
+[k]
+
+[charaFace A 0]
+
+＠A：???
+...Oh?
+[k]
+
+＠A：???
+...
+[k]
+
+＠A：???
+Um, forgive me if I'm wrong, but...
+[k]
+
+＠A：???
+Are you by chance a Master who has formed a contract with a Servant...?
+[k]
+
+？1：Indeed I am.
+？2：I contract with lots of Servants.
+？！
+
+[charaFace A 1]
+
+＠A：???
+Oh, wonderful.[sr]Then I don't have to explain all the basics to you.
+[k]
+
+＠A：???
+I'm not the least bit shady. I am[line 2]get this[line 2]a wayward Servant who has nothing to hide!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+＠Da Vinci
+Well, thanks for that polite explanation.[sr]But it's not just about being polite.
+[k]
+
+＠Da Vinci
+(She acts like the passive type,[sr]but she's got a heck of a stubborn attitude...)
+[k]
+
+＠Da Vinci
+(Despite her appearance, she's almost certainly[sr]no pushover. Be careful, [%1])
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠Mash
+That's not nice, Da Vinci.[sr]She was honest about being a wayward Servant...
+[k]
+
+[charaFace C 1]
+
+＠Mash
+And while I know neither her circumstances, nor her True Name, I am sure she is a wonderful Servant!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠A：???
+Oh, are they your friends?[sr]It's nice to be in such a lively group.
+[k]
+
+[charaFace A 0]
+
+＠A：???
+They are transmitting their voices from somewhere across both space and time...am I correct?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace A 0]
+[charaFadein A 0.1 0]
+[charaPut H 2]
+[charaFace B 0]
+[charaFadein B 0.1 256,-90]
+
+＠Da Vinci
+Yeah, that's a great interpretation. It's nice to have a Divine Spirit who's quick on the uptake.
+[k]
+
+[charaFace A 12]
+
+＠A：???
+You can tell I'm a Divine Spirit...a goddess Servant?[sr]Even with my weakened Spirit Origin?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 2]
+
+＠Mash
+Y-yes. It's difficult to explain, but we have encountered our share of goddesses. And every one of them has been pretty...distinctive...
+[k]
+
+[charaFace A 0]
+
+＠A：???
+Oh my. What wonderful encounters.[sr]You must have gone through intensive training.
+[k]
+
+＠A：???
+I don't know which goddesses you encountered, nor do I know what kind of humans were used as vessels...
+[k]
+
+
+＠A：???
+But since you already understand the basics, I see no reason to hide my identity. Allow me to formally introduce myself:
+[k]
+
+＠A：???
+I am Pārvatī. I've manifested here using this girl's body as a vessel... She is someone to whom I am attuned in both body and soul.
+[k]
+
+？1：Pārvatī...?
+？2：A vessel? So, a Pseudo-Servant!?
+
+？！
+
+[charaFace A 11]
+
+＠Pārvatī
+Yes.[sr]It has been something of a confluence of coincidences.
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠Mash
+Pārvatī is a famous goddess from Indian myth.
+[k]
+
+＠Mash
+She is the divine wife of Shiva, and is the embodiment of kindness and grace. She doesn't seem to be a dangerous Divine Spirit, which is a relief.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-90]
+
+＠Da Vinci
+Yeah. If that woman is really Pārvatī,[sr]you're not in immediate danger.
+[k]
+
+＠Da Vinci
+After all, there really aren't any[sr]myths about Pārvatī doing battle.
+[k]
+
+＠Da Vinci
+Goddesses tend to be pretty fickle. They just love punishing humans at even the slightest hint of provocation or disrespect.
+[k]
+
+＠Da Vinci
+But as long as she is truly Pārvatī,[sr]anything dark[line 2]Wait a minute...
+[k]
+
+[charaFace B 5]
+
+＠Da Vinci
+A goddess who's portfolio includes beauty and gentleness... This is bad. Really bad!
+[k]
+
+＠Da Vinci
+Because she's not a goddess of war and beauty, but she's exclusively a goddess of beauty! She's the same! The same as me!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠Mash
+...Let's just put Da Vinci's antics aside...
+[k]
+
+＠Mash
+I'm curious about the individual who became her vessel. Um, excuse me, Miss Pārvatī...
+[k]
+
+＠Mash
+May I ask what has happened to[sr]the owner of that body of yours?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Pārvatī
+You're asking about the state of this body's owner...[sr]I didn't think you would ask that question so quickly...
+[k]
+
+＠Pārvatī
+You're bold, though you seem mild-mannered. Or, at least, you're certainly cautious. You have the kouhai thing going on, and we have similar personalities...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠Mash
+Um, Miss Pārvatī?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Pārvatī
+Nothing. Were I in your shoes,[sr]I would have asked the same question.
+[k]
+
+[charaFace A 4]
+
+＠Pārvatī
+The original owner of this body is not here.
+[k]
+
+＠Pārvatī
+That is... She isn't asleep,[sr]and she hasn't been destroyed or anything...
+[k]
+
+[charaFace A 6]
+
+＠Pārvatī
+Being a Divine Spirit, this is embarrassing to admit, but she and I merged together seamlessly♡
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠Mash
+M-merged!?[sr]D-does that mean...
+[k]
+
+＠Mash
+The human girl's soul...um, embraced the Divine Spirit Pārvatī...or rather, didn't lose to you...?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠Pārvatī
+Oh, I know...
+[k]
+
+＠Pārvatī
+I may not be a god of war, but even so, to be able to retake control from a Divine Heroic Spirit...I'm speechless myself.
+[k]
+
+＠Pārvatī
+This body is...well, it's basically me now. You know, I'm told that I am gloomy, scary, strong-willed...
+[k]
+
+[charaFace A 0]
+
+＠Pārvatī
+My memories and behavior are all Pārvatī,[sr]but expressed through her personality.
+[k]
+
+＠Pārvatī
+We combined our good aspects and cut away the bad parts in a sort of mutual consensus, creating a new Pseudo-Servant.
+[k]
+
+＠Pārvatī
+The girl's past and memories were sealed when we merged. After all, no human can bear the full weight of a god's mind and memories.
+[k]
+
+＠Pārvatī
+But in exchange, my preferences and decision-making were all entrusted to her human nature.
+[k]
+
+[charaFace A 11]
+
+＠Pārvatī
+This may be hard to understand, but...let's see...[sr]Are you familiar with the concept of magical girls?
+[k]
+
+＠Pārvatī
+I'm not too far off from that concept. It's a temporary state I can't change back from, but were I to do so, I would forget everything as soon as I did.
+[k]
+
+？1：Magical girl...I get it.
+？2：I don't know much about magical girls,[csr]but I think I get the idea.
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+＠Da Vinci
+Hm. I figured we'd find a vessel once I knew we were dealing with a Divine Spirit, but this is a pretty far cry from what we saw in Uruk.
+[k]
+
+＠Da Vinci
+In that case, it was a goddess using a human as her core, but this seems to be a human using a goddess as her own core.
+[k]
+
+＠Da Vinci
+Either way, that girl must have some sort of connection with the Holy Grail and Servants.
+[k]
+
+＠Da Vinci
+Typically, the human the god's compatible with is just used as a vessel. The god puts a small part of their power into the vessel and kind of forces their way into that person to manifest as a Servant.
+[k]
+
+＠Da Vinci
+At least, that's how it usually works for a Pseudo-Servant. You seem to be something of a special case, though.
+[k]
+
+＠Da Vinci
+But ultimately, you're not really much different from the other Divine Spirits in Chaldea.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Pārvatī
+Oh, so there are others like me.[sr]That's good to know.
+[k]
+
+[charaFace A 0]
+
+＠Pārvatī
+I'm not particularly comfortable with[sr]excessive fear or worship from those around me.
+[k]
+
+＠Pārvatī
+I would very much like for you to interact with me naturally, just like how you treat anyone else.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 2]
+[charaTalk C]
+[charaFace A 0]
+[charaFadein A 0.1 0]
+[charaFace C 1]
+[charaFadein C 0.1 2]
+
+＠Mash
+Thank you for your concern, Pārvatī.[sr]By the way[line 2]
+[k]
+
+＠Pārvatī
+Oh, you can call me Par. My name is kind of long and a bit hard to say, don't you think?
+[k]
+
+[charaFace C 3]
+
+＠Mash
+O-okay... I'm a little apprehensive about that, but...[sr]Very well, Par...
+[k]
+
+[charaFace A 1]
+
+＠Pārvatī
+Okay! Hee hee. This is my first time going by a nickname. I'm really being quite sociable, aren't I? That makes me happy.
+[k]
+
+[charaFace A 0]
+
+＠Pārvatī
+The owner of this body and I are both naturally very shy.
+[k]
+
+＠Pārvatī
+But by combining the best parts of ourselves, I believe we're better able to speak our mind and not be so timid.
+[k]
+
+[charaFace A 1]
+
+＠Pārvatī
+We can assert ourselves and say what we like.
+[k]
+
+＠Pārvatī
+Just that fact makes this manifestation worth it.
+[k]
+
+？1：So, Par...
+？2：What's a goddess like you doing in a place like this?
+？！
+
+[charaFace A 3]
+
+＠Pārvatī
+Oh yes, I forgot! There's no time for me to be standing around here being all happy!
+[k]
+
+[charaFace A 4]
+
+＠Pārvatī
+Um, well, simply put, I'm looking for something.[sr]I know it's around here somewhere.
+[k]
+
+[charaFace C 6]
+
+＠Mash
+You mean in Fuyuki, during this age?
+[k]
+
+＠Pārvatī
+Yes. This city seems to have some sort of connection to my body...
+[k]
+
+＠Pārvatī
+And so I thought that if I wandered this place,[sr]I would eventually come across it...
+[k]
+
+＠Pārvatī
+But this Fuyuki seems to be different than the one my body is familiar with...
+[k]
+
+[charaFace A 11]
+
+＠Pārvatī
+Embarrassing as it is to admit, I seem to have gotten lost and landed myself in a bit of a bind...
+[k]
+
+？1：I see...
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠Mash
+Now that we know what's going on, what do you think, Senpai? Should we help out Par?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+＠Da Vinci
+Yeah. If that's her reason for being there, granting her wish will definitely lead us to some answers.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+？2：Want us to help?
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠Mash
+Yes. We do have some connection with Fuyuki,[sr]and we can provide a bit of backup from here.
+[k]
+
+＠Mash
+We may be able to be of some help.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+？！
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠Pārvatī
+Well, if you really want to, then I'd welcome it! But...are you sure you want to help me? We only just met.
+[k]
+
+？1：(Nod)
+？2：(Give a thumbs up)
+？！
+
+[charaFace A 11]
+
+＠Pārvatī
+Oh, what kindhearted people you are![sr]I must show my appreciation for your generosity!
+[k]
+
+[charaFace A 4]
+
+＠Pārvatī
+...Oh, my apologies. I have yet to learn your names.[sr]May I ask what they are?
+[k]
+
+？1：I'm [%1].
+？！
+
+[charaFace A 0]
+
+＠Pārvatī
+[%1].[sr]So your name is [%1]...
+[k]
+
+[charaFace A 1]
+
+＠Pārvatī
+Yes, I think that is a wonderful name.[sr]Pleased to meet you, [%1]!
+[k]
+
+＠Pārvatī
+And...Miss Mash and Miss Genius Da Vinci!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace A 0]
+[charaFadein A 0.1 0]
+[charaPut H 2]
+[charaFace B 0]
+[charaFadein B 0.1 256,-90]
+
+＠Da Vinci
+So the thing you're looking for...do you have any other clues other than that it's in this city?
+[k]
+
+[charaFace A 4]
+
+＠Pārvatī
+Um...no... This is more of an instinctual thing,[sr]so I think I would know if it were nearby...
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 2]
+
+＠Mash
+Then we have no choice but to search the area.
+[k]
+
+＠Mash
+Let's map out the area, and we'll keep track of where you've covered as you do it.
+[k]
+
+＠Mash
+This could take awhile, but if you just do it bit by bit,[sr]I'm sure we'll find what Par is looking for eventually.
+[k]
+
+[charaFace A 0]
+
+＠Pārvatī
+Wow...and I thought you were the same sort as me,[sr]but you take initiative much more than I do, Mash!
+[k]
+
+[charaFace A 1]
+
+＠Pārvatī
+But that is very promising! Running into you is the best thing that could have happened to me here. I'm so lucky!
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Pārvatī
+Now let's get going![sr]I'm counting on everyone!
+[k]
+
+[messageOff]
+[wipeout rightToLeft 0.7 1]
+[bgmStop BGM_EVENT_2 1.2]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.4]
+[scene 45600]
+[wipein leftToRight 0.7 1]
+[wait wipe]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠Mash
+By the way, Par, that thing you're carrying...[sr]Is that a lance?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-90]
+
+＠Da Vinci
+Oh yeah, I was wondering the same.[sr]Your Class is Lancer, right?
+[k]
+
+＠Da Vinci
+But I've never heard of Pārvatī carrying a lance...
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Pārvatī
+Oh, you're right.[sr]This actually isn't mine.
+[k]
+
+＠Pārvatī
+I borrowed it from my husband, Shiva.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-90]
+
+＠Da Vinci
+Ah, that's Shiva's trident, Trishula?[sr]So that's why you're a Lancer.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Pārvatī
+Since I'm only borrowing it, I can't do nearly as much with it as Shiva could.
+[k]
+
+＠Pārvatī
+And I customized it a little so I could use it easier.
+[k]
+
+[charaFace A 8]
+
+＠Pārvatī
+It's probably far from what a lance should look like... Well, no, it's probably just not as cool because I'm the one who customized it.
+[k]
+
+＠Pārvatī
+I...may be a goddess,[sr]but I'm kind of a klutz.
+[k]
+
+？1：Ummm...
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠Mash
+No, that's not true! No matter how clumsy you are,[sr]I am sure you're a very diligent worker, Par!
+[k]
+
+＠Mash
+I have absolutely no reason to believe that, but I'm certain of it because...because I feel such a close connection with you!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠Pārvatī
+Mash!
+[k]
+
+？2：You're no klutz! You're beautiful, goddess!
+
+[charaFace A 10]
+
+＠Pārvatī
+R-really? You think so!? You speak so much more passionately than I could... You make me blush!
+[k]
+
+？！
+
+[charaFace A 1]
+
+＠Pārvatī
+But hearing you say that about me gives me so much confidence!
+[k]
+
+[charaFace A 0]
+
+＠Pārvatī
+I may not have as much firepower as Shiva,[sr]but since I've manifested...
+[k]
+
+＠Pārvatī
+That proves that I am a full-fledged Lancer Servant![sr]Hi-yah![wt 0.2][se ad76]
+[k]
+
+？1：Hi-yah...?
+？2：Um... What was that wobbly move?
+
+？！
+
+[charaFace A 10]
+
+＠Pārvatī
+It's...it's a “hi-yah!”[sr]It's what all martial artists shout...!
+[k]
+
+[charaFace A 5]
+
+＠Pārvatī
+...Ungh. Drat.[sr]You're doubting me now, aren't you?
+[k]
+
+[charaFace A 4]
+
+＠Pārvatī
+I know I'm a beginner at being a Lancer,[sr]but I am still a goddess!
+[k]
+
+＠Pārvatī
+I may not look cool, but I'm definitely really strong when I fight. Probably.
+[k]
+
+[charaFace A 2]
+
+＠Pārvatī
+If an enemy comes, I'll just slap, slap, slap them.[sr]Like this!
+[k]
+
+＠Pārvatī
+I may borrow Shiva's power, but I still plan on doing it my way: by being splendid and graceful!
+[k]
+
+＠Pārvatī
+Don't worry.[sr]I won't summon any weird shadows or anything!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+＠Da Vinci
+Eh?[sr](What does she mean by “weird shadows”?)
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠Mash
+(I think she's trying to show that she's strong,[sr]in her own way...)
+[k]
+
+＠Mash
+(It might be rude of me to say this, but she seems more elegant and cute, really...)
+[k]
+
+＠Mash
+(A goddess will always be a goddess, I suppose...)
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Pārvatī
+That's why, even if we encounter enemies on our way, there's nothing to worry about, [%1].
+[k]
+
+＠Pārvatī
+You were all kind when I was in a tough spot. Now, I swear on my honor as a goddess...I will protect you all!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-90]
+
+＠Da Vinci
+Hm... Normally, you wouldn't expect much from a goddess like Pārvatī in a melee battle...
+[k]
+
+＠Da Vinci
+But it's a different story if you consider the mythology surrounding her. If you trace her roots, you'll find quite the warlike[line 2]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠Pārvatī
+Oh? That's...
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 5]
+
+[wt 1.0]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+[charaFadeout E 0.1]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠Mash
+Is that...Cursed Arm over there?
+[k]
+
+＠Mash
+It looks like he's doing something shifty by the road.[sr]I wonder...
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠Pārvatī
+...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠Mash
+Par?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Pārvatī
+I'm not sure, but...I sense something.
+[k]
+
+＠Pārvatī
+He is a bad man.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+＠Da Vinci
+Well, that might be TECHNICALLY true in terms of alignment...
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Pārvatī
+I feel that...we need to proceed with extreme caution. This feeling is bubbling up within me...
+[k]
+
+[charaFace A 4]
+
+＠Pārvatī
+And, what should I call it... It's just a vague association, but there's a smell on him that bothers me...
+[k]
+
+＠Pārvatī
+It's like...this terrible...smell of bugs...?
+[k]
+
+＠Pārvatī
+It's all very instinctual,[sr]and I can't express it very well...
+[k]
+
+＠Pārvatī
+...
+[k]
+
+[charaFace A 2]
+
+＠Pārvatī
+But anyway![sr]The fact of the matter is that he is an evil man!
+[k]
+
+＠Pārvatī
+And a goddess like me simply cannot allow that to stand!
+[k]
+
+[charaFace A 9]
+
+＠Pārvatī
+Fuuu...haaa[sr](deep breaths)...
+[k]
+
+[charaFace A 2]
+
+＠Pārvatī
+Hold it right there, suspicious masked man!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.2]
+
+＠Cursed Arm
+Oh? Are you perhaps addressing me?
+[k]
+
+？1：Well, you're the only masked man around!
+？2：Well... If those weirdo Island Masks were around...
+
+？！
+
+[charaFace E 1]
+
+＠Cursed Arm
+Hahaha. Very true.[sr]What business do you have with me?
+[k]
+
+[charaFace E 0]
+
+＠Cursed Arm
+I see a young lady who has been glaring at me for the past few minutes...
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Pārvatī
+As I believe that sincere words will reach even those who are evil, I will ask you this:
+[k]
+
+＠Pārvatī
+What are you doing here?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠Cursed Arm
+What am I doing? Hmmm, now that I think of it, that is quite a profound question.
+[k]
+
+＠Cursed Arm
+Many factors have led me here.[sr]However, to put it simply...
+[k]
+
+[charaFace E 1]
+
+＠Cursed Arm
+Perhaps it is best to say that I am disposing of those who are empty, or those who've lost their place...
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Pārvatī
+Wh-what did you say!?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+
+＠Mohawk
+Heh heh heh... Sir! I've found some![sr]There's a ton over by the river!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠Cursed Arm
+Oh, so it seems... Let's head over right away.[sr]This is very exciting, hahaha...
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Pārvatī
+H-he even has some mean-looking minions...!
+[k]
+
+[charaFace A 5]
+
+＠Pārvatī
+They have some nerve.[sr]I mean...wait a minute!
+[k]
+
+＠Pārvatī
+I know that the modern world is full of wicked,[sr]soulless people who have lost their way!
+[k]
+
+[charaFace A 2]
+
+＠Pārvatī
+But even so, as a goddess,[sr]they are all my beloved children!
+[k]
+
+＠Pārvatī
+I will not turn a blind eye to the senseless murder of innocents!
+[k]
+
+
+
+＠Pārvatī
+Stay right where you are, you murdering assassin.[sr]It's probably not hard to tell, but I am[charaEffect A bit_talk_41] mad!
+[k]
+[wt 0.5]
+[charaEffectStop A bit_talk_41]
+
+？1：(Tremble)
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠Mash
+That look on Par's face...![sr]She's intimidating even for a goddess!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+＠Da Vinci
+Bingo. Pārvatī is usually described only as Shiva's wife...a goddess who is very mild-mannered...
+[k]
+
+＠Da Vinci
+But since she is Shiva's wife, Pārvatī is often identified with his OTHER wife, Durga, who is the goddess of battle...
+[k]
+
+＠Da Vinci
+And on top of that, she is also identified as Kali, who was born from the two gods. Long story short, if you get Pārvatī mad, she's terrifying!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Pārvatī
+This is no time for idle chatter.
+[k]
+
+＠Pārvatī
+If you are truly a disciple of justice,[sr]you cannot let these evil men walk free!
+[k]
+
+[charaFace A 2]
+
+＠Pārvatī
+Now come, [%1]! We must give these nasty, bug-smelling murderers divine punishment!
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

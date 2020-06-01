@@ -1,0 +1,154 @@
+＄01-00-02-04-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 20900 0]
+[charaSet A 8001000 1 Mash]
+[charaSet B 98003003 1 "Dr. Roman"]
+[charaSet C 98002000 1 Fou]
+[charaSet D 1005001 1 Nero]
+[charaSet E 98016000 1 "Roman Soldier"]
+[charaSet F 98006200 1 "Smoke-like Critter"]
+[fadein black 1]
+[wait fade]
+[se ad13]
+[wait se ad13]
+[communicationChara 98003003 1 5 0 0]
+＠Dr. Roman
+Good morning Your Majesty, I actually have an important favor to ask of you.
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[charaFace D 1]
+[charaFadein D 0.1 0]
+＠Nero
+Umu, ask me anything![sr]I am quite generous!
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠Dr. Roman
+In order to stabilize our activities in this era, I'd like to go to Mount Etna.
+[k]
+
+[communicationCharaFace 5]
+＠Dr. Roman
+A leyline crucial to our mission exists in that volcano.
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+＠Nero
+Etna, huh? The Court Mage used to go to Etna a lot too. Hmm, but why?
+[k]
+
+？1：We need to set a terminal point.
+
+？2：So we can bolster our troops.
+
+？！
+
+＠Nero
+I see.[sr]I'm not sure I understand, but I'll grant you permission.
+[k]
+
+[charaFace D 1]
+＠Nero
+If you go to Etna, will it be for me and for the sake of my Rome?
+[k]
+
+[charaFace A 13]
+＠Mash
+Yes, Your Majesty.[sr]Of course.
+[k]
+
+[charaFace D 0]
+＠Nero
+Very well. While my investigation of[sr]the United Empire prevents me from going[line 2]
+[k]
+
+＠Nero
+You may do as you wish.[sr]Be prepared for enemy soldiers along the way.
+[k]
+
+[charaFace A 1]
+＠Mash
+Thank you very much.
+[k]
+
+[fadeout black 0.5]
+[messageOff]
+[wait fade]
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.5]
+[scene 20700 0]
+[charaFadein C 0 2]
+[communicationCharaLoop 98003003 0 5 0 0]
+[fadein black 0.5]
+[wait fade]
+＠Fou
+Fou, foooou!
+[k]
+
+[communicationCharaFace 3]
+＠Dr. Roman
+...We arrived more easily than expected.[sr]Isn't this a vital region to the United Empire?
+[k]
+
+[charaFadeout C 0.1]
+[charaFace A 7]
+[charaFadein A 0.1 2]
+＠Mash
+Wait Doctor, it looks like something's already swarming around the leyline!
+[k]
+
+[bgmStop BGM_EVENT_2 0.4]
+[bgm BGM_EVENT_3 0.1]
+[charaFace A 2]
+＠Mash
+That's[line 2]
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFadeout A 0.1]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.5]
+[charaFadeout F 0.1]
+[charaTalk B]
+[charaFace A 7]
+[charaFadein A 0.1 2]
+[communicationCharaLoop 98003003 0 5 0 0]
+＠Dr. Roman
+Ghost-type monsters?[sr]If it's naturally occurring, that's quite a leyline!
+[k]
+
+？1：Let's eliminate them!
+
+？2：Secure the leyline!
+
+？！
+
+[charaFace A 2]
+＠Mash
+Roger Master![sr]Initiating combat!
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[communicationCharaClear]
+[wait communicationChara]
+[wait fade]
+[soundStopAll]
+[end]

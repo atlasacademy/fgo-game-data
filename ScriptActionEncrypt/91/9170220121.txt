@@ -1,0 +1,576 @@
+
+
+＄91-70-22-01-2-1
+
+[soundStopAll]
+
+[charaSet A 8001002 1 Mash]
+[charaSet B 98003003 1 "Dr. Roman"]
+[charaSet C 7022001 1 Ibaraki-Douji]
+[charaSet D 98006000 1 "Communication Static"]
+[charaSet E 2002001 1 Gilgamesh]
+[charaSet F 98107600 1 ???]
+[charaSet G 6021001 1 Shuten-Douji]
+
+[charaPut D 1200,1200]
+[charaEffect D bit_talk_10]
+[charaFilter F silhouette 00000080]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 33000]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠Gilgamesh
+Fwahahahahaha! I'm just warming up![sr]I shall even put on my armor for you!
+[k]
+
+＠Gilgamesh
+Burn my regal, glorious presence into your minds!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠Ibaraki-Douji
+Why you... This is why I hate golden guys![sr]They're flashy, blinding, and they just piss me off!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0 0,-151]
+＠Dr. Roman
+You do know that your main color is gold, right?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut D 1200,1200]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠Ibaraki-Douji
+It is in good taste! Mother picked it out![sr]It doesn't just sparkle all the time like that thing!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠Gilgamesh
+You're quite tenacious for a mongrel.[sr]As a reward for your spirit, I will call it a day.
+[k]
+
+＠Gilgamesh
+Rejoice. I shall show you the contents of the treasury that you so coveted.
+[k]
+
+＠Gilgamesh
+Gate of Babylon!
+[k]
+
+[scene 10000 2.0]
+[se bac24]
+[messageOff]
+[charaEffect E bit_talk_gate_of_babylone]
+[wt 2.0]
+[se bac35]
+[wt 0.7]
+[se bac25]
+[wt 0.7]
+[charaEffectStop E bit_talk_gate_of_babylone]
+[wt 0.3]
+
+[wipeout rectangleStripLeftToRight 0.1 1.0]
+[wait wipe]
+[charaFadeout E 0.1]
+[scene 33000]
+[wipein rectangleStripRightToLeft 0.1 1.0]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠Ibaraki-Douji
+This is the end![sr]I have no other choice!
+[k]
+
+[messageOff]
+[se bac1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+
+[charaDepth C 5]
+[charaDepth A 1]
+[charaFace C 5]
+[charaFace A 7]
+[charaFadein C 0.1 -1024,64]
+[charaFadein A 0.1 1]
+
+[se ad73]
+[seStop ad73 0.4]
+[charaMove C -128,0 0.1]
+
+[se bac245]
+[charaShake A 0.05 4 0 0.4]
+＠Mash
+...Ibaraki-Douji!?[sr]Why are you covering me and Master[line 2][charaMove C -128,-20 0.1][charaMove A 0,-20 0.1][wt 0.1][charaSpecialEffect C erasureReverse -128,-20 0.1][charaSpecialEffect A erasureReverse 0,-20 0.1][charaMove C 128,96 0.1][charaMove A 256,96 0.1][se bac1][wait charaSpecialEffect C][wait charaSpecialEffect A][charaFadeout C 0.1][charaFadeout A 0.1][wt 0.4]
+[k]
+
+[messageOff]
+[charaTalk on]
+
+[wipeout rectangleStripDownToUp 0.2 1.0]
+[wait wipe]
+[scene 20320]
+[effect bit_talk_43h]
+[se ad2]
+[seVolume ad2 0 0.5]
+[wipein rectangleStripUpToDown 0.2 1.0]
+[wait wipe]
+
+[shake 0.05 4 4 4.0]
+
+＠Mash
+...!?
+[k]
+
+
+？1：We're, uh, really high up...!
+？2：Waaaaaahhh!?
+
+？！
+
+[effectStop bit_talk_43h]
+[seVolume ad2 0 0.5]
+
+＠Ibaraki-Douji
+Close your mouth tight or you'll bite your tongue!
+[k]
+
+＠Dr. Roman
+It's no use. Even though Ibaraki-Douji could jump over the gate of Rashomon, a point-blank hit there will be fatal!
+[k]
+
+[messageOff]
+
+[seStop ad2 0.1]
+[wipeout rectangleStripUpToDown 0.2 1.0]
+[wait wipe]
+
+[scene 32900]
+
+[wipein rectangleStripDownToUp 0.2 1.0]
+[wait wipe]
+
+[effect bit_talk_43h]
+[wt 0.4]
+[effectStop bit_talk_43h]
+[charaTalk off]
+[charaDepth C 5]
+[charaDepth A 1]
+[charaFace C 5]
+[charaFace A 6]
+[charaFadein C 0.1 -128,0]
+[charaFadein A 0.1 1]
+[charaMove C -128,-40 0.1]
+[charaMove A 0,-40 0.1]
+[wait charaMove C]
+[wait charaMove A]
+[se ad144]
+[seVolume ad144 0 0.5]
+[seStop ad144 0.3]
+[se ad223]
+[charaMove C -128,0 0.1]
+[charaMove A 1 0.1]
+[wait charaMove C]
+[wait charaMove A]
+
+[wt 1.0]
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaPut D 1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0 0,-151]
+＠Dr. Roman
+...There's...no attack!?
+[k]
+
+＠Dr. Roman
+Could this be...Ibaraki-Douji's “Disengage” skill that lets her avoid or flee from enemy attacks?
+[k]
+
+[charaFace B 5]
+＠Dr. Roman
+The legend where she was the only one who managed to flee from Raikou's four oni-slayers... The legend of her escaping even after Watanabe-no-Tsuna took off her arm is[line 2]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut D 1200,1200]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠Ibaraki-Douji
+Shut up, onmyouji! How dare you mention that hateful Minamoto! It's making me wanna KILL!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠Mash
+I agree this is no time to be chatting![sr]Doctor, please prepare for Rayshift!
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 33100]
+[wt 1.0]
+
+[fadein black 2.0]
+[wait fade]
+[bgm BGM_EVENT_40 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠Gilgamesh
+Hmph. Mongrel.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.7]
+＠???
+Shall we go after them, King Gilgamesh?
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+＠Gilgamesh
+No. Leave them be.[sr]She is only doing what is in her nature.
+[k]
+
+＠Gilgamesh
+Never pursuing dignity or honor... She wouldn't hesitate to turn her back on all that mattered if it meant she would survive.
+[k]
+
+＠Gilgamesh
+How ugly...how pitiful...how beautiful that is.
+[k]
+
+＠Gilgamesh
+...I remember now. That's why I gave up on her. There was no point forcing her to be my dog. A beast will live and die as a beast. That is all it can do.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠???
+Yes, but...what about the crime of attempting to loot the king's treasury? Shall that be overlooked?
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠Gilgamesh
+I told you: no more than a beast.
+[k]
+
+＠Gilgamesh
+She was simply drawn to the scent of my treasures as a wild dog to meat. No more than a stray lurking near the front door.
+[k]
+
+＠Gilgamesh
+There's no need to chase such a creature to its lair for the kill. Of course, should she return, I won't hesitate to crush her.
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_40 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+
+[wt 0.4]
+[effect bit_talk_07_02]
+[se ad12]
+[wt 4]
+[fadeout white 1.0]
+[wait fade]
+
+[cameraMove 0.1 0,0 1.2]
+[wait camera]
+[charaScale G 0.83]
+[charaScale C 0.83]
+[charaDepth G 1]
+[charaDepth C 1]
+
+[scene 10310]
+[wt 2.0]
+
+[fadein white 2.0]
+[wait fade]
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[se ad95]
+[seStop ad95 2.0]
+[charaFadein G 0.7 0,-48]
+[wt 1.0]
+＠Shuten-Douji
+(Yawn) ...I am so booored...
+[k]
+
+[cameraMove 1.4 -86,0 1.2]
+[charaMove G -76,-48 1.2]
+[charaTalk C]
+[charaFace C 4]
+[se ad95]
+[charaFadein C 2.0 278,-48]
+[seStop ad95 2.0]
+[wt 1.2]
+[wait camera]
+[wt 0.3]
+
+[charaDepth G 1]
+[charaDepth C 9]
+
+[charaTalk G]
+[charaFace G 0]
+＠Shuten-Douji
+Hm? Ibaraki. Welcome back. Where have you been?
+[k]
+
+[charaTalk C]
+[charaFace C 3]
+[charaShake C 0.05 2 0 0.4]
+[wt 0.4]
+[charaFace C 4]
+＠Ibaraki-Douji
+...
+[k]
+
+[charaFace G 4]
+＠Shuten-Douji
+???
+[k]
+
+[charaFace C 4]
+＠Ibaraki-Douji
+I'm sorry, Shuten. I meant to bring back a souvenir for you... But I couldn't...
+[k]
+
+[charaFace G 0]
+＠Shuten-Douji
+Well, I don't even know where you've been.[sr]Don't worry about it.
+[k]
+
+＠Shuten-Douji
+But more importantly, I was bored because you left me alone.
+[k]
+
+＠Shuten-Douji
+My sweetie wasn't here, and when I tried to pick on the brat, he ran away as usual.
+[k]
+
+＠Shuten-Douji
+And Raikou didn't even come and try to take my head off...
+[k]
+
+＠Shuten-Douji
+If you're talking about a souvenir, you coming back is the best present, Ibaraki.
+[k]
+
+[charaFace C 3]
+＠Ibaraki-Douji
+!!!
+[k]
+
+[charaFace G 1]
+＠Shuten-Douji
+I sense some large battle about to begin.
+[k]
+
+＠Shuten-Douji
+The best way to lighten the mood is drinking.[sr]Well, I drink all the time, but keep me company, Ibaraki.
+[k]
+
+[charaFace C 3]
+＠Ibaraki-Douji
+Oh. Okay. Yeah... Okay.
+[k]
+
+[charaFace C 1]
+＠Ibaraki-Douji
+...O-of course...!
+[k]
+
+[messageOff]
+[fadeout black 0.7]
+[wait fade]
+
+[charaFadeout G 0.1]
+[charaFadeout C 0.1]
+[wt 1.0]
+[cameraHome 0.1]
+[wait camera]
+[charaScale G 1.0]
+[charaScale C 1.0]
+
+[fadein black 0.7]
+[wait fade]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠Shuten-Douji
+So where were you all this time?
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠Ibaraki-Douji
+Ku... Kuhahaha. I may not have a souvenir, but I have stories to tell! Listen to all of my glorious feats!
+[k]
+
+＠Ibaraki-Douji
+I did what only a true oni could ever do! Master cried like a baby! The people trembled in fear...in the hundreds...no, thousands!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠Shuten-Douji
+...? (Sniff, sniff) Hm, I smell an unfamiliar oni on you.
+[k]
+
+[charaFace G 4]
+＠Shuten-Douji
+Don't tell me... You abandoned poor, lonely Shuten to go have fun with another oni?
+[k]
+
+＠Shuten-Douji
+How could you... I'm... I'm going to cry...
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+[charaShake C 0.05 4 0 0.4]
+＠Ibaraki-Douji
+N-n-n-n-n-no! Absolutely not! It's not what you think! L-listen, Shuten! I can explain!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠Shuten-Douji
+... (Sob, sob)
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+[messageShake 0.05 5 5 1.0]
+＠Ibaraki-Douji
+Sh-Shuteeeeeen!!!
+[k]
+
+[messageShakeStop]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[messageOff]
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.7 1]
+[wt 1.2]
+[charaFace G 1]
+＠Shuten-Douji
+(Ah, Ibaraki is truly the best entertainment to go along with my alcohol. I never get tired of her...)
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[soundStopAll]
+[end]

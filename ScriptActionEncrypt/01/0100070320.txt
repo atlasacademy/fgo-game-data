@@ -1,0 +1,911 @@
+
+
+
+＄01-00-07-03-2-0
+
+[soundStopAll]
+[charaSet A 8001002 1 Mash]
+
+[charaSet B 98106200 1 Merlin]
+
+[charaSet C 5018001 1 Gilgamesh]
+
+[charaSet D 3027000 1 Ana]
+
+[charaSet E 98107600 1 "High Priestess"]
+
+[charaSet F 98107500 1 "Uruk Soldier"]
+
+[charaSet G 98003000 1 "Dr. Roman"]
+
+[charaSet H 2020001 1 Ishtar]
+
+
+
+[bgm BGM_EVENT_40 0.1]
+[scene 33100]
+[wt 0.7]
+[fadein black 1.5]
+[wait fade]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠Mash
+The battle's over!
+[k]
+
+＠Mash
+He attacked so suddenly that we fought back without thinking, but[line 3]
+[k]
+
+[messageOff]
+[wipeout rightToLeft 0.3 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.1]
+[wipein leftToRight 0.3 1]
+[wait wipe]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.4 1]
+
+[wt 1.0]
+？1：His Majesty seems upset...
+？2：He didn't seem to like that...
+
+？！
+[messageOff]
+[wipeout leftToRight 0.3 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[wipein rightToLeft 0.3 1]
+[wait wipe]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠Ana
+...Yes. Halfway through the battle, he clearly started holding back.
+[k]
+
+＠Ana
+Just who does he think he is, I wonder?
+[k]
+
+[charaFadeout D 0.1]
+[messageOff]
+[bgmStop BGM_EVENT_40 0.4]
+[wt 0.4]
+[bgm BGM_EVENT_1 0.1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠Gilgamesh
+A waste of time. I was curious to see what those tasked by heaven could do, but you're no more than mongrels!
+[k]
+
+＠Gilgamesh
+You are unworthy of my help, and unfit to serve me!
+[k]
+
+＠Gilgamesh
+You aren't even worth punishing for messing up my throne room! I'll let you go this time, so begone!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠High Priestess
+Your Majesty, please, calm yourself...[sr]They seem like powerful warriors to me...
+[k]
+
+＠High Priestess
+Are they the strangers you spoke of?
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠Gilgamesh
+Merlin brought them here, so yes, they probably are. But... it's too soon. Far too soon.
+[k]
+
+[charaFace C 4]
+＠Gilgamesh
+See that stupid look on [&his:her] face?[sr]Still not a clue what's happening here.
+[k]
+
+＠Gilgamesh
+There's no point in talking to them.[sr]Merlin... It seems you let yourself get distracted.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠Merlin
+Hmm... For some reason, this is turning out to be my fault. Do you have anything to say, [%1]?
+[k]
+
+＠Merlin
+At this rate, he really will kick you out of here.
+[k]
+
+[bgmStop BGM_EVENT_1 0.4]
+[wt 0.4]
+
+？1：...Okay. (Work up the courage and give your name.)
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠Gilgamesh
+I don't care. It's not worth learning your name.[sr]Begone, scum.
+[k]
+
+？2：...Okay. (Have Mash do it.)
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠Gilgamesh
+You fool! Why are you having your Servant do the talking!? This should be the time to show who's the reliable one here!
+[k]
+
+？！
+
+[charaFadeout C 0.1]
+[bgm BGM_EVENT_1 0.1]
+[wt 0.1]
+[se ad13]
+[charaTalk G]
+[communicationChara 98003003 1 5 0 4]
+[wt 0.3]
+
+＠Dr. Roman
+I-I didn't expect things to go this bad...
+[k]
+
+[communicationCharaFace 5]
+＠Dr. Roman
+What's going on, Merlin!? The king doesn't seem interested in Chaldea at all!
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠Merlin
+Hmm, you're right. That's strange. I thought he and I were on the same wavelength there.
+[k]
+
+＠Merlin
+I mean, I didn't tell him what Chaldea was.[sr]Or what a Servant was.
+[k]
+
+＠Merlin
+Or about the Incineration of Humanity, or the King of Mages, or the Grails, or the Singularities, or any of that stuff.
+[k]
+
+[charaFace B 0]
+＠Merlin
+But you know, he should be able to figure that out, right? He's a king, after all.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠Mash
+Y-you didn't tell him anything, then!?
+[k]
+
+＠Mash
+And you're the one who said he was really busy, right!?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Merlin
+Oh, hmm. You're right! Oops![sr]I should've explained things, huh?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk G]
+[communicationCharaLoop 98003003 1 5 0 1]
+
+＠Dr. Roman
+Yes! That's Merlin for you! Totally useless!
+[k]
+
+[communicationCharaFace 2]
+＠Dr. Roman
+Now you're our only hope, [%1]!
+[k]
+
+＠Dr. Roman
+Let's try persuading King Gilgamesh once more![sr]Even he'll understand if you explain properly!
+[k]
+
+[messageOff]
+[communicationCharaClear]
+[wait communicationChara]
+
+[bgmStop BGM_EVENT_1 0.4]
+[wt 0.4]
+[bgm BGM_EVENT_40 0.1]
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+
+＠Gilgamesh
+There's no need for that. I can hear you, concealed one.
+[k]
+
+＠Gilgamesh
+Know that I am capable of all things, and so possess all knowledge.
+[k]
+
+[charaFace C 0]
+＠Gilgamesh
+Thus, there is nothing my eyes cannot see![sr]Though as you can see, I've yet to fulfill my destiny...
+[k]
+
+[charaFace C 1]
+＠Gilgamesh
+I am aware of the process of summoning and commanding Heroic Spirits... What you call “Heroic Spirit Summoning.”
+[k]
+
+[charaFace C 0]
+＠Gilgamesh
+...And that my name is on the list of those “Spirit Origins” that you possess as well.
+[k]
+
+[charaFace C 1]
+＠Gilgamesh
+Humph. Well, that third-rate Master there probably lacks the power to summon me.
+[k]
+
+＠Gilgamesh
+Perhaps, one day...
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Mash
+King Gilgamesh is from this era.[sr]But even though Merlin never told him,
+[k]
+
+＠Mash
+he knows all about Chaldea, and the fact that he's going to become a Heroic Spirit!
+[k]
+
+[charaFace A 7]
+＠Mash
+Which makes it even more important that he listens to us...!
+[k]
+
+？1：Right! Let's at least talk about the Grail!
+
+？！
+
+＠Mash
+Yes, that's right, Master! Hear us, King Gilgamesh!
+[k]
+
+＠Mash
+If we don't recover the Grail that's somewhere in this era, the Singularity will destroy humanity.
+[k]
+
+＠Mash
+So we need to find the Grail as fast as possible...[sr]The Gra[charaFace A 6]il...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[messageOff]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[effect bit_talk_20]
+[se bas2]
+[wt 2.0]
+[effectStop bit_talk_20]
+[wt 1.0]
+
+＠Gilgamesh
+What's wrong? You're after the Grail, aren't you? And...?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk G]
+[communicationCharaLoop 98003003 1 5 0 2]
+[wt 0.3]
+
+＠Dr. Roman
+I'm detecting the Grail! I had a hunch, but it looks like King Gilgamesh already has it!
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Gilgamesh
+Of course. All the treasures in this world belong to me.[sr]I obtained the omnipotent wish granter a long time ago.
+[k]
+
+＠Gilgamesh
+That's probably what the Three Goddess Alliance is after. Otherwise they'd have no reason to attack Uruk.
+[k]
+
+[charaFace C 5]
+＠Gilgamesh
+And don't you dare ask me to give it to you.
+[k]
+
+＠Gilgamesh
+There's no reason for me to give you any of my treasures.
+[k]
+
+＠Gilgamesh
+So, if you ask for the Grail, be prepared to give me more than just your life.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠Mash
+That's...true. We don't have anything to offer in exchange...
+[k]
+
+？1：Then what if we defeat the Three Goddess Alliance?
+
+？！
+
+[bgmStop BGM_EVENT_40 0.4]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Gilgamesh
+...Heh.
+[k]
+
+[bgm BGM_EVENT_39 0.1]
+
+＠Gilgamesh
+Fwahaha! Hahahahaha![sr]Hahahahahahahahah!
+[k]
+
+
+＠Gilgamesh
+Defeat them? You're going to defeat those goddesses? Siduri, bring me water! My life's in danger!
+[k]
+
+＠Gilgamesh
+These fools may make me laugh myself to death![sr]Merlin brought me the future's greatest clowns!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[bgmStop BGM_EVENT_39 0.4]
+
+＠Ana
+...
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠Gilgamesh
+Heh... Wow, that was a good one. I'll put it down in the court records. It'll say, “The king is in great abdominal pain.”
+[k]
+
+[charaFace C 5]
+＠Gilgamesh
+But knowing everything, I say this: I've no use for you right now.
+[k]
+
+＠Gilgamesh
+You are all contaminants to this era. Rather, you're an excess. I'd go so far as to say you're unnecessary.
+[k]
+
+[charaFace C 0]
+＠Gilgamesh
+Uruk is mine to protect.[sr]I do not need help from Chaldea.
+[k]
+
+＠Gilgamesh
+The heavens may fall and the earth may split, but this audience will be the last time I speak to you.
+[k]
+
+＠Gilgamesh
+Listen. Do not think that you can beat those goddesses with the pathetic pawns you possess.
+[k]
+
+[messageOff]
+[messageOff]
+[wipeout rightToLeft 0.3 1]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[bgmStop BGM_EVENT_2 0.4]
+[se ad59]
+[wt 0.7]
+[wipein leftToRight 0.3 1]
+[wait wipe]
+[seStop ad59 0.4]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[bgm BGM_EVENT_3 0.1]
+
+＠Uruk Soldier
+Forgive me for interrupting your pleasant chat, my king!
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠Gilgamesh
+Does this look like a pleasant chat to you!?[sr]Are you blind!?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Uruk Soldier
+Huh? Oh, uh... We just heard your laughter echoing throughout the ziggurat, and assumed you were having a good time...
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+
+＠Gilgamesh
+Fool! Don't you know that, at a certain age, one can laugh at the drop of a hat? ...No matter. What is it?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+
+＠Uruk Soldier
+A message from our observation post near the Tigris!
+[k]
+
+＠Uruk Soldier
+They've sighted the wake from the Boat of Heaven in the sky! It's heading for Uruk at high speed!
+[k]
+
+＠Uruk Soldier
+It's Ishtar[line 3]one of the Three Goddess Alliance members!
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[messageOff]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 0.7]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk G]
+[communicationCharaLoop 98003003 1 5 0 2]
+[wt 1.0]
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+[wt 0.7]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠Gilgamesh
+(Sigh) That fool again? Does she never learn?
+[k]
+
+＠Gilgamesh
+Or is she so stupid she can't even remember what happened a day ago? No, I doubt that moron can even manage to remember what happened 12 hours ago!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠High Priestess
+...Ahem. Your Majesty, please refrain from insulting Ishtar.
+[k]
+
+＠High Priestess
+She is the patron deity of our city. Even as king, you shouldn't blaspheme against her so carelessly.
+[k]
+
+＠High Priestess
+When you speak of her like that here, it makes matters difficult for the Sacred Temple...
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠Gilgamesh
+Don't concern yourself with such matters![sr]Has she ever protected the Uruks from anything?
+[k]
+
+＠Gilgamesh
+She destroys things that don't need to be destroyed, and creates things that don't need to be created!
+[k]
+
+＠Gilgamesh
+She's a cross between a horde of locusts, a sandstorm, and a child's tantrum!
+[k]
+
+＠Gilgamesh
+She's probably going to accidentally destroy Eanna[line 2]her own home[line 2]again, and then run crying to An!
+[k]
+
+[charaFace C 1]
+＠Gilgamesh
+Humph. Of course, An vanished long ago. Even her father's given up on her. She got what she had coming!
+[k]
+
+＠Gilgamesh
+That girl's going to end up all alone, crying and crying until she finally dies of exhaustion! Fwahahaha! Revolting!
+[k]
+
+[messageOff]
+[wipeout downToUp 0.3 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[wt 0.1]
+[wipein upToDown 0.3 1]
+[wait wipe]
+[se ad74]
+[shake 0.05 10 10 0.7]
+[charaEffect H bit_talk_41]
+[charaTalk H]
+[charaFace H 2]
+[effect bit_talk_haboob_03]
+[charaFadein H 0.1 0,100]
+[charaMove H 0,0 0.2]
+[wait charaMove H]
+[charaMove H 0,50 0.2]
+[wait charaMove H]
+[charaShake H 0.2 0 3 0]
+
+＠Ishtar
+[f large][messageShake 0.05 5 5 0.7]WHAT DID YOU SAY?[effectStop bit_talk_haboob_03]!
+[k]
+
+[messageOff]
+[wipeout upToDown 0.3 1]
+[wait wipe]
+[charaFadeout H 0.1]
+[charaEffectStop H bit_talk_41]
+[wt 0.4]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wipein downToUp 0.3 1]
+[wait wipe]
+[wt 1.0]
+
+？1：This girl just destroyed the ceiling!
+？2：She came down from the sky, Your Majesty!
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Uruk Soldier
+Is that Ishtar...!? Retreat! Everyone, retreat![sr]She's gonna smite us!
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠High Priestess
+Emergency! Priests, prepare the special prayers![sr]You are permitted to use them on our patron goddess!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠Gilgamesh
+...I didn't think you'd head straight for the throne room. You're like a gossip-loving city girl.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠Mash
+(Senpai, His Majesty is making “Shoo, shoo!” motions with his hand and looking genuinely annoyed!)
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 0,50]
+
+
+＠Ishtar
+You're the one who's acting like a brat! I've had enough of you insulting me behind my back! Now I'm mad!
+[k]
+
+＠Ishtar
+I was planning on killing you slowly and elegantly to make you suffer, but I've changed my mind!
+[k]
+
+[charaFace H 2]
+＠Ishtar
+You're going to pay for all these years of making a mockery of a goddess! Now diiiiiie!
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[se ad39]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Uruk Soldier
+Ishtar is readying her heavenly bow![sr]Good luck, my king! We're retreating!
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Gilgamesh
+What, you're not going to watch? No need to be so humble. This is your chance to see the mythological sight of a nasty young goddess meeting her end!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Uruk Soldier
+No, it wouldn't be worth getting cursed for generations just for having watched! Good luck!
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[se ad59]
+[wt 1.0]
+[seStop ad59 0.5]
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 0,50]
+
+＠Ishtar
+Humph. Hilarious. Even your soldiers have abandoned you! That's what you get. Your bad deeds finally caught up with you! Your deeeeeeds!
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠Gilgamesh
+I see... When I hear that from you, it really makes me think.
+[k]
+
+＠Gilgamesh
+This cretin is calling ME the worst. Huh, perhaps I should look back on my life and reflect a bit.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 0,50]
+
+＠Ishtar
+Excuse you! I'm a damn goddess! Rethink your words!
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[messageOff]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[se bac19]
+[effect bit_talk_37]
+[wt 0.1]
+[charaMoveReturn C 2 0.4]
+[wait charaMove C]
+[wt 0.1]
+[se bac19]
+[effect bit_talk_37]
+[wt 0.05]
+[charaMoveReturn C 0 0.4]
+[wait charaMove C]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠Mash
+It's hard to believe that a king and goddess are exchanging insults like that. ...Huh? But Senpai, isn't that girl...
+[k]
+
+？1：Yup. It's that weird girl!
+？2：Yup. It's that girl with the unimpressive chest.
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 0,50]
+
+＠Ishtar
+Who just said that even more rude thing...!?[sr]...Wait, I know you, human...!
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Gilgamesh
+Oh? Have you run into this goddess before? Oh? Oh? And it seems she ran into trouble.
+[k]
+
+＠Gilgamesh
+Fwahahahahahahahahaha! Hilarious.[sr]Another tale of glory to add to Ishtar's myths, huh?
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+？1：Hello again.
+？2：I guess we ARE taking this to court...
+
+？！
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 0,50]
+＠Ishtar
+Oh, you're waving at me and saying hi like we're friends? You don't understand the situation at all, do you?♡
+[k]
+
+[charaFace H 8]
+＠Ishtar
+That means I can do this with no regrets.[sr]You've destroyed the last of my conscience.
+[k]
+
+＠Ishtar
+I don't want weird rumors going around, so I'll kill both you and Goldie Boy over there!
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Gilgamesh
+Hahahahahahahahahahahahaha! Bwahahahahahahahahaha!
+[k]
+
+＠Gilgamesh
+Excellent! Now this is getting fun! For a brief while, I shall permit you to fight alongside me!
+[k]
+
+＠Gilgamesh
+Let's go, Chaldeans! Time to slay a goddess!
+[k]
+
+＠Gilgamesh
+Let's teach this wanton, spoiled, daddy's girl of a goddess a lesson!
+[k]
+
+
+
+
+[messageOff]
+[charaShakeStop H]
+[bgmStop BGM_EVENT_3 0.5]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

@@ -1,0 +1,453 @@
+
+
+＄91-20-09-03-2-0
+
+[soundStopAll]
+[flashin once 0.1 1 FFFF0010 FFFF0010]
+[bgm BGM_EVENT_7 0.1]
+[charaSet A 99502600 1 Mash]
+[charaSet B 2009102 1 Orion]
+[charaSet C 2009201 1 Artemis]
+[charaSet D 5004001 1 "Nursery Rhyme"]
+
+[scene 31000]
+[fadein black 2.0]
+[wait fade]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+
+＠Orion
+Fwahahahahaha!
+[k]
+
+＠Orion
+I don't know how or where I escaped to, but looks like I ended up in a different world!
+[k]
+
+[charaFace B 0]
+＠Orion
+What should I do? It'll be scary if I get found now. Maybe I should hide out here for a couple of days until things cool down.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠???
+Oh? Oh my, oh my.[sr]A guest. It's a guest! And it's a bear!
+[k]
+
+＠???
+Oh, sir! Are you the one she's been waiting for?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Orion
+Not sure what you're talking about, but sure!
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠???
+I see. Then we need to have a wedding!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠Orion
+Uh, actually, wrong person![sr]I mean, wrong bear!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠???
+It's a wedding! The entire country is going to party![sr]The princess will surely be pleased!
+[k]
+
+＠???
+Her prince has come back!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaMove B 0 2.0]
+[charaShake B 0.1 0 10 2.0]
+
+＠Orion
+Time to be a sneaky bear...
+[k]
+
+[wait charaMove B]
+[charaShakeStop B]
+[charaTalk off]
+[charaFadein D 0.1 1]
+[charaMoveReturn D 0 0.7]
+[wt 0.35]
+[charaMove B -150,0 0.35]
+[wait charaMove D]
+
+＠???
+No! You can't run away![se ad7] (Grab)
+[k]
+
+[charaShake B 0.01 5 5 0]
+[charaFace B 2]
+＠Orion
+Gyaaah! Let go! You got the wrong bear!
+[k]
+
+＠Orion
+Nothing good can come of me posing as a prince in a fairytale place like this!
+[k]
+
+[charaShakeStop B]
+[charaFace D 2]
+＠???
+Don't be so naughty!
+[k]
+
+＠???
+A bad prince like you...needs to turn into a ■■■!
+[k]
+
+＠???
+This curse won't break until the princess kisses you!
+[k]
+
+[charaShake B 0.01 0 10 0.7]
+＠Orion
+...What the heck!?
+[k]
+
+[messageOff]
+[se bac65]
+[effect bit_talk_magic]
+[wt 0.7]
+[bgmStop BGM_EVENT_7 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaTalk on]
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[wt 2.0]
+[fadein black 1.5]
+[wait fade]
+[se ad55]
+[wt 0.7]
+[seStop ad55 0.7]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.4 1]
+[bgm BGM_EVENT_2 0.1]
+
+＠Artemis
+Here! I've got darling's scent!
+[k]
+
+？1：...I'm exhausted.
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaEffect A bit_talk_10]
+[charaFadein A 0.1 1]
+
+＠Mash
+You really are getting dragged around the world.
+[k]
+
+＠Mash
+Where could Orion have fled to so quickly?
+[k]
+
+？2：You mean...the scent of your prey?
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaEffect A bit_talk_10]
+[charaFadein A 0.1 1]
+
+
+＠Mash
+Master's burn doesn't have the usual sting...[sr]Maybe because jet lag has [&him:her] worn out?
+[k]
+
+？！
+
+[charaPut A 0,-10000]
+[charaEffectStop A bit_talk_10]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+
+＠Artemis
+What a cute town...
+[k]
+
+[charaFace C 1]
+＠Artemis
+After our golden anniversary celebration, I would love to live in a home like this!
+[k]
+
+＠Artemis
+Master, since you saved the world, I want you to find a nice property for me!
+[k]
+
+＠Artemis
+And I want you to live nearby, so we can be neighbors!
+[k]
+
+[charaFace C 3]
+＠Artemis
+You know, it's important to have good neighbors!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 3]
+[charaEffect A bit_talk_10]
+[charaFadein A 0.1 1]
+
+＠Mash
+Good neighbors...
+[k]
+
+[charaPut A 0,-10000]
+[charaEffectStop A bit_talk_10]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Artemis
+Now all I need is my darling...
+[k]
+
+[charaFadeout C 0.1]
+[bgmStop BGM_EVENT_2 0.7]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠???
+Oh? Oh my, oh my.[sr]There are so many visitors today!
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+[charaFace D 1]
+＠???
+I'm so happy. Adults and children both are welcome in the Land of Sweets!
+[k]
+
+＠???
+Why? Because I can just turn the adults into children, and then it's fine!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaEffect A bit_talk_10]
+[charaFadein A 0.1 1]
+
+
+＠Mash
+Nursery Rhyme...!
+[k]
+
+[charaPut A 0,-10000]
+[charaEffectStop A bit_talk_10]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Artemis
+Oh my, you are a cutie.[sr]But... I'm sorry, my heart belongs only to my darling!
+[k]
+
+＠Artemis
+But that strange fate of yours, make sure you treasure it, okay?
+[k]
+
+[charaFace C 1]
+＠Artemis
+Anyway, have you seen my darling?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Nursery Rhyme
+Darling...?
+[k]
+
+
+？1：The talking stuffed bear.
+？！
+[charaFace D 2]
+＠Nursery Rhyme
+Oh no... You can't! That prince bear is the princess's!
+[k]
+
+[charaFadeout D 0.1]
+[bgmStop BGM_EVENT_7 0.7]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Artemis
+...What did you just say?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠Nursery Rhyme
+The prince has finally come home to his sweet princess!
+[k]
+
+＠Nursery Rhyme
+And we're going to hold a grand wedding party to celebrate! You can't steal someone's true love in a fairytale!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠Artemis
+...Oh? Uh-huuuh...
+[k]
+
+[charaFace C 1]
+＠Artemis
+Hey Master. Sounds like my darling is at the princess's place.
+[k]
+
+[se ad138]
+[charaPut B 0,-100]
+[charaEffect B bit_talk_gouka]
+＠Artemis
+How strange. If he's not here, where could he be?
+[k]
+
+[se ad14]
+[flashin once 1.0 20000 FF000030 FF000000]
+[shake 0.01 0 2 0]
+[charaFadeout C 0.1]
+[charaPut B 0,-10000]
+[wt 0.1]
+[bgm BGM_EVENT_3 0.1]
+[charaTalk A]
+[charaFace A 14]
+[charaEffect A bit_talk_10]
+[charaFadein A 0.1 1]
+
+＠Mash
+M-Master...this is bad! This is very bad!
+[k]
+
+＠Mash
+I'm afraid the Land of Sweets is going to be set on fire, melting the chocolates and candies... Even the cakes will get charred!
+[k]
+
+？1：Calm down!
+？！
+
+[charaPut A 0,-10000]
+[charaEffectStop A bit_talk_10]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[charaPut B 0,-100]
+
+＠Artemis
+It's fine. I am calm.[sr]But I will never forgive Orion.
+[k]
+
+[charaFace C 2]
+＠Artemis
+A grand party with a princess...[sr]This isn't an affair... This is the real deal!
+[k]
+
+＠Artemis
+This was supposed to be a happy golden anniversary celebration...but to learn that he's in another serious relationship...! Orion, you dummy!
+[k]
+
+[charaFadeout C 0.1]
+[charaPut B 0,-10000]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠Nursery Rhyme
+Protect the Land of Sweets, everyone!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 14]
+[charaEffect A bit_talk_10]
+[charaFadein A 0.1 1]
+
+＠Mash
+I'm not sure if they're enemies...but let's ready for battle, Master!
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[seStop ad14 0.5]
+[wait fade]
+[soundStopAll]
+[end]

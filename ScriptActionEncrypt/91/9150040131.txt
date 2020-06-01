@@ -1,0 +1,106 @@
+＄91-50-04-01-3-1
+
+[soundStopAll]
+[bgm BGM_EVENT_6 0.1]
+[scene 11010]
+[charaSet A 8001000 1 Mash]
+[charaSet B 98003000 2 "Dr. Roman"]
+[charaSet C 5004000 1 "Nursery Rhyme"]
+[charaSet D 98002000 1 Fou]
+[charaSet E 5004002 1 "Nursery Rhyme?"]
+[charaSet F 5004002 1 "Nursery Rhyme"]
+[wipeFilter circleIn 0.4 0.4]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0 1]
+[fadein black 1]
+[wait fade]
+＠Mash
+...Enemy unit defeated.
+[k]
+
+[charaFadeout A 0.1]
+[charaTalk E]
+[charaFace C 0]
+[charaFadein C 0.1 2]
+[charaFace E 4]
+[charaFadein E 0.1 0]
+＠Nursery Rhyme?
+Hmph. Actually, I knew how this was going to end.[sr]If Alice isn't here[line 2]
+[k]
+
+＠Nursery Rhyme?
+I can just become Alice.[sr]That's the kind of dumb idea I'd get now.
+[k]
+
+[charaFace E 3]
+＠Nursery Rhyme?
+Listen, me.[sr]If you're going to choose Alice's form...
+[k]
+
+[effect bit_talk_06]
+[charaFace E 1]
+＠Nursery Rhyme?
+Never...let your...[sr]story have...
+[k]
+
+＠Nursery Rhyme?
+an unhappy ending...
+[k]
+
+[messageOff]
+[effectStop]
+[wait effect]
+[charaSpecialEffect E flashErasure 0 1]
+[wait charaSpecialEffect E]
+[charaSpecialEffect C flash 0 1]
+[wait charaSpecialEffect C]
+[charaFadeout C 0]
+[charaSet C 5004002 1 "Nursery Rhyme"]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0 2]
+[fadein white 1]
+[wait fade]
+＠Nursery Rhyme
+[line 4]Yeah.
+[k]
+
+[charaFace C 1]
+＠Nursery Rhyme
+I'll make it a happy ending.[sr]I'll do my best for Alice.
+[k]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+＠Fou
+Fooou!
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠Dr. Roman
+Okay, I guess we're done![sr]That weird space is closing, I think, so yeah!
+[k]
+
+[communicationCharaFace 1]
+＠Dr. Roman
+I'll use the Rayshift technology to get you back to[sr]Chaldea. Ready[line 2]go!
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[messageOff]
+[bgmStop BGM_EVENT_6 0.7]
+[wait effect bit_talk_06]
+[effect bit_talk_07_02]
+[se ad12]
+[wt 4]
+[fadeout white 1]
+[wait fade]
+[soundStopAll]
+[wipeOff]
+[end]

@@ -1,0 +1,197 @@
+
+
+
+＄91-20-06-01-3-0
+
+[soundStopAll]
+
+[charaSet A 2006001 1 David]
+[charaSet B 8001002 1 Mash]
+[charaSet C 98003003 1 "Dr. Roman"]
+[charaSet D 98002000 1 Fou]
+
+[bgm BGM_EVENT_5 0.1]
+[scene 28400]
+[fadein black 1.5]
+[wait fade]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+
+＠David
+I think it's about time we got to the boss.
+[k]
+
+＠David
+Thanks to you, this Singularity was corrected, so the land should have returned to its natural state.
+[k]
+
+＠David
+But somehow, an army of giants has invaded,[sr]come to destroy this blessed land.
+[k]
+
+＠David
+And when considering who must be leading them...
+[k]
+
+？1：Golyat?
+？2：What was it again?
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Mash
+...Golyat‎. Otherwise known as Goliath.[sr]The giant soldier who fought against the Israelites.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr. Roman
+The battle between David and Golyat is a legend written in the Book of Samuel, but you're currently in the 13th century. So, that means...
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠David
+He's probably not the real Golyat.[sr]If he was real, things would have been much worse.
+[k]
+
+＠David
+This is a reenactment of the legend.[sr]It must be symbolic in some way.
+[k]
+
+＠David
+And that's why I'm here. I'm here as the real,[sr]soon-to-be king of the unified Kingdom of Israel.
+[k]
+
+＠David
+Which means the Golyat we should soon meet will probably be close to the real[line 2]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.4]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.4]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[voice 700100_0_B100]
+[wt 2.5]
+[bgm BGM_EVENT_3 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠David
+...He's here![sr]See, it's the giant!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+＠Mash
+...Um, hold on.[sr]That's not really a giant...
+[k]
+
+＠Mash
+It's a giant ghost...and a demonic boar...and a dragon?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠David
+Yeah, well all three of them have AOE attacks...and you could make the case that each of them is a giant...
+[k]
+
+？1：Now is NOT the time for that!
+
+[charaPut D 0,0]
+[charaEffect D bit_talk_41]
+[charaFace A 2]
+＠David
+I expected that!
+[k]
+
+[charaPut D 0,-1000]
+[charaEffectStop D bit_talk_41]
+
+？2：That's all it takes be considered a giant?
+
+[charaFace A 1]
+＠David
+Yeah. Big things would do AOE attacks.[sr]Pretty much common sense in my world.
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠Dr. Roman
+Oh, so that's why this king specializes in having skills to protect his allies! I thought he had those skills to protect his sheep...
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠David
+Eh? They're all the same.[sr]I mean, if you guide them properly...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr. Roman
+Uwwwa[messageShake 0.01 5 5 0.7]aah, stop! Stop![sr]I don't want to hear another word!
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk D]
+[charaFadein D 0.1 1]
+＠Fou
+Fooou!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+＠Mash
+U-um, please command us, Master!
+[k]
+
+？1：Get in battle position, Mash!
+？！
+
+[charaFace B 7]
+＠Mash
+Roger that.[sr]Commencing battle!
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

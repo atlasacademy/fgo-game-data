@@ -1,0 +1,1390 @@
+
+
+
+＄01-00-07-04-1-0
+[soundStopAll]
+[charaSet A 8001002 1 Mash]
+[charaSet B 98106200 1 Merlin]
+[charaSet C 98002000 1 Fou]
+[charaSet D 3027000 1 Ana]
+[charaSet E 98107600 1 Siduri]
+[charaSet F 5009001 1 "Da Vinci"]
+[charaSet G 98003000 1 "Dr. Roman"]
+[charaSet H 4014000 1 Ushiwakamaru]
+
+
+
+[bgm BGM_EVENT_2 0.1]
+[scene 32900]
+[wt 0.7]
+[cameraMove 0.1 50,0 1.2]
+[wait camera]
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.2]
+[cameraMove 1.5 -20,0 1.2]
+[wait camera]
+[wt 0.2]
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+[cameraHome 0.3]
+[wait camera]
+[wt 0.2]
+[scene 33200]
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+
+
+＠Siduri
+This is where you'll be staying.[sr]It's old, but it should be sufficient for your needs.
+[k]
+
+＠Siduri
+It was originally used as a tavern. The first floor is a shared space, and the rooms are on the second and third floors.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠Ana
+...
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Mash
+I didn't think you'd lend us a whole building![sr]Thank you, Siduri!
+[k]
+
+＠Mash
+Isn't this great, Master? Three days after our Rayshift and we already have a home to call our own!
+[k]
+
+
+？1：Yeah... But we've gotta work to earn rent...
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Siduri
+Don't worry. We don't charge rent.[sr]We'll also provide you with the basic essentials.
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+？2：My dream home has a white picket fence and pool.
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Merlin
+Oh, you've got good taste! That's my dream, too![sr]A happy home just like that!
+[k]
+
+[charaFace B 1]
+＠Merlin
+But by the time I had more than 50 of those homes, they definitely weren't happy anymore!
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFadein C 0.1 1]
+
+＠Fou
+Fou, dofooou!
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+？！
+
+[se ad13]
+[charaTalk G]
+[communicationChara 98003003 1 5 0 0]
+[wt 0.3]
+
+＠Dr. Roman
+And it's also the ideal place to set up a summoning circle. I imagine this is going to be your base this time,[sr][%1].
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+
+＠Mash
+It's the Chaldean Embassy![sr]We can all live here: Senpai, Merlin, Ana, Fou...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Merlin
+A hideout for the four of us, including Lady Mash, plus one beast.
+[k]
+
+
+＠Merlin
+Hmm. I have a room in the ziggurat, but this place looks more fun.
+[k]
+
+＠Merlin
+Let's go take a look at the second floor. This may be a short stay, but it's important to choose rooms.
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[se ad60]
+[seVolume ad60 0 0.4]
+[wt 1.5]
+[seStop ad60 1.0]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠Ana
+...
+[k]
+
+？1：Why don't you go look too, Ana?
+
+[charaFace D 0]
+＠Ana
+...No, it's fine... I'm fine anywhere as long as I have a place to sleep...
+[k]
+
+[charaFace D 3]
+＠Ana
+...All right. It's unsettling to be stared at, so I'll go look.
+[k]
+
+[charaFace D 0]
+＠Ana
+...I need to watch over Merlin anyway.[sr]He has too many secrets...
+[k]
+
+
+
+？2：You don't look happy.
+
+[charaFace D 4]
+＠Ana
+...That's not it. It's just frustrating that I'm getting further away from my goal.
+[k]
+
+＠Ana
+...I'll go check on Merlin. I need to monitor him to make sure he doesn't do anything funny.
+[k]
+
+
+？！
+[messageOff]
+[charaFadeout D 0.4]
+[se ad60]
+[seVolume ad60 0 0.4]
+[wt 1.5]
+[seStop ad60 1.0]
+[wt 0.1]
+
+[charaTalk G]
+[communicationCharaLoop 98003003 1 5 0 0]
+
+＠Dr. Roman
+So they both went upstairs, huh?[sr]Let's get our work done, too.
+[k]
+
+＠Dr. Roman
+Mash, get the circle ready.[sr]It'll make navigation a little easier, too.
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Mash
+Right. Deploying Round Table.[sr]Anchoring Leyline coordinates!
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_2 0.5]
+[wait fade]
+[charaFadeout A 0.1]
+[wt 0.5]
+[scene 10500 0]
+[fadein black 0.5]
+[wait fade]
+[se ad13]
+[communicationChara 98111500 1 5 0 0]
+[wt 0.3]
+[bgm BGM_EVENT_1 0.1]
+
+＠Da Vinci
+Okay, is that my cue?
+[k]
+
+[communicationCharaFace 1]
+＠Da Vinci
+It's time for your circle setup mini-lecture.[sr]In this episode of magecraft trivia, we'll cover...
+[k]
+
+＠Da Vinci
+The Age of Gods and Divine Spirits. Since you're in the B.C. period known as the end of the Age of Gods, it's the perfect subject.
+[k]
+
+[communicationCharaFace 0]
+＠Da Vinci
+I told you about Divine Spirits before, so this time, let's talk about the Age of Gods.
+[k]
+
+＠Da Vinci
+Mages call the magical energy that fills the atmosphere “mana.” The further back in time you go, the more of it there is.
+[k]
+
+＠Da Vinci
+Think of it as the magical energy of the Earth itself. It was not unlike an infinite supply of gasoline for humans.
+[k]
+
+＠Da Vinci
+On the other hand, the individual magical energy possessed by a human or Heroic Spirit is called “od.”
+[k]
+
+＠Da Vinci
+This magical energy comes from special nerve tissue called a magical circuit. Remember, though: The difference in scale between od in a human and the earth's mana is tremendous.
+[k]
+
+[communicationCharaFace 4]
+＠Da Vinci
+Mana is a vast reservoir of energy, and od is just a tiny little drop.
+[k]
+
+＠Da Vinci
+And since the start of the A.D. era, the amount of mana has been steadily decreasing.
+[k]
+
+[communicationCharaFace 0]
+＠Da Vinci
+As a result, in the 21st century, mages practice their Mystics using od alone.
+[k]
+
+[communicationCharaFace 1]
+＠Da Vinci
+We'll skip over why there's less mana for now. It's got to do with the Isle of Britain, so I'm sure it'll come up eventually.
+[k]
+
+＠Da Vinci
+Anyway, in the Age of Gods, mana was everywhere.[sr]And there wasn't just more of it; it was more potent, too.
+[k]
+
+＠Da Vinci
+Mana in the A.D. era is called Ether, the Fifth Imaginary Element. It's artificial magical energy, you see.
+[k]
+
+＠Da Vinci
+Before the A.D. era, human civilization was still in development, and magical energy was called something else:
+[k]
+
+[communicationCharaFace 5]
+＠Da Vinci
+True Ether. The power that gave birth to planets and formed the stars. The True Fifth Element.
+[k]
+
+＠Da Vinci
+This True Ether is the root that forms the gods.
+[k]
+
+[communicationCharaFace 0]
+＠Da Vinci
+It wasn't humans who ruled this era. It was the gods.[sr]Or, you could call them “nature” or “concepts” if you like.
+[k]
+
+＠Da Vinci
+Gods in the sky. Gods on the earth. Gods in the sea. Love was a god, hate was a god. Death and battle also had gods.
+[k]
+
+[communicationCharaFace 4]
+＠Da Vinci
+The laws of nature were among the many Authorities wielded by the gods.
+[k]
+
+＠Da Vinci
+The world belonged to them. You could even say the gods formed many aspects of this world.
+[k]
+
+＠Da Vinci
+There are differing opinions as to whether the gods spoken of in legends, faiths, and religions in the modern world are the same beings...
+[k]
+
+[communicationCharaFace 0]
+＠Da Vinci
+But modern mages, at least, believe that many legends are interpretations of things that took place during the Age of Gods.
+[k]
+
+＠Da Vinci
+The gods truly existed. However...
+[k]
+
+[communicationCharaFace 4]
+＠Da Vinci
+With the arrival of the Age of Man, they vanished.
+[k]
+
+[communicationCharaFace 0]
+＠Da Vinci
+These disappearances came in three stages: decline, parting, and opportunity.
+[k]
+
+＠Da Vinci
+The “opportunity” phase took place around the 7th century B.C.
+[k]
+
+[communicationCharaFace 4]
+＠Da Vinci
+A great disaster around 14,000 years ago supposedly caused prehistoric mythological civilizations to weaken, hence the “decline” phase.
+[k]
+
+[communicationCharaFace 0]
+＠Da Vinci
+You're in 2600 B.C., the “parting” phase at the end of the Age of Gods, when gods and humans went their separate ways.
+[k]
+
+＠Da Vinci
+Mesopotamia is no exception. As it happens, the Mesopotamian gods came up with their own way...
+[k]
+
+＠Da Vinci
+...of trying to continue the Age of Gods, but a single king ruined their plans.
+[k]
+
+[communicationCharaFace 4]
+＠Da Vinci
+A king created to bind man and the gods together. Part-man, part-god. The man they hoped would be the “Wedge of the Heavens.”
+[k]
+
+＠Da Vinci
+Gilgamesh, the King of Heroes.
+[k]
+
+[communicationCharaFace 5]
+＠Da Vinci
+But instead, he chose a path opposite to the one the gods had laid out for him. He chose to distance himself from the gods.
+[k]
+
+[communicationCharaFace 0]
+＠Da Vinci
+Gilgamesh's rebellion caused the gods of Mesopotamia to gradually lose their power, and in time they vanished from the surface of the earth.
+[k]
+
+＠Da Vinci
+Even in this era, the gods are gone.[sr]They've fulfilled their role and vanished.
+[k]
+
+＠Da Vinci
+The present theory is that they exist as hollow Divine Spirits on a higher plane, watching over the world.
+[k]
+
+＠Da Vinci
+The true gods have vanished from this world, leaving behind only shadows.
+[k]
+
+＠Da Vinci
+In a thousand years, those shadows will be gone, replaced in the minds of humans only by legends.
+[k]
+
+[communicationCharaFace 1]
+＠Da Vinci
+That's why I thought you wouldn't run into any living gods. I was shocked to see you'd found an alliance of goddesses.
+[k]
+
+＠Da Vinci
+From the data I just saw, Ishtar's Spirit Origin was extremely close to the real thing.
+[k]
+
+[communicationCharaFace 4]
+＠Da Vinci
+A god's Authority is a Mystic far beyond magecraft.[sr]You could call it a manifestation of omnipotence.
+[k]
+
+[communicationCharaFace 0]
+＠Da Vinci
+We're not sure who your true foe is in that era, but it's clear that the goddesses aren't on your side.
+[k]
+
+[communicationCharaFace 5]
+＠Da Vinci
+Be careful, [%1].
+[k]
+
+＠Da Vinci
+I know I'm wasting my time saying this, but don't do anything too crazy, okay?
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+[bgmStop BGM_EVENT_1 0.5]
+[communicationCharaClear]
+[wait communicationChara]
+[wt 0.4]
+[scene 10500 0]
+[fadein black 0.5]
+[wait fade]
+[se ad29]
+[flashin once 0.7 0.5 FFFFFFBF 00000000]
+[wait flash]
+[wt 1.5]
+[fadeout black 0.5]
+[wait fade]
+[charaSet C 3006001 1 "Benkei 3"]
+[wt 2.0]
+[scene 33202]
+
+[fadein black 1]
+[wait fade]
+[bgm BGM_EVENT_7 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+
+＠Siduri
+Did everyone get some ale? [%1] and Mash are minors, so they can have fruit water.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠Ana
+...I'm sorry, I'd prefer water too... Ale is so bitter...
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Siduri
+Oh, how thoughtless of me.[sr]I heard you were a Servant, so I didn't think about it.
+[k]
+
+＠Siduri
+How about this milk instead?[sr]It's got honey in it, so it's sweet.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠Ana
+...I don't like sweet things either, but...[sr]Okay.[charaMoveReturn D 0,-5 0.4] Thank you.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Siduri
+Okay everyone... I'd like to have a quick toast to celebrate [%1]'s new job with the Uruks!
+[k]
+
+
+＠Siduri
+Ready, everyone? ...Cheers![sr]([se ad217]Glug glug glug)
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠Merlin
+Cheers! ([se ad217]Glug[charaMoveReturn B 0,-10 0.4]glug glug[charaMoveReturn B 0,-10 0.4]) Wow, that's good stuff! Especially after half a day of cleaning!
+[k]
+
+＠Merlin
+Hard work is the best way to make booze taste good![sr]I live for this kind of thing!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠Ana
+...This is delicious... Ah... I don't like sweet stuff...
+[k]
+
+＠Ana
+...And Merlin took the corner room.[sr]It's not fair... If I get a chance, I think I'll murder him...
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Mash
+Cheers! Senpai, this fish is very good!
+[k]
+
+＠Mash
+They say it was caught in the river, but it doesn't taste muddy... In fact, it's quite firm[line 3]
+[k]
+
+＠Mash
+Oh, this lamb is nice and juicy, too!
+[k]
+
+＠Mash
+How did they flavor it without spices? So mysterious![sr]My curiosity may never be satisfied!
+[k]
+
+？1：You're enjoying yourself, Mash.
+
+？！
+
+[charaFace A 13]
+＠Mash
+Yes! And it's all because...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[messageOff]
+[wipeout rightToLeft 0.7 1]
+[wait wipe]
+[charaSet F 98106700 1 Benkei]
+[charaSet G 98106600 1 "Benkei 2"]
+[wt 0.1]
+[wipein leftToRight 0.7 1]
+[wait wipe]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+
+＠Ushiwakamaru
+Fate must have brought us together again,[sr]Lord [%1]. Here, [charaMoveReturn H 0,-5 0.2]have a drink.
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk off]
+[charaDepth F 0]
+[charaDepth G 1]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+
+＠Benkei
+Ushiwakamaru, you mustn't go pouring ale for[sr][%1].
+[k]
+
+＠Benkei
+And I think you should limit your own drinking as well. Just like your sense of taste, you cannot handle liquor very well.
+[k]
+
+＠Benkei
+Do not tell me you've forgotten how you embarrassed yourself on the bridge in Uruk yesterday. Hah hah hah!
+[k]
+
+＠Benkei
+You didn't quite jump over eight ships. More like six?[sr]Or maybe five?
+[k]
+
+＠Benkei
+You did a somersault into a big jump, and then landed so hard you split the bridge in two. Hah hah hah! That was crazy! Hah hah hah!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠Ushiwakamaru
+Fine. Sit down, turn away from me, and stare at your feet, Benkei. I've heard your warning.
+[k]
+
+＠Ushiwakamaru
+By the way, you never seem to stop talking.[sr]Is it because you sense your impending death?
+[k]
+
+[charaFace H 0]
+＠Ushiwakamaru
+“I may die tonight, and so I should say everything that's on my mind.” Is that your logic?
+[k]
+
+[charaFace H 1]
+＠Ushiwakamaru
+Perfect. I shall help you with your beheading.
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk off]
+[charaTalk depthOff]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaFadein G 0.1 1]
+
+[charaPut A 0,100]
+[charaEffect A bit_bolg_02y]
+[wt 0.1]
+[charaMove F 0,-170 0.1]
+[wait charaMove]
+[se ad171]
+[wt 1.0]
+[charaMove F 0,0 0.7]
+[wait charaMove F]
+[wt 0.7]
+[charaFadein F 0.1 1]
+[charaFace F 2]
+＠Benkei
+And then I pop my head down at the last second![sr]It's a party trick I like to call “Whack-a-Benkei!”
+[k]
+
+[charaFace F 1]
+＠Benkei
+Hahahah! Did you like that, Lord Yoshitsune?[sr]The trick is to pop your head down like a turtle! A turtle!
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠Ushiwakamaru
+Why you... You have the most bizarre talents![sr]But it was funny, so I suppose I shall forgive you!
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+[charaTalk on]
+[charaTalk depthOn]
+[charaSet G 98003000 1 "Dr. Roman"]
+[charaSet F 3006001 1 Benkei]
+[charaFadeout H 0.1]
+[wt 0.1]
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Mash
+Yes. As you can see, it's because I've met some reliable allies.
+[k]
+
+？1：Well, I guess you can call them reliable.
+？2：Are you sure they're not “laughable”?
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk G]
+[communicationCharaLoop 98003003 1 5 0 3]
+
+＠Dr. Roman
+Yup. I never imagined King Gilgamesh would summon other Servants.
+[k]
+
+
+[communicationCharaFace 0]
+＠Dr. Roman
+But it makes sense. That explains how he's holding back the Demonic Front.
+[k]
+
+＠Dr. Roman
+Rider Ushiwakamaru and Lancer Musashibou Benkei defeat the Demonic Beasts around Uruk.
+[k]
+
+＠Dr. Roman
+And in command of the Demonic Front is none other than[line 3]
+[k]
+
+[messageOff]
+[communicationCharaClear]
+[wait communicationChara]
+[wipeout rightToLeft 0.7 1]
+[wait wipe]
+[charaSet C 3009000 1 Leonidas]
+[wt 0.1]
+[wipein leftToRight 0.7 1]
+[wait wipe]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+
+＠Leonidas
+Siduri, I require only nutrients! Alcohol should not be enjoyed until after we've wiped out the Demonic Beasts!
+[k]
+
+＠Leonidas
+My heart is still at the front lines![sr]Just like the Uruks who are fighting day after day!
+[k]
+
+＠Leonidas
+But I do need to sleep. The body requires energy,
+[k]
+
+＠Leonidas
+but the brain requires sugar and sleep. During the battle, we soldiers are a part of a massive calculation.
+[k]
+
+＠Leonidas
+The load that combat places on the brain is equal to four days' worth of doing your taxes. Warriors are mathematicians.
+[k]
+
+＠Leonidas
+Based on experience, two hours of battle requires a 15-minute nap! REQUIRES IT!
+[k]
+
+＠Leonidas
+And yet... the younger soldiers tell me that I'm the only one who can immediately fall asleep amongst a horde of Demonic Beasts and also get up right away.
+[k]
+
+＠Leonidas
+If you're tired, you sleep! And if you think, “oh crap,” you instantly wake and jam your spear into a Demonic Beast's maw!
+[k]
+
+＠Leonidas
+Survival is the first thing you learn in Sparta... But these Uruk soldiers push things to the next level!
+[k]
+
+＠Leonidas
+If you fight until you die, you can't repel the enemy army. It's a waste of a young life.
+[k]
+
+＠Leonidas
+Listen. If you want a motto, the motto of a defender should be, “Don't die until the fight's over!” That's what I think!
+[k]
+
+＠Leonidas
+Uweh... [charaMoveReturn C 0,-10 0.4]Hic![sr]([se ad217]Glug[charaMoveReturn C 0,-10 0.4] glug glug)
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Siduri
+What!? Who poured ale into General Leonidas's cup!?
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 1]
+
+＠Ushiwakamaru
+Who knows? Knowing him, he probably poured it for himself accidentally.
+[k]
+
+[charaFace H 1]
+＠Ushiwakamaru
+It's good medicine for him, if you ask me.[sr]He hasn't rested as much as he says he has.
+[k]
+
+＠Ushiwakamaru
+The Demonic Beasts are calmer at night.[sr]Let's let him relax for the evening.
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Siduri
+I-I see... Maybe you're right... If you say so, Lord Ushiwakamaru, then, well...
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+[charaFadeout E 0.1]
+[wt 0.2]
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+[charaTalk G]
+[communicationCharaLoop 98003003 1 5 0 3]
+
+
+＠Dr. Roman
+Hmm. That wasn't a long conversation, but it told us what we need to know about the power balance between them.
+[k]
+
+[communicationCharaFace 0]
+＠Dr. Roman
+Has Ushiwakamaru been leading the Heroic Spirits up until now? Merlin probably tried to avoid getting assigned to such a cumbersome job.
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[bgmStop BGM_EVENT_7 0.3]
+[wt 0.4]
+[bgm BGM_EVENT_2 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠Ushiwakamaru
+Roman, was it? It's true that I'm the representative of the Heroic Spirits right now.
+[k]
+
+[charaFace H 4]
+＠Ushiwakamaru
+But we were summoned here by the king of this land.[sr]We know naught of your Chaldea.
+[k]
+
+＠Ushiwakamaru
+Perhaps there's another me there among you, but please don't assume I'm the same person.
+[k]
+
+[charaFace H 5]
+＠Ushiwakamaru
+Benkei, Leonidas, and I all made our contract with King Gilgamesh.
+[k]
+
+＠Ushiwakamaru
+If ever we're forced to choose between Lord [%1] and the king, we'll choose the king without hesitation.
+[k]
+
+＠Ushiwakamaru
+However...
+[k]
+
+[charaFace H 1]
+＠Ushiwakamaru
+However, our goal of defending this era and this city is the same as yours.
+[k]
+
+＠Ushiwakamaru
+[%1], humanity's last Master.[sr]You have come from a distant world to this troubled land.
+[k]
+
+＠Ushiwakamaru
+What Heroic Spirit could fail to respect you for that?
+[k]
+
+＠Ushiwakamaru
+We shall help you in every way possible to the best of our abilities.
+[k]
+
+？1：...Thank you, Ushiwakamaru.
+
+[charaFace H 0]
+＠Ushiwakamaru
+No need to thank me. It is my duty as a Heroic Spirit.
+[k]
+
+？2：...Nice to meet you, Ushiwakamaru.
+
+[charaFace H 3]
+＠Ushiwakamaru
+...Nice to meet me, huh?[sr]So I guess there is no other me in Chaldea.
+[k]
+
+[charaFace H 4]
+＠Ushiwakamaru
+...That is quite a shame.[sr]Am I not that well known in your era?
+[k]
+
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk G]
+[communicationCharaLoop 98003003 1 5 0 0]
+
+
+＠Dr. Roman
+...Good, good. Our circumstances may be different, but we're all working toward the same goal.
+[k]
+
+＠Dr. Roman
+But, well, can I ask you something?[sr]It was King Gilgamesh who summoned you, right?
+[k]
+
+[bgmStop BGM_EVENT_2 0.7]
+＠Dr. Roman
+Then is he the only one who's providing you with magical energy right now?
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[bgm BGM_EVENT_11 0.1]
+
+＠Benkei
+Indeed. After Merlin, King Gilgamesh summoned seven of us Heroic Spirits to this land.
+[k]
+
+＠Benkei
+...Now there are only four of us, but we'll talk about that another time.
+[k]
+
+＠Benkei
+During the summoning, it was King Gilgamesh's magical energy that formed our Spirit Origins.
+[k]
+
+＠Benkei
+But now we maintain our own sources of energy. We eat and sleep like humans, and generate magical energy all on our own.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk G]
+[communicationCharaLoop 98003003 1 5 0 5]
+
+
+＠Dr. Roman
+...So you've incarnated, huh? Hmm, that explains it.
+[k]
+
+＠Dr. Roman
+Not even the king would be able to simultaneously maintain the Spirit Origins of four Servants at once.
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+
+＠Merlin
+Yes, he really went a bit crazy.[sr]I should never have told him about the Holy Grail War.
+[k]
+
+＠Merlin
+Just supplying me with magical energy almost drained him dry. But then he says, “I'll summon seven more!”
+[k]
+
+＠Merlin
+The reason King Gilgamesh isn't on the front lines fighting is partly because he still hasn't recovered all his magical energy.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Leonidas
+So it seems. Before we were summoned, he said he didn't know who the enemy was.
+[k]
+
+＠Leonidas
+The northern cities were wiped out by the Demonic Beasts, disasters occurred all over the land, and Kutha vanished overnight.
+[k]
+
+＠Leonidas
+That's when King Gilgamesh said he “saw” the future. He saw a future where Uruk was destroyed and swallowed up into an abyss.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Mash
+That must be King Gilgamesh's clairvoyance. That's why he took the risk of summoning a Heroic Spirit...
+[k]
+
+＠Mash
+As a king who had to deal with such a disaster, he required multiple Heroic Spirits, correct?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFadein A 0.1 2]
+
+＠Leonidas
+That's right. Excellent analysis, Mash Kyrielight...[sr]May I call you Mash?
+[k]
+
+[charaFace A 3]
+＠Mash
+Y-yes. I'm Mash Kyrielight.[sr]I'm just a Demi-Servant, but nice to meet you!
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFadein C 0.1 1]
+
+＠Leonidas
+The pleasure is mine. Anyway, back to the timeline.
+[k]
+
+＠Leonidas
+After this era became a Singularity, and humanity was incinerated, King Gilgamesh summoned us.
+[k]
+
+＠Leonidas
+Six months later, Uruk was reborn into a fortress city.
+[k]
+
+＠Leonidas
+We grow crops, train soldiers, and build structures within the fortress...
+[k]
+
+＠Leonidas
+A monetary system was established purely as an emergency measure for the war, all while we struggle against this unknown enemy.
+[k]
+
+？1：...I see...
+？2：That's pretty amazing...
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Mash
+Incredible... People fought in America too, but that was only after their nation had already been destroyed.
+[k]
+
+＠Mash
+Uruk is the opposite. People are fighting right now to prevent the destruction of their world in the first place.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Merlin
+Well, it was a matter of timing.
+[k]
+
+＠Merlin
+If what happened in America had come a few years later, they would've fought the Celts head-on.
+[k]
+
+＠Merlin
+What was lucky for Uruk was that King Gilgamesh had come back “matured.”
+[k]
+
+＠Merlin
+After he finished his search for immortality, he probably underwent a bit of a mental change.
+[k]
+
+？1：Right. Speaking of his search for immortality...
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠Mash
+It was his friend Enkidu who started it all, right?[sr]So much happened that I forgot...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？2：Who was that Enkidu?
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Siduri
+...I see. So you met that Enkidu, then?
+[k]
+
+＠Siduri
+King Gilgamesh's friend, a hero equal in stature... and now humanity's enemy.
+[k]
+
+＠Siduri
+...But we just can't believe that's truly Enkidu.[sr]The Uruks knew the old Enkidu.
+[k]
+
+＠Siduri
+Enkidu was the one who restrained King Gilgamesh, the king who was fated to be alone until death, and taught him the joys of friendship.
+[k]
+
+＠Siduri
+Though they insisted they were simply a tool, to me, Enkidu seemed like nothing less than a very kind person.
+[k]
+
+＠Siduri
+...The real Enkidu would never wear such a cruel smile on their face.
+[k]
+
+＠Siduri
+That THING that threatens Sumer now must be a fake only pretending to be Enkidu.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk G]
+[communicationCharaLoop 98003003 1 5 0 5]
+
+＠Dr. Roman
+...A fake, huh? Then Enkidu is dead, like the legend says?
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+
+＠Siduri
+...Yes. The king watched as Enkidu died, and buried his friend in the underworld.
+[k]
+
+＠Siduri
+...Thinking back, there was nothing so beautiful or sad as Enkidu.
+[k]
+
+＠Siduri
+They may have been a puppet made by the gods, but they gained a heart... Granted, Enkidu was shattered along with it, but...
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠Mash
+Enkidu gained a heart, but was shattered along with it... That's...
+[k]
+
+[charaFace A 0]
+＠Mash
+...No, for now, let's talk about King Gilgamesh.
+[k]
+
+＠Mash
+Does the king know that...
+[k]
+
+＠Mash
+...That a fake version of his lost friend has been made into his enemy?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Merlin
+Yes, of course he does. Though, the king doesn't leave the ziggurat, so he's never met them personally.
+[k]
+
+[charaFace B 4]
+＠Merlin
+But his response was unremarkable.
+[k]
+
+[charaFace B 0]
+＠Merlin
+“Someone calling themselves Enkidu appeared? I see. Well, I suppose that's possible.”
+[k]
+
+[charaFace B 4]
+＠Merlin
+That's all he said. He didn't get angry, or sad...
+[k]
+
+＠Merlin
+What kind of reaction is that? I've lived a long time in the world of humans, but I can't understand it.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+
+＠Siduri
+...Yes. It didn't feel like he was trying to keep us from worrying, either.
+[k]
+
+[charaFadeout E 0.1]
+[bgmStop BGM_EVENT_11 0.3]
+[wt 0.4]
+[bgm BGM_EVENT_2 0.1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠Merlin
+Hahahaha! The world will come to an end before he cares about someone else's feelings.
+[k]
+
+[charaFace B 0]
+＠Merlin
+Well, no matter what King Gilgamesh is thinking, I'm glad he's staying calm.
+[k]
+
+＠Merlin
+The only reason Uruk is still standing at all is because of how hard the king is working.
+[k]
+
+＠Merlin
+If he ever abandoned the role of the wise king and became the King of Heroes again, Uruk would be doomed. I want to avoid that, too.
+[k]
+
+[charaFace B 3]
+＠Merlin
+After all, if Uruk fell, I wouldn't be able to drink its ale, or visit its brothels.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaSet C 98002000 1 Fou]
+[charaTalk C]
+[charaFadein C 0.1 1]
+
+＠Fou
+Fou, foou!
+[k]
+
+？1：... (Nods sagely)
+？2：...But we have to find out who the fake is.
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Merlin
+Yes, I'm not telling you to forget it.[sr]We'll definitely find out who this false Enkidu is.
+[k]
+
+＠Merlin
+But that can be done tomorrow.[sr]You haven't rested since your Rayshift, right?
+[k]
+
+＠Merlin
+Get some rest tonight.[sr]We can talk and begin your new lives tomorrow.
+[k]
+
+＠Merlin
+I have something to look into, so I'll be gone for a while. But while I'm away you can get help from Siduri and the other Servants.
+[k]
+
+＠Merlin
+Look, Ana fell asleep too. Take care of her as well.
+[k]
+
+＠Merlin
+She told you she doesn't like humans, but she doesn't hate them either.
+[k]
+
+＠Merlin
+Actually, she's scared of them, so she's trying to keep her distance. You know what that means, right?
+[k]
+
+？1：Scared of humans...?
+？2：...Understood. Leave it to me.
+
+？！
+
+[charaFace B 3]
+＠Merlin
+All right. I'll be going, then.[sr]One of my favorite girls is waiting for me.
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[se ad60]
+[seVolume ad60 0 0.4]
+[wt 1.5]
+[seStop ad60 1.0]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠Mash
+Merlin's right, Senpai. You don't look so good.[sr]Your vitals are dropping too.
+[k]
+
+＠Mash
+It may be rude, but let's leave Ushiwakamaru and the others and get some rest.
+[k]
+
+？1：You're right. Good night, Mash.
+
+？！
+
+＠Mash
+Yes. Good night, Master. I'll see you tomorrow, here in the lobby of the Chaldean Embassy!
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

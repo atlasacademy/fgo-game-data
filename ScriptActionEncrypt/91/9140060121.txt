@@ -1,0 +1,127 @@
+＄91-40-06-01-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[scene 20301]
+[charaSet A 8001000 0 Mash]
+[charaSet B 98003000 2 "Dr. Roman"]
+[charaSet C 98002000 2 Fou]
+[charaSet D 4006001 2 Georgios]
+[charaSet E 98013100 1 "Red Dragon"]
+[charaFace D 2]
+[charaFadein D 0 1]
+[fadein black 1]
+[wait fade]
+＠Georgios
+This is the end, take this![sr]Ascalon!
+[k]
+
+[charaFadeout D 0.1]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[se ad383]
+[effect bit_talk_12 1]
+[wt 0.5]
+[flashin once 0.6 0.4 FFFFFF80 00000000]
+[wt 1]
+[se ad18]
+[messageOff]
+[charaSpecialEffect E darkEnemyErasure 1 3]
+[wait charaSpecialEffect E]
+[charaTalk A]
+[charaFadein D 0.1 0]
+[charaFace A 15]
+[charaFadein A 0.1 2]
+＠Mash
+D-Did we get it...
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠Dr. Roman
+Man, that was one tough enemy, huh?
+[k]
+
+[se ad14]
+[messageOff]
+[shake 0.1 0 10 0.5]
+[wt 0.5]
+[shakeStop]
+[shake 0.1 0 2 0]
+＠Dr. Roman
+Oh, now that the dragon's gone, the distortion is starting to close.
+[k]
+
+[communicationCharaFace 3]
+＠Dr. Roman
+I'll bring you guys back, get ready.[sr]Setting coordinates now...
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[se ad51]
+[wait se ad51]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠Georgios
+[line 2]Nameless dragon of another world, rest in peace.
+[k]
+
+？1：Teacher...
+
+？2：Aren't dragons sinners?
+
+？！
+
+[charaFace D 0]
+＠Georgios
+Even if dragons are sinners born to be destroyed, that doesn't mean they deserve to be destroyed.
+[k]
+
+＠Georgios
+[line 2]Sin and punishment should be separate things.
+[k]
+
+[charaFadeout D 0.1]
+[charaTalk A]
+[charaFadein D 0.1 0]
+[charaFace A 2]
+[charaFadein A 0.1 2]
+＠Mash
+Senpai, we need to go or the distortion will close...
+[k]
+
+？1：Let's go!
+
+？2：Let's go, Teacher.
+
+？！
+
+[charaFace D 1]
+＠Georgios
+Yes...[sr]Oh, let me get one last photo...
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr. Roman
+Forget about that!
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Fou
+Fooou.
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[shakeStop]
+[soundStopAll]
+[end]

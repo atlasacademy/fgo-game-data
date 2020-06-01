@@ -1,0 +1,105 @@
+＄91-10-13-01-3-1
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 20400]
+[charaSet A 8001000 2 Mash]
+[charaSet B 98003003 2 "Dr. Roman"]
+[charaSet C 98002000 2 Fou]
+[charaSet D 1013001 1 Caesar]
+[charaSet E 1013001 1 ???]
+[charaShadow E true]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[fadein black 1]
+[wait fade]
+＠Caesar
+...Begone my foolish past.
+[k]
+
+[messageOff]
+[charaSpecialEffect E darkEnemyErasure 1 3]
+[wt 1]
+[se ba5]
+[wt 2]
+[wait charaSpecialEffect E darkEnemyErasure]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[wt 1]
+[charaFadeout D 0.1]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+＠Mash
+Confirming zero response.[sr]Battle's over, Senpai.
+[k]
+
+＠Fou
+Fou...
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠Caesar
+Whew, I'm tired.[sr]Indeed, I am not fit to fight at the front line.
+[k]
+
+＠Caesar
+Let us hurry back to this Chaldea and rest.[sr]I won't move one step further.
+[k]
+
+？1：...
+
+？2：Thanks for the hard work.
+
+？！
+
+[charaFadeout D 0.1]
+[charaFace A 13]
+[charaFadein A 0.1 2]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+＠Mash
+Thank you for your hard work.[sr]Senpai, Doctor, please start the return process to Chaldea.
+[k]
+
+＠Fou
+Fou!
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠Dr. Roman
+Yes, yes, return[line 2] Hmm?[sr]Looks like Caesar's magical capacity has increased?
+[k]
+
+＠Dr. Roman
+After defeating his own shadow, he absorbed it as his own magical energy I guess?
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Fou
+Fou, Fou!
+[k]
+
+[charaFadeout C 0.1]
+[communicationCharaLoop 98003003 1 5 0 4]
+＠Dr. Roman
+Yes, yes, the return process.[sr]You don't have to rush me so much...
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_2 0.4]
+[wait fade]
+[communicationCharaClear]
+[wait communicationChara]
+[soundStopAll]
+[end]

@@ -1,0 +1,217 @@
+
+
+＄03-00-00-06-1-1
+
+[soundStopAll]
+
+[charaSet A 98001000 1 Mash]
+[charaSet B 5009001 1 "Da Vinci"]
+[charaSet C 1098124800 1 "Alien Girl"]
+[charaSet D 1098123200 1 Goredolf]
+[charaSet E 1098123600 1 Oprichnik]
+[charaSet F 8001002 1 "Mash (Servant)"]
+
+[charaSet H 98115000 1 Effect]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 10313]
+
+[charaDepth H 10]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+[charaPut H 120,100]
+[charaEffect H bit_talk_13]
+[charaShake E 0.05 3 3 0.3]
+[se bac8]
+[wt 0.3]
+[charaPut H -50,-30]
+[charaEffect H bit_talk_13]
+[charaShake E 0.05 3 3 0.3]
+[se bac9]
+[wt 0.3]
+[charaPut H 100,-100]
+[charaEffect H bit_talk_13]
+[charaShake E 0.05 3 3 0.3]
+[se bac10]
+[wt 0.5]
+[fowardEffect bit_talk_14]
+[se bac11]
+[charaShake E 0.05 3 3 0.3]
+[wt 0.75]
+[charaMove E 0,-50 0.2]
+[charaFadeout E 0.2]
+[wt 0.2]
+[se ad144]
+
+[bgmStop BGM_EVENT_3 0.7]
+[wt 1.0]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+[wt 1.0]
+[charaFilter F silhouette FFFFFF80]
+[se ad39]
+[wt 1.0]
+[charaTalk A]
+[charaFace A 7]
+[flashin once 0.1 0.3 FFFFFF80 FFFFFF00]
+[effectStop bit_talk_36]
+[charaFadein A 0.1 1]
+[charaFadeout F 0.1]
+[wt 1.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠Mash
+The battle is over.[sr]Goredolf Musik is safe now.
+[k]
+
+？1：Thank goodness.
+？2：That's a relief, huh?
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠Goredolf
+Grrr, what are you doing here!? Do you actually think you've helped me just because you've saved my life!?
+[k]
+
+[charaFace D 5]
+
+＠Goredolf
+I'm the REAL victim here![sr]They should have broken up Chaldea after all!
+[k]
+
+＠Goredolf
+The Heroic Spirit Summoning System turned out to be a broken-down piece of junk, and the supposed star of the show, Chaldeas, overloaded the moment I got here!
+[k]
+
+＠Goredolf
+Then I go and lose contact with the outside world, I can't find Koyanskaya anywhere, and to top things off, I run into those Oprichniks!
+[k]
+
+＠Goredolf
+What sort of wickedness have you brought upon us now!? Don't tell me you went and destroyed the world AGAIN!?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠Mash
+Destroyed the...? Um, I'm afraid you're greatly mistaken... We weren't the ones responsible for the Incineration of Humanity, but[line 2]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠Goredolf
+Don't you DARE talk back to me! Just shut the hell up and start fixing this mess you made!
+[k]
+[messageOff]
+
+[charaFace D 9]
+[charaShake D 0.05 0 5 0]
+[wt 0.3]
+＠Goredolf
+Oogh, just thinking about it is giving me[sr]the shakes! C-c-c-come on then, get to work!
+[k]
+
+[charaShakeStop D]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠Da Vinci
+You see? I knew this would be more trouble than this coglione is worth. Anyway, we REALLY don't have time to explain everything right now.
+[k]
+
+＠Da Vinci
+For the moment, let's get back to safety. I'm sure everyone else is on pins and needles waiting for us.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠Mash
+You're right. We'll need to apologize to them.[sr]Still...
+[k]
+
+＠Mash
+I'm glad we weren't too late.[sr]Aren't you, Senpai?
+[k]
+
+？1：Absolutely!
+
+？！
+
+[messageOff]
+[se ad184]
+[wt 0.2]
+[se ad59]
+[wipeout rectangleStripRightToLeft 0.7 1]
+[bgmStop BGM_EVENT_2 0.7]
+[wait wipe]
+
+[scene 10000]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.1 1]
+[wait wipe]
+[fadeout black 0.1]
+[wait fade]
+
+
+[wipeFilter cinema 0.5 0]
+[seStop ad184 1.0]
+[seStop ad59 1.0]
+
+[scene 10313]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.7 0,-40]
+[wt 3.0]
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[wipeOff]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,109 @@
+
+
+
+＄91-20-10-01-2-1
+[soundStopAll]
+[charaSet A 6003001 1 "Hundred Personas"]
+[charaSet B 3009001 1 Leonidas]
+[charaSet C 3016001 1 Hektor]
+[charaSet D 2010002 1 Billy]
+
+[scene 20720]
+
+[bgm BGM_EVENT_2 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠Hundred Personas
+Next report. Good news: half of the town's population has been evacuated.[bgmStop BGM_EVENT_2 1.0] However...
+[k]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaFace A 5]
+
+＠Hundred Personas
+We have eagle-eyed enemies. Some of the Celts are trying to sneak ahead and ambush them.
+[k]
+
+＠Hundred Personas
+Spartacus is intercepting their attacks and Mephistopheles is confusing the enemy to hold them back.
+[k]
+
+[charaFace A 4]
+
+＠Hundred Personas
+Still, it looks like the evacuees in the rear will come under attack.
+[k]
+
+[charaFadeout A 0.1]
+[bgmStop BGM_EVENT_5 0.3]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFace C 5]
+[charaFadein B 0.1 0]
+[charaFadein C 0.1 2]
+
+[bgm BGM_EVENT_4 0.1]
+
+＠Leonidas
+Master. Leave this area to us![sr]Please prioritize the evacuees!
+[k]
+
+[charaFace C 2]
+
+＠Hektor
+Get going, Master and Billy![sr]This is the path that you two have chosen to take!
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠Billy
+...Okay! Master![sr]Mount your horse! We're going together!
+[k]
+
+？1：Got it!
+？！
+
+[charaFadeout D 0.1]
+
+[messageOff]
+
+[wt 0.3]
+
+[se ad83]
+[wt 1.0]
+
+[effect bit_talk_41]
+
+[shake 0.05 2 2 10.0]
+
+[seLoop ad84]
+[seStop ad84 2.0]
+
+[wt 1.0]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_4 1.5]
+
+[fadeout black 2.0]
+[wait fade]
+[effectStop]
+[shakeStop]
+[soundStopAll]
+[end]
+

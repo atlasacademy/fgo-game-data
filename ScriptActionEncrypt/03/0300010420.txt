@@ -1,0 +1,275 @@
+
+＄03-00-01-04-2-0
+[soundStopAll]
+
+[charaSet A 8001002 1 Mash]
+[charaSet B 5036001 1 Avicebron]
+[charaSet C 7030001 1 ???]
+[charaSet D 1098128400 1 Yaga]
+[charaSet F 1098127000 1 Golem]
+[charaSet H 98115000 1 Effect]
+
+[scene 54103]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[wt 0.5]
+[se ad563]
+[wt 0.4]
+[se ad170]
+[wt 0.2]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaMoveScale F 1.2 0.2]
+[charaMove F 0,30 0.2]
+[charaFadeout F 0.1]
+[fowardEffect bit_talk_h_slash01]
+[se ad85]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+[wt 0.2]
+
+[se bac10]
+
+[fowardEffect bit_talk_13]
+[charaShake D 0.05 4 4 1.2]
+[wait se bac10]
+
+[wt 0.3]
+[charaMove D 0,-15 0.4]
+[wt 0.4]
+[se ad54]
+[wt 0.4]
+
+＠Yaga
+Ghh...
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+
+[wt 0.3]
+
+[charaTalk depthOff]
+[charaDepth F 6]
+[charaDepth H 8]
+
+[se ad248]
+[seVolume ad248 0 0.0]
+[seVolume ad248 0.5 1.0]
+[charaPut H 1]
+[charaEffect H bit_talk_arrow_enemy_l]
+[wt 0.8]
+[seStop ad248 0.1]
+[cueSe Servants_9934800 boss06]
+[shake 0.05 4 4 0.3]
+[wt 0.2]
+[se bac59]
+[fowardEffect bit_talk_explosion_triple]
+[shake 0.05 4 10 0.5]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_arrow_enemy_l]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[fowardEffectStop bit_talk_explosion_triple]
+[wt 0.5]
+[cueSe Battle bac434]
+[wt 1.0]
+[bgmStop BGM_EVENT_80 0.7]
+[charaShake F 0.05 6 2 1.5]
+[charaMove F 0,-200 2.0]
+[wt 0.5]
+[charaFadeout F 0.7]
+[cueSeStop Battle bac434 1.5]
+[wt 2.0]
+
+＠???
+Stop!
+[k]
+
+[charaEffectStop H bit_talk_snowstorm_02]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠Avicebron
+...Hello there. I take it you are the leader?
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad60]
+[seVolume ad60 0 0]
+[wt 0.1]
+[seVolume ad60 1.0 1.0]
+[wt 1.6]
+[seStop ad60 0.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.7 1]
+[wt 1.2]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠???
+I am...and now I have seen your power for myself.[sr]You say you are here to join the rebel army?
+[k]
+
+？1：Yes, that's right.
+
+＠???
+I see. But I cannot trust you.
+[k]
+
+[charaFace C 5]
+
+＠???
+You all look like humans.
+[k]
+
+？2：If it's okay with you.
+
+[charaFace C 5]
+
+＠???
+Of course.[sr]I would be glad to welcome you...were you not human.
+[k]
+
+？！
+
+[charaFace C 4]
+
+＠???
+In this world, there are only two kinds of people[sr]who look like humans: mages and Servants.
+[k]
+
+[charaFace C 5]
+
+＠???
+And that means you are our enemy.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠Mash
+Huh!? Please, I promise you we're[line 2]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠???
+Are you with the Tsar, or are you not?
+[k]
+
+＠???
+The answer to that lies in whether[sr]you are merciful as well as strong.
+[k]
+
+[bgmStop BGM_EVENT_81 0.5]
+[charaFace C 2]
+
+＠???
+...And so I shall make you a grossly unfair proposal: fight us without killing us, even as we do our best to kill you.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Avicebron
+...I see.[sr]Well, that is certainly as unfair as you say.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠???
+If you have strength enough to kill us all, then you are no spy. There would be no point in spying on us if you could simply kill us at your leisure, after all.
+[k]
+
+＠???
+But, if you are strong enough to kill[sr]us AND choose to spare our lives...
+[k]
+
+[charaFace C 2]
+
+＠???
+...that would prove you are merciful, and that is a kindness only humans possess. That is my offer.[sr]You may take it or leave it!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Avicebron
+Well, Master, now what would you have us do?[sr]I will abide by whatever you decide.
+[k]
+
+？1：We're going to do exactly what she says.
+
+＠Avicebron
+Understood.
+[k]
+
+？2：We're going to fight, and we're going to win.[csr]Without killing them.
+
+＠Avicebron
+As you wish.
+[k]
+
+＠Avicebron
+This will certainly be difficult, but not impossible.
+[k]
+
+＠Avicebron
+Very well then, let us show her exactly[sr]why we were chosen as Heroic Spirits.
+[k]
+？！
+
+
+[messageOff]
+[bgmStop BGM_EVENT_80 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

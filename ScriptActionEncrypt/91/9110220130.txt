@@ -1,0 +1,93 @@
+＄91-10-22-01-3-0
+
+[soundStopAll]
+[bgm BGM_EVENT_5 0.1]
+[scene 20900]
+[charaSet A 8001000 0 Mash]
+[charaSet B 98003000 2 "Dr. Roman"]
+[charaSet C 98002000 2 Fou]
+[charaSet D 1022001 2 Gilles]
+[charaTalk D]
+[charaFace A 0]
+[charaFadein A 0 2]
+[charaFace D 4]
+[charaFadein D 0 0]
+[fadein black 1]
+[wait fade]
+＠Gilles
+...Whew.[sr]Well, we managed to clean it up somehow.
+[k]
+
+＠Mash
+Yes.[sr]But aside from that, what exactly is here[line 2]
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Fou
+Fou!
+[k]
+
+[charaFadeout C 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr. Roman
+Oh, a warning! A strong magical energy[sr]signature detected near the throne.
+[k]
+
+[communicationCharaFace 5]
+＠Dr. Roman
+If left alone, it may lead to the birth of another[sr]singularity. Could you investigate the possibility?
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠Mash
+Understood[line 4][sr]Ahhh!
+[k]
+
+[bgmStop BGM_EVENT_5 0.4]
+[bgm BGM_EVENT_3 0.1]
+[charaShake A 0.05 0 5 0.1]
+[se ad7]
+[wt 0.5]
+[charaTalk D]
+[charaFadeout A 0]
+[charaFadein A 0.1 2]
+[charaFace D 4]
+[charaFadein D 0.1 0]
+＠Gilles
+What's this![sr]Can this be, Saint Catherine's sword!
+[k]
+
+[charaFace A 7]
+＠Mash
+The shadows are gathering, and they're trying to[sr]change their form. This is...a Shadow Servant!
+[k]
+
+[charaFace D 5]
+＠Gilles
+Ugh![sr]So, you've been searching for the sword!
+[k]
+
+[charaFace D 2]
+＠Gilles
+I hate to break it to you, but that sword is not yours.[sr]You will hand it over!
+[k]
+
+[se ad25]
+[wait se ad25]
+[charaFace A 2]
+＠Mash
+...It's coming!
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

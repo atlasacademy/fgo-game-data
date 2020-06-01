@@ -1,0 +1,947 @@
+
+
+
+＄02-00-03-05-1-0
+[soundStopAll]
+
+
+[charaSet A 1098118800 1 "Town Woman"]
+[charaSet B 98112300 1 "Town Man"]
+[charaSet C 1017001 1 Musashi]
+[charaSet D 1098118600 1 Onui]
+[charaSet E 5003001 1 Otama]
+[charaSet F 1098119200 1 Kiyohime]
+[charaSet G 1098119000 1 "Castle Warrior"]
+[charaSet H 5009000 1 "Effect Dummy"]
+
+[scene 46600]
+
+[fadein black 2.0]
+[se ad462]
+[seVolume ad462 0 0.05]
+[wt 0.1]
+[seVolume ad462 2.0 0.9]
+[wait fade]
+
+[wt 2.5]
+[seStop ad462 2.5]
+[wt 2.0]
+
+[scene 46700 1.5]
+[wt 1.0]
+[se ad451]
+[seVolume ad451 0 0.1]
+[wt 0.1]
+[seVolume ad451 1.4 0.95]
+[wt 2.5]
+
+
+[wt 2.5]
+
+[seStop ad451 1.5]
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.2]
+
+＠Town Woman
+Dark spirit monsters?
+[k]
+
+＠Town Woman
+Oh, yes, I've heard some scary rumors about those.[sr]They say they did something terrible in Hitachi Province!
+[k]
+
+＠Town Woman
+It's dreadful to think about, isn't it. Oh, speaking of dreadful, I've also heard that there are kappas in the river near the castle!
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout A 0.1]
+[wt 1.0]
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+[wipeout rightToLeft 0.1 1]
+[wait wipe]
+[scene 46700]
+[wipein leftToRight 0.7 1]
+[wt 0.5]
+[se ad451]
+[wait wipe]
+
+
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.2]
+
+＠Town Man
+Sorry, I've heard plenty of rumors about those things, but I can't say I know much about them. I doubt they'll give us too much trouble, though.
+[k]
+
+＠Town Man
+After all, Shimousa is under shogunate control! Not to mention we've got Lord Matsudaira Shimousa-no-Kami up in the castle.
+[k]
+
+＠Town Man
+If things do take a bad turn, someone at Edo'll send a few skilled samurai up here to handle it soon enough.
+[k]
+
+[messageOff]
+[wt 0.5]
+[wipeout rightToLeft 0.7 1]
+[seStop ad451 0.3]
+[wait wipe]
+[charaFadeout B 0.1]
+[wt 1.01]
+[scene 10000]
+[wipein leftToRight 0.1 1]
+[wait wipe]
+[fadeout black 0.1]
+[wait fade]
+[scene 46700]
+[fadein black 1.0]
+[se ad451]
+[wait fade]
+
+
+[wt 1.5]
+
+[seStop ad451 0.3]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.4 1]
+
+＠Musashi
+...Hmm, that seems to be the most common reaction.
+[k]
+
+＠Musashi
+Everyone says that monsters almost never show up near the town, so people here don't take them seriously.
+[k]
+
+？1：Even after those villages were massacred...
+？2：They haven't been told, have they...?
+
+？！
+
+＠Musashi
+True, it does seem like news travels slowly here.[sr]Maybe that's just what happens in times of peace.
+[k]
+
+[charaFace C 4]
+
+＠Musashi
+In the age of war, a single rumor could[sr]greatly affect who lived and who died...
+[k]
+
+＠Musashi
+But I guess that's not as much of a[sr]concern now that the wars are all over.
+[k]
+
+[charaFace C 12]
+
+＠Musashi
+It could also be that the castle is controlling what sort of information makes its way into town, not that I've got any evidence for that theory!
+[k]
+
+＠Musashi
+Then again, maybe they're actually working in secret to gather intelligence on the Heroic Spirit Swordmasters and their summoner.
+[k]
+
+？1：Let's gather some intelligence of our own.
+？2：Let's find more people to talk to.
+
+？！
+
+[charaFace C 0]
+
+＠Musashi
+Right there with you.
+[k]
+
+
+[charaFace C 1]
+
+＠Musashi
+...On a different note,[sr]that really is a beautiful castle!
+[k]
+
+＠Musashi
+I caught glimpses of it on the way here,[sr]but its keep really stands out here in town.
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[wt 0.7]
+[cameraMove 0.8 -4,-10 1.3]
+[wt 3.0]
+[cameraHome 0.5]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠Onui
+I love that castle![sr]I wanna climb to the top of it someday!
+[k]
+
+＠D：Tasuke
+Ga ga! Gooo!
+[k]
+
+[charaFace D 1]
+
+＠Onui
+Tasuke says he does, too!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠Musashi
+That's kind of a tall order. Still, you're right;[sr]I bet the view from up there would be wonderful.[charaFace C 1]
+[k]
+
+[charaFace C 7]
+
+＠Musashi
+Hmm. I bet we could even see that keep from the mountain behind your grandpa's hermitage. It's huge!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠Onui
+So huge♪
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Musashi
+I never heard of Toke Castle being so grand in my own world... But I guess you learn something every day!
+[k]
+
+？1：You sure do!
+
+[charaFace C 7]
+
+＠Musashi
+Yup!
+[k]
+
+？2：It's different from the history I know too.
+
+[charaFace C 9]
+
+＠Musashi
+I guess history here really is just a little different all around then. Or maybe it's another effect of the Holy Grail?
+[k]
+
+[charaFace C 0]
+
+＠Musashi
+Either way, I guess it's too soon to say. We'll[sr]just have to learn what we can while we ask around!
+[k]
+
+？！
+
+[messageOff]
+[wipeout rollRight 1.0 0.5]
+[wait wipe]
+[charaFadeout C 0.1]
+[wt 1.5]
+[wipein rollLeft 1.0 0.5]
+[wait wipe]
+
+＠E：???
+Oh?
+[k]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+＠E：???
+Aha, I see, I see...
+[k]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.2]
+
+[bgm BGM_EVENT_66 0.1]
+
+＠E：Graceful Geisha
+Judging from the way you're all gawking at everything,[sr]I'm guessing you're not from around here, are you?
+[k]
+
+＠E：Graceful Geisha
+To tell the truth, neither am I. I originally came here from near Edo. I only just arrived about six months ago, after crossing the Arakawa and the mountain pass.
+[k]
+
+＠E：Graceful Geisha
+Go on, take a look at that amazing castle keep! It bears a striking resemblance to Edo Castle, don't you think?
+[k]
+
+[charaFace E 1]
+
+＠E：Graceful Geisha
+I knew that Lord Matsudaira was a direct descendant of the shogun, so I expected his castle to be impressive.
+[k]
+
+＠E：Graceful Geisha
+But I'm still amazed by just how grand it really is.
+[k]
+
+？1：Fox ears!? Am I...am I seeing things...?
+？2：Tamamo-no-Mae!? Have you been summoned here too!?
+
+？！
+
+[charaFace E 0]
+
+＠E：Graceful Geisha
+Oh, you know about me?
+[k]
+
+＠E：Graceful Geisha
+I must say though, Tamamo-no-Mae is quite a mouthful.[sr]My name is just Tama. Please, call me Otama.
+[k]
+
+＠Otama
+I am but a humble geisha who has come to ply her trade here in the town of Toke Castle, now that its star has risen to become a second Edo.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+[charaFace D 3]
+[charaFadein D 0.1 2]
+
+＠Onui
+Wow, you're so beautiful![sr]You look like someone from Edo!
+[k]
+
+[charaFace E 1]
+
+＠Otama
+My, what an honest, innocent, adorable little girl you are! If only all children were more like you.
+[k]
+
+[charaMoveReturn E -240,0 0.4]
+[se ad110]
+
+＠Otama
+Here, have a candy. You too, little boy.
+[k]
+
+[charaFace D 1]
+
+＠Onui
+Yay♪
+[k]
+
+＠D：Tasuke
+Ga ga♪
+[k]
+
+？1：Otama.
+？2：Are you really not Tamamo-no-Mae?
+
+？！
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠Otama
+...Have I ever entertained you before?[sr]If I have, I'm so sorry I don't remember.
+[k]
+
+＠Otama
+I'm afraid you are mistaken.[sr]I don't recall ever having met you.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Musashi
+DO you know this lady, [%1]?
+[k]
+
+？1：I feel...I feel like...
+？2：She looks a lot like someone I know.
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠Otama
+So I resemble someone you know, hmm...[sr]Interesting. I shall have to remember that one.
+[k]
+
+[charaFace E 2]
+[charaMoveReturn E 0,10 0.1]
+
+＠Otama
+I mean, never mind that!
+[k]
+
+[charaFace E 0]
+
+＠Otama
+Now that I look closely, I can see your expensive[sr]imported outfit. You must be very rich indeed.
+[k]
+
+[charaFace E 1]
+
+＠Otama
+If you'd like to come to my establishment, I'd be[sr]happy to show you a good time. Hohohohoho, kon kon♪
+[k]
+
+？1：Kon kon!? MIKON?!
+？2：NOW you're playing up the fox girl thing!?
+
+？！
+
+＠Otama
+Kon kon♪ What is it? Hehe, if you insist that[sr]much on calling us acquaintances, let me think...
+[k]
+
+[charaFace E 0]
+
+＠Otama
+Yes, I suppose I could be your acquaintance if you like.[sr]Especially if you agree to come to my establishment.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠Musashi
+...What do you think, [%1]?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+[charaFace D 0]
+[charaFadein D 0.1 2]
+
+＠Onui
+What's an establishment?
+[k]
+
+＠Otama
+Mine is a place for grown-ups where they can enjoy delicious food, drink, music, and dancing. It's like a little slice of paradise amid a world of suffering.
+[k]
+
+[charaFace D 2]
+
+＠Onui
+Paradise amid suffering, huh...[charaFace D 1][sr]I don't really get it, but it sounds like fun!
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Musashi
+...Say, Otama, do you serve dumplings?[sr]Are they nice and tasty?
+[k]
+
+？1：Uh, Musashi, I don't know how old you are...
+？2：Some of us are minors, you know.
+
+[charaFace C 8]
+
+＠Musashi
+Oh, uh, haha, I was just kidding. Really.[sr]But I AM getting a little hungry!
+[k]
+
+？！
+
+[bgmStop BGM_EVENT_66 1.5]
+[se ad173]
+[seVolume ad173 0 0.8]
+[wt 0.1]
+[seStop ad173 0.1]
+[wt 0.2]
+
+＠F：???
+...Excuse me.[sr]Might I have a word with you?
+[k]
+
+[charaFace C 9]
+
+＠Musashi
+Hm? You mean me?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.4 1]
+[wt 0.2]
+
+＠F：Elegant Princess
+Uh, no, not you.[sr]The one dressed in foreign clothing.
+[k]
+
+？1：Huh? Kiyohime?
+
+？！
+
+[charaFace F 0]
+[bgm BGM_EVENT_67 0.1]
+
+＠F：Elegant Princess
+Oh my...[sr]Oh my...
+[k]
+
+＠F：Elegant Princess
+I could have sworn I had never met you before,[sr]yet you already know my name. Oh my...
+[k]
+
+[charaFace F 3]
+
+＠F：Elegant Princess
+This is amazing.[sr]I knew that today would be the day.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠Onui
+Wow, another beautiful lady... Your costume[sr]is so pretty, too. You look like a princess!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠Otama
+Wh-where did you come from?[sr]These are MY customers, I'll have you kno[line 2]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠F：Elegant Princess
+I-I always believed this day would come! That I would one day meet the person of my dreams, destined to sweep me off my feet and away from the castle!
+[k]
+
+＠F：Elegant Princess
+And now, I've finally met you!
+[k]
+
+[bgmStop BGM_EVENT_67 0.7]
+[charaFace F 7]
+
+＠F：Elegant Princess
+[f large]I love you!
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Musashi
+Um...what?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠Otama
+Huh!? What do you think you're doing, saying something like that in the middle of the street!?
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Onui
+H-huh?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠Castle Warrior
+L-Lady Kiyohime! You mustn't leave the castle,[sr]let alone go around saying things like that!
+[k]
+
+？1：Lady Kiyohime?
+？2：She ran away from the castle?
+
+？！
+
+＠Castle Warrior
+D-damn it, I shouldn't have said that either,[sr]but yes, she did! Don't you know who she is!?
+[k]
+
+＠Castle Warrior
+This is Lady Kiyohime, the daughter of Lord Matsudaira Shimousa-no-Kami himself! Ordinarily I would have you prostrate yourself to apologize, but that would draw too much attention. Consider yourself lucky!
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaMoveReturn F 0,-10 0.7]
+[wt 1.0]
+
+＠Kiyohime
+I am delighted to make your acquaintance,[sr]person of my dreams. I am Kiyohime.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠Otama
+Lady Kiyohime!?
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Musashi
+You're a real princess!?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠Onui
+Huh? You're a princess? Really?
+[k]
+
+＠D：Tasuke
+Ga ga♪
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace G 0]
+[charaFadein G 0.1 -128,0]
+[charaFace F 0]
+[charaFadein F 0.1 128,0]
+[wt 1.0]
+
+？1：So you're not the Kiyohime from Chaldea at all!?
+？2：Sh-she's a lot like Chaldea's Kiyohime...
+
+？！
+
+[charaFace F 5]
+
+＠Kiyohime
+Please stop getting in my way! I may be princess of the Matsudaira clan, but I'm a woman first and foremost!
+[k]
+
+[charaFace F 2]
+
+＠Kiyohime
+I've been searching for the person of my dreams for a long time. Now that I've finally found you, I implore you. Please, take me away!
+[k]
+
+[charaFace G 1]
+
+＠Castle Warrior
+Princess, you mustn't!
+[k]
+
+[charaFadeout G 0.1]
+[se ad7]
+[seVolume ad7 0 0.3]
+[wt 0.4]
+[charaFadeout F 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠Kiyohime
+Please, person of my dreams! Abduct me, and take me away to Edo! From there, we can go to Osaka, or to Kyoto, or even leave for another land altogether through Nagasaki!
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠Otama
+Just a minute there, princess. I don't care WHOSE daughter you are, you're not getting in the way of MY business!
+[k]
+
+[charaFace E 5]
+
+＠Otama
+Don't you think it's just a LITTLE RUDE for you[sr]to try and poach this nice, rich customer from me?
+[k]
+
+＠Otama
+Come now, prin[line 2]No, you know what,[sr]no way would a princess be out here on the streets.
+[k]
+
+＠Otama
+I don't know which samurai family you hail from,[sr]but you can at least wait until tomorrow.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠Castle Warrior
+Ulp...! It WOULD look terrible if word got out[sr]that the princess was seen here in the streets.
+[k]
+
+＠Castle Warrior
+It could lead to all sorts of trouble[sr]for the Matsudaira family...
+[k]
+
+[bgmStop BGM_EVENT_7 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_27 0.1]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠Kiyohime
+Wh-wh-wha...
+[k]
+
+[charaFace F 2]
+
+＠Kiyohime
+What is the matter with you, fox woman!? Why must you impede me from being with the person of my dreams!?
+[k]
+
+＠Kiyohime
+I have been cooped up in the castle staring at the sky, dreaming of this day for months, YEARS even. Now it's finally here, and you're trying to stop it!
+[k]
+
+[charaFace F 5]
+
+＠Kiyohime
+Very well then.[sr]If that's how you wish to handle this...
+[k]
+
+＠Kiyohime
+...[sr]...
+[k]
+
+＠Kiyohime
+I won't be able to hold myself back any longer![sr]I mean it, you know...
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0]
+[charaFace F 5]
+[charaFadein F 0.1 2]
+
+＠Otama
+No. Stop. Don't. Whatever are you going to dooo?[sr]Kon kon kon.
+[k]
+
+[charaFace F 11]
+
+＠Kiyohime
+Grrr! I-I mean it![sr]I'm really not going to hold myself back!
+[k]
+
+＠Kiyohime
+I'll have you know that I carry dangerous flammable water, imported from foreign lands, with me at all times. You won't get away unscathed!
+[k]
+
+？1：Flammable water... Oil... It all fits...
+？2：Fire, huh... I knew it. Where's the dragon?
+
+？！
+
+[charaFace E 1]
+
+＠Otama
+Hohohohohoho. You have no idea who you're dealing with, do you? We geisha from Edo deal with fire all the time!
+[k]
+
+＠Otama
+Go ahead, try your little trick! Fire, lightning, it doesn't matter! Kon kon, I'll blow out whatever you throw at me with my fan!
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠Castle Warrior
+P-Princess, I beg of you, you mustn't![sr]We're in the middle of the street!
+[k]
+
+But if you truly do mean to go ahead with it, please, at least make sure you're not wearing flammable clothing!
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠Onui
+Are you fighting?[sr]Grandpa always says you shouldn't fight.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Musashi
+Wow, this is turning into a serious pain, huh? So, rich customer-slash-person of her dreams, how do you want to handle this?
+[k]
+
+[charaFace C 0]
+
+＠Musashi
+Shall we stay out of it, or do something about it?
+[k]
+
+？1：Ugh, I guess we don't have any choice now!
+？2：We have to stop them both and help them cool down!
+
+？！
+
+[charaFace C 7]
+
+＠Musashi
+Got it. Don't worry, I'll use my swordsman aura to make sure everyone gets out of this without a scratch!
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_27 0.4]
+[wait fade]
+[soundStopAll]
+[end]

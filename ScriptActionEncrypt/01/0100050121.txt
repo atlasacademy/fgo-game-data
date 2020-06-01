@@ -1,0 +1,122 @@
+
+＄01-00-05-01-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[charaSet A 8001001 1 Mash]
+[charaSet B 98022000 1 Soldier]
+[charaSet C 99360000 1 "Celtic Warrior"]
+[charaSet D 7014001 1 ???]
+[charaSet E 98002000 1 Fou]
+[charaSet F 98056000 1 Doctor]
+
+[scene 20720]
+[fadein black 2]
+[wait fade]
+
+[charaTalk C]
+[charaFadein C 0.1 1]
+[wt 0.2]
+
+[se ad25]
+[seStop ad25 1.0]
+＠C：???
+[line 6]!
+[k]
+
+[charaFadeout C 0.4]
+
+[wt 0.7]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠Mash
+We did it![sr]Now those people are retreating as well!
+[k]
+
+？1：Good job, Mash!
+？2：Mash, you should get back, too!
+
+？！
+
+[charaFace A 7]
+＠Mash
+Y-Yes! We should hurry and retreat as well![sr]If we continue to stay here, we'll get flanked by both forc[line 3]
+[k]
+
+[se ad75]
+＠Mash
+Master, fall back now[line 3][sr]No... [charaFace A 14]RUN!
+[k]
+[seStop ad75 1.5]
+
+[charaFadeout A 0.1]
+
+[charaTalk E]
+[charaFadein E 0.1 1]
+＠Fou
+Fo[line 11]u!
+[k]
+
+？1：Huh?
+？2：What?
+
+？！
+
+[charaFadeout E 0.1]
+
+[se bac36]
+[shake 0.05 0 4 1.5]
+[wait se bac36]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠Mash
+Senpai? Senpai!
+[k]
+
+[charaFace A 15]
+＠Mash
+Doctor![sr]Senpai is airborne!
+[k]
+
+[charaFadeout A 0.1]
+
+[wt 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr. Roman
+Huh? Mash, what did you just say?
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠Mash
+You know, airborne! Like when your two feet are above the ground and... Oh never mind!
+[k]
+
+
+[charaFace A 4]
+＠Mash
+Senpai! Stay with me, please![sr]Senpai, Senpai!
+[k]
+
+[messageOff]
+[wipeout circleIn 2.5 1]
+[bgmStop BGM_EVENT_3 2.0]
+[wait wipe]
+[wt 1.0]
+[charaFadeout A 0.1]
+[scene 10000]
+[fadeout black 0.1]
+[wait fade]
+[wipein circleIn 0.1 1]
+[wait wipe]
+[end]
+

@@ -1,0 +1,146 @@
+＄91-40-09-02-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_5 0.1]
+[scene 21410]
+[charaSet A 8001000 2 Mash]
+[charaSet B 98003003 2 "Dr. Roman"]
+[charaSet D 4009200 2 Anne]
+[charaSet E 4009100 2 Mary]
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 5]
+[fadein black 1]
+[wait fade]
+＠Dr. Roman
+The golems are all down, but I'm seeing more enemy responses up ahead.
+[k]
+
+＠Dr. Roman
+Proceed with caution.
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+＠Mary
+Sure thing, Doctor.
+[k]
+
+[charaFace A 1]
+＠Mash
+This makes me think the old man's story might be true. Let's go!
+[k]
+
+[wt 0.1]
+[messageOff]
+[wipeout rightToLeft 0.5 1]
+[bgmStop BGM_EVENT_5 0.5]
+[wait wipe]
+[scene 21410]
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+[wt 0.7]
+[wipein leftToRight 0.5 1]
+[bgm BGM_EVENT_3 0.1]
+[wait wipe]
+
+[wt 0.2]
+[se bac21]
+[shake 0.05 0 4 0.25]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.7]
+[se bac6]
+[effect bit_talk_12]
+[wt 0.1]
+[shake 0.05 2 2 0.25]
+[wait se bac6]
+[wt 0.4]
+[bgmStop BGM_EVENT_3 0.4]
+[se ad20]
+[wait se ad20]
+[wt 0.4]
+
+[bgm BGM_EVENT_5 0.1]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.4 0]
+[charaFace D 0]
+[charaFadein D 0.1 2]
+＠Mary
+Whew! This side's clear, too.
+[k]
+
+[charaFace D 1]
+＠Anne
+Security's tight. I'm getting excited.
+[k]
+
+＠Mary
+We probably won't find a Grail.
+[k]
+
+[charaFadeout D 0.1]
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 2]
+＠Mash
+Maybe we will.
+[k]
+
+[charaFace A 12]
+＠Mash
+That is to say, I don't mean the Holy Grails we recover.[sr]I mean the true Holy Grail of legend.
+[k]
+
+[charaFace E 0]
+＠Mary
+That would be an adventure indeed.[sr]Master, do you want the Holy Grail?
+[k]
+
+？1：I want a future.
+
+？2：I want peace.
+
+？！
+
+[charaFace E 1]
+＠Mary
+I see. You aren't very greedy.[sr]Or maybe you are.
+[k]
+
+＠Mary
+The future or peace... Those are really big wishes, so you probably don't have time to be thinking about smaller wishes.
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 1]
+＠Dr. Roman
+As the guy paying for everyone's salary, that would be great. That aside,[communicationCharaFace 5] I'm picking up some life-form signals. Be careful!
+[k]
+
+[bgmStop BGM_EVENT_5 0.1]
+[wt 0.2]
+[bgm BGM_EVENT_3 0.1]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠Mash
+Doctor, a fair salary is an absolute necessity to keep talented people around.[charaFace A 2] Let's go!
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

@@ -1,0 +1,63 @@
+＄01-00-02-08-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 20803 0]
+[charaSet A 8001000 1 Mash]
+[charaSet B 98003003 1 "Dr. Roman"]
+[charaSet C 98002000 1 Fou]
+[charaSet D 1005001 1 Nero]
+[charaSet E 98016000 1 "Roman Soldier"]
+[charaSet F 1013001 1 Caesar]
+[charaSet G 4011001 1 Boudica]
+[charaSet H 7005001 1 Spartacus]
+[charaFace D 0]
+[charaFadein D 0]
+[fadein black 1]
+[wait fade]
+＠Nero
+It's more or less taken care of.[sr]Now then, let's regroup and head out to the sea.
+[k]
+
+＠Nero
+It's good to travel by sea. [%1],[sr]let me show you my brilliant sailing skills!
+[k]
+
+？1：I can't wait!
+
+[charaFace D 1]
+＠Nero
+Right? Right?[sr]Heh, heh, such a honest fellow.
+[k]
+
+？2：I'm a bit worried. 
+
+[charaFace D 1]
+＠Nero
+No need to be embarrassed.[sr]Heh, heh, you're bad at hiding your feelings, huh?
+[k]
+
+？！
+
+[se ad13]
+[wait se ad13]
+[charaFadeout D 0.1]
+[communicationCharaLoop 98003003 1 5 0 4]
+＠Dr. Roman
+The emperor is amazing![sr]Whatever you say, she interprets it in a positive way!
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+＠Mash
+...
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_2 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,1488 @@
+
+
+
+＄02-00-03-02-1-1
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[charaSet A 1017001 1 Musashi]
+[charaSet B 3014001 1 Inshun]
+[charaSet C 1098118600 1 Onui]
+[charaSet D 98006200 1 "Fodder Enemy Smoke"]
+[charaSet E 98006200 1 "Fodder Enemy Smoke"]
+[charaSet F 6029000 1 "Assassin of Paraíso"]
+[charaSet G 1098118400 1 "Caster of Limbo"]
+[charaSet H 5009000 1 "Effect Dummy"]
+
+[scene 37312]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk off]
+[se ad42]
+[charaFace D 0]
+[charaFadein D 0.1 -256,0]
+[charaFace E 0]
+[charaFadein E 0.1 256,0]
+[wt 0.1]
+
+[wt 0.2]
+[se bac136]
+[charaPut H 256,60]
+[charaEffect H bit_talk_Slash_white_01]
+[wt 0.1]
+[charaShake E 0.05 5 5 0.7]
+[charaEffectStop H bit_talk_Slash_white_01]
+[se ad42]
+[charaSpecialEffect E enemyErasure 1 0.5]
+[seStop ad42 0.5]
+
+[wt 0.2]
+
+[se bac136]
+[charaPut H -256,60]
+[charaEffect H bit_talk_Slash_white_01_L]
+[wt 0.1]
+[charaShake D 0.05 5 5 0.7]
+[charaEffectStop H bit_talk_Slash_white_01_L]
+[charaSpecialEffect D enemyErasure 1 0.5]
+[wait charaSpecialEffect D]
+[seStop ad42 0.5]
+
+[bgmStop BGM_EVENT_3 1.2]
+[wt 1.5]
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Musashi
+...There we go.
+[k]
+
+＠Musashi
+Um, [%1], can I ask you something? The reason we were able to beat those spirits so much more easily than the others isn't because they were going easy on us...
+[k]
+
+＠Musashi
+It's because we had help this time, right?
+[k]
+
+＠Musashi
+What I mean is, unless I'm wrong, your allies[sr]did most of the work this time, right?
+[k]
+
+？1：...You mean the Chaldea Servants.
+？2：I really couldn't summon them before.
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Inshun
+I cannot speak to the specifics, but perhaps that[sr]is because of me. This is merely speculation, but...
+[k]
+
+＠Inshun
+Since I am a Servant, perhaps I somehow helped to energize your connection, or caused something to happen when Lady Musashi and I crossed swords.
+[k]
+
+＠Inshun
+At any rate, [%1], I sense that your spells are back in working order?
+[k]
+
+？1：You mean my Command Spells?
+？2：Yup. Now I should be able to fight like usual!
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠Musashi
+Awesome.[sr]That's really great to hear.
+[k]
+
+[charaFace A 0]
+
+＠Musashi
+Combine that with having Lord Inshun on our side,[sr]and evil spirits like these should be no big deal.
+[k]
+
+[charaFace A 5]
+
+＠Musashi
+That said, we can't get careless. We need to keep our guard up until we know for sure that we're safe...
+[k]
+
+[messageOff]
+[wt 0.5]
+[bgmStop BGM_EVENT_2 0.4]
+[wt 0.5]
+[bgm BGM_EVENT_3 0.1]
+[charaFace A 2]
+
+＠Musashi
+...Speak of the devil![sr]I'm sensing an evil aura!
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+＠???
+Indeed. How right you are. A good swordsman never lets down their guard, no matter how skilled they may be.
+[k]
+
+＠???
+We are the Heroic Spirit Swordmasters. You will not[sr]find us so easily defeated as ordinary evil spirits.
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.6]
+[wipeout rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+[wt 0.2]
+
+[charaSet D 2021001 1 "Archer of Inferno"]
+[charaSet E 7023001 1 "Rider of Kālasūtra Hell"]
+
+[wipein rectangleStripRightToLeft 0.2 1]
+[wait wipe]
+
+[bgm BGM_BATTLE_65 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠Onui
+Wh-who are you?[sr]I'm scared... Really scared...
+[k]
+
+＠Onui
+Oh god...!
+[k]
+
+[charaFace C 11]
+
+＠C：Tasuke
+W-waah! Waaah!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Musashi
+Onui, get behind [%1]![sr]These demons are nothing like the ones we just faced!
+[k]
+
+[charaFace A 5]
+
+＠Musashi
+For one thing, they have flesh, and scents.[sr]Scents that speak volumes about what they are.
+[k]
+
+＠Musashi
+...This is the 16th year of Kan'ei. That scent shouldn't exist in a peaceful world where the Shimabara Rebellion is over.
+[k]
+
+＠Musashi
+It smells as though they just killed mere moments ago. They must be covered in blood from head to toe.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠Inshun
+Hrrn!
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[effect bit_bolg_03y]
+[se bac10]
+[wt 0.1]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.05 3 3 0.4]
+[wt 0.2]
+
+[se bac10]
+[charaPut H 120,60]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaEffect H bit_talk_14]
+[wt 0.1]
+[charaEffectStop H bit_talk_14]
+[charaPut H -210,-10]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaEffect H bit_talk_14]
+[wt 0.1]
+[se bac10]
+[wt 0.2]
+[charaEffectStop H bit_talk_14]
+
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFilter D silhouette 00000080]
+[charaFadein D 0.7 1]
+[wt 0.5]
+
+＠Female Archer
+...What a fearsome man. He is like an oni when he wields his spear. Any ordinary Heroic Spirit's Spirit Core would have been run through.
+[k]
+
+＠Female Archer
+Be careful, everyone.[sr]This man means to kill us.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠Inshun
+Haha, so you managed to deflect my spear with a single arrow. It seems Shimousa is home to many incredibly strong women.
+[k]
+
+[charaFace B 0]
+
+＠Inshun
+Or perhaps it is simply where all manner of monsters assemble? One, two, three... Aha, so this is the aura imparted by other Servants.
+[k]
+
+＠Inshun
+Now that I have sensed their inhuman presence for myself, I see that it is a rather disturbing feeling!
+[k]
+
+？1：Servants!?
+？2：So there were more summoned here besides Inshun!
+
+？！
+
+＠G：???
+...Indeed. Indeed.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk G]
+[charaFace G 0]
+[charaFilter G silhouette 00000080]
+[charaFadein G 0.7 1]
+[wt 1.0]
+
+＠G：Carnivorous Man
+We are the Six Heroic Spirit Swordmasters.
+[k]
+
+＠G：Carnivorous Man
+Lady Shinmen Musashi, of the famed Niten Ichiryu. Lord Houzouin Inshun, a spearmen whose skill elevated him to the realm of the gods and the Buddha himself.
+[k]
+
+＠G：Carnivorous Man
+And the Master of Chaldea.[sr]Hehe, hehe. Hehehehehehe.
+[k]
+
+＠G：Carnivorous Man
+Pleased to make your acquaintance. We six knights have materialized in this world to transform it into hell.
+[k]
+
+＠G：Carnivorous Man
+Allow me to introduce myself.[sr]I am the Caster of Limbo.
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[se bac24]
+[fowardEffect bit_talk_15]
+[wt 1.2]
+[fowardEffectStop bit_talk_15]
+[charaPut H 1]
+[charaEffect H bit_talk_32]
+[wt 0.8]
+[charaEffectStop H bit_talk_15]
+[seStop bac24 1.5]
+[wt 0.2]
+[charaPut H 1200,1200]
+[wt 0.1]
+[charaPut H 1]
+[se ad11]
+[wt 1.5]
+[seStop ad11 0.5]
+
+[fadeout black 0.2]
+[wait fade]
+[charaFadeout G 0.1]
+[charaPut H 1200,1200]
+[wt 0.1]
+[fadein black 0.1]
+[wait fade]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Musashi
+What the!?
+[k]
+
+[maskout black 0.1]
+[wait mask]
+[messageOff]
+[charaFadeout A 0]
+[scene 10000]
+[maskin black 0.1]
+[wait mask]
+
+[charaPut H 1]
+[charaEffectStop H bit_talk_32]
+[wt 0.2]
+[se bac264]
+[fowardEffect bit_talk_Slash_white_01]
+[wt 0.2]
+
+[charaPut H 1200,1200]
+
+[wipeout rectangleStripRightToLeft 0.3 1]
+[wait wipe]
+[scene 37312]
+
+[charaSet C 1098118700 1 "Saber Empireo"]
+[charaSet G 6021001 1 "Berserker of Saṃghāta Hell"]
+
+[wipein rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+
+
+
+？1：Musashi!
+？2：Behind you!
+
+？！
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Musashi
+Don't worry, I've got this!
+[k]
+
+[messageOff]
+[wipeout rightToLeft 0.1 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaFace F 0]
+[charaFilter F silhouette 00000080]
+[charaFadein F 0.1 1]
+[wt 0.1]
+[wipein leftToRight 0.1 1]
+[wait wipe]
+
+
+[charaEffect F bit_talk_Slash_white_01]
+[shake 0.05 3 3 0.2]
+[se bac142]
+[wt 0.3]
+[charaEffect F bit_talk_Slash_white_01_L]
+[shake 0.05 3 3 0.2]
+[se bac386]
+[wt 0.3]
+
+
+[charaFadeout F 0.4]
+[wt 0.7]
+
+？1：She did it[line 2]
+
+？！
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠Inshun
+No, that was just a shadow.[sr]Her opponent remains unscathed!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.7 1]
+[wt 0.5]
+
+＠F：Shadow-Like Woman
+...I am the Assassin of Paraíso.
+[k]
+
+＠Assassin of Paraíso
+Those brilliant flashes I heard tearing through the darkness must have been the sounds of your Niten Ichiryu techniques.
+[k]
+
+＠Assassin of Paraíso
+I must say, I'm a bit disappointed.
+[k]
+
+＠Assassin of Paraíso
+They cannot compare to those of us who know the blood and chaos of a turbulent world. ...Oh, my apologies. Come to think of it, you hail from such a world as well, don't you, Shinmen Musashi?
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Musashi
+Not really.
+[k]
+
+＠Musashi
+I don't know about the Musashi from this world, but I never fought on any turbulent battlefield like that.
+[k]
+
+＠Musashi
+You're a shinobi who excels at stealth, right? How nice of you to show yourself in the middle of a battle like[line 2]
+[k]
+
+[messageOff]
+[wt 0.4]
+[charaFace A 5]
+
+＠Musashi
+...Hrn!
+[k]
+
+[maskout black 0.1]
+[wait mask]
+[messageOff]
+[charaFadeout A 0]
+[scene 10000]
+[maskin black 0.1]
+[wait mask]
+
+[charaTalk off]
+[charaPut H 1]
+[charaScale H 1.5]
+[charaEffect H bit_talk_ichimon01wh]
+[se ad171]
+[wt 0.1]
+[flashin once 0.1 0.1 FFFFFFD0 FFFFFF00]
+[fowardEffect bit_talk_14]
+[shake 0.05 2 4 0.5]
+[se ad170]
+[wt 0.2]
+
+[fadeout black 0.3]
+[wait fade]
+[scene 37312]
+[fadein black 0.2]
+[wait fade]
+
+？1：Did she just attack midsentence...!?
+？2：Her attack was blocked...!?
+
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Inshun
+...This must be the Heavenly Eye.
+[k]
+
+＠Inshun
+Once she lays eyes on her target, her next strike lands like fate crashing down. It is a blow all but assured to end her opponent's life, one of Shinmen Musashi's greatest, most formidable gifts.
+[k]
+
+[charaFace B 5]
+
+＠Inshun
+Yet even that strike was blocked...[sr]How did you stop it?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk E]
+[charaFace E 0]
+[charaFilter E silhouette 00000080]
+[charaFadein E 0.7 1]
+[wt 1.0]
+
+＠E：Tachi-Carrying Woman
+...I am the Rider of Kālasūtra Hell.
+[k]
+
+＠Rider of Kālasūtra Hell
+I assure you, I did nothing special.[sr]I simply swung this sword as I saw fit.
+[k]
+
+＠Rider of Kālasūtra Hell
+If I place my sword here, the enemy's blade will halt.[sr]If I swing it here, the enemy's head will fly.
+[k]
+
+＠Rider of Kālasūtra Hell
+It's only natural I would understand that.
+[k]
+
+＠Rider of Kālasūtra Hell
+How could I hunt down oni if I didn't?
+[k]
+
+＠Rider of Kālasūtra Hell
+Hehe. Hehehehehe.[sr]What a strange monk you are.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Musashi
+(What a terrifying woman. That was the best I had,[sr]and she parried it like it was nothing...)
+[k]
+
+[charaFace A 5]
+
+＠Musashi
+(I needed to take out at least one of them with that technique if we were going to stand a chance. ...I hate to admit it, but they're all stronger than me.)
+[k]
+
+[charaFace A 4]
+
+＠Musashi
+(Sigh) Well this is just great.
+[k]
+
+[charaFace A 0]
+
+＠Musashi
+Oh, but don't take that as an admission of defeat. I'm just surprised how you're all a little tougher than you look.
+[k]
+
+＠Musashi
+Defeating all of you now would be a real pain.[sr]All the more so if I don't kill you.
+[k]
+
+＠Musashi
+You all seem to know a lot about us, but unfortunately, we're still in the middle of our journey.
+[k]
+
+＠Musashi
+So, y'know, you could always let us go,[sr]and we can pick this up again another time, right?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Rider of Kālasūtra Hell
+My, oh my.[sr]Hehehe.
+[k]
+
+＠Rider of Kālasūtra Hell
+That's so sweet of you.[sr]Here we are trying to kill you...
+[k]
+
+＠Rider of Kālasūtra Hell
+...but you have no intention of killing us.[sr]You don't even intend to protect yourself.
+[k]
+
+＠Rider of Kālasūtra Hell
+You know that you cannot beat us, so instead, you're summoning up every ounce of courage you have to let the children behind you escape with their lives.
+[k]
+
+＠Rider of Kālasūtra Hell
+What a kind person you are.[sr]It's wonderful to see.
+[k]
+
+＠Rider of Kālasūtra Hell
+...But unfortunately for you, we are not human,[sr]and cannot be moved by human emotions.
+[k]
+
+＠Rider of Kālasūtra Hell
+We are Heroic Spirit Swordmasters, and thus, we have no compunctions whatsoever about killing you.
+[k]
+
+＠Rider of Kālasūtra Hell
+In fact, we'll begin by killing the[sr]three humans cowering behind you.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Musashi
+...
+[k]
+
+？1：...She looks oddly familiar.
+
+？！
+
+[se ad192]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠G：Stunning Girlish Voice
+Well done, well done. Even fairy-tale heroes[sr]would stand in line to watch you fight!
+[k]
+
+＠G：Stunning Girlish Voice
+I can't believe you're still alive and talking after crossing swords with Kālasūtra. I guess people from the Tokugawa era aren't totally worthless after all.
+[k]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Rider of Kālasūtra Hell
+Surely you cannot be serious? (Sigh)
+[k]
+
+＠Rider of Kālasūtra Hell
+The only sort of people who live decent lives in the Tokugawa era are the ones like those children over there. Atone for your shameful lapse in judgment by killing yourself, insect!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+＠G：Stunning Girlish Voice
+Ahahahahaha.[sr]Sorry but no, Kālasūtra!
+[k]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Musashi
+(That voice is coming from up in the trees... I can't see her, but I can tell she's formidable too... In fact, her aura is somehow even more evil than this other woman's.)
+[k]
+
+[charaFace A 4]
+
+＠Musashi
+(Oh man, it's enough to make me want to cry... Hell, if Lord Inshun weren't here, I think I'd have already burst into tears.)
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠G：Stunning Girlish Voice
+Well, don't sweat the small stuff. I think it's great that we have Heroic Spirits with hands as dirty as ours.
+[k]
+
+＠G：Stunning Girlish Voice
+I don't mind people like that at all.[sr]In fact, I rather enjoy them, hehe.
+[k]
+
+＠G：Stunning Girlish Voice
+But...
+[k]
+
+＠G：Stunning Girlish Voice
+None of that matters.[sr]We're all way too far gone. Hehehehe.
+[k]
+
+＠G：Stunning Girlish Voice
+We don't need anything anymore.[sr]Not money, or fame, or the moon, or grace...
+[k]
+
+＠G：Stunning Girlish Voice
+It can all just melt away for all we care.
+[k]
+
+[se bac41]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠Inshun
+!
+[k]
+
+[charaFace B 2]
+
+＠Inshun
+Get back, Musashi!
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad211]
+[se bac69]
+[se ad14]
+[seVolume ad14 0 0.5]
+[wt 0.7]
+[shake 0.05 3 3 0]
+[se bac69]
+[se bac196]
+[seStop ad14 0.4]
+[fowardEffect bit_talk_water]
+[flashin once 0.1 0.1 4c98ff8F 4c98ff00]
+[wt 0.2]
+[flashin once 0.1 0.1 4c98ff8F 4c98ff00]
+[wt 0.1]
+[se ad176]
+[wt 0.2]
+[flashin once 0.7 0.7 4c98ffAF 4c98ff00]
+[wt 1.0]
+[fowardEffectStop bit_talk_water]
+[seStop ad176 2.0]
+[se ad36]
+[se ad14]
+[seVolume ad14 0 0.5]
+
+[seStop ad211 1.0]
+[seStop bac69 1.0]
+[seStop bac69 1.0]
+[seStop bac196 1.0]
+[seStop ad36 1.0]
+[seStop ad14 1.0]
+[wt 2.0]
+[shakeStop]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Musashi
+A flash flood!? No, wait...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠G：Stunning Girlish Voice
+Have a little taste of my special brew. Touch it, and it'll melt your mouth, your hand, and everything else.
+[k]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠Inshun
+This must be dark sorcery!
+[k]
+
+？1：Was that her Noble Phantasm!?
+？2：How'd she use it without revealing its True Name!?
+
+？！
+
+＠Inshun
+Lady Musashi, make sure that [%1] and the children stay safe! This is a matter best settled between Servants!
+[k]
+
+＠Inshun
+Let me handle this! Behold what the[sr]Houzouin-style is truly capable of!
+[k]
+
+[se bac304]
+[wt 0.4]
+
+[charaFace B 2]
+
+＠Inshun
+This is the pinnacle of the spear; the Eleven Forms that were never once defeated in all my life![sr]The Oboro Urazuki!
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+
+[flashin once 0.6 0.4 FFFFFF80 0000000]
+[flashout 0.4]
+[se ad267]
+[shake 0.1 0 6 1.5]
+[wt 1.0]
+[se ad266]
+[wt 1.0]
+[se ad211]
+[fadeout white 2.0]
+[wait fade]
+[wt 0.5]
+[scene 37312]
+[fadein white 1.5]
+[wait fade]
+
+？1：Everyone's okay...!
+？2：Inshun, you deflected that flood with your spear!?
+
+？！
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠Inshun
+...That's what I did.
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace B 5]
+
+＠Inshun
+Indeed, there is nothing my cross-shaped spear cannot pierce! The six Heroic Spirit Swordmasters, was it? Step forward, if any of you dare!
+[k]
+
+＠Inshun
+From here on, I shall be fighting to kill. Whether you be oni, or god, or the Buddha himself, my spear will not hesitate to pierce you.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Musashi
+...!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,60]
+[charaFilter G silhouette 00000080]
+[charaMove G 1 0.1]
+[se ad223]
+[seVolume ad223 0 0.4]
+
+＠G：Stunning Girlish Voice
+...I am the Berserker of Saṃghāta Hell.
+[k]
+
+＠Berserker of Saṃghāta Hell
+I'm impressed, Houzouin. Ooh, and you're handsome, too. Even if I didn't reveal its True Name, I never thought you'd be able to stop a droplet from my Noble Phantasm.
+[k]
+
+＠Berserker of Saṃghāta Hell
+Especially since you don't even have a Curse of Annihilation yourself.
+[k]
+
+？1：Such an alluring voice...
+？2：Sure sounds familiar...
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Rider of Kālasūtra Hell
+My, my. Did you hear that, Berserker of Saṃghāta Hell? That child there seems to recognize you.
+[k]
+
+＠Rider of Kālasūtra Hell
+It seems there is more to [&him:her] than meets the eye.[sr]Like an insect you can't...quite...squash.
+[k]
+
+？1：It sounds like...
+？2：I've heard your voice before too...
+
+？！
+
+＠Rider of Kālasūtra Hell
+Oh. Oh?
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：Cold-Blooded Swordsman
+Kālasūtra.[sr]Saṃghāta.
+[k]
+
+＠C：Cold-Blooded Swordsman
+Enough playing around. Are the great Heroic Spirit Swordmasters incapable of remembering their lord's orders?
+[k]
+
+＠C：Cold-Blooded Swordsman
+Limbo, you were supposed to ensure everything went smoothly. Why do any of them still live?
+[k]
+
+＠C：Cold-Blooded Swordsman
+Paraíso, Inferno, that goes for you too.[sr]You should know better than to toy with your prey.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Assassin of Paraíso
+Yes, sir.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Archer of Inferno
+I'm...terribly sorry...
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Rider of Kālasūtra Hell
+My apologies.[sr]You are right, of course.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠Berserker of Saṃghāta Hell
+I don't remember signing up to be anyone's lapdog.[sr]I thought the agreement was that we could handle things however we wanted?
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Cold-Blooded Swordsman
+You little[line 2]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Musashi
+Hey, sorry to interrupt your infighting, but if you're all having a bit of a falling out, would you mind if we went on our way?
+[k]
+
+＠Musashi
+Yeeeah...didn't think so. Don't bother.[sr]I know what you're gonna say.
+[k]
+
+＠Musashi
+You there, the guy in the cloak.[sr]You must be the leader.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：Cold-Blooded Swordsman
+...
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Musashi
+I can already tell you're not the type to tell us your objective and look for a point of compromise.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：Cold-Blooded Swordsman
+Our objective?[sr]That should be quite obvious.
+[k]
+
+＠C：Cold-Blooded Swordsman
+First of all, you will hand that spearman over to us.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Inshun
+...Me?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：Cold-Blooded Swordsman
+Correct. After that, we will massacre every living person here. All who encounter the Heroic Spirit Swordmasters must die. There will be no exceptions.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Musashi
+If you think you can pull that off, go ahead and[line 2]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：Cold-Blooded Swordsman
+Of course we can pull that off.
+[k]
+
+＠C：Cold-Blooded Swordsman
+Did you truly think the six of[sr]us incapable of doing so, woman?
+[k]
+
+[charaSet B 1098118400 1 "Caster of Limbo"]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[wt 0.5]
+
+[charaTalk off]
+
+[charaFilter B silhouette 00000080]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 1.2]
+[charaFadeout B 0.2]
+[wt 0.4]
+
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 1.2]
+[charaFadeout F 0.2]
+[wt 0.4]
+
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 1.2]
+[charaFadeout D 0.2]
+[wt 0.4]
+
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 1.2]
+[charaFadeout E 0.2]
+[wt 0.4]
+
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 1.2]
+[charaFadeout G 0.2]
+[wt 0.4]
+
+[charaSet B 3014001 1 Inshun]
+[charaSet D 1098118600 1 Onui]
+
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Musashi
+...
+[k]
+
+＠Musashi
+(That sly fox. Never mind all six; any one of these people could pull that off. But if we just surrender, they'd end up killing us all the same...)
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Inshun
+([%1], [%1].)
+[k]
+
+＠Inshun
+(Words alone will not be enough to get us out of this. Should I fight all six of them, I will not be able to guarantee Onui and Tasuke's safety.)
+[k]
+
+＠Inshun
+(These are not ordinary Servants. I cannot put my finger on it, but there is something highly unusual about their nature.)
+[k]
+
+＠Inshun
+(But that makes me a good match for them.)
+[k]
+
+＠Inshun
+(In part, because they evidently came here seeking me.[sr]Of course, that isn't the only reason.)
+[k]
+
+＠Inshun
+(It's my first time fighting them, but my Noble Phantasm should be able to handle them...so I ought to at least be able to buy them some time.)
+[k]
+
+＠Inshun
+(Listen closely.[sr]I want you to let me handle this on my own.)
+[k]
+
+？1：You mean, run away while you act as a decoy?
+
+＠Inshun
+(Exactly!)
+[k]
+
+？2：But, if you do that...
+
+＠Inshun
+(Unfortunately...I do not believe there is any other way.)
+[k]
+
+？！
+
+＠Inshun
+(If you make a run for it, Musashi is sure to follow.[sr]That is as it should be.)
+[k]
+
+＠Inshun
+(You must carry Onui and Tasuke on your back.[sr]Are we clear?)
+[k]
+
+？1：...All right.
+
+？！
+
+[charaFace B 1]
+
+＠Inshun
+(Good. I'm counting on you.)
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠Inshun
+...Hahaha! [charaFace B 2]Listen up, you villainous oni calling yourselves Heroic Spirit Swordmasters!
+[k]
+
+＠Inshun
+You certainly do reek of blood! It is as Lady Musashi said: none of you are fit to live in a peaceful world!
+[k]
+
+＠Inshun
+How fortunate that you evidently have business with me! As one who practices the teachings of the Buddha, it is abundantly clear that you could all use a good lesson!
+[k]
+
+[charaFace B 0]
+
+＠Inshun
+There you have it, Lady Musashi![sr]The rest is up to you now!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Musashi
+Lord Inshun!?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠Inshun
+[%1], run!
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.3 1]
+[wait wipe]
+
+？1：Hold on tight, Onui!
+？2：Don't let go of Tasuke!
+
+？！
+
+＠Onui
+Oh god, don't let them get us...[sr](Sniff)... H-huh!?
+[k]
+
+[messageOff]
+[se ad7]
+[wt 0.2]
+[se ad443]
+[wipeout leftToRight 0.3 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[wt 0.1]
+[seStop ad443 0.5]
+[wipein rightToLeft 0.3 1]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Musashi
+!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠Inshun
+Go, Musashi! You must protect [%1] and the children!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Musashi
+...Thank you, Lord Inshun![sr]I'll be sure to pay you back for this with interest!
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[se ad73]
+
+[fadeout black 2.0]
+[bgmStop BGM_BATTLE_65 2.5]
+[wait fade]
+
+[wt 2.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Inshun
+...Good.[sr]Now we can fight without restraint.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：Cold-Blooded Swordsman
+So, you've chosen to let yourself be used as bait, Houzouin Inshun.
+[k]
+
+＠C：Cold-Blooded Swordsman
+Give it up.[sr]Your plan has no hope of success.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠Inshun
+Well, I don't know about that. It is true that your swordsman aura is immense. I believe it's on par with my own magical energy.
+[k]
+
+[charaFace B 0]
+
+＠Inshun
+I can also tell that you are a true master of your art, a person with monstrous abilities much like Musashi.[sr]Be that as it may, it matters not for my purpose here.
+[k]
+
+＠Inshun
+Even as we speak, there is a young [&man:woman] carrying young children while making [&his:her] escape, and they are accompanied by a swordsman of incredible skill.
+[k]
+
+[charaFace B 5]
+
+＠Inshun
+It falls upon me to ensure their safe passage.[sr]And that is exactly what I shall do.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：Cold-Blooded Swordsman
+I see.[sr]...Then you shall soon be dead.
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaFadein C 0.3 1]
+[charaFadeout C 0.15]
+[charaMoveScale C 1.2 0.15]
+[charaMove C 0,20 0.15]
+[se ad73]
+[wt 0.2]
+
+[fadeout black 0.2]
+[wait fade]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[fadein black 0.1]
+[wait fade]
+[charaFadein B 0.3 1]
+[charaFadeout B 0.15]
+[charaMoveScale B 1.2 0.15]
+[charaMove B 0,20 0.15]
+[se ad73]
+[wt 0.2]
+
+[effect bit_talk_kengekiall01]
+[se ad32]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[shake 0.03 4 4 0.3]
+[wt 0.4]
+[se ad171]
+[wt 0.2]
+[se ad110]
+[wt 0.1]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[shake 0.03 4 4 0.3]
+[wt 0.1]
+[se ad32]
+[wt 0.5]
+[flashOff]
+[wt 1.5]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_24 1.4]
+[wait fade]
+[soundStopAll]
+[end]

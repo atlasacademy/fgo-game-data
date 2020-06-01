@@ -1,0 +1,425 @@
+
+
+＄03-00-01-07-2-0
+[soundStopAll]
+
+
+
+[charaSet A 1098128000 1 Mash]
+[charaSet B 1098126400 1 Patxi]
+[charaSet C 5036001 1 Avicebron]
+[charaSet D 1098123210 1 Goredolf]
+[charaSet E 1098126510 1 Yaga]
+[charaSet F 1098128500 1 "Yaga Bandit"]
+[charaSet H 5009000 1 "Effect Dummy"]
+
+[scene 54802]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[fadein black 1.5]
+[effect bit_talk_snowstorm_02]
+[se ad555]
+[seVolume ad555 0 0.5]
+[wait fade]
+
+[wt 1.5]
+[effectStop bit_talk_snowstorm_02]
+[wt 1.0]
+[seStop ad555 1.0]
+[wt 1.5]
+
+[bgm BGM_EVENT_41 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠Mash
+This is terrible...!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠Patxi
+Damn, this is definitely a no-go...[sr]Let's head to the next village.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace B 3]
+[charaFadein B 0.1 0]
+[charaFace A 4]
+[charaFadein A 0.1 2]
+
+＠Mash
+...Um, shouldn't we look for survivors?
+[k]
+
+＠Patxi
+Don't bother. There aren't any.
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[wt 0.7]
+[cameraMove 0.7 -80,0 1.2]
+[wait camera]
+[wt 0.5]
+[cameraMove 1.2 80,0 1.2]
+[wait camera]
+[wt 1.0]
+
+？1：Hellooo!? Is anyone theeere!?
+？！
+
+[cameraMove 1.0 0,0 1.0]
+[wait camera]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Avicebron
+Hello, Shadow Border crew?[sr]Are you able to scan the area for signs of life?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+＠Goredolf
+We're tuning our equipment to make it capable of scanning for this world's life-forms, using that Yaga's life signs as a base...
+[k]
+
+＠Goredolf
+...but the Shadow Border's scanner is an older model, so I'm told it will take time to enter the parameters and cross-reference it with the approximation data.
+[k]
+
+＠Goredolf
+Suffice to say, it will go faster[sr]if you just look around, Avicebron.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Avicebron
+...Understood.
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[cameraMove 1.2 80,50 1.2]
+[wait camera]
+[wt 0.6]
+[cameraMove 1.0 -72,0 1.2]
+[wait camera]
+
+？1：Heeey! Anybooody!
+？！
+
+[bgmStop BGM_EVENT_41 0.5]
+
+
+＠Yaga
+Gh...[sr]O-over here...
+[k]
+
+[charaTalk A]
+[charaFace A 2]
+[charaScale A 0.83]
+[charaFadein A 0.1 0,-48]
+
+＠Mash
+Master!
+[k]
+
+[messageOff]
+[charaMove A -64,-48 0.6]
+[se ad586]
+[wt 0.2]
+[charaFadeout A 0.4]
+[seStop ad586 1.0]
+[wt 0.2]
+
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaScale A 1.0]
+[cameraHome 0.1]
+[wt 0.5]
+[wipein rightToLeft 0.5 1]
+[wait wipe]
+
+[wt 0.5]
+
+？1：Are you all right!?
+？！
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠Yaga
+Yeah... I was just knocked out for a while there...
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace E 1]
+[charaFadein E 0.1 0]
+[charaFace B 2]
+[charaFadein B 0.1 2]
+
+＠Patxi
+What happened here?
+[k]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠Yaga
+Bandits... We fought them off as best we could,[sr]but we only lasted four days before they...
+[k]
+
+[charaFace E 0]
+
+＠Yaga
+...Dammit.[sr]Are there any other survivors?
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Avicebron
+I'm afraid not.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+[charaFace B 4]
+[charaFadein B 0.1 2]
+
+＠Yaga
+Dammit!
+[k]
+
+＠Patxi
+Where'd these bandits run off to?
+[k]
+
+[charaFace E 1]
+
+＠Yaga
+I don't know for sure, but...probably[sr]one of the neighboring villages.
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠Mash
+We were just at one of those villages ourselves,[sr]so they must have gone to the other one.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠Patxi
+I've got a map here.[sr]Come on!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Avicebron
+I'm afraid we can't take you with us. But I can[sr]leave this food and some medical supplies with you.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠Yaga
+Thanks. I think I'll be okay once I rest up.[sr]As for food, well...I'll figure something out.
+[k]
+
+[charaFace E 0]
+
+＠Yaga
+If you're gonna go help the other village,[sr]then hurry, before they end up like ours.
+[k]
+
+[charaFace E 1]
+
+＠Yaga
+...Then again, I guess you can't[sr]really call this a village anymore...
+[k]
+
+？1：Sorry to leave you, but we've gotta go!
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Avicebron
+Please take one of my golems so we can hurry there, Master. ...I would hate for us to arrive too late.
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout C 0.1]
+[scene 54100]
+[wt 1.0]
+[fadein black 0.7]
+[wait fade]
+
+[wt 0.7]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Avicebron
+...Master, the golem I sent on[sr]ahead has found the village.
+[k]
+
+？1：How's it looking?
+？！
+
+＠Avicebron
+Not good. They have lit a red signal fire.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠Patxi
+Oh crap... That's a distress signal!
+[k]
+
+？1：There might still be time!
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+[bgmStop BGM_EVENT_81 0.5]
+
+＠Mash
+I see shadows in front of us. They're Yaga!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠Yaga Bandit
+Aaaah! Aaaah!
+[k]
+
+[bgm BGM_EVENT_80 0.1]
+
+＠Yaga Bandit
+Outta our way![charaFace F 2][sr]Outta [messageShake 0.05 5 5 0.5]our waaay!
+[k]
+
+[charaFace F 3]
+
+＠Yaga Bandit
+Move aside, or we'll kill ya dead!
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Avicebron
+It would seem they are not interested in a peaceful discussion. I believe things will go faster if I simply knock them aside.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠Mash
+Right! Please hurry!
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_80 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

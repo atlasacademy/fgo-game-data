@@ -1,0 +1,156 @@
+
+＄94-00-98-77-1-0
+
+
+
+
+[charaSet B 2025101 1 Mary]
+[charaSet C 2025201 1 Anne]
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+
+[scene 10400]
+
+[fadein black 2]
+[wait fade]
+
+
+[se ad310]
+[seVolume ad310 0 0.8]
+[wt 0.5]
+[seStop ad310 0.1]
+[wt 0.3]
+
+
+＠Mary
+Master! Master, are you there?
+[k]
+
+？1：Here I am.
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+
+＠Mary
+Oh good. We would have been so sad if you hadn't been...
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 0]
+
+[charaFace B 0]
+[charaFadein B 0.4 2]
+
+＠Anne
+You are quite inexperienced when it comes to things like this. Master, do you have a moment?
+[k]
+
+[charaFace C 0]
+
+＠Anne
+Mary.
+[k]
+
+[charaFace B 3]
+
+＠Mary
+Y-yes. Um, this...is a chocolate for you.
+[k]
+
+＠Mary
+For Valentine's Day.[sr]Yep. For what it's worth, it's handmade.
+[k]
+
+[messageOff]
+
+[charaTalk off]
+
+[se ad79]
+[wt 0.1]
+
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+
+
+？1：Thank you, I love it!
+？！
+
+[charaTalk on]
+[charaFace B 0]
+
+＠Mary
+We're glad... Oh! There's just one thing we want you to know about eating this chocolate, because you have to be careful:
+[k]
+
+[charaFace C 1]
+
+＠Anne
+It's not that complex.[sr]You just need to eat it a little bit at a time.
+[k]
+
+[charaFace B 1]
+
+＠Mary
+If you eat it too much at once, you might get hurt.
+[k]
+
+[charaFace C 0]
+
+＠Anne
+Now, if you will excuse us.[sr]We'll be waiting for you...
+[k]
+
+[charaFace B 0]
+
+＠Mary
+We'll be waiting! Bye!
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[charaFadeout C 0.4]
+[se ad8]
+[wait se ad8]
+[wt 0.5]
+
+
+
+[se ad182]
+[wt 1.0]
+
+？1：Hm?
+？！
+
+[se ade26]
+
+[equipSet A 9805200 1]
+[wait equipSet A]
+[charaFace A 0]
+[charaFadein A 0.5 0,-70]
+[wt 2.0]
+[charaFadeout A 0.4]
+[wt 1.0]
+
+
+
+？1：Is this...a key to a room...?
+？！
+
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+[soundStopAll]
+[end]

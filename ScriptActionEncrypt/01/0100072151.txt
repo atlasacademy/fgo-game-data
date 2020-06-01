@@ -1,0 +1,179 @@
+
+
+
+＄01-00-07-21-5-1
+
+[soundStopAll]
+[bgm BGM_EVENT_24 0.1]
+[charaSet A 98003000 1 "Dr. Roman"]
+[charaSet B 98013200 1 Tiamat]
+[charaSet C 98106200 1 Merlin]
+[charaSet D 98002000 1 Fou]
+[charaSet E 8001002 1 Mash]
+[charaSet F 98106500 1 Gilgamesh]
+
+[scene 35500]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk A]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr. Roman
+Beast II is still standing! Dammit. Her Spirit Origin's durability is astounding!
+[k]
+
+＠Dr. Roman
+Your attacks are still effective, though! Almost, you're almost there!
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[messageOff]
+[effect bit_talk_voice01]
+[se ad205]
+[shake 0.05 0 6 0]
+
+＠Tiamat
+Aaaaaaaaaaaaaa[sr]LAAAAAAAAAAAAAAAAAAAAAAAAAAA!
+[k]
+
+[shakeStop]
+[effectStop bit_talk_voice01]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠Merlin
+Ugh, trying to swallow me whole!? Rude! I'm not Marduk, there's no way I'd survive that!
+[k]
+
+＠Merlin
+Cath Palug, do me a favor! Can you go ahead and teleport me!?
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠Fou
+Fooou, fou? (Special translation: What the hell are you talking about?)
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.2]
+[charaEffect C bit_talk_13]
+[wt 0.1]
+[se bac10]
+[charaShake C 0.05 4 4 0.4]
+[wt 0.7]
+
+＠Merlin
+Ghaaaaaaaa! How dare you, Cath Paluuug!
+[k]
+
+[se ad75]
+[seVolume ad75 0 0.4]
+[wt 0.2]
+[charaMove C 0,-92 0.2]
+[charaFadeout C 0.2]
+[wt 1.0]
+
+[charaTalk A]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr. Roman
+What, is Merlin out!? You can't neutralize the Chaos Tide without him!
+[k]
+
+＠Dr. Roman
+Damn! She went to target the support first! We won't be able to fight for long without him!
+[k]
+
+＠Dr. Roman
+Keep your distance! If you two get consumed by the Chaos Tide, that'll be the end of everything!
+[k]
+
+？1：But we can't just back down now...!
+？2：I don't care if we end up getting consumed...!
+
+？！
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠Mash
+In that case, I'll be a shield for Master!
+[k]
+
+＠Mash
+Getting swallowed by the mud would change Senpai into a different creature, but I won't let that happen!
+[k]
+
+＠Mash
+As a Demi-Servant, I should be able to withstand it for a while!
+[k]
+
+＠Mash
+Doctor! If Master is determined to stay, I stay, too!
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk A]
+[charaFace E 7]
+[charaFadein E 0.1 2]
+[communicationCharaLoop 98003003 0 5 0 5]
+＠Dr. Roman
+Mash...! But your body can barely[line 3]
+[k]
+
+[bgmStop BGM_EVENT_24 2.4]
+
+＠F：???
+What are you talking about? If a long battle is not possible, you just need to end it swiftly.
+[k]
+
+[bgm BGM_EVENT_40 3.1]
+
+＠F：???
+Or are you worried about your firepower? I suppose you fools leave me no choice. I will help you out.
+[k]
+
+[charaFace E 6]
+＠Mash
+Y-you are[line 3]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[communicationCharaClear]
+[wait communicationChara]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.7 1]
+＠Gilgamesh
+Servant, Archer. Gilgamesh, King of Heroes. You mongrels were making such a racket, I had to come see what was happening.
+[k]
+
+[charaFace F 1]
+＠Gilgamesh
+Well, I came all the way here. What's a little rule-breaking for a king?
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_40 1.4]
+[wait fade]
+[soundStopAll]
+[end]

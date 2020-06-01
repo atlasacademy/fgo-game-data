@@ -1,0 +1,202 @@
+＄01-00-03-04-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 20300 0]
+[charaSet A 8001001 1 Mash]
+[charaSet B 98003003 1 "Dr. Roman"]
+[charaSet C 98002000 1 Fou]
+[charaSet D 4003001 1 Drake]
+[charaSet E 98018100 1 Pirate]
+[charaSet F 98111500 1 "Da Vinci"]
+[charaFace A 0]
+[charaFadein A 0 1]
+[fadein black 1]
+[wait fade]
+＠Mash
+The battle has ended, Master.[sr]Creating terminal point.
+[k]
+
+[se ad31]
+[wt 1]
+[seStop ad31]
+＠Dr. Roman
+...Huh?[sr]Something just...
+[k]
+
+＠Mash
+What's wrong?
+[k]
+
+＠Dr. Roman
+No, just my imagination.[sr]You can start setting up as usual.
+[k]
+
+[charaFace A 13]
+＠Mash
+Very well.[sr]Now, then[line 2]
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[charaFadeout A 0.4]
+[wait fade]
+[wt 0.5]
+[scene 10000 0]
+[fadein black 0.5]
+[wait fade]
+[se ad13]
+[wait se ad13]
+[communicationChara 98111500 1 5 0 1]
+[wt 0.3]
+＠Da Vinci
+[line 2]All right, everyone. Time for a little history lesson,[sr]courtesy of yours truly.
+[k]
+
+[communicationCharaFace 0]
+＠Da Vinci
+Right now, you're in the middle of the Age of Exploration.
+[k]
+
+＠Da Vinci
+Many things were imported from the East, and Europe[sr]started advancing into the new land, fighting to gain a foothold.
+[k]
+
+＠Da Vinci
+One of many things imported from the East were spices.[sr]Nutmeg, cloves, and peppercorns...or pepper.
+[k]
+
+＠Da Vinci
+Pepper was necessary to help eat decomposing meat.[sr]In this era, it was more precious than gold.
+[k]
+
+＠Da Vinci
+Case in point. I just transferred a pepper shaker to you.[sr]What do you think would happen when you hand that to Captain Drake.
+[k]
+
+＠Da Vinci
+Try it.
+[k]
+
+＠Drake
+Seeeeeeeeriously?
+[k]
+
+[wt 0.5]
+[se bac11]
+[wait se bac11]
+？1：She collapsed.
+
+？2：She passed out.
+
+？！
+
+[communicationCharaFace 1]
+＠Da Vinci
+Amusing, right? Oh, and be sure to retrieve it.[sr]We shouldn't aimlessly disrupt their economy.
+[k]
+
+＠Da Vinci
+In the meanwhile, the summoning circle is up.[sr]Use it to your heart's content.
+[k]
+
+[fadeout black 0.5]
+[messageOff]
+[wait fade]
+[communicationCharaClear]
+[wait communicationChara]
+[scene 10500 0]
+[charaFace A 0]
+[charaFadein A 0 1]
+[se ad29]
+[fadein black 0.5]
+[wait fade]
+＠Mash
+Summoning circle confirmed.[sr]Terminal point established.
+[k]
+
+[charaFadeout A 0]
+[charaTalk B]
+[charaFadein A 0.1 2]
+[communicationCharaLoop 98003003 0 5 0 0]
+＠Dr. Roman
+Oh, and yes...[sr]I got a hit on that pirate flag from earlier[line 2]
+[k]
+
+[se ad31]
+[wt 1]
+＠Dr. Roman
+That's the flag of the legendary ■ate, ■■ of the "■■."[sr]In other words, those pirates are ■■■ called ■■■■■.
+[k]
+
+[charaFace A 14]
+＠Mash
+Doctor? Doctor, the communications are acting up[line 2][sr]Doctor!?
+[k]
+
+[communicationCharaStop]
+[seStop ad31]
+＠Dr. Roman
+[line 6]
+[k]
+
+[charaFadeout A 0.1]
+[charaFadein A 0.1 1]
+[scene 20300 0]
+[charaFace A 7]
+＠Mash
+We've lost contact.[sr]What on earth could have...
+[k]
+
+[bgmStop BGM_EVENT_2 0.1]
+[se ad14]
+[messageOff]
+[shake 0.05 0 5 0]
+[charaFace A 6]
+＠Mash
+Eek! An earthquake?
+[k]
+
+[charaFadeout A 0.1]
+[charaTalk D]
+[charaFadein A 0.1 2]
+[charaFace D 2]
+[charaFadein D 0.1 0]
+＠Drake
+Get down. It's a big one!
+[k]
+
+[wt 1]
+[shakeStop]
+[seStop ad14 2]
+[charaFace A 0]
+＠Mash
+...It settled down.[sr]Master, are you all right?
+[k]
+
+？1：I'm fine.
+
+？2：No injuries.
+
+？！
+
+[charaFace A 13]
+＠Mash
+Seems that way. Thank goodness.[sr]How about you, Drake?
+[k]
+
+[charaFace D 0]
+＠Drake
+That was a breeze compared to a raging ocean.[sr]But I'm worried about my ship and crew. Can we go back for a bit?
+[k]
+
+[charaFace A 0]
+＠Mash
+Let's do that.
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

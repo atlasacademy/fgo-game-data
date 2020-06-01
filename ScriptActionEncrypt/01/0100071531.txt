@@ -1,0 +1,505 @@
+
+
+
+＄01-00-07-15-3-1
+[soundStopAll]
+[charaSet A 98106200 1 Merlin]
+[charaSet B 8001002 1 Mash]
+[charaSet C 2020001 1 Ishtar]
+[charaSet D 98003000 1 "Dr. Roman"]
+[charaSet E 3028001 1 "Jaguar Warrior"]
+[charaSet F 98107500 1 "Uruk Soldier"]
+[charaSet G 98016000 1 "Uruk Soldier B"]
+[charaSet H 4018001 1 Quetzalcoatl]
+
+[bgm BGM_EVENT_24 0.1]
+[scene 32940]
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 2]
+
+＠Dr. Roman
+Enemy Demonic Beasts annihilated! Good work!
+[k]
+
+＠Dr. Roman
+I'm not picking up any more around the area. Looks like that was all the Demonic Beasts that were nesting in Babylon!
+[k]
+
+
+？1：No wonder there were so many...
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠Mash
+Indeed. The battle was tougher than we imagined.[sr]Senpai, are you okay?
+[k]
+
+＠Mash
+We're going to have to keep fighting without rest.[sr]Make sure you don't run out of magical energy.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？2：Ishtar, you're helping quite a bit.
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Ishtar
+I know. I was thinking this was where it all started, so that's why I got all fired up.
+[k]
+
+[charaFace C 1]
+＠Ishtar
+Back then, I thought: “What a rude human. How can I torment [&him:her]?”
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Merlin
+Sorry to bother you mid-conversation, [%1], but could you put me through to Dr. Roman?
+[k]
+
+＠Merlin
+It's been about an hour. How's the Northern Wall looking?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 5]
+
+
+＠Dr. Roman
+The battle has just begun.
+[k]
+
+＠Dr. Roman
+The first wave of Demonic Beasts has passed through Nippur, and will engage the Northern Wall defense force in five minutes.
+[k]
+
+＠Dr. Roman
+And leading the charge is a young man with green hair[line 3]it's Kingu, commander of Tiamat's Eleven Offspring.
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+[communicationCharaClear]
+[wait communicationChara]
+[wt 1.0]
+
+[scene 34600]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad16]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠G：Uruk Soldier
+They're coming! First line, get ready! It's time to use what King Leonidas taught you!
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠F：Uruk Soldier
+Listen! You should only fight on the front for about half an hour! Our individual power won't prevail against them!
+[k]
+
+＠F：Uruk Soldier
+If you get tired, fall back to the fourth line, rest, and get new weapons! Breathe steadily and wait to return to the fight!
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠G：Uruk Soldier
+They're making contact!
+[k]
+
+＠G：Uruk Soldier
+It's time to show the king just how strong us survivors are! Men, attack!
+[k]
+
+[messageOff]
+[seStop ad16 0.7]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+[scene 10000]
+[wipein leftToRight 0.1 1]
+[wait wipe]
+[se ad51]
+[wt 0.7]
+[se ad25]
+[wt 0.4]
+[se ad33]
+[effect bit_talk_kengekiall01]
+[wt 1.0]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 1.0]
+[wipeout rightToLeft 0.1 1]
+[wait wipe]
+[scene 34600]
+[charaSet G 98106000 1 Kingu]
+[wt 0.1]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+
+＠Jaguar Warrior
+The Great Animal War begins meow! We should head out too, Kuku!
+[k]
+
+＠Jaguar Warrior
+The people at the Northern Wall accepted me quickly and let me eat good meat! We can't let these fur-midable warriors die!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein E 0.1 0]
+[charaFadein H 0.1 2]
+
+＠Quetzalcoatl
+I agree, Jaguar. Normally both sides of a fight are at fault, but those Demonic Beasts were twisted by Gorgon.
+[k]
+
+＠Quetzalcoatl
+They've lost their ability to reproduce in order to up their combat capability. They're sad creatures that will die out once this is all over.
+[k]
+
+＠Quetzalcoatl
+Are they good, or are they evil? No sé! But I would rather fight for the side that has a future, yes!
+[k]
+
+[charaFace E 2]
+＠Jaguar Warrior
+All right, let's go! Time for me to show you the PAWer of the jungle!
+[k]
+
+[charaFace H 2]
+＠Quetzalcoatl
+...! Jaguar!
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk off]
+[charaFadein E 0.1 1]
+[messageOff]
+[charaEffect E bit_talk_38]
+[se bac111]
+[wt 0.4]
+
+[charaEffectStop E bit_talk_38]
+[charaFadein H 0.1 2]
+[charaMove H 0,0 0.2]
+[wait charaMove H]
+[se ad102]
+[charaShake E 0.01 5 5 0.4]
+[charaMove E 0 0.4]
+[charaFadeout E 0.4]
+[wait charaMove E]
+[charaFadeout H 0.1]
+[se ad171]
+[charaEffect H bit_bolg_02y]
+[wt 0.4]
+[se ad32]
+[charaEffect H bit_talk_14]
+[shake 0.05 5 5 0.4]
+[wt 0.7]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠Kingu
+Oh? I thought it was a Servant, but it's just you, Quetzalcoatl.
+[k]
+
+＠Kingu
+Haven't seen you since Mother took the throne. I assume the Three Goddess Alliance fell apart.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+
+＠Quetzalcoatl
+Yes, Ereshkigal and I have withdrawn from Uruk.[sr]I'm helping the humans now.
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠Kingu
+...I see. That's unfortunate. You were a wise goddess.
+[k]
+
+＠Kingu
+Ereshkigal aside, I thought at least you would have understood Mother's grief.
+[k]
+
+＠Kingu
+You, the goddess that had the civilization she nurtured destroyed by the savage conqueror Cortés.
+[k]
+
+＠Kingu
+I felt sympathy for you when you said that you would destroy every single human.
+[k]
+
+＠Kingu
+I thought that you alone would take on the world, and become an avatar of slaughter.
+[k]
+
+＠Kingu
+So where is that goddess?
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠Quetzalcoatl
+Where? I'm. Riiight. Here.
+[k]
+
+[messageOff]
+[se ad73]
+[charaMove H -50,0 0.1]
+[charaFadeout H 0.1]
+[wait charaMove H]
+[wt 0.1]
+[charaEffect G bit_talk_kengekiall01]
+[shake 0.05 3 3 0.2]
+[se bac142]
+[wt 0.3]
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+[shake 0.05 3 3 0.2]
+[se bac136]
+[wt 0.3]
+[shake 0.05 3 3 0.2]
+[se bac137]
+[wt 0.3]
+[se bac143]
+[charaFace G 6]
+[charaEffect G bit_talk_13]
+
+[charaShake G 0.01 2 2 0.7]
+
+＠Kingu
+What...!?
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠Quetzalcoatl
+Okay, just kidding, yes! That's enough silly faces, yes!
+[k]
+
+[charaFace H 7]
+＠Quetzalcoatl
+Prepare yourself, Kingu. I'm going after Gorgon as soon as I take you out.
+[k]
+
+＠Quetzalcoatl
+I'm going to keep marching forward, and take the heart of the one who is imitating Tiamat.
+[k]
+
+＠Quetzalcoatl
+Consider that my thanks to her.
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠Kingu
+Thanks...? And what thanks would that be?
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+
+＠Quetzalcoatl
+Thanks for not trying to kill me. Thanks for helping me find a wonderful Master.
+[k]
+
+[charaFace H 1]
+＠Quetzalcoatl
+Yes, I will ignore my pledge as a goddess for my Master!
+[k]
+
+＠Quetzalcoatl
+Gorgon's head will be mine!
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠Kingu
+You are absurdly strong, Quetzalcoatl. More than that, you're altogether absurd. I couldn't be more disappointed.
+[k]
+
+[charaFace G 8]
+＠Kingu
+We don't need a stupid goddess in our new world. I will shred you to pieces, along with your precious winged serpents!
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+[charaSet F 3027000 1 Ana]
+[charaFadeout G 0.1]
+[scene 32940]
+[seStop ad16 1.0]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 5]
+
+＠Dr. Roman
+Quetzalcoatl's keeping Kingu busy for now. As long as she's still with us, Kingu won't get close!
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Merlin
+All right, everything's going according to plan. Quetzalcoatl's good at getting people worked up.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Ana
+That's an adult goddess for you. She's flat-out lying and kindling Kingu's anger.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠Mash
+...? I don't know what part of that was a lie.[sr]Any ideas, Senpai?
+[k]
+
+？1：The part where I'm a wonderful Master?
+？2：The part where she wouldn't make faces anymore?
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Ishtar
+It's the part where she said she would ignore her goddess pledge. Quetzalcoatl is far more powerful than Gorgon.
+[k]
+
+＠Ishtar
+Kingu can't stand idly by if Quetzalcoatl says she's going to take out Gorgon even if it kills her.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+
+＠Mash
+Th-that makes sense.
+[k]
+
+＠Mash
+Now that you mention it, that's true... It sounded so obvious, so I didn't notice...
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Merlin
+At any rate, the plan is proceeding nicely. Let's head to the Cedar Forest! There's no resting from here! Let's go, everyone!
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_24 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]
+

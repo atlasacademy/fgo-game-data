@@ -1,0 +1,1265 @@
+
+
+
+＄01-00-07-20-5-1
+
+[soundStopAll]
+[bgm BGM_EVENT_24 0.1]
+[charaSet A 98003000 1 "Dr. Roman"]
+[charaSet B 8001002 1 Mash]
+[charaSet C 2020001 1 Ishtar]
+[charaSet E 98107400 1 Ushiwakamaru]
+[charaSet G 98006200 1 "Enemy A"]
+[charaSet H 98006200 1 "Enemy B"]
+
+[charaSet D 98006200 1 "Enemy C"]
+[charaSet F 98006200 1 "Enemy D"]
+
+[scene 20733]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[wt 0.7]
+[charaEffect E bit_talk_13]
+[wt 0.1]
+[charaFace E 4]
+[se bac11]
+[charaShake E 0.05 5 5 0.7]
+[wt 1.5]
+
+[se ad161]
+[charaSpecialEffect E enemyErasure 1 1.8]
+[wt 0.4]
+[se ad42]
+[wt 0.5]
+[effect bit_talk_tokeru01]
+[wait effect bit_talk_tokeru01]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.4 1]
+＠Ushiwakamaru
+It doesn't make any difference how many of me you kill. Haven't you learned?
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr. Roman
+Ushiwakamaru has reappeared from the Chaos Tide! ...Damn, how do we defeat this thing!?
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+＠Mash
+Ushiwakamaru's Spirit Origin is completely different now... But why[line 3]
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+[wt 0.7]
+
+[flag MALE false]
+[flag FEMALE false]
+[selectionUse masterMale]
+？1：Why do you want to kill humans...!?
+
+[flag MALE true]
+
+？2：Why are you working for Tiamat!?
+
+[flag MALE true]
+
+？！
+
+[selectionUse masterFemale]
+？1：Why do you want to kill humans...!?
+
+[flag FEMALE true]
+
+？2：Why are you working for Tiamat!?
+
+[flag FEMALE true]
+
+？！
+
+[charaFace E 4]
+＠Ushiwakamaru
+Why, you ask...?
+[k]
+
+[charaFace E 5]
+＠Ushiwakamaru
+What about all of you! Why do you fight so hard to protect humans!?
+[k]
+
+＠Ushiwakamaru
+You say that the Laḫmus are horrendous? That these monsters are ugly?
+[k]
+
+＠Ushiwakamaru
+But there is no difference. Humans or Laḫmus, there's no difference. They [charaFace E 2]are the same!
+[k]
+
+[charaFace E 5]
+＠Ushiwakamaru
+Let's say there was a heroic deed done amidst a mass of tragedies. A miracle that happened among many sacrifices.
+[k]
+
+＠Ushiwakamaru
+Out of all the people who only worked for profit, there was one who went around and helped the suffering and asked for nothing.
+[k]
+
+[charaFace E 2]
+＠Ushiwakamaru
+Such an achievement would only be taken advantage of, and then dishonored by those who failed to live up to that standard!
+[k]
+
+＠Ushiwakamaru
+You humans are always like that! You all crowd around a miracle and then insult and laugh about it amongst each other!
+[k]
+
+＠Ushiwakamaru
+Why would I want to fight for such creatures!? Why did we have to be killed!?
+[k]
+
+[charaFace E 2]
+＠Ushiwakamaru
+At this point I won't even try to correct your actions. Just die. Die, all of you!
+[k]
+
+＠Ushiwakamaru
+Dying and starting from scratch is the only way left for this world.
+[k]
+
+[messageOff]
+[se ad42]
+[charaFace G 0]
+[charaFadein G 0.4 0]
+[wt 0.2]
+[charaFace H 0]
+[charaFadein H 0.4 2]
+[wt 0.2]
+[charaFace D 0]
+[charaFadein D 0.4 -512,0]
+[wt 0.2]
+[charaFace F 0]
+[charaFadein F 0.4 512,0]
+[wt 0.2]
+[wt 1.0]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[wt 0.1]
+
+[charaSet D 3006001 1 Benkei]
+[charaSet F 4014002 1 "Ushiwakamaru B"]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠Ishtar
+It's still multiplying!? Has this monster divided even its soul...!?
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠Ushiwakamaru
+Hahahahahahaha! I'll show you no quarter 'til the very end!
+[k]
+
+＠Ushiwakamaru
+As long as I am here, you will never touch Mother!
+[k]
+
+＠Ushiwakamaru
+I will tear you to bloody pieces! You can't stop all of my copies!
+[k]
+
+[bgmStop BGM_EVENT_24 0.4]
+＠D：???
+That is impossible. Your number is meaningless in front of the last ray of hope.
+[k]
+
+＠D：???
+It is true the masses are ugly, however...
+[k]
+
+＠D：???
+How could you be the one to deny the only heroic deed?
+[k]
+
+[charaFace E 2]
+＠Ushiwakamaru
+...! Who's there!?
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[wt 0.1]
+
+[se ad73]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.2 1]
+＠Benkei
+[&Lord:Lady] [%1]! I apologize for my lateness!
+[k]
+
+？1：Benkei!
+？2：You're wounded all over...!
+
+？！
+
+[charaFace D 1]
+＠Benkei
+Nay, my limbs are still attached[line 3] Actually, I am now at my very best!
+[k]
+
+＠Benkei
+I am ashamed of my cowardice! But still, allow me to take responsibility for the crimes of my lord!
+[k]
+
+[messageOff]
+[charaMove D -256,0 0.2]
+[charaFadeout D 0.2]
+[se ad73]
+[wt 0.4]
+
+[charaTalk depthOff]
+[charaTalk D]
+[charaDepth E 0]
+[charaDepth F 2]
+[charaDepth D 1]
+
+[charaFace D 5]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[wt 0.4]
+[charaFadein D 0.2 384,0]
+[charaMove D 128,0 0.2]
+[wt 0.2]
+
+[charaEffect E bit_talk_14]
+[wt 0.1]
+[se bac11]
+[charaShake E 0.05 5 5 0.7]
+[charaMove E -128,0 0.4]
+[wt 0.7]
+
+[charaFace E 2]
+＠Ushiwakamaru
+You, you were still alive...! I should have roasted you instead of showing you mercy!
+[k]
+
+[charaShake E 0.05 4 4 0.4]
+＠Ushiwakamaru
+Hey, let go! Let me go, you third-rate actor! There's no stage left for you at this point!
+[k]
+
+[charaFace D 2]
+＠Benkei
+No, I will not! This Musashibou will never let go! Not this time! Even death shall not separate us!
+[k]
+
+＠F：Ushiwakamaru
+...Fine. Then you shall die with me.
+[k]
+
+[bgmStop BGM_EVENT_3 0.5]
+[messageOff]
+
+[charaEffect D bit_talk_14]
+[wt 0.1]
+[se bac95]
+[charaFace D 5]
+[charaShake E 0.05 3 3 0.4]
+[charaShake D 0.05 3 3 0.4]
+[wt 0.1]
+[se ad46]
+[charaEffect D bit_talk_35]
+[wt 3.0]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+＠Mash
+The surrounding Ushiwakamarus have run them both through!
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 -128,0]
+[charaFace D 5]
+[charaFadein D 0.1 128,0]
+＠Ushiwakamaru
+Humph. What were you going to do just taking one of me along with you?
+[k]
+
+＠Ushiwakamaru
+You alone cannot do anything for me anymore. I told you that.
+[k]
+
+＠Ushiwakamaru
+...You somehow hung onto that life. You should have just cowered in your corner until the end.
+[k]
+
+＠Ushiwakamaru
+Such foolhardy courage is unlike you, Hitachibou.
+[k]
+
+[bgm BGM_EVENT_6 2.1]
+[charaFace D 4]
+＠Benkei
+...Indeed. I'm terrified.
+[k]
+
+＠Benkei
+...I thought I had made my peace, but it could never be enough. So this is the horror of a lone dash towards death...
+[k]
+
+[charaFace E 5]
+＠Ushiwakamaru
+Why, you! You're still...!
+[k]
+
+[charaFace D 5]
+＠Benkei
+However, what pushed me forward was not resolve. Anger. It was anger that pushed me forward.
+[k]
+
+＠Benkei
+...Lord Ushiwakamaru. That hatred of yours does not come from Tiamat.
+[k]
+
+＠Benkei
+It was something that was always buried within you, pointed towards all humans.
+[k]
+
+[charaFace D 4]
+＠Benkei
+...That was something I could not bear.
+[k]
+
+＠Benkei
+No matter how much the others thought you strange, you lived free.
+[k]
+
+＠Benkei
+...Truly, there is nothing lonelier than genius. I never imagined you were alone till the very end.
+[k]
+
+＠Benkei
+Even if he could not save your heart, Benkei must not have wanted to leave you alone.
+[k]
+
+[charaFace D 5]
+＠Benkei
+For you to be consumed with such anger[line 3]I could not bear it.
+[k]
+
+[charaFace E 5]
+[charaShake E 0.05 3 3 0.4]
+＠Ushiwakamaru
+Silence...! Argh, what are you doing, Ushiwakamaru!? Come! Slice his limbs off along with me! Chop his head off!
+[k]
+
+＠Ushiwakamaru
+There's no use in listening to a monk's lecture now!
+[k]
+
+[charaFace D 1]
+＠Benkei
+Hahaha. You mustn't speak lightly of lectures. After all, even something such as this can be done if mastered.
+[k]
+
+[messageOff]
+[se ad39]
+[effect bit_talk_06]
+[wt 2.0]
+
+[charaFace E 5]
+＠Ushiwakamaru
+Impossible! This is[line 3]How!? Y-you're peeling Tiamat's Authority off of me[line 3]
+[k]
+
+＠Ushiwakamaru
+N-no, you're tearing me out of it...! Benkei, what have you...!?
+[k]
+
+[charaFace D 2]
+＠Benkei
+I am just doing as Benkei does! This time, my lord, I shall be with you till the end!
+[k]
+
+＠Benkei
+If our opponent is the Primordial Sea, then may this existence be of some small help!
+[k]
+
+＠Benkei
+Now, let us burn all of our sins in the Western Paradise![se ad376][sr]Pilgrimage of the Five Hundred Arhat[line 3] Lord Yoshitsune.
+[k]
+
+＠Benkei
+Please forgive me for my long absence[line 3]
+[k]
+
+[charaFace E 5]
+＠Ushiwakamaru
+...You fool. You always worried about such silly, petty things...
+[k]
+
+[charaFace E 4]
+＠Ushiwakamaru
+There's no joy in taking the life of a coward like you...
+[k]
+
+＠Ushiwakamaru
+To think you were even called a sage... A fool will always be a fool...
+[k]
+
+[bgmStop BGM_EVENT_6 2.4]
+[se ad377]
+[messageOff]
+[fadeout white 2.0]
+[wait fade]
+[effectStop bit_talk_06]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[scene 10001]
+[wt 2.0]
+[fadein white 0.1]
+[wait fade]
+[fadeout black 1.5]
+[wait fade]
+
+[charaTalk depthOn]
+
+[branch play01 MALE 1]
+[branch play02 FEMALE 1]
+
+[label play01]
+[charaSet D 98108000 1 Player]
+[branch play03]
+
+[label play02]
+[charaSet D 98108100 1 Player]
+[branch play03]
+
+[label play03]
+[charaSet E 4018001 1 "Quetzalcoatl B"]
+[charaSet F 4018001 1 Quetzalcoatl]
+[charaSet G 98013200 1 Tiamat]
+[charaSet H 98107900 1 "Bel Laḫmu"]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[scene 20733]
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_EVENT_24 0.1]
+
+＠Mash
+...Confirming the disappearance of both Benkei and Ushiwakamaru's Spirit Origins. Tiamat's guardians are gone...
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk A]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr. Roman
+...Yes. But there's no time to grieve. Quetzalcoatl, you ready?
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠Quetzalcoatl
+Of course. Ready to goooo!
+[k]
+
+＠Quetzalcoatl
+Everyone, after I fly off, move away from Tiamat. If you stay too close, you'll burn up along with everything.
+[k]
+
+？1：Quetzalcoatl...
+？2：...You're gonna be okay, right...?
+
+？！
+
+[charaFace F 1]
+＠Quetzalcoatl
+Don't give me that look, no! Just leave it to your big sis, yes!
+[k]
+
+＠Quetzalcoatl
+All right then, I'm gonna go burn off the face of the Earth...just a little!
+[k]
+
+[messageOff]
+[se ad85]
+[charaEffect F bit_talk_21]
+[charaFadeout F 0.1]
+[wt 0.4]
+[charaEffectStop F bit_talk_21]
+[wt 1.2]
+
+
+[wipeout upToDown 0.3 1]
+[wait wipe]
+[scene 35010]
+[wt 0.1]
+[wipein downToUp 0.3 1]
+[wait wipe]
+
+＠Tiamat
+...
+[k]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.4 1]
+＠Quetzalcoatl
+...Tiamat. The Primordial Sea that wove the base for all life.
+[k]
+
+＠Quetzalcoatl
+To see that you, of all beings, seek to destroy mankind and create a new world... My heart breaks for you, Tiamat...
+[k]
+
+[charaFace F 2]
+＠Quetzalcoatl
+However... This world belongs to the humans! Without reason, without will, without soul...
+[k]
+
+＠Quetzalcoatl
+...You elect to consume and destroy your own children in blind hatred! This, I cannot allow.
+[k]
+
+＠Quetzalcoatl
+South America's goddess lives with the forest and beasts! The sun blesses with life and creation, not destruction!
+[k]
+
+[messageOff]
+[flashin once 0.1 0.3 FF0000AF FF000000]
+[se bac133]
+[se ad167]
+[seVolume ad167 0 0.3]
+[charaPut E 0,600]
+[charaEffect E bit_talk_32]
+
+＠Quetzalcoatl
+The past is here!
+[k]
+
+＠Quetzalcoatl
+The present is here. The future is here! Come winds, come lightning!
+[k]
+
+＠Quetzalcoatl
+When the morning star shines, let all know the sun's light reaches every corner of the Earth!
+[k]
+
+＠Quetzalcoatl
+[f large]Piedra Del Sol![f -]
+[k]
+
+[messageOff]
+[seStop ad167 0.7]
+[se bac176]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.4]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.4]
+[se bac187]
+[fadeout white 2.0]
+[wait fade]
+
+[charaEffectStop E bit_talk_32]
+[charaFadeout F 0.1]
+[wt 1.0]
+
+[fadein white 0.5]
+[wait fade]
+
+[se ad205]
+＠Tiamat
+[f large][messageShake 0.05 3 3 0.7]Aaaaaa, aaaaa[line 6]
+[k]
+
+[wt 0.2]
+[messageOff]
+[wipeout upToDown 0.3 1]
+[wait wipe]
+[scene 20733]
+[wt 0.1]
+[wipein downToUp 0.3 1]
+[wait wipe]
+
+[wt 0.5]
+[se ad68]
+[seVolume ad68 0 0.5]
+[scene 20730 2.5]
+[wait scene]
+[wt 2.0]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠Mash
+Quetzalcoatl is flying! She's one hundred meters above Tiamat's head!
+[k]
+
+＠Mash
+There's a...a massive heat source above her! It's the solar winds! The Chaos Tide is evaporating!
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 0]
+[charaFace B 2]
+[charaFadein B 0.1 2]
+＠Ishtar
+Hothothot...! Mash, please block it! Come on [%1], get behind Mash too!
+[k]
+
+[charaTalk depthOff]
+[charaDepth C 0]
+[charaDepth B 1]
+
+[se ad7]
+[charaMove C -128,0 0.4]
+[charaFadeout C 0.4]
+[wt 0.5]
+[charaShake B 0.05 3 3 0.25]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠Ishtar
+Eep! She really is the principal deity of South America! That's one heck of a trump card she's got!
+[k]
+
+＠Ishtar
+If she'd used this on Uruk, it would've burned to cinders in a[line 3]
+[k]
+
+[charaFace C 2]
+＠Ishtar
+Quetzal[messageShake 0.05 5 5 0.5]coatl!
+[k]
+
+[messageOff]
+[wipeout downToUp 0.3 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[scene 35010]
+[wt 0.1]
+[wipein upToDown 0.3 1]
+[wait wipe]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.7]
+
+[se ad203]
+[effect bit_talk_41]
+[wt 0.4]
+[cameraMove 0.5 0,0 2.0]
+[wipeout circleIn 0.5 1]
+[wait wipe]
+[effectStop bit_talk_41]
+[charaFadeout H 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+[charaPut E 0,600]
+[charaEffect E bit_talk_32]
+[se ad203]
+[cameraMove 0.1 0,0 1.0]
+[wt 0.4]
+[wipein circleIn 0.5 1]
+[wait wipe]
+
+[wt 0.2]
+[se bac11]
+[charaEffect F bit_talk_14]
+[charaShake F 0.05 3 3 0.25]
+＠Quetzalcoatl
+Ugh! The flying Laḫmu...! I knew it. They're not going to make this easy on me, no!
+[k]
+
+[charaFace F 1]
+＠Quetzalcoatl
+But you acted a little too late, yes!
+[k]
+
+＠Quetzalcoatl
+I've done what I needed to do already! Now I'll just be on my way back to Master[line 3]
+[k]
+
+[wt 0.4]
+[messageOff]
+[charaFace F 7]
+[wt 1.0]
+
+[wipeout upToDown 0.3 1]
+[wait wipe]
+[charaEffectStop E bit_talk_32]
+[seStop ad167 0.4]
+[charaFadeout F 0.1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[scene 20733]
+[wt 0.1]
+[wipein downToUp 0.3 1]
+[wait wipe]
+
+[wt 0.2]
+[charaFace B 6]
+＠Mash
+...! The Chaos Tide has returned! No, this is[line 3]
+[k]
+
+＠Mash
+Tiamat! The Chaos Tide is flowing out from under Tiamat's feet!
+[k]
+
+[messageOff]
+[se bac176]
+[seVolume bac176 0 0.2]
+[flashin once 0.1 0.3 FF0000AF FF000000]
+[wt 0.4]
+[flashin once 0.1 0.3 FF0000AF FF000000]
+[wt 0.2]
+
+[charaFace B 15]
+＠Mash
+Quetzalcoatl's Noble Phantasm has reappeared! She's deploying it again!
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠Ishtar
+Quetzalcoatl...! Are you gonna burn yourself up...!?
+[k]
+
+[messageOff]
+[wipeout downToUp 0.3 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+[se ad167]
+[seVolume ad167 0 0.3]
+[charaPut E 0,600]
+[charaEffect E bit_talk_32]
+[scene 35010]
+[wt 0.1]
+[wipein upToDown 0.3 1]
+[wait wipe]
+
+[charaEffect F bit_talk_13]
+[wt 0.1]
+[se bac11]
+[se ad161]
+[charaShake F 0.05 3 3 0.7]
+[wt 0.4]
+[charaEffect F bit_talk_35]
+[wt 0.4]
+
+＠Quetzalcoatl
+Urg...!
+[k]
+
+＠Quetzalcoatl
+Stretching into needles and pulling an aerial move... What are you, missiles!?
+[k]
+
+＠Quetzalcoatl
+They went through my shoulders, stomach, and thighs so easily...!
+[k]
+
+[messageOff]
+[charaEffect F bit_talk_13]
+[wt 0.1]
+[se bac11]
+[se ad161]
+[charaShake F 0.05 3 3 0.4]
+[charaFace F 7]
+[wt 0.4]
+[charaEffect F bit_talk_35]
+[wt 2.0]
+
+
+[charaTalk F]
+[charaFace F 1]
+＠Quetzalcoatl
+Ouch... I can almost hear the ten second countdown...
+[k]
+
+＠Quetzalcoatl
+Ugh... I may be tough, but it's just a matter of time at this point...
+[k]
+
+[bgm BGM_EVENT_24 0.4 0.1]
+[charaMove F -3,0 0.1]
+[wt 0.1]
+[charaMove F 3,0 0.2]
+[wt 0.2]
+[charaMove F 0,0 0.1]
+[messageOff]
+[fadeout white 0.4]
+[wait fade]
+[charaFadeout F 0.1]
+[charaEffectStop E bit_talk_32]
+[scene 10001]
+[fadein white 0.1]
+[wait fade]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 1.5]
+[fadeout white 0.1]
+[wait fade]
+[charaPut E 0,600]
+[charaEffect E bit_talk_32]
+[charaFadeout D 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+[scene 35010]
+[wt 0.1]
+[bgm BGM_EVENT_24 0.1]
+[fadein white 0.1]
+[wait fade]
+
+＠Quetzalcoatl
+But still, I won't stop! No matter the cost, I'll keep...this...burning!!!
+[k]
+
+＠Quetzalcoatl
+Come on, Ereshkigal, hurry! I'm in this until you're done or they tear me to pieces!
+[k]
+
+[charaFace F 2]
+＠Quetzalcoatl
+Hee...it's a mud wrestling match! I'll...draw this out...all day if I[line 3][wt 0.4][charaFace F 5] What the!?
+[k]
+
+[messageOff]
+[charaEffectStop E bit_talk_32]
+
+[se ad204]
+＠Tiamat
+...Ahhhh. ...Aaaahhh. Aaaaaaahhh.
+[k]
+
+[charaFace F 7]
+＠Quetzalcoatl
+(She's lifting her horns?)
+[k]
+
+＠Quetzalcoatl
+(She's gathering the magical energy that held her body up above the mud into her horns...almost like wings...）
+[k]
+
+[charaFace F 2]
+＠Quetzalcoatl
+(...Oh no. This thing's gonna fly!)
+[k]
+
+[messageOff]
+[seStop ad167 0.4]
+[wipeout upToDown 0.3 1]
+[wait wipe]
+[charaFadeout F 0.1]
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+[scene 20733]
+[wt 0.1]
+[wipein downToUp 0.3 1]
+[wait wipe]
+
+＠Mash
+The solar winds have stopped! Quetzalcoatl is returning!
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad7]
+[shake 0.05 0 4 0.25]
+[wt 0.25]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 1]
+＠Quetzalcoatl
+Hi, I'm back! Tiamat... No, who cares what it's called now!
+[k]
+
+＠Quetzalcoatl
+That thing is stupid tough and a cheater! Baaaad! If we fight it head-on, we'll get dropped to the mat muy rapido!
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠Ishtar
+Yes, it looks like our plan was for nothing.
+[k]
+
+＠Ishtar
+We've burned away the mud from the sea, but if the black mud comes from Mother, that doesn't matter.
+[k]
+
+＠Ishtar
+Let's get back to Uruk right away. We need to come up with a new plan.
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 0]
+[charaDepth F 1]
+[charaTalk F]
+[charaFace C 8]
+[charaFadein C 0.1 0]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+＠Quetzalcoatl
+No, Ishtar. We can't do that.
+[k]
+
+＠Quetzalcoatl
+You should know that already. There's no point in going back now.
+[k]
+
+＠Quetzalcoatl
+If we don't stop Tiamat, all the work being done in Uruk as we speak will be for nothing.
+[k]
+
+[charaFace C 2]
+＠Ishtar
+Then what do you propose we do!? Watch you blast away with your sun until you die!?
+[k]
+
+＠Ishtar
+If we're down to you killing yourself, let's at least try MY last resort first...
+[k]
+
+[charaFace F 0]
+＠Quetzalcoatl
+That won't work either, Ishtar. ...That thing can fly.
+[k]
+
+[charaFace C 9]
+＠Ishtar
+!
+[k]
+
+？1：Fly...? With that massive body?
+？2：Ugh, give us a damn break...our entire plan...
+
+？！
+
+[charaFace F 0]
+＠Quetzalcoatl
+Yes, just vaporizing the mud beneath her is not enough. If she can fly, then she won't fall.
+[k]
+
+[charaFace C 2]
+＠Ishtar
+That can't be! Tiamat is the goddess of Ki, the Earth. She would never go near An, the heavens!
+[k]
+
+＠Ishtar
+Who would have thought she could fly[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Quetzalcoatl
+Yes. So, [%1]? Excuse me a bit one last time.
+[k]
+
+[bgm BGM_EVENT_24 0.4 0.4]
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaScale F 1.25]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,50]
+[wt 0.2]
+
+[se ad7]
+[fadeout black 0.25]
+[wait fade]
+[charaFadeout F 0]
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+[se ad30]
+[effect bit_talk_28]
+[wt 2.0]
+[fadeout black 0.1]
+[wait fade]
+[scene 20733]
+[fadein black 0.25]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+＠Ishtar
+Wait, what are you doing!?
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+[wt 1.0]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+？1：...!
+？2：This is the...
+
+？！
+
+[bgm BGM_EVENT_24 0.7]
+
+[charaScale F 1.0]
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+＠Quetzalcoatl
+Okay, I've got some energy back, yes! I'll go hit it again!
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠Mash
+What...? Quetzalcoatl, what are you going to do!? You're hurt! You can't fight properly in that state!
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Quetzalcoatl
+No. I still have my limbs attached. I am the bird of fire. As long as I have wings, I will fly!
+[k]
+
+＠Quetzalcoatl
+Ishtar.
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠Ishtar
+...What?
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Quetzalcoatl
+I'm going first. I leave the rest to you.
+[k]
+
+[charaFadeout F 0.1]
+[messageOff]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[wt 1.0]
+
+[charaFace C 6]
+＠Ishtar
+See you. I'll be expecting a spectacular lucha move.
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠Quetzalcoatl
+Of course! Master, please watch too, yes!
+[k]
+
+＠Quetzalcoatl
+I'll give it my best aerial technique to knock it out!
+[k]
+
+[messageOff]
+[se ad85]
+[charaEffect F bit_talk_21]
+[charaFadeout F 0.1]
+[wt 0.4]
+[charaEffectStop F bit_talk_21]
+[wt 1.2]
+
+[wipeout downToUp 0.3 1]
+[wait wipe]
+[scene 35010]
+[wt 0.1]
+[wipein upToDown 0.3 1]
+[wait wipe]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Quetzalcoatl
+...The weapons of Mesopotamia cannot hurt it... I was the one who said that.
+[k]
+
+[charaFace F 2]
+＠Quetzalcoatl
+However! I am not a weapon of this world, but a Divinity of a distant mystic land!
+[k]
+
+[charaTalk depthOff]
+[charaDepth F 0]
+[charaDepth E 1]
+
+[se ad136]
+[seStop ad136 1.0]
+[charaEffect F bit_talk_36]
+[charaFace F 2]
+
+[charaPut E 0,0]
+[charaFilter E silhouette FF000080]
+[charaFadeTime E 0.7 0.5]
+[wt 0.5]
+[se ad169]
+[seVolume ad169 0 0.5]
+＠Quetzalcoatl
+The primordial god of Mesopotamia, you are nothing to me!
+[k]
+
+＠Quetzalcoatl
+Witness the power of our underworld, Xibalba, and the cataclysmic impact that annihilated countless lives!
+[k]
+
+＠Quetzalcoatl
+I shall burn everything away and become the comet that killed the Earth!
+[k]
+
+＠Quetzalcoatl
+Here I go...Ultimo Tope Patada! Burning fighting spirit, Xiuhcoatl!
+[k]
+
+[bgmStop BGM_EVENT_24 1.5]
+[messageOff]
+[seStop ad169 0.4]
+[charaEffectStop F bit_talk_36]
+[charaEffect F bit_talk_32]
+[wt 1.0]
+[se bac51]
+[charaSpecialEffect F erasureReverse 1 0.25]
+[charaSpecialEffect E erasureReverse 1 0.25]
+[charaEffectStop F bit_talk_32]
+[fadeout black 0.25]
+[wait fade]
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[scene 10000]
+[wt 0.4]
+[fadein black 0.1]
+[wait fade]
+[effect bit_talk_rarrow01be]
+[wt 0.5]
+[se bac194]
+[wt 1.0]
+[wt 0.1]
+[wt 0.5]
+[flashin once 0.5 1.5 FFFFFFFF FFFFFF00]
+[wt 0.1]
+[se bac54]
+[wt 0.25]
+
+[wt 2.2]
+[se ad210]
+[wt 1.2]
+
+[se ad75]
+[seVolume ad75 0 0.5]
+[wt 1.5]
+
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

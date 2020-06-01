@@ -1,0 +1,235 @@
+
+＄94-01-52-53-1-0
+
+
+
+[soundStopAll]
+
+[bgm BGM_EVENT_65 0.1]
+
+
+
+[messageOff]
+[effectPause bit_talk_parasolwipe]
+[wait effectStart bit_talk_parasolwipe]
+
+
+[branch _PlayEffect_1st PM4 1]
+
+
+[label _PlayEffect_etc]
+
+[tapSkip _from_TapSkip_etc]
+
+[scene 10001]
+
+[fadein white 1.0]
+[wait fade]
+
+[effectPause bit_talk_goal1_3]
+[wait effectStart bit_talk_goal1_3]
+
+[effectStart bit_talk_parasolwipe]
+[wt 1.0]
+
+[effectStart bit_talk_goal1_3]
+[wait effect bit_talk_goal1_3]
+[label _from_TapSkip_etc]
+
+[effectDestroy bit_talk_goal1_3]
+[effectDestroy bit_talk_parasolwipe]
+[fadein black 0]
+[wait fade]
+
+[branch _PlayEffect_End]
+
+
+[label _PlayEffect_1st]
+
+[tapSkip _from_TapSkip_1st]
+
+[effectPause bit_talk_winner1_3]
+[wait effectStart bit_talk_winner1_3]
+
+[scene 10001]
+
+[fadein white 1.0]
+[wait fade]
+
+[effectStart bit_talk_winner1_3]
+
+[wt 4.9]
+[voice 402600_0_M790]
+
+[wt 1.0]
+[voice 402600_0_M791]
+
+[wt 5.0]
+
+[effectStart bit_talk_parasolwipe]
+[scene 10001]
+[wt 1.0]
+[scene 44300]
+[wait effect bit_talk_parasolwipe]
+
+[label _from_TapSkip_1st]
+
+[voiceStop]
+[scene 44300]
+[effectDestroy bit_talk_winner1_3]
+[effectDestroy bit_talk_parasolwipe]
+[fadein black 0]
+[wait fade]
+
+
+[label _PlayEffect_End]
+
+[bgmStop BGM_EVENT_65 0.3]
+[wt 0.4]
+
+[branch _PlayVoice_Start PM4 1]
+
+[branch _PlayVoice_End]
+
+
+
+
+[label _PlayVoice_Start]
+
+[charaSet A 3029001 1 Minamoto-no-Raikou]
+[charaSet B 5022001 1 Sanzang]
+
+[flagRandom _PlayVoiceNo 1 3]
+
+
+[branch _PlayVoice_3rd _PlayVoiceNo 3]
+[branch _PlayVoice_2nd _PlayVoiceNo 2]
+[branch _PlayVoice_1st _PlayVoiceNo 1]
+
+
+[label _PlayVoice_1st]
+
+[bgm BGM_EVENT_64 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 1]
+[charaDepth A 9]
+[charaDepth B 1]
+[charaFadein A 0.4 0]
+[charaFadein B 0.4 2]
+[wt 0.7]
+
+[charaFace A 2]
+＠Minamoto-no-Raikou
+Of [voice 9010004_0_M670]course I won! [wait voice 9010004_0_M670][charaFace A 0][sr]I [voice 9010004_0_M671]must be faster than anyone if I am to protect public decency!
+[k]
+[wait voice 9010004_0_M671]
+
+＠Sanzang
+Is [voice 9010004_0_M672]that true?
+[k]
+[wait voice 9010004_0_M672]
+
+[charaFace A 1]
+＠Minamoto-no-Raikou
+Yes,[voice 9010004_0_M673] it is!
+[k]
+[wait voice 9010004_0_M673]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_2nd]
+
+[bgm BGM_EVENT_64 0.1]
+
+[charaTalk B]
+[charaFace A 0]
+[charaFace B 1]
+[charaDepth A 9]
+[charaDepth B 1]
+[charaFadein A 0.4 0]
+[charaFadein B 0.4 2]
+[wt 0.7]
+
+＠Sanzang
+That [voice 9010004_0_M680]felt great! Mmm, this is awesome![wt 2.4][charaFace B 0]
+[k]
+[wait voice 9010004_0_M680]
+
+[charaFace B 1]
+＠Sanzang
+There's [voice 9010004_0_M681]no reason we NEED to take first place,[wt 3.1][charaFace B 0][sr]but I never get tired of feeling the wind on my face while I'm riding White Dragon!
+[k]
+[wait voice 9010004_0_M681]
+
+[charaFace B 1]
+[charaFace A 1]
+＠Minamoto-no-Raikou
+[voice 9010004_0_M682]
+My my, I see you have no earthly desires whatsoever, Monk Sanzang. How wonderful.[wt 4.7][charaFace A 7]
+[k]
+[wait voice 9010004_0_M682]
+
+[charaFace B 0]
+＠Sanzang
+He[voice 9010004_0_M683]hehe!
+[k]
+[wait voice 9010004_0_M683]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_3rd]
+
+[bgm BGM_EVENT_64 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 0]
+[charaDepth A 9]
+[charaDepth B 1]
+[charaFadein A 0.4 0]
+[charaFadein B 0.4 2]
+[wt 0.7]
+
+＠Minamoto-no-Raikou
+We [voice 9010004_0_M690]could not have done this without Master's encouragement.[wt 4.7][charaFace A 1][sr]Thank you.
+[k]
+[wait voice 9010004_0_M690]
+
+[charaFace A 7]
+＠Minamoto-no-Raikou
+I [voice 9010004_0_M691]would expect no less from the shadow prefect and her vice prefect.
+[k]
+[wait voice 9010004_0_M691]
+
+[charaFace B 1]
+＠Sanzang
+Wait, [voice 9010004_0_M692]is that... Is that who [&he:she] is?
+[k]
+[wait voice 9010004_0_M692]
+
+[charaFace A 0]
+＠Minamoto-no-Raikou
+Yes, [voice 9010004_0_M693]that's right.
+[k]
+[wait voice 9010004_0_M693]
+
+[charaFace B 0]
+＠Sanzang
+Oh, [voice 9010004_0_M694]okay! Thanks Master! Thanks, shadow vice prefect!
+[k]
+[wait voice 9010004_0_M694]
+
+
+[label _PlayVoice_End]
+
+
+[messageOff]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_64 0.4]
+[wait fade]
+[soundStopAll]
+[end]

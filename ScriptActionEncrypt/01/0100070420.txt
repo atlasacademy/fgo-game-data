@@ -1,0 +1,214 @@
+
+
+
+＄01-00-07-04-2-0
+[soundStopAll]
+[charaSet A 8001002 1 Mash]
+[charaSet B 98002000 1 Fou]
+[charaSet C 3027000 1 Ana]
+[charaSet D 98107600 1 Siduri]
+[charaSet E 98003000 1 "Dr. Roman"]
+
+
+[bgm BGM_EVENT_2 0.1]
+[scene 33200]
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠Mash
+Good morning, Senpai.[sr]You must've slept well last night.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 128,0]
+[se ad60]
+[seVolume ad60 0 0.4]
+[seStop ad60 1.5]
+[charaMove C 1 1.0]
+[charaShake C 0.1 0 3 1.0]
+[wait charaMove C]
+
+＠Ana
+...Good... morning... Both of you are early risers...[sr]So amazing.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[se ad13]
+[charaTalk E]
+[communicationChara 98003003 1 5 0 0]
+[wt 0.3]
+
+＠Dr. Roman
+We're just swapping out the staff over here, too.[sr]Good morning, [%1].
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk B]
+[charaFadein B 0.1 1]
+
+＠Fou
+Fou, fooou!
+[k]
+
+？1：Morning, everyone.
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Siduri
+It seems we're all here. Very well. Let me give you your assignment, [%1].
+[k]
+
+＠Siduri
+Today's task is from Mr. Limmat at the ranch. Apparently, he wants help shearing his sheep.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk E]
+[communicationCharaLoop 98003003 1 5 0 2]
+
+
+＠Dr. Roman
+Huh? Shearing sheep... Shearing sheep!?[sr]That's such a menial chore!
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+
+＠Siduri
+It isn't a menial task. Wool is priceless.[sr]It is a valuable commodity for trade.
+[k]
+
+＠Siduri
+Sheep are normally shorn two or three times a year, but the shorter the cycle, the greater the profit.
+[k]
+
+＠Siduri
+Mr. Limmat's main assets are his 180 sheep. If it takes four hours to shave one, he can only shave four a day at most.
+[k]
+
+＠Siduri
+In other words, it would take Mr. Limmat over a month to shear all the sheep by himself.
+[k]
+
+＠Siduri
+A whole month. If this could be shortened to 10 days, do you see how much of a difference in profit it would make?
+[k]
+
+？1：So it's like a shipment coming in a month late...
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk E]
+[communicationCharaLoop 98003003 1 5 0 8]
+[wt 0.3]
+
+＠Dr. Roman
+That analogy is really the opposite, but I see what you mean... It's the age of the fast and furious, or rather, the RAST and furriest.
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+？2：We can't survive without working?
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠Ana
+Seems so... But being able to touch sheep... makes me a little happy.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠Mash
+Understood. Leave it to us! Let's do this, Master!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Siduri
+I like your enthusiasm. Now then, here is your referral letter. Sheep are nice, Mash. They are very fluffy this time of year.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠Mash
+So they ARE fluffy... (Gulp)[sr]This will be one tough mission...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFadein B 0.1 1]
+[charaShake B 0.01 1 1 0]
+
+＠Fou
+Fouuu...
+[k]
+
+
+
+？1：A new challenger appears...
+？2：Give it up, Fou.
+
+？！
+[charaFadeout B 0.1]
+[charaShakeStop B]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Siduri
+Oh, that's right. I forgot to mention that the ranch is on the outskirts of Uruk.
+[k]
+
+＠Siduri
+There are reports of previously undocumented Demonic Beasts roaming that area. Please be careful.
+[k]
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.5]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

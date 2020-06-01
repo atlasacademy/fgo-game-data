@@ -1,0 +1,79 @@
+
+＄01-00-05-15-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_5 0.1]
+
+[charaSet A 3005002 1 Elisabeth]
+[charaSet B 2003001 1 "Robin Hood"]
+[charaSet C 99363000 1 "Mechanized Infantry"]
+
+[charaTalk C]
+[charaFadein C 0.1 1]
+
+[scene 20423]
+[fadein black 2]
+[wait fade]
+
+＠Mechanized Infantry
+[line 2]Halt.[sr]Beyond here is state-owned land.
+[k]
+
+＠Mechanized Infantry
+Retreat immediately, and submit an enlistment form to the United Western States Army Mechanized Infantry Corps.
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Robin Hood
+...Tch, they're bloodthirsty.[sr]Is this what you'd call a dystopia? Makes me nauseous.
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk A]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+[charaFace A 1]
+[charaFadein A 0.1 2]
+＠Elisabeth
+Hmm, I rather like it. It's a good thing when peasants follow the rules.
+[k]
+
+＠Robin Hood
+Yeah, yeah. I've always been part of the resistance, anyway. But it looks like we can't fool our way through any further.
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠Robin Hood
+Master, we need to break in!
+[k]
+
+？1：Charge!
+？2：A rebellion!
+
+？！
+
+[bgmStop BGM_EVENT_5 0.1]
+[wt 0.1]
+[bgm BGM_EVENT_3 0.1]
+
+[charaFace B 1]
+＠Robin Hood
+Whoa, as I'd expect, Master![sr]I see you're enthusiastic.
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

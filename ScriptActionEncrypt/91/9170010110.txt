@@ -1,0 +1,92 @@
+＄91-70-01-01-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[scene 21000]
+[charaSet A 8001000 1 Mash]
+[charaSet B 98003000 2 "Dr. Roman"]
+[charaSet C 98002000 2 Fou]
+[charaSet D 7001001 1 Heracles]
+[charaSet E 98013000 1 Dragon]
+[charaFace A 2]
+[charaFadein A 0]
+[fadein black 1]
+[wait fade]
+＠Mash
+Master! This is bad![sr]The nearby village is being attacked by wild beasts!
+[k]
+
+[charaFadeout A 0.1]
+[communicationChara 98003003 1 5 0 5]
+＠Dr. Roman
+And it happened quite suddenly, it seems.[sr]Are you awake, [%1]?
+[k]
+
+？1：We must hurry to that village!
+
+？2：Let's go, Berserker!
+
+？！
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠Heracles
+[image berserker_language_2][line 3]!
+[k]
+
+[charaFadeout D 0.1]
+[communicationCharaLoop 98003003 1 5 0 4]
+＠Dr. Roman
+I'm not sure that Berserker is well suited for rescue efforts. I hope it will be all right...the village, I mean...
+[k]
+
+[messageOff]
+[communicationCharaClear]
+[fadeout black 0.5]
+[wait fade]
+[wt 0.5]
+[scene 20523]
+[charaFace A 2]
+[charaFadein A 0 1]
+[fadein black 0.5]
+[wait fade]
+＠Mash
+Not just the fields are being destroyed, the buildings are[sr]as well... Doctor! Get us details on the enemy!
+[k]
+
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr. Roman
+I am, already! What? Whoa! Their numbers[sr]are incredible! It's completely surrounded!
+[k]
+
+[communicationCharaFace 1]
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠Mash
+Master, we'll just have to take them out as we see them!
+[k]
+
+？1：You got it! Let's do this!
+
+？2：I'm counting on you, Berserker!
+
+？！
+
+[charaFadeout A 0.1]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠Heracles
+[image berserker_language_2][line 2]!!
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

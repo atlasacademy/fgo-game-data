@@ -1,0 +1,611 @@
+
+
+
+＄91-40-18-01-3-1
+
+[soundStopAll]
+
+[charaSet A 99502600 1 Mash]
+[charaSet B 4018000 1 Quetzalcoatl]
+[charaSet C 1098119500 1 "Mask de Baritsu"]
+[charaSet D 1098119510 1 "Upside-down Baritsu Dummy"]
+[charaSet E 4018000 1 "For Quetzalcoatl Attack"]
+[charaSet F 98115000 1 "For Effect"]
+
+[scene 20300]
+[wipeFilter cinema 0.5 0]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-40]
+
+[fadein black 1.0]
+[wait fade]
+
+＠Quetzalcoatl
+You're open, Baritsu!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-40]
+
+＠Mask de Baritsu
+Heh...do you really think so?[sr](And why is she STILL not using my nom de guerre?)
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace B 2]
+[charaFadein C 0.1 -256,-40]
+[charaFadein B 0.1 256,-40]
+[wt 0.2]
+[charaMove B 100,-40 0.1]
+[wt 0.1]
+[charaMove B 256,-40 0.2]
+[charaMove C -256,-70 0.1]
+[se bac1]
+[wt 0.1]
+[charaMove C -256,-40 0.1]
+[wt 0.3]
+[charaMove C 100,-40 0.2]
+[wt 0.2]
+[charaMove B 100,-40 0.1]
+[charaMove C -80,-40 0.1]
+[se bac245]
+[charaDepth B 10]
+[charaFace B 5]
+[charaShake B 0.05 3 3 0.1]
+
+＠Quetzalcoatl
+Guh...
+[k]
+
+＠Mask de Baritsu
+I have targeted your arm now. Time to surrender. I regret to inform you that victory is now quite beyond your reach as matters stand.
+[k]
+
+[charaFace B 7]
+
+＠Quetzalcoatl
+...Do you know why there are so many flashy moves in Lucha Libre?
+[k]
+
+＠Mask de Baritsu
+No...I cannot say I have given it any thought. They are likely just inefficient skills meant for nothing so much as pure showmanship.
+[k]
+
+[charaFace B 5]
+
+＠Quetzalcoatl
+No! They are for the audience, and for your opponent, with whom you share a deep mutual trust!
+[k]
+
+＠Quetzalcoatl
+If you are seeking efficiency in battle,[sr]then you should head to war!
+[k]
+
+＠Quetzalcoatl
+A battle without cheers or lights...a battlefield that is utterly lonely!
+[k]
+
+＠Mask de Baritsu
+Cheers? Do those really matter for battle?
+[k]
+
+[charaFace B 2]
+
+＠Quetzalcoatl
+Of course![sr]That's why, Master, I ask you to cheer for me!
+[k]
+
+？1：¡Olé! Go, lucha master!
+
+？！
+
+[charaFace B 1]
+
+＠Quetzalcoatl
+Mucho mucho! That has given me the strength of a hundred luchadoras! Hiyaaah!
+[k]
+
+[messageOff]
+[charaMoveReturn B 90,-40 0.2]
+[charaMoveReturn C -90,-40 0.2]
+[wt 0.1]
+[charaEffect B bit_talk_quickmove]
+[charaSpecialEffect B erasureReverse 1 0.3]
+
+[se ad73]
+[wt 1.0]
+
+＠Mask de Baritsu
+(She jumped straight up to break my joint lock... What incredible pain tolerance. Or rather, is this the vaunted endurance that every wrestler possesses?)
+[k]
+
+[charaShake C 0.05 3 3 0.4]
+[charaMove C -80,-60 0.4]
+
+＠Mask de Baritsu
+This is no time to admire her moves![sr]Ugh, I can't keep my balance! Or my mask!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-40]
+
+＠Quetzalcoatl
+Sorry. Any máscara that falls off[sr]so easily is no match for me!
+[k]
+
+＠Quetzalcoatl
+If you are a true wrestler, you need to be more fashion-conscious! And here we go...! La Mística!!!
+[k]
+
+[messageOff]
+[effect bit_talk_41]
+[se ad73]
+[charaMoveScale B 1.2 0.2]
+[charaMove B 0,-32]
+[wt 0.2]
+[effectStop bit_talk_41]
+[charaFadeout B 0.1]
+[wt 0.3]
+[charaScale B 1.0]
+
+[charaFadein C 0.1 0,-40]
+[charaFadein B 0.1 256,-40]
+[charaMove B 150,-40 0.2]
+[wt 0.2]
+[se bac245]
+[wt 0.2]
+
+[se bac1]
+[charaEffect C bit_talk_quickmove]
+[charaSpecialEffect C erasureReverse 1 0.3]
+[charaEffect B bit_talk_quickmove]
+[charaSpecialEffect B erasureReverse 1 0.3]
+
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,30]
+
+[charaFace B 2]
+[charaFace E 2]
+
+[charaScale B 1.2]
+[charaFadein B 0.1 -1000,-40]
+[charaScale E 0.8]
+[charaFadein E 0.1 1000,-20]
+
+[charaShake D 0.05 5 0 0]
+[effect bit_talk_42]
+
+[charaDepth E 1]
+[charaDepth D 3]
+[charaDepth B 5]
+[se ad171]
+[charaMove B 800,-40 0.2]
+[wt 0.3]
+[charaPut B -1000,-40]
+[charaMove E -800,-20 0.2]
+[wt 0.3]
+[charaPut E 1000,-20]
+[se ad171]
+[charaMove B 800,-40 0.2]
+[wt 0.3]
+[charaDepth B 2]
+[charaPut B -1000,-40]
+[charaMove E -800,-20 0.2]
+[wt 0.3]
+[charaPut E 1000,-20]
+
+
+＠D：Mask de Baritsu
+(What is this move...!?[sr]What is going on!?)
+[k]
+
+[messageOff]
+
+[charaDepth E 1]
+[charaDepth D 3]
+[charaDepth B 5]
+[se ad171]
+[charaMove B 800,-40 0.2]
+[wt 0.3]
+[charaPut B -1000,-40]
+[charaMove E -800,-20 0.2]
+[wt 0.3]
+[charaPut E 1000,-20]
+[se ad171]
+[charaMove B 800,-40 0.2]
+[wt 0.3]
+[charaDepth B 2]
+[charaPut B -1000,-40]
+[charaMove E -800,-20 0.2]
+[wt 0.3]
+[charaPut E 1000,-20]
+
+＠D：Mask de Baritsu
+(Spinning...am I spinning? Really?[sr]How are we spinning THIS much!?)
+[k]
+
+[messageOff]
+
+[charaDepth E 1]
+[charaDepth D 3]
+[charaDepth B 5]
+[se ad171]
+[charaMove B 800,-40 0.2]
+[wt 0.3]
+[charaPut B -1000,-40]
+[charaMove E -800,-40 0.2]
+[wt 0.3]
+[charaPut E 1000,-40]
+[se ad171]
+[charaMove B 800,-40 0.2]
+[wt 0.3]
+[charaDepth B 2]
+[charaPut B -1000,-40]
+[charaMove E -800,-20 0.2]
+[wt 0.3]
+[charaPut E 1000,-20]
+
+＠D：Mask de Baritsu
+(After six full spins, the inner ear simply goes haywire, and it becomes impossible to take an attack. And yet...we're still spinning?)
+[k]
+
+[messageOff]
+
+[scene 39800 0.5]
+[effectStop bit_talk_42 0.5]
+[charaShakeStop D]
+[charaScale B 1.0]
+[wt 0.5]
+
+＠D：Mask de Baritsu
+(Are we in...space? I can see space...I don't recall...taking my medicines...this morning...)
+[k]
+
+＠D：Mask de Baritsu
+(There's no need for careful examination to know what's happening here! I'm doomed!)
+[k]
+
+[charaMove B -300,-40 0.1]
+[wt 0.1]
+[charaMove B -200,-40 0.2]
+[wt 0.3]
+
+[charaMoveReturn D 0,40 0.2]
+
+＠D：Mask de Baritsu
+(Tap, tap)
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+[wipeOff]
+[wait wipe]
+[bgmStop BGM_EVENT_24 0.4]
+[scene 20300 0.4]
+[wt 0.4]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Mash
+Holmes has tapped out![sr]Quetzalcoatl, please cancel your drop!
+[k]
+
+[bgm BGM_EVENT_4 0.1]
+
+＠Mash
+Quetzalcoatl is the winner!
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.2]
+
+[charaFace B 0]
+[charaFadein B 0.1 0,50]
+[charaMove B 0,-20 0.1]
+[wait charaMove B]
+[se ad223]
+[seVolume ad223 0 0.5]
+[charaMove B 1 0.1]
+[wait charaMove B]
+
+＠Quetzalcoatl
+Aw. Then there won't be a head-first drop, no...
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[se bac2]
+[charaFadein C 0.1 1]
+[charaMoveReturn C 0,-10 0.3]
+
+＠Mask de Baritsu
+...Whew. Cervical spine annihilation avoided.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 0.1 2]
+[charaFadein C 0.1 0]
+
+＠Quetzalcoatl
+Yes. You were spared because you tapped so early.
+[k]
+
+＠Quetzalcoatl
+You should be grateful that I am so precise in executing my moves, yes. For any other wrestler, we were beyond the point of no return!
+[k]
+
+＠Mask de Baritsu
+Probably. I'm surprised I lived. I'm actually more frightened that you have the muscles to stop that move than the muscles needed to do it in the first place.
+[k]
+
+＠Quetzalcoatl
+Of course. I told you. Luchadoras perform their moves with utmost consideration for their partners!
+[k]
+
+＠Quetzalcoatl
+Stopping a move midway through is just common courtesy. But I suspect you could have fought more!
+[k]
+
+＠Mask de Baritsu
+I had every intention of doing so. The spirit is willing, but the body...not so much.
+[k]
+？1：What do you mean?
+
+？！
+
+＠Mask de Baritsu
+The move was surreal. It was so intense, but at the same time, my heart was pounding with excitement.
+[k]
+
+＠Mask de Baritsu
+Excited that the move was terrible...and intriguing at the same time. The moment I had that thought, my body tapped out quite of its own accord.
+[k]
+
+＠Mask de Baritsu
+I have the confidence to meet any malevolent attack directly, but it appears my self-defense skills cannot handle moves made with kind intentions.
+[k]
+
+[charaFace B 1]
+
+＠Quetzalcoatl
+Heehee. You speak too highly of it.[sr]I just didn't have the strength to make it hurt.
+[k]
+
+＠Mask de Baritsu
+I withdraw what I said about your moves being just for show. It reminds me of a Japanese sword form called kassatsuken, where one imbues their sword with life and death for their battle.
+[k]
+
+＠Mask de Baritsu
+One permits their opponent to live, even after defeating them. I had always found this contradictory, but...I understand now.
+[k]
+
+＠Mask de Baritsu
+Strength is not simply a matter of defeating your opponent.
+[k]
+
+＠Quetzalcoatl
+Yes, your moves were also very strong, Baritsu Mask. But you seem to be very fragile. You need to eat better so your bones will be sturdy, yes!
+[k]
+
+＠Mask de Baritsu
+I'll take your word for it.
+[k]
+
+＠Mask de Baritsu
+...Your technique is a sort I would never employ, but I would still like to show my respect to you, who has so mastered lucha.
+[k]
+
+＠Mask de Baritsu
+Adiós, Miss Quetzalcoatl. Should we have the opportunity, I would like to meet again.
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Mask de Baritsu
+But...why will no one properly use my nom de guerre?
+[k]
+
+[messageOff]
+[charaFadeout C 0.4]
+[wt 0.1]
+[bgmStop BGM_EVENT_4 1.0]
+[wt 2.0]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_6 0.1]
+
+＠Quetzalcoatl
+Whew. So this is the end...
+[k]
+
+[messageOff]
+[se ad144]
+[charaMove B 0,-50 0.4]
+[charaFadeout B 0.4]
+[wt 1.0]
+
+
+？1：You're all beat up...
+
+？！
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠Quetzalcoatl
+Oh? Are you worried about me? No te preocupes.[sr]I'm feeling very good right now, yes.
+[k]
+
+＠Quetzalcoatl
+I have that pleasant sort of fatigue you get after hard work! Also the satisfaction that I was able to express myself to and understand others through lucha!
+[k]
+
+＠Quetzalcoatl
+And because I was able to experience that, I am here, smiling with you now.
+[k]
+
+[charaFace B 0]
+
+＠Quetzalcoatl
+I can do that not as the goddess of war who takes life, but as a goddess of wisdom and fertility who looks toward the future.
+[k]
+
+？1：Yep. I know.
+？2：Got it. Let's do this again sometime.
+
+
+？！
+[charaFace B 3]
+＠Quetzalcoatl
+...Teehee. Gracias, Master.
+[k]
+
+＠Quetzalcoatl
+Ahhh! I don't have the strength to even get up, no! Master, please give me your hand!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Mash
+Looks like Quetzalcoatl is satisfied.[sr]Now Senpai can train in peace this afterno[line 2]
+[k]
+
+[bgmStop BGM_EVENT_6 1.0]
+[charaScale B 1.2]
+
+[charaFace A 7]
+＠Mash
+Oh! You shouldn't, Senpai...Quetzalcoatl is still...!
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 0.2]
+[se bac245]
+[shake 0.05 5 4 0.3]
+[wt 0.3]
+
+[bgm BGM_EVENT_7 0.1]
+
+？1：Gaaaaaaaaahhh!?
+？2：Aaaaaaaaaaaahhh!?
+
+？！
+
+＠Quetzalcoatl
+Ah-ha! You fell for it![sr]I am still bursting with energy, yes!
+[k]
+
+＠Quetzalcoatl
+And llave moves are very profound! Please enjoy the move where, the more you squirm, the more tightly wound up you get♡
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠Mash
+...If I had known how things would have turned out, I would have asked for five matches. Now I understand why the chains are necessary.
+[k]
+
+＠Mash
+To restrain Quetzalcoatl,[sr]we really do need lots of chains...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠Quetzalcoatl
+Yes![sr]That is nowhere near enough chains to restrain me!
+[k]
+
+＠Quetzalcoatl
+Come on, Master. Flail, flail![sr]Mucho, mucho!
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,100 @@
+
+＄02-00-04-03-3-0
+[soundStopAll]
+
+[charaSet A 98001000 1 Mash]
+[charaSet B 1098121910 1 Ghoul]
+[charaSet C 5033001 1 Circe]
+[charaSet H 5009000 1 "Effect Dummy"]
+
+[scene 49302]
+
+[charaDepth H 10]
+[charaPut H 1]
+[charaEffect H bit_talk_40]
+
+[fadein black 1.0]
+[wt 0.5]
+[bgm BGM_EVENT_3 0.1]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.4 1]
+
+＠Mash
+(Gasp, gasp, gasp...)
+[k]
+
+[charaFace A 15]
+
+＠Mash
+C-Circe! Another one's headed your way!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad42]
+[charaTalk B]
+[charaFace B 0]
+[charaFilter B silhouette 00000080]
+[charaFadein B 0.1 1]
+
+＠Ghoul
+...!
+[k]
+
+[messageOff]
+[se bac27]
+[fowardEffect bit_talk_32]
+[charaShake B 0.05 3 3 0.3]
+[wt 1.0]
+
+[fowardEffectStop bit_talk_32]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Circe
+Nice hustle out there, Mash.[sr]Think you can keep baiting them over here?
+[k]
+
+＠Circe
+Vantage points like this are great for using my spells without worrying about hurting anyone else.
+[k]
+
+＠Circe
+Okay, I'm ready for the next round.[sr]Come and get it, ghoulies.
+[k]
+
+[charaFace C 1]
+
+＠Circe
+I've got a great big banquet all lined up for you to enjoy. Hehe.
+[k]
+
+[charaFace C 5]
+[se ad39]
+[charaBackEffect C bit_talk_36_back]
+＠Circe
+Come forth, my beast of envy.[sr]Come forth from the dim depths of your watery home...
+[k]
+
+[charaFace C 2]
+
+＠Circe
+Bare your many fangs, and feast upon the six calamities!
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

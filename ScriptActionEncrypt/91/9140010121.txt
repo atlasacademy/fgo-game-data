@@ -1,0 +1,117 @@
+＄91-40-01-01-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[scene 20500]
+[charaSet A 8001000 0 Mash]
+[charaSet B 98003000 2 "Dr. Roman"]
+[charaSet C 98002000 2 Fou]
+[charaSet D 4001001 0 Medusa]
+[charaSet E 98014000 2 "Young Man"]
+[charaSet F 98006000 0 Boss]
+[charaTalk F]
+[charaFace E 0]
+[charaFadein E 0]
+[charaFace F 0]
+[charaFadein F 0]
+[fadein black 1]
+[wait fade]
+＠Boss
+?!?!?! (Freeze)
+[k]
+
+＠Young Man
+Whoa!? Boss turned to stone?[sr]Dammit, I'm going to get you for this!
+[k]
+
+[charaFadeout E 0.7]
+[charaFadeout F 0.7]
+[wt 1]
+[bgmStop BGM_EVENT_3 0.4]
+[bgm BGM_EVENT_2 0.1]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠Medusa
+Whew... I lost my temper a little there.[sr][%1], I apologize.
+[k]
+
+？1：I don't mind.
+
+？2：It happens.
+
+？！
+
+[charaFace D 1]
+＠Medusa
+Hehe... you're a kind person.[sr]I appreciate your concern.
+[k]
+
+＠Medusa
+Besides, you treat even someone like me like a normal person.
+[k]
+
+[charaFace D 4]
+＠Medusa
+Anyone who approached me would turn to stone, their faces twisted in horror...
+[k]
+
+[charaFadeout D 0]
+[charaTalk A]
+[charaFadein D 0.1 0]
+[charaFace A 12]
+[charaFadein A 0.1 2]
+＠Mash
+Medusa...
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠Dr. Roman
+The monster Medusa... The Gorgon...[sr]By the way, how do your sisters look...
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 14]
+[charaFadein A 0.1 2]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+＠Mash
+Doctor!
+[k]
+
+[charaFace D 1]
+＠Medusa
+My sisters are very cute.[sr]They are not at all violent, unlike me.
+[k]
+
+？1：You're cute, too!
+
+[charaFace A 11]
+？2：You're close with your sisters, huh?
+
+[charaFace A 13]
+？！
+
+[charaFace D 0]
+＠Medusa
+!!!
+[k]
+
+[charaFace D 3]
+＠Medusa
+...Thank you, [%1].[sr]I like being around you.
+[k]
+
+[charaFace D 1]
+＠Medusa
+I'm inexperienced, but let's get along from now too.
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_2 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,95 @@
+＄91-30-01-01-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 20800 0]
+[charaSet A 8001001 1 Mash]
+[charaSet B 98003000 2 "Dr. Roman"]
+[charaSet C 98002000 2 Fou]
+[charaSet D 3001001 0 "Cú Chulainn"]
+[charaFace A 6]
+[charaFadein A 0]
+[fadein black 1]
+[wait fade]
+＠Mash
+A demonic boar...in the forest?
+[k]
+
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠Dr. Roman
+Yeah, someone saw it in this forest lately, I hear.
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFadeout A 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+＠Cú Chulainn
+So you came to me?[sr]I'm not a hunter.
+[k]
+
+[charaFace D 5]
+＠Cú Chulainn
+Besides, there are others better suited than me.[sr]Fionn's first spear, maybe. Know the guy?
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[communicationCharaLoop 98003003 1 5 0 4]
+＠Dr. Roman
+Well, I don't think he'd want to deal with a boar...[sr]That's one of the biggest traumas in all his stories...
+[k]
+
+？1：You mean Diarm[line 2]
+
+？2：Then maybe Ata[line 2]
+
+？！
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 7]
+[charaFadein A 0.1 2]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+＠Mash
+Stop, Senpai.[sr]Everyone has something they don't like.
+[k]
+
+[charaFadeout A 0.1]
+[charaFadein C 0.1 2]
+＠Fou
+Fou...
+[k]
+
+[charaFace D 5]
+＠Cú Chulainn
+Oh, fine... Sure.[sr]Gáe Bolg was getting rusty anyway.
+[k]
+
+[se ad58]
+[bgmStop BGM_EVENT_2 0.5]
+[bgm BGM_EVENT_3 0]
+[wt 2]
+[charaFace D 1]
+＠Cú Chulainn
+Oh, I see we're heading out now.[sr]In a rush, huh?
+[k]
+
+[seStop ad58 2]
+[charaFadeout C 0.1]
+[charaFace A 2]
+[charaFadein A 0.1 2]
+＠Mash
+That's no boar, it's a stray homunculus.[sr]Master, prepare for combat!
+[k]
+
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

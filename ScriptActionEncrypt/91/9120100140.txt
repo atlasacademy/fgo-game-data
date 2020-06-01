@@ -1,0 +1,331 @@
+
+
+
+＄91-20-10-01-4-0
+[soundStopAll]
+[charaSet A 2010002 1 Billy]
+[charaSet B 99502600 1 Mash]
+[charaSet C 7005001 1 Spartacus]
+[charaSet D 99360000 1 "Celtic Soldier"]
+[charaSet E 5014001 1 Mephistopheles]
+[charaSet F 6003001 1 "Hundred Personas"]
+[charaSet G 3002001 1 Diarmuid]
+
+[scene 11110]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+
+＠Billy
+Master, give me the bandolier I handed you earlier!
+[k]
+
+[charaFace A 4]
+
+[messageOff]
+[se ad7]
+
+[charaMoveReturn A 0,-15 0.3]
+[wait charaMove A]
+
+[seStop ad7]
+
+[wt 0.3]
+
+[charaFace A 0]
+
+＠Billy
+Thanks![sr]Okay! Let's keep going!
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.2]
+[charaMove A 0 0.2]
+
+[wt 0.4]
+
+[messageOff]
+
+[effect bit_shot_01]
+[shake 0.05 4 4 0.5]
+[se bac22]
+[wt 0.2]
+[se bac22]
+[wt 1.0]
+
+[charaEffect B bit_talk_10]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠Mash
+!
+[k]
+
+[charaFace B 2]
+
+＠Mash
+There are some Celtic soldiers trying to attack the evacuees! Please do something!
+[k]
+
+[charaPut B 1200,1200]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Billy
+Why you...!
+[k]
+
+[messageOff]
+[se ad346]
+[seStop ad346 0.5]
+
+[wt 0.5]
+
+[charaFace A 2]
+
+＠Billy
+Crap...I misfired...!
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠Spartacus
+Hahahaha! I shall be the anvil against which our oppressors are crushed!
+[k]
+
+[messageOff]
+
+[charaShake C 0.05 4 4 1.2]
+[fowardEffect bit_talk_12_red_L]
+[se bac95]
+[wt 0.3]
+[se bac95]
+[wt 0.2]
+[fowardEffect bit_talk_12_red_R]
+[se bac95]
+[wt 0.3]
+[se bac95]
+[wt 0.2]
+[fowardEffect bit_talk_12_red_L]
+[se bac95]
+
+[wt 1.2]
+
+[fowardEffectStop]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠Mash
+Spartacus!
+[k]
+
+[charaPut B 1200,1200]
+
+[messageOff]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+[wt 0.4]
+
+[effect bit_talk_36]
+[se ad39]
+
+[wt 1.0]
+
+＠Spartacus
+My love...is going to explode!
+[k]
+
+[charaFadeout C 0.1]
+[effectStop bit_talk_36]
+[wt 0.4]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Celtic Soldier
+Wha...!?
+[k]
+
+[charaFadeout D 0.1]
+
+[messageOff]
+
+[seLoop ad61]
+[effect bit_talk_36]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+[wt 2.0]
+
+[seStop ad61 0.4]
+[se ad64]
+[se ad65]
+[effect bit_talk_30]
+[effect bit_talk_voice01]
+[shake 0.03 3 3 0]
+[fadeout white 2.0]
+[wait fade]
+
+
+[charaFadeout C 0.1]
+[shakeStop]
+[effectStop bit_talk_36]
+[effectStop bit_talk_voice01]
+[wt 1.5]
+
+[fadein white 1.0]
+[wait fade]
+
+[effect bit_talk_06]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.4 1]
+＠Spartacus
+Oppression will not be suffered to continue...[sr]Now die...knowing that truth...!
+[k]
+
+[messageOff]
+[wt 0.5]
+[charaSpecialEffect C flashErasure 1 1.5]
+[se ad52]
+[wt 0.5]
+[effectStop bit_talk_06]
+[wait charaSpecialEffect C]
+
+[wt 1.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠Mash
+Spartacus has disappeared while taking in the Celtic Soldiers around him...
+[k]
+
+？1：Damn...
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut B 1200,1200]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠Billy
+I'm sorry.[sr]It was my mistake.
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠Mephistopheles
+No. We were just unlucky. And you know,[sr][charaFace E 0]if you think that was as bad as things get...
+[k]
+
+[charaFace E 1]
+
+＠Mephistopheles
+...then there's nowhere to go from here but up![sr]Okay, here's another bomb!
+[k]
+
+[charaFadeout E 0.1]
+
+[messageOff]
+
+[wt 0.2]
+
+[se bac61]
+[fowardEffect bit_talk_explosion_triple]
+[shake 0.05 4 4 1.0]
+
+[wt 0.5]
+
+[fowardEffectStop]
+
+[wt 2.5]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠Hundred Personas
+We have about eighty percent of the civilians evacuated. Just a little bit more.
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠Diarmuid
+Ungh...[charaShake G 0 2 2 0.1]these are...!
+[k]
+
+[charaFadeout G 0.1]
+
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠Mash
+Detecting two giant enemies right next to Diarmuid.[sr]A chimera and a Spriggan!
+[k]
+
+[charaFace B 14]
+
+＠Mash
+I didn't think those were still around...!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut B 1200,1200]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Billy
+It just means that the Incineration of Humanity left that much of a mark here! Let's rescue everyone!
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

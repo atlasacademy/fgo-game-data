@@ -1,0 +1,779 @@
+
+＄02-00-01-12-3-1
+
+[charaSet A 99502600 1 Mash]
+[charaSet B 1002001 1 "Altria Alter"]
+[charaSet C 11003001 1 "Jeanne Alter"]
+[charaSet D 2023000 1 Moriarty]
+[charaSet E 6026000 1 "Yan Qing"]
+[charaSet F 98111500 1 Static]
+[charaSet G 98086000 1 Holmes]
+
+[soundStopAll]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 39100]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaEffect E bit_bolg_01]
+[charaFadein E 0.1 1]
+
+[se bac139]
+[charaShake E 0.05 4 0 1.0]
+[wt 0.7]
+＠Yan Qing
+Ngh...!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠Altria Alter
+You're mine!
+[k]
+
+[se ad51]
+[seStop ad51 0.7]
+[charaMove B 0,-20 0.1]
+[charaScale B 1.2]
+[wt 0.2]
+[charaMove B 1 0.1]
+[wt 0.4]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaScale B 1.0]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠Yan Qing
+Dammit! I guess I have no choice!
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad15]
+[wt 0.4]
+
+[se bac36]
+[seVolume bac36 0 0.5]
+[seStop bac36 1.0]
+[wt 0.1]
+[se bac37]
+[seVolume bac37 0 0.5]
+[shake 0.05 7 7 1.4]
+[wt 1.4]
+
+[shake 0.05 0 4 4.0]
+[se ad14]
+[seVolume ad14 0 0.5]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[se ad13]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wt 0.3]
+＠Mash
+...I'm detecting strong shocks throughout the lower floors of the building!
+[k]
+
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠Altria Alter
+A bomb!?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wt 0.3]
+＠Mash
+You have approximately twenty-three seconds until the building collapses! You two, help Master escape!
+[k]
+
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace B 2]
+[charaFace C 2]
+[charaDepth B 9]
+[charaDepth C 1]
+[charaFadein B 0.1 0]
+[charaFadein C 0.1 2]
+＠Jeanne Alter
+Hang on, Master!
+[k]
+
+＠Altria Alter
+We're going to jump!
+[k]
+
+[charaTalk off]
+[messageOff]
+[charaMove B -256,-20 0.1]
+[charaMove C 256,-20 0.1]
+[wt 0.1]
+
+[se bac1]
+[charaSpecialEffect B erasureReverse -256,-20 0.1]
+[charaSpecialEffect C erasureReverse 256,-20 0.1]
+[charaMove B -256,96 0.1]
+[charaMove C 256,96 0.1]
+
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait charaSpecialEffect B]
+[wait charaSpecialEffect C]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.4]
+[wait wipe]
+
+[seStop ad14 0.1]
+[charaTalk on]
+
+[scene 10000]
+[effect bit_talk_43h]
+[se ad2]
+[seVolume ad2 0 0.5]
+
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[shake 0.05 4 4 2.0]
+
+？1：Aaah!
+？2：Heeelp!
+？！
+
+[wipeout rectangleStripUpToDown 0.2 1.0]
+[wait wipe]
+
+[effectStop bit_talk_43h]
+
+[scene 28302]
+
+[seVolume ad2 0 0.3]
+[shake 0.05 4 4 4.0]
+
+[wipein rectangleStripUpToDown 0.2 1.0]
+[wait wipe]
+
+
+＠Altria Alter
+Stop shouting! It's irritating, and you'll bite through your tongue!
+[k]
+
+[se ad14]
+[seVolume ad14 0 0.3]
+[seStop ad14 2.0]
+[se ad10]
+[seVolume ad10 0 0.5]
+[wt 1.0]
+[se ad242]
+[seVolume ad242 0 0.7]
+[se ad228]
+[seStop ad242 3.0]
+[seStop ad228 3.0]
+[wt 1.4]
+
+＠Jeanne Alter
+Welp, now we're all gonna die.
+[k]
+
+＠Jeanne Alter
+Good thing this is happening in this crappy version of Shinjuku, and not somewhere people actually care about.
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripUpToDown 0.2 1.0]
+[wait wipe]
+
+[scene 39110]
+
+[seStop ad2 0.2]
+[wt 0.2]
+
+[wipein rectangleStripDownToUp 0.2 1.0]
+[wait wipe]
+
+[effect bit_talk_43h]
+[wt 0.4]
+[effectStop bit_talk_43h]
+[charaTalk off]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 0.1 0]
+[charaFadein C 0.1 2]
+[charaMove B -256,-40 0.1]
+[charaMove C 256,-40 0.1]
+[wait charaMove C]
+[se bac123]
+[seVolume bac123 0 0.5]
+[charaMove B 0 0.1]
+[charaMove C 2 0.1]
+[wait charaMove C]
+[charaTalk on]
+
+[charaFace B 5]
+＠Altria Alter
+...Now what became of Holmes and Moriarty?[sr]Are they dead? They must be dead.
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠Moriarty
+I am very much alive, thank you![sr]In fact, I'm feeling positively capital!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠Holmes
+Hahahaha! I'm afraid I can't afford to die just yet.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[charaSet H 98109000 1 Ruffian]
+[wt 0.1]
+
+[se ad10]
+[seVolume ad10 0 0.3]
+[seStop ad10 0.7]
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.7 0,-96]
+[charaShake H 0.05 4 0 2.0]
+[charaMove H 1 2.0]
+＠Ruffian
+Eee!
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[charaSet H 98109100 1 Hornet]
+[wt 0.1]
+
+[se ad10]
+[seVolume ad10 0 0.3]
+[seStop ad10 0.7]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.7 0,-96]
+[charaShake H 0.05 4 0 1.0]
+[charaMove H 1 1.0]
+＠Hornet
+...
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[charaSet H 98108900 1 Citizen]
+[wt 0.1]
+
+[se ad10]
+[seVolume ad10 0 0.5]
+[seStop ad10 1.0]
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.4 0,-96]
+[charaShake H 0.05 2 0 1.0]
+[charaMove H 1 1.0]
+＠Citizen
+Wh-what in the world was that...?[sr]What's going[line2]Ugh...
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace D 1]
+[charaFace G 3]
+[charaFadein D 0.1 0]
+[charaFadein G 0.1 2]
+＠Holmes
+Why don't you tell us your deduction, Moriarty.
+[k]
+
+[charaFace D 0]
+＠Moriarty
+Why, it is him, of course.
+[k]
+
+[charaFace G 0]
+＠Holmes
+I concur. Shall we elucidate?
+[k]
+
+[charaFace G 5]
+＠Holmes
+Now then Assassin of Shinjuku, née Yan Qing, I'm afraid we can't let you go now that it's come to this.
+[k]
+
+
+[charaFace D 1]
+＠Moriarty
+Quite right!
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[effect bit_shot_01]
+[se bac21]
+[wt 0.4]
+[se bac22]
+[wt 0.2]
+
+[effect bit_talk_35]
+[wt 1.7]
+
+[se ad328]
+[wt 2.4]
+
+[bgm BGM_EVENT_5 0.1]
+
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+[charaShake H 0.05 4 0 1.0]
+＠Citizen
+...How did you know?
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaFace E 8]
+[charaSpecialEffect H enemyErasure]
+[se ad193]
+[seStop ad193 2.0]
+[wt 0.4]
+[charaSpecialEffect E appearanceReverse]
+[wait charaSpecialEffect E]
+[wait charaSpecialEffect H]
+
+[wt 1.4]
+[charaFadeout E 0.7]
+[wt 1.4]
+
+[charaTalk on]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFace G 3]
+[charaFadein D 0.1 0]
+[charaFadein G 0.1 2]
+＠Moriarty
+Holmes and I have quite a lot of experience in dueling disguises with one another, you see.
+[k]
+
+＠Moriarty
+We hardly need a moment to tell whether or not someone is truly on the brink of death.
+[k]
+
+＠Holmes
+I could point out thirteen mistakes you made while pretending to stagger along. But...we have more pressing matters to attend to, don't we?
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.7 0,-64]
+[charaMove E 1 0.7]
+[charaShake E 0.05 4 0 1.0]
+＠Yan Qing
+...Fine with me. I wouldn't do anything differently anyway.
+[k]
+
+＠Yan Qing
+As a proud Star of Destiny, I'm prepared to meet my fate.
+[k]
+
+[charaFace E 4]
+＠Yan Qing
+...Actually, I guess I lost any pride I had a long time ago, so...crap.
+[k]
+
+[charaFace E 0]
+＠Yan Qing
+Wait, I know! I've got a great excuse!
+[k]
+
+[charaFace E 6]
+＠Yan Qing
+After doppelgänging into so many people, I've lost track of who I really am.
+[k]
+
+[charaFace E 8]
+＠Yan Qing
+Did you know that I keep all of my doppelgängers' memories?
+[k]
+
+＠Yan Qing
+Those ruffians who died over trivial crap...[sr]The nouveau riche who exploited others...
+[k]
+
+[charaFace E 9]
+＠Yan Qing
+Even Hassan, who kept fighting all by himself here in Shinjuku right up until I killed him.
+[k]
+
+[charaFace E 7]
+＠Yan Qing
+They're all right here, inside my head.[sr]Dammit, dammit, dammit!
+[k]
+
+[charaFace E 5]
+＠Yan Qing
+I tried to stop my lord, I really did. But that hopeless fool only said:
+[k]
+
+＠Yan Qing
+“Don't worry, my glory is assured!”
+[k]
+
+＠Yan Qing
+...What a foolish lord. And an equally foolish vassal.
+[k]
+
+[charaFace E 0]
+＠Yan Qing
+I should have stopped him, even if it meant killing him. Then he could at least have died without being betrayed.
+[k]
+
+[charaEffect E bit_talk_06]
+
+[charaFace E 4]
+＠Yan Qing
+And with his heart still full of pride.
+[k]
+
+＠Yan Qing
+Ahh... Whatever happened to my pride...?
+[k]
+
+[bgmStop BGM_EVENT_5 0.4]
+[messageOff]
+[charaSpecialEffect E flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect E]
+[charaEffectStop E bit_talk_06]
+[wt 0.3]
+
+[wt 0.7]
+[bgm BGM_EVENT_4 0.1]
+
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0 1]
+[wt 0.3]
+＠Mash
+...The Assassin of Shinjuku's Spirit Origin has vanished.
+[k]
+
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠Moriarty
+Pride, hm? Is such a thing truly necessary to live one's life?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace B 0]
+[charaFace C 5]
+[charaFadein B 0.1 0]
+[charaFadein C 0.1 2]
+＠Jeanne Alter
+How should I know? I'm just a fake.[sr]You can throw pride to the dogs for all I care.
+[k]
+
+＠Altria Alter
+Ah, of course. That is just what I'd expect a giant panda lacking in pride to say.
+[k]
+
+[charaFace C 2]
+＠Jeanne Alter
+Well excuuuse me for not being proud about[line 2][charaShake C 0.05 7 4 0.4]Panda!?
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+＠Holmes
+Ah, I see. What with the black and white coloration...
+[k]
+
+？1：Plus she's rolling around with bamboo.
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠Jeanne Alter
+[messageShake 0.05 4 4 1.0]
+[font large]IT'S A FLAAAG!!!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace D 1]
+[charaFace G 1]
+[charaFadein D 0.1 0]
+[charaFadein G 0.1 2]
+＠Holmes
+All right, now that the Assassin of Shinjuku has been dealt with...
+[k]
+
+＠Moriarty
+This calls for a night of drinking at Golden Gai!
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 0.1 0]
+[charaFadein C 0.1 2]
+＠Altria Alter
+I'm exhausted. Let's go home, Master.
+[k]
+
+＠Jeanne Alter
+I'd sooner die than go drinking with you. I'm out of here.
+[k]
+
+[messageOff]
+
+[se ad60]
+[charaFadeout C 0.7]
+[charaFadeout B 0.7]
+[seStop ad60 2.0]
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+＠Holmes
+If we two were to drink, it would just be a matter of time before one of us went full Reichenbach.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠Moriarty
+...I say, Master.
+[k]
+
+[charaFace D 0]
+＠Moriarty
+Perhaps it truly is the case that young people don't care to go drinking with older gentlemen like myself?
+[k]
+
+[charaFace D 4]
+＠Moriarty
+I suppose it could well be construed as a kind of harassment.
+[k]
+
+＠Jeanne Alter
+You sound like a manager who's only just figuring out that his subordinates can't stand him.
+[k]
+
+？1：Besides, I'm a minor.
+？！
+
+[charaFace D 0]
+＠Moriarty
+Oh, right, so you can't drink at all then. Hmm, very well.
+[k]
+
+[charaFace D 1]
+＠Moriarty
+While my own leanings toward the evil side of the spectrum leave me wishing for nothing more than to initiate [%1] into the mysteries of refined spirits...
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaFace B 5]
+[charaFace C 5]
+[charaFadein B 0.7 0]
+[charaFadein C 0.7 2]
+[wt 2.0]
+
+[charaTalk on]
+＠Moriarty
+I shall refrain from doing so, as I can clearly see[sr][&his:her] guardians are rather...protective.
+[k]
+
+＠Altria Alter
+Something you wish to say, Moriarty? If you are prepared to face the consequences, you may speak.
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠Moriarty
+Nope, I'm good.
+[k]
+
+
+[se ad229]
+[seVolume ad229 0 0.01]
+[wt 0.1]
+[seVolume ad229 0.7 0.2]
+[wt 0.7]
+[bgmStop BGM_EVENT_4 0.1]
+[messageOff]
+
+[wt 1.4]
+[seStop ad229 2.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠Jeanne Alter
+...Wait. I hear something.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[voice 1100500_0_S010]
+[wt 3.7]
+
+＠All
+[shake 0.05 4 4 0.7]
+!
+[k]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wt 0.3]
+＠Mash
+That howl...!
+[k]
+
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[messageOff]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠Jeanne Alter
+...Guess who's back. First three don't count.
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

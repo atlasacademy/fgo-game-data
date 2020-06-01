@@ -1,0 +1,604 @@
+
+
+
+＄03-00-01-17-2-1
+[soundStopAll]
+
+[charaSet A 99502600 1 Mash]
+[charaSet B 7030001 1 "Atalante Alter"]
+[charaSet C 5036001 1 Avicebron]
+[charaSet D 1098124510 1 "Da Vinci"]
+[charaSet E 1098123210 1 Goredolf]
+[charaSet F 98115300 1 Holmes]
+[charaSet G 1098128400 1 "Yaga Rebel Soldier"]
+[charaSet H 5009000 1 "Effect Dummy"]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+
+[branch INPUT_SELECT_BRANCH_2 INPUT_SELECT_BRANCH 1]
+
+[label INPUT_SELECT_BRANCH_1]
+
+[scene 55300]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Mash
+You've defeated the Demonic Beasts!
+[k]
+
+？1：All's well that ends well.
+？！
+
+[charaFace A 0]
+
+＠Mash
+It appears we will be making a number of trips[sr]between here and the new stronghold for a time...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠Atalante Alter
+I cannot say for sure with that mask of his, but...Avicebron seems quite happy.
+[k]
+
+[charaFace B 0]
+
+＠Atalante Alter
+He has been making golems from the various ores that the team comes across while excavating the tunnels, then uses those golems to carry stuff out of the tunnels.
+[k]
+
+＠Atalante Alter
+...For the time being, I think we should focus on building the new stronghold and digging out the tunnel.
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+[charaFadeout B 0.1]
+[wt 1.0]
+
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_2]
+
+[scene 54701]
+
+[cameraMove 0.1 -86,0 1.2]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaScale C 0.83]
+[charaFadein C 0.1 0,-48]
+
+[seLoop ad60]
+[seVolume ad60 0 0.8]
+[cameraMove 0.7 -46,0 1.2]
+[charaMove C -60,-48 0.8]
+[charaShake C 0.2 0 2 0.8]
+[wait charaMove C]
+[wait camera]
+[seStop ad60]
+[wt 0.7]
+
+[seLoop ad60]
+[seVolume ad60 0 0.8]
+[cameraMove 1.8 0,0 1.2]
+[charaFace C 8]
+[charaMove C 60,-48 2.0]
+[charaShake C 0.2 0 2 2.0]
+[wait charaMove C]
+[wait camera]
+[seStop ad60]
+[wt 0.7]
+
+[seLoop ad60]
+[seVolume ad60 0 0.8]
+[cameraMove 1.0 40,0 1.2]
+[charaFace C 9]
+[charaMove C 0,-48 1.5]
+[charaShake C 0.2 0 2 1.5]
+[wait charaMove C]
+[wait camera]
+[seStop ad60]
+[wt 1.0]
+
+＠Avicebron
+Now then, I think I shall use these Demon Boar bones to make golems as well. Or perhaps I should call them Dragon Tooth Warriors in that case?
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+[cameraHome 0.1]
+[charaFadeout C 0.1]
+[charaScale C 1.0]
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+＠Mash
+That's amazing.
+[k]
+
+＠Mash
+I never thought the day would come when[sr]I'd hear you make a joke, Avicebron.
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[wt 0.3]
+
+[bgmStop BGM_EVENT_7 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Avicebron
+...I do apologize for that. Thankfully, I've[sr]come to my senses, so I'm quite all right now.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 0,0]
+
+＠Da Vinci
+So, how about the Shadow Border's armor?[sr]See anything that could be used to fix it?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Avicebron
+I can only make an educated guess based[sr]on the damage I saw on the hull...
+[k]
+
+＠Avicebron
+...but I believe this material should suffice to prevent further damage to the body in future Zero Sail excursions.
+[k]
+
+＠Avicebron
+We should even have enough to create a spare set of armor. Though of course, it will take some time to excavate all the materials.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,0]
+
+＠Goredolf
+Wonderful! Then let's get it fixed up and take[sr]our leave of this godforsaken frontier already!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 34]
+[charaFadein D 0.1 0,0]
+
+＠Da Vinci
+And how are we supposed to fix this whole[sr]ordeal if we just run away from it!?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠Holmes
+Well, it seems Ms. Atalante's suspicions[sr]were more than justified.
+[k]
+
+[charaFace F 0]
+
+＠Holmes
+At any rate, we all have a lot of work to do.
+[k]
+
+＠Holmes
+No time like the present to get started!
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+[charaFadeout F 0.1]
+[charaPut H 1200,1200]
+[wt 1.0]
+
+
+
+
+[branch INPUT_SELECT_BRANCH_3]
+
+
+[label INPUT_SELECT_BRANCH_3]
+
+
+[se ad648]
+[seVolume ad648 0 0.5]
+[scene 54403]
+[fadein black 1.2]
+[wait fade]
+[wt 2.0]
+
+[scene 54400 1.5]
+[wt 3.0]
+[scene 54403 1.5]
+[wt 1.5]
+[se ad648]
+[wt 1.5]
+[scene 54400 1.5]
+[wt 3.5]
+
+[fadeout black 1.2]
+[seStop ad648 0.6]
+[wait fade]
+[scene 54903]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠Atalante Alter
+Good. Both our new stronghold[sr]and the tunnel are complete.
+[k]
+
+
+＠Atalante Alter
+...We still have some leftover material lying about, but we can leave it be. We'll only be staying at this stronghold for a short while.
+[k]
+
+＠Atalante Alter
+We have camouflaged the other end of the tunnel. Our advance to the capital should begin in about three days.
+[k]
+
+＠Atalante Alter
+...The next step is to contact Beowulf,[sr]and have him and his Yaga create a diversion.
+[k]
+
+？1：Then, that means...
+？！
+
+[charaFace B 1]
+
+＠Atalante Alter
+Yes. It is finally time.
+[k]
+
+＠Atalante Alter
+We will liberate the Yaga of this world from[sr]the Tsar and his Oprichniki's reign of terror.
+[k]
+
+[charaFace B 2]
+
+＠Atalante Alter
+We're going to make our way into Yaga Moscow itself and defeat Ivan the Terrible!
+[k]
+
+[se ad522]
+[wt 1.2]
+[seStop ad522 0.5]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠Yaga Rebel Soldier
+A-are you sure about this, Boss? Do you really think we can do it?
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠Atalante Alter
+...Honestly, I do not know.
+[k]
+
+＠Atalante Alter
+The vast numbers of Oprichniki have prevented us[sr]from so much as catching a glimpse of the Tsar.
+[k]
+
+[charaFace B 4]
+
+＠Atalante Alter
+But, we do know that he's in the capital, and that we have no hope of winning a battle of attrition.
+[k]
+
+[charaFace B 5]
+
+＠Atalante Alter
+If we are to win, we must act immediately,[sr]while we are strong and have a powerful ally.
+[k]
+
+[charaFace B 2]
+
+＠Atalante Alter
+...We cannot afford to wait any longer.[sr]If you want to survive, now is the time to fight!
+[k]
+
+＠Atalante Alter
+If you want your descendants to know peace and prosperity, then you must act now to defeat Ivan the Terrible!
+[k]
+
+＠Atalante Alter
+This will be the most important battle of your lives. If you wish to know peace and freedom, then fight! Fight with all the strength you possess!
+[k]
+
+＠Atalante Alter
+Now is the time to wipe the slate clean, and change the course of history for the first time in four hundred and fifty years!
+[k]
+
+[charaSet E 11006001 1 Salieri]
+[charaSet G 2010001 1 Billy]
+
+[se ad6]
+[wt 1.0]
+[seStop ad6 0.5]
+[wt 0.5]
+
+[charaFace B 4]
+
+＠Atalante Alter
+...Well, I guess this is really it.
+[k]
+
+＠Atalante Alter
+The die is cast. We cannot turn back now. Although[sr]I hope that did not sound too much like Caesar.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Mash
+All right, we're going to take our leave for[sr]the moment to repair the Shadow Border's armor.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Atalante Alter
+Understood.
+[k]
+
+＠Atalante Alter
+Just remember, we need your help now more than ever if we're going to overthrow the capital.
+[k]
+
+[charaFace B 5]
+
+＠Atalante Alter
+So whatever you do, you had better not run off on us.
+[k]
+
+＠Atalante Alter
+If you do...I will hunt you down, even if I have to search all of Russia to do it.
+[k]
+
+？1：Don't worry. We're not going anywhere.
+
+[charaFace B 1]
+
+＠Atalante Alter
+Very well then... I trust you.[sr]You have proven yourself to be an honest [&man:woman].
+[k]
+
+＠Atalante Alter
+If you say you will not run away,[sr]then I believe you.
+[k]
+
+？2：We need to make sure Ivan the Terrible is defeated too.
+
+[charaFace B 1]
+
+＠Atalante Alter
+...I see. That is good to hear.
+[k]
+
+＠Atalante Alter
+You are not the sort to change[sr]your mind once it is made up.
+[k]
+
+＠Atalante Alter
+I am told you overcame all manner of terrible challenges and visited a great many different time periods in your travels.
+[k]
+
+＠Atalante Alter
+If those stories are true, then I hope your[sr]good fortune brings us luck here as well.
+[k]
+
+？！
+
+[charaFace B 6]
+
+＠Atalante Alter
+Very well, I will meet you[sr]back here at the stronghold.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠Billy
+All right, Shanshan, time to hit the trail. You head straight to Salieri when you come back, all right?
+[k]
+
+＠Billy
+You got his scent, don'tcha?
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaSet C 1098127100 1 Shanshan]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[wt 0.1]
+[se ad582]
+[charaMoveReturn C 0,30 1.0]
+[wt 1.5]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠Salieri
+So I will be holding down the fort this time, hm.[sr]Well, I suppose I have no choice.
+[k]
+
+[charaFace E 6]
+
+＠Salieri
+There is no piano to be found in the Shadow Border, correct? Then I have no interest in it whatsoever.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠Billy
+I ain't particularly interested either. Why d'you reckon Da Vinci wanted me to come along, anyways?
+[k]
+
+[charaFace G 5]
+
+＠Billy
+Ah well. Ain't no sense worryin' over it.[sr]Go on, Shanshan! Git!
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.1]
+[se ad582]
+[charaMoveReturn C 0,15 0.5]
+[wt 0.5]
+[charaMoveReturn C 0,15 0.5]
+[wt 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠Billy
+So, you given any consideration to what y'all will[sr]do if Beowulf crawfishes on his offer to help?
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠Atalante Alter
+Not at all.
+[k]
+
+＠Atalante Alter
+I trust him and his combat prowess[sr]as much as I do [%1]'s.
+[k]
+
+＠Atalante Alter
+I am certain he will not hesitate to help us.[sr]All right, I will be waiting!
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_82 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,184 @@
+
+＄02-00-01-12-2-0
+
+[charaSet A 99502600 1 Mash]
+[charaSet B 1002001 1 "Altria Alter"]
+[charaSet C 11003001 1 "Jeanne Alter"]
+[charaSet D 2023000 1 Moriarty]
+[charaSet E 98109400 1 "Assassin of Shinjuku"]
+[charaSet F 98111500 1 Static]
+[charaSet G 98110900 1 "Romeo + Juliet"]
+
+
+[soundStopAll]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 39100]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠Assassin of Shinjuku
+Tch! Send in more reinforcements!
+[k]
+
+[charaFace E 2]
+＠Assassin of Shinjuku
+Send in the Coloraturas too! Did the sponsors leave yet? Good! Don't worry about the rest!
+[k]
+
+＠Assassin of Shinjuku
+Send in the newly made S.P.! I hear they cause lots of collateral damage, but y'know, beggars and choosers!
+[k]
+
+[charaFace E 5]
+＠Assassin of Shinjuku
+...Wait. She's here too!?
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wt 0.3]
+＠Mash
+I'm picking up a new enemy signal.[sr]Be careful, Master!
+[k]
+
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Jeanne Alter
+What the...? Something's weird about this.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaSet A 98109900 1 "Affluent Person"]
+
+
+[charaTalk off]
+[charaFace G 0]
+[charaFadein G 0.7 1]
+[charaEffect G bit_talk_11 0,-96]
+＠???
+My beloved you!
+[k]
+
+
+＠???
+My beloved me!
+[k]
+
+
+＠???
+Now we shall be as one for all of time, where death's cold grasp can never do us part!
+[k]
+
+＠???
+Ahh, Romeo! Ahh, Juliet!
+[k]
+
+＠???
+Now peace we shall restore forevermore.[sr]Blend in, like us!
+[k]
+
+[charaEffectStop G bit_talk_11]
+[charaFadeout G 0.1]
+[wt 0.4]
+
+[charaTalk on]
+
+
+[charaDepth A 9]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[charaShake A 0.05 7 0 1.0]
+＠Affluent Person
+Huh... Gaaah! Don't touch me![sr]I'm melting, I'm meeelting!
+[k]
+
+[messageOff]
+
+[charaSpecialEffect A enemyErasure 1 1.7]
+[wt 0.4]
+[se ad137]
+[wait charaSpecialEffect A]
+[seStop ad137 1.0]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Altria Alter
+...Now I see. First King Lear, now Romeo and Juliet.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠Moriarty
+Hahaha, I cannot imagine Shakespeare will appreciate this version!
+[k]
+
+[charaFace D 1]
+＠Moriarty
+And so it is demonstrated what becomes of star-crossed lovers, hm?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Jeanne Alter
+You know, not that I care about any of this crap or anything, but they are pretty damn pathetic.
+[k]
+
+[charaFace C 5]
+＠Jeanne Alter
+Love that is just a pain in the ass for everyone around is nothing more than a stupid delusion!
+[k]
+
+[charaFace C 2]
+＠Jeanne Alter
+And this Dragon Witch isn't going to let you losers get away with it for one more second!
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

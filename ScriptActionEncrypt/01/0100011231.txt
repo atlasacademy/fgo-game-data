@@ -1,0 +1,54 @@
+＄01-00-01-12-3-1
+
+[soundStopAll]
+[bgm BGM_EVENT_6 0.1]
+[scene 20300 0]
+[charaSet A 8001000 1 Mash]
+[charaSet B 98003003 1 "Dr. Roman"]
+[charaSet C 2005001 1 "Berserk Archer"]
+[charaSet D 9001001 1 Jeanne]
+[charaSet E 4006001 1 Georgios]
+[charaSet F 5015001 1 Amadeus]
+[charaSet G 7013001 1 Kiyohime]
+[charaSet H 3005001 1 Elisabeth]
+[charaFace C 5]
+[charaFadein C 0 1]
+[fadein black 1]
+[wait fade]
+＠Berserk Archer
+...This is fine. This is fine.[sr]Really, what a troublesome and unrewarding job.
+[k]
+
+[charaFace C 1]
+＠Berserk Archer
+Go, and take down that dragon.[sr]Yes, next time for sure, I[line 2]
+[k]
+
+[messageOff]
+[charaSpecialEffect C flashErasure 1 3]
+[wt 1]
+[se ba5]
+[wait charaSpecialEffect C]
+[wt 0.5]
+[bgmStop BGM_EVENT_6 0.4]
+[bgm BGM_EVENT_3 0.1]
+[se ad13]
+[wait se ad13]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr. Roman
+Berserk Archer's elimination is confirmed.[sr]I am getting a reading of a ultra-size lifeform!
+[k]
+
+[communicationCharaFace 5]
+＠Dr. Roman
+Fafnir's left Orleans. In other words...[sr]The showdown's about to begin!
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[communicationCharaClear]
+[wait communicationChara]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

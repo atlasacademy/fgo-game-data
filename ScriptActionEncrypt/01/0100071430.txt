@@ -1,0 +1,508 @@
+
+
+
+＄01-00-07-14-3-0
+[soundStopAll]
+[charaSet A 8001002 1 Mash]
+[charaSet B 98108200 1 Ishtar]
+[charaSet C 98003000 1 "Dr. Roman"]
+[charaSet D 5018001 1 Gilgamesh]
+
+[se ad229]
+[seVolume ad229 0 0.2]
+[scene 33900]
+[fadein black 1.5]
+[wait fade]
+[wt 1.5]
+
+[fadeout black 1.5]
+[wt 1.0]
+[seStop ad229 1.0]
+[wait fade]
+[scene 33800]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[flashin once 0.7 0.7 FFFFFFAF FFFFFF00]
+[se ad65]
+[wt 2.0]
+
+
+[bgm BGM_EVENT_5 0.1]
+[charaScale B 1.12]
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.4 0,-50]
+
+＠Ishtar
+...I got cursed again... I guess it's useless even if I block it with magical energy at max power...
+[k]
+
+＠Ishtar
+At this rate, not only will I be unable to fight, but Ereshkigal will crush me like a bug...
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠Mash
+Are you sure? It doesn't look like your bow's destructive power has declined at all...
+[k]
+
+＠Mash
+You may be shrinking, but you are still helping in our battles.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 0,-50]
+
+＠Ishtar
+Sorry, I've about reached my limit though. Soon I'm going to run out of energy, so I'll leave the fighting to you two.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 5]
+
+＠Dr. Roman
+...This isn't good. We're only at the second gate. How far can we go without Ishtar...?
+[k]
+
+
+？1：Mash and I will take care of it.
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠Mash
+Yes, of course. I shall do my best, so I don't let you down, Senpai!
+[k]
+
+
+？2：It's fine. Ishtar's got this.
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 0,-50]
+[messageShake 0.05 5 5 0.4]
+
+＠Ishtar
+Weren't you listening to what I just said!? I told you that it's tiring me out, so I can't!
+[k]
+
+
+？！
+
+[wt 0.2]
+[se ad60]
+[seVolume ad60 0 0.4]
+[messageOff]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 1.0]
+[scene 33900]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+[seStop ad60 0.4]
+
+
+
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 5]
+
+＠Dr. Roman
+The third gate's ahead. The enemies of the trials are definitely growing stronger. I hope we can get through this one as well...
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+
+＠Mash
+Choosing answers that favor Ereshkigal is clearly making the battles easier, but...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-50]
+
+
+＠Ishtar
+No! I don't care! No matter how tough it is, there are some things that a woman just can't give up, Mash.
+[k]
+
+＠Ishtar
+Looking at these other goddesses, I know I'm better! Better than all of them! But I just can't lose to this one woman.
+[k]
+
+＠Ishtar
+It's a battle with a hopelessly irritating rival!
+[k]
+
+？1：Well, it's an enemy that's a mirror image of yourself...
+？2：Literally the worst, eh?
+
+？！
+
+
+[wt 0.2]
+[messageOff]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[cameraMove 0.1 80,0 1.25]
+[wt 0.1]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+
+＠???
+Didn't know you had that much spirit in you. You've certainly got a big mouth, you little brat.
+[k]
+
+＠???
+...? Wait, are you literally turning into a LITTLE brat, little brat? Fwahahaha, now that's amusing!
+[k]
+
+＠???
+You must be worried descending through the underworld like this! [%1], little brat... You're finally at a loss!
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[cameraHome 0.1]
+[wait camera]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+
+＠Mash
+There's someone behind those rocks! Master, allow me to attack!
+[k]
+
+？1：Okay, beat the crap out of them!
+？2：Wait, that laugh could only be...
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.4]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.4 1]
+[bgm BGM_EVENT_4 0.1]
+
+＠Gilgamesh
+Fwahahahahahahaha! Good work coming to retrieve me!
+[k]
+
+＠Gilgamesh
+You must be scared of the chilling cold of the underworld, you fools! Do you need someone experienced like me to guide you through here?
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠Mash
+You're King Gilgamesh!
+[k]
+
+＠Mash
+What are you doing here!? We thought Ereshkigal captured you!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+
+＠Gilgamesh
+Heh. The underworld is like my backyard. I know how things work down here. I've been here numerous times.
+[k]
+
+[charaFace D 5]
+＠Gilgamesh
+I did accidentally die, but before the gallû spirits came, I hid in the shadows. There, I held my breath and meditated, and then... Presence Concealment EX.
+[k]
+
+＠Gilgamesh
+After I got away from them, I was sitting here contemplating what to do, when you lot came! That's all!
+[k]
+
+？1：He's super lively for a dead guy...
+？2：You're the same as usual, Your Majesty!
+
+？！
+
+[charaFace D 1]
+＠Gilgamesh
+You too, [%1]. Knowing how reckless you are, I knew you would come down to the underworld.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 0,-50]
+
+＠Ishtar
+...It was a good thing he wasn't captured by Ereshkigal, but it ticks me off to see this guy so perky down here...
+[k]
+
+＠Ishtar
+If you had been cursed like me, that would've at least been interesting...
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+
+＠Gilgamesh
+Fool. The curse of the underworld is only for the living. I'm dead, so I needn't worry about any of that.
+[k]
+
+[charaFace D 3]
+＠Gilgamesh
+However, that also means that I am subject to Ereshkigal's laws as well.
+[k]
+
+＠Gilgamesh
+Even if I wanted to return to Uruk, I wouldn't be able to leave the underworld without her permission.
+[k]
+
+[charaFace D 0]
+＠Gilgamesh
+And I don't think she'd let me leave this world so easily either. So, you know what to do, right, [%1]?
+[k]
+
+[charaFace D 2]
+＠Gilgamesh
+I, the king, command you to pass through the gates of the underworld, and punish that wretched Ereshkigal for me!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 0]
+
+
+＠Dr. Roman
+Well, yeah. That's why [%1] came here in the first place.
+[k]
+
+＠Dr. Roman
+The order of things flip-flopped, but you're going to help us defeat Ereshkigal too, right, Gilgamesh?
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠Gilgamesh
+Leave it to me. I will show you the difference between that itty-bitty brat there, and me, the king.
+[k]
+
+[bgmStop BGM_EVENT_4 0.3]
+[wt 0.4]
+[bgm BGM_EVENT_2 0.1]
+
+＠Gilgamesh
+By the way, why did you shrink? Have you finally decided that your insignificance should be reflected in your appearance?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-50]
+[charaShake B 0.01 5 5 0.5]
+
+＠Ishtar
+I've been telling you, it's Ereshkigal's curse!
+[k]
+
+＠Ishtar
+Agh, jeez, I knew I shouldn't have come to save you!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+
+＠Gilgamesh
+Hahaha. This fool, hahaha. You? Come to save me? Am I dreaming?
+[k]
+
+＠Gilgamesh
+Did I somehow die AGAIN while I was down here and start hallucinating?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 0,-50]
+
+
+＠Ishtar
+Yeah, if that was the case, we could've just left you here. Why don't you just drown in your own stupidity, Goldie?
+[k]
+
+＠Ishtar
+You're quite the swimmer, aren't you? You were so absorbed in swimming that a serpent stole your precious herb of immortality.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+
+＠Gilgamesh
+Argh, what a foul way of pointing out my traumatic past! So this really isn't a hallucination... This is the real Ishtar!
+[k]
+
+[charaFace D 1]
+＠Gilgamesh
+But...that doesn't make sense.
+[k]
+
+＠Gilgamesh
+If this isn't a dream, what is this slightly less irritating Ishtar doing here?
+[k]
+
+＠Gilgamesh
+Are you saying something came over you? Or are you trying to be sweet to win over [%1]?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 0,-50]
+
+＠Ishtar
+Ugh, stop. Just stop talking, Goldie! I don't know what you're talking about, trying to win [%1] over!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠Mash
+Um, please, you two. Let's leave the Uruk-opera behind and head to the third gate. See, over there...
+[k]
+
+[wt 0.2]
+[messageOff]
+[bgmStop BGM_EVENT_2 0.4]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.4]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+
+＠Third Gate
+...Answer meee... Answer my question pleeease...
+[k]
+
+[wt 0.2]
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[wt 0.4]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 3]
+
+
+＠Dr. Roman
+How sad. It's been shouting all this time, but after being completely ignored, it lost its confidence...
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[bgm BGM_EVENT_1 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+
+＠Gilgamesh
+Oh yes, that's right. You have my permission to speak, third gate. What do you ask?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+＠Third Gate
+...Who is more worthy of your trust and respect? Who is more worthy of victory?
+[k]
+
+＠Third Gate
+Who is a more suitable ally?
+[k]
+
+
+？1：That'll be Ishtar.
+？2：That'll be Gilgamesh.
+
+？！
+
+
+[messageOff]
+[bgmStop BGM_EVENT_1 0.5]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

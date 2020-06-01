@@ -1,0 +1,346 @@
+
+＄02-00-01-12-3-0
+
+
+[charaSet A 99502600 1 Mash]
+[charaSet B 1002001 1 "Altria Alter"]
+[charaSet C 11003001 1 "Jeanne Alter"]
+[charaSet D 2023000 1 Moriarty]
+[charaSet E 98109100 1 "Assassin of Shinjuku"]
+[charaSet F 98111500 1 Static]
+[charaSet G 98109100 1 Hornet]
+[charaSet H 98109100 1 Hornet]
+
+[soundStopAll]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 39100]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Jeanne Alter
+That takes care of that!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wt 0.3]
+＠Mash
+Romeo and Juliet are down![sr]Sorry, Mr. Shakespeare!
+[k]
+
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Altria Alter
+...The time is upon us.[sr]Are you ready to remove your disguise, Master?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wt 0.3]
+＠Mash
+Master, there's more of them... A lot more!
+[k]
+
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[messageOff]
+
+[cameraMove 0.5 0,0 1.2]
+[wait camera]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFace G 0]
+[charaFace H 0]
+[charaScale E 0.83]
+[charaScale G 0.83]
+[charaScale H 0.83]
+
+[se ad59]
+[charaFadein E 0.7 0,-48]
+[seStop ad59 1.0]
+[wt 1.4]
+
+[cameraMove 1.0 -80,0 1.2]
+[se ad59]
+[charaFadein G 0.7 384,-48]
+[seStop ad59 1.0]
+[wt 1.4]
+[wait camera]
+
+[cameraMove 0.5 80,0 1.2]
+[se ad59]
+[charaFadein H 0.7 -384,-48]
+[seStop ad59 1.0]
+[wt 1.4]
+[wait camera]
+
+[cameraMove 0.2 0,0 1.2]
+＠Assassin of Shinjuku
+Surround them! Whatever you do, don't let them use their Noble Phantasms!
+[k]
+
+＠Assassin of Shinjuku
+Don't worry! I'll kill them when the time is right!
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.4]
+[charaFadeout G 0.4]
+[charaFadeout H 0.4]
+[cameraHome 0.5]
+[wait camera]
+
+[charaTalk on]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wt 0.3]
+＠Mash
+...I knew it. It won't work. The Spirit Origin values don't match the last ones!
+[k]
+
+＠Mash
+We know the Assassin of Shinjuku is among these dozens of people, but we can't tell which one.
+[k]
+
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠Altria Alter
+No matter. As long as he is among the crowd, our plan will work.
+[k]
+
+＠Altria Alter
+Now, Master!
+[k]
+
+
+？1：Here goes!
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[se ad7]
+[shake 0.05 4 4 0.4]
+[wt 0.4]
+[bgmStop BGM_EVENT_3 0.7]
+[wt 0.3]
+
+[charaFace E 0]
+[charaFace G 0]
+[charaFace H 0]
+[charaScale E 1.0]
+[charaScale G 1.0]
+[charaScale H 1.0]
+[charaDepth E 9]
+[charaDepth G 1]
+[charaDepth H 1]
+[charaFadein E 0.1 1]
+[charaFadein G 0.1 2]
+[charaFadein H 0.1 0]
+＠A：Assassin of Shinjuku
+Huh!?
+[k]
+
+＠A：Hornet
+...?
+[k]
+
+＠A：Assassin of Shinjuku
+The Master from Chaldea!?
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaSet E 98109100 1 "Assassin of Shinjuku"]
+[wt 0.4]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFace G 0]
+[charaFace H 0]
+[charaDepth E 9]
+[charaDepth G 1]
+[charaDepth H 1]
+[charaFadein E 0.1 1]
+[charaFadein G 0.1 2]
+[charaFadein H 0.1 0]
+
+[effect bit_talk_41]
+
+？1：You!
+？！
+
+[bgm BGM_EVENT_49 0.1]
+
+[charaShake E 0.05 4 0 1.0]
+[effectStop bit_talk_41]
+[wt 1.0]
+
+[charaFadeout E 0.4]
+[charaFadeout G 0.4]
+[charaFadeout H 0.4]
+[wt 0.7]
+
+[charaSet E 6026000 1 "Assassin of Shinjuku"]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠Altria Alter
+There you are, Assassin!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[messageOff]
+[se ad266]
+[seStop ad266 1.0]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.7 1]
+[wt 1.0]
+＠Assassin of Shinjuku
+Dammit! I can't believe I fell for such a cheap trick!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠Moriarty
+I am sure you meant to say “devilishly cunning trap,” young man!
+[k]
+
+＠Moriarty
+All right, now that we're inside, Assassin has nowhere to run! This is our chance to deal with him!
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wt 0.3]
+＠Mash
+I've marked the Assassin of Shinjuku as the target! Please concentrate your attacks on him!
+[k]
+
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠Assassin of Shinjuku
+Tch. Oh well, I knew this day would come eventually.[sr]I couldn't get off scot-free forever!
+[k]
+
+[charaFace E 8]
+＠Assassin of Shinjuku
+It just happened a little sooner[line 2]or is that later?[line 2]than I thought it would.
+[k]
+
+＠Assassin of Shinjuku
+I can't complain. For that matter, I haven't even lost yet!
+[k]
+
+[charaFace E 9]
+＠Assassin of Shinjuku
+All right everyone, get out there, fight, and die![sr]Die for my sake, and for yours! But mostly mine!
+[k]
+
+[charaFace E 7]
+＠Assassin of Shinjuku
+Die for glory and desire! My star is the Skillful Star!
+[k]
+
+
+[charaFace E 8]
+＠Assassin of Shinjuku
+I am Yan Qing, one of the 108 Stars of Destiny![sr]Prepare yourself!
+[k]
+
+[messageOff]
+
+[se ad10]
+[seVolume ad10 0 0.4]
+[se ad38]
+[seVolume ad38 0 0.6]
+[shake 0.05 0 4 0.4]
+[wt 1.0]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_49 0.4]
+[wait fade]
+[soundStopAll]
+[end]

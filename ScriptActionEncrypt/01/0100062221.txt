@@ -1,0 +1,183 @@
+＄01-00-06-22-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_5 0.1]
+
+[charaSet A 8001001 1 Mash]
+[charaSet B 1012001 1 Bedivere]
+[charaSet D 98086000 1 Holmes]
+[charaSet E 5022001 1 Sanzang]
+[charaSet F 2014000 1 "Tawara Touta"]
+[charaSet G 98002000 1 Fou]
+
+[scene 28801]
+
+[charaBackEffect D bit_talk_haboob_02]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+
+[fadein black 2.0]
+[wait fade]
+
+＠Mash
+We've intercepted the sphinxes! Senpai, how should we proceed from[line 3] Argh!
+[k]
+
+[messageOff]
+[se ad10]
+
+[charaFadeout A 0.4]
+[wt 0.8]
+
+[charaTalk G]
+[charaFadein G 0.1 1]
+
+＠Fou
+Fou!?
+[k]
+
+[charaFadeout G 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠Sanzang
+Hey, did Mash suddenly disappear just now!? It's as if she fell into a... Whoa!
+[k]
+
+[messageOff]
+[se ad10]
+
+[charaFadeout E 0.4]
+[wt 0.8]
+
+[charaTalk G]
+[charaFadein G 0.1 1]
+
+＠Fou
+Fofou!?
+[k]
+
+[charaFadeout G 0.1]
+
+[charaTalk F]
+[charaFace B 5]
+[charaFace F 5]
+[charaFadein B 0.1 2]
+[charaFadein F 0.1 0]
+
+＠Tawara Touta
+Hm, is this...?
+[k]
+
+＠Bedivere
+Yes, it is!
+[k]
+
+？1：It's a pitfall trap!
+
+？！
+
+[se ad10]
+[messageOff]
+[wipeout rectangleStripDownToUp 0.5 1]
+[wait wipe]
+[charaPut D 1200,1200]
+[charaBackEffectStop D bit_talk_haboob_02]
+
+[charaFadeout B 0]
+[charaFadeout F 0]
+
+[scene 10000]
+[wt 1.0]
+[seStop ad10]
+[se ad57]
+[wt 1.0]
+[seStop ad57]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.5 1]
+[wait wipe]
+
+＠Mash
+Ouch... My butt...
+[k]
+
+＠Mash
+Is everyone here? I heard five thuds...
+[k]
+
+？1：Roll call! [%1], present...
+
+？！
+
+＠Bedivere
+A graceful landing, if I do say so myself. Bedivere, present.
+[k]
+
+＠Sanzang
+...prajnaparamitayam caryam caramano vyavalokayati... Yes... Xuanzang Sanzang, right here...
+[k]
+
+＠Tawara Touta
+We fell pretty far... But I didn't think there'd be that much oxygen down here.
+[k]
+
+＠Fou
+Fou.
+[k]
+
+＠D：???
+Excellent. Looks like everyone was able to escape. Glad no one was hurt.
+[k]
+
+＠D：???
+I'll turn on the lights, then. You may feel a bit dizzy, but that's part of the charm.
+[k]
+
+[bgmStop BGM_EVENT_5 2.0]
+
+？1：...Huh?
+？2：...There's a sixth person!?
+
+？！
+
+[se ad138]
+[messageOff]
+[wipeout circleOut 0.1 0.5]
+[wait wipe]
+
+[scene 21400]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0 1]
+
+[wipein circleIn 1.0 0.5]
+[wait wipe]
+[bgm BGM_EVENT_7 0.1]
+
+＠D：???
+Hello there, everyone. And welcome to the wondrous mysteries of the Atlas Institute!
+[k]
+
+[charaFace D 1]
+＠Holmes
+I am Sherlock Holmes. The world's best detective, and its only consulting detective.
+[k]
+
+＠Holmes
+As the representative of those who shed light on a problem, I am here to guide you all to the truth! I hold all the pieces of the puzzle!
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[soundStopAll]
+[end]

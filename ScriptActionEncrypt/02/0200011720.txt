@@ -1,0 +1,1483 @@
+
+＄02-00-01-17-2-0
+
+[charaSet A 99502600 1 Mash]
+[charaSet B 98111500 1 Static]
+[charaSet C 1002001 1 "Altria Alter"]
+[charaSet D 2023000 1 Moriarty]
+[charaSet E 98086000 1 Holmes]
+[charaSet F 2023001 1 "Evil Moriarty"]
+[charaSet G 98111400 1 "Demon God Bael"]
+[charaSet H 98111400 1 "Demon God Bael Silhouette"]
+
+[soundStopAll]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 38900]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+[charaEffect F bit_talk_06]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠F：Moriarty
+So...I have lost.
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[charaSpecialEffect F flashErasure 1 1.2]
+[se ad52]
+[wait charaSpecialEffect F]
+[charaEffectStop F bit_talk_06]
+[wt 0.3]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_4 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠Moriarty
+...So you have.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaSet F 98111500 1 "Da Vinci"]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0 1]
+[wt 0.3]
+＠Mash
+Evil Moriarty's disappearance, confirmed![sr]You did it, Master!
+[k]
+
+？1：We all did it!
+？！
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+[charaFadein D 0.1 0]
+＠Moriarty
+Indeed! I daresay we pulled it off perfectly!
+[k]
+
+[charaFace E 3]
+＠Holmes
+No... It's not over yet.
+[k]
+
+[charaFace D 0]
+＠Moriarty
+Yet? What do you mean, yet?
+[k]
+
+[charaFace E 5]
+＠Holmes
+There's no Holy Grail here...which means that power must have come from elsewhere!
+[k]
+
+[se ad14]
+[bgmStop BGM_EVENT_4 2.0]
+[shake 0.05 7 7 2.0]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[seStop ad14 2.0]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0 1]
+[wt 0.3]
+＠Mash
+...I'm picking up a new Spirit Origin![sr]According to its pattern, it...it appears to be...!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0 0,-90]
+＠Da Vinci
+No! It can't be!
+[k]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠Da Vinci
+It's not possible! No matter what else happens, this should be absolutely impossible!
+[k]
+
+[charaFadeout F 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+
+[messageOff]
+
+
+[se ad134]
+[shake 0.05 2 2 3.0]
+[wt 2.4]
+[seStop ad134 4.0]
+[charaPut H 1]
+[charaEffect H bit_talk_tornado01]
+[wt 0.2]
+[se ad63]
+[shake 0.05 7 7 1.0]
+[wt 0.7]
+[charaTalk off]
+[charaFace H 0]
+[charaDepth H 9]
+[charaFilter H silhouette 00000080]
+[charaFadein H 0.7 1]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[wt 0.7]
+[shake 0.05 2 2 4.0]
+[flashOff]
+[wt 0.4]
+
+[charaEffectStop H bit_talk_tornado01]
+
+[se ad14]
+[charaFace G 0]
+[charaDepth G 1]
+[charaFadein G 0.1 1]
+[charaPut C 1]
+[se ad61]
+[seStop ad61 4.0]
+[charaEffect C bit_talk_lightning_01g]
+[charaMove C 0,-1200 8.0]
+[charaFadeout H 3.0]
+[seStop ad14 4.0]
+[wt 4.0]
+[charaEffectStop C bit_talk_lightning_01g]
+
+＠G：???
+[messageShake 0.05 4 4 1.0]
+...Haha.[sr]...Hahaha, hahahahaha!
+[k]
+
+＠G：???
+I remember! I remember everything now!
+[k]
+
+＠G：???
+So, you're here, [%1]...[sr]loathsome Master of Chaldea!
+[k]
+
+
+？1：Goetia!?
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0 0,-90]
+[wt 0.3]
+＠Da Vinci
+No, it's not Goetia! That's...a Demon God Pillar!
+[k]
+
+＠Da Vinci
+It may appear to be human, but there's no mistaking its Spirit Origin pattern!
+[k]
+
+？1：A Demon God Pillar!?
+
+？2：I thought those had all been destroyed!?
+
+？！
+
+[charaFadeout F 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠G：???
+We were indeed destroyed![sr]Our entire species was wiped out!
+[k]
+
+＠G：???
+We had no way to revive! To return![sr]To be restored! Our eternity was lost!
+[k]
+
+＠G：???
+Our plan 3,000 years in the making was devastated![sr]Yet here I am, revealing myself in this ugly form!
+[k]
+
+＠G：???
+All for the sole purpose...of killing you!
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠Altria Alter
+...So, the last dregs of a forgotten race. Pathetic.[sr]And you say you're here to kill [%1]?
+[k]
+
+[charaFace C 5]
+＠Altria Alter
+You have no right to blame [&him:her] for[line 2]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠G：???
+[font large][messageShake 0.05 7 7 1.0]I know that!
+[k]
+
+[messageShakeStop]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠Altria Alter
+...
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠G：???
+You're exactly right! This bitter pain in my chest, this fire that sears my flesh... I know just where it comes from!
+[k]
+
+＠G：???
+It's not because our 3,000-year plan was ruined.[sr]Nor because Heroic Spirits prevented the incineration.
+[k]
+
+＠G：???
+It's not even thanks to that detestable Solomon returning his ring to the heavens.
+[k]
+
+＠G：???
+No, there is something else behind all of that.[sr]One person responsible for how things turned out.
+[k]
+
+＠G：???
+...You, [%1]!
+[k]
+
+？1：Me...?
+？！
+
+＠G：???
+I admit it. I have no right to blame you for this.[sr]There is no justification for taking out my anger on you.
+[k]
+
+＠G：???
+[messageShake 0.05 4 4 2.0]
+No, there is only hatred. Hatred.[sr]Hatred, hatred, hatred, HATRED!
+[k]
+
+
+＠G：???
+I can't feel anything but hatred![sr]Hatred for you, [%1]!
+[k]
+
+
+＠G：???
+Why did you come here? How did you arrive on this planet, in this time, at that place!?
+[k]
+
+＠G：???
+If you were a hero who had surpassed the bounds of humanity, I would be convinced! If you were a demon king who ate humans, I could accept it!
+[k]
+
+＠G：???
+But you're nothing more than a common, ordinary [&man:woman]![sr]And even then, you still destroyed everything!
+[k]
+
+＠G：???
+I was only able to endure the humiliation of running away so that I would be able to kill you!
+[k]
+
+＠G：???
+I'm not killing you in order to destroy the world.[sr]I'm destroying the world in order to kill you!
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠Holmes
+A murder plot!
+[k]
+
+＠Holmes
+That's what you've been planning all along, these 3,000 years, ever since escaping from the Temple of Time!?
+[k]
+
+[charaFace E 2]
+＠Holmes
+This is the humanity distortion Lord Babbage arrived at! The foreign entity at the edge of the Incineration of Humanity!
+[k]
+
+？1：Foreign entity!?
+？！
+
+[charaFace E 5]
+＠Holmes
+Lord Babbage was summoned as a Heroic Spirit to serve a Demon God Pillar, which is how he was able to obtain all the relevant numbers.
+[k]
+
+[charaFace E 3]
+＠Holmes
+The next step, naturally, is to use those numbers in a calculation. Any mathematician would do the same.
+[k]
+
+[charaFace E 5]
+＠Holmes
+Specifically, he calculated a future that assumed the Incineration of Humanity took place, rather than calculating a way to try and prevent the incineration.
+[k]
+
+[charaFace E 2]
+＠Holmes
+That's when he made his discovery.
+[k]
+
+＠Holmes
+He learned that the Mage King would destroy the post-2018 future, even without the incineration!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠G：???
+Right you are, detective of Baker Street.
+[k]
+
+＠G：???
+Over the course of 3,000 years, I have gained the ability to fuse Phantom Spirits and Heroic Spirits!
+[k]
+
+＠G：???
+Innumerable cast-offs, forgotten by history, devoid of faith...
+[k]
+
+＠G：???
+And yet, they possessed untold value![sr]Urban legends! Fairy tales! Extinct beasts!
+[k]
+
+＠G：???
+It was exactly what I couldn't understand before...and what I need now!
+[k]
+
+＠Demon God Bael
+A passion for punishment. A vow for revenge.[sr]They are what fuel my existence! I am Demon God Bael!
+[k]
+
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠Holmes
+Then let me ask you, Bael.[sr]How deeply was Moriarty involved in this!?
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠Demon God Bael
+There is no need for me to answer that.[sr]You already have your answer.
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripRightToLeft 0.2 1.0]
+[wait wipe]
+
+[bgmStop BGM_EVENT_24 0.1]
+
+[charaFadeout G 0.1]
+[scene 10000]
+
+[wipein rectangleStripLeftToRight 0.2 1.0]
+[wait wipe]
+
+
+＠Moriarty
+...I was involved in every part, Holmes.
+[k]
+
+[se bac143]
+[effect bit_talk_35]
+[wt 2.0]
+[se ad328]
+[wt 2.0]
+[bgm BGM_EVENT_5 0.1]
+
+？1：...Huh?
+？！
+
+
+[messageOff]
+
+[scene 38900]
+[wt 0.4]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0 1]
+[wt 0.3]
+＠Mash
+I... Huh...?
+[k]
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠Altria Alter
+Wha...
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0 0,-90]
+[wt 0.3]
+＠Da Vinci
+Wh-what the...?
+[k]
+
+[charaFadeout F 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠Holmes
+Moriarty... You're... Now I see![sr]It can't be! But it is!
+[k]
+
+＠Holmes
+Backwards! It was all backwards!
+[k]
+
+＠Holmes
+I can't believe you would go that far...[sr]That you would risk everything in this way!
+[k]
+
+[charaFace E 5]
+＠Holmes
+So you even threw away certainty in your pursuit of victory!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠Moriarty
+...I reached you, Holmes. It was almost too easy for me... But this time I win.
+[k]
+
+[charaFace D 5]
+＠Moriarty
+This time, there can be no doubt.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠Holmes
+So this is what it is to lose... Loath as I am to admit it, Moriarty, victory is indeed yours.
+[k]
+
+[charaFace E 4]
+＠Holmes
+I am so sorry, [&Mr.:Ms.] [%1].[sr]I made a grave mistake in my deductions.
+[k]
+
+？1：!?
+？！
+
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0 1]
+[wt 0.3]
+＠Mash
+No way!
+[k]
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+
+[messageOff]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+[wt 0.4]
+[charaFace E 2]
+＠Holmes
+Altria! Kill me at once![sr]There may still be hope for[line 2]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠Moriarty
+Nice try, my sworn enemy. But your companions are[sr]ill-equipped to follow your line of reasoning!
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[messageOff]
+
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+[charaSpecialEffect E wipe]
+
+[charaEffect E bit_talk_11]
+
+[bgmStop BGM_EVENT_5 0.4]
+[se ad343]
+[wait charaSpecialEffect E]
+[charaPut E 1024,1024]
+[charaEffectStop E bit_talk_11]
+[wt 0.3]
+
+[wt 1.4]
+
+
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠Moriarty
+Farewell, Holmes!
+[k]
+
+＠Moriarty
+The greatest detective of all time! One who shared my perspective, but never my position!
+[k]
+
+[charaFace D 5]
+＠Moriarty
+With your power, I will achieve true victory!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[bgm BGM_EVENT_24 0.1]
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0 1]
+[wt 0.3]
+＠Mash
+...! Mr. Holmes's Spirit Origin is...not disappearing!?
+[k]
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.1]
+
+[charaSet D 2023002 1 Moriarty]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠Altria Alter
+Indeed it isn't.
+[k]
+
+＠Altria Alter
+I can still sense his Servant aura...but from Moriarty!
+[k]
+
+
+[bgmStop BGM_EVENT_24 1.5]
+[messageOff]
+[charaFadeout C 0.1]
+[charaSet E 2023002 1 Holmes]
+[wt 0.4]
+[cameraMove 1.0 0,0 1.2]
+[wait camera]
+
+[se bac168]
+[seStop bac168 0.7]
+[se ad267]
+[seVolume ad267 0 0.3]
+[seStop ad267 0.7]
+[wt 0.4]
+[se bac168]
+[charaTalk E]
+[charaScale E 0.83]
+[charaFilter E silhouette 00000080]
+[charaFace E 0]
+[charaFadein E 0.7 0,-48]
+[wt 0.1]
+[seStop ad267 0.7]
+[wt 2.0]
+
+[se ad95]
+[cameraMove 3.0 0,0 1.0]
+[charaFadeout E 2.0]
+[wait camera]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.7 1]
+[wt 1.5]
+
+[bgm BGM_EVENT_24 1.5]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠Moriarty
+Of course. I didn't kill him, I absorbed him.[sr]That was how it needed to be done.
+[k]
+
+
+？1：Moriarty...
+？！
+
+[charaFace D 5]
+＠Moriarty
+...How good to meet you, everyone.[sr]My name is James Moriarty.
+[k]
+
+[charaFace D 1]
+＠Moriarty
+I am the one who shall destroy this planet.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0 0,-90]
+[wt 0.3]
+＠Da Vinci
+When was it... When did you first betray us!?
+[k]
+
+[charaFadeout F 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠Moriarty
+When? Why, just a moment ago. It feels as though my long, long calculation has finally come to an end.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0 1]
+[wt 0.3]
+＠Mash
+Wait. Just a moment ago?[sr]You only decided to betray us then!?
+[k]
+
+[charaFace A 2]
+＠Mash
+I-I don't get it! You're not making any sense at all!
+[k]
+
+[charaFace A 15]
+＠Mash
+I mean, if we were losing, I can see the logic in betraying us as a way to escape.
+[k]
+
+[charaFace A 14]
+＠Mash
+But we were winning! We were even strong enough to defeat Bael! I'm sure of it!
+[k]
+
+[charaFace A 5]
+＠Mash
+There was no reason for you to betray us!
+[k]
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠Moriarty
+...Would you mind, Bael?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠Demon God Bael
+You're wasting your time. But, we League of Phantom Fiends members are nothing if not equal.
+[k]
+
+＠Demon God Bael
+If you wish to do so, I will wait.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠Moriarty
+Very well. I suppose you do at least have a right to know what is happening.
+[k]
+
+[charaFace D 1]
+＠Moriarty
+And I have an obligation to answer. So I will answer all your questions, starting at the very beginning.
+[k]
+
+[charaFace D 5]
+＠Moriarty
+After all, with Holmes gone, I'm now the only one who can.
+[k]
+
+？1：...
+？！
+
+[messageOff]
+
+[fadeout black 0.4]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 1.0]
+
+[charaSet H 2016000 1 "Emiya Alter"]
+
+[fadein black 0.4]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠Moriarty
+...Have you noticed it, [%1]? There's something fundamentally off about this Shinjuku, isn't there?
+[k]
+
+？1：...It's like something out of fiction.
+？2：It's like we're inside a story.
+？！
+
+＠Moriarty
+Exactly.
+[k]
+
+[charaFace D 1]
+＠Moriarty
+This Shinjuku has been cut off from the outside world,[sr]and has no connection to humanity.
+[k]
+
+[charaFace D 5]
+＠Moriarty
+As a result...it has become a fictional city.
+[k]
+
+[charaFace D 0]
+＠Moriarty
+It's all but impossible to fuse a Phantom Spirit and a Heroic Spirit, or even two Phantom Spirits, anywhere but here.
+[k]
+
+[charaFace D 5]
+＠Moriarty
+And it is here that Bael and I formed an alliance,[sr]in order to pursue our separate goals.
+[k]
+
+[charaFace D 1]
+＠Moriarty
+Bael's goal was to kill you, [%1]...[sr]And mine was to surpass Holmes.
+[k]
+
+[charaFace D 5]
+＠Moriarty
+We banded together despite our differences in order to accomplish our otherwise impossible goals.
+[k]
+
+
+＠Moriarty
+That is the League of Phantom Fiends:[sr]one formed between Demon God and human.
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0 1]
+[wt 0.3]
+＠Mash
+You...wanted to surpass Holmes? Not kill him?
+[k]
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠Moriarty
+...[%1], have you ever played 21? Where you count up in ones, and whoever says “twenty-one” first loses?
+[k]
+
+[charaFace D 1]
+＠Moriarty
+Each player can only say a maximum of three numbers in their turn: “two, three, four,” or “ten, eleven, twelve,” for example. If you had your choice, would you want to go first or second?
+[k]
+
+？1：First.
+
+[charaFace D 5]
+＠Moriarty
+And with that, you just sealed your loss.
+[k]
+
+？2：Second.
+
+[charaFace D 5]
+＠Moriarty
+Congratulations, you just sealed your victory.
+[k]
+
+？！
+
+[charaFace D 5]
+＠Moriarty
+To get your opponent to say “twenty-one,” you need to end your turn on a multiple of four. You can't end on a multiple of four if you go first.
+[k]
+
+[charaFace D 1]
+＠Moriarty
+And in our games...I always went first, while Holmes always went second.
+[k]
+
+＠Moriarty
+It's how our world was designed.[sr]Good would always triumph over evil.
+[k]
+
+[charaFace D 5]
+＠Moriarty
+As long as I was Moriarty, I would never be able to win against Holmes.
+[k]
+
+＠Moriarty
+Even summoned into these forms,[sr]these laws still restrain us.
+[k]
+
+[charaFace D 1]
+
+
+＠Moriarty
+If I might employ a metaphor you may find helpful... It is like the Counter Force that appears when the world is in danger.
+[k]
+
+
+[charaFace D 5]
+＠Moriarty
+Killing him failed to help me win, nor could I outsmart him. So I thought as hard as I could.
+[k]
+
+[charaFace D 0]
+＠Moriarty
+It's not as though Holmes never makes any mistakes. One need only consider Irene Adler, the woman who once outfoxed him, for that.
+[k]
+
+[charaFace D 5]
+＠Moriarty
+But whenever he faces me, he always gives it his all. It's quite vexing. Thus, there was only one way to beat him.
+[k]
+
+[charaFace D 1]
+＠Moriarty
+I would have to join his side.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠Altria Alter
+Is that so. Then you HAD betrayed us from the beginning.
+[k]
+
+[charaFace C 5]
+＠Altria Alter
+It is infuriating to think that we were so foolish as to not see it sooner.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠Moriarty
+Not at all. There was no way you could have seen it.[sr]After all...
+[k]
+
+？1：You had erased your memory?
+
+？2：You reset yourself?
+？！
+
+＠Moriarty
+...Snrk.
+[k]
+
+[charaFace D 5]
+＠Moriarty
+Hahahaha! Well done, Master![sr]You really are a sharp one!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠Demon God Bael
+Moriarty.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠Moriarty
+Right, right, sorry. Yes, you're exactly correct.
+[k]
+
+[charaFace D 5]
+＠Moriarty
+I reset myself to zero. I removed my memories and evil nature, created a good side, and was reborn.
+[k]
+
+[charaFace D 0]
+＠Moriarty
+And not only me. I also removed Bael's memories.
+[k]
+
+[charaFace D 1]
+＠Moriarty
+He believed himself to be “evil Moriarty” and acted accordingly, and I did the same as “good Moriarty.”
+[k]
+
+[charaFace D 0]
+＠Moriarty
+Right up to the moment “evil Moriarty” disappeared just now.
+[k]
+
+[charaFace D 5]
+＠Moriarty
+He only thought he was Moriarty, and behaved as such.
+[k]
+
+＠Moriarty
+If he hadn't, we would never have been able to defeat Holmes. Or you.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0 1]
+[wt 0.3]
+＠Mash
+No way...
+[k]
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠Moriarty
+Am I wrong? It would have been impossible to evade Holmes's observant eye.
+[k]
+
+[charaFace D 1]
+＠Moriarty
+So I joined your group, and fought with all my strength and conviction at your side.
+[k]
+
+[charaFace D 2]
+＠Moriarty
+That is the indisputable truth. Worry not, Master.[sr]You need not feel bad for failing to see through me!
+[k]
+
+？1：Aww, thanks! (Jerk.)
+
+[charaFace D 5]
+＠Moriarty
+Hahahaha! I'm glad to see you haven't lost your spirit!
+[k]
+
+？2：That's no comfort now.
+
+[charaFace D 5]
+＠Moriarty
+...Right, sorry about that.[sr]I forgot how good you really are.
+[k]
+
+[charaFace D 4]
+＠Moriarty
+You're not sad that I betrayed you.[sr]You're sad that I turned to evil in the first place.
+[k]
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+
+＠H：???
+So, you've finally shown yourself, Bael!
+[k]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠Demon God Bael
+...!
+[k]
+
+[messageOff]
+
+[se bac22]
+[charaEffect G bit_shot_01]
+[charaShake G 0.05 4 4 1.0]
+[wt 1.4]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.7 1]
+[wt 1.0]
+
+[wt 0.7]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Altria Alter
+...You. Is this what you were after all along?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0 1]
+[wt 0.3]
+＠Mash
+Emiya...!
+[k]
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠Emiya Alter
+It's not easy being a mercenary.[sr]Altered or not, distasteful or not, a job's still a job.
+[k]
+
+[charaFace H 4]
+＠Emiya Alter
+Once I was summoned, my only true ally was myself. The only others around me were the Wolf King, Yan Qing, and the Phantom and Christine.
+[k]
+
+[charaFace H 0]
+＠Emiya Alter
+I was hired to defeat the Demon God Pillar.[sr]Nothing else matters.
+[k]
+
+[charaFace H 1]
+＠Emiya Alter
+Besides, this world had already been cut off.[sr]People dying here wouldn't get in the way of my job.
+[k]
+
+[charaFace H 6]
+＠Emiya Alter
+I didn't care if I fought for evil or good.[sr]My only goal was to ensure that balance was maintained.
+[k]
+
+[charaFace H 5]
+＠Emiya Alter
+In which case, it made more sense to side with the winning team. Sensible, don't you think?
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠Altria Alter
+...I can't say I agree with that way of thinking.[sr]But, it does seem you're not our enemy.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠Demon God Bael
+I see. I knew the answer was simple.
+[k]
+
+＠Demon God Bael
+I wasn't sure why you joined us, but I did know you meant to kill me.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+＠Emiya Alter
+Same here. I could tell you planned to use me and dispose of me.
+[k]
+
+[charaFace H 0]
+＠Emiya Alter
+But I guessed that you wouldn't make your move until things had reached this point. Seems I was right.
+[k]
+
+＠Emiya Alter
+Now then, Master of Chaldea.[sr]Those guys are my enemy, and I think they're yours too.
+[k]
+
+[charaFace H 1]
+＠Emiya Alter
+In short, this may be the best chance we ever get.
+[k]
+
+[charaFace H 4]
+＠Emiya Alter
+I have no way to help you all escape, and you don't have any reason to fight me.
+[k]
+
+[charaFace H 1]
+＠Emiya Alter
+Want to team up?
+[k]
+
+？1：...Okay.
+
+[charaFace H 1]
+＠Emiya Alter
+Don't look at me like that.[sr]Some altered Servants are just like this.
+[k]
+
+[charaFace H 0]
+＠Emiya Alter
+If you want to save the world, you better get used to it.
+[k]
+
+？2：You handle Bael.
+
+[charaFace H 0]
+＠Emiya Alter
+...Will do. That was the plan all along, after all.
+[k]
+
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠Demon God Bael
+...Are you going to fight, Moriarty?
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠Moriarty
+I'm tempted to say it's pointless to ask...but I suppose it isn't.
+[k]
+
+[charaFace D 1]
+＠Moriarty
+Your revenge is now complete.[sr]This is as far as my obligation goes.
+[k]
+
+[charaFace D 5]
+＠Moriarty
+Let's begin, Bael.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠Demon God Bael
+Indeed.
+[k]
+
+＠Demon God Bael
+I am Bael, the Demon God Pillar. My whole life has led to this moment. Soon, I shall have my revenge for the humiliation I've suffered.
+[k]
+
+
+[messageOff]
+
+[charaSet H 9938600 1 "Demon God Bael Silhouette"]
+
+[se ad63]
+[charaTalk off]
+[charaFace H 0]
+[charaDepth G 1]
+[charaDepth H 9]
+[charaFilter H silhouette 00000080]
+[charaFadeout G 0.7]
+[charaFadein H 0.7 1]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[wt 0.7]
+[flashOff]
+[wt 0.4]
+
+[charaSet G 9938600 1 "Demon God Bael"]
+[wt 0.1]
+
+[se ad14]
+[charaFace G 0]
+[charaDepth G 1]
+[charaFadein G 0.1 1]
+[charaFadeout H 0.7]
+[wt 1.0]
+[seStop ad14 1.0]
+
+[wt 1.4]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaSet H 2016000 1 "Emiya Alter"]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wt 0.3]
+＠Mash
+The Demon God Pillar is preparing to attack![sr]Your orders, Master!
+[k]
+
+？1：We're going to win, no matter what!
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠Altria Alter
+Well said. Try not to fall behind, Archer!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+＠Emiya Alter
+Took the words right out of my mouth!
+[k]
+
+？2：Let's do this, Moriarty!
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠Moriarty
+...
+[k]
+
+[charaFace D 5]
+＠Moriarty
+...Indeed. Come at me then!
+[k]
+
+？！
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

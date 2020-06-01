@@ -1,0 +1,106 @@
+
+＄02-00-01-16-1-0
+
+[charaSet A 99502600 1 Mash]
+[charaSet B 98111500 1 "Da Vinci"]
+[charaSet C 98111500 1 Static]
+[charaSet D 1002001 1 "Altria Alter"]
+[charaSet E 2023000 1 Moriarty]
+[charaSet F 98086000 1 Holmes]
+
+[soundStopAll]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 38800]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaPut C 1]
+[charaEffect C bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wt 0.3]
+＠Mash
+I'm picking up lots of enemies throughout the tower! Hornets, Coloraturas, and even Super Chimeras!
+[k]
+
+[charaFadeout A 0.1]
+[charaPut C 1200,1200]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠Moriarty
+Heh, that sort of thing isn't even going to slow us down anymore!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠Altria Alter
+On the contrary, if we let our guard down we could die very easily. Remember the difference in numbers!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠Moriarty
+I know that!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠Altria Alter
+Here we go, Master. We're about to climb the tower.[sr]I trust you're ready!
+[k]
+
+？1：All set!
+
+＠Altria Alter
+Good.[sr]...Then let's be on our way!
+[k]
+
+？2：I've got this!
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠Moriarty
+Hahaha, how reassuring!
+[k]
+
+[charaFace E 2]
+＠Moriarty
+By the way Altria, I should remind you that [%1] is MY chum, so I'd appreciate you letting go of [&him:her]!
+[k]
+
+？！
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

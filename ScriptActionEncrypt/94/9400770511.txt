@@ -1,0 +1,236 @@
+
+＄94-00-77-05-1-1
+
+[soundStopAll]
+
+[se ad2]
+[seVolume ad2 0 0.5]
+
+[charaSet A 8001001 1 Mash]
+[charaSet C 2003001 1 "Robin Hood"]
+[charaSet D 1010001 1 Elisabeth]
+[charaSet E 98003003 1 "Dr. Roman"]
+[charaSet F 7022001 1 Ibaraki-Douji]
+
+[scene 21804]
+[fadein black 2.0]
+[wait fade]
+
+[seStop ad2 5.0]
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 1]
+＠Ibaraki-Douji
+Green man! Green good tidings, green pilgrim, green hermit, green geezer!
+[k]
+
+＠Ibaraki-Douji
+As you can see, the pests are gone! So come on![sr]Pretend it's Setsubun and throw me some sweets!
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+＠Robin Hood
+All right, all right. I suppose you deserve it. But call me a geezer again and you can kiss chocolate goodbye.
+[k]
+
+[wt 0.2]
+
+[se ad27]
+[seVolume ad27 0 0.3]
+[charaShake C 0.05 2 2 0.4]
+[wt 0.7]
+
+[charaMoveReturn C -10,0 0.3]
+[se ad28]
+[seVolume ad28 0 0.4]
+[wait se ad28]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Ibaraki-Douji
+Mmm. Understood. I'm clever in that area.[sr]But...[se ad182][seVolume ad182 0 0.4][charaShake F 0.05 4 4 0.4] Mmm. [charaChange F 98105300 0 normal 0][wait charaMove F][charaFace F 0]Mmm-mmm-mmm.
+[k]
+
+[se ad182]
+[seVolume ad182 0 0.2]
+[charaMove F 0,-4 0.3]
+[wait charaMove F]
+
+[charaChange F 7022001 0 normal 0]
+[wait charaChange F]
+[charaMove F 1 0.1]
+[wait charaMove F]
+
+[se ad182]
+[seVolume ad182 0 0.2]
+[charaChange F 98105300 0 normal 0]
+[wait charaMove F]
+[charaMove F 0,-4 0.3]
+[wait charaMove F]
+
+[charaChange F 7022001 0 normal 0]
+[wait charaChange F]
+[charaMove F 1 0.1]
+[wait charaMove F]
+
+[wt 0.4]
+
+[charaFace F 1]
+＠Ibaraki-Douji
+We got rid of those enemies as quickly as the chocolates melting in my mouth.
+[k]
+
+[charaFace F 0]
+＠Ibaraki-Douji
+Even this delicious chocolate isn't enough to keep me here. This place isn't worthy anymore! You heard me!
+[k]
+
+＠Ibaraki-Douji
+Farewell! Farewell!
+[k]
+
+[se ad132]
+[charaMove F 1024,0 1.5]
+[wait charaMove F]
+[seStop ad132 1.0]
+[charaFadeout F 0.1]
+[messageOff]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Robin Hood
+Oh really? I was going to say... If you can defeat the queen living in that pyramid, you'll have all the sweets you can eat. [charaFace C 1]Too bad.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1024,0]
+[charaEffect F bit_talk_42]
+[charaMove F 1 0.2]
+[se bac122]
+[wait charaMove F]
+[charaEffectStop F bit_talk_42]
+＠Ibaraki-Douji
+I knew that pyramid was trouble.[sr]When do we leave?
+[k]
+
+？1：Ibaraki...
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[charaTalk E]
+[communicationCharaLoop 98003003 0 5 0 0]
+[communicationCharaFace 0]
+＠Dr. Roman
+Hmm. She's an unexpected addition to our party, but Ibaraki-Douji's strength is the real deal. Besides...
+[k]
+
+＠Mash
+Besides what, Doctor?
+[k]
+
+＠Dr. Roman
+I think it's a good thing she's showing an interest in human culture.
+[k]
+
+＠Dr. Roman
+Even if her underlying aggression towards humans can't be changed, having a favorite food in common with us is a positive thing.
+[k]
+
+[charaFace A 1]
+＠Mash
+Yes, certainly. I think that leads to mutual understanding.
+[k]
+
+＠Dr. Roman
+Yeah. So, [%1], I know it'll be tough, but please look after her.
+[k]
+
+？1：Sure, I'll do my best!
+？2：She's perfectly tame now.
+
+？！
+
+[bgmStop BGM_EVENT_2 1.5]
+[charaFadeout A 0.1]
+[communicationCharaClear]
+[wait communicationChara]
+[wt 0.3]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Ibaraki-Douji
+So where do we go from here?
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠Elisabeth
+Next is... the Lava Zone![sr]...[bgm BGM_EVENT_5 0.1][charaFace D 7]But why is there lava...?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Mash
+L-Let's just go. We won't know until we see it for ourselves...!
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_5 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[scene 31900]
+[seLoop ad14]
+[fadein black 2.0]
+[wait fade]
+
+＠All
+[messageShake 0.05 4 4 0.7]
+[f large]IT'S SO HOT!
+[k]
+
+[seStop ad14 2.0]
+[wt 0.4]
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+
+[soundStopAll]
+[end]

@@ -1,0 +1,105 @@
+
+
+
+＄01-00-07-17-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1 0.7]
+[charaSet A 98107800 1 Laḫmu]
+[charaSet B 3028000 1 "Jaguar Warrior"]
+[charaSet C 8001002 1 Mash]
+[charaSet D 98003000 1 "Dr. Roman"]
+[charaSet E 2020001 1 Ishtar]
+
+[se ad162]
+[seVolume ad162 0 0.2]
+[scene 32700]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.2]
+[charaMoveReturn A 0,10 0.4]
+＠Laḫmu
+...!
+[k]
+
+[messageOff]
+[se ad110]
+[charaMove A -64,0 0.4]
+[charaFadeout A 0.4]
+[wt 1.4]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠Jaguar Warrior
+That Laḫmu was strange, huh? It ran away without doing anything.
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+＠Mash
+Yes. It was different than the other Laḫmu... Maybe there's a difference in their personalities...
+[k]
+
+？1：The most it did was raise its hands to scare us.
+？2：...No, that can't be...
+
+？！
+
+[charaFadeout C 0.1]
+
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr. Roman
+But even if it doesn't put up a fight, they're dangerous other ways. They're a colony. They might be trading information using their super senses.
+[k]
+
+＠Dr. Roman
+You'll all be in danger if you can't stay hidden. Follow it and finish it off.
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠Ishtar
+...Don't. Never mind that Laḫmu. Let's hurry to the plaza.
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk C]
+[charaFace E 4]
+[charaFadein E 0.1 0]
+[charaFace C 12]
+[charaFadein C 0.1 2]
+＠Mash
+Ishtar? Um... What is it?
+[k]
+
+[charaFace E 8]
+＠Ishtar
+Just do it! We don't have time to spare, right? Sorry to be so difficult, but we can't just idly watch anymore!
+[k]
+
+＠Ishtar
+We're going into the plaza! Before it's too late...!
+[k]
+
+
+[messageOff]
+[seStop ad162 1.4]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_3 0.9]
+[wait fade]
+[soundStopAll]
+[end]

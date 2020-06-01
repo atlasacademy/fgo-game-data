@@ -1,0 +1,986 @@
+＄01-00-08-01-1-1
+
+
+[charaSet A 98017000 1 "Demon God Pillar"]
+[charaSet B 98017000 1 "Demon God Pillar Silhouette"]
+[charaSet C 8001002 1 Mash]
+[charaSet D 98003003 1 "Dr. Roman"]
+[charaSet E 98111500 1 "Da Vinci"]
+[charaSet F 9001001 1 "Jeanne d'Arc"]
+[charaSet G 5009000 1 "Communication Noise"]
+
+[soundStopAll]
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 36001]
+
+
+[charaTalk A]
+[charaDepth A 1]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[charaTalk off]
+
+[fadein black 1.0]
+[wait fade]
+
+[se bac10]
+[charaShake A 0.06 3 3 1.0]
+[effect bit_talk_13]
+
+[wt 0.3]
+
+[se bac10]
+[charaShake A 0.06 3 3 1.0]
+[effect bit_talk_13 200,100]
+
+[wt 0.3]
+
+[se bac10]
+[charaShake A 0.06 3 3 1.0]
+[effect bit_talk_13 -100,150]
+
+[wt 0.3]
+
+
+[shake 0.05 7 7 0]
+[charaSpecialEffect A enemyErasure]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[wt 0.7]
+[se ba6]
+[flashOff]
+[wait charaSpecialEffect A]
+[charaFadeout A 0.1]
+[shakeStop]
+[wt 0.8]
+
+[wt 0.4]
+[seLoop ad14]
+[se ad63]
+[charaSpecialEffect A appearance]
+[wt 0.3]
+[flashin loop 0.2 0.2 FFFFFFFF FFFFFF00]
+[wt 1.3]
+[flashOff]
+[wait charaSpecialEffect A]
+
+
+[seStop ad14 1.0]
+[charaTalk on]
+
+[seLoop ad14]
+[seVolume ad14 0 0.5]
+
+[charaTalk A]
+＠A：Demon God Flauros
+It's pointless. Everything you do is pointless![sr]Ha, ha, ha. Ha, ha, ha, ha. Hahahahahahahahahahahaha!
+[k]
+
+
+[charaFadeout A 0.1]
+[seStop ad14 0.2]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 15]
+[charaDepth C 2]
+[charaFadein C 0.1 1]
+＠Mash
+It can't be...! The Demon God Pillar has reappeared![sr]It wasn't restored, or healed... It...
+[k]
+
+＠Mash
+An entirely new Flauros has been born...!
+[k]
+
+
+？1：When will this end!?
+？2：Don't tell me the ground is completely...
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0 0,-151]
+
+[se bac36]
+[charaShake D 0.05 4 4 1.0]
+[charaShake G 0.05 4 4 1.0]
+＠Dr. Roman
+What was that? What was that impact just now!?
+[k]
+[wt 0.4]
+
+[charaFadeout D 0.1]
+[wt 0.2]
+[charaFadein D 0.1 0,-151]
+[wt 0.2]
+[charaFadeout D 0.1]
+[wt 0.2]
+[charaFadein D 0.1 0,-151]
+＠Staff A
+Something hit us from the outside! The second reactive theory unit has sustained over sixty percent damage!
+[k]
+
+[seLoop ad14]
+
+[se bac59]
+[charaShake D 0.05 7 7 2.0]
+[charaShake G 0.05 7 7 2.0]
+＠Staff B
+We've lost the northern observation room![charaFadeout D 0] Detecting excessive pressure in the observatory dome!
+[k]
+
+[wt 0.1]
+
+[charaShake D 0.05 2 2 0]
+[charaShake G 0.05 2 2 0]
+[charaShake E 0.05 2 2 0]
+＠Staff B
+T-minus five minutes until collapse...! If the dome is destroyed, we won't be able to hold the Command Room!
+[k]
+
+[charaFadein D 0 0,-151]
+＠Staff B
+Chaldea will enter foam-state[charaFadeout D 0] and be swallowed up by the Temple of Time![charaFadein D 0 0,-151]
+[k]
+
+＠Staff C
+Pseudo-Spiritron computing efficiency have fallen out of the qualia zone![charaFadeout D 0][sr]We're losing reactive theory strength![charaFadein D 0 0,-151]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.2]
+[charaFadein D 0.1 0,-151]
+[wt 0.2]
+[charaFace D 5]
+＠Dr. Roman
+Cut off all power to external facilities! Reroute everything to Chaldeas and the reactive theory units!
+[k]
+
+＠Dr. Roman
+We need to maintain the Command Room's functions! Leonardo, what about the resources you have saved up in your workshop!?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 0,-90]
+＠Da Vinci
+I've transferred them to the Spiritron calculation supercomputer. My secret stash should cover it!
+[k]
+
+[charaFace E 2]
+＠Da Vinci
+But this will all be futile, Romani![charaFadeout E 0.1][sr]The attackers are Demon God Pillars![charaFadein E 0.1 0,-90]
+[k]
+
+[charaFadein E 0.1 0,-90]
+＠Da Vinci
+Six, seven, eight[line 3]Eight Demon God Pillars have wrapped themselves around Chaldea!
+[k]
+
+[charaFace E 5]
+＠Da Vinci
+I could fight directly,[charaFadeout E 0.1] but I'd be able to take out maybe one at best![charaFadein E 0.1 0,-90]
+[k]
+
+[charaFace E 2]
+＠Da Vinci
+And that won't solve the problem at hand! We'll need to destroy the Singularity before Chaldea gets smashed to smithereens!
+[k]
+
+[messageOff]
+
+[seStop ad14 0.2]
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10]
+[wt 0.3]
+
+[charaShakeStop D]
+[charaShakeStop G]
+[charaShakeStop E]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[seLoop ad14]
+[seVolume ad14 0 0.5]
+＠A：Demon God Flauros
+[messageShake 0.05 2 2 1.0]
+Hahahahahahahahahahahahahahahaha![sr]That's impossible! Impossible, you hear?
+[k]
+
+＠A：Demon God Flauros
+I am immortal. We are inexhaustible.[sr]This entire space IS us!
+[k]
+
+＠A：Demon God Flauros
+Come. Come[line 3]My kindred, show yourselves!
+[k]
+
+[seStop ad14 0.2]
+[wt 0.3]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[seLoop ad14]
+[shake 0.05 2 2 1.0]
+[scene 12000 2.0]
+
+[se ad63]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[wt 0.7]
+[flashOff]
+[wt 0.4]
+
+[wt 2.0]
+
+＠Mash
+More Demon God Pillars... No, these are...
+[k]
+
+
+[messageOff]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.7 1]
+
+[scene 36001 1.0]
+[shakeStop]
+[seStop ad14 0.1]
+[wt 0.4]
+
+[seLoop ad14]
+[seVolume ad14 0 0.5]
+
+[charaTalk A]
+＠A：Demon God Flauros
+Yes, we are the 72 Demon Gods, and they are us!
+[k]
+
+＠A：Demon God Flauros
+You killed me. But what of it? There will always be 72 Demon God Pillars, no matter what you do to us.
+[k]
+
+＠A：Demon God Flauros
+As long as the Throne exists upon this land, our number will never decrease!
+[k]
+
+＠A：Demon God Flauros
+If you want to kill me,[sr]you'll have to eradicate all 72 of us.
+[k]
+
+＠A：Demon God Flauros
+But what chance do you have of that? Where is your army? There is nothing on Earth that can stand against us!
+[k]
+
+＠A：Demon God Flauros
+You haven't caught us. You've merely thrown yourselves into your own graves!
+[k]
+
+＠A：Demon God Flauros
+Ha, ha, ha! You're like moths to the flame![sr]I commend your enthusiasm!
+[k]
+
+[charaFadeout A 0.1]
+[seStop ad14 0.2]
+[wt 0.3]
+
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+＠Mash
+We're not getting any transmissions from Chaldea...! Master, what should we do...?
+[k]
+
+？1：...No.
+？2：...No way!
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[seLoop ad14]
+[seVolume ad14 0 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠A：Demon God Flauros
+I've underestimated you! I see you still have the guts to meet your enemy's gaze!
+[k]
+
+＠A：Demon God Flauros
+But that's enough. I understand you don't know when to give up! That might have worked up until yesterday!
+[k]
+
+＠A：Demon God Flauros
+The last Master.[sr]The last human, [%1].
+[k]
+
+＠A：Demon God Flauros
+We have the utmost respect for you![sr]You were supremely entertaining!
+[k]
+
+＠A：Demon God Flauros
+We laugh at your resistance in the first Singularity.[sr]We laugh at your zeal in the second Singularity.
+[k]
+
+＠A：Demon God Flauros
+We laugh at your adventure in the third Singularity.[sr]We laugh at your quest in the fourth Singularity!
+[k]
+
+＠A：Demon God Flauros
+We laugh at your advance during the fifth Singularity![sr]We laugh at your survival in the sixth Singularity!
+[k]
+
+＠A：Demon God Flauros
+And the seventh Singularity...[sr]Well, that wasn't very pleasant.
+[k]
+
+＠A：Demon God Flauros
+It was a poor show... Not the least bit entertaining.[sr]Let's just forget it entirely.
+[k]
+
+＠A：Demon God Flauros
+In any case, your fight has been truly amusing! And the fact that it was utterly pointless makes it even better!
+[k]
+
+＠A：Demon God Flauros
+You fought all this way and it was worthless! You fought up until now, and even still your end will be utterly pathetic!
+[k]
+
+＠A：Demon God Flauros
+It has been a spectacular show![sr]Thank you, and goodbye!
+[k]
+
+＠A：Demon God Flauros
+Chaldea will meet its end here and now![sr]Ha ha, hahaha!
+[k]
+
+＠A：Demon God Flauros
+[messageShake 0.05 3 3 1.0]
+[fontSize large]Hahahahahahahahahahahahahaha!
+[k]
+
+[seStop ad14 0.2]
+[wt 0.3]
+
+[charaFadeout A 0.7]
+[seStop ad14 2.0]
+
+[se bac78]
+[flashin loop 0.1 0.1 D72727FF FFFFFF00]
+[charaFilter B silhouette 00000080]
+[wt 0.5]
+[flashOff]
+
+[flashin once 0.5 20000 D72727FF FF000000]
+[wt 0.5]
+
+＠Mash
+Senpai...!
+[k]
+
+
+？1：Mash...!
+？2：...!
+
+？！
+
+[messageOff]
+
+[bgmStop BGM_EVENT_24 3.0]
+[fadeout black 3.0]
+[wait fade]
+
+[flashOff]
+
+[charaSet H 98017000 1 "Demon God Pillar"]
+[charaSet B 98017000 1 "Demon God Pillar"]
+
+[wt 3.0]
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+
+？1：...
+
+？！
+
+？1：...
+
+？！
+
+？1：...Maybe...
+
+？！
+
+？1：...It was all pointless, after all...
+
+？！
+
+＠???
+No. Calling it pointless is ludicrous.[sr]Isn't it a bit too early for you to be giving up?
+[k]
+
+[messageOff]
+
+[se ad400]
+
+[scene 10001 4.0]
+[wait se ad400]
+[bgm BGM_EVENT_42 2.0]
+
+＠???
+This battle was a long journey that took you back through human history. However, you never once fell to despair.
+[k]
+
+＠???
+That because you had so many encounters on that journey.
+[k]
+
+＠???
+Even if this entire planet became the battleground for the Holy Grail War.
+[k]
+
+＠???
+Even if everything on this land had turned into eternal ruinous grounds.
+[k]
+
+＠???
+Even if countless powerful enemies stood in your away at the end of your journey.
+[k]
+
+＠???
+You never gave up. You looked forward, knowing our fate has not yet been decided.
+[k]
+
+＠???
+This is no different. Now... let the battles begin, Master.
+[k]
+
+＠???
+Wasn't this meant to be a story about us taking back our future together?
+[k]
+
+[messageOff]
+
+[scene 36001 2.0]
+
+
+[wt 2.0]
+
+[charaTalk off]
+
+
+[charaFace A 0]
+[charaFace H 0]
+[charaFace B 0]
+
+[charaDepth A 1]
+[charaDepth H 2]
+[charaDepth B 3]
+
+[charaFadein H 0.7 4]
+[wt 1.0]
+
+[shake 0.05 7 7 0]
+[se ba6]
+[charaSpecialEffect H enemyErasure]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[wt 0.7]
+[flashOff]
+
+[wait charaSpecialEffect H]
+[charaFadeout H 0.1]
+[shakeStop]
+[wt 0.8]
+
+[charaFadein B 0.4 6]
+[wt 0.3]
+
+[shake 0.05 7 7 0]
+[se ba6]
+[charaSpecialEffect B enemyErasure]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[wt 0.7]
+[flashOff]
+
+[wait charaSpecialEffect B]
+[charaFadeout B 0.1]
+[shakeStop]
+[wt 0.8]
+[charaTalk on]
+
+[charaFadein A 0.4 1]
+[wt 0.3]
+
+[charaTalk A]
+＠A：Demon God Flauros
+[messageShake 0.05 2 2 1.0]
+Gahhhh!? What's going on!?
+[k]
+
+＠A：Demon God Flauros
+Why isn't [%1] gone!?[sr]Why does Chaldea still exist!?
+[k]
+
+＠A：Demon God Flauros
+Why? Why are our bodies crumbling!?
+[k]
+
+[messageOff]
+
+[shake 0.05 7 7 0]
+[se ba6]
+[charaSpecialEffect A enemyErasure]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[wt 0.7]
+[flashOff]
+[wait charaSpecialEffect A]
+[charaFadeout A 0.1]
+[shakeStop]
+[wt 0.8]
+
+
+[charaPut G 1]
+[charaEffect G bit_talk_10]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0 0,-151]
+＠Dr. Roman
+All eight Demon God Pillars have been destroyed![sr]We did it! Way to go, Da Vinci! You're amazing!
+[k]
+
+＠Dr. Roman
+What trick did you have up your sleeve this time?
+[k]
+
+[charaFace D 1]
+＠Dr. Roman
+You should've let us know you had such a powerful secret weapon!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 0,-90]
+＠Da Vinci
+No, that wasn't me. That was[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10]
+
+[messageOff]
+
+[wt 0.3]
+
+？1：Yes, that was...!
+
+？！
+
+
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+[scene 36301]
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+＠???
+Primates have flourished for thousands of years.
+[k]
+
+＠???
+The Age of Gods has ended, and through time, mankind has become the most prosperous beings on Earth.
+[k]
+
+＠???
+And so we shape the future of this planet, and inscribe its history on the surface.
+[k]
+
+＠???
+For that, we nurtured knowledge, produced many resources, and saw countless lives reincarnated.
+[k]
+
+＠???
+It is a map to prolong mankind's survival, and to ensure its everlasting prosperity.
+[k]
+
+＠???
+In the world of magecraft, this is called “Humanity.” Those at Chaldea have been charged to protect it.
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+[scene 36001]
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0 0,-151]
+＠Dr. Roman
+...Is this a dream? Are my sensors broken? There are summoning spells being activated all over the Singularity!
+[k]
+
+＠Dr. Roman
+There's no catalyst...no summoners. They're materializing autonomously, following the thin threads of fate that intertwined when you crossed paths!
+[k]
+
+＠Dr. Roman
+Ten, twenty, thirty Spirit Origin signatures![sr]And still increasing! [%1], this is...!
+[k]
+
+
+？1：I know that banner...!
+？2：You guys all came...!
+
+？！
+
+[messageOff]
+
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10]
+[wt 0.7]
+
+[scene 36300]
+
+[charaSet A 9938300 1 "Demon God Gäap"]
+[charaSet B 9938600 1 "Demon God Bael"]
+[charaSet H 9938800 1 "Demon God Ose"]
+
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+
+
+[charaTalk off]
+
+[charaFace B 0]
+[charaDepth B 1]
+[charaFadein B 0.7 6]
+[seLoop ad14]
+[seVolume ad14 0 0.5]
+＠Demon God Bael
+Eastern terminal nerve system, aflame.[sr]Number of enemy Servants rising.
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.7]
+[seStop ad14 0.2]
+[wt 1.0]
+
+[charaFace A 0]
+[charaDepth A 2]
+[charaFadein A 0.7 4]
+[seLoop ad14]
+[seVolume ad14 0 0.5]
+＠Demon God Gäap
+Western autonomic nerves, damaged.[sr]Twenty-four enemy Servants confirmed.
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.7]
+[seStop ad14 0.2]
+[wt 1.0]
+
+[charaFace H 0]
+[charaDepth H 3]
+[charaFadein H 0.7 1]
+[seLoop ad14]
+[seVolume ad14 0 0.5]
+＠Demon God Ose
+Inconsequential. No matter how many of them there are, they're just extensions of man.
+[k]
+
+＠Demon God Ose
+They are not a colony like us.[sr]They must live separately, and fight individually.
+[k]
+
+＠Demon God Ose
+Destroy them. Eliminate them. Remove them.[sr]Mere Servants are no match for us.
+[k]
+
+＠Demon God Ose
+I cannot see anything that would be capable of destroying the 72 Demon Go[line 3]
+[k]
+
+[messageOff]
+
+[charaFadeout H 0.7]
+[seStop ad14 0.2]
+[wt 1.0]
+
+[charaFace B 0]
+[charaDepth B 1]
+[charaFadein B 0.7 6]
+[seLoop ad14]
+[seVolume ad14 0 0.5]
+＠Demon God Bael
+Eastern terminal nerve system, destroyed. Demon Gods one through eight cannot maintain nominal values.
+[k]
+
+[shake 0.05 7 7 0]
+[charaSpecialEffect B enemyErasure]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[se ba6]
+[wt 0.7]
+[flashOff]
+[wait charaSpecialEffect B]
+[charaFadeout B 0.1]
+[shakeStop]
+[wt 0.8]
+
+[charaSet B 98020000 1 "Demon God Räum"]
+
+[charaFace A 0]
+[charaDepth A 2]
+[charaFadein A 0.7 4]
+[seLoop ad14]
+[seVolume ad14 0 0.5]
+＠Demon God Gäap
+Western autonomic nerves, destroyed. Demon Gods 26 through 33 cannot maintain nominal values.
+[k]
+
+[shake 0.05 7 7 0]
+[charaSpecialEffect A enemyErasure]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[se ba6]
+[wt 0.7]
+[flashOff]
+[wait charaSpecialEffect A]
+[charaFadeout A 0.1]
+[shakeStop]
+[wt 0.8]
+
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.7 1]
+[seLoop ad14]
+[seVolume ad14 0 0.5]
+＠Demon God Räum
+...Left and right base thoracic cages damaged.[sr]We recommend retreating from this space.
+[k]
+
+[shake 0.05 7 7 0]
+[charaSpecialEffect B enemyErasure]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[se ba6]
+[wt 0.7]
+[flashOff]
+[wait charaSpecialEffect B]
+[charaFadeout B 0.1]
+[shakeStop]
+[wt 0.3]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.7 1]
+[seLoop ad14]
+[seVolume ad14 0 0.5]
+＠Demon God Ose
+What's going on? Why are we being overpowered?
+[k]
+
+＠Demon God Ose
+How are humans, who reject mutual understanding, fighting together like this!?
+[k]
+
+[messageOff]
+
+[seStop ad14 0.2]
+
+[wipeout rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[charaFadeout H 0.1]
+[seStop ad14 0.2]
+[wt 0.7]
+
+[scene 36301]
+
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+＠???
+...Yes. It's true that we are life-forms who are obsessed with self-interest.
+[k]
+
+＠???
+And it's no different as a Heroic Spirit. In fact, it is because we are Heroic Spirits that we cannot abandon our convictions.
+[k]
+
+＠???
+But... There is one human who believes in us.
+[k]
+
+＠???
+A human who still believes that we are heroes, even after meeting so many Heroic Spirits and witnessing so many battles.
+[k]
+
+＠???
+What Heroic Spirit could ignore that call?
+[k]
+
+＠???
+O Lord. I shall raise my flag once again for the salvation of a nation... Nay, for the salvation of this world.
+[k]
+
+[messageOff]
+
+
+[se ad60]
+[wt 0.7]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.7 1]
+[seStop ad60 0.5]
+[wt 1.0]
+＠Jeanne d'Arc
+Hear me! Heroic Spirits, mighty warriors who have gathered here!
+[k]
+
+＠Jeanne d'Arc
+Though we may be rivals, or from completely different eras, we must stand together now.
+[k]
+
+＠Jeanne d'Arc
+Not to prevent the Incineration of Humanity, but to open up a path for our contractor!
+[k]
+
+＠Jeanne d'Arc
+My True Name is Jeanne d'Arc! In the name of the Lord, I shall become your shield!
+[k]
+
+[messageOff]
+
+[se ad16]
+[wt 2.0]
+[seStop ad16 1.0]
+
+
+[wt 1.0]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+
+[wt 0.4]
+
+[scene 36001]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠Mash
+So many... Those are... Those shooting stars racing across the sky...
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0 0,-151]
+＠Dr. Roman
+Yeah, they're Servants![sr]This is amazing. They just keep coming!
+[k]
+
+＠Dr. Roman
+And I have no idea why, either!
+[k]
+
+＠Dr. Roman
+Maybe they were able to get in because this Singularity exists outside of time? No, it doesn't matter!
+[k]
+
+[charaFace D 0]
+＠Dr. Roman
+Among the Heroic Spirits you met on your journey, the Heroic Spirits who fought alongside you[line 3]
+[k]
+
+＠Dr. Roman
+I'm sure there are some who had planned only to lend their power for a short while...
+[k]
+
+＠Dr. Roman
+And yet they've all come to help you out!
+[k]
+
+[charaFace D 5]
+＠Dr. Roman
+This is a sight so rare you could live a thousand lifetimes and never see it again!
+[k]
+
+＠Dr. Roman
+The Servants' attacks are pinning the Demon Gods in place!
+[k]
+
+＠Dr. Roman
+Every single one of the 72 Demon Gods has been engaged. We can eliminate them right now!
+[k]
+
+＠Dr. Roman
+Open a path to the center, [%1]![sr]We only have a little time left!
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_42 2.0]
+[wait fade]
+[soundStopAll]
+[end]

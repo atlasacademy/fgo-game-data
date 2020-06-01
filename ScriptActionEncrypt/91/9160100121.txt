@@ -1,0 +1,122 @@
+＄91-60-10-01-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[scene 20110]
+[charaSet A 8001001 2 Mash]
+[charaSet B 98003000 2 "Dr. Roman"]
+[charaSet C 98002000 2 Fou]
+[charaSet D 6010001 1 Stheno]
+[charaSet E 98014000 1 ???]
+[charaSet F 4001001 1 Medusa]
+[charaDepth D 1]
+[charaFace F 4]
+[charaFadein F 0]
+[fadein black 1]
+[wait fade]
+＠Medusa
+...I lost.[sr]I surrender, you can take the treasure.
+[k]
+
+[charaFadeout F 0.1]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFace A 1]
+[charaFadein A 0.1 2]
+＠Fou
+Fou, fooou♪
+[k]
+
+＠Mash
+The treasure chest.[sr]What do you think is inside?
+[k]
+
+[se ar3]
+[wait se ar3]
+[charaFadeout A 0.4]
+[charaFadeout C 0.4]
+[wt 1]
+[charaTalk D]
+[charaFace D 1]
+[flashin once 0.6 0.4 FFFFFF80 00000000]
+[charaFadein D 0.7 1]
+[charaBackEffect D bit_talk_21]
+[se su5]
+[wt 1]
+[charaBackEffectStop D]
+＠Stheno
+Congratulations♪[sr]Good job, you completed the trials I gave you, heroes♪
+[k]
+
+[charaFadeout D 0.1]
+[charaFace A 6]
+[charaFadein A 0.1 2]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+＠Mash
+!?
+[k]
+
+＠Fou
+F-Fou!?
+[k]
+
+[charaFace A 4]
+＠Mash
+...I-I see.[sr]You Rayshifted together with us.
+[k]
+
+＠Mash
+And then took the trouble to come here, to hide...[sr]in the treasure chest...
+[k]
+
+？1：What a mess!
+
+[charaFace A 8]
+＠Mash
+...Yes.
+[k]
+
+？2：Our goddess!!
+
+[charaFace A 6]
+＠Mash
+...Ah, Senpai, this again...
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠Stheno
+As you can see, I was the treasure.[r]Rejoice, [%1]. See, aren't you happy?
+[k]
+
+[charaFadeout D 0.1]
+[communicationCharaLoop 98003003 1 5 0 1]
+＠Dr. Roman
+WOW! I'm really happy![sr]Wow, Lady Stheno!!
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFace A 4]
+[charaFadein A 0.1 2]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+＠Mash
+Well...
+[k]
+
+＠Fou
+Foou...
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+[bgmStop BGM_EVENT_2 0.4]
+[soundStopAll]
+[end]

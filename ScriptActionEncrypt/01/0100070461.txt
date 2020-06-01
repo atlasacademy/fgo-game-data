@@ -1,0 +1,504 @@
+
+
+
+＄01-00-07-04-6-1
+[soundStopAll]
+[charaSet A 8001002 1 Mash]
+[charaSet B 98002000 1 Fou]
+
+[charaSet C 3027000 1 Ana]
+[charaSet D 98003000 1 "Dr. Roman"]
+[charaSet E 98024000 1 "Uruk Civilian A"]
+[charaSet F 98024100 1 "Uruk Civilian B"]
+[charaSet G 98024000 1 "Uruk Civilian C"]
+[charaSet H 98024100 1 "Uruk Civilian D"]
+
+[bgm BGM_EVENT_2 0.1]
+[scene 32900]
+[flashin once 0.1 0.1 000000FF 000000AF]
+[wt 0.2]
+[fadein black 1.5]
+[wait fade]
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.4 1]
+
+
+＠Ana
+...Good work. I think we've defeated all the evil spirits around here...
+[k]
+
+＠Ana
+If I were alone, some might have gotten away...[sr]Thank[charaMoveReturn C 0,-5 0.4] you.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠Mash
+I was surprised there was a cave underneath Uruk, but those spirits were every bit as shocking.
+[k]
+
+＠Mash
+Ana, do you know what those spirits were?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠Ana
+...I'm not sure, but they are like grim reapers... I think.
+[k]
+
+＠Ana
+You two may not have noticed, but a deadly disease is spreading in Uruk.
+[k]
+
+＠Ana
+Starting with the weak ones, people fall into an eternal slumber. Those spirits must be connected to that somehow.
+[k]
+
+＠Ana
+Which is why I thought getting rid of them might reduce the death toll...
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[se ad13]
+[charaTalk D]
+[communicationChara 98003003 1 5 0 5]
+[wt 0.3]
+
+＠Dr. Roman
+I see. In the Age of Gods, physical death is different than spiritual death.
+[k]
+
+＠Dr. Roman
+Even if the body's fine, if the soul is taken away by a grim reaper then it means death for that human.
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+
+＠Ana
+That's right. ...Except having the soul taken away is not quite “death.” It is more like being asleep.
+[k]
+
+＠Ana
+As long as the body is safe, returning a person's soul will wake them up.
+[k]
+
+＠Ana
+In the Age of Gods, “bringing the dead back from Kur” is simply a type of medical treatment.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠Mash
+...Even if your heart stops, you can come back as long as your body is preserved... Is that what you mean?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Ana
+Yes. But, a person cannot be revived if their soul is destroyed before it reaches Kur.
+[k]
+
+＠Ana
+In that case, the body will share the same fate as the soul. It will shut down and eventually return to the earth.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk D]
+[communicationCharaLoop 98003003 1 5 0 3]
+
+
+＠Dr. Roman
+Hm. A “life after death” sounds very Age of Gods-y. That must be one reason why the quality of the mana is different here.
+[k]
+
+＠Dr. Roman
+So going to the underworld itself doesn't equal death. “Death” is the “nothingness” that awaits beyond Kur, beyond the underworld.
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+
+＠Ana
+...In Uruk, that nothingness is called the Abyss.
+[k]
+
+＠Ana
+Whatever it is, the spirits from Kur are like kidnappers that steal the souls of the living.
+[k]
+
+＠Ana
+There seemed to be many here, so... um, I had you help me to get rid of them.
+[k]
+
+？1：How did you find out about these spirits?
+
+[charaFace C 3]
+＠Ana
+Because... there were so many gathered above the flower shop on the main street...
+[k]
+
+？2：You did this for the people of Uruk?
+
+[charaFace C 0]
+＠Ana
+...No. They were simply an eyesore.
+[k]
+
+？！
+
+[charaFace C 0]
+＠Ana
+...Anyhow, we have defeated all the spirits. I will go and report to Siduri. Please excuse me.
+[k]
+
+
+[messageOff]
+[charaFadeout C 0.4]
+[se ad60]
+[seVolume ad60 0 0.7]
+[wt 1.5]
+[seStop ad60 1.0]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠Mash
+Oh, wait, Ana! I'll go with you!
+[k]
+
+[charaFace A 13]
+＠Mash
+Senpai, please head back without me.
+[k]
+
+＠Mash
+I don't think Ana will be able to properly explain to Siduri on her own!
+[k]
+
+
+[messageOff]
+[charaFadeout A 0.4]
+[se ad59]
+[wt 1.5]
+[seStop ad59 1.0]
+[wt 0.1]
+[charaTalk B]
+[charaFadein B 0.1 1]
+
+＠Fou
+Fooou...
+[k]
+
+？1：We're all by ourselves now.
+？2：Let's go back to the embassy.
+
+？！
+
+＠Fou
+Fou, fooou!
+[k]
+
+[wt 0.4]
+[se ad60]
+[seVolume ad60 0 0.7]
+[messageOff]
+[bgmStop BGM_EVENT_2 0.4]
+[wipeout rightToLeft 0.7 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[seStop ad60 1.5]
+[wt 1.0]
+[charaSet C 98107700 1 "Old Man"]
+[bgm BGM_EVENT_11 0.1]
+[wipein leftToRight 0.7 1]
+[wait wipe]
+
+[se ad4]
+[seVolume ad4 0 0.3]
+[charaTalk E]
+[charaFace E 1]
+[charaFace F 1]
+[charaFadein E 0.1 2]
+[charaFadein F 0.1 0]
+
+＠Uruk Civilian A
+...Who's that old man? He's not from around here, is he?
+[k]
+
+＠Uruk Civilian B
+Goodness, a beggar... His leg is so... He's not even an injured soldier either...
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.2]
+[charaTalk G]
+[charaFace G 1]
+[charaFace H 1]
+[charaFadein G 0.1 2]
+[charaFadein H 0.1 0]
+
+＠Uruk Civilian C
+Just leave him. The caretakers will probably come soon. That's what the Sacred Temple's budget's for.
+[k]
+
+＠Uruk Civilian D
+That's true... But he hasn't moved at all from that spot... I don't think he's eaten for at least two days.
+[k]
+
+[messageOff]
+[seStop ad4 1.5]
+[charaFadeout G 0.4]
+[charaFadeout H 0.4]
+[wt 1.5]
+[charaTalk C]
+[charaFadein C 0.4 1]
+
+＠Old Man
+...
+[k]
+
+[messageOff]
+[wt 0.2]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[wt 0.4]
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+[wt 0.1]
+[charaTalk B]
+[charaFadein B 0.1 1]
+
+＠Fou
+...Fou. Fou, foou...
+[k]
+
+？1：I know. Wait right here, Fou.
+？2：...I know I had some Wheat Silver left over...
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[messageOff]
+[se ad77]
+[wait se ad77]
+[se ad60]
+[seVolume ad60 0 0.7]
+[wipeout rightToLeft 0.7 1]
+[wait wipe]
+[seStop ad60 1.0]
+[wt 2.0]
+[wipein leftToRight 0.7 1]
+[wait wipe]
+
+[charaTalk C]
+[charaFadein C 0.4 1]
+
+＠Old Man
+...
+[k]
+
+？1：(Quietly leaves some bread.)
+？2：It's not much, but please have some.
+
+？！
+
+[se ad78]
+[wt 0.7]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFadein B 0.1 1]
+
+＠Fou
+Fou, fou.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[messageOff]
+[se ad60]
+[seVolume ad60 0 0.7]
+[bgmStop BGM_EVENT_11 1.5]
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+
+
+＠Old Man
+Halt[seStop ad60 0.4].
+[k]
+
+＠Fou
+Fou!?
+[k]
+
+[messageOff]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[charaTalk C]
+[charaFadein C 0.1 1]
+
+＠Old Man
+...
+[k]
+
+？1：...Um, uhh...
+？2：...Did I do something wrong?
+
+？！
+
+＠Old Man
+...Indeed. Hear me, and attend.
+[k]
+
+＠Old Man
+Child, remember this: Pity betimes can be a crime unto itself.
+[k]
+
+＠Old Man
+Void of purpose, compassion to evil is twisted. So, too, with shame.
+[k]
+
+＠Old Man
+...However, 'tis naught but the bitterness of age that scorns kindness thoughtfully given.
+[k]
+
+＠Old Man
+Your insight, child, impresses me. Your gift was not mere money, but that which was most needed.
+[k]
+
+＠Old Man
+I shall gladly accept it.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFadein B 0.1 1]
+
+＠Fou
+Fofou!? (Translation: But you're not gonna eat it!?)
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFadein C 0.1 1]
+
+
+＠Old Man
+...Hm. Having accepted your charity, I must offer recompense.
+[k]
+
+＠Old Man
+Ziusu-dra, I am called. As you see, I am no more than an old man bereft of a future.
+[k]
+
+＠Old Man
+However, child, a future may yet be yours. So to you, counsel is greater than any coin.
+[k]
+
+＠Old Man
+Heed me, child. Three storms will soon sweep over Uruk.
+[k]
+
+＠Old Man
+Empathize not with the hateful one. Celebrate not with the joyous one.
+[k]
+
+＠Old Man
+...And extol not the pained one.
+[k]
+
+＠Old Man
+Remember, always. In defiance of your purpose it may be, but 'tis a fool's task to set man 'gainst god.
+[k]
+
+？1：Who ARE you...?
+？2：Three storms...?
+
+？！
+
+[messageOff]
+[flashin once 1.0 1.0 000000FF 000000AF]
+[wt 1.0]
+[wipeout sideBlind 0.1 1]
+[wait wipe]
+[wipein sideBlind 0.1 1]
+[wait wipe]
+[flashin once 0.7 0.7 000000FF 000000AF]
+[wt 0.7]
+[wipeout sideBlind 0.1 1]
+[wait wipe]
+[wipein sideBlind 0.1 1]
+[wait wipe]
+[flashin once 0.5 0.5 000000FF 000000AF]
+[wipeout sideBlind 0.1 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[wipein sideBlind 0.1 1]
+[wait wipe]
+[wipeout openEye 0.4 1]
+[wait wipe]
+[wt 1.0]
+[wipein openEye 1.5 1]
+[wait wipe]
+
+[wt 0.4]
+[bgm BGM_EVENT_11 0.1]
+
+
+？1：He's gone...
+？2：What was that about...?
+
+？！
+
+[charaTalk B]
+[charaFadein B 0.1 1]
+＠Fou
+Fou, fooou...
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

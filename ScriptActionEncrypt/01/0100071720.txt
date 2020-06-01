@@ -1,0 +1,115 @@
+
+
+
+＄01-00-07-17-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1 0.7]
+[charaSet A 8001002 1 Mash]
+[charaSet B 98003000 1 "Dr. Roman"]
+[charaSet C 4018001 1 Quetzalcoatl]
+[charaSet D 2020001 1 Ishtar]
+
+[se ad55]
+[seVolume ad55 0 0.3]
+
+[scene 32700]
+[fadein black 2.0]
+[wt 1.0]
+[se ad162]
+[seVolume ad162 0 0.2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.4 1]
+＠Mash
+We've arrived at Eridu! I sense people[line 3][sr]What's all this commotion?
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr. Roman
+I'm picking up signs of life! Five hundred, no, six hundred people! They're the ones who were kidnapped!
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠Quetzalcoatl
+They're being gathered in the plaza! What about the Laḫmu?
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr. Roman
+They're there too, of course! Over two hundred of them! It's a fraction of their forces, but we're still hopelessly outgunned!
+[k]
+
+＠Dr. Roman
+I know how you all feel, but proceed with caution!
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠Mash
+But there's no time to waste! If they're being gathered up we have to assume the worst!
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠Ishtar
+Calm down. I'm not saying not to fight, Mash. You need to act decisively, understand the situation,
+[k]
+
+＠Ishtar
+and attack from the best possible position. The most we can take at a time is four.
+[k]
+
+＠Ishtar
+We need to find a weak point or something before we can face them head on...!
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠Mash
+...! There's a Laḫmu in front of us! It's spotted us!
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr. Roman
+Just one? Then engage! Neutralize it before it calls the others!
+[k]
+
+
+[messageOff]
+[seStop ad55 0.4]
+[seStop ad162 0.4]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[shakeStop]
+[communicationCharaClear]
+[wait communicationChara]
+[soundStopAll]
+[end]
