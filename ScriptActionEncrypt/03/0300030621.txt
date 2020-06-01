@@ -1,0 +1,626 @@
+
+＄03-00-03-06-2-1
+
+
+[soundStopAll]
+
+[charaSet A 8001400 1 マシュ]
+[charaSet B 9005001 1 ホームズ]
+[charaSet C 1098124500 1 ダ・ヴィンチ]
+[charaSet D 6011001 1 荊軻]
+[charaSet E 98002000 1 フォウ]
+[charaSet F 1098159400 1 芥ヒナコ]
+[charaSet G 1036001 1 蘭陵王]
+[charaSet H 98115000 1 エフェクト用]
+
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 69200]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[se ad33]
+[backEffect bit_talk_Slash_white_01_L]
+[wt 0.3]
+[effect bit_talk_ichimon01wh]
+[wt 0.4]
+[backEffect bit_talk_Slash_white_01]
+[wt 0.5]
+[seStop ad33 0.3]
+[se ad32]
+[fowardEffect bit_talk_14]
+[wt 0.1]
+
+[charaScale D 1.1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[charaShake D 0.03 4 4 0.6]
+[charaMoveScale D 1.0 0.4]
+[wt 1.2]
+
+[charaPut H 1]
+[charaEffect H bit_talk_41]
+[se ad7]
+[se ad171]
+[charaMoveScale D 1.2 0.2]
+[charaMove D 0,20 0.2]
+[charaFadeout D 0.3]
+[wt 0.1]
+[effect bit_talk_v_slash01]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_41]
+[wt 0.2]
+[se ad467]
+[wt 0.5]
+
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[charaScale G 1.05]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 0,10]
+[charaShake G 0.03 4 4 0.6]
+[charaMoveScale G 1.0 0.4]
+[charaMove G 1 0.4]
+[wt 0.1]
+[seStop ad671 0.8]
+[wt 0.8]
+
+＠G：？？？
+くっ、おのれ、[r]我が鼓舞をもってしても破れぬ軍勢とは！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaScale D 1.0]
+
+
+
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ホームズ
+仮面を被っての統率力の増幅、[r]呪いの域にまで達した自軍への影響力[line 3]
+[k]
+
+＠ホームズ
+まさしく、あのセイバーの真名は[#蘭陵王:らんりょうおう]！[r][#北斉:ほくせい]の[#高長恭:こうちょうきょう]！
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+＠芥ヒナコ
+セイバー、下がりなさい！　態勢を立て直すわ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠G：蘭陵王
+しかし……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFace G 5]
+[charaFadein F 0.1 0]
+[charaFadein G 0.1 2]
+
+＠芥ヒナコ
+宝具の使用に踏み切ってなお勝機を逃したら、[r]こちらに[#分:ぶ]はないわ。戦略そのものに無理がある。
+[k]
+
+＠G：蘭陵王
+はっ、承知いたしました。
+[k]
+
+[charaTalk off]
+[messageOff]
+[bgmStop BGM_EVENT_80 1.0]
+[charaEffect G bit_talk_quickmove]
+[charaEffect F bit_talk_quickmove]
+[charaSpecialEffect F erasureReverse 1 0.3]
+[charaSpecialEffect G erasureReverse 1 0.3]
+[se ad73]
+[wt 1.5]
+
+[charaSet F 1009001 1 モードレッド]
+[charaSet G 7005001 1 スパルタクス]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠マシュ
+敵サーヴァントとマスター、撤退しました。[r]……今回も[#凌:しの]ぎきれましたね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaMoveReturn E 0,30 0.4]
+＠フォウ
+フォウ、フォーウ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠荊軻
+大丈夫か[%1]？[r]やはり戦闘となると今の体調では厳しいか……
+[k]
+
+？1：大丈夫、ちょっと熱があるだけ
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠スパルタクス
+おお、それでこそ我が[#主:マスター]、[r]病毒に[#叛逆:はんぎゃく]する気骨を私は讃えよう！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+？2：まあ、ちょっとね……
+
+＠荊軻
+無理は禁物だぞ。どうにも今回集まったサーヴァントは[r]魔力消費などお構いなしの[#粗忽:そこつ]者が多い。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？！
+
+[charaSet E 3031001 1 哪吒]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠モードレッド
+それにしたって、他愛もねぇ敵兵だったな。
+[k]
+
+＠モードレッド
+あんな子供騙しのカラクリ細工で戦争やってるのか？[r]ここの王様って奴はよ。
+[k]
+
+？1：[#咸陽:かんよう]から補充された武装って……
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+＠ダ・ヴィンチ
+うん、兵員輸送はないものと思っていたら、[r]これは予想外だったわ。
+[k]
+
+[charaFace C 14]
+
+＠ダ・ヴィンチ
+なるほど生身の兵士じゃないのなら、[r]あんな雑なロケット搬送でも死にやしない。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+
+[charaFace C 14]
+[charaFadein C 0.1 2]
+
+＠ホームズ
+敵の残骸、回収してもらえるかね？[r]こちらで研究したい。
+[k]
+
+[charaFace C 25]
+
+＠ダ・ヴィンチ
+一見したところオートマタの類かなぁ。[r]似たような敵とはこれまで何度も戦ってきたけれど。
+[k]
+
+＠ホームズ
+稼働原理に興味がある。この世界の仕組み[r]そのものについて知る手がかりになりそうだ。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠哪吒
+……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠荊軻
+どうしたんだ哪吒？　何か気がかりなことでも？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠哪吒
+……うん、そうかもしれない。
+[k]
+
+＠哪吒
+さっきの敵の残骸、あとでボクにも見せてほしい。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_81 1.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaSet A 1098123330 1 コヤンスカヤ]
+[charaSet B 1098160700 1 衛士長]
+[charaSet C 98115000 1 ？？？]
+[charaSet F 1098159410 1 芥ヒナコ]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_china]
+
+[scene 65800]
+[wt 1.0]
+
+[wipeFilter cinema 0.5 0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_97 0.1]
+
+＠？？？
+戦いぶり、こちらも見分していた。
+[k]
+
+＠？？？
+さらに三度矛を交えるまでもない。[#其方:そなた]の[r]サーヴァント単騎だけでは勝ちに至らぬ。そうだな？
+[k]
+
+[charaPut H 0,-50]
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 0,-50]
+＠芥ヒナコ
+はっ……
+[k]
+
+[charaFadeout F 0.1]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+＠？？？
+さすれば増援を遣わそう。[r]とはいえサーヴァントとやらは異能の魔将。
+[k]
+
+＠？？？
+雑兵を百や二百と並べたところで[#埒:らち]もあくまいし……[r]そうだな、[#其方の項羽はどうだ]？
+[k]
+
+[charaPut H 0,-50]
+[charaTalk F]
+[charaFace F 15]
+[charaFadein F 0.1 0,-50]
+＠芥ヒナコ
+こ、[#項羽:こうう]様を！？　しかしそれは……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+＠？？？
+確かに朕の執政において、今も変わらず[r]有用な能臣ではある。
+[k]
+
+＠？？？
+だがあれは本来、未知なる敵を前にしてこそ、[r]その機能を十二分に発揮する駒。
+[k]
+
+＠？？？
+今この状況下において[#咸陽:かんよう]で腐らせておくのも惜しい。[r]故に[#其方:そなた]に預ける。見事、使いこなしてみるがいい。
+[k]
+
+[charaPut H 0,-50]
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 0,-50]
+＠芥ヒナコ
+は、はいッ、望外の恐悦、痛み入ります。皇帝陛下。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+＠？？？
+まあ、あれを前線に出すとなると、こちらもそれなりに[r]支度というものがある。しばし時を要すぞ。
+[k]
+
+＠？？？
+しばらくは監視に徹し、カルデア勢が不穏な動きを[r]見せることなきよう[#牽制:けんせい]を続けるが良い。
+[k]
+
+[charaPut H 0,-50]
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 0,-50]
+＠芥ヒナコ
+ははっ、かしこまりました。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_97 1.0]
+[wt 0.1]
+[se ad1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_china]
+[wt 1.0]
+
+[se ad95]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 0,-50]
+[wt 0.4]
+[seStop ad95 0.1]
+＠コヤンスカヤ
+まったくもう、芥ちゃんったら舞い上がっちゃって。[r]まだ可愛げというものがあったんですねぇ。
+[k]
+
+[bgm BGM_EVENT_90 0.1]
+
+＠コヤンスカヤ
+それにしても……ここにきて[#項羽:こうう]ですか。[r]陛下、遊び心が過ぎませんか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠？？？
+これは異な事を。[r]朕が遊んでいると申すか？　コナンスキャー。
+[k]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-50]
+
+＠コヤンスカヤ
+コヤンスカヤ、です。
+[k]
+
+[charaFace A 7]
+＠コヤンスカヤ
+カルデアを本気で脅威と認めたのであれば、[r]より確実鉄壁の一撃で片をつけるのが王道。
+[k]
+
+＠コヤンスカヤ
+陛下にとってはもはや『手を煩わす』という手間ですら[r]ない。それこそ小指一つ動かすだけでそれが叶う。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠？？？
+まあ、な。
+[k]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠コヤンスカヤ
+それでも敢えて、[r]戦局を芥ヒナコの手に委ねるという判断。
+[k]
+
+＠コヤンスカヤ
+それも切り札のように派手に見えて、[r]実のところ決定打になると断言できる磐石の一手でもない。
+[k]
+
+＠コヤンスカヤ
+陛下が推し量っているのは敵ではなく味方……[r]芥ヒナコの方なのではありませんか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠？？？
+まあそうさな。カルデアなる徒党がつまりは[r][#窮鼠:きゅうそ]の類であることは見て取れた。
+[k]
+
+＠？？？
+となると、[#芥:あくた]だ。あれが勝機を見出した際にどういう[r][#挙:きょ]に出るか、そこは見てみたい。
+[k]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+＠コヤンスカヤ
+（やはり芥ちゃんも[#私:わたくし]も未だに信用度ゼロですか。[r]　まあ、異聞帯の王ですし？）
+[k]
+
+＠コヤンスカヤ
+（それくらいの勘の良さはありましょうが……[r]　この方もどこまで本気なのか分かりません）
+[k]
+
+＠コヤンスカヤ
+（まったく……[r]　[#顔が見えない]、というのは困りものですねぇ）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠？？？
+まあそれはそれとして、あのサーヴァントなる武将ども。[r]ただの幽霊かと侮っていたが、中々やる。
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠コヤンスカヤ
+ええ。陛下の培った[#秦:しん]帝国の仙術とは[r]まったく別系統の魔術です。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+＠衛士長
+過去に武勲を立てた死者を反魂し使役する術、[r]というわけではないのか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠コヤンスカヤ
+ただの死霊術との違いは、英霊の側の同意があって[r]契約が成立している点でしょうね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠？？？
+あちら側の世界の危機に際して、それを憂える過去の亡者が[r]押しかけて助太刀を買って出ている……
+[k]
+
+＠？？？
+という理解で正しいかな？　コリャンチワワ。
+[k]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+＠コヤンスカヤ
+はい、ご明察にございます。[r]それと[#私:わたくし]はコヤンスカヤでございます。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠？？？
+ふむ、なんとまたおぞましい話もあったものだ。
+[k]
+
+＠？？？
+死せる者たちの安息すら許されぬほど[r]危うい世界史があろうとは。
+[k]
+
+＠？？？
+朕の[#御代:みよ]に英霊など存在し得ぬ。栄誉と共に[r]死せる者たちが、この泰平の世を危ぶむ筈などなく。
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠コヤンスカヤ
+そうでしょうね。この世界、抑止力なんてものが[r]働く基盤がそもそも存在しませんし。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠？？？
+だが[#賓:まれびと]たちが使役する幽霊どもに[r]好き勝手を許すのも[#業腹:ごうはら]ではある。
+[k]
+
+＠？？？
+朕の[#麾下:きか]には死せる英霊なぞよりなお[#猛々:たけだけ]しい、[r]眠れる英傑たちがおるのだ。のう？　衛士長。
+[k]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+＠衛士長
+ははっ、左様にございます。かかる国難の期においては、[r][#驪山:りざん]に眠れる者たちに招集をかけるべきかと。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠？？？
+まあ是非もなし。念のための備えだ。[r]凍眠英雄たちの覚醒を命ず。
+[k]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-50]
+＠衛士長
+御意に！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+＠コヤンスカヤ
+わお、やっと乗り気になってきてくれました？
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_90 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,148 @@
+
+
+＄03-00-01-10-3-1
+[soundStopAll]
+
+[charaSet A 7008001 1 ベオウルフ]
+[charaSet B 2010001 1 ビリー]
+[charaSet C 1098128400 1 ヤガ叛逆軍Ａ]
+[charaSet D 1098128500 1 ヤガ叛逆軍Ｂ]
+[charaSet E 1098128600 1 ヤガ叛逆軍Ｃ]
+[charaSet F 7030001 1 アタランテ・オルタ]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fowardEffect bit_bolg_03]
+[wt 0.1]
+[se ad32]
+[wt 0.3]
+[flashin once 0.05 0.1 FFFFFFAF FFFFFF00]
+[fowardEffect bit_talk_14]
+[se ad32]
+[wt 1.0]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 54802]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ベオウルフ
+……っと、よし。[r]このくらいでいいか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ビリー
+ヒュゥ。やるねぇ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ベオウルフ
+……って訳でテメェらも見た通り、[r]こいつらの強さは本物だ！
+[k]
+
+[charaFace A 2]
+
+＠ベオウルフ
+文句のある奴は前に出ろ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace D 0]
+[charaFadein D 0.1 -384,0]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaFace E 0]
+[charaFadein E 0.1 384,0]
+
+[charaFace C 2]
+
+＠C：ヤガ
+ありません！
+[k]
+
+[charaFace D 2]
+
+＠D：ヤガ
+ないっす！
+[k]
+
+[charaFace E 2]
+
+＠E：ヤガ
+まったく！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ベオウルフ
+よーしこれで一切問題はねえ！[r]無頼者の村へようこそ、だ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ビリー
+案内するよ。ついてきて。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠アタランテ・オルタ
+……やれやれ、そういうことか。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

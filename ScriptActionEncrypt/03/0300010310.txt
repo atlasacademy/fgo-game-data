@@ -1,0 +1,2624 @@
+
+
+＄03-00-01-03-1-0
+[soundStopAll]
+
+
+
+
+[charaSet A 1098128000 1 マシュ]
+[charaSet B 1098123210 1 ゴルドルフ]
+[charaSet C 1098124510 1 ダ・ヴィンチ]
+[charaSet D 1098123320 1 コヤンスカヤ]
+[charaSet E 1098126500 1 ヤガ市民Ａ]
+[charaSet F 1098126500 1 ヤガ市民Ｂ]
+[charaSet G 1098126500 1 ヤガ市民Ｃ]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[scene 54200]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……心無しか、人……いえ、[r]ヤガさんたちが多いですね。
+[k]
+
+[messageOff]
+[se ad573]
+[seStop ad573 1.5]
+[wt 0.5]
+[se ad573]
+[wt 0.3]
+[se ad3]
+[seVolume ad3 0 0.05]
+[seVolume ad3 0.4 0.7]
+[wt 2.0]
+
+[charaFace A 6]
+
+＠マシュ
+おや……今の音はなんでしょう？
+[k]
+
+[seStop ad3 1.0]
+
+？1：様子を見てみよう
+
+[flag IsCmn true]
+
+[charaFace A 7]
+
+＠マシュ
+了解です。[r]では、なるべく頭を下げてこっそりと。
+[k]
+
+[messageOff]
+[charaMove A 0,-30 0.5]
+[wt 0.4]
+[charaMove A -60,-30 0.6]
+[se ad580]
+[seVolume ad580 0 0.5]
+[wt 0.3]
+[charaFadeout A 0.4]
+[wt 0.4]
+[seStop ad580 0.5]
+
+[wt 1.2]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+おい待て、勝手に行動するな！？[r]ええい、不吉な予感しかしないというのに……！
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_77 0.5 0.4]
+[wipeout leftToRight 0.5 1.0]
+[wait wipe]
+
+[scene 10000]
+
+[charaPut H 1200,1200]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[wipein leftToRight 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+[wt 0.1]
+
+[charaSet B 1098123200 1 ゴルドルフ]
+[charaSet C 1098124500 1 ダ・ヴィンチ]
+[charaTalk depthOff]
+[charaDepth C 2]
+[charaDepth B 3]
+[charaTalk B]
+[charaFace C 0]
+[charaFadein C 0.1 -256,-50]
+[charaFace B 5]
+[charaFadein B 0.1 256,-50]
+[scene 51600]
+[wt 0.1]
+[wipeFilter cinema 0.5 0]
+[fadein black 0.5]
+[wait fade]
+
+＠ゴルドルフ
+ホームズ！　ダ・ヴィンチ！[r]どうなっとるんだ、貴様らの危機管理は！
+[k]
+
+[charaFace C 29]
+
+＠ダ・ヴィンチ
+どうって、記憶によるとこれは[&彼ら:彼女たち]の[r]通常運転さ。義を見てせざるってね☆
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaDepth C 3]
+[charaDepth B 2]
+[charaSet B 1098123210 1 ゴルドルフ]
+[charaSet C 1098124510 1 ダ・ヴィンチ]
+[scene 10000]
+[wipeOff]
+[fadein black 0.5]
+[bgm BGM_EVENT_77 0.5 1.0]
+[wait fade]
+[wipeout rightToLeft 0.1 1]
+[wait wipe]
+[scene 54200]
+
+？2：動かない方がいいかも……
+
+[flag IsCmn false]
+
+[charaFace A 12]
+
+＠マシュ
+確かにその通りですが……。
+[k]
+
+＠マシュ
+……マスター、慎重に様子を[#窺:うかが]う程度なら、[r]いけませんか？
+[k]
+
+[messageOff]
+[wt 0.5]
+[cameraMove 0.1 0,5 1.0]
+[wt 0.3]
+[cameraMove 0.2 0,0 1.0]
+[wt 1.0]
+[charaFace A 1]
+
+＠マシュ
+では、こっそりと忍び足で行きましょう。
+[k]
+
+[charaFadeout A 0.4]
+[se ad580]
+[seVolume ad580 0 0.5]
+[wt 0.2]
+[seStop ad580 0.5]
+
+[messageOff]
+[wipeout rightToLeft 1.0 1]
+[wait wipe]
+
+？！
+
+[bgmStop BGM_EVENT_77 1.5]
+[wt 1.0]
+
+[wipein leftToRight 1.0 1]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+あれは……食料の配給でしょうか？[r]何やら並んでいるようですが……。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaTalk D]
+[charaFace D 9]
+[charaScale D 0.83]
+[charaFadein D 0.1 0,-48]
+[cameraMove 0.1 -72,0 1.2]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.4 0.5]
+[wt 0.2]
+[bgm BGM_EVENT_7 0.1]
+[wait wipe]
+
+＠コヤンスカヤ
+はーい、ヤガのみなさんコンニチハー！[r]今日も今日とて自転車操業ライフご苦労さま♡
+[k]
+
+＠コヤンスカヤ
+生態的に、どんなに働いても貯蓄は不可能。[r]どんなに努力しても出世は不可能。
+[k]
+
+＠コヤンスカヤ
+そんなお先[#真っ暗:ブリザード]な皆さんの生活を助ける[r]キュートな天使がやって参りました～☆
+[k]
+
+[charaFace D 17]
+
+＠コヤンスカヤ
+さあさあ、どうぞ近くによって商品をご覧ください。
+[k]
+
+＠コヤンスカヤ
+食料、医療器具、ご禁制のお酒まで、[r]ＮＦＦサービスにご用意できないものはございません♡
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 0.5]
+[bgmStop BGM_EVENT_7 0.5]
+[wait wipe]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaScale D 1.0]
+[cameraHome 0.1]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.4 0.5]
+[wt 0.3]
+[bgm BGM_EVENT_81 0.1]
+[wait wipe]
+
+＠マシュ
+あれは……！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[branch _Con IsCmn true]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[label _Con]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+むっ！？
+[k]
+
+＠ゴルドルフ
+蜂蜜に蜂蜜をかけ、さらにアイスを乗せた後に[r]やはり蜂蜜をかけて焼いたような甘い声は！？
+[k]
+
+[charaFace B 8]
+
+＠ゴルドルフ
+おまえたち、物陰に隠れろ！[r]いいか、遠くから様子を[#窺:うかが]うのだ！
+[k]
+
+＠ゴルドルフ
+決して近寄ってはならん！　私のように[r]ハニートラップで全てを失いたくなければ！
+[k]
+
+？1：了解です
+？2：（……今まででいちばん説得力のある言葉だ……）
+
+？！
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.6 0.5]
+[bgmStop BGM_EVENT_81 0.7]
+[wait wipe]
+[charaPut H 1200,1200]
+[charaFadeout B 0.1]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.6 0.5]
+[wait wipe]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠コヤンスカヤ
+[#ＴＶ:ティーブイ]・コヤンスカヤ、[r]ＴＶ・コヤンスカヤのハニーキッチン、開店でーす！
+[k]
+
+[charaFace D 14]
+
+＠コヤンスカヤ
+今日もたくさんのお客様、こんにちは。[r]アコギな商売と承知の上でありがとうございます。
+[k]
+
+[charaFace D 4]
+
+＠コヤンスカヤ
+ええ。あなたたちヤガは不死身にほど近い頑強な[r]肉体を持ちました。
+[k]
+
+＠コヤンスカヤ
+でも、その代償として消費カロリーは極めて高い。[r][#旧種:ヒト]の10倍は食べないと死んでしまう。
+[k]
+
+＠コヤンスカヤ
+極寒での生存に特化するあまり、[r]燃費が悪くなった、と申しましょうか。
+[k]
+
+＠コヤンスカヤ
+とにかく食べて[#熱量:カロリー]を得ないと、[r]このロシアではたちまち氷漬けでしょう……
+[k]
+
+[charaFace D 16]
+
+＠コヤンスカヤ
+はい。そんな皆さまの生存をお助けする為に、[r]ヤガ・モスクワからやってきたのがこの[#私:わたくし]。
+[k]
+
+＠コヤンスカヤ
+みなさん、救いの女神にすがるように、[r]なけなしのお金を握りしめてお集まりくださーい♡
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[wt 1.0]
+
+[bgmStop BGM_EVENT_7 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk E]
+[charaFace G 0]
+[charaFadein G 0.1 0]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+
+＠E：ヤガ市民Ａ
+……また来たのか、あの旧種……[r]くそ……くそ……オレたちを馬鹿にしやがって……
+[k]
+
+[charaFace F 3]
+
+＠F：ヤガ市民Ｂ
+おい、黙ってろ……！　うわべだけでも感謝するんだ。[r]また気まぐれで[#無理難題:むりなんだい]を言われたらどうする……！
+[k]
+
+＠G：ヤガ市民Ｃ
+……そうだ。やり方はどうあれ、あの女は[r]オレたちを助けてくれる……
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠G：ヤガ市民Ｃ
+……コ、コヤンスカヤさん。[r]今日も、食料を売ってください……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 20]
+[charaFadein D 0.1 1]
+
+＠コヤンスカヤ
+…………。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠G：ヤガ市民Ｃ
+あ、あの……コヤンスカヤさん？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠コヤンスカヤ
+……悲しい。[#私:わたくし]、とても悲しいです。[r]ヤガの皆さんの記憶力はピロシキほども無かったのね。
+[k]
+
+[charaFace D 19]
+
+＠コヤンスカヤ
+まったく[line 3]飼い主への敬称もロクにできないなんて。[r]ここは『コヤンスカヤさま』でしょうに。
+[k]
+
+＠コヤンスカヤ
+体も醜ければ心も貧しい。[r]機転もきかない、空気も読めない[line 3]
+[k]
+
+＠コヤンスカヤ
+ほんとう、つまらない歴史になったわね、アナタたち。
+[k]
+
+＠コヤンスカヤ
+動物と人間を掛け合わせるなんて愚策も愚策よ。[r]動物の無垢さも、人間の豊かさも失われた。
+[k]
+
+＠コヤンスカヤ
+互いの良いところを打ち消しただけの、[r]ただの環境適応で『新種』とか笑わせるわ。
+[k]
+
+[charaSet G 1098123600 1 オプリチニキ１]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace D 19]
+[charaFadein D 0.1 0]
+[charaFace E 3]
+[charaFadein E 0.1 2]
+
+＠E：ヤガ市民Ｂ
+なんだと……？
+[k]
+
+＠E：ヤガ市民Ｂ
+おい、おまえ。[#皇帝:ツァーリ]の親衛隊でも今のは[r]聞き捨てならないぞ。
+[k]
+
+[charaTalk depthOff]
+[charaDepth G 3]
+[charaDepth D 4]
+
+＠E：ヤガ市民Ｂ
+魔獣化政策はそもそも[#皇帝:ツァーリ]が始めたものだ。[r]それを批判するなど、おまえこそ[#叛逆:はんぎゃく]者[charaFace G 0][charaFadein G 0.1 3][line 3][flashin once 0.1 0.1 FFFFFFAF FFFFFF00][se bac20][wt 0.1][se bac385][seVolume bac385 0 0.3][charaFace E 2][charaShake E 0.07 3 1 0.2]ぎゃっ！？
+[k]
+
+
+[charaFace E 0]
+
+＠E：ヤガ市民Ｂ
+え……うそ……だろ……？
+[k]
+
+[messageOff]
+[se ad240]
+[wt 0.4]
+[charaMove E 256,-50 0.7]
+[wt 0.2]
+[charaFadeout E 0.4]
+[wt 0.3]
+[se ad144]
+[wt 1.0]
+
+[charaFadeout G 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠E：ヤガ市民Ａ
+なっ……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠コヤンスカヤ
+もう、勝手に[#私:わたくし]に逆らったりしたらダメだぞ♡
+[k]
+
+＠コヤンスカヤ
+ごめんなさいね、名前も知らないヤガさんたち？[r]私付きのオプリチニキは特別製なの。
+[k]
+
+＠コヤンスカヤ
+少しでも私がイラッときたら、それに対応して即行動する[r]エリートタイプだから。言葉使いには気をつけるように。
+[k]
+
+[messageOff]
+[se ad3]
+[seVolume ad3 0 0.05]
+[seVolume ad3 0.4 0.5]
+[wt 2.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：ヤガ市民Ｃ
+で、でも……今のは、アンタが……[r]いや、コヤンスカヤさんが一方的に……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 0]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+
+＠コヤンスカヤ
+あら。勇敢なお馬鹿さん、二人目かしら？[r]そんなに生きるのって難しい？
+[k]
+
+[charaFace G 0]
+[charaFadein G 0.1 3]
+[wt 0.2]
+[se ade158]
+[wt 0.3]
+[seStop ad346 0.2]
+[seStop ad3 0.3]
+
+[charaFace E 2]
+
+＠E：ヤガ市民Ｃ
+ちち、違う、違った！[r]すみません、コヤンスカヤさま……！
+[k]
+
+[bgmStop BGM_EVENT_81 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_7 0.1]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠コヤンスカヤ
+はーい、よくできました♡[r]それじゃあ商売、商売！
+[k]
+
+[charaFace D 17]
+
+＠コヤンスカヤ
+本日はますます食糧難の皆さまのため、[r]前回の二倍の食料をご用意いたしました。
+[k]
+
+＠コヤンスカヤ
+どうぞ、気兼ねなくお買い上げください♡[r]在庫はたっぷりありますので。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：ヤガ市民Ａ
+……あ、ああ。どうあれ食料さえ貰えれば……[bgmStop BGM_EVENT_7 0.5][r]れば……れば……[charaFace E 3]はあ！？　なんだこの値札！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠コヤンスカヤ
+はい♡[r]クリチャーチの肩肉、５０万ルーブルになります♡
+[k]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠E：ヤガ市民Ｃ
+三倍の値段じゃないか！[r]前回だってもう払えない金額だったのに！
+[k]
+
+＠E：ヤガ市民Ｃ
+これじゃ何の意味もない！　[#皇帝:ツァーリ]に従っていれば[r]最低限の食料配布はされたのに、
+[k]
+
+＠E：ヤガ市民Ｃ
+今じゃ物々交換、家財と引き替えだ！[r]しかも毎回、どんどん値段が倍になっていく！
+[k]
+
+＠E：ヤガ市民Ｃ
+[#足下:あしもと]見やがって！　なんだってこんな、[r]オレたちを苦しめる形式になったんだ！？
+[k]
+
+[se ad3]
+[seVolume ad3 0 0.05]
+[seVolume ad3 0.4 1.0]
+[wt 2.0]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠コヤンスカヤ
+あら。なにやら不穏な空気。[r]ふふふ。暴動一歩手前、といったところかしら。
+[k]
+
+＠コヤンスカヤ
+それは[#皇帝:ツァーリ]の親衛隊として見逃せないわねぇ？[r][#食糧難のもう一つの解決策]、いってみます？
+[k]
+
+[seStop ad3 0.5]
+[bgmStop BGM_EVENT_80 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_81 0.1]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠E：ヤガ市民Ａ
+ち、ちがう。アンタに逆らう気はない！[r]でもこれじゃあオレたちに死ねと言っているようなものだ。
+[k]
+
+[charaFace E 0]
+
+＠E：ヤガ市民Ａ
+せめて前回の値段に戻してくれないか。[r]それならまだ何とか……頼むよ、コヤンスカヤさま。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠コヤンスカヤ
+うーん……ちょっと賢くなったので[r]聞いてあげたいところですが……
+[k]
+
+[charaFace D 1]
+
+＠コヤンスカヤ
+やっぱり無理♡[r]ですので、お諦めくださいませ♡
+[k]
+
+＠コヤンスカヤ
+値段は上がる事はあれ下がる事はない。[r]それがＮＦＦサービスの鉄則です。だいいち[line 3]
+[k]
+
+[charaFace D 17]
+
+＠コヤンスカヤ
+払えない、というのは嘘ですよねぇ？[r]アナタたちにはまだ余裕がある筈です。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：ヤガ市民Ｃ
+余裕？　そんなもの、どこに……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+
+＠コヤンスカヤ
+山ほどあるでしょう？
+[k]
+
+＠コヤンスカヤ
+私に抗議する無駄な体力。[r][#叛逆:はんぎゃく]者を見逃している図太い精神。
+[k]
+
+＠コヤンスカヤ
+それと、同じぐらいの財産をもった、[r]アナタの横にいるオトモダチ。
+[k]
+
+＠コヤンスカヤ
+弱いものから奪うのがヤガのルールでしょう？[r]ほら、先ほども言いましたわね？
+[k]
+
+[bgmStop BGM_EVENT_81 0.5]
+
+[charaFace D 21]
+
+＠コヤンスカヤ
+食糧難の解決策は、何も貰うだけではない、と。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+
+＠E：ヤガ市民Ｃ
+え？
+[k]
+
+＠F：ヤガ市民Ａ
+[line 6]。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠F：ヤガ市民Ａ
+……そうか。そうかよ。親衛隊のアンタがそう言うなら、[r]お咎めはないんだな？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 21]
+[charaFadein D 0.1 1]
+
+＠コヤンスカヤ
+ええ。アナタたち人間どもの善悪なんて[r][#私:わたくし]にはどうでもいい事ですので。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 0]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+
+＠E：ヤガ市民Ｃ
+[FFFFFF]？　おい、なんだよ。諦めるのか？[-][r]アンタも一緒に文句を[line 3]
+[k]
+
+[charaFace F 1]
+
+＠F：ヤガ市民Ａ
+ああ。一緒に、食料を貰おう。[r]二人の金を合わせて、一緒にな。
+[k]
+
+[messageOff]
+
+[charaMove F 100,0 0.4]
+[charaFadeout F 0.4]
+[se ad601]
+[wt 0.4]
+[charaFace F 1]
+[charaFadein F 0.7 1]
+[seStop ad601 0.5]
+[wt 0.2]
+[charaFace F 3]
+[fadeout black 0.6]
+[wait fade]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+
+[shake 0.05 5 4 0.3]
+[effect bit_talk_35]
+
+[se ad466]
+[wt 1.5]
+
+[fadeout black 0.5]
+[wait fade]
+
+[wt 1.0]
+
+[charaSet E 98115300 1 ホームズ]
+[charaSet F 98002000 1 フォウ]
+
+[scene 54200]
+
+[fadein black 0.7]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+[wt 1.0]
+
+？1：………………
+？2：（なんで……あんな事を……）
+
+？！
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……発見されずにすみましたね。[r]コヤンスカヤ……さん、は馬車と共に立ち去りました。
+[k]
+
+＠マシュ
+仲間に頭部を殴打されて倒れたヤガの方も……[r]馬車に運ばれていましたが……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+うかない顔、そして声だな、[r]マシュ、[%1]。
+[k]
+
+＠ゴルドルフ
+何があったのか、できるだけ簡潔に報告しろ。[r]要点だけでいいぞ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……食料配布だった、のだと思います。
+[k]
+
+＠マシュ
+カルデアを襲った女性……コヤンスカヤさんが[r]街で食料を配布していたのです。
+[k]
+
+＠マシュ
+でも、お金をとっているようでした。[r]それも法外な値段設定で。
+[k]
+
+＠マシュ
+そのうちに、集まっているヤガさんたちが[r]値段に抗議をして……それで……
+[k]
+
+＠マシュ
+ヤガの皆さんの間で争いが発生して……[r]集まった半分の人数だけ、食料を得られたようです。
+[k]
+
+＠マシュ
+後の半数の方は、おそらく……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+死んだ……仲間に殺されたというのか？[r]金銭を奪って、自分たちだけ食料を得たと？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠マシュ
+………………。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠ホームズ
+……ふむ。[r]間引きが目的だったとしても、趣味が悪いな。
+[k]
+
+＠ホームズ
+結果として、自分で食料を取れないヤガは半分になり、[r]全体の生存率は上がったかもしれないが……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+ええい、そんな結果論を平然と話すな！[r]結論としてコヤンスカヤは悪魔だ！　でいい！
+[k]
+
+＠ゴルドルフ
+[%1]、いま貴様の戦力はゴミだ。[r]コヤンスカヤに見つかれば殺されていただろう。
+[k]
+
+[charaFace B 1]
+
+＠ゴルドルフ
+この私のようにな。まあ、私は持ち前の鉄拳魔術で[r][#殺戮猟兵:オプリチニキ]どもを返り討ちにしてやったが、
+[k]
+
+＠ゴルドルフ
+三流、いや魔術師もどきの貴様ではそうはいくまい。[r]身の程を知って物陰に隠れるのがお似合いだ。
+[k]
+
+[charaFace B 10]
+
+＠ゴルドルフ
+その点で言えば、今回はよくやった。[r]気持ちは分かるが、よく耐えたな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ゴルドルフ新所長……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+しかし……やはり、というか、くそう、と言うか。[r]このロシアにもコヤンスカヤ君がいるとは……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+ああ。そして彼女はサーヴァントだ。[r]この魔力検知の値から間違いなく。
+[k]
+
+＠ダ・ヴィンチ
+カルデアでは偽装されていたようだけど、[r]このロシアでは何の偽装もされていなかった。
+[k]
+
+[charaFace C 25]
+
+＠ダ・ヴィンチ
+キリシュタリア……クリプター側の[r]サーヴァントとみるべきだろうね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[bgmStop BGM_EVENT_81 0.5]
+
+＠ホームズ
+となると、あの神父もサーヴァントと考えるべきか。[r]コヤンスカヤ嬢と肩を並べていたのだから。
+[k]
+
+[bgm BGM_EVENT_76 0.1]
+
+[charaFace E 5]
+
+＠ホームズ
+しかし……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+しかし、なんでしょうかMr.ホームズ。[r]問題視されているのは、もしや、
+[k]
+
+＠マシュ
+コヤンスカヤ、言峰神父、その両名をサーヴァントと[r]知らずに連れて来たゴルドルフ氏の見る眼のなさでしょうか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+わ、私は最大の被害者だぞ！？[r]もう少し気を遣いたまえ！
+[k]
+
+[charaFace B 8]
+
+＠ゴルドルフ
+[%1]君、[r]後輩の教育がなっていないのではないかね！？
+[k]
+
+＠ゴルドルフ
+その小娘、真顔でビシビシ痛いところを突くのだが！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ホームズ
+ふむ。コヤンスカヤ嬢に関しては、確かに。
+[k]
+
+＠ホームズ
+ゴルドルフ氏がだらしなく、[r]コヤンスカヤ嬢の偽装が上手かったのだろう。
+[k]
+
+[charaFace E 0]
+
+＠ホームズ
+だが言峰神父は別だ。彼は確かに聖堂教会から[r]派遣された、正式な聖職者だった。
+[k]
+
+＠ホームズ
+ゴルドルフ氏との接点はまるでないので、[r]氏の落ち度とは言えない。
+[k]
+
+＠ホームズ
+言峰神父とコヤンスカヤ嬢は南極……カルデアに[r]向かう船内で顔を合わせた。そうですね、新所長？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+う、うむ。そうだぞ。[r]同席もあまりしなかった筈だ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠ホームズ
+……となると。我々では知り得ない情報網を使い、[r]彼らは計画を実行したのだろう。
+[k]
+
+[charaFace E 0]
+
+＠ホームズ
+それはこれから調査するとして……[r]ダ・ヴィンチ。[&ミスター:ミス][%1]。
+[k]
+
+＠ホームズ
+今さらだが、キミたちに報告しておく。[r]聖堂教会に言峰綺礼、などという人物は存在しない。
+[k]
+
+＠ホームズ
+少なくとも2017年において、そんな名前の[r]聖職者はリストに入っていない。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+それはいったい……[r]では、コトミネキレイ、という名称は偽りなのですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ホームズ
+……いや。そういう名前の人物は実在していた。[r]だがもう生きてはいない。
+[k]
+
+＠ホームズ
+言峰綺礼は西暦2004年、日本で死亡している。[r]これはカルデアにもあった記録だ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+うん？　じゃあ死体が動いている？[r]あの不意打ちヤロウは疑似サーヴァントだっていうのかい？
+[k]
+
+＠ダ・ヴィンチ
+死体に英霊を憑依させるタイプ？[r]でも、そんなの可能なのかな？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ホームズ
+…………死体を依り代にしてなら召喚されてもいい、[r]なんて英霊はいない、と断言したいところだがね。
+[k]
+
+＠ホームズ
+特例として、依り代が死体だからこそ[r]疑似サーヴァントとして成立する英霊がいるかもしれない。
+[k]
+
+＠ホームズ
+だとしても、他にもう一つ、大きな問題がある。[r]聖堂教会の報告書にはこうある。
+[k]
+
+＠ホームズ
+[#言峰綺礼の遺体は]、[#死亡の際]、[#跡形もなく焼失し]、[r]　[#そのため遺体は回収できなかった]と。
+[k]
+
+＠ホームズ
+つまり、この世界に言峰神父の肉体は残っていない。[r]少なくとも、我々の世界においては。
+[k]
+
+？1：じゃあ、もしかして[line 3]
+？2：あの神父は、この『ロシア』の……？
+
+？！
+
+[charaFace E 6]
+
+＠ホームズ
+……さて。可能性としての話だ。[r]考察するには、まだ材料が少なすぎる。
+[k]
+
+[bgmStop BGM_EVENT_76 1.5]
+
+＠D：？？？
+あーら、なーんか美味しそうな匂いがするかと思えば、[charaFace E 5][r]路地裏に可愛いネズミがいちゃったりするのかしらぁ？
+[k]
+
+＠D：？？？
+見逃してあげたいけど、[r]見つけちゃったらもうお終いよねぇ？
+[k]
+
+＠D：？？？
+目障りな虫ケラは踏み潰しておけって、[r]言峰クンから伝達を受けたところだしぃ？
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_81 0.1]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠コヤンスカヤ
+ハァーイ、生還おめでとうカルデアの皆さま♡[r]まずはその幸運と生命力を讃えるとしましょうか。
+[k]
+
+？1：コヤンスカヤ……！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+マスター、下がって……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠コヤンスカヤ
+あら。健気にマスターを守るのね。[r]でもいけないわ、マシュ。
+[k]
+
+[charaFace D 21]
+
+＠コヤンスカヤ
+戦えないクセに構えるなんて、[r]相手をその気にさせるだけよ？
+[k]
+
+＠コヤンスカヤ
+自分の状況、性能、立場をよく考えなさい。[r]貴方はともかく、後ろの[&彼:彼女]を殺されたくないのでしょう？
+[k]
+
+＠コヤンスカヤ
+なら、こういう時は恥も外聞も捨ててへりくだるものよ？[r]“好きにしてください”って、お腹を見せなくっちゃね。
+[k]
+
+[bgmStop BGM_EVENT_81 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_80 0.1]
+
+？1：誰がおまえなんかに……！
+？2：マシュ、ふたりで[&やるぞ:やろう……]！
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 0.5]
+[charaMoveReturn A 0,-5 0.4]
+[wt 0.7]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 21]
+[charaFadein D 0.1 1]
+
+[bgmStop BGM_EVENT_80 0.5]
+
+＠コヤンスカヤ
+[line 3]ふふ。[r]うふふ。ふふふふふふふふふふふふ！
+[k]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaFace D 9]
+
+＠コヤンスカヤ
+なーんて、うっそでーす！　いやあんもう、[r][%1][&クン:ちゃん]ったら必死すぎー♡
+[k]
+
+[charaFace D 0]
+
+＠コヤンスカヤ
+本日はまだ別の業務が終わっていませんの。[r][#私:わたくし]、仕事は一つ一つ片付けるタイプでして。
+[k]
+
+＠コヤンスカヤ
+アナタたちの探索、ないし掃討処理は明日から。[r]ここで殺し合うのは私の信条に反すること。
+[k]
+
+[charaFace D 16]
+
+＠コヤンスカヤ
+だから、寛大な気持ちで見逃してあげましょう。[r]その方がこの先もっと面白くなるでしょうし。
+[k]
+
+＠コヤンスカヤ
+カドック君だけ有利なんてフェアじゃありませんもの。[r]貴方たちにも少しは猶予をあげないとね？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……貴女はカルデアを破壊しただけでなく……[r]カドックさんたちと先輩を、戦わせるというのですか！
+[k]
+
+？1：……マシュ、落ち着いて
+？！
+
+[charaFace A 14]
+
+＠マシュ
+でも……！
+[k]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 90,0]
+[charaMove F -64,0 0.4]
+[charaDepth A 3]
+[charaDepth F 2]
+
+＠フォウ
+（フォウ、フォーウ！）
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+
+＠コヤンスカヤ
+ええ。殺し合ってもらうのよ、[r][%1][&クン:ちゃん]とクリプターに。
+[k]
+
+＠コヤンスカヤ
+[#私:わたくし]たちはそのために準備してきたのですもの。[r]それがこんな、一人目であっさり終わっては大損というもの。
+[k]
+
+[charaFace D 19]
+
+＠コヤンスカヤ
+……まったく。[r]聞いているのでしょう、シャーロック・ホームズ。
+[k]
+
+＠コヤンスカヤ
+貴方がついていながらこの無防備さはなに？[r]もっと慎重に行動するべきではなくて？
+[k]
+
+＠コヤンスカヤ
+もしロシア担当が私ではなく他のサーヴァントだったら、[r]貴方たちの旅はここで終わっていたところよ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠ホームズ
+まさか敵側のサーヴァントに心配されるとはね。[r]しかし……他のサーヴァント、と言ったかな？
+[k]
+
+＠ホームズ
+ヒントをくれるのなら是非サービスしてほしい。[charaFace E 0][r]キミの真名は？　マスターは？　仲間の数は？　そして[line 3]
+[k]
+
+＠ホームズ
+この特異点の本当の名は、何というのかな？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠コヤンスカヤ
+ふ。調子が出てきたようですね。[r]それでこそ叩き潰し甲斐があります。
+[k]
+
+＠コヤンスカヤ
+貴方には一杯食わされましたから。[r]直にあった時、倍にして返してあげましょう。
+[k]
+
+[charaFace D 9]
+
+＠コヤンスカヤ
+ああ、それとヒントは一切差し上げませんのであしからず♡[r]こちらも一年間、身を粉にして舞台を整えたのです。
+[k]
+
+[charaFace D 16]
+
+＠コヤンスカヤ
+不明点、疑問点、そして反省点。[r]それらはすべて貴方たち自身の手で解明なさい。
+[k]
+
+＠コヤンスカヤ
+私たちの主はそうあるべきだと感じています。[r]遙か彼方から飛来した、今はまだ姿のない[image berserker_language_1]は。
+[k]
+
+？1：……なぜヤガの人たちをいたぶった？
+？2：……ロシア側のサーヴァントじゃないのか？
+
+？！
+
+[charaFace D 0]
+
+＠コヤンスカヤ
+ああ、それ。分かりません？
+[k]
+
+
+＠コヤンスカヤ
+[#私:わたくし]は貴方がたの敵ですが、このロシアの[line 3][r]カドック・ゼムルプスの味方ではありませんわ。
+[k]
+
+[charaFace D 17]
+
+＠コヤンスカヤ
+ヤガも所詮は人の発展形の一つ。[r]私にとっては、嫌悪の対象に他なりません。
+[k]
+
+＠コヤンスカヤ
+ですから搾取します、徹底的に。[r]遊び気分で。とことん真剣に。ライフワークとして。
+[k]
+
+＠コヤンスカヤ
+弱者から搾取するという社会構造を作ったのは、[r]あなたたち人間でしょう？
+[k]
+
+＠コヤンスカヤ
+でも、暴力はいけません。
+[k]
+
+＠コヤンスカヤ
+カルデアの時はやむを得ず武力を行使しましたが、[r]あんなのは本来、私にとっては論外です。
+[k]
+
+＠コヤンスカヤ
+制圧期間に一年いただけたのなら、もっと平和裏に[r]みなさん殺し合っていただいたでしょうねぇ。
+[k]
+
+＠コヤンスカヤ
+野蛮な暴力を振るって何かを滅ぼすなんて、[r]人間並みの愚かしさでしょう？
+[k]
+
+＠コヤンスカヤ
+あなたたちは、[#自業自得:じごうじとく]で滅ぶべきであって、[r]私が同レベルに落ちるつもりはないのです。
+[k]
+
+[charaFace D 0]
+
+＠コヤンスカヤ
+……という訳で。[r]私は貴方たちに手は出しません。
+[k]
+
+＠コヤンスカヤ
+イヴァン雷帝閣下からの依頼……[r]カルデアスという最大の脅威の排除も終わりました。
+[k]
+
+＠コヤンスカヤ
+[#殺戮猟兵:オプリチニキ]のコントロールも[r]アフターサービスのようなもの。
+[k]
+
+＠コヤンスカヤ
+貴方がたが訪れ、クリプターとの戦いになるのなら、[r][#殺戮猟兵:オプリチニキ]の指揮はクリプターに任せます。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+[bgmStop BGM_EVENT_81 0.5]
+
+＠マシュ
+……ここで、わたしたちと戦う気はない、という事ですか。[r]……わたしたちが無力だから。
+[k]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaFace A 15]
+
+＠マシュ
+わたしたちにはもう何もないから、[r]ここで見逃してあげる、と……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 16]
+[charaFadein D 0.1 1]
+
+＠コヤンスカヤ
+ええ。その通りよマシュ。[r]一番認めたくない現実を、よく口にできました♡
+[k]
+
+[charaFace D 17]
+
+＠コヤンスカヤ
+その切実さ、誠実さに免じて、[r]本当に今回は見逃してあげようじゃない。
+[k]
+
+＠コヤンスカヤ
+ふふふ。ホントは安心させたところを[r]ぱっくり食べちゃうつもりだったのだけどね？
+[k]
+
+[messageOff]
+[se ad580]
+[charaFadeout D 0.4]
+[wt 1.0]
+[seStop ad580 0.4]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ま[line 3]……。[r]……っ、つ……！
+[k]
+
+＠D：コヤンスカヤ
+そうそう。それでいいのよマシュ、[r][%1]。
+[k]
+
+＠D：コヤンスカヤ
+勝てない相手には逆らわない。[r]動物として当然のことだもの。
+[k]
+
+＠D：コヤンスカヤ
+そんなおりこうな貴方たちに、[r]一つだけ約束してあげましょう。
+[k]
+
+＠D：コヤンスカヤ
+もしこのロシアを生き延びたら、また会いに来てあげる。[r]ちゃんと一人の女として、貴方たちの恨み事を聞いてあげる。
+[k]
+
+＠D：コヤンスカヤ
+だから[line 3]その時まで、[r]ネズミのように走り回りなさい？
+[k]
+
+＠D：コヤンスカヤ
+私はクリプターたちの相談役。[r]貴方たちが旅を続けるかぎり、必ず敵として現れるのです。
+[k]
+
+
+[messageOff]
+[charaTalk A]
+[bgmStop BGM_EVENT_80 1.5]
+[se ad555]
+[seVolume ad555 0 0.3]
+[wt 2.0]
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……敵サーヴァント反応……[seStop ad555 1.0][bgm BGM_EVENT_76 0.1][r]これはサーヴァント反応でしょうか。
+[k]
+
+＠マシュ
+とにかく、凶悪な魔力反応、ロストしました。[charaFace A 12][r]……すみません、マスター。
+[k]
+
+[charaFace A 8]
+
+＠マシュ
+コヤンスカヤを名乗るサーヴァントを前に……[r]わたしは、何も[line 3]
+[k]
+
+？1：……いいんだ。自分だって何もできなかった
+？2：……今は耐えよう。今は[line 3]
+
+？！
+
+[charaFace A 4]
+
+＠マシュ
+……はい。[r]でも、その……
+[k]
+
+＠マシュ
+冷静になると疑問しかありません。[r]彼女は何の為に、わたしたちの前に現れたのでしょう？
+[k]
+
+？1：嫌がらせとしか……
+？2：警告、だったのかな……
+？！
+
+[messageOff]
+[se ad649]
+[seVolume ad649 0 0.1]
+[bgmStop BGM_EVENT_76 1.5]
+[seStop ad649 2.5]
+[charaFace A 6]
+[wt 2.5]
+
+＠マシュ
+！
+[k]
+
+＠マシュ
+今の悲鳴は……？
+[k]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠ホームズ
+……まずいな。
+[k]
+
+[charaFace E 0]
+
+＠ホームズ
+二人とも、カルデアを壊滅させた犯人を前にした[r]怒りは分かるが、落ち着いてほしい。
+[k]
+
+＠ホームズ
+どうも街の様子が物騒だ。[r]周囲を警戒しながらパツシィ君の家まで戻ってくれ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……了解です。[r]身を隠しながら進みましょう、マスター。
+[k]
+
+[messageOff]
+[se ad580]
+[charaFadeout A 0.4]
+[wt 1.0]
+[seStop ad580 0.4]
+
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+[scene 10000]
+[wipein leftToRight 0.1 1]
+[wait wipe]
+[charaSet F 1098126500 1 ヤガ市民Ａ]
+[charaSet D 1098126400 1 パツシィ]
+[fadeout black 0.1]
+[wait fade]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[scene 54200]
+[wt 1.0]
+[fadein black 0.5]
+[wait fade]
+
+＠F：ヤガ市民
+お許しください！[r]お許しください、[#皇帝:ツァーリ]の光よ！
+[k]
+
+＠F：ヤガ市民
+この街にいるものはみな[#敬虔:けいけん]なる[#皇帝:ツァーリ]の臣民、[r]誰ひとり、雷帝に逆らう者はいないのです！
+[k]
+
+＠F：ヤガ市民
+……確かに、私の兄は[#叛逆:はんぎゃく]軍に加わろうとして[r]あなたがた[#殺戮猟兵:オプリチニキ]に殺されました。
+[k]
+
+[charaFace F 3]
+
+＠F：ヤガ市民
+しかし、私には関係ありません！[r]まして、[#魔術師なんて]！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0]
+[charaFace F 3]
+[charaFadein F 0.1 2]
+
+＠G：オプリチニキ
+[#皇帝:ツァーリ]に栄光あれ。[r][#皇帝:ツァーリ]に栄光あれ。
+[k]
+
+＠G：オプリチニキ
+[#叛逆:はんぎゃく]の芽は速やかに摘み取り、[r]速やかに押し潰す。
+[k]
+
+＠G：オプリチニキ
+財産は没収、家屋は焼却処分。[r]それが『非常大権』に逆らいし者たちの末路である。
+[k]
+
+[charaFace F 2]
+
+＠F：ヤガ市民
+そん、な……。
+[k]
+
+＠G：オプリチニキ
+我らは問う、問いを投げかける。[r][#魔術師はどこにいる]？
+[k]
+
+＠F：ヤガ市民
+ですから、そんな方は知らない……！
+[k]
+
+＠G：オプリチニキ
+……ならば、[#皇帝:ツァーリ]の威光を[r]未だ理解していないという証左である。
+[k]
+
+＠G：オプリチニキ
+破壊し、殺せ。
+[k]
+
+[messageOff]
+[charaMove G -192,0 0.5]
+[wt 0.6]
+[se ad346]
+[wt 0.3]
+[seStop ad346 0.2]
+
+＠F：ヤガ市民
+あ[charaShake F 0.07 2 1 0.2]、ああ……やめて……やめてください！[r]お願いしま[line 3]
+[k]
+
+＠マシュ
+（マスター……！）
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠F：ヤガ市民
+お待ちを！[r]知っています！　知っています！
+[k]
+
+＠F：ヤガ市民
+[#皇帝:ツァーリ]に逆らいし者を！
+[k]
+
+[bgmStop BGM_EVENT_81 0.5]
+
+＠F：ヤガ市民
+そのヤガの名は[line 3][r][#パツシィと申します]！
+[k]
+
+＠マシュ
+！
+[k]
+
+？1：パツシィ[&:さん]……！？
+？！
+
+＠ホームズ
+そう言えば、[r]彼はこの街で少し扱いが奇妙だったな。
+[k]
+
+＠F：ヤガ市民
+あのヤガは怪しいです！[r]あの男の父もあなたがたに逆らって殺されました！
+[k]
+
+＠F：ヤガ市民
+近頃羽振りも良い様子で……[r]きっと、[#叛逆:はんぎゃく]軍に情報を流しているのでしょう！
+[k]
+
+＠F：ヤガ市民
+あの男こそが[#叛逆:はんぎゃく]軍です！
+[k]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace F 3]
+[charaFadein F 0.1 0]
+[charaFace D 2]
+[charaFadein D 0.1 2]
+
+＠パツシィ
+おい、テメェふざけんな！
+[k]
+
+＠マシュ
+（パツシィさんです……！）
+[k]
+
+？1：最悪のタイミング！
+？！
+
+[charaFace D 4]
+
+＠パツシィ
+俺が[#叛逆:はんぎゃく]軍だと！？
+[k]
+
+[charaFace F 3]
+
+＠F：ヤガ市民
+そうだ！　オマエが[#叛逆:はんぎゃく]軍の仲間だってことは、[r]みんな知ってる！　なあ！？
+[k]
+
+[charaFace D 2]
+
+＠パツシィ
+テメェ……！
+[k]
+
+＠F：ヤガ市民
+だったら、その狩りの獲物はなんだ！
+[k]
+
+＠パツシィ
+！
+[k]
+
+＠F：ヤガ市民
+この街の狩り場は封鎖されているのに、[r]おまえは税を払っても有り余るほどの獲物を持ってる！
+[k]
+
+＠F：ヤガ市民
+それが証拠だ！
+[k]
+
+[charaFace D 3]
+
+＠パツシィ
+それは……。
+[k]
+
+＠G：オプリチニキ
+……。[r]……。
+[k]
+
+＠F：ヤガ市民
+そ、それでは私はこれで！[r]パツシィ、あばよ！
+[k]
+
+[messageOff]
+[se ad586]
+[charaFadeout F 0.4]
+[wt 0.5]
+[seStop ad586 0.5]
+[wt 0.7]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 0]
+[wt 0.4]
+
+＠G：オプリチニキ
+[line 3]貴様は[#叛逆:はんぎゃく]軍である。
+[k]
+
+＠G：オプリチニキ
+その反抗的な態度は、[r][#皇帝:ツァーリ]への敬意がない。
+[k]
+
+＠G：オプリチニキ
+威光に背く者として、[r]拷問をもって罪の自白を促し、しかる後に処刑である。
+[k]
+
+＠G：オプリチニキ
+首を出すべきである。
+[k]
+
+＠パツシィ
+……。[r]……。
+[k]
+
+[charaFace D 4]
+
+＠パツシィ
+ふざけるな、[r]この……！
+[k]
+
+[messageOff]
+[se ad346]
+[wt 0.6]
+[seStop ad346]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[charaEffect G bit_talk_muzzleflash]
+[se ade65]
+[charaShake G 0.05 3 2 0.6]
+[wt 1.0]
+
+＠F：ヤガ市民
+撃った……パツシィが[#皇帝:ツァーリ]に[#叛逆:はんぎゃく]したぞ！
+[k]
+
+[charaFace D 4]
+
+＠パツシィ
+ひっ、くそっ……！
+[k]
+
+＠G：オプリチニキ
+反逆行為を確認。[r]常であれば即刻、粛清を開始するが[line 3]
+[k]
+
+[messageOff]
+[fadeout black 0.7]
+[wait fade]
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+[fadein black 0.5]
+[bgm BGM_EVENT_80 0.5 0.4]
+[wait fade]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+ふん。見たか、あれが考えなしの末路だ。[r]無闇やたらと牙を立てていればああなるのだ。
+[k]
+
+[charaFace B 2]
+
+＠ゴルドルフ
+だが、今は良くやった、と評価しよう！[r]いい陽動になるからな！
+[k]
+
+[charaFace B 10]
+
+＠ゴルドルフ
+さあ、何をするべきかは分かるな、[r][%1]！
+[k]
+
+＠ゴルドルフ
+あの獣人が追われている隙をついて、[r]探査された霊脈ポイントへと向かうのだ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+[bgmStop BGM_EVENT_80 0.5]
+
+＠マシュ
+マスター、行きます！
+[k]
+
+？1：ああ、行こう！
+？2：パツシィ[&:さん]を、助けよう！
+？！
+
+[bgm BGM_EVENT_82 0.1]
+
+＠マシュ
+はい！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+え？[r]なんでそういうコトするの？
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.5 1.0]
+[bgm BGM_EVENT_82 0.5 0.4]
+[wait wipe]
+
+[scene 10000]
+
+[charaPut H 1200,1200]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[wipein leftToRight 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+[wt 0.1]
+
+[charaSet B 1098123200 1 ゴルドルフ]
+[charaSet C 1098124500 1 ダ・ヴィンチ]
+[charaSet E 9005001 1 ホームズ]
+[charaTalk depthOff]
+[charaDepth C 2]
+[charaDepth B 3]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 -256,-50]
+[charaFace B 9]
+[charaFadein B 0.1 256,-50]
+[scene 51600]
+[wt 0.1]
+[wipeFilter cinema 0.5 0]
+[fadein black 0.5]
+[wait fade]
+
+＠ホームズ
+ミスター・ゴルドルフの驚きはもっともだが、[r]これもカルデア流でね。受け入れてもらいたい。
+[k]
+
+[charaFace E 1]
+
+＠ホームズ
+無駄なこと、という事はないのですよ。[r]リスクは高まるが、それ以上のリターンがあるのですから。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 26]
+[charaFadein C 0.1 0,-50]
+
+＠ダ・ヴィンチ
+ああ、こうなったら[#一蓮托生:いちれんたくしょう]さ。[r]それも彼の命を守る事にも繋がるしね。
+[k]
+
+[charaFace C 30]
+
+＠ダ・ヴィンチ
+さあ[%1][&君:ちゃん]、[r]パツシィ君を連れて逃げよう！
+[k]
+
+＠ダ・ヴィンチ
+キミたちが手を引かないかぎり、彼は死ぬまで[r][#殺戮猟兵:オプリチニキ]と戦うぞ！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[wipeOff]
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipeout leftToRight 0.5 1.0]
+[wait wipe]
+
+[charaSet B 1098123210 1 ゴルドルフ]
+[charaSet C 1098124510 1 ダ・ヴィンチ]
+[charaSet E 98115300 1 ホームズ]
+[scene 54200]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[wipein leftToRight 0.5 1.0]
+[bgm BGM_EVENT_82 0.5 1.0]
+[wait wipe]
+
+＠マシュ
+はい、わたしも同感です……！[r]いざとなれば、もう一度だけ……！
+[k]
+
+？1：それはぜったいダメ
+？2：いざ、にはならない[&さ:よ]、マシュ
+
+？！
+
+[messageOff]
+[wt 0.6]
+[charaFace A 3]
+[wt 1.2]
+
+[fadeout black 0.7]
+[bgmStop BGM_EVENT_82 0.7]
+[wait fade]
+[charaFadeout A 0.1]
+[wt 1.0]
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠G：オプリチニキ
+反逆行為を確認。[r]常であれば即刻、粛清を開始するが[line 3]
+[k]
+
+＠G：オプリチニキ
+現在、我々の行動、軍規、報酬は[r]コヤンスカヤ親衛隊長の預かりである。
+[k]
+
+＠G：オプリチニキ
+親衛隊長の許可なくして処刑は許されない。[r]よって、手足を砕き、無力化するのみに留める。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 0.5]
+[wait wipe]
+[se ad586]
+[charaFadeout G 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.4 0.5]
+[seStop ad586 1.0]
+[wait wipe]
+
+
+？1：パツシィ[&:さん]！
+
+？！
+
+[charaFace D 2]
+
+＠パツシィ
+はぁ！？　テメェら、なんで……！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+お話は後で……！
+[k]
+
+＠マシュ
+ついてきてください、パツシィさん！[r]逃走ルートをこちらで提示します！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+
+
+＠F：ヤガ市民
+な、なんだアイツ！[r]コヤンスカヤ様と同じく毛がないぞ！
+[k]
+
+
+＠F：ヤガ市民
+あれが、噂の[#魔術師:コルドゥーン]なのか……！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFace A 7]
+[charaFadein A 0.1 2]
+
+＠パツシィ
+いったい何を[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠G：オプリチニキ
+[#叛逆:はんぎゃく]者に言葉は不要である。[r]私語は慎め。
+[k]
+
+[messageOff]
+
+[se ad171]
+[effect bit_talk_h_slash01]
+[wt 0.15]
+[seStop ad171 0.3]
+[wt 0.1]
+[wipeout rightToLeft 0.2 1]
+[wait wipe]
+[charaFadeout G 0.1]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+[wt 0.1]
+[wipein leftToRight 0.1 1]
+[wait wipe]
+
+＠パツシィ
+くっ、畜生！
+[k]
+
+[messageOff]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[se ade65]
+[wt 1.0]
+
+？1：数じゃかなわない！　逃げよう！
+
+？！
+
+＠パツシィ
+そんな事は百も承知[line 3]いやそうか、[r]テメエら、[#殺戮猟兵:オプリチニキ]とやりあった事があるのか……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい！　ですので彼らの移動速度も熟知しています！[r]大丈夫、逃げられます！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠ホームズ
+ああ。だがもうこの街には戻ってはこられない。[r]我々の提案に乗る、とはそういう事だ。
+[k]
+
+[charaFace E 0]
+
+＠ホームズ
+それでいいのならこちらも全力で[r]逃走のサポートをしよう。どうかね？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+構わんだろう、それぐらい！[r]さっきの市民の密告どおりだ！
+[k]
+
+＠ゴルドルフ
+貴様、街では厄介者扱いされていたんだろう？[r]いまさら何の未練があるというのだ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠パツシィ
+っ……。[r]それでも、俺は[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠オプリチニキ
+仲間も発見した。[r]至急、親衛隊長に連絡を。処刑許可を求むる。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠パツシィ
+ああ、チクショウ……！[r]分かった、ついていってやる！　付き合ってやるとも！
+[k]
+
+[charaSet G 98002000 1 フォウ]
+
+[charaFace D 4]
+
+＠パツシィ
+おい、早く案内しろ[%1]！[r]後ろから撃たれたくはねえだろうが！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠フォウ
+フォウフォウ！
+[k]
+
+[messageOff]
+[fadeout black 0.7]
+[se ad586]
+[se ad580]
+[bgmStop BGM_EVENT_80 0.7]
+[wait fade]
+[charaFadeout G 0.1]
+
+[scene 54100]
+
+[charaSet F 1098123010 1 ムニエル]
+
+[wt 1.0]
+[seStop ad586 1.0]
+[seStop ad580 1.0]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ホームズ
+よし、最短ルートで街の外に出たな。[r]犠牲がなくて何よりだよ。
+[k]
+
+？1：助かったぁ……！
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい、先輩の『路地裏で荷物を崩して邪魔をする』[r]作戦が、とても効果的だったと思います。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠ムニエル
+ああ、映画みたいに決まるんだもんな。[r]ニホンの幕末映画みたいだった。
+[k]
+
+＠ムニエル
+走って逃げては一人を斬り殺すってヤツ。[r]ロンドンのスラム街でもよく見る光景だけどな！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 30]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+[#殺戮猟兵:オプリチニキ]が銃を使用しなかったのも[r]助かった要因だろうね。
+[k]
+
+[charaFace C 24]
+
+＠ダ・ヴィンチ
+何があったか知らないけど、今回の[#殺戮猟兵:オプリチニキ]は[r]少しだけ命令系統にミスがあったようだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+[bgmStop BGM_EVENT_77 0.5]
+
+＠ホームズ
+ああ。ふってわいた幸運に感謝しよう。[r]そして休憩はそこまでだ、諸君。
+[k]
+
+[bgm BGM_EVENT_76 0.1]
+
+＠ホームズ
+目的地をビーコンに出す。[r]ミス・キリエライト、パツシィ君に見せてあげてくれ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFace A 7]
+[charaFadein A 0.1 2]
+
+＠マシュ
+はい。こちらです、パツシィさん。
+[k]
+
+[messageOff]
+[charaMove A 200,0 0.3]
+[wt 1.0]
+[se ad1]
+[wt 1.5]
+
+＠パツシィ
+お、おお。[r]……こりゃあ山の俯瞰図か？
+[k]
+
+＠パツシィ
+ごちゃごちゃして見づらいが……そうか、こりゃあ[r]起伏を示しているのか。便利だな……
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ホームズ
+そこの赤い光点が目的地だ。しばらく行った先の[r]山道からはキミに案内してもらいたい。
+[k]
+
+＠ホームズ
+なにしろ地図だけでは読み取れないものもある。[r]土地勘のあるキミの知識に頼りたい。
+[k]
+
+[charaFace E 6]
+
+＠ホームズ
+もちろん、魔獣が出没する場所は回避するように。[r]我々は追われている事を忘れずに、だ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠パツシィ
+分かってるよ。そら、急ぐぞ、[r][%1]、マシュ！
+[k]
+
+[charaFace D 4]
+
+
+＠パツシィ
+しかし、振り返って考えると何から何まで[r]テメェの思い通りに動いてる気がするぜ！
+[k]
+
+[charaFace D 2]
+
+＠パツシィ
+絶対に嫌われてるだろ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ホームズ
+ははは、その通りさ！[r]キミのような根が素直な人間からは特にね！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_76 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,288 @@
+
+
+
+＄94-04-01-18-2-1
+
+[soundStopAll]
+
+[charaSet A 3029001 1 源頼光]
+[charaSet B 98100400 1 マシュ]
+[charaSet C 1040000 1 葛飾北斎]
+[charaSet D 3024000 1 玉藻の前]
+[charaSet J 5009000 1 エフェクト用]
+
+[scene 80500]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠源頼光
+は[messageShake 0.02 3 3 0.3]っ！
+[k]
+
+[charaFace A 0]
+
+＠源頼光
+……まあまあ、私ともあろう者が、[r][#些:いささ]か興奮しすぎたようです……。
+[k]
+
+？1：いえ、[&自分:わたし]たちも悪かったです
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaFace A 0]
+＠源頼光
+いいえ、そんな……。[r]……。
+[k]
+
+？2：頼光さんは大丈夫ですか？
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaFace A 0]
+＠源頼光
+ええ、もうばっちりです。
+[k]
+
+[charaFace A 7]
+＠源頼光
+……どうやら玉藻さんにしてやられたようですが、[r]それも含めて、良しといたします。
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠マシュ
+では……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠源頼光
+ええ。此度は風紀委員としてではなく、[r]母としての力を強めに発揮させていただきます。
+[k]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaFace A 7]
+
+＠源頼光
+されど理性は失わず[line 3]
+[k]
+
+[messageOff]
+[charaPut J 0,-100]
+[charaScale J 0.7]
+
+[se ad29]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaEffect J bit_talk_30]
+[cameraMove 1.0 0,-20 1.2]
+
+[fadeout white 0.5]
+[wait fade]
+
+[charaPut J 1200,1200]
+[charaScale J 1.0]
+[charaChange A 3029002 2 fade 0]
+[wait charaChange A]
+
+[cameraHome 0.1]
+[wt 1.0]
+
+[fadein white 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_62 0.1]
+
+＠源頼光
+水着剣豪との戦い、[r]お手伝いいたしましょう！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 26]
+[charaFadein C 0.1 1]
+
+＠葛飾北斎
+くぅぅぅぅぅ。
+[k]
+
+＠葛飾北斎
+まさか清和源氏の大将、[r]大蜘蛛退治も名高い頼光さんと一緒に戦えるとはねぇ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth C 2]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0]
+[charaFace C 0]
+[charaFadein C 0.1 2]
+
+＠源頼光
+むっ。[r]貴女もしや、セイバークラスですか？
+[k]
+
+[charaFace C 8]
+
+＠葛飾北斎
+おうさ。まだ駆け出しだが、いい相手に恵まれてね。[r]いっぱしの剣士になれたところさ。
+[k]
+
+[charaFace A 7]
+
+＠源頼光
+それはいい縁です。[wt 0.5][charaFace A 6]ですが……
+[k]
+
+[charaFace A 5]
+
+＠源頼光
+先ほどの戦いからも[#窺:うかが]えたのですが、[r]剣筋にまだ無駄がありますね。
+[k]
+
+[charaFace A 0]
+
+＠源頼光
+ホテルまでの道すがら、よければ[r]幾らかお教えいたしましょうか？
+[k]
+
+[charaFace C 19]
+
+＠葛飾北斎
+え、いいのかい？
+[k]
+
+＠源頼光
+ええ、もちろん。
+[k]
+
+[charaFace A 7]
+
+＠源頼光
+[line 3]鬼や化生を斬るための[#コツ]など、[r]じっくりお教えいたしましょう。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_62 0.6 0.4]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠玉藻の前
+おっと嫌な予感がしてきたので、[r]タマモちゃんはこの辺で失礼いたしまーす！
+[k]
+
+[messageOff]
+[charaMove D 0,40 0.3]
+[charaMoveScale D 1.4 0.3]
+[se ad173]
+[seVolume ad173 0 0.8]
+[wt 0.25]
+[seStop ad173 0.1]
+
+＠玉藻の前
+[f small]お疲れになったら、いつでも[#私:わたくし]の部屋に[r][f small]おいでくださいませ♡
+[k]
+
+[messageOff]
+[charaMove D 1 0.3]
+[charaMoveScale D 1.0 0.3]
+[wt 0.2]
+[wt 0.5]
+
+[charaFace D 1]
+
+＠玉藻の前
+それではまたー♡
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠マシュ
+先輩、先輩。[r]……玉藻さんと、一体何のお話を？
+[k]
+
+[charaFace B 14]
+
+＠マシュ
+あ、先輩が顔を逸らしました！[r]せんぱーい、せんぱーーい！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_62 0.6 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠源頼光
+ああ、そうそう。
+[k]
+
+＠源頼光
+正式な果たし合いには、礼儀、手順の正しさも大事。[r]それも風紀の一種ですからね。
+[k]
+
+[charaFace A 6]
+
+＠源頼光
+何かそういうのがあるのなら……[r]ある？　ふむ、『果たし状』ですか、なるほど。
+[k]
+
+[charaFace A 5]
+
+＠源頼光
+では、きちんとそれを用意してから行きましょう。[r]たとえ向こうが疎かにしていたとしても、です。
+[k]
+
+[charaFace A 7]
+
+＠源頼光
+それが正しき勝負への道筋というもの。[wt 0.8][charaFace A 0][r]いいですね？
+[k]
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

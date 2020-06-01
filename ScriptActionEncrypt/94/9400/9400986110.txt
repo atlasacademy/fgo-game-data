@@ -1,0 +1,256 @@
+
+＄94-00-98-61-1-0
+
+[charaSet A 7008001 1 ベオウルフ]
+[charaSet B 98006000 1 アナウンス]
+[charaSet C 98006000 1 エネミー]
+[charaSet D 98002000 1 フォウ]
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[scene 20800]
+
+[fadein black 2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+＠ベオウルフ
+あらよっと！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.5]
+
+[se bac10]
+[effect bit_talk_13]
+[wt 0.1]
+[charaShake C 0.01 2 2 0.5]
+[wt 0.3]
+
+[charaSpecialEffect C enemyErasure]
+[wt 0.5]
+[se ad18]
+[wt 1.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wt 0.5]
+
+＠[51d4ff]アナウンス[-]
+[51d4ff]エネミー、撃破しました。[-][r][51d4ff]全標的掃討完了。[-]
+[k]
+
+[charaFadeout C 0.1]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ベオウルフ
+へい、一丁あがりっと。[r]マスター、アンタはもうすぐ飯の時間だろ。
+[k]
+
+＠ベオウルフ
+そろそろ上がった方がいいんじゃないか？
+[k]
+
+？1：そうしよっか
+？2：お疲れ様ー！
+？！
+
+[charaFace A 1]
+
+＠ベオウルフ
+おうよ、お疲れさん。
+[k]
+
+？1：それはともかく
+？2：チョコですよ
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+[charaFace A 0]
+
+＠ベオウルフ
+ん？　何だコレ？[r]チョコ？　何でチョコが？
+[k]
+
+＠ベオウルフ
+……。[r]……。
+[k]
+
+[charaFace A 2]
+＠ベオウルフ
+あー！[r]アレか！　他の連中がキャーキャー騒いでたアレか！
+[k]
+
+＠ベオウルフ
+バン……バレ……。[r]バレットダイ（銃弾で死ぬ）デーだっけか！
+[k]
+
+？1：全然違います
+？！
+
+[charaFace A 0]
+＠ベオウルフ
+ぬ、違うか。[r]まあいいや、ともかくチョコかチョコ！
+[k]
+
+[charaFace A 1]
+＠ベオウルフ
+ははは、頂こう！
+[k]
+
+
+[se ad217]
+[seStop ad217 0.5]
+
+＠ベオウルフ
+甘ぇ！[r]甘ぇなコレ！　ごちそうさん！
+[k]
+
+＠ベオウルフ
+ん？　食っちゃ悪かったか？[r]別にいいんだろ？　ははははは、そうだな。
+[k]
+
+[charaFace A 0]
+＠ベオウルフ
+折角だから、こっちもプレゼントをくれてやろう。[r]そうさな……ちっとばかり、部屋で待ってな！
+[k]
+
+[messageOff]
+
+[wipeout leftToRight 1.0 1.0]
+[wait wipe]
+
+[charaFadeout A 0.4]
+
+[wt 1.0]
+
+[scene 10400]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+＠フォウ
+フォウ……。
+[k]
+
+？1：おなかすいた……
+？！
+
+＠フォウ
+……！[r]フォウ、フォウ、フォウ！
+[k]
+
+[charaFadeout D 0.1]
+[messageOff]
+
+[se ad8]
+[wait se ad8]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠ベオウルフ
+おっと悪い悪い、待たせちまったな。[r]そらよ！
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+
+？1：ステーキ！？
+？！
+
+＠ベオウルフ
+おう、付け合わせはエミヤのあんちゃんだが、[r]肉は俺が焼いたぞ。
+[k]
+
+[wt 0.3]
+
+？1：ンマーイ！
+
+[charaFace A 1]
+
+＠ベオウルフ
+おう、食え食えもっと食え。[r]獲ってきた甲斐があったってモンだ！
+[k]
+
+？2：味に目覚めたァァ！
+
+[charaFace A 1]
+
+＠ベオウルフ
+いや、俺ぁ肉を焼いただけでソースはブーディカの[r]姉さんが作ってくれたんだがな！
+[k]
+
+？！
+
+＠ベオウルフ
+おう、実にいい食べっぷりだったぜ。
+[k]
+
+？1：ところでこれ、どこの部位？
+？！
+
+
+＠ベオウルフ
+喉の部分だな。[r]あいつらブレスを吐くから、喉が一番鍛えられてて美味ぇんだ。
+[k]
+
+？1：……今、なんと？
+
+？2：……何の、お肉、です？
+？！
+
+[charaFace A 0]
+＠ベオウルフ
+ん？
+[k]
+
+＠ベオウルフ
+ドラゴンはブレスを吐くだろ？[r]だから、喉が一番鍛えられてて美味いんだって。
+[k]
+
+[charaFace A 1]
+＠ベオウルフ
+そんなに喜んでくれるたぁ、作った甲斐があったぜ！
+[k]
+
+？1：まあ
+？2：美味しいからいいや！
+？！
+
+＠ベオウルフ
+おー、食え食え！
+[k]
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+[soundStopAll]
+[end]
+

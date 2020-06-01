@@ -1,0 +1,767 @@
+
+
+＄91-10-37-01-3-0
+
+
+
+[soundStopAll]
+
+[charaSet A 1037001 1 紅閻魔]
+[charaSet B 98071000 1 茨木童子]
+[charaSet C 3011000 1 フィン・マックール]
+[charaSet D 2014000 1 お米のひと]
+[charaSet E 1098161300 1 雀]
+
+[charaSet F 98071000 1 茨木童子（シルエット）]
+[charaFilter F silhouette 01060eFF]
+
+[charaSet G 98006100 1 ダミーエフェクト１]
+[charaSet H 98006100 1 ダミーエフェクト２]
+[charaSet J 98006100 1 ダミーエフェクト４]
+[charaSet K 98006100 1 ダミーエフェクト５]
+[charaSet L 98006100 1 ダミーエフェクト６]
+[charaSet M 98006100 1 ダミーエフェクト７]
+
+[charaRoll K 9]
+[charaScale K 1.2]
+[charaRoll L -6]
+[charaScale L 1.4]
+[charaScale M 1.0]
+
+
+[scene 27000]
+[effect bit_talk_gagemist]
+[cameraMove 0 0,0 1.02]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad24]
+[wt 1.8]
+[se ad716]
+[shake 0.04 3 2 1.0]
+[wt 1.8]
+
+[bgm BGM_EVENT_48 0.1]
+
+？1：信じられない……本気で手強かった……
+？2：これほどの強敵を、あの茨木童子が……？
+
+？！
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠雀
+鬼と地獄の相性の良さチュン。[r]勝ち確みたいな禁断のコラボチュン。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠お米のひと
+鬼に金棒、というヤツか。[r]茨木童子が女将から盗んだ宝は、やはり[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠フィン・マックール
+うむ。これほどの鬼を使役するのなら確定だ。[r][#紅:べに][#女将:おかみ]が持っていた『閻魔帳』だろう。
+[k]
+
+＠フィン・マックール
+……私の読みが甘かった。
+[k]
+
+＠フィン・マックール
+紅閻魔殿ひとりでは手に余るどころか、[r]我らでも不覚を取りかねない。
+[k]
+
+[charaFace C 5]
+
+＠フィン・マックール
+急ごう。もう手遅れかもしれないが[line 3][r]女将の安否を確かめねば！
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_48 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[effectStop bit_talk_gagemist]
+[wt 0.1]
+
+[scene 10000]
+[wt 0.4]
+
+[bgm BGM_EVENT_24 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[se bac417]
+[effect bit_bolg_03 0,-50]
+[wt 0.5]
+
+[fadeout white 0.25]
+[wait fade]
+
+[effectDestroy bit_bolg_03]
+
+[scene 27600]
+[charaEffect J bit_talk_gagemist_Purple]
+
+[charaScale A 1.2]
+
+[fadein white 0.25]
+[wait fade]
+
+[se ad671]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+[charaShake A 0.04 4 4 0.5]
+[wt 0.1]
+
+[charaMoveScale A 1.0 0.4]
+[wt 1.0]
+
+[se bac1]
+[charaFace A 2]
+[charaFadeout A 0.4]
+[charaMove A 0,10 0.2]
+[charaMoveScale A 1.2 0.2]
+[charaEffect G bit_talk_41]
+[wt 0.6]
+
+[charaMoveScale A 1.0 0]
+[charaPut G 2000,2000]
+[charaEffectStop G bit_talk_41]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.2 1]
+[wt 0.4]
+
+[se ad82]
+[effect bit_talk_kengekiall02]
+[wt 0.3]
+[se ad602]
+[charaShake F 0.04 3 3 0.4]
+[wt 0.2]
+[se ad82]
+[flashin once 0.1 0.1 FFFFFFCC FFFFFF80]
+[charaShake F 0.04 3 3 0.4]
+[wt 1.1]
+
+[charaMove F 0,15 0.2]
+[wt 0.2]
+
+[se ad322]
+[charaMove F 0,0 0.1]
+[fowardEffect bit_talk_impactlanding]
+[shake 0.04 3 2 0.6]
+[wt 1.2]
+
+[se ad267]
+[fowardEffect bit_talk_29]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[charaFadeout F 0.4]
+[wt 0.4]
+
+[se ad439]
+[seVolume ad439 0 0.2]
+[charaEffect H bit_talk_gouka 0,-50]
+[wt 0.2]
+
+＠茨木童子
+クハハハ！　この熱さ、この炎！[r]この湧き上がる力の[#張:はり]はどうだ！
+[k]
+
+＠茨木童子
+地獄の沙汰など信じてはいなかったが、[r]ここまで凄まじいものとはなァ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[seStop ad439 0.3]
+[charaPut H 2000,2000]
+[charaEffectStop H bit_talk_gouka]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠紅閻魔
+どこまで大馬鹿なんでちか、茨木は！[r]もはやその両腕、斬って落とすしかありまちぇんね！
+[k]
+
+
+＠紅閻魔
+[#閻雀:えんじゃく]登り[#雛:ひな]！　続けて[#颪:おろ]し[#燕:かぜ]！[r]雀の一刺し、大旋風ーーー！
+[k]
+
+[messageOff]
+[charaMove A 0,-10 0.1]
+[wt 0.1]
+[se bac307]
+[charaEffect K bit_talk_gram_slash_02 50,0 V]
+[charaEffect A bit_talk_quickmove]
+[charaFadeout A 0.1]
+[wt 1.1]
+
+[se bac307]
+[charaFadein A 0.1 0,10]
+[charaEffect A bit_talk_quickmove]
+[charaEffect L bit_talk_gram_slash_02 90,0]
+[charaMove A 1 0.1]
+[wt 1.3]
+
+[se bac283]
+[seVolume bac283 0 0.7]
+[charaFace A 13]
+[fowardEffect bit_talk_sword_light]
+[wt 0.8]
+[charaFadeout A 0.5]
+[wt 0.1]
+[charaMoveScale A 0.9 0.4]
+[wt 0.6]
+[se bac7]
+[se bac138]
+[charaEffect M bit_talk_tornado01]
+[charaMoveScale M 1.2 0.4]
+[wt 0.2]
+[shake 0.04 3 3 0.8]
+[se bac7]
+[se bac138]
+[wt 0.1]
+[se bac7]
+[se bac138]
+[wt 0.2]
+[se bac7]
+[se bac138]
+[wt 0.2]
+[se bac138]
+[charaEffectStop M bit_talk_tornado01]
+[wt 0.3]
+[charaPut M 2000,2000]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 0.7]
+
+[charaMoveReturn B -20,20 0.3]
+[wt 0.15]
+[se bac389]
+[seVolume bac389 0 0.7]
+[fowardEffect bit_talk_throwing 0,0]
+[fowardEffect bit_talk_throwing 170,140]
+[fowardEffect bit_talk_throwing -190,-190]
+[wt 0.5]
+
+[fadeout black 0.2]
+[wait fade]
+
+[charaPut J 2000,2000]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[scene 10000]
+
+[charaSet F 1035000 1 ディルムッド]
+
+[charaDepth F 1]
+[charaDepth D 9]
+
+[fadein black 0.2]
+[wait fade]
+[wt 0.2]
+
+[se bac150]
+[effect bit_talk_14 -120,70]
+[wt 0.35]
+[se bac151]
+[effect bit_talk_14 70,-110]
+[wt 0.25]
+
+[fadeout white 0.2]
+[wait fade]
+
+[scene 27600]
+[charaPut J 0,0]
+
+[charaScale A 1.2]
+
+[fadein white 0.3]
+[wait fade]
+
+[se ad671]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+[charaShake A 0.04 4 4 0.5]
+[wt 0.1]
+
+[charaMoveScale A 1.0 0.4]
+[wt 1.2]
+
+[charaFace A 5]
+[charaMove A 0,-30 0.3]
+[charaShake A 0.04 3 0 0.3]
+[wt 0.2]
+
+[se ad54]
+[wt 0.8]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠茨木童子
+クハハ、見切ったわ！[charaMoveReturn B 0,20 0.2][wt 0.1][r][#雀剣:すずめけん]、敗れたり！[charaMoveReturn B 0,20 0.2][wt 0.2]
+[k]
+
+＠茨木童子
+普段の[#吾:われ]ならば目にも留まらぬ斬撃だろうが、[r]体が勝手に動くようだ！
+[k]
+
+[charaFace B 0]
+
+＠茨木童子
+[line 3]と、言うかだな。
+[k]
+
+[messageOff]
+[charaMoveReturn B -20,20 0.3]
+[wt 0.15]
+[se bac389]
+[seVolume bac389 0 0.5]
+[fowardEffect bit_talk_throwing 0,0]
+[fowardEffect bit_talk_throwing 170,140]
+[fowardEffect bit_talk_throwing -190,-190]
+[wt 0.3]
+
+[charaFace B 2]
+[charaMoveReturn B 20,20 0.3]
+[wt 0.15]
+[se bac389]
+[seVolume bac389 0 0.6]
+[fowardEffect bit_talk_throwing 0,0 H]
+[fowardEffect bit_talk_throwing -170,140 H]
+[fowardEffect bit_talk_throwing 190,-190 H]
+[wt 0.3]
+
+[charaMoveReturn B -20,20 0.3]
+[wt 0.15]
+[se bac389]
+[seVolume bac389 0 0.8]
+[fowardEffect bit_talk_throwing 0,0]
+[fowardEffect bit_talk_throwing 170,140]
+[fowardEffect bit_talk_throwing -190,-190]
+[wt 0.4]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 0,-30]
+[charaScale A 1.05]
+[wt 0.3]
+
+[se bac2]
+[charaMove A 1 0.3]
+[charaShake A 0.04 2 2 0.3]
+[wt 0.3]
+
+[se bac1]
+[charaFace A 2]
+[charaMove A 110,6 0.2]
+[charaMoveScale A 1.03 0.2]
+[wt 0.15]
+[charaMove A 250,0 0.2]
+
+[effect bit_talk_impactlanding -120,0]
+[se ad628]
+[wt 0.3]
+[seStop ad628 0.8]
+[wt 0.5]
+
+[se bac1]
+[charaMove A 0,6 0.15]
+[charaMoveScale A 1.02 0.15]
+[wt 0.1]
+[charaMove A -250,0 0.15]
+
+[effect bit_talk_impactlanding 300,0]
+[se ad628]
+[wt 0.3]
+[seStop ad628 0.8]
+[wt 0.5]
+
+[se bac1]
+[charaMove A -125,6 0.15]
+[charaMoveScale A 1.0 0.15]
+[wt 0.1]
+[charaMove A 80,0 0.15]
+
+[effect bit_talk_impactlanding -280,0]
+[se ad628]
+[wt 0.3]
+[seStop ad628 0.8]
+[wt 1.6]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+[effectDestroy bit_talk_impactlanding]
+
+＠茨木童子
+止[messageShake 0.05 3 3 1.2]まらぬ、止まらぬ、[#吾:われ]は止まらぬぞーー！[r]うううなんぞこれ怖ーーーい！
+[k]
+
+[messageShakeStop]
+
+[charaFace B 3]
+
+＠茨木童子
+閻魔帳を悪用したからか！？[r]地獄の罰というヤツか！？
+[k]
+
+＠茨木童子
+だが[#吾:われ]は閻魔帳にある秘術を[#一口:ひとくち]、いや[#三口:みくち]、[r]いや[#十口:とおくち]ほど試しただけなのになー！
+[k]
+
+[messageOff]
+[charaMoveReturn B -20,20 0.3]
+[wt 0.15]
+[se bac389]
+[seVolume bac389 0 0.5]
+[fowardEffect bit_talk_throwing 0,0]
+[fowardEffect bit_talk_throwing 170,140]
+[fowardEffect bit_talk_throwing -190,-190]
+[wt 0.3]
+
+[charaFace B 5]
+[charaMoveReturn B 20,20 0.3]
+[wt 0.15]
+[se bac389]
+[seVolume bac389 0 0.6]
+[fowardEffect bit_talk_throwing 0,0 H]
+[fowardEffect bit_talk_throwing -170,140 H]
+[fowardEffect bit_talk_throwing 190,-190 H]
+[wt 0.3]
+
+[charaFace B 2]
+[charaMoveReturn B -20,20 0.3]
+[wt 0.15]
+[se bac389]
+[seVolume bac389 0 0.8]
+[fowardEffect bit_talk_throwing 0,0]
+[fowardEffect bit_talk_throwing 170,140]
+[fowardEffect bit_talk_throwing -190,-190]
+[wt 0.4]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 80,0]
+[wt 0.5]
+
+[se bac1]
+[charaMove A -110,6 0.2]
+[wt 0.15]
+[charaMove A -250,0 0.2]
+
+[effect bit_talk_impactlanding 120,0]
+[se ad628]
+[wt 0.3]
+[seStop ad628 0.8]
+[wt 0.5]
+
+[se bac1]
+[charaMove A 0,6 0.15]
+[wt 0.1]
+[charaMove A 250,0 0.15]
+
+[effect bit_talk_impactlanding -300,0]
+[se ad628]
+[wt 0.3]
+[seStop ad628 0.8]
+[wt 0.5]
+
+[se bac1]
+[charaMove A 125,6 0.15]
+[wt 0.1]
+[charaMove A 0,0 0.15]
+
+[effect bit_talk_impactlanding 320,0]
+[se ad628]
+[wt 0.3]
+[seStop ad628 0.8]
+[wt 1.6]
+[charaFace A 10]
+
+＠紅閻魔
+……やっぱりそうなりまちたか。
+[k]
+
+[effectDestroy bit_talk_impactlanding]
+＠紅閻魔
+絵に描いたような[#自業自得:じごうじとく]でち。[r]よくこれで鬼の頭領が務まったものでち。
+[k]
+
+[charaFace A 9]
+
+＠紅閻魔
+茨木はアレでちね。部下がいてはじめて[r]才覚を発揮できる鬼なのでちね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠茨木童子
+[#吾:われ][messageShake 0.04 3 2 1.1]の分析など後にせんか！[r]いたい、背中の肉がつっぱって痛い！
+[k]
+
+[messageShakeStop]
+
+＠茨木童子
+大鬼にはなりたいが、地獄の獄卒どものような[r]筋肉だるまは願い下げだ！
+[k]
+
+[charaFace B 4]
+
+＠茨木童子
+[#紅:あか]鬼！　[#吾:われ]は反省した！[r]やはり人様のものを盗むのはよくない！
+[k]
+
+[charaFace B 3]
+
+＠茨木童子
+だ[messageShake 0.04 3 2 1.0]からたすけて！　たすけてくれーい！[r]閻魔帳は返す！　返すからなー！
+[k]
+
+[messageShakeStop]
+[wt 0.2]
+
+？1：……何が起きているんだ……
+？2：……よく知っている茨木童子だ……
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[charaShake A 0.04 3 4 0.3]
+[wt 0.3]
+＠紅閻魔
+！　なぜここにマスターがいるでち！？[r]フィンちゃま、ディルムッド様、それと……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 1.3]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠紅閻魔
+えーと。初めてみる英霊の方。[r]三河屋のお兄ちゃんでちか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk D]
+[charaFace F 0]
+[charaFace D 3]
+[charaFadein F 0.1 0]
+[charaFadein D 0.1 2]
+
+＠お米のひと
+ははは。まあ、そういう事でひとつ。
+[k]
+
+＠ディルムッド
+我ら、女将の危機と聞いてはせ参じた者。[r]助太刀させていただきます。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠紅閻魔
+五官！　これはあちきの不始末、[r]マスターには黙っているよう言った筈でち！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageShakeStop]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠雀
+マスターには黙っていたチュン。[r]でもフィンマが勝手に推理したチュン。
+[k]
+
+＠雀
+その様、河をのぼる鮭のように[r]華麗でドシャバシャした優男だったチュン。
+[k]
+
+＠雀
+この御仁、大きな組織の団長だったくらい[r]イケてる英霊なのかもチュン？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠フィン・マックール
+ははは。よさないか、何でもない事を[r]素晴らしい伝聞のように語るのは。
+[k]
+
+＠フィン・マックール
+とはいえ私も話の分かる男だ。[r]そういう噂話は、もっと積極的に広めていいとも。
+[k]
+
+[charaFace C 0]
+＠フィン・マックール
+そういうワケで、[#諦:あきら]めたまえ女将。[r]事情の八割は私が考察済みだ。
+[k]
+
+＠フィン・マックール
+マスターともども、[r]おとなしく帰る気はないんだなこれが。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.4]
+
+？1：うん
+？2：そういうコトなんだ
+
+？！
+
+[charaFace A 1]
+＠紅閻魔
+[line 3]なるほど。[r]フィンちゃまの入れ知恵なら仕方がありまちぇんね！
+[k]
+
+[charaFace A 5]
+
+＠紅閻魔
+あちきから改めてお願いするでち。[r]茨木童子討伐、助太刀お頼み申しまちゅ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+[charaMoveReturn B -20,20 0.3]
+[wt 0.15]
+[se bac389]
+[seVolume bac389 0 0.5]
+[fowardEffect bit_talk_throwing 0,0]
+[fowardEffect bit_talk_throwing 170,140]
+[fowardEffect bit_talk_throwing -190,-190]
+[wt 0.3]
+
+[charaMoveReturn B 20,20 0.3]
+[wt 0.15]
+[se bac389]
+[seVolume bac389 0 0.6]
+[fowardEffect bit_talk_throwing 0,0 H]
+[fowardEffect bit_talk_throwing -170,140 H]
+[fowardEffect bit_talk_throwing 190,-190 H]
+[wt 0.3]
+
+[charaMoveReturn B -20,20 0.3]
+[wt 0.15]
+[se bac389]
+[seVolume bac389 0 0.8]
+[fowardEffect bit_talk_throwing 0,0]
+[fowardEffect bit_talk_throwing 170,140]
+[fowardEffect bit_talk_throwing -190,-190]
+[wt 0.6]
+
+[charaFace B 5]
+
+＠茨木童子
+馬[messageShake 0.04 3 3 1.1]鹿、討伐ではない、止めろと言ったのだ！[r][#吾:われ]、今回は何も落とさぬからなーー！？
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.5]
+[wait fade]
+[soundStopAll]
+[end]

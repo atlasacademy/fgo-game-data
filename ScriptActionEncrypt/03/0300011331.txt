@@ -1,0 +1,1122 @@
+
+
+＄03-00-01-13-3-1
+[soundStopAll]
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 5036001 1 アヴィケブロン]
+[charaSet C 7030001 1 アタランテ・オルタ]
+[charaSet D 1098127000 1 ゴーレム]
+[charaSet E 1098128400 1 ヤガ叛逆軍]
+[charaSet F 1098126500 1 ヤガ市民_男]
+[charaSet H 98115000 1 エフェクト用]
+
+[bgm BGM_EVENT_82 0.1]
+
+[scene 54201]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アヴィケブロン
+……よし、そろそろいいだろう。[r]では、少しずつ後退しよう。
+[k]
+
+＠アヴィケブロン
+他の場所も、ゴーレムが浸透している。[r]負傷者はともかく、これ以上の死亡者は出るまい。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠ヤガ市民
+ひっ……！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[flashin once 0.2 0.2 FFFFFF90 FFFFFF90]
+[se ad563]
+[wt 0.3]
+[se ad563]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[charaPut H -100,-50]
+[charaEffect H bit_shot_01]
+[se ad432]
+[wt 0.3]
+[charaPut H 50,20]
+[charaEffect H bit_shot_01]
+[se ad432]
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠ヤガ市民
+う、うわああああ！[r]もうダメだ…………へ？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaDepth E 10]
+
+[charaTalk off]
+[charaFace E 2]
+[charaFace D 0]
+[charaFadein E 0.1 1]
+[charaFadein D 0.1 500,0]
+
+
+[se ad57]
+[charaMove D 1 2.0]
+[charaShake D 0.5 0 5 2.0]
+[wt 2.0]
+[se ad7]
+[charaFadeout E 0.4]
+[wt 0.1]
+
+[seStop ad57]
+
+[messageShake 0.05 5 5 0.5]
+＠E：ヤガ叛逆軍
+あ、おい！[r]そりゃ、俺の武器だ！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad57]
+[charaMove D -500,0 2.0]
+[charaShake D 0.5 0 5 2.0]
+[wt 1.6]
+[charaFadeout D 0.4]
+[wt 0.4]
+[seStop ad57]
+
+＠E：ヤガ叛逆軍
+も、持って行きやがった……。
+[k]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠アタランテ・オルタ
+……よし！[charaFace C 2][r]食料の運び入れはどうなっている！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠ヤガ叛逆軍
+ゴーレムが補助に回ったお陰で、[r]ほぼ完了しました！
+[k]
+
+＠ヤガ叛逆軍
+ただ、現状ですと当初の７０％程度しか……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠アタランテ・オルタ
+……充分だと思うしかあるまい。[wt 0.3][charaFace C 2][r]よし、[#叛逆:はんぎゃく]軍は撤退だ！！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[se ad588]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 1.0]
+
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+！[r]撤退の合図です、マスター！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アヴィケブロン
+さて、[#殺戮猟兵:オプリチニキ]はゴーレムを優先するだろう。[r]我々も今の内に撤退しよう。
+[k]
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_82 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[charaSet C 1098126400 1 パツシィ]
+
+[wipeFilter cinema 0.5 0]
+
+[fadein black 1.0]
+[se ad586]
+[seVolume ad586 0 0.1]
+[seVolume ad586 1.0 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.4 50,-50]
+[charaMove C 0,-50 0,4]
+[wt 0.4]
+[seStop ad586 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠パツシィ
+はっ、はっ、はっ……！
+[k]
+
+[charaFace C 0]
+
+＠パツシィ
+（大丈夫、大丈夫だ……。[r]　いや、大丈夫だから何だってんだ）
+[k]
+
+＠パツシィ
+（今更、俺が顔を出せる訳もない。[r]　そも、俺はこの街を見切った。見捨てた側だ）
+[k]
+
+[charaFace C 3]
+
+＠パツシィ
+（……第一、俺が最後に渡した食料だけで、[r]　そう長く保つはずが……）
+[k]
+
+[messageOff]
+[charaMove C -50,-50 0.4]
+[se ad586]
+[charaFadeout C 0.4]
+[wt 0.4]
+[fadeout black 1.0]
+[wait fade]
+
+[wipeOff]
+
+[fadein black 1.0]
+[seVolume ad586 0.5 0.0]
+[wait fade]
+[seStop ad586]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠F：ヤガ市民
+ひいい、ひいいい……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFace F 2]
+[charaFadein C 0.1 2]
+[charaFadein F 0.1 0]
+
+＠パツシィ
+そこのテメェ！
+[k]
+
+[charaFace F 3]
+
+＠F：ヤガ市民
+お、おまえパツシィか！[r]この裏切り者！　やっぱり[#叛逆:はんぎゃく]軍[line 3]
+[k]
+
+[charaFace C 2]
+
+＠パツシィ
+んなことはどうでもいい！[r]母さん！　母さんは無事か！
+[k]
+
+＠F：ヤガ市民
+おまえの母親！？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaShake F 0.05 0 1 3.0]
+[wt 0.8]
+
+＠F：ヤガ市民
+ひ、ひひひ[charaFace F 1][wt 0.5]……ひひひひ！[charaFace F 3][charaShakeStop F][wt 0.5][r]馬鹿か！
+[k]
+
+＠F：ヤガ市民
+おまえの母親なら、おまえが[#叛逆:はんぎゃく]軍に[r]加わったせいで殺されたよ！[bgmStop BGM_EVENT_81 1.0]
+[k]
+
+＠F：ヤガ市民
+石をありったけ投げつけて[r]殺してやったのさ！
+[k]
+
+＠F：ヤガ市民
+おま、おまえ！　おまえのせいで！[r]おまえみたいな弱虫のせいで！
+[k]
+
+＠F：ヤガ市民
+テメェも殺してや[line 3]
+[k]
+
+[messageOff]
+[se ad563]
+[charaShake F 0.05 3 3 0.3]
+[effect bit_shot_01]
+[wt 0.5]
+[fowardEffect bit_talk_35]
+[se ad161]
+
+＠F：ヤガ市民
+がふっ……。
+[k]
+
+[messageOff]
+[charaMove F 0,-50 0.4]
+[charaFadeout F 0.4]
+[wt 0.4]
+[se ad144]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.4 1]
+
+＠パツシィ
+そん、な……。[r]ああ……嘘だ……嘘……。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[bgmStop BGM_EVENT_81 0.3]
+[wt 0.5]
+
+[bgm BGM_EVENT_41 0.1]
+
+＠
+[line 3]違う、嘘じゃない。
+[k]
+
+＠
+そんなこと、とっくに、理解していたはずだ。[r]この街が、裏切り者とその家族も許さないなんて。
+[k]
+
+＠
+自分が見捨てた時点で、[r]母親が死ぬことなんて、当たり前だ……！
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1]
+[se ad586]
+[wait wipe]
+[wt 1.0]
+[wipein rightToLeft 1.0 1]
+[seStop ad586]
+[wait wipe]
+
+＠パツシィ
+（違う！　違う違う違う！[r]　俺のせいじゃない、俺のせいじゃない！）
+[k]
+
+＠パツシィ
+（この[#叛逆:はんぎゃく]は当然だ！[r]　あいつらは罪人だ！　この都市に住んでいるのが悪い！）
+[k]
+
+＠パツシィ
+（ガキの頃から、この都市は怖かった！[r]　弱者はすぐに淘汰されるこの街が！）
+[k]
+
+＠パツシィ
+（父さんは街の警備隊長だったのに……街の代表として、[r]　[#殺戮猟兵:オプリチニキ]に食料を陳情したら、[#問答無用:もんどうむよう]で殺された！）
+[k]
+
+＠パツシィ
+（この街はクソだ！[r]　なんで、母さんはこの街を捨てなかった……！）
+[k]
+
+[bgmStop BGM_EVENT_41 2.0]
+
+＠パツシィ
+（母さんを殺したのは……俺……俺のせい……[r]　違う……違う、違う、違う！）
+[k]
+
+[messageOff]
+[se ad588]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠パツシィ
+くそ……。[r]俺は……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠ヤガ叛逆軍
+パツシィ、何やってる！[bgm BGM_EVENT_81 0.1][r]撤退だ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠パツシィ
+……。[r]……あ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠ヤガ叛逆軍
+くそ、[#殺戮猟兵:オプリチニキ]の生き残りだ！[r][#殿:しんがり]だぞ、急げ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠パツシィ
+……。[r]……。
+[k]
+
+[charaFace C 3]
+
+＠パツシィ
+……すまん。
+[k]
+
+？1：パツシィ[&:さん]？
+？！
+
+＠パツシィ
+……俺、は……！
+[k]
+
+[messageOff]
+[se ad586]
+[charaMove C -50,0 0.4]
+[charaFadeout C 0.4]
+[wt 0.5]
+[seStop ad586 0.5]
+[wt 0.5]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+一体どこへ……！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アヴィケブロン
+……行くぞ、マスター。[r]彼は離別するようだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+そんな……！？
+[k]
+
+？1：パツシィ[&:さん]……
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_81 1.0]
+[wait fade]
+
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[charaSet A 1098124400 1 皇女]
+[charaSet B 1098127900 1 カドック]
+[charaSet C 1098128200 1 カイニス]
+[charaSet D 1098123600 1 オプリチニキ1]
+[charaSet E 1098123600 1 オプリチニキ2]
+[charaSet F 1098123600 1 オプリチニキ3]
+[charaSet G 1098128200 1 カイニス_表情変更用]
+
+
+[scene 54500]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_76 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠カドック
+……息が詰まりそうだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace B 4]
+[charaFace A 0]
+[charaFadein B 0.1 0]
+[charaFadein A 0.1 2]
+
+＠皇女
+どうしたの？
+[k]
+
+＠カドック
+そろそろ約束の時間なのさ。[r]定期考査みたいなものだ。
+[k]
+
+[charaFace A 11]
+
+＠皇女
+ああ、彼ね。[r]……ええと、キリ……キリシュタリア……。
+[k]
+
+[charaFace B 0]
+
+＠カドック
+ヴォーダイム。
+[k]
+
+[charaFace A 10]
+
+＠皇女
+そうそう、ヴォーダイム。[r]魔術師としては歴史は古いらしいわね、彼。
+[k]
+
+[charaFace B 0]
+
+＠カドック
+古いだけなら、掃いて捨てるほどいるのが、[r]魔術師ってやつだ。
+[k]
+
+[charaFace B 10]
+
+＠カドック
+ヴォーダイムはその中でも家柄と、能力と[line 3][r]それと、自信ってヤツが備わった[#本物]だ。
+[k]
+
+[charaFace B 4]
+
+＠カドック
+……認めるのは癪だけど、アイツほど[r]リーダーが似合うヤツもいない。
+[k]
+
+＠カドック
+クリプター同士で[#異聞帯:ロストベルト]の出来を競え、[r]なんてレースをしているが……
+[k]
+
+[charaFace B 9]
+
+＠カドック
+……ふん。[r]最終的な勝利者は、アイツでほぼ確定しているさ。
+[k]
+
+[charaFace A 8]
+
+＠皇女
+今のところは？
+[k]
+
+[charaFace B 1]
+
+＠カドック
+今のところは、だ。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_76 0.5 0.4]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+
+
+
+
+
+＠？？？
+[line 3]何だ、良かった。[r]まだ闘志はあるって事か。
+[k]
+
+[charaTalk off]
+
+[charaFace B 10]
+[charaFace A 5]
+[wt 0.1]
+
+[messageOff]
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠２人
+！
+[k]
+
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[se ad311]
+[wt 1.2]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.7 1]
+[wt 0.4]
+[seStop ad311 0.3]
+[wt 0.3]
+[charaFace C 7]
+[wt 0.5]
+
+＠カイニス
+いいじゃねェか。[bgm BGM_EVENT_76 1.5 1.0][r]オレたちとまだ、やり合う気でいるってのはな！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk off]
+[se ad58]
+[wt 0.8]
+[charaFace D 0]
+[charaFace E 0]
+[charaFace F 0]
+[charaFadein D 0.2 1]
+[wt 0.2]
+[charaFadein E 0.2 2]
+[wt 0.2]
+[se ad58]
+[charaFadein F 0.2 0]
+[seStop ad58 1.0]
+
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠皇女
+……退がりなさい、[#殺戮猟兵:オプリチニキ]。[r]そちらは[#私:わたくし]たちの客です。
+[k]
+
+＠皇女
+[#皇帝:ツァーリ]に害為す者ではありません。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠カイニス
+は。それはテメェら次第だ。
+[k]
+
+[charaFace C 7]
+
+＠カイニス
+ロクに使えねぇ三下なら、[r]ここの王ごと潰して帰るつもりだからなァ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠カドック
+あまり挑発しないでくれ。[r]わざわざ海と嵐を渡ってきた君の苦労は認める。
+[k]
+
+＠カドック
+だが、しなくてもいい鉄火場にするのは感心しない。[r]無益な争いだし、それに[line 3]
+[k]
+
+[charaFace B 1]
+
+＠カドック
+貴重な神霊サーヴァントを、三騎から二騎に減らしては[r]ヴォーダイムに申し訳ないからな。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaDepth G 10]
+
+[charaTalk off]
+[charaPut H 1]
+
+[charaFace C 16]
+[charaFadein C 0.1 1]
+[wt 0.8]
+[charaFace G 18]
+[charaFadein G 0.4 1]
+
+＠カイニス
+[line 3]言うじゃねえか。[r]軟弱者と思ったが、なかなかどうして。
+[k]
+
+
+[charaFadeout C 0.1]
+
+＠カイニス
+なあ皇女サン。[r]アンタの前だから格好つけてんのか、コイツ。
+[k]
+
+＠カイニス
+それとも、今まで牙を隠し持ってたってヤツか？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠皇女
+言うまでもないでしょう。[r]その両方よ、神霊カイニス。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠カイニス
+そうか。恐怖と蛮勇か。[r]そいつはいい。まだ成長の余地がある。
+[k]
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠カドック
+……で、何だ。[r]報告すべきことなど何もない。
+[k]
+
+＠カドック
+すべて順調だ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 17]
+[charaFadein C 0.1 1]
+
+＠カイニス
+あの有様でか？[r]根付いてないのはテメェのところだけだ。
+[k]
+
+＠カイニス
+空想樹はまだ芽吹いてもいねえ。[r]そりゃあオレのマスターも気にするだろ。
+[k]
+
+[charaFace C 6]
+
+＠カイニス
+弱虫のカドックは大丈夫か。[r]荷が勝ちすぎてはいなかったか、ってな！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠カドック
+……上手くやっているさ、[r]確かに出遅れているが、元々僕は遅れている。
+[k]
+
+[charaFace B 10]
+
+＠カドック
+最終的に勝つのは、[r]僕とキャスター。それは変わらない。
+[k]
+
+＠カドック
+確かに空想樹はまだ根付いていない。[r][#皇帝:ツァーリ]がその必要性を認めていないからな。
+[k]
+
+＠カドック
+だが、彼もあれが必要だと認めるだろう。
+[k]
+
+[charaFace B 0]
+
+＠カドック
+それまでは仕掛けの時間だ。[r]リバーシ……っつっても知らないか。
+[k]
+
+＠カドック
+まあ、逆転する下地は作ってる。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠カイニス
+険のある眼だな。[r]王のご機嫌を窺いながら逆転を狙う、野心家の眼だ。
+[k]
+
+[charaFace C 1]
+
+＠カイニス
+[line 3]ならいい。テメェがヴォーダイムの野郎に[r]一泡吹かせるなら、そいつは最高の見世物だ！
+[k]
+
+[charaFace C 6]
+
+＠カイニス
+いいぜ、ロシアは問題なし。[r]そうヴォーダイムには伝えてやるよ。
+[k]
+
+＠カイニス
+この[#異聞帯:ロストベルト]は土台は悪いが、[r]国の真ん中にいる『王』は最上級の怪物だ。
+[k]
+
+[charaFace C 1]
+
+＠カイニス
+……ああ。チラッと見てきたが、ヒデェなりだ。[r]うちの主神どもと殴り合っても勝てそうじゃねえか。
+[k]
+
+[charaFace C 7]
+
+＠カイニス
+うまく出し抜けよ、カドック・ゼムルプス。[r]女にいいとこ見せたいんだろ？
+[k]
+
+＠カイニス
+いいじゃねえか、マスターとサーヴァントの[r]カップルってのも！
+[k]
+
+＠カイニス
+そうなったらいよいよオレの出番だ。[r]オマエの前で、その皇女サマをオレの女にしてやるよ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠皇女
+…………下品ね。[r]教養のない男は願い下げよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠カイニス
+奇遇だな。オレも同意見だよ。漁の一つもしねえクセに、[r]花よ姫よとちやほやされた女はな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠皇女
+…………。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFace C 0]
+[charaFadein B 0.1 0]
+[charaFadein C 0.1 2]
+
+＠カドック
+カイニス。もしかして話し相手がいないのか？[r]お茶会がしたいのなら席を用意するよ。
+[k]
+
+[charaFace C 7]
+
+＠カイニス
+ああ、皇女がいない時になら喜んで受けてやる。
+[k]
+
+[charaFace C 1]
+
+＠カイニス
+っていうかカドック、テメェ口が回るじゃねえか！[r]普段からそれくらい[#辛辣:しんらつ]でいろよ、オイ！
+[k]
+
+[charaFace B 0]
+
+＠カドック
+僕だって人を選ぶって事だよ。[r]それで。他に言う事は？
+[k]
+
+[charaFace C 0]
+
+＠カイニス
+ねえよ。[r]ああ、そういや汎人類史の連中は居るのか？
+[k]
+
+＠カイニス
+デイビットの言い分じゃロシアに[r]現れるって話だったが？
+[k]
+
+[charaFace B 10]
+
+＠カドック
+……目下、対応中だ。[r]こちらもすぐに片が付く。
+[k]
+
+[charaFace C 5]
+
+＠カイニス
+はあ？　まだ殺していなかったのか。[r]いいぜ、ついでだ。片付けてきてやるよ。
+[k]
+
+＠カドック
+それは看過できない。[r][&彼:彼女]らはこのロシアに訪れた。
+[k]
+
+＠カドック
+そうである以上、僕らの獲物だ。[r][#どう扱い]、[#どう利用するか]は僕の特権だ。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠カイニス
+[line 3]そうかよ。図に乗ったな人間。[r]ああ、昔のテメェを見ている気分だ。
+[k]
+
+[charaFace C 7]
+
+＠カイニス
+その思い上がりに期待してやるよ、カドック。[r]ああ、ロシアはテメェの[#勝負:ゲーム]盤だ。
+[k]
+
+＠カイニス
+せいぜい一等賞を目指せ。[r]足を[#掬:すく]われないように気をつけてな。
+[k]
+
+＠カイニス
+うまくいったら、その時はお茶会？　って[r]ヤツに呼ばれてやるよ。
+[k]
+
+[messageOff]
+[charaEffect C bit_talk_kaineus]
+[wt 0.8]
+[charaEffectStop C bit_talk_kaineus]
+[se ad153]
+[seVolume ad153 0 0.5]
+[wt 0.4]
+[charaFadeout C 1.2]
+[seStop ad153 2.0]
+[wt 3.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFace B 0]
+[charaFadein A 0.1 2]
+[charaFadein B 0.1 0]
+
+＠皇女
+……ふざけたサーヴァントね。
+[k]
+
+＠皇女
+あなたの制止がなかったら、[r][#私:わたくし]が殺していたわよ。
+[k]
+
+[charaFace B 4]
+
+＠カドック
+面倒臭い状況になるのは回避だ。[r][#皇帝:ツァーリ]の手を[#煩:わずら]わせることになる。
+[k]
+
+＠皇女
+神代の英雄というのは、[r]ああも不作法なものかしら。
+[k]
+
+＠皇女
+……舐められているのもまた、[r]腹立たしいわね。
+[k]
+
+[charaFace B 9]
+
+＠カドック
+はいはい、僕が悪かったよ。
+[k]
+
+＠皇女
+ええ、そうね。そしてあなたが悪いということは、[r][#私:わたくし]も悪いのです。
+[k]
+
+＠皇女
+それが理解できるから、なお腹立たしい。
+[k]
+
+[charaFace B 0]
+
+＠カドック
+……ペペから貰った茶の葉がある。
+[k]
+
+＠カドック
+サーヴァントには不要だろうが、[r]それで機嫌を直してくれ。
+[k]
+
+[charaFace A 1]
+＠皇女
+……そうね、味次第ではね。
+[k]
+
+[charaFace B 4]
+
+＠カドック
+やれやれ……。
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_76 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,261 @@
+
+
+＄94-01-76-05-2-0
+[soundStopAll]
+
+[charaSet A 3005001 1 エリザベート]
+[charaSet B 10004000 1 メカエリチャン]
+[charaSet C 6031001 1 刑部姫]
+[charaSet D 6026001 1 新宿のアサシン]
+[charaSet E 99502600 1 マシュ]
+[charaSet F 98111500 1 ダ・ヴィンチ]
+[charaSet G 5009000 1 エフェクト用ダミー１]
+[charaSet H 5009000 1 エフェクト用ダミー２]
+
+[scene 48900]
+
+[fadein black 1.5]
+[bgm BGM_EVENT_3 0.1]
+[wait fade]
+
+[effect bit_talk_shot_02]
+[wt 0.1]
+[se bac11]
+[wt 0.2]
+[se bac11]
+[wt 0.1]
+[se bac11]
+[wt 0.1]
+[se ad32]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[effect bit_talk_h_slash01]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[shake 0.05 3 3 0.4]
+[wt 0.4]
+[seStop ad32 0.5]
+[wt 0.5]
+
+＠エリザベート
+よし、これで……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠メカエリチャン
+く、っ……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠刑部姫
+そこっ！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[se bac412]
+[se bac277]
+[wt 0.5]
+[seStop bac412 0.7]
+[seStop bac277 0.7]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.03 3 3 0.15]
+[se bac7]
+[wt 0.3]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.03 3 3 0.25]
+[se bac7]
+[wt 1.0]
+
+？1：押し切れるか！？
+？！
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠新宿のアサシン
+ああ、やってみせらぁ！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[se ad73]
+[wt 0.2]
+[seStop ad73 0.3]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+[charaPut G -128,20]
+[charaEffect G bit_talk_13]
+[se bac9]
+[wt 0.2]
+[seStop bac9 0.2]
+[charaEffectStop G bit_talk_13]
+
+[charaShake B 0.01 5 5 0.7]
+
+[charaPut H 64,17]
+[charaEffect H bit_talk_13]
+[se bac8]
+[wt 0.2]
+[seStop bac8 0.2]
+[charaEffectStop H bit_talk_13]
+
+[charaPut G -32,-29]
+[charaEffect G bit_talk_13]
+[se bac11]
+[wt 0.4]
+[charaEffectStop G bit_talk_13]
+
+＠メカエリチャン
+く、うっ……！
+[k]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[charaFace B 9]
+
+＠メカエリチャン
+[line 3]敵戦力の再評価を実行。
+[k]
+
+＠メカエリチャン
+致死的危険性を認識、対軍標的を変更。[r]人型生命体に標的を強制設定。
+[k]
+
+[charaDepth G 10]
+[charaPut G 1]
+[charaEffect G bit_talk_36_bl]
+[se ad39]
+
+[charaFace B 8]
+
+＠メカエリチャン
+認証拒否、認証拒否、認証[line 3]承認。[r]対軍[#個人]宝具『[#鋼鉄天空魔嬢:ブレストゼロ・エリジェーベト]』のロックを解除！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠マシュ
+みなさん、警戒を！[r]メカエリチャンから強烈な熱反応が出ています！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 0,-90]
+
+＠ダ・ヴィンチ
+彼女は全兵装を叩き込む気だ！[r]次は全力だぞ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠刑部姫
+や[messageShake 0.01 5 5 0.7]ーめーてー！[r]お城がこーわーれーるーかーらー！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠メカエリチャン
+それはお気の毒に。[r]ですが私からの返答はただ一つ。
+[k]
+
+[charaFace B 6]
+
+＠メカエリチャン
+『ごめんあそばせ。[r]　ところで、火災保険に入っていて？』
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_36_bl]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠刑部姫
+う[messageShake 0.05 3 1 0.7]わーん！[r]入ってるワケないじゃな[line 3]い！　この放火魔[line 2]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+ワオ、木造だからよく燃えそうね[line 3]じゃなくて！
+[k]
+
+＠エリザベート
+知り合ったばかりのおっきーだけど、[r]お城を燃やされる苦しみは見過ごせない。
+[k]
+
+＠エリザベート
+理由は分かんないままだけど、[#私:アタシ]モデルである以上、[r]止めるのは[#私:アタシ]の役目っ！
+[k]
+
+[charaFace A 2]
+
+＠エリザベート
+いくわよ、メカエリチャン！[r]エリザＶＳメカエリザ……。
+[k]
+
+＠エリザベート
+[#私:アタシ]の歌声とアナタのジェットノズル、[r]どちらが上か、決着をつけてあげる！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

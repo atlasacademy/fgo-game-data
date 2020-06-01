@@ -1,0 +1,633 @@
+
+
+＄94-03-50-40-1-0
+[soundStopAll]
+
+[imageSet A cut103_item02 1]
+[charaSet B 98110000 1 柳生但馬守]
+[charaSet C 1098164010 1 松平信綱]
+[charaSet D 1098164020 1 松平信綱2]
+
+[charaSet E 1098158220 1 シオン]
+[charaSet F 6014001 1 マタ・ハリ]
+[charaSet G 1098163710 1 カーマ]
+[charaSet H 3030000 1 パールヴァティー]
+[charaSet I 5030001 1 シェヘラザード]
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+
+[scene 72403]
+
+[bgm BGM_EVENT_82 0.1]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.5]
+
+[se bas3]
+[effect bit_talk_cure]
+[wt 1.5]
+[effectStop bit_talk_cure]
+[wt 0.5]
+
+？1：身体が、あったかい……
+？2：凄く気分が楽になってきた！
+？！
+
+
+[charaFadein A 0.7 0,-200]
+[wt 2.0]
+[charaFadeout A 0.4]
+[wt 0.6]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠柳生但馬守
+そうか。この札に飛ぶはただの蝶に[#非:あら]ず。[r]伊豆蝶……[#大河内松平の家紋か]。気付かなんだわ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠松平信綱
+宗矩殿。丁度良い。天海僧正と拙者の策はもう一つある。[r]天海殿が自らの命を代償にこの身体に刻んだ術だ。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 1.5]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠松平信綱
+今一度言おう。これまでの拙者の所業を見よ。[r]貴殿の眼前にいるのは、『[#徳川に仇為す者]』ぞ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠柳生但馬守
+！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_82 1.0]
+[charaFace B 4]
+[wt 1.0]
+
+[charaFace B 0]
+
+＠柳生但馬守
+老中、松平伊豆守信綱。[r]貴殿はまことの忠臣よ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠松平信綱
+[#否:いな]。それでも拙者は逆臣だ。そうでなければならぬ。[r][#故:ゆえ]に[line 3]すべき事をされよ、宗矩殿。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠柳生但馬守
+……では、[#斬らねばならぬ]。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠松平信綱
+[#そうだ]。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+[cueSe Battle bac305]
+[wt 0.2]
+[fadeout black 0.2]
+[wait fade]
+[charaFadeout B 0]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0 1]
+[fadein black 0.1]
+[wait fade]
+[wt 0.2]
+[cueSe Battle bac136]
+[charaPut J 1]
+[charaScale J 1.2]
+[charaEffect J bit_talk_Slash_white_01_L]
+[wt 0.1]
+[charaEffectStop J bit_talk_Slash_white_01_L]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF50]
+[charaFace D 1]
+[charaShake D 0.03 5 5 0.3]
+[wt 0.5]
+[fowardEffect bit_talk_blood_splash]
+[se ad464]
+[wt 1.2]
+[charaMove D 0,-25 0.4]
+[wt 0.1]
+[charaFadeout D 0.4]
+[wt 0.4]
+[fowardEffectStop bit_talk_blood_splash]
+[se ad144]
+[wt 1.0]
+
+[charaSet C 5009000 1 エフェクト用ダミー２]
+[charaSet D 99502600 1 マシュ]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+？1：柳生さん！？
+？2：どうしていきなり！
+？！
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠柳生但馬守
+これにて信綱殿は、[r]お福殿と同じ魂のみの存在となった。[#故:ゆえ]にこそ。
+[k]
+
+＠柳生但馬守
+天海僧正が仕込んだ術か、奴めの意志か。[r]どうあれ、お福殿と同じく、ここでは形を変える。
+[k]
+
+＠柳生但馬守
+『[#徳川に仇為す者]』の性質を持った、[r]おそらくは[line 3]ただ一振りの、刀に。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[charaPut C 1]
+[charaEffect C bit_talk_sword_light]
+[wt 0.3]
+[cueSe Battle bac283]
+[cueSeVolume bac283 0 0.0]
+[cueSeVolume bac283 1.0 1.0]
+[wt 2.5]
+
+[fadeout black 0.1]
+[wait fade]
+
+[charaPut C 1200,1200]
+[charaEffectStop C bit_talk_sword_light]
+
+[scene 72403]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+
+＠マシュ
+信綱さんの体から、日本刀が……！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠柳生但馬守
+[#和泉守:いずみのかみ][#兼定:かねさだ]ならぬ、[r][#伊豆守:いずのかみ]の村正[#擬:もど]きか。
+[k]
+
+[messageOff]
+[wt 0.2]
+[cueSe Battle bac305]
+[wt 0.8]
+[charaFace B 5]
+
+[charaSet A 1098163720 1 カーマ_同位体]
+[charaSet C 1098163720 1 カーマ_同位体]
+
+[bgm BGM_EVENT_67 0.1]
+
+＠柳生但馬守
+よかろう。[r]松平伊豆守、貴殿の忠義、しかと預かった。
+[k]
+
+＠柳生但馬守
+徳川家兵法指南役、柳生但馬守宗矩[line 3]唯一度、[r]偽りの徳川を滅ぼすために、偽りの村正を振るおう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠シオン
+こちらは慶喜公の力と考え方は一緒です。自分自身を、[r]偽りの徳川に対する最終兵器にしたんですね。
+[k]
+
+[charaFace E 11]
+
+＠シオン
+その武器を振るうに値する、事態を収拾させうる者が[r]いつか来る事を信じて、ただ[line 3]
+[k]
+
+＠シオン
+自分という刃を磨いていたんでしょう。[r]まさに[#埋伏:まいふく]の毒、その究極です。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+
+
+＠カーマ
+……なんですかこの展開。
+[k]
+
+
+＠カーマ
+信綱さんが裏切っていたのは知っていました。[r]いえ、局さんを逃した事だけは驚きですけど。
+[k]
+
+＠カーマ
+私が読書している隙に、[r]色々と小細工を弄していたでしょう？
+[k]
+
+[charaFace G 19]
+
+＠カーマ
+そうやっていじらしく手を尽くした挙げ句、結果的に[r]どうにもできずに私に[#蹂躙:じゅうりん]される姿を見るのは
+[k]
+
+＠カーマ
+とっても面白そうだなって、[r]楽しいガジェットとして使ってあげたのに[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠マタ・ハリ
+徳川への忠義が、あなたの想像を超えていた。[r]彼の目論見の全部を見抜けなかったのね？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 22]
+[charaFadein G 0.1 1]
+
+＠カーマ
+見抜けるわけないでしょう！？
+[k]
+
+＠カーマ
+裏切ったのは、そもそも自分自身という[#花札:生命]に[r]反徳川の性質を与えるためで？
+[k]
+
+＠カーマ
+さらに私を倒すためだけに、自分を斬らせて[r][#徳川殺しの刀:ト ク ガ ワ ス レ イ ヤ ー]にする？
+[k]
+
+＠カーマ
+ほんとう、意味がわかりません。なんですかこれ。変です。[r]この気持ち悪さを表す言葉を私は知りません。
+[k]
+
+＠カーマ
+我慢に我慢を重ねるにも程があります。[r]ああもう、どこまで痛いのが好きなんですか、人間って！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+＠春日局
+私にはわかりますよ。[#乳母:めのと]冥利に尽きます。[r]これこそが私が幼少より彼に教えてきた事です。
+[k]
+
+＠春日局
+見事。まさに見事、信綱殿。[r]貴方らしく不器用なものではありましたが……
+[k]
+
+＠春日局
+これこそが、徳川に対するまことの忠義です。[r]言い換えましょうか？
+[k]
+
+＠春日局
+それこそが信綱殿が守ったもの[line 3][r]信綱殿がそうであると信じた、[#愛なのです]。
+[k]
+
+[messageOff]
+[charaTalk G]
+[charaFace G 17]
+[charaFadein G 0.1 1]
+[wt 1.2]
+
+＠カーマ
+駄目。駄目ですよ、それは。[r]愛を与えるのは私です。宇宙を満たすのは私です。
+[k]
+
+[charaFace G 18]
+
+＠カーマ
+おまえたちが愛を持つ必要なんてない！[r]私の知らない愛なんて特に！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+[bgmStop BGM_EVENT_67 1.0]
+
+＠パールヴァティー
+カーマ……いえ、愛欲の獣。[r]だからこそあなたは人類とは相容れない。
+[k]
+
+＠パールヴァティー
+愛するのは心地良い。愛し方は[#千差万別:せんさばんべつ]。[r]その無限の快楽全てを司るのがあなた。
+[k]
+
+＠パールヴァティー
+あなたが成体になり羽ばたけば、世界が終わる。[r]それこそ宇宙すら焼き尽くされるかもしれない。
+[k]
+
+[bgm BGM_EVENT_82 0.1]
+
+＠パールヴァティー
+[line 3]ここで止めます。必ず。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠マタ・ハリ
+愛するって行為を独り占めされちゃったら困るわねぇ。[r]私もその関係で英霊になっちゃったみたいなものだし。
+[k]
+
+[charaFace F 1]
+
+＠マタ・ハリ
+ま、それが本当の愛だったかどうかは内緒だけどね？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+
+＠シェヘラザード
+奪われては……ええ、とても困りますね。[r]今の私は、どうしてか、知っているようですから。
+[k]
+
+[charaFace I 0]
+
+＠シェヘラザード
+[#それ]があるいは、死の恐怖を忘れさせてくれる、[r]唯一のものである事を……
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠マシュ
+わたしは……まだ、愛を言葉でしか知りませんが……。
+[k]
+
+＠マシュ
+それは自分の心に現れるもの。いつか誰かと[r]分け合うものだと、皆さんが教えてくれました。
+[k]
+
+＠マシュ
+それは想像するだけで胸が弾む、[r]輝かしい未来です。
+[k]
+
+＠マシュ
+それをあなただけの価値観で満たされるのは、[r]とてもイヤだと心が叫んでいます。
+[k]
+
+＠マシュ
+一方的に与えられる堕落なんて[line 3][r]それは欲望であって、愛情とは思えません！
+[k]
+
+[charaFace D 2]
+
+＠マシュ
+マスター！　こちらも全力で支援します。[r]ビーストⅢ／Ｌの撃滅、よろしくお願いします！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠シオン
+カーマの同位体は数知れません。[r]周囲の宇宙からいくらでも飛来してくるのでしょう。
+[k]
+
+[charaFace E 2]
+＠シオン
+ですが……やはり、全てを司る頭脳体はあれ一体のはず。[r]なんとか頭を潰してください！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠柳生但馬守
+承知。私がすべきはそれのみだ。[r]この刀にて、斬る。
+[k]
+
+＠柳生但馬守
+[line 3]覚悟。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaDepth G 4]
+[charaDepth C 5]
+[charaDepth A 6]
+
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 1]
+
+[bgmStop BGM_EVENT_82 1.0]
+
+＠カーマ
+ああ……もう。
+[k]
+
+＠カーマ
+本当に、養豚場の豚のように愛おしいですね。[r]みんな、みんな、“自分が愛したい”という煩悩だらけ。
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 2]
+[wt 0.4]
+
+＠C：カーマ
+なら[line 3]私はあえて、[r]凌駕すべきあの女の代わりに唱えましょう。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.4 0]
+[wt 0.4]
+
+＠A：カーマ
+[#煩悩無量誓願断:ぼんのうむりょうせいがんだん]。
+[k]
+
+[charaTalk G]
+[charaFace G 0]
+
+
+＠カーマ
+私の愛は、全ての煩悩を叶える堕落の炎。[r][#故にそこに煩悩はない]。
+[k]
+
+[charaFace G 14]
+
+＠カーマ
+そう、私は人類を救うんですよ。その先はなぁんにも[r]生まれませんけど、いいじゃないですか。
+[k]
+
+[charaFace G 1]
+
+＠カーマ
+私は気にしません。[r]だって私、人間なんて大嫌いですから。
+[k]
+
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaFace G 13]
+
+＠カーマ
+さあいらっしゃい、[r]可愛らしいマスターさん。
+[k]
+
+＠カーマ
+[&貴方:貴女]たちの思い上がりを正面から潰してあげましょう。[r]これより[#溢:あふ]れるは堕落の宇宙より[#来:きた]るもの。
+[k]
+
+
+＠カーマ
+歴史に刻まれた愛の園を破戒の罠に造り替え、
+[k]
+
+＠カーマ
+対の存在を概念的に凌駕し、[r]獣として羽化しようとする大災害。
+[k]
+
+＠カーマ
+ビーストⅢラプス。[r][#腐敗堕落:ふ は い だ ら く]の天魔王が、無限の愛を与えましょう！
+[k]
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

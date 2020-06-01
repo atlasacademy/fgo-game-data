@@ -1,0 +1,758 @@
+
+
+＄02-00-02-13-1-0
+[soundStopAll]
+[charaSet A 7027001 1 ペンテシレイア]
+[charaSet B 98114500 1 アマゾネス]
+[charaSet C 4004001 1 アストルフォ]
+[charaSet D 4025000 1 コロンブス]
+[charaSet E 99502600 1 マシュ]
+[charaSet F 98002000 1 フォウ]
+[charaSet G 98115300 1 ホームズ]
+[charaSet H 1026001 1 デオン]
+
+[scene 43200]
+[fadein black 1.5]
+[wait fade]
+
+[se ad149]
+[shake 0.01 1 1 0.4]
+[wt 1.5]
+[bgm BGM_EVENT_5 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+＠ペンテシレイア
+…………っ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠アマゾネス
+女王！？[r]どうなさいましたか、どこかお体の具合でも！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠ペンテシレイア
+臭う。臭うぞ。[#アキレウス]の臭いだッ……。
+[k]
+
+＠ペンテシレイア
+だが……だが。これは、おかしい。[r][#近すぎる]。いったい、どこから[line 2]？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaSet A 98111500 1 ダ・ヴィンチ]
+[charaSet B 98114200 1 メガロス]
+
+[wt 2.0]
+[scene 10001]
+[wipeFilter circleIn 0.3 0.5]
+[flashin once 0 1000000 00c8ff50 4c98ff00]
+[fadein black 1.5]
+[wait fade]
+[bgm BGM_EVENT_62 0.1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.4 1]
+＠アストルフォ
+よーし、このへん！　急速浮上ー！
+[k]
+[messageOff]
+[fadeout black 0.4]
+[wait fade]
+[wipeOff]
+[wt 0.1]
+[flashOff]
+[wipeout downToUp 0.4 1]
+[wait wipe]
+[fadein black 0.4]
+[wait fade]
+[cameraMove 0.1 0,-20 1.1]
+[charaFadeout C 0.1]
+[scene 43101]
+[wipein upToDown 0.4 1]
+[wait wipe]
+[se ad416]
+[cameraMove 2.0 0,0 1.1]
+[charaPut E 0,-200]
+[charaEffect E bit_talk_40]
+[shake 0.05 0 5 2.0]
+[cameraRollMove 0.3 -359]
+[wait cameraRoll]
+[cameraRollMove 0.3 0]
+[wait cameraRoll]
+[cameraRollMove 0.3 -359]
+[wait cameraRoll]
+[cameraRollMove 0.3 0]
+[wait cameraRoll]
+[cameraHome 0.8]
+[wt 0.8]
+[charaPut E 0,-10000]
+[charaEffectStop E bit_talk_40]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.4 0,-50]
+[charaMove D 1 0.4]
+[se ad414]
+[seVolume ad414 0 0.4]
+＠コロンブス
+いい位置だ！　そのまま岸につけろ！[r]すぐに下船し上陸、そして全力で前進しやがれ！
+[k]
+
+[charaFace D 1]
+＠コロンブス
+見ろよ、エルドラドの本丸、黄金の神殿はもう[r]すぐそこだ！　はっは、喉笛に食らいついたぜ！
+[k]
+
+[messageOff]
+[seStop ad414 0.4]
+[charaFadeout D 0.1]
+[wt 0.4]
+[se ad13]
+[charaTalk E]
+[charaFace E 2]
+[charaEffect E bit_talk_10_LowLevel]
+[wt 0.1]
+[charaFadein E 0.1 1]
+[bgmStop BGM_EVENT_62 2.5]
+＠マシュ
+……スター、マスター！？
+[k]
+
+＠マシュ
+聞こえますか、わたしです！[r]応答してください、マスター！
+[k]
+
+？1：まるで眼鏡が似合う頼れる後輩のような声！　何奴！？
+[bgm BGM_EVENT_2 0.1]
+[charaFace E 1]
+＠マシュ
+あえて復唱しますが、眼鏡が似合う頼れる後輩、[r]マシュ・キリエライトです！　ああ、本当に[line 2]
+[k]
+
+？2：おお……マシュの声の安心感は異常
+[bgm BGM_EVENT_2 0.1]
+[charaFace E 3]
+＠マシュ
+えっ？　そ、そうですか？　なんだか嬉しいですけど[r]……今は、とにかく、ですね。
+[k]
+
+？！
+
+[charaPut E 0,-10000]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠フォウ
+フォウ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠マシュ
+ご無事でなによりです、マスター、フォウさん！
+[k]
+
+＠マシュ
+今までずっと試みていたのですが、[r]ようやく通信が回復しました。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠ホームズ
+だから言ったじゃないか、[r]単なる一時的な通信障害で、心配はいらないとね。
+[k]
+
+？1：ホームズさんまで……？
+？！
+
+[charaFace G 0]
+＠ホームズ
+私は今しばらく自室でパイプを[#燻:くゆ]らせているつもり[r]だったんだが。
+[k]
+
+＠ホームズ
+これはマスターの一大事、カルデアの総力を挙げて[r]最優先で対処すべき事項だ、協力しないものは
+[k]
+
+＠ホームズ
+人の心のない人非人である[line 2]なんて剣幕で引っ張り出されては[r]抵抗のしようもない。
+[k]
+
+＠ホームズ
+生存反応は確認できているのだから、いくらなんでも[r]騒ぎすぎだとは最初から一貫して主張していたんだが。
+[k]
+
+＠ホームズ
+今の私に断言できる真実は、彼女がそれだけ君のことを[r]大事に想っているということだけさ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+＠マシュ
+…………。
+[k]
+
+[charaPut E 0,-10000]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠デオン
+通信が回復したのは、単純に水上に出たからだろうね。[r]今まで我々はずっと竜宮城にいたんだ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠マシュ
+……竜宮城……？
+[k]
+
+[charaFace E 15]
+＠マシュ
+き、聞きたいことはいろいろありますが、とりあえず[line 2]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+そうだ、とりあえず聞かせたまえよ。[r]主にキミ達の前をヌシヌシ歩いてるアレについてね。
+[k]
+
+＠ダ・ヴィンチ
+まったく、やるじゃないか。[r]どうしてこんなことになってるんだい？
+[k]
+
+[charaPut E 0,-10000]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[se ad423]
+＠メガロス
+[image berserker_language_1][line 4]！！！
+[k]
+
+？1：実は……
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout B 0.1]
+[wt 2.0]
+[fadein black 1.5]
+[wait fade]
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+[bgm BGM_EVENT_62 0.1]
+＠マシュ
+竜宮城の、玉手箱。[r]そうですか、そんなことが……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+………………コロンブスのアイディア、ね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠マシュ
+………………。
+[k]
+
+？1：２人とも、どうかした？
+？！
+
+[charaFace E 12]
+＠マシュ
+……いいえ、なんでもありません、マスター。[r]今は[line 2]どうにもできないことです。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠ホームズ
+ふむ。改めて状況を聞くに、地底世界とはね。[r]ジュール・ヴェルヌの小説じみている。
+[k]
+
+＠ホームズ
+探検家として動いていたこともある身だ、[r]それなりに興味深くはあるし[line 2]
+[k]
+
+[charaFace G 4]
+＠ホームズ
+通信の具合だけ見て引き下がるなんていう大仕事、[r]何シリングの報酬を貰おうが割に合わない。
+[k]
+
+[charaFace G 1]
+＠ホームズ
+せめて私も今しばらくその地底世界の物語を[r]聞いておくことにしようじゃないか。
+[k]
+
+[charaFace G 0]
+＠ホームズ
+なに、無遠慮に結末を促すようなことはしないさ。[r]退屈が過ぎれば何か口を出すこともあるかもしれないが。
+[k]
+
+[charaFadeout G 0.1]
+[charaPut E 0,-10000]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠コロンブス
+おおい、悠長に話してる場合じゃねぇぞ！[r]今度こそ奴の首を獲る！　時間が勝負だ！
+[k]
+
+＠コロンブス
+アマゾネスどもが集まってくる前に突っ込んで、[r]そっから計画通りに進めるぜ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠マシュ
+……はい。それでは、走りながら計画を聞かせてください。[r]わたしたちもできる限りのフォローをします！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+[line 2]そうだね。[r]今のうちに話せることは話しておかないと、だ……。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_62 2.0]
+[fadeout black 2.0]
+[wait fade]
+[charaPut E 0,-10000]
+[charaFadeout A 0.1]
+[charaSet F 7027001 1 ペンテシレイア]
+[wt 2.0]
+[scene 43200]
+[fadein black 2.0]
+[wait fade]
+[bgm BGM_EVENT_5 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 1]
+＠コロンブス
+よぉう。来てやったぜ、女王サマよ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠ペンテシレイア
+…………。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠メガロス
+[line 4]。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠ペンテシレイア
+アキ、レウス……！[r]よくもまた、私の前に、現れたなッ……！
+[k]
+
+＠ペンテシレイア
+貴様が、私に何をしたか。忘れたとは言わさん。[r]あの恥辱は貴様を殺すことでしか[#雪:そそ]がれぬ。
+[k]
+
+＠ペンテシレイア
+故に殺す。ただ殺す。[r]トロイアの地に至るより前の、[#この私]が、殺すッ……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠コロンブス
+……？　意外とキレ具合がまともだな。
+[k]
+
+＠コロンブス
+簡易契約で[#巨英雄:メガロス]が制御されている[line 2][r]殺気が今までより抑えられてるせいか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠アストルフォ
+相変わらず訳わかんないことは言ってるけどね。
+[k]
+
+？1：油断はできない
+？2：いつまた向こうも暴走状態になるかわからない[&ぞ:よ]……！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+＠デオン
+もちろん、油断はできない。[r]小娘のような姿でも、奴は一流の戦士だ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠ペンテシレイア
+小娘の姿……？　クク、クククク。[r]よくぞ言ったな、アキレウス。
+[k]
+
+[charaFace F 5]
+＠ペンテシレイア
+[#だからだ]。[#だからこそだ]！[r]今、この私が、貴様を殺す意義がある！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+＠マシュ
+彼女にとって……眼前にいるのは、全てアキレウス[r]なのでしょうか？　同時に何人いても……。
+[k]
+
+＠マシュ
+もし、そうだとしたら。[r]今の彼女の認識力は、完全に、壊れています……！
+[k]
+
+[charaPut E 0,-10000]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠ペンテシレイア
+ああ……アキレウス。[r]また、貴様は我が部下たちを貫くつもりだな。
+[k]
+
+＠ペンテシレイア
+させぬ。させぬぞ。[r]此度こそ、この戦争は、我らが勝利だ。
+[k]
+
+＠ペンテシレイア
+再び聞くがいい、この猛勇なる鬨の声を。
+[k]
+
+＠ペンテシレイア
+アカイアの兵どもが恐れ、怯え、剣を捨てて[r]命を請うた[line 2]我らが戦士の雄叫びを！
+[k]
+
+[bgmStop BGM_EVENT_5 0.7]
+[charaFace F 2]
+[charaEffect F bit_talk_voice01]
+＠ペンテシレイア
+オ・オ・オ・オ・オ！[se ad411][r][image berserker_language_1][line 2]！
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[charaEffectStop F bit_talk_voice01]
+[charaFadeout F 0.1]
+[charaSet A 98114500 1 アマゾネス]
+[charaSet B 98114510 1 アマゾネス]
+[charaSet G 98114500 1 アマゾネス]
+[charaSet H 98114510 1 アマゾネス]
+[wt 0.4]
+[charaFace A 1]
+[charaFace B 1]
+[charaFace G 1]
+[charaFace H 1]
+[scene 43300]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk off]
+[se ad412]
+[seVolume ad412 0 0.7]
+[charaFadein G 0.4 384,0]
+[wt 0.4]
+[charaFadein H 0.4 -384,0]
+[wt 0.4]
+[charaFadein A 0.4 128,0]
+[wt 0.4]
+[charaFadein B 0.4 -128,0]
+＠アマゾネス
+[image berserker_language_1][line 2]！[effect bit_talk_voice01]
+[k]
+[seVolume ad412 1.0 0.35]
+
+[messageOff]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[effectStop bit_talk_voice01]
+[charaTalk on]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaSet A 5030001 1 シェヘラザード]
+[charaSet B 98113900 1 フェルグス]
+[charaSet H 1026001 1 デオン]
+[scene 43200]
+[wt 0.4]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+＠アマゾネスの声
+[image berserker_language_1][line 2]！
+[k]
+[seStop ad412 1.0]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠シェヘラザード
+これは……ここまで届く、この声は……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+＠デオン
+この前と同じ……一般のアマゾネス兵すらも[#強化:狂化]させる、[r]『雄叫び』だ！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠ペンテシレイア
+オオ……そうだ、猛れ、子らよ。声の限りに猛れ。[r]それが、我らの祖たる軍神の血を、呼び起こす。
+[k]
+
+＠ペンテシレイア
+勝てぬぞ、アキレウス、此度は貴様らは勝てぬ！[r]貴様は私がこの手で殺すうえに[line 2]
+[k]
+
+＠ペンテシレイア
+あのとき、トロイアの援軍として率いてきた[r]部族の者の数は、十二。
+[k]
+
+[charaFace F 2]
+＠ペンテシレイア
+[#だが今、このエルドラドで猛る戦士の数は、その百倍]！[r]貴様らに勝ち目などあるものかッ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+＠マシュ
+……っ！
+[k]
+
+[charaPut E 0,-10000]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠フェルグス
+（やはり、彼女たちが形作っているのは[line 2]）
+[k]
+
+＠フェルグス
+（絶対的な強者が君臨し、全ての民がただそれのみに従う、[r]　ひとつの生き物のような国！　確かにこれは、強固だ……！）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠コロンブス
+おい[line 2]止まってんじゃねぇ！[r]こうなることは予想してただろうが！
+[k]
+
+＠コロンブス
+作戦通りに動くしかねぇぞ、こっちは！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠アストルフォ
+っと、そうだよね。驚いてる場合じゃなかったや。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+＠デオン
+こちらに気がかりはあるけど……仕方がない、か。
+[k]
+
+＠デオン
+……フェルグス。シェヘラザード。マスター。
+[k]
+
+＠デオン
+あとは頼んだよ。用事が終わればすぐ戻ってくるつもりだけど[r][line 2]気をつけて。
+[k]
+
+？1：……そっちも、ね
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0]
+[charaFadein H 0.1 2]
+
+？2：……またあとで
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0]
+[charaFadein H 0.1 2]
+＠アストルフォ
+いやだなあ、マスター。そんなこと言うと[line 2]
+[k]
+
+[charaFace H 1]
+＠デオン
+ああ。まるで、もう会えなそうだからわざわざ言っている[r]みたいじゃないか。旗がどうこうというあれだよ。
+[k]
+
+？！
+
+＠アストルフォ
+それじゃ、いってきまーす！
+[k]
+
+[messageOff]
+[se ad55]
+[charaFadeout C 0.4]
+[charaFadeout H 0.4]
+[wt 1.0]
+[seStop ad55 0.7]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠フェルグス
+……ずいぶん気楽に行ってしまいましたね。[r]あの人達らしいです。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠マシュ
+お二人が自ら言い出したと聞いたときには驚きましたが。
+[k]
+
+＠マシュ
+通信機越しのわたしでも、今の気楽さの裏には[r]並々ならぬ覚悟と決意を感じました。
+[k]
+
+＠マシュ
+必ず[line 2]成し遂げてくれると思います。
+[k]
+
+＠マシュ
+それを信じて、こちらはこちらですべきことに[r]全力を尽くしましょう、マスター……。
+[k]
+
+[charaPut E 0,-10000]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠シェヘラザード
+（ああ……信じられません。死にたくない私には、[r]　絶対に、できません）
+[k]
+
+＠シェヘラザード
+（あの方たちは、本当に[line 2]）
+[k]
+
+＠シェヘラザード
+（[#たった二人だけで、千のアマゾネスを押し止める][r]　[#つもりなのでしょうか]……！？）
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

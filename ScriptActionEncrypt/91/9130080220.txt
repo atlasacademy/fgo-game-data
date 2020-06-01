@@ -1,0 +1,1433 @@
+
+＄91-30-08-02-2-0
+
+
+
+
+[soundStopAll]
+
+[charaSet A 1009001 1 モードレッド]
+[charaSet B 3008001 1 エルキドゥ]
+[charaSet C 5009001 1 ダ・ヴィンチ]
+[charaSet D 98001000 1 マシュ]
+[charaSet E 7004001 1 フラン]
+[charaSet F 98006000 1 魔獣1]
+[charaSet G 98006000 1 魔獣2]
+[charaSet H 98006000 1 魔獣3]
+
+[charaSet I 98115000 1 エフェクト用]
+[charaSet J 98115000 1 エフェクト用]
+
+[scene 20900]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.2 -50,0]
+[se ad671]
+[charaMove A 1 0.2]
+[wt 0.2]
+[seStop ad671 0.3]
+[wt 0.2]
+
+＠モードレッド
+……。
+[k]
+
+[messageOff]
+[se ad51]
+[wt 0.8]
+
+[charaFace A 2]
+[se ad632]
+[charaEffect A bit_talk_charge_red]
+[wt 2.0]
+[seStop ad632 0.2]
+[wt 0.2]
+
+[se ad471]
+[fowardEffect bit_talk_h_slash01]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+[charaEffectStop A bit_talk_charge_red]
+
+[wt 0.6]
+[seStop ad471 0.5]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠エルキドゥ
+[line 4]！
+[k]
+
+[messageOff]
+[se ad7]
+[charaMove B -100,20 0.1]
+[wt 0.1]
+[charaMove B -156,0 0.1]
+
+[se ad32]
+[charaPut I 356,80]
+[charaEffect I bit_talk_kushizashi01]
+[wt 0.1]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[fowardEffect bit_talk_14 456,0]
+[charaEffectStop I bit_talk_kushizashi01]
+
+[se ad7]
+[charaMove B -300,20 0.1]
+[wt 0.1]
+[charaMove B -356,0 0.1]
+
+[se ad32]
+[charaPut J 56,80]
+[charaEffect J bit_talk_kushizashi01]
+[wt 0.1]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[fowardEffect bit_talk_14 156,0]
+[charaEffectStop I bit_talk_kushizashi01]
+[wt 0.5]
+[flashin once 0.1 0.5 FFFFFFAF FFFFFF00]
+[wt 0.8]
+
+[se ad73]
+[se ad133]
+[seStop ad133 1.0]
+[charaMove B -200,0 0.3]
+[wt 0.1]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[fowardEffect bit_talk_kengekiall01]
+[se ad33]
+[wt 1.4]
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 -100,0]
+[charaShake A 0.05 2 1 0.6]
+[charaMove A 200,0 0.4]
+[wt 0.1]
+[se ad82]
+[se ad32]
+[fowardEffect bit_talk_14 -50,0]
+[wt 0.2]
+[se ad82]
+[fowardEffect bit_talk_14 0,-0]
+[wt 0.1]
+[se ad82]
+[fowardEffect bit_talk_14 50,0]
+[wt 0.1]
+[seStop ad671 0.5]
+[wt 0.5]
+
+[charaFace A 2]
+[wt 0.3]
+[se ad54]
+[charaMove A 50,0 0.2]
+[wt 0.1]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_3 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 10200]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_72 0.1]
+
+？1：ど、どうしてあの二人が！？
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+教授がおかしな事をしてたから、手が空いてた何人かに[r]シミュレーターのテストをお願いしたのだけれど……。
+[k]
+
+＠ダ・ヴィンチ
+まさか、こんな形のヒューマンエラーが起こるとはね。[r]これも教授の悪巧みの一つだと疑うべきかな？
+[k]
+
+？2：誰か王様たち呼んできて！　ウルクと円卓の！
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+やめておいた方がいいよ。その二人を呼んだら多分、[r]今の５倍ぐらい話がこじれる事になる。
+[k]
+
+＠ダ・ヴィンチ
+下手に騒ぎを大きくしたら、新体制に引き渡す前に[r]カルデアが更地になるかもだ。
+[k]
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+
+＠マシュ
+な、何があったのですか！？[r]これは……シミュレーターの訓練の域を超えています！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+ああ。[r]だから迂闊にシミュレーターを終了させる事もできない。
+[k]
+
+＠ダ・ヴィンチ
+こちらに戻って来たら、カルデアの中だろうと[r]そのまま戦闘を継続しそうな勢いだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠マシュ
+確かに……。
+[k]
+
+＠マシュ
+正直なところ……[r]あんなモードレッドさんは初めて見ました……。
+[k]
+
+？1：[#円卓領域:キャメロット]特異点の時とも違うね
+
+？2：悪態一つ[#溢:こぼ]してないのが逆に怖い
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+そうだね。普段のモードレッドが持っている人間性が、[r]強い敵意で怒りの感情ごと抑え込まれてるように見える。
+[k]
+
+＠ダ・ヴィンチ
+ただ、今回の場合はギフトや呪いの影響じゃない。[r]純粋に、感情が消し飛ぶぐらいの怒りに触れたんだろう。
+[k]
+
+＠ダ・ヴィンチ
+自分が今シミュレーターの中にいるって事も[r]忘れてるんじゃないかな。本気で倒すつもりに見えるね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠マシュ
+エルキドゥさんが、モードレッドさんを[r]そこまで怒らせたという事ですか！？
+[k]
+
+＠マシュ
+いったい、何が……！？
+[k]
+
+？1：理由は後、今は二人を止め[&ないと:よう]！
+？2：……そこは簡単に踏み込めないような……
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+いや。[%1][&君:ちゃん]は[r]理由を知っておいた方がいいかもだ。
+[k]
+
+＠ダ・ヴィンチ
+シミュレーターに記録された映像を見せるよ。
+[k]
+
+[charaFace C 5]
+
+＠ダ・ヴィンチ
+ああ、モードレッドには[r]映像の記録がある事は黙っておくように。
+[k]
+
+＠ダ・ヴィンチ
+二人を仲裁する為に、話をここで偶然[r]聞いていた事にするのは仕方がないけれどね。
+[k]
+
+＠ダ・ヴィンチ
+会話の内容を改めて口にするのは厳禁だよ。[r]それくらいデリケートな案件ってコトだから。
+[k]
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠マシュ
+そ、それほどまでに……ですか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+[#宥:なだ]めるため……というより、怒りの原因を知っておかないと[r]会話中、そこに触れかねないからね。
+[k]
+
+＠ダ・ヴィンチ
+人によっては敢えて蒸し返していくかもだが、[r]そこはキミを信頼してるから教えると思ってくれたまえ。
+[k]
+
+[messageOff]
+[se ad172]
+[wt 1.5]
+[seStop ad172]
+
+[charaFace C 0]
+
+＠ダ・ヴィンチ
+今、映像を出すよ……。[r]ほら、このあたりだ。
+[k]
+
+？1：これは……！？
+
+？！
+
+[messageOff]
+[se ad1]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_72 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 20900]
+
+[effect bit_talk_security]
+[wipeFilter cinema 0.5 0]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠モードレッド
+まあいいか。丁度休もうと思ってた所だ。[r]話ぐらいは聞いてやるよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠エルキドゥ
+ありがとう！[r]感謝するよ。
+[k]
+
+＠エルキドゥ
+僕はただ、君の『救い』が知りたいだけなんだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠モードレッド
+あん？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠エルキドゥ
+君は、[#モルガンという女性に]『[#アーサー王を討ち滅ぼせ]』[r][#と記された設計書に従って生み出された存在]だと聞いたよ。
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+
+＠モードレッド
+……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠エルキドゥ
+結果、君は母親であるモルガンの設定した仕様通りに[r]アーサー王を討ち滅ぼして、その治世を終わらせた。
+[k]
+
+＠エルキドゥ
+アーサー王の統治は知っている。
+[k]
+
+＠エルキドゥ
+全盛期の功績を分析する限り、[r]困難極まりない、不可能に近い難題だと推察したよ。
+[k]
+
+＠エルキドゥ
+だからこそ、だ。
+[k]
+
+＠エルキドゥ
+その困難から目を背けずに、創造者の期待通りに、[r]役目を完全に[#熟:こな]しきった君にこそ聞いておきたい。
+[k]
+
+＠エルキドゥ
+[#その為だけに生み出された君は]、[r][#それで救われたのかい]？
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+
+＠モードレッド
+…………。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠エルキドゥ
+父親であるアーサー王の国を滅ぼした瞬間、[r]感情や理性に何か変化はあったのかな？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+
+＠モードレッド
+………………………………………………。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠エルキドゥ
+もしも、願いを果たした後にも[r]生きながらえていたとしたら……。
+[k]
+
+＠エルキドゥ
+いや、つまりサーヴァントになった今……
+[k]
+
+＠エルキドゥ
+[#生まれて来た理由を終わらせてしまった君の中には]、[r][#何の意味が残っているのか]……それが聞きたいんだ。
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_5 1.0]
+[wait fade]
+
+[effectStop bit_talk_security]
+[wipeOff]
+
+[charaFadeout B 0.1]
+
+[scene 10200]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠マシュ
+……。
+[k]
+
+？1：なっ……なななななななな……
+？2：いつか、何かやらかすと思ってた……
+
+？！
+
+？1：なにやってるのあの緑の美人！？
+
+？2：あれが……ウルクのキレた斧……
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+ウルク関係者から『エルキドゥには時々英雄王ですら[r]ドン引きする一面があった』と聞いてはいたけれどね。
+[k]
+
+＠ダ・ヴィンチ
+まあ、あの相手との距離感の考え無さは[r]キミと似ているし、長所にも短所にもなる……。
+[k]
+
+＠ダ・ヴィンチ
+今回は、短所としての側面が強く出た感じかな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠マシュ
+冷静に分析をしている場合ではないのでは！？[r]早く止めないと取り返しのつかない事に……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+その通り。このままじゃシミュレーターから[r]出た後にも禍根を残すのは確実だし[line 2]
+[k]
+
+＠ダ・ヴィンチ
+さっきも言ったように、こっちに戻って来た後も[r]普通に戦闘を継続する可能性がある。
+[k]
+
+[charaFace C 5]
+
+＠ダ・ヴィンチ
+というわけで、シミュレーターの中に居る内に[r]なんとか説得して矛を収めさせないといけない。
+[k]
+
+？1：すぐに入って、直接止めてきます
+
+[charaFace C 0]
+
+＠ダ・ヴィンチ
+いいのかい？[r]外から通信で呼びかける事もできるけど……。
+[k]
+
+＠ダ・ヴィンチ
+まあ、顔を見せながら説得するという方が[r]キミの場合は成功率が高そうだ。
+[k]
+
+？2：報酬は原初の産毛でお願いします
+
+[charaFace C 0]
+
+＠ダ・ヴィンチ
+前にも言ったけど、こっちが欲しいぐらいだったよ。[r]私たちは最後まで資源の調達に苦労したからねえ。
+[k]
+
+＠ダ・ヴィンチ
+まあ、軽口を言える余裕があるなら大丈夫。[r]油断してるようにも見えないし。[twt 0.6][charaFace C 4]……してないよね？
+[k]
+
+？！
+
+[charaFace C 0]
+
+＠ダ・ヴィンチ
+じゃあ、よろしく頼むよ。色々あったけれど、最後には[r]遺恨なくカルデアを後にしてもらいたいからね。
+[k]
+
+＠ダ・ヴィンチ
+シミュレーターとはいえ、調整したばかりだから[r]くれぐれも精神の安定には気を付けてくれたまえ。
+[k]
+
+[messageOff]
+[se ad15]
+[wt 0.4]
+[se ad15]
+[wt 0.4]
+[se ade69]
+[wt 0.2]
+[se ad1]
+
+[wipeout moza 2.0 1]
+[bgm BGM_EVENT_48 2.0 0.5]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[scene 20900]
+[wt 2.0]
+
+[wipein moza 2.0 1]
+[bgm BGM_EVENT_48 2.0 1.0]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠フラン
+！[r]ウー、ウァ、ウゥ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠マシュ
+！[r]フランさんもこちらにいらしたんですね！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠フラン
+ウウ、ゥー。
+[k]
+
+？1：一緒に止めに行こう
+
+？！
+
+[messageOff]
+[se ad59]
+[wt 0.5]
+
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_48 1.0]
+[seStop ad59 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 0.5]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.5]
+[se ad474]
+[charaEffect B bit_talk_36]
+[wt 2.0]
+
+[fadeout white 1.0]
+[seStop ad474 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaEffectDestroy B bit_talk_36]
+[scene 10000]
+[wt 0.5]
+
+[fadein white 1.0]
+[se adm51]
+[seVolume adm51 0 0.7]
+[wait fade]
+
+[se ad477]
+[seVolume ad477 0 0.1]
+[seVolume ad477 0.5 1.0]
+[fowardEffect bit_talk_rarrow01be]
+[wt 1.0]
+[seStop ad477 1.0]
+[wt 1.0]
+
+[fadeout black 0.5]
+[wait fade]
+
+[scene 20900]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[se ad477]
+[seVolume ad477 0 0.1]
+[seVolume ad477 0.5 0.7]
+[fowardEffect bit_talk_rarrow01be 220,-650]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 -100,0]
+[wt 0.5]
+
+[seStop ad477 1.0]
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[charaMove A 256,0 0.2]
+[wt 0.2]
+[charaMove A 356,0 0.4]
+[wt 0.4]
+[seStop ad671]
+
+[shake 0.02 5 5 0.7]
+[fowardEffect bit_talk_impactlanding 256,0]
+[se ad226]
+[wt 0.3]
+[seStop ad226 1.0]
+
+[charaFace A 2]
+[se ad467]
+[seStop ad467 1.0]
+[fowardEffect bit_talk_14 356,0]
+[wt 0.5]
+
+[wt 1.0]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_EVENT_3 0.5 0.5]
+[wait wipe]
+
+[fowardEffectDestroy bit_talk_impactlanding]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_3 0.5 1.0]
+[wait wipe]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠マシュ
+いました！
+[k]
+
+＠マシュ
+ですが、あの激しい戦闘では、[r]先輩が呼びかけても気付くかどうか……。
+[k]
+
+？1：安全第一。遠くから大きな音を出して気を引こう
+
+＠マシュ
+そうですね、下手に間に入って斬られでもしたら、[r]シミュレーターとはいえ精神に多大な影響が出ます。
+[k]
+
+[charaFace D 12]
+
+＠マシュ
+戦闘の緊張状態を考えると、耳に届けるには攻撃の一種と[r]認識する程の大音量が必要になりそうですが……。
+[k]
+
+？2：派手に行こう。城を崩せば二人とも止まる筈！
+
+[charaFace D 6]
+
+＠マシュ
+先輩！？
+[k]
+
+＠マシュ
+いくらシミュレーションとはいえ、[r][#些:いささ]かアグレッシブに過ぎるのではないでしょうか……！？
+[k]
+
+[charaFace D 8]
+
+＠マシュ
+そういった手段に慣れてしまうと、いつかチェイテ城も[r]破壊してしまいそうな気がしますので……。
+[k]
+
+？！
+
+？1：仕方がない
+？2：それじゃあ、宝具をお願いしてもいいかな……？
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠フラン
+ウゥ、ァ！
+[k]
+
+[messageOff]
+[se ad61]
+[charaEffect E bit_talk_lightning_02g]
+[wt 1.5]
+
+[charaFace E 2]
+
+＠フラン
+[f large]『[#磔刑の雷樹:ブラステッド・ツリー]』！！
+[k]
+
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+[charaEffectStop E bit_talk_lightning_02g]
+[seStop ad61 0.3]
+
+[fowardEffect bit_talk_lightning_03g]
+[se ad63]
+[wt 0.2]
+[fowardEffect bit_talk_lightning_05g]
+[shake 0.02 3 3 1.0]
+[se ad65]
+[wt 0.5]
+[flashin once 0.1 0.5 FFFF80EF 00000000]
+[wt 1.0]
+
+[charaTalk off]
+[charaFace B 5]
+[charaFace A 5]
+[charaFadein B 0.1 -50,0]
+[charaFadein A 0.1 50,0]
+
+[flashin once 0.1 0.2 FFFF80EF 00000000]
+[se ad7]
+[charaMove B 0 0.2]
+[charaMove A 2 0.2]
+[wt 0.4]
+
+[bgmStop BGM_EVENT_3 0.5]
+
+＠エルキドゥ＆モードレッド
+　　　　　　　　　　　　　　 ！！　　　　　　　　　　 
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠モードレッド
+フラン！？[r]おまえ、外に出てろって……
+[k]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠モードレッド
+……。[r]……マスター！？[charaFace A 2]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠エルキドゥ
+おや、どうしたんだい、マスター。[r]ここは危ないよ？
+[k]
+
+？1：とりあえず、矛を収めて！
+？2：この喧嘩、自分に預からせて欲しい！
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠モードレッド
+……マスターにゃ、関係ねえ事だろ。[r]おまえがわざわざ身体張るような話じゃねえよ。
+[k]
+
+？1：エルキドゥは、多分挑発したわけじゃない
+？2：殺せば気が晴れる、って話でもないでしょ？
+
+？！
+
+[charaFace A 4]
+
+＠モードレッド
+……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠フラン
+ウゥー……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠モードレッド
+ハァ、わかったわかった。[r]次は宝具を当ててでも止めに来そうだしな。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.4]
+
+？1：エルキドゥは事情を説明して
+
+？2：エルキドゥは謝って
+
+？！
+
+[charaFace B 4]
+
+＠エルキドゥ
+…そうだね。
+[k]
+
+＠エルキドゥ
+理由を完全に把握したわけではないけれど、僕の発言が[r]君の[#赫怒:かくど]を呼び起こした、という状況は理解した。
+[k]
+
+＠エルキドゥ
+君の事を軽んじての発言ではない、と信じて欲しい。[r]その上で、誤解をさせた事は謝罪しよう。すまなかった。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠モードレッド
+……。
+[k]
+
+＠モードレッド
+…………。
+[k]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+＠モードレッド
+……………………[line 8]。
+[k]
+
+？1：モードレッド……
+
+？！
+
+[charaFace A 4]
+
+＠モードレッド
+チッ……、わかったよ。
+[k]
+
+[charaFace A 0]
+
+＠モードレッド
+そんな目で見んなよ、マスター。[bgm BGM_EVENT_2 0.1][r]どのみち一暴れして、ちったぁ気が晴れた所だ。
+[k]
+
+＠モードレッド
+この生モヤシも、[r]一応はおまえのサーヴァントだからな。
+[k]
+
+＠モードレッド
+確かにオレの[#臓腑:はらわた]を煮えたぎらせやがったが、[r]侮辱の意味合いが無いなら軽蔑に値する問いじゃあねえ。
+[k]
+
+＠モードレッド
+マスターがこいつの言葉を保証するってんなら、[r]その意図は無かったって信じてやるさ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠エルキドゥ
+そうだね。僕が侮蔑の意図を向ける相手がいるとすれば、[r]イシュタルだけだと断言できる。
+[k]
+
+＠エルキドゥ
+たとえ君がこの世全ての悪を煮詰めたような[r]存在であったとしても、僕はそれを尊重しよう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠モードレッド
+いちいち引っかかる物言いしやがるな、こいつ……。[r][#慇懃無礼:いんぎんぶれい]なケイかっつーの。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+
+＠マシュ
+良かった……[r]ありがとうございます、モードレッドさん。
+[k]
+
+[charaFace D 0]
+
+＠マシュ
+ですが、何故エルキドゥさんは応戦していたのですか？[r]誤解なら護りに徹するなり逃げるなりできたのでは？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠エルキドゥ
+ああ、それは簡単だよ。[r]相手の怒りと敵意が本物であると感じたからさ。
+[k]
+
+＠エルキドゥ
+相手が何に怒りを覚えたのか、[r]どのような殺意をこちらに向けているのか。
+[k]
+
+＠エルキドゥ
+戦いを受けて立って肌で感じる事で、[r]より詳細に相手を理解する事ができる。
+[k]
+
+？1：そんな理由で殺し合いに応じないで……
+
+＠エルキドゥ
+こちらからは殺意を向けていないよ。[r]性能を競い合う事に意味を見出す事は否定しないけれど。
+[k]
+
+＠エルキドゥ
+互いの切れ味を比較する事で、理解できる事もある……。[r]ウルクで出会った人たちが教えてくれたんだ。
+[k]
+
+＠エルキドゥ
+ギルは知恵と力。シャムハトは慈愛。それにシドゥリも、[r]信仰というものの切れ味を見せてくれたしね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+？2：結構バトルジャンキーだよね、エルキドゥ
+
+[charaFace B 0]
+
+＠エルキドゥ
+[#戦闘中毒者:バトルジャンキー]……[r]という程ではないと思うけれど……。
+[k]
+
+[charaFace B 1]
+
+＠エルキドゥ
+確かにギルと三日三晩戦った時の高揚は、[r]英霊になった今でも回路に焼き付けられている。
+[k]
+
+＠エルキドゥ
+ギルの方も愉しそうだったよ。[r]いつかシミュレーターで再現してみるのもいいかもね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠マシュ
+流石にそこまで長いシミュレーターの使用は[r]許可がおりるかどうか……。
+[k]
+
+[charaFace D 0]
+
+？！
+
+＠マシュ
+とにかく、一旦シミュレーターの外に出ましょう。[r]ダ・ヴィンチちゃんに報告しなければ。
+[k]
+
+[charaFace D 13]
+
+＠マシュ
+食堂でパールさんがベリースムージーを[r]作っておられたので、それを飲みながらでも……。
+[k]
+
+[messageOff]
+[se ad15]
+[wt 0.4]
+[se ad15]
+[wt 0.4]
+[se ade69]
+[wt 0.2]
+[se ad1]
+
+[wipeout mozaFade 2.0 1]
+[bgm BGM_EVENT_2 2.0 0.5]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[scene 10200]
+[wt 2.0]
+
+[wipein mozaFade 2.0 1]
+[bgm BGM_EVENT_2 2.0 1.0]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+やあ、お疲れ様。[r]こちらでも状況は観測して把握している。
+[k]
+
+＠ダ・ヴィンチ
+早く食堂に行くといい。[r]みんな待ってるだろうからね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠マシュ
+（みんな……？）[twt 1.2][charaFace D 1][r]はい！　それでは先輩、皆さんと食堂に行きましょう。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+[wt 1.0]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 1.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+[wt 0.5]
+
+[se ad8]
+[wt 1.0]
+
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[scene 10313]
+[wt 0.5]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠マシュ
+え……？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+[se ad19]
+[wt 2.0]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠フラン
+ウゥー、アー！？
+[k]
+
+？1：なんでカルデアの中に魔獣が！？
+？2：下がって、マシュ！
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠エルキドゥ
+これは……。シュメルの……？[r]いや……僕が知っているものとは少し……。
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠モードレッド
+……はっ。[r]なんだか知らねぇが、丁度いい。
+[k]
+
+＠モードレッド
+まだ、完全にゃスッキリしてなかった所だからな。[r]テメエらをぶっ飛ばして[line 2]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.5]
+
+[se bac167]
+[fowardEffect bit_talk_kushizashi01]
+[wt 0.1]
+[fowardEffect bit_talk_13]
+
+[charaShake F 0.05 3 3 0.5]
+[seStop bac167 0.5]
+[wt 0.5]
+
+[se ad20]
+[charaSpecialEffect F enemyErasure 1 1.0]
+[wait charaSpecialEffect F]
+[seStop ad20 0.5]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠モードレッド
+オイ！　獲物取るんじゃねえよ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠エルキドゥ
+悪いね。[r]マスターを護る事を最優先事項に設定しているんだ。
+[k]
+
+＠エルキドゥ
+それに、怒るのは早いんじゃないかな。[r]君の獲物も、まだまだ充分にいるようだし。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaDepth F 3]
+[charaDepth G 2]
+[charaDepth H 1]
+
+[charaFace F 0]
+[charaFace G 0]
+[charaFace H 0]
+
+[charaFadein F 0.4 1]
+[wt 0.2]
+[charaFadein H 0.4 -300,0]
+[wt 0.2]
+[charaFadein G 0.4 300,0]
+[se ad19]
+[wt 2.0]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠モードレッド
+チッ。[r]確かにおまえも、マスターのサーヴァントらしいな。
+[k]
+
+[charaFace A 2]
+
+＠モードレッド
+なら、今は共闘してやる。[r]足手まといになるんじゃねえぞ、ランサー！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

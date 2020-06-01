@@ -1,0 +1,972 @@
+
+
+＄03-00-04-09-1-0
+
+
+
+[soundStopAll]
+[skip false]
+
+[charaSet A 1098167700 1 聖獣]
+[charaSet B 1098167400 1 男Ａ]
+[charaSet C 1098167410 1 男Ｂ]
+[charaSet D 1098167500 1 女]
+[charaSet E 98002000 1 フォウ]
+[charaSet F 1098124510 1 ダ・ヴィンチ]
+[charaSet G 1098123210 1 ゴルドルフ]
+[charaSet H 8001410 1 マシュ]
+[charaSet I 98115300 1 ホームズ]
+
+[charaSet J 98115000 1 エフェクト用]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad761]
+[seVolume ad761 0 0.6]
+[effect bit_talk_yuga_clock_05]
+[wt 2.3]
+[se ad756]
+[wt 3.7]
+
+[fadeout black 1.0]
+[seStop ad761 1.0]
+[seStop ad756 1.0]
+[wait fade]
+
+[effectStop bit_talk_yuga_clock_05]
+[effectDestroy bit_talk_yuga_clock_05]
+
+[wt 0.5]
+[skip true]
+
+[wipeFilter cinema 0.5 0]
+[scene 74900]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[se ade246]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+[wt 1.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad347]
+[seVolume ad347 0 0.2]
+[se ad585]
+[wt 1.0]
+[seStop ad347 1.0]
+[wt 1.0]
+[seStop ad585 1.0]
+
+[se ad32]
+[effect bit_talk_14]
+[wt 0.8]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFace B 2]
+[charaFadein D 0.1 -256,-50]
+[charaFadein B 0.1 256,-50]
+
+＠女
+くっ……きゃあっ！
+[k]
+
+＠男Ａ
+くそっ、聖獣どもめ！　すごい数だ……[r]こんな群れに行き当たっちまうなんて！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+[wt 0.5]
+[se bac210]
+[fowardEffect bit_talk_ichimon01ye]
+[charaShake A 0.05 3 3 0.2]
+[wt 0.5]
+[se ba6]
+[charaSpecialEffect A enemyErasure 1 0.7]
+[wt 1.0]
+[fowardEffectStop bit_talk_ichimon01ye]
+
+＠？？？
+運が悪かったな。やり過ごせればよかったが、[r]仕方あるまい。
+[k]
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFace C 2]
+[charaFadein B 0.1 256,-50]
+[charaFadein C 0.1 -256,-50]
+
+＠男Ａ
+……『　　　』様！
+[k]
+
+＠男Ｂ
+ご、ごめんなさい、俺、すぐ近くで、[r]怖くて、つい弓を……！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠？？？
+気にするな。武器を持ったばかりの新兵の心情、[r]忘れていた私にも責がある。
+[k]
+
+＠？？？
+技術と心構えの教練配分を見直すべきか……。
+[k]
+
+＠？？？
+ともあれ、これからの動きを指示する。[r]おまえたちは村へ戻れ。ここは私が食い止めよう。
+[k]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 0,-50]
+
+＠女
+し、しかし……！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+＠？？？
+村まで[#此奴:こやつ]らを導き招き入れるわけにはいかん。[r]それに[line 3]噂に聞く[#神将:ローカパーラ]なるもの。
+[k]
+
+＠？？？
+騒ぎを大きくすればするほど、[r][#其奴:そやつ]らに捕捉される可能性は高まるだろう。
+[k]
+
+＠？？？
+神の手足。凄まじい力を持った従僕。[r]見つかること自体が致命的だ。避けねばならない。
+[k]
+
+＠？？？
+私だけならそうなってもまだ耐えられるが、おまえたちが、[r]そして村自体が目に留まってしまえば最悪だ。
+[k]
+
+＠？？？
+だからおまえたちは一足先にディーヴァールへ向かえ。[r]せっかく集めた物資を忘れるなよ。
+[k]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-50]
+
+＠男
+ですが、さすがに一人では！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠？？？
+心配するな。この聖獣全てを倒す気はない。[r]やるのはただの時間稼ぎだ……持久戦には慣れている。
+[k]
+
+＠？？？
+それに、教えたはずだぞ。
+[k]
+
+＠？？？
+私は人ではない。[r][#一騎当千:いっきとうせん]の“人ならざるもの”。
+[k]
+
+＠？？？
+正しき神の助力によりこの地に現界した、[r]人理の影法師である[line 3]！！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_80 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[wipeOff]
+[wt 1.0]
+
+[charaSet B 1098127610 1 ペペロンチーノ]
+[charaSet C 23003001 1 ガネーシャ]
+[charaSet D 1019001 1 ラーマ]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+いつもの事だけど、もどかしいなー。[r]移動に使えない乗り物の存在意義って何だろうね？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠ゴルドルフ
+バカモノ、ボーダーが敵に見つかって[r]破壊されてしまえば全てが終わりだ。
+[k]
+
+＠ゴルドルフ
+我々だけは隠密性の維持を最優先にせねばならん。[r]ある程度の迷彩機能があるとはいえな！
+[k]
+
+[charaFace G 6]
+
+＠ゴルドルフ
+先の[#最後のユガ:カ　リ　・　ユ　ガ]期の終わりに奴らを迎えに行ったのは[r]緊急事態中の緊急事態。二度あっていいことではないぞ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+はいはい、言ってみただけだよー。[r]こればっかりはゴルドルフくんのほうが正論だ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠ホームズ
+おや。少し足を止めたほうがいい。[r]そのあたりの草むらにでも隠れられるかね。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[se ad13]
+[wt 0.05]
+[seStop ad13 0.1]
+[wt 0.1]
+[se ad13]
+[wt 0.05]
+[seStop ad13 0.1]
+
+＠マシュ
+はい。[#霊基外骨骼:オ　ル　テ　ナ　ウ　ス]も完全静音モードに切り替えます。[r]マスター、皆さん、お静かに……。
+[k]
+[bgm BGM_EVENT_77 1.0 0.2]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaMove E 0,-15 0.8]
+
+＠フォウ
+[f small]……フォーウー……。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaSet E 1098167700 1 聖獣2]
+
+[se ade255]
+
+[wt 1.0]
+[charaTalk off]
+[charaFace A 0]
+[charaFadein A 0.4 -200,0]
+[charaFadein E 0.4 200,0]
+
+[wt 1.0]
+[se ad527]
+[charaMove A -300,0 1.4]
+[charaMove E 100,0 1.4]
+[charaShake A 0.2 0 3 1.4]
+[charaShake E 0.2 0 3 1.4]
+[wt 1.0]
+[seStop ad527 1.0]
+[charaFadeout A 0.4]
+[charaFadeout E 0.4]
+[wt 1.0]
+[charaSet E 98002000 1 フォウ]
+
+
+？1：聖獣たちが……いっぱいだ
+？2：行進してるみたいだ
+？！
+
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠マシュ
+幸い、こちらには気付いていないようですね。[r]しばらく潜んでやり過ごしましょう。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠ペペロンチーノ
+見てるだけなら綺麗なものね。[r]神の遣いってみんなが言うのも頷けるわ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ガネーシャ
+カリがいないと、本当にただの動物と同じなんスかねぇ。[r]何食べて生きてるのやら。餌付けとかできないっスかね？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ペペロンチーノ
+…………。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_77 1.0 1.0]
+[wait fade]
+
+
+[wt 1.0]
+
+
+？1：行ってくれた……
+？！
+
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ラーマ
+よし、では再出発といこう。[r]目的の村まではもう少しのはずだ。
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1]
+[wait wipe]
+
+
+[charaFadeout D 0.1]
+[wt 1.0]
+
+
+[charaSet A 1039001 1 ラクシュミー]
+[charaSet G 1098167400 1 男]
+[charaSet I 1098167500 1 女]
+[imageSet F back75200 1]
+[charaScale F 1.5]
+
+[scene 75200]
+
+[wipein rightToLeft 1.0 1]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠フォウ
+フォウフォウ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠マシュ
+見えました。あそこのようですね。[r]無事に辿り着けてよかったです。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ガネーシャ
+へー、なんかカベがあって意識高そう。[r]レジスタンスの村っぽい感じっス。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ラーマ
+聞く限りではカリとも戦っているという話だったからな。[r]抵抗軍じみた門構え、むしろ納得だ。
+[k]
+
+[charaFace D 4]
+
+＠ラーマ
+……む？
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[charaFadein F 0.1 200,-200]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[charaDepth G 4]
+[charaDepth I 5]
+[charaDepth F 1]
+
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[charaTalk off]
+[se ad443]
+[se ad132]
+[wt 0.1]
+[se ad133]
+[charaFace G 2]
+[charaFace I 2]
+[charaFadein I 0.4 -206,0]
+[charaFadein G 0.4 306,0]
+[charaMove I -256,0 0.4]
+[charaMove G 256,0 0.4]
+[wt 1.0]
+[seStop ad443]
+[seStop ad132]
+[seStop ad133]
+[charaTalk on]
+
+＠男
+急げ、急げ！
+[k]
+
+＠女
+帰ってきたわ！　早く開けて！
+[k]
+
+[messageOff]
+[se ad538]
+[wt 1.5]
+[charaFadeout G 0.4]
+[charaFadeout I 0.4]
+[wt 1.0]
+[se ad546]
+[wt 1.0]
+
+[wipeout rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+[wt 0.5]
+[charaSet G 1098123210 1 ゴルドルフ]
+[charaSet I 98115300 1 ホームズ]
+
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+＠マシュ
+……なんでしょう？[r]走ってきた皆さんが、慌てて村の中に……？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ガネーシャ
+距離があったから、[r]こっちには気付いてくれなかったみたいっスね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ラーマ
+だが、見たか？　農具に毛が生えたようなものであろうが、[r]やつらは武装していたように見えた。
+[k]
+
+＠ラーマ
+噂どおり、ビーチュの町の人間とは何か違うようだ。[r]新しい情報を得られるかもしれん。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ペペロンチーノ
+そうね。行ってみましょう！
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+
+[charaFadein F 0.1 200,-200]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+
+
+[charaDepth D 3]
+[charaDepth H 4]
+[charaDepth B 5]
+[charaDepth G 2]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠ラーマ
+……しかし、門が開かんな。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[se ad310]
+[seVolume ad310 0 0.6]
+[wt 1.0]
+[seStop ad310]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ペペロンチーノ
+ノックしても反応ないわねぇ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad310]
+[wt 1.0]
+[seStop ad310]
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠ラーマ
+おーい、頼むから開けてくれんかー！
+[k]
+
+＠ラーマ
+余の訪れは、たいてい国を挙げて[r]歓迎されたものなのだぞー！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠マシュ
+少し中の様子をうかがってみますね？[r]ええと……。
+[k]
+
+[messageOff]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[cameraMove 1.0 50,10 1.2]
+[bgm BGM_EVENT_77 1.0 0.3]
+[wt 1.5]
+＠女の声
+なに、今の声！？　誰か来たの！？
+[k]
+
+＠男の声
+まさか……ああ、あああ！[r]駄目だ、駄目だったんだ！　バレた！
+[k]
+
+＠女の声
+どうするの、どうするのよ！？
+[k]
+
+＠男の声
+どうするったって……！
+[k]
+
+＠男の声
+俺たちだけじゃ絶対にどうにもならない。
+[k]
+
+＠男の声
+あの方が帰ってくるまで、[r]門を閉じたまま耐えるんだ！
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_77 1.0 1.0]
+[cameraHome 1.0]
+[wt 1.5]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠マシュ
+なんと言いますか、焦っておられる？[r]ような声しか聞こえませんね……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠ゴルドルフ
+ウーン。何だか嫌な予感がするなァ。[r]こういうときの私のカンは当たるんだ、すっごく。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ガネーシャ
+ヒトが中にいるのは確かなんスね。
+[k]
+
+＠ガネーシャ
+サーヴァントだったら、強引にこの壁をジャンプで[r]越えることくらいはできるっスけど。
+[k]
+
+＠ガネーシャ
+そうやって入っていいのかって問題が[line 3]
+[k]
+
+[bgmStop BGM_EVENT_77 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠？？？
+[line 3]そこで何をしている！
+[k]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠フォウ
+フォウ！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaPut J 1]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠ホームズ
+……サーヴァント反応だ。[r]さすがの引きだと言わせてもらおう、マスター。
+[k]
+
+[charaFace I 4]
+
+＠ホームズ
+ただ、それが当たりのチケットかどうかには[r]まだ議論の余地がありそうだがね。
+[k]
+
+[charaFace I 0]
+
+＠ホームズ
+横手から全速力で接近してくるぞ……警戒してくれ！
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[se ad444]
+[wt 1.5]
+[seStop ad444]
+[se ad7]
+[se ade283]
+[seVolume ade283 0 0.1]
+
+[wipeout rectangleStripUpToDown 0.5 1]
+[wt 0.3]
+[seVolume ade283 0 0.3]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaFadein F 0.1 200,-400]
+[wt 0.8]
+
+[seStop ade283 0.5]
+[wipein rectangleStripDownToUp 0.5 1]
+[wait wipe]
+[se ad223]
+[wt 2.0]
+
+[wipeout rectangleStripDownToUp 0.5 1]
+[wait wipe]
+
+[charaTalk H]
+[charaFace H 15]
+[charaFadein H 0.1 1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaFadein F 0.1 200,-200]
+[wt 0.1]
+
+[wipein rectangleStripUpToDown 0.5 1]
+[wait wipe]
+
+＠マシュ
+わたしたちを跳び越えるようにして[line 3][r]門の上に！？
+[k]
+
+[messageOff]
+[wt 0.5]
+[wipeout rectangleStripUpToDown 0.5 1]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaFadeout H 0.1]
+[charaFadein F 0.1 200,-400]
+[wt 0.1]
+
+[wipein rectangleStripDownToUp 0.5 1]
+[wait wipe]
+[wt 0.8]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+[wt 2.5]
+
+[wipeout rectangleStripDownToUp 0.7 1]
+[wait wipe]
+[charaFadeout A 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+[charaFadein F 0.1 200,-200]
+[wt 0.1]
+
+[wipein rectangleStripUpToDown 0.7 1]
+[wait wipe]
+
+
+＠マシュ
+今までに出会ったことのない、[r]新しいサーヴァントです！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠ペペロンチーノ
+知り合いだったら話は早かったのにね。[r]ザンネーン。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ガネーシャ
+知らない人に怒られるのは知り合いに怒られるのより[r]１００倍精神に来るので止めてほしいっス。
+[k]
+
+[charaFace C 0]
+
+＠ガネーシャ
+つまり向こうがメッチャ怒ってるっぽいから[r]なんとかしてねってコトっスよ？
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[charaFadeout C 0.1]
+
+[charaDepth A 10]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[charaFadein F 0.1 200,-400]
+[wt 0.1]
+
+[wipein rectangleStripDownToUp 0.5 1]
+[wait wipe]
+
+＠？？？
+その神気……くっ。気をつけていたつもりだったが、[r]ついに捕捉されてしまったか。
+[k]
+
+[charaFace A 2]
+
+＠？？？
+さてはおまえたちが、噂に聞く[#神将:ローカパーラ]。[r]偽りの神の従僕だな！
+[k]
+
+？1：！？　ご、誤解です！
+？！
+
+[charaFace A 5]
+
+＠ラーマ
+待て待て。余たちが[#神将:ローカパーラ]だと？[r]何の冗談だ。
+[k]
+
+＠？？？
+戯れ言を。このタイミングで現れたのだ、[r]偶然ではあるまい。
+[k]
+
+＠？？？
+それに……聞こえていたぞ。この防壁を乗り越えて[r]村に侵攻する算段をしていただろう！
+[k]
+
+＠ガネーシャ
+よくわかんないけど多分グーゼンっスよ！[r]壁を乗り越えるのも、やったらマズイよねって話で[line 3]
+[k]
+
+＠？？？
+[#潔:いさぎよ]さの欠片もない。
+[k]
+
+＠？？？
+ついに私の存在が……偽神の輪廻に抗する[r]この村の存在が知られたというのならば、
+[k]
+
+[messageOff]
+[charaFace A 4]
+[bgmStop BGM_EVENT_81 1.0]
+[wt 1.0]
+[charaFace A 2]
+[bgm BGM_EVENT_80 0.1]
+
+＠？？？
+もはや逃げも隠れもしない。戦うのみだ。
+[k]
+
+[charaFace A 5]
+
+＠？？？
+覚悟するがいい。[r]もう、私からは何も奪わせない。
+[k]
+
+[charaFace A 2]
+
+＠？？？
+たとえ神が相手であろうと[line 3][#今度こそ]。[r]私は、自らの居場所を守り抜いてみせる！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

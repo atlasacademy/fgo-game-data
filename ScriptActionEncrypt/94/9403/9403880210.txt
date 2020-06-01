@@ -1,0 +1,302 @@
+
+
+＄94-03-88-02-1-0
+
+[soundStopAll]
+
+[charaSet A 1007000 1 北条ガウェインホワイト]
+[charaSet B 1020000 1 北条ランスロットパープル]
+[charaSet C 1012000 1 北条ベディヴィエールグリーン]
+[charaSet D 2008000 1 北条トリスタンレッド]
+[charaSet E 1009001 1 北条モードレッドレッド]
+[charaSet F 98001000 1 家老マシュ]
+[charaSet G 3019001 1 北条アルトリアオルタ]
+[charaSet H 3038000 1 長尾景虎]
+[charaSet J 98115000 1 エフェクト用]
+
+[charaDepth A 5]
+[charaDepth B 4]
+[charaDepth C 3]
+[charaDepth D 2]
+[charaDepth E 1]
+
+[scene 20901]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_1 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠北条ガウェインホワイト
+太陽の武士、北条ガウェインホワイト！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠北条ランスロットパープル
+湖の武士、北条ランスロットパープル！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠北条ベディヴィエールグリーン
+銀腕の武士、ほ、北条ベディヴィエールグリーン！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠北条トリスタンレッド
+哀しみの武士、北条トリスタンレッド……。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+
+＠北条モードレッドレッド
+そしてオレが叛逆の武士、北条モードレッドレッド！
+[k]
+
+[charaFace E 2]
+
+＠北条モードレッドレッド
+っ[messageShake 0.05 4 4 0.4]て、レッドがかぶってんだろうが！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠北条ガウェインホワイト
+[line 3]五人揃って、我ら、
+[k]
+
+[messageOff]
+
+[charaTalk off]
+
+[charaFace B 2]
+[charaFace C 2]
+[charaFace D 4]
+[charaFace E 2]
+
+[charaFadein B 0.4 -180,0]
+[wt 0.2]
+[charaFadein C 0.4 200,0]
+[wt 0.2]
+[charaFadein D 0.4 -400,0]
+[wt 0.2]
+[charaFadein E 0.4 400,0]
+[wt 1.2]
+
+＠北条ガウェインホワイト
+『北条五色備えブリテンファイブ』！！
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_1 0.5]
+
+[charaEffect J bit_talk_fire_storm]
+[wt 0.1]
+[se bac33]
+[seStop bac33 0.7]
+[wt 0.7]
+
+[fowardEffect bit_talk_fire]
+
+[se bac33]
+[seStop bac33 0.7]
+[wt 0.7]
+[charaEffectDestroy J bit_talk_fire_storm]
+
+[wt 0.1]
+
+
+
+[backEffect bit_talk_explosion]
+[se bac37]
+
+[wt 1.0]
+[fowardEffectStop bit_talk_fire]
+[wt 1.5]
+
+[backEffectStop bit_talk_explosion]
+[backEffectDestroy bit_talk_explosion]
+[fowardEffectDestroy bit_talk_fire]
+
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠家老マシュ
+[#先輩:との]、戦国時代の北条家には[bgm BGM_EVENT_7 0.1][r]あのように五色でわけられた部隊が存在したようです。
+[k]
+
+？1：色が少し違うような
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠北条トリスタンレッド
+やはり一人はカレー好きで押すべきだったのでは……、[r]私は哀しい……。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？2：レッドが被ってる気がする
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠北条モードレッドレッド
+だろ？　おまえもそう思うよな！[r]よし、円卓[#評定:ひょうじょう]で白黒つけようぜ！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+？！
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+
+＠北条アルトリア・オルタ
+騒がしいぞ、北条五色備えブリテンファイブ……、
+[k]
+
+＠北条アルトリア・オルタ
+ほお……、上杉家にカルデア家か……。
+[k]
+
+[charaFace G 2]
+
+＠北条アルトリア・オルタ
+我が城、キャメロット小田原に攻め込んでくるとは[r]命知らずの蛮族どもめ、覚悟するがいい！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠長尾景虎
+それはこちらのセリフです！
+[k]
+
+＠長尾景虎
+この長尾景虎の面前で下馬せぬとは、[r]やはり北条は許し難し！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+＠北条アルトリア・オルタ
+いや、これは諸般の都合でだな。[r]私もたまには馬を降りたいとは思っているのだが……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠長尾景虎
+[#問答無用:もんどうむよう]！　そもそもランサーなのに馬常駐とは[r]羨まし……、じゃない、ズルっぽいです！
+[k]
+
+？1：景虎さんもランサーなのに剣とかいろいろ……
+
+？2：宝具で馬呼んでますよね？
+
+？！
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaFace H 14]
+
+＠長尾景虎
+あーあー！　聞こえないです！
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠長尾景虎
+では関東管領、長尾景虎が参る！　いざ尋常に勝負！
+[k]
+
+
+[messageOff]
+
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

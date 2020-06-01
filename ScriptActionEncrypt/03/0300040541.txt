@@ -1,0 +1,246 @@
+
+＄03-00-04-05-4-1
+
+[soundStopAll]
+
+[charaSet A 8001400 1 マシュ]
+[charaSet B 1019001 1 ラーマ]
+[charaSet C 1098176200 1 アシュヴァッターマン]
+[charaSet D 98115300 1 ホームズ]
+[charaSet E 2034000 1 ウィリアム・テル]
+[charaSet F 1098166400 1 哪吒]
+[charaSet G 1098176100 1 アスクレピオス]
+[charaSet I 5009000 1 エフェクト用ダミー１]
+[charaSet J 5009000 1 エフェクト用ダミー２]
+
+[scene 10000]
+
+[bgm BGM_EVENT_24 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+
+[charaPut I 1]
+[charaEffect I bit_talk_kengekiall02]
+[charaPut J -70,50]
+[charaScale J 1.2]
+[charaEffect J bit_talk_14]
+[se ad32]
+[wt 0.3]
+[charaScale J 1.1]
+[charaPut J 60,10]
+[charaEffect J bit_talk_14]
+[se ad32]
+[wt 0.2]
+[charaScale J 1.4]
+[charaPut J -50,-20]
+[charaEffect J bit_talk_14]
+[se ad32]
+[wt 0.1]
+[charaScale J 1.0]
+
+[fadeout black 0.1]
+[wait fade]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0 1]
+[scene 75007]
+[fadein black 0.3]
+
+[wt 0.2]
+
+[charaEffect I bit_talk_h_slash01 0,0 F]
+[wt 0.4]
+[cueSe Battle bac526]
+[cueSeVolume bac526 0 0.4]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaFadeout C 0]
+[charaPut I 1200,1200]
+[charaEffectStop I bit_talk_h_slash01]
+
+[charaTalk A]
+[charaFace A 15]
+[charaScale A 1.1]
+[charaFadein A 0.1 1]
+[fowardEffect bit_talk_13]
+[se ad32]
+[charaShake A 0.08 6 2 0.3]
+[wt 0.2]
+[charaMoveScale A 1.0 0.2]
+[cueSe Servants_103200 bac512]
+[wt 0.1]
+[cueSeStop bac512 0.8]
+[wt 0.4]
+[charaFace A 15]
+
+＠マシュ
+っ…………！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠ラーマ
+なるほど、カルナと同じ師のもとで学んだという[#言:げん]に[r]偽りはないと見える！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠アシュヴァッターマン
+ああん！？[r]苛々するが、小僧、おまえもなかなかやるじゃねぇか！
+[k]
+
+[charaFace C 4]
+
+＠アシュヴァッターマン
+つーか誰かと[#雰囲気:に お い]が似てやがるな。[r]パラシュラーマ……いや、クリシュナ……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ラーマ
+さもありなん、それらの者も余と同じヴィシュヌの化身で[r]あるという。余はコサラの王、ラーマだ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠アシュヴァッターマン
+はっ。そうかよ。だが[line 3]
+[k]
+
+＠アシュヴァッターマン
+[#神の化身である程度で偉ぶると後悔するぜ]。[r]この[#異聞帯:ロストベルト]じゃあな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+っ、それはどういう[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_24 1.0]
+
+[charaPut I 1]
+[charaEffect I bit_talk_10_LowLevel]
+[se ad13]
+[wt 0.2]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠ホームズ
+待った、また何かが町の外から来るぞ。[r]カリでも聖獣でもない反応が[line 3]複数だ！
+[k]
+
+＠ホームズ
+これは…………サーヴァント！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[se ad60]
+
+[wt 1.2]
+[seStop ad60 0.2]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.6 1]
+[wt 0.8]
+[charaFace E 1]
+[bgm BGM_EVENT_90 0.1]
+
+＠E：？？？
+[line 3]へっへ。[r]どうやら時間切れらしいぞぅ、アシュヴァッターマン。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[cueSe Servants_701300 bac969]
+[cueSeVolume bac969 0 0.4]
+[wt 0.7]
+[cueSeStop bac969 1.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.6 -200,0]
+[wt 0.8]
+
+＠哪吒
+非推奨／遊戯の続行。[r]無意味だ。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[se ad95]
+[wt 1.0]
+[seStop ad95 0.2]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.6 200,0]
+[wt 0.8]
+
+＠G：？？？
+同意しよう、実に無意味だ。僕らがここに来ることもな。[r]まったく、このお供に何の意味があるんだ？
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 1.0]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFadein F 0.1 -320,0]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaFace G 0]
+[charaFadein G 0.1 320,0]
+[wt 2.0]
+
+？1：[line 6]！！！
+？！
+
+[wt 1.2]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_90 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

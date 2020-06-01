@@ -1,0 +1,489 @@
+
+＄91-60-36-01-2-1
+
+[soundStopAll]
+
+[charaSet A 6036000 1 李書文]
+[charaSet B 3014001 1 胤舜]
+[charaSet C 1098144010 1 男]
+[charaSet D 98018100 1 首領]
+[charaSet E 98018100 1 盗賊1]
+[charaSet F 98018100 1 盗賊2]
+[charaSet G 98018100 1 盗賊3]
+[charaSet H 98002000 1 ダミーエフェクト(懐剣)]
+
+
+[charaScale H 0.3]
+[charaRoll H -25 0,0]
+
+[charaDepth G 1]
+[charaDepth F 5]
+[charaDepth E 9]
+
+[wipeFilter cinema 0.5 0]
+[scene 47001]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein E 0.1 -236,-50]
+[charaFadein F 0.1 236,-50]
+[charaFadein G 0.1 0,-50]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se bac266]
+[charaEffect E bit_talk_Slash_red_01_L 0,-50 H]
+[wt 0.15]
+[charaShake E 0.04 4 4 0.4]
+[charaFadeout E 0.4]
+
+[charaTalk F]
+
+[se bac266]
+[charaEffect F bit_talk_Slash_red_01_L 0,-50 V]
+[wt 0.15]
+[charaShake F 0.04 4 4 0.4]
+[charaFadeout F 0.4]
+
+[charaTalk G]
+[wt 0.3]
+
+[se bac10]
+[charaEffect G bit_talk_13]
+[charaShake G 0.05 5 0 0.7]
+[wt 1.0]
+
+＠G：盗賊
+化物……か……！
+[k]
+
+[bgmStop BGM_EVENT_3 0.9]
+[messageOff]
+[se ad240]
+[fowardEffect bit_talk_35]
+[wt 0.9]
+
+[charaMove G 0,-100 0.4]
+[wait charaMove G]
+[se ad144]
+[charaFadeout G 0.4]
+[wt 1.4]
+
+[se ad452]
+[seVolume ad452 0 0.6]
+[seStop ad452 2.0]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace C 0]
+[charaFadein C 0.7 0,-50]
+[wt 1.0]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠
+[charaTalk B]
+屍が山積みされています。[r]男の体にも、傷がついてない箇所などなく。
+[k]
+
+＠
+[charaTalk B]
+されど、男の歩みにも拳にも[r]些細なことでした。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+[charaShake D 0.05 3 3 0.8]
+
+＠首領
+ひ、ひいい。[r]ひいいいいい！　助けて、助けてくれ！
+[k]
+
+＠首領
+何でもする、アンタに仕える！[r]もう二度と人殺しなんて……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠男
+改心が遅かったな。[r]これは、貴様が殺した村人からの返礼だ。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+[wt 0.2]
+
+[se bac95]
+[charaEffect H bit_talk_Slash_red_02 390,-640]
+[wt 0.2]
+[charaShake D 0.05 3 3 0.4]
+[wt 1.1]
+
+[charaMove D 0,-100 0.4]
+[wait charaMove D]
+[se ad144]
+[charaFadeout D 0.4]
+[wt 1.7]
+
+[se ad328]
+[wt 1.1]
+
+[charaTalk B]
+[charaFace C 0]
+[charaFadein C 0.4 0,-50]
+[wt 0.4]
+
+＠
+[charaTalk B]
+血が、懐剣を染め上げていきます。[r]男は一切の容赦なく、盗賊たちを退治しました。
+[k]
+
+＠男
+……では懐剣を返すとするか。
+[k]
+
+＠男
+しかし[#血塗:ちまみ]れではな。[r]水でも浴びてからとするか……。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_5 1.0]
+[wait fade]
+
+[scene 10000]
+[charaFadeout C 0.1]
+[wt 2.0]
+
+[fadein black 0.1]
+[wait fade]
+
+＠
+[charaTalk B]
+男は暗雲立ち籠める山を[#降:くだ]っていきます。[r]先ほど向かった、あの少年の待つ村へと。
+[k]
+
+＠
+[charaTalk B]ああ、しかし[line 3]
+[k]
+
+＠男
+これは……。
+[k]
+
+[messageOff]
+[fadeout black 0.1]
+[se ad510]
+[seVolume ad510 0 0]
+[wait fade]
+
+[scene 65501]
+[wt 0.1]
+
+[seVolume ad510 3.0 1.0]
+[bgm BGM_EVENT_11 0.1]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.4]
+
+＠
+そこには、誰もいませんでした。[r]人の気配はなく、そもそも住んでいた風でもなく。
+[k]
+
+＠
+放棄されて、数年が経過しているであろう[r]様子が見て取れました。
+[k]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠男
+……そうか。[r][#因果応報:いんがおうほう]は即決であるべきだが。
+[k]
+
+＠男
+最初から、間に合ってはいなかったとは。[r]つくづく役に立たぬ男よ。
+[k]
+
+＠
+[charaTalk B]
+懐から取り出した懐剣は、[r]既に朽ちかけていました。
+[k]
+
+＠男
+……さて。[r]いったい、誰の無念を晴らしたものか。
+[k]
+
+＠男
+出来得るならば、[r]おまえが仇を取りたかったろう。
+[k]
+
+＠
+[charaTalk B][line 3][#蕭々:しょうしょう]たる風の音。[r]誰もいない、薄ら寂しい村を男は後にします。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[se ad60]
+[seVolume ad60 0 0.5]
+[seStop ad510 1.5]
+[seStop ad60 2.2]
+[bgmStop BGM_EVENT_11 1.5]
+[wait fade]
+
+[wipeOff]
+[charaFadeout C 0.1]
+[scene 37300]
+[wt 1.8]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.2]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠李書文
+……あの時の儂には確かに力があった。[r]だが、解決はできなかった。
+[k]
+
+＠李書文
+いかな力を以てしても、[r]過去の事象を好転させはしない。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠胤舜
+ふーむ。[r]しかし、それはどうなるものでもない。
+[k]
+
+＠胤舜
+時に人は無為の死を迎える。[r]全ての死に意味はなく、全ての生に理由もない。
+[k]
+
+[charaFace B 4]
+
+＠胤舜
+彼らを悼むことは必要でしょう。[r]しかし救おうと願うことは[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠李書文
+[#呵々:かか]。百も承知だ。
+[k]
+
+＠李書文
+儂とて仏にはほど遠い身。[r]全ての衆生を救おうなどとは考えておらぬよ。
+[k]
+
+[charaFace A 0]
+
+＠李書文
+ただ[line 3]
+[k]
+
+＠李書文
+教えられるものはある。[r]伝えられるものはある。
+[k]
+
+[charaFace A 4]
+
+＠李書文
+儂に足らなかったのは、[r]その心の余裕というやつよ。
+[k]
+
+＠李書文
+正義にはなれず、[r]悪にもこだわれず。
+[k]
+
+[charaFace A 0]
+
+＠李書文
+ならば、せめて。[r]残して伝えるべきだと思うてな。
+[k]
+
+＠李書文
+凶拳とて何かを守ることもある。[r]理不尽を打破する役に立つこともある。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠胤舜
+[line 3]しかし書文殿。[r]それは過去の己との決別に他ならない。
+[k]
+
+＠胤舜
+後悔など、なかったのですか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠李書文
+後悔？[r]あったとも。
+[k]
+
+[charaFace A 4]
+
+＠李書文
+日々衰えゆく自分。[r]日々[#なまくら]になってゆく拳。
+[k]
+
+＠李書文
+そういったものに、[r]後悔を抱かぬはずはない。
+[k]
+
+[charaFace A 1]
+
+＠李書文
+しかし、それも全て帳消しになったとも。[r][#儂がここにいることでな]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠胤舜
+……ああ、なるほど。[r]そうかそうか、それは確かに！
+[k]
+
+[charaFace B 3]
+
+＠胤舜
+うむ。そうさな。[r]今更ながら拙僧もそうあるべきだったかな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠李書文
+さて、茶飲み話もここまで。[r]ではマスター。そろそろ出立とするか。
+[k]
+
+？1：うん、行こう！
+
+＠李書文
+応ともさ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠胤舜
+うむ！[r]良い話を聞かせてもらった。
+[k]
+
+[charaFace B 1]
+＠胤舜
+お陰でこの槍も振るい甲斐があるというもの！
+[k]
+
+[messageOff]
+[se ad452]
+[charaFadeout B 0.7]
+[wt 1.6]
+
+？2：準備はできた？
+
+[charaFace A 1]
+＠李書文
+無論。[r]この拳、お主のために振るうとしよう。
+[k]
+
+[messageOff]
+[se ad452]
+[charaFadeout A 0.7]
+[wt 1.6]
+
+？！
+
+[seStop ad452 1.4]
+[wt 1.4]
+
+＠
+[line 3]日々衰えていく肉体。[r][line 3]日々鈍っていく拳。
+[k]
+
+＠
+若い自分が、せせら笑っている[r]ようにも思えます。
+[k]
+
+＠
+“なんて無為な日々を過ごしたのだ”と。
+[k]
+
+＠
+けれど、老いた男はその言葉をなお笑い飛ばします。
+[k]
+
+＠
+凶拳は最早、[r]己のためだけにある武器ではなく。
+[k]
+
+＠
+後の道を歩む者への、[r]大切な武器となったのですから[line 3]
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

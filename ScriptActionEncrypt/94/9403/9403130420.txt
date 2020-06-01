@@ -1,0 +1,507 @@
+
+
+
+
+＄94-03-13-04-2-0
+
+
+[soundStopAll]
+[charaSet A 1098159700 1 ケツァルマスク]
+[charaSet B 99502600 1 マシュ]
+[charaSet C 98111500 1 通信用ノイズ]
+[charaSet D 3036000 1 ブラダマンテ]
+[charaSet E 98002000 1 フォウ]
+[charaSet F 7027001 1 ペンテシレイア]
+[charaSet G 3016001 1 ヘクトール]
+[charaSet H 1098159800 1 ブラック・ケツァルマスク]
+
+
+
+[scene 68900]
+
+[charaPut C 0,-2000]
+[charaEffect C bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ade230]
+[seVolume ade230 0 0.5]
+[wt 0.1]
+[se ade229]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[charaShake A 0.1 -5 2 2.0]
+[charaMove A 0 2.0]
+[wt 1.0]
+[charaShake A 0.1 5 2 3.0]
+[charaMove A 2 3.0]
+[wt 3.0]
+[charaShake A 0.1 -5 2 1.5]
+[charaMove A 1 1.5]
+
+[wt 1.8]
+
+[seStop ade229 0.3]
+[seStop ade230 0.8]
+[charaFadeout A 0.4]
+[wt 0.8]
+
+[bgm BGM_EVENT_3 0.5]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠ヘクトール
+最初は戸惑ったが、もう分かってるぜ。
+[k]
+
+＠ヘクトール
+そいつはアンタが敵の行動をさぐるときに使うサンバ・ラン。[r]今までの流れで研究済みだ！
+[k]
+
+[messageOff]
+[se ad73]
+[charaMove G 100,0 0.5]
+[charaFadeout G 0.1]
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[wt 0.3]
+
+[se bac10]
+[fowardEffect bit_talk_14]
+[charaShake A 0.05 4 4 0.5]
+[wt 0.3]
+[charaFace A 4]
+[wt 1.0]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+[charaFace F 2]
+＠F：[servantName 702700:サンタ狙いのバーサーカー:ペンテシレイア]
+[image berserker_language_1][line 3]！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[wt 0.3]
+
+[se ad171]
+[charaMove D 250,0 0.25]
+[charaFadeout D 0.25]
+[wt 0.35]
+[cueSe Battle bac234]
+[shake 0.05 1 4 1.0]
+[effect bit_talk_impactlanding]
+[wt 2.5]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠ブラダマンテ
+くっ、なんという力強さ！[r]まるで荒ぶる獣のような……。
+[k]
+
+[charaFace D 4]
+＠ブラダマンテ
+……荒ぶる獣……？
+[k]
+
+[charaFace D 1]
+＠ブラダマンテ
+ハッ。わかりました、コーチ！[r]今こそ覚えたてのあの技を使うときですね！
+[k]
+
+[charaFace D 0]
+＠ブラダマンテ
+マルタ様の闘法の１つ、『荒ぶる怪物の鎮め方』。
+[k]
+
+＠ブラダマンテ
+まず構えて。次に、[#敬虔:けいけん]なる祈りを込めて。[r]ただ真摯に[line 3]
+[k]
+
+[charaFace D 2]
+＠ブラダマンテ
+打つべし！　打つべし！[r][#聖:セイッ]！！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[wt 0.5]
+
+[se bac10]
+[fowardEffect bit_talk_14]
+[charaShake F 0.05 4 4 0.5]
+[wt 0.7]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠F：[servantName 702700:サンタ狙いのバーサーカー:ペンテシレイア]
+く……急に、攻撃から迷いが抜けた……！？
+[k]
+
+[turnPageOff]
+＠F：[servantName 702700:サンタ狙いのバーサーカー:ペンテシレイア]
+戦士としての魂の在り方を一瞬で固める[#定義:ルーティン]。[r]我らの『咆哮』のようなものを、貴様も、持っていたか……！
+[k]
+
+[messageOff]
+[charaFace F 4]
+[wt 0.5]
+
+[charaMove F 0,-50 0.4]
+[charaFadeout F 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.2]
+
+[turnPageOn]
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠ヘクトール
+おいおい、女王サンよ、[r]まさかやられちまったのか！？
+[k]
+
+[charaFace G 4]
+＠ヘクトール
+やっぱこの奥の手として用意しといた秘密の香水、[r]『絶対暴走☆ギリシャ男のかほり』で、
+[k]
+
+＠ヘクトール
+もう一段階派手にバーサークしといてもらったほうが[r]よかったかねぇ……？
+[k]
+
+[charaFace G 5]
+＠ヘクトール
+いやまあ、そん時は俺が一番にブッ倒されてた可能性も[r]なきにしもあらず。やっぱリスク管理的にダメだな、ダメ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠ケツァルマスク
+アナタたちのチームは、役割分担がはっきりしすぎてマース！[r]攻めは彼女が。守りはアナタが。
+[k]
+
+[charaFace A 2]
+＠ケツァルマスク
+ですが[line 3]彼女が倒れた以上。[r]ルチャは守りだけで勝てるほど甘くないのデース！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+[wt 0.5]
+
+[se bac11]
+[fowardEffect bit_talk_13]
+[charaShake G 0.05 4 4 0.5]
+[wt 0.2]
+
+[charaFace G 4]
+
+[wt 0.7]
+
+[charaMove G 0,-50 0.4]
+[charaFadeout G 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.2]
+
+[se ade175]
+[wt 2.0]
+[seStop ade175]
+
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_3 1.0]
+[wait fade]
+
+[scene 68800]
+
+[wt 1.5]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠ヘクトール
+いててて……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+＠ブラダマンテ
+ヘクトール様、一応お聞きしますが、[r]ロジェロが現界しているかどうかなどはお分かりに……
+[k]
+
+[charaFace D 4]
+＠ブラダマンテ
+ならない？　そうですか、残念です……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ケツァルマスク
+フゥ。なかなかの強敵でしたが、[r]私たちのチームもどんどん強くなってマース！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠フォウ
+フォウフォーウ！
+[k]
+
+？1：この調子でどんどん勝っていきましょう！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaPut C 1]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠マシュ
+こういう形式の試合には慣れていませんので、[r]見ているほうはハラハラしっぱなしです……。
+[k]
+
+[charaFadeout B 0.1]
+[charaPut C 0,-2000]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠ケツァルマスク
+それはハラハラではなく、華麗な技の応酬に[r]エキサイティングしてると言うべきデスね～！
+[k]
+
+＠ケツァルマスク
+いつでも興奮がムーチョムーチョ、それがルチャリブレ！[r]もちろん勝利後に興奮するのも当然ネ～！
+[k]
+
+＠ケツァルマスク
+さあ、勝利のサンバを踊りながら派手に[r]凱旋しちゃいましょう！　オーレ！
+[k]
+
+？2：気を抜かないようにしないとダメですよ
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠ブラダマンテ
+そうでしたね。締めるところは締めないと。[r]助言、感謝します。
+[k]
+
+[charaFace D 4]
+＠ブラダマンテ
+……はあ。[r]十二勇士にも、もっとそういう人材がいたらなぁ……。
+[k]
+
+？！
+
+[wt 0.1]
+
+[messageOff]
+[fadeout black 1.5]
+
+[bgmStop BGM_EVENT_2 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[imageSet I back10000 1]
+
+[scene 69101]
+[charaFadein I 0.1 0,0]
+[charaScale I 1.1]
+[charaFadeTime I 0.1 0.6]
+
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.8]
+
+[se ade49]
+
+[scene 69100 0.5]
+
+[wt 1.5]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.4 1]
+[wt 0.4]
+＠ブラック・ケツァルマスク
+勝利したか。そうこなくては面白くない。
+[k]
+
+[charaFace H 5]
+＠ブラック・ケツァルマスク
+これは闘争の祭りだ。故にこそ私は願おう。[r]苦闘を、血闘を、激闘を、死闘を！
+[k]
+
+[charaFace H 2]
+
+＠ブラック・ケツァルマスク
+肉の音、苦痛の声、戦意の咆哮！[r]この地を闘争のうねりで覆い尽くせ！
+[k]
+
+[charaFace H 5]
+＠ブラック・ケツァルマスク
+その先にこそ、永遠にクリスマスを続けられるほどの[r]力を持った、真のサンタクロースが生まれるのだ……。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFace H 6]
+＠ブラック・ケツァルマスク
+我が半身の次の相手は……フフ、奴らか。[r]私が特に強者と認めた４チームのうちの一つ。
+[k]
+
+＠ブラック・ケツァルマスク
+どちらが勝とうが別に良い。闘争さえあれば。[r]このトーナメントというシステムは秀逸だ。
+[k]
+
+＠ブラック・ケツァルマスク
+結果がさらなる過程を生む。敗者の想念が自然、[r][#紙縒:こよ]りのように[#縒:よ]り合わされ闘争を導いていく[line 3]
+[k]
+
+＠ブラック・ケツァルマスク
+フフ。[#もう一人の私:ケツァル・コアトル]よ。[r]奴らは強いぞ。
+[k]
+
+＠ブラック・ケツァルマスク
+言わば四天王の一角。[r]“増大”を象徴するが如きチームだ。
+[k]
+
+＠ブラック・ケツァルマスク
+貴様らがどのような闘争を見せてくれるのか、[r]楽しみにしておこう……。
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_48 1.5]
+[wait fade]
+[charaFadeout I 0.1]
+[charaScale I 1.0]
+[charaFadeout H 0.1]
+[wt 0.5]
+
+[scene 30450]
+[wt 1.5]
+[fadein black 1.5]
+[wait fade]
+
+[charaSet F 1098160200 1 ミステリアン・サーヴァント１号]
+[charaSet G 1098160200 1 ミステリアン・サーヴァント２号]
+
+[charaScale G 0.9]
+
+[bgm BGM_EVENT_5 0.1]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 -256,-60]
+
+[charaFace F 0]
+[charaFadein F 0.4 2]
+[wt 0.2]
+＠ミステリアン・サーヴァント２号
+これからどうするー？[r]明日の練習、する？
+[k]
+
+＠ミステリアン・サーヴァント１号
+ハハ、我々のコンビネーションは既に完成している。[r]無駄な体力を使うのは[#止:や]めよう。
+[k]
+
+＠ミステリアン・サーヴァント１号
+それより、次の試合での印象的な登場方法でも[r]考えておいたほうがよほど有意義だぞ！
+[k]
+
+＠ミステリアン・サーヴァント１号
+ディーシッシッシッシッシ！（笑い声）
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_5 2.0]
+[wait fade]
+[soundStopAll]
+[end]
+

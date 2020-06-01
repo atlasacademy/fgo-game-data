@@ -1,0 +1,322 @@
+
+
+＄91-10-36-01-3-1
+
+[soundStopAll]
+
+[charaSet A 1036001 1 蘭陵王]
+[charaSet B 1098155400 1 黒髭]
+[charaSet C 1098160000 1 陳宮]
+[charaSet D 11003001 1 ジャンヌ・オルタ]
+[charaSet E 2023001 1 モリアーティ]
+[charaSet F 7023001 1 源頼光]
+[charaSet G 6021001 1 酒呑童子]
+[charaSet H 7034001 1 サロメ]
+
+[charaSet I 98002000 1 ダミーエフェクト１]
+[imageSet J back10001 1]
+[charaScale J 1.01]
+
+[charaDepth A 1]
+[charaDepth B 5]
+
+
+[branchQuestNotClear lblNotClear1 3000303]
+[flag IsClear true]
+[branch lblConf1]
+[label lblNotClear1]
+[flag IsClear false]
+[label lblConf1]
+
+
+[scene 21230]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.4]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠陳宮
+訊かれる前に私から返答しておきましょう。[bgm BGM_EVENT_27 0.1][r]必要な犠牲だったのです。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠蘭陵王
+そうですか……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+[charaShake B 0.04 2 2 0]
+
+＠黒髭
+死ぬかと思った！！[r]ひい、ひい、ひい……。
+[k]
+
+＠黒髭
+拙者のガッツは疲労が激しい……。
+[k]
+
+[messageOff]
+[charaShakeStop B]
+[wt 0.1]
+
+[charaFace A 0]
+[charaFadein A 0.4 -120,0]
+[charaMove B 0,-60 0.4]
+[charaMove A -70,0 0.4]
+[wt 0.2]
+
+[se ad144]
+[seVolume ad144 0 0.6]
+[wt 0.2]
+
+[fadeout white 1.0]
+[bgmStop BGM_EVENT_27 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[scene 10001]
+
+[fadein white 0.8]
+[wait fade]
+
+＠蘭陵王
+おっと。[r]大丈夫ですか、黒髭殿。
+[k]
+
+＠黒髭
+……。[r]……。
+[k]
+
+[messageOff]
+[fadeout white 0.8]
+[bgm BGM_EVENT_45 0.8]
+[wait fade]
+
+[scene 21230]
+[pictureFrame cut063_cinema]
+
+[charaPut J 0,-200]
+[charaFadeTime J 0 0.5]
+[charaEffect I bit_talk_yume01]
+[wt 0.4]
+
+[charaTalk off]
+[charaFace A 0]
+[charaFace B 9]
+[charaRoll B -20]
+[charaScale A 1.4]
+[charaScale B 1.4]
+[charaFadein A 0.1 -40,-50]
+[charaFadein B 0.1 320,-140]
+
+[fadein white 1.4]
+[wait fade]
+[wt 0.6]
+
+
+？1：このＢＧＭ何！？
+？！
+
+＠黒髭
+やだ……今度はアタイをイベントＣＧに[r]する気ね……。
+[k]
+
+[charaFace B 7]
+
+＠黒髭
+ときめき回路が廻っちゃう……。[r]大回転してアタイ黒髭廻天迷宮になっちゃう……。
+[k]
+
+[charaFace A 4]
+＠蘭陵王
+（何を言ってるのかサッパリわからない、[r]　という顔）
+[k]
+
+[messageOff]
+[fadeout black 1.4]
+[bgmStop BGM_EVENT_45 1.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaEffectStop I bit_talk_yume01]
+[charaPut I 2000,2000]
+[charaPut J 2000,2000]
+
+[charaSet B 7013001 1 清姫]
+[charaSet C 2009001 1 オリオン＆アルテミス]
+
+[charaDepth D 1]
+[charaDepth G 1]
+[charaDepth H 1]
+[charaDepth C 5]
+[charaDepth E 9]
+[charaDepth F 9]
+[charaDepth B 9]
+
+[branch lblNotClear2 IsClear false]
+[scene 66800]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10400]
+[label lblConf2]
+
+[pictureFrame]
+[wt 0.6]
+
+[fadein black 1.4]
+[wait fade]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 4]
+[charaScale A 1.0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠蘭陵王
+今日は本当に参りました……。[bgm BGM_EVENT_2 0.1]
+[k]
+
+？1：本当にね！！
+
+[charaFace A 0]
+
+＠蘭陵王
+黒髭殿は大丈夫だったでしょうか。
+[k]
+
+＠蘭陵王
+あの後はしょんぼりして帰っていきましたが。
+[k]
+
+？2：おろおろする蘭陵王は新鮮だったかなと
+
+[charaFace A 3]
+
+＠蘭陵王
+マスターもお人が悪いですよ。
+[k]
+
+？！
+
+[charaFace A 1]
+
+＠蘭陵王
+……とはいえ、懐かしい体験でした。[r]黒髭殿にも礼を言わなくては。
+[k]
+
+＠蘭陵王
+自分では思いも寄らない誰かに、[r]ぐるぐると振り回される……。
+[k]
+
+＠蘭陵王
+傍目には徒労に見えますが、[r]これはこれでなかなか面白いものなので。
+[k]
+
+？1：毎日実感してい[&るよ:ます]
+？！
+
+[messageOff]
+[charaFadeout A 0.2]
+[wt 0.4]
+
+
+[charaTalk off]
+[charaFace E 1]
+[charaFace D 1]
+[charaFadein E 0.4 -256,0]
+[charaFadein D 0.4 256,0]
+[charaFadeTime E 0.4 0.8]
+[charaFadeTime D 0.4 0.8]
+[wt 1.5]
+
+[charaFadeout E 0.4]
+[charaFadeout D 0.4]
+[wt 0.6]
+
+[charaFace F 1]
+[charaFace G 1]
+[charaFadein F 0.4 -256,0]
+[charaFadein G 0.4 256,0]
+[charaFadeTime F 0.4 0.8]
+[charaFadeTime G 0.4 0.8]
+[wt 1.5]
+
+[charaFadeout F 0.4]
+[charaFadeout G 0.4]
+[wt 0.6]
+
+[charaFace H 1]
+[charaFace B 1]
+[charaFace C 8]
+[charaFadein H 0.4 -320,0]
+[charaFadein B 0.4 0,0]
+[charaFadein C 0.4 320,0]
+[charaFadeTime H 0.4 0.8]
+[charaFadeTime B 0.4 0.8]
+[charaFadeTime C 0.4 0.8]
+[wt 2.0]
+
+[charaFadeout H 0.4]
+[charaFadeout B 0.4]
+[charaFadeout C 0.4]
+[wt 0.8]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 4]
+[charaScale A 1.0]
+[charaFadein A 0.1 1]
+
+＠蘭陵王
+……そ、それは確かに……！
+[k]
+
+[charaFace A 0]
+
+＠蘭陵王
+……。[r]……。
+[k]
+
+[charaFace A 1]
+
+＠蘭陵王
+では今宵は振り回される者同士、[r]語らいませんか？
+[k]
+
+＠蘭陵王
+マスターも私も、苦労話には[r]事欠かない気がするので。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

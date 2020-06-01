@@ -1,0 +1,496 @@
+
+
+＄03-00-03-04-1-0
+
+[soundStopAll]
+
+[charaSet A 1098123000 1 ムニエル]
+[charaSet B 1098123200 1 ゴルドルフ]
+[charaSet C 9005001 1 ホームズ]
+[charaSet D 98001000 1 マシュ]
+[charaSet E 1098124510 1 ダ・ヴィンチ]
+[charaSet F 98002000 1 フォウ]
+[charaSet G 3031001 1 哪吒]
+[charaSet H 98115000 1 エフェクト用]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_zero_sail2]
+[wt 0.5]
+[scene 10001]
+[wait effect bit_talk_zero_sail2]
+[fadeout white 1.5]
+[wait fade]
+
+[scene 53801]
+
+[effect bit_talk_41]
+
+[shake 0.05 0 2 3.0]
+
+[se ad607]
+[fadein white 2.0]
+[se ad629]
+[cameraMove 1.5 0,0 1.1]
+[wait fade]
+
+[wt 0.5]
+
+[fadeout black 1.0]
+[wait fade]
+
+[effectStop bit_talk_41]
+[scene 51600]
+
+[cameraHome 0.1]
+[wt 1.0]
+
+[shake 0.05 0 2 2.0]
+
+[fadein black 0.7]
+[seStop ad629 2.0]
+[wait fade]
+
+
+[wt 0.7]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ムニエル
+彷徨海からの長距離潜航より浮上[line 3][wt 0.7][charaFace A 2][bgm BGM_EVENT_80 0.1][r]って、うわドンピシャだ！
+[k]
+
+[charaFace A 0]
+
+＠ムニエル
+前方1000メートル先に大規模な[#超積乱雲:スーパーセル]！[r]異聞帯を囲む、例の嵐です！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠フォウ
+フォーウ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+ああ、たいした精度だ。彷徨海からのみ、という[r]条件はあるものの、実に頼もしい。
+[k]
+
+＠ホームズ
+ミス・シオンによると極点[line 3][r]北極と南極以外であれば成功しやすい、との事だ。
+[k]
+
+[charaFace C 5]
+
+＠ホームズ
+しかし正確すぎるのも今回は困りものだ。[r]この距離ではもう突入するしかない。
+[k]
+
+＠ホームズ
+Mr.ゴルドルフは[line 3]
+[k]
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+[charaShake B 0.05 2 2 1.5]
+[wt 1.5]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+緊張と毒の恐怖がぶり返してきているようだ。[r]ちょっと使い物にならない。
+[k]
+
+＠ホームズ
+キミはどうかな、[&ミスター:ミス][%1]。[r]心構えは済んでいるかい？
+[k]
+
+？1：[line 3]はい。なんとか
+？2：（なんとか頷きで返す）
+
+？！
+
+[charaFace C 0]
+
+＠ホームズ
+よろしい。いまキミが着ている礼装は、[r]ミス・シオンの協力で性能が向上している。
+[k]
+
+＠ホームズ
+生存機能はもとより、[r]マスターとしてもっとも重要なものがね。
+[k]
+
+＠ホームズ
+詳しくは現地についてからにするが……[r]ミス・キリエライト？　なにか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠マシュ
+あ、いえ……[r]何でもありません、こちらも準備は万全です！
+[k]
+
+[charaFace D 12]
+
+＠マシュ
+（……今の虚数潜航の感覚、北欧の時に感じた[r]　温かさがあったのですが……）
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_80 1.0 0.5]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+[wt 0.3]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]はいそこまで～！[-][r][51ffff]休む間もなく連続潜航、行くからね！[-]
+[k]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]ボーダーの燃料も無駄遣いできない、[-][r][51ffff]彷徨海から押し出された慣性をそのまま利用する！[-]
+[k]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]北欧の時と同じように、今回も手がかりなしで[-][r][51ffff]異聞帯内部に浮上[line 3][-]
+[k]
+
+[charaFace E 23]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]おや？　おやおやおやおやおやぁ？[-]
+[k]
+
+[charaFace E 0]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]朗報だよ、ゴルドルフくん！[-][r][51ffff]中国異聞帯にはコヤンスカヤの反応がある！[-]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+な、なにぃ！？[bgm BGM_EVENT_82 0.1][r]それは本当かね、レオナルド技術顧問！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 27]
+[charaFadein E 0.1 1]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]ああ、半日前に採取したものだ、間違いないとも！[-][r][51ffff]まさに[#一石二鳥:いっせきにちょう]だ！[-]
+[k]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]虚数空間からの浮上確率が一気に上がる、[-][r][51ffff]彼女を捕まえれば解毒剤についても聞ける！[-]
+[k]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]ムニエル、アンカーを『仮定／生存中の人類』から[-][r][51ffff]コヤンスカヤに切り替え、よろしく！[-]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ムニエル
+了解！　ひぃ、運転だけでも忙しいってのに！[r]くそ、おっさんが本調子なら、とか思っちまった！
+[k]
+
+？1：コヤンスカヤも中国異聞帯に……
+？2：（……解毒剤……持っているんだろうか……？）
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+さて。土壇場の新情報だが、[r]ダ・ヴィンチの報告なら信頼に値します。
+[k]
+
+＠ホームズ
+[#仙衰冥脈:せんすいめいみゃく]なる毒の探索は取りやめ、[r]最優先目標はコヤンスカヤの身柄確保に変更。
+[k]
+
+＠ホームズ
+ゴルドルフ氏と[%1]の[r]解毒にはそちらの方が確実であり、
+[k]
+
+＠ホームズ
+かつ、今後の脅威を減らす事に繋がる。
+[k]
+
+＠ホームズ
+同時にクリプターを捜索し、これを捕縛する。[r]最終目的は中国に根付いている空想樹の切除。
+[k]
+
+＠ホームズ
+以上が今作戦の内容です。[r]宜しいですね？　所長。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+う、うむ！　私も気合いが入った！[r]死の恐怖に怯えている場合ではなかった！
+[k]
+
+[charaFace B 5]
+
+＠ゴルドルフ
+紳士の時間はもう終わりだ！[r]ＴＶ・コヤンスカヤ……！
+[k]
+
+＠ゴルドルフ
+恨み重なるあの毒婦に、[r]今度という今度こそ鉄槌を下してくれる！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠フォウ
+フォウ、フォーウ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 17]
+[charaFadein E 0.1 1]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]こらこら。[-][r][51ffff]まずは捕まえる事を考えてね？[-]
+[k]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]解毒剤の[#在処:ありか]、もしくは調合方法を[-][r][51ffff]白状させなきゃ無意味なんだからね。[-]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠哪吒
+了承。要手加減。されど温情は考慮せず。[r]捕縛、即[#拷問:せっかん]が望ましい。
+[k]
+
+＠哪吒
+妙な策を弄することなきよう、[r]足腰立たなくなるまで　叩きのめすが吉。
+[k]
+
+＠哪吒
+中華はボクの故郷。たとえ異聞帯であっても、[r]空と土の在り方は不変のもの。
+[k]
+
+＠哪吒
+であれば、是、ボクの領域。[r]悪鬼撲滅、任されよ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠マシュ
+はい、頼りにしています、哪吒さん！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.7]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+[line 3]よし。嵐の壁まであと400メートル！[r]ダ・ヴィンチ、始めたまえ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠[51ffff]アナウンス[-]
+[51ffff]シャドウ・ボーダー外部装甲に論理術式展開。[-][r][51ffff]実数空間における[#存在証明:ハーケン]、[#着脱:ハズレ]。[-]
+[k]
+
+＠[51ffff]アナウンス[-]
+[51ffff]未来予測・二十秒後に境界面を仮説証明。[-][r][51ffff]時空摩擦減圧、0.4秒間で緩和。[-]
+[k]
+
+＠[51ffff]アナウンス[-]
+[51ffff]発進工程、全て良し。[-][r][51ffff]虚数海面、前回観測結果のまま固定済み。[-]
+[k]
+
+＠[51ffff]アナウンス[-]
+[51ffff]シャドウ・ボーダー、[#現実退去:ザイルカット]。[-][r][51ffff]虚数潜航[line 3]ゼロセイル、連続敢行だ～～～！[-]
+[k]
+
+
+
+
+[messageOff]
+
+[shake 0.05 0 5 1.5]
+[se ad14]
+[seVolume ad14 0 0.7]
+[wt 0.8]
+[seStop ad14 0.3]
+[se ade8]
+[seVolume ade8 0 0.7]
+
+
+[cameraMove 0.3 0,-10 1.01]
+[wt 0.4]
+[cameraMove 0.2 0,10 1.01]
+
+[wipeout rectangleStripDownToUp 0.3 1]
+[bgmStop BGM_EVENT_82 1.0]
+[wait wipe]
+
+[scene 10000]
+[wt 1.0]
+
+[wipein rectangleStripUpToDown 0.1 1]
+[wait wipe]
+
+[cameraHome 0.1]
+[wt 0.8]
+
+[effect bit_talk_zero_sail2]
+[wt 0.5]
+[scene 10001]
+
+[wait effect bit_talk_zero_sail2]
+[fadeout white 1.5]
+[wait fade]
+[scene 10000]
+
+[fadein white 1.0]
+[wait fade]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[bgmStop BGM_EVENT_80 0.4]
+[bgmStop BGM_EVENT_81 0.4]
+
+[charaSet A 1098123000 1 ムニエル]
+[charaSet B 1098123200 1 ゴルドルフ]
+[charaSet C 9005001 1 ホームズ]
+[charaSet D 98001000 1 マシュ]
+[charaSet E 1098124510 1 ダ・ヴィンチ]
+[charaSet F 98002000 1 フォウ]
+[charaSet G 3031001 1 哪吒]
+[charaSet H 98115000 1 エフェクト用]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+
+[scene 10000]
+[wt 0.4]
+[soundStopAll]
+
+[maskin black 1]
+[wait mask]
+[label selectBranch]
+
+[skip false]
+
+[wt 1.0]
+
+[fowardEffect bit_chapterstart303]
+[wait fowardEffect]
+
+[scene 10000]
+
+[fadeout black 1.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,1228 @@
+
+＄03-00-05-30-4-0
+
+
+
+
+[soundStopAll]
+
+[charaSet A 8001410 1 マシュ]
+[charaSet B 1098123200 1 ゴルドルフ]
+[charaSet C 1098124510 1 ダ・ヴィンチ]
+[charaSet D 1098158300 1 ネモ]
+[charaSet E 9005001 1 ホームズ]
+[sceneSet F 87900 1]
+[sceneSet G 88000 1]
+[charaSet H 1098182310 1 ネモ・ベーカリー]
+[charaSet I 98115000 1 エフェクト用ダミー]
+[charaSet J 98115000 1 エフェクト用ダミー]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+
+[cameraMove 0 0,0 1.01]
+
+[scene 51601]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_62 0.1]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠マシュ
+マシュ・キリエライト。[r][%1]と共に帰還完了です。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+＠ゴルドルフ
+よし出発だ！　[wt 0.4][charaFace B 7]あ、いや待て。[r]イアソンはどうした？　一緒ではないのか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠マシュ
+イアソンさんは[line 3]
+[k]
+
+？1：イアソンはもう休ませてあげたい
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[wt 1.0]
+[charaFace B 4]
+[wt 1.0]
+
+[charaFace B 0]
+＠ゴルドルフ
+[line 3]そうか。[r]まあ、働きすぎたからな。
+[k]
+
+＠ゴルドルフ
+霊基の質も悪い三流サーヴァントだったしな。[r]休みたい、というのも仕方あるまい。
+[k]
+
+[charaFace B 16]
+＠ゴルドルフ
+いいだろう、休暇を許可する！[r]ではストーム・ボーダーに戻るぞ！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 86500]
+[wt 1.0]
+
+[se ad14]
+[seVolume ad14 0 0]
+[se ad629]
+[seVolume ad629 0 0]
+[shake 0.02 2 2 0]
+
+[seVolume ad14 1.0 0.8]
+[seVolume ad629 1.0 0.8]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+[se ad10]
+[se ad228]
+[wt 2.0]
+
+
+[fadeout black 1.0]
+[seStop ad228 1.0]
+[seStop ad14 1.0]
+[seVolume ad629 1.0 0.4]
+[wait fade]
+
+[shakeStop]
+
+[scene 51601]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+＠ゴルドルフ
+急ぐぞ急ぐぞ急ぐぞ！[r]よし、見えてきた！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]ナビするよ。[-][r][51ffff]このままストーム・ボーダーに乗り込む！[-]
+[k]
+
+
+[messageOff]
+[wt 0.1]
+
+[seVolume ad629 0.4 1.0]
+[wt 1.2]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_62 1.0 0.2]
+[seStop ad629 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaPut J 1200,1200]
+
+[scene 34901]
+[wt 1.0]
+
+
+[shake 0.02 2 2 0]
+[se ad14]
+[seVolume ad14 0 0]
+[seVolume ad14 1.0 0.6]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[se ad10]
+[se ad640]
+[shake 0.02 3 3 0]
+[wt 1.4]
+
+＠[9bb9ff]アナウンス[-]
+[9bb9ff]……ドレ……イク……。[-][r][9bb9ff]……忌まわしい……人間、め……。[-]
+[k]
+
+＠[9bb9ff]アナウンス[-]
+[9bb9ff]……絶海は……突破された……。[-][r][9bb9ff]ゼウスよ……忌々しいが、後を、託す…………。[-]
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[shake 0.03 4 4 0]
+[se ad619]
+[seVolume ad619 0 0]
+
+[seVolume ad14 1.0 1.0]
+[seVolume ad619 1.0 1.0]
+[wt 1.6]
+
+[se ad10]
+[se ad640]
+[se ad228]
+[wt 1.8]
+
+[seStop ad228 0.4]
+[wt 1.2]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[seStop ad14 2.0]
+[seStop ad619 2.0]
+[seStop ad10 2.0]
+[seStop ad640 2.0]
+[seStop ad228 2.0]
+[wait fade]
+
+[shakeStop]
+
+
+
+
+
+[scene 86200]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ネモ
+さあ、出発しよう。
+[k]
+
+＠ネモ
+色々な[#者:やつ]を失ったけど、[r]大切なものは残っている。
+[k]
+
+＠ネモ
+それは、ここまで辿り着いたという[r]事実そのものだ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ホームズ
+勿論だとも。
+[k]
+
+＠ホームズ
+ここに来るまでに、全ての英雄が[r]その身を投じたのだから。
+[k]
+
+＠ホームズ
+我々には共に眠る、という選択肢は残されていない。
+[k]
+
+？1：……行こう！
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠マシュ
+はい！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_82 1.0]
+
+[se ad619]
+[seVolume ad619 0 0]
+[se ade54]
+[seVolume ade54 0 0]
+[seVolume ad619 1.0 0.1]
+[seVolume ade55 1.0 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠ゴルドルフ
+ん？
+[k]
+
+＠ゴルドルフ
+ところで地面が揺れているだけでなく、[r]何やら天井から音が聞こえないかね？
+[k]
+
+＠ゴルドルフ
+……なんか、嫌な予感が……。
+[k]
+
+[charaFace B 12]
+＠ゴルドルフ
+（チラッ）
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[charaFadein F 0.1 0,-200]
+[wt 1.0]
+
+[shake 0.03 4 4 0]
+[seVolume ad619 0.5 0.6]
+[seVolume ade55 0.5 1.0]
+
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wt 0.3]
+[se adm11]
+[wait wipe]
+[wt 2.0]
+
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[seVolume ad619 0.5 0.2]
+[seVolume ade55 0.5 0.1]
+[wait wipe]
+
+[shakeStop]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[scene 86200]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.5 1.0]
+[seStop adm11 0.5]
+[wait wipe]
+[wt 0.3]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠ゴルドルフ
+[f large]うえ！！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 22]
+[charaFadein C 0.1 1]
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]みず！！[-]
+[k]
+
+？1：すごい！！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+＠ホームズ
+語彙力が著しく低下しているところ失礼。
+[k]
+
+＠ホームズ
+ポセイドンを倒したことで、[r]海水を防いでいた魔力障壁も消失したらしい。
+[k]
+
+[charaFace E 8]
+＠ホームズ
+船長、このままでは艦上部に水が激突する。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠ネモ
+……よし。[r]対艦ミサイル発射準備、データ[#入力:インプット]開始！
+[k]
+
+＠ネモ
+目標はポセイドン船体。[r]要するに、この門番を早く壊して落下態勢に移行する！
+[k]
+
+[charaFace D 2]
+＠ネモ
+艦に被害が及ばないところに命中させるべし！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad817]
+[wt 1.0]
+
+[se ad609]
+[shake 0.03 4 4 1.0]
+[wt 2.4]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+＠ゴルドルフ
+おおおおおお！？[r]震える震える私のお腹も震える震える！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 21]
+[charaFadein C 0.1 1]
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]こ、これ本当に大丈夫なのかなー！？[-]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠ホームズ
+はっはっは、もう後は祈るしかないな！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠ネモ
+よし、崩落[line 3]落下開始！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠マシュ
+マスター！[r]どうか、手を！
+[k]
+
+？1：マシュ！
+？！
+
+[messageOff]
+[wt 0.1]
+
+[se ad215]
+[charaShake A 0.02 2 2 0.4]
+[wt 1.0]
+
+[charaFace A 2]
+＠マシュ
+さあ、行きましょう！[r]目的地、オリュンポスへ！
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,20 1.01]
+[wt 0.5]
+[cameraMove 0.4 0,0 1.01]
+[wt 0.8]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[cameraMove 0 0,0 1.01]
+
+[charaFadein G 0.1 0,-200]
+[wt 1.0]
+
+[se ad609]
+[se ad14]
+[seVolume ad14 0 0]
+[shake 0.02 3 3 0]
+
+
+[seVolume ad619 1.0 0.6]
+[seVolume ade55 1.0 0.6]
+[seVolume ad14 1.0 0.6]
+
+[fadein black 1.0]
+[wait fade]
+[wt 3.0]
+
+
+＠ゴルドルフ
+落ちてるーーー！！[r]死ぬーーーーー！！
+[k]
+
+
+＠ネモ
+死なないし死なせないよ。[r]まあ死ぬ程痛いかもしれないけど。
+[k]
+
+
+＠ゴルドルフ
+何の慰めにもならないーーー！
+[k]
+
+
+[messageOff]
+[wt 0.1]
+
+[se ad226]
+[seVolume ad226 0 0.6]
+[se ad609]
+[seVolume ad609 0 0.6]
+[shake 0.03 4 5 1.6]
+[wt 1.6]
+[shake 0.02 3 3 0]
+[wt 1.2]
+
+
+
+[messageOff]
+[wt 0.1]
+
+[cameraMove 4.0 0,0 1.2]
+[seVolume ad619 0.6 1.0]
+[seVolume ad14 0.6 1.0]
+[seVolume ade55 0.6 1.0]
+[wt 2.0]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_80 2.0]
+[seStop ad619 2.0]
+[seStop ad14 2.0]
+[seStop ade55 2.0]
+[wait fade]
+
+[cameraMove 0 0,0 1.01]
+[charaFadeout G 0.1]
+
+[shakeStop]
+
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 0.1]
+[wait fade]
+
+
+[wt 2.5]
+
+
+？1：みんな、無事？
+？！
+
+
+[fadeout black 0.1]
+[wait fade]
+
+[charaSet C 1098124510 1 ダ・ヴィンチ]
+[charaSet F 1098182210 1 ネモ・エンジン]
+[charaSet G 1098182110 1 ネモ・プロフェッサー]
+[charaSet I 98002000 1 フォウ]
+[wt 0.5]
+
+[scene 86200]
+[wt 0.5]
+
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ネモ
+無事だよ……。[r]各区画、応答して。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ネモ・エンジン
+こちら機関部、アタシがいるんだぞ？[r]無事に決まってるだろ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠ネモ・プロフェッサー
+はいおこたえします。[r]こちら第二区画、各員無事ですー。
+[k]
+
+＠ネモ・プロフェッサー
+頭ぶつけてたんこぶができましたが[r]……ぐすん。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 1]
+＠ネモ・ベーカリー
+はーい、こちら食堂のお姉さん～♡[r]みんなの素敵なゴハンは健在でーす。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠ホームズ
+お、同じく無事だ。[r]いやあ、久しぶりだねこの[#酩酊:めいてい]感……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]はいはい、こちら電算室。[-][r][51ffff]現状は小康状態……かな？[-]
+[k]
+
+[charaFace C 14]
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]機能不全には陥ってないと思う。[-][r][51ffff]でも、まあ、ちょっと疲れた……。[-]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠マシュ
+マシュ・キリエライト。[r]並びにフォウさん、無事です。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[charaMoveReturn I 0,30 0.5]
+＠フォウ
+フォーウ！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 0.8]
+[charaFadeout I 0.1]
+[wt 1.0]
+[bgm BGM_EVENT_79 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ホームズ
+ともかく、ようやく我々は辿り着いた訳だ。
+[k]
+
+＠ホームズ
+クリプターのリーダーであるキリシュタリアが[r]存在する五つ目の[#異聞帯:ロストベルト]の本拠地。
+[k]
+
+[charaFace E 6]
+＠ホームズ
+見たまえ。[r]……信じ難い光景が広がっているぞ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠ゴルドルフ
+……。[r]……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ネモ
+……驚きすぎて気絶してるか……。[r]無理もないけど……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[imageSet B scene88100 1]
+[charaScale B 2.01]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 22]
+[charaFadein C 0.1 1]
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]まるで……神の世界に迷い込んだようだ。[-]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+ここが星間都市山脈[line 3]
+[k]
+
+？1：オリュンポス……！
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[scene 10000]
+[charaFadeout A 0.1]
+[charaFadein B 0.1 519,-100]
+
+[wt 1.0]
+
+[fadein black 2.5]
+[wait fade]
+[charaMove B 519,-720 8.0]
+[wt 10.5]
+
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_79 1.5]
+[wait fade]
+
+
+[charaSet A 1098183000 1 ドレイク]
+[charaSet B 6029001 1 望月千代女]
+[charaSet C 6038002 1 シャルロット・コルデー]
+[charaSet D 4034000 1 バーソロミュー]
+[charaSet E 4029001 1 アキレウス]
+[charaSet F 3016002 1 ヘクトール]
+[charaSet G 4039002 1 マンドリカルド]
+[charaSet H 2035000 1 パリス]
+[charaSet I 2038000 1 オリオン]
+[charaSet J 1038000 1 イアソン]
+
+[wt 0.5]
+
+[scene 84900]
+
+[fowardEffect bit_talk_noise02]
+
+[cameraFilter gray]
+
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_91 0.1]
+
+
+[charaTalk off]
+
+[charaScale A 1.5]
+[charaFace A 0]
+[charaPut A -200,-30]
+[charaFadeTime A 0.7 0.7]
+[charaMove A -200,30 3.5]
+[wt 0.7]
+
+＠
+最初の導き手として、[r]その女は[&彼:彼女]らの命を海に委ねた。
+[k]
+
+[messageOff]
+
+[charaScale B 1.5]
+[charaFace B 0]
+[charaPut B 200,-30]
+[charaFadeTime B 0.7 0.7]
+[charaMove B 200,30 3.5]
+[charaFadeout A 0.7]
+[wt 0.7]
+＠
+身に宿す呪いすらも利用して、[r]その女は暴れ果てた。
+[k]
+
+[messageOff]
+[charaScale C 1.5]
+[charaFace C 0]
+[charaPut C -200,-30]
+[charaFadeTime C 0.7 0.7]
+[charaMove C -200,30 3.5]
+[charaFadeout B 0.7]
+[wt 0.7]
+＠
+殺す以外の全てを削り捨ててでも、[r]その女は足掻いた。
+[k]
+
+[messageOff]
+
+[charaScale D 1.5]
+[charaFace D 0]
+[charaPut D 200,-30]
+[charaFadeTime D 0.7 0.7]
+[charaMove D 200,30 3.5]
+[charaFadeout C 0.7]
+[wt 0.7]
+＠
+生前できなかったこと[line 3][r]希望を無事に送り届けた。
+[k]
+
+[messageOff]
+
+[charaScale E 1.5]
+[charaFace E 0]
+[charaPut E -200,-30]
+[charaFadeTime E 0.7 0.7]
+[charaMove E -200,30 3.5]
+[charaFadeout D 0.7]
+[wt 0.7]
+＠
+弱点を射貫かれてなお、[r]その男は走り続けて。
+[k]
+
+[messageOff]
+
+[charaScale F 1.5]
+[charaFace F 0]
+[charaPut F 200,-30]
+[charaFadeTime F 0.7 0.7]
+[charaMove F 200,30 3.5]
+[charaFadeout E 0.7]
+[wt 0.7]
+＠
+わずかな時間を稼ぐために、[r]その[#召喚:のぞみ]に応じた。
+[k]
+
+[messageOff]
+
+[charaScale G 1.5]
+[charaFace G 0]
+[charaPut G -200,-30]
+[charaFadeTime G 0.7 0.7]
+[charaMove G -200,30 3.5]
+[charaFadeout F 0.7]
+[wt 0.7]
+＠
+ただ一人、友として[r][&彼:彼女]の味方になることを誓った。
+[k]
+
+[messageOff]
+
+[charaScale H 1.5]
+[charaFace H 0]
+[charaPut H 200,-30]
+[charaFadeTime H 0.7 0.7]
+[charaMove H 200,30 3.5]
+[charaFadeout G 0.7]
+[wt 0.7]
+＠
+躊躇いなく、[#生け贄の山羊:ス  ケ  ー  プ  ゴ  ー  ト]になることを選んだ。[r]それが正しい道だと、受け入れて。
+[k]
+
+[messageOff]
+
+[charaScale I 1.5]
+[charaFace I 0]
+[charaPut I -200,-30]
+[charaFadeTime I 0.7 0.7]
+[charaMove I -200,30 3.5]
+[charaFadeout H 0.7]
+[wt 0.7]
+＠
+月を愛して、月を撃ち落とした。
+[k]
+
+[messageOff]
+[charaScale J 1.5]
+[charaFace J 0]
+[charaPut J 200,-30]
+[charaFadeTime J 0.7 0.7]
+[charaMove J 200,30 3.5]
+[charaFadeout I 0.7]
+[wt 0.7]
+＠
+全てを見て、全てと戦い、[r]そして全てを見送った。
+[k]
+
+[messageOff]
+[charaFadeout J 0.7]
+[wt 1.5]
+
+＠
+[line 3]誰も彼もが必死になって駆け抜け、[r]この海には何も残されていない。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[wait fade]
+[fowardEffectStop bit_talk_noise02]
+[cameraFilter normal]
+[imageSet B scene88100 1]
+[charaSet J 98115000 1 エフェクト用ダミー]
+[charaScale B 2.01]
+
+[scene 10000]
+[wt 0.5]
+
+[fadein black 0.1]
+[wait fade]
+[bgmStop BGM_EVENT_91 2.0]
+
+[charaTalk B]
+[charaFadein B 1.5 519,-100]
+
+
+[wt 2.0]
+
+＠
+かくして絶海は突破した。[r]行く手に待ち受けるは、[#絢爛:けんらん]の地底都市。
+[k]
+
+[messageOff]
+[wt 2.5]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+
+
+[wt 1.0]
+
+[scene 10000]
+[skip false]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[bgmStop BGM_EVENT_62 0.4]
+[bgmStop BGM_EVENT_70 0.4]
+[bgmStop BGM_EVENT_79 0.4]
+[bgmStop BGM_EVENT_80 0.4]
+[bgmStop BGM_EVENT_82 0.4]
+[bgmStop BGM_EVENT_91 0.4]
+
+[charaFadeout J 0.1]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+
+[charaSet A 1098183000 1 ドレイク]
+[charaSet B 6029001 1 望月千代女]
+[charaSet C 6038002 1 シャルロット・コルデー]
+[charaSet D 4034000 1 バーソロミュー]
+[charaSet E 4029001 1 アキレウス]
+[charaSet F 3016002 1 ヘクトール]
+[charaSet G 4039002 1 マンドリカルド]
+[charaSet H 2035000 1 パリス]
+[charaSet I 2038000 1 オリオン]
+[charaSet J 98115000 1 エフェクト用ダミー]
+
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[charaPut J 1200,1200]
+
+[soundStopAllFade 0.4]
+
+[wt 0.4]
+[soundStopAll]
+[maskout black 1.0]
+[wait mask]
+[scene 10000]
+[wt 0.1]
+[maskin black 0.1]
+[wait mask]
+[label selectBranch]
+
+[fowardEffect bit_chapterclear305]
+[wait fowardEffect]
+
+[fadeout black 1.0]
+[wait fade]
+[wt 0.5]
+
+[skip true]
+
+[fadein black 2.0]
+[wait fade]
+
+
+[bgm BGM_EVENT_79 0.1]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[charaTalk on]
+＠武蔵
+む、夜空に輝くあの星は……！[r]間違いない、カルデアのみんなの船ね！
+[k]
+
+＠武蔵
+ふふーん！[r]ほらほらー、やっぱり突破できたでしょう？
+[k]
+
+＠武蔵
+心配はしてたけど、信頼していたからね！[r]私も鼻が高いのです！
+[k]
+
+＠武蔵
+……なーんて、ひとり強がっている私ですが、[r]さすがに[#空元気:からげんき]すぎましたか。
+[k]
+
+＠武蔵
+早く合流したいけど、[r]そううまくは行かないだろうなあ……
+[k]
+
+＠武蔵
+あの海よりこっちの方が物騒なんだもん。[r]多勢に無勢とは言うけど、まさか[line 3]
+[k]
+
+
+＠武蔵
+ま、とは言ってもやる事やるしかないんだけど！
+[k]
+
+＠武蔵
+さーて、ここももぬけのカラだったし。[r]次のアジトに行ってみよっか！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+
+
+[charaPut J 0,-200]
+[charaEffect J bit_talk_sparks]
+[wt 1.0]
+
+[se ad439]
+[seVolume ad439 0 0]
+
+[seVolume ad439 2.0 0.1]
+
+[fadein black 2.0]
+[wait fade]
+[wt 0.5]
+
+[se ad432]
+[seVolume ad432 0 0.6]
+[wt 1.4]
+
+[se ad432]
+[seVolume ad432 0 0.6]
+[wt 1.4]
+
+[se ad432]
+[seVolume ad432 0 0.6]
+[wt 1.4]
+
+
+
+＠千子村正
+……。[r]……。
+[k]
+
+＠？？？
+見事。
+[k]
+
+＠千子村正
+はっ、よせよせ。
+[k]
+
+＠千子村正
+異国だろうがテメェ様は鍛冶神だ。[r]面はゆいったらありゃしねぇ。
+[k]
+
+＠ヘファイストス
+その心意気こそが見事。
+[k]
+
+＠ヘファイストス
+鍛冶屋は善悪を超越し、[r]ただ求めるものを[#鍛造す:つ 　く]るのみ。
+[k]
+
+＠千子村正
+さて、ね。
+[k]
+
+＠千子村正
+ただ[line 3][#召喚されたからには]、[r]客の求めるモノを叩かなきゃな。
+[k]
+
+＠千子村正
+たとえそれが、己の世界を滅ぼすような[r]代物だったとしても。
+[k]
+
+
+＠ヘファイストス
+不満が？
+[k]
+
+＠千子村正
+さて、ね。
+[k]
+
+＠千子村正
+[#儂:オレ]はサーヴァントとして[r]仕事を全うするまでよ。
+[k]
+
+＠千子村正
+あんたも災難だよなァ。
+[k]
+
+＠千子村正
+[#儂:オレ]が斬ったせいで、かえって[r][#マトモに動けるようになっちまったんだろ]？
+[k]
+
+＠ヘファイストス
+本来、破壊されるはずだった私を守ってくれたのは、[r]村正……君だ。
+[k]
+
+＠ヘファイストス
+アトランティス側の私は、[r]自身の論理を以て汎人類史に味方した。
+[k]
+
+＠ヘファイストス
+だが、今の私はオリュンポスに味方する。[r]それでも[line 3]協力して欲しい。
+[k]
+
+＠千子村正
+……ま、[#儂:オレ]にできることならな。
+[k]
+
+[messageOff]
+[wt 0.4]
+
+[se ad432]
+[seVolume ad432 0 0.6]
+[wt 1.4]
+
+[se ad432]
+[seVolume ad432 0 0.6]
+[wt 1.4]
+
+[se ad432]
+[seVolume ad432 0 0.6]
+[wt 1.4]
+
+[fadeout black 3.0]
+[charaEffectStop J bit_talk_sparks]
+[wt 1.0]
+[se ad432]
+[seVolume ad432 2.0 0]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_79 2.0]
+[seStop ad439 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

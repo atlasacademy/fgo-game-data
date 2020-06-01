@@ -1,0 +1,244 @@
+
+＄94-01-56-55-1-0
+
+
+
+[soundStopAll]
+
+
+
+[messageOff]
+
+
+[branch _PlayEffect_1st PM4 1]
+
+
+[label _PlayEffect_etc]
+
+[tapSkip _from_TapSkip_etc]
+
+[scene 10001]
+
+[effectPause bit_talk_goal2_6]
+[wait effectStart bit_talk_goal2_6]
+
+[fadein white 0.5]
+[wait fade]
+
+[effectStart bit_talk_goal2_6]
+[wait effect bit_talk_goal2_6]
+
+[label _from_TapSkip_etc]
+
+[effectDestroy bit_talk_goal2_6]
+[fadein black 0]
+[wait fade]
+
+[branch _PlayEffect_End]
+
+
+[label _PlayEffect_1st]
+
+[bgm BGM_EVENT_3 0.1]
+
+[tapSkip _from_TapSkip_1st]
+
+[effectPause bit_talk_winner2_6]
+[wait effectStart bit_talk_winner2_6]
+
+[scene 10001]
+
+[fadein white 0.5]
+[wait fade]
+
+[effectStart bit_talk_winner2_6]
+
+[bgmStop BGM_EVENT_3 3.7]
+
+[wt 3.9]
+[se ad251]
+[seVolume ad251 0 0.7]
+
+[wt 0.6]
+
+[voice 402600_0_M820]
+
+[scene 10000]
+
+[wait effect bit_talk_winner2_6]
+[wt 1.4]
+
+[label _from_TapSkip_1st]
+
+[voiceStop]
+[scene 10000]
+[effectDestroy bit_talk_winner2_6]
+[fadein black 0]
+[wait fade]
+
+
+[label _PlayEffect_End]
+
+[branch _PlayVoice_Start PM4 1]
+
+[branch _PlayVoice_End]
+
+
+
+
+[label _PlayVoice_Start]
+
+[charaSet A 5030001 1 語り部のキャスター]
+[charaSet B 6028001 1 ニトクリス]
+
+[bgm BGM_EVENT_64 0.1]
+
+[scene 45201 1.0]
+[wt 1.0]
+
+[flagRandom _PlayVoiceNo 1 3]
+
+
+[branch _PlayVoice_3rd _PlayVoiceNo 3]
+[branch _PlayVoice_2nd _PlayVoiceNo 2]
+[branch _PlayVoice_1st _PlayVoiceNo 1]
+
+
+
+[label _PlayVoice_1st]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFace A 0]
+[charaDepth B 1]
+[charaDepth A 9]
+[charaFadein B 0.4 2]
+[charaFadein A 0.4 0]
+[wt 0.7]
+
+＠ニトクリス
+[tVoice ChrVoice_9010005 0_M700]
+見ませい、光です！　[wait tVoice]
+[k]
+[tVoice ChrVoice_9010005 0_M701]
+[charaFace B 9]
+正しきファラオの世の、新たなる夜明けとも言えましょう！[wait tVoice]
+[k]
+
+[charaFace A 3]
+＠語り部のキャスター
+[tVoice ChrVoice_9010005 0_M702]
+夜明けの光……[wait tVoice]
+[k]
+[tVoice ChrVoice_9010005 0_M703]
+ええ、それはいつ見ても、ほっとするものですね。[wait tVoice]
+[k]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_2nd]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFace A 0]
+[charaDepth B 1]
+[charaDepth A 9]
+[charaFadein B 0.4 2]
+[charaFadein A 0.4 0]
+[wt 0.7]
+
+＠ニトクリス
+[tVoice ChrVoice_9010005 0_M710]
+穴掘りと埋葬はだいたい同じものです。[wait tVoice]
+[k]
+
+[charaFace B 9]
+＠ニトクリス
+[tVoice ChrVoice_9010005 0_M711]
+冥界の神の化身、[r]埋葬マスターでもある私が負ける道理がありません。[wait tVoice]
+[k]
+
+[charaFace A 7]
+＠語り部のキャスター
+[tVoice ChrVoice_9010005 0_M712]
+落盤、酸欠、地下水の漏出……[wait tVoice]
+[k]
+[tVoice ChrVoice_9010005 0_M713]
+[charaFace A 0]
+実際に埋葬されるようなことがなくて幸いでした……。[wait tVoice]
+[k]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_3rd]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFace A 0]
+[charaDepth B 1]
+[charaDepth A 9]
+[charaFadein B 0.4 2]
+[charaFadein A 0.4 0]
+[wt 0.7]
+
+＠ニトクリス
+[tVoice ChrVoice_9010005 0_M800]
+はっ……[twt 1.0]話を聞くのに夢中になっていたら、[r]いつのまにか掘り抜けていました！　[twt 4.7][charaFace B 9]やりますね！？[wait tVoice]
+[k]
+
+[charaFace A 3]
+＠語り部のキャスター
+[tVoice ChrVoice_9010005 0_M723]
+お褒めにあずかり光栄です。[twt 3.0][charaFace A 0][r]それでは、続きはまたの機会に……。[wait tVoice]
+[k]
+
+[charaFace B 7]
+＠ニトクリス
+[tVoice ChrVoice_9010005 0_M724]
+（時間を忘れられるのはいいのですが、[r]　続きが気になるというデメリットがありますね。[wait tVoice]
+[k]
+
+[charaFace B 8]
+＠ニトクリス
+[tVoice ChrVoice_9010005 0_M725]
+　今の話のオチは何だったのでしょう……。）[wait tVoice]
+[k]
+
+
+
+[label _PlayVoice_End]
+
+
+[messageOff]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_64 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

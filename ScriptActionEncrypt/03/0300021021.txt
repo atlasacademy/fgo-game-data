@@ -1,0 +1,146 @@
+
+＄03-00-02-10-2-1
+[soundStopAll]
+
+[charaSet A 8001400 1 バイザーマシュ]
+[charaSet B 8001410 1 マシュ]
+[charaSet C 98002000 1 フォウ]
+[charaSet D 2031001 1 ナポレオン]
+
+[scene 61400]
+
+[charaTalk off]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[se ad67]
+[seVolume ad67 0 0.6]
+[wt 1.0]
+
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[charaFadeout A 0.4]
+
+[wt 0.5]
+[charaTalk on]
+
+＠マシュ
+氷の獣、全個体の掃討を完了しました。[bgm BGM_EVENT_77 0.1][r]戦闘終了です！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaDepth D 10]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 0]
+
+[charaFace B 0]
+[charaFadein B 0.1 2]
+
+＠ナポレオン
+じゃあ、改めて進軍再開だ！[r]ああ、なんたらボードとオレで速さ比べといくか！
+[k]
+
+[charaFace B 8]
+
+＠マシュ
+ええと、すみませんナポレオンさん……[r]レース行為は危険ですのでお断りしたいです！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 2]
+
+＠フォウ
+フォウ、フォフォーウ！
+[k]
+
+[charaFace D 3]
+
+＠ナポレオン
+お、白イヌは[#お嬢さん:マドモワゼル]の方か？[r]風圧で吹き飛ばされんよう、気を付けろよ。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠マシュ
+[#霊基外骨骼:オ ル テ ナ ウ ス]・追加装備オレルス・ボード[line 3][r]ブースター起動します。
+[k]
+
+[messageOff]
+
+[charaTalk off]
+
+[se ade57]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+
+[charaFace A 7]
+[charaFadein A 0.4 1]
+[wt 0.5]
+
+
+＠マシュ
+噴射モード第一加速から起動開始。[r]オレルス・ボード、スタンバイ。３、２、１[line 3]
+[k]
+
+[charaFace A 2]
+
+＠マシュ
+[line 6]ブースト・スタート！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ade83]
+[effect bit_talk_41]
+[cameraMove 2.0 0,0 1.2]
+
+[wt 1.0]
+
+[fadeout white 1.0]
+[wait fade]
+
+[scene 10001]
+
+[fadein white 0.1]
+[wait fade]
+
+[wt 0.8]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,638 @@
+
+
+
+＄03-00-06-11-4-0
+
+
+
+[soundStopAll]
+
+[charaSet A 1017001 1 武蔵]
+[charaSet B 8001400 1 マシュ]
+[charaSet C 9005001 1 ホームズ]
+[charaSet D 1098128200 1 カイニス]
+[charaSet E 98002000 1 フォウ]
+[charaSet F 1098123300 1 コヤンスカヤ（シルエット）]
+[charaFilter F silhouette 00000080]
+[charaSet G 1098123300 1 コヤンスカヤ]
+
+[charaSet H 8001410 1 アーマード・マシュ（ゴーグルなし）]
+[charaSet I 1098191200 1 アデーレ]
+[charaSet J 1098191300 1 マカリオス]
+[charaSet K 7010001 1 カリギュラ]
+
+[charaSet Q 5009000 1 エフェクト用ダミー]
+[charaSet R 5009000 1 エフェクト用ダミー]
+[charaSet S 5009000 1 エフェクト用ダミー]
+
+[charaSet T 5009000 1 エフェクト用ダミー]
+[charaPut S 1200,1200]
+[charaEffect S bit_talk_41]
+
+[scene 10000]
+
+[charaPut Q 1]
+[charaEffect Q bit_talk_beast_shadow]
+
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_EVENT_24 0.1]
+
+[se ad171]
+[fowardEffect bit_talk_x_slash02]
+[wt 0.4]
+
+[se ad170]
+[flashin once 0.1 0.1 02010CFF 02010C80]
+[wt 0.1]
+
+[se ad671]
+[fowardEffectDestroy bit_talk_x_slash02]
+
+[charaScale A 1.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0 0,20]
+[charaMove A 1 0.2]
+[charaShake A 0.02 3 3 0.6]
+[charaMoveScale A 1.0 0.2]
+[wt 0.8]
+
+＠武蔵
+ッ！
+[k]
+
+＠武蔵
+（正体がまるで掴めない……！[r]　[#何かいる]のは分かるけど、それが限界！）
+[k]
+
+[charaFace A 2]
+＠武蔵
+（そのクセ、この異様な圧力……！[r]　魔力って[#それだけ]で物質化するものだったっけ！？）
+[k]
+
+＠武蔵
+（なんかもう、下手につつけば[r]　この異聞帯ごと吹っ飛びそうなんですけどぉ！）
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaDepth Q 5]
+[charaDepth R 5]
+
+[se ad711]
+[shake 0.02 3 3 1.8]
+
+[charaPut R 1]
+[charaEffect R bit_talk_beast_eye]
+[wt 2.8]
+[charaEffectStop R bit_talk_beast_eye]
+[wt 1.0]
+
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠マシュ
+大咆哮！[r][line 3]範囲攻撃が来ます！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠ホームズ
+いや。これで終わりだ。[r]少なくとも、この大西洋異聞帯での戦闘はね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠武蔵
+ええ！　そうでしょうね！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaFadeout A 0.1]
+[wt 0.8]
+
+
+＠武蔵
+[#正体:すがた]は掴めずとも殺気は明白！[r]そこ、本命！
+[k]
+
+＠武蔵
+頭隠して尻隠さずってね……！[r]尻尾、もらった……！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ad7]
+[charaPut S 1]
+[charaMoveScale A 1.1 0.2]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[charaMove A 0,15 0.2]
+[wt 0.1]
+
+
+[se ad878]
+[wt 0.1]
+[effect bit_talk_v_slash01]
+[wt 0.4]
+[charaFadeout A 0]
+[charaPut S 1200,1200]
+[wt 0.1]
+
+
+
+＠武蔵
+[line 6]からの！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ade8]
+[seVolume ade8 0 0.8]
+[wt 1.0]
+
+＠カイニス
+[f large]上だ、クソ狐！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth Q 2]
+[charaDepth T 5]
+
+
+[se bac210]
+[se ad897]
+[charaPut T 200,0]
+[charaEffect T bit_talk_attack_splash]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[se ad414]
+[effect bit_talk_water_splash]
+[wt 0.2]
+[seStop ad414 0.4]
+[wt 1.2]
+
+
+
+[se ad223]
+[fowardEffect bit_talk_quickmove]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 0,10]
+[charaMove D 1 0.2]
+[wt 1.0]
+＠カイニス
+ハッ！　喰らわせてやったぜ！
+[k]
+
+[messageOff]
+[se ad442]
+[wt 1.0]
+
+[charaFace D 7]
+＠カイニス
+いいねえいいねえ、褒めてやる！　サムライ女！[r]オレが不意打ち好きだって何処で聞いた！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+高空からの落下攻撃！？[r]カイニスさん、いつの間に超跳躍を……
+[k]
+
+[charaFace B 7]
+＠マシュ
+い、いえ！[r]神霊カイニスの一撃により、敵性体を撃破[line 3]
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaMoveReturn E 0,30 0.6]
+＠フォウ
+フォーーーウ！[r]フォウフォウ！　フォウ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+[line 3]いえ、これは[line 3]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 1.0 1.0]
+[charaTalk off]
+[charaDepth F 4]
+[charaDepth G 3]
+
+[wt 0.5]
+
+[seStop ad556 3.0]
+[se ade153]
+[bgmStop BGM_EVENT_24 1.0]
+
+[charaEffectStop Q bit_talk_beast_shadow]
+[charaEffectStop R bit_talk_beast_eye]
+
+[scene 92501 1.5]
+
+[charaFace F 31]
+[charaFadein F 1.5 1]
+[wt 1.5]
+
+[charaFace G 31]
+[charaFadein G 0.4 1]
+[wt 1.0]
+
+[charaFadeout F 0.7]
+[wt 1.5]
+
+[charaTalk on]
+[charaTalk G]
+＠コヤンスカヤ
+[line 6]。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_71 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+＠マシュ
+敵サーヴァント、健在です！[r]霊基にどのような損傷も見られません……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠武蔵
+[line 6]！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 31]
+[charaFadein G 0.1 1]
+＠コヤンスカヤ
+動くな、セイバー。[r]貴様の末路はここではなかろう。
+[k]
+
+＠コヤンスカヤ
+ランサー。シールダー。マスター。[r]そして、観察だけに専念していた卑怯者よ。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+[wt 1.2]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 31]
+[charaFadein G 0.1 1]
+＠コヤンスカヤ
+顔見せとしては今ので充分。[r]それとも、果てるまで戦うのが本望か？
+[k]
+
+？1：それは……その通りだ
+？2：みんな、一旦退いて
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ホームズ
+[&ミスター:ミス][%1]の判断に従おう。[r]……どうやら、風向きが変わったようだ。
+[k]
+
+＠ホームズ
+満足したかね、ミズ・コヤンスカヤ。[r]我々の総力は、キミのお眼鏡にかなったかな？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 31]
+[charaFadein G 0.1 1]
+[wt 1.0]
+
+[charaFaceFade G 28 0.5]
+[wt 0.5]
+＠コヤンスカヤ
+[line 3]ええ。
+[k]
+
+＠コヤンスカヤ
+弱すぎず、強すぎず。[r]正しく『丁度いい』案配でしたわ。
+[k]
+
+＠コヤンスカヤ
+これなら後をオリュンポスの神々に任せても、[r]何の問題もないでしょう。
+[k]
+
+＠コヤンスカヤ
+[#私:わたくし]も思い切り[#伸び]ができて、[r]肩の凝りが取れたところですし……
+[k]
+
+[charaFace G 18]
+＠コヤンスカヤ
+いがみ合い、探り合いはここまでにして、[r]お互い、それぞれの仕事に戻るのは如何でしょう？
+[k]
+
+＠コヤンスカヤ
+もちろん、ここで皆さんと出遭った事は[r]誰にも申し上げません。
+[k]
+
+＠コヤンスカヤ
+気持ちのいいマッサージをしてくれたお礼、と[r]お考えください。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+大神ゼウスにこの情報は届かず……[r]クリプターにも情報共有はしない、という事かな？
+[k]
+
+＠ホームズ
+それは助かる。断る理由はないな。[r]こちらも一分一秒が惜しい状況だからね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 22]
+[charaFadein G 0.1 1]
+＠コヤンスカヤ
+では商談成立という事で。
+[k]
+
+＠コヤンスカヤ
+“[#私:わたくし]”の姿を見る事もできない人類代表に[r]興味はありません。
+[k]
+
+＠コヤンスカヤ
+どうか、この異聞帯で更なる成長を[r]遂げられますように。
+[k]
+
+[charaFace G 29]
+＠コヤンスカヤ
+では[line 3][r]皆さんの善戦を楽しみにしておりますわ。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_71 1.0]
+[charaSpecialEffect G erasureReverse 1 1.5]
+[se ad52]
+[wt 2.8]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaFace A 4]
+
+＠武蔵
+……行ってくれたか。ふぅ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠カイニス
+ホームズだったか？[r]テメェ、あれだ。ああいうのの扱い、慣れてんのか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ホームズ
+いや、それはどうだろうな……[r]確かに[#間諜:スパイ]じみた女性には縁がなくもなかったが、
+[k]
+
+[charaFace C 6]
+
+＠ホームズ
+彼女をそう捉えるべきなのかどうか。[r]いやはや。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth B 4]
+[charaDepth H 5]
+
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[wt 0.4]
+
+[se ad658]
+[charaFace H 7]
+[charaFadein H 0.4 1]
+[wt 0.4]
+
+[charaFadeout B 0.4]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk H]
+＠H：マシュ
+敵性体、仮称コヤンスカヤ・ビースト……[r]霊体化からの撤退を確認しました！
+[k]
+
+＠H：マシュ
+戦闘終了です、マスター！
+[k]
+
+？1：おつかれさま！
+
+？！
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.5]
+
+？1：……それで、第二の場所は確認できたかな
+
+？！
+
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaTalk depthOff]
+[charaDepth J 5]
+[charaDepth I 4]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFace I 5]
+[charaFadein J 0.1 -150,0]
+[charaFadein I 0.1 150,0]
+＠マカリオス
+任せろ！　第二の目標は発見できている！[r]ホームズの見立て通りだったな。
+[k]
+
+[charaFace J 0]
+＠マカリオス
+あの黒霧の獣の存在が、[r]目標を隠してしまっていたんだろう。
+[k]
+
+[charaTalk I]
+＠アデーレ
+人工知能を通じて、[r]英霊カリギュラに伝えてあります。すぐに[line 3]
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[se ad223]
+[fowardEffect bit_talk_quickmove]
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 0,10]
+[charaMove K 1 0.2]
+[wt 0.6]
+
+＠カリギュラ
+[line 3]待たせた。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+＠武蔵
+噂をしたとたんに皇帝陛下が来た！[wt 1.0][charaFace A 0][r]休む暇……なんて言ってられないわね。うん。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 1]
+[charaFadein K 0.1 1]
+＠カリギュラ
+第二目標を達成した。[r]さあ、次だ。最後の目標へ急ぐとしよう！
+[k]
+
+？1：行こう！
+
+？！
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠H：マシュ
+はい、マスター！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaMoveReturn E 0,30 0.6]
+＠フォウ
+フォウフォウ、フォーーーウ！
+[k]
+
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_82 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

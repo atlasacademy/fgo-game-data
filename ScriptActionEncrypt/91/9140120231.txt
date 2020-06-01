@@ -1,0 +1,627 @@
+＄91-40-12-02-3-1
+[soundStopAll]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaSet A 4012000 1 オジマンディアス]
+[charaSet B 5012001 1 ニトクリス]
+[charaSet C 2013001 1 アーラシュ]
+[charaSet D 1029001 1 アーサー]
+
+[charaSet E 4012001 1 オジマンディアス2]
+[charaSet F 4012000 1 オジマンディアスシルエット]
+[charaFilter F silhouette 00000080]
+
+[charaSet G 5009000 1 エフェクト用ダミー]
+[charaSet H 5009000 1 エフェクト用ダミー2]
+
+
+[charaDepth A 5]
+[charaDepth F 2]
+
+[scene 29320]
+
+[charaPut G 1]
+[charaPut H 1]
+
+[fadein black 0.8]
+[wait fade]
+
+
+[se bac155]
+[shake 0.05 2 2 0.1]
+[wt 0.1]
+
+[wt 0.5]
+[se bac158]
+[shake 0.05 3 3 3.0]
+[flashin once 0.4 1.2 FFFFFFAF FFFFFF00]
+
+[wt 1.0]
+
+[effect bit_talk_explosion_triple]
+[fadeout white 0.5]
+[se ad609]
+[wait fade]
+
+[wt 0.6]
+[fadein white 1.5]
+[wt 1.2]
+
+[se ad442]
+[wt 0.2]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[effect bit_talk_kengekiall01]
+[wt 0.1]
+[se ad33]
+[wt 1.0]
+
+[flashin once 0.1 0.2 FFFFFFF0 FFFFFFF0]
+[wt 0.1]
+[charaShake E 0.06 2 2 1.0]
+[charaFadein E 0.2]
+[charaFace E 5]
+[wt 0.2]
+
+
+[cueSe Servants_9939670 bac512]
+[cueSeVolume bac512 0 0.5]
+[fowardEffect bit_talk_ereshki02 150,150 H]
+[wt 0.7]
+
+[se ad248]
+[seVolume ad248 0 0.4]
+[wt 2.2]
+
+[fadeout white 0.6]
+[se ad628]
+[wait fade]
+[seStop ad248 1.0]
+
+[charaFadeout E 0.1]
+[fowardEffectStop bit_talk_ereshki02]
+[wt 1.5]
+
+[shake 0.05 3 2 3.5]
+
+[effect bit_talk_goltail01]
+[wt 0.8]
+[bgmStop BGM_EVENT_24 2.5]
+[se ad228]
+
+[wt 0.2]
+[fadein white 2.5]
+[wait fade]
+
+[seStop ad228 1.2]
+[wt 1.0]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[se ad240]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.7]
+[wt 0.9]
+
+[charaFace E 7]
+
+＠E：オジマンディアス
+フッ[line 3]
+[k]
+
+[charaFace E 1]
+
+＠E：オジマンディアス
+フフ、ハハ、はははははははははははははははははは！[r]佳い！　佳い！　実に、佳いッ！！
+[k]
+
+[charaFace E 2]
+＠E：オジマンディアス
+[fontSize large]褒めてつかわす！
+[k]
+
+[charaEffect G bit_talk_06]
+
+＠E：オジマンディアス
+あれこれと言ってみたが、うむ。[r]思い切り怒気を放つというのも[#偶:たま]には悪くはない。
+[k]
+
+[charaFace E 0]
+＠E：オジマンディアス
+想定よりも演算に負荷は掛かったろうが、[r]何、この程度であればカルデアへの影響は無きに等しい。
+[k]
+
+[charaFace E 1]
+＠E：オジマンディアス
+見事である、勇者たち。[r]大義である、ニトクリス。そして余の認めたマスターよ。
+[k]
+
+[charaFace E 2]
+＠E：オジマンディアス
+フフ……ハハ！　ははははははははははははははは！[r]ははははははははははははははははははははははは！
+[k]
+
+[messageOff]
+[se ad52]
+[charaSpecialEffect E flashErasure 0 1.5]
+[wait charaSpecialEffect E]
+[charaEffectStop G bit_talk_06]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠ニトクリス
+ファラオ・オジマンディアス……！[r]そんな[line 3]
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace C 3]
+[charaFadein C 0.1 2]
+[charaFace D 5]
+[charaFadein D 0.1 0]
+
+＠アーサー
+……いや。
+[k]
+
+＠アーラシュ
+ああ。
+[k]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[bgm BGM_EVENT_24 1.0 1.0]
+
+[messageOff]
+[charaTalk off]
+[charaFace F 0]
+[charaFadein F 1.5 1]
+[wt 2.0]
+[charaFace A 1]
+[charaSpecialEffect A appearance 1 1.0]
+[se ad42]
+[wt 1.0]
+
+＠オジマンディアス
+是なる我が宝具、[#光輝の大複合神殿:ラムセウム・テンティリス]の裡なれば！[charaFadeout F 0.4][r]余の肉体は不滅、霊核を砕かれても消えはせぬ！
+[k]
+
+？1：………………
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 2]
+[charaFace D 5]
+[charaFadein D 0.1 0]
+
+＠アーラシュ
+……[#十三拘束:シール・サーティーン]は？
+[k]
+
+＠アーサー
+いや。残念ながら。[r]この戦い、真の[#議決開始:デシジョン・スタート]は叶いそうにない。
+[k]
+
+＠アーラシュ
+違いない。俺もそうだ。[r]本気で流星を撃ち放つ気にはなれんなぁ。
+[k]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠ニトクリス
+（はらはら）
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_24 0.2]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠アーラシュ
+なにせ[line 3]
+[k]
+
+？1：これ、シミュレーターだしね！
+
+？！
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaFace C 1]
+＠アーラシュ
+ははっ！　その通り！
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ニトクリス
+あっ。そういえば、そ、そうですね！[r]あまりのファラオの迫力に呑まれてしまいましたが、
+[k]
+
+＠ニトクリス
+本質的にシミュレーターは戦闘訓練のための空間、[r]多少の[#反動:フィードバック]はあれど死亡などはありえません！
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠オジマンディアス
+何だ、天空の女王よ。[r]忘れていたか？
+[k]
+
+[charaFace A 1]
+＠オジマンディアス
+フフ。とはいえ、余の名演技にも非はあろうな！[r]許す。すべてすべて余は許してみせよう、ニトクリス！
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+＠ニトクリス
+[wt 0.1]
+[charaMove B 0,-15 0.2]
+ははっ……！
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠オジマンディアス
+[fontSize large]では連戦である！
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 0,-15]
+[wt 0.1]
+[charaMove B 0,0 0.1]
+＠ニトクリス
+ひえっ。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_1 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠オジマンディアス
+…………とはいえ、だ。聖剣使い。
+[k]
+
+＠オジマンディアス
+先刻の言葉、確かに勢いで述べたところもあるが、[r]すべてが余興と言う訳でもない。分かっていような？
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠アーサー
+ああ。無論だとも。
+[k]
+
+＠アーサー
+私が何故ここに来たのか、[r]私が君たちとの戦いの後にどうしていたのか[line 3]
+[k]
+
+[charaFace D 0]
+＠アーサー
+きっと語る時が来る。[r]それまで、どうか待っていて欲しい。
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaSet E 4012000 1 オジマンディアス表情変化用]
+[charaDepth E 5]
+[charaDepth A 2]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠オジマンディアス
+フン。長くは待たんぞ。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFace A 0]
+＠オジマンディアス
+…………さて。では、ニトクリス。[r]そして[%1]。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+＠ニトクリス
+は、はいっ。
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠オジマンディアス
+余は、とても気分がよい。[r]普段であれば行わぬ程度にリソースの無駄遣いをした。
+[k]
+
+[charaFace A 6]
+＠オジマンディアス
+うむ[line 3]
+[k]
+
+[charaFace A 8]
+＠オジマンディアス
+………………いや、自覚している。
+[k]
+
+＠オジマンディアス
+随分と我が[#儘:まま]を言ったものだ。[r]両名とも、それによくぞ応えてくれた。
+[k]
+
+＠オジマンディアス
+……本来であれば成し得ぬ事なのだ。[r]こうして余が異界の聖杯戦争の記憶を持ち越した事も、
+[k]
+
+＠オジマンディアス
+勇者二名がマスターを同じくして召喚された事も、[r]聖杯戦争という[#括:くく]りでは到底有り得ぬ事だ。
+[k]
+
+[charaFace A 0]
+＠オジマンディアス
+稀有なる奇蹟であるのだろう。[r]カルデアに於ける召喚式の驚嘆すべきところよな。
+[k]
+
+＠オジマンディアス
+そして、更に言えば……
+[k]
+
+[charaFace A 6]
+[messageOff]
+[wt 1.0]
+
+[charaTalk off]
+[charaFace E 7]
+[charaFadein E 1.0 1]
+[wt 1.0]
+
+＠オジマンディアス
+…………いや。これ以上は野暮というもの！
+[k]
+
+[charaFace E 2]
+＠オジマンディアス
+世話を掛けたな、ニトクリス！[r][%1]！
+[k]
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠ニトクリス
+ははっ。有り難き幸せにございます、ファラオ！
+[k]
+
+？1：どういたしまして
+？2：スッキリしたなら何より[&だ:だよ]！
+
+？！
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠オジマンディアス
+うむ。では、直々に褒美をとらす。
+[k]
+
+[charaFace A 1]
+＠オジマンディアス
+そうだな。[r]やはりここは、あれだろう。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageOff]
+[bgmStop BGM_EVENT_1 0.5]
+[wt 0.5]
+
+[se bas2]
+[equipSet E 9805490 1 ]
+[wait equipSet E]
+[charaFace E 0]
+[charaFadein E 0.5 0,-70]
+[wt 2.0]
+[charaFadeout E 0.4]
+[wt 0.5]
+
+
+？1：え！？
+
+？！
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠ニトクリス
+え、え？　今のは[line 3]ファラオ！？[r]あれはもしやスフィンクスの……アウラ……
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠オジマンディアス
+おっとこれはいかん。いかんいかん。[r]はは、何でもないぞニトクリス見たものを忘れよ！
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠ニトクリス
+し、しかし[line 3]
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠オジマンディアス
+では改めて褒美をとらす。[r]とはいえリソースの回復には時間が掛かるのも事実、
+[k]
+
+[charaFace A 6]
+＠オジマンディアス
+ここは余が語って聞かせるとしよう！[r]うむ。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.0]
+[wt 1.0]
+[bgm BGM_EVENT_6 0.1]
+
+[charaFace A 1]
+＠オジマンディアス
+我が最愛、ネフェルタリの名の意味は語ったか？[r]愛の女神ハトホルの冠を如何にして余が用意したか、
+[k]
+
+＠オジマンディアス
+語ったな。そうであろう。[r]でなければ此処に語るとしよう。如何する？
+[k]
+
+＠オジマンディアス
+それともトートの書の話をするか？[r]あ[charaFace A 0]れはブラヴァツキーに渡したのだったか……
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ニトクリス
+えっ、あっ、ぜ、ぜひ！　それは是非に！[r]お願いいたします！
+[k]
+
+＠ニトクリス
+ネフェルタリ様のお話も、トートの書のお話も！
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠オジマンディアス
+うむ。うむ！[r]だが、まずは……景気付けだ！
+[k]
+
+＠オジマンディアス
+シケリアのディオドロスが著した『歴史叢書』に[r]閃きを得たという詩聖、パーシー・シェリーの詩に曰く！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFace A 2]
+＠オジマンディアス
+[line 3]我が名はオジマンディアス、王の中の王[line 3]！
+[k]
+
+
+
+[messageOff]
+[fadeout black 3.0]
+[bgmStop BGM_EVENT_6 3.0]
+[wait fade]
+[soundStopAll]
+[end]

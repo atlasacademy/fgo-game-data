@@ -1,0 +1,104 @@
+
+
+＄02-00-02-08-3-1
+[soundStopAll]
+[charaSet A 99502600 1 マシュ]
+[charaSet B 98114300 1 アストルフォ]
+[charaSet C 98114400 1 デオン]
+[charaSet D 98002000 1 フォウ]
+[charaSet H 98002000 1 通信用]
+
+[se ad55]
+[seVolume ad55 0 0.4]
+[shake 0.05 0 1 0]
+
+[bgm BGM_EVENT_3 0.1]
+[scene 43000]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠フォウ
+フォウフォウ！
+[k]
+
+[charaFadeout D 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠マシュ
+新しい隠れ場所を探しています、[r]とにかく足を止めずに走り続けてください！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠アストルフォ
+なんとか勝ててよかったけど。[r]なんか全般的にしぶとかったような……。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠デオン
+戦って、ひとつ気付いたことがある。
+[k]
+
+＠デオン
+先程周囲に集まっていた市民[line 2]臣民か。[r]あいつらはおそらく、[#酷吏と同じもの]だぞ。
+[k]
+
+？1：どういうこと？
+？！
+
+[charaFace C 0]
+＠デオン
+なんとなくの気配や雰囲気の話になってしまうが。
+[k]
+
+＠デオン
+倒した酷吏の中身から感じたそれは、[r]根本的なところでは臣民と同じだと思えた。
+[k]
+
+＠デオン
+武装で差がついているだけというか[line 2]
+[k]
+
+＠デオン
+ここの女たちの中から選ばれたものが酷吏の役目をしている、[r]というだけの事だと思う。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アストルフォ
+酷吏だけが戦力じゃなくて。イースと同じで、[r]街全体が潜在的な脅威だ、ってことかな。
+[k]
+
+[charaFace B 1]
+＠アストルフォ
+まあ何にしても、さっき処刑台から助けたこの人もいる。[r]安全な場所を見つけて一息入れないとね！
+[k]
+
+
+[messageOff]
+[seStop ad55 1.5]
+[bgmStop BGM_EVENT_3 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

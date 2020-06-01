@@ -1,0 +1,401 @@
+
+＄94-03-22-19-2-1
+[soundStopAll]
+
+
+[charaSet A 98006200 1 猿面の怪]
+[charaSet B 1098161800 1 虎面の怪]
+[charaSet C 1098161900 1 蛇面の怪]
+[charaSet D 8001410 1 マシュ]
+[charaSet E 1098123200 1 ゴルドルフ]
+[charaSet F 1098161900 1 蛇庄屋]
+[charaSet G 1037002 1 紅閻魔]
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+[scene 70000]
+
+[charaTalk depthOff]
+[charaDepth B 2]
+[charaDepth C 1]
+[charaDepth A 0]
+[charaDepth J 3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0 1]
+
+[bgm BGM_EVENT_78 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad193]
+[se ade410]
+
+[charaPut B 1]
+[charaFace B 0]
+[charaFadeTime B 1.0 0.4]
+[charaMove B 2 1.0]
+[charaEffect B bit_talk_11]
+
+[charaPut C 1]
+[charaFace C 0]
+[charaFadeTime C 1.0 0.4]
+[charaMove C 0 1.0]
+[charaEffect C bit_talk_11]
+
+[wt 1.0]
+
+＠猿面の怪
+[messageShake 0.04 5 5 0.7]
+[image berserker_language_2][line 3]！！！！
+[k]
+
+＠猿面の怪
+どういう事だ、テメェ、テメェら[line 3]
+[k]
+
+＠猿面の怪
+蛇面！　虎面！　なんでテメェら、[r]そろいもそろってオレの足を引っ張りやがる！？
+[k]
+
+＠猿面の怪
+名前もねえ、行き場もねぇ、やる気もねぇ！[r]そんな三下を喰ってやったのは誰だと思ってやがる！
+[k]
+
+＠猿面の怪
+邪魔すんじゃねえ、逆らうんじゃねえ！[r]なんだってんだよ、この阿呆どもがぁ！？
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.3 0.8]
+[wait wipe]
+[charaPut C 1200,1200]
+[charaPut A 1200,1200]
+[charaPut B 1200,1200]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+[wt 0.2]
+[wipein rectangleStripLeftToRight 0.3 0.8]
+[wait wipe]
+
+＠マシュ
+[line 3]霊基反応、分裂[line 3][r]いえ、これは……自壊……しようとしている……？
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.3 0.8]
+[wait wipe]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaPut C 0]
+[charaPut A 1]
+[charaPut B 2]
+[wt 0.2]
+[wipein rectangleStripRightToLeft 0.3 0.8]
+[wait wipe]
+
+
+＠A：虎面の怪
+…………違う。逆らっては、いない。[r]…………オレは、頭のない胴体、だ。
+[k]
+
+＠A：虎面の怪
+…………知恵のあるおまえに……[r]…………従う事しか、できない。
+[k]
+
+＠A：虎面の怪
+…………だから……[r]…………オレは、紅ちゃんを助けられない。
+[k]
+
+＠A：虎面の怪
+…………オレは、オレのままだ……[r]…………負けるのは、貴様の力不足だ……
+[k]
+
+＠A：虎面の怪
+…………最後に言わせてもらうぞ。[r]…………オレは確かに[#頭:のう]無しだが……
+[k]
+
+＠A：虎面の怪
+…………おまえは、とことん[#無能]だったな。
+[k]
+
+[messageOff]
+[se ad596]
+[charaFadeout B 0.7]
+[charaEffectStop B bit_talk_11]
+[wt 2.0]
+[seStop ad596 0.3]
+
+[wt 0.5]
+[cueSe Battle bas13]
+[cueSeVolume bas13 0 0.6]
+[wt 1.0]
+[cueSeStop Battle bas13 0.3]
+
+＠猿面の怪
+テメェ、[#野良犬:のらいぬ]ヤロウの分際で……！
+[k]
+
+＠猿面の怪
+ああいいさ、テメェには何も求めてねぇ、[r]ほだされていたのは知ってるからな！
+[k]
+
+＠猿面の怪
+だが蛇面、テメェはどういうこった！？[r][#雀:すずめ]側に付く理由はねぇだろうが、オイ！？
+[k]
+
+＠A：蛇面の怪
+そうねぇ。紅閻魔ちゃんにつく理由はないわねぇ。[r]でも[line 3]
+[k]
+
+[messageOff]
+[wipeout circleIn 2.0 0.7]
+[bgmStop BGM_EVENT_78 2.0]
+[wait wipe]
+[charaPut C 1200,1200]
+[charaPut A 1200,1200]
+[wt 1.0]
+[effect bit_sepia01]
+[pictureFrame cut063_cinema]
+[wipein circleOut 2.0 0.7]
+[wait wipe]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 0,-50]
+[charaShake E 0.07 8 1 0.7]
+
+＠ゴルドルフ
+おわわわわ……[r]まずいぞ、まずいぞ、まずいぞ！
+[k]
+
+＠ゴルドルフ
+間違いなく呪いがかかった！[r]我々は何か、とてもたいへんな事をしでかしてしまった！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+[charaShake F 0.07 10 3 0.7]
+
+＠蛇庄屋
+あわわわわ……[r]まずいわ、まずいわ、まずいわ！
+[k]
+
+＠蛇庄屋
+こんな事になるなんて！　[#猿長者:さるちょうじゃ]に殺されちゃう！[r]いえ、その前に[#閻魔亭:えんまてい]を追い出されちゃう！
+[k]
+
+＠蛇庄屋
+イヤよ、アタシには行き場もお金もないのにィ！
+[k]
+
+＠蛇庄屋
+[#閻魔亭:えんまてい]の外に出たらアタシみたいな雑霊、[r]一日も持たずに霧散しちゃうわよォ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 0,-50]
+
+＠ゴルドルフ
+う、む？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 -256,-50]
+[charaFace E 7]
+[charaFadein E 0.1 256,-50]
+
+＠蛇庄屋
+い[messageShake 0.05 8 6 0.8]いい、今の、アタシのせいじゃないわよねぇ！？[r]アナタたちが勝手にやった事よねぇ！？
+[k]
+
+＠蛇庄屋
+ね、そうでしょ！？　お願い、アタシの事は黙っていて！[r]ここを追い出されたら消えちゃうの、アタシ！
+[k]
+
+[charaFace E 0]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+＠ゴルドルフ
+う、うむ。事情はよく分からんが……[r]追い詰められた者の気持ちは分かる。
+[k]
+
+＠ゴルドルフ
+分かった、行きなさい。[r]ここには我々しかいなかった。そうしよう。
+[k]
+
+＠蛇庄屋
+え？　ホント？　いいの？
+[k]
+
+[charaFace E 5]
+
+＠ゴルドルフ
+ええい、急がんか、警報が鳴っているだろうに！[r]おまえさんに悪気があったワケではないのだろう！？
+[k]
+
+＠ゴルドルフ
+ならいい！　自分の魔術知識に自信を持たず、[r]考えなしにフタをあけた私が八割方悪いのだからな！
+[k]
+
+[charaFace E 6]
+
+＠ゴルドルフ
+だがアテにするなよ！　激しい責任追及を受けた時、[r]私は自分の義理堅さをあまり信用できんからな！
+[k]
+
+＠蛇庄屋
+[line 6]
+[k]
+
+[messageOff]
+[wipeout circleIn 2.0 0.7]
+[wait wipe]
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[charaTalk A]
+[charaPut C -128,0]
+[charaPut A 128,0]
+[effectStop bit_sepia01]
+[pictureFrame]
+[wt 1.0]
+[wipein circleOut 2.0 0.7]
+[wt 1.0]
+[bgm BGM_EVENT_78 0.1]
+[wait wipe]
+
+＠A：蛇面の怪
+[#虎名主:とらなぬし]のコトは笑えないわぁ。[r]結局、アタシたちってその場その場の恩に弱いのよねぇ。
+[k]
+
+＠A：蛇面の怪
+なーんで、アタシも[#もうこの世はいいわ]。[r]最後に沢山の目の保養もできたしぃ[line 3]
+[k]
+
+＠A：蛇面の怪
+本当に愉快な気持ちで、楽しいお酒も飲めたしねぇ？
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.3 0.8]
+[wait wipe]
+[charaPut C 1200,1200]
+[charaFadeout A 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.2]
+[wipein rectangleStripLeftToRight 0.3 0.8]
+[wait wipe]
+
+＠ゴルドルフ
+[FFFFFF]？[-]
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.3 0.8]
+[wait wipe]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaPut C 1]
+[wt 0.2]
+[wipein rectangleStripRightToLeft 0.3 0.8]
+[wait wipe]
+
+＠A：蛇面の怪
+じゃあね。アンタの陰湿さには付いていけないわ、猿。[r]そもそもアタシ、尻尾ってところもイヤだったの。
+[k]
+
+[messageOff]
+[se ad596]
+[charaFadeout C 0.7]
+[charaEffectStop C bit_talk_11]
+[wt 2.0]
+[seStop ad596 0.3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.5]
+[cueSe Battle bas13]
+[cueSeVolume bas13 0 0.6]
+[wt 1.0]
+[cueSeStop Battle bas13 0.3]
+
+＠猿面の怪
+ぐ、ぐぇぇぇぇええ……！[r]なんだそりゃあ……なんだそりゃあ！
+[k]
+
+＠猿面の怪
+[#頭:オレ]がいなけりゃ何もできねえ三下のクセに、[r]こぞって先に昇天しやがって！
+[k]
+
+＠猿面の怪
+くそ、戻ってこい、戻ってこい、戻ってこいグズども！
+[k]
+
+＠猿面の怪
+オレは頭だぞ！？[r]テメェらの親分だぞ！？
+[k]
+
+＠猿面の怪
+ああチクショウ！　いくらオレが天才でも、[r][#胴体と尾がなけりゃあ何もできやしねえじゃねえか]！
+[k]
+
+[messageOff]
+[wt 0.3]
+[se ad290]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.1]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[seStop ad290 0.5]
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠紅閻魔
+納得いったでちか。[r]それがおまえ様の末路でち。
+[k]
+
+＠紅閻魔
+己の利益、[#悦:よろこ]びのために嘘をつき、[r]人様の幸福を[#妬:ねた]んだ者には誰も力を貸しまちぇん！
+[k]
+
+＠紅閻魔
+閻魔のお裁き、これにて閉廷！[r]地獄の底からやり直すでち！
+[k]
+
+[bgmStop BGM_EVENT_78 1.0]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

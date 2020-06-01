@@ -1,0 +1,294 @@
+
+
+
+
+＄91-30-35-01-4-0
+
+
+[soundStopAll]
+
+[charaSet A 3035001 1 秦良玉]
+[charaSet B 5011001 1 バベッジ]
+
+[charaSet C 1098187100 1 エルメロイⅡ世]
+[charaSet D 4032000 1 ライネス]
+[charaSet E 11005001 1 ヘシアン・ロボ]
+[charaSet F 5004001 1 ナーサリー・ライム]
+[charaSet G 98111500 1 通信用ノイズ]
+
+[charaPut G 1200,1200]
+[charaEffect G bit_talk_10_LowLevel]
+
+[scene 37300]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠バベッジ
+ふむ。
+[k]
+
+＠バベッジ
+三体倒しても、修正できる気配はなしか。[r]どうやら相当根深いバグのようだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠エルメロイⅡ世
+やはりそうか。
+[k]
+
+[charaFace C 0]
+＠エルメロイⅡ世
+……仕方あるまい、マスター。[r]頼んでいた一件だが、どうなった？
+[k]
+
+？1：な、何とかなった[&:よ]……！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ライネス
+おや、穏やかじゃないな。[r]何を頼んだんだい、我が兄よ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠エルメロイⅡ世
+理由は不明だが、ジャイアントパンダはよりにもよって[r]サーヴァントである狼王ロボに置換されている。
+[k]
+
+＠エルメロイⅡ世
+となれば、一番良いバグの修正方法は[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠バベッジ
+正しいデータと比較して、[r]戦闘を行うことだな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠秦良玉
+なるほど。
+[k]
+
+[charaFace A 6]
+＠秦良玉
+……え、待ってください。[r]となると、正しいデータとは……！
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+[se ad334]
+＠ヘシアン・ロボ
+……。[r]……。
+[k]
+
+？1：苦労した……！
+？！
+
+[messageOff]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+[wipeout circleIn 1.5 0.5]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 0.5]
+
+[scene 20110]
+
+[effect bit_sepia01]
+
+[wt 1.0]
+[wipein circleIn 1.5 0.5]
+[wait wipe]
+
+[wt 0.4]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+＠ナーサリー・ライム
+かくかくしかじか、[r]以上の通りよ。
+[k]
+
+[charaFace F 1]
+＠ナーサリー・ライム
+もちろん、あなたにとってはどうでもいいことよ。[r]でもね、でも[line 3]
+[k]
+
+[charaFace F 0]
+＠ナーサリー・ライム
+[#あなたの偽物がうろつき回るのは]、[r][#縄張りを侵しているようなものじゃないかしら]？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠ヘシアン・ロボ
+……。[r]……。
+[k]
+
+[messageOff]
+
+[se ad359]
+[charaFace E 2]
+
+[wt 1.0]
+
+[bgmStop BGM_EVENT_48 0.4]
+[wipeout circleIn 1.5 0.5]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 1.0]
+
+[effectStop bit_sepia01]
+
+[scene 37300]
+
+[wipein circleIn 1.5 0.5]
+[wait wipe]
+[wt 0.4]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠ヘシアン・ロボ
+……。[r]……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠秦良玉
+マスター、マスター。[r]ロボさんは……今、どんな感じでしょう？
+[k]
+
+？1：滅茶苦茶怒ってるっぽい
+？！
+
+[charaFace A 4]
+＠秦良玉
+ですよねー！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ライネス
+兄上、この状況に対して何か一言。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠エルメロイⅡ世
+……私からの助言はただ一つだ。
+[k]
+
+[charaFace C 5]
+＠エルメロイⅡ世
+巻き込まれるなよ、[r]不機嫌な狼王など暴風と同義だからな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ライネス
+これはこれは潔いアドバイスだ。[wt 0.5][charaFace D 5][r]では、ともかくこの量産型ロボ[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad334]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠ヘシアン・ロボ
+……。[r]……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠ライネス
+失礼。[wt 0.3][charaFace D 0][r]偽物のナントカをとにかく倒すとしよう！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_62 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

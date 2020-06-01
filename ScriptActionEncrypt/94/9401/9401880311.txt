@@ -1,0 +1,498 @@
+
+
+＄94-01-88-03-1-1
+
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[charaSet A 2022000 1 アルテラサンタ]
+[charaSet B 11001000 1 ブラックサンタ]
+[charaSet C 11001002 1 ブラックサンタ_シルエット]
+[charaSet D 11001002 1 ブラックサンタ_霊基第三]
+[charaSet E 98100800 1 名羊ツェルコ]
+[equipSet F 9402470 2 概念礼装1瓦礫の聖堂]
+[equipSet G 9402050 2 概念礼装2天の逆月]
+
+[scene 50901]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+＠アルテラサンタ
+どうだ……！[r]黒いサンタクロース、成敗！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaEffect B bit_talk_41]
+[charaShake B 0.05 2 2 2.0]
+
+＠ブラックサンタ
+ぐわあああああああああ！[r]羊が、羊が降ってくる[line 5]！
+[k]
+
+[messageOff]
+
+[se ade135]
+[seVolume ade135 0 0.5]
+[wt 0.5]
+[se bac10]
+[fowardEffect bit_talk_magical_pon]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaEffectStop B bit_talk_41]
+[charaShake B 0.05 4 4 0.8]
+[wait se bac10]
+
+[wt 0.3]
+[charaFadeout B 0.4]
+[charaMove B 0,-30 0.4]
+[wt 0.4]
+[se ad144]
+[seVolume ad144 0 0.5]
+[wt 1.0]
+[bgmStop BGM_EVENT_3 1.5]
+[wt 1.0]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.7 0,-60]
+[wt 0.4]
+
+[charaMove B 10,-45 0.4]
+[wait charaMove]
+[charaMove B -10,-30 0.4]
+[wait charaMove]
+[charaMove B 0,0 0.4]
+[wait charaMove]
+[wt 0.5]
+
+
+＠ブラックサンタ
+……って、マジに容赦ねえでやんの。[r]ちょっと脅かしただけだったんだけどなー。
+[k]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠ブラックサンタ
+プレゼントが欲しいのはホントなんだけどなー。[r]一方的に悪役と決められるのもなー。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アルテラサンタ
+む……それは、確かに……[r]だが、とても言いにくいのだが、おまえは[line 3]
+[k]
+
+？1：とてもサンタクロースに見えないし……
+？2：クリスマスっぽくないし……
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ブラックサンタ
+あ、そこ？　クリスマスっぽければいいんだ？[r]んじゃあ、オレの本気をお見せしましょう！
+[k]
+
+＠ブラックサンタ
+へーんしん！[r]デコレ[line 6]ション！
+[k]
+
+
+[messageOff]
+
+[wt 0.5]
+[se ad39]
+[charaEffect B bit_talk_36_bl]
+[wt 0.5]
+
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[fadeout white 1.5]
+[wt 0.3]
+[charaEffectStop B bit_talk_36_bl]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.8]
+[se ade35]
+[wait fade]
+[wt 0.2]
+
+[charaFadeout B 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+[fadein white 1.0]
+[wait fade]
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠アルテラサンタ
+……！　これは……この輝きは……
+[k]
+
+？1：イヴにありがちなイルミネーションだ！
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ブラックサンタ
+どうよ、このムーディなボディライト！[r]年に一度ぐらいは輝きますよオレは！
+[k]
+
+＠ブラックサンタ
+そういう訳で、デートの待ち合わせ等、[r]気兼ねなく利用していただければ幸いです。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠アルテラサンタ
+本当にサンタの一種だったのか……[r]サンタクロース道は奥が深い……
+[k]
+
+＠アルテラサンタ
+そして謝罪しなくては……[r]ウェーイなサーヴァントと決めつけてすまない……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ブラックサンタ
+まあまあ、冤罪・中傷・制裁は慣れてるんで[r]気にしなさんな。それより……
+[k]
+
+
+[messageOff]
+[wt 0.2]
+
+[se ad77]
+[charaMove D 5,0 0.3]
+[wait charaMove]
+[charaMove D -5,0 0.3]
+[wait charaMove]
+[charaMove D 0,0 0.3]
+[wait charaMove]
+[wt 0.1]
+
+[se ade136]
+[seVolume ade136 0 0.3]
+[charaFadeout D 0.1]
+[wt 0.1]
+[se ad181]
+
+＠名羊ツェルコ
+メー。（痛い）[r]ドメー。（そして痛い）[seStop ade136 0.4]
+[k]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠アルテラサンタ
+ツェルコに何をする！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ブラックサンタ
+んー、このヘンかな？[r]ほいっと。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[se ad183]
+[charaFace F 0]
+[charaFadein F 0.5 0,-70]
+[wt 2.0]
+[charaFadeout F 0.4]
+[wt 0.8]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+[wt 0.8]
+
+＠ブラックサンタ
+んー、そういうんじゃなくてですねぇ。[r]もっと後腐れがないヤツがですねぇ。
+[k]
+
+[messageOff]
+
+[se ad77]
+[charaMove D 5,0 0.3]
+[wait charaMove]
+[charaMove D -5,0 0.3]
+[wait charaMove]
+[charaMove D 0,0 0.3]
+[wait charaMove]
+
+[wt 0.5]
+
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[se ad183]
+[charaFace G 0]
+[charaFadein G 0.5 0,-70]
+[wt 2.0]
+[charaFadeout G 0.4]
+[wt 0.8]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+[wt 0.3]
+
+＠ブラックサンタ
+…………。
+[k]
+
+[charaFace D 0]
+
+＠ブラックサンタ
+ま、いっか！[r]このあたりで妥協してあげましょう！
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠アルテラサンタ
+あわ、わ……！　待て、プレゼントは一つだけだ！[r]特別な贈りもの、なのだから……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ブラックサンタ
+あったま固いなー。[r]プレゼントが一つだけなんて誰が決めたんだ？
+[k]
+
+＠ブラックサンタ
+いいんだよ、二つでも三つでも。[r]それが本当に欲しいものなら。
+[k]
+
+＠ブラックサンタ
+いずれ取りこぼすにしても、[r]それは持ちきれなくなった本人の問題だ。
+[k]
+
+＠ブラックサンタ
+持てる時は、両手に持てるだけ持っていけばいい。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠アルテラサンタ
+そ……そうなのか？[r]欲張りにはサンタクロースは現れないと聞いたが……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ブラックサンタ
+えー、[r]サンタクロースを待つヤツは欲張りだろー？
+[k]
+
+＠ブラックサンタ
+んで、サンタクロースを信じないヤツのところに[r]出向くのが、欲深いサンタクロースってワケ。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_2 2.0]
+[charaFadeout D 0.4]
+[wt 0.5]
+[se ad14]
+[shake 0.05 3 3 3.6]
+[scene 50900 2.5]
+[wt 3.0]
+[seStop ad14 1.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_11 2.0]
+
+
+
+[charaEffect D bit_talk_06]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠ブラックサンタ
+おっと。これで門が開くのか。[r]やるねぇ。即興にしてはうまく考えたもんだ。
+[k]
+
+＠ブラックサンタ
+これなら[#今]の冥界のボスも止めようがない。[r]アンタらはルール通り先に進んでるんだからな。
+[k]
+
+？1：何か知っているんですか？
+
+[charaFace D 1]
+
+＠ブラックサンタ
+いや、べっつにー、なっにもー？[r]オレは生贄の羊ですしぃー。なーんにも知ーらない！
+[k]
+
+？2：ボスについて、詳しく
+
+
+＠ブラックサンタ
+そりゃあ冥界のボスといえば[#一柱:ひとり]しかいないって[r]話ですよ。エレシュキガルさん、ご存じでない？
+[k]
+
+？！
+
+
+[wt 0.3]
+[messageOff]
+
+[charaDepth C 1]
+[charaFilter C silhouette 00000000]
+
+[charaFadein C 0.1 1]
+[wt 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaFadein C 0.1 1]
+[wt 0.1]
+[charaFadeout C 0.1]
+[wt 0.3]
+[charaFadein C 0.4 1]
+[wt 0.2]
+
+[se ad236]
+[flashin once 0.1 0.8 FFFFFFAF FFFFFF00]
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[charaFadein B 0.1 1]
+
+[wt 1.0]
+
+＠ブラックサンタ
+おっと、このあたりが限界かね。[r]プレゼント、サンキュー！
+[k]
+
+
+＠ブラックサンタ
+次の門にはアレだ、アンタに縁のある女神がいる。[r]ほら。やたら陽気で、プロレスしかけてくるアレ。
+[k]
+
+＠ブラックサンタ
+詳しい話はそこで聞けるんじゃない？[r]あの女神は自由だから、出し惜しみはしないだろ。
+[k]
+
+[charaFace B 1]
+
+＠ブラックサンタ
+などと、なんだかんだと満足したオレは最後に[r]情報提供をして消えるのであった。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[charaEffectStop B bit_talk_06]
+[se ad52]
+[charaSpecialEffect B flashErasure 1 2.0]
+[wait charaSpecialEffect B]
+[charaEffectStop D]
+[wt 1.5]
+
+？1：消えてしまった……
+？2：自由な……女神……（ゴクリ）
+
+？！
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠アルテラサンタ
+……次の門番は女神か……[r]確かに、三層から強い神気を感じる。
+[k]
+
+＠アルテラサンタ
+女神であれば話はスムーズに進むだろう。[r]急ごう、[%1]。
+[k]
+
+＠アルテラサンタ
+黒いサンタの言う『冥界のボス』とは誰なのか、[r]次こそはっきりする筈だ。
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_11 2.0]
+[wait fade]
+[wt 0.4]
+[soundStopAll]
+[end]

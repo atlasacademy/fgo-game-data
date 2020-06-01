@@ -1,0 +1,536 @@
+
+
+
+＄03-00-00-04-1-0
+
+[soundStopAll]
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 98002000 1 フォウ]
+[charaSet C 1098123000 1 カルデアスタッフ]
+[charaSet D 1098123400 1 神父]
+[charaSet E 1098123500 1 警備兵]
+
+[charaSet F 8001002 1 マシュ（ギャラハッド）]
+
+[charaSet G 1098123600 1 殺戮猟兵]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[scene 51400]
+
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+
+[se ad96]
+[seVolume ad96 0 0.2]
+[wt 1.0]
+[seStop ad96 0.5]
+[se bac21]
+[seVolume bac21 0 0.2]
+[wt 0.5]
+[se bac21]
+[seVolume bac21 0 0.2]
+[wt 1.0]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.1]
+[charaMoveReturn B 0,10 0.25]
+
+＠フォウ
+！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+今のは……銃声です、先輩！[r]でも、どうしてカルデア館内で！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+＠神父
+ふむ、始まったか。では[%1]君。[r]名残はつきないがお別れだ。
+[k]
+
+＠神父
+あの猟兵たちは動くものに反応する。[r]しばらくは外に出ない事をお勧めするよ。
+[k]
+[messageOff]
+
+[charaFadeout D 0.4]
+[se ad95]
+[wt 1.5]
+[seStop ad95]
+[se ad8]
+[wt 2.0]
+
+
+[se ad540]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠カルデアスタッフ
+ちょっ、ロックがかかったぞ！？[r]解放してくれるんじゃなかったのかよ！
+[k]
+
+＠カルデアスタッフ
+何がどうなってるんだ、おい！[r]外の！　今の銃声は何だ！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+＠警備兵
+やかましい、おとなしくしろ！[r]こっちはそれどころじゃないんだ！
+[k]
+
+[messageOff]
+[se ad15]
+[wt 0.1]
+[seStop ad13]
+[wt 1.0]
+
+[se ad31]
+[seVolume ad31 0 0.4]
+
+＠警備兵
+こちらクローバー３、応援要請を傍受した！[r][#管轄:エリア]違いだがスペード隊に合流する！
+[k]
+
+＠警備兵
+俺が行くまで持ちこたえろ！[r]カルデアスタッフが邪魔なら先に処理してかまわん！
+[k]
+
+[messageOff]
+
+[seStop ad31 1.5]
+[se ad132]
+[wt 1.5]
+[seStop ad132 1.0]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠カルデアスタッフ
+な……ロックしたまま行っちまったのか！？[r][%1]、どうする！？
+[k]
+
+？1：……静かにしていましょう……
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい。……不本意ですが、わたしも同感です。[r]ダ・ヴィンチ所長代行の安否が気になりますが……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠カルデアスタッフ
+そ、そうか。……たしかに鍵も開けられないし、[r]様子を見るしかないよな……
+[k]
+
+＠カルデアスタッフ
+けど……もしこのまま誰も来なかったら……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……その時はわたしに考えがあります。[r]20分だけ様子をみてください。
+[k]
+
+＠マシュ
+その上で警備兵が戻ってこないのなら、[r]わたしがあの扉を何とかします。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠フォウ
+フォーウ……。
+[k]
+
+？2：……なんとかして外にでよう
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠マシュ
+先輩、先ほどから通風口を見ていますが……[r]あそこから出るつもりですか？
+[k]
+
+＠マシュ
+言いにくいのですが、あの通風口は[r]とても狭いので……フォウさんぐらいしか……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠フォウ
+フォウ。[r]フォウ、フォーウ。
+[k]
+
+？！
+[messageOff]
+[charaFadeout B 0.1]
+[bgmStop BGM_EVENT_5 0.5]
+[wt 0.5]
+
+[se ad419]
+[seVolume ad419 0 0.5]
+[shake 0.05 3 3 0.3]
+[wt 1.0]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠カルデアスタッフ
+（わ、わ……！　いまドアに何かぶつかっ……[r]　ひしゃげてる、ひしゃげてるよ、ドア！）
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+（ミスター・ムニエル、お静かに……！[r]　……通路に複数の気配を感じます）
+[k]
+
+＠マシュ
+（……でも、この魔力濃度……[r]　これではまるで[line 3]）
+[k]
+
+？1：……まさか、サーヴァント？
+
+[charaFace A 4]
+
+＠マシュ
+…………。
+[k]
+
+？2：……うーん、ローマ兵かな？
+
+[charaFace A 14]
+
+＠マシュ
+……だと良かったのですが。[r]でも、ありがとうございます先輩。
+[k]
+
+＠マシュ
+気を遣っていただいて。おかげで、[r]わたしも深呼吸ができました。
+[k]
+
+？！
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 51401 1.0]
+
+[se ad419]
+[seVolume ad419 0 0.5]
+[shake 0.05 3 3 0.3]
+[wt 0.3]
+[se ad419]
+[seVolume ad419 0 0.5]
+[shake 0.05 3 3 0.3]
+[wt 0.3]
+[se ad419]
+[seVolume ad419 0 0.5]
+[shake 0.05 3 3 0.3]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠フォウ
+フォウ、フォーウ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠カルデアスタッフ
+（ひぃぃ、来る……！[r]　ドアが破られるぞ……！）
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+っ……お二人とも、下がって……！
+[k]
+
+＠マシュ
+先輩……わたしに武装の許可を！
+[k]
+
+＠マシュ
+バックアップをお願いします……！[r]令呪の力なら、もう一度ぐらいは……！
+[k]
+
+？1：[line 3]だめだ。マシュの体は[line 3]
+？2：……それはできない
+
+？！
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad419]
+[seVolume ad419 0 0.5]
+[shake 0.05 3 3 0.3]
+[wt 0.3]
+[se ad419]
+[seVolume ad419 0 0.5]
+[shake 0.05 3 3 0.3]
+[wt 0.3]
+[se ad419]
+[seVolume ad419 0 0.5]
+[shake 0.05 3 3 0.3]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+時間がありません……！[r]わたしは平気です、今までずっと鍛えてきましたから！
+[k]
+
+＠マシュ
+ダ・ヴィンチさんからも戦闘だけなら可能だと[r]言われています！　だから、どうか……！
+[k]
+
+＠マシュ
+今までナビゲーターしかできなかった[r]わたしだからこそ、ここで戦いたいのです！
+[k]
+
+＠マシュ
+だって、そうしないとみんな殺されてしまう！[r]わたしたちのカルデアが壊されてしまう！
+[k]
+
+＠マシュ
+そんな気がしてたまらないのです！[r]お願い[line 3]マスター・[%1]！
+[k]
+
+[charaPut H 1]
+
+[flag IsMale true]
+
+[selectionUse masterMale]
+？1：[line 3]！
+[flag IsMale true]
+？2：[line 3]頼む、マシュ！
+[flag IsMale true]
+
+？！
+
+[selectionUse masterFemale]
+？1：[line 3]！
+[flag IsMale false]
+？2：[line 3]頼む、マシュ！
+[flag IsMale false]
+
+？！
+
+[messageOff]
+
+[branch _Male IsMale true]
+[branch _Female IsMale false]
+
+[label _Male]
+[charaEffect H bit_talk_CommandMantra_01 0,64]
+
+[branch _branchEnd]
+
+[label _Female]
+[charaEffect H bit_talk_CommandMantra_02 0,64]
+
+[label _branchEnd]
+[se bas16]
+[wait charaEffect H]
+[charaPut H 1200,1200]
+[charaEffectStop H]
+
+[wt 0.5]
+[effect bit_talk_36]
+[se ad39]
+[wt 1.5]
+[charaFilter A silhouette FFFFFF80]
+[se ba15]
+[wt 1.0]
+[charaTalk F]
+[charaFace F 7]
+[flashin once 0.1 0.3 FFFFFF80 FFFFFF00]
+[effectStop bit_talk_36]
+[charaFadein F 0.1 -70,0]
+[charaFadeout A 0.1]
+[wt 1.5]
+
+[charaFadeout F 0.1]
+[wt 0.5]
+
+
+[scene 51402 0.3]
+[se ad38]
+[shake 0.05 5 4 0.3]
+[wt 1.5]
+
+[charaTalk F]
+[charaFace F 15]
+[charaFadein F 0.1 1]
+
+＠F：マシュ
+ぁ……っ……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠カルデアスタッフ
+やった……やったけど、マシュは大丈夫なのか[r][%1]！？
+[k]
+
+＠カルデアスタッフ
+なんか、めちゃくちゃ辛そうだぞ！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠F：マシュ
+わた、しは、平気です……！[r]それより後ろに[line 3]
+[k]
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_3 0.5]
+[wt 0.5]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠？？？
+[line 6]。[bgm BGM_EVENT_24 0.1][r][line 12]。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠カルデアスタッフ
+うわああ出たぁあああ！[r]ってなんだアレ、どこのどいつだぁ！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠F：マシュ
+戦闘、開始します……！[r]マスター、指示を……！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

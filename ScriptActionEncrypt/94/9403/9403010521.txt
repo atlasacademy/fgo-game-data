@@ -1,0 +1,623 @@
+
+
+＄94-03-01-05-2-1
+
+
+[soundStopAll]
+
+[charaSet A 6005001 1 ハンバーグの鬼]
+[charaSet B 5002001 1 シーフードの鬼]
+[charaSet C 1098157600 1 護法少女]
+[charaSet D 1098157700 1 小動物]
+[charaSet E 10008001 1 シトナイ]
+[charaSet F 3034002 1 茨木童子]
+[charaSet G 6029001 1 アサシン・パライソ]
+[charaSet H 98115000 1 エフェクト用]
+
+
+
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 64800]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+[charaEffect H bit_talk_h_slash02]
+[se adm14]
+[wt 0.2]
+[charaEffect H bit_talk_v_slash02]
+[se adm15]
+[charaFadeout G 0.1]
+[wt 0.4]
+
+[charaTalk depthOff]
+[charaDepth A 0]
+[charaDepth H 1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[charaShake A 0.03 4 4 0.6]
+
+[se bac209]
+[charaPut H -200,200]
+[charaEffect H bit_talk_14]
+[wt 0.2]
+[se bac210]
+[charaPut H 200,-100]
+[charaEffect H bit_talk_14]
+[wt 0.3]
+
+＠ハンバーグの鬼
+くっ……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk depthOff]
+[charaDepth C 0]
+[charaDepth D 1]
+
+[charaTalk D]
+[charaFace C 0]
+[charaFace D 5]
+[charaFadein C 0.1 1]
+[charaFadein D 0.1 0,0]
+
+＠小動物
+今だ。全魔力で行け！
+[k]
+
+[messageOff]
+
+[charaTalk C]
+
+[charaFace C 3]
+[wt 1.0]
+
+[charaFace C 0]
+
+＠護法少女
+[line 3]鬼は、鬼。在るがままに。
+[k]
+
+＠護法少女
+[line 3]鬼の法は人の法ならざれど[line 3]
+[k]
+
+
+＠護法少女
+[line 3]是を破るは鬼の外道[#也:なり]。外道、[#疾:と]く去るべし[line 3]
+[k]
+
+[messageOff]
+[wt 0.2]
+[charaMoveReturn C 0,10 0.5]
+[wt 0.5]
+[se ad547]
+[se ad129]
+[wt 1.4]
+
+[charaFace C 1]
+＠護法少女
+[f large]『[#護法少女:ご　ほ　う　し　ょ　う　じ　ょ]・[#九頭竜鏖殺:く　ず　り　ゅ　う　お　う　さ　つ]』！
+[k]
+
+[messageOff]
+
+[charaPut H 1]
+[charaDepth H 10]
+[wt 0.5]
+[se ad39]
+[charaEffect H bit_talk_36_bl]
+[wt 1.5]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_36_bl]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.3]
+[flashin once 0.1 1.0 5944EAFF 5944EA80]
+[effect bit_talk_14]
+[wt 0.5]
+[se bac165]
+[se bas13]
+[bgmStop BGM_EVENT_3 0.5]
+[fadeout white 0.5]
+[cueSe Servants_301400 bac506]
+[wait fade]
+
+[scene 10001]
+[wt 1.0]
+
+[fadein white 0.1]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠シーフードの鬼
+おおおおおおおおお……！！！[r]これは……勝利の美酒、いや……！
+[k]
+
+＠シーフードの鬼
+敗北の[line 3]！！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[se ad606]
+[fadeout white 2.0]
+[seStop bac165 1.0]
+[wait fade]
+
+[charaShakeStop B]
+
+[se ad609]
+[scene 64800]
+[wt 2.5]
+
+[charaFace B 4]
+
+[fadein white 1.0]
+[wait fade]
+
+[charaPut H 1]
+
+[bgm BGM_EVENT_11 0.1]
+[charaEffect H bit_talk_06]
+
+[wt 1.0]
+
+[se ad52]
+[charaSpecialEffect B flashErasure 1 2.0]
+[wait charaSpecialEffect B]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ハンバーグの鬼
+……ふー。たくさん遊んだら、眠くなってきちゃった……
+[k]
+
+
+[messageOff]
+
+[se ad52]
+[charaEffectStop H bit_talk_06]
+[charaSpecialEffect A flashErasure 1 2.0]
+[wait charaSpecialEffect A]
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 98111500 1 ダ・ヴィンチ]
+[wt 1.5]
+
+[cueSe Battle bac199]
+[cueSeVolume bac199 0 0.6]
+
+[charaPut H 1]
+[charaEffect H bit_talk_gold_kamui]
+[wt 3.0]
+[charaPut H 1200,1200]
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 18]
+[charaFadein E 0.1 1]
+
+＠シトナイ
+おいで、おいで。[r]慣れない人型は疲れたよね。元の[#カタチ:黄　金]に戻りなさい。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[wt 1.0]
+[se adm19]
+[charaEffectStop H bit_talk_gold_kamui]
+[wt 1.0]
+[seStop adm19 1.0]
+[wt 1.0]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+
+＠シトナイ
+…………お疲れさま。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.0]
+[charaFadeout E 0.1]
+[wt 1.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マシュ
+第三の黄金、回収完了を確認しました！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+＠ダ・ヴィンチ
+順調順調、この調子で全部無事に回収したいところだね。
+[k]
+
+[charaFadeout B 0.1]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein C 0.1 1]
+[charaFadein D 0.1 0,0]
+＠護法少女
+ほな、またー。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaEffect C bit_talk_quickmove]
+[charaSpecialEffect D erasureReverse 1 0.3]
+[charaSpecialEffect C erasureReverse 1 0.3]
+[se ad73]
+[wt 1.0]
+
+[charaTalk on]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠茨木童子
+あっ！　[wt 0.6][charaFace F 4]また行ってしまったぞ……。
+[k]
+
+＠茨木童子
+鬼救阿……もう少し残ってくれていたら……[r]酒呑を探して引き合わせたものを……むう、無念である。
+[k]
+
+[charaFace F 0]
+＠茨木童子
+ふたりとも、きっと話が合うと思うのだ。[r]不思議とそんな気がしてならぬ。
+[k]
+
+？1：そうだね
+？2：もしも二人が話すことがあればね……
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠G：[servantName 602900:アサシン・パライソ:望月千代女]
+では、とりあえず食事の続きと参りますか。[r]お館様はカレーライスを未だ完食されておられぬ模様。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+周囲に敵性反応はありません。[r]ひとまずは安全、なのでしょうか？
+[k]
+
+[charaFadeout A 0.1]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠G：[servantName 602900:アサシン・パライソ:望月千代女]
+同じ場所にマネージャーは出現[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+＠シトナイ
+しないはずよ。[r]でも、何が起こるか分からないから警戒はしておくわ。
+[k]
+
+＠シトナイ
+同じようなミスはもうしないわ。[r]食事が終わったら……
+[k]
+
+[charaFace E 2]
+＠シトナイ
+一度、山小屋に戻って作戦会議といきましょう！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠G：[servantName 602900:アサシン・パライソ:望月千代女]
+では拙者、単独にて情報収集をば！[r]思えばいまだに忍びの役目を果たせておりませぬ！
+[k]
+
+？1：お願いするよ、[servantName 602900:パライソ:千代女]
+？2：山小屋で合流だね
+
+？！
+
+[charaFace G 2]
+＠G：[servantName 602900:アサシン・パライソ:望月千代女]
+はっ。お任せあれ！
+[k]
+
+[charaFace G 0]
+＠G：[servantName 602900:アサシン・パライソ:望月千代女]
+時に、目標はどこにいたしましょう。[r]結果的に第四の黄金ということになりますが。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠シトナイ
+そうね。次に狙うアトラクションは[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.5]
+[effect bit_talk_41]
+[cameraMove 0.2 0,0 1.1]
+[wt 0.2]
+[se ad186]
+[charaFace E 2]
+＠シトナイ
+[line 3]ミラーハウス！
+[k]
+
+＠シトナイ
+[line 3]入ったことないからよく知らないけど、そこよ！
+[k]
+[messageOff]
+[wt 1.0]
+[fadeout black 1.5]
+[wait fade]
+
+[effectStop bit_talk_41]
+[charaFadeout E 0.1]
+
+[cameraHome 0.1]
+
+[wt 2.0]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+[bgm BGM_BATTLE_29 0.1]
+
+＠鬼王朱裸
+……グフフフフ、やるではないか。
+[k]
+
+＠鬼王朱裸
+よもやあの二騎のゴールドサーヴァントを倒すとは。[r]これは我も認識を改めねばならぬか。
+[k]
+
+＠鬼王朱裸
+グフフ[line 3][r]ガーッハッハッハ！
+[k]
+
+＠鬼王朱裸
+しかし次なるアトラクションはどうかな？[r]ミラーハウス……それは永遠無限に続く万華鏡の迷宮……
+[k]
+
+＠鬼王朱裸
+もちろん実際に無限という訳ではないが[r]歩いているとそんな感じに不安になるアレ！
+[k]
+
+＠鬼王朱裸
+複数人で行けばそれはもう盛り上がる！[r]ドキドキ！　ドギマギ！　フフフフ、ハハハハハハ！
+[k]
+
+＠鬼王朱裸
+遠慮はいらぬ、アトラクションマネージャー！[r]おまえの凶刃ですべて[#屠:ほふ]ってしまえぇい！
+[k]
+
+＠鬼王朱裸
+グフフフフフフフ！[r]あ、終わったらきちんと血は掃除しておきなさいよ！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+
+
+[fadeout black 1.0]
+[bgmStop BGM_BATTLE_29 1.0]
+[wait fade]
+
+[input selectBranch]
+
+[bgmStop BGM_EVENT_3 1.0]
+[bgmStop BGM_EVENT_11 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[bgmStop BGM_BATTLE_29 1.0]
+
+[seStop adm14 0.1]
+[seStop adm15 0.1]
+[seStop bac209 0.1]
+[seStop bac210 0.1]
+[seStop ad547 0.1]
+[seStop ad129 0.1]
+[seStop ad39 0.1]
+[seStop bac165 0.1]
+[seStop bas13 0.1]
+[seStop ad606 0.1]
+[seStop ad609 0.1]
+[seStop ad52 0.1]
+[seStop adm19 0.1]
+[seStop ad73 0.1]
+[seStop ad186 0.1]
+
+[effectStop bit_talk_14]
+[effectStop bit_talk_41]
+
+[charaSet A 6005001 1 ハンバーグの鬼]
+[charaSet B 5002001 1 シーフードの鬼]
+[charaSet C 1098157600 1 護法少女]
+[charaSet D 1098157700 1 小動物]
+[charaSet E 10008001 1 シトナイ]
+[charaSet F 3034002 1 茨木童子]
+[charaSet G 6029001 1 アサシン・パライソ]
+[charaSet H 98115000 1 エフェクト用]
+
+[scene 10000]
+[skip false]
+
+[messageOff]
+[maskin black 1.0]
+[wait mask]
+
+[fadeout black 0.1]
+[wait fade]
+[soundStopAll]
+
+[label selectBranch]
+
+[skip false]
+
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+＠
+【caution！】[r]【この先、専用演出としてボイスが再生されます】
+[k]
+
+＠
+【[line 3]準備が整ったら画面をタッチしてね！】
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+[tapSkip stop_tapSkip]
+[label stop_tapSkip]
+
+[bgm BGM_EVENT_99 0.1]
+
+[revivalBranch lblNormal lblRevival]
+[label lblNormal]
+[effect bit_talk_oniland_nexttitle]
+[wait fowardEffect]
+[branch lblConf]
+[label lblRevival]
+[effect bit_talk_oniland_nexttitle_r]
+[wait fowardEffect]
+[label lblConf]
+
+[wt 3.1]
+[effect bit_talk_oniland_cut05]
+
+[wt 0.2]
+
+[pictureFrame cut132_text_20]
+[voice 9010011_0_M650]
+[wait voice 9010011_0_M650]
+[pictureFrame]
+
+[wt 0.5]
+
+[pictureFrame cut132_text_21]
+[voice 9010011_0_M651]
+[wait voice 9010011_0_M651]
+[pictureFrame]
+
+[wt 0.3]
+
+[pictureFrame cut132_text_22]
+[voice 9010011_0_M652]
+[wait voice 9010011_0_M652]
+[pictureFrame]
+
+[pictureFrame cut132_text_23]
+[voice 9010011_0_M653]
+[wait voice 9010011_0_M653]
+[pictureFrame]
+
+[wt 0.1]
+
+[pictureFrame cut132_text_24]
+[voice 9010011_0_M654]
+[wait voice 9010011_0_M654]
+[pictureFrame]
+
+[pictureFrame cut132_text_05]
+[voice 9010011_0_M655]
+[wt 4.8]
+[pictureFrame]
+
+[effect bit_talk_oniland_telop05]
+
+[wait voice 9010011_0_M655]
+
+[wt 0.2]
+
+[voice 9010011_0_M656]
+[wait voice 9010011_0_M656]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_99 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

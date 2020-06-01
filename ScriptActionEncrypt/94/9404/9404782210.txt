@@ -1,0 +1,119 @@
+
+
+
+＄94-04-78-22-1-0
+
+
+[soundStopAll]
+
+
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 25005000 1 ボイジャー]
+[charaSet C 3043000 1 エリセ]
+[charaSet D 2014000 1 俵藤太]
+[charaSet F 98115000 1 エフェクト用]
+
+[charaPut F 1200,1200]
+[charaEffect F bit_talk_41]
+[charaScale F 0.7]
+
+[scene 47001]
+
+[pictureFrame cut170_gameframe_dark]
+
+
+[fadein black 1.5]
+[wait fade]
+
+[pictureFrame]
+[pictureFrameTop cut170_gameframe_dark]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 0,-50]
+＠エリセ
+うええ。本当にカルデアのマスターときたら……。[r]言ってて自分で恥ずかしくないのかな。
+[k]
+
+？1：お互いさまかなあ
+？！
+
+[charaFace C 3]
+＠エリセ
+だ、だったら、そういうことにしてもいいけど！[r]さあ、勝負の続きを！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_94 1.5]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+＠ボイジャー
+[#りょうかい]。[r][line 3]えいっ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[effect bit_talk_dice16]
+[voice 2500500_0_X070]
+[wt 6.0]
+[wait voice 2500500_0_X070]
+
+
+[se ad399]
+[charaPut F 0,-70]
+[cameraMove 0.2 0,0 1.5]
+[wipeout circleOut 0.4 1.0]
+[wait wipe]
+
+[cameraHome 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_41]
+[charaScale F 1.0]
+[wt 1.0]
+
+[wipein circleIn 0.4 1.0]
+[seStop ad399 0.4]
+[wait wipe]
+
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+＠マシュ
+移動を完了。ゴールまで、あとひと息です。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+＠俵藤太
+待ちかねたぞ。腕によりをかけて振る舞おう。[r]うまい飯と言いたいところだが、まずは試合だな！
+[k]
+
+[messageOff]
+[maskout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[soundStopAll]
+[end]
+
+

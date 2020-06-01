@@ -1,0 +1,770 @@
+
+
+
+
+＄03-00-05-15-1-0
+
+
+[soundStopAll]
+
+[charaSet A 1098123710 1 キリシュタリア]
+[charaSet B 6029001 1 望月千代女]
+[charaSet C 4039002 1 マンドリカルド]
+[charaSet D 8001410 1 マシュ]
+[charaSet E 6038002 1 シャルロット・コルデー]
+[charaSet F 98115300 1 ホームズ]
+[charaSet G 1098128200 1 カイニス]
+[charaSet H 2038000 1 オリオン]
+[charaSet I 1038000 1 イアソン]
+
+[charaSet J 98115000 1 エフェクト用]
+[scene 84901]
+
+[se ad826]
+[seVolume ad826 0 0.2]
+[fadein black 1.0]
+[se ad218 1.0]
+[wait fade]
+
+
+[wt 2.0]
+[seStop ad218 1.0]
+[wt 1.5]
+
+[bgm BGM_EVENT_41 0.1]
+
+＠
+[line 3][#目眩:めまい]がする。
+[k]
+
+[messageOff]
+[se ad31]
+[effect bit_talk_noise_gr]
+[wt 0.2]
+[effectStop bit_talk_noise_gr]
+[seStop ad31]
+[wt 0.3]
+
+＠
+脳が欠損したように、[r]記憶は明滅している。
+[k]
+
+＠
+何が、あった。[r]何かが、あった。
+[k]
+
+＠
+みんなが倒れている。[r]退去してはいないが、時間の問題。
+[k]
+
+＠
+[#絶対的な死の予感]。[r]おぞましい感覚に、心が芯から冷えていく。
+[k]
+
+[messageOff]
+[se ad31]
+[effect bit_talk_noise_gr]
+[wt 0.2]
+[seStop ad31]
+[effectStop bit_talk_noise_gr]
+[wt 0.3]
+
+[se ad31]
+[effect bit_talk_noise_gr]
+[wt 0.4]
+[effectStop bit_talk_noise_gr]
+[seStop ad31]
+[wt 0.2]
+
+＠
+……信じられない。
+[k]
+
+＠
+混乱から立ち直って、[r]ようやく最初に考えたのは、それだった。
+[k]
+
+＠
+目の前に立つ、青年を呆然と見据える。
+[k]
+
+[messageOff]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 2.0]
+
+＠
+キリシュタリア・ヴォーダイム。
+[k]
+
+＠
+こちらのサーヴァントを[#悉:ことごと]く薙ぎ倒した。
+[k]
+
+＠
+[#誰の手も借りることなく]、[r][#サーヴァントすら引き連れずに]。
+[k]
+
+[messageOff]
+[se ad31]
+[effect bit_talk_noise_gr]
+[wt 0.6]
+[effectStop bit_talk_noise_gr]
+[seStop ad31]
+[wt 0.3]
+
+＠
+話は[line 3]少し前に[#遡:さかのぼ]る。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_41 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 10000]
+[skip false]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[pictureFrame]
+
+[bgmStop BGM_EVENT_41 0.4]
+
+[seStop ad826 0.4]
+[seStop ad31 0.4]
+[seStop ad218 0.4]
+
+[charaFadeout A 0.1]
+
+[wt 0.4]
+
+[charaSet A 1098123710 1 キリシュタリア]
+[charaSet B 6029001 1 望月千代女]
+[charaSet C 4039002 1 マンドリカルド]
+[charaSet D 8001410 1 マシュ]
+[charaSet E 6038002 1 シャルロット・コルデー]
+[charaSet F 98115300 1 ホームズ]
+[charaSet G 1098128200 1 カイニス]
+[charaSet H 2038000 1 オリオン]
+[charaSet I 1038000 1 イアソン]
+
+[scene 10000]
+[wt 0.4]
+[soundStopAll]
+[maskin black 1]
+[wait mask]
+[label selectBranch]
+
+[skip false]
+
+[wt 1.5]
+
+[effect bit_queststart301_2]
+[wait effect bit_queststart301_2]
+
+[fadeout black 1.0]
+[wait fade]
+
+[cameraMove 0.1 0,0 1.01]
+
+[scene 85800]
+
+[skip true]
+
+[wt 1.0]
+[charaSet A 1098128200 1 カイニスシルエット]
+[charaFilter A silhouette 00000080]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[se ad218]
+[wt 2.0]
+[seStop ad218 1.0]
+[wt 1.5]
+
+[bgm BGM_EVENT_112 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠望月千代女
+さて、アキレウス殿を捜しに向かいますか。
+[k]
+
+＠望月千代女
+島名はテティスと判明していますし、[r]すぐに向かいましょう！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠マンドリカルド
+へーい。
+[k]
+
+[charaFace C 4]
+
+＠マンドリカルド
+……どうかランサークラスでありますように……。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_112 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad214]
+[seVolume ad214 0 0]
+[seVolume ad214 2.0 0.5]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠シャルロット・コルデー
+……あれ？[r]何か、音が聞こえませんか？
+[k]
+
+？1：この音は……？
+？！
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠ホームズ
+失礼、緊急だ！[r]戦闘態勢に入ってくれ！
+[k]
+
+＠ホームズ
+南南西の方角から、[r]超スピードで接近してくる敵性反応あり！
+[k]
+
+＠ホームズ
+この凄まじい魔力量[line 3][r]間違いなく、神霊カイニスだ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠マシュ
+！　捕捉されたのですか！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠望月千代女
+[FFFFFF]？[-]　何が何だか分かりませぬが、[r]敵であれば一丸となって迎撃すれば[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠？？？
+ハッ！　そりゃあ佳い、佳い話だ！[r][#雑魚:ザコ]でも集まれば鯨を倒せるってか！
+[k]
+
+＠？？？
+だがねえよ！[r]そんな子供向けの[#童話:おはなし]はなァ！
+[k]
+
+[messageOff]
+[seVolume ad214 1.0 1.0]
+
+[se ad414]
+[seVolume ad414 0 0]
+[seVolume ad414 1.5 0.2]
+
+[wt 1.5]
+[seStop ad214 1.0]
+[seStop ad414 1.0]
+
+
+[se adm11]
+[se ad322]
+[shake 0.05 5 0 1.5]
+[wt 2.4]
+
+[seStop adm11 1.5]
+[wt 0.5]
+
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠望月千代女
+この揺れは……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠オリオン
+伏せろ、千代女！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+[se adm15]
+[effect bit_talk_gram_slash_02]
+[wt 0.5]
+[se ad32]
+[se ad170]
+[effect bit_bolg_03y 0,-30]
+[wt 0.5]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠オリオン
+ぐっ……！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[effectStop bit_talk_gram_slash_02]
+[effectStop bit_bolg_03y 0,-30]
+
+
+[charaDepth G 10]
+[charaTalk off]
+[charaFace A 0]
+[charaFadein A 0.1 0,30]
+[charaMove A 0,-20 0.1]
+[wt 0.1]
+[se ad223]
+[wt 0.2]
+[charaMove A 0,0 0.4]
+[wt 1.0]
+
+[charaFace G 7]
+[charaFadein G 0.7 1]
+[wt 1.0]
+
+＠カイニス
+小細工した船で、[r]コソコソとオレの海を動き回りやがって。
+[k]
+
+＠カイニス
+捜すのに手間取ったじゃねえか。
+[k]
+
+[charaFadeout A 0.1]
+[charaFace G 6]
+＠カイニス
+アルテミスの矢から生き残ったのは褒めてやる。[r][#美味:うま]そうな肉はねえが、それなりに骨はあったってな。
+[k]
+
+[charaFace G 21]
+
+＠カイニス
+[line 3]だが、それだけだ。[r]テメェらと顔を合わせるのはここまでだ。
+[k]
+
+[charaFace G 2]
+
+＠カイニス
+ここで全滅させてやるよ、カルデア。[r]ひとりずつ丁寧に、オレの槍で串刺しにしてな！
+[k]
+
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠望月千代女
+舐めるな！
+[k]
+
+[messageOff]
+[charaMove B -10,0 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se adm14]
+[effect bit_shot_01]
+[wt 0.3]
+[se ad170]
+[fowardEffect bit_talk_13]
+[wt 0.5]
+
+[effectStop bit_shot_01]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠カイニス
+ハッ！[r][#舐めもしねえよ]、そんな貧相な体！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠望月千代女
+（回避すらせぬのか……！？）
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 0.7]
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk I]
+[charaFace I 10]
+[charaFadein I 0.1 1]
+
+＠イアソン
+……カイニス。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.1 1]
+
+＠カイニス
+ああ？　なんだ、サーヴァントが増えてるかと[r]思えば、臆病者も増えてるじゃねえか。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth I 10]
+[charaFace I 10]
+[charaFace H 0]
+[charaFadein I 0.1 2]
+[charaFadein H 0.1 0]
+[wt 1.5]
+[charaFadeout I 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk G]
+[charaFace G 17]
+[charaFadein G 0.1 1]
+
+＠カイニス
+確かにこりゃあ厄介かもな。
+[k]
+
+＠カイニス
+負け犬をもう一度[#奮:ふる]い立たせるってのは[r]なかなかできるコトじゃねえ。
+[k]
+
+＠カイニス
+キリシュタリアがあんな戯言を[r]言い出したのはコレが理由かよ。
+[k]
+
+[charaFace G 1]
+＠カイニス
+[line 3]まあいいさ。[r]どの道ここで、オレがカタをつけてやる。
+[k]
+
+＠カイニス
+泣きわめいても、ここには[#おまえのヘラクレス]は[r]いねえぞイアソン。
+[k]
+
+[charaFace G 7]
+
+＠カイニス
+何しろ、阿呆のアルテミスが本気出して[r]殺しちまったからな！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+
+＠イアソン
+……。[r]……。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠カイニス
+しかしアイツも[#解:げ]せねえよな。[r]何だってテメェみたいなのを庇ったんだか。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 11]
+[charaFadein I 0.1 1]
+
+＠イアソン
+……さあな。[r]それはオレが知りたいもんだ。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠カイニス
+例えばこうか？[r][#足手まといに付きまとわれる]のが面倒臭くなったとか？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 12]
+[charaFadein I 0.1 1]
+
+＠イアソン
+……。[r]……。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠オリオン
+テメェ。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+？1：……
+？！
+
+[charaFace G 6]
+
+＠カイニス
+怒るなよオリオン。
+[k]
+
+＠カイニス
+コイツのコトだ。日頃から似たようなことを[r]ホザいていたんじゃないのか？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠イアソン
+まあ、そうだな！
+[k]
+
+[charaFace I 23]
+
+＠イアソン
+で、それはそれとしてオレからも一つ質問がある。[r]聞いてくれよ、カイニス。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 17]
+[charaFadein G 0.1 1]
+
+＠カイニス
+あん？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 23]
+[charaFadein I 0.1 1]
+
+＠イアソン
+[#神を忌み嫌ってるはずのテメェが][r][#神の使いっ走りってのは][line 3]
+[k]
+
+＠イアソン
+[#一体どんな気分なのかな]って思ってな！
+[k]
+
+[charaFace I 24]
+
+＠イアソン
+なんだ、オマエってばもしかして[r][#被虐体質の持ち主:マ　　ゾ　　ヒ　　ス　　ト]か何かか？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 21]
+[charaFadein G 0.1 1]
+＠カイニス
+[line 3]。[r][line 3]。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+
+＠イアソン
+なあに、性癖は人それぞれだ！[r]恥ずかしがることはない！
+[k]
+
+[charaFace I 1]
+
+＠イアソン
+ただまあ、他人にそれを押しつけるのは[r]止めておけよ、カイニス！
+[k]
+
+[charaFace I 24]
+
+＠イアソン
+[#大抵の人間はそんな恥辱に耐えられないからな]！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 1.0]
+[charaFadeout I 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 21]
+[charaFadein G 0.1 1]
+[wt 1.0]
+[se ad64]
+[charaEffect J bit_talk_kaineus]
+[wt 1.0]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠カイニス
+[line 3]いいぜ。言うじゃねえか負け犬。[r]テメェは[#生きたまま殺す]。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+
+＠イアソン
+やれるものなら、[r]やってみやがれってんだ！
+[k]
+
+[charaFace I 9]
+
+＠イアソン
+[#ヘラクレスを侮辱しやがって]！[r]このクソ野郎！
+[k]
+
+？1：イアソン、落ち着いて！
+？！
+
+＠イアソン
+落ち着けるか！[r]行くぞ、おまえたち！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 19]
+[charaFadein G 0.1 1]
+
+＠カイニス
+どこにも行けねぇよ阿呆ども！[r]テメェらの航海はここで終わりだ！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

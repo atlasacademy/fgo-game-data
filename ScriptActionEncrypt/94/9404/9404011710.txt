@@ -1,0 +1,3621 @@
+
+
+
+＄94-04-01-17-1-0
+
+[soundStopAll]
+
+
+[charaSet A 5014001 1 メフィストフェレス]
+[charaSet B 5025001 1 エジソン]
+[charaSet C 2011001 1 ニコラ・テスラ]
+[charaSet D 1031001 1 フラン]
+[charaSet E 5004001 1 ナーサリー・ライム]
+[charaSet F 3026001 1 ジャンヌ・オルタ・サンタ・リリィ]
+[charaSet G 1098157000 1 リース]
+[charaSet H 2031001 1 ナポレオン]
+[imageSet I back10001 1]
+[charaSet J 5009000 1 エフェクト用]
+
+[charaScale I 1.01]
+
+[branchQuestNotClear lblNotClear 3000303]
+[flag IsClear true]
+[branch lblConf]
+[label lblNotClear]
+[flag IsClear false]
+[label lblConf]
+
+
+
+[effect bit_talk_curtain03]
+
+[charaTalk depthOff]
+[charaDepth I 8]
+[charaDepth J 9]
+
+[pictureFrame cut049_frame01]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.5]
+
+＠
+『シルク・ドゥ・ルカン』へようこそ、[r]そしていらっしゃいませ。
+[k]
+
+＠
+奇跡のような大道芸をお披露目する[r]エンタテイメント・サーカス[line 3]
+[k]
+
+＠
+皆々様の記憶に刻まれる、[r]素晴らしい一夜となることをお約束いたします！
+[k]
+
+[messageOff]
+[se ade319]
+[wt 9.5]
+
+[scene 72800]
+
+[effectStop bit_talk_curtain03]
+[wt 2.0]
+
+[wt 0.5]
+
+[talkNameBack img_talk_namebg02]
+[bgm BGM_EVENT_47 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 0,-45]
+[wt 0.4]
+
+＠メフィストフェレス
+当サーカスの団長を務めるはこのワタクシ、[r]メフィストフェレス。
+[k]
+
+＠メフィストフェレス
+あれ、この場合は座長？　組長？[r]まあ何でもいっか！
+[k]
+
+＠メフィストフェレス
+それではどうぞお楽しみくださいませ。
+[k]
+
+[charaFace A 2]
+
+＠メフィストフェレス
+まずは火の輪くぐり[line 3]ならぬ、[r]電流輪くぐりから！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth B 2]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 0,-45]
+[wt 0.4]
+
+＠エジソン
+交流の電気輪くぐりである。[wt 0.5][charaFace B 5][r]がおー！
+[k]
+
+[messageOff]
+[se ad62]
+[effect bit_talk_lightning_02t]
+[charaShake B 0.05 3 3 0]
+[charaPut I 0,-200]
+[charaFadeTime I 0.2 0.8]
+[wt 0.2]
+[charaFadeTime I 0.2 0.0]
+[wt 0.5]
+[seStop ad62 0.2]
+[effectStop bit_talk_lightning_02t]
+[wt 0.1]
+[charaShakeStop B]
+
+[wt 0.7]
+
+[charaFace B 0]
+
+＠エジソン
+……と、このように交流は大変危険である！[wt 0.8][charaFace B 1][r]気をつけるようにネ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 -256,-45]
+[charaFace B 0]
+[charaFadein B 0.1 256,-45]
+
+＠ニコラ・テスラ
+貴様が失敗しただけではないか、[r]このスカタンがーーーッ！！
+[k]
+
+[charaFace B 5]
+
+＠エジソン
+何だとスカタン。[r]ならば貴様がやってみろ！
+[k]
+
+[charaFace C 2]
+
+＠ニコラ・テスラ
+おお、やってやるとも！[r]直流の電気輪くぐりをな！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-45]
+
+＠ニコラ・テスラ
+そう、ここをこうして切り替えて……。[wt 0.6][charaFace C 2][r]勢いよく……とぅーーーう！
+[k]
+
+[messageOff]
+[se ad62]
+[effect bit_talk_lightning_02t]
+[charaShake C 0.05 3 3 0]
+[charaFadeTime I 0.2 0.8]
+[wt 0.2]
+[charaFadeTime I 0.2 0.0]
+[wt 0.5]
+[seStop ad62 0.2]
+[effectStop bit_talk_lightning_02t]
+[wt 0.1]
+[charaShakeStop C]
+
+[wt 0.7]
+
+[charaFace C 4]
+
+＠ニコラ・テスラ
+マントが引っかかったーーー！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-45]
+
+＠エジソン
+ハハハハハ、ばーかばーかばーか！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.4 0,-45]
+[wt 0.4]
+
+＠フラン
+……。[r]……。
+[k]
+
+[charaFace D 0]
+
+
+＠フラン
+よ[se ad73][charaMove D -40,-50 0.2]っ[wt 0.3]、と[se ad73][charaMove D 20,-25 0.2]っ[wt 0.3]、は[se ad73][charaMove D 0,-45 0.2]ーっ！
+[k]
+
+[messageOff]
+[se ade76]
+[wt 0.8]
+[charaFace D 3]
+[wt 1.2]
+[seStop ade76 0.8]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace C 4]
+[charaFadein C 0.1 -256,-45]
+[charaFace B 4]
+[charaFadein B 0.1 256,-45]
+
+＠二人
+……。[r]……。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 0,-45]
+
+＠フラン
+二人とも、まだまだだなー。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaFace C 2]
+[charaFadein C 0.1 -256,-45]
+[charaFace B 2]
+[charaFadein B 0.1 256,-45]
+
+＠二人
+[f large]く[messageShake 0.06 5 5 0.4]やしい！！
+[k]
+
+[messageOff]
+[messageShakeStop]
+[wt 1.0]
+
+[charaPut J 1]
+[charaEffect J bit_talk_curtain01]
+[bgmStop BGM_EVENT_47 2.0]
+[wt 2.0]
+[effect bit_talk_curtain03]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+
+[scene 77800]
+
+[imageSet I back10000 1]
+[charaScale I 1.01]
+
+[wt 1.5]
+[charaPut J 1280,1280]
+[charaEffectStop J bit_talk_curtain01]
+
+[effectStop bit_talk_curtain03]
+[wt 2.0]
+
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-45]
+
+＠メフィストフェレス
+[f large]ウェルカムッ！！
+[k]
+
+[charaFace A 0]
+
+＠メフィストフェレス
+続きましては、[r]エンタテイメント演劇大道芸。
+[k]
+
+＠メフィストフェレス
+[#つぎはぎだらけ:パ　 ッ 　チ 　ワ 　ー 　ク]のロンドンで、[r]お邪魔するは愉快な少女たち。
+[k]
+
+＠メフィストフェレス
+はてさて。[r]さてはて。
+[k]
+
+＠メフィストフェレス
+少女たちに待ち受ける魔の手は？[r]少女たちが求めてやまないのは何か？
+[k]
+
+[charaFace A 1]
+
+＠メフィストフェレス
+どうぞ最後までごゆるりとお楽しみ[r]アーレー！
+[k]
+
+[charaFace A 5]
+
+＠メフィストフェレス
+おっと。
+[k]
+
+＠メフィストフェレス
+言うまでもありませんが、[r]撮影録画その他色々禁止です。
+[k]
+
+[charaFace A 2]
+
+＠メフィストフェレス
+夢がナーイ！
+[k]
+
+[charaFace A 1]
+
+＠メフィストフェレス
+ではでは。[r]ﾉｼ
+[k]
+
+[messageOff]
+[se ad348]
+[seVolume ad348 0 0.6]
+[seStop ad348 1.8]
+[wt 0.1]
+[charaAttack A normal 0,-900 0.5]
+[wt 0.2]
+[charaFadeout A 0.4]
+[wt 1.2]
+
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth E 2]
+[charaDepth I 8]
+
+[charaPut I 1]
+[charaFadeTime I 1.5 1.0]
+[wt 2.5]
+
+[charaFadeTime I 1.5 0]
+[wt 1.5]
+[charaPut I 1200,1200]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 -256,-45]
+[charaFace F 6]
+[charaFadein F 0.1 256,-45]
+
+＠ナーサリー・ライム
+[#跳ねて:ス テ ッ プ]、[#蹴って:キ ッ ク]、踊りましょう！[r]どうせみんな、行き着く先は鍋の中！
+[k]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+イルカさん、イルカさん、[r]なに見て跳ねる？　なに見て吠える？
+[k]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+私には、あなたの言葉がわかりません！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 0,-45]
+[wt 0.4]
+
+[se ade205]
+[wt 1.5]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-45]
+
+＠ナーサリー・ライム
+チョコは持ったわね？[r]わたしとあなたとイルカさん、合計三つ！
+[k]
+
+[charaFace E 1]
+
+＠ナーサリー・ライム
+月までお出かけ、[r]ピクニックよ！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.4 0,-45]
+[wt 0.4]
+
+＠ナポレオン
+おっと待ったお二人さん。
+[k]
+
+＠ナポレオン
+いくら何でも月に歩いて行くのは、[r]荷が重い！
+[k]
+
+[charaFace H 6]
+
+＠ナポレオン
+そのチョコ一枚くれるなら、[r]月の果てまで連れて行ってやるぜ？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace E 1]
+[charaFadein E 0.1 -256,-45]
+[charaFace F 6]
+[charaFadein F 0.1 256,-45]
+
+＠二人
+連れてって！　連れてって！[r]今すぐ月まで連れてって！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 0,-45]
+
+＠ナポレオン
+さあさ二人とも、[r]大砲の中に乗り込みな！
+[k]
+
+[charaFace H 6]
+
+＠ナポレオン
+いっちょドカンと、[r]派手にぶっ放すとも！
+[k]
+
+＠ナポレオン
+さあ、いくぜ！
+[k]
+
+[charaFace H 2]
+
+＠ナポレオン
+[f large]『[#凱旋を高らかに告げる虹弓:ア　ル　ク　・　ド　ゥ　・　ト　リ　オ　ン　フ　・　ド　ゥ　・　レ　ト　ワ　ー　ル]』！！
+[k]
+
+[imageSet I back10001 1]
+[charaScale I 1.01]
+
+[charaTalk depthOff]
+[charaDepth H 1]
+[charaDepth I 8]
+
+
+[messageOff]
+[charaPut I 0,-200]
+[charaFadeTime I 1.2 1.0]
+[se ad702]
+[seVolume ad702 0 0.5]
+[wt 1.2]
+[seStop ad702 0.5]
+[wt 0.3]
+[charaFadeout H 0.1]
+[cueSe Battle bac423]
+[wt 0.5]
+[charaFadeTime I 0.5 0.0]
+[wt 0.7]
+[cueSeStop bac423 0.7]
+
+[se ad348]
+[wt 2.0]
+
+[charaPut J 1]
+[charaEffect J bit_talk_curtain01]
+[bgmStop BGM_EVENT_77 2.0]
+[wt 2.0]
+[effect bit_talk_curtain03]
+
+[scene 44602]
+
+[charaSet B 4026000 1 イシュタル]
+[charaSet C 1098166000 1 マスクオートマタ１]
+[charaSet D 1098166000 1 マスクオートマタ２]
+[charaSet G 1098166000 1 マスクオートマタ３]
+[charaSet H 7022001 1 茨木童子]
+[imageSet I back10000 1]
+
+[charaScale I 1.01]
+
+[wt 1.5]
+[charaPut J 1280,1280]
+[charaEffectStop J bit_talk_curtain01]
+
+[effectStop bit_talk_curtain03]
+[wt 2.0]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-45]
+
+＠ナーサリー・ライム
+あれ？[r]ここが月なのかしら？
+[k]
+
+＠ナーサリー・ライム
+月にはウサギがいるはずなのに！
+[k]
+
+＠ナーサリー・ライム
+ここにはウサギどころか、[r]ニワトリ一羽もいやしないわ！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 0,-45]
+[wt 0.4]
+
+＠イシュタル
+あーらあらあら、それはそれはお気の毒！[r]だってここは金星よ。
+[k]
+
+＠イシュタル
+アナタたちときたら、大砲の角度を[r]間違ってしまったのね！
+[k]
+
+[charaFace B 0]
+
+＠イシュタル
+ここにはそんな迷子たちがよく来るの、[r]ようこそいらっしゃい歓迎するわ！
+[k]
+
+[charaFace B 7]
+
+＠イシュタル
+それはもちろん、労働力としてね！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 0,-45]
+＠ジャンヌ・オルタ・サンタ・リリィ
+そんなー！[se ad119]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[seStop ad119 0.3]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 -256,-45]
+[charaFace C 0]
+[charaFadein C 0.1 256,-45]
+
+＠イシュタル
+ふふふ、月になんて行かせやしないわ。[r]ここでずっと労働よ！
+[k]
+
+＠C：オートマタ
+労働、労働、楽しい労働、[r]愉快な労働。
+[k]
+
+＠C：オートマタ
+あなたたちの幸せは、[r]全て全て労働にあり。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[charaTalk depthOff]
+[charaDepth G 1]
+[charaDepth D 2]
+[charaDepth C 3]
+
+[charaTalk off]
+[charaFace G 0]
+[charaFadein G 0.4 -320,-45]
+[charaFace C 0]
+[charaFadein C 0.4 0,-45]
+[charaFace D 0]
+[charaFadein D 0.4 320,-45]
+[wt 0.3]
+
+[se ad66]
+[charaMove G 0,-45 0.4]
+[charaMove D 0,-45 0.4]
+[wt 0.4]
+[seStop ad66 0.1]
+[wt 0.1]
+[se ad66]
+[charaMove G -320,-45 0.4]
+[charaMove D 320,-45 0.4]
+[wt 0.4]
+[seStop ad66 0.1]
+[wt 0.1]
+[se ad66]
+[charaMove G -1120,-45 1.0]
+[charaMove D 1120,-45 1.0]
+[wt 0.8]
+[seStop ad66 0.2]
+[wt 0.2]
+[se ad66]
+[charaPut G 0,-45]
+[charaPut D 0,-45]
+[charaMove G -320,-45 0.3]
+[charaMove D 320,-45 0.3]
+[se ad66]
+[wt 1.0]
+
+[charaTalk depthOff]
+[charaDepth J 9]
+
+[charaPut J 1]
+[charaEffect J bit_talk_curtain01]
+[bgmStop BGM_EVENT_81 2.0]
+[seStop ad66 0.5]
+[wt 2.0]
+[effect bit_talk_curtain03]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[scene 44000]
+
+[charaSet B 1098157000 1 リース]
+[charaSet C 2009201 1 アルテミス]
+[charaSet D 1098116600 1 偽オリオンＡ]
+[charaSet G 1098116610 1 偽オリオンＢ]
+[charaSet H 7022001 1 茨木童子]
+[imageSet I back10001 1]
+
+[charaScale I 1.01]
+
+[charaTalk depthOff]
+[charaDepth I 8]
+
+[wt 1.5]
+[charaPut J 1280,1280]
+[charaEffectStop J bit_talk_curtain01]
+
+[effectStop bit_talk_curtain03]
+[wt 2.0]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-45]
+
+＠ナーサリー・ライム
+困ったわ、困ったわ！[r]いつまで経っても働いてばかり！
+[k]
+
+＠ナーサリー・ライム
+だけどもう大砲はないし、[r][#お間抜けおじさん:ナ　　ポ　　レ　　オ　　ン]もいやしない！
+[k]
+
+＠ナーサリー・ライム
+どうにかして、[r]月に行く方法はないかしら！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 0,-45]
+[wt 0.4]
+
+＠茨木童子
+なんだなんだ、[r][#汝:なれ]たちと来たら、月へ遊びに行きたいのか。
+[k]
+
+[charaFace H 1]
+
+＠茨木童子
+チョコの一つもくれたなら、[r]月まで派手に送ってやるのに！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 0,-45]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+それなら私のチョコを差し上げます！[r]どうか月まで連れてってくださいな！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[seVolume ad182 0 0.2]
+[charaChange H 98105300 0 normal 0]
+[wait charaChange H]
+
+＠茨木童子
+いいともいいとも。[se ad182][r]もぐもぐ。
+[k]
+
+[messageOff]
+[se ad29]
+[charaPut I 0,-200]
+[charaFadeTime I 0.8 1.0]
+[wt 0.8]
+[charaChange H 3034001 0 normal 0]
+[wait charaChange H]
+[wt 1.0]
+
+[charaFadeTime I 0.8 0]
+[wt 0.8]
+[charaPut I 1200,1200]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_63 0.1]
+
+＠茨木童子
+馳走になった！
+[k]
+
+[charaFace H 5]
+
+＠茨木童子
+さあさあ、大江山の大花火で[r]一つ月まで送ってやろう！
+[k]
+
+＠茨木童子
+行くぞ！
+[k]
+
+[charaFace H 2]
+
+＠茨木童子
+[f large]『[#愚神礼讃・一条戻橋:エ　　 ン 　　コ 　　ミ 　　ウ 　　ム 　　・ 　　モ 　　リ 　　エ]』！
+[k]
+
+[messageOff]
+[charaPut I 0,-200]
+[charaFadeTime I 0.2 1.0]
+[wt 0.2]
+[charaFadeout H 0.1]
+[wt 0.1]
+[scene 28300]
+[charaFadeTime I 0.2 0]
+[wt 0.3]
+[charaPut I 1200,1200]
+
+[se ade194]
+[effect bit_talk_fireworks]
+[wt 1.3]
+[seStop ade194 0.5]
+
+[se ad348]
+[wt 2.0]
+
+[charaPut J 1]
+[charaEffect J bit_talk_curtain01]
+[bgmStop BGM_EVENT_63 2.0]
+[wt 2.0]
+[effect bit_talk_curtain03]
+
+[scene 51100]
+
+[charaSet A 2009102 1 オリオン]
+[charaSet H 1098116620 1 偽オリオンＣ]
+
+[wt 1.5]
+[charaPut J 1280,1280]
+[charaEffectStop J bit_talk_curtain01]
+
+[effectStop bit_talk_curtain03]
+[wt 2.0]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,-45]
+
+＠ナーサリー・ライム
+到着したわ！[wt 0.4][charaFace E 0][r]あらあら、ここが月なのかしら。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 0,-45]
+[wt 0.4]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠アルテミス
+ええ、そうよそうよ。[r]その通り。
+[k]
+
+[charaFace C 1]
+
+＠アルテミス
+この先に楽しい楽しい、[r]夢のような月世界が待っているわ！
+[k]
+
+[charaFace C 0]
+
+＠アルテミス
+だけど、あなたたち。[r]チョコレートはあるかしら？
+[k]
+
+[charaFace C 4]
+
+＠アルテミス
+チョコレート一枚につき、[r]一人しか月世界には入れてあげられないわね！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-45]
+
+＠ナーサリー・ライム
+まあ、何てこと！[r]チョコレートはもう一枚しかないわ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-45]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+それでは仕方ありません。[r]ナーサリーを連れていってあげてくださいな。
+[k]
+
+[charaFace F 6]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+私はここで帰ります。[r]ナーサリー、月世界を楽しんでね！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-45]
+
+＠ナーサリー・ライム
+まあまあ、そんな訳にはいかないわ！
+[k]
+
+
+＠ナーサリー・ライム
+ジャンヌが行かないなら、[r]わたしも帰るだけ。鍋の中に戻りましょう！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-45]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 0,-45]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+イルカさん？[r]どうしました、チョコを持って。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.2]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-45]
+
+[se ade205]
+[wt 1.5]
+
+[charaShake B 0.02 3 3 0.4]
+[se ade13]
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace E 4]
+[charaFadein E 0.1 -256,-45]
+[charaFace F 3]
+[charaFadein F 0.1 256,-45]
+
+＠二人
+あ！[r]チョコが割れちゃった！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 0,-45]
+[wt 0.4]
+
+＠オリオン
+ふんふんふふん、[r]さすがだなイルカ！
+[k]
+
+
+＠オリオン
+これならチョコレートは一枚から二枚。[r]文句はないよな、アルテミス！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-45]
+
+＠アルテミス
+ええ、ええもちろんです。[wt 0.6][charaFace C 1][r]二人を月世界に招待しましょう！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,-45]
+
+＠ナーサリー・ライム
+ありがとう、ありがとうイルカさん！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-45]
+
+[se ade205]
+[wt 1.5]
+
+[backEffect bit_talk_water 0,40]
+[charaFadeout B 0.4]
+[charaMove B 0,-95 0.4]
+[wt 0.3]
+[cueSe Battle bac462]
+
+[wt 1.8]
+
+[charaPut J 1]
+[charaEffect J bit_talk_curtain01]
+[bgmStop BGM_EVENT_2 2.0]
+[wt 2.0]
+[effect bit_talk_curtain03]
+
+[backEffectStop bit_talk_water]
+
+[scene 42400]
+
+[charaSet A 1098116630 1 偽オリオンＤ]
+[charaSet B 98100800 1 うりぼうA]
+[charaSet C 98101000 1 うりぼうB]
+[charaSet E 98101200 1 うりぼうC]
+[charaSet F 1098161500 1 雀（平等）]
+
+[wt 1.5]
+[charaPut J 1280,1280]
+[charaEffectStop J bit_talk_curtain01]
+
+[effectStop bit_talk_curtain03]
+[wt 2.0]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaTalk off]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth H 2]
+[charaDepth G 3]
+[charaDepth D 4]
+
+[charaFace D 0]
+[charaFadein D 0.4 0,-45]
+[charaFace G 0]
+[charaFadein G 0.4 0,-45]
+[charaFace H 0]
+[charaFadein H 0.4 0,-45]
+[charaFace A 0]
+[charaFadein A 0.4 0,-45]
+[wt 0.5]
+
+[charaMove D -54,-10 0.2]
+[charaMove H -54,-10 0.2]
+[charaMove G 54,-10 0.2]
+[charaMove A 54,-10 0.2]
+[wt 0.1]
+[cueSe Battle bac469]
+[wt 0.1]
+[charaMove D -74,-10 0.1]
+[charaMove H -74,-10 0.1]
+[charaMove G 74,-10 0.1]
+[charaMove A 74,-10 0.1]
+[wt 0.1]
+[charaMove D -128,-45 0.2]
+[charaMove H -128,-45 0.2]
+[charaMove G 128,-45 0.2]
+[charaMove A 128,-45 0.2]
+
+[wt 0.3]
+
+[charaMove H -256,-45 0.4]
+[charaMove A 256,-45 0.4]
+[charaShake H 0.07 3 3 0.4]
+[charaShake A 0.07 3 3 0.4]
+
+[wt 0.4]
+
+[charaMove H -310,-10 0.2]
+[charaMove A 310,-10 0.2]
+[wt 0.1]
+[cueSe Battle bac469]
+[wt 0.1]
+[charaMove H -330,-10 0.1]
+[charaMove A 330,-10 0.1]
+[wt 0.1]
+[charaMove H -384,-45 0.2]
+[charaMove A 384,-45 0.2]
+
+[wt 0.3]
+
+[charaMove D -238,-45 0.4]
+[charaMove H -274,-45 0.4]
+[charaMove G 238,-45 0.4]
+[charaMove A 274,-45 0.4]
+[wt 0.4]
+[charaMove D -258,-10 0.1]
+[charaMove H -254,-10 0.1]
+[charaMove G 258,-10 0.1]
+[charaMove A 254,-10 0.1]
+[wt 0.1]
+[charaMove D -384,-45 0.4]
+[charaMove H -128,-45 0.4]
+[charaMove G 384,-45 0.4]
+[charaMove A 128,-45 0.4]
+[cueSe Battle bac469]
+[wt 1.0]
+
+[charaMove D -768,-45 0.7]
+[charaMove H -512,-45 0.7]
+[charaMove G 768,-45 0.7]
+[charaMove A 512,-45 0.7]
+[charaShake D 0.07 3 3 0.7]
+[charaShake H 0.06 3 3 0.7]
+[charaShake G 0.07 3 3 0.7]
+[charaShake A 0.06 3 3 0.7]
+[wt 0.5]
+[charaFadeout D 0.4]
+[charaFadeout G 0.4]
+[charaFadeout H 0.4]
+[charaFadeout A 0.4]
+
+[wt 1.0]
+
+[charaSet A 1098161100 1 雀（変成）]
+[charaSet D 1098161200 1 雀（泰山）]
+[charaSet G 1098161300 1 雀（五官）]
+[charaSet H 1098161400 1 雀（初江）]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth B 2]
+[charaDepth E 3]
+
+[charaFace C 1]
+[charaFadein C 0.4 -256,-45]
+[charaFace B 1]
+[charaFadein B 0.4 0,-45]
+[charaFace E 1]
+[charaFadein E 0.4 256,-45]
+[wt 0.5]
+
+[charaMove C -320,-45 0.7]
+[charaMove B -64,-45 0.7]
+[charaMove E 192,-45 0.7]
+[charaShake C 0.07 3 3 0.6]
+[charaShake B 0.07 3 2 0.6]
+[charaShake E 0.07 3 4 0.6]
+[wt 0.8]
+[charaMove C -152,-45 1.0]
+[charaMove B 64,-45 1.0]
+[charaMove E 320,-45 1.0]
+[charaShake C 0.07 2 3 1.0]
+[charaShake B 0.07 2 3 1.0]
+[charaShake E 0.07 2 2 1.0]
+[wt 0.9]
+[charaRollMoveEx C 0.2 -10 0,320]
+[se ad76]
+[wt 0.3]
+[charaMove B 84,-45 0.1]
+[charaRollMoveEx B 0.2 -15 0,320]
+[se ad76]
+[wt 0.3]
+[charaRollMoveEx E 0.3 -40 0,320]
+[se ad76]
+[wt 1.0]
+[charaRollMoveEx C 0.33 360 0,320]
+[charaRollMoveEx B 0.3 360 0,320]
+[wt 0.2]
+
+[charaMove C 104,-45 1.5]
+[charaMove B 320,-45 1.5]
+[charaShake C 0.07 3 3 1.5]
+[charaShake B 0.06 3 3 1.5]
+[wt 0.1]
+[charaMove E 576,-45 1.5]
+[wt 1.0]
+[charaFadeout C 0.4]
+[charaFadeout B 0.4]
+[charaFadeout E 0.4]
+
+[wt 1.0]
+
+[charaSet B 5004001 1 ナーサリー・ライム]
+[charaSet C 3026001 1 ジャンヌ・オルタ・サンタ・リリィ]
+[charaSet E 6005001 1 ジャック]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth D 2]
+[charaDepth H 3]
+[charaDepth F 4]
+[charaDepth G 5]
+
+[charaFace A 0]
+[charaFadein A 0.1 -300,-410]
+[charaFace H 0]
+[charaFadein H 0.1 -190,-480]
+[charaFace G 0]
+[charaFadein G 0.1 0,-500]
+[charaFace F 0]
+[charaFadein F 0.1 190,-480]
+[charaFace D 0]
+[charaFadein D 0.1 288,-400]
+
+[charaMove A -300,45 0.5]
+[charaMove H -190,-25 0.5]
+[charaMove G 0,-45 0.5]
+[charaMove F 190,-25 0.5]
+[charaMove D 288,55 0.5]
+
+[se ad536]
+[wt 0.6]
+[seStop ad536 0.3]
+[wt 0.3]
+
+[charaMove G 0,600 0.5]
+[charaRollMoveEx F 0.9 -360 0,300]
+[charaMove F 0,300 0.4]
+[charaRollMoveEx H 0.9 360 0,300]
+[charaMove H 0,300 0.4]
+[charaRollMoveEx D 0.9 -720 0,300]
+[charaMove D 0,500 0.4]
+[charaRollMoveEx B 0.9 720 0,300]
+[charaMove A 0,500 0.4]
+[wt 0.2]
+[cueSe Battle bac469]
+[wt 0.2]
+[charaMove F 20,300 0.1]
+[charaMove H 20,300 0.1]
+[wt 0.1]
+[charaMove F -160,-25 0.4]
+[charaMove H 160,-25 0.4]
+[charaMove D -268,55 0.4]
+[charaMove A 268,55 0.4]
+[charaChange G 1098161000 0 normal 0]
+[wait charaChange G]
+[charaMove G 0,-45 0.5]
+[wt 0.7]
+
+[charaMove A 800,100 1.3]
+[charaMove H -690,300 1.5]
+[charaMove G 0,500 1.3]
+[charaMove F 690,110 1.4]
+[charaMove D -788,160 1.3]
+
+[se ad536]
+[wt 1.0]
+[charaFadeout A 0.4]
+[charaFadeout H 0.4]
+[charaFadeout F 0.4]
+[charaFadeout D 0.4]
+[wt 0.3]
+[seStop ad536 0.3]
+
+[wt 1.0]
+
+[charaSet A 6012001 1 サンソン]
+[charaSet D 5014001 1 メフィストフェレス]
+[charaSet F 1098157000 1 リース]
+[charaSet G 2009001 1 オリオン＆アルテミス]
+[charaSet H 7022001 1 茨木童子]
+
+[bgmStop BGM_EVENT_94 1.5]
+
+[scene 42402 2.0]
+[wt 2.0]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-45]
+
+＠ナーサリー・ライム
+ピクニック、とてもとっても楽しかったわ！[wt 0.8][charaFace B 4][r]でも、何か足りない気がしないかしら？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 0,-45]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+ナーサリーも？[r]かく言う私も、何か足りないと思っていたのです！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-45]
+
+＠ナーサリー・ライム
+そうよ、そうよ。[r]あの子だわ！
+[k]
+
+＠ナーサリー・ライム
+こうしちゃいられない。[r]すぐに鍋の中に戻らなきゃ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-45]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+そうね。
+[k]
+
+[charaFace C 6]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+月世界にはまた明日、チョコレートを[r]持っていけばいいのだもの！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-45]
+＠ナーサリー・ライム
+今度はたくさん持っていきましょう！
+[k]
+
+＠ナーサリー・ライム
+[#お間抜けおじさん:ナ　　ポ　　レ　　オ　　ン]も、[r][#意地悪女神様:イ 　シ 　ュ 　タ 　ル]も、
+[k]
+
+＠ナーサリー・ライム
+[#ガジガジ鬼さん:茨 　木 　童 　子]も、[r]そしてもちろん、イルカさんも。
+[k]
+
+＠ナーサリー・ライム
+みんな、みんなでピクニックよ！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaPut J 1]
+[charaEffect J bit_talk_curtain01]
+[bgm BGM_EVENT_77 2.0 0.2]
+[wt 2.0]
+[effect bit_talk_curtain03]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[scene 71500]
+
+[wt 1.5]
+[charaPut J 1280,1280]
+[charaEffectStop J bit_talk_curtain01]
+
+[effectStop bit_talk_curtain03]
+[wt 2.0]
+
+[bgm BGM_EVENT_77 1.8 1.0]
+
+[se ade235]
+[seVolume ade235 0 0.0]
+[seVolume ade235 1.0 1.0]
+[wt 1.04]
+[seStop ade235]
+[wt 0.1]
+[se ad93]
+[wt 0.9]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 0,-45]
+[wt 0.4]
+
+＠ジャック
+おとうさん、おとうさん！[r]わたしたちのお願いを聞いてちょうだいな！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 0,-45]
+[wt 0.4]
+
+＠サンソン
+おやおや、どうしたのかな[r][#僕の天使:ア　ン　ジ　ュ]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth E 2]
+[charaDepth B 3]
+
+[charaTalk off]
+[charaFace E 1]
+[charaFadein E 0.1 -256,-45]
+[charaFace B 1]
+[charaFadein B 0.1 0,-45]
+[charaFace C 6]
+[charaFadein C 0.1 256,-45]
+
+＠三人
+月に連れて行ってもらいたいの！[r]だからどうか、チョコレートをたくさんくださいな！
+[k]
+
+[messageOff]
+[wt 1.5]
+
+[charaPut J 1]
+[charaEffect J bit_talk_curtain01]
+[bgmStop BGM_EVENT_77 2.0]
+[wt 0.5]
+[se ade76]
+[wt 1.5]
+[effect bit_talk_curtain03]
+
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+
+[scene 10000]
+
+[charaFace D 0]
+[charaFadein D 0.1 0,-45]
+
+[wt 1.5]
+[charaPut J 1280,1280]
+[charaEffectStop J bit_talk_curtain01]
+
+[talkNameBack]
+
+[effectStop bit_talk_curtain03]
+[wt 2.0]
+
+[se ad6]
+[seVolume ad6 0 0]
+[seVolume ad6 2.0 0.8]
+[wt 2.0]
+
+[wt 1.0]
+[charaFace D 1]
+[wt 0.3]
+[charaMoveReturn D 0,-85 0.7]
+[wait charaMove D]
+[charaMove D -128,-45 0.7]
+[wt 0.5]
+[charaFadeout D 0.4]
+[wt 1.0]
+
+[charaFace G 0]
+[charaFadein G 0.4 -256,-45]
+[charaFace F 0]
+[charaFadein F 0.4 256,-45]
+[wt 1.0]
+[charaFace G 1]
+[wt 0.3]
+[charaMoveReturn G -256,-85 0.7]
+[wait charaMove G]
+[charaMove G -384,-45 0.7]
+[wt 0.5]
+[charaFadeout G 0.4]
+[wt 0.3]
+[charaMoveReturn F 256,-85 0.7]
+[wait charaMove F]
+[charaMove F 128,-45 0.7]
+[wt 0.5]
+[charaFadeout F 0.4]
+[wt 1.0]
+
+[charaSet D 2031001 1 ナポレオン]
+[charaSet H 4026000 1 イシュタル]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth B 2]
+
+[charaFace B 0]
+[charaFadein B 0.4 -256,-45]
+[charaFace C 0]
+[charaFadein C 0.4 256,-45]
+[wt 1.0]
+[charaFace B 1]
+[wt 0.3]
+[charaMoveReturn B -256,-85 0.7]
+[wait charaMove B]
+[charaMove B -384,-45 0.7]
+[wt 0.5]
+[charaFadeout B 0.4]
+[charaFace C 6]
+[wt 0.3]
+[charaMoveReturn C 256,-85 0.7]
+[wait charaMove C]
+[charaMove C 128,-45 0.7]
+[wt 0.5]
+[charaFadeout C 0.4]
+[wt 1.0]
+
+[charaFace A 0]
+[charaFadein A 0.4 -256,-45]
+[charaFace E 0]
+[charaFadein E 0.4 256,-45]
+[wt 1.0]
+[charaFace E 1]
+[wt 0.3]
+[charaMoveReturn E 256,-85 0.7]
+[wait charaMove E]
+[charaMove E 384,-45 0.7]
+[wt 0.5]
+[charaFadeout E 0.4]
+[charaFace A 1]
+[wt 0.3]
+[charaMoveReturn A -256,-85 0.7]
+[wait charaMove A]
+[charaMove A -128,-45 0.7]
+[wt 0.5]
+[charaFadeout A 0.4]
+[wt 1.0]
+
+[charaTalk depthOff]
+[charaDepth H 1]
+[charaDepth D 2]
+
+[charaFace D 0]
+[charaFadein D 0.4 -256,-45]
+[charaFace H 0]
+[charaFadein H 0.4 256,-45]
+[wt 1.0]
+[charaFace H 1]
+[charaFace D 1]
+[wt 0.3]
+[charaMoveReturn D -256,-85 0.7]
+[charaMoveReturn H 256,-85 0.7]
+[wait charaMove D]
+[charaMove D -384,-45 0.7]
+[charaMove H 384,-45 0.7]
+[wt 0.5]
+[charaFadeout D 0.4]
+[charaFadeout H 0.4]
+[wt 1.2]
+
+[fadeout black 2.0]
+[seStop ad6 2.0]
+[wait fade]
+
+[effectStop bit_talk_spotlight]
+[charaEffectStop J bit_talk_curtain01]
+[charaPut J 1200,1200]
+[pictureFrame]
+
+[scene 82000]
+
+[charaSet A 98100400 1 マシュ]
+[charaSet B 1098124510 1 ダ・ヴィンチ]
+[charaSet C 1098123210 1 ゴルドルフ]
+[charaSet D 98111500 1 ダ・ヴィンチ]
+[charaSet E 1040000 1 葛飾北斎]
+[charaSet F 7036001 1 宮本伊織]
+[charaSet G 1008300 1 ジークフリート]
+[charaSet H 1098181100 1 ジャンヌ]
+[charaSet I 5027001 1 マリー]
+
+[charaEffect J bit_talk_10_LowLevel]
+
+[cameraMove 0 0 1.01]
+
+[wt 2.0]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0 1]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.5]
+
+？1：よかったね！
+？！
+
+[bgm BGM_EVENT_109 0.1]
+
+[charaFace A 1]
+＠マシュ
+とてもいいものを見られました！[wt 0.6][charaFace A 12][r]でも、あれは何でしょう？
+[k]
+
+＠マシュ
+サーカス……のようなミュージカル……のような。[r]とても不思議な体験でした。
+[k]
+
+[charaFace A 0]
+
+＠マシュ
+ナポレオンさんの大砲や、[r]茨木さんの花火はどうやったのでしょう？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch lblNoClear1 IsClear false]
+
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：ダ・ヴィンチ
+恐らく、あの部分だけ空間を魔術的に拡張[r]していたんだろうねえ。
+[k]
+
+
+＠B：ダ・ヴィンチ
+メフィストフェレスか、[r]あるいは他のキャスターが手を貸したのかな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+魔術師でもやれないことはないが、[r]宝具には耐えられないだろうからな。
+[k]
+
+[charaFace C 12]
+
+＠ゴルドルフ
+……それはそれとして、[r]演劇にサーヴァントとかどういうことなの……？
+[k]
+
+＠ゴルドルフ
+そういうの、イケるものなの……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[branch lblConf1]
+
+[label lblNoClear1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-90]
+
+＠D：ダ・ヴィンチ
+恐らく、あの部分だけ空間を魔術的に拡張[r]していたんだろう。
+[k]
+
+＠D：ダ・ヴィンチ
+メフィストフェレスか、[r]あるいは他のキャスターが手を貸したのかな。
+[k]
+
+[charaFace D 1]
+
+＠D：ダ・ヴィンチ
+サーヴァントでしかできない、[r]派手な芸だねえ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[label lblConf1]
+
+[charaTalk E]
+[charaFace E 19]
+[charaFadein E 0.1 1]
+
+＠葛飾北斎
+ハー……ああいう表現もあるんだナァ。[r]いーい勉強になったヨ。
+[k]
+
+[charaFace E 0]
+
+＠葛飾北斎
+とと様もなんかやる気出してんナア……。[r]あん？　何か描きたくなった？
+[k]
+
+[charaFace E 7]
+
+＠葛飾北斎
+……アレコレ終わった後でなら、[r]手伝ってやるサア！
+[k]
+
+[charaFace E 5]
+
+＠葛飾北斎
+だからその前に、[r]まずは水着剣豪と一勝負、だな！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……という訳でカジノ『シルク・ドゥ・ルカン』[r]に訪れたわたしたちですが……。
+[k]
+
+？1：そろそろジャンヌに挑まなきゃね
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+
+＠宮本伊織
+ま、これまでのところ大抵、[r]一筋縄ではいかないけどね……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠葛飾北斎
+それを言ったらおしめえよ、ってやつだ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ジークフリート
+ともかく、面会を申し込むか。[r]あー、申し訳ないそこの方。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.4 1]
+[wt 0.4]
+
+＠マリー
+カジノ『シルク・ドゥ・ルカン』へようこそ！[r]あら、あらあらあら。
+[k]
+
+[charaFace I 0]
+
+＠マリー
+皆さん……。[r]もしかして、水着剣豪への挑戦かしら？
+[k]
+
+？1：そうです
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 11]
+[charaFadein E 0.1 1]
+
+＠葛飾北斎
+おれが挑戦するサア！
+[k]
+
+＠葛飾北斎
+女浮世絵師にして世に知れ渡る大剣客、[r]葛飾応為……じゃねえや葛飾北斎！
+[k]
+
+[charaFace E 12]
+
+＠葛飾北斎
+サア、案内してくんな！[r]水着剣豪のところによ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠マリー
+本当は『果たし状』がないと、[r]ダメなのだけど……。
+[k]
+
+[charaFace I 1]
+
+＠マリー
+まあいいわ、最近挑戦者もいなくて、[r]ジャンヌも寂しがっていたみたいだから！
+[k]
+
+[charaFace I 0]
+
+＠マリー
+でもちょっと待ってね、[r][#あの子がお腹を空かしているとマズいから]！
+[k]
+
+＠一同
+[charaTalk A]
+あの子？
+[k]
+
+？1：ジャンヌ……かな？
+
+[charaFace I 1]
+
+＠マリー
+ふふ。
+[k]
+
+＠マリー
+ジャンヌは[#健啖家:けんたんか]だけど、[r]お腹が空いたくらいでマズいことにはならないわよ。
+[k]
+
+？2：誰だろう……？
+
+[charaFace I 1]
+
+＠マリー
+まあ、ジャンヌが力尽くで押さえるから、[r]大丈夫だとは思うのだけど！
+[k]
+
+？！
+
+[messageOff]
+[fadeout black 1.5]
+[bgm BGM_EVENT_109 1.5 0.2]
+[wait fade]
+
+[charaFadeout I 0.1]
+
+[scene 71500]
+
+[charaSet B 1098178700 1 リースＸＰ]
+[charaSet C 1026001 1 デオン]
+[charaSet D 1098124510 1 ダ・ヴィンチ]
+
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[wt 1.0]
+
+[charaFace H 0]
+[charaFadein H 0 0,-50]
+
+[charaFilter H silhouette 00000080]
+
+[pictureFrame cut063_cinema]
+
+[fadein black 1.5]
+[wait fade]
+
+＠ジャンヌ
+ふふふ。[r]よしよし、いい子いい子。
+[k]
+
+＠ジャンヌ
+また水着剣豪の挑戦者がやってきたみたいですよ。[r]頑張りましょうねー！
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaFilter H normal 00000000]
+
+[pictureFrame]
+
+
+[scene 81100]
+
+[charaSet H 2032001 1 ジャンヌ]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_109 1.5 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad570]
+[wt 0.7]
+[seStop ad570]
+[wt 0.4]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+＠マリー
+ジャンヌー、ジャンヌー、[r]今、大丈夫かしらー？
+[k]
+
+＠ジャンヌ
+はーい、マリー。[r]大丈夫ですよー、どうしましたー？
+[k]
+
+＠マリー
+挑戦者が来たので、[r]案内してきたのー！
+[k]
+
+[charaFace I 0]
+
+＠マリー
+お腹の具合は大丈夫？
+[k]
+
+＠ジャンヌ
+ええ、先ほどたっぷり食べたから、[r]大丈夫だと思いまーす！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+
+＠葛飾北斎
+何かよくわからねえし妙な寒気がするし[r]嫌な予感がするけどヨウ。
+[k]
+
+[charaFace E 12]
+
+＠葛飾北斎
+ここで逃げたら江戸っ子の名折れでい！[r]たーのー[line 3]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[se ad533]
+[wt 0.8]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.4 1]
+[wt 0.4]
+
+＠ジャンヌ
+こんにちは！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_109 1.0]
+[charaFadeout H 0.1]
+[wt 0.2]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.7 1]
+[wt 1.1]
+
+＠B：？？？
+あそぼ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 28]
+[charaFadein E 0.1 1]
+
+＠葛飾北斎
+[f small]もー……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth G 3]
+[charaDepth A 2]
+[charaDepth F 1]
+
+[charaTalk A]
+[charaFace G 2]
+[charaFadein G 0.1 -320,0]
+[charaFace F 13]
+[charaFadein F 0.1 1]
+[charaFace A 6]
+[charaFadein A 0.1 320,0]
+
+＠マシュ
+……。[r]……。
+[k]
+
+＠ジークフリート
+……。[r]……。
+[k]
+
+＠宮本伊織
+……。[r]……。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+？1：撤退ッ！！！！
+？！
+
+[se ad55]
+[se ad59]
+[cueSe Battle bac343]
+[seStop ad55 1.5]
+[seStop ad59 1.5]
+[cueSeStop bac343 1.5]
+[charaFadeout G 0.4]
+[charaFadeout F 0.4]
+[charaFadeout A 0.4]
+[wt 2.0]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠ジャンヌ
+ようこそいらっしゃいました、[r]カジノ『シルク・ドゥ・ルカン』へ[line 3]
+[k]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaFace H 8]
+
+＠ジャンヌ
+あ、あら？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace H 8]
+[charaFadein H 0.1 0]
+[charaFace I 0]
+[charaFadein I 0.1 2]
+
+＠マリー
+ジャンヌ。[r]みんな撤退しちゃったわ。
+[k]
+
+[charaFace H 4]
+
+＠ジャンヌ
+そんな……。
+[k]
+
+[charaFace H 10]
+
+＠ジャンヌ
+どうして私の挑戦者は、皆さん来るなり[r]回れ右をして逃げて行くのでしょう！
+[k]
+
+[charaFace I 4]
+
+＠マリー
+この子のせいだと思うのだけど……。
+[k]
+
+[charaFace H 8]
+
+＠ジャンヌ
+え、可愛いですよね？[r]リースＸＰ。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠リースＸＰ
+あそぼ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠マリー
+そうね、とても可愛いと思うわ！[r]ね、デオン？
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠デオン
+コメントは控えさせていただけますでしょうか、[r]王妃！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace H 10]
+[charaFadein H 0.1 0]
+[charaFace I 4]
+[charaFadein I 0.1 2]
+
+＠二人
+えー。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠デオン
+なぜ二人揃って首を傾けるのです！
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_94 1.5]
+[wait fade]
+
+[charaFadeout C 0]
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipeout rectangleStripLeftToRight 0.1 1.0]
+[wait wipe]
+
+[scene 82000]
+[cameraMove 0.1 0,0 1.01]
+
+[charaSet B 1098123210 1 ゴルドルフ]
+[charaSet C 98111500 1 ダ・ヴィンチ]
+
+[wt 1.0]
+
+[shake 0.05 4 4 0]
+
+[effect bit_talk_41]
+
+[se ad55]
+[se ad59]
+[cueSe Battle bac343]
+
+[wipein rectangleStripRightToLeft 0.3 1.0]
+[wait wipe]
+
+[wt 2.0]
+
+[seStop ad55 0.3]
+[seStop ad59 0.3]
+[cueSeStop bac343 0.3]
+[se ad224]
+[wt 0.3]
+[shake 0.05 4 4 0.6]
+[wt 0.5]
+[cameraHome 0.1]
+[wt 0.1]
+[effectStop bit_talk_41]
+
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 23]
+[charaFadein E 0.1 1]
+
+＠葛飾北斎
+ぜー、ぜー……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はー、はー……。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[bgm BGM_EVENT_72 0.1]
+
+[charaSet A 3040000 1 ラムダ]
+
+[branch lblNoClear2 IsClear false]
+
+？1：あれは、ない
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠ジークフリート
+ああ……。[r]あれは……ない……な……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+……幻覚だよね、あれ？
+[k]
+
+＠ゴルドルフ
+なんで、[#鮫:サメ]が空中泳いで[r]無機質な瞳で一言『あそぼ』なんて言ってんの？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 16]
+[charaFadein D 0.1 1]
+
+＠D：ダ・ヴィンチ
+うーん。[r]世の中には不思議なことが多いものだね♡
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+いつまでもそれで誤魔化せると思うなよ、[r]という感じなのだがね！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+？2：デジマ何考えて生きてんの、あの聖女！？
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ジークフリート
+……元々、『水着のジャンヌは一味違いすぎる』と[r]評判だったが、なるほど……。
+[k]
+
+[charaFace G 4]
+
+＠ジークフリート
+違うな……違いすぎるな……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+頭のネジが一本残らず[r]吹っ飛んでんじゃないのかね！？
+[k]
+
+[charaFace B 9]
+
+＠ゴルドルフ
+[#鮫:サメ]だよ、[#鮫:サメ]！[r]あれホオジロザメだよねどう見ても！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+？！
+
+[branch lblConf2]
+
+[label lblNoClear2]
+
+？1：あれは、ない
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠ジークフリート
+ああ……。[r]あれは……ない……な……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-90]
+
+＠C：ダ・ヴィンチ
+まさかのシャーク沙汰だったか……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+？2：デジマ何考えて生きてんの、あの聖女！？
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ジークフリート
+……元々、『水着のジャンヌは一味違いすぎる』と[r]評判だったが、なるほど……。
+[k]
+
+[charaFace G 4]
+
+＠ジークフリート
+違うな……違いすぎるな……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-90]
+
+＠C：ダ・ヴィンチ
+うーん、これはこちらも気を引き締めて[r]かからなきゃいけないようだ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+？！
+
+[label lblConf2]
+
+[bgmStop BGM_EVENT_72 1.0]
+
+[charaSet B 1098176810 1 刑部姫]
+[charaSet C 1098177300 1 カーミラ]
+[charaSet D 1026001 1 デオン]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ラムダ
+何を怖がっているの。[r]だらしがないにも程がある。
+[k]
+
+＠ラムダ
+イルカが[#鮫:サメ]に変わった程度で、[r]彼女自体は変わりないのでしょう？
+[k]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaFace A 6]
+
+＠ラムダ
+仕方ないわね。[r]ここは一つ、貸しを作っておこうかしら。
+[k]
+
+？1：謎のメルトリリスさん！
+
+[charaFace A 5]
+
+＠ラムダ
+謎は余計よ。あと本名を外で口にしないで。[r]パパラッチがいたらどうするの。
+[k]
+
+？2：そう言えばいつのまにかいなかった
+
+[charaFace A 5]
+
+＠ラムダ
+サーカスとミュージカルの融合ショウ、とやらに[r]興味はあったから。ＶＩＰ席で観覧していたのよ。
+[k]
+
+[charaFace A 0]
+
+＠ラムダ
+ま、ハリウッド的な出し物として、[r]大衆に人気はあるんじゃない？　派手だったし。
+[k]
+
+[charaFace A 6]
+
+＠ラムダ
+ま、それも一過性のもの。夏のベガスの興行は[r]フィギュアスケートに決まってるもの。
+[k]
+
+？！
+
+[charaFace A 0]
+
+＠ラムダ
+とにかく。[r][%1]、北斎。
+[k]
+
+[charaFace A 1]
+
+＠ラムダ
+相手が[#鮫:サメ]なら私の出番でしょ。頼りなさいよ。[r]海洋生物なら私のヒールに従わないワケがないもの。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+
+＠宮本伊織
+……そうでした。
+[k]
+
+[charaFace F 0]
+
+＠宮本伊織
+冷静に考えると[#たかが][#鮫:サメ]だし。[r]何とかできそうと言えばできそうかな？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 29]
+[charaFadein E 0.1 1]
+
+＠葛飾北斎
+そうかな……たかが、なのかな……。[r]あの[#鮫:サメ]公、宙浮いてなかったかい？
+[k]
+
+？1：イルカもそうだったし……
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ラムダ
+さ、戻りましょうか。
+[k]
+
+[charaFace A 6]
+
+＠ラムダ
+リヴァイアサンの権能を持つ私にとって、[r][#鮫:サメ]もメダカも大差はないわ。
+[k]
+
+[charaFace A 1]
+
+＠ラムダ
+海に存在する概念として、[r]格の違いを思い知らせてあげる！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠刑部姫
+（物凄い勢いでフラグを立てている気が[r]　するけど、おっきーは沈黙）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace B 4]
+[charaFadein B 0.1 0]
+[charaFace C 0]
+[charaFadein C 0.1 2]
+
+＠カーミラ
+ねえ、私は負けて帰ってくると思うのだけど、[r]貴女どちらに賭ける？
+[k]
+
+[charaFace B 5]
+
+＠刑部姫
+ち・ん・も・く！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ラムダ
+[FFFFFF]？[-]
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_62 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 81100]
+
+[charaSet B 1098176810 1 刑部姫]
+
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠マリー
+あら、おかえりなさい！[r]良かったわ、あのまま帰るかと思っちゃった！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ラムダ
+帰るわけないでしょう？[r]今回は私が代理の用心棒。
+[k]
+
+＠ラムダ
+水着剣豪五人目の首は、[r]謎のアルターエゴ・ラムダが戴くわ。
+[k]
+
+[charaFace A 6]
+
+＠ラムダ
+[#鮫:サメ]だろうが[#鯱:シャチ]だろうが、[r]一撃で開きにして魚市に直行よ。
+[k]
+
+？1：何か嫌な予感が……
+
+[charaFace A 5]
+
+＠ラムダ
+なに、その顔？[r]私が信用できないって言うの？
+[k]
+
+？2：一旦引き返さない？
+
+[charaFace A 1]
+
+＠ラムダ
+[FFFFFF]？[-]　アナタにしては慎重ね。[r]なに、[#鮫:サメ]がトラウマだったりする？
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠デオン
+……では、お覚悟のほどを。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠ラムダ
+何が覚悟かサッパリだけど、[r]ええ、構わないわ。
+[k]
+
+[charaFace A 0]
+
+＠ラムダ
+相手は希代の聖女ジャンヌ・ダルク。[r]踊るには相応しい相手[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 11]
+[charaFadein H 0.1 1]
+
+＠ジャンヌ
+……いいえ、[r]私は聖女などではありませんよ。
+[k]
+
+？1：出たーーー！
+？！
+
+[charaFace H 10]
+
+＠ジャンヌ
+もう、そんなに引き[#攣:つ]った顔をして。[r]お姉ちゃんは悲しいですよ？
+[k]
+
+[charaFace H 12]
+
+＠ジャンヌ
+……そう。[r]私は聖女などではありません。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ラムダ
+あら。[r]なら、何だというのかしら。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_48 1.0]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+
+＠ジャンヌ
+そう、私は[%1][&クン:ちゃん]の[line 3]
+[k]
+
+[charaPut J 1]
+[charaFace H 1]
+＠ジャンヌ
+[f large][charaEffect J bit_talk_41]姉です。[se ad186]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_41]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠ラムダ
+そう、姉。
+[k]
+
+[charaFace A 0]
+
+＠ラムダ
+……。[r]……あね？
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaFace A 4]
+
+＠ラムダ
+あの……。[r]何を言っているのかしら、アナタ？
+[k]
+
+＠ラムダ
+英霊よね？　サーヴァントよね？[r]ニホンの生まれじゃないわよね？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ジークフリート
+マスター、どうした。[r]顔色が悪いが……。
+[k]
+
+？1：そういえば……
+？2：あの人は姉だった気がする……！
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+＠宮本伊織
+へー、姉。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 19]
+[charaFadein E 0.1 1]
+
+＠葛飾北斎
+ほう、姉ねえ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠一同
+[charaTalk E]
+[f large]な[messageShake 0.02 3 3 0.4]んで！？
+[k]
+
+[messageShakeStop]
+
+[charaFace H 10]
+
+＠ジャンヌ
+もう、お姉ちゃんは悲しいですよ。[r]まさか[&弟:妹]を相手に戦うなんて！
+[k]
+
+[charaFace H 4]
+
+＠ジャンヌ
+でも残念ですが、致し方ありません。
+[k]
+
+[charaFace H 12]
+
+＠ジャンヌ
+姉に[&弟:妹]が勝てることはないと、[r]その体に叩き込……優しく教えて差し上げます！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠刑部姫
+今、モロッと本音が滲み出た気がする！[r]ヤバい。メカエリチャンと同じタイプ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠葛飾北斎
+どういうことでい！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠カーミラ
+勝つのにあまり手段を選ばない、[r]身内でも容赦ないということよ！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 0.6]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠ジャンヌ
+ではいきます。
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaFace H 2]
+
+＠ジャンヌ
+[f large]姉ビーム！！
+[k]
+
+[messageOff]
+[effect bit_talk_heart_beam]
+[wt 0.3]
+[se ade317]
+[seVolume ade317 0 0]
+[seVolume ade317 0.8 0.4]
+[wt 3.0]
+[seStop ade317 0.4]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ラムダ
+って[messageShake 0.05 7 5 0.5]きゃあああ！？[r]何、何なのよそのビーム！？
+[k]
+
+[messageShakeStop]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠ジャンヌ
+お姉ちゃんが[&弟:妹]のために放つ、[r]愛ゆえのビームです！
+[k]
+
+[charaFace H 12]
+
+＠ジャンヌ
+これを喰らったことにより、マスタースキルは[r]全て私のために使われます。
+[k]
+
+[charaFace H 1]
+
+
+＠ジャンヌ
+回[effect bit_talk_release]避！[cueSe Battle bas9][wt 1.0]　強[effect bit_talk_attack_buf]化！[cueSe Battle bas10][wt 0.7][cueSeStop bas10 0.3][wt 0.3]　回[effect bit_talk_cure]復！[cueSe Battle bas3][r]完璧でお姉ちゃんは嬉しいです！
+[k]
+
+
+[effectStop bit_talk_release]
+[effectStop bit_talk_cure]
+[effectStop bit_talk_attack_buf]
+
+[charaSet D 6019300 1 風魔小太郎]
+[charaSet I 1098178700 1 リースＸＰ]
+
+[charaFace H 6]
+
+＠ジャンヌ
+後はリースＸＰ！[r]ガジガジ[#齧:かじ]っちゃってください！
+[k]
+
+＠ジャンヌ
+ええ、お[#ジョーズ:J　A　W　S]に！
+[k]
+
+[bgmStop BGM_EVENT_3 0.1]
+
+＠一同
+[charaTalk A]
+……。[r]……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_27 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ラムダ
+どういうコトなの、水辺の聖女ってみんな頭が[r]アレなワケ！？
+[k]
+
+[charaFace A 2]
+
+＠ラムダ
+あと、今のジョークはとても滑ったわ！[r]私のスケーティングより滑ったわ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 1]
+
+＠ジャンヌ
+そ、そこは踏み込まなくても[r]いいじゃないですか！
+[k]
+
+[messageOff]
+[se ad77]
+[fadeout black 0.2]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaScale A 1.4]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[fadein black 0.2]
+[wait fade]
+[seStop ad77 0.1]
+
+＠ラムダ
+ちょっとマスター！　私に隠れるのはやめて！[r]あの女、目が怖い！
+[k]
+
+？1：ダメなんだ
+？2：向かい合うと[&弟:妹]になる……！
+？！
+
+＠ラムダ
+洗脳ね、洗脳なのね！？[r]あのＢＢでも洗脳まではしないってのに……ッ！
+[k]
+
+
+[charaFace A 5]
+
+＠ラムダ
+くっ……仕方ないわ。
+[k]
+
+[charaFace A 2]
+
+＠ラムダ
+全員、マスターを下がらせなさい。[r]サーヴァントだけで決着をつけるしか……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaScale A 1.0]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠ジャンヌ
+そうはいきません。[r][&弟:妹]はお姉ちゃんに従いなさい……！
+[k]
+
+[charaFace H 6]
+
+＠ジャンヌ
+みょんみょんみょーん！
+[k]
+
+[messageOff]
+[effect bit_talk_heart_beam]
+[wt 0.3]
+[se ade317]
+[seVolume ade317 0 0]
+[seVolume ade317 0.8 0.4]
+[wt 3.0]
+[seStop ade317 0.4]
+
+？1：う、うう……お、お姉……
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ラムダ
+いけない、このままでは……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_27 1.0]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠ジャンヌ
+トドメです。[r]姉ビー……
+[k]
+
+[messageOff]
+[fadeout black 0.2]
+[wait fade]
+
+[charaTalk depthOff]
+[charaDepth H 1]
+[charaDepth B 2]
+
+[charaFadeout H 0]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+[fadein black 0.2]
+[wait fade]
+
+[bgm BGM_EVENT_63 0.1]
+
+＠刑部姫
+スキル『千代紙大隊長』発動！
+[k]
+
+＠刑部姫
+非致死性の紙戦車砲撃により、[r]時速７０ｋｍでマスターの体は背後に吹っ飛ぶ！
+[k]
+
+[charaFace B 2]
+
+＠刑部姫
+Ｏ・Ｓ・Ａ・Ｋ・Ａ・Ｂ・Ｅ！
+[k]
+
+[messageOff]
+
+[se ad609]
+[seVolume ad609 0 0.6]
+[seStop ad609 1.0]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 0.1]
+[charaPut J 1]
+[charaEffect J bit_talk_41]
+[shake 0.02 3 3 0]
+[wt 1.6]
+
+
+＠刑部姫
+小太郎くん、任せた！
+[k]
+
+＠D：風魔小太郎
+[charaTalk D]
+委細承知！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 0,-40]
+[charaMove D 0,0 0.1]
+[wt 0.5]
+
+[shakeStop]
+[charaEffectStop J bit_talk_41]
+[se ade33]
+[seVolume ade33 0 0.6]
+[charaShake D 0.07 0 3 0.2]
+[charaMove D 10,0 0.2]
+[wt 0.7]
+
+？1：た、助かった……！
+
+[charaFace D 10]
+
+＠D：風魔小太郎
+いえいえ、[r]主殿がご無事で何よりです。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaSet B 1098176810 1 刑部姫]
+
+？2：サンキュー二人とも！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠刑部姫
+うっふっふ。[r]役立ったようで何より！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠カーミラ
+こちらはここまでね。[r]一時撤退よ、ラムダ。
+[k]
+
+[charaFace C 1]
+
+＠カーミラ
+失敗した盗みに拘泥して捕まるよりは、一旦出直して[r]次の盗みを成功させるのが美しい怪盗というものよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ラムダ
+屈辱……[r]この私がサーカスの前に撤退するなんて……！
+[k]
+
+[charaFace A 2]
+
+＠ラムダ
+それというのも姉とか言い出す[r][#マスター:ア　ナ　タ]のせい！
+[k]
+
+＠ラムダ
+後でキツいお仕置きするから、[r]覚悟なさい！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠ジャンヌ
+むっ。[r][&弟:妹]に乱暴はさせませんよ。
+[k]
+
+[charaFace H 2]
+
+＠ジャンヌ
+リースＸＰ、行って！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠リースＸＰ
+あ[charaMoveScale I 1.1 0.3]そぼ。[wt 0.5]あ[charaMoveScale I 1.2 0.3]そぼ。[wt 0.5]あ[charaMoveScale I 1.3 0.3]そぼ。
+[k]
+
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaScale I 1.0]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠刑部姫
+フリーのホラーゲームみたいな勢いで、[r]しつこく追いかけてくるーーー！
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[se ad59]
+[wt 0.3]
+[seStop ad59 1.0]
+[wt 0.8]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ラムダ
+ああもう……私は屈辱と嫉妬は忘れない女！[r]覚えてなさい、ジャンヌ・ダルク！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠ジャンヌ
+はい、バッチリ覚えてますので！[r]いつでもどうぞ！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ラムダ
+ぐっ……この空回る感覚は、[r]何ともむず痒いわね！
+[k]
+
+？1：総員てったーーーーーーい！
+？！
+
+[messageOff]
+[wipeout rightToLeft 0.4 1.0]
+[se ad55]
+[se ad59]
+[cueSe Battle bac343]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 82000]
+[shake 0.05 4 4 0]
+[wt 1.0]
+
+[wipein leftToRight 0.4 1.0]
+[wait wipe]
+
+[bgmStop BGM_EVENT_63 1.5]
+[wt 1.5]
+
+[wipeout rightToLeft 0.4 1.0]
+[wait wipe]
+
+[scene 77801]
+
+[seStop ad55 1.0]
+[seStop ad59 1.0]
+[cueSeStop bac343 1.0]
+[wt 0.5]
+
+[se ad443]
+[se ad133]
+[se ad453]
+
+[charaSet E 98100400 1 マシュ]
+[charaSet H 5014001 1 メフィストフェレス]
+[charaSet I 5004001 1 ナーサリー・ライム]
+
+[wt 1.0]
+
+[wipein leftToRight 0.8 1.0]
+[wait wipe]
+
+[seStop ad443 0.7]
+[seStop ad133 0.7]
+[seStop ad453 0.7]
+[shake 0.05 4 4 0.8]
+[wt 1.0]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠ジークフリート
+ここまで来れば何とか……。
+[k]
+
+[charaFace G 2]
+
+＠ジークフリート
+マスター、しっかりしろ！[r]目を覚ませ！　気を確かに！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.3]
+
+[shake 0.07 6 1 0.4]
+[se ad77]
+[seVolume ad77 0 0.5]
+[wt 0.2]
+[se ad77]
+[seVolume ad77 0 0.5]
+[wt 0.2]
+[cameraHome 0.1]
+[seStop ad77 0.1]
+[wt 0.8]
+
+？1：[&じ、自分:わ、わたし]は一体……
+？！
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+＠D：風魔小太郎
+どうやら正気に戻られたようです。[r]良かった……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠カーミラ
+悪い夢を見ていたのよ。[r]そう……とても悪い夢を……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ラムダ
+悪すぎるわよ。
+[k]
+
+＠ラムダ
+自分をマスターの姉と思い込むサーヴァントとか、[r]悪夢以外の何者でもないわ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠刑部姫
+本当にね！
+[k]
+
+＠刑部姫
+サメwith自称姉！[r]無敵のコンビってやつよ、まさに！
+[k]
+
+[charaFace B 4]
+
+＠刑部姫
+近付けば洗脳されて、[r]マーちゃんが敵に回りかねない。
+[k]
+
+[charaFace B 0]
+
+＠刑部姫
+……あれって水着剣豪の権能みたいな[r]ものなのかな？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠ジークフリート
+いや、素だろうな。[r]恐ろしいことだが……。
+[k]
+
+＠ジークフリート
+加えてあの弾けっぷり。[r]水着剣豪随一の強豪と言わざるを得ないだろう。
+[k]
+
+＠ジークフリート
+色々な意味で。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠マシュ
+……お、おや？[r]マスター。
+[k]
+
+＠マシュ
+[#無我夢中:むがむちゅう]で走っていたから[r]気付きませんでしたが……。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[bgmStop BGM_EVENT_5 0.7]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-45]
+
+[scene 77800]
+
+[charaSet A 6005001 1 ジャック]
+[charaSet B 3026001 1 ジャンヌ・オルタ・サンタ・リリィ]
+
+[cameraHome 0.1]
+
+[pictureFrame cut049_frame01]
+[wt 0.5]
+
+
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+[wt 0.3]
+
+
+[charaFace H 1]
+＠メフィストフェレス
+おやおやおや、これはまた！[r]突然の[#闖入者:ちんにゅうしゃ]！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 0,-45]
+
+＠ナーサリー・ライム
+歓迎するわ！　歓迎するわ！[r]さあさあ、お茶会の準備といきましょう！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-45]
+
+＠ジャック
+わーいわーい。
+[k]
+
+＠ジャック
+か[wt 0.1]・[wt 0.1]い[wt 0.1]・[wt 0.1]た[wt 0.1]・[wt 0.1]い[wt 0.1]・[wt 0.1]だ[wt 0.1]ー[wt 0.1]♪
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 0,-45]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+アドリブですね！
+[k]
+
+[charaFace B 1]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+大丈夫です、私はアドリブも[#嗜:たしな]む[r]行儀の良い子ですから！
+[k]
+
+
+[charaFace B 6]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+さあ、やっちまいますよー！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 0,-45]
+
+＠マシュ
+って、舞台の上だったのですかー！
+[k]
+
+？1：舞台の上だったのですねー！
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 0,-45]
+
+＠宮本伊織
+[#阿吽:あうん]の呼吸ね、まさに！[r]ま、とりあえず戦いましょう！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 0,-45]
+
+＠メフィストフェレス
+なるべく華麗な[#殺陣:たて]を見せていただけると、[r]大変ありがたいＤＥＡＴＨネー！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-45]
+
+＠ジークフリート
+語尾に殺意しかない……！[wt 0.6][charaFace G 2][r]まあいい。やるとするか。マスター、指示を！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

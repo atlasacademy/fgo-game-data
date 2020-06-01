@@ -1,0 +1,572 @@
+
+＄94-03-50-25-1-1
+[soundStopAll]
+
+
+[charaSet A 6037001 1 カーマ]
+[charaSet B 1098164200 1 巨大ゴースト女中]
+[charaSet C 3030000 1 パールヴァティー]
+[charaSet D 6014001 1 マタ・ハリ]
+[charaSet E 98110000 1 柳生但馬守]
+[charaSet F 5030001 1 シェヘラザード]
+[charaSet G 10003000 1 殺生院キアラ]
+[charaSet H 1098163800 1 春日局]
+[imageSet I cut103_item01 1]
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+
+[scene 72000]
+
+[bgm BGM_EVENT_80 0.1]
+
+[effect bit_talk_06]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+
+＠カーマ
+あーあ。省エネとインドラへのあてつけで選んだコレ、[r]やっぱり本来の弓矢とは比べものになりませんね。
+[k]
+
+＠カーマ
+ま、出し惜しみしてればこんなものでしょう……。
+[k]
+
+[messageOff]
+[wt 0.2]
+
+[effectStop bit_talk_06]
+[wt 0.4]
+[charaSpecialEffect A flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect A]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠パールヴァティー
+倒し、た……？[r]なんだかあっさりと……！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_80 0.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.8]
+
+
+[charaSpecialEffect B enemyErasure 1 2.0]
+[cueSe Battle ba6]
+[wt 3.0]
+[cueSeStop ba6 0.3]
+
+
+[cueSe Battle bas2]
+[wt 0.2]
+[charaFadein I 0.7 0,-200]
+[wt 2.2]
+
+[se ad592]
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout I 0.1]
+[charaPut J 1]
+[charaEffect J bit_talk_noise02]
+[scene 10001]
+[wt 1.5]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_EVENT_1 0.1]
+
+＠混ざり合った囁き声
+……幕政を田沼に任せきりとは……[r]……才はあるのやもしれぬが……
+[k]
+
+＠混ざり合った囁き声
+……ああも覇気がなくては……[r]……民よりも天下よりも、駒を見ておられる……
+[k]
+
+＠
+[line 3]。[r][line 6]。
+[k]
+
+＠
+駒の音がする。ぱちり。[r]そして[line 3]無音。
+[k]
+
+＠
+また、駒の音がする……ぱちり。ぱちり。[r]そして[line 6]無音。
+[k]
+
+＠
+これでいい。これがいい。話し声、怒鳴り声、囁き声。[r]雑音は要らない。消えてほしい。
+[k]
+
+＠
+それに満ちた、天下は広すぎる。[r]自分には八十一の升目さえあればそれでいい。
+[k]
+
+＠甘い女の声
+ふふ。好きなものを好きなように極めればよいのです。
+[k]
+
+＠甘い女の声
+将軍は天下で一番偉いのに、それが天下を見る事に[r]縛られるなどおかしな話。
+[k]
+
+＠甘い女の声
+何を見、何を見ぬかは自らで決めればよいのです。[r]私は決してそれを否定しません。
+[k]
+
+＠甘い女の声
+その駒の音を、愛しましょう。
+[k]
+
+＠甘い女の声
+……新しい詰将棋の問題ができた、ですか？[r]まあ、それはとても楽しみですね[line 3]
+[k]
+
+
+[messageOff]
+[se ad592]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_1 0.5]
+[wait fade]
+
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_noise02]
+[scene 72000]
+[wt 1.5]
+
+[charaSet B 6037001 1 カーマ２]
+[charaFilter B silhouette 00000080]
+
+[charaSet I 6037001 1 カーマ３]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠マタ・ハリ
+こちらもいつもの印籠を落としたわよ～？[r]普通に勝っちゃったのかしら？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠柳生但馬守
+[#否:いな]。まだ終わらぬ。[r][line 3]あちらだ。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[charaTalk depthOff]
+[charaDepth B 0]
+[charaDepth A 1]
+
+[charaTalk off]
+[charaFace B 13]
+[charaFadein B 0.7 1]
+[wt 1.5]
+
+[charaFace A 13]
+[charaFadein A 0.7 1]
+[wt 1.0]
+[charaFadeout B 0.1]
+
+
+[bgm BGM_EVENT_71 0.1]
+
+＠カーマ
+どーもぉ。私です。
+[k]
+
+＠カーマ
+ああ、いや、こんなどこぞのパールヴァティーみたいに[r]自信たっぷりに言ったらいけませんね。
+[k]
+
+＠カーマ
+もっと私らしく、もっと卑屈にいきましょう。[r]挨拶やり直し。
+[k]
+
+[charaFace A 15]
+
+＠カーマ
+ごめんなさい、会いたくなかったかもしれませんが[r]私です。大丈夫ですよ、私は会いたかったですから。
+[k]
+
+？1：たしかに倒したのに！？
+
+[charaFace A 1]
+
+？2：分身！？
+
+[charaFace A 1]
+
+＠カーマ
+分身？　ふふ……[r]だとしたら、私はニンジャだったのかも？
+[k]
+
+？！
+
+＠カーマ
+まあとにかく、おめでとうございます。[r][&貴方:貴女]たちは見事に私から鍵を盗みました。
+[k]
+
+＠カーマ
+ふーんへーそぉー、そんなに私の奥へ潜りたいんだぁ、[r]とニヤニヤしつつ、私は最深部へ戻る事にします。
+[k]
+
+＠カーマ
+最後のおもてなしの準備をしなくてはいけませんからね。
+[k]
+
+[charaFace A 15]
+
+＠カーマ
+ああ、それから次が最後の階層ですが、これまでとは[r]少し違いますよ、と言わせていただきましょう。
+[k]
+
+＠カーマ
+最後なのですから、より勢いに任せて進めるように、[r]より欲望に任せて進めるように、シンプルに。
+[k]
+
+[messageOff]
+[charaFilter B NORMAL FFFFFF00]
+[charaFace B 0]
+[charaFadein B 0.7 -320,0]
+[wt 1.0]
+[charaTalk on]
+
+＠B：カーマ
+そう、シンプルに、[#私たち]が。
+[k]
+
+[charaTalk depthOff]
+[charaDepth B 0]
+[charaDepth A 1]
+[charaDepth I 2]
+
+[messageOff]
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.7 320,0]
+[wt 1.0]
+
+＠I：カーマ
+みんなを幸せに堕落させてあげますからね[line 3]
+[k]
+
+？1：！！？？？
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_71 1.0]
+[se ade282]
+[wt 0.05]
+[charaSpecialEffect A wipeTime 0,0 0.7]
+[charaSpecialEffect B wipeTime 0,0 0.7]
+[charaSpecialEffect I wipeTime 0,0 0.7]
+[wt 2.4]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠シェヘラザード
+今のは……いったい……？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+
+＠殺生院キアラ
+本物と偽物がいる、という話であれば良いのですが。[r]あの様子では、そう簡単なものではなさそうですね。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠パールヴァティー
+……。少なくとも、カーマがあのような力を[r]得意としていた、とは聞いた事がないです。
+[k]
+
+[charaFace C 7]
+
+＠パールヴァティー
+しかし、私たちは神霊。数を増やすぐらいなら[r]どうにか工夫すればできなくはないと思います。
+[k]
+
+＠パールヴァティー
+私だって宝具を撃つときには[r]似たようなことをしていますしね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠マタ・ハリ
+ま、それこそ忍者の人たちだって分身はできるし。[r]小太郎クンに見せてもらったときは驚いたわ～。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠シェヘラザード
+自らと寸分違わぬ人形を創れる冠位の人形師がいる、という[r]お話も聞いた事はあります。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠柳生但馬守
+つまるところ[line 3][r]なぜ奴が複数いたのかはわからぬ、という事か。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠マタ・ハリ
+残念ながらね～。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[wt 0.1]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth C 0]
+[charaDepth H 1]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+[wt 0.25]
+[fowardEffect bit_talk_tornado02]
+[se ad80]
+[seVolume ad80 0 0.5]
+[wt 0.3]
+
+[charaSpecialEffect C erasureReverse 1 0.3]
+[charaFace H 13]
+[charaFadein H 0.2 1]
+[wt 0.1]
+[seStop ad80 0.3]
+
+[wt 0.5]
+
+＠春日局
+わからぬものをいくら考えても仕方ありません。[r]とりあえず先に進むべきでは？
+[k]
+
+＠春日局
+奴が何匹いようが、捕らえられた上様は一人。
+[k]
+
+[charaFace H 5]
+
+＠春日局
+まずは上様をお救いし、それからこの大奥に[#蔓延:はびこ]った[r]害虫を[#燻:いぶ]し出す方法を考えればよいのです。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠シェヘラザード
+そうですね。[r]人質の救出が最優先なのは確かです。
+[k]
+
+[charaFace F 5]
+
+＠シェヘラザード
+死んでしまっては、いけません……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠殺生院キアラ
+それでは、進む事にいたしましょうか。[r]いよいよ最後の階層のはずです。
+[k]
+
+？1：最後の五戒は何ですか、キアラさん？
+？！
+
+[charaFace G 7]
+
+＠殺生院キアラ
+そうですね、とても単純。
+[k]
+
+＠殺生院キアラ
+これを最後に残すというのは、ええ、当然というか……[r]もったいぶらせるというか……。
+[k]
+
+[charaFace G 3]
+
+＠殺生院キアラ
+困ります。本当に、困ってしまいます。[r]今の[#私:わたくし]は、それを我慢しているが[#故:ゆえ]の[#私:わたくし]ですのに。
+[k]
+
+[charaFace G 7]
+
+＠殺生院キアラ
+いえ、しかし、大丈夫でしょう。逆に考えれば、[r]それは今まで耐えられているという事。
+[k]
+
+＠殺生院キアラ
+どれだけ美味しそうな[#マスター:ご　馳　走]が目の前にあろうとも、[r]耐えられているのです。
+[k]
+
+＠殺生院キアラ
+今更、どのようなお皿が追加されたところで……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠マタ・ハリ
+あの～、もしもし？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 1]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+＠殺生院キアラ
+ああ、申し訳ありません。[r]それでは、お教えしましょう。
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace G 0]
+
+＠殺生院キアラ
+残る最後の戒は[line 3][r][#不邪淫戒:ふじゃいんかい]、といいます。
+[k]
+
+[charaFace G 1]
+
+＠殺生院キアラ
+何を戒めているのかは、言わなくてもおわかりですね？
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[charaFadeout G 0.1]
+[imageSet I cut103_item01 1]
+[wt 0.5]
+[soundStopAll]
+
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+
+[cueSe Battle bas2]
+[charaFace I 0]
+[charaFadein I 0.5 0,-200]
+[wt 1.4]
+
+＠
+[s 1000]
+　　　　[s 16]第十代将軍『徳川家治の印籠』を手に入れた。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[wait fade]
+[end]
+
+
+
+
+
+
+
+
+
+
+
+

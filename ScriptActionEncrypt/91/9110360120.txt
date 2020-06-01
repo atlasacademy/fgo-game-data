@@ -1,0 +1,830 @@
+
+
+＄91-10-36-01-2-0
+
+[soundStopAll]
+
+[charaSet A 1036001 1 蘭陵王]
+[charaSet B 5042001 1 紫式部]
+[charaSet C 5042001 1 紫式部（投影）]
+[charaSet D 1038000 1 イアソン]
+[charaSet E 2035000 1 パリス]
+[charaSet F 7027001 1 ペンテシレイア]
+
+[charaSet G 8001000 1 ダミーエフェクト１]
+[charaSet I 8001000 1 ダミーエフェクト２]
+[imageSet J back10001 1]
+[charaScale J 1.01]
+
+[charaDepth G 1]
+[charaDepth A 5]
+[charaDepth B 9]
+
+
+
+[branchQuestNotClear lblNotClear1 91402801 1]
+[flag IsClear true]
+[branch lblConf1]
+[label lblNotClear1]
+[flag IsClear false]
+[label lblConf1]
+
+
+[scene 10000]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.4]
+＠
+午前十二時。[bgm BGM_EVENT_5 0.1 0.7][r]昼飯時。
+[k]
+
+＠
+対象は食堂ではなく、[r]地下図書館へと移動する。
+[k]
+
+[branch lblClear2 IsClear true]
+
+[label lblNotClear2]
+
+[messageOff]
+[wipeFilter cinema 0.5 0]
+
+[branch lblConf2]
+
+
+[label lblClear2]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_5 1.4 0.5]
+[wait fade]
+
+[scene 70600]
+[wipeFilter cinema 0.5 0]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-50]
+[charaFadeTime C 0 0.8]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.4]
+＠
+なお、地下図書館は最近になって、
+[k]
+
+＠
+『偉大にして恐るべきされど可憐なる紫式部図書館』
+[k]
+
+[charaFace C 0]
+
+＠
+に改名したことを念のため明記。
+[k]
+
+[messageOff]
+[charaFace C 6]
+[wt 1.4]
+
+[label lblConf2]
+
+[fadeout black 1.2]
+[bgmStop BGM_EVENT_5 1.2]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[scene 70300]
+
+[fadein black 1.2]
+[wait fade]
+[wt 0.8]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.2 0,-50]
+
+＠紫式部
+これはこれは、蘭陵王様。[bgm BGM_EVENT_2 0.1][r]今日はどのような本を？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠蘭陵王
+そうですね……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+＠紫式部
+とある経緯で魔道書や貴重な古本など、[r]幾つか仕入れていますが……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠蘭陵王
+なるほど。
+[k]
+
+[charaFace A 4]
+
+＠蘭陵王
+（でも、なぜか遠い目になっている……）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠紫式部
+残念ながら、新しい兵法書は未入荷でして……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠蘭陵王
+ああ、それではマスターが好みそうな本など[r]ありますか？
+[k]
+
+＠蘭陵王
+次に伺うときに、[r]持って行こうかと……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠紫式部
+まあ……。
+[k]
+
+＠紫式部
+それなら、少々お待ちください。
+[k]
+
+[messageOff]
+[se ade74]
+[charaFadeout B 0.4]
+[charaMove B -30,-50 0.4]
+[wt 0.7]
+
+[fadeout black 1.0]
+[seStop ade74 1.0]
+[wait fade]
+
+[scene 70500]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ade74]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.4 -170,-50]
+[charaMove B -200,-50 0.4]
+[wt 0.4]
+[seStop ade74 0.2]
+
+＠紫式部
+ええとええと……。[r]確かこの棚の上に……。
+[k]
+
+[messageOff]
+[se ad95]
+[charaMove B -200,-40 0.2]
+[wt 0.4]
+[seStop ad95]
+
+[charaMove B -200,-30 0.2]
+[wt 0.8]
+
+[charaShake B 0.06 1 0 0]
+[wt 0.6]
+[se ade46]
+[charaFace B 4]
+[wt 0.8]
+
+[charaFadeout B 0.1]
+[charaShakeStop B]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠蘭陵王
+む。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 -200,-30]
+[charaShake B 0.06 1 0 0]
+[wt 0.4]
+
+[se ade183]
+[seVolume ade183 0 0.7]
+[charaFace B 6]
+[charaShakeStop B]
+[charaMove B -195,-40 0.2]
+
+＠紫式部
+きゃっ！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaMove B 30,-140 0.4]
+
+[charaFace A 2]
+[charaFadein A 0.2 250,-50]
+[charaMove A -70,-50 0.4]
+[wt 0.35]
+[se ade32]
+
+[fadeout white 1.0]
+[seStop ade32 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[charaPut J 0,-200]
+[charaFadeTime J 0 0.5]
+
+[se adm19]
+[seVolume adm19 0 0.4]
+[charaEffect G bit_talk_yume01]
+[wt 0.8]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaScale A 1.4]
+[charaFadein A 0.1 0,-50]
+
+[fadein white 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_45 0.1 0.8]
+
+＠蘭陵王
+緊急事態につき、失礼。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaScale B 1.4]
+[charaFadein B 0.3 0,-50]
+[wt 0.2]
+
+＠紫式部
+ももももも申し訳ありません！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.3 0,-50]
+[wt 0.2]
+
+＠蘭陵王
+いえいえ、怪我がなくて良かった。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.3 0,-50]
+[wt 0.2]
+
+＠紫式部
+そんな、はい。[r]私の不注意でございます……。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.3 0,-50]
+[wt 0.2]
+
+＠蘭陵王
+転倒などただの悪運ですよ。[r]気に為されない方がよろしい。
+[k]
+
+[messageOff]
+[fadeout white 1.2]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaScale A 1.0]
+[charaScale B 1.0]
+[wt 0.1]
+
+[wipeOff]
+[pictureFrame cut063_cinema]
+
+[charaPut J 3000,3000]
+[charaPut G 3000,3000]
+[charaEffectStop G bit_talk_yume01]
+[wt 1.0]
+
+[fadein white 1.2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.3 0,-50]
+[wt 0.2]
+
+＠蘭陵王
+それで、こちらの本で合っていますか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 0,-50]
+
+＠紫式部
+は、はい。[r]そちらです。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠蘭陵王
+ありがとうございます。[r]それでは貸していただきます。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠紫式部
+ええ、喜んで。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+[wt 0.3]
+
+[charaMoveReturn A 0,-60 0.4]
+[wt 0.7]
+
+[se ade74]
+[charaFadeout A 0.4]
+[charaMove A -20,-50 0.4]
+[wt 1.5]
+
+[seStop ade74 0.7]
+[wt 0.7]
+
+＠
+……と、紫式部の体に触れるも[r]爽やかな笑みでそっと離れ、失礼を詫びる。
+[k]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 0,-50]
+
+＠紫式部
+はあ……。
+[k]
+
+＠紫式部
+何と申しましょうか、[r]端麗という言葉がぴったりの御方です。
+[k]
+
+＠紫式部
+仮面をつけているにもかかわらず、[r]不覚にも胸がドキドキしました……。
+[k]
+
+[charaFace B 2]
+＠紫式部
+……こ、この感慨は何かに使えるのではっ。[wt 1.1][charaFace B 1][r]作品の[#種:ネタ]帳にしたためておきましょう。
+[k]
+
+[messageOff]
+[wipeout rollRight 1.4 1.0]
+[bgmStop BGM_EVENT_45 1.4]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaSet G 8001000 1 ダミーエフェクト３]
+
+[scene 10000]
+
+[wipein rollLeft 1.2 1.0]
+[wait wipe]
+
+＠
+午後四時。
+[k]
+
+＠
+対象が、たまたま遭遇した二人と雑談に興じ始める。
+[k]
+
+[messageOff]
+[wipeout rollRight 1.2 1.0]
+[wait wipe]
+
+[branchQuestNotClear lblNotClear3 3000303]
+[scene 66600]
+[branch lblConf3]
+[label lblNotClear3]
+[scene 10310]
+[label lblConf3]
+
+[cameraMove 0 0,0 1.02]
+
+[wipein rollLeft 1.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk off]
+[charaFace E 4]
+[charaFace D 4]
+[charaFadein E 0.4 -256,-50]
+[charaFadein D 0.4 256,-50]
+[wt 0.6]
+[charaTalk on]
+[charaTalk E]
+
+＠パリス
+なるほどぉ……。[bgm BGM_EVENT_2 0.1][r]それで仮面を……。
+[k]
+
+[charaFace D 0]
+＠イアソン
+ハッ、ギリシャに生まれなくて良かったなおまえ。
+[k]
+
+[charaFace D 1]
+
+＠イアソン
+ギリシャだったら、その美貌のせいで[r]呪われるか祝福されるかの地獄二択だ。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠蘭陵王
+呪われる……はともかく、[r]祝福なら良いことでは？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace E 4]
+[charaFace D 4]
+[charaFadein E 0.1 -256,-50]
+[charaFadein D 0.1 256,-50]
+＠イアソン
+その祝福のせいで人生が絶頂になるが、[r]暴言を吐いたせいで神から天罰が下る。
+[k]
+
+[charaFace D 5]
+＠イアソン
+あるいは浮かれてんのが何かムカつく、[r]という理由で天罰が下る。
+[k]
+
+[charaFace D 12]
+
+＠イアソン
+つまり、どうあれバッドエンドという事だ！
+[k]
+
+[charaFace E 2]
+
+＠パリス
+あー、よくありますよくあります！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+＠蘭陵王
+ギリシャも大変ですね……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace E 0]
+[charaFace D 0]
+[charaFadein E 0.1 -256,-50]
+[charaFadein D 0.1 256,-50]
+
+＠イアソン
+仮面で顔を隠していたっつーと、[r]ペンペン草もその類いか。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠蘭陵王
+ペンペン……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace E 0]
+[charaFace D 0]
+[charaFadein E 0.1 -256,-50]
+[charaFadein D 0.1 256,-50]
+
+＠イアソン
+ほら、アイツだよアイツ。[r]バーサーカーのしょっちゅうキレる奴で……。
+[k]
+
+[charaFace D 6]
+＠イアソン
+背丈の低い……。[r]腹筋バキバキの……。
+[k]
+
+[charaFace E 2]
+
+＠パリス
+（アポロン様から伝達！[r]　いやなよかんがする！）
+[k]
+
+[messageOff]
+[se ad337]
+[charaFadeout E 0.4]
+[charaMove E -300,-50 0.4]
+[wt 1.3]
+[seStop ad337 0.2]
+[wt 0.4]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 0,-50]
+
+＠イアソン
+そうそう、アイツだ！
+[k]
+
+＠イアソン
+[f large]ペテンシレイア！！
+[k]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+＠ペンテシレイア
+[f large]誤字に悪意あり死ねぇ！！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaPut I 2400,2400]
+[charaRoll I 270]
+
+[se ad608]
+[se ad609]
+
+[shake 0.03 5 5 0.6]
+
+[charaEffect I bit_talk_impactlanding]
+
+[shake 0.05 7 3 0.5]
+[seStop ad609 1.0]
+[wt 0.2]
+[charaPut I -100,-75]
+[wt 0.3]
+
+[charaFace D 16]
+[seStop ad608 1.5]
+[wt 0.7]
+
+[se bac134]
+[wt 0.3]
+[se ad195]
+[charaEffect G bit_talk_42 0,0 H]
+[wt 0.6]
+[charaEffectStop G bit_talk_42]
+[wt 0.2]
+[charaPut G 2000,2000]
+
+[se bac432]
+[charaFace D 15]
+[fowardEffect bit_talk_14]
+[charaShake D 0.04 5 4 0.6]
+[wt 0.3]
+[charaTalk on]
+
+＠イアソン
+ご[messageShake 0.04 3 3 0.5]ぶはぁー！？[wt 0.2][charaMove D 800,0 0.25][wt 0.2][se ad608][shake 0.04 2 3 0.6][wt 0.6]
+[k]
+
+[messageOff]
+[se ad671]
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.4 -250,-50]
+[charaMove F -20,-50 0.3]
+[wt 0.3]
+
+[messageShakeStop]
+
+[charaMove F 0,-50 0.3]
+[wt 1.0]
+
+＠ペンテシレイア
+フーッ、フーッ……。
+[k]
+
+[charaFace F 5]
+
+＠ペンテシレイア
+（ギロリ）
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠蘭陵王
+私の名誉のためにお伝えしますが、[bgm BGM_EVENT_3 0.1][r]誓ってあなたの悪口を申した覚えはありません。
+[k]
+
+[charaFace A 4]
+
+＠蘭陵王
+ですが、イアソン殿が叫ぶ前に[r]止めるべきでした、申し訳ありません。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+
+＠ペンテシレイア
+……よし。
+[k]
+
+＠ペンテシレイア
+私とて、禍根を残したくはない。[r]シミュレーターに来い。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠蘭陵王
+戦え、と？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+
+＠ペンテシレイア
+貴様がキャスターなら見逃しても構わんが、[r]何しろセイバーだ。
+[k]
+
+＠ペンテシレイア
+まさかその剣は飾りという訳ではあるまい？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+＠蘭陵王
+……そうですね。
+[k]
+
+＠蘭陵王
+ギリシャの荒ぶる戦いも、[r]一度経験しておくべきか。
+[k]
+
+[charaFace A 5]
+
+＠蘭陵王
+よし、戦いましょう。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+[wt 1.1]
+
+[charaFace F 1]
+[wt 1.2]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,947 @@
+
+
+
+＄02-00-03-05-1-0
+[soundStopAll]
+
+
+[charaSet A 1098118800 1 町人の女]
+[charaSet B 98112300 1 町人の男]
+[charaSet C 1017001 1 武蔵]
+[charaSet D 1098118600 1 おぬい]
+[charaSet E 5003001 1 おたま]
+[charaSet F 1098119200 1 清姫]
+[charaSet G 1098119000 1 城勤めの武士]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[scene 46600]
+
+[fadein black 2.0]
+[se ad462]
+[seVolume ad462 0 0.05]
+[wt 0.1]
+[seVolume ad462 2.0 0.9]
+[wait fade]
+
+[wt 2.5]
+[seStop ad462 2.5]
+[wt 2.0]
+
+[scene 46700 1.5]
+[wt 1.0]
+[se ad451]
+[seVolume ad451 0 0.1]
+[wt 0.1]
+[seVolume ad451 1.4 0.95]
+[wt 2.5]
+
+
+[wt 2.5]
+
+[seStop ad451 1.5]
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.2]
+
+＠町人の女
+黒いバケモノが出るって話？
+[k]
+
+＠町人の女
+ああうん、なんだかそういう怖い噂を聞いたねえ。[r]なんでも[#常陸国]あたりは大変な事になってるって！
+[k]
+
+＠町人の女
+怖いねえ怖いねえ。あ、怖いといや知ってるかい？[r][#本所:ほんじょ]の方の川で河童が出るんだって！
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout A 0.1]
+[wt 1.0]
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+[wipeout rightToLeft 0.1 1]
+[wait wipe]
+[scene 46700]
+[wipein leftToRight 0.7 1]
+[wt 0.5]
+[se ad451]
+[wait wipe]
+
+
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.2]
+
+＠町人の男
+さあ、知らねえなあ。噂はよく耳にするがね？[r]そんなに厄介な事にはならないんじゃないかねえ。
+[k]
+
+＠町人の男
+なんと言っても下総は天領だ！　それにほれ、[r]そこのお城にゃ松平[#下総守:しもうさのかみ]さまもいらっしゃるんだ。
+[k]
+
+＠町人の男
+ほんとに[#拙:まず]いってぇならそのうち江戸から[r]腕利きのお侍でも押し寄せてくるんじゃねえか？
+[k]
+
+[messageOff]
+[wt 0.5]
+[wipeout rightToLeft 0.7 1]
+[seStop ad451 0.3]
+[wait wipe]
+[charaFadeout B 0.1]
+[wt 1.01]
+[scene 10000]
+[wipein leftToRight 0.1 1]
+[wait wipe]
+[fadeout black 0.1]
+[wait fade]
+[scene 46700]
+[fadein black 1.0]
+[se ad451]
+[wait fade]
+
+
+[wt 1.5]
+
+[seStop ad451 0.3]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.4 1]
+
+＠武蔵
+…………うーん、こういう反応かぁ。
+[k]
+
+＠武蔵
+町の近くだと怪異もほとんど出ないっていう話だし、[r]城下の人にはあまり実感がないみたいね。
+[k]
+
+？1：里があんな事になったのに……
+？2：伝わっていないのかな……
+
+？！
+
+＠武蔵
+そうね。情報の伝達が随分ゆっくりしている。[r]でも、泰平の世ならこんなものかもしれないわ。
+[k]
+
+[charaFace C 4]
+
+＠武蔵
+乱世の頃は噂ひとつでも[r]生き死にが掛かっていたけど……
+[k]
+
+＠武蔵
+[#戦:いくさ]が遠くなった時代になると、どうしてもね。
+[k]
+
+[charaFace C 12]
+
+＠武蔵
+或いはお城の側で情報を統制しているのかもしれない。[r]ただの仮定で根拠はないけどね。あとはたとえば、
+[k]
+
+＠武蔵
+英霊剣豪とその召喚者が[r]情報の分断のために暗躍している、とか？
+[k]
+
+？1：もっと情報を集めよう
+？2：色んな人に話を聞き[&たい:たいな]
+
+？！
+
+[charaFace C 0]
+
+＠武蔵
+ええ。私もそのつもり。
+[k]
+
+
+[charaFace C 1]
+
+＠武蔵
+……にしても、本当に立派なお城！
+[k]
+
+＠武蔵
+道中もちらりと見えてはいたわね。でも、[r]城下町からだとこんなに大きく天守が見えるのね。
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[wt 0.7]
+[cameraMove 0.8 -4,-10 1.3]
+[wt 3.0]
+[cameraHome 0.5]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠おぬい
+りっぱなおしろ！[r]ぬい、いっぺんあそこにのぼってみたいなぁ。
+[k]
+
+＠D：田助
+きゃうきゃう！　だうー！
+[k]
+
+[charaFace D 1]
+
+＠おぬい
+うん、うん。田助ものぼりたいって！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠武蔵
+ちょーっとばかり難しいかな。でもそうね、[r]あんなに高い場所からなら、それはいい眺めでしょう。[charaFace C 1]
+[k]
+
+[charaFace C 7]
+
+＠武蔵
+うーん。これなら庵の裏山にちょっと登るだけでも[r]天守くらいは見えそうだわ。でっかい！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠おぬい
+でっかーい♪
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠武蔵
+土気城がこんなに堂々としたお城だったなんて話は[r]私の世界じゃ聞かないけど……まあ、それはそれね！
+[k]
+
+？1：それはそれ！
+
+[charaFace C 7]
+
+＠武蔵
+ね！
+[k]
+
+？2：自分の知ってる歴史とも違うけど
+
+[charaFace C 9]
+
+＠武蔵
+……やっぱりズレた歴史なのかしら。[r]それとも、これも聖杯の力で作られた異変のひとつ？
+[k]
+
+[charaFace C 0]
+
+＠武蔵
+今はなんとも言えないか。[r]それも含めて情報収集を続けましょう！
+[k]
+
+？！
+
+[messageOff]
+[wipeout rollRight 1.0 0.5]
+[wait wipe]
+[charaFadeout C 0.1]
+[wt 1.5]
+[wipein rollLeft 1.0 0.5]
+[wait wipe]
+
+＠E：？？？
+あら？
+[k]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+＠E：？？？
+へえ、なるほどふうむそうですか[line 3]
+[k]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.2]
+
+[bgm BGM_EVENT_66 0.1]
+
+＠E：雅な芸妓
+そのきょろきょろとして落ち着きのない様子、[r]もしやアナタ達もよそから来たんです？
+[k]
+
+＠E：雅な芸妓
+実は[#私:わたくし]もなんです。江戸の方から足を伸ばして、[r]荒川越えて峠も越えて、やあっと着いたのが半年前。
+[k]
+
+＠E：雅な芸妓
+そしたらアナタ、見てご覧なさいな、まああの立派な[r]天守！　まるでお上のお城みたいじゃございません？
+[k]
+
+[charaFace E 1]
+
+＠E：雅な芸妓
+さすがは天領下総の土気城！[r]将軍家の血筋でいらっしゃる松平様が治めておられると
+[k]
+
+＠E：雅な芸妓
+聞いちゃいましたけどね？[r]それでも驚くものは驚きますよねえ、あんなにご立派な。
+[k]
+
+？1：狐耳！？　いや、錯覚……錯覚だ……？
+？2：もしかしてこの時代に召喚された玉藻の前！？
+
+？！
+
+[charaFace E 0]
+
+＠E：雅な芸妓
+おやおや、[#私:わたくし]の事をご存知で？
+[k]
+
+＠E：雅な芸妓
+でも、たまものまえというのは何だか仰々しいですねえ。[r][#私:わたくし]は[#たま]。おたまとお呼びくださいましな。
+[k]
+
+＠おたま
+[#ふたつめの江戸]とも名高いこの土気の城下町で[r]ささやかに芸を売っております、しがない[#芸妓:げいぎ]です。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+[charaFace D 3]
+[charaFadein D 0.1 2]
+
+＠おぬい
+わー、すごい。きれいなひと！[r]えどのひとみたい！
+[k]
+
+[charaFace E 1]
+
+＠おたま
+まあ、なんて素直で純真で愛らしい子供でしょう！[r]子供がみーんなアナタみたいならよろしいのに。
+[k]
+
+[charaMoveReturn E -240,0 0.4]
+[se ad110]
+
+＠おたま
+はい、飴あげます。そちらの赤ん坊にも。
+[k]
+
+[charaFace D 1]
+
+＠おぬい
+わーい♪
+[k]
+
+＠D：田助
+きゃっきゃっ♪
+[k]
+
+？1：おたまさん
+？2：本当に玉藻の前とは別人？
+
+？！
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠おたま
+……もしかしてお座敷でご一緒した事ございます？[r]でしたら本当に申し訳ありません。
+[k]
+
+＠おたま
+でも、やっぱり気のせいじゃございません？[r][#私:わたくし]とんと覚えがなく……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠武蔵
+だってさ。知り合いなの？　どうなの？
+[k]
+
+？1：知り合いに
+？2：よく似ているような気がする
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠おたま
+知り合いに似ている……それは妙手でございますねぇ。[r][#私:わたくし]も覚えておきましょう。
+[k]
+
+[charaFace E 2]
+[charaMoveReturn E 0,10 0.1]
+
+＠おたま
+ではなくて！　ともかく！
+[k]
+
+[charaFace E 0]
+
+＠おたま
+よく見ればなんだか異国のおべべを着ていらして、[r]とっても懐の温かそうなお[#大尽:だいじん]様じゃありませんか。
+[k]
+
+[charaFace E 1]
+
+＠おたま
+よろしかったら[#私:わたくし]のお店、遊びに来てくださいましね？[r]ほほほほほほ、コーンコンコン♪
+[k]
+
+？1：コーンコンコンって！
+？2：いまさら新しいキャラ付け！？
+
+？！
+
+＠おたま
+コーンコンコン。何です？[r]ふふふ、そんなに[#私:わたくし]と顔見知りという事にしたいなら、
+[k]
+
+[charaFace E 0]
+
+＠おたま
+そうですねえ。顔見知りになってしまうのは如何です？[r]具体的にはこれからうちのお店においでいただくとか。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠武蔵
+……だってさ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+[charaFace D 0]
+[charaFadein D 0.1 2]
+
+＠おぬい
+おみせ？　おみせ、なあに？[r]どんなおみせ？
+[k]
+
+＠おたま
+お座敷で美味しい料理やお酒を味わって、琴や舞を楽しむ、[r]大人のお店です。いわば[#苦界:くがい]の[#天上楽土:てんじょうらくど]。
+[k]
+
+[charaFace D 2]
+
+＠おぬい
+てんじょうらくど……[charaFace D 1][r]わからないけど、なんだかすごいね！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠武蔵
+…………ねえ、おたまさん。美味しい団子とかある？
+[k]
+
+？1：武蔵ちゃんが幾つかは知らないけど
+？2：未成年が。います。からね
+
+[charaFace C 8]
+
+＠武蔵
+あ、あははは。冗談冗談。本当に冗談。[r]でもちょーっとお腹も減ってきたかなって思ってね！
+[k]
+
+？！
+
+[bgmStop BGM_EVENT_66 1.5]
+[se ad173]
+[seVolume ad173 0 0.8]
+[wt 0.1]
+[seStop ad173 0.1]
+[wt 0.2]
+
+＠F：？？？
+……あの、もし。[r]よろしいでしょうか、そこの御方。
+[k]
+
+[charaFace C 9]
+
+＠武蔵
+ん。私？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.4 1]
+[wt 0.2]
+
+＠F：淑やかな姫君
+いえ、その。あなたではなく。[r]そちらの異国の装いをなさった御方です……
+[k]
+
+？1：[line 3]え。清姫？
+
+？！
+
+[charaFace F 0]
+[bgm BGM_EVENT_67 0.1]
+
+＠F：淑やかな姫君
+まあ……。[r]まあ……。
+[k]
+
+＠F：淑やかな姫君
+あなた様にお会いしたのは初めてのはずなのに、[r]そうして私の名を口になさるなんて。まあ……。
+[k]
+
+[charaFace F 3]
+
+＠F：淑やかな姫君
+なんという事なのでしょう。[r]私、きっと今日という日なのだと信じておりました。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠おぬい
+わ……またきれいなひと……[r]おべべ、すごいねえ。おひめさまみたい！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠おたま
+な、なんですいきなり？[r][#私:わたくし]がお客を捕まえようとしている時に横から[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠F：淑やかな姫君
+私、私、私信じておりました！　いつか私をお城から[r]連れ出してくださる運命の御方と出会えると！
+[k]
+
+＠F：淑やかな姫君
+あなた様だったのですね！
+[k]
+
+[bgmStop BGM_EVENT_67 0.7]
+[charaFace F 7]
+
+＠F：淑やかな姫君
+[f large]好き！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠武蔵
+わあ。なんと。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠おたま
+ええ！？　往来で何を宣ってらっしゃるのです！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠おぬい
+[FFFFFF]？？？？[-]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠城勤めの武士
+い、いけませぬ姫さま！　清姫さま！[r]お城を抜け出した上にそんな事を口走ってしまうなど！
+[k]
+
+？1：清姫さま？
+？2：お城を抜け出した？
+
+？！
+
+＠城勤めの武士
+ぬ、ぬうこちらも思わず口走ってしまったがその通り！[r]とはいえ土下座などは目立つので控えていただくがっ！
+[k]
+
+＠城勤めの武士
+この御方をどなたと心得る！[r]松平下総守がご息女、清姫さまであるぞ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaMoveReturn F 0,-10 0.7]
+[wt 1.0]
+
+＠清姫
+お初にお目に掛かります。[r]清姫と申します。どうかお見知り置きを、運命の御方。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠おたま
+清姫さまですってぇー！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠武蔵
+本物のお姫さまなの！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠おぬい
+え、え？　おひめさま？　ほんとに？
+[k]
+
+＠D：田助
+きゃっきゃっ♪
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace G 0]
+[charaFadein G 0.1 -128,0]
+[charaFace F 0]
+[charaFadein F 0.1 128,0]
+[wt 1.0]
+
+？1：という事はカルデアの清姫とは別人！？
+？2：で、でもやっぱりとても似ているような
+
+？！
+
+[charaFace F 5]
+
+＠清姫
+邪魔をするのはやめてください！[r]私……私は松平の姫である前にひとりの女であるのです！
+[k]
+
+[charaFace F 2]
+
+＠清姫
+ついに運命の御方を見付けました。[r]どうか連れていってくださいませ、何処へなりと！
+[k]
+
+[charaFace G 1]
+
+＠城勤めの武士
+いけません姫ェー！！
+[k]
+
+[charaFadeout G 0.1]
+[se ad7]
+[seVolume ad7 0 0.3]
+[wt 0.4]
+[charaFadeout F 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠清姫
+運命の御方……さあ、私をさらってまずは江戸！[r]それから[#上方:かみがた]へでも京にでも、いっそ長崎から異国でも！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠おたま
+ちょーっとお待ちになって。いかに松平の清姫さま[r]とはいえ商売の邪魔立ては流石に困ります。
+[k]
+
+[charaFace E 5]
+
+＠おたま
+この如何にもなお[#大尽:だいじん]、もとい、素敵なお客さまを[r]横から出てきて奪うというのは品に欠けるのでは？
+[k]
+
+＠おたま
+ですので。姫さま。[r]いいえ、こんな城下に姫さまがおられる訳がない。
+[k]
+
+＠おたま
+[#どこのお武家様の娘さんか知りませんが]、[r]せめて明日以降でお願いいたします。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠城勤めの武士
+む、むむ、むう……！[r]確かにこんな往来に姫さまがいるというのは、
+[k]
+
+＠城勤めの武士
+あまりに外聞が悪い。下総守である松平家の威を[r]表に出し過ぎては後々[#拙:まず]いことになってしまうやも[line 3]
+[k]
+
+[bgmStop BGM_EVENT_7 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_27 0.1]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠清姫
+な、な、な……
+[k]
+
+[charaFace F 2]
+
+＠清姫
+なんですこの女狐のようなひとは！[r]私と運命の方の出逢いを邪魔しようというのですか！
+[k]
+
+＠清姫
+ずうっとお城の中に籠もってむなしく空を見上げ続けて[r]幾星霜。ようやく訪れた出逢いだというのに、あなた！
+[k]
+
+[charaFace F 5]
+
+＠清姫
+邪魔をするのですね……。[r]そうですか……。
+[k]
+
+＠清姫
+……。[r]……。
+[k]
+
+＠清姫
+それなら私、私……。[r]我慢なんてもうできないかもしれません……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0]
+[charaFace F 5]
+[charaFadein F 0.1 2]
+
+＠おたま
+我慢できなければどうだとおっしゃるんです？[r]コーンコンコン。
+[k]
+
+[charaFace F 11]
+
+＠清姫
+むむむむむむぅ！[r]わ、私、本ッ気で我慢しませんからね！
+[k]
+
+＠清姫
+これでも私、南蛮渡来のちょっと危ない燃える水など[r]常日頃より携えていますから。火傷ではすみませんよ！
+[k]
+
+？1：燃える水……石油……何もおかしくはない……
+？2：やはり炎か……いつ転身する？
+
+？！
+
+[charaFace E 1]
+
+＠おたま
+ほほほほほほ。江戸の芸妓を舐めないでくださいます？[r]こちとら火事には慣れっこ、どんと来いですよ！
+[k]
+
+＠おたま
+火でも雷でも好きな隠し芸をやってみなさいな！[r]コーンコンコン、この扇で吹き消しますとも！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠城勤めの武士
+ひ、姫さま流石におやめください！[r]往来ですぞーッ！
+[k]
+
+ですが本当に火をお使いでしたら、[r]せ、せめて燃えにくいお召し物をばーッ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠おぬい
+けんか？　けんかはだめだよ？[r]じいちゃま、けんかしたらだめって言うよ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠武蔵
+……ややこしい事になってきちゃったねえ。[r]それで、お客さまで運命の御方はこの状況をどうしたい？
+[k]
+
+[charaFace C 0]
+
+＠武蔵
+放っておく？[r]それとも、何かする？
+[k]
+
+？1：あーもう仕方ない！
+？2：二人を止めよう、頭を冷やしてもらう！
+
+？！
+
+[charaFace C 7]
+
+＠武蔵
+じゃあそういう事で。[r]大丈夫、怪我ひとつなく剣気で場を治めてみせましょう！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_27 0.4]
+[wait fade]
+[soundStopAll]
+[end]

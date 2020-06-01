@@ -1,0 +1,196 @@
+
+
+＄94-99-98-35-1-0
+
+[charaSet A 5027001 1 マリー]
+[charaSet C 98002000 1 フォウ]
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+
+[scene 10204]
+
+[fadein black 2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+
+
+＠マリー
+あら[line 3]？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFadein C 0.1 2]
+
+[charaFace A 0]
+[charaFadein A 0.1 0]
+
+＠フォウ
+フォウ、フォウフォウ。
+[k]
+
+＠マリー
+あなたがいるという事は……[r]ねえ、そうよね。あのひとが近くにいるのでしょう？
+[k]
+
+＠フォウ
+フォ[line 3]ウ。
+[k]
+
+？1：あっ、フォウこんなところにいた！
+？2：こんにちは、王妃殿下
+
+？！
+
+[charaFace A 1]
+
+＠マリー
+まあ！　やっぱり！[r]よかったわ、会いたいと思ったらすぐに会えて！
+[k]
+
+[charaFace A 0]
+
+＠マリー
+これもこの子のお陰かしら……[r]ふふふ、ありがとう。お礼は今度きちんとするわね。
+[k]
+
+[charaMoveReturn C 256,20 0.2]
+
+＠フォウ
+フォウ、キャーウ！
+[k]
+
+＠マリー
+今はごめんなさい。とても急いでいるから……[r][%1]にお届けものがあるの。
+[k]
+
+？1：届け物？
+？2：それって、それってもしかして
+
+？！
+
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マリー
+ふふ。ええそうよ、素敵な日のための贈り物。[r]大切な相手へと手渡す甘い甘い想いのカタチです。
+[k]
+＠マリー
+はい、どうぞ。[r]ヴィヴ・ラ・フランス！
+[k]
+
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[equipSet B 9805680 1 ]
+[wait equipSet B]
+[charaFace B 0]
+[charaFadein B 0.5 0,-70]
+[wt 2.0]
+[charaFadeout B 0.4]
+[wt 0.5]
+
+？1：ホワイトチョコレートと氷の競演……！
+？2：純白の[#山嶺:さんれい]！
+
+？！
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マリー
+ふふ、どうかしら。[r]あんまり大きなものだから、びっくりしたかしら！
+[k]
+
+
+[messageOff]
+[charaFace A 4]
+[wt 0.6]
+[charaFace A 0]
+
+＠マリー
+本当はアマデウスやサンソンにも[r]同じものを用意したかったの。でもね……
+[k]
+
+
+[messageOff]
+[charaFadeout A 0.7]
+[se ad95]
+[wt 1.0]
+[seStop ad95 0.1]
+[wt 0.1]
+[charaScale A 1.4]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.4 0,40]
+
+＠マリー
+…………ほら。やっぱり。ね？
+[k]
+
+＠マリー
+氷って。[r]とっても。
+[k]
+
+＠マリー
+……とっても、溶けやすいものでしょう？
+[k]
+
+[messageOff]
+
+
+[charaFadeout A 0.7]
+[se ad95]
+[seStop ad95 1.0]
+[wt 1.3]
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠マリー
+一度にたくさん作ろうとすると端から溶けてしまって、[r]どうにもならなくなってしまったの。
+[k]
+
+＠マリー
+だから、コレはあなただけへの贈り物になるわ。[r]他の皆には別のものを用意するから。
+[k]
+
+＠マリー
+ええと、ね。マスター。[r]そういう事だからお願い[line 3]
+[k]
+
+＠マリー
+わたしの作ってみたモンブランの[#山嶺:さんれい]、[r]やっぱり今年もふたりには内緒にしてね。お願いよ？
+[k]
+
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+[soundStopAll]
+[end]

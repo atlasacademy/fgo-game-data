@@ -1,0 +1,119 @@
+
+
+＄94-02-00-12-1-1
+
+[soundStopAll]
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 2021002 1 節分大将]
+[charaSet C 6021000 1 酒呑童子]
+
+[charaSet G 98115000 1 エフェクト用]
+[charaSet H 98115000 1 エフェクト用]
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 53000]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.4 1]
+
+＠酒呑童子
+あいたた。こらあかんわ。
+[k]
+
+[charaFace C 0]
+
+＠酒呑童子
+こんなとこで燃え尽きてもつまらんし……[r]ほい、ほい、っと。
+[k]
+
+[messageOff]
+[se ad73]
+[seVolume ad73 0 0.7]
+[charaFadeout C 0.1]
+[wt 0.4]
+[se ad73]
+[seVolume ad73 0 0.5]
+[wt 0.3]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠マシュ
+逃げていきます！[r]窓から……さらに上へ！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠酒呑童子
+ああ、忠告しとくと、屋上に出るんは、[r]もっともーっと負荷がしんどくなるさかいにね。
+[k]
+
+＠酒呑童子
+普通のコらはよっぽど気合い入れへんと登って[r]こられへんと思うから、気ぃつけてやぁ。
+[k]
+
+[messageOff]
+[charaEffect C bit_talk_quickmove]
+[charaSpecialEffect C erasureReverse 1 0.3]
+[bgmStop BGM_EVENT_24 1.0]
+[se ad73]
+[seVolume ad73 0 0.5]
+[wt 1.5]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠節分大将
+であれば[line 3]もっとも負荷に強い私が[bgm BGM_EVENT_4 0.1][r]追うしかないようでございますね。
+[k]
+
+＠節分大将
+不安定な場所でしょうから、マスターをお連れする[r]わけにはまいりません。ここでお待ちください。
+[k]
+
+？1：ごめん、頼んだ
+？2：お手柔らかにお願い
+？！
+
+[messageOff]
+[charaMoveReturn B 0,-10 0.4]
+[wt 1.0]
+[charaFace B 1]
+
+＠節分大将
+はい、お任せくださいませ！
+[k]
+
+[messageOff]
+[charaEffect B bit_talk_quickmove]
+[charaSpecialEffect B erasureReverse 1 0.3]
+[se ad73]
+[wt 1.0]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_4 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

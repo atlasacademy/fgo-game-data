@@ -1,0 +1,786 @@
+
+
+
+
+＄94-04-30-03-1-0
+
+[soundStopAll]
+
+[charaSet A 2039000 1 ナイチンゲール・サンタ]
+[charaSet B 5004001 1 ナーサリー・ライム]
+[charaSet C 3026000 1 ジャンヌ・オルタ・サンタ・リリィ]
+[charaSet D 6005001 1 ジャック]
+[charaSet E 98105700 1 エミヤ]
+[charaSet F 4011001 1 ブーディカ]
+[charaSet G 7030001 1 アタランテ・オルタ]
+[charaSet H 99502600 1 マシュ]
+[sceneSet I 21803 1]
+[charaSet J 1098120900 1 通信用ノイズ]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[scene 54405]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad33]
+[seVolume ad33 0 0.4]
+[wt 1.7]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ナイチンゲール・サンタ
+戦闘が始まっていますね。[bgm BGM_EVENT_3 0.1][r]止めるためにも、すぐに向かいましょう。
+[k]
+
+[charaFace A 0]
+
+＠ナイチンゲール・サンタ
+……この鐘を鳴らします。[r]音で気付いてくれるといいのですが。
+[k]
+
+[messageOff]
+[se ade381]
+[wt 1.5]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_3 1.0 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 21803]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_3 1.0 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+えーいっ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad28]
+[seStop ad28 0.5]
+[effect bit_talk_throwing]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+たーっ！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[effect bit_talk_ichimon01wh]
+[se ad32]
+[wt 1.0]
+[effectDestroy bit_talk_ichimon01wh]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠ジャック
+そりゃーっ！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[effect bit_talk_Slash_white_01]
+[se bac4]
+[wt 0.2]
+[effect bit_talk_Slash_white_01_L]
+[se bac6]
+[wt 0.7]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[wt 0.1]
+
+[charaShake E 0.05 3 3 0.3]
+[fowardEffect bit_talk_14]
+[se ad82]
+[se ad602]
+[wt 0.3]
+
+＠エミヤ
+ふんっ！
+[k]
+
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[wt 0.1]
+
+[charaShake F 0.05 3 3 0.3]
+[fowardEffect bit_talk_14]
+[se ad602]
+[seVolume ad602 0 0.9]
+[se ad170]
+[seVolume ad170 0 0.6]
+[wt 0.3]
+
+＠ブーディカ
+やーっ！
+[k]
+
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+[wt 0.1]
+
+[charaShake G 0.05 3 3 0.3]
+[fowardEffect bit_talk_14]
+[se ad82]
+[wt 0.1]
+[se ad82]
+[wt 0.3]
+
+＠アタランテ・オルタ
+す、すまん……！
+[k]
+
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+ああもう！[r]三人ともしつこいったら、ありゃしないわ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ジャック
+そうだそうだー！[r]お菓子を食べるくらい、別に構わないでしょ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠エミヤ
+ああ、もちろんだとも。[r]ただしそれは[line 3]
+[k]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+[charaFace E 5]
+
+＠エミヤ
+夕食の前ではない、という前提が必要だがね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+そ、それはそうですけどぅ……。[bgm BGM_EVENT_7 0.1]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+あ、一人だけいい子になろうとしてる。[r]ダメよ、ジャンヌ。
+[k]
+
+＠ナーサリー・ライム
+こうなれば、[#一蓮托生:いちれんたくしょう]なんだから！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+わ、私はいい子なのにー！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ジャック
+でも、夕食前のお菓子は好きでしょ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+やめられませんね……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠アタランテ・オルタ
+本当に申し訳ないが、[r]子供の成長を阻害させる訳には……！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+わたしたちサーヴァントなのに？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠エミヤ
+君たちがその姿を取っている以上、[r]大人として規律を保つのが当然だ。
+[k]
+
+＠エミヤ
+何しろ、我々は[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠ブーディカ
+サンタクロース！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠アタランテ・オルタ
+だからな。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+ダメ、ダメ、ダメダメよー！
+[k]
+
+＠ナーサリー・ライム
+保護者がサンタだなんて、[r]全世界の子供の夢を打ち砕く所業だわ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+そうです！
+[k]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+サンタクロースという夢を破壊するのは、[r]サンタ的に極めて心外です！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠ジャック
+よーし、やっちゃうぞー！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.1 1]
+
+＠アタランテ・オルタ
+うう、仕方ない。[r]この上はプレゼントで大人しくさせるしか……！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 0.3]
+
+＠？？？
+[f large]お待ちなさいませ！！
+[k]
+
+[messageOff]
+[se ad75]
+[wt 1.0]
+[seStop ad75 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaPut A 0,180]
+[charaSpecialEffect A appearanceReverse 1 0.9]
+[charaMove A 0,-10 0.7]
+[wt 0.7]
+
+[charaMove A 0,0 0.2]
+[se ad601]
+[wt 0.4]
+[seStop ad601]
+[wt 0.2]
+
+[charaFadein A 0.0 1]
+
+＠ナイチンゲール・サンタ
+保護者と子供で争うなど、[bgm BGM_EVENT_4 0.1][r]悲劇の極み。
+[k]
+
+[charaFace A 0]
+
+＠ナイチンゲール・サンタ
+まず、落ち着いて対話から始めましょう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+……。[r]……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠エミヤ
+……。[r]……。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.7]
+
+[fowardEffect bit_talk_41]
+
+＠全員
+[f large]サンタだ！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[fowardEffectDestroy bit_talk_41]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+素敵です。[r]傘でふわふわ降りてくるなんて……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+ロマンチックだわファンタスティックだわ[r]アーティスティックだわ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠ジャック
+ポッピンみたーい！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠エミヤ
+フム、察するところサンタリソースは[r]その鐘にあるようだ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠ブーディカ
+うーん、あの鐘どこかで見たこと[r]あるんだけど……？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠アタランテ・オルタ
+ともかく奪って、[r]我々のサンタパワーをチャージ！
+[k]
+
+[charaFace G 1]
+
+＠アタランテ・オルタ
+そして世界の子供にプレゼントだ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+む、むぅ……。[r]その格好、そのカラーリング。
+[k]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+まさしく今年のサンタクロース……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_4 1.2]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ナーサリー・ライム
+待って、ダメよ！[r]この人の傘、よく見て！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+え、傘……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ジャック
+……。[r]……。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[imageSet A cut143_ncgs 1]
+
+[charaDepth I 1]
+[charaDepth A 2]
+[charaScale I 1.2]
+[charaScale A 1.1]
+
+[charaTalk off]
+[charaFace A 0]
+[charaFadein A 0.4 -50,-260]
+[charaFadein I 0.4 0,-320]
+[wt 2.5]
+
+[charaFadeout I 0.4]
+[charaFadeout A 0.4]
+[wt 0.8]
+[charaScale A 1.0]
+
+[charaSet A 2039000 1 ナイチンゲール・サンタ]
+
+[charaTalk off]
+[charaDepth D 3]
+[charaDepth B 2]
+[charaDepth C 1]
+[charaFace D 2]
+[charaFace B 2]
+[charaFace C 2]
+[charaFadein D 0.1 -276,0]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 276,0]
+
+＠三人
+[f large]注[messageShake 0.05 4 4 0.2]射だー！！[bgm BGM_EVENT_3 0.1]
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+こ、これはダメです！
+[k]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+子供に注射なんて、[r]世界最高の嫌がらせ！
+[k]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+こんな注射器を持っている人を[r]サンタクロースと、断じて認めてはいけません！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ナイチンゲール・サンタ
+……いえ、私はサンタクロースではないのですが。[r]それはそれとして、注射は衛生において必須です。
+[k]
+
+＠ナイチンゲール・サンタ
+皆の健康を守るためであれば、[r]私はいくらでも注射を撃ち込みます。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠ジャック
+[f large]やだー！
+[k]
+
+＠ジャック
+注射なんかなくたって生きていけるもん！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠ナイチンゲール・サンタ
+ふむ。[r]話し合いは難しいとみました。
+[k]
+
+＠ナイチンゲール・サンタ
+マスター、まずは無力化行動を開始したいと思います。[r]いかがでしょうか。
+[k]
+
+？1：つまりは[line 3]
+？！
+
+[charaFace A 0]
+
+＠ナイチンゲール・サンタ
+戦闘です。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace D 2]
+[charaFace B 2]
+[charaFace C 2]
+[charaFadein D 0.1 -276,0]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 276,0]
+
+＠お子様組
+[f large]やるぞー！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaDepth E 1]
+[charaDepth F 3]
+[charaDepth G 2]
+[charaFace G 2]
+[charaFace F 2]
+[charaFace E 2]
+[charaFadein G 0.1 -300,0]
+[charaFadein F 0.1 15,0]
+[charaFadein E 0.1 310,0]
+
+＠保護者組
+[f large]えいえいおー！
+[k]
+
+？1：そして何でこっちは徒党を組むの！
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ナイチンゲール・サンタ
+ワクチンの役回りとはそういうものです。[r]では、滅菌・消毒・衛生活動開始します！
+[k]
+
+？2：サンタには……敵が多い……！
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠ナイチンゲール・サンタ
+ですから私はサンタクロースではありません。[r]ただの一看護師です。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk H]
+[charaFace H 14]
+[charaFadein H 0.1 1]
+
+＠マシュ
+いえ、ただの、ではないと思いますが！[r]それはそれとして戦闘お願いします！
+[k]
+
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

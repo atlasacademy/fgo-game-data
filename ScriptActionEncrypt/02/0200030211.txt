@@ -1,0 +1,1488 @@
+
+
+
+＄02-00-03-02-1-1
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[charaSet A 1017001 1 武蔵]
+[charaSet B 3014001 1 胤舜]
+[charaSet C 1098118600 1 おぬい]
+[charaSet D 98006200 1 雑魚エネミー煙状]
+[charaSet E 98006200 1 雑魚エネミー煙状]
+[charaSet F 6029000 1 アサシン・パライソ]
+[charaSet G 1098118400 1 キャスター・リンボ]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[scene 37312]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk off]
+[se ad42]
+[charaFace D 0]
+[charaFadein D 0.1 -256,0]
+[charaFace E 0]
+[charaFadein E 0.1 256,0]
+[wt 0.1]
+
+[wt 0.2]
+[se bac136]
+[charaPut H 256,60]
+[charaEffect H bit_talk_Slash_white_01]
+[wt 0.1]
+[charaShake E 0.05 5 5 0.7]
+[charaEffectStop H bit_talk_Slash_white_01]
+[se ad42]
+[charaSpecialEffect E enemyErasure 1 0.5]
+[seStop ad42 0.5]
+
+[wt 0.2]
+
+[se bac136]
+[charaPut H -256,60]
+[charaEffect H bit_talk_Slash_white_01_L]
+[wt 0.1]
+[charaShake D 0.05 5 5 0.7]
+[charaEffectStop H bit_talk_Slash_white_01_L]
+[charaSpecialEffect D enemyErasure 1 0.5]
+[wait charaSpecialEffect D]
+[seStop ad42 0.5]
+
+[bgmStop BGM_EVENT_3 1.2]
+[wt 1.5]
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠武蔵
+……よし、っと。
+[k]
+
+＠武蔵
+ええと、[%1][&君:]ちょっといいかしら？[r]さっきの時よりも随分と楽に倒せたのはあれかな？
+[k]
+
+＠武蔵
+悪霊が加減をしてくれたとかではなくて[r]助太刀があったから、って事で構わないのよね？
+[k]
+
+＠武蔵
+私の見間違いじゃなくて、[r]君の仲間たちがやってくれたって事で。
+[k]
+
+？1：……カルデアのサーヴァント達だね
+？2：さっきまで本当に召喚できなかったんだよ
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠胤舜
+仔細までは分からぬが拙僧の存在ゆえかもしれん。[r]当てずっぽうを口にしているだけだが、
+[k]
+
+＠胤舜
+サーヴァントである拙僧が呼び水となったか、[r]或いは武蔵殿と刃を交えた事で何かが起きたのか。
+[k]
+
+＠胤舜
+どうあれ[%1]。[r]拙僧の感じるところでは、術式が活性化しているな？
+[k]
+
+？1：令呪の事かな
+？2：うん、これでもう普段通りに戦えると思う！
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠武蔵
+それは[#重畳:ちょうじょう]。[r]ええ、頼もしい言葉です。
+[k]
+
+[charaFace A 0]
+
+＠武蔵
+それに加えて胤舜殿もいてくれるみたいだし、[r]ああいう悪霊の類なら難なく切り捨てていけそうね。
+[k]
+
+[charaFace A 5]
+
+＠武蔵
+とはいえ油断は禁物。[r]安全が確保されるまでは警戒して[line 3]
+[k]
+
+[messageOff]
+[wt 0.5]
+[bgmStop BGM_EVENT_2 0.4]
+[wt 0.5]
+[bgm BGM_EVENT_3 0.1]
+[charaFace A 2]
+
+＠武蔵
+[line 6]妖気！　言ってる傍から！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+＠？？？
+左様。左様。[r]如何な剣豪と言えども油断してはおられますまい。
+[k]
+
+＠？？？
+我ら、英霊剣豪。只の悪霊と同じとは思いめさるな。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.6]
+[wipeout rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+[wt 0.2]
+
+[charaSet D 2021001 1 アーチャー・インフェルノ]
+[charaSet E 7023001 1 ライダー・黒縄地獄]
+
+[wipein rectangleStripRightToLeft 0.2 1]
+[wait wipe]
+
+[bgm BGM_BATTLE_65 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠おぬい
+だ、だれ……？[r]こわい、なに……こわいよ……すごく……
+[k]
+
+＠おぬい
+こわい……！
+[k]
+
+[charaFace C 11]
+
+＠C：田助
+び、びぇ！　びええええ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠武蔵
+おぬいちゃんは[%1][&君:]の後ろに！[r]この感じ、さっきの悪霊とは[#桁:ケタ]が違う！
+[k]
+
+[charaFace A 5]
+
+＠武蔵
+なにより肉がある。[#臭:にお]いがある。[r]染みついた[#臭:にお]いが、雄弁に語っている。
+[k]
+
+＠武蔵
+……ええ。寛永十六年。[r]島原の乱も終わった泰平の世でそれはないわ。
+[k]
+
+＠武蔵
+まるで、[#たった今殺してきたばかり]みたい。[r]頭から桶いっぱいの血でも被ったのかしらね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠胤舜
+ぬうんッ！！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[effect bit_bolg_03y]
+[se bac10]
+[wt 0.1]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.05 3 3 0.4]
+[wt 0.2]
+
+[se bac10]
+[charaPut H 120,60]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaEffect H bit_talk_14]
+[wt 0.1]
+[charaEffectStop H bit_talk_14]
+[charaPut H -210,-10]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaEffect H bit_talk_14]
+[wt 0.1]
+[se bac10]
+[wt 0.2]
+[charaEffectStop H bit_talk_14]
+
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFilter D silhouette 00000080]
+[charaFadein D 0.7 1]
+[wt 0.5]
+
+＠弓使いの女
+…………なんて、恐ろしいお人。まるで槍の鬼のよう。[r]並の英霊ならば霊核を貫かれていたでしょう。
+[k]
+
+＠弓使いの女
+皆、お気を付けください。[r]このお人は我らを屠るつもりでおります。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠胤舜
+はは、何だ。拙僧の槍を[#矢で弾いてみせた]のか。[r]下総というのは余程強い[#女性:にょしょう]が集うらしい。
+[k]
+
+[charaFace B 0]
+
+＠胤舜
+或いは怪異の集う魔境であったか？[r]ひい、ふう、みい[line 3]ははぁこれが[#英霊:サーヴァント]の感覚か。
+[k]
+
+＠胤舜
+人ならざる者の気配というのはなるほど、[r]肌に感じてさほど心地良いものではないな！
+[k]
+
+？1：サーヴァント！？
+？2：召喚された、胤舜以外のサーヴァント……！
+
+？！
+
+＠G：？？？
+……左様。左様。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk G]
+[charaFace G 0]
+[charaFilter G silhouette 00000080]
+[charaFadein G 0.7 1]
+[wt 1.0]
+
+＠G：肉食獣じみた男
+我ら、[#英霊剣豪:えいれいけんごう]六騎。
+[k]
+
+＠G：肉食獣じみた男
+名高き二天一流の新免武蔵殿、[r]その槍神仏に達すると謳われた宝蔵院胤舜殿。
+[k]
+
+＠G：肉食獣じみた男
+そして、カルデアより訪れたマスター殿。[r]ふふ、ふふ。ふふふふふふふふ。
+[k]
+
+＠G：肉食獣じみた男
+どうぞ、お見知り置き[#戴:いただ]きたい。我ら六騎、[r]この世を地獄に変えんがために現界せし六騎であります。
+[k]
+
+＠G：肉食獣じみた男
+[line 3]我が[#忌名:いみな]、キャスター・リンボと申します。
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[se bac24]
+[fowardEffect bit_talk_15]
+[wt 1.2]
+[fowardEffectStop bit_talk_15]
+[charaPut H 1]
+[charaEffect H bit_talk_32]
+[wt 0.8]
+[charaEffectStop H bit_talk_15]
+[seStop bac24 1.5]
+[wt 0.2]
+[charaPut H 1200,1200]
+[wt 0.1]
+[charaPut H 1]
+[se ad11]
+[wt 1.5]
+[seStop ad11 0.5]
+
+[fadeout black 0.2]
+[wait fade]
+[charaFadeout G 0.1]
+[charaPut H 1200,1200]
+[wt 0.1]
+[fadein black 0.1]
+[wait fade]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠武蔵
+……なんの！
+[k]
+
+[maskout black 0.1]
+[wait mask]
+[messageOff]
+[charaFadeout A 0]
+[scene 10000]
+[maskin black 0.1]
+[wait mask]
+
+[charaPut H 1]
+[charaEffectStop H bit_talk_32]
+[wt 0.2]
+[se bac264]
+[fowardEffect bit_talk_Slash_white_01]
+[wt 0.2]
+
+[charaPut H 1200,1200]
+
+[wipeout rectangleStripRightToLeft 0.3 1]
+[wait wipe]
+[scene 37312]
+
+[charaSet C 1098118700 1 セイバー・エンピレオ]
+[charaSet G 6021001 1 バーサーカー・衆合地獄]
+
+[wipein rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+
+
+
+？1：武蔵ちゃん！
+？2：後ろ！
+
+？！
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠武蔵
+応とも、任せて……！
+[k]
+
+[messageOff]
+[wipeout rightToLeft 0.1 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaFace F 0]
+[charaFilter F silhouette 00000080]
+[charaFadein F 0.1 1]
+[wt 0.1]
+[wipein leftToRight 0.1 1]
+[wait wipe]
+
+
+[charaEffect F bit_talk_Slash_white_01]
+[shake 0.05 3 3 0.2]
+[se bac142]
+[wt 0.3]
+[charaEffect F bit_talk_Slash_white_01_L]
+[shake 0.05 3 3 0.2]
+[se bac386]
+[wt 0.3]
+
+
+[charaFadeout F 0.4]
+[wt 0.7]
+
+？1：やった[line 3]
+
+？！
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠胤舜
+いいや、影だ。斬れてはおらん！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.7 1]
+[wt 0.5]
+
+＠F：影の如き女
+[line 3]我が[#忌名:いみな]、アサシン・パライソ。
+[k]
+
+＠アサシン・パライソ
+夜闇を引き裂くが如き鮮やかな一閃、[r]それが音に聞こえし二天一流の技にござるか。
+[k]
+
+＠アサシン・パライソ
+些か落胆にござる。
+[k]
+
+＠アサシン・パライソ
+血に塗れた乱世を知る身には物足りぬというもの。[r]……失礼。新免武蔵も、一応は乱世の出であったか。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠武蔵
+別に？
+[k]
+
+＠武蔵
+こっちの世界の武蔵がどうかは知らないけど、[r]私自身、乱世の戦場で派手な活躍はしていないし、
+[k]
+
+＠武蔵
+そちら、隠れ身が得意な忍びでしょう？[r]立ち合いの最中に姿を[#晒:さら]すなんて、あんがい親切、
+[k]
+
+[messageOff]
+[wt 0.4]
+[charaFace A 5]
+
+＠武蔵
+[line 8]ふッ！！
+[k]
+
+[maskout black 0.1]
+[wait mask]
+[messageOff]
+[charaFadeout A 0]
+[scene 10000]
+[maskin black 0.1]
+[wait mask]
+
+[charaTalk off]
+[charaPut H 1]
+[charaScale H 1.5]
+[charaEffect H bit_talk_ichimon01wh]
+[se ad171]
+[wt 0.1]
+[flashin once 0.1 0.1 FFFFFFD0 FFFFFF00]
+[fowardEffect bit_talk_14]
+[shake 0.05 2 4 0.5]
+[se ad170]
+[wt 0.2]
+
+[fadeout black 0.3]
+[wait fade]
+[scene 37312]
+[fadein black 0.2]
+[wait fade]
+
+？1：言葉の最中に斬り掛かった……！？
+？2：でも防がれた……！？
+
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠胤舜
+……天眼、というヤツか。
+[k]
+
+＠胤舜
+ひとたび狙えば獲物を逃がさぬ、運命が如き一撃。[r]必中の斬撃、恐るべしは新免武蔵の[#天稟:てんぴん]よ。
+[k]
+
+[charaFace B 5]
+
+＠胤舜
+だが、それすら防がれた。[r]…………貴様、どのようにして[#阻んだ]？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk E]
+[charaFace E 0]
+[charaFilter E silhouette 00000080]
+[charaFadein E 0.7 1]
+[wt 1.0]
+
+＠E：太刀を携えた女
+[line 3]我が[#忌名:いみな]、ライダー・[#黒縄地獄:こくじょうじごく]。
+[k]
+
+＠ライダー・黒縄地獄
+いいえ、いいえ。さほど特別な事はしていません。[r]私は、あるがままにこの太刀を振るったまでの事で。
+[k]
+
+＠ライダー・黒縄地獄
+此処に刃を差し込めば良い。敵の刃は止まる。[r]此処で刃を振り抜けば良い。敵の首は飛ぶ。
+[k]
+
+＠ライダー・黒縄地獄
+そんな事は分かって当然でありましょう。
+[k]
+
+＠ライダー・黒縄地獄
+そうでなくて、[r]どうして鬼の首を獲れましょうね？
+[k]
+
+＠ライダー・黒縄地獄
+ふふ。ふふふふふふ。[r]おかしな事をおっしゃる御坊さまもいたもの。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠武蔵
+（おっそろしい女。今のは[#渾身:こんしん]の隠し手だったのに、[r]　あっさりと払われちゃった……）
+[k]
+
+[charaFace A 5]
+
+＠武蔵
+（一つぐらいは今ので落とさないといけなかったのにね。[r]　[line 3][#あれ全員、私より格上だ]）
+[k]
+
+[charaFace A 4]
+
+＠武蔵
+あーあ、まいったなぁ。
+[k]
+
+[charaFace A 0]
+
+＠武蔵
+いえ、降参という意味じゃなくて。[r]見た目よりちょっとだけ強そうじゃない、貴方たち。
+[k]
+
+＠武蔵
+これを[#悉:ことごと]く討ち果たすのは面倒だし、[r]命を奪わずにとなれば更にずっと難しい。
+[k]
+
+＠武蔵
+そっちは私たちの事をご存じのようですけど、[r]私たちはあいにく、旅の途中ですので。
+[k]
+
+＠武蔵
+面倒ごとはまた後日、という事で、[r]ここは見逃してあげてもいいわよ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ライダー・黒縄地獄
+あら、あら。ふふふ。
+[k]
+
+＠ライダー・黒縄地獄
+優しいのですね、貴女というひとは。[r]我々は命を奪うつもりで来ているというのに、
+[k]
+
+＠ライダー・黒縄地獄
+貴女は命を奪う気がない。[r]貴女は自分を守る気がない。
+[k]
+
+＠ライダー・黒縄地獄
+敵わぬのならせめて、後ろの子供を[r]生かして逃がそうと勇気を振り絞っている。
+[k]
+
+＠ライダー・黒縄地獄
+ああ、なんと優しいのでしょう。素晴らしいです。
+[k]
+
+＠ライダー・黒縄地獄
+…………でも残念。[r]人ならば心も打たれましょうが。
+[k]
+
+＠ライダー・黒縄地獄
+我らは英霊剣豪。人ではありません。[r]だから、優しい貴女を殺すにも[#躊躇:ためら]いはなく。
+[k]
+
+＠ライダー・黒縄地獄
+何よりまず真っ先に、後ろの三人から殺しますね？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠武蔵
+………………。
+[k]
+
+？1：………………その姿、どこかで
+
+？！
+
+[se ad192]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠G：艶やかな少女の声
+ご立派、ご立派。[r]お伽噺の英雄もかくやの立ち回り！
+[k]
+
+＠G：艶やかな少女の声
+[#黒縄:こくじょう]とやり[#合:お]うてまだ生きて喋っとるなんて[r]徳川の世ぉ言うんもなかなか捨てたものやないねぇ。
+[k]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ライダー・黒縄地獄
+まったく何を言うかと思えば、はぁ。[r]徳川の世に正しく生きる者など、
+[k]
+
+＠ライダー・黒縄地獄
+あの幼子と赤子くらいのものではありませんか。[r]筋違いも甚だしい事。恥じ入って自害なさい、虫。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+＠G：艶やかな少女の声
+あはははははは。そら堪忍え、黒縄はん！
+[k]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠武蔵
+（木の上……姿は見えないけど、こっちも大概[line 3][r]　ううん、妖気だけなら今の女より上……）
+[k]
+
+[charaFace A 4]
+
+＠武蔵
+（うわあ、泣きたくなってきた……[r]　いえ、胤舜殿がいなかったらもう泣いてたわ、きっと）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠G：艶やかな少女の声
+まあ、ええやないの細かい事は。[r]英雄英傑とちゃう英霊さんかて何やかて結構やわぁ。
+[k]
+
+＠G：艶やかな少女の声
+うち、そういうんは嫌いやあらへんの。[r]ううん、どちらかと言えば好きなほうやわぁ。
+[k]
+
+＠G：艶やかな少女の声
+でも……
+[k]
+
+＠G：艶やかな少女の声
+好きでも何でも関係ないわなぁ。[r]うちら、すっかり狂ってしもたからねぇ。ふふふふふ。
+[k]
+
+＠G：艶やかな少女の声
+何もかもいらへんの。金も名声も月も[#雅:みやび]も、ぜぇんぶ。
+[k]
+
+＠G：艶やかな少女の声
+[line 3][#蕩:とろ]けて溶けて、消えてまえ。
+[k]
+
+[se bac41]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠胤舜
+！！
+[k]
+
+[charaFace B 2]
+
+＠胤舜
+下がれ武蔵！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad211]
+[se bac69]
+[se ad14]
+[seVolume ad14 0 0.5]
+[wt 0.7]
+[shake 0.05 3 3 0]
+[se bac69]
+[se bac196]
+[seStop ad14 0.4]
+[fowardEffect bit_talk_water]
+[flashin once 0.1 0.1 4c98ff8F 4c98ff00]
+[wt 0.2]
+[flashin once 0.1 0.1 4c98ff8F 4c98ff00]
+[wt 0.1]
+[se ad176]
+[wt 0.2]
+[flashin once 0.7 0.7 4c98ffAF 4c98ff00]
+[wt 1.0]
+[fowardEffectStop bit_talk_water]
+[seStop ad176 2.0]
+[se ad36]
+[se ad14]
+[seVolume ad14 0 0.5]
+
+[seStop ad211 1.0]
+[seStop bac69 1.0]
+[seStop bac69 1.0]
+[seStop bac196 1.0]
+[seStop ad36 1.0]
+[seStop ad14 1.0]
+[wt 2.0]
+[shakeStop]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠武蔵
+な、何この鉄砲水！　いえ違う[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠G：艶やかな少女の声
+何もかもを[#蕩:とろ]かすうちの[#とっとき]の一滴、[r]ようく味わうとええ。触れれば溶けて消えてまうよ？
+[k]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠胤舜
+妖術の類か！
+[k]
+
+？1：サーヴァントの宝具！？
+？2：真名解放もなしに放ったの！？
+
+？！
+
+＠胤舜
+サーヴァントの相手はサーヴァントが[#仕:つかまつ]る！[r]武蔵殿は[%1]達を守っていろ！
+[k]
+
+＠胤舜
+此処は拙僧に任せて貰う！[r]宝蔵院流の妙技、ご覧あれ！！
+[k]
+
+[se bac304]
+[wt 0.4]
+
+[charaFace B 2]
+
+＠胤舜
+これぞ槍の究極。生涯無敗を確立させた十一の式！[r]朧裏月、いざ参る[line 6]！！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+
+[flashin once 0.6 0.4 FFFFFF80 0000000]
+[flashout 0.4]
+[se ad267]
+[shake 0.1 0 6 1.5]
+[wt 1.0]
+[se ad266]
+[wt 1.0]
+[se ad211]
+[fadeout white 2.0]
+[wait fade]
+[wt 0.5]
+[scene 37312]
+[fadein white 1.5]
+[wait fade]
+
+？1：みんな五体無事……！
+？2：胤舜、今の怒濤を槍で弾き飛ばした[&のか:の]！？
+
+？！
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠胤舜
+…………まあ、そういう事だ。
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace B 5]
+
+＠胤舜
+そうとも、我が十文字槍に貫けぬものなし！[r]英霊剣豪六騎とやら、恐れぬ者だけが前に出るがいい！
+[k]
+
+＠胤舜
+此処からは本気だ。[r]鬼であろうと神であろうと、仏であろうと槍で突くまで。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠武蔵
+…………！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,60]
+[charaFilter G silhouette 00000080]
+[charaMove G 1 0.1]
+[se ad223]
+[seVolume ad223 0 0.4]
+
+＠G：艶やかな少女
+[line 3]我が[#忌名:いみな]、バーサーカー・[#衆合地獄:しゅうごうじごく]。
+[k]
+
+＠バーサーカー・衆合地獄
+へえ、流石は槍の宝蔵院。男前なんやねぇ？[r]真名解放せえへんかったにせよ、うちの宝具の[#一滴]……
+[k]
+
+＠バーサーカー・衆合地獄
+そないに止めてみせはるなんて。[r]はぁ。[#鏖殺の宿業]もなしにようやるわぁ。
+[k]
+
+？1：[line 3]その声
+？2：[line 3]どこかで
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ライダー・黒縄地獄
+あら、あら。まあ。バーサーカー・衆合地獄さん？[r]そちらの子は貴女に覚えがあるようですが。
+[k]
+
+＠ライダー・黒縄地獄
+隅に置けませんね。[r]まるで目障りに[#其処此処:そこここ]を這い回る虫のよう。
+[k]
+
+？1：そっちの声も……
+？2：聞き覚えがあるような……
+
+？！
+
+＠ライダー・黒縄地獄
+あら。あら？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：冷ややかな剣鬼
+黒縄、衆合。
+[k]
+
+＠C：冷ややかな剣鬼
+戯れも大概にしておくがいい。[r]英霊剣豪ともあろう者が大いなる主命を忘れたか。
+[k]
+
+＠C：冷ややかな剣鬼
+リンボ。貴様がついていながら[r]未だ此処に生者などがうろついているのは何故だ。
+[k]
+
+＠C：冷ややかな剣鬼
+パライソ、インフェルノもだ。[r]獲物を前に舌なめずりなぞ愚かな振る舞いと心得よ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠アサシン・パライソ
+はっ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠アーチャー・インフェルノ
+……申し訳……ありません……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ライダー・黒縄地獄
+失礼いたしました。[r]確かに、貴方のおっしゃる通りでしょうね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠バーサーカー・衆合地獄
+うち、べつに飼い犬になったつもりはあらへんよ？[r]好きにやらせて貰うっていう話やなかったの？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠冷ややかな剣鬼
+貴様。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠武蔵
+……盛り上がってるところ悪いんだけど、[r]仲間割れなら私たちは去ってもいいって事かしら。
+[k]
+
+＠武蔵
+まあ、そうはいかないんでしょうね。[r]言ってみただけだから返さないでもいいわ。
+[k]
+
+＠武蔵
+頭巾の男。頭目は、見たところ貴方ね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：冷ややかな剣鬼
+………………。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠武蔵
+目的を尋ねて妥協点を探ろうにも[r]返答はない、っていう類よね。この流れ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：冷ややかな剣鬼
+目的、目的か。そんなものは至極明瞭だ。
+[k]
+
+＠C：冷ややかな剣鬼
+まず、そこの槍使いの身を此方へ寄越すがいい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠胤舜
+……[#俺]か？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：冷ややかな剣鬼
+然り。しかる後、生者を[#鏖:みなごろし]にする。[r][#英霊剣豪は出逢う生者を必ず殺す]。例外は有り得ぬ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠武蔵
+やれるものなら[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：冷ややかな剣鬼
+ああ。無論、やれるとも。
+[k]
+
+＠C：冷ややかな剣鬼
+[#我ら六騎にできぬと思うか]、女。
+[k]
+
+[charaSet B 1098118400 1 キャスター・リンボ]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[wt 0.5]
+
+[charaTalk off]
+
+[charaFilter B silhouette 00000080]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 1.2]
+[charaFadeout B 0.2]
+[wt 0.4]
+
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 1.2]
+[charaFadeout F 0.2]
+[wt 0.4]
+
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 1.2]
+[charaFadeout D 0.2]
+[wt 0.4]
+
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 1.2]
+[charaFadeout E 0.2]
+[wt 0.4]
+
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 1.2]
+[charaFadeout G 0.2]
+[wt 0.4]
+
+[charaSet B 3014001 1 胤舜]
+[charaSet D 1098118600 1 おぬい]
+
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠武蔵
+……………………。
+[k]
+
+＠武蔵
+（[#狸:たぬき]。六騎どころか一騎でできるでしょ、それ。[r]　かと言って降参しても結果は同じ……）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠胤舜
+（[%1]、[%1]）
+[k]
+
+＠胤舜
+（最早、言葉だけで収まるような場ではない。[r]　六騎相手での乱戦となればおぬい達を守り切れん）
+[k]
+
+＠胤舜
+（連中はどうも通常のサーヴァントとは違う。[r]　何と言うか、異質に過ぎる。まるで得体が知れぬ）
+[k]
+
+＠胤舜
+（その点、拙僧は相性がいい）
+[k]
+
+＠胤舜
+（名指しで拙僧を求めるような連中というのも[r]　あるが、他にも理由は無論ある）
+[k]
+
+＠胤舜
+（我が宝具は初見の相手であろうと応じられる！[r]　故に。まあ、何だ。時をそれなりには稼げるだろう）
+[k]
+
+＠胤舜
+（いいか、この場は拙僧に預けるのだ）
+[k]
+
+？1：胤舜を囮にして逃げろって事？
+
+＠胤舜
+（そうだ。まさしく！）
+[k]
+
+？2：でも、それは
+
+＠胤舜
+（いいや。……他に手はないと拙僧は考える）
+[k]
+
+？！
+
+＠胤舜
+（おまえが逃げ出せば、[r]　おのずと武蔵も追っていくだろう。それでいい）
+[k]
+
+＠胤舜
+（おぬいと田助はおまえが背負え。いいな）
+[k]
+
+？1：………………分かった
+
+？！
+
+[charaFace B 1]
+
+＠胤舜
+（良い返事だ、頼んだぞ）
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠胤舜
+[line 3]ははは！　[charaFace B 2]聞けい、英霊剣豪を名乗る悪鬼ども！
+[k]
+
+＠胤舜
+[#臭:にお]う[#臭:にお]う、なんという血臭か！　確かに武蔵殿の[r]語った通り泰平には似つかわしくない顔ぶればかり！
+[k]
+
+＠胤舜
+そんな連中が拙僧に用向きとは丁度良し！[r]仏法を尊ぶ身として説教の一つもくれてやろう！
+[k]
+
+[charaFace B 0]
+
+＠胤舜
+と言う訳で武蔵殿！　後は頼む！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠武蔵
+胤舜殿！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠胤舜
+[%1]、走れ！
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.3 1]
+[wait wipe]
+
+？1：おぬいちゃん、しっかりつかまって！
+？2：田助を離さないようにね！
+
+？！
+
+＠おぬい
+こわい、こわ……ぐす……えっ、えっ！？
+[k]
+
+[messageOff]
+[se ad7]
+[wt 0.2]
+[se ad443]
+[wipeout leftToRight 0.3 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[wt 0.1]
+[seStop ad443 0.5]
+[wipein rightToLeft 0.3 1]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠武蔵
+！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠胤舜
+行け武蔵！　行って[%1]と子らを守れ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠武蔵
+…………御免！[r][#熨斗:のし]付けて返すからね、胤舜殿！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[se ad73]
+
+[fadeout black 2.0]
+[bgmStop BGM_BATTLE_65 2.5]
+[wait fade]
+
+[wt 2.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠胤舜
+[line 3]うむ。これで思う存分やり合えるというものだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：冷ややかな剣鬼
+自ら望んで囮となるか、宝蔵院胤舜。
+[k]
+
+＠C：冷ややかな剣鬼
+だが叶わんぞ。[r]やめておけ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠胤舜
+さて、どうかな。確かに貴様の[#纏:まと]う剣気は凄まじい。[r]魔力の[#多寡:たか]なぞ容易に覆すのだろうなぁ。
+[k]
+
+[charaFace B 0]
+
+＠胤舜
+武蔵と同じく化生が如き人であろうし、[r]相当遣う御仁なのだろうがそれはそれ、これはこれ。
+[k]
+
+＠胤舜
+我が背の向こうでは幼子たちと若者が駆けている。[r]麗しくも凄まじき女剣士も駆けている。
+[k]
+
+[charaFace B 5]
+
+＠胤舜
+ならば拙僧は立ちはだかるまで。[r]決して退かぬ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：冷ややかな剣鬼
+そうか。[r][line 3]では死ね、宝蔵院。
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaFadein C 0.3 1]
+[charaFadeout C 0.15]
+[charaMoveScale C 1.2 0.15]
+[charaMove C 0,20 0.15]
+[se ad73]
+[wt 0.2]
+
+[fadeout black 0.2]
+[wait fade]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[fadein black 0.1]
+[wait fade]
+[charaFadein B 0.3 1]
+[charaFadeout B 0.15]
+[charaMoveScale B 1.2 0.15]
+[charaMove B 0,20 0.15]
+[se ad73]
+[wt 0.2]
+
+[effect bit_talk_kengekiall01]
+[se ad32]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[shake 0.03 4 4 0.3]
+[wt 0.4]
+[se ad171]
+[wt 0.2]
+[se ad110]
+[wt 0.1]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[shake 0.03 4 4 0.3]
+[wt 0.1]
+[se ad32]
+[wt 0.5]
+[flashOff]
+[wt 1.5]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_24 1.4]
+[wait fade]
+[soundStopAll]
+[end]

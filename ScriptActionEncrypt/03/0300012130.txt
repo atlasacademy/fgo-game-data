@@ -1,0 +1,289 @@
+
+
+＄03-00-01-21-3-0
+[soundStopAll]
+
+[charaSet A 1098128300 1 ミノタウロス]
+[charaSet B 98115300 1 ホームズ]
+[charaSet C 7030001 1 アタランテ・オルタ]
+[charaSet D 1017001 1 武蔵]
+[charaSet E 7008001 1 ベオウルフ]
+[charaSet F 1098128400 1 ヤガ叛逆軍]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[scene 55400]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ミノタウロス
+ヒヒ、ヒヒヒヒヒッ！[r]クッテヤル……クッテヤルヨォ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ホームズ
+魔力量の上昇を確認、[r]宝具が来るぞ。
+[k]
+
+[charaFace B 2]
+
+＠ホームズ
+[#今だ]！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+？1：アタランテ！
+？！
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠アタランテ・オルタ
+来るな、と言ったのに……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠ミノタウロス
+『[#万古不易の迷宮・邪:ケ イ オ ス ・ ラ ビ ュ リ ン ト ス]』[line 3]！
+[k]
+
+[messageOff]
+[charaEffect A bit_talk_36]
+[voice NP_700900_1]
+
+[wt 1.5]
+[fadeout white 1.0]
+
+[wait fade]
+[charaFadeout A 0.1]
+[charaEffectStop A bit_talk_36]
+
+
+＠アタランテ・オルタ
+汝、一体何を[line 3]！？
+[k]
+
+[messageOff]
+[voice NP_700900_2]
+[wt 1.2]
+
+[scene 21500]
+
+[fadein white 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠武蔵
+よし、成功ね！
+[k]
+
+？1：今の内に……！
+？！
+
+[charaFace D 5]
+
+＠武蔵
+じっとしててね、[r]手元が狂うから……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace C 6]
+[charaFadein C 0.1 0]
+[charaFace D 5]
+[charaFadein D 0.1 2]
+
+[messageOff]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[se ad618]
+[wt 0.7]
+
+＠アタランテ・オルタ
+枷を斬ったか。[r]見事な腕だ。
+[k]
+
+[charaFace D 6]
+
+＠武蔵
+上手くいって何よりです！[r]寒くて指先がちょっと凍えていたからね！
+[k]
+
+＠アタランテ・オルタ
+しかしなるほど。
+[k]
+
+＠アタランテ・オルタ
+汝、宝具の迷宮を発動させることで[r]我々を救出したのか。
+[k]
+
+[charaFace D 1]
+
+＠武蔵
+そ。何より先に貴女と合流したかったんだって。[r]敵を蹴散らすのはその後よ。
+[k]
+
+
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ヤガ叛逆軍
+……。[r]……。
+[k]
+
+？1：これで全員？
+？！
+
+[charaFace F 2]
+
+＠ヤガ叛逆軍
+いや……ここにいるのはほんの一部だけだ。[r]外側に、まだ子供も残っている……子供が……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+[charaFace C 2]
+[charaFadein C 0.1 0]
+
+＠アタランテ・オルタ
+落ち着け！
+[k]
+
+＠アタランテ・オルタ
+急いてもどうにもならん。[r]まずはミノタウロスを仕留める。
+[k]
+
+＠アタランテ・オルタ
+それまで、汝らは待機だ。[r][%1]を守れ！
+[k]
+
+＠ヤガ叛逆軍
+ハッ！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ベオウルフ
+さて、問題はここからだな。[r]虎口に入った形になるが[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[messageOff]
+[wt 0.1]
+
+[se ad57]
+[seVolume ad57 0 0.1]
+[wt 0.1]
+[seVolume ad57 2.0 1.0]
+[shake 0.05 3 3 2.0]
+[bgmStop BGM_EVENT_81 0.1]
+[wt 2.0]
+[seStop ad57 0.5]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.7 1]
+[wt 0.9]
+
+＠ミノタウロス
+ヒヒ……ヒヒヒ……ココニイタナァ……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠武蔵
+サーヴァント以外は後退して！[r]あれ、トンでもないわ。
+[k]
+
+＠武蔵
+始まったら構っている暇がない！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠ベオウルフ
+……くそ！　やはり[#さっきより強くなってるぞ]！[r]迷宮はテメェの縄張りって訳か！
+[k]
+
+[charaFace E 0]
+
+＠ベオウルフ
+だがな、俺たちはそれを覚悟で此処に来た。[r]迷宮の魔人。
+[k]
+
+[charaFace E 2]
+
+＠ベオウルフ
+テメェがグレンデルより強いかどうか[line 3][r]今度こそ、この拳で確かめるとするか！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_80 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,901 @@
+
+＄91-50-28-01-1-1
+[soundStopAll]
+
+
+
+
+[charaSet A 5028002 1 イリヤ変身用]
+[charaSet B 2027000 1 クロエ]
+[charaSet C 8001001 1 マシュ]
+[charaSet D 6013001 1 ファントム・オブ・ザ・ジェントル]
+[charaSet E 3002001 1 ジェントルッド]
+[charaSet F 5002002 1 ジェン・ト・ルェ]
+[charaSet G 4008002 1 ジェントル髭]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[scene 20300]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_3 0.1]
+[wait fade]
+
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.7 -500,0]
+
+[se ad85]
+[seVolume ad85 0 0.3]
+[charaEffect H bit_talk_42]
+[wt 0.1]
+[charaMove A 1 0.2]
+[wait charaMove]
+[charaEffectStop H bit_talk_42]
+[charaPut H 1200,1200]
+
+[wt 0.3]
+
+[charaBackEffect A bit_talk_41_black_out]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+[se bac25]
+[effect bit_talk_magic]
+
+＠イリヤ
+[f large][#多元重奏飽和砲撃:ク 　ウ 　ィ 　ン 　テ 　ッ 　ト 　フ 　ォ 　イ 　ア][line 3]！！
+[k]
+
+[wait effect bit_talk_magic]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+[charaBackEffectStop A]
+
+[messageOff]
+
+[effect bit_talk_rarrow01br]
+[se bac71]
+[wt 1.2]
+[shake 0.05 0 4 1.5]
+[se bac325]
+[seVolume bac325 0 0.3]
+
+[charaTalk off]
+
+[charaEffect D bit_talk_11 -105,0]
+[charaEffect E bit_talk_11 20,0]
+[charaEffect F bit_talk_11 70,0]
+[charaEffect F bit_talk_11 -80,0]
+
+[charaFace D 3]
+[charaFace E 3]
+[charaFace F 3]
+[charaFace G 3]
+
+[charaFadein D 0.7 -105,0]
+[charaFadein E 0.7 20,0]
+[charaFadein F 0.7 70,0]
+[charaFadein G 0.7 -80,0]
+
+＠紳士合体プリズマ☆ジェントル
+[f large]ぐわあああああぁ[line 3]！！
+[k]
+
+[messageOff]
+
+[charaMove D 0,-600 1.2]
+[charaMove E 0,-600 1.2]
+[charaMove F 0,-600 1.2]
+[charaMove G 0,-600 1.2]
+
+[charaFadeout D 1.2]
+[charaFadeout E 1.2]
+[charaFadeout F 1.2]
+[charaFadeout G 1.2]
+
+[wt 1.2]
+[se ad144]
+[wt 0.2]
+[se ad58]
+[seStop ad58 0.5]
+
+[charaEffectStop D bit_talk_11]
+[charaEffectStop E bit_talk_11]
+[charaEffectStop F bit_talk_11]
+[charaEffectStop F bit_talk_11]
+
+[wt 1.5]
+
+[bgmStop BGM_EVENT_3 0.5]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+[wt 0.3]
+
+[charaSet D 5028001 1 イリヤ]
+
+[charaDepth D 2]
+[charaDepth A 1]
+
+[charaTalk off]
+[charaPut H 1]
+[charaEffect H bit_talk_magicalchange_front]
+[charaSpecialEffect A enemyErasure]
+[wt 0.2]
+[se ad39]
+[charaFace D 4]
+[charaSpecialEffect D appearanceReverse]
+[wait charaSpecialEffect A]
+[wait charaSpecialEffect D]
+[charaEffectStop H bit_talk_magicalchange_front]
+[charaPut H 1200,1200]
+[charaFadeout A 0.1]
+[bgm BGM_EVENT_2 0.1]
+[wt 0.2]
+
+＠イリヤ
+はぁ……はぁ……。[wt 0.2][charaFace D 1][r]や、やった……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.4 1]
+[wt 0.2]
+
+＠マシュ
+……敵・迷惑対象の完全撃破を確認。
+[k]
+
+[charaFace C 13]
+
+＠マシュ
+お疲れ様でした。イリヤさん、先輩。[r]これで……ようやく終わったんですね。
+[k]
+
+[charaFace C 12]
+
+＠マシュ
+まさか倒したはずの魔法紳士の妄念が[r][#紳士合体:フュージェントル]して再度襲いかかってくるとは……。
+[k]
+
+？1：簡潔な説明ありがとう、マシュ
+？2：おぞましくも哀しい戦いだった
+？！
+
+[charaFace C 8]
+
+＠マシュ
+はい。語れば長くなりますが……[r]別に語りたくはないので忘れることにしましょう。
+[k]
+
+[charaFadeout C 0.1]
+
+[wt 0.1]
+[charaSet D 98102500 1 イリヤ]
+[charaSet A 98103600 1 ルビー]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+[charaShake D 0.07 2 0 0.4]
+
+＠イリヤ
+……………………（プルプル）
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠マシュ
+……？[r]どうしましたイリヤさん？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠イリヤ
+…………か、
+[k]
+
+[charaFace D 2]
+[charaShake D 0.05 2 0 0.2]
+
+＠イリヤ
+[f large]体の節々が痛い！！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+だ、大丈夫ですか！？[r]先ほどの戦いでどこかに怪我を……！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[charaMoveReturn A 0,20 0.1]
+[wait charaMove A]
+[charaMoveReturn A 0,20 0.1]
+[wait charaMove A]
+
+＠ルビー
+いえいえ、そこはご心配なくー。[r]紳士にタッチされるようなヘマは犯しておりませんよ。
+[k]
+
+[charaMoveReturn A 0,32 0.1]
+[wait charaMove A]
+[charaMoveReturn A 0,32 0.1]
+[wait charaMove A]
+
+＠ルビー
+これは大技の反動……というか代償ですね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠イリヤ
+[#多元重奏飽和砲撃:クウィンテットフォイア]を撃つとこうなるの……。[r]ねぇルビー、これって痛くしないようにできないの？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0]
+[charaFace D 4]
+[charaFadein D 0.1 2]
+
+[charaMoveReturn A -256,32 0.1]
+[wait charaMove A]
+[charaMoveReturn A -256,32 0.1]
+[wait charaMove A]
+
+＠ルビー
+そう言われましてもー。元々魔力を通すべきではない系を[r]無理やり酷使して、瞬間火力を得る[#裏技:インチキ]ですから。
+[k]
+
+[charaMoveReturn A -256,32 0.1]
+[wait charaMove A]
+[charaMoveReturn A -256,32 0.1]
+[wait charaMove A]
+
+＠ルビー
+本来だったら代償はこんな程度ではありませんよ？[r]それはイリヤさんが一番ご存知でしょう。
+[k]
+
+[charaMoveReturn A -256,20 0.1]
+[wait charaMove A]
+[charaMoveReturn A -256,20 0.1]
+[wait charaMove A]
+
+＠ルビー
+生身よりも頑丈な霊基の体だから、[r]田植え後のおばあちゃんみたいな感想で済んでるんです！
+[k]
+
+[charaFace D 4]
+
+＠イリヤ
+おばあちゃん……。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠マシュ
+そ、そんな壮絶な技だったのですね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠イリヤ
+うーん……。でも、[#あの時]撃ったのよりも[r]威力がだいぶ落ちてる気がするんだけど。
+[k]
+
+？1：あの時？
+？2：どの時？
+？！
+
+[charaFace D 4]
+
+＠イリヤ
+あっ、ええっと……話せば長くなるんですけど……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[charaMoveReturn A 0,20 0.1]
+[wait charaMove A]
+[charaMoveReturn A 0,20 0.1]
+[wait charaMove A]
+
+＠ルビー
+ちっちゃくなってでっかくなったギルガメッシュさんの[r][#天地乖離す開闢の星:エ　ヌ　マ　・　エ　リ　シ　ュ]に真っ向から撃ち勝った時ですねー。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+え……？
+[k]
+
+？1：えええええええマジ！？
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaSet A 98103700 1 ルビー]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[charaMoveReturn A 0,20 0.1]
+[wait charaMove A]
+[charaMoveReturn A 0,20 0.1]
+[wait charaMove A]
+
+＠ルビー
+このルビーちゃんの妖艶なフォルムに誓って[r]マジバナです！
+[k]
+
+[charaChange A 98103600 0 fade 0.1]
+
+？2：知ってる、プリズマ☆イリヤ2wei！の５巻だね！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[charaMoveReturn A 0,20 0.1]
+[wait charaMove A]
+[charaMoveReturn A 0,20 0.1]
+[wait charaMove A]
+
+＠ルビー
+そのとーり！　教科書に載せたい程の大胆な宣伝、[r]このルビーちゃんもシャッポを脱ぎましょう！
+[k]
+
+？！
+
+[charaMoveReturn A 0,32 0.1]
+[wait charaMove A]
+[charaMoveReturn A 0,32 0.1]
+[wait charaMove A]
+
+＠ルビー
+でもまー、アレはあちらさんが手を抜いてくれていた……[r]というか遊んでくれていたから助かったんですけどね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠マシュ
+い、いえ、だとしても……とてつもない事です！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠イリヤ
+あの時はもう……むがむちゅーだったのでハイ……。
+[k]
+
+[charaFace D 2]
+
+＠イリヤ
+と、とにかく！　[r]わたし、もっと強くなりたいの！　なれるはずなの！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace A 0]
+[charaFadein A 0.1 0]
+[charaFace D 5]
+[charaFadein D 0.1 2]
+
+＠イリヤ
+ねぇルビー。生身よりも頑丈だって言うなら、[r]もっと出力上げられるんじゃないの？
+[k]
+
+[charaTalk A]
+
+[charaMoveReturn A -256,20 0.1]
+[wait charaMove A]
+[charaMoveReturn A -256,20 0.1]
+[wait charaMove A]
+
+＠ルビー
+純粋に火力を求める少女、イエスですね！
+[k]
+
+[charaMoveReturn A -256,32 0.1]
+[wait charaMove A]
+[charaMoveReturn A -256,32 0.1]
+[wait charaMove A]
+
+＠ルビー
+で・す・が……結論から言うと、[r]これはイリヤさん側の問題なんですよねー。
+[k]
+
+＠イリヤ
+え、どゆこと？
+[k]
+
+[charaTalk A]
+
+[charaMoveReturn A -256,32 0.1]
+[wait charaMove A]
+[charaMoveReturn A -256,32 0.1]
+[wait charaMove A]
+
+＠ルビー
+わたしのお仕事は、[r]４つの系を疑似魔術回路として整備する事まで。
+[k]
+
+[charaMoveReturn A -256,32 0.1]
+[wait charaMove A]
+[charaMoveReturn A -256,32 0.1]
+[wait charaMove A]
+
+＠ルビー
+そこにどれだけの魔力を走らせるかは、結局のところ[r]イリヤさん本人の意思によるものなんですよ。
+[k]
+
+[charaFace D 4]
+
+＠イリヤ
+意思……？[r]精一杯やってるつもりなんだけどなぁ……。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠マシュ
+……もしかして。
+[k]
+
+？1：心にブレーキがかかってる？
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[charaMoveReturn A 0,20 0.1]
+[wait charaMove A]
+[charaMoveReturn A 0,20 0.1]
+[wait charaMove A]
+
+＠ルビー
+おっ、さすがグランドなマスターさん！
+[k]
+
+[charaMoveReturn A 0,20 0.1]
+[wait charaMove A]
+[charaMoveReturn A 0,20 0.1]
+[wait charaMove A]
+
+＠ルビー
+女子小学生の無垢でツルツルな心を普段から[r]覗き見ているかのように理解がお早い！
+[k]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠イリヤ
+なにかいかがわしい表現をしてる気がする！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[charaMoveReturn A 0,32 0.1]
+[wait charaMove A]
+[charaMoveReturn A 0,32 0.1]
+[wait charaMove A]
+
+＠ルビー
+婉曲表現を覚え始めたイリヤさんいじりは[r]大変楽しいのですが、さておき。
+[k]
+
+[charaMoveReturn A 0,12 0.1]
+[wait charaMove A]
+[charaMoveReturn A 0,12 0.1]
+[wait charaMove A]
+
+＠ルビー
+イリヤさんが生身で撃った時の代償は大きく、[r]それはも～凄絶な激痛に苛まれたはずです。
+[k]
+
+[charaMoveReturn A 0,12 0.1]
+[wait charaMove A]
+[charaMoveReturn A 0,12 0.1]
+[wait charaMove A]
+
+＠ルビー
+その記憶から、心が無意識に出力を抑えて[r]しまっているのではないでしょうか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠マシュ
+それは……。
+[k]
+
+？1：仕方がない事だと思う
+？2：痛い思いをしてまで頑張らなくてもいい
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠イリヤ
+心配してくれてるんだよね。[r]ありがとう、[%1][&お兄さん:お姉さん]。
+[k]
+
+[charaFace D 5]
+
+＠イリヤ
+……でもね、[r]それでもわたしは強くなりたいんだ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 2]
+[charaFace D 5]
+[charaFadein D 0.1 0]
+
+＠マシュ
+その気持ちは……ええ、痛いほどに解ります。
+[k]
+
+[charaFace C 7]
+
+＠マシュ
+ですが、イリヤさんはまだ小学生ではありませんか。[r]どうしてそこまで、強さを求めるのですか？
+[k]
+
+[charaFace D 4]
+
+＠イリヤ
+だって……だって、[r]強くならないと……
+[k]
+
+＠マシュ
+ならないと……？
+[k]
+
+[charaFace D 2]
+
+＠イリヤ
+クロより弱いって言われちゃう！
+[k]
+
+[bgmStop BGM_EVENT_2 0.2]
+[wt 0.5]
+[bgm BGM_EVENT_7 0.1]
+
+[charaFace C 11]
+
+＠マシュ
+………………はい？
+[k]
+
+[charaFace D 7]
+[charaShake D 0.03 2 2 0.4]
+
+＠イリヤ
+『クロの方が使い勝手いいよね』とか[r]『宝具威力もクロの方が強い』とか言われちゃうーっ！
+[k]
+
+[charaFace D 4]
+
+＠イリヤ
+分かってる……分かってるの、わたしが弱いってことは。[r]魔力はイマイチ低いし、戦闘中の判断だって遅いよね……。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠イリヤ
+でもね、わたしがどんなに未熟だったとしても、[r]絶対に、これだけは譲れない戦いがあるの。
+[k]
+
+＠イリヤ
+他の誰に負けたっていい……けど！[r]わたしは！　姉として！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaScale D 1.4]
+[charaFadein D 0.1 0,30]
+[charaPut H 1]
+[charaScale H 1.1]
+[charaEffect H bit_talk_41]
+[charaPut H -30,120]
+[shake 0.05 2 4 0.5]
+
+＠イリヤ
+[f large][#妹:クロ]にだけは負けられないっ！！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+[line 9]……。
+[k]
+
+[charaFace C 8]
+
+＠マシュ
+え、ええと……。過去最大級に真剣な主張に[r]うっかり感動しかけてしまいましたが……。
+[k]
+
+[charaFace C 13]
+
+＠マシュ
+イリヤさんがクロエさんより弱いなんて、[r]そんなことはないと思いますよ。
+[k]
+
+[charaFace C 12]
+
+＠マシュ
+なのでどうか冷静に……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaScale D 1.0]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+[charaMoveReturn D 0,15 0.2]
+
+＠イリヤ
+そんなことあるもんー！[r]みんなそう言ってるってルビーがー！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠マシュ
+ルビーさん！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[charaMoveReturn A 0,20 0.1]
+[wait charaMove A]
+[charaMoveReturn A 0,20 0.1]
+[wait charaMove A]
+
+＠ルビー
+あはははは[line 2]！[charaMove A -30,100 0.2][wt 0.2][charaMove A -82,0 0.2][wt 0.2][charaMove A -132,90 0.2][wt 0.2][charaMove A -184,0 0.2][wt 0.2][charaMove A -236,120 0.2][wt 0.2][charaMove A -288,0 0.2][se ade97][wt 0.2][charaMove A -700,0 0.4][wt 0.3][charaFadeout A 0.4]
+[k]
+
+[messageOff]
+
+？1：協力してあげたいけど……
+？2：うむむむむ……
+？！
+
+＠？？？
+ふっふっふ……お困りのようね。
+[k]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠イリヤ
+えっ……！[r]だ、誰……！？
+[k]
+
+[messageOff]
+
+[fadeout black 0.3]
+[wait fade]
+[charaFadeout D 0.1]
+[wt 0.1]
+[scene 28300]
+[fadein black 0.3]
+[wait fade]
+
+＠？？？
+とうっ！
+[k]
+
+[messageOff]
+
+[wipeout upToDown 0.5 1]
+[se ad73]
+[se ad242]
+[seVolume ad242 0 0.05]
+[wt 0.05]
+[seVolume ad242 0.5 0.7]
+[wait wipe]
+[wt 0.3]
+[scene 20300]
+[wipein downToUp 0.5 1]
+[wt 0.4]
+[charaFadein B 0.1 0,60]
+[charaFilter B silhouette 00000080]
+[charaMove B 1 0.2]
+[wait wipe]
+
+[seStop ad242 0.4]
+[se ad223]
+[shake 0.05 0 4 0.25]
+[wt 0.25]
+
+[bgmStop BGM_EVENT_7 0.2]
+[wt 0.5]
+[bgm BGM_EVENT_4 0.5]
+
+＠？？？
+話は聞かせてもらったわ！！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+あ、あのクロいシルエットは……！？
+[k]
+
+？1：いったい何者なんだ……！？
+？！
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ルビー
+………………。
+[k]
+
+[charaMoveReturn A 0,32 0.1]
+[wait charaMove A]
+[charaMoveReturn A 0,32 0.1]
+[wait charaMove A]
+
+＠ルビー
+あ、次回に続きます。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_4 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

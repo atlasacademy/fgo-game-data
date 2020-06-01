@@ -1,0 +1,294 @@
+
+
+＄94-03-01-04-1-1
+
+
+[soundStopAll]
+
+[charaSet A 4008001 1 黒髭の鬼]
+[charaSet B 4008002 1 黒髭の鬼（第三）シルエット]
+[charaFilter B silhouette 000000FF]
+[charaSet C 6029001 1 アサシン・パライソ]
+[charaSet D 99502600 1 マシュ]
+[charaSet E 10008001 1 シトナイ]
+[charaSet F 1098157600 1 護法少女]
+[charaSet G 98115000 1 エフェクト用]
+
+[charaPut G 1200,1200]
+[charaEffect G bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 64700]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[effect bit_talk_kengekiall02]
+[se ad32]
+[flashin once 0.1 0.1 FFFFFFAF FAFAFA80]
+[shake 0.03 4 4 0.3]
+[wt 0.4]
+[se ad171]
+[wt 0.2]
+[se ad110]
+[wt 0.1]
+[flashin once 0.1 0.1 FFFFFFAF FAFAFA80]
+[shake 0.03 4 4 0.3]
+[wt 0.1]
+[se ad32]
+[wt 0.4]
+
+[charaMoveScale A 1.3 0]
+
+[se ad671]
+[seStop ad671 0.5]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[charaMoveScale A 1.0 0.2]
+[wt 0.5]
+＠黒髭の鬼
+ぬううっ！[r]美少女英霊がよってたかって拙者に群がってくる！
+[k]
+
+＠黒髭の鬼
+これは実質ご褒美！[r]つまり実質無料ということなのでは？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠C：[servantName 602900:アサシン・パライソ:望月千代女]
+な、何を言って[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠黒髭の鬼
+もっと欲しい！　もっともっと欲しい！[r]愛をください！
+[k]
+
+＠黒髭の鬼
+お[messageShake 0.01 3 3 0.7]おおお……[r]おおおおおおおおお……！！
+[k]
+
+[messageOff]
+
+[se ad429]
+[effect bit_talk_charge_red]
+[wt 2.5]
+
+＠黒髭の鬼
+うおおぉおおおおおおおおおおおおお！　妬み！　[#嫉:そね]み！[r]全時代全世界で涙を流す非モテたちよ、拙者に力を！
+[k]
+
+＠黒髭の鬼
+拙者に！　たっぷり力を分けてくれええええええ！
+[k]
+
+[messageOff]
+[seStop ad429 1.5]
+[bgmStop BGM_EVENT_3 1.0]
+[fadeout white 1.5]
+[wait fade]
+
+[se ad29]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[effectStop bit_talk_charge_red]
+
+[wt 1.0]
+
+[charaSet A 4008002 1 黒髭の鬼]
+[charaTalk off]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[charaDepth A 10]
+[charaFace A 0]
+[charaFadein A 1.0 1]
+[wt 1.5]
+[charaFadeout B 0.4]
+[charaFace A 1]
+[charaTalk off]
+
+[bgm BGM_MAP_4 0.1]
+
+＠黒髭の鬼
+フフフ。[r]成功、成功してしまったでござるよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaSet B 4008002 1 黒髭の鬼（第三）]
+
+[charaPut G 1]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠マシュ
+霊基再臨！
+[k]
+
+[charaFadeout D 0.1]
+[charaPut G 1200,1200]
+[wt 0.1]
+[charaEffectStop G bit_talk_10_LowLevel]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠シトナイ
+黄金の魔力を活性化させてるんだよ！[r]さっきより格段に強くなってるはずだから、気を付けて！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠B：黒髭の鬼
+待たせたなァ可愛い拙者のヒロインちゃん軍団。[r]あと死に晒せとか[#喚:わめ]いちゃってた、可愛いクワガタちゃん。
+[k]
+
+＠B：黒髭の鬼
+お次は、もうちっとばかし愉しませてやるぜえ？
+[k]
+
+[bgmStop BGM_MAP_4 1.0]
+＠F：護法少女
+[line 6]ほな、お相手よろしゅう。
+[k]
+
+？1：その声！
+？2：またか！
+
+？！
+
+[charaFace B 3]
+＠B：黒髭の鬼
+美少女の香り！[r]そして声！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.3 1]
+
+[wt 0.1]
+
+[charaEffect G bit_talk_rarrow01br]
+[wt 0.2]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[scene 10000]
+[charaPut G -50,50]
+
+[wipein rectangleStripDownToUp 0.1 1]
+[wait wipe]
+
+[se adm15]
+[wt 1.0]
+
+[wipeout rectangleStripDownToUp 0.1 1]
+[wait wipe]
+
+[scene 64700]
+
+[charaTalk depthOff]
+[charaDepth B 0]
+[charaDepth G 1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.1]
+
+[charaSet A 1098157700 1 小動物]
+
+[wipein rectangleStripUpToDown 0.1 1]
+[wait wipe]
+
+[se ad322]
+[shake 0.05 3 3 0.3]
+[charaPut G 0,-300]
+[charaEffect G bit_talk_14]
+[wt 0.1]
+[charaMove B -128,0 0.1]
+[wt 0.5]
+[seStop ad322 0.4]
+
+[charaFace B 2]
+
+＠B：黒髭の鬼
+おうわっ！　危ない、危なすぎる！[r]どこからともなく棍棒が拙者の足元へ飛んで来た！？
+[k]
+
+＠B：黒髭の鬼
+こんなん当たったら死にますぞー！[r]いったいどんな無礼な美少女か、姿を見たいなあ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+＠F：護法少女
+そうまで言われたら、なあ。[r]お言葉に甘えなあかんよねぇ？
+[k]
+
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth F 0]
+[charaDepth A 1]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFace A 0]
+[se ad73]
+[charaPut A 0,0]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect F appearance 1 0.25]
+[charaSpecialEffect A appearance 1 0.25]
+[wt 1.0]
+[bgm BGM_HALLOWEEN_2 0.1]
+
+[charaFace F 7]
+[effect bit_talk_41]
+[cameraMove 0.2 0,0 1.1]
+[se ade211]
+＠護法少女
+[line 3]護法少女・またも推参や！
+[k]
+
+[messageOff]
+[se ade217]
+[effect bit_talk_magic_girl_light]
+[wt 3.0]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_HALLOWEEN_2 2.0]
+[wait fade]
+[soundStopAll]
+[end]

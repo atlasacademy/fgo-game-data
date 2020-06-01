@@ -1,0 +1,625 @@
+
+
+
+
+＄91-30-35-01-4-1
+
+[soundStopAll]
+
+[charaSet A 3035001 1 秦良玉]
+[charaSet B 5011001 1 バベッジ]
+
+[charaSet C 1098187100 1 エルメロイⅡ世]
+[charaSet D 4032000 1 ライネス]
+[charaSet E 11005001 1 ヘシアン・ロボ]
+[charaSet F 1098165000 1 ヘシアン・ロボ（偽ロボ）]
+[charaSet G 98111500 1 通信用ノイズ]
+[equipSet H 9807080 1 バレンタイン礼装]
+
+[charaPut G 1200,1200]
+[charaEffect G bit_talk_10_LowLevel]
+
+
+[scene 37300]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠ヘシアン・ロボ
+[f large][line 3][messageShake 0.05 5 5 0.3]ッ！
+[k]
+
+[messageOff]
+
+[se ad58]
+[se ad54]
+
+[fowardEffect bit_talk_41]
+[charaMove E 0,5 0.3]
+[charaMoveScale E 1.2 0.3]
+[wt 0.2]
+
+[fowardEffectStop bit_talk_41]
+[wt 0.3]
+[charaFadeout E 0.1]
+[seStop ad58]
+[seStop ad54]
+[wt 0.5]
+
+[charaMoveScale E 1.0 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.5]
+
+[fowardEffect bit_talk_kengekiall02]
+[wt 0.2]
+[se bac7]
+[charaShake F 0.05 3 3 0.4]
+[wt 0.3]
+[se bac6]
+[charaShake F 0.05 3 3 0.4]
+[wt 0.2]
+[se bac5]
+[wt 0.5]
+
+[effect bit_talk_fangtrap_blue]
+[wt 0.1]
+[se ad191]
+[flashin once 0.1 0.3 FF0000AF FFFFFF00]
+[charaShake F 0.05 3 3 0.4]
+[wt 0.6]
+
+[fowardEffect bit_talk_kengekiall04]
+[wt 0.2]
+[se bac142]
+[charaShake F 0.05 3 3 0.4]
+[wt 0.2]
+[se bac142]
+[charaShake F 0.05 3 3 0.4]
+[wt 0.2]
+[se bac143]
+[charaShake F 0.05 3 3 0.4]
+[fowardEffectStop bit_talk_kengekiall04]
+[wt 0.2]
+
+[fowardEffect bit_talk_claw]
+[wt 0.1]
+[se bac137]
+[charaShake F 0.05 3 3 0.4]
+[wt 1.0]
+[seStop bac137]
+
+[bgmStop BGM_EVENT_3 0.5]
+
+[charaSpecialEffect F erasure 1 1.7]
+[se ad42]
+[wait charaSpecialEffect F]
+[wt 1.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠秦良玉
+（首筋を噛んで何度も叩きつけて[r]　徹底的に倒してますね……）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠ライネス
+（よっぽど腹立たしかったんだろうな、[r]　自分の偽物が……）
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ヘシアン・ロボ
+……。[r]……。
+[k]
+
+[messageOff]
+
+[charaFace E 1]
+[wt 1.2]
+
+[se ade168]
+[charaFadeout E 0.4]
+[wt 1.0]
+[seStop ade168 1.3]
+[wt 1.5]
+
+[charaPut G 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠エルメロイⅡ世
+ロボはシミュレーターから離脱した。[r]気は済んだ、ということらしい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠バベッジ
+うむ。
+[k]
+
+＠バベッジ
+これでジャイアントパンダの復元が、[r]ようやく可能になる。
+[k]
+
+[charaFace B 0]
+＠バベッジ
+ではデータを修復して……。[r]……む？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠秦良玉
+どうなさいました？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠バベッジ
+……。[r]……。
+[k]
+
+＠バベッジ
+秦良玉。[r]とても言い[#難:にく]いのだが……。
+[k]
+
+[bgmStop BGM_EVENT_2 1.0]
+＠バベッジ
+ジャイアントパンダの再現用データが、無い。[r]バグが起きていた期間が他より遙かに長かったようだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠秦良玉
+そ。
+[k]
+
+[se ad119]
+
+＠秦良玉
+[f large]そんなーーー！！
+[k]
+
+[messageOff]
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaPut G 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠エルメロイⅡ世
+……一応、ジャイアントパンダのデータを[r]捜索してはみるそうだが……。
+[k]
+
+＠エルメロイⅡ世
+率直に言って望み薄だと考えて欲しい。[r]何しろカルデアの目的とは全く関係ないからな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠秦良玉
+はい……。
+[k]
+
+[charaFace A 6]
+＠秦良玉
+皆さん、大変ご迷惑をお掛けしました。[r]ありがとうございます……。
+[k]
+
+[messageOff]
+
+[se ad60]
+[charaFadeout A 0.4]
+[wt 0.5]
+[seStop ad60 1.0]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠バベッジ
+何とも後味の悪い結末に[r]なってしまったな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ライネス
+……おい、我が弟子。[r]秦良玉に何かフォローしておけ。
+[k]
+
+＠ライネス
+さすがにこれは可哀想だ！
+[k]
+
+？1：もちろんです！
+？！
+
+[messageOff]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_11 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[scene 10400]
+
+[wipeFilter cinema 0.5 0]
+
+[wt 1.5]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_25 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+＠秦良玉
+はぁ……。
+[k]
+
+＠秦良玉
+あれだけ大騒動で、[r]マスターや皆さんに迷惑をかけて……。
+[k]
+
+＠秦良玉
+その癖何も手に入らないとか……。[r]今日は厄日か何かでしょうか。
+[k]
+
+[messageOff]
+
+[se ade169]
+[seVolume ade169 0 0.2]
+[wt 0.8]
+
+？1：[#良:リャン]さん、いる？
+？！
+
+[charaFace A 0]
+＠秦良玉
+……マスター？[r]はい、今ドアを開けますね。
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_25 0.5 0.5]
+[wait fade]
+
+[se ad8]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[wipeOff]
+
+[wt 1.5]
+[fadein black 1.0]
+[bgm BGM_EVENT_25 0.5 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠秦良玉
+本日はご迷惑を[line 3]
+[k]
+
+？1：ええと……これ、プレゼント！
+？！
+
+[charaFace A 0]
+＠秦良玉
+プレゼント？
+[k]
+
+[branchNotHaveSvtEquip lblNotHave 9807080]
+
+[branch lblConf]
+
+[label lblConf]
+
+[messageOff]
+[charaFadeout A 0.4]
+
+[se bas2]
+[charaFace H 0]
+[charaFadein H 0.5 0,-70]
+[wt 2.0]
+
+[charaFadeout H 0.4]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠秦良玉
+……こ、これは私が以前作った……！[r]もしかしてマスターが自ら！？
+[k]
+
+[messageOff]
+[wt 0.5]
+[cameraMove 0.2 0,8 1.0]
+[wait camera]
+[cameraHome 0.3]
+[wait camera]
+[wt 0.7]
+
+？1：本物には全然及ばないけど
+？2：まあ雰囲気だけでも……
+
+？！
+
+[charaFace A 1]
+＠秦良玉
+嬉しい……ありがとうございます！
+[k]
+
+[branch lblNotHave_out]
+
+[label lblNotHave]
+
+
+[charaFace A 0]
+＠秦良玉
+こちらは一体……？
+[k]
+
+＠秦良玉
+えっと、パンダのお菓子……ですか？[r]なるほど、手作り……。
+[k]
+
+[charaFace A 2]
+[charaShake A 0.05 4 4 0.3]
+＠秦良玉
+[f large]手作り！？
+[k]
+
+？1：味は師匠のお墨付きだから
+？！
+
+[charaFace A 0]
+＠秦良玉
+師匠……ああ、[#司馬懿:し ば い]ことライネスどの！[r]なるほど。
+[k]
+
+[charaFace A 1]
+＠秦良玉
+あの方の厳しい審査を[#潜:くぐ]ってきたのなら、[r]確かに美味しいこと間違いなし、ですね。
+[k]
+
+＠秦良玉
+本当に嬉しいです、[r]ありがとうございます！
+[k]
+
+
+[label lblNotHave_out]
+
+[charaFace A 0]
+＠秦良玉
+……。[r]……。
+[k]
+
+[charaFace A 1]
+＠秦良玉
+マスター、よろしければお茶を淹れますので、[r]戴いたもの、一緒に食べませんか？
+[k]
+
+＠秦良玉
+大事なことを、一つ伝え忘れていました。
+[k]
+
+＠秦良玉
+私が[#大熊猫:パ ン ダ]を再現したいと願ったのは、[r]マスターに可愛さを見て欲しかったからなのです。
+[k]
+
+＠秦良玉
+私の思い出話と一緒に。
+[k]
+
+？1：聞かせて欲しい[&:な]
+？！
+
+＠秦良玉
+はい！
+[k]
+
+[messageOff]
+
+[fadeout black 1.5]
+[bgm BGM_EVENT_25 1.5 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[wt 1.5]
+[fadein black 1.5]
+[bgm BGM_EVENT_25 1.5 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠秦良玉
+再会した[#大熊猫:パ ン ダ]は頭が良いというか、[r]一周回ってヘンな思考回路になってまして……。
+[k]
+
+[charaFace A 6]
+＠秦良玉
+どうも『自分は皇帝並みに偉い』と思い込んだらしく、[r][#帝:みかど]もその様子に大受けして[#冕冠:べんかん]を贈ってしまって……。
+[k]
+
+？1：パンダ皇帝……！
+？！
+
+[messageOff]
+
+[charaFace A 1]
+[wt 1.0]
+
+[charaFace A 5]
+[charaMoveReturn A 0,-15 0.5]
+[wt 1.8]
+
+[charaFace A 1]
+[wt 1.5]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_25 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[charaSet B 2009102 1 オリオン]
+[charaSet C 2009201 1 アルテミス]
+
+[charaDepth B 2]
+[charaDepth C 1]
+
+[scene 10311]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+[wt 0.4]
+＠アルテミス
+こうして[%1]は、[r]秦良玉ちゃんとほのぼの雑談したの、めでたしめでたし。
+[k]
+
+＠アルテミス
+あれ、なぜ私が急に出てきたのかって？[r]うふふふふ。
+[k]
+
+[charaFace C 0]
+＠アルテミス
+それはね、ダーリンが自分を白黒に塗りたくって[r]パンダになりきろうとしていたから[line 3]
+[k]
+
+[charaFace C 2]
+＠アルテミス
+[line 3]いっそ、白も黒もない灰そのものに[r]してあげようと思ったの。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0]
+
+[charaFace C 2]
+[charaFadein C 0.1 2]
+＠オリオン
+ご[messageShake 0.05 5 5 0.3]ーーめーーんーーなーーさーーいーーねーー！
+[k]
+
+＠アルテミス
+ダメ、絶対に許さない。
+[k]
+
+＠オリオン
+シリアスな台詞で返されると、[r]マジで怖いからホントやめてください！
+[k]
+
+[charaMove C 0,0 0.5]
+
+[charaFace B 2]
+＠オリオン
+ちくしょう、同じクマでもどうしておまえは[r]いつも可愛がられるんだ、ジャイアントパンダ！
+[k]
+
+[messageOff]
+
+[se ad345]
+[charaMove B -150,0 1.5]
+[charaMove C 100,0 1.5]
+[wt 1.0]
+[seStop ad345 0.5]
+[wt 1.0]
+
+[charaFace B 4]
+＠オリオン
+代わって欲しい……代わって欲しい……！
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[se ad345]
+[charaMove B 840,0 9.0]
+[charaMove C 1000,0 9.0]
+[wt 2.0]
+
+[fadeout black 2.0]
+[wt 0.5]
+[seStop ad345 0.5]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[soundStopAll]
+[end]
+

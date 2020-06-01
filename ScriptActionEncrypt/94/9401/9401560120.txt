@@ -1,0 +1,342 @@
+
+＄94-01-56-01-2-0
+
+
+
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[scene 20800]
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 98006000 1 ウェンディゴ]
+[charaSet C 5016001 1 ジェロニモ]
+[charaSet D 5025001 1 エジソン]
+[charaSet E 7028000 1 バニヤン]
+[charaSet F 98006000 1 ウェンディゴ２]
+[charaSet G 98006000 1 ウェンディゴ３]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+
+＠ウェンディゴ
+Ｇ[se ad25]ｕｏｏｏｏｏｏｏｏｏ！
+[k]
+
+＠ウェンディゴ
+Ｕ[charaScale B 1.6][charaFace B 0][charaFadein B 0.1 1][charaPut H 1][charaScale H 1.1][charaEffect H bit_talk_41][charaPut H -30,90][shake 0.05 2 4 0.5]ｒｙｙｙｙｙｙｙ！
+[k]
+
+[se ad85]
+[effect bit_talk_claw]
+[wt 0.7]
+
+[charaPut H 1200,1200]
+[charaFadeout B 0.1]
+[charaFadeout H 0.1]
+
+[wt 0.1]
+
+[flashin once 0.1 0.3 FF0000AF FF000000]
+[se ad46]
+[wt 0.1]
+[shake 0.05 2 2 0.15]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠マシュ
+先輩！　大丈夫ですか！？
+[k]
+
+？1：大丈夫、かすり傷！　むしろいい！
+
+[charaFace A 13]
+
+＠マシュ
+良かった……！
+[k]
+
+[charaFace A 6]
+
+＠マシュ
+……いえ、でも、あれ……[r]いま、おかしな感想が聞こえたような……？
+[k]
+
+[charaFadeout A 0.1]
+
+？2：わあー。あかーい
+
+[charaFace A 6]
+
+＠マシュ
+マ、マスター……！？[r]そんな、つぶらな瞳でマジマジと出血部位を見て……
+[k]
+
+[charaFace A 12]
+
+＠マシュ
+あ、あの、それは美味しいものではありませんから！[r]まずいです。なぜか、とても危険な予感がします！
+[k]
+
+[charaFace A 7]
+
+＠マシュ
+なんとか設定がギリギリ整合性を保てているうちに、[r]このイベントを終わらせないと！
+[k]
+
+[charaFadeout A 0.1]
+
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ジェロニモ
+（……そういうマシュも冷静さを欠いているな……[r]　ふむ……精神汚染の一種でなければよいのだが……）
+[k]
+
+[charaFadeout C 0.1]
+
+？！
+
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠エジソン
+しかし、これは確かに厄介な数だな。
+[k]
+
+＠エジソン
+このキャンプは私とジェロニモ君の陣地作成で[r]強化されてはいるが……
+[k]
+
+[charaFadeout D 0.1]
+
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 2]
+[charaFace D 4]
+[charaFadein D 0.1 0]
+
+＠ジェロニモ
+ああ。波状攻撃となると[#捌:さば]ききれるかどうかだね。[r]……必要とあらば、私が打って出るが？
+[k]
+
+＠エジソン
+いや、待ってほしい。君の野戦能力は信頼しているが、[r]私とマシュ君だけでは守りが心許ない。……む？
+[k]
+
+[shake 0.2 0 3 0]
+[se ad57]
+[seVolume ad57 0 0.4]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+なんでしょう、この揺れ……？
+[k]
+
+[seStop ad57 0.5]
+[shakeStop]
+
+[shake 0.2 0 5 0]
+[se ad57]
+[seVolume ad57 0 0.6]
+
+[charaFadeout A 0.1]
+
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ジェロニモ
+巨大な何かが、近づいている……？[r]幻想種か……？　いや、違う……！
+[k]
+
+
+[messageOff]
+[seStop ad14 0.5]
+[shakeStop]
+[wt 0.5]
+
+[wipeout rectangleStripDownToUp 0.3 1.0]
+[wait wipe]
+
+[charaFadeout C 0]
+[scene 28300]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.3 1.0]
+[wait wipe]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaScale E 2.2]
+[charaPut E 0,100]
+[charaFadein E 0.7 0,60]
+
+[wt 2.5]
+
+[wipeout rectangleStripUpToDown 0.3 1.0]
+[wait wipe]
+[scene 20800]
+[charaFadeout E 0]
+[wt 0.5]
+[wipein rectangleStripDownToUp 0.3 1.0]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+あ、あれは……！？
+[k]
+
+？1：巨人の……進撃……！！
+
+？！
+
+[charaFadeout A 0.1]
+
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ジェロニモ
+バカな……！[r]精霊……神霊……いや、そんな……。
+[k]
+
+[charaFadeout C 0.1]
+
+[messageOff]
+
+[wt 0.3]
+
+[fadeout black 0.3]
+[wait fade]
+[charaTalk E]
+[charaFace E 0]
+[charaPut E 0,100]
+[charaFadein E 0 0,60]
+[scene 28300]
+[fadein black 0.2]
+[wait fade]
+
+＠E：？？？
+大丈夫ー？[r]助けてあげるねー。
+[k]
+
+[wt 0.3]
+
+[messageOff]
+
+[wipeout leftToRight 0.2 2]
+[wait wipe]
+
+[charaFadeout E 0]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFadein F 0 0]
+[charaFace G 0]
+[charaFadein G 0 2]
+[scene 20800]
+
+[wipein leftToRight 0.2 2]
+[wait wipe]
+
+[se bac95]
+[charaEffect F bit_talk_12_red_R]
+[wt 0.3]
+[charaFadeout F 0.1]
+
+[wt 0.3]
+
+[se bac95]
+[charaEffect G bit_talk_12_red_R]
+[wt 0.3]
+[charaFadeout G 0.1]
+
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[se bac143]
+[effect bit_talk_Slash_red_01]
+[wt 0.1]
+[flashin once 0.3 0.3 FF000080 00000000]
+
+＠ウェンディゴ
+Ｇｙａａａａａａａａａａａ！！
+[k]
+
+[charaFadeout B 0.1]
+[se ad144]
+
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+す、すごい……！[r]ウェンディゴたちが、ニンジンを輪切りにするみたいに！
+[k]
+
+[charaFadeout A 0.1]
+
+[wt 0.1]
+
+[messageOff]
+[fadeout black 0.3]
+[wait fade]
+[charaTalk E]
+[charaFace E 1]
+[charaPut E 0,100]
+[charaFadein E 0 0,60]
+[scene 28300]
+[fadein black 0.2]
+[wait fade]
+
+＠E：？？？
+よーし！　このままやっつけちゃおう！[r]行くよ！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

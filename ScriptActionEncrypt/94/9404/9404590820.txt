@@ -1,0 +1,920 @@
+
+＄94-04-59-08-2-0
+
+
+[soundStopAll]
+
+[charaSet A 1098187900 1 ロクジョウ]
+[charaSet B 2040001 1 なぎこ]
+[charaSet C 5042000 1 紫式部]
+[charaSet D 98001000 1 マシュ]
+
+[charaSet I 98115000 1 エフェクト用]
+[charaSet J 98115000 1 エフェクト用]
+
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_charge_blu]
+
+[charaTalk depthOff]
+[charaDepth I 9]
+[charaDepth B 8]
+
+[scene 10806]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1]
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[charaEffect A bit_talk_06b2]
+[wt 2.0]
+
+＠ロクジョウ
+……。[r]……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠なぎこ
+……。[r]……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠ロクジョウ
+あたしの負けってこと？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+[se ad596]
+[se ad300]
+[seVolume ad300 0 0.6]
+[charaChange B 2040000 5 fade 0.7]
+[wait charaChange B]
+[charaEffectStop I bit_talk_charge_blu]
+[wt 0.5]
+[seStop ad596 0.5]
+[wt 0.5]
+
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠なぎこ
+うん、まあ……。[r]そーゆーことかな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠ロクジョウ
+ああ、そう……楽だったけど……[r]意外とつまんなかったね。
+[k]
+
+[charaFace A 9]
+
+＠ロクジョウ
+ずっと、何かにむかついたまま……なんてさ。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.7]
+[charaSpecialEffect A darkEnemyErasure 1 1.7]
+[se ad52]
+[wt 1.9]
+[charaEffectStop A bit_talk_06b2]
+[wt 2.0]
+
+[charaEffect J bit_talk_20]
+[se ad39]
+[wt 2.4]
+[charaEffectDestroy J bit_talk_20]
+
+
+
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠紫式部
+聖杯の欠片……あっ！？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut I 0,0]
+[charaEffect I bit_talk_20]
+[wt 1.0]
+[charaMove I 500,0 1.8]
+[se ad474]
+[seVolume ad474 0 0.2]
+[wt 1.8]
+[charaEffectDestroy I bit_talk_20]
+
+[charaPut I -1200,0]
+[charaEffect I bit_talk_20]
+[seVolume ad474 0.2 0.1]
+
+[charaEffect B bit_talk_20re]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+[wt 1.1]
+
+[charaPut I -500,0]
+[charaMove I 0,0 1.8]
+[wt 0.3]
+[seVolume ad474 0.2 0.2]
+[wt 1.5]
+[seStop ad474 0.5]
+
+[charaEffectStop B bit_talk_20re]
+[charaEffectStop I bit_talk_20]
+[fowardEffect bit_talk_radiallight02]
+[wt 0.5]
+[se ad29]
+
+[fadeout white 1.5]
+[wait fade]
+
+[fowardEffectDestroy bit_talk_radiallight02]
+
+[charaEffect B bit_talk_20]
+[wt 1.5]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+？1：くっついたー！？
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaEffectDestroy B bit_talk_20]
+[charaEffectDestroy I bit_talk_20]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠紫式部
+分かたれていた聖杯の欠片が、[bgm BGM_EVENT_2 0.1][r]正常な状態へと戻った……
+[k]
+
+＠紫式部
+そういう事、でしょうか？
+[k]
+
+[charaFadeout C 0.1]
+
+[charaPut I 0,0]
+[charaEffect I bit_talk_20re]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠なぎこ
+置いてきたつもりが、戻ってきちゃったか。
+[k]
+
+＠なぎこ
+まぁ……そんな事も、あるよね。
+[k]
+
+
+[messageOff]
+[charaEffectStop I bit_talk_20re]
+[wt 0.9]
+
+[charaFace B 0]
+
+＠なぎこ
+じゃあ、ちゃんマス。[r]はいこれ。
+[k]
+
+
+？1：え？
+
+？！
+
+[messageOff]
+[charaMoveScale B 1.1 0.4]
+[charaMove B 0,15 0.4]
+[se ade385]
+[seStop ade385 0.8]
+[wt 1.2]
+[charaMoveReturn B 0,10 0.4]
+[wt 1.0]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+[charaEffect I bit_talk_20]
+[wt 0.5]
+[se ad209]
+[seVolume ad209 0 0.2]
+[seStop ad209 0.5]
+[wt 1.1]
+[charaEffectStop I bit_talk_20]
+[wt 1.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠紫式部
+そんなあっさりと！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠なぎこ
+いや欲しかったんでしょ、それ。[r]２人にあげるよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠紫式部
+けれど、これを回収してしまったら……。
+[k]
+
+？1：なぎこさん……
+
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+[charaPut I 0,0]
+[charaEffect I bit_talk_06]
+[wt 1.5]
+[charaFace B 2]
+
+＠なぎこ
+うわ、何コレこわっ！？[bgm BGM_EVENT_6 0.1]
+[k]
+
+[charaFace B 6]
+
+＠なぎこ
+あ、いや、あれか。[r]『座』ってとこに戻されんのね、うん。
+[k]
+
+＠なぎこ
+それで、ここであった出来事は全部、[r]記録のひとつになっちゃう、と……。
+[k]
+
+[charaFace B 13]
+
+＠なぎこ
+うん……ちょっと残念。[r]あんなに楽しかったのにね。
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠紫式部
+……。[r]……。
+[k]
+
+[charaFace C 5]
+
+＠紫式部
+…………覚えていてください、それくらい。
+[k]
+
+＠紫式部
+私たちだけ覚えているなんて、[r]不公平じゃないですか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠なぎこ
+ぶはははは！[r]かおるっち[#無茶苦茶:むちゃくちゃ]言ってるー！
+[k]
+
+[charaFace B 9]
+
+＠なぎこ
+でもわかった、気合いで何とかする。
+[k]
+
+？1：何とかなるんだ……
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠紫式部
+なぎこさん……[r]いいえ、清少納言……。
+[k]
+
+＠紫式部
+もし貴方に会えたら、ひとつだけ、[r]聞いてみたい事があったんです。
+[k]
+
+[charaFace C 6]
+
+＠紫式部
+貴方は……あ、貴方は……
+[k]
+
+＠紫式部
+げげ、げん……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠なぎこ
+うん。[r]全部読んだよ、『源氏物語』。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠紫式部
+！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+
+＠なぎこ
+そうだにゃー。
+[k]
+
+＠なぎこ
+悲しいほどにキラキラしてて、[r]胸をしめつけて、どこか懐かしくて[line 3]
+[k]
+
+＠なぎこ
+あんなに夢中になって読み[#耽:ふけ]るなんて、[r]初めてだったかもしれない。
+[k]
+
+＠なぎこ
+あたしにはあんなの、絶対書けなかったから。
+[k]
+
+[charaFace B 1]
+
+＠なぎこ
+だからね、『源氏物語』を書いた人と[r]ずっと一緒にいられて……
+[k]
+
+＠なぎこ
+あたしはすごく、すごく嬉しかったんだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠紫式部
+あっ……。
+[k]
+
+＠紫式部
+わ、私も、その……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠なぎこ
+あ、いや待って。
+[k]
+
+＠なぎこ
+やっぱ[#光君:ひかるきみ]だけは無理だったわ、あたし。
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠紫式部
+さ[messageShake 0.05 4 4 0.3]っさと帰ってください！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠なぎこ
+わはははは！
+[k]
+
+＠なぎこ
+ちゃんマスも……ありがとうね！
+[k]
+
+
+？1：うん
+
+？！
+
+？1：また会おうよ
+
+？！
+
+
+[charaFace B 7]
+
+＠なぎこ
+……。[r]……えへへ。
+[k]
+
+＠なぎこ
+約束したよ？[r]絶対の絶対、会いに行くからね。
+[k]
+
+[charaFace B 9]
+
+＠なぎこ
+それじゃあ２人とも、[r]元気でなー！
+[k]
+
+＠なぎこ
+[#あっち]のみんなにも、よろしく！
+[k]
+
+＠なぎこ
+ばいばーーーい！！
+[k]
+
+[messageOff]
+[charaSpecialEffect B flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect B]
+[charaEffectStop I bit_talk_06]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠紫式部
+……。[r]……。
+[k]
+
+＠紫式部
+清少納言こそ……[r]したり顔に、いみじう[#侍:はべ]りける人……
+[k]
+
+[charaFace C 1]
+
+＠紫式部
+なんと言えばいいのでしょうか、本当に。
+[k]
+
+＠紫式部
+騒々しい人……でしたね。
+[k]
+
+
+？1：そうだね
+？2：楽しかった
+
+？！
+
+[charaFace C 7]
+
+＠紫式部
+はい、私も……
+[k]
+
+[charaFace C 1]
+
+＠紫式部
+私も楽しかったです。
+[k]
+
+[messageOff]
+[charaEffect I bit_talk_06]
+[wt 1.5]
+
+[charaFace C 0]
+
+＠紫式部
+あ……これは。
+[k]
+
+＠紫式部
+聖杯を回収した事で、私の意識と繋がっていたという[r]空間と離れていく……そういう仕組みのようですね。
+[k]
+
+＠紫式部
+最後に皆様へ、[r]挨拶をしたかったですが……。
+[k]
+
+＠紫式部
+……。[r]……。
+[k]
+
+[charaFace C 4]
+
+＠紫式部
+マスター……。
+[k]
+
+＠紫式部
+聖杯を失った、この夢の世界は……[r]このまま消えてしまうのでしょうか？
+[k]
+
+？1：…………
+
+？！
+
+？1：もう、見る事はできなくても……
+
+？！
+
+？1：目が覚めても、消えてしまわない
+
+？！
+
+？1：そんな夢が……あってもいいよね？
+
+？！
+
+[charaFace C 1]
+
+＠紫式部
+ふふ……そうですね。
+[k]
+
+＠紫式部
+本当に、そう……。
+[k]
+
+
+＠紫式部
+さぁ、そろそろ参りましょう。
+[k]
+
+＠紫式部
+帰ったらきっと、[r]カルデアもバレンタインデーですよ！
+[k]
+
+[messageOff]
+[fadeout white 1.5]
+[wait fade]
+
+[charaEffectDestroy I bit_talk_06]
+[charaFadeout C 0.1]
+[scene 10000]
+[wt 1.5]
+
+[fadein white 1.5]
+[bgmStop BGM_EVENT_6 1.5]
+[wait fade]
+[fadeout black 0.1]
+[wait fade]
+
+[scene 10000]
+
+[wipeFilter cinema 0.5 0]
+[wt 2.0]
+
+[fadein black 1.5]
+[wait fade]
+
+＠
+さて……。
+[k]
+
+[messageOff]
+[branchQuestNotClear lblNotClear1 3000303]
+[scene 66700 1.0]
+[branch lblConf1]
+[label lblNotClear1]
+[scene 60300 1.0]
+[label lblConf1]
+[wt 1.2]
+
+＠
+その後、私たちは[bgm BGM_EVENT_2 0.1][r]無事にカルデアで目覚めました。
+[k]
+
+＠
+なんでも一週間は眠っていたという事ですが、[r]『いつものアレか』で納得してもらえたのは、
+[k]
+
+＠
+皆様手慣れたものというか、なんというか[line 3]
+[k]
+
+＠
+そして、時はまさにバレンタインデー。[r]ベッドに寝かされたマスターの元へ、
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_2 1.0 0.5]
+[wait fade]
+
+[branchQuestNotClear lblNotClear2 3000303]
+[scene 66800]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10400]
+[label lblConf2]
+[wt 0.5]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_2 1.0 1.0]
+[wait fade]
+
+＠
+女性も男性も入れ替わり立ち替わり……[r]瞬く間にチョコが山のように積み上がっていきました。
+[k]
+
+＠
+これも人徳といいますか。[r]日頃の行いというものでしょうか。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_2 1.0 0.5]
+[wait fade]
+
+[branchQuestNotClear lblNotClear3 3000303]
+[scene 66600]
+[branch lblConf3]
+[label lblNotClear3]
+[scene 10310]
+[label lblConf3]
+[wt 0.5]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_2 1.0 1.0]
+[wait fade]
+
+＠
+そうそう、共同開発されていた例のチョコは、[r]めでたく発売中止となりました。
+[k]
+
+＠
+皆様残念がっておられましたが、[r]あんな危険物は世に出すべきではありません。
+[k]
+
+＠
+そして、私は……。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_2 1.0 0.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 70500]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_2 1.0 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.4 0,-50]
+[wt 0.4]
+
+＠紫式部
+確か、このあたりに……あっ。
+[k]
+
+[charaFace C 1]
+
+＠紫式部
+ありましたね。[r]ふふ。
+[k]
+
+＠紫式部
+もうずっと読んでいなかったけれど……。[r]今日くらいは、まあ、特別ですから。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[se ade277]
+[wt 1.5]
+
+
+＠紫式部
+春はあけぼの……[r]やうやう白くなりゆく山ぎは……
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.0]
+[bgm BGM_EVENT_2 1.0 0.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wipeOff]
+
+[branchQuestNotClear lblNotClear4 3000303]
+[scene 66800]
+[branch lblConf4]
+[label lblNotClear4]
+[scene 10400]
+[label lblConf4]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_2 1.0 1.0]
+[wait fade]
+[wt 0.5]
+
+？1：とまあ
+？2：そんな事があったとさ
+
+？！
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠マシュ
+はい、お疲れ様でした、先輩。
+[k]
+
+[charaFace D 8]
+
+＠マシュ
+それにしても、何というか……
+[k]
+
+＠マシュ
+毎年バレンタインに何かが起きるのは、[r]もう恒例になってしまいましたね。
+[k]
+
+[charaFace D 13]
+
+＠マシュ
+お手伝いできなくて残念でしたが、[r]今回はチョコレートが生命線な世界でしたか。
+[k]
+
+＠マシュ
+でも、先輩ならきっと……[r]チョコレートに困る事は無さそうですね？
+[k]
+
+？1：いや……
+？2：まあ……
+
+？！
+
+[charaFace D 1]
+
+＠マシュ
+どうやら今年も皆さんから、[r]沢山いただいたご様子です。
+[k]
+
+[charaFace D 3]
+
+＠マシュ
+わたしのチョコレートも……[r]受け取ってもらえるでしょうか。
+[k]
+
+[charaFace D 11]
+
+＠マシュ
+それとも。
+[k]
+
+＠マシュ
+チョコレートはもう、懲り懲りですか？
+[k]
+
+？1：それは、ありがたく
+
+？！
+
+？1：頂戴いたします……！
+
+？！
+
+
+[messageOff]
+[charaFace D 1]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

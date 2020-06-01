@@ -1,0 +1,392 @@
+
+
+＄03-00-02-14-2-1
+[soundStopAll]
+
+[charaSet A 8001400 1 マシュ]
+[charaSet B 1098124510 1 ダ・ヴィンチ]
+[charaSet C 98086030 1 ホームズ]
+[charaSet D 2031001 1 ナポレオン]
+[charaSet E 98002000 1 フォウ]
+[charaSet G 5009000 1 エフェクト用ダミー１]
+[charaSet H 5009000 1 エフェクト用ダミー２]
+
+[scene 60901]
+
+[bgm BGM_EVENT_24]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[cueSe Battle bac268]
+[seVolume ad392 0.3 1.0]
+
+[se ad11]
+[seVolume ad11 0 0.5]
+
+[se ad429]
+[seVolume ad429 0 0.5]
+
+[charaPut G 0,-50]
+[charaScale G 1.3]
+[charaEffect G bit_talk_29]
+[fowardEffect bit_talk_fire 0,-20]
+[wt 0.15]
+[flashin once 0.1 0.1 FF000080 EE000040]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 0,-22]
+
+[wt 0.3]
+[cueSeStop bac268 0.4]
+[wt 0.7]
+
+[charaFace A 14]
+
+＠マシュ
+……くっ……う……まだ……まだ！
+[k]
+
+[messageOff]
+[charaMove A 0,-16 0.5]
+[charaShake A 0.05 5 0 0.5]
+[wt 0.3]
+
+[charaFace A 2]
+
+＠マシュ
+っ[line 3][r]ああああああああああああああああ……！
+[k]
+
+[messageOff]
+[flashin once 0.2 0.2 FFFFFF80 FFFFFF80]
+[charaEffectStop G bit_talk_fire]
+[se ad709]
+
+[fowardEffectStop bit_talk_fire]
+
+[se ad267]
+[seStop ad11 1.0]
+[seStop ad429 1.0]
+
+[charaMove A 0,-22 0.1]
+
+[wt 1.0]
+
+[charaFace A 15]
+
+＠マシュ
+はあ、はあっ……！[r]はっ……！　はあっ……はっ……[line 3]
+[k]
+
+[charaFace A 14]
+
+＠マシュ
+巨人王スルトの攻撃、第一波を凌ぎました！[r]ですがこの超高熱と圧力……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 34]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+[#霊基外骨骼:オ ル テ ナ ウ ス]には耐火設計も仕込んである。[r]自然界に存在する超高熱ならそこそこ耐える。
+[k]
+
+＠ダ・ヴィンチ
+でも、熔岩の中に浸かるような真似は想定外だ。[r]本来なら吹き飛んでる。
+[k]
+
+[charaFace B 22]
+
+＠ダ・ヴィンチ
+魔力を帯びた氷雪の中心地じゃなきゃ危なかった！[r]だって、下手をするとソイツは[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+ああ。恒星とまではいかずとも、[r]それに近い超高熱を秘めるような不気味さはある。
+[k]
+
+[charaFace C 5]
+
+＠ホームズ
+宝具に気を付けたまえ！[r]スルトの炎の剣は、星の生み出した神造兵装だ！
+[k]
+
+＠ホームズ
+[#生命に対する優先権]を有している！[r]形ある生物であれば、神代の神でさえ滅ぼすぞ！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+[charaPut H 1200,1200]
+
+[imageSet G cut066_srt 1]
+
+[charaScale G 1.01]
+
+[se ad671]
+[wt 0.4]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 -20,0]
+
+[charaMove D 1 0.2]
+
+[wt 0.4]
+
+[charaFace D 5]
+
+＠ナポレオン
+オーララ！　胸を張れ[&少年少女:お嬢さん方]！[r]世界終末の伝説ってのを相手にオレたちは健在だ！
+[k]
+
+[charaFace D 2]
+
+＠ナポレオン
+巨人王スルト。黒き者！[r]神々を殺す巨人ってのは余程のものかと想ったが[line 3]
+[k]
+
+＠ナポレオン
+ちょいと期待外れってものだろうよ。[r]オレにとっては、そう、冬将軍ほどの絶望じゃあない！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+
+[se ad623]
+[wt 0.2]
+[se ad267]
+[wt 0.2]
+[shake 0.09 4 9 0.7]
+[wt 1.0]
+[seStop ad623 0.2]
+
+[wt 0.5]
+[charaFadein G 0.4 0,-200]
+[wt 0.2]
+
+[se ade69]
+
+＠
+「　クク　」
+[k]
+
+＠
+「　冬か　」
+[k]
+
+＠
+「　俺がくれてやるのは　」
+[k]
+
+＠
+「　灼熱だけだ　」
+[k]
+
+[messageOff]
+[charaFadeout G 0.4]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠フォウ
+フォ、フォフォウ！[r]キャーウ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠マシュ
+第二波、来ます！
+[k]
+
+？1：引き続き全力防御！
+？2：ここを耐えて、反撃に繋げる！
+
+？！
+
+[charaFace A 2]
+
+＠マシュ
+はい……マスター！[r]たとえ、神造兵装が相手であっても……！
+[k]
+
+[messageOff]
+[charaFace A 15]
+[wt 0.7]
+
+
+[cueSe Battle bac170]
+[se ad688]
+[seVolume ad688 0 0.7]
+[wt 0.4]
+[shake 0.05 1 2 0.7]
+[wt 0.8]
+
+[charaFace A 2]
+
+＠マシュ
+バンカーボルトによる姿勢固定完了！[r]全力防御姿勢[line 3]
+[k]
+
+[se ade69]
+
+＠
+[charaTalk B]
+「　邪魔だ　」
+[k]
+
+[messageOff]
+
+[se ad246]
+
+[fadeout white 0.7]
+[wt 0.5]
+[se bac268]
+[seVolume bac268 0 0.1]
+[wt 0.1]
+[seVolume bac268 1.0 1.0]
+
+[bgm BGM_EVENT_24 1.0 0.5]
+[wait fade]
+[se ad267]
+
+
+[scene 10001]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[fadein white 0.1]
+[wait fade]
+[seStop ad246 0.5]
+
+[wt 1.6]
+
+
+＠
+光が、視界を埋め尽くす。
+[k]
+
+＠
+光[line 3]
+[k]
+
+＠
+違う。光だけではない。[r]ゆらめきながらすべてを[#灰燼:かいじん]へと変える、灼熱の炎だ。
+[k]
+
+＠
+真に神造兵装が振るわれれば、為す術などない。[r][#当方]はそのように考える。
+[k]
+
+[messageOff]
+[wt 0.7]
+
+＠マシュ
+せん、ぱい……！
+[k]
+
+＠マシュ
+先輩！
+[k]
+
+[messageOff]
+[wt 0.7]
+
+＠
+だが[#当方]は目にした。[r]神造の剣に対して、人造の盾を以て守らんとする姿を。
+[k]
+
+＠
+限界を超えて立ち上がり、[r]震える脚で、腕で、重い盾を支えんとする姿を。
+[k]
+
+[bgmStop BGM_EVENT_24 1.0]
+
+＠
+ならば[line 3]
+[k]
+
+＠
+[#当方]は今こそ立ち上がらねばなるまい。[r]霊核がひび割れようとも、この五体の大罪を[#濯:そそ]がねば。
+[k]
+
+[messageOff]
+[se ad166]
+[wt 0.2]
+[seStop ad166 0.2]
+[wt 0.7]
+
+＠目覚めた男
+[&少年少女:少女たち]よ。[bgm BGM_EVENT_82 0.1]
+[k]
+
+＠目覚めた男
+当方の肉体が迷惑を掛けたようだ。
+[k]
+
+＠目覚めた男
+償いは、行動によって示す他にないと考える。
+[k]
+
+[messageOff]
+[wt 0.7]
+
+[se ad683]
+[seVolume ad683 0 0.4]
+
+[wt 1.2]
+
+＠男の声
+絶技用意！[r]太陽の魔剣よ、その身で破壊を巻き起こせ！
+[k]
+
+＠男の声
+[f large][line 3]『[#壊劫の天輪:ベ　ル　ヴ　ェ　ル　ク　・　グ　ラ　ム]』！
+[k]
+
+[messageOff]
+[se ad697]
+[seVolume ad697 0 0.7]
+[se ad696]
+[seVolume ad696 0 0.7]
+
+[wt 3.0]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_82 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

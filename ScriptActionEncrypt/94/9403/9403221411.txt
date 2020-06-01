@@ -1,0 +1,165 @@
+
+＄94-03-22-14-1-1
+[soundStopAll]
+
+[charaSet A 1098157500 1 エリザベート]
+[charaSet B 1098162000 1 マシュ]
+[charaSet C 1098160710 0 1]
+[charaSet D 1098123200 1 ゴルドルフ]
+[imageSet H cut097_Item02 1]
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+[scene 69800]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+ちょっとーーー！[r]なんなのよー、ライブの邪魔をしてーーー！
+[k]
+
+＠エリザベート
+[#私:アタシ]、イベントホールが完成したから、[r]盛り上げてほしいって呼ばれてきたんですけどぉ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠マシュ
+し、失礼しました！[r]ですが、このままだと広間が全壊してしまうので……
+[k]
+
+＠マシュ
+ほら。警備員の方も止めに入っていましたし！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠警備員
+………………。
+[k]
+
+？1：とても素敵な歌だったんだけど……
+？2：この広間だとエリちゃんのパワーは火嬢のようで……
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠マシュ
+はい。ですので、できれば続きは野外ステージで[r]やっていただけないでしょうか？
+[k]
+
+＠マシュ
+そちらでしたら[r]わたしたちも観覧させていただきますので……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+野外ステージ！　そんなのもあるのね！？[r]アレかしら、やたらスモークが出てたあそこかしら！
+[k]
+
+[charaFace A 0]
+
+＠エリザベート
+いいじゃない、ちょっと寒いけど[#私:アタシ]のライブで[r]すぐにハートもボディも最高潮にしてあげる！
+[k]
+
+[revivalBranch lblNormal lblRevival]
+[label lblNormal]
+
+＠エリザベート
+じゃあね[&子イヌ:子ジカ]！[r]2019年、明けましておめでとう！
+[k]
+
+[branch lblConf]
+
+[label lblRevival]
+
+＠エリザベート
+じゃあね[&子イヌ:子ジカ]！[r]2020年、明けましておめでとう！
+[k]
+
+[label lblConf]
+
+[messageOff]
+[charaFadeout A 0.4]
+[se ad459]
+[seVolume ad459 0 0.8]
+[wt 0.8]
+[seStop ad459 1.0]
+[wt 0.7]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+う、うむ。[r]雷鳴のような小娘だったな。む？
+[k]
+
+[charaFace D 10]
+
+＠ゴルドルフ
+何か落ちている……[r]これはやつの霊衣の切れ端だな。
+[k]
+
+[charaFace D 0]
+
+＠ゴルドルフ
+ま、まあ、火蜥蜴も[#火鼠:ひねずみ]もそう大差はあるまい。[r]『[#火鼠:ひねずみ]の裘』という事にしておこうじゃないか。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_7 1.5]
+[wait fade]
+[charaFadeout D 0.1]
+[scene 10000]
+[wt 1.0]
+[fadein black 0.1]
+[wait fade]
+
+[cueSe Battle bas2]
+[charaFace H 0]
+[charaFadein H 0.5 0,-200]
+[wt 2.0]
+[charaFadeout H 0.6]
+[wt 1.0]
+
+？1：『[#火鼠:ひねずみ]の裘』？　を手に入れた！
+？2：急いで[#温泉:やがい]ステージに行こう！
+
+？！
+
+
+
+[wt 2.0]
+[soundStopAll]
+[end]

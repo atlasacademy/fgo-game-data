@@ -1,0 +1,253 @@
+
+
+
+＄94-02-49-07-1-1
+
+[soundStopAll]
+
+
+[charaSet A 10007000 1 沖田オルタ]
+[charaSet B 1027002 1 沖田総司]
+[charaSet C 10007001 1 沖田オルタ２]
+[charaSet D 1027001 1 沖田総司２]
+[charaSet E 98002000 1 エフェクト用ダミー]
+[charaSet G 98002000 1 エフェクト用ダミー2]
+[charaSet H 1027002 1 沖田総司（光る）]
+
+[bgm BGM_EVENT_6 0.1]
+
+[scene 59700]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad54]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[charaShake B 0.03 3 3 0.3]
+[wt 0.7]
+
+＠沖田総司
+…………。
+[k]
+
+＠沖田総司
+やれやれ、自分がもう一人いるというのは[r]妙なものですね。
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+……斬ろうと思えば最初の一太刀で斬れたはず。[r]どうしてそうしなかった？
+[k]
+
+？1：もしかして沖田さん……
+？2：オルタを鍛えるために？
+
+？！
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠沖田総司
+何を言っているのか分かりませんね。
+[k]
+
+＠沖田総司
+私は聖杯に召喚され、[r]ここで人を斬り続けた、ただの人斬りです。
+[k]
+
+＠沖田総司
+生前も、そして今も、ただ人を斬り続けた。[r]なぜ生きているのかも忘れて。
+[k]
+
+[messageOff]
+[charaPut E 1]
+[charaEffect E bit_talk_06]
+[wt 1.5]
+
+＠沖田総司
+[line 2]それ故、[r]あなたに借りを[#押し付ける]事になってしまった。
+[k]
+
+[charaFadeout B 0.1]
+[charaPut E 1200,1200]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+…………。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaPut E 1]
+＠沖田総司
+……これを、持っていきなさい。
+[k]
+
+
+[messageOff]
+[charaTalk off]
+[charaDepth H 10]
+[charaDepth D 9]
+[charaDepth C 8]
+[charaDepth A 2]
+[charaDepth B 1]
+[wt 0.1]
+
+
+
+[se su4]
+[seStop su4 1.5]
+[effect bit_talk_22]
+[wt 1.0]
+[charaFilter H silhouette FFFFFF80]
+[charaFadeTime H 1.5 0.9]
+[wt 1.5]
+[charaFadeout B 0.1]
+[wt 0.1]
+[se ad606]
+[charaFadein D 0.7 1]
+[charaFadeTime H 1.3 0]
+[charaFadeout H 1.0]
+[effectStop bit_talk_22]
+[seStop ad606 1.0]
+[wt 1.5]
+[charaFadeout D 0.4]
+[charaPut E 1200,1200]
+[wt 0.4]
+
+[charaFace A 7]
+[charaFadein A 0.4 1]
+[wt 1.0]
+
+[charaEffect G bit_talk_36]
+[se ad39]
+[wt 1.5]
+[fadeout white 1.0]
+[wait fade]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_36]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+[wt 0.1]
+[fadein white 0.4]
+[wait fade]
+
+[wt 0.7]
+
+[charaTalk on]
+
+＠C：沖田オルタ
+これはおまえの宝具……？
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaPut E 1]
+＠D：沖田総司
+あなたはあなたのマスターを守りなさい。
+[k]
+
+＠D：沖田総司
+それは生前の私にはできなかったこと。[r]私がするべきだったかもしれないこと。
+[k]
+
+[charaFadeout D 0.1]
+[charaPut E 1200,1200]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠C：沖田オルタ
+…………。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaPut E 1]
+＠D：沖田総司
+さようなら、未来にこうあるべきはずだった私。
+[k]
+
+[charaFace D 4]
+＠D：沖田総司
+[#阿弥陀:あみだ]様に謝っておいてください。[r]私は私のためだけに生きてしまったと。
+[k]
+
+[charaFace D 0]
+＠D：沖田総司
+[line 3]そしてそこのあなた。
+[k]
+
+＠D：沖田総司
+できるならもう一人の私を、[r]その時まで見届けてあげてください。
+[k]
+
+
+[messageOff]
+[se ad52]
+[charaSpecialEffect D flashErasure 1 2.0]
+[wait charaSpecialEffect D]
+[wt 1.0]
+[charaEffectStop E bit_talk_06]
+[charaFadeout D 0]
+[wt 1.0]
+
+
+？1：沖田さん……
+？2：オルタ……、沖田さんはいったい何を……
+
+？！
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠C：沖田オルタ
+……マスター、[r]私は私のすべきことを思い出した。
+[k]
+
+[charaFace C 6]
+＠C：沖田オルタ
+戻ろう、その時が近づいている。
+[k]
+
+＠C：沖田オルタ
+[line 3]全てが終わる、その時が。
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_6 2.0]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,750 @@
+
+＄94-04-01-10-1-1
+
+[soundStopAll]
+
+
+[charaSet A 98100400 1 マシュ]
+[charaSet B 1040000 1 葛飾北斎]
+[charaSet C 1008300 1 ジークフリート]
+[charaSet D 1098117301 1 ネロ]
+[charaSet E 1098177300 1 カーミラ]
+[charaSet F 6019300 1 風魔小太郎]
+[charaSet G 1098176810 1 刑部姫]
+[charaSet H 10001002 1 謎のアルターエゴＰ]
+[charaSet J 98115000 1 エフェクト用]
+
+[scene 10000]
+
+[cameraMove 0.1 0,0 1.01]
+[bgm BGM_EVENT_80 0.1]
+[wt 0.3]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad171]
+[wt 0.2]
+
+[effect bit_talk_kengekiall02]
+[se ad32]
+[wt 0.4]
+[se ad170]
+[wt 0.3]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 80600]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+[fadein black 0.5]
+[wait fade]
+
+[se ad618]
+[charaEffect H bit_talk_14]
+[charaShake H 0.02 3 3 0.8]
+[charaFace H 4]
+[wt 0.3]
+
+＠謎のアルターエゴＰ
+きゃああぁああーーーー…………！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠葛飾北斎
+おう、勝負あり……！
+[k]
+
+＠葛飾北斎
+とんでもねえ鋼鉄の十本指だったが、[r]おれの四刀流が打ち勝った！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠謎のアルターエゴＰ
+はい……チクチクチク、小物らしい攻撃が[r]うっとうしくて、我慢しきれませんでした……
+[k]
+
+[bgmStop BGM_EVENT_80 0.6]
+
+[charaFace H 2]
+＠謎のアルターエゴＰ
+でも、あふれる情熱は止まりません！[r]それはそれとしてチェストぉー！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaPut J 1]
+[charaEffect J bit_talk_43h]
+
+
+[charaFace H 2]
+[charaMove H 0,-15 0.1]
+[effect bit_talk_v_slash01]
+[wt 0.1]
+[se ad85]
+[wt 0.1]
+[charaFadeout H 0.1]
+[charaPut J 2000,2000]
+[wt 0.6]
+
+[charaTalk off]
+[charaDepth E 1]
+[charaDepth F 2]
+[charaDepth G 3]
+
+[charaFace E 2]
+[charaFace F 13]
+[charaFace G 9]
+[charaFadein E 0.1 -256,0]
+[charaFadein F 0.1 256,0]
+[charaFadein G 0.1 1]
+＠カーミラ＆刑部姫＆風魔小太郎
+！
+[k]
+
+
+[messageOff]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[effect bit_talk_haboob_01 0,-200]
+[effect bit_talk_haboob_02 0,-200]
+[charaEffectStop J bit_talk_43h]
+[fowardEffect bit_talk_impactlanding]
+[wt 0.2]
+[se ad628]
+[shake 0.05 3 3 1.5]
+[wt 4.0]
+[seStop ad628 1.0]
+[effectStop bit_talk_haboob_01]
+[effectStop bit_talk_haboob_02]
+
+
+[charaTalk depthOff]
+
+[charaFace E 5]
+[charaFadein E 0.4 -256,-100]
+
+[charaFace G 7]
+[charaFadein G 0.4 0,-100]
+
+[charaFace F 9]
+[charaFadein F 0.4 256,-100]
+
+[wt 2.0]
+[fowardEffectStop bit_talk_impactlanding]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠謎のアルターエゴＰ
+……あれ？　割れてない？
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[se ad7]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.2 0,-30]
+[charaMove G 1 0.2]
+[wt 0.6]
+
+＠刑部姫
+割れるかっ！[bgm BGM_EVENT_94 0.1][r]すんでのところで躱したっつーの！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠風魔小太郎
+ありがとうございます。[r]皆さんが戦っている隙に拘束具を外せました。
+[k]
+
+？1：良かったあ……！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠カーミラ
+ええ、本当に。……アイアンメイデンされる[r]気持ちなんて、知りたくなかったけど。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+？2：それにしてもパッションありすぎでは？
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠謎のアルターエゴＰ
+はい！　夏、ですので！[r]メルトには負けていられません！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+？！
+
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠葛飾北斎
+物騒な女じゃねえか。本気で小太郎たちを[r][#再起不能:さいきふのう]にする気だったのかい。
+[k]
+
+＠葛飾北斎
+脅迫状は読んだよ。つまりアレか。[r]あんた、水天宮からの刺客ってヤツか。
+[k]
+
+＠葛飾北斎
+おれたちが脅威だってんで、御前試合の前に[r]闇討ちしようとしたんだろう？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠謎のアルターエゴＰ
+………………。[r]（かわいそうなものを見る目）
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠葛飾北斎
+なんでそこで黙り込むんでぃ！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠謎のアルターエゴＰ
+いえ、ちょっと同情してしまって……
+[k]
+
+＠謎のアルターエゴＰ
+皆さんはメルトには勝てないんだから、[r]メルトが刺客をおくる理由はないし……
+[k]
+
+[charaFace H 8]
+
+＠謎のアルターエゴＰ
+そもそもわたしは水天宮を潰したい側なのに……[r]皆さんが考えなしで挑戦しようとするから……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+
+＠葛飾北斎
+う[messageShake 0.02 3 3 0.6]えぇえ！？[r]なんでそこで泣くんだよぉ！？
+[k]
+
+＠葛飾北斎
+交代、交代だますたあ！[r]おれァこの手の女の相手は性に合わねぇ！
+[k]
+
+？1：了解。君の名前は？
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠ネロ
+そやつの名はパッションリップ。[r]ＢＢゆかりのアルターエゴの一騎だ。
+[k]
+
+＠ネロ
+ちと縁があってな。物騒なサーヴァントだが、[r]悪人でないのは保証しよう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？2：こんにちは、パッションリップ
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠H：パッションリップ
+はい。こんにちは、[%1]さん。[r]水着、とても似合いますね！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠刑部姫
+いや、なに和んでいるのかなァ！？[r][#姫:わたし]たち、この[#娘:こ]に殺されかけたんですけどぉ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠H：パッションリップ
+[line 3]。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠刑部姫
+『はあ。そうですけど何か？』[r]みたいな顔してるのは気のせいじゃないよね！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+
+[charaFace G 2]
+[charaFadein G 0.1 2]
+
+＠カーミラ
+落ち着きなさい刑部姫。
+[k]
+
+＠カーミラ
+この手のサイ……いえ、天然娘に[r]逆上しても[#埒:らち]があかないわ。
+[k]
+
+＠カーミラ
+ここは冷静に、理知的に攻めるのよ。
+[k]
+
+[charaFace G 0]
+
+＠刑部姫
+さすがカーミラ[#姐:ねえ]さん。[r]エリちゃんでイヤっていうほど懲りてるだけある。
+[k]
+
+[charaFace E 2]
+
+＠カーミラ
+[f large]その話はいいから。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_94 1.0]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……あの、パッションリップさん。[r]なぜ小太郎さんたちを拉致したのですか？
+[k]
+
+＠マシュ
+水天宮からの刺客ではなく、[r]むしろ敵対している、という口ぶりでしたが……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠H：パッションリップ
+それは……[bgm BGM_EVENT_70 0.1][r]……うーん……どうしようかな……
+[k]
+
+＠H：パッションリップ
+『敵の敵は敵』って言うし……[r]戦力的に、この人たちを信じていいのか……
+[k]
+
+？1：敵の敵は味方、じゃなくて？
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠カーミラ
+普通はそう言うわね。[r]私としてはその娘の言葉に同意するけど。
+[k]
+
+＠カーミラ
+敵はどこまでいっても敵でしょ。[r]『敵の敵』なんて、場を乱す邪魔者でしかないわ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+？2：ビリーブマイジャスティス
+
+[charaFace H 1]
+
+＠H：パッションリップ
+知ってます、わたしたちの[r][%1]さんですから！
+[k]
+
+[charaFace H 0]
+
+＠H：パッションリップ
+……あ。[r]でも、今回は正義は別に関係ないです。
+[k]
+
+＠H：パッションリップ
+メルトの残虐行為には正義とか、[r]まったく歯が立ちませんから。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠ネロ
+ええい、話を進めよ！[r]リップのペースに[#惑:まど]わされるな！
+[k]
+
+[charaFace D 5]
+
+＠ネロ
+アルターエゴ・パッションリップ。[r]ある少女の『愛憎』から生まれたものよ。
+[k]
+
+＠ネロ
+貴様、水天宮のアルターエゴとは[r]ただならぬ関係ではなかったか？
+[k]
+
+＠ネロ
+たしか姉妹だった気もする。[r]コンビだったとも。
+[k]
+
+＠ネロ
+その貴様がなぜ水天宮を潰そうと目論み、[r]我らを排除しようとしたのだ。
+[k]
+
+＠ネロ
+水天宮を潰そうとするもの同士、[r]戦うのは下策ではないか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠H：パッションリップ
+なんでかって、それは話せません。[r]だって……
+[k]
+
+＠H：パッションリップ
+メルトだけ目立って許せない、とか、[r]すごく子供っぽい理由だと思うし。
+[k]
+
+？1：……（なるほど）……
+？2：……（そういうところだよリップ）……
+
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠ネロ
+ふむ、そうか。気持ちはわかる。
+[k]
+
+＠ネロ
+余もキャス狐に水着で先を越された時は[r]すべてのランサーを滅ぼそうと思ったほど故。
+[k]
+
+[charaFace D 5]
+
+＠ネロ
+しかし、それではカーミラたちを[r]襲った理由にはならぬ。話すがよい。
+[k]
+
+＠ネロ
+このままでは[#意思疎通:い し そ つ う][#困難:こんなん]な暴走機関車として、[r]忘れられない夏の思い出になってしまうぞ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠H：パッションリップ
+え……それ困る……皆さんが悪いのに、[r]わたしの評価が下がるとか……
+[k]
+
+[messageOff]
+[wt 1.2]
+
+[charaFace H 0]
+＠H：パッションリップ
+……仕方ありません。お話しします。
+[k]
+
+＠H：パッションリップ
+メルト……いえ、ラムダリリスは弱者を[r]経験値に変換して育つアルターエゴなんです。
+[k]
+
+＠H：パッションリップ
+だから、弱い人たちが水天宮に攻め込むと[r]その分だけメルトが強くなっちゃうので……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ジークフリート
+なるほど。半端な実力者では敵に塩を送ってしまう。[r]真の強者のみが水天宮に挑むべきだと。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠H：パッションリップ
+はい。今のメルトは調子にのって[r]ランサークラスになっているようだから……
+[k]
+
+＠H：パッションリップ
+セイバークラスの人たちだけで[r]こてんぱんにしてほしいです。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+＠風魔小太郎
+あの、姉妹なのでは？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠カーミラ
+なに言ってるの。[r]姉妹なんてこんなものよ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.0]
+[se ad119]
+[seVolume ad119 0 0.7]
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+[charaShake F 0.03 4 4 0.6]
+
+＠風魔小太郎
+（家族は仲むつまじいものでは！？）
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[seStop ad119 0.5]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠葛飾北斎
+ま、まあ、話はわかったよ。[r]いちおう理由はあったワケか。
+[k]
+
+[bgm BGM_EVENT_82 0.1]
+[charaFace B 10]
+＠葛飾北斎
+セイバークラスで攻めればいいんだろう？[r]心配には及ばねえ。
+[k]
+
+＠葛飾北斎
+もとよりおれはセイバークラス、[r]あの水着剣豪と相性は最高だからナァ。
+[k]
+
+[charaFace B 17]
+＠葛飾北斎
+（ただ……[r]　あのヤロウ、妙なコト[#口:くち]にしやがって……）
+[k]
+
+[charaFace B 11]
+
+＠葛飾北斎
+まあいいさ。水天宮攻略はおれたちに任せておきな。[r]あんたが出る幕はねえぜ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠H：パッションリップ
+え。出る幕、ありますよ？
+[k]
+
+[charaFace H 5]
+
+＠H：パッションリップ
+だってこれ、わたしも仲間になる流れだもん。[r]そうですよね[%1]さん？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠カーミラ
+ですって。[r]どうするの、マスター？
+[k]
+
+？1：放っておいても危険だし……
+？2：リップは間違いなく切り札
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠H：パッションリップ
+はい！　パッションリップ、がんばります！
+[k]
+
+＠H：パッションリップ
+どんなものでも時間さえあればキューブに[r]できるので、いざとなればカジノごとグシャ、です！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠刑部姫
+うん。これモンスターだわ。仲間にしても[r]危険なのは変わらないよ、マーちゃん。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_82 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

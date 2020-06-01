@@ -1,0 +1,328 @@
+
+
+＄94-03-85-07-1-1
+
+[soundStopAll]
+
+[charaSet A 98001000 1 家老マシュ]
+[charaSet B 7035001 1 森長可]
+[charaSet C 6002000 1 百地ハサン太夫]
+[charaSet D 1098118800 1 人質]
+[charaSet E 1098173100 1 僧兵らしき男]
+[charaSet H 98115000 1 エフェクト用]
+
+[imageSet I back10001 1]
+[charaScale I 1.01]
+
+[charaDepth E 1]
+[charaDepth D 3]
+[charaDepth I 2]
+
+[scene 20110]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk depthOff]
+
+[charaFace E 2]
+[charaFace D 2]
+[charaFadein E 0.1 1]
+[wt 0.4]
+
+[charaMoveReturn E 10,0 0.3]
+[se ad7]
+[seVolume ad7 0 0.5]
+
+[charaFadein D 0.3 150,-30]
+[charaMove D 120,-30 0.3]
+[wt 0.1]
+
+[charaShake D 0.04 2 2 0.25]
+[wt 0.2]
+[se ad51]
+[seVolume ad51 0 0.6]
+[wt 0.8]
+
+[charaTalk E]
+
+
+＠僧兵らしき男
+くっ！　これ以上手向かいするとこいつらの命はないぞ！
+[k]
+
+＠人質
+お、お助けを……。
+[k]
+
+？1：戦国is卑劣……
+
+？2：これじゃあ手が出せない……
+
+？！
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠森長可
+ああん？　人質だぁ？
+[k]
+
+[charaFace B 11]
+
+＠森長可
+バーカ、知るかよそんなもん！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se bac5]
+[charaScale H 1.5]
+[charaPut H 1]
+[charaEffect H bit_talk_Slash_red_01_L]
+[wt 0.6]
+
+[se ad7]
+
+[charaTalk off]
+
+[charaFace E 3]
+[charaFace D 2]
+[charaFadein E 0.1 1]
+[charaFadein D 0.1 120,-30]
+[wt 0.3]
+[charaShake E 0.05 2 2 0.2]
+[charaShake D 0.05 2 2 0.2]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk E]
+
+＠僧兵らしき男
+なっ！？　こいつ人質の命が惜しくないのか！？
+[k]
+
+[charaFace E 2]
+
+＠僧兵らしき男
+なんて奴だ！　ええい、構わん、人質を殺せ！
+[k]
+
+[messageOff]
+[charaTalk D]
+[charaFace D 2]
+[bgm BGM_EVENT_3 0.1 0.5]
+[wt 0.7]
+
+[charaFace D 0]
+
+＠人質
+フッ。森殿はとても判断が早い。そちらが卑劣な手を[r]使うのなら、こちらは無法になるは道理。
+[k]
+
+[messageOff]
+
+[se ade153]
+[seStop ad72 1.0]
+[fowardEffect bit_talk_40 0,-130]
+[wt 0.2]
+
+[charaFadein I 0.7 0,-200]
+[wt 0.5]
+
+[fadeout white 0.3]
+[wait fade]
+
+[charaTalk depthOn]
+
+[se ade310]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.4]
+
+[charaPut C 1]
+[charaTalk C]
+[charaFace C 0]
+
+[fadein white 0.3]
+[wait fade]
+
+[charaSpecialEffect C appearance 1 0.5]
+[wait charaSpecialEffect C]
+
+[charaFadeout I 1.0]
+[fowardEffectStop bit_talk_40]
+[wt 0.5]
+
+[bgm BGM_EVENT_3 0.5 1.0]
+[wt 1.0]
+
+[charaFace C 5]
+
+＠百地ハサン太夫
+そして我が忍術は卑劣無法を超えた無影。[r]人質はすでに解放させていただいた。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠僧兵らしき男
+そ、そんな……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠家老マシュ
+さすがもちもちハサン殿！[r]その者達をひっ捕らえてください！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠百地ハサン太夫
+も[messageShake 0.03 4 4 0.1]ちもち！？
+[k]
+
+[messageOff]
+[wt 0.3]
+
+[wipeout rollRight 1.0 0.5]
+[bgmStop BGM_EVENT_3 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[wt 1.0]
+
+[wipein rollLeft 1.0 0.5]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠森長可
+うははははは！　うまくいったな殿様！[r][#忍:しのび]のおっさんもやるじゃねぇか！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠百地ハサン太夫
+いやいや、皆様の演技あってこそ。[r]まさに迫真の義憤でござった。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠家老マシュ
+いかがでしょう、[#先輩:との]、ハサン[#太夫:だゆう]殿にも[r]我がカルデア家に加わっていただいては？
+[k]
+
+？1：それは願ってもないです
+
+？2：いかがでしょうか？
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠百地ハサン太夫
+これも何かの縁ですな。それでは我が忍びの技、[r]存分にお使いくださいませ。
+[k]
+
+
+
+
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_2 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 82500]
+[wt 2.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_MEIJI 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠百地ハサン太夫
+流れの忍、[#百地:ももち]ハサン[#太夫:だゆう]と申します。
+[k]
+
+＠百地ハサン太夫
+頭目稼業にはいくらか経験がございますので、[r]忍び衆のまとめはお任せあれ。
+[k]
+
+
+[charaFace C 1]
+
+＠百地ハサン太夫
+たしか、ちびノブ忍軍でしたかな？　ははは鍛え甲斐ある。
+[k]
+
+[messageOff]
+[charaFadeout C 0.4]
+[wt 0.7]
+
+[#百地:ももち]ハサン[#太夫:だゆう]が配下に加わった。[r]（NPCとして選択できるようになりました）
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 2.0]
+[bgmStop BGM_MEIJI 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

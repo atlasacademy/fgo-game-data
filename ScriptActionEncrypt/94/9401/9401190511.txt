@@ -1,0 +1,179 @@
+
+＄94-01-19-05-1-1
+[soundStopAll]
+[charaSet A 10002000 1 メルトリリス]
+[charaSet B 1007000 1 ガウェイン]
+[charaSet C 2008001 1 トリスタン]
+[charaSet D 3003002 1 ヴラド三世]
+[charaSet E 98112500 1 マーブル]
+
+[bgm BGM_EVENT_3 0.1]
+[scene 41300]
+[fadein black 1.5]
+[wait fade]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.4 0,-20]
+[charaEffect D bit_talk_14]
+[charaShake D 0.01 5 5 0.4]
+[se ad161]
+[wt 0.7]
+[fowardEffect bit_talk_35]
+＠ヴラド三世
+ぬ[se ad322][seVolume ad322 0 0.4][charaMoveScale D 0.95 0.4]ぅん……！[charaShake D 0.01 0 3 0.4]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[bgmStop BGM_EVENT_3 0.7]
+
+＠ガウェイン
+ここまで……！[r]討ち取ったぞ、ヴラド三世！
+[k]
+
+[charaFadeout B 0.1]
+[charaScale D 1.0]
+[wt 0.1]
+[charaPut E 0,0]
+[charaEffect E bit_talk_06]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+[bgm BGM_EVENT_1 0.1]
+
+＠ヴラド三世
+ぐ……うむ、まさに[#断骨:だんこつ]の一撃！[r]我が槍に[#劣:おと]らぬ、見事な剣の跳ね上がりよ！
+[k]
+
+＠ヴラド三世
+ふはは、今の一太刀を受けて死なぬのならば、[r]それこそ不死の吸血鬼！　そのような末路は[#晒:さら]せまい！
+[k]
+
+？1：ヴラド三世、さっきの言葉は……！？
+？2：消える前に、教えてほしい……！
+
+？！
+
+[charaFace D 4]
+＠ヴラド三世
+ふ……オレも激情が過ぎたか。[r]言わずともよい事を口走るとは。
+[k]
+
+＠ヴラド三世
+知りたければ礼拝堂に急ぐがいい。[r]そこに貴様のサーヴァント[line 3]
+[k]
+
+＠ヴラド三世
+[#カルデアより現れたアーチャーが待っている]。
+[k]
+
+[messageOff]
+[charaPut E -10000,0]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠ガウェイン
+アーチャーはこちらに出現していたのですか。[r]合流できるのは良い事ですが……
+[k]
+
+＠ガウェイン
+（しかし、そうであれば何故出てこない……？[r]　ここにマスターがいる事は分かるはず）
+[k]
+
+＠ガウェイン
+（[%1]のサーヴァントで[r]　あれば、助けに来るのが正常な判断では……？）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut E 0,0]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠ヴラド三世
+その疑惑はもっともだ、太陽の騎士よ。[r]あの男は油断がならん……
+[k]
+
+＠ヴラド三世
+味方であっても気は許さぬ事だ。[r]このSE.RA.PHでは、誰であれ[line 3]
+[k]
+
+＠ヴラド三世
+ただ一度でも心の[#瑕:きず]を見せれば取り込まれる。[r]それを、ゆめゆめ忘れぬ事だ[line 3]
+[k]
+
+[bgmStop BGM_EVENT_1 2.0]
+[charaEffectStop E bit_talk_06]
+[messageOff]
+[charaSpecialEffect D flashErasure 0 1.7]
+[se ad52]
+[wait charaSpecialEffect D]
+[wt 1.0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[bgm BGM_EVENT_5 0.1]
+＠メルトリリス
+礼拝堂に急ぎましょう。[r]カルデアから来たアーチャー……
+[k]
+
+[charaFace A 10]
+＠メルトリリス
+赤いマントの双剣使いで褐色の肌の弓兵？[r]だったかしら？　みっともない。ナンセンスにも程がある。
+[k]
+
+＠メルトリリス
+でもいいわ。笑って痛めつけた後、[r]どうしてもというのなら味方にしましょう。
+[k]
+
+＠メルトリリス
+どうせ戦力にならないでしょうけど、[r]いないよりマシですもの。[line 3]さあ、走って！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠マーブル
+わ、私はあの礼拝堂、ちょっと……[r]よくない思い出があるんだけど……
+[k]
+
+＠マーブル
+でも、他に休めるところとかありませんよね……[r]たしか２階に個室がいくつかあったから、まあ……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ガウェイン
+ヴラド公の忠告は気になりますが、[r][%1]の体も限界が近いかと。
+[k]
+
+＠ガウェイン
+まずは中に入りましょう。[r]なに、こちらには頼れるサーヴァントが３騎もいるのです。
+[k]
+
+＠ガウェイン
+何が待ち受けていようと[r]後れを取るものではありません。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

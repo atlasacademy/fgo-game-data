@@ -1,0 +1,216 @@
+
+＄94-04-19-14-4-1
+
+[soundStopAll]
+
+[charaSet A 11009001 1 Ｓイシュタル]
+[charaSet B 11009000 1 アシュタレト]
+[charaSet I 5009000 1 エフェクト用１]
+[charaSet J 5009000 1 エフェクト用２]
+
+[scene 82701]
+
+[bgm BGM_EVENT_24 0.1]
+
+[cameraMove 0 0,0 1.01]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0 1]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.1]
+
+[wipeout rectangleStripLeftToRight 0.2 1.0]
+[se ad73]
+[wait wipe]
+[charaFadeout B 0]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0 1]
+[wt 0.2]
+[wipein rectangleStripRightToLeft 0.2 1.0]
+[wait wipe]
+
+[charaShake A 0.05 6 2 0]
+[charaMove A -25,0 0.6]
+[charaPut I 1]
+[charaEffect I bit_talk_kengekiall02]
+[charaPut J -70,50]
+[charaScale J 1.2]
+[charaEffect J bit_talk_14]
+[se ad32]
+[wt 0.3]
+[charaScale J 1.1]
+[charaPut J 60,10]
+[charaEffect J bit_talk_14]
+[se ad32]
+[wt 0.2]
+[charaScale J 1.4]
+[charaPut J -50,-20]
+[charaEffect J bit_talk_14]
+[se ad32]
+[wt 0.1]
+[charaScale J 1.0]
+[charaShakeStop A]
+
+[wt 0.7]
+
+
+＠Ｓイシュタル
+だいたい悪事がセコすぎるのよ、悪事が！[r]悪ならもっとカッコよくやりなさいよ！
+[k]
+
+＠Ｓイシュタル
+モッヒー集団、アルトリウムの密売、[r]学生の進路操作に流行らないキッチンとか！
+[k]
+
+＠Ｓイシュタル
+セイバーバッヂとか回りくどい！[r]小物な悪党ほど、頭にくるものはないわ！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.2 1.0]
+[se ad73]
+[wait wipe]
+[charaFadeout A 0]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0 1]
+[wt 0.2]
+[wipein rectangleStripLeftToRight 0.2 1.0]
+[wait wipe]
+
+[effect bit_talk_Slash_white_01_L 40,0]
+[charaPut I 40,0]
+[charaEffect I bit_talk_14]
+[se ad32]
+[charaShake B 0.05 3 3 0.2]
+[charaMove B 15,0 0.2]
+[wt 0.15]
+[fowardEffect bit_talk_Slash_white_01 -60,0]
+[charaPut J -60,0]
+[charaEffect J bit_talk_14]
+[se ad32]
+[charaShake B 0.05 3 3 0.2]
+[charaMove B 25,0 0.2]
+[wt 0.2]
+[fowardEffect bit_talk_ichimon01wh]
+[wt 0.1]
+[effect bit_talk_14 0,120]
+[se ad32]
+[charaShake B 0.05 3 3 0.2]
+[charaMove B 1 0.2]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[se ad32]
+
+[wt 0.7]
+
+[fowardEffectDestroy bit_talk_ichimon01wh]
+
+[charaFace B 21]
+
+＠アシュタレト
+賞金稼ぎよりはマシです！[r]アナタの経歴を調べた時の[#目眩:めまい]がわかって！？
+[k]
+
+＠アシュタレト
+お金を得ても貯金せず食べて遊んで借金して！[r]もっと真面目に生きなさい！
+[k]
+
+＠アシュタレト
+だらしのない正義なんて、小悪党より始末が悪い！
+[k]
+
+[messageOff]
+[fadeout black 0.2]
+[se ad73]
+[wait fade]
+[charaFadeout B 0.1]
+[wt 0.1]
+[fadein black 0.2]
+[wait fade]
+
+[effect bit_talk_kengekiall02 0,0 F]
+[wt 0.2]
+[se ad32]
+[wt 0.2]
+[se ad32]
+[wt 0.2]
+[se ad32]
+[wt 0.05]
+[fowardEffect bit_talk_kengekiall02 0,0 V]
+[wt 0.1]
+[se ad32]
+[wt 0.2]
+[se ad32]
+[wt 0.2]
+[se ad32]
+[wt 0.7]
+
+？1：すごい
+？2：ただの口げんかになってきた！
+
+？！
+
+[bgm BGM_EVENT_24 0.3 0.5]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠アシュタレト
+（っ……クイーンズの時より反応が早い……！[r]　いえ、反応が早くなっているのは私も同じ……！）
+[k]
+
+＠アシュタレト
+（まるで互いに高め合い、補強するよう[line 3][r]　でもいいの？　何かイヤな予感がして[line 3]）
+[k]
+
+[bgmStop BGM_EVENT_24 0.1]
+[wt 0.1]
+
+[se ad38]
+[se ad608]
+[shake 0.05 3 7 1.2]
+[wt 1.0]
+[seStop ad38 0.3]
+[seStop ad608 0.3]
+[wt 0.1]
+
+[se ade371]
+[flashin loop 0.9 0.9 FF000080 FF000000]
+
+＠アナウンス
+[charaTalk A]
+警告。警告。メインエンジンの停止を確認。[r]『[#竜の宝玉:ドラゴン・ハート]』が破壊されました。
+[k]
+
+＠アナウンス
+[charaTalk A]
+本艦の航行は不可能。融合炉の連鎖爆発を確認。[r]機能維持限界まで　あと32分　です。
+[k]
+
+＠アナウンス
+[charaTalk A]
+乗組員は第３エアポートから避難してください。[r]繰り返します。メインエンジンの[line 3]
+[k]
+
+[charaFace B 4]
+
+＠アシュタレト
+なんで、すって[line 3]！？
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[seStop ade371 2.0]
+[wait fade]
+[flashOff]
+[wt 0.5]
+[soundStopAll]
+[end]
+

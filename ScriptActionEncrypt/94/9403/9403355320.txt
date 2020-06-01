@@ -1,0 +1,561 @@
+
+＄94-03-35-53-2-0
+
+[soundStopAll]
+
+[charaSet A 1041000 1 アストルフォ]
+[charaSet B 6005001 1 ジャック]
+[charaSet C 5004001 1 ナーサリー・ライム]
+[charaSet D 3026000 1 ジャンヌ・オルタ・サンタ・リリィ]
+[charaSet E 25001000 1 アビゲイル]
+[charaSet F 7013001 1 清姫]
+[charaSet G 7009001 1 アステリオス]
+[charaSet H 2033000 1 アシュヴァッターマン]
+[equipSet I 9807570 1 バレンタイン礼装]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66600]
+[branch lblConf]
+[label lblNotClear]
+[scene 10310]
+[label lblConf]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V010]
+ふんふんふーん♪[wait tVoice]
+[k]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V020]
+あれ、どしたのマスター？[r]ニコニコ笑顔。[wait tVoice]
+[k]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V030]
+何か楽しいことでもあった？[wait tVoice]
+[k]
+
+[charaFace A 26]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V040]
+キミの幸せはボクの幸せ。[r]だからなぜ笑顔なのか教えて欲しいなー♪[wait tVoice]
+[k]
+
+？1：はい、チョコレート♪
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[charaFace A 17]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V050]
+おおおーーー！[wait tVoice]
+[k]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V060]
+そっかそっか、バレンタインの[r]チョコレートかあ！[wait tVoice]
+[k]
+
+[branchNotHaveSvtEquip lblNotHave 9807580]
+
+
+[charaFace A 13]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V070]
+ボクの餅チョコ、美味しかったでしょう。[r]フフーン。今回はそのお礼ってことかな。[wait tVoice]
+[k]
+
+[charaFace A 8]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V080]
+あれ？　でも今チョコ貰ったから[r]お返しのお返しのお返しで……？[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V090]
+ま、いっか！[wait tVoice]
+[k]
+
+
+[branch lblConf_have]
+
+[label lblNotHave]
+
+[charaFace A 1]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V100]
+もちろん、ボクからのチョコレートもあるよ。[r]期待しててね！[wait tVoice]
+[k]
+
+[label lblConf_have]
+
+
+
+
+[charaFace A 0]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V110]
+そういえば、チョコを貰った人には[r]ちゃんとお返しあげてるの？[wait tVoice]
+[k]
+
+？1：ホワイトデーに色々あげてる
+？！
+
+[charaFace A 1]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V120]
+あ、そっか。[r]即お返しじゃないんだ。[wait tVoice]
+[k]
+
+[charaFace A 21]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V130]
+そりゃそうだよね、お返し考えないと[r]いけないし。[wait tVoice]
+[k]
+
+[charaFace A 9]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V140]
+でもそうなると……。[r]やっぱり期待されてる？[twt 2.0][charaFace A 1][wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.2]
+[cameraMove 0.2 0,8 1.0]
+[wait camera]
+[cameraHome 0.3]
+[wait camera]
+[wt 0.7]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V150]
+あはははは！　大変だね、マスター。[wait tVoice]
+[k]
+
+[charaFace A 26]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V160]
+美味しいチョコのお返しだし、[r]頑張ろうね！[wait tVoice]
+[k]
+
+[charaFace A 9]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V170]
+ボクもたまにチョコ貰ったりしてるから、[r]ちゃんとお返ししなきゃなんだよ。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V180]
+そしてもちろん、マスターにも[r]お返しだ！[wait tVoice]
+[k]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V190]
+てーい！[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[charaFace I 0]
+[charaFadein I 0.5 0,-70]
+[wt 2.0]
+[charaFadeout I 0.4]
+[wt 0.5]
+
+？1：あ、可愛い
+？！
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V200]
+でしょー？[wait tVoice]
+[k]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V210]
+ボクのうさ耳をコピーしたもの。[wait tVoice]
+[k]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V220]
+ジークフリートのドラゴンセット[r]みたいなものかな。[wait tVoice]
+[k]
+
+[charaFace A 26]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V230]
+ウサギは魔除けにも使われる由緒正しい生物だし、[r]このうさ耳バンドをつければ！[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_2 3.5]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V240]
+可愛いし魔除けになるし、[r]最高じゃない？[wait tVoice]
+[k]
+
+？1：待って、つけろと仰る？
+？！
+
+[charaFace A 1]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V250]
+うん。[bgm BGM_EVENT_7 0.1][r]今すぐに。[wait tVoice]
+[k]
+
+[charaFace A 2]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V260]
+はい、[#問答無用:もんどうむよう]！[r]てーい！[wait tVoice]
+[k]
+
+[messageOff]
+[charaMoveScale A 1.1 0.3]
+[charaMove A 0,15 0.3]
+[se ad77]
+[wt 0.2]
+[shake 0.05 2 2 0.5]
+[wt 0.8]
+[se ade126]
+[wt 1.0]
+
+[charaMoveScale A 1.0 0.3]
+[charaMove A 0,0 0.3]
+[wt 0.5]
+
+[charaFace A 3]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V270]
+うんうん、可愛い可愛い。[r]ボクの見立ては間違っていなかった。[wait tVoice]
+[k]
+
+？1：ちょっと恥ずかしいんだけど……
+？！
+
+[charaFace A 9]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V280]
+恥ずかしい？[r]可愛いのに？[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V290]
+さ、そんなことよりひとまず行進だ！[r]みんなにキミの可愛さを見せつけよう！[wait tVoice]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 0.2]
+[wt 1.0]
+
+？1：……今、何と？
+？！
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V300]
+え？　可愛さを見せつけるために[bgm BGM_EVENT_7 0.1][r]行進しようと。[wait tVoice]
+[k]
+
+
+？1：ヤダー！！
+
+[branch select01_01]
+
+？2：ま、まあアストルフォがそう言うなら……
+
+[branch select01_02]
+
+？！
+
+
+[label select01_01]
+
+[charaFace A 7]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V310]
+え？[r]嫌なの？[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V320]
+それなら仕方ないか……。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V330]
+じゃ、ここで二人きりで。キミの可愛さを[#愛:め]でつつ、[r]チョコでも食べることにしよう！[wait tVoice]
+[k]
+
+
+[branch select01_end]
+
+[label select01_02]
+
+[charaFace A 2]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V340]
+[f large]そうだ！！[wait tVoice]
+[k]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V350]
+[f large]キミは可愛い！！[wait tVoice]
+[k]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V360]
+さあ、書を捨てよ街に出よう。[r]キミの可愛さを大アピールだ！[wait tVoice]
+[k]
+
+[charaFace A 26]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V370]
+きっとバフ１００％、ターゲット強制変更、[r]無敵、回避、ダメージカットくらいは付いちゃうとも！[wait tVoice]
+[k]
+
+？1：ターゲット強制変更はマズいのでは？
+？！
+
+[charaFace A 1]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V380]
+気にしない気にしない。[r]さあ、出発だー！[wait tVoice]
+[k]
+
+
+[messageOff]
+[se ade421]
+[wipeout leftToRight 1.0 1.0]
+[bgm BGM_EVENT_7 1.0 0.5]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.5]
+[wipein rightToLeft 1.0 1.0]
+[seStop ade421 1.0]
+[bgm BGM_EVENT_7 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk off]
+[charaDepth B 3]
+[charaDepth C 2]
+[charaDepth D 1]
+[charaFace B 1]
+[charaFace C 1]
+[charaFace D 6]
+[charaFadein B 0.4 -276,0]
+[charaFadein C 0.4 0,0]
+[charaFadein D 0.4 276,0]
+[wt 1.5]
+[charaFadeout B 0.4]
+[charaFadeout C 0.4]
+[charaFadeout D 0.4]
+[wt 0.4]
+
+[charaFace E 1]
+[charaFace F 3]
+[charaFadein E 0.4 0]
+[charaFadein F 0.4 2]
+[wt 1.5]
+
+[se ade421]
+[wipeout leftToRight 1.0 1.0]
+[bgm BGM_EVENT_7 1.0 0.5]
+[wait wipe]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaSet B 6038002 1 シャルロット・コルデー]
+[charaSet C 2005001 1 アタランテ]
+[charaSet D 4029001 1 アキレウス]
+[branchQuestNotClear lblNotClear2 3000303]
+[scene 66700]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 60300]
+[label lblConf2]
+[wt 0.5]
+[wipein rightToLeft 1.0 1.0]
+[bgm BGM_EVENT_7 1.0 1.0]
+[seStop ade421 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaFace G 1]
+[charaFadein G 0.4 1]
+[wt 1.5]
+[charaFadeout G 0.4]
+[wt 0.4]
+
+[charaDepth H 1]
+[charaDepth B 2]
+[charaFace H 1]
+[charaFace B 7]
+[charaFadein H 0.4 0]
+[charaFadein B 0.4 2]
+[wt 1.5]
+[charaFadeout H 0.4]
+[charaFadeout B 0.4]
+[wt 0.4]
+
+[charaDepth D 2]
+[charaDepth C 1]
+[charaFace D 1]
+[charaFace C 1]
+[charaFadein D 0.4 0]
+[charaFadein C 0.4 2]
+[wt 1.5]
+
+[se ade421]
+[wipeout leftToRight 1.0 1.0]
+[bgm BGM_EVENT_7 1.0 0.5]
+[wait wipe]
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[branchQuestNotClear lblNotClear3 3000303]
+[scene 66800]
+[branch lblConf3]
+[label lblNotClear3]
+[scene 10400]
+[label lblConf3]
+[wt 0.5]
+[wipein rightToLeft 1.0 1.0]
+[bgm BGM_EVENT_7 1.0 1.0]
+[seStop ade421 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V390]
+どうだった？[wait tVoice]
+[k]
+
+？1：恥ずかしかったけど……
+
+[charaFace A 1]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V400]
+でも、みんな楽しそうだったじゃない？[wait tVoice]
+[k]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V410]
+とてちて行進してくれるサーヴァントも[r]結構いたし。[wait tVoice]
+[k]
+
+？2：ま、まあ……みんなが喜んでくれたので
+
+[charaFace A 1]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V420]
+でしょう？[wait tVoice]
+[k]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V430]
+みんなで行進できて、[r]ボクはとても大満足だ！[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 26]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V440]
+さて、と。[r]じゃあまた、次の満月に！[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠アストルフォ
+[tVoice ValVoice_104100 0_V450]
+今度は服装もウサギっぽくしてみよう！[wait tVoice]
+[k]
+
+[messageOff]
+[se ad59]
+[charaMove A 100,0 0.3]
+[charaFadeout A 0.3]
+[wt 0.3]
+[seStop ad59 1.0]
+[wt 0.2]
+[se ad8]
+[wt 2.0]
+
+？1：……来月もか……！
+？！
+
+[label select01_end]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

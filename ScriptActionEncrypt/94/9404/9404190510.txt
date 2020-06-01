@@ -1,0 +1,274 @@
+
+
+
+＄94-04-19-05-1-0
+
+[soundStopAll]
+
+
+[charaSet A 11009001 1 Ｓイシュタル]
+[charaSet B 2037000 1 ジェーン]
+[charaSet C 6018002 1 Ｘ]
+[charaSet J 5009000 1 エフェクト用]
+
+[scene 83400]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Ｓイシュタル
+さて。テキサス・ビヨンドから離脱できたし、[r]これからの方針をちょっとまとめよっか。
+[k]
+
+＠Ｓイシュタル
+[%1]を[r]もとの宇宙に戻すには、
+[k]
+
+＠Ｓイシュタル
+スペース神陰流の総統である『アシュタレト』って[r]サーヴァントを捕まえる必要がある。
+[k]
+
+＠Ｓイシュタル
+スペース神陰流の本拠地はどこかの禁忌宙域に[r]向かったそうだけど、
+[k]
+
+＠Ｓイシュタル
+大まかな方角は『ミュート逆探知機』で[r]捕捉できている。
+[k]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_security]
+
+[messageOff]
+[fadeout black 0.2]
+[se ad1]
+[wait fade]
+[charaFadeout A 0]
+[scene 89000]
+[charaPut J 1]
+[wt 0.2]
+[fadein black 0.2]
+[wait fade]
+
+＠Ｓイシュタル
+[#星間地図:マ　ッ　プ]でいうと、[r]だいたいこのあたり。
+[k]
+
+？1：ここまでの距離は？
+
+[wt 0.5]
+[messageOff]
+[fadeout black 0.2]
+[wait fade]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_security]
+[scene 83400]
+[fadein black 0.2]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ジェーン
+んー、ざっと2000光年先だね！
+[k]
+
+＠ジェーン
+大丈夫、近い近い！[r]限界突破ワープを５回でなんとかいける距離！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？2：なんか赤いね……
+
+[wt 0.5]
+[messageOff]
+[fadeout black 0.2]
+[wait fade]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_security]
+[scene 83400]
+[fadein black 0.2]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠Ｘ
+そうですね……[#蒼輝:エーテル]に満ちた[r]ユニヴァースとは思えない赤さです。
+[k]
+
+[charaFace C 5]
+
+＠Ｘ
+昔から青は秩序、赤は悪魔という定説が[r]ありますので、ろくな禁忌宙域ではないでしょう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠Ｓイシュタル
+……確かに、気軽にいける距離じゃないか……。[r]途中で装備を補充する必要があるわね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ジェーン
+アルトリウムの補給もね☆[r]賞金首をハントしながら路銀を稼ぎましょう！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Ｓイシュタル
+ええ。獲物の方から[%1]を[r]狙ってやってくるから、そこは楽できそう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Ｘ
+ふむ。さしあたって、いま我々の真後ろから[r]追走してきている所属不明艇のコトですね？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+
+＠Ｓイシュタル
+え？
+[k]
+
+[messageOff]
+[cueSe Battle bac70]
+[shake 0.04 7 5 0.6]
+[wt 0.5]
+[cueSeStop bac70 0.3]
+[wt 0.5]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠ジェーン
+ごめーん、レーダーに反応あり！
+[k]
+
+＠ジェーン
+テキサス・ビヨンド方面から[#張力跳躍:バウンドジャンプ]で[r]こっちに突進してくる戦闘艇がひとつ～～！
+[k]
+
+＠ジェーン
+これきっとモッヒー残党～！[r]マアンナ号の後部にサーヴァント反応も～！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Ｓイシュタル
+ちっ、しつこい……！
+[k]
+
+＠Ｓイシュタル
+私たちは外で迎撃するけど、[r]付いてこれるマスター！？
+[k]
+
+＠Ｓイシュタル
+アナタにとって、初めての宇宙空間での[r]ミッションになるけど！
+[k]
+
+？1：だ、だいじょうぶぶぶぶ
+？2：まま、まかせててててて
+
+？！
+
+[charaFace A 8]
+
+＠Ｓイシュタル
+[line 6]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0]
+[charaFace A 8]
+[charaFadein A 0.1 2]
+
+＠ジェーン
+イシュタリん。顔、顔。[r]おびえてる姿を見てゾクゾクするの、よくないよ～？
+[k]
+
+[charaFace A 3]
+
+＠Ｓイシュタル
+っ！？[r]そ、そんな[#趣味:ワケ]ないんですけど！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠Ｓイシュタル
+い、いいから、[r]ちゃんとワイヤー付けて出てきてね！
+[k]
+
+＠Ｓイシュタル
+私たちが危なくなったらあのすっごいヤツ……[r]令呪でサポートするよーに！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,554 @@
+
+＄03-00-04-03-4-1
+
+[soundStopAll]
+
+[charaSet A 8001400 1 アーマード・マシュ_ゴーグルあり]
+[charaSet B 8001410 1 マシュ]
+[charaSet C 98115300 1 ホームズ]
+[charaSet D 1019001 1 ラーマ]
+[charaSet E 1098166900 1 アジャイ]
+[charaSet F 3004001 1 カルナ]
+[charaSet G 1098166700 1 アーシャ]
+[charaSet H 1098166800 1 ヴィハーン]
+[charaSet I 98002000 1 フォウ]
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[scene 75004]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠A：マシュ
+はぁ、はぁっ……。
+[k]
+
+＠A：マシュ
+周辺の敵性反応[line 3]消失。
+[k]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[charaFace A 13]
+
+＠A：マシュ
+やり、ました。カリと呼ばれていた魔物らしき存在も、[r]遅れて現れた白い獣たちも……なんとか排除できたようです。
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth A 0]
+[charaDepth B 1]
+
+[charaTalk off]
+
+[wt 1.0]
+[se ade18]
+[seVolume ade18 0.0 0.5]
+[wt 0.5]
+[seStop ade18 0.8]
+[wt 1.0]
+
+[se ade57]
+[seStop ade57 0.14]
+[wt 0.1]
+
+[charaFace B 13]
+[charaFadein B 0.3 1]
+[wt 0.3]
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk on]
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+やはり、あの獣たちとカリは敵対関係にあったと[r]考えるのが自然だね。お互いに攻撃し合っていた。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ラーマ
+うむ。そして獣たちが町を破壊するような事もなかった。[r]おかげでカリの被害を食い止められたとも言えるが[line 3]
+[k]
+
+＠ラーマ
+こちらにも襲いかかってきた以上、[r]排除せざるを得なかったな。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[bgmStop BGM_EVENT_77 0.5]
+[wt 1.5]
+
+[se ad525]
+[wt 0.6]
+[seStop ad525 0.1]
+
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠アジャイ
+…………。
+[k]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaFace E 0]
+
+＠アジャイ
+これは……おまえらの仕業、か。[r]やっちまいやがったな。
+[k]
+
+？1：あっ、お父さん
+
+[charaFace E 5]
+
+＠アジャイ
+俺はテメェの親父じゃねぇ。
+[k]
+
+？2：アジャイさん、ご無事ですか。よかった
+
+＠アジャイ
+……ふん。
+[k]
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠カルナ
+知りたい事がある。[r]こいつらは何だ？
+[k]
+
+[messageOff]
+[fadeout black 0.7]
+[bgm BGM_EVENT_81 0.7 0.4]
+[wait fade]
+[charaFadeout F 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 -100,-50]
+[wt 0.1]
+[wipeFilter cinema 0.5 0]
+[fadein black 0.7]
+[wait fade]
+
+＠アジャイ
+（祈らねぇってことは、山向こうの奴らの[r]　仲間かとも思ったが……）
+[k]
+
+＠アジャイ
+（本当に、カリのことを知らんただの[#間抜け:ウッルー]なのか）
+[k]
+
+＠アジャイ
+（…………どうでもいい。[r]　とにかく、面倒事はごめんだ）
+[k]
+
+[messageOff]
+[fadeout black 0.7]
+[wait fade]
+[charaPut E 1]
+[wipeOff]
+[charaSet A 1098167000 1 プラカシュ]
+[fadein black 0.7]
+[bgm BGM_EVENT_81 0.7 1.0]
+[wait fade]
+
+[charaFace E 5]
+
+＠アジャイ
+話をする必要があるのか？[r]悪いことは言わん。さっさと[line 3]
+[k]
+
+[charaFadeout E 0.1]
+
+[se ad7]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+
+＠アーシャ
+お[&にい:ねえ]ちゃんたち！　大丈夫！？[r]……え、ホントにびっくりするほど大丈夫だね！？
+[k]
+
+[charaFace G 1]
+
+＠アーシャ
+よかったぁ……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaDepth G 10]
+[charaTalk B]
+[charaFace G 1]
+[charaFadein G 0.1 0]
+[charaFace B 1]
+[charaFadein B 0.1 2]
+
+＠マシュ
+アーシャさんもご無事でしたか。[r]お怪我もないようで、本当によかったです。
+[k]
+
+[charaFace G 4]
+
+＠アーシャ
+うん。でもね、ヴィハーンが、ちょっと……。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.4 1]
+[wt 1.2]
+
+＠ヴィハーン
+ク[se ad314][seVolume ad314 0 0.5]ゥン、クゥン。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠マシュ
+その手当ての跡は……。[r]足を引きずっていらっしゃいますね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace H 1]
+[charaFadein H 0.1 0]
+[charaFace G 4]
+[charaFadein G 0.1 2]
+
+＠アーシャ
+うん、家がぐらぐらして、そのとき倒れてきた棚に[r]挟まれちゃって。ごめんね、ヴィハーン。
+[k]
+
+＠ヴィハーン
+ク[se ad314][seVolume ad314 0 0.5]ゥン……。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠フォウ
+フォウ……。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠アジャイ
+…………。
+[k]
+
+[charaFace E 4]
+
+＠アジャイ
+走れねぇ犬に……価値はあんのかい、神様よ……。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠？？？
+[charaTalk A]
+こ、これはいったいどうしたことですか！？[r]カリだけではなく、聖獣も……死んでいらっしゃる！？
+[k]
+
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaSet C 3031001 1 哪吒]
+[charaSet H 1098167100 1 インドの民_男]
+[charaSet I 1098167200 1 インドの民_女]
+
+[charaFace A 3]
+[charaFadein A 0.4 1]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+……あなたは？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠A：？？？
+ハイ、私はこの町の長、[r]プラカシュという者でございます。
+[k]
+
+＠プラカシュ
+あなたたちは旅人ですか？[r]この惨劇について何かご存じで？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ラーマ
+うむ。襲われたから殺したぞ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠プラカシュ
+……[twt 0.5]……[twt 0.5]……[twt 0.5]……[twt 0.5][charaFace A 3]は？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ラーマ
+他にも説明が必要か？[r]ならば叙事詩の書き手をここに連れてくるがいい。
+[k]
+
+＠ラーマ
+余の活躍を聞いておきながら物語にせぬのは勿体ないからな。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠プラカシュ
+お、おお、おおお……
+[k]
+
+＠プラカシュ
+アア、なんと……なんということを！[r]我らを守ってくれる[#神の遣い]を……こ、こ、殺すなど！
+[k]
+
+？1：襲われたから仕方なかったんです
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠哪吒
+同意　他に道は　なかった。[r]そして　殺したのは　一方だけに　[#非:あら]ず。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠マシュ
+はい。わたしたちは、あなたがたが[r]カリと呼ぶ存在とも戦いました。
+[k]
+
+＠マシュ
+全ては町を守るための行動だとご理解いただきたく……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠プラカシュ
+何を、なーにを！[r]駄目です、駄目に決まっているでしょう。
+[k]
+
+＠プラカシュ
+それはけっして許されぬ蛮行です。[r]この世の[#理:ことわり]に反する大逆にして無道です！
+[k]
+
+＠プラカシュ
+そもそも神の遣いたる聖獣が理由もなしに人間を襲うなど[r]あるわけが！　アア、恐ろしい。
+[k]
+
+＠プラカシュ
+神の不興を買ってしまえば。町ぐるみでこれを[#看過:かんか]や[r]扇動したと思われてしまえば、そこで終わりです……！
+[k]
+
+[charaFace A 5]
+
+＠プラカシュ
+このビーチュの町より出ていきなさい、早く！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad4]
+[seVolume ad4 0 0.4]
+[wt 2.0]
+[seStop ad4 0.5]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 0]
+[charaFace I 3]
+[charaFadein I 0.1 2]
+
+＠H：町の民
+そうだそうだ！
+[k]
+
+＠H：町の民
+不信心者どもめ！[r]なんてことをしてくれたんだ！
+[k]
+
+＠I：町の民
+ほら、あれ。最近噂の……[r]天罰が[#下:くだ]るんじゃないかしら、怖いわ……。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠ラーマ
+なんと、石でも投げられそうな雰囲気になってきたぞ。[r]どうする、マスター。
+[k]
+
+？1：……[#一旦:いったん]、町を出よう
+？2：よし、退却！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠マシュ
+はい。情報収集も大事ですが、[r]この状況下では難しいかと。
+[k]
+
+＠マシュ
+住民の方々と無用なトラブルを起こすのは[r]避けるべきかと思います。
+[k]
+
+＠マシュ
+ひとまず町の外に出て、[r]近場でキャンプの準備をしましょう……。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgm BGM_EVENT_48 1.5 0.4]
+[wait fade]
+[charaFadeout B 0.1]
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 0,-50]
+[wt 1.0]
+[wipeFilter cinema 0.5 0]
+[fadein black 1.0]
+[wait fade]
+
+＠アーシャ
+お[&にい:ねえ]ちゃんたち……。
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_48 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

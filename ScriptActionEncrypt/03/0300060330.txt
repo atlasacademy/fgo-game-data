@@ -1,0 +1,1854 @@
+
+
+
+＄03-00-06-03-3-0
+
+
+
+
+[soundStopAll]
+
+[charaSet A 8001400 1 アーマード・マシュ（ゴーグルあり）]
+[charaSet B 1017001 1 武蔵]
+[charaSet C 8001410 1 マシュ]
+[charaSet D 9005001 1 ホームズ]
+[charaSet E 98002000 1 フォウ]
+[sceneSet F 93402 1]
+[sceneSet G 93400 1]
+[charaSet H 4040002 1 エウロペ（シルエット）]
+[charaSet I 4040002 1 エウロペ]
+[charaSet J 1098182400 1 ディオスクロイ・カストロ（シルエット）]
+[charaSet K 1098182500 1 ディオスクロイ・ポルクス（シルエット）]
+[charaSet L 1098182400 1 ディオスクロイ・カストロ]
+[charaSet M 1098182500 1 ディオスクロイ・ポルクス]
+[charaSet N 1098189910 1 デメテル（シルエット）]
+[charaSet O 1098189910 1 デメテル]
+[charaSet P 1098190000 1 アフロディーテ（シルエット）]
+[charaSet Q 1098190000 1 アフロディーテ]
+[imageSet R back10000 1]
+[charaSet S 5009000 1 エフェクト用ダミー１]
+[charaSet T 5009000 1 エフェクト用ダミー２]
+
+[charaFilter H silhouette 00000080]
+[charaFilter J silhouette 00000080]
+[charaFilter K silhouette 00000080]
+[charaFilter N silhouette 00000080]
+[charaFilter P silhouette 00000080]
+
+[charaScale F 1.01]
+[charaScale G 1.01]
+[charaScale R 1.01]
+
+[scene 91900]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad625]
+[wt 0.7]
+
+[cueSe Battle bac234]
+[shake 0.05 1 4 1.0]
+[wt 3.5]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠A：マシュ
+今度こそ……！[r]青銅巨人沈黙！　魔力反応消滅！
+[k]
+
+＠A：マシュ
+巨大敵性体を撃破しました、マスター！
+[k]
+
+？1：お疲れさま、みんな！
+
+＠A：マシュ
+はい……！
+[k]
+
+？2：急いで離脱だ！
+
+＠A：マシュ
+了解！
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠武蔵
+全速力で走るよ！[r][%1][&君:]はマシュが抱えて！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth A 2]
+
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.1]
+[charaFadeout A 0.4]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[wt 0.6]
+
+[charaFace C 7]
+
+＠マシュ
+は、はいっ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠武蔵
+フォウくんは[%1]の腕に！[r]探偵さんは私が肩を貸してあげましょう！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠ホームズ
+いや結構、私は私で走るとも。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠武蔵
+男の見栄は後にして！[r][#霊核にガタがきてる]んだから、走れないでしょ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠マシュ
+！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠フォウ
+フォ……
+[k]
+
+？1：ホームズ！？
+？2：北欧の時の傷が[line 3]
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠マシュ
+完全に回復していないとは聞いていましたが、[r]まさか、まだ霊核にダメージが……
+[k]
+
+[messageOff]
+[charaFace C 4]
+[wt 1.0]
+[charaFace C 5]
+
+＠マシュ
+そんな状態で戦闘なんてしたら！[r]いつ、エーテル体が崩れてもおかしくありません！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠ホームズ
+……………………。
+[k]
+
+[charaFace D 0]
+
+＠ホームズ
+……流石は天眼の剣士、といったところか。[r]痛いところを突かれてしまったな。
+[k]
+
+[charaFace D 8]
+
+＠ホームズ
+ミス・キリエライトや[%1]にばかり[r]体を張らせてはいけないと思ったのだがね。
+[k]
+
+[charaFace D 0]
+
+＠ホームズ
+……すまない。[r]有り難く肩を借りよう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠武蔵
+よろしい。[r]では、走ります！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠マシュ
+はい！
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_80 0.4 0.5]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[charaFadeout C 0.1]
+[scene 91800]
+[shake 0.05 0 4 0]
+[effect bit_talk_41]
+[se ad668]
+[seVolume ad668 0 0.4]
+[se ad55]
+[seVolume ad55 0 0.4]
+[se ad59]
+[seVolume ad59 0 0.4]
+[cueSe Battle bac343]
+[cueSeVolume bac343 0 0.4]
+[wt 1.0]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[bgm BGM_EVENT_80 0.4 1.0]
+[wait wipe]
+[wt 1.0]
+
+＠マシュ
+大通りに……！[r]出ました……！
+[k]
+
+[messageOff]
+[wt 2.0]
+
+＠武蔵
+よっし、目論み通り！[r]通りの周囲に……オリュンポス市民の姿、なし！
+[k]
+
+＠武蔵
+怖い怖いカルデアがやって来たからには、[r]みんな慌てて屋内に籠もったって事かしら！
+[k]
+
+＠武蔵
+さっきの全域一斉放送には度肝を抜かれたけど、[r]一般市民の人混みが消えてくれたのなら、これ幸い！
+[k]
+
+＠武蔵
+あとは兵士が集まってくる前に[r]ドロンするまで！
+[k]
+
+？1：ドロンて！
+
+＠武蔵
+当世風の言い方をしました！[r]えへ！
+[k]
+
+？2：武蔵ちゃん……ちょっと古い……！
+
+＠武蔵
+えっ嘘！[r]当世風の言い方じゃないの！？
+[k]
+
+？！
+
+[messageOff]
+[wt 2.0]
+
+＠武蔵
+って[line 3]ちょっと待った！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 0.7]
+
+[seStop ad668 0.3]
+[seStop ad55 0.3]
+[seStop ad59 0.3]
+[cueSeStop bac343 0.3]
+[se ad671]
+[wt 0.3]
+[seStop ad671 0.5]
+[shake 0.05 3 1 0.6]
+[effectStop bit_talk_41]
+[wt 0.5]
+[cameraHome 0.1]
+[wt 0.6]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+武蔵さん！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠武蔵
+来る！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad674]
+[wt 0.25]
+[se ad674]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+[wt 1.0]
+[charaFace C 2]
+
+＠マシュ
+大型の魔力反応です！[r]ぜ、前方、唐突に出現[line 3]計測不能！　これは！
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad628]
+[shake 0.03 4 4 1.5]
+[wt 1.4]
+[seStop ad57 0.2]
+
+[se ad625]
+[se ad423]
+[seVolume ad423 0 0.5]
+[wt 2.0]
+[seStop ad625 1.0]
+[wt 1.0]
+
+[wipeout rectangleStripUpToDown 0.5 1]
+[wait wipe]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth G 2]
+
+[charaFadein F 0.1 0,-200]
+[wt 0.3]
+[se ad898]
+[seVolume ad898 0 0.3]
+[se ad876]
+[wipein rectangleStripDownToUp 0.5 1]
+[wait wipe]
+[wt 1.5]
+
+＠
+[f large]『モモ目標ホ捕捉』
+[k]
+
+＠
+[f large]『セセ戦闘ケ継続』
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[shake 0.05 4 4 1.5]
+[se ad898]
+[seVolume ad898 0 0.3]
+[wt 1.0]
+[se ad883]
+[wt 1.5]
+
+[fadeout white 0.4]
+[wait fade]
+
+[charaFadein G 0.1 0,-200]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[fadein white 0.6]
+[se ad881]
+[se ad880]
+[wait fade]
+
+
+[wt 3.0]
+[charaTalk depthOn]
+
+＠
+[f large]『目標再捕捉』
+[k]
+
+＠
+[f large]『戦闘継続』
+[k]
+
+＠武蔵
+はァー！？
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.5 1]
+[wait wipe]
+[charaFadeout G 0.1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.1]
+[wipein rectangleStripUpToDown 0.5 1]
+[wait wipe]
+
+＠武蔵
+ああもう、巻き戻し映像かっ！[r]動力源っぽいの、ちゃんとぶった斬ったのにぃ！
+[k]
+
+＠武蔵
+明王に通じる偉丈夫な金属巨人だなー、とか、[r]ちょっとだけ見惚れてて損した！
+[k]
+
+[charaFace B 5]
+
+＠武蔵
+終わる時には終わるが定め。[r]死する時には死するが定め。
+[k]
+
+＠武蔵
+終わらぬモノは、[r]カタチ無きものだけでいいでしょうに！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠マシュ
+……マスター！[r]瞬時に再生するプロセスには、見覚えがあります！
+[k]
+
+？1：デメテル・クリロノミア！
+
+？！
+
+＠マシュ
+はい……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠ホームズ
+アトランティスに多数存在したナノマシン！[r]やはり、オリュンポスこそがその高次技術の源か！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_24 0.7]
+
+[se ade74]
+[seVolume ade74 0 0.1]
+[wt 0.5]
+[seVolume ade74 1.5 1.0]
+[wt 1.0]
+[seStop ade74 0.1]
+
+＠女性の声
+その通り[line 3]
+[k]
+
+＠女性の声
+汎人類史よ、刮目なさい。[r]それこそが[#デメテル神の権能:デ メ テ ル ・ ク リ ロ ノ ミ ア]であるのです。
+[k]
+[bgm BGM_EVENT_72 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠マシュ
+！！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ホームズ
+新手……[r]それも、これは……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠武蔵
+兵士どころじゃない、わね。
+[k]
+
+[charaTalk off]
+[charaDepth R 1]
+[charaDepth B 2]
+
+[wt 0.2]
+[bgm BGM_EVENT_72 0.4 0.5]
+[charaFadeTime R 0.2 0.5]
+[wt 0.2]
+[charaFace B 5]
+
+＠武蔵
+（凄まじいまでの魔力[line 3]！）
+[k]
+
+＠武蔵
+（サーヴァントになった今ならよく分かる！[r]　この青銅神像を、優に超えて……ああ、そうか）
+[k]
+
+＠武蔵
+（これが異聞帯の神霊[line 3]）
+[k]
+
+＠武蔵
+（いや、[#神そのもの]！）
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_72 0.4 1.0]
+[charaFadeout R 0.1]
+[wt 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[wt 0.5]
+
+[se ade74]
+[seVolume ade74 0 0.1]
+[wt 0.5]
+[seVolume ade74 1.5 1.0]
+[wt 1.0]
+[seStop ade74 0.1]
+
+[charaTalk depthOff]
+[charaDepth I 2]
+[charaDepth H 1]
+
+[charaTalk off]
+[charaFace H 0]
+[charaFadein H 0.7 1]
+[wt 1.6]
+[charaFace I 10]
+[charaFadein I 0.4 1]
+
+[wt 0.2]
+[se adm41]
+[seVolume adm41 0 0.6]
+[charaFadeout H 0.4]
+[wt 0.4]
+
+＠エウロペ
+[#其処:そこ]で立ち止まりなさい。[r]諦めるのです。
+[k]
+
+＠エウロペ
+オリュンポスの加護を賜った我が巨兵タロス。[r]ヒトの[#克:か]てるものでは、ありませんよ。
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 1.0]
+[charaTalk depthOn]
+
+[charaTalk depthOff]
+[charaDepth L 1]
+[charaDepth M 2]
+[charaDepth J 3]
+[charaDepth K 4]
+
+[charaFace J 0]
+[charaFadein J 0.4 -120,0]
+[charaFace K 0]
+[charaFadein K 0.4 120,0]
+[se ad166]
+[wt 0.3]
+[seStop ad166 0.2]
+[wt 0.4]
+[charaFace L 0]
+[charaFadein L 0 -120,0]
+[charaFace M 0]
+[charaFadein M 0 120,0]
+
+[charaFadeout J 1.0]
+[charaFadeout K 1.0]
+[wt 1.5]
+
+[charaTalk on]
+
+＠ディオスクロイ・カストロ
+ほう。[r]言葉を掛けるか、神妃エウロペ。
+[k]
+
+＠ディオスクロイ・ポルクス
+兄様。兄様。[r]ヘラ様と同化した神妃を相手に不敬でありましょう。
+[k]
+
+＠ディオスクロイ・ポルクス
+ソレはもう人間ではなく半神です。[r]ですから、そんな風に睨んではなりません。
+[k]
+
+[charaFace L 1]
+
+＠ディオスクロイ・カストロ
+ハ。
+[k]
+
+＠ディオスクロイ・カストロ
+神が混ざろうともヒトは、ヒトだ、ポルクス。[r]負け犬のカイニスと大差はないさ。
+[k]
+
+[charaFace M 4]
+＠ディオスクロイ・ポルクス
+兄様ったら[line 3]
+[k]
+
+[messageOff]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaShake E 0.02 3 3 1.5]
+
+＠フォウ
+フォ……フォウ……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+＠マシュ
+双神ディオスクロイ！[r]マスター、彼らはアトランティスで遭遇した[line 3]
+[k]
+
+＠マシュ
+神霊サーヴァントです！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_72 0.6]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+＠ディオスクロイ・カストロ
+ン？
+[k]
+
+＠ディオスクロイ・カストロ
+俺を見たのか。[r]俺を指して、我らの名を口にしたのか。ヒトよ。
+[k]
+
+[messageOff]
+[charaFace L 5]
+[effect bit_talk_charge_blu]
+[se ade91]
+[se ad14]
+[seVolume ad14 0 0.8]
+[wt 1.5]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+[effectDestroy bit_talk_charge_blu]
+[seStop ade91 0.6]
+[seStop ad14 0.8]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+[wt 1.2]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk L]
+[charaFace L 5]
+[charaFadein L 0.1 1]
+
+＠ディオスクロイ・カストロ
+許し難し。
+[k]
+
+[messageOff]
+[cueSe Battle bac109]
+[charaFadeout L 0.2]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠マシュ
+！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[cueSe Battle bac109]
+[fowardEffect bit_talk_quickmove]
+[charaTalk L]
+[charaFace L 5]
+[charaFadein L 0.1 1]
+
+[charaPut S 1]
+[charaEffect S bit_talk_v_slash01]
+[se adm15]
+[wt 0.2]
+[charaFadeout L 0]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0 1]
+[wt 0.2]
+[charaEffectDestroy S]
+[charaEffect S bit_talk_h_slash01]
+[se adm15]
+[wt 0.2]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[se ad32]
+[charaShake B 0.05 3 3 0.5]
+[wt 0.1]
+
+＠武蔵
+おおっとォ！
+[k]
+
+？1：マシュ！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+＠マシュ
+マ、マスター。[r]わたし……
+[k]
+
+＠マシュ
+今、少しも……動けずに……[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？2：武蔵ちゃん！
+
+[charaFace B 0]
+
+＠武蔵
+平気へいき～☆[r]それよりマシュをお願いね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk L]
+[charaFace L 5]
+[charaFadein L 0.1 1]
+
+＠ディオスクロイ・カストロ
+貴様[line 3]
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠武蔵
+ご無礼しちゃったかしら？[r]でも、偉大なる神さまにしちゃあ刃が軽薄すぎて。
+[k]
+
+＠武蔵
+理由も速度も軽すぎて軽すぎて、[r]私程度でも防げるくらいの羽毛ぶりでした！
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_80 0.4 0.4]
+[charaTalk depthOff]
+[charaDepth R 3]
+[charaDepth B 4]
+[charaDepth D 2]
+[charaFadeTime R 0.2 0.5]
+[wt 0.2]
+[charaFace B 5]
+
+＠武蔵
+（なんて、軽口でしかやり返せないっ！）
+[k]
+
+＠武蔵
+（なんなのあの重さ、あの速さ！[r]　光じゃないんだからあり得ないでしょう！？）
+[k]
+
+＠武蔵
+（それとも何、ホントに光なの？[r]　あんな剣撃、剣聖でも出せないっての！）
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[charaTalk B]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+[wt 0.5]
+
+＠武蔵
+（にしてもホームズさん、流石の判断ね。[r]　諸々予測して私に援護の術を掛けてくれてた！）
+[k]
+
+＠武蔵
+（それがなかったら……[r]　マシュの首、今頃は、きっと……）
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_80 0.4 1.0]
+[charaFadeout D 0.1]
+[charaFadeout R 0.1]
+[charaTalk depthOn]
+
+[wt 0.5]
+
+[bgmStop BGM_EVENT_80 0.5]
+
+[se adm41]
+[seVolume adm41 0 0.6]
+[wt 0.8]
+
+[charaTalk I]
+[charaFace I 9]
+[charaFadein I 0.1 1]
+
+＠エウロペ
+控えてください。[r]ディオスクロイ・カストロ。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+＠ディオスクロイ・カストロ
+……それは、神妃としての言葉か？
+[k]
+
+[messageOff]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 9]
+[charaFadein I 0.1 1]
+[wt 2.0]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 4]
+[charaFadein M 0.1 1]
+
+＠ディオスクロイ・ポルクス
+兄様。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 5]
+[charaFadein L 0.1 1]
+
+＠ディオスクロイ・カストロ
+チッ。
+[k]
+
+[charaFace L 0]
+
+＠ディオスクロイ・カストロ
+……その不遜な顔は覚えたぞ、ヒトの女。[r]貴様の処刑は俺が直々に執り行う。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠武蔵
+あら怖い。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+[charaFadeout L 0.2]
+[wt 0.1]
+[cueSe Battle bac109]
+[wt 0.3]
+
+[charaTalk depthOff]
+[charaDepth L 1]
+[charaDepth M 2]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 120,0]
+[wt 0.7]
+[cueSe Battle bac109]
+[charaFace L 0]
+[charaFadein L 0.1 -120,0]
+[wt 1.0]
+
+[charaFace M 1]
+
+＠ディオスクロイ・ポルクス
+お帰りなさいませ、兄様。
+[k]
+
+＠ディオスクロイ・カストロ
+ただいま戻ったぞ、妹よ。
+[k]
+
+＠ディオスクロイ・ポルクス
+よくぞ神妃の言葉に従ってくださいました。[r]流石です、兄様。
+[k]
+
+[charaFace L 3]
+
+＠ディオスクロイ・カストロ
+…………ヒトが見ている。あまり褒めるな。
+[k]
+
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaShake E 0.05 3 3 0.2]
+
+＠フォウ
+フォ……
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[charaShake B 0.05 3 3 0.2]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[se ade74]
+[seVolume ade74 0 0.4]
+[wt 0.1]
+[se ad95]
+[seVolume ad95 0 0.4]
+[seVolume ade74 2.0 1.0]
+[seVolume ad95 2.0 1.0]
+[wt 3.3]
+[seStop ade74 0.1]
+[wt 0.1]
+[seStop ad95 0.1]
+
+[bgm BGM_EVENT_90 0.1]
+
+＠デメテル
+[line 3]あら、あら、あら？
+[k]
+
+＠デメテル
+彼らは何をしているのかしら。[r]ねえ、アフロディーテ。
+[k]
+
+＠アフロディーテ
+もう始めてしまっているだなんて、行儀の悪い。[r]あなたたちの振る舞いで、我々の[#躾:しつけ]が問われるというのに。
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth Q 1]
+[charaDepth P 2]
+
+[wt 0.5]
+
+[charaTalk off]
+[charaFace P 0]
+[charaFadein P 0.4 1]
+[wt 0.7]
+[charaFace Q 0]
+[charaFadein Q 0 1]
+
+[charaFadeout P 1.0]
+[wt 1.5]
+
+＠アフロディーテ
+神たる自覚が必要なようね？[r]ポルクス。
+[k]
+
+[charaFace Q 6]
+
+＠アフロディーテ
+父上の血、新たに貰っているのでしょう？
+[k]
+
+[charaFadeout Q 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk M]
+[charaFace M 5]
+[charaFadein M 0.1 1]
+
+＠ディオスクロイ・ポルクス
+……何が言いたい。
+[k]
+
+[messageOff]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth L 1]
+[charaDepth M 2]
+[charaDepth O 3]
+[charaDepth N 4]
+
+[wt 0.5]
+
+[charaTalk off]
+[charaFace N 0]
+[charaFadein N 0.4 1]
+[wt 0.7]
+[charaFace O 0]
+[charaFadein O 0 1]
+[charaFadeout N 1.0]
+[wt 1.0]
+[wt 0.5]
+
+＠デメテル
+何も。言う事はありません。[wt 0.4][charaFace O 8][r]もう、アフロディーテったらいけないわ。
+[k]
+
+＠デメテル
+大本がどうあれ、[r]今のディオスクロイは私たちの可愛い家族。
+[k]
+
+＠デメテル
+そんな風に言っては意地悪でしょう。[wt 0.8][charaFace O 6][r]ね？
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaShake E 0.02 3 3 0.6]
+
+＠フォウ
+フォ……[r]フォウウウウ……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+＠マシュ
+この……圧倒的な魔力……！
+[k]
+
+＠マシュ
+マスター！[r]新たに出現した二人の女性もおそらく……
+[k]
+
+＠マシュ
+[#異聞帯:ロストベルト]の神です！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ホームズ
+神霊サーヴァントが二騎、そして神が三柱。[r]更には神造の青銅巨人とは。
+[k]
+
+[charaFace D 6]
+
+＠ホームズ
+現時点で、どう見積もっても[r]我々を瞬時に叩き潰せるだけの戦力と断定できる。
+[k]
+
+＠ホームズ
+オリュンポス兵よりもよほど難敵が揃ったという訳だ。[r]さて、これはどうしたものか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠フォウ
+フォ、フォウフォウ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠マシュ
+フォウさん、こ、こちらへ。[r]肩の上は危険です。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[cueSe Battle bac170]
+[wt 1.2]
+
+[charaTalk Q]
+[charaFace Q 5]
+[charaFadein Q 0.1 1]
+
+＠アフロディーテ
+……。[r]……。
+[k]
+
+＠アフロディーテ
+………………………………。
+[k]
+
+＠アフロディーテ
+……………………ねえ、他に何かする事はないの？
+[k]
+
+[charaFadeout Q 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+[line 3]？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk Q]
+[charaFace Q 4]
+[charaFadein Q 0.1 1]
+
+＠アフロディーテ
+はあ。
+[k]
+
+＠アフロディーテ
+もう。
+[k]
+
+＠アフロディーテ
+分からない？[r]本当に？
+[k]
+
+＠アフロディーテ
+神を前にしている自覚はある？[r]北欧やインドの異聞帯でも神には逢ったでしょうに。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_90 1.0]
+[charaFace Q 8]
+[charaMove Q 0,-5 1.0]
+[wt 1.5]
+[charaMove Q 0,0 0.3]
+[wt 0.7]
+
+
+
+[charaFace Q 2]
+
+＠アフロディーテ
+[f large]頭が高いと言っているのよ。
+[k]
+
+[messageOff]
+[se ad632]
+[effect bit_talk_charge_red]
+[se ade91]
+[wt 3.0]
+[seStop ad632 1.0]
+
+[messageOff]
+
+[se ad888]
+[effectStop bit_talk_charge_red]
+
+[se ad887]
+[se ade280]
+[effect bit_talk_mind_poll_01]
+[wt 1.0]
+[seStop ad888 2.0]
+[seStop ad887 2.0]
+[wt 2.0]
+[charaFadeout Q 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_122 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.4 1]
+[wt 2.3]
+[charaFadeout C 0.2]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.4 1]
+[wt 2.3]
+[charaFadeout B 0.2]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.4 1]
+[wt 2.3]
+[charaFadeout D 0.2]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+＠マシュ
+[f medium][messageShake 0.07 7 5 0.7]あ……ああ……ッ！[r]ああああああああああああ……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠武蔵
+脳髄に！　響くッ！[r]何、これッ……！
+[k]
+
+[charaFace B 2]
+
+＠武蔵
+精神への直接攻撃！？[r]ホームズさん！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ホームズ
+精神防御の護符は当然用意があるが……！[r]通用しない[line 3]アフロディーテ神の権能か[line 3]！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+[wt 1.0]
+
+[charaMove C 0,-40 0.4]
+[charaFadeout C 0.4]
+[wt 0.2]
+[se ad58]
+[wt 0.1]
+[seStop ad58 0.5]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+[messageOff]
+[charaMove B 9,-10 0.4]
+[wt 0.1]
+[se ad54]
+[wt 0.8]
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[wipeout openEye 1.0 1.0]
+[wipein openEye 0.8 1.0]
+[wait wipe]
+[wipeout openEye 0.5 1.0]
+[wait wipe]
+[wt 0.4]
+[wipein openEye 0.3 1.0]
+[wait wipe]
+[wt 1.0]
+
+[cameraMove 0.5 0,15 1.05]
+[wt 0.1]
+[se ade32]
+[seVolume ade32 0 0.5]
+[wt 0.5]
+[seStop ade32 0.2]
+
+[wt 1.0]
+
+？1：マシュ……！
+
+＠マシュ
+せん……ぱい……！
+[k]
+
+[messageOff]
+
+？2：みんな……！！
+
+？！
+
+[wt 1.0]
+[seStop ade280 2.0]
+[fadeout black 1.5]
+[bgm BGM_EVENT_122 1.5 0.3]
+[wait fade]
+[effectStop bit_talk_mind_poll_01]
+[cameraHome 0.1]
+[wt 1.0]
+[fadein black 1.0]
+[bgm BGM_EVENT_122 1.0 1.0]
+[wait fade]
+
+
+[charaTalk Q]
+[charaFace Q 0]
+[charaFadein Q 0.1 1]
+
+＠アフロディーテ
+[line 3]これで、取りあえず形にはなったわね。
+[k]
+
+[charaFace Q 5]
+
+＠アフロディーテ
+ヒトよ。[#頭:こうべ]を垂れよ。[r]ヒトよ。畏怖を忘れる事なく、神にひれ伏せ。
+[k]
+
+＠アフロディーテ
+思い違うな。[r]此処はオリュンポス、我ら神の座す[#久遠:くおん]の園である。
+[k]
+
+[charaFadeout Q 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 9]
+[charaFadein I 0.1 1]
+
+＠エウロペ
+……。[r]……。
+[k]
+
+[charaFace I 10]
+
+＠エウロペ
+……………………そこまで。充分でしょう。
+[k]
+
+＠エウロペ
+神託が来ます。[r]裁定が下されます。
+[k]
+
+[charaFace I 9]
+
+＠エウロペ
+この場に在るすべての神よ、すべてのヒトよ、[r]全能たる御方の声を聞きなさい。
+[k]
+
+＠エウロペ
+ゼウス。ゼウス。[r]天空にして支配、全能たるあなた。
+[k]
+
+＠エウロペ
+皆があなたを待っています。[r]どうか。御言葉を。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_122 1.5]
+[charaFadeout I 0.1]
+[wt 0.5]
+
+[se ade106]
+[wt 2.0]
+[seStop ade106 0.5]
+
+[effect bit_talk_thunder_01]
+[wt 0.3]
+[se ade346]
+[fadeout white 0.1]
+[wait fade]
+[wt 1.5]
+[scene 91801]
+[fadein white 1.5]
+[wait fade]
+
+[se ade106]
+[wt 2.0]
+[seStop ade106 1.0]
+
+＠マシュ
+空、が……
+[k]
+
+[messageOff]
+[wt 1.2]
+
+[bgm BGM_EVENT_114 0.1]
+
+＠
+　　　　　　　　　　『　我は[line 3]　』
+[k]
+
+＠
+[align center]『　我は天空である　』[align]
+[k]
+
+＠
+[align center]『　[#雷霆:らいてい]である　支配である　全能の神　ゼウスである　』[align]
+[k]
+
+＠
+[align center]『　[#頭:こうべ]を垂れるものどもよ　』[align]
+[k]
+
+＠
+[align center]『　畏れを忘れ　神を仰ぎ　手を伸ばさんとするものよ　』[align]
+[k]
+
+＠
+[align center]『　思い出せ　』[align]
+[k]
+
+[messageOff]
+[se ad131]
+[wt 2.0]
+[seStop ad131 1.0]
+[wt 1.2]
+
+＠
+[align center]『　ヒトは　神に逆らってはならない　』[align]
+[k]
+
+＠
+[align center]『　ヒトは　罪を犯してはならない　』[align]
+[k]
+
+＠
+[align center]『　ヒトよ　』[align]
+[k]
+
+＠
+[align center]『　汎人類史なる罪業を積み上げる愚かなる[#葦:あし]よ　』[align]
+[k]
+
+＠
+　　　　　　　『　[line 3][#悉:ことごと]く　死に果てよ　』
+[k]
+
+[messageOff]
+[effect bit_talk_thunder_01]
+[bgmStop BGM_EVENT_114 0.5]
+[wt 0.3]
+
+[se ade346]
+[fadeout white 0.1]
+[wait fade]
+[scene 91800]
+[wt 1.5]
+[fadein white 1.5]
+[wait fade]
+
+[wt 1.5]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk depthOff]
+[charaDepth L 1]
+[charaDepth M 2]
+
+[charaTalk L]
+[charaFace L 1]
+[charaFadein L 0.1 -120,0]
+[charaFace M 1]
+[charaFadein M 0.1 120,0]
+
+＠ディオスクロイ・カストロ
+はは。ははははははははははははははははは！[r]気を持たせるものだ、父上！
+[k]
+
+＠ディオスクロイ・ポルクス
+ふふ。ふふふふふふふふふふふふふふふふふ！[r]まったくその通りね、兄様。
+[k]
+
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk Q]
+[charaFace Q 8]
+[charaFadein Q 0.1 1]
+
+＠アフロディーテ
+手早くね。
+[k]
+
+[charaFadeout Q 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 8]
+[charaFadein O 0.1 1]
+
+＠デメテル
+まあ……。[r]お酒くらいは、出してあげたかったのに。
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 9]
+[charaFadein I 0.1 1]
+
+＠エウロペ
+直接神託により、ゼウスの裁断が下りました。[r]苦しませてはなりません。
+[k]
+
+[charaFace I 10]
+
+＠エウロペ
+速やかに[#為済:しす]ませなさい、双神ディオスクロイ。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth L 1]
+[charaDepth M 2]
+
+[charaTalk M]
+[charaFace L 1]
+[charaFadein L 0.1 -120,0]
+[charaFace M 1]
+[charaFadein M 0.1 120,0]
+
+＠ディオスクロイ・ポルクス
+お許しが出たからにはもう構う事はありません。[r]さあ、さあ。さあ殺しましょう！
+[k]
+
+＠ディオスクロイ・ポルクス
+兄様！　兄様の好きな[line 3]
+[k]
+
+＠ディオスクロイ・ポルクス
+[#ヒト殺し]です！[r]日頃は禁じられている以上、今こそ存分に！
+[k]
+
+＠ディオスクロイ・カストロ
+ああ、ああ、ああ殺そうとも！[r]妹よ！　おまえに俺は俺の怒りのすべてを見せる！
+[k]
+
+[charaTalk off]
+[charaFace L 2]
+[charaFace M 2]
+
+＠ディオスクロイ
+[f large]死ね！　人間！
+[k]
+
+[messageOff]
+[charaFadeout M 0.1]
+[charaFadeout L 0.1]
+[wt 0.3]
+[charaTalk depthOn]
+
+[se ad57]
+[shake 0.03 4 4 1.2]
+[wt 1.4]
+[seStop ad57 0.2]
+
+[se ad625]
+[shake 0.03 4 4 1.5]
+[wt 1.5]
+[seStop ad625 0.3]
+
+[charaFace C 15]
+[charaFadein C 0.7 0,-50]
+[charaMove C -10,-25 0.6]
+[wt 0.6]
+[se ad666]
+[wt 0.1]
+[seStop ad666 0.3]
+[wt 0.6]
+[charaMove C 0,0 0.5]
+[wt 0.2]
+[se ad666]
+[wt 0.1]
+[seStop ad666 0.3]
+[wt 0.5]
+
+
+＠マシュ
+…………マスター！[r][#霊基外骨骼:オ ル テ ナ ウ ス]、緊急即時起動に成功！
+[k]
+
+[charaFace C 2]
+
+＠マシュ
+出力６０％！[r]霊基安定！
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth A 2]
+
+[se ade57]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+[wt 0.5]
+[charaFadeout C 0]
+
+[charaFace A 2]
+
+＠マシュ
+敵性反応、神霊一騎、および巨大敵性体！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+[se adm52]
+[seVolume adm52 0 0.7]
+[wt 1.2]
+
+[charaFace B 2]
+
+＠武蔵
+まったく！　ああもう、まったく！[r]優しくない神さまね！
+[k]
+
+＠武蔵
+せめてこの頭痛が治まってから[r]襲いかかって欲しいのに、遠慮のない事で！
+[k]
+
+[charaFace B 5]
+
+＠武蔵
+でも！　それなら！　それで良し！[r]でしょう、[%1]！？
+[k]
+
+＠武蔵
+相手はこれ以上ないほど強大で本気なら！[r]君はどうするの！？
+[k]
+
+？1：[line 3]ああ[line 3]
+？2：[line 3]全力で、戦うとも！
+
+？！
+
+[messageOff]
+[charaFace B 7]
+[wt 1.0]
+[charaFace B 2]
+
+＠武蔵
+応！　[#神破:かみやぶ]り、[#承:うけたまわ]った！[r][#一気呵成:いっきかせい]に蹴散らすぞ！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

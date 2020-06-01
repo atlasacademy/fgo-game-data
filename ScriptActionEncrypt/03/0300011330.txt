@@ -1,0 +1,939 @@
+
+＄03-00-01-13-3-0
+[soundStopAll]
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 2010001 1 ビリー]
+[charaSet C 98115300 1 ホームズ]
+[charaSet H 98115000 1 エフェクト用]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 54200]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.3]
+[flashin once 0.2 0.2 FFFFFF90 FFFFFF90]
+[charaMoveReturn B -3,0 0.1]
+[se ad563]
+[wt 0.15]
+[charaMoveReturn B -3,0 0.1]
+[se ad563]
+[wt 0.15]
+[charaMoveReturn B -3,0 0.1]
+[se ad563]
+[wt 0.5]
+[se ad346]
+[wt 0.3]
+[seStop ad346 0.2]
+
+[charaFace B 2]
+
+＠ビリー
+再装填する、時間ちょうだい！
+[k]
+
+？1：限界だ、少し後退しよう
+
+[messageOff]
+
+[charaFace B 0]
+[charaMoveReturn B 0,-7 0.2]
+[wt 0.4]
+
+＠ビリー
+……わかった、そうする！
+[k]
+
+？2：回復する！
+
+[messageOff]
+[wt 0.2]
+
+[se bas3]
+[effect bit_talk_cure]
+[wt 1.0]
+
+[charaFace B 0]
+
+＠ビリー
+おっと、重畳重畳。
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+……いや、ダメだ。[r]始まってしまった。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+え……！？
+[k]
+
+[messageOff]
+[wipeout leftToRight 1 1.0]
+[bgmStop BGM_EVENT_80 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+[scene 54201]
+
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+
+[se ad585]
+[charaSet A 1098128400 1 ヤガ叛逆軍]
+[charaSet B 1098126700 1 ヤガ叛逆軍（女）]
+[charaSet C 1098126900 1 ヤガ市長]
+[charaSet D 1098123600 1 オプリチニキ]
+[charaSet E 1098126400 1 パツシィ]
+[charaSet F 7030001 1 アタランテ・オルタ]
+[charaSet G 1098126500 1 ヤガ市民_男]
+
+[wipein rightToLeft 1 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_24 0.1 0.8]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFace B 3]
+[charaFadein A 0.1 0]
+[charaFadein B 0.1 2]
+[wt 0.2]
+
+[se bac136]
+[effect bit_bolg_02]
+[charaShake A 0.05 3 3 0.2]
+＠ヤガ叛逆軍
+ぐあ！
+[k]
+
+[se bac137]
+[effect bit_bolg_01]
+[charaShake B 0.05 3 3 0.2]
+＠B：ヤガ叛逆軍
+ぎゃああああああ！
+[k]
+
+[messageOff]
+[fadeout black 0.2]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[effect bit_talk_35]
+[se ad46]
+[wt 1.0]
+[se ad144]
+
+[fadeout black 0.5]
+[wait fade]
+
+[scene 54201]
+
+[wt 0.5]
+
+[fadein black 0.3]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠オプリチニキ
+……。[r]……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠ヤガ市長
+は、はは。[r]やった……やった……！
+[k]
+
+＠ヤガ市長
+[#叛逆:はんぎゃく]軍め、ざまあみろ！[r]ここは私の街[line 3]
+[k]
+
+[messageOff]
+[se ad84]
+[wt 1.0]
+
+＠ヤガ市長
+え？
+[k]
+
+[messageOff]
+[wipeout upToDown 0.2 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[se bac385]
+[wt 1.0]
+[se ad83]
+[wt 0.5]
+
+[scene 10000]
+
+[wipein downToUp 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 54201]
+
+＠ヤガ市長
+あ……が……？[r]なぜ……[#皇帝:ツァーリ]は……？
+[k]
+
+[messageOff]
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠ヤガ叛逆軍
+クソったれの[#殺戮猟兵:オプリチニキ]め！
+[k]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaEffect H bit_talk_41]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠オプリチニキ
+……。[r]……。
+[k]
+
+[messageOff]
+[charaPut H 1]
+[se ad444]
+[charaMoveScale D 1.05 0.2]
+[wt 0.2]
+[seStop ad444]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_41]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+[wt 0.1]
+
+[effect bit_bolg_03]
+[se bac142]
+[charaShake G 0.05 3 3 0.5]
+＠ヤガ市民
+ぎゃあ！
+[k]
+
+[messageOff]
+[charaMove G 0,-50 0.4]
+[charaFadeout G 0.4]
+[wt 0.3]
+[se ad144]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠ヤガ叛逆軍
+くそ、死ね……死ね！
+[k]
+
+[messageOff]
+[se ade64]
+[charaMoveReturn A -3,0 0.2]
+[wt 0.6]
+[se ade64]
+[charaMoveReturn A -3,0 0.2]
+[wt 0.3]
+[se ade64]
+[charaMoveReturn A -3,0 0.2]
+[wt 0.2]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.1]
+[se ad173]
+[charaMoveScale D 1.2 2.0]
+[charaMove D 0,40 2.0]
+[wt 0.1]
+[charaPut H -100,-100]
+[charaEffect H bit_shot_01]
+[cueSe Servants_9941010 bac629]
+[wt 0.6]
+[charaPut H 80,-60]
+[charaEffect H bit_shot_01]
+[cueSe Servants_9941010 bac629]
+[wt 0.3]
+[charaPut H 0,-30]
+[charaEffect H bit_shot_01]
+[cueSe Servants_9941010 bac629]
+[wt 1.0]
+[seStop ad173]
+
+＠オプリチニキ
+……[#皇帝:ツァーリ]の威光に陰りを持たせる者に死を。[r]安らかに眠れ。
+[k]
+
+[messageOff]
+[charaMove D 0,45 0.2]
+[wt 0.2]
+[charaMove D 0,40 0.2]
+[se adm14]
+[wt 0.2]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[effect bit_bolg_02]
+[se bac137]
+[charaFace A 2]
+[wt 0.3]
+
+[fowardEffect bit_talk_blood_splash]
+[se ad464]
+[wt 1.0]
+
+＠ヤガ叛逆軍
+あ[line 3]ぐ[line 3]っ！
+[k]
+
+[charaScale D 1.0]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠パツシィ
+……テメェッ！
+[k]
+[messageOff]
+[se ad563]
+[charaMoveReturn E 0,3 0.2]
+[wt 0.3]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.1]
+
+[se bac385]
+
+[charaPut H 0,140]
+[charaEffect H bit_shot_01]
+[charaShake D 0.05 2 2 0.2]
+[wt 1.0]
+[charaPut H 1200,1200]
+
+
+[charaMove D 0,-50 0.4]
+[charaFadeout D 0.4]
+[wt 0.2]
+[se ad144]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ヤガ叛逆軍
+くそ、魔獣も吹き飛ぶ威力だぞ！[r]なのに、まだ動いてる……！
+[k]
+
+＠ヤガ叛逆軍
+さっきの[#殺戮猟兵:オプリチニキ]より遥かに強い！
+[k]
+
+[charaFace A 3]
+
+＠ヤガ叛逆軍
+……この！
+[k]
+
+[messageOff]
+[charaMoveReturn A 5,0 0.2]
+[se ade64]
+
+[wt 0.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+[wt 0.1]
+[effect bit_shot_01]
+[se bac16]
+[charaShake G 0.05 3 3 0.3]
+
+＠ヤガ市民
+ぎゃあ！？
+[k]
+
+[messageOff]
+[charaMove G 0,-50 0.4]
+[charaFadeout G 0.4]
+[wt 0.2]
+[se ad144]
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFace A 3]
+[charaFadein E 0.1 2]
+[charaFadein A 0.1 0]
+
+[messageShake 0.05 5 5 0.3]
+＠パツシィ
+……！？[r]市民を撃つな！
+[k]
+
+＠ヤガ叛逆軍
+なに言ってやがる！[r]武器を持ってたろうが、アイツは！
+[k]
+
+[charaFace E 4]
+
+＠パツシィ
+そっちこそ良く見ろ！[r]あれはただの[#箒:ほうき]だ！
+[k]
+
+[charaFace A 2]
+
+＠ヤガ叛逆軍
+あ[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 -128,0]
+
+＠ヤガ市民
+撃て！　撃て撃て撃て！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 128,0]
+
+＠ヤガ叛逆軍
+殺せ、皆殺しにしろ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠パツシィ
+くそ……！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.3]
+
+[flashin once 0.2 0.2 FFFFFF90 FFFFFF90]
+[se ad563]
+[wt 0.2]
+[se ade65]
+[wt 0.4]
+[se ad563]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+[effect bit_shot_01 130,-50]
+[wt 0.1]
+[charaShake G 0.05 3 3 0.3]
+
+＠ヤガ市民
+ぎゃっ！？
+[k]
+
+＠ヤガ市民
+う、腕……が……！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠アタランテ・オルタ
+市民は撃つな！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace F 5]
+[charaFace A 2]
+[charaFadein F 0.1 2]
+[charaFadein A 0.1 0]
+
+＠ヤガ叛逆軍
+しかしボス！[r]もう連中、銃を……！
+[k]
+
+＠ヤガ叛逆軍
+それに、[#殺戮猟兵:オプリチニキ]とごちゃ混ぜで[r]間違いなく巻き込みます！
+[k]
+
+＠アタランテ・オルタ
+く……。[charaFace F 2][r][#殺戮猟兵:オプリチニキ]を狙え！
+[k]
+
+[charaFace F 5]
+
+＠アタランテ・オルタ
+私から言えるのはそれだけだ！
+[k]
+
+＠ヤガ叛逆軍
+は、はい！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 1.0]
+[charaFace F 4]
+[wt 0.2]
+
+＠アタランテ・オルタ
+（市民の犠牲を許容するのか、私は……！）
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout F 0.1]
+[wt 0.5]
+
+[charaSet B 99502600 1 マシュ]
+[charaSet C 1098126600 1 ヤガ市民]
+[charaSet D 5036001 1 アヴィケブロン]
+[charaSet F 1098127000 1 ゴーレム]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[fadein black 0.8]
+[se ad586]
+[wait fade]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+[seStop ad586 0.1]
+
+＠パツシィ
+はあ、はあ、はあ……。[r]くそ……。
+[k]
+
+＠パツシィ
+（母さん……母さんは無事か？[r]　表に出てないよな？）
+[k]
+
+＠パツシィ
+（大丈夫だ、家の方向は何も起きてない……）
+[k]
+
+[messageOff]
+[se bac59]
+[shake 0.05 5 4 0.5]
+[wt 0.7]
+
+[charaFace E 2]
+＠パツシィ
+何だ！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 -128,0]
+
+＠G：ヤガ市民
+ば、爆発だ……！[r][#叛逆:はんぎゃく]軍が爆弾を使ったぞ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 128,0]
+
+＠ヤガ叛逆軍
+[#殺戮猟兵:オプリチニキ]が爆弾を使ったぞ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠パツシィ
+な……一体、何が……！？[charaFace E 4][r]くそ、火が……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+[messageShake 0.05 5 5 0.3]
+＠ヤガ市民
+火よ！　家が燃えてるわ！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad40]
+[seVolume ad40 0 0.5]
+[wt 1.0]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠マシュ
+ああ、そんな……！[r]一体、どうすれば……！
+[k]
+
+？1：何をすれば、助けられる[&:の]……！？
+？！
+
+＠マシュ
+誰のせいかも分からない、[r]火事が燃え広がれば、もう……！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 0.3]
+[seStop ad585 1.0]
+[wt 0.5]
+
+＠D：？？？
+粉塵爆発だろうね。[r]原因は先ほど穀物倉庫を襲っていた集団だろう。
+[k]
+
+＠D：？？？
+そして爆発した際の燃焼が、[r]油樽を満載していた倉庫に到達。
+[k]
+
+＠D：？？？
+だが焦ることはない、吹雪が厳しくなりそうだ。[r]火事は広がることなく、消えるだろう。
+[k]
+
+[charaFace B 1]
+
+＠マシュ
+……アヴィケブロンさん！
+[k]
+
+[charaPut H 1200,1200]
+[charaFadeout B 0.1]
+[wt 0.1]
+[messageOff]
+
+[bgm BGM_EVENT_82 0.1]
+
+[se ad173]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+[seStop ad173]
+
+＠アヴィケブロン
+遅れて申し訳ない、マスター。[r]だがお陰で、どうにかなりそうだ。
+[k]
+
+？1：こ、この状況でどうにか？
+？！
+
+＠アヴィケブロン
+ああ。[r][#仕掛けと組み込みは終わった]。
+[k]
+
+＠アヴィケブロン
+それではこの混沌の状況を一気に[r]引っ繰り返す。
+[k]
+
+＠アヴィケブロン
+ゴーレム起動。[r][#我が目は無限なる視野を持つ:　コ　ク　マ　ー　・　ベ　ル　・　イ　ン　フ　ィ　ニ　ト　]。
+[k]
+
+[messageOff]
+[charaMoveReturn D -3,0 0.25]
+[se ade25]
+[wt 1.0]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaSet E 1098123600 1 オプリチニキ]
+[charaSet C 1098127000 1 ゴーレム2]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFace G 3]
+[charaFadein A 0.1 2]
+[charaFadein G 0.1 0]
+[se ad57]
+[seVolume ad57 0 0.2]
+
+＠ヤガ叛逆軍
+この……へ……？
+[k]
+
+[seVolume ad57 0.5 0.5]
+
+＠G：ヤガ市民
+やりやがっ……え？
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[seVolume ad57 0.5 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠オプリチニキ
+[FFFFFF]？[-]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[seStop ad57]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFace C 0]
+[charaFadein F 0.4 200,0]
+[wt 0.1]
+[charaFadein C 0.4 -200,0]
+
+[wt 1.0]
+
+[charaFadeout F 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[effect bit_talk_42]
+[se adm15]
+[wt 0.7]
+[effectStop bit_talk_42]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠オプリチニキ
+！？
+[k]
+
+[messageOff]
+[effect bit_talk_14]
+[effect bit_talk_13]
+[se bac151]
+[wt 0.7]
+[charaFadeout E 0.1]
+[wt 0.1]
+[se bac385]
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFace A 2]
+[charaFadein G 0.1 0]
+[charaFadein A 0.1 2]
+
+＠G：ヤガ市民
+ひ、ひいいいいい！？
+[k]
+
+[messageOff]
+[se ad132]
+[wt 0.1]
+[se ad443]
+[charaMove A 300,0 0.4]
+[charaMove G -300,0 0.4]
+[charaFadeout A 0.4]
+[charaFadeout G 0.4]
+[wt 0.5]
+[seStop ad132 0.5]
+[seStop ad443 0.5]
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠アヴィケブロン
+命令は二つ。
+[k]
+
+＠アヴィケブロン
+武器を集めて運べ。[r][#殺戮猟兵:オプリチニキ]は潰せ。
+[k]
+
+＠アヴィケブロン
+既に街中に埋め込まれたゴーレムが動き出している。[r]核となる素材を設置し、建物を材料にすることでね。
+[k]
+
+＠アヴィケブロン
+幸いにも、この都市……いや、この世界の石壁は[r]どれも魔力が込められている。
+[k]
+
+＠アヴィケブロン
+ゴーレムの素材としては、なかなかのものだ。
+[k]
+
+＠アヴィケブロン
+とはいえ、建物だの石壁だのがかなり破壊されるが、[r]人命には代えられない、ということで勘弁して欲しい。
+[k]
+
+＠アヴィケブロン
+ついでに言うと、火事になったところも[r]ゴーレムが周囲を破壊することで、延焼は抑えた。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+こ、こんな……使い方が……。[r]時間が掛かる訳です……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠アヴィケブロン
+すまないね、もう少し早く設置できれば[r]良かったんだが。
+[k]
+
+＠アヴィケブロン
+マスター、他に何かすることは？
+[k]
+
+？1：な、なんにもありません
+
+＠アヴィケブロン
+うん。[r]それでこそ、労働の甲斐があったというものだ。
+[k]
+
+？2：とりあえず撤退を……
+
+＠アヴィケブロン
+そうだね、ここは最前線。[r]とりあえず撤退の準備をするべきか。
+[k]
+
+＠アヴィケブロン
+その前に露払いだ。[r]では、この混乱の責任を取ってもらうとしよう。
+[k]
+
+？！
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_82 0.4]
+[wait fade]
+[soundStopAll]
+[end]

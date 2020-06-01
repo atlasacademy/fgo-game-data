@@ -1,0 +1,621 @@
+
+
+
+＄94-04-78-17-2-0
+
+
+
+
+[soundStopAll]
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 25005000 1 ボイジャー]
+[charaSet C 3043000 1 エリセ]
+[charaSet D 5025001 1 エジソン]
+[charaSet E 2016000 1 エミヤ・オルタ]
+[charaSet F 1098192800 1 マリー]
+[charaSet G 98006200 1 ？？？]
+[charaSet H 98006200 1 エネミー１]
+[charaSet I 98006200 1 エネミー２]
+[charaSet J 3006001 1 弁慶]
+[charaSet L 98115000 1 エフェクト用]
+
+[scene 47001]
+
+[se adm13]
+[seVolume adm13 0 0]
+
+[fadein black 1.5]
+[seVolume adm13 1.5 0.2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠マシュ
+……電車を降りたら、すっかり山の中です。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠マリー
+なんだか寂しいところねえ。[r]心なしか嫌な気配も感じるんだけど……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[seStop adm13 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠エミヤ・オルタ
+ご明察だ。見ろ、そこにも、ここにも[line 3]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.4]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaDepth G 3]
+[charaDepth H 2]
+[charaDepth I 1]
+
+[charaTalk off]
+[charaFace G 0]
+[charaFace H 0]
+[charaFadein G 0.4 -300,0]
+[charaFadein H 0.4 260,0]
+[wt 2.0]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_5 0.7 0.5]
+[seStop adm13 0.7]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_5 0.7 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaFace G 0]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadein G 0.4 -350,0]
+[charaFadein H 0.4 0,0]
+[charaFadein I 0.4 350,0]
+[wt 2.0]
+
+＠？？？
+[image berserker_language_2]
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_5 0.7 0.5]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_5 0.7 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk on]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠エミヤ・オルタ
+亡霊どもが湧き出ているな。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠マシュ
+先輩、囲まれています！[r]早速ですが、ご指示を[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠エリセ
+かれらは何もしないよ。[r]まあ、不気味だろうけれど。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+……エリセさん。[r]なぜ、わかるのですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠エリセ
+わかるよ。私、プレイヤーだもの。[r][%1]、[&きみ:あなた]と同じさ。
+[k]
+
+[charaFace C 20]
+＠エリセ
+[#遊戯界:monde du jeu]に招かれた者は二通りに分かれた。[r]この[#異変:せかい]に取り込まれた者と、そうじゃない者。
+[k]
+
+[charaFace C 0]
+
+＠エリセ
+[&きみ:あなた]も私も、ゲームの一部にはならなかった。
+[k]
+
+＠エリセ
+サーヴァントたちのように、[r]その意識ごと取り込まれはしなかった。
+[k]
+
+＠エリセ
+自分の意志を保ち、[#遊ぶ:たたかう]ことができる。
+[k]
+
+？1：自分にも、この世界で[line 3]
+？2：何かを為す役割があるってこと？
+
+？！
+
+[charaFace C 5]
+＠エリセ
+そう。他とは違うんだ。[r]そのきっかけは……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ボイジャー
+…………。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠エリセ
+きみだったのだろうね。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_5 0.7 0.5]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[charaTalk off]
+[charaFace G 0]
+[charaFace H 0]
+[charaFadein G 0.1 -300,0]
+[charaFadein H 0.1 260,0]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_5 0.7 1.0]
+[wait wipe]
+[wt 1.0]
+
+[charaTalk on]
+
+
+＠エリセ
+かれらは、ゲームの[#雰囲気:フレーバー]の一部。[r]自分の意志では何もできない。
+[k]
+
+＠エリセ
+動き出すとしたら、ルールの一部として。
+[k]
+
+＠エミヤ・オルタ
+そんなルール、壊しちまえばよかろう？
+[k]
+
+＠エリセ
+最初からそのために戦ってるよ、私は。
+[k]
+
+＠エリセ
+[#遊戯界:このせかい]を壊すために。[r]大切なものを取り戻すために。
+[k]
+
+＠エリセ
+本当は、私ひとりで片づけるつもりだったけど[line 3]
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_5 0.6 0.5]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_5 0.6 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk depthOff]
+[charaDepth B 4]
+[charaDepth C 5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+
+[charaFace B 0]
+[charaFadein B 0.1 2]
+＠エリセ
+きみたちと競うのも、悪くないかなって今は思う。
+[k]
+
+？1：今度のゲームは？
+？2：勝利条件は？
+
+？！
+
+[charaFace C 13]
+＠エリセ
+なんか……[&きみ:あなた]さ、最初から結構やる気だったよね。[r]楽しんでるの？　たいした肝のすわりようだ。
+[k]
+
+[bgmStop BGM_EVENT_5 1.5]
+
+[charaFace C 0]
+＠エリセ
+……設定された勝利条件はおそらくこうだ。[r]見える？　山道を登った先に[line 3]
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.7 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+
+[scene 95900]
+[cameraMove 0.1 0,0 1.3]
+[wt 1.0]
+
+[wipein rectangleStripUpToDown 0.7 1.0]
+[wait wipe]
+[wt 0.4]
+
+[bgm BGM_EVENT_62 0.1]
+
+[cameraMove 1.5 0,-85 1.3]
+[wt 2.5]
+
+
+＠エリセ
+神社がある。あそこがゴールだ。
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.7 1.0]
+[bgm BGM_EVENT_62 0.6 0.5]
+[wait wipe]
+
+[cameraHome 0.1]
+[scene 47001]
+[wt 1.0]
+
+[wipein rectangleStripDownToUp 0.7 1.0]
+[bgm BGM_EVENT_62 0.6 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 2]
+
+[charaFace C 0]
+[charaFadein C 0.1 0]
+＠ボイジャー
+きょうそう、かい？
+[k]
+
+＠エリセ
+……うん。先にたどり着いた方が勝ち。[r]要するに[line 3]これは“すごろく”だ。
+[k]
+
+＠エリセ
+サイコロを使う“すごろく”は和風のイメージだけど、[r]原型となったのはエジプトの世界最古の[#盤上遊戯:ボードゲーム]だ。
+[k]
+
+＠エリセ
+そのテーマは、古代エジプト人が[r]最も関心のあった“死と再生”。
+[k]
+
+[charaFace C 5]
+＠エリセ
+死後の世界を通過して、新たな生の世界へと至る。[r][line 3]それが本来のすごろくの姿だった。
+[k]
+
+[charaFace C 0]
+＠エリセ
+これが５番目のゲームだ……[r]最後のゲームとしても、確かにふさわしいのかも。
+[k]
+
+＠エリセ
+わかるかな、ボイジャー。[r]すごろくって、知ってる？
+[k]
+
+[charaFace B 7]
+＠ボイジャー
+さいころ、ふるんだね？
+[k]
+
+[charaFace C 1]
+＠エリセ
+めっちゃ振るよ。まあ、そこだけ押さえてれば。[r]ちょっとやってみて？
+[k]
+
+[charaFace B 1]
+＠ボイジャー
+できるよ。こうでしょ？
+[k]
+
+？1：仲がいいなあ
+？2：（エリセの表情がちょっとやわらかく……）
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+[charaShake C 0.05 3 3 0.3]
+[wt 0.5]
+＠エリセ
+いいから早く！　ボイジャーの周りに集まって！
+[k]
+
+[bgmStop BGM_EVENT_62 1.5]
+
+[charaFace C 5]
+＠エリセ
+今のボイジャーは[&きみ:あなた]の“駒”なんだから！[r]さあ、勝負だ！　[%1]！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[effect bit_talk_gamestart]
+[se ade444]
+[wt 4.1]
+
+[maskout white 0.2]
+[wait mask]
+
+[charaPut L 1200,1200]
+[charaEffect L bit_talk_41]
+[charaScale L 0.7]
+
+[pictureFrameTop cut170_gameframe_dark]
+[wt 0.1]
+
+[maskin white 1.0]
+[wait mask]
+[wt 0.4]
+
+[bgm BGM_EVENT_63 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[effect bit_talk_dice17]
+[voice 2500500_0_X010]
+[wt 6.0]
+[wait voice 2500500_0_X010]
+
+
+
+[se ad399]
+[charaPut L 0,-70]
+[cameraMove 0.2 0,0 1.5]
+[wipeout circleOut 0.4 1.0]
+[wait wipe]
+
+[cameraHome 0.1]
+[charaPut L 1200,1200]
+[charaEffectStop L bit_talk_41]
+[wt 1.0]
+
+[wipein circleIn 0.4 1.0]
+[seStop ad399 0.4]
+[wait wipe]
+
+[wt 0.4]
+
+？1：わわわわ！？
+？2：ワープした！？
+
+？！
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠マシュ
+移動距離、およそ700メートル！[r]エリセさんの姿が、もう見えません！
+[k]
+
+
+？1：ホントに『すごろく』だ[&ぞ:よ]、これは
+？2：ひとマス約100メートルってこと？
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+＠ボイジャー
+おもしろいね。けっこうはやいや。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+＠エジソン
+取り残された者はいないか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+＠マリー
+エリセさんだけよ。他は皆揃ってるわ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠マシュ
+ではエリセさんは、わたしたちにすごろくの先手を[r]譲ってくれたようですね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_63 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+＠エミヤ・オルタ
+おい。[r]どうやら、お出迎えがいるぜ。
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 2]
+[charaFadein J 0.4 0,-50]
+[wt 0.4]
+＠弁慶
+止[messageShake 0.05 3 3 0.3]まれぇい！[bgm BGM_EVENT_3 0.1][r]これより先へ押し通ること[#罷:まか]り成らん！
+[k]
+
+＠弁慶
+どうしてもと言うなら、勝負せい！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠マシュ
+弁慶さん……！？[r]こちらのマスの番人……ですか？
+[k]
+
+＠マシュ
+勝負と言いますと、[r]もし負けてしまえば、どうなってしまうのでしょう？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 0,-50]
+＠弁慶
+安心せい。命までは取らんとも。[r]立ち往生はしてもらうがな。
+[k]
+
+？1：マスごとにこんな感じか[&:な]
+？2：だいたい理解した
+
+？！
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-50]
+＠ボイジャー
+じゃましないで。[r]ぼく、ほんきをだすからね……！
+[k]
+
+[messageOff]
+[maskout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[soundStopAll]
+[end]
+
+
+
+

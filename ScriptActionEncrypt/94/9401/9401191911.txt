@@ -1,0 +1,185 @@
+
+＄94-01-19-19-1-1
+[soundStopAll]
+[charaSet A 23001000 1 ＢＢ]
+[charaSet B 7016001 1 タマモキャット]
+[charaSet C 2008001 1 トリスタン]
+[charaSet D 1030000 1 鈴鹿御前]
+[charaSet E 10001000 1 パッションリップ]
+[charaSet F 2016002 1 エミヤ・オルタ]
+[charaSet G 98112500 1 エフェクト用]
+
+[bgm BGM_EVENT_52 0.1]
+[scene 41330]
+[fadein black 1.5]
+[wait fade]
+[charaPut G 0,0]
+[charaEffect G bit_talk_06]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+＠ＢＢ
+ナイスファイト！　ここまで強くなっていたとか、[r]後輩として嬉しいですセンパイ！
+[k]
+
+[charaFace A 5]
+＠ＢＢ
+でも悔しいので捨て台詞はちゃんと言いますから！[r]これで勝ったと[line 2]、思うなよぉ[line 3]だっ！
+[k]
+
+[bgmStop BGM_EVENT_52 0.7]
+[charaEffectStop G bit_talk_06]
+[messageOff]
+[charaSpecialEffect A flashErasure 0 1.7]
+[se ad52]
+[wait charaSpecialEffect A]
+[wt 1.0]
+
+？1：……あれ？
+？2：……本当に倒せちゃった……？
+
+？！
+
+[se ade49]
+[messageOff]
+[scene 10000 0.4]
+[wait scene]
+[wt 0.7]
+＠タマモキャット
+ダークネス！[r]ネコのインフラビジョンを以てしてもダークネス！
+[k]
+
+＠トリスタン
+……これは……音も遮断されているようです……[r]聞こえるのは私たちの音だけで……
+[k]
+
+[se ad267]
+[wt 0.2]
+＠鈴鹿御前
+あちち、あち！？[r]火を焚いても見えないってどういうコトよ！？
+[k]
+
+？1：みんな、集ま[&ってくれ:って]！
+？2：みんな、近くにいる[&のか:の]？
+
+？！
+
+＠？？？
+…………そこか。
+[k]
+
+[messageOff]
+[effect bit_shot_01]
+[se bac21]
+[wt 0.4]
+[se ad170]
+[wt 0.4]
+
+＠？？？
+！
+[k]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.4 1]
+
+＠パッションリップ
+その奇襲、分かっていました！[r]出てきなさい、魔神柱！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[cameraMove 0.1 0,-80 1.2]
+[wait camera]
+
+[fadeout black 0.1]
+[wait fade]
+[scene 41200]
+[fadeMove black 0.4 0.8]
+[wait fade]
+[fadeMove black 0.2 1.0]
+[wait fade]
+[wt 0.3]
+[fadeMove black 0.4 0.6]
+[wait fade]
+[fadeMove black 0.2 1.0]
+[wait fade]
+[wt 0.2]
+[fadeMove black 0.4 0.4]
+[wait fade]
+[fadeMove black 0.2 1.0]
+[wait fade]
+[wt 0.7]
+
+[fadein black 2.0]
+[wait fade]
+[wt 0.5]
+[bgm BGM_EVENT_5 0.1]
+[cameraMove 1.0 100,40 1.4]
+[wait camera]
+[wt 1.0]
+[cameraMove 3.0 -100,40 1.4]
+[wait camera]
+[wt 1.0]
+[cameraHome 1.0]
+[wait camera]
+[wt 1.0]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.4 1]
+＠トリスタン
+これは……壁に並んでいるものは[#棺:ひつぎ]ですか？[r]中には……幼い子供の……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠タマモキャット
+[line 6]。
+[k]
+
+？1：……カルデアの……管制室……？
+？2：コフィンが……こんなに……？
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠鈴鹿御前
+[line 6]そう。[r]そういうコトだったワケ、SE.RA.PHの動力って。
+[k]
+
+＠鈴鹿御前
+128騎のサーヴァントを召喚する以上、[r]128人のマスターがいるのは当然。
+[k]
+
+＠鈴鹿御前
+私は、私のマスターを知らなかった。[r]誰に[#喚:よ]ばれたのか、今どうしているのか知らなかった。
+[k]
+
+[charaFace D 10]
+＠鈴鹿御前
+その答えがこれなのか！[r]申し開きがあれば申してみよ、アーチャー！
+[k]
+[charaFadeout D 0.1]
+[messageOff]
+[wt 0.4]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.7 1]
+＠エミヤ・オルタ
+………………。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,670 @@
+
+
+＄03-00-01-10-1-1
+[soundStopAll]
+
+[charaSet A 1098126400 1 パツシィ]
+[charaSet B 7030001 1 アタランテ・オルタ]
+[charaSet C 99502600 1 マシュ]
+[charaSet D 9005001 1 ホームズ]
+[charaSet E 98002000 1 フォウ]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[scene 54100]
+
+[fadein black 1.0]
+[se ad555]
+[seVolume ad555 0 0.3]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠パツシィ
+相変わらずスゲえな、アンタたち……。
+[k]
+
+[charaFace A 0]
+
+[seStop ad555 2.0]
+
+＠パツシィ
+ん？[r]何だ、この臭い。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠アタランテ・オルタ
+……魔獣ではないな。ヤガの血の臭いか。[r]一応、探してみるか。望み薄だがな。
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[wait fade]
+[charaFadeout B 0.1]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠パツシィ
+おい、見つけたぞ。[charaFace A 3][r]見つけたが……。
+[k]
+
+？1：どうしたの？
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠アタランテ・オルタ
+これは……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠マシュ
+死んでいますね。[r]魔獣に殺されたのでしょうか。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠アタランテ・オルタ
+いや、違う。[r]これは……武器だな。
+[k]
+
+＠アタランテ・オルタ
+しかも、恐ろしく鋭い。[r]……ヤガの直剣や[#鉈:なた]ではこう上手く斬れまい。
+[k]
+
+＠アタランテ・オルタ
+[#旧種:ヒト]と違って、彼らの皮膚は頑丈だからな。[r]力任せに叩きつけるしか切断する方法はない。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 2]
+[charaTalk C]
+[charaFace A 0]
+[charaFadein A 0.1 0]
+[charaFace C 7]
+[charaFadein C 0.1 2]
+
+＠マシュ
+刃物を扱うヤガのハンターがいらっしゃった、とか。[r]あるいは、そういう刃を持つ魔獣が？
+[k]
+
+＠パツシィ
+さすがに聞いたことがねえな……。[r]それにこの足跡……
+[k]
+
+＠パツシィ
+これはアンタら旧種のものだ。[r]俺たちヤガの足跡じゃない。
+[k]
+
+[charaFace C 6]
+
+＠マシュ
+わたしたちと同じ……？
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.5 1.0]
+[bgm BGM_EVENT_81 0.5 0.4]
+[wait wipe]
+
+[scene 10000]
+
+[charaPut H 1200,1200]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[wipein leftToRight 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+[wt 0.1]
+
+[charaSet C 98001000 1 マシュ]
+[charaTalk C]
+[charaFace D 0]
+[charaFadein D 0.1 -256,-50]
+[charaFace C 12]
+[charaFadein C 0.1 256,-50]
+[scene 51601]
+[wt 0.1]
+[wipeFilter cinema 0.5 0]
+[fadein black 0.5]
+[wait fade]
+
+＠マシュ
+そう言えば、ヤガの村を盗賊から守った人の話が[r]ありましたが……
+[k]
+
+＠ホームズ
+ふむ。盗賊の腕を一瞬で落とした、というアレだね。[r]同一人物の可能性もあるが、判断材料は少ない。
+[k]
+
+＠ホームズ
+未知のサーヴァントである可能性もあるからね。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[charaSet C 99502600 1 マシュ]
+
+[scene 10000]
+[wipeOff]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipeout leftToRight 0.1 1.0]
+[wait wipe]
+
+[scene 54100]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.1]
+
+[wipein leftToRight 0.5 1.0]
+[bgm BGM_EVENT_81 0.5 1.0]
+[wait wipe]
+
+
+＠アタランテ・オルタ
+一応、気に留めておこう。[charaFace B 0][r]さて、間もなく日が暮れる。
+[k]
+
+[charaFace B 1]
+
+＠アタランテ・オルタ
+向こうの洞窟で休んでいくとしよう。[r]パツシィ、血抜きを頼むぞ。
+[k]
+
+[messageOff]
+[wipeout rightToLeft 1.0 1]
+[bgmStop BGM_EVENT_81 1.0]
+[wait wipe]
+[charaFadeout B 0.1]
+[scene 54701]
+[cameraMove 0.1 10,80 1.5]
+[wt 1.0]
+[wipein leftToRight 0.7 1]
+[cameraMove 2.5 -10,80 1.5]
+[se ad11]
+[seVolume ad11 0 0.2]
+[se ade24]
+[seVolume ade24 0 0.6]
+[wait wipe]
+
+[bgm BGM_EVENT_77 0.1]
+
+[wt 1.2]
+
+[fadeout black 0.7]
+[seStop ade24 0.7]
+[seStop ad11 0.7]
+[wait fade]
+
+[cameraHome 0.1]
+[wt 0.5]
+
+[fadein black 0.7]
+[wait fade]
+[wt 1.0]
+
+？1：うぷっ……
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠パツシィ
+この血の臭いは旧種にゃあキツいか。
+[k]
+
+＠パツシィ
+血を抜いて塩と薬草を混ぜ合わせた水に浸せば、[r]それなりに臭みは取れるから、もう少し待ってな。
+[k]
+
+＠パツシィ
+[#臓物:モツ]は別にしておく。[r]煮込んで革袋に入れておけば、魔獣の誘因素材になる。
+[k]
+
+＠パツシィ
+いざってときは、これを投げれば[r]魔獣たちはそちらに気が向くって寸法だ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+
+＠アタランテ・オルタ
+臓物は食えないのか？
+[k]
+
+＠パツシィ
+んー、まあ食えないことはないが。[r]美味いかどうかというとな。毒も強い。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠マシュ
+毒素がある、という事ですね。[r]わたしたちは避けた方が無難でしょう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠パツシィ
+ああ。だが背中あたりの肉なら[#毒:アク]もない。[r]そら、肉が焼けたぞ。食え食え。
+[k]
+
+[messageOff]
+[se adm27]
+[wt 0.3]
+[se adm26]
+[seVolume adm26 0 0.1]
+[wt 1.2]
+
+？1：ワイルドな味……
+
+[seStop adm26 0.2]
+
+＠パツシィ
+だろ？
+[k]
+
+？2：熊の肉がこんな感じだった
+
+[seStop adm26 0.2]
+
+＠パツシィ
+熊ってどんな生き物だ？[r]弱い？　美味い？　食いでがある？
+[k]
+
+？！
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaMoveReturn E 0,10 0.4]
+
+＠フォウ
+フォムフォム。[wt 0.2][charaMoveReturn E 0,10 0.4]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠パツシィ
+見れば見るほど不思議な生き物だ……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠アタランテ・オルタ
+我々からすれば、ヤガほど不思議な存在はないぞ。[r]この超極寒の世界で、どうやって生きてきたのか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠マシュ
+夜や寒い日には零下100度を突破する環境です。[r]いかに魔獣と合成したとはいえ[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+[bgmStop BGM_EVENT_77 0.7]
+
+＠パツシィ
+……他のヤガたちにそれを問い[#質:ただ]すんじゃないぞ。[r]それはかなり禁忌の領域に踏み込んでいるからな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アタランテ・オルタ
+……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠パツシィ
+魔獣を仕留めるに足る銃がなかった時代……。[r]弱者は肉になる時代が、確かにあったんだ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaPut H 2]
+[charaFace B 5]
+[charaFadein B 0.1 0]
+[charaFace C 6]
+[charaFadein C 0.1 2]
+
+＠全員
+！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_76 0.1]
+
+＠パツシィ
+昔は……自分の家畜にやってたんだろ？[r]品種改良ってやつ。
+[k]
+
+＠パツシィ
+俺たちが生き延びたのもそれさ。
+[k]
+
+＠パツシィ
+弱者を淘汰し、勝利者と敗北者を分析し、[r]強者のみを尊んだ。
+[k]
+
+＠パツシィ
+魔獣の力に溺れる奴、耐え切れなかった奴、[r]絶望した奴を糧とした。
+[k]
+
+＠パツシィ
+次は病気に[#罹:かか]る者、その子供を糧とした。[r]次は純粋に弱者を糧とした。
+[k]
+
+＠パツシィ
+そこまでやって、ようやく魔獣と[#旧種:ヒト]の[r]合成体から“ヤガ”になった。
+[k]
+
+＠パツシィ
+親父から聞かされたことがある。[r]……確か、元々はバーバ・ヤガーって単語だったらしいな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠マシュ
+バーバ・ヤガー……スラヴ圏の伝承にある妖婆ですね。[r]人を食い殺す魔女だったとか。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠パツシィ
+そこから取ったらしい。
+[k]
+
+＠パツシィ
+自分たちは弱者である[#旧種:ヒト]と訣別した[r]強き者[line 3]“ヤガ”であると。
+[k]
+
+＠パツシィ
+あるいは、[#人を食い殺す魔女]ってあたりが[r]重要だったのかもな。
+[k]
+
+＠パツシィ
+……つまりはそういうコトだ。[r]自分たちがやったことを絶対に忘れないために。
+[k]
+
+＠パツシィ
+俺たちはヤガである、と誰かが名付けた。[r]だから、俺とアンタたちはやはり違うんだろう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠マシュ
+……かもしれません。
+[k]
+
+＠マシュ
+わたしたちは弱く、脆く、[r]だからこそ結びついたのです。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠アタランテ・オルタ
+……私はどちらかというと、このヤガの世界が[r]性に合ってはいるのだが[line 3]
+[k]
+
+[charaFace B 4]
+
+＠アタランテ・オルタ
+子供たちはどうもな。[r]大人が相争い、喰らい合うなら歓迎するが。
+[k]
+
+？1：子供好きだよね
+？2：オルタでも相変わらずだね
+？！
+
+[charaFace B 3]
+＠アタランテ・オルタ
+……放っておいてくれ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠パツシィ
+……アンタのそういうところが、[r]ボスとして認められたのかもな。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_76 1.0]
+[wait fade]
+[charaFadeout A 0.1]
+[wt 1.0]
+[cameraMove 0.1 0,-18 1.2]
+[se ad11]
+[seVolume ad11 0 0.1]
+[se ade24]
+[seVolume ade24 0 0.3]
+[wipeFilter cinema 0.5 0]
+[fadein black 0.7]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠
+[line 3]夜になって再び起きた吹雪は止まず。[r]結局、朝になるまで待つことになった。
+[k]
+
+＠
+朝になったからといって、[r]せいぜい暗闇が薄暗がり程度になるものだが……。
+[k]
+
+＠
+ヤガの目には、それで充分。
+[k]
+
+＠
+何しろこうして、暗闇の洞窟で眠る[r][%1]も目で捉えられる。
+[k]
+
+＠
+[&彼:彼女]は瞼を閉じてはいるが、[r]ひそひそと映像のマシュと何かを話していた。
+[k]
+
+＠
+……さすがにそのやりとりを聞くのは、[r]自分でも[#憚:はばか]られた。
+[k]
+
+＠
+それに、表情から察するに大したことを喋っている訳でも、[r]まして自分について何か言っている訳でもないだろう。
+[k]
+
+＠
+アタランテはどうだろう。[r]彼女は瞼を閉じているが、閉じているだけだ。
+[k]
+
+＠
+視線を向けただけで、わずかに眉根が寄った。[r]即座に逸らす。
+[k]
+
+＠
+あと一秒、彼女を見ていたら目が開いていたに違いない。
+[k]
+
+＠
+アタランテはヤガではない。[r]だが、その姿は旧種というよりもヤガ寄りだ。
+[k]
+
+＠
+だから、ヤガたちも信頼を寄せるのだろう。[r][#少しだけ]違う存在なのだから。
+[k]
+
+＠
+……[%1]は違う。[r]姿形だけじゃなく、何か根本的な部分でヤガとは異なる。
+[k]
+
+＠
+遠い遠い過去。[r]耐えられなくて、置き去りにしてしまったもの。
+[k]
+
+＠
+それが胸に小さな棘のように突き刺さっている。
+[k]
+
+＠
+……これ以上考えるのはやめよう。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+
+＠
+瞼を閉じる。[r]眠りに落ち、何も考えない。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 2.0]
+[seStop ade24 2.0]
+[seStop ad11 2.0]
+[wt 2.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,379 @@
+
+
+＄94-03-35-31-7-0
+
+[soundStopAll]
+
+[charaSet A 1033002 1 シグルド]
+[equipSet B 9806930 1 バレンタイン礼装]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[scene 55700]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V010]
+[line 3]おや、マスター。[wait tVoice]
+[k]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V020]
+その様子では、当方に何か用向きが[r]あるようだな。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V030]
+……ふむ。[r]そしてその用向きとは。[wait tVoice]
+[k]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V040]
+直接に言えば、[r]バレンタインデー……。[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V050]
+チョコレート、だろうか。[wait tVoice]
+[k]
+
+？1：よくおわかりで……
+
+[charaFace A 1]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V060]
+当方が持つ、[#叡智:えいち]の結晶の力である。[wait tVoice]
+[k]
+
+？2：ご名答！
+
+[charaFace A 1]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V070]
+初歩的なことだよ、我がマスター。[wait tVoice]
+[k]
+
+[charaFace A 3]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V080]
+……フッ、ただの物真似だ。[r]気にせずとも良い。[wait tVoice]
+[k]
+
+？！
+
+？1：という訳で……
+？2：チョコレート、どうぞ！
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFace A 10]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V090]
+ありがとう。[r]心より感謝を。[wait tVoice]
+[k]
+
+[charaFace A 2]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V100]
+む？[r]ブリュンヒルデからは貰ったのか、と？[wait tVoice]
+[k]
+
+[charaFace A 3]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V110]
+……一応は、な。[r]いや、この話はやめておこう。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V120]
+それよりも、だ。[r]当方からも贈り物がある。[wait tVoice]
+[k]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V130]
+だがその前に、[r]少しばかり測定に付き合って欲しい。[wait tVoice]
+[k]
+
+？1：測定？
+？！
+
+＠シグルド
+[tVoice ValVoice_103300 0_V140]
+ああ。[r]まずは、貴殿の目を見せてもらおう。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad7]
+[charaMoveScale A 1.4 0.25]
+[charaMove A 0,14 0.25]
+[wt 0.5]
+
+？1：近い近い近い！
+？！
+
+[charaFace A 2]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V150]
+いや、近くなければダメなのだ。[r]貴殿の視力を測らせてもらうにはな。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V160]
+じー……。[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+？1：げん、かい……！
+
+[charaFace A 1]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V170]
+……大変失礼した。[wait tVoice]
+[k]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V180]
+これにて、測定終了である。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad7]
+[charaMoveScale A 1.0 0.25]
+[charaMove A 0,0 0.25]
+
+[branch select01_03]
+
+？2：眼鏡に、射貫かれる……！
+
+[charaFace A 5]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V190]
+真の英雄は目で殺す、と[r]カルナが言っていたが……。[wait tVoice]
+[k]
+
+[charaFace A 7]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V200]
+安心して欲しい。[r]当方の眼鏡はビームは撃たぬ。[wait tVoice]
+[k]
+
+
+？！
+
+？1：そういうことではなく……！
+？！
+
+[charaFace A 10]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V210]
+よし、終わったぞ。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad7]
+[charaMoveScale A 1.0 0.25]
+[charaMove A 0,0 0.25]
+
+[label select01_03]
+
+[wt 0.7]
+
+[charaFace A 0]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V230]
+それでは取得したこの情報をルーンに[r]刻み……。[wait tVoice]
+[k]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V240]
+ダ・ヴィンチ殿からいただいた素材の切れ端を[r]混ぜて……。[wait tVoice]
+[k]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V250]
+あとは『原初のルーン』により、[r]素材を固着化……。[wait tVoice]
+[k]
+
+[charaEffect H bit_talk_41]
+[charaPut H 1]
+[charaFace A 7]
+[charaShake A 0.05 3 3 0.4]
+[se ad39]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V260]
+ぬうん！[wait tVoice]
+[k]
+
+[messageOff]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_41]
+[seStop ad39 0.5]
+[wt 0.5]
+
+[se ad79]
+[wt 0.1]
+
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[charaFace B 0]
+[charaFadein B 0.5 0,-70]
+[wt 2.0]
+[charaFadeout B 0.4]
+[wt 0.5]
+
+？1：眼鏡ができた[line 3]！？
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V270]
+いかにも。[wait tVoice]
+[k]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V280]
+……マスター、貴殿の視力が良いことは[r]承知している。[wait tVoice]
+[k]
+
+[charaFace A 8]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V290]
+なのでこの眼鏡には、それ以外の機能を[r]付け加えることにした。[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V300]
+眼精疲労の自動回復機能。[r]視覚的混乱の自動抑制機能。[wait tVoice]
+[k]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V310]
+強烈な光、あるいは見てはならぬものを[r]見ることで目が潰れる……。[wait tVoice]
+[k]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V320]
+そういった[#事例:ケース]を、[r]この眼鏡は防いでくれるだろう。[wait tVoice]
+[k]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V330]
+おまけに頑丈だ。[wait tVoice]
+[k]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V340]
+サーヴァントならともかく、[r]そこらの獣では、貴殿の眼球に傷一つつけられまい。[wait tVoice]
+[k]
+
+[charaFace A 10]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V350]
+これを[#以:もっ]て、貴殿の贈り物への[r]返答としたいのだが、いかがか？[wait tVoice]
+[k]
+
+？1：どうも何も……
+？2：ありがとう！
+？！
+
+[charaFace A 1]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V360]
+なんの。[wait tVoice]
+[k]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V370]
+貴殿は当方のような無骨極まる存在に、[r]礼儀を尽くしてくれる。[wait tVoice]
+[k]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V380]
+召喚されて以来の感謝、[r]この眼鏡に全てを籠めたつもりだ。[wait tVoice]
+[k]
+
+＠シグルド
+[tVoice ValVoice_103300 0_V390]
+あとは、当方のセンス次第。[r]つまり、似合っているかどうかだが[line 3][wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.5]
+[se ade158]
+[wt 1.0]
+
+？1：どうかな？
+？！
+
+
+[messageOff]
+[charaFace A 0]
+[wt 1.0]
+[charaFace A 8]
+[wt 1.5]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

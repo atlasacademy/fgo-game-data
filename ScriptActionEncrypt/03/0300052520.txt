@@ -1,0 +1,151 @@
+
+＄03-00-05-25-2-0
+
+[soundStopAll]
+
+[charaSet A 4039002 1 マンドリカルド]
+[charaSet B 8001400 1 マシュ]
+[charaSet C 1098182700 1 アトランティス防衛兵]
+[charaSet D 1038000 1 イアソン]
+
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+
+[cameraMove 0 0,0 1.01]
+
+[scene 86000]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠マンドリカルド
+マシュ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+＠マシュ
+はい！　バンカーボルト射出、[r]貫通機能によりエンジンを破壊します！
+[k]
+
+[charaFace B 2]
+＠マシュ
+たああああああーー！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[se ad171]
+[cueSe Battle bac153]
+[effect bit_talk_14]
+[wt 0.4]
+
+
+[se ad709]
+[cueSe Battle bac98]
+[fowardEffect bit_talk_impactlanding]
+[shake 0.02 3 3 0.8]
+[wt 2.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠マンドリカルド
+続いて[line 3][r]おらよっと！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[cueSe Battle bac14]
+[effect bit_talk_v_slash01]
+[wt 0.4]
+
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[charaFadeout A 0]
+[shake 0.02 3 3 0.8]
+[wt 1.6]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0 1]
+＠アトランティス防衛兵
+ビームセイル、破損！[r]くそ、修繕を……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠マンドリカルド
+脱出だ、掴まれ！
+[k]
+
+
+[messageOff]
+[wt 0.1]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[wt 0.1]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[wipeout rightToLeft 0.4 1.0]
+[wait wipe]
+
+[scene 85800]
+[wt 0.5]
+
+[wipein leftToRight 0.4 1.0]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,80]
+[charaMove A 0,-10 0.2]
+[wt 0.2]
+[se ad223]
+[shake 0.05 2 2 0.2]
+[wt 0.2]
+[charaMove A 0,0 0.2]
+[wt 0.7]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠イアソン
+ようし、戻ってきたな！[r]残り九十隻はいる、まだまだ先は長いぞ！
+[k]
+
+＠イアソン
+そして、恐らくこれをやれるのは、[r]あと一度か二度が限界だろう！
+[k]
+
+＠イアソン
+まあ、少しでも減らせればめっけものだ！[r]よし、次に行け行け！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

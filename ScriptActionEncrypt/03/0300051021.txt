@@ -1,0 +1,392 @@
+
+＄03-00-05-10-2-1
+
+
+[soundStopAll]
+
+[charaSet A 1098182700 1 アトランティス防衛兵]
+[charaSet B 1098182700 1 アトランティス防衛兵]
+[charaSet C 4039002 1 マンドリカルド]
+[charaSet D 6038002 1 シャルロット・コルデー]
+[charaSet E 8001410 1 マシュ]
+[charaSet F 1098158300 1 ネモ]
+
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[se bac6]
+[charaRoll J 90]
+[charaPut J -125,-175]
+[charaEffect J bit_talk_Slash_white_01_L]
+[wt 0.6]
+
+[se ad171]
+[fowardEffect bit_talk_ichimon01wh]
+[wt 0.4]
+
+[cueSe Battle bac151]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF50]
+[wt 0.1]
+
+[scene 85400]
+
+[charaFace A 0]
+[charaFace B 0]
+[charaFadein A 0 2]
+[charaFadein B 0 0]
+[charaShake A 0.03 4 4 0.8]
+[charaShake B 0.03 4 4 0.8]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[wt 1.2]
+
+
+[charaMove A 256,-50 0.4]
+[charaFadeout A 0.4]
+[wt 0.2]
+[charaMove B -256,-50 0.4]
+[charaFadeout B 0.4]
+[wt 0.2]
+[se ad144]
+[wt 0.2]
+[se ad144]
+[wt 1.4]
+
+
+[bgm BGM_EVENT_77 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠マンドリカルド
+後は武器を壊して……縛ってと……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠シャルロット・コルデー
+終わりました、[%1]さん！
+[k]
+
+？1：お疲れ様！
+
+[charaFace D 0]
+＠シャルロット・コルデー
+いえいえ。[r]これも[%1]さんのためですから！
+[k]
+
+？2：怪我はない？
+
+[charaFace D 0]
+＠シャルロット・コルデー
+あ、少しありますけど。[r]でも大丈夫ですよ、このくらいなら[line 3]
+[k]
+
+[messageOff]
+[wt 0.1]
+[se bas3]
+[fowardEffect bit_talk_cure]
+[wt 2.0]
+
+[charaFace D 10]
+＠シャルロット・コルデー
+あっ……。
+[k]
+
+[charaFace D 4]
+＠シャルロット・コルデー
+その……すいません。[r]ありがとうございます。
+[k]
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 11]
+[charaFadein E 0.1 1]
+＠マシュ
+こほん、こほん。
+[k]
+
+[charaFace E 14]
+＠マシュ
+それでは、神殿に行きましょう！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠マンドリカルド
+……。[r]……。
+[k]
+
+＠マンドリカルド
+（こういうのには関わらないのが賢明なんだと[r]　悟っているマンドリカルドである）
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠ネモ
+どうしたの、アンコウのようにボケッとして。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠マンドリカルド
+……な、何でもないっす。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ネモ
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠マンドリカルド
+（この人？　いやこの英霊、なんか人間離れしてて[r]　怖いんだよな……）
+[k]
+
+＠マンドリカルド
+（地元にはあまりいなかったタイプだ……。[r]　喋りにくい……）
+[k]
+
+[charaFace C 2]
+＠マンドリカルド
+（いやまあ、俺が喋りやすいヤツなんて、[r]　どこにもいねえんだけどな！）
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[scene 85500]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_79 0.1]
+
+[wt 0.5]
+
+？1：やっぱり同じかな？
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠マンドリカルド
+そうっすね。[r]同じ操作でナノマシンを放出できると思います。
+[k]
+
+
+？2：いつ見てもＳＦだ……
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠マシュ
+そうですね。
+[k]
+
+＠マシュ
+これまでの[#異聞帯:ロストベルト]は文明的には停滞している[r]場所ばかりでしたから……。
+[k]
+
+＠マシュ
+いえ、[#秦:しん]はある意味で現代を上回る文明度でした。
+[k]
+
+＠マシュ
+でも、こんなに最先端の技術があるとは[r]思いませんでした。
+[k]
+
+＠マシュ
+あの衣服といい、住民の方々の強さといい……。
+[k]
+
+[charaFace E 12]
+＠マシュ
+……。[r]……いえ、何でもありません。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+？！
+
+＠マンドリカルド
+いくっすよー。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+＠アナウンス
+オリュンポス人　血統確認[se ad793][r]血統数値　ＥＲＲＯＲ
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+＠アナウンス
+テオス・クリロノミア　放出開始
+[k]
+
+
+[messageOff]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+
+[effect bit_talk_legado_d]
+[se ad821]
+[bgm BGM_EVENT_79 0.6 0.4]
+
+[wt 5.5]
+
+
+[bgm BGM_EVENT_79 0.6 1.0]
+
+[charaFace F 0]
+
+＠ネモ
+……。[r]……ふぅ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠マシュ
+どうでしょうか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ネモ
+……うん。[r]ほぼ、かなり、完璧に近い。
+[k]
+
+[charaFace F 1]
+＠ネモ
+……でも、ここまで来たら欲が出たな。
+[k]
+
+＠ネモ
+シオンと一緒に建造したノーチラスは、[r]あくまで代用品だ。
+[k]
+
+＠ネモ
+この神代の海を征く為に、僕のノーチラスに[r]頼らざるを得なかった仮初めの[#艦:ふね]。
+[k]
+
+＠ネモ
+シオンの要求はもっと高い地点にあった。[r]彷徨海ではそれを叶える資源がなかったけど……
+[k]
+
+＠ネモ
+このナノマシンで僕の霊基を補強していって、[r]それをボーダーと共有できれば、
+[k]
+
+[charaFace F 7]
+＠ネモ
+新しいノーチラス[line 3]新しいシャドウ・ボーダーが[r]目指せるかもしれない。
+[k]
+
+＠ネモ
+[%1]。[r]どうか僕を、その領域まで連れて行って欲しい。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠マシュ
+ドレイクさんとの約束もあります。[r]もう一騎分、いただきましょう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠マンドリカルド
+あいよ。それじゃ次は貰ったコードを試してと……。
+[k]
+
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_79 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

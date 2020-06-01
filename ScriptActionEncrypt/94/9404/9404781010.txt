@@ -1,0 +1,119 @@
+
+
+
+＄94-04-78-10-1-0
+
+[soundStopAll]
+
+[skip false]
+
+[maskout black 0]
+[wait mask]
+
+[charaSet A 3043000 1 エリセ]
+[imageSet B cut171_token_409 1]
+[charaSet C 9008001 1 アストライア]
+[charaSet D 98001000 1 マシュ]
+[charaSet T 5009000 1 エフェクト用ダミー]
+
+[scene 20730]
+
+[pictureFrameTop cut170_gameframe_bright]
+
+[skip true]
+
+[fadein black 0]
+[wait fade]
+[maskin black 1.0]
+[wait mask]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-50]
+
+＠エリセ
+最後の砦は、正義の裁きを為す方にお願いします！
+[k]
+
+[messageOff]
+[wt 0.1]
+[effect bit_talk_trajectory 0,-100]
+[se ad28]
+[wt 0.8]
+
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[charaTalk depthOff]
+[charaTalk off]
+
+[charaDepth T 1]
+[charaDepth B 2]
+[charaDepth C 3]
+
+[charaPut T 0,-10]
+[charaEffect T bit_talk_token_materialization]
+[cueSe NoblePhantasm_603800 NP_603800_1]
+[wt 2.5]
+[cueSeStop NP_603800_1 0.5]
+
+[charaFadein B 0.4 0,-210]
+[wt 1.2]
+
+[se ad29]
+[fadeout white 0.5]
+[wait fade]
+[charaEffectDestroy T bit_talk_token_materialization]
+[charaFace C 0]
+[charaFadein C 0.7 0,-50]
+[wt 0.2]
+[fadein white 0.5]
+[charaFadeout B 0.4]
+[wait fade]
+[wt 0.8]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+＠アストライア
+その望み、お引き受けいたしましょう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠マシュ
+アストライアさん……！　エリセさんの言う通り、[r]ギリシャの正義の女神でいらっしゃいますね。
+[k]
+
+？1：正義がひとつとは限らない[#戦場:リング]を自分は見てきた
+
+？2：今は誰であっても立ち向かうだけだ[&:よ]！
+
+？！
+
+[charaFace D 7]
+
+＠マシュ
+はい！　負けられません！
+[k]
+
+[messageOff]
+[maskout black 2.0]
+[bgmStop BGM_EVENT_48 2.0]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+

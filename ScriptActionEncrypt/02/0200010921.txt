@@ -1,0 +1,152 @@
+
+＄02-00-01-09-2-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 99502600 1 マシュ]
+[charaSet B 1002001 1 アルトリア・オルタ]
+[charaSet C 6026000 1 新宿のアサシン]
+[charaSet D 98111500 1 通信用ノイズ]
+[charaSet E 98111500 1 通信用ノイズ]
+
+[scene 38300]
+[fadein black 2.0]
+[wait fade]
+
+[se ad354]
+[charaPut E 0,-60]
+[charaEffect E bit_talk_06b2]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠アルトリア・オルタ
+[line 3]『[#約束された勝利の剣:エクスカリバー・モルガン]』！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+
+[seStop ad354 0.7]
+[shake 0.05 0 2 0.45]
+[flashin once 0.1 0.2 8224ffDF 8224ff40]
+[wt 0.2]
+[charaEffectStop E bit_talk_06b2]
+[se ad353]
+[flashin once 0.1 0.2 8224ffEF 8224ff40]
+[wt 0.25]
+[se ad352]
+[shake 0.05 5 5 3.4]
+[flashin once 0.4 3.0 8224ffFF 8224ff00]
+[wt 3.5]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠アルトリア・オルタ
+……仕留めた！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠新宿のアサシン
+だが、リア王を倒すのに焦りすぎたな。[r]息が切れてるぜ。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠アルトリア・オルタ
+それがどうした。[r]無法者に敗北するほど、
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠新宿のアサシン
+いやあ、面白いものを見せてもらった！[r]だが、そろそろ幕間か。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠アルトリア・オルタ
+マスター……！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+[wt 0.4]
+
+[charaSpecialEffect C erasureReverse 1 0.4]
+[se ad85]
+[seStop ad85 0.7]
+[wt 0.2]
+[charaScale D 0.5]
+[charaPut D 0,-80]
+[charaEffect D bit_talk_quickmove]
+[wipeout downToUp 0.3 1]
+[wait wipe]
+[fadeout black 0.1]
+[wait fade]
+[wipein circleIn 0.1 1]
+[wait wipe]
+[scene 28302]
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.7]
+
+？1：高い……！
+？！
+
+＠新宿のアサシン
+ははははは！[r]アディオス・アミーゴ！
+[k]
+
+＠新宿のアサシン
+そしてもちろん、カルデアの諸君もさよならだ。
+[k]
+
+[bgmStop BGM_EVENT_3 1.5]
+
+[charaPut D 1]
+[charaEffect D bit_talk_10]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0 1]
+[se ad31]
+＠マシュ
+通信がジャミングを受けています！[r]マスター[charaFadeout A 0.1][charaEffectStop D bit_talk_10][seStop ad31 1.5]……どうか…………無……で…………！
+[k]
+
+？1：マシュ……
+？2：……
+？！
+
+
+[messageOff]
+[wt 0.7]
+[bgmStop BGM_EVENT_3 1.0]
+[wipeout openEye 2.0 1]
+[wait wipe]
+[messageOff]
+[fadeout black 0.4]
+[wait fade]
+[wipein openEye 0.1 1]
+[wt 0.4]
+[soundStopAll]
+[end]

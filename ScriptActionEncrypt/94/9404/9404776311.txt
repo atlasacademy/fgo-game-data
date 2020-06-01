@@ -1,0 +1,200 @@
+
+
+
+
+＄94-04-77-63-1-1
+
+[soundStopAll]
+
+[skip false]
+
+[maskout black 0]
+[wait mask]
+
+[charaSet A 3010001 1 ロムルス]
+[charaSet B 1013001 1 カエサル]
+[charaSet C 7010001 1 カリギュラ]
+[imageSet D cut171_token_rrs 1]
+[imageSet E cut171_token_403 1]
+[imageSet F cut171_token_kgr 1]
+[charaSet G 1018001 1 アルテラ]
+[charaSet T 5009000 1 エフェクト用ダミー]
+
+[scene 20730]
+
+[pictureFrameTop cut170_gameframe_bright]
+
+[skip true]
+
+[fadein black 0]
+[wait fade]
+[maskin black 1.0]
+[wait mask]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk depthOff]
+[charaDepth T 4]
+[charaDepth D 5]
+[charaDepth E 6]
+[charaDepth F 7]
+[charaDepth A 1]
+[charaDepth B 2]
+[charaDepth C 3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+[charaEffect A bit_talk_token_change01]
+[wt 1.0]
+
+＠ロムルス
+還ろう……[#英霊の座:ロ 　ー 　マ]へ……！
+[k]
+
+[messageOff]
+[charaEffectStop A bit_talk_token_change01]
+[charaPut T 0,-10]
+[charaEffect T bit_talk_token_change02]
+[se ad39]
+[wt 3.2]
+
+[se ad29]
+[seStop ad29 1.5]
+[wt 0.5]
+[charaFadeout A 0.4]
+
+[charaEffectStop T bit_talk_token_change02]
+[charaTalk D]
+[charaFadein D 0.4 0,-210]
+[wt 1.5]
+
+[charaEffectDestroy T bit_talk_token_change02]
+
+[charaMove D -200,100 0.3]
+[se ad75]
+[charaFadeout D 0.2]
+[wt 0.4]
+[seStop ad75 0.5]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-50]
+
+[charaEffect B bit_talk_token_change01]
+[wt 1.0]
+
+＠カエサル
+やれやれ。ならば私が[#為政者:よごれやく]を引き受けるとしよう。[r]俗世での[#政:まつりごと]は嫌いではないしな。
+[k]
+
+[messageOff]
+[charaEffectStop B bit_talk_token_change01]
+[charaPut T 0,-10]
+[charaEffect T bit_talk_token_change02]
+[se ad39]
+[wt 3.2]
+
+[se ad29]
+[seStop ad29 1.5]
+[wt 0.5]
+[charaFadeout B 0.4]
+
+[charaTalk E]
+[charaFadein E 0.4 0,-210]
+[wt 0.5]
+
+[charaMove T 0,10 1.2]
+[wt 1.2]
+
+[charaFadeout E 0.4]
+[wt 0.5]
+
+[se adm19]
+[seVolume adm19 0 0.3]
+[seVolume adm19 1.0 1.0]
+[wt 0.5]
+
+[seStop adm19 1.7]
+[charaMove T 0,700 2.2]
+[wt 2.2]
+
+[charaEffectStop T bit_talk_token_change02]
+[wt 0.1]
+[charaEffectDestroy T bit_talk_token_change02]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+[charaEffect C bit_talk_token_change01]
+[wt 1.0]
+
+＠カリギュラ
+捧げ……終えた、か……。
+[k]
+
+[messageOff]
+[charaEffectStop C bit_talk_token_change01]
+[charaPut T 0,-10]
+[charaEffect T bit_talk_token_change02]
+[se ad39]
+[wt 3.2]
+
+[se ad29]
+[seStop ad29 1.5]
+[wt 0.5]
+[charaFadeout C 0.4]
+
+[charaEffectStop T bit_talk_token_change02]
+[charaTalk F]
+[charaFadein F 0.4 0,-210]
+[wt 1.5]
+
+[charaEffectDestroy T bit_talk_token_change02]
+
+[charaMove F 200,100 0.3]
+[se ad75]
+[charaFadeout F 0.2]
+[wt 0.4]
+[seStop ad75 0.5]
+[wt 0.5]
+
+[charaTalk depthOn]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+[charaEffect G bit_talk_06]
+
+＠アルテラ
+殲滅完了。私の、この世界での役割は終わった。
+[k]
+
+[messageOff]
+[wt 0.3]
+
+[se ade406]
+[wt 0.2]
+[flashin once 0.1 0.6 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaFadeout G 0.1]
+[wt 0.2]
+[charaEffectStop G bit_talk_06]
+[wt 0.1]
+[seStop ade406 0.6]
+[wt 1.0]
+
+[maskout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

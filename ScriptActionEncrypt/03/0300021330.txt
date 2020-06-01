@@ -1,0 +1,236 @@
+
+
+
+＄03-00-02-13-3-0
+[soundStopAll]
+
+
+[charaSet A 2031001 1 ナポレオン]
+[charaSet B 8001400 1 マシュ]
+[charaSet C 98002000 1 フォウ]
+[charaSet D 3012001 1 ブリュンヒルデ]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[cameraMove 0.1 0,0 1.01]
+
+[wt 1.0]
+[se ad207]
+[seVolume ad207 0.0 0.5]
+[wt 1.0]
+
+[scene 60601]
+
+[fadein black 1.5]
+[seVolume ad207 1.0 1.0]
+[wait fade]
+
+[wt 2.0]
+[seVolume ad207 1.0 0.3]
+[wt 1.0]
+
+＠ダ・ヴィンチ
+見えてきたよ～！[r]ふむ、あれがスカサハ＝スカディのお城か。
+[k]
+
+＠ダ・ヴィンチ
+要塞としての機能を意図しない、[r]近代以降のヨーロッパ様式の城郭をどこか思わせる。
+[k]
+
+＠ダ・ヴィンチ
+支配者の余裕か。[r]或いは、[#叛逆:はんぎゃく]者が存在しないがゆえの道理なのか。
+[k]
+
+＠ダ・ヴィンチ
+どちらにせよ、雪原より濃い魔力が渦巻いている。[r]あの“城”の中じゃ感知の類は困難になるだろうね。
+[k]
+
+＠ダ・ヴィンチ
+構造は如何にも分かりやすい。[r]巨大な主塔に繋がる大橋が、ただの一本きり。
+[k]
+
+＠ダ・ヴィンチ
+大きく迂回して基部から登るっていう手もあるけど、[r]はてさて。そちらの情報については未取得だ。
+[k]
+
+＠ダ・ヴィンチ
+さあ、諸君。[r]ここからが真のミッションスタートだ！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[seStop ad207 2.0]
+[wait fade]
+[wt 1.0]
+[scene 60900]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_80]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+[cueSe Battle bac170]
+[wt 0.8]
+
+＠ナポレオン
+直進あるのみ！[r]今回は、潜入でも敢えての囚虜でもなく[line 3]
+[k]
+
+[charaFace A 2]
+
+＠ナポレオン
+全軍突撃！　全軍突撃！[r]これは、新生[#大陸軍:グランダルメ]と魔剣使いとの決戦である！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[se ad14]
+[shake 0.05 0 4 2.0]
+[wt 1.5]
+[seStop ad14 0.5]
+[wt 0.7]
+[se ad625]
+[wt 2.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ナポレオン
+おおっと、さっそく出迎えか！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[cueSe Battle bac428]
+[charaPut H 1]
+[shake 0.05 3 10 1.5]
+[wt 1.0]
+[charaPut H 2400,2400]
+[charaEffectStop H bit_talk_voice01]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠マシュ
+大橋地下からムスペル巨人種が複数、出現！[r]既に接近に気付かれています！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ナポレオン
+邪魔だ！[r]押し通る！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠フォウ
+フォウ、フォウ！[r]キャーウ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[se ad51]
+
+＠ブリュンヒルデ
+[line 3]お任せください。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠ナポレオン
+おっと、悪いがアンタは力を温存しておいてくれ。[r]此処で消耗させるのはいかにも[#拙:まず]い！
+[k]
+
+[charaFace A 5]
+
+＠ナポレオン
+新兵！　それでいいな！
+[k]
+
+？1：当然！
+？2：……ん、初めて確認してくれた？
+
+？！
+
+[charaFace A 6]
+
+＠ナポレオン
+はは！　北欧から先の新生[#大陸軍:グランダルメ]はオマエが軸だ！[r]今のうちに慣らしておかんとな！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad57]
+[seVolume ad57 0 0.0]
+[seVolume ad57 4.0 1.0]
+[shake 0.05 0 1 0.2]
+[wt 1.5]
+[shake 0.05 0 2 0.2]
+[wt 1.7]
+[shake 0.05 0 3 0.2]
+[wt 1.2]
+[shake 0.05 0 6 0.2]
+[wt 1.0]
+[seStop ad57 0.2]
+[wt 1.0]
+
+[cueSe Battle bac428]
+[shake 0.05 3 10 1.5]
+[wt 1.0]
+[charaPut H 2400,2400]
+[charaEffectStop H bit_talk_voice01]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠マシュ
+来ます！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ナポレオン
+一体たりとも残さず砕くぞ！[r]背後のシャドウ・ボーダーを叩かれても面倒だ！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

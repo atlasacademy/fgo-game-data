@@ -1,0 +1,792 @@
+
+
+＄94-03-50-18-1-0
+
+[soundStopAll]
+
+
+[charaSet A 6014001 1 マタ・ハリ]
+[charaSet B 5030001 1 シェヘラザード]
+[charaSet C 1098163800 1 春日局]
+[charaSet D 3030000 1 パールヴァティー]
+[charaSet E 98110000 1 柳生但馬守]
+[charaSet F 10003000 1 殺生院キアラ]
+
+[charaSet I 98115000 1 エフェクト用]
+[charaSet J 98115000 1 エフェクト用]
+
+
+[scene 71700]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk off]
+[charaDepth A 4]
+[charaDepth B 6]
+
+[charaFace A 3]
+[charaFace B 3]
+[charaFadein A 0.1 2]
+[charaFadein B 0.1 0]
+[wt 2.0]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+[wt 0.5]
+[charaMoveReturn C 0,-5 1.5]
+[wt 2.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠マタ・ハリ
+ごめんなさいね～？　気になるのはわかるけど、[r]今は衣装のほうに魔力を回す余裕もあんまりなくて。
+[k]
+
+＠マタ・ハリ
+あと、意外に厳しい状況のような気がするから、[r]できるだけ慣れた格好でいたいのよ～～。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠シェヘラザード
+いつ補給を受けられるかもわからない状況です。
+[k]
+
+＠シェヘラザード
+申し訳ないのですが、やはり戦闘などの生存に関わる[r]部分に魔力は温存させていただければと。
+[k]
+
+＠シェヘラザード
+油断すると、普通に死んでしまいますので……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+＠春日局
+おほん。[wt 0.4][charaFace C 13]結局のところ、[r]ここは私の大奥ではありません。
+[k]
+
+＠春日局
+それなのに、助けてくれる方の異国文化を尊重せずに[r]大奥流を強いるのは違うだろう、という気がします。
+[k]
+
+[charaFace C 0]
+＠春日局
+なので問題ないですよ、ええ。大丈夫です。
+[k]
+
+[charaFace C 8]
+＠春日局
+……もし小姓衆の子供たちなどが[r]目の前に飛び出してきた場合は、
+[k]
+
+＠春日局
+教育上の問題が発生しますので[r]そのときにまた対処を考えましょう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠シェヘラザード
+ご理解、感謝いたします……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠マタ・ハリ
+勿論、もし問題が解決して普通の大奥に[r]私たちが入るような事になっちゃったら、
+[k]
+
+＠マタ・ハリ
+さすがにそちらに合わせるから安心してね？[r]郷に入っては郷に従えって言葉、知ってるわ。
+[k]
+
+＠マタ・ハリ
+和服を十二枚着ろって言われても黙って着るわよ～。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth D 0]
+[charaDepth C 1]
+
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+[wt 0.25]
+[fowardEffect bit_talk_tornado02]
+[se ad80]
+[seVolume ad80 0 0.5]
+[wt 0.35]
+
+[charaSpecialEffect C erasureReverse 1 0.3]
+[charaFace D 0]
+[charaFadein D 0.15 1]
+[wt 0.05]
+[seStop ad80 0.3]
+
+[wt 0.5]
+[charaTalk on]
+＠パールヴァティー
+とにかく今はこの迷宮を攻略するのが最優先です。
+[k]
+
+＠パールヴァティー
+お二人は頼りになると思いますから[r]安心してください、局さん。
+[k]
+
+[charaFace D 4]
+＠パールヴァティー
+さて。ではそろそろ前進を再開……おや？[r]どうされました、マスターさん？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[wt 0.3]
+[charaPut I 0,50]
+[charaEffect I bit_talk_liquor_communication01]
+[wt 1.5]
+
+？1：うーんうーん……
+？2：なんだか頭が痛くなってきた、ような
+？！
+
+[fadeout black 0.3]
+[bgm BGM_EVENT_77 0.3 0.4]
+[wait fade]
+[charaEffectStop I bit_talk_liquor_communication01]
+[charaPut I 1200,1200]
+[wt 1.0]
+[fadein black 0.5]
+[bgm BGM_EVENT_77 0.5 1.0]
+[wait fade]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マタ・ハリ
+大丈夫？　お水飲む？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠シェヘラザード
+おかしい、です。マスターは[r]お酒を飲んでいるわけでもないのに。
+[k]
+
+＠シェヘラザード
+この空間があまりに酒臭いのは確かですが、[r]それだけでどうにかなるとは思えません。
+[k]
+
+＠シェヘラザード
+顔も赤くないですし、対毒の性質はまだきちんと[r]働いているのでしょう。酔ってはいないはずです。
+[k]
+
+＠シェヘラザード
+なのに、なぜ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠柳生但馬守
+[line 3]頃合いではあるまいか、殺生院殿。
+[k]
+
+＠柳生但馬守
+貴殿は先程、この大奥というモノについて、[r]何かの答えをお持ちである様子を見せておられた。
+[k]
+
+＠柳生但馬守
+主殿の異変の説明もできるのではござらぬか。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠マタ・ハリ
+そうなの？　凄い！[r]それはぜひ教えていただきたいわ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠殺生院キアラ
+……何も特別な事ではございません。[r]あちらも隠す事なく口に出しておりましたし。
+[k]
+
+＠殺生院キアラ
+[#私:わたくし]は尼ですので、それが他人より[r]耳に残ったというだけの話。
+[k]
+
+[charaFace F 4]
+＠殺生院キアラ
+[#不殺生戒:ふせっしょうかい]。[#不妄語戒:ふ も う ご か い]。[r]それになぞらえるなら、この階層は[line 3][#不飲酒戒:ふおんじゅかい]かと。
+[k]
+
+？1：？
+？！
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaFace F 0]
+＠殺生院キアラ
+先の二つは、これ以前に[r]愛の神カーマが口走っていた言葉にございます。
+[k]
+
+＠殺生院キアラ
+すなわちこれが、大奥の各階層に[r]まつわるテーマなのでしょう。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠柳生但馬守
+てぇま、とな。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠殺生院キアラ
+はい。これらの言葉は、仏道における五戒……[r]悟りを得るために“してはならない”とされている戒め。
+[k]
+
+＠殺生院キアラ
+殺生をしてはならない。嘘をついてはならない。[r]酒を飲んではならない、をそれぞれ意味しております。
+[k]
+
+[charaFace F 7]
+＠殺生院キアラ
+さて、ここで今までの階層において、[#私:わたくし]たちが[r]してきた事を思い出せば……
+[k]
+
+＠殺生院キアラ
+どうも、それがこの大奥全体としての設計思想に[r]なっているのではないか、と思うのです。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠パールヴァティー
+してきた事と言えば……ええと。
+[k]
+
+＠パールヴァティー
+最初の階層では普通に女中と戦いました。[r]強さ的にはたいしたことないのが多かったですけど。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠柳生但馬守
+人ならざる人形と言えども、[r]殺生と言われればそうやもしれぬ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+＠パールヴァティー
+次の階層では、嘘の中に作られた道を進み……[r]そしてここでは、無理矢理お酒を……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠マタ・ハリ
+お酒を飲ませてどうするつもりだったのか、という事は[r]もうこの頭からは消えちゃってるんだけど。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠シェヘラザード
+なんとなく、“どこかへ連れていこうとしていた”という[r]感覚だけは、ええ、あったような……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠殺生院キアラ
+お酒を飲んで酔っていれば進めていた、というのは[r]今は仮定するしかないですが。
+[k]
+
+＠殺生院キアラ
+もしそれが正しければ……つまりこの大奥は、[r][#その戒を破ると先に進めるものだ]、と言えるでしょう？
+[k]
+
+？1：そ、そうかも！
+？！
+
+＠殺生院キアラ
+逆に考えると、[#戒を守っていれば進めなかった]、[r]という事でもあります。
+[k]
+
+＠殺生院キアラ
+それに今の状況を当て嵌めると[line 3]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠柳生但馬守
+[#酔わねば先に進めぬ]、という事か。[r]なればこそ、今の主殿の体調に異変が起こっていると。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠マタ・ハリ
+可能性はあるわねぇ。[r]お酒を飲んで[#いない]のが理由の頭痛なんて変な感じだけど。
+[k]
+
+＠マタ・ハリ
+いえ、今はまだそれで済んでるからいいにしても、[r]これからもっとひどくならないって保証はないわよね～？
+[k]
+
+＠マタ・ハリ
+最悪の場合は一歩も動けなくなったり、目とか鼻から[r]血を噴き出したりする事だってあるかもだし。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠シェヘラザード
+それはいけません。[r]死んでしまいます……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠殺生院キアラ
+なぜこのようなテーマを置いているのかは知りませんが、[r]意図的に向こうが大奥をこう造ったのだとすれば。
+[k]
+
+＠殺生院キアラ
+そこには何かの意図がある。ですから、[r][#その想定通りの歩き方をしすぎるのは危険だ][line 3]
+[k]
+
+＠殺生院キアラ
+と思いまして、先程は彼女たちのお誘いを[r]お断り申し上げたのですが。
+[k]
+
+[charaFace F 4]
+＠殺生院キアラ
+マスターが死んでしまってはたまりません。
+[k]
+
+＠殺生院キアラ
+何が起こるか分かりませんが、危険を承知で、[r]お酒を飲んで酔っていただくしか……
+[k]
+
+？1：頭痛ぐらい我慢できます
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠シェヘラザード
+いけません。頭痛は大病のサイン！[r]何度も言いますが、死んでしまいます……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？2：そこらに落ちてるお酒をグイッといきますか
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠マタ・ハリ
+こーらっ、ダメよ～？
+[k]
+
+＠マタ・ハリ
+相手の目的もわからないのに、そのお膳立てに[r]乗っちゃうなんて。危険すぎるでしょう？
+[k]
+
+＠マタ・ハリ
+そういう場合は、とりあえず時間を稼いで探るの。[r]ピロートークはそのために使うのよ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠パールヴァティー
+第三の道はないものでしょうか。[r]あちらの狙いに乗らず、かつ、無事に道を進めるような。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠マタ・ハリ
+そうは言ってもねぇ。うーんうーん……。
+[k]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaFace A 5]
+＠マタ・ハリ
+……？
+[k]
+
+[charaFace A 1]
+＠マタ・ハリ
+あ、思いついちゃった！　ちょっと試してみたい事が[r]あるのだけど、いいかしら？
+[k]
+
+？1：何かいいアイデアが？
+？！
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaFace A 0]
+＠マタ・ハリ
+可能性だけどね。
+[k]
+
+＠マタ・ハリ
+そもそも、『酔う』っていうのはどういう事なのかしら？
+[k]
+
+＠マタ・ハリ
+アルコールが実際に入らなくても、アルコールが入った[r]気分で酔っちゃう人もいるでしょう。
+[k]
+
+＠マタ・ハリ
+だからそれを[line 3]私の宝具でやってみようと思うの。
+[k]
+
+？1：マタ・ハリさんの宝具って……
+
+？！
+
+
+＠マタ・ハリ
+そう、『[#陽の眼を持つ女:マ　タ　・　ハ　リ]』。[#洗脳宝具]よ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠シェヘラザード
+お酒に酔えないマスターを、貴女の宝具で……
+[k]
+
+＠シェヘラザード
+[#酔っているのと同じ精神状態]にしてしまおう、[r]というわけですね？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠マタ・ハリ
+そう。それが『酔っているマスター』として[r]この大奥に認識されるかどうかは賭けだけど。
+[k]
+
+？1：ダメ元です
+？2：やってみましょう、お願いします！
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_82 1.0 0.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠マタ・ハリ
+いくわよ。力を抜いて、リラックスして。[r]結び、開き、私という女に溺れて[#頂戴:ちょうだい][line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[effect bit_talk_28]
+[wt 0.1]
+[se ade276]
+[wt 0.7]
+[fadeout ff8fbd 0.5]
+[wait fade]
+[wt 0.1]
+[fadein ff8fbd 0.5]
+[wt 1.5]
+
+
+[bgm BGM_EVENT_82 1.0 1.0]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+＠パールヴァティー
+どう……ですか？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[cueSe Servants_202900 bac655]
+[wipeout uzumaki 1.0 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[wipein uzumaki 1.0 1.0]
+[cueSeStop bac655 1.0]
+[wait wipe]
+[wt 0.5]
+
+？1：おお……酔っているような気がする……
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠マタ・ハリ
+どう？　頭は痛くない？
+[k]
+
+？1：むしろ気持ちいいです
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠殺生院キアラ
+酔ってはいないが、酔っている……[r]上手くルールの隙間をつけたようですね？
+[k]
+
+＠殺生院キアラ
+宝具でやっている事ならば、この階層を抜けた瞬間に[r]元に戻せるのでしょうし。万々歳かと。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠柳生但馬守
+とはいえ主殿が酔うておられる以上……
+[k]
+
+＠柳生但馬守
+我らは今まで以上に尽力せねばならぬ。[r]心得られよ、[#各々方:おのおのがた]。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠殺生院キアラ
+もちろんでございます。[r]この酩酊感は捨てがたいものですが、万事抜かりなく。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.2]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth C 0]
+[charaDepth D 1]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[wt 0.25]
+[fowardEffect bit_talk_tornado02]
+[se ad80]
+[seVolume ad80 0 0.5]
+[wt 0.3]
+
+[charaSpecialEffect D erasureReverse 1 0.3]
+[charaFace C 0]
+[charaFadein C 0.2 1]
+[wt 0.1]
+[seStop ad80 0.3]
+
+[wt 0.5]
+[charaTalk on]
+＠春日局
+話は聞かせていただきました。
+[k]
+
+＠春日局
+まずはまた・はり様、よくわかりませんが[r][%1]殿の窮地を救う術。
+[k]
+
+[charaFace C 1]
+＠春日局
+お見事にございます！[r]えらい！（なでなで）
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠マタ・ハリ
+まあ、うふふ？　こんな子供みたいにストレートに[r]褒められるのなんて、久しぶりだわ～？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠春日局
+ご苦労はされてきたのでしょうが、まだまだお若い。[r]私にとっては子供のようなものですよ。
+[k]
+
+[charaFace C 13]
+＠春日局
+さて[line 3]もし本当に“酔えば進める”という法則が[r]大前提としてあるなら、
+[k]
+
+＠春日局
+ここから次の階層に至る道筋自体にも、その法則に則った[r]何かの手がかりが隠されているかもしれません。
+[k]
+
+＠春日局
+最大限注意して……あと、足取りが怪しい[r][%1]殿からは
+[k]
+
+＠春日局
+目を離さぬようにして進みましょうね！
+[k]
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_82 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

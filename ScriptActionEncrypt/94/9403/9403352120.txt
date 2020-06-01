@@ -1,0 +1,249 @@
+
+＄94-03-35-21-2-0
+
+[charaSet A 2003001 1 ロビンフッド]
+[charaSet B 98006000 1 敵]
+[charaSet C 98024100 1 娘]
+
+[soundStopAll]
+
+
+[scene 20820]
+
+[fadein black 2]
+[wait fade]
+
+[se bac20]
+[charaPut B 0,0]
+[charaEffect B bit_shot_01]
+[wt 0.5]
+[se bac16]
+[shake 0.05 2 4 0.25]
+[wt 0.7]
+
+[wt 0.7]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+
+[wt 0.4]
+
+＠ロビンフッド
+[tVoice ValVoice_200300 0_V010]
+ほい、お仕事終了っと。[r]ここいらの山賊狩りもこいつで終わりですかねぇ。[wait tVoice]
+[k]
+
+＠ロビンフッド
+[tVoice ValVoice_200300 0_V020]
+しかしアンタも物好きだね、マスター。[r]わざわざオレに付き合う事はなかったろうに。[wait tVoice]
+[k]
+
+？1：おつかれさま。じゃあこれ
+？2：栄養補給をくらえ[line 4]！
+
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[charaFace A 0]
+＠ロビンフッド
+[tVoice ValVoice_200300 0_V030]
+[FFFFFF]？[-]　なんだっつうの、藪から棒に。[r]そりゃあ貰えるものなら何でも受け取[line 3][wait tVoice]
+[k]
+
+＠ロビンフッド
+[tVoice ValVoice_200300 0_V040]
+[line 9]。[r][line 12]。[wait tVoice]
+[k]
+
+？1：あれ……もしもし？
+
+？！
+
+[charaFace A 1]
+＠ロビンフッド
+[tVoice ValVoice_200300 0_V050]
+いや、失敬。[r]ちょいと予想外だったもんで固まっちまった。[wait tVoice]
+[k]
+
+＠ロビンフッド
+[tVoice ValVoice_200300 0_V060]
+バレンタイン、だっけ？　オレもお祭りは好きな方だし、[r]ありがたく受け取らせていただきますよ、っと。[wait tVoice]
+[k]
+
+[charaFace A 4]
+＠ロビンフッド
+[tVoice ValVoice_200300 0_V070]
+しっかし、そうなるとこっちも何か返さないとなあ。[r]我が物好きなマスターの役に立つものと言えば……[wait tVoice]
+[k]
+
+＠ロビンフッド
+[tVoice ValVoice_200300 0_V080]
+……んー、戦いの役には立たないが、[r]まあ、どこかに売れば路銀にはなるか。[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠ロビンフッド
+[tVoice ValVoice_200300 0_V090]
+ほい、僭越ながらマスター殿の騎士見習いの[#私:わたくし]から、[r]つまらないものですが、どうぞお納めくださいませ。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[equipSet C 9805220 1 ]
+[wait equipSet C]
+[charaFace C 0]
+[charaFadein C 0.5 0,-70]
+[wt 2.0]
+[charaFadeout C 0.4]
+[wt 0.5]
+
+？1：……銀貨？
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ロビンフッド
+[tVoice ValVoice_200300 0_V100]
+ああ。どこぞの悪徳領主が倒れた時の記念品でね。[r]それまでの銀貨を潰して作ったんだとさ。[wait tVoice]
+[k]
+
+＠ロビンフッド
+[tVoice ValVoice_200300 0_V110]
+オレには関係のない話だがねぇ。[r]どうしても貰ってくれ、って村娘に押しつけられた。[wait tVoice]
+[k]
+
+＠ロビンフッド
+[tVoice ValVoice_200300 0_V120]
+一時だが勝利の記念としてあったもんだ。[r]なら、御守り程度にはなるでしょ、たぶん。[wait tVoice]
+[k]
+
+？2：なんでさっき黙った[&んだ:の]？
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ロビンフッド
+[tVoice ValVoice_200300 0_V130]
+黙ってないですよ？　単に余所見してただけ。[r]ちょいとばかり面食らったっつーか。[wait tVoice]
+[k]
+
+＠ロビンフッド
+[tVoice ValVoice_200300 0_V140]
+ま、昔似たような事があったんだろうさ。[wait tVoice]
+[k]
+
+
+[messageOff]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[charaSet A 98110700 1 ロビンフッド_モノトーン]
+[charaSet C 98024100 1 娘]
+[charaFilter C silhouette 00000000]
+
+
+[fowardEffect bit_talk_rain01]
+
+[wipeFilter cinema 0.5 0]
+
+[scene 20823]
+
+[charaTalk C]
+[charaFadein C 0.4 1]
+
+
+[fadein black 1.0]
+[wait fade]
+
+
+[wt 2.0]
+[se ad59]
+[seVolume ad59 0 0.6]
+[charaFadeout C 0.7]
+[wt 0.5]
+[seStop ad59 1.0]
+[wt 1.0]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+[wt 2.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[wipeOff]
+[fowardEffectStop bit_talk_rain01]
+
+[charaFadeout A 0.1]
+
+[wt 1.0]
+
+[charaSet A 2003001 1 ロビンフッド]
+[charaSet C 98024100 1 娘]
+
+[scene 20820]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_2 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+＠ロビンフッド
+[tVoice ValVoice_200300 0_V150]
+なんつーか、せっかくの祝いの日にさ。[r]オレみたいな風来坊を呼び止めて、何かをした誰かがさ。[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 1]
+＠ロビンフッド
+[tVoice ValVoice_200300 0_V160]
+っていうか、バレンタインならこんな森に[r]しけこんでる場合じゃないっしょ！[wait tVoice]
+[k]
+
+＠ロビンフッド
+[tVoice ValVoice_200300 0_V170]
+さっさとカルデアに戻るとしますか。[r]祭り事なら派手に楽しまないと損だ。[wait tVoice]
+[k]
+
+＠ロビンフッド
+[tVoice ValVoice_200300 0_V180]
+さんざん馬鹿騒ぎした後、部屋に戻って[r]祭りの余韻を味わうのが通ってもんだぜ、マスター？[wait tVoice]
+[k]
+
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+[soundStopAll]
+[end]

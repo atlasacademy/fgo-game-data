@@ -1,0 +1,765 @@
+
+＄94-03-50-34-1-1
+[soundStopAll]
+
+[charaSet A 1098164200 1 巨大大奥女中ゴースト]
+[charaSet B 99502600 1 マシュ]
+[charaSet C 6014001 1 マタ・ハリ]
+[charaSet D 98110000 1 柳生但馬守]
+[charaSet E 1098158220 1 シオン]
+[charaSet F 1098158230 1 シオン_腕上げ_通信]
+[charaSet G 5030001 1 シェヘラザード]
+[charaSet H 1098163800 1 春日局]
+[charaSet I 3030000 1 パールヴァティー]
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+[scene 72200]
+
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0 1]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaPut J 1]
+[charaEffect J bit_talk_v_slash01]
+[wt 0.1]
+[cueSe Battle bac509]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[wt 0.1]
+[charaFadeout D 0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0 1]
+[charaShake A 0.04 4 3 0.7]
+[bgmStop BGM_EVENT_80 2.0]
+[wt 1.0]
+
+
+[charaSpecialEffect A enemyErasure 1 2.0]
+[cueSe Battle ba6]
+[wt 3.0]
+[cueSeStop ba6 0.3]
+
+[imageSet A cut103_item01 1]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[cueSe Battle bas2]
+[wt 0.2]
+[charaFadein A 0.7 0,-200]
+[wt 2.2]
+
+[charaFadeout A 0.4]
+[wt 0.5]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠マシュ
+戦闘終了[line 3][r]印籠、ドロップを確認しました！
+[k]
+
+？1：（あれ。今回は何も聞こえない？）
+？2：（やっぱり何か特別なのかな……）
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠マタ・ハリ
+で、どうかしら～？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠柳生但馬守
+[#慶喜:よしのぶ]……と、書かれているな。[r]狙い通りの品であろう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠シオン
+狙いが正しいかはまだ証明できていませんけどね。[r]ええと、探査探査。精神汚染なし、霊的トラップなし。
+[k]
+
+＠シオン
+総じて、危険性は認められない……と。[wt 0.9][charaFace E 11][bgmStop BGM_EVENT_77 0.6][r]ただ[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+どうかしましたか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+
+＠シオン
+アトラス院の魔術師として[#忸怩:じくじ]たる思いで言いますが、[r]“徳川化”には謎が多いんです。
+[k]
+
+＠シオン
+まったく新しい概念であるが[#故:ゆえ]に、それを測る完璧な[r]物差しをまだ私たちは持っていないというのが現状。
+[k]
+
+＠シオン
+これら将軍の印籠に、私では思いも寄らぬ[r]副作用がある可能性は否定できません。
+[k]
+
+[charaFace E 11]
+
+＠シオン
+報告を受けたカーマの[#言:げん]からすれば、
+[k]
+
+＠シオン
+今までの徳川化はこの迷宮を下りた堕落の結果、[r]というだけのようですが……。
+[k]
+
+[charaFace E 14]
+
+＠シオン
+ええ。つまるところ別に皆さんを[r]不安にさせたいわけではなく、
+[k]
+
+＠シオン
+完全な安全性は担保できない、という事だけは[r]言っておくべきだと思いましたので。
+[k]
+
+？1：迷っていられる状況じゃないよ
+？2：対抗できるのがこれしかないなら、使うしか……
+？！
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[charaFace E 0]
+＠シオン
+そうですね。結局のところ、[r]私たちにはこれ以外に手がないのです。
+[k]
+
+＠シオン
+選択肢を[#狭:せば]められている気はしないでもありませんが、[r]そもそも『大奥』は敵の陣地、いえ、敵そのもの。
+[k]
+
+＠シオン
+こちらに不利な状況が続くのは当然でした。[r]今はできる事をやる、ですよね。
+[k]
+
+[charaFace E 6]
+
+＠シオン
+では、礼装への組み込み開始です！
+[k]
+
+＠シオン
+勿論、今までの印籠と同じく、将軍の魂自体には[r]何の影響も与えませんのでご安心を！
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_62 1.0 0.4]
+[wait fade]
+
+[charaFadeout E 0.1]
+[charaPut J 1200,1200]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[fowardEffect bit_talk_cure]
+[wt 0.1]
+[cueSe Battle bas4]
+[wt 1.0]
+[fowardEffectStop bit_talk_cure]
+[wt 1.2]
+
+[bgm BGM_EVENT_62 0.5 1.0]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠マシュ
+これは……特徴的な波長が観測できます。
+[k]
+
+＠マシュ
+大奥を潜るという儀式的行為で発生していたものの、[r]魔術的逆位相です！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠シオン
+よろしい。即ちそれは“反徳川”の性質……
+[k]
+
+＠シオン
+少し調整すれば、より効率的にそれを身に[#纏:まと]う術式に[r]転換できるかもしれません。
+[k]
+
+＠シオン
+対徳川化コーティング術式、という感じのものですね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠マタ・ハリ
+まさに欲しかった力じゃない！？　やったわね！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+＠シェヘラザード
+死から遠ざかりました……本当に、よかったです……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+
+＠シオン
+欲を言えば、[%1][&くん:さん]に[r]染み付いているであろう徳川化を、
+[k]
+
+＠シオン
+根本から処理できる要素があれば[r]言う事なしだったのですが。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠マタ・ハリ
+それはできないの？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠シオン
+ええ、残念ながら。
+[k]
+
+[charaFace E 5]
+
+＠シオン
+詳細分析にはまだまだ情報も時間も足りないので、[r]基本的には印籠の中に在るものを転用するだけなんです。
+[k]
+
+[charaFace E 11]
+
+＠シオン
+で、これはどちらかと言えば外的な指向性に[r]偏っているので……
+[k]
+
+[charaFace E 14]
+
+＠シオン
+やはりカーマからの干渉を防ぐ障壁にするのが[r]もっとも確実な使い道というか、
+[k]
+
+＠シオン
+防御的にはそうするしかないというか。不具合を起こす[r]スイッチを入れさせない、といったイメージです。
+[k]
+
+[charaFace E 12]
+
+＠シオン
+あとは凝縮させてガンドみたいに撃ち出す、といった[r]攻撃手段にもできそうですねえ。
+[k]
+
+？1：充分な効果なのでは！
+？2：これでなんとかなる、かな
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgmStop BGM_EVENT_62 1.0]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠春日局
+…………。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+
+＠柳生但馬守
+お福殿。気が乗らぬか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk H]
+[charaFace H 12]
+[charaFadein H 0.1 1]
+
+＠春日局
+まぁ、気にならないと言っては嘘になりますけどね。
+[k]
+
+[charaFace H 5]
+
+＠春日局
+何度も言いますが、今は家光様を救うのが一番。[r]割り切りますよ！
+[k]
+
+[charaFace H 7]
+＠春日局
+……で！　[#乳母:めのと]として子供たちに質問です、[r]嘘をつかずに答えるように！
+[k]
+
+[charaFace H 13]
+＠春日局
+[line 3]これで、勝てますか？
+[k]
+
+？1：それは……
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠マシュ
+……断言はできません。[r]ようやく“戦いの場”に立てる状況になった、としか。
+[k]
+
+＠マシュ
+厳密なる戦力分析をした場合、[r]勝算は五分か、あるいは[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠春日局
+ありがとうございます、ましゅ様。[r]正直に言ってくださって。
+[k]
+
+＠春日局
+戦いはぱぁる様に任せっきりでしたが、[r]私もあの場にいた者。
+[k]
+
+＠春日局
+敵が尋常ならざる脅威であるのはわかっています。
+[k]
+
+[charaFace H 12]
+
+＠春日局
+そんなところに、そんな死地に[line 3]あなたがたの[r]ような若者たちが行こうというのです。
+[k]
+
+＠春日局
+そちらにも理由がある事とはいえ、万に一つの賭け、[r]というような勝算で突っ込ませるわけには……
+[k]
+
+[charaFace H 13]
+＠春日局
+あたら若い命を失わせるわけには、まいりません。
+[k]
+
+
+＠春日局
+どうか、慎重なご判断を。臨時ながら、あなたがたの[r]歩みをここまで導いてきた[#乳母:めのと]としてのお願いです。
+[k]
+
+？1：春日局さん……
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+
+＠柳生但馬守
+勝算は、有る。
+[k]
+
+＠柳生但馬守
+この印籠を手に入れた事で得た。[r]それは疑いようもない。
+[k]
+
+[bgm BGM_EVENT_67 0.1]
+
+＠柳生但馬守
+で、あるならば。
+[k]
+
+[charaFace D 5]
+
+＠柳生但馬守
+[#我らはそれを必ず掴む]。[r][#故:ゆえ]に勝算は充分。勝ち十割である。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 16]
+[charaFadein H 0.1 1]
+
+＠春日局
+！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠柳生但馬守
+先刻は一歩及ばず、不覚を取った。[r]だが次は十全たる状態の主殿がおられるのだ。
+[k]
+
+[charaFace D 5]
+
+＠柳生但馬守
+主が立ち向かわんとする以上、[r][#勝たねば武士がすたる]というもの。
+[k]
+
+＠柳生但馬守
+[#故:ゆえ]に負けぬ。[r]二言はない。
+[k]
+
+？1：[&ははっ:ふふっ]……ものすごい説得力です！
+？2：勿論。柳生さんの言うことなら
+
+？！
+
+[messageOff]
+[charaFace D 1]
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠シェヘラザード
+そう、マスターの力だけで戦うのではありません。[r]私たちサーヴァントのこともお忘れなく。
+[k]
+
+＠シェヘラザード
+マスターが力を一つ増やしたときでも、[r]私たちの力が一つ増えるだけとは限りません。
+[k]
+
+＠シェヘラザード
+十かもしれない。百かもしれない。[r]それが[line 3][#私たち]が、ここにいる意味です。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠マタ・ハリ
+同感ね。結局のところ、たとえどれだけ厳しい戦いでも、[r]私たちには負けるつもりなんてこれっぽっちもないの。
+[k]
+
+[charaFace C 1]
+
+＠マタ・ハリ
+だから大丈夫よ、きっと！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠春日局
+……そうですか。ふふ。[r]必ず勝つのであれば、私は要らぬ事を言っただけですね。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFace H 0]
+[charaFadein H 0.1 2]
+
+＠春日局
+それにしても、宗矩殿……。
+[k]
+
+＠柳生但馬守
+む。
+[k]
+
+＠春日局
+私が知るのは上様の兵法指南役。真の意味で戦場に[r]いらっしゃる宗矩殿は見た事がなかったのですが……
+[k]
+
+＠春日局
+やはり剣を極められた方の戦とは、最後には[r]あのような境地に至られるものなのですかねえ。
+[k]
+
+[charaFace H 1]
+
+＠春日局
+子供のようでもあり、禅問答のようでもあり……[r]なんだか可笑しくなってしまいました、ふふ。
+[k]
+
+[charaFace D 3]
+
+＠柳生但馬守
+む……。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠春日局
+ともあれ、申し訳ありません。[r]せっかくの空気に水をさしてしまいました。
+[k]
+
+＠春日局
+歳を取ると心配性になって困りますねぇ。
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaTalk off]
+[charaDepth H 0]
+[charaDepth I 1]
+
+[wt 0.25]
+[fowardEffect bit_talk_tornado02]
+[se ad80]
+[seVolume ad80 0 0.5]
+
+[wt 0.35]
+
+[charaSpecialEffect H erasureReverse 1 0.3]
+[charaFace I 1]
+[charaFadein I 0.15 1]
+[wt 0.05]
+[seStop ad80 0.3]
+
+[wt 0.5]
+
+＠パールヴァティー
+お気持ちはよくわかります。[r]優しい方ですね、春日局さんは。
+[k]
+
+[charaFace I 0]
+
+＠パールヴァティー
+ですが、ええ、心配はいりません。[r]負ける気がないというのは本当です。
+[k]
+
+＠パールヴァティー
+この“対徳川”の力以外にも、[r]私たちは大事な戦力を増やしていますから。
+[k]
+
+＠パールヴァティー
+シオンさんにマシュさん……そしてお二人に役立てて[r]いただける『情報』です。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠マシュ
+はい。可能な限りの対策を用意して臨むつもりです。[r]前回とはきっと、いえ、絶対に違った展開になるはずです。
+[k]
+
+＠マシュ
+ご安心ください！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk depthOff]
+[charaDepth H 0]
+[charaDepth I 1]
+
+[charaTalk off]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[charaFace H 0]
+[charaPut H 180,0]
+[charaFadeTime H 0.1 0.6]
+[wt 0.5]
+[charaFaceFade H 1 0.3]
+[wt 1.5]
+
+[charaFadeout I 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk on]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠シオン
+その通りですね。
+[k]
+
+[charaFace E 1]
+
+＠シオン
+さあ、いよいよ最終決戦です。[r][line 3]行きましょう！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_67 2.0]
+[wait fade]
+[charaPut J 1200,1200]
+[charaFadeout E 0.1]
+[wt 0.5]
+[soundStopAll]
+
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+
+[cueSe Battle bas2]
+[charaFace A 0]
+[charaFadein A 0.5 0,-200]
+[wt 1.4]
+
+＠
+[s 1000]
+　　　 [s 16]第十五代将軍『徳川慶喜の印籠』を手に入れた。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[wait fade]
+[end]

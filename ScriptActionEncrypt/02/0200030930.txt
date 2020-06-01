@@ -1,0 +1,354 @@
+
+＄02-00-03-09-3-0
+[bgm BGM_EVENT_3 0.1]
+
+
+[charaSet A 1017001 1 武蔵]
+[charaSet B 6019001 1 風魔小太郎]
+[charaSet C 98110000 1 柳生但馬守]
+[charaSet D 1098117900 1 アサシン・パライソ]
+[charaSet E 1098119210 1 清姫]
+[charaSet G 5009000 1 エフェクト用ダミー１]
+[charaSet H 5009000 1 エフェクト用ダミー２]
+
+[se ad11]
+[seVolume ad11 0 0.3]
+[scene 46902]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_gouka]
+
+[fadein black 1.0]
+[wait fade]
+
+＠清姫
+[line 3]殺します[line 3]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaScale H 1.5]
+[charaEffect H bit_talk_29]
+[se ad392]
+[wt 0.6]
+
+[wipeout rectangleStripRightToLeft 0.2 1]
+[wait wipe]
+[charaPut G 1200,1200]
+[charaPut H 1200,1200]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0 1]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.2 1]
+[wait wipe]
+
+
+＠風魔小太郎
+主殿！！
+[k]
+
+[messageOff]
+
+[charaFace B 5]
+[wt 0.2]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[wt 0.1]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+[wipeout rectangleStripLeftToRight 0.2 1]
+[wait wipe]
+[charaPut G 1]
+[charaPut H 1]
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.2 1]
+[wait wipe]
+
+[seStop ad11 2.0]
+[fadeout white 2.0]
+[bgmStop BGM_EVENT_3 2.0]
+
+[wt 1.9]
+[fowardEffect bit_talk_quickmove]
+
+[wait fade]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_gouka]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_29]
+[scene 10001]
+[fadein white 0.1]
+[wait fade]
+[wt 0.5]
+[wipeout openEye 1.5 1.0]
+[wait wipe]
+[scene 46902]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 2.0]
+[wipein openEye 1.5 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_5 0.1]
+[wt 0.4]
+
+＠風魔小太郎
+……良かった、無事、ですね……主殿……。
+[k]
+
+[charaMove B 0,-50 0.5]
+[wt 0.2]
+[charaFadeout B 0.4]
+[wt 0.3]
+[se ad144]
+[seVolume ad144 0 0.4]
+[seStop ad144 0.5]
+[wt 0.7]
+
+？1：小太郎しっかり！
+？2：炎から庇ってくれた[&のか……！？:の……！？]
+
+？！
+
+
+＠武蔵
+小太郎君、生きてる！？[r]こっちはパライソと睨み合ってるから見えないの！
+[k]
+
+＠風魔小太郎
+……問題、ありません。[r]霊核は無事……まだ僕は立ち上がれます……。
+[k]
+
+[messageOff]
+[wt 0.3]
+
+
+[charaTalk B]
+[charaFace B 5]
+[charaShake B 0.04 1 1 0.4]
+[charaFadein B 0.4 0,-50]
+[charaMove B 1 0.6]
+[wt 1.0]
+
+＠風魔小太郎
+それよりも今は！[r]清姫殿の正気を取り戻さなければ！
+[k]
+
+？1：そうだ、清姫は[line 3]
+？2：突然おかしな雰囲気になって、炎を
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠清姫
+昔話を……します、ね……皆さま……？
+[k]
+
+[charaFace E 1]
+
+＠清姫
+私、蛇を……[r]蛇の巣を荒らしてしまった事があるのです……
+[k]
+
+＠清姫
+本意ではありませんでした。[r]私、蛇にも命があるとわかっていたのです……
+[k]
+
+[charaFace E 0]
+
+＠清姫
+なのに……
+[k]
+
+＠清姫
+私、蛇の巣を………………。
+[k]
+
+＠清姫
+……卵だってあったのに。小さな命が、今にも[r]生まれようとしていたのに……私……。
+[k]
+
+[charaFace E 2]
+
+＠清姫
+……どうしてあんな事をしてしまったのでしょう。[r]私、私は……悔やんで、悔やんで……。
+[k]
+
+＠清姫
+それでも赦してくれない、蛇は、蛇が、[r]私のからだに擦り寄ってきて……ほら、ほら……！
+[k]
+
+＠清姫
+今も[line 3]こうして[line 3]
+[k]
+
+[bgmStop BGM_EVENT_5 0.3]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[wt 0.7]
+
+[se ad342]
+[se ad53]
+[seStop ad53 1.2]
+[wt 1.2]
+
+[se ad17]
+[shake 0.03 4 4 0.7]
+[wt 1.5]
+
+[bgm BGM_EVENT_3 0.1]
+
+？1：大蛇の死骸が再生した！？
+？2：焼け焦げたはずなのに！？
+
+？！
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠柳生但馬守
+[line 6]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠武蔵
+うっそ、完全に炭化したのに再生してるとか！[r]あれってもしかして西行法師の反魂術！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 19]
+[charaFadein D 0.1 1]
+
+＠アサシン・パライソ
+くく。策は二重三重に張る物でござるよ新免武蔵！
+[k]
+
+[messageOff]
+
+[charaFadeout D 0.7]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace E 1]
+[charaFadein E 0.1 0]
+[charaFace D 13]
+[charaFadein D 0.1 2]
+
+＠アサシン・パライソ
+さあ、姫。蛇は今も貴殿を赦してはいない。[r]見ろ、わらわらと蛇の子がこうも群れているぞ。
+[k]
+
+＠アサシン・パライソ
+殺せ。殺せ。[r]さすれば然る後に拙者が赦してしんぜよう。
+[k]
+
+[charaFace D 19]
+
+＠アサシン・パライソ
+拙者が殺して差し上げる。[r]故に、安堵してすべてを炎に包んで灼き尽くせ！
+[k]
+
+[charaFace E 0]
+
+＠清姫
+………………はい。そう、ですね[line 3]
+[k]
+
+？1：清姫！
+？2：パライソに操られてる！？
+
+？！
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠風魔小太郎
+昨晩パライソが最後に投げ放ったクナイ二本、[r]あれはもしや陽動か！　本当の狙いは[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠武蔵
+清姫へ妖術でも仕掛けてたっていうの！？[charaFace A 4][r]うう、私、術勝負とかてんで駄目なのよ素養もない！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace E 1]
+[charaFadein E 0.1 0]
+[charaFace D 19]
+[charaFadein D 0.1 2]
+
+＠アサシン・パライソ
+今さら気付いても後の祭りというものよ！[r]さあ、清姫、自らの罪の後始末を付けるが宜しい！
+[k]
+
+[charaFace E 2]
+
+＠清姫
+はい[line 3]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[wt 0.3]
+
+[se ad17]
+[wt 0.3]
+[shake 0.03 4 4 0.7]
+[wt 0.4]
+[seStop ad17 1.2]
+[wt 1.0]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

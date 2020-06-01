@@ -1,0 +1,328 @@
+
+＄03-00-05-15-4-0
+
+[soundStopAll]
+
+[charaSet A 1098123210 1 ゴルドルフ]
+[charaSet B 8001410 1 マシュ]
+[charaSet C 4039002 1 マンドリカルド]
+[charaSet D 1098181610 1 ローブの人物_背中]
+[charaSet E 6038002 1 シャルロット・コルデー]
+[charaSet F 1098124510 1 ダ・ヴィンチ]
+[charaSet G 1098181620 1 ローブの人物]
+
+[charaSet J 98115000 1 エフェクト用]
+
+[scene 84900]
+
+[se ad37]
+[seVolume ad37 0 0.1]
+[seVolume ad37 1.2 1.0]
+[fadein black 1.2]
+[wait fade]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 2.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[seStop ad37 3.0]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+[line 6]。
+[k]
+
+？1：[line 6]。
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠マンドリカルド
+（目の前にいるコイツ……。[r]　サーヴァント……だよな？）
+[k]
+
+＠マンドリカルド
+（いや、違うのか？[r]　サーヴァント……ではない、のか）
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+[line 3]ド、
+[k]
+
+？1：[line 3]ドクター！！！！
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se adm18]
+[wt 1.2]
+[seStop adm18 0.3]
+[wt 0.3]
+
+[charaTalk off]
+
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.6]
+[charaFadeout D 0.5]
+[wt 0.1]
+
+[charaFace G 1]
+[charaFadein G 0.6 1]
+[wt 0.6]
+
+
+＠ローブの人物
+[line 3]近寄るな。[r]頭が痛くなる。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+[charaFace B 4]
+＠マシュ
+[line 6]。
+[k]
+
+？1：（……やっぱり……）
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ローブの人物
+……今回はたまたまだ。[r]ここで起きた事は忘れろ。
+[k]
+
+＠ローブの人物
+船にいるカルデアの連中にも話すな。[r]あの中には、信用してはならない者がいる。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+……それは、どういう[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠ローブの人物
+そこまでの世話は焼けん。自分で考えろ。
+[k]
+
+＠ローブの人物
+アルテミス、オデュッセウス、ポセイドン。[r]その三重防壁を越えるのはおまえたちの仕事だ。
+[k]
+
+[charaFace G 1]
+
+＠ローブの人物
+自らの力でこの海を踏破するがいい。
+[k]
+
+[messageOff]
+[se adm20]
+
+[charaEffect G bit_talk_17_bl]
+[charaFadeTime G 1.0 0.7]
+[wt 1.0]
+
+＠ローブの人物
+それで、ようやくこの[#異聞帯:ロストベルト]の王の前に[r]立つ資格が与えられる。
+[k]
+
+？1：[line 3]待ってください！
+
+？！
+
+[charaFace G 0]
+
+＠ローブの人物
+もうこの異聞帯に見るべきものはない。[r]おまえたちの戦いに興味もない。
+[k]
+
+＠ローブの人物
+死にたくないのなら[line 3][r]いや、生きていたいのなら[#抗:あらが]え。
+[k]
+
+[charaFadeTime G 1.0 0.4]
+
+＠ローブの人物
+結果は変わらないだろうがな。[r]どうあれ、この星は救えまい。
+[k]
+
+[messageOff]
+[se ad598]
+[charaEffectStop G bit_talk_17_bl]
+[charaFadeout G 1.5]
+[bgmStop BGM_EVENT_81 3.0]
+[wt 2.2]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠マシュ
+あ……熱反応、完全に消失しました。[r]単独で転移……されたようです……
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠シャルロット・コルデー
+今の方は……一体……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠マシュ
+…………。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マンドリカルド
+落ち着け。[r]ともかく回復と、退避だ。
+[k]
+
+＠マンドリカルド
+……キリシュタリアがいる、ということは[r]オデュッセウスもこちらを把握している可能性が高い。
+[k]
+
+？1：そうだ、通信……！
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠ゴルドルフ
+[f large]何[messageShake 0.05 3 3 0.4]事があったのかね！？
+[k]
+
+＠ゴルドルフ
+いき、いきなり何か君たち全員の[r]バイタルサインが消えていてね！！
+[k]
+
+＠ゴルドルフ
+心臓が止まるかと思った！[r]いや止まったとも！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 31]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+落ち着いて、ゴルドルフくん！[r]喋りたいのはキミだけじゃないんだからね！
+[k]
+
+[charaFace F 33]
+
+＠ダ・ヴィンチ
+ああ、良かった……！[r]うん、全員無事なんだよね！？
+[k]
+
+？1：何とか……
+？！
+
+＠ダ・ヴィンチ
+そうか。
+[k]
+
+[charaFace F 24]
+
+＠ダ・ヴィンチ
+何が起こったかは、[r]後でゆっくり話してくれればいい。
+[k]
+
+
+[charaFace F 34]
+＠ダ・ヴィンチ
+今はひとまず撤退だ。[r]急げ！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_70 2.0]
+[wait fade]
+[soundStopAll]
+[end]

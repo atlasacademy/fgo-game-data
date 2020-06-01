@@ -1,0 +1,266 @@
+
+＄94-03-85-03-1-0
+
+
+[soundStopAll]
+
+[charaSet A 6015002 1 真田エミ幸]
+[charaSet B 5020000 1 アイリの方]
+[charaSet C 98112200 1 真田エミ村]
+[charaSet D 5028001 1 真田イリ之]
+[charaSet E 2027000 1 猿飛クロ助]
+[charaSet F 5041001 1 霧隠ミユ蔵]
+
+[charaSet G 98001000 1 家老マシュ]
+[charaSet H 3038000 1 長尾景虎]
+
+[charaSet I 98115000 1 エフェクト用]
+[charaSet J 98115000 1 エフェクト用]
+
+
+[scene 46800]
+
+[wipeFilter cinema 0.5 0]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 0,-50]
+[wt 0.4]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠真田エミ幸
+[line 3]真田は滅びるよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-50]
+＠アイリの方
+まあ、それは大変ね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+＠真田エミ村
+いやいや、父上、いったいどういうことですか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠真田エミ幸
+越後の長尾家を下した織田家を下したカルデア家が、[r]我が真田の領内に進軍してきている。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 0,-50]
+＠真田イリ之
+すみません、それ以前に話についていけて[r]いないんですけど……。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaPut I -256,-50]
+[charaPut J 256,-50]
+[charaEffect I bit_talk_quickmove]
+[charaEffect J bit_talk_quickmove]
+[se ad73]
+[charaFace E 2]
+[charaFace F 2]
+[charaFadein E 0.1 256,-90]
+[charaFadein F 0.1 -256,-90]
+[charaMove E 256,-50 0.1]
+[charaMove F -256,-50 0.1]
+[wt 0.6]
+
+[charaTalk on]
+[charaTalk E]
+＠猿飛クロ助
+大殿！　敵軍は既に城下に達し、[r]事態は抜き差しならない状態です！
+[k]
+
+
+[charaTalk F]
+
+＠霧隠ミユ蔵
+敵大将はあの越後の長尾景虎、[r][#先鋒:せんぽう]は織田の森長可の模様！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 0,-50]
+
+＠真田イリ之
+ク[messageShake 0.02 3 3 0.5]ロもミユも何してるの！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠真田エミ幸
+ふむ……、こうなっては仕方ない。[r]僕に一計がある、とにかく敵軍を迎え撃とう。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_5 1.5]
+[wait fade]
+
+[wipeOff]
+
+[charaFadeout A 0.1]
+
+[charaSet I 7035001 1 森長可]
+
+[scene 79900]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠家老マシュ
+[#先輩:との]、ここは信州上田、戦国に名高い真田家の領地です。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠長尾景虎
+真田といえば晴信の家臣で『攻め[#弾正:だんじょう]』の異名をとった[r]真田幸隆でしょうか？
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.2]
+
+[se ad60]
+[seVolume ad60 0 0.1]
+[seVolume ad60 0.3 1.0]
+[wt 0.3]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.5]
+[seStop ad60]
+
+＠真田エミ幸
+それは僕の父だね。さて、お初にお目にかかる謙信公。[bgm BGM_EVENT_3 0.1][r]僕は真田家の当主、真田エミ幸。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠真田エミ村
+そして私が次男の真田エミ村！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠真田イリ之
+そしてわたしが長女の、さ、真田イリ之！[r]……って、わたし、長女だったの！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠猿飛クロ助
+そしてわたしが真田十勇士の猿飛クロ助！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠霧隠ミユ蔵
+同じく二人しかいませんが十勇士の[r]霧隠ミユ蔵！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アイリの方
+そして私が妻のアイリの方です！
+[k]
+
+
+？1：真田家オールスターだね
+
+？2：そのマスク息長いですよね
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 11]
+[charaFadein I 0.1 1]
+＠森長可
+ぞろぞろ出て来やがって、[r]女子供だろうと容赦しねぇからな！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

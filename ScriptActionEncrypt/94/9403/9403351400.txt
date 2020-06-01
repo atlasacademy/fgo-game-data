@@ -1,0 +1,223 @@
+
+＄94-03-35-14-0-0
+
+[charaSet A 2006001 1 ダビデ]
+
+[soundStopAll]
+[bgm BGM_EVENT_5 1.0]
+[scene 10310]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 6]
+
+[fadein black 2]
+[wait fade]
+
+[wt 2.0]
+
+？1：なにか……
+？2：気配が……
+
+？！
+
+
+＠？？？
+[tVoice ValVoice_200600 0_V010]
+…………。[wait tVoice]
+[k]
+
+？1：誰かに……
+？2：見られているような……
+
+？！
+
+[charaFace A 4]
+
+＠？？？
+[tVoice ValVoice_200600 0_V020]
+なんて事だろう。[r]そういうパターンは想定していなかったな。[wait tVoice]
+[k]
+
+＠？？？
+[tVoice ValVoice_200600 0_V030]
+やれやれ、奥ゆかしいのも困りものだ。[r]仕方がない、僕の方から助け船を出すとしようか。[wait tVoice]
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_5 0.3]
+
+[se ad60]
+[charaFadeout A 0.4]
+[wt 1.0]
+[seStop ad60 0.3]
+
+[bgm BGM_EVENT_2 0.3]
+
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ダビデ
+[tVoice ValVoice_200600 0_V040]
+やあ、[%1]。こんにちは。[r]元気そうでなによりだ。[wait tVoice]
+[k]
+
+[flag MALE false]
+[flag FEMALE false]
+
+[selectionUse masterMale]
+？1：こんにちは
+[flag MALE true]
+？2：今日もいいお日柄で
+[flag MALE true]
+
+？！
+
+[selectionUse masterFemale]
+？1：こんにちは
+[flag FEMALE true]
+？2：今日もいいお日柄で
+[flag FEMALE true]
+
+？！
+
+[charaFace A 0]
+＠ダビデ
+[tVoice ValVoice_200600 0_V050]
+そう畏まらなくていいとも、今日は素晴らしい日だ。[r]商業的かつシステマチック。実に趣味が合う。[wait tVoice]
+[k]
+
+＠ダビデ
+[tVoice ValVoice_200600 0_V060]
+バレンタインといったかな？[r]発祥は地中海、極東では商品販促として発展した催しだ。[wait tVoice]
+[k]
+
+＠ダビデ
+[tVoice ValVoice_200600 0_V070]
+綺麗に言えば文化の[#混淆:こんこう]と言えるだろう。[r]南米由来のカカオマスのお菓子というのが面白い。[wait tVoice]
+[k]
+
+＠ダビデ
+[tVoice ValVoice_200600 0_V080]
+地中海、極東、南米。[r]言わば世界を股にかけた実に欲張り、もとい素敵な……[wait tVoice]
+[k]
+
+
+＠ダビデ
+[tVoice ValVoice_200600 0_V090]
+え？[tdelay 1 0.5 1][charaFace A 1][delay -][r]僕は認めてるよ、バレンタイン。いい。かなりいい。[wait tVoice]
+[k]
+
+[delayStop 1]
+
+＠ダビデ
+[tVoice ValVoice_200600 0_V100]
+日頃の感謝でも、[r]秘めた愛の告白でも……[wait tVoice]
+[k]
+
+＠ダビデ
+[tVoice ValVoice_200600 0_V110]
+気持ちを伝えられる日だろ。[r]実に、無駄がない。僕好みのシステマチックだ。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠ダビデ
+[tVoice ValVoice_200600 0_V120]
+もっと言えば、週に一度くらいあってもいいんじゃないかと[r]思うけど、そこはそれ、何事にも慎みは必要だ。[wait tVoice]
+[k]
+
+＠ダビデ
+[tVoice ValVoice_200600 0_V130]
+商売にも、契約にも、戦闘にも愛情にもね。[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠ダビデ
+[tVoice ValVoice_200600 0_V140]
+そういう訳で、思慮深い僕は返礼を忘れない。[r]朝にチョコレートをくれたろう？　そのお返しだ。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[equipSet B 9805230 1 ]
+[wait equipSet B]
+[charaFace B 0]
+[charaFadein B 0.5 0,-70]
+[wt 2.0]
+[charaFadeout B 0.4]
+[wt 0.5]
+
+？1：あ、ありがとうございます……ダビデ王……
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ダビデ
+[tVoice ValVoice_200600 0_V150]
+なんと。感謝のしすぎで震えているとは。[r]群からはぐれた子羊のようだ。[wait tVoice]
+[k]
+
+？2：（絶句）
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ダビデ
+[tVoice ValVoice_200600 0_V160]
+うん？　感激のあまり言葉もない、とは。[r]やはり君は奥ゆかしい。ん～～～、美徳だ。[wait tVoice]
+[k]
+
+？！
+
+＠ダビデ
+[tVoice ValVoice_200600 0_V170]
+でもおおげさに受け止めないでいい。[r]気楽な方が僕も気楽だからね。[wait tVoice]
+[k]
+
+[branch _branchEnd MALE 1]
+[branch _isFemale FEMALE 1]
+
+[label _isFemale]
+
+＠ダビデ
+[tVoice ValVoice_200600 0_V180]
+とは言え、君がどうしてもアビシャグしたいようなら[r]僕は全然構わないとも。[wait tVoice]
+[k]
+
+＠ダビデ
+[tVoice ValVoice_200600 0_V190]
+さしあたって誰の目にもつかない個室に向かおう。[r]え、いや？　口は爽やかなのに眼が笑ってない？[wait tVoice]
+[k]
+
+
+
+
+＠ダビデ
+[tVoice ValVoice_200600 0_V200]
+ははは。いやだなあ。ははは。[tdelay 1 4.2 1][charaFace A 1][se ad186][backEffect bit_talk_41 -23,168][delay -][r][line 3]当然さ、だって本気だからネ！[wait tVoice]
+[k]
+
+[delayStop 1]
+[label _branchEnd]
+
+
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+[soundStopAll]
+[end]

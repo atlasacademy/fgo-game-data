@@ -1,0 +1,572 @@
+
+
+＄94-04-49-11-2-0
+
+
+[soundStopAll]
+
+[skip false]
+
+[branchQuestNotClear lblNotClear1 3000320 4]
+[label lblClear1]
+[flag IsGirl true]
+[branch lblIsClearConf1]
+[label lblNotClear1]
+[flag IsGirl false]
+[label lblIsClearConf1]
+
+[skip true]
+
+[charaSet A 2035000 1 パリス]
+[charaSet B 3016000 1 ヘクトール]
+[charaSet C 7027300 1 アマゾネスＣＥＯ_普通]
+[charaSet D 1098119600 1 アマゾネスＣＥＯ_ろくろ]
+[charaSet F 6008000 1 コスモティック・ビューティ夫人]
+[charaSet G 99502600 1 マシュ]
+[charaSet H 6011001 1 アヤ＝メル・ケーカ社長]
+[charaSet I 1098126200 1 荷運びゴーレム]
+[charaSet J 5009000 1 エフェクト用]
+
+[branch lblNotGirl1 IsGirl false]
+[label lblGirl1]
+[charaSet E 1098124510 1 ダ・ヴィンチ]
+[branch lblIsGirlConf1]
+[label lblNotGirl1]
+[charaSet E 98111500 1 ダ・ヴィンチ]
+[label lblIsGirlConf1]
+
+[scene 90000]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+[charaPut C 1200,1200]
+[charaEffect C bit_talk_charge_red]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠パリス
+へろへろです～。[r]もう動けませーん……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ヘクトール
+いやすんげー[#暴力:パワー]だな、わかってたけど。[r]こーいうシンプルすぎるのはちょっとなー。
+[k]
+
+＠ヘクトール
+粘るやり方がなくはないにしても、[r]労力に全然見合わねぇ。
+[k]
+
+＠ヘクトール
+罠を仕掛けようにも、[r]罠ごとブチ破られそうだからな……。
+[k]
+
+[bgmStop BGM_EVENT_7 1.5]
+
+[charaFace B 1]
+
+＠ヘクトール
+まあとにかく、うん、[r]オジサンはきっと充分に頑張ったよ。降参～。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠アマゾネスＣＥＯ
+[#Ｇｒｒｒｒ:こ ろ し て や る]……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut C 1200,1200]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ヘクトール
+降参してるんで、止めていただけると[r]助かるんですがねぇ！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[branch lblNotGirl2 IsGirl false]
+[label lblGirl2]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+[branch lblIsGirlConf2]
+[label lblNotGirl2]
+[charaFace E 4]
+[charaFadein E 0.1 0,-90]
+[label lblIsGirlConf2]
+
+＠ダ・ヴィンチ
+降参したと言っても、どうせ喋る気はないんだろう？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ヘクトール
+まあな。
+[k]
+
+＠ヘクトール
+筋は通したいし、[r]そっちのほうがきっとお前さんたちのためだ。
+[k]
+
+[charaFace B 1]
+
+＠ヘクトール
+残りはたった１０階。頑張って登ったほうがいい。[r]そこで彼女が待っている。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_3 1.2]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠コスモティック・ビューティ夫人
+彼女？　黒幕は女……ということですわね？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[branch lblNotGirl3 IsGirl false]
+[label lblGirl3]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+[branch lblIsGirlConf3]
+[label lblNotGirl3]
+[charaFace E 4]
+[charaFadein E 0.1 0,-90]
+[label lblIsGirlConf3]
+
+＠ダ・ヴィンチ
+…………。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+
+＠マシュ
+…………。
+[k]
+
+？1：…………。
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠コスモティック・ビューティ夫人
+なんですの、その沈黙は？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ヘクトール
+まあ、みんな薄々は、ってところさ。[r]カンがよけりゃ最初からかもしれないが。
+[k]
+
+[charaFace B 4]
+
+＠ヘクトール
+それじゃ、頑張ってな。[r]オジサンはちょっと、膝と腰が、限界……ぐえー。
+[k]
+
+[messageOff]
+[charaMove B 0,-50 0.4]
+[charaFadeout B 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.2]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠アマゾネスＣＥＯ
+…………。
+[k]
+
+[messageOff]
+[charaEffectStop C bit_talk_charge_red]
+[wt 0.1]
+[charaFaceFade C 0 0.2]
+[wait charaEffect C bit_talk_charge_red]
+
+＠アマゾネスＣＥＯ
+産業スパイには骨の髄までその行為の愚かさを[r]教え込んでやりたいところだが[line 3]
+[k]
+
+[bgmStop BGM_EVENT_5 1.2]
+
+＠アマゾネスＣＥＯ
+今は時間が惜しい。始末と対処はアウトソーシングの[r]貴様らに任せる。どちらの会社でもいい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠アヤ＝メル・ケーカ社長
+わーい。刺す？　刺す？
+[k]
+
+？1：逃げ場のない施設に行ってもらって
+？2：腰に効く熱い空間とかに入れるのがよいかと
+？！
+
+＠アヤ＝メル・ケーカ社長
+弱点狙いの拷問するってこと？　キチクー！[r]面白そうなので譲る！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠アマゾネスＣＥＯ
+うむ。敵には容赦も情けも無用。[r]ビジネスの厳しさがわかってきたようだな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+＠マシュ
+ええと……意訳させていただくと、サウナ室の予約を[r]入れておく感じでいいですよね……？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgmStop BGM_EVENT_7 0.7]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アマゾネスＣＥＯ
+では、先に進むぞ。
+[k]
+
+＠アマゾネスＣＥＯ
+このタワーの配達も残るはあと１０件。[r]黒幕との決着はもうすぐだ。
+[k]
+
+[charaFace C 2]
+
+＠アマゾネスＣＥＯ
+だが、疲れが溜まる終盤の配達こそ事故が多くなるもの。[r]気を引き締めていけ！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[charaFadeout C 0.1]
+[wt 1.0]
+[wipeFilter cinema 0.5 0]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth B 2]
+
+＠ヘクトール
+迎えとか来ねえのかな……[r]しょうがねぇな、[wt 0.4][se ad7][seVolume ad7 0 0.6][charaTalk B][charaFace B 4][charaFadein B 0.2 0,-80][charaMove B 0,-50 0.4]よっ、と。
+[k]
+
+
+＠パリス
+僕はまだ動けませーん。[r]ごめんなさい……。
+[k]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaFace B 0]
+
+＠ヘクトール
+こっちもしょうがねぇな。
+[k]
+
+＠ヘクトール
+しかしまあ、手伝わせた責任がある。[r]だいぶ軽い時分の姿だし、なんとかなるだろ。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaMove B -64,-50 0.5]
+[wait charaMove]
+[charaMove B -64,-90 0.4]
+[wait charaMove]
+[se ad77]
+[seVolume ad77 0 0.4]
+[charaFace A 4]
+[charaFadein A 0.1 80,-30]
+[charaMove B -64,-50 0.4]
+[charaMove A 80,20 0.4]
+[wait charaMove]
+
+[wt 0.7]
+
+[charaTalk on]
+[charaFace A 1]
+
+＠パリス
+わーい、おんぶ！
+[k]
+
+＠パリス
+兄さんにおんぶしてもらうなんて久しぶりです。[r]楽しくなってきちゃいますね！
+[k]
+
+[charaFace B 1]
+
+＠ヘクトール
+相変わらず呑気だなぁ、おまえは。
+[k]
+
+[charaFace B 0]
+
+＠ヘクトール
+付き合わせて悪かったとは思ってるが、[r]ちょっとばかりはおまえにも原因があるんだぞ？
+[k]
+
+[charaFace A 0]
+
+＠パリス
+[FFFFFF]？？？[-]　何のコトですか？
+[k]
+
+[charaFace A 4]
+
+＠パリス
+ひょっとして僕、何か悪いことを……？
+[k]
+
+＠ヘクトール
+いーや、悪くはない。
+[k]
+
+[charaFace B 4]
+
+＠ヘクトール
+ただ……見方によってはそうで、んでおまえ以外んとこで[r]事態がどんどん勝手に転がっていっちまう、みたいな……
+[k]
+
+＠ヘクトール
+うーん、よく考えたらトロイアのときと同じかねぇ。[r]おまえはそーいう星の下にある、って感じなのかもな。
+[k]
+
+[charaFace A 0]
+
+＠パリス
+[FFFFFF]？？？[-]
+[k]
+
+[charaFace B 1]
+
+＠ヘクトール
+いや、気にすることはねえさ。[r]あとはあっちの問題だ。
+[k]
+
+[charaFace B 0]
+
+＠ヘクトール
+さて、マスターの厚意をありがたく受け取って、[r]風呂にでも入って休むとするかねえ。
+[k]
+
+[charaFace A 1]
+
+＠パリス
+あ、はいはーい！[r]僕、久しぶりに兄さんの背中流したいです！
+[k]
+
+[charaFace B 1]
+
+＠ヘクトール
+へえ、そいつは嬉しいな。
+[k]
+
+＠ヘクトール
+おまえとまたそんなことできる日が来るとはねぇ。[r]サーヴァントってのは本当に[line 3][charaFace B 2][charaMoveReturn B -64,-47 0.1][cueSe Battle bac314][cueSeVolume bac314 0 0.2]
+[k]
+
+
+[charaFace A 2]
+
+＠パリス
+兄さん？　大丈夫ですか、兄さーん！？
+[k]
+
+[charaFace B 5]
+
+＠ヘクトール
+くおお……全力バトルの直後に弟を背負うのは、[r]ちょっと、キツかったか……！？
+[k]
+
+＠ヘクトール
+そういや、羊の重みも、計算に入れ忘れ……！
+[k]
+
+[charaFace B 0]
+
+＠ヘクトール
+よしパリス。兄はここまでだ。[r]俺を置いて、おまえは一人で行け。
+[k]
+
+[charaFace A 5]
+
+＠パリス
+えー、嫌ですよ。[r]兄さんと一緒に行ーきーまーすー。
+[k]
+
+[charaFace B 4]
+
+＠ヘクトール
+あーもー、あんまり[#我儘:わがまま]言うんじゃ[line 3][charaFace B 0]うん？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[se ad57]
+[seVolume ad57 0 0.2]
+[seVolume ad57 1.3 0.4]
+[wt 1.4]
+[seVolume ad57 1.5 0.6]
+[wt 1.4]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-50]
+[seStop ad57 0.1]
+
+＠荷運びゴーレム
+…………。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace A 1]
+[charaFadein A 0.1 -288,-50]
+[charaFace B 0]
+[charaFadein B 0.1 288,-50]
+[charaMove A -304,-30 0.3]
+[charaMove B 304,-30 0.3]
+[se ad77]
+[seVolume ad77 0 0.6]
+[wt 0.5]
+[seStop ad77 0.1]
+
+[wt 1.2]
+
+[se ad57]
+[seVolume ad57 0 0.3]
+
+[charaTalk on]
+
+＠パリス
+これ、仮面のキャスターさんのゴーレムですね。[r]施設まで運んでくれるみたいです！
+[k]
+
+＠パリス
+マスターが手配してくれたのかな？
+[k]
+
+[charaFace B 4]
+
+＠ヘクトール
+やれやれ……。
+[k]
+
+[charaFace B 0]
+
+＠ヘクトール
+慣れないお仕事ご苦労さん、だ。
+[k]
+
+[charaFace B 1]
+
+＠ヘクトール
+仕方がない、ひとまず甘えることにしようかねぇ。[r]途中で放り出したりしないでくれよ？
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[seStop ad57 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

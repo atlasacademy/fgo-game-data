@@ -1,0 +1,460 @@
+
+
+＄94-03-01-12-1-1
+
+
+
+[soundStopAll]
+
+
+[charaSet A 3034002 1 茨木童子]
+[charaSet B 6029001 1 アサシン・パライソ]
+[charaSet C 10008001 1 シトナイ]
+[charaSet D 99502600 1 マシュ]
+[charaSet E 5040000 1 謎の護法少女]
+[charaSet F 98115000 1 エフェクト用3]
+[charaSet G 98115000 1 エフェクト用2]
+[charaSet H 98115000 1 エフェクト用]
+
+[bgm BGM_EVENT_24 0.1]
+
+
+[scene 64500]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad64]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 1.0]
+[se ad64]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 0.5]
+[se ad64]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 1.0]
+
+＠黄金竜
+ぎゃ、あ、あああ、ああああああああああああ……[line 3]
+[k]
+
+＠黄金竜
+死なぬ……[r]死なぬぞ……我は大欲……無限なるもの……
+[k]
+
+＠黄金竜
+人理は我を捨てられまい……[r]我は、ひとたび眠ろうとも再び千歳の地に……！！
+[k]
+
+[messageOff]
+[charaPut H 1]
+[charaPut F 300,-150]
+[charaEffect H bit_talk_gate_of_babylone]
+[charaEffect F bit_talk_gate_of_babylone]
+[se bac24]
+[wt 2.1]
+[se bac25]
+[wt 0.7]
+[charaPut H 1200,1200]
+[charaPut F 1200,1200]
+[charaEffectStop H bit_talk_gate_of_babylone]
+[charaEffectStop F bit_talk_gate_of_babylone]
+[wt 0.3]
+
+[charaPut G 100,-50]
+[charaEffect G bit_talk_13]
+[se bac42]
+
+[wt 0.1]
+
+[charaPut G -100,50]
+[charaEffect G bit_talk_13]
+[se bac42]
+
+[wt 0.1]
+
+[charaPut G 150,20]
+[charaEffect G bit_talk_13]
+[se bac42]
+
+[wt 0.1]
+
+[charaPut G 30,-100]
+[charaEffect G bit_talk_13]
+[se bac42]
+
+[wt 0.1]
+
+[charaPut G -200,-50]
+[charaEffect G bit_talk_13]
+[se bac42]
+
+[wt 0.1]
+
+[charaPut G 200,70]
+[charaEffect G bit_talk_13]
+[se bac42]
+
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_13]
+[se bac42]
+
+[wt 0.2]
+
+[charaEffect G bit_talk_14]
+[se bac45]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+
+＠黄金竜
+……………………ッ！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 1.0]
+[wt 1.0]
+
+[se ad64]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 1.0]
+
+[se ad63]
+[fadeout white 0.1]
+[wait fade]
+[wt 0.1]
+[fadein white 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[se ad52]
+[charaSpecialEffect G flashErasure 1 2.0]
+[wait charaSpecialEffect G]
+
+[wt 1.5]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠マシュ
+最後の攻撃は……[r]もしかして、ギルガメッシュさんの『[#王の財宝:ゲート・オブ・バビロン]』[line 3]？
+[k]
+
+？1：これで終わったね
+？2：お疲れさま、みんな！
+
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaPut H 1200,1200]
+
+[cueSe Battle bac199]
+[cueSeVolume bac199 0 0.6]
+[charaPut F 1]
+[charaEffect F bit_talk_gold_kamui]
+[wt 3.0]
+[charaPut F 1200,1200]
+[wt 0.5]
+
+[bgm BGM_EVENT_6 0.1]
+
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0.1 1]
+
+＠シトナイ
+おいで。
+[k]
+
+＠シトナイ
+怖がらなくていいよ。[r]今度こそ、ちゃんと元の場所に還してあげるから。
+[k]
+
+＠シトナイ
+あなたは欲で竜になったりしなくてすむの。[r]もう、わたしも……
+[k]
+
+[messageOff]
+[charaPut G 0,-50]
+[charaEffect G bit_talk_06]
+[wt 1.0]
+[charaFace C 15]
+
+＠シトナイ
+……ここからはいなくなるから。[r]あなたは二度と、ラインの黄金のようにはならないの。
+[k]
+
+＠シトナイ
+一緒に消えようね。[r]黄金の竜。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+む。む。
+[k]
+
+＠茨木童子
+シトナイ、もう行ってしまうのか？[r][#吾:われ]は最後にもっと遊んでから帰るつもりだったのだが……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut G 0,-50]
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+＠シトナイ
+うん。魔力は大地に還さなきゃ。[r]ランドができてから英霊たちから吸い上げていた余剰分は、
+[k]
+
+＠シトナイ
+聖杯の形にしてあなたたちにあげる。[r]しっかり作っておくから、竜にはならないわ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠B：[servantName 602900:アサシン・パライソ:望月千代女]
+シトナイ殿……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 0,-50]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠シトナイ
+わたしのせいでたくさん迷惑かけてしまって、[r]ごめんなさい。ごめんね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+謝るな！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut G 0,-50]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+[wt 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+………うん。謝るのはよくない。[r][#吾:われ]も、酒呑も、死ぬ時には笑っていたものなのだ。
+[k]
+
+＠茨木童子
+だから[line 3]
+[k]
+
+[charaFace A 1]
+
+＠茨木童子
+……[#汝:なれ]も、思い切り笑うがよいぞ。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut G 0,-50]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+[wt 1.0]
+[charaFace C 1]
+
+＠シトナイ
+じゃあね！　みんな！
+[k]
+
+＠シトナイ
+ありがとう！[r]みんなは大変だったと思うけど……
+[k]
+
+＠シトナイ
+みんなと一緒にいられて、わたしとっても[line 3]
+[k]
+
+[messageOff]
+[charaEffectStop G bit_talk_06]
+[wait charaEffect G bit_talk_06]
+[se ad52]
+[charaSpecialEffect C flashErasure 1 2.0]
+[wait charaSpecialEffect C]
+
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+……うむ。
+[k]
+
+[charaFace A 1]
+
+＠茨木童子
+[#吾:われ]も結構楽しかったぞ！　シトナイ！
+[k]
+
+[messageOff]
+[wt 1.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_6 2.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+[messageOff]
+[effect bit_talk_07_02]
+[se ad12]
+[wt 4.0]
+[fadeout white 1.0]
+[wait fade]
+[wt 2.0]
+
+
+
+
+[scene 10200]
+
+[fadein white 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠酒呑童子
+とまあ、そないなわけで。
+[k]
+
+[charaFace E 1]
+
+
+＠酒呑童子
+めでたしめでたしやねぇ。[r]微小特異点やら特異点やらもおさまったんやろ？
+[k]
+
+＠酒呑童子
+遊園地も消えてしもて、はいおしまい。[r]ほんまにご苦労さんやったなあ。旦那はん。
+[k]
+
+[messageOff]
+[charaFace E 4]
+[wt 1.0]
+[charaFace E 0]
+
+＠酒呑童子
+で、や。
+[k]
+
+＠酒呑童子
+ハクの魔力はのうなったんやけど、[r]なんや、気ぃ向かへんと霊基が元に戻らへんのよねえ。
+[k]
+
+＠酒呑童子
+……気ぃ向いたら戻るんやけど。
+[k]
+
+[charaFace E 6]
+
+＠酒呑童子
+ほな、今後ともあんじょうよろしゅう。ご贔屓に。[r][line 3]そないな感じでええやろか？
+[k]
+
+？1：こちらこそよろしく！
+
+[charaFace E 1]
+
+＠酒呑童子
+はいはい。よろしゅうに。
+[k]
+
+？2：あれ、ハク……そこにいるよね？
+
+[charaFace E 4]
+
+＠酒呑童子
+ああ、これ。[r]これは本物とちゃうんよ。
+[k]
+
+[charaFace E 1]
+
+＠酒呑童子
+うちが魔力で編んでみた偽物なんやけど[line 3][r]いつか、また喋り出したりするんやろかねぇ。ふふ。
+[k]
+
+＠酒呑童子
+かたちには意味が宿るよって。
+[k]
+
+？！
+
+＠酒呑童子
+ま、ともあれほんにお疲れさま。[r]ゆっくり休むとええよ？
+[k]
+
+
+
+[messageOff]
+[wt 1.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

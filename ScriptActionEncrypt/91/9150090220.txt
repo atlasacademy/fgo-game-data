@@ -1,0 +1,310 @@
+
+
+
+＄91-50-09-02-2-0
+[soundStopAll]
+[charaSet A 5009001 1 ダ・ヴィンチ]
+[charaSet B 99502600 1 マシュ]
+[charaSet C 98002000 1 フォウ]
+[charaSet D 98006200 1 雑魚エネミー煙状]
+[charaSet E 98025000 1 青フードエネミー]
+[charaSet F 98115300 1 ホームズ]
+[charaSet G 98006200 1 エフェクト用]
+[bgm BGM_EVENT_3 0.1]
+[scene 20500]
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaScale G 0.5]
+[charaDepth G 1]
+[charaDepth D 0]
+[charaPut G -50,-120]
+[charaFadein D 0.1 1]
+[charaEffect G bit_talk_14]
+[se bac17]
+[charaShake D 0.05 7 7 0.4]
+[wt 0.4]
+[se bac17]
+[charaPut G 50,120]
+[charaEffect G bit_talk_14]
+[charaShake D 0.05 7 7 0.4]
+[wt 0.4]
+[se bac17]
+[charaEffect D bit_talk_14]
+[charaShake D 0.05 7 7 0.4]
+[wt 0.4]
+
+[se ad22]
+[bgmStop BGM_EVENT_3 1.0]
+[wt 1.5]
+[se ad52]
+[charaSpecialEffect D enemyErasure 1 2.0]
+[wait charaSpecialEffect D]
+[wt 0.4]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[bgm BGM_EVENT_5 0.1]
+＠ダ・ヴィンチ
+一通りは片付けたけど[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFadein C 0.1 1]
+＠フォウ
+フォ？　フォウ、フォウフォウ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+ああ、まだだ。まだいる。[r]いや……
+[k]
+
+[charaFace A 5]
+＠ダ・ヴィンチ
+親玉っていう風に捉えた方がいいのかな。[r]魔力も随分高い。サーヴァントという訳ではないけれど、
+[k]
+
+＠ダ・ヴィンチ
+ここまで高い魔力を持っているからには、[r]聖杯の欠片なりを取り込んでしまっているんだろう。
+[k]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk E]
+[charaFadein E 0.4 1]
+[wt 0.4]
+[se ad25]
+[wt 2.0]
+[charaFadeout E 0.1]
+[wt 0.1]
+[se ad13]
+[charaTalk B]
+[charaFace B 7]
+[charaEffect B bit_talk_10_LowLevel]
+[charaFadein B 0.1 1]
+
+
+＠マシュ
+ダ・ヴィンチちゃんの言う通り、高い魔力反応です！
+[k]
+
+＠マシュ
+おそらく小型の聖杯か、[r]欠片を所持している個体と思われます。
+[k]
+
+[charaPut B 0,-10000]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+そうだろうなあ。[r]いや、如何にもな姿に成り果ててしまったものだ。
+[k]
+
+＠ダ・ヴィンチ
+なあ、[#小悪魔:サライ][line 3]
+[k]
+
+？1：サライ？
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut B 0,0]
+[se ad13]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ホームズ
+ジャン・ジャコモ・カプロッティ。[r]少年期、生前のダ・ヴィンチに拾われたという人物だ。
+[k]
+
+＠ホームズ
+西暦１４９０年のミラノでダ・ヴィンチの弟子となり、[r]家族のように過ごしたと記録されている。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+家族……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ホームズ
+成る程。没年は１５２４年であるというからには、[r]微小聖杯の影響下で彼はここミラノで[#亡霊:ゴースト]と化して、
+[k]
+
+＠ホームズ
+微小特異点を発生させたというあたりだろう。[r]今回のダ・ヴィンチの直感、正解だったという訳だね。
+[k]
+
+[charaPut B 0,-10000]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+私と縁のあるサライが欠片を持っていたものだから、[r]巡り巡ってマスターの夢に影響が出た[line 3]
+[k]
+
+＠ダ・ヴィンチ
+そんなあたりかな？[r]まさしく、予感的中だった訳だ。
+[k]
+
+[charaFace A 4]
+＠ダ・ヴィンチ
+まあ、さして嬉しい話でもないけど……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[messageOff]
+[charaTalk E]
+[charaFadein E 0.1 1]
+[wt 0.1]
+[se ad25]
+
+[wt 1.5]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+サライ。[r]私に嫌がらせをしてくるのはおまえくらいのものだよ。
+[k]
+
+＠ダ・ヴィンチ
+しかし……なんでまた亡霊なのかねえ？
+[k]
+
+＠ダ・ヴィンチ
+まあ、座に刻まれる英霊というには如何にも頼りないし、[r]生前あれこれ悪さの癖が抜けなかったおまえだから、
+[k]
+
+＠ダ・ヴィンチ
+座にいたとしても反英雄の端っこの更に端に[r]引っ掛かるかどうか、ぐらいだろうけど。
+[k]
+
+？1：そんなに……
+？2：悪い少年だったのか……
+？！
+
+
+[charaFace A 1]
+＠ダ・ヴィンチ
+美しい少年だったよ。実に可愛らしかった！
+[k]
+
+＠ダ・ヴィンチ
+思えば、くるくるの巻き毛が実によかった。私ほどでは[r]なくても、まるで天使みたいな美少年だったとも。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFadein C 0.1 1]
+
+＠フォウ
+フォウフォウ、ダ・フォーウ……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+（まずは美少年談義から！[r]　さ、流石ですダ・ヴィンチちゃん[line 3]）
+[k]
+
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10_LowLevel]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+でも、まー、ねー。そりゃあもう悪ガキだった。[r]人の４倍は悪かった。勝手に私の靴を売ってお菓子買うし、
+[k]
+
+[charaFace A 4]
+＠ダ・ヴィンチ
+銀の筆盗むし……[r]ともかく何でもかんでも盗むし……
+[k]
+
+＠ダ・ヴィンチ
+食事中にガンガン瓶を割るし……
+[k]
+
+[charaFace A 4]
+＠ダ・ヴィンチ
+……ああ、思い出すと腹が立ってきたぞ。サライ。
+[k]
+
+[wt 0.7]
+[charaFace A 5]
+＠ダ・ヴィンチ
+おまえのような悪童が[line 3]
+[k]
+
+＠ダ・ヴィンチ
+ミケランジェロの時とそっくり同じに[r]さ迷う霊となって[#親方:マエストロ]の前に顕れるっていうのは、うん！
+[k]
+
+[bgmStop BGM_EVENT_5 0.7]
+＠ダ・ヴィンチ
+[line 3]割とイラッとするものだ！　サライ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[messageOff]
+[bgm BGM_EVENT_3 0.1]
+[charaTalk E]
+[charaFadein E 0.1 1]
+[se ad21]
+[wt 1.5]
+[charaFadeout E 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+[f large][messageShake 0.01 5 5 0.4]だまらっしゃい！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

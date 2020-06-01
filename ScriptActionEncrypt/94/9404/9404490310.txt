@@ -1,0 +1,744 @@
+
+
+＄94-04-49-03-1-0
+
+[soundStopAll]
+
+[skip false]
+
+[branchQuestNotClear lblNotClear1 3000320 4]
+[label lblClear1]
+[flag IsGirl true]
+[branch lblIsClearConf1]
+[label lblNotClear1]
+[flag IsGirl false]
+[label lblIsClearConf1]
+
+[skip true]
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 6008000 1 コスモティック・ビューティ夫人]
+[charaSet C 7027300 1 アマゾネスＣＥＯ_普通]
+[charaSet D 1098119600 1 アマゾネスＣＥＯ_ろくろ]
+[charaSet E 98002000 1 フォウ]
+[charaSet G 5017001 1 スイートウィッチ]
+[charaSet H 3016000 1 ヘクトール]
+[charaSet I 6031001 1 刑部姫]
+[charaSet J 5009000 1 エフェクト用]
+
+[branch lblNotGirl1 IsGirl false]
+[label lblGirl1]
+[charaSet F 1098124510 1 ダ・ヴィンチ]
+[branch lblIsGirlConf1]
+[label lblNotGirl1]
+[charaSet F 98111500 1 ダ・ヴィンチ]
+[label lblIsGirlConf1]
+
+[scene 31500]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ええと、今更なのですが、ビューティ夫人も[r]マスターとＣＥＯの配達組に同行してくださるのですね？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠コスモティック・ビューティ夫人
+提携するならば配達員不足は[#妾:わらわ]の会社にとっても[r]死活問題ですわ。解決を手伝わねばなりません。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠C：アマゾネスＣＥＯ
+これからは我らのやり方だけでは乗り越えるのが[r]困難な問題に直面するかもしれん。
+[k]
+
+＠C：アマゾネスＣＥＯ
+そんなときのカルデアであり、[r]また夫人のエジプシャンだ、と思えるようになった。
+[k]
+
+＠C：アマゾネスＣＥＯ
+すまんが頼らせてもらおう。
+[k]
+
+[charaFace C 11]
+
+＠C：アマゾネスＣＥＯ
+ところで、気になっていたことがある。[r]改めて問いたい。どうして我らの状況がわかっていた？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠コスモティック・ビューティ夫人
+[#妾:わらわ]の会社の優秀な情報網のおかげ[line 3]と[r]繰り返したいところですが、補足いたしましょう。
+[k]
+
+[charaFace B 0]
+
+＠コスモティック・ビューティ夫人
+ご存じないかもしれませんが、少し前、[r]一斉に噂が業界に流れたのですわ。
+[k]
+
+＠コスモティック・ビューティ夫人
+アマゾネス・ドットコム社の現状について。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠フォウ
+フォウ？
+[k]
+
+？1：従業員がいなくなったこと？
+？2：ＣＥＯ一人だけになっちゃったこと？
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠コスモティック・ビューティ夫人
+ええ。そこから裏付けを取って真実だと知ったからこそ、[r]これはチャンスだと動いたのです。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+＠C：アマゾネスＣＥＯ
+ふむ。それは妙だな。
+[k]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaFace C 4]
+
+＠C：アマゾネスＣＥＯ
+従業員がいなくなったのは大問題だが、[r]隙を見せれば丸呑みされるのが常のこの世界。
+[k]
+
+[charaFace C 0]
+
+＠C：アマゾネスＣＥＯ
+無論、私は他の誰にも相談していない。[r]間違っても、最近噂の銀河警察などにも持ち込まない。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+事件に関係している何者かが、意図的に情報を流した……[r]と、いうことでしょうか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[branch lblNotGirl2 IsGirl false]
+[label lblGirl2]
+[charaFace F 25]
+[charaFadein F 0.1 1]
+[branch lblIsGirlConf2]
+[label lblNotGirl2]
+[charaFace F 0]
+[charaFadein F 0.1 0,-90]
+[label lblIsGirlConf2]
+
+＠ダ・ヴィンチ
+そう考えるのが自然だろうねえ。[r]で、その目的は、だ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth C 2]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：アマゾネスＣＥＯ
+アマゾネス・ドットコムに恨みを持つ者を[r]焚きつけている……の、かもしれんな。
+[k]
+
+＠C：アマゾネスＣＥＯ
+急成長した我が社には敵が多い。[r]潜在的なものも含めてな。
+[k]
+
+[charaFace B 3]
+[charaFadein B 0.1 480,0]
+[charaShake B 0.15 1 0 0]
+
+＠C：アマゾネスＣＥＯ
+夫人のように、これ幸いとばかりに[r]私を亡き者にしようと[line 3]
+[k]
+
+＠C：アマゾネスＣＥＯ
+あるいは会社を乗っ取ろうと[r]策を講じてくるものがいないとも限らない。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaShakeStop B]
+
+＠C：アマゾネスＣＥＯ
+今後待ち受けている配達が、そやつらの仕掛けた罠である[r]可能性も充分に考えられるという事だ。
+[k]
+
+[charaFace C 8]
+
+＠C：アマゾネスＣＥＯ
+気をつけていくぞ、[%1]！
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[bgmStop BGM_EVENT_70 1.2]
+[wait fade]
+[charaFadeout C 0.1]
+[charaTalk depthOn]
+
+
+[scene 31000]
+[wt 1.0]
+[fadein black 1.2]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠C：アマゾネスＣＥＯ
+さて、次の配達先はこのあたり。[r]名前は『スイートウィッチ』様とある。
+[k]
+
+＠C：アマゾネスＣＥＯ
+このうちの一軒の店舗だと思うが……
+[k]
+
+[charaTalk G]
+[se ad533]
+[seVolume ad533 0 0.5]
+[wt 1.0]
+
+[se ad59]
+[seVolume ad59 0 0.1]
+[seVolume ad59 0.5 1.0]
+[wt 1.0]
+[seStop ad59 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠G：？？？
+あーっ、来た！　ようやく来た！[r]アマゾネス・ドットコムですね！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace G 2]
+[charaFadein G 0.1 0]
+[charaFace C 11]
+[charaFadein C 0.1 2]
+
+＠C：アマゾネスＣＥＯ
+いかにも。スイートウィッチ様ですね？[r]ここに受け取りのサインを[line 3]
+[k]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+[charaFace G 5]
+
+＠スイートウィッチ
+サイン？　サインですって？[r]間に合っていないのに、なんて恥知らずなのでしょう！
+[k]
+
+＠C：アマゾネスＣＥＯ
+間に合っていない……とは？
+[k]
+
+[bgm BGM_EVENT_72 0.1]
+
+[charaFace G 0]
+
+＠スイートウィッチ
+そのままの意味です。[r]頼んだそれはうちのお店で出すパンケーキの材料。
+[k]
+
+[charaFace G 2]
+
+＠スイートウィッチ
+なのに配送が遅れたことで欠品を出してしまいました！
+[k]
+
+＠スイートウィッチ
+今日は特別な日だから、[r]いつもより念入りにお願いしましたのに……！
+[k]
+
+[charaFace C 11]
+
+＠C：アマゾネスＣＥＯ
+そ、それは申し訳ない。[r]ちょっと待ってくれ。今、伝票を……。
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠スイートウィッチ
+当店、『リリィちゃん[#最高:サイコ]ランド』は[r]地域密着型のパンケーキ屋。
+[k]
+
+＠スイートウィッチ
+いままで、細々と、着実に、[r]みなさんの信頼を勝ち取ってきたんです。
+[k]
+
+＠スイートウィッチ
+その甲斐あって、今日は『孤児院の子供たちの[r]誕生日を祝う会』を任されましたのに……
+[k]
+
+[charaFace G 4]
+
+＠スイートウィッチ
+あの猫耳お姉さんのがっかりした顔……[r]本当に申し訳なくって、
+[k]
+
+＠スイートウィッチ
+私には周囲十光年内のランダムな誰かに週一で[r]私のパンケーキを食べないとブタになっちゃうような、
+[k]
+
+＠スイートウィッチ
+そんなファンシーファンタジーな[r]呪いを飛ばして憂さを晴らすことしかできず……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠刑部姫
+それは一般的にはテロって言うんじゃ？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠スイートウィッチ
+愛情表現です。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠刑部姫
+愛情……愛情……？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠コスモティック・ビューティ夫人
+銀河不正競争防止法違反のおそれがありますわね！[wt 0.7][charaEffect B bit_talk_starshine -45,155][se ade126][seVolume ade126 0 0.6]
+[k]
+
+
+[charaEffectDestroy B]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠スイートウィッチ
+可愛い憂さ晴らしです！　とにかく、[r]どうしてもっと早く来てくれなかったんですか！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_72 1.0]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠C：アマゾネスＣＥＯ
+……うん？[r]お届け予定日は超過していないぞ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠スイートウィッチ
+え、そんなはずは……！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠C：アマゾネスＣＥＯ
+いや、正確に言うと[r]注文時の予定からは超過している。
+[k]
+
+＠C：アマゾネスＣＥＯ
+超過しているのだが、それは予めメールを送り、[r]そちらも了承したはずだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠スイートウィッチ
+適当なことを言わないでください、[r]まったく覚えがありませんよ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠C：アマゾネスＣＥＯ
+確認するか。ええと……
+[k]
+
+[charaFace C 11]
+
+＠C：アマゾネスＣＥＯ
+うん、こちらが品物の発送が遅れている件につき、[r]お詫びとそれでも構わないかのメールを発信している。
+[k]
+
+＠C：アマゾネスＣＥＯ
+そちらからの返答は[r]『全然問題ないよー、いつでもいいさ！』だ。
+[k]
+
+[charaFace C 12]
+
+＠C：アマゾネスＣＥＯ
+すなわち想定の範囲内だ。我々は遅れていない！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠スイートウィッチ
+そ、そんなメールはお返ししていません！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠刑部姫
+う、うーん。
+[k]
+
+＠刑部姫
+確かにこの返答、[r]スイートウィッチさんっぽくはないような……。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠D：アマゾネスＣＥＯ
+ふむ。[r]今回の件につきましては、
+[k]
+
+＠D：アマゾネスＣＥＯ
+残念ながらそちら側の連絡ミスと不可抗力が重なった[r]不運の結果だと言わざるをえないのですが[line 3]
+[k]
+
+[bgm BGM_EVENT_27 0.1]
+
+[charaFace D 0]
+
+＠D：アマゾネスＣＥＯ
+そんな貴女にオススメなのはこのプレミアムサービス。
+[k]
+
+＠D：アマゾネスＣＥＯ
+このサブスクリプションは月々ほんの僅かな料金で目を[r][#瞠:みは]るようなユーザーフレンドリネスを生み出すもので、
+[k]
+
+＠D：アマゾネスＣＥＯ
+オプションとして翌日配送、[r]地域によっては当日配送なども可能[line 3]
+[k]
+
+？1：さすがＣＥＯ、商魂がたくましい
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠フォウ
+フォウ……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠スイートウィッチ
+し、知らないったら知りませーん！[r]わけのわからないことを言わないでください！
+[k]
+
+[charaFace G 5]
+
+＠スイートウィッチ
+こうなったら……！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ade120]
+[wt 1.5]
+[se ade121]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠C：アマゾネスＣＥＯ
+む、素早い受け取りとサイン。望ましいお客様だ。
+[k]
+
+[charaFace C 12]
+
+＠C：アマゾネスＣＥＯ
+しかしそんなに慌てて開封して確認しなくても、[r]我々に誤配送などありえない[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_27 1.0]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠スイートウィッチ
+これを、こうして、こうして、こうです！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.5]
+
+[se ad39]
+[fadeout white 1.5]
+[wait fade]
+[fadein white 0.3]
+[seStop ad39 0.3]
+
+[se ade362]
+[fowardEffect bit_talk_magical_pon]
+[wt 0.5]
+[seStop ade362 0.3]
+
+[wt 0.5]
+
+[se ad14]
+[se ad241]
+[shake 0.02 3 3 2.2]
+[wt 2.2]
+[seVolume ad14 1.5 0.3]
+[seVolume ad241 1.5 0.3]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+大変です、先輩！　何やら唐突に脅威反応が！
+[k]
+
+？1：唐突にいい匂いも届いてきてるよ
+？2：これは……パン、ケー、キ……？　うっ、頭が……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠C：アマゾネスＣＥＯ
+むう、これは……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠スイートウィッチ
+機会損失した一番の売れ筋パンケーキです！
+[k]
+
+＠スイートウィッチ
+あなたたちにぜーんぶ、買い取ってもらいます！[r]だいじょうぶ、ばつぐんに美味しいので！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠コスモティック・ビューティ夫人
+あら。クレーマーと思いきや、[r]逆に営業をしかけるとはいい度胸ですわね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠C：アマゾネスＣＥＯ
+だが我々は[#百戦錬磨:ひゃくせんれんま]のＣＥＯ。[r]押し売りへのカウンター闘法も当然ながら会得している。
+[k]
+
+[charaFace C 9]
+
+＠C：アマゾネスＣＥＯ
+この格言を知らんのならば教えてやろう。
+[k]
+
+[charaFace C 2]
+
+＠C：アマゾネスＣＥＯ
+“ＣＥＯに物を売ろうとするとき、[r][f small]  [f -]その者はＣＥＯに株価を握られているのだ”と！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[seStop ad14 0.4]
+[seStop ad241 0.4]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+

@@ -1,0 +1,437 @@
+
+＄94-03-35-05-1-1
+
+[soundStopAll]
+
+[charaSet A 6031000 1 刑部姫]
+[charaSet B 3033000 1 オルトリンデ]
+[charaSet C 3033001 1 ヒルド]
+[charaSet D 3033002 1 スルーズ]
+[charaSet E 99502600 1 マシュ]
+[charaSet F 5042000 1 紫式部]
+[charaSet G 5005001 1 アンデルセン]
+[charaSet H 5009000 1 エフェクト用]
+[charaSet I 5009000 1 エフェクト用]
+[charaSet J 98115000 1 エフェクト用]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_41]
+
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 70500]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.4]
+
+[se ad7]
+[charaPut H 1]
+[charaFace A 2]
+[charaMoveScale A 1.1 0.2]
+[charaMove A 0,10 0.2]
+[charaFadeout A 0.2]
+[wt 0.2]
+[charaPut H 1200,1200]
+[wt 0.3]
+
+[se bac52]
+[charaScale J 0.8]
+[charaPut J 245,30]
+[charaEffect J bit_talk_14]
+[wt 0.25]
+
+[se bac53]
+[charaScale I 0.8]
+[charaPut I -270,-170]
+[charaEffect I bit_talk_14]
+[wt 0.25]
+
+[se bac18]
+[flashin once 0.1 0.5 FFFFFF80 FFFFFF00]
+[wt 1.0]
+
+[charaPut I 1200,1200]
+[charaEffectStop I bit_talk_14]
+
+
+[charaTalk depthOff]
+[charaDepth B 6]
+[charaDepth C 4]
+
+[charaTalk off]
+[se ad54]
+[seStop ad54 0.4]
+[charaFace B 6]
+[charaFace C 2]
+[charaFadein B 0.1 -300,20]
+[charaFadein C 0.1 300,20]
+[charaMove B -300,10 0.4]
+[charaMove C 300,10 0.4]
+[wt 0.8]
+
+[se ad7]
+[charaPut H 1]
+[charaMoveScale B 1.2 0.2]
+[charaMoveScale C 1.2 0.2]
+[charaMove B -310,20 0.2]
+[charaMove C 310,20 0.2]
+[charaFadeout B 0.2]
+[charaFadeout C 0.2]
+[wt 0.4]
+
+
+[charaTalk on]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[wt 0.3]
+
+[se ad7]
+[charaMoveScale D 1.2 0.2]
+[charaMove D 0,10 0.2]
+[charaFadeout D 0.2]
+[wt 0.2]
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_41]
+[wt 0.4]
+
+
+[se bac141]
+[backEffect bit_bolg_01y]
+[wt 0.3]
+
+[se bac142]
+[effect bit_bolg_02y]
+[wt 0.3]
+
+[se bac143]
+[se bac18]
+[se bac7]
+[charaPut I 0,-50]
+[charaEffect I bit_bolg_03y]
+[wt 0.1]
+[flashin once 0.1 0.1 FFFF3380 FFFF3300]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+[se ad20]
+[wt 2.5]
+
+
+[charaPut J 1200,1200]
+[charaPut I 1200,1200]
+[charaEffectStop J bit_talk_14]
+[charaEffectStop I bit_bolg_03y]
+[charaEffect J bit_talk_10_LowLevel]
+
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaScale B 1.0]
+[charaScale C 1.0]
+[charaScale D 1.0]
+[charaScale H 1.0]
+[charaScale I 1.0]
+[charaScale J 1.0]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠オルトリンデ
+…………戦闘状況の終了を確認。[r]お疲れさまでした。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠ヒルド
+お疲れさまー。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[se ad39]
+[charaPut I 1]
+[charaEffect I bit_talk_warp]
+[wt 3.5]
+[seStop ad39 0.4]
+[wt 0.4]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠マシュ
+呪本、再び実体化しました！[r]紫式部さん！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠紫式部
+はいっ。お任せくださいませ。[r]呪本、回収いたします！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.2]
+
+
+[se adm20]
+[charaPut I 1]
+[charaEffectStop I bit_talk_warp]
+[fowardEffect bit_talk_22]
+[wt 1.5]
+[seStop adm20 1.0]
+[wt 2.5]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠スルーズ
+……どうやら異常事態は解決したようですね。[r]それでは、私たちはこれで。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+＠ヒルド
+え？[r]完全解決じゃないんじゃない？
+[k]
+
+＠ヒルド
+アンデルセンはハズレって言ってたんだし、[r]てことはアタリがまだどこかにあるんじゃないかな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠スルーズ
+……。[r]……。
+[k]
+
+[charaFace D 4]
+＠スルーズ
+…………では、我々はマスターとは別ルートで図書館探索。[r]先刻のモノに似た魔力反応があれば報告を。
+[k]
+
+[charaFace D 0]
+＠スルーズ
+いかがですか、マスター。
+[k]
+
+？1：うん、ありがとう
+？2：そうしてもらえると助かるよ
+
+？！
+
+[messageOff]
+[charaFace D 1]
+[wt 1.2]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠オルトリンデ
+スルーズ[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ヒルド
+今、笑った？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠スルーズ
+笑っていません。[r]行きますよ、二人とも。
+[k]
+
+[messageOff]
+[charaSpecialEffect D erasureReverse 1 1.0]
+[se ad677]
+[seVolume ad677 0 0.4]
+[wait charaSpecialEffect D]
+[seStop ad677 0.4]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+＠ヒルド
+……もう。[wt 0.6][charaFace C 1]じゃあねマスター！　また！
+[k]
+
+[messageOff]
+[charaSpecialEffect C erasureReverse 1 1.0]
+[se ad677]
+[seVolume ad677 0 0.4]
+[wait charaSpecialEffect C]
+[seStop ad677 0.4]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.8]
+
+[charaFace B 1]
+[wt 1.0]
+
+[charaSpecialEffect B erasureReverse 1 1.0]
+[se ad677]
+[seVolume ad677 0 0.4]
+[wait charaSpecialEffect B]
+[seStop ad677 0.4]
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠アンデルセン
+別働隊か。悪くない。[r]完全回収までできるかは分からんが、少なくとも、
+[k]
+
+＠アンデルセン
+呪本が怪物になったとしても、無力化くらいは[r]あの三騎なら難なくこなすだろう。
+[k]
+
+[charaFace G 4]
+＠アンデルセン
+にしても……。
+[k]
+
+＠アンデルセン
+あの三騎、北欧の戦乙女たち。[r]三騎同時の現界ができるなら普段はなぜしない？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠マシュ
+あ、それは。
+[k]
+
+＠マシュ
+霊基再臨が代替召喚になるという特性上、[r]三騎同時の現界は、魔力消費などに無理が出るとか。
+[k]
+
+＠マシュ
+以前、ダ・ヴィンチちゃんがそう言っていました。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠アンデルセン
+……成る程。[r]となるとあまり無茶はさせられんな。
+[k]
+
+[messageOff]
+[charaFace G 4]
+[wt 1.0]
+
+[charaFace G 2]
+＠アンデルセン
+さあ、俺たちも行くぞ。[r]図書館にいる連中の本を洗いざらい[line 3]続行だ！
+[k]
+
+？1：おー！
+
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+？2：図書館で見つかるといいね
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠マシュ
+そうですね……。
+[k]
+
+＠マシュ
+図書館外の貸し出し本に紛れている可能性は[r]捨てきれません。
+[k]
+
+[charaFace E 7]
+＠マシュ
+でも、ひとつひとつ確認していけば、いずれ必ず！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+？！
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠紫式部
+はいっ！　参りましょう！
+[k]
+
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

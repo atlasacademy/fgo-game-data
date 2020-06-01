@@ -1,0 +1,553 @@
+
+
+＄91-60-05-02-2-0
+
+[soundStopAll]
+
+
+
+[charaSet A 6005001 1 ジャック]
+[charaSet B 9002001 1 天草四郎]
+[charaSet C 5004001 1 ナーサリー・ライム（？）]
+[charaSet D 1098181200 1 ミズ・ロンドン]
+[charaSet E 98006200 1 エネミー]
+
+[charaSet H 8001000 1 ダミーエフェクト１]
+[charaSet I 8001000 1 ダミーエフェクト２]
+[charaSet J 8001000 1 ダミーエフェクト３]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_11]
+
+[scene 10000]
+
+
+[charaScale H 0.1]
+[charaEffect H bit_talk_radiallight02 0,-1300]
+
+[fadein black 1.5]
+[wait fade]
+
+＠
+[line 3]光に手を伸ばしても届かず。[bgm BGM_EVENT_1 0.1][r][line 3]闇に手を伸ばしても抱えきれない。
+[k]
+
+＠
+振り返れば、苦痛の記憶だけが浮かび上がる。
+[k]
+
+＠
+痛くて、助けて欲しくて、何もわからない内に[r]死んで死んで死に続けて。
+[k]
+
+＠
+押し潰されるように死んで、[r]挽き潰されるように消えていった。
+[k]
+
+＠
+社会の犠牲者であり社会の敵。[r]それは[line 3]
+[k]
+
+＠
+誰に罪科を、問えばいいのだろうか？
+[k]
+
+[messageOff]
+[fadeout white 1.2]
+[bgmStop BGM_EVENT_1 1.2]
+[wait fade]
+
+[charaPut H 1200,1200]
+[wt 0.1]
+
+[scene 77800]
+[wipeFilter cinema 0.5 0]
+[wt 1.0]
+
+[fadein white 1.2]
+[wait fade]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 0,-50]
+[wt 0.4]
+
+＠ジャック
+あれ？[r]ここは……。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 0,-50]
+[wt 0.4]
+
+＠C：？？？
+ここはあなたたちの生まれ育った土地よ。[r]いいえ、あなたたちの育たなかった土地かしら！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠ジャック
+え？[r]あれ？　ナーサリー？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠ナーサリー・ライム（？）
+いいえ、ナーサリー・ライムではないわ。
+[k]
+
+＠ナーサリー・ライム（？）
+わたしはあなたたちが攻撃されたくないと[r]思っている相手に変身したの。
+[k]
+
+[charaFace C 1]
+
+＠ナーサリー・ライム（？）
+応報よ。[r]因果よ。[bgm BGM_EVENT_5 0.1]
+[k]
+
+＠ナーサリー・ライム（？）
+あなたたちは、あなたたちが殺した人への[r]罪を償うの。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-50]
+
+＠ジャック
+……っ！
+[k]
+
+[messageOff]
+[se bac6]
+
+[effect bit_talk_Slash_white_01 0,-50]
+[backEffect bit_talk_Slash_white_01 0,-50]
+[wt 0.2]
+[charaFace A 4]
+[charaShake A 0.04 3 3 0.6]
+[wt 1.2]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠ナーサリー・ライム（？）
+罪から逃げるのかしら？[r]罰を受けないのかしら？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+＠ジャック
+……やめて。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-50]
+
+＠ナーサリー・ライム（？）
+いいえ、いいえ！[r]あなたたちは[#殺される義務があるの]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+＠ジャック
+やめて、やめて、やめて……！[r]そんなこと、言わないでよぅ！
+[k]
+
+[messageOff]
+[se bac30]
+[effect bit_talk_tornado02 0,-50]
+[backEffect bit_talk_tornado02 0,-50]
+[wt 0.8]
+
+[se bac28]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.2]
+[charaShake A 0.03 2 2 0.4]
+[wt 0.8]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-50]
+
+＠ナーサリー・ライム（？）
+さあ、いつまでも逃げてはいられないわよ！
+[k]
+
+[effectDestroy bit_talk_tornado02]
+[backEffectDestroy bit_talk_tornado02]
+
+＠ナーサリー・ライム（？）
+あなたたちはこの世に生み落とされた[r]極小の地獄そのもの[line 3]
+[k]
+
+＠ナーサリー・ライム（？）
+だったら、受け入れて速やかに消えてしまわないと！
+[k]
+
+
+[messageOff]
+[fadeout black 1.2]
+[bgm BGM_EVENT_5 1.2 0.2]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[scene 10902]
+[wipeOff]
+[wt 1.4]
+
+[fadein black 1.2]
+[bgm BGM_EVENT_5 1.2 1.0]
+[wait fade]
+[wt 0.4]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠天草四郎
+……さて、唐突ですが少々お話が。[r]いえいえ、もちろんただの雑談ではありません。
+[k]
+
+[charaFace B 4]
+
+＠天草四郎
+ご存知かどうかはわかりませんが[line 3]
+[k]
+
+＠天草四郎
+ジャック・ザ・リッパーは、[#数多:あまた]のサーヴァントの中でも[r]特異な点があります。
+[k]
+
+＠天草四郎
+[#あれは悪霊の類いです]。[wt 0.4][charaFace B 0][r]悪口ではありませんよ？
+[k]
+
+＠天草四郎
+[#正真正銘:しょうしんしょうめい]、[#倫敦:ロンドン]という都市が[r]生み落とした悪霊そのものです。
+[k]
+
+＠天草四郎
+その悪霊がジャック・ザ・リッパーという皮を被っている。[r]彼女はそういう存在なのです。
+[k]
+
+＠天草四郎
+……そしてそれは、[r]私の知る限り彼女だけの特性です。
+[k]
+
+＠天草四郎
+噂によると、バーサーカークラスでは[r][#違う犯人]が召喚されるのだとか。
+[k]
+
+＠天草四郎
+さすがに[#幼子:おさなご]の姿をしているのは、[r]恐らく我々の知るジャックだけでしょうがね。
+[k]
+
+？1：でも頭はいいよね？
+
+[charaFace B 1]
+
+＠天草四郎
+ええ、彼女はとても賢いですよ。[r]頭の回転が速い、と言い[#換:か]えてもいいでしょう。
+[k]
+
+[charaFace B 0]
+
+＠天草四郎
+もっとも、子供の[#姿:カタチ]をしていても[r]大抵のサーヴァントは賢いと言えます。
+[k]
+
+＠天草四郎
+ちなみにあの賢さは[r]生前に獲得したものではないはずです。
+[k]
+
+＠天草四郎
+どちらかというと……ふむ、[r]集合知に近いでしょうか。
+[k]
+
+＠天草四郎
+いずれにせよ、彼女が愛らしさを[r][#享受:きょうじゅ]すべき子であることに違いはありませんが[line 3]
+[k]
+
+？2：悪霊の割にはいい子だよね
+
+[charaFace B 1]
+
+＠天草四郎
+ええ、とてもいい子と呼べるでしょう。
+[k]
+
+[charaFace B 0]
+
+＠天草四郎
+敵に苛烈、情け容赦がないあたりは、[r]サーヴァントならば当然ですし。
+[k]
+
+＠天草四郎
+なるべく楽しく生きようとする様は、[r]大変微笑ましいものです。
+[k]
+
+？！
+
+＠D：？？？
+[line 3]でも、あの子は人殺しよ？
+[k]
+
+[charaFace B 5]
+
+＠天草四郎
+！
+[k]
+
+
+[messageOff]
+[se adm37]
+[bgm BGM_EVENT_5 0.6 0.6]
+[wt 0.3]
+
+[seStop adm37 0.4]
+[wt 0.6]
+
+[se bac23]
+[fowardEffect bit_talk_threethrows 0,-170]
+[wt 0.08]
+[se bac23]
+[wt 0.08]
+[se bac23]
+[wt 0.5]
+
+[charaPut J 0,0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad28]
+[fowardEffect bit_shot_01 0,0 H]
+[wt 0.08]
+[se ad28]
+[wt 0.08]
+[se ad28]
+[wt 0.2]
+[bgm BGM_EVENT_5 0.6 1.0]
+[wt 0.9]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠天草四郎
+マスター、少しお[#退:さ]がりを。
+[k]
+
+＠天草四郎
+[#唐突:とうとつ]な[#黒鍵:こっけん]失礼。[r]それで、どちら様でしょうか？
+[k]
+
+[messageOff]
+[charaPut I 0,0]
+[charaEffect I bit_talk_11]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[fowardEffectDestroy bit_shot_01]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠D：？？？
+私[line 3]私は、そうですね。[r][#ミズ]・[#ロンドン]とでも。
+[k]
+
+？1：ミズ・ロンドン……？
+
+＠ミズ・ロンドン
+まあ、名前はどうでもいいわ。
+[k]
+
+＠ミズ・ロンドン
+それで、現実を直視する覚悟は[r]できているのかしら？
+[k]
+
+
+？2：ミズ・ロンドン。彼女が人殺しなのは……
+
+＠ミズ・ロンドン
+そうね、当たり前の事実。[r]でも、そこから目を逸らしてはいけないのよ。
+[k]
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠天草四郎
+……どうやら、敵ではなさそうですね。[r]失礼しました。
+[k]
+
+[charaFace B 0]
+
+＠天草四郎
+……ふむ。
+[k]
+
+＠天草四郎
+マスター、これは私の勘ですが、[r]彼女としばらく行動を共にしてみましょう。
+[k]
+
+＠天草四郎
+彼女もそれをお望みのようですし。
+[k]
+
+？1：了解
+？！
+
+[charaPut I 0,0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ミズ・ロンドン
+……ありがとうございます。[r]話が早くて助かったわ。
+[k]
+
+＠ミズ・ロンドン
+あなたの[#仰:おっしゃ]る通り、[r]私はお二人と行動を共にしたいのです。
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[scene 10902]
+[wipeOff]
+[wt 0.6]
+
+[fadein black 1.2]
+[wait fade]
+[wt 0.4]
+
+[charaPut I 0,0]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠ミズ・ロンドン
+私が何なのか、何であるのかは、[r]問題ではないの。
+[k]
+
+＠ミズ・ロンドン
+あの子を助けることだけを考えて欲しい。[r]多分、邪魔が入ると思いますけど。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.9 1.0]
+[bgmStop BGM_EVENT_5 0.9]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[wipein rectangleStripRightToLeft 0.9 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[seStop ad60 0.4]
+[wt 0.4]
+
+[se ad25]
+[wt 1.5]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠天草四郎
+早速、邪魔が入りましたね。
+[k]
+
+＠天草四郎
+では、さっさと彼らを倒して[r]貴女の目的を伺うとしますか。
+[k]
+
+[charaFace B 2]
+
+＠天草四郎
+行きますよ、マスター！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,658 @@
+
+
+＄03-00-02-03-2-1
+
+
+[soundStopAll]
+
+[charaSet A 8001400 1 マシュ]
+[charaSet B 1033000 1 シグルド（シルエット）]
+[charaFilter B silhouette 00000080]
+[charaSet C 1033000 1 シグルド]
+[charaSet G 98115000 1 エフェクト用]
+[charaSet H 98115000 1 エフェクト用]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[charaDepth H 10]
+
+[charaPut H 1]
+[charaEffect H bit_talk_celebro]
+[charaEffect H bit_talk_celebro_back]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 60601]
+
+[fadein black 1.0]
+[wait fade]
+
+[se adm14]
+[effect bit_talk_kengekiall03]
+
+[wt 0.2]
+[se adm14]
+[wt 0.5]
+
+[se ad32]
+[effect bit_talk_14]
+[wt 1.0]
+
+[se ad170]
+[effect bit_talk_14]
+[wt 0.3]
+[se ad32]
+[effect bit_talk_14]
+[wt 0.7]
+
+
+[se ad671]
+[charaShake A 0.05 3 2 1.2]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.4 1]
+
+＠マシュ
+くっ、ううっ……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+[wt 0.4]
+[se ad681]
+
+[charaShake C 0.05 5 0 0.4]
+[charaFadeout C 0.4]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+（来る！）
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad680]
+[fowardEffect bit_talk_gram_slash_02]
+[wt 0.6]
+
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[se ad170]
+[effect bit_talk_14]
+[charaShake A 0.05 3 3 0.6]
+[wt 0.5]
+
+＠マシュ
+く……うっ……！[wt 0.5][charaFace A 2][r]は、あああああああああああああああああああ[line 3]！
+[k]
+
+[flag MALE false]
+[flag FEMALE false]
+
+[selectionUse masterMale]
+？1：令呪使用！
+[flag MALE true]
+？！
+
+[selectionUse masterFemale]
+？1：令呪使用！
+[flag FEMALE true]
+
+？！
+
+[messageOff]
+
+[branch play01 MALE 1]
+[branch play02 FEMALE 1]
+
+[label play01]
+[charaEffect G bit_talk_CommandMantra_01 0,64]
+[wt 0.5]
+[se bas16]
+[wt 1.5]
+
+[branch play03]
+
+[label play02]
+[charaEffect G bit_talk_CommandMantra_02 0,64]
+[wt 0.5]
+[se bas16]
+[wt 1.5]
+
+[branch play03]
+
+[label play03]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠シグルド
+ン[line 3]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[seStop ad632 0.5]
+[fadeMove white 0.4 1.0]
+[se ad467]
+[se ad170]
+[se ad32]
+[wait fade]
+
+[fadein white 0.3]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はああああっ！！
+[k]
+
+[messageOff]
+
+[se ad73]
+[charaMoveScale A 1.0 0.3]
+[charaPut G 1]
+[charaEffect G bit_talk_41]
+[wt 0.3]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_41]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+[wt 0.1]
+[se ad686]
+[charaEffect C bit_talk_13]
+[flashin once 0.2 0.2 FFFFFF80 FFFFFF80]
+[charaShake C 0.05 4 3 0.5]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaScale A 1.0]
+
+＠マシュ
+（一撃が！）
+[k]
+
+＠マシュ
+（入った！）
+[k]
+
+[messageOff]
+[se ad54]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.4 1]
+
+＠マシュ
+はあっ、はっ……はあっ……[r]ふっ……
+[k]
+
+[charaFace A 7]
+
+＠マシュ
+……わたしと先輩の全魔力を載せた一撃です。[r]ホームズさんの力と重なって、相当の威力になっています。
+[k]
+
+＠マシュ
+本場のバリツではありませんが、手応えはありました。[r]あなたの霊核にも幾らかの損傷があるはず。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠シグルド
+……。[r]……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+…………もう退いてください、シグルド。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠シグルド
+霊核がどうとか言ったな。[r]それがどうした。
+[k]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠シグルド
+[f large]それがどうした？
+[k]
+
+[messageOff]
+[se ad681]
+
+[charaFadeout C 0.4]
+[charaShake C 0.05 5 0 0.4]
+[wt 0.8]
+
+？1：マシュ！
+？2：姿が、見えない[line 3]
+
+？！
+
+
+[se adm14]
+[se ad679]
+[effect bit_bolg_01]
+[wt 0.2]
+
+[se ad680]
+[effect bit_bolg_02]
+[wt 0.2]
+
+[effect bit_talk_14]
+[se ad170]
+[wt 0.8]
+[se ad322]
+[shake 0.05 3 2 1.0]
+[wt 1.0]
+
+＠マシュ
+くあああっ……！
+[k]
+
+[messageOff]
+[se ad632]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.4 1]
+[charaShake A 0.05 2 1 0.8]
+[wt 0.4]
+
+＠マシュ
+せん……ぱ……い……！[seStop ad632 1.5]
+[k]
+
+＠マシュ
+外骨骼、駆動率低下[line 3][r]魔力残量わずか……くっ……ううっ……まだ……！
+[k]
+
+＠マシュ
+……わたしが……倒れる、わけ……には……！[r]先輩……せん、ぱ……い……
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[charaMove A 0,-15 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+
+？1：（駆け寄る）
+
+？！
+
+[messageOff]
+[se ad55]
+[seVolume ad55 0 0.4]
+[shake 0.05 0 1 0]
+[wt 0.4]
+
+[seStop ad55]
+[shakeStop]
+
+[se ad1]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.4 1]
+[charaShake C 0.05 3 3 0.4]
+
+＠シグルド
+おまえは[line 3]動くな。
+[k]
+
+＠シグルド
+さて……[r]今のは何故？　混ざり物ゆえか？
+[k]
+
+＠シグルド
+全魔力、などと口にするものだから大層驚いたぞ。[r]獲物を仕留める際に舌なめずりする狩人がいるとはな。
+[k]
+
+＠シグルド
+……。[r]……。
+[k]
+
+＠シグルド
+ああ、違うな。おまえたちは狩人ではなく、[r]勇士ではなく、恐らくは戦士でもないのだろうとも。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_24 0.5 0.5]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se bac151]
+[shake 0.05 3 4 1.0]
+[flashin once 0.2 0.2 FF000080 FF000000]
+
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠マシュ
+せんぱい……！！
+[k]
+
+＠マシュ
+くっ……動け……動いて、[#霊基外骨骼:オ ル テ ナ ウ ス]！[r]お願い[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠シグルド
+哀れなヒトの仔たちよ。
+[k]
+
+＠シグルド
+[#是:これ]は慈悲だ。喜べ。[r]おまえたちの英雄の剣で、その首を[#刎:は]ねてやろう。
+[k]
+
+＠シグルド
+ヒトよ。ヒトよ。哀れなる者どもよ。[r]おまえたちに明日はなく、同じく、世界にも明日はない。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠マシュ
+だめ、だめ……！[r]せんぱい、先輩、令呪をわたしにもう一度……先輩……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠シグルド
+無駄だ。[r]分かるな、魔力を込めるよりも先に貴様は死に果てる。
+[k]
+
+＠シグルド
+さらば。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 2.0]
+[se ad51]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaFilter B normal 00000000]
+
+？1：（目を逸らさない）
+
+[se adm14]
+
+＠
+[line 12]。
+[k]
+
+＠
+風を切って剣が振るわれる。
+[k]
+
+＠
+……。[r]……。
+[k]
+
+＠
+鮮血は……………………………ない。
+[k]
+
+＠
+何も、首から噴き出たりはしていない。[r]刃が肉と骨を断ってしまう、残酷な音もなかった。
+[k]
+
+＠
+まだ首は繋がっていた。[r]生きている。
+[k]
+
+＠
+ほんの薄皮一枚……[r]あと少しでも魔剣の切っ先が下の位置にあったなら、
+[k]
+
+＠
+[%1]の命は断ち割られていたはず。[r]しかし。
+[k]
+
+[messageOff]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.7 1]
+[wt 1.0]
+
+＠
+[charaTalk A]
+ぴたり、と。[r]寸前で、赤色の魔剣は完全に動きを止めていた。
+[k]
+
+？2：（瞼を閉じつつ令呪を使う）
+
+[wipeout openEye 0.1 0.1]
+[wait wipe]
+
+[charaPut H 2000,2000]
+[wt 0.1]
+
+[scene 10000]
+
+[wipein openEye 0.1 0.1]
+[wait wipe]
+
+[se adm14]
+
+＠
+[line 3]確かに。[r]令呪の使用よりも、剣の方が速かった。
+[k]
+
+＠
+風を切る鋭い音が響いて……
+[k]
+
+＠
+…………何故か、それだけだった。
+[k]
+
+＠
+一秒が過ぎて、二秒が過ぎても[r]何の変化もない。
+[k]
+
+＠
+衝撃や激痛の類が[%1]を[r]襲うことはなく、
+[k]
+
+＠
+一切の感触なく命を奪い去ってしまう事も、[r]またなかった。
+[k]
+
+
+[messageOff]
+[wipeout openEye 0.1 0.1]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[scene 60601]
+
+[wipein openEye 1.0 0.5]
+[wait wipe]
+[wt 1.0]
+
+＠
+[charaTalk A]
+ぴたり、と。[r]目前で、赤色の魔剣は完全に動きを止めていた。
+[k]
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+（魔剣の切っ先が……途中で……止まって[line 3]）
+[k]
+
+[charaFace A 9]
+
+＠マシュ
+マスター！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[wt 0.3]
+[charaFace B 12]
+[charaFadein B 0.4 1]
+[wt 0.7]
+
+＠シグルド
+…………フン。[charaFadeout C 0.1][bgm BGM_EVENT_81 0.1][r][#是:これ]が、英雄の[#矜持:きょうじ]とやらか。
+[k]
+
+[se ad51]
+
+＠シグルド
+命を拾ったな、ヒトの仔。
+[k]
+
+
+[messageOff]
+[se ad60]
+[charaFadeout B 0.7]
+[wt 1.0]
+[seStop ad60 1.0]
+[wt 0.6]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+[se ad632]
+[wt 0.8]
+
+＠マシュ
+マスター！[seStop ad632 1.5]
+[k]
+
+＠マシュ
+動かないでください……！[r]傷を負っています、彼の蹴りを受けた際に……
+[k]
+
+[messageOff]
+[charaFace A 11]
+[wt 1.0]
+[charaFace A 8]
+
+＠マシュ
+だから……[r]今は、動かないでください……
+[k]
+
+＠マシュ
+…………先輩…………。
+[k]
+
+[messageOff]
+[charaFadeout A 0.7]
+[charaMove A 0,-15 1.0]
+[wt 1.0]
+[se ad144]
+
+
+？1：マシュ……！
+
+？！
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

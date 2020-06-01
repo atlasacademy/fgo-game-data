@@ -1,0 +1,736 @@
+
+
+＄03-00-04-12-4-0
+
+
+[soundStopAll]
+
+[charaSet A 8001400 1 マシュ]
+[charaSet B 1039001 1 ラクシュミー]
+[charaSet C 98115300 1 ホームズ]
+[charaSet D 23003001 1 ガネーシャ]
+[charaSet E 1098176100 1 アスクレピオス]
+[charaSet F 98006100 1 エネミー１]
+[charaSet G 98006100 1 エネミー２]
+[charaSet H 1098167300 1 子供]
+[charaSet I 1098124510 1 ダ・ヴィンチ]
+[charaSet J 98115000 1 エフェクト用]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[scene 10000]
+
+[bgm BGM_EVENT_80 0.1]
+[fadein black 1.0]
+[wait fade]
+
+
+[se ad171]
+[effect bit_talk_v_slash01]
+[wt 0.4]
+[effect bit_talk_14 100,-100]
+[se ad170]
+[wt 0.3]
+
+[scene 75500 0.5]
+[wt 0.5]
+
+[charaTalk off]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.2]
+[se bac167]
+[fowardEffect bit_talk_14]
+[charaShake F 0.05 3 2 0.8]
+[wt 0.8]
+[charaMove F 0,-15 0.3]
+[charaFadeout F 0.4]
+[wt 0.2]
+[se ad144]
+[wt 1.0]
+
+[se ad575]
+[wt 0.6]
+[charaPut F 0]
+[charaSpecialEffect F appearance 1 1.0]
+[wt 0.1]
+[seStop ad575 0.5]
+[se ad463]
+[charaPut G 2]
+[charaSpecialEffect G appearance 1 1.0]
+[wait charaSpecialEffect G]
+[wt 1.2]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[se ade18]
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+＠マシュ
+倒しても、次から次へと……っ、あれは！？
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+[charaShake H 0.05 2 1 0]
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[wt 1.5]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaPut J 1]
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+＠ダ・ヴィンチ
+まずいな、子供だ。戦闘を見てほとんどの町民は[r]隠れてくれたようだけど……取り残されちゃってたのか！
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[wt 0.1]
+
+？1：危ないから避難して！
+？2：あの子の保護を最優先！
+？！
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+[charaShake H 0.05 2 1 0]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+＠子供
+ひ、ひええええ……。
+[k]
+
+[messageOff]
+[charaMove H 80,0 0.3]
+[wt 0.2]
+[se bac344]
+[charaShakeStop H]
+
+[se bac345]
+[charaMove H 100,-10 0.3]
+[wt 0.5]
+[charaFace H 4]
+
+＠子供
+うう、いた、いたいよぉ……。
+[k]
+
+＠ガネーシャ
+あっコケた。ちょっとまずいッスよ、[r]間合いが……って、おや？[bgmStop BGM_EVENT_80 1.5]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠アスクレピオス
+どうした。転んだか。[r]膝を怪我しているな。見せてみろ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 2]
+
+[charaFace E 0]
+[charaFadein E 0.1 0]
+
+＠子供
+か、かみさま……？
+[k]
+
+[charaFace E 4]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠アスクレピオス
+石で切ったのか。[r]町中とはいえ道の整備が不充分だな。
+[k]
+
+＠アスクレピオス
+今の勢いで町中で転倒すると、[r]この様態の[#裂創:れっそう]ができる……なるほど。
+[k]
+
+＠アスクレピオス
+今後は傷を見ただけで状況を読み取れるよう、[r]深さと大きさを記憶に留めておこう。
+[k]
+
+[charaMove E -200,0 0.4]
+
+＠アスクレピオス
+さて、傷自体には何も特異な部分はない。[r]最適な治療は[line 3]まずは傷口の洗浄。
+[k]
+
+＠アスクレピオス
+そしてこの薬草を[#貼付:ちょうふ]する。
+[k]
+
+[messageOff]
+[se ad738]
+[wt 1.0]
+[charaFace H 6]
+
+＠子供
+血が、とまったよ……？
+[k]
+
+[charaFace E 0]
+
+＠アスクレピオス
+そうしたのだから当然だ。
+[k]
+
+[charaFace E 5]
+
+＠アスクレピオス
+いいか、痛みがなくなるまで剥がすな。[r]患者なのだから医者の指示を守れ。
+[k]
+
+＠アスクレピオス
+守らないのならその愚鈍な頭部が問題になる。[r]僕に[#匙:さじ]を投げさせるなよ。
+[k]
+
+[charaFace H 1]
+
+＠子供
+う、うん……ぜったい、ぜったいまもります！[r]ありがとうございます、かみさま！
+[k]
+
+[charaFace E 0]
+
+＠アスクレピオス
+ならば貴様は良い患者だ。[r]お大事に。
+[k]
+
+
+[messageOff]
+[charaTalk off]
+
+[se ad132]
+[charaMove H 300,0 0.5]
+[charaFadeout H 0.4]
+
+[wt 1.5]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaSet H 1019001 1 ラーマ]
+
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠ガネーシャ
+えー。なにそれ、マジ無愛想だけどいいお医者さん、[r]みたいじゃないっスか……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠アスクレピオス
+何を言っている？
+[k]
+
+＠アスクレピオス
+僕は治すべき者は治すし、それを邪魔する者、[r]僕の医術の進歩を阻む者は許さない[line 3]
+[k]
+
+＠アスクレピオス
+それだけの、とてもシンプルな話だ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ラクシュミー
+その[#志:こころざし]そのものは[r]立派なものであるのかもしれぬ。
+[k]
+
+[charaFace B 5]
+
+＠ラクシュミー
+だが、なぜだ？[r]なぜそれを頑なに[#最上:さいじょう]に置く？
+[k]
+
+＠ラクシュミー
+なぜ、それ以外の全てを[line 3]世界の歪みを、[r]人々の嘆きを、軽々しく二の次にできるのだ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠アスクレピオス
+なぜ。理由を問うているのか？　……新鮮だな。[r]あまりに当然すぎて僕の中には答えはないぞ。
+[k]
+
+＠アスクレピオス
+それに答えるには、気にしなくてもいいものまで気にする[r]愚鈍な患者レベルにまで頭の程度を落とさねばならない。
+[k]
+
+[charaFace E 4]
+
+＠アスクレピオス
+…………。
+[k]
+
+[charaFace E 0]
+[bgmStop BGM_EVENT_70 1.5]
+
+＠アスクレピオス
+いや、無駄だな。うん。どう考えても無駄だ。[r]だから邪魔者を診察室から追い出すのを続けよう。
+[k]
+
+[messageOff]
+
+[charaTalk off]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[se ad575]
+[wt 0.6]
+[se ad463]
+[charaPut F 0]
+[charaSpecialEffect F appearance 1 1.0]
+[wt 0.2]
+[seStop ad575 0.5]
+[charaPut G 2]
+[charaSpecialEffect G appearance 1 1.0]
+[wait charaSpecialEffect G]
+[wt 1.2]
+[bgm BGM_EVENT_80 0.1]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠ラーマ
+子供を助けたかと思えば死者を操る[line 3][r]賛辞か罵声か、おまえはどちらを欲しがっているのだ？
+[k]
+
+[messageOff]
+
+[charaFace H 2]
+[charaMoveScale H 1.1 0.2]
+[charaMove H 0,10 0.1]
+[effect bit_talk_v_slash01]
+[wt 0.1]
+[charaMove H 5,12 0.1]
+[se bac263]
+[wt 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.2]
+[se bac403]
+[fowardEffect bit_talk_14]
+[flashin once 0.2 0.2 FFFFFF80 FFFFFF80]
+
+[charaShake F 0.05 3 2 0.8]
+[wt 0.8]
+[charaMove F 0,-15 0.3]
+[charaFadeout F 0.4]
+[wt 0.2]
+[se ad144]
+[wt 1.0]
+[charaScale H 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠アスクレピオス
+どちらも必要ない。物わかりの悪い患者だ。[r]いい加減に暴れるな。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠ラーマ
+いくら数が多かろうとも、死者ごとき。[r]魔王を倒した余が怯むとは思わぬことだ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠アスクレピオス
+無知な患者こそ事態を悪化させる行動を取りたがる。
+[k]
+
+＠アスクレピオス
+大人しく、僕の手で医術の進歩の[#礎:いしずえ]に[r]なっていればいいものを。
+[k]
+
+[charaFace E 6]
+
+＠アスクレピオス
+変に時間をかけるから[line 3][#来てしまったぞ]。[bgmStop BGM_EVENT_80 1.0]
+[k]
+
+？1：…………？
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad659]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+説明は後だ！　全員、即刻全ての戦闘を中止して[r]その場から離脱したまえ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 22]
+[charaFadein I 0.1 1]
+
+＠ダ・ヴィンチ
+可能性だけは想定していたけどね、まったく！
+[k]
+
+＠ダ・ヴィンチ
+もちろん、考えうる最悪の展開の想定だよ。[r]運が悪いのか何なのか！
+[k]
+
+[charaFadeout I 0.1]
+[seStop ad659 1.0]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[se ad246]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ラクシュミー
+…………。[seStop ad246 3.0]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+マスター、あちらの空から何かが！[r]あれは[line 3]！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[scene 10000]
+
+[charaSet F 1098176300 1 神たるアルジュナ]
+[charaSet G 1098127610 1 ペペロンチーノ]
+
+[wipein rectangleStripUpToDown 0.1 1.0]
+[wait wipe]
+
+[se ade8]
+[wt 0.4]
+[fadeout white 1.5]
+[wait fade]
+
+[scene 75600]
+[wt 0.2]
+
+[fadein white 1.0]
+[wait fade]
+[bgm BGM_EVENT_24 0.1]
+[wt 2.2]
+
+
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[scene 75500]
+[wt 0.1]
+[se bac256]
+
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.5 0,60]
+[charaMove F 0,0 0.7]
+[wt 2.5]
+
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠ラーマ
+……アルジュナ！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠ガネーシャ
+うえええ！？　普段は空想樹のへん飛んでるだけって話じゃ[r]なかったんスかぁ！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠アスクレピオス
+素人考えの自家治療ほど手に負えないものはないな。
+[k]
+
+＠アスクレピオス
+彼ほどの力とヴィマーナの機動性があれば、[r]あの樹に張り付いて護る必要などない。
+[k]
+
+[charaFace E 4]
+
+＠アスクレピオス
+特に……今は[#あの海]も広がっているからな。[r]彼以外の者には近付けもしないさ。
+[k]
+
+[charaFace E 0]
+
+＠アスクレピオス
+結局のところ、普段の彼は[r]『特に動く必要がないからそうしている』というだけだ。
+[k]
+
+＠アスクレピオス
+それは『必要があれば動く』のと同義だろう。
+[k]
+
+[charaFace E 5]
+
+＠アスクレピオス
+……まぁ今回は、僕が事前の要請に従ったにすぎないが。[r]おまえたちを見つけたら知らせろ、ってな。
+[k]
+
+＠アスクレピオス
+珍しく興味があるみたいだ。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.8]
+
+？1：（逃げられない……！）
+？2：（挟まれた……！）
+？！
+
+＠神たるアルジュナ
+…………。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ラクシュミー
+おまえが……この世界で唯一の、神か。[r]全ての神性を取り込んだという[line 3]！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠神たるアルジュナ
+…………？[r]おまえも……神、か……。だが……矮小である……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠ラクシュミー
+……黙れ。[r]借り物の神性で[#量:はか]るな、授かりの英雄だった者よ！
+[k]
+
+＠ラクシュミー
+その不遜を私は糾弾する。[r]貴様の中の神を[line 3][#疾:と]く解放するがいい！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠ラーマ
+いかにもそのとおりだ。貴様はこの世界のシータに繋がる[r]神性を持っているのだろう。見逃すわけにはいかぬ！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk I]
+[charaFace I 31]
+[charaFadein I 0.1 1]
+
+＠ダ・ヴィンチ
+今は一時的に見逃して！[r]まだ勝ち目がないって言ったでしょー！？
+[k]
+
+[charaFace I 2]
+
+＠ダ・ヴィンチ
+離脱の指示は出したはずだよ、聞こえてた！？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠ペペロンチーノ
+もちろん聞こえてるわよ！　でもね！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠マシュ
+状況的に、戦闘は避けられそうにないのです……！
+[k]
+
+？1：なんとか……乗り切る！
+？2：隙を見つけて……離脱する！
+？！
+
+[charaFace A 7]
+
+＠マシュ
+はい、マスター！[r]こんなところでは終われません……ご指示を！
+[k]
+
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

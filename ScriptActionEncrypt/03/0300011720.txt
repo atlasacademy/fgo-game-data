@@ -1,0 +1,872 @@
+
+
+＄03-00-01-17-2-0
+[soundStopAll]
+
+[charaSet A 5036001 1 アヴィケブロン]
+[charaSet B 7030001 1 アタランテ・オルタ]
+[charaSet C 1098123210 1 ゴルドルフ]
+[charaSet E 1098124510 1 ダ・ヴィンチ]
+[charaSet F 99502600 1 マシュ]
+[charaSet G 1098128400 1 ヤガ叛逆軍]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[cameraMove 0.1 60,0 1.2]
+[wt 0.1]
+
+[scene 54903]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_82 0.1]
+
+[cameraMove 2.5 0,0 1.2]
+[wt 1.0]
+
+＠アタランテ・オルタ
+見ての通り、まだ作りかけだ。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[cameraHome 0.1]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠アタランテ・オルタ
+さて、ここから隊を二つに分ける。
+[k]
+
+＠アタランテ・オルタ
+森の木を切って砦を建築する班と、[r]トンネルを掘削する班。
+[k]
+
+[charaFace B 0]
+
+＠アタランテ・オルタ
+……そして[%1]たちには、[r]どちらかでヤガたちを護衛して欲しい。
+[k]
+
+＠アタランテ・オルタ
+森の木を切っても、トンネルを掘っても、[r]魔獣が出現するのは確実だからな。
+[k]
+
+[charaFace B 6]
+
+＠アタランテ・オルタ
+さて、どちらを手伝う？[r]それを決めてから、作業を開始する。
+[k]
+
+[messageOff]
+[wt 0.7]
+
+[input selectBranch]
+
+[charaSet A 5036001 1 アヴィケブロン]
+[charaSet B 7030001 1 アタランテ・オルタ]
+[charaSet C 1098123210 1 ゴルドルフ]
+[charaSet E 1098124510 1 ダ・ヴィンチ]
+[charaSet F 99502600 1 マシュ]
+[charaSet G 1098128400 1 ヤガ叛逆軍]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[scene 54903]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+
+
+[bgm BGM_EVENT_82 0.1]
+
+[messageOff]
+[maskin black 1.0]
+[wait mask]
+[label selectBranch]
+
+
+？1：森の伐採を手伝う
+？2：トンネルの掘削を手伝う
+？！
+
+
+
+
+[branch INPUT_SELECT_BRANCH_2 INPUT_SELECT_BRANCH 1]
+
+[label INPUT_SELECT_BRANCH_1]
+
+[charaSet D 11006001 1 サリエリ]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アタランテ・オルタ
+そうか。
+[k]
+
+＠アタランテ・オルタ
+では、私とアヴィケブロンが[r]トンネル採掘を手伝うことにする。
+[k]
+
+[charaFace B 6]
+
+＠アタランテ・オルタ
+ヤガたちの指揮を頼むぞ。
+[k]
+
+？1：了解！
+？2：そちらも気をつけて
+？！
+
+[charaFace B 1]
+
+＠アタランテ・オルタ
+ああ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アヴィケブロン
+防衛用ゴーレムを幾つか置いていく。[r]では、こちらは任せた。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠ヤガ叛逆軍
+よろしくお願いします、旧種の方。
+[k]
+
+？1：[%1]でいいよ
+？！
+
+＠ヤガ叛逆軍
+では、[%1]様。
+[k]
+
+＠ヤガ叛逆軍
+今から森に向かい、伐採を開始します。[r]その間、我々を守って戴ければ……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace G 0]
+[charaFadein G 0.1 0]
+[charaFace D 6]
+[charaFadein D 0.1 2]
+
+＠サリエリ
+時間はどの程度だ？
+[k]
+
+＠ヤガ叛逆軍
+ふむ。[r]あの砦の規模であれば[line 3]
+[k]
+
+＠ヤガ叛逆軍
+外側に一日、武装強化に一日。[r]内側の建物に二日、というところでしょうか。
+[k]
+
+＠サリエリ
+わかった。
+[k]
+
+[charaFace D 4]
+
+＠サリエリ
+宮廷音楽家にやらせるような任務ではないが、[r]サーヴァントの宿命というものだ。
+[k]
+
+[charaFace D 6]
+
+＠サリエリ
+謹んで任務を受領する。
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[bgmStop BGM_EVENT_82 1.2]
+[wait fade]
+[charaFadeout G 0.1]
+[charaFadeout D 0.1]
+[scene 55300]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠マシュ
+少し踏み入っただけでも、[r]雰囲気が一変しますね……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ヤガ叛逆軍
+ここいらの村人たちによれば、ですが。
+[k]
+
+＠ヤガ叛逆軍
+奥へ踏み込めば、ジャヴォル・トローンが[r]複数体やってきて、即座に食い殺されるとか。
+[k]
+
+＠ヤガ叛逆軍
+彼らの縄張りに踏み込んでいますからね、[r]どうかよろしくお願いします。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠サリエリ
+……ふむ。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout D 0.1]
+[wt 0.4]
+[se ade80]
+[seVolume ade80 0 0]
+[wt 0.3]
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.9]
+[seVolume ade80 0.3 1.0]
+[shake 0.1 3 6 0.2]
+[wt 0.5]
+[se ad495]
+[seVolume ad495 0 0.7]
+[wt 0.3]
+[se ad517]
+[wt 0.6]
+[se ade82]
+
+[charaPut H 2]
+[charaTalk F]
+[charaFace D 6]
+[charaFadein D 0.1 0]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+
+
+＠マシュ
+どうですか、サリエリさん？[se ad517][seVolume ad517 0 0.7]
+[k]
+
+[charaFace D 4]
+
+＠サリエリ
+悪いが、木を切る音が大きすぎて[se ade82][r]集中し辛い。
+[k]
+
+[messageOff]
+[se ad495]
+[wt 0.5]
+[se ad517]
+[seVolume ad517 0 0.6]
+[wt 0.2]
+[se ade82]
+
+＠サリエリ
+しばらく私に向けた通信は控えて欲しい。[se ad495]
+[k]
+
+[charaFace F 8]
+
+＠マシュ
+あ、はい。[r]すいません。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[charaPut H 1200,1200]
+[charaPut H 0,-50]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+[wt 0.3]
+[wipeFilter cinema 0.5 0]
+[fadein black 0.3]
+[wait fade]
+
+＠マシュ
+（それにしてもマスター。[r]　皆さん、凄い勢いですね）
+[k]
+
+？1：（チェーンソーでも使っているのかと）
+？！
+
+＠マシュ
+（はい。ヤガの皆さんの体力は凄いです。[charaFace F 12][r]　……でも、逆に言うと）
+[k]
+
+＠マシュ
+（これだけの力がなければ、[r]　この世界で生き残れなかったのですね）
+[k]
+
+＠マシュ
+（わたしたちの世界の人間であれば、[r]　既に種として消え去っているかもしれません）
+[k]
+
+＠サリエリ
+……待て！
+[k]
+
+[messageOff]
+[fadeout black 0.3]
+[wait fade]
+[charaFadeout F 0.1]
+[charaPut H 1200,1200]
+[wt 0.2]
+[wipeOff]
+[fadein black 0.2]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[wt 0.3]
+[charaMove D 0,-60 0.3]
+[se ad581]
+[wt 1.5]
+
+＠サリエリ
+微かに地響きがした、[r]巨大魔獣[line 3]
+[k]
+
+[bgmStop BGM_EVENT_81 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_80 0.1]
+
+＠サリエリ
+ジャヴォル・トローンだ！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.3 0.5]
+[wait wipe]
+[charaFadeout D 0.1]
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.3 0.5]
+[wait wipe]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠マシュ
+皆さんに一時退避の警告を！
+[k]
+
+[se ad599]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[wt 1.4]
+[seStop ad599 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+
+＠サリエリ
+行くぞ、マスター。
+[k]
+
+＠サリエリ
+ヤガたちをすぐに避難させ、[r]ジャヴォル・トローンを倒す！
+[k]
+
+[charaFace D 4]
+
+＠サリエリ
+だが、いかんせん難敵だ。[r]とりあえず、自分に暗示を掛けるとしよう。
+[k]
+
+？1：……暗示？
+？！
+
+[bgm BGM_EVENT_80 0.3 0.4]
+
+[charaFace D 14]
+
+＠サリエリ
+[f small]ヤツはアマデウス……ヤツこそはアマデウス……[r][f small]ヤツだけがアマデウス……やはりな……やはり[-][r][f small]貴様だったかアマデウスゥゥゥウ……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+
+＠マシュ
+その暗示は[r]ちょっと。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[bgm BGM_EVENT_80 0.5 1.0]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+
+[messageShake 0.05 5 5 0.5]
+＠サリエリ
+行くぞアマデウスゥゥゥゥ！[r]その悪趣味なネタばかり吐く舌、斬り裂いてくれる！
+[k]
+
+[messageOff]
+[charaMoveReturn D 0,-20 0.3]
+[wt 0.15]
+[charaEffect D bit_talk_quickmove]
+[charaSpecialEffect D erasureReverse 1 0.3]
+[se ad73]
+[charaFadeout D 0.1]
+[wt 0.4]
+
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_2]
+
+
+[charaSet D 98101700 1 魔猪]
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠アタランテ・オルタ
+了解した。[r]では、私とサリエリが森林を見張ろう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アヴィケブロン
+では、僕がトンネルだな。[r]場所は森を迂回した山脈にある洞窟だ。
+[k]
+
+＠アヴィケブロン
+ゴーレムを使って、手早く向かおう。[r]よし。さあ行こう、すぐ行こう。
+[k]
+
+？1：何だか張り切ってません？
+
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+
+＠アヴィケブロン
+……張り切っているように見えるかな？
+[k]
+
+＠アヴィケブロン
+……もし見えるとしたら、新しいゴーレムが[r]鋳造できることに、少々興奮しているのだろう。
+[k]
+
+＠アヴィケブロン
+核となる結晶もある。
+[k]
+
+[flag Kuma 1]
+
+？2：アヴィケブロン、どうしたの？
+
+＠アヴィケブロン
+……む。僕がどうかしたか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠マシュ
+マスター、[r]アヴィケブロンさんはもしや……！
+[k]
+
+[charaFace F 2]
+
+＠マシュ
+テンションが、上がっているのでは！
+[k]
+
+[flag Kuma 2]
+
+？！
+
+[branch Kuma_1 Kuma 1]
+
+？1：テンションが
+？2：あがっている！
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アヴィケブロン
+マジか。
+[k]
+
+＠アヴィケブロン
+……そうだな。若者の言葉を使うほど、[r]今の僕はテンションが上がっているらしい。
+[k]
+
+[label Kuma_1]
+
+
+＠アヴィケブロン
+このテンションを鎮めるためにも、[r]一刻も早く洞窟へ向かうとしよう。
+[k]
+
+[charaTalk A]
+[charaScale A 1.3]
+[charaFadein A 0.1 0,10]
+[charaPut H 1]
+[charaEffect H bit_talk_41]
+[shake 0.05 2 4 0.5]
+
+＠アヴィケブロン
+ゴー！
+[k]
+
+[messageOff]
+[wipeout downToUp 0.3 2]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaPut H 1200,1200]
+[charaScale A 1.0]
+[charaEffectStop H bit_talk_41]
+[wt 0.5]
+[charaEffect H bit_talk_10_LowLevel]
+[wipein downToUp 0.5 2]
+[wait wipe]
+
+[wt 0.7]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠マシュ
+ま、待ってくださーい！[r]迷子になりかねません、追いましょうマスター！
+[k]
+
+[messageOff]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout F 0.1]
+[charaPut H 1200,1200]
+[scene 54100]
+[wt 0.5]
+[se ad586]
+[effect bit_talk_41]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+[wt 2.0]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[scene 54700]
+[effectStop bit_talk_41]
+[wt 0.7]
+[seStop ad586 0.1]
+[wt 0.3]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+
+[wt 0.7]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[se ad186]
+＠アヴィケブロン
+[f large]ここを工房とする！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠マシュ
+アヴィケブロンさん！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 21]
+[charaFadein E 0.1 0,0]
+
+＠ダ・ヴィンチ
+ダメだ。膨大な素材を前に、完全にテンションが[r]おかしくなっている！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+それでその。[r]シャドウ・ボーダーの装甲はどうにかなるのかね？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アヴィケブロン
+[f large][messageShake 0.04 5 5 0.4]どうにか！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+あっ、はい。そうです！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アヴィケブロン
+なるに決まっているとも！
+[k]
+
+＠アヴィケブロン
+よし、早速ゴーレムで運搬しよう。[r]すぐこの宝の山を運搬しよう。
+[k]
+
+[bgmStop BGM_EVENT_82 0.5]
+
+＠アヴィケブロン
+ああ、それと言い忘れていたが。[r]巨大魔猪がいるので、君たちで何とかしてくれ。
+[k]
+
+[messageOff]
+[cameraMove 0.9 32,0 1.1]
+[charaMove A 32,0 0.4]
+[charaFadeout A 0.4]
+[wt 1.4]
+
+[se ade156]
+[seVolume ade156 0 0.0]
+[seVolume ade156 0.7 1.0]
+[cameraMove 0.8 32,0 1.25]
+[wt 0.5]
+
+[charaTalk off]
+[charaFace D 9]
+[charaScale D 0.66]
+[charaFadein D 0.1 -40,-140]
+[charaMoveScale D 0.77 0.3]
+[charaMove D -20,-80 0.3]
+[shake 0.05 6 4 0.4]
+[seStop ade156 0.4]
+[wt 1.2]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 0.5]
+[wait wipe]
+[charaFadeout D 0.1]
+[charaScale D 1.0]
+[cameraHome 0.1]
+[wt 0.1]
+[charaScale D 1.0]
+[wipein rectangleStripRightToLeft 0.4 0.5]
+[wait wipe]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk on]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠マシュ
+……大変じゃないですか！
+[k]
+
+？1：アヴィケブロンも手伝って！
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アヴィケブロン
+……………………わかった。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠マシュ
+（物凄く渋々といった感じです先輩！）
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アヴィケブロン
+よし、さっさと仕留めよう。
+[k]
+
+＠アヴィケブロン
+そしてゴーレムを[#鋳造:つく]り、[r]ついでにそれによってトンネルも掘る。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ヤガ叛逆軍
+トンネルを掘るのが第一目的です、[r]仮面の方。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠マシュ
+魔猪、来ます！
+[k]
+
+[charaFace F 14]
+
+＠マシュ
+アヴィケブロンさんは[r]戦闘用ゴーレムを召喚してくださーい！
+[k]
+
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_3]
+
+[messageOff]
+[seStop ad555 0.4]
+[bgmStop BGM_EVENT_80 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

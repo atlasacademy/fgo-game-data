@@ -1,0 +1,256 @@
+
+
+＄03-00-04-14-2-0
+
+
+[soundStopAll]
+[skip false]
+
+[charaSet A 1039001 1 ラクシュミー]
+[charaSet B 1019001 1 ラーマ]
+[charaSet C 1098166700 1 アーシャ]
+[charaSet D 1098127610 1 ペペロンチーノ]
+[charaSet E 23003001 1 ガネーシャ]
+[charaSet F 8001410 1 マシュ]
+[charaSet G 1098166900 1 アジャイ]
+[charaSet H 1098167100 1 男]
+[charaSet I 1098167200 1 女]
+[charaSet J 98115000 1 エフェクト用]
+
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[maskin black 1]
+[wait mask]
+
+[se ad761]
+[seVolume ad761 0 0.6]
+[effect bit_talk_yuga_clock_02]
+[wt 2.3]
+[se ad756]
+[wt 3.7]
+
+[fadeout black 1.0]
+[seStop ad761 1.0]
+[seStop ad756 1.0]
+[wait fade]
+
+[effectStop bit_talk_yuga_clock_02]
+[effectDestroy bit_talk_yuga_clock_02]
+
+[wt 0.5]
+[skip true]
+
+[scene 75006]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.8]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠マシュ
+ついに[#最後のユガ:カ　リ　・　ユ　ガ]ですね。ボーダーへの退避は[r]余裕を持って行いたいところです。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ラーマ
+うむ。しかしまあ、大丈夫であろう。
+[k]
+
+＠ラーマ
+この町はもはやただ祈るだけの町ではない。[r]可能な限り手伝い、頃合いを見て離脱すればよい。
+[k]
+
+＠ラーマ
+その後は今までのディーヴァールと同じく、[r]自分たちの力でユガを越えてくれるはずだ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad727]
+[wt 1.1]
+[seStop ad727 0.3]
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ガネーシャ
+おっと、さっそくカリの襲撃みたいっスよ。[r]でもみんな真面目に鍛錬してたっスから、心配は[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.5]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠ペペロンチーノ
+待って。何か様子がおかしいわ。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+？1：あそこにいるカリたち……
+？2：身を寄せ合って、集まって[line 3]？
+？！
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaSet D 1098172000 1 巨大]
+[charaSet F 1098167600 1 悪魔カリ２]
+[charaSet J 1098167600 1 悪魔カリ３]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+
+
+[charaTalk off]
+
+
+[charaFace F 0]
+[charaFadein F 0.1 210,-10]
+
+[charaFace J 0]
+[charaFadein J 0.1 -210,-10]
+
+[charaMove F 180,-10 2.1]
+[charaMove J -180,-10 2.1]
+[se ad199]
+[seStop ad199 1.0]
+
+[wt 0.8]
+[se adm26]
+[wt 0.9]
+[flashin once 0.2 1.0 8F000050 FF000000]
+[charaFace D 0]
+[charaPut D 1]
+[charaSpecialEffect D appearance 1 0.7]
+[wt 0.3]
+[charaFadeout F 0.4]
+[charaFadeout J 0.4]
+[wt 0.4]
+[flashin once 0.2 1.0 8F000050 FF000000]
+[wt 0.4]
+
+[se ad425]
+[se ade246]
+[shake 0.05 3 3 2.0]
+[wt 2.5]
+[charaFadeout D 0.4]
+[wt 0.6]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠ガネーシャ
+えええええ！？　合体して巨大化したっスよぉ！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 2]
+
+[charaFace I 2]
+[charaFadein I 0.1 0]
+
+＠男
+何だ！？　あんなカリ、見た事ないぞ！
+[k]
+
+＠女
+なんで、どうして！？[r]私達が戦うって決めたから、あっちも強く……？
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ラクシュミー
+…………。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 0]
+
+[charaFace C 5]
+[charaFadein C 0.1 2]
+
+＠アジャイ
+……下がってろ、アーシャ。
+[k]
+
+＠アーシャ
+う、うん。おとうさん、気をつけてね……。
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ラーマ
+まずいな。民たちに教えたのは普通のカリを想定した[r]対処法だ。あの巨大カリ相手では勝手が違いすぎる。
+[k]
+
+＠ラーマ
+他のカリのフォローができなくなるのは[r]心配だが[line 3]
+[k]
+
+＠ラーマ
+あれは余たちが引き受けるしかない。行くぞ！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

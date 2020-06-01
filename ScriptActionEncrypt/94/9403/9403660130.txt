@@ -1,0 +1,784 @@
+
+
+
+＄94-03-66-01-3-0
+
+[soundStopAll]
+
+[charaSet A 4032000 1 エルメロイⅡ？世]
+
+[charaSet B 1098165800 1 アンティークオートマタ1]
+[charaSet C 1098165800 1 アンティークオートマタ2]
+[charaSet D 1098165800 1 アンティークオートマタ3]
+
+
+[charaSet E 1098166200 1 トリムマウ]
+
+[charaSet F 99502600 1 マシュ]
+[charaFilter F silhouette 00000080]
+
+[charaSet G 98109200 1 エフェクト用ダミー]
+
+[charaSet I 98014000 1 通信用ノイズ]
+
+[scene 11000]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[fadein black 0.8]
+[wait fade]
+
+[se ad66]
+
+[charaFace C 0]
+[charaFadein C 0.4 -306,0]
+[charaMove C -256,0 0.3]
+[wt 0.2]
+
+[charaFace D 0]
+[charaFadein D 0.4 306,0]
+[charaMove D 256,0 0.3]
+[wt 0.6]
+
+[seStop ad66 0.4]
+[wt 0.4]
+
+[charaTalk B]
+
+＠オートマタ
+エルメロイⅡ世……？
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠エルメロイⅡ世？
+くそ、キリがない！[r]一旦逃げるぞ、君！
+[k]
+
+＠エルメロイⅡ世？
+そこの窓からだ！　飛び出せ！
+[k]
+
+？1：え、でもここ四階で……
+
+？！
+
+[charaFace A 2]
+
+＠エルメロイⅡ世？
+行け馬鹿！
+[k]
+
+[messageOff]
+
+[charaMoveScale A 1.15 0.2]
+[charaMove A 0,20 0.2]
+[wt 0.1]
+[se ade139]
+[fowardEffect bit_talk_14]
+[shake 0.05 3 3 0.3]
+[wt 0.2]
+
+[se ade187]
+[fadeout white 0.2]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 10000]
+[effect bit_talk_43h]
+[wt 0.1]
+
+[se ad75]
+[wt 1.0]
+
+
+[fadein white 1.0]
+[wait fade]
+
+[wipein rectangleStripDownToUp 0.2 1.0]
+[wait wipe]
+
+[wt 1.0]
+[effectStop bit_talk_43h 0,0]
+[wt 0.1]
+
+[wipeout rectangleStripDownToUp 0.1 1.0]
+[wait wipe]
+
+[scene 11000]
+[pictureFrame cut063_cinema]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-50]
+
+[wt 0.1]
+
+[wipein rectangleStripDownToUp 0.2 1.0]
+[wait wipe]
+
+＠エルメロイⅡ世？
+[#月霊髄液:ト　リ　ム]！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[se ad130]
+[seVolume ad130 0 0.7]
+[charaPut E 0,-50]
+[charaTalk E]
+[charaFace E 0]
+[charaSpecialEffect E appearance 1 0.4]
+[wt 0.3]
+[seStop ad130 0.2]
+[wt 0.4]
+
+＠トリムマウ
+承知いたしました、[#ご主人様:マ ス タ ー]。
+[k]
+
+[messageOff]
+[se ad73]
+[wipeout rectangleStripDownToUp 0.2 1.0]
+[charaMove E 0,-70 0.2]
+[charaEffect E bit_talk_quickmove]
+[wait wipe]
+
+[se ad480]
+[scene 10920]
+[effect bit_talk_43h]
+[pictureFrame]
+
+[cameraMove 0.1 0,-20 1.0]
+
+[wt 0.3]
+
+[effectStop bit_talk_43h]
+[se ad77]
+[seStop ad77 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,15]
+
+[wipein rectangleStripUpToDown 0.3 1.0]
+[shake 0.05 0 3 0.9]
+
+[effect bit_talk_impactlanding 0,-550]
+[cameraMove 0.3 0,0 1.0]
+[charaMove E 0,-20 0.3]
+[se ad222]
+[wait wipe]
+[wt 0.8]
+
+[charaFadeout E 0.1]
+[wt 0.3]
+
+[charaMoveScale E 1.0 0.1]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove 0,0 H]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.2 0,20]
+
+[charaMove A 0,0 0.3]
+[wt 0.3]
+
+＠エルメロイⅡ世？
+着地完了！[r]続けて、魔弾のプレゼントだ！
+[k]
+
+[messageOff]
+
+[se ade285]
+[effect bit_talk_magicbullet]
+[wt 0.5]
+[charaFadeout A 0.1]
+[wt 0.5]
+[flashin once 0.1 1.0 FFFFFF80 FFFFFF00]
+
+[charaPut G 600,800]
+[charaRoll G 90]
+[charaEffect G bit_talk_impactlanding]
+
+[wt 0.2]
+[shake 0.05 3 3 0.7]
+[seStop ad439]
+[se ad63]
+[se ad296]
+[wt 2.5]
+[seStop ad296 1.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠エルメロイⅡ世？
+今のうちだ！[r]さっさと退避するぞ！
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[se ad59]
+[se ad60]
+
+[bgmStop BGM_EVENT_80 1.5]
+[wait wipe]
+
+[seStop ad59 1.0]
+[seStop ad60 1.0]
+
+[scene 10000]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[wipein rightToLeft 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 77500]
+[wt 1.9]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠エルメロイⅡ世？
+ああ、まったく疲れた……[bgm BGM_EVENT_70 0.1][r]君、四肢の強化もできないとは、落ちこぼれすぎるだろ。
+[k]
+
+？1：申し訳ないです
+？2：ところで、エルメロイⅡ世じゃないって……
+
+？！
+
+[charaFace A 0]
+
+＠エルメロイⅡ世？
+たっぷり反省してくれ。[r]で、さっきも言ったが、私はエルメロイⅡ世じゃない。
+[k]
+
+[charaFace A 4]
+
+＠エルメロイⅡ世？
+私の名は、ライネス・エルメロイ・アーチゾルテ。[r]さきほど倒れていた死体の義妹だよ。
+[k]
+
+
+[turnPageOff]
+
+
+[charaFace A 0]
+
+＠A：ライネス
+いずれは私がロード・エルメロイを継ぐだろうが、[r]今じゃない。どうして、あんな思い込みをしてた？
+[k]
+
+[charaFace A 4]
+
+＠A：ライネス
+どうして……兄上が殺されて……
+[k]
+
+
+？1：大切な人だったんですか
+？！
+
+＠A：ライネス
+兄上は……私にとって……
+[k]
+
+[charaFace A 0]
+
+＠A：ライネス
+……いや、そんな話をしてる場合じゃないな。[r]トリム、お前はどうだった？
+[k]
+
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[bgm BGM_EVENT_70 1.0 0.5]
+
+[se ad130]
+[seVolume ad130 0 0.6]
+[charaTalk E]
+[charaFace E 0]
+[charaSpecialEffect E appearance 1 0.3]
+[wt 0.3]
+[seStop ad130 0.4]
+[wt 0.2]
+
+[turnPageOn]
+＠トリムマウ
+私も、さきほどまで[#ご主人様:マ ス タ ー]をエルメロイⅡ世と[r]認識していました。
+[k]
+
+？1：わっ！
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠A：ライネス
+お前もか、トリムマウ。[r]ああ、彼女は私の使い魔だ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠トリムマウ
+礼装・月霊髄液。[#ご主人様:マスター]からはトリムとも[r]呼ばれています。どうぞお見知りおきを。
+[k]
+
+[messageOff]
+
+[charaMove E 0,-10 0.4]
+[wt 0.9]
+[charaMove E 0,0 0.4]
+[wt 0.9]
+
+
+？1：よろしくお願いします
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠A：ライネス
+私の使い魔兼メイド兼ボディガードと言ったところだ。[r]なにしろ、人間と違って裏切らないからね。
+[k]
+
+？2：月霊髄液ってこんなだっけ……？
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠A：ライネス
+ん、ああ、先代のケイネスの[#月霊髄液:ヴォールメン・ハイドラグラム]を知ってるのか。[r]彼女は月霊髄液に、簡易な自我を付与したものでね。
+[k]
+
+＠A：ライネス
+私の使い魔兼メイド兼ボディガードと言ったところだ。[r]なにしろ、人間と違って裏切らないからね。
+[k]
+
+？！
+
+[bgm BGM_EVENT_70 1.0 1.0]
+
+＠A：ライネス
+圧倒的な信頼がおけるというものさ。[twt 1.0][charaFace A 4][r]しかし………
+[k]
+
+[charaFace A 5]
+
+＠A：ライネス
+ああ！　どうして兄上が殺されてる！[r]どうして、私はあんな思い込みをしてた！
+[k]
+
+＠A：ライネス
+確かに、暗示は初歩的な魔術だが、そんなものを[r]かけられるほどの隙が私やトリムマウにあったか？
+[k]
+
+[charaFace A 0]
+
+＠A：ライネス
+そうだ。君の記憶はどうなってる？[r]自分のことは誰だと認識してる？
+[k]
+
+？1：それがどうにも
+？2：名前以外、ぼんやりとしてしまって……
+
+？！
+
+[messageOff]
+[wipeout noise 0.5 1.0]
+[se ad539]
+[seVolume ad539 0 0.6]
+[wait wipe]
+
+[wt 0.1]
+
+[wipein noise 0.5 1.0]
+[seStop ad539]
+[wait wipe]
+
+[wt 1.0]
+＠A：ライネス
+ふむ。症状は私と同じか。さっきまで君を弟子だと[r]思っていたが、今は違うと分かる。
+[k]
+
+
+＠A：ライネス
+ふたりとも、偶然記憶喪失なんてわけはないな。[r]まして、これでは記憶[#改竄:かいざん]だ。
+[k]
+
+[charaFace A 5]
+
+＠A：ライネス
+一体誰が糸を引いている？[r]いや、実は君が犯人だったりしないだろうな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaRoll G 0]
+[charaPut G 0,-150]
+[charaEffect G bit_talk_shadow_aura01]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠トリムマウ
+そうなのですか……？
+[k]
+
+？1：いやいやいや！
+？2：なんか、髪がザワザワしてる！
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_shadow_aura01]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠A：ライネス
+いや、今のは冗談かつ嫌がらせだ。トリム。
+[k]
+
+[charaFace A 0]
+
+
+＠A：ライネス
+[&彼:彼女]が犯人なら、さっき窓から落としたときに[r]もう少しマシな反応をしてるだろう。
+[k]
+
+＠A：ライネス
+そうだ。だいたい、この街自体が古すぎるぞ。[r]まるで、19世紀から20世紀初頭のような……
+[k]
+
+[charaFace A 4]
+
+＠A：ライネス
+いや、これは……そもそも世界が……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[se ad193]
+[distortionstart 0.0 0.5 0.5 0.0 0.0 100.0]
+[distortionstart 2.0 0.5 0.5 0.8 0.1 15.0]
+
+[bgmStop BGM_EVENT_70 1.0]
+[wait distortion]
+[wt 0.8]
+
+？1：ライネスさん！
+？2：世界が……ぐにゃりと……！
+
+？！
+
+
+[charaPut I 1]
+[charaEffect I bit_talk_10]
+[wt 0.1]
+[se ad13]
+[wt 0.2]
+
+[se ad31 0.3]
+[wt 0.5]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadeTime F 0.4 0.7]
+[wt 0.5]
+
+＠マシュ
+先輩！　聞こえ……ますか……！
+[k]
+
+
+＠マシュ
+レイシフト中に……連絡が……今も……！[r]取り込まれた……先輩……とは……
+[k]
+
+
+＠マシュ
+ダメ……通信が確立……できない……[r]とにかく……せめて……霊基グラフの……トランクを……
+[k]
+
+
+＠A：ライネス
+霊基グラフ？
+[k]
+
+[messageOff]
+[charaEffect I bit_talk_10]
+[seStop ad31 0.5]
+[se ad539]
+[charaFadeout F 0.3]
+[wt 0.4]
+[charaEffectStop I bit_talk_10]
+[charaEffectStop I bit_talk_10]
+[charaPut I 1200,1200]
+[wt 1.5]
+
+
+[se ad193]
+[distortionstart 0.8 0.5 0.5 1.5 0.1 8.0]
+[wt 0.6]
+[distortionstart 1.2 0.5 0.5 2.2 0.4 15.0]
+[wipeout uzumaki 1.5 0.5]
+[wait wipe]
+[wait distortion]
+
+[wipein uzumaki 1.5 0.5]
+[distortionstart 1.3 0.5 0.5 0.0 0.0 100.0]
+[scene 77800 2.0]
+[seStop ad193 1.5]
+[wait wipe]
+[wt 1.5]
+
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠A：ライネス
+なんだこれは！[bgm BGM_MAP_6 0.1]
+[k]
+
+＠A：ライネス
+私たちが、記憶と世界の異常に気づいたことで、[r]阻害されていた認識が復帰したのか？　だがここは？
+[k]
+
+＠A：ライネス
+君も、いま妙な通信を受けていただろう。[r]あれは一体どういうことだ？
+[k]
+
+？1：ノイズ混じりで、よくわからなくて……
+？2：トランクがどうとか……
+
+？！
+
+[charaFace A 0]
+
+
+＠A：ライネス
+そういえば、私のものじゃないトランクを持ってたか。[r]これのことだな。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[imageSet F back10000 1]
+[imageSet G cut053_trk 1]
+[charaScale F 1.01]
+[charaScale G 1.01]
+[charaDepth G 10]
+
+[charaFadeTime F 0.3 0.5]
+[wt 0.4]
+[se ad568]
+[charaFadein G 0.7 0,-200]
+[wt 2.2]
+
+＠A：ライネス
+ふむ。君のものなら君が持つべきだろう。
+[k]
+
+[messageOff]
+[charaFadeout G 0.3]
+[charaFadeout F 0.3]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠A：ライネス
+やれやれ……謎だらけもいいところだ。[r]何がどうして、こうなっているのか。
+[k]
+
+[charaFace A 4]
+
+＠A：ライネス
+……いずれにしても、兄上を殺して[r]私たちの記憶を奪った犯人を捜さねばなるまい。
+[k]
+
+[messageOff]
+[bgmStop BGM_MAP_6 0.8]
+[wt 1.0]
+[charaFace A 1]
+
+＠A：ライネス
+よし、じゃあ行こう！[bgm BGM_EVENT_82 0.1]
+[k]
+
+？1：え、行くって？
+？2：一緒が前提？！
+
+？！
+
+
+[charaChange A 1098164900 0 nomal 0]
+[wait charaChange A]
+
+＠A：ライネス
+ん？　もちろん君は協力者だとも。[r][&まさか、か弱い少女を放置したりすまい？:か弱い女の子同士、助け合わないとだろう？]
+[k]
+
+
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_82 1.5]
+[wait fade]
+
+[charaSet A 4032000 1 エルメロイⅡ？世]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+[pictureFrame cut063_cinema]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.0]
+
+
+＠A：ライネス
+………………。
+[k]
+
+[messageOff]
+[wt 0.5]
+[charaFace A 5]
+
+＠A：ライネス
+必ず…………必ず、捕まえてみせるとも。
+[k]
+
+＠A：ライネス
+我が兄を殺した犯人を捕まえ、報いを受けさせるまで、[r]絶対に立ち止まってやるものか[line 3]！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[scene 10000]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[input selectBranch]
+
+[distortionstop 0.0]
+[wait distortion]
+
+[messageOff]
+[skip false]
+
+[bgmStop BGM_EVENT_82 0.4]
+[bgmStop BGM_MAP_6 0.4]
+[bgmStop BGM_EVENT_70 0.4]
+[bgmStop BGM_EVENT_80 0.4]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+
+[fowardEffectStop bit_talk_14]
+[pictureFrame]
+[charaSpecialEffectStop E appearance]
+[charaEffectStop E bit_talk_quickmove]
+[effectStop bit_talk_43h]
+[effectStop bit_talk_impactlanding]
+[fowardEffectStop bit_talk_quickmove]
+[effectStop bit_talk_magicbullet]
+[charaEffectStop I bit_talk_10]
+
+
+[scene 10000]
+[wt 0.4]
+[soundStopAll]
+[maskin black 1]
+[wait mask]
+[label selectBranch]
+
+[skip false]
+
+[wt 1.0]
+
+[fowardEffect bit_queststart80244]
+
+[wait fowardEffect]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,314 @@
+
+
+＄03-00-01-09-1-0
+[soundStopAll]
+
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 5036001 1 アヴィケブロン]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[scene 54100]
+
+[effect bit_talk_snowstorm_02]
+[se ad555]
+[seVolume ad555 0 0.1]
+
+[fadein black 1.5]
+[seVolume ad555 1.5 0.6]
+[wait fade]
+
+[wt 2.0]
+[seVolume ad555 1.0 0.4]
+[wt 1.0]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……今はちょうど正午ですが……[r]すごい吹雪です。
+[k]
+
+[charaFace A 7]
+
+＠マシュ
+[#叛逆:はんぎゃく]軍アジトのポイントを表示します。[r]迷わないよう注意してください。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[effectStop bit_talk_snowstorm_02]
+[effect bit_talk_snowstorm_01]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アヴィケブロン
+……！[r]停止だ、[%1]。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 2]
+[charaTalk A]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+[charaFace A 6]
+[charaFadein A 0.1 2]
+
+＠マシュ
+アヴィケブロンさん？
+[k]
+
+＠アヴィケブロン
+しっ……。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[cameraMove 1.0 70,30 1.2]
+[se ad553]
+[seVolume ad553 0 0.0]
+[se ad14]
+[seVolume ad14 0 0.0]
+[wt 0.7]
+[seVolume ad14 0.5 0.5]
+[seVolume ad555 0.5 0.2]
+[seVolume ad553 0.8 0.6]
+[wt 2.0]
+[seStop ad553 0.3]
+[seStop ad14 1.0]
+
+[bgm BGM_EVENT_81 0.1]
+
+[cameraHome 1.0]
+[wt 1.2]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+この音は……。
+[k]
+
+？1：這い回る音……だ
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アヴィケブロン
+随分とまあ、巨大だな……。
+[k]
+
+＠アヴィケブロン
+神代の頃は巨人種が世界を[#闊歩:かっぽ]していたらしい、と[r]噂に聞いたことはあるが。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……もしかすると、あれが[r]パツシィさんの言っていた[line 3]
+[k]
+
+？1：ジャヴォル・トローン？
+？！
+
+＠マシュ
+はい。[r]村一つを潰すらしい魔獣です。
+[k]
+
+＠マシュ
+こうして見るとそれが虚偽でないことが[r]わかります……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アヴィケブロン
+見かけは多頭の大蛇に近いか……。[r]さて、どうするマスター？
+[k]
+
+＠アヴィケブロン
+戦うか、回避するか。[r]選択はどちらも正しいのだろう。
+[k]
+
+＠アヴィケブロン
+……君に判断を委ねよう。
+[k]
+
+[input selectBranch]
+[seStop ad13 0.1]
+[seStop ad553 0.1]
+[seStop ad555 0.1]
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 5036001 1 アヴィケブロン]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[scene 54100]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[charaEffect H bit_talk_10_LowLevel]
+[effect bit_talk_snowstorm_02]
+
+[se ad555]
+[seVolume ad555 0 0.1]
+[seVolume ad555 0.5 0.2]
+
+[bgm BGM_EVENT_81 0.1]
+
+[messageOff]
+[maskin black 1.0]
+[wait mask]
+[label selectBranch]
+
+
+？1：気付かれない内に回避しよう
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+賢明な判断かと。[r]では、進行方向の迂回ルートを行きましょう。
+[k]
+
+[messageOff]
+[wipeout rightToLeft 1.0 1]
+[seStop ad555 1.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaPut H 1200,1200]
+[wt 1.0]
+
+[wipein leftToRight 1.0 1]
+[wait wipe]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アヴィケブロン
+待て。クリチャーチが数体見える。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……ジャヴォル・トローンのおこぼれを[r]狙っているのでしょうか。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[bgmStop BGM_EVENT_81 0.3]
+[wt 0.5]
+
+[bgm BGM_EVENT_80 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アヴィケブロン
+あの大蛇が気付いている様子はないな。[r]迅速に仕留めてしまおう。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_80 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+
+？2：村を襲うかもしれない、戦おう
+
+[seStop ad555 0.5]
+[bgmStop BGM_EVENT_81 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_82 0.1]
+
+＠アヴィケブロン
+いいだろう。
+[k]
+
+＠アヴィケブロン
+ロシアで戦い抜くためにも、[r]避けて通れぬ敵だ。
+[k]
+
+＠アヴィケブロン
+まずはゴーレムで足止めする。[r]マシュ・キリエライト、分析は頼んだぞ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい！[r]データ収集、全力を尽くします！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_82 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+
+？！
+

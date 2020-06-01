@@ -1,0 +1,1070 @@
+
+
+
+＄03-00-06-18-1-0
+
+
+
+
+[soundStopAll]
+
+[charaSet A 8001400 1 アーマード・マシュ]
+[charaSet B 8001410 1 マシュ]
+[charaSet C 1017002 1 武蔵]
+[charaSet D 98002000 1 フォウ]
+[charaSet E 7010001 1 カリギュラ]
+[charaSet F 9005001 1 ホームズ]
+[charaSet G 1098191200 1 アデーレ]
+[charaSet H 1098191300 1 マカリオス]
+[charaSet I 1098118410 1 リンボ（シルエット）]
+[charaFilter I silhouette 00000080]
+[charaSet J 1098118410 1 リンボ]
+[charaSet K 1098128200 1 カイニス]
+[charaSet L 1098182610 1 ケルベロス_プロトタイプ]
+
+
+[charaSet S 5009000 1 エフェクト用ダミー]
+[charaSet T 5009000 1 エフェクト用ダミー]
+
+[scene 92600]
+
+[bgm BGM_EVENT_80 0.1]
+[wt 0.4]
+
+[se ade338]
+[se ad556]
+
+[effect bit_talk_43h 0,0 V]
+
+[shake 0.05 3 3 2.0]
+[fadein black 1.0]
+[wait fade]
+
+
+[se ad659]
+
+＠マシュ
+不時着まで、３、２、１……
+[k]
+
+[seStop ad659 1.0]
+
+＠マシュ
+……マスター……！[r]宝具、簡易展開します！
+[k]
+
+[messageOff]
+[seStop ad556 1.5]
+[bgmStop BGM_EVENT_80 2.0]
+
+[shake 0.05 3 4 2.0]
+[se ad789]
+[se ad74]
+[se ad608]
+[se ad609]
+
+[wipeout rectangleStripDownToUp 0.7 1.0]
+[wait wipe]
+
+[effectStop bit_talk_43h]
+[wt 0.5]
+
+[scene 10000]
+
+[wipein rectangleStripDownToUp 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+
+[charaPut A 1]
+[charaEffect A bit_talk_sand_dust_front 0,-150]
+[charaBackEffect A bit_talk_sand_dust_back 0,-150]
+
+[wt 3.5]
+
+[scene 92000]
+
+
+[se ad632]
+[seVolume ad632 0 0.1]
+[seVolume ad632 1.0 1.0]
+[fadein black 2.0]
+[wt 1.2]
+[se ad833]
+[seVolume ad833 0 0.4]
+[seStop ad632 1.0]
+[wait fade]
+[se ad833]
+[seVolume ad833 0 0.4]
+[wt 1.3]
+
+[se ad227]
+
+
+[charaTalk off]
+
+[charaFace A 15]
+[charaFadein A 0.4 0,-30]
+[charaMove A 1 0.6]
+[charaShake A 0.05 2 1 0.6]
+[wt 0.5]
+
+[se ade18]
+[seVolume ade18 0.0 0.5]
+[wt 0.5]
+[seStop ade18 0.8]
+[wt 1.5]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth A 2]
+
+[charaFace B 15]
+[charaFadein B 0.1 1]
+[wt 0.1]
+[charaFadeout A 0.4]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[wt 1.2]
+
+[charaTalk on]
+[charaFace B 15]
+
+[charaEffectStop A bit_talk_sand_dust_front]
+[charaBackEffectStop A bit_talk_sand_dust_back]
+
+＠マシュ
+……先輩、ご無事ですか！
+[k]
+
+？1：マシュが守ってくれたからね
+
+[bgm BGM_EVENT_116 0.1]
+
+[charaFace B 13]
+
+＠マシュ
+良かった……[r]い、いえ、わたしは宝具を展開しただけですので！
+[k]
+
+？2：マシュ、怪我はない？
+
+[bgm BGM_EVENT_116 0.1]
+
+[charaFace B 7]
+
+＠マシュ
+はい。こちらも無事です。[r]バイタル各種に問題はありません。
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad10]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 0,-30]
+[charaMove C 1 0.4]
+[wt 0.5]
+[charaFace C 1]
+
+＠武蔵
+よし、二人とも無事ね！[r]瓦礫の下敷きにならないで良かった良かった！
+[k]
+
+＠武蔵
+私の知らない沢山の戦いを[r]くぐり抜けてきた二人だもの。
+[k]
+
+[charaFace C 7]
+
+＠武蔵
+こんな墜落ぐらいでリタイヤする筈もないわよね～！[r]うんうん。よきかな！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaMoveReturn D 0,30 0.6]
+
+＠フォウ
+フォウ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠武蔵
+お、フォウくんも無事ね！[r]よきかな！
+[k]
+
+＠カイニス
+……よきかな、じゃねえ！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad608]
+[shake 0.03 5 5 0.6]
+[charaPut S 2400,2400]
+[charaRoll S 90]
+[charaEffect S bit_talk_impactlanding]
+
+[shake 0.05 7 3 0.5]
+[seStop ad609 1.0]
+[wt 0.2]
+[charaPut S 100,0]
+[wt 0.3]
+[seStop ad59]
+[wt 0.6]
+
+[charaTalk K]
+[charaFace K 5]
+[charaFadein K 0.4 50,0]
+[charaMove K 1 0.5]
+
+[seStop ad608 2.5]
+
+＠カイニス
+クソッ、危うく死ぬかと思ったぜ。[r]ま、神霊カイニスは墜落程度じゃ死なねえけどな。
+[k]
+
+[charaFace K 5]
+
+＠カイニス
+双子！　賢者！　皇帝！[r]テメェらも生きてるな！
+[k]
+
+[messageOff]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[se ad228]
+[wt 1.5]
+[seStop ad228 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+＠カリギュラ
+問題はない。[r]この程度は苦痛のうちにも入らん。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ホームズ
+……私もなんとかね。[r]ああ、アデーレ、足元に気を付けたまえ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 0,-7]
+＠アデーレ
+ありがとうございます。[wt 1.0][charaMove G 1 0.3][r]よいしょ……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 1]
+＠マカリオス
+……全員、無事みたいだな。[r]何だ、肩が外れたりしたのはオレだけか。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+！
+[k]
+
+[charaFace B 7]
+
+＠マシュ
+見せてください、マカリオスさん。[r]一通りの脱臼治療であれば、訓練しています。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠マカリオス
+いや、いい。もう治ってるよ。[r]一万年かけて飲んだアンブロシアは伊達じゃない。
+[k]
+
+＠マカリオス
+言ったろ、オレたちは神以外には殺されない。[r]病死も墜落死もしないんだ。
+[k]
+
+＠マカリオス
+あんたたちの方こそ、[r]無事でよかった。自動再生はしないだろ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 6]
+[charaFadein K 0.1 2]
+
+[charaFace H 0]
+[charaFadein H 0.1 0]
+
+＠カイニス
+するぜ。
+[k]
+
+[charaFace H 9]
+
+＠マカリオス
+……あんたは別だ。
+[k]
+
+[charaFace K 1]
+
+＠カイニス
+ハハ！　なんだ、冗談が言えるんだなテメェ！[r]しょっちゅう膨れっツラの割にはよ！
+[k]
+
+[charaFace H 3]
+
+＠マカリオス
+余計な世話だ。
+[k]
+
+[messageOff]
+[charaFadeout K 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 1]
+
+[bgmStop BGM_EVENT_116 1.5]
+
+[wt 1.2]
+[charaFace H 7]
+[wt 0.4]
+
+＠マカリオス
+…………全員、揃ってるな。よし。
+[k]
+
+＠マカリオス
+ステュムパリデスはもう駄目だ。[r]ここで破棄する。
+[k]
+
+＠マカリオス
+あとはもう、進むだけだ。すべての会話がゼウスに[r]届いている以上、あまり多くを話すのも[#拙:まず]い。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠アデーレ
+アイテールの具体的な運用については、[r]私たちに任せて。必ず、起動は成功させます。
+[k]
+
+[charaFace G 4]
+
+＠アデーレ
+だから……[r]どうか、お願いします。
+[k]
+
+＠アデーレ
+起動が完了するまでは、[r]アイテールが、破壊されないように[line 3]
+[k]
+
+？1：必ず守ります
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠マシュ
+はい、マスター。
+[k]
+
+＠マシュ
+神妃エウロペと、[r]プロメテウス＝ヘファイストス神。
+[k]
+
+＠マシュ
+おふたりが与えてくださった神器アイギスは、[r]まだ、わたしの盾に宿ってくれています。
+[k]
+
+[charaFace B 8]
+
+＠マシュ
+大神ゼウスの雷霆に、[r]何処まで通用するかは分かりませんが……
+[k]
+
+[charaFace B 7]
+
+＠マシュ
+……わたしたちは、守ります。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+[wt 1.2]
+[charaFace G 1]
+
+＠アデーレ
+…………ありがとう。
+[k]
+
+？！
+
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠カリギュラ
+案ずるな。[r]大召喚は叶う。
+[k]
+
+＠カリギュラ
+この余が、古代ローマ帝国三代皇帝カリギュラが、[r][#古今東西:ここんとうざい]のローマの栄光にかけて誓おうぞ。
+[k]
+
+＠カリギュラ
+おまえたちの祈りは届き[line 3][r][#遠き異郷:オリュンポス]の果てまでも、かの光は届くだろう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠アデーレ
+…………はい。英霊カリギュラ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠武蔵
+……？
+[k]
+
+[charaFace C 4]
+
+＠武蔵
+むむ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se adm21]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaMoveReturn D 0,30 0.4]
+
+＠フォウ
+フォウ、フォウフォウ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠武蔵
+はい、だめでーす。[r]アデーレちゃんは忙しいのでじゃれないじゃれない。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth G 3]
+[charaDepth H 5]
+
+
+[charaFace G 1]
+[charaFadein G 0.1 150,0]
+
+[charaFace H 9]
+[charaFadein H 0.1 -150,0]
+[wt 0.2]
+[charaMove H -150,-7 0.4]
+[wt 0.6]
+[charaMove H -150,0 0.4]
+[wt 1.2]
+
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[charaFace H 0]
+＠マカリオス
+いいか、そこの小動物はきちんと格納しておけ。[r]ここから先はもう[line 3]
+[k]
+
+？1：敵本拠地の中心だね
+
+
+＠マカリオス
+ああ。その通りだ。
+[k]
+
+？2：大祭壇、の位置がどこかは[&分かるかい:分かる？]
+
+
+
+？！
+
+＠マカリオス
+軌道大神殿内部の実物を見た人間はいないが、[r]都市神話の幾つかで、構造そのものは伝わっている。
+[k]
+
+＠マカリオス
+此処は恐らく大神殿外縁、空中庭園。[r]少し行けば機神回廊があるはずだ。
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠フォウ
+フォウウゥ……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠マシュ
+機神、回廊。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠アデーレ
+その名の通りです。[r]機神の巨体でさえ歩む事のできる、神の回廊。
+[k]
+
+＠アデーレ
+神話によれば、その最果てにこそ、[r]全能神ゼウスの座す大祭壇が[#聳:そび]えている、と。
+[k]
+
+？1：行こう
+
+？！
+
+？1：その回廊、今は[&自分:わたし]たちが進む道だ
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠マシュ
+[line 3]はい、先輩！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 91600]
+[wt 1.4]
+
+[se ad769]
+[seVolume ad769 0 0.1]
+[se ad668]
+[seVolume ad668 0 0.1]
+[seVolume ad769 1.0 1.0]
+[seVolume ad668 1.0 1.0]
+
+[effect bit_talk_41]
+[shake 0.05 0 3 2.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.2]
+[seStop ad769 2.0]
+[seStop ad668 2.0]
+
+[bgm BGM_EVENT_82 0.1]
+
+＠マシュ
+マスター、[r]そのまま掴まっていてください！
+[k]
+
+＠マシュ
+最短距離を最速で！
+[k]
+
+＠マシュ
+大祭壇へ急ぐには、やはり……！
+[k]
+
+[effectStop bit_talk_41]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠武蔵
+英霊の脚で駆け抜けるのが手っ取り早い！[r]というわけで！
+[k]
+
+＠武蔵
+[%1][&君:]は慣れてるだろうけど、[r]そっちの二人は大丈夫かしら！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth K 5]
+[charaDepth H 6]
+[charaDepth F 2]
+[charaDepth G 3]
+[charaTalk K]
+[charaFace K 5]
+[charaFadein K 0.1 1]
+
+[charaFace H 0]
+[charaFadein H 0.1 150,0]
+
+＠カイニス
+落としゃしねえよ！[r]クソッ、槍に触るんじゃねえぞガキ！
+[k]
+
+[charaFace H 3]
+
+＠マカリオス
+な……オレは一万歳を超えてるんだぞ！[r]あんたよりはずっと年上だ、ガキじゃない！
+[k]
+
+[charaFace K 15]
+
+＠カイニス
+あーはいはい。
+[k]
+
+[messageOff]
+[charaFadeout K 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[effect bit_talk_41]
+[shake 0.05 0 3 2.5]
+[se ad769]
+[seVolume ad769 0 0.1]
+[se ad668]
+[seVolume ad668 0 0.1]
+[seVolume ad769 1.0 1.0]
+[seVolume ad668 1.0 1.0]
+
+[wt 2.5]
+[effectStop bit_talk_41]
+[seStop ad668 2.0]
+[seStop ad769 2.0]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 -100,0]
+
+[charaFace F 0]
+[charaFadein F 0.1 100,0]
+
+＠アデーレ
+あの、すみません……[r]ホームズさん。重くはありませんか？
+[k]
+
+[charaFace F 7]
+
+＠ホームズ
+まさか。レディのエスコートは紳士の役目、[r]それに貴女は羽毛のように軽いとも。
+[k]
+
+＠アデーレ
+は、はい……
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠カリギュラ
+ははは！　余の腕に抱かれたい者はそう言え！[r]大祭壇まで皇帝の抱擁を味わわせてくれる！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 2]
+[charaDepth D 1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 120,0]
+
+[charaFace D 0]
+[charaFadein D 0.1 -120,-60]
+
+＠武蔵
+皇帝の抱擁！[r]大盤振る舞いね！
+[k]
+
+＠フォウ
+フォウゥゥ……？
+[k]
+
+[charaFace C 8]
+
+＠武蔵
+あ、フォウくんは暴れない！[r]マシュは[%1][&君:]で手一杯なのです。
+[k]
+
+＠フォウ
+フォーウ！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[effect bit_talk_41]
+[shake 0.05 0 3 2.5]
+[se ad769]
+[seVolume ad769 0 0.1]
+[se ad668]
+[seVolume ad668 0 0.1]
+[seVolume ad769 1.0 1.0]
+[seVolume ad668 1.0 1.0]
+[wt 2.5]
+
+＠マシュ
+！
+[k]
+
+[messageOff]
+[effectStop bit_talk_41]
+[seStop ad668 1.0]
+[seStop ad769 1.0]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.4 80,0]
+[charaMove B 30,0 0.2]
+[se ad671]
+[wt 0.2]
+[charaMove B 1 0.2]
+[seStop ad671 0.5]
+[shake 0.05 3 1 0.6]
+[effectStop bit_talk_41]
+[wt 1.2]
+[bgmStop BGM_EVENT_82 1.5]
+
+＠マシュ
+総員、止まってください！[r]この魔力量……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠武蔵
+このまま辿り着ければと期待したけど[line 3]
+[k]
+
+＠武蔵
+ま、そうね。[r]むざむざ見過ごしてはくれないか。
+[k]
+
+＠武蔵
+それに、この感じ。[r]魔力とも英霊特有の気配とも違えども。
+[k]
+
+[messageOff]
+[wt 1.3]
+[charaFace C 5]
+
+＠武蔵
+[line 3]姿を見せろ、外道！
+[k]
+
+＠武蔵
+その妖気、その死臭、その外道の[#臭:にお]い！[r]一度覚えれば二度とこの身が忘れるものか！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.8]
+
+[se ad192]
+[wt 1.0]
+
+[charaTalk I]
+[charaFace I 3]
+[charaFadein I 0.4 1]
+[wt 1.2]
+
+[charaTalk J]
+[charaFace J 3]
+[charaFadein J 0.7 1]
+[wt 1.2]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_72 0.1]
+
+＠リンボ
+ははははははははははははははははは。[r]いやはや、見事見事。
+[k]
+
+＠リンボ
+流石は空位へ到った剣士殿！
+[k]
+
+＠リンボ
+これでもそれなりの隠形の術は施しましたが、[r]尚も匂い立つと貴方は仰る。ふうむ。
+[k]
+
+＠リンボ
+外道の[#臭:にお]いとは。[r]拙僧、[#其処:そこ]までの外道を……
+[k]
+
+[charaFace J 1]
+
+＠リンボ
+…………貴方に、お見せしたつもりはないのだが。[r]ンンンン。これは異な事もある！
+[k]
+
+？1：リンボ
+？2：それ以上、もう何も喋らなくていい
+
+？！
+
+＠リンボ
+……は。
+[k]
+
+[messageOff]
+[charaFace J 5]
+[wt 1.2]
+[charaFace J 6]
+
+＠リンボ
+随分とまた精悍な顔立ちに成られたもの！[r]そうですかそうですかァ、神妃を助けに来ましたか！
+[k]
+
+＠リンボ
+どうせ異聞帯ごと潰すつもりでしょうに、[r]まあ、律儀な事！　ンンンンンン実に実に面白い！
+[k]
+
+＠リンボ
+カルデアのマスター！[r]人理の英霊ども！
+[k]
+
+＠リンボ
+拙僧、一度、聞いてみたかったのですよ！[r]貴方達は、何故[line 3]
+[k]
+
+＠リンボ
+一体いつまで[#掘った穴を埋め返す]のです？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠マシュ
+[line 7]！
+[k]
+
+？1：…………………………。
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 3]
+[charaFadein J 0.1 1]
+＠リンボ
+己が積み上げた石の山を、己で崩す。[r]己が助け出した命たちを、己で壊す。
+[k]
+
+＠リンボ
+このリンボ、[r]我が神の道化たらんと努めておりますが……
+[k]
+
+[charaFace J 5]
+
+＠リンボ
+[line 4]貴様らの道化ぶりには、到底劣るわ！
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth J 7]
+[charaDepth T 5]
+[charaDepth L 3]
+
+[charaPut T 1]
+[bgmStop BGM_EVENT_72 1.5]
+[effect bit_talk_pentagram_01_s]
+[se ade31]
+[wt 1.8]
+[effectStop bit_talk_pentagram_01_s]
+[wt 0.4]
+[se ad80]
+[charaEffect T bit_talk_blackfire_all]
+[wt 2.0]
+[se ad434]
+[wt 3.5]
+[se ad193]
+[charaFadeout J 0.7]
+[wt 0.1]
+
+＠マシュ
+高魔力反応！[r]マスター、前方の空間に……！
+[k]
+
+＠マシュ
+何かが出現します！
+[k]
+
+[messageOff]
+[seStop ad768 1.0]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+[charaEffectStop T bit_talk_blackfire_all]
+[wt 3.0]
+
+[se ad526]
+[wt 0.8]
+
+[wt 1.2]
+
+[se ad772]
+[shake 0.05 3 3 1.8]
+[wt 4.0]
+
+[bgm BGM_EVENT_24 0.1]
+
+
+＠マシュ
+神獣……ケルベロス……！[r]アトランティスで遭遇したものの同系個体と予想！
+[k]
+
+[messageOff]
+[charaTalk L]
+[se ad772]
+[se ad426]
+[shake 0.05 3 3 1.8]
+[wt 2.0]
+
+
+＠マシュ
+[line 6]来ます！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

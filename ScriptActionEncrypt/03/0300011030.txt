@@ -1,0 +1,443 @@
+
+
+＄03-00-01-10-3-0
+[soundStopAll]
+
+[charaSet A 2010001 1 ビリー]
+[charaSet B 7030001 1 アタランテ・オルタ]
+[charaSet C 99502600 1 マシュ]
+[charaSet D 98115300 1 ホームズ]
+[charaSet E 7008001 1 ベオウルフ]
+[charaSet F 1098128400 1 ヤガＡ]
+[charaSet G 1098128500 1 ヤガＢ]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[scene 10000]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[fadein black 0.1]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fowardEffect bit_talk_shot_02]
+[wt 0.1]
+[se bac11]
+[wt 0.2]
+[se bac11]
+[wt 0.1]
+[se bac11]
+[wt 0.1]
+[se ad32]
+[fowardEffect bit_talk_h_slash02]
+[wt 0.7]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 54802]
+[effect bit_talk_snowstorm_01]
+
+[fadein black 1.0]
+[wait fade]
+
+[cueSe Servants_9939670 bac512]
+[cueSeVolume bac512 0 0.4]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_80 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_76 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ビリー
+おっと、一旦休憩だ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠アタランテ・オルタ
+やれやれ、まだまだ元気そうなことだ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+？1：ビリー！
+？2：カルデアの事を知らないビリー……？
+？！
+
+＠ビリー
+ん？　カルデア？　なんだいそれ。[r]悪いけど、まったく何も。
+[k]
+
+＠ビリー
+君たちこそ、僕の何を知っているって言うのさ。
+[k]
+
+[charaFace A 4]
+
+＠ビリー
+生憎、僕らは召喚されて以来、[r]シッチャカメッチャカなんだよ。
+[k]
+
+[charaFace A 5]
+
+＠ビリー
+何をどうすればいいのか、[r]見当もつかないのさ！
+[k]
+
+[effectStop bit_talk_snowstorm_01]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠マシュ
+……マスター。[r]霊基グラフ、一致しません。
+[k]
+
+＠マシュ
+この方は北米大陸で縁を結んだ、[r]あのビリーさんではないようです……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ホームズ
+土地そのものに呼ばれたサーヴァントだろう。[r]聖杯もないのに、よくそんな魔力があったもの[line 3]
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.5 1.0]
+[bgmStop BGM_EVENT_76 0.5]
+[wait wipe]
+
+[charaPut H 1200,1200]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[scene 10000]
+
+[wipein leftToRight 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+[wt 0.1]
+
+[charaSet D 9005001 1 ホームズ]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 0,-50]
+[scene 51600]
+[wt 0.1]
+[wipeFilter cinema 0.5 0]
+
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_79 0.1]
+
+＠ホームズ
+（いや待て。聖杯がないのに、などという考え自体が[r]　ナンセンスだった）
+[k]
+
+[charaFace D 5]
+
+＠ホームズ
+（事実としてマスターのいないサーヴァントが[r]　現界している以上、聖杯に該当するものは[#ある]）
+[k]
+
+＠ホームズ
+（聖杯は人間の手に渡らなければ『世界の在り方』に[r]　応える、中立の魔力リソース。であれば、）
+[k]
+
+＠ホームズ
+（人類史の最後の断末魔に応えて、カウンターとして[r]　サーヴァントを呼んでも不思議ではない……）
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_79 0.5]
+[wait fade]
+
+[wipeOff]
+[charaFadeout D 0.1]
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipeout leftToRight 0.1 1.0]
+[wait wipe]
+
+[scene 54802]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[wipein leftToRight 0.5 1.0]
+[wt 0.3]
+[bgm BGM_EVENT_76 0.1]
+[wait wipe]
+
+[wt 0.5]
+
+？1：あなたじゃないビリー・ザ・キッドに
+？2：お世話になっただけだよ
+？！
+
+＠ビリー
+……ふぅん、そっか。[r]まあ、今の僕は僕だけど。
+[k]
+
+[charaFace A 2]
+
+＠ビリー
+さて……おーい、バーサーカー！[r]例の女狩人が来たよー！
+[k]
+
+＠ビリー
+それに、[#旧種:ヒト]の姿をした連中や[r]サーヴァントも加わってる！
+[k]
+
+＠E：？？？
+ああ、いつかのアイツか。[r]いいぜ、ここは俺とビリーでやる！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠ベオウルフ
+……よう。[r]俺たちとアンタは没交渉のままだと思ってたぜ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+ベオウルフさん……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[bgmStop BGM_EVENT_76 0.5]
+
+＠ベオウルフ
+ん？　誰だ？[r]……人間？　いや、サーヴァントか。
+[k]
+
+＠ベオウルフ
+そっちは[line 3][r]魔術師……マスターか。
+[k]
+
+[charaFace E 5]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠ベオウルフ
+……イヴァン雷帝の宮廷魔術師か、テメェ？
+[k]
+
+[messageOff]
+[charaSet A 1098128600 1 ヤガＣ]
+[charaSet D 1098128400 1 ヤガＤ]
+
+[wt 1.0]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth D 1]
+[charaDepth E 2]
+[charaDepth F 1]
+[charaDepth G 1]
+
+[se ad601]
+
+[charaFace G 3]
+[charaFadein G 0.4 -164,0]
+[wt 0.3]
+[charaFace A 3]
+[charaFadein A 0.4 164,0]
+[wt 0.3]
+[charaFace F 3]
+[charaFadein F 0.4 -384,0]
+[wt 0.3]
+[charaFace D 3]
+[charaFadein D 0.4 384,0]
+[seStop ad601 1.0]
+[wt 2.0]
+
+？1：違います
+？2：カルデアのマスターです
+
+？！
+
+[charaFace E 0]
+
+＠ベオウルフ
+カルデア……星見のカルデア……？[r]覚えがあるような……ないような……。
+[k]
+
+[charaFace E 5]
+
+＠ベオウルフ
+あー、くそ。召喚されてから記憶が混乱するぜ。[r][#自分:テメエ]の事さえアヤフヤだ。
+[k]
+
+？1：アメリカでお会いしました！
+
+？！
+
+[charaFace E 4]
+
+＠ベオウルフ
+アメリカ……いや、悪いな。思い出せねえ。[r]思い出せない以上は信用できねえ。
+[k]
+
+[charaFace E 0]
+
+＠ベオウルフ
+だが、そちらもこちらに来たからには、[r]覚悟の上ってやつだろ。
+[k]
+
+＠ベオウルフ
+ひとまず戦ってからだ。[r]このロシアでは強食こそが人理。
+[k]
+
+[bgmStop BGM_EVENT_81 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_80 0.1]
+
+[charaFace E 1]
+
+＠ベオウルフ
+俺に、最強を証明してみせろ。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠アタランテ・オルタ
+……なるほど、そうか。[r]了解した。では戦うとしよう。
+[k]
+
+？1：アタランテ？
+？！
+
+[charaFace B 1]
+
+＠アタランテ・オルタ
+（付き合ってくれ、マスター、マシュ。[r]　あれはただの戦闘狂ではない）
+[k]
+
+＠アタランテ・オルタ
+（何か考えがあるのだろう）
+[k]
+
+[charaSet A 2010001 1 ビリー]
+
+？1：……了解！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ベオウルフ
+よし、それじゃあそっちは二人いることだし……。[r]おい、ビリー！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ビリー
+という訳で、悪いけど今度こそ容赦はしないよ。[r]君たちを信じられるかどうか[line 3]
+[k]
+
+[charaFace A 2]
+[se bac56]
+
+＠ビリー
+この弾丸が決めるのさ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠アタランテ・オルタ
+来るぞ、[%1]！[r]用意はいいな！
+[k]
+
+
+[messageOff]
+[seStop ad555 0.4]
+[bgmStop BGM_EVENT_80 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

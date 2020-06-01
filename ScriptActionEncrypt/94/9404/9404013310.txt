@@ -1,0 +1,920 @@
+
+
+
+＄94-04-01-33-1-0
+
+[soundStopAll]
+
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 98115300 1 ホームズ]
+[charaSet C 98111500 1 ダ・ヴィンチ]
+[charaSet D 1098124510 1 ダ・ヴィンチ（ロリ）]
+[charaSet E 98110000 1 柳生但馬守]
+[charaSet F 6019300 1 風魔小太郎]
+[charaSet G 1008300 1 ジークフリート]
+[charaSet H 5008300 1 マーリン]
+[charaSet I 98006200 1 エネミー]
+
+[charaSet J 98001000 1 通信エフェクト]
+
+[branchQuestNotClear lblNotClear1 3000303]
+[flag IsClear true]
+[branch lblConf1]
+[label lblNotClear1]
+[flag IsClear false]
+[label lblConf1]
+
+
+
+[branch lblNotClear2 IsClear false]
+[scene 66700]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 60300]
+[label lblConf2]
+
+
+[se ad405]
+[seVolume ad405 0 0]
+[se ad518]
+[seVolume ad518 0 0]
+[se ad413]
+[seVolume ad413 0 0]
+
+[fadein black 1.5]
+
+[seVolume ad405 1.0 0.5]
+[seVolume ad518 1.0 0.5]
+[seVolume ad413 1.0 0.7]
+[wait fade]
+[wt 2.0]
+
+[seStop ad405 1.1]
+[seStop ad518 1.1]
+[seStop ad413 1.1]
+[wt 0.7]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠マシュ
+あの、先輩。
+[k]
+
+＠マシュ
+ふと気付いたことがあるんです。[r]そういえば……
+[k]
+
+＠マシュ
+柳生さんのお話は、特異点ラスベガスの真相と[r]少し違いがありましたよね……？
+[k]
+
+[messageOff]
+[wipeout circleIn 1.0 1.0]
+[bgm BGM_EVENT_77 1.0 0.4]
+[wait wipe]
+
+[effect bit_sepia01]
+
+[charaFadeout A 0.1]
+
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+[wipein circleIn 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠柳生但馬守
+当世には疎い身ながらも聞き及んでいる。[r]曰く。年に一度、北米大陸西部はうえすたんの地にて、
+[k]
+
+＠柳生但馬守
+[#世界一の水着剣豪]を決せんとする大きな催しが[r]開かれるのだとか。その名も[line 3]
+[k]
+
+[messageOff]
+[wipeout circleIn 1.0 1.0]
+[wait wipe]
+
+
+[effectStop bit_sepia01]
+
+[charaFadeout E 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[bgm BGM_EVENT_77 1.0 1.0]
+[wipein circleIn 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠マシュ
+水着剣豪御前試合。[r]別名、水着剣豪七色勝負。
+[k]
+
+＠マシュ
+それは、大陸西部で年に一度行われている[r]催しなのだと柳生さんは言っていたはずです。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch lblClear3 IsClear true]
+
+[label lblNotClear3]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[se ad13]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-90]
+[wt 0.3]
+
+＠ダ・ヴィンチ
+そうそう。[r]実は、彼の証言と今回の結末には矛盾がある。
+[k]
+
+＠ダ・ヴィンチ
+グランドキャニオンに発生した特異点、[r]絢爛ラスベガスが成立したのはごく最近のことだろ？
+[k]
+
+[charaFace C 4]
+
+＠ダ・ヴィンチ
+そんなものが『毎年、一度ずつ行われる』なんていう[r]恒例行事にはなりっこないんだ。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[branch lblConf3]
+
+[label lblClear3]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[se ad13]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.3]
+
+＠ホームズ
+正解だ。[r]そう、彼の証言と今回の結末には矛盾がある。
+[k]
+
+＠ホームズ
+グランドキャニオンに発生した特異点、[r]絢爛ラスベガスが成立したのはごく最近のことだ。
+[k]
+
+＠ホームズ
+しかし但馬守は『毎年、一度ずつ行われる』と言った。[r]まるで、過去から現在までそうであったかのように。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 23]
+[charaFadein D 0.1 1]
+
+＠D：ダ・ヴィンチ
+……ねえホームズ。もしかしてまた最初から……
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠D：ダ・ヴィンチ
+でも確証を得るまでは黙ってたやつ？[r]いつもの？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+
+＠D：ダ・ヴィンチ
+はぁ、もう！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠D：ダ・ヴィンチ
+む[messageShake 0.02 3 3 0.5]うううん、なんか言えー！　このぉー！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[label lblConf3]
+
+[wt 0.1]
+[se ade74]
+[wt 0.2]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.6 1]
+[wt 1.0]
+
+[seStop ade74]
+[wt 0.2]
+
+＠ジークフリート
+……マスター。会話中に失礼する。
+[k]
+
+[charaFace G 4]
+
+＠ジークフリート
+……。[r]……。
+[k]
+
+＠ジークフリート
+実は、だな。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ジークフリートさん？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+[wt 0.4]
+
+？1：どうかした？
+？2：顔色が良くないような……
+
+？！
+
+＠ジークフリート
+ああ。
+[k]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠ジークフリート
+その、だな……。[r]俺の問題は解決していないような気がしてならない。
+[k]
+
+[charaFace G 2]
+
+＠ジークフリート
+戦わねばならない気がするのだ……[r]この、夏の装いのままで！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.2]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+[wt 0.3]
+
+＠風魔小太郎
+主殿！　じ、実は……
+[k]
+
+[charaFace F 13]
+
+＠風魔小太郎
+僕も……妙に胸がざわつくのです！[r]特異点の元凶は討ち果たしたはずなのに……
+[k]
+
+[charaFace F 12]
+
+＠風魔小太郎
+うう……不覚……
+[k]
+
+[se ad55]
+[seVolume ad55 0 0]
+
+？1：それって！　まさか！
+？！
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaSet J 98006200 1 エネミー（シルエット）]
+[charaFilter J silhouette 00000080]
+
+[charaDepth I 4]
+[charaDepth J 6]
+
+[seVolume ad55 0.9 1.0]
+[bgmStop BGM_EVENT_81 1.0]
+[wt 1.2]
+
+[se ad224]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 824,0]
+[wt 0.2]
+
+[seStop ad55 0.2]
+[charaMove H 1 0.5]
+[wt 1.0]
+
+[charaFace H 2]
+
+＠マーリン
+その通り！[r]水着剣豪の戦いは[line 3]終わっていないということさ！
+[k]
+
+
+？1：おまえはグランドクソ野郎！
+？！
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaFace H 0]
+＠マーリン
+夏の魔術師ことマーリンお兄さんだ！[r]やあやあ、また会ったね！
+[k]
+
+[charaFace H 1]
+
+＠マーリン
+で、何だったっけね[line 3]そうそう水着剣豪！[r]あっはっはっは、まさか全部終わったと思ってたのかい？
+[k]
+
+＠マーリン
+まさか。カジノのマネージャーがどうこうというのは、[r]本来、水着剣豪とは何の関係もないのさ！
+[k]
+
+＠マーリン
+天魔のこともね！[r]単に、水着剣豪の戦いを利用したまでなのだから！
+[k]
+
+[charaFace H 0]
+
+＠マーリン
+つまり、ね？
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.8 1.0]
+[bgm BGM_EVENT_94 0.8 0.4]
+[wait wipe]
+
+[charaFadeout H 0.1]
+
+[scene 80500]
+
+[pictureFrame cut063_cinema]
+
+[charaTalk off]
+[charaFace I 0]
+[charaFace J 0]
+[charaFadein I 0.1 0,-50]
+[charaFadein J 0.1 0,-50]
+[wt 0.5]
+
+[wipein rightToLeft 0.8 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaFadeout J 0.7]
+[wt 1.1]
+
+＠マーリン
+[line 3]水着剣豪の戦いは、そう簡単には終わらない。
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.8 1.0]
+[wait wipe]
+
+[scene 81200]
+
+[charaFace J 0]
+[charaFadein J 0.1 0,-50]
+[wt 0.5]
+
+[wipein rightToLeft 0.8 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaFadeout J 0.7]
+[wt 1.1]
+
+＠マーリン
+[line 3]むしろ始まったばかりさ。
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.8 1.0]
+[wait wipe]
+
+[scene 81300]
+
+[charaFace J 0]
+[charaFadein J 0.1 0,-50]
+[wt 0.5]
+
+[wipein rightToLeft 0.8 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaFadeout J 0.7]
+[wt 1.1]
+
+＠マーリン
+[line 3][#古今東西:ここんとうざい]、英霊たちが集いに集って。
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.8 1.0]
+[wait wipe]
+
+[scene 81500]
+
+[charaFace J 0]
+[charaFadein J 0.1 0,-50]
+[wt 0.5]
+
+[wipein rightToLeft 0.8 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaFadeout J 0.7]
+[wt 1.1]
+
+＠マーリン
+[line 3]ただひたすらに戦い続ける。
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.8 1.0]
+[wait wipe]
+
+[scene 81900]
+
+[charaFace J 0]
+[charaFadein J 0.1 0,-50]
+[wt 0.5]
+
+[wipein rightToLeft 0.8 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaFadeout J 0.7]
+[wt 1.1]
+
+＠マーリン
+[line 3]最強の座を求めて争う、一夏最後の思い出作り！
+[k]
+
+
+[messageOff]
+[wipeout leftToRight 0.8 1.0]
+[wait wipe]
+
+[charaSet B 98001000 1 ダミーエフェクト２]
+
+[charaDepth H 1]
+[charaDepth A 1]
+[charaDepth F 1]
+[charaDepth G 9]
+[charaDepth B 9]
+
+[scene 82100]
+
+[charaFace J 0]
+[charaFadein J 0.1 0,-50]
+[wt 0.5]
+
+[wipein rightToLeft 0.8 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaFadeout J 0.7]
+[wt 1.1]
+
+＠マーリン
+[line 3]それこそが！
+[k]
+
+
+[messageOff]
+[wipeout leftToRight 0.8 1.0]
+[bgmStop BGM_EVENT_94 0.8]
+[wait wipe]
+
+[charaFadeout I 0.1]
+
+[pictureFrame]
+
+[branch lblNotClear4 IsClear false]
+[scene 66700]
+[branch lblConf4]
+[label lblNotClear4]
+[scene 60300]
+[label lblConf4]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+[wt 0.5]
+
+[wipein rightToLeft 0.8 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠マーリン
+それこそが！[r]晩夏の水着剣豪御前試合！
+[k]
+
+＠マーリン
+またの名を、[wt 0.4][charaFace H 2][charaEffect B bit_talk_41]裏・水着剣豪七番勝負さ！！！[se ade98]
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut B 2000,2000]
+
+[charaFace G 2]
+[charaFace A 6]
+[charaFace F 7]
+[charaFadein G 0.1 1]
+[charaFadein A 0.1 300,0]
+[charaFadein F 0.1 -300,0]
+[wt 1.6]
+
+？1：晩夏の？
+？2：どういうことなんです？
+
+？！
+
+[messageOff]
+[charaFadeout G 0.1]
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 1]
+[wt 1.4]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFace F 5]
+[charaFadein G 0.1 2]
+[charaFadein F 0.1 0]
+
+＠ジークフリート
+おお……[bgm BGM_EVENT_82 0.1][r]裏・水着剣豪七番勝負！！
+[k]
+
+[charaFace G 2]
+＠ジークフリート
+胸が高鳴る！　血が滾る！[r]これほどまでの高揚なのか[line 3]すさまじいな……！
+[k]
+
+＠風魔小太郎
+僕もです……[r]うう、戦いたい……この姿のまま戦いたくて仕方ない！
+[k]
+
+＠風魔小太郎
+忍び装束でさえないのに！[r]ど、どうしたことなんだ……ううッ……！
+[k]
+
+？1：ジークフリート！　小太郎！
+？2：ふたりともしっかり！
+
+？！
+
+[messageOff]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[charaShake A 0.02 3 3 0.4]
+[wt 1.4]
+
+[charaFace A 6]
+
+＠マシュ
+あ、あれっ？[r]わたしまで武者震いが[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 1]
+
+＠マーリン
+戦う者だけでなく、見る者さえ奮い立たせるのさ！[r]さあ！　マスター！
+[k]
+
+[charaFace H 1]
+＠マーリン
+夏はまだ始まったばかり！[r]特異点が消えるギリギリまで遊んできたまえよ！
+[k]
+
+＠マーリン
+特別アツい夏になるよう、[r]私が、プロデュースしてあげるとも！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_82 2.0]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+
+[branch lblClear5 IsClear true]
+
+[label lblNotClear5]
+
+[charaSet E 6001001 1 小次郎]
+[charaSet F 6001002 1 小次郎(再臨)]
+
+[scene 10204]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad452]
+[wt 0.4]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 50,0]
+[charaMove E 1 0.4]
+[wt 0.4]
+[seStop ad452 0.4]
+[wt 0.4]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠小次郎
+……さて、さて。
+[k]
+
+＠小次郎
+結局のところ、[r]水着剣豪七色勝負なるモノは一体何なのか？
+[k]
+
+＠小次郎
+本当に、年に一度大陸西部で行われているのか否か。[r]なんともはや。
+[k]
+
+＠小次郎
+あの魔術師、[r]そのあたり何も言ってないでござろう？
+[k]
+
+[charaFace E 2]
+＠小次郎
+『その通り！』
+[k]
+
+[charaFace E 0]
+
+＠小次郎
+とは、勢いで言ってるだけではござらんか？
+[k]
+
+[messageOff]
+[charaFace E 1]
+[wt 1.2]
+
+＠小次郎
+などと[line 3][r]指摘してはみたものの。
+[k]
+
+＠小次郎
+もはや、異変を起こす聖杯も彼の地にはなく。
+[k]
+
+＠小次郎
+在るのは戦いを求める水着剣豪ばかり。[r]中には、夏の装いではないのに水着剣豪を名乗る、
+[k]
+
+＠小次郎
+なかなかに気合いの入った御仁もおられる模様。
+[k]
+
+[charaFace E 5]
+
+＠小次郎
+これより先は修羅なれば、[r]さらなる戦いを求める者のみが征かれるとよい。
+[k]
+
+[messageOff]
+[wt 1.2]
+
+[charaFace E 0]
+＠小次郎
+拙者？
+[k]
+
+＠小次郎
+拙者はまあ、そうでござるなぁ……。
+[k]
+
+＠小次郎
+夏の霊衣などは特にないが[line 3]
+[k]
+
+[messageOff]
+[se ad29]
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 1.0]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.5]
+
+＠F：小次郎
+[line 4]このあたりの霊基など、いかがにござる？
+[k]
+
+[messageOff]
+[charaFace F 1]
+[wt 1.9]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+
+[branch lblConf5]
+
+[label lblClear5]
+
+[charaSet E 1098123200 1 ゴルドルフ]
+
+[scene 66400]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad95]
+[wt 0.6]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.4 50,0]
+[charaMove E 1 0.4]
+[wt 0.4]
+[seStop ad95 0.4]
+[wt 0.4]
+
+[bgm BGM_EVENT_7 0.1]
+
+
+[charaFace E 12]
+＠ゴルドルフ
+……あー、いいかな？
+[k]
+
+＠ゴルドルフ
+それで結局、水着剣豪の勝負というのは[r]本当に大陸西部で毎年行われているモノなのかね？
+[k]
+
+＠ゴルドルフ
+あの魔術師、そのあたり何も言ってなくない？
+[k]
+
+[charaFace E 16]
+＠ゴルドルフ
+『その通り！』
+[k]
+
+[charaFace E 4]
+
+＠ゴルドルフ
+と言ってはいるが、ただの勢いなのでは？
+[k]
+
+[messageOff]
+[wt 1.2]
+
+[charaFace E 18]
+＠ゴルドルフ
+むむ、む、むむむむむむうう……
+[k]
+
+[charaFace E 13]
+＠ゴルドルフ
+誰[messageShake 0.02 3 3 0.8]か！　私に！[r][#理路整然:りろせいぜん]とした説明をしないかーッ！！！！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+
+[label lblConf5]
+
+
+
+[wt 0.5]
+[soundStopAll]
+[end]

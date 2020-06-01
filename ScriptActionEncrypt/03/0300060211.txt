@@ -1,0 +1,772 @@
+
+
+
+＄03-00-06-02-1-1
+
+[soundStopAll]
+
+[charaSet A 8001400 1 マシュ]
+[charaSet B 1098191900 1 オリュンポス兵]
+[charaSet C 9005001 1 ホームズ]
+[charaSet D 98002000 1 フォウ]
+[charaSet E 1017001 1 武蔵]
+[charaSet F 1098192200 1 ホームズ_ダメージ]
+[imageSet R back10000 1]
+[charaSet S 5009000 1 エフェクト用ダミー１]
+[charaSet T 5009000 1 エフェクト用ダミー２]
+[charaSet G 1098128800 1 武蔵_三度笠]
+
+[charaScale R 1.01]
+
+[scene 91800]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 0.3]
+[wt 0.1]
+[charaEffect S bit_talk_h_slash01 0,0 F]
+[se ad680]
+[seVolume ad680 0 0.6]
+[wait fade]
+
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaPut S 1200,1200]
+[charaEffectStop S bit_talk_h_slash01]
+
+[charaTalk A]
+[charaFace A 15]
+[charaScale A 1.05]
+[charaFadein A 0.1 -10,0]
+[fowardEffect bit_talk_14]
+[se ad32]
+[charaShake A 0.08 8 2 0.6]
+[wt 0.2]
+[se ad671]
+[charaMoveScale A 1.0 0.2]
+[wt 0.1]
+[seStop ad671 0.5]
+[wt 1.0]
+
+[charaFace A 2]
+
+＠マシュ
+はああああっ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[se ad881]
+[effect bit_talk_14]
+[se ad686]
+[wt 1.4]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[effectDestroy]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠マシュ
+強い……！
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_80 0.3 0.4]
+[charaTalk depthOff]
+[charaDepth R 1]
+[charaDepth A 2]
+[charaFadeTime R 0.2 0.5]
+[wt 0.2]
+[charaFace A 15]
+
+＠マシュ
+（予備役、と彼は言っていた……[r]　現役を離れた兵士のはずなのに、この強さ！）
+[k]
+
+＠マシュ
+（逃げるための隙を与えてくれない！）
+[k]
+
+＠マシュ
+（それにこの魔力量！[r]　やっぱり、サーヴァント級……いえ……）
+[k]
+
+＠マシュ
+（それ以上！）
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_80 0.4 1.0]
+[charaFadeout R 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+[charaFace A 2]
+
+＠マシュ
+マスター！[r]敵性体はきわめて強力です！
+[k]
+
+＠マシュ
+アトランティスの防衛兵よりも格段に……[r]総合戦闘力は英霊級、あるいはそれ以上の……！
+[k]
+
+？1：こっちでどうにか隙を作る！
+？2：ごめん、もう少しだけ堪えて[line 3]
+
+？！
+
+＠声
+[charaTalk C]
+離れたまえ、レディ。
+[k]
+
+[messageOff]
+[charaTalk A]
+[charaFace A 6]
+[wt 0.4]
+[se ad7]
+[wt 0.1]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠オリュンポス兵
+加勢か！
+[k]
+
+[messageOff]
+[charaPut S 1]
+[charaEffect S bit_talk_v_slash01]
+[se ad682]
+[wt 0.2]
+[charaFadeout B 0.1]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[wt 0.2]
+
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0 1]
+[effect bit_talk_14]
+[se ad32]
+[charaShake C 0.05 0 1 0.5]
+[wt 1.0]
+
+[charaEffectDestroy S]
+
+[charaFace C 4]
+
+＠ホームズ
+……やはり、そうか。
+[k]
+
+＠ホームズ
+アトランティス防衛兵の存在から予測できたが、[r]オリュンポスの人間は一人一人が英霊級の魔力を持つ。
+[k]
+
+[charaFace C 5]
+
+＠ホームズ
+当たって欲しくない推理ほど当たるものだ。[r]まったく！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠フォウ
+フォ、フォーウ！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ミスター・ホームズ！[r]一体どうして……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+キミたちの出発直前に所長が大声を出していただろう。[r]あれは、キミたちへの同行を私が提案したからさ。
+[k]
+
+？1：霊体化して……
+？2：ずっと近くにいた[&んですか！？:んだ！？]
+
+？！
+
+＠ホームズ
+正解だ。
+[k]
+
+[charaFace C 4]
+
+＠ホームズ
+そう、私の推理がただの杞憂であればよし。[r]確認が終わり次第、速やかにボーダーへと戻って、
+[k]
+
+＠ホームズ
+ダ・ヴィンチやキャプテン、所長の護衛を[r]続けるつもりだったのだが……
+[k]
+
+＠ホームズ
+やれやれ。[wt 0.3][charaFace C 5]推理的中となればそうも行くまい！
+[k]
+
+[messageOff]
+[se ad7]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[charaMoveScale C 1.1 0.2]
+[charaMove C 0,10 0.2]
+[wt 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[blurOff motion 0.1]
+[charaScale C 1.0]
+
+
+[effect bit_talk_kengekiall02]
+[wt 0.1]
+[se ad32]
+[se ad881]
+
+[wt 0.4]
+[se ad32]
+[se ad880]
+[wt 0.7]
+
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+[f large]バリツ！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[wt 0.2]
+[effect bit_talk_13 200,50]
+[cueSe Battle bac150]
+[cueSeVolume bac150 0 0.5]
+[charaShake B 0.05 4 1 0.5]
+[wt 0.1]
+[fowardEffect bit_talk_13 50,-50]
+[cueSe Battle bac150]
+[cueSeVolume bac150 0 0.5]
+[wt 0.1]
+[effect bit_talk_13 -100,-200]
+[cueSe Battle bac150]
+[cueSeVolume bac150 0 0.5]
+[wt 0.4]
+
+＠オリュンポス兵
+[line 3]ッ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+畳み掛けます！[r]合わせてください、ホームズさん！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+ああ！
+[k]
+
+[messageOff]
+[charaFace C 5]
+[se ad39]
+[fowardEffect bit_talk_spell_r]
+[wt 1.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 0.3]
+
+
+[charaFace A 2]
+[effect bit_talk_attack_buf]
+[cueSe Battle bas10]
+
+
+＠マシュ
+[f large]はああっ！
+[k]
+
+[messageOff]
+[cueSe Battle bac122]
+[charaMove A 0,10 0.2]
+[charaMoveScale A 1.1 0.2]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[wt 0.1]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaScale A 1.0]
+
+[blurOff motion 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0 1]
+[wt 0.2]
+
+[effect bit_talk_14 200,-50]
+[se ad602]
+[se ad686]
+[charaShake B 0.08 8 2 0.6]
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠マシュ
+！
+[k]
+
+＠マシュ
+（防がれた[line 3]反撃が来る！）
+[k]
+
+＠マシュ
+（でも、即座の防御専念！[r]　ホームズさんの援護を受けている状態なら！）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠オリュンポス兵
+…………驚いたな。
+[k]
+
+[messageOff]
+[charaPut S 1]
+[charaEffect S bit_talk_h_slash01]
+[se ad680]
+[seVolume ad680 0 0.6]
+[wt 0.3]
+
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaFadeout B 0.1]
+[charaPut S 1200,1200]
+[charaEffectDestroy S]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+[fowardEffect bit_talk_14]
+[se ad32]
+[charaShake A 0.08 8 2 0.6]
+[wt 0.3]
+
+＠マシュ
+ぐあっ……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠オリュンポス兵
+ここまで軽いとは思ってもみなかったよ。[r]本当の君は、戦う人ではないのかもしれないね。
+[k]
+
+＠オリュンポス兵
+だが、君は汎人類史だ。カルデアだ。
+[k]
+
+＠オリュンポス兵
+まずは両腕を落とす。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+？1：（防御の礼装を……！）
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut S 1]
+[charaEffect S bit_talk_v_slash01]
+[se ad680]
+[wt 0.9]
+[se ad161]
+[fowardEffect bit_talk_35]
+[wt 2.0]
+[charaEffectDestroy S]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠フォウ
+フォウ、フォーーーウ！！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……ホームズさん！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠F：ホームズ
+……バリツには防御もある。[r]北欧の二の舞にならずには、一応、済んだかな。
+[k]
+
+[messageOff]
+[charaFaceFade F 4 0.4]
+[wt 1.2]
+[charaFace F 2]
+
+＠F：ホームズ
+ミス・キリエライト！
+[k]
+
+＠F：ホームズ
+走れ！
+[k]
+
+＠F：ホームズ
+そして振り返るな！[r]此処は、私がなんとしても食い止める！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠オリュンポス兵
+…………仲間を想う心があるのか。
+[k]
+
+＠オリュンポス兵
+それなら、何故……
+[k]
+
+＠オリュンポス兵
+何故！[r]君たちは、異聞帯を破壊する事ができる！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠F：ホームズ
+問われれば答えるが、果たして意味はあるのかね。[r]その物々しい刃を納めると？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠オリュンポス兵
+いいや。[r]納めない。
+[k]
+
+＠オリュンポス兵
+……言葉を交わしたのは無意味だった。[r]僕は兵士だ。その霊基、ふたつに引き裂こう。
+[k]
+
+＠オリュンポス兵
+不遜にも神の血を持たないまま、[r]ただの人間の身で英雄を名乗る[line 3]英霊とやら。
+[k]
+
+？1：ホームズ！
+？2：[&逃げろ……！:逃げて！]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ホームズさん！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠F：ホームズ
+我々は勝つ！　進むより他に[#路:みち]はない！[r]そうとも！
+[k]
+
+＠F：ホームズ
+この長くも[#昏:くら]き旅路にあっては！[r]誰ひとりとして、振り返る事など許されはしない！
+[k]
+
+[charaFace F 2]
+
+＠F：ホームズ
+マシュ・キリエライト！[r][%1]！
+[k]
+
+＠F：ホームズ
+[line 6]そのまま走れ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠オリュンポス兵
+戯れ言は終わったね。[r]ならば！
+[k]
+
+[messageOff]
+[charaEffect S bit_talk_v_slash01]
+[se ad680]
+[seVolume ad680 0 0.6]
+[wt 0.3]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.2]
+[charaPut S 1200,1200]
+[charaEffectDestroy S]
+
+[bgmStop BGM_EVENT_80 0.7]
+
+[fowardEffect bit_talk_14]
+[se ad32]
+[shake 0.05 5 2 0.3]
+[wt 0.7]
+
+＠オリュンポス兵
+[f large]！？
+[k]
+
+[bgm BGM_EVENT_67 0.1]
+
+＠女剣士の声
+[charaTalk E]
+おっと、いきなり修羅場ときた！[r]もう少し風情があってもいいんじゃない！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+！
+[k]
+
+？1：その声は……！
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠女剣士の声
+もっとも栄えた異聞帯、[r]恐れ多くも本物の神さまが統べる都市国家。
+[k]
+
+＠女剣士の声
+なら、そこはもっと威厳をもって、[r]ゆっくり重厚に牙を剥くのが王道ってものじゃない！？
+[k]
+
+[messageOff]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 1.0]
+[charaFace G 5]
+
+[charaPut S 1]
+[charaEffect S bit_talk_h_slash01 0,0 F]
+[cueSe Battle bac528]
+[cueSeVolume bac528 0 0.4]
+[wt 0.4]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaFadeout G 0]
+[charaPut S 1200,1200]
+[charaEffectDestroy S]
+
+[charaTalk B]
+[charaFace B 0]
+[charaScale B 1.1]
+[charaFadein B 0.1 1]
+[fowardEffect bit_talk_14]
+[se ad32]
+[charaShake B 0.08 6 2 0.3]
+[wt 0.2]
+[charaMoveScale B 1.0 0.2]
+[se ad671]
+[seVolume ad671 0 0.6]
+[wt 0.1]
+[seStop ad671 0.8]
+[wt 0.4]
+
+＠オリュンポス兵
+……誰だ。君は！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠G：？？？
+はっはっは！　誰かと問うたな、[r]神域の[#兵:つわもの]め！
+[k]
+
+＠G：？？？
+我こそは世界を渡る風来坊！[r]流れ流れて死に果てて、[#現在:いま]は一騎のサーヴァント！
+[k]
+
+＠G：？？？
+[#霊基:クラス]はセイバー！[r]誰かと問うなら答えてあげましょう！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth G 1]
+[charaDepth E 4]
+[charaFace E 5]
+[se ad7]
+[charaFadein E 0.2 1]
+[wt 0.1]
+[charaFadeout G 0.2]
+[wt 0.6]
+
+
+
+＠E：？？？
+私は[&彼:彼女]のサーヴァント！[r][#佩:は]いた二刀、隠した二刀、秘めたる一刀で貴殿を斬る剣客也！
+[k]
+
+＠E：？？？
+[line 3][#空:くう]に届きし二天一流！[r][line 3]真名、[#新免武蔵守藤原玄信:しんめんむさしのかみふじわらのはるのぶ]！
+[k]
+
+
+[messageOff]
+[charaPut T 1]
+[charaFace E 2]
+[charaEffect T bit_talk_41]
+[se ad938]
+＠E：？？？
+[f large][line 3]宮本武蔵、ここに見参！
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaPut T 1200,1200]
+[charaFace E 3]
+
+＠武蔵
+なーんてね☆[r]うひゃあ、格好良すぎか私～～！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_67 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

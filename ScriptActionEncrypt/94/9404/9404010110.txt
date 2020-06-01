@@ -1,0 +1,798 @@
+
+
+
+＄94-04-01-01-1-0
+
+
+[soundStopAll]
+
+
+[charaSet A 1040000 1 葛飾北斎]
+[charaSet B 1040000 1 葛飾北斎（シルエット）]
+[charaSet C 98001000 1 マシュ]
+[charaSet D 98111500 1 ダ・ヴィンチ]
+[charaSet E 98115300 1 ホームズ]
+[charaSet F 1098124510 1 ダ・ヴィンチ（ロリ）]
+[charaSet G 98002000 1 フォウ]
+
+[charaSet J 98115000 1 エフェクト用]
+
+[cameraMove 0 0,0 1.01]
+
+[charaDepth B 6]
+[charaDepth A 4]
+[charaDepth J 9]
+
+[branchQuestNotClear lblNotClear1 3000303]
+[flag IsClear true]
+[branch lblConf1]
+[label lblNotClear1]
+[flag IsClear false]
+[label lblConf1]
+
+
+
+
+
+[scene 10000]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_79 0.1]
+
+
+＠
+[line 6]仕方なきこと也。
+[k]
+
+＠
+浅ましさも己であり、[r]悩ましさも己である。
+[k]
+
+＠
+今さら何をどう足掻こうとも、既に、手遅れなのだから。
+[k]
+
+＠
+人は、大海を泳ぐ一匹の小魚が如きもの。[r]ゆえにどうにもならぬのだ。
+[k]
+
+＠
+人は、幼き[#形:なり]で生まれ落ちるもの。[r]ゆえに如何ともし難いのだ。
+[k]
+
+[messageOff]
+[wt 1.5]
+
+＠
+つまるところ……
+[k]
+
+＠
+誰にでも[line 3][r]ひどく未熟な頃の失敗というものは、あるのだ。
+[k]
+
+＠
+私にも。[r]君にも。
+[k]
+
+＠
+誰にでも、あるのだ。
+[k]
+
+[messageOff]
+[wt 1.5]
+
+＠
+　　　　　　　　　　　　　　　　　　　[line 3]時期不詳[r]　　　　　　　　　　　　　葛飾北斎、カルデアにて記す
+[k]
+
+[messageOff]
+[wt 1.5]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_79 2.0]
+[wait fade]
+
+
+[branch lblNotClear2 IsClear false]
+[scene 66600]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10310]
+[label lblConf2]
+
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.5]
+
+[se bac303]
+[seVolume bac303 0 0.6]
+[wt 0.4]
+[shake 0.02 3 3 1.4]
+[wt 3.8]
+
+[se ad608]
+[shake 0.03 4 4 1.6]
+[flashin once 0.1 0.5 FFFFFFFF FFFFFF80]
+
+[fowardEffect bit_talk_40]
+[charaPut J 0,200]
+[charaEffect J bit_talk_40]
+[wt 3.6]
+
+[se ad95]
+[seVolume ad95 0 0]
+[seVolume ad95 0.8 1.0]
+[wt 2.0]
+[seStop ad95 0.4]
+[wt 0.8]
+
+＠？？？
+…………はぁ。ふぅ。
+[k]
+
+[messageOff]
+[wt 0.1]
+[se ad95]
+[wt 0.4]
+[seStop ad95 0.8]
+[wt 0.4]
+
+[charaFilter B silhouette 00000080]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.8]
+＠？？？
+ったく、他愛ねえったらよう。
+[k]
+
+＠？？？
+おれァちいッとばかし素振りしただけってえのに、[r]あっさり斬れちまった。随分と弱っちい壁じゃねえか。
+[k]
+
+＠？？？
+ここいらの壁、[r]妖術魔術で強化とかしてんだろ？
+[k]
+
+[messageOff]
+[fadeout white 1.0]
+[wait fade]
+
+[fowardEffectStop bit_talk_40]
+[charaEffectStop J bit_talk_40]
+
+[charaTalk off]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[charaFadeout B 0.1]
+[wt 1.5]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.3]
+
+[charaTalk on]
+＠葛飾北斎
+[line 3]だよな？　そこのお[&兄さん:[#姐:ねえ]さん]ヨ？
+[k]
+
+[messageOff]
+[wt 1.2]
+
+？1：……北斎さん？
+
+？！
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaFace A 1]
+＠葛飾北斎
+おうサ！[r]おれのことを知ってるたァ嬉しいじゃねえか！
+[k]
+
+[charaFace A 8]
+＠葛飾北斎
+てェことはあんたがやっぱり『ますたあ』かい？[r]言われりゃ確かに、絆をちいっと感じるねえ。
+[k]
+
+＠葛飾北斎
+[line 3]そうと来りゃ、名乗らなきゃあナ！
+[k]
+
+[charaFace A 6]
+＠葛飾北斎
+おれはセイバー[#葛飾応為:かつしかおうい]……もとい！　葛飾北斎！[r]吉良家家臣の剣客の血を引くうら若き女剣客絵師！
+[k]
+
+＠葛飾北斎
+ゼイタク言やぁ、[r]いずれ仙女の剣客絵師だ！
+[k]
+
+＠葛飾北斎
+とりあえず！　まずは！[r]ココで一番の大剣豪ってのを目指すんで[line 3]
+[k]
+
+[charaFace A 7]
+＠葛飾北斎
+ひとつ！　よろしく頼まァ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠フォウ
+…………フォウ？
+[k]
+
+？1：あれ？
+？2：もしかして、初対面っぽくなってる？
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠マシュ
+は、はい先輩。[r]言動から察するに……
+[k]
+
+＠マシュ
+応為さん[line 3]こちらの葛飾北斎さんは、[r]霊基の変化だけでなく、記憶にも変質があるようです！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[branch lblClear3 IsClear true]
+
+[label lblNotClear3]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[se ad13]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-90]
+[wt 0.3]
+
+＠ダ・ヴィンチ
+はいはい、こっちでも観測できているよ。[r]へえー、今年の夏はその子なんだね。なるほど。
+[k]
+
+＠ダ・ヴィンチ
+変動した数値を見る限りでは、[r]いつものアレみたいだね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠マシュ
+いつもの、ですか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-90]
+＠ダ・ヴィンチ
+そうそういつもの。[r]毎年夏場になると多く起きてるアレの一種さ。
+[k]
+
+＠ダ・ヴィンチ
+サーヴァント同士の干渉あるいは[r]サーヴァント自身による、自発的な霊基の変化ってやつ。
+[k]
+
+[charaFace D 2]
+＠ダ・ヴィンチ
+つまり……そう！　水着への着替え！
+[k]
+
+？1：毎年恒例！
+？2：霊基変換！
+
+？！
+
+[charaFace D 0]
+＠ダ・ヴィンチ
+そゆこと。
+[k]
+
+＠ダ・ヴィンチ
+本来的な意味での霊基変換とはかけ離れてるけど、[r]取りあえずはその認識でいいよ。
+[k]
+
+＠ダ・ヴィンチ
+姿だけ変わって中身はほとんど変わらない。[r]それがカルデア式サマー霊基変換（仮）なんだけど、
+[k]
+
+＠ダ・ヴィンチ
+今回はちょっと特殊な事例のようだ。[r]元がフォーリナーというエクストラクラスゆえ、かな？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠葛飾北斎
+お？　なんでえなんでぇ。[r]ずいぶん顔色の悪い幽霊がいたもんじゃねえか。
+[k]
+
+＠葛飾北斎
+って、幽霊は顔色悪くて当然か。
+[k]
+
+[charaFace A 13]
+＠葛飾北斎
+……いや。いやいやいや。
+[k]
+
+＠葛飾北斎
+あんた本当に幽霊かい？[r]なんだか薄っぺらい感じで浮いてまぁ……なあ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-90]
+＠ダ・ヴィンチ
+なるほど、データ通信も見覚えなしか。[r]やっぱり記憶に混乱があるみたいだ。
+[k]
+
+[charaFace D 4]
+＠ダ・ヴィンチ
+となると……
+[k]
+
+＠ダ・ヴィンチ
+自分で着替えたのか他人に着替えさせられたのか、[r]この場ではハッキリしないかもだ。
+[k]
+
+＠ダ・ヴィンチ
+ずいぶんとざっくりした霊基変換みたいだけど、[r]詳細までは把握できないねえ。
+[k]
+
+[charaFace D 0]
+＠ダ・ヴィンチ
+ともかく、彼女は霊基の変化した葛飾北斎本人だよ。[r]正確にはタコ型の葛飾北斎と、その娘の葛飾応為、だね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠マシュ
+北斎さんの水着バージョン[line 3]
+[k]
+
+＠マシュ
+ご本人が着替えたのか、[r]どなたかが着替えさせたのか……むむ……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠フォウ
+フォウ……フォウフォ……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠葛飾北斎
+ま、幽霊の言い分なんざどうでもいいサ。[r]大事なのはおれがおれとして現界したってェ事実！
+[k]
+
+＠葛飾北斎
+おれは絵師剣豪！[r]強いヤツみんなと戦って戦って、戦って戦って戦って、
+[k]
+
+＠葛飾北斎
+剣の神髄ってぇのを見極めてやる！[r]そうすりゃ、どんな派手な絵だって描けるに違いねえ！
+[k]
+
+[charaFace A 26]
+＠葛飾北斎
+ナア、ますたあ！[r]強いヤツ集めてくれヨ、できれば剣士剣客剣豪をナ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠マシュ
+せ、先輩！[r]北斎さんがとても好戦的です……！
+[k]
+
+？1：見た目はあんまり変わらないのに
+？2：すごく　やるきだ！
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 26]
+[charaFadein A 0.1 1]
+＠葛飾北斎
+ふんす！[charaMoveReturn A 0,10 0.3]
+[k]
+
+[messageOff]
+[wt 0.5]
+
+
+
+
+[branch lblConf3]
+
+[label lblClear3]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[se ad13]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.3]
+
+＠F：ダ・ヴィンチ
+はーい、こっちでも観測できているよ。[r]へえー、今年の夏はその子なんだね。ふむふむ。
+[k]
+
+＠F：ダ・ヴィンチ
+変動した数値を見る限りでは、[r]いつものアレみたいだね。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠マシュ
+いつもの、ですか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ホームズ
+そう、キミたちには毎年お馴染みのモノのはずさ。[r]夏場にはいつも目にしている筈だ。
+[k]
+
+＠ホームズ
+サーヴァント同士の干渉[line 3][r]あるいはサーヴァント自身による自発的な霊基の変化。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠F：ダ・ヴィンチ
+つまりはサマータイム！[r]具体的に言うなら、水着へのお着替えだ！
+[k]
+
+？1：毎年恒例！
+
+[charaFace F 10]
+＠F：ダ・ヴィンチ
+そうそう！
+[k]
+
+？2：霊基変換！
+
+[charaFace F 10]
+＠F：ダ・ヴィンチ
+そのとーり！
+[k]
+
+？！
+
+[charaFace F 0]
+＠F：ダ・ヴィンチ
+本来的な意味での霊基変換とはかけ離れてるけど、[r]取りあえずはその認識でいいと思う。
+[k]
+
+＠F：ダ・ヴィンチ
+姿だけ変わって中身はほとんど変わらない。[r]それがカルデア式サマー霊基変換（仮）なんだけど……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ホームズ
+彼女の事例はいささか特殊ではあるね。[r]元の霊基がエクストラクラスという事情のせいかな？
+[k]
+
+＠ホームズ
+興味深い事象ではあるが……[r]まあ、どうあれ物事には原因があるものだ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠葛飾北斎
+お？　なんでえなんでぇ。[r]ずいぶん顔色の悪い幽霊がいたもんじゃねえか。
+[k]
+
+[charaFace A 6]
+＠葛飾北斎
+幽霊は顔色悪くて当然か？[r]まあいいサ。
+[k]
+
+＠葛飾北斎
+男の霊に、娘の霊が浮いていやがる。[r]親子にしちゃ似てねえが……[wt 0.8][charaFace A 7]は、人のことは言えねえか！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 17]
+[charaFadein F 0.1 1]
+＠F：ダ・ヴィンチ
+だってさ、パパ・ホームズ？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠ホームズ
+やめなさい。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠葛飾北斎
+ヘエ、仲がいいもんだ！[r]幽霊ってえのは英霊とはちっと違うんだったっけか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠F：ダ・ヴィンチ
+んー。データ通信にも見覚えがないみたいだね、彼女。[r]やっぱり記憶に混乱があるみたいだ。
+[k]
+
+[charaFace F 24]
+＠F：ダ・ヴィンチ
+となると……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ホームズ
+自分で着替えたのか他人に着替えさせられたのか、[r]何にせよこの場では断定はできまいね。
+[k]
+
+＠ホームズ
+データ通信について忘れている以上、[r]かなり大雑把な霊基変換だとは言えるかな。
+[k]
+
+＠ホームズ
+と、ここで推理推測を口にするのは容易いが[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+＠F：ダ・ヴィンチ
+言わないんでしょ？[r]結論。
+[k]
+
+＠F：ダ・ヴィンチ
+まだその時ではないメソッド発動しちゃうでしょキミ？[r]そうだよね？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+[wt 1.2]
+
+？1：無言で眉を上げない！
+？2：いつものホームズだ……
+
+？！
+
+[charaFace E 1]
+＠ホームズ
+ははは。
+[k]
+
+[charaFace E 7]
+＠ホームズ
+彼女は霊基の変化した葛飾北斎本人だ、[r]ぐらいの断言はしておこうか。
+[k]
+
+＠ホームズ
+別人が化けている訳ではないよ。[r]そこまでは充分に観測できているから、間違いない。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠F：ダ・ヴィンチ
+正確にはタコ型の葛飾北斎と、その娘の葛飾応為、ね。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠マシュ
+北斎さんの水着バージョン[line 3]
+[k]
+
+＠マシュ
+ご本人が着替えたのか、[r]どなたかが着替えさせたのか……むむ……
+[k]
+
+[charaFace C 2]
+＠マシュ
+謎ですね！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠フォウ
+フォウ……フォウフォ……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠葛飾北斎
+ま、どうでもいいサ。[r]大事なのはおれがおれとして現界したってェ事実！
+[k]
+
+＠葛飾北斎
+おれは絵師剣豪！[r]強いヤツみんなと戦って戦って、戦って戦って戦って、
+[k]
+
+＠葛飾北斎
+剣の神髄ってぇのを見極めてやる！[r]そうすりゃ、どんな派手な絵だって描けるに違いねえ！
+[k]
+
+[charaFace A 26]
+＠葛飾北斎
+ナア、ますたあ！[r]強いヤツ集めてくれヨ、できれば剣士剣客剣豪をナ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠マシュ
+せ、先輩！[r]北斎さんがとても好戦的です……！
+[k]
+
+？1：見た目はあんまり変わらないのに
+？2：すごく　やるきだ！
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 26]
+[charaFadein A 0.1 1]
+＠葛飾北斎
+ふんす！[charaMoveReturn A 0,10 0.3]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+
+
+
+[label lblConf3]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_94 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,240 @@
+
+＄03-00-06-17-4-0
+
+
+[soundStopAll]
+
+[charaSet A 8001410 1 マシュ]
+[charaSet B 8001400 1 アーマード・マシュ]
+[charaSet C 1098191300 1 マカリオス]
+[charaSet D 7010001 1 カリギュラ]
+[charaSet E 3041001 1 カイニス]
+[charaSet F 1017001 1 武蔵]
+
+[charaSet S 5009000 1 エフェクト用ダミー]
+[charaSet T 5009000 1 エフェクト用ダミー]
+
+[bgm BGM_EVENT_80 0.1]
+[wt 0.4]
+[se ad547]
+[se ad546]
+
+
+[scene 91800]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠マシュ
+……地上に出ました！
+[k]
+
+＠マシュ
+周辺に一般住民の姿は見当たりません！[r]ですが、魔力反応……
+[k]
+
+[messageOff]
+[se ad674]
+[wt 0.4]
+[se ad674]
+
+＠マシュ
+魔力反応、多数！[r]前後左右から敵性反応が押し寄せてきます！
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth B 2]
+
+[se ade57]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[charaTalk off]
+[charaFace B 7]
+[charaFadein B 0.4 1]
+[wt 0.5]
+[charaFadeout A 0.1]
+[charaFace B 2]
+
+＠B：マシュ
+連続戦闘が予想されます！[r]マスター！
+[k]
+
+？1：前方、一点突破！
+
+＠B：マシュ
+了解しました。[r][line 3][#霊基外骨骼:オ ル テ ナ ウ ス]、連続稼働モードスタンバイ！
+[k]
+
+？2：アデーレとマカリオスは飛行機械を！
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠マカリオス
+ステュムパリデスはいつでも出せるように[r]準備しておく！　隙を見付けて空へ上がるぞ！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad564]
+[seVolume ad564 0 0.4]
+[shake 0.05 2 1 1.0]
+[wt 1.5]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠カリギュラ
+……来るぞ。
+[k]
+
+＠カリギュラ
+市街地にもかかわらず巨大幻獣を繰り出すとは。[r]流石はギリシャ神代の神々、[#戦:いくさ]の規模は相当だな！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠カイニス
+ハハ！　いいねえいいねえ！[r]デカブツを殺すのは好きだぜ！
+[k]
+
+＠カイニス
+死にたい奴から掛かってこい[line 3]
+[k]
+
+＠カイニス
+違うな！[r]オレに殺されたい奴から掛かってこい！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠武蔵
+ワオ、テンション下がるかと思ったけど、[r]さらにテンション上がってるぅ！
+[k]
+
+
+＠武蔵
+頼もしいコトこの上ないわね、カイニス！[r]じゃあ、私も決戦仕様と参りましょう！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 1.5]
+[charaFace F 5]
+[se ad39]
+[effect bit_talk_36]
+[wt 0.5]
+[fadeout white 2.0]
+[wait fade]
+[effectDestroy bit_talk_36]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaSet F 1017002 1 武蔵]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+[wt 0.5]
+[fadein white 0.5]
+[se ad814]
+[se ade390]
+[wait fade]
+[seStop ad814 1.0]
+[seStop ade390 1.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_67 0.1]
+[wt 2.0]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 23]
+[charaFadein E 0.1 1]
+
+＠カイニス
+うおっ、なんだテメェその服装！？[r]邪魔じゃねえか！？　破けるぞ、勿体ねえ！？
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠武蔵
+ふ！[r]故郷に[#錦:にしき]なんか飾るもんですか！
+[k]
+
+[charaFace F 1]
+
+＠武蔵
+一番いい時に、[r]一番いい自分も魅せるのが女武蔵ってね！
+[k]
+
+
+[messageOff]
+[charaFace F 5]
+[se bac306]
+[wt 1.0]
+
+＠武蔵
+さあさあさあ！[r]機械仕掛けの神々も御照覧あれ！
+[k]
+
+
+＠武蔵
+かの大英雄ヘラクレスに[#斃:たお]されし幻獣ども！[r]我ら英霊、大英雄とは行かねども……
+[k]
+
+＠武蔵
+ひとたび人理に刻まれし魂なれば！[r]この身、[#一騎当千:いっきとうせん]と心得る！
+[k]
+
+[charaFace F 2]
+
+＠武蔵
+神代の鋼の幻獣！[r]此処にて[line 3]一息に、退治てくれましょう！
+[k]
+
+[messageOff]
+[se ad564]
+[shake 0.05 3 2 1.5]
+[wt 2.0]
+
+
+＠武蔵
+いざ！　参る！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_67 0.4]
+[wait fade]
+[soundStopAll]
+[end]

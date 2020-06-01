@@ -1,0 +1,906 @@
+
+＄03-00-04-06-2-1
+
+
+[soundStopAll]
+
+[charaSet A 1098127610 1 ペペロンチーノ]
+[charaSet B 1098176200 1 アシュヴァッターマン]
+[charaSet C 8001400 1 マシュ]
+[charaSet D 1098124510 1 ダ・ヴィンチ]
+[charaSet E 3004001 1 カルナ]
+[charaSet F 98115300 1 ホームズ]
+[charaSet G 3004002 1 カルナ_霊基第三]
+[charaSet I 1019001 1 ラーマ]
+[charaSet J 5009000 1 エフェクト用ダミー]
+[charaSet H 5009000 1 エフェクト用ダミー2]
+
+[scene 75007]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.5]
+
+[cueSe Battle bac109]
+[charaFadeout A 0.2]
+[wt 0.07]
+
+[charaPut J 1]
+[charaScale J 1.5]
+[charaPut J -40,-30]
+[se bac136]
+[charaEffect J bit_talk_Slash_white_01]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 128,0]
+[wt 0.2]
+
+[cueSe Battle bac109]
+[charaFadeout A 0.2]
+[wt 0.07]
+
+[se bac136]
+[charaPut J 88,0]
+[charaEffect J bit_talk_Slash_white_01_L]
+[wt 1.0]
+
+[charaPut J 1200,1200]
+[charaEffectDestroy I]
+[charaScale J 1.0]
+[charaEffect J bit_talk_10_LowLevel]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠アシュヴァッターマン
+ああクソ、うざってぇ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠マシュ
+ペペさんが魔術で援護を……ダメージはないですが、[r]素早い動きで[#攪乱:かくらん]してくれています。今のうちに！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+うーん、あんまり見ない高速機動の術式だなー。[r]シンプルにとにかく速く動いている感じだけど。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ペペロンチーノ
+ふふ、理屈が知りたいの？
+[k]
+
+＠ペペロンチーノ
+そうねぇ。実は、名前の通り……[r]愛の力で空間を[#捻:ねじ]れさせているのよ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 22]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+えーい、明らかにウソだが今はおいとくしかなーい！[r]隙ができたよ、今だ！
+[k]
+
+＠ダ・ヴィンチ
+周囲に生体反応なし！　もうほとんど街の外だから[r]それなりに思いっきりやっちゃっても大丈夫！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+[charaEffect E bit_talk_36]
+[se ad39]
+[wt 1.5]
+[charaEffectStop E bit_talk_36]
+[cueSe NoblePhantasm_300400 NP_300400_3]
+[fadeout white 0.6]
+[effect bit_talk_29]
+[wait fade]
+
+[effectStop bit_talk_29]
+[charaFadeout E 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+[cueSeStop NP_300400_3 0.6]
+[fadein white 1.2]
+[wait fade]
+
+[cueSe NoblePhantasm_300400 NP_300400_6]
+
+[seStop ad39 0.2]
+[wt 0.8]
+
+[charaFace G 2]
+
+＠G：カルナ
+[f large]『[messageShake 0.05 6 4 0.4][#日輪よ、死に随え:ヴ　ァ　サ　ヴ　ィ　・　シ　ャ　ク　テ　ィ]』！！
+[k]
+
+[messageShakeStop]
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+
+[fadeout ff4500 2.0]
+[effect bit_talk_shock_wave]
+[cueSe NoblePhantasm_300400 NP_300400_11]
+[shake 0.03 4 6 0]
+[wt 1.0]
+[cueSe NoblePhantasm_300400 NP_300400_12]
+[wait fade]
+[effectDestroy bit_talk_shock_wave]
+[charaFadeout B 0.1]
+[wt 1.0]
+[cueSeStop NP_300400_4 0.5]
+[wt 0.5]
+[shakeStop]
+[fadein ff4500 0.2]
+[wait fade]
+
+[charaPut H 2000,2000]
+[charaEffect H bit_talk_lightning_01r]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠マシュ
+直撃確認！　これで[line 3]
+[k]
+
+[bgmStop BGM_EVENT_80 0.5]
+
+[charaFace C 15]
+
+＠マシュ
+っっ[line 3]？？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[charaPut H 1]
+[se ad137]
+[se ad61]
+[wt 1.5]
+
+＠アシュヴァッターマン
+ああ、あああ、ああああァァァッ……！
+[k]
+
+[messageOff]
+[seStop ad137 1.0]
+[seStop ad61 1.0]
+[charaEffectStop H bit_talk_lightning_01r]
+[wt 1.0]
+
+[bgm BGM_EVENT_24 0.1]
+[charaFace B 2]
+
+＠アシュヴァッターマン
+どうした、カルナ。死なねえぞ。[r]そんなんじゃ、死なねえんだよ、俺はァァァ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 2000,2000]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠ホームズ
+ダメージを与えていないわけではない。[r]だが超速再生している……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠G：カルナ
+……オレの知るおまえとはいささか違っているようだ。[r]アシュヴァッターマン。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠アシュヴァッターマン
+ハッ[line 3]そりゃ、そう、だろ。[r]おまえのほうが、先に、死んだんだろうがッ……。
+[k]
+
+＠アシュヴァッターマン
+アルジュナ、なんぞに負けやが、って……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠G：カルナ
+[line 3]そうだな。事実だ。否定はすまい。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ペペロンチーノ
+ちょっとちょーっと、アナタたち。
+[k]
+
+＠ペペロンチーノ
+とどめを刺すのが目的じゃないでしょ。[r]突破には充分なダメージよ、今のうちに！
+[k]
+
+？1：同感。行こう！
+？2：全員、速やかにダッシュ！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠アシュヴァッターマン
+ちくしょう。待ち、やがれ……！
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgm BGM_EVENT_24 1.5 0.2]
+[se ad668]
+[se ad59]
+[se ad443]
+[wait fade]
+[charaFadeout B 0.1]
+[scene 74903]
+[wt 0.2]
+[seStop ad668 0.6]
+[seStop ad59 0.56]
+[seStop ad443 0.54]
+[wt 1.0]
+
+[charaSet B 1098123210 1 ゴルドルフ]
+[charaSet C 8001410 1 マシュ]
+[charaSet E 3004002 1 カルナ]
+[charaSet H 23003001 1 ガネーシャ]
+[charaSet G 98002000 1 フォウ]
+
+[fadein black 1.2]
+[bgm BGM_EVENT_24 1.2 0.6]
+
+[se ad668]
+[seVolume ad668 0 0.0]
+[se ad59]
+[seVolume ad59 0 0.0]
+[se ad443]
+[seVolume ad443 0 0.0]
+[seVolume ad668 1.0 0.5]
+[seVolume ad59 1.0 0.5]
+[seVolume ad443 1.0 0.5]
+[wait fade]
+
+[wt 2.0]
+
+[seStop ad668 1.0]
+[seStop ad59 1.0]
+[seStop ad443 1.0]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠フォウ
+フォウ、フォウフォウ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠ガネーシャ
+はぁはぁ。い、一応言っとくっスよ！
+[k]
+
+[charaFace H 0]
+
+＠ガネーシャ
+ガネーシャさんはガネーシャさんだから、[r]こう見えて走っても人間以上の速度は出るっス。
+[k]
+
+＠ガネーシャ
+実はそうそう疲れもしないっス。
+[k]
+
+[charaFace H 7]
+
+＠ガネーシャ
+……でも『疲れた気分』にはなるんスよねぇ。[r]そしてそれが元ニートには一番キツいんスよ！
+[k]
+
+[charaFace H 5]
+
+＠ガネーシャ
+世界で最も『走る』って行為を憎んできた人種！[r]それがニートっス！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 0]
+[charaDepth H 1]
+
+[charaTalk E]
+[charaFace H 5]
+[charaFadein H 0.1 0]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+
+＠カルナ
+泣き言を言っても楽にはなれまい。黙って走れ。
+[k]
+
+[charaFace H 3]
+
+＠ガネーシャ
+むしろカルナさんがおぶってくれることを[r]期待して言ったんスけどー！？
+[k]
+
+＠カルナ
+無理だ。潰れる確信がある。[r]ガネーシャの神格の重みがゆえか……？
+[k]
+
+[charaFace H 2]
+
+＠ガネーシャ
+なんか腹が立つっスー！
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠ラーマ
+ところで、なぜ貴様まで一緒に逃げているのだ。[r]おまえは余たちの敵なのだろう。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ペペロンチーノ
+事情があるのよ、事情が！
+[k]
+
+[charaFace A 4]
+
+＠ペペロンチーノ
+今まではアレに敵認定されていなかったから[r]隠れているだけでよかったけど[line 3]
+[k]
+
+＠ペペロンチーノ
+あの山で哪吒に見つかっちゃったし、[r]しかも今日アナタたちの手助けをした事で、
+[k]
+
+＠ペペロンチーノ
+おそらく私も完全に[r]『この世界に不要なもの』と[#見做:みな]されたわ。
+[k]
+
+＠ペペロンチーノ
+[#巻き添えを食う資格ができちゃった]、ってわけ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠マシュ
+あの、ペペさん、それはどういう[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠ペペロンチーノ
+今はホントに口よりも足を動かすのよ、マシュちゃん。
+[k]
+
+＠ペペロンチーノ
+間に合わなかったら取り返しがつかない事に[r]なるんだから！
+[k]
+
+？1：で、どこまで逃げればいいの？
+？！
+
+
+[charaFace A 3]
+
+＠ペペロンチーノ
+イヤー！？　ウソ、そのレベルなの！？
+[k]
+
+[charaFace A 4]
+
+＠ペペロンチーノ
+じゃあしょうがないわね、足を止めずに聞きなさい！
+[k]
+
+
+＠ペペロンチーノ
+あのアルジュナは、[r][#今からこの異聞帯の内部を全て壊して創り変えるわ]。
+[k]
+
+＠ペペロンチーノ
+帰滅と再誕。破壊と再構築。天地崩壊と天地創造[line 3][r]カレにはそれができる。[#最後の神であるが故に]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+……え？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ペペロンチーノ
+あの長ーいタメは、その大それた所業に必要な[r]エネルギーを準備して練り上げている予備動作ってわけ。
+[k]
+
+＠ペペロンチーノ
+結論から言うけど、私やアナタたちが[r]その世界創変に巻き込まれると、もちろん消滅するわ。
+[k]
+
+＠ペペロンチーノ
+100パーセント。間違いなく。どうしようもなく、ね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ホームズ
+にわかには信じられない話だ。
+[k]
+
+＠ホームズ
+だが、あの莫大なエネルギー量がさらに加速度的に増加し[r]続けると仮定すれば。不可能ではない、のかもしれない[line 3]
+[k]
+
+＠ホームズ
+しかしそれが本当だとすると、再創造された後の[r]世界というのはどうなる？　生命は？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ペペロンチーノ
+そこらへんの説明はあとよ、あと！
+[k]
+
+[charaFace A 0]
+
+＠ペペロンチーノ
+私は[%1]ちゃんの[r]質問に答えただけよ、どこまで逃げればいいのかって！
+[k]
+
+＠ペペロンチーノ
+世界そのものを帰滅させる超範囲回帰宝具[line 3][r]それを回避するにはどうしたらいいか、わかるでしょ？
+[k]
+
+[charaFace A 7]
+
+＠ペペロンチーノ
+アナタたちだけが唯一、それを回避する[#術:すべ]を持ってる。[r]だから私もそれをアテにして一緒に走ってたんだけど……。
+[k]
+
+？1：ボーダーの……虚数潜航！
+？！
+
+[charaFace A 1]
+
+＠ペペロンチーノ
+わかってんじゃなーい、それよそれ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 26]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+もちろん、そんなことだろうと思ってエンジンを全力で[r]温めていたダ・ヴィンチちゃんだよ☆
+[k]
+
+＠ダ・ヴィンチ
+急いでこっちからも迎えに行くよー。[r]合流地点を設定しよう！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠ペペロンチーノ
+ボーダーそのものをカレに認識されたときにどうなるか、[r]っていう危険性はあるけど……
+[k]
+
+＠ペペロンチーノ
+今は、背に腹はかえられない、わね！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+待てい、待て待て待てーい！
+[k]
+
+＠ゴルドルフ
+五体満足なクリプターをボーダーに招き入れてだ？[r]しかも虚数潜航まで体験させるつもりか！？
+[k]
+
+[charaFace B 6]
+
+＠ゴルドルフ
+愚行にもほどがあるわー！[r]そのような危険行為、断ッじて許可できん！
+[k]
+
+＠ゴルドルフ
+ボーダーにクリプターを乗せた事がないとは言わんが、[r]あれはあくまでも捕虜だったり緊急措置だったりで[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ホームズ
+無論、その辺りの危惧は私やダ・ヴィンチも[r]捨て去ったわけではない。
+[k]
+
+＠ホームズ
+だが今の最優先は[r][%1]君の安全確保だ。
+[k]
+
+＠ホームズ
+現状では棚上げしておくべきリスクと判断した。[r]それに[line 3]
+[k]
+
+？1：………………
+？！
+
+[charaFace F 6]
+
+＠ホームズ
+見たまえ、あの顔だよ。[&彼:彼女]がひとまず信じると[r]決めてしまっているならば、
+[k]
+
+＠ホームズ
+こちらでどうこう言っても仕方のない事だろう？[r]実際に動いているのは[&彼ら:彼女たち]なのだから。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ペペロンチーノ
+んもー、蒸し返すのは止めてほしいわね。
+[k]
+
+＠ペペロンチーノ
+今の私にはサーヴァントもいないし、[r]無力な一人の魔術師にすぎないわ。
+[k]
+
+＠ペペロンチーノ
+それこそ捕虜みたいなものだと思ってほしいんだけど。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+うぬぅ。捕虜か……せっかく捕まえた[r]カドック・ゼムルプスには結局逃げられてしまったし。
+[k]
+
+＠ゴルドルフ
+貴重なクリプター側の情報を得られる機会が[r]改めて訪れたと考えれば、
+[k]
+
+＠ゴルドルフ
+リスクとリターンを天秤にかけるだけの[r]価値はある、のか……？
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace B 0]
+
+＠ゴルドルフ
+……よぅし、わかった！　特別に許可する！[r]あくまでも厳重警戒の上で、だぞ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠マシュ
+ありがとうございます、ゴルドルフ所長！
+[k]
+
+[messageOff]
+[se ad15]
+[wt 0.8]
+[charaFace C 2]
+[wt 0.2]
+
+＠マシュ
+……ボーダーとの予想合流地点の座標、来ました！[r]このまま全力でそこに向かいましょう、マスター！
+[k]
+
+？1：もう一踏ん張り[&だ:]！
+？2：みんな、頑張ろう！
+？！
+
+[charaSet D 1098176300 1 神たるアルジュナ]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠フォウ
+フォウフォウー！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[shake 0.05 0 2 0]
+[se ad668]
+[seVolume ad668 0 0]
+[seVolume ad668 0.5 0.4]
+[se ad59]
+[seVolume ad59 0 0]
+[seVolume ad59 0.5 0.4]
+[se ad443]
+[seVolume ad59 0 0]
+[seVolume ad59 0.5 0.4]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 2.0]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 2.0]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+[wt 2.0]
+
+[fadeout black 0.7]
+[seStop ad668 0.7]
+[seStop ad59 0.7]
+[seStop ad443 0.7]
+[bgmStop BGM_EVENT_24 1.5]
+[wait fade]
+
+[shakeStop]
+
+[charaFadeout H 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+[wt 0.1]
+[pictureFrame cut063_cinema]
+[fadein black 0.7]
+[wait fade]
+
+＠ペペロンチーノ
+（やれやれ。ようやく生き残れる可能性が生まれたわ。[r]　残ってる問題は、単純なものが一つだけ[line 3]）
+[k]
+
+
+[messageOff]
+[se ad750]
+[seVolume ad750 0 0]
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[scene 75601]
+[charaPut J 210,-20]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 -150,-50]
+[charaEffect J bit_talk_arjuna_np_charge01]
+
+[wt 0.3]
+
+[seVolume ad750 0.5 0.8]
+
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[wt 3.0]
+
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+[cueSeStop NP_201500_1 0.5]
+
+[charaFadeout D 0.1]
+[charaPut J 3000,3000]
+
+[scene 74903]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+[wt 0.3]
+
+[seStop ad750 0.5]
+
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+＠ペペロンチーノ
+（純粋に。[r]　[#間に合うかどうか]、ね……）
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[wait fade]
+[pictureFrame]
+[wt 1.0]
+[soundStopAll]
+[end]

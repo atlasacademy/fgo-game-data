@@ -1,0 +1,1436 @@
+
+
+
+＄03-00-06-21-3-0
+
+
+
+[soundStopAll]
+
+[charaSet A 1098128200 1 カイニス]
+[charaSet B 1098123710 1 キリシュタリア]
+[charaSet C 8001410 1 マシュ]
+[verticalImageSet D cut181_tree01 1]
+[charaScale D 1.02]
+[verticalImageSet I cut181_tree02 1]
+[charaScale I 1.02]
+[charaSet E 9005001 1 ホームズ]
+[charaSet F 1098191200 1 アデーレ]
+[charaSet G 1098191300 1 マカリオス]
+[charaSet H 1098118410 1 リンボ]
+[verticalImageSet J cut181_tree03 1]
+[charaScale J 1.02]
+[charaSet K 4040002 1 エウロペ]
+[charaSet L 1098123200 1 ゴルドルフ]
+[charaSet M 1098124510 1 ダ・ヴィンチ]
+[charaSet N 1098123710 1 キリシュタリア（鳴動演出用）]
+[charaSet O 8001400 1 アーマード・マシュ]
+
+[sceneSet P 10001 1]
+[charaScale P 1.01]
+
+[charaSet S 5009000 1 エフェクト用ダミー]
+[charaSet T 5009000 1 エフェクト用ダミー]
+
+[cameraMove 0 0,0 1.01]
+
+[bgm BGM_BATTLE_77 0.1]
+
+[scene 93000]
+
+[fadein black 1.0]
+[wait fade]
+
+[se bac210]
+[se bac403]
+[se ad897]
+[effect bit_talk_attack_splash]
+[wt 0.3]
+
+[se ad170]
+[flashin once 0.1 0.1 9effffFA 9effff00]
+[wt 0.1]
+
+[effectStop bit_bolg_01b]
+
+[charaTalk O]
+[charaFace O 15]
+[charaFadein O 0 1]
+[charaShake O 0.02 3 3 0.6]
+[wt 1.2]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠カイニス
+クソ、しつこい上に面倒くせえなコイツら……！[r]どうなってやがる！
+[k]
+
+＠カイニス
+おいキリシュタリア！[r]なに出し惜しんでやがる、アレやってくれアレ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠キリシュタリア
+む？　アレというと？[r]もしや、海岸で見せたあの[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠カイニス
+狂ってんのかテメェ、そっちのアレじゃねえ、[r]お得意の隕石だよ、隕石！
+[k]
+
+＠カイニス
+アトランティスじゃあ見られなかったからなァ！[r]一度は[#味方:こっち]側で、[#悠々:ゆうゆう]と拝ませろ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠キリシュタリア
+ああ、[#惑星轟:わくせいごう]の話か。[r]もちろん出し惜しみはしない。だが[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_BATTLE_77 0.5]
+[wt 0.5]
+
+[charaFace B 0]
+＠キリシュタリア
+[line 3]時間のようだ。
+[k]
+
+＠キリシュタリア
+すまないが、ほんの数秒手を止めてくれるかな、[r][%1]。
+[k]
+
+[messageOff]
+[skip false]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth O 4]
+[charaDepth C 5]
+
+[charaFace O 6]
+[charaFadein O 0.1 1]
+[wt 0.4]
+
+[se ad658]
+[charaFace C 6]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+[charaFadeout O 0.4]
+[wt 0.4]
+
+
+[charaTalk on]
+[charaTalk C]
+＠マシュ
+え……？
+[k]
+
+[charaFace C 2]
+＠マシュ
+！　マスター！[r]空想樹内部の魔力反応、急速に上昇！
+[k]
+
+＠マシュ
+危険です、距離を取って……！
+[k]
+
+
+[messageOff]
+
+[se ad606]
+[fadeout white 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+
+
+[scene 10000]
+[overlayFadein P 0.1 0,-200]
+[wt 1.0]
+[fadein white 0.1]
+[wait fade]
+
+[bgm BGM_BATTLE_80 0.1]
+[criMovie talk_mov056 bgmPlay false]
+[wt 0.5]
+[charaFadeout P 1.0]
+
+[wt 15.0]
+
+[fadeout white 1.0]
+[wait fade]
+
+[scene 93001]
+[wt 1.0]
+
+[skip true]
+
+[fadein white 1.0]
+[wait fade]
+[wt 1.0]
+
+？1：空から、何か降りてきている……！？
+
+？！
+
+
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠ホームズ
+（『異星の神』の降臨か！？[r]　だがそれ以上に[line 3]あの空は、なんだ？）
+[k]
+
+＠ホームズ
+（夜空ではない！　宇宙でもない！[r]　カオスのいた超次元とも違う！）
+[k]
+
+＠ホームズ
+（私にもまったく推理ができない……！[r]　アレは一体[line 3]なんなのだ！？）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠マカリオス
+空想樹の中身が……消えた？[r]いや、違う。中に何か見える。アレは[line 3]
+[k]
+
+＠マカリオス
+巨人？　人の形をしているような[line 3]
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad42]
+[charaPut H 1]
+[charaTalk H]
+[charaFace H 2]
+[charaSpecialEffect H appearance 1 1.2]
+[wt 1.8]
+＠リンボ
+ンン！　ンンンンンンン！[r]そう！　あれこそは神の玉体！
+[k]
+
+＠リンボ
+我ら使徒が呼び出された理由にして、[r]我ら使徒が待ち続けた神のお姿！
+[k]
+
+＠リンボ
+見事、見事なりキリシュタリア！[r]ヒトの身でよくここまで辿り着いた！
+[k]
+
+[charaFace H 4]
+＠リンボ
+いや、カルデアとつまらぬ小競り合いを始めた時は[r]『異星の神』との契約違反かと[#訝:いぶか]しみましたが……
+[k]
+
+[charaFace H 6]
+＠リンボ
+結果良ければ全て良し、としましょう！[r]事はこれでおしまい。人類はこれでおしまい！
+[k]
+
+＠リンボ
+もう誰にも、[r]『神』の降臨は止められないのですから！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠キリシュタリア
+……。
+[k]
+
+＠キリシュタリア
+空想樹が育ちきり、その[#虚:うつ]ろが満たされた時、[r]『異星の神』は降臨する。
+[k]
+
+＠キリシュタリア
+この地球に肉体を持てない『異星の神』が、[r]空想の樹を[#器:うつわ]にして顕界する。
+[k]
+
+＠キリシュタリア
+君たちの大召喚器アイテールと同じようなものだ。[r]まさしく、ゲームセットだよ。
+[k]
+
+？1：っ、キリシュタリア……！
+？2：今すぐ、[&おまえ:あなた]を倒す……！
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 14]
+[charaFadein H 0.1 1]
+＠リンボ
+ンンフフ。[r]ンフフフフフフフフフフ……！
+[k]
+
+＠リンボ
+駄目。駄目ですよぅ、[%1]！
+[k]
+
+[charaFace H 13]
+＠リンボ
+よい威勢ですが、あまりにも無力、そして遅すぎる！[r]キリシュタリア殿が手を[#煩:わずら]わせるまでもない、
+[k]
+
+＠リンボ
+ここは興奮最高潮となった拙僧が[r]お相手つかまつ[line 3]
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[bgmStop BGM_BATTLE_80 1.0]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+[wt 1.2]
+
+[charaFace B 8]
+＠キリシュタリア
+だが。『異星の神』が降りるべき場所は、[r]ここにはない。
+[k]
+
+＠キリシュタリア
+よく見るがいいリンボ。[r]私の空想樹の中には、何が[#捧:ささ]げられているのかを。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaDepth C 3]
+[charaDepth E 2]
+[charaDepth F 5]
+[charaDepth G 6]
+[charaDepth K 4]
+
+[charaFace C 6]
+[charaFace E 6]
+[charaFadein C 0.1 2]
+[charaFadein E 0.1 0]
+[wt 1.2]
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[wt 0.2]
+
+
+[charaFace F 4]
+[charaFace G 0]
+[charaFace K 9]
+[charaFadein F 0.1 400,0]
+[charaFadein G 0.1 100,0]
+[charaFadein K 0.1 0]
+[wt 1.2]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout K 0.1]
+[wt 0.2]
+
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+[wt 1.2]
+
+＠リンボ
+ん？　何を仰る、空想樹の中にあるものは[r]紛れもなく神の……神の……[wt 1.2][charaFace H 5]神のぉぉぉを！？
+[k]
+
+[bgm BGM_BATTLE_77 0.1]
+
+＠リンボ
+なんだこれは！？[r]なんだこの忌まわしい神性は！？
+[k]
+
+＠リンボ
+[#もう中に神が入っているだとぅ]！？[r]不法占拠にも程がある！　この神は何者か……ッ！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠カイニス
+そりゃ決まってるだろうが。[r]キリシュタリアは何度も言ってただろう？
+[k]
+
+＠カイニス
+こいつはもうマゼランなんて名前じゃねえ。[r][#世界巨神:ア　ト　ラ　ス]の空想樹だってな！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+＠リンボ
+！？[r]もしや[line 3]もしや[line 3]
+[k]
+
+＠リンボ
+先に、空想樹の中に、神霊を召喚したというのか！？
+[k]
+
+[charaFace H 11]
+＠リンボ
+それもアトラス[line 3][r]ええい、アトラスとはなんぞや！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠マシュ
+アトラスとは、ギリシャ神話において[r]『世界を支え続けた巨人』ですが……
+[k]
+
+＠マシュ
+それを事前に、キリシュタリアさんが……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠キリシュタリア
+そうだ。[r]私が召喚したサーヴァントは三騎。
+[k]
+
+＠キリシュタリア
+汎人類史から神霊カイニス。[r]この異聞帯からディオスクロイ。
+[k]
+
+＠キリシュタリア
+そして汎人類史において、[r]ギリシャ世界の礎となった巨神アトラス。
+[k]
+
+＠キリシュタリア
+彼には相互理解の末、私の計画に賛同してもらった。
+[k]
+
+＠キリシュタリア
+この地を『異星の神』に渡すのではなく。[r]新しい、神代の世界にする為に。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 11]
+[charaFadein H 0.1 1]
+＠リンボ
+よくも抜け抜けと！[r]明確な契約違反ではありませんか！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠キリシュタリア
+いや。『異星の神』に[r]指示された手順はすべて守っていた。
+[k]
+
+＠キリシュタリア
+契約通り、空想樹は育てきった。[r]ただ、その中をどうするかは決めていなかったからね。
+[k]
+
+＠キリシュタリア
+からっぽのままでは据わりが悪い。[r]私なりに、先に住人を用意させてもらったのさ。
+[k]
+
+[messageOff]
+[se ad933]
+[seVolume ad933 1.0 0.6]
+[wipeout rectangleStripUpToDown 0.6 1.0]
+[wait wipe]
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth I 2]
+
+[charaFadein D 0.1 0,400]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[wipein rectangleStripDownToUp 0.6 1.0]
+[wait wipe]
+[seVolume ad933 1.0 0.3]
+[wt 1.0]
+[charaMove D 0,-200 8.0]
+[wt 9.5]
+[se ad950]
+[se ad949]
+[seStop ad933 2.0]
+[se ad851]
+[charaFadein I 1.5 0,-200]
+[wt 4.5]
+
+
+[wipeout rectangleStripDownToUp 0.6 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[charaFadeout I 0.1]
+[scene 93002]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+[wt 0.1]
+
+[wipein rectangleStripUpToDown 0.6 1.0]
+[wait wipe]
+
+
+＠リンボ
+て、天輪が真っ赤に！？[r]交信が、交信が中断しているだとぅ！？！
+[k]
+
+＠リンボ
+なんたるエラーか、[r]これでは『異星の神』が降りられぬ！
+[k]
+
+＠リンボ
+キリシュタリア・ヴォーダイム！[r]貴様、『異星の神』に逆らうのか！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠キリシュタリア
+はじめから従ってはいない。[r]『異星の神』とは、対等に取引していただけだ。
+[k]
+
+＠キリシュタリア
+私は人の未来、可能性を信じてここまでやってきた。
+[k]
+
+＠キリシュタリア
+『異星の神』の蘇生によって、[r]汎人類史とは相容れない体になりはしたが……
+[k]
+
+＠キリシュタリア
+私は、『異星の神』の為に[r]人理を覆そうとしたのではない。
+[k]
+
+＠キリシュタリア
+『異星の神』を排斥する為、[r]汎人類史から離れたのだ。
+[k]
+
+＠キリシュタリア
+リンボ。悪戯に滅びを楽しもうとする君とは、[r]初めから正反対の『使徒』だったというワケだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+＠リンボ
+二重の裏切り者が、どの口で[line 3]！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk off]
+
+[se ad1]
+[charaPut S 1]
+[charaEffect S bit_talk_pentagram_01_s]
+[se ade31]
+[wt 0.8]
+[charaFadeout H 0.1]
+
+[seStop ade31]
+[se bac210]
+[se ad897]
+[fowardEffect bit_talk_attack_splash]
+[wt 0.3]
+
+[se ad32]
+[se ad641]
+[se ad983]
+[seVolume ad983 0 0.5]
+[fowardEffect bit_talk_14]
+[fadeout white 0.3]
+[wait fade]
+
+[effectDestroy bit_talk_attack_splash]
+[charaPut S 1200,1200]
+
+[fadein white 1.0]
+[wait fade]
+
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[wt 0.8]
+
+[charaTalk on]
+[charaTalk A]
+[se ad442]
+
+＠カイニス
+おおっと！[r]テメェの相手はオレだ、間抜け！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 11]
+[charaFace A 1]
+[charaFadein H 0.1 0]
+[charaFadein A 0.1 2]
+＠リンボ
+くっ……！　[#似非:えせ]の神霊風情が、小癪！[r]どこまでも野蛮、下等なサーヴァントですねぇ……！
+[k]
+
+[charaTalk A]
+
+＠カイニス
+そうかい？[r]オレはテメェの事が嫌いじゃなかったぜリンボ？
+[k]
+
+[charaFace A 7]
+
+＠カイニス
+今までさんざん人を笑いものにしてきたテメェが、[r]最後の最後で、笑いものになるって知ってたからなぁ！
+[k]
+
+
+[messageOff]
+[charaTalk off]
+[charaFace H 5]
+[wt 1.2]
+
+[se ad7]
+[se ad678]
+[seVolume ad678 0 0.8]
+[charaEffect H bit_talk_quickmove]
+[charaEffect A bit_talk_quickmove]
+[charaSpecialEffect A erasureReverse 1 0.4]
+[charaSpecialEffect H erasureReverse 1 0.4]
+[wt 1.5]
+
+[wipeout rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+
+[charaFadeout H 0.1]
+[charaFadeout A 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+[wt 1.0]
+
+[wipein rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠マカリオス
+どういう事だ……？[r]とにかく、『異星の神』とやらは降りてこないのか？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ホームズ
+ああ。[r]降りるべき場所にもう神が入っているんだ。
+[k]
+
+＠ホームズ
+あのアトラスを排除しないかぎり、[r]『異星の神』は現れない。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠マシュ
+では……キリシュタリアさんは[r]『異星の神』から地球を守る為に……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ホームズ
+……そう簡単な話なら良かったのだがね。[r]そうではないのだろう、キリシュタリア？
+[k]
+
+[charaFace E 5]
+＠ホームズ
+私にもようやく見えてきた。[r]キミが一体、[#何に対しての脅威なのか]、が。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+[charaFace B 6]
+＠キリシュタリア
+[line 3]その通りだ、カルデアの賢者。
+[k]
+
+＠キリシュタリア
+大神ゼウスにその知恵を乱されていながら、[r]その考察力、解析力、恐れ入る。
+[k]
+
+＠キリシュタリア
+私は『異星の神』による地球支配を望まない。[r]だが、汎人類史への帰順もあり得ない。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+＠マシュ
+！？　でも、いま『異星の神』には従わないと！[r]人類の未来の為にやってきたと……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠キリシュタリア
+人類の未来、ではない。[r]人の未来、だ。
+[k]
+
+＠キリシュタリア
+私は汎人類史を守ろうとも、[r]これまでの人類史を最適だとも考えていない。
+[k]
+
+＠キリシュタリア
+空想樹を使うのは『異星の神』か、私か。[r]どちらでも同じ事なんだよ、マシュ・キリエライト。
+[k]
+
+[charaFace B 0]
+＠キリシュタリア
+私は汎人類史の未来を選べない。[r]それを選べるのは君たちカルデアだけだ。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_BATTLE_77 1.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[se ade393]
+[seVolume ade393 0 0]
+[seVolume ade393 1.0 1.0]
+[shake 0.02 3 3 0]
+[wt 1.0]
+
+
+[wipeout rectangleStripUpToDown 0.6 1.0]
+[wait wipe]
+
+[shakeStop]
+
+[charaTalk depthOff]
+[charaDepth I 2]
+[charaDepth J 3]
+
+[charaFadein I 0.1 0,400]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[wipein rectangleStripDownToUp 0.6 1.0]
+[wait wipe]
+[bgm BGM_TITLE_3 0.1]
+
+[se ad973]
+[seStop ade393 2.0]
+
+[wt 4.0]
+[se ad950]
+[se ad949]
+[charaFadein J 1.5 0,400]
+[seStop ad973 1.0]
+[wt 6.0]
+
+[wipeout rectangleStripDownToUp 0.6 1.0]
+[wait wipe]
+
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaTalk depthOn]
+[charaTalk K]
+[charaFace K 10]
+[charaFadein K 0.1 1]
+[scene 93003]
+[wt 0.1]
+
+[wipein rectangleStripUpToDown 0.6 1.0]
+[wait wipe]
+
+
+
+＠エウロペ
+これは……汎人類史にて世界を海に沈めた、[r][#大海嘯:だいかいしょう]の前触れ？
+[k]
+
+[charaFace K 4]
+＠エウロペ
+いえ、世界を滅ぼすものではあるのだけど[line 3][r]とても、温かくて[line 3]
+[k]
+
+？1：…………っ
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+？2：一体、[&おまえ:あなた]の目的はなんなんだ、キリシュタリア！
+
+[messageOff]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+[wt 1.2]
+
+[charaFace B 11]
+＠キリシュタリア
+もちろん。人理の新生だ。
+[k]
+
+[charaFace B 0]
+？！
+
+＠キリシュタリア
+変革の鐘は鳴った。
+[k]
+
+＠キリシュタリア
+空想樹に蓄えた魔力を使い、[r]巨神アトラスは新しい[#法則:テクスチャ]を作りあげる。
+[k]
+
+＠キリシュタリア
+私は、ここに人智の敗北を宣言する。[r]“私たちでは、この先には進めなかった”と。
+[k]
+
+＠キリシュタリア
+人間は正解を選べない生き物だ。[r]当然、私も含めて。
+[k]
+
+＠キリシュタリア
+[#幾:いく]たび悩み、[#幾:いく]たび争い、[#幾:いく]たび繰り返そうと、[r]我々の歴史が『正しい結果』を示す事はないだろう。
+[k]
+
+[charaFace B 10]
+＠キリシュタリア
+なぜか？　言うまでもない。[r]人間という生命では、この先の展開がないからだ。
+[k]
+
+＠キリシュタリア
+私たちはあまりに弱い。[r]個人の話ではない。全体の話だ。
+[k]
+
+＠キリシュタリア
+他者を愛し、認め、尊ぶ事ができるのは、[r]そういった環境にいる者だけ。
+[k]
+
+＠キリシュタリア
+人間の知性構造は根本的に[r]他者から奪う事で成り立っている。
+[k]
+
+＠キリシュタリア
+理想郷はどこにもない。[r]犠牲者を生まない世界はどこにもない。
+[k]
+
+＠キリシュタリア
+汎人類史という地獄がそれを証明している。
+[k]
+
+[charaFace B 0]
+＠キリシュタリア
+だが。だからといって諦める事はできない。[r]妥協する事はできない。後退する事は、許されない。
+[k]
+
+＠キリシュタリア
+私の目的は単純だ。
+[k]
+
+＠キリシュタリア
+今の人間では無理だというのなら、[r]これを変革する。
+[k]
+
+＠キリシュタリア
+人間が種として弱いのなら、[r]これを強くする。
+[k]
+
+[charaFace B 11]
+＠キリシュタリア
+[line 3]そう。これより、[r][#この地球に生きる全ての人間は生まれ変わる]。
+[k]
+
+＠キリシュタリア
+人間というフォーマットを捨て、[r]優れた[#器:うつわ]、高次の知覚、次代の基準を持つ、
+[k]
+
+＠キリシュタリア
+人間以上の存在[line 3][r]機神たちをも凌駕する“生命”に進ませる。
+[k]
+
+[charaFace B 8]
+＠キリシュタリア
+[#無論]、[#君たちも含めて]。
+[k]
+
+＠キリシュタリア
+これが私の計画だ。[r]新しい、神代の世界だ。
+[k]
+
+＠キリシュタリア
+誰もが神に等しい存在になる事で[r]すべての不平等は解消される。
+[k]
+
+＠キリシュタリア
+ひとりひとりが世界に責任を持ち、[r]また影響を及ぼせる生命となる。
+[k]
+
+＠キリシュタリア
+いつか、『正解』にたどり着ける[r]知性体を生むために。
+[k]
+
+＠キリシュタリア
+これが私の結論。[r]私の破神計画。
+[k]
+
+＠キリシュタリア
+人類はこの日を以て、[r]神という概念を撃ち落とす。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_TITLE_3 1.0 0.6]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 86200]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk L]
+[charaFace L 14]
+[charaFadein L 0.1 1]
+＠ゴルドルフ
+な、何を言ってるのかあの若造はーー！[r]ええい、音声しか拾えんのかこの[#艦:ふね]は！
+[k]
+
+[charaFace L 5]
+＠ゴルドルフ
+キリシュタリアを映せ、キリシュタリアを！[r]あの若造、神をも恐れぬ妄想をほざきおって……！
+[k]
+
+＠ゴルドルフ
+なーにが全人類を神にする、だ！[r]そんな非道で邪悪な計画を許して[line 3]うん？
+[k]
+
+[charaFace L 10]
+＠ゴルドルフ
+神にする？[r][#消耗品:パ ー ツ]にするとか、怪物にする、とかじゃなくて？
+[k]
+
+[charaFace L 1]
+＠ゴルドルフ
+いやいや。まさかまさか。[r]そんなコトできるワケがない。
+[k]
+
+＠ゴルドルフ
+まったく、これだから若造は。
+[k]
+
+＠ゴルドルフ
+出来もしないマニフェストをチラつかせれば[r]国民票を得られるとでも[line 3]
+[k]
+
+[messageOff]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+
+[charaPut T 1]
+[charaEffect T bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk M]
+[charaFace M 25]
+[charaFadein M 0.1 1]
+
+＠[51ffff]ダ・ヴィンチ
+[51ffff]いや。純然たる事実のようだ、新所長。[-]
+[k]
+
+[charaFace M 24]
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]ストーム・ボーダーの全ての計器が[-][r][51ffff]キリシュタリアの宣言が真実である事を示している。[-]
+[k]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]現在、空想樹アトラスを中心として[-][r][51ffff]世界に第五真説要素……真のエーテルが発生している。[-]
+[k]
+
+[charaFace M 13]
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]そしてボーダーにいるスタッフも、キミも、[-][r][51ffff]マシュも、[%1][51ffff]にも、[-]
+[k]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]魂を示す霊的フォーマット……魂の[#階梯:かいてい]が[-][r][51ffff]向上し出している。[-]
+[k]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]このままいけばキミたちは本当に[-][r][51ffff]人でありながら英霊と同位の性能を持つ生命[line 3][-]
+[k]
+
+[charaFace M 24]
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]これまでの人類の計りで言う、[-][r][51ffff]“神”と同位の存在になる。[-]
+[k]
+
+[messageOff]
+[charaFadeout M 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+[charaEffectStop T bit_talk_10_LowLevel]
+
+[charaTalk L]
+[charaFace L 7]
+[charaFadein L 0.1 1]
+[wt 1.2]
+
+[charaFace L 1]
+＠ゴルドルフ
+本当～～ぅ？
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout L 0.1]
+
+[scene 93003]
+[wt 1.0]
+
+[bgm BGM_TITLE_3 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[se adm20]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠マシュ
+マスターの魔術回路の質、量、ともに[r]向上していきます……！
+[k]
+
+[charaFace C 6]
+
+＠マシュ
+いえ、先輩だけでなく、わたしも、[r]マカリオスさんも、アデーレさんも！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth F 4]
+[charaDepth G 5]
+
+[charaFace F 5]
+[charaFace G 5]
+[charaFadein F 0.1 150,0]
+[charaFadein G 0.1 -150,0]
+＠オリュンポスの双子
+……！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ホームズ
+……残念だが。[r]それは空想だ、ミスター・ヴォーダイム。
+[k]
+
+＠ホームズ
+誰もが優れた個体に、神と言わざるをえない存在に[r]なれば、新しい世界は訪れると？
+[k]
+
+＠ホームズ
+満ち足りた状態。苦痛のない寿命。[r]競い合う必要のない性能。
+[k]
+
+＠ホームズ
+そういったものを与えられても、[r]知性があるかぎり争いは発生する。
+[k]
+
+＠ホームズ
+争いのレベルが違ってくるだけだ。[r]キミのやろうとしている事は[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠キリシュタリア
+分かっているとも。[r]個人であるかぎり、競争だけが成長のサイクルだと。
+[k]
+
+＠キリシュタリア
+[#だが][line 3][#それは必ず収束する]。
+[k]
+
+＠キリシュタリア
+[#より高い視点があり]、[#より広い智恵があり]、[r][#より深い時間があれば]、
+[k]
+
+＠キリシュタリア
+[#人類は]、[#次のサイクルに到達する]。
+[k]
+
+[charaFace B 10]
+＠キリシュタリア
+……そうだ。今の人類では断てない連鎖を、[r]貴方たちなら克服できる。
+[k]
+
+[charaFace B 11]
+＠キリシュタリア
+今までのように、人を救う神を作るのではない。[r]誰もを救う神に、誰もがなるのだから。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠ホームズ
+[line 6]。
+[k]
+
+？1：…………。
+？2：（でも、それはどこか……）
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+＠キリシュタリア
+……だが。[r]公正を期して、失われるものも明かしておこう。
+[k]
+
+[charaFace B 0]
+＠キリシュタリア
+この変革は今の地球上の人類にのみ限定される。[r]私に、汎人類史の人々は取り戻せない。
+[k]
+
+＠キリシュタリア
+アトラスのテクスチャが地球を覆った時、[r]汎人類史は真の意味で失われるだろう。
+[k]
+
+＠キリシュタリア
+巨神アトラスに弾きだされた『異星の神』同様、[r]汎人類史に戻る場所は無くなるのだから。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+＠マシュ
+[line 3]そん、な。[r]それでは……それ、じゃあ……
+[k]
+
+[charaFace C 4]
+＠マシュ
+キリシュタリアさんの計画は、[r]結果的に、『異星の神』と変わりがありません……
+[k]
+
+＠マシュ
+地球を白紙化した事と……[r]何も[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+＠キリシュタリア
+……君はどう思う、[r][%1]。
+[k]
+
+＠キリシュタリア
+私の計画には賛同できないか？
+[k]
+
+？1：こんな状態でなければ、凄い事だと思う。でも[line 3]
+
+？！
+
+[messageOff]
+[bgmStop BGM_TITLE_3 1.0]
+[wt 0.6]
+
+？1：その結論は、受け入れられない
+
+[charaFace B 1]
+＠キリシュタリア
+それは逃げだ、と言うんだね？[r]過去と現在を見捨てていると。
+[k]
+
+＠キリシュタリア
+……確かに。そこを突かれると私も弱い。[r]君たちなら取り戻せると信じてはいるが、
+[k]
+
+＠キリシュタリア
+ようは、後の仕事を丸投げする、[r]という事だからね。
+[k]
+
+？2：その結論は、『異星の神』と変わらない
+
+[charaFace B 6]
+＠キリシュタリア
+それは違う、[%1]。[r]お節介になるが、年上のマスターとして忠告しよう。
+[k]
+
+＠キリシュタリア
+ここまで異聞帯を見てきた君なら分かるだろう。[r]汎人類史と異聞帯は同じものだと。
+[k]
+
+＠キリシュタリア
+彼らはどうあれ同じ結論に向かっていた筈だ。[r]人類の統治、地球の活用……即ち、世界の存続だ。
+[k]
+
+[charaFace B 10]
+＠キリシュタリア
+だが『異星の神』は違う。[r]『異星の神』にとって、人類も地球もどうでもいい。
+[k]
+
+＠キリシュタリア
+『なら、なぜ地球白紙化を？』と思うだろう？[r]その疑問を忘れないように。
+[k]
+
+[charaFace B 6]
+＠キリシュタリア
+ゲーティアを思い出せ。[r]彼は人類を滅ぼす為に人理焼却をしたのではない。
+[k]
+
+＠キリシュタリア
+[#結果的にそうなっただけ]。[r]『異星の神』も、それと同じ類のものなんだ。
+[k]
+
+？！
+
+
+[messageOff]
+[charaFace B 11]
+
+[charaTalk off]
+[charaDepth B 4]
+[charaDepth N 5]
+
+[se ad231]
+[charaScale N 1.2]
+[charaFace N 11]
+[charaFadein N 0 0,30]
+
+[charaMove N 0,0 1.0]
+[charaMoveScale N 1.0 1.0]
+[charaFadeout N 1.0]
+[wt 1.8]
+
+
+[bgm BGM_EVENT_91 0.1]
+
+[charaTalk on]
+[charaFace B 6]
+＠キリシュタリア
+[line 3]っ。[r]さすがに、手を回されたか。
+[k]
+
+＠キリシュタリア
+空想樹に手が出せない以上、[r]こちらの命を絶つのは当然だがね。
+[k]
+
+[charaFace B 0]
+＠キリシュタリア
+申し訳ないが、君たちに選択権はない。[r]『異星の神』が私との契約を断とうとしている。
+[k]
+
+＠キリシュタリア
+その前に、私は空想樹アトラスで[r]この地球を変革する。
+[k]
+
+＠キリシュタリア
+神になり、誰もが幸せになり、[r]輝かしい未来が待っているこの変革と、
+[k]
+
+＠キリシュタリア
+多くの問題を排出し続け、行き詰まり、[r]誰もが未来に焦がれなくなった汎人類史。
+[k]
+
+＠キリシュタリア
+どちらを取るかは君たちの意志だ、[r][%1]、マシュ。
+[k]
+
+[charaFace B 5]
+＠キリシュタリア
+だが、阻むというのなら容赦はしない。
+[k]
+
+＠キリシュタリア
+……これは私の冠位指定。[r]私が、私の人生に課した成すべき[#理想:ゆめ]だ。
+[k]
+
+＠キリシュタリア
+それを否定するというのなら、[r]どうか全霊で応えてほしい。
+[k]
+
+＠キリシュタリア
+君たちには私以上の未来を選び取れるのか。
+[k]
+
+＠キリシュタリア
+君たちには、[r]この空想樹を預けるに足る力があるのか。
+[k]
+
+＠キリシュタリア
+その結末を以て、[r]この惑星の未来を決定しよう。
+[k]
+
+[charaFace B 11]
+＠キリシュタリア
+私はキリシュタリア・ヴォーダイム。
+[k]
+
+＠キリシュタリア
+クリプターとして[r]汎人類史を否定するもの。
+[k]
+
+＠キリシュタリア
+君たちカルデアの敵であり[line 3]
+[k]
+
+
+＠キリシュタリア
+人理を守る為に戦った、[r]Ａチームのリーダーだ……！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_91 0.4]
+[wait fade]
+[soundStopAll]
+[end]

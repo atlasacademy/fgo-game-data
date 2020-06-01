@@ -1,0 +1,623 @@
+
+
+
+
+＄91-10-35-01-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 3002001 1 ディルムッド]
+[charaSet B 99502600 1 マシュ]
+[charaSet C 1098157100 1 清姫]
+[charaSet D 98111500 1 通信用ノイズ]
+[charaSet E 98025100 1 謎の剣鬼]
+[charaSet F 98015000 1 影からの声]
+[charaSet H 3002002 1 エフェクト用ダミー]
+
+[scene 20602]
+[fadein black 0.5]
+[wait fade]
+
+
+[effect bit_talk_kengekiall01]
+[wt 0.1]
+[se ad33]
+[wt 1.0]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.05 3 3 0.4]
+[wt 0.5]
+
+[charaPut D 0,-2000]
+[charaEffect D bit_talk_10_LowLevel]
+
+[charaTalk A]
+[charaFace A 5]
+[se ad73]
+[charaFadein A 0.5 -80,0]
+[charaMove A 1 0.2]
+
+＠ディルムッド
+クッ！　この霊基では……仕留めきれんか……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠マシュ
+先輩！　ディルムッドさん！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠清姫
+ますたあ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠マシュ
+敵性反応、消滅する気配がありません……！[r]戦闘で対処することは困難かと！
+[k]
+
+＠マシュ
+ここは、
+[k]
+
+？1：待って
+？2：あれ、何か言おうとしてる[line 3]
+
+？！
+
+[charaFace B 6]
+＠マシュ
+！？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut D 0,-2000]
+[wt 0.3]
+
+[bgm BGM_EVENT_3 0.5 0.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠謎の剣鬼
+……………………おまえではない。
+[k]
+
+＠謎の剣鬼
+おまえではない。[r]おまえではない。
+[k]
+
+＠謎の剣鬼
+槍だけでは足りぬ。[r]槍だけでは足りぬ。
+[k]
+
+＠謎の剣鬼
+見せよ、真なる力を。[r]見せよ、[#海と異界の神:マ　ナ　ナ　ン]に育てられし騎士の力を。
+[k]
+
+[bgm BGM_EVENT_3 0.5]
+
+
+[se ad678]
+[seVolume ad678 0 0.7]
+[wt 0.1]
+[effect bit_talk_41]
+
+[charaMove E 0,15 0.2]
+[charaMoveScale E 1.2 0.2]
+
+＠謎の剣鬼
+[font large]マナナンの剣を見せよ！
+[k]
+
+[messageOff]
+[effectStop bit_talk_41]
+[wt 0.3]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaMoveScale E 1.0 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠ディルムッド
+マスター、お下がりください！
+[k]
+
+[charaFace A 2]
+[se ad442]
+＠ディルムッド
+[font large][messageShake 0.05 4 7 1.0]おおおおおおおおお……！
+[k]
+
+[messageOff]
+[se ad73]
+[charaMove A -50,0 0.5]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[se ad170]
+[charaEffect E bit_talk_ichimon01wh]
+[wt 0.2]
+[effect bit_talk_14]
+[wt 0.1]
+
+[se ad32]
+[effect bit_talk_Slash_red_01]
+[wt 0.3]
+[effect bit_talk_14]
+[wt 0.7]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.3]
+
+[se ad39]
+[charaEffect A bit_talk_36]
+
+＠ディルムッド
+[line 3]『[#必滅の黄薔薇:ゲイ・ボウ]』！
+[k]
+
+[messageOff]
+[charaEffectStop A bit_talk_36]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.3]
+
+[se ad471]
+[effect bit_bolg_03y]
+[wt 0.2]
+
+[charaEffect E bit_talk_12_red_R]
+[charaEffect E bit_talk_14]
+[wt 0.4]
+[charaShake E 0.05 3 3 0.3]
+[wt 1.0]
+
+[seStop ad471 0.5]
+＠謎の剣鬼
+……………………おまえでは、ないのだ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠ディルムッド
+（我が魔槍が通じない？）
+[k]
+
+[charaFace A 0]
+＠ディルムッド
+（いや。違う。…………これは！！）
+[k]
+
+＠D：声
+[line 3]そう、彼は[#剣での戦い]を求めているのだ。
+[k]
+
+＠D：声
+[line 3]故に、剣以外の刃で彼が死すことはない。
+[k]
+
+[charaFace A 5]
+＠ディルムッド
+！！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[se ad42]
+[charaTalk F]
+[charaSpecialEffect F wipeTimeRe 1 1.5]
+[wait charaSpecialEffect F]
+[wt 0.5]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠マシュ
+強力な魔力反応！[r]敵性反応は検出されませんが、一体[line 3]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut D 0,-2000]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ディルムッド
+新手か？　いいや、むしろこの感覚は……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠影からの声
+[line 3]すまない、迷惑を掛けたな。[r]彼が求めているのは貴様ではあるが俺でもあるのだ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ディルムッド
+貴様は……。
+[k]
+
+[charaFace A 1]
+＠ディルムッド
+そういうことか……。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.8]
+[se ad51]
+[wt 0.8]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠マシュ
+ディルムッドさん！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠清姫
+まあ、槍の穂先を下げて……[r]敵の前でそんなことをして危なくはないのですか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut D 0,-2000]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ディルムッド
+ええ、この影は違うのです。[r]これは[line 3]
+[k]
+
+＠ディルムッド
+そう、たとえて言うなれば[#援軍]でしょうか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_1 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠影からの声
+その通り。
+[k]
+
+＠影からの声
+しかし今の俺は[#仮初:かりそ]めの肉体さえ持たぬ。[r]故に、貴様の霊基を借りたい。
+[k]
+
+＠影からの声
+そしてマスター。[r]どうか、あなたの承認を得たい。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ディルムッド
+……マスター。私からもお頼み申し上げる！[r]あれなる辻斬りを倒すには、どうしても必要なのです。
+[k]
+
+？1：ディルムッドを信じるよ
+？2：（頷く）
+
+？！
+
+[messageOff]
+[charaFace A 1]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠影からの声
+承知！
+[k]
+
+[messageOff]
+[se ad39]
+[charaPut H 1]
+[charaEffect H bit_talk_summon]
+[wt 0.2]
+[effect bit_talk_blight_02]
+[wt 2.5]
+[effectStop bit_talk_blight_02]
+[wt 0.5]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[wt 0.5]
+
+[se ad39]
+[wt 0.2]
+[effect bit_talk_blight_02]
+[wt 2.5]
+[effectStop bit_talk_blight_02]
+[wt 0.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 0,-2000]
+[wt 0.5]
+
+[charaPut D 1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+霊基の同調……！？[wt 0.5][charaFace B 7][r]ディルムッドさんの霊基が変化していきます……！！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut D 0,-2000]
+[wt 0.3]
+
+[charaPut H 1]
+[charaTalk off]
+[charaFace F 0]
+[charaFadein F 0.1 0]
+
+[charaFace A 0]
+[charaFadein A 0.1 2]
+
+[se ad39]
+[wt 2.5]
+
+[se bas7]
+[effectStop bit_talk_summon]
+[effectStop bit_talk_blight_02]
+[fadeout white 1.5]
+[bgmStop BGM_EVENT_1 1.5]
+[wait fade]
+[charaFadeout H 0.1]
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[wt 1.5]
+
+
+[charaSet A 1035001 1 ディルムッド]
+[charaSet H 1035001 1 ディルムッド_シルエット]
+[charaFilter H silhouette 00000080]
+
+[charaDepth A 0]
+[charaDepth H 1]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.1]
+[charaFadein A 0.1 1]
+
+[charaTalk on]
+[scene 20602]
+
+[fadein white 1.5]
+
+[charaTalk off]
+
+[wait fade]
+[wt 1.0]
+
+
+[charaFadeout H 0.7]
+[wt 0.7]
+[bgm BGM_EVENT_4 0.1]
+＠ディルムッド
+[line 3]サーヴァント、セイバー。[r]フィオナ騎士団ディルムッド・オディナ。
+[k]
+
+＠ディルムッド
+二振りの魔剣を持ちてここに参上した！
+[k]
+
+[charaFace A 2]
+＠ディルムッド
+シミュレーターに顕れたる辻斬りよ！
+[k]
+
+＠ディルムッド
+いや、[#無垢:むく]なる巨人ギラ・ダッカ！[r]その真なる正体こそはダナンの妖精王アヴァータ！
+[k]
+
+[charaFace A 5]
+＠ディルムッド
+何故、貴方はカルデアに訪れたのか……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+ダナンの妖精王アヴァータ！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠清姫
+ど、どなたですかそれは！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠マシュ
+かつてのエリンに存在したという[r]妖精郷、その一つを支配する王の名前です！
+[k]
+
+＠マシュ
+ケルト神話、フィニアンサイクルにおける伝説では[r]フィオナ騎士団と同盟を組んで戦ったとされ……
+[k]
+
+＠マシュ
+同盟を組むまでの経緯を[#綴:つづ]る逸話によれば、[r]ディルムッドさんは妖精王の騎士と戦ったとも……
+[k]
+
+[charaFace B 7]
+＠マシュ
+あるいは！[r][#妖精王本人]と戦ったとも言われています！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut D 0,-2000]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠謎の剣鬼
+おお、おお……おおおおおおおおおおおおお……
+[k]
+
+＠謎の剣鬼
+その姿こそは魔剣[#携:たずさ]えしフィオナの騎士。[r]遂に、我が前に現れてくれたのか。
+[k]
+
+＠謎の剣鬼
+あなたの剣を夢に見たのだ。[r]あなたの剣が、再び地上で[#煌:きら]めく姿を見たのだ。
+[k]
+
+＠謎の剣鬼
+ゆえに我が想いは時空を超えて[r]是なる電子の領域に[#辿:たど]り着いたが……
+[k]
+
+＠謎の剣鬼
+…………嗚呼、再び巡り逢えたのだなディルムッド！
+[k]
+
+＠謎の剣鬼
+魔剣モラ・ルタと魔槍ゲイ・ジャルグを携えた[r]必勝のフィンの騎士ではなく！
+[k]
+
+＠謎の剣鬼
+二振りの魔槍を持つランサーなる姿でもなく！[r]二振りの魔剣を持つセイバーなる姿として、遂に！
+[k]
+
+＠謎の剣鬼
+あの日、あの時……[r]貴公のみが[#辿:たど]り着くことを許された断崖の果て！
+[k]
+
+＠謎の剣鬼
+泉で[#見:まみ]えた時には叶わなんだ姿にて！　双剣の……！
+[k]
+
+＠謎の剣鬼
+双剣の騎士ディルムッド！[r]貴公を！　嗚呼、この私は打ち倒したいのだ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ディルムッド
+…………我が[#儘:まま]な王だ。貴方は。
+[k]
+
+[charaFace A 5]
+＠ディルムッド
+しかしその想い、しかと受け止めた！[r]ならば応えよう！
+[k]
+
+＠ディルムッド
+フィオナ騎士団が一番槍ディルムッド・オディナ！[r]今は双剣の騎士として[line 3]
+[k]
+
+[charaFace A 2]
+＠ディルムッド
+[line 3]今度こそ！　貴方の剣に打ち克ってみせよう！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_4 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

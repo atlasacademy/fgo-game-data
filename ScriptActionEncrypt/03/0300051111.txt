@@ -1,0 +1,152 @@
+
+＄03-00-05-11-1-1
+
+[soundStopAll]
+
+[charaSet A 1038000 1 イアソン]
+[charaSet B 4039002 1 マンドリカルド]
+[charaSet C 98115300 1 ホームズ]
+[charaSet D 1098168210 1 バーソロミュー]
+[charaSet E 8001410 1 マシュ]
+[charaSet F 98006000 1 魔獣]
+
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[se bac23]
+[fowardEffect bit_talk_Slash_white_01]
+[wt 0.3]
+
+[se bac14]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 0.1]
+
+[scene 84700]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0 1]
+[charaShake F 0.03 4 4 0.6]
+[wt 1.2]
+
+[charaMove F 0,-50 0.4]
+[charaFadeout F 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.2]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠イアソン
+ぜぇ、ぜぇ、ぜぇ……。[r]ああ、かったるい！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠マンドリカルド
+その様子だとアンタ、[r]例のナノマシン、つけてないんすね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠イアソン
+あまり神には関わりたくなくてな。[r]……まあ、そうも言ってられそうにないが。
+[k]
+
+[charaFace A 2]
+＠イアソン
+そら、行くぞ役立たずども！[r]走れ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+事情は既にこちらも把握している。[r]急いで欲しい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠バーソロミュー
+私の船も、もう出航準備を整えている。
+[k]
+
+＠バーソロミュー
+それから『[#黄金の鹿号:ゴールデンハインド]』は、[r]既に私が見つけている。
+[k]
+
+＠バーソロミュー
+君たちから一番近い船がそれだ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ホームズ
+座標は既に送信済みだ。
+[k]
+
+＠ホームズ
+ナビに従って、その船で島から脱出するのが[r]恐らく一番早い。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠マシュ
+座標を受信しました。[r]あともう少しです！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

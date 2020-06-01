@@ -1,0 +1,180 @@
+
+
+
+
+＄94-04-77-94-1-5
+
+[soundStopAll]
+
+[skip false]
+
+[maskout black 0]
+[wait mask]
+
+[charaSet A 5001001 1 メディア]
+[charaSet B 3043000 1 エリセ]
+[charaSet C 5033001 1 キルケー]
+[charaSet G 1026001 1 デオン]
+[imageSet H cut171_token_206 1]
+[charaSet S 5009000 1 エフェクト用ダミー１]
+
+[scene 20730]
+
+[pictureFrameTop cut170_gameframe_bright]
+
+[skip true]
+
+[fadein black 0]
+[wait fade]
+[maskin black 1.0]
+[wait mask]
+
+[bgm BGM_EVENT_5 0.1]
+
+
+[charaTalk depthOff]
+[charaDepth S 3]
+[charaDepth H 4]
+[charaDepth G 1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 0,-50]
+
+[charaEffect G bit_talk_token_change01]
+[wt 1.0]
+
+＠デオン
+白百合は、[#摘:つ]まれていくものか……。
+[k]
+
+[messageOff]
+[charaEffectStop G bit_talk_token_change01]
+[charaPut S 0,-10]
+[charaEffect S bit_talk_token_change02]
+[se ad39]
+[wt 3.2]
+
+[se ad29]
+[seStop ad29 1.5]
+[wt 0.5]
+[charaFadeout G 0.4]
+
+[charaTalk H]
+[charaFadein H 0.4 0,-210]
+[wt 0.5]
+
+[charaMove S 0,10 1.2]
+[wt 1.2]
+
+[charaFadeout H 0.4]
+[wt 0.5]
+
+[se adm19]
+[seVolume adm19 0 0.3]
+[seVolume adm19 1.0 1.0]
+[wt 0.5]
+
+[seStop adm19 1.7]
+[charaMove S 0,700 2.2]
+[wt 2.2]
+
+[charaEffectStop S bit_talk_token_change02]
+[wt 0.1]
+[charaEffectDestroy T bit_talk_token_change02]
+
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+[charaEffect A bit_talk_06]
+
+＠メディア
+これでご満足かしら、[r]遊戯界の生意気盛りのマスターさん？
+[k]
+
+[messageOff]
+[se ade406]
+[wt 0.2]
+[flashin once 0.1 0.6 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaFadeout A 0.1]
+[wt 0.2]
+[charaEffectStop A bit_talk_06]
+[wt 0.1]
+[seStop ade406 0.6]
+[wt 1.2]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠エリセ
+ええ、神話に輝く畏敬すべき魔女よ。感謝いたします。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+[charaEffect C bit_talk_06]
+
+＠キルケー
+かりそめの主人となったよしみだ。[r]大魔女から一つ、助言をしてやろう。
+[k]
+
+[charaFace C 5]
+
+＠キルケー
+きみが還ろうとしている場所に光は無い。[r]息苦しさに負けて、浮かび上がる先を間違えるなよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut C 1200,1200]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 0,-50]
+
+＠エリセ
+……！？[r]それは、どういう……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠キルケー
+私は答えを示さないんだ。[r]きみ自身で掴み取るものだからな。
+[k]
+
+[messageOff]
+[se ade406]
+[wt 0.2]
+[flashin once 0.1 0.6 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaFadeout C 0.1]
+[wt 0.2]
+[charaEffectStop C bit_talk_06]
+[wt 0.1]
+[seStop ade406 0.6]
+[wt 1.2]
+
+[maskout black 2.0]
+[bgmStop BGM_EVENT_5 2.0]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+

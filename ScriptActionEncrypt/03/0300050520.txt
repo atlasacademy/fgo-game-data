@@ -1,0 +1,401 @@
+
+＄03-00-05-05-2-0
+
+[soundStopAll]
+
+[charaSet A 1098123200 1 ゴルドルフ]
+[charaSet B 1098181900 1 ネモ・マリーン]
+[charaSet C 8001400 1 マシュ]
+[charaSet D 8001410 1 マシュ]
+[charaSet E 1098158300 1 ネモ]
+[charaSet F 98115300 1 ホームズ]
+[charaSet G 1098123000 1 ムニエル]
+[sceneSet H 86800 1]
+[charaScale H 1.2]
+
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[cameraMove 0 0,0 1.01]
+
+[bgm BGM_EVENT_24 0.1]
+
+
+[scene 51610]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠ゴルドルフ
+な……なんなのだ、アレは！？[r]デタラメな強さだ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠ネモ・マリーン
+計測不能、計測不能～！　分析拒絶～！[r]ステータスは全てが[#未知:unknown]だよ～！
+[k]
+
+[charaFace B 4]
+＠ネモ・マリーン
+ボクらの計器で測れないってコトは、[r]アレ神獣なんじゃないかなー！？
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[scene 85700]
+[wt 1.0]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+[se ad711]
+[wt 1.0]
+
+[cueSe Battle bac387]
+[effect bit_talk_claw]
+[wt 0.4]
+
+[se ad170]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF50]
+[wt 0.1]
+
+[effectDestroy bit_talk_claw]
+
+[charaScale C 1.2]
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0 0,20]
+
+[charaMoveScale C 1.0 0.2]
+[charaMove C 0,0 0.2]
+[charaShake C 0.02 3 3 0.8]
+[wt 1.2]
+
+＠マシュ
+く、う[line 3]！
+[k]
+
+？1：強すぎる……！
+？！
+
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[scene 51610]
+[wt 1.0]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠ネモ
+[line 3]宝具展開。[r][#機関部:エンジン]！　やるぞ！
+[k]
+
+
+＠ネモ・エンジン
+[charaTalk J]
+ああん！？　アタシらの切り札をこんなところで[r]いきなり撃つってかバカヤロウ！？
+[k]
+
+＠ネモ・エンジン
+[charaTalk J]
+まあいつでも行けるけどな！　やっちまえ！[r]おまえこれで死んだらアタシとトップ交代だかんな！
+[k]
+
+＠ネモ
+[line 3][#大衝角:グレートラム]、[r]インパクト形態に換装、よろし！
+[k]
+
+[charaFace E 2]
+＠ネモ
+ホームズ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠ホームズ
+任せたまえ！[r]このまま突っ込むとも！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠ネモ
+ぶち抜け[line 3]！[r]『[#我は征く、大衝角の鸚鵡貝:グ 　レ 　ー 　ト 　ラ 　ム 　・ 　ノ 　ー 　チ 　ラ 　ス]』！
+[k]
+
+[messageOff]
+[se ad39]
+[charaEffect E bit_talk_36]
+[fadeout white 2.0]
+[wait fade]
+
+[charaEffectStop E bit_talk_36]
+[charaPut E 1200,1200]
+[seStop ad39 0.4]
+[charaFadeout E 0.1]
+[wt 0.5]
+
+[se ad226]
+[se ad609]
+[seVolume ad609 0 0.6]
+[shake 0.02 4 4 2.4]
+[wt 0.8]
+
+[fadein white 1.5]
+[wait fade]
+[wt 2.0]
+
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠ネモ
+[#衝角:ラム]で激突、手応えアリ！[r]ああもう、でもまだ生きてる！　ナンテコッタ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠ホームズ
+だが、動きは鈍らせたようだ。[r]今の内に逃げるしかない！
+[k]
+
+＠ホームズ
+二人とも急いで戻ってくれ！
+[k]
+
+
+[messageOff]
+[se ad594]
+[fadeout black 2.0]
+[bgm BGM_EVENT_24 2.0 0.4]
+[wait fade]
+
+[charaFadeout F 0.1]
+[charaPut J 1200,1200]
+[wt 1.0]
+
+[bgm BGM_EVENT_24 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[se ad55]
+[seVolume ad55 0 0]
+[se ad668]
+[seVolume ad668 0 0]
+[seVolume ad55 0.8 1.0]
+[seVolume ad668 0.8 1.0]
+[wt 1.6]
+
+[seStop ad55 0.2]
+[seStop ad668 0.2]
+
+
+
+
+
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+＠マシュ
+申し訳ありません、[r]倒しきれませんでした……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠ホームズ
+いや、無理もない。
+[k]
+
+＠ホームズ
+破壊力と耐久力だけに限って言うなら、[r]トップサーヴァントに匹敵する。
+[k]
+
+＠ホームズ
+今は少しでも遠くへ[line 3][wt 0.5][charaFace F 2][bgmStop BGM_EVENT_24 1.0][r]待った！　カメラ、ズーム！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout F 0.1]
+[charaPut J 1200,1200]
+[wt 0.3]
+
+[effect bit_talk_security]
+[charaTalk H]
+[charaFadein H 0.1 0,-150]
+[se ad15]
+[wt 0.8]
+
+[se ad1]
+
+[fadein black 1.2]
+[wait fade]
+
+[wt 1.0]
+[charaMoveScale H 1.4 3.5]
+[charaMove H 0,-400 3.5]
+[bgm BGM_EVENT_71 0.1]
+
+[wt 3.5]
+
+[wt 2.0]
+
+[fadeout black 0.8]
+[wait fade]
+
+[effectStop bit_talk_security]
+[charaFadeout H 0.1]
+
+[scene 51610]
+[wt 1.0]
+
+[fadein black 0.8]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠ゴルドルフ
+コ、コレは……一体……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠ムニエル
+スゲえ。[r]何だこの魔力量……。
+[k]
+
+＠ムニエル
+いや、違う。増減が滅茶苦茶なんだ。
+[k]
+
+＠ムニエル
+人間が一瞬でミイラになってまた元に戻る、[r]そんなレベルの増減を繰り返している……！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠ホームズ
+下腹部から、何かが[#蠢:うごめ]いている。[r]あれは……。
+[k]
+
+＠ホームズ
+ラミアとキメラ、か？[r]それも成体だ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠ゴルドルフ
+つまり……エネミーを産み出しているのか？[r]何だそれは、何なんだ、それは！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠ホームズ
+それも凄まじい速度です。[r]これは、最早怪物の母と言っていい。
+[k]
+
+[messageOff]
+[charaFace F 6]
+[bgmStop BGM_EVENT_71 0.8]
+[wt 1.0]
+[bgm BGM_EVENT_80 0.1]
+[charaFace F 2]
+＠ホームズ
+……産み落とされた連中がやって来るぞ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠マシュ
+マスター！
+[k]
+
+？1：……やる[&ぞ:よ]、マシュ！
+？！
+
+[charaFace C 2]
+＠マシュ
+はい……！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

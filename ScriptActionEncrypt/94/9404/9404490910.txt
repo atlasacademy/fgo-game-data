@@ -1,0 +1,484 @@
+
+
+＄94-04-49-09-1-0
+
+[soundStopAll]
+
+[skip false]
+
+[branchQuestNotClear lblNotClear1 3000320 4]
+[label lblClear1]
+[flag IsGirl true]
+[branch lblIsClearConf1]
+[label lblNotClear1]
+[flag IsGirl false]
+[label lblIsClearConf1]
+
+[skip true]
+
+[charaSet A 7027300 1 アマゾネスＣＥＯ_普通]
+[charaSet B 1098119600 1 アマゾネスＣＥＯ_ろくろ]
+[charaSet C 99502600 1 マシュ]
+[charaSet E 6008000 1 コスモティック・ビューティ夫人]
+[charaSet F 98002000 1 フォウ]
+[charaSet G 98013100 1 レッドドラゴン]
+[charaSet H 6031001 1 刑部姫]
+[charaSet J 5009000 1 エフェクト用]
+
+[branch lblNotGirl1 IsGirl false]
+[label lblGirl1]
+[charaSet D 1098124510 1 ダ・ヴィンチ]
+[branch lblIsGirlConf1]
+[label lblNotGirl1]
+[charaSet D 98111500 1 ダ・ヴィンチ]
+[label lblIsGirlConf1]
+
+[scene 90000]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_90 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+………………。
+[k]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth B 1]
+[charaDepth A 2]
+[charaFadeout A 0.2]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：アマゾネスＣＥＯ
+今回のアジェンダはこの塔の住人についてだ。
+[k]
+
+＠B：アマゾネスＣＥＯ
+異論があれば活発なディスカッションを求めるが、[r]なんとなくわかってきた。
+[k]
+
+
+＠B：アマゾネスＣＥＯ
+どうやらこのタワーには、今までよりも直接的な……[r]そう、『刺客』のようなものが待ち受けているようだな。
+[k]
+
+＠B：アマゾネスＣＥＯ
+これまでのような、我々が弱ったと知って[r]自発的に動いてきたものではない。
+[k]
+
+＠B：アマゾネスＣＥＯ
+黒幕に依頼、あるいは言いくるめられて意図的に[r]配置された猟犬のような存在だ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaPut J 1]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠マシュ
+そうですね。十階のサロメさんのこともありましたし、
+[k]
+
+＠マシュ
+ひょっとしたらここから先には何者かに扇動された[r]顔見知りの方がいらっしゃるのかもしれません。
+[k]
+
+[charaFace C 8]
+
+＠マシュ
+考えたくないことではありますが……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[branch lblNotGirl2 IsGirl false]
+[label lblGirl2]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+[branch lblIsGirlConf2]
+[label lblNotGirl2]
+[charaFace D 4]
+[charaFadein D 0.1 0,-90]
+[label lblIsGirlConf2]
+
+＠ダ・ヴィンチ
+そうだねぇ。
+[k]
+
+＠ダ・ヴィンチ
+もしいるとすれば、それは配達業務が始まる前後に[r]連絡が取れなくなったサーヴァントたちの誰かだろう。
+[k]
+
+[branch lblNotGirl3 IsGirl false]
+[label lblGirl3]
+[charaFace D 33]
+[branch lblIsGirlConf3]
+[label lblNotGirl3]
+[charaFace D 4]
+[label lblIsGirlConf3]
+
+＠ダ・ヴィンチ
+正直、敵に回したくない相手も大勢いるよ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠コスモティック・ビューティ夫人
+どんな方たちがいるんですの？
+[k]
+
+＠コスモティック・ビューティ夫人
+銀河コレクションのモデルや[r]惑星インフルエンサーかしら？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+くく。そう言えば道すがら[%1]に[r]聞いたな。
+[k]
+
+[charaFace A 8]
+
+＠A：アマゾネスＣＥＯ
+巨人殺しで竜殺しの賢王、三千年の歴史を持つ拳法の達人、[r]二刀流の大剣豪……
+[k]
+
+＠A：アマゾネスＣＥＯ
+他にも様々な強者がそちらの会社には在籍していると！
+[k]
+
+[charaFace A 17]
+
+＠A：アマゾネスＣＥＯ
+血が[#滾:たぎ]るぞ。まさしく最高のお客様ではないか。[r]ぜひ品物をお届けしたいものだ……。
+[k]
+
+？1：ＣＥＯＣＥＯ、悪い顔になってます！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠コスモティック・ビューティ夫人
+舌なめずりしてらっしゃるところに悪いですが、[r]あの、普通は戦いませんわよね？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+おっと、いかんな。[r]その通りだ、普通は戦わない。
+[k]
+
+[charaFace A 9]
+
+＠A：アマゾネスＣＥＯ
+このモーニングアマゾネスＣＥＯスターが[r]振るわれるのはクレーマーに対してのみ。
+[k]
+
+＠A：アマゾネスＣＥＯ
+その大原則を忘れてはいけない、うむ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠マシュ
+はい。顔見知りの方と出会った場合でも、
+[k]
+
+＠マシュ
+なんとか話し合いで情報を得られたり[r]先に進ませていただけたりすればよいですね。
+[k]
+
+[bgmStop BGM_EVENT_90 1.2]
+
+[charaFace C 2]
+
+＠マシュ
+あっ、そろそろこの階の住人が姿を現しそうです。[r]気を付けてください！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+よし来い！　アマゾネス・ドットコムです！
+[k]
+
+＠A：アマゾネスＣＥＯ
+もしお客様が高名な戦士であればクレームは[r]遠慮なくどうぞ、ＣＥＯは逃げも隠れもしない！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.4]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[wt 1.0]
+
+[se ade215]
+[wt 2.0]
+
+[bgm BGM_EVENT_5 0.1]
+
+？1：………………
+？！
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠フォウ
+フォ…………。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠コスモティック・ビューティ夫人
+…………！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 1.2]
+
+[charaFace A 12]
+
+＠A：アマゾネスＣＥＯ
+どうも、お客様。ご注文の品、『カラミティ牧場の[r]厳選牛肉セット』をお届けにあがりました。
+[k]
+
+＠A：アマゾネスＣＥＯ
+受け取りにサインか印鑑をいただけますでしょうか？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad57]
+[seVolume ad57 0 0.2]
+[seVolume ad57 1.3 0.4]
+[wt 1.4]
+[seVolume ad57 1.5 0.6]
+[wt 1.3]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.3]
+[seStop ad57]
+[wt 0.2]
+
+[se ad17]
+[wt 2.2]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+うむ。言語が通じていないのかもしれない。[r]これは困ったな。
+[k]
+
+？1：落ち着いてる場合じゃないのではー！？
+？！
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth B 1]
+[charaDepth A 2]
+[charaFadeout A 0.2]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：アマゾネスＣＥＯ
+確かに予想とは少し違ったが、[r]我々はいかなるお客様も平等に扱うのがポリシーだ。
+[k]
+
+＠B：アマゾネスＣＥＯ
+単に言葉が通じず、凶悪な牙と爪と硬そうな鱗が見える[r]程度でマニュアルから逸脱するのはいかがなものか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠コスモティック・ビューティ夫人
+その職業意識の高さ、ある意味ではＢＴポイントを[r]感じますが……っ、[wt 0.4][charaFace E 2][bgmStop BGM_EVENT_5 0.3]危ない！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.3 1]
+[wait wipe]
+[charaFadeout E 0.1]
+[charaTalk depthOff]
+[charaDepth G 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.1]
+[fadein black 0.3]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+
+[effect bit_talk_29v 0,-100]
+[se ad249]
+[cueSe Battle bac302]
+
+[wt 0.4]
+
+[fadeout black 0.2]
+[wt 0.2]
+[seStop ad249 0.4]
+[cueSeStop bac302 0.3]
+[wait fade]
+[charaFadeout G 0.1]
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[se ad59]
+[seVolume ad59 0 0.0]
+[wt 0.1]
+[fadein black 0.2]
+[wt 0.1]
+[bgm BGM_EVENT_3 0.1]
+[seVolume ad59 0.1 1.0]
+[charaMove A 64,0 0.1]
+[wait fade]
+
+[wt 0.1]
+[seStop ad59 0.1]
+
+＠A：アマゾネスＣＥＯ
+[line 3]だが、攻撃してくるのならば話は別！
+[k]
+
+＠A：アマゾネスＣＥＯ
+通常の手続きを拒否し、理不尽で正当性のない論理、[r]あるいは暴力にてアマゾネス・ドットコムに
+[k]
+
+＠A：アマゾネスＣＥＯ
+不利益を生じさせようとする者。[r]それすなわちクレーマーという。
+[k]
+
+＠A：アマゾネスＣＥＯ
+中でもお客様はとりわけタチの悪い者！　そう！
+[k]
+
+
+＠A：アマゾネスＣＥＯ
+[f large]モンスタークレーマー！
+[k]
+
+[charaFace A 0]
+
+＠A：アマゾネスＣＥＯ
+だと思われますので、こちらも実力で対処させて[r]いただきます[wt 0.2][se ad59][charaFace A 2][effect bit_talk_41]どりゃあああああああああ！[wt 0.95][seStop ad59 0.2]
+[k]
+
+[effectDestroy bit_talk_41]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠フォウ
+フォウ、フォウフォフォフォーウ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠刑部姫
+フォウくんと同じこと思ってる気がするから[r]あえて言うけど！
+[k]
+
+＠刑部姫
+……絶対それ言いたかっただけだよねー！？
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+

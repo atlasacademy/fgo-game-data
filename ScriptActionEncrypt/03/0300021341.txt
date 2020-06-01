@@ -1,0 +1,1361 @@
+
+
+＄03-00-02-13-4-1
+[soundStopAll]
+
+[charaSet A 8001400 1 マシュ]
+[charaSet B 2031001 1 ナポレオン]
+[charaSet C 3012001 1 ブリュンヒルデ]
+[charaSet D 3033000 1 オルトリンデ]
+[charaSet E 1098124510 1 ダ・ヴィンチ]
+[charaSet F 1033001 1 シグルド]
+[charaSet G 5009000 1 エフェクト用ダミー]
+[charaSet H 5009000 1 エフェクト用ダミー２]
+
+[scene 60900]
+
+[bgm BGM_EVENT_80]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+[cueSe Battle bac169]
+[effect bit_talk_h_slash01]
+[wt 0.2]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[se ad32]
+[fowardEffect bit_talk_14]
+[effectStop bit_talk_h_slash01]
+[wt 0.1]
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[effect bit_talk_kengekiall01]
+[wt 0.1]
+[charaPut G 1]
+[charaEffect G bit_talk_14]
+[se ad32]
+[wt 0.2]
+[charaScale H 1.4]
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_rarrow01br 1 F]
+[wt 0.2]
+[charaPut G 60,10]
+[charaEffect G bit_talk_14]
+[se ad32]
+[wt 0.1]
+[charaPut G -50,-20]
+[charaEffect G bit_talk_14]
+[se ad32]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[charaPut H -50,-100]
+[wt 0.3]
+[cueSe Battle bac423]
+[wt 0.4]
+[charaFadeout B 0.1]
+[wt 0.7]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+[effect bit_talk_gram_slash_02]
+[cueSe Battle bac169]
+[wt 0.4]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaFadeout F 0.1]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 -64,0]
+[se ad32]
+[fowardEffect bit_talk_14 -64,0]
+[effectStop bit_talk_h_slash01]
+[wt 0.1]
+
+[charaShake A 0.05 3 2 0.5]
+[se ad671]
+[charaMove A 16,0 0.2]
+[wt 0.2]
+[seStop ad671 0.2]
+[wt 0.5]
+
+＠マシュ
+……！
+[k]
+
+[messageOff]
+[se ade18]
+[seVolume ade18 0.0 0.5]
+[wt 0.5]
+[seStop ade18 0.8]
+[wt 1.0]
+
+[se ad672]
+[charaMove A 6,0 0.3]
+
+[wt 0.5]
+
+[charaFace A 7]
+
+＠マシュ
+強い[line 3][r]ですが、決して戦えない相手ではありません！
+[k]
+
+＠マシュ
+外骨骼の出力安定。自動調律機能に加えて、[r]ブリュンヒルデさんとナポレオンさんの援護があります。
+[k]
+
+[charaFace A 2]
+
+＠マシュ
+戦闘状態を維持できます！[r]もう、魔剣を前に機能停止はしません！
+[k]
+
+？1：このまま畳み掛ける！
+？2：戦闘継続！
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ナポレオン
+おう！　確かに手応えは段違いだ！[r]ただな、少しばかり気になる事もなくはない！
+[k]
+
+＠ナポレオン
+戦乙女ブリュンヒルデ！[r]アンタはどうだい、このまま続けて押しきれると思うか！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[se ad51]
+[wt 0.7]
+
+＠ブリュンヒルデ
+……[#些:いささ]か、難しいでしょう。[bgm BGM_EVENT_80 1.0 0.4]
+[k]
+
+[charaFace C 4]
+
+＠ブリュンヒルデ
+戦時の英雄としてのシグルドがこれ程とは。[r]多くを分かっていたつもりでも、私、未熟なのですね。
+[k]
+
+＠ブリュンヒルデ
+私が知っていたのは平時の彼、[r]冒険ならざる平穏の中で生きる彼の顔ばかり。
+[k]
+
+＠ブリュンヒルデ
+敵に魔剣を振るう彼が、こうも……
+[k]
+
+＠ブリュンヒルデ
+嗚呼、[#逞:たくま]しい英雄。[r]嗚呼、恐ろしい男。
+[k]
+
+＠ブリュンヒルデ
+困ります……[r]そんなにも強く、迷いない戦士であるとすれば……
+[k]
+
+＠ブリュンヒルデ
+私は……[line 3]
+[k]
+
+[messageOff]
+[charaFace C 0]
+[wt 1.0]
+[charaFace C 2]
+
+[bgm BGM_EVENT_80 0.8 1.0]
+
+＠ブリュンヒルデ
+私は、魂を懸けて燃え盛るより他にないでしょう。[r][line 3]大神刻印・原型励起。
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth G 2]
+[charaDepth C 1]
+[charaFace D 5]
+
+[charaPut G 1]
+[charaEffect G bit_talk_charge_blu]
+
+[se ad61]
+[se ad556]
+[seVolume ad556 0 0.6]
+
+[wt 2.0]
+
+[messageOff]
+[seStop ad61 0.5]
+[seStop ad556 0.5]
+[se ad574]
+
+[flashin once 0.1 1.0 FFFFFF80 FFFFFF00]
+[cueSe Battle bac31]
+
+[wt 1.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_charge_blu]
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠マシュ
+この、魔力の規模は……！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠オルトリンデ
+大神刻印・原型励起。[r]私たち姉妹には搭載されていない、お姉様だけの力。
+[k]
+
+[charaFace D 6]
+
+＠オルトリンデ
+お姉様。私たちのブリュンヒルデお姉様。[r]貴女は、そこまでして……
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[se ad13]
+[wt 0.3]
+[charaTalk E]
+[charaFace E 22]
+[charaFadein E 0.1 1]
+[wt 0.3]
+
+＠ダ・ヴィンチ
+膨大な魔力の発現を観測した！[r]何が起こっているんだい……って、それはまさか……！
+[k]
+
+＠ダ・ヴィンチ
+大神刻印！[r]かつて神代に在った原初のルーンかな！？
+[k]
+
+＠ダ・ヴィンチ
+少なく見積もっても現代ルーンの数百倍の威力を有する、[r]魔法にさえ近しくある神代の魔術！
+[k]
+
+[charaFace E 2]
+
+＠ダ・ヴィンチ
+片鱗を通常の魔術として扱う程度ならともかく、[r]そんなものを本格的に解放すれば、霊基どころか！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.2]
+[charaPut G 1200,1200]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠ブリュンヒルデ
+ええ、魂が消し飛ぶ。[r]そうでしょうね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠マシュ
+！
+[k]
+
+？1：ちょっと待った！
+？2：そこまでは聞いてない！
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ブリュンヒルデ
+ありがとう。[r]優しい子、[%1]。
+[k]
+
+[charaFace C 0]
+
+＠ブリュンヒルデ
+ですが……[r]私が命を懸けるというのは、こういう事です。
+[k]
+
+[charaFace C 5]
+
+＠ブリュンヒルデ
+さあ、お待たせしましたね。シグルド。[r]再び[#愛:ころ]し合いましょう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠シグルド
+[line 3]小賢しい。多少なりとも愉しめたというのに、[r]今さら大神の仕掛け如きか。
+[k]
+
+[charaFace F 12]
+
+＠シグルド
+興が醒めたぞ。[r]戦士の真似事はやめだ。殺す。
+[k]
+
+[bgmStop BGM_EVENT_80 0.5]
+
+＠G：オフェリア
+待って。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaSet A 8001410 1 マシュ]
+[charaSet D 8001400 1 マシュ_ゴーグルあり]
+[charaSet E 1098123820 1 オフェリア]
+[charaSet G 1098123810 1 オフェリア_眼帯]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[se ad95]
+[seVolume ad95 0 0.2]
+[seVolume ad95 2.0 1.0]
+[wt 1.4]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.4]
+[seStop ad95 0.1]
+[wt 0.5]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠G：オフェリア
+待ちなさい、セイバー。[r]その魔剣で殺すのはサーヴァントたちだけでいい。
+[k]
+
+[charaFace G 7]
+
+＠G：オフェリア
+そう、何度も言ったつもりだけれど。[r]全員殺すつもりだったわね。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+＠シグルド
+[line 3]ク。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠ナポレオン
+…………よう！　我が愛しのオフェリア！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠G：オフェリア
+相変わらずなようね、アーチャー。[r]初めに会った時にすぐさま殺しておくべきでした。
+[k]
+
+＠G：オフェリア
+ですがその健闘は[#讃:たた]えましょう。[r]憎しみを込めて。
+[k]
+
+[charaFace G 14]
+
+＠G：オフェリア
+ブリュンヒルデを連れてくるだなんて、[r]余計な事をしてくれたもの。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ナポレオン
+お褒めに[#与:あずか]り[#恐悦至極:きょうえつしごく]。[r]はは！　有り難くて涙が出るな！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaDepth D 2]
+[charaDepth A 1]
+
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+[wt 0.2]
+[charaFadeout D 0.4]
+[wt 0.2]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[wt 0.7]
+
+＠マシュ
+……オフェリアさん。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+
+＠G：オフェリア
+……。[r]……。
+[k]
+
+[charaFace G 8]
+
+＠G：オフェリア
+また来たのね、マシュ。来てしまった。[r]どうして？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+わたしたちには、責任があるからです。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠G：オフェリア
+責任？[r]人理を守る、という使命感かしら？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……分かりません。[r]使命感と言えるほど、わたしは人間を知らないのです。
+[k]
+
+[charaFace A 12]
+
+＠マシュ
+でも……たとえこの[#異聞帯:ロストベルト]を滅ぼすとしても、[r]わたしは、わたしたちは……
+[k]
+
+[charaFace A 7]
+
+＠マシュ
+自分たちの世界を諦めてはいけないんです。[r]あの凍土の世界でも生き抜いた人たちのように。
+[k]
+
+[charaFace A 16]
+
+＠マシュ
+わたしたちは、それがどんな結果であろうと、[r]顔を上げて進みたいと、そう思うのです。
+[k]
+
+？1：（……ああ、そうだった[&な:ね]）
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+[wt 1.0]
+[charaFace G 8]
+
+＠G：オフェリア
+……サーヴァントもサーヴァントなら、[r]マスターもマスターね。
+[k]
+
+＠G：オフェリア
+罪悪感に押し潰されそうなのに、[r]まっすぐに見つめ返してくるなんて。
+[k]
+
+[charaFace G 9]
+
+＠G：オフェリア
+……マシュ。[r]アナタは随分と強くなった。
+[k]
+
+＠G：オフェリア
+私とは段違い。[r]私は、アナタのようにはなれない。
+[k]
+
+[charaFace G 0]
+
+＠G：オフェリア
+けれど道は譲らない。[r]私は、ヴォーダイムのあの決断を[line 3]
+[k]
+
+[charaFace G 5]
+
+[bgmStop BGM_EVENT_70 0.5]
+
+＠G：オフェリア
+いえ、キリシュタリア様の期待だけは裏切れない！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth G 2]
+[charaDepth E 1]
+
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+[wt 0.7]
+
+[se ad661]
+[wt 0.3]
+
+[charaFadeout G 0.4]
+[wt 2.0]
+[charaTalk depthOn]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_80]
+
+＠ナポレオン
+魔眼か！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[wt 0.5]
+
+[charaFace E 5]
+
+＠オフェリア
+[line 6]事象・[#照準固定:シュフェン・アウフ]。
+[k]
+
+[se ad476]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠オフェリア
+驚嘆すべきは原初のルーン、大神刻印。[r][line 3][#私は、それが輝くさまを視ない:I c h   w i l l   e s   n i e m a l s   g l ä n z e n   s e h e n .]！
+[k]
+
+[messageOff]
+[seStop ad476 0.5]
+[fadeout black 0.1]
+[wait fade]
+[cameraMove 0 0,-50 1.4]
+[wt 0.1]
+[fadein black 0.1]
+[wait fade]
+
+[se ad693]
+[effect bit_talk_ophe_eye 35,-28]
+[wt 0.2]
+
+[fadeout white 0.8]
+[wait fade]
+
+[charaFadeout E 0.1]
+[cameraHome 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+[wt 0.1]
+[fadein white 0.6]
+
+[charaFace C 5]
+
+＠ブリュンヒルデ
+……！
+[k]
+
+[wait fade]
+
+[messageOff]
+[se ade70]
+[wt 0.7]
+[wipeout gunya 1.0 1.5]
+[wait wipe]
+[wt 0.3]
+[wipein gunya 0.5 1.5]
+[se ad632]
+[seVolume ad632 0 0.4]
+[wait wipe]
+
+[charaFace C 4]
+
+＠ブリュンヒルデ
+くっ、う……！[r]私の、ルーンが……減衰する……[line 3]！？[seStop ad632 1.0]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠オフェリア
+アナタの輝きは眩しすぎるの。[r]だから、私の瞳は、その可能性が進む先を視ない。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠マシュ
+やはり事象の巻き戻り……！[r]でも、でも……時間への干渉だけは有り得ません！
+[k]
+
+＠マシュ
+たとえノウブルカラー、[r]宝石の魔眼を以てしても、それだけは！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+[charaMove C 0,-20 0.5]
+[charaFadeout C 0.4]
+[se ade75]
+[wt 0.4]
+[seStop ade75 0.5]
+
+[wt 1.0]
+
+＠ブリュンヒルデ
+くっ……はあっ……！[wt 0.6][messageShake 0.05 5 5 1.0][r]あああああああああああああっ……！
+[k]
+
+[messageShakeStop]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+＠シグルド
+クク。これはいい。面白い！[r]大神刻印の原型励起などはその霊基に有り余るだろう。
+[k]
+
+＠シグルド
+ク。クク。励起による力の発現が停止され、[r][#霊核の崩壊]だけが残ったな？
+[k]
+
+＠シグルド
+苦悶しろ。[r]苦痛に喘げ。
+[k]
+
+＠シグルド
+ヒトの女へと落ちた者よ、[r]おまえにはそうして這いつくばる姿がよく似合う。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+＠ブリュンヒルデ
+シグ……ルド……！[wt 0.5][messageShake 0.05 5 5 1.0][r]おお、あああああああああああああああッ……
+[k]
+
+？1：ブリュンヒルデ！
+？2：すぐに、礼装で回復を[line 3]！
+
+？！
+
+[charaSet D 3033000 1 オルトリンデ]
+
+[messageShakeStop]
+[bgmStop BGM_EVENT_80 1.0]
+
+＠ブリュンヒルデ
+あ、あ……ああ……いいえ……[r]まだ、まだですよ、[%1]。
+[k]
+
+＠ブリュンヒルデ
+そんな風に……[r]心配されてしまうと、私……困ります……
+[k]
+
+
+[messageOff]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.7 0,-16]
+[wt 0.2]
+[charaMove C 1 0.5]
+[se ad166]
+[wt 0.3]
+[seStop ad166 0.2]
+
+[wt 0.7]
+
+＠ブリュンヒルデ
+私、言いましたよね……[bgm BGM_EVENT_82 0.1][r]彼女の魔眼については、私にお任せ戴きたいと。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠オフェリア
+！
+[k]
+
+[charaFace E 5]
+
+＠オフェリア
+事象・[#照準固定:シュフェン・アウフ]！
+[k]
+
+[messageOff]
+
+[se ad476]
+
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ブリュンヒルデ
+[line 6]いいえ。いいえ。[seStop ad476 2.0][r]その瞳、ひとたび身に受ければそれ以上は充分です。
+[k]
+
+＠ブリュンヒルデ
+大神刻印・再起動。再励起。[r]私は、貴女の瞳に惑わされる事はない。
+[k]
+
+＠ブリュンヒルデ
+事象を巻き戻している訳ではありませんね。[r]そう、まるで、可能性を針で留めているような……
+[k]
+
+[charaFace C 10]
+
+＠ブリュンヒルデ
+ならば……[r]このように対処できる。
+[k]
+
+[messageOff]
+
+[messageOff]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth H 2]
+[charaDepth C 1]
+[charaFace C 10]
+
+[charaPut H 1]
+[charaEffect H bit_talk_charge_blu]
+
+[se ad61]
+[se ad556]
+[seVolume ad556 0 0.6]
+
+[wt 2.0]
+
+[messageOff]
+[seStop ad61 0.5]
+[seStop ad556 0.5]
+[se ad574]
+
+[flashin once 0.1 1.0 FFFFFF80 FFFFFF00]
+[cueSe Battle bac31]
+
+[wt 1.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_charge_blu]
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠オルトリンデ
+再起動……！？[r]霊核で稼働するサーヴァントであるなら、それは、
+[k]
+
+＠オルトリンデ
+心臓と脳に繋がる霊核を……[r]更に崩壊させるのも同じ……お姉様……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠オフェリア
+な、何を[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠ブリュンヒルデ
+視えないでしょう。[r]そうなるよう、可能性を狭めましたから。
+[k]
+
+？1：可能性を狭めた！？
+？2：それは、一体どういう意味[line 3]
+
+？！
+
+[charaFace C 0]
+
+＠ブリュンヒルデ
+魔の瞳、力ある瞳。[r]そういったものには憶えがあります。
+[k]
+
+＠ブリュンヒルデ
+だからこそ私が[#挫:くじ]ける事はない。[r]たとえ、それが[#異邦の神:バ　ロ　ー　ル]の瞳であったとしても。
+[k]
+
+[charaFace C 5]
+
+＠ブリュンヒルデ
+或いは我が父の瞳であったとしても、[r]この、私は……
+[k]
+
+[charaFace C 2]
+
+＠ブリュンヒルデ
+[f large]私は……！
+[k]
+
+＠ブリュンヒルデ
+[f large]シグルドを！　殺す！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+[se ad683]
+[seVolume ad683 0 0.4]
+
+[wt 1.0]
+
+[charaFace F 1]
+
+＠シグルド
+邪魔だな。[r]フン。人形がよくも吼える。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ブリュンヒルデ
+[line 6]シグルド！
+[k]
+
+[messageOff]
+[se ad73]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[effect bit_talk_kengekiall04]
+[wt 0.1]
+[se ad32]
+[fowardEffect bit_talk_14]
+[wt 0.4]
+[se ad32]
+[wt 0.1]
+[fowardEffect bit_talk_14]
+[se ad618]
+
+[wt 1.2]
+
+[charaTalk E]
+[charaFace E 16]
+[charaFadein E 0.1 1]
+
+＠オフェリア
+嘘……[r]嘘よ……！
+[k]
+
+＠オフェリア
+彼女は、精神を……[#固定させた]……！
+[k]
+
+＠オフェリア
+歩む道をひとつきりだと定めて、定めきって、[r][#別の可能性:イ　　フ]の自分を発生させない[line 3]そんな事ができるの！？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[cueSe Battle bac109]
+[fowardEffect bit_talk_quickmove]
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+＠シグルド
+およそ人には叶うまい。[r]心構えひとつで可能性とやらを阻めるものかよ。
+[k]
+
+＠シグルド
+ただの半神にも不可能だ。[r]だが自らを燃やす狂える半神であれば、或いは！
+[k]
+
+＠シグルド
+こうも歪み果て、[r]魔性じみた槍を振るう事もあるか！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ブリュンヒルデ
+シグルド、シグルド、シグルド！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF00]
+[effect bit_talk_14]
+[shake 0.05 2 4 0.5]
+[se ad32]
+
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠オルトリンデ
+お姉様……
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[effect bit_talk_41]
+[effect bit_talk_14]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[se ad468]
+
+[se ad632]
+
+[shake 0.03 3 3 0.3]
+[wt 0.3]
+[shake 0.03 2 2 0]
+[se ad468]
+[wt 1.5]
+[effectStop bit_talk_41]
+[se ad32]
+[wipeout rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+[seStop ad632 0.5]
+[shakeStop]
+[wt 0.2]
+[wipein rectangleStripRightToLeft 0.3 1]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ブリュンヒルデ
+はあああああああああっ！[r]我が炎、我が狂気、我が想い、悪を歩む貴方に……！
+[k]
+
+＠ブリュンヒルデ
+届かせる！
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth H 2]
+[charaDepth C 1]
+
+[se ad690]
+[seVolume ad690 0 0.6]
+[charaPut H 1]
+[charaEffect H bit_talk_charge_blu]
+[wt 4.0]
+[flashin once 0.2 0.5 FFFFFFFF FFFFFF00]
+[charaPut H 2400,2400]
+[charaEffectStop H bit_talk_charge_blu]
+[seStop ad690 0.3]
+[charaTalk depthOn]
+
+[effect bit_talk_36]
+[se ad39]
+[wt 1.3]
+
+＠ブリュンヒルデ
+[line 3]『[#死がふたりを分断つまで:ブ リ ュ ン ヒ ル デ ・ ロ マ ン シ ア]』！
+[k]
+
+[messageOff]
+[fadeout white 1.2]
+[se ad703]
+[wt 0.8]
+[seStop ad703 0.2]
+[wait fade]
+[effectStop bit_talk_36]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠マシュ
+ブリュンヒルデさんの槍が……！[r]巨大に、形態を変化させていきます！
+[k]
+
+＠ナポレオン
+戦士の命を貫くためのブリュンヒルデの槍、宝具か！[r]こいつは……でかいぞ！　衝撃波が来る！
+[k]
+
+[scene 45810]
+
+[messageOff]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+[charaSet G 1098123210 1 ゴルドルフ]
+
+[messageOff]
+[fadein white 1.0]
+[se ad704]
+[seVolume ad704 0 0.0]
+[wait fade]
+
+[seVolume ad704 0.5 1.0]
+[wt 1.4]
+[charaPut H 1]
+[charaScale H 1.2]
+[charaEffect H bit_talk_v_slash01]
+[wt 1.2]
+
+[se ad705]
+[flashin once 0.5 1.0 FFFFFFAF FFFFFF00]
+[fadeout white 0.2]
+[wait fade]
+[wt 2.7]
+[flashOff]
+[seStop ad704 1.0]
+
+[fadein white 0.7]
+[wait fade]
+
+＠ブリュンヒルデ
+これこそは必殺の槍。[r]竜殺しを、大英雄を、愛した男を殺すための渾身。
+[k]
+
+＠ブリュンヒルデ
+この巨大なる刃を避ける事はできない。[r]貴方が、英霊シグルドである限り！
+[k]
+
+＠ブリュンヒルデ
+想いを重量とするこの大槍こそは[line 3]
+[k]
+
+[charaFace C 2]
+
+＠ブリュンヒルデ
+[f large]一撃！　必殺！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_82 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaScale H 1.4]
+[charaEffect H bit_talk_arrow01bl 1 F]
+[wt 0.7]
+[se bac176]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.4]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.4]
+[se ad705]
+
+[se bac187]
+[seVolume bac187 0 0.6]
+[fadeout white 2.0]
+[se ad608]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+[wt 2.0]
+
+[scene 60900]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[fadein white 0.5]
+[wait fade]
+
+＠ブリュンヒルデ
+仕留め[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+＠シグルド
+いいや。[wt 0.5][charaFace F 13][r]届かんなァ！
+[k]
+
+[messageOff]
+[effect bit_talk_v_slash01]
+[cueSe Battle bac169]
+[wt 0.4]
+
+[fowardEffect bit_talk_29 0,-50]
+[se bac325]
+[seVolume bac325 0 0.8]
+[wt 0.1]
+
+[fowardEffect bit_talk_14]
+[se ad618]
+[wt 0.3]
+[wt 0.5]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth C 3]
+[charaDepth B 2]
+[charaDepth A 1]
+
+[charaFace C 4]
+[charaFadein C 0.1 0]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[charaFace A 14]
+[charaFadein A 0.1 2]
+
+[wt 3.0]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaFace D 6]
+[charaFadein D 0.1 0]
+[charaFace E 12]
+[charaFadein E 0.1 2]
+
+[wt 3.0]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk on]
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠ゴルドルフ
+な[line 3]
+[k]
+
+[charaFace G 8]
+
+＠ゴルドルフ
+そ、そんな[#莫迦:ばか]な事があるか！？[r]戦乙女ブリュンヒルデの宝具だぞ、英雄殺しだぞ！
+[k]
+
+＠ゴルドルフ
+魔剣グラムを操るシグルドなのだろうが！[r]であればその槍、狙い[#違:たが]わず……その命を奪う筈！
+[k]
+
+＠ゴルドルフ
+それが……[r]何故、どうして生きている！？
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.2]
+[charaPut H 1200,1200]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠シグルド
+なかなかの宝具ではある。[r]だが、残念な事に。
+[k]
+
+[charaFace F 12]
+
+＠シグルド
+[line 3]この俺は、[#英霊シグルドではない]のだ。
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

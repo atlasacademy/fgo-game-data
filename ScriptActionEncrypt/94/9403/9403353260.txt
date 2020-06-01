@@ -1,0 +1,515 @@
+
+
+＄94-03-35-32-6-0
+[soundStopAll]
+
+[charaSet A 5035000 1 アナスタシア]
+[charaSet B 1098163100 1 ヴィイ]
+[charaSet C 98104000 1 ミニクーちゃん]
+[equipSet D 9806810 1 バレンタイン礼装]
+[charaSet H 5009000 1 エフェクト用ダミー]
+[charaSet I 5009000 1 エフェクト用ダミー２]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66600]
+[branch lblConf]
+[label lblNotClear]
+[scene 10310]
+[label lblConf]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 1.0]
+
+？1：アナスタシア、おはよう
+
+[charaFace A 7]
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V010]
+あら、マスター。[r]朝から元気そうで何よりね。[wait tVoice]
+[k]
+
+？2：おはようございます、皇女殿下
+
+[charaFace A 1]
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V020]
+礼儀正しい挨拶ね。[r]得点３。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V030]
+でも、ちょっとからかっているっぽいので[r]減点３というところかしら。[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 2]
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V040]
+それよりも……。[r]今日はバレンタインデーよ、マスター。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V050]
+[#私:わたくし]の国では、[r]バレンタインの風習が広まったのは最近らしいのだけど。[wait tVoice]
+[k]
+
+[charaFace A 6]
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V060]
+でも、何であれプレゼントが貰えるのは[r]いいことだわ。いいことよね？[wait tVoice]
+[k]
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V070]
+という訳で[line 3][r]チョコレートを所望します、マスター。[wait tVoice]
+[k]
+
+？1：いいよー
+？2：はいどうぞ！
+？！
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[wt 0.5]
+[charaFace A 5]
+[wt 1.5]
+[charaFace A 2]
+[wt 1.0]
+[charaFace A 11]
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V080]
+ど、どういうことです？[wait tVoice]
+[k]
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V090]
+他のサーヴァントの方々に[#伺:うかが]いました。[wait tVoice]
+[k]
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V100]
+日本のバレンタインは主として女性が[r]大切な人へ贈り物をする、と。[wait tVoice]
+[k]
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V110]
+そしてホワイトデーに、その返礼を行う。[wait tVoice]
+[k]
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V120]
+この場合、サーヴァントである[#私:わたくし]が、[r]まずチョコレートを贈るべきだと考えていたのですが。[wait tVoice]
+[k]
+
+？1：そんな決まり事はないよ
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V130]
+なるほど……。[wait tVoice]
+[k]
+
+？2：どうせなら皆に配ろうかと
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V140]
+くっ……やられました。[r]まさか準備済みとは。[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 0]
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V150]
+……では、[#謹:つつし]んでこのプレゼントは[r]頂きます。[wait tVoice]
+[k]
+
+[charaFace A 2]
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V160]
+そして驚きなさい、[#讃:たた]えなさい、[r]実は[#私:わたくし]もプレゼントがあるのです。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V170]
+それがこちら[line 3][wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+？1：まさかあるとは……
+
+[charaFace A 5]
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V180]
+[#私:わたくし]を何だと思っているのです。[r]ちゃんと準備しています、皇女の[#嗜:たしな]みです。[wait tVoice]
+[k]
+
+？2：ありがとう！
+
+[charaFace A 7]
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V190]
+その素直さは、マスターの美徳ですね。[wait tVoice]
+[k]
+
+？！
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V200]
+さあさあ、どうぞ開けてみてください。[wait tVoice]
+[k]
+
+[messageOff]
+[se ade11]
+[wt 2.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[charaFace D 0]
+[charaFadein D 0.5 0,-70]
+[wt 1.5]
+[charaFadeout D 0.4]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V210]
+本当であれば、[r]チョコレートが正しいのでしょうけど。[wait tVoice]
+[k]
+
+[charaFace A 2]
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V220]
+それは他の皆様からいっぱい貰える、[r]そう[#私:わたくし]は推測しました。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V230]
+なので、ヴィイのぬいぐるみです。[r]ふふふ、可愛らしいでしょう。[wait tVoice]
+[k]
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V240]
+魔力を籠めたので、[r]少しばかり怪奇現象が起きるかもですが[line 3][wait tVoice]
+[k]
+
+[charaFace A 6]
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V250]
+[#些細:ささい]なことですね！[wait tVoice]
+[k]
+
+？1：えらいことだよ！
+？2：大変だよ！
+？！
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V260]
+まあまあ。[r]そこらへんはまあまあ……まあまあ。[wait tVoice]
+[k]
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V270]
+ではマスター。[r][#私:わたくし]はチョコを賞味します。[wait tVoice]
+[k]
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V280]
+折角ですので、お付き合いください。[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[charaFadeout A 0.1]
+[branchQuestNotClear lblNotClear2 3000303]
+[scene 71600]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10420]
+[label lblConf2]
+[wt 2.0]
+[fadein black 1.0]
+[wait fade]
+
+？1：今日も一日がんばった……
+？2：おやすみなさい……
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.7 512,0]
+[charaMove B 2 3.0]
+[wt 3.0]
+
+＠ヴィイ
+……。[r]……。
+[k]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.7 -512,0]
+[charaMove C 0 3.0]
+[wt 3.0]
+
+＠ミニクーちゃん
+……。[r]……。
+[k]
+
+[charaTalk B]
+[charaEffect B bit_talk_starshine 10,50]
+
+＠ヴィイ
+！
+[k]
+
+[charaTalk C]
+[charaEffect C bit_talk_starshine -20,20]
+
+＠ミニクーちゃん
+！
+[k]
+
+
+[charaTalk off]
+
+[messageOff]
+[charaMove B 128,525 0.3]
+[se ad73]
+[wt 0.1]
+[seStop ad73]
+[charaMove C -128,512 0.3]
+[se ad73]
+[wt 0.4]
+
+[charaEffect H bit_talk_13]
+[se bac139]
+[wt 0.5]
+[charaEffect H bit_talk_kengekiall01]
+[se ad33]
+[wt 0.75]
+[charaEffect H bit_talk_14]
+[wt 0.5]
+[charaPut H 1]
+[charaEffect H bit_talk_kengekiall02]
+[charaPut I -70,50]
+[charaScale I 1.2]
+[charaEffect I bit_talk_14]
+[se ad32]
+[wt 0.3]
+[charaScale I 1.1]
+[charaPut I 60,10]
+[charaEffect I bit_talk_14]
+[se ad32]
+[wt 0.2]
+[charaScale I 1.4]
+[charaPut I -50,-20]
+[charaEffect I bit_talk_14]
+[se ad32]
+[wt 0.1]
+[charaScale I 1.0]
+[wt 0.3]
+
+[charaMove B 256,-10 0.1]
+[charaMove C -256,-10 0.1]
+[se ad223]
+[seVolume ad223 0 0.7]
+[wt 0.1]
+[charaMove B 256,0 0.3]
+[charaMove C -256,0 0.3]
+[wt 0.5]
+
+？1：何か物音が……？
+？！
+
+＠二人
+[f x-large]！
+[k]
+
+[messageOff]
+
+[charaMove B 6 0.2]
+[charaMove C 4 0.2]
+[se ad7]
+
+[wt 2.0]
+
+？1：気のせいかな……
+？！
+
+[messageOff]
+[wipeout openEye 3.0 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[scene 10000]
+[wt 0.1]
+[wipein openEye 0.1 1]
+[wait wipe]
+[fadeout black 0.1]
+[wait fade]
+[branchQuestNotClear lblNotClear3 3000303]
+[scene 71600]
+[branch lblConf3]
+[label lblNotClear3]
+[scene 10420]
+[label lblConf3]
+[charaFadein C 0.1 4]
+[charaFadein B 0.1 6]
+[wt 1.5]
+[fadein black 0.3]
+[wait fade]
+
+[charaMove C 0 3.0]
+[charaMove B 2 3.0]
+[wt 3.5]
+
+[charaTalk on]
+
+＠ヴィイ
+……。[r]……。
+[k]
+
+＠ミニクーちゃん
+……。[r]……。
+[k]
+
+[charaTalk off]
+
+＠二人
+！
+[k]
+
+[messageOff]
+
+[charaMove C -128,512 0.3]
+[wt 0.1]
+[charaMove B 128,525 0.3]
+[wt 0.4]
+
+[charaEffect H bit_talk_13]
+[wt 0.5]
+[charaEffect H bit_talk_gram_slash_04]
+[wt 0.75]
+[charaEffect H bit_talk_14]
+[wt 0.5]
+[charaEffect H bit_talk_kengekiall03]
+[wt 0.75]
+[charaEffect H bit_talk_explosion]
+[wt 0.5]
+[wait effect]
+[wt 2.0]
+
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[branchQuestNotClear lblNotClear4 3000303]
+[scene 66800]
+[branch lblConf4]
+[label lblNotClear4]
+[scene 10400]
+[label lblConf4]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+？1：心なしか部屋が……
+？2：荒れているような……？
+？！
+
+[se ad8]
+[wt 1.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.4 1]
+[wt 0.5]
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V290]
+おはようマスター、いい朝ね。[wait tVoice]
+[k]
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V300]
+あら、[#私:わたくし]のヴィイ、[r]クー・フーリンさんと一緒に置いてあるのね。[wait tVoice]
+[k]
+
+[charaFace A 6]
+
+＠アナスタシア
+[tVoice ValVoice_503500 0_V310]
+とても嬉しいわ。[r]仲良くしてくれるといいわね。[wait tVoice]
+[k]
+
+？1：う、うん……
+？！
+
+[messageOff]
+[charaFadeout A 0.7]
+[wt 1.5]
+
+[charaFadein C 0.7 128,0]
+[charaFadein B 0.7 -128,0]
+
+[backEffect bit_talk_valentine_brilliant]
+[wt 4.0]
+[backEffectStop bit_talk_valentine_brilliant]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

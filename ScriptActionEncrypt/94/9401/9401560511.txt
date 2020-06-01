@@ -1,0 +1,289 @@
+
+＄94-01-56-05-1-1
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[scene 20822]
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 5016001 1 ジェロニモ]
+[charaSet C 6005001 1 ジャック]
+[charaSet D 5004001 1 ナーサリー・ライム]
+[charaSet E 7028000 1 バニヤン]
+[charaSet F 1018002 1 アルテラ]
+[charaSet G 1018002 1 アルテラ（シルエット）]
+[charaFilter G silhouette 00000080]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk E]
+[charaScale E 2.2]
+[charaPut E 0,760]
+[charaFace E 5]
+[charaFadein E 0.1]
+
+[fowardEffect bit_talk_13]
+[charaShake E 0.05 3 3 0.5]
+[flashin once 0.2 0.1 FFFFFF80 00000000]
+[se bac10]
+[wt 0.5]
+[seStop bac10 1.0]
+[wait fowardEffect bit_talk_13]
+
+[se ad32]
+[fowardEffect bit_talk_14]
+[charaShake E 0.05 3 3 0.4]
+[flashin once 0.2 0.1 FFFFFF80 0000000]
+[wait fowardEffect bit_talk_14]
+
+[wipeout rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+[charaFadeout E 0]
+[wipein rectangleStripRightToLeft 0.3 1]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.4 1]
+
+＠マシュ
+ダメ[line 3]あと少しなのに[line 3]！
+[k]
+
+？1：バニヤンの巨大化が、とまらない……！
+
+？！
+
+
+
+[charaFadeout A 0.1]
+
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[charaEffect C bit_talk_06]
+
+＠ジャック
+あ……からだが……！
+[k]
+
+[charaPut C 1200,1200]
+[charaFadeout C 0.1]
+[charaEffectStop C]
+
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[charaEffect B bit_talk_06]
+
+＠ジェロニモ
+そうか……バニヤンが世界を広げ、巨大化することで、[r]我々はバニヤンから認識されなくなっている……！
+[k]
+
+[charaPut B 1200,1200]
+
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[charaEffect A bit_talk_06]
+
+＠マシュ
+私たちが、体表面の細菌を認識出来ないのと同じ……。
+[k]
+
+[charaPut A 1200,1200]
+
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 5]
+[charaPut B 1]
+
+＠ジェロニモ
+そしてこの世界では、認識されないものは、存在しない！[r]マスター、このままでは[line 3]！
+[k]
+
+？1：なんとか、聖杯を[line 3]！
+
+？！
+
+＠F：？？？
+……傍観しているつもりでしたが。[r]相手が自らの大きさに嘆く者であれば沈黙は守れません。
+[k]
+
+＠F：？？？
+[line 3]手を貸しましょう、カルデアのマスター。
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.6 1]
+[wait wipe]
+[charaPut B 1200,1200]
+[charaFadeout B 0]
+[charaEffectStop B]
+[wipein leftToRight 0.6 1]
+[wait wipe]
+
+？1：アルテラ[line 3]！？
+？2：今度の役は！？
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[wt 0.7]
+[bgm BGM_EVENT_4 0.1]
+
+[charaTalk off]
+[charaDepth F 1]
+[charaDepth G 2]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein G 0.7 1]
+[wt 1.0]
+[charaFadein F 0.1 1]
+[charaFadeout G 2.0]
+[wt 2.0]
+[charaTalk on]
+
+＠アルテラ
+私はアルテラです。それ以上でもそれ以下でもなく、[r]あなたたちの知るアルテラでもありません。
+[k]
+
+＠アルテラ
+……でも、声は届きました。[r]あの娘を救いたいという、皆さんの声が。
+[k]
+
+＠アルテラ
+あの少女を追い詰めるのは悪い文明です。[r]よい文明であるはずがありません。
+[k]
+
+[charaFace F 4]
+
+＠アルテラ
+ひとりを犠牲にして100億が生きるのが、[r]世界の冷酷なシステムだとしても。
+[k]
+
+＠アルテラ
+発展し続ける事が旧世界への攻撃であり、[r]あなたたちの未来が、より危険な選択を持つとしても[line 3]
+[k]
+
+[charaFace F 2]
+
+＠アルテラ
+だとしても抗い続ける事にこそ、[r]よき文明のありようがあるはず！
+[k]
+
+＠アルテラ
+私の手を取ってください、カルデアのマスター！[r]契約を結び、いっときの魔力を[line 3]！
+[k]
+
+？1：わかった！　マシュ、サポートを！
+
+？！
+
+[charaFadeout F 0.1]
+
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaPut A 1]
+
+＠マシュ
+はいっ！[r]私の宝具で、ギリギリまで先輩の認識を保持します！
+[k]
+
+[charaPut A 1200,1200]
+[charaFadeout A 0.1]
+[charaEffectStop A]
+
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[wt 0.2]
+
+[se ad51]
+[wt 0.4]
+
+[se ad61]
+[flashin once 0.7 0.4 F80606FF F8060600]
+[seStop ad61 1.0]
+
+[shake 0.05 2 2 0]
+[se ad14]
+[seVolume ad14 0 0.7]
+＠アルテラ
+接続、確認しました。[r][#火神現象:マルス・エフェクト]、超過使用。
+[k]
+
+＠アルテラ
+[line 3]遊星の紋章、復刻。[r]大いなる巨神はあなたひとりだけではありません。
+[k]
+
+[se ad39]
+[charaEffect F bit_talk_36]
+[charaFace F 2]
+
+＠アルテラ
+目を覚ます時です、開拓の夢！[r][#涙の星、軍神の剣:ティアードロップ・フォトン・レイ]！
+[k]
+
+[charaEffectStop F bit_talk_36]
+[seStop ad14 1.0]
+
+[messageOff]
+[wt 0.2]
+[se ad276]
+[shakeStop]
+[shake 0.05 7 7 7.0]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[charaFadeout F 0.1]
+[charaTalk off]
+[charaScale E 2.3]
+[charaPut E 0,800]
+[charaFace E 4]
+[charaFadein E 0]
+[wt 0.7]
+[fadeout white 2.0]
+[flashOff]
+[wait fade]
+[charaFadeout E 0.1]
+[scene 10001]
+[shakeStop]
+[fadein white 2.0]
+[seStop ad276 3.0]
+[wait fade]
+
+[effect bit_talk_20]
+[se bas2]
+
+[wt 1.5]
+
+？1：あれが、聖杯[line 3]！
+？！
+
+[fadeout white 1.0]
+[wait fade]
+[effectStop bit_talk_20]
+[wait effect bit_talk_20]
+[scene 10001]
+[fadein white 0.1]
+[wait fade]
+
+[bgmStop BGM_EVENT_4 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

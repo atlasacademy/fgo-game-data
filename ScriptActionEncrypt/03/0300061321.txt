@@ -1,0 +1,821 @@
+
+
+
+＄03-00-06-12-2-1
+
+
+
+[soundStopAll]
+
+[charaSet A 1017001 1 武蔵]
+[charaSet B 8001400 1 マシュ]
+[charaSet C 9005001 1 ホームズ]
+[charaSet D 1098128200 1 カイニス]
+[charaSet E 7010001 1 カリギュラ]
+[charaSet F 3009001 1 レオニダス]
+[imageSet G back10000 1]
+
+[charaSet S 5009000 1 エフェクト用ダミー]
+[charaSet T 5009000 1 エフェクト用ダミー]
+[charaSet R 5009000 1 エフェクト用ダミー]
+[cameraMove 0 0,0 1.01]
+[charaEffect R bit_talk_mind_poll_02]
+[scene 92501]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0 1]
+
+[se ade280]
+[seVolume ade280 0 0]
+[seVolume ade280 1.0 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_24 0.1]
+
+[se ad171]
+[effect bit_talk_h_slash01]
+[wt 0.4]
+
+[se ad171]
+[fowardEffect bit_talk_v_slash01]
+[wt 0.4]
+
+[se ad170]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+
+[charaFadeout A 0]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0 1]
+[charaShake B 0.02 3 3 0.6]
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.3]
+
+[cueSe Battle bac449]
+[wt 0.4]
+[cueSeStop bac449 0.4]
+[cueSe Battle bac450]
+[charaRoll S 205]
+[charaPut S 50,-550]
+[charaEffect S bit_talk_gram_slash_03]
+[wt 0.3]
+
+[cueSeStop bac450 0.4]
+[se ad609]
+[flashin once 0.1 0.1 9effffFA 9effff80]
+[fowardEffect bit_talk_explosion]
+[shake 0.02 3 3 0.8]
+[wt 0.1]
+[charaFadeout C 0]
+[wt 0.8]
+
+[se ad671]
+[charaScale B 1.2]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 0,30]
+[charaMove B 1 0.2]
+[charaMoveScale B 1.0 0.2]
+[charaShake B 0.02 3 3 0.6]
+[wt 1.6]
+
+
+＠マシュ
+武蔵、さん！[r]ホームズさん……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[fowardEffectDestroy bit_talk_explosion]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠武蔵
+[line 6]ッ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[se bac139]
+[effect bit_talk_x_slash01]
+[effect bit_talk_x_slash02]
+[wt 0.3]
+[fowardEffect bit_talk_14]
+
+[se ad170]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0 1]
+[charaShake B 0.03 4 4 0.6]
+[wt 1.4]
+
+[effectStop bit_talk_x_slash01]
+[fowardEffectStop bit_talk_x_slash02]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[bgm BGM_EVENT_24 0.4 0.4]
+[charaTalk depthOff]
+[charaDepth R 1]
+[charaDepth G 2]
+[charaDepth A 3]
+[charaFadeTime G 0.2 0.6]
+[wt 0.2]
+
+
+＠武蔵
+（どうなってるの！？[r]　体が勝手に……いいえ、これは……！）
+[k]
+
+＠武蔵
+（汚染された精神から思考を切り離しても、[r]　肉体が取り戻せない！　刀が、止まらない！）
+[k]
+
+[charaFace A 2]
+＠武蔵
+（[#殺意が自動的に膨張していく]！）
+[k]
+
+[charaFace A 4]
+＠武蔵
+（同士討ちを誘発する精神攻撃か！[r]　神さまの癖に、やり方がいやらしいったら！）
+[k]
+
+[charaFace A 5]
+＠武蔵
+（マシュ！　[%1]！）
+[k]
+
+＠武蔵
+（逃げなさい！[r]　思考までこの殺意に埋め尽くされたら、もう[line 3]）
+[k]
+
+＠武蔵
+（殺さずにはいられない！）
+[k]
+
+[bgm BGM_EVENT_24 0.4 1.0]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaFace A 2]
+
+＠武蔵
+あああああああああああッ！
+[k]
+
+＠武蔵
+私の……！[r]頭の中で、歌を……唄うなッ！！
+[k]
+
+
+[messageOff]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaFadeout A 0.1]
+[wt 0.6]
+
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+武蔵さんの姿が、消えて……！？
+[k]
+
+？1：後ろ！
+？2：マシュ……！
+
+？！
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth B 6]
+[charaDepth T 5]
+[charaDepth A 4]
+[charaDepth G 2]
+
+[se ad73]
+[charaPut T 300,0]
+[charaEffect T bit_talk_quickmove]
+[charaFace A 5]
+[charaFadein A 0.1 300,0]
+[wt 0.5]
+
+[se ad51]
+[charaMove A 300,-10 0.1]
+[wt 0.8]
+
+[bgm BGM_EVENT_24 0.3 0.4]
+
+[charaTalk depthOff]
+[charaTalk on]
+[charaTalk A]
+[charaFadeTime G 0.2 0.6]
+[wt 0.2]
+
+
+＠武蔵
+（駄目！）
+[k]
+
+＠武蔵
+（がら空きの首筋！[r]　私の手、刀、もう止められない[line 2]）
+[k]
+
+[messageOff]
+[seStop ade280 1.0]
+[fadeout black 0.4]
+[bgm BGM_EVENT_24 0.4 0.1]
+[wait fade]
+
+[charaFadeout G 0.1]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaEffectDestroy R bit_talk_mind_poll_02]
+
+[scene 10000]
+[pictureFrame]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[se bac210]
+[effect bit_talk_x_slash03]
+[wt 0.5]
+
+[fadeout black 0.4]
+[wait fade]
+
+[se ad775]
+
+[charaTalk depthOn]
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+
+[scene 92501]
+
+[wt 0.1]
+
+[se ad618]
+[effect bit_talk_14]
+[wt 0.5]
+
+[se ad240]
+[fowardEffect bit_talk_35]
+[charaShake D 0.05 3 3 1.2]
+
+[fadein black 0.6]
+[charaEffect R bit_talk_mind_poll_02]
+[bgm BGM_EVENT_24 1.0 1.0]
+[wait fade]
+
+＠カイニス
+チッ！
+[k]
+
+？1：カイニス！
+
+[charaFace D 6]
+
+＠カイニス
+いいねえいいねえ！[r]そういう[#戦:や]り方がテメェの素かよ、サムライ！
+[k]
+
+[charaFace D 7]
+＠カイニス
+意地汚くて生き汚え[line 3][r]何より、殺し方も汚えと来る！　ハハハ！
+[k]
+
+＠カイニス
+女だてらに剣の何本も振り回すンなら、なァ！[r]そうでなきゃなァ！
+[k]
+
+？2：（マシュを、庇ってくれた……！）
+
+[charaFace D 2]
+＠カイニス
+莫ァ迦が！
+[k]
+
+＠カイニス
+同士討ち如きで終わってもらっちゃ困るンだよ！[r]テメェらはオレが殺す！　言ったろうが！
+[k]
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad51]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠武蔵
+………………。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠カイニス
+……アフロディーテの権能は厄介だが、[r]これなら悪くねえ。
+[k]
+
+[charaFace D 5]
+＠カイニス
+目の前にこういう手合いがいるなら、[r]一秒たりとも気は抜けねェ。その分、[#歌も遠い]！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad671]
+[seVolume ad671 0 0.4]
+[seStop ad671 0.4]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[charaMove A 0,-10 0.3]
+＠武蔵
+[line 10]ッ！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaFace A 2]
+[se ad7]
+[charaMoveScale A 1.2 0.2]
+[charaMove A 0,20 0.2]
+[charaFadeout A 0.2]
+[wt 0.4]
+
+[charaScale A 1.0]
+
+[se bac137]
+[effect bit_talk_v_slash01]
+[wt 0.3]
+
+[se ad170]
+[fowardEffect bit_talk_14]
+
+[charaFadeout E 0]
+[charaTalk E]
+[charaFace E 0]
+[charaFace A 5]
+[charaFadein A 0 -150,0]
+[charaFadein E 0 150,0]
+[charaShake E 0.02 3 3 0.8]
+[wt 1.2]
+
+＠カリギュラ
+…………見事なり宮本武蔵。[r]美神ウェヌスの猛攻を、よくぞ[#凌:しの]いだ。
+[k]
+
+＠カリギュラ
+相当[#抑えているな]、これは。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠マシュ
+カリギュラさん！[r]武蔵さんの、剣を……素手で掴んで……！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠カイニス
+ンだよ邪魔すんのかカリギュラァ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFace A 5]
+[charaFadein E 0.1 150,0]
+[charaFadein A 0.1 -150,0]
+
+＠カリギュラ
+先刻の一閃。武蔵が本気で振り抜いていれば[r]おまえの腕は飛び、盾の娘の首も宙を舞っていたぞ。
+[k]
+
+＠カリギュラ
+分からぬおまえではあるまい。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+＠カイニス
+……ッ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFace A 5]
+[charaFadein E 0.1 150,0]
+[charaFadein A 0.1 -150,0]
+＠カリギュラ
+ここから先は余の役目。[wt 0.5][charaFace E 5][messageShake 0.02 3 3 0.3][r]フンッ！
+[k]
+
+[messageOff]
+
+[se ad7]
+[wt 0.5]
+
+[se ad863]
+[seVolume ad863 0 0.6]
+[wt 0.4]
+[seStop ad863 0.6]
+
+[charaFace A 2]
+[charaShake A 0.02 3 3 0.4]
+[wt 0.5]
+
+[charaFace A 5]
+[se ad44]
+[wt 0.8]
+[se ad7]
+[charaEffect A bit_talk_quickmove]
+[charaFadeout A 0.2]
+[wt 1.0]
+
+[charaFace E 0]
+
+＠カリギュラ
+我が[#掌:てのひら]は裂けたが……[r]まずは一刀、落としたぞ。
+[k]
+
+＠カリギュラ
+四刀遣いの一刀を落としたところで、[r]如何ほどの効果があるかは分からんがな。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠マシュ
+ありがとう、ございます……[r]カリギュラさん！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠カリギュラ
+宮本武蔵、シャーロック・ホームズ。[r]どちらも英霊としての全力を出し切れてはいまい。
+[k]
+
+＠カリギュラ
+故に、付け込む隙がある。
+[k]
+
+＠カリギュラ
+たとえば[#其処:そこ]の宮本武蔵。万全の状態であれば[r]その剣速に追いつくのは難しいが……
+[k]
+
+＠カリギュラ
+精神と肉体に[#乖離:かいり]がある今なれば、[r]ただ観察するだけでいい。隙は無限に見出せよう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠マシュ
+そ、そう……でしょうか……
+[k]
+
+[charaFace B 4]
+＠マシュ
+わたしには、もう……[r]立っている事、さえ……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_24 1.0]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠カリギュラ
+[f large]膝[messageShake 0.02 3 3 0.4]を突くな！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠カリギュラ
+既に言った！[r]おまえは、おまえだけは、決して膝を屈してはならない。
+[k]
+
+[charaFace E 5]
+＠カリギュラ
+おまえの在り方を余は[#眩:まぶ]しく思う。[r]盾の娘、マシュ・キリエライト。
+[k]
+
+＠カリギュラ
+[#盾:守り]にすべてをかける者は、[r]万軍を前に戦い続ける英雄の[#後裔:こうえい]であろう。
+[k]
+
+＠カリギュラ
+我らローマの守護たる[#軍神:マルス]の望む在り方だ！[r]そして、マルスの加護受けし先達の在り方！
+[k]
+
+[messageOff]
+[fadeout white 0.5]
+[bgm BGM_EVENT_82 0.5 0.4]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+
+[scene 34600]
+
+[pictureFrame cut063_cinema]
+[cameraFilter gray]
+
+[wt 0.5]
+
+[fadein white 0.5]
+[wait fade]
+[wt 1.2]
+
+
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+[scene 92501]
+
+[pictureFrame]
+[cameraFilter normal]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_82 0.5 1.0]
+[fadein white 0.5]
+[wait fade]
+
+
+＠マシュ
+…………はい！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth A 5]
+[charaDepth C 4]
+
+
+[charaFace A 5]
+[charaFace C 5]
+[charaFadein A 0.1 0]
+[charaFadein C 0.1 2]
+[wt 1.0]
+[se ad671]
+[seVolume ad671 0 0.6]
+[seStop ad671 0.2]
+[charaMoveScale A 1.05 0.2]
+[charaMoveScale C 1.05 0.2]
+[wt 1.2]
+
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠カリギュラ
+……さて。[#漸:ようや]く、頃合いであろうな。
+[k]
+
+＠カリギュラ
+女神の歌に抗い続けた魂にこそ、[r]我が力は届くであろう。
+[k]
+
+[charaFace E 2]
+＠カリギュラ
+僅かで良い、時を稼げ。[r]マシュ・キリエライト！　[%1]！
+[k]
+
+＠カリギュラ
+宝具を使用する！
+[k]
+
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠マシュ
+は、はい！
+[k]
+
+[bgm BGM_EVENT_82 1.0 0.4]
+
+
+
+？1：分かっ……た……
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_82 1.0]
+[wt 1.0]
+
+？1：あれ？
+？！
+
+[charaFace B 4]
+＠マシュ
+先輩？
+[k]
+
+
+？1：誰か……が……唄ってる……？
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠カイニス
+ン。おい、テメェどうした[line 3]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+
+
+
+[blur lens 2.0 3 20]
+[cameraMove 0.8 2,-2 1.02]
+[wt 0.8]
+[cameraMove 0.4 -1,1 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.00]
+[wt 1.0]
+
+
+[wipeout openEye 1.0 1.0]
+[wt 0.6]
+
+[wipein openEye 1.0 1.0]
+[wait wipe]
+[wt 0.4]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+マスター！？
+[k]
+
+[charaFace B 2]
+＠マシュ
+待ってくださいカリギュラさん！[r]先輩が……！
+[k]
+
+？1：マシュ……！
+
+？！
+
+[messageOff]
+[wt 0.1]
+
+[wipeout openEye 0.3 1.0]
+[wait wipe]
+
+[wipein openEye 0.3 1.0]
+[wait wipe]
+[wt 0.4]
+
+[wipeout openEye 0.5 1.0]
+[wait wipe]
+
+[wipein openEye 0.5 1.0]
+[wait wipe]
+[wt 1.0]
+
+[wipeout openEye 1.0 1.0]
+[wait wipe]
+
+[blurOff lens 0.1]
+[charaFadeout B 0.1]
+
+[charaEffectDestroy R bit_talk_mind_poll_02]
+[scene 10000]
+[wt 1.0]
+
+[wipein openEye 0.1 1.0]
+[wait wipe]
+
+＠マシュ
+先輩……！
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

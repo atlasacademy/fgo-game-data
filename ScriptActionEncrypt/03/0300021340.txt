@@ -1,0 +1,592 @@
+
+
+＄03-00-02-13-4-0
+[soundStopAll]
+
+
+[charaSet A 8001400 1 マシュ]
+[charaSet B 98002000 1 フォウ]
+[charaSet C 1033001 1 シグルド]
+[charaSet D 2031001 1 ナポレオン]
+[charaSet E 3012001 1 ブリュンヒルデ]
+[charaSet F 3033000 1 オルトリンデ]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[scene 10000]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.7]
+
+[effect bit_talk_kengekiall02]
+[wt 0.1]
+[se ad32]
+[wt 0.4]
+[se ad32]
+[wt 0.1]
+[se ad32]
+
+[wt 0.2]
+
+[wipeout leftToRight 0.1 1]
+[wait wipe]
+[scene 60900]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.1]
+[wipein rightToLeft 0.4 1]
+[charaScale H 1.4]
+[charaEffect H bit_talk_rarrow01or 1 F]
+[charaPut H 1200,1200]
+[wait wipe]
+
+[charaFace D 2]
+[charaPut H -50,-100]
+[wt 0.3]
+[cueSe Battle bac423]
+[wt 0.3]
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.5]
+[charaMove A -15,0 0.2]
+[charaFadeout A 0.2]
+[se ad73]
+[wt 0.6]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaPut H 0,200]
+[charaEffect H bit_talk_explosion]
+[se ad609]
+[seVolume ad609 0 0.7]
+[charaEffect H bit_talk_14]
+
+[se ad708]
+[wt 0.6]
+[seStop ad708 0.2]
+
+[wt 0.4]
+
+[cueSe Battle bac234]
+[shake 0.05 1 4 1.0]
+[effect bit_talk_impactlanding]
+[wt 3.0]
+
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+[se ade18]
+[seVolume ade18 0.0 0.7]
+[wt 0.5]
+[seStop ade18 0.8]
+[wt 1.5]
+
+[charaFace A 2]
+
+＠マシュ
+ムスペル巨人種及び氷の獣、撃破！[r]地下から上がってきた敵性存在はこれですべてです！
+[k]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+＠マシュ
+同時に、大橋の向こうから……[r]新たな敵性存在一騎の接近が視認できます。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠フォウ
+フォ[line 3]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ade74]
+[seVolume ade74 0 0.4]
+[wt 0.1]
+[seVolume ade74 1.0 1.0]
+[wt 1.2]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.4 1]
+[wt 0.2]
+[seStop ade74 0.1]
+
+＠シグルド
+ク。クク。いいぞ。[bgm BGM_EVENT_90 0.1]
+[k]
+
+＠シグルド
+以前に比べても随分と勢いがある。[r]個々が急激な変化を遂げた訳でもあるまいに。
+[k]
+
+＠シグルド
+そうまで変わるものか。[r]ヒトの仔、ヒトの英霊ども。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ナポレオン
+ハッ！[r]英霊はお互いさまだろう、大英雄？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠シグルド
+フ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠ブリュンヒルデ
+シグルド……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠シグルド
+ン[line 3]
+[k]
+
+＠シグルド
+久しいな。[r]封印された直後に顔を見たのが最後だが。
+[k]
+
+＠シグルド
+おまえもまた汎人類史からの英霊であるのだろう。[r]ならば、俺と戦う意味はあるか。
+[k]
+
+[charaFace C 1]
+
+＠シグルド
+戦乙女の長姉、大神の娘なりしブリュンヒルデ。[r]来い。半神であれば殺し甲斐もある。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠ブリュンヒルデ
+…………[#他人行儀:たにんぎょうぎ]、なのですね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠シグルド
+他人だ。[r]俺にとってはな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ブリュンヒルデ
+貴方は[#異聞帯:ロストベルト]のサーヴァントであるとでも？[r]瞳の色が違う程度で、私は、私の獲物を[#違:たが]えない。
+[k]
+
+＠ブリュンヒルデ
+貴方はシグルド、シグムンドの子。[r]あらゆる能力に優れた戦士の王に他ならない。
+[k]
+
+[charaFace E 9]
+
+＠ブリュンヒルデ
+私の存在が告げている。[r]貴方は、この私が[#愛:ころ]すべき対象なのだと。
+[k]
+
+[charaFace E 10]
+
+＠ブリュンヒルデ
+……こんな事は本当ならば起こり得ない。[r]……私の行為が、私の狂気が、正しきを為すなどと。
+[k]
+
+＠ブリュンヒルデ
+けれど、貴方は[#異聞帯:ロストベルト]の側に立っている。[r]人理の敵としての道を選んだ。
+[k]
+
+[messageOff]
+[wt 0.8]
+[charaFace E 5]
+[wt 0.4]
+
+＠ブリュンヒルデ
+だから[line 3][r]…………死んで、くれますね。シグルド。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 0,400]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠シグルド
+死ぬのはおまえだ。[r]戦乙女。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[cueSe Battle bac166]
+[charaEffect H bit_talk_17]
+[charaMove H 1 1.5]
+[wt 2.0]
+[cueSeStop bac166 0.3]
+
+[fadeout white 1.5]
+[se ad606]
+[wait fade]
+
+[charaEffectStop H bit_talk_17]
+[charaPut H 2000,2000]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.1]
+
+[fadein white 2.0]
+[wait fade]
+
+[wt 1.0]
+
+＠オルトリンデ
+……。[r]……。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠マシュ
+更に一騎が飛来……！[r]彼女は、ワルキューレ最後の統率個体です！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠フォウ
+フォフォウ、フォウ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ナポレオン
+来ちまったのかよ。[r]道理か。あの様子じゃ、未練もあるかと思っちゃいたさ！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_90 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ブリュンヒルデ
+ワルキューレ・オルトリンデ。[r]退きなさい。貴女は、姉妹たちの願いを聞いた筈。
+[k]
+
+＠ブリュンヒルデ
+ならば私と戦う意味はなく、必要もなく、[r]私とシグルドの[#逢瀬:ころしあい]を阻むものではありません。
+[k]
+
+[charaFace E 8]
+
+＠ブリュンヒルデ
+お願い。[r]退いて。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠オルトリンデ
+お姉様[line 3]
+[k]
+
+[messageOff]
+[se ad706]
+[wt 0.2]
+[seStop ad706 0.3]
+[wt 0.7]
+[charaFace F 8]
+
+＠オルトリンデ
+私、考えました。考えてみました。[r]スルーズとヒルドが最期に述べていた言葉の意味を。
+[k]
+
+[charaFace F 8]
+
+＠オルトリンデ
+でも、私には分かりません。[r]僅かに感じることはできても、言葉に、できない。
+[k]
+
+＠オルトリンデ
+だから私は槍を振るいます。[r]スルーズとヒルドがしたのと、同じように……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 1.0]
+[charaFace F 0]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth H 2]
+[charaDepth F 1]
+[charaFace F 5]
+
+[charaPut H 1]
+[charaEffect H bit_talk_charge_red]
+
+[se ad61]
+[se ad556]
+[seVolume ad556 0 0.6]
+
+[wt 1.0]
+
+＠オルトリンデ
+戦闘機能を強制拡大。[r]機体性能、出力を過剰暴走状態にて引き上げます。
+[k]
+
+[messageOff]
+[seStop ad61 0.5]
+[seStop ad556 0.5]
+[se ad574]
+
+[flashin once 0.2 0.5 FFFFFFFF FFFFFF00]
+[charaPut H 2400,2400]
+[charaEffectStop H bit_talk_charge_red]
+
+[charaTalk depthOn]
+[wt 1.0]
+
+[charaFace F 2]
+
+[bgm BGM_EVENT_80 0.1]
+
+＠オルトリンデ
+過剰暴走。過剰暴走。[r]魔剣グラムの魔力と同調し[line 3]連携戦闘を開始します！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠シグルド
+俺に付いてくるつもりか。[r][#小癪:こしゃく]な。だが面白い。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[cueSe Battle bac170]
+
+[wt 0.7]
+
+[charaFace D 5]
+
+＠ナポレオン
+いいや違うね、そりゃあ健気って言うのさ魔剣使い！[r]おまえさん、腕の割には女心が分からない朴念仁だな！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠シグルド
+…………フン。増したのは勢いだけではなかったか。[r]耳障りな軽口も増しているな、弓兵め。
+[k]
+
+[charaFace C 12]
+
+＠シグルド
+近代の男が戦乙女どもの何が分かると？[r]貴様らに神秘など理解不能なものだろうに。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ナポレオン
+いいやぁ？　俺はこれでも神話好きでね。[r]遠征中だろうとピラミッドに潜るくらいさ。
+[k]
+
+[charaFace D 5]
+
+＠ナポレオン
+なんで、この光景は胸が躍る。[r]魔剣使いと戦乙女の協調ってのは如何にも神秘的だ！
+[k]
+
+＠ナポレオン
+そして、だ。望んだ訳じゃあないが……[r]英霊として、神秘を壊すのも得意と来る！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠シグルド
+やってみろ。[r]既に二度、おまえの砲撃は俺には通らなかった。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠ナポレオン
+オーララ！　一度や二度がなんだって話さ！[r]最後には勝つ！　三度目こそ風穴だ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠マシュ
+わたしたちには五度目です！[r]そして、今度こそ、その魔剣を防ぎきります！
+[k]
+
+？1：戦闘準備！
+？2：思い切りやろう、マシュ！
+
+？！
+
+[messageOff]
+[se ad672]
+[wt 1.0]
+
+[charaFace A 2]
+
+＠マシュ
+[#霊基外骨骼:オ ル テ ナ ウ ス]・出力上昇。戦闘モード継続中[line 3][r]各種装備スタンバイ。いけます！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠フォウ
+フォウフォウ！　フォーーーウ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠ブリュンヒルデ
+シグルド……[r]シグルド……
+[k]
+
+[charaFace E 2]
+
+＠ブリュンヒルデ
+…………出逢えたからには、此処で、殺します！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

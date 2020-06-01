@@ -1,0 +1,734 @@
+
+＄94-03-35-28-5-0
+[soundStopAll]
+
+
+[charaSet A 25001000 1 アビゲイル]
+[charaSet B 5016001 1 ジェロニモ]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[scene 10310]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 -528,0]
+[wt 0.1]
+[charaMove A -480,0 0.6]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V010]
+（こそこそ……）[wait tVoice]
+[k]
+
+[charaMove A -510,0 0.6]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V020]
+　　　　　　　　　　　　　　（そろりそろり……）[wait tVoice]
+[k]
+
+[charaMove A -490,0 0.3]
+[wt 0.5]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V030]
+　　（ぴとっ　じーっ……）[wait tVoice]
+[k]
+
+？1：（アビー……？）
+？2：声をかけていいのかな……？
+？！
+
+[charaFace A 8]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V040]
+あっ[line 3]マスター。[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.2]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V050]
+ごきげんよう。[wait tVoice]
+[k]
+
+[charaFace A 10]
+
+
+＠アビゲイル
+[tVoiceUser ValVoice_2500100 0_V060 ValVoice_2500100 0_V070]
+かくれんぼの最中[&かい、:なの？[line 3]]ですって？[r]い、いいえ？　そうではないのだけれど。[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V080]
+その、すこし、[r]出て行く機会を見計らっていて[line 3][wait tVoice]
+[k]
+
+？1：……あれは[line 3]ジェロニモ？
+？！
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[cameraMove 0.1 -72,0 1.2]
+[charaTalk B]
+[charaFace B 0]
+[charaScale B 0.83]
+[charaFadein B 0.1 256,-48]
+[wt 1.0]
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+＠ジェロニモ
+[line 6]。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[cameraMove 0.1 0,0 1.0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V090]
+ええ、ジェロニモさん……。[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V100]
+休憩所の椅子に掛けたまま、[r]身動き一つされないの……。[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V110]
+たぶん……[r]居眠りをされていらっしゃるみたい……？[wait tVoice]
+[k]
+
+？1：目が開きっぱな[&しだ:し]……器用[&な:だな]……
+？2：暖房の効きすぎで眠くなったかな？
+？！
+
+[se ade74]
+[seVolume ade74 0 0.05]
+[seVolume ade74 1.5 0.9]
+[wt 1.5]
+[seStop ade74 0.1]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 2]
+[wt 0.2]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V120]
+まぁ、スタッフの[line 3]さん、こんにちは。[r]いいえ、どういたしまして。[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V130]
+お口に合いましたか？[r]そう、よかった！[wait tVoice]
+[k]
+
+[se ad8]
+[wt 1.0]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 0]
+[wt 0.2]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V140]
+うふふっ、スタッフの[line 3]さん。[r]一人一個ずつですよ。[wait tVoice]
+[k]
+
+？1：通りすがりのカルデアスタッフたちが……
+？2：皆、アビーに会釈したり、笑いかけていく……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V150]
+マスター……その、これはね？[r]説明をいたしますと[line 3][wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V160]
+私、チョコレートを作ってみたの。[r][#厨房:ちゅうぼう]でキャットさんに教わりながら。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V170]
+カルデアの皆さんにお渡しできるように。[r]すこし小さめのものを、たくさんよ。[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V180]
+型から抜くのが大変で、指がもうくたくた。[r]でもとっても楽しかったわ？[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V190]
+最初は、子ぐま型か、蝶々リボン型の[r]チョコがよいかしら？　と思ったのだけれど……[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V200]
+『悪いことは言わぬヤメテおけ、[r]　もっとシンプルがよいぞ』ってキャットさんが。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V210]
+正解だったわ……。[r]キャットさんのおっしゃる通り。[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V220]
+[line 3]ええ、みんなよ。[r]サーヴァントの皆さんのぶんも作ったの！[wait tVoice]
+[k]
+
+[charaFace A 10]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V230]
+お部屋から出てこない方以外には[r]ほとんどお渡しできたと思うのだけれど……[wait tVoice]
+[k]
+
+？1：なるほど。アビーらしいね
+？2：（……？　……？？　……？？？）
+？！
+
+[charaFace A 4]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V240]
+………………。[wait tVoice]
+[k]
+
+？1：ジェロニモにも……渡してあげた[&い:いの]？
+？！
+
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V250]
+…………ジェロニモさん、[r]甘い物なんてご気分を害されないかしら？[wait tVoice]
+[k]
+
+[charaFace A 10]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V260]
+お休みのお邪魔じゃないかしら……？[r]その、できたら、マスター……一緒に……。[wait tVoice]
+[k]
+
+？1：…………アビー
+？2：もう、[&きみ:あなた]も知っているはず
+？！
+
+？1：勇気を出して、一人で渡しておいで？
+？2：ここでちゃんと見てる[&よ:から]、大丈夫
+？！
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V270]
+……マスター……。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V280]
+そうね……わかった。[r]勇気を、出して……はいっ。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[wt 0.3]
+[se ade74]
+[seVolume ade74 0 0.6]
+[wt 1.5]
+
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[seStop ade74 0.3]
+[wait wipe]
+[charaFadeout A 0.1]
+[cameraMove 0.1 -72,0 1.2]
+[charaTalk A]
+[charaFace A 4]
+[charaScale A 0.83]
+[charaFadein A 0.1 -160,-48]
+[wt 1.0]
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+
+[charaFace B 0]
+[charaScale B 0.83]
+[charaFadein B 0.4 300,-48]
+[wt 0.1]
+[charaMove B 256,-48 0.6]
+[wt 1.0]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V290]
+…………[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V300]
+[line 6]？[wait tVoice]
+[k]
+
+＠ジェロニモ
+……？[r][line 6]。
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V310]
+[line 6]。[wait tVoice]
+[k]
+
+＠ジェロニモ
+…………。
+[k]
+
+[charaFace B 1]
+
+＠ジェロニモ
+[line 3]。
+[k]
+
+[charaFace A 8]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V320]
+！[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V330]
+[line 6]。[wait tVoice]
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaScale A 1.0]
+[charaScale B 1.0]
+[cameraMove 0.1 0,0 1.0]
+[wt 1.0]
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[wt 0.7]
+
+？1：……ジェロニモがちゃんと受け取ってくれた
+？2：わかってはいたけど……よかった……
+？！
+
+[fadeout black 1.5]
+[wait fade]
+[scene 10400]
+[wt 1.5]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V340]
+…………ジェロニモさんたら、あえて[r]型抜きに失敗した方をお選びになったの！[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V350]
+本当はぜんぶどれも“鍵穴”の形をしているのだけど……[r]これは“トーテムポール”にもちょっぴり似てるって！[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V360]
+そう言ってお笑いになったわ？[wait tVoice]
+[k]
+
+？1：よかったね、アビー
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V370]
+ええ……！[r]ありがとう、マスター。[wait tVoice]
+[k]
+
+？2：急がず、ちょっとずつの前進でいいからね
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V380]
+……うん……。[r]マスターのおかげだわ。[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 3]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V390]
+まだ胸が……どきどきしてる……。[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V400]
+ふぅ……聖バレンタインの日、かぁ……。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V410]
+セイレムにいた頃は、[r]こんなの考えられなかったな……。[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V420]
+マスター、ご存じかしら？[r]私の村ではね、クリスマスのお祭りも無いの。[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V430]
+新年を迎える時だって、[r]とてもささやかなお祝いだけ。[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V440]
+だから[line 3]頭ではわかっていても、[r]カルデアで実際に体験すると驚いてばかり。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V450]
+[#厨房:ちゅうぼう]でとてもたくさんの豪勢な材料を見た時には、[r]私、目をまわしてしまったもの！[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V460]
+………………。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V470]
+…………ねえ、マスター？[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V480]
+日々のお祈りを欠かすことはないけれど……。[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V490]
+でも、すぐ目の前にある幸せにむかって、[r]怖がらず、一歩ずつ近づいていくのも……。[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V500]
+それもまたきっと、大切なことね？[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V510]
+自分がどこか変わってしまう……[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V520]
+何か……大切な想いを置き去りに……[r]忘れてしまうことが……私……怖い……。[wait tVoice]
+[k]
+
+？1：……それが生きることなのかも
+
+[charaFace A 8]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V530]
+生きる……[r]私、サーヴァントなのに……？[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V540]
+恐ろしい力を持った、フォーリナーなのに？[wait tVoice]
+[k]
+
+？2：[&オレ:わたし]も、本当は怖い……そんな日もあるよ
+
+[charaFace A 8]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V550]
+…………マスターも……？[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V560]
+怖いのは……[r]私だけじゃないのね……。[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 4]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V570]
+………………うん……。[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V580]
+……決めた。[wait tVoice]
+[k]
+
+[charaFace A 2]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V590]
+きょうの……いちばんの勇気を出して[r]お伝えしなきゃ……！[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V600]
+ねえ、マスター？[r]こちらの贈り物、受け取ってくださる……？[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+？1：これ……は……
+？2：鍵穴型じゃなく、“鍵”の形？
+？！
+
+[charaFace A 3]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V610]
+……マ、マスターへの贈り物は……ね？[r]他の方のとは違うの……[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V620]
+と……特別……なの……。[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V630]
+ごめんなさい、マスター。[r]こんなの……悪い子のすること……だわ……。[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V640]
+あなただけに……私だけが……[r]良く思われたいだなんて……。[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V650]
+いけないことよ……とても。[r]でも……どうしても気持ちを伝えたくて……。[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V660]
+他の方みたいに綺麗な飾り付けは[r]出来なかったけれど……。[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V670]
+それでも、私のわがままを[r]受け止めてくださるなら……[wait tVoice]
+[k]
+
+[charaFace A 3]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V680]
+すごく……うれしいの……。[wait tVoice]
+[k]
+
+[charaFace A 8]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V690]
+…………マスター？[wait tVoice]
+[k]
+
+？1：…………………………（失神＆卒倒）
+
+[wipeout upToDown 0.4 2]
+[bgmStop BGM_EVENT_2 0.4]
+[wait wipe]
+[wt 0.3]
+[se ad58]
+[seVolume ad58 0 0.6]
+[wt 0.5]
+[seStop ad58]
+[charaFadeout A 0.1]
+[scene 10000]
+[wt 0.3]
+[wipein downToUp 0.1 2]
+[wait wipe]
+[fadeout black 0.1]
+[wait fade]
+[cameraMove 0.1 -72,72 1.2]
+[charaTalk A]
+[charaFace A 10]
+[charaScale A 0.83]
+[charaFadein A 0.1 72,-148]
+[scene 10400]
+[wt 0.5]
+[fadein black 1.0]
+[wait fade]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V700]
+マ、マスタぁー！？[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V710]
+チョコの箱をがっちり抱きしめたまま[r]床にお倒れに……！？？[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V720]
+マスタ、マスタぁー！？[r]しっかりしてぇ、目をあけてぇー！[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V730]
+嗚呼、神様……！[r]どうかマスターをお救いください……！[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.7]
+
+[charaScale H 2.0]
+[charaPut H 72,500]
+[charaEffect A bit_talk_valentine_brilliant]
+[charaEffect H bit_talk_radiallight02]
+[se adm20]
+
+[wt 2.0]
+
+[fadeout white 2.0]
+[wait fade]
+
+？2：……！！（アビーを[&肩車:抱っこ]して全速力でカルデア一周）
+
+[bgmStop BGM_EVENT_2 0.3]
+
+[messageOff]
+[cameraMove 0.4 0,0 1.3]
+
+[charaFace A 10]
+
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V740]
+マ、マスター？[twt 1.5][line 3][twt 0.8][se ad480][charaFadeout A 0.1]きゃっ！？[wait tVoice]
+[k]
+
+[se ad8]
+[wt 1.5]
+
+[messageOff]
+[se bac343]
+[wt 0.7]
+[seStop bac343 1.5]
+
+[wt 2.0]
+
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V750]
+マ、マスター、ひゃぁっ……！？[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V760]
+　　……あのっ……急にそんな……だめよ……[wait tVoice]
+[k]
+
+＠アビゲイル
+[tVoice ValVoice_2500100 0_V770]
+　　　　　　　　　　　　　　きゃ、きゃぁぁぁぁぁ……[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+
+？！
+
+
+
+[wt 1.0]
+[soundStopAll]
+[end]

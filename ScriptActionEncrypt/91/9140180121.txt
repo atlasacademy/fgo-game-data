@@ -1,0 +1,355 @@
+
+
+
+＄91-40-18-01-2-1
+
+[soundStopAll]
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 4018000 1 ケツァル・コアトル]
+[charaSet C 6026001 1 ミル・ドスカラス]
+[charaSet D 98115300 1 ホームズ]
+[charaSet F 98115000 1 エフェクト用]
+[charaSet G 98115000 1 エフェクト用]
+[charaSet H 98115000 1 エフェクト用]
+[charaFilter C silhouette 000000FF]
+
+[scene 20300]
+
+[wipeFilter cinema 0.5 0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk off]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 0.1 300,-80]
+[charaFadein C 0.1 -300,-80]
+[charaPut G 1]
+[charaEffect G bit_talk_43h]
+[charaPut F 1]
+[se bac1]
+[charaMove B 300,-40 0.2]
+[wt 0.1]
+[charaMove C -300,-40 0.2]
+[wt 0.4]
+
+[charaMove B 100,-30 0.2]
+[charaMove C -100,-30 0.2]
+[wt 0.2]
+[se bac150]
+[charaEffect F bit_talk_13]
+[charaMove B 300,-60 0.2]
+[charaMove C -300,10 0.2]
+[wt 0.5]
+
+[charaMove B 100,-30 0.2]
+[charaMove C -100,-30 0.2]
+[wt 0.2]
+[se bac148]
+[charaEffect F bit_talk_13]
+[charaMove B 300,10 0.2]
+[charaMove C -300,-60 0.2]
+[wt 0.1]
+[charaMove B 100,-30 0.2]
+[charaMove C -100,-30 0.2]
+[wt 0.2]
+[se bac149]
+[charaEffect F bit_talk_13]
+[wt 0.1]
+[se bac150]
+[charaEffect F bit_talk_13]
+[wt 0.1]
+[charaMove B 300,-40 0.2]
+[charaMove C -300,-40 0.2]
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+
+[wipeOff]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_43h]
+[wait wipe]
+
+[charaTalk on]
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ホームズ
+ふむ、まさに空中戦と呼ぶに相応しい展開だが、[r]試合はミル・ドスカラス優位で進んでいる。
+[k]
+
+？1：ケツァル・コアトルの技は効いてないの？
+
+？！
+
+＠ホームズ
+見かけばかりが派手な技だ。ミル・ドスカラスほどの[r]使い手であればたやすくタイミングを外せる。
+[k]
+
+＠ホームズ
+一方、彼の技はミス・ケツァル・コアトルに[r]着実にダメージを与えている。
+[k]
+
+＠ホームズ
+なかなかバリツが足りているようだ。[r]軽快だが適確に急所を狙っている。
+[k]
+
+[messageOff]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.2]
+
+[wipeFilter cinema 0.5 0]
+
+
+[se bac153]
+[wt 0.3]
+
+[charaPut H -50,-50]
+[charaEffect H bit_talk_13]
+
+[se bac148]
+[wt 0.2]
+
+[charaPut G 50,50]
+[charaEffect G bit_talk_13]
+
+[se bac149]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-40]
+[wt 0.3]
+
+[charaEffect B bit_talk_14]
+[se bac151]
+[charaFace B 5]
+[charaShake B 0.05 6 6 0.3]
+[wt 0.1]
+[charaMove B 0,-100 0.2]
+[wt 0.6]
+[charaFace B 0]
+[charaMove B 0,-40 0.3]
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-40]
+
+＠ミル・ドスカラス
+（おいおい。結構いいの入ってんだろ！？[r]　なんで倒れねえんだ、この姐御？）
+[k]
+
+＠ミル・ドスカラス
+（つーかいま、確実に落ちたよな？[r]　なのに起き上がってきたのはともかくとして[line 3]）
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut F 1]
+[charaDepth F 5]
+[charaDepth B 7]
+[charaEffect F bit_talk_gouka]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-40]
+[se ad327]
+
+[wt 1.5]
+
+[seStop ad327]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_gouka]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-40]
+
+＠ミル・ドスカラス
+（やべぇ、やべぇってアレ！　気功の跳ね上がりが[r]　尋常じゃねえ、[#托塔天王:たくとうてんのう]のオヤジかっつーの！）
+[k]
+
+＠ミル・ドスカラス
+（大山だよ、大山！　あんな筋力お化けに掴まれたら[r]　霊基どころか[#魂魄:こんぱく]まで砕かれかねねえぞ！？）
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaDepth F 7]
+[charaDepth B 5]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 0,-40]
+
+＠ケツァル・コアトル
+困惑が顔に出ているわよ、マスカラ。[r]折角だから疑問の答えを教えてあげます。
+[k]
+
+＠ケツァル・コアトル
+アナタの攻撃は適切で、無駄がなくて、とても痛い。[r]でもそれは“我慢できる”痛みよ。
+[k]
+
+＠ケツァル・コアトル
+なぜなら[line 3]そう、なぜならば！
+[k]
+
+[charaFace B 1]
+
+＠ケツァル・コアトル
+[#悪役:ルード]の攻撃では[#善玉:リンピオ]は決して倒れないのデース！[r]むしろ、打たれる度に気力が湧いてきマース！
+[k]
+
+
+[charaScale B 1.2]
+[charaPut G 1]
+[charaEffect G bit_talk_41]
+
+＠ケツァル・コアトル
+そんなワケで覚悟してくだサーイ！[r]いま必殺の、シウ・コアトル・ドライバー[line 3]
+[k]
+
+[messageOff]
+[charaPut F 1]
+[charaEffect F bit_talk_36]
+[se ad39]
+
+[wt 2.0]
+
+[charaPut F 1200,1200]
+[charaPut G 1200,1200]
+[charaFadeout B 0.1]
+[seStop ad39]
+[wt 0.1]
+[charaEffectStop F bit_talk_36]
+[charaEffectStop F bit_talk_41]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ミル・ドスカラス
+いや、さすがにそいつは御免[#被:こうむ]る！[r]参った参った、俺の降参だ！
+[k]
+
+[charaFadeout C 0.1]
+[bgmStop BGM_EVENT_24 0.3]
+[wt 0.1]
+
+[wipeOff]
+[wait wipe]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+それはギブアップと受け取って結構ですね？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.2]
+[charaScale B 1.0]
+
+[bgm BGM_EVENT_4 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ミル・ドスカラス
+ああ。これ以上は割が合わねぇ。
+[k]
+
+＠ミル・ドスカラス
+これは気楽に受けた仕事だ、[r]命の取り合いならもっと高値ふっかける。
+[k]
+
+＠ミル・ドスカラス
+今日のところは受けきったアンタの勝ちだ。[r]それでいいよな、ルチャの姉さん？
+[k]
+
+＠ミル・ドスカラス
+相手が負けを認めれば試合は終わり。[r]それがプロレスのいいところだろ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFadein B 0.1 2]
+
+＠ケツァル・コアトル
+ハイ、その通りデース！[r]アナタとはちょっと気が合いそうデース！
+[k]
+
+＠ケツァル・コアトル
+……ええ、だからこそ残念。[r]次に出逢える縁があったら、その時は素顔を見せてね？
+[k]
+
+＠ケツァル・コアトル
+いつまでもシャイでいると、本当に心まで[r]消えてしまうわよ、アナタ？
+[k]
+
+＠ミル・ドスカラス
+は[line 3]そいつはどうも。[r]俺はできれば会いたくねえや。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ミル・ドスカラス
+しかしルチャ・リブレも奧が深いじゃねえの。[r]俺も、テメエの武術以外に関心を持つかねぇ……
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[charaEffect C bit_talk_quickmove]
+[charaMove C 0,100 0.1]
+[charaFadeout C 0.1]
+[se ad73]
+[wt 1.0]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_4 2.0]
+[wait fade]
+[soundStopAll]
+[end]

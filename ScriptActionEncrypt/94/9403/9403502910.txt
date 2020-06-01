@@ -1,0 +1,311 @@
+
+
+＄94-03-50-29-1-0
+[soundStopAll]
+
+
+[charaSet A 1098164100 1 大奥女中]
+[charaSet B 98110000 1 柳生但馬守]
+[charaSet C 6014001 1 マタ・ハリ]
+[charaSet D 10003000 1 殺生院キアラ]
+[charaSet E 1098163800 1 春日局]
+[charaSet F 5030001 1 シェヘラザード]
+[charaSet G 6037001 1 カーマ]
+[charaSet H 6037001 1 カーマ２]
+[charaSet I 3030000 1 パールヴァティー]
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+[scene 71700]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠大奥女中
+ウフフ……ドウカ、ドウカ、お情けを……。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+[cueSe Battle bac6]
+[effect bit_talk_h_slash01]
+[wt 0.2]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaFadeout B 0]
+[fowardEffect bit_talk_14]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0 1]
+[charaShake A 0.04 4 4 0.5]
+[wt 0.3]
+[charaMove A 0,-30 0.5]
+[charaFadeout A 0.4]
+[wt 0.3]
+[se ade41]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠マタ・ハリ
+うーん。こっちを見るなり、[r]着物をはだけながら寄ってくるわね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 11]
+[charaFadein E 0.1 1]
+
+＠春日局
+[#不邪淫戒:ふじゃいんかい][line 3]夫婦以外で[r]淫らなことをしてはならない、というものでしたか。
+[k]
+
+[charaFace E 7]
+＠春日局
+心配するまでもなく、このような奇怪な人形相手では[r]誰もその気にならぬでしょう！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠シェヘラザード
+！　いえ……皆様、あそこを！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_71 0.1]
+
+＠カーマ
+うふふ。うふふふ……。
+[k]
+
+？1：カーマ！
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠マタ・ハリ
+一人じゃないわよ～！？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace G 1]
+[charaFadein G 0.1 0]
+[charaFace H 1]
+[charaFadein H 0.1 2]
+[wt 1.5]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠春日局
+多くは語らず、[r]笑っているだけですが[line 3]
+[k]
+
+[messageOff]
+[charaDepth E 0]
+[charaDepth I 1]
+[wt 0.25]
+[fowardEffect bit_talk_tornado02]
+[se ad80]
+[seVolume ad80 0 0.5]
+
+[wt 0.35]
+
+[charaSpecialEffect E erasureReverse 1 0.3]
+[charaFace I 5]
+[charaFadein I 0.15 1]
+[wt 0.05]
+[seStop ad80 0.3]
+
+[wt 0.5]
+
+＠パールヴァティー
+近寄ってきますね。女中たちと同じような[r]誘惑を仕掛けてくるつもりですか。
+[k]
+
+[charaFace I 2]
+
+＠パールヴァティー
+私と同じ顔で淫らな誘惑とか、夫が誤解すると[r]困るので勘弁してほしいのですけど！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠シェヘラザード
+本物か偽物かはともかく[line 3]この階層では、[r]当人が直接五戒を破らせるために働くのでしょう。
+[k]
+
+＠シェヘラザード
+人形の女中では、[r]さすがに誘惑するにも限度がありますから。
+[k]
+
+[charaFace F 4]
+
+＠シェヘラザード
+もし、私たちがまだ操られていたままだったら、[r]こちらでも手伝いをさせられていたかもしれませんね。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠マタ・ハリ
+そんな気はするわねぇ～。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠殺生院キアラ
+うふふ。もしそうであれば、さすがに[r][#私:わたくし]と柳生様だけではどうしようもなく。
+[k]
+
+＠殺生院キアラ
+[%1]様の心身は[r]愛神カーマに[#囚:とら]われていましたかもですわ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+
+＠パールヴァティー
+皆さん、歓談は後に！　どうやらこの階層、[r]面倒な鍵などはもはや必要ない様子。
+[k]
+
+＠パールヴァティー
+打ち払っても先に進めぬという事はないでしょう。
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.2]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+[wt 1.5]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 11]
+[charaFadein I 0.1 1]
+
+＠パールヴァティー
+というか、あの顔、あの視線……[r]なんとなく、わかってしまいます。
+[k]
+
+＠パールヴァティー
+戦って傷つけ合うことだって、ある意味では[r]淫らな交わり。だから遠慮なくどうぞ[line 3]
+[k]
+
+[charaFace I 2]
+
+＠パールヴァティー
+なんて事を考えてるに決まってます！
+[k]
+
+？1：最後の階層[line 3]立ち止まってはいられない！
+？2：突破しよう！
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠殺生院キアラ
+さて……苦も楽も同じこと。[r]まさしく、これも交歓であるのは認めますが。
+[k]
+
+[charaFace D 8]
+
+＠殺生院キアラ
+なぜ一人でやろうとしないのでしょうか。[r][#私:わたくし]でしたら、[#勿体なくて]そんな事はできませんが。
+[k]
+
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_71 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,206 @@
+
+
+
+＄94-04-30-05-1-1
+
+[soundStopAll]
+
+[charaSet A 1041002 1 アストルフォ]
+[charaSet B 3036001 1 ブラダマンテ]
+
+[scene 21803]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_4 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠アストルフォ
+はい、おしまいっと！
+[k]
+
+＠アストルフォ
+後は彼女の願いを叶えなきゃだね。
+[k]
+
+＠アストルフォ
+誰が次のサンタクロースになるのか！[r]さあ、ボクの[#屍:しかばね]を越えていくのだー！
+[k]
+
+＠アストルフォ
+まあ、死ぬ気はさらさらないけど！[wt 0.8][charaFace A 8][r]あれ、じゃあどうすんだ。
+[k]
+
+＠アストルフォ
+……。[r]……。
+[k]
+
+[charaFace A 1]
+
+＠アストルフォ
+ま、いっか！
+[k]
+
+＠アストルフォ
+サンタが決まったらボクが面接して、[r]ダメだったらブッ飛ばしてやり直す！
+[k]
+
+＠アストルフォ
+子供に夢を与えるクラスなんだから、[r]ちゃんとしたサーヴァントでないとねー！
+[k]
+
+[charaFace A 3]
+
+＠アストルフォ
+マスター褒めてくれるかな？[r]ボクのこと、褒めてくれるかな？
+[k]
+
+[messageOff]
+[wipeout loveHeartIn 2.0 1.0]
+[se ade84]
+[bgmStop BGM_EVENT_4 2.0]
+[wait wipe]
+
+[branchQuestNotClear lblNotClear 3000320 4]
+[scene 66800]
+[branch lblConf]
+[label lblNotClear]
+[scene 10400]
+[label lblConf]
+
+[charaFace A 1]
+[effect bit_talk_valentine_brilliant]
+[wt 0.5]
+
+[fadeout black 0.1]
+[wait fade]
+[wipein loveHeartIn 0.1 1.0]
+[wait wipe]
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_28 0.1 0.7]
+[wt 1.0]
+
+？1：『さすが[&自分:わたし]のサーヴァント！』
+
+[charaFace A 3]
+
+＠アストルフォ
+いやー、そんなー。[r]アストルフォってば、優秀だからー。
+[k]
+
+＠アストルフォ
+なーんてねなーんてね！
+[k]
+
+？2：『えらいえらい、いいこいいこ』
+
+[charaFace A 3]
+
+＠アストルフォ
+むふー！
+[k]
+
+[charaFace A 17]
+
+＠アストルフォ
+ボクってばキミの剣だからね！[r]ああ、この言葉が現実になるなんて！
+[k]
+
+？！
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_28 2.0]
+[wait fade]
+
+[wipeout loveHeartIn 0.1 1.0]
+[wait wipe]
+[fadein black 0.1]
+[wait fade]
+
+[effectStop bit_talk_valentine_brilliant]
+
+[charaFace A 3]
+
+[scene 21803]
+[wt 0.5]
+
+[wipein loveHeartIn 2.0 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠アストルフォ
+くぅー。
+[k]
+
+＠アストルフォ
+シャルルマーニュ十二勇士のみんなー、[r]見てるかーい！
+[k]
+
+＠アストルフォ
+今のボクってばパーフェクトに[r]カッコいいぞー！
+[k]
+
+＠アストルフォ
+～♪
+[k]
+
+[messageOff]
+[se ad586]
+[charaMove A -250,0 0.7]
+[wt 0.3]
+[charaFadeout A 0.4]
+[wt 1.0]
+[seStop ad586 1.0]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 1.0 0,-50]
+[charaMove B 0,0 1.0]
+[wt 1.0]
+
+＠ブラダマンテ
+うーん……。
+[k]
+
+＠ブラダマンテ
+アーちゃんってば、[r]確かに強くなっているみたいだけど……。
+[k]
+
+[charaFace B 2]
+
+＠ブラダマンテ
+[f large]アーちゃんが！
+[k]
+
+＠ブラダマンテ
+[f large]調子に乗ると！
+[k]
+
+＠ブラダマンテ
+[f large]大抵何か起きる！
+[k]
+
+[charaFace B 0]
+
+＠ブラダマンテ
+……うん。[r]もう少し、様子を見ておこっと！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

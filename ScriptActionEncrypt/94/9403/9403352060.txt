@@ -1,0 +1,167 @@
+
+＄94-03-35-20-6-0
+
+
+
+
+[charaSet B 2025101 1 メアリー]
+[charaSet C 2025201 1 アン]
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+
+[scene 10400]
+
+[fadein black 2]
+[wait fade]
+
+
+[se ad310]
+[seVolume ad310 0 0.8]
+[wt 0.5]
+[seStop ad310 0.1]
+[wt 0.3]
+
+
+＠メアリー
+[tVoice ValVoice_202500 0_V010]
+マスター、マスターいるかい？[wait tVoice]
+[k]
+
+？1：いるよー？
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+
+＠メアリー
+[tVoice ValVoice_202500 0_V020]
+ああ、良かった。[r]留守にしていたら挫けるところだった……。[wait tVoice]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 0]
+
+[charaFace B 0]
+[charaFadein B 0.4 2]
+
+＠アン
+[tVoice ValVoice_202500 0_V030]
+もう、こういうところは奥手ですわねえ。[r]さ、マスター。少々お時間よろしいですか？[wait tVoice]
+[k]
+
+[charaFace C 0]
+
+＠アン
+[tVoice ValVoice_202500 0_V040]
+メアリー。[wait tVoice]
+[k]
+
+[charaFace B 3]
+
+＠メアリー
+[tVoice ValVoice_202500 0_V050]
+う、うん。[r]その……これ、チョコなんだ。[wait tVoice]
+[k]
+
+＠メアリー
+[tVoice ValVoice_202500 0_V060]
+バレンタインデーの。[r]うん。一応、手作り。[wait tVoice]
+[k]
+
+[messageOff]
+
+[charaTalk off]
+
+[se ad79]
+[wt 0.1]
+
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+
+
+？1：ありがとう、嬉しい！
+？！
+
+[charaTalk on]
+[charaFace B 0]
+
+＠メアリー
+[tVoice ValVoice_202500 0_V070]
+良かった……。あ、それでね？[r]このチョコを食べるとき、注意して欲しいことがあるんだ。[wait tVoice]
+[k]
+
+[charaFace C 1]
+
+＠アン
+[tVoice ValVoice_202500 0_V080]
+と言っても簡単ですわよ？[r]チョコをちょっとずつ食べるだけ。[wait tVoice]
+[k]
+
+[charaFace B 1]
+
+＠メアリー
+[tVoice ValVoice_202500 0_V090]
+あんまりガリガリと食べると、[r]健康に良くないからね！[wait tVoice]
+[k]
+
+[charaFace C 0]
+
+＠アン
+[tVoice ValVoice_202500 0_V100]
+それでは失礼しますね。[r]待っていますから。[wait tVoice]
+[k]
+
+[charaFace B 0]
+
+＠メアリー
+[tVoice ValVoice_202500 0_V110]
+待ってるよ、それじゃ！[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[charaFadeout C 0.4]
+[se ad8]
+[wait se ad8]
+[wt 0.5]
+
+
+
+[se ad182]
+[wt 1.0]
+
+？1：ん？
+？！
+
+[se ade26]
+
+[equipSet A 9805200 1 ]
+[wait equipSet A]
+[charaFace A 0]
+[charaFadein A 0.5 0,-70]
+[wt 2.0]
+[charaFadeout A 0.4]
+[wt 1.0]
+
+
+
+？1：これは……部屋の鍵だろうか……
+？！
+
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+[soundStopAll]
+[end]

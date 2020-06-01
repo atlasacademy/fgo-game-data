@@ -1,0 +1,270 @@
+
+＄91-40-13-02-1-1
+
+[soundStopAll]
+
+[charaSet A 4013001 1 メイヴ]
+[charaSet B 98001000 1 マシュ]
+[charaSet C 6021001 1 酒呑童子]
+[charaSet D 7022001 1 茨木童子]
+[charaSet E 6011001 1 荊軻]
+[charaSet F 4002001 1 イスカンダル]
+
+
+[scene 27000]
+
+[bgm BGM_EVENT_3 0.1]
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_whip02]
+[se bac104]
+[wt 0.4]
+[se bac104]
+[wt 0.6]
+
+[shake 0.05 1 4 1.0]
+[se ad211]
+[effect bit_talk_impactlanding]
+[wt 3.0]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠イスカンダル
+ううむ、これはいかん。[r]さすがにちと飲みすぎたか。
+[k]
+
+
+＠イスカンダル
+余を[#前後不覚:ぜ ん ご ふ か く]にさせるとは、恐るべきは鬼の酒か、[r]それともケルトの甘い酒か……
+[k]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+[messageOff]
+[charaShake F 0.05 3 3 0.3]
+[wt 0.3]
+[charaMove F 0,-50 0.4]
+[charaFadeout F 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠茨木童子
+[#吾:われ]もだ。団子を喰いすぎて腹が重い。いやいや[r]人は別腹、まだ百人ほどはペロリといけるのだが……。
+[k]
+
+[messageOff]
+[charaShake D 0.05 3 3 0.3]
+[wt 0.3]
+[charaMove D 0,-50 0.4]
+[charaFadeout D 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠荊軻
+zzz…………。
+[k]
+
+[messageOff]
+[charaShake E 0.05 3 3 0.3]
+[wt 0.3]
+[charaMove E 0,-50 0.4]
+[charaFadeout E 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+
+＠マシュ
+花見客の皆さんにはひとまずダウンしていただいて。[r]残るは[line 3]おや？
+[k]
+
+？1：何か不思議なことになってる
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace A 1]
+[charaFadein A 0.1 2]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+
+[bgmStop BGM_EVENT_2 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_7 0.1]
+[wt 0.3]
+
+[wt 0.5]
+[charaTalk on]
+
+[charaTalk A]
+
+
+＠メイヴ
+えー？　気になる男がいたら、物理的に骨抜きに？[r]なにそれ超面白い！
+[k]
+
+＠メイヴ
+真似はできないし、戦士として使えなくなるから[r]したくもないけど、それも男の甘やかし方の一つかしら？
+[k]
+
+[charaFace C 1]
+＠酒呑童子
+あんたはんも鬼のような鬼っぽさやなあ。[r]妖精の血？　ははぁん、なるほど……。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+＠マシュ
+バトルの間にどんな心境の変化があったのか、[r]楽しそうにお喋りをしていますね……。
+[k]
+
+？1：何だか怖い女子トークだ
+？2：合う部分もある……って感じかな？
+？！
+
+[charaFace B 0]
+＠マシュ
+はい。わかりあっているように見えて、
+[k]
+
+＠マシュ
+何かのタイミングでまたスムーズに殺し合いに[r]移行しそうな雰囲気も維持されている気がします。
+[k]
+
+＠マシュ
+お二人の度量の広さが故、でしょうか……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+
+＠酒呑童子
+ところで、うちの酒はどうする気やったん？
+[k]
+
+[charaFace A 12]
+＠メイヴ
+あれ？　言ってなかったかしら？[r]それは[line 3]
+[k]
+
+[messageOff]
+[charaTalk off]
+
+
+[charaMove A 128,0 0.5]
+[wt 1.5]
+[charaMoveReturn C -256,-10 0.3]
+[wt 1.0]
+[charaMove A 2 0.5]
+[wt 1.5]
+
+[charaTalk on]
+
+[charaTalk C]
+＠酒呑童子
+……ほぉん。そら少しばかり興味あるなあ。[r]振る舞うばかりで振る舞われるんは久方ぶりやし。
+[k]
+
+[charaFace C 1]
+＠酒呑童子
+ん、そういうことならええやろ。
+[k]
+
+＠酒呑童子
+いくらかうちの酒気を分けてあげるさかい、持っていき。[r]ただ[line 3]
+[k]
+
+[charaTalk A]
+[charaFace A 14]
+
+
+＠メイヴ
+はいはい、わかってるわよ。出来上がった暁には、ね。[r]期待して待っていなさい。
+[k]
+
+[messageOff]
+
+
+
+[bgmStop BGM_EVENT_7 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 1.0]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+……なんだか、とりあえず目的は達成されたみたいですね？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠メイヴ
+ふふん、これも女王の人徳よ。
+[k]
+
+＠メイヴ
+接収の対象者は喜びの涙を流し、私が訪れた日を第二の[r]誕生日として一生祝うことになると決まっているのだもの。
+[k]
+
+[charaFace A 14]
+＠メイヴ
+さて、一つ目の材料『魔力親和性の高い酒』は無事ゲット。[r]むしろ彼女の魔力そのものみたいなモノだからより上質ね。
+[k]
+
+[charaFace A 6]
+＠メイヴ
+さあ、引き続き次の材料を接収しに向かうわよ！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,375 @@
+
+＄94-03-35-04-1-1
+
+[soundStopAll]
+
+[charaSet A 5005001 1 アンデルセン]
+[charaSet B 98002000 1 フォウ]
+[charaSet C 5042000 1 紫式部]
+[charaSet D 99502600 1 マシュ]
+[charaSet E 6031000 1 刑部姫]
+[sceneSet H 10000 1]
+[charaSet I 5009000 1 エフェクト用]
+[charaSet J 98115000 1 エフェクト用]
+
+[charaScale H 1.01]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 70400]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[se bac30]
+[fowardEffect bit_talk_14]
+[wt 0.6]
+[seStop bac30 0.1]
+[se bac18]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF00]
+[wt 0.8]
+
+
+[se ad7]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 30,0]
+[charaMove C 1 0.2]
+[wt 0.6]
+
+[charaDepth I 10]
+[charaPut I 0,0]
+[charaEffect I bit_talk_pentagram_03]
+[wt 0.1]
+[se ad598]
+[wt 3.5]
+[charaPut I 1200,1200]
+[charaEffectStop I bit_talk_pentagram_03]
+
+
+[effect bit_talk_shot_02]
+[se bac19]
+[se bac20]
+[wt 0.12]
+[se bac19]
+[se bac20]
+[wt 0.12]
+[se bac19]
+[se bac20]
+[wt 0.12]
+[se bac19]
+[se bac20]
+[wt 0.12]
+[se bac19]
+[se bac20]
+[wt 0.4]
+
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[se bac16]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_3 1.0]
+[se ad22]
+[wt 2.5]
+
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠アンデルセン
+終わったか。長く創作をしていれば、[r]一度や二度は魔が差す時もあるだろうよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠フォウ
+フォウ。フォーウ。[r]（特別意訳：果たして一度や二度で済むかな？）
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[se ad39]
+[charaPut I 1]
+[charaEffect I bit_talk_warp]
+[wt 3.5]
+[seStop ad39 0.4]
+[wt 0.4]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+＠紫式部
+呪本、回収させていただきますので！[r]タイトルは見えないようにしますから、ええ！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[se adm20]
+[charaPut I 1]
+[charaEffectStop I bit_talk_warp]
+[fowardEffect bit_talk_22]
+[wt 1.5]
+[seStop adm20 1.0]
+[wt 2.5]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠マシュ
+呪本の回収を確認しました。[r]魔力量は多いですが、奪われた魔力量に比べると、
+[k]
+
+[charaFace D 4]
+＠マシュ
+四分の一にも満たないものですね……[r]つまり、この本も『最初の呪本』ではない……
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[wt 0.5]
+
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠刑部姫
+う……。[r]うう……。
+[k]
+
+[messageOff]
+[charaShake E 0.03 4 4 0.4]
+[wt 1.0]
+
+[charaFace E 8]
+＠刑部姫
+うわーん負けたー。[r]みっともなく暴れて、その上、あっさり負けて……
+[k]
+
+＠刑部姫
+被ってるだけならまだしも負けちゃうし……[r]そもそも[#姫:わたし]、作家と言っても同人作家で……
+[k]
+
+＠刑部姫
+人類史に作家として名前が残ってる訳でもないし、[r]大著を書いた訳でもないし……うう……
+[k]
+
+＠刑部姫
+これじゃあ[#姫:わたし]、[r]紫式部先輩のダウングレード版……
+[k]
+
+＠刑部姫
+ぐすん。
+[k]
+
+？1：大丈夫
+
+？！
+
+[charaFace E 9]
+＠刑部姫
+ぐす。[r]マーちゃん……？
+[k]
+
+？1：刑部姫は刑部姫だよ
+？2：本当に、被ってないよ
+
+？！
+
+
+[se ade250]
+[bgm BGM_EVENT_2 0.4 0.5]
+[charaTalk H]
+[charaFadeTime H 0.1 0.4]
+＠J：解説
+[%1]の、心からの言葉である。[r]嘘いつわりなど欠片もありはしない。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_2 0.4 1.0]
+[charaTalk E]
+[charaFace E 3]
+＠刑部姫
+！[messageShake 0.03 3 3 0.3]
+[k]
+
+＠刑部姫
+それって確か、紫式部先輩の半オートな解説技……[r]嘘ではなく真実しか表示できないっていう……？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk depthOff]
+[charaDepth C 4]
+[charaDepth E 6]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace E 3]
+[charaFadein C 0.1 230,0]
+[charaFadein E 0.1 0]
+＠紫式部
+泰山解説祭というものです。[r]刑部姫様。大丈夫。私たち、ちっとも被っていません。
+[k]
+
+＠紫式部
+想いの丈を紙にぶつけて[#綴:つづ]ってしまう[line 3]
+[k]
+
+[charaFace C 1]
+＠紫式部
+被る、被らないではないのだと私は思うのです。[r]私たちはきっと、そう、時を超えた同志というものです。
+[k]
+
+
+[charaTalk E]
+[charaFace E 8]
+＠刑部姫
+う[messageShake 0.03 3 3 0.8]わあん、パイセン！　マーちゃん！
+[k]
+
+[messageOff]
+[charaMove E -35,0 0.3]
+[wt 0.2]
+[se ad7]
+[charaShake C 0.03 2 2 0.2]
+[wt 0.8]
+
+＠刑部姫
+暴れたりしてごめんなさいー！[r]でもタイトルがマーちゃんにバレないで良かった～！
+[k]
+
+[charaFace E 9]
+＠刑部姫
+もし見られたら、[#姫:わたし]のガラスの乙女心が[r]粉々に破壊されちゃうところだった……ぐす。
+[k]
+
+
+[charaTalk C]
+[charaFace C 1]
+＠紫式部
+よしよし。[r]そもそも私が悪いのです、貴方は悪くありません。
+[k]
+
+
+[charaTalk E]
+[charaFace E 9]
+＠刑部姫
+うう、パイセン……
+[k]
+
+
+[charaTalk C]
+[charaFace C 1]
+[charaMoveReturn C 220,0 0.5]
+＠紫式部
+よしよし。[wt 0.5][charaMoveReturn C 220,0 0.5]
+[k]
+
+？1：よかったよかった
+？2：本当は仲いいんだね、ふたりとも
+
+？！
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠アンデルセン
+おい。ハッピーエンドの雰囲気を出しているが、[r]何も解決はしていないぞ。目当ては見つかっていない。
+[k]
+
+[charaFace A 5]
+＠アンデルセン
+さっさと次へ行くぞ。[r]図書館へ返却に来た連中の本を、軒並み確認だ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠マシュ
+アンデルセンさん、[r]一緒に来てくださるんですね！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠アンデルセン
+他に頼れる[#面子:めんつ]がいないからな。[r]日本風に言えば行き掛けの駄賃だ。
+[k]
+
+[charaFace A 2]
+＠アンデルセン
+[line 3]そこ、いつまでじゃれ合ってる！[r]行くぞ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFace E 0]
+[charaFadein C 0.1 220,0]
+[charaFadein E 0.1 -35,0]
+＠紫式部
+はいっ！
+[k]
+
+[charaTalk E]
+[charaFace E 2]
+＠刑部姫
+あ、ええっと、何だろ！[r]よく分かんないけど[#姫:わたし]も一緒についていきますよ！
+[k]
+
+
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,327 @@
+
+
+＄03-00-02-15-4-0
+
+
+[soundStopAll]
+
+
+[charaSet A 8001410 1 マシュ]
+[charaSet B 1098123000 1 ムニエル]
+[charaSet C 1098153000 1 ナポレオン]
+[charaSet D 1033002 1 シグルド]
+[charaSet E 1098124500 1 ダ・ヴィンチ]
+[charaSet F 3012001 1 ブリュンヒルデ]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[scene 51600]
+
+[shake 0.05 0 2 3.0]
+
+[fadein black 1.0]
+
+[se ad629]
+[seVolume ad629 0 0.4]
+
+[se ad553]
+[seVolume ad553 0 0.4]
+[wait fade]
+
+
+[cameraMove 1.5 0,0 1.2]
+[wt 0.5]
+[fadeout white 1.0]
+[wait fade]
+
+[cameraHome 0.1]
+
+[scene 60703]
+[fadein white 1.0]
+[seStop ad553 2.0]
+[seStop ad629 2.0]
+
+[wait fade]
+
+[wt 1.2]
+
+[bgm BGM_EVENT_80 0.1 0.6]
+
+＠スカサハ＝スカディ
+……なぜ、[#斯様:かよう]な鉄の塊で移動する？
+[k]
+
+＠スカサハ＝スカディ
+[#些:いささ]か非効率なのではあるまいか。[r]高速飛行のルーンなり、疾走のルーンなりを描けば、
+[k]
+
+＠スカサハ＝スカディ
+英霊各々でもっと早く辿り着こうに。[r]ふうむ。
+[k]
+
+＠フォウ
+フォウ？　フォフォウ？
+[k]
+
+＠ホームズ
+状況を考慮した上での行動です、女王陛下。
+[k]
+
+＠ダ・ヴィンチ
+うんうん。巨人種が積極性を増してる上に、[r]空想樹の種子まで降ってくるような状況なんだ。
+[k]
+
+＠ダ・ヴィンチ
+空に上がれば投石の餌食でしょ？[r]各自が走ると各個撃破されかねない危険があるし。
+[k]
+
+＠ダ・ヴィンチ
+なので、飛行や英霊スキーよりも、[r]こっちのが守りやすく攻めやすいってコト。
+[k]
+
+＠ダ・ヴィンチ
+多少の群れなら、ほら、[r]皇帝陛下の車上砲撃で蹴散らせるしね！
+[k]
+
+＠ムニエル
+ん……[r]何か感知したぞ。
+[k]
+
+＠ゴルドルフ
+敵襲か！
+[k]
+
+＠ムニエル
+あいや、敵性反応じゃない。[r]上空に……こりゃあ何だ、鳥か……？
+[k]
+
+＠ホームズ
+モニターに出せるかい。
+[k]
+
+＠ムニエル
+勿論。よっと。
+[k]
+
+[messageOff]
+[se ade165]
+[wt 0.4]
+[seStop ade165 0.1]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_80 1.0]
+[wait fade]
+
+[cameraMove 0.1 0,-80 1.0]
+
+[effect bit_talk_security 0,80]
+
+[scene 62200]
+[wt 0.5]
+
+[wipeFilter cinema 0.5 0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_79 0.1]
+
+[wt 2.0]
+
+＠マシュ
+あ、また[line 3]
+[k]
+
+＠フォウ
+フォウ！
+[k]
+
+？1：ああ、鳥だ
+？2：久しぶりに見たね
+
+？！
+
+＠マシュ
+はい。また、二羽ですね。
+[k]
+
+＠マシュ
+恐らくですが、炎の領域の狭間に存在している[r]生物棲息地で生きる鳥類……
+[k]
+
+＠シトナイ
+へえ。仲のいい鳥ね？[r]って、あれ？　ちょっと待ってよく見せて、んん？
+[k]
+
+＠スカサハ＝スカディ
+以前にもあれを見たのか。[r]おまえたち。
+[k]
+
+＠マシュ
+はい。これまでにも何度か……
+[k]
+
+＠スカサハ＝スカディ
+そうか[line 3]
+[k]
+
+＠スカサハ＝スカディ
+ああ、腑に落ちた。成る程。そういう事なのか。
+[k]
+
+＠ダ・ヴィンチ
+女王陛下。何か？
+[k]
+
+＠スカサハ＝スカディ
+いいや、こちらの話だ。幼き姿の賢者よ。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_79 1.5]
+[wait fade]
+
+[wipeOff]
+
+[cameraHome 0.1]
+
+[effectStop bit_talk_security]
+
+[scene 51600]
+[wt 0.5]
+
+
+[fadein black 0.7]
+[wait fade]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.3]
+
+＠ナポレオン
+おーい、聞こえるか！[r]暖房の効いた、快適な室内で待機している諸君！
+[k]
+
+[bgm BGM_EVENT_80 0.1]
+[charaFace C 2]
+
+＠ナポレオン
+こちらボーダー車上。[r]上空、鳥以外の存在を視認した！
+[k]
+
+＠ナポレオン
+また射出されたみたいだぜ、種子の群れが飛来中！[r]どれだけ遠くから撃たれてるんだあれは！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠ムニエル
+こっちじゃあ検知できてないが……[wt 0.7][charaFace B 2][r]うお、いきなり魔力検出！　確かに種子複数だ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ナポレオン
+……あー、あー、空中で落下軌道を変えてやがる！[r]こりゃあ狙い[#違:たが]わず車上に落ちるぞ。
+[k]
+
+[charaFace C 2]
+
+＠ナポレオン
+迎撃に移る！[r]来たい奴は上に上がれ！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+？1：迎撃に行こう
+？2：マシュ、もう出られる？
+
+？！
+
+＠マシュ
+はい。いけます！[r]外骨骼はダ・ヴィンチちゃんが総点検済みです！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+女王がルーンで直してくれたから、それ、[r]全然傷んでなかったんだよ。凄いよ原初のルーン。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[se ad166]
+
+[charaDepth D 10]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+
+[charaFace F 0]
+[charaFadein F 0.1 2]
+[wt 0.2]
+[seStop ad166 0.15]
+
+＠シグルド
+当方も出よう。[r]何、グラムの重みにもう少し慣熟しておきたい。
+[k]
+
+＠ブリュンヒルデ
+私も出ます。
+[k]
+
+＠シグルド
+いや。此処は当方のみで充分。[r]おまえは休んでいろ。
+[k]
+
+＠ブリュンヒルデ
+いいえ。貴方。[r]たとえそうだとしても、お供いたします。
+[k]
+
+[charaFace D 1]
+
+＠シグルド
+[line 3]そうか。では、行こう。
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

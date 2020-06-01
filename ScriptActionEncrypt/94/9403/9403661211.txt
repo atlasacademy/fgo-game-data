@@ -1,0 +1,289 @@
+
+
+
+
+＄94-03-66-12-1-1
+
+
+
+
+[soundStopAll]
+
+[charaSet A 4032000 1 ライネス]
+[charaSet B 9008001 1 アストライア]
+[charaSet C 1098164800 1 グレイ]
+[charaSet D 9938400 1 魔神柱]
+
+[scene 36001]
+
+[charaDepth D 1]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[se ad246]
+[seVolume ad246 0 0.3]
+[se ad247]
+[seVolume ad247 0 0.3]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ade285]
+[effect bit_talk_magicbullet 250,190]
+[wt 0.3]
+[se ade285]
+[effect bit_talk_magicbullet -200,-190]
+[wt 0.5]
+[se bac36]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[shake 0.05 3 3 1.0]
+[wt 0.2]
+[se bac36]
+[wt 0.5]
+
+[se bac71]
+[wt 1.0]
+[seVolume ad246 0.5 1.0]
+[seVolume ad247 0.5 1.0]
+[effect bit_talk_rarrow01br -200,50]
+[wt 1.7]
+[seStop ad246 0.5]
+[seStop ad247 0.5]
+
+[se ad226]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[charaEffect D bit_talk_impactlanding]
+[shake 0.05 3 3 1.0]
+[wt 2.3]
+[seStop ad226 0.7]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut D 1200,1200]
+[effectStop bit_talk_impactlanding]
+[wt 0.6]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アストライア
+手応え、あったわ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠魔神柱
+末端素子の消滅、を、確認[line 3][r]玉座への接続切断[line 3]
+[k]
+
+＠魔神柱
+駆逐を[line 3][r]サーヴァントの[line 3]駆逐を[line 3]
+[k]
+
+[messageOff]
+
+[shake 0.05 7 7 0]
+[se ba6]
+[charaSpecialEffect D enemyErasure]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[wt 0.7]
+[flashOff]
+[wait charaSpecialEffect D]
+[charaFadeout D 0.1]
+[shakeStop]
+[wt 0.8]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠グレイ
+はい……周囲の魔力が急激に薄れています。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ライネス
+どうやら、私の[#混元一陣:かたらずのじん]ももったか……
+[k]
+
+＠ライネス
+神殿が、ほどけていく……
+[k]
+
+
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageOff]
+[se ad193]
+[distortionstart 0.0 0.5 0.5 0.0 0.0 100.0]
+[distortionstart 1.1 0.5 0.5 0.8 0.2 15.0]
+[wt 0.9]
+[distortionstart 1.3 0.5 0.5 0.8 0.4 15.0]
+
+[fadeout white 1.5]
+[wait fade]
+
+[charaSet C 6039000 1 グレイ]
+
+[scene 10000]
+
+[fadein white 1.0]
+[wait fade]
+
+[distortionstop 0.1]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 74403]
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_63 0.1]
+
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠アッド
+イッヒヒヒヒヒ！[r]戻ってきたぞ！
+[k]
+
+[charaFace C 1]
+
+＠グレイ
+時間神殿、脱出しました！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ライネス
+さすがに、ずいぶん体力と時間を削られたな……[r]おい、大丈夫か、アストライア。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 0.7]
+[charaFace B 1]
+[wt 0.5]
+
+＠アストライア
+この程度で、へたばると思ってほしくはないですわね。[r]とはいえ、想像以上の大軍ではありましたが。
+[k]
+
+[charaFace B 0]
+
+＠アストライア
+これでも女神の一柱です。[r]あまり、見くびらないでいただきたいですわ。
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ライネス
+そうか、そうだな。[r]まったく君は、私の知っているルヴィアと似ている。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アストライア
+当然でしょう？[r]共鳴する部分があるからこその、疑似サーヴァントです。
+[k]
+
+
+＠アストライア
+何より、私が選んだ娘です。[r]誇り高くないわけがありません。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠グレイ
+はい……本当に。
+[k]
+
+[messageOff]
+[wt 0.7]
+[charaFace C 0]
+[wt 0.5]
+
+＠グレイ
+すぐそこが、フェイク・ロンゴミニアドです。[r]……地上の皆さんも、耐えてくださっているみたいです。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ライネス
+さすがは蒸気王たちだな。[r]兄上も小賢しさをフルに使って、粘ってくれているらしい。
+[k]
+
+
+[charaFace A 2]
+
+＠ライネス
+急ぐぞ！
+[k]
+
+[messageOff]
+[se ad59]
+[charaFadeout A 0.7]
+[wt 0.5]
+
+[fadeout black 2.0]
+[seStop ad59 1.5]
+[bgmStop BGM_EVENT_63 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

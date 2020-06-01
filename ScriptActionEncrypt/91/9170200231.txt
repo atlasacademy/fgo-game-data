@@ -1,0 +1,361 @@
+
+＄91-70-20-02-3-1
+
+
+
+[soundStopAll]
+
+[charaSet A 7020001 1 クー・フーリン・オルタ]
+[charaSet B 1002001 1 アルトリア・オルタ]
+[charaSet C 7001001 1 ヘラクレス]
+[charaSet D 98111500 1 ダ・ヴィンチ]
+[charaSet E 98111500 1 通信用ノイズ]
+[charaSet F 7020001 1 クー・フーリン・オルタ]
+
+[charaSet G 1001000 1 エフェクト用]
+
+[scene 20210]
+
+[bgm BGM_EVENT_24 0.1]
+[fadein black 1.0]
+[wait fade]
+
+[se ad632]
+[charaEffect A bit_talk_charge_red]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠クー・フーリン・オルタ
+ハァァァァァァァァァァァァッ！！
+[k]
+
+[messageOff]
+
+[wt 0.3]
+
+[effect bit_talk_v_slash02]
+[charaFadeout A 0.4]
+[seStop ad632]
+[charaEffectStop A bit_talk_charge_red]
+
+[fadeout black 0.5]
+[wait fade]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+
+[charaPut G -300,150]
+[charaScale G 5.5]
+
+[se bac14]
+[charaEffect G bit_talk_Slash_red_01]
+[wt 0.4]
+
+[se bac14]
+[charaScale G 7.5]
+[charaPut G 100,1500]
+[charaEffect G bit_talk_Slash_red_01_L]
+
+[wt 0.4]
+[se bac16]
+[se bac14]
+[effect bit_talk_14]
+[wt 1.0]
+
+[se ad466]
+[effect bit_talk_35]
+[wait effect bit_talk_35]
+
+[fadeout black 0.5]
+[wait fade]
+
+[scene 20210]
+
+[fadein black 0.3]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[wt 1.0]
+
+[charaEffect C bit_talk_06]
+
+[wt 1.0]
+[bgmStop BGM_EVENT_24 1.0]
+[wt 1.5]
+
+
+[se ad52]
+[charaSpecialEffect C flashErasure 1 1.7]
+[wait charaSpecialEffect C]
+[charaEffectStop C bit_talk_06]
+[wt 0.7]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+[charaEffect B bit_talk_06]
+
+＠アルトリア・オルタ
+[line 3]見事。
+[k]
+
+[charaFadeout B 0.1]
+[charaPut B 0,-1200]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠クー・フーリン・オルタ
+キャスターは姿を見せていないが……。[r]テメェで最後らしいな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut B 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アルトリア・オルタ
+そうだ。
+[k]
+
+[charaFadeout B 0.1]
+[charaPut B 0,-1200]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠クー・フーリン・オルタ
+で、テメェらはそもそも何故召喚された？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut B 1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠アルトリア・オルタ
+[line 3]それは、知らん。
+[k]
+
+[bgm BGM_EVENT_1 0.1]
+[charaFace B 0]
+
+
+＠アルトリア・オルタ
+わかることは一つ。[r]我々は争わず、貴様たちが来るまで待たされた。
+[k]
+
+＠アルトリア・オルタ
+そして下された命令は、[r]貴様たちを殺せ、それだけだ。
+[k]
+
+
+＠アルトリア・オルタ
+つまり[line 3][r][#カルデアか]、[#貴様たちが憎いのだろう]。
+[k]
+
+[charaFadeout B 0.1]
+[charaPut B 0,-1200]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠クー・フーリン・オルタ
+……なるほどな。
+[k]
+
+＠クー・フーリン・オルタ
+ここはただの実験台か。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut B 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アルトリア・オルタ
+かもしれないな。
+[k]
+
+＠アルトリア・オルタ
+……精々気をつけることだ、[r]カルデアのマスター……。
+[k]
+
+[messageOff]
+[se ad52]
+[charaSpecialEffect B flashErasure 1 1.7]
+[wait charaSpecialEffect B]
+[charaEffectStop B bit_talk_06]
+[wt 0.7]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠クー・フーリン・オルタ
+終わりだ。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_1 0.7]
+
+
+[charaFadeout A 0.1]
+
+[wt 1.0]
+
+
+[charaPut E 1]
+[charaEffect E bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.2]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0 0,-90]
+[wt 0.3]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠ダ・ヴィンチ
+おーい、[r][%1][&君:ちゃん]！
+[k]
+
+[charaFace D 1]
+
+＠ダ・ヴィンチ
+ああ、良かった。[r]どうやら無事のようで何よりだ。
+[k]
+
+[charaFace D 4]
+
+
+＠ダ・ヴィンチ
+音声通信が途絶して、[r]バイタルサインしか追えなかったが……。
+[k]
+
+[charaFace D 0]
+
+＠ダ・ヴィンチ
+終始安定していたようだね。[r]そちらでは何も起こらなかったのかい？
+[k]
+
+？1：帰ったら話します
+
+＠ダ・ヴィンチ
+ほほう、興味深い。
+[k]
+
+？2：まあ、そんな感じで……
+
+＠ダ・ヴィンチ
+なるほどなるほど。
+[k]
+
+？！
+
+[charaFace D 1]
+
+＠ダ・ヴィンチ
+よし、そちらの掃除も済んだようだし。[r]帰還準備に入る。
+[k]
+
+[charaFace D 0]
+
+＠ダ・ヴィンチ
+では、待っているよ。
+[k]
+
+[charaFadeout D 0.1]
+[charaPut E 1200,1200]
+[charaEffectStop E bit_talk_10]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠クー・フーリン・オルタ
+……恨み、か。[r]どこぞに生き残りの魔神柱でもいやがったか。
+[k]
+
+
+＠クー・フーリン・オルタ
+人理を修復したことで、誰かに憎まれるとは[r]なかなかに困難な人生のようだ。
+[k]
+
+[charaFace A 0]
+
+＠クー・フーリン・オルタ
+だがまあ[line 3]
+[k]
+
+
+＠クー・フーリン・オルタ
+敵を[#鏖殺:おうさつ]したいんなら声を掛けろ。[r]いつでも応じてやる。
+[k]
+
+＠クー・フーリン・オルタ
+それがオレの役割だからな、[r][#狂戦士:バーサーカー]としての。
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[wt 0.5]
+[charaFadeout A 0.7]
+[charaFace F 1]
+[wt 2.5]
+
+[bgmStop BGM_EVENT_2 2.5]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[scene 10000]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_EVENT_11 0.1]
+
+＠
+[line 3]ああ、なんて忌々しい。
+[k]
+
+＠
+オレの最期は恐らく、[r]どうしようもなく惨めな死に様だろうが……。
+[k]
+
+＠
+それを嘆く奴が、[r]一人はいるらしい。
+[k]
+
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_11 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

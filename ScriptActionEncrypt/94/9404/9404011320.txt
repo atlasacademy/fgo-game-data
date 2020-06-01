@@ -1,0 +1,301 @@
+
+＄94-04-01-13-2-0
+
+
+
+[soundStopAll]
+
+
+[charaSet A 98100400 1 マシュ]
+[charaSet B 1008300 1 ジークフリート]
+[charaSet C 5032001 1 ネロ]
+[charaSet D 6019300 1 風魔小太郎]
+[charaSet E 1098181300 1 キングプロテア]
+[charaSet F 4025001 1 工場長]
+[charaSet G 10001002 1 パッションリップ]
+
+[charaSet J 98115000 1 エフェクト用]
+
+[scene 81700]
+
+[bgm BGM_EVENT_80 0.1]
+[wt 0.5]
+
+[fadein black 0.7]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠風魔小太郎
+[#邪悪成敗:ジャックポット]！
+[k]
+
+[messageOff]
+[wt 0.1]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[wt 0.1]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+
+[se ad28]
+[effect bit_talk_Slash_white_01_L]
+[charaFadeout D 0.1]
+[wt 0.3]
+
+[se bac139]
+[fowardEffect bit_talk_14]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[charaShake F 0.02 3 3 0.8]
+[wt 0.8]
+＠工場長
+ぐああああ待てよ相棒ォ！？[r]雑にやられるにもほどがあんだろぉ！？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 1.0]
+[charaMove F 0,-30 0.6]
+[charaFadeout F 0.4]
+[wt 0.3]
+[se ad144]
+[wt 1.5]
+
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠風魔小太郎
+悪は倒れました。[r]これでプロテアさんも元の優しい性格に戻[line 3]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 11]
+[charaFadein E 0.1 1]
+
+＠キングプロテア
+……ふわぁ～あ……
+[k]
+
+＠キングプロテア
+工場長さんがやかましいので[r]目が覚めてしまいました……
+[k]
+
+＠キングプロテア
+というか、もうやられちゃったんですね……。[r]ちっとも暴れたりない……。
+[k]
+
+[charaFace E 1]
+
+＠キングプロテア
+でも、みなさんはまだ元気そうで何よりです。
+[k]
+
+[messageOff]
+[charaFaceFade E 14 0.6]
+[wt 1.0]
+
+[bgm BGM_EVENT_24 0.1]
+＠キングプロテア
+ふふ……[r]いっぱい、いっぱい遊びましょう？
+[k]
+
+＠キングプロテア
+だいじょうぶ。メチャクチャに壊れても、[r]きっとメルトリリスが直してくれます。
+[k]
+
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad85]
+[wt 0.1]
+[se ade344]
+[shake 0.05 0 4 2.0]
+[effect bit_talk_impactlanding 200,0]
+[wt 1.8]
+[effectStop bit_talk_impactlanding]
+
+[se ad85]
+[wt 0.1]
+
+[se ade345]
+[shake 0.05 0 4 2.0]
+[effect bit_talk_impactlanding -200,0]
+[wt 2.0]
+[effectStop bit_talk_impactlanding]
+[seStop ad628 1.0]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠風魔小太郎
+なぜ！？[r]心優しいサーヴァントではないのですか！？
+[k]
+
+？1：そもそもなんでそう思ったのか
+
+[charaFace D 11]
+
+＠風魔小太郎
+それは……片目を隠しておられるので……[r]シャイな性格なのかな、と……
+[k]
+
+？2：（そっか……上で一度戦っていないから……）
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ネロ
+工場長がいた方がまだマシだった、という事だな！[r]どうする[%1]！
+[k]
+
+＠ネロ
+誰かが引きつけて残りは地上に向かうか、[r]無理を承知で正面から戦うか！
+[k]
+
+＠ネロ
+判断はマスターである貴様に委ねよう！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+それならわたしが残ります！[r]盾役として、少しの間ならひとりでも[wt 1.0][charaFace A 6][line 3]え？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[se ad609]
+[shake 0.05 2 3 2.5]
+[wt 0.4]
+[se ad608]
+[wt 2.0]
+
+[effect bit_talk_explosion]
+[se bac59]
+[flashin once 0.4 1.0 FFFFFFFF FFFFFF80]
+[wt 0.4]
+[effect bit_talk_sparks]
+[charaPut J 0,-200]
+[charaEffect J bit_talk_fire]
+[effectStop bit_talk_explosion]
+[wt 2.4]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ジークフリート
+工場が爆破されたのか！？[r]しかし一体誰が……む、あのシルエットは……！
+[k]
+
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ade163]
+[seVolume ade163 0 0.8]
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.7 1]
+[seStop ade163 1.0]
+[wt 1.0]
+
+＠パッションリップ
+あれ？　誰かと思えば[r][%1]さんたちですか？
+[k]
+
+[charaFace G 1]
+
+＠パッションリップ
+ふふ、奇遇ですね。[r]わたしもいま来たところなんですよ？
+[k]
+
+？1：パッションリップ……！
+？2：これは……モンスターVS怪獣の予感……！
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠キングプロテア
+え……なんで工場、壊れてるんです？[bgm BGM_EVENT_82 0.1][r]メルトリリスに叱られちゃいます……
+[k]
+
+＠キングプロテア
+それに……このイヤな気配は……[r]パッションリップ……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠パッションリップ
+イエス！[r]見つけました、諸悪の根源キングプロテア！
+[k]
+
+＠パッションリップ
+[%1]さん、わたしに任せて！[r]プロテアはわたしがやっつけます！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠キングプロテア
+あわわ……[r]あの爪はダメなのです、怪獣キラーなのです……！
+[k]
+
+＠キングプロテア
+プロテア、だいピーーーンチ！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_82 0.5]
+[wait fade]
+[soundStopAll]
+[end]

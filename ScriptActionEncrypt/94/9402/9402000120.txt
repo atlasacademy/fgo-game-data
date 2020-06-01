@@ -1,0 +1,1136 @@
+
+
+＄94-02-00-01-2-0
+
+[soundStopAll]
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 2021001 1 節分大将]
+
+[charaSet C 98111500 1 ダ・ヴィンチ]
+[charaSet D 7023001 1 源頼光]
+[charaSet E 1098125300 1 酒呑童子]
+[charaSet F 1098125400 1 茨木童子]
+
+
+[verticalImageSet G cut057_twr 1]
+[charaSet H 98115000 1 エフェクト用]
+[charaScale G 1.01]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[effect bit_talk_07]
+[se ad12]
+[wt 4]
+[fadeout white 1.0]
+[wait fade]
+
+[scene 52800]
+[charaFadein G 0 0,250]
+[wt 2.0]
+
+[fadein white 2.0]
+[wait fade]
+[wt 0.4]
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+
+＠節分大将
+さて、ここからは[#戦:いくさ]構えにて。
+[k]
+
+
+＠節分大将
+まずはその塔とやらを探すのが先決でありましょう。[r]私が先導いたしますので、マスターは……。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[charaAttack G normal 0,-200 3.0]
+[wt 4.0]
+
+＠節分大将
+………………。
+[k]
+
+？1：探す必要はなさそうです
+？2：なんかすっごい高いのがある！
+？！
+
+[messageOff]
+[wt 1.0]
+[charaFadeout G 1.0]
+[wt 1.75]
+
+[charaSet G 98115000 1 エフェクト用]
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.3]
+
+＠マシュ
+こちらでも視認できています。[r]あれが問題の塔に間違いないかと。
+[k]
+
+[charaFace A 15]
+
+＠マシュ
+観測結果は…………百階建て……！？
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-90]
+
+＠ダ・ヴィンチ
+[#五重塔:ごじゅうのとう]ならぬ[#百重塔:ひゃくじゅうのとう]という訳か。
+[k]
+
+＠ダ・ヴィンチ
+もちろん、あれは通常の建築技術で[r]どうにかなっているものじゃない。
+[k]
+
+＠ダ・ヴィンチ
+普通なら倒壊してしかるべきだからね。
+[k]
+
+＠ダ・ヴィンチ
+まだ完全解析できてはいないが、あの塔は[r]酒呑童子の宝具、『[#神便鬼毒酒:しんぺんきどくしゅ]』のようだ。
+[k]
+
+？1：意味が　わから　ない
+？！
+
+[charaFace C 0]
+
+＠ダ・ヴィンチ
+うん、まあそういう反応だろうとは思っていた。[r]でもそう説明するしかないのさ。
+[k]
+
+＠ダ・ヴィンチ
+あの塔の観測結果をカルデアのデータベースと[r]照らし合わせたら、
+[k]
+
+＠ダ・ヴィンチ
+様々な数値・反応の観点から、[r]最も共通点の多いものがそれだという結論が出た。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠節分大将
+ですが、あれは塔でございます。[r]酒ではありません。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-90]
+
+＠ダ・ヴィンチ
+そのとおりだ。そこが一番のネックで、[r]逆に言えばそこさえ説明できれば筋が通る。
+[k]
+
+＠ダ・ヴィンチ
+現状から推測するに、この場所にあった魔力資源を利用しつつ、[r]宝具を材料にしてこの塔を形作った……という事になるのかな？
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+[bgmStop BGM_EVENT_7 0.4]
+[wt 0.2]
+
+[charaPut H 1]
+[charaEffect H bit_talk_liquor_communication02]
+[se ade153]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 1.0 1]
+[wt 1.0]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠酒呑童子
+なんやの、もう分かってしもたん？[r]さすがやなぁ。
+[k]
+
+＠酒呑童子
+そのとおり、この[#鬼楽百重塔:きらくひゃくじゅうのとう]は[r]うちの[#神便鬼毒:しんぺんきどく]で作ったもんどす。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠節分大将
+[line 3]むっ、酒呑童子！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-90]
+
+＠ダ・ヴィンチ
+うおっと、なんだいその通信方法？[r]酒の霧に映し出しているのか……新しい！
+[k]
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.5]
+[charaTalk F]
+[charaFace F 1]
+[se bac1]
+[seVolume bac1 0 0.3]
+[charaFadein F 0.4 0]
+[charaMove F -100,0 0.4]
+[wt 0.1]
+[charaMove E 100,0 0.4]
+[wt 0.4]
+
+＠茨木童子
+くははは、どうだ。[r]貴様らにできる事は[#吾:われ]らにも[#容易:たやす]い事よ！
+[k]
+
+＠茨木童子
+だが[#吾:われ]に理屈を聞かれても分からぬ[#故:ゆえ]、[r]質問は一切聞かぬ。
+[k]
+
+＠茨木童子
+そうさな。[r]酒呑さすが通信、とでも名付けるだけよ……！
+[k]
+
+＠茨木童子
+あまりの酒呑さすがっぷりに失禁する人間続出とみた。[r]身ぐるみ置いていくなら命だけは助けてやろう！
+[k]
+[messageOff]
+
+[charaFace E 4]
+[charaMove E 1 0.3]
+[se ade139]
+
+[charaFace F 2]
+[charaShake F 0.05 3 3 0.2]
+[wt 0.1]
+
+[charaMove F -256,0 0.4]
+[charaFadeout F 0.4]
+[wt 0.4]
+
+＠酒呑童子
+あーはいはい、ちぃと待ちぃや茨木。[r]さすがに最初はちびっとくらい話したらなあかん思うわぁ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠節分大将
+[#鬼楽百重塔:きらくひゃくじゅうのとう]……それがこの塔の名前ですか。
+[k]
+
+？1：こんなものを作って、何が目的[&なんだ:なの]？
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠酒呑童子
+目的？　目的、なぁ。んーまあ、てっぺんまで[r]登ってきたら分かりはるんと違う？
+[k]
+
+＠酒呑童子
+わかっとる思うけど、うちらはこの塔の[r]てっぺんあたりにおるさかい。
+[k]
+[messageOff]
+[wt 1.0]
+[charaFace E 1]
+＠酒呑童子
+……あんじょう、きばりや？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠節分大将
+いえ、何の説明にもなっていません。酒呑童子。
+[k]
+
+＠節分大将
+私はマスターより節分大将の大役を任じられた身。[r]そちらが何のために乱を企てたか、是非とも知りたい。
+[k]
+
+＠節分大将
+言わぬとあれば、それでも構いませんが。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠酒呑童子
+……ふふ。へえ、ふうん。
+[k]
+
+＠酒呑童子
+やっぱりあんたはんが来はったんか。[r]なんやおもろい肩書き、もろうとりますなぁ？
+[k]
+
+＠酒呑童子
+ああ、もう一声言うんなら、[#それ]があったわぁ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠節分大将
+それ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠酒呑童子
+[#節分]やさかい、うちらはこうして塔建てたんどす。[r]そういう理由でどないやろ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠節分大将
+[#徒言:あだこと]を。鬼に道理は分かりませぬか。
+[k]
+
+＠節分大将
+両軍が相対せしめし折は、己らが何を求め、[r]いかなる義があって弓矢具足持ちて立ち並ぶか[line 3]
+[k]
+
+＠節分大将
+まずそれを叫び合うのが合戦の作法でしょうに、[r]なんとも無礼！
+[k]
+[messageOff]
+[charaFadeout B 0.1]
+[bgmStop BGM_EVENT_5 1.0]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 1.0]
+＠D：？？？
+蟲に戦の作法など説いても無意味ですよ、大将殿。[r]見つけ次第こうです、こう。
+[k]
+
+[messageOff]
+
+[se bac137]
+[charaEffectStop H bit_talk_liquor_communication02]
+[wt 0.3]
+[charaFadeout E 0.05]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 1]
+
+[wt 2.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠節分大将
+源……頼光殿！
+[k]
+
+？1：あっ、来ちゃった
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠源頼光
+はい、来ちゃいました♡
+[k]
+
+[charaFace D 0]
+
+＠源頼光
+……と、にこやかに返事をしてから気付きましたが。
+[k]
+
+＠源頼光
+何やら今の言葉、『来なければよかった』という[r]にゅあんすが含まれていたような……。
+[k]
+
+[charaFace D 4]
+
+＠源頼光
+もしそうなら……久しぶりに。[r]母は、泣いてしまいますよ……？
+[k]
+
+？2：当然来ますよね（怯）
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠源頼光
+……おや？　どうしてそのような[r]怯えた目で私を見るのでしょう。
+[k]
+
+[charaFace D 1]
+
+＠源頼光
+私は母のように[&貴方:貴女]に仕えるもの。[r]頼りになる鬼退治の専門家、[&貴方:貴女]の頼光ですよ？
+[k]
+
+＠源頼光
+どうぞ安心して[line 3]
+[k]
+
+[charaFace D 5]
+
+＠源頼光
+あの蟲どもの殲滅をお命じください。さあ。
+[k]
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-90]
+
+＠ダ・ヴィンチ
+うん、やっぱりのっけから[#鬼子母神:き し も じ ん]の如しだねぇ。
+[k]
+
+[charaFace C 0]
+
+＠ダ・ヴィンチ
+いやあ、すまない。[r]調査の指揮官は遠慮してもらったにしても、
+[k]
+
+＠ダ・ヴィンチ
+さすがに一人のサーヴァントとしてそちらに[r]向かうのにケチはつけられなくてね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい……[r]戦力としてたいへん頼りになる方ですし……。
+[k]
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaEffect H bit_talk_liquor_communication03]
+[se ade153]
+
+[wt 2.0]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 1.0 1]
+[wt 1.2]
+
+＠酒呑童子
+なんや、あんたは別にどうでもよかったんやけど。[r]遊びを楽しむ余裕もない女はお断りやわぁ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠源頼光
+鬼とはいえ使い所のある悪蟲。カルデアの陰に潜み、[r]使い捨ての戦力になるというのならまだしも[line 3]
+[k]
+
+[charaFace D 5]
+＠源頼光
+外に出て悪行を[#為:な]し始めたのなら、[r]これはもう仕方ありませんね。ええ、仕方ありませんね。
+[k]
+
+＠源頼光
+迷うことなく誅伐執行です。
+[k]
+
+[charaFace D 1]
+
+＠源頼光
+いつ尻尾を出すかと思っていましたが、ふふ、ついに……。
+[k]
+
+[charaFace D 3]
+
+＠源頼光
+お[charaMoveReturn D 0,-5 0.4]ほん、いいえ、
+[k]
+
+＠源頼光
+やっと合法的に排除できる機会が来たやったー、[r]などとは思っていませんよ？　本当ですよ？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[bgmStop BGM_EVENT_7 0.3]
+[wt 0.5]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠酒呑童子
+これはほっといて、言う事を先に言っとこか。
+[k]
+
+＠酒呑童子
+この[#鬼楽百重塔:きらくひゃくじゅうのとう]はな、つまり、酒や。[r]酒である事は塔になっても変わらへんの。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠節分大将
+……どういう意味でしょう？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠酒呑童子
+酒の強い弱いはともかく、[r]飲んで酔わへん奴はおらん、いう話どすなあ。
+[k]
+
+＠酒呑童子
+せやから[line3][#登るたびに酔うてまうかもしれへんよ]。
+[k]
+
+＠酒呑童子
+ちょぼちょぼ楽しんで登ってきはったらよろしおす。[r]途中におる鬼さんたちと遊びながらな？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠節分大将
+！？　その言葉……[r]貴方たち以外にも鬼がいるというのですか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠酒呑童子
+[line 3]ふふ。[r]さあさ、楽しい節分祭りの始まりや。
+[k]
+
+＠酒呑童子
+誰も彼も、お家に籠もったきりはあかんわぁ。[r][#皆:みぃんな]、こぞって遊びにおいでやす[line 3]
+[k]
+
+＠酒呑童子
+ふふ、ふふふふ……。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_7 0.1]
+[charaTalk F]
+[charaFace F 1]
+[se bac1]
+[seVolume bac1 0 0.3]
+[charaFadein F 0.4 -256,0]
+[charaMove F -100,0 0.4]
+[wt 0.1]
+[charaMove E 100,0 0.4]
+[wt 0.4]
+
+＠茨木童子
+高笑い、高笑いで消え去るタイミングか？[r]ならば[#吾:われ]も！
+[k]
+
+＠茨木童子
+任せるがいい！　鬼の首魁として、[r]大威容を見せる鍛錬は怠っていないのだからな！
+[k]
+
+＠茨木童子
+ゆくぞ、今、渾身の！[r]くは、くはは、くは[charaEffectStop H bit_talk_liquor_communication03][wt 0.2][charaSpecialEffect F erasure 1 0.2][charaSpecialEffect E erasure 1 0.2]（ブツッ）[charaPut H 1200,1200]
+[k]
+[messageOff]
+
+
+
+[wt 1.0]
+
+[charaPut G 1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠マシュ
+…………。[r]お二人の様子は、なんだか相変わらずでしたが。
+[k]
+
+[charaFace A 7]
+
+＠マシュ
+気になる情報が増えましたね。[r]登るたびに酔う。そして、他にも鬼がいる可能性……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠源頼光
+蟲の言う事を真に受けてはいけませんよ、マシュ。[r]貴女は真面目すぎるのが玉に[#瑕:きず]。
+[k]
+
+＠源頼光
+[#神便鬼毒:しんぺんきどく]は元は私に与えられていたもの[line 3][r]このような塔、恐るるに足りません。
+[k]
+
+＠源頼光
+ええ[line 3]そして、です。[r]鬼の用意した道筋を辿るなどもってのほか。
+[k]
+
+＠源頼光
+どんな卑劣な罠があるかわかりません。[r]賢くいきましょう、賢く。
+[k]
+
+？1：と、言いますと……？
+？！
+
+[charaFace D 1]
+
+＠源頼光
+それではひとっ走り、[r][#外壁を駆け上がって殺してきますね]？
+[k]
+
+[messageOff]
+[verticalImageSet H cut057_twr 1]
+[charaScale H 1.01]
+[se bac305]
+[wt 0.7]
+[charaEffect D bit_talk_quickmove]
+[charaSpecialEffect D erasureReverse 1 0.3]
+[se ad73]
+[wt 0.5]
+
+[charaFadein H 0.1 0,250]
+[charaMove H 0,-200 2.0]
+[se ad7]
+[seStop ad7 0.15]
+[wt 0.25]
+[se ad7]
+[seStop ad7 0.15]
+[wt 0.25]
+[se ad7]
+[seVolume ad7 0 0.9]
+[seStop ad7 0.15]
+[wt 0.25]
+[se ad7]
+[seVolume ad7 0 0.8]
+[seStop ad7 0.15]
+[wt 0.25]
+[se ad7]
+[seVolume ad7 0 0.7]
+[seStop ad7 0.15]
+[wt 0.25]
+[se ad7]
+[seVolume ad7 0 0.6]
+[seStop ad7 0.15]
+[wt 0.25]
+[se ad7]
+[seVolume ad7 0 0.5]
+[seStop ad7 0.15]
+[wt 0.25]
+[se ad7]
+[seVolume ad7 0 0.4]
+[seStop ad7 0.15]
+[wt 1.0]
+
+＠節分大将
+あっ、頼光殿！？　お待ちくださいませ！
+[k]
+
+＠節分大将
+それはいささか短慮にございます、[r]マスターの[#命:めい]をお待ちいただきたく[line 3]！
+[k]
+
+
+
+＠ダ・ヴィンチ
+なんとまあ、あのまま直角に壁を走って[r]百階まで行くつもりかい？
+[k]
+
+＠ダ・ヴィンチ
+賢いどころかいつにもましてバーサーカーっぽいね、[r]今日の彼女は。
+[k]
+
+
+
+＠節分大将
+ああ、もうあんなところまで！[r]そしてどんどん先に[line 3]
+[k]
+
+？1：凄い速さだ。もう見えなくなって[line 3]
+？！
+
+＠節分大将
+……………？
+[k]
+[messageOff]
+
+
+[se ad75]
+[wt 0.4]
+[charaMove H 0,250 2.5]
+[wt 1.2]
+[charaFadeout H 0.7]
+[wt 0.8]
+
+[effect bit_talk_impactlanding]
+[shake 0.05 6 6 1.0]
+[se ad74]
+[wt 1.5]
+[effectStop bit_talk_impactlanding]
+[wt 0.5]
+
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.7 0,-80]
+[charaMove D 1 0.7]
+[charaShake D 0.05 3 3 0.7]
+[wt 0.7]
+
+＠源頼光
+ううん……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠節分大将
+ら、頼光殿ー！
+[k]
+
+？1：親方、空から頼光さんがー！？
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-90]
+
+＠ダ・ヴィンチ
+彼女のメディカルチェックを開始する！[r]……うん？　これは……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+霊核などへの直接的ダメージはありませんが……
+[k]
+
+＠マシュ
+魔力が欠乏しているといいますか、[r]滞っているといいますか……
+[k]
+
+＠マシュ
+分かりやすく言えば。[r][#とても疲労している]、というのに近い状況かと。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaSet H 98115000 1 エフェクト用]
+[bgmStop BGM_EVENT_7 0.4]
+[wt 0.2]
+
+[charaPut H 1]
+[charaEffect H bit_talk_liquor_communication01]
+
+[se ade153]
+
+[wt 0.5]
+[bgm BGM_EVENT_5 0.1]
+[wt 1.0]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 1.0 1]
+[wt 3.0]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠節分大将
+っ、また！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠酒呑童子
+ふふ。消えたと思うたら現れるんが鬼やで、と。
+[k]
+
+＠酒呑童子
+言い忘れとったけど、折角作った塔やのに外を登るぅ、[r]とか、そんな無粋な真似許すわけあらへんよ。
+[k]
+
+＠酒呑童子
+せやから、外を飛んだり登ったりしてきたら、[r]そんなふうに強めに『酔う』ようにしとるさかい。
+[k]
+
+＠酒呑童子
+ちゃあんと階段で一階ずつ登ってきておくれやす。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaPut G 1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-90]
+
+＠ダ・ヴィンチ
+む。これがキミの言う『酔い』なのか。
+[k]
+
+＠ダ・ヴィンチ
+フラフラになって[#前後不覚:ぜんごふかく]になるというのは[r]なかなかの悪酔いだと思うけれどね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠酒呑童子
+楽しく酔わせられへんのは残念やけど、[r]ま、塔の形にしてもうてる以上どうもならんわなぁ。
+[k]
+
+＠酒呑童子
+心配せぇへんでも、内部を登るぶんには[r]そないきつくあらしまへんよ。
+[k]
+
+＠酒呑童子
+疲れは溜まるやろけど、休み休み、[r]かわりばんこに進むんがええんとちゃう？
+[k]
+
+[charaFace E 1]
+
+＠酒呑童子
+ほんなら、今度こそ。うちらは塔の上で[r]のーんびり待っとるさかい……
+[k]
+
+＠
+[charaTalk F]
+くは、くわーはっはっは！[r]……ふう。このあたりで充分と見た。[#吾:われ]も疲れた。
+[k]
+
+＠
+[charaTalk F]
+しかし酒呑、せっかくの酒をこのような遊びで[r]無駄に使って良いのか？
+[k]
+
+＠
+[charaTalk F]
+[#吾:われ]も酒呑ほどではないがそこそこ飲めるぞ？[r]酒盛りであれば[#吾:われ]らだけで充分だろうに[line 3]
+[k]
+
+[messageOff]
+
+[charaEffectStop H bit_talk_liquor_communication01]
+[charaFadeout E 1.0]
+[se ad42]
+[seVolume ad42 0 0.25]
+[seStop ad42 1.0]
+
+[wt 2.5]
+
+[charaPut G 1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+頼光さんがこうなっているのは、外壁を登ろうとした[r]ルール違反のせい……という事のようですね。
+[k]
+
+＠マシュ
+そして中を進む場合も、ある程度はこのような[r]肉体疲労の影響からは逃れられない、と。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-90]
+
+＠ダ・ヴィンチ
+ふむ。どれだけの酔い、どれだけの疲労が溜まるかは、[r]実際に中を登ってみないと計れない、か。
+[k]
+
+＠ダ・ヴィンチ
+できるだけ早期攻略を目指すなら、疲労度に応じて[r]適宜戦力を入れ替えていく必要があるだろう。
+[k]
+
+＠ダ・ヴィンチ
+これはひょっとしたら、カルデアにいるサーヴァント、[r]その総力戦になってしまうかもだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠節分大将
+しかし……酒……ですか。[r]困りました。
+[k]
+
+？1：ん、溜め息ついてる？　どうかした？
+？！
+
+[charaFace B 3]
+
+＠節分大将
+……い、いいえ。尽力するのみにございます。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.3]
+[wt 0.5]
+
+[bgm BGM_EVENT_4 0.1]
+[charaFace B 2]
+
+＠節分大将
+さあ参りましょう、マスター！[r]これは鬼の塔の完全踏破に至る、記念すべき最初の一歩。
+[k]
+
+＠節分大将
+意気は[#軒昂:けんこう]、準備は万端。[r]いかなる心配も御無用にございます。
+[k]
+
+＠節分大将
+この背で皆に示してご覧にいれましょう[line 3][r]節分大将ここにあり、と！
+[k]
+
+？1：すごい気合いだ！　頼りにしてます！
+？！
+
+[charaFace B 1]
+
+＠節分大将
+有り難きお言葉でございます。[r]私は酒気にはめっぽう弱いのですが、そこはそれ。
+[k]
+
+[charaFace B 2]
+
+＠節分大将
+気合いです！[r]これはおそらく、気合いがあればなんとかなる事柄！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠マシュ
+記念すべき最初の一歩に、なんだか若干心配になる[r]新情報が入ってきたのですが！？
+[k]
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_4 2.0]
+[wait fade]
+
+[charaPut G 1200,1200]
+[charaFadeout A 0.1]
+[skip false]
+[scene 10000]
+[wt 0.5]
+[fadein black 0.1]
+[wait fade]
+[effect bit_chapterstart80088]
+[wt 0.4]
+[scene 10001]
+[wait effect bit_chapterstart80088]
+[wt 0.3]
+[fadeout black 1.5]
+[wait fade]
+[wt 0.5]
+
+[soundStopAll]
+[end]
+

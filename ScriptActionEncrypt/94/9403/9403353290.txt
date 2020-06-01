@@ -1,0 +1,474 @@
+
+
+＄94-03-35-32-9-0
+
+
+
+[soundStopAll]
+[charaSet A 11006001 1 サリエリ_演出用]
+[charaSet C 11006001 1 サリエリ]
+[charaSet D 4017001 1 マリー]
+[charaSet E 1026001 1 デオン]
+
+[equipSet H 9806850 1 バレンタイン礼装]
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66600]
+[branch lblConf]
+[label lblNotClear]
+[scene 10310]
+[label lblConf]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 1.4]
+
+
+？1：サリエリ！
+？2：見つけた！
+
+？！
+
+
+[charaFace C 7]
+＠サリエリ
+[tVoice ValVoice_1100600 0_V010]
+……マスター。[wait tVoice]
+[k]
+
+
+[charaFace C 0]
+
+＠サリエリ
+[tVoice ValVoice_1100600 0_V020]
+我に声を掛けるからには、そうか。[r][#我:わ]が力を欲しているという事に違いあるまいな。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace C 8]
+[bgmStop BGM_EVENT_77 1.0]
+[wt 1.0]
+[charaFace C 2]
+
+[se ad632]
+[charaEffect C bit_talk_lightning_01r]
+[wt 1.5]
+
+[se ad29]
+[charaChange C 11006000 0 fade 1.0]
+[wait charaChange C]
+[seStop ad632 1.5]
+[wt 1.5]
+
+[bgm BGM_EVENT_48 0.1]
+
+＠サリエリ
+[tVoice ValVoice_1100600 0_V030]
+[line 6]何を殺す？[wait tVoice]
+[k]
+
+＠サリエリ
+[tVoice ValVoice_1100600 0_V040]
+言え。貴様が言えば、我はそのようにしよう。[wait tVoice]
+[k]
+
+[charaFace C 1]
+
+
+＠サリエリ
+[tVoice ValVoice_1100600 0_V050]
+如何なる場所へと赴くのか。[r]それとも、シミュレーターとやらでも起動してみせるか。[wait tVoice]
+[k]
+
+？1：違うよ
+
+[charaFace C 0]
+
+＠サリエリ
+[tVoice ValVoice_1100600 0_V060]
+ほう……？[wait tVoice]
+[k]
+
+？2：今日はそういうのじゃなくて……
+
+[charaFace C 0]
+
+＠サリエリ
+[tVoice ValVoice_1100600 0_V070]
+そうか。[wait tVoice]
+[k]
+
+？！
+
+[messageOff]
+[se ad596]
+[wt 0.5]
+[bgmStop BGM_EVENT_48 1.0]
+[charaEffectStop C bit_talk_lightning_01r]
+[wt 1.0]
+
+[charaPut A 1]
+[charaScale A 1.3]
+[se ad29]
+[charaEffect A bit_talk_31]
+[wt 0.7]
+
+[charaEffectStop A bit_talk_31]
+[charaChange C 11006001 0 fade 1.0]
+[wait charaChange C]
+[wt 2.0]
+[charaFace C 8]
+
+＠サリエリ
+[tVoice ValVoice_1100600 0_V080]
+……。[r]……。[wait tVoice]
+[k]
+
+[charaFace C 0]
+
+＠サリエリ
+[tVoice ValVoice_1100600 0_V090]
+……では、用件を聞くとしよう。マスター。[wait tVoice]
+[k]
+
+？1：じゃあ、はい！
+？2：ハッピーバレンタインです！
+
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[charaFace C 13]
+
+＠サリエリ
+[tVoice ValVoice_1100600 0_V100]
+…………………………………………？[wait tVoice]
+[k]
+
+[bgm BGM_EVENT_11 0.1]
+[charaFace C 9]
+
+＠サリエリ
+[tVoice ValVoice_1100600 0_V110]
+マスター？[wait tVoice]
+[k]
+
+＠サリエリ
+[tVoice ValVoice_1100600 0_V120]
+何だ、これは。[r]何なのだ。[wait tVoice]
+[k]
+
+
+＠サリエリ
+[tVoice ValVoice_1100600 0_V130]
+チョコラータ？[wait tVoice]
+[k]
+
+＠サリエリ
+[tVoice ValVoice_1100600 0_V140]
+多少の魔力源ではあるようだが、[r]何故このようなものを我に渡す。分からん。分からない。[wait tVoice]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.0]
+[charaFace C 8]
+[wt 1.0]
+[charaFace C 2]
+
+＠サリエリ
+[tVoice ValVoice_1100600 0_V150]
+…………忘れたか？[wait tVoice]
+[k]
+
+＠サリエリ
+[tVoice ValVoice_1100600 0_V160]
+我は死、我は闇。我は殺すために在るものだ。[wait tVoice]
+[k]
+
+[bgm BGM_EVENT_49 0.1]
+
+＠サリエリ
+[tVoice ValVoice_1100600 0_V170]
+ただ一人を殺すために[#存在:カタチ]を成すこの我は、しかし、[r]貴様の敵を殺すためのモノとして此処に現界している。[wait tVoice]
+[k]
+
+[branchQuestNotClear lblNotClear2 3000125 4]
+
+＠サリエリ
+[tVoice ValVoice_1100600 0_V180]
+或いは……[r]異聞帯に現界せし我であれば違っていたろうが……[wait tVoice]
+[k]
+
+[label lblNotClear2]
+
+＠サリエリ
+[tVoice ValVoice_1100600 0_V190]
+酔狂は[#止:よ]すがいい。[r]マスター。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad632]
+[charaEffect C bit_talk_lightning_01r]
+[wt 1.5]
+
+[se ad29]
+[charaChange C 11006000 0 fade 1.0]
+[wait charaChange C]
+[charaEffectStop C bit_talk_lightning_01r]
+[seStop ad632 1.5]
+[wt 1.5]
+
+＠サリエリ
+[tVoice ValVoice_1100600 0_V200]
+我は[line 3][wait tVoice]
+[k]
+
+[charaFace C 1]
+
+＠サリエリ
+[tVoice ValVoice_1100600 0_V210]
+私は[line 3][wait tVoice]
+[k]
+
+[messageOff]
+[se ad632]
+[charaEffect C bit_talk_charge_red]
+[wt 1.5]
+
+[se ad574]
+[flashin once 0.2 0.2 80000090 80000090]
+[wt 0.3]
+
+[charaChange C 11006002 0 fade 1.0]
+[wait charaChange C]
+[seStop ad632]
+[charaEffectStop C bit_talk_charge_red]
+[wt 2.0]
+
+[charaFace C 1]
+＠サリエリ
+[tVoice ValVoice_1100600 0_V220]
+我は死！　神に愛された男を殺すモノ！[r]私は、我は、[#そのように在らなくてはならない]！[wait tVoice]
+[k]
+
+
+＠サリエリ
+[tVoice ValVoice_1100600 0_V230]
+我が身は[#慟哭:どうこく]！[r]我が身は[#燎原:りょうげん]の果てであり、醜き人間どもの闇である！[wait tVoice]
+[k]
+
+
+
+？1：サリエリ[line 3]
+
+？！
+
+
+＠サリエリ
+[f large][tVoice ValVoice_1100600 0_V240]誰だ！[wait tVoice]
+[k]
+
+＠サリエリ
+[tVoice ValVoice_1100600 0_V250]
+お[messageShake 0.01 5 5 1.0]お、おおおお……！[r]おおおおおおおおおおおお……！！[wait tVoice]
+[k]
+
+＠サリエリ
+[tVoice ValVoice_1100600 0_V260]
+おおお、我は……！[wait tVoice]
+[k]
+
+＠サリエリ
+[tVoice ValVoice_1100600 0_V270]
+アントニオ・サリエリは死んだ！　今も！　今も！[r]その魂は似姿としてさえ地上に蘇ることはあるまいよ！[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace C 0]
+[wt 1.0]
+
+＠サリエリ
+[tVoice ValVoice_1100600 0_V280]
+[line 3]間違えてはいけない。マスター。[wait tVoice]
+[k]
+
+＠サリエリ
+[tVoice ValVoice_1100600 0_V290]
+私を、人のように扱うな。[r]それはいけない。[wait tVoice]
+[k]
+
+[messageOff]
+[charaSpecialEffect C erasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect C]
+[bgmStop BGM_EVENT_49 1.5]
+[wt 1.5]
+
+＠サリエリ
+[tVoice ValVoice_1100600 0_V300]
+それだけは……[wait tVoice]
+[k]
+
+＠サリエリ
+[tVoice ValVoice_1100600 0_V310]
+いけない……[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout C 0.1]
+
+
+[wt 2.0]
+
+
+
+[wipeFilter cinema 0.5 0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+＠
+それからしばらく後[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+
+[bgm BGM_EVENT_94 0.1]
+[wt 1.0]
+
+[charaFace D 1]
+[wt 1.0]
+
+[cameraMove 0.5 0,45 1.0]
+[wt 1.0]
+[cameraHome 1.0]
+[wait camera]
+[wt 1.3]
+
+[charaMoveReturn D 10,-50 0.5]
+[wait charaMoveReturn D]
+[charaMoveReturn D -10,-50 0.5]
+[wait charaMoveReturn D]
+[wt 1.0]
+
+[charaFace D 4]
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.4 0,-50]
+[wt 1.4]
+
+[charaFace E 2]
+[wt 1.0]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+[wt 1.1]
+
+[charaMoveReturn D 0,-60 0.3]
+[wt 0.5]
+
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFaceFade D 1 0.5]
+[wt 2.0]
+
+[bgmStop BGM_EVENT_94 1.0]
+[charaFadeout D 0.4]
+[wt 2.4]
+
+[bgm BGM_EVENT_29 0.1]
+
+
+＠
+君はマリアから何かを貰うだろう。[r]それは、どうにも漠然とした謎のプレゼントであって……
+[k]
+
+＠
+何かの時期と重なっている訳でもなし、[r]ハッキリした差出人がいる訳でもなし。
+[k]
+
+
+＠
+言葉としては歯切れの悪い、けれども[r]笑顔だけは抜群にとびぬけて[#眩:まばゆ]いマリアからの贈り物。
+[k]
+
+
+＠
+まあ、きっと分かるんだろう。君なら。
+[k]
+
+
+[messageOff]
+[se bas2]
+[charaFace H 0]
+[charaFadein H 0.5 0,-70]
+[wt 2.0]
+
+
+＠
+[line 3][#燎原:りょうげん]の火に焼かれたが如き、漆黒の[#指揮棒:タ　ク　ト]。
+[k]
+
+
+＠
+そんなものマリアが贈る訳がない。[r]僕だって贈らない。つまるところ、そういう話。
+[k]
+
+
+＠
+[#紆余曲折:う よ き ょ く せ つ]を経て[r]君の手に渡ったソレは[line 3]
+[k]
+
+＠
+アイツからのプレゼントだ。
+[k]
+
+
+＠
+まったく。[r]仕方ないのかもしれないが、なんとも[#胡乱:うろん]なことだよ。
+[k]
+
+
+[messageOff]
+[wt 1.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_29 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

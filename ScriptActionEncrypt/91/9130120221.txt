@@ -1,0 +1,80 @@
+＄91-30-12-02-2-1
+
+[soundStopAll]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaSet A 2022000 1 アルテラサンタ]
+[charaSet B 99502600 1 マシュ]
+[charaSet C 5009000 1 エフェクト用ダミー]
+
+[scene 21803]
+
+[charaPut C 1200,1200]
+[charaEffect C bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠アルテラサンタ
+…………よし。こんなところだろう。
+[k]
+
+＠アルテラサンタ
+ドゥームＺがいなくては、[r]流石の私もただの仮装をした私かと焦ったが、
+[k]
+
+[charaFace A 6]
+＠アルテラサンタ
+アーチャーとしての霊基だけでなく、[r]サンタクロースとしての在り方も取り戻せた。
+[k]
+
+[charaFace A 3]
+＠アルテラサンタ
+取り戻せた。[r]気がする。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[bgmStop BGM_EVENT_2 0.7]
+[charaPut C 1]
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+＠マシュ
+気がする……！
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut C 1200,1200]
+[wt 0.2]
+
+[bgm BGM_EVENT_4 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠アルテラサンタ
+サンタパワーは充分だ。[r]これで、ブリュンヒルデに贈り物を届けられる。
+[k]
+
+[messageOff]
+
+[wt 0.7]
+[charaFace A 5]
+
+[wt 1.0]
+[charaFace A 2]
+＠アルテラサンタ
+で[messageShake 0.005 3 3 0.5]はゆくぞ！　ここからが本番だ！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_4 2.0]
+[wait fade]
+[soundStopAll]
+[end]

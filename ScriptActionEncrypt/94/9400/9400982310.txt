@@ -1,0 +1,119 @@
+
+＄94-00-98-23-1-0
+
+[charaSet A 7014001 1 ナイチンゲール]
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+
+[scene 10400]
+
+[fadein black 2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠ナイチンゲール
+ごきげんよう、私です。[r]救急キットの点検のため参りました。
+[k]
+
+＠ナイチンゲール
+救急キット。普段、部屋のどこに[r]格納されているのか貴方は把握できていますか？
+[k]
+
+[messageOff]
+
+[charaFace A 5]
+[wt 1.0]
+
+[charaFace A 1]
+＠ナイチンゲール
+はい。そうです、寝台です。[r]他にも非常用装備が複数セットされていますので、
+[k]
+
+[charaFace A 0]
+＠ナイチンゲール
+緊急事態の発生時にはまず落ち着いて、[r]寝台下の装備を確認。必ず所持の上で避難行動を。
+[k]
+
+＠ナイチンゲール
+よろしいですね？[r][line 3]はい。もう一度。よろしいですね。
+[k]
+
+？1：……は、はい
+
+＠ナイチンゲール
+はい。よろしい。
+[k]
+
+
+？2：ええと、今日って何の日だか覚えてる？
+
+＠ナイチンゲール
+今日は救急キットの点検日です。[r]それと……
+[k]
+
+＠ナイチンゲール
+ああ、キャプテン・クックが落命した日ですね。[r]それがどうかしましたか。
+[k]
+
+？！
+
+[charaFace A 0]
+＠ナイチンゲール
+それでは。[r]救急キットは新しいものに交換しておきます。
+[k]
+
+[charaFace A 5]
+＠ナイチンゲール
+念のため、内容物に漏れがないか[r]貴方も確認しておくように。よろしいですね。
+[k]
+
+？1：はい！
+？2：ありがとうございます、婦長
+
+？！
+
+[charaFace A 0]
+
+＠ナイチンゲール
+よろしい。日頃より、衛生と清潔を心掛けなさい。[r]それでは。
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.4]
+
+[se ad95]
+
+[se ad8]
+
+[wt 0.5]
+[seStop ad95 0.3]
+
+[wait se ad8]
+
+[messageOff]
+[fadeout white 1.0]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+
+[scene 10001]
+[fadein white 1]
+[wait fade]
+
+[se bas2]
+[equipSet B 9805960 1]
+[wait equipSet B]
+[charaFace B 0]
+[charaFadein B 0.5 0,-70]
+[wt 2.0]
+[charaFadeout B 0.4]
+[wt 1.0]
+
+
+
+
+[soundStopAll]
+[end]

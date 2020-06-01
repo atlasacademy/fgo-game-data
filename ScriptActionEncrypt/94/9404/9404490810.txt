@@ -1,0 +1,469 @@
+
+
+＄94-04-49-08-1-0
+
+[soundStopAll]
+
+[skip false]
+
+[branchQuestNotClear lblNotClear1 3000320 4]
+[label lblClear1]
+[flag IsGirl true]
+[branch lblIsClearConf1]
+[label lblNotClear1]
+[flag IsGirl false]
+[label lblIsClearConf1]
+
+[skip true]
+
+[charaSet A 98002000 1 フォウ]
+[charaSet B 6008000 1 コスモティック・ビューティ夫人]
+[charaSet C 99502600 1 マシュ]
+[charaSet D 6031001 1 刑部姫]
+[charaSet E 7027300 1 アマゾネスＣＥＯ_普通]
+[charaSet F 1098119600 1 アマゾネスＣＥＯ_ろくろ]
+[charaSet G 7034001 1 サロメ]
+[charaSet J 5009000 1 エフェクト用]
+
+[branch lblNotGirl1 IsGirl false]
+[label lblGirl1]
+[charaSet H 1098124510 1 ダ・ヴィンチ]
+[branch lblIsGirlConf1]
+[label lblNotGirl1]
+[charaSet H 98111500 1 ダ・ヴィンチ]
+[label lblIsGirlConf1]
+
+[scene 90000]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.7]
+
+[bgm BGM_EVENT_70 0.1]
+
+？1：はぁ……はぁ……
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠フォウ
+フォウフォッ、フォウ……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠コスモティック・ビューティ夫人
+まさか、内部に階段もエレベーターもないとは、[r]予想も、していませんでしたわ……っ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠マシュ
+だ、大丈夫ですか先輩！
+[k]
+
+？1：足がビキビキしてる……！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠刑部姫
+ふいー……。[r]持ってて良かった千代紙操法……。
+[k]
+
+？1：おっきー、ずっるい！
+？！
+
+[messageOff]
+[cameraMove 0.2 0,0 1.1]
+[wt 0.2]
+[charaFace D 3]
+[charaShake D 0.07 3 2 0.7]
+[se ad77]
+[seVolume ad77 0 0.4]
+
+＠刑部姫
+わー、揺らさないで揺らさないで！[r]ちゃんとマーちゃんにも貸してあげるから！[wt 0.4][seStop ad661 0.4]
+[k]
+
+[messageOff]
+[fadeout black 0.4]
+[wait fade]
+[cameraHome 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+[fadein black 0.4]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠コスモティック・ビューティ夫人
+外観は良かったですが、内部構造に関してはＢＴポイント、[r]マイナス査定です！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：アマゾネスＣＥＯ
+予想通りの過酷な配達となっているな。
+[k]
+
+[charaFace E 8]
+
+＠E：アマゾネスＣＥＯ
+力だけでよじ登れと言わんばかりのこの造り。[r]平時ならよい修行になると喜ぶところだが[line 3]
+[k]
+
+＠E：アマゾネスＣＥＯ
+配達員にとってはまさに[r]そびえ立つ悪意以外の何物でもない。
+[k]
+
+＠E：アマゾネスＣＥＯ
+お客様はどこにいようと尊重すべき対象であり、[r]平等に配達は行うのだとしても、
+[k]
+
+[charaFace E 0]
+
+＠E：アマゾネスＣＥＯ
+それはそれとして設備や事案についての[r]好ましい好ましくないはあるものだ。
+[k]
+
+[charaFace E 5]
+
+＠E：アマゾネスＣＥＯ
+このタワーは時間指定しておきながら[r]家にいない不届き者レベルの極悪案件だな。
+[k]
+
+＠E：アマゾネスＣＥＯ
+温厚な配達員も思わず[r]荷物を持つ手に力が入るというものだ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠マシュ
+あっ、気をつけてください、[r]前方にサーヴァント反応です！
+[k]
+
+＠マシュ
+この階の住人だと思われます！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠E：アマゾネスＣＥＯ
+うおお、アマゾネス・ドットコムです！
+[k]
+
+＠E：アマゾネスＣＥＯ
+品物のお届けにあがりました、よくもこんなところに[r]住んでくれてやがりますねお客様！
+[k]
+
+？1：本音が漏れてますＣＥＯ！
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_3 1.0]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.3 1]
+[wt 0.3]
+
+
+＠サロメ
+まあ。あなたが、あたしの欲しいものを[r]持ってきてくれるっていうひとね？　待っていたわ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+サロメさん？　確かに今まで姿が見えなかった一人[r]でしたが、ここにいらっしゃったとは。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+
+＠E：アマゾネスＣＥＯ
+ふむ。受け取り主の名は『[#髑髏:どくろ]姫』とあるが……[r]よくよく考えると偽名臭い。
+[k]
+
+？1：（ユニヴァース名との違いがよくわからない）
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠フォウ
+フォウ、フォーウ、フォウ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠E：アマゾネスＣＥＯ
+まあペンネームや芸名での注文もよくあることだ。[r]同意とサインが得られれば引き渡しに問題はないぞ。
+[k]
+
+[bgmStop BGM_EVENT_2 0.7]
+
+[charaFace E 11]
+
+＠E：アマゾネスＣＥＯ
+品物は……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠サロメ
+ああ、ああ！　待っていたわ、待ちきれなかったわ！[r][#首よね]？　ヨカナーンの首！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+
+＠E：アマゾネスＣＥＯ
+う、む？　[#首:ヘッド]と言えばそうかもしれん。[r]品物は浴室用品、シャワーヘッドが一つだ。
+[k]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth F 1]
+[charaDepth E 2]
+[charaFadeout E 0.2]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠F：アマゾネスＣＥＯ
+アマゾネス・ドットコムの品揃えのダイバーシティが[r]証明されたのではないのかと思うが。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 0.5]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+[wt 0.7]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠サロメ
+違う、違うわ。それはヨカナーンの首じゃない。
+[k]
+
+＠サロメ
+どうして？　嘘を、ついたの？[r]持ってきてくれるって言ったのに。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠E：アマゾネスＣＥＯ
+注文票によると確かにこれが注文されている。
+[k]
+
+[charaFace E 11]
+
+＠E：アマゾネスＣＥＯ
+お客様の誤認識による注文に関しては、[r]こちらに[#瑕疵:かし]はないと考えるのが社としてのポリシー。
+[k]
+
+＠E：アマゾネスＣＥＯ
+ただ、正当な返品手続きを取ってもらえれば[r]キャンセルも可能なので[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠サロメ
+あ。わかった。わかっちゃった。[r]そういうことね？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠F：アマゾネスＣＥＯ
+わかっていただけましたか。
+[k]
+
+＠F：アマゾネスＣＥＯ
+常にカスタマーに寄り添った最先端のサービス、それが[r]アマゾネス・ドットコムのグランドデザインであり、
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+＠サロメ
+[#あなたたちの首が]、[#持ってきてくれた首だって事ね]？
+[k]
+
+？1：ちがいます！
+？！
+
+[charaFace G 1]
+
+＠サロメ
+特に[#あなた:マスター]の首はとってもヨカナーンっぽいし。
+[k]
+
+＠サロメ
+うふふ。銀のお盆に載ってはいないけれど、[r]持ってきてくれた首を受け取らないのは失礼だわ。
+[k]
+
+＠サロメ
+受け取って、くちづけをしてあげなくちゃ……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk H]
+[charaFace H 4]
+[branch lblNotGirl2 IsGirl false]
+[label lblGirl2]
+[charaFadein H 0.1 1]
+[branch lblIsGirlConf2]
+[label lblNotGirl2]
+[charaFadein H 0.1 0,-90]
+[label lblIsGirlConf2]
+
+＠ダ・ヴィンチ
+うーん、間違った方向性を与えられたバーサーカーは[r]やっぱり厄介だなあ。
+[k]
+
+[bgmStop BGM_EVENT_5 1.2]
+
+[charaFace H 2]
+
+＠ダ・ヴィンチ
+ひとまず実力行使で大人しくさせるしかないようだ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠E：アマゾネスＣＥＯ
+返品もしない、受け取りもしないでは通らない。[r]それだけは認めるわけにはいかない。
+[k]
+
+[charaFace E 2]
+
+＠E：アマゾネスＣＥＯ
+力ずくでも満足してもらうぞ、お客様！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+

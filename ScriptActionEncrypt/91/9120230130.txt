@@ -1,0 +1,263 @@
+
+
+＄91-20-23-01-3-0
+
+[soundStopAll]
+
+
+[charaSet B 98115300 1 ホームズ]
+[charaSet C 2023002 1 モリアーティ]
+[charaSet D 6005001 1 ジャック]
+[charaSet E 1098124510 1 ダ・ヴィンチ]
+[charaSet F 2023001 1 モリアーティ（？）]
+
+[charaSet H 98115000 1 エフェクト用]
+[charaSet I 98115000 1 エフェクト用2]
+[charaSet J 98115000 1 エフェクト用3]
+
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_06b2]
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 10950]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10]
+
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_06b2]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[se adm14]
+[effect bit_talk_Slash_white_01_L]
+[wt 0.1]
+[se adm14]
+[effect bit_talk_Slash_white_01]
+[wt 0.5]
+
+[se ade65]
+[charaPut J -200,100]
+[charaEffect J bit_shot_01]
+[wt 0.2]
+[se ade65]
+[charaPut J 200,-100]
+[charaEffect J bit_shot_01]
+[wt 1.0]
+[charaEffectStop J bit_shot_01]
+
+[charaPut I -50,0]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.2 0,0]
+[se ad671]
+[charaMove F -50,0 0.2]
+[wt 0.4]
+
+＠モリアーティ（？）
+グアアアア……！
+[k]
+
+＠モリアーティ（？）
+お、おのれ……善良などと[#嘯:うそぶ]き、[r]魔弾の真なる力を発揮せぬまま戦う、怠惰な男め……！
+[k]
+
+＠モリアーティ（？）
+貴様にモリアーティは任せられない！[r]貴様、などに……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 50,0]
+
+＠モリアーティ
+[line 3]残念。話はそこまでだ。
+[k]
+
+[charaFace C 1]
+
+＠モリアーティ
+いい加減、私という存在が[r]実はボンクラで退屈だというボロが出そうだからネ？
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[wt 0.1]
+[scene 10000]
+
+[wipein rectangleStripLeftToRight 0.1 1]
+[wait wipe]
+
+[se bac329]
+[effect bit_talk_ereshki02 0,0 F]
+[wt 0.8]
+[se bac324]
+[wt 1.2]
+[se bac327]
+[wt 1.8]
+
+[seVolume bac327 0.5 0.6]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.5]
+[seStop bac327 1.5]
+[wait fade]
+
+[scene 10950]
+[effectStop bit_talk_ereshki02]
+
+[charaPut I -50,0]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 -50,0]
+[wt 0.1]
+[seStop bac327 1.5]
+[cueSe NoblePhantasm_202300 NP_202300_7]
+[wt 3.0]
+
+[cueSeStop NP_202300_7 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[se ad52]
+[charaSpecialEffect F darkEnemyErasure 1 2.0]
+[wt 1.0]
+[charaEffectStop I bit_talk_06b2]
+[wt 1.5]
+[charaPut I 1200,1200]
+[wt 1.0]
+
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠モリアーティ
+よーし、勝った！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠ジャック
+ねえねえ、[#おかあさん:マスター]！[r]それにおじさん！
+[k]
+
+＠ジャック
+霧が濃くなってきたよ、[r]これどうしよう！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠モリアーティ
+む。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad31]
+[seVolume ad31 0 0.4]
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 23]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+[image berserker_language_2]？
+[k]
+
+[seStop ad31]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠モリアーティ
+おや？　これは……。
+[k]
+
+[charaFace C 2]
+
+＠モリアーティ
+ホームズ、おい、どうしたホームズ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad31]
+[seVolume ad31 0 0.5]
+[charaPut H 1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠ホームズ
+……。[r]……キミ　しわ　で　？
+[k]
+
+？1：聞こえないよー！
+？！
+
+[messageOff]
+[seStop ad31 1.0]
+[bgmStop BGM_EVENT_81 1.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[wt 0.5]
+[scene 10953 2.5]
+[wt 1.5]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠ジャック
+敵が来るよ！[r]気をつけて！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠モリアーティ
+ええい、こんな時に！[r]急いで倒して、霧の薄いところまで逃げるとしよう！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

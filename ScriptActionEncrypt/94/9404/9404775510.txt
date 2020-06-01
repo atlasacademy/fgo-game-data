@@ -1,0 +1,104 @@
+
+
+
+＄94-04-77-55-1-0
+
+[soundStopAll]
+
+[skip false]
+
+[maskout black 0]
+[wait mask]
+
+[charaSet A 25005000 1 ボイジャー]
+[charaSet B 3043000 1 エリセ]
+[imageSet C cut174_1st 1]
+[imageSet D cut174_1st 1]
+[charaSet T 5009000 1 エフェクト用ダミー]
+
+[scene 20730]
+
+[pictureFrameTop cut170_gameframe_bright]
+
+[skip true]
+
+[fadein black 0]
+[wait fade]
+[maskin black 1.5]
+[wait mask]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+＠ボイジャー
+……ぼくは、たたかいたくない。[r]エリセを、たすけたいだけ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-50]
+
+＠エリセ
+私だって……だけど[line 3]
+[k]
+
+[bgm BGM_EVENT_63 0.1]
+
+[charaFace B 5]
+
+＠エリセ
+だからこそ、戦わなきゃならないんだ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.7]
+
+[charaDepth C 2]
+[charaDepth D 1]
+[charaScale D 1.4]
+
+[effect bit_talk_x_slash01]
+[se ad470]
+[seVolume ad470 0 0.9]
+[wt 0.1]
+[seStop ad470 0.2]
+[wt 0.1]
+
+[effect bit_talk_x_slash02]
+[se ad470]
+[seVolume ad470 0 0.9]
+[wt 0.2]
+[seStop ad470 0.3]
+[wt 0.3]
+
+[backEffect bit_talk_sparks]
+
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[se ad471]
+[charaFadein D 0.2 0,-270]
+[wt 0.1]
+
+[charaFadein C 0.2 0,-200]
+
+[charaMove D 0,-200 0.2]
+[charaMoveScale D 1.0 0.2]
+[wt 0.5]
+[effectStop bit_talk_fire]
+
+[wt 2.0]
+
+[maskout black 0.5]
+[seStop ad471 0.4]
+[bgmStop BGM_EVENT_63 0.4]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[soundStopAll]
+[end]
+
+

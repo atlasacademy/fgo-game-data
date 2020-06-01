@@ -1,0 +1,163 @@
+
+＄02-00-01-17-2-1
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 98111500 1 通信用ノイズ]
+[charaSet C 1002001 1 アルトリア・オルタ]
+[charaSet D 2023002 1 モリアーティ]
+[charaSet E 98086000 1 ホームズ]
+[charaSet F 9938600 1 魔神バアル]
+[charaSet G 98111500 1 ダ・ヴィンチ]
+
+[soundStopAll]
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 38900]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠魔神バアル
+[messageShake 0.05 4 4 1.0]
+ははははは！[r]やはり滅ぶ！　滅ぶか我は！　だが復讐は成し遂げた！
+[k]
+
+＠魔神バアル
+モリアーティ、よくここまで付き合ってくれた！[r]長きに渡る同盟は、ここで解消としよう！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠モリアーティ
+ああ。さらばだバアル、我が同胞！[r]互いにそれを無為と知りながら、全てを捧げた愚か者！
+[k]
+
+[charaFace D 1]
+＠モリアーティ
+記憶を消すことに同意して、[r]人間になるという屈辱にすら耐えて復讐を望んだ者よ。
+[k]
+
+[charaFace D 2]
+＠モリアーティ
+さようなら、魔神！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠魔神バアル
+ならば我らは同類だろうさ、モリアーティ！[r][%1]、おまえを殺すことはできなかった。
+[k]
+
+＠魔神バアル
+おまえの力が、我らを上回った。恥辱、屈辱、侮辱、[r]そして憤怒[line 3]そういったものを、私は感じている。
+[k]
+
+＠魔神バアル
+[#だが]、[#おまえは必ず死ぬ]。
+[k]
+
+？1：なんだって……？
+？！
+
+＠魔神バアル
+[messageShake 0.05 7 7 1.0]
+ハハハハハハハハハハハハハハハハハハハハハハハハハハハハ[r]ハハハハハハハハハハハハハハハハハハハハハハハハハハ！！
+[k]
+
+[messageOff]
+
+[shake 0.05 7 7 2.0]
+[charaSpecialEffect F enemyErasure]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[se ba6]
+[wt 0.7]
+[flashOff]
+[wait charaSpecialEffect F]
+[charaFadeout F 0.1]
+[shakeStop]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠モリアーティ
+……終わったか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠アルトリア・オルタ
+貴様も終わりだ、モリアーティ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠モリアーティ
+いや、終わったのは君たちだよ。[r]そしてこの[#惑星:ほし]だ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠アルトリア・オルタ
+……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad14]
+[shake 0.05 0 7 8.0]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0 0,-90]
+[wt 0.3]
+＠ダ・ヴィンチ
+な[line 3]！[r]新宿上空に、隕石が出現した！
+[k]
+
+＠ダ・ヴィンチ
+これは……この組成は……。[r]“ベンヌ”……！
+[k]
+
+＠ダ・ヴィンチ
+だが、新宿上空は常にシバでモニターしていたぞ！？[r]これでは、まるで空間転移だ……！
+[k]
+
+
+
+[messageOff]
+[seStop ad14 2.0]
+[bgmStop BGM_EVENT_24 2.0]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

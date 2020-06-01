@@ -1,0 +1,784 @@
+
+＄94-02-75-33-2-0
+
+
+[soundStopAll]
+
+[charaSet A 98100400 1 マシュ]
+[charaSet B 7031000 1 ジャンヌ・オルタ]
+[charaSet C 2003300 1 ロビンフッド]
+[charaSet D 25003001 1 ヒロインＸＸ]
+[charaSet E 23002001 1 ＢＢ]
+[charaSet F 25003000 1 ヒロインＸＸ（第一）]
+[charaSet G 1001000 1 エフェクト用ダミー１]
+[charaSet H 1001000 1 エフェクト用ダミー２]
+
+[charaScale G 0.6]
+
+[scene 63100]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+[wt 0.1]
+[charaEffect D bit_talk_13]
+[se bac11]
+[wt 0.2]
+[charaShake D 0.05 4 4 0.4]
+[charaEffectStop D bit_talk_13]
+[wt 0.7]
+
+＠ヒロインＸＸ
+あいたぁ！[r]この、私のスキルまで理解した戦い方は……
+[k]
+
+＠ヒロインＸＸ
+もしやループしていたのは私だけではなく、[r][%1][&君:さん]も……？
+[k]
+
+？1：そうなんです
+？2：ちょっと話を聞いてください
+
+？！
+
+[charaFace D 2]
+
+＠ヒロインＸＸ
+いえ、結構です！　そちらはＢＢ側の、[r]サバフェスを楽しもうとする勝ち組サーヴァント！
+[k]
+
+＠ヒロインＸＸ
+私はさもしい宇宙ＯＬ一年生、[r]キミたちのような無職とは違う年上のサーヴァント……
+[k]
+
+＠ヒロインＸＸ
+そう[line 3][r]社会的責任！　というものがあるのです！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠マシュ
+あの……先輩もカルデア職員なので、[r]社会人ではあるのですが……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠ヒロインＸＸ
+つーん。とにかく交渉には応じません。[r]キミたちがフォーリナーを[#庇:かば]うのなら戦うまで。
+[k]
+
+＠ヒロインＸＸ
+ですが今日はお腹が減ったので見逃してあげましょう。[r]ピザのランチタイムが終わってしまいます。
+[k]
+
+[charaFace D 1]
+
+＠ヒロインＸＸ
+それではよい子の諸君、また来週、よろしく霊基！[wt 0.7][charaFace D 2][r]行くぞアーヴァロン！　とーーーぅ！
+[k]
+
+[messageOff]
+[se ad270]
+[charaFadeout D 0.4]
+[bgmStop BGM_EVENT_3 0.4]
+[wt 1.0]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.1]
+[charaShake F 0.02 2 2 1]
+[wt 0.7]
+[se ade157]
+[charaPut H 0,-200]
+[charaEffect H bit_talk_40]
+[wt 0.4]
+
+[charaPut G 0,0]
+[charaEffect G bit_talk_43l]
+[charaMove F 0,150 2.0]
+[charaFadeout F 2.0]
+[wt 1.0]
+
+[charaEffectDestroy H bit_talk_40]
+[charaEffectDestroy G bit_talk_43l]
+
+[seStop ade157 0.4]
+[wipeout rectangleStripUpToDown 0.3 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[charaPut G 1200,1200]
+[charaPut H 1200,1200]
+[scene 28300]
+[wt 0.1]
+
+[wipein rectangleStripDownToUp 0.2 1.0]
+[wait wipe]
+
+[effect bit_talk_arrow01br]
+[wt 0.2]
+[se ade90]
+[wt 1.3]
+[seStop ade90 1.5]
+[wt 0.2]
+
+[bgmStop BGM_EVENT_3 0.7]
+[fadeout black 1.0]
+[wait fade]
+
+[scene 63100]
+[charaSet D 3034001 1 茨木童子]
+[charaSet G 25002000 1 葛飾北斎]
+[charaSet H 6034000 1 牛若丸]
+[charaSet F 11002300 1 巌窟王]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+＠ジャンヌ・オルタ
+典型的な捨て台詞ね。[r]もうちょっと参考になる感じのが欲しかったわ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠マシュ
+ＸＸさんと話はできませんでしたが、[r]街の被害はほぼゼロです。
+[k]
+
+＠マシュ
+この調子なら、次の戦いの時にもっと[r]込み入ったお話ができるかと。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ade198]
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.7 -300,0]
+[charaMove E 0,0 0.7]
+[wt 1.0]
+
+＠ＢＢ
+そこまでです、フォーリナー！[r]このストリートこそルルハワ最大の集金機構！
+[k]
+
+＠ＢＢ
+ＢＢちゃんの目が赤いうちは[r]決して破壊なんかさせませ[line 3]あれ？
+[k]
+
+[charaFace E 16]
+＠ＢＢ
+なんでセンパイたちが先に来てるんですかぁ？[r]もしかして漫画原稿、[#諦:あきら]めちゃいました？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ジャンヌ・オルタ
+諦めてないわよ。先にあの[#煩:うるさ]いのを[r]倒した方が効率がいいって気付いただけよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+＠ＢＢ
+……ふーん、そうですか。[r]まあ、それならいいんですけどぉ……
+[k]
+
+＠ＢＢ
+それで、フォーリナーは倒したんですか？[r]まさか仲間にしよう、なんて言い出しませんよね？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠葛飾北斎
+おう。呼んだかい、びぃびぃ[line 3]って[r]なんだそりゃ。おめえさん、妙な格好してやがるな？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 0]
+[charaFace G 0]
+[charaFadein G 0.1 2]
+＠ＢＢ
+あ、この格好はお気になさらず。[r]南国らしく褐色の小悪魔になっているだけなので♡
+[k]
+
+[charaTalk G]
+[charaFace G 1]
+
+＠葛飾北斎
+そうかい。小麦色の肌ってのも悪くねえなァ……。[r]にしても冷たいじゃねェか。
+[k]
+
+
+＠葛飾北斎
+おりゃあ[#歴:れき]としたかるであの居候サア。[r]今さら、仲間にするもなにもねえんじゃねぇか？
+[k]
+[charaTalk E]
+[charaFace E 14]
+
+＠ＢＢ
+いえ、フォーリナーはフォーリナーでも、[r]北斎さんの事ではなくて……
+[k]
+
+＠ＢＢ
+というか、北斎さん死ななかったんですかぁ？
+[k]
+
+[charaTalk G]
+[charaFace G 0]
+
+＠葛飾北斎
+そうともサ。[r]どうにも危ねえところだったらしいヤ。
+[k]
+
+＠葛飾北斎
+それに[%1]が[r]割って入ってくれたんだろ？
+[k]
+
+[charaFace G 9]
+
+＠葛飾北斎
+フッ、こいつァ大きな借りが出来ちまった。
+[k]
+
+＠葛飾北斎
+何かあったら呼んどくれ。[r]おれにできる事なら喜んで手を貸すサア。
+[k]
+
+[charaFace G 2]
+
+＠葛飾北斎
+サァ、戻るよとと様！[r]ああん？　何をするのかって？
+[k]
+
+[charaFace G 5]
+
+＠葛飾北斎
+そりゃあ、とと様。[r]どこぞの[#さあくる]様に頼んでサア……
+[k]
+
+＠葛飾北斎
+あのろぼっと？　の絵を一枚、[r]げすとってことで描かせてもらうのサ！
+[k]
+
+[charaFace G 4]
+
+＠葛飾北斎
+さっきのあの[#御仁:ごじん]が頭ン中にキンキン来てねェ。[r]いわゆる“ろぼっと”？　ってヤツかね？
+[k]
+
+[charaFace G 9]
+
+＠葛飾北斎
+いいじゃないか、ウン。[r][#粋:いき]だねェ、ああ、ありゃ粋だとも！
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+＠ＢＢ
+………………。
+[k]
+
+＠ＢＢ
+………………。[r]ちょっと、皆さんにお願いがあるんですけど、
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ade44]
+[wt 1.5]
+[seStop ade44 0.4]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+あ、すみませんＢＢさん。[r]ちょっと着信メールが……
+[k]
+
+＠マシュ
+“原稿が危うい。至急、部屋まで戻られたし”
+[k]
+
+[charaFace A 14]
+
+＠マシュ
+たいへんです先輩！[r]急いで部屋に戻りましょう！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠ジャンヌ・オルタ
+（……？　まだホテルについたばかりで[r]　何も描いてないはずだけど……）
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[se ad59]
+[wt 1.0]
+[seStop ad59 1.0]
+
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+＠ＢＢ
+あ……待ってください皆さん、[r]カルデアの皆さーーーん！
+[k]
+
+[charaFace E 10]
+
+＠ＢＢ
+……はあ。行ってしまいました……。[r]お願いごとがあったのになぁ……
+[k]
+
+[charaFace E 0]
+
+＠ＢＢ
+でも、漫画原稿が危ない、と言われたら[r]止められませんよね、サバフェス主催者的に。
+[k]
+
+＠ＢＢ
+本当……誰の助け船かは知りませんが、頼りになる[r]助っ人が集まってきたようですねぇ、センパイ？
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_2 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+[scene 63400]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth C 2]
+
+[wt 2.0]
+
+[fadein black 2.0]
+[wait fade]
+
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠巌窟王
+ククク。部屋で待っている危険とは、[r][#即:すなわ]ち俺なのだがな。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 1]
+[wt 0.4]
+＠茨木童子
+貴様はクハハの人！[r]そうか、部屋を間違えたのだな！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠巌窟王
+[font large]間違えてはいない。
+[k]
+
+[charaFace F 0]
+
+＠巌窟王
+おまえたちに忠告をするため、[r]あのような連絡手段を用いただけだ。
+[k]
+
+＠巌窟王
+俺はどの勢力にも関わらない。[r]ＢＢと顔を合わせたくはなかった。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ロビンフッド
+あー、さっきのは方便だったってコト。[r]で？　そこまでやって、何が言いたいんだオタク？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[bgmStop BGM_EVENT_7 0.4]
+[wt 0.5]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠巌窟王
+……ふん。そちらもループに次ぐループで、[r][#些:いささ]か飽きが来た頃ではないか？
+[k]
+
+[bgm BGM_EVENT_5 0.4]
+
+？1：いいや、まだまだ
+
+[charaFace F 6]
+
+＠巌窟王
+フ。……流石、と言っておくべきか。
+[k]
+
+？2：正直、少し……
+
+[charaFace F 6]
+＠巌窟王
+案ずるな、[%1]。[r]おまえはまだ、耐えることができるはずだ。
+[k]
+
+？！
+
+[charaFace F 0]
+
+＠巌窟王
+さて、忠告というのは他でもない。
+[k]
+
+＠巌窟王
+おまえたちが先ほど戦っていたもの[line 3][r]フォーリナー、ＸＸについてだ。
+[k]
+
+？1：存在自体が反則のようなんだけど
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠ジャンヌ・オルタ
+……まあ、確かにギリギリね。[r]ギリギリよ、かなりギリギリよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？2：カッコイイよね、彼女
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.4 1]
+[wt 0.4]
+＠牛若丸
+……なんと。
+[k]
+
+＠牛若丸
+主殿はああいう金型が好みなので？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠ロビンフッド
+金型て。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠巌窟王
+言いたいことは分からんでもない。
+[k]
+
+[charaFace F 5]
+
+＠巌窟王
+だが。[r]……俺は奴を味方につけるべきだと考えている。
+[k]
+
+＠巌窟王
+この特異点にある謎。[r]すべての事象を解決する鍵は、あのフォーリナーにある。
+[k]
+
+＠巌窟王
+戦うだけでは駄目なのだ。[r]おまえはアレと交渉しなくてはならない。
+[k]
+
+
+？1：どうやって[#誘:おび]き寄せようか？
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠マシュ
+そうですね……。
+[k]
+
+＠マシュ
+ヒロインＸＸさんがフォーリナーということで、[r]シンパシーを感じていた北斎さん……。
+[k]
+
+[charaFace A 7]
+
+＠マシュ
+もしくは、交渉人としてのスキルに長けた方に、[r]お願いするのはどうでしょうか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？2：交渉か……
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ジャンヌ・オルタ
+そう、交渉ね……。
+[k]
+
+[charaFace B 4]
+
+＠ジャンヌ・オルタ
+つまり、[#交渉人:ネゴシエーター]が必要ね。[r][#交渉人:ネゴシエーター]……。
+[k]
+
+＠ジャンヌ・オルタ
+やたら響きがカッコイイわね……[r]私もそういうクラス名にならないかしら……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠ロビンフッド
+あの、明らかに違う世界に踏み込んでいるのと[r]話が合うヤツなんざ[line 3][wt 0.4][charaFace C 0]あ。
+[k]
+
+[charaFace C 1]
+
+＠ロビンフッド
+ははあん、つまりアレか。[r]色物には色物をぶつける、ってコトか！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[charaSet H 7029000 1 織田信長]
+
+[scene 63100]
+[wt 2.0]
+
+[fadein black 2.0]
+[wait fade]
+
+
+[charaTalk H]
+[charaFace H 11]
+[charaFadein H 0.4 1]
+[wt 0.4]
+
+＠織田信長
+[messageShake 0.01 4 4 0.4]
+[font large]誰が色物じゃ！[wt 0.4][bgm BGM_EVENT_27 0.1]
+[k]
+
+＠織田信長
+わしか！　わしか！[r]いやまったくそうであるが！
+[k]
+
+[charaFace H 4]
+
+＠織田信長
+しかしヒロインＸはともかく、[r]ヒロインＸＸかー……。
+[k]
+
+[charaFace H 12]
+
+＠織田信長
+わし、純正の史実系和風サーヴァントだからして。
+[k]
+
+＠織田信長
+サーヴァントユニヴァースのような色物世界には[r]向いてないと思うんじゃが？
+[k]
+
+？1：これ以上ない適切な人材かと
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠マシュ
+わたしもそう思います！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+？2：ノッブはほら、アレだから
+
+[charaTalk H]
+[charaFace H 11]
+[charaFadein H 0.1 1]
+
+＠織田信長
+アレとはなんじゃアレとは！
+[k]
+
+＠織田信長
+確かにわし、[r]ちと[#へうげもの:ひょうげもの]扱いされているところがあるが！
+[k]
+
+[charaFace H 10]
+
+＠織田信長
+それはそれとして、イケメン具合もいい感じの[r]優秀なサーヴァントだと思うんじゃが！
+[k]
+
+？！
+
+[charaFace H 7]
+
+＠織田信長
+まあ良い。[r]とりあえずヒロインＸＸに話しかければいいんじゃな。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠ジャンヌ・オルタ
+そうね。次に襲撃を仕掛けてきたときに、[r]アンタを呼ぶわ。
+[k]
+
+[bgmStop BGM_EVENT_27 0.4]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠織田信長
+良かろう。[r]令呪なり何なりを使って呼び出すが良い。
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaFace H 0]
+
+＠織田信長
+……というところで、[r]その前に軽く運動でもしていくか。
+[k]
+
+[charaFace H 10]
+
+＠織田信長
+わし、ここんとこちょっと体が[#鈍:なま]り気味でな！[r]一年に一度しか出番がないからかなー！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

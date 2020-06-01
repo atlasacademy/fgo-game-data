@@ -1,0 +1,626 @@
+
+＄94-04-02-10-1-0
+
+[soundStopAll]
+
+
+[charaSet A 98100400 1 マシュ]
+[charaSet B 6019001 1 風魔小太郎]
+[charaSet C 6030000 1 段蔵]
+[charaSet D 3028001 1 ジャガーマン]
+[charaSet E 10008001 1 シトナイ]
+[charaSet F 6033000 1 岡田以蔵]
+[charaSet G 6007003 1 ハイド]
+[charaSet H 1098176810 1 刑部姫]
+
+[branchQuestNotClear lblNotClear1 3000303]
+[flag IsClear true]
+[branch lblConf1]
+[label lblNotClear1]
+[flag IsClear false]
+[label lblConf1]
+
+
+
+[scene 80900]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_25 0.1]
+[wt 1.2]
+
+？1：誰か
+？！
+
+[wt 0.1]
+[se ade274]
+[wt 0.3]
+[se ade274]
+[wt 0.7]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.3]
+
+＠風魔小太郎
+ははっ。[r]風魔小太郎、ここに。
+[k]
+
+[messageOff]
+[wt 0.8]
+
+[charaFace B 1]
+[wt 0.6]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠刑部姫
+……お殿様ごっこ？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠風魔小太郎
+楽しいので、つい……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+おや？[r]小太郎さん、服がいつものものに……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠風魔小太郎
+遊びすぎたのか、[r]生地が少し傷んでしまいまして……。
+[k]
+
+＠風魔小太郎
+少々名残惜しいですが、[r]夏が過ぎればしまい込むものですし。
+[k]
+
+[charaFace B 1]
+
+＠風魔小太郎
+それはともかく主殿、何かご用ですか？
+[k]
+
+？1：買い物に付き合ってもらおうかと……
+？！
+
+＠風魔小太郎
+了解しました。
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgm BGM_EVENT_25 1.5 0.2]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 80500]
+[wt 1.0]
+
+[bgm BGM_EVENT_25 1.5 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠風魔小太郎
+なかなか良いお土産を選ばれましたね、
+[k]
+
+[branch lblClear2 IsClear true]
+
+[label lblNotClear2]
+
+＠風魔小太郎
+ダ・ヴィンチ殿やカルデアの皆さんも、[r]喜んでくれそうです。
+[k]
+
+[branch lblConf2]
+
+[label lblClear2]
+
+＠風魔小太郎
+ダ・ヴィンチ殿やゴルドルフ殿も[r]喜んでくれそうです。
+[k]
+
+[label lblConf2]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+？1：あ、確かここらへんは……
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠風魔小太郎
+どうなさいました？[r]……ああ、ＨＩＭＥＪＩカジノですか。
+[k]
+
+？2：お、ＨＩＭＥＪＩカジノだ
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠風魔小太郎
+おや、刑部姫殿が運営していたカジノですね。
+[k]
+
+？！
+
+[charaFace B 0]
+
+＠風魔小太郎
+……。[r]……うん、主殿。
+[k]
+
+＠風魔小太郎
+この後、特に用向きがないのなら、[r]ＨＩＭＥＪＩカジノに向かいませんか？
+[k]
+
+＠風魔小太郎
+何だかんだで、今回のカジノ巡りは特異点修正の[r]一端でもありましたが……。
+[k]
+
+[charaFace B 1]
+
+＠風魔小太郎
+今はもうその必要もない以上、[r]気楽にカジノを楽しむのもよろしいかと。
+[k]
+
+？1：そうだね、行ってみよう！
+
+＠風魔小太郎
+ははっ、お供します。
+[k]
+
+？2：小太郎もやりたいとか？
+
+[charaFace B 3]
+
+＠風魔小太郎
+それは……否定いたしませんが……。
+[k]
+
+[charaFace B 1]
+
+＠風魔小太郎
+ともあれ、主殿も賛成のようなので、[r]参りましょう！
+[k]
+
+？！
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_25 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 81200]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠ジャガーマン
+とぁー！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 22]
+[charaFadein E 0.1 1]
+
+＠シトナイ
+てやー！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace E 22]
+[charaFace D 2]
+[charaFadein E 0.1 2]
+[charaFadein D 0.1 0]
+
+[wt 0.1]
+
+[se ad33]
+[seVolume ad33 0 0.6]
+[wt 0.1]
+[charaMoveReturn E 220,0 0.3]
+[charaMoveReturn D -220,0 0.3]
+[fowardEffect bit_talk_kengekiall02]
+[wt 0.3]
+[charaMoveReturn E 220,0 0.3]
+[charaMoveReturn D -220,0 0.3]
+[wt 0.3]
+[charaMove E 0 0.3]
+[charaMove D 2 0.3]
+[flashin once 0.1 0.5 FFFFFFFF FFFFFF80]
+[wt 1.0]
+
+？1：まだやってたの！？
+？！
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 2]
+
+＠シトナイ
+休みを挟みながらコツコツとね！[r]さあ、これで今度こそわたしの勝ち越しよー！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠風魔小太郎
+彼女たちはそっとしておいた方が[r]よろしいかと。
+[k]
+
+[charaFace B 0]
+
+＠風魔小太郎
+……ふむ、やはりこのＨＩＭＥＪＩカジノ、[r]日本の賭事も多々あるようです。
+[k]
+
+＠風魔小太郎
+花札、手本引き、そして丁半[#博打:ばくち]。
+[k]
+
+[charaFace B 1]
+
+＠風魔小太郎
+スロットやルーレットばかりではなく、[r]こちらも楽しめそうですね。
+[k]
+
+？1：丁半[#博打:ばくち]に行ってみよう
+？！
+
+＠風魔小太郎
+そうですね、単純ですがそれだけに奥深いです。
+[k]
+
+＠風魔小太郎
+僕も素人という訳ではないので、[r]コツくらいはお教えできるかと。
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[scene 79001]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[bgm BGM_EVENT_50 0.1]
+[wt 0.6]
+
+[se ade353]
+[wt 1.6]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠岡田以蔵
+[f large]丁じゃ！！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠ハイド
+[f large]丁！！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠段蔵
+よござんすね？[r]では、コマが揃いました。
+[k]
+
+[charaFace C 2]
+
+＠段蔵
+……勝負！
+[k]
+
+[messageOff]
+[se ad478]
+[seVolume ad478 0 0.6]
+[wt 0.6]
+
+[charaFace C 0]
+
+＠段蔵
+[line 3]シソウの半。[r]シソウの半でございます。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace G 2]
+[charaFace F 5]
+[charaFadein G 0.1 0]
+[charaFadein F 0.1 2]
+
+＠以蔵＆ハイド
+[f large]何じゃあ（何だとぅ）！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠風魔小太郎
+……母上……段蔵殿がツボ振りを任せられているのは、[r]まあいいとして。
+[k]
+
+＠風魔小太郎
+あの二人……。
+[k]
+
+？1：見ているだけで可哀想になってくる……
+
+＠風魔小太郎
+はい。
+[k]
+
+＠風魔小太郎
+あれは典型的な[#博打:ばくち]に嵌まり負けしている状態。[r]頭はカッカしているのに、冷たい汗が流れる。
+[k]
+
+＠風魔小太郎
+勝てるものも勝てません。[r]このまま転がり落ちるように負けていくでしょう。
+[k]
+
+？2：勝てそうにないね
+
+＠風魔小太郎
+はい。[r]あれはもうダメです。
+[k]
+
+＠風魔小太郎
+大坂風に言うと『アカンやつ』というアレです。[r]主殿は程ほどに賭けることを推奨します。
+[k]
+
+？！
+
+＠風魔小太郎
+しかし……。
+[k]
+
+[messageOff]
+[wipeout rollRight 0.8 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+[wipein rollLeft 0.8 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠段蔵
+シロクの丁でございます。
+[k]
+
+[messageOff]
+[wipeout rollRight 0.8 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[wipein rollLeft 0.8 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠段蔵
+イチロクの半でございます。
+[k]
+
+[messageOff]
+[wipeout rollRight 0.8 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[wipein rollLeft 0.8 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠段蔵
+ロクゾロの丁でございます。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace G 2]
+[charaFace F 11]
+[charaFadein G 0.1 0]
+[charaFadein F 0.1 2]
+
+＠以蔵＆ハイド
+[f large]う[messageShake 0.03 3 5 0.4]おおおおおおお！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠風魔小太郎
+宝具を受けたときの絶叫のように[r]なっています。
+[k]
+
+＠風魔小太郎
+これは……。
+[k]
+
+？1：止めてあげようか……
+？！
+
+[charaFace B 0]
+
+＠風魔小太郎
+そうですね。
+[k]
+
+＠風魔小太郎
+お二人には申し訳ないですが、[r]持ち金が根こそぎ消えてしまうよりはマシでしょう。
+[k]
+
+[bgmStop BGM_EVENT_50 1.0]
+
+＠風魔小太郎
+以蔵殿、ハイド殿、[r]そこらへんで[#止:や]めてはいかがか[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace G 1]
+[charaFace F 5]
+[charaFadein G 0.1 0]
+[charaFadein F 0.1 2]
+
+[bgm BGM_EVENT_80 0.1]
+
+＠岡田以蔵
+いいや、まだじゃ！[r]まだわしらには[#起死回生:きしかいせい]がある！（※ありません）
+[k]
+
+[charaFace G 2]
+
+＠ハイド
+そうそうそうそうその通りィ！[r]いま負けたンなら次は勝ちだぜ！（※勝てません）
+[k]
+
+＠岡田以蔵
+そうじゃ！[r]わしらはここからじゃああああ！（※どこでもない）
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠風魔小太郎
+こ、これはダメです！
+[k]
+
+？1：仕方ない、無理矢理でも大人しくさせよう！
+
+[charaFace B 2]
+
+＠風魔小太郎
+はい、戦闘準備入ります！
+[k]
+
+？2：こうなれば最後の手段だ！
+
+[charaFace B 2]
+
+＠風魔小太郎
+はっ、それでは暴力で大人しくさせましょう！
+[k]
+
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,394 @@
+
+
+＄02-00-02-03-3-0
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 99502600 1 マシュ]
+[charaSet B 4004001 1 アストルフォ]
+[charaSet C 1026001 1 デオン]
+[charaSet D 98113900 1 フェルグス]
+[charaSet E 98114500 1 アマゾネス]
+[charaSet F 7027001 1 バーサーカー]
+[charaSet G 98111500 1 ダ・ヴィンチ]
+[charaSet H 7027001 1 エフェクト用]
+
+[scene 20530]
+[fadein black 1.5]
+[wait fade]
+
+[se ad194]
+[wt 0.5]
+[seStop ad194 0.3]
+[wt 0.2]
+[charaScale H 0.5]
+[se ad171]
+[se ad85]
+[wt 0.2]
+[charaEffect H bit_talk_43h]
+[wt 0.1]
+[shake 0.03 2 2 0.4]
+[wt 0.1]
+[charaEffectStop H bit_talk_43h]
+[wt 0.2]
+[effect bit_talk_impactlanding]
+[se bac10]
+[se ad211]
+[shake 0.03 7 7 1.5]
+[wt 1.0]
+[seStop ad211 0.7]
+[wt 2.0]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠デオン
+っ、なんて凶悪な武器を……！[r][#躱:かわ]すしかないぞ、あんな鉄球！
+[k]
+
+[charaFadeout C 0.1]
+
+[charaScale H 1.0]
+[charaEffect H bit_talk_10_LowLevel]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠マシュ
+マスター、クラスが判明しました！[r]バーサーカーです！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠アストルフォ
+この、相性とか気にしない問答無用なパワフルさは、[r]そうだろねっ……！
+[k]
+
+[charaFace B 2]
+＠アストルフォ
+でもちゃんと喋っててズルい！　まあそういう[r]バーサーカー、カルデアにはいっぱいいるけどさあ！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠バーサーカー
+……男か女か[#判:わか]らぬ半端者どもと思っていたが。
+[k]
+
+＠バーサーカー
+私と相対しここまで生き長らえた事、誇るがいい。[r][#一角:ひとかど]の勇者である、とな。
+[k]
+
+＠バーサーカー
+……ふん。[r]打ち合おうともせぬ、そこの軟弱者を除いては。
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠フェルグス
+っ……。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk C]
+[charaFace D 4]
+[charaFadein D 0.1 0]
+[charaFace C 5]
+[charaFadein C 0.1 2]
+＠デオン
+気にするな、フェルグス。その判断は正しい。
+[k]
+
+＠デオン
+悪いが正直に言って、今のキミの腕ではあのバーサーカー[r]には太刀打ちできない。粉砕されるだけだろう。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠デオン
+[line 2]それで何が言いたい、バーサーカー。[r]私たちを[#貶:けな]したいのか、それとも褒めたいのか？
+[k]
+
+＠デオン
+たとえ半端者でも、[r]私は誇りを持ってその生き方を選んだのだけれどね。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠アストルフォ
+うんうん、男か女かわかんないってのはどうでもいいけど、[r]勇者なのはトーゼンと思ってくれなくちゃ。
+[k]
+
+＠アストルフォ
+ボクはシャルルマーニュ十二勇士が一人、アストルフォさ！[r]ん、勇士と勇者ってどっちが格上とかあったっけ？
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠バーサーカー
+我らは強者を好む。
+[k]
+
+＠バーサーカー
+気が変わった[line 2]別の方法で恥辱を[#雪:そそ]ぐとしよう。[r]貴様らを殺しはせぬ。
+[k]
+
+＠バーサーカー
+その代わり、飼う。
+[k]
+
+？1：首輪をつけて？
+？2：檻に閉じ込めて？
+？！
+
+[charaFace F 1]
+＠バーサーカー
+当然だ。そして男であればその役目を果たさせる[line 2][r]貴様らは強い子種を吐き出すだろう。
+[k]
+
+[charaFadeout F 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠マシュ
+…………！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠デオン
+役目だと？[r]まるで種馬のような扱いに聞こえるな。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠バーサーカー
+[line 2]愚者か？　[#ような]、ではない。[r][#そうなれ]と言っているのだ。
+[k]
+
+＠バーサーカー
+無論、貴様らに相手を選ぶ権利などない。
+[k]
+
+＠バーサーカー
+一人が終われば次。一人が終われば次。[r]貴様らは[#胎:はら]の空いた女に種を撒くだけの者となる。
+[k]
+
+[charaFadeout F 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 0,-90]
+＠ダ・ヴィンチ
+やれやれだ。まさかここにきて、[r]正しくアマゾネスの在り方を示されるとはね。
+[k]
+
+＠ダ・ヴィンチ
+[%1][&君:ちゃん]。[r]相手の方針は分かった。一旦撤退したまえ。
+[k]
+
+＠ダ・ヴィンチ
+向こうの目的が捕縛に変わったからといって、[r]捕まればキミたちに待っているのは死の運命だけだ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠アストルフォ
+そうは言ってもさあ！
+[k]
+
+[messageOff]
+[se ad73]
+[charaMove B -64,-10 0.2]
+[charaFadeout B 0.1]
+[wt 0.2]
+[seStop ad73 0.4]
+[effect bit_talk_impactlanding]
+[se bac10]
+[se ad211]
+[shake 0.03 7 7 1.5]
+[wt 1.0]
+[seStop ad211 0.7]
+[wt 1.25]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠デオン
+雑兵も多い。どんどんと集まってきている。[r]このままでは[line 2]！
+[k]
+
+？1：ジリ貧だ……！
+？2：何か手を考えないと！
+？！
+
+[charaFadeout C 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠バーサーカー
+無駄だ。もはや貴様らにできるのは、[r]大人しく頭を垂れ、我らが[#森]へと下ることのみ[line 2]
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk E]
+[charaFace F 0]
+[charaFadein F 0.1 0]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+＠アマゾネス
+……女王！
+[k]
+
+[charaFace F 0]
+＠バーサーカー
+何事か。私の戦の邪魔をするとは。
+[k]
+
+＠アマゾネス
+最優先報告事項です！　[#隣町にヤツが現れました]！
+[k]
+
+[charaFace F 5]
+＠バーサーカー
+[line 2]！　そうか。出たか。[r]ならば。ならば[line 2]
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.2]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠バーサーカー
+殺す！　殺す殺す殺す殺す殺すゥゥゥゥゥ！
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠デオン
+！？
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠バーサーカー
+ああやっとだ殺すついに殺す必ず殺す何度も殺す叩き殺す[r]潰し殺す握り殺す割り殺す絞め殺す千切り殺す喰い殺す！
+[k]
+
+＠バーサーカー
+[line 2]征くぞ。[r]待っていろ。今、今、今[line 2]殺しに[line 2]征くぞッッ！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[se ad83]
+[wt 0.4]
+[seLoop ad84]
+[wt 0.7]
+[seStop ad84 1.5]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠アマゾネス
+っ、女王、こいつらはどう……女王！　お待ちください！
+[k]
+
+＠アマゾネス
+ええい、この場にいる半分は私に続いて女王を追え！[r]もう半分は残ってこいつらを捕らえろ！
+[k]
+
+[messageOff]
+[charaFadeout E 0.4]
+[se ad55]
+[se ad59]
+[wt 1.0]
+[seStop ad55 0.7]
+[seStop ad59 0.7]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アストルフォ
+な、なんかいきなり、話が通じない系のバーサーカー[r]みたいな雰囲気になって、どっか行っちゃった！
+[k]
+
+＠アストルフォ
+どーいうコトなのさー！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠デオン
+理由はわからない。わからないが[line 2][r]敵の数は減っているし、サーヴァントも消えた。今なら！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠マシュ
+わたしも可能な限りの情報支援を行います！[r]皆さん、なんとか切り抜けてください！
+[k]
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

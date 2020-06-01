@@ -1,0 +1,369 @@
+
+＄94-02-90-02-1-0
+[soundStopAll]
+
+
+
+[charaSet A 1005002 1 ネロ]
+
+[charaSet B 8001000 1 マシュ]
+
+[scene 64400]
+
+[se ad207]
+
+[fadein black 1.5]
+[wait fade]
+
+[seStop ad207 2.0]
+[se ad95]
+[seVolume ad95 0 0.2]
+[wt 0.5]
+[seVolume ad95 2.0 1.0]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.2]
+[seStop ad95 0.2]
+[wt 0.3]
+
+＠マシュ
+ここが決勝戦の舞台……[wt 0.7][charaFace B 6][r]え？　ネロ陛下？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ネロ
+むっ、マシュと[r][%1]とな！？
+[k]
+
+＠ネロ
+どういう事だ、ここが決勝戦ではないのか？[r]何か手違いがあったとでも！？
+[k]
+
+[charaTalk B]
+
+[bgm BGM_EVENT_40 0.1]
+
+＠B：？？？
+いや、何も間違ってはいない。[r]決勝に上がる者は２組。そう決めていたからな。
+[k]
+
+[wt 0.5]
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[input selectBranch]
+[charaSet A 1005002 1 ネロ]
+[charaSet B 8001000 1 マシュ]
+[scene 64400]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+
+[seStop ad207 0.1]
+[seStop ad95 0.1]
+
+[wt 0.1]
+[messageOff]
+[maskin black 1]
+[bgm BGM_EVENT_40 0.1]
+[wait mask]
+[wt 0.4]
+[label selectBranch]
+
+
+？1：その声はギルガメッシュ……！
+[charaSet C 2002001 1 ギルガメッシュ]
+
+？2：その声はゴージャスＰ……！
+[charaSet C 5018300 1 ギルガメッシュ]
+？！
+
+
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+[wt 0.2]
+
+
+[branch INPUT_SELECT_BRANCH_2 INPUT_SELECT_BRANCH 1]
+
+[label INPUT_SELECT_BRANCH_1]
+
+＠ギルガメッシュ
+ふはは、やはり貴様たちが来たか雑種！[r]此度の[#宴:うたげ]、実に見応えのあるものであった！
+[k]
+
+＠ギルガメッシュ
+[#褒美:ほうび]だ、王と[#直:じか]に競い合う機会をくれてやる。[r]その名誉を噛みしめながら地に落ちよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ネロ
+我らを同時に相手にする、というのだな。[r]それが貴様の王の[#矜持:きょうじ]であれば異論はない。
+[k]
+
+＠ネロ
+だが一つだけ聞かせるがよい。[r]このほどの宴を開くのに、どれほどの財を用いたのかを。
+[k]
+
+＠ネロ
+余の貯金だけで足りるとは思えぬ。[r]貴様、いったいどれだけの経費を使った？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ギルガメッシュ
+ふっ。ローマの金庫、その三倍は使った[line 3][r]と言いたいところだが、[#我:オレ]はそう損はしていない。
+[k]
+
+＠ギルガメッシュ
+ある男がな、貴様の金庫を元に企画を練り、[r]商談を成功させ、資金を何倍にもしたからだ。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.7]
+[charaFace A 0]
+[bgmStop BGM_EVENT_40 0.5]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ギルガメッシュ
+九偉人とはよく言ったものよ。[r]現代のショービジネスにおいても通じる弁舌とは。
+[k]
+
+＠ギルガメッシュ
+あれは貴様以上にネロ祭とやらの成功を[r]考えていたのだろうよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠マシュ
+カエサルさん……困った方ですが、[r]やっぱりネロ陛下を心配してくれていたのですね。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_11 0.3]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠ネロ
+うむ！　それが聞けただけで充分、[r]あとは戦うのみだな英雄王！
+[k]
+
+＠ネロ
+この祭りは既に貴様のものだが、[r]余にも皇帝としての意地がある！
+[k]
+
+＠ネロ
+祭りの主役は運営者に[#非:あら]ず、参加した勇者である！[r]せめて最強の剣士として、その聖杯を奪い返そう！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ギルガメッシュ
+馬鹿め、であるから[#我:オレ]もこうして戦うのだ。[r]主役は[#徹頭徹尾:てっとうてつび]この英雄王よ。
+[k]
+
+＠ギルガメッシュ
+[#金勘定:かねかんじょう]も、物わかりのいい王の顔も[r]飽きてきたところだ。
+[k]
+
+＠ギルガメッシュ
+貴様らには原初の地獄をくれてやる。[r][#生半:なまなか]な英雄が、[#我:オレ]に勝てるとは思わぬ事だ[line 3]！
+[k]
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_2]
+
+＠ゴージャスＰ
+ふはは、やはり貴様たちが来たか雑種！[r]此度の[#宴:うたげ]、実に見応えのあるものであった！
+[k]
+
+＠ゴージャスＰ
+[#褒美:ほうび]だ、王と[#直:じか]に競い合う機会をくれてやる。[r]その名誉を噛みしめながら地に落ちよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ネロ
+我らを同時に相手にする、というのだな。[r]それが貴様の王の[#矜持:きょうじ]であれば異論はない。
+[k]
+
+＠ネロ
+だが一つだけ聞かせるがよい。[r]このほどの宴を開くのに、どれほどの財を用いたのかを。
+[k]
+
+＠ネロ
+余の貯金だけで足りるとは思えぬ。[r]貴様、いったいどれだけの経費を使った？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ゴージャスＰ
+ふっ。ローマの金庫、その三倍は使った[line 3][r]と言いたいところだが、[#我:オレ]はそう損はしていない。
+[k]
+
+＠ゴージャスＰ
+ある男がな、貴様の金庫を元に企画を練り、[r]商談を成功させ、資金を何倍にもしたからだ。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.7]
+[charaFace A 0]
+[bgmStop BGM_EVENT_24 0.5]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ゴージャスＰ
+九偉人とはよく言ったものよ。[r]現代のショービジネスにおいても通じる弁舌とは。
+[k]
+
+＠ゴージャスＰ
+あれは貴様以上にネロ祭とやらの成功を[r]考えていたのだろうよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠マシュ
+カエサルさん……困った方ですが、[r]やっぱりネロ陛下を心配してくれていたのですね。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_11 0.3]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠ネロ
+うむ！　それが聞けただけで充分、[r]あとは戦うのみだな英雄王！
+[k]
+
+＠ネロ
+この祭りは既に貴様のものだが、[r]余にも皇帝としての意地がある！
+[k]
+
+＠ネロ
+祭りの主役は運営者に[#非:あら]ず、参加した勇者である！[r]せめて最強の剣士として、その聖杯を奪い返そう！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ゴージャスＰ
+馬鹿め、であるから[#我:オレ]もこうして戦うのだ。[r]主役は[#徹頭徹尾:てっとうてつび]この英雄王よ。
+[k]
+
+＠ゴージャスＰ
+[#金勘定:かねかんじょう]も、物わかりのいい王の顔も[r]飽きてきたところだ。
+[k]
+
+＠ゴージャスＰ
+貴様らには原初の地獄をくれてやる。[r][#生半:なまなか]な英雄が、[#我:オレ]に勝てるとは思わぬ事だ[line 3]！
+[k]
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_3]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

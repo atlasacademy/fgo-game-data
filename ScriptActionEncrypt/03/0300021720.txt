@@ -1,0 +1,455 @@
+
+
+＄03-00-02-17-2-0
+
+
+
+[soundStopAll]
+
+[charaSet A 8001410 1 マシュ]
+[charaSet B 3012001 1 ブリュンヒルデ]
+[charaSet C 1033002 1 シグルド]
+[imageSet E cut072_srt_grm2 2]
+[imageSet F cut068_srt_spk 2]
+[imageSet G cut073_srt_grm3 2]
+[charaSet H 98115000 1 エフェクト用]
+
+
+[charaScale E 1.01]
+[charaScale F 1.01]
+
+[cameraMove 0.1 0,0 1.01]
+[fowardEffect bit_talk_noise]
+[wt 0.1]
+
+[scene 62000]
+
+[fadein black 1.0]
+[se ad153]
+[seVolume ad153 0 0.4]
+[wait fade]
+
+
+
+[wt 2.0]
+[seStop ad153 0.5]
+
+[cueSe Battle bac302]
+[wt 0.3]
+[cueSeStop bac302 0.8]
+[wt 0.5]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+[line 20]！
+[k]
+
+＠マシュ
+マス、ター……！
+[k]
+
+[messageOff]
+[charaFace A 15]
+[wt 1.0]
+[charaFace A 14]
+
+
+＠マシュ
+マスター！　マスターーーーー！
+[k]
+
+[messageOff]
+
+[bgm BGM_EVENT_41 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaFadein E 0.7 0,-200]
+[wt 1.0]
+
+[se ade69]
+＠
+「　ああ　」
+[k]
+
+＠
+「　ああ、良い声で啼くものだ　」
+[k]
+
+＠
+「　ああ、生命にも価値はある　」
+[k]
+
+＠
+「　[#是:これ]だ。この絶望の歌声こそが唯一の価値だ　」
+[k]
+
+＠
+「　俺だけでは滅びるものか　」
+[k]
+
+＠
+「　人理ごと、クク、道連れとして[line 3]　」
+[k]
+
+＠
+「　[line 3]オフェリア[line 3]　」
+[k]
+[messageOff]
+[bgmStop BGM_EVENT_41 1.5]
+[wt 1.0]
+
+＠ブリュンヒルデ
+いいえ。[r]誰ひとりとして、貴方は道連れにできない。
+[k]
+
+＠ブリュンヒルデ
+何を視ているのですか、スルト。[r]随分と……
+[k]
+
+[se ade69]
+＠
+「　！？　」
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[fowardEffectStop bit_talk_noise]
+[wait fade]
+
+[charaSet A 8001400 1 マシュ]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ブリュンヒルデ
+[line 3]随分と、楽しい夢を視ているようですね。[r]哀れなる巨人王。スルト。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……？
+[k]
+
+＠マシュ
+な、何でしょうか。[r]マスターに……指先を向けた途端に、スルトが……
+[k]
+
+？1：[&何だ？:……？]
+？2：突然、ぴたっと動きを止めたような
+
+？！
+[messageOff]
+
+[charaFace A 6]
+[wt 0.8]
+[charaFace A 7]
+
+[bgm BGM_EVENT_82 0.1]
+
+＠マシュ
+あっ、この感じは前にも……[r]ブリュンヒルデさんのルーンによる現実誤認です！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ブリュンヒルデ
+既に、我がルーンを阻む力さえスルトにはない。[r]うたかたの夢を視ているのでしょう。
+[k]
+
+＠ブリュンヒルデ
+きっと、何かを燃やす夢でも[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaDepth C 10]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace B 1]
+[charaFadein C 0.1 0]
+[charaFadein B 0.1 2]
+
+＠シグルド
+ブリュンヒルデ。[r][#為済:しす]ます。
+[k]
+
+[charaFace B 0]
+
+＠ブリュンヒルデ
+はい。
+[k]
+
+＠シグルド
+征こう。
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[charaEffect C bit_talk_quickmove]
+[charaSpecialEffect C erasureReverse 1 0.3]
+[cueSe Battle bac109]
+
+[wt 0.4]
+
+[charaTalk B]
+[wt 0.1]
+[charaEffect B bit_talk_quickmove]
+[charaSpecialEffect B erasureReverse 1 0.3]
+[cueSe Battle bac109]
+
+[wt 1.0]
+[se ad696]
+[seVolume ad696 0 0.8]
+[effect bit_talk_gram_slash_03]
+
+[se ad705]
+[seVolume ad705 0 0.8]
+[effect bit_talk_h_slash01 0,0 H]
+[wt 0.2]
+[flashin once 0.3 2.5 FFFFFFF0 FFFFFF00]
+[wt 0.6]
+
+[charaFadein G 0.4 0,-200]
+[wt 0.1]
+[shake 0.05 5 4 2.0]
+[wt 0.4]
+
+[se ad628]
+[se bac74]
+[se bac82]
+[wt 1.0]
+
+[charaTalk on]
+
+[se ade69]
+＠
+[f large]「　オ、オ、オォ[line 3]！　」
+[k]
+
+＠
+「　こんな、こんな最期であってたまるかァァ！　」
+[k]
+
+＠
+「　俺は……！　俺は……星、を……！！　」
+[k]
+
+[se ade70]
+＠
+[f large]「　[line 3]オフェリア[line 3]　」
+[k]
+
+[bgmStop BGM_EVENT_82 4.0]
+[messageOff]
+[se ad628]
+[seVolume ad628 0 0.8]
+[flashin once 1.0 1.0 FFFFFFF0 FFFFFF00]
+[se ad640]
+[charaFadeout G 1.5]
+[wt 4.0]
+
+[se ad555]
+[seVolume ad555 0 0.2]
+＠
+断末魔が響き渡る。[r]幾つかの視線が見つめる中で、炎の巨人王が崩れ去る。
+[k]
+
+＠
+視線。盾の少女。[r]視線。[&黒い髪の少年:赤い髪の少女]。
+[k]
+
+＠
+視線。魔剣を振るう竜殺し。[r]視線。戦乙女の長姉。
+[k]
+
+＠
+告げられる言葉はなく、[r]ただ、地上５００メートルを吹きすさぶ風が音を立てる。
+[k]
+
+＠
+そして[line 3]
+[k]
+
+＠
+数秒の後、炎の剣[#諸共:もろとも]に巨人の王は消え失せていた。
+[k]
+
+＠
+崩れ去って、[r]何も、後には残らない。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[seStop ad555 2.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[wt 1.8]
+[cameraFilter gray]
+
+[charaFadein F 0.1 0,-200]
+
+[fadein black 1.2]
+[wait fade]
+
+[bgm BGM_EVENT_75 0.1]
+＠
+[line 3]俺は、絶望していたのだ。
+[k]
+
+＠
+[line 3]運命への[#叛逆:はんぎゃく]を試みておきながら。[r][line 3]炎として、終末装置としての役割をも果たせず。
+[k]
+
+＠
+[line 3][#剪定:せんてい]を待つ世界で[#燻:くすぶ]りつづけるこの俺に。
+[k]
+
+＠
+[line 3]あの女は。[r][line 3]そんな俺を、見つけた、のだ。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+『私は、私。炎に捲かれる世界で死ぬ[#筈:はず]だった女』
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+[line 3][#見つけてくれた]。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+『アナタは、誰？』
+[k]
+
+＠
+[line 3]たとえ、偶然であろうと。[r][line 3]たとえ、滅びの炎と恐怖されようとも。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+『神話と違うのね』
+[k]
+
+＠
+『アナタの炎は北欧神代を[#灼:や]く。[r]　でも、その先には、人類の時代が訪れるのよ』
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+[line 3]それは俺にとっては、誕生・発生して以来初めての。[r][line 3]運命という定めにない、意外性。
+[k]
+
+＠
+[line 3]驚き、だった。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+『失敗したのね、アナタも』
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+[line 3]哀れな女。愚かな女。[r][line 3]オフェリア・ファムルソローネ。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+『終わるのね、アナタの世界も』
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+[line 3]明日なき俺に、未知なるもの、驚きを教えた女。[r][line 3]俺を見つけた女。
+[k]
+
+＠
+[line 3][#燻:くすぶ]る炎に言葉を掛けた、ただひとり。
+[k]
+
+＠
+[line 3]嗚呼。[r][line 3]俺は、おまえに何をしてやれるだろう。
+[k]
+
+＠
+[line 3]炎でしかない俺は、破壊でしかない俺は。[r][line 3]おまえに。何を。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+『じゃあ、同じだわ。私たち』
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+[line 3]おまえに、何を、返してやれるのだろう。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+『はじめまして。[r]　でも、さようならなのね、炎の巨人王』
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.5]
+[bgmStop BGM_EVENT_75 2.5]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

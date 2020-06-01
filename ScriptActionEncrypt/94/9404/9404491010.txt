@@ -1,0 +1,718 @@
+
+
+＄94-04-49-10-1-0
+
+[soundStopAll]
+
+[skip false]
+
+[branchQuestNotClear lblNotClear1 3000320 4]
+[label lblClear1]
+[flag IsGirl true]
+[branch lblIsClearConf1]
+[label lblNotClear1]
+[flag IsGirl false]
+[label lblIsClearConf1]
+
+[skip true]
+
+[charaSet A 7027300 1 アマゾネスＣＥＯ_普通]
+[charaSet B 1098119600 1 アマゾネスＣＥＯ_ろくろ]
+[charaSet C 6008000 1 コスモティック・ビューティ夫人]
+[charaSet D 98002000 1 フォウ]
+[charaSet E 99502600 1 マシュ]
+[charaSet F 6031001 1 刑部姫]
+[charaSet H 2038000 1 オリオン]
+[charaSet I 2009201 1 ？？？]
+[charaSet J 5009000 1 エフェクト用]
+
+[branch lblNotGirl1 IsGirl false]
+[label lblGirl1]
+[charaSet G 1098124510 1 ダ・ヴィンチ]
+[branch lblIsGirlConf1]
+[label lblNotGirl1]
+[charaSet G 98111500 1 ダ・ヴィンチ]
+[label lblIsGirlConf1]
+
+[charaFilter I silhouette 00000080]
+
+[scene 90001]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+臭う。臭うぞ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠コスモティック・ビューティ夫人
+フフ、お気付きになりましたか？
+[k]
+
+＠コスモティック・ビューティ夫人
+今日の香水は、かのコスモ大女優クリスタル・マリーが[r]寝るときに唯一身に着けていたという
+[k]
+
+＠コスモティック・ビューティ夫人
+ヴィヴラフランスの五番。[r]エレガントな香りでしょう？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 0.7]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+違う。これは[line 3]この先から感じるのは、[r]ギリシャの男の臭いだ。
+[k]
+
+＠A：アマゾネスＣＥＯ
+ギリシャの……男と言えば……[wt 0.4][bgm BGM_EVENT_3 0.1][charaShake A 0.05 2 0 0][charaFace A 7]ア、アキ、[r]アキアキアキアキ[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠フォウ
+フォウフォフォーウ！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[charaShake A 0.05 2 0 0]
+
+[wt 0.7]
+
+？1：落ち着いてくださいＣＥＯ！
+？2：お仕事中はバーサークを控えていただけるとー！
+？！
+
+[wt 0.5]
+
+＠A：アマゾネスＣＥＯ
+ア、ア、ア[line 3]！
+[k]
+
+[bgmStop BGM_EVENT_3 0.3]
+
+[charaShakeStop A]
+[charaFaceFade A 2 0.2]
+[wt 0.1]
+
+＠A：アマゾネスＣＥＯ
+アーマーゾーネースー！
+[k]
+
+？1：！！！？？？
+？！
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaFace A 4]
+
+＠A：アマゾネスＣＥＯ
+フウゥー……落ち着いたぞ、ひとまずな……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+
+＠マシュ
+今の叫びというか、[r]謎のワンフレーズはいったい……！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+今のか。アマゾネス・ドットコムという会社を象徴する歌、[r]つまりは社歌だ。
+[k]
+
+＠A：アマゾネスＣＥＯ
+少し前に高名な作曲家、[r]音楽魔アムドゥシアスＰに頼んで作ってもらった。
+[k]
+
+[charaFace A 11]
+
+＠A：アマゾネスＣＥＯ
+シンプルだが気合いが入る感じで気に入っている。[r]なので入社式などの大事な行事のとき、
+[k]
+
+＠A：アマゾネスＣＥＯ
+あるいは今のように瞬間的なストレスを感じたときに[r]歌うことにしているのだ。身が引き締まるぞ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠マシュ
+そ、そうですか……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+さて、気を取り直して行こう。[r]お客様の気配はもうすぐそこだ。
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[se ade74]
+[se ad95]
+[wt 0.2]
+
+[fadeout black 1.2]
+[bgmStop BGM_EVENT_2 1.2]
+[wait fade]
+[wt 0.3]
+[seStop ade74 0.1]
+[wt 0.1]
+[seStop ad95 0.1]
+[fadein black 0.7]
+[wait fade]
+
+[wt 2.0]
+
+[bgm BGM_EVENT_90 0.1]
+
+？1：？　何か微妙な違和感が……
+？！
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠刑部姫
+あ、ホントだ。[r]なんかヘンな感じがする。なんでだろ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠マシュ
+違和感、ですか。明確にこちらで観測できる異常は、[r]今のところありませんが……
+[k]
+
+＠マシュ
+現地にいるマスターの肌感覚は大事な情報です。[r]警戒度をワンランク上げていきましょう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[branch lblNotGirl2 IsGirl false]
+[label lblGirl2]
+[charaFadein G 0.1 1]
+[branch lblIsGirlConf2]
+[label lblNotGirl2]
+[charaFadein G 0.1 0,-90]
+[label lblIsGirlConf2]
+
+＠ダ・ヴィンチ
+で、どうやら前方にいるのがこの階の住人のようだね。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[charaFadeout G 0.1]
+[charaPut J 1200,1200]
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+[wt 0.4]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+＠オリオン
+うーん。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠マシュ
+あれは……間違いありません、[r]クマではないほうのオリオンさんです！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠オリオン
+おお、来たか。来ちまったか。うーん。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+ギリシャの男ではありそうだが、アレではない……[r]だいぶ横幅が違う……落ち着けＣＥＯ……。
+[k]
+
+[charaFace A 12]
+
+＠A：アマゾネスＣＥＯ
+よし。お待たせしました、アマゾネス・ドットコムです。[r]『ギリシャ[#一:いち]の狩人』様で間違いないでしょうか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠オリオン
+あー、そうだな。そういう理由で来たんだよな。[r]で、俺はここで待ってたと。
+[k]
+
+[charaFace H 4]
+
+＠オリオン
+うーん……やっぱり、考えれば考えるほど、[r][#解:げ]せん。
+[k]
+
+？1：何がですか？
+？！
+
+＠オリオン
+いや、俺がここにいる理由だよ。[r]わかる？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠マシュ
+わたしたちに聞かれましても……。[r]ただ、ここがアルテミス神殿だというのならば、
+[k]
+
+＠マシュ
+そこにオリオンさんがいらっしゃるのは[r]自然な気もします。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 1]
+
+＠オリオン
+そう！　それ！　それしかないんだよ、理由はな？[r]ひどくない？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠コスモティック・ビューティ夫人
+どういうコトかしら？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠オリオン
+おっと。いい女の質問には[r]できる限り答えてやらんとな。
+[k]
+
+＠オリオン
+えーと、まずこの神殿ができたわけだ。[r]そしたらな……
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_90 1.0]
+[se ade84]
+[wait fade]
+[charaFadeout H 0.1]
+[wipeFilter cinema 0.5 0]
+[cameraFilter gray]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-50]
+[wt 1.0]
+[fadein black 1.5]
+[seStop ade84 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠？？？
+私の神殿？　うんうん、素敵よね～。
+[k]
+
+＠？？？
+でもさ、私の神殿なのにダーリンがいないのって[r]おかしくない？
+[k]
+
+＠？？？
+おかしいよね？　いるべきだよね？
+[k]
+
+＠？？？
+というわけで、はい！[r]ここにダーリンを置いておきます。
+[k]
+
+＠？？？
+異議は認めませーん♪
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_2 1.5]
+[se ade84]
+[wait fade]
+[wipeOff]
+[cameraFilter normal]
+[charaFadeout I 0.1]
+[charaTalk H]
+[charaFace H 11]
+[charaFadein H 0.1 1]
+[wt 1.0]
+[fadein black 1.0]
+[seStop ade84 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠オリオン
+……ってなわけだ。[r]マジでそれだけなんだぜ？
+[k]
+
+＠オリオン
+ここが別に居心地がいいってわけでもねぇのにさ。
+[k]
+
+[charaFace H 6]
+
+＠オリオン
+正直、いつも背中を見られてる気がして[r]だいぶ落ち着かねぇし。
+[k]
+
+[charaFace H 12]
+
+＠オリオン
+なんで全部屋にアイツの石像あるんだよ……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[branch lblNotGirl3 IsGirl false]
+[label lblGirl3]
+[charaFace G 17]
+[charaFadein G 0.1 1]
+[branch lblIsGirlConf3]
+[label lblNotGirl3]
+[charaFace G 5]
+[charaFadein G 0.1 0,-90]
+[label lblIsGirlConf3]
+
+＠ダ・ヴィンチ
+そりゃ、神殿には[#祀:まつ]っている神様の像くらいあるのが[r]普通なんじゃない？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠マシュ
+……ですね。
+[k]
+
+[charaFace E 0]
+
+＠マシュ
+いえ、ともかく[line 3][r]なんとなく事情はわかりました。
+[k]
+
+＠マシュ
+つまりオリオンさんはアルテミスさんに言われて[r]ここにいる、ということですね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgmStop BGM_EVENT_7 1.2]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠オリオン
+そーだな。あと一応言われてんのは、[r]『[#通すな]。[#サインをするな]』ってことだ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+受け取り拒否のうえ、[r]我々の業務を妨害しようというわけか。
+[k]
+
+[charaFace A 5]
+
+＠A：アマゾネスＣＥＯ
+とんだモンスター[#弓使い:クレーマー]のようだ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[branch lblNotGirl4 IsGirl false]
+[label lblGirl4]
+[charaFace G 25]
+[charaFadein G 0.1 1]
+[branch lblIsGirlConf4]
+[label lblNotGirl4]
+[charaFace G 0]
+[charaFadein G 0.1 0,-90]
+[label lblIsGirlConf4]
+
+＠ダ・ヴィンチ
+さらに確認だよ。
+[k]
+
+＠ダ・ヴィンチ
+ここがアルテミス神殿で、キミがここにいるのは[r]彼女の指示だというのなら。
+[k]
+
+＠ダ・ヴィンチ
+この一件……アマゾネス・ドットコムに仕掛けられた[r]攻撃の黒幕も、そうなのかな？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠オリオン
+……さすがにそこまではっきりと答えるのは[r]俺の仕事にゃ入ってねぇかな。
+[k]
+
+[charaFace H 0]
+
+＠オリオン
+でもまあ、ヒントぐらいならいいだろ。
+[k]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+＠オリオン
+[#お捜しのアマゾネスたちはここの最上階にいるぜ]。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+！！
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠A：アマゾネスＣＥＯ
+[line 3]そうか。ならばより一層、[r]この先に荷物を届けねばならない理由ができた。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠コスモティック・ビューティ夫人
+提携会社としては聞き逃せませんわね。
+[k]
+
+＠コスモティック・ビューティ夫人
+アマゾネス・ドットコムには一刻も早く[r]通常の営業形態に復帰してもらって、
+[k]
+
+＠コスモティック・ビューティ夫人
+[#妾:わらわ]の会社の商品をバンバン低手数料で[r]売ってもらわなくては。
+[k]
+
+＠コスモティック・ビューティ夫人
+そこの、夫ほどではないにしろ[r]なかなか筋肉のＢＴポイントが高い偉丈夫。
+[k]
+
+＠コスモティック・ビューティ夫人
+[#妾:わらわ]の輝きで平伏させてあげましてよ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠オリオン
+既婚者だったのか……いや、まぁ、うん。[r]……[wt 0.5]……[wt 0.5]……[wt 0.5][charaFace H 13]俺は気にしないよ？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+これだから男は！　ギリシャ系の男は！
+[k]
+
+[bgm BGM_EVENT_3 0.7 0.4]
+
+[charaFace A 9]
+
+＠A：アマゾネスＣＥＯ
+……いや、ＣＥＯはお客様差別などしない。
+[k]
+
+[charaFace A 8]
+
+＠A：アマゾネスＣＥＯ
+仕事は仕事だ。[r]待っていろ、この配達商品、
+[k]
+
+＠A：アマゾネスＣＥＯ
+『読むだけで必ず人妻にモテモテで困る！[r]　ケルトント流ジョーク集』を
+[k]
+
+[bgm BGM_EVENT_3 0.3 1.0]
+
+[charaFace A 2]
+
+＠A：アマゾネスＣＥＯ
+きっちりと貴様の顔面に叩きつけてくれる！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+
+＠オリオン
+頼んだ商品の名前を叫ぶのは[r]プライバシーの侵害じゃねぇかなー！？
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+

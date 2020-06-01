@@ -1,0 +1,670 @@
+
+＄94-03-50-07-1-1
+
+[soundStopAll]
+
+
+[charaSet A 1098164200 1 巨大ゴースト女中１]
+[charaSet B 99502600 1 マシュ]
+[charaSet C 3030000 1 パールヴァティー]
+[imageSet D cut103_item01 1]
+[charaSet E 10003000 1 殺生院キアラ]
+[charaSet F 1098163800 1 春日局]
+[charaSet G 1098158220 1 シオン]
+[charaSet H 1098158230 1 シオン_腕上げ_通信]
+[charaSet I 98115000 1 エフェクト用1]
+[charaSet J 98115000 1 エフェクト用2]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+
+[scene 72000]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se bac26]
+[wt 0.1]
+[seStop bac41 0.5]
+[charaDepth I 9]
+[charaEffect I bit_talk_shelling_pink02]
+[wt 0.1]
+[fowardEffect bit_talk_14]
+[wt 0.5]
+
+[se bac18]
+[se bac25]
+[flashin once 0.1 0.2 e1a3ffFF e1a3ff50]
+[wt 0.1]
+[charaFadeout E 0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0 1]
+[charaShake A 0.02 5 5 0.6]
+[wt 1.0]
+
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[charaSpecialEffect A enemyErasure 1 2.0]
+[cueSe Battle ba6]
+[wt 3.0]
+[cueSeStop ba6 0.3]
+
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠マシュ
+敵性反応、消滅です！　が……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠パールヴァティー
+カーマは逃がしてしまいましたね。[r]残念です……[wt 0.7][charaFace C 12]あら？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[cueSe Battle bas2]
+[wt 0.2]
+[charaFadein D 0.5 0,-200]
+[wt 2.2]
+
+[charaFadeout D 0.4]
+[wt 0.5]
+
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠殺生院キアラ
+これは何でございましょう？[r]危険なものではなさそうですが。
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[wt 0.1]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth F 0]
+[charaDepth C 1]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+[wt 0.25]
+[fowardEffect bit_talk_tornado02]
+[se ad80]
+[seVolume ad80 0 0.5]
+[wt 0.3]
+
+[charaSpecialEffect C erasureReverse 1 0.3]
+[charaFace F 15]
+[charaFadein F 0.2 1]
+[wt 0.1]
+[seStop ad80 0.3]
+
+[wt 0.5]
+＠春日局
+印籠ですね。[r]三つ葉葵……徳川の御紋が入っております。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk on]
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠シオン
+ここにいる女中の人形は[r]カーマが組み上げた使い魔の一種です。
+[k]
+
+＠シオン
+その中から出てきたという事は、あのゴースト型女中の[r]構成触媒になっていた、と見るべきですが……
+[k]
+
+？1：（あれ？　なんだか……）
+？2：（印籠が光ってるような[line 3]？）
+？！
+
+
+
+[messageOff]
+[se ad592]
+[bgmStop BGM_EVENT_77 0.5]
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaPut I 1]
+[charaEffect I bit_talk_noise02]
+[scene 10001]
+[wt 1.5]
+
+[fadein white 0.5]
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_EVENT_1 0.1]
+
+
+＠混ざり合った囁き声
+……上様はどうしてしまわれたのか……[r]……世迷い言としか思えぬ……
+[k]
+
+＠混ざり合った囁き声
+……しっ。誰かの耳に入れば仕舞いじゃ……[r]……[#犬公方:いぬくぼう]様と……
+[k]
+
+＠混ざり合った囁き声
+……気が触れ……滅多な事を言うものでは……[r]……は。どうせお犬様の首のほうが重いのじゃ……
+[k]
+
+＠
+[line 3]。[r][line 6]。
+[k]
+
+＠
+そうか？　そうなのか？　自分が間違っているのか？
+[k]
+
+＠
+けれど自分は。善かれと思って。[r]人々は、慈悲と憐れみの心を持つべきだと思って。
+[k]
+
+＠
+見るな。そのような目で。[#面従後言:めんじゅうこうげん]の[#輩:やから]たち。[r]苦しい。誰か。誰も。わかって。誰か……
+[k]
+
+＠甘い女の声
+いえ、いえ。何も間違えてはおられません。[r]生き物を愛するのは素晴らしい事。
+[k]
+
+＠甘い女の声
+心配する事は何もありません。[r]惑い悩む事は何もありません。
+[k]
+
+＠甘い女の声
+私は、私だけは、わかっています。
+[k]
+
+＠甘い女の声
+だから私は、心から、あなたを。[r]そして……その慈悲を、愛しましょう。
+[k]
+
+＠甘い女の声
+どこまでも、どこまでも[line 3]
+[k]
+
+
+[messageOff]
+[se ad592]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_1 0.5]
+[wait fade]
+
+[charaPut I 1200,1200]
+[charaEffectStop I bit_talk_noise02]
+[scene 72000]
+[wt 1.5]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+？1：（……今のは？）
+？2：（自分だけに聞こえてた……？）
+？！
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠マシュ
+どうかなさいましたか、マスター？
+[k]
+
+[charaFace B 6]
+＠マシュ
+はあ……誰かが喋る声が聞こえた、ですか？
+[k]
+
+＠マシュ
+わたしたちには何も聞こえませんでしたし、[r]ログにも残ってはいませんが……。
+[k]
+
+？1：じゃあ気のせい、かな
+？2：とりあえず今は印籠を気にしよう
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠春日局
+失礼して、開けさせていただきましょう。[r]……[wt 0.6][charaFace F 13]ふむ。中身は空のようですが……。
+[k]
+
+[charaFace F 11]
+＠春日局
+いえ、お待ちくだされ、何かが刻まれています。[r]この印籠の持ち主の名でございましょうか。
+[k]
+
+＠春日局
+[#綱吉]……？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+データベースにも登録されている人名ですが、[r]これは……徳川五代将軍、とあります。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+＠春日局
+五代？[r]今は三代将軍家光公の治世にございますよ？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠H：シオン
+失礼。説明は省きますが、[#天竺:てんじく]の女神たち御一行は[r]女神なので、[#後:のち]の世の事を少しだけ知っているんです。
+[k]
+
+＠H：シオン
+綱吉は家光の四男。幼名は徳松、とありますね。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠春日局
+上様の[#御子:おこ]にございますか！　それはそれは！
+[k]
+
+＠春日局
+どうやら[#後:のち]の世も徳川の世襲は守られているご様子。[r]天下を泰平に治むるにはそれが何よりの[#大事:だいじ]です。
+[k]
+
+＠春日局
+この福、安堵いたしましてございます！
+[k]
+
+[charaFace F 13]
+＠春日局
+しかし……なぜ、[r]その[#後:のち]の世の将軍様の御印籠がここに？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠シオン
+さて。名前が刻まれているからといって、[r]本人の持ち物だとは限りません。
+[k]
+
+＠シオン
+もう少し詳しく調べてみましょう。
+[k]
+
+[charaFace G 15]
+＠シオン
+むむ？　これには……物理的なものではない、[r]霊的な何かが内包されていますね。
+[k]
+
+[charaFace G 0]
+＠シオン
+しかも属性が限定的にパッケージングされています。[r]これは掘り出し物かもしれませんよ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠マシュ
+……つまり？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠シオン
+簡単に利用できる、と言う事です。
+[k]
+
+＠シオン
+出力デバイスと組み合わせれば、独自の魔術的機能を[r]発現するように設定できるでしょう。
+[k]
+
+[charaFace G 0]
+＠シオン
+具体的に言うと[%1][&くん:さん]が[r]身に着けている魔術礼装に組み込み、
+[k]
+
+＠シオン
+その礼装の能力をアレンジできる、[r]というコトですね。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠マシュ
+危険はないのでしょうか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠シオン
+方向性はあれど、[r]純粋な魔力リソースというだけですから。
+[k]
+
+＠シオン
+何かが仕込まれている形跡はありません。[r]有効に活用できるかと。
+[k]
+
+[charaFace G 17]
+＠シオン
+で、どうします？　今後の大奥探索に役立つ機能が[r]増えるかもしれません。
+[k]
+
+？1：使えるものは使いましょう
+？2：みんなを助けるためなら、何でも利用しないと
+？！
+
+[charaFace G 10]
+＠シオン
+オッケー、ではそれで！[r]新機能とか、まずは試すのが人間だものね！
+[k]
+
+[charaFace G 0]
+＠シオン
+では、実際にセットする方法を考案して[r]指示しますので、しばしお待ちを。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFace G 6]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+＠シオン
+よーし、バッチリ組み込めたわ！[r]計算通り！　です！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠殺生院キアラ
+ふふ。シオン様はとても器用でいらっしゃるのね。
+[k]
+
+＠殺生院キアラ
+[#私:わたくし]、精神に関わる術だけが取り柄ですので、[r]感心してしまいます。
+[k]
+
+[charaFace E 0]
+＠殺生院キアラ
+この大奥は罠だけで作られた[#匣細工:はこざいく]。
+[k]
+
+＠殺生院キアラ
+マスターに身を守る手段が増えたというのは[r]喜ばしい事です。[#善哉:ぜんざい][#善哉:ぜんざい]。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠春日局
+さて、それでは進む事にいたしましょう。
+[k]
+
+[charaFace F 5]
+＠春日局
+私の大奥をこのようにした元凶があの[#女:め]の[#子:こ]であると[r]わかったのです。あとは見つけて成敗するのみ！
+[k]
+
+＠春日局
+ぱぁる様の[#御知己:ご ち き]とて、敵は敵です。[r]手加減はできませぬよ！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth C 0]
+[charaDepth F 1]
+
+[wt 0.25]
+[fowardEffect bit_talk_tornado02]
+[se ad80]
+[seVolume ad80 0 0.5]
+
+[wt 0.35]
+
+[charaSpecialEffect F erasureReverse 1 0.3]
+[charaFace C 9]
+[charaFadein C 0.15 1]
+[wt 0.05]
+[seStop ad80 0.3]
+
+[wt 0.5]
+＠パールヴァティー
+お気になさらず。おわかりだと思いますが、[r]私はカーマには嫌われていますし。
+[k]
+
+＠パールヴァティー
+あれはもちろんシヴァや私のせいではあるのですが、[r]焚きつけたインドラ神たちにだって責任は……。
+[k]
+
+[charaFace C 2]
+＠パールヴァティー
+い、いえいえ！　そういうのとは関係なく！
+[k]
+
+[charaFace C 5]
+＠パールヴァティー
+たとえ過去どんな目に遭わされたとしても、[r]無関係な人達に危害を加えるとは[#言語道断:ごんごどうだん]。
+[k]
+
+＠パールヴァティー
+カーマのやっていることを許すわけにはいきません。
+[k]
+
+＠パールヴァティー
+意図はわかりませんが、なんとしてもその企みを止め[line 3][r]江戸城の、そしてカルデアの人々を助けねば。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk on]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠マシュ
+……はい。
+[k]
+
+[charaFace B 4]
+＠マシュ
+ですが本当に、皆さんの命がカーマの掌の上に[r]乗ってしまっているのだとしたら、大変なことです。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠シオン
+とりあえずは向こうの言葉を信じて、[r]最下層に向かうしかないでしょうね。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠マシュ
+永遠に[#彷徨:さまよ]わせるのが目的とまで言い切ったのです。[r]ここからも入り組んだ迷宮が待っているのでしょう。
+[k]
+
+＠マシュ
+マスターには、難しいミッションをお願いすることに[r]なってしまいますが[line 3]どうか、よろしくお願いします。
+[k]
+
+？1：なんとかしてみせるよ
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+＠シオン
+うーん。それにしても、カーマですか。[r]少し気になる事がありますね。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠パールヴァティー
+私もです。ですが、[#あちら]に関してはそう容易くは[r]出てこれぬはず。関係はないと思いたいですが……。
+[k]
+
+[charaFace C 9]
+＠パールヴァティー
+…………。
+[k]
+
+[charaFace C 4]
+＠パールヴァティー
+とにかく、今は先に進みましょう。[r]まだまだ道のりは長そうです[line 3]
+[k]
+
+
+
+
+
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[charaFadeout C 0.1]
+[wt 0.5]
+[soundStopAll]
+
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+
+[cueSe Battle bas2]
+[charaFace D 0]
+[charaFadein D 0.5 0,-200]
+[wt 1.4]
+
+＠
+[s 1000]
+　　　　[s 16]第五代将軍『徳川綱吉の印籠』を手に入れた。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[wait fade]
+[end]

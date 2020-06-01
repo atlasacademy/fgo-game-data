@@ -1,0 +1,1308 @@
+
+
+＄94-04-49-10-2-0
+
+
+[soundStopAll]
+
+[skip false]
+
+[branchQuestNotClear lblNotClear1 3000320 4]
+[label lblClear1]
+[flag IsGirl true]
+[branch lblIsClearConf1]
+[label lblNotClear1]
+[flag IsGirl false]
+[label lblIsClearConf1]
+
+[skip true]
+
+[charaSet A 7027300 1 アマゾネスＣＥＯ_普通]
+[charaSet B 1098119600 1 アマゾネスＣＥＯ_ろくろ]
+[charaSet C 2038000 1 オリオン]
+[charaSet D 99502600 1 マシュ]
+[charaSet E 1098189200 1 アルテミス石像]
+[charaSet F 6031001 1 刑部姫]
+[charaSet H 98002000 1 フォウ]
+[charaSet I 6008000 1 コスモティック・ビューティ夫人]
+[charaSet J 5009000 1 エフェクト用]
+
+[branch lblNotGirl1 IsGirl false]
+[label lblGirl1]
+[charaSet G 1098124510 1 ダ・ヴィンチ]
+[branch lblIsGirlConf1]
+[label lblNotGirl1]
+[charaSet G 98111500 1 ダ・ヴィンチ]
+[label lblIsGirlConf1]
+
+[scene 90001]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[spriteMaskSet 0001]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+うおおお！[r]アーマーゾーネースー！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠オリオン
+……なんだありゃ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠マシュ
+ギリシャの英雄と思うまま戦って昂ぶった気持ちを、[r]社歌のフレーズで発散していらっしゃるのかと……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+ふぅ。興奮で目が[#眩:くら]んでおまえがア何とかに見えそうに[r]なったときもあったが、もう大丈夫だ。
+[k]
+
+[charaFace A 8]
+
+＠A：アマゾネスＣＥＯ
+ア何とかでないお客様、負けたのですから[r]素直にここにサインorダイでどうぞ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠オリオン
+へいへい。ま、こんだけ暴れて[r]なお負けたってんなら義理は果たしただろ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：アマゾネスＣＥＯ
+確かにサインをいただきました。ではこちらが商品。[r]またのご利用をお待ちしております。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth A 2]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFace A 11]
+[charaFadein A 0.1 2]
+
+＠オリオン
+（じー）
+[k]
+
+[charaFace A 10]
+
+＠A：アマゾネスＣＥＯ
+[FFFFFF]？[-]
+[k]
+
+＠オリオン
+最初に見たときはやっぱ少し若いかなと思ったんだが、[r]戦ってみるとなんか良さがわかってきた。
+[k]
+
+[charaFace C 1]
+
+＠オリオン
+うん、おまえもなかなかいい女だな！
+[k]
+
+[charaFace C 0]
+
+＠オリオン
+特に筋肉がいい。強い女は好きだぞ。[r]いや弱い女だって好きだが。
+[k]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaFace A 5]
+
+＠A：アマゾネスＣＥＯ
+！！
+[k]
+
+？1：あっ
+？2：そういう話題はデンジャー……！
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[wt 1.5]
+[charaFace F 4]
+[charaMove F 512,0 0.6]
+
+＠刑部姫
+（無言でそそくさと退避）[wt 0.5][charaFadeout F 0.4]
+[k]
+
+[wt 0.3]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+
+＠マシュ
+マスター、少々距離を取ったほうが安全かもしれません。
+[k]
+
+＠マシュ
+この直接的な地雷スタンプは、社歌でも[r]抑えきれないことが予想されます……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+[charaPut J 1]
+[charaTalk G]
+[branch lblNotGirl2 IsGirl false]
+[label lblGirl2]
+[charaFace G 23]
+[charaFadein G 0.1 1]
+[branch lblIsGirlConf2]
+[label lblNotGirl2]
+[charaFace G 0]
+[charaFadein G 0.1 0,-90]
+[label lblIsGirlConf2]
+
+＠ダ・ヴィンチ
+……あれ？　それとは関係ないんだけど、[r]オリオンの後ろで何か……。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectDestroy J]
+
+[wt 0.6]
+
+[scene 90002 1.0]
+
+[wt 1.4]
+
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth C 2]
+[charaDepth H 2]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 -544,0]
+[wt 0.3]
+[charaMove E -480,0 0.5]
+[wt 0.7]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[charaMoveReturn H 0,32 0.2]
+
+＠フォウ
+フォウッ！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠オリオン
+うんうん、正直、もう少し歳を取ると[wt 0.3][charaMove E -384,0 0.7][r]どっちもマジ美人になると思うんだよな。[wait charaMove E]
+[k]
+
+
+＠オリオン
+なんかどっかの女神に近いレベルかもしれん。[wt 0.3][charaMove E -288,0 0.7][r]将来有望なのはいいことだよな、うん。[wait charaMove E]
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[charaShake A 0.05 2 0 0]
+
+＠A：アマゾネスＣＥＯ
+……。…………。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaShakeStop A]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠コスモティック・ビューティ夫人
+あのー、もしもし？　前も噴火寸前のようだけれど、[r]後ろのほうも気にしたほうがよくてよ？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 0.7]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[charaFace E 0]
+[charaFadein E 0.4 -224,0]
+
+＠オリオン
+後ろ？
+[k]
+
+[messageOff]
+[charaTalk E]
+[charaMove E -128,0 0.8]
+[se ade402]
+[wt 1.0]
+[seStop ade402 0.3]
+
+[wt 0.5]
+
+[charaFace C 6]
+
+＠オリオン
+お……おやぁ？
+[k]
+
+[bgm BGM_EVENT_72 0.1]
+
+＠オリオン
+この像……こんなに近くにあったっけかなあ？[r]はは、は[line 3]
+[k]
+
+[messageOff]
+[fadeout black 0.4]
+[wait fade]
+[charaPut E 1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+[charaTalk off]
+[charaSet F 1098189210 1 アルテミス石像_ひび割れ]
+[charaSet H 2009201 1 アルテミス]
+[fadein black 0.4]
+[se ad14]
+[seVolume ad14 0 0.3]
+[charaShake E 0.8 4 1 0]
+[wait fade]
+
+[wt 0.5]
+
+[seStop ad14 0.2]
+[charaShakeStop E]
+
+[wt 0.3]
+
+
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth F 2]
+[charaFace F 0]
+[charaFadein F 0.3 1]
+[se ade403]
+[wt 0.15]
+[seStop ade403 0.1]
+[wt 1.0]
+[charaFadeout E 0.1]
+
+[charaTalk on]
+
+＠オリオン
+ひぃっ。漏れてくるこの気配ッ……まさか！？
+[k]
+
+[bgmStop BGM_EVENT_72 0.5]
+
+＠F：石像
+だ・あ・り・ん……？
+[k]
+
+[messageOff]
+[wt 0.5]
+[se ade404]
+[charaPut J 1]
+[charaEffect J bit_talk_radiallight01]
+[wt 0.3]
+[fadeout white 1.2]
+[wait fade]
+[charaFadeout F 0]
+[charaTalk depthOn]
+[charaPut J 1200,1200]
+[charaEffectDestroy J]
+[charaTalk depthOn]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 1.0]
+[seStop ade404 0.5]
+[wt 1.0]
+[charaTalk depthOff]
+[charaDepth H 1]
+[charaDepth C 2]
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 0]
+[charaFace H 2]
+[charaFadein H 0.1 2]
+[se ade405]
+[wt 0.6]
+[fadein white 0.3]
+[wait fade]
+
+[bgm BGM_EVENT_27 0.1]
+
+＠オリオン
+うおおおーっ！？　アルテミス、なんでだっ！？
+[k]
+
+＠アルテミス
+木を隠すなら森の中！[r][#アルテミス:私]を隠すならアルテミス神殿の中！
+[k]
+
+[charaFace H 4]
+
+＠アルテミス
+愛する女のために孤独に戦うダーリンっていう[r]役どころが考えるだけでカッコよすぎて……
+[k]
+
+[charaFace C 6]
+
+＠オリオン
+無理矢理おまえに配置されたんだけどね！？
+[k]
+
+＠アルテミス
+でもこれは一人でそれをやるのが[r]格好良さのキモだって思ったから。
+[k]
+
+＠アルテミス
+見たいけど見るなら隠れてなくちゃ駄目よね、的な[r]奥ゆかしさで石像のふりして見守ることにしたの。
+[k]
+
+[charaFace H 3]
+
+＠アルテミス
+神様っぽく見守ってるだけの私、健気……って[r]ドキドキしながら
+[k]
+
+＠アルテミス
+ダーリンが一人であんなことやこんなことをするのを[r]覗くのは意外に新鮮で刺激的だったわ。
+[k]
+
+[charaFace C 6]
+
+＠オリオン
+相変わらず当方のプライバシーを[#一切:いっさい]ガン無視。[r]いっそ清々しい。
+[k]
+
+[charaFace H 5]
+
+＠アルテミス
+まあホントーに、ホントーにちょっとだけ、[r]信じてるけどダーリンが私のいない間に
+[k]
+
+＠アルテミス
+他の女の子にちょっかい出そうとしても[r]これなら止められるし、とは思ってたんだけど！
+[k]
+
+[charaFace H 2]
+
+＠アルテミス
+悪い予感当たっちゃった！
+[k]
+
+[charaFace C 15]
+
+＠オリオン
+いや、あの、おまえが見てるって知ってたら[r]やってませんでしたですよ！？　マジでマジで！
+[k]
+
+＠オリオン
+こういう囮捜査みたいなの、よくないと思うなー俺！
+[k]
+
+＠アルテミス
+反省の色が・なーいっ！
+[k]
+
+？1：……あ、違和感の原因がわかった
+？！
+
+[messageOff]
+[fadeout black 0.7]
+[bgmStop BGM_EVENT_27 0.7]
+[wait fade]
+[charaFadeout C 0.1]
+[charaFadeout H 0.1]
+[charaTalk depthOn]
+[imageSet E cut160_left 1]
+[imageSet F cut160_right 1]
+[wt 0.7]
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth F 2]
+[charaFadein E 0 0,-50]
+[charaFadein F 0 0,-50]
+[pictureFrame cut160_frame]
+[fadein black 0.7]
+[wait fade]
+
+
+[wt 1.0]
+
+
+[charaMask E inside]
+[charaMask F outside]
+
+[charaMove E 102,-230 0.4]
+[charaMove F -102,-230 0.4]
+[charaMoveScale E 1.4 0.4]
+[charaMoveScale F 1.4 0.4]
+[wt 1.7]
+[se ad232]
+[wt 2.5]
+
+[fadeout black 0.7]
+[wait fade]
+[charaFadeout E 0]
+[charaFadeout F 0]
+[spriteMaskOff]
+[pictureFrame]
+[wt 0.7]
+[fadein black 0.7]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+
+＠マシュ
+た、確かに！　思い返せばこの階の石像には[r]クマのオリオンさんがいませんでした。
+[k]
+
+＠マシュ
+本物のアルテミスさんだったからでしょうか……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[branch lblNotGirl3 IsGirl false]
+[label lblGirl3]
+[charaFace G 33]
+[charaFadein G 0.1 1]
+[branch lblIsGirlConf3]
+[label lblNotGirl3]
+[charaFace G 4]
+[charaFadein G 0.1 0,-90]
+[label lblIsGirlConf3]
+
+＠ダ・ヴィンチ
+そんな間違い探しにはさすがに気付かなかったなあ。[r]もっと大事な部分のサーチを優先させていたよ。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[charaFadeout G 0.1]
+[charaPut J 1200,1200]
+[wt 0.4]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[effect bit_talk_38l 0,0 H]
+[cueSe Battle bac51]
+[wt 0.5]
+[cueSe Battle bac111]
+[wt 1.0]
+[effectStop bit_talk_38l]
+
+[effect bit_talk_explosion_triple02]
+[se ad38]
+[se ad608]
+[se ad609]
+[seVolume ad609 0 0.6]
+[shake 0.07 8 10 1.5]
+[wt 1.5]
+[seStop ad38 0.5]
+[seStop ad608 0.5]
+[seStop ad609 0.5]
+[shake 0.07 3 2 0.3]
+[wt 1.5]
+[effectDestroy]
+
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.4]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[wt 1.0]
+
+[charaFaceFade A 0 0.2]
+[wt 0.1]
+
+＠A：アマゾネスＣＥＯ
+……フン。これだからギリシャ男は。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 0]
+[branch lblNotGirl4 IsGirl false]
+[label lblGirl4]
+[charaFadein G 0.1 1]
+[branch lblIsGirlConf4]
+[label lblNotGirl4]
+[charaFadein G 0.1 0,-90]
+[label lblIsGirlConf4]
+
+＠ダ・ヴィンチ
+お、よかったよかった。先に同じ事で他人が怒ると、[r]怒るタイミングを逃しちゃうコトってあるよね～。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+不快なカスタマーのハラスメントに[r]かかずらっている場合ではないと思い出しただけだ。
+[k]
+
+[charaFace A 0]
+
+＠A：アマゾネスＣＥＯ
+女神アルテミスよ。[r]お伺いしたいことがあるのですが。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth H 1]
+[charaDepth A 2]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+
+＠アルテミス
+うんうん。もちろんそうよね。
+[k]
+
+＠アルテミス
+でも私は今、ダーリンへのおしおきに忙しいから、女神[r]パワーであなたの聞きたいことにパパッと答えちゃうわ。
+[k]
+
+＠アルテミス
+私は今回の事件の黒幕じゃありませーん。
+[k]
+
+[bgmStop BGM_EVENT_7 2.0]
+
+[charaFace A 10]
+
+＠A：アマゾネスＣＥＯ
+なんですと？　ならば、この塔は……
+[k]
+
+[charaFace H 1]
+
+＠アルテミス
+造りたいっていうから、いいよー、って[r]許可を出しただけだよ？
+[k]
+
+＠アルテミス
+肖像権？　とかそういうのの代わりに、ダーリンの[r]配置だけはちょっと口出しさせてもらったけど。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠コスモティック・ビューティ夫人
+この神殿で[#祀:まつ]られている貴方でないのならば、[r]いったい誰が……？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠アルテミス
+そんなに難しい話じゃないから、[r]わかってる人にはもうわかってると思うなー。
+[k]
+
+[charaFace H 0]
+
+＠アルテミス
+まあとにかく、残りは二十階。
+[k]
+
+＠アルテミス
+黒幕の腹心と黒幕本人が待ってるだけだから、[r]考えるより先に登ったほうが早いんじゃないかな？
+[k]
+
+[charaFace H 1]
+
+＠アルテミス
+元気いっぱいに、ファイト、ファイト～！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+……そうか。
+[k]
+
+[charaFace A 8]
+
+＠A：アマゾネスＣＥＯ
+確かに、歩みを進めるのが一番の近道であるようだ。[r]行こう[line 3]
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[bgmStop BGM_EVENT_2 1.2]
+[wait fade]
+[charaFadeout A 0.1]
+[charaPut J 1]
+[charaTalk G]
+[branch lblNotGirl5 IsGirl false]
+[label lblGirl5]
+[charaFace G 13]
+[charaFadein G 0.1 0,-50]
+[branch lblIsGirlConf5]
+[label lblNotGirl5]
+[charaFace G 0]
+[charaFadein G 0.1 0,-140]
+[label lblIsGirlConf5]
+[wt 0.5]
+[wipeFilter cinema 0.5 0]
+[fadein black 1.2]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠ダ・ヴィンチ
+（ふーむ。実際、こうなると消去法に近くなってしまうな。[r]　可能性だけは考えていたけど、やれやれ……）
+[k]
+
+[branch lblNotGirl6 IsGirl false]
+[label lblGirl6]
+[charaFace G 12]
+[charaFadein G 0.1 0,-50]
+[branch lblIsGirlConf6]
+[label lblNotGirl6]
+[charaFace G 4]
+[charaFadein G 0.1 0,-140]
+[label lblIsGirlConf6]
+
+＠ダ・ヴィンチ
+（ほんとう、どう始末をつける気だい、キミ[line 3]？）
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_70 2.0]
+[wait fade]
+[wipeOff]
+[charaFadeout G 0.1]
+[charaPut J 1200,1200]
+[scene 90100]
+[wt 1.5]
+[charaSet A 9007000 1 ケツァル・コアトル・サンバ・サンタ]
+[charaSet B 2022000 1 アルテラサンタ]
+[charaSet C 4022000 1 サンタオルタ]
+[charaSet D 3026000 1 ジャンヌ・オルタ・サンタ・リリィ]
+[charaSet E 2039000 1 ナイチンゲール・サンタ]
+[charaSet F 1037000 1 仕事中の女将]
+[charaSet G 2001000 1 板長]
+[fadein black 2.0]
+[wait fade]
+
+[wt 1.2]
+
+＠
+[align center]～　一方そのころ　～[align]
+[k]
+
+[messageOff]
+[scene 89703 1.4]
+[wt 3.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-200]
+[se ad7]
+[charaMove A 0,0 0.1]
+
+[wt 0.3]
+
+[se ade230]
+[charaFace A 1]
+[seVolume ade230 0 0.2]
+[wt 0.1]
+[se ade229]
+[charaShake A 0.1 -4 2 2.0]
+[charaMove A -150,0 2.0]
+[wt 1.0]
+[charaShake A 0.1 4 2 3.0]
+[charaMove A 150,0 3.0]
+[wt 3.0]
+[charaShake A 0.1 -4 2 1.5]
+[charaMove A 1 1.5]
+
+[wt 2.0]
+
+[seStop ade229 0.3]
+[seStop ade230 0.8]
+[wt 1.0]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠ケツァル・コアトル・サンバ・サンタ
+フー！　ノリノリのリズムでよくわからない世界を[r]飛び回るの、とっても楽しいデース！
+[k]
+
+[charaFace A 0]
+
+＠ケツァル・コアトル・サンバ・サンタ
+そしてその後で食べるナチョスも最高ネ～。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.4 1]
+[wt 0.5]
+
+＠アルテラサンタ
+フォッフォッフォ。ツェルコも喜んでいるぞ。
+[k]
+
+[charaFace B 1]
+
+＠アルテラサンタ
+こんな日に食べるブッシュ・ド・ノエルはいい文明だ。[r]甘い。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+[wt 0.5]
+
+＠サンタオルタ
+フッ、おかしなことを。冬のジャンクと言えば[r]肉まんに決まっている。ハフハフ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠ケツァル・コアトル・サンバ・サンタ
+あれ？　アナタ、[r]さっきまでバイクを走らせてませんでした？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠サンタオルタ
+酷使しすぎたゆえ、オーバーホール中だ。[r]その間はラムレイ二号を使うことにした。
+[k]
+
+＠サンタオルタ
+純粋な速度では負けるが、小回りはなかなかだ。[r]空も飛べるしな。
+[k]
+
+[charaFace C 1]
+
+＠サンタオルタ
+そして何より、積載量が多い。[r]何かを運ぶにはもってこいだ。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.4 1]
+[wt 0.5]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+わかります。私たちほど、何かを運ぶことに[r]慣れているサーヴァントはいないと思います。
+[k]
+
+[charaFace D 1]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+だから今回は私たちこそが主役だと言ってもいいでしょう。[r]えっへん！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.5]
+
+＠ナイチンゲール・サンタ
+よくわかりませんが、届けなくてはならない場所に[r]薬を届けるのは当然のことです。
+[k]
+
+[charaFace E 7]
+
+＠ナイチンゲール・サンタ
+ただ、指示書により向かった先の患者が[r]こぞって薬から逃げ回るので困りました。
+[k]
+
+＠ナイチンゲール・サンタ
+不思議なことに、ついでに託されている荷物を渡すと[r]ほっとしたような顔になるのですが。
+[k]
+
+[charaFace E 6]
+
+＠ナイチンゲール・サンタ
+あれは小児科の診察室に置いてある[r]ぬいぐるみのようなものなのでしょうか？
+[k]
+
+[charaFace E 0]
+
+＠ナイチンゲール・サンタ
+ともあれ当然、患者がほっとしたその隙をついて投薬を[r]施しますので問題はありません。成功率は１００％です。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+そのオマケのお薬、[r]人のためになるからいいことなんでしょうけど……
+[k]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+なんだか私は、昔のことを思い出して[r]微妙な気分になっちゃいますね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠ナイチンゲール・サンタ
+違います。オマケは荷物のほうです！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アルテラサンタ
+もぐもぐむぐ。
+[k]
+
+＠アルテラサンタ
+よし、腹ごしらえは済んだ。[r]それでは再びクリスマスに戻るとしよう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 0.6]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠サンタオルタ
+……うん？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ケツァル・コアトル・サンバ・サンタ
+ワーオ！　今、何か[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+おかしなコトを言いませんでしたかっ？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.5]
+
+
+＠仕事中の女将
+クリスマスはもう終わったでちよ？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+ほら！　通りすがりの女将さんもこう言っています！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠アルテラサンタ
+おまえたちこそ何を言っている。[r]大事なことを忘れているのではないか？
+[k]
+
+[bgm BGM_EVENT_48 0.1]
+
+＠アルテラサンタ
+[#年は明けたのだぞ]。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠サンタオルタ
+！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+あっ……！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アルテラサンタ
+そうだ。クリスマスは年に一回。
+[k]
+
+[charaFace B 7]
+
+＠アルテラサンタ
+だが、年が明けたのだから今が次のクリスマスでも[r]おかしくはないのではないか。私はそう思う。
+[k]
+
+＠アルテラサンタ
+冬だしな。時期的にもピッタリだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_48 3.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ケツァル・コアトル・サンバ・サンタ
+忘れていたわ。[wt 0.4][charaFace A 1][r]そう、クリスマスの可能性は……無限大……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+くっ。まだまだ勉強不足だったみたいです、私……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠アルテラサンタ
+フォッフォッフォッ。焦る必要はないぞ、若いの。[r]サンタにとっての１年が皆の１年と同じだとも限らない。
+[k]
+
+[charaFace B 7]
+
+＠アルテラサンタ
+つまり１１ヵ月後ぐらいの冬にはまた別の[r]クリスマスが来る可能性もある。
+[k]
+
+[charaFace B 13]
+
+＠アルテラサンタ
+我々サンタは、クリスマスが訪れるたびに[r]全力で使命を果たせばいいだけじゃ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠サンタオルタ
+さすがだな、長老。[r]わかりみが深い。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠ナイチンゲール・サンタ
+クリスマス、でしたか。気付きませんでした。
+[k]
+
+[charaFace E 10]
+
+＠ナイチンゲール・サンタ
+でしたら、これからはより気合いを入れて[#プレゼント:お  く  す  り]を[r]配らなくては。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠アルテラサンタ
+では行くぞ。[r]サンタ部隊、出動じゃ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth E 2]
+[charaDepth C 3]
+[charaDepth D 4]
+
+[charaTalk off]
+[charaFace C 2]
+[charaFadein C 0.1 -368,0]
+[charaFace E 2]
+[charaFadein E 0.1 -48,0]
+[charaFace D 2]
+[charaFadein D 0.1 96,0]
+[charaFace A 1]
+[charaFadein A 0.1 384,0]
+
+＠一同
+おー！
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_62 1.5]
+[wait fade]
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠仕事中の女将
+あの……クリスマスは、でちね……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠板長
+いいんだ、女将。
+[k]
+
+＠板長
+カルデアでは『クリスマスとハロウィン、そして[r]ユニヴァースという単語に理屈は通用しない』と
+[k]
+
+＠板長
+思っておいたほうがいい。[r]そっとしておけ……。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

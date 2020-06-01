@@ -1,0 +1,117 @@
+
+
+
+＄94-04-77-65-1-0
+
+
+[soundStopAll]
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 3043000 1 エリセ]
+[charaSet C 4002001 1 イスカンダル]
+[charaSet D 5019002 1 エルメロイⅡ世（少年）]
+[charaSet E 3009001 1 レオニダス]
+[charaSet T 5009000 1 エフェクト用ダミー]
+
+[scene 20730]
+
+[pictureFrame cut170_gameframe_bright]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠マシュ
+やりました、先輩！　３連勝です！[r]みごとな指揮でした……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 0,-50]
+
+＠エリセ
+そんな……こんなはずじゃ……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 2]
+[charaDepth E 1]
+[charaDepth D 3]
+
+[charaTalk C]
+[charaFace E 5]
+[charaFadein E 0.1 -340,-50]
+[charaFace C 1]
+[charaFadein C 0.1 40,-50]
+[charaFace D 4]
+[charaFadein D 0.1 330,-50]
+
+[charaPut T 1]
+[charaEffect T bit_talk_06]
+
+＠イスカンダル
+うむ！　完敗だったな！
+[k]
+
+＠エルメロイⅡ世（少年）
+悔しいものだね。何もしないうちに終わっちゃうのは。
+[k]
+
+[charaFace E 2]
+
+＠レオニダス
+私が出ていれば、このようなことには……ッ！
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 0.3]
+
+[se ade406]
+[wt 0.2]
+[flashin once 0.1 0.6 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.2]
+[charaEffectStop T bit_talk_06]
+[wt 0.1]
+[seStop ade406 0.6]
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 0,-50]
+
+＠エリセ
+[#大王:マグヌス]陛下？　[#丞相:じょうしょう]殿？[r]スパルタ王までも……。
+[k]
+
+
+
+＠エリセ
+[line 3]私を、置いていかないで。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

@@ -1,0 +1,162 @@
+
+
+＄91-20-33-01-1-1
+
+[soundStopAll]
+
+[charaSet A 2033000 1 アシュヴァッターマン]
+[charaSet B 99502600 1 マシュ]
+[charaSet C 2008001 1 トリスタン]
+[charaSet D 2030001 1 ケイローン]
+[charaSet E 98006200 1 エネミー]
+
+[charaSet I 98006100 1 ダミーエフェクト１]
+[charaSet J 98006100 1 ダミーエフェクト２]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_MiddleLevel]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 30400]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.2 1]
+[wt 0.1]
+
+＠アシュヴァッターマン
+ウッラア！
+[k]
+
+[messageOff]
+[se bac1]
+[charaFadeout A 0.4]
+[charaMove A 0,10 0.2]
+[charaMoveScale A 1.2 0.2]
+[charaEffect I bit_talk_41]
+[wt 0.4]
+[charaMoveScale A 1.0 0]
+[charaPut I 2000,2000]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.3]
+
+[se bac150]
+[effect bit_talk_14 120,100]
+[wt 0.1]
+[charaMove E -15,0 0.2]
+[charaShake E 0.04 3 4 0.2]
+[wt 0.12]
+
+[se bac149]
+[effect bit_talk_14 -80,-20]
+[wt 0.1]
+[charaMove E 10,0 0.2]
+[charaShake E 0.04 4 3 0.2]
+[wt 0.12]
+
+[se bac150]
+[effect bit_talk_14 110,-100]
+[wt 0.1]
+[charaMove E -15,0 0.2]
+[charaShake E 0.04 4 4 0.4]
+[wt 0.5]
+
+[se ad26]
+[charaShake E 0.04 3 3 0.7]
+[wt 1.1]
+
+[se ad42]
+[charaSpecialEffect E enemyErasure 0,0 1.5]
+[wt 0.7]
+
+[wait charaSpecialEffect E]
+[bgmStop BGM_EVENT_3 1.2]
+[charaFadeout E 0.1]
+[wt 1.2]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 0.2]
+
+＠アシュヴァッターマン
+……ハッ。[r]ちったあ怒りも収まると思ったが……。
+[k]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaFace A 5]
+
+＠アシュヴァッターマン
+敵[messageShake 0.04 3 3 1.0]が熱かったせいで、[r]一層怒りが煮えたぎるぜ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageShakeStop]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠トリスタン
+それは気の毒に……。
+[k]
+
+[charaFace C 0]
+
+＠トリスタン
+では今度こそ、[r]森林浴でリラクゼーションです……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠ケイローン
+そうだとありがたいですね。[r]私もこの暑さにはいささか参ります。
+[k]
+
+[charaPut J 0,0]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠マシュ
+は、はい。
+[k]
+
+[charaFace B 7]
+
+＠マシュ
+次はきちんとした森林浴ができる[r]ところへ設定します。
+[k]
+
+[messageOff]
+[se ad15]
+[wt 0.3]
+
+[se ad172]
+[wt 0.7]
+
+[fadeout black 2.0]
+[seStop ad172 2.0]
+[bgmStop BGM_EVENT_94 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,325 @@
+
+
+＄94-03-01-05-2-0
+
+
+
+[soundStopAll]
+
+
+[charaSet A 3034002 1 茨木童子]
+[charaSet B 6029001 1 アサシン・パライソ]
+[charaSet C 1098157600 1 護法少女]
+[charaSet D 1098157700 1 小動物]
+[charaSet E 99502600 1 マシュ]
+[charaSet F 5002001 1 シーフードの鬼]
+[charaSet G 6005001 1 ハンバーグの鬼]
+[charaSet H 98115000 1 エフェクト用]
+
+[charaDepth A 1]
+[charaDepth F 2]
+[charaDepth G 8]
+[charaDepth B 4]
+
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 64800]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+[se bac139]
+[charaEffect H bit_talk_ichimon01wh]
+[wt 0.4]
+
+[se bac139]
+[effect bit_talk_Slash_white_01_L]
+[wt 0.3]
+
+[se bac139]
+[fowardEffect bit_talk_h_slash01]
+[wt 0.8]
+
+
+
+[se ad85]
+[charaEffect H bit_talk_h_slash02]
+[wt 0.6]
+
+[se ad85]
+[effect bit_talk_v_slash02]
+[wt 0.4]
+
+[se bac11]
+[fowardEffect bit_talk_14]
+[wt 0.3]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+
+[charaMoveScale A 1.5 0]
+[se ad671]
+[seStop ad671 0.5]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[charaMoveScale A 1.0 0.2]
+[charaShake A 0.03 4 4 0.6]
+[wt 1.0]
+＠茨木童子
+むむう！　手強い……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠B：[servantName 602900:アサシン・パライソ:望月千代女]
+際限なく湧いてくる海産物のような何かが厄介にて！[r]あと一手、一手が足りませぬ[line 3]！
+[k]
+
+
+[bgmStop BGM_EVENT_3 1.0]
+
+＠C：護法少女
+[line 6]はぁ。また、うちが手ェ貸さなあかん？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠マシュ
+その声は！　酒呑[line 3]いえなんでもありません！
+[k]
+
+
+？1：またまた来てくれた！
+？2：鬼救阿さん！
+
+？！
+
+[charaFadeout E 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠シーフードの鬼
+おのれ何者！[r]姿を見せられよ！
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.3 1]
+[wt 0.1]
+
+[charaEffect H bit_talk_rarrow01br]
+[wt 0.2]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[scene 10000]
+[charaPut H -50,50]
+
+[wipein rectangleStripDownToUp 0.1 1]
+[wait wipe]
+
+[se adm15]
+[wt 1.0]
+
+[wipeout rectangleStripDownToUp 0.1 1]
+[wait wipe]
+
+[scene 64800]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+[wt 0.1]
+
+[wipein rectangleStripUpToDown 0.1 1]
+[wait wipe]
+
+[charaTalk depthOff]
+[charaDepth F 0]
+[charaDepth H 1]
+
+[se ad322]
+[shake 0.05 3 3 0.3]
+[charaPut H 0,-300]
+[charaEffect H bit_talk_14]
+[wt 0.6]
+[seStop ad322 0.4]
+
+[charaFace F 2]
+
+＠シーフードの鬼
+おおお！　これは異郷の祭具！？[r]いえ、いえ、このようなモノはまるで見たことがない！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠茨木童子
+おー！　鬼救阿のステッキのようなもの！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaSet E 10008001 1 シトナイ]
+
+[charaDepth E 5]
+
+＠護法少女
+ふふ。茨木も旦那はんもいけずやねぇ。[r]うちは護法の鬼、護法少女やて何度も言うとるやろ？
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth C 0]
+[charaDepth D 1]
+
+[charaTalk off]
+[charaFace C 0]
+[charaFace D 0]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect C appearance 1 0.25]
+[charaSpecialEffect D appearance 1 0.25]
+[wt 1.0]
+[bgm BGM_HALLOWEEN_2 0.1]
+[charaTalk on]
+
+＠護法少女
+[line 3]護法少女・前口上は省略して推参や！
+[k]
+
+[messageOff]
+[wt 0.3]
+[charaTalk off]
+[se ade217]
+[effect bit_talk_magic_girl_light]
+[wt 3.0]
+[charaTalk on]
+
+＠小動物
+フン。ゴールドサーヴァントが二騎とは豪勢だな。[r]あれこれ言っている暇はない、畳み掛けるべきだぞ。
+[k]
+
+＠護法少女
+はいはい。[r]意外とよう見てはるんやねえ、ハクは。
+[k]
+
+
+＠護法少女
+そないな訳やから、旦那はんも茨木も、ええね？[r][servantName 602900:パライソ:千代女]はんとなんとかいう[#幼子:おさなご]も[line 3]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace A 5]
+[charaFace B 5]
+[charaFace E 5]
+[charaFadein A 0.1 -300,0]
+[charaFadein B 0.1 1]
+[charaFadein E 0.1 300,0]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein C 0.1 1]
+[charaFadein D 0.1 0,0]
+＠護法少女
+はいはい返事はないけどみぃんなええ顔して。[r]ほな、皆で一斉にかかって押し切ってまうけど……
+[k]
+
+[charaFace C 1]
+＠護法少女
+…………ええやろか？　こわぁい黄金の鬼はん？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[bgmStop BGM_HALLOWEEN_2 0.3]
+[wt 0.5]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠ハンバーグの鬼
+いいよ？[r]みんな、美味しい部分だけ残してあとは捨てちゃうよ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaMoveScale F 1.0 0]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠シーフードの鬼
+いえいえ！　あまさず残さずきちんと利用しますとも！[r]心配はいりませんよサーヴァントの皆さま！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace G 2]
+[charaFace F 2]
+[charaFadein G 0.1 0]
+[charaFadein F 0.1 230,0]
+[se ad7]
+[charaMoveScale F 1.1 0.1]
+[charaMoveScale G 1.1 0.1]
+[charaMove G -266,0 0.1]
+[charaMove F 240,0 0.1]
+[fowardEffect bit_talk_41]
+＠ハンバーグの鬼とシーフードの鬼
+[messageShake 0.01 3 3 0.2]
+[f large]食材！　[wt 0.4][messageShake 0.01 3 3 0.2]確保！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[fowardEffectStop bit_talk_41]
+[soundStopAll]
+[end]

@@ -1,0 +1,185 @@
+
+
+
+＄94-03-66-06-1-0
+
+[soundStopAll]
+
+[charaSet A 98094000 1 獅子王]
+[charaSet B 8001002 1 マシュ]
+[charaSet C 98003000 1 Dr.ロマン]
+[charaSet H 98115000 1 エフェクト用]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth H 2]
+
+
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipeout noise 0.1 1.0]
+[wait wipe]
+
+[effect bit_sepia01]
+[pictureFrame cut063_cinema]
+
+[scene 29700]
+
+[wt 0.3]
+
+[se ad31]
+[wt 0.2]
+[seStop ad31]
+
+[se ad31]
+[wt 0.3]
+[seStop ad31]
+
+[bgm BGM_BATTLE_5 0.1]
+
+[se ad31]
+[wt 0.5]
+
+[wipein noise 2.0 1.0]
+[seStop ad31 1.0]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 0,-50]
+[wt 0.4]
+
+＠獅子王
+悪を成さず、悪に触れても悪を知らず、[r]善に飽きる事なく、また善の自覚なきものたち。
+[k]
+
+＠獅子王
+この清き魂を集め、固定し、資料とする。
+[k]
+
+＠獅子王
+この先、どれほどの時間が積まれようと、[r]永遠に価値の変わらぬものとして、我が槍に収める。
+[k]
+
+＠獅子王
+それの[line 3]何が間違っている？[r]私の偉業は、すべて[#人間:おまえたち]の為なのに。
+[k]
+
+？1：そんなの、ただの標本だ！
+
+？！
+
+＠獅子王
+[line 3]そう思うか？
+[k]
+
+＠獅子王
+おまえはそう思うのか、盾の騎士よ。
+[k]
+
+＠獅子王
+人間は定命だが、[r]その中でも更に定められた命を持つ者……
+[k]
+
+＠獅子王
+マシュ・キリエライト。[r]おまえであれば、私の理想が分かるのではないか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[communicationCharaLoop 98003003 0,-50 5 0 2]
+
+＠Dr.ロマン
+……！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-50]
+
+＠マシュ
+それは……
+[k]
+
+＠マシュ
+…………それは。
+[k]
+
+？1：マシュ……？
+？2：もしかして……知ってる……？
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[communicationCharaLoop 98003003 0,-50 5 0 2]
+
+＠Dr.ロマン
+[%1]君、会話はもういい！[r]獅子王の精神構造は完全に神霊化している！
+[k]
+
+＠Dr.ロマン
+彼女には人間としての価値観が失われている！[r]話し合いではもう解決できない！
+[k]
+
+＠Dr.ロマン
+戦闘で、あの聖槍を破壊するんだ！[r]それでこの時代は元に戻る！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠獅子王
+[line 3]短慮だな、ロマニ・アーキマン。[r]実に貴方らしい。だが結論は私も同じだ。
+[k]
+
+＠獅子王
+質問には答えた。[r]私を否定するのなら、私もおまえたちを否定するまで。
+[k]
+
+＠獅子王
+いずれ死ぬもの。もう死ぬもの。[r]命の限りを嘆くものたちよ。
+[k]
+
+＠獅子王
+その限界を知り、我が庇護を受け入れよ。
+[k]
+
+＠獅子王
+盾の騎士よ。[r]命を守るというのなら[line 3]私には刃向かわない事だ。
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[communicationCharaLoop 98003003 0,-50 5 0 2]
+
+＠Dr.ロマン
+来るぞ……！[r][%1]君、戦闘準備を！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_5 0.5]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,87 @@
+
+
+＄03-00-02-04-6-1
+
+
+[soundStopAll]
+
+
+[charaSet A 8001400 1 マシュ]
+[charaSet B 98002000 1 フォウ]
+[charaSet H 98115000 1 エフェクト用]
+
+[scene 61500]
+
+[bgm BGM_EVENT_80 0.1]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[cueSe Battle bac234]
+[shake 0.05 1 4 1.0]
+[effect bit_talk_impactlanding]
+[wt 3.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+第一波を撃破しました！[r]外骨骼、連続戦闘対応モードに自動調律。排気開始！
+[k]
+
+[messageOff]
+[charaFace A 0]
+[se ade18]
+[wt 1.5]
+[charaFace A 7]
+
+＠マシュ
+出力数値の安定を確認、問題ありません[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠フォウ
+フォウフォウフォウ！[r]キャーウ、キャウ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はいっ、フォウさん！[r]まだいけます、離脱用の体力も出力も残していますので！
+[k]
+
+[messageOff]
+[charaTalk B]
+[charaFace A 7]
+[cueSe Battle bac428]
+[shake 0.05 2 2 1.0]
+[wt 1.5]
+
+[charaFace A 2]
+
+＠マシュ
+作戦続行します、マスター！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,444 @@
+
+
+＄91-20-15-02-2-0
+
+[soundStopAll]
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 2015001 1 アルジュナ]
+[charaSet C 98002000 1 フォウ]
+[charaSet D 98006000 1 エネミー]
+
+[bgm BGM_EVENT_2 0.1]
+[scene 11210]
+[fadein black 1.5]
+[wait fade]
+[charaEffect A bit_talk_10]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠マシュ
+敵性反応ゼロ。[r]問題ありません。帰投を推奨します。
+[k]
+
+？1：おつかれさま！
+[charaFace A 1]
+＠マシュ
+はい、マスター。[r]お疲れ様でした、ゴマ饅頭を用意しておきますね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+？2：戻ろう、アルジュナ
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アルジュナ
+ええ、了解しました。
+[k]
+
+？！
+
+＠アルジュナ
+ところでマスター。[r]先ほど、私の顔に何かついていましたか？
+[k]
+
+[wt 0.4]
+[charaFace B 4]
+＠アルジュナ
+何も？[r]ただ、少し様子がおかしかった？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠マシュ
+こちらからは、霊基数値に乱れは見られませんでした。[r]過労……でしょうか？
+[k]
+
+[charaFace A 0]
+＠マシュ
+このところ、アルジュナさんは率先して[r]戦いに出られているようですし。
+[k]
+
+＠マシュ
+他のサーヴァント[line 3]特にバトルマニアな方々から[r]ズルいと苦情が挙がっているようです。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠アルジュナ
+……どうやら少し張り切りすぎたようですね。
+[k]
+
+＠アルジュナ
+わかりました、それではしばらくの間は[r]他のサーヴァントに任せましょう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠マシュ
+はい、お疲れ様でした！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout A 0.1]
+[charaEffectStop A bit_talk_10]
+[scene 10400]
+[charaSet A 98001000 1 マシュ]
+[wt 2.0]
+[fadein black 1.5]
+[wait fade]
+[bgm BGM_EVENT_2 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+＠マシュ
+ふぅ、先輩。トランプはわたしの勝ちです。[r]よって、このゴマ饅頭は戦利品として頂きます。
+[k]
+
+？1：寝る前に食べると……
+[charaFace A 11]
+＠マシュ
+……サ、サーヴァントは太りませんから。[r]デミ・サーヴァントでも同じことです。
+[k]
+
+＠マシュ
+……たぶん。
+[k]
+
+？2：どうぞどうぞ
+[charaFace A 13]
+＠マシュ
+ふふ、先輩拗ねないで下さい。[r]ちゃんと先輩の分もありますから。
+[k]
+
+？！
+
+[charaFace A 13]
+＠マシュ
+それでは先輩。[r]良い夢を……。
+[k]
+
+？1：おやすみ！
+[charaFace A 13]
+＠マシュ
+はい、おやすみなさい。
+[k]
+
+？2：フォウもおやすみ
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFadein C 0.1 1]
+[charaMoveReturn C 0,-20 0.4]
+＠フォウ
+フォウ！
+[k]
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_2 2.0]
+[fadeout black 2.0]
+[wait fade]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[scene 10000]
+[wt 1.2]
+[fadein black 1.0]
+[wait fade]
+
+[se ad135]
+[wt 1.0]
+
+？1：……？
+？！
+
+[scene 20700 1.0]
+[wait scene]
+
+[seVolume ad135 1.0 0.4]
+[bgm BGM_EVENT_5 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+＠アルジュナ
+……倒した。[r]倒したぞ。
+[k]
+
+[charaFace B 6]
+＠アルジュナ
+はは……ははは！　ははははは！　私の勝ちだ！[r]私の、私の、私の[line 3]！
+[k]
+
+？1：アルジュナ……？
+？！
+
+[charaFace B 4]
+＠アルジュナ
+……！[r]マスター[line 6][&貴方:貴女]は[line 6]。
+[k]
+
+[charaFace B 0]
+＠アルジュナ
+私の、顔を、見たな？
+[k]
+
+[messageOff]
+[seStop ad135 1.5]
+[bgmStop BGM_EVENT_5 1.5]
+[wipeout uzumaki 1.5 1]
+[wait wipe]
+[scene 20110]
+[charaFadeout B 0.1]
+[wt 1.5]
+[fadeout black 0.1]
+[wait fade]
+[wipein uzumaki 0.1 1]
+[wait wipe]
+[fadein black 1.0]
+[wait fade]
+
+[se ad7]
+[wt 1.0]
+[bgm BGM_EVENT_5 0.1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.4 1]
+＠アルジュナ
+目覚めましたか、マスター。
+[k]
+
+[charaFace B 0]
+＠アルジュナ
+……驚きました。
+[k]
+
+＠アルジュナ
+その目を見るに、状況の意外性に[r]面食らってはいないようですね。
+[k]
+
+＠アルジュナ
+どうやら、サーヴァントの夢の中に落ちたようです。[r]恐らく私か、私と関係する誰かでしょう。
+[k]
+
+[charaFace B 4]
+＠アルジュナ
+私であった場合、申し訳ありません。
+[k]
+
+？1：慣れた気がする
+
+[charaFace B 1]
+＠アルジュナ
+……さすがですね。[r]しかし慣れすぎてもいけません。
+[k]
+
+[charaFace B 0]
+＠アルジュナ
+いつか別種の悪夢に囚われることになるやも……。[r]夢で死ねば、[#精神:こころ]が死にます。
+[k]
+
+？2：いつもの夢だよね？
+
+[charaFace B 0]
+＠アルジュナ
+いつもの、と言えるほどに慣れているのですか？
+[k]
+
+＠アルジュナ
+レイシフトした訳ではなく、[r]瞬間的に転移した訳でもない。
+[k]
+
+[charaFace B 4]
+＠アルジュナ
+実に興味深い現象なのですが……。[r]少なくとも、私にとっては初めての出来事です。
+[k]
+
+
+？！
+
+[charaFace B 0]
+＠アルジュナ
+ともかく、こんな暗闇ではどうしようもありません。[r]この場所を把握しなければ。
+[k]
+
+＠アルジュナ
+マスター、動かないで下さい。[r]ここで１度見失うと、探すのは限りなく困難です。
+[k]
+
+＠アルジュナ
+……微かですが、風の流れる方向を感じます。[r]そちらに向かいましょう。
+[k]
+
+[se ad60]
+[messageOff]
+[bgmStop BGM_EVENT_5 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout B 0.1]
+[seStop ad60 1.0]
+[scene 21500]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+[bgm BGM_EVENT_5 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アルジュナ
+ここは……迷宮のようですね。[r]それも随分深い。
+[k]
+
+＠アルジュナ
+しかも[line 3][charaFace B 5]いや、待って下さい。
+[k]
+
+＠アルジュナ
+これはおかしい。[r]……どういう、ことだ？
+[k]
+
+？1：どうしたの？
+？！
+
+＠アルジュナ
+感覚的にしか伝えられないのですが、[r]この迷宮はこれより上層が存在しません。
+[k]
+
+＠アルジュナ
+下層[line 2]下へ下へと向かう道だけです。
+[k]
+
+？1：つまり、出口はないんだね？
+
+[branch sel01a]
+
+？2：悪夢らしいダンジョンだ……
+
+[branch sel01b]
+
+？！
+
+[label sel01a]
+[charaFace B 0]
+＠アルジュナ
+そういうことになります。[r]夢らしい、理不尽な構造ですね。
+[k]
+
+[branch sel01c]
+
+[label sel01b]
+＠アルジュナ
+まったくです。[r]……[charaFace B 4]申し訳ありません、これは恐らく私の悪夢。
+[k]
+
+＠アルジュナ
+[&貴方:貴女]の悪夢であれば、このように害あるものには[r]ならないでしょうに。
+[k]
+
+？1：精々エリちゃんが満漢全席作ってくる程度
+
+[charaFace B 0]
+＠アルジュナ
+エリチャンとはあの雑竜サーヴァントですか。[r]ははは、[charaFace B 1]満漢全席とはまた豪快な。
+[k]
+
+[charaFace B 4]
+＠アルジュナ
+え？　悪夢？[r]お腹いっぱいになるのでは？　え、根本から違う？
+[k]
+
+[branch sel01c]
+
+？2：精々ナイチンゲールさんに消毒される程度
+
+[charaFace B 4]
+＠アルジュナ
+それは……恐ろしいですね……。
+[k]
+
+＠アルジュナ
+私の母は時代もあって、どちらかというと甘い方でしたが[r]彼女の苛烈さもまた、母性を感じさせます。
+[k]
+
+[charaFace B 1]
+＠アルジュナ
+とはいえそれは、マスターが心配されている……[r]という良い証では？
+[k]
+
+[charaFace B 4]
+＠アルジュナ
+消毒液のタンクを背負って追いかけてくる夢だった？[r]……なるほど、悪夢ですね……。
+[k]
+
+[branch sel01c]
+
+？！
+
+[label sel01c]
+[charaFace B 0]
+＠アルジュナ
+ともかく、下に潜ってみましょう。[r]直感ですが、それが１番良さそうです。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.4]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[wt 0.4]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[charaTalk D]
+[charaFadein D 0.4 1]
+[wt 0.2]
+[se ad19]
+[wt 0.7]
+[bgm BGM_EVENT_3 0.1]
+[wt 1.5]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠アルジュナ
+こういう連中が闊歩しているのは問題ですが。[r]……[charaFace B 0]いえ、さして問題にもなりませんか。
+[k]
+
+＠アルジュナ
+我々ならば、たやすく突破できるはず。[r]では、造作もなく攻め落としましょう。
+[k]
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

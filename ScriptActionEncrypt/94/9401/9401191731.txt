@@ -1,0 +1,256 @@
+
+
+＄94-01-19-17-3-1
+[soundStopAll]
+[charaSet A 98113100 1 アーノルド]
+[charaSet B 2016000 1 エミヤ・オルタ]
+[charaSet C 98113200 1 トリスタン]
+[charaSet D 1030000 1 鈴鹿御前]
+[charaSet E 10001000 1 パッションリップ]
+[charaSet F 7016001 1 タマモキャット]
+[charaSet G 98113100 1 通信エフェクト]
+
+[bgm BGM_EVENT_24 0.1]
+[scene 41000]
+[shake 0.1 0 1 0]
+[fadein black 1.5]
+[wait fade]
+[se ad13]
+[charaPut G 0,0]
+[charaEffect G bit_talk_10]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-80]
+＠アーノルド
+待たせたな君たち！[r]やっと計算が出た！
+[k]
+
+＠アーノルド
+もう時間はない、あと５分だ！[r]SE.RA.PH時間であと８時間後、海底に到達する！
+[k]
+
+＠アーノルド
+SE.RA.PHの潜行速度が増した以上[r]我々の計画も早めなくてはならない！
+[k]
+
+＠アーノルド
+[%1]君、[r]センチネル攻略はどうなっている！？
+[k]
+
+＠アーノルド
+まだ手間取っているのか！？[r]状況を知らせたまえ！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 1.5]
+[fadeout black 1.5]
+[wait fade]
+[shakeStop]
+[wt 2.0]
+[fadein black 1.5]
+[wait fade]
+[bgm BGM_EVENT_1 0.1]
+
+
+＠アーノルド
+よし、状況は分かった。[r]良くやった、[%1]君。
+[k]
+
+＠アーノルド
+中央への[#路:ルート]は確保できたのなら、[r]いったん教会に戻ってきなさい。
+[k]
+
+＠アーノルド
+私も天体室とやらに同行する。その義務があるからね。[r]急ぐんだ。８時間なんてあっという間だぞ。
+[k]
+
+？1：いえ
+？2：メルトを助けに行きます
+
+？！
+
+[charaPut G 0,-1000]
+[charaFadeout A 0.1]
+[wt 0.1]
+[messageOff]
+[charaTalk off]
+[charaFace E 3]
+[charaFace F 1]
+[charaFadein E 0.1 2]
+[charaFadein F 0.1 0]
+[wt 1.0]
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[charaTalk on]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠エミヤ・オルタ
+正気か？　鈴鹿御前の話では[#路:ルート]のない縦穴……[r]落ちれば上がる手段はないそうだが？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaFace C 0]
+[charaTalk C]
+[charaPut G 0,0]
+[charaFadein C 0.1 0,-75]
+＠トリスタン
+……救援行動は不可能、という事ですか。[r]………………仕方ありませんね。
+[k]
+
+[charaFadeout C 0.1]
+[charaTalk A]
+[charaFadein A 0.1 0,-80]
+＠アーノルド
+[line 3]失礼。少し席を外していた。
+[k]
+
+＠アーノルド
+あまりの事で我を忘れてしまってね。[r]乱暴をしてすまないね、マーブル。
+[k]
+
+＠アーノルド
+……さて、[%1]君。[r]よく聞こえなかったな。もう一度。
+[k]
+
+＠アーノルド
+君は栄えあるカルデアのマスターだ。[r]セラフィックスを、私たちを救う義務がある。
+[k]
+
+＠アーノルド
+その上でもう一度、私の命令を復唱しなさい。[r]教会に帰還し、私たちと天体室に行く。それでいいな？
+[k]
+
+？1：メルトリリスの救助に向かいます！
+
+？！
+
+＠アーノルド
+バカな発言はそこまでにしなさい。[r]アルターエゴが下層に落ちた？　助けに行く？
+[k]
+
+＠アーノルド
+いいじゃないか、手間が[#省:はぶ]けた！[r]最後には処理しなければならない怪物だったからね！
+[k]
+
+＠アーノルド
+そんな事はどうでもいい。どうでもいいんだ。[r]いいから私の判断に従いなさい。
+[k]
+
+＠アーノルド
+少し考えれば分かるだろう？　君がどれほど功績を[r]あげようと、外に出た時に報告するのは私なんだ。
+[k]
+
+＠アーノルド
+ここまで死ぬ思いで戦ってきたのに、たった一度のミスで[r]役立たずのレッテルを貼られたくはないだろう？
+[k]
+
+＠アーノルド
+今の発言は私も聞かなかった事にしてあげよう。[r]いいね、君は今すぐ[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_1 0.7]
+[se ad1]
+[charaPut G 0,-1000]
+[charaFadeout A 0.1]
+[wt 1.2]
+
+？1：鈴鹿御前、どうやって下に降りる[&んだ:の]？
+
+？！
+
+[bgm BGM_EVENT_4 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠鈴鹿御前
+そりゃあ落ちるしかないっしょ。[r]そこのマフィア、縄とか[#梯子:はしご]とか持ってる？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0]
+[charaFadein D 0.1 2]
+＠エミヤ・オルタ
+……ウインチ用のワイヤーなら錬成できる。[r]魔力で延長できるが、できて５kmが限度だぞ。
+[k]
+
+[charaFace D 0]
+＠鈴鹿御前
+ギリギリってところか。[r]じゃあマフィアはここに残ってワイヤー係、かしこまり？
+[k]
+
+[charaFace B 0]
+＠エミヤ・オルタ
+引き上げ役か。[r]おまえたちは下に降りるのか？
+[k]
+
+＠鈴鹿御前
+[%1]と私が降りるわ。
+[k]
+
+[charaFace D 1]
+＠鈴鹿御前
+パッションリップは……うん、悪いけどアウトっしょ！[r]ワイヤー切れちゃうし！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠パッションリップ
+いま体重的なコトを指摘された気がしますーぅ！[r]でも事実なので仕方ありませーん……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠鈴鹿御前
+バカネコは……はあ。アナタもここで待機ね。[r]さっきの無茶な呪術でボロボロなの見抜いてるし。
+[k]
+
+＠鈴鹿御前
+マフィアには護衛も必要でしょ。[r]おとなしくここで待ってるコト。かしこまり？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠タマモキャット
+む、ぐ……かしこまった。悲しいが真実なのだな。[r]ご主人、帰りを待っているぞ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠鈴鹿御前
+じゃ、そーいうコトで行こっか、[r][%1]。
+[k]
+
+＠鈴鹿御前
+メルトリリスはアナタのサーヴァントなんでしょ？[r]なら、マスターとしてきっちり面倒みないとね！
+[k]
+
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_4 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

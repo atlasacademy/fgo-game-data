@@ -1,0 +1,250 @@
+
+＄94-01-56-52-1-0
+
+
+
+[soundStopAll]
+
+
+
+[messageOff]
+
+
+[branch _PlayEffect_1st PM4 1]
+
+
+[label _PlayEffect_etc]
+
+[tapSkip _from_TapSkip_etc]
+
+[scene 10001]
+
+[effectPause bit_talk_goal2_2]
+[wait effectStart bit_talk_goal2_2]
+
+[fadein white 0.5]
+[wait fade]
+
+[effectStart bit_talk_goal2_2]
+[wait effect bit_talk_goal2_2]
+
+[label _from_TapSkip_etc]
+
+[effectDestroy bit_talk_goal2_2]
+[fadein black 0]
+[wait fade]
+
+[branch _PlayEffect_End]
+
+
+[label _PlayEffect_1st]
+
+[bgm BGM_EVENT_3 0.1]
+
+[tapSkip _from_TapSkip_1st]
+
+[effectPause bit_talk_winner2_2]
+[wait effectStart bit_talk_winner2_2]
+
+[scene 10001]
+
+[fadein white 0.5]
+[wait fade]
+
+[effectStart bit_talk_winner2_2]
+
+[bgmStop BGM_EVENT_3 3.7]
+
+[wt 3.9]
+[se ad251]
+[seVolume ad251 0 0.7]
+
+[wt 0.6]
+
+[voice 402600_0_M780]
+
+[scene 10000]
+
+[wait effect bit_talk_winner2_2]
+[wt 1.4]
+
+[label _from_TapSkip_1st]
+
+[voiceStop]
+[scene 10000]
+[effectDestroy bit_talk_winner2_2]
+[fadein black 0]
+[wait fade]
+
+
+[label _PlayEffect_End]
+
+[branch _PlayVoice_Start PM4 1]
+
+[branch _PlayVoice_End]
+
+
+
+
+[label _PlayVoice_Start]
+
+[charaSet A 1031001 1 フラン]
+[charaSet B 2023000 1 プロフェッサーＭ]
+[charaSet C 5011001 1 バベッジ]
+
+[bgm BGM_EVENT_64 0.1]
+
+[scene 45201 1.0]
+[wt 1.0]
+
+[flagRandom _PlayVoiceNo 1 3]
+
+
+[branch _PlayVoice_3rd _PlayVoiceNo 3]
+[branch _PlayVoice_2nd _PlayVoiceNo 2]
+[branch _PlayVoice_1st _PlayVoiceNo 1]
+
+
+
+[label _PlayVoice_1st]
+
+[charaTalk B]
+[charaFace A 0]
+[charaFace B 1]
+[charaDepth A 9]
+[charaDepth B 1]
+[charaFadein A 0.4 2]
+[charaFadein B 0.4 0]
+[wt 0.7]
+
+＠プロフェッサーＭ
+[tVoice ChrVoice_9010001 0_M700]
+下水管を通って這いずり回るのは、[r]我々ヴィランにとってのロマンだねえ。[wait tVoice]
+[k]
+
+[charaFace A 7]
+＠フラン
+[tVoice ChrVoice_9010001 0_M701]
+わたしたちヴィランでもないぞー。[r]ヴィランなのはぱぱだけだぞー。[wait tVoice]
+[k]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_2nd]
+
+[charaTalk B]
+[charaFace A 0]
+[charaFace B 1]
+[charaFace C 0]
+[charaDepth A 9]
+[charaDepth B 1]
+[charaDepth C 1]
+[charaFadein A 0.4 1]
+[charaFadein B 0.4 -288,0]
+[charaFadein C 0.4 302,0]
+[wt 0.7]
+
+＠プロフェッサーＭ
+[tVoice ChrVoice_9010001 0_M710]
+そこで私はこう言ってやったのさ！　[wait tVoice]
+[k]
+[tVoice ChrVoice_9010001 0_M711]
+[charaFace B 2]
+『見ろよ、あの肉体を！　まるで鋼のようだぜ！』[wt 4.0][charaFace B 0]ってね！[wait tVoice]
+[k]
+
+
+＠バベッジ
+[tVoice ChrVoice_9010001 0_M712]
+待て。話がまるで落ちていない。[wait tVoice]
+[k]
+
+[charaFace B 1]
+＠プロフェッサーＭ
+[tVoice ChrVoice_9010001 0_M713]
+よく言うだろう、[wt 1.7][charaFace B 0]続きは劇場版で、とね。[wait tVoice]
+[k]
+
+[charaFace A 2]
+＠フラン
+[tVoice ChrVoice_9010001 0_M714]
+ウゥゥ……しごとしろふたりともー！[wait tVoice]
+[k]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_3rd]
+
+[charaTalk B]
+[charaFace A 0]
+[charaFace B 3]
+[charaFace C 0]
+[charaDepth A 9]
+[charaDepth B 1]
+[charaDepth C 1]
+[charaFadein A 0.4 1]
+[charaFadein B 0.4 -288,0]
+[charaFadein C 0.4 302,0]
+[wt 0.7]
+
+＠プロフェッサーＭ
+[tVoice ChrVoice_9010001 0_M800]
+うおっ！　腰、腰が！　奇妙な音を立てた！　[wait tVoice]
+[k]
+[tVoice ChrVoice_9010001 0_M722]
+[charaFace B 4]
+フランちゃん、ちょっと整体よろしく！[wait tVoice]
+[k]
+
+[charaFace A 8]
+＠フラン
+[tVoice ChrVoice_9010001 0_M723]
+おっけー、ぱぱ！[wait tVoice]
+[k]
+
+
+[charaFace C 4]
+＠バベッジ
+[tVoice ChrVoice_9010001 0_M724]
+回避を推奨するプロフェッサー。メイスでの整体は危険極まる。[wait tVoice]
+[k]
+
+
+
+[label _PlayVoice_End]
+
+
+[messageOff]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_64 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

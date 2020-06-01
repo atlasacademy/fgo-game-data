@@ -1,0 +1,284 @@
+
+＄03-00-05-06-3-0
+
+[soundStopAll]
+
+[charaSet A 98002000 1 フォウ]
+[charaSet B 2038000 1 オリオン]
+[charaSet C 6038002 1 シャルロット・コルデー]
+[charaSet D 98006000 1 魔獣]
+[sceneSet E 84700 1]
+
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+
+[scene 10000]
+
+[fadein black 1.5]
+[wait fade]
+
+
+＠フォウ
+フォウ、フォウ！
+[k]
+
+[messageOff]
+[se ad102]
+[wt 0.4]
+[se ad102]
+[wt 0.8]
+
+？1：はいはい、起きまーす
+？2：フォウくん、乗っからないでー……
+？！
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[charaScale A 1.2]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-30]
+
+[scene 20800]
+[wt 1.0]
+
+[wipein openEye 1.0 1.0]
+[wait wipe]
+
+[se adm21]
+[charaMoveReturn A 0,70 1.0]
+[wt 1.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale A 1.0]
+
+[bgm BGM_EVENT_112 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠オリオン
+お、起きたか。[r]それじゃあ出発する、今日中には到着するはずだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+おはようございます。[r][%1]さん。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠オリオン
+干し肉があるぜー、食っとけ食っとけ。
+[k]
+
+？1：いただきまーす！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠フォウ
+フォウフォウ。
+[k]
+
+？1：はいはい、フォウくんも
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠オリオン
+肉食か、そいつ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠フォウ
+フォウ、フォウ！
+[k]
+
+？1：何でも食べるゾって言ってます
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠オリオン
+はっはっは、元気で何より。[wt 1.0][charaFace B 4][r]……非常食じゃなかったのか……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 3]
+[charaDepth A 4]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 4]
+[charaFadein B 0.1 -100,0]
+[charaFadein A 0.1 306,0]
+
+＠フォウ
+フォーウ！
+[k]
+
+[messageOff]
+
+[charaTalk off]
+
+
+
+[se ad102]
+[charaMoveReturn A 100,0 0.3]
+[wt 0.2]
+[charaFace B 9]
+[wt 0.1]
+
+[se ad102]
+[charaMoveReturn A 100,0 0.3]
+[wt 0.8]
+
+[charaTalk on]
+＠オリオン
+あいて、あいて！[r]悪かった悪かった！
+[k]
+
+[charaFace B 0]
+＠オリオン
+まあ、どちらにせよ食い出はなさそうだ！[r]食いながらで悪いが出発するぞ！
+[k]
+
+[messageOff]
+[wt 0.5]
+[se ad527]
+[wt 0.1]
+[se ad173]
+[wipeout leftToRight 1.0 1]
+[bgm BGM_EVENT_112 1.5 0.4]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+
+[scene 84700]
+
+[charaScale E 1.5]
+[charaFadein E 0.1 30,-200]
+[wt 1.0]
+[bgm BGM_EVENT_112 1.5 1.0]
+[wipein rightToLeft 1.0 1]
+[seStop ad527 1.0]
+[seStop ad173 1.0]
+
+[charaMove E 130,-200 5.0]
+[wait wipe]
+
+[wt 3.0]
+[charaFadeout E 1.0]
+[wt 2.0]
+
+
+？1：あそこの機械みたいなものは？
+？2：巨大な何かがあるけど……
+？！
+
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠オリオン
+あそこが[#村]だ。[r]とりあえずの目的地だな。
+[k]
+
+？1：村……？
+？！
+
+＠オリオン
+ここいらには、一万年以上前の戦争で[r]落ちてきた『神の残骸』がある。
+[k]
+
+[charaFace B 1]
+＠オリオン
+……おっと、何がなんだかわからないって[r]顔だな。ははははは、すぐにわかるさ！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_112 0.5]
+[charaFadeout B 0.1]
+[wt 0.8]
+
+[se ad564]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.7 1]
+[wt 2.6]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠オリオン
+って訳でコイツが最後の魔獣だ。[r]折角だ、どーんと支援頼まぁ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠シャルロット・コルデー
+……っ。
+[k]
+
+[charaFace C 2]
+＠シャルロット・コルデー
+ちょっと頭に痛みが走りましたが、[r]大丈夫です！
+[k]
+
+＠シャルロット・コルデー
+足を引っ張らないよう、[r]がんばりますので！
+[k]
+
+？1：了解！
+？！
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

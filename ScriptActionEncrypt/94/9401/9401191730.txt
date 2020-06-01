@@ -1,0 +1,169 @@
+
+＄94-01-19-17-3-0
+[soundStopAll]
+[charaSet A 1030000 1 鈴鹿御前]
+[charaSet B 7016001 1 タマモキャット]
+[charaSet C 10002000 1 メルトリリス]
+[charaSet D 10001000 1 パッションリップ]
+[charaSet E 98113300 1 魔神柱]
+[charaSet F 98017000 1 エフェクト用魔神柱]
+
+[charaSet G 98017000 1 エフェクト用ダミー]
+[charaSet H 98017000 1 エフェクト用ダミー]
+
+[scene 41000]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.4 1]
+＠メルトリリス
+[line 3]！[r]違うわ、これは……！
+[k]
+
+[messageOff]
+[se ad59]
+[charaMove C 0,24 0.8]
+[charaMoveScale C 1.1 0.8]
+[charaShake C 0.01 0 2 0.8]
+[wt 0.4]
+[seStop ad59 0.4]
+
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[wt 0.4]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+[bgm BGM_EVENT_24 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[shake 0.05 0 5 2.0]
+[se ad14]
+[wt 2.0]
+[charaFadeout E 0.1]
+[seStop ad14 0.4]
+[messageOff]
+[cameraMove 0.1 0,0 2.0]
+[cameraRollMove 0.7 180]
+[se ad85]
+[wt 0.4]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[cameraRoll 0]
+[cameraHome 0.1]
+[wt 0.1]
+[scene 41010]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+
+＠メルトリリス
+[%1]！
+[k]
+
+[messageOff]
+[wipeout unGuruguru 0.4 1]
+[wait wipe]
+[se ad73]
+[scene 41000]
+[wt 0.4]
+[se ad7]
+[wipein unGuruguru 0.4 1]
+[shake 0.01 0 5 0.4]
+[wait wipe]
+[wt 0.7]
+？1：……助かった！
+？2：ありがとう、メルトリ[line 3]
+
+？！
+
+[messageOff]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.2]
+[charaEffect G bit_talk_hikari01]
+[se bac73]
+[wt 0.7]
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_hikari01]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[charaEffect H bit_talk_goltail01]
+[se bac74]
+[wt 0.7]
+[charaEffectStop H bit_talk_goltail01]
+[charaShake C 0.01 0 5 0.5]
+[se ad161]
+[wt 0.4]
+
+[charaFace C 5]
+＠メルトリリス
+っ[line 3]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 2000,2000]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠パッションリップ
+メルト……！？[r]だめ、落ちていく……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠タマモキャット
+落ちる者に追い打ちとは小癪な……！[r]スズカ、この下はどうなっている！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+＠鈴鹿御前
+SE.RA.PHの最下層、廃棄場！[r]でもその前にコイツっしょ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠魔神柱
+Huuuuuuuuuuuuu………………[r]Huuuuuuuuuuuu[line 7]！！！
+[k]
+
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠パッションリップ
+ひゅ[line 4]、じゃないですっ！[r][#喋:しゃべ]れないのなら黙っていてください！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,853 @@
+
+
+
+＄94-04-77-49-3-1
+
+
+[soundStopAll]
+
+[skip false]
+
+[maskout black 0]
+[wait mask]
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 25005000 1 ボイジャー]
+[charaSet C 1098192920 1 アマデウス]
+[charaSet D 1098192800 1 マリー]
+[charaSet E 5025001 1 エジソン]
+[charaSet F 2031001 1 ナポレオン]
+[charaSet G 2016000 1 エミヤ・オルタ]
+[charaSet H 98111500 1 ダ・ヴィンチ]
+[charaSet I 1098124510 1 ダ・ヴィンチ（騎）]
+[charaSet J 98115000 1 通信用]
+[charaSet K 1098196200 1 ？？？]
+[imageSet L cut171_token_209 1]
+[charaSet M 98115000 1 エフェクト用]
+[charaSet N 98115000 1 エフェクト用]
+
+[scene 50001]
+
+[pictureFrameTop cut170_gameframe_dark]
+
+[bgm BGM_EVENT_3 0.1]
+
+[skip true]
+
+[fadein black 0]
+[wait fade]
+[maskin black 1.0]
+[wait mask]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 0,-50]
+＠？？？
+ご[messageShake 0.05 5 5 0.3]あああ……！
+[k]
+
+[messageOff]
+[se ad216]
+[fadeout white 1.0]
+[bgm BGM_EVENT_3 1.0 0.5]
+[wait fade]
+
+[charaFadeout K 0.1]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-50]
+
+[fadein white 1.0]
+[bgm BGM_EVENT_3 1.0 1.0]
+[seStop ad216 1.0]
+[wait fade]
+
+[wt 1.2]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠マシュ
+『人狼』の姿が……変化しました！
+[k]
+
+？1：やはり……！
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 19]
+[charaFadein C 0.1 0,-50]
+＠アマデウス
+くっ……くははははははは！[r]そうさ、やっぱりこの僕が黒幕さ！
+[k]
+
+＠アマデウス
+[%1]君が[r]挑戦に乗ってくれたおかげで[line 3]
+[k]
+
+＠アマデウス
+たっぷり楽しませてもらったよ！
+[k]
+
+[messageOff]
+[fadeout black 0.2]
+[bgmStop BGM_EVENT_3 0.2]
+[wait fade]
+
+[charaFadeout C 0.1]
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad28]
+[seStop ad28 0.5]
+[effect bit_talk_throwing 0,0 V]
+[se bac17]
+[wt 0.5]
+
+[fadeout black 0.2]
+[wait fade]
+
+[scene 50001]
+
+[charaTalk C]
+[charaFace C 19]
+[charaFadein C 0.1 0,-50]
+[wt 0.1]
+
+[fadein black 0.2]
+[wait fade]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth M 2]
+[charaDepth C 1]
+[charaPut M 1]
+
+[se ad240]
+[charaEffect M bit_talk_35]
+[charaFace C 2]
+[charaShake C 0.05 4 4 0.5]
+[wt 0.7]
+
+＠アマデウス
+ぐ[messageShake 0.05 4 4 0.2]はっ！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 0,-50]
+＠マリー
+見苦しいわよ、狼さん。おとなしくお逝きなさいな。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+[wt 0.5]
+
+[charaTalk depthOff]
+[charaDepth M 2]
+[charaDepth L 3]
+[charaDepth C 1]
+
+[se ade432]
+
+[charaEffect C bit_talk_token_change01]
+[wt 1.0]
+
+[se ad641]
+[seStop ad641 1.0]
+[charaChange C 1098192900 22 fade 0.7]
+[wait charaChange C]
+[wt 0.2]
+
+
+＠アマデウス
+マリア、おおマリア！　最高の幕切れだよ……！[r]僕の[#騙り:げいじゅつ]は、これで完成したんだ！
+[k]
+
+[messageOff]
+[charaEffectStop C bit_talk_token_change01]
+[charaPut M 0,-10]
+[charaEffect M bit_talk_token_change02]
+[se ad39]
+[wt 3.2]
+
+[se ad29]
+[seStop ad29 1.5]
+[wt 0.5]
+[charaFadeout C 0.4]
+
+[charaEffectStop M bit_talk_token_change02]
+[charaFadein L 0.4 0,-210]
+[wt 2.0]
+
+[charaEffectDestroy M bit_talk_token_change02]
+[charaFadeout L 0.1]
+[wt 0.1]
+[seStop ade432 0.5]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-50]
+
+＠マシュ
+マリーさん！[bgm BGM_EVENT_77 0.1][r]エジソンさんとナポレオンさんも……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠エジソン
+見届けさせてもらったよ。[r]やはり、彼が『人狼』だったか！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+＠ナポレオン
+待てよ。残りひとり、『狂信者』はどうなった？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+＠マリー
+確かもうひとり、行方をくらましたはずだけど……[r]その方が怪しいんじゃないかしら。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+＠マシュ
+ファントムさんなら、さっき……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+＠エジソン
+むう。すべては闇の彼方か……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+＠マリー
+[#裁定者:ル ー ラ ー]も去った今、ゲームの判定を行う者は、[r]わたしたちプレイヤー自身しかいないわね。
+[k]
+
+[charaFace D 0]
+＠マリー
+どうかしら？[r]これで[#決着:クリア]……だと思いませんこと？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 0,-50]
+＠ナポレオン
+ああ。よかろうよ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,-50]
+＠エジソン
+異存はない！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.3]
+
+[se ad216]
+[maskout white 0.5]
+[wait mask]
+
+[pictureFrameTop]
+[wt 0.1]
+
+[maskin white 1.0]
+[seStop ad216 1.0]
+[wait mask]
+[wt 0.4]
+
+[fowardEffect bit_talk_gamefinish]
+[se ade445]
+[wt 6.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠ボイジャー
+これで、やっとエリセをさがしにいけるね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠マリー
+いかがかしら、[%1]？[r]よかったら、わたしも旅の道連れにしてくださらない？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+マリーさんも……ですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠マリー
+わたし、まだ遊び足りないの。[r]あなたたちとなら、もっと刺激的なゲームに出会えそう。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth D 2]
+[charaDepth B 1]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFace B 4]
+[charaFadein D 0.1 0]
+[charaFadein B 0.1 300,0]
+[wt 0.1]
+[charaMove B 380,0 1.4]
+[wt 1.6]
+
+[charaTalk on]
+＠ボイジャー
+……。
+[k]
+
+[charaFace D 1]
+＠マリー
+あら？　どうしたの、かわいい旅人さん？
+[k]
+
+[charaFace B 12]
+＠ボイジャー
+……。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+先輩、ボイジャーさんの様子が……？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+？1：緊張してるのかな
+
+？2：何か気になるの？
+
+？！
+
+＠ボイジャー
+……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠マリー
+すぐに慣れるわ。わたし、子どもは大好きよ。[r][#穢:けが]れがなくて美しいんですもの。
+[k]
+
+＠マリー
+ねえ[%1]、[r]わたし、一緒に行ってもいいでしょう？
+[k]
+
+？1：もちろん
+
+？2：お望みでしたら
+
+？！
+
+[charaFace D 1]
+＠マリー
+ふふっ。ありがとう♪[r]ヴィヴ・ラ・モンド・ドゥ・ジュ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠マシュ
+……そこでやはり気がかりなのは、[r]トークンの扱いですが……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠ナポレオン
+おまえさんたちは旅を続けるんだろう？[r]なら連れてってやれよ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠エジソン
+ふむ。今はまだ謎めいた[#物質:マテリアル]に過ぎないが、[r]思わぬ利用法が見つかるかもしれないからね。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaPut M -250,400]
+[charaPut N 250,400]
+
+[charaEffect M bit_talk_token_change02]
+[charaEffect N bit_talk_token_change02]
+
+[charaMove M -150,0 2.0]
+[charaMove N 150,0 2.0]
+[se adm19]
+[seVolume adm19 0 0.3]
+[seVolume adm19 1.0 1.0]
+[wt 2.0]
+
+[wt 1.5]
+[seStop adm19 1.0]
+[wt 2.4]
+[charaEffectDestroy M bit_talk_token_change02]
+[charaEffectDestroy N bit_talk_token_change02]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ジャンヌさんが預かっておられたトークンの皆さんが、[r]先輩の手元へやってきました。
+[k]
+
+＠マシュ
+ですが、ナーサリーさんは……。
+[k]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ボイジャー
+[#げえむ]に、ちょっとつかれたみたい。[r]おやすみしたいって。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ナポレオン
+なら、オレが預かっておこう。[r]遊び相手ぐらいにはなれるだろうさ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠エミヤ・オルタ
+見ろ。道が開けたぞ。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad606]
+[effect bit_talk_warp_starry_sky]
+[wt 1.5]
+[seStop ad606 1.0]
+[wt 1.0]
+
+
+＠エミヤ・オルタ
+次の[#勝負:ゲーム]へ続く線路だ。
+[k]
+
+[messageOff]
+[wt 0.3]
+
+[se ad75]
+[se ade406]
+[seVolume ade406 0 0.4]
+
+[cameraMove 1.2 0,0 1.5]
+[wt 0.1]
+[wipeout circleIn 1.0 0.7]
+[bgmStop BGM_EVENT_2 1.0]
+[wait wipe]
+
+[seStop ade406 1.0]
+[effectDestroy bit_talk_warp_starry_sky]
+[cameraHome 0.1]
+[scene 10000]
+[wt 1.5]
+
+[wipein circleOut 0.1 0.7]
+[wait wipe]
+
+[fadeout white 1.5]
+[wait fade]
+
+[scene 95800]
+
+[se ade430]
+[seStop ade430 1.8]
+[wt 2.0]
+
+[fadein white 1.5]
+[se ade431]
+[seVolume ade431 0 0.1]
+[seVolume ade431 1.5 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[seStop ade431 1.5]
+[wt 0.5]
+
+
+[charaPut J 0,0]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+＠I：ダ・ヴィンチ
+やっと繋がったね！　連絡が取れないから心配したよ。[bgm BGM_EVENT_2 0.1][r]いったいどうしてたんだい？
+[k]
+
+[charaFadeout I 0.1]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 0,-90]
+＠ダ・ヴィンチ
+やっと繋がったね！　連絡が取れないから心配したよ。[bgm BGM_EVENT_2 0.1][r]いったいどうしてたんだい？
+[k]
+
+[charaFadeout H 0.1]
+
+[label lblConf1]
+
+
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠マシュ
+ゲームをしてました。長い長いゲームを。[r]まるで悪い夢のような。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ボイジャー
+ぼくたち、ゆめからさめたのかな……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠エミヤ・オルタ
+夢でも[#実相:うつつ]でも、たいした違いはない。[r]オレたちが意志か、でなければ執着を持つ限りはな。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠エジソン
+うむ！　いずれにせよ鉄路は続き、我々を運んでゆく。[r]次の[#戦場:ゲーム]へと……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠ボイジャー
+ぼく、はやくエリセにあいたいよ。[r]それが、ぼくのねがいさ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠マリー
+わたしもぜひ会いたいわ。[r]エリセさんって、素敵な人なんでしょうね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠ボイジャー
+……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 1]
+＠I：ダ・ヴィンチ
+そういえば、ナーサリー・ライムはどうしたんだい？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ナーサリーさんは……[r]トークンになってしまいました。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk I]
+[charaFace I 22]
+[charaFadein I 0.1 1]
+＠I：ダ・ヴィンチ
+なんだって？　どういうこと？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠マリー
+ナーサリー・ライムは気の毒だったけれど、[r]代わりにわたしが加わりましたの。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk I]
+[charaFace I 25]
+[charaFadein I 0.1 1]
+
+＠I：ダ・ヴィンチ
+どうやら大変だったようだね。[r]詳しく聞かせてもらえるかい？
+[k]
+
+
+[branch lblConf2]
+[label lblNotClear2]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-90]
+＠ダ・ヴィンチ
+そういえば、ナーサリー・ライムはどうしたんだい？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ナーサリーさんは……[r]トークンになってしまいました。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 0,-90]
+＠ダ・ヴィンチ
+なんだって？　どういうこと？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠マリー
+ナーサリー・ライムは気の毒だったけれど、[r]代わりにわたしが加わりましたの。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 0,-90]
+
+＠ダ・ヴィンチ
+どうやら大変だったようだね。[r]詳しく聞かせてもらえるかい？
+[k]
+
+
+[label lblConf2]
+
+
+？1：……うん。次の駅まで、その時間はありそうだ[&:ね]
+
+？！
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

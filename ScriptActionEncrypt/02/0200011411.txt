@@ -1,0 +1,685 @@
+
+＄02-00-01-14-1-1
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 98111500 1 ダ・ヴィンチ]
+[charaSet C 98111500 1 通信用ノイズ]
+[charaSet D 1002001 1 アルトリア・オルタ]
+[charaSet E 98086000 1 ホームズ]
+[charaSet F 98110800 1 ヘシアン]
+[charaSet G 11005002 1 新宿のアヴェンジャー]
+[charaSet H 98109810 1 カヴァス二世（ぼやけ）]
+
+[charaScale H 0.85]
+
+
+[soundStopAll]
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 38500]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut C 1]
+[charaEffect C bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wt 0.3]
+＠マシュ
+ヘシアン・ロボ……魔力が急激に減衰していきます。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0 0,-90]
+＠ダ・ヴィンチ
+やったか！？[r]やったよね！？
+[k]
+
+？1：フラグっぽい台詞だ……
+
+[charaFace B 0]
+＠ダ・ヴィンチ
+私もそう思うが、[r]モニターしている以上、確信があるからね！
+[k]
+
+？2：まだやってない！
+
+＠ダ・ヴィンチ
+いいや、やったさ！
+[k]
+
+＠ダ・ヴィンチ
+だってこちらでは、もうアヴェンジャーは消滅領域に[r]到達しているからね。
+[k]
+
+[charaFace B 0]
+＠ダ・ヴィンチ
+もう間もなく、彼らは消えて逝くだろう。
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[charaPut C 1200,1200]
+[charaEffectStop C bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠アルトリア・オルタ
+ああ。[r]最早、逃げるために必要な魔力すらも尽きたはずだ。
+[k]
+
+[charaFace D 5]
+＠アルトリア・オルタ
+だが[line 3]。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 2.0]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.7 0,-32]
+[charaMove G 1 0.7]
+[charaShake G 0.05 4 0 0.7]
+[wt 1.0]
+
+[voice 1100500_0_H070]
+[shake 0.05 4 4 0.4]
+[wt 2.7]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_5 0.1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠アルトリア・オルタ
+貴様を突き動かしているのは、憎悪か復讐か。[r]……その苦しみを肩代わりすることは、誰にもできない。
+[k]
+
+[charaFace D 0]
+＠アルトリア・オルタ
+その苦しみは貴様に還ってきた応報であり、[r]それこそが貴様にとっての喜びに他ならない。
+[k]
+
+[charaFace D 4]
+＠アルトリア・オルタ
+だが、もういいだろう。[r][line 3]さらばだ、狼王。
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_5 2.0]
+[charaFadeout D 0.7]
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 5]
+[charaDepth G 1]
+[charaFadein G 0.1]
+[shake 0.05 4 0 0.7]
+
+[wt 0.7]
+[se ad171]
+[wt 0.3]
+
+[se ad170]
+[effect bit_bolg_03]
+[charaFadeout G 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaDepth F 9]
+[charaFadein F 0.1]
+[wt 1.0]
+
+[scene 38500]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠アルトリア・オルタ
+何……！？
+[k]
+
+
+[charaSet G 98111200 1 狼王ロボ（単体）]
+
+[charaFace D 5]
+＠アルトリア・オルタ
+邪魔をするな、[#首無し騎士:デュラハン]……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1]
+
+[se ad209]
+[wt 1.4]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_3 0.4]
+[wt 0.7]
+[bgm BGM_EVENT_5 0.1]
+
+[charaPut C 1]
+[charaEffect C bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0 1]
+[wt 0.3]
+＠マシュ
+え……？
+[k]
+
+？1：武器を……捨てた？
+？！
+
+[charaFadeout A 0.1]
+[charaPut C 1200,1200]
+[charaEffectStop C bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠アルトリア・オルタ
+……何の……つもりだ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut C 1]
+[charaEffect C bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0 1]
+[wt 0.3]
+＠マシュ
+両手を広げて……。[r]そんな、でも、これは……。
+[k]
+
+？1：庇っている……？
+
+[charaFadeout A 0.1]
+[charaPut C 1200,1200]
+[charaEffectStop C bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠アルトリア・オルタ
+そこを退け、さもなくば武器を取れ。[r]無抵抗とて、容赦せぬぞ。
+[k]
+
+？2：ロボを守ろうとしている……？
+
+＠マシュ
+は、はい。[r]わたしにもそう見えます……。
+[k]
+
+[charaFadeout A 0.1]
+[charaPut C 1200,1200]
+[charaEffectStop C bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+？！
+
+＠アルトリア・オルタ
+さあ、退け！[r]貴様、それでもサーヴァントか！
+[k]
+
+
+[se bac127]
+
+[charaFace D 5]
+
+？1：今の音は……！？
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.7 0,-32]
+[charaMove G 1 0.7]
+[charaShake G 0.05 4 0 0.7]
+[wt 1.4]
+
+[se ad340]
+[wt 1.0]
+[charaFadeout G 2.0]
+[seStop ad340 2.0]
+[wt 2.0]
+
+[charaPut C 1]
+[charaEffect C bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0 0,-90]
+[wt 0.3]
+＠ダ・ヴィンチ
+……！[r]ロボが前肢を食い千切って逃げたぞ！
+[k]
+
+
+＠ダ・ヴィンチ
+大丈夫、スピードは遅いから[r]徒歩でも追いつく！
+[k]
+
+[charaFadeout B 0.1]
+[charaPut C 1200,1200]
+[charaEffectStop C bit_talk_10_LowLevel]
+[wt 0.3]
+
+[messageOff]
+
+[charaTalk D]
+[charaFace D 2]
+[charaDepth D 9]
+[charaFadein D 0.1 0]
+＠アルトリア・オルタ
+待[line 3]。
+[k]
+
+[charaTalk E]
+[charaFace E 4]
+[charaDepth E 1]
+[charaFadein E 0.7 2]
+[wt 1.0]
+＠ホームズ
+……ミス・アルトリア。[r]そこまでにしておきましょう。
+[k]
+
+[bgmStop BGM_EVENT_5 0.4]
+[wt 0.7]
+
+[charaFace D 5]
+＠アルトリア・オルタ
+ホームズ、どういうことだ？
+[k]
+
+[bgm BGM_EVENT_6 0.1]
+
+[charaFace E 0]
+＠ホームズ
+行かせてやってください。[r]既に我々の勝利は確定しています。
+[k]
+
+[charaFace E 4]
+＠ホームズ
+ヘシアンも、ロボも、[#もう終わっているのです]。[r]……ならば、最後くらいはしたいようにさせる方がいい。
+[k]
+
+[messageOff]
+
+[charaFadeout D 0.7]
+[se ad95]
+[charaMove E 1 0.7]
+[seStop ad95 2.0]
+[wt 1.0]
+
+[charaFace E 0]
+＠ホームズ
+キミも、乗り手として最後の責任を全うするつもりか。[r]だが、大丈夫だ。
+[k]
+
+[charaFace E 4]
+＠ホームズ
+彼はようやく自由を取り戻したし、[r]キミが責任を負う必要はない。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1]
+[charaEffect F bit_talk_06]
+＠ヘシアン
+……。[r]……。
+[k]
+
+[messageOff]
+
+[bgm BGM_EVENT_6 0.1 0.3]
+[messageOff]
+[charaSpecialEffect F flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect F]
+[charaEffectStop F bit_talk_06]
+[wt 0.3]
+
+[wt 0.7]
+[bgm BGM_EVENT_6 0.1]
+
+？1：そうか……
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠ホームズ
+その通りだよ、[&ミスター:ミス][%1]。[r]狼王は、ようやく一介の獣に戻ったのだ。
+[k]
+
+？2：でも……
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠ホームズ
+……そうだね。[&ミスター:ミス][%1]。
+[k]
+
+＠ホームズ
+キミの懸念している通り、[r]もうあの狼王に還る場所はない。
+[k]
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaPut C 2]
+[charaEffect C bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFadein A 0 2]
+[wt 0.3]
+＠マシュ
+……ロボは、帰りたいのですね。[r]故郷のアメリカへ。あのカランポーの荒野へと[line 3]。
+[k]
+
+[charaFace D 4]
+＠アルトリア・オルタ
+帰る……か。[r]だが、それは無理だ。
+[k]
+
+＠マシュ
+……。[r]……。
+[k]
+
+＠アルトリア・オルタ
+物理的な距離ではない。[r]あれは、あまりに復讐にのめり込み過ぎたのだ。
+[k]
+
+＠アルトリア・オルタ
+いつか帰れるはずの故郷を忘れ、[r]傍に寄り添っていた者たちの顔も忘れ[line 3]。
+[k]
+
+[charaFace D 0]
+＠アルトリア・オルタ
+[#同族の匂いすらも新宿の臭いに塗り潰された]。
+[k]
+
+[charaFace D 4]
+＠アルトリア・オルタ
+だから、故郷があるとだけ記憶していて。[r]どこに辿り着けばいいのかもわかり得ない。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[charaPut C 1200,1200]
+[charaEffectStop C bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠ホームズ
+私たちにできることはもうないよ、[r][&ミスター:ミス][%1]。
+[k]
+
+[charaFace E 0]
+＠ホームズ
+彼の物語は、ここで終わったのだ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠アルトリア・オルタ
+……？[r]む、カヴァスⅡ世はどうした？
+[k]
+
+[messageOff]
+
+
+[bgmStop BGM_EVENT_6 1.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 1.0]
+
+[se ad340]
+
+[scene 38330]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1]
+
+[wt 2.0]
+[seStop ad340 1.0]
+[wt 1.4]
+
+＠
+ごっそりと、何か大切なものが抜けていく。[r][line 3]苦痛よりは喪失の方が大きい。
+[k]
+
+＠
+どうやら自分は、またも敗北したらしい。[r]理由は、あの白い犬を見たせいか。
+[k]
+
+＠
+自分は、なぜあれを見て止まってしまったのだろう？[r]野良犬など、蹴散らすだけの代物なのに。
+[k]
+
+＠
+……そのことを考えると、妙に気分が悪くなる。[r]考えるのを、止めることにした。
+[k]
+
+＠
+前肢を引き千切ったせいで、ろくに走れもしない。[r]あの鋼の馬なら、即座に自分に追いつくだろう。
+[k]
+
+＠
+なのに、そうならないということは……。[r]自分が背中に乗せていた[#あれ]が、奮闘しているのか。
+[k]
+
+＠
+まさか、と自嘲する。[r]自分は彼に一度たりとも心を開かなかった。
+[k]
+
+＠
+ただの道具として扱った以上、[r]彼がそんなことをする義理はない。
+[k]
+
+＠
+ああ、でも。[r]今更、どこへ行けばいいのだろう。
+[k]
+
+＠
+帰りたかった。[r]故郷へと帰りたかった。
+[k]
+
+＠
+でも、もう見えない。[r]思い出せない。匂いすらも分からない。
+[k]
+
+＠
+自分は一体、どこで生きていたのだろう？
+[k]
+
+＠
+大地はもっと、柔らかかったはずだ。[r]草の匂いがしたはずだ。
+[k]
+
+＠
+空には無数の星が輝いていたはずだ。[r]風は心地よいものだったはずだ。
+[k]
+
+＠
+でも、それはただの記憶。[r]五感としての知覚を思い出せない。
+[k]
+
+＠
+柔らかい大地も、草の匂いも、[r]輝く星も、心地よい風も、
+[k]
+
+＠
+確かに味わったはずなのに。[r]もう、何もかも全てを忘れてしまった。
+[k]
+
+＠
+でも、どうしても帰りたい。[r]もう終わったのだから、もう敗北したのだから。
+[k]
+
+
+＠
+帰りたい。[r]帰りたい、帰りたい、帰りたい……！
+[k]
+
+[messageOff]
+
+[wipeout circleIn 1.0 1.0]
+[wait wipe]
+
+[wt 1.0]
+
+[scene 39200]
+
+[wipein circleIn 1.0 1.0]
+[wait wipe]
+
+＠
+[line 3]ああ。
+[k]
+
+＠
+大きな息を、生命と共に吐き出してようやく理解する。
+[k]
+
+＠
+帰るところなど、もうどこにもなかった。[r]否、帰る場所は[#ここでしかない]のだ。
+[k]
+
+＠
+好んで召喚され、好んでこの場所で殺戮した。[r]ここを縄張りとし、遠吠えで人間たちの心胆を震わせた。
+[k]
+
+＠
+この汚れた、人間たちの住まう場所こそが、[r]己の故郷なのだ。
+[k]
+
+
+＠
+だからもう、あの場所には戻れない。[r]自分が捨ててしまったものを、ずっと探していたのだ。
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripDownToUp 2.0 1.0]
+[wait wipe]
+[scene 28302]
+[wt 1.0]
+[wipein rectangleStripUpToDown 2.0 1.0]
+[wait wipe]
+
+[wt 0.4]
+
+[se ad359]
+
+[wt 3.7]
+
+[wipeout rectangleStripUpToDown 2.0 1.0]
+[wait wipe]
+[scene 38330]
+[wt 1.0]
+[wipein rectangleStripDownToUp 2.0 1.0]
+[wait wipe]
+
+[wt 0.4]
+
+[wipeout openEye 4.0 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+[wipein openEye 0.1 1.0]
+[wait wipe]
+[se ad316]
+[wt 1.4]
+
+
+[charaFadeout G 0.1]
+
+[wipeFilter openEye 0.5 1.0]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+[fadein black 0.4]
+[wait fade]
+
+[wt 1.4]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_11 2.0]
+[wait fade]
+
+
+[wt 2.0]
+[messageOff]
+[soundStopAll]
+[end]

@@ -1,0 +1,468 @@
+
+
+＄03-00-04-14-1-0
+
+
+[soundStopAll]
+[skip false]
+
+[charaSet A 1039001 1 ラクシュミー]
+[charaSet B 1019001 1 ラーマ]
+[charaSet C 1098166700 1 アーシャ]
+[charaSet D 1098127610 1 ペペロンチーノ]
+[charaSet E 23003001 1 ガネーシャ]
+[charaSet F 8001410 1 マシュ]
+[charaSet G 1098166900 1 アジャイ]
+[charaSet H 1098167100 1 男]
+[charaSet I 1098167110 1 男]
+[charaSet J 98115000 1 エフェクト用]
+
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[maskin black 1]
+[wait mask]
+
+[se ad761]
+[seVolume ad761 0 0.6]
+[effect bit_talk_yuga_clock_12]
+[wt 2.3]
+[se ad756]
+[wt 3.7]
+
+[fadeout black 1.0]
+[wait fade]
+
+[effectStop bit_talk_yuga_clock_12]
+[effectDestroy bit_talk_yuga_clock_12]
+
+[seStop ad761 1.0]
+[seStop ad756 1.0]
+[wt 0.5]
+[skip true]
+
+[scene 75003]
+
+[se ad5]
+[seVolume ad5 0 0.1]
+[wt 0.1]
+[seVolume ad5 1.5 0.6]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_104 0.1]
+
+
+[charaTalk off]
+
+[charaTalk depthOff]
+
+[charaDepth B 1]
+[charaDepth H 3]
+[charaDepth I 2]
+
+[charaFace B 0]
+[charaFadein B 0.1 2]
+
+[charaFace H 0]
+[charaFadein H 0.1 -320,0]
+
+[charaFace I 0]
+[charaFadein I 0.1 -120,0]
+
+[wt 1.5]
+[seStop ad5 1.0]
+
+？1：調子はどう？
+？！
+
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 1]
+
+＠ラーマ
+うむ、筋は悪くないぞ。農作業や狩りで、[r]それなりに筋肉がついている者も多いしな。
+[k]
+
+＠ラーマ
+さすがにカリを独力で倒すまでには至れまいが、[r]『自らの手で生き延びられる』程度には鍛えられそうだ。
+[k]
+
+[charaFace B 2]
+
+＠ラーマ
+……よし、休憩だ！　各自腹ごしらえも済ませておけ、[r]ただし食い過ぎには注意だぞ！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+
+[charaFace G 0]
+[charaFadein G 0.1 0]
+[wt 0.4]
+
+[se ad133]
+[wt 0.4]
+
+[charaFace C 0]
+[charaFadein C 0.4 300,0]
+[charaMove C 256,0 0.4]
+[wt 0.4]
+[seStop ad133 0.1]
+
+[charaTalk on]
+
+[charaTalk C]
+
+＠アーシャ
+おとうさーん！　おべんとう！
+[k]
+
+[charaFace G 3]
+
+＠アジャイ
+……おう。
+[k]
+
+＠アーシャ
+あのねあのね、今日はわたしも手伝って作ったの！[r]おばさんも褒めてくれたんだよ！　びっくりでしょ！
+[k]
+
+＠アジャイ
+……おう。
+[k]
+
+[charaFace C 4]
+
+＠アーシャ
+それでね、ええと、ええと……[r]おとうさん、覚えてる？　今度、わたしの誕生記念日……
+[k]
+
+[charaFace G 0]
+
+＠アジャイ
+…………。
+[k]
+
+[charaFace C 1]
+
+＠アーシャ
+な、なんでもない！　じゃあね！
+[k]
+
+[messageOff]
+[se ad132]
+[seVolume ad132 0 0.5]
+
+[charaFadeout C 0.4]
+[charaMove C 300,0 0.4]
+[wt 0.7]
+[seStop ad132 0.3]
+[wt 0.4]
+[charaFadeout G 0.1]
+[wt 0.7]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠アーシャ
+あっ、[&おにいちゃん:おねえちゃん]たち！　こんにちは！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠マシュ
+こんにちは、アーシャさん。[r]お弁当を届けに来たんですね？　偉いです。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠アーシャ
+えへへー。
+[k]
+
+？1：町の様子はどう？
+？！
+
+[charaFace C 1]
+
+＠アーシャ
+なんだか最近は新鮮でびっくりだよ！[r]おとうさんも町に長くいるようになったし。
+[k]
+
+[bgmStop BGM_EVENT_104 1.5]
+
+[charaFace C 0]
+
+＠アーシャ
+雰囲気も賑やかで……ううん、その、[wt 0.8][charaFace C 4][r]賑やかじゃないところは静かなんだけど、えっと……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ペペロンチーノ
+町が二分されている、みたいな感じよね。
+[k]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠ペペロンチーノ
+カリとの戦いに応じてくれる人たちは確かに増えたけど、[r]このビーチュの町にいた全員じゃない。
+[k]
+
+＠ペペロンチーノ
+ディーヴァールからの移住者と、それに感化された、[r]カリと戦う事を決めた人たち。
+[k]
+
+＠ペペロンチーノ
+そのグループと、未だ元の教えを捨てない人たちが[r]綺麗に二つに分離しちゃってるのよね……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠ガネーシャ
+遠くからヒソヒソ陰口、とかがなーんか多いっスよね。[r]これからどうなることやら。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠マシュ
+ユガが進行していくにつれ、[r]今後さらにカリの出現頻度が増すはずです。
+[k]
+
+＠マシュ
+わたしたちが戦う姿を見る事で、さらに賛同者が[r]増えていく……と、思いたいところではありますが。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ペペロンチーノ
+アルジュナ[line 3]神の不必要性、不完全性を[r]人々に認めさせて力を削ぐのが最終目的だもの。
+[k]
+
+＠ペペロンチーノ
+どんどん増えてもらわなくちゃ困るわ。
+[k]
+
+＠ペペロンチーノ
+町の半分から町の全部、それから次の町へ……[r]って広がっていくのが理想だけどね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ラクシュミー
+説得ばかりにかまけてもいられんのが難しいな。[r]戦う決意をした者たちには訓練を施さなくてはならん。
+[k]
+
+＠ラクシュミー
+何にしても、目先の被害を[r]これ以上増やすわけにはいかないのだから。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ガネーシャ
+ひとまず吹っ切れた、って感じっスか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ラクシュミー
+……どうだろうな。[r]少なくとも、今すべき事はわかっている。
+[k]
+
+[charaFace A 0]
+
+＠ラクシュミー
+それに、もう一つ。[r]目を逸らすわけにはいかない尺度にも気付いた。
+[k]
+
+[charaFace A 1]
+
+＠ラクシュミー
+既に、先を歩いている者がいるのだ。
+[k]
+
+＠ラクシュミー
+実感はできぬまでも、理解はした。[r]ならば無様に迷ってばかりもいられまい。
+[k]
+
+？1：（こっちを見てる……？）
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaSet C 1098123010 1 ムニエル]
+[charaSet G 1098167600 1 カリ]
+[charaSet H 8001400 1 ゴーグルありマシュ]
+[charaSet I 98115300 1 ホームズ]
+
+[bgmStop BGM_EVENT_70 1.5]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[se ad13]
+[wt 0.2]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ムニエル
+いや、待った、中止！[r]ひとまず訓練は中止にしたほうがよさそうだぞ！
+[k]
+
+＠ムニエル
+町の外から接近してくる反応がある。[r]数は複数[line 3]カリだ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+
+＠ホームズ
+既に今は[#第三のユガ:ドヴァーパラ・ユガ]最終日だ。[r]彼らも身体は温まっているという事だろう。……来るぞ！
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[wt 0.5]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.5]
+
+[se ad727]
+[wt 1.1]
+[seStop ad727 0.3]
+[wt 0.5]
+
+[wt 0.6]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠ラーマ
+来たか。戦う準備ができている者は立ち向かえ！[r]だが生き残る事が最優先だ、けっして無理はするな！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠マシュ
+はい、正面に立つのはわたしたちが。[r]一緒に戦うことには何の問題もないはずです。
+[k]
+
+＠マシュ
+[#霊基外骨骼:オ　ル　テ　ナ　ウ　ス]、戦闘モードで高速起動[line 3][r]システムチェック、全て問題なし！
+[k]
+
+[messageOff]
+
+[charaTalk off]
+
+[charaTalk depthOff]
+
+[charaDepth H 2]
+[charaDepth F 1]
+
+[se ade57]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+
+[charaFace H 7]
+[charaFadein H 0.4 1]
+[wt 1.0]
+
+[charaFace H 2]
+
+＠マシュ
+できるだけこちらで引きつけて処理したいと思います。[r]ご指示をお願いします、マスター！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[charaTalk on]
+[soundStopAll]
+[end]

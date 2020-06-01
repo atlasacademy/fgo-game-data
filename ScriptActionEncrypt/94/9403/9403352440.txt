@@ -1,0 +1,109 @@
+
+＄94-03-35-24-4-0
+
+[charaSet A 3008000 1 エルキドゥ]
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+
+[scene 10400]
+
+[fadein black 2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+＠エルキドゥ
+[tVoice ValVoice_300800 0_V190]
+ごめんなさい、マスター。[r]呼ばれてもいないのに来てしまって。[wait tVoice]
+[k]
+
+＠エルキドゥ
+[tVoice ValVoice_300800 0_V200]
+……その。何が原因でこうなったのか、[r]自分では解析できなかったのだけど[line 3][wait tVoice]
+[k]
+
+[charaFace A 5]
+＠エルキドゥ
+[tVoice ValVoice_300800 0_V210]
+今、どうしても貴方に贈り物をしたくて。[r]できなければ、自分で自分を壊してしまいたい程に。[wait tVoice]
+[k]
+
+[charaFace A 2]
+＠エルキドゥ
+[tVoice ValVoice_300800 0_V220]
+ああ、でも理由もなく贈り物をされる、なんて理不尽を、[r]マスターが耐えられる筈もないのも分かるんだ。[wait tVoice]
+[k]
+
+＠エルキドゥ
+[tVoice ValVoice_300800 0_V230]
+だからどうか、嫌なら嫌と断ってほしい。[r]廊下に出て自爆するだけの事だから。[wait tVoice]
+[k]
+
+？1：え、いや、なんで！？
+？2：落ち着こう。そして落ち着こう
+
+？！
+
+[charaFace A 3]
+＠エルキドゥ
+[tVoice ValVoice_300800 0_V240]
+良かった。嫌ではないんだね？[r]ならどうか、この花を受け取って。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[equipSet B 9805320 1 ]
+[wait equipSet B]
+[charaFace B 0]
+[charaFadein B 0.5 0,-70]
+[wt 2.0]
+[charaFadeout B 0.4]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠エルキドゥ
+[tVoice ValVoice_300800 0_V250]
+派手さはないけれど、心を温かくするものだ。[r]とにかく今日は、君にこれを貰ってほしかった。[wait tVoice]
+[k]
+
+＠エルキドゥ
+[tVoice ValVoice_300800 0_V260]
+……うん。胸に灯る情熱の具現……なのかも。[r]敬意の計りが規定値を超えてしまったのかもしれないね。[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠エルキドゥ
+[tVoice ValVoice_300800 0_V270]
+その花は部屋に置いてくれているだけでいい。[r]それじゃ、僕はこれで。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠エルキドゥ
+[tVoice ValVoice_300800 0_V280]
+善き一日を、[%1]。[r]働きすぎて眼を回す事のないように、ね。[wait tVoice]
+[k]
+
+
+
+
+
+[messageOff]
+[fadeout black 1]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,776 @@
+
+＄03-00-05-30-3-1
+
+
+
+[soundStopAll]
+
+[charaSet A 2030002 1 ケイローン]
+[charaSet B 1038000 1 イアソン]
+[charaSet C 1098158310 1 ネモ]
+[charaSet D 9005001 1 ホームズ]
+[charaSet E 8001410 1 マシュ]
+[charaSet F 1038000 1 イアソン（シルエット）]
+[charaFilter F silhouette 00000080]
+[charaSet G 1098184610 1 イアソン]
+[sceneSet H 10001 1]
+[charaScale H 1.01]
+[charaSet I 98115000 1 エフェクト用ダミー]
+[charaSet J 98115000 1 エフェクト用ダミー]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+
+[bgm BGM_EVENT_24 0.1]
+[wt 0.5]
+
+[se ad831]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 86601]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[se ad609]
+[shake 0.02 3 3 1.0]
+[effect bit_talk_explosion 50,-100]
+
+[se ad805]
+[seVolume ad805 0 0.2]
+[se ade188]
+[seVolume ade188 0 0.2]
+[se ad767]
+[seVolume ad767 0 0.2]
+[wt 2.0]
+
+[seStop ad805 1.0]
+[seStop ade188 1.0]
+[seStop ad767 1.0]
+
+[se ad609]
+[shake 0.02 3 3 0.4]
+[charaPut I -50,20]
+[charaEffect I bit_talk_explosion]
+[wt 1.2]
+
+[se ad609]
+[shake 0.02 3 3 0.4]
+[effect bit_talk_explosion 320,-40]
+[wt 0.4]
+
+[se ad609]
+[shake 0.02 3 3 1.2]
+[fowardEffect bit_talk_explosion -400,160]
+[wt 2.0]
+
+
+＠[9bb9ff]アナウンス[-]
+[9bb9ff]再起動[line 3]不可[-][r][9bb9ff]標的抹殺[line 3]不可[-]
+[k]
+
+[messageOff]
+[se ad61]
+[wt 0.8]
+
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[se ade36]
+[se ad813]
+[wt 0.8]
+
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[se ad823]
+[wt 0.3]
+
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[se ade36]
+[se ad813]
+[wt 0.8]
+
+[seStop ad61 2.0]
+
+＠[9bb9ff]アナウンス[-]
+[9bb9ff]論理ユニット　崩壊[-][r][9bb9ff]火器管制システム　９９％　破壊[-]
+[k]
+
+＠[9bb9ff]アナウンス[-]
+[9bb9ff]再起動[line 3]再起動[line 3]再起動[line 3][-][r][9bb9ff]systemerror再起動errorシステムパージ不可[-]
+[k]
+
+[se ad31]
+[seVolume ad31 0 0]
+＠[9bb9ff]アナウンス[-]
+[9bb9ff]バックアップシステム作動[line 3]不可[seVolume ad31 0.6 0.6][-][r][9bb9ff]フランシス・ドレイク喪失[-]
+[k]
+
+＠[9bb9ff]アナウンス[-]
+[9bb9ff]感情ユニットの倫理論理セーフティ崩壊救難信号オリュン[-][r][9bb9ff]ポスに向けて送信error各ユニット崩壊率９０％オーバー[-]
+[k]
+
+＠[9bb9ff]アナウンス[-]
+[9bb9ff]ユニット連結システムerror頭脳ユニット過剰負荷による[seVolume ad31 0 0][-][r][9bb9ff]フリーズ６１８秒経過機体完全崩壊まで残り時間１００秒[seVolume ad31 0 1.0][-]
+[k]
+
+[seVolume ad31 0 0]
+＠[9bb9ff]アナウンス[-]
+[9bb9ff]……おお、おおお……おのれカルデア、おのれ人間、[seVolume ad31 0 1.0][-][r][9bb9ff]おのれ汎人類史……！[wt 0.2][seVolume ad31 0 0][wt 0.1][seVolume ad31 0 1.0][-]
+[k]
+
+＠[9bb9ff]アナウンス[-]
+[9bb9ff]機体……崩壊……完全停止まで……残り……[-][r][9bb9ff]嫌だ……滅ぶものか……神が滅ぶものか滅ぶものか……！[-]
+[k]
+
+
+[messageOff]
+[seStop ad831 5.0]
+[bgmStop BGM_EVENT_24 0.8]
+[seStop ad31 1.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_75 0.1]
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+＠イアソン
+大混乱中だな。[r]こりゃ、もう終わりか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠[9bb9ff]アナウンス[-]
+[9bb9ff]記憶ユニット[#検索:サーチ]、[-]
+[k]
+
+[messageOff]
+[charaPut A 1]
+[charaEffect A bit_talk_06]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 1.5]
+
+＠ケイローン
+……ここまでか……。
+[k]
+
+＠ケイローン
+なぜ……敗北したのだろう……。[r]いや、なぜ……あなたがたは勝てたのだろう……。
+[k]
+
+＠ケイローン
+勝機は無かったはずだ。[r]兵士の数は上回っていたはずだ……。
+[k]
+
+＠ケイローン
+質を考慮に入れても……[r]負けるはずが……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk B]
+[charaFace B 19]
+[charaFadein B 0.1 1]
+＠イアソン
+まあ、そうだろうな。
+[k]
+
+[charaFace B 10]
+＠イアソン
+他はどうか知らんが、今回はヘラクレスなら[r]一騎で済むケルベロス相手に……。
+[k]
+
+＠イアソン
+総出でかからなければ倒せない程度の、[r]サーヴァントだった。
+[k]
+
+＠イアソン
+アキレウスも[#踵:かかと]を射貫かれていたしな。
+[k]
+
+＠イアソン
+真っ当な戦力ったら[r]オリオンくらいだったか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut A 1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠ケイローン
+では、何故……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠イアソン
+その疑問への明瞭な解答など、[r]存在しないぜ、ケイローン。
+[k]
+
+＠イアソン
+ここにはただ、意志があった。
+[k]
+
+[charaFace B 0]
+＠イアソン
+[#負けないという強い意志があり]、[r][#最後まで諦めないと誓って走り抜けた]。
+[k]
+
+＠イアソン
+比べると貴様たちは、どこどこまでも[r]余裕があった。
+[k]
+
+＠イアソン
+いずれ来る別の敵への予習でも[r]していたのか？
+[k]
+
+＠イアソン
+そして何より、[#自分たちは神の側にいる][r]という安心感[line 3]
+[k]
+
+＠イアソン
+それが、貴様たちの最大の隙だった。[r]オレはそう思うぞ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut A 1]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠ケイローン
+……納得はいかないが……。[r]一つの意見として……参考にしましょうか……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠イアソン
+負けず嫌いは相変わらずだな！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_75 1.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad14]
+[shake 0.02 3 3 0]
+[wt 1.4]
+
+[se ad629]
+[seVolume ad629 0 0]
+[seVolume ad629 1.0 1.0]
+[wt 1.4]
+
+[seStop ad629 0.4]
+[se ad731]
+[shake 0.03 4 4 1.4]
+[wt 2.0]
+
+[seStop ad14 1.0]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠ホームズ
+さあ、早く！[r]ネモから通信が入った！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ネモ
+見事な作戦内容だった、前線のみんな。[r]その奮戦を[#讃:たた]えよう。
+[k]
+
+[charaFace C 5]
+＠ネモ
+でも、喜ぶのは後だ。
+[k]
+
+＠ネモ
+予想通り、コアを全て破壊したことにより[r]船体の崩壊が始まっている。
+[k]
+
+＠ネモ
+ただちにストーム・ボーダーに帰投せよ。[r]こちらも限界まで艦を維持する。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠マシュ
+りょ、了解です！[r]マスター、急ぎましょう！
+[k]
+
+＠マシュ
+イアソンさんも！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_82 0.8]
+[charaFadeout E 0.1]
+[wt 1.0]
+
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+＠イアソン
+ん？　ああ、いや。[r]オレはここで構わん。っつーか疲れた。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+＠マシュ
+[line 6]。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+[wt 0.8]
+
+？1：……いいの？
+？！
+
+[bgm BGM_EVENT_78 0.1]
+[charaFace B 8]
+＠イアソン
+……おう。[r]次会うときは、こんな場所で[#喚:よ]ぶんじゃねえぞ！
+[k]
+
+[charaFace B 21]
+＠イアソン
+あーもう疲れた！[r]あーもう二度とやらねー！
+[k]
+
+＠イアソン
+ほら、さっさと行け！[r]ひとりっきりで存分に休ませろ！
+[k]
+
+？1：イアソン！
+？！
+
+[charaFace B 5]
+＠イアソン
+あん？
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,-10 1.1]
+[wt 0.2]
+[charaShake B 0.02 2 2 0.4]
+[se ad183]
+[wt 0.5]
+[charaFace B 3]
+[wt 0.8]
+[charaFace B 21]
+
+＠イアソン
+……苦しいんだが。[r]っつーかモタモタするなよ。
+[k]
+
+？1：ありがとう！
+？！
+
+[charaFace B 21]
+＠イアソン
+鬱陶しい、賛美の声なんざ聞き飽きてる。[r]シッシッ。
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,0 1.01]
+[wt 0.8]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠マシュ
+イアソンさ[line 3][wt 0.5][charaFace E 6]マスター？
+[k]
+
+[messageOff]
+[wt 0.1]
+[se ad215]
+[charaShake E 0.02 3 3 0.4]
+[wt 1.0]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+？1：いつかまた！！
+？！
+
+[messageOff]
+[wt 0.1]
+
+[se ad184]
+[se ad668]
+[wt 1.2]
+
+[fadeout black 1.5]
+[seStop ad184 1.5]
+[seStop ad668 1.5]
+[bgmStop BGM_EVENT_78 1.5]
+[wait fade]
+
+[charaEffectStop J bit_talk_10_LowLevel]
+[charaEffectStop A bit_talk_06]
+
+[charaEffect J bit_talk_06]
+
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 0,-50]
+
+[pictureFrame cut063_cinema]
+
+[wt 1.5]
+
+[se ad831]
+[seVolume ad831 0 0.1]
+[seVolume ad831 1.5 1.0]
+[fadein black 1.5]
+[wait fade]
+
+＠イアソン
+……。[r]……。
+[k]
+
+[messageOff]
+[wt 0.8]
+
+
+[charaTalk off]
+[charaDepth B 4]
+[charaDepth G 5]
+[charaDepth F 6]
+
+[se ad193]
+[charaFace F 0]
+[charaFadein F 0.7 0,-50]
+[wt 0.7]
+
+[charaFace G 23]
+[charaFadein G 0.4 0,-50]
+[wt 0.4]
+
+[charaFadeout B 0.4]
+[wt 0.6]
+
+[charaFadeout F 0.7]
+[wt 1.1]
+
+[charaTalk on]
+[charaFace G 4]
+＠G：イアソン
+あー……………………。[r]死ぬかと、思った。
+[k]
+
+
+[messageOff]
+[seStop ad831 5.0]
+[wt 0.1]
+
+[charaFadeout G 0.4]
+[charaMove G 0,-100 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.2]
+
+[bgm BGM_EVENT_95 0.1]
+
+[charaPut J 0,-100]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 0,-50]
+＠ケイローン
+……ふっ。
+[k]
+
+＠ケイローン
+まさか……私と同じ、[r]いえ、私以上の死に体だったとは。
+[k]
+
+[charaFace A 0]
+＠ケイローン
+どうやって誤魔化していたのです？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 3]
+
+[charaTalk G]
+[charaFace G 19]
+[charaFace A 0]
+[charaFadein G 0.1 256,-50]
+[charaFadein A 0.1 -256,-50]
+＠G：イアソン
+どこぞの馬鹿女が、役に立たんお守りを[r]送りつけてきてな。
+[k]
+
+＠G：イアソン
+ただ見た目を繕い、誤魔化すだけの礼装だ。[r]……まあ、存外役に立ったわ。
+[k]
+
+
+[charaTalk A]
+[charaFace A 0]
+＠ケイローン
+策を弄するときも、それを？
+[k]
+
+
+[charaTalk G]
+[charaFace G 18]
+＠G：イアソン
+お陰でオレ様は、連中にはさぞ優秀な策士に[r]見えただろうよ。
+[k]
+
+[charaFace G 23]
+＠G：イアソン
+実際には冷や汗死ぬ程かいてて、[r]気持ち悪いくらいだったけどな。
+[k]
+
+[charaTalk A]
+[charaFace A 3]
+＠ケイローン
+……なるほど。[r]面白い。
+[k]
+
+[charaFace A 0]
+＠ケイローン
+神に頼らぬ英雄とは、そこまで見栄を[r]張らなくてはならないのですか。
+[k]
+
+
+[charaTalk G]
+[charaFace G 21]
+＠G：イアソン
+うるせえ、さっさと死んでおけ。
+[k]
+
+
+[charaTalk A]
+[charaFace A 0]
+＠ケイローン
+いや……死ぬほど苦しいが、[r]私は既に敗北した身。
+[k]
+
+＠ケイローン
+汎人類史では教え子であるはずのあなたに、[r]教えを乞うというのも、消滅前の一興でしょう。
+[k]
+
+
+[charaTalk G]
+[charaFace G 0]
+＠G：イアソン
+面白い冗談だ……まったく。
+[k]
+
+
+[charaTalk A]
+[charaFace A 4]
+＠ケイローン
+神のいない世界、[r]それが私には信じられない。
+[k]
+
+＠ケイローン
+人間は、生きていけるのですか？
+[k]
+
+
+[charaTalk G]
+[charaFace G 6]
+＠G：イアソン
+人間が神なしで生きていくための知恵を、[r]おまえは授けまくってたんだよ。
+[k]
+
+[charaFace G 4]
+＠G：イアソン
+……まあ、生前の時点で半分以上は[r]忘れていたんだが。
+[k]
+
+
+[charaTalk A]
+[charaFace A 3]
+＠ケイローン
+生き方が違いすぎますね。
+[k]
+
+
+[charaTalk G]
+[charaFace G 19]
+＠G：イアソン
+まったくだ。[r]ああ、でも[line 3]
+[k]
+
+[charaFace G 24]
+＠G：イアソン
+お互い、どうやら後悔はしないようだ。[r]そうじゃないか？
+[k]
+
+
+[charaTalk A]
+[charaFace A 1]
+＠ケイローン
+かも……しれ……ませんね。
+[k]
+
+[charaFace A 3]
+＠ケイローン
+ああ……そういえば……。[r]……。
+[k]
+
+[messageOff]
+
+[se ad831]
+[seVolume ad831 0 0.1]
+[seVolume ad831 1.5 1.0]
+
+[charaFadeout A 0.4]
+[charaFadeout G 0.4]
+[wt 0.6]
+
+
+＠イアソン
+……。[r]……。
+[k]
+
+＠ケイローン
+……。[r]……。
+[k]
+
+
+
+[messageOff]
+[se ad14]
+[shake 0.02 3 3 0]
+[wt 1.2]
+
+[fadeout black 2.0]
+[wait fade]
+
+[pictureFrame]
+[charaEffectStop J bit_talk_06]
+[se ad528]
+[scene 10000]
+[wt 1.0]
+
+[seStop ad831 2.0]
+[fadein black 1.0]
+[wait fade]
+
+[se ad609]
+[seVolume ad609 0 0.6]
+[wt 1.0]
+
+[se ad609]
+[wt 2.0]
+
+[fadeout black 2.0]
+[seStop ad14 2.0]
+[bgmStop BGM_EVENT_95 2.0]
+[wait fade]
+
+[scene 10000]
+[skip false]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout H 0.1]
+
+[soundStopAllFade 0.4]
+
+[sceneSet H 10001 1]
+[charaScale H 1.01]
+
+[charaPut J 1200,1200]
+[charaPut I 1200,1200]
+
+[scene 10000]
+[wt 0.4]
+[soundStopAll]
+[maskin black 1]
+[wait mask]
+[label selectBranch]
+
+[charaTalk H]
+[skip false]
+[fadein black 1.0]
+[wait fade]
+[charaFadein H 0.1 0,-1200]
+[charaMove H 1 5.0]
+
+[criMovie talk_mov042]
+
+[fadeout white 1.0]
+[wait fade]
+[soundStopAll]
+[end white]

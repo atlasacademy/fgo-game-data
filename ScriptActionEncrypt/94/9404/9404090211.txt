@@ -1,0 +1,749 @@
+
+
+＄94-04-09-02-1-1
+
+[soundStopAll]
+[bgm BGM_EVENT_24 0.1]
+[charaSet A 98001000 1 マシュ]
+[charaSet B 1006000 1 ネロ]
+[charaSet C 2002001 1 ギルガメッシュ]
+[charaSet D 1098179100 1 Ｓイシュタル]
+[charaSet E 1098122400 1 エフェクト用]
+
+
+[branchQuestNotClear lblFlagNotClear 3000303]
+[label lblFlagClear]
+[flag IsClear true]
+[branch lblFlagConf]
+[label lblFlagNotClear]
+[flag IsClear false]
+[label lblFlagConf]
+
+[scene 64400]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[wt 0.4]
+
+[charaEffect C bit_talk_kengekiall02]
+[wt 0.2]
+[se ad32]
+[charaShake C 0.04 2 2 1.0]
+[wt 0.2]
+[se ad170]
+[wt 0.4]
+[se ad686]
+[fowardEffect bit_talk_14]
+[wt 1.0]
+
+[charaFace C 8]
+＠ギルガメッシュ
+どうした、その程度か！[r]それなりに堪えるがまったく効かぬわ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠ネロ・ブライド
+ぬう、なんというやせ我慢！[r]着実に追い詰められておきながら、あの風格……
+[k]
+
+＠ネロ・ブライド
+あの男、『自分が勝つまで止めないから最強』系の[r]王に違いない！　余もよく分かる！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ギルガメッシュ
+ふっ。さすがはかつて無限ガッツで名をはせた王者よ。[r]だがそれは過去の話、もはや貴様に出番はないわ！
+[k]
+
+[messageOff]
+[se ad39]
+[flashin once 0.4 1.0 FFFFFFAF FFFFFF00]
+[charaBackEffect C bit_talk_charge_aura]
+[wt 0.4]
+[se ad153]
+[seVolume ad153 0 0]
+[seVolume ad153 1.0 0.4]
+[wt 0.5]
+[seStop ad39 1.0]
+[wt 1.0]
+
+？1：まずい……！
+？2：宝具がくる……！
+
+？！
+
+[charaFace C 2]
+＠ギルガメッシュ
+万策尽きたというのなら後は裁定を与えるのみ。[r]我が乖離剣の前に優勝ベルトは返してもらおう！
+[k]
+
+＠ギルガメッシュ
+わかりきった結果ではあるが、[r]やはり[#我:オレ]の勝利となったか！
+[k]
+
+[charaFace C 6]
+＠ギルガメッシュ
+ふはは、この地上の！　何処に！[r][#我:ワレ]を倒せる者がいるという！
+[k]
+
+＠ギルガメッシュ
+『我を倒せるものはいるか！』[r]『我を倒せるものはいるか！』
+[k]
+
+
+＠ギルガメッシュ
+そぅれ、あと一回言ってやろう！
+[k]
+
+＠ギルガメッシュ
+[font large]『我を倒せるものはいるか！』
+[k]
+
+[bgmStop BGM_EVENT_24 1.0]
+
+[messageOff]
+[charaEffect C bit_talk_thunderbolt]
+[se ad626]
+[wt 0.1]
+[charaFace C 5]
+[seStop ad153 0.1]
+[charaBackEffectDestroy C bit_talk_charge_aura]
+[charaShake C 0.05 5 5 2.0]
+[wt 0.3]
+[wt 0.2]
+[se ad226]
+[seVolume ad226 0 0.6]
+[seStop ad626 1.0]
+[wt 1.0]
+[charaEffectStop C bit_talk_thunderbolt]
+
+[charaFace C 2]
+＠ギルガメッシュ
+ぐわああああああああああああああああーーー！！！！？
+[k]
+
+[messageOff]
+[charaMove C 0,-10 0.4]
+[charaFadeout C 0.4]
+[wt 0.3]
+[se ad144]
+[wait charaEffect C bit_talk_thunderbolt]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠マシュ
+ギルガメッシュ王ーーーーー！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠ネロ・ブライド
+何事か！？　いま天空より明確な敵意をもって、[r]稲妻のようなものが英雄王に炸裂したが！？
+[k]
+
+＠ギルガメッシュ
+ぐ、う……おお……[r]背後からではなく、頭上からの爆撃とは……
+[k]
+
+＠ギルガメッシュ
+だが、どのような手段を用いた……？[r]摩天楼を制した[#我:オレ]より、さらに上を取るなどと……
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ade350]
+[seVolume ade350 0 0]
+[seVolume ade350 2.0 0.4]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠マシュ
+この音は一体……？[r]空から聞こえてくるようですが……
+[k]
+
+＠D：？？？
+ふふふふ……うふふふふ……
+[k]
+
+＠D：？？？
+あーーーはっはっはっは！[r]グッドイブニング、凡百の英霊さんたち！
+[k]
+
+＠D：？？？
+そしてお楽しみのところ邪魔をしたかしら、[r]無様に倒れている地球の金ピカ英雄王サマ！
+[k]
+
+？1：（……あれ、この声……？）
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠ネロ・ブライド
+上だ、[%1]！[r]空を見よ！
+[k]
+
+[messageOff]
+[seStop ade350 0.7]
+[wipeout rectangleStripUpToDown 0.4 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[scene 82600]
+[se ad14]
+[seVolume ad14 0 0]
+[seVolume ad14 0.7 0.7]
+[wt 0.3]
+[wipein rectangleStripDownToUp 0.4 1]
+[wait wipe]
+
+[wt 0.5]
+[se ade31]
+[seVolume ade31 0 0]
+[seVolume ade31 0.4 1.0]
+[wt 2.5]
+
+[seStop ad14 0.7]
+[wipeout rectangleStripDownToUp 0.4 1]
+[wait wipe]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[scene 64400]
+[wt 0.3]
+[wipein rectangleStripUpToDown 0.4 1]
+[wait wipe]
+
+＠マシュ
+[line 3]はい？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ネロ・ブライド
+[line 3]なんと？
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.3 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[scene 28302]
+[wt 0.1]
+[wipein rectangleStripDownToUp 0.3 1]
+[wait wipe]
+
+[wt 0.7]
+
+[charaPut E 1]
+[charaEffect E bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad1]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+＠？？？
+えー、テステス。[r][#精神干渉:マ　　イ　　ク]チューンどう？　合ってる？　オッケー、合ってる！
+[k]
+
+＠D：？？？
+[line 3]オホン。[r]心して聞くがいい、地球の生命たちよ。
+[k]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠D：？？？
+唐突だが、この都市は私が占拠した。[r]おまえたちの衣食住はすべて我が手に落ちた。
+[k]
+
+＠D：？？？
+私は蒼輝銀河の支配者にして、[r]はじまりの星域からやってきた金星の女神。
+[k]
+
+＠D：？？？
+その名を、スペース・イシュタル！
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.3 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[charaPut E 1200,1200]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[scene 64400]
+[wt 0.1]
+[wipein rectangleStripUpToDown 0.3 1]
+[wait wipe]
+
+＠マシュ
+スペース。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ネロ・ブライド
+イシュタル。
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.3 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaPut E 1]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+[scene 28302]
+[wt 0.1]
+[wipein rectangleStripDownToUp 0.3 1]
+[wait wipe]
+
+＠Ｓイシュタル
+“この[#惑星:ほし]で最強の英霊を決定する[line 3]”
+[k]
+
+＠Ｓイシュタル
+そんなコトを言われて、黙っていられる私だと思った？
+[k]
+
+＠Ｓイシュタル
+最強の英霊は言うまでもなくこの私。[r]それを今から思い知らせてあげましょう。
+[k]
+
+＠Ｓイシュタル
+さあ、行きなさいミニ・マアンナ！
+[k]
+
+＠Ｓイシュタル
+地球制圧の手始めに、[r]この都市を根こそぎ宝石に変えるのよ！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.4]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+
+[effect bit_talk_fly_light 0,50]
+[se ade90]
+[seVolume ade90 0 0.2]
+[wt 0.4]
+[se ade351]
+[seVolume ade351 0 0]
+[seVolume ade351 1.5 0.3]
+[wt 2.5]
+[effect bit_talk_diremond_dust]
+[wt 1.0]
+
+[seStop ade351 0.7]
+[wipeout rectangleStripDownToUp 0.3 1]
+[wait wipe]
+[effectDestroy bit_talk_fly_light]
+[effectDestroy bit_talk_diremond_dust]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[scene 64400]
+[wt 0.1]
+[wipein rectangleStripUpToDown 0.3 1]
+[wait wipe]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠マシュ
+り、理解が追いつきませんが、巨大宇宙船から[r]次々と小型宇宙船のようなものが発進しています！
+[k]
+
+＠マシュ
+小型宇宙船、謎の光線をニューヨークのいたるところに[line 3][r]マスター！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad213]
+[seVolume ad213 0 0]
+[seVolume ad213 1.0 0.2]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠ネロ・ブライド
+あぶない、[%1]！
+[k]
+
+[messageOff]
+[charaMoveScale B 1.1 0.2]
+[charaMove B 0,10 0.2]
+[charaFadeout B 0.2]
+[wt 0.15]
+[se ad7]
+[shake 0.03 3 3 0.4]
+[wt 0.3]
+[seStop ad213 0.4]
+[wt 0.1]
+
+[wipeout rectangleStripRightToLeft 0.2 1]
+[wait wipe]
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.1]
+[se ad213]
+[seVolume ad213 0 0]
+[seVolume ad213 0.4 0.7]
+[wipein rectangleStripLeftToRight 0.2 1]
+[wait wipe]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.1]
+[charaEffect B bit_talk_30]
+[wt 0.6]
+[seStop ad213 0.4]
+[se ad488]
+[charaEffectStop B bit_talk_30]
+[charaEffect B bit_talk_magical_pon]
+[wt 0.1]
+[charaFadeout B 0.1]
+[bgm BGM_EVENT_24 1.5 0.4]
+[wt 1.5]
+
+[charaEffect B bit_talk_blight_02]
+[se ad216]
+[wt 1.5]
+
+[charaEffect B bit_talk_blight_01]
+[charaAttack B normal 0,512 3.0]
+[wt 1.0]
+[wt 2.5]
+[charaEffectStop B bit_talk_blight_02]
+[charaEffectStop B bit_talk_blight_01]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+ネロ陛下……ネロ陛下が宝石になって、[r]巨大宇宙船に飛んでいってしまいました！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.3 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaPut E 1]
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+[scene 28302]
+[wt 0.1]
+[bgm BGM_EVENT_24 0.3 1.0]
+[wipein rectangleStripDownToUp 0.3 1]
+[wait wipe]
+
+＠Ｓイシュタル
+ふふ。この通り、逆らうものは容赦なく[r]コレクションになってもらうわ。
+[k]
+
+＠Ｓイシュタル
+大会中、この都市にはこっそり女神粒子を散布させ、[r]すでに私の領地として神殿に登録しました。
+[k]
+
+＠Ｓイシュタル
+ミーム汚染は完了済みよ。[r]その言語、嗜好、感性、すべてが私（のもの）になる。
+[k]
+
+＠Ｓイシュタル
+美しいものは美しいものとして私のものに。[r]醜いものは醜いものとして私のものになるでしょう。
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.3 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[charaPut E 1200,1200]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[scene 64400]
+[wt 0.1]
+[wipein rectangleStripUpToDown 0.3 1]
+[wait wipe]
+
+＠マシュ
+あ、はい。[r]えーと……どういう事、でしょう？
+[k]
+
+？1：つまり、ぜんぶ貰っていく、という事だよ
+
+？！
+
+[charaFace A 7]
+＠マシュ
+なるほど。[r]では、あれは間違いなくイシュタルさんです！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.4 0,-10]
+[charaShake C 0.04 3 3 0.4]
+[charaMove C 0,0 0.4]
+[wt 0.2]
+＠ギルガメッシュ
+おの、れ……スペース・イシュタル、だと……！
+[k]
+
+＠ギルガメッシュ
+どこの駄女神だか知りたくもないが、[r]奇襲をかけておいて最強とは片腹痛いわ！
+[k]
+
+＠ギルガメッシュ
+降りてこい、イシュタル！[r]最強を語るのなら[#正々堂々:せいせいどうどう]と戦ぇい！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.3 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[charaPut E 1]
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+[scene 28302]
+[wt 0.1]
+[wipein rectangleStripDownToUp 0.3 1]
+[wait wipe]
+
+＠Ｓイシュタル
+うそ、マアンナの天罰砲を受けて生きてるの！？[r]宝石にも羊にもなってないとか、どんだけ我が強いワケ？
+[k]
+
+[charaFace D 7]
+＠Ｓイシュタル
+でもおあいにく様、女神である私がわざわざ[r]下々の者と戦う筈がないでしょう？
+[k]
+
+＠Ｓイシュタル
+私はあくまで地球観光にきた女神ですので♡[r]暇つぶしにアナタたちで遊ぼうと思っただけ。
+[k]
+
+[charaFace D 6]
+＠Ｓイシュタル
+でも……そうね。[r]遊びなら、とことん遊びでチャンスをあげるわ。
+[k]
+
+＠Ｓイシュタル
+アナタたちの武闘大会、ちょっと面白かったし。[r]私も同じコトをしてあげましょう。
+[k]
+
+
+＠Ｓイシュタル
+私が運営する大会で優勝した者にだけ、[r]その功績をたたえて私と戦う機会をあげる。
+[k]
+
+＠Ｓイシュタル
+私が負けたら地球を去る。[r]誰も私に勝てなかったら『マスター』を貰う。
+[k]
+
+＠Ｓイシュタル
+宇宙古代神話にも秘された伝説の財宝『マスター』。[r]この星にあるんでしょ？　知ってるんだから。
+[k]
+
+[charaFace D 10]
+＠Ｓイシュタル
+どこをスキャンしても伝説にあるほどの[r]高エネルギー体は発見できなかったけど、
+[k]
+
+＠Ｓイシュタル
+アナタたちが星ぐるみで隠しているのよね？[r]それをおとなしく引き渡してもらうわ。
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.3 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[charaPut E 1200,1200]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[scene 64400]
+[wt 0.1]
+[wipein rectangleStripUpToDown 0.3 1]
+[wait wipe]
+
+＠マシュ
+マスター……をですか？[r]ですが、あの……
+[k]
+
+？1：気づかない……フリをするんだ……
+？2：よし。いつも通り、なにか勘違いをしている
+
+？！
+
+[charaFace A 3]
+＠マシュ
+（そ、そうですね……[r]　『マスター』と口にするのは避けるとして、）
+[k]
+
+[charaFace A 7]
+＠マシュ
+ですが同じコトをする、とおっしゃいましたが、[r]その宇宙船の中で戦うのでしょうか？
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.3 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaPut E 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[scene 28302]
+[wt 0.1]
+[wipein rectangleStripDownToUp 0.3 1]
+[wait wipe]
+
+＠Ｓイシュタル
+いいえ、ゲームは地上で行います。[r]あるものを使う方が無駄がなくていいでしょう？
+[k]
+
+[charaFace D 1]
+＠Ｓイシュタル
+そこの英雄王が用意した運営システム、スタッフ……[r]まるっとブン捕らせてもらったわ。
+[k]
+
+＠ギルガメッシュ
+な、んだ、と……！[r]『まるっと』とは、まさか売り上げもか！？
+[k]
+
+＠Ｓイシュタル
+とーうぜん☆　交換所の売り上げも[#軟派羊:ドゥムジ]も[r]優勝賞品の聖杯？　ってヤツもぜーんぶ私のもの。
+[k]
+
+＠Ｓイシュタル
+[#因果応報:いんがおうほう]、人にやったコトは自分に返ってくるものよ。[r]英雄王にはごめんなさいね～☆
+[k]
+
+＠ギルガメッシュ
+[#我:オレ]は売り上げまで横取りしてはおらぬわっ！[r]あくまで企画を押収したのであってだな、
+[k]
+
+[charaFace D 5]
+＠Ｓイシュタル
+はい、宣告は以上よ。[r]私は冷酷な女神ですが、一方的な侵略はいたしません。
+[k]
+
+[charaFace D 6]
+＠Ｓイシュタル
+ニューヨークを取り戻したければ、[r]勝ち残って私の膝元までやってくるコトね。
+[k]
+
+＠Ｓイシュタル
+期待しているわ、地球の英霊さんたち。
+[k]
+
+[charaFace D 10]
+＠Ｓイシュタル
+それはそれとして、ちゃんと『マスター』を[r]差し出す準備はしておくよーに！　じゃあね！
+[k]
+
+[messageOff]
+[charaFadeout D 0.4]
+[wt 0.3]
+[se ad1]
+[wt 0.1]
+[charaPut E 1200,1200]
+[charaEffectStop E bit_talk_10_LowLevel]
+[bgmStop BGM_EVENT_24 0.7]
+[wt 1.5]
+
+[wipeout rectangleStripDownToUp 0.5 1]
+[wait wipe]
+[scene 64400]
+[wt 0.4]
+[wipein rectangleStripUpToDown 0.5 1]
+[wait wipe]
+
+[wt 2.0]
+
+[fadeout black 1.5]
+[wait fade]
+
+[branch lblNotClear IsClear false]
+[scene 66700]
+[branch lblConf]
+[label lblNotClear]
+[scene 60300]
+[label lblConf]
+
+[wt 2.0]
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.0]
+
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠ギルガメッシュ
+お[line 3]、[r]お[line 3]、
+[k]
+
+
+＠ギルガメッシュ
+おのれイーーシューーターーールーーー！[messageShake 0.05 5 5 1.2][r]スペースとはなんだ、スペースとはーーー！
+[k]
+
+
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+[wt 0.4]
+[soundStopAll]
+[end]

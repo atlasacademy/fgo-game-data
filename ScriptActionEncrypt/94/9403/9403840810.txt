@@ -1,0 +1,374 @@
+
+
+＄94-03-84-08-1-0
+
+[soundStopAll]
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 3038000 1 長尾景虎]
+[charaSet C 7035001 1 森長可]
+[charaSet D 1098173410 1 柴田勝家]
+[charaSet E 1098172200 1 足軽_銃兵]
+[charaSet F 1098172100 1 足軽_弓兵]
+
+[scene 79000]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠家老マシュ
+大変です[#先輩:との]！　カルデア家の領地に[r]何者かが攻め込んできているとの知らせが！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠長尾景虎
+ちょうど三方に軍を配したこの機にですか……。[r]手薄になったこの本陣を狙ってでしょうか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠森長可
+皆殺しにしちまえば一緒だろ！[r]殿様、さっさとぶち殺しに行こうぜ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠長尾景虎
+まあ、たしかにそれはそうですが……、[r]ところでマシュ、敵軍の規模はいかほどです？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠家老マシュ
+そ、それがですね。[r]報告ではたった一人、と……。
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_3 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 10000]
+[skip false]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[bgmStop BGM_EVENT_3 0.4]
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 3038000 1 長尾景虎]
+[charaSet C 7035001 1 森長可]
+[charaSet D 1098173410 1 柴田勝家]
+[charaSet E 1098172200 1 足軽_銃兵]
+[charaSet F 1098172100 1 足軽_弓兵]
+
+[wt 0.4]
+[soundStopAll]
+[maskout black 1.0]
+[wait mask]
+[scene 10000]
+[wt 0.1]
+[maskin black 0.1]
+[wait mask]
+[label selectBranch]
+
+
+
+[revivalBranch lblNormal lblRevival]
+[label lblNormal]
+
+[fowardEffect bit_queststart80250]
+[wait fowardEffect]
+
+[branch lblConf]
+[label lblRevival]
+
+[fowardEffect bit_queststart80286]
+[wait fowardEffect]
+
+[label lblConf]
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 79900]
+[wt 1.5]
+
+[skip true]
+
+[fadein black 1.0]
+[se ad16]
+[seVolume ad16 0 0.1]
+[seVolume ad16 1.0 1.0]
+[wait fade]
+
+[seVolume ad16 1.0 0.4]
+[wt 1.5]
+
+[se ad624]
+[shake 0.03 4 4 0.6]
+[wt 1.2]
+
+[shake 0.03 4 4 0.6]
+[wt 0.4]
+
+[seStop ad16 1.0]
+[wt 0.5]
+
+[shake 0.03 4 4 0.6]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 1.0]
+
+[seStop ad624 0.1]
+
+＠柴田勝家
+カカレェ……、カカレェイ……！[bgm BGM_EVENT_24 0.1]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[flashin once 0.2 0.1 FFFFFFAF FFFFFF00]
+[se bac21]
+[wt 0.2]
+[flashin once 0.2 0.1 FFFFFFAF FFFFFF00]
+[se bac21]
+[wt 0.25]
+[flashin once 0.2 0.1 FFFFFFAF FFFFFF00]
+[se bac21]
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠E：カルデア家足軽
+だ、ダメだ！？　まるで止まらねぇぞ！？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[fowardEffect bit_shot_01 0,75]
+[se bac20]
+[wt 0.3]
+[se bac20]
+[wt 0.5]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠F：カルデア家足軽
+鉄砲も矢も効かねぇしどうなってんだこりゃあ！？[fowardEffectDestroy bit_shot_01]
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ad7]
+[se ad60]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 50,0]
+[charaMove B 1 0.2]
+[wt 0.2]
+[seStop ad60]
+[wt 0.2]
+
+＠長尾景虎
+皆は下がりなさい、あとは我々が引き受けます！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠家老マシュ
+足軽の皆さんはこちらに！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠カルデア家足軽
+は、はい！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFace F 0]
+[charaFadein E 0.1 0]
+[charaFadein F 0.1 2]
+[wt 0.3]
+
+[se ad443]
+[seStop ad443 1.2]
+[se ad55]
+[seStop ad55 1.2]
+
+[charaMove E -206,0 0.5]
+[charaMove F 306,0 0.5]
+[charaFadeout E 0.4]
+[charaFadeout F 0.4]
+[wt 1.4]
+
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠長尾景虎
+あれが敵将ですか……、
+[k]
+
+＠長尾景虎
+はて？　あの鎧姿、どこかで……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠森長可
+ん？　ありゃあ……。
+[k]
+
+？1：知り合い？
+
+？2：ほんとに一人！？
+
+？！
+
+[charaFace C 9]
+
+＠森長可
+なんだよ、柴田のおっさんじゃねぇか！
+[k]
+
+＠森長可
+うはははは！　殿下にぶっ殺されたと思ったら[r]こんなとこにいたのかよ！　元気してたか！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠長尾景虎
+織田の柴田勝家……[#手取川:てどりがわ]以来ですね……。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[se ad624]
+[shake 0.03 4 4 0.6]
+[wt 1.2]
+
+[shake 0.03 4 4 0.6]
+[wt 0.4]
+
+[seStop ad624 0.1]
+
+＠柴田勝家
+カカレェ……、カカレェイ……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠長尾景虎
+とにかくこれ以上進ませるわけにはいきません。[r]ここで仕留めます！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠森長可
+悪く思うなよ、柴田のおっさん！[r]そんじゃあ、いくぜえええええええ！！！！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

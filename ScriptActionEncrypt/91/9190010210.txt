@@ -1,0 +1,340 @@
+
+＄91-90-01-02-1-0
+
+
+[soundStopAll]
+
+[charaSet A 9001001 1 ジャンヌ]
+[charaSet B 98006100 1 海賊Ａ]
+[charaSet C 98006100 1 海賊Ｂ]
+[charaSet D 98006100 1 海賊Ｃ]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+
+＠ジャンヌ
+[line 3]村で暮らし、家族と共にいた17年間。[r][line 3]それもまた、かけがえのない私の人生。
+[k]
+
+＠ジャンヌ
+[line 3]日々を両親の手伝いと教会での祈りに捧げ、[r][line 3]ただ穏やかな時間を繰り返す。
+[k]
+
+＠ジャンヌ
+[line 3]それが、私の捨てた全て。[r][line 3]勝利を得るために、置き去りにしたものだった。
+[k]
+
+[messageOff]
+
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[se ad37]
+[seVolume ad37 0 0.2]
+[scene 30644]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠ジャンヌ
+マスター、マスター。起きて下さいな。[wt 1.0][wipein openEye 1.0 1.0][wait wipe][wt 0.4][shake 0.05 3 3 0.4][se ad7][seVolume ad7 0 0.5][wt 0.7][charaFace A 0][r]……良かった、目覚めましたか。
+[k]
+
+[seStop ad37 2.0]
+
+
+？1：ここは……？
+[bgm BGM_EVENT_5 0.1]
+
+[charaFace A 4]
+＠ジャンヌ
+どうやら無人島のようです。[r]いえ、今は私たちがいますけど。
+[k]
+
+[branch select01_end]
+
+？2：もしや……
+[bgm BGM_EVENT_5 0.1]
+
+[branch select01_02]
+
+？！
+
+[label select01_02]
+
+[charaFace A 4]
+＠ジャンヌ
+マスター。……どうやら私が原因のようです。[r]申し訳ありません、大事なときに……。
+[k]
+
+？1：気にしないで
+？！
+
+
+＠ジャンヌ
+……[charaFace A 0]ありがとうございます、マスター。
+[k]
+
+[label select01_end]
+
+[charaFace A 5]
+＠ジャンヌ
+現状ですけど、この島には何もありません。
+[k]
+
+＠ジャンヌ
+魔性の気配のようなものも、何ひとつ。[r]島は狭く、洞窟や人工物も存在しません。
+[k]
+
+
+？1：つまり……
+？！
+
+[charaFace A 4]
+＠ジャンヌ
+どうやらこちら、前回と同じく夢の中のようです。
+[k]
+
+[charaFace A 0]
+＠ジャンヌ
+それからひとつ気になることがあります。[r]今回は、私の記憶にある場所ではありません。
+[k]
+
+[charaFace A 4]
+＠ジャンヌ
+……お恥ずかしい話ですが……[r]お手上げ、という感じです。
+[k]
+
+＠ジャンヌ
+どうしたものでしょうか……。
+[k]
+
+
+[messageOff]
+[se ad37]
+[seStop ad37 4.0]
+[wt 1.0]
+
+[charaFace A 5]
+＠ジャンヌ
+待って下さい。[r]どうやら……待ちくたびれる必要はなさそうです。
+[k]
+
+
+[charaFace A 0]
+＠ジャンヌ
+ほら！　船が見えます。[r]どうやら、こちらに向かって……。
+[k]
+
+[messageOff]
+[se ad37]
+[seStop ad37 4.0]
+[wt 2.0]
+
+＠ジャンヌ
+……[charaFace A 5]船から、極めて強い魔力を感じます。[r]確実に何かありますね。
+[k]
+
+？1：何かというと……？
+
+＠ジャンヌ
+状況的には、恐らく前回のような過去からの弾劾でしょう。
+[k]
+
+[charaFace A 4]
+＠ジャンヌ
+……ただ、それにしては今回の題材は妙ですね。
+[k]
+
+＠ジャンヌ
+私は海を見たことはあっても、[r]船に乗ったことはないのですが……。
+[k]
+
+[branch select04_end]
+
+？2：無視する？
+
+[branch select04_02]
+
+？！
+
+[label select04_02]
+
+[charaFace A 5]
+＠ジャンヌ
+周囲を見る限り、四方を海に囲まれたこの状況では[r]この船に乗る以外に選択肢はなさそうです。
+[k]
+
+[charaFace A 0]
+＠ジャンヌ
+ああ、マスターが無人島でバカンスを楽しみたい、[r]というのであれば……。
+[k]
+
+[charaFace A 1]
+＠ジャンヌ
+このジャンヌ、張り切って努力いたします！
+[k]
+
+？1：いいです、無理です！
+？！
+
+[charaFace A 0]
+＠ジャンヌ
+ふふ、ですよね。
+[k]
+
+？！
+
+[label select04_end]
+
+[charaFace A 4]
+＠ジャンヌ
+問題は船の乗員たちがどのような人物か……ですね。[r]海賊だったら、気が楽なんですが……。
+[k]
+
+
+？1：楽？
+？！
+
+[charaFace A 5]
+＠ジャンヌ
+ええ、心をこめて躾……説得すれば、[r]きっと言うことを聞いてくれるのではと。
+[k]
+
+＠ジャンヌ
+……マスター、何か来ます。
+[k]
+
+[messageOff]
+
+[se ad37]
+[seVolume ad37 0 0.3]
+[bgm BGM_EVENT_5 1.0 0.5]
+[wt 0.7]
+[se ad45]
+[seVolume ad45 0 0.5]
+[seStop ad37 1.7]
+[wt 2.0]
+[se ad45]
+[se ad37]
+[seVolume ad37 0 0.3]
+[wt 2.4]
+[bgm BGM_EVENT_5 1.0]
+[seStop ad37 2.0]
+
+＠ジャンヌ
+小舟を流してきました。[r]これに乗れ、ということらしいですね。
+[k]
+
+[charaFace A 4]
+＠ジャンヌ
+船上に人影は見えません。[r]ますます不穏ですが……。
+[k]
+
+？1：行こう
+？2：乗るよ
+？！
+
+[charaFace A 2]
+＠ジャンヌ
+あ、マスター！[r]気を付けて乗り込んでください！
+[k]
+
+＠ジャンヌ
+罠があるかもしれませんよ、もう！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[scene 21231]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠ジャンヌ
+……ある程度予想はしていましたが、[r]やはり幽霊船でしたか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.4]
+[wt 0.7]
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 312,0]
+[charaFadein D 0.1 -312,0]
+＠海賊Ａ
+[charaShake B 0.05 2 0 1.0]
+……ぅぅ……さけ……[r]……ざいほう……
+[k]
+
+＠海賊Ａ
+[charaShake B 0.05 2 0 1.0]
+おんな……いいおんな……[r]あまぞねす……かっしょく……ふっきん……
+[k]
+
+＠海賊Ｂ
+[charaShake C 0.05 2 0 1.0]
+かみはぴんくで……[r]きゃぴきゃぴしてて……
+[k]
+
+＠海賊Ｃ
+[charaShake D 0.05 2 0 1.0]
+みつあみ……めがね……ちてき……
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[messageOff]
+
+？1：こいつ髭何とかと同類では
+
+？2：海賊ってのはどうしてこう……
+
+？！
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠ジャンヌ
+死体になっても思考はあの黒髭さんと[r]ほぼ同じですね……。
+[k]
+
+[charaFace A 5]
+＠ジャンヌ
+ともあれ、退散させない訳にもいきません。[r]死者には安らかな眠りを。
+[k]
+
+[charaFace A 2]
+＠ジャンヌ
+……行きます！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

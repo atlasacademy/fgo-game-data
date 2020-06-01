@@ -1,0 +1,523 @@
+
+
+＄02-00-04-04-6-0
+[soundStopAll]
+
+[charaSet A 25001000 1 アビゲイル]
+[charaSet B 3031001 1 哪吒]
+[charaSet C 2003001 1 ロビンフッド]
+[charaSet D 5033001 1 キルケー]
+[charaSet E 98006300 1 正体不明人型１]
+[charaSet F 98006300 1 正体不明人型２]
+[charaSet G 98006300 1 正体不明人型３]
+[charaSet H 98006300 1 正体不明人型４]
+
+[se ad443]
+[seVolume ad443 0 0.1]
+[seVolume ad443 1.5 1.0]
+
+[wt 0.3]
+
+[scene 20802]
+
+[wipeout rightToLeft 0.1 1]
+[wait wipe]
+[fadein black 0.1]
+[wait fade]
+
+[wipein rightToLeft 0.6 1]
+[wt 0.5]
+[seStop ad443 0.2]
+[wait wipe]
+
+[bgm BGM_EVENT_5 0.1]
+
+[wt 0.5]
+
+[se ad27]
+[seVolume ad27 0 0.6]
+[wt 0.3]
+
+[charaDepth A 10]
+[charaTalk B]
+[charaFace A 0]
+[charaFadein A 0.4 0]
+[charaFace B 0]
+[charaFadein B 0.4 2]
+
+＠哪吒
+[#主:ますたー]！[r]あびげいる　連れてきた！
+[k]
+
+[charaFace A 10]
+
+＠アビゲイル
+座長さん……ご無事！？
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaDepth A 1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠キルケー
+ハァッ……ハアッ……[#愛豚:ピグレット]をくれ……[r]自分の足で走るのは苦手だ……
+[k]
+
+[charaFace D 7]
+
+＠キルケー
+哪吒……？[charaFace D 2][r]後ろのその他大勢は！？
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.3 1]
+[bgmStop BGM_EVENT_5 0.5]
+[wait wipe]
+[charaFadeout D 0.1]
+
+[charaSet E 98006300 1 正体不明人型１]
+[charaSet F 98006300 1 正体不明人型２]
+[charaSet G 98006300 1 正体不明人型３]
+[charaSet H 98006300 1 正体不明人型４]
+[charaSet A 98006300 1 正体不明人型５]
+
+[charaTalk off]
+[charaDepth E 0]
+[charaDepth F 2]
+[charaDepth G 2]
+[charaDepth H 1]
+[charaDepth A 1]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaFace F 0]
+[charaFadein F 0.1 -192,0]
+[charaFace G 0]
+[charaFadein G 0.1 192,0]
+[charaFace H 0]
+[charaFadein H 0.1 -384,0]
+[charaFace A 0]
+[charaFadein A 0.1 384,0]
+
+[wt 0.3]
+[wipein rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+
+[bgm BGM_EVENT_3 0.1]
+
+[wt 0.1]
+[se ad21]
+[seVolume ad21 0 0.5]
+[se ad25]
+
+[wt 2.0]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠哪吒
+あちこち村を　逃げまわるうち[r]勝手に　ついてきた。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠キルケー
+あっ、そう……。
+[k]
+
+[charaFace D 6]
+
+＠キルケー
+……[%1]？[r]もう、これは……。
+[k]
+
+？1：アビーに正体を隠すのはもう無理だ
+？2：……というか、かなり押され気味でマズい
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠ロビンフッド
+オレ、さっきから背中の重い人に[r]めっちゃ噛まれてるんですけど？
+[k]
+
+[charaFace C 2]
+
+＠ロビンフッド
+大丈夫なのコレい[charaShake C 0.07 4 1 0.5]でででで！！
+[k]
+
+？1：哪吒とキルケーに戦ってもらうしかない
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠哪吒
+マスター？　どうする？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？2：いざとなったらロビンは……
+
+[charaFace C 5]
+
+＠ロビンフッド
+えっ、なんすかその冷めた視線？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？！
+
+
+[charaTalk off]
+[wt 0.1]
+[se ad21]
+[seVolume ad21 0 0.5]
+[se ad25]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaFace F 0]
+[charaFadein F 0.1 -192,0]
+[charaFace G 0]
+[charaFadein G 0.1 192,0]
+[charaFace H 0]
+[charaFadein H 0.1 -384,0]
+[charaFace A 0]
+[charaFadein A 0.1 384,0]
+
+[wt 2.0]
+
+[charaTalk on]
+
+＠D：？？？
+[line 3]香炉よ！[se ad68][seVolume ad68 0 0.2][charaPut C 0,-200][charaMove C 0,200 20.0][charaEffect C bit_talk_gagemist_Purple][wt 0.4][seStop ad68 1.5]
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[se ad463]
+[wt 1.0]
+
+＠食屍鬼たち
+ゥゥゥ……グォ……ゥゥゥァァ……？
+[k]
+
+[seStop ad463 0.3]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.3 1]
+[wait wipe]
+[charaSet C 2003001 1 ロビンフッド]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[charaSet A 25001000 1 アビゲイル]
+[charaSet H 5034001 1 シバの女王]
+
+[wipein rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+
+？1：[line 3]だ、誰！？
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アビゲイル
+いえ、座長さん……[r]あれは、知っている人だわ……
+[k]
+
+[charaFace A 8]
+
+＠アビゲイル
+ええっ……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.5 0.3]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.4 1]
+[wt 0.2]
+
+＠H：？？？
+もしかして～、お困りですか～[r][%1]さん？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠アビゲイル
+ティテュバ……？　あなたなの……？
+[k]
+
+[charaFace A 10]
+
+＠アビゲイル
+でも……！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠H：？？？
+……ごめんなさい、アビーお嬢様。
+[k]
+
+[charaFace H 6]
+
+＠H：？？？
+召使いのティテュバはもう死にました。[r]その出番を終えて、舞台を降りたのです。
+[k]
+
+[charaFace H 1]
+
+＠H：？？？
+そう、だからこうして私は自由になれた。
+[k]
+
+[charaFace H 12]
+
+＠H：？？？
+ぞんぶんに力を振るう自由！[r]お金を稼ぐ自由！
+[k]
+
+[charaFace H 5]
+
+[bgm BGM_EVENT_3 0.5 1.0]
+
+＠H：？？？
+[line 3]吹きとばしなさい、精霊たち！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+
+[effect bit_talk_rarrow01br]
+[wt 0.1]
+[se bac71]
+[wt 1.2]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[shake 0.05 0 4 1.5]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+
+[se bac325]
+[seVolume bac325 0 0.3]
+
+[se ad42]
+[charaSpecialEffect E enemyErasure 1 3]
+[charaSpecialEffect F enemyErasure 1 3]
+[wait charaSpecialEffect E]
+
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaFace F 0]
+[charaFadein F 0.1 -320,0]
+[charaFace G 0]
+[charaFadein G 0.1 320,0]
+[wt 0.1]
+[se ad25]
+
+＠食屍鬼たち
+シャーッ！！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠H：？？？
+と、ここまでは無償体験期間。[r]あとはぁ、ええ、有料です。
+[k]
+
+[charaFace H 12]
+
+＠H：？？？
+[#食屍鬼:グール]一体ごとの価格設定で。[r]ダースで割引きも申し受けますよお？
+[k]
+
+[charaSet A 25001000 1 アビゲイル]
+[charaSet F 5009000 1 エフェクト用ダミー]
+
+[charaDepth F 10]
+
+？1：えっ？　お金取るの？
+？2：体験期間短くないですか
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠ロビンフッド
+はあ？　助けにきたんじゃねーんですかい？[r]えっと、ティテュバもどきさんよ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 13]
+[charaFadein H 0.1 1]
+
+＠H：？？？
+ええ、もちろんですう！[r]人助け！　なんて甘美な響きでしょう。
+[k]
+
+[charaFace H 12]
+
+＠H：？？？
+善行には貴い価値がありましょう？[r][#こちら]のほうは、如何程いただけます？
+[k]
+
+[charaFace H 10]
+
+＠H：？？？
+まさか無償労働……などとは[r]言いませんよねえ？
+[k]
+
+？1：仮契約の代償！？　か、カルデアにツケで……
+？2：うちの金ピカっぽい人に相談します……
+？！
+
+[charaFace H 13]
+
+＠H：？？？
+えへへぇ。[r]毎度ありがとうございますう！
+[k]
+
+[charaFace H 8]
+
+＠H：？？？
+それでは、しばしの契約期間、[r]心からご奉仕させていただきますねえ？
+[k]
+
+[messageOff]
+[charaFace H 0]
+
+[bgmStop BGM_EVENT_3 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_42 0.3]
+
+[wt 0.8]
+
+？1：[line 3]告げる
+？2：汝の身は我が下に、我が命運は汝の剣に
+？！
+
+[selectionUse masterMale]
+？1：我に従え[line 3]ならば
+[flag IsMale true]
+？2：この命運、汝が剣に預けよう！
+[flag IsMale true]
+？！
+
+[selectionUse masterFemale]
+？1：我に従え[line 3]ならば
+[flag IsMale false]
+？2：この命運、汝が剣に預けよう！
+[flag IsMale false]
+？！
+
+[charaPut F 1]
+
+[branch _Male IsMale true]
+[branch _Female IsMale false]
+
+[label _Male]
+[charaEffect F bit_talk_CommandMantra_01 0,64]
+
+[branch _branchEnd]
+
+[label _Female]
+[charaEffect F bit_talk_CommandMantra_02 0,64]
+
+[label _branchEnd]
+[se bas16]
+[wait charaEffect F]
+[charaPut F 1200,1200]
+[charaEffectStop F]
+
+[wt 1.2]
+
+＠H：？？？
+ミドラーシュのキャスターの名に[#懸:か]け、[r]誓いを受け[#賜:たまわ]りましょう。
+[k]
+
+[charaFace H 2]
+
+＠H：？？？
+貴方を我が主として認めます[line 3]！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_42 0.4]
+[wait fade]
+[soundStopAll]
+[end]

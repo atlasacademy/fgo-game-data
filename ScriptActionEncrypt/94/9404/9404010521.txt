@@ -1,0 +1,2089 @@
+
+
+
+
+＄94-04-01-05-2-1
+
+
+[soundStopAll]
+
+[charaSet A 2036001 1 刑部姫]
+[charaSet B 10005000 1 Ⅱ号機]
+[charaSet C 1098177700 1 ジークフリート]
+[charaSet D 2028000 1 エレナ]
+[charaSet E 1040000 1 葛飾北斎]
+[charaSet F 7036001 1 宮本伊織]
+[charaSet G 98100400 1 マシュ]
+
+
+[imageSet H cut045_bg 1]
+[charaSet I 98115000 1 エフェクト用]
+[charaSet J 98115000 1 エフェクト用]
+
+[cameraMove 0 0,0 1.01]
+
+[charaDepth I 10]
+[charaDepth J 9]
+
+[branchQuestNotClear lblNotClear1 3000303]
+[flag IsClear true]
+[branch lblConf1]
+[label lblNotClear1]
+[flag IsClear false]
+[label lblConf1]
+
+
+
+
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 48700]
+
+[charaScale H 2.02]
+[charaFadein H 0.1 514,-257]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad33]
+[effect bit_talk_kengekiall02]
+[wt 0.8]
+[flashin once 0.1 0.1 FFFFFFCC FFFFFF80]
+[seStop ad33 0.1]
+[se ad671]
+[wt 0.1]
+
+[charaScale A 1.2]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0 0,20]
+[charaMove A 0,0 0.2]
+[charaMoveScale A 1.0 0.2]
+[charaShake A 0.02 3 3 0.6]
+[wt 0.4]
+[seStop ad671 0.6]
+[wt 0.8]
+
+＠刑部姫
+くっ、まだまだ……！[wt 0.6][charaFace A 2][r]メカエリチャン！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠Ⅱ号機
+了解、飛ぶわ！
+[k]
+
+[messageOff]
+[se ade122]
+[charaMoveReturn B 0,-10 0.3]
+[wait charaMove]
+[charaMove B 0,40 0.5]
+[wait charaMove]
+[charaFadeout B 0.4]
+[wt 1.0]
+
+
+[charaPut I 1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠ジークフリート
+いかん、刑部姫は飛行状態で[r]撃つつもりだ！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+[charaEffectStop I bit_talk_10_LowLevel]
+[wt 0.1]
+
+[cueSe Battle bac452]
+[effect bit_shot_01]
+[shake 0.02 3 3 0.9]
+[wt 0.4]
+[fowardEffect bit_shot_01]
+[wt 0.4]
+[cueSeStop bac452 0]
+[wt 0.6]
+
+[effectDestroy bit_shot_01]
+[fowardEffectDestroy bit_shot_01]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠エレナ
+くっ……ダメ、[r]あたしの弾丸だと届かないわ！
+[k]
+
+[charaFace D 2]
+＠エレナ
+なら宝具の円盤群でドーンね！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[se ade31]
+[flashin once 0.5 0.5 FFFFFF80 FFFFFF00]
+[wt 1.1]
+[flashin once 0.5 0.5 FFFFFF80 FFFFFF00]
+[wt 1.2]
+
+[backEffect bit_talk_goltail01]
+[wt 0.2]
+[shake 0.02 3 3 0]
+[se ade337]
+[seVolume ade337 0 0.4]
+[wt 0.7]
+
+[se ad609]
+[seVolume ad609 0 0.8]
+[fowardEffect bit_talk_explosion 450,80]
+[wt 0.6]
+[seStop ad609 0.8]
+[wt 0.1]
+
+[fowardEffectStop bit_talk_explosion]
+[se ad609]
+[seVolume ad609 0 0.8]
+[charaPut J -50,-30]
+[charaEffect J bit_talk_explosion]
+[wt 0.6]
+[seStop ad609 0.8]
+[wt 0.1]
+
+[se ad609]
+[seVolume ad609 0 0.8]
+[fowardEffect bit_talk_explosion -450,80]
+[wt 0.6]
+[seStop ad609 0.8]
+[shakeStop]
+[wt 0.4]
+[seStop ade337 0.8]
+[wt 0.8]
+
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[charaFadeout H 0.1]
+[charaEffectStop J bit_talk_explosion]
+[fowardEffectStop bit_talk_explosion]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+＠Ⅱ号機
+遠隔操作の円盤とか舐めないで。[r]余裕で鴨撃ちよ。
+[k]
+
+
+＠エレナ
+あーん、もー！
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠刑部姫
+空からだと狙いがつけにくい……！[r]固定して、メカエリチャン！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Ⅱ号機
+……スライド飛行、停止。ホバリングに移行。[r]まあ、いいでしょう。この距離なら届かないし。
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+
+[charaScale H 2.02]
+[charaFadein H 0.1 514,-257]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+＠葛飾北斎
+ちっくしょい。[r]あんなチンケな手でやられちまうのかヨ……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+＠マシュ
+一つ、手があります！[r]わたしたちでお一人、空に飛ばしましょう！
+[k]
+
+？1：空に！？
+？！
+
+[charaFace G 2]
+＠マシュ
+土台はエレナさん、ブーストを伊織さん、[r]飛んでいくのはお栄さんが！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+＠葛飾北斎
+え[messageShake 0.02 3 3 0.4]えぇ！？[r]お、おれかい！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+＠宮本伊織
+四の五の言ってる余裕はないわよ、
+[k]
+
+[charaFace F 1]
+＠宮本伊織
+なーに、気楽に気楽に！[r]空を飛んで、ちょっと鉄を斬るだけだから！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+＠葛飾北斎
+で、でもヨ……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+＠宮本伊織
+[#日の本一:ひのもといち]の剣豪になるんでしょう？[r]なら何であれやってやれ！　の精神よ！
+[k]
+
+？1：スパルタだ……！
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 11]
+[charaFadein E 0.1 1]
+＠葛飾北斎
+……。[r]……ヨ、ヨーシ！
+[k]
+
+＠葛飾北斎
+ここで腰を引いちゃァ[r]江戸っ子の名が廃るってもんでェ！
+[k]
+
+[charaFace E 12]
+＠葛飾北斎
+やってやらァ！
+[k]
+
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠マシュ
+はい、お願いします！
+[k]
+
+
+[messageOff]
+[charaTalk off]
+
+[charaDepth G 6]
+[charaDepth F 4]
+
+[charaFace F 0]
+[charaFadein F 0.4 2]
+[wt 1.2]
+
+[charaFace F 9]
+[wt 1.4]
+
+
+
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[bgmStop BGM_EVENT_80 0.5]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[charaFadeout H 0.1]
+
+[scene 28302]
+[wt 0.5]
+
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 0.5 0.4]
+
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠刑部姫
+ん？[r]何かやろうとしてる？
+[k]
+
+[charaFace A 6]
+＠刑部姫
+ま、動き回らなくなったから[r]ちょうどいいか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Ⅱ号機
+待って。[r]あれは、まさか[line 3]
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[seStop ad556 0.5]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[charaFadein H 0.1 514,-257]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+
+[bgm BGM_EVENT_63 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠マシュ
+準備完了です！
+[k]
+
+
+＠マシュ
+後はお願いします、エレナさん！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠エレナ
+了解了解、お任せよ！
+[k]
+
+[charaFace D 0]
+＠エレナ
+小さい円盤一つだけど、[r]土台になるくらいなら何とかいけるでしょう！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+
+[charaTalk E]
+[charaFace E 18]
+[charaFadein E 0.1 1]
+＠葛飾北斎
+が、合点承知の助！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠宮本伊織
+じゃあ、鳥になるわよお栄ちゃん！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠エレナ
+こちらもありったけ援護するから！
+[k]
+
+？1：がんばって！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+＠葛飾北斎
+うん……ウン！
+[k]
+
+＠葛飾北斎
+ますたあに、ピッカピカの空飛ぶ姿、[r]見せてやらァな！
+[k]
+
+[charaFace E 2]
+＠葛飾北斎
+行っくぞおおおおおお！
+[k]
+
+[messageOff]
+[se ad55]
+[charaMove E -256,0 0.4]
+[charaFadeout E 0.4]
+[wt 0.2]
+[seStop ad55 0.6]
+
+[wipeout leftToRight 1.0 1.0]
+[wait wipe]
+
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 -125,0]
+[wt 0.5]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.1]
+
+＠エレナ
+合わせて……[wt 0.6][charaFace D 2]えーいっ！
+[k]
+
+[messageOff]
+[se ad55]
+[seVolume ad55 0 0]
+[seVolume ad55 0.4 1.0]
+[wt 0.2]
+
+[charaTalk off]
+[charaDepth D 4]
+[charaDepth E 6]
+
+[charaFace E 12]
+[charaFadein E 0.1 700,0]
+[charaMove E 150,0 0.8]
+
+[wt 0.7]
+
+[seStop ad55 0.1]
+[cueSe Battle bac54]
+
+[charaEffect I bit_talk_quickmove]
+[charaMoveReturn D -125,20 0.5]
+[wt 0.1]
+[charaMove E 130,90 0.6]
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[charaFadeout H 0.1]
+[effectStop bit_talk_quickmove]
+[charaPut E 1]
+
+
+[charaPut J 1]
+[charaEffect J bit_talk_43h]
+[wt 1.0]
+
+[charaPut E 1]
+[charaShake E 0.02 3 3 0]
+
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 0.5 0.8]
+
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+[wt 3.2]
+
+
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[seVolume ad556 0.5 0]
+[wait wipe]
+
+
+[charaShakeStop E]
+[charaFadeout E 0.1]
+[charaEffectStop J bit_talk_43h]
+
+[charaScale H 2.02]
+[charaFadein H 0.1 514,-257]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠マシュ
+第一段階、成功です！[r]続けてお願いします、伊織さん！
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+
+
+[scene 28302]
+
+
+
+
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[seVolume ad556 0.5 0.4]
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+＠刑部姫
+と、飛んだ……！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Ⅱ号機
+ノープロブレム。あれならまったく届かないわ。[r]それより、この円盤の方が鬱陶し[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠刑部姫
+ん、待って待って。[r]まだ何かやろうとしてる！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Ⅱ号機
+[line 3]何ですって？
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[seVolume ad556 0.5 0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[scene 28302]
+
+
+[charaTalk E]
+[charaFace E 23]
+[charaFadein E 0.1 1]
+[wt 1.0]
+
+[seVolume ad556 0.5 0.4]
+
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+
+＠葛飾北斎
+まだ全然届かねえ……！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.2]
+
+[se ad7]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 0,-50]
+[charaMove F 0,0 0.4]
+[wt 0.8]
+＠宮本伊織
+じゃ、ここから私の出番！[r]刀の峰に足乗っけて！
+[k]
+
+＠宮本伊織
+振り上げて飛ばすから！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 20]
+[charaFace F 1]
+[charaFadein E 0.1 0]
+[charaFadein F 0.1 2]
+＠葛飾北斎
+刀は侍の魂じゃねェのかヨ！？
+[k]
+
+
+[charaTalk F]
+[charaFace F 14]
+＠宮本伊織
+お天道様に向けて飛べるなら、[r]魂だって踏んづけるのが侍よ！
+[k]
+
+[charaFace F 2]
+＠宮本伊織
+一、二の[line 3]三ッ！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+
+[se ad51]
+[wt 0.7]
+
+[se ad85]
+[wt 0.2]
+[charaPut J 10,50]
+[charaRoll J 344]
+[charaEffect J bit_talk_h_slash01]
+[effect bit_talk_arrow01br]
+[wt 0.1]
+
+[se ade334]
+[wt 1.6]
+
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[seVolume ad556 0.5 0]
+[wait wipe]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[seVolume ad556 0.5 0.4]
+
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+
+＠刑部姫
+あ[messageShake 0.02 3 3 0.4]わわわわ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Ⅱ号機
+[#急速旋回:バ レ ル ロ ー ル]。[r]あれはただの[#跳躍:ジャンプ]よ。
+[k]
+
+＠Ⅱ号機
+空を飛んでいる私たちが少し軌道を変えれば、[r]追いつかれるコトはないわ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_63 0.6]
+[seVolume ad556 0.6 0]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠刑部姫
+あ[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_63 0.1]
+[seVolume ad556 0 0]
+[se ad231]
+[wt 1.4]
+
+
+[charaFace A 2]
+＠刑部姫
+ダメ、離脱して！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Ⅱ号機
+え？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠刑部姫
+[#マーちゃんが狙ってる]！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[charaShake B 0.02 3 3 0.4]
+[wt 1.4]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[charaScale H 2.02]
+[charaFadein H 0.1 514,-257]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+
+？1：令呪を以て命ずる[line 3]
+？2：[#二人に追いつけ]！
+？！
+
+[masterBranch _Male _Female]
+
+
+[label _Male]
+
+[charaRoll J 0]
+[charaPut J 1]
+[charaEffect J bit_talk_CommandMantra_01 0,64]
+[charaEffectPause J bit_talk_CommandMantra_01 0,64]
+[wait charaEffectStart J]
+[charaEffectStart J]
+
+[branch _branchEnd]
+
+[label _Female]
+
+[charaRoll J 0]
+[charaPut J 1]
+[charaEffect J bit_talk_CommandMantra_02 0,64]
+[charaEffectPause J bit_talk_CommandMantra_02 0,64]
+[wait charaEffectStart J]
+[charaEffectStart J]
+
+[label _branchEnd]
+
+[se bas16]
+[wait charaEffect J]
+[charaPut J 1200,1200]
+[charaEffectStop J]
+
+
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[charaPut I 1]
+[charaEffect I bit_talk_43h]
+[charaFadeout H 0.1]
+
+[charaTalk E]
+[charaFace E 28]
+[charaFadein E 0.1 1]
+[charaShake E 0.02 3 3 0]
+[wt 0.5]
+
+[seVolume ad556 0.5 0.4]
+
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_82 0.1]
+
+＠葛飾北斎
+ひ[messageShake 0.02 3 3 0.5]ゃ、ひゃああああ！？[r]い、今のは何でい！？
+[k]
+
+＠葛飾北斎
+胸ン[#内:なか]がこそばゆくなって……。
+[k]
+
+[charaFace E 2]
+＠葛飾北斎
+まあいっか！[r]これで追いつけらぁナ！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[seVolume ad556 0.5 0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[charaShakeStop E]
+[charaEffectStop I bit_talk_43h]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+[seVolume ad556 0.5 0.4]
+
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+＠Ⅱ号機
+……事前に謝っておくわ、[#刑部姫:おっきー]。[r]空中戦でこの私が敗北するなんて。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠刑部姫
+はいメカエリチャン！
+[k]
+
+＠刑部姫
+ねえ、もしかしてメカエリチャンが[r]スッパーンと斬られたらさ……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Ⅱ号機
+ええ、モチのロン。[r]アナタは空から落下します。
+[k]
+
+＠Ⅱ号機
+古来、借り物の翼で空を飛ぶ者は、[r]イカロスの如く失墜すると相場が決まっているでしょう？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠刑部姫
+そ[messageShake 0.02 3 3 0.8]ーーれーーはーー[r]そーーうーーだーーよーーネーー！
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[bgmStop BGM_EVENT_82 0.5]
+[seStop ad556 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[charaPut J 1]
+[charaEffect J bit_talk_41]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠葛飾北斎
+喰らいなァァァッ！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_41]
+[wt 0.3]
+
+[se bac139]
+[effect bit_talk_v_slash01]
+[wt 1.2]
+
+[se ad609]
+[shake 0.03 4 4 0.8]
+[wt 0.8]
+[seStop ad609 1.0]
+[wt 0.4]
+
+[se ad348]
+[wt 3.0]
+
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+
+[charaSet A 1098176810 1 刑部姫]
+[charaSet B 3025001 1 清姫]
+[charaSet D 1098155400 1 黒髭]
+[charaSet C 1008300 1 ジークフリート]
+
+[scene 81200]
+
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠刑部姫
+あー、負けた負けた！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadein G 0.1 1]
+＠マシュ
+はい、こちらの勝利です。[r]刑部姫さん。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠黒髭
+まったくでござるな。
+[k]
+
+[charaFace D 2]
+＠黒髭
+ぐうの音も出ない、[r]実に爽やかな負けっぷりでござる。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠刑部姫
+わかってるわかってる[r]わかってまーすー！
+[k]
+
+＠刑部姫
+[#姫:わたし]の[#敗:ま]ーー[#北:け]ーー！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaDepth A 7]
+[charaDepth B 3]
+
+[charaTalk off]
+[charaFace B 1]
+[charaFadein B 0.4 -530,0]
+[wt 1.0]
+
+[charaFadeout B 0.4]
+[wt 0.4]
+
+[charaFadeout A 0.1]
+[wt 0.2]
+
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠ジークフリート
+（今、何か……？）
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠刑部姫
+ハァ……。[r]うう、折角すっごい力を手に入れたのに。
+[k]
+
+＠刑部姫
+水着剣豪の名折れだよぅ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠宮本伊織
+貴方、そもそも剣豪ってガラじゃないでしょうに。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠刑部姫
+そうねー……ようやく負けてスッキリした気分。
+[k]
+
+[charaFace A 0]
+＠刑部姫
+特に北斎の……お栄ちゃん？　に叩き斬られたのは[r]キッツい一撃だったわー。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠葛飾北斎
+へへーん。[r]おれは水着剣豪のてっぺんを目指してるからナ。
+[k]
+
+[charaFace E 7]
+＠葛飾北斎
+（さて、ここで剣豪っぽい台詞の一つでも[line 3]）
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[charaTalk off]
+[charaDepth C 4]
+[charaDepth C 6]
+
+[charaFace C 0]
+[charaFace F 0]
+[charaFadein C 0.1 0]
+[charaFadein F 0.1 2]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 1.4]
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠葛飾北斎
+（………………いや）
+[k]
+
+[charaFace E 8]
+＠葛飾北斎
+（おれは実際、勝ったんだ。ますたあも、おれは[r]　[#日の本一:ひのもといち]の剣士になれるって言ってくれた）
+[k]
+
+＠葛飾北斎
+（だったら……それっぽさ、なんて気にしてても[r]　しょうがねぇやな。おれはおれらしく、で充分でい！）
+[k]
+
+[charaFace E 26]
+＠葛飾北斎
+ふふ……ふふふふ……。[r]（とりあえずは、こうして余裕たっぷりに笑うだけで……）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠刑部姫
+（ああっ、なんかビンビン感じる……カッコ良さについて[r]　色々考え過ぎちゃう、黒歴史真っ只中の青い気配！）
+[k]
+
+[charaFace A 3]
+＠刑部姫
+（いや、[#姫:わたし]は何も言わないよ、警告もしないよ。[r]　黙って見守るのが先達としての礼儀だもんね！）
+[k]
+
+
+
+[messageOff]
+
+[charaTalk off]
+[charaFace B 1]
+[charaFadein B 0.4 460,0]
+[wt 1.0]
+
+[charaFadeout B 0.4]
+[wt 0.4]
+
+[charaFadeout A 0.1]
+[wt 0.2]
+
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+＠葛飾北斎
+……ン？　ンン？[r]何か今……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠刑部姫
+はあ……一度敗北した以上、[r]これで水着剣豪の役割もおしまいか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ジークフリート
+それで少し尋ねたい。[r]他の水着剣豪は、何者だろうか？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[charaTalk off]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 0.3]
+
+[charaFace B 1]
+[charaFadein B 0.4 -390,0]
+[wt 1.0]
+
+[charaFadeout B 0.4]
+[wt 0.5]
+
+[charaTalk on]
+＠刑部姫
+知ってるけど教えられませーん。
+[k]
+
+？1：あっさりとまあ……
+
+[charaFace A 3]
+＠刑部姫
+だって……あの水着の王様、[r]めっちゃ怖いし……。
+[k]
+
+？2：……今何か……？
+
+[charaFace A 0]
+＠刑部姫
+どったの、マーちゃん？[r]ボーッとして。
+[k]
+
+？！
+
+[charaFace A 0]
+＠刑部姫
+そうだねぇ……。
+[k]
+
+[messageOff]
+[charaFaceFade A 8 0.8]
+[wt 1.2]
+
+＠刑部姫
+マーちゃんが『君の全てが欲しい』って[r]言ってくれたら、考えなくもないかなー？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+＠マシュ
+むっ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+＠葛飾北斎
+あん？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠刑部姫
+冗談、冗談。
+[k]
+
+＠刑部姫
+マーちゃんにそんな口説き文句、[r]言えるはずが[line 3]
+[k]
+
+？1：君の全て……の情報が
+？2：欲しい！
+？！
+
+[charaFace A 7]
+＠刑部姫
+！[messageShake 0.02 3 3 0.3]！
+[k]
+
+[charaFace A 3]
+＠刑部姫
+そ、それはズルい！[r]ズルいよマーちゃん！
+[k]
+
+＠刑部姫
+欲しいのは情報だけって言ってるのに！[r]そんな照れっ照れの顔で言われたらさあ！
+[k]
+
+＠刑部姫
+くぅぅぅぅぅ……キュンッと来た……[r]来てしまった……！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace B 1]
+[charaFadein B 0.4 320,0]
+[wt 1.0]
+
+[charaFadeout B 0.4]
+[wt 0.4]
+
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠黒髭
+！[messageShake 0.02 3 3 0.3]！
+[k]
+
+＠黒髭
+あ、あの……おっきー？[r]我々はそろそろ退散を……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠A：刑部姫（聞いてない）
+……はー……乙女器官に強烈なパンチを[r]喰らったみたい。
+[k]
+
+[charaFace A 0]
+＠刑部姫
+うん、いいでしょう。[r]前言撤回！
+[k]
+
+[charaFace A 1]
+＠刑部姫
+水着剣豪の果たし合い巡り、[r]この刑部姫も協力します！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace B 1]
+[charaFadein B 0.4 -250,0]
+[wt 1.0]
+
+[charaFadeout B 0.4]
+[wt 0.4]
+
+[charaFadeout A 0.1]
+[wt 0.3]
+
+
+
+[charaFace G 6]
+[charaFace C 2]
+[charaFadein G 0.1 2]
+[charaFadein C 0.1 0]
+[wt 1.4]
+
+[charaFadeout G 0.1]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[charaFace F 2]
+[charaFace E 20]
+[charaFadein F 0.1 2]
+[charaFadein E 0.1 0]
+[wt 1.4]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.2]
+
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+？1：姫ーーー！　姫ーーー！　後ろーーー！
+
+[charaFace A 0]
+＠刑部姫
+こう見えて、[#姫:わたし]ってば霊基も[r]アーチャーにクラス替えしてるから若干アグレッシブだし。
+[k]
+
+＠刑部姫
+うん？[r]後ろがどうしたの？
+[k]
+
+？2：這い寄ってるから！　這い寄ってるからーーー！
+
+[charaFace A 4]
+＠刑部姫
+這い寄る？[r]這い寄る[#渾沌:こんとん]？
+[k]
+
+[charaFace A 0]
+＠刑部姫
+もー、今回はフォーリナー案件じゃないでしょ、[r]マーちゃんってば♪
+[k]
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_77 0.4]
+[charaTalk off]
+[charaTalk depthOff]
+[charaFace B 1]
+[charaFadein B 0.4 180,0]
+[wt 0.8]
+
+[charaTalk on]
+[charaFace A 9]
+＠刑部姫
+[f large]！[messageShake 0.02 3 3 0.4]？
+[k]
+
+
+[charaTalk B]
+[charaFace B 1]
+＠清姫
+♡
+[k]
+
+[bgm BGM_EVENT_27 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+＠刑部姫
+あ、あのね。[r]違うのよ、きよひー、これ、違うの。
+[k]
+
+＠刑部姫
+ご、誤解ですよ？
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠黒髭
+浮気がバレたときの言い訳みたいな[r]台詞になってるでござる……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[charaFadein B 0.1 180,0]
+＠清姫
+うふふ。[r]ご心配なさらずともいいですわ。
+[k]
+
+[charaFace B 0]
+＠清姫
+誤解も何も、[r]わたくしってば嘘を見抜きますから。
+[k]
+
+
+[charaTalk A]
+[charaFace A 9]
+＠刑部姫
+そうでした！！
+[k]
+
+
+[charaTalk B]
+＠清姫
+さて、ここでおっきーに質問です。
+[k]
+
+[charaFace B 1]
+＠清姫
+わたくし、怒っているように[r]見えますか？
+[k]
+
+
+[charaTalk A]
+＠刑部姫
+……。[r]……。
+[k]
+
+＠刑部姫
+……は、はい。[r]とても……。
+[k]
+
+
+[charaTalk B]
+[charaFace B 0]
+＠清姫
+怒っているわたくしは、[r]おっきーに何をすると思います？
+[k]
+
+
+[charaTalk A]
+[charaFace A 7]
+＠刑部姫
+クスクスと笑って[#ボーボー:バ ス タ ー]？
+[k]
+
+
+[charaTalk B]
+[charaFace B 1]
+＠清姫
+……ふふ、まさか。
+[k]
+
+
+[charaTalk A]
+[charaFace A 3]
+＠刑部姫
+じゃ、じゃあ炎のハリセンで[r]スパーン？
+[k]
+
+
+[charaTalk B]
+[charaFace B 0]
+＠清姫
+いえいえ、そのような無体なことは[r]いたしません。
+[k]
+
+[charaTalk A]
+[charaFace A 1]
+＠刑部姫
+じゃ、じゃあ許してくれる？
+[k]
+
+
+[charaTalk B]
+[charaFace B 1]
+＠清姫
+ええ、ただし[line 3]
+[k]
+
+[messageOff]
+[charaTalk G]
+
+[se ade333]
+[wt 2.2]
+
+
+[charaTalk A]
+[charaFace A 7]
+＠刑部姫
+こ、この鐘は……まさか……！
+[k]
+
+
+[charaTalk B]
+[charaFace B 0]
+＠清姫
+はい、これからおっきーには[#道成寺鐘:どうじょうじかね]に籠もって[r]原稿に専念していただきまーす♪
+[k]
+
+[charaFace B 1]
+＠清姫
+サボると、察知した[#薙刀:なぎなた]が貫いてくるので[r]気をつけてくださいましね♡
+[k]
+
+
+[charaTalk A]
+[charaFace A 9]
+[charaShake A 0.02 3 3 0]
+＠刑部姫
+ぞ[messageShake 0.02 3 3 0.6]ん゛な゛あ゛あ゛あ゛あ゛あ゛あ゛！
+[k]
+
+[messageOff]
+[wt 0.2]
+[bgmStop BGM_EVENT_27 0.8]
+[wipeout upToDown 0.8 0.5]
+[wt 0.5]
+[se ade332]
+[seVolume ade332 0 0.8]
+[wt 1.8]
+
+[fadeout black 0.1]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+
+[charaSet A 98002000 1 フォウ]
+[charaSet D 2028000 1 エレナ]
+
+
+[scene 81200]
+[wt 1.0]
+
+[wipein upToDown 0.1 1.0]
+[wait wipe]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_109 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠清姫
+……はぁ。
+[k]
+
+[charaFace B 0]
+＠清姫
+ありがとうございました、ますたぁ。[r]これで原稿に取りかかれます。
+[k]
+
+？1：ほどほどにしてあげた方が
+
+[charaFace B 1]
+＠清姫
+ふふ、ご心配なさらず。[r]わかっております。
+[k]
+
+[charaFace B 0]
+＠清姫
+どうやら先ほど告げた通り、[r]おっきーは皆さまのお力になりたい様子。
+[k]
+
+＠清姫
+原稿の進行が軌道に乗ったら[r]ちゃんと解放してあげます。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？2：刑部姫も悪気があった訳では
+
+[charaFace B 1]
+＠清姫
+ふふ、ご心配なさらず。
+[k]
+
+＠清姫
+あの[#道成寺鐘:どうじょうじかね]の[#内:なか]で[r]少しばかり反省していただくだけです。
+[k]
+
+＠清姫
+あそこであれば、原稿も捗るでしょう。[r]中にエアコンもついてますしね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠マシュ
+エアコン！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ジークフリート
+それは……快適そうだ……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠葛飾北斎
+しかしなァ、原稿が真っ白なんだろ？
+[k]
+
+＠葛飾北斎
+さすがにその状態で手伝ってもらうのは[r]ちょいとねェ……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠清姫
+いいえ、大丈夫です！[r]今回はわたくしが[#ねぇむ]を切らせていただきました！
+[k]
+
+[charaFace B 3]
+＠清姫
+ふふ……学パロ……ふふふふふ……
+[k]
+
+＠清姫
+おっきーも嫌だ嫌だと言っても、[r]水着剣豪で戦っていた今回ばかりは観念するでしょう。
+[k]
+
+＠清姫
+[&学ラン:セーラー]のますたぁとめくるめく[r]ラ・ブ・コ・メ……ふふふふふ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠フォウ
+フォラー……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+＠マシュ
+フォウさんが何か訴えかけていますが、[r]それはそれとして……。
+[k]
+
+[charaFace G 1]
+＠マシュ
+ひとまず、水着剣豪二番手をクリアです！[r]お疲れ様でした、マスター！
+[k]
+
+？1：これがあと５回かー……
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ジークフリート
+千里の道も一歩から、[r]という[#諺:ことわざ]もある。
+[k]
+
+[charaFace C 1]
+＠ジークフリート
+そして俺を倒すにも背中から、[r]という[#諺:ことわざ]もある。
+[k]
+
+？1：あるの！？
+？！
+
+[charaFace C 4]
+＠ジークフリート
+……すまない。[r]知的なジョークのつもりだったんだ……。
+[k]
+
+＠ジークフリート
+面白味のないジョークで[r]本当にすまない……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠エレナ
+ふふ、今回はお役御免ね。[r]それじゃあ、あたしはこれで失礼するわ！
+[k]
+
+[charaFace D 0]
+＠エレナ
+ベガスにはまだまだサーヴァントがいるから、[r]水着剣豪を倒すのに力を借りてもいいかもね。
+[k]
+
+？1：ありがとう、エレナ！
+
+[messageOff]
+[charaFace D 1]
+[wt 1.2]
+
+
+？2：助かりました、おばあちゃま！
+
+[charaFace D 3]
+＠エレナ
+あら、あら、あらあら。ふふふ。[r]いい子ね！
+[k]
+
+＠エレナ
+うんうん、いつでもどこでも[r]おばあちゃまにお任せよ！　それじゃあね！
+[k]
+
+？！
+
+[messageOff]
+[se ad60]
+[wt 0.1]
+[seStop ad60 1.2]
+[charaMove D -50,0 0.4]
+[charaFadeout D 0.4]
+[wt 1.4]
+
+[charaSet D 1098155400 1 黒髭]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠葛飾北斎
+ところでヨ……。[r]刑部姫の情報って、結局聞けなかったよナァ？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠黒髭
+ああ、それなら後で拙者がきよひー殿に[r]聞いておくでござるよ。
+[k]
+
+[charaFace D 2]
+＠黒髭
+小太郎君にでもお伝えすれば[r]よろしいか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ジークフリート
+そうしてくれると助かる。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_109 1.0]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠黒髭
+フフフ、しかしお約束として[r]おっきーの代わりにコレだけは伝えておきませう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ジークフリート
+む？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠黒髭
+水着剣豪の中でも[#刑部姫:おっきー]は[r]最も格下……というか、
+[k]
+
+＠黒髭
+『持ってるの剣じゃなくて銃なんだけど本当に[r]　いいのかなー？』と本人も疑問に思っていたほど……。
+[k]
+
+[charaFace D 8]
+＠黒髭
+次の水着剣豪こそが、[r]真なる恐ろしさを知らしめてくれるでござろう！
+[k]
+
+[messageOff]
+[se ad627]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 0.2]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 1.8]
+
+[charaSet B 4028001 1 イヴァン雷帝]
+
+？1：雷？
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_70 1.0]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[se ad642]
+[shake 0.02 3 3 0.5]
+[wt 1.0]
+[seStop ad642 0.8]
+[shake 0.02 3 3 0.5]
+[wt 0.5]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.8]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠イヴァン雷帝
+余である。
+[k]
+
+＠イヴァン雷帝
+これで良いか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠黒髭
+あざーっす。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠イヴァン雷帝
+うむ。
+[k]
+
+[messageOff]
+[se ad642]
+[wt 0.1]
+[shake 0.02 3 3 0.5]
+[charaFadeout B 0.4]
+[wt 1.0]
+[shake 0.02 3 3 0.5]
+[seStop ad642 1.2]
+[wt 1.4]
+
+？1：よりによってあの人を……
+？2：こんな小ネタに……
+？！
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠ジークフリート
+さすが海賊。[r]恐れ知らずだな……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠黒髭
+面白半分で頼んでみたら、[r]引き受けてくれたんでつい……。
+[k]
+
+[charaFace D 0]
+＠黒髭
+ともかく、次もガンバ！
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

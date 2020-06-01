@@ -1,0 +1,318 @@
+
+＄94-01-56-51-1-0
+
+
+
+[soundStopAll]
+
+
+
+[messageOff]
+
+
+[branch _PlayEffect_1st PM4 1]
+
+
+[label _PlayEffect_etc]
+
+[tapSkip _from_TapSkip_etc]
+
+[scene 10001]
+
+[effectPause bit_talk_goal2_4]
+[wait effectStart bit_talk_goal2_4]
+
+[fadein white 0.5]
+[wait fade]
+
+[effectStart bit_talk_goal2_4]
+[wait effect bit_talk_goal2_4]
+
+[label _from_TapSkip_etc]
+
+[effectDestroy bit_talk_goal2_4]
+[fadein black 0]
+[wait fade]
+
+[branch _PlayEffect_End]
+
+
+[label _PlayEffect_1st]
+
+[bgm BGM_EVENT_3 0.1]
+
+[tapSkip _from_TapSkip_1st]
+
+[effectPause bit_talk_winner2_4]
+[wait effectStart bit_talk_winner2_4]
+
+[scene 10001]
+
+[fadein white 0.5]
+[wait fade]
+
+[effectStart bit_talk_winner2_4]
+
+[bgmStop BGM_EVENT_3 3.7]
+
+[wt 3.9]
+[se ad251]
+[seVolume ad251 0 0.7]
+
+[wt 0.6]
+
+[voice 402600_0_M800]
+
+[scene 10000]
+
+[wait effect bit_talk_winner2_4]
+[wt 1.4]
+
+[label _from_TapSkip_1st]
+
+[voiceStop]
+[scene 10000]
+[effectDestroy bit_talk_winner2_4]
+[fadein black 0]
+[wait fade]
+
+
+[label _PlayEffect_End]
+
+[branch _PlayVoice_Start PM4 1]
+
+[branch _PlayVoice_End]
+
+
+
+
+[label _PlayVoice_Start]
+
+[charaSet A 1098117200 1 エレナ]
+[charaSet B 5025001 1 エジソン]
+[charaSet C 2011001 1 ニコラ・テスラ]
+
+[bgm BGM_EVENT_64 0.1]
+
+[scene 45201 1.0]
+[wt 1.0]
+
+[flagRandom _PlayVoiceNo 1 3]
+
+
+[branch _PlayVoice_3rd _PlayVoiceNo 3]
+[branch _PlayVoice_2nd _PlayVoiceNo 2]
+[branch _PlayVoice_1st _PlayVoiceNo 1]
+
+
+
+[label _PlayVoice_1st]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFace C 0]
+[charaFadein B 0.4 2]
+[charaFadein C 0.4 0]
+[wt 0.7]
+
+
+＠エジソン
+[tVoice ChrVoice_9010002 0_M700]
+我ら三名の力をもってすれば当然ではあるが[wait tVoice]
+[k]
+[tVoice ChrVoice_9010002 0_M701]
+穴掘りナンバーワンと言われても実はあまり嬉しくなァい！[twt 3.6][charaFace B 2][twt 0.7][charaShake B 0.05 4 0 0.7][wait tVoice]
+[k]
+
+[charaFace C 1]
+[charaShake C 0.05 0 4 0.4]
+＠ニコラ・テスラ
+[tVoice ChrVoice_9010002 0_M702]
+くく……モグラだな……モグラライオンだな……。[wait tVoice]
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠エレナ
+[tVoice ChrVoice_9010002 0_M703]
+こーら、からかわないの。[wait tVoice]
+[k]
+[tVoice ChrVoice_9010002 0_M704]
+[charaFace A 0]
+それに穴掘りナンバーワンだって素敵よ？[wait tVoice]
+[k]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_2nd]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.7]
+
+＠エレナ
+[tVoice ChrVoice_9010002 0_M710]
+え？　あたしたちが一番穴掘ってたってこと？[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 0.1 2]
+[charaFadein C 0.1 0]
+＠ニコラ・テスラ
+[tVoice ChrVoice_9010002 0_M711]
+なんと……つい本気を出してしまったがそうなったか……。[wait tVoice]
+[k]
+
+＠エジソン
+[tVoice ChrVoice_9010002 0_M712]
+これが直流の真の力、その一端だというのか……[wait tVoice]
+[k]
+[tVoice ChrVoice_9010002 0_M713]
+[charaFace B 1]
+素晴らしい……これは素晴らしいことなのでは……？[wait tVoice]
+[k]
+
+[charaFace C 2]
+[charaShake C 0.05 4 0 0.7]
+＠ニコラ・テスラ
+[tVoice ChrVoice_9010002 0_M714]
+はァー？[charaFace B 5][wait tVoice]
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠エレナ
+[tVoice ChrVoice_9010002 0_M715]
+はいはいいちいちイライラしないの。[twt 3.4][charaFace A 1][r]喜びましょう！　やったね！[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk off]
+[charaFace B 5]
+[charaFace C 5]
+[charaFadein B 0.1 2]
+[charaFadein C 0.1 0]
+
+[wt 0.8]
+[charaTalk on]
+[charaTalk C]
+[charaFace B 0]
+[charaFace C 0]
+＠ニコラ・テスラ
+[tVoice ChrVoice_9010002 0_M716]
+う、うむ。やったぞ！[wait tVoice]
+[k]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_3rd]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠エレナ
+[tVoice ChrVoice_9010002 0_M720]
+ちょっと疲れたわね！　[twt 2.4][charaFace A 1][r]たくさん掘った訳だから、休みましょう！[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 0.1 2]
+[charaFadein C 0.1 0]
+＠エジソン
+[tVoice ChrVoice_9010002 0_M721]
+賛成である……[twt 2.2][charaFace B 1][charaShake B 0.05 4 0 0.7]ぐー。[wait tVoice]
+[k]
+
+＠ニコラ・テスラ
+[tVoice ChrVoice_9010002 0_M722]
+天才にも休息は必要だ……[twt 3.8][charaFace C 4][charaShake C 0.05 4 0 0.7]ぐー。[wait tVoice]
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠エレナ
+[tVoice ChrVoice_9010002 0_M723]
+あら、ふたりとも立ったまま寝ちゃった。[wait tVoice]
+[k]
+[tVoice ChrVoice_9010002 0_M724]
+[charaFace A 1]
+ふふ、こんなに大きいのに子供みたいね？[wait tVoice]
+[k]
+
+
+
+[label _PlayVoice_End]
+
+
+[messageOff]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_64 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

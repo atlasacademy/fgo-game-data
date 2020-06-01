@@ -1,0 +1,200 @@
+
+
+
+＄91-20-10-01-4-1
+[soundStopAll]
+[charaSet A 3002001 1 ディルムッド]
+[charaSet B 99502600 1 マシュ]
+[charaSet C 2010002 1 ビリー]
+
+[scene 11110]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠ディルムッド
+助かりました、我が主……！
+[k]
+
+？1：ドンマイ！
+？！
+
+[charaFadeout A 0.1]
+
+[charaEffect B bit_talk_10]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠マシュ
+マスター、キメラにはまだ反応が……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut B 1200,1200]
+
+[messageOff]
+
+[wt 0.3]
+
+[shake 0.05 3 3 0.6]
+[se ad19]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.2 2]
+[charaMove A 1 0.2]
+
+＠ディルムッド
+お下がりを！
+[k]
+
+[messageOff]
+
+[fowardEffect bit_talk_13]
+[charaShake A 0.05 5 5 0.4]
+[se bac247]
+[seStop bac247 0.5]
+
+[wt 0.5]
+
+[fowardEffectStop]
+
+[charaFace A 3]
+
+＠ディルムッド
+ぐ、ぬうううう……！
+[k]
+
+[charaFace A 2]
+
+＠ディルムッド
+双槍よ！
+[k]
+
+[charaFadeout A 0.1]
+
+[messageOff]
+
+[wt 0.3]
+
+[fowardEffect bit_bolg_03y]
+[se bac140]
+[wt 0.2]
+[se bac141]
+[wt 0.2]
+[fowardEffect bit_bolg_03]
+[se bac142]
+[wt 0.3]
+[se bac143]
+
+[wt 1.3]
+
+[fowardEffectStop]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ビリー
+ディルムッド！
+[k]
+
+[charaFadeout C 0.1]
+
+[effect bit_talk_06]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ディルムッド
+……ここまでのようです。[r]後は頼みます……！
+[k]
+
+？1：……[&ああ:うん]
+
+[charaFace A 0]
+
+＠ディルムッド
+……未練はあるが……。[r]そう、悪いものでもない……。
+[k]
+
+？2：……お疲れ様
+
+[charaFace A 1]
+
+＠ディルムッド
+……ははは、サーヴァントたる私に疲れなど……。[r]ありがとう、マスター。
+[k]
+
+[charaFace A 0]
+
+＠ディルムッド
+刹那といえども、共に戦えて……。
+[k]
+
+？！
+
+[bgmStop BGM_EVENT_3 2.0]
+
+[messageOff]
+[charaSpecialEffect A flashErasure 1 1.7]
+[se ad52]
+[wt 0.6]
+[effectStop bit_talk_06]
+[wait charaSpecialEffect A]
+[wt 1.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠ビリー
+……行こう、マスター！
+[k]
+
+[charaFadeout C 0.1]
+
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠マシュ
+大型のエネミーの反応は、もうありません。[r]次へ向かいましょう！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut B 1200,1200]
+
+[messageOff]
+
+[wt 0.3]
+
+[se ad83]
+[wait se ad83]
+
+[seLoop ad84]
+[seStop ad84 2.0]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

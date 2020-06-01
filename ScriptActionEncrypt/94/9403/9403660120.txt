@@ -1,0 +1,339 @@
+
+
+
+＄94-03-66-01-2-0
+
+[soundStopAll]
+
+[charaSet A 4032000 1 エルメロイⅡ世]
+
+[charaSet B 1098165800 1 アンティークオートマタ]
+
+[charaSet C 1001000 1 エフェクト用]
+
+[sceneSet D 74300 1]
+[charaScale D 1.4]
+
+[charaSet E 98109200 1 エフェクト用ダミー]
+
+[scene 10920]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.8]
+
+[charaEffect B bit_talk_quickmove]
+[charaSpecialEffect B erasureReverse 1 0.3]
+[se ad73]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+
+＠エルメロイⅡ世
+ふむ、逃げられたか。[r]無駄に高性能なヤツらだったな。
+[k]
+
+？1：師匠強かったんですね
+
+？！
+
+[charaFace A 1]
+
+＠エルメロイⅡ世
+戦闘能力は魔術師としては基本だとも。[r]なにしろ決闘を時計塔が奨励してるぐらいだからね。
+[k]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaFace A 0]
+
+＠エルメロイⅡ世
+しかし、私を襲うにしてはおかしな感じだったな。[r]どちらかといえば、周囲の監視のような……
+[k]
+
+[charaFace A 5]
+
+＠エルメロイⅡ世
+嫌な予感がする。すぐ[#集合住宅:フ　ラ　ッ　ト]に入るぞ。
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[se ad538]
+[bgm BGM_EVENT_81 1.0 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 63300]
+[wt 0.5]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_81 1.0 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠エルメロイⅡ世
+うむ。さっきのヤツらが去った後か？[r]とりあえず魔術の罠などは仕掛けられてないようだが……。
+[k]
+
+＠エルメロイⅡ世
+あ、万が一のため、君が扉を開けてくれるか？
+[k]
+
+？1：まさか実験台ですか！
+？2：そこは師匠が率先するところでは
+
+？！
+
+[charaFace A 1]
+
+＠エルメロイⅡ世
+つべこべ言わない。[r]弟子なら師匠のために死ぬべきだろう。ほれ開けろ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ade139]
+[shake 0.05 3 3 0.3]
+[cameraMove 0.3 -50,0 1.15]
+[wt 0.3]
+
+[fadeout black 0.7]
+[bgmStop BGM_EVENT_81 0.7]
+[wait fade]
+
+[cameraHome 0.1]
+
+[scene 11000]
+[se ad93]
+[wt 1.0]
+
+[fadein black 0.7]
+[wait fade]
+[wt 0.8]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠エルメロイⅡ世
+おお、爆発も何も起きないな。[r]さて授業の準備を[twt 0.8][charaFace A 5]………………いや。
+[k]
+
+＠エルメロイⅡ世
+……血の臭いだ。[r]君、気をつけたまえ。私から離れるな。
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[se ad95]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[wt 0.5]
+
+[scene 10000]
+
+[wipein rightToLeft 0.1 1.0]
+[wait wipe]
+
+[seStop ad95 0.3]
+[wt 2.2]
+
+＠エルメロイⅡ世
+そん、な……
+[k]
+
+[messageOff]
+[fadeout black 0.1]
+[wait fade]
+
+[charaTalk depthOff]
+
+[charaDepth D 1]
+
+[wt 1.0]
+[charaFadein D 0.4 200,-130]
+
+
+[fadein black 1.0]
+[charaMove D -100,-130 2.5]
+[wait fade]
+
+[scene 74300]
+[wt 1.5]
+
+[charaFadeout D 0.6]
+[wt 0.4]
+[se ade180]
+
+[wt 1.5]
+[bgm BGM_EVENT_90 0.1]
+
+[wt 2.0]
+
+
+？1：こ、これ……
+？2：死体？　見覚えが……あるような……
+
+？！
+
+[scene 11000 1.0]
+[wt 1.4]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠エルメロイⅡ世
+そんな……お前……お前は……
+[k]
+
+＠エルメロイⅡ世
+兄上……！[r][#ロード]・[#エルメロイⅡ世]……！
+[k]
+
+？1：え？
+
+？！
+
+[charaFace A 5]
+
+＠エルメロイⅡ世
+ああ、いや、そうだ。[#私はエルメロイⅡ世じゃない]。[r]私はいままで何を言っていた？
+[k]
+
+
+＠エルメロイⅡ世
+どうして、自分がエルメロイⅡ世だなんて思っていた？[r]どうして、そんな思い込みをしていられた？
+[k]
+
+[charaFace A 4]
+＠A：エルメロイⅡ世？
+どうして………兄上が………
+[k]
+
+？1：師匠………？
+？2：兄上って………
+
+？！
+
+[charaFace A 0]
+＠A：エルメロイⅡ世？
+………ああ、君。[wt 0.7][charaFace A 4][r]私にもわけが分からないが、これは………
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 74300]
+[cameraMove 0.1 160,100 1.5]
+
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[wt 1.0]
+
+
+＠A：エルメロイⅡ世？
+……む、何か手元に書かれている。[r]これは……Ｍ、か？
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+
+[se ad608]
+
+[bgmStop BGM_EVENT_90 1.0]
+[wait wipe]
+
+[cameraHome 0.1]
+
+[scene 11000]
+[wt 0.1]
+
+[charaTalk off]
+
+[wipein rectangleStripRightToLeft 0.3 1.0]
+
+[shake 0.03 5 5 0.6]
+[charaPut E 2400,2400]
+[charaRoll E 270]
+[charaEffect E bit_talk_impactlanding]
+
+[wait wipe]
+
+
+[shake 0.05 7 3 0.5]
+[seStop ad609 1.0]
+[wt 0.2]
+[charaPut E -100,0]
+[wt 0.3]
+[seStop ad59]
+
+[charaFadein B 0.4 -100,0]
+[charaMove B 1 0.5]
+
+[seStop ad608 1.5]
+
+[se ad66]
+
+[wt 0.4]
+[seStop ad66 0.4]
+[wt 1.2]
+
+[bgm BGM_EVENT_80 0.1]
+
+[se ad73]
+[charaPut C 1]
+[charaMoveScale B 1.2 0.2]
+[charaMove B 0,20 0.2]
+[charaEffect C bit_talk_41]
+[wt 0.1]
+[charaFadeout B 0.2]
+[wt 0.2]
+[charaPut C 1200,1200]
+[seStop ad73 0.2]
+[wt 0.3]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠A：エルメロイⅡ世？
+くっ、考える暇もないのか！[r]迎え撃つぞ！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

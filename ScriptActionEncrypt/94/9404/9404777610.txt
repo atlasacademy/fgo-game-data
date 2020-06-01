@@ -1,0 +1,162 @@
+
+
+
+＄94-04-77-76-1-0
+
+
+[soundStopAll]
+
+[charaSet A 1098192800 1 マリー]
+[charaSet B 7011001 1 ダレイオス三世]
+[charaSet C 98001000 1 マシュ]
+[charaSet D 3043000 1 エリセ]
+[charaSet E 4002001 1 イスカンダル]
+[charaSet F 5019002 1 エルメロイⅡ世（少年）]
+[charaSet T 5009000 1 エフェクト用ダミー]
+
+[scene 20730]
+
+[pictureFrame cut170_gameframe_bright]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth A 2]
+
+[charaTalk A]
+[charaFace B 0]
+[charaFadein B 0.1 256,-50]
+[charaFace A 0]
+[charaFadein A 0.1 -256,-50]
+
+＠マリー
+さあ、そろそろあなたの出番よ♪
+[k]
+
+[charaFace B 5]
+
+＠ダレイオス三世
+ギ・ギ・ギ……！
+[k]
+
+[messageOff]
+[se ad58]
+[charaMove B -56,-50 2.5]
+[wt 1.5]
+[seStop ad58 1.5]
+[charaFadeout B 0.4]
+[wt 0.8]
+[charaTalk A]
+[charaFace A 7]
+[wt 1.4]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-50]
+
+＠ダレイオス三世
+ギイィィ……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_48 1.5]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 0,-50]
+
+＠マシュ
+先輩！　ダレイオスさんが……！
+[k]
+
+？1：止め……！
+
+？2：うん、無理だこれ！
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 23]
+[charaFadein D 0.1 0,-50]
+
+＠エリセ
+なっ！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-50]
+[charaPut T 1]
+[charaEffect T bit_talk_41]
+
+＠ダレイオス三世
+[messageShake 0.05 6 3 0.9]
+ギイィィスカンダァァァァルゥアアアアアアアア！
+[k]
+
+[messageShakeStop]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+[charaEffectDestroy T]
+
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth F 2]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 -236,-50]
+[charaFace F 0]
+[charaFadein F 0.1 256,-50]
+
+＠イスカンダル
+おっほっほう！　来たぞ来たぞ、荒武者の王が！[r]激突するが礼儀というものよなぁ！
+[k]
+
+[charaFace F 5]
+
+＠エルメロイⅡ世（少年）
+ああ、もうっ。しょうがないな。[r]ボクの言うこと、ちゃんと聞きなよ？
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0,-50]
+
+＠エリセ
+……お二方とも、ご武運を。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_3 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

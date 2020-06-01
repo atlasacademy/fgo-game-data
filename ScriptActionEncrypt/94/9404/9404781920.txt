@@ -1,0 +1,154 @@
+
+
+
+＄94-04-78-19-2-0
+
+
+[soundStopAll]
+
+
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 25005000 1 ボイジャー]
+[charaSet C 3043000 1 エリセ]
+[charaSet D 98025100 1 ？？？]
+[charaSet E 98025100 1 エネミー１]
+
+[scene 47001]
+
+[pictureFrame cut170_gameframe_dark]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[pictureFrame]
+[pictureFrameTop cut170_gameframe_dark]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 0,-50]
+＠マシュ
+前方600メートル、エリセさん出現しました。[r]先輩、わたしたち、リードを奪われてしまいました。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_62 0.7 0.5]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.5]
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_62 0.7 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaDepth D 2]
+[charaDepth E 1]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFace E 0]
+[charaFadein D 0.4 -300,0]
+[charaFadein E 0.4 260,0]
+[wt 0.4]
+
+＠？？？
+[image berserker_language_2]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaFace C 2]
+[charaFadein C 0.1 0,-50]
+[wt 0.7]
+
+[se ad73]
+[charaMoveScale C 1.1 0.2]
+[charaMove C 0,-35 0.2]
+[wt 0.15]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[charaScale C 1.0]
+
+[effect bit_talk_v_slash01]
+[se ad471]
+[charaFadeout C 0.1]
+
+[wt 0.7]
+[seStop ad471 0.5]
+
+[charaFace D 0]
+[charaFace E 0]
+[charaFadein D 0.1 -300,0]
+[charaFadein E 0.1 260,0]
+[wt 0.1]
+[charaShake D 0.05 3 3 0.4]
+[charaShake E 0.05 3 3 0.4]
+[wt 1.0]
+
+[se ad42]
+[charaSpecialEffect D enemyErasure 1 1.5]
+[charaSpecialEffect E enemyErasure 1 1.5]
+[wt 0.5]
+[seStop ad42 1.0]
+[wait charaSpecialEffect D]
+[wait charaSpecialEffect E]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.5]
+
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+[wt 1.2]
+
+[charaTalk on]
+＠マシュ
+エリセさん、敵を撃破しました。[r]１回休み、ありません。
+[k]
+
+
+＠ボイジャー
+まってよ、エリセ！
+[k]
+
+[messageOff]
+[charaTalk C]
+[wt 1.0]
+
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_62 0.7 0.5]
+[wait wipe]
+[charaFadeout C 0.1]
+[wt 0.5]
+[bgm BGM_EVENT_62 0.7 1.0]
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 0,-50]
+＠マシュ
+……こちらの呼びかけも無視されているようですね。
+[k]
+
+
+[messageOff]
+[maskout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

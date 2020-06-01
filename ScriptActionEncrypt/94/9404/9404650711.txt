@@ -1,0 +1,541 @@
+
+＄94-04-65-07-1-1
+
+[soundStopAll]
+
+[charaSet A 5033002 1 キルケー]
+[charaSet B 1098181810 1 オデュッセウス]
+
+[charaSet D 1001000 1 エフェクト用_1]
+[charaSet E 1001000 1 エフェクト用_2]
+[charaSet F 1001000 1 エフェクト用_3]
+
+[scene 21101]
+
+[bgm BGM_EVENT_24 0.1]
+
+
+[cameraMove 0.1 0,0 1.01]
+
+[fadein black 1.5]
+[wait fade]
+
+[effect bit_talk_shot_02]
+[se ad170]
+[wt 0.2]
+[charaEffect D bit_talk_14]
+[se ad170]
+[se ad170]
+[wt 0.3]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[se bac151]
+[wt 0.3]
+
+[charaScale A 1.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[se ad671]
+[seStop ad671 0.9]
+[charaMoveScale A 1.0 0.3]
+[wt 0.2]
+[charaFadeout A 0.3]
+[wt 0.7]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.1]
+[charaMoveScale B 1.2 0.2]
+[charaMove B 0,10 0.2]
+[se bac2]
+[effect bit_talk_41]
+[charaFadeout B 0.2]
+[wt 0.2]
+[effectStop bit_talk_41]
+[effectDestroy]
+[wt 0.1]
+
+[charaScale B 1.0]
+
+[masterBranch _Male _Female]
+
+[label _Male]
+
+[fowardEffect bit_talk_CommandMantra_01]
+[wt 0.5]
+[se bas16]
+[wt 1.3]
+[branch _branchEnd]
+
+[label _Female]
+
+[fowardEffect bit_talk_CommandMantra_02]
+[wt 0.5]
+[se bas16]
+[wt 1.3]
+[branch _branchEnd]
+
+[label _branchEnd]
+
+[effect bit_talk_14]
+[shake 0.02 5 5 0.4]
+[se ad471]
+[seStop ad471 1.0]
+[wt 0.4]
+
+[charaScale B 1.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[se ad671]
+[charaMoveScale B 1.0 0.3]
+
+[wt 1.0]
+[charaFace B 4]
+
+[bgmStop BGM_EVENT_24 2.0]
+
+＠オデュッセウス
+……ここまでか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+[se ad37 0.3]
+
+＠キルケー
+マスター！
+[k]
+
+？1：ごめん……
+？！
+
+[charaFace A 0]
+
+＠キルケー
+いや、いいよ。[r]心配して来てくれたんだろ。
+[k]
+
+[messageOff]
+[se ade153]
+[seVolume ade153 0 0.6]
+[charaFace A 0]
+[wt 1.0]
+
+[fadeout ed79fc 0.3]
+[se ad29]
+[wait fade]
+
+[cameraHome 0.1]
+
+[charaChange A 5033001 0 fade 0.1]
+[seStop ad39 1.0]
+[seStop ad153 0.6]
+[wait charaChange A]
+[wt 0.1]
+
+[fadein ed79fc 0.8]
+[seStop ade153 0.8]
+[seStop ad29 0.8]
+[wait fade]
+
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠オデュッセウス
+それはマスターとして当然のことだ。[r]何より……勝ち負けが問題じゃない。
+[k]
+
+[charaFace B 1]
+
+＠オデュッセウス
+そうだろう？
+[k]
+
+[seStop ad37 1.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_95 0.1]
+
+＠キルケー
+[line 3]うん。
+[k]
+
+[charaFace A 4]
+
+＠キルケー
+最初から……いや、生前か。[r]生前のとき、こうすれば良かった。
+[k]
+
+[charaFace A 5]
+
+＠キルケー
+思い切り殴って、罵倒して、[r]戦ってしまえば、いっそ振り切れた。
+[k]
+
+＠キルケー
+それをしなかったから、[r]傷口は塞がれないままだったんだ。
+[k]
+
+[charaFace A 0]
+
+＠キルケー
+[line 3]よし。
+[k]
+
+＠キルケー
+だから、きみが消える前に告白するよ。[r]私は。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠オデュッセウス
+……ああ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠キルケー
+私はね、きみを愛していたよ。
+[k]
+
+
+＠キルケー
+それが[#一方通行:いっぽうつうこう]であれ、[r]私はきみを愛していたとも！
+[k]
+
+[charaFace A 0]
+
+＠キルケー
+……でも、きみは私を愛さない。[r]だろう？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠オデュッセウス
+……そうだな。
+[k]
+
+[charaFace B 0]
+
+
+＠オデュッセウス
+俺はペーネロペーを愛している。[r]サーヴァントとなってからも、それは変わらん。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠キルケー
+彼女を愛する理由を教えてくれるかい？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠オデュッセウス
+……理由は……わからない。[r]美しいからじゃない、優しいからでもない。
+[k]
+
+[charaFace B 0]
+
+＠オデュッセウス
+ただ、その人がその人であるというだけで、[r]紡げる愛がある。
+[k]
+
+[charaFace B 7]
+
+＠オデュッセウス
+上手く説明できないが……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠キルケー
+いや、ありがとう。[r]よくわかった。
+[k]
+
+＠キルケー
+きみはそれでいい、それでいいんだよ。[r]オデュッセウス。
+[k]
+
+[charaFace A 4]
+
+＠キルケー
+メディアには勘違いさせてしまったが[line 3]
+[k]
+
+[charaFace A 0]
+
+
+＠キルケー
+私はきみに、未練がある訳じゃない。[r]未練があったのは、きみとの離別だけだ。
+[k]
+
+
+＠キルケー
+最後の最後で喧嘩して別れたことを[r]後悔していただけなんだよ。
+[k]
+
+＠キルケー
+だから[line 3]今、伝えよう。[r]とっくの昔に手遅れになっていた言葉だけど。
+[k]
+
+[cameraFilter gray]
+[se ad37 0.5]
+[seVolume ad37 0 0.3]
+
+
+＠
+真っ赤っかな夕焼けと波の音。[r]私とあいつは向かい合う。
+[k]
+
+[messageOff]
+[seStop ad37 1.0]
+[bgmStop BGM_EVENT_95 1.0]
+[cameraFilter normal]
+[wt 0.1]
+[charaFaceFade A 1 0.7]
+[wt 1.2]
+[bgm BGM_EVENT_6 0.1]
+
+＠キルケー
+オデュッセウス。[r]どうか幸せに。
+[k]
+
+＠キルケー
+きみの幸福を何より願っていたよ、ずっと。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠オデュッセウス
+……。[r]……。
+[k]
+
+[charaFace B 1]
+
+
+＠オデュッセウス
+ああ、俺もホッとした。[r]今のおまえは、幸福に見えるからな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠キルケー
+ああ。
+[k]
+
+[charaFace A 1]
+
+
+＠キルケー
+いいマスターといい仲間に巡り会えた。[r]これでも結構、第二の生を楽しんでいるんだぜ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠オデュッセウス
+それは良かった。
+[k]
+
+[messageOff]
+[charaEffect D bit_talk_06]
+[wt 1.0]
+[charaFace B 0]
+
+＠オデュッセウス
+……む。[r]そろそろ時間のようだ。
+[k]
+
+[charaPut D 1200,1200]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠キルケー
+それじゃあ。[r]いつかまた、カルデアで。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut D 0,0]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠オデュッセウス
+ああ。
+[k]
+
+[charaFace B 0]
+
+＠オデュッセウス
+……ええと、[%1]。
+[k]
+
+＠オデュッセウス
+キルケーをよろしく頼む。[r]おまえがついているなら、きっと大丈夫だろう。
+[k]
+
+？1：[&ああ:うん]、約束する
+？！
+
+[messageOff]
+[charaFaceFade B 1 1.3]
+[wt 0.7]
+
+[se ad52]
+[charaSpecialEffect B flashErasure 1 2.5]
+[wait charaSpecialEffect B]
+[charaEffectStop D bit_talk_06]
+[seStop ad52 0.2]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠キルケー
+行ったかー……。
+[k]
+
+？1：大丈夫？
+
+＠キルケー
+うん。[r]まったくもって大丈夫。
+[k]
+
+？2：邪魔だった？
+
+＠キルケー
+まさか。[r]むしろ感謝しかないよ、マスター。
+[k]
+
+？！
+
+＠キルケー
+心の整理なんて、とっくの昔についていたんだ。[r]ただ、認めたくなかっただけで。
+[k]
+
+＠キルケー
+でも、もう大丈夫。
+[k]
+
+[charaFace A 1]
+
+＠キルケー
+私は失恋したけど[line 3]挫折してはいない！[r]ちょっと辛いけど、どうってことはない！
+[k]
+
+[charaFace A 0]
+
+＠キルケー
+ねえ、マスター。
+[k]
+
+＠キルケー
+きみにとって私は多くのサーヴァントの中の[r]一人でしかないだろうけど。
+[k]
+
+＠キルケー
+私は私のマスターがきみで良かったと思う。
+[k]
+
+＠キルケー
+……まあ、それはそれとして。[r]とりあえず背中を貸してくれ。
+[k]
+
+[charaFace A 3]
+
+＠キルケー
+みっともなく、[#べそをかく]予定なんだ。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 84906 1.5]
+[shake 0.02 2 2 0.5]
+[se ad183]
+[wt 3.0]
+
+＠キルケー
+……ありがとう、本当に。[r]さようなら、私の恋。
+[k]
+
+＠
+[line 3]そうして、この小さな小さな特異点は。[r]私の未練と共に綺麗サッパリ消滅したのである。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_6 2.0]
+[wait fade]
+[soundStopAll]
+[end]

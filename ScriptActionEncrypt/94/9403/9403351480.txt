@@ -1,0 +1,140 @@
+
+
+＄94-03-35-14-8-0
+
+
+[charaSet A 6015002 1 エミヤ]
+[charaSet C 98002000 1 フォウ]
+[charaSet D 6015002 1 エミヤ２]
+
+[soundStopAll]
+
+[scene 10420]
+
+[fadein black 2]
+[wait fade]
+
+
+
+
+
+[se ad8]
+[wait se ad8]
+
+
+[se ad95]
+[seVolume ad95 0 0.2]
+[wt 1.0]
+[seVolume ad95 1.0 0.6]
+[wt 1.0]
+[seVolume ad95 1.0 0.9]
+[wt 1.0]
+[seStop ad95]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+[bgm BGM_EVENT_11 0.3]
+
+＠エミヤ
+[tVoice ValVoice_601500 0_V010]
+………………。[wait tVoice]
+[k]
+
+
+[charaTalk on]
+[charaTalk C]
+
+＠
+彼[charaTalk C]は、眠っているあなたの枕元に何かを置いた。
+[k]
+
+＠
+重[charaTalk C]く、硬く、ひどく冷たいモノだ。[r]ヒトの命を奪う武器だ。
+[k]
+
+[charaTalk off]
+
+＠エミヤ
+[tVoice ValVoice_601500 0_V020]
+昼間の礼だ。[r]といっても、アンタには無用の長物だろうが。[wait tVoice]
+[k]
+
+[charaTalk off]
+
+＠エミヤ
+[tVoice ValVoice_601500 0_V030]
+他には何も思い付かん。[r]せいぜい、これを使わんように抗うといいさ。[wait tVoice]
+[k]
+
+＠エミヤ
+[tVoice ValVoice_601500 0_V040]
+[line 6]。[wait tVoice]
+[k]
+
+
+[charaTalk off]
+[charaDepth A 1]
+[charaDepth D 0]
+
+[messageOff]
+[charaFace A 3]
+[wt 1.0]
+[charaFace A 4]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠エミヤ
+[tVoice ValVoice_601500 0_V050]
+人理を守り、世界を救うために戦う。[r]アンタはまるで……[wait tVoice]
+[k]
+
+[charaChange A 6015002 0 fade 1.0]
+[wt 1.0]
+
+＠エミヤ
+[tVoice ValVoice_601500 0_V060]
+いや。アンタはきっと、僕とは違うんだろうさ。[wait tVoice]
+[k]
+
+
+[messageOff]
+
+[se ad95]
+[charaFadeout A 0.4]
+[charaFadeout D 0.4]
+
+[wt 0.7]
+[seStop ad95 1.9]
+[wt 2.0]
+
+
+
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_11 2.0]
+[wait fade]
+
+[scene 10000]
+[fadein black 1]
+[wait fade]
+
+[se bas2]
+[equipSet B 9805830 1 ]
+[wait equipSet B]
+[charaFace B 0]
+[charaFadein B 0.5 0,-70]
+[wt 2.0]
+[charaFadeout B 0.4]
+[wt 1.0]
+
+
+
+[soundStopAll]
+[end]

@@ -1,0 +1,168 @@
+
+
+
+＄94-04-78-12-1-0
+
+[soundStopAll]
+
+[skip false]
+
+[maskout black 0]
+[wait mask]
+
+[charaSet A 3043000 1 エリセ]
+[charaSet B 9008001 1 アストライア]
+[charaSet C 11006001 1 サリエリ]
+[imageSet D cut171_token_203 1]
+[charaSet T 5009000 1 エフェクト用ダミー]
+[imageSet K cut174_9th 1]
+[imageSet L cut174_9th 1]
+
+[scene 20730]
+
+[pictureFrameTop cut170_gameframe_bright]
+
+[skip true]
+
+[fadein black 0]
+[wait fade]
+[maskin black 1.5]
+[wait mask]
+
+[bgm BGM_EVENT_3 0.1]
+[wt 0.5]
+
+[charaTalk depthOff]
+[charaTalk off]
+
+[charaDepth T 1]
+[charaDepth D 2]
+[charaDepth C 3]
+
+[charaPut T 0,-10]
+[charaEffect T bit_talk_token_materialization]
+[cueSe NoblePhantasm_603800 NP_603800_1]
+[wt 2.5]
+[cueSeStop NP_603800_1 0.5]
+
+[charaFadein D 0.4 0,-210]
+[wt 1.2]
+
+[se ad29]
+[fadeout white 0.5]
+[wait fade]
+[charaEffectDestroy T bit_talk_token_materialization]
+[charaFace C 6]
+[charaFadein C 0.7 0,-50]
+[wt 0.2]
+[fadein white 0.5]
+[charaFadeout D 0.4]
+[wait fade]
+[wt 0.8]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+＠サリエリ
+正義の裁きだと？　笑わせてくれるではないか。[r]さぞ完璧に調和した[#断罪:メロディ]を奏でるのだろうな。
+[k]
+
+[charaFace C 5]
+
+＠サリエリ
+な[messageShake 0.05 4 4 0.4]らば我は！　抗い！　あがき！　欺いて！[r]嘲笑ってやるとしよう！　貴様が奉る正義とやらを！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 0,-50]
+[charaShake A 0.05 3 3 0.3]
+
+＠エリセ
+くっ……！
+[k]
+
+
+[charaFace A 4]
+
+＠エリセ
+これは、私ひとりの戦いじゃないんだから。[r][#遊戯界:このせかい]を許すかどうかが問われてるんだ。
+[k]
+
+[charaFace A 5]
+
+＠エリセ
+お願いします。[r]女神よ、どうか正しき裁きを。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-50]
+
+＠アストライア
+心得ておりますわ。この両腕と、両脚と、腰と腹筋と、[r]全身のバネと、燃える[#志:こころざし]に誓って[line 3]
+[k]
+
+[charaFace B 2]
+
+＠アストライア
+[#いざ:ルクトール]！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.7]
+
+[charaDepth K 2]
+[charaDepth L 1]
+[charaScale L 1.4]
+
+[effect bit_talk_x_slash01]
+[se ad470]
+[seVolume ad470 0 0.9]
+[wt 0.1]
+[seStop ad470 0.2]
+[wt 0.1]
+
+[effect bit_talk_x_slash02]
+[se ad470]
+[seVolume ad470 0 0.9]
+[wt 0.2]
+[seStop ad470 0.3]
+[wt 0.3]
+
+[backEffect bit_talk_sparks]
+
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[se ad471]
+[charaFadein L 0.2 0,-270]
+[wt 0.1]
+
+[charaFadein K 0.2 0,-200]
+
+[charaMove L 0,-200 0.2]
+[charaMoveScale L 1.0 0.2]
+[wt 0.5]
+[effectStop bit_talk_fire]
+
+[wt 2.0]
+
+[maskout black 0.5]
+[seStop ad471 0.4]
+[bgmStop BGM_EVENT_3 0.4]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[soundStopAll]
+[end]
+
+
+
+

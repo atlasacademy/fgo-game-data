@@ -1,0 +1,432 @@
+
+
+＄94-04-49-12-2-0
+
+[soundStopAll]
+
+[skip false]
+
+[branchQuestNotClear lblNotClear1 3000320 4]
+[label lblClear1]
+[flag IsGirl true]
+[branch lblIsClearConf1]
+[label lblNotClear1]
+[flag IsGirl false]
+[label lblIsClearConf1]
+
+[skip true]
+
+[charaSet A 2035000 1 パリス]
+[charaSet B 3016000 1 ヘクトール]
+[charaSet C 5036001 1 アヴィケブロン]
+[charaSet D 7027300 1 アマゾネスＣＥＯ_普通]
+[charaSet E 1098119600 1 アマゾネスＣＥＯ_ろくろ]
+[charaSet F 7027002 1 ペンテシレイア]
+[charaSet H 99502600 1 マシュ]
+[charaSet I 6008000 1 コスモティック・ビューティ夫人]
+[charaSet J 5009000 1 エフェクト用]
+
+[branch lblNotGirl1 IsGirl false]
+[label lblGirl1]
+[charaSet G 1098124510 1 ダ・ヴィンチ]
+[branch lblIsGirlConf1]
+[label lblNotGirl1]
+[charaSet G 98111500 1 ダ・ヴィンチ]
+[label lblIsGirlConf1]
+
+[scene 89703]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠パリス
+すやすや……アポロンさま……ふえすぎ……[r]海が３でアポロン様が７……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ヘクトール
+嫌な夢見てるなコイツ……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アヴィケブロン
+その様子だと、どうやらこってりと絞られたようだね。[r]そこ、座ってもいいだろうか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ヘクトール
+アンタか。[r]勿論、構わないぜ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth B 2]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFace B 0]
+[charaFadein B 0.1 2]
+
+＠アヴィケブロン
+……さて。[r]話をしようか。
+[k]
+
+[charaFace B 1]
+
+＠ヘクトール
+あ、やっぱり？
+[k]
+
+＠アヴィケブロン
+僕のようなものには知識こそが何よりの対価さ。[r]そろそろ聞かせてもらってもいいだろう。
+[k]
+
+＠アヴィケブロン
+なぜ、[#僕に提案をさせた]のかな？
+[k]
+
+[messageOff]
+[charaTalk B]
+[wt 1.0]
+[charaFace B 0]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠ヘクトール
+……ペンテシレイアにゃ、でっかい借りがあるからさ。
+[k]
+
+[charaFace B 4]
+
+＠ヘクトール
+どっちが後世に名前が残ってるとか、[r]どっちも結局アイツに負けて死んだとか、
+[k]
+
+＠ヘクトール
+そういうのは割とどうでもいい。
+[k]
+
+＠アヴィケブロン
+僕の[#あれ]は、彼女への借りを返す事になるのかね？
+[k]
+
+[charaFace B 0]
+
+＠ヘクトール
+多分な。どうなるのかは知らんが。
+[k]
+
+＠ヘクトール
+多かれ少なかれ、アレは彼女の一部だ。[r]それを抜きにして語らせるわけにもいかないだろ。
+[k]
+
+＠アヴィケブロン
+ふむ。
+[k]
+
+＠ヘクトール
+他の理由としては、単純に[line 3]
+[k]
+
+[charaFace B 1]
+
+＠ヘクトール
+俺、アイツをひどい目に遭わせられるチャンスは[r]意識的に逃さないようにしてるんだよ。
+[k]
+
+＠アヴィケブロン
+ほう、それはまた。
+[k]
+
+＠ヘクトール
+だってそうしないと、いつか[#本気:ガチ]の殺し合いに[r]なっちまうかもしれないからさ！
+[k]
+
+＠アヴィケブロン
+……戦士の性根というのは、つくづく厄介なものだね。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_70 1.5]
+[wait fade]
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[charaTalk depthOn]
+[scene 90003]
+[charaTalk off]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[wt 1.0]
+[charaSet A 1098126200 1 荷運びゴーレム]
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+[bgm BGM_EVENT_3 0.1]
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.3]
+
+[charaFadeout D 0.1]
+[se ad73]
+
+[wt 0.3]
+
+[charaFace F 5]
+[charaFadein F 0.1 1]
+[wt 0.2]
+
+[wt 0.1]
+[charaFadeout F 0.1]
+[se ad73]
+[wt 0.2]
+
+[effect bit_talk_kengekiall02 0,0 F]
+[wt 0.2]
+[se ad32]
+[wt 0.2]
+[se ad32]
+[wt 0.2]
+[se ad32]
+[wt 0.05]
+[fowardEffect bit_talk_kengekiall02 0,0 V]
+[wt 0.1]
+[se ad32]
+[wt 0.2]
+[se ad32]
+[wt 0.2]
+[se ad32]
+[wt 0.4]
+
+[fowardEffectDestroy bit_talk_kengekiall02]
+[effectDestroy bit_talk_kengekiall02]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 5]
+[charaScale F 1.1]
+[charaFadein F 0 1]
+[se ad671]
+[seVolume ad671 0 0.6]
+[charaShake D 0.08 6 2 0.4]
+[charaMoveScale F 1.0 0.3]
+
+[wt 0.3]
+[seStop ad671 0.3]
+
+＠ペンテシレイア
+ハァ、ハァ[line 3][wt 0.1][charaFace F 1]ハハハハハ！[r]自分との戦いも、なかなかどうして！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠D：アマゾネスＣＥＯ
+フゥ……ククク！　意外に、エキサイティングな、[r]サジェスチョンではないか！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[branch lblNotGirl2 IsGirl false]
+[label lblGirl2]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+[branch lblIsGirlConf2]
+[label lblNotGirl2]
+[charaFace G 4]
+[charaFadein G 0.1 0,-90]
+[label lblIsGirlConf2]
+
+＠ダ・ヴィンチ
+似た者同士だねぇ。当たり前だけど。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠ペンテシレイア
+いい、いいぞ。我らに在るべきはこの高揚だ。[r]かつてなく昂ぶってきた[line 3]研ぎ澄まされてきた。
+[k]
+
+＠ペンテシレイア
+この筋肉も、戦闘感覚も、五感そのものも。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠D：アマゾネスＣＥＯ
+同感だ。五感も……五感……
+[k]
+
+[bgmStop BGM_EVENT_3 2.0]
+
+[charaFace D 14]
+
+＠D：アマゾネスＣＥＯ
+ん[line 3]この、臭い、は……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠ペンテシレイア
+……？　…………！？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.4]
+
+
+[cameraMove 0.1 -35,20 1.2]
+[wt 0.2]
+[cameraMove 0.2 75,20 1.2]
+[wt 0.3]
+[cameraMove 0.3 -75,20 1.2]
+[wt 0.5]
+
+[fadeout black 0.3]
+[wait fade]
+[cameraHome 0.1]
+[wt 0.1]
+[fadein black 0.3]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaPut J 1]
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠マシュ
+ど、どうしたのでしょう？[r]二人とも、急に周囲を見回すような動きを[line 3]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+
+＠コスモティック・ビューティ夫人
+ご覧なさい、あの柱の陰に何かいるようですわ。[r]あれは……？
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[charaFadeout I 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.4]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[bgmStop BGM_EVENT_5 1.2]
+
+[wt 1.0]
+
+？1：荷運び用のゴーレムくんだ
+？2：何も用事は頼んでないのに、どうして
+？！
+
+[fadeout black 0.3]
+[wait fade]
+[charaFadeout A 0]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0 0]
+[charaFace D 5]
+[charaFadein D 0 2]
+[fadein black 0.3]
+[wait fade]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠ペンテシレイア
+[f medium][messageShake 0.07 7 5 0.6]あ、ああ、あああああアアアァァァ！[r]貴様、貴様、貴様ッ[line 3]
+[k]
+
+[charaFace D 2]
+
+＠D：アマゾネスＣＥＯ
+臭う、臭うぞ。[r]研ぎ澄まされているが[#故:ゆえ]に！　わかるッ！
+[k]
+
+[charaTalk off]
+[charaEffect D bit_talk_charge_red]
+[charaEffect F bit_talk_charge_red]
+[se ad61]
+[se ad556]
+[seVolume ad556 0 0.6]
+
+[charaFace F 7]
+[charaFace D 7]
+
+＠ペンテシレイア＆アマゾネスＣＥＯ
+[#そこにいるな]！[r][line 3][#アキレウスゥゥゥゥ]！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[seStop ad61 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

@@ -1,0 +1,179 @@
+
+
+＄94-01-50-14-3-1
+[soundStopAll]
+
+[charaSet A 2028000 1 エレナ]
+[charaSet B 1031002 1 フラン]
+[charaSet C 2023000 1 プロフェッサーＭ]
+[charaSet D 5011001 1 バベッジ]
+[charaSet E 5025001 1 エジソン]
+[charaSet F 2011001 1 ニコラ・テスラ]
+
+[scene 44100]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_3 0.1]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠エレナ
+この場でもっとも美しい二人に敗れたって事で、[r]この人も満足でしょ。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout A 0]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.4 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠フラン
+ゥゥ……つかれた……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.05]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.4 1]
+
+＠プロフェッサーＭ
+休息させてあげたいところだが、そうもいかないようだ。
+[k]
+
+＠プロフェッサーＭ
+今の戦闘の間に、後方集団との差が詰まってきている。
+[k]
+
+[charaFace C 0]
+
+＠プロフェッサーＭ
+このエリアを勝利するためには、ここからまだ最後の[r]一踏ん張りが必要なようだよ。いけるかね？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.05]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠フラン
+ゥ。がんばる！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.05]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠バベッジ
+[line 3]善き子だ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.05]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠プロフェッサーＭ
+うんうん、同感だとも。ところで、今まで腰を曲げて[r]色々作業していたパパの腰を揉んでくれる気とかないカナ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.05]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠フラン
+いいよ。[r]ちょっとまって。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.05]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠プロフェッサーＭ
+え、電気治療？[r]いやちょっと待って確かそれって最低でもＤラン[line 3]
+[k]
+
+[se ad61]
+[fowardEffect bit_talk_lightning_02g]
+[charaFace C 2]
+
+＠プロフェッサーＭ
+Ｎ[charaShake C 0.05 7 10 0]ｏｏｏｏｏｏｏｏｏｏｏ！[seStop ad61 2.0][wait se ad61][charaShakeStop C][fowardEffectStop]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.05]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠バベッジ
+Ｒ・Ｉ・Ｐ。
+[k]
+
+[messageOff]
+[wt 0.4]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[wt 0.3]
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠エレナ
+……あたしも肩とか揉んでくれたりするのかしら？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.05]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+[charaFace F 0]
+[charaFadein F 0.1 0]
+
+＠エジソン＆テスラ
+任せておけ。この[#直流:交流]電気治療器を貼れば、[r]どのような肩こりも一発で解消である！
+[k]
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.5]
+[fadeout black 1.5]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

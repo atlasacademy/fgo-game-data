@@ -1,0 +1,440 @@
+
+
+＄03-00-02-16-2-0
+
+
+[soundStopAll]
+
+
+[charaSet A 8001400 1 マシュ]
+[charaSet B 98002000 1 フォウ]
+[charaSet C 2031001 1 ナポレオン]
+[charaSet D 1033002 1 シグルド]
+[charaSet E 1098124510 1 ダ・ヴィンチ]
+[charaSet F 3012001 1 ブリュンヒルデ]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[scene 51600]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[se ad629]
+[se ad553]
+[seVolume ad553 0 0.4]
+
+[fadein black 1.0]
+[shake 0.05 0 2 0]
+[wait fade]
+
+
+[wt 1.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 60703]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+[seStop ad553 1.0]
+[seStop ad629 1.0]
+[wt 0.5]
+
+[bgm BGM_EVENT_82 0.1]
+
+＠ムニエル
+シャドウ・ボーダー全力疾走だ！[r]舌噛むぞ、英霊以外はシートベルト着用しとけ！
+[k]
+
+＠ゴルドルフ
+おおおおおおおお、揺れる、揺れる！[r]安全運転とまでは言わんが転倒は許されんぞピカタ君！
+[k]
+
+[shakeStop]
+
+＠ムニエル
+ピカタじゃねーよ、ムニエルだよ！[r]くそ、[#操縦桿:そうじゅうかん]握るのにも慣れてきちまった！
+[k]
+
+＠ムニエル
+……って、[r]そういやホームズはどこ行った！
+[k]
+
+＠ダ・ヴィンチ
+喋りすぎたとか言ってポッドに戻ったよ。[r]あの名探偵、確認と交渉のためだけに起きてたワケ！
+[k]
+
+＠スカサハ＝スカディ
+なんとも呆れた男だ。[r]あそこまで堂々と言の葉を紡ぎながら、[#満身創痍:まんしんそうい]か。
+[k]
+
+＠スカサハ＝スカディ
+ポッドとやらはあちらだな？[r]奴には、我が癒やしのルーンを賜る光悦をくれてやろう。
+[k]
+
+＠スカサハ＝スカディ
+フレイヤ、オルトリンデ。[r]ついて参れ。
+[k]
+
+＠シトナイ
+もう、イリヤだって何回も言わせないで。[r]付いていくけどね。
+[k]
+
+＠オルトリンデ
+了解しました。
+[k]
+
+＠ムニエル
+へえ、女神さまの看病か[line 3]
+[k]
+
+＠ムニエル
+いやいやホームズは無茶しやがるなあ！[r]まあ、ボーダーにはそんな連中ばっかりだけどさぁ！
+[k]
+
+＠ゴルドルフ
+ふ。地力が乏しいのだから仕方あるまい。[r]私のように優れた人間ではないのだからな。
+[k]
+
+＠ゴルドルフ
+そして私はキミたちとは違うと断言しますよ、諸君。[r]私は冒険とかしないからね、ぜったい。
+[k]
+
+＠ゴルドルフ
+最高責任者は常に冷静に状況を把握し、人員を配置し、[r]組織を正しく円滑に運営しに[wt 0.5][messageShake 0.05 3 2 1.0]ゅっぶひゅー。
+[k]
+
+[messageShakeStop]
+
+＠ムニエル
+あーもう！　舌噛むって言ったのに！[r][%1]、そっちは！？
+[k]
+
+？1：（ナポレオンに呼び掛ける）
+？2：（車上の状況を確認する）
+
+？！
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1]
+[bgmStop BGM_EVENT_82 0.7]
+[wait wipe]
+
+
+[scene 60603]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.5 1]
+[se ad207]
+[seVolume ad207 0 0.5]
+[wait wipe]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ナポレオン
+おっと、[%1]か？[r]こっちは！　当然！！
+[k]
+
+[charaFace C 2]
+[messageOff]
+[charaMoveReturn C 6,0 0.4]
+[flashin once 0.2 0.8 FFFFFF80 FFFFFF00]
+[cueSe Battle bac423]
+[wt 1.5]
+[charaFace C 5]
+
+＠ナポレオン
+適宜、各自の判断って奴で迎撃中だ！[r]そっちでも把握してると思うが次から次へと押し寄せる！
+[k]
+
+[messageOff]
+[seStop ad207 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+[se ad201]
+[wt 0.4]
+[seStop ad201 0.3]
+[wt 0.5]
+
+[cueSe Battle bac428]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+巨人種との遭遇率はあまり変わりませんが、[r]飛来する種子の数が増えています！
+[k]
+
+[charaFace A 15]
+
+＠マシュ
+いえ、飛来するタイプの個体だけでなく、[r]地上を走って、車体に取り付こうとする個体までいます！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+[wt 0.3]
+＠ダ・ヴィンチ
+逐一連絡するのも申し訳ないくらい増えているけど、[r]我慢して聞いてほしいナ！
+[k]
+
+[charaFace E 25]
+
+＠ダ・ヴィンチ
+今回はさらに無茶ぶりだ。[r]スルトと思しき膨大な魔力の塊が[#南下している]！
+[k]
+
+＠ダ・ヴィンチ
+旧スウェーデン北部に存在していた反応が[r]急速に南下しているんだ。つまり！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ナポレオン
+……俺たちを迎撃に来たか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠シグルド
+否。アレは当方らを迎撃すべき大敵とみなしはすまい。[r]すなわち……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠ブリュンヒルデ
+[#何か]に接近するつもりなのでしょう。[r]炎の領域にはないモノへ……
+[k]
+
+＠ブリュンヒルデ
+たとえば、旧ヴェーネルン湖上に存在している[line 3]
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+[wt 0.8]
+[charaFace C 2]
+[wt 0.4]
+
+＠ナポレオン
+集落か！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+ビンゴ！
+[k]
+
+＠ダ・ヴィンチ
+スルトのルートはまさにそれだ！[r]集落のある旧ヴェーネルン湖上にまっすぐ南下している！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ナポレオン
+空想樹との接続ってのは終えたのか。[r]くそ、それじゃあこっちも南へ反転せにゃならんな！
+[k]
+
+[charaFace C 2]
+
+＠ナポレオン
+面倒だ、とは言ってられん！[r]最終的には接近できるってのは、まあ、有り難くもある！
+[k]
+
+[charaFace C 4]
+
+＠ナポレオン
+流石に、追い付かんので[#超長距離砲撃]の連続を[line 3]
+[k]
+
+＠ナポレオン
+なんて展開は避けたかったからな。
+[k]
+
+[charaFace C 6]
+
+＠ナポレオン
+好都合と捉えておこう！[r]フゥ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+理由がはっきり掴めないけどね……[r]炎の剣は強力だ。何処で振るったっていい。
+[k]
+
+＠ダ・ヴィンチ
+何でまたわざわざ集落に向かうのかな？[r]んー、集落を[#灼:や]くさまを私たちに見せ付けたい、とか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ナポレオン
+オレたちに見せる意味はなかろうな。
+[k]
+
+＠ナポレオン
+シグルドの言う通り、あれは英霊にも神様にも[r]さして興味はなさげだぜ。
+[k]
+
+＠ナポレオン
+そうだな。ひとつ、[r]思い付く事がなくもないが[line 3]まあ野暮だな！
+[k]
+
+
+[charaFace C 1]
+＠ナポレオン
+何にせよ我が[#大陸軍:グランダルメ]には好都合！[r]そろそろ、オレも本気を出していい頃合いだ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠フォウ
+フォフォフォウ、フォウ！[r]キャウ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠ナポレオン
+はは！　応援してくれるのか！[r]まあ、確かにオレは常に全力で戦っちゃいるが……
+[k]
+
+[charaFace C 10]
+
+＠ナポレオン
+……そろそろ、な。[r][#正真正銘:しょうしんしょうめい]の本気が必要だ。
+[k]
+
+[charaFace C 3]
+
+＠ナポレオン
+隠し球の事もある！[r]いや、本命の前の露払いには勿体ないが！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad201]
+[wt 0.4]
+[seStop ad201 0.3]
+[wt 0.5]
+[cueSe Battle bac428]
+[shake 0.05 3 2 1.5]
+[wt 2.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+種子と巨人種が押し寄せてきます！[r]車上に取り付く個体も、数体は出てきそうです！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠ナポレオン
+そら来た！[r]どうするね、新兵！
+[k]
+
+？1：迎撃！
+？2：蹴散らしながら押し通る！
+
+？！
+
+[charaFace C 5]
+
+＠ナポレオン
+おうさ！　[#了解:ダコール]！[r]神人混成[#大陸軍:グランダルメ][line 3]速度維持したまま、押し通る！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

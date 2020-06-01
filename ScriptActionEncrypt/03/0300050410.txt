@@ -1,0 +1,1083 @@
+
+
+
+
+
+
+
+
+
+
+＄03-00-05-04-1-0
+
+[soundStopAll]
+
+
+[charaSet A 6012001 1 サンソン]
+[charaSet B 1026001 1 デオン]
+
+[charaSet C 1098181800 1 オデュッセウス]
+[charaFilter C silhouette 00000080]
+
+[charaSet D 6038002 1 シャルロット・コルデー]
+
+[charaSet E 1098182700 1 アトランティス防衛兵]
+
+[charaSet F 1098181600 1 フードの人物]
+[charaSet G 1098128800 1 武蔵]
+
+[charaSet H 98115000 1 エフェクト用]
+[charaSet I 98115000 1 エフェクト用]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 84701]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad170]
+[effect bit_talk_kengekiall03]
+[wt 0.2]
+[se ad170]
+[wt 0.3]
+[se ad32]
+[effectStop bit_talk_kengekiall03]
+[wt 0.8]
+
+[se bac210]
+[effect bit_talk_14]
+[wt 1.0]
+
+[se bac533]
+[effect bit_talk_blood_splash]
+[se ad863]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 1]
+[charaEffect A bit_talk_06]
+[wt 1.0]
+
+＠サンソン
+[line 3]ここまで、か……。[r]すまない、デオン……！
+[k]
+
+[messageOff]
+
+
+[se ad52]
+[charaSpecialEffect A flashErasure 1 2.0]
+[wait charaSpecialEffect A]
+[charaEffectStop A bit_talk_06]
+[wait charaEffect A bit_talk_06]
+
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠デオン
+サンソン！[r]……っ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[se ad170]
+[effect bit_talk_kengekiall01]
+[wt 0.2]
+[se ad170]
+[wt 0.2]
+[se ad170]
+[effectStop bit_talk_kengekiall01]
+[wt 0.8]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠デオン
+はぁぁぁぁぁぁっ！
+[k]
+
+[messageOff]
+[charaMoveScale B 1.1 0.2]
+[charaMove B 0,10 0.2]
+[wt 0.1]
+[se adm14]
+[effect bit_talk_v_slash01]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[se ad170]
+[charaPut H -200,50]
+[charaEffect H bit_talk_14]
+[wt 0.2]
+
+[se ad170]
+[charaPut H 200,-50]
+[charaEffect H bit_talk_14]
+
+[charaScale B 1.0]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠デオン
+（[#一気呵成:い っ き か せ い]に押し込め、後のことは考えるな！[r]　これしか今は……！）
+[k]
+
+[messageOff]
+[se adm14]
+[effect bit_talk_h_slash01]
+[wt 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad32]
+[effect bit_talk_13]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠デオン
+（弾かれた！　硬い[line 3]）
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se bac51]
+[effect bit_talk_38l]
+[wt 1.0]
+[effectStop bit_talk_38l]
+[wt 0.2]
+
+[se bac145]
+[charaPut H -200,200]
+[charaEffect H bit_shot_01]
+[wt 0.1]
+
+
+[se bac145]
+[charaPut H 300,-300]
+[charaEffect H bit_shot_01]
+[wt 0.1]
+
+
+[se bac145]
+[charaPut H -250,-80]
+[charaEffect H bit_shot_01]
+[wt 0.1]
+
+
+[se bac145]
+[charaPut H 100,125]
+[charaEffect H bit_shot_01]
+[wt 0.2]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_shot_01]
+[wt 0.1]
+
+
+[charaScale B 1.1]
+[charaTalk B]
+[charaFace B 5]
+[se ad671]
+[charaFadein B 0.1 1]
+[charaMoveScale B 1.0 0.3]
+[wt 0.4]
+
+
+＠デオン
+ぐっ……！
+[k]
+
+＠デオン
+（宝具ですら……ないのか……！）
+[k]
+
+[charaFace B 2]
+
+＠デオン
+宝具[line 3]『[#百合の花散る剣の舞踏:フ　ル　ー　ル　・　ド　・　リ　ス]』！！
+[k]
+
+[messageOff]
+[charaPut H 1]
+[se ad39]
+[charaEffect H bit_talk_36]
+[wt 1.5]
+[se ad834]
+[fadeout white 0.5]
+[wait fade]
+
+[charaEffectStop H bit_talk_36]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[scene 10000]
+
+[fadein black 0.3]
+[wait fade]
+
+[se ad470]
+
+[effect bit_talk_Slash_white_01]
+[wt 0.3]
+[effect bit_talk_ichimon01wh]
+[wt 0.5]
+
+[charaPut H -300,0]
+[charaEffect H bit_talk_kengekiall02]
+[wt 0.1]
+[charaPut I 300,0]
+[charaEffect I bit_talk_kengekiall02]
+[wt 0.4]
+[fadeout white 0.5]
+[wait fade]
+[effect bit_talk_sand_dust_front 0,-50]
+[effect bit_talk_sand_dust_back 0,-50]
+
+[charaPut H 2000,2000]
+[charaPut I 2000,2000]
+
+[charaEffectStop H bit_talk_kengekiall02]
+[charaEffectStop I bit_talk_kengekiall02]
+[wt 1.0]
+[scene 84701]
+
+[fadein white 1.0]
+[se ad135]
+[seVolume ad135 0 0.0]
+[seVolume ad135 1.0 0.6]
+[wait fade]
+
+
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+
+[seStop ad135 2.5]
+[effectStop bit_talk_sand_dust_front]
+[effectStop bit_talk_sand_dust_back]
+[wt 2.5]
+
+＠C：？？？
+[#百合:クリノス]の花による幻惑と連撃か。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠デオン
+（無傷……！）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：？？？
+……児戯だな。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se bac150]
+[effect bit_talk_13]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠デオン
+か、は……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：？？？
+終わりだ、汎人類史。
+[k]
+
+＠C：？？？
+おまえたちの[#ねぐら]は、[r]一つ残らずこちらが潰した。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠デオン
+[line 3]ハッ。[r]終わりじゃないさ。
+[k]
+
+＠デオン
+[#とっくの前に始まって]、[r][#とうの昔に終わっている]。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：？？？
+ああ、連中のことか。[r]……あれはオリュンポスのアルターエゴが対処する。
+[k]
+
+＠C：？？？
+[#到着すればそれで終わりだと思ったか]？
+[k]
+
+＠C：？？？
+おまえたちに未来はない。[r]おまえたちにこれから先の道筋もない。
+[k]
+
+＠C：？？？
+従えば生、逆らえば死。[r]選べ、汎人類史。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠デオン
+……断るッ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：？？？
+そうか。
+[k]
+
+＠C：？？？
+では死ね。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+[se ad818]
+[effect bit_talk_neck_blood]
+[bgmStop BGM_EVENT_80 1.0]
+[wt 2.4]
+[se ad775]
+
+[wt 1.8]
+[se ad144]
+[seVolume ad144 0 0.7]
+[fadeout black 0.1]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 1.4]
+
+[se ad52]
+[wt 2.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.5]
+
+[se ad166]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.5]
+[seStop ad166]
+
+＠アトランティス防衛兵
+霊脈を発見しました。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_90 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：？？？
+これが最後の霊脈だ。
+[k]
+
+＠C：？？？
+サーヴァントを召喚して霊脈を不活化させた後、[r]完全に破壊する。
+[k]
+
+＠C：？？？
+一切の勝機を与えん。[r]我々に時間を与えたのが連中の敗因だ。
+[k]
+
+＠C：？？？
+触媒が存在しない以上、召喚されるのは[r]偶然で引き寄せられる英霊だろうが……。
+[k]
+
+＠C：？？？
+離れろ。[r]バーサーカークラスが召喚されないとも限らん。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠アトランティス防衛兵
+はっ。
+[k]
+
+[messageOff]
+[se ad166]
+[charaMove E -50,0 0.4]
+[charaFadeout E 0.1]
+[wt 0.5]
+[seStop ad166 0.5]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 1.0]
+[se ad153]
+[seVolume ad153 0 0.2]
+[effect bit_talk_summon]
+
+＠C：？？？
+[line 3]我が偉大なる主神の名において告げる。[r]抑止の輪より来たれ、天秤の守り手。
+[k]
+
+[se ad632]
+[seStop ad632 5.0]
+
+＠C：？？？
+そして、その命をオリュンポスに捧げよ。[r]神の息吹くこの大地に[line 3]！
+[k]
+
+
+[messageOff]
+[seStop ad632 1.0]
+[seStop ad153 1.0]
+
+[se ad574]
+[fadeout white 1.5]
+[wait fade]
+[effectStop bit_talk_summon]
+[wt 2.0]
+
+[charaFadeout C 0.1]
+
+
+[fadein white 2.0]
+[wait fade]
+
+[wt 1.0]
+
+＠D：？？？
+ここ、は……？[r]あれ？　わたしは……？
+[k]
+
+
+[clear]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：？？？
+……ふむ。
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.0]
+[bgm BGM_EVENT_90 1.0 0.5]
+[wait fade]
+
+[cameraMove 0.1 0,0 1.01]
+[charaFadeout C 0.1]
+[wt 0.5]
+[pictureFrame cut063_cinema]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_90 1.0 1.0]
+[wait fade]
+
+
+
+＠D：？？？
+あなたは……わたしの、マスターですか？
+[k]
+
+
+[clear]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠C：？？？
+そうだ。[r]その身、その生命、その技。
+[k]
+
+＠C：？？？
+我らオリュンポスに、血の一滴に至るまで[r]捧げてもらうぞ。
+[k]
+
+＠C：？？？
+[line 3]おまえの生に、意味を与えよう。
+[k]
+
+[charaFadeout C 0.1]
+
+[clear]
+[wt 0.1]
+
+＠D：？？？
+あの……それは……一体……？
+[k]
+
+[clear]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠C：？？？
+……理解できなくば速やかに死ね。[r]おまえの役割は、それだけだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠
+鉄のような男は、烈火のごとき意志と共に、[r]その言葉を放った。
+[k]
+
+＠D：？？？
+……。[r]……。
+[k]
+
+[messageOff]
+[cameraMove 0.5 0,8 1.01]
+[wt 0.5]
+[cameraMove 0.5 0,0 1.01]
+[wt 0.8]
+
+
+＠D：？？？
+[line 3]はい。[r]我が命は、マスターたるあなたのために。
+[k]
+
+＠
+サーヴァントは[#跪:ひざまず]き、[r][#頭:こうべ]を垂れた。
+[k]
+
+＠
+それで男はサーヴァントに関心を無くした。[r]敵でなければ、それで良い。
+[k]
+
+＠
+男の想いは、既に“敵”に向かっている。
+[k]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠C：？？？
+カルデア。[r][line 3]我らの世界を破壊する侵略者。
+[k]
+
+＠C：？？？
+……このアトランティスで始末をつける。[r]オリュンポスの大地を侵させはしない。
+[k]
+
+＠C：？？？
+一人も逃さず、一人も生かさず。[r]速やかに皆殺しにする。
+[k]
+
+＠C：？？？
+戦闘準備。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ade210]
+[wt 0.4]
+[seStop ade210]
+[wt 1.0]
+
+
+
+
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_90 1.0]
+[wait fade]
+
+[pictureFrame]
+[cameraHome 0.1]
+[scene 84900]
+[wt 3.0]
+
+[fadein black 1.0]
+[wait fade]
+
+＠
+[line 3]海面を疾走する[#ソレ]を眺める二人の男女がいる。
+[k]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+[bgm BGM_EVENT_79 0.1]
+
+＠F：？？？
+[line 3]正気か？
+[k]
+
+＠F：？？？
+カルデアの馬鹿者ども。[r]あの程度の戦力でこの海に乗り込んできた、だと？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠武蔵
+え、ホント！？　どこどこ！？[r]あ、アレかぁ！　カッコイイ船でやって来てるぅ！
+[k]
+
+[charaFace G 4]
+＠武蔵
+あー……でもちょっと不安ね、確かに。[r][#素敵な船だけど]、[#この海じゃあ小さすぎる]。
+[k]
+
+[charaFace G 12]
+＠武蔵
+正直に言って[#時期尚早:じきしょうそう]。[r]戦う前に勝負、ついちゃったかもね。
+[k]
+
+＠武蔵
+四つの異聞帯を攻略して調子に乗ってる……[r]なんて[#心境:コト]じゃなければいいけど。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFace G 12]
+[charaFadein F 0.1 0]
+[charaFadein G 0.1 2]
+
+＠F：？？？
+辛辣だな。おまえはカルデアのマスター[r]びいきだと感じていたが。
+[k]
+
+[charaFace G 1]
+
+＠武蔵
+もっちろん！　[%1][&君:]には[r]めっちゃ甘くて弱いのが私です！
+[k]
+
+[charaFace G 7]
+
+＠武蔵
+だから“ちょっと”だけ不安なワケで。[r]今回もひっどい出だしになるんだろうなって！
+[k]
+
+＠F：？？？
+そこで笑うのか。[r]おまえの思考は未だに分からない。
+[k]
+
+＠F：？？？
+窮地を愛する、というヤツか？[r]剣士というより狂戦士だよ、まったく。
+[k]
+
+[charaFace G 1]
+
+＠武蔵
+そりゃあ華のように笑いますとも。[r]やって来てくれて嬉しいのもホントだからね～。
+[k]
+
+＠武蔵
+で、貴方は？[r]カルデアが今やって来るのは想定外？
+[k]
+
+＠F：？？？
+…………。[r]まあ、あるだろう、と考えてはいた。
+[k]
+
+＠F：？？？
+まさしく最悪だ。[r]今度こそ連中の敗北を目の当たりにできる。
+[k]
+
+[charaFace G 9]
+
+＠武蔵
+あら嬉しそう。[r]口元はぜんっぜん嬉しそうじゃないけど。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠F：？？？
+……ふん。
+[k]
+
+＠F：？？？
+ロシアでの無様は当然だろう。[r]初の異聞帯だったのだから。
+[k]
+
+＠F：？？？
+北欧での愁嘆は汲み取ろう。[r]あれは優しすぎる世界の末だったのだから。
+[k]
+
+＠F：？？？
+中国での騒動は目を[#瞑:つむ]ろう。[r]永く祭りの無かった世なのだから。
+[k]
+
+＠F：？？？
+インドでの独善は譲歩しよう。[r]極めて[#単純:シンプル]な善悪の問答だったのだから。
+[k]
+
+＠F：？？？
+それらのサンプルケースを以て、[r][&彼:彼女]らはこう考えているだろう。
+[k]
+
+＠F：？？？
+“大西洋異聞帯も脅威ではあるだろうが、[r][f small]  [f -]攻略・解決する手段がある筈だ”と。
+[k]
+
+＠F：？？？
+だが無い。[r]ここには解決すべき問題などない。
+[k]
+
+＠F：？？？
+この異聞帯は既に完成し、[r]汎人類史より先のステージに進もうとしている。
+[k]
+
+＠F：？？？
+“攻略しにきた”という前提が過ちだ。[r]異聞帯を知ろうとする思考そのものが間違いだ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+
+＠武蔵
+つまり？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠F：？？？
+“完膚なきまでに破壊しにきた”。[r]その方針が備わっていない。
+[k]
+
+＠F：？？？
+全滅する前にその考えを改めてほしいものだ。[r]あるいは[line 3]
+[k]
+
+＠F：？？？
+……まあいい。[r]私は私の[#責務:タスク]をこなすだけだ。
+[k]
+
+＠F：？？？
+おまえはどうする？[r]あの船に向かうのなら届けてやるが。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFace F 0]
+[charaFadein G 0.1 2]
+[charaFadein F 0.1 0]
+
+＠武蔵
+あ、そういうのはいいです。[r]私は一足先に本拠地に向かいますので。
+[k]
+
+＠F：？？？
+………………。
+[k]
+
+＠F：？？？
+……難しかったか？　あのままでは連中は全滅する、[r]という会話をしていたつもりだが。
+[k]
+
+＠武蔵
+ええ、そうでしょうね。[r]でも、全滅まではいかないでしょう。
+[k]
+
+＠武蔵
+手ひどい敗北で何もかも失っても、[r]そこからやり返せるだけの命は残ります。
+[k]
+
+＠武蔵
+だから、私は私のするべき事をするのです。
+[k]
+
+＠武蔵
+がむしゃらにゴールまでたどり着いた[&彼:彼女]らに、[r]ちゃんとバトンを渡す為にね。
+[k]
+
+＠F：？？？
+……おまえはおまえなりに、[r][#最後]を見据えている、という訳か。
+[k]
+
+＠F：？？？
+いいだろう。オリュンポスに向かうがいい。[r]今ならあの連中がいい囮になる。
+[k]
+
+[charaFace G 3]
+
+＠武蔵
+でしょー？[r]神さまたちの視線、カルデアに釘付けだしね～！
+[k]
+
+[charaFace G 0]
+
+＠武蔵
+じゃ、そんなワケでさよなら、カルデアの人。[r]もしあっちで会えたら、その時は[line 3]
+[k]
+
+＠F：？？？
+ない。おまえとはこれきりだ。
+[k]
+
+＠F：？？？
+[#私の眼は]、[r][#これより先のおまえの姿を見ていないからな]。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+[wt 1.0]
+[charaFace G 11]
+[wt 0.6]
+[charaFace G 7]
+
+＠武蔵
+ま、それならそれで面倒がなくていっか！[r]みんなに会ったら『先に行ってる』って伝えておいてね！
+[k]
+
+[messageOff]
+[effect bit_talk_17_bl_02]
+[wt 1.0]
+[se ad598]
+[charaSpecialEffect G wipeTime 1 1.0]
+[wt 0.5]
+[effectStop bit_talk_17_bl_02]
+[wt 2.0]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠F：？？？
+馬鹿め。誰が伝えるものか。
+[k]
+
+＠F：？？？
+しかし……[#漂流:ドリフト]の連続使用で[r]オリュンポスに向かうとは。まさにレイシフトだな。
+[k]
+
+＠F：？？？
+だがカルデア。[r]おまえたちはそうはいかない。
+[k]
+
+＠F：？？？
+鉄壁ともいえるオリュンポス船団、[r]知覚外から射貫く流星の矢。
+[k]
+
+＠F：？？？
+それらを[#潜:くぐ]り抜けたとして、[r]待ち受けるのは虚無の海神。
+[k]
+
+＠F：？？？
+……分かっているのか、[r][%1]。
+[k]
+
+＠F：？？？
+ここでは異聞を学ぶ余裕はない。
+[k]
+
+＠F：？？？
+異聞帯を。クリプターを知ろうとした時、[r]今度こそ、その旅は終わるだろう。
+[k]
+
+＠F：？？？
+………………まったく。[r]度しがたいにも、ほどがある。
+[k]
+
+[messageOff]
+[se adm20]
+
+[charaEffect F bit_talk_17_bl]
+[charaFadeTime F 1.0 0.7]
+[wt 1.5]
+
+[se ad598]
+[charaEffectStop F bit_talk_17_bl]
+[charaFadeout F 1.5]
+[wt 3.5]
+
+＠
+疾走する船の名はノーチラス。
+[k]
+
+＠
+四つの[#異聞帯:ロストベルト]を乗り越え、[r]対峙し、勝利して[line 3]
+[k]
+
+＠
+最強の五つ目に、立ち向かう。
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_79 2.0]
+[wait fade]
+
+[scene 10000]
+[skip false]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+
+[soundStopAllFade 0.4]
+
+[charaSet A 6012001 1 サンソン]
+[charaSet B 1026001 1 デオン]
+[charaSet C 1098181800 1 オデュッセウス]
+[charaFilter C silhouette 00000080]
+[charaSet D 6038002 1 シャルロット・コルデー]
+[charaSet E 1098182700 1 アトランティス防衛兵]
+[charaSet F 1098181600 1 フードの人物]
+[charaSet G 1098128800 1 武蔵]
+[charaSet H 98115000 1 エフェクト用]
+[charaSet I 98115000 1 エフェクト用]
+
+[charaPut H 1200,1200]
+[charaPut I 1200,1200]
+
+[scene 10000]
+[wt 0.4]
+[soundStopAll]
+[maskin black 1]
+[wait mask]
+[label selectBranch]
+
+[wt 1.0]
+
+[fowardEffect bit_chapterstart305]
+[wait fowardEffect]
+
+[fadeout black 1.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

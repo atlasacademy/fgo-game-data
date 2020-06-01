@@ -1,0 +1,227 @@
+
+＄94-03-35-02-1-1
+
+[soundStopAll]
+
+[charaSet A 2001000 1 エミヤ]
+[charaSet B 5042000 1 紫式部]
+[charaSet C 99502600 1 マシュ]
+[charaSet D 4011001 1 ブーディカ]
+[charaSet E 7016001 1 タマモキャット]
+[charaSet F 98002000 1 フォウ]
+[charaSet I 5009000 1 エフェクト用]
+[charaSet J 98115000 1 エフェクト用]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+
+[bgm BGM_EVENT_3 0.1]
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66700]
+[branch lblConf]
+[label lblNotClear]
+[scene 60300]
+[label lblConf]
+
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.4]
+
+[se bac1]
+[charaFace A 2]
+[charaMoveScale A 1.1 0.2]
+[charaMove A 0,5 0.2]
+[charaFadeout A 0.2]
+[wt 0.35]
+
+[se bac136]
+[effect bit_talk_v_slash01 0,0 H]
+[wt 0.5]
+[se bac137]
+[fowardEffect bit_talk_h_slash01 0,0 H]
+[wt 0.8]
+
+[se ad22]
+[wt 2.0]
+
+[bgmStop BGM_EVENT_3 1.0]
+[se ad7]
+[charaMoveScale A 1.0 0.2]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.8]
+
+＠エミヤ
+…………よし。こんなところか。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[se ad39]
+[charaPut I 1]
+[charaEffect I bit_talk_warp]
+[wt 3.5]
+[seStop ad39 0.4]
+
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠紫式部
+呪本、回収いたします！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[se adm20]
+[charaPut I 1]
+[charaEffectStop I bit_talk_warp]
+[fowardEffect bit_talk_22]
+[wt 1.5]
+[seStop adm20 1.0]
+[wt 2.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠マシュ
+呪本の回収を完了！[r]魔力量はわずかですので、これは恐らく……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠紫式部
+残念ながら『最初の呪本』ではなかったようです。[r]ですが、魔力を分け与えられた一冊には違いありません。
+[k]
+
+＠紫式部
+改めまして。[r]……厨房の皆様、お騒がせいたしました。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFace E 0]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠ブーディカ
+ははは。こんなの騒ぎのうちに入らないって！[r]なんだかよく分からないけど、気にしない気にしない。
+[k]
+
+[charaFace D 3]
+＠ブーディカ
+ネロの顔見て[#あいつ]が暴れたり、[r]サリエリが暴れたり、ファントムが不安定だったり、
+[k]
+
+＠ブーディカ
+話が通じない系のバーサーカーが話通じなかったり、[r]食堂じゃしょっちゅうだからね。
+[k]
+
+
+[charaTalk E]
+[charaFace E 0]
+＠タマモキャット
+うむ。台所は常に火事場ゆえ、[r]この程度では騒ぎとは呼べまいよ。
+[k]
+
+[charaFace E 1]
+＠タマモキャット
+ま、ボヤ騒ぎ程度ですなあ。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠エミヤ
+そういうことだ。
+[k]
+
+＠エミヤ
+急ぎの用件のようだから、[r]ここで引き留めはしないが[line 3]
+[k]
+
+[charaFace A 1]
+＠エミヤ
+いずれゆっくりお茶でも飲みにくるといい、紫式部。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+[charaFace B 1]
+＠紫式部
+はい、ありがとうございます。皆様。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠フォウ
+フォウ！
+[k]
+
+？1：じゃあ、次は作家系サーヴァントの[&部屋だ:部屋]！！
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠マシュ
+ですね！
+[k]
+
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,880 @@
+
+
+
+＄94-03-66-03-2-0
+
+[soundStopAll]
+
+[charaSet A 4032000 1 ライネス]
+[charaSet B 1098165500 1 市民]
+[charaSet C 1098165600 1 市民2]
+[charaSet D 11006001 1 サリエリ]
+
+[charaSet E 1098165300 1 モリアーティ]
+[charaSet F 9008000 1 アストライア]
+[sceneSet G 10000 1]
+[charaScale G 1.01]
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+[charaFilter F silhouette 00000080]
+
+[scene 73100]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_102 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ライネス
+宮殿に辿り着いたが……[r]ここでも、みんな仮面をつけているな。
+[k]
+
+？1：あっさり入れてくれたね
+？2：警備に止められるかと思ったんだけど
+
+？！
+
+＠ライネス
+要塞の構えでありつつ、舞踏会の宮殿に、[r]さらにあちらは天文台、向こうは造幣局か……。
+[k]
+
+＠ライネス
+どうも、さまざまな時代のロンドン塔を、[r][#つぎはぎ:パッチワーク]にしたようだな。
+[k]
+
+？1：ロンドン塔？
+
+[charaFace A 1]
+
+＠ライネス
+ロンドンでは有名な世界遺産でね。
+[k]
+
+＠ライネス
+ウィリアム征服王のつくったホワイト・タワーを始めに[r]リチャード一世、ヘンリー三世が手をいれた要塞さ。
+[k]
+
+[charaFace A 0]
+
+＠ライネス
+が、なんせ長い歴史があるからな。[r]途中からは身分の高いものを収監する監獄になった。
+[k]
+
+＠ライネス
+一般的には、この監獄のイメージが強いだろう。[r]幾多の嘆きこだます、監獄の塔、とね。
+[k]
+
+？2：ウィリアム征服王の要塞で、世界遺産だっけ？
+
+＠ライネス
+それぐらいは知ってるか。[r]まあ、ロンドンでも有名な建物のひとつだからね。
+[k]
+
+＠ライネス
+身分の高いもの向けの監獄のイメージが強いが、[r]もとは宮殿であり銀行であり、果ては動物園だったりだ。
+[k]
+
+？！
+
+[bgmStop BGM_EVENT_102 1.2]
+
+[charaFace A 6]
+
+＠ライネス
+さて、もう少し探ってみようか[line 2]ん？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ade305]
+[wt 1.8]
+
+[bgm BGM_EVENT_29 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠市民
+始まった！　始まったぞ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ライネス
+ピアノに合わせて、ほかの楽団が……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad5]
+[seVolume ad5 0 0.1]
+[seVolume ad5 0.5 0.7]
+[wt 1.0]
+[charaTalk off]
+
+[charaFace B 0]
+[charaFadein B 0.1 0]
+
+[charaMove B 156,0 2.5]
+[charaShake B 0.3 1 2 1.5]
+[wt 1.5]
+[charaFadeout B 0.4]
+[wt 0.1]
+
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 0.4 2]
+[charaFadein C 0.4 1]
+
+[charaMove B -156,0 2.5]
+[charaMove C -412,0 2.5]
+[charaShake B 0.1 1 2 1.5]
+[charaShake C 0.1 1 2 1.5]
+
+[wt 1.5]
+[charaFadeout B 0.4]
+[charaFadeout C 0.4]
+
+[seStop ad5 1.0]
+[wt 1.0]
+
+[charaTalk on]
+
+？1：舞踏会の、始まり……
+
+？！
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠ライネス
+しかし、この音楽は……明らかにピアノがメインなのに、[r]ピアニストだけ、この場にいないのはどういうことだ？
+[k]
+
+[charaFace A 5]
+
+＠ライネス
+ん、君？
+[k]
+
+？1：この、音楽は……！
+？2：（声にもならない）
+
+？！
+
+[messageOff]
+
+[wipeout openEye 0.8 0.5]
+[bgm BGM_EVENT_29 1.0 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 10000]
+
+[charaTalk on]
+
+[wipein openEye 0.1 0.5]
+[wait wipe]
+
+[wipeFilter openEye 0.2 0.7]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 54802]
+[effect bit_sepia01]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠サリエリ
+当たり前だ。私はただの音楽家、[r]それも歴史に残る曲を紡ぎ上げた訳ではない。
+[k]
+
+[charaFace D 4]
+
+＠サリエリ
+凡庸、あるいは[#鈍刃:なまくら]。[r]フン、どうでもいい。
+[k]
+
+[charaFace D 6]
+
+＠サリエリ
+ただ一点[line 3]
+[k]
+
+[charaFace D 7]
+
+＠サリエリ
+[#アマデウスを殺した]という一点のみで、[r]私は英霊の座に存在する。
+[k]
+
+[messageOff]
+
+[fadeout white 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[effectStop bit_sepia01]
+[wt 0.1]
+
+[scene 10000]
+[wipeOff]
+
+[fadein white 1.0]
+[wait fade]
+
+[effectStop bit_sepia01]
+[wipeOff]
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[scene 73100]
+[wt 1.5]
+
+[wipein openEye 1.0 1.0]
+[bgm BGM_EVENT_29 1.0 1.0]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ライネス
+どうした君。また顔色が悪いぞ？[r]なにか、思い出したかな？
+[k]
+
+？1：ピアニストで……サーヴァントというと
+？2：[#復讐者:アヴェンジャー]のサーヴァントが
+
+？！
+
+＠ライネス
+ふむ……なるほど。アントニオ・サリエリ。[r]特定の相手を殺さずにいられないサーヴァントか。
+[k]
+
+[messageOff]
+[charaFace A 4]
+[wt 0.7]
+[charaFace A 0]
+
+＠ライネス
+いささか物悲しいが、サーヴァントの理屈からすると、[r]そういうのもアリなんだろう。
+[k]
+
+＠ライネス
+その、君が聴いたとかいうサーヴァントの音楽と[r]今回の曲は同じ奏者のものだったかい？
+[k]
+
+？1：……分かりません
+？2：……さすがに、同じピアニストかどうかは
+
+？！
+
+[charaFace A 7]
+
+＠ライネス
+まあ、音楽の専門訓練を受けたわけじゃないだろうしね。[r]そんなの分からない方が普通か。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_29 0.7]
+[wt 1.5]
+
+[charaFace A 0]
+
+＠ライネス
+ん、肝心のピアノだけ、曲の途中で終わった……？
+[k]
+
+[messageOff]
+
+[se ad4]
+[wt 2.0]
+[seStop ad4 1.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠市民
+……またか。
+[k]
+
+？1：また？
+？2：前も同じことがあったの？
+
+？！
+
+＠市民
+舞踏会の中で、一番栄えある音楽があのピアノさ！[r]だけど、最近、始まってすぐ終わるようになったんだ。
+[k]
+
+＠市民
+誰もが、あの音色を待ちかねているというのに……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ライネス
+なるほど、どうもありがとう。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[wt 0.6]
+[se ad95]
+[charaFadeout B 0.4]
+[charaMove B -30,0 0.4]
+[wt 0.6]
+[seStop ad95 0.4]
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ライネス
+これ見よがしに、私たち向けの事件、という感じだな。
+[k]
+
+？1：解決するということ？
+？2：他人に親切にするんだ？
+
+？！
+
+[charaFace A 7]
+
+＠ライネス
+は？[r]解決も親切も、もちろん興味はないぞ？
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace A 0]
+
+＠ライネス
+だが、さっきのナーサリー・ライムの事件もだけどね。[r]この特異点とかいう場所には、いかにも作為を感じる。
+[k]
+
+＠ライネス
+私たちに解いてほしい、と言わんばかりの謎を、[r]行く先々にぽんと置かれているような。
+[k]
+
+？1：解いてほしい……
+？2：それはエルメロイさんを殺した犯人からの？
+
+？！
+
+＠ライネス
+挑戦状、みたいなものかもしれない。[r]あくまで勘だが、こういうときの勘は大事にしてるのさ。
+[k]
+
+[bgmStop BGM_EVENT_70 1.2]
+
+＠ライネス
+それこそ、どんなホワイダニットが隠れているか……。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[se ad671]
+[seVolume ad671 0 0.6]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.4 -300,0]
+[charaMove E 0,0 0.3]
+
+＠？？？
+ちょっとちょっと君たちィ！[bgm BGM_EVENT_7 0.1]
+[k]
+
+？1：わっ！
+
+？！
+
+＠？？？
+君たち、きちんと仮面をつけておきたまえ。[r]この場所での礼儀ではないかネ！？
+[k]
+
+[charaFace E 3]
+
+＠？？？
+何、ふたりとも持ってないだって？[r]好みの仮面もわからない？
+[k]
+
+[charaFace E 2]
+
+＠？？？
+仕方ない、これをあげよう。[r]何、アラフィフの親切だとも！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠ライネス
+お、おお。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[imageSet B back10000 1]
+[imageSet C cut108_mask1 1]
+[imageSet D cut108_mask2 1]
+[charaScale B 1.01]
+[charaScale C 1.01]
+[charaScale D 1.01]
+[charaDepth C 10]
+
+[charaFadeTime B 0.3 0.5]
+[wt 0.4]
+[se ade158]
+[charaFadein C 0.7 0,-200]
+[wt 1.5]
+
+[wait touch]
+
+[charaFadeout C 0.3]
+[charaFadeout B 0.3]
+[wt 0.4]
+
+[charaChange A 1098165200 0 fade 0.7]
+
+[se ade158]
+[wt 0.1]
+[se ad442]
+[seVolume ad442 0 0.5]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ライネス
+……ふむ、似合うかな、我が弟子。
+[k]
+
+？1：お似合いです
+？2：可愛い！
+
+？！
+
+[charaFace A 1]
+
+＠ライネス
+お世辞でも悪くないね。[r]せっかくもらったし、君もつけておきたまえ。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth D 10]
+
+[charaFadeTime B 0.3 0.5]
+[wt 0.4]
+[se ade158]
+[charaFadein D 0.7 0,-200]
+[wt 1.5]
+
+[wait touch]
+
+[charaFadeout D 0.3]
+[charaFadeout B 0.3]
+[wt 0.4]
+
+[se ade158]
+[wt 0.1]
+[se ad442]
+[seVolume ad442 0 0.5]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[wt 0.5]
+
+[charaMove E 100,0 0.5]
+[wt 0.5]
+[charaMove E -0100,0 0.5]
+[wt 0.5]
+[charaMove E 1 0.5]
+[wt 0.7]
+[charaFace E 1]
+[charaMoveReturn E 0,-5 0.3]
+[wt 0.4]
+[charaMoveReturn E 0,-5 0.3]
+[wt 0.4]
+
+
+＠？？？
+ふむふむ、こちらもなかなか似合うじゃないか。[r]結構結構大いに結構！
+[k]
+
+？1：ありがとうございます
+？2：もらってしまって、いいんですか？
+
+？！
+
+＠？？？
+何、かまわないとも。
+[k]
+
+＠？？？
+似合わないものをやるほど、[r]悲しいこともないからネー！
+[k]
+
+？1：あの、あなたは？
+？！
+
+[charaFace E 0]
+
+＠？？？
+おおっと、ここでは名前を[#訊:き]かないのがお約束だヨ。[r]ああ、もちろん識別できないと困るだろうから、
+[k]
+
+[bgmStop BGM_EVENT_7 1.5]
+
+＠？？？
+私のことは……『Ｍ』とでも呼んでもらおうか。
+[k]
+
+？1：『Ｍ』[line 2]！
+？2：（ダイイングメッセージの！）
+
+？！
+
+[turnPageOff]
+[charaFace E 4]
+
+＠Ｍ
+ん、どうしたのカナ？[bgm BGM_EVENT_48 0.1][r]ずいぶんな反応をして。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[turnPageOn]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ライネス
+いや、なんでもないとも。[r]アルファベットとは洒落てるなと思っただけさ。
+[k]
+
+[messageOff]
+[wt 0.4]
+[charaMoveScale A 1.1 0.3]
+[charaMove A 0,15 0.3]
+[charaFace A 0]
+[wt 0.5]
+
+＠ライネス
+（君、せっかくの手がかりだ。[r]　少しは反応を抑えたまえ）
+[k]
+
+＠ライネス
+（万が一、このアラフィフが、[r]　兄を殺した相手だったらどうする気だ）
+[k]
+
+[messageOff]
+
+[charaTalk depthOff]
+
+[charaDepth G 3]
+[charaDepth J 2]
+[charaDepth E 1]
+
+[wipeout circleIn 0.5 1.0]
+[bgm BGM_EVENT_48 1.0 0.5]
+[wait wipe]
+
+[charaScale A 1.0]
+[charaFadeout A 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+
+[wipein circleIn 0.1 1.0]
+[wait wipe]
+
+[charaFadein G 0.1 0,-200]
+[wt 0.1]
+
+[se bac266]
+[effect bit_talk_35]
+[wt 1.2]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+[charaPut J 1]
+[charaEffect J bit_talk_celebro]
+[charaBackEffect J bit_talk_celebro_back]
+
+[charaFadeout G 0.7]
+
+[wt 2.5]
+
+[wipeout circleIn 1.0 1.0]
+[wait wipe]
+
+[charaPut J 2000,2000]
+[charaEffectStop J bit_talk_celebro]
+[charaBackEffectStop J bit_talk_celebro_back]
+[charaFadeout E 0.1]
+
+[scene 73100]
+[wt 1.0]
+
+[wipein circleIn 1.0 1.0]
+[bgmStop BGM_EVENT_48 1.0]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠Ｍ
+おやおや、仮面のつけごこちが悪かったかネ？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ライネス
+いえ、快適です。[bgm BGM_EVENT_81 0.1][r]ありがとうございます。
+[k]
+
+＠ライネス
+ところで、詳しく[#訊:き]かせてもらってもかまいませんか？[r]たとえば、さっきの音楽はどなたが奏でてるのかとか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Ｍ
+ふむふむ！　それは気になるだろうね！[r]しかし残念だが、誰も知らないのだヨ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠ライネス
+知らない？　どういうことです？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Ｍ
+もともと、偏屈なピアニストでね。[r]決まった時間に弾く以外は、一切の詮索無用が条件。
+[k]
+
+＠Ｍ
+だから、彼の人となりについては誰も知らない。[r]あげく、住まいはあの塔だからね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ライネス
+ずいぶん規模も趣も変わってるが、[r]よりにもよって、ブラッディ・タワーか！
+[k]
+
+[charaFace A 4]
+
+＠ライネス
+まいったな。本当に監獄じゃないか。[r]……まるで、とらわれのお姫様みたいだな。
+[k]
+
+＠ライネス
+とらわれのピアニストに異常が……か。[r]興味深くはある。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Ｍ
+おやおや。[r]行ってみたいのかね？
+[k]
+
+？1：え？
+
+？！
+
+＠Ｍ
+いやもちろん、よろしくない。[r]よろしくないのだが、気になるのも仕方ない。
+[k]
+
+[charaFace E 1]
+
+＠Ｍ
+分かるとも、それこそ人間の[#性:さが]というものだ！[r]だったら、私についてきてもらえないかな？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ライネス
+いいだろう。ついていってみよう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠Ｍ
+よしきた！[r]それでは行こうすぐ行こうさあ行こう！
+[k]
+
+[messageOff]
+[se ad60]
+[se adm36]
+[wipeout rightToLeft 1.0 1.0]
+[bgm BGM_EVENT_81 1.0 0.5]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[scene 10000]
+[wt 0.6]
+
+[seStop ad60 1.0]
+[seStop adm36 1.0]
+[wt 1.5]
+
+[wipein rightToLeft 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[wipeFilter cinema 0.5 0]
+
+[scene 73100]
+
+[fadein black 1.5]
+[bgm BGM_EVENT_81 1.0 1.0]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 0,-50]
+
+＠？？？
+……こちらも、行きますわ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+＠？？？
+分かった。
+[k]
+
+
+[messageOff]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.2 0,-50]
+[wt 1.5]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

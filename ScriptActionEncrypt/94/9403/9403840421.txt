@@ -1,0 +1,589 @@
+
+
+＄94-03-84-04-2-1
+
+[soundStopAll]
+
+[charaSet A 11007001 1 織田吉法師]
+[charaSet B 11007000 1 足軽ノッブ]
+[charaSet C 1098172300 1 甲斐の兵]
+[charaSet D 6036002 1 李書文]
+[charaSet E 7035001 1 森長可]
+[charaSet F 98001000 1 家老マシュ]
+[charaSet G 3038000 1 長尾景虎]
+
+[charaSet J 98115000 1 エフェクト用]
+
+[charaDepth E 1]
+[charaDepth D 2]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 78601]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 80,0]
+[charaShake A 0.05 2 1 0.6]
+[charaMove A 20,0 0.2]
+[wt 0.2]
+[charaMove A 1 0.2]
+[wt 0.2]
+[seStop ad671 0.5]
+
+[charaFace A 4]
+
+＠織田吉法師
+くそっ！　ここまでか……、
+[k]
+
+＠織田吉法師
+やはり桶狭間と同じ手が通じるほど[r]俺は俺に甘くないな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠家老マシュ
+なんとか勝てそうですね、先輩。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+＠足軽ノッブ
+ふぅ……景虎の奴めが遅い故、[r]ひやひやさせられたわ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 16]
+[charaFadein G 0.1 1]
+＠長尾景虎
+……っ！　まだです！！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[charaFadeout G 0.1]
+[wt 0.6]
+
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,-40]
+[charaMove D 0,0 0.1]
+[wt 0.4]
+＠李書文
+気づいた時には手遅れよ。[r]せめて一撃で[#退場:おわ]らせようか。
+[k]
+
+＠李書文
+[line 3]荒療治だが、これにて解決ッ！
+[k]
+
+[messageOff]
+[se ad7]
+[charaMoveScale D 1.1 0.1]
+[charaMove D 0,15 0.1]
+[charaPut J 1]
+[charaEffect J bit_talk_41]
+[wt 0.2]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_41]
+[wt 0.1]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠家老マシュ
+[#先輩:との]！？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.2]
+
+[se bac23]
+[effect bit_talk_14]
+[wt 0.3]
+
+[se bac11]
+[se bac13]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0 1]
+[charaShake E 0.02 5 5 0.8]
+[wt 1.2]
+
+＠森長可
+あー……痛てぇ……。[r]はらわたがひっくり返ったみたいじゃねぇか。
+[k]
+
+？1：身代わりに！？
+
+？2：森君！
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaScale D 1.0]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠李書文
+ほう。身を挺して主を護ったか。[r]でかい図体の使い途を心得ておる。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+＠森長可
+ジジイがオレの殿様に手を出すんじゃねぇよ！！[r]ぶち殺すぞ！　オラァ！！
+[k]
+
+[messageOff]
+[se ad7]
+[charaMoveScale E 1.1 0.1]
+[charaMove E 0,10 0.1]
+[charaPut J 1]
+[charaEffect J bit_talk_41]
+[wt 0.2]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_41]
+[wt 0.1]
+
+[charaFadeout E 0.1]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.2]
+
+[se ad170]
+[charaScale J 1.5]
+[charaPut J 1]
+[charaEffect J bit_talk_Slash_red_01]
+[flashin once 0.1 0.1 e60025FF e6002580]
+[wt 0.2]
+[charaFace D 5]
+[charaShake D 0.02 5 5 0.8]
+[wt 1.4]
+
+[charaScale J 1.0]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠足軽ノッブ
+でかしたぞ、勝蔵！　さてあとは甲斐のわしを……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 0.6]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠織田吉法師
+よし！　ここまでだな！　おい越後の俺。[r]降参だ、皆の者も戦いをやめよ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠長尾景虎
+良いのですか？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_50 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠織田吉法師
+なに、音に聞こえた越後の長尾景虎に、[r]俺をよく知る俺自身が相手だ。
+[k]
+
+＠織田吉法師
+奇襲を防がれ、不意打ちの目も消えた。
+[k]
+
+＠織田吉法師
+さすがにこれ以上は兵に無理を強いれんわ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+＠足軽ノッブ
+こやつ、わしの割にはあきらめがいいのう。
+[k]
+
+＠足軽ノッブ
+ところで、なんていうかこのわし、[r]わしより風雲児してない？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+
+[se ad347]
+[fowardEffect bit_talk_kengekiall03]
+[wt 1.0]
+
+[charaTalk off]
+[seStop ad347 0.1]
+[se ad170]
+[flashin once 0.1 0.1 e60025FF e6002580]
+[wt 0.1]
+[charaScale E 1.0]
+[charaFace E 10]
+[charaFace D 5]
+[charaFadein E 0 -75,0]
+[charaFadein D 0 75,0]
+[charaMove E 300,0 0.2]
+[charaMove D -300,0 0.2]
+[charaShake E 0.02 5 5 0.6]
+[charaShake D 0.02 5 5 0.6]
+[wt 1.2]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.2]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠家老マシュ
+先輩！　森君と李書文さんが！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠森長可
+死[messageShake 0.02 3 3 0.8]ねやああああ！　くそじじい！[r]オレの殿様に手を出して生きて帰れると思うなよ！！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠李書文
+さて、どうしたものか。
+[k]
+
+＠李書文
+おい、儂が言うのもなんだが死ぬまでやるか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+＠森長可
+ボ[messageShake 0.02 3 3 0.6]ケてんじゃねぇぞ！[r]てめぇが死ぬまでに決まってんだろうが！！
+[k]
+
+？1：そこまで、そこまで！
+
+？2：森君、フリーズ！　フリーズ！
+
+？！
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_50 1.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[scene 79000]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_66 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠織田吉法師
+へぇ、こいつがおまえの城か。なかなかいい城ではないか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠長尾景虎
+元は私の城ですけどね。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+＠足軽ノッブ
+ところでなんで捕虜のこやつが[r]堂々と歩きまわってんの？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠織田吉法師
+まあ、そういうなよ俺、[r]一通り見物したら牢に戻るからよ。
+[k]
+
+＠織田吉法師
+ああ、そうそう、[r]あの爺さんにも茶でも出してやってくれ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠家老マシュ
+李書文さんですね、承知しました。
+[k]
+
+＠家老マシュ
+それにしても李書文さんが、[r]甲斐の信長さんのところにいたとは。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠織田吉法師
+あの爺さん、おまえらの仲間なんだろ？
+[k]
+
+[charaFace A 7]
+＠織田吉法師
+俺の配下でもないのに、恩を返すとかで俺に[r]味方してただけだから大目に見てやってくれよな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+
+＠足軽ノッブ
+命を狙わせといて大目に見ろとか、[r]わしだけになかなか[#無茶苦茶:むちゃくちゃ]いいよるな。
+[k]
+
+[charaFace B 11]
+
+＠足軽ノッブ
+ん？　そういや勝蔵はどうした？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_66 1.0]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠家老マシュ
+そういえば、先ほど牢の方に……！
+[k]
+
+＠家老マシュ
+まさかまだ李書文さんの事で怒っているのでは！？
+[k]
+
+？1：急いで止めに行こう！
+
+？2：どっちも危ない！
+
+？！
+
+
+[messageOff]
+[se ad459]
+[wipeout leftToRight 1.0 1.0]
+[seStop ad459 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+
+[scene 79100]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.5]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+
+＠森長可
+おう、爺さん！　いい飲みっぷりじゃねーか！[r]オレの茶もなかなかのもんだろ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠李書文
+ふ。年甲斐もなく眼が丸くなった。[r]これほど驚いたのは久方ぶりよ。
+[k]
+
+＠李書文
+いや、結構な茶の手前。[r]人は見かけによらぬとはよく言ったものだ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠家老マシュ
+……仲良くお茶をしているようですが。
+[k]
+
+？1：森君、茶の湯とかするんだ……
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠足軽ノッブ
+ああ見えて勝蔵の奴、書も達者じゃし、[r]利休にもなかなかの手前とか言われとったからのう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？2：なんかお爺さんとお孫さんみたいだね
+
+[charaFace F 1]
+＠家老マシュ
+すっかり仲良くなっているようで驚きです。[r]なんだか微笑ましいですね。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+＠森長可
+よっしゃ！　じゃあ一服したし殺し合うとするか！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠李書文
+よかろう、此度は死ぬまで打ち合うか！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠足軽ノッブ
+そ[messageShake 0.05 4 4 0.2]ういうのもうええから！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

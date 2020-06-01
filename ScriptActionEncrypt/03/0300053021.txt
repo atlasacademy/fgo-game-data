@@ -1,0 +1,212 @@
+
+＄03-00-05-30-2-1
+
+
+[soundStopAll]
+
+[charaSet A 1098124510 1 ダ・ヴィンチ]
+[charaSet B 1098123200 1 ゴルドルフ]
+[charaSet C 8001400 1 ゴーグルありマシュ]
+[charaSet D 8001410 1 マシュ]
+[charaSet E 9005001 1 ホームズ]
+[charaSet F 1098184600 1 イアソン]
+[charaSet G 1098123000 1 ムニエル]
+[charaSet I 98115000 1 エフェクト用ダミー]
+[charaSet J 98115000 1 エフェクト用ダミー]
+
+[bgm BGM_EVENT_80 0.1]
+[wt 0.5]
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad687]
+[effect bit_talk_14]
+[wt 0.5]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 86500]
+
+[fadein black 0.7]
+[wait fade]
+
+[se ad609]
+[effect bit_talk_explosion_triple02]
+[shake 0.05 3 3 3.0]
+[wt 3.5]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth C 2]
+[charaDepth D 1]
+
+[charaFace C 7]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+[charaFace D 7]
+[charaFadein D 0.1 1]
+[wt 0.6]
+
+[charaFadeout C 0.4]
+[wt 0.2]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[wt 0.4]
+
+[charaTalk on]
+
+＠マシュ
+ポセイドンコア、一基撃破しました！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ade328]
+[wt 0.6]
+[se ade329]
+[wt 1.8]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+
+＠イアソン
+そら、乗れ乗れ！[r]まだ二つ残ってんだぞ、気合い入れろ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠マシュ
+は、はい！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[charaSet F 1038000 1 イアソン]
+
+[scene 51601]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+いや、貴様も参加するべきではないかね！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 0]
+
+[charaFace B 5]
+[charaFadein B 0.1 2]
+
+＠イアソン
+治療中なんだよ。[r]少し待て！
+[k]
+
+[charaFace B 6]
+
+＠ゴルドルフ
+ピンピンしてるじゃないか！
+[k]
+
+[charaFace F 21]
+
+＠イアソン
+見えない傷ってのがあるんだよ！[r]あー、痛ぇ。
+[k]
+
+[charaFace B 7]
+
+＠ゴルドルフ
+[line 6]。[r]おまえさん、まさかとは思うが……。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠ホームズ
+その考察は後です。[r]所長。次のコアへ向かいましょう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠マシュ
+マスター！
+[k]
+
+＠マシュ
+わたしはシャドウ・ボーダーのルーフで[r][#霊基外骨骼:オ ル テ ナ ウ ス]を構えます！
+[k]
+
+？1：[&自分:わたし]も行くよ
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ホームズ
+うん、それがいい。[r]恐らくキミたちに攻撃が集中するはずだ。
+[k]
+
+？1：どうして？
+？！
+
+＠ホームズ
+説明は走りながら。[r]さあ、行こう！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_80 2.0]
+[wait fade]
+[soundStopAll]
+[end]

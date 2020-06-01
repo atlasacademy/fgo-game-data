@@ -1,0 +1,225 @@
+
+
+
+＄94-04-77-50-4-0
+
+[soundStopAll]
+
+[charaSet A 25005000 1 ボイジャー]
+[charaSet B 98001000 1 マシュ]
+[imageSet C cut171_token_301 1]
+[charaSet D 5025001 1 エジソン]
+[charaSet E 1098192800 1 マリー]
+[charaSet T 5009000 1 エフェクト用ダミー]
+
+[scene 96301]
+
+[charaPut T 1200,1200]
+[charaEffect T bit_talk_warp_starry_sky]
+
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk depthOff]
+[charaDepth T 1]
+[charaDepth A 2]
+
+[charaTalk A]
+[charaFace A 0]
+
+[charaPut A 1]
+[charaSpecialEffect A wipeTimeRe 0 1.2]
+[wt 0.3]
+[charaPut T 1]
+[se ade410]
+[charaEffectStop T bit_talk_warp_starry_sky]
+[wt 2.0]
+
+[charaSpecialEffectStop A wipeTimeRe]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaFadein A 0.1 1]
+
+＠ボイジャー
+ねえ、みて。こんなのひろったよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+これは……トークンですね？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ボイジャー
+きみ、もってて。
+[k]
+
+？1：いいの？
+
+？2：ありがとう
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 0,-200]
+[wt 0.2]
+[se ade459]
+[wt 2.3]
+[charaFadeout C 0.4]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ボイジャー
+このひとも、やくめがあるんだ。[r]きみなら、いかしてあげられる。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace A 0]
+[charaFadein A 0.1 0]
+[charaFace B 12]
+[charaFadein B 0.1 2]
+
+＠マシュ
+……ボイジャーさんは、[#カルデア:わたしたち]のこと、[r]責めないんですね。
+[k]
+
+[charaFace A 11]
+
+＠ボイジャー
+エリセのいったこと、きにしてるのかい？
+[k]
+
+[charaFace B 8]
+
+＠マシュ
+正直、ショックではありました。[r]サーヴァントを、オモチャの兵隊だなんて……。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠エジソン
+とはいえエリセ君自身も、トークンを操り、[r]サーヴァントを使役しているのだがね！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ボイジャー
+エリセは、さあばんとがだいすきなんだ。[r]あこがれてるんだ。
+[k]
+
+＠ボイジャー
+だけど、またひとりぼっちになってしまったから、[r]さびしいんだよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠マリー
+エリセさんのこと、聞かせていただける？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠ボイジャー
+……うん。でも、うまくいえるかな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠エジソン
+危険とチャンスが隣り合わせの空間だ。[r]備えたまえ、諸君！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut T 1]
+[charaEffect T bit_talk_warp_starry_sky]
+[wt 0.4]
+[se ade410]
+[wt 1.7]
+[seStop ade410 0.3]
+[cameraMove 0.2 0,0 1.5]
+[cueSe Battle bac110]
+[wt 0.1]
+
+[fadeout white 0.2]
+[wait fade]
+
+[charaEffectDestroy T]
+[cameraHome 0]
+[scene 10000]
+[wt 1.5]
+
+[fadein white 1.0]
+[wait fade]
+
+[fadeout black 0.1]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+

@@ -1,0 +1,550 @@
+
+＄94-02-49-03-1-0
+
+
+
+[soundStopAll]
+
+
+
+[charaSet A 10007000 1 沖田オルタ]
+[charaSet B 6033000 1 黒コートの男]
+[charaSet C 98025100 1 はぐれサーヴァント]
+[charaSet D 98002000 1 エフェクト用ダミー１]
+[charaSet E 98002000 1 エフェクト用ダミー２]
+[charaSet F 98002000 1 エフェクト用ダミー３]
+[charaSet G 1098154400 1 黒コートの男シルエット]
+
+[charaDepth C 1]
+[charaDepth F 6]
+
+[bgm BGM_EVENT_90 0.1]
+
+[scene 59300]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+[effect bit_talk_Slash_white_01]
+[se bac143]
+[wt 0.3]
+[charaShake C 0.03 3 3 0.4]
+[wt 0.5]
+
+＠はぐれサーヴァント
+…………！？
+[k]
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.4]
+＠G：黒コートの男
+はっ、どこぞ名のある[#剣士:セイバー]らしいけんど相手にならん。
+[k]
+
+＠G：黒コートの男
+その程度でわしに突っかかってくるとは[r]舐められたもんじゃ。
+[k]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠はぐれサーヴァント
+…………！
+[k]
+
+[messageOff]
+[charaPut D 0,200]
+[charaEffect D bit_talk_06b]
+[se bac165]
+[wt 2.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut D 1200,1200]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+＠G：黒コートの男
+ほう……、いっちょ前に[#切り札:宝具もどき]でも使う気かえ？
+[k]
+
+＠G：黒コートの男
+じゃがのう、おまんのその剣……、
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaPut D 0,200]
+＠はぐれサーヴァント
+…………ッ！
+[k]
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaEffectStop D bit_talk_06b]
+[charaPut D 1200,1200]
+
+
+[charaTalk depthOff]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.2]
+
+[charaEffect E bit_talk_v_slash01]
+[se bac154]
+[wt 0.3]
+[charaMove G 256,0 0.2]
+[charaFadeout E 0.1]
+[wt 0.5]
+[charaFadeout G 0.1]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.2]
+
+
+[charaEffect F bit_talk_ichimon01wh]
+[se bac95]
+[wt 0.3]
+[charaFadeout F 0.1]
+[charaShake C 0.03 4 4 0.4]
+[wt 0.3]
+[se ad341]
+[fowardEffect bit_talk_35]
+[wt 1.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠G：黒コートの男
+[line 3]もう、覚えた。
+[k]
+
+[wt 0.1]
+
+[messageOff]
+[se bac127]
+[fadeout black 0.1]
+[wait fade]
+
+[charaFadeout G 0.1]
+
+[scene 10000]
+[wt 0.2]
+
+[fadein black 0.1]
+[wait fade]
+
+[fowardEffect bit_talk_blood_splash]
+[se ad464]
+[wt 0.6]
+
+
+
+[bgmStop BGM_EVENT_90 2.0]
+[wt 2.5]
+
+[fadeout white 2.0]
+[wait fade]
+
+[scene 10001]
+
+[skip false]
+
+[fadein white 0.1]
+[wait fade]
+
+
+
+[input selectBranch]
+[messageOff]
+[skip false]
+[charaSet A 10007000 1 沖田オルタ]
+[charaSet B 6033000 1 黒コートの男]
+[charaSet C 98025100 1 はぐれサーヴァント]
+[charaSet D 98002000 1 エフェクト用ダミー１]
+[charaSet E 98002000 1 エフェクト用ダミー２]
+[charaSet F 98002000 1 エフェクト用ダミー３]
+[charaSet G 1098154400 1 黒コートの男シルエット]
+
+[bgmStop BGM_EVENT_90 0.4]
+
+[charaFadeout G 0.1]
+[charaFadeout C 0.1]
+[charaPut D 2000,2000]
+[charaFadeout D 0.1]
+[charaPut E 2000,2000]
+[charaFadeout E 0.1]
+[charaPut F 2000,2000]
+[charaFadeout F 0.1]
+
+[charaEffectStop D bit_talk_06b]
+[charaEffectStop E bit_talk_v_slash01]
+[charaEffectStop F bit_talk_ichimon01wh]
+
+[scene 10001]
+[wt 0.4]
+[soundStopAll]
+[maskin white 1]
+[wait mask]
+[label selectBranch]
+
+[wt 0.4]
+
+[revivalBranch lblNormal lblRevival]
+
+[label lblNormal]
+
+[fowardEffect bit_queststart80107]
+[wait fowardEffect]
+
+[branch lblConf]
+[label lblRevival]
+
+[fowardEffect bit_queststart80242]
+
+[wait fowardEffect]
+
+[label lblConf]
+
+[fadeout white 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[fadein white 0.1]
+[wait fade]
+[wt 0.1]
+
+[fadeout black 2.0]
+[wait fade]
+
+[scene 10000]
+[skip true]
+[wt 0.1]
+
+
+
+[scene 59400]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1 1]
+
+[se ad31]
+[wt 0.8]
+[seVolume ad31 0.3 0.5]
+[wt 0.5]
+[seVolume ad31 0.3 0.8]
+[wt 0.5]
+[seVolume ad31 0.3 0.2]
+[wt 0.8]
+
+＠ラジオ放送
+臨時ニュースを申し上げます。[r]陸軍第四魔導機関発表、本日未明をもって、
+[k]
+
+＠ラジオ放送
+帝都東京にて聖杯戦争を開始せり。
+[k]
+
+＠ラジオ放送
+帝都東京にて聖杯戦争を開始せり。
+[k]
+
+[seStop ad31 0.5]
+[messageOff]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.2]
+＠沖田オルタ
+…………。
+[k]
+
+？1：聖杯戦争って、放送してるんだ……
+
+[charaFace A 7]
+
+＠沖田オルタ
+…………本来はしないのか？[r]…………なるほど。
+[k]
+
+？2：ラジオ面白い？
+
+＠沖田オルタ
+…………ああ。[r]…………それに、言葉を覚えるにはいい。
+[k]
+
+？！
+
+[charaFace A 4]
+＠沖田オルタ
+……私は何故かいろいろ足りない。
+[k]
+
+＠沖田オルタ
+サーヴァントであれば生前の記憶が[r]あるはずなのに、私にはそれがない。
+[k]
+
+＠沖田オルタ
+……沖田総司、それが私なのだろう？
+[k]
+
+＠沖田オルタ
+それに、本来現界時に与えられるという[r]その時代の知識なども与えられていない。
+[k]
+
+＠沖田オルタ
+それどころか、少し前まで[r]言語すら機能していなかった。
+[k]
+
+＠沖田オルタ
+……なんなのだ、私は。
+[k]
+
+？1：オルタ……
+
+＠沖田オルタ
+…………。
+[k]
+
+＠沖田オルタ
+そもそも私は本当にセイバーなのだろうか。[r]どうも弱いらしいしな。
+[k]
+
+？2：でもすぐ覚えたみたいだよね
+
+[charaFace A 7]
+＠沖田オルタ
+………ん？[r]ああ、確かにそうだな。
+[k]
+
+[charaFace A 1]
+＠沖田オルタ
+もしかして、私は頭はいいのか？
+[k]
+
+？！
+
+[charaFace A 6]
+＠沖田オルタ
+ところでマスターは私のような得体のしれない[r]サーヴァントと契約して本当に良かったのか？
+[k]
+
+＠沖田オルタ
+そもそも契約もしっかり結べているのか[r]わからないが……。
+[k]
+
+？1：頼りにしてるよ
+？2：これからよろしくね
+
+？！
+
+[charaFace A 7]
+＠沖田オルタ
+……！
+[k]
+
+[charaFace A 1]
+＠沖田オルタ
+……そうか、改めてよろしく頼む。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.0]
+[charaTalk B]
+[se ade74]
+[seVolume ade74 0 0.1]
+[wt 2.2]
+[seStop ade74 0.4]
+
+[charaTalk A]
+[charaFace A 6]
+＠沖田オルタ
+…………待て。
+[k]
+
+＠沖田オルタ
+…………何か来た。
+[k]
+
+[messageOff]
+[wt 0.1]
+[se ade169]
+[seVolume ade169 0 0.3]
+[wt 1.5]
+[seStop ade169 0.4]
+
+？1：お客さんかな？
+？2：坂本さんかな？
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.2]
+
+
+[se ad93]
+[wt 1.5]
+[seStop ad93 0.7]
+[wt 0.7]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFilter B normal 00000080]
+[charaFadein B 0.4 1]
+[wt 0.7]
+
+＠黒コートの男
+……ごめんください。[r]こちら坂本さんのお宅で？
+[k]
+
+
+？1：……あ、はい
+？2：……あいにく今、留守でして
+
+？！
+
+
+[charaFace B 1]
+＠黒コートの男
+なるほど、そりゃ好都合やき。
+[k]
+
+[charaFace B 6]
+＠黒コートの男
+[line 3]じゃあ、死ね。
+[k]
+
+[bgm BGM_EVENT_24 0.1 1]
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+
+[se ad171]
+[fowardEffect bit_talk_Slash_white_01]
+[wt 0.3]
+
+[se ad32]
+[shake 0.03 3 3 0.7]
+[fowardEffect bit_talk_14]
+[wt 1.0]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+いきなりなんだ、おまえは。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠黒コートの男
+何じゃ？　おまんは……。[r]わしの邪魔しゆうがか？
+[k]
+
+＠黒コートの男
+……その大太刀、さてはセイバーか？
+[k]
+
+？1：敵サーヴァント！？
+？2：オルタ！　大丈夫！？
+
+？！
+
+[charaFace B 0]
+＠黒コートの男
+何を寝ぼけたこと言いゆうがか。
+[k]
+
+＠黒コートの男
+サーヴァント同士の殺し合いが聖杯戦争じゃ、[r]弱っちゅうもんから潰すがは当然よ。
+[k]
+
+[charaFace B 7]
+＠黒コートの男
+フン、そのサーヴァント、弱っちゅうがやろ？[r]さっきの打ち合いで分かったき。
+[k]
+
+＠黒コートの男
+まっことセイバーとは思えん[r]弱々しさじゃ。
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+…………。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠黒コートの男
+ハハッ！
+[k]
+
+＠黒コートの男
+これが三騎士の中でも最優といわれる[r]セイバーとは笑わせる！
+[k]
+
+[charaFace B 6]
+＠黒コートの男
+こいつは[#幸先:さいさき]えいぜよ！
+[k]
+
+[charaFace B 2]
+
+＠黒コートの男
+死にさらせえええええ！！！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

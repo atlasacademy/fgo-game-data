@@ -1,0 +1,262 @@
+＄94-03-46-06-1-0
+
+
+
+[soundStopAll]
+
+[charaSet B 98002000 1 フォウ]
+[charaSet C 5008001 1 羊のお兄さん]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[scene 70900]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ade284]
+[wt 1.5]
+
+[bgm BGM_TEITO 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠フォウ
+フォウン、フォウ、フォーウ！[r]（特別意訳：オレンジ！　カシス！　オレンジ！）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H -700,0]
+[charaEffect H bit_talk_20]
+
+＠バーテンダー
+おや。お客様、本日はフォウ様とお二人ですか？[r]ご注文はいつもの黒獣脂ミックスで？
+[k]
+
+？1：（……ああ……沢山あるからね……）
+？2：（……たまには優雅に過ごすタイム……）
+
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠フォウ
+フォウ、フォーウ……[r]（特別意訳：脂はクセになるからね……わかるよ……）
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.5]
+[se ade252]
+[wt 0.8]
+[bgmStop BGM_TEITO 1.0]
+[seStop ade252 0.4]
+[wt 1.0]
+[charaPut H -500,0]
+
+[se ade291]
+[charaMove H 1 0.5]
+[wt 0.5]
+[se bas2]
+[wt 2.0]
+
+[charaEffectDestroy H bit_talk_20]
+
+[bgm BGM_EVENT_7 0.1]
+
+？1：はあ！？
+？2：ちょっ、聖杯が滑ってきたぁ！？
+
+？！
+
+[charaPut H 0,-1200]
+[wt 1.0]
+
+？1：マスター、これどういうコト！？
+
+？！
+
+＠バーテンダー
+あちらのお客さまからです。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠C：あちらのお客さま
+うーん、実に見応えがあった！[r][#映画:きろく]って本当にいいものだねぇ！
+[k]
+
+＠C：あちらのお客さま
+ああ、もちろんそれは私の奢りだ、[r]遠慮せず受け取るといい！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace C 3]
+[charaFace B 0]
+[charaFadein C 0.1 0]
+[charaFadein B 0.1 2]
+
+＠フォウ
+マ[messageShake 0.05 3 3 0.3]ッフォーーーウ！[r]（特別意訳：グランドろくでなし！　生きていたか！）
+[k]
+
+[messageOff]
+[charaMoveReturn B 0,70 0.3]
+[wt 0.1]
+[se bac8]
+[wt 0.4]
+[charaMoveReturn B 0,70 0.3]
+[wt 0.1]
+[se bac8]
+[wt 0.4]
+
+[charaFace C 1]
+
+[branchQuestClear ep2_user 01000822]
+
+
+＠C：あちらのお客さま
+はははは、やめるんだフォウくんとやら、[r]あんまり暴れて出禁になってしまってもしらないぞぅ！
+[k]
+
+[branch user_join]
+
+[label ep2_user]
+
+＠C：あちらのお客さま
+はははは、やめるんだキャスパリーグ、[r]あんまり暴れて出禁になってしまってもしらないぞぅ！
+[k]
+
+[branch user_join]
+
+[label user_join]
+
+？1：あ、アナタは……
+？2：（なぜだろう、名前が口に出ない……）
+
+？！
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠C：あちらのお客さま
+うん。そりゃあ夢の中だから、[r]記憶も意識も曖昧ってものさ。
+[k]
+
+＠C：あちらのお客さま
+私は[#今以:いまもっ]て最高峰のキャスター。[r]羊のお兄さんとでも呼んでほしい。
+[k]
+
+[charaFace C 4]
+
+＠羊のお兄さん
+しかし……それにしてもいい番組だった。
+[k]
+
+＠羊のお兄さん
+もう取り戻せない若き日の後悔……[r]晩年になってからの懺悔、そして郷愁……
+[k]
+
+[charaFace C 1]
+＠羊のお兄さん
+いやあ、ハードボイルドだねぇ。[r]私もああいう渋い[#役所:やくどころ]をやってみたいものさ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠フォウ
+ゴルッフォウ。ドッフォーウ。[r]（特別意訳：極道という意味では既に到達しているよ）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠羊のお兄さん
+そんな訳で、そのカクテルは覗き見していた[r]私からのチケット代のようなものだ。
+[k]
+
+＠羊のお兄さん
+え？　聖杯は贅沢すぎ？
+[k]
+
+[charaFace C 3]
+
+＠羊のお兄さん
+まあまあいいじゃないか、減るものでもないし！[r]遠慮せずどんどん私に使っておくれ！
+[k]
+
+[messageOff]
+[wt 0.5]
+[wipeout openEye 0.7 1]
+[wt 0.7]
+
+[wipein openEye 1.0 1]
+[wt 1.5]
+[charaFace C 1]
+
+＠羊のお兄さん
+おっと、そろそろ目が覚めてしまうかな？[r]それじゃ、また！
+[k]
+
+＠羊のお兄さん
+余裕があったら[r]次のゴールデン英霊劇場で会おう！
+[k]
+
+＠羊のお兄さん
+私としてはアルトリアハーレムものを希望するのだが。[r][#グッナイ:さよなら]、[#グッナイ:さよなら]、[#グッナイ:さよなら]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠フォウ
+フォウ、フォーウ！[r]（特別意訳：何も懲りてないなアイツ！）
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,166 @@
+
+＄94-04-65-01-1-0
+
+[soundStopAll]
+
+[scene 84906]
+
+[wipeFilter cinema 0.5 0]
+
+[se ad37]
+[seVolume ad37 0 0.3]
+[wt 2.0]
+
+[fadein black 1.5]
+[seVolume ad37 1.5 0.6]
+[wait fade]
+
+[wt 1.0]
+
+[scene 21101 2.0]
+[wt 3.0]
+
+[seVolume ad37 1.0 1.0]
+[wt 1.0]
+
+
+＠
+真っ赤っかな夕焼けと波の音。[r]私とあいつは向かい合う。
+[k]
+
+＠？？？
+告白したいことがあるんだ。
+[k]
+
+
+＠
+あいつは頷いて、[r]無言で私の言葉を待つ。
+[k]
+
+
+＠
+私たちはどこまでいっても偽物で、[#贋作:がんさく]で、[r]消えて無くなる紙風船。
+[k]
+
+＠
+でも、それでも。[r]私は今、こうしてここに立っていて。
+[k]
+
+＠
+そして戦いを始めようとしている。
+[k]
+
+[messageOff]
+[seStop ad37 2.7]
+[seVolume ad37 2.0 0.5]
+[wt 0.5]
+
+[bgm BGM_EVENT_106 1.0]
+
+
+＠？？？
+[line 3]いくよ。
+[k]
+
+[clear]
+
+
+＠？？？
+ああ、来い……！
+[k]
+
+＠
+その言葉に、私は[#魔杖:まじょう]を振りかざし、[r]声高らかに叫ぶ。
+[k]
+
+＠？？？
+天に女神の守護輝き、[r]古の巨神族の霊気は我が血脈を巡らん。
+[k]
+
+[messageOff]
+[se ad39]
+[se ad153 1.8]
+[seVolume ad153 0 0.2]
+[effect bit_talk_magic_circle 0,50]
+[wt 1.0]
+[seVolume ad153 0.8 0.4]
+[wt 1.0]
+
+
+＠？？？
+いざ、大いなる[#叡智:えいち]は[r]我が翼となりて羽ばたかん！
+[k]
+
+[messageOff]
+[effectStop bit_talk_magic_circle]
+[wt 0.4]
+[se bas1]
+[wt 0.3]
+
+[fadeout white 0.3]
+[se ad132]
+[seStop ad39 1.0]
+[seStop ad153 0.3]
+[wait fade]
+
+[scene 10000]
+[wt 0.3]
+
+[seStop ad132 0.5]
+[seStop bas1 0.5]
+
+[fadein white 0.5]
+[wait fade]
+
+＠
+[line 3]これは、私が、[r]積年の後悔に決着をつける物語だ。
+[k]
+
+＠
+……蹴り飛ばすことで、だけど。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_106 2.0]
+[wait fade]
+
+[skip false]
+
+[effectDestroy]
+[wipeOff]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[soundStopAllFade 0.4]
+
+[maskout black 1.0]
+[wait mask]
+[scene 10000]
+[wt 0.1]
+[maskin black 0.1]
+[wait mask]
+
+[label selectBranch]
+
+[questMessageOverwrite 80278]
+
+[fowardEffect bit_queststart80278]
+[wait fowardEffect]
+
+[wt 1.0]
+
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

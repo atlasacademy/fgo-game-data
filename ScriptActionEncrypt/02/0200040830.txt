@@ -1,0 +1,761 @@
+
+
+
+＄02-00-04-08-3-0
+
+[soundStopAll]
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 2003001 1 ロビンフッド]
+[charaSet C 1098120430 1 魔神柱ラウム]
+
+[charaSet D 1098121800 1 魔神柱ラウム（魔神柱形態）]
+
+[charaSet E 25001001 1 アビゲイル]
+
+[charaSet F 1098120300 1 ラヴィニア（返り血無し）]
+
+[charaSet G 1098120310 1 ラヴィニア]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 49602]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFace C 0]
+[charaFadein D 0.1 1]
+[charaFadein C 0.1 1]
+
+[charaDepth D 10]
+[charaDepth C 5]
+
+[charaShake D 0.05 3 3 0]
+[se ad14]
+[fadein black 1.0]
+[wait fade]
+
+
+
+[wt 0.5]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.3]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.3]
+
+[seStop ad14 0.7]
+[se ad42]
+[charaSpecialEffect D enemyErasure 1 1.0]
+[wt 1.5]
+[charaShakeStop D]
+
+＠魔神柱ラウム
+ｃｒｏａｋ……ｃｒｏａｋ……
+[k]
+
+[charaTalk on]
+
+＠魔神柱ラウム
+アビ……ゲイル……[r]……アビィィゲイルゥゥ……。
+[k]
+
+[se ad536]
+[wt 0.5]
+
+[seStop ad536 0.3]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaDepth D 5]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ラウム[line 3][r]いえカーターの頭部がちぎれて！
+[k]
+
+？1：一羽のカラスに[line 3]！
+？2：アビーを道連れにする[&気か:気]！？
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad509]
+[seVolume ad509 0 0.1]
+[seVolume ad509 0.4 1.0]
+[wt 1.5]
+[seStop ad509 0.3]
+
+？1：[line 3]ロビン！　[#射:う]て！
+？！
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.1]
+
+＠ロビンフッド
+ちぃっ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad509]
+[seVolume ad509 0 0.1]
+[seVolume ad509 1.2 1.0]
+[wt 1.5]
+[seStop ad509 0.3]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+[charaEffect H bit_talk_41]
+[wt 0.5]
+[charaPut H 1]
+[wt 0.5]
+[charaFadeout E 0.1]
+[charaPut H 1200,1200]
+[wt 0.1]
+[effect bit_shot_01 0,-20]
+[wt 0.1]
+[se bac20]
+[wt 0.4]
+[se bac19]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_24 0.7]
+
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[wt 1.0]
+[charaShake F 0.05 3 3 0.5]
+[charaShake G 0.05 3 3 0.5]
+[se bac13]
+[flashin once 0.1 0.1 FF000080 FF000080]
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.5 1]
+[charaFadeout F 1.0]
+
+＠ラヴィニア
+[line 9]。
+[k]
+
+[charaFace G 7]
+
+＠ラヴィニア
+……ぁ…………
+[k]
+
+[messageOff]
+[charaFadeout G 0.4]
+[charaMove G 0,-20 0.7]
+[wt 0.3]
+[se ad144]
+[seVolume ad144 0 0.4]
+[wt 1.5]
+
+？1：[line 3]ラヴィニア！？
+？2：最初から彼女を狙って……！？
+？！
+
+[imageSet H back10000 1]
+[charaDepth H 10]
+[charaScale H 1.01]
+[charaPut H 1200,1200]
+[charaFadeTime H 0.1 0.0]
+
+
+[scene 50600 1.2]
+[wt 1.5]
+
+＠瀕死のカーター《ラウム》
+ｃｒｏａｋ……ｃｒｏａｋ……[r]時空の“門”が……増え続けている……
+[k]
+
+＠瀕死のカーター《ラウム》
+“[#現実:ノンフィクション]”の魔術師どもに……[r]この脅威に対処できる……はずが無い……。
+[k]
+
+＠瀕死のカーター《ラウム》
+“[se ad534][seVolume ad534 0 0.4]六つ目の……[wt 0.3][seStop ad534 0.2]罪状”……[r]それは、ささやかな……取るに足らぬ罪だ……。
+[k]
+
+＠瀕死のカーター《ラウム》
+アビゲイルは、捨て去るだろう。[r]すべてを……。
+[k]
+
+＠瀕死のカーター《ラウム》
+人の心を……言葉を……望みを……。
+[k]
+
+[charaPut H 1]
+[charaFadeTime H 0.2 0.6]
+
+＠瀕死のカーター《ラウム》
+……ぐおっ。
+[k]
+
+[messageOff]
+[charaEffect B bit_talk_35]
+[se ad161]
+[flashin once 1.0 1.0 AF3333FF AF333300]
+
+[charaPut H 1200,1200]
+[charaFadeTime H 0.1 1.0]
+[charaDepth H 8]
+[charaScale H 1.0]
+
+[wt 1.0]
+[charaPut B 1200,1200]
+[scene 10000]
+
+[wt 0.5]
+[charaSet C 3031001 1 哪吒]
+[charaSet D 5033001 1 キルケー]
+
+[charaSet F 5034001 1 シバの女王]
+
+[charaSet G 25001002 1 アビゲイル第三再臨]
+[charaSet H 1098122600 1 アビゲイル第三再臨]
+
+[bgm BGM_EVENT_41 0.1]
+
+[scene 49602 1.5]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ラウムが……踏み潰され…………。
+[k]
+
+＠マシュ
+…………アビー……さん……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠アビゲイル
+………………
+[k]
+
+＠アビゲイル
+…………ラヴィニア……。
+[k]
+
+＠アビゲイル
+……ラヴィニア……？[r]………………死んだのね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ラヴィニアさん……。
+[k]
+
+？1：（アビーの雰囲気がまた一変した……）
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？2：（キルケー、なんとか……）
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠キルケー
+…………。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠哪吒
+……あ、あびー……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠シバの女王
+……もう……遅いわ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠キルケー
+……ああ。
+[k]
+
+＠キルケー
+ラウムに手間取っている間に、[r]アビゲイルは人ではなくなったな。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ロビンフッド
+[line 3]そうかい。[r]じゃあ[#射:う]つしかねえな……！
+[k]
+
+？1：ロ[line 3]
+？！
+
+[messageOff]
+[se bac19]
+[charaMoveReturn B 10,0 0.2]
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+[wt 0.8]
+[effect bit_talk_GuardMagic]
+[se ad170]
+[wt 2.0]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠哪吒
+矢が……届かぬか。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ロビンフッド
+……。[r]ま、そんなこったろうと分かってたけどな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠アビゲイル
+…………
+[k]
+
+＠アビゲイル
+スト・テュホン……スト・テュホン……
+[k]
+
+＠アビゲイル
+其は罪人なり……[r]六つの縄の結び目なり……。
+[k]
+
+＠アビゲイル
+この異端の地に贖罪を求むるは[r]悪魔の収穫なり。
+[k]
+
+＠アビゲイル
+祈りはここに[r]父なる神と共にあり……。
+[k]
+
+＠アビゲイル
+スト・テュホン……スト・テュホン……
+[k]
+
+＠アビゲイル
+其は罪人なり……[r]七つの縄の結び目なり……
+[k]
+
+＠アビゲイル
+この[#煉獄:れんごく]に贖罪を求むるは[r]仮象への供物なり……！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad343]
+[effect bit_talk_presage]
+[wt 1.4]
+[seLoop ad61]
+[seVolume ad61 0 0.1]
+[wt 0.1]
+[seLoop ad440]
+[seVolume ad440 0 0.05]
+[seVolume ad440 1.0 1.0]
+[wt 2.5]
+[seStop ad61]
+[seStop ad343 1.5]
+[seStop ad440 0.7]
+[se ad267]
+[charaFace H 0]
+[effectStop bit_talk_presage]
+[charaEffect E bit_talk_powerup]
+[wt 1.0]
+[se ad63]
+[shake 0.03 3 3 1.0]
+[wt 1.0]
+[shake 0.05 6 6 1.0]
+[se ad64]
+[wt 0.5]
+[charaFadein H 1.0 1]
+[wt 1.0]
+[charaFadeout E 1.0]
+[wt 2.5]
+
+＠H：アビゲイル
+………………。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠シバの女王
+この、結界の歪み……戒律の破れは……。[r]魔神ではない……まさに偽りの神……。
+[k]
+
+？1：アビ……ゲイル……？
+？2：彼女の身に、神格が降臨したのか……？
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+
+＠H：アビゲイル
+……痛み……。
+[k]
+
+＠H：アビゲイル
+…………[#疼:うず]き……苦痛……。
+[k]
+
+＠H：アビゲイル
+人の身の、もっとも尊い[#幸:さいわ]いは何……？
+[k]
+
+＠H：アビゲイル
+喜びも、愛情も……[r]みんな色焦せ、消えていくわ……。
+[k]
+
+＠H：アビゲイル
+ただ……犯した罪の意識だけが残り、[r]ずっと[#苛:さいな]まれる……。
+[k]
+
+＠H：アビゲイル
+それは、死後の悪霊となってすら、[r]突き動かす衝動となる……
+[k]
+
+[charaFace H 9]
+
+＠H：アビゲイル
+醜い[#食屍鬼:グール]になってまで……。
+[k]
+
+＠H：アビゲイル
+一片の罪も持たない人がいる……？
+[k]
+
+＠H：アビゲイル
+罪の子で無い者が[r]この世にいるのかしら……？
+[k]
+
+[charaFace H 0]
+
+＠H：アビゲイル
+ならば、[#報いを:punish]、あたえるわ。
+[k]
+
+＠H：アビゲイル
+苦痛による確かな報い……[r]それこそが唯一の、贖罪だわ……。
+[k]
+
+＠H：アビゲイル
+この世のすべての人に[line 3][r]苦痛を[line 3]苦痛を[line 3]
+[k]
+
+[charaFace H 1]
+
+＠H：アビゲイル
+私の喜び……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_41 1.0]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠マシュ
+やめてください……アビー……。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth H 2]
+[charaDepth G 1]
+[charaBackEffect H bit_talk_06b]
+[se ad42]
+[seVolume ad42 0 0.05]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.1]
+[seVolume ad42 0.4 0.3]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.4]
+
+[charaFadeout H 2.0]
+[wt 1.0]
+[charaBackEffectStop H bit_talk_06b]
+
+＠G：アビゲイル
+“門”は、あらゆる時空へ届くわ。[charaSet H 25001002 1 アビゲイル第三再臨][bgm BGM_EVENT_24 0.1]
+[k]
+
+[charaFace G 10]
+
+＠G：アビゲイル
+ごめんなさい……。[r]まだ……“門”の使い方に……慣れていないの……。
+[k]
+
+＠G：アビゲイル
+ああ……邪魔な結界……焦点が定まらない……[r]うまく……痛くできないわ……。
+[k]
+
+[messageOff]
+[se ad39]
+[effect bit_talk_warp_failed]
+[charaMove G 20,0 0.3]
+[wt 0.4]
+[se ade63]
+[wt 0.66]
+[se ad39]
+[charaMove G -40,-15 0.5]
+[wt 0.46]
+[se ade63]
+[wt 0.4]
+[charaMove G 0,0 0.3]
+[wt 0.2]
+[se ad39]
+[charaMove G 0,12 0.4]
+[wt 0.6]
+[se ade63]
+[seStop ad39 0.4]
+[wt 0.3]
+[charaMove G 0,0 0.2]
+[wt 0.2]
+[wait effect bit_talk_warp_failed]
+
+[charaFace G 4]
+＠G：アビゲイル
+そう……外には届けられないのね……[r]最も罪深い人たちを捜しているのに……
+[k]
+
+＠G：アビゲイル
+じゃあ……結界そのものを通じて、[r]魔術師たちの心臓に……苦痛を送り込めば……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠マシュ
+やめてくださいっ……！！
+[k]
+
+？1：……アビゲイル
+？2：きみは……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+
+＠H：アビゲイル
+マシュさんと違って、[r]座長さんは、解ってくれるわね……
+[k]
+
+？1：[&きみ:あなた]が邪悪な神となる必要はない
+？！
+
+＠H：アビゲイル
+誰もが救いを求めているのに……？[r]あなたの喜びは[line 3][charaFace H 1]私の喜びよ？
+[k]
+
+？1：自分の喜びは、[&きみ:あなた]を救い出すこと
+
+[charaFace H 8]
+
+＠H：アビゲイル
+…………私……を？
+[k]
+
+[charaFace H 10]
+？2：誰でも、生きているだけで十分に痛んでいるよ
+
+[charaFace H 10]
+
+＠H：アビゲイル
+かわいそう……[r]そんなのは、かわいそうよ……
+[k]
+
+＠H：アビゲイル
+ぜんぜん、足りないわ……。
+[k]
+
+？！
+
+＠H：アビゲイル
+私は出られないの……[r]セイレムから決して外には出られない。
+[k]
+
+＠H：アビゲイル
+私の罪は、まだこの地に眠っているから。
+[k]
+
+＠H：アビゲイル
+だったら全部……セイレムになればいいの。[r]私[charaFace H 4]が、つなげてあげる[line 3]。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠哪吒
+―――[#主:ますたー]。
+[k]
+
+＠哪吒
+あれなる[#偽神:ぎしん]を　討て―――。
+[k]
+
+？1：哪吒……
+？！
+
+[charaFace C 5]
+＠哪吒
+あれは　あびげいる　にあらず。[r]あれなるは　邪神　偽りの神なり。
+[k]
+
+＠哪吒
+堕落したあびげいるが[r]真に[#穢:けが]れ無き強さを　持つなら……
+[k]
+
+＠哪吒
+打ち倒した後であろうと、[r]何かが　残る……！
+[k]
+
+[charaFace C 2]
+
+＠哪吒
+我が[#魂魄:こんぱく]の有り様こそ　その証なり！！
+[k]
+
+？1：わかった……！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠H：アビゲイル
+そうよ、ぜんぶよ[line 3]
+[k]
+
+＠H：アビゲイル
+イングランドも、ローマも、エルサレムも……[r]ぜんぶつなげてあげるわ。
+[k]
+
+＠H：アビゲイル
+そして、ああ果て無き、永劫の[#苦痛を:pain]―――。[r][#苦痛を:pain]、[#苦痛を:pain]、[#苦痛を:pain]―――！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

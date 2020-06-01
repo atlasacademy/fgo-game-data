@@ -1,0 +1,346 @@
+
+＄02-00-01-12-3-0
+
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 1002001 1 アルトリア・オルタ]
+[charaSet C 11003001 1 ジャンヌ・オルタ]
+[charaSet D 2023000 1 モリアーティ]
+[charaSet E 98109100 1 新宿のアサシン]
+[charaSet F 98111500 1 通信用ノイズ]
+[charaSet G 98109100 1 雀蜂]
+[charaSet H 98109100 1 雀蜂]
+
+[soundStopAll]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 39100]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ジャンヌ・オルタ
+はい、一丁あがり！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wt 0.3]
+＠マシュ
+ロミオとジュリエット、撃破です！[r]シェイクスピアさん、ごめんなさい！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アルトリア・オルタ
+……そろそろだな。[r]マスター、変装を解く用意はできたか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wt 0.3]
+＠マシュ
+マスター、更に新手が……大軍です！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[messageOff]
+
+[cameraMove 0.5 0,0 1.2]
+[wait camera]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFace G 0]
+[charaFace H 0]
+[charaScale E 0.83]
+[charaScale G 0.83]
+[charaScale H 0.83]
+
+[se ad59]
+[charaFadein E 0.7 0,-48]
+[seStop ad59 1.0]
+[wt 1.4]
+
+[cameraMove 1.0 -80,0 1.2]
+[se ad59]
+[charaFadein G 0.7 384,-48]
+[seStop ad59 1.0]
+[wt 1.4]
+[wait camera]
+
+[cameraMove 0.5 80,0 1.2]
+[se ad59]
+[charaFadein H 0.7 -384,-48]
+[seStop ad59 1.0]
+[wt 1.4]
+[wait camera]
+
+[cameraMove 0.2 0,0 1.2]
+＠新宿のアサシン
+囲め囲め！[r]絶対に宝具を使わせるなよ！
+[k]
+
+＠新宿のアサシン
+なあに安心しろ、隙を見て俺が仕留める！
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.4]
+[charaFadeout G 0.4]
+[charaFadeout H 0.4]
+[cameraHome 0.5]
+[wait camera]
+
+[charaTalk on]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wt 0.3]
+＠マシュ
+……やはり、駄目です。[r]霊基数値が以前のものと一致しません！
+[k]
+
+＠マシュ
+その何十人といる敵の内、[r]誰かが新宿のアサシンなのは間違いありませんが……。
+[k]
+
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠アルトリア・オルタ
+よし、こいつらの[#誰か]がアサシンならば、[r]それで問題ない。
+[k]
+
+＠アルトリア・オルタ
+さあ、マスター！
+[k]
+
+
+？1：せ・え・の！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[se ad7]
+[shake 0.05 4 4 0.4]
+[wt 0.4]
+[bgmStop BGM_EVENT_3 0.7]
+[wt 0.3]
+
+[charaFace E 0]
+[charaFace G 0]
+[charaFace H 0]
+[charaScale E 1.0]
+[charaScale G 1.0]
+[charaScale H 1.0]
+[charaDepth E 9]
+[charaDepth G 1]
+[charaDepth H 1]
+[charaFadein E 0.1 1]
+[charaFadein G 0.1 2]
+[charaFadein H 0.1 0]
+＠A：新宿のアサシン
+え……！？
+[k]
+
+＠A：雀蜂
+……？
+[k]
+
+＠A：新宿のアサシン
+[#カルデアの]……マスター！？
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaSet E 98109100 1 新宿のアサシン]
+[wt 0.4]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFace G 0]
+[charaFace H 0]
+[charaDepth E 9]
+[charaDepth G 1]
+[charaDepth H 1]
+[charaFadein E 0.1 1]
+[charaFadein G 0.1 2]
+[charaFadein H 0.1 0]
+
+[effect bit_talk_41]
+
+？1：おまえだ！
+？！
+
+[bgm BGM_EVENT_49 0.1]
+
+[charaShake E 0.05 4 0 1.0]
+[effectStop bit_talk_41]
+[wt 1.0]
+
+[charaFadeout E 0.4]
+[charaFadeout G 0.4]
+[charaFadeout H 0.4]
+[wt 0.7]
+
+[charaSet E 6026000 1 新宿のアサシン]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠アルトリア・オルタ
+見つけたぞ、アサシン[line 3]！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[messageOff]
+[se ad266]
+[seStop ad266 1.0]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.7 1]
+[wt 1.0]
+＠新宿のアサシン
+く、しまった……！[r]こんな頭の悪い、下らん手に！！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠モリアーティ
+心理を絶妙に読み取った、[r]極めて悪辣な策だと褒め称えるべきではないかネ！？
+[k]
+
+＠モリアーティ
+さあ、屋内ならアサシンは逃げることもできない！[r]思う存分にブッ飛ばしたまえ！
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wt 0.3]
+＠マシュ
+ターゲット、新宿のアサシンをマーキングしました！[r]集中攻撃で仕留めて下さい！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠新宿のアサシン
+ちぇっ。[r]ま、いつかこういう日が来るかもなーとは思ってたけどさ。
+[k]
+
+[charaFace E 8]
+＠新宿のアサシン
+思ったより早い……いや、遅いか？[r]ともあれ、思う存分暴れ回った結果ってことだ。
+[k]
+
+＠新宿のアサシン
+文句はない。[r]それにまあ、俺が負けると決まった訳じゃないし！
+[k]
+
+[charaFace E 9]
+＠新宿のアサシン
+よっしゃ、おまえら！[r]死ね！　俺のために！　おまえのために！
+[k]
+
+[charaFace E 7]
+＠新宿のアサシン
+栄華のために欲望のために、片っ端から死んでくれ！[r]我が宿星は、[#天巧星:てんこうせい]！
+[k]
+
+
+[charaFace E 8]
+＠新宿のアサシン
+梁山泊百八傑が一人、[#浪子:ろうし][#燕青:えんせい]！[r]推して参る[line 3]！！
+[k]
+
+[messageOff]
+
+[se ad10]
+[seVolume ad10 0 0.4]
+[se ad38]
+[seVolume ad38 0 0.6]
+[shake 0.05 0 4 0.4]
+[wt 1.0]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_49 0.4]
+[wait fade]
+[soundStopAll]
+[end]

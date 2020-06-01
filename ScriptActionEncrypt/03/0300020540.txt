@@ -1,0 +1,362 @@
+
+
+＄03-00-02-05-4-0
+[soundStopAll]
+
+
+[charaSet A 8001400 1 マシュ]
+[charaSet B 1098153200 1 御使い]
+[charaSet C 98002000 1 フォウ]
+[charaSet D 1098153600 1 ゲルダ]
+[charaSet E 1098153900 1 少年]
+[charaSet F 1098154100 1 少女]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[wt 0.7]
+
+[effect bit_talk_kengekiall01]
+[wt 0.1]
+[se ad32]
+[fowardEffect bit_talk_14]
+[wt 0.4]
+[se ad32]
+[wt 0.1]
+[fowardEffect bit_talk_14]
+[se ad32]
+
+[wt 1.0]
+
+[wipeout leftToRight 0.1 1]
+[wait wipe]
+
+[scene 61800]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 -25,0]
+
+[wipein rightToLeft 0.3 1]
+[se ad671]
+[wt 0.1]
+[charaMove A 1 0.2]
+[wait wipe]
+
+[wt 0.3]
+[seStop ad671 0.3]
+[wt 1.0]
+
+[charaFace A 2]
+
+＠マシュ
+[line 6]！
+[k]
+
+
+[messageOff]
+
+[se ad688]
+
+[charaFace A 2]
+[charaMoveScale A 1.1 0.2]
+[charaMove A 0,20 0.2]
+
+[charaPut H 1]
+[charaScale H 1.1]
+
+[charaEffect H bit_talk_41]
+
+[charaPut H -30,90]
+[shake 0.05 2 4 0.5]
+
+[wt 0.2]
+
+[charaPut H 1200,1200]
+[charaFadeout A 0.4]
+[wt 0.2]
+[charaEffectStop H bit_talk_41]
+
+[wt 0.3]
+
+[charaScale H 1.0]
+[charaScale A 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[charaShake B 0.05 5 2 1.0]
+[fowardEffect bit_talk_13]
+[flashin once 0.2 0.2 FFFFFF80 FFFFFF80]
+[effect bit_talk_14]
+[se ad687]
+[wt 0.2]
+[cueSeStop bac54 0.3]
+
+[wt 1.0]
+
+＠御使い
+……………………………………人、が。御使いを。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+わたしは人間ですが、かつて英霊の力を持った[r]デミ・サーヴァントです。
+[k]
+
+＠マシュ
+汎人類史に於けるあなたたちであれば、[r]その魂を真に欲しただろう英雄に力を借りていました。
+[k]
+
+＠マシュ
+あなたは習性として、きっと、わたしの中にあった[r]英雄の[#残滓:ざんし]を無視できない。だから[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaPut H 0,-70]
+[charaEffect H bit_talk_06_blue]
+
+[wt 0.7]
+
+＠御使い
+勇士の、魂など……
+[k]
+
+＠御使い
+………………[#量産]されてより後の、二千と数百年……[r]ついぞ……まみえること……叶わず……
+[k]
+
+[messageOff]
+[charaSpecialEffect B enemyErasure 1 2.0]
+[wt 0.3]
+[cueSe Battle ba5]
+[wt 2.0]
+[charaEffectStop H bit_talk_06_blue]
+[cueSeStop ba5 0.3]
+
+[wt 1.0]
+
+[charaSet G 1098153700 1 村の大人_男]
+[charaSet H 1098153800 1 村の大人_女]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+[line 3]対象の消滅を確認しました。[bgm BGM_EVENT_81 0.1][r][#霊基外骨骼:オ ル テ ナ ウ ス]・出力減衰率、誤差範囲。まだいけます！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠フォウ
+フォウ、ファウキャーウ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠マシュ
+彼女はサーヴァントではありませんでした。[r]魔力反応はありましたが……
+[k]
+
+[charaFace A 14]
+
+＠マシュ
+召喚された存在ではありません！[r]つまり、2018年現在の北欧[#異聞帯:ロストベルト]には……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ゲルダ
+御使いは……[r]たくさん、いるのよ……
+[k]
+
+[charaFace D 3]
+
+＠ゲルダ
+たくさん、たくさんいるの！
+[k]
+
+＠ゲルダ
+ど、どうしてあんなことしたの、マシュさま！[r]御使い同士で喧嘩なんて！
+[k]
+
+[charaFace D 2]
+
+＠ゲルダ
+そんなのきっと[line 3]神さまが怒って[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0]
+[charaFace F 2]
+[charaFadein F 0.1 2]
+
+＠E：子供たち
+御使いが消えちゃった……[r]そんなことあるの……？
+[k]
+
+＠F：子供たち
+え、え？[r]定めの日はどうなっちゃうの？　ねえ？
+[k]
+
+＠E：子供たち
+おかしい、おかしい！　こんなの変！[r]私たち花束をあげたのに扉を御使いは開けてくれないし、
+[k]
+
+＠F：子供たち
+自分たちで開けちゃいけないんでしょ？[r]昨日のゲルダの時と定めの日はべつなんでしょ？
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 0]
+[charaFace H 0]
+[charaFadein H 0.1 2]
+
+＠G：大人たち
+あ、ああ……なんてことだ……！[r]ヴァルハラへ俺たちを導いてくださる御使いが消えた！
+[k]
+
+[charaFace H 1]
+
+＠H：大人たち
+大丈夫よ！　御使いは神さまのしもべなんだから、[r]消えたりしても他の御使いが来てくださるわ、ほら[line 3]
+[k]
+
+＠H：大人たち
+空に光が[line 3]
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_80]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaMoveReturn C 0,30 0.25]
+
+＠フォウ
+フォウ、フォウフォフォーウ！[r]キャーウ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+上空に新たな魔力反応が多数！[r]……連続戦闘、外骨骼の出力ならまだ耐えられます！
+[k]
+
+[messageOff]
+[charaFace A 7]
+[cueSe Battle bac170]
+[wt 1.0]
+
+＠マシュ
+アマルガムゴート、問題なし。[r]戦闘のみであれば対処は可能な筈です。
+[k]
+
+[charaFace A 0]
+
+＠マシュ
+御使いは集落の人々を……[r][#庇護:ひ ご]対象として捉えているようです。
+[k]
+
+＠マシュ
+先ほどの一騎の場合、攻撃の余波が[r]人々へ及ぶのを嫌がっているような節さえありました。
+[k]
+
+＠マシュ
+おそらく今回も、[r]集落に被害が及ぶ可能性は低く……[line 3]
+[k]
+
+＠マシュ
+……。[r]……。
+[k]
+
+[charaFace A 8]
+
+＠マシュ
+…………いえ、何よりもまずは、すみませんでした。
+[k]
+
+＠マシュ
+無謀な行動でした……
+[k]
+
+？1：大丈夫、同じ気持ちだった
+？2：マシュがやらなければこっちでやってたよ
+
+？！
+
+[charaFace A 13]
+
+＠マシュ
+ありがとうございます。[wt 0.5][charaFace A 2][r][line 3]上空から魔力反応複数、急速接近。きます！
+[k]
+
+＠マシュ
+[#霊基外骨骼:オ ル テ ナ ウ ス]、出力維持しつつ戦闘開始！[r]指示および援護をお願いします、マスター！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

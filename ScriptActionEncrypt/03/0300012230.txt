@@ -1,0 +1,1646 @@
+
+
+＄03-00-01-22-3-0
+
+[soundStopAll]
+
+[scene 56500]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaSet A 7008001 1 ベオウルフ]
+[charaSet B 7030001 1 アタランテ・オルタ]
+[charaSet C 5035001 1 アナスタシア]
+[charaSet D 11006002 1 サリエリ]
+[charaSet E 98115300 1 ホームズ]
+[charaSet F 1017001 1 武蔵]
+[charaSet G 98115000 1 エフェクト用1]
+[charaSet H 98115000 1 エフェクト用2]
+
+[cameraMove 0.1 0,-60 1.35]
+[wt 0.1]
+
+[fadein black 0.8]
+[wait fade]
+
+[se ad621]
+[se ad427]
+[shake 0.05 3 3 1.2]
+[wt 1.5]
+
+
+＠ベオウルフ
+くそ、詰めが足りねぇ！[r]おまけに宮殿まで遠すぎる！
+[k]
+
+＠アナスタシア
+これが……四百五十年の執念……！
+[k]
+
+[messageOff]
+[wt 0.1]
+[se ad621]
+[se ad622]
+[se ad425]
+[shake 0.05 3 3 1.2]
+[wt 1.5]
+
+＠イヴァン雷帝
+聖なるかな！　聖なるかな！　聖なるかな！[r]我が心に一点の曇りなく！
+[k]
+
+＠イヴァン雷帝
+これを[#掻:か]き乱せし者、我[#許:ゆる]さじ！
+[k]
+
+[messageOff]
+[charaPut G 1]
+[charaEffect G bit_talk_ivan_lightning_charge]
+[se ad626]
+[wt 1.0]
+
+？1：サリエリさん！
+？2：そこから離れて！
+？！
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[seStop ad626 1.0]
+[charaEffectStop G bit_talk_ivan_lightning_charge]
+[wait wipe]
+
+[effect bit_talk_snowstorm_01 0,0 H]
+
+[charaFadeout D 0.1]
+[scene 54501]
+[cameraMove 0.1 0,0 1.02]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+[wipein rectangleStripUpToDown 0.8 1.0]
+[wait wipe]
+
+
+＠サリエリ
+いや、ここから離れればイヴァン雷帝は[r]力を取り戻す！
+[k]
+
+＠サリエリ
+断じて離れる訳にはいかん！[r]まして、ピアノなどこの世界に一つしかない！
+[k]
+
+[charaFace D 5]
+
+＠サリエリ
+死ぬまで[line 3]否。[r]死んでも、私は怒りを奏で続けよう！
+[k]
+
+＠サリエリ
+私の怒り、我の怒り、そして[line 3][r]アマデウスの怒りを！
+[k]
+
+＠A：イヴァン雷帝
+消え失せろ、音楽家！
+[k]
+
+[se ade79]
+
+[messageOff]
+[effectStop bit_talk_snowstorm_01]
+
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[scene 56600]
+[wt 0.1]
+
+？1：させるか……！
+？2：まわりこめ、ケテル・マルクト……！
+？！
+
+[seStop ade79 1.5]
+[cameraMove 0.1 50,10 2.0]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.6 1.0]
+[se ad628]
+[shake 0.05 4 4 2.5]
+[wait wipe]
+
+[wt 1.5]
+
+
+[fadeout white 0.3]
+[wait fade]
+
+[cameraHome 0.1]
+[wt 0.5]
+
+[fadein white 0.3]
+[wait fade]
+
+＠イヴァン雷帝
+おのれ、石像の巨人如きが余を阻むか……！[r]余以外の者が、我が宮殿を守るというのか！
+[k]
+
+＠イヴァン雷帝
+許さん。許さんぞ、不敬者どもが……！[r]もろともに[#土塊:つちくれ]に還るがよい！
+[k]
+
+＠イヴァン雷帝
+我が血液に[#稲妻:いなずま][#奔:はし]る、[r][#天鼻:てんび]にて嵐を呼ばん！
+[k]
+
+
+[messageOff]
+[fadeout white 0.5]
+[wait fade]
+
+[se ad427]
+[se ad626]
+[seVolume ad626 0 0.3]
+
+[scene 54400]
+
+[charaPut G 1]
+[charaEffect G bit_talk_ivan_lightning_charge]
+[charaEffect G bit_talk_ivan_lightning_charge_back]
+
+[fadein white 0.8]
+[wait fade]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠アタランテ・オルタ
+まずいぞ、[%1]！[r]天に[#掲:かか]げた鼻の先端で嵐が渦巻いている！
+[k]
+
+＠アタランテ・オルタ
+あれは神霊の雷撃クラスだ！[r][#ゴーレムは耐えきれても他は耐えきれない]！
+[k]
+
+＠アタランテ・オルタ
+汝も、背後の王宮も、すべて粉砕されるぞ！[r]ゴーレムを退けろ、無駄死にしたいのか！
+[k]
+
+？1：でも……！
+？2：っ………！
+
+？！
+
+[charaFadeout B 0.1]
+[messageOff]
+[wt 1.0]
+
+[se ad543]
+[seVolume ad543 0 0.3]
+[wt 0.5]
+[seVolume ad543 1.5 1.0]
+[wt 1.4]
+[seStop ad543 0.5]
+[wt 0.5]
+[se ad543]
+[wt 0.5]
+[seStop ad543 1.0]
+[wt 0.5]
+
+[se ad13]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ホームズ
+間に合った！[r]自慢にたがわぬ見事なテクニックでしたね、ミスター！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ベオウルフ
+うお、ありゃシャドウ・ボーダーか！？[r]瓦礫を乗り越えてやってきやがった！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠ホームズ
+諦めるのは早い、そこでゴーレムを維持だ[r][%1]！
+[k]
+
+[seStop ad626 1.0]
+
+＠ホームズ
+いま、最後の戦力をそちらに射出する……！
+[k]
+
+？1：[line 3]まさか
+？2：[line 3]マシュ！？
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_24 2.0]
+[wipeout rectangleStripDownToUp 0.8 1.0]
+[wait wipe]
+
+[scene 10000]
+
+[charaPut G 1200,1200]
+[charaPut H 1200,1200]
+
+[charaFadeout E 0.1]
+
+[wt 1.5]
+
+[wipein rectangleStripDownToUp 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[charaPut H 1200,1200]
+
+[cameraMove 0.1 0,125 1.25]
+
+[wt 0.5]
+
+[wipeFilter cinema 0.5 0]
+[scene 36500]
+
+[bgm BGM_EVENT_79 0.1 0.4]
+[fadein black 2.0]
+[wait fade]
+
+＠
+ふと、[#時間神殿:ソ　ロ　モ　ン]のことを思い出した。
+[k]
+
+＠
+自分の終わりを実感させる強烈な光と、[r]自分の命がどこにあるのかを報せた光を。
+[k]
+
+＠
+盾を持って、前に出た瞬間。
+[k]
+
+＠
+あの時、わたしが前に踏み出せたのは、[r]そうするべきだと感じたから。
+[k]
+
+＠
+怖さより誇らしさがあって、そして、[r]胸に染みいるような寂しさがあった。
+[k]
+
+＠
+たとえ勝利しても、この先の[&彼:彼女]の時間に、[r]自分がいる事はない。それがちょっと悲しかった。
+[k]
+
+＠
+でも今は違う。[r]誇らしさも、そうするべきだという確信もない。
+[k]
+
+＠
+わたしは悩んだままで、悲しさより怖さがある。
+[k]
+
+＠
+本当に自分は正しいのか。[r]わたしたちの行いは、残酷な勝利宣言ではないのかと。
+[k]
+
+[messageOff]
+[fadeout white 1.5]
+[wait fade]
+
+＠マシュ・キリエライト
+ああ、でも[line 3]
+[k]
+
+＠
+怖いから、分からないからといって[r]手を放すことは、もっと恥ずべき事だと分かるのです。
+[k]
+
+＠
+すべてが等しく正しいなら、わたしは、わたしが[r][#失:な]くしたくないもののために。
+[k]
+
+＠
+あの旅で命を獲得したマシュ・キリエライトが[r]掴んでいたいもののために、もう一度[line 3]
+[k]
+
+＠
+[line 3]もう一度。この盾を預からせてください、[r]英霊ギャラハッド……！
+[k]
+
+[messageOff]
+
+[wipeOff]
+[cameraHome 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_79 1.0]
+
+[charaSet C 1098124500 1 ダ・ヴィンチ]
+
+
+[scene 55800]
+[wipeFilter cinema 0.5 0]
+
+[charaSet E 9005001 1 ホームズ]
+
+[wt 0.5]
+
+[fadein white 1.5]
+[wait fade]
+
+[se ad172]
+[wt 0.5]
+
+[shake 0.1 1 1 2.0]
+
+[charaTalk C]
+[charaFace C 25]
+[charaFadein C 0.4 0,-50]
+[wt 0.4]
+
+
+＠ダ・ヴィンチ
+そろそろ射出ポイントだ。[bgm BGM_EVENT_24 0.1 0.6][r]準備はいいかな、マシュ？
+[k]
+
+＠B：マシュ
+[line 3]はい。[r]各武装、把握済みです。実戦、いけます。
+[k]
+
+＠ダ・ヴィンチ
+キミはもとの霊基じゃない。[r]ギャラハッド由来の[#技術:スキル]はもう使えない。
+[k]
+
+[charaFace C 24]
+
+＠ダ・ヴィンチ
+それらの欠けた部分は[#霊基外骨骼:オ ル テ ナ ウ ス]で補った。[r]そちらの調整は完璧だ。心配はいらない。
+[k]
+
+＠ダ・ヴィンチ
+けど、キミはまだ仕上がってはいない。[r]肝心の最終調整はキミ自身の手でするんだよ。
+[k]
+
+＠B：マシュ
+最終調整……それは、何をすればいいのでしょう？
+[k]
+
+[charaFace C 7]
+
+＠ダ・ヴィンチ
+決まってるだろ。英霊が英霊である証。[r]宝具を覚醒させた時、キミは新しいキミになる。
+[k]
+
+＠ダ・ヴィンチ
+ギャラハッドの宝具ではなく。
+[k]
+
+＠ダ・ヴィンチ
+キミがこれまで[#培:つちか]ってきたありったけを、[r]その盾に込める時だ。
+[k]
+
+＠B：マシュ
+[line 3]わたしの、ありったけ[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,-50]
+
+＠ホームズ
+ダ・ヴィンチ、すごいぞ、本当に間に合いそうだ！[r]ものすごいドライビングテクニックだ！
+[k]
+
+[charaFace E 2]
+
+＠ホームズ
+ロシア宮殿が見えてきた！[r]ゴーレム・ケテルマルクトまであと700メートル！
+[k]
+
+＠ホームズ
+甲板に電磁カタパルトは展開した、[r]30秒後に射出ポイントに到達する！　いそげ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 25]
+[charaFadein C 0.1 0,-50]
+
+＠ダ・ヴィンチ
+話はここまでだ。マシュ。[r][#これで]、[#いいんだね]？
+[k]
+
+＠B：マシュ
+[line 3]はい。[r]どれだけ悩んでも、納得のいく答えはでませんでした。
+[k]
+
+＠B：マシュ
+それでもわたしは[%1]の……[r]カルデアのサーヴァントです。
+[k]
+
+＠B：マシュ
+いま自分にできる事を、目の前の信頼を、[r]放棄する事だけはできません！
+[k]
+
+[charaFace C 0]
+
+＠ダ・ヴィンチ
+そうか。では行きなさい！[r]シャドウ・ボーダー、ハッチ開け！[se ad630]
+[k]
+
+[charaFace C 2]
+
+＠ダ・ヴィンチ
+シールダー・アーマード！[r]ロシア宮殿玉座に向けて、出撃するぞ！
+[k]
+
+[messageOff]
+
+[fadeout black 1.5]
+[wait fade]
+
+
+[charaPut G 5000,5000]
+[charaEffectStop G bit_talk_ivan_lightning_charge]
+[charaEffectStop G bit_talk_ivan_lightning_charge_back]
+[charaEffect G bit_talk_ivan_lightning_charge_l]
+[charaEffect G bit_talk_ivan_lightning_charge_l_back]
+
+[wipeOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[scene 10000]
+
+[fadein black 1.5]
+[wait fade]
+
+[wipeout rectangleStripUpToDown 0.1 1.0]
+[wait wipe]
+
+[scene 56502]
+
+[bgm BGM_EVENT_24 0.1]
+
+[wipein rectangleStripUpToDown 1.2 1.0]
+[bgm BGM_EVENT_24 0.1]
+[se ad626]
+[seVolume ad626 0 0.3]
+[wait wipe]
+
+
+＠イヴァン雷帝
+雷鳴に飲まれよ！[r]我がロシアに、貴様等の影は不要なり！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.3 1.0]
+[wait wipe]
+
+[scene 54400]
+
+[charaPut G 0,50]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[wt 0.2]
+
+[wipein rectangleStripLeftToRight 0.3 1.0]
+[wait wipe]
+
+
+＠ベオウルフ
+やべえ、どうしようもねえ！[r]武蔵、マスターを連れて飛びおりろ！
+[k]
+
+[charaFace A 4]
+
+＠ベオウルフ
+おまえたちだけでも[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+＠武蔵
+[line 3]っ
+[k]
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[seVolume ad626 0.5 0.6]
+[wt 0.5]
+
+[se ad13]
+
+＠？？？
+きこえ[line 3]今そちらに[line 3][r]到達まで、あと[line 3]
+[k]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ベオウルフ
+武蔵、てめえそいつの命よりイヴァンの首が[r]大事だってのか！　急げ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠武蔵
+っ……むむむ、む……！
+[k]
+
+[seVolume ad626 0.5 1.0]
+
+[charaFace F 2]
+
+[bgmStop BGM_EVENT_24 1.5]
+
+＠武蔵
+ごめん、[%1]！[r]勝ちの目は[#諦:あきら]めて！　君をつれて逃げます！
+[k]
+
+？1：[line 3][&いや:ううん]
+？2：[line 3]まだ、勝ちの目はある！
+
+？！
+
+[seStop ad626 0.2]
+[se ade9]
+[wt 0.2]
+[se ad627]
+[messageOff]
+[fadeout white 0.2]
+[se ad63]
+[wait fade]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_ivan_lightning_charge_l]
+[charaEffectStop G bit_talk_ivan_lightning_charge_l_back]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[wt 1.0]
+
+
+[se ad283]
+[seVolume ad283 0 0.3]
+[se ad632]
+[seVolume ad632 0 0.8]
+[scene 56700]
+
+[cameraMove 0.1 240,-50 2.0]
+
+[fadein white 3.0]
+[shake 0.05 5 4 4.0]
+
+[wt 1.5]
+[cameraMove 3.0 80,0 2.0]
+[wait fade]
+
+[wt 1.7]
+
+[fadeout white 0.3]
+[wait fade]
+
+[cameraMove 0.1 0,0 1.02]
+[wt 1.0]
+[shake 0.05 2 2 0]
+
+[fadein white 0.3]
+[wait fade]
+
+[wt 1.0]
+
+＠武蔵＆ベオウルフ
+なんとぉ！？
+[k]
+
+＠イヴァン雷帝
+[line 3]ぬうう！？
+[k]
+
+[messageOff]
+[seStop ad283 1.0]
+[seStop ad632 1.0]
+[fadeout white 1.0]
+[wait fade]
+
+[shakeStop]
+
+[cameraHome 0.1]
+
+[se ad609]
+[se ad618]
+[seVolume ad609 0 0.3]
+[se ad635]
+[se ad619]
+[se ad628]
+[seVolume ad628 0 0.2]
+[wt 1.0]
+[seStop ad635 2.0]
+[seStop ad619 2.0]
+
+
+[charaSet B 8001400 1 マシュ]
+
+[scene 54501]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+[cueSe Servants_103200 bac512]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠マシュ
+せんぱ[line 7]いっっっ！！！！
+[k]
+
+
+？1：[line 3][&来たんだな:来てくれたね]、マシュ！
+
+？！
+
+＠マシュ
+はい！　ま、間に合いました！[r]お待たせして申し訳ありません！
+[k]
+
+＠マシュ
+マシュ・キリエライト、[r]これより前線に復帰します！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[cameraMove 0.1 150,-30 1.5]
+
+[scene 56502]
+[wt 0.1]
+
+[wipein rectangleStripDownToUp 0.5 1.0]
+[shake 0.06 5 6 2.5]
+[se ad621]
+[se ad622]
+[se ad426]
+[wait wipe]
+
+
+
+＠イヴァン雷帝
+新たなサーヴァントだと……！？[r]くだらぬ、[#諸共:もろとも]吹き飛ばしてくれる！！
+[k]
+
+[messageOff]
+[fadeout white 0.3]
+[wait fade]
+
+[se ad626]
+[shake 0.05 2 2 0]
+[cameraMove 0.1 -180,0 1.5]
+[wt 0.2]
+
+[fadein white 0.3]
+[cameraMove 3.0 -180,-40 1.7]
+[wait fade]
+
+[wt 1.5]
+
+＠ムニエル
+イヴァン雷帝、再度の魔力増大を確認！[r]標的は変わらず！　だめだ、底なしかコイツ！
+[k]
+
+＠マシュ
+皆さん、ご心配なく……！[r]あの雷撃はわたしに任せてください……！
+[k]
+
+[messageOff]
+[seStop ad626 0.5]
+[wipeout rectangleStripRightToLeft 0.3 1.0]
+[wait wipe]
+
+[shakeStop]
+[cameraHome 0.1]
+
+[charaFadeout B 0.1]
+
+[scene 54400]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace A 0]
+[charaFadein A 0.1 0]
+
+[charaFace F 2]
+[charaFadein F 0.1 2]
+
+[wipein rectangleStripLeftToRight 0.3 1.0]
+[wait wipe]
+
+[wt 1.0]
+
+[charaFace A 1]
+[charaFace F 7]
+[wt 1.0]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.6 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[charaFadeout A 0.1]
+
+[charaTalk on]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[wt 1.0]
+
+[scene 54501]
+[wt 0.1]
+
+[wipein rectangleStripUpToDown 1.0 1.0]
+[wait wipe]
+
+＠サリエリ
+バ……馬鹿を言うな、可憐な少女よ！[r]そんな盾一枚で何を言う！
+[k]
+
+[charaFace D 2]
+
+＠サリエリ
+私に構うな、ゴーレムまで逃げるがいい！[r]我は耐えてみせる！　疾く、失せるがいい！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠マシュ
+いえ[line 3]いいえ！
+[k]
+
+[charaFace B 1]
+
+＠マシュ
+どうぞ、その素晴らしい演奏に集中を、[r]ミスター・サリエリ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠サリエリ
+（むっ！　素晴らしいと[line 3]！[r]　いやまて、怒りを忘れるな私！）
+[k]
+
+[charaFace D 0]
+＠サリエリ
+ありがとう、だが、本当にいいのか！？[r]可能なのか、あの雷撃を[#防:ふせ]ぐなどという事が！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+
+＠マシュ
+[line 3]できます！[r]わたしたちは、それだけの旅をしてきたのです！
+[k]
+
+[charaFace B 13]
+
+＠マシュ
+わたしは未熟でも、その事実だけは変わりません。
+[k]
+
+[charaFace B 0]
+
+＠マシュ
+わたしたちは人理焼却を、魔術王を、[r]あの、ソロモン王を乗り越えてここにいます！
+[k]
+
+[charaFace B 1]
+
+＠マシュ
+この程度の暴力、軽くいなしてみせますので！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠サリエリ
+（なんという強がり！[r]　これほど渾身の[#鼓舞:つよがり]は見た事がない！）
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.0]
+[wait fade]
+[wt 0.3]
+
+＠マシュ
+わたしの盾は重く、[r]わたしの心はいまだ迷いの中にあります。
+[k]
+
+＠マシュ
+でも、声が聞こえるのです。[r]それだけは、わたしにも分かるのです。
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[scene 54400]
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+＠マシュ
+……先輩。[r]はい[line 3]きちんと伝わっています。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+[wt 0.5]
+
+？1：マシュ・キリエライトを信じている。
+？！
+
+[scene 54501]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 1.0]
+
+[charaFace B 1]
+
+＠マシュ
+はい！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.3 1.0]
+[wait wipe]
+
+[cameraMove 0.1 -50,-20 1.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+[scene 56502]
+
+[wipein rectangleStripLeftToRight 0.3 1.0]
+[shake 0.05 2 2 0]
+[wait wipe]
+
+[se ad626]
+[seVolume ad626 0 0.6]
+[wt 0.5]
+
+[cameraHome 3.0]
+
+[wt 0.5]
+
+＠ムニエル
+イヴァン雷帝の雷撃、発動します！
+[k]
+
+
+[seStop ad626 0.2]
+[se ade9]
+[wt 0.2]
+[se ad627]
+[messageOff]
+[fadeout white 0.6]
+
+[bgmStop BGM_EVENT_82 1.5]
+
+[se ad63]
+[wait fade]
+
+[shakeStop]
+[wt 0.4]
+
+[se ad283]
+[seVolume ad283 0 0.4]
+[se ad632]
+[seVolume ad632 0 0.8]
+[scene 56701]
+
+[cameraMove 0.1 -100,0 1.5]
+
+[wt 1.0]
+
+[fadein white 0.5]
+[shake 0.05 2 2 0]
+[wait fade]
+
+[wt 0.5]
+[cameraMove 4.0 0,0 1.02]
+
+＠マシュ
+は、あああああああああああああああああああ[line 3]！！
+[k]
+
+[seVolume ad283 1.0 0.3]
+[seVolume ad632 1.0 0.5]
+
+[bgm BGM_EVENT_78 0.1]
+
+＠
+[line 3]その一瞬。
+[k]
+
+＠
+何かが、ほんの少しの間だけど。[r]カチリと音を立てて歯車が噛み合った。
+[k]
+
+[seVolume ad283 1.5 0.1]
+[seVolume ad632 1.5 0.3]
+
+＠
+重かった盾が輝く。[r]脳裏に浮かんだ啓示を[#唇:くち]が紡ぐ。
+[k]
+
+
+[messageOff]
+[fadeout white 1.0]
+[wait fade]
+
+＠
+『[line 3]永遠に続く城塞はないんだよ、マシュ。』
+[k]
+
+＠
+『あるとすれば、それは再起する心の在り方。[r]　朽ちてもなお立ち上がる、その姿が永遠に見えるんだ。』
+[k]
+
+[messageOff]
+[fadein white 2.0]
+[bgmStop BGM_EVENT_78 2.0]
+[wait fade]
+[wt 0.8]
+
+
+
+[bgm BGM_EVENT_83 0.1]
+
+[seVolume ad283 1.0 0.2]
+[seVolume ad632 1.0 0.4]
+
+[scene 56702 2.0]
+[se ad474]
+[wt 2.0]
+
+＠マシュ
+真名、凍結展開。
+[k]
+
+＠マシュ
+これは多くの道、多くの願いを受けた幻想の城。
+[k]
+
+[seStop ad474 1.0]
+
+＠マシュ
+呼応せよ、[r]『[#いまは脆き夢想の城:モ　ー　ル　ド　・　キ　ャ　メ　ロ　ッ　ト]』……！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_83 1.5]
+[seVolume ad283 1.0 0.5]
+
+[se ad651]
+[wt 0.4]
+[se ad628]
+[se ad635]
+
+[seStop ad283 1.0]
+[seStop ad632 1.0]
+[wait fade]
+
+[se ad14]
+[seVolume ad14 0 0.7]
+[fadeout white 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+[wt 5.0]
+
+[seStop ad14 1.0]
+
+[scene 54501]
+
+[shakeStop]
+
+[fadein white 3.0]
+[wt 1.5]
+
+＠マシュ
+ハァ、ハァ、ハァ……。
+[k]
+
+[wait fade]
+
+＠H：カルデアスタッフ
+モニター復調します！
+[k]
+
+＠H：カルデアスタッフ
+[%1]……並びにマシュ・キリエライト。[bgm BGM_EVENT_82 0.1][r]共にバイタルサイン健在、無事です！
+[k]
+
+＠H：カルデアスタッフ
+サリエリも演奏を続けています！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠サリエリ
+無事か、少女よ。無事であれば、[r][#後:あと]で私のサインを、ぜひその盾に。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠マシュ
+はい、大丈夫です……。[r]あと、盾にサインはちょっと。
+[k]
+
+[messageOff]
+[charaMove B 9,-10 0.4]
+[wt 0.1]
+[se ad54]
+[wt 0.8]
+
+＠サリエリ
+大丈夫か！？
+[k]
+
+[charaFace B 9]
+
+＠マシュ
+大丈夫……です。[r]まだ、やれます！
+[k]
+
+[bgmStop BGM_EVENT_82 1.5]
+
+＠マシュ
+今は、イヴァン雷帝に集中を……！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.3 1.0]
+[wait wipe]
+
+[charaSet C 5035000 1 アナスタシア]
+
+[charaFadeout B 0.1]
+[scene 56500]
+
+[cameraMove 0.1 0,-60 1.35]
+[wt 1.0]
+
+[wipein rectangleStripDownToUp 1.2 1.0]
+[bgm BGM_EVENT_24 0.1]
+[wait wipe]
+
+
+[se ad427]
+[shake 0.05 3 3 1.2]
+[wt 1.5]
+
+＠イヴァン雷帝
+[line 3]お、おおおおおおおおおお！
+[k]
+
+＠イヴァン雷帝
+今の、今の光はまさしく、[r][#安寧:あんねい]を[#施:ほどこ]す[#御遣:みつか]いの光！
+[k]
+
+＠イヴァン雷帝
+マカリー、おお、師よ、ご覧になられたか！[r]聖なるかな、我が目前に御遣いは降臨せり！
+[k]
+
+＠イヴァン雷帝
+手に入れねば、手に入れねば……！[r]その光こそ、我がロシアを支える[#礎:いしずえ]となろう……！[se ad621][se ad426]
+[k]
+
+
+？1：鼻の振り下ろし……！？
+？2：マシュ[line 4]！
+
+？！
+
+[messageOff]
+[se ad85]
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.8]
+
+
+＠武蔵
+[line 3]勝機。[bgmStop BGM_EVENT_24 1.5][r]稲妻の[#護:まも]りを失ったな、デカブツ天狗。
+[k]
+
+[messageOff]
+[scene 54501]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+[wipein rectangleStripUpToDown 0.8 1.0]
+[wait wipe]
+
+[wt 0.1]
+
+[bgm BGM_EVENT_67 0.1]
+
+[se bac305]
+[wt 1.0]
+
+＠H：ベオウルフ
+武蔵！？　アイツ、いつのまに！？
+[k]
+
+＠H：イヴァン雷帝
+[line 3]サーヴァント。[r]いや……貴様……汎人類史の者ではないな……？
+[k]
+
+＠H：イヴァン雷帝
+不可解だ。[r]我らと同じものが、なぜ我らに刃を向ける！？
+[k]
+
+[charaFace F 9]
+
+＠武蔵
+[FFFFFF]？　そりゃあ象に知り合いはいませんし、[-][r][%1][&君:]の敵なら私の敵よ？
+[k]
+
+[charaFace F 5]
+
+＠武蔵
+加えてここが[#正念場:しょうねんば]、天下分け目の[#関ヶ原:せきがはら]！[r]剣豪勝負を渡った奥義、いま見せずしていつ魅せる！
+[k]
+
+[charaFace F 2]
+
+＠武蔵
+[line 3]露西亜の[#皇帝:ツァーリ]、[#然:しか]らば御免！[r]その[#仏頂面:ぶっちょうづら]、伊達にしてご覧にいれる！
+[k]
+
+[messageOff]
+[charaEffect F bit_talk_36_bl]
+[se ad39]
+[wt 1.0]
+
+[charaFace F 12]
+
+＠武蔵
+（……[#顕現:けんげん]の因果律が揺らいでる。[r]　これが多分、この異聞での最後の一撃）
+[k]
+
+＠武蔵
+（……私も彼らと同じ。消えなければならないもの。[r]　本来なら中立を保つべきだけど[line 3]）
+[k]
+
+＠武蔵
+（やっと分かったわ、私がまだ旅を続ける理由。[r]　私が、まだ飽き足りていない欲）
+[k]
+
+[charaFace F 12]
+
+＠武蔵
+（ええ、貴方のおかげではっきりしたわ雷帝。[r]　私には[line 3]まだ、斬っていないものがある……！）
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_67 1.0]
+[wt 0.8]
+
+[charaEffectStop F bit_talk_36_bl]
+[cueSe NoblePhantasm_101700 NP_101700_7]
+
+[charaFace F 2]
+
+＠武蔵
+[f large]いくぞ剣轟抜刀！
+[k]
+
+＠武蔵
+[f large]伊舎那、大天象！！
+[k]
+
+[messageOff]
+[effect bit_talk_v_slash01]
+[wt 0.2]
+[fadeout white 0.2]
+[wait fade]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[scene 10000]
+[fadein white 0.5]
+[wait fade]
+
+[effect bit_talk_zero_slash2]
+[wt 0.6]
+[cueSe NoblePhantasm_101700 NP_101700_12]
+
+[wt 2.0]
+[cueSe NoblePhantasm_101700 NP_101700_13]
+[wt 0.5]
+[fadeout white 0.5]
+[wait fade]
+
+[effectStop bit_talk_zero_slash2]
+
+[se ad622]
+[se ad427]
+[wt 1.5]
+
+[scene 55401]
+[shake 0.05 3 3 2.5]
+
+[fadein white 1.5]
+[wait fade]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠アナスタシア
+……雷帝を斬った……！？[bgm BGM_EVENT_24 0.1][r]あの巨大な鼻を、真っ二つに……！？
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[wt 0.5]
+
+[charaSet E 98115300 1 ホームズ]
+
+[scene 54501]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+
+＠マシュ
+マ、マスター……[r]武蔵さんの転移を、視認しました。
+[k]
+
+＠マシュ
+あの、武蔵さん、レイシフトのように[r]消えてしまいました！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠ホームズ
+いつもの[#漂流:ドリフト]か！[r]今は構っていられない！
+[k]
+
+＠ホームズ
+[&ミスター:ミス][%1]！[r]これが最大の好機だ！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.8 1.0]
+[wait wipe]
+
+？1：はい！　『[#王冠・叡智の光:ゴーレム・ケテルマルクト]』[line 3]
+？！
+？1：イヴァン雷帝の王冠を掴め……！
+
+？！
+
+[se ad425]
+
+[charaFadeout E 0.1]
+[charaPut H 1200,1200]
+[scene 54400]
+[wt 0.1]
+
+[wipein rectangleStripDownToUp 1.2 1.0]
+[se ad237]
+[wait wipe]
+
+＠イヴァン雷帝
+余の王冠を掴むとは……！
+[k]
+
+[messageOff]
+[shake 0.05 3 3 1.0]
+
+[se ad638]
+
+＠イヴァン雷帝
+させ、ぬ……！[r]不敬の、[#輩:やから]め……！
+[k]
+
+[messageOff]
+[charaPut G 0,50]
+[se ad626]
+[charaEffect G bit_talk_ivan_lightning_charge_l]
+[charaEffect G bit_talk_ivan_lightning_charge_l_back]
+
+
+[messageOff]
+[se ad427]
+[wt 0.5]
+[flashin once 0.2 0.1 FFFFFF90 FFFFFF90]
+[se ad63]
+[wt 0.5]
+[se ad226]
+[flashin once 0.2 0.1 FFFFFF90 FFFFFF90]
+[shake 0.05 3 3 1.5]
+[wt 1.5]
+
+＠マシュ
+マスター！
+[k]
+
+？1：大丈夫、まだやれる！
+？2：耐えてくれ！
+？！
+
+[se ad638]
+
+＠イヴァン雷帝
+う、おおおおおおおおおおおおおおおおおお！[bgmStop BGM_EVENT_24 1.5]
+[k]
+
+[messageOff]
+
+[se ad622]
+[se ad621]
+[wt 1.0]
+
+[seStop ad626 1.0]
+
+[se bac140]
+[wt 0.25]
+[effect bit_talk_blood_splash]
+[se ad464]
+[shake 0.03 3 3 0.7]
+[wt 2.0]
+
+[se ad639]
+[wt 0.5]
+
+[se ad228]
+
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+[charaEffectStop G bit_talk_ivan_lightning_charge_l]
+[charaEffectStop G bit_talk_ivan_lightning_charge_l_back]
+[scene 54400]
+[se ad75]
+
+[effect bit_talk_43h]
+
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+[wt 1.0]
+[seStop ad228 1.0]
+
+＠マシュ
+マスター！
+[k]
+
+[messageOff]
+[seStop ad228 1.0]
+[effectStop bit_talk_43h]
+
+
+？1：マシュ！
+？2：キャッチよろしく！
+？！
+
+＠マシュ
+はい！
+[k]
+
+[messageOff]
+[wt 0.6]
+[se ad7]
+[cameraMove 0.3 0,10 1.0]
+[wt 0.3]
+[cameraMove 0.2 0,0 1.0]
+[wt 0.4]
+
+[fadeout black 1.5]
+[wait fade]
+[wt 0.5]
+
+＠ムニエル
+山岳型魔獣、完全停止！[r]同時に『[#王冠：叡智の光:ゴーレム・ケテルマルクト]』、崩壊します！
+[k]
+
+＠ダ・ヴィンチ
+[%1][&君:ちゃん]は！？
+[k]
+
+＠ホームズ
+ああ、大丈夫。[r]マシュがきっちり助けているさ。
+[k]
+
+[messageOff]
+[scene 54501]
+
+[charaSet B 8001410 1 マシュ]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad581]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠マシュ
+やりました、マスター！[r]敵巨大魔獣、完全に沈黙です！
+[k]
+
+？1：ああ。マシュもお見事
+？2：うん。マシュも格好いい
+？！
+
+[charaFace B 3]
+
+＠マシュ
+あ……はい。ありがとうございます……
+[k]
+
+＠マシュ
+い、いえ、まだ戦いは続いていますので！[r]王冠は引き剥がしただけですので！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠サリエリ
+そうだ。地上を見るがいい。[r]イヴァン雷帝はまだ生きている。
+[k]
+
+[charaFace D 4]
+
+＠サリエリ
+……あれでサーヴァントでは[r]ないというのだから怖ろしいな。
+[k]
+
+＠サリエリ
+ヤガの究極。[r]いや、生き延びようとあがいた人間の究極。
+[k]
+
+＠サリエリ
+あの男は悪政をしいた暴君ではあったが……[r]その一点においては紛れもなく偉大な英雄だった。
+[k]
+
+[charaFace D 5]
+
+＠サリエリ
+……さあ、行くぞ。[r]カルデアのマスターよ。
+[k]
+
+[charaFace D 0]
+
+＠サリエリ
+君にはあの男の、[r]最後の問いかけに答える義務があるのだから。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.5]
+[fadeout black 1.5]
+[wait fade]
+[soundStopAll]
+[end]

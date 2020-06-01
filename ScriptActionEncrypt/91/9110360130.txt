@@ -1,0 +1,671 @@
+
+
+＄91-10-36-01-3-0
+
+[soundStopAll]
+
+[charaSet A 1036001 1 蘭陵王]
+[charaSet B 98002000 1 フォウ]
+[charaSet C 1098155400 1 黒髭]
+[charaSet D 5042001 1 紫式部]
+[charaSet E 1098160000 1 陳宮]
+
+[charaSet G 98002000 1 ダミーエフェクト１]
+[charaSet H 98002000 1 ダミーエフェクト２]
+[charaSet I 98002000 1 ダミーエフェクト３]
+[imageSet J back10001 1]
+[charaScale J 1.01]
+
+
+[charaDepth H 1]
+[charaDepth A 1]
+[charaDepth E 1]
+[charaDepth D 5]
+[charaDepth C 10]
+
+[charaScale H 0.95]
+[charaPut H 2000,2000]
+[charaEffect H bit_talk_41]
+
+
+
+[branchQuestNotClear lblNotClear1 3000303]
+[flag IsClear true]
+[branch lblConf1]
+[label lblNotClear1]
+[flag IsClear false]
+[label lblConf1]
+
+
+[branch lblNotClear2 IsClear false]
+[scene 66600]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10310]
+[label lblConf2]
+
+[pictureFrame cut063_cinema]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.4]
+
+＠
+午後六時。[bgm BGM_EVENT_5 0.1 0.7]
+[k]
+
+[messageOff]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 0,-50]
+[wt 0.8]
+
+＠蘭陵王
+……。[r]……。
+[k]
+
+＠
+[charaTalk C]
+対象、突如沈黙。
+[k]
+
+＠蘭陵王
+害はないゆえに見逃していましたが、[r]一日付き[#纏:まと]われれば、問い[#質:ただ]したくもなる。
+[k]
+
+[charaFace A 2]
+
+＠蘭陵王
+何用ですか、黒髭殿！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 0,-50]
+[wt 0.8]
+
+＠黒髭
+……。[r]……。
+[k]
+
+[messageOff]
+[wipeout rollLeft 1.4 1.0]
+[bgmStop BGM_EVENT_5 1.4]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[pictureFrame]
+[wt 0.1]
+
+[branch lblNotClear3 IsClear false]
+[scene 66800]
+[branch lblConf3]
+[label lblNotClear3]
+[scene 10400]
+[label lblConf3]
+
+[charaEffect G bit_sepia01]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+[wipein rollRight 1.4 1.0]
+[wait wipe]
+[wt 0.6]
+
+
+？1：[&何だって:何ですって]？
+？！
+
+[charaFace C 8]
+
+＠黒髭
+だ[messageShake 0.04 2 2 0.8]ーかーらー、あのイケメン本当[bgm BGM_EVENT_27 0.1][r]なーんーなーのー？
+[k]
+
+[messageShakeStop]
+
+＠黒髭
+ほら、あのランリョーオーって[r]スーパーイケメン！
+[k]
+
+[charaFace C 1]
+＠黒髭
+そりゃあ、カルデアにはイケメンが山ほどいますがね！[r]ちょっと度を越していると思うのデスヨ！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠フォウ
+フォウ。[wt 0.3][charaShake B 0.03 3 1 0.6]フォウゥゥゥ……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaShakeStop B]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠黒髭
+バーソロミューも伊達男気取りですが、[r]中身はドロッドロに気持ち悪いですし！
+[k]
+
+[charaFace C 8]
+
+＠黒髭
+だから、あのイケメンもきっと心の中では[r]何か抱えているに違いない！
+[k]
+
+？1：その……何か恨みでも？
+？！
+
+[charaFace C 6]
+
+＠黒髭
+恨みがあるのかって？[r]……いや別にまったく。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaMoveReturn B 0,20 0.2]
+
+＠フォウ
+フォウ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠黒髭
+いやあ、しかしこんなに完璧だと[r]どこかに穴がある。そう睨む黒髭であった。
+[k]
+
+？1：特になさそうだけどなあ……
+
+[charaFace C 8]
+
+＠黒髭
+いいや、ああいうヤツに限って、[#他人:ひと]に[r]話すことができない奇癖持ちだったりするワケ。
+[k]
+
+？2：あってもいいと思うけど
+
+[charaFace C 8]
+
+＠黒髭
+あってもいいなら見てもいいジャン！
+[k]
+
+＠黒髭
+っていうか、完璧すぎる人間を見ると、[r]どこかあら探ししたくなるのは人間のサガですぞー！
+[k]
+
+？！
+
+[charaFace C 0]
+
+＠黒髭
+よってこの黒髭、密かに蘭陵王を尾行、[r]その正体を突き止めたく存じます！
+[k]
+
+[charaFace C 5]
+
+＠黒髭
+オッケーレッツゴー、[wt 0.2]カ[charaMoveReturn C 0,15 0.2]・[wt 0.2]ル[charaMoveReturn C 0,15 0.2]・[wt 0.2]デ[charaMoveReturn C 0,15 0.2]・[wt 0.2]ア！[charaMoveReturn C 0,15 0.2][wt 0.2]
+[k]
+
+[messageOff]
+[charaFadeout C 0.3]
+[wt 0.3]
+[se ad8]
+[wt 1.4]
+
+[se ad348]
+[wt 1.0]
+
+？1：今のチアリーダー的なかけ声は何……？
+？！
+
+[messageOff]
+[wipeout rollRight 1.4 1.0]
+[bgm BGM_EVENT_27 1.4 0.4]
+[wait wipe]
+
+[charaPut G 2000,2000]
+[charaEffectStop G bit_sepia01]
+[wt 0.8]
+
+[wipein rollLeft 1.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_27 0.1 1.0]
+
+＠黒髭
+という訳で調べに調べたでござるよマスター！
+[k]
+
+[charaFace C 8]
+
+＠黒髭
+結果！
+[k]
+
+[messageOff]
+[se ade226]
+[charaPut H 30,120]
+
+＠黒髭
+[f large]イケメンは心もイケメン！！
+[k]
+
+[charaPut H 2000,2000]
+[charaEffectStop H bit_talk_41]
+
+[charaFace C 3]
+
+＠黒髭
+そんな悲しい事実が発覚しました、以上。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠蘭陵王
+そ、そんなことで……。
+[k]
+
+？1：……確かに行動のほとんどがイケメンだ……
+？！
+
+[charaFace A 2]
+
+＠蘭陵王
+マスターまでからかわないでください！
+[k]
+
+[messageOff]
+[wipeout cutSide 0.4 1.0]
+[se ad15]
+[wait wipe]
+
+[charaTalk off]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 70500]
+[pictureFrame cut063_cinema]
+
+[charaPut J 0,-200]
+[charaFadeTime J 0 0.5]
+[charaEffect I bit_talk_yume01]
+[wt 0.2]
+
+[charaFace A 0]
+[charaFace D 6]
+[charaRoll D -20]
+[charaScale A 1.4]
+[charaScale D 1.4]
+[charaFadein A 0.1 -40,-50]
+[charaFadein D 0.1 300,-140]
+
+[se ad1]
+[wipein cutSide 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+＠黒髭
+見てくださいよ、このブーシキちゃんを[r]抱き留めたときの紳士的な腕。
+[k]
+
+＠黒髭
+可能な限り肌に触れぬよう、[r]しかし頭から落ちぬようにしっかり受け止めて。
+[k]
+
+＠黒髭
+最早イベントＣＧといっても過言ではなく。[r]（差分で頬を赤らめるやつ）
+[k]
+
+＠黒髭
+ちなみに、ゲームジャンルによっては、[r]スチルとも申します。
+[k]
+
+＠黒髭
+勉強になるね！
+[k]
+
+？1：え、絵になる……
+？！
+
+[messageOff]
+[wipeout cutSide 0.4 1.0]
+[se ad15]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[charaScale A 1.0]
+[wt 0.1]
+[charaEffectStop I bit_talk_yume01]
+[charaPut J 2000,2000]
+[charaPut I 2000,2000]
+
+[scene 10000]
+[pictureFrame]
+[wt 0.1]
+
+[wipein cutSide 0.4 0.5]
+[wait wipe]
+
+[fadeout black 0.5]
+[wait fade]
+
+[branch lblNotClear4 IsClear false]
+[scene 66800]
+[branch lblConf4]
+[label lblNotClear4]
+[scene 10400]
+[label lblConf4]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠蘭陵王
+いつのまにそんなモノを……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+＠黒髭
+ああ……この時ばかりは流石の拙者も、[r]内臓のときめき回路がぐわんぐわんと回転したぜ……。
+[k]
+
+
+？1：ある[&のか:んだね]、回路……
+？！
+
+[charaFace C 7]
+＠黒髭
+心臓と胃の中間あたりに。
+[k]
+
+＠黒髭
+これが回転すると発汗、発熱、皮膚の赤み、[r]目眩、脱力、過呼吸などの発作が起きます。
+[k]
+
+[charaFace C 8]
+
+＠黒髭
+こいつぁ、[r]回路取り外した方がいいのではないだろうか！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠蘭陵王
+あの……この海賊、止めてはいけませんか？[bgmStop BGM_EVENT_27 1.2]
+[k]
+
+
+？1：……止めようか（ときめき回路を）
+？2：確かにこれ以上の[#狼藉:ろうぜき]は見逃せない
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠黒髭
+オッケー、それなら表に出な！[bgm BGM_EVENT_3 0.1][r]オレゃあ、こう見えても超一流の海賊だからよぉ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠蘭陵王
+（本当のことだから始末が悪い……）
+[k]
+
+[messageOff]
+[fadeout black 1.4]
+[bgm BGM_EVENT_3 1.4 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 21230]
+[wt 0.5]
+
+[fadein black 1.4]
+[wait fade]
+[bgm BGM_EVENT_3 0.4 1.0]
+[wt 0.4]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠黒髭
+ククク……拙者の得意な船上で戦うとは。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠蘭陵王
+貴殿がシミュレーターの設定を弄ったのでは！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠黒髭
+……ククク。
+[k]
+
+[charaFace C 8]
+
+＠黒髭
+それだけだと思ったのが、[r]うぬの不覚よ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠蘭陵王
+何？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠黒髭
+黒髭は決して一人ではない、[r]ということさ……！
+[k]
+
+？1：え、嫌だよ黒髭が二人とか
+
+[charaFace C 2]
+
+＠黒髭
+率直なご意見大変感謝いたします。
+[k]
+
+[charaFace C 5]
+＠黒髭
+今後とも弊社製品のご愛顧を賜りますよう、[r]何卒よろしくお願い申し上げます。
+[k]
+
+？2：他に仲間が……！？
+
+[charaFace C 2]
+
+＠黒髭
+フッフッフ。
+[k]
+
+[charaFace C 10]
+
+＠黒髭
+孤独に泣き震えていた黒髭はもういないのさ。[wt 1.0][charaFace C 5][r]いや元からいなかったけど。
+[k]
+
+？！
+
+[charaFace C 8]
+
+＠黒髭
+という訳で出ませい軍師殿！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ade248]
+[seVolume ade248 0 0.6]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.6]
+
+[seStop ade248 0.2]
+[wt 0.2]
+
+＠陳宮
+失礼。[r]ご紹介にあずかりました軍師、陳宮でございます。
+[k]
+
+＠陳宮
+私も暇ではないのですが、火急の用、という事で、[r]雑務を後回しにして参上いたしました。
+[k]
+
+[charaFace E 3]
+
+＠陳宮
+火急の用[line 3]つまり、アレです。[r]分かりますね？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.4]
+
+[se ade248]
+[seVolume ade248 0 0.6]
+[charaFace E 0]
+[charaFadein E 0.4 200,0]
+[charaMove E 90,0 0.8]
+[wt 0.8]
+[seStop ade248 0.2]
+[wt 1.6]
+
+[charaFadeout E 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠蘭陵王
+（あの、マスター……）
+[k]
+
+？1：（大体オチが見えてきた気がするけど）
+？2：（とりあえず回避の準備はしておこう……！）
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFace E 1]
+[charaFadein C 0.1 1]
+[charaFadein E 0.1 90,0]
+
+＠黒髭
+いくぞー！[wt 0.6][charaFace C 6][r]ところで軍師さん、どうして拙者の背後に？
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

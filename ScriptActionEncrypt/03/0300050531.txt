@@ -1,0 +1,276 @@
+
+＄03-00-05-05-3-1
+
+[soundStopAll]
+
+[charaSet A 1098128200 1 カイニス]
+[charaSet B 9005001 1 ホームズ]
+[charaSet C 8001400 1 マシュ]
+[charaSet D 8001410 1 マシュ]
+
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 85700]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠カイニス
+うぜえ！　今までいくつかザコどもの宝具を[r]受けてきたが、テメェの宝具が一番うぜぇ！
+[k]
+
+
+[messageOff]
+[wt 0.1]
+
+[se ad865]
+[wt 0.4]
+
+[fowardEffect bit_talk_14]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[seStop ad865 0.1]
+[se ad32]
+[se ad467]
+[wt 0.1]
+
+[charaScale B 1.2]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0 0,20]
+[charaFadeout A 0]
+
+[charaMoveScale B 1.0 0.2]
+
+[charaMove B 0,0 0.2]
+[charaShake B 0.02 3 3 0.8]
+[wt 1.2]
+
+＠ホームズ
+くっ……！
+[k]
+
+？1：ホームズ！
+？！
+
+[charaFace B 5]
+＠ホームズ
+カイニスにダメージはほとんど通っていない……！[r]これはカイニスの宝具……あるいは権能か？
+[k]
+
+＠ホームズ
+キャプテンの言う通り、海上……いや、ギリシャの[r]神々の海で、カイニスを傷つける事は不可能か……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠カイニス
+[line 3]ああ。オレにはこの稲妻だけで充分だがな。[r]恨むならポセイドンのクズを恨みな。
+[k]
+
+[charaFace A 16]
+
+＠カイニス
+この海においてオレは不死身だ。[r]そういう風に出来ている。
+[k]
+
+[charaFace A 17]
+＠カイニス
+だが[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠マシュ
+……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠カイニス
+……刻限だ。[r]まったく、守りの上手い野郎だったぜ。
+[k]
+
+＠カイニス
+オデュッセウスの作戦通り、オレは引いてやる。
+[k]
+
+[charaFace A 0]
+＠カイニス
+カルデアのマスターと、[#似非:エセ]トリトンの野郎を[r]この手でなぶり殺せなかったのは勿体ねえが[line 3]
+[k]
+
+＠カイニス
+まあ、[#手前:テメェ]の命と引き換えにするほどの[r]愉しみでもねえ。
+[k]
+
+＠カイニス
+じゃあな、カルデア。
+[k]
+
+＠カイニス
+せいぜい、[#痛みがない]という慈悲くらいは[r]くれてやろう。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_24 1.0]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[wt 0.1]
+[charaFadeout A 0.1]
+[wt 0.6]
+
+[se ad416]
+[seVolume ad416 0 0.8]
+[se ade59]
+[wt 0.8]
+[seStop ad417 0.8]
+[seStop ade59 0.8]
+[wt 2.0]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠マシュ
+神霊カイニス……撤退しました。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠ホームズ
+……嫌な予感がする。[r]すぐにノーチラスに戻ろう！
+[k]
+
+[messageOff]
+[se ad594]
+[wt 0.1]
+[wipeout rightToLeft 1.5 1.0]
+[bgm BGM_EVENT_81 1.5 0.4]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[scene 55700]
+[wt 1.5]
+
+[bgm BGM_EVENT_81 1.5 1.0]
+[wipein leftToRight 1.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 4]
+[se ad311]
+[charaFadein B 0.1 80,0]
+[charaMove B 40,0 0.4]
+[wt 0.2]
+[seStop ad311]
+[wt 0.6]
+
+[se ad311]
+[charaMove B 1 0.4]
+[wt 0.2]
+[seStop ad311]
+[wt 0.8]
+
+＠ホームズ
+……ふぅ。
+[k]
+
+[messageOff]
+[charaMove B 0,-50 0.4]
+[charaFadeout B 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.2]
+
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth C 2]
+[charaDepth D 1]
+
+
+[charaFace C 2]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[wt 0.6]
+
+[charaFadeout C 0.4]
+[wt 0.2]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk D]
+＠D：マシュ
+ミスター・ホームズ、大丈夫ですか！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠ホームズ
+なに。シグルドの時よりはいささかマシだ。
+[k]
+
+＠ホームズ
+あの魔剣を相手にしていたからこそ、[r]カイニスの槍にも対応できたとも言える。
+[k]
+
+[charaFace B 0]
+＠ホームズ
+それより今はこの状況からの脱出だ。[r]操縦席に急ごう。
+[k]
+
+＠ホームズ
+カイニスが引いた理由は不明だが、[r]休んでいる余裕はなさそうだ。
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

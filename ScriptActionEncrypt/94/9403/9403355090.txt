@@ -1,0 +1,274 @@
+
+
+
+
+
+＄94-03-35-50-9-0
+
+[soundStopAll]
+
+[charaSet A 9008001 1 アストライア]
+[charaSet B 2020001 1 イシュタル]
+[equipSet H 9807280 1 バレンタイン礼装]
+
+[scene 11000]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠アストライア
+[tVoice ValVoice_900800 0_V010]
+あら、やっと来てくださいましたのね。[wait tVoice]
+[k]
+
+？1：いきなり呼び出すから
+？2：ここってひょっとしてロンドン？
+
+？！
+
+[charaFace A 1]
+
+＠アストライア
+[tVoice ValVoice_900800 0_V020]
+なんとなく来たくなりましたの。[r]この[#身体:うつわ]が覚えているのかもしれませんわね。[wait tVoice]
+[k]
+
+＠アストライア
+[tVoice ValVoice_900800 0_V030]
+[#私:わたくし]の贈り物を渡すなら、[r]リラックスできる場の方がよいでしょう？[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠アストライア
+[tVoice ValVoice_900800 0_V040]
+では[line 3]どうぞ。[r][#私:わたくし]からのチョコレートです。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[charaFace H 0]
+[charaFadein H 0.5 0,-70]
+[wt 2.0]
+[charaFadeout H 0.4]
+
+[wt 0.5]
+
+？1：お酒とセット！
+？！
+
+[bgmStop BGM_EVENT_2 1.5]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠アストライア
+[tVoice ValVoice_900800 0_V050]
+ああ、面白い。[r]あなた、本当にいい顔するのね。[wait tVoice]
+[k]
+
+？1：でも、未成年ですけど
+？2：年齢的な問題が
+？！
+
+[bgm BGM_EVENT_5 0.1]
+[charaFace A 5]
+
+＠アストライア
+[tVoice ValVoice_900800 0_V060]
+あら。まさかとは思いますが……[r]女神からのお酒が飲めないっておっしゃるの？[wait tVoice]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.7]
+[wt 1.0]
+
+[charaFace A 1]
+
+＠アストライア
+[tVoice ValVoice_900800 0_V070]
+ふふ、冗談です。[r]右のワインは、あなた向けに酒精を飛ばしてあります。[bgm BGM_EVENT_2 0.1][wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠アストライア
+[tVoice ValVoice_900800 0_V080]
+つまり、ただのぶどうジュース。チョコレートとの[r]相性は幾分落ちますが、充分に楽しめるでしょう。[wait tVoice]
+[k]
+
+＠アストライア
+[tVoice ValVoice_900800 0_V090]
+ですので、ここで一緒に楽しみませんこと？[wait tVoice]
+[k]
+
+？1：一緒に食べるの？
+？！
+
+＠アストライア
+[tVoice ValVoice_900800 0_V100]
+楽しんでもらえたかどうか、ひと目で分かるでしょう？[r][#私:わたくし]だって自分の選んだチョコを味わいたいですし。[wait tVoice]
+[k]
+
+？1：分かりました
+？2：ご相伴いたします
+
+？！
+
+[charaFace A 1]
+
+＠アストライア
+[tVoice ValVoice_900800 0_V110]
+はい、素直でよろしい。[r]そこに座りなさいな。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.3]
+
+[wipeout rollRight 1.0 0.5]
+[bgm BGM_EVENT_2 1.0 0.5]
+[wait wipe]
+[wt 1.0]
+[wipein rollLeft 1.0 0.5]
+[bgm BGM_EVENT_2 1.0 1.0]
+[wait wipe]
+[wt 0.4]
+
+＠アストライア
+[tVoice ValVoice_900800 0_V120]
+いい出来ですわね！　ほろりと口の中で溶けて、[r]かすかな苦味とぶどうの風味とがまざりあって。[wait tVoice]
+[k]
+
+[charaTalk depthOff]
+[charaDepth A 10]
+[charaTalk off]
+
+＠アストライア
+[tVoice ValVoice_900800 0_V130]
+現代の菓子技術も侮れません。[twt 2.5][charaFace B 1][charaPut B 266,20][charaFadeTime B 0.4 0.7][r]あの金星の女神にも自慢してさしあげませんと。[wait tVoice]
+[k]
+
+
+？1：それはやめた方が
+？2：カルデアの危機を感じる……！
+
+？！
+
+[messageOff]
+[charaFadeout B 0.4]
+[wt 0.4]
+
+[bgmStop BGM_EVENT_2 3.5]
+
+[charaTalk depthOn]
+[charaTalk on]
+[charaFace A 0]
+
+＠アストライア
+[tVoice ValVoice_900800 0_V140]
+あら、何か文句ありますの。[r]………まあ、今日のところはおいておきましょうか。[wait tVoice]
+[k]
+
+
+＠アストライア
+[tVoice ValVoice_900800 0_V150]
+あなたと旅してきた場所、あなたと旅してきた時間、[bgm BGM_EVENT_95 0.1][r]いずれも女神である[#私:わたくし]には奇跡のようなものです。[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠アストライア
+[tVoice ValVoice_900800 0_V160]
+本来ありえないものという意味で、[r]人理の崩壊にも等しい。[wait tVoice]
+[k]
+
+＠アストライア
+[tVoice ValVoice_900800 0_V170]
+だから、そんな時間が来るかなんて分からないけれど。[wait tVoice]
+[k]
+
+[charaFace A 3]
+
+＠アストライア
+[tVoice ValVoice_900800 0_V180]
+もしも、機会があって、あなたが大人になったなら[r]今度はもう一本のワインでいただきませんこと？[wait tVoice]
+[k]
+
+＠アストライア
+[tVoice ValVoice_900800 0_V190]
+チョコレートはそうじゃないけど、そのワインは[r]もう数年したぐらいが飲み頃ですもの。[wait tVoice]
+[k]
+
+？1：そのときも一緒にいてくれる？
+？！
+
+[charaFace A 4]
+
+＠アストライア
+[tVoice ValVoice_900800 0_V200]
+どうでしょうね……。いま言ったように、[r]この時間だって奇跡みたいなものですから。[wait tVoice]
+[k]
+
+＠アストライア
+[tVoice ValVoice_900800 0_V210]
+数年先なんて、女神にも天秤にも分かりません。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠アストライア
+[tVoice ValVoice_900800 0_V220]
+………でも、ええ、この名にかけて約束しましょう。[r]守れないかもしれないけど。[wait tVoice]
+[k]
+
+？1：守れなくても、約束するの？
+？！
+
+＠アストライア
+[tVoice ValVoice_900800 0_V230]
+そうですわ。[r]守れなくても、約束するの。[wait tVoice]
+[k]
+
+＠アストライア
+[tVoice ValVoice_900800 0_V240]
+約束っていいものよ。もしも、かなわなくても、[r]なんだか夢があるように思えます。[wait tVoice]
+[k]
+
+＠アストライア
+[tVoice ValVoice_900800 0_V250]
+それに、約束がある限り、[r]その夢のように生きようと思えますもの。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠アストライア
+[tVoice ValVoice_900800 0_V260]
+だから、ずっと覚えていてくださいませ。[r]天秤の女神の名と、[#私:わたくし]との約束と、一本のワインをね。[wait tVoice]
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_95 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

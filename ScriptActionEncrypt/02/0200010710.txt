@@ -1,0 +1,674 @@
+
+＄02-00-01-07-1-0
+
+[soundStopAll]
+[bgm BGM_EVENT_41 0.1]
+[charaSet A 99502600 1 マシュ]
+[charaSet B 2023000 1 新宿のアーチャー]
+[charaSet C 98111500 1 ダ・ヴィンチ]
+[charaSet D 98109400 1 アルトリア・オルタ]
+[charaSet E 98109500 1 ジャンヌ・オルタ]
+[charaSet F 98108900 1 市民Ａ]
+[charaSet G 11005000 1 新宿のライダー]
+[charaSet H 98111500 1 通信用ノイズ]
+
+[scene 10000]
+[fadein black 0.5]
+[wait fade]
+
+＠
+人を罠に嵌める方法は幾つかある。[r]逃げ道を断って、[#この道しかない]と思い込ませる。
+[k]
+
+＠
+あるいは、[#この道を行くべきだ]と唆して、[r]他の道を考慮に値しないものとする。
+[k]
+
+＠
+さて、[&彼:彼女]はどちらの罠に嵌まりやすいだろう？[r]……もっとも、それを考えても今更遅いのだがね。
+[k]
+
+＠
+[line 3]最初の一手から、間違えているのだから。
+[k]
+
+[wt 0.2]
+[messageOff]
+[bgmStop BGM_EVENT_41 1.5]
+[fadeout black 1.5]
+[wait fade]
+[scene 38600]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠新宿のアーチャー
+何と。[r]私が信頼できないと！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ジャンヌ・オルタ
+なんて妥当なアドバイスなのかしら。[r]妥当すぎて、意味深な雰囲気が微塵もないわ。
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk D]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+＠アルトリア・オルタ
+不本意ながら、貴様の意見に賛成だ。
+[k]
+
+＠アルトリア・オルタ
+そもそも、敵側に同じサーヴァントがいる時点で、[r]信用もなにもない。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠新宿のアーチャー
+君たち、仲間に対してもうちょっとこう、[r]アレだヨ？
+[k]
+
+[charaFace B 0]
+＠新宿のアーチャー
+……まあ、いいのだ。[r]マスターはどうやら、私を信じてくれているからネ！
+[k]
+
+？1：まあ、一応
+？！
+
+[charaFace B 1]
+＠新宿のアーチャー
+ドライな返答、まことに結構！
+[k]
+
+[charaFace B 0]
+＠新宿のアーチャー
+では、信頼を高めるために新宿のバーサーカーを[r]打倒するとしよう。
+[k]
+
+
+＠新宿のアーチャー
+さて、その前に新宿のバーサーカーについて、[r]私が持っている限りの情報を提示する。
+[k]
+
+
+＠新宿のアーチャー
+少なくとも、サーヴァントが三人に増えたことで[r]勝率は上がったが、上がっただけでね。
+[k]
+
+＠新宿のアーチャー
+真正面から攻め込むだけでは、[r]まず蹴散らされる。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+＠ジャンヌ・オルタ
+……そうね。
+[k]
+
+＠アルトリア・オルタ
+……そうだな。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0 1]
+＠マシュ
+そんなにですか？
+[k]
+
+[charaFace A 12]
+＠マシュ
+ジャンヌさんもアルトリアさんも、[r]極めて強力なサーヴァントです。
+[k]
+
+＠マシュ
+力押しは好みませんが、[r]それでも勝率がゼロという訳では[line 3]。
+[k]
+
+[charaFadeout A 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠新宿のアーチャー
+うむ、単純にね。[r]まず物量が違う。
+[k]
+
+＠新宿のアーチャー
+歌舞伎町に常駐するコロラトゥーラは約二百体。[r]それとは別に百体が定期的に新宿区を巡回している。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0 1]
+＠マシュ
+つまり……合計三百体ですか。
+[k]
+
+[charaFadeout A 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠新宿のアーチャー
+つまり、正面から挑むと二百体のコロラトゥーラが[r]一斉に襲い掛かってくる訳だヨ！
+[k]
+
+＠新宿のアーチャー
+ハハハハハ！[charaFace B 4]　死にます。
+[k]
+
+＠新宿のアーチャー
+我々が死なずとも、マスター君が死にます。[r]マスター君が死ねば、ゲームオーバーだネ。
+[k]
+
+[charaFace B 0]
+＠新宿のアーチャー
+さて、続きだ。
+[k]
+
+＠新宿のアーチャー
+二百体のコロラトゥーラは、歌舞伎町をぶらつきながら、[r]スピーカーから流れる歌に聴き入っている。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0 1]
+＠マシュ
+歌……ですか？
+[k]
+
+[charaFadeout A 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠新宿のアーチャー
+もちろん、新宿のバーサーカー……[r]我らがヒロイン、クリスティーヌの歌さ。
+[k]
+
+＠新宿のアーチャー
+彼女が歌い終わるたび、コロラトゥーラが拍手する。[r]彼らは基本的に二十四時間それを繰り返している。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0 0,-90]
+＠ダ・ヴィンチ
+うわーお、そりゃまた酷いブラック労働だ。
+[k]
+
+[charaFadeout C 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠新宿のアーチャー
+つまり、歌舞伎町は現時点では難攻不落の砦だ。
+[k]
+
+＠新宿のアーチャー
+おまけに似たような建物だらけで迷いやすいし、[r]ビルから突然彼らが出てくることもある。
+[k]
+
+＠新宿のアーチャー
+そうかと言って、ビルの屋上からでは[r]こちらの姿も丸見えだ。
+[k]
+
+[charaFace B 4]
+＠新宿のアーチャー
+四方八方から人形たちが襲い掛かってきて[r]ゲームオーバー……ゾッとしないねェ、マスター君。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk D]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+＠アルトリア・オルタ
+百体の巡回とは何のことだ？[r]確かに、これまで何度か私もあれと戦ったが。
+[k]
+
+＠ジャンヌ・オルタ
+ああ、そうそう。[r]私も何体かブッ壊してやったわ。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠新宿のアーチャー
+私も彼らとかち合ったことは一度や二度じゃない。[r]増援を呼ばれぬ内に、可能な限り撤退したがネ。
+[k]
+
+＠新宿のアーチャー
+だが、時間にして三十六時間以内に彼らは[r][#百体に戻っている]。
+[k]
+
+[charaFace B 4]
+＠新宿のアーチャー
+いやはや、不思議なこともあるものだ！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk D]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+[charaFace D 5]
+[charaFadein D 0.1 0]
+＠アルトリア・オルタ
+……。[r]……。
+[k]
+
+＠ジャンヌ・オルタ
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠新宿のアーチャー
+ここでもう一つの情報だ。
+[k]
+
+＠新宿のアーチャー
+巡回を任されたコロラトゥーラは歌舞伎町を守るだけではない。[r]定期的に人間を[#攫:さら]っている。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0 1]
+＠マシュ
+何故ですか？
+[k]
+
+[charaFadeout A 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠新宿のアーチャー
+理由は……まあ大方、想像がつくがネ。
+[k]
+
+[charaFace B 0]
+＠新宿のアーチャー
+ともあれ、以上が歌舞伎町の概要だ。
+[k]
+
+＠新宿のアーチャー
+正面から攻める……という以外に、誰か作戦を[r]思いついたものは？
+[k]
+
+？1：潜入とか？
+
+[charaFace B 4]
+＠新宿のアーチャー
+二百体の人形がいる中に、人間が潜り込むのは[r]不可能だよ、残念ながら。
+[k]
+
+？2：遠距離狙撃とか？
+
+[charaFace B 4]
+＠新宿のアーチャー
+うーん……私が遠距離からありったけ攻撃を叩き込んでも、[r]多分仕留められんネ……すまん。
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠アルトリア・オルタ
+なら、私の『[#約束された勝利の剣:エクスカリバー・モルガン]』で[r]一切合切を吹き飛ばす[line 3]。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠新宿のアーチャー
+それも……無理だな。
+[k]
+
+[charaFace B 0]
+＠新宿のアーチャー
+歌舞伎町を丸ごと吹き飛ばしたとしても、[r]コロラトゥーラとバーサーカーは生き残る。
+[k]
+
+＠新宿のアーチャー
+それに、君も気付いているだろうが[r]この新宿区は[#全体的に異常を来している]。
+[k]
+
+＠新宿のアーチャー
+無論、[#神代:しんだい]とまではいくまい。
+[k]
+
+[charaFace B 4]
+＠新宿のアーチャー
+いくまいが……１９９９年の東京としては、[r]有り得ない魔力が渦巻いている。
+[k]
+
+＠新宿のアーチャー
+それはコンクリートのビルにも容赦なく雪崩れ込んでいてネ、[r][#今の新宿はビルにすら魔力が籠められている]。
+[k]
+
+＠新宿のアーチャー
+君の聖剣でも歌舞伎町を更地にすることは難しい、[r]と私は分析している。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠アルトリア・オルタ
+……確かに、そうだろうな。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+[charaFace D 4]
+[charaFadein D 0.1 0]
+＠ジャンヌ・オルタ
+あらー、認めちゃうんだー？[r]自分が弱者だって認めるって、勇気がいるものよねー？
+[k]
+
+[charaFace D 0]
+＠アルトリア・オルタ
+ちなみにおまえのボーボー燃やすあの宝具も、[r]歌舞伎町ではボヤ騒ぎを起こすだけだぞ。
+[k]
+
+＠ジャンヌ・オルタ
+アンタ一人を消し炭にするには充分だけどね？
+[k]
+
+[bgmStop BGM_EVENT_5 1.5]
+
+[charaFace E 1]
+[charaFace D 1]
+＠二人
+……。[r]……。
+[k]
+
+？1：はいどうどう
+？2：はいしどうどう
+？！
+
+[charaFace E 5]
+＠ジャンヌ・オルタ
+馬か、私らは！！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+
+[bgm BGM_EVENT_2 0.7]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠新宿のアーチャー
+だが、ここで私から提案がある。
+[k]
+
+[charaFace B 1]
+＠新宿のアーチャー
+……の前に、まずは君たちに一働きしてもらいたい。[r]“コロラトゥーラ”を一体、無傷で持って帰ってきてくれ。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠アルトリア・オルタ
+……何故だ？
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠新宿のアーチャー
+歌舞伎町は幻想と人形の領域。[r]なら、まずは人形を通して様子を見てみないとネ。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠ジャンヌ・オルタ
+ったく、面倒ねえ。
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠アルトリア・オルタ
+まあいい、ついてこいマスター。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠新宿のアーチャー
+私は、改造の準備を整えておくよ。[r]欲しい材料も幾つかあるから、別行動だ。
+[k]
+
+＠新宿のアーチャー
+その手の材料は商売人が扱っている。[r]ちょいと買い物してくるよ。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout B 0.1]
+[scene 38300]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+＠アルトリア・オルタ
+しかし巌窟王がお墨付きでアイツを信用できない、[r]と言ったのは驚きだな。
+[k]
+
+＠アルトリア・オルタ
+もしかして、アーチャーの正体を知っているのか？
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 2]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+＠ジャンヌ・オルタ
+アイツも大概訳分かんない存在よね。
+[k]
+
+[charaFace E 0]
+＠ジャンヌ・オルタ
+ま、いいわ。
+[k]
+
+＠ジャンヌ・オルタ
+アイツが裏切るとしたら、きっと決定的な瞬間よ。[r]それまで体よく互いに利用し合うとしましょう。
+[k]
+
+[charaFace D 5]
+＠アルトリア・オルタ
+しっ。[r]……“コロラトゥーラ”だ。
+[k]
+
+[bgmStop BGM_EVENT_11 0.4]
+[messageOff]
+[wipeout rightToLeft 0.3 1]
+[wait wipe]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.2]
+[wipein leftToRight 0.3 1]
+[wait wipe]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 1]
+＠市民Ａ
+ひっ！
+[k]
+
+＠市民Ａ
+やめて、やめて、助けて……！
+[k]
+
+[charaTalk E]
+[messageOff]
+[se ad360]
+[wt 1.5]
+[seStop ad360 1.0]
+
+[wipeout leftToRight 0.3 1]
+[wait wipe]
+[charaFadeout F 0.1]
+[wt 0.2]
+[wipein rightToLeft 0.3 1]
+[wait wipe]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0 1]
+＠マシュ
+人間たちを……連れ去ってます！
+[k]
+
+？1：止めないといけないけど……
+？！
+
+[charaFadeout A 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ジャンヌ・オルタ
+はいはい、お優しいこと。[r]一応言っておくけど、巻き込んでも知ったことじゃないわよ。
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠アルトリア・オルタ
+そう言いつつ、戦闘準備をするあたりが[r]性根の清純さ、あるいはお人好しと言うべきか。
+[k]
+
+＠アルトリア・オルタ
+コロラトゥーラを確保する。[r]指示[charaFace D 2]をよこせ、マスター！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

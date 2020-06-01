@@ -1,0 +1,941 @@
+
+＄91-20-10-01-1-0
+[soundStopAll]
+[charaSet A 99502600 1 マシュ]
+[charaSet B 98111500 1 ダ・ヴィンチ]
+[charaSet C 2010002 1 ビリー]
+[charaSet D 98025000 1 ？？？]
+[charaSet E 98018100 1 ならず者]
+[charaSet F 99360000 1 ケルト兵]
+[charaSet G 99360000 1 ケルト兵]
+[charaSet H 99360000 1 ケルト兵]
+
+
+[messageOff]
+[scene 28300]
+[bgm BGM_EVENT_11 0.1]
+[fadein black 1.5]
+[wait fade]
+[wt 1.0]
+＠ビリー
+まあ、これは例えばの話なんだけどさ。
+[k]
+
+＠ビリー
+１つの街を守って欲しいと依頼されたとする。[r]それは、生き残ることすら難しい戦いだとしよう。
+[k]
+
+＠ビリー
+相手は多勢。武器も豊富で力も強い。[r]味方は無勢。武器は乏しく力は弱い。
+[k]
+
+＠ビリー
+君は報酬がなくても戦う？[r]それとも、戦わない？
+[k]
+
+？1：戦う
+
+＠ビリー
+君の勇気は、やっぱり素晴らしいね。
+[k]
+
+？2：守る
+
+＠ビリー
+うん、君の答えはいつだって素敵だね。
+[k]
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.5]
+[scene 10000 1.5]
+[wait scene]
+[wt 1.0]
+[effect bit_talk_haboob_01 -80,-350]
+[se ad2]
+[seVolume ad2 0 0.01]
+[seVolume ad2 3.0 0.90]
+
+[scene 11110 1.5]
+[wait scene]
+[wt 1.5]
+
+[scene 11210 1.5]
+[wait scene]
+
+[seStop ad2 6.0]
+[effectStop bit_talk_haboob_01]
+[wt 2.0]
+[bgm BGM_EVENT_3 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+＠ビリー
+[line 3]どうぞお先に。
+[k]
+
+[seStop ad2 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ならず者
+この野郎……！[se ad346][seStop ad346 0.5]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.7]
+[se bac22]
+[fowardEffect bit_talk_14]
+[charaShake E 0.05 3 3 0.25]
+[wt 0.5]
+
+[se ad144]
+[shake 0.05 1 4 0.5]
+[charaFadeout E 0.2]
+[charaMove E 0,-256 0.2]
+[wait charaMove E]
+[wt 1.5]
+[bgm BGM_EVENT_5 0.1]
+[charaTalk E]
+[charaFadein E 0.8 0,-256]
+[charaMove E 0,-50 0.8]
+＠ならず者
+あ、いでぇっ……！[r]ちく、しょう……てめぇ……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠ビリー
+その手じゃあ、ちょっとばかりガンマンはお役御免だね。[r]ま、真面目に働くといいことあるかもよ？
+[k]
+
+[charaFadeout C 0.1]
+[messageOff]
+[bgmStop BGM_EVENT_5 0.4]
+[wt 0.7]
+
+[charaEffect A bit_talk_10]
+[se ad13]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[bgm BGM_EVENT_2 0.1]
+＠マシュ
+驚きの動きです。[r]人体というのは、あんなに早く動くものなのですね……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 0,-90]
+＠ダ・ヴィンチ
+西部一の[#早撃ち:クイックドロウ]。[r]伝説に違わぬ神技だねえ。
+[k]
+
+[charaFace B 0]
+＠ダ・ヴィンチ
+一度、生の腕をじっくり観察したいものだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠ビリー
+……うーん。[r]マスター、マスター、ちょっといいかな？
+[k]
+
+？1：どしたの？
+
+[charaFace C 4]
+＠ビリー
+実はさっき酒場で聞いたんだけど。[r]どうもこの街、狙われているみたいなんだ。
+[k]
+
+？2：オッケー！
+
+[charaFace C 1]
+＠ビリー
+あはははは、ノリがいいなあ僕のマスターは！
+[k]
+
+[charaFace C 5]
+＠ビリー
+それはさておき。[r]この街、狙われているみたいなんだよね。
+[k]
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠マシュ
+狙われている……。[r]それは一体誰にでしょう？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠ビリー
+盗賊、ならず者、要するにさっきのはぐれ者連中さ。[r]ここの[#保安官:シェリフ]はブルッちゃって、使い物にならない。
+[k]
+
+＠ビリー
+で、街の人たちはどこにも行けずに困ってる。[r]助けてあげたい、そう思うのは悪いことかな？
+[k]
+
+？1：いいことだと思う
+
+[charaFace C 1]
+＠ビリー
+うん、オッケー！[r]よし、それならやるか！
+[k]
+
+？2：許されざる者！
+
+[charaFace C 1]
+＠ビリー
+おお、マスターってばノリノリだ！[r]いいよいいよ、大いに気に入った！
+[k]
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠マシュ
+先輩、そう簡単に返事をするのはどうかと。[r]せめて相手の数くらいは聞いておいた方が……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠ビリー
+あ、それ僕も聞いてなかったや。[r]待ってて、今聞いてくる。
+[k]
+
+[se ad59]
+[seStop ad59 1.0]
+[charaFadeout C 0.3]
+[charaMove C 0 0.3]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠マシュ
+ならず者たちから街を護る……。[charaFace A 6][r]……ハ！？　これはまさか西部劇の約束事では！？
+[k]
+
+[charaFace A 1]
+＠マシュ
+なんという……[r]なんというウエスタンな展開でしょう、マスター！
+[k]
+
+？1：もしかして好き？
+
+[charaFace A 3]
+＠マシュ
+い、いえ、特にそういう訳ではありませんが……。[r]ライブラリにあったので、つい見入ってしまって……。
+[k]
+
+？2：詳しいね
+
+[charaFace A 13]
+＠マシュ
+はい、ライブラリには西部劇もあったので。[r]古典のひとつとして勉強させてもらいました。
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[se ad59]
+[seVolume ad59 0.6 0.99]
+[wt 0.3]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.3 0]
+[charaMove C 1 0.3]
+[wt 0.3]
+[seStop ad59]
+＠ビリー
+あ、マスター、マスター！[r]相手がざっと何人か聞いてきたよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠マシュ
+はい、何人でしょうか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ビリー
+ざっと1,000人くらいだって。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠マシュ
+なるほど、1,000人。ウエスタンらしい展か[line 3][charaFace A 6][r]ええ、[messageShake 0.02 3 3 0.5]1,000人！？
+[k]
+
+[bgmStop BGM_EVENT_2 1.5]
+[messageOff]
+[wipeout rollRight 1.5 0.5]
+[wait wipe]
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[charaPut A 1200,1200]
+[wt 1.0]
+[scene 20720]
+[wipein rollLeft 1.5 0.5]
+[wait wipe]
+[bgm BGM_EVENT_1 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+＠ビリー
+マスター、双眼鏡こっちにも。[r]……よし、見えたぞ……[charaFace C 2]って、あれは……！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[messageOff]
+[wt 0.5]
+[bgm BGM_EVENT_1 1.0 0.4]
+[cameraMove 1.0 100,-50 2.0]
+[wipeout diaOut 1.0 0.5]
+[wait wipe]
+[cameraHome 0.1]
+[messageOff]
+[charaFadein F 0.1 1]
+[charaFadein G 0.1 0]
+[charaFadein H 0.1 2]
+[charaShake F 0.2 3 3 5.0]
+[charaShake G 0.2 3 3 5.0]
+[charaShake H 0.2 3 3 5.0]
+[wt 0.3]
+[se ad173]
+[seVolume ad173 0 0.1]
+[seVolume ad173 1.0 0.6]
+[se ad166]
+[seVolume ad166 0 0.1]
+[seVolume ad166 1.0 0.2]
+[wipein diaOut 1.0 0.5]
+[wait wipe]
+[wt 1.5]
+[seStop ad173 1.0]
+[seStop ad166 1.0]
+[wipeout diaOut 1.0 0.5]
+[wait wipe]
+[charaShakeStop F]
+[charaShakeStop G]
+[charaShakeStop H]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.3]
+[bgm BGM_EVENT_1 1.0]
+[wipein diaOut 1.0 0.5]
+[wait wipe]
+[wt 0.3]
+[charaPut A 0,0]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 0,-90]
+＠ダ・ヴィンチ
+ふむふむ。どうやらあちらさん、ケルトの戦士たちの[r]生き残りを大量に雇用しているようだね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠マシュ
+そんな……あれは女王メイヴの死と共に[r]消え去ったはずでは！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-90]
+＠ダ・ヴィンチ
+彼らは一度この世界に召喚されている。[r]そして現状、あらゆる次元時空は極めて不安定だ。
+[k]
+
+＠ダ・ヴィンチ
+偶然と幸運に助けられ、技術さえ確かならば[r]召喚することも決して不可能じゃない。
+[k]
+
+＠ダ・ヴィンチ
+とはいっても、魔術の深淵を知らぬ素人が偶然に[r]召喚できるものではない。つまり[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠ビリー
+向こうにも、魔術師[line 2][r]あるいはそれ以外の誰かがいるってこと？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut A 0,0]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-90]
+＠ダ・ヴィンチ
+必然的にね。[r]私としてはそちらの方が問題だ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠ビリー
+ケルト兵が1,000人か……。[r]さすがに数が多いな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.3]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……マスター！[r]こちら、ご覧下さい！
+[k]
+
+？1：これはもしかして……
+？2：サーヴァント反応？
+？！
+
+[charaFace A 7]
+＠マシュ
+はい！　サーヴァントが多数、カウンターとして[r]召喚されているようです。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 0,-90]
+＠ダ・ヴィンチ
+これはまた、随分とお手軽な英霊がいたものだ。[r]暴れ足りなかったのかな？　それとも生粋の英雄体質か。
+[k]
+
+[charaFace B 5]
+
+＠ダ・ヴィンチ
+ま、どちらでも構わない。[r]使えるものは猫の手でもってヤツだ。
+[k]
+
+＠ダ・ヴィンチ
+特異点修正の要領だ、[%1][&君:ちゃん]。[r]理由を告げてサーヴァントたちに協力を要請しよう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ビリー
+あはは、マスター！[r]何だか、西部劇みたいだね！
+[k]
+
+？1：一致団結！
+
+[charaFace C 0]
+
+＠ビリー
+了解、マスター！[r]よーし、やるぞ！
+[k]
+
+？2：牧場で決闘だ！
+
+[charaFace C 0]
+
+＠ビリー
+あっはっは、ＯＫマスター！[r]僕の銃捌き、とくとご覧あれ、だ！
+[k]
+
+？！
+
+[messageOff]
+
+[bgmStop BGM_EVENT_1 1.5]
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[wt 1.0]
+
+
+[scene 20720]
+
+[bgm BGM_EVENT_5 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+
+＠D：？？？
+いいか……貴様たち……。[r]あの街にはたくさんの人間と、食料と、金がある。
+[k]
+
+＠D：？？？
+……奪え、全てを。[r]……犯せ、何もかもを。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk off]
+
+[charaFadein F 0.1 1]
+[charaFadein G 0.1 0]
+[charaFadein H 0.1 2]
+
+[shake 0.05 2 1 0.7]
+
+＠ケルト兵
+オー！！
+[k]
+
+[shakeStop]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+
+[charaTalk on]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠D：？？？
+我々は餓狼である。[r]戦うことと、喰らうことしか知らぬ獣である。
+[k]
+
+＠D：？？？
+それで良い。[r]そうでなければ、この大陸に根を張れぬ。
+[k]
+
+＠D：？？？
+霊脈を奪い、この広大な大陸を我が物に。[r]おまえたちには銃も刃も歯が立たぬ。
+[k]
+
+＠D：？？？
+さあ、行け！
+[k]
+
+[messageOff]
+[se ad16]
+[seVolume ad16 0 0.7]
+[wt 0.5]
+
+＠D：？？？
+さあ、ここを拠点として我が一族の繁栄を再び……！
+[k]
+
+[seStop ad16 0.4]
+[messageOff]
+[se ad55]
+[seVolume ad55 0.7 0.99]
+
+[wt 0.3]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFace F 0]
+[charaFadein F 0.4 5]
+[charaMove F 2 0.4]
+
+[wt 0.4]
+
+[seStop ad55]
+
+＠ケルト兵
+報告です。[r]先遣隊100名、全滅しました。
+[k]
+
+＠D：？？？
+ほう、敵も中々やるようだな。
+[k]
+
+＠D：？？？
+……。[r]……。
+[k]
+
+[messageShake 0.05 6 6 0.5]
+
+＠D：？？？
+何ィ！？
+[k]
+
+[messageShakeStop]
+
+＠ケルト兵
+敵方に[line 3]サーヴァントがいます。
+[k]
+
+＠D：？？？
+……。[r]……。
+[k]
+
+＠D：？？？
+サーヴァント……おのれ……！
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_5 1.4]
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+
+[wt 0.5]
+
+[charaSet B 3009001 1 レオニダス]
+[charaSet C 3016001 1 ヘクトール]
+[charaSet D 7005001 1 スパルタクス]
+[charaSet E 5014001 1 メフィストフェレス]
+[charaSet F 6003001 1 百貌のハサン]
+[charaSet G 3002001 1 ディルムッド]
+[charaSet H 2010002 1 ビリー]
+
+[fadein black 1.5]
+[wait fade]
+
+＠
+時間は少し巻き戻って[line 3]
+[k]
+
+[bgm BGM_EVENT_4 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.4 1]
+
+＠ビリー
+という訳で、1,000人の大盗賊ケルト団から街を守るため、[r]皆に力を貸して欲しいんだ！
+[k]
+
+[charaFadeout H 0.1]
+
+＠B：？？？
+はっはっは！　なるほどなるほどテルモピュライ！[r]それは[#滾:たぎ]りますな！
+[k]
+
+[charaFadeout H 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.4 1]
+
+＠レオニダス
+レオニダス一世、[r]この街を守ることに全力を尽くしましょう！
+[k]
+
+＠レオニダス
+何、一騎当千のサーヴァントが七騎もいるのです。[r]怖い物などありません！
+[k]
+
+[charaFadeout B 0.1]
+
+＠C：？？？
+どうりで。[r]それで守勢が得意なサーヴァントが召喚された訳か。
+[k]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.4 1]
+
+＠ヘクトール
+しかしオジサン、[r]こんな近現代の時代で役立つのかねえ？
+[k]
+
+[charaFace C 0]
+
+＠ヘクトール
+ま、了解です。[r]トロイアのヘクトール、あんまりコキ使ってくれるなよ？
+[k]
+
+[charaFadeout C 0.1]
+
+＠D：？？？
+盗賊は圧制。[r]即ち、この街は圧制を受けているもの。
+[k]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+
+＠スパルタクス
+私には、全ての圧制者を打倒する義務がある。
+[k]
+
+[charaFadeout D 0.1]
+
+＠E：？？？
+納得・共感・大盛況でございます！[r]守勢じゃなくとも奇襲と混乱ならお任せあれ！
+[k]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.4 1]
+
+＠メフィストフェレス
+このメフィストフェレス、[r]精一杯彼らに混乱を撒き散らしますとも！
+[k]
+
+[charaFace E 1]
+
+＠メフィストフェレス
+うーん、絶望オイチイ！
+[k]
+
+[charaFadeout E 0.1]
+
+＠F：？？？
+[#承:うけたまわ]った。[r]そこまで多勢では、我らが呼ばれるのも道理だな。
+[k]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+
+＠百貌のハサン
+フッ。我ら百貌のハサンがいれば、[r]その程度の戦力差、瞬く間に埋まろうよ。
+[k]
+
+[charaFace F 4]
+
+＠百貌のハサン
+……まあ、街の防衛など暗殺者の道から外れてはいるが。[r]“村のお守り”は、そう不得手なものではなし。
+[k]
+
+[charaFadeout F 0.1]
+
+＠G：？？？
+……俺が召喚されたのも道理なのだろうな。
+[k]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.4 1]
+
+＠ディルムッド
+このディルムッド・オディナ。[r]どうやら、この大地で暴れたことがあるらしい。
+[k]
+
+[charaFace G 0]
+
+＠ディルムッド
+だがそれは敵方として。[r]ならば、此度は味方としてこの双槍を振るいたい。
+[k]
+
+[charaFace G 1]
+
+＠ディルムッド
+……素晴らしい。圧倒的多数に抗する、[r]わずか数人の勇者たち[line 3]これぞ夢にまで見た好機！
+[k]
+
+[charaFace G 2]
+
+＠ディルムッド
+マスター、指示を！[r]戦場を薔薇色に染めてみせましょう！
+[k]
+
+[charaFadeout G 0.1]
+
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠ビリー
+いやあ、まさか全員承知してくれるとは思わなかった！
+[k]
+
+？1：良かったね
+
+[charaFace H 1]
+
+＠ビリー
+何だかんだで、彼らもお人好しだねえ。[r]得することなんて、なーんにもないのにさ。
+[k]
+
+？2：ビリーが駆け回ったお陰だよ
+
+[charaFace H 1]
+
+＠ビリー
+そうかい？[r]ふふん、もしそうなら嬉しいねぇ。
+[k]
+
+？！
+
+[charaFadeout H 0.1]
+
+[messageOff]
+[se ad13]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+マシュ・キリエライト。[r]ナビゲートを担当させていただきます。
+[k]
+
+＠マシュ
+街に異変があったなら、[r]即座にお知らせしますので。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠ビリー
+よし、まずは街の皆を脱出させることから始めよう。
+[k]
+
+
+＠ビリー
+場所は街に近い森の中の洞窟。[r][#保安官:シェリフ]に話はつけてあるから。
+[k]
+
+[charaFadeout H 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein F 0.1 0]
+[charaFadein G 0.1 2]
+
+＠百貌のハサン
+では、我らは彼らの誘導を担当しようか。[r]列整理が得意な[#人格:ハサン]もいるのでな。
+[k]
+
+[charaFace G 5]
+
+＠ディルムッド
+……確かに、前線で戦うだけが戦いではない。[r]ハサン殿は連絡網を構築する役割もある。
+[k]
+
+＠ディルムッド
+いささか物足りないが、俺もハサン殿に同行する。[r]挟み撃ちは避けるべきだ。
+[k]
+
+？1：２人ともよろしく！
+？！
+
+[charaTalk off]
+
+＠二人
+承知！
+[k]
+
+[se ad73]
+[charaFadeout F 0.2]
+[charaFadeout G 0.2]
+[charaMove F 4 0.2]
+[charaMove G 1 0.2]
+
+[charaTalk on]
+
+[wt 1.0]
+
+[seStop ad73]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠ビリー
+ともあれマスター、[r]頼もしいサーヴァントが七騎も揃ったんだぜ。
+[k]
+
+[charaFace H 2]
+
+＠ビリー
+さあ、まずは先遣隊とやらを[r]蹴散らしてやるか！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_4 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

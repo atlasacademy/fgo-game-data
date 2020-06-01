@@ -1,0 +1,427 @@
+
+
+
+＄94-03-22-08-2-1
+[soundStopAll]
+
+
+[charaSet A 25003001 1 謎の来訪者ドラゴンエックス]
+[charaSet B 7013001 1 清姫]
+[charaSet C 2021000 1 巴御前]
+[charaSet D 98002000 1 フォウ]
+[charaSet E 1098161700 1 猿長者]
+[charaSet F 1098123200 1 ゴルドルフ]
+[charaSet G 8001410 1 マシュ]
+[charaSet I 5009000 1 エフェクト用ダミー１]
+[charaSet J 5009000 1 エフェクト用ダミー２]
+
+[bgm BGM_EVENT_63 0.1]
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[charaTalk depthOff]
+[charaDepth I 0]
+[charaDepth J 1]
+
+[charaPut I 1]
+[charaEffect I bit_talk_kengekiall02]
+[charaPut J -70,50]
+[charaScale J 1.2]
+[charaEffect J bit_talk_14]
+[se ad32]
+[wt 0.3]
+[charaScale J 1.1]
+[charaPut J 60,10]
+[charaEffect J bit_talk_14]
+[se ad32]
+[wt 0.2]
+[charaScale J 1.4]
+[charaPut J -50,-20]
+[charaEffect J bit_talk_14]
+[se ad32]
+[wt 0.1]
+[charaScale J 1.0]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 69500]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 0,-15]
+[charaScale A 1.1]
+
+[fadein black 0.3]
+[wt 0.1]
+[se ad671]
+[charaMoveScale A 1.0 0.3]
+[charaShake A 0.05 1 3 0.2]
+[wait fade]
+
+＠謎の来訪者ドラゴンエックス
+つぁーーーーー！[r]いたーーーーい！
+[k]
+
+＠謎の来訪者ドラゴンエックス
+新しいリゾートの気配を感知してやって来たのに、[r]まさかまさかの門前払いとは！
+[k]
+
+＠謎の来訪者ドラゴンエックス
+いいですよーだ、こんなバイオレンスなホテル、[r]こちらからお断りです！
+[k]
+
+＠謎の来訪者ドラゴンエックス
+ばーかばーか！[r]温泉たまご食べすぎてＤＥＢ－ＲＡＹ！
+[k]
+
+[bgmStop BGM_EVENT_63 0.5]
+[messageOff]
+[se ad270]
+[charaShake A 0.02 2 2 1]
+[wt 0.7]
+[se ade157]
+[charaPut J 0,-200]
+[charaEffect J bit_talk_40]
+[wt 0.4]
+[charaPut I 0,0]
+[charaEffect I bit_talk_43l]
+[charaMove A 0,150 2.0]
+[wt 0.5]
+[charaFadeout A 0.7]
+[seStop ade157 0.4]
+[wipeout rectangleStripUpToDown 0.3 1.0]
+[wait wipe]
+[charaPut A 1200,1200]
+[charaPut J 1200,1200]
+[charaPut I 1200,1200]
+[charaEffectStop J bit_talk_40]
+[charaEffectStop I bit_talk_43l]
+[wt 0.1]
+[wipein rectangleStripDownToUp 0.2 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠清姫
+あの、せっかくの出番なのに相手がアレとか、[r]わたくしの扱い、ひどくありません！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠巴御前
+謎の来訪者ＤＸ……怖ろしい竜種でした。[r]いえ、竜属性ありましたっけ、あの方……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠フォウ
+フォウ、フォーウ……[r]（特訳：ごめんね、うちのアルトリア属が迷惑かけて……）
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠猿長者
+やれやれ。[r]言わんこっちゃない。
+[k]
+
+＠猿長者
+皆さまの努力は買いますが、[r]誰彼かまわず招くからこうなるのですよ。
+[k]
+
+＠猿長者
+[#閻魔亭:えんまてい]は客を呼ぶものではない。[r]客は自ら迷い込むもの。
+[k]
+
+＠猿長者
+それが『迷い家』の本質でございましょう。[r]だというのに、まったく[line 3]
+[k]
+
+＠猿長者
+あのような乱暴者まで呼び寄せて。[r]紅閻魔女将は複雑な心境でしょうネェ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠清姫
+それは……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠ゴルドルフ
+なにをいう猿め。[r]客が増えれば女将が喜ぶ！　自明の理ではないか！
+[k]
+
+＠ゴルドルフ
+そもそも、我々が手助けしなければ[r]いつまでも[#寂:さび]れたままなのだぞ！？
+[k]
+
+＠ゴルドルフ
+貴様はそれでいいのか！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠猿長者
+良い訳はありません。[r]ワタクシも[#閻魔亭:えんまてい]を愛するもの。
+[k]
+
+＠猿長者
+ですが……これも時勢、というものなのです。
+[k]
+
+＠猿長者
+神々はもう地上に愛想を尽かした。[r]人々はもう山中に幻想を持たなくなった。
+[k]
+
+＠猿長者
+[#閻魔亭:えんまてい]の[#衰退:すいたい]は当然のこと。[r]言ってしまえば時代遅れなのですよ、ここは。
+[k]
+
+＠猿長者
+カルデア、でしたか？[r]アナタがたの住み[#処:か]が[#羨:うらや]ましい。
+[k]
+
+＠猿長者
+英霊と人間が共に信じ合える……ほほほ。[r]そんな場所が、まだ地上にあったのですから。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠ゴルドルフ
+う、うむ。[r]確かにカルデアは最新の人外魔境。
+[k]
+
+＠ゴルドルフ
+ここ[#閻魔亭:えんまてい]より近代化の進んだ工房だが……[r]だとしても、[#閻魔亭:えんまてい]の[#寂:さび]れようはおかしくはないか？
+[k]
+
+[charaFace F 10]
+
+＠ゴルドルフ
+いかに近代化で神霊が減ったとしても、だ。
+[k]
+
+＠ゴルドルフ
+やってくる客はいるだろうし、[r]貴様のように長期滞在している者もいる。
+[k]
+
+＠ゴルドルフ
+私たちが来た時、賽銭箱にも[r]“感謝の気持ち”が詰まっていた。
+[k]
+
+＠ゴルドルフ
+細々とではあるが、[r][#経営としてはうまくいっている]のだ。
+[k]
+
+＠ゴルドルフ
+なのに、なぜ[#閻魔亭:えんまてい]は衰退している？
+[k]
+
+＠ゴルドルフ
+女将や[#雀:すずめ]たちはあれほど建物の手入れをしている[r]というのに、なぜ閉じていく施設があるのだ？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠猿長者
+それはもちろん、[#他に問題があるからですよ]。
+[k]
+
+＠猿長者
+悲しい事です……[r]500年前に、あんな事件が起きなければ……よよよ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠清姫
+あんな事件……？[r]何かあったのですか、[#猿長者:さるちょうじゃ]様？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠猿長者
+ええ、ええ。[r]口にはできない恥ずべき失態があったのです。
+[k]
+
+＠猿長者
+ほほ。ワタクシは所詮、気ままな宿泊客。[r][#閻魔亭:えんまてい]の恥部について、これ以上は申せなんだ。
+[k]
+
+＠猿長者
+他の客たちもみな口を閉ざすでしょう。[r]お[#喋:しゃべ]りな[#蛇庄屋:へびしょうや]もだんまりの筈。
+[k]
+
+＠猿長者
+まあ、これは解決しようのない問題、[r]皆さまが気になさる事ではありません。
+[k]
+
+＠猿長者
+今は一途に、奉納殿に“感謝の気持ち”を[r]溜めるがよろしい。
+[k]
+
+＠猿長者
+少なくとも、皆さまはそれで助かるのですから。[r]こんな異界においてまで[#人助:ひとだす]け……
+[k]
+
+＠猿長者
+いえ、[#雀助:すずめだす]けもございますまい？[r][#閻魔亭:えんまてい]の事は、女将に任せておけば良いのです。
+[k]
+
+[messageOff]
+[charaFadeout E 0.4]
+[se ad452]
+[wt 1.0]
+[seStop ad452 0.3]
+[wt 0.5]
+
+？1：500年前の事件……
+？2：女将はそんな事、教えてくれなかった……
+
+？！
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠清姫
+紅閻魔先生は真面目な性格ですので……
+[k]
+
+＠清姫
+自分の問題で、[r]人様に迷惑をかけようとはしないのです……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 15]
+[charaFadein F 0.1 1]
+
+＠ゴルドルフ
+うむ。今まで話さなかった、という事は[r]本人も話したくはない、という事だろう。
+[k]
+
+＠ゴルドルフ
+我々から無理に聞き出しても逆効果だ。
+[k]
+
+＠ゴルドルフ
+ここはさりげなく、自然に、[#閻魔亭:えんまてい]の事情を[r]聞き出すしかあるまい。
+[k]
+
+＠ゴルドルフ
+フィン・マックールめ……これを見越して、[r]“まずは労働に[#勤:いそ]しむ”などと言っていたのか……
+[k]
+
+？1：今はできる事に専念しよう
+？2：そのうち蛇サンが話してくれると思う
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadein G 0.1 1]
+
+＠マシュ
+そうですね。[r]今は焦っても仕方がありません。
+[k]
+
+＠マシュ
+紅閻魔さんも“やりたいようにやっていい”と[r]言ってくれたのですから、
+[k]
+
+[charaFace G 7]
+
+＠マシュ
+わたしたちは出来る範囲で、[r][#閻魔亭:えんまてい]をもり立てましょう！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠フォウ
+フォウ、フォーウ！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_70 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

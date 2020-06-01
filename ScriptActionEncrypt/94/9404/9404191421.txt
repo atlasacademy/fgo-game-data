@@ -1,0 +1,268 @@
+
+＄94-04-19-14-2-1
+
+[soundStopAll]
+
+
+[charaSet A 11009001 1 Ｓイシュタル]
+[charaSet B 1098184900 1 Ｓイシュタル_ダメージ]
+[charaSet C 6018002 1 Ｘ]
+[charaSet D 2037000 1 ジェーン]
+[charaSet E 1033002 1 シグルド]
+[charaSet F 1033000 1 クローンシグルド1]
+[charaSet G 1033000 1 クローンシグルド2]
+[charaSet J 5009000 1 エフェクト用]
+
+[scene 82900]
+
+[bgm BGM_EVENT_24 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth C 2]
+[charaDepth B 3]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+[effect bit_talk_shot_02]
+[se ad563]
+[wt 0.2]
+[se ad563]
+[wt 0.1]
+[se ad563]
+[wt 0.5]
+[wipeout rightToLeft 0.2 1.0]
+[wait wipe]
+[charaFadeout D 0]
+[effectDestroy]
+[charaTalk off]
+[charaFace B 0]
+[charaFadein B 0 0]
+[charaFace C 2]
+[charaFadein C 0 2]
+[wipein leftToRight 0.2 1.0]
+[wait wipe]
+
+[wt 0.2]
+
+[charaFadeout B 0.1]
+[se ad73]
+[wt 0.1]
+[charaFadeout C 0.1]
+[se ad73]
+[wt 0.2]
+
+[charaPut J 1]
+[charaEffect J bit_talk_kengekiall02]
+[se ad32]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[wt 0.3]
+[se ad32]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[wt 0.2]
+[se ad32]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[wt 0.1]
+[charaEffectDestroy J]
+
+[fadeout black 0.2]
+[wait fade]
+[charaFace E 0]
+[charaFadein E 0 1]
+[fadein black 0.2]
+[wait fade]
+
+[effect bit_talk_h_slash01]
+[cueSe Battle bac508]
+[wt 0.2]
+[fadeout white 0.1]
+[wait fade]
+[charaFadeout E 0]
+[charaFace D 2]
+[charaFadein D 0 -320,0]
+[charaShake D 0.07 4 1 0.4]
+[charaFace B 0]
+[charaFadein B 0 1]
+[charaShake B 0.07 4 1 0.4]
+[charaFace C 5]
+[charaFadein C 0 320,0]
+[charaShake C 0.07 4 1 0.4]
+[fadein white 0.1]
+[wait fade]
+
+[wt 0.2]
+
+[charaMove D -320,-50 0.4]
+[charaFadeout D 0.3]
+[wt 0.3]
+[se ad144]
+[wt 0.1]
+
+[charaMove B 0,-50 0.4]
+[charaFadeout B 0.3]
+[wt 0.3]
+[se ad144]
+[wt 0.2]
+
+[charaMove C 320,-50 0.4]
+[charaFadeout C 0.3]
+[wt 0.3]
+[se ad144]
+
+[wt 0.5]
+
+？1：みんな……！
+
+？！
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠シグルド
+抵抗は無意味だ。[r]貴殿らの剣では我が剣法を破れない。
+[k]
+
+＠シグルド
+『触媒』は通す。それ以外は処断せよ、と[r]暗黒武者殿から命じられたが……
+[k]
+
+＠シグルド
+当方はスペース神陰流の総統に仕える騎士。
+[k]
+
+＠シグルド
+アシュタレト様の、言葉にはできない[#本音:しんい]を[r]汲みとるものなり。
+[k]
+
+＠シグルド
+『触媒』は総統のもとに連行する。[r]それ以外は監房に連行せよ。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth G 2]
+[charaDepth C 3]
+[charaDepth D 4]
+
+[charaTalk off]
+[charaFace D 4]
+[charaFadein D 0.1 -130,-50]
+[charaFace C 4]
+[charaFadein C 0.1 70,-50]
+[wt 0.5]
+
+[se ad166]
+[charaFace F 0]
+[charaFadein F 0.4 -400,0]
+[charaFace G 0]
+[charaFadein G 0.4 430,0]
+[wt 0.4]
+[seStop ad166 0.2]
+[wt 0.6]
+
+[charaMove F -450,0 0.7]
+[charaMove D -180,-50 0.7]
+[charaMove C 20,-50 0.7]
+[charaMove G 380,0 0.7]
+
+[se ad166]
+[seStop ad166 1.0]
+[charaFadeout F 0.7]
+[charaFadeout D 0.7]
+[charaFadeout C 0.7]
+[charaFadeout G 0.7]
+[wt 0.7]
+[charaTalk depthOn]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth G 2]
+[charaDepth B 3]
+
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+[wt 0.5]
+
+[se ad166]
+[charaFace F 0]
+[charaFadein F 0.4 -300,0]
+[charaFace G 0]
+[charaFadein G 0.4 370,0]
+[wt 0.4]
+[seStop ad166 0.2]
+[wt 0.6]
+
+[charaMove F -350,0 0.7]
+[charaMove B -50,-50 0.7]
+[charaMove G 320,0 0.7]
+
+[se ad166]
+[seStop ad166 1.0]
+[charaFadeout F 0.7]
+[charaFadeout B 0.7]
+[charaFadeout G 0.7]
+[wt 0.7]
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠シグルド
+さらばなり、ジェーン。[r]そして女神の半身よ。
+[k]
+
+＠シグルド
+無秩序な力は混乱を生むのみ。
+[k]
+
+＠シグルド
+しかし、どのような属性であれカタチさえ与えれば、[r]これをなだめる事は可能だと考えた。
+[k]
+
+＠シグルド
+当方はトキオミ教授の試みを評価する。[r]ただし、その方法は甘きに過ぎたようだ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth G 2]
+[charaDepth A 3]
+
+[charaTalk A]
+[charaFace F 0]
+[charaFadein F 0.1 -300,0]
+[charaFace A 10]
+[charaFadein A 0.1 0,-50]
+[charaFace G 0]
+[charaFadein G 0.1 370,0]
+
+＠Ｓイシュタル
+…………っ。
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_24 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

@@ -1,0 +1,194 @@
+
+
+
+＄03-00-06-10-1-1
+
+
+[soundStopAll]
+
+[charaSet A 8001400 1 アーマード・マシュ（ゴーグルあり）]
+[charaSet B 8001410 1 マシュ]
+[charaSet C 1017001 1 武蔵]
+[charaSet D 98002000 1 フォウ]
+[charaSet E 3041001 1 カイニス]
+[charaSet F 1098191200 1 アデーレ]
+[charaSet G 1098191300 1 マカリオス]
+[charaSet S 5009000 1 エフェクト用ダミー１]
+[charaSet T 5009000 1 エフェクト用ダミー２]
+
+[scene 92501]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk off]
+[charaFace A 7]
+[charaFadein A 0.1 0,10]
+[charaMove A 0,0 1.0]
+[se ade18]
+[seVolume ade18 0.0 0.5]
+[wt 0.5]
+[seStop ade18 0.8]
+[wt 1.0]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth A 2]
+
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[wt 0.1]
+[charaFadeout A 0.4]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[wt 1.2]
+
+＠マシュ
+敵性存在を排除。[r]……[#霊基外骨骼:オ ル テ ナ ウ ス]各部問題なし、戦闘終了です！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠武蔵
+いやあ、お疲れさま～！
+[k]
+
+[charaFace C 1]
+
+＠武蔵
+思ったより騒ぎにならないというか、[r]混乱した市民が押し寄せたりしないで良かったわ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠マシュ
+そういえば……[r]市民の方々の姿があっという間に……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠武蔵
+日頃の訓練の賜物、かしら？[r]よっぽど神々の[#教育]が行き届いているのね。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 0.7]
+[se ad821]
+[seVolume ad821 0 0]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+[charaFadeout C 0.1]
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+
+[se ad39]
+[seVolume ad821 1.0 1.0]
+[charaEffect F bit_talk_spell_b]
+[wt 2.5]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠フォウ
+フォウウウ……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠アデーレ
+…………完了です。[r]次へ急ぎましょう。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠カイニス
+成功したのか？　ん？[r]魔術ってのはもっと光や音が出るんじゃねえのか。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠アデーレ
+え。むしろ音や光が最小限で済むように、[r]ブラヴァツキーさんが改良・調整してくれたのですが……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠マカリオス
+話していないで急げ姉さん！[r][line 3]すぐに正規兵が来る、突破しつつ移動だ！
+[k]
+
+？1：了解！
+？2：行こう、マシュ！
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠マシュ
+了解、次の目標へ移動開始します！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait fade]
+[wt 1.2]
+[soundStopAll]
+[end]

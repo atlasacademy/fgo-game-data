@@ -1,0 +1,442 @@
+
+＄94-03-35-01-1-1
+
+[soundStopAll]
+
+[charaSet A 5042000 1 紫式部]
+[charaSet B 98001000 1 マシュ]
+[charaSet C 98002000 1 フォウ]
+[charaSet D 1098162300 1 セミラミス]
+[charaSet I 5009000 1 エフェクト用]
+[charaSet J 98115000 1 エフェクト用]
+
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 70300]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[se ad7]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 -30,0]
+[charaMove A 1 0.2]
+[wt 0.4]
+
+[charaMoveReturn A 0,-4 0.15]
+[se bac23]
+[charaPut J 1]
+[charaEffect J bit_talk_Slash_white_01_L]
+[wt 0.3]
+
+[charaMoveReturn A -4,0 0.15]
+[se bac23]
+[charaRollMove I 0 270]
+[charaPut I 600,-350]
+[charaEffect I bit_talk_Slash_white_01]
+[wt 0.6]
+
+[charaFadeout A 0.1]
+[wt 0.3]
+
+
+[se bac20]
+[charaScale J 1.3]
+[charaScale I 1.3]
+[charaRollMove I 0 90]
+[charaPut J -50,0]
+[charaPut I -600,-300]
+[charaEffect J bit_talk_Slash_white_01_L 0,0 H]
+[charaEffect I bit_talk_Slash_white_01 0,0 H]
+[wt 0.3]
+[se bac18]
+[flashin once 0.1 0.4 FFFFFF80 FFFFFF00]
+[shake 0.05 2 2 0.6]
+[wt 1.0]
+
+
+[charaScale I 1.0]
+[charaScale J 1.0]
+[charaRollMove I 0 0]
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[se ad20]
+[bgmStop BGM_EVENT_3 1.0]
+[wt 2.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠マシュ
+敵性反応、消滅です！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠フォウ
+フォウフォウ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠紫式部
+まさか、呪本が[#化生:けしょう]になっていようとは[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[se ad39]
+[charaPut I 1]
+[charaEffect I bit_talk_warp]
+[wt 3.5]
+[seStop ad39 0.4]
+
+？1：呪本がまた空中に……！
+
+？！
+
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠紫式部
+ご安心ください。[r]もう、襲ってくることはありません。
+[k]
+
+[charaFace A 2]
+＠紫式部
+呪本、回収いたします！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[se adm20]
+[charaPut I 1]
+[charaEffectStop I bit_talk_warp]
+[fowardEffect bit_talk_22]
+[wt 1.5]
+[seStop adm20 1.0]
+[wt 2.5]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠フォウ
+フォウ、フォウ～。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠マシュ
+呪本回収……[r]ではもしかして、これで事件は解決ですか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠紫式部
+いいえ、残念ながら。[r]これは[line 3]
+[k]
+
+[messageOff]
+[charaFace A 4]
+[wt 0.1]
+[fowardEffect bit_talk_pentagram_03]
+[wt 0.1]
+[se ad598]
+[wt 3.4]
+
+[se ade251]
+[fowardEffectStop bit_talk_pentagram_03]
+[wt 2.2]
+
+[charaFace A 0]
+＠紫式部
+……解析終了。
+[k]
+
+＠紫式部
+これは、チョコレート作成用リソースを奪った[r]『最初の呪本』から、魔力を分け与えられた一冊です。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠マシュ
+魔力を得た呪本は[#呪本を増やす]んですね。[r]では、このまま放っておくと図書館中の本が[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠紫式部
+はい。そうなのです。[r]逆に、『最初の呪本』さえ回収できれば……
+[k]
+
+[charaFace A 5]
+＠紫式部
+もしも呪本が増加していたとしても、[r]一度の回収儀式ですべて無効化できるはずです！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠フォウ
+フォーウ、フォウ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠紫式部
+ひとまず、図書館の蔵書にはすべて封印を施しました！[r]呪本化する可能性があるのは、貸し出し中の本のみ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠セミラミス
+ならば呪本とやらの捜索そのものは[r]そう難しくもなかろう。
+[k]
+
+＠セミラミス
+速やかにそうするがよい。[r][%1]。
+[k]
+
+？1：はいはい
+
+[charaFace D 7]
+＠セミラミス
+返事は一度でよい。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+？2：ところで、あのチョコ竜牙兵は……
+
+[charaFace D 7]
+＠セミラミス
+先年と同じものであろうな？[r]あれも、呪本とやらが作り出したのだろう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠紫式部
+…………はい。申し訳ございません。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠セミラミス
+[line 3]紫式部とやら。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠紫式部
+は、はいっ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠セミラミス
+高貴の出だそうだな。[r]ならば、そう容易く頭を下げるものではなかろうよ。
+[k]
+
+[charaFace D 3]
+＠セミラミス
+……ふん。
+[k]
+
+[messageOff]
+[se ad1]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠紫式部
+！
+[k]
+
+＠紫式部
+は、はい。[r]すみませ[line 3][wt 0.7][charaFace A 1]いえ、ありがとうございます。
+[k]
+
+[charaFace A 0]
+？！
+
+＠紫式部
+……。[r]……。
+[k]
+
+[messageOff]
+[charaFace A 7]
+[wt 1.2]
+
+[charaFace A 0]
+＠紫式部
+[%1]様。[r]先ほどは誠にありがとうございました。
+[k]
+
+＠紫式部
+あれが、サーヴァントの戦いというものなのですね。
+[k]
+
+＠紫式部
+我が身の未熟を思い知りました。[r]やはり私は、[#晴明:せいめい]様の不肖の弟子……
+[k]
+
+[messageOff]
+[charaFace A 5]
+[wt 1.0]
+
+[charaFace A 2]
+＠紫式部
+ですがそれでも！[r]自身の不始末は、自身で[#拭:ぬぐ]わなければなりません！
+[k]
+
+？1：力を貸すよ、紫式部さん
+
+？！
+
+[messageOff]
+[charaFace A 3]
+[wt 1.0]
+
+[charaFace A 4]
+＠紫式部
+ありがとうございます。
+[k]
+
+＠紫式部
+紫式部、きっとこの御恩は忘れません。[r]カルデアの[%1]様。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se adm21]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaMoveReturn C 0,50 0.6]
+＠フォウ
+フォウ、フォーウ！　キャーウ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠マシュ
+ブックハント開始ですね、先輩！　紫式部さん！[r]なんだか、フォウさんもやる気充分です！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠紫式部
+はい！[r]司書は一時お休みということで！
+[k]
+
+[charaFace A 2]
+＠紫式部
+[line 3]ブックハント、はじめさせていただきます！
+[k]
+
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

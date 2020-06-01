@@ -1,0 +1,1283 @@
+
+＄03-00-05-22-2-1
+
+[soundStopAll]
+
+[charaSet A 2030002 1 ケイローン]
+[charaSet B 4029001 1 アキレウス]
+[charaSet C 1098182700 1 アトランティス防衛兵]
+[charaSet D 1098182700 1 アトランティス防衛兵]
+[charaSet E 1098184600 1 イアソン]
+[charaSet F 8001410 1 マシュ]
+[charaSet G 4039002 1 マンドリカルド]
+[charaSet H 6029001 1 望月千代女]
+[charaSet I 5009000 1 エフェクト用ダミー]
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 85400]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠ケイローン
+……！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠アキレウス
+チッ……！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[cueSe Battle bac15]
+[effect bit_talk_arrow_front_y -300,0 H]
+[wt 0.4]
+[se ad32]
+[flashin once 0.1 0.1 F7AD2EFF F7AD2E80]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0 1]
+[charaShake B 0.02 3 3 0.6]
+[wt 1.2]
+
+？1：た、助かる……！
+？！
+
+[charaFace B 2]
+＠アキレウス
+喋るな、舌噛むぞ！
+[k]
+
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaDepth B 6]
+[charaDepth B 5]
+[charaDepth B 4]
+
+[se ad166]
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein C 0.4 2]
+[charaFadein D 0.4 0]
+[wt 0.4]
+[seStop ad166 0.4]
+[wt 0.8]
+
+
+？1：後ろ！？
+？！
+
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠アキレウス
+……ッ！
+[k]
+
+
+[messageOff]
+[charaTalk off]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[wt 0.1]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+[cueSe Battle bac13]
+[effect bit_bolg_01y 256,0]
+[wt 0.1]
+[charaShake C 0.03 4 4 0.5]
+[wt 0.3]
+
+
+[cueSe Battle bac14]
+[fowardEffect bit_bolg_02y -256,0]
+[wt 0.1]
+[charaShake D 0.03 4 4 0.5]
+[wt 0.7]
+
+[charaMove C 256,-50 0.4]
+[charaFadeout C 0.4]
+[wt 0.4]
+[se ad144]
+[charaMove D -256,-50 0.4]
+[charaFadeout D 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+
+[effectStop bit_bolg_01y 256,0]
+[fowardEffectStop bit_bolg_02y -256,0]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠アキレウス
+くそ、挟撃……！
+[k]
+
+[messageOff]
+[wt 0.1]
+[se ad872]
+[seVolume ad872 0 0.6]
+
+[wt 0.1]
+[effect bit_talk_arrow_front_y -350,100 H]
+[wt 0.2]
+[effect bit_talk_14]
+[wt 0.1]
+
+[seStop ad872 0.1]
+[cueSe Battle bac16]
+[flashin once 0.1 0.1 F7AD2EFF F7AD2E80]
+[wt 0.1]
+[effectDestroy bit_talk_arrow_front_y -350,100 H]
+[effectDestroy bit_talk_14]
+
+
+[charaFace B 5]
+[charaShake B 0.03 4 4 0.6]
+[wt 1.0]
+
+
+＠アキレウス
+ぐっ……！
+[k]
+
+
+？1：アキレウス！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ケイローン
+やはり[#踵:かかと]を射貫いておいて、[r]正解でしたか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+＠イアソン
+おまえが……！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠アキレウス
+ああ、[#問答無用:もんどうむよう]の奇襲でな。[r]こちらの動きが完全に読まれていた。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠ケイローン
+汎人類史のケイローンから必要な[r]戦闘データは抜き取っていましたので。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠アキレウス
+そうか……これで謎が解けた。[r]貴様……[#先生を殺したな]。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ケイローン
+[line 3]はい。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠アキレウス
+……ッ！
+[k]
+
+？1：アキレウス！
+？！
+
+[charaFace B 5]
+＠アキレウス
+……ああ、わかってる。[r]わかってるさ。
+[k]
+
+＠アキレウス
+ありゃ挑発だ。[r]あと一歩踏み込めば罠が発動。
+[k]
+
+＠アキレウス
+アイツの読み通りになる。[r]……マスター、改めて命令を。
+[k]
+
+？1：全員退却[&だ:]！
+？！
+
+
+
+[charaSet D 98115300 1 ホームズ]
+[charaSet F 8001400 1 マシュ]
+
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠マシュ
+……了解です！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠イアソン
+マンドリカルド、千代女！[r]おまえたちが[#殿:しんがり]を務めろ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk off]
+[charaFace G 2]
+[charaFace H 2]
+[charaFadein G 0.1 2]
+[charaFadein H 0.1 0]
+＠二人
+了解！
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠ホームズ
+出発の準備はできている、[r]浜辺まで急いでくれ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠マンドリカルド
+！
+[k]
+
+[messageOff]
+[se adm15]
+[effect bit_talk_v_slash01]
+[charaMoveScale G 1.1 0.2]
+[wt 0.2]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad32]
+[wt 0.5]
+[charaScale G 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ケイローン
+木刀一振りとは。[r]なかなかの蛮勇ですね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠マンドリカルド
+……くっ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+＠望月千代女
+[#呪:しゅ]にして神の一柱、[r]伊吹大明神の名にし負う！
+[k]
+
+[charaFace H 5]
+＠望月千代女
+せい！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+
+[se ad867]
+[wt 0.4]
+[se ad868]
+[effect bit_talk_liquid_attack]
+[wt 0.2]
+[se ad871]
+[wt 0.6]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ケイローン
+ほう、ナノマシンを操りますか。[r]しかし[line 3]
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[effect bit_talk_h_slash01 0,0 H]
+[wt 0.4]
+
+
+[cueSe Battle bac121]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF50]
+[wt 1.2]
+
+[cueSe Battle bac15]
+
+[effect bit_talk_14]
+[wt 0.4]
+
+
+[flashin once 0.1 0.1 F7AD2EFF F7AD2E80]
+[wt 0.1]
+
+[se ad240]
+[fowardEffect bit_talk_35]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0 1]
+[charaShake H 0.02 3 3 0.8]
+[charaFadeout A 0]
+[wt 1.2]
+
+
+＠望月千代女
+ぐっ！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠ケイローン
+ヘファイストス・クリロノミアでは[r]主神たるゼウス・クリロノミアには勝てません。
+[k]
+
+＠ケイローン
+所詮は[#鎚:つち]を叩くしか能の無い賊神。
+[k]
+
+[charaFace A 0]
+＠ケイローン
+せめてアテナ・クリロノミアであれば[r]拮抗もしたでしょうに。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠望月千代女
+……っ。[r]隠し球は通用せなんだでござったか……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠マンドリカルド
+だが時間は稼げたっすよ！[r]いくぞ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ケイローン
+さて、それでは最後に。
+[k]
+
+＠ケイローン
+オリュンポスの[#眷属:けんぞく]たる私に、[r][#あの結末:エ ピ ソ ー ド]は存在しない。
+[k]
+
+＠ケイローン
+しかし、幸運なことに汎人類史側である[r][#彼:わたし]を倒したことで[line 3]
+[k]
+
+＠ケイローン
+この宝具も開放されました。[r]では参りましょう。
+[k]
+
+[bgmStop BGM_EVENT_24 1.0]
+
+[charaFace A 5]
+＠ケイローン
+[#凶:まが]ツの[#蠍:さそり]よ、[#粛清:しゅくせい]は既に訪れた。[r]星と共に散るがいい。
+[k]
+
+[charaFace A 2]
+＠ケイローン
+[f large]『[#天蠍一射:ア ン タ レ ス ・ ス ナ イ プ]』[line 3]！
+[k]
+
+
+[messageOff]
+[wt 0.1]
+
+[se ad39]
+[charaEffect A bit_talk_36]
+[wt 2.0]
+
+
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaPut A 1200,1200]
+[charaEffectStop A bit_talk_36]
+[scene 10000]
+[wt 0.5]
+
+[se ad837]
+[fowardEffect bit_talk_rarrow01or]
+
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+[wt 0.6]
+
+
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[seStop ad837 0.4]
+[wait wipe]
+
+[fowardEffectStop bit_talk_rarrow01or]
+
+[scene 85400]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+[cameraFilter gray]
+[se ad231]
+[wt 2.0]
+
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[cameraFilter normal]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+
+＠マンドリカルド
+[f large]『[#不帯剣の誓い:セ  ル  マ  ン  ・  デ  ・  デ  ュ  ラ  ン  ダ  ル]』！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+
+[fadeout white 0.4]
+[wait fade]
+
+[charaFadeout G 0.1]
+
+[scene 10000]
+[wt 0.4]
+
+[fadein white 0.4]
+[wait fade]
+
+[se ad837]
+[wt 0.2]
+[fowardEffect bit_talk_rarrow01or]
+[wt 1.3]
+
+[fadeout white 0.1]
+[seStop ad837 0.1]
+[se ad170]
+[se ad32]
+[wait fade]
+[wt 0.2]
+[se ad816]
+[wt 1.8]
+
+＠望月千代女
+が[messageShake 0.02 3 3 0.6]、ああああああああああ！
+[k]
+
+
+＠マンドリカルド
+ぐっ、う……！
+[k]
+
+
+[messageOff]
+
+[charaSet G 1098184700 1 マンドリカルド（木刀壊れ）]
+
+[scene 85400]
+[wt 1.0]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠ケイローン
+仕留めました。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠マンドリカルド
+ぐっ……！
+[k]
+
+
+[messageOff]
+[wt 0.1]
+
+[se ad7]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect G erasureReverse 1 0.4]
+[wt 0.8]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠ケイローン
+おや？[r]……仕留めたつもりでしたが。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.4 1]
+[wt 0.4]
+＠望月千代女
+……ぐ、が……！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠ケイローン
+ああ、なるほど。
+[k]
+
+[charaFace A 0]
+＠ケイローン
+彼の宝具がガードしましたか。[r]しかし、その有様ではもう戦えませんね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 1.0]
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠マンドリカルド
+……それはどうかな？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠ケイローン
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠マンドリカルド
+宝具[line 3]
+[k]
+
+[charaFace G 2]
+＠マンドリカルド
+[f large]『[#不帯剣の誓い:セ  ル  マ  ン  ・  デ  ・  デ  ュ  ラ  ン  ダ  ル]』！
+[k]
+
+
+[messageOff]
+[wt 0.1]
+
+[se ad39]
+[charaEffect G bit_talk_36]
+[wt 2.0]
+
+[bgm BGM_EVENT_63 0.1]
+
+[seStop ad39 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_36]
+
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠ケイローン
+！！
+[k]
+
+[messageOff]
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[se ad609]
+[se ad226]
+[wt 3.0]
+
+
+[fadein white 1.0]
+[wait fade]
+
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠マンドリカルド
+……退却するぞ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_63 0.5]
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠望月千代女
+……すまぬ、無理だ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠マンドリカルド
+なに言ってる……！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+＠望月千代女
+拙者のことはいいから、[r]撤退しろ！！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠マンドリカルド
+ぐっ……！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+＠望月千代女
+[#拙者が助かる道はある]！[r]行け！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠マンドリカルド
+了解……！
+[k]
+
+
+[messageOff]
+[se ad443]
+[fadeout black 1.0]
+[wait fade]
+
+[seStop ad443 1.0]
+[charaFadeout G 0.1]
+
+[pictureFrame cut063_cinema]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠ケイローン
+……なるほど。
+[k]
+
+＠ケイローン
+武器の有無が宝具と結びつかない[r]英雄もいる訳ですか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠アトランティス防衛兵
+追跡を[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 0,-50]
+＠ケイローン
+その必要はありません。
+[k]
+
+[charaFace A 0]
+
+＠ケイローン
+マンドリカルド、とかいう英雄は無事でしたが、[r]もう一方は仕留めました。
+[k]
+
+＠ケイローン
+今すぐ戦闘可能になるほどの修復は[r]ヘファイストス・クリロノミアでも不可能でしょう。
+[k]
+
+＠ケイローン
+では……。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 20800]
+
+[pictureFrame]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠マンドリカルド
+……畜生……！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+
+[scene 85400]
+
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 0,-50]
+＠望月千代女
+……は、あ……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠ケイローン
+本来なら仕留めるところですが。[r]彼女は連れて行きましょう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠アトランティス防衛兵
+というと？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠ケイローン
+“エキドナ”の魔力が枯渇しかけていたのです。[r]彼女には餌になってもらいます。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 0,-50]
+＠望月千代女
+え、さ……だ、と……？
+[k]
+
+[charaFace H 2]
+＠望月千代女
+ふ……ふはははは！[r]餌になるくらいなら、[#誇り高い死を選ぼう]！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 0,-50]
+＠ケイローン
+おっと！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[cueSe Battle bac12]
+[effect bit_talk_14]
+[wt 0.4]
+
+[cueSe Battle bac11]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0 0,-50]
+[charaFadeout A 0]
+[charaShake H 0.02 3 3 0.6]
+[wt 1.0]
+
+＠望月千代女
+ぐっ……。
+[k]
+
+[messageOff]
+[charaMove H 0,-100 0.4]
+[charaFadeout H 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.2]
+
+
+
+[charaSet E 1098181820 1 オデュッセウス]
+
+
+
+＠望月千代女
+……。[r]……。
+[k]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠ケイローン
+……連れて行きなさい。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠アトランティス防衛兵
+はっ！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 1.0]
+[se ad166]
+[wt 0.1]
+[charaMove C 50,-50 0.4]
+[charaFadeout C 0.4]
+[wt 0.4]
+[seStop ad166 0.4]
+[wt 1.4]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+＠ケイローン
+申し訳ありません、オデュッセウス。[r]アテナ・クリロノミアは手に入りませんでした。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+
+[se ad1]
+[charaPut J 0,-50]
+[charaEffect J bit_talk_magic_com]
+[wt 0.5]
+[charaTalk E]
+[charaFace E 0]
+[charaPut E 0,-50]
+[charaFadeTime E 1.0 0.8]
+[wt 1.5]
+
+[bgm BGM_EVENT_90 0.1]
+
+＠オデュッセウス
+構わない。[r][#既に一騎分は手に入った]。
+[k]
+
+＠オデュッセウス
+これでオリュンポスも満足するだろう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠ケイローン
+しかし、[&彼:彼女]らがアテナ・クリロノミアを使えば、[r]我々に不利では？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 0,-50]
+[charaTalk E]
+[charaFace E 0]
+[charaPut E 0,-50]
+[charaFadeTime E 0.1 0.8]
+＠オデュッセウス
+アルテミス様の手で破壊された、[r]ヘファイストスの映像記録が断片的に復元できた。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠ケイローン
+彼は[#塵:ちり]一つ残らなかったはずですが……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 0,-50]
+[charaTalk E]
+[charaFace E 0]
+[charaPut E 0,-50]
+[charaFadeTime E 0.1 0.8]
+＠オデュッセウス
+最後の最後、アルテミス様とヘファイストスの間で[r]通信信号が交わされた。
+[k]
+
+＠オデュッセウス
+その隙に映像記録をわずかだが入手できた。[r]記録を信じるなら[line 3]
+[k]
+
+＠オデュッセウス
+取るに足らない英霊を一騎救うために、[r][#戦女神:ア テ ナ]の遺産は利用されるようだ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠ケイローン
+ほう、取るに足らないと。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 0,-50]
+[charaTalk E]
+[charaFace E 0]
+[charaPut E 0,-50]
+[charaFadeTime E 0.1 0.8]
+＠オデュッセウス
+オリオンのような英雄に使われていれば、[r]多少の不利は否めなかったが……。
+[k]
+
+＠オデュッセウス
+シャルロット・コルデーであれば、[r]どうとでもなる。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠ケイローン
+わかりました。[r]それでは、一度帰還します。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 0,-50]
+[charaTalk E]
+[charaFace E 0]
+[charaPut E 0,-50]
+[charaFadeTime E 0.1 0.8]
+＠オデュッセウス
+ああ。
+[k]
+
+＠オデュッセウス
+カルデアは万全の準備を整えてくるだろう。[r]だが、それだけだ。
+[k]
+
+＠オデュッセウス
+意外性もなく、偶然や幸運もない。[r]徹底的に叩き潰す。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠ケイローン
+了解です。[r]では、勝利の報酬を持ち帰ります。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 0,-50]
+[charaTalk E]
+[charaFace E 0]
+[charaPut E 0,-50]
+[charaFadeTime E 0.1 0.8]
+＠オデュッセウス
+ああ。
+[k]
+
+＠オデュッセウス
+あとサーヴァント一騎分の魔力があれば、[r]“エキドナ”でケルベロスが生産できる。
+[k]
+
+＠オデュッセウス
+頼むぞ、我が盟友。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 0,-50]
+＠ケイローン
+無論です、我が盟友。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaPut J 0,-50]
+[charaTalk E]
+[charaFace E 0]
+[charaPut E 0,-50]
+[charaFadeTime E 0.1 0.8]
+[wt 1.0]
+
+[se ad1]
+[charaFadeout E 0.4]
+[charaEffectStop J bit_talk_magic_com]
+[wt 1.5]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_90 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,113 @@
+
+＄91-60-26-01-1-1
+
+[soundStopAll]
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 6002001 1 呪腕のハサン]
+[charaSet C 5016001 1 ジェロニモ]
+[charaSet D 98109000 1 燕青（？）]
+[charaSet E 98111500 1 通信用ノイズ]
+
+[charaPut E 1200,1200]
+[charaEffect E bit_talk_10_LowLevel]
+
+[scene 38300]
+[charaTalk D]
+[charaFace D 0]
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_EVENT_3 0.1]
+
+[charaFadein D 0.1 1]
+＠燕青（？）
+悪いな、まだダメなんだ。[r]あばよ！
+[k]
+
+[messageOff]
+[se ade153]
+[charaEffect D bit_talk_40]
+[wt 1.5]
+[charaFadeout D 0.7]
+[wt 1.5]
+[charaEffectStop D bit_talk_40]
+[wt 1.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wt 1.5]
+
+[bgm BGM_EVENT_5 0.1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠ジェロニモ
+煙幕……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠呪腕のハサン
+戦いながら、誰かから盗み取ったようですな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut E 1]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠マシュ
+ど、どうしましょう。
+[k]
+
+[charaFace A 12]
+＠マシュ
+やることがある、[r]と仰っていましたが……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠呪腕のハサン
+……無論、駄目ですな。[r][%1]殿、追いかけましょう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ジェロニモ
+おや。[r]呪腕のは燕青がやるべき事をご存知なのかな？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠呪腕のハサン
+ええ、我が身に関わること故に。
+[k]
+
+＠呪腕のハサン
+では、参りましょうか。[r]行き先は不明ですが、なに。
+[k]
+
+＠呪腕のハサン
+であれば、しらみ潰しに捜すまでのこと。[r]我ら[#山の翁:ハ　サ　ン]にとっては常とも言える仕事です。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_5 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

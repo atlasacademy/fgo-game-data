@@ -1,0 +1,252 @@
+
+＄03-00-04-14-4-1
+
+
+[soundStopAll]
+
+[charaSet A 8001400 1 マシュ]
+[charaSet B 1098127610 1 ペペロンチーノ]
+[charaSet C 1019001 1 ラーマ]
+[charaSet D 98115300 1 ホームズ]
+[charaSet E 2034000 1 テル]
+[charaSet F 23003001 1 ガネーシャ]
+[charaSet G 1039001 1 ラクシュミー]
+[charaSet H 1098167400 1 男]
+
+[charaSet J 98115000 1 エフェクト用]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_80 0.1]
+[wt 0.1]
+
+[scene 75007]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠ガネーシャ
+攻撃が当たらねっスー！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠ペペロンチーノ
+ああもう、捉えられそうで捉えられないわね！[r]距離の取り方がバツグンだわ！？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+[se ade8]
+[seVolume ade8 0 0.6]
+[effect bit_talk_rarrow01or]
+[wt 1.0]
+
+[wt 0.1]
+
+[se ad170]
+[se ad686]
+[fowardEffect bit_talk_14]
+
+[charaShake A 0.05 3 2 0.8]
+[wt 1.0]
+
+[charaFace A 15]
+
+＠マシュ
+っ、そして、軌道の読めない矢……！[r]防ぐのが精一杯です！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠ラクシュミー
+風神の力で自在に軌道を操っているのだろう。[r]出所も容易には読めぬ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠ラーマ
+まさに追い詰められた獲物という感じではあるな。[r]だがこのまま仕留められるわけにはいかん。
+[k]
+
+＠ラーマ
+……一応聞くが、以前のような事は？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠ラクシュミー
+厳しいだろう。あのときとは状況が違う。
+[k]
+
+＠ラクシュミー
+（今は……女神の神核をどれだけ稼働させても、[r]　可能性を逆集束させられる状況ではない[line 3]）
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ラーマ
+そうか。よくわからんが安心したぞ。
+[k]
+
+＠ラーマ
+少なくとも、今回はおまえ一人が傷つく様を[r]ただ眺めているしかないような、
+[k]
+
+＠ラーマ
+自分に腹が立つほど英雄らしからぬ策を[r]取る必要はないという事だな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+
+＠ラクシュミー
+貴殿という男は……。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad443]
+[wt 0.6]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.3]
+[seStop ad443 0.1]
+[wt 0.1]
+[se bac56]
+
+＠男
+ラクシュミー様！　助太刀を！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠ラクシュミー
+待て、この男には無駄だ！[r]神秘の込められた攻撃でなくば[line 3]
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+[se bac19]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[fowardEffect bit_shot_01 60,0]
+[charaMove E -120,0 0.3]
+[se ad7]
+[wt 0.4]
+[se bac56]
+[wt 0.4]
+[fowardEffectStop bit_shot_01 60,0]
+
+[cueSe Servants_203000 bac724]
+[fowardEffect bit_talk_37 0,0 V]
+[wt 0.4]
+[se bac403]
+
+＠男
+ぎ[messageShake 0.05 2 2 0.3]ゃっ……
+[k]
+
+[charaFace E 4]
+
+＠テル
+っと、すまんな、民を傷つけろという[#命:めい]は[r]受けていないが……
+[k]
+
+＠テル
+矢を射かけられては[r]つい身体も動いちまうってもんだ。
+[k]
+
+[charaFace E 1]
+＠テル
+うん、それも即席にしては[r]なかなかいいクロスボウだがね？
+[k]
+
+＠テル
+狩人に向けて撃っちゃあいけないよ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠ラーマ
+ええい。なんとか突破口を見つけねば……！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

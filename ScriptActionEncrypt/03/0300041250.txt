@@ -1,0 +1,851 @@
+
+
+＄03-00-04-12-5-0
+
+
+[soundStopAll]
+
+[charaSet A 1098123210 1 ゴルドルフ]
+[charaSet B 1098124510 1 ダ・ヴィンチ]
+[charaSet C 98115300 1 ホームズ]
+[charaSet D 1098127610 1 ペペロンチーノ]
+[charaSet E 1098176100 1 アスクレピオス]
+[charaSet F 1098167800 1 ？？？]
+[charaSet G 1098124310 1 デイビット]
+[charaSet H 98006100 1 エネミー１]
+[charaSet I 98006100 1 エネミー２]
+[charaSet J 98115000 1 エフェクト用]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[scene 75500]
+
+[bgm BGM_EVENT_79 0.1]
+
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.1 1]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.5]
+
+
+？1：デイビット……？
+？2：クリプター……？
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠ゴルドルフ
+デ、デイビット・ゼム・ヴォイド！　クリプターの中でも[r]随一の実力を持つと言われている男ではないか！
+[k]
+
+＠ゴルドルフ
+ヤツも別の[#異聞帯:ロストベルト]を育てているはずでは……！？[r]そ、それに！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+あれは……サーヴァントか？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 2.5]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 21]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+……！
+[k]
+
+＠ダ・ヴィンチ
+（瘴気が濃すぎて実体が観測できない！[r]　かろうじて輪郭だけなら規模が判る、んだけど[line 3]）
+[k]
+
+＠ダ・ヴィンチ
+（……間違いない。アレは、[#冠位:グランド]だ。[r]　あの男は、冠位のサーヴァントと契約している……！）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠アスクレピオス
+何だ。おまえ、それは……何だ！
+[k]
+
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth E 1]
+[charaDepth H 2]
+[charaDepth I 3]
+
+[se ad575]
+[wt 0.6]
+[charaPut H -286,0]
+[charaSpecialEffect H appearance 1 1.0]
+[wt 0.1]
+[seStop ad575 0.5]
+[se ad463]
+[charaPut I 286,0]
+[charaSpecialEffect I appearance 1 1.0]
+[wait charaSpecialEffect I]
+[wt 1.2]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.3]
+
+[se ad715]
+[effect bit_talk_v_slash02]
+[wt 0.1]
+[charaMoveScale F 1.1 0.1]
+[charaMove F 0,10 0.2]
+[wt 0.1]
+[charaFadeout F 0.2]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace H 0]
+[charaFadein H 0.1 0]
+
+[charaFace I 0]
+[charaFadein I 0.1 2]
+
+[charaShake H 0.05 3 2 0.8]
+[charaShake I 0.05 3 2 0.8]
+
+[wt 1.0]
+
+[se ad42]
+[charaEffect H bit_talk_atomization]
+[charaEffect I bit_talk_atomization]
+[wt 0.5]
+[charaFadeout H 0.7]
+[charaFadeout I 0.7]
+
+[charaScale F 1.0]
+
+[wt 2.5]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠アスクレピオス
+っ…………！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠？？？
+ヤマ……[#夜摩天:やまてん]ねぇ。[r]死者を裁く、なんて思想は何の冗談だ？
+[k]
+
+＠？？？
+死は喰うもの。生は捧げられるもの。[r]死者に自由を許すなど、オレの世界にはない[#無法:もの]だ。
+[k]
+
+＠？？？
+よって平らげた。[r]しかし不味い。ろくなモノを喰っていない証拠だよ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.1 1]
+
+＠デイビット
+あまり前に出るな。ここはおまえの土地じゃない。[r]旅先の生水は飲むなと言われなかったか？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠？？？
+そりゃあごもっとも。自重しよう。[r]美食が目的でもなし、な。
+[k]
+
+[messageOff]
+[charaSpecialEffect F erasureReverse 1 1.0]
+[se ad595]
+[seVolume ad595 0 0.6]
+[charaEffectStop F bit_talk_40_black]
+[wait charaSpecialEffect F]
+[seStop ad677 0.4]
+[wt 1.4]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+[wt 1.5]
+
+
+[charaSet H 8001410 1 マシュ]
+[charaSet I 1098123350 1 コヤンスカヤ]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_79 1.5]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠マシュ
+デイビットさん……！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+
+＠デイビット
+…………。
+[k]
+
+？1：（こっちの方は全然見ない……）
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠ペペロンチーノ
+ど、どうして？　どうしているのよ？[r]びっくりしちゃうじゃない、ていうかホラ！
+[k]
+
+＠ペペロンチーノ
+心の準備っていうか髪型とかも決まってないだろうし！[r]ヤダわ、本当ヤダわちょっと待って！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0]
+
+[charaFace D 3]
+[charaFadein D 0.1 2]
+
+＠デイビット
+待ったほうがよかったか？[r]窮地と見て助けたが。
+[k]
+
+＠ペペロンチーノ
+い、いやいや、それはホント助かったんだけど！[r]ありがと！
+[k]
+
+[charaFace D 0]
+
+＠ペペロンチーノ
+ていうかホントにどうしてインドに！？
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠デイビット
+会議の時のおまえの言動だ。
+[k]
+
+＠デイビット
+[#順風満帆:じゅんぷうまんぱん]か[#波瀾万丈:はらんばんじょう]か。どうあれ、自分の持ち場の状態を[r]話さなかった事が気にかかってな。
+[k]
+
+＠デイビット
+互いの[#異聞帯:ロストベルト]には不干渉という条約だが、[r]個人的な接触までは禁じられていない。
+[k]
+
+[charaFace G 6]
+
+＠デイビット
+理屈じゃない。感覚の話だ。[r]お友達感覚、というヤツだが……迷惑だったか？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠ペペロンチーノ
+いやいやいや。[#異聞帯:ロストベルト]よ？[r]そう簡単には移動できないはずでしょ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠デイビット
+オレたちにはな。だが、その手の運搬屋に連絡がつくのが[r]オレたちの強みだろう。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad7]
+[charaTalk I]
+[charaFace I 9]
+[charaFadein I 0.2 0,-25]
+[charaMove I 1 0.3]
+[wt 0.4]
+
+＠コヤンスカヤ
+ハーイ。誘拐、暗殺、国家転覆……[r]全てのお困り事はこの[#私:わたくし]、ＮＦＦサービスにご用命を！
+[k]
+
+[charaFace I 17]
+
+＠コヤンスカヤ
+いやまあいきなりの通信だったしこっちはこっちで[r]忙しかったしで、できれば無視したかったんですけどぉ。
+[k]
+
+＠コヤンスカヤ
+デイビットさんは、ほら、ちょっとアレな方でしょう？[r]『異星の神』抜きで、すこ～し貸しを作っておこうかなと。
+[k]
+
+？1：コヤンスカヤ……！
+？！
+
+[charaFace I 0]
+
+＠コヤンスカヤ
+意外に早い再会でしたねぇ。勿論コヤンスカヤちゃんは[r]インドでも人間いじめを頑張っていますよ？
+[k]
+
+＠コヤンスカヤ
+ただまぁ事情もありまして[line 3][r]さすがに[#アルジュナ:彼]がもう少し離れるまでは、
+[k]
+
+＠コヤンスカヤ
+この場で自由勝手好き放題して[r]注意を惹きたくはないと思うところ。
+[k]
+
+[charaFace I 9]
+
+＠コヤンスカヤ
+しばらくは修学旅行生を見守るバスの添乗員のように[r]黙っていますのでお気になさらず～。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠デイビット
+……とまあ、この女の能力の精度を見る為でもある。[r]高く付いたが、おまえは気にするな。
+[k]
+
+[charaFace G 7]
+
+＠デイビット
+だがどうした。契約したサーヴァントはおらず、[r]倒すべき敵と肩を並べて戦っている。
+[k]
+
+＠デイビット
+認識するに足る、意義のある数分だが[line 3][r]経緯は想像しづらいな。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+[wt 1.0]
+[charaFace D 7]
+[wt 0.4]
+
+＠ペペロンチーノ
+このインドの[#異聞帯:ロストベルト]の楔となっている神[line 3][r]そのやり方に賛同できないからよ。
+[k]
+
+＠ペペロンチーノ
+『異星の神』の[#使徒:アルターエゴ]が手を出しての事だから、[r]キリシュタリアの前では批判できなかったけど。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0]
+
+[charaFace D 0]
+[charaFadein D 0.1 2]
+
+＠デイビット
+なぜ賛同できない？[r]在り方は特殊ながら、理論的綻びはないようだが。
+[k]
+
+[charaFace D 7]
+
+＠ペペロンチーノ
+そうね……趣味の話よ、きっと。[r]生き方、美学、信条……そんなものかしら？
+[k]
+
+＠ペペロンチーノ
+言い換えれば、私が私だから、かもね。
+[k]
+
+[charaFace G 1]
+
+＠デイビット
+であれば、何の問題もないな。[r]クリプターを裏切っている訳でもない。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ペペロンチーノ
+トーゼンよ。私はみんなを見捨てたりはしないわ。
+[k]
+
+[charaFace D 9]
+
+＠ペペロンチーノ
+この子たちも、だけどね。こうなっちゃったら、[r]ケリがつくまで面倒を見るつもりよ。
+[k]
+
+＠ペペロンチーノ
+いいでしょ、それで？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠デイビット
+そうか。[r]実際、面倒見のいい男だよ、[#妙漣寺:みょうれんじ]。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+[charaShake D 0.05 3 3 1.0]
+
+＠ペペロンチーノ
+キャアアアア！？
+[k]
+
+？1：みょーれんじ？
+？2：ワンモア？
+？！
+
+[charaSet H 1098124310 1 重ね用デイビット]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠デイビット
+神を倒せるか？[bgm BGM_EVENT_71 0.1]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ペペロンチーノ
+ああもう、何事もなかったみたいに……
+[k]
+
+＠ペペロンチーノ
+ええ、ええ。頑張るけど、けっこう厳しいってのが本音ね。[r]ここの神であるカレはほぼ完璧な存在だもの。
+[k]
+
+[charaFace D 3]
+
+＠ペペロンチーノ
+……アドバイスとか貰えると、私、[r]相当ハッスルしちゃうかも？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+
+＠デイビット
+完璧な神が相手か。[r]……ふむ。
+[k]
+
+[charaFace G 0]
+
+＠デイビット
+助言はできない。神は神であるほど強い。[r][#完成した神とは戦うだけ無駄]だ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠ペペロンチーノ
+……それはもう充分に分かってるけどぉ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠デイビット
+戦い方を変えるべきだ。
+[k]
+
+＠デイビット
+何も無いものから引く事はできないが、[r]満ち足りたものであれば、必ず、引けるものがある。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ペペロンチーノ
+…………！
+[k]
+
+＠ペペロンチーノ
+足を[line 3]引っ張れってコトね……？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth G 1]
+[charaDepth H 2]
+
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.8]
+[charaFace H 1]
+[charaFadein H 0.2 1]
+[wt 1.0]
+[charaFadeout H 0.2]
+[wt 0.4]
+[charaTalk on]
+
+＠デイビット
+時間だ。再会を祝う余裕はなかったな。[r]この件、ヴォーダイムには黙っていてくれ。
+[k]
+
+＠デイビット
+条約違反ではないとはいえ、[r]褒められたものじゃないからな。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠コヤンスカヤ
+あ、お帰り[#便:びん]ですか？　ご利用どうもー。
+[k]
+
+[charaFace I 0]
+
+＠コヤンスカヤ
+それじゃあ皆様、ひとまず失礼。[r][#私:わたくし]はまたすぐ帰ってきますけどね。
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 1]
+[wt 0.8]
+[charaFace G 0]
+[wt 0.4]
+
+＠デイビット
+…………。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_71 1.5]
+
+[charaTalk off]
+
+[charaFace G 0]
+[charaFadein G 0.1 0]
+
+[charaFace I 0]
+[charaFadein I 0.1 2]
+
+[wt 0.8]
+
+[se adm20]
+
+[charaEffect G bit_talk_17_bl]
+[charaEffect I bit_talk_17_bl]
+[wt 1.0]
+[charaEffectStop G bit_talk_17_bl]
+[charaEffectStop I bit_talk_17_bl]
+[wt 0.5]
+[charaSpecialEffect G erasureReverse 1 1.2]
+[charaSpecialEffect I erasureReverse 1 1.2]
+[wt 2.0]
+
+[charaTalk on]
+
+？1：（最後に一瞬だけ[line 3]こっちを見た……？）
+？！
+
+[charaSet B 1039001 1 ラクシュミー]
+[charaSet C 1019001 1 ラーマ]
+[charaSet F 23003001 1 ガネーシャ]
+[charaSet G 98002000 1 フォウ]
+[charaSet H 8001410 1 マシュ]
+
+[charaSet I 8001400 1 アーマード・マシュ_ゴーグルあり]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠ゴルドルフ
+ええい、クリプターが来たりあの女狐が来たりで[r]てんやわんやだが！　今大事なのは[line 3]
+[k]
+
+＠ゴルドルフ
+おまえたち！　動けるな！？[bgm BGM_EVENT_63 0.1]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ラーマ
+当然だ。あれだけ時間を稼いでもらえればな。[r]窮地は脱したようだぞ、マスター！
+[k]
+
+＠ラーマ
+アルジュナは去った！　死者たちの数は減った！[r]クリプターも消えた！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠ガネーシャ
+あとペペちんの本名らしきものも分かったっスね！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠フォウ
+フォーウフォウ？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠ペペロンチーノ
+な、何のコトかしらー？[r]ていうか忘れて、忘れなさい！
+[k]
+
+[charaFace D 0]
+
+＠ペペロンチーノ
+とにかく、そう、とにかくよ！
+[k]
+
+[charaFace D 8]
+
+＠ペペロンチーノ
+……んふ。私、元気出ちゃった。[r]思わぬ幸運ってのは気分がアガるものよね。
+[k]
+
+＠ペペロンチーノ
+さ、ここから反撃タイムで頑張っていきましょーう！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠ラクシュミー
+……は。幸運、か。
+[k]
+
+＠ラクシュミー
+さらなる不幸の先触れでなければよいが[line 3][wt 0.8][charaFace B 2][r]今は忘れておくしかないようだ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+
+＠マシュ
+[#霊基外骨骼:オ　ル　テ　ナ　ウ　ス]、負荷軽減シークエンスの実行に成功……[r]出力、再安定！
+[k]
+
+[messageOff]
+[wt 0.3]
+
+[charaTalk depthOff]
+[charaDepth H 1]
+[charaDepth I 2]
+
+[se ade57]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[charaTalk off]
+[charaFace I 7]
+[charaFadein I 0.3 1]
+[wt 0.5]
+[charaFadeout H 0.1]
+
+＠マシュ
+アスクレピオスには動揺が見えます！[r]マスター、今のうちに！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_63 0.5]
+[wait fade]
+[soundStopAll]
+[end]

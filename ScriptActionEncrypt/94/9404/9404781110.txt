@@ -1,0 +1,466 @@
+
+
+
+＄94-04-78-11-1-0
+
+
+[soundStopAll]
+
+[skip false]
+
+[maskout black 0]
+[wait mask]
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 3043000 1 エリセ]
+[charaSet C 2016000 1 エミヤ・オルタ]
+[charaSet D 9008001 1 アストライア]
+[charaSet E 5025001 1 エジソン]
+[charaSet F 1098192800 1 マリー]
+[charaSet G 25005000 1 ボイジャー]
+[charaSet H 98115000 1 エフェクト用]
+[charaSet I 98115000 1 エフェクト用2]
+[charaSet J 98115000 1 エフェクト用2]
+[imageSet K cut174_9th 1]
+[imageSet L cut174_9th 1]
+
+[scene 20730]
+
+[pictureFrameTop cut170_gameframe_bright]
+
+[skip true]
+
+[fadein black 0]
+[wait fade]
+[maskin black 1.5]
+[wait mask]
+
+[bgm BGM_EVENT_90 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+
+＠アストライア
+あら、あなた……ずいぶんと[#財宝:トークン]を貯め込んで、[r]ちょっと強欲過ぎませんこと？
+[k]
+
+[charaFace D 5]
+
+＠アストライア
+[#私:わたくし]の天秤で量らせていただきましょう。[r]良き戦いのための、適正な戦力を！
+[k]
+
+
+[messageOff]
+[charaEffect D bit_talk_36_bl]
+[se ad39]
+[wt 2.0]
+[charaFadeout D 0.1]
+[wt 0.1]
+[seStop ad39 0.2]
+[charaPut D 1200,1200]
+[charaEffectStop D bit_talk_36_bl]
+[wt 0.3]
+
+[charaPut H -250,0]
+[charaPut I 0,0]
+[charaPut J 250,0]
+
+[charaEffect H bit_talk_token_change02]
+[charaEffect I bit_talk_token_change02]
+[charaEffect J bit_talk_token_change02]
+
+[se adm19]
+[seVolume adm19 0 0.3]
+[seVolume adm19 1.0 1.0]
+[wt 1.5]
+
+[seStop adm19 1.7]
+[charaMove H -250,700 2.2]
+[charaMove I 0,700 2.2]
+[charaMove J 250,700 2.2]
+[wt 2.2]
+
+[charaEffectStop H bit_talk_token_change02]
+[charaEffectStop I bit_talk_token_change02]
+[charaEffectStop J bit_talk_token_change02]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 0,-50]
+
+＠マシュ
+トークンが！[r]アストライアさんの手元へ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠アストライア
+これで戦力的に[#互角:イーブン]となりました。[r][#名勝負:ベストバウト]のための準備は整いましたわ！
+[k]
+
+？1：これじゃ戦えないよ！
+
+？2：戦力が全然足りない[&んだ:んだってば]！
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠エリセ
+[#正義の女神:アストライア]の裁定に間違いはない。[r]これもまた、[#遊戯界:このせかい]のルールだ。
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠エミヤ・オルタ
+ルールと来たか。
+[k]
+
+[charaFace C 0]
+
+＠エミヤ・オルタ
+だが、それを決定する者がゲームに参加している以上、[r]ねじ曲げるのもそちらの自由だろう？
+[k]
+
+＠エミヤ・オルタ
+ゲームを成立させるためなら、[r]そうするべきだと思うがね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-50]
+
+＠エリセ
+嫌だ。私は認めないから。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠アストライア
+賛成ですわ。それこそが公平であり、正義です。[r]それと、念のため申し上げておきますが[line 3]
+[k]
+
+＠アストライア
+[%1]、あなたは、[r][#財宝:トークン]のほぼ全てを失ってなお[#互角:イーブン]である。
+[k]
+
+＠アストライア
+[#正義の女神:レディ・ジャスティス]の天秤に誓って、[r]その事実は強調しておきます。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-50]
+
+＠マシュ
+つまり……トークンなしでも、今のわたしたちなら[r]戦力は充分ということですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠アストライア
+ええ。厳正なる判断です。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0,-50]
+
+＠エジソン
+異議あり！　大ありである！[r]法廷闘争に持ち込むのも辞さんぞ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 0,-50]
+
+＠マリー
+それはそれで[#見物:みもの]だけど……、[r]裁判にはいい思い出がないわ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 20]
+[charaFadein B 0.1 0,-50]
+
+＠エリセ
+そう……ですね、王妃。失礼を致しました。[r]そちらの発明王の非常識とはいえ、お詫びします。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,-50]
+
+＠エジソン
+私は謝るつもりはないぞ！　[#闘志満々:とうしまんまん]だ！
+[k]
+
+？1：長引きそうだなあ
+
+？2：裁判と言っても、ここには弁護士がいないし
+
+？！
+
+[charaFace E 5]
+
+＠エジソン
+たとえ私ひとりで、生涯を費やそうとも！[r]戦い抜く覚悟は出来ている！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 0,-50]
+
+＠マリー
+ふゎあ～あ、ふぅ……。[r]退屈だから、お昼寝しててもいいかしら。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-50]
+
+＠エリセ
+すぐに終わらせます、王妃。[r]ぐずぐずしているヒマはないので。
+[k]
+
+＠エリセ
+切れるトークンがないなら戦えばいいんだ。[r][%1]、[&きみ:あなた]が[line 3]
+[k]
+
+？1：なるほどその手が
+？2：まさに奥の手、最後の切り札だ[&:ね]！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-50]
+
+＠マシュ
+せ、先輩……？　[wt 0.4][charaFace A 14]いえ、マスター！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_90 1.0]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 0,-50]
+
+＠ボイジャー
+ぼくが、たたかう。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 0,-50]
+
+＠エリセ
+え……ボイジャー……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-50]
+
+＠マシュ
+……あっ……そう、です。[wt 0.3][charaFace A 7]
+[k]
+
+＠マシュ
+ボイジャーさんは、先輩とわたしと、３人ひと組で、[bgm BGM_EVENT_63 0.1][r][#遊戯界:monde du jeu]のゲームを戦ってきました。
+[k]
+
+＠マシュ
+トークンが使えないなら、プレイヤーが戦う……。[r]ボイジャーさんなら[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠ボイジャー
+るーるどおりだよ。ぼくが、たたかってもいいはずだ。[r]そうだろう、エリセ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth G 1]
+[charaDepth B 2]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 -256,-50]
+[charaFace G 0]
+[charaFadein G 0.1 256,-50]
+
+＠エリセ
+本気なの？　でも、きみは[line 3]
+[k]
+
+＠ボイジャー
+[#ますたー]と、[#さあばんと]。[r]うんめいの、なかま。
+[k]
+
+[charaFace G 11]
+
+＠ボイジャー
+でも、いまは、[#げえむ]のあいてだ。
+[k]
+
+[charaFace G 5]
+
+＠ボイジャー
+エリセ。ぼくは、きみをたすけたいんだ。[r]だから、たたかうよ。
+[k]
+
+[charaFace B 19]
+
+＠エリセ
+……くっ……うう……。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-50]
+
+＠エリセ
+……女神よ！　輝ける審判の女神アストライアよ！[r]聞き分けのない彼に、どうか裁きを！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0,-50]
+
+＠アストライア
+ええ。[r][#攻め込みますわ:イ   ン   プ   グ   ノ   ー]！
+[k]
+
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.7]
+
+[charaDepth K 2]
+[charaDepth L 1]
+[charaScale L 1.4]
+
+[effect bit_talk_x_slash01]
+[se ad470]
+[seVolume ad470 0 0.9]
+[wt 0.1]
+[seStop ad470 0.2]
+[wt 0.1]
+
+[effect bit_talk_x_slash02]
+[se ad470]
+[seVolume ad470 0 0.9]
+[wt 0.2]
+[seStop ad470 0.3]
+[wt 0.3]
+
+[backEffect bit_talk_sparks]
+
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[se ad471]
+[charaFadein L 0.2 0,-270]
+[wt 0.1]
+
+[charaFadein K 0.2 0,-200]
+
+[charaMove L 0,-200 0.2]
+[charaMoveScale L 1.0 0.2]
+[wt 0.5]
+[effectStop bit_talk_fire]
+
+[wt 2.0]
+
+[maskout black 0.5]
+[seStop ad471 0.4]
+[bgmStop BGM_EVENT_63 0.4]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[soundStopAll]
+[end]
+
+
+

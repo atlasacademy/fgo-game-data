@@ -1,0 +1,310 @@
+
+
+＄03-00-00-04-1-1
+
+[soundStopAll]
+
+[charaSet A 1098125200 1 マシュ（疲れ）]
+[charaSet B 8001002 1 マシュ]
+[charaSet C 1098123000 1 カルデアスタッフ]
+[charaSet D 9005001 1 ホームズ]
+
+[charaSet E 1098123600 1 殺戮猟兵]
+[charaSet F 1098123600 1 殺戮猟兵]
+[charaSet G 1098123600 1 殺戮猟兵]
+
+
+[charaSet H 98115000 1 エフェクト用]
+
+[bgm BGM_EVENT_5 0.1]
+
+[scene 51402]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.5]
+＠A：マシュ
+っ、[se ad60][charaMove A 0,-20 0.3][charaShake A 0.05 3 3 0.3]ぁ……！[wt 0.2][seStop ad60]
+[k]
+
+？1：マシュ……！
+
+？！
+
+[messageOff]
+[shake 0.1 0 5 0.3]
+[cameraMove 0.3 0,0 1.1]
+[se ad59]
+[wt 0.3]
+[seStop ad59]
+[wt 0.5]
+
+[charaFace A 3]
+＠A：マシュ
+は……はい、やれました、マスター……[r]わたし、もう一度、戦え……
+[k]
+
+
+[messageShake 0.05 5 5 0.5]
+
+＠カルデアスタッフ
+無茶だ、ぜんぜん戦えてない！[r]やっぱり今のマシュじゃ無謀すぎる！
+[k]
+
+＠カルデアスタッフ
+これでも管制室のオペレーターだからな、[r]はっきり言うぞ！　以前の半分も力を出せていない！
+[k]
+
+＠カルデアスタッフ
+そんな状態の子を戦闘になんか出せるもんか！[r][%1]、ここは俺と君で[line 3]
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.3 1]
+[bgmStop BGM_EVENT_5 0.3]
+[wait wipe]
+[charaFadeout A 0.1]
+[cameraHome 0.1]
+[wt 0.2]
+[wipein rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+
+
+[charaTalk off]
+
+[charaFace E 0]
+[charaFace F 0]
+[charaFace G 0]
+[se bac2]
+[charaFadein E 0.4 1]
+[wt 0.2]
+[se bac2]
+[charaFadein F 0.4 0]
+[wt 0.2]
+[se bac2]
+[charaFadein G 0.4 2]
+
+[bgm BGM_EVENT_24 0.1]
+
+[wt 0.5]
+
+＠？？？
+[line 3]。[r][line 6]。
+[k]
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+
+[charaTalk on]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.2]
+
+[wipein rectangleStripRightToLeft 0.3 1]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠カルデアスタッフ
+うわあああ！？[r]いっぱいきた[line 3]！？
+[k]
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[wt 1.5]
+[charaFilter A silhouette FFFFFF80]
+[se ad39]
+[se ba15]
+[wt 1.0]
+[charaTalk B]
+[charaFace B 15]
+[flashin once 0.1 0.3 FFFFFF80 FFFFFF00]
+[effectStop bit_talk_36]
+[charaFadein B 0.1 -70,0]
+[charaFadeout A 0.1]
+[wt 1.5]
+
+＠マシュ
+っ……！
+[k]
+
+＠マシュ
+（盾が……重い……！[r]　あんなに訓練したのに……どうして……！）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaSet A 98002000 1 フォウ]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠フォウ
+フォウ、フォー……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠マシュ
+っ、マスター、ミスター！[r]ここはわたしが引きつけます！
+[k]
+
+＠マシュ
+彼らを通路に押し出しますから、その隙に[r]逆方向に逃げてください……！
+[k]
+
+？1：そんな事はさせられない
+？2：マスターなら、最後まで戦いを支援する
+
+？！
+
+[charaFace B 15]
+
+＠マシュ
+でも……！
+[k]
+
+[bgmStop BGM_EVENT_24 1.0]
+
+＠D：？？？
+そこはマスターに甘えるべきでは？[r]なにしろ一年ぶりのパートナー復帰なのだからね。
+[k]
+[messageOff]
+
+
+[wipeout rectangleStripRightToLeft 0.3 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein E 0.1 1]
+[charaFadein F 0.1 0]
+[charaFadein G 0.1 2]
+
+[wipein rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+
+
+
+[wt 0.2]
+[se bac105]
+[effect bit_talk_ichimon01bl]
+[wt 0.2]
+[charaShake E 0.05 3 3 0.2]
+[wt 0.2]
+[se bac104]
+[effect bit_talk_12_blue_L]
+[charaShake E 0.05 3 3 0.5]
+[wt 0.2]
+[se bac105]
+[effect bit_talk_12_blue_R]
+[wt 0.5]
+
+[charaMove E 0,-50 0.2]
+[charaFadeout E 0.2]
+[wt 0.2]
+[se ad144]
+
+[wt 0.1]
+
+[se bac149]
+[charaPut H -256,100]
+[charaEffect H bit_talk_13]
+[charaShake F 0.05 3 3 0.6]
+[wt 0.2]
+[se bac150]
+[charaPut H 0]
+[charaEffect H bit_talk_13]
+[wt 0.2]
+[se bac149]
+[charaPut H -256,-100]
+[charaEffect H bit_talk_13]
+[wt 0.2]
+
+[charaMove F -256,-50 0.2]
+[charaFadeout F 0.2]
+[wt 0.2]
+[se ad144]
+
+[se bac449]
+[charaPut H -100,-100]
+[charaEffect H bit_talk_arrow01bl]
+[wt 0.2]
+[seStop bac449 1.0]
+[wt 0.5]
+[se bac450]
+[wt 0.7]
+[seStop bac450 0.5]
+
+[se bac18]
+[charaShake G 0.05 5 5 0.2]
+[wt 0.2]
+[charaMove G 256,-50 0.2]
+[charaFadeout G 0.2]
+[wt 0.2]
+[se ad144]
+
+[wt 1.5]
+
+[bgm BGM_EVENT_4 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 1.5]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠マシュ
+ホームズさん！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ホームズ
+待たせてしまったかな？　でもそれは流してほしい。[r]なにしろ、名探偵とは得てしてそういうものだからね。
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_4 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

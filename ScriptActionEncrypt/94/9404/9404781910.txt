@@ -1,0 +1,202 @@
+
+
+
+＄94-04-78-19-1-0
+
+
+[soundStopAll]
+
+
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 25005000 1 ボイジャー]
+[charaSet C 3043000 1 エリセ]
+[charaSet D 5025001 1 エジソン]
+[charaSet E 2016000 1 エミヤ・オルタ]
+[charaSet F 1098192800 1 マリー]
+[charaSet G 1030000 1 鈴鹿御前]
+[charaSet I 98115000 1 エフェクト用]
+
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_41]
+[charaScale I 0.7]
+
+[scene 47001]
+
+[pictureFrame cut170_gameframe_dark]
+
+
+[fadein black 1.5]
+[wait fade]
+
+[pictureFrame]
+[pictureFrameTop cut170_gameframe_dark]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠エリセ
+きみは私のサーヴァントだ……だった。[r]でも、最初の仲間ってわけじゃない。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+＠ボイジャー
+そうだね、エリセ。ともだちがいた。[r]とても、おおきな、おおきな……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠マシュ
+エリセさんには、ボイジャーさん以外にも、[r]お友達がいたのですね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠エリセ
+うん。尊敬していた。優しくて、頼り甲斐のある、[r][#巨:おお]きな器を持った人[line 3]
+[k]
+
+[charaFace C 5]
+
+＠エリセ
+あの人を助けなきゃ。
+[k]
+
+＠エリセ
+さあ、そっちの番だ、ボイジャー。[r]急いでゴールを目指そう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-50]
+＠ボイジャー
+……わかった！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[effect bit_talk_dice15]
+[voice 2500500_0_X080]
+[wt 6.0]
+[wait voice 2500500_0_X080]
+
+
+[se ad399]
+[charaPut I 0,-70]
+[cameraMove 0.2 0,0 1.5]
+[wipeout circleOut 0.4 1.0]
+[wait wipe]
+
+[cameraHome 0.1]
+[charaPut I 1200,1200]
+[charaEffectStop I bit_talk_41]
+[wt 1.0]
+
+[wipein circleIn 0.4 1.0]
+[seStop ad399 0.4]
+[wait wipe]
+
+[wt 0.4]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+＠エジソン
+山門まで、もうじき半分だ。[r]先は長かろうが、気を引き締めていこう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 0,-50]
+＠マリー
+あの門の向こうにも、山道が続いているのかしら？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+＠エミヤ・オルタ
+登山コースの心配か。[r]どのみち汗水垂らして登る必要はなかろう。
+[k]
+
+[charaFace E 0]
+＠エミヤ・オルタ
+むしろ気がかりなのは、[#ゴール:あ そ こ]に待つものだ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_62 1.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+＠ボイジャー
+なかまだよ。エリセの。
+[k]
+
+？1：[&いるのかい:いるんだ]？　[#遊戯界:こ    こ]に
+？2：[#神社:ゴール]で？　それはそれでイヤな予感……
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.4 0,-50]
+[wt 0.4]
+＠鈴鹿御前
+なんだかごちゃごちゃ言ってるし～？[bgm BGM_EVENT_3 0.1]
+[k]
+
+[charaFace G 0]
+＠鈴鹿御前
+ここって私の鈴鹿山じゃあないけど、[r]割と霊基に馴染むっていうかー。
+[k]
+
+[charaFace G 1]
+＠鈴鹿御前
+せっかく[#戸隠:とがくし]の中段まで登ってきたなら、[r]ちょっと遊んでいってもいーじゃん？
+[k]
+
+[messageOff]
+[maskout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[soundStopAll]
+[end]
+
+

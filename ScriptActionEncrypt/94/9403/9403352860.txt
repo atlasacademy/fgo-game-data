@@ -1,0 +1,696 @@
+
+
+＄94-03-35-28-6-0
+[soundStopAll]
+
+
+[charaSet A 5033001 1 オケアノスのキャスター]
+[charaSet B 98101700 1 魔猪（親）]
+[charaSet C 5009000 1 ダ・ヴィンチ]
+[charaSet D 98101900 1 メカ魔猪]
+[charaSet E 98001000 1 マシュ]
+[equipSet H 9806550 1 バレンタイン礼装]
+
+[scene 10400]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[wt 0.5]
+
+[se ade169]
+[seVolume ade169 0 0.6]
+[wt 1.0]
+
+＠？？？
+[tVoice ValVoice_503300 0_V010]
+『[line 3]いるかい？　ピグレット？』[wait tVoice]
+[k]
+
+？1：この声は……
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+[scene 10310]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[se ad8]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.5]
+
+[charaFace A 1]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V020]
+やあ、ピグレット！[r]ちょっといいかなぁ？[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V030]
+……えー、コホン。[wait tVoice]
+[k]
+
+[charaFace A 2]
+
+[branchQuestClear lblClear 2000403 1]
+[branchQuestNotClear lblNoClear 2000403 1]
+
+[label lblClear]
+
+＠A：キルケー
+[tVoice ValVoice_503300 0_V050]
+この魔女キルケーからきみへの好意は[r]疑いようがない真実さ！[wait tVoice]
+[k]
+
+[branch lblConf]
+
+[label lblNoClear]
+
+＠A：オケアノスのキャスター
+[tVoice ValVoice_503300 0_V040]
+この鷹の大魔女からきみへの好意は[r]疑いようがない真実さ！[wait tVoice]
+[k]
+
+[label lblConf]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V060]
+そう、いわば永遠なる黄金の果実だ！[wait tVoice]
+[k]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V070]
+天空を巡る月のように[r]常に私の想いはきみの[#傍:かたわ]らにある！[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V080]
+もちろん、そう確信してくれているだろ？[tdelay 1 4.0 1][charaFace A 4][delay -][r]……と、望みたいけれど……。[wait tVoice]
+[k]
+
+[delayStop 1]
+[charaFace A 3]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V090]
+それでも、その……[r]ちょっと不安になることは……あって……ね？[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V100]
+そこでこれさ。[r]よかったら受け取ってくれないかな？[wait tVoice]
+[k]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V110]
+そう[line 3][r]バレンタインデーのプレゼントだよ！[wait tVoice]
+[k]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V120]
+一年に一度、決まった日にお菓子を贈ろうなんて、[r]とてもユニークな風習だ！[wait tVoice]
+[k]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V130]
+現代人もなかなか好都合な[line 3][r]いや、[#粋:いき]なことを考えるじゃないか？[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+？1：子豚型のコーティングチョコだ
+
+[charaFace A 1]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V140]
+……ふふ！　ふふ！[wait tVoice]
+[k]
+
+？2：とっても可愛い[&よ:な]！　[servantName 503300:キャスター:キルケー]！
+
+[charaFace A 1]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V150]
+……ふふ！　そうだろう！？　ふふ！[wait tVoice]
+[k]
+
+？！
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V160]
+もちろん私の手作りさ！[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V170]
+チョコレートの菓子なんて初挑戦だったけれど、[r]まあまあよく出来たと思うんだ！[wait tVoice]
+[k]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V180]
+中身にはそれぞれ異なる味のシロップが[r]入っているからね。飽きさせないよ～。[wait tVoice]
+[k]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V190]
+できれば一気に食べずに、少しずつ服用[r][line 3]もとい、味わってくれるといいなあ。[wait tVoice]
+[k]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V200]
+そうすると徐々に馴染んで……[wait tVoice]
+[k]
+
+[charaFace A 7]
+
+[bgmStop BGM_EVENT_2 0.3]
+[flashin loop 0.8 0.8 D72727FF 00000000]
+[se ad9]
+[wt 2.5]
+[seStop ad9 1.4]
+[wt 1.5]
+[flashOff]
+[bgm BGM_EVENT_3 0.1]
+
+[messageOff]
+[charaFadeout A 0.1]
+
+[se ad59]
+[seVolume ad59 0 0.1]
+[seVolume ad59 1.0 1.0]
+[wt 1.2]
+[seStop ad59 0.1]
+
+＠カルデア職員
+[tVoice ValVoice_503300 0_V210]
+[f large]大変だー！　暴れ豚だァー！！[wait tVoice]
+[k]
+
+？1：[line 3]え？
+？2：暴れ豚？　カルデアに？？
+？！
+
+[messageOff]
+[wt 1.0]
+
+[se ade156]
+[seVolume ade156 0 0.0]
+[seVolume ade156 1.5 1.0]
+[wt 2.0]
+
+[se ade155]
+
+[charaTalk B]
+[charaFace B 0]
+[charaScale B 0.8]
+[charaFadein B 0.1 0,-200]
+[charaMoveScale B 1.0 0.5]
+[charaMove B 0,0 0.5]
+[shake 0.05 6 4 0.7]
+[wt 0.2]
+
+＠B：暴れ豚
+[tVoice ValVoice_503300 0_V220]
+[line 9]！！[wait tVoice][seStop ade156 0.1]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠カルデア職員（男性）
+[tVoice ValVoice_503300 0_V230]
+ヴラド三世氏の部屋から[r]巨大な豚が飛び出してきたぞー！！[wait tVoice]
+[k]
+
+＠カルデア職員（女性）
+[tVoice ValVoice_503300 0_V240]
+ど、どっちのヴラド氏の部屋から！？[r]槍王？　それとも狂王のほう？[wait tVoice]
+[k]
+
+＠カルデア職員（男性）
+[tVoice ValVoice_503300 0_V250]
+それが今問題になる状況か！？[r]暴れ豚だぞ、相手は！[wait tVoice]
+[k]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+[tVoice ValVoice_503300 0_V260]
+みんな捕獲ネットは持ったかな！[r]では[line 3]行くぞォ、豚追いだ！[wait tVoice]
+[k]
+
+＠ダ・ヴィンチ
+[tVoice ValVoice_503300 0_V270]
+隔壁を順次閉鎖する！[r]あちらの倉庫へ追い込みたまえ！[wait tVoice]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠カルデア職員（男性・女性）
+[tVoice ValVoice_503300 0_V280]
+[line 3]了解です！！[wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaShake B 0.07 10 6 1.0]
+
+[se ade155]
+[wt 2.0]
+[seStop ade155 0.2]
+
+[charaFadeout B 0.1]
+[se ade156]
+[wt 0.7]
+[seStop ade156 1.0]
+
+？1：[&オレ:わたし]も、て、手伝いに行かなきゃ[line 3]！
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V300]
+なあに、たいした被害は出ないよ。[r]あの調子なら、しばらくしたらおさまるさ。[wait tVoice]
+[k]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V310]
+ダ・ヴィンチとスタッフにまかせておけ。[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_3 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_2 0.1]
+
+[charaFace A 6]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V320]
+しかし……暴走してしまったか……。[wait tVoice]
+[k]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V330]
+狂化付与の副産物はちょっと厄介か……[r]もう豚というより、先祖返りした[#猪:イノシシ]だものな……。[wait tVoice]
+[k]
+
+？1：……ん？
+？2：[servantName 503300:オケキャス……さん:キルケー……]？
+？！
+
+[bgmStop BGM_EVENT_2 0.3]
+
+[charaFace A 7]
+
+[flashin loop 0.8 0.8 D72727FF 00000000]
+[se ad9]
+[wt 2.5]
+[seStop ad9 1.4]
+[wt 1.2]
+[flashOff]
+
+[messageOff]
+[charaFadeout A 0.1]
+
+[se ad59]
+[seVolume ad59 0 0.1]
+[seVolume ad59 1.0 1.0]
+[wt 1.2]
+[seStop ad59 0.1]
+
+＠カルデア職員
+[tVoice ValVoice_503300 0_V340]
+大変大変大変～～！！[r]こっちにも暴れ豚よ～！！[wait tVoice]
+[k]
+
+？1：[line 3]ま、また！？
+？2：カルデアが豚舎に？
+？！
+
+[messageOff]
+[wt 1.0]
+
+[se ade156]
+[seVolume ade156 0 0.0]
+[seVolume ade156 1.5 1.0]
+[wt 2.0]
+
+[se ade157]
+
+[charaTalk D]
+[charaFace D 0]
+[charaScale D 0.8]
+[charaFadein D 0.1 0,-200]
+[charaMoveScale D 1.0 0.5]
+[charaMove D 0,0 0.5]
+[shake 0.05 6 4 0.7]
+[seStop ade156 0.1]
+[wt 0.2]
+＠D：暴れ豚
+＿／＼／＼／＼／＼／＼／￣！！？？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+＠カルデア職員（男性）
+[tVoice ValVoice_503300 0_V360]
+バベッジ教授の部屋から[r]巨大なメカ豚が飛び出してきたー！！[wait tVoice]
+[k]
+
+[shake 0.05 0 10 0.6]
+[se ad34]
+[se ad14]
+[seVolume ad14 0 0.5]
+[wt 0.8]
+[shake 0.05 0 10 0.6]
+[se ad34]
+[se ad14]
+[seVolume ad14 0 0.5]
+[wt 0.8]
+[seStop ad34 0.1]
+[seStop ad14 0.1]
+[wt 1.0]
+
+？1：機械製の豚……って蒸気機関！？
+？2：壁をどんどんぶち抜いている……
+？！
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V370]
+よーし！　大・成・功！（ぐっ）[r]こっちのほうの効果は抜群だ！[wait tVoice]
+[k]
+
+？1：[line 3][servantName 503300:キャスター:キルケー]！？
+？2：いったい何の効果！？
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠カルデア職員（女性）
+[tVoice ValVoice_503300 0_V380]
+この先にシミュレーター室が！[r]あの部屋の構造なら格段に強固だわ！[wait tVoice]
+[k]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠マシュ
+[tVoice ValVoice_503300 0_V390]
+[line 3]はい！[r]わたしも賛同します！[wait tVoice]
+[k]
+
+＠マシュ
+[tVoice ValVoice_503300 0_V400]
+人に向かっては襲ってこないようですが、[r]とても混乱しているようです！[wait tVoice]
+[k]
+
+[charaFace E 14]
+
+＠マシュ
+[tVoice ValVoice_503300 0_V410]
+衝突に注意しつつ誘導しましょう！[wait tVoice]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+＠カルデア職員（男性・女性）
+[tVoice ValVoice_503300 0_V420]
+[line 3]わかった！！[wait tVoice]
+[k]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaShake D 0.07 10 6 1.0]
+
+[se ade157]
+＠暴れ豚
+＿／＼／￣！！　＿／＼／＼／＼／￣！！
+[k]
+
+
+[messageOff]
+[charaFadeout D 0.1]
+[se ade156]
+[wt 0.7]
+[seStop ade156 1.0]
+
+[wt 1.0]
+
+？1：…………頼りになりマシュ……
+？2：あちらは何とかなりそうだけど……
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V450]
+マシュは本当に優秀だな。私の侍女に雇いたい。[r]ダ・ヴィンチがうらやましいよ。[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_3 0.3]
+
+？1：……[servantName 503300:オケキャス:キルケー]……先生？
+
+[charaFace A 1]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V460]
+うん！　なんだい？[r]ああ、チョコの試食のことかい？[wait tVoice]
+[k]
+
+？2：手作りチョコの味見を誰かに頼んだ？
+
+？！
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaFace A 0]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V470]
+ああ、依頼したよ？[r]それがどうかしたかい？[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V480]
+今回のキュケオーン・シロップは新作レシピでね。[r]そこらの耐毒・対魔力特性ならものともしないよ！[wait tVoice]
+[k]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V490]
+カルデアっぽく言うなら[r]キュケオーンＥＸ……てところか。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V500]
+と、まあ格別に強力な出来映えではあるんだが、[r]ちょっと不安定で結果が読めなくてさ……。[wait tVoice]
+[k]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V510]
+何人かに試食を頼んではみたんだが、みんな[r]顔をしかめて辞退してしまうんだ。失礼だよなあ。[wait tVoice]
+[k]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V520]
+[#快:こころよ]く引き受けてくれた男性はたった２匹しか、[r]いや、二人しかいなくてさ。[wait tVoice]
+[k]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V530]
+ウン。それがちょっと心残りだ。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[charaFace H 0]
+[charaFadein H 0.5 0,-70]
+[wt 2.0]
+
+
+？1：……そんなモノが三つも[&あるのか:ある]……
+？！
+
+[charaFadeout H 0.4]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.4 1]
+[wt 0.2]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V540]
+どうしたんだい、私の贈り物を凝視して。[r]なんの心配もいらないよ。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V550]
+サーヴァントではちょっと副作用が強く出ただけさ。[r][#人間相手]ならこんなことにはならないと保証するとも。[wait tVoice]
+[k]
+
+？1：それ、女神ヘカテに誓って言える？
+
+[charaFace A 6]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V560]
+ヘっ……？[r]……え……そ、それは……[wait tVoice]
+[k]
+
+？2：ちょっと[servantName 503300:キャスター:キルケー]、味見してみて？
+
+[charaFace A 7]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V570]
+えっ……？[r]……本気で……？[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V580]
+いや、これは、ホラ、キミ専用の調合だから……[r][#解毒薬:げどくやく]の用意がね……？[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 7]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V590]
+あの……マスター？[r]目が怖くないかな……もしかして怒ってる？[wait tVoice]
+[k]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V600]
+二匹だけじゃなくて[r]もっと念入りに実験すべきだったかい……？[wait tVoice]
+[k]
+
+？1：ハイ、あーんして
+
+[charaFace A 4]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V610]
+わ……わわっ……[r]ごめん！　それだけは勘弁してくれ！[wait tVoice]
+[k]
+
+？2：翼にガムテをいっぱい貼り付ける
+
+[charaFace A 2]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V620]
+うわぁぁ、なんてことするんだァ！[r]ひどい！　あんまりだぁ！[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 5]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V630]
+こんなにきみを愛してるのに！[r]心の底から想っているのに！[wait tVoice]
+[k]
+
+[charaFace A 7]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V640]
+……え……？[r]それだけは……理解してくれた……？[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V650]
+そ、そうか……[r]なら……よかったよ……。[wait tVoice]
+[k]
+
+[charaFace A 3]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V660]
+頑張って作った甲斐が[r]あ……あったかな……。[wait tVoice]
+[k]
+
+？1：あの二匹に、じゃない、二人に謝りにいこう
+？！
+
+[charaFace A 4]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V670]
+わかったよ……確かにそれは私が悪かった……。[r]ちゃんと後始末を手伝うとも……。[wait tVoice]
+[k]
+
+[charaFace A 6]
+
+＠A：[servantName 503300:オケアノスのキャスター:キルケー]
+[tVoice ValVoice_503300 0_V680]
+ぶつぶつ……来年こそは……。[wait tVoice]
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

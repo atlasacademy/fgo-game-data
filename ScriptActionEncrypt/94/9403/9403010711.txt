@@ -1,0 +1,241 @@
+
+
+＄94-03-01-07-1-1
+
+
+[soundStopAll]
+
+[charaSet B 6029001 1 アサシン・パライソ]
+[charaSet C 99502600 1 マシュ]
+[charaSet D 5040000 1 護法少女]
+[charaSet E 98025000 1 最後のマネージャー]
+[charaSet F 11006000 1 燎原の鬼]
+
+
+[charaSet H 98115000 1 エフェクト用]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 65000]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.5]
+[charaFace B 2]
+[se bac1]
+[charaMoveScale B 1.1 0.1]
+[wt 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad347]
+[effect bit_talk_kengekiall01]
+[wt 0.5]
+[seStop ad347 0.5]
+[se adm15]
+[effect bit_talk_v_slash01]
+
+[wt 0.5]
+
+[cueSe Servants_103200 bac512]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[charaMoveScale B 1.0 0.4]
+[wt 0.4]
+
+＠B：[servantName 602900:アサシン・パライソ:望月千代女]
+数が！　多い！
+[k]
+
+＠B：[servantName 602900:アサシン・パライソ:望月千代女]
+なるほど確かにこの凄まじき物量は……[r]初めの時の、大通りでの戦闘にごく近い感覚にて！
+[k]
+
+＠B：[servantName 602900:アサシン・パライソ:望月千代女]
+鬼王に次ぐ黄金量を誇るマネージャーということか！[r]強敵！　最後のアトラクションマネージャー！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠最後のマネージャー
+我が賜った力は恐るべきものぞ。[r]刮目せよ、迷惑客。いや[line 3]モンスタークレーマー！
+[k]
+
+＠最後のマネージャー
+出でよ、出でよ！　幹部オニ従業員ども！[r]モンスタークレーマーを屠れ！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad57]
+[shake 0.05 0 3 0.3]
+[wt 1.5]
+[shake 0.05 0 3 0.3]
+[wt 1.0]
+[seStop ad57 0.5]
+[se ad17]
+[wt 2.0]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠B：[servantName 602900:アサシン・パライソ:望月千代女]
+大型の……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠マシュ
+以前よりも強力な個体と目されます！[r]先輩、いったん退避して戦力を整えるべきかと！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[bgmStop BGM_EVENT_3 0.7]
+
+＠護法少女
+[line 6]うちも、その方がええと思うんやけどねえ？
+[k]
+
+？1：その声は……まさか……
+？2：はい来た！　来ましたね！
+
+？！
+
+＠護法少女
+まあ、これまでもそうしてきた訳やし？[r]折角やさかいお約束は最後まで守らんとあかんかなぁて。
+[k]
+
+＠護法少女
+せやから堪忍な！[r]最後のまねえじゃあはん！
+[k]
+
+[messageOff]
+[charaTalk D]
+[charaFace D 0]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect D appearance 1 0.25]
+[wt 0.7]
+
+[bgm BGM_HALLOWEEN_2 0.1]
+[charaFace D 7]
+＠護法少女
+[line 3]護法少女・またまたまたまた推参や！
+[k]
+
+[messageOff]
+[se ade217]
+[effect bit_talk_magic_girl_light]
+[wt 3.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠最後のマネージャー
+……。[r]………面白い。
+[k]
+
+＠最後のマネージャー
+護法を説かんとする奇妙な東洋のデーモンよ。[r]ならば、法なき[#燎原:りょうげん]より来たる我が刃を如何に払うか。
+[k]
+
+＠最後のマネージャー
+払えるものか！[r]いいや、いいや、何者も払えるはずもない！
+[k]
+
+[messageOff]
+[bgmStop BGM_HALLOWEEN_2 1.0]
+[charaTalk off]
+[charaFace F 2]
+
+[wt 0.5]
+[se ade89]
+[se ad7]
+[charaSpecialEffect E erasureReverse 1 0.4]
+[charaSpecialEffect F appearance 1 0.4]
+[wt 0.4]
+[seStop ade89]
+[wt 1.0]
+
+[bgm BGM_MAP_4 0.1]
+
+＠燎原の鬼
+我が黄金！　我が大欲！[r]決して余人に打ち砕けるものではないと知れ！！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠護法少女
+うちはほら[line 3]鬼やさかい。砕いてまうけど、堪忍な。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠燎原の鬼
+余鬼に打ち砕けるものではないと知れェ！！
+[k]
+
+？1：サリエリ……！
+？2：サリエリの姿をコピーした、黄金の塊！
+
+？！
+
+[charaFace F 1]
+
+＠燎原の鬼
+クク……ククククククハハハハハハハハハハハハハハ！[r]我は[#燎原:りょうげん]、忌まわしき火によって鍛えられし刃である！
+[k]
+
+[charaFace F 2]
+
+＠燎原の鬼
+命の鼓動は命の調べ、[r]さあ、此処にて[line 3]最期の音を響かせるがいい！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_4 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

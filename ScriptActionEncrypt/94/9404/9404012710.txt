@@ -1,0 +1,511 @@
+
+
+
+＄94-04-01-27-1-0
+
+[soundStopAll]
+
+
+[charaSet A 1009001 1 モードレッド]
+[charaSet B 3039001 1 ガレス]
+[charaSet C 1098181000 1 ランスロット]
+[charaSet D 1098155200 1 ガウェイン]
+[charaSet E 1040000 1 葛飾北斎]
+[charaSet F 6019300 1 風魔小太郎]
+[charaSet G 98100400 1 マシュ]
+[charaSet H 7036001 1 宮本伊織]
+[charaSet I 2023300 1 モリアーティ]
+[charaSet J 5009000 1 エフェクト用]
+
+[scene 82200]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.2]
+[charaEffect A bit_talk_quickmove]
+[charaFadeout A 0.1]
+[se ad73]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+[wt 0.2]
+[charaEffect B bit_talk_quickmove]
+[charaFadeout B 0.1]
+[se ad73]
+[wt 0.3]
+
+[charaRoll J 15]
+[charaEffect J bit_talk_v_slash01]
+[se ad171]
+[wt 0.35]
+[charaPut J 1200,1200]
+[charaRoll J 0]
+[effect bit_talk_h_slash01]
+[se ad171]
+[wt 0.3]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 1]
+[charaScale C 1.1]
+[charaFadein C 0 1]
+[charaShake C 0.02 3 3 0]
+[charaPut J -70,50]
+[charaScale J 1.2]
+[charaEffect J bit_talk_14]
+[se ad32]
+[wt 0.1]
+[charaScale J 1.4]
+[charaPut J -50,-20]
+[charaEffect J bit_talk_14]
+[se ad618]
+[wt 0.1]
+
+[se ad671]
+[seStop ad671 1.0]
+[charaMoveScale C 1.0 0.3]
+[charaMove C 0,0 0.3]
+[wt 0.8]
+[charaShakeStop C]
+[charaScale J 1.0]
+[charaPut J 1200,1200]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_3 2.0]
+
+[charaMove C 0,-10 0.3]
+[wt 0.3]
+[se bac2]
+
+＠ランスロット
+…………見事だ、ガレス。
+[k]
+
+＠ランスロット
+強くなった。[r]いや、既にあの頃からおまえは強かったのだろうな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ガレス
+ぜえ、はあ。[r]うう、勿体ないお言葉です……ランスロット様……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠モードレッド
+バカ泣くな！[r]ここで泣いたらおまえの負けになっちまうぞ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad95]
+[seVolume ad95 0 0.05]
+[seVolume ad95 1.8 1.0]
+[wt 2.5]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.7]
+[seStop ad95 0.1]
+
+＠ガウェイン
+[line 3]そこまで。もういいでしょう。[bgm BGM_EVENT_70 0.1]
+[k]
+
+＠ガウェイン
+楽しいトリスタンと共に下がるのです、[r]サー・ランスロット。後はこの私に。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[wt 1.0]
+[charaMove C -100,0 2.0]
+[se ad95]
+[wt 0.5]
+[charaFadeout C 0.4]
+[seStop ad95 0.6]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ガウェイン
+トリスタンに対して人妻を配置する。[r]ランスロットにはガレスを。
+[k]
+
+＠ガウェイン
+なるほど、見事な采配です。[r]ではこの私には何を？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 1.0]
+[cueSe NoblePhantasm_100800 NP_100800_2]
+[wt 1.0]
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth J 9]
+
+[charaPut J 1]
+[charaEffect J bit_talk_charge_red]
+[se ad61]
+[se ad556]
+[seVolume ad556 0 0.6]
+[wt 2.0]
+[seStop ad61 0.5]
+[seStop ad556 0.5]
+[se ad574]
+[fadeout white 0.2]
+[wait fade]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_charge_red]
+[charaSet B 1029300 1 アーサー]
+[charaSet C 1029300 1 アーサー_シルエット]
+[charaFilter C silhouette 00000080]
+[fadein white 1.0]
+[wait fade]
+[seStop ad574 0.5]
+[wt 0.9]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaFace D 5]
+
+＠ガウェイン
+現在の時刻は昼。[r]太陽の聖剣は、全力を以て貴方たちを迎えよう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 28]
+[charaFadein E 0.1 1]
+
+＠葛飾北斎
+ひえっ[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠風魔小太郎
+くっ……！[r]この、膨大な魔力！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 15]
+[charaFadein G 0.1 1]
+
+＠マシュ
+や、やっぱり、[r]夜に襲撃すべきだったんでしょうか……
+[k]
+
+＠マシュ
+でもカジノ・キャメロットは[#夜間営業していません]！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠風魔小太郎
+然り！[r]夜は、強力な結界がカジノ全体を覆ってしまう……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+
+
+[charaTalk E]
+[charaFace E 11]
+[charaFadein E 0.1 1]
+
+＠葛飾北斎
+らすべがすに来たばっかりの時、[r]おれが弾き返されちまった見えない壁だ！
+[k]
+
+＠葛飾北斎
+七色勝負を六色まで勝ち抜いて、[r]きゃめろっとに入れるようにはなったものの……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ガウェイン
+そう、挑戦者たちが入場を許されるのは昼間のみ。[r]すなわち私の時間です。
+[k]
+
+[charaFace D 5]
+＠ガウェイン
+さあ。如何にして戦うのです！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+
+＠宮本伊織
+……ウウ。[r]普段なら、ダメと思っても刀を抜いちゃう相手だけど、
+[k]
+
+[charaFace H 5]
+
+＠宮本伊織
+今回ばかりはそうもいかないわ。[r]ここでばっさり倒されてしまったら、話にならない！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠モリアーティ
+フフ。そう慌てることはない。
+[k]
+
+[charaFace I 6]
+
+＠モリアーティ
+策を買われたのだからネ。[r]当然、彼のための策も考えているとも[line 3]
+[k]
+
+[charaFace I 5]
+
+＠モリアーティ
+聖剣には！
+[k]
+
+[charaFace I 2]
+
+＠モリアーティ
+[#聖剣をぶつける]のだよ、君ィ！
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_24 1.0]
+
+[se ad715]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.3]
+[charaFace D 2]
+
+
+[charaPut J 0,-30]
+[charaScale J 1.5]
+[charaEffect J bit_talk_Slash_white_01]
+
+[charaShake D 0.05 7 2 0.5]
+[se ad32]
+[effect bit_talk_14 0,50]
+[flashin once 0.1 0.2 FFFFFF80 FFFFFF80]
+[wt 0.5]
+
+＠ガウェイン
+！！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaShakeStop D]
+
+[wt 0.5]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth B 2]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.7 1]
+[wt 1.1]
+
+＠声
+流石は太陽の聖剣。[r]今のを防いでみせるのだから、やはりそうなのだろう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ガウェイン
+その声、気配……！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.8]
+[charaFace B 5]
+[charaFadein B 0.7 1]
+[wt 1.1]
+
+＠アーサー
+私の知る太陽の聖剣と、よく似ている。[bgm BGM_EVENT_82 0.1][r]ガウェイン。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ガウェイン
+アーサー・ペンドラゴン！[r]異なる世界より来たりし稀人、もう一人の陛下とは……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠モードレッド
+やっと来たかよ、男の父上！[r]なかなか姿が見えないからヒヤヒヤしたぜ！
+[k]
+
+？1：あ、なるほど！
+？2：オマケってアーサーのことだったの[&か！:！？]
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+[wt 1.2]
+
+[charaFace B 6]
+＠アーサー
+出番待ちをしていたんだよ。[r]モリアーティ教授に、再三言われていたからね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠モリアーティ
+何せ聖剣、とっておきだからねえ。[r]さて。これで一応の戦力としては申し分ないだろう。
+[k]
+
+＠モリアーティ
+ガウェイン卿。[r]いや、アロハ騎士ガウェイン。通らせていただこうか。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ガウェイン
+[line 3]相手に不足なし。[r][#太陽:アロハ]と聖剣にかけて、全力を以てお相手しよう！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠葛飾北斎
+べらぼうめい、聖剣がどれほどのもんだ！[r]こちとら四刀、少なくとも数じゃあおれが[#勝:まさ]ってる！
+[k]
+
+[charaFace E 2]
+
+＠葛飾北斎
+舞って戦い、戦って舞い！[r]打ち倒す！　せりゃああああああ！
+[k]
+
+[messageOff]
+[charaMoveScale E 1.05 0.2]
+[charaMove E 0,10 0.2]
+[se bac1]
+
+[charaPut J 1]
+[effect bit_talk_41]
+[shake 0.05 4 2 3.0]
+[wt 0.5]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_82 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+

@@ -1,0 +1,310 @@
+
+
+
+＄91-50-09-02-2-1
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 99502600 1 マシュ]
+[charaSet B 98002000 1 フォウ]
+[charaSet C 5009001 1 ダ・ヴィンチ]
+[charaSet D 5009001 1 ダ・ヴィンチ２]
+[charaSet E 98025000 1 青フードエネミー]
+
+[scene 20500]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk E]
+[charaFadein E 0.1 1]
+[se ad52]
+[charaSpecialEffect E enemyErasure 1 2.0]
+[wait charaSpecialEffect E]
+[wt 0.4]
+
+
+[se ad13]
+[charaTalk A]
+[charaFace A 4]
+[charaEffect A bit_talk_10_LowLevel]
+[wt 0.3]
+[charaFadein A 0.1 1]
+[bgmStop BGM_EVENT_3 0.7]
+＠マシュ
+……敵性反応、消滅。[r]プログラムに従って聖杯の欠片を自動回収します。
+[k]
+
+[charaPut A 0,-10000]
+[charaFadeout A 0.1]
+[wt 0.1]
+[messageOff]
+[se bac35]
+[effect bit_talk_20]
+[wt 2.0]
+[effectStop bit_talk_20]
+[wt 1.0]
+
+[charaTalk B]
+[charaFadein B 0.1 1]
+＠フォウ
+フォーウ……
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[bgm BGM_EVENT_6 0.1]
+＠ダ・ヴィンチ
+回収完了っと。[r]これでよし。
+[k]
+
+[charaFace C 0]
+＠ダ・ヴィンチ
+やれやれ……サライの奴め……。[r]私の死後５年くらいに死んだと聞いてはいたけど、
+[k]
+
+＠ダ・ヴィンチ
+せっかくの若く瑞々しい命を早々に散らせるなんて。[r]腹立たしいことこの上ない。
+[k]
+
+＠ダ・ヴィンチ
+聖杯の影響で亡霊になって暴れるなんていうのは[r]運が悪かったとしか言いようがないけれど、
+[k]
+
+＠ダ・ヴィンチ
+早死にはだめだろう。まったく。
+[k]
+
+[messageOff]
+[wt 0.7]
+[charaFace C 4]
+
+＠ダ・ヴィンチ
+…………最後の最後まで[#親方:マエストロ]不孝な子だよ、おまえは。
+[k]
+
+？1：ダ・ヴィンチちゃん[line 3]
+？2：もっと、ちゃんとした形で話したかった？
+？！
+
+[charaFace C 1]
+＠ダ・ヴィンチ
+いやあ、どうかな？
+[k]
+
+＠ダ・ヴィンチ
+暴走するタイプの亡霊じゃなかったとしても……[r]むしろ、その方がサライは奔放な悪さをしたと思うよ。
+[k]
+
+[charaFace C 0]
+＠ダ・ヴィンチ
+そういう意味じゃあ、[r]今回のような在り方で出逢えて我々は幸運だったのさ。
+[k]
+
+？1：………………
+？！
+
+
+[charaFace C 1]
+＠ダ・ヴィンチ
+暗い顔をしない！[r]私がいいと言っているんだから、それでいいのさ！
+[k]
+
+＠ダ・ヴィンチ
+でも、そういう、感じやすいキミは好きだぜ。[r]いつまでもその瑞々しさを忘れずにいてくれると嬉しい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFadein B 0.1 1]
+
+＠フォウ
+フォウ、ファーウ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ダ・ヴィンチ
+さあて！[r]それじゃあカルデアに帰還するとしよう！
+[k]
+
+[charaFace C 0]
+＠ダ・ヴィンチ
+今夜はぐっすりと眠れると思うよ、マスター。[r]妙な夢を見ることもないだろうからね。
+[k]
+[messageOff]
+[wt 0.7]
+[bgmStop BGM_EVENT_6 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout C 0.1]
+[scene 10000]
+[wt 2.0]
+[fadein black 1.5]
+[wait fade]
+[bgm BGM_EVENT_11 0.1]
+
+＠
+[line 3][#親方:マエストロ]。
+[k]
+
+＠
+[line 3]ねえ、なぜなんです？
+[k]
+
+＠
+[line 3]お母さんの時にはちゃんと葬儀を執り行ったのに。[r][line 3]今回は、どうして何もしないんですか？
+[k]
+
+＠
+[line 3]あっはっは。[#親方:マエストロ]ったらもう。
+[k]
+
+＠
+[line 3][#だから未練が残るんですよ]、[#莫迦:ばか]だなぁ！
+[k]
+
+[messageOff]
+[wt 1.5]
+＠ダ・ヴィンチ
+うん。[r]そんな風に言っているように思えたよ、サライは。
+[k]
+
+＠ダ・ヴィンチ
+実際は何も言っちゃいないけどね。[r]だから、思っただけ。感じただけ。推測でも予測でもない、
+[k]
+
+＠ダ・ヴィンチ
+ただの直感さ。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaTalk depthOff]
+[charaDepth C 0]
+[charaDepth D 1]
+[wipeFilter cinema 0.6 0.2]
+
+[charaFilter D silhouette 00000080]
+[wt 1.0]
+[scene 10600]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_45 0.1]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+[charaFace C 4]
+[charaFadein C 0.4 0,-50]
+[wt 1.5]
+[charaFadeout D 1.0]
+
+＠ダ・ヴィンチ
+…………本当に。
+[k]
+
+＠ダ・ヴィンチ
+いつだって、誰も遠慮して言わないようなことを[r]さらりと言うんだ。あの小悪魔はさ。
+[k]
+
+＠ダ・ヴィンチ
+でもね。葬儀をやっていなくても、[r]私はきちんと[#キミを見送れた]と思っているんだ。
+[k]
+
+＠ダ・ヴィンチ
+独りよがりかもしれないけどね。
+[k]
+
+[messageOff]
+[wt 0.7]
+[charaFace C 0]
+＠ダ・ヴィンチ
+さて……[r]それじゃあ、そろそろ準備をしておくとしよう。
+[k]
+
+＠ダ・ヴィンチ
+準備。予備と言った方がいいのかな？
+[k]
+
+[charaFace C 1]
+＠ダ・ヴィンチ
+そう。私の番がいつ来るか分かったものじゃないし、[r]いざという時に慌てなくてもいいようにね。
+[k]
+
+＠ダ・ヴィンチ
+サライが来たのはそういう意味でもあるんだろう。[r]悪魔が、死の予兆を持ってきたってね。
+[k]
+
+[charaFilter D normal 00000080]
+[charaFace C 4]
+＠ダ・ヴィンチ
+……。[r]……。
+[k]
+
+[charaFace C 0]
+＠ダ・ヴィンチ
+……折角だから、少年期や少女期の姿にしようかな。
+[k]
+
+＠ダ・ヴィンチ
+ホームズは恐らく勘付いているんだろうけど[line 3][r]まあ、文句は言わないし邪魔もしないだろう。
+[k]
+
+＠ダ・ヴィンチ
+実際、今回もしっかり付き合ってくれたし、[r]余計な事は言わなかった。あれは見せないなぁ腹の内を。
+[k]
+
+[messageOff]
+[wt 0.7]
+[charaFace C 4]
+
+＠ダ・ヴィンチ
+…………もしもキミがいたら、文句を言うかな？
+[k]
+
+＠ダ・ヴィンチ
+言うんだろうな。[r]でも、まあ。許してくれよ。
+[k]
+
+＠ダ・ヴィンチ
+私は、幾度も幸運に恵まれた。[r]前の人生でもそうだし、今の人生でも。
+[k]
+
+＠ダ・ヴィンチ
+その代償として……[r]二度目の生の最期がそこそこキツくなったとしても、
+[k]
+
+＠ダ・ヴィンチ
+まあ、それはそれで[line 3]
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth D 0]
+[charaDepth C 1]
+[charaFace D 1]
+[charaFadein D 0.1 0,-50]
+[charaFadeout C 0.7]
+[wt 2.0]
+＠D：ダ・ヴィンチ
+仕方ないかな、って思っているのさ。
+[k]
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_45 1.5]
+[fadeout black 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[wipeOff]
+[end]
+

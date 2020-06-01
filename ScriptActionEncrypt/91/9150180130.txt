@@ -1,0 +1,582 @@
+
+＄91-50-18-01-3-0
+
+[soundStopAll]
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 5010001 1 パラケルスス]
+[charaSet C 5018001 1 ギルガメッシュ]
+[charaSet D 98111500 1 ダ・ヴィンチ]
+[charaSet E 11001000 1 アンリマユ]
+
+[charaSet F 98115000 1 エフェクト用]
+[charaSet G 98115000 1 エフェクト用]
+[charaSet H 98115000 1 エフェクト用]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 10710]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se bac135]
+[charaFace B 2]
+[charaShake B 0.05 3 3 0.3]
+[effect bit_talk_Slash_white_01]
+[wt 0.3]
+[se bac136]
+[charaShake B 0.05 3 3 0.3]
+[effect bit_talk_Slash_white_01_L]
+[wt 0.3]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+[wt 0.2]
+[se ad39]
+[charaPut F 1]
+[charaDepth F 10]
+[charaEffect F bit_talk_15]
+[wt 1.5]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_15]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.2]
+[se bac279]
+[charaPut F 1]
+[charaPut G -300,0]
+[charaPut H 300,0]
+
+[charaShake B 0.05 3 3 2.0]
+[charaEffect F bit_talk_32]
+[wt 0.2]
+[charaEffect G bit_talk_32]
+[wt 0.2]
+[charaEffect H bit_talk_32]
+[charaMove F -250,0 0.5]
+[charaMove G 250,0 0.5]
+[charaMove H 0,0 0.5]
+[wt 0.5]
+[seStop bac279 0.5]
+[charaMove F 200,0 0.5]
+[charaMove G 0,0 0.5]
+[charaMove H -200,0 0.5]
+[wt 0.5]
+
+
+[charaPut F 1200,1200]
+[charaPut G 1200,1200]
+[charaPut H 1200,1200]
+
+[charaEffectStop F bit_talk_32]
+[charaEffectStop G bit_talk_32]
+[charaEffectStop H bit_talk_32]
+[bgmStop BGM_EVENT_3 1.0]
+[wt 0.3]
+[charaMove B 0,-40 0.2]
+[charaShake B 0.05 3 3 0.2]
+[wt 0.2]
+[se ad144]
+[charaFadeout B 0.1]
+[wt 1.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠ギルガメッシュ
+こんなところか。[r]充分に懲りたか、ホーエンハイム？
+[k]
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-60]
+[charaMove B 1 1.5]
+[charaShake B 0.07 4 1 1.5]
+[wt 2.0]
+
+＠パラケルスス
+とても……痛い……ですね。[r]私もあの薬を飲みたいほどに。
+[k]
+
+＠パラケルスス
+大切に育ててきたホムンクルスでしたが、[r][#彼我:ひが]の戦力を埋めるまでは至らず、とは。
+[k]
+
+＠パラケルスス
+彼らを捨て石のように使ってしまったのは[r]心が痛みますが……。
+[k]
+[messageOff]
+[se bac23]
+[charaMoveReturn B 10,0 0.2]
+[wt 0.2]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠ギルガメッシュ
+ぬっ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠パラケルスス
+罠です。[r]それでもよろしければご一緒しますか？
+[k]
+[messageOff]
+[charaFadeout B 0.4]
+[se ad132]
+[wt 1.0]
+[seStop ad132 0.5]
+
+？1：待て、パラケルスス！
+？2：あの困ったお医者さんを止めなければ！
+
+？！
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ギルガメッシュ
+まあ待て、気持ちは分かるが落ち着け雑種。[r]むざむざ誘いに乗る必要もない。
+[k]
+
+＠ギルガメッシュ
+相手はキャスター、先ほどのアサシンとは違う。[r]追跡は充分に可能であろう。
+[k]
+
+＠ギルガメッシュ
+それよりも相手の意図を読んでみるがいい。
+[k]
+
+？1：……こっちを何かから引き離したい？
+
+[charaFace C 1]
+
+＠ギルガメッシュ
+そうだ。[r]やればできるではないか。
+[k]
+
+？2：……叱られるのがイヤとか？
+
+[charaFace C 4]
+
+＠ギルガメッシュ
+……おまえという[&男:女]は……[r]これがゆとり、いや悟り、いや至り世代というヤツか……
+[k]
+
+＠ギルガメッシュ
+よく考えよ、あれほど追ってこい、と言っているのだ。[r]であれば、ヤツの嫌がる事を考えよ。
+[k]
+
+？！
+
+[charaFace C 0]
+
+＠ギルガメッシュ
+奴の撤退が陽動なのは明白だ。[r]だが雑種よ、他に目ぼしい場所はあるのではないか？
+[k]
+
+？1：……大聖杯！
+
+？！
+
+＠ギルガメッシュ
+そうだ。[r]この地で価値があるのはそれ以外あるまい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaPut F 1]
+[charaEffect F bit_talk_10]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ジャックさんとパラケルススさんの不可解な行動を[r]解く鍵がそこにあるのでしょうか……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ギルガメッシュ
+………………。
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.7 1]
+[bgmStop BGM_EVENT_2 0.7]
+[wait wipe]
+
+[charaSet B 9002001 1 天草四郎]
+
+[charaFadeout C 0.1]
+[wt 0.5]
+[scene 20200]
+
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+＠アンリマユ
+なんだよ、一直線に本命に来たのかい？[r]陽動は失敗ってコトか。
+[k]
+
+＠アンリマユ
+ま、あのローテンションな兄さんに囮役は[r]ミスキャストだって分かってましたけど？
+[k]
+
+＠アンリマユ
+[line 3]さて、そんなワケでこんにちは！[r]マスターに王サマちゃん、遠路はるばるご苦労サマだ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-90]
+
+＠ダ・ヴィンチ
+あれは……ゼロ事件の時にこの大聖杯で[r]観測されたサーヴァントか……？
+[k]
+
+＠ダ・ヴィンチ
+カルデアの霊基グラフにはない英霊だが、[r]なぜこんなところに？
+[k]
+
+＠ダ・ヴィンチ
+キミがDr.ロマンを[#拐:かどわ]かしたのかな？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠アンリマユ
+ドクターねぇ。[r]医者やら学者やらに知り合いはいないんだが……
+[k]
+
+＠アンリマユ
+まあ、そういう人？[r]ドクター・ロンパだっけ？
+[k]
+
+＠アンリマユ
+預かってるぜぇ、もちろん！[r]そういう仕事を請け負ったからなァ！
+[k]
+
+＠アンリマユ
+ほい、そういうワケでやりますか！[r]だが気をつけてほしい！
+[k]
+
+＠アンリマユ
+なにって、オレはすげえ弱いのデス！[r]ワンパンで死んでも文句は言わないよーに！
+[k]
+
+＠アンリマユ
+勢い殺しちまったらドクターの居場所は永遠に[r]分からないんで、そこは注意してくださいネ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ギルガメッシュ
+なんと！[r]うかつに攻撃すれば情報は手に入らぬと！？
+[k]
+
+＠ギルガメッシュ
+これは斬新な人質作戦だぞ雑種！[r]あのサーヴァントめ、自らの命を駆け引きに使うとは！
+[k]
+
+？1：手加減……いや、全力で！
+？2：ドクターならマシュが探してくれる！
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut F 1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい！　周囲の探索はこちらで！[r]まずは敵勢力の鎮圧をお願いします、ギルガメッシュ王！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ギルガメッシュ
+ほう。ほうほうほう。だそうだ、[r][#我:オレ]にも予想外だった復讐者よ。次はどうでる？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠アンリマユ
+うーん、オレの命を何とも思わないところは[r]たいへん気に入りました。悪くない。
+[k]
+
+＠アンリマユ
+けどまあ、元から騙し打ちの予定ですし？[r]オレの生き死になんて初めから度外視ですし？
+[k]
+
+＠アンリマユ
+オレの口車にさえ乗ってくれれば、[r]それでいいって話ですよ？
+[k]
+[messageOff]
+
+[se bac23]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[wt 0.5]
+
+[charaPut F 1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠マシュ
+マスター！
+[k]
+
+？1：[line 3]後ろ[&:です]、ギルガメッシュ王！
+
+？！
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[charaPut G 1]
+[se ad32]
+[charaFace C 2]
+[charaEffect G bit_talk_GuardMagic]
+[wt 1.0]
+[charaEffectStop G bit_talk_GuardMagic]
+[wt 0.5]
+
+
+＠ギルガメッシュ
+助言が遅いわ、間一髪ではないか！[r][#我:オレ]でなければ致命傷よ！
+[k]
+
+＠ギルガメッシュ
+だが、ギリギリで良しとしよう。[r]出てくるがいい、３騎目のサーヴァントよ！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.7 1]
+[wt 0.7]
+＠天草四郎
+絶好の機会を逃してしまいました。[r]奇襲をするのなら、もう一呼吸早く、でしたか。
+[k]
+
+＠天草四郎
+それとも私たちの落ち度でしょうか。[r]連携がとても下手だった、とか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+そんな、天草さんまで……答えて下さい。[r]ドクターをどうしたんです？　何故こんなことを？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠天草四郎
+そうですね……[r]……………………アヴェンジャー。何かありますか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠アンリマユ
+そこでオレに振るのかよ。[r]あれだろ。カルデア撲滅計画でいいんじゃない？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠天草四郎
+雑な案ですが、いいでしょう。[r]はい。彼の言う通りです。
+[k]
+
+＠天草四郎
+敢えて言うならば、機が熟した……[r]そう言ってもいい。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ギルガメッシュ
+相変わらず、腹を見せぬ男よ。[r]こうして会うのは二度目か？　うん？
+[k]
+
+＠ギルガメッシュ
+この[#我:オレ]が直接会った訳ではないがな。[r]貴様との縁は霊基に刻まれている。
+[k]
+
+＠ギルガメッシュ
+しかし、見直したぞ聖者よ。[r]ウルクではあっさり密林で散ったものだが[line 3]
+[k]
+
+＠ギルガメッシュ
+こうして反旗を[#翻:ひるがえ]すほどの気骨があったとは。[r]あれか、現代人の在り方に嫌気がさしたか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠天草四郎
+ははは。確かに思うところがないではありませんが……[r]そのあたりはご想像にお任せします。
+[k]
+
+＠天草四郎
+ただ一つ言えるのは、[r]どこにあっても私は私ということです。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠アンリマユ
+おーい、奇襲がバレたんなら早く済まさねぇ？[r]話し合いでどうにかできる相手じゃねえだろ。
+[k]
+
+＠アンリマユ
+その王サマもマスターも、[r]アンタの説教には慣れているからな。
+[k]
+
+＠アンリマユ
+そもそも、たかだかキャスター一騎じゃんか。[r]会話で体力使うより、全力でぶっ殺した方がよくない？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[bgmStop BGM_EVENT_5 0.5]
+[wt 0.5]
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ギルガメッシュ
+[line 3]良かろう。[r]その挑発に乗ってやるぞ復讐者。
+[k]
+
+＠ギルガメッシュ
+この魔杖も[#我:オレ]が誇る財宝の一つ。[r]その威力、身を以て知るがいい！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

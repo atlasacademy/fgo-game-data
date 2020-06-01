@@ -1,0 +1,255 @@
+
+
+
+＄94-03-50-08-1-0
+
+[soundStopAll]
+
+
+[charaSet C 3030000 1 パールヴァティー]
+[charaSet E 10003000 1 殺生院キアラ]
+[charaSet F 1098163800 1 春日局]
+[charaSet B 99502600 1 マシュ]
+[charaSet G 1098158220 1 シオン]
+[charaSet H 1098158230 1 シオン_腕上げ_通信]
+[imageSet I cut103_item02 1]
+
+[charaSet J 98115000 1 エフェクト用1]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[scene 71900]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠パールヴァティー
+おや？[r]何かが落ちていますね。何でしょう？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+
+[cueSe Battle bas2]
+[wt 0.2]
+[charaFadein I 0.7 0,-200]
+[wt 2.2]
+
+[charaFadeout I 0.4]
+[wt 0.5]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠殺生院キアラ
+花札、のようですね。[r][#私:わたくし]も詳しくはないのですが。
+[k]
+
+？1：牡丹ですね
+？2：蝶ですね
+？！
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[wt 0.1]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth F 0]
+[charaDepth C 1]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[wt 0.25]
+[fowardEffect bit_talk_tornado02]
+[se ad80]
+[seVolume ad80 0 0.5]
+[wt 0.3]
+
+[charaSpecialEffect C erasureReverse 1 0.3]
+[charaFace F 0]
+[charaFadein F 0.2 1]
+[wt 0.1]
+[seStop ad80 0.3]
+
+[wt 0.5]
+[charaTalk on]
+＠春日局
+[#骨牌:かるた]の一種でしょうか？[r][#骨牌:かるた]なら奥女中たちも嗜む遊戯です。
+[k]
+
+＠春日局
+大奥に落ちていても不思議はございませぬが。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠マシュ
+待ってください、[r]シオンさんが首を傾げていらっしゃいます。
+[k]
+
+＠マシュ
+何か気になることでも？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+＠シオン
+[#探査:サーチ]では問題のない、ただのカードです。[r]ですがパラメータが安定していません。
+[k]
+
+＠シオン
+常に揺らいでいて、どうしても分析できない[r]ブラックボックス的部分があるというか[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠マシュ
+っ。それは……[#同じですね]？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠殺生院キアラ
+[FFFFFF]？[-]　何と同じなのでしょう？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠シオン
+今も貴方たちの頭の上にあり、足の下にあるものですよ。[r]そう[line 3][#大迷宮大奥という建造物です]。
+[k]
+
+＠シオン
+それと同じ反応を返しているという事は即ち、[r][#そのカードは大奥の一部である]という事になりますが。
+[k]
+
+[charaFace G 15]
+＠シオン
+すみません、現状では情報不足です。
+[k]
+
+＠シオン
+少なくとも危険はないと思います。[r]興味深いので一応持っておいてください。
+[k]
+
+＠シオン
+他に同じサンプルを集められたなら[r]また新しい分析もできますので。
+[k]
+
+？1：了解です
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠春日局
+ふむ。すべき仕事をしておれば小うるさくは申しませぬが、[r]遊んだあとの片付けはしっかりと！　そこは大事です。
+[k]
+
+[charaFace F 17]
+
+＠春日局
+落としたのか片付け忘れたのかはともかく、
+[k]
+
+＠春日局
+犯人を見つけたらこれはさすがに[r]説教せざるを得ませんね。
+[k]
+
+＠春日局
+ええ、ええ、大奥の風紀のためなら[r]私はいくらでも嫌われ役になりましょうとも。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠マシュ
+それにしても、少し思い違いをしていました。[r]大奥にいる皆さんもカードなどで遊んでおられたのですね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠春日局
+当然です。遊ぶ事もできぬ、外に出る事もできぬ、[r]では牢獄と変わりないでしょう。
+[k]
+
+＠春日局
+犬猫や小鳥を飼う事もできましたし、歌に琴に茶、[r]花見に月見。それなりに娯楽はありましたよ。
+[k]
+
+[charaFace F 11]
+＠春日局
+まあ、こんな陰気な地下のニセ大奥では[r]花見も月見もあったものではないでしょうが。
+[k]
+
+[charaFace F 5]
+
+＠春日局
+……ええい、また腹が立ってきました！
+[k]
+
+[charaFace F 7]
+
+＠春日局
+進みましょう、皆様がた。一刻も早く、この不埒な大奥に[r]囚われている上様をお救い申し上げねば！
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

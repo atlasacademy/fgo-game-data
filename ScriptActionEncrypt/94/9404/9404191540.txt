@@ -1,0 +1,782 @@
+
+
+＄94-04-19-15-4-0
+
+[soundStopAll]
+
+[charaSet A 11009300 1 アシュタレト・オリジン]
+[charaSet B 2037000 1 ジェーン]
+[charaSet C 1098187200 1 イシュタル・アシュタレト]
+[charaSet E 11009001 1 Ｓイシュタル]
+[charaSet F 6018002 1 Ｘ]
+[charaSet I 98115000 1 エフェクト用１]
+[charaSet J 98115000 1 エフェクト用２]
+
+[scene 83800]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0 1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaFace C 2]
+
+＠イシュタル・アシュタレト
+そこまでよ、勝負あったわ。[r]この[#一蹴:いちげき]で、派手に吹き飛ばしてあげる……！
+[k]
+
+[messageOff]
+[charaFadeout C 0.3]
+[wt 0.1]
+
+[wipeout rectangleStripLeftToRight 0.2 1]
+[wait wipe]
+
+[charaTalk depthOff]
+[charaDepth I 1]
+[charaDepth J 2]
+
+
+[charaPut J 250,-50]
+[charaRoll J 30 0,0]
+[charaEffect J bit_talk_arrow01or]
+
+[wipein rectangleStripRightToLeft 0.2 1]
+[wait wipe]
+
+[wt 0.7]
+[se adm15]
+[wt 0.5]
+
+[charaEffectStop J bit_talk_arrow01or]
+[charaPut I 0,200]
+[charaEffect I bit_talk_shock_wave]
+[shake 0.04 8 10 0]
+[cueSe Battle bac54]
+[cueSe NoblePhantasm_300400 NP_300400_11]
+[wt 0.3]
+[fowardEffect bit_talk_explosion_triple02]
+[se ad38]
+[se ad608]
+[se ad609]
+[seVolume ad609 0 0.6]
+[maskout white 1.0]
+[skip true]
+[seStop ad38 2.0]
+[seStop ad608 2.0]
+[seStop ad609 2.0]
+[wait mask]
+[effectDestroy]
+[fowardEffectDestroy]
+[charaEffectDestroy I]
+[scene 10001]
+[wt 0.3]
+
+[scene 83800]
+[charaTalk A]
+[charaFace A 2]
+[charaScale A 0.83]
+[charaFadein A 0.1 0,-40]
+[wt 0.2]
+[maskin white 0.3]
+[wt 0.1]
+[shakeStop]
+[wait mask]
+
+[wt 0.3]
+
+＠アシュタレト・オリジン
+ぐ、ぁ…………！[r]こんな、こんな、はず……！
+[k]
+
+＠アシュタレト・オリジン
+生まれたばかりの銀河に、[r]この『私』が、引き離される、なんて[line 3]！
+[k]
+
+[messageOff]
+[fadeout black 0.4]
+[wait fade]
+[charaFadeout A 0.1]
+[scene 83503]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+[wt 0.2]
+[imageSet A back83701 1]
+[imageSet D back83701 1]
+[imageSet G back83701 1]
+[imageSet H back83701 1]
+[charaScale A 1.01]
+[charaScale D 1.01]
+[charaScale G 1.01]
+[charaScale H 1.01]
+[fadein black 0.4]
+[wait fade]
+
+＠ジェーン
+うっわあ、オリジンの[#女神:ひと]、[r]１パーセク先まで吹っ飛んだってどんだけ～！？
+[k]
+
+＠ジェーン
+って、なんかもう概念宇宙の話だもんね、[r]驚いてる場合じゃなかった！
+[k]
+
+＠ジェーン
+きっちりスカウトのお仕事しないと！
+[k]
+
+[charaFace B 2]
+
+＠ジェーン
+いっくよ～、ステラリス・オープン！[r]『極星よ、今一度、人類の[#脅威:かべ]を照らせ！』
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+[charaFadeout B 0]
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth D 2]
+[charaDepth G 3]
+[charaDepth H 4]
+[scene 83701]
+[charaPut A -5,-195]
+[charaFadeTime A 0 0.3]
+[charaPut D 5,-205]
+[charaFadeTime D 0 0.3]
+[charaPut G -5,-205]
+[charaFadeTime G 0 0.3]
+[charaPut H 5,-195]
+[charaFadeTime H 0 0.3]
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[cueSe NoblePhantasm_900500 NP_900500_6]
+[cueSeVolume NP_900500_6 0 0.0]
+[wt 0.5]
+[cueSeVolume NP_900500_6 0.5 1.0]
+[wt 1.0]
+
+[cueSeStop NP_900500_6 1.0]
+[charaMove A 0,-200 0.5]
+[charaMove H 0,-200 0.5]
+[charaMove D 0,-200 0.5]
+[charaMove G 0,-200 0.5]
+
+[wt 0.4]
+[charaFadeout A 0.4]
+[charaFadeout D 0.4]
+[charaFadeout G 0.4]
+[charaFadeout H 0.4]
+
+[wt 2.0]
+
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+[scene 83503]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0 1]
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[charaFace B 2]
+
+＠ジェーン
+ビンゴ！　よく分かんないけど観測した！[r]イシュタリん、影と本体のピントが一致したよ～！
+[k]
+
+[charaFace B 1]
+
+＠ジェーン
+チャンスチャンス～！[r]今なら“同じ攻撃”でやっつけられる！
+[k]
+
+[messageOff]
+[fadeout black 0.4]
+[wait fade]
+[charaFadeout B 0.1]
+[scene 83800]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+[charaSet A 11009300 1 アシュタレト・オリジン]
+[imageSet E cut141_asto05 1]
+[imageSet F cut141_asto02 1]
+[charaScale E 1.01]
+[charaScale F 1.01]
+[wt 0.2]
+[fadein black 0.4]
+[wait fade]
+
+＠イシュタル・アシュタレト
+さっすが伝説のスペース・スカウト、[r]タイミング、バッチリね！
+[k]
+
+[messageOff]
+[fadeout black 0.4]
+[wait fade]
+[charaFadeout C 0.1]
+[scene 83701]
+[wt 0.2]
+[fadein black 0.4]
+[wait fade]
+
+[charaFadein E 0.1 0,-200]
+
+＠アシュタレト・オリジン
+離される[line 3][r]いや、『私』が遠ざかっている、のか[line 3]？
+[k]
+
+＠アシュタレト・オリジン
+ありえない。[r]それだけは、あってはならない……！
+[k]
+
+＠アシュタレト・オリジン
+『[#私:おまえ]』が『私』と同じ次元に[r]上がってくるのはいい。必然だ。
+[k]
+
+＠アシュタレト・オリジン
+同じ霊基、同じ概念、同じ起源。[r]たとえ理念が違うものになろうと、性能は変わらない。
+[k]
+
+＠アシュタレト・オリジン
+そう[line 3]『差』がつく事など、[r]決してあり得ない。
+[k]
+
+＠アシュタレト・オリジン
+『私たち』が争う時、[r]その決着は相殺以外ありえない。
+[k]
+
+＠アシュタレト・オリジン
+なのに、なぜ[line 3][r]なぜ、こちらだけが、[#冷:ふる]く[line 3]
+[k]
+
+[charaDepth E 1]
+[charaDepth F 2]
+
+[charaFadein F 0.1 0,-200]
+[wt 0.1]
+[charaFadeout E 0.1]
+
+＠アシュタレト・オリジン
+何が違う？　何が違うというの、[r]『[#私:おまえ]』と、『私』は[line 3]！
+[k]
+
+[messageOff]
+[fadeout black 0.4]
+[wait fade]
+[charaFadeout F 0.1]
+[scene 83800]
+[wt 0.2]
+[fadein black 0.4]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.2 1]
+[wt 0.3]
+
+＠イシュタル・アシュタレト
+……それは。[r]アナタが、過去にだけ進もうとしたからです。
+[k]
+
+[messageOff]
+[wt 0.6]
+
+[charaFace C 2]
+
+＠イシュタル・アシュタレト
+[line 3]最後よ、オリジン！[r]とどめは宇宙の半分サイズ、特注のアンタ専用弾！
+[k]
+
+＠イシュタル・アシュタレト
+遠慮せず受け取りなさい！[r]特別に、私のおごりにしておくわ！
+[k]
+
+[messageOff]
+[se ad39]
+[effect bit_talk_36]
+[wt 1.5]
+[effectStop bit_talk_36]
+[wt 0.5]
+
+[se bac176]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[fadeout white 1.5]
+[wt 1.3]
+[seStop bac176 0.5]
+[wait fade]
+[charaFadeout C 0.1]
+[scene 84600]
+[shake 0.05 8 6 1.6]
+[cameraMove 0 0,0 1.01]
+[fadein white 0.5]
+[se ad38]
+[se ad609]
+[seVolume ad609 0 0.6]
+[wait fade]
+
+＠アシュタレト・オリジン
+無くなる[line 3]冷めていく[line 3][r]『私』の[#生命:カタチ]が、ソラに還っていく[line 3]
+[k]
+
+＠アシュタレト・オリジン
+ああ[line 3]また『私』だけが、おまえたちに、[r]置いていかれるというの[line 3]？
+[k]
+
+＠アシュタレト・オリジン
+……いいえ。許さない。忘れない。[r]決して、決して！
+[k]
+
+＠アシュタレト・オリジン
+認めないわ、こんな[#結末:みらい]……！
+[k]
+
+＠アシュタレト・オリジン
+原始宇宙も、蒼輝銀河も、[r]私を拒むのなら、より過去へ！
+[k]
+
+＠アシュタレト・オリジン
+たとえ『私』が霧散しようと、[r]『私』の残滓がどれほど劣化しようと[line 3]
+[k]
+
+＠アシュタレト・オリジン
+必ず、おまえたち人類に復讐してやるんだから[line 3]！
+[k]
+
+[effect bit_talk_explosion_triple02]
+[se ad34]
+[se ad64]
+[wt 1.0]
+[fadeout white 1.0]
+
+＠アシュタレト・オリジン
+[f medium][messageShake 0.05 7 5 0.7]アア[line 3]アアア[line 3][r]ア[line 3]アアアァアアアア[line 6]！！！！！！
+[k]
+
+[messageOff]
+[wait fade]
+[seStop ad34 1.0]
+[seStop ad64 1.0]
+[cameraHome 0.1]
+[scene 83701]
+[bgmStop BGM_EVENT_24 1.2]
+[wt 1.0]
+[fadein white 2.0]
+[wait fade]
+
+[wt 3.0]
+
+[fadeout black 2.0]
+[wait fade]
+[scene 83503]
+
+[charaSet E 11009001 1 Ｓイシュタル]
+[charaSet F 6018002 1 Ｘ]
+[wt 1.5]
+[fadein black 2.0]
+[wait fade]
+
+[wt 0.5]
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠ジェーン
+あ、イシュタリん戻ってきた～☆[r]お帰り～！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.2 0,50]
+[wt 0.1]
+[charaMove E 1 0.3]
+[se ad223]
+
+[charaFace E 29]
+
+＠Ｓイシュタル
+うひゃあ、つっかれたぁ……[r]なんかもう自分でも意味不明な展開だったわ……
+[k]
+
+＠Ｓイシュタル
+アシュタレトと記憶がごっちゃになるわ、[r]立っているだけで胸が燃えるように熱いわ、
+[k]
+
+＠Ｓイシュタル
+原子を把握するのがめっちゃ大変で、[r]自分が大きいのか小さいのかすら分からないわ、
+[k]
+
+[charaFace E 25]
+
+＠Ｓイシュタル
+とにかく、あんな霊基は二度とゴメン！[wt 0.6][charaFace E 1][r]やっぱりこの私が一番！
+[k]
+
+？1：お疲れさま
+？2：見てるこっちも訳が分からなかったよ
+
+？！
+
+[charaFace E 9]
+
+＠Ｓイシュタル
+わわ、甲板で待っててくれたの！？[r]危ないからコクピットにいて良かったのに！？
+[k]
+
+[charaFace E 3]
+
+＠Ｓイシュタル
+（って、なんでこんなに動揺してるの私！？[r]　アシュタレト！？　アシュタレトの影響！？）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠ジェーン
+二人とも仲いいんだから～☆[r]抱き合うなら舟の中で[line 3]って、[wt 0.1][messageShake 0.07 7 6 0.3][bgmStop BGM_EVENT_2 0.3][charaFace B 2]えええ！？
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠ジェーン
+上、上！　二人とも、上ーーー！[r]ベル・マアンナが落ちてくるーーーー！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 31]
+[charaFadein E 0.1 1]
+
+＠Ｓイシュタル
+！？　オリジンは消滅したのに[r]神殿は残ってるの！？
+[k]
+
+＠Ｓイシュタル
+って、こっち来る、倒れてくるーーー！？[r]間に合わないんですけどーーー！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠ジェーン
+きゃーーーー！[r]でっかいイシュタリんに潰されちゃーーーう！
+[k]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+＠？？？
+[charaTalk F]
+ご安心を、ピンチの時こそセイバーあり！[r]でも止まれないのでちょっと退いてくださーーーい！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+[charaFadeout B 0.1]
+[scene 83701]
+[wt 0.2]
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+？1：その声は！？
+？2：セイバー忍法！
+
+？！
+
+＠？？？
+ええい、退いてくれないならぶっ壊すのみ！
+[k]
+
+＠？？？
+いくぞ第二宝具、[r]たった今生まれ変わった銀河流星剣XEX！
+[k]
+
+＠？？？
+相手が物理なら、斬れぬものはありませーーーん！
+[k]
+
+[messageOff]
+[se ad682]
+[effect bit_talk_gram_slash_03]
+[effect bit_talk_gram_slash_03 0,0 H]
+[wt 0.5]
+
+[seStop ad682 0.2]
+[charaEffect I bit_talk_explosion 120,-100]
+[se ad38]
+[se ad608]
+[shake 0.07 4 2 1.2]
+[wt 0.6]
+[seStop ad38 0.3]
+[seStop ad608 0.3]
+
+[charaEffect J bit_talk_explosion -100,40]
+[se ad608]
+[se ad609]
+[seVolume ad609 0 0.6]
+[shake 0.07 3 5 1.5]
+[wt 0.7]
+[seStop ad608 0.3]
+[seStop ad609 0.3]
+
+[charaEffect J bit_talk_explosion]
+[se ad38]
+[se ad608]
+[se ad609]
+[seVolume ad609 0 0.6]
+[shake 0.07 8 10 1.5]
+[wt 1.0]
+[seStop ad38 0.3]
+[seStop ad608 0.3]
+[seStop ad609 0.3]
+
+[charaEffect I bit_talk_explosion -120,-70]
+[se ad38]
+[se ad608]
+[shake 0.07 4 2 1.2]
+[wt 0.6]
+[seStop ad38 0.3]
+[seStop ad608 0.3]
+
+[charaEffect J bit_talk_explosion_triple02]
+[se ad38]
+[se ad608]
+[se ad609]
+[seVolume ad609 0 0.6]
+[shake 0.07 8 10 1.5]
+[wt 1.0]
+[seStop ad38 0.3]
+[seStop ad608 0.3]
+[seStop ad609 0.3]
+
+[effect bit_talk_explosion 60,140]
+[se ad608]
+[se ad609]
+[seVolume ad609 0 0.6]
+[shake 0.07 3 5 1.5]
+[wt 0.7]
+[seStop ad608 0.3]
+[seStop ad609 0.3]
+
+[effect bit_talk_explosion -100,40]
+[se ad608]
+[se ad609]
+[seVolume ad609 0 0.6]
+[shake 0.07 3 5 1.5]
+[wt 0.7]
+[seStop ad608 0.3]
+[seStop ad609 0.3]
+
+[effect bit_talk_explosion_triple02]
+[se ad38]
+[se ad608]
+[se ad609]
+[seVolume ad609 0 0.6]
+[shake 0.07 8 10 1.5]
+[wt 1.0]
+
+[fadeout white 1.2]
+[wait fade]
+[effectDestroy]
+[seStop ad38 0.5]
+[seStop ad608 0.5]
+[seStop ad609 0.5]
+[scene 83503]
+[wt 1.2]
+[fadein white 1.0]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠Ｘ
+けほっ、[charaMoveReturn F 0,-5 0.4][wt 0.4]けほっ！[charaMoveReturn F 0,-5 0.4][wt 0.4]
+[k]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠Ｘ
+なんか誰かに似ている建造物でしたが、[r]いったい何があったのでしょうか！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[effectDestroy]
+[fowardEffectDestroy]
+
+[charaTalk off]
+[charaFace B 6]
+[charaFace E 7]
+[charaFadein B 0.1 0]
+[charaFadein E 0.1 2]
+
+＠ジェーン＆Ｓイシュタル
+Ｘ！？
+[k]
+
+？1：無事だったんですね！
+
+？！
+
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠Ｘ
+ええ、もちろんです。[r]ただいま戻りました、[%1][&君:さん]。
+[k]
+
+＠Ｘ
+いやあ。[r]ダーク・マアンナの爆発で吹き飛ばされた時、
+[k]
+
+＠Ｘ
+『よし、今度こそ気持ち良く死んだ！』と確信し、[r]実際あの世まで到達した筈なのですが、
+[k]
+
+[charaFace F 0]
+
+＠Ｘ
+……なんていうか、誰かに叱られて、[r]追い返された気がするのです。
+[k]
+
+＠Ｘ
+『おやつタイムだから戻ってこないでください』[r]みたいな。
+[k]
+
+[charaFace F 1]
+
+
+＠Ｘ
+その後、雀たちに助けられて体力を取り戻し、
+[k]
+
+＠Ｘ
+こちらで激しいエーテル反応があったので[r]急いで駆けつけた次第です。
+[k]
+
+[charaFace F 4]
+
+＠Ｘ
+えーと……[r]それで、スペース神陰流はどうなりました？
+[k]
+
+＠Ｘ
+わたしの出番はここからフル回転の予定なのですが。[r]今の当たりではせいぜい左中間ツーベースというか……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 30]
+[charaFadein E 0.1 1]
+
+＠Ｓイシュタル
+[line 3]ふ。ふふ、あはははは！
+[k]
+
+＠Ｓイシュタル
+ベル・マアンナを一撃で壊しておいて[r]まだ元気とか、サーヴァントってこれだから！
+[k]
+
+＠Ｓイシュタル
+『原始の女神』なんて、[r]ちっとも宇宙のピンチじゃなかったわね！
+[k]
+
+？1：Ｓイシュタル？
+？2：Ｘ師匠はかなり特別枠だよ？
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠ジェーン
+いいのいいの。イシュタリんがそう感じたのなら、[r]きっとそれが真実なんだよ。
+[k]
+
+＠ジェーン
+どんなにひどいコトがあっても笑っていられる。[r]自分が何者であっても笑っていられる。
+[k]
+
+＠ジェーン
+特別なコトだらけで、特別なコトは気にならない。[r]少なくとも、この蒼輝銀河ではね☆
+[k]
+
+？1：なるほど！
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠Ｘ
+和やかに笑い合う[%1][&君:さん]、[r]イシュタル、ジェーン……
+[k]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+＠Ｘ
+どう見てもエンドロールじゃないですか……[r]事件、終わっちゃってるじゃないですか……
+[k]
+
+＠Ｘ
+というか、薄々気づいてはいたのですが……
+[k]
+
+[bgm BGM_EVENT_27 0.1]
+
+[charaFace F 7]
+
+＠Ｘ
+[f medium][messageShake 0.06 8 5 0.7]これ、ぜんぜんセイバーウォーズじゃないじゃん！[r]わたしの活躍、ほぼありませんでしたよね！？
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_27 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

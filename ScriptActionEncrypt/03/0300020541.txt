@@ -1,0 +1,412 @@
+
+
+＄03-00-02-05-4-1
+[soundStopAll]
+
+[charaSet A 8001410 1 マシュ]
+[charaSet B 98002000 1 フォウ]
+[charaSet C 1098153600 1 ゲルダ]
+[charaSet D 2031000 1 ナポレオン]
+[charaSet E 8001400 1 マシュ_バイザー]
+[charaSet F 2031000 1 炎の快男児]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[charaFilter D silhouette 00000080]
+
+[scene 61800]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk off]
+[charaDepth E 2]
+[charaDepth A 1]
+
+[charaFace E 15]
+[charaFadein E 0.4 1]
+[wt 0.7]
+
+[se ade18]
+[seVolume ade18 0.0 0.5]
+
+[wt 0.5]
+[seStop ade18 0.8]
+[wt 1.5]
+
+[charaFace A 15]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[charaFadeout E 0.4]
+[wt 0.2]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+
+[charaDepth E 0]
+[charaDepth A 0]
+
+[wt 0.7]
+
+[bgm BGM_EVENT_81]
+
+[charaFace A 4]
+
+＠マシュ
+……はあっ、はっ……はあっ、はあっ、はあっ……
+[k]
+
+[charaFace A 7]
+
+＠マシュ
+…………御使い、全個体の消滅を確認しました。[r]集落にも被害ありません！
+[k]
+
+[charaFace A 12]
+
+＠マシュ
+ここまでの数が、[r]一気に来るなんて[line 3]
+[k]
+
+[charaFace A 7]
+
+＠マシュ
+[#霊基外骨骼:オ ル テ ナ ウ ス]の出力低下。自動調律機能によって[r]十秒で回復します。敵増援まで十秒間の猶予があれば、
+[k]
+
+[charaFace A 2]
+
+＠マシュ
+なんとか！[r]やれます！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠フォウ
+フォウ、フォウフォッ！[r]キャキャウ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……魔力反応が更に複数、上空に集まっています。[r]ある程度の戦力を確保した上で強襲をかけるつもりかと。
+[k]
+
+＠マシュ
+外骨骼の自動調律の時間はありそうですが、[r]これは……どこまで御使いが攻撃を続けるつもりかで、
+[k]
+
+＠マシュ
+状況が大きく変わります……[r]くっ……
+[k]
+
+？1：ボーダーからの援軍は望めない以上
+？2：ここで踏ん張るしかない[line 3]
+
+？！
+
+[charaFace A 7]
+
+＠マシュ
+………………はい。
+[k]
+
+[messageOff]
+[fadeout black 0.7]
+[bgm BGM_EVENT_81 1.0 0.5]
+[wait fade]
+[wipeFilter cinema 0.5 0]
+[charaPut A 0,-50]
+[charaFace A 8]
+[wt 0.5]
+[fadein black 0.7]
+[wait fade]
+
+＠マシュ
+（戦力差は明確……）
+[k]
+
+＠マシュ
+（最初の一騎目と同じ程度の魔力を有した[r]　ワルキューレが来た時に、わたしと、先輩は……）
+[k]
+
+＠マシュ
+（勝てる[line 3]？）
+[k]
+
+＠ゲルダ
+ね、ねえ、マシュさま。マシュさま。[r]もうやめて？
+[k]
+
+[messageOff]
+[fadeout black 0.7]
+[wait fade]
+[wipeOff]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0]
+[charaPut A 2]
+[wt 0.5]
+[fadein black 0.7]
+[bgm BGM_EVENT_81 1.0 1.0]
+[wait fade]
+
+＠ゲルダ
+もう御使い同士で喧嘩はしないで。[r]マシュさま、とっても苦しくて辛そうよ……ねえ……
+[k]
+
+＠マシュ
+……。[r]……。
+[k]
+
+[charaFace A 12]
+
+＠マシュ
+…………ゲルダ、さん[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠ゲルダ
+花束を貰った大人は扉の向こうに行くの。[r]そういう風に決まってるの、ずっとずっと昔から！
+[k]
+
+＠ゲルダ
+そうしたら巨人がすぐにやってきて、[r]あっという間に誰も彼もをぺしゃんこにするわ。
+[k]
+
+＠ゲルダ
+何度も扉の隙間からあたしは見たの。[r]ぺしゃんこよ。何も言えないし、何もできないの……
+[k]
+
+[charaFace C 0]
+
+＠ゲルダ
+…………でも平気なのよ、怖くはないの。
+[k]
+
+＠ゲルダ
+御使いが見ていてくれればヴァルハラに行けるから！[r]それが神さまの決めたことだから！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 1.5]
+[charaFace C 7]
+[wt 1.0]
+[charaFace C 5]
+
+＠ゲルダ
+なにも悪いことはないの。[r]ちょっとだけ、ほんのちょっとだけ、怖いけど……
+[k]
+
+＠ゲルダ
+ぺしゃんこになってしまえば、いい、だけだから[line 3]
+[k]
+
+？1：いいわけ！　ない[&だろ:よ]！
+
+？！
+
+？1：死なせないし死なせたくない！　誰も！
+
+？！
+
+[messageOff]
+[bgm BGM_EVENT_24 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+＠マシュ
+…………………………先輩[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+
+[charaFace A 16]
+[charaFadein A 0.1 2]
+
+＠ゲルダ
+どうして？
+[k]
+
+＠ゲルダ
+だって、ずっと、ずうっと昔からそう決まって……
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……。[r]……。
+[k]
+
+＠マシュ
+…………ごめんなさい、ゲルダさん。[r]盾は降ろしません。
+[k]
+
+[charaFace A 7]
+
+＠マシュ
+それが絶対の決まりで、望まれていたとしても……[r]わたしは[line 3]
+[k]
+
+[charaFace A 2]
+
+＠マシュ
+[#わたしたちは]……！！[r]何ひとつだって、諦めたくはありません！
+[k]
+
+＠マシュ
+こぼれる命がひとつでも、ふたつでも、幾億でも……！
+[k]
+
+[messageOff]
+[charaFace A 6]
+
+[se ad659]
+[wt 1.5]
+
+[charaFace A 2]
+
+＠マシュ
+魔力反応！　先輩、敵複数が同時に急降下しています！[r]これは、宝具を一斉使用[line 3]
+[k]
+
+[maskout white 2.0]
+[seStop ad659 1.0]
+[se ade8]
+[bgmStop BGM_EVENT_24 1.0]
+[wait mask]
+[wt 2.0]
+
+
+[messageOff]
+
+[cueSe Battle bac422]
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+
+[wt 2.0]
+[cueSeStop bac422 0.3]
+
+[scene 10001]
+[maskin white 0.1]
+[wait mask]
+
+＠マシュ
+何か、強力な光が御使いに放たれて[line 3][r]銃声！？　いえ……！
+[k]
+
+＠マシュ
+これは[#砲声]です！
+[k]
+
+[wt 1.0]
+
+[messageOff]
+[fadeout white 0.1]
+[wait fade]
+
+[scene 61800]
+
+
+[effect bit_talk_sparks 0,-30]
+
+[charaTalk off]
+[charaDepth D 2]
+[charaDepth F 1]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[se ad132]
+[wt 0.1]
+[seStop ad132 0.1]
+
+[fadein white 1.2]
+
+[bgm BGM_EVENT_91]
+[wait fade]
+
+[wt 1.0]
+
+＠
+[#其処:そ こ]には、炎が立っていた。
+[k]
+
+[wt 0.7]
+
+＠
+否[line 3][r]炎が如き、ひとりの男が立っていたのだ。
+[k]
+
+＠
+両腕で携えた巨大きわまる砲身を空へと向けながら、[r]朝陽の昇るさまにも似た、[#眩:まばゆ]い笑顔を浮かべて。
+[k]
+
+＠
+快男児が。[r]ただ、此処にいる誰よりも堂々と[#聳:そび]え立っていた。
+[k]
+
+＠炎の快男児
+呼んだかい？[r][line 3]ああ、呼んだよな。言わんでもいいぜ。
+[k]
+
+[messageOff]
+[charaFadeout D 0.7]
+
+[wt 0.5]
+
+[charaTalk on]
+[charaFace F 5]
+[charaPut H 1]
+[charaScale H 1.1]
+[charaEffect H bit_talk_41]
+[charaPut H -30,90]
+
+＠炎の快男児
+[f large]オレが！[wt 0.3]　ここに！[wt 0.3]　いるぜ！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_91 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

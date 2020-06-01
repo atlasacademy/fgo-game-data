@@ -1,0 +1,653 @@
+
+＄94-04-65-06-1-1
+
+[soundStopAll]
+
+[charaSet A 5033001 1 キルケー]
+[charaSet B 2009102 1 オリオン]
+[charaSet C 99502600 1 マシュ]
+[charaSet D 98111500 1 通信用ノイズ]
+[charaSet F 1038000 1 イアソン]
+[charaSet H 1098181810 1 オデュッセウス]
+[charaSet J 2012000 1 エウリュアレ]
+[charaSet K 7009001 1 アステリオス]
+[charaSet L 5017001 1 メディア・リリィ]
+
+[charaDepth B 8]
+[charaDepth F 6]
+
+[charaSet E 1001000 1 エフェクト用]
+[charaSet I 1001000 1 エフェクト用]
+[charaSet G 1098181810 1 オデュッセウス_演出用]
+
+[scene 20210]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaEffect E bit_talk_magic_circle]
+
+[charaPut E 1200,1200]
+[charaPut I 1]
+
+[fadein black 1.5]
+[wait fade]
+
+[effect bit_talk_kengekiall02]
+[wt 0.2]
+[se ad470]
+[seStop ad470 0.7]
+[wt 0.2]
+[se ad170]
+[charaEffect I bit_talk_kengekiall02 0,0 V]
+[wt 0.2]
+[se ad170]
+[wt 0.2]
+[se ad170]
+[wt 0.2]
+[se ad170]
+[wt 0.3]
+
+
+[charaPut E 1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[se ad39]
+[wt 1.3]
+
+[se bac68]
+[charaEffectStop E bit_talk_magic_circle]
+[wt 0.7]
+
+[fadeout white 0.3]
+[seStop ad39 0.3]
+[wait fade]
+
+[charaEffectDestroy E bit_talk_magic_circle]
+[charaFadeout A 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.1]
+
+[seStop bac68 0.5]
+
+[fadein white 0.5]
+[wait fade]
+
+[effect bit_talk_attack_buf]
+[se bas10]
+[wt 1.3]
+[effectDestroy]
+
+[charaMoveScale H 1.2 0.2]
+[charaMove H 0,10 0.2]
+[se bac2]
+[effect bit_talk_41]
+[charaFadeout H 0.2]
+[wt 0.2]
+[effectStop bit_talk_41]
+[effectDestroy]
+[wt 0.1]
+
+[charaEffect I bit_talk_shot_02]
+[se bac149]
+[wt 0.2]
+[se bac149]
+[wt 0.2]
+[se bac149]
+[wt 0.4]
+[effect bit_talk_14]
+[se bac151]
+[wt 0.2]
+
+[charaEffectDestroy I bit_talk_shot_02]
+
+[charaScale K 1.1]
+[charaTalk K]
+[charaFace K 5]
+[charaFadein K 0.1 1]
+[se ad671]
+[charaMoveScale K 1.0 0.3]
+[wt 1.3]
+
+[charaMove K 0,-10 0.3]
+[wt 0.2]
+[charaFace K 4]
+[se ad54]
+[seVolume ad54 0 0.8]
+[wt 1.3]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaScale H 1.0]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+[bgmStop BGM_EVENT_24 1.5]
+
+＠エウリュアレ
+ここまでね。[r]アステリオス、もういいわ。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠アステリオス
+ん。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 1]
+[charaFadein L 0.1 1]
+
+＠メディア・リリィ
+お二人ともありがとうございます。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace K 0]
+[charaFadein K 0.1 0]
+[charaFace J 1]
+[charaFadein J 0.1 2]
+
+＠エウリュアレ
+別にいいわ。トラップを考えるの、[r]なかなか面白かったし。
+[k]
+
+＠エウリュアレ
+アステリオス、帰るわよ。[r]乗せていってちょうだいな。
+[k]
+
+
+＠アステリオス
+りょうかい。
+[k]
+
+[charaFace K 3]
+
+
+＠アステリオス
+じゃ、ますたぁ。[r]ばいばーい！
+[k]
+
+？1：ばいばーい！
+？！
+
+
+[messageOff]
+[charaTalk off]
+[wt 0.3]
+[charaMove J 206,0 0.5]
+[charaMove K -306,0 0.5]
+[charaFadeout J 0.4]
+[charaFadeout K 0.4]
+[se ad60]
+[seStop ad60 2.0]
+[wt 2.0]
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠オデュッセウス
+では、喋っていただこうか。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 1]
+[charaFadein L 0.1 1]
+
+＠メディア・リリィ
+はい！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠キルケー
+……嫌な予感しかしないな……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 1]
+[charaFadein L 0.1 1]
+
+＠メディア・リリィ
+それはもちろん。[r]キルケー叔母さまと仲良くなってもらうためです！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+
+[bgmStop BGM_EVENT_2 0.1]
+
+＠オデュッセウス
+……。[r]……。
+[k]
+
+[charaFace H 4]
+
+＠オデュッセウス
+……失礼。[r]今、何と？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 1]
+[charaFadein L 0.1 1]
+
+＠メディア・リリィ
+ですから。
+[k]
+
+[messageOff]
+[cameraMove 0.2 0,-60 1.2]
+[wt 0.2]
+
+[effect bit_talk_41 0,60]
+[se ade242]
+
+[charaFace L 2]
+
+＠メディア・リリィ
+オデュッセウスさんと叔母さまが、[r]仲良くなって欲しかったのです！
+[k]
+
+[messageOff]
+[effectStop bit_talk_41]
+[effectDestroy]
+[cameraHome 0.4]
+[wt 0.5]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_27 0.1]
+
+＠キルケー
+な[messageShake 0.01 5 5 0.7]、な、な、何だソレ[line 3]！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 5]
+[charaFadein L 0.1 1]
+
+＠メディア・リリィ
+キルケー叔母さま。
+[k]
+
+＠メディア・リリィ
+キルケー叔母さまは[r]覚えていらっしゃらないかもなのですが。
+[k]
+
+
+＠メディア・リリィ
+酔っ払って[#前後不覚:ぜんごふかく]になると、[r]叔母さまは大体、オデュッセウスさんの話になります。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠キルケー
+ゲエー！（おぼえてない）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+＠メディア・リリィ
+生前であるならば、[r]互いに互いの地位が邪魔をしていました。
+[k]
+
+＠メディア・リリィ
+英雄、魔女、王、女神……。
+[k]
+
+＠メディア・リリィ
+でも、サーヴァントとしてなら気兼ねなく、[r]仲良くできますよね？
+[k]
+
+[charaFace L 1]
+
+
+＠メディア・リリィ
+私とイアソンさまみたいに！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 16]
+[charaFadein F 0.1 1]
+
+
+＠イアソン
+え、オレは別に（仲良くないと思うし[r]仲良くなりたいとも思っていないけど）
+[k]
+
+[messageOff]
+
+[charaTalk B]
+[charaFace B 2]
+
+[charaFadein B 0.1 150,10]
+[charaMove B 0,75 0.2]
+[se ad7]
+[wt 0.4]
+
+＠オリオン
+話がややこしくなるから、[r]ちょっとお静かに！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠オデュッセウス
+……。[r]……なるほど。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+[bgmStop BGM_EVENT_27 1.5]
+
+＠キルケー
+そ、そんな理由でこれだけのコトを[r]派手にやらかしたのかい！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠メディア・リリィ
+はい。
+[k]
+
+
+＠メディア・リリィ
+だって、そうでもしないと[r]カルデアにいる間、一生愚痴ってそうなので。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠キルケー
+おおう……さっぱり身に覚えがない……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠オデュッセウス
+とはいえ、記憶を奪ったのはやりすぎだと[r]思うのだが、どうかな？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+＠メディア・リリィ
+それについては、[r]大変失礼いたしました。
+[k]
+
+[charaFace L 4]
+
+＠メディア・リリィ
+何度シミュレートしても……。
+[k]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+＠メディア・リリィ
+記憶があった状態でスタートした場合、[r]お二人は破綻していたので。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠キルケー
+破綻……。[r]……まさか！
+[k]
+
+
+＠キルケー
+メディア、まさかとは思うが……。[r][#あの記憶を返していないんじゃないだろうね]？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 4]
+[charaFadein L 0.1 1]
+
+＠メディア・リリィ
+それは[line 3]
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠キルケー
+……。[r]……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠オデュッセウス
+どういうことだ？[r]俺にはまだ、欠落している記憶があると？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 4]
+[charaFadein L 0.1 1]
+
+＠メディア・リリィ
+でも、あの人がいる限り……。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠キルケー
+メディア。
+[k]
+
+[charaFace A 4]
+
+＠キルケー
+……まあ、魔女ならではの短絡的かつ[r]悪辣なやり口は私好みだけど。
+[k]
+
+[charaFace A 5]
+
+＠キルケー
+それでも、コレは彼と私の問題だ。[r]彼に記憶を返せ。
+[k]
+
+＠キルケー
+先ほどの戦闘の勝利報酬と考えれば、[r]問題はないだろう？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 4]
+[charaFadein L 0.1 1]
+
+＠メディア・リリィ
+はい……。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠キルケー
+第一、第一だ。[r][#私が固執しているのは違うんだよ]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+＠メディア・リリィ
+それでは、記憶をお返ししますね。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+[charaPut G 1]
+[charaFace G 4]
+[charaFadeTime G 0 0.5]
+
+＠オデュッセウス
+あ、ああ。[r]受け取ろう。
+[k]
+
+[messageOff]
+
+[charaFace H 0]
+[effect bit_talk_gold_kamui 35,-15]
+[se bas2]
+[wt 3.0]
+[charaFace H 8]
+[charaFace G 8]
+[effectStop bit_talk_gold_kamui]
+[se bas6]
+[wt 1.8]
+[effectDestroy]
+
+[charaDepth H 6]
+[charaDepth G 9]
+
+[charaMoveScale G 1.2 0.4]
+[charaMove G 0,10 0.4]
+[wt 0.4]
+[charaFadeout G 0.3]
+[wt 0.6]
+
+[charaFace H 5]
+
+＠オデュッセウス
+……これは……。
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

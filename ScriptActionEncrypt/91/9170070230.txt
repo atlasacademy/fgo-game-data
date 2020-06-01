@@ -1,0 +1,353 @@
+＄91-70-07-02-3-0
+[charaSet A 7007001 1 ヴラド三世]
+[charaSet B 99502600 1 マシュ]
+[charaSet C 98006300 1 魔術師]
+[charaSet D 98013200 1 ドラゴン]
+
+[bgm BGM_EVENT_5 0.1]
+[scene 10912]
+[fadein black 1.5]
+[wait fade]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+
+＠ヴラド三世
+さて。残るは魔術師か。[r]……出てこい、とは言わん。
+[k]
+
+＠ヴラド三世
+ただ、辺獄の果ての果てまで探し尽くす。[r]我が異名“串刺し公”を存分に思い知るがいい。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[charaShake C 0.01 4 4 0.7]
+[bgmStop BGM_EVENT_5 0.7]
+＠魔術師
+……き、貴様たちは、何者だ……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[bgm BGM_EVENT_1 0.1]
+
+＠ヴラド三世
+そんなことも分からぬか。[r]ヴラド・ツェペシュ[line 2]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠魔術師
+ワラキアの……ヴラド三世？　[#戯言:ざれごと]を。[r]ヴラド公など、とうの昔に滅びている！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ヴラド三世
+そう、その通り。[r]余はワラキアの王として戦い、滅んだ。
+[k]
+
+＠ヴラド三世
+それは全て終わったこと、歴史に呑み込まれた出来事だ。[r]しかし[line 2][charaFace A 5]それを後から糊塗されるのは我慢ならぬ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠魔術師
+……なんの、ことだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[bgmStop BGM_EVENT_1 0.7]
+
+＠ヴラド三世
+知らずともよかろう。[r]……滅ぶのだから、お前は。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaShake C 0.01 0 5 0.4]
+[bgm BGM_EVENT_3 0.1]
+
+＠魔術師
+ひっ……。い、嫌だ！[r]召喚……召喚だ！　出てこい、私を助けろ！
+[k]
+
+[charaPut D 0,0]
+[charaEffect D bit_talk_36]
+＠魔術師
+助けてくれ……！！[se ad39]
+[k]
+
+[charaFadeout C 0.1]
+[charaPut D 0,-1000]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 14]
+[charaEffect B bit_talk_10]
+[charaFadein B 0.1 1]
+＠マシュ
+召喚陣……！[r]まさか、また何か召喚しようとしていたのですか！？
+[k]
+
+[messageOff]
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+[wt 0.4]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[effect bit_talk_36]
+[se su4]
+[fadeout white 2.0]
+[wait fade]
+[charaEffectStop D bit_talk_36]
+[effectStop bit_talk_36]
+[shake 0.01 1 1 0]
+[wt 1.0]
+[fadein white 2.0]
+[wait fade]
+[se ad14]
+[seVolume ad14 0 0.4]
+
+＠魔術師
+おお！　きた、きたぞ……！[r]殺せ！　奴らを皆殺しにしろ……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ヴラド三世
+[line 2]さて、何を召喚したのやら。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 6]
+[charaEffect B bit_talk_10]
+[charaFadein B 0.1 1]
+＠マシュ
+この極大生体反応……まさか……！？
+[k]
+
+[messageOff]
+[charaPut B 0,-10000]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[se ad17]
+[shake 0.01 0 5 2.0]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 2.0]
+[shakeStop]
+[seStop ad14]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+十九世紀の土地に……ドラゴンを召喚なんて……！？
+[k]
+
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠ヴラド三世
+驚くには当たるまい。
+[k]
+
+＠ヴラド三世
+七つの時代が焼却されたこともあるのだ。[r]修復中ならば、このような事も起こりえようよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOff]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaPut D 0,0]
+
+＠魔術師
+や、やった……やったぞ！[r]我が一族の宿願が、遂に叶った！
+[k]
+
+＠魔術師
+これよりこの竜種を以て、[r]ロンドンの魔術師を支配下に置く！
+[k]
+
+＠魔術師
+時計塔の[#貴族:ロード]など、[r]これで一挙に根絶やしに[charaShake C 0.01 0 5 0.4][se ad46][charaEffect D bit_talk_35][line 9]。
+[k]
+
+
+＠魔術師
+……あれ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 15]
+[charaEffect B bit_talk_10]
+[charaFadein B 0.1 1]
+
+＠マシュ
+魔術師が……！
+[k]
+
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaShake C 0.01 5 5 0.7]
+＠魔術師
+ぎゃああああああああああああああ！！！[r]く、くわれ！　くわれる……！？
+[k]
+
+＠魔術師
+なんで！　私が召喚したのに……何故だあ！？[r]やめ[se ad46][charaEffect D bit_talk_35]……[charaShake C 0.01 5 5 0.7]ぎゃああああああああああ！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.7]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ヴラド三世
+無様な。偶然と好機が重なり竜種を召喚したとて、[r]統べることができなくては、どうにもならんか。
+[k]
+
+＠ヴラド三世
+よかろう。[r]さあ、[charaFace A 2]窮極の幻獣[line 2]竜種よ！
+[k]
+
+＠ヴラド三世
+我が父はそなたらの名を尊び、[r]そなたらの姿を武の極限とした！
+[k]
+
+＠ヴラド三世
+その息子である余は竜ではなく悪魔として[r]敵兵に、領民、歴史にすら貶められた！
+[k]
+
+＠ヴラド三世
+その余がいま、父が夢想したそなたと相対している。[r]なんという皮肉、なんという逆説か！
+[k]
+
+＠ヴラド三世
+だがこの数奇に感謝しよう！[r]倒錯しているが相手にとって不足なし。
+[k]
+
+＠ヴラド三世
+[#悪魔:ドラクル]たるこのヴラド三世が、[r]そなたの首に牙を突き立ててやろうではないか！
+[k]
+
+[messageOff]
+[se ad17]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+[charaTalk B]
+[charaFace B 2]
+[charaEffect B bit_talk_10]
+[charaFadein B 0.1 1]
+
+＠マシュ
+竜種、来ます……！！
+[k]
+
+？1：やるぞ！
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ヴラド三世
+応とも！[r]我が槍の冴え、見るがいい！
+[k]
+
+？2：街の人たちを守るぞ！
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ヴラド三世
+……うむ！[r]この状況でそれに気を配るとは、さすがは余のマスター。
+[k]
+
+＠ヴラド三世
+時代が時代ならば、[r]それは王の器と呼ぶに相応しい！
+[k]
+
+＠ヴラド三世
+さあ、やるぞ！
+[k]
+
+？！
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

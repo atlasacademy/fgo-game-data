@@ -1,0 +1,940 @@
+
+
+
+＄03-00-06-18-1-1
+
+[soundStopAll]
+
+
+[charaSet A 1098128200 1 カイニス]
+[charaSet B 1098182610 1 ケルベロス]
+[charaSet C 9005001 1 ホームズ]
+[charaSet D 1098118410 1 リンボ]
+[charaSet E 1017002 1 武蔵]
+[charaSet F 1098164600 1 芦屋道満_上半身シルエット]
+[charaSet G 8001410 1 マシュ]
+[charaSet H 1098127610 1 ペペロンチーノ]
+[charaSet I 7010001 1 カリギュラ]
+[charaSet J 8001400 1 アーマード・マシュ]
+
+[charaSet S 5009000 1 エフェクト用ダミー]
+[charaSet T 5009000 1 エフェクト用ダミー]
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 91600]
+
+[fadein black 0.7]
+[wait fade]
+
+[se ad85]
+[effect bit_talk_v_slash02]
+[wt 0.4]
+
+[se ad170]
+[se ad881]
+[flashin once 0.1 0.1 02010CFF 02010C80]
+[effect bit_talk_14]
+[wt 0.6]
+
+[se ad671]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 -120,0]
+[charaMove A -30,0 0.25]
+[wt 0.2]
+[charaMove A 0,0 0.4]
+[wt 0.8]
+[charaFace A 2]
+
+＠カイニス
+おおおおおおおおおおおおおッ！
+[k]
+
+[messageOff]
+[se ad678]
+[seVolume ad678 0 0.4]
+[charaMoveScale A 1.1 0.2]
+[charaMove A 0,15 0.2]
+[charaFadeout A 0.2]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[wt 0.2]
+[blurOff motion 0.6]
+[wt 0.6]
+[charaScale A 1.0]
+
+[se ad715]
+[se ad897]
+[effect bit_bolg_01]
+[effect bit_bolg_02]
+[se bac403]
+[wt 0.6]
+[effectDestroy bit_bolg_01]
+[effectDestroy bit_bolg_02]
+
+[fowardEffect bit_talk_blood_splash 0,0 H]
+[se ad464]
+[shake 0.05 1 2 1.2]
+[wt 1.5]
+
+[se ad772]
+[shake 0.05 3 3 1.2]
+[wt 2.0]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠ホームズ
+仕上げといこう！[r]バリツ！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[cueSe Battle bac449]
+[wt 0.4]
+[cueSeStop bac449 0.4]
+[cueSe Battle bac450]
+[wt 0.4]
+[charaRoll S 205]
+[charaPut S 50,-550]
+[charaEffect S bit_talk_gram_slash_03]
+[wt 0.4]
+
+[cueSeStop bac450 0.4]
+[flashin once 0.1 0.1 9effffFA 9effff80]
+[wt 0.1]
+
+
+[seStop bac450 0.5]
+[wt 1.0]
+[se ad773]
+
+[cueSe Battle bac234]
+[effect bit_talk_impactlanding]
+[shake 0.05 0 2 2.0]
+[wt 2.6]
+
+[bgmStop BGM_EVENT_24 3.0]
+
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+＠リンボ
+おや？
+[k]
+
+＠リンボ
+おや、おやおや。おやおやおやおやおやおや。[r]アトランティスではそれなりに有効であったと……
+[k]
+
+＠リンボ
+拙僧、そのように聞いておりま[line 3]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[se bac306]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+[wt 0.8]
+[se ad73]
+
+[effect bit_talk_quickmove]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[fadeout black 0.2]
+[wait fade]
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+
+[se ad678]
+[se bac308]
+[effect bit_talk_h_slash01 0,0 V]
+[effect bit_talk_h_slash01 0,0 F]
+
+[wt 1.6]
+
+[se ad464]
+[effect bit_talk_blood_splash 0,0 H]
+[wt 2.0]
+[se adm39]
+
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 91600]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.8]
+
+[fadein black 1.0]
+[wait fade]
+
+＠F：リンボ
+おや、まあ[line 3]
+[k]
+
+
+[messageOff]
+[se ad596]
+[charaEffect F bit_talk_06b 0,-100]
+[wt 2.0]
+
+？1：やった……！？
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+
+[bgm BGM_EVENT_71 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠武蔵
+……いいえ。[r]あまりに手応えが薄い。
+[k]
+
+＠武蔵
+確かに命は断ったけど、霊核に届いていない。[r]残念だけど変わり身の類でしょうね。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth D 2]
+[charaDepth F 1]
+
+[charaPut D 1]
+[charaPut F 1]
+[charaFace F 0]
+[charaFace D 0]
+[charaFadein F 0.1 1]
+[wt 1.0]
+[charaEffectStop F bit_talk_06b]
+[se ad638]
+[charaSpecialEffect D appearance 6 1.5]
+[wt 1.8]
+[charaFadeout F 0.1]
+[wt 0.5]
+[charaFace D 4]
+[charaTalk on]
+[charaTalk depthOn]
+[charaEffectDestroy F]
+
+＠リンボ
+ン、ンン[line 3]
+[k]
+
+[charaFace D 6]
+
+＠リンボ
+ンン、ンンンンンンンン[#残念無念:ざんねんむねん]！[r]もはや式神程度では到底、貴様には敵わぬようだ！
+[k]
+
+[charaFace D 3]
+
+＠リンボ
+とは言え、道化の戯れも[#此度:こたび]はこのあたりで。[r]ええ。はい。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+＠マシュ
+……？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠リンボ
+なに、折角であれば掻き回しに掻き回すのが[r]我が本懐なれど[line 3]
+[k]
+
+[charaFace D 4]
+
+＠リンボ
+前回の無垢なる王とは違い、[r]此処の異聞帯の王は実に用心深く気難しい御方にて！
+[k]
+
+＠リンボ
+無論拙僧も試みてはみましたが、流石に、[r]我が手なぞには余る神格にて……
+[k]
+
+[charaFace D 0]
+
+＠リンボ
+…………果たして、貴方達はどうでしょうね？
+[k]
+
+[charaFace D 2]
+
+＠リンボ
+全能たる神、大西洋異聞帯の王！
+[k]
+
+＠リンボ
+かの大[#雷霆:らいてい]を前に如何するか！[r]ンンンンン、せいぜい足掻くがよろしいでしょう！
+[k]
+
+＠リンボ
+拙僧は、見守っていますぞ[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad442]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠カイニス
+うるせえ、ってんだよ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad171]
+
+[charaPut D 1]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[wt 0.1]
+
+
+[effect bit_talk_x_slash02]
+[wt 0.2]
+[se bac403]
+[se ad240]
+[fowardEffect bit_talk_35]
+[charaShake D 0.05 3 3 1.0]
+[charaFace D 5]
+[wt 0.8]
+
+＠リンボ
+ぐぶわッ。
+[k]
+
+＠リンボ
+……う、は、はは、はははははははは……！[r]どうぞどうぞ。是なる式神の肉体なぞ如何様にでも！
+[k]
+
+＠リンボ
+我が[#生活続命:しょうかつぞくみょう]の法は、是、無敵也！
+[k]
+
+[bgmStop BGM_EVENT_71 3.0]
+
+＠ペペロンチーノ
+へえ？[r][#生活続命:しょうかつぞくみょう]？
+[k]
+
+＠ペペロンチーノ
+それはまた大きく出たわね、リンボ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut D 1200,1200]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠マシュ
+！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad311]
+[seVolume ad311 0 0.1]
+[seVolume ad311 1.5 1.0]
+[wt 2.5]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.4 1]
+[wt 0.4]
+[seStop ad311 0.1]
+
+＠ペペロンチーノ
+殺しても殺しても[#蘇:よみがえ]る、不滅の霊基[line 3]
+[k]
+
+＠ペペロンチーノ
+そう何度も見せられたんじゃ、[r]いい加減、邪魔もしたくなるのが人情だと思わない？
+[k]
+
+＠ペペロンチーノ
+まあ、ね。よく隠蔽に隠蔽を重ねた術式ではある。[r]余人であればそうそう見抜けないでしょうけど、
+[k]
+
+＠ペペロンチーノ
+私には他人通がある。[r]お見通しよ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠マシュ
+ペペさん！？
+[k]
+
+？1：ペペ！
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_BATTLE_105 0.1]
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 1]
+＠ペペロンチーノ
+カルデアのアナタたち。[r]この好機、利用させてもらうけど悪しからず。
+[k]
+
+＠ペペロンチーノ
+さあ、アルターエゴ・リンボ。[r]インド異聞帯を好き放題に荒らしてくれたお礼……
+[k]
+
+[charaFace H 5]
+
+＠ペペロンチーノ
+ありがたく受け取りなさい！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+[charaPut T 1]
+[se ad924]
+[seVolume ad924 0 0.7]
+[charaEffect D bit_talk_shugendo01]
+[wt 2.0]
+[seVolume ad924 1.0 0.3]
+[charaFaceFade D 11 0.4]
+[wt 0.8]
+
+＠リンボ
+な……に……！？[r]これは、陰陽の……否！　否！
+[k]
+
+＠リンボ
+[f large]修験道かァ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut D 1200,1200]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠ペペロンチーノ
+アナタのためだけに編み上げた独自術式よ。[r]他人通と漏尽通の合わせ技[line 3]
+[k]
+
+＠ペペロンチーノ
+無数の式神に己を転写して命永らえる、[r]まがい物の[#生活続命:しょうかつぞくみょう]、此処で終わりと心得なさい。
+[k]
+
+＠ペペロンチーノ
+[#南無神変大菩薩:な む し ん ぺ ん だ い ぼ さ つ]・漏尽他人通！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+[se ad900]
+[se ad925]
+[charaEffect D bit_talk_shugendo02]
+[wt 2.5]
+[seVolume ad925 1.0 0.3]
+
+＠リンボ
+！？
+[k]
+
+＠ペペロンチーノ
+……憎悪と悔恨、たっぷり感じて死になさい。
+[k]
+
+[messageOff]
+[charaTalk D]
+[se ad926]
+[charaEffect D bit_talk_shugendo03]
+
+[wt 2.0]
+[seStop ad926 2.0]
+
+＠リンボ
+これは……！[r]これは、いけない……！
+[k]
+
+＠リンボ
+ああ、我が術が、我が奥義たる[#生活続命:しょうかつぞくみょう]の法を……[r]成る程貴様、[#輪廻転生のまがい物]として定めたかッ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut D 1200,1200]
+
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 1]
+＠ペペロンチーノ
+あら正解。[r]本来、漏尽通は自己の輪廻を終えるものだけれど、
+[k]
+
+＠ペペロンチーノ
+他人通を介して今回ばかりはアナタに[#あげる]わ。
+[k]
+
+[charaFace H 5]
+
+＠ペペロンチーノ
+死になさい。[r]式神で変わり身、なんて手品はこれでおしまい。
+[k]
+
+＠ペペロンチーノ
+次に目覚めた時がアナタの本当にして最後の命。[r]せいぜい大切に使うといいわ。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgmStop BGM_BATTLE_105 3.0]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠リンボ
+[f large]お、の、れェ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut D 1200,1200]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+＠ペペロンチーノ
+さよなら。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[wt 1.5]
+
+[se ad927]
+[seStop ad924 1.5]
+[seStop ad925 1.5]
+[charaEffectStop D bit_talk_shugendo01]
+[charaEffectStop D bit_talk_shugendo02]
+[charaEffectStop D bit_talk_shugendo03]
+[charaEffectStop D bit_talk_06]
+[charaEffectStop D bit_talk_06b2]
+[charaEffectStop D bit_talk_06_b3]
+
+
+[messageOff]
+[wt 2.5]
+[se ad753]
+[charaEffect D bit_talk_shikigami_break02 0,1]
+[wt 0.2]
+[charaFadeout D 0.4]
+[wt 7.0]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+[wt 1.2]
+
+？1：……ペペさん
+
+[charaFace H 9]
+
+＠ペペロンチーノ
+ええ。
+[k]
+
+？2：ありがとう、って言うべきなのかな
+
+[charaFace H 9]
+
+＠ペペロンチーノ
+あら、お礼なんて要らないわ。
+[k]
+
+？！
+
+[bgm BGM_MAP_50 0.1]
+
+＠ペペロンチーノ
+勘違いしないで頂戴ね。[r]私は私のすべき事をやっただけだもの。
+[k]
+
+＠ペペロンチーノ
+アナタたちもそうなさい。[r]邪魔はしないわ。
+[k]
+
+＠ペペロンチーノ
+今ので私の魔力も尽きちゃったし。[r]あとは高みの見物としゃれ込むわ。
+[k]
+
+[charaFace H 0]
+＠ペペロンチーノ
+キリシュタリアとアナタたちの戦い……[r]あいにく、応援はしてあげられないけどね？
+[k]
+
+＠ペペロンチーノ
+キリシュタリアはこう言っていたわ。
+[k]
+
+＠ペペロンチーノ
+“[%1]と私に、そう戦力の差はない”
+[k]
+
+＠ペペロンチーノ
+“これまでの旅、これまでの戦い、その全ての成果が、[r][f small]  [f -]それを証明している”
+[k]
+
+＠ペペロンチーノ
+“[&彼:彼女]には、[r][f small]  [f -]他の何に頼らずとも、私を打倒する力がある”
+[k]
+
+[charaFace H 9]
+
+＠ペペロンチーノ
+ってね。[r]私にはとてもそう思えないけど。ふふ。
+[k]
+
+？1：[line 6]。
+
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠マシュ
+[line 3]あの、それは。[r]キリシュタリアさんは、わたしたちを[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 1]
+＠ペペロンチーノ
+私、ここにきてやっと気がついたわ。[r]似てるのよ。キリシュタリアって。
+[k]
+
+＠ペペロンチーノ
+とっても努力家なところ。とっても真面目なところ。[r]当たり前のように困難に立ち向かうところ。
+[k]
+
+[charaFace H 4]
+
+＠ペペロンチーノ
+……そして。[r]きっと何度も、別れを重ねてきたところ。
+[k]
+
+＠ペペロンチーノ
+キリシュタリアは私でも、デイビットでも[r]倒しようのない人だけど……
+[k]
+
+[charaFace H 7]
+
+＠ペペロンチーノ
+アナタなら、いえ、アナタだけしか、[r]彼を倒してはいけない気がする。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+＠カイニス
+………………。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 1]
+＠ペペロンチーノ
+どう？　アトランティスでの借り、[r]ここで返す気になった？
+[k]
+
+？1：[line 3]はい。
+？2：今度こそ、全部の力で。
+
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadein G 0.1 1]
+＠マシュ
+マスター……
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 1.6]
+
+[bgmStop BGM_MAP_50 2.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠ペペロンチーノ
+いい[#気持ち:こ こ ろ]ね。[r]出し惜しみはなし、[#全身全霊:ぜんしんぜんれい]の自分[line 3]
+[k]
+
+＠ペペロンチーノ
+人理を修復した、ただひとりのマスターとして、[r]格の違いを見せつけてやるって感じ？
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[se ad564]
+[seVolume ad564 0 0.4]
+[wt 0.2]
+[shake 0.03 1 1 1.2]
+[wt 1.5]
+[seStop ad625 0.3]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+＠マシュ
+！
+[k]
+
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth G 1]
+[charaDepth J 2]
+
+[se ade57]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[charaTalk off]
+[charaFace J 7]
+[charaFadein J 0.4 1]
+[wt 0.8]
+[charaFadeout G 0]
+
+[charaFace J 2]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+＠J：マシュ
+視認できます[line 3]前方に敵性反応、多数！[r]幻獣型であると予想されます！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠ペペロンチーノ
+あら剣呑。そういえば、[r]無駄話をしている場合じゃなかったわね。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠カリギュラ
+……獣殺しか。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠武蔵
+ここから先は、徒歩で進むしかなさそうね。[r]というか、戦いながら前へと歩む！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠カイニス
+へっ！　ザコがどれだけ来ようと同じだ同じ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠ホームズ
+……肉体労働はそろそろ辛いが、仕方ない。[r]補佐は務めよう。
+[k]
+
+[charaFace C 7]
+
+＠ホームズ
+そしてスカンジナビア・ペペロンチーノ。[r]結果的に、とはいえ助力には感謝する。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 1]
+＠ペペロンチーノ
+どういたしまして。[r]さ、行きなさい。
+[k]
+
+＠ペペロンチーノ
+キリシュタリアは最後まで私に助けを求めなかった。[r]自分の正しさを信じているから。
+[k]
+
+＠ペペロンチーノ
+だから私も、彼の正しさとやらを見届けるわ。[r]遠くから、アナタたちの邪魔をしないように。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+
+＠武蔵
+わ。まさか天眼通持ち？[r]神通力沢山持ったマスターとか、珍しくない！？
+[k]
+
+[messageOff]
+[se ad564]
+[seVolume ad564 0 0.8]
+[wt 0.2]
+[shake 0.03 3 3 1.2]
+[charaFace E 5]
+[wt 1.5]
+
+＠武蔵
+おっと。
+[k]
+
+？1：正面突破！
+？2：……振り返らずにこのまま進む！
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 7]
+[charaFadein J 0.1 1]
+＠J：マシュ
+[line 3]了解。戦闘、開始します！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_80 2.0]
+[wait fade]
+[soundStopAll]
+[end]

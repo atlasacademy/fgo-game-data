@@ -1,0 +1,197 @@
+
+
+
+＄94-03-66-02-3-1
+
+[soundStopAll]
+[charaSet A 4032000 1 ライネス]
+[charaSet B 6005001 1 ジャック]
+[charaSet C 7006001 1 坂田金時]
+[charaSet D 1098166210 1 トリムマウ]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth A 2]
+
+[scene 72800]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ライネス
+なるほど、これで博物館は一周したね。
+[k]
+
+？1：誰もいなかったですね……
+？2：も、モンスター退治で疲れた……
+
+？！
+
+＠ライネス
+ところで、ひとつ尋ねておきたいんだが。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFace A 0]
+[charaFadein B 0.1 0]
+[charaFadein A 0.1 2]
+
+＠ジャック
+なになに？
+[k]
+
+[charaFace A 0]
+
+＠ライネス
+誰かがいなくなった、と思ったのは、[r]一体、どういうタイミングだったかな？
+[k]
+
+[charaFace B 4]
+
+＠ジャック
+……ええと、それも覚えてなくて。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0]
+
+＠坂田金時
+すまねえな、ガール。[r]オレも一緒なんだ。
+[k]
+
+＠ライネス
+なるほど、なるほど。
+[k]
+
+[charaFace A 1]
+
+＠ライネス
+誰がいついなくなったかも分からない失踪事件。[r]これはなんとも怪奇的だ。
+[k]
+
+[charaFace A 0]
+[se ad60]
+
+[charaMove A 80,0 1.0]
+
+＠ライネス
+じゃあ、今度は私と弟子のふたりだけで、[seStop ad60 0.5][r]博物館を捜してみても構わないかな？
+[k]
+
+[wait charaMove A]
+
+[se ad7]
+[charaFace C 3]
+[charaMove C -276,0 0.2]
+
+＠坂田金時
+顔近ぇって！　おおよそ片付けたから大丈夫とは思うが、[r]一応気をつけろよ？
+[k]
+
+[wait charaMove C]
+
+[charaFace A 1]
+
+＠ライネス
+ありがとう。[r]じゃあ、ちょっと行ってくるよ。
+[k]
+
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+
+[scene 72900]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[wt 1.0]
+
+？1：どうするんです？
+？2：何か、手がかりがありましたか？
+
+？！
+
+[charaFace A 1]
+
+＠ライネス
+ふむ。さてさて。[r]ちょっとぐらいは、掴めたかもしれないね？
+[k]
+
+[charaFace A 0]
+
+＠ライネス
+で、どうだった、トリム？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[se ad178]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect D appearance 1 0.25]
+[wt 0.4]
+
+？1：わっ！
+
+？！
+
+＠トリムマウ
+液状になって、一通り確認してきましたが、[r]隠し部屋の類はありませんでした。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ライネス
+だったら、可能性をひとつ潰せた。
+[k]
+
+[charaFace A 1]
+
+＠ライネス
+さて、我が弟子よ。[r]私たちが行くべき部屋が分かるかな？
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_70 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

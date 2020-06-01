@@ -1,0 +1,210 @@
+
+
+
+
+＄94-04-78-11-1-1
+
+
+[soundStopAll]
+
+[skip false]
+
+[maskout black 0]
+[wait mask]
+
+[charaSet A 9008001 1 アストライア]
+[imageSet B cut171_token_409 1]
+[charaSet C 3043000 1 エリセ]
+[charaSet D 98001000 1 マシュ]
+[charaSet E 2016000 1 エミヤ・オルタ]
+[charaSet F 5025001 1 エジソン]
+[charaSet G 1098192800 1 マリー]
+[charaSet H 98115000 1 エフェクト用]
+[charaSet I 98115000 1 エフェクト用2]
+[charaSet J 98115000 1 エフェクト用2]
+
+[scene 20730]
+
+[pictureFrameTop cut170_gameframe_bright]
+
+[skip true]
+
+[fadein black 0]
+[wait fade]
+[maskin black 1.0]
+[wait mask]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk depthOff]
+[charaDepth H 4]
+[charaDepth B 6]
+[charaDepth A 1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+[charaEffect A bit_talk_token_change01]
+[wt 1.0]
+
+
+＠アストライア
+みごとな戦いでした！[r]さあ、[#財宝:トークン]を返しましょう。収めなさい。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+[wt 0.3]
+
+[charaPut H -250,400]
+[charaPut I 0,400]
+[charaPut J 250,400]
+
+[charaEffect H bit_talk_token_change02]
+[charaEffect I bit_talk_token_change02]
+[charaEffect J bit_talk_token_change02]
+
+[charaMove H -250,0 2.0]
+[charaMove I 0,0 2.0]
+[charaMove J 250,0 2.0]
+[se adm19]
+[seVolume adm19 0 0.3]
+[seVolume adm19 1.0 1.0]
+[wt 2.0]
+
+[wt 1.5]
+[seStop adm19 1.0]
+[wt 2.5]
+[charaEffectDestroy H bit_talk_token_change02]
+[charaEffectDestroy I bit_talk_token_change02]
+[charaEffectDestroy J bit_talk_token_change02]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠アストライア
+判決を下します。[#私:わたくし]は、あなたのものとなりました。[r][%1]に正義の微笑まんことを！
+[k]
+
+[messageOff]
+[charaEffectStop A bit_talk_token_change01]
+[charaPut H 0,-10]
+[charaEffect H bit_talk_token_change02]
+[se ad39]
+[wt 3.2]
+
+[se ad29]
+[seStop ad29 1.5]
+[wt 0.5]
+[charaFadeout A 0.4]
+
+[charaTalk B]
+[charaFadein B 0.4 0,-210]
+[wt 0.5]
+
+[charaMove H 0,10 1.2]
+[wt 1.2]
+
+[charaFadeout B 0.4]
+[wt 0.5]
+
+[se adm19]
+[seVolume adm19 0 0.3]
+[seVolume adm19 1.0 1.0]
+[wt 0.5]
+
+[seStop adm19 1.7]
+[charaMove H 0,700 2.2]
+[wt 2.2]
+
+[charaEffectStop H bit_talk_token_change02]
+[wt 0.1]
+[charaEffectDestroy T bit_talk_token_change02]
+
+[charaTalk depthOn]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 0,-50]
+
+＠エリセ
+な……そんな……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 0,-50]
+
+＠マシュ
+最終ラウンドで決着がつきました。[r]先輩、わたしたちの勝利です！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+
+＠エミヤ・オルタ
+フン……やれやれ。やっと片づいたか。
+[k]
+
+[charaFace E 0]
+
+＠エミヤ・オルタ
+マスター、途中で手を抜いたか？[r]非情になりきれないのは、おまえの悪い癖だぞ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+
+＠エジソン
+ぎりぎりの勝負だったが、よくぞ粘ったものだ！[r]胸が震えるぞ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠マリー
+とっても楽しかったわ♪
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 0,-50]
+
+＠エリセ
+嗚呼……[r]……こんな、ことって……。
+[k]
+
+[messageOff]
+[maskout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

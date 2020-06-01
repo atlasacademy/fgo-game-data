@@ -1,0 +1,470 @@
+
+
+
+＄03-00-06-09-2-0
+
+
+[soundStopAll]
+
+[charaSet A 1009001 1 モードレッド]
+[charaSet B 7004001 1 フランケンシュタイン]
+[charaSet C 4023000 1 坂田金時]
+[charaSet D 7023001 1 源頼光]
+
+[charaSet R 5009000 1 エフェクト用ダミー]
+[charaSet S 5009000 1 エフェクト用ダミー]
+[charaSet T 5009000 1 エフェクト用ダミー]
+[charaSet Q 5009000 1 エフェクト用ダミー]
+
+[scene 92500]
+
+[charaPut Q 1]
+[charaEffect Q bit_talk_mind_poll_02]
+
+[wipeFilter cinema 0.5 0]
+[cameraFilter gray]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_122 0.1]
+
+
+[se ad33]
+[effect bit_talk_kengekiall02]
+[wt 0.8]
+
+[se ad85]
+[charaPut R -360,-100]
+[charaRoll R 80]
+[charaEffect R bit_talk_v_slash01]
+[wt 0.4]
+
+
+[se ad32]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+
+[charaPut R 2000,2000]
+[charaEffectStop R bit_talk_v_slash01]
+
+[se ad127]
+[seStop ad127 0.6]
+[charaScale A 1.2]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,20]
+[charaMove A 0,-50 0.2]
+[charaShake A 0.02 3 3 0.6]
+[charaMoveScale A 1.0 0.2]
+[wt 0.8]
+
+＠モードレッド
+違う、違う、違う[line 3]
+[k]
+
+＠モードレッド
+おまえのはずがない！[r]おまえが、オレの前にその姿で[#顕:あらわ]れる訳がない！
+[k]
+
+[charaFace A 6]
+＠モードレッド
+此処は何処だ……？
+[k]
+
+＠モードレッド
+キャメロット……アヴァロン……違う、違う！
+[k]
+
+＠モードレッド
+此処はオリュンポスのはずだ！[r]だから、オレが貴方と戦うはずはないんだ！
+[k]
+
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[effect bit_talk_mind_poll_03]
+[se ad888]
+[wt 2.0]
+[seStop ad888 1.0]
+[wt 1.0]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠モードレッド
+誰だ！[r]オレの……！
+[k]
+
+＠モードレッド
+頭の中で、歌ってやがるのは……誰だッ！！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.4 0,-50]
+[wt 0.4]
+＠フラン
+アア、ウゥゥゥゥ……[wt 0.6][messageShake 0.02 3 3 0.6][r]ウアアアアアアアアアアアアアアアアアア！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 0,-50]
+[wt 1.0]
+
+＠モードレッド
+フラン、なのか[line 3]！？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-50]
+[wt 0.5]
+
+[se ad85]
+[effect bit_talk_v_slash01]
+[wt 0.4]
+
+[se ad170]
+[charaFadeout B 0.1]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+
+[effectDestroy bit_talk_v_slash01]
+
+[charaTalk C]
+[charaFace A 8]
+[charaFace C 7]
+[charaFadein C 0 -80,-50]
+[charaFadein A 0 200,-50]
+[charaShake C 0.02 3 3 0.6]
+[wt 0.8]
+
+[charaFace C 5]
+＠坂田金時
+ビークールだぜ嬢ちゃん！[r]アンタ、一体どうしちまったっていうんだ！
+[k]
+
+＠坂田金時
+[#モードレッドは仲間]だ！[r]一緒に機械巨人アルゴスと戦ったダチだろうが！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-50]
+＠フラン
+ウゥウウウウウウ！[r]アアッ、アッ、アアアアアアアアアアア！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠モードレッド
+金……時……！[r]おまえ、坂田金時……だよな……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-50]
+＠坂田金時
+ああそうだ！[r]って、アンタも何合か打ち合ってたよな！？
+[k]
+
+[charaFace C 7]
+＠坂田金時
+何なんだよ、さっきまで二人ともあんなに……
+[k]
+
+＠坂田金時
+あの[#機械巨人:ア  ル  ゴ  ス]を再生不能にしてやったんだぜ、なあ！[r]後はブツを設置するだけだってのに、シット！
+[k]
+
+[charaFace C 2]
+＠坂田金時
+大将！[r]頼光の大将よォ！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+＠源頼光
+金時……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-50]
+＠坂田金時
+大将頼む！　コイツらを早く[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0,-50]
+＠源頼光
+金時。その二人はもう助からないでしょう。[r]私たちは、戦い方を誤ったのです。
+[k]
+
+＠源頼光
+機械巨人アルゴスは囮に過ぎなかった。[r]私たちは、今、蜘蛛の巣に掛かった蝶であるのです。
+[k]
+
+＠源頼光
+私も……[r]もう……
+[k]
+
+＠源頼光
+……自分を抑えられません。[r]狂化のスキルあればこそ、少しは耐えられましたが。
+[k]
+
+[charaFace D 2]
+＠源頼光
+これ以上は……[r][#あなたを殺さずにはいられない]。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-50]
+＠坂田金時
+！[messageShake 0.02 3 3 0.4]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0,-50]
+＠源頼光
+だから、金時。我が子。早く、私を[line 3]
+[k]
+
+[charaFace D 2]
+＠源頼光
+[f large]殺しなさい！　金時！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-50]
+＠坂田金時
+[f large]冗談言うんじゃねえ大将！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[effect bit_talk_mind_poll_03]
+[se ad888]
+[wt 2.0]
+[seStop ad888 1.0]
+[wt 1.0]
+
+
+
+
+[charaTalk off]
+
+[se ad85]
+[charaPut R -360,-100]
+[charaEffect R bit_talk_v_slash01]
+[wt 0.6]
+
+
+[se ad171]
+[charaPut S 1]
+[charaEffect S bit_talk_h_slash01]
+[wt 0.6]
+
+
+[se ad170]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+
+[fowardEffectStop bit_talk_41]
+
+[charaDepth A 5]
+[charaDepth B 4]
+
+[charaFace A 6]
+[charaFace B 2]
+[charaFadein A 0.1 200,-50]
+[charaFadein B 0.1 -200,-50]
+
+[charaMove A 150,-50 0.2]
+[charaMove B -150,-50 0.2]
+[wt 0.6]
+
+[se ad7]
+[charaMove A 300,-50 0.2]
+[charaMove B -300,-50 0.2]
+[charaFadeout A 0.2]
+[charaFadeout B 0.2]
+[wt 0.3]
+
+[pictureFrame cut063_cinema]
+
+[se adm15]
+[effect bit_talk_x_slash02]
+[wt 0.2]
+[se adm15]
+[effect bit_talk_x_slash01]
+[wt 0.4]
+[se ad32]
+[effect bit_talk_14 150,100]
+[wt 0.2]
+[se ad32]
+[effect bit_talk_14 -100,-100]
+[wt 0.6]
+
+[wipeOff]
+
+
+
+
+
+
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+[wt 0.3]
+[charaFace A 6]
+[charaMove A 0,-40 0.1]
+[charaMoveScale A 1.1 0.1]
+[se ad7]
+
+[wipeout circleIn 0.3 1.0]
+[wait wipe]
+
+[charaScale A 1.0]
+[charaPut Q 1200,1200]
+[charaEffectDestroy Q]
+[charaFadeout A 0.1]
+
+
+[scene 10000]
+[wt 0.2]
+
+[wipein circleIn 0.1 1.0]
+[wait wipe]
+
+
+[se bac137]
+[charaPut R 1]
+[fowardEffect bit_talk_x_slash03]
+[wt 0.7]
+
+[fowardEffect bit_talk_blood_splash]
+[se ad464]
+[wt 1.6]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 92500]
+
+[charaSet B 1098129300 1 フラン]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-50]
+[wt 0.5]
+
+[wipeFilter cinema 0.5 0]
+
+[charaPut Q 1]
+[charaEffect Q bit_talk_mind_poll_02]
+[fadein black 0.6]
+[wait fade]
+
+[charaTalk on]
+＠フラン
+ゥ……ア……アアッ……
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaMove B 0,-100 0.4]
+[charaFadeout B 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.4]
+
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-50]
+＠モードレッド
+あ……ああ……ああああああああああああああ！[r]オレは……オレ、は……ッ！
+[k]
+
+[charaFace A 7]
+＠モードレッド
+畜生……！[r]この手で……フラン……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[effect bit_talk_mind_poll_03]
+[se ad888]
+[wt 2.0]
+[seStop ad888 1.0]
+[wt 1.0]
+
+
+[messageOff]
+[fadeout white 2.0]
+[bgmStop BGM_EVENT_122 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end white]

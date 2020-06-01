@@ -1,0 +1,782 @@
+
+
+＄02-00-02-16-5-0
+[soundStopAll]
+[bgm BGM_EVENT_24 0.1]
+
+[charaSet A 98113900 1 フェルグス]
+[charaSet B 1026001 1 デオン]
+[charaSet C 4004001 1 アストルフォ]
+[charaSet D 98115500 1 魔神フェニクス]
+[charaSet E 99502600 1 マシュ]
+[charaSet F 6027000 1 武則天]
+[charaSet G 98111500 1 ダ・ヴィンチ]
+
+[scene 43400]
+[fadein black 1.5]
+[wait fade]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+＠フェルグス
+……攻撃は届く。届くのですが[line 2][r]殺せない！　
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠デオン
+さすがは死と再生の魔神、といったところか。[r]感心している場合ではないが……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠アストルフォ
+っ、さすがにみんな、連戦の疲れが……。[r]このままだと、まずいかも……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠魔神フェニクス
+憎むべき圧死、悼むべき焼死、目を背けるべき斬死。[r]最後に享受する死の形を[line 2]自ら選ぶがいい！
+[k]
+
+
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[effect bit_talk_goltail01]
+[se bac78]
+[wt 1.0]
+
+[charaTalk off]
+[charaFace C 4]
+[charaFace B 4]
+[charaFace A 4]
+[charaFadein C 0.1 0]
+[charaFadein B 0.1 2]
+[charaFadein A 0.1 1]
+
+[effect bit_talk_35]
+[shake 0.05 0 5 0.4]
+[wt 0.2]
+[flashin once 0.2 0.1 FF0000AF FF000000]
+[se ad46]
+[charaShake C 0.05 3 3 0.4]
+[charaShake B 0.05 3 3 0.4]
+[charaShake A 0.05 3 3 0.4]
+[wt 0.7]
+[effect bit_talk_35]
+[shake 0.05 0 5 0.4]
+[wt 0.2]
+[flashin once 0.2 0.1 FF0000AF FF000000]
+[se ad46]
+[charaShake C 0.05 3 3 0.4]
+[charaShake B 0.05 3 3 0.4]
+[charaShake A 0.05 3 3 0.4]
+[wt 0.7]
+[wt 1.0]
+[messageOff]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.7]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+[charaTalk on]
+[charaTalk E]
+[charaFace E 15]
+[charaEffect E bit_talk_10_LowLevel]
+[charaFadein E 0.1 1]
+＠マシュ
+凄まじい猛攻です！[r]マスター、何か手を打ったほうが！
+[k]
+
+？1：……大丈夫。チャンスは来る。そんな気がする！
+？！
+
+[charaPut E 0,-10000]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠魔神フェニクス
+[line 2]終焉だ。喜ばしい。[r]これにて生死の新たなる地平が連結される。
+[k]
+
+[se ad85]
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[wt 0.4]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+＠F：？？？
+[line 2][#待っておったぞ]。[#このときを]。
+[k]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠マシュ
+っ！？
+[k]
+
+[messageOff]
+[charaPut E 0,-10000]
+[charaFadeout E 0.1]
+[wt 0.4]
+[effect bit_bolg_03]
+[wt 0.1]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.1]
+[shake 0.05 5 5 0.4]
+[se ad161]
+[wt 1.0]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 0,50]
+[se ad73]
+[charaMove F 0,0 0.4]
+＠武則天
+[#妾:わらわ]にシェヘラザードは殺せぬ。[r][#妾:わらわ]は紛れもなく、この上なく、王である故な。
+[k]
+
+＠武則天
+それは奴と同化しておった貴様に対しても同じ。[r]故にこれまで息を潜め、機を窺っておくしかなかった。
+[k]
+
+＠武則天
+じゃが、[#彼奴:きゃつ]から離れた今の貴様ならば届こう、[#陰鳥:いんにゃお]！
+[k]
+
+？1：[line 2]武則天！
+
+？2：[line 2]武則天ちゃん！
+
+[charaFace F 5]
+＠武則天
+天下の女帝をちゃん付けとは！　ええい、[r]不遜、不遜にすぎるぞ……えーと、なんと呼んでいたか忘れた！
+[k]
+
+＠武則天
+もうそのままでよいわ、[%1]め！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠アストルフォ
+渾名は忘れても本名は覚えてるんだね……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+？！
+
+[charaFace F 2]
+＠武則天
+勘違いするでないぞ、この国は依然として[#妾:わらわ]のもの。[r][#妾:わらわ]は生きており、退位したつもりもない！
+[k]
+
+＠武則天
+よってこやつは、[#妾:わらわ]の国を荒らす不届き者にすぎぬのじゃ！
+[k]
+
+[charaFace F 5]
+＠武則天
+勝手に[#妾:わらわ]の国土を浮かせて、あまつさえ墜とすじゃと？[r]けっして見過ごせぬ大罪人よ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut E 0,0]
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠マシュ
+武則天……！　そ、そう言えば、不夜城で[#巨英雄:メガロス]に[r]潰されたとき、反応がなくなってはいましたが。
+[k]
+
+＠マシュ
+なぜそうなったかを明確に観測したわけでは[r]ありませんでした。
+[k]
+
+＠マシュ
+霊基の反応が消えた事を、攻撃による消滅だと[r]こちらが勝手に判断してしまっただけ。
+[k]
+
+＠マシュ
+アサシンとしての気配遮断で、密かに生き残っていたと[r]いうことなのでしょうか[line 2]！
+[k]
+
+[charaPut E 0,-10000]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠魔神フェニクス
+グ……無意味な、闖入者……武則天、め……！[r]今更、何、を……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠武則天
+[#妾:わらわ]が大罪人を見つければ。[r]すべきことは決まっておろう！
+[k]
+
+[charaPut A 0,-50]
+[charaEffect A bit_talk_36_bl]
+[se ad39]
+＠武則天
+拷[charaMoveScale F 1.05 0.2][charaMove F 0,10 0.2]問、[wt 0.4][charaMoveScale F 1.1 0.2][charaMove F 0,20 0.2]拷問、[wait charaMove][wt 0.4][charaMoveScale F 1.15 0.2][charaMove F 0,30 0.2]拷問じゃ！[wait charaMove][wt 0.4]
+[k]
+
+[messageOff]
+[charaPut A 0,-1000]
+[charaEffectStop A bit_talk_36_bl]
+[charaEffect F bit_talk_31]
+[se bac425]
+[wt 0.4]
+[se bac420]
+[wt 1.5]
+[scene 43410 2.0]
+[se ad418]
+[wait scene]
+[seStop ad418 1.0]
+[charaFace F 2]
+＠武則天
+拷問とはすなわち。[r]生かし続け、また同時に殺し続けることなり！
+[k]
+
+＠武則天
+我が毒壺に落ちよ、魔神！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaShake D 0.01 5 0 0.7]
+＠魔神フェニクス
+グア、オオ、オオオオ……！[r]苛立たしい塵、ガっ……！
+[k]
+
+[messageOff]
+[se ad85]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[fowardEffect bit_talk_goltail01]
+[se bac78]
+[wt 1.0]
+
+[charaTalk off]
+[charaDepth A 1]
+[charaDepth F 0]
+[charaPut A 0,0]
+[charaEffect A bit_talk_35]
+[charaMoveScale F 1.0 0.7]
+[charaShake F 0.05 0 5 0.4]
+[flashin once 0.2 0.1 FF0000AF FF000000]
+[se ad46]
+[wt 0.7]
+[charaEffect A bit_talk_35]
+[shake 0.05 0 5 0.4]
+[flashin once 0.2 0.1 FF0000AF FF000000]
+[se ad46]
+[charaMove F 0,-50 0.4]
+[wt 0.7]
+
+[charaFace F 4]
+＠武則天
+が、はっ……！
+[k]
+
+？1：武則天！
+？2：武則天ちゃん！
+？！
+
+[charaTalk on]
+[charaFace F 5]
+＠武則天
+っ……阿呆！　おろかもの！　ばっかものーぅ！[r]何を惚けて見ておるか！
+[k]
+
+＠武則天
+いかに死と再生の魔神といえど。[r][#生き続け、死に続けている最中なら殺せよう]！
+[k]
+
+＠武則天
+さっさとトドメを刺さんかー！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠アストルフォ
+でも、あいつは暴れてるしあの足下はなんか[r]毒沼っぽいしで大変なんだけど！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠フェルグス
+[line 2]ああ。[r][#なるほど、このときのため、だったのか]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠デオン
+フェルグス……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠フェルグス
+デオンさん。アストルフォさん。[r]そして[line 2][%1]さん。
+[k]
+
+＠フェルグス
+後のことは頼みます。なに。僕は[#端役:はやく]なので、[r]消えても大筋に影響はないでしょう。
+[k]
+
+[se ad73]
+[charaMove A -50,0 0.2]
+[wt 0.1]
+[charaFadeout A 0.1]
+[wt 0.2]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠アストルフォ
+な、ちょっ……そこに飛び込んだらっ……！？
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[wt 0.4]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[se ad418]
+[seVolume ad418 0 0.3]
+[charaShake A 0.01 3 3 0.7]
+＠フェルグス
+ぐ、ご、お、おおおおおおおっ……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[seStop ad199]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 0,-50]
+＠武則天
+なんじゃなんじゃ、あいつは馬鹿かっ？[r]なぜ[#妾:わらわ]の宝具の中に入った！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠フェルグス
+ここは[line 2]拷問の痛苦を鋳型に形作られた、[#生と死の坩堝]。[r]それらの概念が入り交じった一種の異界だと見ました。
+[k]
+
+＠フェルグス
+だからこそ。[#この中で僕が死に、そして同時に生き返る][r]ことで、やり直す機会が生まれるでしょう。
+[k]
+
+？1：やり、直す……機会……？
+？！
+
+[charaFace A 4]
+＠フェルグス
+ぐ、あ、っ……あ、はあっ……！[r]真の意味で、ここに生と死が混在しているのならば。
+[k]
+
+[charaFace A 2]
+＠フェルグス
+この僕が。[r]『本来は存在しない、途中のフェルグス・マック・ロイ』が、
+[k]
+
+＠フェルグス
+それを享受したのならば！　その一瞬[line 2]
+[k]
+
+＠フェルグス
+[#ここに本当に喚ばれるはずだった僕]と[r]繋がる道筋が生まれているはずです！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut E 0,0]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 0,-90]
+＠ダ・ヴィンチ
+『フェルグスの死』と『フェルグスの再生』を無理矢理に[r]繋げて、か……！
+[k]
+
+＠ダ・ヴィンチ
+なんて大胆なことを考えるんだ。[r]それは言わば擬似的で自主的な再召喚に等しい。
+[k]
+
+＠ダ・ヴィンチ
+確かにそれなら、大元の『正しいフェルグス』という概念に[r]一瞬とはいえ接触できるかもしれない……。
+[k]
+
+[charaFace G 5]
+＠ダ・ヴィンチ
+だが待て、キミはそもそもダメージを受けていたはずだ。[r]その拷問宝具の影響で本当に死にかねないぞ。
+[k]
+
+＠ダ・ヴィンチ
+どうやって再生する気だい？
+[k]
+
+[charaPut E 0,-10000]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[charaPut F 0,0]
+[charaEffect F bit_talk_tamatebako]
+[se bas2]
+＠フェルグス
+大丈夫、です。これが[line 2]！
+[k]
+
+[charaPut F 0,-10000]
+[charaSet F 6027000 1 武則天]
+[charaEffectStop F bit_talk_tamatebako]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠アストルフォ
+玉手箱！　まだ持ってたの！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠フェルグス
+コロンブスが、使おうとしていた、ものです。[r]足下に転がっていて……幸運な、[se ad137][seVolume ad137 0 0.4][charaShake A 0.01 5 5 0.7]ぐうううっ……！
+[k]
+
+[charaFace A 5]
+＠フェルグス
+時間がない。行きます。この痛苦と死を受け入れ[line 2][r]玉手箱の魔力で瞬間的に再生する。
+[k]
+
+＠フェルグス
+同時に、その狭間にあった、本来の僕の存在を。[r]部分的でもいい、引き出して[line 2]自分のものとする！
+[k]
+
+[charaFace A 2]
+＠フェルグス
+お、[messageShake 0.01 5 5 1.0]おおお、おおおおおおお[line 2]っ！
+[k]
+
+[messageOff]
+[se ad137]
+[seVolume ad137 0.7 0.4]
+[se ad11]
+[seVolume ad11 0 0.6]
+[fadeout white 2.0]
+[wt 0.7]
+[se ad137]
+[seStop ad11 1.0]
+[wt 0.3]
+[seVolume ad418 2.0 0.7]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+[charaSet A 98113910 1 フェルグス]
+[fadein white 2.0]
+[wait fade]
+[charaTalk E]
+[charaPut E 0,0]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+＠マシュ
+フェルグスさんっ！
+[k]
+
+[charaPut E 0,-10000]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[charaShake A 0.05 3 3 0.7]
+＠フェルグス
+ぐ、っ、あ、は、あああ[line 2]そうだ。そうだッ[line 2]
+[k]
+
+[seStop ad418 1.5]
+[charaFace A 0]
+＠フェルグス
+[#伸びろ]。
+[k]
+
+[messageOff]
+[se bas1]
+[se bac296]
+[charaEffect A bit_talk_tornado01]
+[wt 0.4]
+[charaChange A 98113920 0 fade 0.4]
+[wt 1.5]
+
+＠フェルグス
+伸びろ、虹の如く。等しき無限長。されど剣。[r]無限長の虹の剣。それ即ち[line 2]
+[k]
+
+[messageOff]
+[se bas1]
+[se bac296]
+[charaEffect A bit_talk_tornado01]
+[wt 0.4]
+[charaChange A 98113930 0 fade 0.4]
+[wt 1.5]
+[wt 0.5]
+[charaPut G 0,0]
+[charaEffect G bit_talk_41]
+[charaFace A 1]
+＠フェルグス
+[#螺旋の剣なり]！[r]故に曰く、[#螺旋:らせん][#虹霓剣:こうげいけん]！
+[k]
+
+[charaPut G 0,-10000]
+[charaEffectStop G bit_talk_41]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠デオン
+あれはっ……！[r]いつものフェルグスが持っている……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaSet A 98113940 1 フェルグス]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠アストルフォ
+あの短剣……そうだったのー！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[charaPut G 0,0]
+[charaScale G 0]
+[se ad153]
+[seVolume ad153 0 0.6]
+[charaEffect G bit_talk_rainbow02]
+＠フェルグス
+怒りに任せた雑な剣閃ですら、３つの丘を容易く斬り砕く。[r]つまりこれは“地形を破壊するもの”の意味を持つ[line 2]
+[k]
+
+＠フェルグス
+であれば。[#俺]はこれで諸共に砕こう。[r]永遠の生と死に惑う魔神の柱を。
+[k]
+
+＠フェルグス
+そして、[#この足下の、幻想の名に浮かぶ大地を]！
+[k]
+
+[charaPut G 0,-10000]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠デオン
+あの場の魔力が……全て、回転する虹霓剣に吸い込まれて[r]いくぞ。それを受けて、回転がさらに増して[line 2]！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut G 0,0]
+[se ad14]
+[shake 0.05 0 3 0]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠フェルグス
+螺旋の彼方に、溢れよ虹霓！
+[k]
+
+＠フェルグス
+[f large][line 2]『[#極・虹霓剣:カレドヴールフ・カラドボルグ]』！
+[k]
+
+[messageOff]
+[seStop ad153 0.7]
+[se ad145]
+[charaEffect A bit_talk_rainbow01]
+[wt 4.0]
+[se ad146]
+[wt 0.7]
+[se ad61]
+[seVolume ad61 0 0.4]
+[wt 1.0]
+[se ad185]
+[seVolume ad185 0 0.5]
+[wt 1.0]
+[seStop ad61 0.7]
+[fadeout white 1.5]
+[wait fade]
+[charaFadeout A 0.1]
+[charaPut G 0,-10000]
+[charaEffectStop G bit_talk_rainbow02]
+[wt 0.1]
+[shakeStop]
+[se ad211]
+[seStop ad14]
+[scene 43500]
+[wt 1.0]
+[se ad226]
+[fadein white 3.0]
+[wt 1.5]
+[se ad241]
+[wait fade]
+[seStop ad241 3.0]
+[wt 2.0]
+[fadeout black 1.0]
+[wait fade]
+[wt 0.7]
+[se ad14]
+[seVolume ad14 0 0.1]
+[seVolume ad14 1.0 0.9]
+[shake 0.05 0 5 0]
+[scene 43410]
+[se ad197]
+[seVolume ad197 0 0.1]
+[seVolume ad197 1.5 0.7]
+[fadein black 1.0]
+[wait fade]
+[effect bit_talk_14]
+[wt 0.2]
+[se ad137]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.5]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[seStop ad137 0.2]
+[wt 0.2]
+[seStop ad197 1.5]
+[se ad63]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.5]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaShake D 0.01 5 5 0.7]
+＠魔神フェニクス
+グ、ア、ア[line 2]アアアアアアアアッ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠フェルグス
+お、おおお、おおおおおおっ！
+[k]
+
+＠フェルグス
+まだ、至らぬかっ。ならば、頼む[line 2][r]魔神柱に、とどめを！　[%1]！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠武則天
+無遠慮に、[#妾:わらわ]の[#宝具:モノ]を掻き回しおってっ……！[r]そうじゃ、さっさと……[charaShake F 0.01 5 5 0.7]げほっ。さっさと、せんかっ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut E 0,0]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠マシュ
+二人が作ってくれたこの機会[line 2][r]無駄にはできません、マスター！
+[k]
+
+？1：全力で[line 2]とどめだ！
+？2：終わらせよう！
+？！
+
+
+
+
+[messageOff]
+[seStop ad14 0.4]
+[bgmStop BGM_EVENT_24 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

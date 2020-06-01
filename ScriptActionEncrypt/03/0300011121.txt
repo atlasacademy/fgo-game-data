@@ -1,0 +1,290 @@
+
+＄03-00-01-11-2-1
+[soundStopAll]
+
+[charaSet A 5036001 1 アヴィケブロン]
+[charaSet B 7030001 1 アタランテ・オルタ]
+[charaSet C 1098126400 1 パツシィ]
+[charaSet D 2010001 1 ビリー]
+[charaSet E 99502600 1 マシュ]
+[charaSet F 1098128400 1 ヤガ叛逆軍]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[scene 54100]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠パツシィ
+よーし、肉だ肉！
+[k]
+
+＠パツシィ
+[%1]だけじゃなく[r]アンタらも食うだろ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ビリー
+サーヴァントに食事は必須ではないけどね。[r]いただけるならお腹を壊さない程度には。
+[k]
+
+[charaFace D 1]
+
+＠ビリー
+僕としては煮込んだのを摘まみながら飲む[r]酒の方が本命だけど。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠アタランテ・オルタ
+……気持ちはわかる。[r]シードルが飲みたい……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ビリー
+僕はまあ、バーボンかテキーラあたりかな。
+[k]
+
+＠ビリー
+基本、あそこで暮らしていたときは[r]何でもお酒にしていたからねえ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFace D 0]
+[charaFadein D 0.1 2]
+
+＠パツシィ
+……火酒以外に酒がある、とは聞いていたけど、[r]どんな味なんだ？
+[k]
+
+＠ビリー
+この世界の酒はほぼストレートのウォッカで、[r][#風味:フレーバー]もほとんどないのが大半なんだっけ。
+[k]
+
+[charaFace D 1]
+
+＠ビリー
+僕が作らせたものがあるけど、[r]お一ついかが？
+[k]
+
+＠パツシィ
+ああ。[r]じゃあ、ちょっといただくわ。
+[k]
+
+[messageOff]
+[charaMove C -256,-5 0.2]
+[se ad217]
+[wt 0.2]
+[seStop ad217 0.1]
+[charaMove C -256,0 0.4]
+[wt 0.8]
+
+[charaFace C 1]
+
+＠パツシィ
+……美味い。[r]美味いが……酒精が弱いな。
+[k]
+
+[charaFace D 0]
+
+＠ビリー
+これでも強い方なんだけどねえ。[r]やっぱり君たちはアルコールに強いや。
+[k]
+
+[charaFace C 3]
+
+＠パツシィ
+強すぎるってのも考え物だな、まったく。
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[bgmStop BGM_EVENT_7 1.2]
+[wait fade]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 1.0]
+[scene 54105]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.2]
+
+[scene 54100 1.5]
+
+[wt 2.5]
+
+
+[se ad603]
+[seVolume ad603 0 0.5]
+[wt 1.0]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠マシュ
+もうそろそろ到着です。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アタランテ・オルタ
+[#狼煙:のろし]も出ていない。[r]かなり長期間留守にしていたが、平穏なようだ。
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[seStop ad603 1.0]
+[wait fade]
+[charaFadeout B 0.1]
+[scene 54900]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠アタランテ・オルタ
+帰還したぞ、開門！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ヤガ叛逆軍
+おかえり、ボス。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アヴィケブロン
+[line 3]戻ったか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠アタランテ・オルタ
+良い報せがある。[r]サーヴァント、ビリー・ザ・キッドが加わった。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ビリー
+やあ、アンタがアヴィケブロンだね。[r]ビリーだ、よろしく。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アヴィケブロン
+ああ、どうも。
+[k]
+
+[bgmStop BGM_EVENT_77 0.5]
+
+＠アヴィケブロン
+さて、こちらは悪い知らせがある。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠マシュ
+[FFFFFF]？[-][r]どうしました？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠アヴィケブロン
+[line 3]食料が、間もなく枯渇する。
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

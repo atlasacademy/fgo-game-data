@@ -1,0 +1,114 @@
+
+
+
+＄03-00-06-15-2-0
+
+
+
+[soundStopAll]
+
+[charaSet A 8001400 1 マシュ]
+[charaSet B 1017001 1 武蔵]
+[charaSet C 1098128200 1 カイニス]
+[charaSet D 1098192100 1 広域型殲滅機械]
+
+[charaSet S 5009000 1 エフェクト用ダミー]
+[charaSet T 5009000 1 エフェクト用ダミー]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 92400]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 0.2]
+
+[se ad668]
+[charaFace A 2]
+[charaMoveScale A 1.1 0.4]
+[charaMove A 0,12 0.2]
+[wt 0.2]
+[seStop ad668 0.1]
+
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[se ad171]
+[wt 0.4]
+[charaShake D 0.05 3 3 0.2]
+[effect bit_talk_14 -200,180]
+[se bac10]
+[wt 0.2]
+[se bac10]
+[effect bit_talk_14 200,-180]
+[wt 0.7]
+[se ba6]
+[charaSpecialEffect D erasure 1 1.0]
+[bgm BGM_EVENT_80 2.5 0.1]
+[wt 1.5]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠マシュ
+敵性存在、沈黙しました[line 3]
+[k]
+
+[messageOff]
+[wt 0.4]
+[charaFace A 7]
+[wt 0.7]
+
+[bgm BGM_EVENT_80 1.0 1.0]
+
+[charaFace A 2]
+＠マシュ
+いえ！　距離１００地点に更なる魔力反応！[r]移動速度が上昇、こちらに迫っているようです！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠武蔵
+増援っていうより新たな遭遇って感じかしら！[r]私は問題ないけれど、各々方はいかが！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠カイニス
+ハッ！　いかがも何もねえ！[r]百や二百来ようとこの程度は造作もねえンだよ！
+[k]
+
+[messageOff]
+[se ade321]
+[wt 0.4]
+
+[charaFace C 2]
+＠カイニス
+[line 3]行くぞ！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

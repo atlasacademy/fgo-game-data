@@ -1,0 +1,492 @@
+
+
+＄94-03-35-28-2-0
+[soundStopAll]
+
+
+[charaSet A 1098125800 1 メカエリチャン通信]
+[charaSet B 10004000 1 メカエリチャン]
+[charaSet G 5009000 1 エフェクト用ダミー]
+[equipSet H 9806520 1 バレンタイン礼装]
+
+[scene 10400]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[wt 0.5]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[se ad13]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.2]
+
+＠A：メカエリチャン
+[tVoice ValVoice_1000400 0_V010]
+部屋にいましたね、パイロット候補。[r]私です。[#Ｍ:メイガス] ・ [#Ａ:エイジス] ・ [#Ｅ:エリザベート] ・ [#Ｃ:チャンネル]です。[wait tVoice]
+[k]
+
+＠A：メカエリチャン
+[tVoice ValVoice_1000400 0_V020]
+今日もやる事もなく自宅待機ですか。情けない。[r]おまえには上昇志向というものがないのですか？[wait tVoice]
+[k]
+
+[charaFace A 3]
+
+＠A：メカエリチャン
+[tVoice ValVoice_1000400 0_V030]
+まあ……とはいえ。バレンタインだからといって[r]浮かれていないのは良い事です。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠A：メカエリチャン
+[tVoice ValVoice_1000400 0_V040]
+そんなおまえに、私から重要な提案があります。[r]至急、カルデア地下格納庫に来るように。[wait tVoice]
+[k]
+
+＠A：メカエリチャン
+[tVoice ValVoice_1000400 0_V050]
+言っておきますが、三分です。[r]それ以上は私の炉心が持ちませんので。[wait tVoice]
+[k]
+
+？1：三分って、急すぎない[&か:]！？
+？2：もし間に合わなかったら……？
+
+？！
+
+[charaFace A 10]
+
+＠A：メカエリチャン
+[tVoice ValVoice_1000400 0_V060]
+ふふふ。そんな無駄口を叩くとは余裕ね、[r][%1]。[#嗜虐:しぎゃく]心をそそります。[wait tVoice]
+[k]
+
+[charaFace A 6]
+
+＠A：メカエリチャン
+[tVoice ValVoice_1000400 0_V070]
+もちろん、一分の遅刻につきメカエリパンチ一発です。[r]それともデスカッターがお好みかしら？[wait tVoice]
+[k]
+
+？1：ただの処刑だそれ[line 4]！
+
+？！
+
+[charaFace A 5]
+
+＠A：メカエリチャン
+[tVoice ValVoice_1000400 0_V080]
+ええ。だから一秒でも早く来て、と言っているのよ。[r]これ以上、私の炉心を暴走させない事ね。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.5]
+[se ad1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+
+[wt 0.7]
+
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[scene 51500]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[wt 1.5]
+[wipein leftToRight 0.3 1]
+[wait wipe]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V090]
+早い！　普段は寄り道ばかりするクセに、[r]なぜ今日にかぎって時間ピッタリなのですか！[wait tVoice]
+[k]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V100]
+しかも余裕たっぷりに、息ひとつ切らさず！[wait tVoice]
+[k]
+
+[charaFace B 8]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V110]
+この苛立ちは未体験、解析不能の衝動です！[r]なんだか理屈なしで不満を覚える私がいます！[wait tVoice]
+[k]
+
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V120]
+ええい、メカエリパンチ（無敵貫通）[tdelay 1 2.6 1][se bac8][delay -]、[r]メカエリパンチ（無敵貫通）！[tdelay 2 3.4 1][se bac8][delay -][wait tVoice]
+[k]
+
+[delayStop 1]
+[delayStop 2]
+
+？1：時間通りにきたのに怒られた[line 2]！
+？2：もしかして、もっと余裕がほしかった？
+
+？！
+
+[charaFace B 3]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V130]
+[line 3]そ、そうですね。[r]なぜ私は怒っているのでしょう……[wait tVoice]
+[k]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V140]
+いつも時間を守らないおまえがスケジュール通りに[r]行動する事は喜ばしい筈なのに……バグかしら。[wait tVoice]
+[k]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V150]
+それとも、もう怒りの許容範囲を超えてしまって、[r]何をしてもパンチしたくなっているとか……？[wait tVoice]
+[k]
+
+？1：（それはバグっているだけでは？）
+
+[charaFace B 5]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V160]
+[%1]。[r]いま何か言いかけましたか？[wait tVoice]
+[k]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V170]
+チェイテの守護神にして地上で最も美しい鉄、[r]この鋼鉄魔嬢メカエリチャンに対して、[wait tVoice]
+[k]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V180]
+バグだとか、レトロすぎるとか、絶壁だとか、[r]その手の思考を巡らせた愚か者の末路は知っていて？[wait tVoice]
+[k]
+
+[charaFace B 10]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V190]
+いえ、説明の必要はなかったわね[%1]？[r]おまえは賢い、私の[#僕:しもべ]なのですから。[wait tVoice]
+[k]
+
+？2：ところで用件は？
+
+[charaFace B 0]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V200]
+[line 3]そうでした。[r]今は私の人心回路の話ではありません。[wait tVoice]
+[k]
+
+？！
+
+[charaFace B 6]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V210]
+さて。おまえを呼びつけたのは他でもありません。[r]この神聖な空間[line 3][wait tVoice]
+[k]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V220]
+メカにとって魂の[#故郷:ふるさと]とも言える格納庫にて、[r]最高の名誉を与える為。[wait tVoice]
+[k]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V230]
+受け取りなさい。[r]これが私から、おまえに贈る協力者の証です。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.1]
+[backEffect bit_talk_valentine_brilliant]
+[wt 4.0]
+
+？1：まさか本当に[line 3]
+？2：メカエリチャンがチョコレートを……！
+
+？！
+
+[charaFadeout B 0.4]
+[backEffectStop bit_talk_valentine_brilliant]
+
+[se adm22]
+[charaFace H 0]
+[charaFadein H 0.5 0,-70]
+[wt 3.0]
+
+？1：食べ物ですらない[line 4]！？
+？2：メカだこれ[line 5]！
+
+？！
+
+[charaFadeout H 0.4]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.2]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V240]
+当然でしょう。私は炭水化物も糖分も[r]カルシウムも摂りません。鉄ですので。[wait tVoice]
+[k]
+
+[charaFace B 6]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V250]
+ですが、それはそれとして、今日がなんであるかは[r]理解しています。ハロウィンも認める私ですので。[wait tVoice]
+[k]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V260]
+……えー、コホン。[r]という[#理由:ワケ]で、[#跪:ひざまづ]いて受け取りなさい。[wait tVoice]
+[k]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V270]
+これが私とおまえを[#繋:つな]ぐ鋼鉄の[#絆:きずな]。[wait tVoice]
+[k]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V280]
+いつ、いかなる時でも、おまえのボイスをコマンドとして[r]私のＡＩに届かせる[#僕:しもべ]の冠。[wait tVoice]
+[k]
+
+[charaFace B 1]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V290]
+そう[line 3]これこそは主人公のマストアイテム！[r]今日はまさに受勲式、なのです！[wait tVoice]
+[k]
+
+[charaFace B 4]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V300]
+……む。どうしたのです、[%1]。[r]これで私とおまえは[#一心同体:いっしんどうたい]っぽくなるのよ？[wait tVoice]
+[k]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V310]
+もしや、もっとシンプルに[r]トランシーバー型が好みでしたか？[wait tVoice]
+[k]
+
+？1：[line 6]イエ、ウレシイ　デス　ヨ？
+？2：[line 6]チョット　衝撃ガ　オモスギテ
+
+？！
+
+[charaFace B 6]
+
+[effect bit_talk_telop_tokusatsu]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V320]
+ふ。そうでしょうとも。[r]これは私がもっとも敬愛する特撮から得た、[wait tVoice]
+[k]
+
+[effectStop bit_talk_telop_tokusatsu]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V330]
+いつまでも色あせない、最高の送信装置です。[r]最新のヘッドマウントディスプレイには、[wait tVoice]
+[k]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V340]
+私の好む戦法、私のしたい攻撃、私の欲しい補充アイテム、[r]私の意欲を向上させる言葉など、[wait tVoice]
+[k]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V350]
+マニュアルとして表示されますので。[r]おまえは注意深く、マニュアルに従うように。[wait tVoice]
+[k]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V360]
+む？　なぜこんなものを作ったのか、ですか？[r]もちろん、私の親切心です。[wait tVoice]
+[k]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V370]
+おまえにはかねてから足りないものがありましたから。[r]それを、この機に矯正してあげようと思ったの。[wait tVoice]
+[k]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V380]
+素敵でしょう？　自分でも自分の発想がちょっと怖いわ。[r]エリザベート・バートリーは天才だったのね。[wait tVoice]
+[k]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V390]
+…………それはともかく。[wait tVoice]
+[k]
+
+[charaFace B 0]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V400]
+…………。[r]…………。[wait tVoice]
+[k]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V410]
+…………。[r]…………。[wait tVoice]
+[k]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V420]
+…………何をしているの。[r]モタモタしていると口から火を吐くわよ。[wait tVoice]
+[k]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V430]
+早く[#被:かぶ]って。そういう場面よ、ここは。[wait tVoice]
+[k]
+
+？1：くっ……（恥ずかしいけど、仕方ない……）
+？2：よし（よく見るとカッコウいいぞ！）
+
+？！
+
+[se ade57]
+[wt 1.0]
+
+[charaFace B 3]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V440]
+[line 3]グレート[line 3]…………！[r]やだ、私のパイロット、格好良すぎ……！[wait tVoice]
+[k]
+
+[charaFace B 9]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V450]
+あ[line 3]いえ。なんでも。[r]今のはただのバグです。気にしないように。[wait tVoice]
+[k]
+
+[charaFace B 0]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V460]
+[%1]。[r]いえ、マスター。[wait tVoice]
+[k]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V470]
+おまえには私のパイロット候補として、[r]更なる成長を望みます。[wait tVoice]
+[k]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V480]
+私は正義の執行者ですが、どこまでいっても兵器です。[r]扱う者の心が強くなければ駄竜に落ちる。[wait tVoice]
+[k]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V490]
+そのレシーバーには、私の強制停止機能が[r][#含:ふく]まれています。私にとっての令呪、ですね。[wait tVoice]
+[k]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V500]
+まあ、成功率は12パーセント程度ですが。[r]それでもないよりはマシかと。[wait tVoice]
+[k]
+
+？1：ほんとにないよりはマシだ……！
+
+[charaFace B 6]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V510]
+ええ。でも心のブレーキにはなるわ。[r]おまえのせいで人心回路も持ってしまった事だしね。[wait tVoice]
+[k]
+
+？2：まあ、たぶん使わないから、それくらいで
+
+[charaFace B 10]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V520]
+[line 3]そうですね。[wait tVoice]
+[k]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V530]
+そのレシーバーを被っているおまえが視界にいる時点で、[r]私が暴走する事はないでしょう。[wait tVoice]
+[k]
+
+？！
+
+[charaFace B 0]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V540]
+何にせよ、それが私からの贈りものです。[r]私にできる最大の信頼をカタチにしてみました。[wait tVoice]
+[k]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V550]
+食べ物でなくて残念なら、今すぐ食堂にいきなさい。[r]チョコレートはそちらでどうぞ。[wait tVoice]
+[k]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V560]
+私があげられるのはこういった、[r]面白みも[#華:はな]やかさもないものなので。[wait tVoice]
+[k]
+
+？1：面白みは充分あると思うけど……
+
+？！
+
+？1：でも、ありがとう。大切にする
+
+？！
+
+[charaFace B 6]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V570]
+……そうですか。[r]その言葉で私の炉心も落ち着きました。[wait tVoice]
+[k]
+
+＠メカエリチャン
+[tVoice ValVoice_1000400 0_V580]
+では試しに、はじめてのコマンドを命じなさい。[r]初回サービスです、どんなものでも怒りませんので。[wait tVoice]
+[k]
+
+？1：よし、それじゃあ[line 3]
+？！
+
+[wt 1.0]
+[messageOff]
+
+[se ade165]
+[wt 1.5]
+
+[charaFace B 10]
+[wt 2.0]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

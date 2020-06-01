@@ -1,0 +1,765 @@
+
+
+＄91-60-27-01-5-1
+
+
+
+[soundStopAll]
+
+[scene 20110]
+[charaSet A 98001000 1 マシュ]
+[charaSet B 6027000 1 武則天]
+[charaSet C 1098154600 1 ？？？]
+[charaSet D 5022001 1 三蔵]
+[charaSet E 3032000 1 エレシュキガル]
+[charaSet F 5010001 1 パラケルスス]
+[charaSet G 3032000 1 エレシュキガル]
+[charaSet H 98002000 1 フォウ]
+
+
+
+[messageOff]
+
+[charaPut E 1]
+[charaEffect E bit_talk_11]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+
+[bgm BGM_EVENT_5 0.1]
+
+[fadein black 1]
+[wait fade]
+[wt 0.1]
+
+
+[se ad52]
+[charaSpecialEffect C darkEnemyErasure 1 2]
+[wt 2]
+[charaPut E 1]
+[charaSpecialEffectStop C darkEnemyErasure]
+[wt 0.5]
+
+[charaPut E 0,1024]
+[wt 0.8]
+[fowardEffect bit_talk_starshine 0,-256]
+[wt 2]
+[fowardEffectStop bit_talk_starshine]
+[wt 1]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.4 1]
+[wt 0.1]
+
+＠三蔵
+んんー？　どういうこと？
+[k]
+
+＠三蔵
+あなたの影みたいなのを倒したら[r]謎の薬瓶がドロップしたんだけど……。
+[k]
+
+[charaFadeout D 0.1]
+[charaFace B 0]
+[charaTalk B]
+[charaFadein B 0.1 1]
+
+
+＠武則天
+ふむ。これはやはりこうすべきであろう。
+[k]
+
+[charaFadeout B 0.1]
+[charaFace A 12]
+[charaTalk A]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ま、待ってください武則天さん。飲む気ですか？[r]もう少し慎重に……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFace F 0]
+[charaTalk F]
+[charaFadein F 0.7 -32,0]
+[charaMove F 0,0 0.7]
+[wt 1]
+
+＠パラケルスス
+[line 3]問題はないでしょう。
+[k]
+
+？1：パラケルススさん？
+？2：こんなところで何を！？
+？！
+
+＠パラケルスス
+失礼ながら、後を付けさせていただきました。[r]尾行です。
+[k]
+
+[charaFace F 4]
+
+＠パラケルスス
+いえ、契約には含まれていませんが、[r]その霊薬の製作者として最後まで見届けねば、と……。
+[k]
+
+[charaFadeout F 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠武則天
+……この効能は、[#妾:わらわ]の思っているとおりのものか？[r]薬師よ。
+[k]
+
+[charaFadeout B 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠パラケルスス
+はい。[#記憶除去薬の中和剤]です。
+[k]
+
+[charaFadeout F 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠武則天
+ふん、やはりな。では……。
+[k]
+
+[bgmStop BGM_EVENT_5 0.4]
+[se ad217]
+[seVolume ad217 0.2 0.1]
+[wt 0.4]
+[seStop ad217 0.1]
+[wt 1]
+
+＠武則天
+……ふう。
+[k]
+
+？1：あの……武則天ちゃん
+？2：そんなの飲んで大丈夫……？
+？！
+
+[charaFace B 2]
+[bgm BGM_EVENT_2]
+
+＠武則天
+大丈夫に決まっておろうがー！
+[k]
+
+[charaFace B 5]
+
+＠武則天
+というかもうわかった。全て思い出した。[r]手紙の送り主は[#妾:わらわ]自身じゃ。
+[k]
+
+？1：！！？
+？！
+
+[charaFace B 0]
+
+＠武則天
+筆跡でバレる故、[#妾:わらわ]は漢字が書けそうな者を雇い、[r]さらには敵役としてエジプトの女王にも声をかけた。
+[k]
+
+＠武則天
+そして全ての準備を済ませたあと、自らの記憶を消す薬を[r]そこの薬師に作らせ飲み干した……。
+[k]
+
+[charaFadeout B 0.1]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠パラケルスス
+はい、その通りです。ピンポイントの記憶除去薬、[r]そしてその効能をキャンセルし記憶を取り戻す薬[line 3]
+[k]
+
+＠パラケルスス
+すべて、彼女からの依頼によるものです。
+[k]
+
+[charaFadeout F 0.1]
+[charaFace A 15]
+[charaTalk A]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ど、どうしてそんな事を！？
+[k]
+
+[charaFadeout A 0.1]
+[charaFace B 4]
+[charaTalk B]
+[charaFadein B 0.1 1]
+
+＠武則天
+それは……いい加減克服せねばと思ったというか、こうでも[r]せんと真面目に立ち向かわんと自分でも思ったというか……。
+[k]
+
+[charaFadeout B 0.1]
+[charaFace D 1]
+[charaTalk D]
+[charaFadein D 0.1 1]
+
+＠三蔵
+あー。ひょっとして、幽霊嫌いを克服するためかしら？
+[k]
+
+＠三蔵
+だったらさっきの彼女が嬉しそうだった理由も分かるわね。
+[k]
+
+＠三蔵
+『王としての修行』とか『よりよい王になるための努力』[r]とかいかにも彼女が好きそうな単語だもの。
+[k]
+
+＠三蔵
+もちろんあたしも修行＆修行者は大好きよ！[r]だから褒めちゃう、めでたし！
+[k]
+
+[charaFadeout D 0.1]
+[charaFace B 3]
+[charaTalk B]
+[charaFadein B 0.1 1]
+
+
+＠武則天
+ええい、おまえに褒められたくてやったワケではない！
+[k]
+
+＠武則天
+……とにかく、今回の出来事は[r]女帝の気まぐれ遊びだったとでも思っておけ。
+[k]
+
+＠武則天
+光栄じゃろう。[r]引っ張り回した事を謝罪なぞせんぞ！
+[k]
+
+？1：全然問題ないです
+？2：幽霊嫌いが克服できたなら何よりです
+？！
+
+[charaFace B 1]
+
+＠武則天
+そうかそうか。ま、これで[#妾:わらわ]はもはや何も怖いものなどない[r]ぱーふぇくと女帝になってしまったわけじゃし？
+[k]
+
+＠武則天
+これは貴様たちにとっても実に思い出深い、[r]まさに歴史的なイベントとして後世まで語り継がれ[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.1]
+[se ad75]
+[charaFadeout B 0.1]
+[charaFace D 1]
+[charaTalk D]
+[charaFadein D 0.1 1]
+[wt 0.8]
+
+＠三蔵
+ん？　何かが上から……
+[k]
+
+
+[seStop ad75 0.4]
+[charaFadeout D 0.1]
+[charaTalk off]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+[charaFadein H 0.1 0,1024]
+[charaDepth B 11]
+[charaDepth H 12]
+[charaMove H 0,200 0.7]
+[wt 0.7]
+[se ad76]
+[charaMove H 0,220 0.4]
+[wt 0.4]
+[charaShake B 0.01 4 4 0.25]
+[seStop ad76 0.1]
+
+
+＠フォウ
+フォウッ。
+[k]
+
+[charaFace B 1]
+
+＠武則天
+……[wt 0.5]……[wt 0.7]……[wt 0.8]……。[wt 0.9]
+[k]
+
+
+[charaFace B 4]
+[charaShake B 0.01 10 8 0.25]
+[bgm BGM_EVENT_27 0.1]
+[messageShake 0.01 4 2 0.25]
+
+＠武則天
+[f x-large]ぴわー！　[messageShake 0.01 4 2 0.25]ねこぉぉぉ！？
+[k]
+
+
+
+[messageOff]
+
+[charaMove B -1536,0 0.4]
+[charaMove H 1536,1024 0.4]
+[wt 0.6]
+
+[charaPut H -1536,1024]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth A 9]
+[charaDepth H 10]
+[charaFace A 6]
+
+[charaFadein A 0.1 1]
+[charaMove H 0,0 0.7]
+[wt 0.5]
+[se ad480]
+[charaMove A 50,-50 0.2]
+[wt 0.5]
+
+[charaMove H -256,0 0.3]
+[charaMove A 0,0 0.3]
+[wt 0.3]
+[charaTalk A]
+
+＠マシュ
+フォウさん！？　なぜここに！？
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout A 0.1]
+[charaFace F 0]
+[charaTalk F]
+[charaFadein F 0.1 1]
+
+＠パラケルスス
+幽霊だけでは不充分なので……[r]超高級ペットフードを用いて彼も[#誘:おび]き出すつもりだ[line 3]
+[k]
+
+＠パラケルスス
+と、彼女は言っていましたね。[r]おそらく上の層に落とし穴でも仕掛けていたのでしょう。
+[k]
+
+[charaFace F 4]
+
+＠パラケルスス
+しかしあの驚きよう。記憶復元薬が不完全だったか、[r]あるいは純粋に覚えていなかったのか。ふむ……
+[k]
+
+[charaFadeout F 0.1]
+[charaFace A 8]
+[charaTalk A]
+[charaFadein A 0.1 1]
+
+＠マシュ
+どちらにしても、フォウさんに立ち向かうだけの精神力は[r]残っていなかったようです。
+[k]
+
+？1：出ていっちゃったけど、大丈夫かな？
+？！
+
+
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[wt 1]
+
+[wipeFilter cinema 0.5 0]
+
+[fadein black 1]
+[wait fade]
+[wt 0.7]
+
+
+
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 1 312,-50]
+[charaMove G 200,-50 1]
+[charaDepth B 11]
+[charaDepth G 12]
+[charaFadein B 0.1 -1536,-50]
+[wt 1.5]
+
+
+＠エレシュキガル
+ふう。この暗さ、湿っぽさ、広さのわりに圧のある閉塞感……[r]なかなかの冥界っぽさなのだわ。
+[k]
+
+＠エレシュキガル
+ガルラ霊たちの運動不足解消にはもってこいの場所ね。
+[k]
+
+[se adm29]
+[wt 0.5]
+[charaSet C 98104300 1 NPC]
+[charaScale C 1]
+[charaDepth C 10]
+[charaFadein C 0.7 0,0]
+[wt 0.7]
+[seStop adm29 0.4]
+[charaFace G 17]
+
+＠エレシュキガル
+さて。たまには冥界の女主人として厳しく指導して[r]おかないと、どうしても甘えとか馴れが[line 3]
+[k]
+
+[charaFace B 4]
+[charaMove B -256,-50 0.4]
+[wt 0.4]
+[se ad120]
+[charaShake C 0.01 12 6 0.25]
+[charaShake B 0.01 8 4 0.25]
+[wt 1.5]
+
+
+[charaShake B 0.01 10 10 0.25]
+[messageShake 0.01 8 4 0.25]
+
+＠武則天
+[f x-large]また霊じゃああああ！？
+[k]
+
+[charaFace G 9]
+[charaMove B -1536,-50 0.4]
+[wt 0.8]
+
+
+
+[messageOff]
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout G 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 1]
+[wipeOff]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+[wt 1]
+
+[fadein black 1]
+[wait fade]
+[wt 0.7]
+
+
+
+＠マシュ
+遠くから武則天さんの悲鳴が……。
+[k]
+
+[charaFadeout A 0.1]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠三蔵
+あ、あれ？　猫はともかく、[r]幽霊はもう大丈夫になったんじゃないの？
+[k]
+
+[charaFadeout D 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠パラケルスス
+先程の[#克己:こっき]は、極限状態における生理活性物質の放出が[r]引き起こした一時的なもの、という事でしょうね。
+[k]
+
+＠パラケルスス
+恐怖とは[line 3][r]容易には克服できないものです。残念ながら。
+[k]
+
+[charaFadeout F 0.1]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ええと……ひとまず、探してきましょうか？[r]武則天さんを放って帰るわけにもいきませんし。
+[k]
+
+[charaFadeout A 0.1]
+[charaFace D 0]
+[charaTalk D]
+[charaFadein D 0.1 1]
+
+＠三蔵
+あー、それ、あたしに任せちゃってくれない？[r][%1]たちは先に帰ってていいわよ。
+[k]
+
+＠三蔵
+道に迷える子を救う！[r]うんうん、まさしくこの高僧少女の役目だわ！
+[k]
+
+？1：……じゃあ、お願いします
+？！
+
+[charaFace D 1]
+
+＠三蔵
+うん、まっかせてー！
+[k]
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_27 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout D 0.1]
+[wt 0.1]
+[scene 10000]
+[wt 0.1]
+[fadein black 0.1]
+[wait fade]
+[effect bit_talk_07_02]
+[se ad12]
+[wt 4]
+[fadeout white 1]
+[wait fade]
+
+[scene 10310]
+[wt 2.0]
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 4]
+[charaFace B 4]
+[wt 0.1]
+
+[fadein white 1]
+[wait fade]
+
+
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+
+＠三蔵
+ぎゃてぇ……ようやく帰ってこれたわ……。
+[k]
+
+[charaFadeout D 0.1]
+[charaTalk B]
+[charaFace D 4]
+[charaFadein D 0.1 0]
+[charaFace B 4]
+[charaFadein B 0.1 2]
+
+＠武則天
+はぁはぁ。なぜじゃ。なぜ今日のあの洞窟に限って、[r]ダレイオス王が[#不死隊:アタナトイ]を呼んで無意味に暴れていたり、
+[k]
+
+＠武則天
+狼と首無し男が昼寝していたり、山の翁が曲がり角からヌッと[r]出てきたりしたのか……[#妾:わらわ]は雇っておらんぞ！
+[k]
+
+[charaFace D 0]
+
+＠三蔵
+きっと御仏のお導きね！　わりとそういう、おかわり癖？[r]みたいなのがあると思うわ！
+[k]
+
+[charaFace B 5]
+
+＠武則天
+仏に頼んでもおらん！　まったく……。
+[k]
+
+[charaFace B 3]
+
+＠武則天
+……のう、話は変わるが。
+[k]
+
+＠武則天
+二人きり故、聞いておきたい事がある。[r][#玄奘三蔵:げんじょうさんぞう]。
+[k]
+
+[charaFace D 0]
+
+＠三蔵
+ん、なになに？
+[k]
+
+[charaFace B 0]
+[bgmStop BGM_EVENT_7 0.3]
+
+＠武則天
+……おまえは。
+[k]
+
+[bgm BGM_EVENT_11 0.5]
+
+＠武則天
+おまえは、かつての[#妾:わらわ]の唐について、どう思う？[r]表向きは高宗が皇帝であった頃かもしれんが、同じ事じゃ。
+[k]
+
+＠武則天
+いかに西方より持ち帰った経典に集中していたとはいえ、[r]噂くらいは聞いておったであろう。
+[k]
+
+[charaFace D 4]
+
+＠三蔵
+……そうね。
+[k]
+
+＠三蔵
+本当に風の噂程度だけど、あなたは[r]民にひどいことをしていると聞いた気もするわ。
+[k]
+
+[charaFace D 5]
+＠三蔵
+仏門に[#帰依:きえ]した者としてはっきりと言います。
+[k]
+
+＠三蔵
+ひどいこと、悪いことをしてはいけません！[r]何故なら、それらはすべて自分に返るものだからです！
+[k]
+
+[charaFace B 4]
+
+＠武則天
+…………。
+[k]
+
+[charaFace D 1]
+
+＠三蔵
+[line 3]でも。
+[k]
+
+＠三蔵
+良いことをしようとして、なのに結果的に悪いことに[r]なっちゃった、って場合もあるわよね？
+[k]
+
+[charaFace D 0]
+
+＠三蔵
+だって、人間だもの。
+[k]
+
+[charaFace D 4]
+
+＠三蔵
+うう……というか、あたしだって未熟な修行の身で、[r]失敗ばかりだから……。
+[k]
+
+＠三蔵
+それが誰かの迷惑、誰かにとっての悪になってないとは[r]言えないわけで……修行が足りないわけで……。
+[k]
+
+[charaFace B 0]
+
+＠武則天
+……[#妾:わらわ]は、あれが正しいと信じた。[r]あれが、正しい国を作るための唯一の法だと信じた。
+[k]
+
+＠武則天
+だから[#行:おこな]ったのだ。そこに決して嘘はない。[r][line 3]仏にすら、誓えるぞ。
+[k]
+
+[charaFace D 0]
+
+＠三蔵
+うん。じゃあ……その先は、[r]何も言わないことにしておくわ。
+[k]
+
+[charaFace D 1]
+＠三蔵
+あなたが本当にあたしに聞きたいことは、[r]あたしには答えられない。
+[k]
+
+＠三蔵
+あたしは唐の民である前に仏の弟子だから。[r]答えは御仏のみが知る、よ。
+[k]
+
+[messageOff]
+[charaTalk B]
+[charaFace B 0]
+[wt 1]
+[bgmStop BGM_EVENT_11 0.7]
+
+＠武則天
+ふん。本当も何も、先程のはなんでもなーい気まぐれの[r]問いかけで、それが全てじゃ。何を望んでおるわけでもない。
+[k]
+
+[charaFace D 1]
+[bgm BGM_EVENT_2 0.1]
+＠三蔵
+そう？　だったらそれでいいけど！
+[k]
+
+＠三蔵
+ただ[line 3]ここに来た今でもいろんなことを考えて、[r]いろんなことを思って。
+[k]
+
+＠三蔵
+自分らしく前に進もうとしているあなたの姿は、[r]とても立派だと思うわ。
+[k]
+
+＠三蔵
+[#迷悟一如:めいごいちにょ]、これからも[r]その調子で修行するといいんじゃないかしら！
+[k]
+
+[charaFace D 0]
+
+＠三蔵
+あ、心配しないで！[r]本当に道を間違って見過ごせない感じになっちゃったら、
+[k]
+
+＠三蔵
+今度はこのあたしが[#全身全霊:ぜんしんぜんれい]で、[r]御仏の正しい教えを叩き込んであげるから！
+[k]
+
+[charaFace B 4]
+
+＠武則天
+……やれやれ。高僧というのも面倒なものじゃな。[r][#妾:わらわ]にはやはり生臭坊主ぐらいでちょうどよいわ。
+[k]
+
+[charaFace D 1]
+
+＠三蔵
+ふふっ……[#羯諦:ギャテイ]、[#羯諦:ギャテイ]　[#波羅羯諦:ハラギャテイ]。[r][#波羅僧羯諦:ハラソウギャテイ]、[#菩提薩婆訶:ボジソワカ]……。
+[k]
+
+
+
+[messageOff]
+
+[wt 0.9]
+[bgmStop BGM_EVENT_2 1]
+[fadeout black 2]
+[wait fade]
+[soundStopAll]
+[end]
+

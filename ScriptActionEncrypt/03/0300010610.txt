@@ -1,0 +1,1073 @@
+
+
+＄03-00-01-06-1-0
+
+[soundStopAll]
+
+[charaSet A 1098128000 1 マシュ]
+[charaSet B 5036001 1 アヴィケブロン]
+[charaSet C 7030001 1 アタランテ・オルタ]
+[charaSet D 1098128400 1 ヤガ叛逆軍]
+[charaSet E 1098126400 1 パツシィ]
+[charaSet F 1098126800 1 ヤガ（子供）]
+[charaSet G 98115300 1 ホームズ]
+[charaSet H 98115000 1 エフェクト用]
+
+
+
+[scene 55001]
+
+[fadein black 1.0]
+[charaPut H 1]
+[charaEffect H bit_talk_snowstorm_01]
+[se ad555]
+[seVolume ad555 0 0.5]
+[se ad5 1.0]
+[seVolume ad5 0 0.7]
+[wait fade]
+
+[wt 2.0]
+[charaEffectStop H bit_talk_snowstorm_01]
+[seStop ad5 1.5]
+[seStop ad555 1.5]
+[wt 1.5]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ヤガさんたちは魔獣のお肉で賑わっていますね。[r]わたしたちも分けていただきました。
+[k]
+
+＠マシュ
+ゴルドルフ新所長のアドバイスで毒抜きを[r]したのですが……
+[k]
+
+＠マシュ
+マスター、お味の方はいかがでしょう。
+[k]
+
+？1：なかなかいける
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 2000,2000]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アヴィケブロン
+タフだな、我がマスターは。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？2：少しクセがあるかな……
+
+[charaFace A 12]
+
+＠マシュ
+確かに少々生臭さが鼻につきます。[r][#捌:さば]いて焼いて塩を振ってガブリ、だからでしょうか。
+[k]
+
+[charaFace A 7]
+
+＠マシュ
+とはいえ、食料を無駄にする訳にはいきません。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠パツシィ
+ふーん、繊細なんだな。[r]腹に収まるんなら、俺ァ何でもいいや。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ヤガ（子供）
+……。[r]……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠パツシィ
+あん、何だ？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ヤガ（子供）
+そこのつるんつるんのヤガは誰？
+[k]
+
+？1：……[&自分:わたし]？
+？！
+
+[charaFace F 1]
+
+＠ヤガ（子供）
+うん！
+[k]
+
+[charaFace F 0]
+
+＠ヤガ（子供）
+もしかして[#幽霊:ゴースト]？[r]そんなにつるつるで、顔が痛くならないの？
+[k]
+
+？1：我慢している
+
+＠ヤガ（子供）
+すごいなー！
+[k]
+
+？2：おーばーけーだーぞー！
+
+[charaFace F 1]
+
+[charaMoveReturn F 0,10 0.25]
+＠ヤガ（子供）
+キャー！
+[k]
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠パツシィ
+ほら坊主、向こうに行け向こうに。[r]……しかし、[#叛逆:はんぎゃく]軍っつー割には……。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[cameraMove 0.1 -50,0 1.2]
+
+[wt 0.5]
+
+[charaSet A 1098126500 1 ヤガ市民_男]
+[charaSet B 1098126600 1 ヤガ市民_女]
+
+[charaScale A 0.8]
+[charaScale B 0.8]
+[charaScale F 0.8]
+
+[charaTalk off]
+[charaFace A 1]
+[charaFace B 0]
+[charaFace F 1]
+[charaFadein A 0.1 -256,-30]
+[charaFadein B 0.1 0,-30]
+[charaFadein F 0.1 256,-30]
+
+[wipein rectangleStripRightToLeft 0.7 1]
+[se ad5 1.0]
+[seVolume ad5 0 0.5]
+[cameraMove 3.4 50,0 1.2]
+[wait wipe]
+[wt 2.7]
+
+
+
+
+
+[wipeout rectangleStripRightToLeft 0.7 1]
+[seStop ad5 0.7]
+[wait wipe]
+
+[charaTalk on]
+
+[charaScale A 1.0]
+[charaScale B 1.0]
+[charaScale F 1.0]
+
+[charaFadeout B 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaSet A 1098128000 1 マシュ]
+[charaSet B 5036001 1 アヴィケブロン]
+[charaSet D 1098123210 1 ゴルドルフ・ムジーク]
+[charaSet F 1098124510 1 ダ・ヴィンチ]
+
+[cameraHome 0.1]
+
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠パツシィ
+ガキだの爺さん婆さんだの……。[r]どちらかっていうと避難民の方が正しいか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アヴィケブロン
+パツシィ君の言う通りだな。
+[k]
+
+＠アヴィケブロン
+戦闘に適したヤガは、僕の見る限りでは[r]全体の六割程度でしかない。
+[k]
+
+＠アヴィケブロン
+残り四割は、後方支援が精々だろうし、[r]それもあまり期待はできない。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.5]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[se ad173]
+[wt 1.5]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[seStop ad173 0.5]
+[wt 0.4]
+
+＠アタランテ・オルタ
+……居たな、[%1]。[bgm BGM_EVENT_76 0.1][r]それに志願者。
+[k]
+
+[charaFace C 5]
+
+＠アタランテ・オルタ
+まず、我々の目的だ。[r]イヴァン雷帝の打倒[line 3]
+[k]
+
+＠アタランテ・オルタ
+それは一致している。しかし、だからといって[r]我らが汝の指揮下に入ると勘違いされても困る。
+[k]
+
+？1：そんなつもりは[&ありません:ないです]
+？！
+
+[charaFace C 4]
+
+＠アタランテ・オルタ
+そもそも、個々の実力が突出しているくらいでは、[r][#殺戮猟兵:オプリチニキ]に対抗できるはずもない。
+[k]
+
+＠アタランテ・オルタ
+荒れ狂う暴風が如き、一種の災害だからな。
+[k]
+
+[charaFace C 5]
+
+＠アタランテ・オルタ
+だが一方、汝らの力は惜しい。[r]とても惜しい。
+[k]
+
+[charaFace C 6]
+
+＠アタランテ・オルタ
+……そこで、ひとまず遊軍扱いで様子を見たい。[r]いわゆる有用性の証明だ。
+[k]
+
+[charaFace C 5]
+
+＠アタランテ・オルタ
+少人数、かつ精鋭でなければこなせない任務が、[r]ずっと放置されていた。
+[k]
+
+＠アタランテ・オルタ
+これまでは私が直接出向いてどうにかしていたが、[r]私はこの軍のリーダーだ。
+[k]
+
+[charaFace C 4]
+
+＠アタランテ・オルタ
+別に死を恐れる訳ではないが、[r]単純に軍全体の動きが滞ってしまうのが困る。
+[k]
+
+[charaFace C 6]
+
+＠アタランテ・オルタ
+……引き受けてくれるだろうか？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.3]
+
+＠ホームズ
+失礼。通信越しですまない、ミズ・アタランテ。[r]道中で話は聞いていると思うが、改めて自己紹介を。
+[k]
+
+＠ホームズ
+私はシャーロック・ホームズ。[r]キミと同じサーヴァントだ。そしてこちらが、
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+はーい。私はレオナルド・ダ・ヴィンチ。[r]訳あって省エネ霊基だけど、そこは割愛させてくれ。
+[k]
+
+[charaFace F 8]
+
+＠ダ・ヴィンチ
+アタランテ。キミと同じ、汎人類史のサーヴァントだ。[r]そして天才だ。困った事があるなら相談してほしい。
+[k]
+
+[charaFace F 14]
+
+＠ダ・ヴィンチ
+とはいえ、私たちもまだこちらに来たばかりで[r]情報が不足していてね。
+[k]
+
+[charaFace F 0]
+
+＠ダ・ヴィンチ
+ひとつ質問をしたいんだけど、いいかな？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠アタランテ・オルタ
+子供の英雄だと？[r]貴様も反転しているのか？
+[k]
+
+[charaFace C 0]
+
+＠アタランテ・オルタ
+……まあいい。[r]子供の頼みとあらば聞かない訳にはいくまい。何だ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+あの大樹の事だよ。[r]ロシアはもちろんの事、地球にはあんな樹はなかった筈だ。
+[k]
+
+＠ダ・ヴィンチ
+あれが何なのか、キミは知っているのかな？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠アタランテ・オルタ
+……世界を支えるかのような大樹だ。[r]私たちの神話大系には一つ、該当するモノがあるが……
+[k]
+
+[charaFace C 4]
+
+＠アタランテ・オルタ
+いや、それとあの樹は無関係だろう。[r]あれが何なのか、私も分からない。
+[k]
+
+[charaFace C 0]
+
+＠アタランテ・オルタ
+だが、ヤガ・モスクワに潜り込ませたスパイから、[r]一つだけ情報を入手した。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠ホームズ
+ほう、それは一体？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠アタランテ・オルタ
+ふむ……。
+[k]
+
+＠アタランテ・オルタ
+……取引条件として、気を持たせるのも酷か。[charaFace C 0][r]我らが入手したのは、名前だけだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+名前……ですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アタランテ・オルタ
+そう。[r]あの樹の名前は“[#空想樹:くうそうじゅ]”。
+[k]
+
+[charaFace C 6]
+
+＠アタランテ・オルタ
+街路を散策していた[#旧種:ヒト]の姿をした[r]宮廷魔術師が呟いていたらしい。
+[k]
+
+＠アタランテ・オルタ
+『空想樹はまだ根を張らない』と。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ホームズ
+ふむ。空想の樹、クラウド・トゥリーと[r]いったところかな。
+[k]
+
+＠ホームズ
+一応、こちらのデータベースで[r]空想樹に関する手掛かりを探してみよう。
+[k]
+
+[charaFace G 4]
+
+＠ホームズ
+何も掴めなさそうではあるがね。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アタランテ・オルタ
+好きにせよ。[wt 0.5][charaFace C 6][r]それで、そちらの方はどうだ。
+[k]
+
+＠アタランテ・オルタ
+任務を引き受けてくれるだろうか？
+[k]
+
+？1：了解！
+
+[charaFace C 1]
+
+＠アタランテ・オルタ
+感謝する。
+[k]
+
+？2：出来ることがあれば
+
+[charaFace C 0]
+
+＠アタランテ・オルタ
+不可能だと思うことを命じはしない。
+[k]
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFace E 0]
+[charaFadein C 0.1 0]
+[charaFadein E 0.1 2]
+
+＠アタランテ・オルタ
+パツシィ。汝も[&彼:彼女]らに同行しろ。
+[k]
+
+[charaFace C 0]
+
+＠アタランテ・オルタ
+[&彼ら:彼女たち]は、この土地を良く知らぬ。[r]狩人であるなら、銃は使えるな。
+[k]
+
+[charaFace E 1]
+
+＠パツシィ
+あー、ってことは入れてくれるってことで[r]いいのか？
+[k]
+
+[charaFace C 6]
+
+＠アタランテ・オルタ
+入りたいならな。
+[k]
+
+＠パツシィ
+……ま、俺も[#殺戮猟兵:オプリチニキ]には怨みがある。
+[k]
+
+[charaFace C 4]
+
+＠アタランテ・オルタ
+怨み……か。[charaFace C 5][r]怨みだけでは、戦い抜くのは難しいぞ。
+[k]
+
+＠アタランテ・オルタ
+これだと思った結論にしがみつけ。[r]死ぬ気でな。
+[k]
+
+＠アタランテ・オルタ
+さもなければ、あっという間に[r]ロシアの[#吹雪:ブリザード]に呑み込まれるぞ。
+[k]
+
+[charaFace E 0]
+
+＠パツシィ
+……わかってるよ。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠アタランテ・オルタ
+では早速、諸君らに最初の任務を与える。[r]村々を巡り、[#檄文:げきぶん]を配ってもらいたい。
+[k]
+
+？1：[#檄文:げきぶん]？
+？！
+
+＠アタランテ・オルタ
+イヴァン雷帝の打倒、[#殺戮猟兵:オプリチニキ]の壊滅、[r]そのために我ら[#叛逆:はんぎゃく]軍がいるということ。
+[k]
+
+＠アタランテ・オルタ
+そして可能であれば、食料や薬の供給をお願いしたい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠パツシィ
+リスク高ぇな、オイ。[r]村人が密告を考えたら、それで俺たち終わりじゃねえか。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アタランテ・オルタ
+[#臨機応変:りんきおうへん]に解決してくれ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アヴィケブロン
+大雑把だな。
+[k]
+
+＠アヴィケブロン
+とはいえ、広大なロシアを巡るには[r]各地に点在する村の協力がなくてはならない。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ホームズ
+では今度はこちらからの要求を。[r]これが我々カルデアからの要望だが、どうかな？
+[k]
+
+[messageOff]
+[se ad15]
+[wt 0.5]
+[se ad1]
+[wt 0.5]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠アタランテ・オルタ
+……魔獣の牙とゴーレムの核あたりなら、[r]すぐに用意できる。
+[k]
+
+[charaFace C 0]
+
+＠アタランテ・オルタ
+今回の事前報酬ということで、[r]先ほどの魔獣から剥いだものを渡しておこう。
+[k]
+
+[messageOff]
+[charaMoveScale C 1.05 0.3]
+[wt 0.3]
+[se ad27]
+[wt 0.5]
+[charaMoveScale C 1.0 0.3]
+[wt 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+それだけか！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠アタランテ・オルタ
+我々を何だと思っている、[#叛逆:はんぎゃく]軍だぞ。[r]物資不足は常でな。
+[k]
+
+[charaFace C 0]
+＠アタランテ・オルタ
+牙も核もさして必要ではないので、[r]供給できるのだ。
+[k]
+
+[charaFace C 4]
+
+＠アタランテ・オルタ
+……まあ、イヴァン雷帝に完全服従を誓った都市があり、[r]いずれ幾つかは攻め落としたい。
+[k]
+
+[charaFace C 1]
+
+＠アタランテ・オルタ
+そのとき、役立ってくれればこちらも考えよう。[r]どうだ？
+[k]
+
+？1：新所長、どうでしょう
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+う、うむぅ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠アタランテ・オルタ
+拒絶するならするで構わない。[r]ここを追い出すだけだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+ぐぎぎぎぎ。[r]……まあいい。
+[k]
+
+＠ゴルドルフ
+[%1]、マシュ、[r]迅速にそのお遣いを終わらせるのだ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+？2：わかりました、じゃあそれで
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+決定権を持っているのは私なのだが！
+[k]
+
+[charaFace D 5]
+
+＠ゴルドルフ
+とりあえずこちらにまず回せ！[r]現場の判断で動くな！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠アタランテ・オルタ
+で、どうなのだ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+うむ。
+[k]
+
+＠ゴルドルフ
+……では、まずそういうことで。[r]貴様がやるのだぞ、[%1]。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠パツシィ
+結論変わりねー……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アタランテ・オルタ
+……よし。では、地図に印をつけておいた。[r]片っ端から回ってくれ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ホームズ
+最短ルートはこちらで検出させてもらう。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ありがとうございます、ホームズさん。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ホームズ
+（よし、足場は固まりつつある。[r]　ようやく一歩前進だね）
+[k]
+
+＠ホームズ
+（一度、こちらに合流してもらえるかな？[r]　いま手に入れた食料を運んでほしい）
+[k]
+
+＠ホームズ
+（その他、シャドウ・ボーダーを修理する前に、[r]　やらなければならない事があるそうだよ）
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マシュ
+さあ、マスター。[r]出発しましょう！
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_76 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 54100]
+
+[fadein black 1.0]
+[se ad603 1.0]
+[seVolume ad603 0 0.8]
+[effect bit_talk_snowstorm_03]
+[wait fade]
+
+
+[wt 2.0]
+
+[seVolume ad603 1.0 0.3]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠パツシィ
+速ぇ！？[bgm BGM_EVENT_77 0.1]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アヴィケブロン
+高機動型に変化させたからね、[r]速度としてはこんなものだろう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠パツシィ
+これが本物の魔術ってやつか……。[r]ああ、くそ。俺も魔術師になれば良かった！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[seVolume ad603 1.0 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+いえ、パツシィさん。
+[k]
+
+＠マシュ
+アヴィケブロンさんは、歴史に名を残すほどの[r]名カバリストですので……。
+[k]
+
+[charaFace A 12]
+
+＠マシュ
+普通の魔術師がこの領域に達するには、[r]十代後の世代くらいに期待しないと……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アヴィケブロン
+僕はただ、僕が求めていたものへの実験として[r]鋳造しただけだが……。
+[k]
+
+？1：求めていたもの？
+？！
+
+＠アヴィケブロン
+僕は『原初の人間』と呼ばれるゴーレムを[r]最終目標に定めていた。
+[k]
+
+＠アヴィケブロン
+受難の民を導き、真の楽園を築くためのゴーレムを。
+[k]
+
+＠アヴィケブロン
+生前はその願いが叶わなかったがね。[r]うん。
+[k]
+
+＠アヴィケブロン
+……まあ、その過程で得た技術が、[r]人理の保護に役立つなら良いことだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[seVolume ad603 1.0 0.3]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠パツシィ
+あー、そろそろ村だぞ。[r]さすがにこれで乗り込むと、パニックになるんじゃないか。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アヴィケブロン
+そうだな。[r]では、ひとまず解除だ。
+[k]
+[messageOff]
+[effectStop bit_talk_snowstorm_03]
+[seStop ad603]
+[cueSe Servants_103200 bac512]
+[cueSeVolume bac512 0 0.4]
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

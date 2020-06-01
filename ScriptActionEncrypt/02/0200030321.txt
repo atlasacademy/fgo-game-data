@@ -1,0 +1,75 @@
+
+
+
+＄02-00-03-03-2-1
+[soundStopAll]
+
+[charaSet A 1098118600 1 おぬい]
+[charaSet B 1017001 1 武蔵]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[scene 46203]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_3 0.1]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠おぬい
+えっと、えっと！[r]じいちゃまの庵までもうすぐだよ！
+[k]
+
+＠おぬい
+ここを右にそれて、まっすぐいけばいいの！
+[k]
+
+？1：急ごう！
+？2：追い付かれる前に辿り着かないと
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠武蔵
+ええ。じゃあ、また走るわよ！[r]おぬいちゃんたちは私が背負うから……
+[k]
+
+？1：足を引っ張ってごめん
+
+[charaFace B 1]
+
+＠武蔵
+まさか。君のお陰で大いに助かってるわ。[r]私ひとりじゃカッとなって返り討ちだった。
+[k]
+
+？2：こっちもなんとか全力で走るよ
+
+[charaFace B 1]
+
+＠武蔵
+苦しいだろうけど頑張って。[r]もう少し！
+[k]
+
+？！
+
+[charaFace B 0]
+
+＠武蔵
+じゃあ、急ぎましょう！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_3 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

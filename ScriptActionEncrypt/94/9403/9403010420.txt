@@ -1,0 +1,479 @@
+
+
+＄94-03-01-04-2-0
+
+
+[soundStopAll]
+
+[charaSet A 5040000 1 謎の護法少女（シルエット）]
+[charaFilter A silhouette 19B7B0FF]
+[charaSet B 1098157600 1 護法少女]
+
+[charaSet C 1098157700 1 小動物]
+[charaSet D 99502600 1 マシュ]
+[charaSet E 3034002 1 茨木童子]
+[charaSet F 10008001 1 シトナイ]
+[charaSet H 98115000 1 エフェクト用]
+[charaSet G 98115000 1 エフェクト用2]
+
+
+
+
+[scene 10000]
+
+
+[charaTalk off]
+[charaDepth B 10]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_sakura01]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[charaTalk depthOff]
+[charaDepth B 0]
+[charaDepth C 1]
+
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 1.0 1]
+[charaFadein C 1.0 0,0]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[bgm BGM_HALLOWEEN_2 0.1]
+
+[charaTalk on]
+
+＠護法少女
+[line 3]天が許すはええんとちゃう？
+[k]
+
+＠護法少女
+[line 3]地が許すのもまあ、そういうもんなんやろなぁ？[r][line 3]人が許すのなんてどうでもええわぁ。
+[k]
+
+＠護法少女
+せやけど、ねえ。[r]うちが許すかはうち次第。
+[k]
+
+＠小動物
+フン。
+[k]
+
+＠小動物
+せいぜい好き勝手にやるといい。[r]オイラの知ったことじゃない。
+[k]
+
+＠護法少女
+[line 3]うちは護法。護法がうち[line 3]
+[k]
+
+
+[scene 27600 0.5]
+[charaPut G 2000,2000]
+[charaEffectStop G bit_talk_sakura01]
+[charaPut H 1]
+[charaFace B 7]
+[charaEffect H bit_talk_41]
+[cameraMove 0.2 0,0 1.1]
+[se ade211]
+
+＠護法少女
+護法少女・またも推参や！
+[k]
+
+[messageOff]
+[se ade217]
+[effect bit_talk_magic_girl_light]
+[wt 3.0]
+
+？1：また来てくれたんだね、護法少女！
+？2：バンク来た！
+
+？！
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+[charaSet G 4008002 1 黒髭の鬼]
+
+[cameraHome 0.1]
+[charaPut H 1200,1200]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaTalk depthOn]
+[charaEffectStop H bit_talk_41]
+[wt 0.5]
+
+[scene 64700]
+
+[charaEffect H bit_talk_10_LowLevel]
+
+[wipein rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+[wt 0.5]
+
+[charaTalk on]
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠マシュ
+気のせいというか、何というか、[r]もうパターン化してきた気がしますがええと……！
+[k]
+
+[charaFadeout D 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+[wt 0.1]
+
+[charaSet D 98115000 1 エフェクト用2]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠茨木童子
+何を言う。[r]そういうものなのだぞ。毎週、あれが楽しみなのだぞ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠シトナイ
+へー、ふうん。そういうものなんだ？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk depthOff]
+[charaDepth B 0]
+[charaDepth C 1]
+[charaDepth D 2]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 0,0]
+[wt 0.5]
+[se ade126]
+
+[charaFace B 7]
+[charaPut D 100,50]
+[charaDepth D 10]
+[charaEffect D bit_talk_rainbow_star]
+[wt 1.5]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaPut H 1200,1200]
+[charaPut D 1200,1200]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠茨木童子
+！[messageShake 0.01 3 3 0.6]！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠黒髭の鬼
+！[messageShake 0.01 3 3 0.6]！！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaEffect H bit_talk_41]
+
+[charaTalk off]
+[charaFace E 2]
+[charaFace G 2]
+[charaFadein E 0.1 2]
+[charaFadein G 0.1 0]
+＠鬼と髭
+い、今ぜったいこっち見た！　目が合った！
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠茨木童子
+……何を言っている。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠黒髭の鬼
+……いや誰しも間違いはあるので一度は許しますが。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠茨木童子
+護法少女・鬼救阿は[#吾:われ]を見たのであって[#汝:なれ]ではなく、[r]そもそも人ごときが鬼を見て喜ぶでないわっ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠黒髭の鬼
+はァー？　ツノ萌えでしょうが鬼っ娘萌えでしょうが！[r]鬼になぞらえた慣用表現でオトすぞテメエ、ああ？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠茨木童子
+意味がわからぬ！[r]ええいマスター、[#埒:らち]があかぬ、さっさと仕留めるのだ！
+[k]
+
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_41]
+[charaEffect H bit_talk_10_LowLevel]
+
+[charaSet D 99502600 1 マシュ]
+
+＠茨木童子
+こうして鬼救阿とのおそろい度を上げたのだ！[r]無駄なやり取りをしてどうする！
+[k]
+
+？1：あ、第三再臨になってたのはそういう！
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠マシュ
+そういう事だったんですね！[r]確かに、今の茨木さんはポップでキュートです！
+[k]
+
+[charaFadeout D 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠茨木童子
+そ、そうか？[wt 0.5][charaFace E 1][r]むふふ。
+[k]
+
+＠茨木童子
+ぽっぷというのは鬼救阿とおそろいの意味だな！[r]そういうことだな！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 0]
+[charaDepth C 1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠護法少女
+健気なんやねえ。ふふふふふ。[r]うちとふたりで[#だぶる]護法少女、ええんとちゃう？
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠茨木童子
+！！
+[k]
+
+[charaFace E 1]
+
+＠茨木童子
+だぶる護法少女かー！！　いいな！
+[k]
+
+[charaSet D 98115000 1 エフェクト用2]
+
+？1：ダブル！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaDepth C 10]
+[charaFace B 1]
+[charaFace C 0]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 0,0]
+
+＠護法少女
+うちとあんたで[line 3][r]黄金、ずるりと抜き取ってしもたらええんちゃう？
+[k]
+
+
+？2：護法少女さん、お願いします！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 0]
+[charaDepth C 1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFace C 5]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 0,0]
+
+＠護法少女
+はいはい、任しとき～。
+[k]
+
+＠小動物
+フン。また正義の味方気取りか。
+[k]
+
+[charaFace B 6]
+
+＠護法少女
+ん～、そないに生意気ばっかり言う口はこうや。[r]ギリギリ～。
+[k]
+
+[messageOff]
+[charaMove B 50,0 0.3]
+[wt 0.3]
+[se ad181]
+
+[charaFace C 2]
+[charaShake C 0.04 4 4 0]
+＠小動物
+ギャー！
+[k]
+
+[messageOff]
+[charaShakeStop C]
+[charaMove B 1 0.3]
+[wt 0.3]
+
+＠護法少女
+はい、おしまい。ほな行こか～♪
+[k]
+
+[charaFace C 4]
+
+＠小動物
+アイタタタタタ……[r]これだから鬼というのは恐ろしい……
+[k]
+
+？！
+
+
+[charaFace B 0]
+＠護法少女
+[line 3]鬼は、鬼。在るがままに。
+[k]
+
+＠護法少女
+[line 3]護法いうたかて結局のとこは鬼やさかい。[r][line 3]骨砕いて、肉裂いて、抉ってまうかもしれへんけど。
+[k]
+
+＠護法少女
+堪忍え？[r]黒いお髭のあとらくしょんまねえじゃあはん。
+[k]
+
+[messageOff]
+[bgmStop BGM_HALLOWEEN_2 0.3]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.5]
+[charaTalk depthOn]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠黒髭の鬼
+ありがとうございます！　望むところです！[r]むしろ全員一斉に[line 3]この胸に飛び込めよ！
+[k]
+
+＠黒髭の鬼
+[f large]飛[messageShake 0.01 3 3 0.6]び込めよォ！
+[k]
+
+[messageOff]
+[wt 0.1]
+[se bac30]
+[charaPut H 1]
+[charaMoveScale G 1.2 0.2]
+[charaMove G 0,-5 0.2]
+[wt 0.6]
+
+
+
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[seStop ad556 0.4]
+[wait fade]
+[charaEffectStop H bit_talk_41]
+[soundStopAll]
+[end]

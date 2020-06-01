@@ -1,0 +1,347 @@
+
+＄03-00-04-04-1-1
+
+
+[soundStopAll]
+
+[charaSet A 98115300 1 ホームズ]
+[charaSet B 8001400 1 アーマード・マシュ]
+[charaSet C 8001410 1 マシュ]
+[charaSet D 1098127610 1 ペペロンチーノ]
+[charaSet E 3004001 1 カルナ]
+[charaSet F 1098127610 1 シルエット_ペペロンチーノ]
+[charaFilter F silhouette 00000080]
+
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+[scene 27710]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ホームズ
+敵性反応は全て処理したかね？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth B 0]
+[charaDepth C 1]
+
+[charaTalk off]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.7]
+
+[se ade18]
+[seVolume ade18 0.0 0.5]
+[wt 0.5]
+[seStop ade18 0.8]
+[wt 1.0]
+
+[se ade57]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[charaFace C 0]
+[charaFadein C 0.3 1]
+[wt 0.3]
+[charaFadeout B 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠マシュ
+はい、何事もなく。[r][#霊基外骨骼:オ　ル　テ　ナ　ウ　ス]の調子もすこぶる良好です。
+[k]
+
+[charaFace C 1]
+
+＠マシュ
+やはり彷徨海に入る前とは安定性が段違いですね。
+[k]
+
+[charaFace C 0]
+
+＠マシュ
+きちんとした設備に加え、ダ・ヴィンチちゃんと[r]シオンさんに調整していただけるというのは、
+[k]
+
+＠マシュ
+噂に聞くあの格言……オーガにヘヴィウェポン、[r]というのをまさに体現した状況ではないかと[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠カルナ
+正しいが、正しくはない。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠マシュ
+そ、そうですね！？　実はわたしも[r]何かおかしいのかもとは思っていたのです。
+[k]
+
+＠マシュ
+金時さんから教えてもらった言葉なので、[r]微妙にゴールデン化されてるのではと薄々……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠カルナ
+すまん。オレも日本のコトワザにはそう明るくない。[r]いま言ったのは、敵の処理についてだ。
+[k]
+
+[bgmStop BGM_EVENT_77 0.5]
+
+＠カルナ
+敵は確かに片付けた。[r]だが[line 3]敵かどうかわからぬものは[line 3]
+[k]
+
+？1：えっ？
+？！
+
+[charaFace E 5]
+
+＠カルナ
+[line 3]あそこだ。
+[k]
+
+[messageOff]
+[se ad73]
+[charaFadeout E 0.1]
+[wt 0.2]
+
+[cameraMove 0.1 -40,0 1.1]
+[se adm15]
+[effect bit_bolg_02 0,-100]
+[wt 0.3]
+[shake 0.05 6 4 0.5]
+[cueSe Battle bac91]
+[wt 0.1]
+[cueSeStop bac91 0.2]
+[cueSe Battle bac434]
+[wt 0.6]
+[cueSeStop bac434 0.2]
+[se ad228]
+[wt 0.2]
+[seStop ad228 0.4]
+[effectStop bit_bolg_02]
+
+[wt 1.0]
+
+[cameraHome 0.7]
+[wt 1.2]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠カルナ
+出てこい。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.5]
+
+[bgm BGM_EVENT_79 0.1]
+
+
+＠
+そこにいたのは[line 3]
+[k]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth D 2]
+[charaDepth F 1]
+
+[charaFace F 0]
+[charaFadein F 0.4 1]
+
+＠
+美しい肉体を持つ、人間だった。
+[k]
+
+＠
+男として、女として、ではない。[r]“人間という生物”として[#均衡:バランス]のとれた体躯。
+[k]
+
+＠
+その顔には、どことなく不敵な、[r]それでいて人懐っこさを感じる笑みが浮かんでいる。
+[k]
+
+＠
+[#ランサー:カ　ル　ナ]の槍が放たれたところだというのに。
+[k]
+
+＠
+脆弱な[#人間:ひと]の身を百度[#貫穿:かんせん]してもまだ余りある致命の槍が、[r]その身体のすぐ脇を[#掠:かす]め、岩を砕いたというのに。
+[k]
+
+＠
+[line 3]笑っている。
+[k]
+
+＠
+まるでその致命が、[r]早朝のカフェで感じる[#爽風:そうふう]であるかの如く。
+[k]
+
+＠
+一切の怯えもなく、一切の焦りもなく。
+[k]
+
+＠
+自らを終わらせうるものとの刹那の交わりを、[r]そして通過を、微笑をもって黙殺していた。
+[k]
+
+
+
+[messageOff]
+[wt 0.5]
+
+[charaFace D 9]
+[charaFadein D 1.0 1]
+[wt 1.5]
+[charaFadeout F 0.1]
+
+[charaTalk on]
+[charaTalk D]
+
+＠D：？？？
+あーらら。かよわい人間にサーヴァントが[r]槍を振るうなんて……いいの？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠カルナ
+無力な人間が相手であれば恥じもしようが、[r]あの程度で死ぬようなものではないと感じた。
+[k]
+
+＠カルナ
+こうして実際に見てもその印象は変わらん。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠D：？？？
+アラヤダ、[#事後承諾:じごしょうだく]っぽくない、それ？
+[k]
+
+＠D：？？？
+これでも上手く隠れてたつもりだったから、[r]けっこうドッキリはしちゃったのよ？
+[k]
+
+[charaFace D 4]
+
+＠D：？？？
+しかし、まぁ……いくら音がしたからって、[r]不用意に近付くのは駄目ねぇ。反省しなくっちゃ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+あなたは。あなたは……！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 1.5]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠マシュ
+[line 3]ペペロンチーノさん！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 1.0]
+[charaFace D 9]
+
+＠ペペロンチーノ
+ハァイ。お久しぶり、マシュちゃん。
+[k]
+
+＠ペペロンチーノ
+あら。しばらく見ないうちに、[r]ずいぶん表情が豊かになったんじゃない？
+[k]
+
+[charaFace D 1]
+
+＠ペペロンチーノ
+うんうん。とってもいいコトだと思うわ、それ♡
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_79 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

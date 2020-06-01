@@ -1,0 +1,665 @@
+
+
+＄94-04-19-91-1-0
+
+[soundStopAll]
+
+
+[charaSet A 7002000 1 ランスロット]
+[charaSet B 1033000 1 アシュタレト親衛隊]
+[charaSet C 11009000 1 アシュタレト]
+[charaSet D 1098185100 1 アシュタレト_怒り？]
+[charaSet E 1032002 1 暗黒武者ＭＵＮＥＮＯＲＩ]
+[charaSet F 1098185200 1 暗黒武者ＭＵＮＥＮＯＲＩ_兜あり]
+[charaSet G 1098185700 1 talkie]
+[charaSet H 2037000 1 ジェーン]
+[charaSet I 11009001 1 Ｓイシュタル]
+[charaSet J 5009000 1 エフェクト用]
+
+[scene 82701]
+
+[wipeFilter cinema 0.5 0]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+[wt 2.2]
+
+[maskout black 0.2]
+[wait mask]
+[charaFadeout C 0]
+[scene 83501]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 0,-50]
+[fowardEffect bit_talk_security]
+[wt 0.3]
+[maskin black 0.2]
+[wait mask]
+
+[se ade386]
+[charaPut J 0,-50]
+[charaEffect J bit_talk_shot_02 200,0]
+[wt 0.2]
+[charaEffect J bit_talk_shot_02 -300,-50]
+[wt 0.1]
+[charaEffect J bit_talk_shot_02 50,150]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[wt 0.1]
+[charaEffectDestroy J]
+[charaFadeout A 0]
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0 0,-50]
+[seStop ade386 0.5]
+[se ad32]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[charaEffect J bit_talk_14 200,0]
+[wt 0.05]
+[se ad32]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[charaEffect J bit_talk_14 -300,-50]
+[wt 0.05]
+[se ad32]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[charaEffect J bit_talk_14 50,150]
+[wt 0.1]
+[charaEffectDestroy J]
+[charaEffect J bit_talk_v_slash01]
+[wt 0.1]
+[cueSe Battle bac508]
+[wt 1.2]
+
+[maskout black 0.2]
+[cueSeStop bac508 0.2]
+[wait mask]
+[fowardEffectDestroy]
+[charaEffectDestroy J]
+[charaFadeout I 0]
+[scene 82701]
+[wt 0.3]
+[maskin black 0.2]
+[wait mask]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠アシュタレト親衛隊
+ドローンから送られてきた映像は以上となります。[r]以後、絶闇剣様からの連絡はありません。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-50]
+
+＠アシュタレト
+……ムネノリ。[r]今の映像、どういう事かしら。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠暗黒武者ＭＵＮＥＮＯＲＩ
+…………。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-50]
+
+＠アシュタレト
+ムネノリ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+
+＠F：暗黒武者ＭＵＮＥＮＯＲＩ
+コーホー。[r]コーホー。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 21]
+[charaFadein C 0.1 0,-50]
+
+＠アシュタレト
+都合悪くなったら兜をかぶるのはやめなさーい！
+[k]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 -256,-50]
+[charaFace C 5]
+[charaFadein C 0.1 256,-50]
+
+＠暗黒武者ＭＵＮＥＮＯＲＩ
+御免。[r]六剣客のあまりの不甲斐なさに顔を伏せる他なく。
+[k]
+
+＠アシュタレト
+六剣客の話ではありません。[r]私が聞いているのは、あの賞金稼ぎの事です。
+[k]
+
+＠アシュタレト
+[#あの女]、[#なぜ私と同じ顔をしている]？
+[k]
+
+[charaFace E 1]
+
+＠暗黒武者ＭＵＮＥＮＯＲＩ
+はて。そのように見えましたかな？[r]このムネノリ、老眼ゆえ映像が曖昧にて……
+[k]
+
+[charaFace C 2]
+
+＠アシュタレト
+クォークすら見切る[#我が師:キ　サ　マ]が何を言っている！[r]はぐらかすにも限度があろう！
+[k]
+
+[charaFace E 0]
+
+＠暗黒武者ＭＵＮＥＮＯＲＩ
+……ご無礼を。[r]お怒り、ごもっとも。
+[k]
+
+＠暗黒武者ＭＵＮＥＮＯＲＩ
+これはもはや貴女には関係のない話ゆえ、[r]捨て置いた事ですが……
+[k]
+
+＠暗黒武者ＭＵＮＥＮＯＲＩ
+余興として話す分には差し支えはないでしょう。[r]では、笑い話としてお聞きください。
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[bgmStop BGM_EVENT_70 1.2]
+[wait fade]
+[charaFadeout E 0.1]
+[charaFadeout C 0.1]
+[wt 0.7]
+[fadein black 1.2]
+[wait fade]
+
+[bgm BGM_EVENT_90 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠暗黒武者ＭＵＮＥＮＯＲＩ
+……という[#顛末:てんまつ]にて。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠アシュタレト
+[line 6]。
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth D 2]
+
+[charaTalk off]
+[charaFace D 22]
+[charaFadein D 0.4 0,-50]
+[cueSe Battle bac66]
+[wt 0.5]
+[cueSeStop bac66 0.2]
+[charaFadeout C 0]
+
+＠D：アシュタレト
+ムネノリ。今日の“悪いね！”はここまで。[r]総統としての責からしばし離れます。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠暗黒武者ＭＵＮＥＮＯＲＩ
+なんと。[r]どこかに行かれるのですかな？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0,-50]
+
+＠D：アシュタレト
+言うまでもありません。[r]私[#自:みずか]らの手で、あの女を始末するのよ。
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[bgmStop BGM_EVENT_90 1.2]
+[wait fade]
+[charaFadeout D 0.1]
+[scene 83400]
+[charaSet A 6018002 1 Ｘ]
+[wt 0.7]
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_space]
+[wipeOff]
+[fadein black 1.2]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk I]
+[charaFace I 28]
+[charaFadein I 0.1 1]
+
+＠Ｓイシュタル
+エンジン出力テスト、スタート。
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.3]
+
+[se ad550]
+[wt 1.8]
+[seStop ad550 0.3]
+[se ade128]
+[wt 1.5]
+
+[se ade366]
+[flashin loop 0.2 0.3 FF000080 FF000000]
+[wt 1.4]
+[seStop ade366 0.1]
+[wt 0.1]
+[flashOff]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠talkie
+警告。メインエンジン損傷により、[r]出力30パーセントダウン。
+[k]
+
+＠talkie
+現在の状況での航行は許可しかねる。[r]落ち着いて、優雅に修理を行うように。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠ジェーン
+だってさー。[r]やっぱりフル出力すると壊れちゃうね、これ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 29]
+[charaFadein I 0.1 1]
+
+＠Ｓイシュタル
+当たりどころ悪かったかぁ～。[r]本格的にドック入りしないとダメね……。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠ジェーン
+じゃ、最寄りの宇宙港を検索するね。
+[k]
+
+[bgmStop BGM_EVENT_5 0.7]
+
+[charaFace H 6]
+
+＠ジェーン
+……あ！
+[k]
+
+＠ジェーン
+今なら公転周期の関係で、イシュタリんの家の[r]ガレージに戻るのが一番近いかも！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 23]
+[charaFadein I 0.1 1]
+
+＠Ｓイシュタル
+うちに？
+[k]
+
+？1：家、あったの！？
+
+？！
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaFace I 11]
+
+＠Ｓイシュタル
+自然発生したサーヴァントじゃあるまいし、[r]そりゃあるわよ、家くらい！
+[k]
+
+[charaFace I 4]
+
+＠Ｓイシュタル
+まあ……今は誰もいないんだけど。[r]家を飛び出してから、もう10年も経ってるし。
+[k]
+
+？1：家を飛び出した……？
+
+[charaFace I 0]
+
+＠Ｓイシュタル
+あ、別に暗い話じゃなくて。[r]賞金稼ぎになるために家を出ただけって話。
+[k]
+
+？2：10年って、Ｓイシュタルいま何歳！？
+
+[charaFace I 23]
+
+＠Ｓイシュタル
+何歳って、14歳だけど。
+[k]
+
+[charaFace I 0]
+
+＠Ｓイシュタル
+サーヴァントって一番いい状態で歳が止まるでしょ。[r]私の場合、14歳の時に独り立ちしたからね。
+[k]
+
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Ｘ
+イシュタルの実家に戻るのはいいのですが、[r]家のガレージでメンテできるのですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠Ｓイシュタル
+もちろん。[r]マアンナ号は家のガレージで造ったものだし。
+[k]
+
+[charaFace I 0]
+
+＠Ｓイシュタル
+作業も私とジェーンで一通りのコトはできるから、[r]ふたりはのんびり観光にいっていいわ。
+[k]
+
+＠Ｓイシュタル
+それでいい、[%1]？
+[k]
+
+？1：ＯＫ！
+
+？！
+
+＠Ｓイシュタル
+決まりね。ジェーン、コース変更。[r]惑星ゼンジョーにお願い。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 1]
+
+＠ジェーン
+ハーイ！[r]ワープなしで一時間くらいかな！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+[charaFadeout H 0.1]
+[wt 0.5]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+[wt 0.5]
+
+？1：……聞いてもいい？
+？2：どうして賞金稼ぎに？
+
+？！
+
+[charaFace I 23]
+[wt 1.0]
+[charaFace I 19]
+
+＠Ｓイシュタル
+えーと。[r]賞金稼ぎが[#性:しょう]に合ってる、みたいな？
+[k]
+
+＠Ｓイシュタル
+旅も出来て、お金も稼げて、人助けもできるし。[r]家で待ってる人も、もういないしね。
+[k]
+
+[charaFace I 0]
+
+＠Ｓイシュタル
+あとはそう、ジェーンの影響かしら。
+[k]
+
+＠Ｓイシュタル
+“警察より賞金稼ぎの方がいい。[r][f small]  [f -]イシュタリんならやっていける”って。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0]
+[charaFace I 0]
+[charaFadein I 0.1 2]
+
+＠ジェーン
+えー。そんなコト言ったかなわたしー。[r]んー。言ったかもー。言いそうだなー。
+[k]
+
+[charaFace I 5]
+
+＠Ｓイシュタル
+ちょっと、覚えてないの！？
+[k]
+
+＠Ｓイシュタル
+私、あの時本気で人生の[#岐路:きろ]に[r]立たされていたんですけど！？
+[k]
+
+[charaFace H 7]
+
+＠ジェーン
+ごめんね～☆[r]でもいいじゃん、結果オーライで！
+[k]
+
+＠ジェーン
+あのまま[#燻:くすぶ]っていたら[r]ヘンにこじらせてただろうし、
+[k]
+
+＠ジェーン
+イシュタリんにはハンターの才能が[r]あったワケだしさー。
+[k]
+
+＠ジェーン
+女学院生から急にクラスチェンジしたのに、[r]今も生きてるってそういうコトでしょ？
+[k]
+
+？1：そう言えばときどき出てくるけど
+？2：Ｓイシュタルは学生だったの？
+
+？！
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠Ｓイシュタル
+ええ、[%1]は[r]ご存じないと思いますけれど。
+[k]
+
+[charaFace I 6]
+
+＠Ｓイシュタル
+ワタクシ、惑星ゼンジョーの[r][#女王女学院:ク　イ　ー　ン　ズ]に通っておりましたのよ？
+[k]
+
+＠Ｓイシュタル
+ほほほ。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠Ｘ
+[f medium][messageShake 0.07 7 5 0.3]な、[#女王女学院:ク　イ　ー　ン　ズ]！？[r]本当ですかイシュタル！？
+[k]
+
+？1：知ってるんですかＸさん
+
+？！
+
+[charaFace A 3]
+
+＠Ｘ
+もちろんです。サーヴァント・ユニヴァースでも[r]屈指のお嬢様学院で、
+[k]
+
+＠Ｘ
+大富豪か王侯貴族の令嬢でなければ入れないとか。[r]わたしも憧れていたのですが……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠Ｓイシュタル
+それはちょっと大げさだけど、[r]生徒がみんなレディなのは確かよ。
+[k]
+
+＠Ｓイシュタル
+外から見たら、そりゃあ優雅な女学院に[r]見えたかもしれないけど……
+[k]
+
+＠Ｓイシュタル
+あの学院にいたから、賞金稼ぎにも[r]すぐ馴染めたんだと思うしねー。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Ｘ
+[FFFFFF]？？？[-][r]お嬢様学院と賞金稼ぎに、どういう関係が？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 19]
+[charaFadein I 0.1 1]
+
+＠Ｓイシュタル
+[line 3]。
+[k]
+
+[charaFace I 20]
+
+＠Ｓイシュタル
+そうね。別に関係なかったわね。[r]由緒正しいクイーンズ、だもの。
+[k]
+
+[charaFace I 0]
+
+＠Ｓイシュタル
+はいはい、そろそろ惑星ゼンジョーよ。[r]ちゃんとシートに座っていてね！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[soundStopAll]
+[end]

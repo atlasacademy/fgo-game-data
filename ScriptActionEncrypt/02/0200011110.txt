@@ -1,0 +1,2202 @@
+
+＄02-00-01-11-1-0
+
+
+[charaSet A 2023000 1 新宿のアーチャー]
+[charaSet B 98086000 1 ホームズ]
+[charaSet C 98109400 1 アルトリア・オルタ]
+[charaSet D 98109500 1 ジャンヌ・オルタ]
+[charaSet E 99502600 1 マシュ]
+[charaSet F 98111500 1 ダ・ヴィンチ]
+[charaSet G 98111500 1 通信用ノイズ]
+
+[soundStopAll]
+
+[bgm BGM_EVENT_2 0.1]
+
+[scene 38300]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ホームズ
+……よし、ここだ。[r]同時に通信も再起動、と。
+[k]
+
+[se ad31]
+[seStop ad31 2.0]
+
+[messageOff]
+[wt 2.0]
+
+[charaFadeout B 0.7]
+[wt 1.0]
+
+[se ad59]
+[wt 0.4]
+[seStop ad59 2.0]
+
+
+[charaTalk off]
+[charaFace C 2]
+[charaFace D 2]
+[charaScale C 1.3]
+[charaScale D 1.3]
+[charaFadein C 0.7 -192,0]
+[charaFadein D 0.7 192,0]
+[wt 0.1]
+[effect bit_talk_41]
+[wt 1.0]
+[effectStop bit_talk_41]
+[charaTalk on]
+
+＠アルトリア・オルタ
+マスター、無事か！？
+[k]
+
+＠ジャンヌ・オルタ
+ちょっとアンタ、無事なの！？
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaScale C 1.0]
+[charaScale D 1.0]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[se ad13]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0 1]
+[wt 0.3]
+＠マシュ
+マスター！！[charaFace E 1][r]良かった、無事でした！
+[k]
+
+[wt 0.4]
+
+[charaFace E 14]
+＠マシュ
+いえ、モニターでステータスは把握していたので、[r]無事であることだけは確信できていたのですが……！
+[k]
+
+＠マシュ
+でも、通信がいつまでも回復しなくて……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0 0,-90]
+＠ダ・ヴィンチ
+おーす、無事かーい？[charaFace F 2][r]……って、シャーロック・ホームズ！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaFace E 6]
+[charaFadein E 0 1]
+＠マシュ
+……あ！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.4]
+[wt 0.7]
+[bgm BGM_EVENT_7 0.1]
+
+[charaFace E 1]
+＠マシュ
+本当だ、本当です、ホームズさん！
+[k]
+
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠ホームズ
+やあ、久しぶりだね。[r]ミス・キリエライト。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0 1]
+[wt 0.3]
+＠マシュ
+はい、ホームズさんもお元気そうで……。[r]ど、[charaFace E 6]どうしてホームズさんがマスターと！？
+[k]
+
+？1：助けてもらった
+
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠アルトリア・オルタ
+ほう。[r]それは良かった。
+[k]
+
+[charaFace C 5]
+＠アルトリア・オルタ
+つまり貴様は、ここに辿り着くまでにできたであろう連絡を、[r]何一つせずに歩いて帰ってきた、と。
+[k]
+
+＠アルトリア・オルタ
+その胡散臭い男と一緒にか。[r]……ほう。
+[k]
+
+？2：無事です
+
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠ジャンヌ・オルタ
+ふーん、ふ[line 4]ん！[r]まあ！　別に！　どうでも！　いいんだけどね！
+[k]
+
+[charaFace D 5]
+＠ジャンヌ・オルタ
+で、誰だってそいつ？[r]ホームズ？　探偵が新宿で役に立つの？
+[k]
+
+？！
+
+[messageOff]
+
+[bgmStop BGM_EVENT_7 1.0]
+[wipeout rollFlashRight 2.0 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+
+[scene 38600]
+
+[wipein rollFlashRight 2.0 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_2 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ホームズ
+改めて自己紹介を。[r]私の名は、シャーロック・ホームズ。
+[k]
+
+＠ホームズ
+クラスはキャスターですが、生憎とお力にはなれません。[r]ご容赦のほどを。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ジャンヌ・オルタ
+ふーん、役に立たないならどうでもいいわ。[r]まあ、[#この馬鹿:マスター]を助けてくれたことは感謝しましょう。
+[k]
+
+＠ジャンヌ・オルタ
+はい、おさらば。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ホームズ
+残念ながらそうもいかないのですよ。[charaFace B 5][r]さて……新宿のアーチャー、そろそろ出てきてくれないか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.7 1]
+[wt 1.0]
+＠新宿のアーチャー
+やあ、ホームズ君。君とは恐らく久しぶりらしいね。[r]うん、それじゃあまた！
+[k]
+
+[messageOff]
+
+[se ad60]
+[seStop ad60 2.0]
+[charaFadeout A 2.0]
+[charaMove A -1024,0 2.4]
+[wait charaMove A]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠ホームズ
+……何をしているのかね、キミは。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠新宿のアーチャー
+いや……あの時は、あれが最善だと計画を[r]立てたのだが……。
+[k]
+
+＠新宿のアーチャー
+考えてみれば相手が『私』だとしても、[r]多少危険なことに変わりはなかったし……。
+[k]
+
+＠新宿のアーチャー
+怖がらせたことには変わりないと分かると、[r]急に申し訳なく思えて……その……。
+[k]
+
+[charaFace A 3]
+＠新宿のアーチャー
+何と言うか……ごめんなさい……。
+[k]
+
+？1：許さん
+
+[charaFace A 1]
+＠新宿のアーチャー
+ですよねー！
+[k]
+
+＠新宿のアーチャー
+いや、本当に悪かった。
+[k]
+
+＠新宿のアーチャー
+お陰で、この二人にも先ほどまで[r][#凹凹:ボコボコ]にされていたところだ。
+[k]
+
+＠新宿のアーチャー
+具体的には顔面とか、胸部とかを。
+[k]
+
+？2：謝られても……
+
+[charaFace A 2]
+＠新宿のアーチャー
+むぅ、となるとやはりここは新宿、東京、[r]即ち日本という地理条件を鑑みるに……。
+[k]
+
+＠新宿のアーチャー
+切腹！　切腹か！[r]あれはすごく痛いと聞くナ！
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠ホームズ
+ははははは！[r]この犯罪紳士、面白いな！
+[k]
+
+[charaFace B 3]
+＠ホームズ
+まあ、心配せずとも[&ミスター:ミス][%1]は、[r]既にキミを許しているらしい。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠新宿のアーチャー
+マジで！？
+[k]
+
+？1：まあ、一応は
+？！
+
+[charaFace A 1]
+＠新宿のアーチャー
+心の友よ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFace D 5]
+[charaFadein C 0.1 0]
+[charaFadein D 0.1 2]
+＠アルトリア・オルタ
+おい、マスター。[r]甘やかすのも程ほどにしろ。
+[k]
+
+＠アルトリア・オルタ
+混沌・悪のコイツは甘やかせばその分だけ、[r]とことんつけあがるぞ。
+[k]
+
+[charaFace D 1]
+＠ジャンヌ・オルタ
+……ヤキモチはみっともないんじゃない？
+[k]
+
+[charaFace C 0]
+＠アルトリア・オルタ
+ほう、良く啼く子猫だ。[r]だが躾は大事だな。
+[k]
+
+[charaFace D 0]
+＠ジャンヌ・オルタ
+……ふーん？
+[k]
+
+？1：二人とも心配してくれてありがとう
+？！
+
+[charaFace C 3]
+[charaFace D 3]
+
+＠アルトリア・オルタ
+……フン、別に。
+[k]
+
+＠ジャンヌ・オルタ
+……心配なんてしてないし。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.4]
+[wt 0.7]
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ホームズ
+さて、ともかく……。[r]新宿のアーチャー、キミは記憶が欠けているようだが。
+[k]
+
+＠ホームズ
+それでも、薄々は感付いているだろう？[r]キミは一体誰で、そして何だったのかは。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠新宿のアーチャー
+まあね。
+[k]
+
+[charaFace A 1]
+＠新宿のアーチャー
+これだけお膳立てされて、しかもシャーロック・ホームズに[r]酷い警戒心を抱くとなると、一人しかいないさ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0 1]
+[wt 0.3]
+＠マシュ
+ホームズさんに警戒心……。[r]アーチャーさん、もしかして……！
+[k]
+
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠ホームズ
+おっと、ミス・キリエライト。[r]そこまでだよ。
+[k]
+
+[charaFace B 0]
+＠ホームズ
+まずは、彼が自ら告白するのを待とうじゃないか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠新宿のアーチャー
+……あー、しかしだね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠ホームズ
+キミの推測通り、キミの真名を私は把握しているし、[r][&ミスター:ミス][%1]にも伝えている。
+[k]
+
+[charaFace B 0]
+＠ホームズ
+そしてその上で、[&彼:彼女]は待っているのだ。[r]キミが真名を告げるのをね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠新宿のアーチャー
+……そうか。[r]君は待ってくれているのかい？
+[k]
+
+？1：……
+？2：待ってる
+
+？！
+
+[bgmStop BGM_EVENT_5 1.0]
+[charaFace A 1]
+[wt 1.0]
+
+[bgm BGM_EVENT_4 0.1]
+[charaFace A 2]
+＠新宿のアーチャー
+ならば、マスター君。[r]いやさ、マスター・[%1]よ。
+[k]
+
+＠新宿のアーチャー
+[&貴方:貴女]が我が不徳を許されるのであれば、[r]我が真名を預けたい。
+[k]
+
+[charaFace A 0]
+＠新宿のアーチャー
+……もう既に、ホームズ君が私の真名を明かしているので[r]意味はないと思うのだが。
+[k]
+
+
+[charaFace A 1]
+＠新宿のアーチャー
+それでも、こういう儀式は必要らしいしネ！
+[k]
+
+[messageOff]
+[charaFace A 0]
+[wt 0.7]
+[cameraMove 0.2 0,8 1.0]
+[wait camera]
+[cameraHome 0.3]
+[wait camera]
+[wt 0.7]
+
+[charaFace A 1]
+＠新宿のアーチャー
+……そうか、であるならば。
+[k]
+
+[charaFace A 0]
+＠A：モリアーティ
+我が名はジェームズ・モリアーティ。[r]幻霊を融合した複合サーヴァントとして、ここに現界した。
+[k]
+
+[charaFace A 2]
+＠A：モリアーティ
+我が身、我が力は我がマスターのために。[r]サーヴァントとして、改めて契約願いたい……！
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_4 2.0]
+[wipeout circleIn 2.0 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaSet A 2023000 1 モリアーティ]
+[wt 1.0]
+
+[wipein circleIn 2.0 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_7 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠モリアーティ
+という訳でモリアーティです、シクヨロ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein C 0.1 0]
+[charaFadein D 0.1 2]
+＠アルトリア・オルタ
+……胡散臭さもここに極まったな。[r]マスター、追放した方がいいぞコイツ。
+[k]
+
+＠ジャンヌ・オルタ
+そうね。何というのか、アレよね。[r]童話に出てくる小狡い狐みたいなツラよ。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠ホームズ
+その方がまだいい。[r]彼の場合は、より性質の悪い狐だ。
+[k]
+
+[charaFace B 0]
+＠ホームズ
+何しろ、彼自身は計画を立てるだけだからね。[r]危険な部分は、全て部下に任せるのさ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠アルトリア・オルタ
+さすが、悪の首領。[r]最低だな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0 1]
+[wt 0.3]
+＠マシュ
+そうです、モリアーティ……さん、はワトソン博士の著作でも、[r]屈指の悪党として名を馳せています。
+[k]
+
+[charaFace E 2]
+＠マシュ
+そして、あのライヘンバッハで！[r]モリアーティ教授はホームズさんと一騎討ちをして！
+[k]
+
+[charaFace E 4]
+＠マシュ
+遂には、二人共に滝へと……。
+[k]
+
+[charaFace E 2]
+＠マシュ
+マスター、気をつけて下さい。[r]周囲に滝とかありませんか！？
+[k]
+
+？1：ないない
+？！
+
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠モリアーティ
+おお……マシュ君にまで警戒されているとは。[r]私は悲しい、よよよ。
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.7]
+[wt 1.0]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0 1]
+[wt 0.3]
+＠マシュ
+あっ……。その、ええとですね……今のはあくまで、[r]ワトソン博士の著作から、わたしが抱いたイメージでして……。
+[k]
+
+[charaFace E 0]
+＠マシュ
+新宿のアーチャーさんは……その……。[r]良い方かな？　と思いつつあるのですが……。
+[k]
+
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFace A 4]
+[charaDepth B 1]
+[charaDepth A 9]
+[charaFadein B 0.1 2]
+[charaFadein A 0.1 0]
+＠ホームズ
+気にすることはない、ミス・キリエライト。[r]泣き真似だ。
+[k]
+
+[charaFace A 2]
+＠モリアーティ
+君には情け容赦というものがないのかネ！？
+[k]
+
+[charaFace B 1]
+＠ホームズ
+ははははは。[r]キミに対してだけはないな。
+[k]
+
+[charaFace B 0]
+＠ホームズ
+情け容赦なく、足を掬い続けてやろうと[r]考えている。
+[k]
+
+[charaFace A 0]
+＠モリアーティ
+まあ、確かにそうだろうナ！[r]さて、それよりホームズ君。あれだろ。
+[k]
+
+＠モリアーティ
+情報を持ってきてくれたのだろう？[r]恐らくは[line 3]。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 0.4]
+[wt 0.7]
+[bgm BGM_EVENT_5 0.1]
+
+[charaFace B 5]
+＠ホームズ
+ああ、この星を破壊するという言葉についてね。[r]……結論から言うと、それは充分に有り得る。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0 0,-90]
+[wt 0.3]
+＠ダ・ヴィンチ
+ちょ、ちょっと待った待った！[r]そんなことは不可能だ！
+[k]
+
+＠ダ・ヴィンチ
+この星には幾つもの[#安全装置:セーフティ]がある。[r]それら全てを潜り抜けて星を破壊するなど、まず有り得ない。
+[k]
+
+[charaFadeout F 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ホームズ
+確かにその通り。
+[k]
+
+[charaFace B 3]
+＠ホームズ
+連綿と続く歴史を持つこの星は、[r]幾度もの危機をどうにか乗り切ってきた。
+[k]
+
+[charaFace B 0]
+＠ホームズ
+人ならざる、[#宙:そと]から来るモノならばともかくとして。
+[k]
+
+[charaFace B 5]
+＠ホームズ
+内側で産み落とされた我々がこの星を破壊するのは、[r]うん、まず不可能に近い。
+[k]
+
+＠ホームズ
+だから、星を破壊するためにはまず根底の発想を[r]覆すしかない。
+[k]
+
+[charaFace B 3]
+＠ホームズ
+……それは、獅子王が聖都でやろうとしたこと。[r]そして、あのエジソンが聖杯の力で為そうとしたことだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0 1]
+[wt 0.3]
+＠マシュ
+獅子王と……エジソンさん！？
+[k]
+
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠モリアーティ
+……[wt 0.7]なるほど、そうか！！[charaFace A 2][r]私は、そんな下らないことをやろうとしているのかネ！
+[k]
+
+[charaFace A 0]
+＠モリアーティ
+いや、下らないは下らないのだが[line 3]。[r]ああ、まったく私らしい！
+[k]
+
+＠モリアーティ
+[#理解:わか]る！　[#理解:わか]ってしまうぞ、[r]その心理が！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠ジャンヌ・オルタ
+独り合点してないで、さっさと説明なさいよ！[r]獅子王と、エジソンとかは何を企んだの！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0 1]
+[wt 0.3]
+＠マシュ
+……はい。
+[k]
+
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+
+[charaSet H 98094000 1 獅子王シルエット]
+
+[charaPut G 2]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaDepth E 9]
+[charaFadein E 0 2]
+[wt 0.3]
+
+[charaFace H 0]
+[charaDepth H 1]
+[charaFilter H silhouette 00000080]
+[charaFadein H 0.7 -160,0]
+[charaMove H -192,0 1.0]
+
+[charaFace E 0]
+＠マシュ
+獅子王は自身の聖槍を『塔』として形成。[r]選んだわずかな人間以外、全てを消し去るつもりでした。
+[k]
+
+[charaFace E 4]
+＠マシュ
+消し去ったとしても、その時は人理焼却が行われていたから[r][line 3]その救済は、成立する予定だったのです。
+[k]
+
+[charaFadeout H 0.7]
+[wt 0.4]
+
+[charaFadeout E 0.3]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[messageOff]
+
+[wt 0.4]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFace D 0]
+[charaFadein C 0.1 0]
+[charaFadein D 0.1 2]
+＠アルトリア・オルタ
+浅薄な考えではあるが。[r]同時に、深く押し悩んだ末の道でもある。
+[k]
+
+＠ジャンヌ・オルタ
+何よ、馬鹿馬鹿しい。[r]それならいっそ、諸共滅んでしまうのが道というものでしょう。
+[k]
+
+[charaFace D 5]
+＠ジャンヌ・オルタ
+これだから、一人で突っ走ろうとする王様は嫌いなのよ。[r]消極的な王様はもっと嫌いだけど。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0 1]
+[wt 0.3]
+＠マシュ
+そして、エジソンさんですが……。
+[k]
+
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+
+[charaSet H 5025001 1 エジソンシルエット]
+
+[charaPut G 2]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaDepth E 9]
+[charaFadein E 0 2]
+[wt 0.3]
+
+[charaFace H 0]
+[charaDepth H 1]
+[charaFilter H silhouette 00000080]
+[charaFadein H 0.7 -160,0]
+[charaMove H -192,0 1.0]
+
+[charaFace E 0]
+＠マシュ
+具体的に行動を取った訳ではなく、[r]あくまで一つの話題として出ただけですが……。
+[k]
+
+＠マシュ
+聖杯を獲った暁には、あの世界のアメリカを切り取り、[r]歴史から浮遊した存在にする予定だった、と伺ってます。
+[k]
+
+[charaFadeout H 0.7]
+[wt 0.4]
+
+[charaFadeout E 0.3]
+[charaPut G 1200,1200]
+[wt 0.3]
+
+[wt 0.4]
+
+[charaPut G 1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0 0,-90]
+[wt 0.3]
+＠ダ・ヴィンチ
+外の世界を滅ぼしてでも、[r]一握りの人間を守ろうとした獅子王と[line 3]。
+[k]
+
+＠ダ・ヴィンチ
+自国を外の世界から切り離して、[r]永遠になろうとしたエジソンか……。
+[k]
+
+[charaFace F 2]
+＠ダ・ヴィンチ
+む、むむ？[r]あれ？　つまり……あれ？　そうか……！
+[k]
+
+[charaFace F 6]
+＠ダ・ヴィンチ
+そういうことか！！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0 1]
+＠マシュ
+ダ・ヴィンチちゃん！？
+[k]
+
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠モリアーティ
+さすが、稀代の天才芸術家。[r]勘が鋭いね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0 0,-90]
+[wt 0.3]
+＠ダ・ヴィンチ
+ちょ、ちょっと待ってくれ！[r]すぐに調べてくる！
+[k]
+
+[se ad59]
+[seStop ad59 1.4]
+[charaFadeout F 0.7]
+[wt 1.0]
+
+
+＠ダ・ヴィンチ
+おーい、スタッフ集まれ[line 2]！[r]きんきゅーちょーさ[line 8]！！
+[k]
+
+[messageOff]
+
+[se ad3]
+[seVolume ad3 0 0.5]
+[seStop ad3 2.0]
+[wt 1.4]
+[se ad192]
+[seStop ad192 0.7]
+[wt 1.0]
+
+[wt 0.4]
+
+[se ad3]
+[seVolume ad3 0 0.3]
+[seStop ad3 2.0]
+[se ad184]
+[seVolume ad184 0 0.7]
+[seStop ad184 2.0]
+[wt 1.0]
+
+[se ad172]
+[seStop ad172 2.0]
+[wt 1.0]
+
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[charaShake D 0.05 0 4 0.4]
+＠ジャンヌ・オルタ
+ちょっと。[r]さっぱり分からないんだけど。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+＠ホームズ
+……世界を滅ぼすことはできない。
+[k]
+
+[charaFace B 0]
+＠ホームズ
+ゲーティアは世界を滅ぼすことが目的ではなかったが、[r]結果として３０００年の月日を必要とした。
+[k]
+
+[charaFace B 5]
+＠ホームズ
+だが、その世界を歴史から切り取ることは可能だ。[r]つまり……。
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.7]
+[wt 1.0]
+
+？1：歴史から切り取られた世界は
+？2：滅ぼすことができる？
+？！
+
+[charaTalk off]
+[charaFace B 2]
+[charaFace A 2]
+[charaFadein B 0.1 2]
+[charaFadein A 0.1 0]
+＠二人
+[f large]素晴らしい！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0 0,-90]
+[wt 0.3]
+＠ダ・ヴィンチ
+そうだ、そうだよ！[r]何てこった、この世界は意味がない！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0 1]
+＠マシュ
+ダ・ヴィンチちゃん！[r]ど、どういうことですか！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0 0,-90]
+＠ダ・ヴィンチ
+この世界はもう、歴史から切り離されている！
+[k]
+
+＠ダ・ヴィンチ
+つまり、そちらの新宿で何が起ころうが[r][#人理には影響がない]んだ！
+[k]
+
+[charaFace F 2]
+＠ダ・ヴィンチ
+いや、もちろん多少は不安定になるかもしれないが、[r]そんなもの、せいぜい微震程度。
+[k]
+
+[charaFace F 0]
+＠ダ・ヴィンチ
+いくら人理が不安定な状況だからといって、[r]この程度で悪影響が出たりはしない。
+[k]
+
+[charaFace F 2]
+＠ダ・ヴィンチ
+最悪、そちらの新宿が滅んでも問題はなく……。[r]カルデアにも影響はない！
+[k]
+
+？1：こちらの世界は滅ぶの？
+
+[charaFace F 4]
+＠ダ・ヴィンチ
+……滅びを回避できなければね。
+[k]
+
+？2：サーヴァントは……？
+
+[charaFace F 4]
+＠ダ・ヴィンチ
+無論、世界が滅びれば消え去るしかないが……。
+[k]
+
+[charaFace F 0]
+＠ダ・ヴィンチ
+霊基情報を失う訳じゃない、[r]再召喚も可能だよ。
+[k]
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0 1]
+＠マシュ
+待って下さい、一番大事なことを見逃しています。[r]マスターはどうなるんですか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0 0,-90]
+＠ダ・ヴィンチ
+……そこだよね。
+[k]
+
+[charaFace F 2]
+＠ダ・ヴィンチ
+つまり、後はもうどうやって[r][%1][&君:ちゃん]を帰還させるかに掛かってくる。
+[k]
+
+[charaFace F 6]
+＠ダ・ヴィンチ
+いや、だがしかし！
+[k]
+
+[charaFace F 0]
+＠ダ・ヴィンチ
+既に歴史から切り離されているなら、[r]強引なレイシフトは可能かもしれない！
+[k]
+
+[charaFace F 2]
+＠ダ・ヴィンチ
+それなら、何事もなく解決できる！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0 1]
+＠マシュ
+……確かにそうなのですが……。
+[k]
+
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFace A 0]
+[charaFadein B 0.1 2]
+[charaFadein A 0.1 0]
+＠ホームズ
+……ふむ。
+[k]
+
+＠モリアーティ
+確かにそうなってしまうネ。
+[k]
+
+[charaFace A 1]
+＠モリアーティ
+新宿は悪徳の都と化したまま、[r]もう一人の私によって破壊される[line 3]星諸共に。
+[k]
+
+？1：そんな……！
+？！
+
+[charaFace A 2]
+＠モリアーティ
+まあ、待ちなさい。[r]新宿は滅び、世界は滅び、サーヴァントも滅ぶ。
+[k]
+
+[charaFace A 0]
+＠モリアーティ
+が、君が無事にカルデアに帰還しているなら、[r]失うものは何もない。
+[k]
+
+[charaFace A 0]
+＠モリアーティ
+いや、我々は死んじゃうんだけどネ！[r]それはそれとして、この新宿がゼロになるだけだ。
+[k]
+
+？1：それは、間違っていると思います！
+？！
+
+[charaFace B 3]
+＠ホームズ
+[&ミスター:ミス][%1]は必ずそう言うだろうと思った。[r]ミス・キリエライト。キミはどう考える？
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0 1]
+[wt 0.3]
+＠マシュ
+……[wt 0.7][charaFace E 8]サーヴァントとしては、マスターの命を[r]何より大事に考えたいです。
+[k]
+
+[charaFace E 12]
+＠マシュ
+でも、何というか……不遜な言い方かもしれませんけど。
+[k]
+
+[charaFace E 14]
+＠マシュ
+ここで安全だからって、この新宿を放置して[r]帰還するマスターは……ええと……。
+[k]
+
+[charaFace E 13]
+＠マシュ
+[#らしくないかな]って、そう思っちゃうんです。
+[k]
+
+？1：さすがマシュ！
+
+[charaFace E 6]
+＠マシュ
+い、いえ！[r]今のは忘れて下さい。
+[k]
+
+[charaFace E 5]
+＠マシュ
+やっぱりマスターが危険なのはダメです、[r]安全第一で、レイシフトによる帰還手段を捜索します。
+[k]
+
+？2：さすがマイサーヴァント！
+
+[charaFace E 3]
+＠マシュ
+あ……今でもそう思っていただけるなんて、[r]マスター、ありがとうございます。
+[k]
+
+？！
+
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+
+[charaTalk C]
+[charaFace C 5]
+[charaFace D 5]
+[charaFadein C 0.1 0]
+[charaFadein D 0.1 2]
+＠アルトリア・オルタ
+……ふむ。
+[k]
+
+＠ジャンヌ・オルタ
+ふうん。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠モリアーティ
+……元カノといちゃつくので[r][#嫉妬:シット]的な？
+[k]
+
+[charaFace A 2]
+
+[messageOff]
+
+[se bac10]
+[effect bit_talk_13 -96,64]
+[se bac27]
+[effect bit_talk_27 96,-64]
+
+[charaShake A 0.05 7 4 2.0]
+[wt 0.4]
+[effectStop bit_talk_27]
+[wt 1.0]
+[effectStop bit_talk_13]
+
+[wt 0.4]
+[charaShake A 0.05 4 0 0.7]
+[wt 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFace A 2]
+[charaFadein B 0.1 2]
+[charaFadein A 0.1 0]
+＠ホームズ
+キミ、獅子を起こすのは程ほどにしておきたまえ。
+[k]
+
+＠モリアーティ
+そうする……こわかった……ちょうこわかった……。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.4]
+[wt 0.5]
+[bgm BGM_EVENT_4 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0 0,-90]
+[wt 0.3]
+＠ダ・ヴィンチ
+さて……カルデアとしては[%1][&君:ちゃん]が[r]新宿と運命を共にする、などというのは見過ごせない。
+[k]
+
+[charaFace F 1]
+＠ダ・ヴィンチ
+共に一年を戦い抜いた戦友としてはね。[r]全力で阻止するつもりだ。
+[k]
+
+[charaFace F 0]
+＠ダ・ヴィンチ
+けれど、やはり新宿を救いたいというマスターの意志も[r]尊重したい。
+[k]
+
+＠ダ・ヴィンチ
+だから、[%1][&君:ちゃん]。[r]最後に、もう一度だけ問うよ。
+[k]
+
+[charaFace F 2]
+＠ダ・ヴィンチ
+……この新宿を救うことに[#報酬:いみ]はない。
+[k]
+
+＠ダ・ヴィンチ
+人類史において何かの役に立つ訳でもなければ、[r]守るに値する誰かを見つけたとしても、意味はない。
+[k]
+
+＠ダ・ヴィンチ
+キミと行動を共にするサーヴァントですら、[r]ここで消滅したとしても問題ない。
+[k]
+
+[charaFace F 0]
+＠ダ・ヴィンチ
+うん、酷な言い方かもしれないが、[r]人理を修復する上では、本当に全く問題ないのさ。
+[k]
+
+＠ダ・ヴィンチ
+そして、キミの周りに居るサーヴァントも、[r]キミの判断を責めはしないだろう。
+[k]
+
+[charaFace F 1]
+＠ダ・ヴィンチ
+それでも[line 3]いいかい、それでも。
+[k]
+
+[charaFace F 0]
+＠ダ・ヴィンチ
+キミは、この[#新宿:まち]を救うに値する何かが、[r]あると思うのかい？
+[k]
+
+？1：思う
+
+[charaFace F 1]
+＠ダ・ヴィンチ
+……そうか。[r]うん、それはきっとキミらしいね。
+[k]
+
+？2：わからない
+
+[charaFace F 2]
+＠ダ・ヴィンチ
+わからないけど、救いたいか。[r]困る……困るんだけど、ああ、実にキミらしい！
+[k]
+
+？！
+
+[charaFace F 1]
+＠ダ・ヴィンチ
+しかし安心した！
+[k]
+
+[charaFace F 2]
+＠ダ・ヴィンチ
+世界の一つや二つ救ったからといって、[r]キミは何の変わりもなく、お人好しで前向きで不屈の闘志の塊だ！
+[k]
+
+[charaFace F 0]
+＠ダ・ヴィンチ
+なら、しょうがない。[r]カルデアでも全力でバックアップするよ。
+[k]
+
+＠ダ・ヴィンチ
+もちろん、レイシフトによる強制帰還準備は[r]整えておくけどね。
+[k]
+
+[charaFadeout F 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠ホームズ
+よし、キミがそう決意したのならば[r]私も話さない訳にはいかないな！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ジャンヌ・オルタ
+さっきから妙にソワソワしてたのは、[r]それが理由？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+＠ホームズ
+帰還されたら、真実を語る意味が消え失せるからね。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_4 0.4]
+[wt 0.5]
+[bgm BGM_EVENT_5 0.1]
+
+[charaFace B 5]
+＠ホームズ
+今回語るべきは、真犯人[line 3]つまり、邪悪なる[r]モリアーティ教授がいかなる方法で星を壊そうとしているか、だ。
+[k]
+
+[charaFace B 0]
+＠ホームズ
+確かに分かたれた世界であれば、[#安全装置:セーフティ]……[r]抑止力のようなものは働かないだろう。
+[k]
+
+＠ホームズ
+しかし、そもそも星が破壊されるなど[r]あってはならないことのはずだ。
+[k]
+
+[charaFace B 3]
+＠ホームズ
+いかにこの新宿を支配しているといっても、[r]それだけで星を破壊するには至らない。
+[k]
+
+[charaFace B 5]
+＠ホームズ
+……という訳でモリアーティ、星を破壊するには[r]何が必要だと思うかね？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠モリアーティ
+フム。
+[k]
+
+＠モリアーティ
+星を破壊するには……破壊するだけのエネルギーが[r]なくてはならない。
+[k]
+
+＠モリアーティ
+そのエネルギーを、地球の核……崩壊する“点”とでも[r]呼ぶべき場所に集中する。
+[k]
+
+[charaFace A 0]
+＠モリアーティ
+……と、言葉で言うのは簡単だがまずそのエネルギーが[r]とんでもない量だ。
+[k]
+
+[charaFace A 1]
+＠モリアーティ
+そう、例えば[line 3]。
+[k]
+
+[charaFace A 0]
+＠モリアーティ
+隕石、地球へと飛来する隕石なら、そのエネルギーを[r]十全に満たすことができるだろう。
+[k]
+
+[charaFace A 1]
+＠モリアーティ
+しかし当たり前の話だが、隕石というのは[r][#どこに落ちるか分からない]。
+[k]
+
+＠モリアーティ
+それは膨大なエネルギーかもしれないが、[r]的には当たらない。
+[k]
+
+＠モリアーティ
+……となると、次に必要なのは的に当てるための装置だ。[r]隕石を吸い寄せ、ポイントに正確に直撃させるための[line 3]。
+[k]
+
+＠モリアーティ
+……[wt 1.0][charaFace A 2][#銃身:バレル]だ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0 1]
+[wt 0.3]
+＠マシュ
+ええと、つまり……。[r][#隕石を星に直撃させるための銃身]ということですか？
+[k]
+
+
+？1：バレル……？
+？！
+
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠ホームズ
+そう、マスターも教えてもらっただろう？[r]新宿区西端に[#聳:そび]え立つ、あの謎の塔。
+[k]
+
+[charaFace B 3]
+＠ホームズ
+日々を追うごとに天を[#衝:つ]かんとばかりに、[r]建築されていくあの塔こそが、
+[k]
+
+[charaFace B 5]
+＠ホームズ
+[#モリアーティの求める][#銃身:バレル]なのだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0 0,-90]
+[wt 0.3]
+＠ダ・ヴィンチ
+は……はぁ！？[r]あのビルが……[#銃身:バレル]だって！？
+[k]
+
+＠ダ・ヴィンチ
+いや、しかし……あれは動かないぞ！[r]仮に銃身だったとしても、隕石をどうやって装填する！？
+[k]
+
+[charaFadeout F 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ホームズ
+幻霊[line 3]。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠アルトリア・オルタ
+幻霊……？[r]英霊に至れなかった存在がどうした。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+＠ホームズ
+うん、私はどうして[#あの]モリアーティが、[r]幻霊にこだわっていたのかが不明だった。
+[k]
+
+[charaFace B 0]
+＠ホームズ
+だが、彼の著作『小惑星の力学』を改めて読んで、[r]ようやく把握したよ。
+[k]
+
+[charaFace B 5]
+＠ホームズ
+彼は隕石を[#サーヴァントとしての能力]で、[r]操るつもりなのだ。
+[k]
+
+＠ホームズ
+そのために幻霊の力が必要だった。[r][#いかなる状況であろうと]、[#弾丸を当てる能力]。
+[k]
+
+[charaFace B 2]
+＠ホームズ
+そう！[r]モリアーティが付属させた幻霊こそは[#魔弾の射手:デア・フライシュッツ]。
+[k]
+
+[charaFace B 0]
+＠ホームズ
+悪魔と取引をして、七発の魔弾を手に入れた狩人[line 3][r]マックスを、モリアーティは取り込んでいる！
+[k]
+
+[charaFace B 5]
+＠ホームズ
+六発、彼は六発だけならあらゆる因果を乗り越え、[r]必ず標的に的中させる。
+[k]
+
+
+＠ホームズ
+しかし、逆に言うと彼の能力では六発だけしか的中しない。[r]あまつさえ、最後の七発目は操作することができない。
+[k]
+
+
+[charaFace B 3]
+＠ホームズ
+しかも、だ。
+[k]
+
+[charaFace B 0]
+＠ホームズ
+その能力は『命中させること』に寄っていて、[r]『傷つけること』には不得手だ。
+[k]
+
+[charaFace B 5]
+＠ホームズ
+本来ならば、[#ただの]歌劇の登場人物として[r]語り継がれるだけの幻霊。
+[k]
+
+＠ホームズ
+それを、あのモリアーティは利用した。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠モリアーティ
+そうだったのか……。[r]どうりで……。
+[k]
+
+＠モリアーティ
+キャスターではなくアーチャーとして召喚され……。
+[k]
+
+
+[charaFace A 0]
+＠モリアーティ
+生前は一度も扱ったことのない、この棺桶から[r]銃弾やらミサイルやらがポンポン出ると思った……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠ジャンヌ・オルタ
+気付きなさいよ、そこは！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[charaFace F 0]
+[charaFadein F 0 0,-90]
+
+＠ダ・ヴィンチ
+ジャンヌ・オルタのツッコミももっともだ……。
+[k]
+
+[charaFadeout F 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace B 5]
+[charaFace A 0]
+[charaFadein B 0.1 2]
+[charaFadein A 0.1 0]
+＠モリアーティ
+ははははは、ごめんネ！
+[k]
+
+[charaFace A 1]
+＠モリアーティ
+恐らく分離する際に、その辺の知識も[r]剥ぎ取られていたのだろう。
+[k]
+
+[charaFace A 0]
+[charaFace B 0]
+＠ホームズ
+以前、時間制限があると伝えたね。[r][&ミスター:ミス][%1]。
+[k]
+
+[charaFace B 5]
+＠ホームズ
+あのタワーが完成すれば、恐らく遠からぬ内に[r]隕石が飛来する。
+[k]
+
+＠ホームズ
+飛来した隕石は、あの“バレル”へ飛び込み[line 3][r]魔弾として、星に撃ち込まれる。
+[k]
+
+[charaFace B 3]
+＠ホームズ
+モリアーティの理論が正しければ、[r]この星は[#殺される]という訳だ。
+[k]
+
+[charaFace B 0]
+＠ホームズ
+究極の大量虐殺、殺人ではなく世界を殺し、[r]星を殺す[line 3]史上最低最悪の犯罪だ。
+[k]
+
+＠モリアーティ
+照れるな……。
+[k]
+
+？1：褒めてない
+？！
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠アルトリア・オルタ
+馬鹿者。
+[k]
+
+[charaFace C 0]
+＠アルトリア・オルタ
+……ともかく、その話が実現可能かどうかはともかく、[r]幻影魔人同盟は[#それを目的として動いている]ということだな？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ホームズ
+その通り。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠ジャンヌ・オルタ
+……フランスを破壊しようとした私が言うのもアレだけど、[r]さすがに引くわ。ドン引くわ。
+[k]
+
+[charaFace D 5]
+＠ジャンヌ・オルタ
+だって、それって自分たちも死ぬじゃない。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ホームズ
+うん、死ぬね。[r]無論、論理的に考えればサーヴァントに死は訪れない。
+[k]
+
+[charaFace B 3]
+＠ホームズ
+だが、それでも星の破壊に手を貸すとすれば、[r]享楽か、復讐か、あるいは他の何かか。
+[k]
+
+[charaFace B 5]
+＠ホームズ
+ともあれ彼らは強大な壁として、新宿を蹂躙すると同時、[r]“バレル”を守護する役割を背負っている。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.4]
+[wt 0.7]
+[bgm BGM_EVENT_4 0.1]
+
+＠ホームズ
+そこで新宿を守るための一歩だ。[r]新宿のアサシンを無力化する。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein C 0.1 0]
+[charaFadein D 0.1 2]
+＠アルトリア・オルタ
+そうだな。[r]あの変身は見事なものだ。
+[k]
+
+[charaFace C 1]
+＠アルトリア・オルタ
+このままだと、間違ってジャンヌ・オルタを[r]斬ってしまうことになる。
+[k]
+
+[charaFace D 5]
+＠ジャンヌ・オルタ
+斬るの確定してんじゃないわよ、スカタン。[r]まあ、確かにアイツはムカつくしさっさと始末した方がいいわ。
+[k]
+
+[charaFace D 0]
+＠ジャンヌ・オルタ
+で、どうやって？
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFace A 0]
+[charaFadein B 0.1 2]
+[charaFadein A 0.1 0]
+＠ホームズ
+さて、モリアーティ。
+[k]
+
+[charaFace A 2]
+＠モリアーティ
+うむ、説明役という極めて重要なポジションを、[r]あっさり私から奪い去った憎きホームズ君、何だね？
+[k]
+
+[charaFace B 0]
+＠ホームズ
+憎い部分はそこなのか……。
+[k]
+
+＠ホームズ
+計画を立てたまえ。[r]その手の悪巧みは、キミの方が得意だろう？
+[k]
+
+[charaFace B 3]
+＠ホームズ
+私はそういうものを打ち砕くのは得意だが、[r]計画立案でキミを上回れるとは思わない。
+[k]
+
+[charaFace A 0]
+＠モリアーティ
+なるほど、そういうことであれば[r]情報をくれたまえ。
+[k]
+
+
+＠モリアーティ
+相手に関する全てをだ。[r]外部取引を含めて連動させてみせよう。
+[k]
+
+[charaFace B 0]
+＠ホームズ
+そら、資料だ。[se ad7][seVolume ad7 0 0.7]
+[k]
+
+[charaFace A 1]
+＠モリアーティ
+ほうほう、ふむふむ……。[r]なるほど……。
+[k]
+
+＠モリアーティ
+うーむ、ここをこうして、こうすれば……。[r]しかし……。
+[k]
+
+[charaFace A 0]
+＠モリアーティ
+ともかく大事なことは……色気だ……。
+[k]
+
+？1：ねえ、色気って言わなかった？
+
+＠モリアーティ
+言ったとも！[r]大事なことだからネ！
+[k]
+
+？2：変な単語が聞こえたんだけど
+
+＠モリアーティ
+ん？[r]気のせいだとも！　私の計画は完璧だ！
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠アルトリア・オルタ
+……大丈夫なんだろうな？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ホームズ
+この男の計画はね、訳が分からないが[r]終わってみると大体上手くいっている。
+[k]
+
+[charaFace B 3]
+＠ホームズ
+不安に駆られるのも無理はないが、[r]ここは一つ、賭けに出ようと思うのだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaFace A 2]
+＠モリアーティ
+では諸君、街に出て[line 3]服を買おう！[r]いやもとい、奪おう。
+[k]
+
+[bgmStop BGM_EVENT_4 1.0]
+
+？1：……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaFace C 2]
+[charaFace D 2]
+[charaFadein C 0.1 0]
+[charaFadein D 0.1 2]
+＠三人
+[shake 0.05 4 4 0.7]
+は？
+[k]
+
+[messageOff]
+
+[wipeout rollRight 2.0 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[scene 38300]
+
+[wipein rollLeft 2.0 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_7 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠アルトリア・オルタ
+……それ、本当に成功するのか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 3]
+[charaFadein A 0.1 0]
+[charaFadein B 0.1 2]
+＠モリアーティ
+するとも、間違いなくする。[r]そしてホームズ君、最後の一撃は君に任せよう。
+[k]
+
+＠ホームズ
+やれやれ。[r]任せておいて何だが、キミの計画は無茶苦茶だな。
+[k]
+
+[charaFace A 1]
+＠モリアーティ
+マスター君、念のために聞いておく。[r]私の計画を進行させて、問題ないかネ？
+[k]
+
+？1：不安だけど……
+
+[charaFace A 0]
+＠モリアーティ
+無論、計画は臨機応変に変化する。[r]しかし、大事な部分は決して外さない。
+[k]
+
+＠モリアーティ
+新宿のアサシンを[#暗殺:アサシン]する。[r]それは完遂しよう。
+[k]
+
+？2：やるしかない
+
+[charaFace B 5]
+＠ホームズ
+その通り。
+[k]
+
+[charaFace B 0]
+＠ホームズ
+何、確かに無茶苦茶だが[line 3]私や彼女たちの特性を[r]きちんと活かしている。
+[k]
+
+[charaFace B 1]
+＠ホームズ
+なるようになるだろうさ。
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_7 0.4]
+[wt 0.4]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠モリアーティ
+それでは始めようカ。[r]まずは、着飾りタイムだ！
+[k]
+
+[charaFace A 2]
+＠モリアーティ
+という訳でチンピラと[#洗脳:クラッキング]されたコロラトゥーラ諸君、[r]そこをサクサクと退きたまえ。
+[k]
+
+[charaFace A 0]
+＠モリアーティ
+退かない？[r]だよネ！　だったら戦闘だ！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

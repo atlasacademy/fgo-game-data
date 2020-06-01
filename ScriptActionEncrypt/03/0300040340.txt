@@ -1,0 +1,378 @@
+
+
+＄03-00-04-03-4-0
+
+[soundStopAll]
+
+[charaSet A 1019001 1 ラーマ]
+[charaSet B 1098167600 1 悪魔カリ]
+[charaSet C 3031001 1 哪吒]
+[charaSet D 8001400 1 マシュ]
+[charaSet E 3004001 1 カルナ]
+[charaSet F 98115300 1 ホームズ]
+[charaSet G 1098167700 1 聖獣]
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+[scene 75004]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaMoveScale H 1.1 0.2]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[effect bit_talk_v_slash01]
+[wt 0.1]
+[cueSe Battle ad85]
+[wt 0.1]
+[flashin once 0.2 0.2 FFFFFF80 FFFFFF80]
+[wt 0.2]
+[charaFadeout A 0]
+[charaScale A 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.2]
+[se bac167]
+[fowardEffect bit_talk_14]
+[flashin once 0.2 0.2 FFFFFF80 FFFFFF00]
+
+[charaShake B 0.05 3 2 0.8]
+[wt 1.0]
+[charaMove B 0,-50 1.4]
+[wt 0.2]
+[charaFadeout B 0.3]
+[se ad716]
+[wt 0.6]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠哪吒
+予想以上　多数。[r]若干　面倒。
+[k]
+
+[charaFace C 2]
+
+＠哪吒
+……っ！？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[se ad728]
+[wt 2.0]
+
+[se ad649]
+[seVolume ad649 0 0.3]
+[wt 0.6]
+[seStop ad649 0.6]
+[wt 0.5]
+
+＠人の声
+ああっ、止めろ、止めてくれ、来るなぁっ……。
+[k]
+
+＠人の声
+お、お願いです、たたたたすけて神様ぁぁたすけぷぇ
+[k]
+
+[se ad161]
+[wt 0.3]
+[se ad342]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+
+＠マシュ
+ああっ[line 3]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[wt 0.2]
+
+[se bac7]
+[charaPut J 1]
+[charaScale J 1.1]
+[charaEffect J bit_bolg_01]
+[wt 0.5]
+[flashin once 0.1 0.1 FFFFFFD0 FFFFFF00]
+[wt 0.1]
+[fowardEffect bit_talk_14]
+[se bac361]
+[se bac358]
+[charaShake B 0.05 3 2 0.8]
+[wt 0.5]
+[charaEffectStop J bit_bolg_01]
+[charaMove B 0,-50 1.4]
+[wt 0.2]
+[charaFadeout B 0.3]
+[wt 0.2]
+[se ad716]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠カルナ
+……恨むがいい。一歩遅かった。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ラーマ
+ここの民は武装していない。
+[k]
+
+＠ラーマ
+建物が壊されれば、中にいた人間は引きずり出されて[r]食われるのみ……というわけか。実に不愉快な話だな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠カルナ
+脆そうな家屋に取り付いた敵を優先して排除してきたが、[r]オレたちだけでは手が足りぬ数になってきた。
+[k]
+
+＠カルナ
+宝具で一掃する事もできるが[line 3]その場合、[r]守るべき建物と人間を巻き込むのは避けられまい。
+[k]
+
+？1：それは[#本末転倒:ほんまつてんとう][&だ:だよ]！
+？2：一匹ずつ潰していくしかない！
+？！
+
+[charaFace E 0]
+
+＠カルナ
+[#然:しか]り。まさに時間との闘いだ。[r]１秒でも早く、この魔物たちを駆逐する。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 1200,1200]
+[charaEffectDestroy I]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[se ad13]
+[wt 0.2]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠ホームズ
+やれやれ、情報収集の邪魔にならないようにしておこうと[r]引っ込んだのに、いきなりこんな戦闘が始まるとはね。
+[k]
+
+＠ホームズ
+これはさすがに計器フル稼働でデータを取らざるを得ない。[r]一休みする暇も[line 6]うん？
+[k]
+
+[charaFace F 0]
+
+＠ホームズ
+待った、事態に新たなファクターが加わりそうだ。
+[k]
+
+＠ホームズ
+キミたちが戦っているソレとは違う、[r]別種の反応がその町に近付いているぞ。数は同じく多数。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠マシュ
+っ！？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad604]
+[wt 1.0]
+[se ad678]
+[seStop ad604 0.3]
+[wt 0.8]
+[se ad322]
+[effect bit_talk_impactlanding 0,-500]
+[shake 0.05 0 2 1.0]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[charaMove G 0,-20 0.3]
+
+[wt 2.0]
+[charaMove G 1 0.5]
+[se ade246]
+[wt 1.0]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ラーマ
+この白き獣たちは……新たな敵か？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠マシュ
+いえ、あれを見てください！[r]カリに向かって[line 3][#攻撃を加えています]！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[charaMoveScale G 1.1 0.2]
+[effect bit_talk_41]
+[shake 0.05 4 2 0]
+[cueSe Servants_402900 bac727]
+[wt 0.5]
+[fadeout black 0.2]
+[cueSeStop bac727 0.3]
+[wait fade]
+[charaFadeout G 0]
+[effectStop bit_talk_41]
+[shakeStop]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0 1]
+[fadein black 0.1]
+[wait fade]
+
+[flashin once 0.1 0.1 FFFFFFD0 FFFFFF00]
+[wt 0.1]
+[fowardEffect bit_talk_14]
+[se bac361]
+[se bac358]
+[charaShake B 0.05 3 2 0.8]
+[wt 0.5]
+[charaMove B 0,-50 1.4]
+[wt 0.2]
+[charaFadeout B 0.3]
+[wt 0.2]
+[se ad144]
+[wt 1.0]
+
+？1：じゃあ、味方！？
+？！
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠カルナ
+……とも、限らないようだ。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.2]
+[se ade246]
+[shake 0.05 2 2 1.0]
+[wt 1.5]
+[seStop ad711 0.3]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ラーマ
+カリと同じく人を襲う獣なのか、それともカリを喰らう獣が[r]余たちをカリと誤認しているのかはわからんが。
+[k]
+
+[charaFace A 5]
+
+＠ラーマ
+襲ってくるぞ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠マシュ
+この生物の介入でどう状況が変化するかは、[r]考えても仕方がないことですね。
+[k]
+
+＠マシュ
+わたしたちはカルナさんと同じく、[r]すべきことを全力で行うだけです。
+[k]
+
+[charaFace D 5]
+
+＠マシュ
+これ以上、町の人に被害は出させません！[r]指示をお願いします、マスター！
+[k]
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,251 @@
+
+
+
+
+
+＄03-00-04-04-1-0
+
+[soundStopAll]
+[skip false]
+
+[charaSet A 8001410 1 マシュ]
+[charaSet B 1019001 1 ラーマ]
+[charaSet C 98115300 1 ホームズ]
+[charaSet D 3004001 1 カルナ]
+[charaSet E 98002000 1 フォウ]
+[charaSet F 3031001 1 哪吒]
+[charaSet G 1098124510 1 ダ・ヴィンチ]
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+[scene 10000]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad761]
+[seVolume ad761 0 0.6]
+[effect bit_talk_yuga_clock_01]
+[wt 6.5]
+
+[fadeout black 1.0]
+[seStop ad761 1.0]
+[wait fade]
+[effectStop bit_talk_yuga_clock_01]
+[effectDestroy bit_talk_yuga_clock_01]
+
+[scene 27710]
+[wt 0.5]
+
+[skip true]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+アーシャさんが教えてくれた山はこのあたりですね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ラーマ
+ぱっと見…………おらんな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+こちらからも特にサーヴァント反応は検知できない。[r]そちらの感覚ではどうだろう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠カルナ
+微かな神気を感じる……ような気もするが、[r]断言はできん。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ラーマ
+同意する。まったくのハズレというわけでもなさそうだ。[r]少し周囲を調べてみるか。
+[k]
+
+[charaFace B 2]
+
+＠ラーマ
+おーい！　誰かいないかー！[r]シータもいないかー！？　余だぞー！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+？1：どなたかいませんかー！
+？！
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠フォウ
+フォウフォーウ、フォウフォウー？
+[k]
+
+[messageOff]
+[wipeout rollRight 1.5 1.0]
+[bgm BGM_EVENT_77 1.5 0.4]
+[wait wipe]
+[charaFadeout E 0.1]
+[wt 1.0]
+[wipein rollLeft 1.5 1.0]
+[bgm BGM_EVENT_77 1.5 1.0]
+[wait wipe]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ラーマ
+やれやれ、ラチがあかんな。[r]ある程度手分けして調べることにしよう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠哪吒
+了解。ボクは　[#風火輪:ふうかりん]で　飛行可能。[r]空から　捜索する。
+[k]
+
+[messageOff]
+[charaPut J 1]
+[charaEffect J bit_talk_43l]
+[charaMove F 0,64 1.1]
+[cueSe NoblePhantasm_303100 NP_303100_3]
+[cueSeVolume NP_303100_3 0 0.5]
+[wt 0.7]
+[wipeout rectangleStripUpToDown 0.3 1.0]
+[wait wipe]
+
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_43l]
+[charaFadeout F 0.1]
+[cueSeStop NP_303100_3 1.0]
+[wt 1.0]
+[wipein rectangleStripDownToUp 0.2 1.0]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠マシュ
+あっ、き、気をつけてくださいね哪吒さん！[r]何が起こるかわかりません、あまり離れないようにー！
+[k]
+
+[charaFace A 12]
+
+＠マシュ
+……大丈夫でしょうか……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaEffect J bit_talk_10_LowLevel]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ラーマ
+なに、やつも物語に[#謳:うた]われる英雄。心配はいらんだろう。
+[k]
+
+＠ラーマ
+自分でも言っていたように、[r]余たちと似た[#背景:空気]を感じないでもないしな。
+[k]
+
+＠ラーマ
+目的に向かって[#一心不乱:いっしんふらん]、という愚直な生真面目さは[r]たまに危うく感じるときもあるが……
+[k]
+
+＠ラーマ
+どうあれ、空にいるやつの機動力に[#敵:かな]う者は[r]そうはおるまい。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 0.5]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠カルナ
+それよりも、こちらはこちらでやるべき仕事が[r]できたようだ。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[charaTalk B]
+[se ad564]
+[wt 1.0]
+[seStop ad564 0.5]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ダ・ヴィンチ
+神が潜む山、ともなれば魔物の一匹や二匹はいるよねぇ。[r]手早く片付けて捜索に戻ってほしいなー☆
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

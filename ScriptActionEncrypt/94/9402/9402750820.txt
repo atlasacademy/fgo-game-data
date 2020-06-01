@@ -1,0 +1,309 @@
+
+＄94-02-75-08-2-0
+
+[soundStopAll]
+
+
+[charaSet A 98100400 1 マシュ]
+[charaSet B 7031000 1 ジャンヌ・オルタ]
+[charaSet C 6034000 1 牛若丸]
+[charaSet D 2003300 1 ロビンフッド]
+[charaSet E 23002000 1 ＢＢ]
+[charaSet F 25003000 1 ？？？]
+[charaSet G 98002000 1 エフェクト用ダミー１]
+[charaSet H 23002000 1 ＢＢ（シルエット用）]
+
+[scene 63101]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth G 0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.4]
+
+[se ad73]
+[charaMove B 30,0 0.1]
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.1]
+[se adm15]
+[effect bit_talk_h_slash02]
+[wt 0.4]
+
+[se ad32]
+[charaShake F 0.04 2 4 0.2]
+[charaEffect F bit_talk_14]
+[wt 0.7]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaFace C 2]
+[charaFadein C 0.1 0]
+[charaFace D 5]
+[charaFadein D 0.1 2]
+[wt 0.4]
+
+[se ad73]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.1]
+
+[se ad171]
+[fowardEffect bit_talk_v_slash01]
+[wt 0.1]
+[seStop bac266 0.4]
+[wt 0.4]
+[se ad32]
+[charaShake F 0.04 2 3 0.2]
+[charaEffect F bit_talk_14]
+[wt 0.7]
+
+[effect bit_shot_01 0,-20]
+[wt 0.1]
+[se bac20]
+[wt 0.4]
+[se bac19]
+
+[effectDestroy bit_shot_01]
+
+[flashin once 0.1 0.1 FFFFFF4D FFFFFF00]
+[charaShake F 0.04 2 2 0.2]
+[se ad602]
+[wt 0.2]
+[flashin once 0.1 0.1 FFFFFF4D FFFFFF00]
+[charaShake F 0.04 2 2 0.2]
+[se ad602]
+[wt 0.2]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.4]
+[charaFadeout A 0.1]
+[se ad171]
+[wt 0.1]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.1]
+[fowardEffect bit_talk_14]
+[wt 0.1]
+[se ad670]
+[shake 0.05 2 4 0.4]
+[wt 0.2]
+[cueSeStop ad670 0.5]
+
+
+[wt 1.0]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 16]
+[charaFadein E 0.4 1]
+[wt 0.4]
+＠ＢＢ
+うー！？　皆さんの攻撃をフルセットで[r]受けても爆発しないんですかぁ！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠マシュ
+敵フォーリナー、健在です！[r]ダメージは通っていると思うのですが……
+[k]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠マシュ
+とにかくあの装甲が硬くて……！[r]とても効いている気がしません！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠ＢＢ
+…………。[r]（これは……隠している状況ではなさそうですね……）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad1]
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+＠？？？
+フォーリナー、殺スベシ。[r]サバフェス、滅ブベシ。
+[k]
+
+＠？？？
+覚エテ　オクガイイ。[r]私ノ名ハ　[#ＸＸ:ダブルエックス]。
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaFace F 10]
+[se bac66]
+[charaPut G 1]
+[charaEffect G bit_talk_charge_aura]
+[wt 1.5]
+[seStop bac66 0.4]
+
+＠F：ＸＸ
+フォーリナー　ヲ　[#退治:ハント]スル　フォーリナー[line 3][r]フォーリナーハンター、ＸＸ、ダ！
+[k]
+
+[messageOff]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_charge_aura]
+[wt 0.4]
+[charaFadeout F 0.1]
+[wt 0.4]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+＠ＢＢ
+[messageShake 0.04 3 3 0.4]
+[charaShake E 0.04 3 3 0.4]
+！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠ロビンフッド
+うひー、やっこさん、まだまだやる気かよ！[r]一時撤退、山まで逃げるしかねえぞ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠ＢＢ
+いえ。特異点ルルハワの守護者として、[r]これ以上の[#狼藉:ろうぜき]は認可できません。
+[k]
+
+＠ＢＢ
+こうなったらわたしも奥の手を出しちゃいます！[r]具体的に言うと[line 3]変身！　です！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 0.4]
+
+
+[se ad249]
+[charaTalk off]
+
+[charaDepth H 1]
+[charaDepth E 0]
+[charaDepth G 5]
+[wt 0.1]
+[charaPut G 1]
+[charaEffect G bit_talk_fire_storm]
+
+[charaFace H 0]
+[charaFilter H silhouette 00000080]
+[charaFadein H 4.0 1]
+[wt 4.0]
+[seStop ad249 0.5]
+[charaEffectStop G bit_talk_fire_storm]
+[se bac325]
+[fowardEffect bit_talk_explosion]
+[seVolume bac325 0 0.7]
+[charaChange E 23002001 0 fade 1.0]
+[charaChange H 23002001 0 fade 1.0]
+[wait charaChange]
+[shake 0.05 1 2 2.0]
+[wt 1.5]
+[charaFadeout H 0.4]
+[charaPut G 1200,1200]
+[fowardEffectStop bit_talk_explosion]
+[wt 1.0]
+
+[bgm BGM_EVENT_4 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+
+＠E：ＢＢ？
+アーーローーハーーー！[r]装いも新たに、パンク・コケティッシュ・ワイルドに！
+[k]
+
+＠E：ＢＢ？
+我こそはハワイ島の女神ペレの神核を[r]インストールしたnewＢＢちゃん……
+[k]
+
+＠E：ＢＢ？
+そう！　ＢＢペレ！　なのでしたー！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+ペレ[line 3]！　ハワイ版イシュタルさんと名高い、[r]あの女神ペレですか！？
+[k]
+
+？1：これ以上はないほど分かりやすい
+？2：説明ありがとうマシュ！
+
+？！
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 19]
+[charaFadein E 0.1 1]
+＠E：ＢＢペレ
+はい、ハワイ島のお騒がせ女神にして力の象徴、[r]破壊と再生、そしておしゃまな愛の女神なのです☆
+[k]
+
+[charaFace E 6]
+
+＠E：ＢＢペレ
+正体を隠すのはここまで！[r]フォーリナーＸＸさんには国外退去を命じま～す！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_4 0.4]
+[wait fade]
+[soundStopAll]
+[end]

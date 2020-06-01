@@ -1,0 +1,514 @@
+
+＄94-04-19-04-3-0
+
+[soundStopAll]
+
+
+[charaSet A 2010001 1 ビリー・ザ・フラッシュ]
+[charaSet B 11009001 1 Ｓイシュタル]
+[charaSet C 1098184900 1 Ｓイシュタル_ダメージ]
+[charaSet J 5009000 1 エフェクト用]
+
+
+[scene 10000]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[wt 0.5]
+
+[se ad563]
+[effect bit_talk_shot_02 150,0]
+[wt 0.1]
+[se ad563]
+[wt 0.1]
+[se ad563]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[wt 0.1]
+[se ad32]
+[fowardEffect bit_talk_14 150,0]
+[wt 0.1]
+[se ad32]
+[fowardEffect bit_talk_14 -170,-50]
+[wt 0.1]
+[se ad32]
+[fowardEffect bit_talk_14 50,150]
+
+[wt 0.2]
+
+[fadeout black 0.1]
+[wait fade]
+[scene 83300]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.7]
+[fadein black 0.5]
+[wait fade]
+
+＠A：？？？
+ヒュー！　やるね賞金稼ぎ！[r]ボクの剣閃をここまで防ぐなんて！
+[k]
+
+＠A：？？？
+その太刀筋、誰に習ったのかな！[r]とても、とても気になって集中できやしない！
+[k]
+
+[messageOff]
+[se ad563]
+[effect bit_talk_shot_02 150,0]
+[wt 0.1]
+[se ad563]
+[wt 0.1]
+[se ad563]
+[wt 0.1]
+[se ad32]
+[fowardEffect bit_talk_Slash_white_01 150,0]
+[effect bit_talk_13 200,0]
+[wt 0.2]
+[se ad32]
+[fowardEffect bit_talk_Slash_white_01_L 300,-50]
+[effect bit_talk_13 300,-50]
+[wt 0.1]
+[se ad32]
+[fowardEffect bit_talk_Slash_white_01 50,150]
+[effect bit_talk_13 50,150]
+
+[wt 0.3]
+
+[effectDestroy bit_talk_shot_02]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠Ｓイシュタル
+なにが剣閃よ、どう見ても拳銃じゃない！[r]アンタ、本当に六剣客のひとりなの！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠A：？？？
+もちろん。総統から直々に[r]金のセイバーバッヂを授与された者だからね！
+[k]
+
+＠A：？？？
+まあ、実際は立ち合いに負けて、[r]命が惜しければ配下になれ、ってヤツだったけど。
+[k]
+
+＠A：？？？
+いやあ。アーチャーであってもバッヂをつけたら[r]セイバークラスになっちゃうって、ほんと[line 3]
+[k]
+
+[charaFace A 5]
+
+＠A：？？？
+うちの総統、どれだけデタラメなのかって話さ。[r]正直、そこだけは根に持ってるんだよね、ボク。
+[k]
+
+
+＠A：？？？
+[line 3]だからさあ。[r]聞かせてくれないかなあ。
+[k]
+
+＠A：？？？
+君の太刀筋って誰に教わったものなの？[r]それ、うちの総統にそっくりじゃないか。
+[k]
+
+＠A：？？？
+ってコトは師匠はムネノリ様？[r]でもあの人にそんな余裕はなかった筈だけど。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠Ｓイシュタル
+私に師匠なんていないっ！
+[k]
+
+＠Ｓイシュタル
+これは！　アンタたちを倒すためにッ！[r]自力で、[#培:つちか]ってきた剣だっつーの！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[se ad73]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth J 1]
+[charaDepth A 2]
+
+[wipeout leftToRight 0.2 1.0]
+[wait wipe]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0 1]
+[wipein rightToLeft 0.2 1.0]
+[wait wipe]
+
+[se adm15]
+[charaPut J 1]
+[charaEffect J bit_talk_Slash_red_01_L]
+[wt 0.1]
+[charaFace A 2]
+[charaMoveReturn A 40,0 0.3]
+
+＠A：？？？
+おおっと危ない！
+[k]
+
+＠A：？？？
+そっか、師はいないのか、[r]じゃあその太刀筋は体のクセってコトだね！
+[k]
+
+[charaFace A 0]
+
+＠A：？？？
+うん。そうと分かれば遊びはなしだ。[r][#目覚める前]にここで消えてもらうとしよう。
+[k]
+
+＠A：？？？
+ボクは六剣客が一振り、[r]閃断剣ビリー・ザ・フラッシュ。
+[k]
+
+[charaFace A 1]
+
+＠ビリー・ザ・フラッシュ
+ま。率直に言って、早いだけが取り柄でね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠Ｓイシュタル
+[line 3]！？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[se ad606]
+[effect bit_talk_radiallight01]
+[wt 0.5]
+[fadeout white 0.5]
+[wait fade]
+[effectDestroy]
+[seStop ad606 0.2]
+[se ad563]
+[wt 0.1]
+[se ad563]
+[charaFadeout A 0.1]
+[wt 0.7]
+[charaTalk C]
+[charaFace C 0]
+[charaScale C 1.2]
+[charaFadein C 0.1 1]
+[charaShake C 0.08 6 2 0.4]
+[cueSe Servants_103200 bac512]
+[charaMoveScale C 1.0 0.3]
+[fadein black 0.1]
+[wait fade]
+
+[wt 0.2]
+[cueSeStop bac512 0.4]
+[wt 0.4]
+
+＠C：Ｓイシュタル
+つぅ……！
+[k]
+
+[charaFace C 1]
+
+＠C：Ｓイシュタル
+何いまの、宝具！？　[#充填:じゅうてん]無しのノーモーション！？[r]いくら何でも速すぎない！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ビリー・ザ・フラッシュ
+おっと。ヒットしたのに、まだ生きてるのかい？
+[k]
+
+＠ビリー・ザ・フラッシュ
+撃つのは早くても威力はそこそこなのが[r]ボクの欠点だから、そこは仕方ないとして。
+[k]
+
+[charaFace A 5]
+
+＠ビリー・ザ・フラッシュ
+やっぱり君、普通のサーヴァントじゃないね。[r]心臓だけじゃなく、頭も撃ち抜かないとダメか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：Ｓイシュタル
+（間髪入れずに宝具２発目……！？[r]　速さが違う、とてもじゃないけどこんなの……！）
+[k]
+
+
+[messageOff]
+
+[bgm BGM_EVENT_3 0.5 0.4]
+[se ad55]
+[seVolume ad55 0 0.0]
+[seVolume ad55 1.2 1.0]
+[wt 1.5]
+[seStop ad55 0.0]
+[se ad671]
+[seVolume ad671 0 0.8]
+[wt 0.3]
+
+？1：待ったーーーーーー！
+
+？！
+
+[charaFace C 1]
+
+＠C：Ｓイシュタル
+[%1]！？[r]待ってろって言ったのに……！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.4 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ビリー・ザ・フラッシュ
+おや。君が[#件:くだん]のマスター？[r]あはは、ホントにただのモブなんだ。
+[k]
+
+＠ビリー・ザ・フラッシュ
+わざわざ出てきてくれてありがとう。[r]恨みはないけど、手足を撃ち抜かせてもらうよ。
+[k]
+
+＠ビリー・ザ・フラッシュ
+いやあ。よその宇宙からのお客様にどうかと[r]思うけど、本部の怖ーいボスからの命令なんだ。
+[k]
+
+＠ビリー・ザ・フラッシュ
+命さえあれば後はどうでも、だってさ。[r]アシュタレト様の為の、いわゆる『生け贄』ってヤツ。
+[k]
+
+＠ビリー・ザ・フラッシュ
+じゃ、そういうコトで。[r]文句は目を覚ました後、うちの総統に。
+[k]
+
+[messageOff]
+[se ad563]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[wt 0.2]
+[se ad563]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[wt 0.1]
+[charaFadeout A 0]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0 -64,0]
+[charaMove C 1 0.2]
+[wt 0.1]
+[se ad32]
+[fowardEffect bit_talk_14 150,0]
+[charaShake C 0.05 6 2 0.2]
+[wt 0.2]
+[se ad32]
+[fowardEffect bit_talk_14 -170,-50]
+[charaShake C 0.05 6 2 0.3]
+
+＠C：Ｓイシュタル
+させるかっ……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ビリー・ザ・フラッシュ
+ヒュウ。胸に穴が空いてるのによく動くなぁ。[r]無駄な努力だと思うけど。
+[k]
+
+＠ビリー・ザ・フラッシュ
+君に勝ち目はないし、[r]君に[&彼:彼女]は助けられない。
+[k]
+
+＠ビリー・ザ・フラッシュ
+同じように、[&彼:彼女]に逃げ道はないし、[r][&彼:彼女]に君は助けられない。
+[k]
+
+＠ビリー・ザ・フラッシュ
+チェスでいうならチェックメイトだ。[r]それが分からないなら、どうぞお好きに。
+[k]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+？1：いや
+
+？！
+
+？1：こんなの、ぜんぜん詰んでない……！
+
+？！
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth C 2]
+[charaTalk off]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[wt 0.2]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[wt 1.0]
+
+[masterBranch lblBoy lblGirl]
+[label lblBoy]
+[charaEffect J bit_talk_CommandMantra_01 0,64]
+[se bas16]
+[wait charaEffect J]
+[branch lblConf]
+[label lblGirl]
+[charaEffect J bit_talk_CommandMantra_02 0,64]
+[se bas16]
+[wait charaEffect J]
+[label lblConf]
+
+[cueSe Battle bas3]
+[effect bit_talk_cure]
+[charaFadeout C 1.5]
+[wt 2.5]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ビリー・ザ・フラッシュ
+！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 1]
+
+＠Ｓイシュタル
+霊基が一瞬で全快した……！？[r]今の、伝説にある『令呪』ってヤツ！？
+[k]
+
+[bgm BGM_EVENT_4 0.1]
+
+？1：（ドヤァ）
+？2：（親指を立てる）
+
+？！
+
+[charaFace B 3]
+
+＠Ｓイシュタル
+ひきつった笑顔で得意顔しなくていいから！[r]足、震えてるじゃない、もー！
+[k]
+
+[charaFace B 28]
+
+＠Ｓイシュタル
+でも[line 3]これなら勝てる！[r]サポートお願い、[%1]！
+[k]
+
+＠Ｓイシュタル
+令呪って魔力充填もできるんでしょ！？
+[k]
+
+＠Ｓイシュタル
+速攻には速攻でぶっ潰すのみ！[r]アイツが宝具を使う前に決着をつけさせて！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.4 1]
+[bgmStop BGM_EVENT_4 0.5]
+[wait wipe]
+
+[wt 0.2]
+
+[se ad346]
+[wt 0.4]
+[seStop ad346 0.1]
+[wt 0.2]
+
+[bgm BGM_EVENT_63 0.1]
+
+＠ビリー・ザ・フラッシュ
+チッ……！[r]撃鉄をあげろ、サンダラー！
+[k]
+
+[charaFace A 2]
+
+＠ビリー・ザ・フラッシュ
+こいつはヤバイぞ、[r]宝具の２連射でカタをつける！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_63 0.4]
+[wait fade]
+[soundStopAll]
+[end]

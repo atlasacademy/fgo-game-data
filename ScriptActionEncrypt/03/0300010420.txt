@@ -1,0 +1,275 @@
+
+＄03-00-01-04-2-0
+[soundStopAll]
+
+[charaSet A 8001002 1 マシュ]
+[charaSet B 5036001 1 アヴィケブロン]
+[charaSet C 7030001 1 ？？？]
+[charaSet D 1098128400 1 ヤガ]
+[charaSet F 1098127000 1 ゴーレム]
+[charaSet H 98115000 1 エフェクト用]
+
+[scene 54103]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[wt 0.5]
+[se ad563]
+[wt 0.4]
+[se ad170]
+[wt 0.2]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaMoveScale F 1.2 0.2]
+[charaMove F 0,30 0.2]
+[charaFadeout F 0.1]
+[fowardEffect bit_talk_h_slash01]
+[se ad85]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+[wt 0.2]
+
+[se bac10]
+
+[fowardEffect bit_talk_13]
+[charaShake D 0.05 4 4 1.2]
+[wait se bac10]
+
+[wt 0.3]
+[charaMove D 0,-15 0.4]
+[wt 0.4]
+[se ad54]
+[wt 0.4]
+
+＠ヤガ
+ぐ、う……。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+
+[wt 0.3]
+
+[charaTalk depthOff]
+[charaDepth F 6]
+[charaDepth H 8]
+
+[se ad248]
+[seVolume ad248 0 0.0]
+[seVolume ad248 0.5 1.0]
+[charaPut H 1]
+[charaEffect H bit_talk_arrow_enemy_l]
+[wt 0.8]
+[seStop ad248 0.1]
+[cueSe Servants_9934800 boss06]
+[shake 0.05 4 4 0.3]
+[wt 0.2]
+[se bac59]
+[fowardEffect bit_talk_explosion_triple]
+[shake 0.05 4 10 0.5]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_arrow_enemy_l]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[fowardEffectStop bit_talk_explosion_triple]
+[wt 0.5]
+[cueSe Battle bac434]
+[wt 1.0]
+[bgmStop BGM_EVENT_80 0.7]
+[charaShake F 0.05 6 2 1.5]
+[charaMove F 0,-200 2.0]
+[wt 0.5]
+[charaFadeout F 0.7]
+[cueSeStop Battle bac434 1.5]
+[wt 2.0]
+
+＠？？？
+待て！
+[k]
+
+[charaEffectStop H bit_talk_snowstorm_02]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠アヴィケブロン
+……やあ、君がリーダーかな？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad60]
+[seVolume ad60 0 0]
+[wt 0.1]
+[seVolume ad60 1.0 1.0]
+[wt 1.6]
+[seStop ad60 0.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.7 1]
+[wt 1.2]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠？？？
+そうだ。……汝らの力はよくわかった。[r][#叛逆:はんぎゃく]軍に加わりたいのだな？
+[k]
+
+？1：その通りです
+
+＠？？？
+そうか。[r]だが、まだ信用はできない。
+[k]
+
+[charaFace C 5]
+
+＠？？？
+何しろ[#旧種:ヒト]の姿をしているからな。
+[k]
+
+？2：加わっても大丈夫？
+
+[charaFace C 5]
+
+＠？？？
+ああ、歓迎するとも。[r][line 3]汝らが[#旧種:ヒト]でなければな。
+[k]
+
+？！
+
+[charaFace C 4]
+
+＠？？？
+[#旧種:ヒト]の姿を持つ者は、[r]この世界に二種類しかない。
+[k]
+
+[charaFace C 5]
+
+＠？？？
+即ち、魔術師とサーヴァント。[r]ならば、[#我らの敵である]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠マシュ
+そんな……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠？？？
+汝らが[#皇帝:ツァーリ]の手の者かどうか。
+[k]
+
+＠？？？
+それは強者でありながら、[r]慈愛を持つことなき非道の所業を行うかどうかによる。
+[k]
+
+[bgmStop BGM_EVENT_81 0.5]
+[charaFace C 2]
+
+＠？？？
+……故に、今から理不尽な言葉を吐こう。[r][#我らを殺さず戦え]。[#ただし我らは殺す]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アヴィケブロン
+……ほう、なるほど理不尽だ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠？？？
+我らを倒すまでの力量があるなら、[r]汝らをスパイとして疑う必要性がそもそもない。
+[k]
+
+＠？？？
+そのまま我らを滅ぼせばいいだけだからな。[r]なのに、我らを生き[#存:ながら]えさせるのであれば[line 3]
+[k]
+
+[charaFace C 2]
+
+＠？？？
+それは慈愛であり、[#旧種:ヒト]が持つ優しさだ。[r]我らはそれを理不尽に期待する！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アヴィケブロン
+さて、どうするマスター？[r]僕は君の意見に従うとしよう。
+[k]
+
+？1：彼女の言う通りに
+
+＠アヴィケブロン
+よし、了解だ。
+[k]
+
+？2：戦って、勝って、殺さない
+
+＠アヴィケブロン
+いいだろう。
+[k]
+
+＠アヴィケブロン
+難儀ではあるが、不可能ではない。
+[k]
+
+＠アヴィケブロン
+それでは彼女に一つ、[r]僕たちが英霊であることを思い知らせることにしよう。
+[k]
+？！
+
+
+[messageOff]
+[bgmStop BGM_EVENT_80 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

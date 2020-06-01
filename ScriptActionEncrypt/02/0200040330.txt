@@ -1,0 +1,100 @@
+
+＄02-00-04-03-3-0
+[soundStopAll]
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 1098121910 1 食屍鬼]
+[charaSet C 5033001 1 キルケー]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[scene 49302]
+
+[charaDepth H 10]
+[charaPut H 1]
+[charaEffect H bit_talk_40]
+
+[fadein black 1.0]
+[wt 0.5]
+[bgm BGM_EVENT_3 0.1]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.4 1]
+
+＠マシュ
+はぁっはぁっはぁっ[line 3]
+[k]
+
+[charaFace A 15]
+
+＠マシュ
+キ……キルケーさん！[r]そちらに一体向かいましたっ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad42]
+[charaTalk B]
+[charaFace B 0]
+[charaFilter B silhouette 00000080]
+[charaFadein B 0.1 1]
+
+＠食屍鬼
+[line 6]！
+[k]
+
+[messageOff]
+[se bac27]
+[fowardEffect bit_talk_32]
+[charaShake B 0.05 3 3 0.3]
+[wt 1.0]
+
+[fowardEffectStop bit_talk_32]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠キルケー
+全力疾走ご苦労マシュ。[r]そのままオトリ役を続けてもらえるかい。
+[k]
+
+＠キルケー
+見通しのよいこの場所なら、[r]誰も巻き込まず、ぞんぶんに術もふるえる。
+[k]
+
+＠キルケー
+よし準備は整った。[r]さあ、おいで[#食屍鬼:グール]たち。
+[k]
+
+[charaFace C 1]
+
+＠キルケー
+私の自慢の[#饗宴:きょうえん]をどうぞ楽しんでくれ。[r]ふふ。
+[k]
+
+[charaFace C 5]
+[se ad39]
+[charaBackEffect C bit_talk_36_back]
+＠キルケー
+[#仄暗:ほのぐら]き[#水底:みなそこ]よりゆらぎ出でよ、[r]我が[#妬心:としん]の獣……
+[k]
+
+[charaFace C 2]
+
+＠キルケー
+[#六極:りっきょく]の災厄を、その[#三重:みえ]の[r][#牙:あぎと]に[#塗:と]し食らいつけ―――！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

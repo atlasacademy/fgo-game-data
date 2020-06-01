@@ -1,0 +1,220 @@
+
+＄94-03-35-21-3-0
+
+[charaSet A 3001002 1 クー・フーリン]
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+
+[scene 10310]
+
+[fadein black 2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+＠クー・フーリン
+[tVoice ValVoice_300100 0_V010]
+よっ、おはようさんマスター。[r]クー・フーリン、お呼びと聞いて参上したぜ。[wait tVoice]
+[k]
+
+＠クー・フーリン
+[tVoice ValVoice_300100 0_V020]
+ああ、用件なんざ皆まで言う必要はねえ。[r]あれだろ？　日頃の感謝の気持ちってヤツだろ？[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+＠クー・フーリン
+[tVoice ValVoice_300100 0_V030]
+こっちも用意してたんでおあいこだ。[r]いやいや、無駄にならないで良かった。[wait tVoice]
+[k]
+
+＠クー・フーリン
+[tVoice ValVoice_300100 0_V040]
+ほいよ、オレからの贈り物だ。[r]重すぎず軽すぎない。これぐらいの方が丁度良いだろ？[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[equipSet B 9805390 1 ]
+[wait equipSet B]
+[charaFace B 0]
+[charaFadein B 0.5 0,-70]
+[wt 2.0]
+[charaFadeout B 0.4]
+[wt 0.5]
+
+[flag MALE false]
+[flag FEMALE false]
+
+[selectionUse masterMale]
+？1：さすが、察しがいい
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[flag MALE true]
+
+＠クー・フーリン
+[tVoice ValVoice_300100 0_V050]
+そりゃあ察しはいいとも。[r]勘の悪い戦士なんざ使いものにならねぇしな。[wait tVoice]
+[k]
+
+＠クー・フーリン
+[tVoice ValVoice_300100 0_V060]
+だいたい、フェルグスほどじゃないがオレも[r]祭り好きなんだぜ？　英雄色を好むってヤツ。[wait tVoice]
+[k]
+
+？2：さっぱりしてる！
+
+[flag MALE true]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠クー・フーリン
+[tVoice ValVoice_300100 0_V070]
+そうかぁ？　オレにしてはわりと気を遣って[r]選んだつもりなんだが……[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠クー・フーリン
+[tVoice ValVoice_300100 0_V080]
+ひねりのないように見えて、[r]その耳飾りは思い入れのあるものなんだがね。[wait tVoice]
+[k]
+
+＠クー・フーリン
+[tVoice ValVoice_300100 0_V090]
+ま、そのあたりの事情はこっちの事情か。[r]そっちが知る由もなかったな。[wait tVoice]
+[k]
+
+？！
+
+[selectionUse masterFemale]
+？1：さすが、察しがいい
+
+[flag FEMALE true]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠クー・フーリン
+[tVoice ValVoice_300100 0_V100]
+そりゃあ察しはいいとも。[r]勘の悪い戦士なんざ使いものにならねぇしな。[wait tVoice]
+[k]
+
+＠クー・フーリン
+[tVoice ValVoice_300100 0_V110]
+だいたい、フェルグスほどじゃないがオレも[r]祭り好きなんだぜ？　英雄色を好むってヤツ。[wait tVoice]
+[k]
+
+？2：さっぱりしてる！
+
+[flag FEMALE true]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠クー・フーリン
+[tVoice ValVoice_300100 0_V120]
+そうかぁ？　オレにしてはわりと気を遣って[r]選んだつもりなんだが……[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠クー・フーリン
+[tVoice ValVoice_300100 0_V130]
+ひねりのないように見えて、[r]その耳飾りは思い入れのあるものなんだがね。[wait tVoice]
+[k]
+
+＠クー・フーリン
+[tVoice ValVoice_300100 0_V140]
+ま、そのあたりの事情はこっちの事情か。[r]そっちが知る由もなかったな。[wait tVoice]
+[k]
+
+？！
+
+[branch _isMale MALE 1]
+[branch _isFemale FEMALE 1]
+
+[label _isMale]
+[charaFace A 5]
+＠クー・フーリン
+[tVoice ValVoice_300100 0_V150]
+ともあれ祭りの本番はここからだぜ、相棒。[r]張り切って食堂に行こうじゃねえか。[wait tVoice]
+[k]
+
+＠クー・フーリン
+[tVoice ValVoice_300100 0_V160]
+うわついた空気に浮かされた連中が集まっている[r]ようだからな。どっちが多く落とすか競争だ！[wait tVoice]
+[k]
+
+？1：応ッ！
+
+？2：スカサハ師匠がいたら？
+
+[charaFace A 1]
+＠クー・フーリン
+[tVoice ValVoice_300100 0_V170]
+ははははは、マジか。[r]いや……絶対にない、とは言い切れねえな。[wait tVoice]
+[k]
+
+＠クー・フーリン
+[tVoice ValVoice_300100 0_V180]
+ま、そん時はそん時だ。なるようにならあな。[r]なんなら二人で玉砕してみるか？[wait tVoice]
+[k]
+
+＠クー・フーリン
+[tVoice ValVoice_300100 0_V190]
+骨は拾ってやるぜ？[r]いやまあ、オレもブッ倒れてると思うけどよ。[wait tVoice]
+[k]
+
+？！
+
+[branch _branchEnd]
+
+[label _isFemale]
+
+[charaFace A 1]
+＠クー・フーリン
+[tVoice ValVoice_300100 0_V200]
+んじゃあまぁ、こいつは後でゆっくりいただいとくよ。[r]オレゃあ辛党だが、今日だけは宗旨替えだ。[wait tVoice]
+[k]
+
+＠クー・フーリン
+[tVoice ValVoice_300100 0_V210]
+いいマスターにいい戦場。[r]こんだけありゃあ酒がなくても十分ってもんだ。[wait tVoice]
+[k]
+
+＠クー・フーリン
+[tVoice ValVoice_300100 0_V220]
+アンタが酒を飲めるようになるまで、[r]あと数年は自重しなくちゃあな？[wait tVoice]
+[k]
+
+[label _branchEnd]
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+[soundStopAll]
+[end]

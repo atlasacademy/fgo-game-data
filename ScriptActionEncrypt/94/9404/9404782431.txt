@@ -1,0 +1,200 @@
+
+
+
+＄94-04-78-24-3-1
+
+
+[soundStopAll]
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 25005000 1 ボイジャー]
+[charaSet C 3043000 1 エリセ]
+[charaSet D 1098193000 1 黒いマリー]
+[charaSet E 98104300 1 ゴーストエネミー]
+
+[scene 95901]
+
+[bgm BGM_EVENT_24 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+[effect bit_talk_kengekiall02]
+[wt 0.1]
+[se ad32]
+[charaShake E 0.05 2 2 0.2]
+[wt 0.4]
+[se ad32]
+[charaShake E 0.05 2 2 0.2]
+[wt 0.1]
+[se ad32]
+[charaShake E 0.05 2 2 0.2]
+[wt 0.5]
+
+[effect bit_talk_v_slash01]
+[se ad471]
+[charaShake E 0.05 2 2 0.2]
+[wt 0.2]
+
+[fadeout white 0.2]
+[wait fade]
+[wt 0.5]
+[fadein white 0.5]
+[wait fade]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_24 1.0]
+
+[se ad42]
+[seVolume ad42 0 0.7]
+[se ad228]
+[seVolume ad228 0 0.5]
+[charaShake E 0.1 4 4 0]
+[charaSpecialEffect E enemyErasure 1 1.8]
+[wt 0.5]
+[seStop ad228 1.0]
+[seStop ad42 1.0]
+[wait charaSpecialEffect E]
+[charaFadeout E 0.1]
+[charaShakeStop E]
+[wt 0.5]
+
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+＠黒いマリー
+残念だわ。あとほんの少しだったのに。[bgm BGM_EVENT_81 0.1][r]エリセ、あなたを最後まで[#穢:けが]してやれたのに！
+[k]
+
+[charaFace D 5]
+＠黒いマリー
+このままでは終われないわ。ええ！[r]もうひと勝負いたしませんこと！？
+[k]
+
+[messageOff]
+[se ade423]
+[seStop ade423 1.5]
+[charaMove D -50,0 1.0]
+[charaFadeout D 0.4]
+[wt 1.0]
+
+[se ade430]
+[seVolume ade430 0 0.4]
+[seVolume ade430 1.0 0.9]
+[wt 1.0]
+[seStop ade430 1.2]
+
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_81 0.7 0.5]
+[wait wipe]
+
+[scene 96300]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_81 0.7 1.0]
+[wait wipe]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+＠黒いマリー
+今度は、この[#遊戯界:monde du jeu]そのものを[#穢:けが]してあげるわ……！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_81 0.7 0.5]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[scene 95901]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_81 0.7 1.0]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠エリセ
+ま、待て！　待ってよ！
+[k]
+
+[messageOff]
+[se ad59]
+[seStop ad59 1.5]
+[wipeout leftToRight 0.7 1.0]
+[bgm BGM_EVENT_81 0.7 0.5]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[scene 96300]
+[wt 0.5]
+
+[se ade431]
+[seVolume ade431 0 0.1]
+
+[wipein rightToLeft 0.7 1.0]
+[bgm BGM_EVENT_81 0.7 0.5]
+[seVolume ade431 0.7 1.0]
+[wait wipe]
+[wt 0.4]
+
+[seStop ade431 1.5]
+[se ade430]
+[wt 1.5]
+[seStop ade430 1.5]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠マシュ
+黒いマリーさんを乗せた[#路面電車:ト　ラ　ム]が……！[r]夜空へ舞い上がっていきます！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠ボイジャー
+だいじょうぶ。つぎの[#とらむ]がくるよ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ade430]
+[seVolume ade430 0 0.1]
+[seVolume ade430 1.0 0.6]
+[wt 1.0]
+[seStop ade430 2.0]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠ボイジャー
+あのひとは、おいかけてほしいからね……。
+[k]
+
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

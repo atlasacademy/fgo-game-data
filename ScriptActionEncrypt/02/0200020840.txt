@@ -1,0 +1,887 @@
+
+
+＄02-00-02-08-4-0
+[soundStopAll]
+[charaSet A 99502600 1 マシュ]
+[charaSet B 4004001 1 アストルフォ]
+[charaSet C 1026001 1 デオン]
+[charaSet D 98113900 1 フェルグス]
+[charaSet E 98002000 1 フォウ]
+[charaSet F 98114900 1 男]
+[charaSet G 98115000 1 怪我した男]
+[charaSet H 98115200 1 アサシンの声]
+
+[bgm BGM_EVENT_61 0.1]
+[scene 42900]
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+＠アストルフォ
+うーん……周囲に敵影なし、と。[r]この隠れ家はまだしばらく大丈夫みたいだね。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+[charaFace C 4]
+[charaFadein C 0.1 2]
+＠デオン
+申し訳ない。いろいろと……。
+[k]
+
+？1：二人を責める気はないよ
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+
+[charaPut E 1]
+[charaEffect E bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+？2：悪いと思うならもう一度あの服を……
+
+＠アストルフォ
+えー？　マスターも好きだなぁ。（ごそごそ）[wt 0.4][charaFadeout B 0.4][se ad77]
+[k]
+
+＠デオン
+くっ。拒否などできるはずもない……！（ごそごそ）[wt 0.4][charaFadeout C 0.4][se ad77]
+[k]
+
+[charaPut E 1]
+[charaEffect E bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+[messageShake 0.04 5 5 0.5]
+＠マシュ
+先輩の冗談です、お二人とも！[r]真に受けないでください！
+[k]
+
+[charaFace A 0]
+
+？！
+
+＠マシュ
+[line 2]いろいろありましたが。
+[k]
+
+[charaFace A 13]
+＠マシュ
+お二人のおかげで、能動的にこの街の現状を[r]引き出すことができた、とも言えます。
+[k]
+
+[charaFace A 7]
+＠マシュ
+この街がこの街である以上、[r]こうなることは必然だったのかもしれません。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠フェルグス
+ですね。一暴れして、酷吏と臣民について理解できました。[r]男たちがどういう状況にあるかわかりました。
+[k]
+
+[charaFace D 6]
+＠フェルグス
+形は違えど、ここもイースと同じく女性に支配されている。
+[k]
+
+＠フェルグス
+そして厳格な法に管理されていて、それを犯したものは[r]密告され、酷吏による裁きにかけられる[line 2]
+[k]
+
+[charaFace D 5]
+＠フェルグス
+……怖ろしい。ここもまた、とても怖ろしい街です。
+[k]
+
+＠フェルグス
+言葉だけで説明されていたら、あるいは実感としては[r]理解できなかったかもしれません。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠男
+……そりゃそうだろ。万の言葉で語るよりも、[r]酷吏の拷問を一度見てもらったほうが早いさ。
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アストルフォ
+そう言えばこの人、誰？
+[k]
+
+[charaFadeout B 0.1]
+
+[charaPut E 1]
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠マシュ
+偶然助けた協力者さんです。今更あいつらの社会には[r]戻れない、と覚悟を決めていただいた様子で。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+[charaEffectStop E bit_talk_10_LowLevel]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠男
+とんでもないことをするもんだ。酷吏の処刑を邪魔して、[r]そいつを連れ帰っちまうなんてよ……。
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk G]
+[charaFace F 0]
+[charaFadein F 0.1 0]
+[wt 0.2]
+[charaFace G 0]
+[charaFadein G 0.4 2]
+＠怪我した男
+うう……ううう……。
+[k]
+
+＠男
+片手がねぇんだ、血が出すぎてる。[r]いくら応急処置しても、明日まで持つかどうか……。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠アストルフォ
+関係ないと思うよ。こんな厳戒態勢になっちゃったら、[r]簡単に街を出ることもできないでしょ。
+[k]
+
+＠アストルフォ
+それに、ライダーとレジスタンスをいつまでも外で[r]待たせておくわけにもいかないし。
+[k]
+
+？1：うん。今日、ここで、ケリをつけよう
+？！
+
+[charaFadeout B 0.1]
+
+[bgmStop BGM_EVENT_61 1.0]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠デオン
+ああ。あの女帝を討って[line 2]だ。[r]そして街全体を解放する。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠男
+[line 2]！！
+[k]
+
+[charaFadeout F 0.1]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk C]
+[charaFace F 0]
+[charaFadein F 0.1 0]
+[charaFace C 0]
+[charaFadein C 0.1 2]
+＠デオン
+だから教えてほしい。この不夜城の主は、[r]あの女帝と名乗るアサシンはどこにいる？
+[k]
+
+＠デオン
+今までこの街で暮らしていたのなら、手がかりの[r]ひとつくらいは持っているんじゃないか？
+[k]
+
+＠男
+……わかんねぇ。この都市じゃ男は下っ端で、[r]臣民の女たちの召使いみてぇなもんだ。
+[k]
+
+＠男
+一緒に歩いているように見えても、それはそう女たちに[r]許可されているからってだけにすぎねぇ。
+[k]
+
+＠男
+ああ[line 2]正確に言うなら、[r][#令:法]の奴隷って言ったほうが正しいのかもな。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout C 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠フェルグス
+[#令:法]の、奴隷……。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠男
+[#令:法]を守ってる限りは、少なくとも形の上では[r]男と女は対等だ。
+[k]
+
+＠男
+だが、基本的な発言力[line 3][r]人権は女の法によっている。
+[k]
+
+＠男
+男同士の法廷なら平等だが、男と女の法廷となると[r]たいていは女の勝訴ってワケだ。
+[k]
+
+＠男
+俺たちに自由はない。何を食うかも、いつ寝るかも、全部が[r]統制されてる。だからどこに行って何を見るかも運任せだ。
+[k]
+
+＠男
+女帝の居場所なんてとても[line 2]
+[k]
+
+？1：この際、噂話レベルでもいいです
+？！
+
+＠男
+噂話でいいんなら……そうだな。ウソかホントかわかんねぇが、[r]この街にゃ地下施設があるって話だ。
+[k]
+
+＠男
+勿論、普通の奴らにゃ入れねぇ。男はもちろん、臣民もだ。[r]入れるのは酷吏以上の立場のヤツだけ、ってな。
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠アストルフォ
+偉いヒトしか入れない地下施設ぅ？　そんなの、[r]支配者の居場所としてバッチリすぎるんじゃない？
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠デオン
+どうやって入る？　場所は？
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠男
+だ、だから噂話なんだって。[r]はっきりしたことはわかんねぇよ。ただ[line 2]
+[k]
+
+＠男
+いつだったかな。突然酷吏が目の前に出てきて[r]死ぬかと思った、って言ってるヤツがいたな。
+[k]
+
+＠男
+道を歩いてきたんじゃねぇ。今までいなかったのに[r]突然湧いてきた、っつーんだ。
+[k]
+
+＠男
+ひょっとしたらそのあたりに地下への秘密の入り口でも[r]あったのかもしんねぇな。
+[k]
+
+？1：……調べてみよう
+？2：……行くしかない
+？！
+
+[charaFadeout F 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アストルフォ
+場所は聞いた？[r]聞いてなきゃその人のところに案内してほしいな。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠男
+そいつは別件で密告されて本当に死んじまったよ。[r]笑い話にもならねぇ。
+[k]
+
+＠男
+だが、場所はぼんやりとだが聞いてた[line 2][r]あんたらも知ってる場所だよ。
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠フォウ
+フォウ？
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠男
+あんたらがさっき大立ち回りしてた、中央広場の処刑台。[r]その裏手のあたりさ。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaSet E 98115200 1 フォウ]
+[charaSet G 98115200 1 酷吏]
+[charaFadeout F 0.1]
+[scene 43000]
+[wt 1.5]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_61 0.1 0.5]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠フェルグス
+夜明け前だからか……あまり人気はありませんね。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アストルフォ
+もっと街がピリピリしてるかと思ったけど、[r]意外とそうでもないね……？
+[k]
+
+＠アストルフォ
+これならひょっとしたら外に逃げられたかも。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠マシュ
+ですが、ここで逃げても事態は好転しません。[r]前に進むのが正しい選択でしょう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠デオン
+私たちが逃げると考えて、逆に外との境界付近に[r]人員を集中させて見張っているのかもしれないな。
+[k]
+
+＠デオン
+裏をついた形になっている[line 2]と思いたいところだ。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠フェルグス
+どうしますか？
+[k]
+
+＠フェルグス
+しばらくこの遠間で様子を窺い、酷吏たちが出てくるのを[r]待つか。それとも危険を冒して調べに行くか[line 2]
+[k]
+
+？1：都合良く出てくるとも限らない。行こう
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[cameraMove 2.5 0,50 1.2]
+＠アストルフォ
+よーし、あの台の裏って話だったね。[r]こそこそ、と……。
+[k]
+
+＠アストルフォ
+改めて思うけど、ここって隠密行動しにくいったら[r]ありゃしないよねぇ。
+[k]
+
+＠アストルフォ
+光源多すぎだから、暗がりに沿って動くのが手間すぎで[line 2][r]……[charaFace B 4]なんか周りの光量上がってない？
+[k]
+
+[wait camera]
+
+[charaFadeout B 0.1]
+
+[bgmStop BGM_EVENT_61 1.5]
+
+＠デオン
+[line 2]！　しまった、これは[line 2]！！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[cameraMove 0.4 0,0 1.0]
+[wt 0.7]
+
+＠H：？？？
+にはーっはっはー！　……間違えた！[r]くふーっふっふー！
+[k]
+
+[messageOff]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[se ad410]
+[wt 0.5]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[se ad410]
+[wt 1.7]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠H：？？？
+ようこそ、[#妾:わらわ]の城へようこそじゃ、[r]えーと、[#昏羊:ふんやん]。
+[k]
+
+＠H：？？？
+……飽きた！　これより汝は[#湿狗:しーごう]という名じゃ！[r]暗がりを情けなく忍び歩くのが好きなようじゃからの！
+[k]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠マシュ
+この声は[line 2]不夜城のアサシン！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠フェルグス
+っ、まずい……皆さん、広場の周りを！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.2 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[charaTalk off]
+[charaSet H 98115200 1 アサシンの声]
+[charaFadein G 0.1 -312,0]
+[charaFadein E 0.1 1]
+[charaFadein H 0.1 312,0]
+[wt 0.2]
+[wipein rectangleStripLeftToRight 0.2 1]
+[wait wipe]
+
+[wt 1.5]
+
+[wipeout rectangleStripLeftToRight 0.2 1]
+[wait wipe]
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[charaFadeout H 0.1]
+[charaTalk on]
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+[charaSet E 98002000 1 フォウ]
+[wt 0.2]
+[wipein rectangleStripRightToLeft 0.2 1]
+[wait wipe]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠アストルフォ
+酷吏があんなに並んで……！[r]完全に取り囲まれてるよ！
+[k]
+
+＠アストルフォ
+待ち伏せ！？　でも、いったいどうして[line 2]あー！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠男
+へ……へへ……へへへ。悪く思うなよ。
+[k]
+
+＠男
+チャンスがあれば迷わず密告して報酬を貰う。[r]市民としての身分を上げる。
+[k]
+
+＠男
+それがここで生きるコツなんだ。[r]そうしなきゃ生きていけねぇんだ。
+[k]
+
+＠男
+不夜城を潰す？　できるわけねぇだろ。[r]ああ、最初から信じてねぇさ。
+[k]
+
+＠男
+仲間がいるって聞いたからよ、一度に売ったほうが[r]手柄になると思ってここまで待ってただけだぜ……！
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠デオン
+なるほど。ようやくわかった。[r]ライダーの言葉は真実だったようだね。
+[k]
+
+＠デオン
+最初から聞かされていた通りだったよ[line 2][r]この街には、[#犬しかいない]、と！
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠フェルグス
+僕たちアルスターの民が勇気の象徴とする猛犬とは、[r]まったく違う種類の犬のようですが。
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠男
+な、なあ、これで俺は上級臣民付きになれるんだろォ！？[r]今までより安全でいい暮らしができるんだろっ？
+[k]
+
+＠アサシンの声
+んむ、客人の来訪の知らせと誘導、ご苦労であった。[r]褒美は約束通り取らせてつかわす。
+[k]
+
+＠男
+や、やった！
+[k]
+
+＠アサシンの声
+じゃが[#妾:わらわ]に対してその口の利き方は不敬の限り。[r]品位が足りぬのもマイナスじゃ。
+[k]
+
+＠アサシンの声
+連れて行け。刑は……そうさのぅ。[r]性根をたたき直すための鞭打ち二十回、
+[k]
+
+＠アサシンの声
+二枚舌を矯正する熱湯責めを二度ほどにしておくか。[r]ほれ、はよう執行せよ。
+[k]
+
+＠男
+そ、そんなっ……ああー！
+[k]
+
+[charaTalk depthOff]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 0]
+[wt 0.7]
+[messageOff]
+[se ad184]
+[se ad103]
+[charaMove G -384,0 2.5]
+[wt 0.2]
+[charaMove F -48,0 0.5]
+[wt 0.75]
+[charaMove F -96,0 0.5]
+[wt 0.75]
+[charaMove F -144,0 0.5]
+[charaFadeout F 0.4]
+[charaFadeout G 0.4]
+[seStop ad184 1.0]
+[seStop ad103 1.0]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠アストルフォ
+…………。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk depthOn]
+＠アサシンの声
+さて。さてさて！　せっかくの客人じゃ、[r]もてなし方で主の器が知れるというもの！
+[k]
+
+＠アサシンの声
+特別に、貴様らを[#妾:わらわ]の居城へと招待しよう。
+[k]
+
+？1：噂の地下施設に入れてくれるのかな？
+？！
+
+＠アサシンの声
+ほっほ、地下施設か。それは正しくあって正しくない。[r]普段は地下に潜っておる、というだけよ。
+[k]
+
+＠アサシンの声
+圧倒的に高貴で尊い[#妾:わらわ]が同じ地上におっては、[r]我が臣民たちが気苦労しようという心遣いであるぞ。
+[k]
+
+＠アサシンの声
+真に優れた治世者とは、普段はその気配を消して[r][#御簾:みす]の奥に隠れておるものじゃ。
+[k]
+
+＠アサシンの声
+この細やかな心配り、さすが[#妾:わらわ]。
+[k]
+
+＠アサシンの声
+しかし[line 2]今は客人をもてなす大事なときじゃ。[r]この不夜城の真の姿、見せてやろう！
+[k]
+
+＠アサシンの声
+……？　なんじゃ、軍師殿よ。[r]『危険なだけで無意味だから止めたほうが』？
+[k]
+
+＠アサシンの声
+おろかもの！　奴らを心の底からビックリさせるという[r]大事な意味があるではないか！
+[k]
+
+＠アサシンの声
+きっと手を自分の口に突っ込んでアワワワとか言うのだ！[r]見たい！
+[k]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠マシュ
+……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+＠アサシンの声
+というわけで軍師の献策は無視して[line 2]もう一度。[r]この不夜城の真の姿、見せてやろうー！
+[k]
+
+[bgmStop BGM_EVENT_5 2.0]
+
+[se ad14]
+[shake 0.03 3 3 0]
+[wt 2.0]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠フェルグス
+地震……！？[r]いや違う。これは！
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠デオン
+あの処刑台が、割れて[line 2][r][#巨大な何かが下からせり上がってくるぞ]！
+[k]
+
+[charaFadeout C 0.1]
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠マシュ
+信じ、られません……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[shake 0.03 5 5 2.5]
+[scene 43001 1.5]
+[wt 1.5]
+[seStop ad14 1.5]
+[wt 2.0]
+
+[bgm BGM_EVENT_1 0.1]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.2 1]
+＠アストルフォ
+お、お城だー！[r]外の街以上に電飾ピカピカで頭の悪そうな！　まぶしいっ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.4]
+
+＠アサシンの声
+これぞ我が不夜城の心臓部、真なる光耀の[#城堡:じょうほう][line 2][r]名付けて[#瑤光殿:ようこうでん]！　響きがピッタリゆえな！
+[k]
+
+＠アサシンの声
+くっふー！　実はおぬしたちのような気骨ある者どもが訪れる、[r]こういう展開を待っておったのじゃ！
+[k]
+
+＠アサシンの声
+せっかくこの仕掛けを作ったはいいが、こんな機会でもないと[r]誰かにズゴゴゴと見せびらかすことはできんかったからのう。
+[k]
+
+＠アサシンの声
+[#妾:わらわ]はこの奥で待っておる。宴の準備をしてな！[r]案内人もつけておくぞ、戯れながら来るがよい！
+[k]
+
+[bgmStop BGM_EVENT_1 1.5]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠アストルフォ
+案内人……？　って、城の入り口みたいな場所から[r]酷吏がぞろぞろ出てきたよ！　あれのことっぽいー！
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠デオン
+前には門番の酷吏、退路には広場を取り囲む酷吏だ。[r]どうする、マスター？
+[k]
+
+？1：どっちも同じなら、もちろん前進！
+
+[charaFadeout C 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠アストルフォ
+ＯＫ、そうこなくっちゃ！
+[k]
+
+[charaFadeout B 0.1]
+
+？2：諦めずに[line 2]前に進み続けるべし！
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaFace C 5]
+＠デオン
+ああ。ここにはいないライダーもそう言うだろう！
+[k]
+
+[charaFadeout C 0.1]
+
+？！
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠フェルグス
+助かります。いかなる宴の誘いも断ってはならない[line 2][r]それが僕の[#誓約:ゲッシュ]。
+[k]
+
+＠フェルグス
+アサシンが宴と口にした以上、僕は一人でも[r]行かなくてはならないところでした。
+[k]
+
+？1：一人だけで行かせはしないよ
+？2：誘われたのはここにいるみんなだ
+？！
+
+[charaFadeout D 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaMoveReturn E 0,10 0.25]
+＠フォウ
+フォウ！
+[k]
+
+[charaFadeout E 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠マシュ
+はい[line 2]行きましょう、マスター！[r]もうすぐアサシンに手が届きます！
+[k]
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

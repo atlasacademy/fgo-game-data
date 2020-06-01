@@ -1,0 +1,677 @@
+＄94-04-65-04-3-0
+
+[soundStopAll]
+
+[charaSet A 5033001 1 キルケー]
+[charaSet B 2009102 1 オリオン]
+[charaSet C 99502600 1 マシュ]
+[charaSet D 98111500 1 通信用ノイズ]
+[charaSet E 2015001 1 アルジュナ]
+[charaSet F 1038000 1 イアソン]
+[charaSet G 4006001 1 ゲオルギウス]
+[charaSet H 1098181810 1 オデュッセウス]
+
+[charaSet I 23003000 1 大いなる石像神]
+[charaSet J 5007001 1 シェイクスピア]
+[charaSet K 5014001 1 メフィストフェレス]
+
+[charaDepth I 8]
+
+
+[scene 90400]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.4]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠キルケー
+また立て看板がある。[r]アルジュナ、今度は何だい？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠アルジュナ
+さて……。
+[k]
+
+＠アルジュナ
+『パラドックスを破壊せよ。[r]　それこそが唯一、次に至る道である』
+[k]
+
+＠アルジュナ
+『振り返ることなく、前に進め』
+[k]
+
+＠アルジュナ
+とのことです。
+[k]
+
+？1：パラドックス……？
+？！
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace J 0]
+[charaFadein J 0.4 -350,0]
+[charaFace I 0]
+[charaFadein I 0.4 1]
+[charaFace K 0]
+[charaFadein K 0.4 350,0]
+
+[wt 1.6]
+
+[charaFadeout K 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+＠ゲオルギウス
+おや。[r]あなた方は[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+
+[bgm BGM_EVENT_1 0.1]
+
+
+＠メフィストフェレス
+どうかワタクシを信じてください。[r]シェイクスピアとそこの石像は大嘘つきですぞ！
+[k]
+
+
+＠メフィストフェレス
+ワタクシの扉だけが本物です！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠シェイクスピア
+吾輩が嘘つき？[r]いえいえ、まさか。
+[k]
+
+[charaFace J 2]
+
+＠シェイクスピア
+メフィストは嘘つきです。[r]そしてそこの石像も大嘘つきです！
+[k]
+
+＠シェイクスピア
+従って、本物の扉は吾輩のところだけです。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠大いなる石像神
+神を信じろ……信じれ……。
+[k]
+
+[charaFace I 4]
+
+＠大いなる石像神
+メフィストもシェイクスピアも[r]大嘘つき……。
+[k]
+
+[charaPut D 1200,1200]
+[charaEffect D bit_talk_10_LowLevel]
+
+＠大いなる石像神
+神は絶対に嘘をつかない……。
+[k]
+
+
+＠大いなる石像神
+つまり、我が扉こそが[#唯一無二:ゆいいつむに]の本物……。
+[k]
+
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠マシュ
+あの……これはどういうことでしょう。
+[k]
+
+[charaPut D 1200,1200]
+[charaEffectStop D bit_talk_10_LowLevel]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+
+＠イアソン
+オレに聞くな、シールダー。
+[k]
+
+＠イアソン
+さっぱりわからんが、[r]どれかの道が正解で、後は外れだ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ゲオルギウス
+三人がそれぞれ、三つの扉の前にいます。
+[k]
+
+＠ゲオルギウス
+この三つから正しい道を選べ、[r]ということでしょうか。
+[k]
+
+[charaFace G 4]
+[bgmStop BGM_EVENT_1 2.5]
+
+＠ゲオルギウス
+しかし正しい道の手がかりは、[r]この三人の証言だと思うのですが……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠オデュッセウス
+パラドックスだな。
+[k]
+
+＠オデュッセウス
+誰かが嘘をついている。[r]あるいは真実を述べている。
+[k]
+
+[charaFace H 7]
+
+＠オデュッセウス
+しかし、嘘つきと真実を言っている者の数が[r]不明の場合、成立するのか？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠アルジュナ
+そうですね。
+[k]
+
+[charaFace E 0]
+
+＠アルジュナ
+例えば、メフィストフェレスが本当のことを[r]言っているとします。
+[k]
+
+＠アルジュナ
+つまり、シェイクスピアと石像神は[r]嘘をついていることになる。
+[k]
+
+＠アルジュナ
+ところが石像神はメフィストフェレスと[r]シェイクスピアが嘘つきだと述べています。
+[k]
+
+[charaFace E 4]
+
+＠アルジュナ
+ここで矛盾が発生する。
+[k]
+
+
+＠アルジュナ
+石像神の言葉が嘘ならば、[r]メフィストフェレスとシェイクスピアは
+[k]
+
+[charaFace E 5]
+
+＠アルジュナ
+[#本当のことを言っている]。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+
+＠オデュッセウス
+これは全員に当てはまる。
+[k]
+
+[charaFace H 0]
+
+＠オデュッセウス
+全てにパラドックスが発生し、[r]正しい道が存在しない。
+[k]
+
+？1：や、ややこしくなってきた
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ゲオルギウス
+誰か一人を嘘つきにしても、[r]誰か一人を嘘つきじゃないとしても。
+[k]
+
+[charaFace G 4]
+
+＠ゲオルギウス
+……おかしいですね。[r]全てが引っかかります。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+
+＠オデュッセウス
+キルケー。
+[k]
+
+＠キルケー
+ん？
+[k]
+
+＠オデュッセウス
+おまえの意見を聞いてみたい。
+[k]
+
+＠キルケー
+んー。[r]とりあえず[#謎かけ:リ ド ル]だろう、これ。
+[k]
+
+[charaFace H 7]
+
+＠オデュッセウス
+そうだな。
+[k]
+
+＠キルケー
+で、私が思うにだ。
+[k]
+
+＠キルケー
+この[#謎かけ:リ ド ル]を作った奴は、[r]先天的に性格がねじくれているようなタイプだ。
+[k]
+
+＠キルケー
+だから考えて理屈こねても無駄だと思う。
+[k]
+
+[charaFace H 0]
+
+＠オデュッセウス
+……どういうことだ？
+[k]
+
+[charaFace A 5]
+
+＠キルケー
+正解は[line 3]
+[k]
+
+[charaFace A 1]
+[bgmStop BGM_EVENT_5 1.0]
+
+＠キルケー
+[#来た道を戻る]だ。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace E 2]
+[charaFadein E 0.1 350,0]
+[charaFace B 2]
+[charaFadein B 0.1 0,0]
+[charaFace F 2]
+[charaFadein F 0.1 150,0]
+[charaFace H 0]
+[charaFadein H 0.1 -150,0]
+[charaFace G 2]
+[charaFadein G 0.1 -420,0]
+
+[charaDepth B 9]
+[charaDepth F 6]
+[charaDepth E 8]
+[charaDepth G 4]
+[charaDepth H 7]
+
+＠全員
+[f large][messageShake 0.03 4 4 0.5]えー！？
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+[charaFadeout F 0.1]
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠ゲオルギウス
+おっと、それはそれとして。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk off]
+[charaFace E 2]
+[charaFadein E 0.1 350,0]
+[charaFace B 2]
+[charaFadein B 0.1 -100,0]
+[charaFace F 2]
+[charaFadein F 0.1 75,0]
+[charaFace H 0]
+[charaFadein H 0.1 -300,0]
+[wt 0.5]
+
+[flashin once 0.1 0.1 FFFFFFFF 2D2D2D80]
+[wt 0.1]
+[se ad41]
+[wipeout circleIn 0.1 1.0]
+[wait wipe]
+[wipein circleIn 0.1 1.0]
+[wait wipe]
+[wt 0.5]
+
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+[charaFadeout F 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace G 1]
+[charaFadein G 0.1 0]
+[charaFace B 0]
+[charaFadein B 0.1 2]
+
+＠オリオン
+今、俺スッゲえヘンな顔してたんで、[r]もう一回写してもらっていいっすか先生。
+[k]
+
+[charaFace G 0]
+
+＠ゲオルギウス
+いえ、シャッターチャンスは一度きりです。
+[k]
+
+[charaFace B 4]
+
+＠オリオン
+くうーん。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+[bgmStop BGM_EVENT_7 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_2 0.1]
+
+＠オデュッセウス
+それよりキルケー。[r]戻る、とはどういうことだ？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠キルケー
+だからさ。
+[k]
+
+＠キルケー
+[#立て看板が嘘をついているんだよ]。[r]この三人はどーでもいい、ただの賑やかしだ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace J 5]
+[charaFadein J 0.1 -350,0]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+[charaFace K 5]
+[charaFadein K 0.1 350,0]
+
+＠三人
+む。
+[k]
+
+[charaFadeout K 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+
+＠オデュッセウス
+立て看板が嘘を……。[r]ああ、なるほど。
+[k]
+
+[charaFace H 0]
+
+＠オデュッセウス
+『パラドックスを破壊せよ。[r]　それこそが唯一、次に至る道である』とは、
+[k]
+
+＠オデュッセウス
+『パラドックスは破壊しなくてもいい。[r]　次に至る道はそれ以外にもある』
+[k]
+
+＠オデュッセウス
+『振り返ることなく、前に進め』とは、
+[k]
+
+＠オデュッセウス
+『振り返って後ろに戻れ』
+[k]
+
+
+＠オデュッセウス
+全て逆、という訳か。[r]論理的に考えようとしすぎていた。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠キルケー
+堅物には難しい問題だったかな？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠オデュッセウス
+フッ……そう言われると返す言葉もないな。
+[k]
+
+[charaFace H 0]
+[bgmStop BGM_EVENT_2 2.0]
+
+
+＠オデュッセウス
+まあ、俺が堅物かどうかは[r]自分でも不明だが………………む？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk K]
+[charaFace J 0]
+[charaFadein J 0.1 -350,0]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[charaFace K 1]
+[charaFadein K 0.1 350,0]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠メフィストフェレス
+我らが賑やかしですと！
+[k]
+
+[charaFace J 2]
+
+＠シェイクスピア
+否定はできませんが！[r]このまま帰す訳にもいきませんな。
+[k]
+
+[charaFace I 4]
+
+＠大いなる石像神
+我は……特に関係ないし……。
+[k]
+
+
+＠大いなる石像神
+でも舐められたままなのは[r]ちょっと[#癪:しゃく]なので……。
+[k]
+
+[charaFace I 2]
+
+＠大いなる石像神
+潰す……。
+[k]
+
+[charaFadeout K 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠キルケー
+何だよぅー。
+[k]
+
+＠キルケー
+きみたち、そんな張り切るタイプでも[r]ないくせにー！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace J 0]
+[charaFadein J 0.1 -350,0]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[charaFace K 0]
+[charaFadein K 0.1 350,0]
+
+＠大いなる石像神
+それはそれ、[r]これはこれ……。
+[k]
+
+[charaFace K 1]
+
+＠メフィストフェレス
+でぇは参りますヨー！[r]レッツデュエル！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

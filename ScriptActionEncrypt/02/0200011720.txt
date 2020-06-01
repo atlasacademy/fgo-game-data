@@ -1,0 +1,1483 @@
+
+＄02-00-01-17-2-0
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 98111500 1 通信用ノイズ]
+[charaSet C 1002001 1 アルトリア・オルタ]
+[charaSet D 2023000 1 モリアーティ]
+[charaSet E 98086000 1 ホームズ]
+[charaSet F 2023001 1 モリアーティ悪]
+[charaSet G 98111400 1 魔神バアル]
+[charaSet H 98111400 1 魔神バアルのシルエット]
+
+[soundStopAll]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 38900]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+[charaEffect F bit_talk_06]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠F：モリアーティ
+……敗北か……。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[charaSpecialEffect F flashErasure 1 1.2]
+[se ad52]
+[wait charaSpecialEffect F]
+[charaEffectStop F bit_talk_06]
+[wt 0.3]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_4 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠モリアーティ
+……敗北だな。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaSet F 98111500 1 ダ・ヴィンチ]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0 1]
+[wt 0.3]
+＠マシュ
+悪のモリアーティの消滅を確認……！[r]良かった、やりましたマスター！
+[k]
+
+？1：皆の勝利だ！
+？！
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+[charaFadein D 0.1 0]
+＠モリアーティ
+ウム！[r]完璧だったな、まさに！
+[k]
+
+[charaFace E 3]
+＠ホームズ
+……いや、まだだ。
+[k]
+
+[charaFace D 0]
+＠モリアーティ
+まだ、とはどういうことかネ？
+[k]
+
+[charaFace E 5]
+＠ホームズ
+[#聖杯がない]……ならば、あの力は……！
+[k]
+
+[se ad14]
+[bgmStop BGM_EVENT_4 2.0]
+[shake 0.05 7 7 2.0]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[seStop ad14 2.0]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0 1]
+[wt 0.3]
+＠マシュ
+……！[r]霊基出現を確認！　これは……このパターンは……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0 0,-90]
+＠ダ・ヴィンチ
+そんな馬鹿な！！
+[k]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠ダ・ヴィンチ
+[#有り得ない]！[r][#天地がひっくり返っても]、[#コイツだけは有り得ない]！
+[k]
+
+[charaFadeout F 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+
+[messageOff]
+
+
+[se ad134]
+[shake 0.05 2 2 3.0]
+[wt 2.4]
+[seStop ad134 4.0]
+[charaPut H 1]
+[charaEffect H bit_talk_tornado01]
+[wt 0.2]
+[se ad63]
+[shake 0.05 7 7 1.0]
+[wt 0.7]
+[charaTalk off]
+[charaFace H 0]
+[charaDepth H 9]
+[charaFilter H silhouette 00000080]
+[charaFadein H 0.7 1]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[wt 0.7]
+[shake 0.05 2 2 4.0]
+[flashOff]
+[wt 0.4]
+
+[charaEffectStop H bit_talk_tornado01]
+
+[se ad14]
+[charaFace G 0]
+[charaDepth G 1]
+[charaFadein G 0.1 1]
+[charaPut C 1]
+[se ad61]
+[seStop ad61 4.0]
+[charaEffect C bit_talk_lightning_01g]
+[charaMove C 0,-1200 8.0]
+[charaFadeout H 3.0]
+[seStop ad14 4.0]
+[wt 4.0]
+[charaEffectStop C bit_talk_lightning_01g]
+
+＠G：？？？
+[messageShake 0.05 4 4 1.0]
+[line 3]はは。[r][line 3]は、は、は、はははははは！
+[k]
+
+＠G：？？？
+思い出した！[r]思い出したぞ、すべて！　思い出した！
+[k]
+
+＠G：？？？
+来たな、[%1]……！[r]憎きカルデアのマスターよ！
+[k]
+
+
+？1：まさかゲーティア……！？
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0 0,-90]
+[wt 0.3]
+＠ダ・ヴィンチ
+いや、違う！[r][#それ]は……魔神柱だ！
+[k]
+
+＠ダ・ヴィンチ
+人化したようだが、その霊基パターンは間違いない！
+[k]
+
+？1：魔神柱……！？
+
+？2：滅んだはずなのに……！？
+
+？！
+
+[charaFadeout F 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠G：？？？
+滅んだとも！[r][#我ら]は既に、滅び去った種だ！
+[k]
+
+＠G：？？？
+復活は能わず！　回帰は能わず！[r]復元は能わず！　永劫は叶わず！
+[k]
+
+＠G：？？？
+そう、３０００年の計画はまさしく完全に崩壊した！[r]それでも我はこうして無様を晒している！
+[k]
+
+＠G：？？？
+全て、全て貴様を殺すため。[r]そのためだけに[line 3]！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠アルトリア・オルタ
+……フン、何かと思えばただの残党か。[r]おまけに、[%1]を殺すためだと？
+[k]
+
+[charaFace C 5]
+＠アルトリア・オルタ
+逆恨みもここに極まれり[line 3]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠G：？？？
+[font large][messageShake 0.05 7 7 1.0]知っている！！
+[k]
+
+[messageShakeStop]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠アルトリア・オルタ
+[line 3]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠G：？？？
+その通りだ！[r]この胸を掻き毟る苦痛、じりじりと身を焦がす熱！
+[k]
+
+＠G：？？？
+それは３０００年の計画を台無しにされたからではない。[r]英霊たちによって、人理焼却を防がれたからでもない。
+[k]
+
+＠G：？？？
+まして、忌まわしきソロモンによって[r]指輪を天に返されたからでもない。
+[k]
+
+＠G：？？？
+完璧な計画、完全な展開。[r]全てを台無しにした起点がある。
+[k]
+
+＠G：？？？
+……そう、おまえだ[%1]！
+[k]
+
+？1：[&オレ:わたし]……？
+？！
+
+＠G：？？？
+認めよう、これは逆恨み、八つ当たり。[r]それすらも飾りだ。
+[k]
+
+＠G：？？？
+[messageShake 0.05 4 4 2.0]
+……憎悪。憎悪、憎悪、憎悪憎悪憎悪憎悪憎悪憎悪憎悪憎悪[r]憎悪憎悪憎悪憎悪憎悪憎悪憎悪憎悪憎悪憎悪憎悪憎悪憎悪！
+[k]
+
+
+＠G：？？？
+憎悪以外感じられぬ！[r]おまえだ、おまえが憎い[%1]！
+[k]
+
+
+＠G：？？？
+おまえは何故、この[#惑星:ほし]に、この時代に、[r]あの場所に辿り着いたのだ！
+[k]
+
+＠G：？？？
+人を超える英雄ならば納得しよう！[r]人を喰らう魔王であれば受け入れよう！
+[k]
+
+＠G：？？？
+だが、おまえのような平凡で平均、凡庸な[&男:女]のせいで、[r]全てが破綻した……！
+[k]
+
+＠G：？？？
+無様に逃げるという恥辱に耐えたのは、[r]何としてもおまえを殺すという、ただ一点のみ……！！
+[k]
+
+＠G：？？？
+世界を滅ぼすためにおまえを殺すのではなく、[r]おまえを殺すために世界を滅ぼす[line 3]！！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠ホームズ
+殺人計画……！
+[k]
+
+＠ホームズ
+あの時間神殿から逃亡して、一から紡ぎ上げたのか……。[r][#３０００年前から計画を練り続けていたのだな]！
+[k]
+
+[charaFace E 2]
+＠ホームズ
+バベッジ卿が計算結果から摘出した人類史の歪み！[r]人理焼却の端にあった異物の正体がこれか！
+[k]
+
+？1：異物とは一体……！？
+？！
+
+[charaFace E 5]
+＠ホームズ
+バベッジ卿は英霊として召喚され、魔神柱の配下に[r]なったコトですべての数値を把握した。
+[k]
+
+[charaFace E 3]
+＠ホームズ
+であれば、次にくるのは計算だ。[r]数学者として当然の計算をした。
+[k]
+
+[charaFace E 5]
+＠ホームズ
+“人理焼却を防ぐ”ための計算ではない。[r]“仮に、人理焼却を破却した後の未来”を計算したのだよ。
+[k]
+
+[charaFace E 2]
+＠ホームズ
+その時に知ったのさ。
+[k]
+
+＠ホームズ
+魔術王が人理焼却をせずとも、[r]２０１７年から先の未来は崩壊する、と！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠G：？？？
+その通りだ、ベーカー街の探偵。
+[k]
+
+＠G：？？？
+３０００年の月日を過ごして、[r]私は幻霊と英霊の融合技術を得た！
+[k]
+
+＠G：？？？
+歴史が足りず、信仰が望めず、打ち棄てられてきた[r]無数のガラクタ……。
+[k]
+
+＠G：？？？
+だが、そこには途方もない価値があった！[r][#都市伝説:アーバンレジェンド]！　[#御伽噺:フェアリーテイル]！　滅ぼされた獣たち！
+[k]
+
+＠G：？？？
+かつての私には、ついぞ理解できなかった[line 3][r]そして今の私には必要なものが、それだった！
+[k]
+
+＠魔神バアル
+応報の情熱。復讐の誓約。[r]それが、この魔神バアルの[#構成要素:ファクター]だ！
+[k]
+
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠ホームズ
+ならば、問おう。[r]キミとモリアーティは、どこまで関わっている！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠魔神バアル
+それを[#私が答える必要はない]。[r]何故なら、もう答えは出ている。
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripRightToLeft 0.2 1.0]
+[wait wipe]
+
+[bgmStop BGM_EVENT_24 0.1]
+
+[charaFadeout G 0.1]
+[scene 10000]
+
+[wipein rectangleStripLeftToRight 0.2 1.0]
+[wait wipe]
+
+
+＠モリアーティ
+[line 3]全てだよ、ホームズ君。
+[k]
+
+[se bac143]
+[effect bit_talk_35]
+[wt 2.0]
+[se ad328]
+[wt 2.0]
+[bgm BGM_EVENT_5 0.1]
+
+？1：……え？
+？！
+
+
+[messageOff]
+
+[scene 38900]
+[wt 0.4]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0 1]
+[wt 0.3]
+＠マシュ
+あ……え……？
+[k]
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠アルトリア・オルタ
+……な……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0 0,-90]
+[wt 0.3]
+＠ダ・ヴィンチ
+な、んだ……？
+[k]
+
+[charaFadeout F 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠ホームズ
+モリアーティ……キミは……いや、そうか！[r][#まさか]！　[#そうか]！
+[k]
+
+＠ホームズ
+逆！[r]逆だったのか！
+[k]
+
+＠ホームズ
+しまった、まさかキミがそこまで……[r][#一か八かの賭けに打って出るとは]！！
+[k]
+
+[charaFace E 5]
+＠ホームズ
+確実性を捨て去ってでも、[r]勝利を望んだとは……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠モリアーティ
+[line 3]手が届いたな、ホームズ君。[r]いや、思っていた以上に……呆気ないものだ。
+[k]
+
+[charaFace D 5]
+＠モリアーティ
+だが、私の勝利だホームズ。[r]今度こそは、な。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ホームズ
+……敗北とは、そういうものだからね……。[r]モリアーティ、遺憾ながらキミの勝利だ。
+[k]
+
+[charaFace E 4]
+＠ホームズ
+そして、心から詫びよう[&ミスター:ミス][%1]。[r]私は、推理を、間違えた。
+[k]
+
+？1：！？
+？！
+
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0 1]
+[wt 0.3]
+＠マシュ
+そん、な……！！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+
+[messageOff]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+[wt 0.4]
+[charaFace E 2]
+＠ホームズ
+アルトリア君！[r]私を斬れ！　そうすればまだチャンスは[line 3]。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠モリアーティ
+さすがだな、我が怨敵。[r]しかしその推理に、君たちの仲間はついてこれまい！
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[messageOff]
+
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+[charaSpecialEffect E wipe]
+
+[charaEffect E bit_talk_11]
+
+[bgmStop BGM_EVENT_5 0.4]
+[se ad343]
+[wait charaSpecialEffect E]
+[charaPut E 1024,1024]
+[charaEffectStop E bit_talk_11]
+[wt 0.3]
+
+[wt 1.4]
+
+
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠モリアーティ
+さらば！　さらばだ[#同類:ホームズ]よ！
+[k]
+
+＠モリアーティ
+同じ視座を持ちながら、同じ位置に立つことのなかった[r]史上最高の名探偵よ！
+[k]
+
+[charaFace D 5]
+＠モリアーティ
+おまえの力を以て、私は真の勝利を得よう！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[bgm BGM_EVENT_24 0.1]
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0 1]
+[wt 0.3]
+＠マシュ
+……！[r]ホームズさん、霊基消滅……していません！？
+[k]
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.1]
+
+[charaSet D 2023002 1 モリアーティ]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠アルトリア・オルタ
+マシュの言う通りだ。
+[k]
+
+＠アルトリア・オルタ
+確かにサーヴァント……ホームズの気配を感じる。[r]あの、モリアーティから……！
+[k]
+
+
+[bgmStop BGM_EVENT_24 1.5]
+[messageOff]
+[charaFadeout C 0.1]
+[charaSet E 2023002 1 ホームズ]
+[wt 0.4]
+[cameraMove 1.0 0,0 1.2]
+[wait camera]
+
+[se bac168]
+[seStop bac168 0.7]
+[se ad267]
+[seVolume ad267 0 0.3]
+[seStop ad267 0.7]
+[wt 0.4]
+[se bac168]
+[charaTalk E]
+[charaScale E 0.83]
+[charaFilter E silhouette 00000080]
+[charaFace E 0]
+[charaFadein E 0.7 0,-48]
+[wt 0.1]
+[seStop ad267 0.7]
+[wt 2.0]
+
+[se ad95]
+[cameraMove 3.0 0,0 1.0]
+[charaFadeout E 2.0]
+[wait camera]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.7 1]
+[wt 1.5]
+
+[bgm BGM_EVENT_24 1.5]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠モリアーティ
+無論だ、彼は殺すのではなく取り込む。[r]そうでなくては、ダメなのだ。
+[k]
+
+
+？1：モリアーティ……
+？！
+
+[charaFace D 5]
+＠モリアーティ
+[line 3][#はじめまして]、皆の衆。[r]我が名はジェームズ・モリアーティ。
+[k]
+
+[charaFace D 1]
+＠モリアーティ
+この[#惑星:ほし]を、打ち砕く者である。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0 0,-90]
+[wt 0.3]
+＠ダ・ヴィンチ
+裏切っていたのか……いつから……！
+[k]
+
+[charaFadeout F 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠モリアーティ
+いつから、となると[#つい先ほど]ということになる。[r]長い、長い計算がようやく終わった気分だ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0 1]
+[wt 0.3]
+＠マシュ
+待って下さい。[r][#先ほど]？　先ほど、急に裏切りを決意したのですか！？
+[k]
+
+[charaFace A 2]
+＠マシュ
+そんな……分かりません！[r]あなたの仰っていることが、わたしには完全に不可解です！
+[k]
+
+[charaFace A 15]
+＠マシュ
+その、形勢が不利になったら裏切ることで、[r]打開策を見出すことがあるかもしれません。
+[k]
+
+[charaFace A 14]
+＠マシュ
+でも、今は勝っていました！[r]魔神柱バアルを打ち倒すにも、充分な戦力だったはず……！
+[k]
+
+[charaFace A 5]
+＠マシュ
+裏切る理由が、何一つありません！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠モリアーティ
+バアル。[r]……良いか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠魔神バアル
+無駄なことを。[r]だが、[#我ら幻影魔人同盟]はいかなる時も対等だ。
+[k]
+
+＠魔神バアル
+おまえが望むなら、[r]私は待つ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠モリアーティ
+よろしい。[r]君たちには問い質す権利がある。
+[k]
+
+[charaFace D 1]
+＠モリアーティ
+そして私には、答える義務があるだろう。[r]全て、全て最初から順繰りに答えよう。
+[k]
+
+[charaFace D 5]
+＠モリアーティ
+何しろ、ホームズはもういないのだから。
+[k]
+
+？1：……
+？！
+
+[messageOff]
+
+[fadeout black 0.4]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 1.0]
+
+[charaSet H 2016000 1 エミヤ・オルタ]
+
+[fadein black 0.4]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠モリアーティ
+……[%1]。君は気付いていたかな？[r]この新宿、そもそもがおかしいだろう？
+[k]
+
+？1：……まるでフィクションの世界だ
+？2：物語の中みたいだ
+？！
+
+＠モリアーティ
+その通り。
+[k]
+
+[charaFace D 1]
+＠モリアーティ
+この新宿はあらゆる世界から切り離され、[r]人理と無関係になっている。
+[k]
+
+[charaFace D 5]
+＠モリアーティ
+結果[line 3]この新宿は、[#空想の街となった]。
+[k]
+
+[charaFace D 0]
+＠モリアーティ
+幻霊と英霊、幻霊と幻霊の融合など、[r]この隔絶魔境新宿以外ではほぼ不可能だろう。
+[k]
+
+[charaFace D 5]
+＠モリアーティ
+そしてこの新宿で、私とバアルは各々の目的のため、[r]同盟を結んだ。
+[k]
+
+[charaFace D 1]
+＠モリアーティ
+魔神バアルは、[%1]……君を殺すために。[r]そして私は、ホームズを超えるために。
+[k]
+
+[charaFace D 5]
+＠モリアーティ
+共に不可能に等しい難行を成し遂げるために、[r]我らは人と魔神でありながら盟を結んだ。
+[k]
+
+
+＠モリアーティ
+それこそが幻影魔人同盟[line 3]。[r]即ち、[#魔神と人間の同盟だ]。
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0 1]
+[wt 0.3]
+＠マシュ
+超える……ですか？[r]殺すのではなく。
+[k]
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠モリアーティ
+……[%1]君、２１という数字を言ったら[r]負け、というゲームをやったことはあるかね？
+[k]
+
+[charaFace D 1]
+＠モリアーティ
+互いに言える数字は３までとする。[r]先攻後攻、君が決めていいと言われればどちらが良い？
+[k]
+
+？1：先攻
+
+[charaFace D 5]
+＠モリアーティ
+残念、君の敗北が確定した。
+[k]
+
+？2：後攻
+
+[charaFace D 5]
+＠モリアーティ
+おめでとう、君の勝利が確定した。
+[k]
+
+？！
+
+[charaFace D 5]
+＠モリアーティ
+２１を言わせるためには、４の倍数を自分が言わねばならない。[r]４の倍数を言うためには、決して先攻を選んではならない。
+[k]
+
+[charaFace D 1]
+＠モリアーティ
+……そして、私は先攻。[r]ホームズは常に後攻と世界に定められている。
+[k]
+
+＠モリアーティ
+我々の生きた世界はそういうもの、[r][#善が悪を倒す世界そのものだ]。
+[k]
+
+[charaFace D 5]
+＠モリアーティ
+そう、私はモリアーティという存在である限り、[r]どうやってもホームズに勝利できない。
+[k]
+
+＠モリアーティ
+それはこうして召喚される身となってもなお、[r]我々を縛り付けている。
+[k]
+
+[charaFace D 1]
+
+
+＠モリアーティ
+喩えるなら……世界が滅ぶ瀬戸際に現れるという、[r]抑止力のようなものだ。
+[k]
+
+
+[charaFace D 5]
+＠モリアーティ
+殺そうとしても勝てず、彼の裏を掻こうとしても無駄だった。[r]だから考えたよ、それはもう必死にね。
+[k]
+
+[charaFace D 0]
+＠モリアーティ
+ホームズとて、普段はミスをしない訳ではない。[r]かつてアイリーン・アドラーに出し抜かれたように。
+[k]
+
+[charaFace D 5]
+＠モリアーティ
+だが、私を相手にすると困ったことに彼は全力を出す。[r]全力を出したホームズを出し抜く方法はただ一つ。
+[k]
+
+[charaFace D 1]
+＠モリアーティ
+[#私がホームズの側につくことだった]。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠アルトリア・オルタ
+ほう。[r]……ならば、やはり予め裏切っていたのではないか。
+[k]
+
+[charaFace C 5]
+＠アルトリア・オルタ
+それを見抜けなかった我らの間抜けぶりも、[r]いささか腹立たしいがな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠モリアーティ
+いいや、見抜けなくて当然だ。[r]何故なら[line 3]。
+[k]
+
+？1：記憶を消していたから？
+
+？2：ゼロになっていたから？
+？！
+
+＠モリアーティ
+……ぷ、く。
+[k]
+
+[charaFace D 5]
+＠モリアーティ
+わはははは！[r]さすがはマスター君、冴え渡っているな！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠魔神バアル
+モリアーティ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠モリアーティ
+すまんすまん。[r]いや、まさしくその通りでね。
+[k]
+
+[charaFace D 5]
+＠モリアーティ
+私は自分自身をゼロにした。[r]記憶を削り、悪性を削り、善性を生み出し、生まれ変わった。
+[k]
+
+[charaFace D 0]
+＠モリアーティ
+私だけではないぞ。[r]この魔神バアルもまた、記憶を削った。
+[k]
+
+[charaFace D 1]
+＠モリアーティ
+彼は自分を、悪のモリアーティと信じて動いた。[r]私は自分を、善のモリアーティと信じて動いた。
+[k]
+
+[charaFace D 0]
+＠モリアーティ
+そう、つい先ほどまで。[r]悪のモリアーティが滅ぶまでは、ね。
+[k]
+
+[charaFace D 5]
+＠モリアーティ
+彼は自分のことをモリアーティだと思っていたし、[r]モリアーティとして振る舞っていたのだよ。
+[k]
+
+＠モリアーティ
+そうしなければ、我らはホームズと君に[r]勝てないからね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0 1]
+[wt 0.3]
+＠マシュ
+そんな……。
+[k]
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠モリアーティ
+だってそうだろう？[r]ホームズの観察眼から逃れられる訳がない。
+[k]
+
+[charaFace D 1]
+＠モリアーティ
+だから私は全力で君たちの味方をしたし、[r]仲間として、君たちと共に戦った。
+[k]
+
+[charaFace D 2]
+＠モリアーティ
+それは紛れもない真実だ。[r]マスター君、見破れなかったことを嘆く必要はない！
+[k]
+
+？1：嬉しくないぞー！
+
+[charaFace D 5]
+＠モリアーティ
+ははははは！[r][#意気軒昂:いきけんこう]で大変結構！
+[k]
+
+？2：悲しいだけ[&だ:]
+
+[charaFace D 5]
+＠モリアーティ
+……いや、すまないな。[r]それはそうか。君は善良だからね。
+[k]
+
+[charaFace D 4]
+＠モリアーティ
+私が裏切ったことを悲しんでるのではなく、[r]私が悪に回ったことそのものを悲しんでいるのか。
+[k]
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+
+＠H：？？？
+ようやく正体を現してくれたな、バアル！
+[k]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠魔神バアル
+ぬ……！
+[k]
+
+[messageOff]
+
+[se bac22]
+[charaEffect G bit_shot_01]
+[charaShake G 0.05 4 4 1.0]
+[wt 1.4]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.7 1]
+[wt 1.0]
+
+[wt 0.7]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠アルトリア・オルタ
+[line 3]貴様。[r]それが目的だったのか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0 1]
+[wt 0.3]
+＠マシュ
+エミヤさん……！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠エミヤ・オルタ
+傭兵の辛いところでね。[r]反転しようが好ましくなかろうが、仕事は仕事だ。
+[k]
+
+[charaFace H 4]
+＠エミヤ・オルタ
+何しろ召喚された時点で味方は己一人。[r]傍らには狼王と燕青、ファントムとクリスティーヌ。
+[k]
+
+[charaFace H 0]
+＠エミヤ・オルタ
+オレが雇われたのは、魔神柱を倒すためであり、[r]それ以外の全ては些事だ。
+[k]
+
+[charaFace H 1]
+＠エミヤ・オルタ
+ましてこの世界は既に切り離されている。[r]いくらくたばったところで、支障はあるまい。
+[k]
+
+[charaFace H 6]
+＠エミヤ・オルタ
+悪に加担しようが、善で抗おうが、[r]オレは[#最終的に帳尻を合わせるだけだ]。
+[k]
+
+[charaFace H 5]
+＠エミヤ・オルタ
+なら、可能な限り効率が良い方がいい。[r]そう思わないか？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠アルトリア・オルタ
+……何とも不愉快な考えだ。[r]だが、敵ではないと見なしていいらしいな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠魔神バアル
+なるほど。[r]やはり解は簡単だったな。
+[k]
+
+＠魔神バアル
+おまえが我々の傘下に入った理由は不明だったが、[r]私の命を狙っていたことだけは理解していた。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+＠エミヤ・オルタ
+こちらこそ。[r]利用し潰してやろう、という心意気は見えていたのでね。
+[k]
+
+[charaFace H 0]
+＠エミヤ・オルタ
+こうなるまで粛清されることはないと踏んでいたが、[r]正解だったか。
+[k]
+
+＠エミヤ・オルタ
+さてカルデアのマスター。[r]あちらはオレの敵で、アンタたちにとっても連中は敵。
+[k]
+
+[charaFace H 1]
+＠エミヤ・オルタ
+つまり今が、千載一遇の好機という訳だ。
+[k]
+
+[charaFace H 4]
+＠エミヤ・オルタ
+それを逃す手はないし、[r]アンタも、オレと戦う理由はないはずだ。
+[k]
+
+[charaFace H 1]
+＠エミヤ・オルタ
+手を組むか？
+[k]
+
+？1：……分かった
+
+[charaFace H 1]
+＠エミヤ・オルタ
+そう渋い顔をするな。[r]反転した者にはこういうサーヴァントもいる。
+[k]
+
+[charaFace H 0]
+＠エミヤ・オルタ
+世界を救い続けるなら、今の内に慣れておけ。
+[k]
+
+？2：魔神柱を頼む
+
+[charaFace H 0]
+＠エミヤ・オルタ
+……了解した。元よりそれが目的だ。[r]魔神柱は任せてもらおう。
+[k]
+
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠魔神バアル
+[line 3]モリアーティ。[r]戦うか？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠モリアーティ
+意味のないことを、と言いたくもなるが……。[r]いや、意味はあるか。
+[k]
+
+[charaFace D 1]
+＠モリアーティ
+君の復讐はここで完結する。[r]私の義理はここで決別する。
+[k]
+
+[charaFace D 5]
+＠モリアーティ
+行くぞ、バアル。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠魔神バアル
+ああ。[r]我が名はバアル。
+[k]
+
+＠魔神バアル
+我が恥辱を雪ぐため、ここに復讐を果たそう。[r]我が生はすべて、この瞬間のために[line 3]。
+[k]
+
+
+[messageOff]
+
+[charaSet H 9938600 1 魔神バアルのシルエット]
+
+[se ad63]
+[charaTalk off]
+[charaFace H 0]
+[charaDepth G 1]
+[charaDepth H 9]
+[charaFilter H silhouette 00000080]
+[charaFadeout G 0.7]
+[charaFadein H 0.7 1]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[wt 0.7]
+[flashOff]
+[wt 0.4]
+
+[charaSet G 9938600 1 魔神バアル]
+[wt 0.1]
+
+[se ad14]
+[charaFace G 0]
+[charaDepth G 1]
+[charaFadein G 0.1 1]
+[charaFadeout H 0.7]
+[wt 1.0]
+[seStop ad14 1.0]
+
+[wt 1.4]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaSet H 2016000 1 エミヤ・オルタ]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wt 0.3]
+＠マシュ
+魔神柱、戦闘形態へと移行！[r]マスター、指示をお願いします！
+[k]
+
+？1：必ず勝つ！
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠アルトリア・オルタ
+良く吼えた。[r]後れを取るなよ、アーチャー！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+＠エミヤ・オルタ
+抜かせ。[r]それはこちらの台詞だ[line 3]！
+[k]
+
+？2：行くぞ、モリアーティ！
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠モリアーティ
+……。[r]……。
+[k]
+
+[charaFace D 5]
+＠モリアーティ
+……ああ、来たまえ諸君！
+[k]
+
+？！
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,557 @@
+
+
+
+＄03-00-06-02-3-1
+
+
+
+
+[soundStopAll]
+
+[charaSet A 1017001 1 武蔵]
+[charaSet B 8001410 1 マシュ]
+[charaSet C 9005001 1 ホームズ]
+[charaSet D 98002000 1 フォウ]
+[sceneSet E 93401 1]
+[sceneSet F 93400 1]
+[imageSet G back10000 1]
+[charaSet I 5009000 1 エフェクト用ダミー３_結界エフェクト用]
+[charaSet S 5009000 1 エフェクト用ダミー１]
+[charaSet T 5009000 1 エフェクト用ダミー２]
+[sceneSet H 93400 1]
+
+[charaScale E 1.01]
+[charaScale F 1.01]
+[charaScale G 1.01]
+
+[scene 91900]
+
+[cameraMove 0 0,0 1.05]
+
+[bgm BGM_EVENT_80 0.1]
+[wt 0.5]
+
+[shake 0.05 0 4 0]
+[effect bit_talk_41]
+[se ad668]
+[seVolume ad668 0 0.4]
+[se ad55]
+[seVolume ad55 0 0.4]
+[se ad59]
+[seVolume ad59 0 0.4]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[seStop ad668 0.3]
+[seStop ad55 0.3]
+[seStop ad59 0.3]
+[cueSeStop bac343 0.3]
+[se ad671]
+[wt 0.3]
+[seStop ad671 0.5]
+[shake 0.05 3 1 0.6]
+[effectStop bit_talk_41]
+[wt 0.5]
+[cameraMove 0.5 0,0 1.01]
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠武蔵
+ぜえ、はあ……[r]ふう……いやあ、しんどい！
+[k]
+
+[se bac306]
+[charaFace A 5]
+
+＠武蔵
+オリュンポスの人たちはみんな、[r]肉体の強さが達人か英霊並かって話ね！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_80 2.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠マシュ
+周囲に……魔力反応はありません。[r]ひとまず、追っ手を[#撒:ま]いたと考えて良さそうです。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+簡単なものだが、護符で結界を張っておくとしよう。[r]隠蔽結界だ。息を整えたまえ。
+[k]
+
+[messageOff]
+[se ad39]
+[fowardEffect bit_talk_spell_r]
+[wt 0.8]
+[charaPut I 1]
+[se ad931]
+[seVolume ad931 0 0.6]
+[backEffect bit_talk_barrier_hms_01]
+[wt 2.5]
+[seStop ad931 2.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠マシュ
+マスター、お疲れさまでした。[r]1.5キロメートルの全力疾走に匹敵する運動です。
+[k]
+
+＠マシュ
+どうか深呼吸をして、酸素を摂取してください。[r]それとも、座って休まれますか？
+[k]
+
+？1：大丈夫、こっちは身軽だから
+
+？2：マシュも今のうちに休んでおいて
+
+[messageOff]
+[charaFace B 16]
+[wt 1.0]
+[charaFace B 0]
+
+＠マシュ
+はい。もちろんです。
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠フォウ
+フォウフォウ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠マシュ
+はい。お心遣い、[r]ありがとうございます、フォウさん。
+[k]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaFace B 12]
+
+＠マシュ
+……。[r]……。
+[k]
+
+＠マシュ
+……………………。
+[k]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠マシュ
+……オリュンポスの兵士。[r]強いのは、最初の人だけではありませんでした。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠武蔵
+ええ、そうね。異常なまでに強化されてる。[r]人間を、人間のままで英霊並に引き上げた感じ。
+[k]
+
+＠武蔵
+腕の一本飛んだくらいじゃ怯みもしなかったし、[r]精神強度も並外れていたわ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+戦闘のモチベーションが高いのも無理はないさ。[r]彼らは彼らで、[#世界を守る]ために戦っているのだから。
+[k]
+
+＠ホームズ
+このオリュンポスに愛する者もいるのだろう。[r]失う訳にはいかないと、全力以上を出すはずだ。
+[k]
+
+？1：……………………。
+
+？！
+
+＠ホームズ
+……これまでの異聞帯でも可能性はあったが、[r]遂に、我々は正面切って対峙する事になる訳だよ。
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace C 0]
+
+＠ホームズ
+すなわち、[r]異聞帯のすべて。
+[k]
+
+＠ホームズ
+オリュンポスに生きて暮らす人々すべて、我々の敵だ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠マシュ
+……すべての人々が、敵……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+ゼウスの神託とやらは実に効果的だった。[r]都市全域に戒厳令が[#布:し]かれたと考えるべきだろう。
+[k]
+
+＠ホームズ
+オリュンポスの市民たちは、[r]空想樹切除に伴って消える[#無辜:むこ]の人々であると同時に、
+[k]
+
+＠ホームズ
+我々に襲いかかる牙であり、敵だ。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+？1：[line 3]そう[&だね:だよね]
+？！
+
+？1：だからこそ、シャンとしないと
+？！
+
+[charaFace B 0]
+[wt 1.0]
+
+[bgm BGM_EVENT_70 0.4 0.4]
+
+[charaFadeout B 0.1]
+[charaTalk depthOff]
+[charaDepth G 4]
+[charaDepth A 7]
+[charaFadeTime G 0.4 0.5]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠武蔵
+（『負けない』でもなく『強くあろう』でもなく、[r]　[#顔を上げ:シ ャ ン と し]ないと、か）
+[k]
+
+[charaFace A 7]
+
+＠武蔵
+（[line 3]うん、いい顔してる。[r]　私がハッパをかけるまでもないみたい）
+[k]
+
+＠武蔵
+（二人とも、ロシアからこっち、[r]　いろんな世界を見てきたのね）
+[k]
+
+
+[messageOff]
+[bgm BGM_EVENT_70 0.4 1.0]
+[charaFadeout G 0.4]
+[wt 0.4]
+[charaTalk depthOn]
+[charaFace A 9]
+
+＠武蔵
+…………っと。[r]ほっこりしてる場合じゃなかった。
+[k]
+
+＠武蔵
+結界張ったって話だけど、[r]音声までカットできるかは分からないのだし。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+音声遮断もしているよ。[r]大丈夫、オリュンポス兵の感知能力は人間並だ。
+[k]
+
+＠ホームズ
+防衛機構は魔力を感知するようだが、[r]何。大気の魔力を考えれば、サーヴァントの数騎程度、
+[k]
+
+[charaFace C 8]
+
+＠ホームズ
+特段問題はないだろう。[r]神霊級サーヴァントなりの例外でもなければ……
+[k]
+
+[charaFace C 0]
+
+＠ホームズ
+……ああ、それと。
+[k]
+
+＠ホームズ
+神そのものに近い目でもなければ、[r]容易には[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 0.5]
+
+[cueSe Battle bac234]
+[cueSeVolume bac234 0 0.6]
+[shake 0.05 6 3 2.0]
+[wt 2.0]
+[cueSeStop bac234 0.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠マシュ
+！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠武蔵
+……ミスター・ホームズ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+……神そのものに近い目であれば、或いは[r]結界そのものを感知される可能性がある。
+[k]
+
+＠ホームズ
+この場合の神というのは、[r]魔術や英霊にとっての常識を超えるという意味で、
+[k]
+
+[charaFace C 5]
+
+＠ホームズ
+つまりは[line 3]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 0.5]
+
+[charaTalk A]
+[cueSe Battle bac234]
+[cueSeVolume bac234 0 0.6]
+[shake 0.05 6 3 2.0]
+[wt 2.0]
+[cueSeStop bac234 0.5]
+
+[bgm BGM_EVENT_72 0.1]
+
+[se ad932]
+[backEffectStop bit_talk_barrier_hms_01]
+[wt 3.0]
+[se ad641]
+[wt 0.7]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠フォウ
+フォッ！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+神、あるいは神に準じる存在であれば！[r]我々は[#丸見え]という事だ！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[cueSe Battle bac234]
+[shake 0.05 10 6 2.0]
+[se ad619]
+[seVolume ad619 0 0.1]
+[seVolume ad619 2.0 0.8]
+[wt 2.0]
+[cueSeStop bac234 0.5]
+
+[shake 0.05 6 3 2.0]
+[seStop ad619 2.0]
+
+[wt 2.0]
+
+[se ad623]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth E 2]
+[charaDepth F 3]
+[charaDepth H 4]
+
+[seVolume ad619 0.3 0.6]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠マシュ
+巨大な魔力反応が接近！[r]距離３０、２０、１０……！
+[k]
+
+＠マシュ
+路地の向こうから[line 3]来ます！　今！
+[k]
+
+[messageOff]
+[se ad640]
+[wipeout rectangleStripUpToDown 0.5 1]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[charaScale E 2.0]
+[charaFadein E 1.0 0,0]
+[charaMove E 0,-600 10,0]
+[wt 0.6]
+
+[shake 0.05 6 3 2.0]
+[wipein rectangleStripDownToUp 0.5 1]
+[wait wipe]
+
+[wt 2.0]
+
+＠
+[line 3]人型だった。
+[k]
+
+＠
+確かに人に似たカタチをしていた。[r]けれど、あまりに。
+[k]
+
+＠
+巨大に過ぎる。[r]巨重。[#巨躯:きょく]。巨人。そう、その姿は巨人によく似て。
+[k]
+
+[messageOff]
+[shake 0.05 0 3 2.2]
+[se ad898]
+[seVolume ad898 0 0.5]
+[wt 2.5]
+
+＠
+金属の擦れる音が響く。
+[k]
+
+[messageOff]
+[charaScale F 2.0]
+[charaFadein F 1.0 0,-600]
+[wt 2.0]
+[shakeStop]
+[charaFadeout E 0.1]
+[charaFadein H 2.0 0,-200]
+[wt 2.0]
+
+＠
+[f large]『侵入者発見』
+[k]
+
+
+＠
+[f large]『排除開始』
+[k]
+
+＠
+それは[line 6]青銅の巨人だった。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[seStop ade393 2.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_72 2.0]
+[wait fade]
+[wt 1.2]
+[soundStopAll]
+[end]

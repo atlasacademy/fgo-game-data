@@ -1,0 +1,470 @@
+
+
+
+
+
+＄94-04-30-02-1-0
+
+[soundStopAll]
+
+[charaSet A 2039000 1 ナイチンゲール・サンタ]
+[charaSet B 99502600 1 マシュ]
+[charaSet C 1098123210 1 ゴルドルフ]
+[charaSet D 11003001 1 ジャンヌ・オルタ]
+[charaSet E 4022000 1 サンタオルタ]
+[charaSet F 7011002 1 ダレイオス三世]
+[charaSet J 1098120900 1 通信用ノイズ]
+
+[scene 21803]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠ナイチンゲール・サンタ
+雪原ですか……。[r]人が長時間いるには適していない場所です。
+[k]
+
+[charaFace A 0]
+
+＠ナイチンゲール・サンタ
+マスター、防寒装備は大丈夫ですか？
+[k]
+
+？1：万全だよ
+？！
+
+＠ナイチンゲール・サンタ
+それだけでは足りません。[r]こちらマスクです、それからゴーグルと帽子。
+[k]
+
+＠ナイチンゲール・サンタ
+[#懐炉:かいろ]も持っていますね？[r]それから保温された食料と……。
+[k]
+
+[messageOff]
+[charaMoveReturn A 10,0 0.6]
+[se ad77]
+[wt 0.6]
+[charaMoveReturn A -10,0 0.6]
+[wt 1.0]
+
+[charaFace A 6]
+
+＠ナイチンゲール・サンタ
+首元が[#心許:こころもと]ないですね。[r]こちら、マフラーです。
+[k]
+
+[messageOff]
+[charaMoveScale A 1.1 0.3]
+[charaMove A 0,15 0.3]
+
+[se ade385]
+[wt 1.2]
+[seStop ade385 0.5]
+[wt 0.5]
+
+[charaMoveScale A 1.0 0.3]
+[charaMove A 0,0 0.3]
+[wt 0.5]
+
+？1：ありがとうございます……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[se ad13]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+マスターがもこもこになってしまいました……。
+[k]
+
+
+[branchQuestNotClear lblNotClear 3000320 4]
+
+[branch lblConf]
+[label lblNotClear]
+
+[charaFace B 0]
+
+[branch lblNotClear_out]
+[label lblConf]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+（心配性すぎるサーヴァントだが……）
+[k]
+
+[charaFace C 11]
+
+＠ゴルドルフ
+（まあ、[%1]には[r]　丁度よかろう。きっちりボルトを締めねばな）
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[label lblNotClear_out]
+
+＠マシュ
+こほん。
+[k]
+
+[charaFace B 7]
+
+＠マシュ
+マスター、そこを少し進んだ先にサーヴァントの[r]反応があります。
+[k]
+
+＠マシュ
+戦闘はしていないようなので、[r]まずは話を聞いてみてはいかがでしょう。
+[k]
+
+？1：了解！
+？！
+
+[messageOff]
+[se ad601]
+[wt 0.5]
+
+[fadeout black 1.0]
+[seStop ad601 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[effect bit_talk_snowstorm_01]
+[se ad555]
+[seVolume ad555 0 0]
+[wt 1.0]
+
+[fadein black 1.0]
+[seVolume ad555 1.0 0.6]
+[wait fade]
+
+[wt 2.0]
+
+？1：少し吹雪が激しくなってきた……
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ナイチンゲール・サンタ
+待ちなさい、マスター。[r]あそこに微かな灯りが見えます。
+[k]
+
+＠ナイチンゲール・サンタ
+先ほどのサーヴァント反応かもしれません。[r]行ってみましょう。
+[k]
+
+？1：オッケー！
+？！
+
+[messageOff]
+[se ad601]
+[wt 0.5]
+
+[wipeout leftToRight 1.0 1.0]
+[seStop ad601 1.0]
+[seStop ad555 1.0]
+[wait wipe]
+
+[effectDestroy bit_talk_snowstorm_01]
+[charaFadeout A 0.1]
+
+[scene 54700]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠ジャンヌ・オルタ
+……。[r]……。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠サンタオルタ
+……。[r]……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ジャンヌ・オルタ
+ちょっとそこのサンタ。[r]何か芸でもしなさいよ、つまんないから。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠サンタオルタ
+サンタは芸をするものではない。[r]空をジェットでカッ飛び、プレゼントを投げ渡す者だ。
+[k]
+
+＠サンタオルタ
+むしろおまえこそ芸をするがいい。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ジャンヌ・オルタ
+してるじゃないの。[r]ひとまず、極上の炎は[#点:つ]いてるでしょう。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠ダレイオス三世
+……。[r]……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠サンタオルタ
+[#蝋燭:ろうそく]が炎を[#点:とも]しているだけだろう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ジャンヌ・オルタ
+私が言うのもアレだけど、[r]アンタ本当にコイツに対する扱い、雑ね！
+[k]
+
+？1：灯りが見えたと思ったら
+？2：それはダレイオス三世だった
+？！
+
+[charaFace D 0]
+
+＠ジャンヌ・オルタ
+何よ、マスターちゃん。[r]こんなところで[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ナイチンゲール・サンタ
+おや。[r]不健康なお二人組ではありませんか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth E 2]
+[charaDepth D 1]
+
+[charaFace E 5]
+[charaFace D 5]
+[charaFadein E 0.1 0]
+[charaFadein D 0.1 2]
+
+＠二人
+……！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ナイチンゲール・サンタ
+こんなところで油を売らず……[r]いえ油を消費せず、カルデアに帰還なさるべきです。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ジャンヌ・オルタ
+……そうね。
+[k]
+
+[charaFace D 1]
+
+＠ジャンヌ・オルタ
+そうしたいところだけど、[r]よんどころない事情ができたわ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠サンタオルタ
+ああ、その通りだな。[r]ナイチンゲール、まさか[#おまえも]サンタとは。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 1.5]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠ナイチンゲール・サンタ
+……はい？[r]私はサンタクロースなどではございませんが。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ジャンヌ・オルタ
+問答は無用よ。
+[k]
+
+＠ジャンヌ・オルタ
+悪いけど、そのサンタリソース。[bgm BGM_EVENT_3 0.1][r]この私が戴くわ！
+[k]
+
+[charaFace D 2]
+
+＠ジャンヌ・オルタ
+更なるサンタの力を得るためにね！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠ダレイオス三世
+[f large]ＳＡＮＴＡ……！！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ナイチンゲール・サンタ
+なるほど。
+[k]
+
+＠ナイチンゲール・サンタ
+私をサンタと言い、[r]そしてサンタの力を得るとの妄言……。
+[k]
+
+＠ナイチンゲール・サンタ
+錯乱ですね。[r]幸い、アンプルに鎮静剤があります。
+[k]
+
+＠ナイチンゲール・サンタ
+マスター、指示を。
+[k]
+
+＠ナイチンゲール・サンタ
+彼女たちは兵隊さんです。戦闘行為でなければ[r]治療できないようですので。
+[k]
+
+？1：と、とりあえず戦闘入りまーす！
+？！
+
+[charaFace A 2]
+
+＠ナイチンゲール・サンタ
+ええ、参ります！[r]いざ！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

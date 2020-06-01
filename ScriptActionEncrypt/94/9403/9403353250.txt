@@ -1,0 +1,449 @@
+
+
+＄94-03-35-32-5-0
+[soundStopAll]
+
+[charaSet A 7030001 1 アタランテ・オルタ]
+[charaSet B 7016001 1 タマモキャット]
+[equipSet C 9806820 1 バレンタイン礼装]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66800]
+[branch lblConf]
+[label lblNotClear]
+[scene 10400]
+[label lblConf]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[se ad55]
+[seVolume ad55 0 0]
+[seVolume ad55 0.8 0.6]
+[wt 1.2]
+[seStop ad55 0.2]
+
+[se ad8]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V010]
+[f large]マスター！！！[wait tVoice]
+[k]
+
+
+？1：なにごと[line 3]！？
+？！
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V020]
+いるか！　いたな！[r]よし、ならコレだ！[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[charaFace C 0]
+[charaFadein C 0.5 0,-70]
+[wt 2.0]
+[charaFadeout C 0.4]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V030]
+いわゆるチョコレートというやつだ！[r]贈るのだろう、これで良いな！[wait tVoice]
+[k]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V040]
+これで良いか、良いのだろう！[r]義務は果たした！[wait tVoice]
+[k]
+
+[charaFace A 2]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V050]
+はい終わり、はい解散！[r]では！[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[se ad608]
+[seVolume ad608 0 0.6]
+[shake 0.05 7 7 0.5]
+[wt 0.7]
+[seStop ad608 0.3]
+[wt 0.5]
+
+？1：ドアを叩き壊す勢いで……
+？！
+
+[wt 1.0]
+[se ad224]
+[seVolume ad224 0 0.3]
+[wt 1.0]
+
+[se ad55]
+[seVolume ad55 0 0]
+[seVolume ad55 0.8 0.6]
+[wt 1.2]
+[seStop ad55 0.2]
+
+[se ad8]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V060]
+……言い間違えた！[r]否、照れ隠しだ！[wait tVoice]
+[k]
+
+[charaFace A 7]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V070]
+義務ではない、義理でもない。[r]今のチョコレートは、その、アレだ。[wait tVoice]
+[k]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V080]
+日頃の感謝と愛情と友情と[r]その他諸々をありったけ叩き込んだものと思うがいい！[wait tVoice]
+[k]
+
+？1：あ、はい
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V090]
+うむ！[wait tVoice]
+[k]
+
+？2：わかってます
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V100]
+わ、わかっていたか。[r]そうか。さすがだな、マスター。[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 0]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V110]
+……。[r]……。[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V120]
+まあ、アーチャーのときほど手先が器用ではなく、[r]色々と失敗に次ぐ失敗……。[wait tVoice]
+[k]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V130]
+結局、我らがタマモキャット師匠に[r]泣きつき、事無きを得たのだが。[wait tVoice]
+[k]
+
+
+[messageOff]
+
+[charaTalk off]
+[charaDepth B 1]
+[charaDepth A 9]
+
+[charaFace B 1]
+[charaScale B 1.4]
+[charaPut B 224,50]
+[charaFadeTime B 1.2 0.7]
+[wt 2.0]
+
+？1：師匠……！
+？！
+
+[charaFadeout B 0.4]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V140]
+……アーチャーからバーサーカーとなった私は、[r]何もかもに加減と制御が利かない。[wait tVoice]
+[k]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V150]
+胸に渦巻く情炎に、[r][#灼:や]き尽くされてしまいそうだ。[wait tVoice]
+[k]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V160]
+先ほどから汝の顔を見ていると、[r]こう……攻撃的になる！[wait tVoice]
+[k]
+
+[charaFace A 3]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V170]
+具体的に言うと、噛みつきたい！[wait tVoice]
+[k]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V180]
+なんだか、自分でも何を言っているのか、[r]あまりに不明瞭だ……。[wait tVoice]
+[k]
+
+？1：どうどう
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V190]
+う、うむ。[r]素直にどうどうされる。[wait tVoice]
+[k]
+
+？2：落ち着いてください
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V200]
+そ、そうだな。[r]少し……深呼吸する。[wait tVoice]
+[k]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V210]
+す[charaMove A 0,3 1.2]ー……[tdelay 1 2.0 1][charaMove A 0,0 1.0][delay -]はー……。[wait tVoice]
+[k]
+
+[delayStop 1]
+
+？！
+
+[messageOff]
+[wipeout rollRight 1.5 1.0]
+[bgm BGM_EVENT_77 1.5 0.4]
+[wait wipe]
+[wt 1.5]
+[wipein rollLeft 1.5 1.0]
+[bgm BGM_EVENT_77 1.5 1.0]
+[wait wipe]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V220]
+す[charaMove A 0,3 1.2]ー……[tdelay 2 2.4 1][charaMove A 0,0 1.0][delay -]はー……。[r]すー……。[wait tVoice]
+[k]
+
+[delayStop 2]
+
+[charaFace A 6]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V230]
+……。[r]……うん、気分はまあまあ楽になった。[wait tVoice]
+[k]
+
+[charaFace A 7]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V240]
+バレンタイン、ということで[r]獣としての本能が、多少刺激されたようだ。[wait tVoice]
+[k]
+
+？1：多少……？
+？！
+
+[charaFace A 3]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V250]
+多少だ、多少。[wait tVoice]
+[k]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V260]
+何かあらぬことを口走っていたような気もするが、[r]全て綺麗さっぱり忘れるがいい。[wait tVoice]
+[k]
+
+[charaFace A 6]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V270]
+しかし、何故か急に落ち着いたな。[r]……ふむ、一体これは……。[wait tVoice]
+[k]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V280]
+む？[r]む、む、む？[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V290]
+ああ、そうか。[r]わかった！[wait tVoice]
+[k]
+
+[messageOff]
+[charaMoveScale A 1.2 0.25]
+[wt 0.3]
+
+？1：またもやなにごと[line 3]！？
+？！
+
+[charaFace A 1]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V300]
+いや、ようやく気付いた。[r]これは汝の匂いか。[wait tVoice]
+[k]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V310]
+うん。[r]良い匂いだ。[wait tVoice]
+[k]
+
+？1：もう少し離れていただけると……！
+？！
+
+[charaFace A 5]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V320]
+サーヴァントとして当然の権利だと主張する。[wait tVoice]
+[k]
+
+[charaFace A 6]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V330]
+聞くところによると、[r]ベッドにいつのまにか潜り込む[#輩:やから]もいるとか。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V340]
+私程度の[#我:わ]が[#侭:まま]など、[r]可愛いものだと思わないか？[wait tVoice]
+[k]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V350]
+思うだろう？[r]な？[wait tVoice]
+[k]
+
+？1：……五分だけ[&だよ:ですよ]？
+？！
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+[charaMoveScale A 1.0 0.1]
+[charaMove A 1 0.1]
+[wt 1.5]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V360]
+……うん、やっと[#理解:わ　か]った。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V370]
+汝のこれは善良の匂い。[r][#日向:ひ な た]の[#傍:かたわ]らにいようとする者の匂いだ。[wait tVoice]
+[k]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V380]
+この匂いである限り、[r]誰かが汝のサーヴァントとして、汝の[#傍:かたわ]らにいる。[wait tVoice]
+[k]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V390]
+汝を守り、[#慈:いつく]しんでくれるはずだ。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V400]
+私を信じられずとも、[r]この言葉だけは……信じてくれ。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V410]
+……。[r]……。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠アタランテ・オルタ
+[tVoice ValVoice_703000 0_V420]
+ではまたな、マスター。[r][#幸:さち]多き生であることを、心より祈る。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[wt 1.0]
+
+[se ad8]
+[wt 2.5]
+
+[charaFace C 0]
+[charaFadein C 0.5 0,-70]
+[wt 2.0]
+
+[charaFadeout C 0.4]
+[wt 0.5]
+
+[se ade13]
+[seVolume ade13 0 0.4]
+[wt 1.5]
+
+？1：……ほろ苦い……
+？！
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

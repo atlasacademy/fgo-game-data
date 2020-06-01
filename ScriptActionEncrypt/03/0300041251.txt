@@ -1,0 +1,336 @@
+
+＄03-00-04-12-5-1
+
+
+[soundStopAll]
+
+[charaSet A 8001400 1 ゴーグル有りマシュ]
+[charaSet B 1039001 1 ラクシュミー]
+[charaSet C 1019001 1 ラーマ]
+[charaSet D 1098127610 1 ペペロンチーノ]
+[charaSet E 1098176100 1 アスクレピオス]
+[charaSet F 23003001 1 ガネーシャ]
+[charaSet G 98115300 1 ホームズ]
+[charaSet H 8001410 1 マシュ]
+[charaSet I 98002000 1 フォウ]
+[charaSet J 98115000 1 エフェクト用]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_80 0.1]
+[wt 0.5]
+
+[se ad171]
+[wt 0.1]
+[se ad170]
+[wt 0.3]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad686]
+[effect bit_talk_14]
+[wt 0.8]
+
+[wipeout rectangleStripRightToLeft 0.1 1.0]
+[wait wipe]
+
+[scene 75500]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.4 65,0]
+[charaMove E 1 0.4]
+
+[se ad671]
+[wipein rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+[wt 0.8]
+
+
+＠アスクレピオス
+くそ。患者の暴力で医師が死ぬなんてあっていい話か？[r]いいわけがないな。
+[k]
+
+[messageOff]
+[charaFace E 0]
+[se ad60]
+[charaMove E 0,-6 0.3]
+[wt 0.3]
+[seStop ad60 0.1]
+[wt 0.2]
+[se ad73]
+[charaMove E 0,15 0.3]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect E erasureReverse 1 0.3]
+[wt 1.4]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠A：マシュ
+アスクレピオス、撤退します！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠ホームズ
+彼こそが当初の目的だ。[r]逃がしたくはない。追えるかね？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠ガネーシャ
+さ、さすがに無理っスよぉぉぉ。[r]もうヘロヘロっス……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ラーマ
+アルジュナに受けた傷がまだ残っている。[r]今回は痛み分けとするしかあるまい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ラクシュミー
+やれやれ……隠れていたこの町の民も、[r]騒ぎが収まったと知ればすぐに出てくるだろう。
+[k]
+
+[charaFace B 0]
+
+＠ラクシュミー
+説明が面倒だ。ひとまず移動しようではないか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ペペロンチーノ
+同感ね。アナタたちの壁の村……ディーヴァール？[r]あそこに帰りながら今後の方策を練りましょ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ラクシュミー
+……嬉しそうだな？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠ペペロンチーノ
+あらそう？　そんな事もないと思うけど。
+[k]
+
+？1：なんか怪しいね、妙漣寺
+？2：うかれてるね、妙漣寺
+？！
+
+[charaFace D 3]
+
+＠ペペロンチーノ
+ち[messageShake 0.05 3 2 0.5]ょっ、それは[line 3]ッ！
+[k]
+
+[charaFace D 4]
+
+＠ペペロンチーノ
+……はぁ。わかったわよ。そのへんも知りたかったら[r]話すから、とりあえず移動しましょ。
+[k]
+
+＠ペペロンチーノ
+神の遣いになんてコトをー、って町の人に[r]石とか投げられそうになるのはゴメンだわ。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 2.0]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth A 2]
+[charaDepth H 1]
+
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+[wt 0.1]
+
+[se ade18]
+[seVolume ade18 0.0 0.5]
+
+[wt 0.5]
+[seStop ade18 0.8]
+[wt 1.5]
+
+[charaFace H 4]
+[charaFadein H 0.1 1]
+[wt 0.1]
+[charaFadeout A 0.4]
+[wt 0.2]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+
+[charaDepth A 0]
+[charaDepth H 0]
+
+[charaTalk on]
+
+＠マシュ
+…………。
+[k]
+
+？1：大丈夫、マシュ？
+？！
+
+[bgm BGM_EVENT_70 0.1]
+[charaFace H 3]
+
+＠マシュ
+あ、はい。大丈夫です。
+[k]
+
+[charaFace H 4]
+
+＠マシュ
+いえ、正直に言えば、皆さんと同じく[r]ダメージが蓄積してはいるのですが。
+[k]
+
+＠マシュ
+それとは別に……少し、考えていました。
+[k]
+
+[charaFace H 12]
+
+＠マシュ
+あのアルジュナと初めて真正面から戦って、[r]改めて思ったのです。圧倒的な力、だと。
+[k]
+
+＠マシュ
+それも……[r]ただの、一個の戦力としての力ではなく。
+[k]
+
+＠マシュ
+地面と力比べをしているような、『スケールの違い』[r]みたいなものを強く感じてしまって……。
+[k]
+
+[charaFace H 7]
+
+＠マシュ
+あ、いえ、勘違いしないでください、マスター！[r]これは弱音ではありません！
+[k]
+
+[charaFace H 0]
+
+＠マシュ
+純然たる情報分析として、です。あのアルジュナは、[r]間違いなくこの世界で最強の力を持った神。
+[k]
+
+[charaFace H 8]
+
+＠マシュ
+それに、どう太刀打ちすればいいのだろうか、と。[r]真剣に考えれば考えるほどわからなくなってしまって。
+[k]
+
+[charaFace H 7]
+
+＠マシュ
+[#神将:ローカパーラ]を倒して力を削って、[r]それだけで、はたして……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠フォウ
+フォウ……。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 1.0]
+[charaFadeout I 0.1]
+[wt 0.2]
+
+？1：みんなで考えればいいアイデアも浮かぶよ
+？2：きっとなんとかなるよ
+？！
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk H]
+[charaFace H 13]
+[charaFadein H 0.1 1]
+
+＠マシュ
+そう……ですね。きっと、そうだと思います。
+[k]
+
+＠マシュ
+それではマスター、そろそろ出発しましょう。[r]まずはペペさんの下の名前を教えてもらわないと、ですね。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠ペペロンチーノ
+マ[messageShake 0.05 3 3 0.5]シュちゃんまでェ！？
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[soundStopAll]
+[end]

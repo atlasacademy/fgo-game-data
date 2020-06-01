@@ -1,0 +1,923 @@
+
+
+＄91-10-32-01-2-0
+
+[soundStopAll]
+
+[charaSet A 1035001 1 ディルムッド]
+[charaSet B 1098124510 1 ダ・ヴィンチ]
+[charaSet C 99502600 1 マシュ]
+[charaSet D 98006200 1 エネミー1]
+[charaSet E 98006200 1 エネミー2]
+[charaSet F 98006200 1 エネミー3]
+[charaSet J 1098120900 1 通信用ノイズ]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[charaDepth D 1]
+[charaDepth E 2]
+[charaDepth F 3]
+
+[scene 46700]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk off]
+
+[charaFace D 0]
+[charaFace E 0]
+[charaFace F 0]
+
+[charaFadein D 0.1 -350,0]
+[charaFadein E 0.1 350,0]
+[charaFadein F 0.1 1]
+
+[wt 0.5]
+
+
+[fowardEffect bit_talk_kengekiall02]
+[se ad32]
+[charaShake D 0.05 3 3 0.7]
+[charaShake E 0.05 3 3 0.7]
+[charaShake F 0.05 3 3 0.7]
+[wt 0.5]
+[se ad32]
+[wt 0.1]
+[se ad32]
+[wt 0.5]
+[effect bit_talk_v_slash01]
+[wt 0.1]
+[se bac308]
+[wt 0.3]
+
+[se ad463]
+[wt 0.5]
+[seStop ad463 1.0]
+[wt 0.5]
+
+[se ad42]
+[charaSpecialEffect D enemyErasure 1 1.5]
+[charaSpecialEffect E enemyErasure 1 1.5]
+[charaSpecialEffect F enemyErasure 1 1.5]
+
+[wait charaSpecialEffect D]
+[wait charaSpecialEffect E]
+[wait charaSpecialEffect F]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+
+[charaTalk on]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[charaSet D 2021000 1 巴御前]
+[charaSet E 6029001 1 千代女]
+[charaSet F 98110000 1 柳生但馬守]
+
+[wt 1.5]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ディルムッド
+……ひとまずこれで最後のようですね。マスター。
+[k]
+
+＠ディルムッド
+城下の人々は無反応、か。[r]騒がれてしまうよりは余程よいですが……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠巴御前
+少し不気味ではありますね。[r]しみゅれえたあとはこういうものなのでしょうか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+というか、シミュレーターの設定としては[r]戦闘用として割り切ったものだね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠マシュ
+はい。エネミーがＮＰＣを襲うことがない代わりに、[r]ＮＰＣもエネミーに反応しないよう設定されています。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠巴御前
+世はなべて事も無し、と[line 3]
+[k]
+
+＠巴御前
+それにしては但馬さま、姿がないということは[r]えねみいとの戦闘に興じている訳ではないのでしょうか。
+[k]
+
+[charaFace D 4]
+
+＠巴御前
+ならば何をなさっているのでしょう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ディルムッド
+意外に、食べ歩きなど、[r]時代と場所を存分に愉しんでいるのかもしれませんね。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+[wt 1.0]
+[charaFaceFade E 0 0.5]
+[wt 0.5]
+
+＠千代女
+……千代女、探って参ります！[r]御免！
+[k]
+
+[messageOff]
+[charaEffect E bit_talk_quickmove]
+[charaSpecialEffect E erasureReverse 1 0.3]
+[se ad73]
+[wt 1.5]
+
+[wipeout rollRight 1.0 0.5]
+[bgm BGM_EVENT_77 1.0 0.5]
+[wait wipe]
+[wt 1.0]
+[wipein rollLeft 1.0 0.5]
+[bgm BGM_EVENT_77 1.0 1.0]
+[wait wipe]
+
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect E appearance 1 0.25]
+[wt 0.4]
+
+＠千代女
+ただいま戻りましてござる！
+[k]
+
+＠千代女
+お館様、お知らせいたします。[r]柳生但馬守様を発見いたしました！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth A 1]
+[charaDepth D 2]
+[charaFace A 2]
+[charaFace D 3]
+[charaFadein A 0.1 0]
+[charaFadein D 0.1 2]
+
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+？1：千代女さん、えらい！
+
+＠千代女
+ははっ。
+[k]
+
+？2：でかした！
+
+[charaFace E 3]
+
+＠千代女
+えふぇへ……
+[k]
+
+[messageOff]
+[wt 0.5]
+[charaFace E 0]
+[wt 0.5]
+
+＠千代女
+いえ。当然の働きにて！
+[k]
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠巴御前
+それで、但馬さまはどちらに？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠千代女
+は。灯台もと暗しといいますか、[r]目抜き通り沿いの旅籠に部屋を取っておられるようです。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠巴御前
+……あら、つまり？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠マシュ
+目抜き通りはまさにこの大通りのことでしょうから、[r]ええと、旅籠というとひとつかふたつしかありません。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠巴御前
+すぐそこですね？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠千代女
+は。すぐそこにて。[r]流石は但馬守様、予想外の場所におられました。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ディルムッド
+はは、城ではなく市井におられたか。[r]食えぬ御仁だ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠千代女
+但馬守様は二階部屋を取っているとの由にて。[r]是より千代女、様子を見て参ります。
+[k]
+
+？1：気を付けてね
+？2：いってらっしゃい
+
+？！
+
+＠千代女
+はっ。[r]行って参ります！
+[k]
+
+[messageOff]
+[charaEffect E bit_talk_quickmove]
+[charaSpecialEffect E erasureReverse 1 0.3]
+[se ad73]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠巴御前
+流石は、くのいち。望月千代女殿。[r]戦国の世というものはあのように熟達した間諜が……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ディルムッド
+巴御前、貴方の生きた時代は[r]千代女殿や但馬殿よりも更に古き世であったのですね。
+[k]
+
+＠ディルムッド
+ニンジャなるものは、その頃にはなかったので？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠巴御前
+ございませんでした。ええ。
+[k]
+
+＠巴御前
+間諜それ自体はありましたが、[r]忍び、なる名は少なくとも聞き及びません。
+[k]
+
+＠巴御前
+私が生きたのは古き時代。[r]おそろしくも荒々しき力の時代です。
+[k]
+
+[charaFace D 4]
+
+＠巴御前
+とはいえ……
+[k]
+
+＠巴御前
+更なる昔。[r]たとえば平安の昔であれば、更に古くおそろしき[line 3]
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_77 0.1]
+
+[se adm38]
+[wt 0.2]
+[seStop adm38]
+[wt 0.4]
+[se adm38]
+
+[wt 1.5]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaFace D 5]
+
+＠巴御前
+むっ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ディルムッド
+あの音は……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠千代女
+ひゃああぁああああぁあああああああああああああ！
+[k]
+
+＠千代女
+お館様ぁああぁぁ[line 3]
+[k]
+
+？1：千代女さん！？
+？2：もしかして見つかった！？
+
+？！
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠巴御前
+其処なる旅籠の二階より聞こえたような！[r]つまり……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+＠柳生但馬守
+はっはっは。
+[k]
+
+＠柳生但馬守
+是は、また愉快なこともある。[r]逗留先にて甲賀望月のくのいちに狙われようとは。
+[k]
+
+＠柳生但馬守
+折角の二階部屋だ。[r]是非とも主殿と一同、此方へ参られよ。
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_81 1.0]
+[wait fade]
+
+[scene 40301]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_66 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠柳生但馬守
+[line 3]ふむ。
+[k]
+
+＠柳生但馬守
+既に、人数分[#拵:こしら]えるよう女将には申し付けた。[r]さ。遠慮なく召し上がられよ。
+[k]
+
+＠柳生但馬守
+今日は、南総の魚を取り揃えているそうな。
+[k]
+
+＠柳生但馬守
+[#鰺:あじ]の[#沖鱠:おきなます]。これが旨い。船上で[#拵:こしら]えるものだが、[r]早馬でなんとか活きた[#鰺:あじ]を運んできたとか。
+[k]
+
+＠柳生但馬守
+鱚は天ぷらにしてあるな。[r]おろした大根が何とも爽やかな味わいよ。
+[k]
+
+＠柳生但馬守
+鮎の塩焼き……是は、[r]素朴な味わいが炊きたての米に合う。
+[k]
+
+＠柳生但馬守
+山菜はいずれも採れたてだ。[r]さあ、主殿、召し上がられるがよい。
+[k]
+
+？1：あれ……？
+？2：いただき……ます……？
+
+？！
+
+[messageOff]
+
+[charaFaceFade F 1 0.5]
+[wt 1.5]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠千代女
+は。これはなんと見事な……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠巴御前
+但馬さま、もしや。もしや。[r]このように[line 3]
+[k]
+
+＠巴御前
+しみゅれえたあを毎夜起動させては、[r]各地各時代のお料理を食べ歩いていたのですか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠柳生但馬守
+さて。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ディルムッド
+うむ。これは美味な。フキノトウのテンプラなるもの、[r]実に味わい深い。酒が欲しくなります。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠千代女
+あっもう食べていらっしゃる！[r]ディルムッド殿！
+[k]
+
+？1：もぐもぐ
+？2：美味しいよ、巴さんも食べよう
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠巴御前
+マスターまで！[r]むむむむむむ！
+[k]
+
+[charaFace D 4]
+
+＠巴御前
+ま、まあ、マスターがそう仰せなら……[r]しかしその……勿体ないといいますか、ええと……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠千代女
+巴様[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠柳生但馬守
+如何された、巴殿。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠巴御前
+巴はその……舌が……[r]我が血に流るる炎熱が如き力の流れゆえか、
+[k]
+
+＠巴御前
+舌のどこかがきっと灼けてしまっているのです。[r]それでその……
+[k]
+
+＠巴御前
+味の[#分かる]時と[#分からぬ]時の差が、[r]どうにも激しく……
+[k]
+
+＠巴御前
+本日は、その……恥ずかしながら……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠柳生但馬守
+舌で味わうばかりが料理にあらず。[r]舌に依らず愉しめるものもあろう。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[se adm40]
+[seVolume adm40 0 0.8]
+[wt 1.0]
+
+[charaFace F 1]
+
+＠柳生但馬守
+巴殿、こちらを食されよ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠巴御前
+これは……ところてん[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠柳生但馬守
+よく冷えている。[r]ささ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠巴御前
+……。[r]……。
+[k]
+
+＠巴御前
+…………但馬さまの仰せとあらば、断る訳にも。[r]いただきます。
+[k]
+
+[messageOff]
+
+[wt 0.5]
+[charaMoveReturn D 0,-3 0.3]
+[wt 0.5]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠柳生但馬守
+そのまま呑み込むとよい。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[wt 1.0]
+[se ad217]
+[seVolume ad217 0 0.5]
+[charaMoveReturn D 0,-6 0.3]
+[wt 0.3]
+[seStop ad217]
+[wt 0.7]
+
+[charaFace D 3]
+
+＠巴御前
+[line 3]！
+[k]
+
+＠巴御前
+これは、ああ、これはなんとも……[r]涼やかな……
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[wt 0.5]
+
+[charaFaceFade F 1 0.5]
+[wt 1.0]
+
+＠柳生但馬守
+……此度のしみゅれえたあ。[r]かつて、私の生きた時代に近いものであった。
+[k]
+
+＠柳生但馬守
+所詮は仮初めと思うこともあったが、何、[r]それを言い出せば我が身そのものも仮初めの影法師。
+[k]
+
+＠柳生但馬守
+[#電子電脳の仮初め:し　み　ゅ　れ　え　た　あ]と我が身、何の違いがあろうか。[r]こうして懐かしきものを楽しむも一興[line 3]
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace D 1]
+[charaFace E 1]
+[charaFadein D 0.1 0]
+[charaFadein E 0.1 2]
+
+[wt 2.0]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[wt 0.5]
+[charaMoveReturn A 0,-5 0.4]
+
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？1：柳生さん
+？2：じゃあ、食べ歩きのためにシミュレーターを？
+
+？！
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠マシュ
+エリアをランダム設定にしていたのは、[r]つまり……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+目的地を決めずに気ままな旅をするため、かな？[r]いいね。そういうの、いいなぁ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠柳生但馬守
+老爺の気まぐれに付き合わせたようで、[r]誠に相済まぬ。主殿、各々方にも迷惑を掛けた。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠千代女
+め、滅相もございません！[r]面を上げてください、但馬様！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠巴御前
+そうです！[r]しみゅれえたあに興じる英霊は元より多いもの！
+[k]
+
+＠巴御前
+何を気にされることがありましょう。[r]一言、どなたかに告げておけばよいだけなのです。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+[wt 1.0]
+
+[charaFaceFade F 1 0.5]
+[wt 0.5]
+
+＠柳生但馬守
+かたじけない。[r]直ぐに、[#かるであべえす]へ戻るとしよう。
+[k]
+
+[charaFace F 0]
+
+＠柳生但馬守
+だが、その前に[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_66 1.0]
+[wt 1.0]
+
+＠柳生但馬守
+[line 3]ほんの一匹ばかり、[#化生:けしょう]を斬らねばならぬ。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[wt 1.5]
+[soundStopAll]
+[end]

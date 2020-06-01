@@ -1,0 +1,388 @@
+
+
+
+＄94-01-19-01-4-1
+[soundStopAll]
+[charaSet A 10002000 1 メルトリリス]
+[charaSet B 1007000 1 ガウェイン]
+[charaSet C 23001000 1 ＢＢ]
+[charaSet D 1005000 1 ネロ]
+[charaSet E 5003001 1 玉藻の前]
+[charaSet F 2001000 1 エミヤ]
+
+[fowardEffectPause bit_talk_bbchannel01]
+[wait fowardEffectStart]
+[backEffectPause bit_talk_bbchannel02]
+[wait backEffectStart]
+
+[bgm BGM_EVENT_3 0.1]
+[scene 41300]
+[fadein black 1.5]
+[wait fade]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.4 1]
+
+
+＠ガウェイン
+ぬ[se ad171]んっ……！[r]やりますね、見知らぬレディ！
+[k]
+
+＠ガウェイン
+しかし何処の英霊か、[#皆目:かいもく]見当がつかない……！[r]いえ、英霊とはとても思えません！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠メルトリリス
+私が英霊なワケないでしょう。[r]貴方、嫌味を言うにも程が[line 3]
+[k]
+
+[charaFace A 0]
+＠メルトリリス
+……待って。よく見たらガウェイン？[r]でも[bgmStop BGM_EVENT_3 0.7]128騎の中に貴方がいた覚えは[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠ガウェイン
+おや。そちらにいるのは[%1]……[r][%1]ですね？
+[k]
+
+[bgm BGM_EVENT_55 0.1]
+[charaFace B 0]
+＠ガウェイン
+良かった、無事合流できたようです。[r]こちらにレイシフトした際、はぐれた時はどうしたものかと。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.4]
+
+？1：え……？　ガウェインと来たっけ？
+？2：あれ……？　ネロじゃなくて……？
+
+？！
+
+[charaFace B 1]
+＠ガウェイン
+ははは。そのようなご冗談を。ははは。
+[k]
+
+[charaFace B 0]
+＠ガウェイン
+サーヴァント、ガウェイン、ここに。[r]セイバー、アーチャー、あとなんかの３騎、
+[k]
+
+＠ガウェイン
+マスター・[%1]の[r]護衛として同行したではないですか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠メルトリリス
+！？
+[k]
+
+？1：もしかして……
+？2：あの時……
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_55 0.4]
+[wipeout noise 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[scene 10001]
+[wt 0.4]
+[effect bit_sepia01]
+[wipein noise 0.4 1]
+[wait wipe]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠ネロ
+なに！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠エミヤ
+むっ！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠玉藻の前
+なんとぉ！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[messageOff]
+[se ad348]
+[wipeout noise 1.0 1]
+[wait wipe]
+[effectStop bit_sepia01]
+[scene 41300]
+[wt 1.5]
+[wipein noise 1.0 1]
+[wait wipe]
+[bgm BGM_EVENT_55 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ガウェイン
+……ふむ。どうやら冗談ではない様子。[r]どのような行き違いかは定かではありませんが……
+[k]
+
+＠ガウェイン
+私はカルデアから同行したサーヴァント。[r]このSE.RA.PHとやらに召喚された者ではありません。
+[k]
+
+[charaFace B 0]
+＠ガウェイン
+ですがご安心を。なにやらトラブルはあったようですが、[r]私が護衛である事は疑いようのない事実。
+[k]
+
+＠ガウェイン
+ＢＢとやらのアナウンスは私も聞いています。[r]SE.RA.PHとやらの事情もそれなりに。
+[k]
+
+＠ガウェイン
+共にこの事変を解決し、カルデアに帰還しましょう。
+[k]
+
+
+？1：ガウェイン　が　仲間になった！
+[messageOff]
+[se ad139]
+[wt 1.5]
+？2：ありがたい。頼もしいよ、ガウェイン
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠メルトリリス
+ちょっと待って。[r][line 3]これ、どういう事？
+[k]
+
+＠メルトリリス
+他にサーヴァントを連れて来ていた？[r]しかも３騎？
+[k]
+
+[charaFace A 2]
+＠メルトリリス
+そんな話、聞いてないわ。[r]頼れるのは私だけじゃなかったの！？
+[k]
+
+？1：なんで怒って[&るんだ:るの]？
+？2：誰に対して怒って[&るんだ:るの]？
+
+？！
+
+[charaFace A 9]
+＠メルトリリス
+怒っていないわ、質問しているんじゃない！[r]詳しく説明して、詳しく！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_55 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout A 0.1]
+[wt 1.0]
+[scene 41300]
+[fadein black 1.5]
+[wait fade]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[bgm BGM_EVENT_55 0.1]
+
+＠ガウェイン
+なるほど。私とはぐれた[%1]の[r]窮地を救ったのが貴女だったのですね。
+[k]
+
+＠ガウェイン
+その事は感謝します、メルトリリス。[r]しかし……
+[k]
+
+[charaFace B 4]
+＠ガウェイン
+（……しかし、それにしてはタイミングが良すぎる。[r]　アルターエゴとやらがカルデアに協力する理由もない）
+[k]
+
+＠ガウェイン
+（完全に信用しきれないのもまた事実……[r]　嘘をついているようには見えませんが……）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠メルトリリス
+……まあいいわ。[r]他に同行したサーヴァントは誰なのか聞かせなさい。
+[k]
+
+＠メルトリリス
+ふうん……赤いマントで双剣使いのアーチャーと、[r]狐耳と巫女服のキャスタ[line 4]
+[k]
+
+[charaFace A 5]
+＠メルトリリス
+[line 3]赤いマントのアーチャー、ですって？
+[k]
+
+？1：？　知り合い？
+
+？！
+
+[messageOff]
+[charaFace A 5]
+[wt 0.7]
+[charaFace A 10]
+＠メルトリリス
+別に。知り合いでもなければ因縁もないわ。[r]単に顔を見た瞬間、切り[#刻:きざ]みたくなるだけよ。
+[k]
+
+[charaFace A 4]
+＠メルトリリス
+なんにせよ、他に戦力があるという事よね。[r]…………それはそれで、まあ、いい事だわ。
+[k]
+
+＠メルトリリス
+（……もうえり好みできる状況じゃないもの。[r]　チャンスは二度とはないのだし……）
+[k]
+
+[charaFace A 1]
+＠メルトリリス
+安全地帯の確保の他に、はぐれたサーヴァントを[r]探し出すミッションも加わった、という事ね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠ガウェイン
+おや。私というサーヴァントがいても、[r]貴女は同行を続けるのですか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠メルトリリス
+当然でしょう？　そう簡単に私から逃げられると[r]思わない事ね、[%1]。
+[k]
+
+＠メルトリリス
+私以外にサーヴァントがいたところで[r]アナタとの契約は切らないわ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ガウェイン
+……ここは右も左も分からぬ戦場。[r]SE.RA.PHをよく知る協力者は歓迎したいところですが……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_55 0.7]
+[charaFadeout B 0.1]
+[wt 0.1]
+[scene 10001 0.1]
+[effect bit_talk_noise_gr]
+[wt 0.7]
+[se ad31]
+＠C：？？？
+信用はできませんよねぇ？[r]だってあからさまに怪しいんですもの、その[#娘:こ]。
+[k]
+
+＠C：？？？
+一体だれが味方なのか？[r]一体だれがヒロインなのか？
+[k]
+
+＠C：？？？
+他の２騎のサーヴァントはどこに[r]飛ばされてしまったのかっ！？
+[k]
+
+＠C：？？？
+そんな疑問にお答えするアナタのエンジェル、[r]本日３回目のＢＢ[line 3]、チャンネル[line 4]！
+[k]
+
+[messageOff]
+[effectStop bit_talk_noise_gr]
+[seStop ad31]
+[scene 10000]
+[fowardEffectStart]
+[wait fowardEffect]
+[bgm BGM_EVENT_51 0.1]
+[wt 0.4]
+[backEffectStart]
+[scene 41300]
+[wait backEffect]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+＠ＢＢ
+なーんて、[#番組:で　は]なく♡[r]ちょっと想定外の出来事なので、この通り。
+[k]
+
+＠ＢＢ
+月の支配者、ＢＢちゃん。[r]目障りな虫ケラを潰しに、直接登場しちゃいました♡
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_51 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

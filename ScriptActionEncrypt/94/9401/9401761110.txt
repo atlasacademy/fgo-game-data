@@ -1,0 +1,91 @@
+
+
+＄94-01-76-11-1-0
+[soundStopAll]
+
+
+[charaSet A 98018100 1 海賊Ａ]
+[charaSet B 98018100 1 海賊Ｂ]
+[charaSet C 99502600 1 マシュ]
+[charaSet D 10004000 1 メカエリチャン]
+[charaSet E 98102900 1 フォウ]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[scene 48900]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_3 0.1]
+[wait fade]
+
+[charaTalk A]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+
+＠A：荒くれ者
+クヒャハハハハ！　俺たちゃ極悪人！[r]元領主様のライブを命懸けで防ぐ男たちさ！
+[k]
+
+＠B：荒くれ者
+歌わせないためなら、命なんか惜しかねえ！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠マシュ
+気が進みませんが、前に進むしかありません！[r]進みましょう！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠メカエリチャン
+歌に対して、どうしてこれほど情熱的なのでしょう。[r]いまいち理解ができません。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠フォウ
+フォー。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠マシュ
+情熱の方向性間違ってない？[r]と言いたげなフォウさんでした！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

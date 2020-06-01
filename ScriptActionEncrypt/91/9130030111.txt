@@ -1,0 +1,292 @@
+
+
+＄91-30-03-01-1-1
+[soundStopAll]
+[charaSet A 3003001 1 ヴラド三世]
+[charaSet B 8001002 1 マシュ]
+[charaSet C 98003003 1 Dr.ロマン]
+[charaSet E 98025000 1 シャドウサーヴァント]
+[charaSet H 98115000 1 エフェクト用]
+
+[scene 10710]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk E]
+[charaFadein E 0.1 1]
+[fadein black 0.5]
+[wait fade]
+
+
+
+[wt 0.2]
+
+[se bac138]
+[charaEffect E bit_bolg_03]
+[charaShake E 0.05 3 3 0.5]
+[wt 0.7]
+
+
+[se ad42]
+[charaSpecialEffect E enemyErasure 1 1.0]
+[wait charaSpecialEffect E]
+[charaFadeout E 0]
+[bgmStop BGM_EVENT_3 0.5]
+[wt 1.1]
+
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ヴラド三世
+片付いたか。[r]友よ、無事か？
+[k]
+
+？1：もちろん
+
+[charaFace A 3]
+
+＠ヴラド三世
+おう、実に頼もしい言葉だ！[r]オレの[#戦:いくさ]の後に平然と言ってのけるとはな！
+[k]
+
+？2：ヴラド公こそ、大丈夫？
+
+[charaFace A 3]
+
+＠ヴラド三世
+無論だとも。我が友の前だ、無様な姿は晒せまい。[r]最後の一騎は、さすがにちと[#堪:こた]えたがな！
+[k]
+
+？！
+
+[charaFace A 0]
+
+＠ヴラド三世
+しかし……やはり、この街は癇に障る。
+[k]
+
+＠ヴラド三世
+聖杯戦争の舞台になったというが、聖杯戦争とは[r]これほどの汚濁を垂れ流すものなのか？
+[k]
+
+＠ヴラド三世
+これはこの世の光景ではない。もっと何か、[r]別の大きな間違いが生み出したものではないのか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10]
+[wt 0.1]
+[se ad13]
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 0,-151]
+[wt 0.3]
+
+＠Dr.ロマン
+それは……確かに、ボクも気になってはいるんだけどね。[r]聖杯が暴走したからといって、こんな事になるのかなって。
+[k]
+
+[charaFace C 3]
+
+＠Dr.ロマン
+いや、冬木の大聖杯は超抜級の魔術炉心だから、[r]最悪の場合、この街すべてが吹き飛ぶ事も有り得る。
+[k]
+
+＠Dr.ロマン
+でも[line 3]こんな風に、いつまでも燃え続けている、[r]というのは理屈が違うんだよね……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠マシュ
+……まだ不明な点が、あると？[r]ヴラド公はそれに気付いて探索に来たのですか？
+[k]
+
+[charaFadeout B 0.1]
+
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ヴラド三世
+探索ではない。オレにそのような知識はないからな。[r]ただ、この特異点が持つ汚濁が気に入らぬだけよ。
+[k]
+
+＠ヴラド三世
+ここには何かがある。オレがもっとも嫌うものが。[r]その源泉を見つけ、破壊したかったのだが[line 3]
+[k]
+
+
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaPut H 1]
+[charaEffect H bit_talk_10]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 0,-151]
+
+＠Dr.ロマン
+すまない、時間切れだ。[r]そこはもう聖杯を回収した特異点。
+[k]
+
+＠Dr.ロマン
+いつまでもいられる場所じゃないし、[r]シバに回していた余剰魔力もそろそろ尽きる。
+[k]
+
+[charaFace C 3]
+
+＠Dr.ロマン
+ヴラド公にとっては不満の残る遠征だろうけど、[r]そろそろ戻ってきてもらえるかな？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ヴラド三世
+なに、気にするなロマンの男よ。
+[k]
+
+＠ヴラド三世
+貴様の軟弱ぶりは目に余るが、[r]日々の細やかな努力、労働をオレは評価している。
+[k]
+
+＠ヴラド三世
+まったく[line 3]すべての人間が貴様のように勤勉であれば[r]いいのだが。そうはいかぬのが、人の世の難しさよな。
+[k]
+[messageOff]
+[wt 0.2]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[scene 10000]
+[charaFadeout A 0.1]
+
+[bgmStop BGM_EVENT_2 1.0]
+[fadein black 0.5]
+
+[effect bit_talk_07_02]
+[se ad12]
+[wt 3.0]
+[fadeout white 1.0]
+[wait fade]
+[scene 10204]
+
+[charaSet C 98003000 1 Dr.ロマン]
+
+[wt 1.5]
+
+[fadein white 1.0]
+[wait fade]
+[bgm BGM_EVENT_2 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Dr.ロマン
+お帰り、[%1][&君:ちゃん]。[r]ヴラド公は……ああ、待機状態に戻ったようだね。
+[k]
+
+[charaFace C 4]
+
+＠Dr.ロマン
+しかし、まさか彼のようなサーヴァントに[r]冬木の問題を突きつけられるとはね。
+[k]
+
+[charaFace C 0]
+
+＠Dr.ロマン
+冬木の再調査も今後の課題だが、[r]今は次の特異点の調査が優先される。
+[k]
+
+[charaFace C 5]
+
+＠Dr.ロマン
+次はいよいよ第七特異点、神代のウルクだからね。[r]スタッフ一同、一丸になって精査しないと間に合わ……
+[k]
+
+[charaFace C 0]
+
+＠Dr.ロマン
+おや。何か考え事かな、[%1]君。[r]ボクに分かる事なら相談に乗るよ？
+[k]
+
+？1：……ヴラド公の戦う理由が分からなくて……
+？2：以前、こんな話を聞いて……
+
+？！
+
+＠Dr.ロマン
+……ふむ。サーヴァントの見る夢、ときたか。
+[k]
+
+＠Dr.ロマン
+それは英霊になってから得た、[r]魂に刻まれた戦闘記録かもしれないね。
+[k]
+
+＠Dr.ロマン
+でも、その話は悲しい話じゃないと思うよ？[r]“再び地獄の業火に焼かれても良い”[line 3]
+[k]
+
+[charaFace C 8]
+
+＠Dr.ロマン
+それは『もう一度苦しむ』という意味じゃない。[r]『もう一度、光を探してもよい』という意味だろう。
+[k]
+
+＠Dr.ロマン
+たとえ相手から命を奪わなければ死んでしまうとしても、[r]その女性は奪う道を選ばなかった。
+[k]
+
+[charaFace C 0]
+
+＠Dr.ロマン
+人間としての理性とか尊厳とか、[r]そんな大きなもののためじゃない。
+[k]
+
+[charaFace C 1]
+
+＠Dr.ロマン
+単純に、[#己の為に隣人の人生を侵さない]。
+[k]
+
+＠Dr.ロマン
+そういう人間の当たり前の善性を、魂の在り方を、[r]彼は信じたんだよ。今も昔もね。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[soundStopAll]
+[end]
+
+

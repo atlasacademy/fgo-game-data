@@ -1,0 +1,261 @@
+
+＄91-30-30-01-3-1
+
+[soundStopAll]
+
+
+[charaSet A 1001000 1 エフェクト用1]
+[charaSet B 3030000 1 パールヴァティー]
+[charaSet C 4011000 1 ブーディカ]
+[charaSet D 2033000 1 アシュヴァッターマン]
+[charaSet E 1001000 1 エフェクト用2]
+
+[scene 28400]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut A 1]
+[charaEffect A bit_talk_lightning_02t]
+
+[fowardEffect bit_bolg_03y]
+[se bac46]
+[wt 0.7]
+[effect bit_bolg_02y]
+[se bac46]
+[wt 0.4]
+[effect bit_bolg_01y]
+[se bac47]
+[wt 0.7]
+
+[effectDestroy]
+[fowardEffectDestroy]
+
+[charaPut A 1200,1200]
+[charaEffectStop A bit_talk_lightning_02t]
+
+[se ad671]
+[wt 0.2]
+[charaScale D 1.1]
+
+[charaFace D 4]
+[charaFadein D 0.2 1]
+
+[charaMoveScale D 1.0 0.3]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_3 1.5]
+
+
+＠アシュヴァッターマン
+ぐっ……そ、その槍、シヴァ様の……！
+[k]
+
+[messageOff]
+[charaMove D 0,-5 0.3]
+[se ad54]
+[seVolume ad54 0 0.5]
+[seStop ad54 0.5]
+[wt 0.5]
+
+[charaShake D 0.05 2 1 0.5]
+[charaMove D 1 0.5]
+[wt 0.8]
+[charaFace D 4]
+[charaMove D 0,-25 0.3]
+[charaFadeout D 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠パールヴァティー
+模擬戦も鍛錬もけっこうなことです。
+[k]
+
+＠パールヴァティー
+けれど興奮のあまり歯止めを失ってしまってはいけません。[r]節度を持って、ルールを守ってやりましょう。
+[k]
+
+＠パールヴァティー
+あと[line 3]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[wt 1.1]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠パールヴァティー
+そう、何よりも、人の厚意を無下にしてしまうのは[r]ダメですよ。たとえ悪気はなかったとしても、です。
+[k]
+
+[charaFace B 1]
+
+＠パールヴァティー
+そんな事をしてしまったときはですね、心から謝って、[r]改めてその厚意を笑顔で受け取るように。
+[k]
+
+＠パールヴァティー
+もちろん、お礼の言葉も忘れてはいけません。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaFace D 4]
+[charaFadein D 0.1 -246,-200]
+
+[charaFace C 1]
+[charaFadein C 0.1 256,0]
+[charaMove C 206,0 0.5]
+[se ad60]
+[seStop ad60 0.5]
+[wt 1.5]
+
+[charaMove C 146,0 0.5]
+[se ad60]
+[wt 0.6]
+
+[charaMove C 96,0 0.5]
+[wt 0.6]
+
+[charaMove C 46,0 0.5]
+[wt 0.6]
+[seStop ad60]
+[wt 0.4]
+
+[charaTalk on]
+
+＠アシュヴァッターマン
+ぐ……むぅ……？
+[k]
+
+[messageOff]
+[charaTalk off]
+
+
+[charaMove C -30,0 0.5]
+[se ad60]
+[seStop ad60 0.5]
+[wt 1.0]
+
+[charaMove D -246,-190 0.2]
+[charaShake D 0.05 3 3 0.2]
+[se ad7]
+[wt 1.0]
+
+[charaTalk on]
+
+
+＠ブーディカ
+はい、お待ちどお。
+[k]
+
+[messageOff]
+[charaTalk off]
+[bgm BGM_EVENT_7 0.1]
+
+[charaShake D 0.05 3 3 0]
+[se ad217]
+[seVolume ad217 0 0.4]
+[se adm47]
+[wt 1.0]
+
+[seStop ad217 2.0]
+[seStop adm47 2.0]
+[charaTalk on]
+
+？1：アツアツのシチューを……！
+？2：強制的に流し込んで……！？
+？！
+
+[charaFace D 3]
+
+＠アシュヴァッターマン
+グッ……がッ……ごほァッ……！
+[k]
+
+[messageOff]
+
+[se ad217]
+[seStop ad217 0.8]
+[seVolume ad217 0 1.0]
+[charaMoveReturn D -246,-200 0.5]
+[wt 1.0]
+[charaShakeStop D]
+
+[charaFace D 7]
+
+
+＠アシュヴァッターマン
+……なんてこった。[r]たまらなくウメェ、じゃ、ねぇか。
+[k]
+
+＠アシュヴァッターマン
+ゲフッ[line 3]ごっそさん、だぜ。[r]ありがと、よ…………。
+[k]
+
+[messageOff]
+[charaShake D 0.05 3 3 0.3]
+[wt 0.3]
+[charaMove D -306,-246 0.4]
+[charaFadeout D 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+[charaFace C 1]
+
+＠ブーディカ
+はい、おそまつさまでした。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 0.1]
+
+[charaMoveReturn B 0,-10 0.5]
+[wait charaMove B]
+[charaMoveReturn B 0,-10 0.5]
+[wait charaMove B]
+[wt 1.0]
+
+？1：母は……強し……！
+？！
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[soundStopAll]
+[end]

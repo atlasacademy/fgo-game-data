@@ -1,0 +1,267 @@
+
+＄94-01-52-55-1-0
+
+
+
+[soundStopAll]
+
+[bgm BGM_EVENT_65 0.1]
+
+
+
+[messageOff]
+[effectPause bit_talk_parasolwipe]
+[wait effectStart bit_talk_parasolwipe]
+
+
+[branch _PlayEffect_1st PM4 1]
+
+
+[label _PlayEffect_etc]
+
+[tapSkip _from_TapSkip_etc]
+
+[scene 10001]
+
+[fadein white 1.0]
+[wait fade]
+
+[effectPause bit_talk_goal1_6]
+[wait effectStart bit_talk_goal1_6]
+
+[effectStart bit_talk_parasolwipe]
+[wt 1.0]
+
+[effectStart bit_talk_goal1_6]
+[wait effect bit_talk_goal1_6]
+[label _from_TapSkip_etc]
+
+[effectDestroy bit_talk_goal1_6]
+[effectDestroy bit_talk_parasolwipe]
+[fadein black 0]
+[wait fade]
+
+[branch _PlayEffect_End]
+
+
+[label _PlayEffect_1st]
+
+[tapSkip _from_TapSkip_1st]
+
+[effectPause bit_talk_winner1_6]
+[wait effectStart bit_talk_winner1_6]
+
+[scene 10001]
+
+[fadein white 1.0]
+[wait fade]
+
+[effectStart bit_talk_winner1_6]
+
+[wt 4.9]
+[voice 402600_0_M820]
+
+[wt 1.0]
+[voice 402600_0_M821]
+
+[wt 5.0]
+
+[effectStart bit_talk_parasolwipe]
+[scene 10001]
+[wt 1.0]
+[scene 44300]
+[wait effect bit_talk_parasolwipe]
+
+[label _from_TapSkip_1st]
+
+[voiceStop]
+[scene 44300]
+[effectDestroy bit_talk_winner1_6]
+[effectDestroy bit_talk_parasolwipe]
+[fadein black 0]
+[wait fade]
+
+
+[label _PlayEffect_End]
+
+[bgmStop BGM_EVENT_65 0.3]
+[wt 0.4]
+
+[branch _PlayVoice_Start PM4 1]
+
+[branch _PlayVoice_End]
+
+
+
+
+[label _PlayVoice_Start]
+
+[charaSet A 5030001 1 語り部のキャスター]
+[charaSet B 6028001 1 ニトクリス]
+
+[flagRandom _PlayVoiceNo 1 3]
+
+
+[branch _PlayVoice_3rd _PlayVoiceNo 3]
+[branch _PlayVoice_2nd _PlayVoiceNo 2]
+[branch _PlayVoice_1st _PlayVoiceNo 1]
+
+
+
+[label _PlayVoice_1st]
+
+[bgm BGM_EVENT_64 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFace A 0]
+[charaDepth B 1]
+[charaDepth A 9]
+[charaFadein B 0.4 2]
+[charaFadein A 0.4 0]
+[wt 0.7]
+
+[charaFace B 9]
+＠ニトクリス
+[tVoice ChrVoice_9010005 0_M670]
+聞こえます、ファラオを讃える民の声が！　[wait tVoice]
+[k]
+[tVoice ChrVoice_9010005 0_M671]
+[charaFace B 1]
+勝って当然とはいえ、よい心がけです！[wait tVoice]
+[k]
+
+[charaFace A 3]
+＠語り部のキャスター
+[tVoice ChrVoice_9010005 0_M672]
+勝って当然の者が勝ち、なおかつそれを人々が喜ぶのならば。[wait tVoice]
+[k]
+[tVoice ChrVoice_9010005 0_M673]
+ええ[line 2]それは『王道の物語』ということなのでしょうね……。[twt 0.8][charaFace A 7][twt 2.6][charaFace A 0][wait tVoice]
+[k]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_2nd]
+
+[bgm BGM_EVENT_64 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFace A 0]
+[charaDepth B 1]
+[charaDepth A 9]
+[charaFadein B 0.4 2]
+[charaFadein A 0.4 0]
+[wt 0.7]
+
+[charaFace B 2]
+＠ニトクリス
+[tVoice ChrVoice_9010005 0_M680]
+それみたコトですか！　[wait tVoice]
+[k]
+[tVoice ChrVoice_9010005 0_M681]
+[charaFace B 9]
+ファラオの伝説に、新たなる栄光が加わったのです！　[wait tVoice]
+[k]
+
+[charaFace A 7]
+＠語り部のキャスター
+[tVoice ChrVoice_9010005 0_M682]
+願わくば、それが幸福な大団円へと繋がっていますように……。[wait tVoice]
+[k]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_3rd]
+
+[bgm BGM_EVENT_64 0.1]
+
+[charaTalk A]
+[charaFace B 0]
+[charaFace A 0]
+[charaDepth B 1]
+[charaDepth A 9]
+[charaFadein B 0.4 2]
+[charaFadein A 0.4 0]
+[wt 0.7]
+
+[charaFace A 0]
+＠語り部のキャスター
+[tVoice ChrVoice_9010005 0_M690]
+やはりレースの極意は『安全第一』です。[wait tVoice]
+[k]
+
+[charaFace B 8]
+＠ニトクリス
+[tVoice ChrVoice_9010005 0_M691]
+実際に勝ってしまったのですから、無下に否定もできませんね……[wait tVoice]
+[k]
+[tVoice ChrVoice_9010005 0_M692]
+[charaFace B 7]
+場面によるとは思うのですが。[wait tVoice]
+[k]
+
+[charaFace A 2]
+＠語り部のキャスター
+[tVoice ChrVoice_9010005 0_M693]
+いいえ、いつも全力です。[wait tVoice]
+[k]
+[tVoice ChrVoice_9010005 0_M694]
+[charaFace A 7]
+マックスで、フルパワーで、安全第一でなくてはいけません。[wait tVoice]
+[k]
+
+[charaFace A 3]
+＠語り部のキャスター
+[tVoice ChrVoice_9010005 0_M695]
+安全バンザイ。安全最高。[wait tVoice]
+[k]
+
+[charaFace B 7]
+＠ニトクリス
+[tVoice ChrVoice_9010005 0_M696]
+はぁ……とりあえず、今は勝利したことを喜んでおきましょう！[twt 1.7][charaFace B 9][wait tVoice]
+[k]
+
+
+
+[label _PlayVoice_End]
+
+
+[messageOff]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_64 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

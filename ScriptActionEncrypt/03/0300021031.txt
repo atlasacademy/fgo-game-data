@@ -1,0 +1,401 @@
+
+＄03-00-02-10-3-1
+[soundStopAll]
+
+[charaSet A 8001400 1 マシュ]
+[charaSet B 98002000 1 フォウ]
+[charaSet C 2031001 1 ナポレオン]
+[charaSet D 1098154000 1 ？？？]
+[charaSet E 1098154000 1 ？？？]
+[charaFilter E silhouette 00000080]
+
+[scene 61900]
+
+[bgm BGM_EVENT_80 0.1]
+[wt 0.2]
+
+[fadein black 0.8]
+[wait fade]
+
+[cueSe Battle bac428]
+[wt 0.8]
+
+[se ad85]
+[fowardEffect bit_talk_42 0,0 H]
+[wt 0.8]
+[fowardEffectStop bit_talk_42]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+[se ad628]
+[charaShake A 0.05 3 3 0.5]
+[fowardEffect bit_talk_14]
+[wt 1.5]
+[seStop ad628 1.0]
+[wt 0.3]
+
+
+[charaMove A -30,0 1.0]
+[charaFadeout A 0.4]
+
+[se ad73]
+[effect bit_talk_42]
+[wt 0.6]
+[effectStop bit_talk_42]
+
+[wt 0.5]
+
+[se ad687]
+[se bac11]
+[effect bit_talk_14]
+[shake 0.05 3 2 0.6]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠ナポレオン
+いい盾捌きだ！[r]巨人さえ足下を揺るがせる！
+[k]
+
+[charaFace C 2]
+
+＠ナポレオン
+では、オレから駄目押しに一発お見舞いと行こう！[r][line 3]ぜええええええええりゃあッ！
+[k]
+
+[messageOff]
+[se ad226]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+
+[charaFadeout C 0.1]
+
+[wt 0.5]
+[seStop ad226 0.5]
+
+[effect bit_talk_explosion]
+[se ad609]
+[seVolume ad609 0 0.7]
+[wt 1.0]
+
+[cueSe Battle bac234]
+[shake 0.05 1 4 1.0]
+[effect bit_talk_impactlanding]
+[wt 3.0]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+[line 3]対象沈黙！[bgmStop BGM_EVENT_80 1.0][r]ムスペル巨人種、出現した一群はこれで最後です。
+[k]
+
+＠マシュ
+ひとまず戦闘終了……でしょうか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth C 10]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+
+[charaFace A 0]
+[charaFadein A 0.1 2]
+
+＠ナポレオン
+おっと、残念だがまだ早い。[bgm BGM_EVENT_81 0.1][r]まだまだ連中は来るぜ、[&少年少女:お嬢さん方]。
+[k]
+
+＠ナポレオン
+魔力の類は相変わらず感じ[#難:にく]かろうが、[r]大気に乗った独特の癖みたいなモノは分かるか？
+[k]
+
+[charaFace A 6]
+
+＠マシュ
+あ、うっすらと……[r]硫化水素の……
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ナポレオン
+火山の香り。[r]いわゆる硫黄の匂いって奴だ！
+[k]
+
+＠ナポレオン
+炎を見ろ。[r]館を見ろ。
+[k]
+
+＠ナポレオン
+少しでも、勢いが弱まったように見えるか？[r]その向こうで館が扉を開いたか？
+[k]
+
+？1：炎、弱まっていない　
+？2：扉も開いてない！
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+結界に綻びはないように感じます！[r]何かしらの魔術的干渉が必要、なんでしょうか。
+[k]
+
+[charaFace A 4]
+
+＠マシュ
+ですが……[r]完成済みの結界を解除するとなると……
+[k]
+
+＠マシュ
+わたしや先輩には難しいです。[r]相応の、きわめて高度な魔術を操れないことには……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠ナポレオン
+キャスタークラスの英霊が必須だな！[r]だが、戦闘用の即時召喚じゃそこまでは望めまい。
+[k]
+
+[charaFace C 2]
+
+＠ナポレオン
+それに、だ！[r]こうして番犬代わりも健在だ！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[bgmStop BGM_EVENT_81 1.0]
+
+[se ad439]
+[seVolume ad439 0 0.7]
+
+[wt 1.0]
+
+[se ad250]
+[wt 0.5]
+
+[shake 0.05 1 1 0.6]
+[se ad57]
+
+[seStop ad439 1.0]
+
+[wt 1.0]
+[seStop ad57 0.1]
+
+[cueSe Battle bac428]
+[shake 0.05 1 1 1.0]
+
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+来ました！[bgm BGM_EVENT_80 0.1][r]炎の中から更なるムスペル巨人種が出現！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[shake 0.05 1 3 0.7]
+[se ad57]
+[wt 0.9]
+[seStop ad57 0.1]
+
+[shake 0.05 1 3 0.7]
+[se ad57]
+[wt 0.7]
+
+[seStop ad57 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ナポレオン
+オーララ！　今回は数が多い！[r]残りの番犬総出で来たか！
+[k]
+
+＠ナポレオン
+戦力の逐次投入は下策！[r]やるなら一気に掛かってきた方がいいぞ、火の巨人！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 2]
+
+[charaFace C 2]
+[charaFadein C 0.1 0]
+
+＠フォウ
+フォフォウ！！[r]キャウ！？
+[k]
+
+[charaFace C 3]
+
+＠ナポレオン
+ははは！　戦闘中だ、じゃれるなじゃれるな！[r]片付けてから思う存分撫でてやるから、離れてろ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad246]
+
+[wt 1.0]
+[seStop ad246 1.0]
+
+？1：この音[line 3]
+？2：何か、近付いてきている？
+
+？！
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ナポレオン
+上空！　でかいぞ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 2]
+
+[charaFace B 0]
+[charaFadein B 0.1 0]
+
+＠マシュ
+先輩、わたしの後ろに！[r]伏せてください！
+[k]
+
+＠フォウ
+フォ……フォウ！！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad246]
+[fowardEffect bit_talk_43h]
+
+[wt 1.0]
+[seStop ad246 1.0]
+
+[wt 1.0]
+[fowardEffectStop bit_talk_43h]
+
+[se ad322]
+
+
+[shake 0.05 2 3 2.5]
+
+[effect bit_talk_impactlanding 0,-30]
+
+[wt 1.5]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.7 1]
+[wt 1.5]
+
+＠マシュ
+先輩……あれは……
+[k]
+
+＠マシュ
+何、でしょうか……？[r]分かりません。ああいった形状で飛来する、大型の……
+[k]
+
+＠マシュ
+………………生物？
+[k]
+
+[messageOff]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.7 1]
+[wt 1.0]
+
+[charaFadeout E 0.1]
+
+[wt 0.5]
+
+[se ad201]
+[wt 0.4]
+[seStop ad201 0.3]
+
+[wt 0.5]
+
+＠ナポレオン
+……！
+[k]
+
+[messageOff]
+[se ad203]
+
+
+[charaTalk off]
+
+[charaMoveScale D 1.2 0.5]
+[charaMove D 0,60 0.5]
+
+[fadeout white 1.0]
+[wait fade]
+
+[scene 10001]
+
+[charaFadeout D 0.1]
+
+[wt 1.0]
+
+[fadein white 0.1]
+[wait fade]
+
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_80 1.0]
+[wait fade]
+[soundStopAll]
+[end]

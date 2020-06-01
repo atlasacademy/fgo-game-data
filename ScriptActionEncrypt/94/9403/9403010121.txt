@@ -1,0 +1,625 @@
+
+
+＄94-03-01-01-2-1
+
+
+[soundStopAll]
+
+[charaSet A 3034001 1 茨木童子]
+[charaSet B 6029001 1 アサシン・パライソ]
+[charaSet C 99502600 1 マシュ]
+[charaSet D 98111500 1 ダ・ヴィンチ]
+[charaSet E 98075000 1 鬼の従業員]
+[charaSet F 98075000 1 鬼の従業員2]
+[charaSet G 98115000 1 演出用]
+
+[charaSet H 98115000 1 通信用]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 64600]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.3]
+
+[se adm14]
+[effect bit_talk_v_slash02]
+[wt 0.1]
+
+[se adm15]
+[effect bit_talk_h_slash02]
+[wt 0.2]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H -200,-50]
+[charaPut G 200,-50]
+
+[se bac279]
+[effect bit_talk_29]
+[wt 0.3]
+
+[charaEffect H bit_talk_32]
+[wt 0.2]
+[charaEffect G bit_talk_32]
+[wt 1.5]
+[charaPut H 1200,1200]
+[charaPut G 1200,1200]
+[charaEffectStop H bit_talk_32]
+[charaEffectStop G bit_talk_32]
+[wt 0.5]
+
+[cueSe Battle bac234]
+[shake 0.05 0 5 0.5]
+[effect bit_talk_impactlanding]
+[wt 2.5]
+
+[charaSet G 98075000 1 鬼の従業員3]
+
+[charaDepth F 1]
+[charaDepth E 2]
+[charaDepth G 3]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+きゃはははははははははははは！[r]こんなものか、他愛ない！
+[k]
+
+＠茨木童子
+鬼であるなら飛んだ手足なぞ繋いで立ち上がり、[r]仲間の骸を喰ろうて瞳を輝かせ、火を吹き、嵐と化せ！
+[k]
+
+
+＠茨木童子
+[line 3][#吾:われ]であれば[#そうする]ぞ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：[servantName 602900:アサシン・パライソ:望月千代女]
+流石は音に聞こえし大江山の鬼。[r]しかし。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+[wt 0.3]
+
+＠マシュ
+敵性反応、更に増援が来ています！[r]包囲網が完成してしまう前になんとか突破を、先輩！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk off]
+
+[se ade210]
+[charaFace E 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein E 0.1 1]
+[charaFadein F 0.1 2]
+[charaFadein G 0.1 0]
+[wt 0.4]
+[seStop ade210]
+[wt 0.5]
+
+？1：とはいえ数が多い……！
+？2：わかってるんだけどね！
+
+？！
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+ならばすべて打ち倒し、引き裂いて、喰ろうてくれよう！
+[k]
+
+[charaFace A 1]
+
+＠茨木童子
+“鬼であれば鬼のように振る舞いなさい[line 3]”[r]母上の教え[#諭:さと]してくれた通りになァ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠B：[servantName 602900:アサシン・パライソ:望月千代女]
+とはいえ多勢に無勢の言葉もあります。[r]童子殿！
+[k]
+
+＠B：[servantName 602900:アサシン・パライソ:望月千代女]
+我らは等しくサーヴァントなれば、[r]おそらく童子殿もかつてとは異なることもありましょう。
+[k]
+
+＠B：[servantName 602900:アサシン・パライソ:望月千代女]
+お館様よりの魔力なくては戦い続けられませぬ！[r]そして、それは無尽蔵の金山ではなく！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+…………ふうむ。[r]ま、[#汝:なれ]の言の葉にも一理はあろうな。
+[k]
+
+？1：理解が早くて助かるなり
+？2：永遠に戦うのはちょっと無理でござる
+
+？！
+
+＠茨木童子
+はあ。まったく情けない。[r]マスターを名乗るのであれば魔力ぐらい保たせてみせよ。
+[k]
+
+＠茨木童子
+……いや、ないものねだりをしても始まらぬか。
+[k]
+
+＠茨木童子
+これなる包囲の穴を突いて脱するのが得策だが……[r]確かに、数は多い。数だけは。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ade210]
+[charaTalk off]
+[charaFace E 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein E 0.1 1]
+[charaFadein F 0.1 2]
+[charaFadein G 0.1 0]
+[wt 0.3]
+[seStop ade210]
+[wt 1.2]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+ほら多い！[r]多いのは金平糖だけで充分であろう！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠B：[servantName 602900:アサシン・パライソ:望月千代女]
+…………いざともなれば。[r]我が身と引き替えにしても、お館様の身柄のみは。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+＠マシュ
+[servantName 602900:パライソ:千代女]
+さん！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,-90]
+
+＠ダ・ヴィンチ
+[line 3]ちょっと待った！　鬼たちとは別の魔力反応だ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠B：[servantName 602900:アサシン・パライソ:望月千代女]
+！！
+[k]
+
+＠B：[servantName 602900:アサシン・パライソ:望月千代女]
+これは！[r]サーヴァントの気配にて！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+右にもおらぬ、左でもない、ならば[line 3]
+[k]
+
+[charaFace A 2]
+
+＠茨木童子
+上か！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1]
+[bgmStop BGM_EVENT_3 0.7]
+[wait wipe]
+
+[scene 28300]
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[charaSet E 1098157600 1 謎の護法少女]
+[charaSet F 5040000 1 謎の護法少女（シルエット）]
+[charaFilter F silhouette 00000080]
+[charaSet D 1098157700 1 謎の小動物]
+[charaSet G 98115000 1 演出用]
+
+[wipein rectangleStripDownToUp 0.5 1]
+[wait wipe]
+
+＠謎の護法少女
+………………お約束、いうんがあるんやろ？
+[k]
+
+＠謎の護法少女
+まあ、言うても電灯いうんに立っとるだけなんやけど、[r]こういうんは形から入らなあかんやろ。
+[k]
+
+＠謎の護法少女
+うちはどうでもええんよ？
+[k]
+
+＠謎の護法少女
+せやけどポチがあれこれ[#五月蠅:う　る　さ]いさかい、[r]まあ、たまにはそういうのんも悪ない思うてなぁ。
+[k]
+
+＠謎の小動物
+ポチじゃない。ハクだ。[r]いや、名前などどうでもいい。
+[k]
+
+＠謎の護法少女
+せやろ？[r]うちも名前なんてどうでもええんやけど……
+[k]
+
+＠謎の護法少女
+…………とりあえず。
+[k]
+
+＠謎の護法少女
+[line 3]とうっ！
+[k]
+
+[messageOff]
+[se ad7]
+
+[wipeout rectangleStripDownToUp 0.3 1]
+[wait wipe]
+
+[scene 64600]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.3 1]
+[wait wipe]
+
+[charaDepth E 10]
+
+[charaTalk off]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaFace F 0]
+[charaFadein F 0.2 0,100]
+[charaMove F 0,-10 0.2]
+[wt 0.2]
+[charaMove F 1 0.4]
+
+
+[wt 0.7]
+
+[charaTalk depthOff]
+[charaDepth E 0]
+[charaDepth D 1]
+
+[charaFace E 0]
+[charaFace D 0]
+[charaFadein E 0.7 1]
+[charaFadein D 0.7 0,0]
+[wt 1.0]
+[charaFadeout F 0.5]
+[charaTalk on]
+[bgm BGM_HALLOWEEN_2 0.1]
+
+＠謎の護法少女
+[line 3]しゅたっ、と。
+[k]
+
+＠謎の護法少女
+とりあえず、大ピンチみたいやねえ。[r]ま、なんやろ。うちはどうでもええといえばええんやけど、
+[k]
+
+＠謎の護法少女
+せっかくこうして霊基も[#違:ちご]てるんやし、[r]見得のひとつも切っておくべきなんやろなぁ。
+[k]
+
+？1：空から……
+？2：見覚えのあるっぽい謎の鬼が降りてきた！
+
+？！
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠B：[servantName 602900:アサシン・パライソ:望月千代女]
+一体、何者！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+な[line 3]
+[k]
+
+＠茨木童子
+なな、ななななななんと美しき姿か……[r]かくも美しき鬼、酒呑の他にはとんと見たことがない！
+[k]
+
+＠茨木童子
+ほぅ……まるで天上の華、天の川のきらめき……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+え？　お二人とも？
+[k]
+
+＠マシュ
+あの方はどうみてもその……[r]カルデアにもその霊基が登録されている、酒呑[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFace D 0]
+[charaFadein E 0.1 1]
+[charaFadein D 0.1 0,0]
+
+＠謎の護法少女
+ふふ。なんやろねえ？
+[k]
+
+[charaFace E 6]
+
+＠謎の護法少女
+いけずはやめてえな、マシュマロはん。[r]うちは通りすがりの護法少女。あんじょうよろしゅう。
+[k]
+
+＠謎の小動物
+オイラはハクだ。[r]いや、名前などどうでもいい。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+……護法少女……？[r]ええと、ハクさんですか？　はじめまして……
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[se ad57]
+[shake 0.05 0 3 0.3]
+[wt 1.5]
+[shake 0.05 0 3 0.3]
+[wt 1.0]
+[seStop ad57 0.5]
+[se ad17]
+[wt 2.0]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFace D 0]
+[charaFadein E 0.1 1]
+[charaFadein D 0.1 0,0]
+
+＠謎の護法少女
+まあ、まあ、ようけ[#咆:ほ]えて。[r]力が有り余ってはるんやねえ、えらいえらい。
+[k]
+
+＠謎の護法少女
+ほな[line 3][r]うちも、[#一撫:ひ と な]でしたろか？
+[k]
+
+[messageOff]
+[se ad7]
+[charaTalk off]
+[charaMoveScale E 1.1 0.2]
+[charaMoveScale D 1.1 0.2]
+[charaMove E  0,20]
+[charaMove D  0,20]
+[wt 0.2]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se bac150]
+[effect bit_talk_14]
+[wt 0.5]
+
+[cueSe Battle bac234]
+[shake 0.05 0 5 0.5]
+[effect bit_talk_impactlanding]
+[wt 2.5]
+
+[charaTalk on]
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+…………大型の鬼、い、一撃で沈黙しました！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaScale E 1.0]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFace D 1]
+[charaFadein E 0.1 1]
+[charaFadein D 0.1 0,0]
+
+＠謎の護法少女
+ほな、改めて♡
+[k]
+
+[messageOff]
+[charaPut G 1]
+[charaDepth G 1]
+[charaFace E 0]
+[charaFace D 0]
+[scene 10000 1.0]
+[wt 1.0]
+[charaEffect G bit_talk_sakura01]
+[charaFace E 1]
+[charaFace D 1]
+＠謎の護法少女
+[line 3]天が許すはええんとちゃう？
+[k]
+
+＠謎の護法少女
+[line 3]地が許すのもまあ、そういうもんなんやろなぁ？[r][line 3]人が許すのなんてどうでもええわぁ。
+[k]
+
+＠謎の護法少女
+せやけど、ねえ。[r]鬼が許すかは鬼次第。
+[k]
+
+[charaFace D 0]
+
+＠D：謎の小動物
+やりたいようにやればいい。[r]オイラは見守るだけさ。
+[k]
+
+[charaFace E 0]
+
+＠謎の護法少女
+[line 3]うちは[#護法:ご ほ う]。護法がうち[line 3]
+[k]
+
+[charaTalk off]
+[se ade211]
+[charaPut G 2000,2000]
+[charaEffectStop G bit_talk_sakura01]
+[scene 27600 0.5]
+[charaFace E 1]
+[charaFace D 1]
+[cameraMove 0.2 0,-10 1.1]
+[effect bit_talk_41]
+
+＠謎の護法少女
+[f large]護法少女・推参や！
+[k]
+
+[messageOff]
+[se ade217]
+[effect bit_talk_magic_girl_light]
+[wt 3.0]
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_HALLOWEEN_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

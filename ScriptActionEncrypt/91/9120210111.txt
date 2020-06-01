@@ -1,0 +1,361 @@
+
+
+
+＄91-20-21-01-1-1
+
+[soundStopAll]
+
+[charaSet A 2021002 1 巴御前]
+[charaSet B 99502600 1 マシュ]
+[charaSet C 98006200 1 エネミー]
+
+[charaSet E 98006100 1 ダミーエフェクト１]
+[charaSet F 98006100 1 ダミーエフェクト２]
+[charaSet G 98006100 1 ダミーエフェクト３]
+[charaSet H 98006100 1 ダミーエフェクト４]
+[charaSet I 98006100 1 ダミーエフェクト５]
+[charaSet J 98006100 1 ダミーエフェクト６]
+
+[charaScale A 1.05]
+[charaScale F 0.55]
+[charaScale G 0.45]
+[charaScale H 0.55]
+[charaScale I 0.65]
+
+[bgm BGM_EVENT_3 0.1]
+
+
+[scene 20805]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad25]
+[charaShake C 0.04 3 2 0.8]
+[wt 1.1]
+
+[se bac1]
+[charaFadeout C 0.4]
+[charaMove C 0,10 0.3]
+[charaMoveScale C 1.2 0.3]
+[charaEffect E bit_talk_41]
+[wt 0.5]
+[charaMoveScale C 1.05 0]
+[charaPut E 2000,2000]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.4]
+
+[charaMoveScale A 1.0 0.2]
+[charaMove A 160,20 0.2]
+[wt 0.15]
+
+[se bac4]
+[seVolume bac4 0 0.3]
+[charaEffect F bit_talk_claw 0,-200]
+[charaMove A 300,-15 0.2]
+[wt 0.15]
+
+[se ad671]
+[seVolume ad671 0 0.7]
+[charaMove A 330,-15 0.2]
+[wt 0.7]
+[seStop ad671 0.3]
+
+[charaFace A 2]
+[charaMove A 0,0 0.3]
+[se bac145]
+[seVolume bac145 0 0.4]
+[charaEffect G bit_talk_13 500,-260]
+[wt 0.14]
+
+[se bac145]
+[seVolume bac145 0 0.4]
+[charaEffect H bit_talk_13 -20,-140]
+[wt 0.16]
+
+[se bac145]
+[seVolume bac145 0 0.6]
+[charaEffect I bit_talk_13 -410,-260]
+[charaMove A -300,-15 0.3]
+[wt 0.22]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.2]
+
+[se bac16]
+[fowardEffect bit_talk_14 -170,0]
+[charaMoveScale C 1.03 0.1]
+[charaShake C 0.05 2 3 0.2]
+[wt 0.17]
+
+[se bac16]
+[fowardEffect bit_talk_14 120,-190]
+[charaMoveScale C 1.02 0.1]
+[charaShake C 0.05 2 3 0.2]
+[wt 0.2]
+
+[se bac16]
+[fowardEffect bit_talk_14 150,90]
+[charaMoveScale C 1.0 0.1]
+[charaShake C 0.05 2 3 0.2]
+[wt 0.5]
+
+[se ad26]
+[seVolume ad26 0 0.6]
+[charaMove C 0,-15 0.3]
+[charaShake C 0.05 2 3 0.3]
+[wt 0.9]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠巴御前
+[line 3]今！
+[k]
+
+[messageOff]
+[se bac1]
+[charaPut E 0,0]
+[charaFadeout A 0.4]
+[charaMove A 0,10 0.2]
+[charaMoveScale A 1.2 0.2]
+[wt 0.4]
+[charaMoveScale A 1.0 0]
+[charaPut E 2000,2000]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.3]
+
+[se bac511]
+[effect bit_talk_gram_slash_01]
+[charaShake C 0.04 3 3 0.3]
+[wt 1.0]
+
+[se ad26]
+[charaShake C 0.04 3 3 0.7]
+[wt 1.0]
+
+[messageOff]
+[se ad42]
+[charaSpecialEffect C enemyErasure 0,0 1.5]
+[wt 0.7]
+
+[wait charaSpecialEffect C]
+[bgmStop BGM_EVENT_3 1.2]
+[charaFadeout C 0.1]
+[wt 1.2]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠巴御前
+……。[r]……。
+[k]
+
+[charaFace A 0]
+
+＠巴御前
+……敵影、見当たりませぬ。[r]数の多い相手でしたが、ここまででしょうか。
+[k]
+
+？1：そうみたいだね
+？2：お疲れさま、巴さん
+
+？！
+
+[charaFace A 5]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠巴御前
+……いえ。マスター。[r]私の我が儘のせいで大変な目に遭わせてしまいました。
+[k]
+
+＠巴御前
+面目次第もございません。[wt 0.7][charaFace A 0][r]ですが、その。えと。
+[k]
+
+[messageOff]
+[wt 0.7]
+
+[charaFaceFade A 3 0.8]
+[charaShake A 0.04 2 0 0.8]
+[wt 1.2]
+
+＠巴御前
+巴は[line 3]なんだか[line 3]少しすっきりいたしました！
+[k]
+
+[charaFace A 0]
+
+＠巴御前
+身上を聞いていただき、感謝いたします。[r]我が新たなる主君。
+[k]
+
+＠巴御前
+私は……正しくは[#巴御前そのもの]ではございません。[r]あくまで人理の投げかける影法師。
+[k]
+
+＠巴御前
+肉体にしてもこのように、[r][#戦場:いくさば]を駆け抜けた女武者であった頃のもの。
+[k]
+
+＠巴御前
+巴としての生涯の深き思い出はあれど、[r]現在の我が使命は[&貴方:貴女]を守ること。
+[k]
+
+[charaFace A 1]
+＠巴御前
+健やかにして穏やかな日々に、[r]きっと[&貴方:貴女]をお連れすることこそが何よりも大切！
+[k]
+
+＠巴御前
+本来、過去を振り返ることは[r]無意味なのかもしれませぬが……
+[k]
+
+[charaFace A 0]
+＠巴御前
+未熟な英霊めとお笑いください。[r]これより後は、[#斯様:かよう]な醜態を見せぬよう努めます！
+[k]
+
+？1：ううん、話してもらえてよかったよ
+
+[charaFace A 1]
+
+＠巴御前
+…………ありがとうございます。マスター。
+[k]
+
+
+？2：……さっきの“なぜならば”の続きは？
+
+[charaFace A 3]
+
+＠巴御前
+は、はい。[r]ええと、なぜならば[line 3]
+[k]
+
+[charaFace A 0]
+
+＠巴御前
+……。[r]……。
+[k]
+
+＠巴御前
+………………なぜならば、[&貴方:貴女]もまた。
+[k]
+
+＠巴御前
+かけがえのない、尊き何かのために戦う御方。[r]それは、少なくともこの巴にとっては……
+[k]
+
+[charaFace A 1]
+＠巴御前
+義仲さまによく似て映るのです。[r][&貴方:貴女]もまた、胸に[#旭:あさひ]の輝きを秘めておられる、と。
+[k]
+
+[branch sel01c]
+
+
+？！
+
+[branch sel01b]
+
+[label sel01c]
+
+？1：太陽の輝きか……
+
+[charaFace A 1]
+
+＠巴御前
+はい！
+[k]
+
+？2：さすがに買い被りすぎかもしれないよ
+
+[charaFace A 1]
+
+＠巴御前
+いいえ、そんなことはありません！
+[k]
+
+
+？！
+
+[label sel01b]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaEffect J bit_talk_10_MiddleLevel]
+[wt 0.2]
+
+[se ad13]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+＠マシュ
+あっ、繋がった！
+[k]
+
+[charaFace B 7]
+＠マシュ
+ご無事で何よりです先輩、巴さん！[r]管制室、ウイルススキャンは中止できました！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠巴御前
+ああ、マシュ殿！
+[k]
+
+＠巴御前
+ええ、[%1]殿はこの通りご無事です！[r][#是:これ]より、共に戻りますゆえ……
+[k]
+
+[charaFace A 1]
+
+＠巴御前
+しばしお待ちくださいませね！
+[k]
+
+[messageOff]
+[wt 1.4]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

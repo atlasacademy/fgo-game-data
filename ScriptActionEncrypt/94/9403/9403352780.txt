@@ -1,0 +1,312 @@
+
+
+＄94-03-35-27-8-0
+[soundStopAll]
+
+
+[charaSet A 3014001 1 胤舜]
+[equipSet E 9806450 1 バレンタイン礼装]
+[charaSet F 5009000 1 エフェクト用ダミー１]
+[charaSet G 5009000 1 エフェクト用ダミー２]
+[charaSet H 5009000 1 エフェクト用ダミー３]
+
+[scene 37300]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1]
+
+
+[charaScale F 1.5]
+[charaScale G 1.5]
+[charaScale H 1.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+[charaPut H 356,0]
+
+＠胤舜
+[tVoice ValVoice_301400 0_V010]
+は[se ad171][charaPut G 0,100][charaRoll G 30 0,0][charaEffect G bit_talk_h_slash01]っ！　[twt 0.2][charaPut G 2400,2400]せ[tdelay 1 1.5 1][se ad171][charaEffect F bit_talk_h_slash01][delay -]いっ！　[tdelay 2 1.75 1][charaPut F 2400,2400][delay -]と[tdelay 3 2.5 1][se ad171][charaEffect H bit_talk_v_slash01][delay -]う！　[tdelay 4 2.75 1][charaPut H 2400,2400][delay -][wait tVoice]
+[k]
+
+[delayStop 1]
+[delayStop 2]
+[delayStop 3]
+[delayStop 4]
+
+
+？1：こんにちはー！
+？2：お疲れ様です！
+？！
+
+[bgmStop BGM_EVENT_3 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_7 0.1]
+
+[charaFace A 1]
+
+＠胤舜
+[tVoice ValVoice_301400 0_V020]
+おっと、どうしたマスター？[r]まだ飯の時間は先ではないか？[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠胤舜
+[tVoice ValVoice_301400 0_V030]
+それともちょうど昼寝時、[r]竹の葉香るこの場所で、[#午睡:ごすい]でも楽しみに来たか？[wait tVoice]
+[k]
+
+＠胤舜
+[tVoice ValVoice_301400 0_V040]
+それなら、拙僧も休むとしよう。[wait tVoice]
+[k]
+
+？1：ちょうどお菓子の時間なので
+？2：差し上げます
+？！
+
+[charaFace A 1]
+
+＠胤舜
+[tVoice ValVoice_301400 0_V050]
+菓子！　菓子か。[wait tVoice]
+[k]
+
+＠胤舜
+[tVoice ValVoice_301400 0_V060]
+ふーむ、拙僧は酒も煙草も[#嗜:たしな]まないが、[r]甘いものは良いな。[wait tVoice]
+[k]
+
+＠胤舜
+[tVoice ValVoice_301400 0_V070]
+では、遠慮なく受け取ろう！[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[charaFace A 0]
+
+＠胤舜
+[tVoice ValVoice_301400 0_V080]
+ほうほうほう。[r]なるほど、これがチョコレートか。[wait tVoice]
+[k]
+
+＠胤舜
+[tVoice ValVoice_301400 0_V090]
+では一口……。[wait tVoice]
+[k]
+
+[se ade13]
+[seVolume ade13 0 0.6]
+[wt 0.7]
+
+[charaFace A 2]
+
+＠胤舜
+[tVoice ValVoice_301400 0_V100]
+[f large]甘ッ！！[wait tVoice]
+[k]
+
+＠胤舜
+[tVoice ValVoice_301400 0_V110]
+ぬ、ぬぬぬぬぬ！[r]昨今の菓子とはこれほど甘いものか！[wait tVoice]
+[k]
+
+＠胤舜
+[tVoice ValVoice_301400 0_V120]
+果物の甘酸っぱさとはまた別の、[r]さながら野太刀の一撃よ！[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠胤舜
+[tVoice ValVoice_301400 0_V130]
+……うむ、しかしこれはこれで良い！[r]繊細良し、極太良し。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠胤舜
+[tVoice ValVoice_301400 0_V140]
+……しかしこうなると、礼をせねばなるまいな。[r]だが、有り体のお礼では面白くもなかろう。[wait tVoice]
+[k]
+
+＠胤舜
+[tVoice ValVoice_301400 0_V150]
+よし、[%1]の現状を鑑みて、[r]それに相応しい贈り物を届けよう！[wait tVoice]
+[k]
+
+＠胤舜
+[tVoice ValVoice_301400 0_V160]
+ひとまずマスターも帰還し、[r]しばし待たれよ！[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[se ad452]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[seStop ad452 1.5]
+[wait fade]
+
+[scene 10400]
+
+[wt 0.5]
+
+[se ade169]
+[seVolume ade169 0 0.6]
+[wt 1.0]
+[se ad8]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠胤舜
+[tVoice ValVoice_301400 0_V170]
+やあやあ、お待たせしたマスター！[r][#夕餉:ゆうげ]の時間には少し早いが、腹具合はいかがかな？[wait tVoice]
+[k]
+
+？1：そろそろ食堂へ行こうと……
+
+[charaFace A 1]
+
+＠胤舜
+[tVoice ValVoice_301400 0_V180]
+おお、では丁度良かった。[wait tVoice]
+[k]
+
+？2：最近チョコでお腹が膨れて……
+
+[charaFace A 1]
+
+＠胤舜
+[tVoice ValVoice_301400 0_V190]
+ははは、それなら拙僧の予測は[r]的中したというべきか。[wait tVoice]
+[k]
+
+？！
+
+＠胤舜
+[tVoice ValVoice_301400 0_V200]
+まあ、まずは御覧じろ、だ！[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[wt 0.2]
+
+[se bas2]
+[charaFace E 0]
+[charaFadein E 0.5 0,-70]
+[wt 2.0]
+
+？1：これは[line 3]
+？！
+
+[charaFadeout E 0.4]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠胤舜
+[tVoice ValVoice_301400 0_V210]
+そう。精進料理、というやつだ。[wait tVoice]
+[k]
+
+＠胤舜
+[tVoice ValVoice_301400 0_V220]
+チョコレートは刺激的だ、[r]胃にもたれるだろう。[wait tVoice]
+[k]
+
+＠胤舜
+[tVoice ValVoice_301400 0_V230]
+ならば胃に優しく、冬ともあって温まる[r]精進料理を中心に作ってみた。[wait tVoice]
+[k]
+
+？1：胤舜さんが！？
+？！
+
+＠胤舜
+[tVoice ValVoice_301400 0_V240]
+うむ。禅宗の[#典座:てんぞ]とまではいかないが、[r]美味い飯は心の栄養。[wait tVoice]
+[k]
+
+＠胤舜
+[tVoice ValVoice_301400 0_V250]
+生前は一通り、何でも作れるようにと[r]積極的に学んでいたのだ！[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠胤舜
+[tVoice ValVoice_301400 0_V260]
+……と、胸を張って言いたかったが。[r]いかんせん、久しぶりなので腕は錆びていてな。[wait tVoice]
+[k]
+
+＠胤舜
+[tVoice ValVoice_301400 0_V270]
+いやあ、槍ばかり振るっていたせいで、[r]料理の腕は全盛期に程遠い状態だった！[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠胤舜
+[tVoice ValVoice_301400 0_V280]
+ともかく、[r]それではマスターに馳走することもできぬ。[wait tVoice]
+[k]
+
+＠胤舜
+[tVoice ValVoice_301400 0_V290]
+そこで料理の得意なサーヴァントたちに教えを乞い、[r]微妙な味付けは手伝ってもらったのだ。[wait tVoice]
+[k]
+
+＠胤舜
+[tVoice ValVoice_301400 0_V300]
+お陰で、他のサーヴァントたちが先に味わうことに[r]なったが……これが間違いなく、一番美味いぞ。[wait tVoice]
+[k]
+
+？1：ありがとう……！
+？！
+
+＠胤舜
+[tVoice ValVoice_301400 0_V310]
+うむ、うむ！[r]それでは、手と手を合わせ[line 3][wait tVoice]
+[k]
+
+？1：いただきます！
+？！
+
+[messageOff]
+[wt 0.7]
+[charaFace A 1]
+
+[wt 2.0]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

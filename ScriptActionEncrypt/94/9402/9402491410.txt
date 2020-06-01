@@ -1,0 +1,642 @@
+
+＄94-02-49-14-1-0
+
+[soundStopAll]
+
+
+[charaSet A 10007001 1 沖田オルタ]
+[charaSet B 1027000 1 沖田さん]
+[charaSet C 2024000 1 ノッブ]
+[charaSet D 7026000 1 茶々]
+[charaSet E 98001000 1 マシュ]
+[charaSet F 98111500 1 ダ・ヴィンチちゃん]
+[charaSet G 98002000 1 エフェクト用ダミー]
+[charaSet H 98111500 1 通信用ノイズ]
+
+
+[scene 10400]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad119]
+[effect bit_talk_41]
+[wt 2.0]
+
+？1：ノッブが……！？
+？2：……死んでる！？
+
+？！
+
+[effectStop bit_talk_41]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[bgm BGM_EVENT_7 0.1 1.0]
+
+[messageOff]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.4 1]
+[wt 0.4]
+＠沖田オルタ
+マスター、食堂におでんを食べに行こう。
+[k]
+
+＠沖田オルタ
+……ん？[r]そいつがどうかしたのか？
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠沖田さん
+いやいや、今おでんの季節じゃないでしょ。[r]って、どうしたんですかノッブ！？
+[k]
+
+[charaFace B 4]
+＠沖田さん
+いや別に死んだなら死んだで、[r]特に惜しくもない戦国大名を亡くしました。
+[k]
+
+＠沖田さん
+とかのインタビューコメントぐらいは[r]してあげますけども。
+[k]
+
+
+[se ad7]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-1000]
+[charaMove C 1 0.1]
+[charaMove B 0 0.1]
+＠ノッブ
+って、まだ死んどらんわ、馬鹿者！
+[k]
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+そうか、死ななくてよかったな。[r]生きてゆけるのは素晴らしいことだ。
+[k]
+
+[charaFace A 6]
+＠沖田オルタ
+……で、マスター、食堂でおでんをだな。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠ノッブ
+わしっておでんより興味ない感じ？
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠沖田さん
+チッ……、で、なんなんです？
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠ノッブ
+じ、実はの……、[r]ホワンホワンホワン、ノブノブ～。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠沖田さん
+そういうのいいですから。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_7 2.0]
+[wipeout loveHeartIn 2.0 1]
+[se ade84]
+[wait wipe]
+
+
+
+[cameraFilter gray]
+
+[charaFadeout B 0.1]
+
+[scene 10310]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+[seStop ade84 1.5]
+[wt 0.75]
+[wipein loveHeartIn 1.0 1]
+[wt 0.5]
+[wait wipe]
+
+[wt 0.4]
+
+[bgm BGM_EVENT_2 0.1 1.0]
+
+＠ノッブ
+ふんふ～ん、[#厠:トイレ]、[#厠:トイレ]。[r]うっかりダビデ印コーヒー牛乳を飲みすぎてしもうたわ。
+[k]
+
+
+＠ノッブ
+あれ甘くて旨いんじゃよな～。おかげで腹が……。
+[k]
+
+[charaFace C 5]
+＠ノッブ
+え？　美少女戦国大名は厠に行かない？[r]そんなわけないじゃろ、越後の龍も厠で乙っとるわ。
+[k]
+
+＠ノッブ
+越後の龍が美少女かどうかは知らんが……、ん？
+[k]
+
+[messageOff]
+[wt 1.5]
+
+＠ノッブ
+なんじゃ？　管制室に誰かおるのか？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.0]
+[wipeout leftToRight 1.0 1]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[scene 10204]
+[wt 0.5]
+[wipein rightToLeft 1.0 1]
+[wait wipe]
+
+[se ad8]
+[seStop ad8 1]
+[wt 0.7]
+
+[bgm BGM_EVENT_5 0.1 1.0]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠D：？？？
+……おのーれ、茶々がアイス買いに行ってる間に、[r]何もかも終わってるなんて許せないんですけど！
+[k]
+
+＠D：？？？
+茶々の出番も最初のちょびっとだけとか殿下が知ったら、[r]激おこぷんぷん真田丸の小田原攻め状態だし！！
+[k]
+
+＠D：？？？
+のんきに[#評定:ひょうじょう]してる場合じゃないし！[r]しかも沖田ちゃんとかなに？
+[k]
+
+＠D：？？？
+ビーム！？　ビームとか茶々も撃ちたいんだけど！[r]え？　おまえも手からビーム出てる？
+[k]
+
+＠D：？？？
+あれは茶々の身を内から焼く呪いの炎だし！[r]ビームとは全然違うんですけどー！
+[k]
+
+＠D：？？？
+あれ？　その設定重い……、重くない？
+[k]
+
+＠D：？？？
+とにかくこんなことは、伯母上が認めても[r]殿下が認めるはずがないし！
+[k]
+
+＠D：？？？
+かくなる上はこのカステラスで……、[r]フフフフフフ……！
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 1.0]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠ノッブ
+いや、カステラじゃのうてカルデアス……、
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1 1.0]
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 0,-10]
+＠茶々
+……み～た～な～！[charaMoveScale D 1.1 2.0][charaMove D 0,10 2.0]
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠ノッブ
+し、しまった！？[r]いや、わし厠に行こうとしてただけじゃし！
+[k]
+
+＠ノッブ
+おい、やめろ茶々、うわああああああああ！！！？[wt 0.4][charaShake C 0.04 4 4 0]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaShakeStop C]
+[charaScale D 1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+[scene 10400]
+[wt 0.1]
+
+[cameraFilter normal]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1 1.0]
+
+＠ノッブ
+というわけでな……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠沖田さん
+茶々さんが！？
+[k]
+
+＠沖田さん
+出番で言うなら私もあんまりでしたが、[r]たしかに見かけませんでしたね……。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.1]
+[flashin once 0.7 0.7 FF000080 FF000000]
+[se ad9]
+[wt 1.4]
+[flashin once 0.7 0.7 FF000080 FF000000]
+[wt 1.1]
+[seStop ad9 0.1]
+[wt 0.4]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1 1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 0,-90]
+[wt 0.3]
+
+＠ダ・ヴィンチちゃん
+大変だ、朝起きたらトリスメギストスの[r]シミュレーターが暴走して謎の空間が展開している！
+[k]
+
+＠ダ・ヴィンチちゃん
+恐らくはこの間の騒動で分析したデータの残骸が[r]悪さをしてるためだと思うけど、
+[k]
+
+[charaFace F 0]
+＠ダ・ヴィンチちゃん
+昨日は夜更かしして眠いから後はよろしく頼むよ！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+
+[se ad8]
+[seStop ad8 1]
+[wt 1.1]
+
+[se ad59]
+[seVolume ad59 0 0.6]
+[wt 0.8]
+[seStop ad59 0.2]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠マシュ
+先輩！[r]ダ・ヴィンチちゃんから話は聞いています！
+[k]
+
+＠マシュ
+とにかくレイシフトで問題の空間に向かいましょう！
+[k]
+
+
+？1：これでレイシフト使っていいのかなぁ
+？2：またぐだぐだだなぁ
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+遊びに行くのか、なら私も同行しよう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠沖田さん
+オル田さん！
+[k]
+
+＠沖田さん
+って、なんでさん付けしてるんですか私。[r]いやいや、ここは元祖沖田さんの私がですね。
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠ノッブ
+ま、まて沖田オルタ……、[r]そなたのそれっぽい大太刀を貸すがいい。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+私の刀か？
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaMoveReturn A 0,-15 0.8]
+[wt 0.3]
+[se bac304]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠ノッブ
+そうじゃ、此度の戦いはぐだぐだ史上かつてない[r][#熾烈:しれつ]なものとなろう。
+[k]
+
+＠ノッブ
+わしはダビデ印コーヒー牛乳の飲みすぎで[r]お腹痛いから行けぬゆえ、そなたの刀に我が力を託そう。
+[k]
+
+[charaFace C 5]
+＠ノッブ
+ぬん……！
+[k]
+
+[messageOff]
+[se ad392]
+[fowardEffect bit_talk_29 0,-40]
+[flashin once 0.1 0.1 FF000080 EE000040]
+[wt 0.4]
+[fowardEffectStop bit_talk_29 0,-40]
+[wt 1.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+……これは！？
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaSet D 1098136000 1 信長（特殊立ち絵燃え）]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ノッブ
+フッ……、[r]わしの全魔力の５分の３を注ぎ込んだこの大太刀、
+[k]
+
+＠ノッブ
+いや、もはやこれはただの大太刀にあらず、[r]第六天魔王が力を宿す、神殺しの魔剣……、
+[k]
+[messageOff]
+[charaFadeout C 0.4]
+[wt 0.6]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+＠D：ノッブ
+そう、[line 3][#煉獄剣:れんごくけん]！
+[k]
+
+[messageOff]
+[cueSe Servants_603000 bac519]
+[flashin once 0.1 0 FFFFFF FFFFFF]
+[wt 0.1]
+[flashin once 0.1 0 FFFFFF FFFFFF]
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠沖田さん
+うわぁ……、ノッブのネーミングセンス、[r]ちょっと戦国時代遅れじゃないです？
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+……煉獄、……今日からおまえは煉獄だ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+[charaShake B 0.05 4 1 0.7]
+＠沖田さん
+えええええ！？　気に入ったんです！？[r]って、いうかその剣ってそれでいいんですか！？
+[k]
+
+[charaFace B 2]
+＠沖田さん
+もっとこう、沖田さんの真の力がとかそういう……、
+[k]
+
+？1：はーい、でかけるよー
+？2：ぐだぐだが加速する……
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠マシュ
+お、お気をつけて、先輩！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[effect bit_talk_07]
+[se ad12]
+[wt 4]
+[fadeout white 1.0]
+[wait fade]
+[wt 2.0]
+
+[scene 10001]
+[wt 0.1]
+
+[fadein white 2.0]
+[wait fade]
+
+[input selectBranch]
+[messageOff]
+[skip false]
+[bgmStop BGM_EVENT_2 0.4]
+[bgmStop BGM_EVENT_3 0.4]
+[bgmStop BGM_EVENT_5 0.4]
+[bgmStop BGM_EVENT_7 0.4]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+
+[charaPut H 2000,2000]
+[charaFadeout H 0.1]
+
+[charaEffectStop H bit_talk_10_LowLevel]
+
+[cameraFilter normal]
+
+[scene 10001]
+[wt 0.4]
+[soundStopAll]
+[maskin white 1]
+[wait mask]
+[label selectBranch]
+
+[skip false]
+
+[wt 1.0]
+
+[fowardEffect bit_queststart80107_4]
+
+[wait fowardEffect]
+
+
+
+
+
+[fadeout white 2.0]
+[wait fade]
+[soundStopAll]
+[end]

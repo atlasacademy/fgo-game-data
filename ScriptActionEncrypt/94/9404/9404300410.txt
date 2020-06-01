@@ -1,0 +1,1113 @@
+
+
+
+
+＄94-04-30-04-1-0
+
+[soundStopAll]
+
+[charaSet A 98025000 1 怪人]
+[charaSet B 2009102 1 オリオン]
+[charaSet C 2009201 1 アルテミス]
+[charaSet D 2033000 1 アシュヴァッターマン]
+[charaSet E 1013001 1 カエサル]
+[charaSet F 7006001 1 坂田金時]
+[charaSet G 6019001 1 風魔小太郎]
+[charaSet I 2033000 1 アシュヴァッターマン変身用1]
+[charaSet H 2033000 1 アシュヴァッターマン変身用2]
+[charaSet J 1098120900 1 通信用ノイズ]
+
+
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[scene 32300]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠怪人
+クーックック！
+[k]
+
+＠怪人
+このクリスマスパーティーを滅茶苦茶にしてやりマース！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠オリオン
+具体的にはクリスマスケーキは鏡餅に、[r]クリスマスツリーは門松に変えてやる！
+[k]
+
+[charaFace B 3]
+
+＠オリオン
+あと、サンタコスの美女は[r]振袖の美女に！
+[k]
+
+＠オリオン
+……いや、これはどっちでもいいな！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.2]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+＠？？？
+[f large]そこまでだぞコラァッ！
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠怪人
+何者！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_4 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠？？？
+何者かと問われりゃ答えてやろうじゃねえか。[r]我が名はアシュヴァッターマン！
+[k]
+
+[charaFace D 0]
+
+＠アシュヴァッターマン
+あー、何だ。
+[k]
+
+[charaFace D 1]
+
+＠アシュヴァッターマン
+クリスマスを守るためのサンタクロース[r]みてえなモンだ。
+[k]
+
+＠アシュヴァッターマン
+って訳でよ[line 3][r]悪いがおっ[#死:ち]ねや！
+[k]
+
+[charaFace D 0]
+
+＠アシュヴァッターマン
+[f small]えーとなんだっけか。
+[k]
+
+[charaFace D 2]
+
+＠アシュヴァッターマン
+[f large]乗着！！
+[k]
+
+[messageOff]
+[fowardEffect bit_talk_ashwa_transform1]
+[se ade389]
+[wt 0.7]
+[se ad439]
+[seVolume ad439 0 0.7]
+[wt 1.0]
+
+[charaTalk off]
+[charaDepth D 1]
+[charaDepth I 2]
+[charaDepth H 3]
+
+[charaFace I 2]
+[charaPut I -550,0]
+[charaFadeTime I 0.2 0.6]
+[charaMove I 1 0.6]
+[wt 0.3]
+[charaFadeout I 0.3]
+
+[charaFace H 2]
+[charaPut H 550,0]
+[charaFadeTime H 0.2 0.6]
+[charaMove H 1 0.6]
+[wt 0.3]
+[charaFadeout H 0.3]
+[wt 0.3]
+
+[seStop ad439 1.0]
+
+[charaPut I -650,0]
+[charaPut H 650,0]
+[charaFadeTime I 0.2 0.6]
+[charaFadeTime H 0.2 0.6]
+[charaMove I 1 0.4]
+[charaMove H 1 0.4]
+[wt 1.0]
+
+[fowardEffect bit_talk_ashwa_transform2]
+[fowardEffectStop bit_talk_ashwa_transform1]
+[se ade390]
+[charaChange D 2033001 5 fade 0.1]
+[charaFadeout I 0.1]
+[charaFadeout H 0.1]
+[wait charaChange D]
+[wt 1.7]
+
+[charaTalk on]
+
+＠アシュヴァッターマン
+憤怒の化身、至尊の戦士！
+[k]
+
+＠アシュヴァッターマン
+ブッ殺してやる！
+[k]
+
+＠アシュヴァッターマン
+ハァァァァァッ！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.2]
+
+[fowardEffect bit_talk_13]
+[se bac11]
+[wt 0.1]
+[fowardEffect bit_talk_29]
+[se bac27]
+[seStop bac27 0.7]
+[charaShake A 0.05 3 3 0.8]
+[wt 0.8]
+
+＠怪人
+ギャー！
+[k]
+
+[messageOff]
+[charaSpecialEffect A erasure 1 1.2]
+[se ad52]
+[wt 0.8]
+[seStop ad52 0.5]
+[wait charaSpecialEffect A]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_4 1.2]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠オリオン
+おのれアシュヴァッターマン！
+[k]
+
+[messageOff]
+[fowardEffect bit_talk_38l 0,0 H]
+[se bac111]
+[wt 0.2]
+[charaFace B 2]
+[charaShake B 0.05 3 3 1.2]
+[wt 0.3]
+[se bac111]
+[wt 0.9]
+[fowardEffectStop bit_talk_38l]
+
+＠オリオン
+[f large]ギャー！？
+[k]
+
+[messageOff]
+[se ad63]
+[fowardEffect bit_talk_lightning_03g 10,180]
+[charaShake B 0.05 3 3 1.2]
+[flashin once 0.3 0.3 FFFFFFAF FFFFFF00]
+[wt 0.7]
+[flashin once 0.3 0.3 FFFFFFAF FFFFFF00]
+[wt 0.9]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠アシュヴァッターマン
+んあ？[r]俺、攻撃してねーんだけど。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠オリオン
+だろうね……。[bgm BGM_EVENT_27 0.1][r]実際にダメージ入ってるもん、コレ……。
+[k]
+
+[messageOff]
+[charaShake B 0.05 3 3 0.5]
+[charaMove B 0,-30 0.7]
+[wt 0.2]
+[se ad144]
+[seVolume ad144 0 0.4]
+[wt 0.8]
+
+[charaTalk off]
+[charaDepth C 1]
+[charaDepth B 2]
+[charaFace C 1]
+[charaFadein C 0.4 300,0]
+[charaMove C 50,0 0.4]
+[wt 0.4]
+
+[charaMoveReturn C 50,-10 0.4]
+[wt 0.2]
+[charaMove B 0,0 0.2]
+[wt 0.2]
+
+[charaMove C -400,0 0.7]
+[charaMove B -450,0 0.7]
+[se ad348]
+[wt 0.3]
+[charaFadeout C 0.4]
+[charaFadeout B 0.4]
+[seStop ad348 1.0]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠アシュヴァッターマン
+……ま、いいか！[r]俺、大勝利！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_27 1.0 0.7]
+[se ade76]
+[seVolume ade76 0 0.3]
+[seVolume ade76 1.0 1.0]
+[wt 2.0]
+[seStop ade76 1.0]
+[bgm BGM_EVENT_27 1.0 1.0]
+[wt 0.5]
+
+[charaSet A 99502600 1 マシュ]
+[charaSet H 2035000 1 パリス]
+[charaSet I 2039000 1 ナイチンゲール・サンタ]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠カエサル
+さあさあ、今ならアシュヴァッターマン変身セットが[r]クリスマス御礼・二割引大セールだとも！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠坂田金時
+クッ……悩ましいところだぜ。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠風魔小太郎
+[#お小遣い:Ｑ　　　Ｐ]だけではギリギリ足りない……。[r]痛いところを突いてきましたね……。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.4 1]
+[wt 0.4]
+
+＠パリス
+うう……ヘクトール兄さんはこの辺、[r]手厳しいからな……。
+[k]
+
+[charaFace H 0]
+
+＠パリス
+でも、あの変身ベルトがあれば[r]僕もちょっと強くなれるかも！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠カエサル
+ああ、強くなれるともなれるとも。[r]そのひたむきな想いさえあれば！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠坂田金時
+よし、小太郎。
+[k]
+
+[charaFace F 1]
+
+＠坂田金時
+オレとおまえの二人合わせてゴールデンだ！[r]（意訳：お小遣いを合わせて買おうぜ）
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠風魔小太郎
+委細承知。[r]では順番はじゃんけんで[line 3]
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+
+[se ad413]
+[seVolume ad413 0 0.5]
+[seVolume ad413 1.0 1.0]
+[wt 1.5]
+[bgmStop BGM_EVENT_27 1.0]
+[wt 0.5]
+[seStop ad413 1.0]
+[wt 1.2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠アシュヴァッターマン
+ふああぁ～終わった終わった。[bgm BGM_EVENT_2 0.1]
+[k]
+
+＠アシュヴァッターマン
+しかしよう、これでサンタクロースってのも、[r]何だかおかしな話だよなあ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠カエサル
+……いやいや、[r]まったくおかしいことではないとも。
+[k]
+
+＠カエサル
+クリスマスというイベントが、[r]資本主義に毒されるのは仕方ないことだ。
+[k]
+
+[charaFace E 1]
+
+＠カエサル
+そして我々はそれをあくよ……もとい、[r]上手く活用して、ＱＰを稼いで経済を回す。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠アシュヴァッターマン
+言ってることは正しいんだが[line 3]
+[k]
+
+＠アシュヴァッターマン
+どうもアレだな。[r]サンタの道からはほど遠いって感じがするぜ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠カエサル
+いやいや。
+[k]
+
+＠カエサル
+君は赤い、そして変身する。[r]サンタクロースの資格が立派にあるとも。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 0.7]
+
+＠？？？
+そこまでです。
+[k]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠アシュヴァッターマン
+[line 3]ん？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠カエサル
+何者。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad75]
+[wt 1.0]
+[seStop ad75 0.5]
+
+[charaTalk I]
+[charaFace I 0]
+[charaPut I 0,180]
+[charaSpecialEffect I appearanceReverse 1 0.9]
+[charaMove I 0,-10 0.7]
+[wt 0.7]
+
+[charaMove I 0,0 0.2]
+[se ad95]
+[wt 0.4]
+[seStop ad95 0.2]
+
+[charaFadein I 0.0 1]
+
+＠ナイチンゲール・サンタ
+皆様、ごきげんよう。[r]私は[line 3]
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠アシュヴァッターマン
+[f large]サンタじゃねえか！！[bgm BGM_EVENT_7 0.1]
+[k]
+
+＠アシュヴァッターマン
+オイオイオイ、[r]随分とサンタ[#力:ぢから]入ってンじゃねえか！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+
+＠ナイチンゲール・サンタ
+いえ、私は[line 3]
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠坂田金時
+なるほどな、イッツクール。[r]コイツはゴールデンなレッドサンタだぜ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠風魔小太郎
+（金色か赤色かどちらなのだろう……）
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠坂田金時
+よし、オレはアシュヴァッターマンを[r]応援するぜ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠風魔小太郎
+……では、僕はこちらのサンタ殿を応援します！[r]いえ、別に選んだ理由はありませんが。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠パリス
+んー……迷うなー……。[r]どっちもカッコいいけど……。
+[k]
+
+[charaFace H 0]
+
+＠パリス
+やっぱりアシュヴァッターマンかな！
+[k]
+
+[charaFace H 4]
+
+＠パリス
+（だって傘をよく見たら注射器だし！[r]　痛いの苦手だし！）
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠カエサル
+思わぬ[#闖入者:ちんにゅうしゃ]だが、[r]我々もまたサンタクロースとして迎え撃たねばね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+
+＠ナイチンゲール・サンタ
+貴方たちもサンタクロースを名乗る、と？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠カエサル
+そうだとも！[r]我らはサンタクロース！
+[k]
+
+＠カエサル
+夢と希望を届け、経済を潤し、[r]全員が幸福になるための架け橋となるのだとも！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠マシュ
+仰っていることは非常に正しいのですが……。
+[k]
+
+？1：背後に積み重なったＱＰは……？
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠カエサル
+経済活動の一環。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠アシュヴァッターマン
+このオッサン何てったっけ……。[r]ああ、そうだそうだアレだ。
+[k]
+
+＠アシュヴァッターマン
+『[#濡れ手で粟]』って呟いてたっけか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠カエサル
+そこは黙っておくべきだよ、君ィ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠ナイチンゲール・サンタ
+……正しいか正しくないかは、[r]現時点で判別はつきませんが。
+[k]
+
+＠ナイチンゲール・サンタ
+やはり、貴方のサンタクロースは[r]経済活動に寄り過ぎている気がします。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠カエサル
+うむ。
+[k]
+
+＠カエサル
+同じサンタクロースでも、[r]異なる道を歩んでいるということだな。
+[k]
+
+[bgmStop BGM_EVENT_7 0.7]
+
+[charaFace E 5]
+
+＠カエサル
+ところで君はサンタクロースだと[r]認識して構わないのかな？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+
+＠ナイチンゲール・サンタ
+……。[r]……。
+[k]
+
+[charaFace I 0]
+
+＠ナイチンゲール・サンタ
+そう、ですね。[bgm BGM_EVENT_1 0.1][r]確かに私は[line 3]
+[k]
+
+＠ナイチンゲール・サンタ
+貴方たちの言うところの、[r]サンタクロースなのかもしれません。
+[k]
+
+＠ナイチンゲール・サンタ
+私が届けるべきは、夢と希望。[r]即ち、よりよい明日のために絶対に必要なもの。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠風魔小太郎
+それは一体……？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠ナイチンゲール・サンタ
+マスターならわかりませんか？[r]私が常日頃から[#尊:たっと]んでいる言葉を。
+[k]
+
+？1：それはもしかして……
+？2：健康？
+？！
+
+＠ナイチンゲール・サンタ
+はい。
+[k]
+
+＠ナイチンゲール・サンタ
+健康です。
+[k]
+
+＠ナイチンゲール・サンタ
+健康こそが、私というサンタクロースが[r]与えられる唯一のもの。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠坂田金時
+ＯＨ……オレっちが恥ずかしくなっちまうくらい、[r]立派な動機だぜ……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠パリス
+はい。
+[k]
+
+＠パリス
+サンタクロースとして、健康を守る！[r]凄いです、立派です！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠ナイチンゲール・サンタ
+はい。
+[k]
+
+＠ナイチンゲール・サンタ
+具体的には、お菓子の代わりに薬剤をプレゼントしようと。
+[k]
+
+[bgmStop BGM_EVENT_1 0.1]
+
+＠J：全員
+[f large]え。
+[k]
+
+[charaFace I 10]
+
+＠ナイチンゲール・サンタ
+薬剤です。[bgm BGM_EVENT_7 0.1]
+[k]
+
+＠ナイチンゲール・サンタ
+安心してください。[r]もちろん[line 3]その薬は、ちゃんと甘いものなので！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠坂田金時
+そういう問題かよぅ！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠パリス
+は、反対です！[r]さすがにそれは夢がないと思います！
+[k]
+
+＠パリス
+いくら甘くてもお薬とお菓子では、[r]越えられない壁があるかと！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+
+＠ナイチンゲール・サンタ
+……。[r]……？
+[k]
+
+＠ナイチンゲール・サンタ
+そうでしょうか……？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠風魔小太郎
+残念ながら……この二人と意見を同じく[r]せざるを得ないかと……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠ナイチンゲール・サンタ
+マスターもでしょうか？
+[k]
+
+？1：難しいところだけど……
+？2：お菓子を希望する子もいるだろうし
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠カエサル
+サンタクロース永遠の課題。[r]『プレゼントは喜ばれるべきものだけでいいのか？』
+[k]
+
+＠カエサル
+であるな。
+[k]
+
+＠カエサル
+ふむ。[r]その難題に真っ向から取り組むとは。
+[k]
+
+[charaFace E 1]
+
+＠カエサル
+あっぱれかな、ナイチンゲール。[r]君のサンタクロース道は険しいものとなるだろう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠ナイチンゲール・サンタ
+……私の考えたプレゼントは間違っていると[r]仰りたいのでしょうか？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 1.2]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠カエサル
+それは、これから先の戦いが決めることだな。
+[k]
+
+[charaFace E 2]
+
+＠カエサル
+さあ、アシュヴァッターマン、[bgm BGM_EVENT_3 0.1][r]武器を取れ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠アシュヴァッターマン
+ん？
+[k]
+
+＠アシュヴァッターマン
+まー……サンタクロースとしちゃあ、[r]戦わない訳にゃあいかねえか！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠マシュ
+（こちらもこちらで、サンタクロースを[r]　違うものと勘違いしているような……）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+
+＠ナイチンゲール・サンタ
+ミスター・カエサル。
+[k]
+
+＠ナイチンゲール・サンタ
+どうやら貴方はサンタの道、その先を知る者と[r]お見受けしました。
+[k]
+
+＠ナイチンゲール・サンタ
+この戦いで、それを知ることができるか……。[r]まずはお手合わせを願います。
+[k]
+
+[charaFace I 2]
+
+＠ナイチンゲール・サンタ
+[#同じサンタクロースとして]！！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠坂田金時
+……で。[r]オレたちは結局どっちを応援すりゃいいんだろうな……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠風魔小太郎
+ふ、二人ともがんばれー！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠パリス
+薬……お菓子……でも甘くて……。[r]ううん、どっちが正しいんだろう……。
+[k]
+
+＠パリス
+悩む……悩むなぁ……。[r]また審判やらないと……！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

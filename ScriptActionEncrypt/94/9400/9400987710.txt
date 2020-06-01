@@ -1,0 +1,156 @@
+
+＄94-00-98-77-1-0
+
+
+
+
+[charaSet B 2025101 1 メアリー]
+[charaSet C 2025201 1 アン]
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+
+[scene 10400]
+
+[fadein black 2]
+[wait fade]
+
+
+[se ad310]
+[seVolume ad310 0 0.8]
+[wt 0.5]
+[seStop ad310 0.1]
+[wt 0.3]
+
+
+＠メアリー
+マスター、マスターいるかい？
+[k]
+
+？1：いるよー？
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+
+＠メアリー
+ああ、良かった。[r]留守にしていたら挫けるところだった……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 0]
+
+[charaFace B 0]
+[charaFadein B 0.4 2]
+
+＠アン
+もう、こういうところは奥手ですわねえ。[r]さ、マスター。少々お時間よろしいですか？
+[k]
+
+[charaFace C 0]
+
+＠アン
+メアリー。
+[k]
+
+[charaFace B 3]
+
+＠メアリー
+う、うん。[r]その……これ、チョコなんだ。
+[k]
+
+＠メアリー
+バレンタインデーの。[r]うん。一応、手作り。
+[k]
+
+[messageOff]
+
+[charaTalk off]
+
+[se ad79]
+[wt 0.1]
+
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+
+
+？1：ありがとう、嬉しい！
+？！
+
+[charaTalk on]
+[charaFace B 0]
+
+＠メアリー
+良かった……。あ、それでね？[r]このチョコを食べるとき、注意して欲しいことがあるんだ。
+[k]
+
+[charaFace C 1]
+
+＠アン
+と言っても簡単ですわよ？[r]チョコをちょっとずつ食べるだけ。
+[k]
+
+[charaFace B 1]
+
+＠メアリー
+あんまりガリガリと食べると、[r]健康に良くないからね！
+[k]
+
+[charaFace C 0]
+
+＠アン
+それでは失礼しますね。[r]待っていますから。
+[k]
+
+[charaFace B 0]
+
+＠メアリー
+待ってるよ、それじゃ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[charaFadeout C 0.4]
+[se ad8]
+[wait se ad8]
+[wt 0.5]
+
+
+
+[se ad182]
+[wt 1.0]
+
+？1：ん？
+？！
+
+[se ade26]
+
+[equipSet A 9805200 1]
+[wait equipSet A]
+[charaFace A 0]
+[charaFadein A 0.5 0,-70]
+[wt 2.0]
+[charaFadeout A 0.4]
+[wt 1.0]
+
+
+
+？1：これは……部屋の鍵だろうか……
+？！
+
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+[soundStopAll]
+[end]

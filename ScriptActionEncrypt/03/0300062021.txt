@@ -1,0 +1,462 @@
+
+
+
+＄03-00-06-17-6-1
+
+
+
+[soundStopAll]
+
+[charaSet A 1098128200 1 カイニス]
+[charaSet B 7010001 1 カリギュラ]
+[charaSet C 1017002 1 武蔵]
+[charaSet D 8001400 1 マシュ]
+[charaSet E 1098191200 1 アデーレ]
+[charaSet F 1098191300 1 マカリオス]
+[imageSet G cut165_stym 1]
+[charaScale G 1.01]
+
+[charaSet H 1098191900 1 オリュンポス正規兵]
+
+[charaSet S 5009000 1 エフェクト用ダミー]
+[charaSet T 5009000 1 エフェクト用ダミー]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 10000]
+
+[se ad678]
+[seVolume ad678 0 0.4]
+[fadein black 0.1]
+[wait fade]
+
+[wt 0.4]
+
+[se ad983]
+[seVolume ad983 0 0.5]
+[effect bit_talk_attack_splash]
+[wt 1.0]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 91800]
+
+[fadein black 0.7]
+[wait fade]
+
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.4]
+[se ad73]
+[charaEffect B bit_talk_quickmove]
+[wt 0.1]
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.3]
+
+[se bac149]
+[charaEffect H bit_talk_13 150,50]
+[charaShake H 0.05 3 3 1.4]
+[wt 0.2]
+[se bac148]
+[charaEffect H bit_talk_13 -150,-50]
+[wt 0.2]
+[se bac150]
+[charaEffect H bit_talk_13 0,0]
+[wt 0.6]
+
+[charaMove H 0,-30 0.4]
+[charaFadeout H 0.4]
+[wt 0.5]
+[se ad144]
+[wt 1.5]
+
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+[cueSe Battle bac170]
+[wt 0.4]
+[charaFace D 2]
+
+＠マシュ
+敵性集団、オリュンポス正規兵が加わっています！[r]なおも敵性反応増加中！
+[k]
+
+＠マシュ
+ですが……！[r]こちらも！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠武蔵
+北方向の敵影は一掃できたはず！[r]アデーレ、マカリオス！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[messageOff]
+[se ad807]
+[wt 1.6]
+
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠マカリオス
+プロメテウス＝ヘファイストス転送網の[#残滓:ざんし]に繋ぐ！[r]空間連結、物質転送！　瞬間展開！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[backEffect bit_talk_barrier04]
+[se ad434]
+[seVolume ad434 0 0.3]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠武蔵
+来た！　空間の[#歪:ゆが]み！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠アデーレ
+ステュムパリデス現出します！
+[k]
+
+[messageOff]
+[fadeout white 1.5]
+[se ade390]
+[seVolume ade390 0 0.6]
+[wait fade]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[backEffectStop bit_talk_barrier04]
+
+[fadein white 1.5]
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-200]
+
+[wait fade]
+[wt 1.0]
+
+？1：全員乗り込め！
+？2：目標地点は直上、軌道大神殿！
+
+？！
+
+[messageOff]
+[se ad903]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout G 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad904]
+[wt 1.8]
+
+[bgm BGM_EVENT_82 0.1]
+
+＠アデーレ
+飛行準備！　[#魔力帆翼:ビ ー ム セ イ ル]展開……！
+[k]
+
+[messageOff]
+[se ad905]
+[wt 1.5]
+
+＠アデーレ
+安全装置全解除！[r]重力維持機、全機構問題なし。
+[k]
+
+[se ad631]
+
+＠アデーレ
+炉心点火。炉心駆動。飛行準備、全行程よし！[r][line 3]マカリオス！
+[k]
+
+＠マカリオス
+ステュムパリデス・ブラックウィング、出るぞ！
+[k]
+
+[messageOff]
+[se ade123]
+[wipeout rectangleStripUpToDown 0.7 1.0]
+[wait wipe]
+
+[se ade7]
+[seVolume ade7 0 0.6]
+[se ade8]
+[seVolume ade8 0 0.8]
+
+[scene 92600]
+[wt 1.0]
+
+[effect bit_talk_41]
+
+[seVolume ade123 3.0 0.5]
+[shake 0.05 0 1 1.5]
+
+[wipein rectangleStripDownToUp 0.7 1.0]
+[wait wipe]
+
+[wt 1.5]
+
+＠マシュ
+この速度であれば……！[r]数十秒で、軌道大神殿に到着できます！
+[k]
+
+＠マシュ
+正午まではまだ一時間以上あります！[r]間に合います、マスター！
+[k]
+
+
+[se ad792]
+
+＠マカリオス
+待て！　地上から何かが……
+[k]
+
+＠マカリオス
+この魔力、ひとつやふたつじゃない！[r]１０、２０、くそ、まだ増える！
+[k]
+
+＠マカリオス
+くそっ、自動戦闘機械とオリュンポス兵だ！[r]飛翔の魔術で追い[#縋:すが]って来るぞ！
+[k]
+
+[messageOff]
+[seStop ade123 5.0]
+
+[se ade367]
+[effectStop bit_talk_41]
+[wt 0.8]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.5 0,-20]
+[charaMove A 1 0.5]
+[wt 0.4]
+[se ad442]
+
+＠カイニス
+ハッ！　一直線に飛んで来るかよ！[r]そいつは好都合！
+[k]
+
+[charaFace A 5]
+
+＠カイニス
+さんざん足止めしてくれやがった礼に、[r]オレがまとめて吹き飛ばしてやる。おい、双子！
+[k]
+
+＠カイニス
+この飛行機械、使うぞ！
+[k]
+
+＠マカリオス
+な！？
+[k]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠カイニス
+匂いで分かるんだよ。なあ双子！[r]コイツはアテナとヘファイストスの匂いがしやがる！
+[k]
+
+＠カイニス
+たっぷり注ぎ込まれてやがるクリロノミア、[r]ここで使い切るぜ！
+[k]
+
+[messageOff]
+[se ad39]
+[charaEffect A bit_talk_36]
+[wt 1.8]
+
+＠アデーレ
+構いません！[r]追撃を振り払えるなら、お願いします！
+[k]
+
+[charaEffectStop A bit_talk_36]
+[seStop ad39 1.0]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠カイニス
+いい返事だ！
+[k]
+
+[charaFace A 2]
+
+＠カイニス
+いッくぜえええええええ！[r][line 3]『[#海の神、荒れ狂う大海嘯:ポ セ イ ド ン ・ メ イ ル シ ュ ト ロ ー ム]』！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.1]
+[effect bit_talk_kineus_np01]
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[se ad982]
+[se ad981]
+[wt 0.8]
+[se ad983]
+[se ad826]
+[seVolume ad826 0 0.1]
+[seVolume ad826 1.0 1.5]
+[wt 4.5]
+[seStop ad983 1.0]
+[seStop ad982 1.0]
+[seStop ad981 1.0]
+[seStop ad826 1.0]
+
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[effectDestroy bit_talk_kineus_np01]
+[wt 0.5]
+[wipein rectangleStripLeftToRight 0.4 1.0]
+
+[wait wipe]
+[wt 0.5]
+
+
+＠マシュ
+…………！？
+[k]
+
+＠マシュ
+て、敵影すべて消失しました！[r]追撃する敵性反応、全個体が消えています！
+[k]
+
+
+＠カイニス
+な……！？[r]んだと……！？
+[k]
+
+＠武蔵
+貴[messageShake 0.05 2 2 0.3]方が驚いてどうするの！？
+[k]
+
+＠カイニス
+二、三発は撃ち込むつもりで……[r]いやまあ、やるつもりだったがホントにやるか、オレ！
+[k]
+
+＠カイニス
+ハハ！　絶好調もいいところじゃねえか！[r]悪くねえ、このままゼウスのお膝元へ突っ込むぞ！
+[k]
+
+[messageOff]
+[se ade123]
+[seVolume ade123 0 0.1]
+[seVolume ade123 1.0 1.0]
+[effect bit_talk_41]
+[wt 1.0]
+[se ad876]
+
+＠カリギュラ
+海神の怒りに救われた形だが、[r]代償は大きいな。
+[k]
+
+＠ホームズ
+ああ、そのようだ。[r]機体がコントロールを失いつつある[line 3]
+[k]
+
+[bgmStop BGM_EVENT_82 1.5]
+[effectStop bit_talk_41]
+[seStop ade123 2.0]
+[se ad876]
+[se ad898]
+[seVolume ad876 0 0.4]
+[shake 0.05 3 2 1.0]
+
+＠マカリオス
+……くそっ、舵が利かない！[r]大祭壇までは届かない……だが、なんとか……！
+[k]
+
+＠マカリオス
+軌道大神殿には辿り着く！[r]うおおおおおおおおおおおおおおお！
+[k]
+
+[messageOff]
+[se ad49]
+[se ad876]
+[shake 0.05 3 3 1.5]
+[wt 1.8]
+
+＠ホームズ
+落ちるな。これは。
+[k]
+
+[effect bit_talk_43h 0,0 V]
+[se ad876]
+[shake 0.05 3 2 1.0]
+[se ade338]
+
+[bgm BGM_EVENT_80 0.1]
+
+＠マシュ
+軌道大神殿、外周部……[r]庭園部分に機体が落下します！
+[k]
+
+＠マシュ
+先輩、こちらに！[r]フォウさんも！
+[k]
+
+＠フォウ
+フォウウウウウウウーーーーーーーー！？
+[k]
+
+
+[messageOff]
+[se ade372]
+[seVolume ade372 0 0.7]
+[wt 1.0]
+[wipeout rectangleStripDownToUp 0.8 1.0]
+[bgmStop BGM_EVENT_80 1.0]
+[seStop ade372 1.0]
+[wt 1.0]
+[wait wipe]
+[soundStopAll]
+[end]

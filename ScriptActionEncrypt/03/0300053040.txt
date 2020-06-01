@@ -1,0 +1,455 @@
+
+＄03-00-05-30-3-0
+
+
+
+[soundStopAll]
+
+[charaSet A 1098123200 1 ゴルドルフ]
+[charaSet B 1098123000 1 ムニエル]
+[charaSet C 9005001 1 ホームズ]
+[charaSet D 8001410 1 マシュ]
+[charaSet E 8001400 1 マシュ]
+[charaSet F 1098124500 1 ダ・ヴィンチ]
+[charaSet G 1038000 1 イアソン]
+[charaSet I 98115000 1 エフェクト用ダミー]
+[charaSet J 98115000 1 エフェクト用ダミー]
+
+
+
+[effect bit_talk_41]
+
+[se ad729]
+[seVolume ad729 0 0]
+[seVolume ad729 1.0 0.8]
+[wt 0.5]
+
+[bgm BGM_EVENT_63 0.1]
+[wt 0.5]
+
+[scene 86600]
+
+[shake 0.05 0 3 4.0]
+
+[fadein black 1.5]
+[wait fade]
+[wt 1.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[effectStop bit_talk_41]
+
+[scene 51601]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[seVolume ad729 1.0 0.4]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+＠ゴルドルフ
+もうそろそろ最後のコアに到着だ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠ムニエル
+先ほどから、[r]ひっきりなしに警告音声が届いてます。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠[9bb9ff]アナウンス[-]
+[9bb9ff]フランシス・ドレイクを必ず捕縛せよ[-][r][9bb9ff]フランシス・ドレイクを必ず捕縛せよ[-]
+[k]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠ゴルドルフ
+これほど巨大なメカなのに、[r]完全に誤認しているねえ！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠ホームズ
+バグとは恐ろしいですな。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.4]
+
+[seVolume ad729 1.0 1.0]
+
+[wt 0.8]
+
+[seStop ad729 0.4]
+[se ade329]
+[shake 0.05 3 3 1.0]
+[wt 1.3]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+＠ゴルドルフ
+よし、ここまでがギリギリだ！
+[k]
+
+
+？1：後は任せてください！
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth E 1]
+[charaDepth D 2]
+
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+[charaFace E 7]
+[charaFadein E 0.1 1]
+[wt 0.6]
+
+[charaFadeout D 0.4]
+[wt 0.2]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[wt 0.6]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk E]
+[charaFace E 2]
+＠E：マシュ
+マスター、行きましょう！
+[k]
+
+
+[messageOff]
+[wt 0.1]
+
+[se ad7]
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[charaSet A 1098123210 1 ゴルドルフ]
+[charaSet B 1098123010 1 ムニエル]
+[charaSet C 98115300 1 ホームズ]
+[charaSet D 2030002 1 ケイローン]
+[charaSet F 1098124510 1 ダ・ヴィンチ]
+
+[scene 86600]
+[wt 1.0]
+
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk F]
+[charaFace F 24]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+そのコアからは[r]今までより強いエネルギーが感じられる。
+[k]
+
+＠ダ・ヴィンチ
+気をつけ……[wt 0.5][charaFace F 22]待った、サーヴァント反応！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_63 0.5]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[scene 10000]
+
+[effect bit_talk_rarrow01or]
+[wt 0.9]
+
+[wipein rectangleStripRightToLeft 0.1 1.0]
+[wait wipe]
+
+[cueSe Battle bac20]
+[wt 0.4]
+
+[se ad170]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+
+[scene 86600]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0 1]
+[charaShake E 0.03 4 4 0.6]
+[wt 1.0]
+
+＠マシュ
+あなたは……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+＠[9bb9ff]アナウンス[-]
+[9bb9ff]ドレイク……フランシス・ドレイク……。[-]
+[k]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠？？？
+[#これ]が、ポセイドンです。
+[k]
+
+＠？？？
+惑星環境改造用プラント船。[r]主目的は海洋環境の改造と制御でした。
+[k]
+
+＠？？？
+今は見ての通り。[r]『[#虚ろの穴:ビ ッ グ ホ ー ル]』の門番でしかありませんが。
+[k]
+
+＠？？？
+これでも少し前までは理性があったのですよ。[r]ドレイクによってコアを奪われるまではね。
+[k]
+
+？1：ケイローン……！
+？！
+
+[messageOff]
+[wt 0.2]
+
+[se ad800]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+[seStop ad800 0.4]
+[wt 0.8]
+
+＠ケイローン
+お久しぶりでしょうか、[r]汎人類史のマスター。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 1]
+＠イアソン
+……ケイローン。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ケイローン
+おや、イアソンも生きていたのですね。[r]まあいいでしょう。
+[k]
+
+＠ケイローン
+私がこの絶海アトランティス、最後の兵です。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠イアソン
+アキレウスにはひどく打ち負かされただろう？[r]死んだ後も嫌がらせされたみたいだしな。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+＠ケイローン
+ええ、まったく。[r]酷いものです。
+[k]
+
+[charaFace D 0]
+
+＠ケイローン
+ここはオリュンポスを守る最後の砦。[r]互いに引き返すことはできない。
+[k]
+
+＠ケイローン
+ついでに申し上げますと[line 3]
+[k]
+
+[charaFace D 5]
+＠ケイローン
+私はアキレウスを殺しました。[r]そしてオデュッセウスを殺された。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠イアソン
+だから差し引きゼロって訳か？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+＠ケイローン
+とんでもない。
+[k]
+
+＠ケイローン
+もう、お互いに和解の余地はない、[r]ということです。
+[k]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaFace D 5]
+＠ケイローン
+我が名はケイローン。
+[k]
+
+＠ケイローン
+盟友オデュッセウスに託され、[r]このアトランティスを守護する者。
+[k]
+
+[charaFace D 2]
+＠ケイローン
+臆さぬならば、掛かってこい！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠イアソン
+よく吠えた！[r]それじゃあ、最終決戦だ！
+[k]
+
+＠イアソン
+……頑張れよ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠マシュ
+イアソンさん！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠イアソン
+応援するだけはしてやるから、それで勘弁しろ！
+[k]
+
+？1：それで充分！
+？2：戦うよ、マシュ！
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠マシュ
+[line 3]。
+[k]
+
+[charaFace E 7]
+＠マシュ
+申し訳ありません。現状、了解しました！[r]ここは我々にお任せを、キャプテン・イアソン！
+[k]
+
+＠マシュ
+マスター・[%1]、[r]マシュ・キリエライト[line 3]
+[k]
+
+[charaFace E 2]
+＠マシュ
+[line 3]アトランティス攻略、その最後の一手を、[r]ここで決めます！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.8]
+
+[charaFace D 2]
+＠ケイローン
+[line 3]来い！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,158 @@
+
+
+
+
+＄94-04-77-63-1-5
+
+[soundStopAll]
+
+[skip false]
+
+[maskout black 0]
+[wait mask]
+
+[charaSet A 1018001 1 アルテラ]
+[imageSet B cut171_token_303 1]
+[charaSet C 3010001 1 ロムルス]
+[charaSet D 1013001 1 カエサル]
+[charaSet E 7010001 1 カリギュラ]
+[charaSet T 5009000 1 エフェクト用ダミー]
+
+[scene 20730]
+
+[pictureFrameTop cut170_gameframe_bright]
+
+[skip true]
+
+[fadein black 0]
+[wait fade]
+[maskin black 1.0]
+[wait mask]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk depthOff]
+[charaDepth T 3]
+[charaDepth B 4]
+[charaDepth A 1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+[charaEffect A bit_talk_token_change01]
+[wt 1.0]
+
+＠アルテラ
+文明は……意外にしぶとい……。
+[k]
+
+[messageOff]
+[charaEffectStop A bit_talk_token_change01]
+[charaPut T 0,-10]
+[charaEffect T bit_talk_token_change02]
+[se ad39]
+[wt 3.2]
+
+[se ad29]
+[seStop ad29 1.5]
+[wt 0.5]
+[charaFadeout A 0.4]
+
+[charaTalk B]
+[charaFadein B 0.4 0,-210]
+[wt 0.5]
+
+[charaMove T 0,10 1.2]
+[wt 1.2]
+
+[charaFadeout B 0.4]
+[wt 0.5]
+
+[se adm19]
+[seVolume adm19 0 0.3]
+[seVolume adm19 1.0 1.0]
+[wt 0.5]
+
+[seStop adm19 1.7]
+[charaMove T 0,700 2.2]
+[wt 2.2]
+
+[charaEffectStop T bit_talk_token_change02]
+[wt 0.1]
+[charaEffectDestroy T bit_talk_token_change02]
+
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-50]
+[charaEffect C bit_talk_06]
+
+＠ロムルス
+無論、[#繁栄:ローマ]は[#人類:ローマ]の[#希望:ローマ]であり、[r][#私:ローマ]の[#為すべきこと:ロ　　　 ー　　　 マ]なればなり！
+[k]
+
+[messageOff]
+[se ade406]
+[wt 0.2]
+[flashin once 0.1 0.6 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaFadeout C 0.1]
+[wt 0.2]
+[charaEffectStop C bit_talk_06]
+[wt 0.1]
+[seStop ade406 0.6]
+[wt 1.2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+[charaEffect D bit_talk_06]
+
+＠カエサル
+まずは良い[#余興:サーカス]ではあった。[r]我が[#人民:ファン]たちも、喜んでくれたに違いない。
+[k]
+
+[messageOff]
+[se ade406]
+[wt 0.2]
+[flashin once 0.1 0.6 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaFadeout D 0.1]
+[wt 0.2]
+[charaEffectStop D bit_talk_06]
+[wt 0.1]
+[seStop ade406 0.6]
+[wt 1.2]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,-50]
+[charaEffect E bit_talk_06]
+
+＠カリギュラ
+こんなものか……まだだ、まだ……！[r]絶叫が！　絶望が！　足りぬゥゥ……！
+[k]
+
+[messageOff]
+[se ade406]
+[wt 0.2]
+[flashin once 0.1 0.6 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaFadeout E 0.1]
+[wt 0.2]
+[charaEffectStop E bit_talk_06]
+[wt 0.1]
+[seStop ade406 0.6]
+[wt 1.2]
+
+[maskout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

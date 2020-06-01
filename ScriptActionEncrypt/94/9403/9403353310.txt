@@ -1,0 +1,320 @@
+
+
+＄94-03-35-33-1-0
+
+[soundStopAll]
+[charaSet A 10008001 1 シトナイ]
+[charaSet B 10008001 1 シトナイシルエット用]
+[charaFilter B silhouette 000000FF]
+
+[equipSet H 9807040 1 バレンタイン礼装]
+
+[scene 65200]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad450]
+[wt 1.5]
+[seStop ad450 1.0]
+
+[bgm BGM_EVENT_77 0.1]
+
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V010]
+……あ、見つかっちゃった。[wait tVoice]
+[k]
+
+
+[messageOff]
+[charaTalk off]
+
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.7]
+
+[charaTalk depthOff]
+[charaDepth B 2]
+[charaDepth A 1]
+
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[charaFadeout B 0.4]
+[wt 1.2]
+[charaTalk depthOn]
+
+[charaTalk on]
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V020]
+こんにちは、マスターさん。[wait tVoice]
+[k]
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V030]
+賑やかなのも嫌いではないけど、[r]あまり気分じゃなかったから避難していたの。[wait tVoice]
+[k]
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V040]
+シミュレーターの中に……[r]ちょうど、冬の山小屋があったものだから。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 13]
+[wt 1.0]
+[charaFace A 0]
+
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V050]
+冬の景色は好きよ。[r]この霊基の[#依り代:わたし]は雪の多い国で生まれたから。[wait tVoice]
+[k]
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V060]
+ここ、どこの山小屋なのかしら。日本？[wait tVoice]
+[k]
+
+
+？1：そうだよ
+
+[charaFace A 6]
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V070]
+やっぱり。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V080]
+ああ、日用品がメイド・イン・ジャパンだったから[r]多分そうなのかなって。[wait tVoice]
+[k]
+
+？2：北海道の[line 3]
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V090]
+ふうん、そうなんだ。[wait tVoice]
+[k]
+
+？！
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V100]
+……。[r]……。[wait tVoice]
+[k]
+
+[charaFace A 13]
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V110]
+んー……。[wait tVoice]
+[k]
+
+[charaFace A 6]
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V120]
+せっかくここまで来たのだから、お茶でもどう？[r]シミュレーターのデータだけどね。[wait tVoice]
+[k]
+
+？1：いただきます
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V130]
+うん。[wait tVoice]
+[k]
+
+？2：シミュレーターでお酒飲む人たちもいるし
+
+[charaFace A 1]
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V140]
+あはは、何それ。[r]カルデアのサーヴァントってそうなんだ！[wait tVoice]
+[k]
+
+？！
+
+[messageOff]
+[charaFace A 0]
+[se ade3]
+[seVolume ad3 0 2.5]
+[wt 1.5]
+[seStop ade3]
+[wt 0.3]
+
+[se ad579]
+[charaMoveReturn A 0,-10 0.3]
+[wt 0.2]
+[seStop ad579]
+
+[wt 1.0]
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V150]
+はい、お茶。えーっとそれから[line 3][wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[se bas2]
+[charaFace H 0]
+[charaFadein H 0.5 0,-70]
+[wt 2.0]
+
+[charaFadeout H 0.4]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V160]
+これはお茶請け。[r]あなたの口に合うといいんだけど。[wait tVoice]
+[k]
+
+？1：これってもしかして
+？2：チョコレート……
+
+？！
+
+[charaFace A 6]
+＠シトナイ
+[tVoice ValVoice_1000800 0_V170]
+うん、ホワイトチョコレート。[r]甘いよ。[wait tVoice]
+[k]
+
+[charaFace A 12]
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V180]
+ん？[wait tVoice]
+[k]
+
+[charaFace A 20]
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V190]
+あ、違うよ！？[r]バレンタインデーのチョコとか、そういうのじゃなくて！[wait tVoice]
+[k]
+
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V200]
+わ、わたしが食べたいなーって思ったから[r]用意したデータで[line 3][wait tVoice]
+[k]
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V210]
+ま、まあでも、いいわ。それでも。[r]ハッピーバレンタイン！　はい、おしまい！[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V220]
+……。[r]……。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 13]
+[wt 1.0]
+[charaFace A 0]
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V230]
+……バレンタインのチョコレート。[r]別に、誰にもあげたくないって訳じゃないの。[wait tVoice]
+[k]
+
+[charaFace A 15]
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V240]
+その逆。[r]あげたい人、あげなきゃいけない人が[line 3][wait tVoice]
+[k]
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V250]
+いっぱいいるけど、[r]なんだか声を掛けにくいから……[wait tVoice]
+[k]
+
+[charaFace A 18]
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V260]
+それなら、[r]もう、誰にも……[wait tVoice]
+[k]
+
+？1：手伝うよ
+
+[charaFace A 14]
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V270]
+え。[wait tVoice]
+[k]
+
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V280]
+手伝って……くれるの？　わたしを？[wait tVoice]
+[k]
+
+？2：一緒にチョコ渡しに[&行こう！:行こうよ！]
+
+[charaFace A 19]
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V290]
+え、え……？[r]一緒に……？[wait tVoice]
+[k]
+
+？！
+
+[messageOff]
+[charaFace A 12]
+[wt 1.0]
+[charaFace A 0]
+
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V300]
+驚いた。すごく積極的なんだ、あなた。[wait tVoice]
+[k]
+
+[charaFace A 7]
+
+＠シトナイ
+[tVoice ValVoice_1000800 0_V310]
+ふふ。それじゃあ……うん！[r]せっかくだし、お言葉に甘えちゃおうかな！[wait tVoice]
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[soundStopAll]
+[end]
+

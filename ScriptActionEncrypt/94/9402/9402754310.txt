@@ -1,0 +1,453 @@
+
+
+＄94-02-75-43-1-0
+
+
+
+[soundStopAll]
+
+[charaSet A 7031000 1 ジャンヌ・オルタ]
+[charaSet B 98100400 1 マシュ]
+[charaSet C 2003300 1 ロビンフッド]
+[charaSet D 6034000 1 牛若丸]
+
+[imageSet H cut086_sdbb01 1]
+[charaScale H 0.9]
+
+[imageSet E cut079_time03 1]
+[imageSet F cut079_moji01 1]
+[imageSet G cut079_moji03 1]
+
+[revivalBranch lblNormal lblRevival]
+
+[label lblNormal]
+
+[flag isQueSkip true]
+
+[branch lblRevivalConf]
+
+[label lblRevival]
+
+[branchQuestNotClear lblNoClear 94039143 1]
+
+[flag isQueSkip true]
+
+[branch lblClearCheckConf]
+
+[label lblNoClear]
+
+[flag isQueSkip false]
+
+[label lblClearCheckConf]
+
+[label lblRevivalConf]
+
+[branch lblQueSkipConf isQueSkip false]
+
+[messageOff]
+[fadein black 0.1]
+[wait fade]
+
+[charaFadein H 0.1 -600,-300]
+[charaMove H -400,-300 0.7]
+[wait charaMove]
+[wt 0.4]
+
+[charaMoveReturn H -400,-250 0.2]
+[se ad673]
+[wait charaMove]
+
+[charaMoveReturn H -400,-250 0.2]
+[se ad673]
+[wait charaMove]
+[wt 0.5]
+
+？1：スキップする
+[charaMove H -420,-300 0.3]
+[wait charaMove]
+[charaMove H 800,-300 1.0]
+[se ad348]
+[wait charaMove]
+[wt 0.5]
+
+[flag isSkip true]
+
+？2：スキップしない
+[charaMove H -520,-300 0.7]
+[charaFadeout H 0.7]
+[wait charaMove]
+[wt 0.5]
+
+[flag isSkip false]
+？！
+
+[branch lblEnd isSkip true]
+
+[fadeout black 0.1]
+[wait fade]
+
+[label lblQueSkipConf]
+
+[scene 10000]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaScale E 1.0]
+[charaScale F 1.0]
+[charaScale G 1.0]
+[charaFadein E 0.1 0,-200]
+[charaFadein F 0.1 50,-200]
+[charaFadein G 0.1 100,-200]
+[wait charaCut E]
+[wait charaCut F]
+[wait charaCut G]
+[wt 2.2]
+
+[charaFadeout E 2.0]
+[charaFadeout F 2.0]
+[charaFadeout G 2.0]
+
+[scene 63500 2.0]
+[wt 2.0]
+
+[charaSet E 6031000 1 刑部姫]
+[charaSet F 2032001 1 ジャンヌ]
+[charaSet G 5007001 1 シェイクスピア]
+[wt 0.5]
+
+[bgm BGM_EVENT_93 0.1 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠牛若丸
+それでは私とロビン殿は挨拶回りに[r]行ってきます。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ロビンフッド
+おう、それから適当にぶらついて[r]よさげな本も買っておくわ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+そうね。次回に繋がりそうな本を買って、[r]勉強しましょう。
+[k]
+
+＠ジャンヌ・オルタ
+夜までに読み終えればいいんだから。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ロビンフッド
+あいよー。
+[k]
+
+[messageOff]
+[se ad60]
+[seStop ad60 1.0]
+[charaFadeout C 0.4]
+[wt 1.6]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠刑部姫
+やっふー。[r]本の交換よー。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+はいはい。[r]これね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠刑部姫
+ありがとぅー。[r]じゃ、[#姫:わたし]からはこれ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+ん、サンキュー。
+[k]
+
+[messageOff]
+[wipeout rightToLeft 1.0 1.0]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 1.0]
+[wipein leftToRight 1.0 1.0]
+[wait wipe]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠ジャンヌ
+ジャンヌです！[r]こちら『st.オルレアン』の新作になります！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+……くっ……。
+[k]
+
+[charaFace A 5]
+
+＠ジャンヌ・オルタ
+仕方ない、将来の目標なんだし。[r]じゃ、こっちが私の本。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠ジャンヌ
+ありがとう。[r]百回くらい読ませてもらいますね！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+それはちょっと偏執的すぎて怖いんだけど。
+[k]
+
+[messageOff]
+[wipeout rightToLeft 1.0 1.0]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 1.0]
+[wipein leftToRight 1.0 1.0]
+[wait wipe]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠シェイクスピア
+ハロー、皆様。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace G 0]
+[charaFadein G 0.1 0]
+[charaFace A 9]
+[charaFadein A 0.1 2]
+
+＠ジャンヌ・オルタ
+げ、来るな。
+[k]
+
+[charaFace G 4]
+
+＠シェイクスピア
+え、何ですかその扱い。
+[k]
+
+＠シェイクスピア
+吾輩、割とこのイベントではスター扱いだと[r]思うのですが？
+[k]
+
+[charaFace A 15]
+
+＠ジャンヌ・オルタ
+スターすぎて扱いに困るのよ。
+[k]
+
+＠ジャンヌ・オルタ
+アンタたちが本気出したら[r]サバフェスが崩壊しかねないでしょ。
+[k]
+
+[charaFace A 16]
+
+＠ジャンヌ・オルタ
+というか、よりによってアンタたちに[r]本を読まれるとか、拷問じゃない？
+[k]
+
+[charaFace G 1]
+
+＠シェイクスピア
+えー、吾輩もサバフェスの仲間なのにー。
+[k]
+
+[charaFace A 14]
+
+＠ジャンヌ・オルタ
+くっ……まあいいわ。
+[k]
+
+[charaFace A 13]
+
+＠ジャンヌ・オルタ
+はい、これが今回の本。[r]ただし、感想を言うのは控えなさい。
+[k]
+
+[charaFace G 0]
+
+＠シェイクスピア
+仕方ありませんなァ。
+[k]
+
+[charaFace G 1]
+
+＠シェイクスピア
+では、こちら吾輩たちの合同小説本です。[r]どうぞどうぞ。
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠マシュ
+……世に出せば一体どれほどの[r]金額が動くのでしょうか……。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_93 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 63501]
+
+[wt 1.0]
+
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ロビンフッド
+おう、ただいま。[r]売れ行きはどうだ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+ぼちぼち、といったところね。[r]良くもなく悪くもなく。
+[k]
+
+[charaFace A 13]
+
+＠ジャンヌ・オルタ
+今回は間違いなく負けるわ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠牛若丸
+仕方ありません。
+[k]
+
+[charaFace D 4]
+
+＠牛若丸
+今回の作業が無駄になった訳ではない、[r]そう前向きに考えましょう。
+[k]
+
+？1：早速次の本を考えよう！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+そうね。
+[k]
+
+＠ジャンヌ・オルタ
+ロビン、買ってきた本を持ってきて。[r]次の本に向けて、[#コイツ:マスター]と話し合うから。
+[k]
+
+[label lblEnd]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,1232 @@
+
+
+
+
+
+
+＄94-04-49-01-1-0
+
+
+[soundStopAll]
+
+[skip false]
+
+[branchQuestNotClear lblNotClear1 3000320 4]
+[label lblClear1]
+[flag IsGirl true]
+[branch lblIsClearConf1]
+[label lblNotClear1]
+[flag IsGirl false]
+[label lblIsClearConf1]
+
+[skip true]
+
+[branch lblNotGirl IsGirl false]
+
+[label lblGirl]
+
+[charaSet A 1098124500 1 ダ・ヴィンチ]
+[charaSet B 6031001 1 刑部姫]
+[charaSet C 98002000 1 フォウ]
+[charaSet D 98001000 1 マシュ]
+[charaSet E 98110000 1 柳生但馬守]
+[charaSet F 7027300 1 アマゾネスＣＥＯ_普通]
+[charaSet G 1098119600 1 アマゾネスＣＥＯ_ろくろ]
+[verticalImageSet H cut045_bg 1]
+[charaSet J 5009000 1 エフェクト用]
+
+[charaScale H 1.01]
+
+[scene 66400]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ade74]
+[seVolume ade74 0 0.6]
+[seVolume ade74 0.7 1.0]
+[wt 1.7]
+
+[charaTalk A]
+[charaFace A 28]
+[charaFadein A 0.4 1]
+[seStop ade74 0.1]
+[wt 0.5]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠ダ・ヴィンチ
+さて、事情聴取を始めようか。[r]どうせゲロっちゃうなら早いほうがいいよ～？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.4 1]
+[wt 0.5]
+[charaFace B 2]
+
+＠刑部姫
+違います誤解です[#姫:わたし]はむーじーつー！[r]ホントに何もしてないんだってば！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 35]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+あ、この状況、一時期流行ったってデータにある[r]アレを私が言ってもいいやつ？　やったー。
+[k]
+
+[charaFace A 0]
+
+＠ダ・ヴィンチ
+ちょっと待ってね。[wt 0.4][charaFace A 13][r]……おほん。
+[k]
+
+[charaFace A 17]
+
+＠ダ・ヴィンチ
+ホントにござるかぁ～？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠フォウ
+フォウフォフォ、フォフォウフォウ～？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.3]
+
+？1：（じーっ）
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠刑部姫
+マーちゃん？　何その目！？[r]メジェド様みたいな目で見てくるのは止めてー！？
+[k]
+
+？2：この慌てっぷり、逆に嘘じゃない気がする
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠刑部姫
+え、信じてくれるの？　[wt 0.3][charaFace B 6][charaMove B 0,15 0.2][charaMoveScale B 1.2 0.3][wt 0.4]や[se ad478][seVolume ad478 0 0.5]ったー、[charaMoveReturn B 0,55 0.4]さすがマーちゃん！[r]心の友よ！
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaScale B 1.0]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+
+＠マシュ
+ですが……そうすると、[r]この異変の原因はいったい何なのでしょう？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 25]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+うん。これは規模そのもので言えばひどく小さくは[r]あるが、我々にとっては見過ごせない脅威だ。
+[k]
+
+＠ダ・ヴィンチ
+過去からの刺客とも言えるかもしれない。[r]もう一度、データを出してみよう。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[se ad15]
+[wt 0.3]
+[se ad172]
+[wt 1.2]
+[seStop ad172 0.1]
+
+[fadeout black 0.3]
+[wait fade]
+[charaPut J 1]
+[charaEffect J bit_talk_security]
+[scene 48700]
+[se ad1]
+[fadein black 0.5]
+[wait fade]
+
+[wt 3.2]
+
+[fadeout black 0.5]
+[wait fade]
+[charaEffectDestroy J]
+[scene 66400]
+[fadein black 0.3]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠マシュ
+まさか再びこの光景を見ることになるとは[r]思いもよりませんでした……。
+[k]
+
+？1：出たな、チェイテピラミッド姫路城……！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠刑部姫
+……いやホント、なんでまだあるの！？[r]あれって消えたはずじゃない？
+[k]
+
+？2：去年のサバイバルカジノ以来だね
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠刑部姫
+そう言われると、何だか身近に感じられて[r]ふっしぎ～♪
+[k]
+
+[charaFace B 5]
+
+＠刑部姫
+……でもさ、なんでまだあるの？[r]大本のあれって消えたはずじゃない？
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+そのはずだったんだけど……[r]どういうわけか再復活している。
+[k]
+
+[charaFace A 25]
+
+＠ダ・ヴィンチ
+でもさっき言った通り、[r]規模としては本当に小さな特異点だ。
+[k]
+
+＠ダ・ヴィンチ
+以前の特異点チェイテの[#残滓:ざんし]、[r]ちょっとした揺り戻しだとは思うけど、
+[k]
+
+[charaFace A 24]
+
+＠ダ・ヴィンチ
+なぜこのタイミングで再発生したかがわからない。[r]人為的なものかとも考えたんだけど[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠刑部姫
+何度も言うけど違うからね！？[r][#姫:わたし]は何もしてませーん！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 34]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+とはいえ、エリザベートもクレオパトラも[r]聞き取り調査の結果はシロだった。
+[k]
+
+[charaFace A 14]
+
+＠ダ・ヴィンチ
+キミにも心当たりがないとなると……うーん、困ったな。
+[k]
+
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth B 2]
+
+[se ad452]
+[seVolume ad452 0 0.1]
+[seVolume ad452 1.2 1.0]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 352,0]
+[wt 0.2]
+[charaMove E 256,0 1.0]
+[wt 0.8]
+[seStop ad452 0.1]
+
+＠柳生但馬守
+……ここは一つ。[r]一応の[#下手人:げしゅにん]を立ててはいかがか。
+[k]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 0]
+
+＠刑部姫
+それ[#姫:わたし]だよね！？[r]どう考えても[#姫:わたし]だよね！？
+[k]
+
+[charaFace E 1]
+
+＠柳生但馬守
+ははは。
+[k]
+
+[charaMove E 144,0 1.5]
+[se ad452]
+[wt 1.3]
+[seStop ad452 1.0]
+[charaFadeout E 0.4]
+[wt 1.0]
+
+[charaFace B 2]
+
+＠刑部姫
+こっわ！[r]冗談だとわかっててもこっわ！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 24]
+[charaFadein A 0.1 1]
+[wt 0.4]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+？1：こうなったら
+？2：実際行って調査してみるしかないのでは
+？！
+
+[charaFace A 0]
+
+＠ダ・ヴィンチ
+お願いできるかな？
+[k]
+
+＠ダ・ヴィンチ
+ただ、マシュは[#霊基外骨骼:オ ル テ ナ ウ ス]が調整中だから、[r]こっちで私のサポートをしてもらうことになるよ～。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠マシュ
+そうなのです。[r]お力になれずにすみません、先輩……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠刑部姫
+しょーがない、引きこもりたいところだけど[r][#姫:わたし]がついてってあげるー。
+[k]
+
+[bgm BGM_EVENT_4 0.1]
+
+[charaFace B 5]
+
+＠刑部姫
+自分の知らないところでアレが出てきてるの、[r]ちょっと……[wt 0.4][charaFace B 2]というか、かなり不気味だしね！
+[k]
+
+[charaFace B 4]
+
+＠刑部姫
+いや、ホントになんでなんだろ。
+[k]
+
+＠刑部姫
+誰かの仕業だとしても、[#姫:わたし]たち以外に[r]アレを知ってるヒトなんていないと思うけどな……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠マシュ
+刑部姫さんに同行していただけるなら安心ですね。[r]ありがとうございます！
+[k]
+
+[charaFace D 0]
+
+＠マシュ
+あ、ところでゴルドルフ所長やシオンさんへの連絡は[r]どうしましょう？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+んー、ひとまずは[#事後承諾:じごしょうだく]でいいんじゃないかな？
+[k]
+
+＠ダ・ヴィンチ
+二人ともオフの時間だし、なんかコレに関わらせると[r]大事な何かを失わせてしまいそうな気がする。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠刑部姫
+わかる。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+特異点の危険度自体はたいしたことがないと断言できる[r]レベルだしね。私の責任でレイシフトを実行しよう。
+[k]
+
+[charaFace A 8]
+
+＠ダ・ヴィンチ
+それじゃ、気を確かに持って、いってらっしゃい～。[r]頼んだよ！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_4 1.2]
+[wait fade]
+[charaFadeout A 0.1]
+[scene 10000]
+[wt 0.8]
+[fadein black 0.1]
+[wait fade]
+
+[effect bit_talk_07]
+[se ad12]
+[wt 4.0]
+[fadeout white 1.0]
+[wait fade]
+[wt 1.5]
+
+[charaFadein H 0 0,260]
+
+[charaSet A 1098124510 1 ダ・ヴィンチ]
+[charaSet D 99502600 1 マシュ]
+[fadein white 1.0]
+[wait fade]
+
+[wt 0.7]
+[charaAttack H normal 0,-220 5.0]
+[wt 7.5]
+
+[wipeout rectangleStripDownToUp 0.4 1]
+[wait wipe]
+[charaFadeout H 0.1]
+[scene 90100]
+[wt 0.4]
+[wipein rectangleStripUpToDown 0.4 1]
+[wait wipe]
+
+[wt 0.7]
+
+[bgm BGM_MAP_4 0.1]
+
+？1：また来てしまった……
+？2：なんだか懐かしいね
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠刑部姫
+……そうかな？[r][#姫:わたし]は意外によく覚えてるけどね。
+[k]
+
+＠刑部姫
+なんかいろいろあったけど、[r]マーちゃんと初めて会った場所だし……えへへ。
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[se ad13]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.3]
+
+＠ダ・ヴィンチ
+レイシフトは無事に成功したようだね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠マシュ
+刑部姫さん、何か周囲に異常などはありませんか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠刑部姫
+うーん？　そう言われても、特におかしなところは……
+[k]
+
+[charaFace B 2]
+
+＠刑部姫
+って、マーちゃん、あそこあそこ！　誰かいる！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_MAP_4 1.0]
+
+[se ad27]
+[seStop ad27 0.2]
+[wt 0.15]
+[se ad27]
+[wt 1.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠F：？？？
+……む。おまえたちは。
+[k]
+
+？1：あなたは……
+？2：ペンテシレイア……じゃ、ない！？
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠フォウ
+フォウフォウ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠F：？？？
+フッ。
+[k]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth G 1]
+[charaDepth F 2]
+[charaFadeout F 0.2]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠G：？？？
+勿論、顧客の顔は覚えているとも。[r]久しぶりだな。
+[k]
+
+＠G：？？？
+そちらは覚えているか？[r]ユニヴァースどこでもクリック一本迅速配達、
+[k]
+
+＠G：？？？
+常にエポックをメイキングする[r]宇宙を股にかけたスペース通販事業者……
+[k]
+
+[charaEffect G bit_talk_41]
+
+＠G：？？？
+[f large]アマゾネス・ドットコム！！
+[k]
+
+＠G：？？？
+[f large]ＣＥＯである！
+[k]
+
+
+[branch lblIsGirlConf]
+
+[label lblNotGirl]
+
+[charaSet A 5009001 1 ダ・ヴィンチ]
+[charaSet B 6031001 1 刑部姫]
+[charaSet C 98002000 1 フォウ]
+[charaSet D 98001000 1 マシュ]
+[charaSet E 98110000 1 柳生但馬守]
+[charaSet F 7027300 1 アマゾネスＣＥＯ_普通]
+[charaSet G 1098119600 1 アマゾネスＣＥＯ_ろくろ]
+[verticalImageSet H cut045_bg 1]
+[charaSet J 5009000 1 エフェクト用]
+
+[charaScale H 1.01]
+
+[scene 10204]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ade74]
+[seVolume ade74 0 0.6]
+[seVolume ade74 0.7 1.0]
+[wt 1.7]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[seStop ade74 0.1]
+[wt 0.5]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠ダ・ヴィンチ
+さて、事情聴取を始めようか。[r]どうせゲロっちゃうなら早いほうがいいよ～？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.4 1]
+[wt 0.5]
+[charaFace B 2]
+
+＠刑部姫
+違います誤解です[#姫:わたし]はむーじーつー！[r]ホントに何もしてないんだってば！
+[k]
+
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？1：（じーっ）
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠刑部姫
+マーちゃん？　何その目！？[r]メジェド様みたいな目で見てくるのは止めてー！？
+[k]
+
+？2：この慌てっぷり、逆に嘘じゃない気がする
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠刑部姫
+え、信じてくれるの？　[wt 0.3][charaFace B 6][charaMove B 0,15 0.2][charaMoveScale B 1.2 0.3][wt 0.4]や[se ad478][seVolume ad478 0 0.5]ったー、[charaMoveReturn B 0,55 0.4]さすがマーちゃん！[r]心の友よ！
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaScale B 1.0]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+
+＠マシュ
+ですが……そうすると、[r]この異変の原因はいったい何なのでしょう？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+うん。これは規模そのもので言えばひどく小さくは[r]あるが、我々にとっては見過ごせない脅威だ。
+[k]
+
+＠ダ・ヴィンチ
+過去からの刺客とも言えるかもしれない。[r]もう一度、データを出してみよう。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[se ad15]
+[wt 0.3]
+[se ad172]
+[wt 1.2]
+[seStop ad172 0.1]
+
+[fadeout black 0.3]
+[wait fade]
+[charaPut J 1]
+[charaEffect J bit_talk_security]
+[scene 48700]
+[se ad1]
+[fadein black 0.5]
+[wait fade]
+
+[wt 3.2]
+
+[fadeout black 0.5]
+[wait fade]
+[charaEffectDestroy J]
+[scene 10204]
+[fadein black 0.3]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠マシュ
+まさか再びこの光景を見ることになるとは[r]思いもよりませんでした……。
+[k]
+
+？1：出たな、チェイテピラミッド姫路城……！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠刑部姫
+……いやホント、なんでまだあるの！？[r]あれって消えたはずじゃない？
+[k]
+
+？2：去年のサバイバルカジノ以来だね
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠刑部姫
+そう言われると、何だか身近に感じられて[r]ふっしぎ～♪
+[k]
+
+[charaFace B 5]
+
+＠刑部姫
+……でもさ、なんでまだあるの？[r]大本のあれって消えたはずじゃない？
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+そのはずだったんだけど……[r]どういうわけか再復活している。
+[k]
+
+[charaFace A 0]
+
+＠ダ・ヴィンチ
+でもさっき言った通り、[r]規模としては本当に小さな特異点だ。
+[k]
+
+＠ダ・ヴィンチ
+以前の特異点チェイテの[#残滓:ざんし]、[r]ちょっとした揺り戻しだとは思うけど、
+[k]
+
+＠ダ・ヴィンチ
+なぜこのタイミングで再発生したかがわからない。[r]人為的なものかとも考えたんだけど[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠刑部姫
+何度も言うけど違うからね！？[r][#姫:わたし]は何もしてませーん！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+とはいえ、エリザベートもクレオパトラも[r]聞き取り調査の結果はシロだった。
+[k]
+
+[charaFace A 4]
+
+＠ダ・ヴィンチ
+キミにも心当たりがないとなると……うーん、困ったな。
+[k]
+
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth B 2]
+
+[se ad452]
+[seVolume ad452 0 0.1]
+[seVolume ad452 1.2 1.0]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 352,0]
+[wt 0.2]
+[charaMove E 256,0 1.0]
+[wt 0.8]
+[seStop ad452 0.1]
+
+＠柳生但馬守
+……ここは一つ。[r]一応の[#下手人:げしゅにん]を立ててはいかがか。
+[k]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 0]
+
+＠刑部姫
+それ[#姫:わたし]だよね！？[r]どう考えても[#姫:わたし]だよね！？
+[k]
+
+[charaFace E 1]
+
+＠柳生但馬守
+ははは。
+[k]
+
+[charaMove E 144,0 1.5]
+[se ad452]
+[wt 1.3]
+[seStop ad452 1.0]
+[charaFadeout E 0.4]
+[wt 1.0]
+
+[charaFace B 2]
+
+＠刑部姫
+こっわ！[r]冗談だとわかっててもこっわ！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.4]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+？1：こうなったら
+？2：実際行って調査してみるしかないのでは
+？！
+
+＠ダ・ヴィンチ
+お願いできるかな？
+[k]
+
+＠ダ・ヴィンチ
+ただ、マシュはどうしても外せない[r]大きめのメディカルチェックがあるから、
+[k]
+
+＠ダ・ヴィンチ
+今回はお留守番だ。[r]こっちで私のサポートをしてもらうことになるよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠マシュ
+そうなのです。[r]お力になれずにすみません、先輩……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠刑部姫
+しょーがない、引きこもりたいところだけど[r][#姫:わたし]がついてってあげるー。
+[k]
+
+[bgm BGM_EVENT_4 0.1]
+
+[charaFace B 5]
+
+＠刑部姫
+自分の知らないところでアレが出てきてるの、[r]ちょっと……[wt 0.4][charaFace B 2]というか、かなり不気味だしね！
+[k]
+
+[charaFace B 4]
+
+＠刑部姫
+いや、ホントになんでなんだろ。
+[k]
+
+＠刑部姫
+誰かの仕業だとしても、[#姫:わたし]たち以外に[r]アレを知ってるヒトなんていないと思うけどな……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠マシュ
+刑部姫さんに同行していただけるなら安心ですね。[r]ありがとうございます！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+それじゃ、気を確かに持って、いってらっしゃい～。[r]頼んだよ！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_4 1.2]
+[wait fade]
+[charaFadeout A 0.1]
+[scene 10000]
+[wt 0.8]
+[fadein black 0.1]
+[wait fade]
+
+[effect bit_talk_07]
+[se ad12]
+[wt 4.0]
+[fadeout white 1.0]
+[wait fade]
+[wt 1.5]
+
+[charaFadein H 0 0,260]
+
+[charaSet A 98111500 1 ダ・ヴィンチ]
+[charaSet D 99502600 1 マシュ]
+[fadein white 1.0]
+[wait fade]
+
+[wt 0.7]
+[charaAttack H normal 0,-220 5.0]
+[wt 7.5]
+
+[wipeout rectangleStripDownToUp 0.4 1]
+[wait wipe]
+[charaFadeout H 0.1]
+[scene 90100]
+[wt 0.4]
+[wipein rectangleStripUpToDown 0.4 1]
+[wait wipe]
+
+[wt 0.7]
+
+[bgm BGM_MAP_4 0.1]
+
+？1：また来てしまった……
+？2：なんだか懐かしいね
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠刑部姫
+……そうかな？[r][#姫:わたし]は意外によく覚えてるけどね。
+[k]
+
+＠刑部姫
+なんかいろいろあったけど、[r]マーちゃんと初めて会った場所だし……えへへ。
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[se ad13]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-90]
+[wt 0.3]
+
+＠ダ・ヴィンチ
+レイシフトは無事に成功したようだね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠マシュ
+刑部姫さん、何か周囲に異常などはありませんか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠刑部姫
+うーん？　そう言われても、特におかしなところは……
+[k]
+
+[charaFace B 2]
+
+＠刑部姫
+って、マーちゃん、あそこあそこ！　誰かいる！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_MAP_4 1.0]
+
+[se ad27]
+[seStop ad27 0.2]
+[wt 0.15]
+[se ad27]
+[wt 1.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠F：？？？
+……む。おまえたちは。
+[k]
+
+？1：あなたは……
+？2：ペンテシレイア……じゃ、ない！？
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠フォウ
+フォウフォウ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠F：？？？
+フッ。
+[k]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth G 1]
+[charaDepth F 2]
+[charaFadeout F 0.2]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠G：？？？
+勿論、顧客の顔は覚えているとも。[r]久しぶりだな。
+[k]
+
+＠G：？？？
+そちらは覚えているか？[r]ユニヴァースどこでもクリック一本迅速配達、
+[k]
+
+＠G：？？？
+常にエポックをメイキングする[r]宇宙を股にかけたスペース通販事業者……
+[k]
+
+[charaEffect G bit_talk_41]
+
+＠G：？？？
+[f large]アマゾネス・ドットコム！！
+[k]
+
+＠G：？？？
+[f large]ＣＥＯである！
+[k]
+
+
+[label lblIsGirlConf]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

@@ -1,0 +1,278 @@
+
+
+＄94-01-76-12-1-1
+[soundStopAll]
+
+[charaSet A 10004000 1 メカエリチャン]
+[charaSet B 6031001 1 刑部姫]
+[charaSet C 99502600 1 マシュ]
+[charaSet D 6026001 1 新宿のアサシン]
+[charaSet E 6027001 1 ふーやーちゃん]
+[charaSet F 98111500 1 ダ・ヴィンチ]
+[charaSet G 6017001 1 カーミラ]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[scene 48900]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_3 0.1]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠メカエリチャン
+[#性能:さいのう]はあっても性格がなっていません！[r]自己鍛錬を怠った領主に明日はないと知りなさい！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠刑部姫
+うわーん、負けたー！[r]フツーに押し切られたー＆お説教されたー！
+[k]
+
+[charaFace B 5]
+
+[bgmStop BGM_EVENT_3 0.7]
+
+＠刑部姫
+なので逃げる！[r]折り紙、とう！
+[k]
+
+[messageOff]
+
+[charaMoveReturn D 0,-10 0.2]
+[wait charaMove B]
+[se ad73]
+[charaFadeout B 0.1]
+[wt 0.3]
+[se ade123]
+[seVolume ade123 0 0.4]
+[wt 0.7]
+[seStop ade123 1.5]
+[wt 1.0]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+鶴の折り紙に乗って逃げました！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠メカエリチャン
+また！[r]もう、仕切り直しランクＡ相当の逃げ腰ね！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠新宿のアサシン
+し、しぶといな！[r]今、割と良い感じの一撃が入った気がしたんだが！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ふーやーちゃん
+まー、仮にも姫様だったからのう。[r]姫ってのは、生き汚いと相場が決まっておる。
+[k]
+
+[charaFace E 1]
+
+＠ふーやーちゃん
+ほら、大体[#攫:さら]われても殺されないし。
+[k]
+
+＠ふーやーちゃん
+虜囚の憂き目にあって蹂躙されようが生き延びて、[r]精神性、価値観が壊れてなければそれで勝ちじゃ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-90]
+
+＠ダ・ヴィンチ
+ともかく、更に追跡だ！
+[k]
+
+[charaFace F 1]
+
+＠ダ・ヴィンチ
+しかし逃げては追い逃げては追いをしていると、[r]レトロゲームのような感覚だね。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠マシュ
+待ってください、マスター。[r]前方に何か……。
+[k]
+
+[messageOff]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.0]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[charaPut H 1200,1200]
+[wt 0.3]
+
+[charaSet B 1098119600 1 アマゾネスＣＥＯ]
+
+[wipein leftToRight 0.4 1]
+[wait wipe]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+これは……。
+[k]
+
+？1：エレベーター……かな？
+？！
+
+[charaFace C 7]
+
+＠マシュ
+どうやら、刑部姫さんはこれに乗って逃亡したようです。[r]追うには乗らなければいけませんが……。
+[k]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+？1：よし、いこう！
+？！
+
+[bgm BGM_EVENT_4 0.1]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠メカエリチャン
+無論です。あの折り紙ごと、[r]負け犬根性をギタギタにしてさしあげます！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠新宿のアサシン
+威勢がいいな、マスターにメカエリ！[r]よっしゃ、行くぞ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ふーやーちゃん
+[#妾:わらわ]も乗るぞー！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠カーミラ
+当然、乗るわ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アマゾネスＣＥＯ
+無論スムーズに。[r]注文から当日発送。そう、アマゾンズならね。
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_4 0.7]
+[wipeout circleIn 0.4 1.0]
+[wait wipe]
+[charaFadeout B 0.1]
+[wt 1.0]
+[scene 10000]
+[wipein circleIn 0.4 1.0]
+[wait wipe]
+
+[se ade127]
+[seVolume ade127 0 0.05]
+[wt 0.1]
+[seVolume ade127 1.0 0.7]
+[wt 1.5]
+[seStop ade127 1.5]
+
+＠一同
+……。[r]……。
+[k]
+
+
+＠一同
+[f large]狭い。
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

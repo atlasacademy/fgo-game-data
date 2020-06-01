@@ -1,0 +1,832 @@
+
+
+＄94-03-35-52-0-0
+
+[soundStopAll]
+
+[charaSet A 1098177400 1 ラムダ_第一サングラス]
+[charaSet B 3040001 1 ラムダ]
+[charaSet C 3040002 1 ラムダ_第三]
+[charaSet D 1098188300 1 キングプロテア]
+[charaSet E 98115000 1 アナウンス]
+
+[imageSet F back10000 1]
+[charaFilter F silhouette 0000cd80]
+
+[equipSet I 9807510 1 バレンタイン礼装]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+＠
+[FFFFFF][-][r]　　　　　　　　　　－－－１日前－－－
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66800]
+[branch lblConf]
+[label lblNotClear]
+[scene 10400]
+[label lblConf]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠A：ラムダ
+[tVoice ValVoice_304000 0_V010]
+ところで。[r]明日の予定はどうなっているのかしら。[wait tVoice]
+[k]
+
+？1：２月14日、即ちバレンタイン
+
+？！
+
+＠A：ラムダ
+[tVoice ValVoice_304000 0_V020]
+そう。奇遇ね。そして憐れね。[wait tVoice]
+[k]
+
+＠A：ラムダ
+[tVoice ValVoice_304000 0_V030]
+どんなイベントだか知らないけど、[r]私の公演と被るなんて。[wait tVoice]
+[k]
+
+＠A：ラムダ
+[tVoice ValVoice_304000 0_V040]
+特に理由はありませんが、[r]明日は年に一度のスペシャルステージ。[wait tVoice]
+[k]
+
+＠A：ラムダ
+[tVoice ValVoice_304000 0_V050]
+きっと伝説に残る公演になるでしょう。[r]プロテアもゲストに呼んでいるわ。[wait tVoice]
+[k]
+
+＠A：ラムダ
+[tVoice ValVoice_304000 0_V060]
+[line 6]。[wait tVoice]
+[k]
+
+＠A：ラムダ
+[tVoice ValVoice_304000 0_V070]
+じゃ、そういうコトで。[r]安物のお茶、ご馳走さま。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad95]
+[seVolume ad95 0 0.6]
+[seStop ad95 2.0]
+[charaMove A -50,0 0.4]
+[charaFadeout A 0.4]
+[wt 1.0]
+[se ad8]
+[wt 2.2]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[scene 81600]
+[wt 1.5]
+
+[se ad6]
+[seVolume ad6 0 0]
+
+[fadein black 1.0]
+[seVolume ad6 1.0 1.0]
+[wait fade]
+
+[wt 2.0]
+[seStop ad6 1.5]
+[se ade39]
+[wt 2.5]
+
+＠アナウンス
+[tVoice ValVoice_304000 0_V080]
+ご鑑賞、ありがとうございました。[r]本日のプログラムはこれで終了となります。[wait tVoice]
+[k]
+
+＠アナウンス
+[tVoice ValVoice_304000 0_V090]
+お帰りの際は足下とコイン残量にお気を付けて、[r]心ゆくまでスロットをお楽しみください。[wait tVoice]
+[k]
+
+[messageOff]
+[se ade40]
+[wt 2.2]
+
+？1：そして会場にいる[&自分:わたし]なのだった
+
+？！
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠キングプロテア
+[tVoice ValVoice_304000 0_V100]
+こんにちはー！[bgm BGM_EVENT_55 0.1][r]今日の公演、楽しんでいただけましたかー！？[wait tVoice]
+[k]
+
+[charaFace D 3]
+
+＠キングプロテア
+[tVoice ValVoice_304000 0_V110]
+今回は怪獣役じゃなくて、[r]女神様役だったので……[wait tVoice]
+[k]
+
+＠キングプロテア
+[tVoice ValVoice_304000 0_V120]
+ちょっと緊張していたのですが……[r][%1]さんがいてくれたので……[wait tVoice]
+[k]
+
+[charaFace D 7]
+
+＠キングプロテア
+[tVoice ValVoice_304000 0_V130]
+気持ちがすっっごく楽になって、[r]最後まで失敗せずこなせました！[wait tVoice]
+[k]
+
+＠キングプロテア
+[tVoice ValVoice_304000 0_V140]
+えへへ。メルトリリスも“今回は及第点”って[r]ほめてくれたんですよ。[wait tVoice]
+[k]
+
+[charaFace D 8]
+
+＠キングプロテア
+[tVoice ValVoice_304000 0_V150]
+これも[%1]さんの[r]おかげですね！[wait tVoice]
+[k]
+
+？1：それほどでも
+
+[charaFace D 6]
+
+＠キングプロテア
+[tVoice ValVoice_304000 0_V160]
+いいえ、それほどでもあるのです。[r]いつもアリーナ席にいてくれて、[wait tVoice]
+[k]
+
+＠キングプロテア
+[tVoice ValVoice_304000 0_V170]
+最初に拍手をしてくれて、[r]最後まで拍手をしてくれているの、知っています。[wait tVoice]
+[k]
+
+[charaFace D 1]
+
+＠キングプロテア
+[tVoice ValVoice_304000 0_V180]
+そうやって見守ってもらえるのが、[r]わたしはとても嬉しいので……[wait tVoice]
+[k]
+
+＠キングプロテア
+[tVoice ValVoice_304000 0_V190]
+今回も、ご期待に応えられるよう[r]頑張りました！[wait tVoice]
+[k]
+
+？2：ラムダリリスとは仲がいい[&のかい:の]？
+
+[charaFace D 0]
+
+＠キングプロテア
+[tVoice ValVoice_304000 0_V200]
+仲がいい……というのは、[r]ちょっと違うかもです。[wait tVoice]
+[k]
+
+＠キングプロテア
+[tVoice ValVoice_304000 0_V210]
+わたしたちサクラファイブは[r]どうあってもいがみ合う関係なので……[wait tVoice]
+[k]
+
+[charaFace D 11]
+
+＠キングプロテア
+[tVoice ValVoice_304000 0_V220]
+パッションリップはちょっと怖いし……[r]なんか性格も似ている気がするし……[wait tVoice]
+[k]
+
+[charaFace D 6]
+
+＠キングプロテア
+[tVoice ValVoice_304000 0_V230]
+でも、以前ほど苦手意識はないんですよ。[r]それは他の[#娘:エゴ]たちも同じだと思います。[wait tVoice]
+[k]
+
+＠キングプロテア
+[tVoice ValVoice_304000 0_V240]
+メルトリリスは相性的にわたしに勝てないから[r]怖がる必要がない、というのもあるけど……[wait tVoice]
+[k]
+
+[charaFace D 1]
+
+＠キングプロテア
+[tVoice ValVoice_304000 0_V250]
+わたし、ちょっとだけメルトリリスを[r]見習おうかなって。[wait tVoice]
+[k]
+
+＠キングプロテア
+[tVoice ValVoice_304000 0_V260]
+あの娘が強いのは、自分の造形美を誰よりも[r]信じているからなんだって気づきました。[wait tVoice]
+[k]
+
+＠キングプロテア
+[tVoice ValVoice_304000 0_V270]
+外側からの評価とか、他人の目とか、[r]そういうのぜんぜん気にしてないのです。[wait tVoice]
+[k]
+
+[charaFace D 3]
+
+＠キングプロテア
+[tVoice ValVoice_304000 0_V280]
+いつかそんな風になれたらいいなって……[r]そう思うキングプロテアなのでした。[wait tVoice]
+[k]
+
+？！
+
+[messageOff]
+[charaTalk E]
+[se ade39]
+[wt 1.8]
+[charaFace D 0]
+
+＠アナウンス
+[tVoice ValVoice_304000 0_V290]
+[line 3]ステージは終了しました。[wait tVoice]
+[k]
+
+＠アナウンス
+[tVoice ValVoice_304000 0_V300]
+観客席に残られているお客様には[r]速やかな移動を要請します。[wait tVoice]
+[k]
+
+＠アナウンス
+[tVoice ValVoice_304000 0_V310]
+一番ゲート横の階段をお使いになりますと、[r]控え室まで最短距離で移動できるでしょう。[wait tVoice]
+[k]
+
+[messageOff]
+[se ade40]
+[wt 2.2]
+
+[charaFace D 6]
+
+＠キングプロテア
+[tVoice ValVoice_304000 0_V320]
+えへへ。[r]おしゃべり、バレちゃいました。[wait tVoice]
+[k]
+
+＠キングプロテア
+[tVoice ValVoice_304000 0_V330]
+それではまたいつか、どこかで！[r]次はもっとカッコイイわたしを見せちゃいます！[wait tVoice]
+[k]
+
+[charaFace D 8]
+
+＠キングプロテア
+[tVoice ValVoice_304000 0_V340]
+とぅ～～びぃ～～、[r]こんてぃにゅ～～～～～～！[wait tVoice]
+[k]
+
+[messageOff]
+[charaMove D 0,20 0.6]
+[se ad416]
+[seVolume ad416 0 0.4]
+[seStop ad416 1.0]
+[wt 0.6]
+[charaMove D 0,-40 1.5]
+[charaFadeout D 1.4]
+[shake 0.05 2 2 1.0]
+
+[se ad241]
+[seVolume ad241 0 0.2]
+[se ad214]
+[seVolume ad214 0 0.5]
+[wt 1.0]
+[seStop ad214 1.0]
+[seStop ad241 1.0]
+
+[se ad211]
+[seVolume ad211 0 0]
+[seVolume ad211 1.4 0.5]
+[wt 0.4]
+
+[effect bit_talk_tidal_wave]
+[wt 1.0]
+
+[seStop ad211 0.1]
+[se ad226]
+[seVolume ad226 0 0.8]
+[se ad416]
+[seVolume ad416 0 0.8]
+
+[scene 10001]
+[wt 1.5]
+
+[se ad414]
+[seStop ad414 1.0]
+
+[se ad218]
+[wt 1.0]
+[seStop ad218 1.0]
+[wt 1.5]
+[fadeout white 1.5]
+[wait fade]
+
+[effectDestroy bit_talk_tidal_wave]
+[wt 0.1]
+
+[fadein white 0.1]
+[wait fade]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_55 1.0]
+[wait fade]
+
+[scene 81800]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V350]
+大した勇気ね。[r]あのプロテアと平気で話せるなんて。[wait tVoice]
+[k]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V360]
+それともただの物好きかしら。[r]白鳥も[#家鴨:アヒル]も同じ鳥だ、みたいな。[wait tVoice]
+[k]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V370]
+アルターエゴなら誰でもいい、と[r]誤解してしまいそう。[wait tVoice]
+[k]
+
+[charaFace B 6]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V380]
+ま、プロテアに話し相手ができたのは[r]いいコトだけど。[wait tVoice]
+[k]
+
+[charaFace B 1]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V390]
+それで、寄り道が大好きな一般人さん？[r]ここには何をしに来たのかしら？[wait tVoice]
+[k]
+
+？1：約束通り、両手いっぱいの贈り物を
+
+[charaFace B 3]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V400]
+…………よどみなく返したわね。[wait tVoice]
+[k]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V410]
+アナタ、たまに強気になるのはどうかと思うわ。[r]そういう時にかぎって、表情が穏やかなのも。[wait tVoice]
+[k]
+
+[charaFace B 7]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V420]
+……はい、そこのテーブルに置いておいて。[r]ありがたく受け取っておきましょう。[wait tVoice]
+[k]
+
+？2：甘い予感がしたので
+
+[charaFace B 0]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V430]
+ひねりのない返答ね。[r]退屈すぎて膝のトゲが戻ってしまいそう。[wait tVoice]
+[k]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V440]
+ま、期待していなかったから気落ちはしないけど。[r]今日の主役はこちらなワケだし。[wait tVoice]
+[k]
+
+？！
+
+[charaFace B 11]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V450]
+さて。じゃあ、お望みの台詞を言ってあげる。[r]回りくどいのは趣味じゃないし。[wait tVoice]
+[k]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V460]
+[line 6]。[wait tVoice]
+[k]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V470]
+いつまでも懲りない[#私のマスター]。[r]あまーいバレンタインのチョコレートをどうぞ。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout B 0.4]
+[bgmStop BGM_EVENT_77 2.0]
+
+[se bas2]
+[charaFace I 0]
+[charaFadein I 0.5 0,-70]
+[wt 2.0]
+[charaFadeout I 0.4]
+[wt 0.5]
+
+？1：これは……ペンギンだね
+？2：ペンギン……だねこれは
+
+？！
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V480]
+[#記録媒体:メ　モ　リ　ー]が[messageShake 0.05 4 4 0.2]ザクザクな[#かき氷:フラッペ]で出来ているの！？[r]リヴァイアサンよ、リヴァイアサン！[wait tVoice]
+[k]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V490]
+仮にペンギンそのものだとしても、[r]私の従者はリヴァイアサンなの！[wait tVoice]
+[k]
+
+[charaFace B 0]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V500]
+…………まあいいわ。[wait tVoice]
+[k]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V510]
+俗人には理解できない神話上の話だから。[r]この件についてはあえて説明しません。[wait tVoice]
+[k]
+
+？1：（そこを一番説明してほしいんだけどなぁ）
+
+？！
+
+[charaFace B 1]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V520]
+それより[line 3][r]分かっているわね、マスター？[wait tVoice]
+[k]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V530]
+私から人間に贈るものはすべて蜜という名の毒。[r]それはバレンタインでも例外ではないわ。[wait tVoice]
+[k]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V540]
+そのチョコレートはアナタの覚悟を試す[#魔薬:まやく]。[r]私たちの関係を明確にする[#陥穽:かんせい]。[wait tVoice]
+[k]
+
+[charaFace B 11]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V550]
+具体的に言うと[line 3][r]食べたら私の従者、ペンギンになってしまうの。[wait tVoice]
+[k]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V560]
+それでも食べられ[line 3][wait tVoice]
+[k]
+
+[messageOff]
+[se ade104]
+[seVolume ade104 0 0.7]
+[seStop ade104 1.2]
+[wt 1.0]
+[se ade161]
+[seStop ade161 0.5]
+[wt 0.7]
+
+？1：うーん美味しい
+？2：メルトな中にラムダな隠し味
+
+？！
+
+[charaFace B 8]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V570]
+こ[messageShake 0.05 4 4 0.2]の人もう食べてるんですけど！？[wait tVoice]
+[k]
+
+[charaFace B 9]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V580]
+しかも何の変化もないし！[r]どうなっているの、いったい！？[wait tVoice]
+[k]
+
+？1：とっくにファンだから効かなかったんだね
+
+？！
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaFace B 3]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V590]
+[line 6]。[wait tVoice]
+[k]
+
+[messageOff]
+[se ade158]
+[charaFaceFade B 14 0.3]
+[wt 0.5]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V600]
+まあいいでしょう。今のは余興です。[bgm BGM_EVENT_77 0.1][wait tVoice]
+[k]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V610]
+私の本命にあたるチョコレートは[r]もっと美しい、水晶の如きチョコなのですから。[wait tVoice]
+[k]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V620]
+ところで[line 3]今の、ためらう事のない[r]慣れた手つきで気になったのだけど。[wait tVoice]
+[k]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V630]
+[%1]。他のサーヴァントからの[r]プレゼントは、一つでも受け取っていて？[wait tVoice]
+[k]
+
+
+？1：まだ受け取っていない
+
+[branch select01_01]
+
+？2：もう受け取っている
+
+[branch select01_02]
+
+？！
+
+[label select01_01]
+
+[messageOff]
+[se ade158]
+[charaFaceFade B 4 0.3]
+[wt 0.5]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V640]
+まあ……こんなにサーヴァントがいる[r]カルデアで、なんて悲しい生き物なのかしら……[wait tVoice]
+[k]
+
+[charaFace B 6]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V650]
+でも安心して。私はそんな事で評価を下げないから。[r]むしろ上げたから。[wait tVoice]
+[k]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V660]
+大丈夫。アナタなら必ず他にも受け取れるわ。[wait tVoice]
+[k]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V670]
+まだ、という事は、これから受け取る、という[r]可能性がある、という事だもの。[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_77 0.5]
+[charaFace B 1]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V680]
+なら監禁よね。出会いそのものがなくなれば、[r]受け取るチョコはもう増えないのだから。[wait tVoice]
+[k]
+
+？1：え
+？2：しまった
+
+
+？！
+
+[messageOff]
+[bgm BGM_EVENT_53 0.1]
+[charaDepth F 10]
+[charaScale F 1.01]
+[charaFadeTime F 0.9 0.3]
+[wt 1.0]
+
+[charaFace B 7]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V690]
+どうか怖がらないで、憐れなひと。[r]ただ丸一日、私の[#海:なか]で溺れるだけです。[wait tVoice]
+[k]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V700]
+明日になれば解放してあげる。[r]経験値も命も奪いません。だいたい[line 3][wait tVoice]
+[k]
+
+[charaFace B 12]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V710]
+[#悪夢:こい]に呑まれる事に何の不満があるのかしら？[r]私のファンなら光栄でしょう？[wait tVoice]
+[k]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V720]
+はい、あーん♡[wait tVoice]
+[k]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V730]
+女の嫉妬というのがどんなものか、[r]思い知っていただけて？[wait tVoice]
+[k]
+
+[charaFadeTime F 0.9 0.6]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V740]
+落ち行く先は水天宮、秋葉のごとき[#魔荷悪巣:マ ニ ア ク ス]。[r]ふふ[line 3][wait tVoice]
+[k]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V750]
+これに懲りたらバレンタインデイが[r]『いい日』だなんて思わないコトね、お魚さん？[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeTime F 2.0 1.0]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_53 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+[branch select01_end]
+
+[label select01_02]
+
+[messageOff]
+[se ade158]
+[charaFaceFade B 1 0.3]
+[wt 0.5]
+[bgmStop BGM_EVENT_77 0.5]
+
+＠ラムダ
+[tVoice ValVoice_304000 0_V760]
+そう。ならお仕置きね。[r]分かっていたコトだけど胸が高鳴るわ。[wait tVoice]
+[k]
+
+？1：え
+？2：たっまし
+
+？！
+
+[messageOff]
+[se ad241]
+[seVolume ad241 0 0.2]
+[se ad214]
+[seVolume ad214 0 0.5]
+[wt 1.5]
+
+[seStop ad214 1.0]
+[seStop ad241 1.0]
+[se ad211]
+[seVolume ad211 0 0]
+[seVolume ad211 1.4 0.5]
+[wt 0.4]
+
+[effect bit_talk_tidal_wave]
+[wt 1.0]
+
+[seStop ad211 0.1]
+[se ad226]
+[seVolume ad226 0 0.8]
+[se ad416]
+[seVolume ad416 0 0.8]
+
+[charaFadeout B 0.1]
+[scene 81600 0.5]
+[wt 1.5]
+
+[se ad414]
+[seStop ad414 1.0]
+
+[se ad218]
+[wt 1.0]
+[seStop ad218 1.0]
+[wt 3.5]
+
+[bgm BGM_EVENT_52 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.7 1]
+[wt 0.7]
+
+＠C：ラムダ
+[tVoice ValVoice_304000 0_V770]
+気楽なトークはここでおしまい。[r]悪夢の追加公演といきましょうか。[wait tVoice]
+[k]
+
+[charaFace C 1]
+
+＠C：ラムダ
+[tVoice ValVoice_304000 0_V780]
+リヴァイアサンをメインにした私は[r]普段より嫉妬深いと知っていたでしょう？[wait tVoice]
+[k]
+
+＠C：ラムダ
+[tVoice ValVoice_304000 0_V790]
+そんな私の前で“浮気している”なんて、[r]堂々と言ったんだもの。[wait tVoice]
+[k]
+
+[charaFace C 11]
+
+＠C：ラムダ
+[tVoice ValVoice_304000 0_V800]
+挑戦、と受け取っていいのよねぇ？[r]命知らずな魚の餌さん？[wait tVoice]
+[k]
+
+＠C：ラムダ
+[tVoice ValVoice_304000 0_V810]
+一般客はスロットで溶かしていたけど、[r]アナタは特別、私の[#肢体:からだ]で[#蕩:と]かしてあげる。[wait tVoice]
+[k]
+
+＠C：ラムダ
+[tVoice ValVoice_304000 0_V820]
+見てなさい[line 3]他のサーヴァントの事なんて[r]口にできないくらい、[wait tVoice]
+[k]
+
+＠C：ラムダ
+[tVoice ValVoice_304000 0_V830]
+[#頭:のう]の髄まで、たっぷりと、[r]私の[#虜:とりこ]にしてあげるから[line 3][wait tVoice]
+[k]
+
+
+[messageOff]
+[charaDepth F 10]
+[charaScale F 1.01]
+[charaFadeTime F 2.5 1.0]
+[wt 3.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_52 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+[label select01_end]
+

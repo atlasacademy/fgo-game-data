@@ -1,0 +1,115 @@
+
+
+
+＄94-04-78-18-2-0
+
+
+[soundStopAll]
+
+
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 25005000 1 ボイジャー]
+[charaSet C 3043000 1 エリセ]
+[charaSet D 98025100 1 ？？？]
+
+[scene 47001]
+
+[pictureFrame cut170_gameframe_dark]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[pictureFrame]
+[pictureFrameTop cut170_gameframe_dark]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠マシュ
+エリセさん、後方100メートルの地点に出現を確認。[r]ぴったりとついてきます。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+
+＠？？？
+[image berserker_language_2]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-50]
+＠エリセ
+……かれらはルールの一部だ。だから、私を襲う。[r]そういう役割を受け入れ、完全に取り込まれてる。
+[k]
+
+[messageOff]
+[wt 0.1]
+[effect bit_talk_v_slash01]
+[se ad471]
+[charaFadeout C 0.1]
+
+[wt 0.7]
+[seStop ad471 0.5]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+[wt 0.1]
+[charaShake D 0.05 3 3 0.4]
+[wt 1.0]
+
+[se ad42]
+[charaSpecialEffect D enemyErasure 1 1.5]
+[wt 0.5]
+[seStop ad42 1.0]
+[wait charaSpecialEffect D]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+＠エリセ
+[line 3]私も、同じようなものだった。[r]“死神”として生きることで何者かになった気がしてた。
+[k]
+
+[charaFace C 0]
+＠エリセ
+ボイジャー、きみと出会うまではね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-50]
+＠ボイジャー
+エリセ……。
+[k]
+
+[messageOff]
+[maskout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

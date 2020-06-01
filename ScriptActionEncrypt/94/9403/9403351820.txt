@@ -1,0 +1,155 @@
+
+＄94-03-35-18-2-0
+
+[charaSet A 6012001 1 サンソン]
+[charaSet B 5015002 1 アマデウス]
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+
+[scene 10400]
+
+[fadein black 2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.6]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+＠サンソン
+[tVoice ValVoice_601200 0_V010]
+チョコレート……ですか。[r]あ、いえ知ってます。[wait tVoice]
+[k]
+
+＠サンソン
+[tVoice ValVoice_601200 0_V020]
+当時、僕たちの間でも流行り始めていたもので……。[wait tVoice]
+[k]
+
+＠サンソン
+[tVoice ValVoice_601200 0_V030]
+甘く、カロリー豊かで病人に対する栄養としては[r]ピッタリだったのですよ。[wait tVoice]
+[k]
+
+＠サンソン
+[tVoice ValVoice_601200 0_V040]
+そうだ、チョコレートの材料はまだ余っていますか？[r]良ければ、僕が飲んでいたものをお作りしましょう。[wait tVoice]
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad8]
+[wait se ad8]
+
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠サンソン
+[tVoice ValVoice_601200 0_V050]
+お待たせしました。[r]こちらです。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+
+＠サンソン
+[tVoice ValVoice_601200 0_V060]
+チョコレートに卵黄を加えて温めたものです。[wait tVoice]
+[k]
+
+＠サンソン
+[tVoice ValVoice_601200 0_V070]
+甘く、滋味深く、体に良い。[wait tVoice]
+[k]
+
+[charaFace A 3]
+＠サンソン
+[tVoice ValVoice_601200 0_V080]
+もっとも、最新の食事を摂っているマスターに[r]お出しするのは些か恥ずかしいのですが[line 3]。[wait tVoice]
+[k]
+
+？1：ありがとう
+？2：元気が出るよ
+？！
+
+[charaFace A 1]
+＠サンソン
+[tVoice ValVoice_601200 0_V090]
+それは光栄です。[wait tVoice]
+[k]
+
+
+＠サンソン
+[tVoice ValVoice_601200 0_V100]
+ああ、早速ですが私も戴いたチョコを食べても[r]よろしいですか？[wait tVoice]
+[k]
+
+＠サンソン
+[tVoice ValVoice_601200 0_V110]
+しばらくの間、甘いものでも食べながら、[r]のんびりと過ごすことにしましょう。[wait tVoice]
+[k]
+
+？1：マリーさんを呼ぶ？
+？！
+
+[charaFace A 0]
+＠サンソン
+[tVoice ValVoice_601200 0_V120]
+マリーを？[wait tVoice]
+[k]
+
+＠サンソン
+[tVoice ValVoice_601200 0_V130]
+……。[r]……。[wait tVoice]
+[k]
+
+＠サンソン
+[tVoice ValVoice_601200 0_V140]
+……いえ、止めておきましょう。[r]今、マリーを呼ぶのは危険な気がします。[wait tVoice]
+[k]
+
+[charaFilter B silhouette 00000000]
+
+[charaFadein B 0.1 -512,0]
+[charaMove B -312,0 1.4]
+
+＠サンソン
+[tVoice ValVoice_601200 0_V150]
+いえ、マリーはもちろん歓迎しますが……。[tdelay 1 4.8 1][charaFace A 4][delay -][r]……アマデウスが……ついてきそうな予感が……。[wait tVoice]
+[k]
+
+[delayStop 1]
+
+？1：あー……
+？！
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+[soundStopAll]
+[end]

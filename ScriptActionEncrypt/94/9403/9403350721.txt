@@ -1,0 +1,343 @@
+
+＄94-03-35-07-2-1
+
+[soundStopAll]
+
+[charaSet A 5005001 1 アンデルセン]
+[charaSet B 6031000 1 刑部姫]
+[charaSet C 5042000 1 紫式部]
+[charaSet D 99502600 1 マシュ]
+[charaSet E 1098162300 1 セミラミス]
+[charaSet F 98002000 1 フォウ]
+[charaSet H 98115000 1 エフェクト用]
+[charaSet I 98115000 1 エフェクト用]
+[charaSet J 98115000 1 エフェクト用]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_41]
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 70700]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.4]
+
+[se ad7]
+[charaPut J 1]
+[charaFace B 2]
+[charaMoveScale B 1.1 0.2]
+[charaMove B 0,10 0.2]
+[charaFadeout B 0.2]
+[wt 0.2]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_41]
+[wt 0.3]
+
+[se bac52]
+[charaScale H 0.8]
+[charaPut H 280,90]
+[charaEffect H bit_talk_14]
+[wt 0.25]
+
+[se bac53]
+[charaScale I 0.8]
+[charaPut I -300,-100]
+[charaEffect I bit_talk_14]
+[wt 0.25]
+
+[se bac52]
+[charaScale J 0.8]
+[charaPut J 120,-200]
+[charaEffect J bit_talk_14]
+[wt 0.25]
+
+
+[se bac18]
+[flashin once 0.1 0.5 FFFFFF80 FFFFFF00]
+[wt 1.0]
+[charaMoveScale B 1.0 0.1]
+
+
+[se ad7]
+[charaScale A 1.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[charaMoveScale A 1.0 0.2]
+[wt 0.8]
+
+[charaTalk depthOff]
+[charaDepth H 10]
+[charaPut H 1]
+[charaEffect H bit_talk_easy_spell_r]
+[cueSe Battle bac32]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_easy_spell_r]
+
+[charaTalk depthOn]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.2]
+
+[se bas9]
+[backEffect bit_talk_attack_buf]
+[wt 0.8]
+
+[se bas9]
+[effect bit_talk_np_buf]
+[wt 0.8]
+
+[se bas3]
+[fowardEffect bit_talk_cure]
+[wt 1.7]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_36]
+
+[charaScale H 1.0]
+[charaScale I 1.0]
+[charaScale J 1.0]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠アンデルセン
+今だ！　仕留めろ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠紫式部
+はい！
+[k]
+
+
+[messageOff]
+[charaFace C 4]
+[wt 1.2]
+
+[charaFace C 0]
+＠紫式部
+[line 3]限りあれば……
+[k]
+
+
+＠紫式部
+[line 3]薄墨衣　浅けれど……
+[k]
+
+[charaFace C 5]
+＠紫式部
+[line 3]涙ぞ袖を　淵となしける[line 3]
+[k]
+
+[charaFace C 2]
+＠紫式部
+[line 6]宝具解放、『[#源氏物語:げんじものがたり]・[#葵:あおい]・[#物:もの]の[#怪:け]』。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 0.6]
+[wt 0.1]
+
+[se ad39]
+[charaPut I 1]
+[wt 1.5]
+[seStop ad39 0.4]
+
+[fadeout white 0.4]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaPut I 1200,1200]
+[charaEffectStop I bit_talk_36]
+[wt 0.8]
+
+[se ade249]
+[wt 3.0]
+
+[scene 70700]
+[wt 1.0]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+
+[fadein white 1.0]
+[wait fade]
+
+[se ad18]
+[se ad24]
+[wt 1.8]
+
+[se ad42]
+[wt 1.0]
+[seStop ad42 0.6]
+[wt 1.6]
+
+
+[se ad39]
+[charaPut I 1]
+[charaEffect I bit_talk_warp]
+[wt 3.5]
+[seStop ad39 0.4]
+[wt 0.4]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠紫式部
+呪本、最後の一冊にして最初の一冊。[r]これにて回収いたします。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se adm20]
+[charaPut I 1]
+[charaEffectStop I bit_talk_warp]
+[fowardEffect bit_talk_22]
+[wt 1.5]
+[seStop adm20 1.0]
+[wt 2.5]
+
+[bgm BGM_EVENT_6 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠マシュ
+呪本の回収を完了！[r]魔力量……[wt 0.7][charaFace D 1]あっ、チョコ作成用リソース全回復！　です！
+[k]
+
+＠マシュ
+これで、完全回収ですね！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠セミラミス
+うむうむ。こちらでも確認しているぞ。[r]間違いなく、事が起きる前の数値に完全回復しているな。
+[k]
+
+＠セミラミス
+不始末不始末とそこの女は呻いていたが、[r]何、結果良ければどうということもない。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠アンデルセン
+自分に厳しく、他人にはさらに厳しい女帝にしては[r]恩情に満ちた言葉だ。随分と甘い。[wt 0.7][se bac23][effect bit_talk_12_green_R -100,0][charaMove A 70,0 0.15]おっと。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠セミラミス
+[line 3]チョコレートだけに、などと申せば首を落とすぞ。[r]童話作家。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠アンデルセン
+言わん言わん。[#強:こわ]い女ほど甘味に弱い、[r]などと口が裂けても言わんとも。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠フォウ
+フォウフォウ、フォーウ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠刑部姫
+はー、疲れたーっ。[r]紫式部先輩もお疲れさまでした！　お疲れしたっ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠紫式部
+お疲れさまでした。[r]そして何より、皆様のお力添えに感謝いたします。
+[k]
+
+？1：大切な手紙、あった？
+
+？！
+
+[charaFace C 1]
+＠紫式部
+[line 5]はい。間違いなく。[r]この手にて、確かに回収いたしました。
+[k]
+
+＠紫式部
+ありがとうございます。[r][%1]様！
+[k]
+
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_6 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

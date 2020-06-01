@@ -1,0 +1,2231 @@
+
+
+＄94-04-49-07-1-0
+
+[soundStopAll]
+
+[skip false]
+
+[branchQuestNotClear lblNotClear1 3000320 4]
+[label lblClear1]
+[flag IsGirl true]
+[branch lblIsClearConf1]
+[label lblNotClear1]
+[flag IsGirl false]
+[label lblIsClearConf1]
+
+[skip true]
+
+[branch lblNotGirl IsGirl false]
+
+[label lblGirl]
+
+[charaSet B 7033002 1 アルジュナ・オルタ]
+[charaSet C 7035001 1 森長可]
+[charaSet D 4039002 1 マンドリカルド]
+[charaSet E 7031000 1 水着ジャンヌ・オルタ]
+[charaSet F 5032000 1 水着ネロ]
+[charaSet G 1040000 1 水着葛飾北斎]
+[charaSet H 2001000 1 エミヤ]
+[charaSet I 1001000 1 アルトリア]
+[charaSet J 5009000 1 エフェクト用]
+
+
+[scene 10000]
+
+
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_71 0.1]
+
+＠女の声
+[line 3]そうか。[r]ならば作戦を次のフェイズに進める。
+[k]
+
+
+＠
+本当にいいのか、と問う。[r]答えはわかってはいたが。
+[k]
+
+
+＠女の声
+無論だ。あれには消えてもらわねばならない。
+[k]
+
+＠女の声
+[line 3]なんとしても。
+[k]
+
+＠女の声
+予定の動きに取りかかれ、[r]■■■■■■■■。
+[k]
+
+
+＠
+頷き、了解の意を告げる。[r]彼女はそれ以上の余計な言葉を欲しない。
+[k]
+
+＠
+話は終わりだという気配を受け、[r][#踵:きびす]を返して彼女の前から立ち去った。
+[k]
+
+＠
+周りに誰もいなくなったところで[line 3][r]自然、溜め息が漏れる。
+[k]
+
+＠
+さあ、ここからがまた大変だぞ。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_71 2.0]
+[wait fade]
+[scene 90100]
+[wt 1.5]
+[fadein black 2.0]
+[wait fade]
+
+[wt 2.0]
+
+[messageOff]
+[scene 89703 1.4]
+[wt 3.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+[flag IsSauna false]
+[flag IsMeal false]
+[flag IsReading false]
+
+＠
+（さて……どこで休憩しようかな……）
+[k]
+
+？1：お風呂とサウナでリフレッシュしよう
+
+[flag IsSauna true]
+
+？2：美味しいごはんを食べよう
+
+[flag IsMeal true]
+
+？3：読書スペースでまったりしよう
+
+[flag IsReading true]
+
+？！
+
+[branch lblReading1 IsReading true]
+[branch lblMeal1 IsMeal true]
+[branch lblSauna1 IsSauna true]
+
+[label lblSauna1]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_2 1.5]
+[wt 0.5]
+[se ade151]
+[seVolume ade151 0 0.0]
+[wait fade]
+[scene 10000]
+[wt 0.6]
+[seVolume ade151 0.2 1.0]
+[scene 89800]
+[effect bit_talk_yuge]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[masterBranch lblBoy1_1 lblGirl1_1]
+
+[label lblBoy1_1]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth D 2]
+[charaDepth B 3]
+
+[charaTalk off]
+[charaFace B 12]
+[charaFadein B 0.7 -384,0]
+[charaFace C 9]
+[charaFadein C 0.7 1]
+[charaFace D 1]
+[charaFadein D 0.7 384,0]
+
+[branch lblIsSexConf1_1]
+
+[label lblGirl1_1]
+
+[charaTalk depthOff]
+[charaDepth G 1]
+[charaDepth E 2]
+[charaDepth F 3]
+
+[charaTalk off]
+[charaFace E 3]
+[charaFadein E 0.7 -384,0]
+[charaFace G 27]
+[charaFadein G 0.7 1]
+[charaFace F 7]
+[charaFadein F 0.7 384,0]
+
+[label lblIsSexConf1_1]
+
+[wt 3.0]
+
+＠
+……一緒になったサーヴァントたちと談笑しつつ、[r]心地好い温もりでゆっくりと疲れを癒やした。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_7 1.5]
+[wait fade]
+
+[masterBranch lblBoy1_2 lblGirl1_2]
+
+[label lblBoy1_2]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+
+[branch lblIsSexConf1_2]
+
+[label lblGirl1_2]
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+
+[label lblIsSexConf1_2]
+
+[effectDestroy bit_talk_yuge]
+
+[branch lblSelectConf1]
+
+[label lblMeal1]
+
+[messageOff]
+[fadeout black 1.2]
+[bgm BGM_EVENT_2 1.2 0.4]
+[wait fade]
+[wt 1.0]
+[charaSet E 3028001 1 ジャガーマン]
+[charaSet F 10008000 1 シトナイ]
+[fadein black 1.2]
+[bgm BGM_EVENT_2 1.2 1.0]
+[wait fade]
+
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 1]
+[wt 2.0]
+
+[charaFadeout H 0.1]
+[wt 0.5]
+
+[se ade396]
+[seVolume ade396 0 0.7]
+[wt 1.5]
+[seStop ade396 0.5]
+[wt 0.6]
+[se ade400]
+[seVolume ade400 0 0]
+[seVolume ade400 0.3 1.0]
+[wt 1.4]
+[seStop ade400 0.5]
+
+[wt 1.2]
+
+[se ad519]
+[wt 0.1]
+[seStop ad519 0.1]
+[wt 0.7]
+
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth I 2]
+[charaDepth F 3]
+
+[charaTalk off]
+[charaFace I 1]
+[charaFadein I 0.4 320,0]
+[charaFace E 1]
+[charaFadein E 0.4 1]
+[charaFace F 1]
+[charaFadein F 0.4 -320,0]
+[wt 2.5]
+
+＠
+……一緒になったサーヴァントたちと談笑しつつ、[r]美味しいごはんを食べてエネルギーを補給した。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgm BGM_EVENT_2 1.5 0.4]
+[wait fade]
+[charaFadeout I 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+
+[branch lblSelectConf1]
+
+[label lblReading1]
+
+[messageOff]
+[fadeout black 1.2]
+[bgm BGM_EVENT_2 1.2 0.4]
+[wait fade]
+[wt 1.0]
+[charaSet E 1030000 1 鈴鹿御前]
+[charaSet F 3039000 1 ガレス]
+[charaSet G 5028000 1 イリヤ]
+[fadein black 1.2]
+[bgm BGM_EVENT_2 1.2 1.0]
+[wait fade]
+
+[flag IsSauna false]
+
+[se ade277]
+[seVolume ade277 0 0.5]
+[wt 0.3]
+[seStop ade277 0.5]
+[wt 1.5]
+[se ade277]
+[seVolume ade277 0 0.5]
+[wt 0.3]
+[seStop ade277 0.5]
+[wt 2.0]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth E 2]
+[charaDepth G 3]
+
+[charaTalk off]
+[charaFace E 3]
+[charaFadein E 0.4 -384,0]
+[charaFace G 3]
+[charaFadein G 0.4 1]
+[charaFace F 11]
+[charaFadein F 0.4 384,0]
+[wt 2.5]
+
+
+＠
+……一緒になったサーヴァントたちと談笑しつつ、[r]素敵な物語を堪能して幸せな気持ちになった。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgm BGM_EVENT_2 1.5 0.4]
+[wait fade]
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+
+[label lblSelectConf1]
+
+[charaTalk depthOn]
+
+
+[scene 89703]
+[wt 1.2]
+[charaSet A 7027300 1 アマゾネスＣＥＯ_普通]
+[charaSet B 1098119600 1 アマゾネスＣＥＯ_ろくろ]
+[charaSet C 1098124510 1 ダ・ヴィンチ]
+[charaSet D 99502600 1 マシュ]
+[charaSet E 6008000 1 コスモティック・ビューティ夫人]
+[charaSet F 98002000 1 フォウ]
+[imageSet G back89900 1]
+[charaScale G 1.01]
+[fadein black 1.5]
+[branch lblNoVolChg1 IsSauna true]
+[bgm BGM_EVENT_2 1.5 1.0]
+[label lblNoVolChg1]
+[wait fade]
+
+[branch lblNoChgBGM1 IsSauna false]
+[bgm BGM_EVENT_2 0.1]
+[label lblNoChgBGM1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+おお、おまえか。[r]どうだ、休息はできたか？
+[k]
+
+？1：ばっちりです！
+？！
+
+[charaFace A 1]
+
+＠A：アマゾネスＣＥＯ
+それならよかった。
+[k]
+
+＠A：アマゾネスＣＥＯ
+私の補佐役としてのおまえの働き、外部委託業者の[r]代表者としての働き……共に私は満足している。
+[k]
+
+＠A：アマゾネスＣＥＯ
+それにふさわしい褒賞を与えねばなるまい。
+[k]
+
+＠A：アマゾネスＣＥＯ
+正式なものは後ほどということになるが、ひとまずは[r]この大アマゾネス温泉物語を存分に堪能してくれ。
+[k]
+
+？1：ところで、調査に進展は？
+？2：今後の予定は？
+？！
+
+[charaFace A 8]
+
+＠A：アマゾネスＣＥＯ
+『ひみつ会社　アサシン』からの連絡はまだない。[r]焦っても仕方がないゆえ、私は焦らないぞ。
+[k]
+
+＠A：アマゾネスＣＥＯ
+急いで配達する必要のあった、溜まっていた注文は[r]おまえたちの働きのおかげで処理できた。
+[k]
+
+[charaFace A 11]
+
+＠A：アマゾネスＣＥＯ
+これからは通常のペースで来るであろう注文を[r][#捌:さば]かねばならないが、それは引き続きおまえたち
+[k]
+
+＠A：アマゾネスＣＥＯ
+[#嘱託:しょくたく]配達員に頑張ってもらうことで対処できるだろう。[r]その間に余裕のできた人員で事件を探りたい。
+[k]
+
+＠A：アマゾネスＣＥＯ
+配達に使うしかなかったマンパワーを[r]調査に回せるようになるわけだから、
+[k]
+
+＠A：アマゾネスＣＥＯ
+手がかりの一つや二つはきっと見つかるだろう。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 0.5]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[se ad13]
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+[wt 0.3]
+
+＠ダ・ヴィンチ
+そうだねー。私もそう思ってた。[r]ところがだよ。
+[k]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaFace C 2]
+
+＠ダ・ヴィンチ
+問題発生だ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠マシュ
+問題発生です！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠フォウ
+フォウ！？
+[k]
+
+？1：二人して、なにごと！？
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+実のところ、私とマシュの言ってる問題は別なんだ。[r]いや結局は繋がってるんだけどね。
+[k]
+
+[charaFace C 25]
+
+＠ダ・ヴィンチ
+じゃあマシュ、まずはそっちから頼む。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠マシュ
+はい。わたしはアマゾネス・ドットコムの[r]臨時事務員としての問題を報告させていただきますが、
+[k]
+
+＠マシュ
+たった今、プレミアムお急ぎ便で注文が入りました。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+ほう、いいではないか。サービスのご利用[r]ありがとうございます、と喜ぶべきでは……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+[wt 1.0]
+[charaFace D 7]
+
+＠マシュ
+[#５０件]です。
+[k]
+
+[charaFace D 14]
+
+＠マシュ
+最優先でお届けせねばならない、プレミアムお急ぎ便の[r]注文が一度に５０件も入ってしまったのです！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+なにっ！？
+[k]
+
+＠A：アマゾネスＣＥＯ
+それはまずい。余裕ができたなどと[r]言っている場合ではないぞ。
+[k]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth B 1]
+[charaDepth A 2]
+[charaFadeout A 0.2]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠B：アマゾネスＣＥＯ
+通常の配送業務もある。[r]余剰戦力と見込んでいたものをそちらに回して、
+[k]
+
+＠B：アマゾネスＣＥＯ
+なんとかフレキシブルに対処するしか……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaPut J 1]
+[charaTalk on]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠マシュ
+ただ、幸か不幸か、[r]その注文に関しては一つの特徴があります。
+[k]
+
+＠マシュ
+どうやらその５０件全てが、[r][#一つの建物から]注文されているようなのです。
+[k]
+
+[bgmStop BGM_EVENT_48 1.0]
+
+？1：どういうこと？
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_90 0.1]
+
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+その先は私が引き継ごう。[r]そこで私担当の問題を説明しなくてはならない。
+[k]
+
+＠ダ・ヴィンチ
+注文元の座標は、新たに発見された微小特異点だ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠フォウ
+フォウ！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 32]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+ただ、少しおかしな事があるんだよねぇ。
+[k]
+
+＠ダ・ヴィンチ
+発見とは言ったけど、馴染み具合からして、[r]たった今ポッと発生したものじゃない気がするんだ。
+[k]
+
+＠ダ・ヴィンチ
+少し前から発生していたものに、私たちが今ようやく[r]気付いた[line 3]って感じなんだよね。
+[k]
+
+[charaFace C 14]
+
+＠ダ・ヴィンチ
+うーん、見逃すはずがないんだけどな。[r]私たちが予想外に[#弛:たる]んでたって事か、それとも……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+特異点の中からの、タイミングを見計らったかのような[r]不自然な大口注文。
+[k]
+
+＠A：アマゾネスＣＥＯ
+我々が慌てふためく様を見てやろうという[r]ふざけた意志が感じ取れるようではないか。
+[k]
+
+[charaFace A 5]
+
+＠A：アマゾネスＣＥＯ
+さてはこの注文[line 3]部下たちを[#攫:さら]った黒幕の手による、[r]我々に対する追加の攻撃ではないか！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 25]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+可能性はあるね。どう考えてもこの注文は不自然だ。[r]何らかの意図を感じざるをえない。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_90 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠マシュ
+……どうなさいますか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+決まっている。[r]攻撃ならば受け止め、反撃し、叩き潰すのみ！
+[k]
+
+[charaFace A 2]
+
+＠A：アマゾネスＣＥＯ
+それが我らアマゾネスの生き様である！[r]休憩は終わりだ、行くぞ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠マシュ
+あの、あまりにもあからさますぎますので、罠の警戒[r]なども必要では[se ad59][line 3][seVolume ad59 1.0 0.0]待ってください、ＣＥＯさーん！？
+[k]
+
+[seStop ad59 0.3]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 17]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+手がかりが全然なかった黒幕からの、[r]ようやくの直接的アプローチとも言える。
+[k]
+
+＠ダ・ヴィンチ
+アマゾネス中のアマゾネスなら[r]我慢はできないよねー。
+[k]
+
+[charaFace C 0]
+
+＠ダ・ヴィンチ
+仕方ない、[%1][&君:ちゃん]も[r]急いで準備して追っておくれ。
+[k]
+
+＠ダ・ヴィンチ
+ただ、無理をする必要はないよ。ひとまず偵察がてら、[r]その特異点の様子を[#窺:うかが]ってくるって感じでもいいからね。
+[k]
+
+＠ダ・ヴィンチ
+とにかく気をつけて！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait fade]
+[charaFadeout C 0.1]
+[charaPut J 1200,1200]
+[scene 20700]
+[wt 1.0]
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+フゥー。どこだ……どこだ……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.6 0.4]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠コスモティック・ビューティ夫人
+まるで野獣のようですわね……。
+[k]
+
+＠コスモティック・ビューティ夫人
+しかし一応持ってきた最初の配達商品だけは[r]大事に抱えているのが意味不明さを増大させますわ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+座標としてはもうすぐのはずだけど……[r]むっ、あそこに見えるアレかな？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgm BGM_EVENT_3 0.4 1.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+なにっ、あれは……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[se ad132]
+[wt 0.2]
+[wipeout rightToLeft 0.7 1]
+[bgmStop BGM_EVENT_3 0.7]
+[wait wipe]
+[seStop ad132 1.0]
+[scene 10000]
+[wt 1.5]
+[wipein leftToRight 0.1 1]
+[wait wipe]
+[fadeout black 0.1]
+[wait fade]
+[charaFadein G 0.1 0,200]
+[wt 0.5]
+[fadein black 1.0]
+[wait fade]
+[wt 0.7]
+[charaAttack G normal 0,-160 4.0]
+[wt 6.5]
+
+[fadeout black 0.3]
+[wait fade]
+[charaFadeout G 0.1]
+[scene 89900]
+[wt 0.2]
+[fadein black 0.3]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+
+＠マシュ
+この異様な外観の建物は……いったい！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 33]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+やれやれ、なんてトンチキなタワーだ。
+[k]
+
+＠ダ・ヴィンチ
+なんか似た雰囲気の和風建築を[r]過去の事件データで見た気もするけど。
+[k]
+
+＠ダ・ヴィンチ
+このセンス、美少女天才発明家としては[r]呆れ顔で口を[#噤:つぐ]むことしかできないな……。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[wt 0.3]
+
+[se ad172]
+[wt 1.2]
+[seStop ad172 0.1]
+
+[wt 0.6]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠マシュ
+ひとまず外観のみの簡易測定結果が出ました。[r]推定階層、全５０階。
+[k]
+
+＠マシュ
+ドットコムに来た注文の座標の最後には[r]それぞれ１Ｆから５０Ｆまでの表記がありましたので、
+[k]
+
+＠マシュ
+このタワーそれぞれの階層の部屋にお届けものがある、[r]という解釈で間違いないようですね……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠コスモティック・ビューティ夫人
+手間が省けているのか大変なのかは届けてみないと[r]わかりませんわね。
+[k]
+
+[charaFace E 3]
+
+＠コスモティック・ビューティ夫人
+しかしこの塔の直線的で強引で無理矢理で、それでいて[r]騙し絵のように成立している奇っ怪なバランス。
+[k]
+
+＠コスモティック・ビューティ夫人
+[#妾:わらわ]は嫌いではありませんわよ？[wt 0.6][charaFace E 2][r]ＢＴポイントを差し上げます！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+…………。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth A 2]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+
+[charaMove E -288,0 0.2]
+[wt 0.3]
+
+＠コスモティック・ビューティ夫人
+ど、どうしました？　まさかＢＴポイントでも[r]駄目になったとか言いませんわよね？
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+これは……神殿、だな。[r]それを積み重ねて塔にしている。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+うん、どうやら古代ギリシャ風の造りのようだね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠マシュ
+神殿というからには、[r]神様を[#祀:まつ]っているのでしょうか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+そうだな。これは、おそらく[line 3][r]女神アルテミスの神殿だ。
+[k]
+
+？1：じゃあ、アルテミス神殿タワー……！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠フォウ
+フォウ、フォーウ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+そう言えば、全員で配達を手伝おうって話になったときも[r]連絡が取れないサーヴァントが何人かいたっけなー。
+[k]
+
+[charaFace C 4]
+
+＠ダ・ヴィンチ
+ちなみに噂のアルテミスもその中に含まれる。
+[k]
+
+＠ダ・ヴィンチ
+てっきり『そんな事やってられるか』系のボイコットだと[r]思ってたけど、ひょっとしたら……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+何にしても、入ってみなければわかるまい。[r]このタワーの各階にお客様がいるとなれば尚更だ。
+[k]
+
+[charaFace A 12]
+
+＠A：アマゾネスＣＥＯ
+攻撃だろうが嫌がらせだろうが罠だろうが、[r]とりあえず配達物があればお届けはせねばならん。
+[k]
+
+＠A：アマゾネスＣＥＯ
+敵を叩き潰すのはその仕事を終えてからだ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 1.2]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠コスモティック・ビューティ夫人
+結局、やることは今までと変わりないという[r]わけですわね？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+うむ。外側から見ただけでも、[r]このタワーが一筋縄で行くものではない事はわかる。
+[k]
+
+＠A：アマゾネスＣＥＯ
+あるいは一階一階が、これまでの配達一件に相当する[r]過酷さを備えているかもしれん。
+[k]
+
+＠A：アマゾネスＣＥＯ
+通常業務と共に、配達要員の疲労管理には[r]充分気をつけるように。いいな。
+[k]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth B 1]
+[charaDepth A 2]
+[charaFadeout A 0.2]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：アマゾネスＣＥＯ
+では行くぞ。フィックスされた短期目標は、[r]この神殿タワーの踏破！　勿論[#なる早:ＡＳＡＰ]でだ！
+[k]
+
+
+[branch lblIsGirlConf]
+
+[label lblNotGirl]
+
+[charaSet B 7033002 1 アルジュナ・オルタ]
+[charaSet C 7035001 1 森長可]
+[charaSet D 4039002 1 マンドリカルド]
+[charaSet E 7031000 1 水着ジャンヌ・オルタ]
+[charaSet F 5032000 1 水着ネロ]
+[charaSet G 1040000 1 水着葛飾北斎]
+[charaSet H 2001000 1 エミヤ]
+[charaSet I 1001000 1 アルトリア]
+[charaSet J 5009000 1 エフェクト用]
+
+
+[scene 10000]
+
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_71 0.1]
+
+＠女の声
+[line 3]そうか。[r]ならば作戦を次のフェイズに進める。
+[k]
+
+
+＠
+本当にいいのか、と問う。[r]答えはわかってはいたが。
+[k]
+
+
+＠女の声
+無論だ。あれには消えてもらわねばならない。
+[k]
+
+＠女の声
+[line 3]なんとしても。
+[k]
+
+＠女の声
+予定の動きに取りかかれ、[r]■■■■■■■■。
+[k]
+
+
+＠
+頷き、了解の意を告げる。[r]彼女はそれ以上の余計な言葉を欲しない。
+[k]
+
+＠
+話は終わりだという気配を受け、[r][#踵:きびす]を返して彼女の前から立ち去った。
+[k]
+
+＠
+周りに誰もいなくなったところで[line 3][r]自然、溜め息が漏れる。
+[k]
+
+＠
+さあ、ここからがまた大変だぞ。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_71 2.0]
+[wait fade]
+[scene 90100]
+[wt 1.5]
+[fadein black 2.0]
+[wait fade]
+
+[wt 2.0]
+
+[messageOff]
+[scene 89703 1.4]
+[wt 3.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+[flag IsSauna false]
+[flag IsMeal false]
+[flag IsReading false]
+
+＠
+（さて……どこで休憩しようかな……）
+[k]
+
+？1：お風呂とサウナでリフレッシュしよう
+
+[flag IsSauna true]
+
+？2：美味しいごはんを食べよう
+
+[flag IsMeal true]
+
+？3：読書スペースでまったりしよう
+
+[flag IsReading true]
+
+？！
+
+[branch lblReading2 IsReading true]
+[branch lblMeal2 IsMeal true]
+[branch lblSauna2 IsSauna true]
+
+[label lblSauna2]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_2 1.5]
+[wt 0.5]
+[se ade151]
+[seVolume ade151 0 0.0]
+[wait fade]
+[scene 10000]
+[wt 0.6]
+[seVolume ade151 0.2 1.0]
+[scene 89800]
+[effect bit_talk_yuge]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[masterBranch lblBoy2_1 lblGirl2_1]
+
+[label lblBoy2_1]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth D 2]
+[charaDepth B 3]
+
+[charaTalk off]
+[charaFace B 12]
+[charaFadein B 0.7 -384,0]
+[charaFace C 9]
+[charaFadein C 0.7 1]
+[charaFace D 1]
+[charaFadein D 0.7 384,0]
+
+[branch lblIsSexConf2_1]
+
+[label lblGirl2_1]
+
+[charaTalk depthOff]
+[charaDepth G 1]
+[charaDepth E 2]
+[charaDepth F 3]
+
+[charaTalk off]
+[charaFace E 3]
+[charaFadein E 0.7 -384,0]
+[charaFace G 27]
+[charaFadein G 0.7 1]
+[charaFace F 7]
+[charaFadein F 0.7 384,0]
+
+[label lblIsSexConf2_1]
+
+[wt 3.0]
+
+＠
+……一緒になったサーヴァントたちと談笑しつつ、[r]心地好い温もりでゆっくりと疲れを癒やした。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_7 1.5]
+[wait fade]
+
+[masterBranch lblBoy2_2 lblGirl2_2]
+
+[label lblBoy2_2]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+
+[branch lblIsSexConf2_2]
+
+[label lblGirl2_2]
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+
+[label lblIsSexConf2_2]
+
+[effectDestroy bit_talk_yuge]
+
+[branch lblSelectConf2]
+
+[label lblMeal2]
+
+[messageOff]
+[fadeout black 1.2]
+[bgm BGM_EVENT_2 1.2 0.4]
+[wait fade]
+[wt 1.0]
+[charaSet E 3028001 1 ジャガーマン]
+[charaSet F 10008000 1 シトナイ]
+[fadein black 1.2]
+[bgm BGM_EVENT_2 1.2 1.0]
+[wait fade]
+
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 1]
+[wt 2.0]
+
+[charaFadeout H 0.1]
+[wt 0.5]
+
+[se ade396]
+[seVolume ade396 0 0.7]
+[wt 1.5]
+[seStop ade396 0.5]
+[wt 0.6]
+[se ade400]
+[seVolume ade400 0 0]
+[seVolume ade400 0.3 1.0]
+[wt 1.4]
+[seStop ade400 0.5]
+
+[wt 1.2]
+
+[se ad519]
+[wt 0.1]
+[seStop ad519 0.1]
+[wt 0.7]
+
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth I 2]
+[charaDepth F 3]
+
+[charaTalk off]
+[charaFace I 1]
+[charaFadein I 0.4 320,0]
+[charaFace E 1]
+[charaFadein E 0.4 1]
+[charaFace F 1]
+[charaFadein F 0.4 -320,0]
+[wt 2.5]
+
+＠
+……一緒になったサーヴァントたちと談笑しつつ、[r]美味しいごはんを食べてエネルギーを補給した。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgm BGM_EVENT_2 1.5 0.4]
+[wait fade]
+[charaFadeout I 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+
+[branch lblSelectConf2]
+
+[label lblReading2]
+
+[messageOff]
+[fadeout black 1.2]
+[bgm BGM_EVENT_2 1.2 0.4]
+[wait fade]
+[wt 1.0]
+[charaSet E 1030000 1 鈴鹿御前]
+[charaSet F 3039000 1 ガレス]
+[charaSet G 5028000 1 イリヤ]
+[fadein black 1.2]
+[bgm BGM_EVENT_2 1.2 1.0]
+[wait fade]
+
+[flag IsSauna false]
+
+[se ade277]
+[seVolume ade277 0 0.5]
+[wt 0.3]
+[seStop ade277 0.5]
+[wt 1.5]
+[se ade277]
+[seVolume ade277 0 0.5]
+[wt 0.3]
+[seStop ade277 0.5]
+[wt 2.0]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth E 2]
+[charaDepth G 3]
+
+[charaTalk off]
+[charaFace E 3]
+[charaFadein E 0.4 -384,0]
+[charaFace G 3]
+[charaFadein G 0.4 1]
+[charaFace F 11]
+[charaFadein F 0.4 384,0]
+[wt 2.5]
+
+
+＠
+……一緒になったサーヴァントたちと談笑しつつ、[r]素敵な物語を堪能して幸せな気持ちになった。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgm BGM_EVENT_2 1.5 0.4]
+[wait fade]
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+
+[label lblSelectConf2]
+
+[charaTalk depthOn]
+
+
+[scene 89703]
+[wt 1.2]
+[charaSet A 7027300 1 アマゾネスＣＥＯ_普通]
+[charaSet B 1098119600 1 アマゾネスＣＥＯ_ろくろ]
+[charaSet C 98111500 1 ダ・ヴィンチ]
+[charaSet D 99502600 1 マシュ]
+[charaSet E 6008000 1 コスモティック・ビューティ夫人]
+[charaSet F 98002000 1 フォウ]
+[imageSet G back89900 1]
+[charaScale G 1.01]
+[fadein black 1.5]
+[branch lblNoVolChg2 IsSauna true]
+[bgm BGM_EVENT_2 1.5 1.0]
+[label lblNoVolChg2]
+[wait fade]
+
+[branch lblNoChgBGM2 IsSauna false]
+[bgm BGM_EVENT_2 0.1]
+[label lblNoChgBGM2]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+おお、おまえか。[r]どうだ、休息はできたか？
+[k]
+
+？1：ばっちりです！
+？！
+
+[charaFace A 1]
+
+＠A：アマゾネスＣＥＯ
+それならよかった。
+[k]
+
+＠A：アマゾネスＣＥＯ
+私の補佐役としてのおまえの働き、外部委託業者の[r]代表者としての働き……共に私は満足している。
+[k]
+
+＠A：アマゾネスＣＥＯ
+それにふさわしい褒賞を与えねばなるまい。
+[k]
+
+＠A：アマゾネスＣＥＯ
+正式なものは後ほどということになるが、ひとまずは[r]この大アマゾネス温泉物語を存分に堪能してくれ。
+[k]
+
+？1：ところで、調査に進展は？
+？2：今後の予定は？
+？！
+
+[charaFace A 8]
+
+＠A：アマゾネスＣＥＯ
+『ひみつ会社　アサシン』からの連絡はまだない。[r]焦っても仕方がないゆえ、私は焦らないぞ。
+[k]
+
+＠A：アマゾネスＣＥＯ
+急いで配達する必要のあった、溜まっていた注文は[r]おまえたちの働きのおかげで処理できた。
+[k]
+
+[charaFace A 11]
+
+＠A：アマゾネスＣＥＯ
+これからは通常のペースで来るであろう注文を[r][#捌:さば]かねばならないが、それは引き続きおまえたち
+[k]
+
+＠A：アマゾネスＣＥＯ
+[#嘱託:しょくたく]配達員に頑張ってもらうことで対処できるだろう。[r]その間に余裕のできた人員で事件を探りたい。
+[k]
+
+＠A：アマゾネスＣＥＯ
+配達に使うしかなかったマンパワーを[r]調査に回せるようになるわけだから、
+[k]
+
+＠A：アマゾネスＣＥＯ
+手がかりの一つや二つはきっと見つかるだろう。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 0.5]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[se ad13]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-90]
+[wt 0.3]
+
+＠ダ・ヴィンチ
+そうだねー。私もそう思ってた。[r]ところがだよ。
+[k]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaFace C 2]
+
+＠ダ・ヴィンチ
+問題発生だ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠マシュ
+問題発生です！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠フォウ
+フォウ！？
+[k]
+
+？1：二人して、なにごと！？
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-90]
+
+＠ダ・ヴィンチ
+実のところ、私とマシュの言ってる問題は別なんだ。[r]いや結局は繋がってるんだけどね。
+[k]
+
+[charaFace C 0]
+
+＠ダ・ヴィンチ
+じゃあマシュ、まずはそっちから頼む。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠マシュ
+はい。わたしはアマゾネス・ドットコムの[r]臨時事務員としての問題を報告させていただきますが、
+[k]
+
+＠マシュ
+たった今、プレミアムお急ぎ便で注文が入りました。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+ほう、いいではないか。サービスのご利用[r]ありがとうございます、と喜ぶべきでは……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+[wt 1.0]
+[charaFace D 7]
+
+＠マシュ
+[#５０件]です。
+[k]
+
+[charaFace D 14]
+
+＠マシュ
+最優先でお届けせねばならない、プレミアムお急ぎ便の[r]注文が一度に５０件も入ってしまったのです！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+なにっ！？
+[k]
+
+＠A：アマゾネスＣＥＯ
+それはまずい。余裕ができたなどと[r]言っている場合ではないぞ。
+[k]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth B 1]
+[charaDepth A 2]
+[charaFadeout A 0.2]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠B：アマゾネスＣＥＯ
+通常の配送業務もある。[r]余剰戦力と見込んでいたものをそちらに回して、
+[k]
+
+＠B：アマゾネスＣＥＯ
+なんとかフレキシブルに対処するしか……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaPut J 1]
+[charaTalk on]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠マシュ
+ただ、幸か不幸か、[r]その注文に関しては一つの特徴があります。
+[k]
+
+＠マシュ
+どうやらその５０件全てが、[r][#一つの建物から]注文されているようなのです。
+[k]
+
+[bgmStop BGM_EVENT_48 1.0]
+
+？1：どういうこと？
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_90 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-90]
+
+＠ダ・ヴィンチ
+その先は私が引き継ごう。[r]そこで私担当の問題を説明しなくてはならない。
+[k]
+
+＠ダ・ヴィンチ
+注文元の座標は、新たに発見された微小特異点だ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠フォウ
+フォウ！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-90]
+
+＠ダ・ヴィンチ
+ただ、少しおかしな事があるんだよねぇ。
+[k]
+
+＠ダ・ヴィンチ
+発見とは言ったけど、馴染み具合からして、[r]たった今ポッと発生したものじゃない気がするんだ。
+[k]
+
+＠ダ・ヴィンチ
+少し前から発生していたものに、私たちが今ようやく[r]気付いた[line 3]って感じなんだよね。
+[k]
+
+[charaFace C 4]
+
+＠ダ・ヴィンチ
+うーん、見逃すはずがないんだけどな。[r]私たちが予想外に[#弛:たる]んでたって事か、それとも……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+特異点の中からの、タイミングを見計らったかのような[r]不自然な大口注文。
+[k]
+
+＠A：アマゾネスＣＥＯ
+我々が慌てふためく様を見てやろうという[r]ふざけた意志が感じ取れるようではないか。
+[k]
+
+[charaFace A 5]
+
+＠A：アマゾネスＣＥＯ
+さてはこの注文[line 3]部下たちを[#攫:さら]った黒幕の手による、[r]我々に対する追加の攻撃ではないか！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-90]
+
+＠ダ・ヴィンチ
+可能性はあるね。どう考えてもこの注文は不自然だ。[r]何らかの意図を感じざるをえない。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_90 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠マシュ
+……どうなさいますか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+決まっている。[r]攻撃ならば受け止め、反撃し、叩き潰すのみ！
+[k]
+
+[charaFace A 2]
+
+＠A：アマゾネスＣＥＯ
+それが我らアマゾネスの生き様である！[r]休憩は終わりだ、行くぞ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠マシュ
+あの、あまりにもあからさますぎますので、罠の警戒[r]なども必要では[se ad59][line 3][seVolume ad59 1.0 0.0]待ってください、ＣＥＯさーん！？
+[k]
+
+[seStop ad59 0.3]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-90]
+
+＠ダ・ヴィンチ
+手がかりが全然なかった黒幕からの、[r]ようやくの直接的アプローチとも言える。
+[k]
+
+＠ダ・ヴィンチ
+アマゾネス中のアマゾネスなら[r]我慢はできないよねー。
+[k]
+
+[charaFace C 0]
+
+＠ダ・ヴィンチ
+仕方ない、[%1][&君:ちゃん]も[r]急いで準備して追っておくれ。
+[k]
+
+＠ダ・ヴィンチ
+ただ、無理をする必要はないよ。ひとまず偵察がてら、[r]その特異点の様子を[#窺:うかが]ってくるって感じでもいいからね。
+[k]
+
+＠ダ・ヴィンチ
+とにかく気をつけて！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait fade]
+[charaFadeout C 0.1]
+[charaPut J 1200,1200]
+[scene 20700]
+[wt 1.0]
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+フゥー。どこだ……どこだ……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.6 0.4]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠コスモティック・ビューティ夫人
+まるで野獣のようですわね……。
+[k]
+
+＠コスモティック・ビューティ夫人
+しかし一応持ってきた最初の配達商品だけは[r]大事に抱えているのが意味不明さを増大させますわ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-90]
+
+＠ダ・ヴィンチ
+座標としてはもうすぐのはずだけど……[r]むっ、あそこに見えるアレかな？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgm BGM_EVENT_3 0.4 1.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+なにっ、あれは……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[se ad132]
+[wt 0.2]
+[wipeout rightToLeft 0.7 1]
+[bgmStop BGM_EVENT_3 0.7]
+[wait wipe]
+[seStop ad132 1.0]
+[scene 10000]
+[wt 1.5]
+[wipein leftToRight 0.1 1]
+[wait wipe]
+[fadeout black 0.1]
+[wait fade]
+[charaFadein G 0.1 0,200]
+[wt 0.5]
+[fadein black 1.0]
+[wait fade]
+[wt 0.7]
+[charaAttack G normal 0,-160 4.0]
+[wt 6.5]
+
+[fadeout black 0.3]
+[wait fade]
+[charaFadeout G 0.1]
+[scene 89900]
+[wt 0.2]
+[fadein black 0.3]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+
+＠マシュ
+この異様な外観の建物は……いったい！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-90]
+
+＠ダ・ヴィンチ
+やれやれ、なんてトンチキなタワーだ。
+[k]
+
+＠ダ・ヴィンチ
+なんか似た雰囲気の和風建築を[r]過去の事件データで見た気もするけど。
+[k]
+
+＠ダ・ヴィンチ
+このセンス、天才発明家としては[r]呆れ顔で口を[#噤:つぐ]むことしかできないな……。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[wt 0.3]
+
+[se ad172]
+[wt 1.2]
+[seStop ad172 0.1]
+
+[wt 0.6]
+
+[charaSet C 1098177800 1 ダ・ヴィンチ]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠マシュ
+ひとまず外観のみの簡易測定結果が出ました。[r]推定階層、全５０階。
+[k]
+
+＠マシュ
+ドットコムに来た注文の座標の最後には[r]それぞれ１Ｆから５０Ｆまでの表記がありましたので、
+[k]
+
+＠マシュ
+このタワーそれぞれの階層の部屋にお届けものがある、[r]という解釈で間違いないようですね……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠コスモティック・ビューティ夫人
+手間が省けているのか大変なのかは届けてみないと[r]わかりませんわね。
+[k]
+
+[charaFace E 3]
+
+＠コスモティック・ビューティ夫人
+しかしこの塔の直線的で強引で無理矢理で、それでいて[r]騙し絵のように成立している奇っ怪なバランス。
+[k]
+
+＠コスモティック・ビューティ夫人
+[#妾:わらわ]は嫌いではありませんわよ？[wt 0.6][charaFace E 2][r]ＢＴポイントを差し上げます！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+…………。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth A 2]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+
+[charaMove E -288,0 0.2]
+[wt 0.3]
+
+＠コスモティック・ビューティ夫人
+ど、どうしました？　まさかＢＴポイントでも[r]駄目になったとか言いませんわよね？
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+これは……神殿、だな。[r]それを積み重ねて塔にしている。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-90]
+
+＠ダ・ヴィンチ
+うん、どうやら古代ギリシャ風の造りのようだね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠マシュ
+神殿というからには、[r]神様を[#祀:まつ]っているのでしょうか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+そうだな。これは、おそらく[line 3][r]女神アルテミスの神殿だ。
+[k]
+
+？1：じゃあ、アルテミス神殿タワー……！
+？！
+
+[charaSet C 98111500 1 ダ・ヴィンチ]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠フォウ
+フォウ、フォーウ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-90]
+
+＠ダ・ヴィンチ
+そう言えば、全員で配達を手伝おうって話になったときも[r]連絡が取れないサーヴァントが何人かいたっけなー。
+[k]
+
+＠ダ・ヴィンチ
+ちなみに噂のアルテミスもその中に含まれる。
+[k]
+
+＠ダ・ヴィンチ
+てっきり『そんな事やってられるか』系のボイコットだと[r]思ってたけど、ひょっとしたら……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+何にしても、入ってみなければわかるまい。[r]このタワーの各階にお客様がいるとなれば尚更だ。
+[k]
+
+[charaFace A 12]
+
+＠A：アマゾネスＣＥＯ
+攻撃だろうが嫌がらせだろうが罠だろうが、[r]とりあえず配達物があればお届けはせねばならん。
+[k]
+
+＠A：アマゾネスＣＥＯ
+敵を叩き潰すのはその仕事を終えてからだ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 1.2]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠コスモティック・ビューティ夫人
+結局、やることは今までと変わりないという[r]わけですわね？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+うむ。外側から見ただけでも、[r]このタワーが一筋縄で行くものではない事はわかる。
+[k]
+
+＠A：アマゾネスＣＥＯ
+あるいは一階一階が、これまでの配達一件に相当する[r]過酷さを備えているかもしれん。
+[k]
+
+＠A：アマゾネスＣＥＯ
+通常業務と共に、配達要員の疲労管理には[r]充分気をつけるように。いいな。
+[k]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth B 1]
+[charaDepth A 2]
+[charaFadeout A 0.2]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：アマゾネスＣＥＯ
+では行くぞ。フィックスされた短期目標は、[r]この神殿タワーの踏破！　勿論[#なる早:ＡＳＡＰ]でだ！
+[k]
+
+
+[label lblIsGirlConf]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

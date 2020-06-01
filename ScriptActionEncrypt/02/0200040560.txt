@@ -1,0 +1,172 @@
+
+
+＄02-00-04-05-6-0
+
+[soundStopAll]
+
+[charaSet A 1098121200 1 隊長]
+[charaSet B 1098121200 1 兵士]
+
+[charaSet C 98006200 1 ゴースト]
+
+[charaSet D 6014001 1 マタ・ハリ]
+[charaSet E 2003001 1 ロビンフッド]
+
+[charaSet F 98115000 1 エフェクト用]
+
+[charaSet G 1098120400 1 カーター]
+
+[bgm BGM_EVENT_3 0.1]
+
+
+[scene 49502]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad84]
+[wt 1.0]
+[se ad83]
+[wt 1.0]
+
+＠
+　　　　　　　  【マサチューセッツ軍　騎兵隊】
+[k]
+
+＠隊長
+どけっ！　村人は道をあけろ！
+[k]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ロビンフッド
+……っと、ここで援軍登場ですかい？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠マタ・ハリ
+カーター氏も馬上にいるわ。[r]彼が連れてきたようね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ロビンフッド
+ああしかし、この厄介な敵相手じゃ[r]犠牲者が増えるばかり[line 3]ん？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[seLoop ad84]
+[seVolume ad84 0 0.1]
+[seVolume ad84 1.6 1.0]
+[wt 1.6]
+[seStop ad84 0.1]
+[se ad83]
+[wt 1.0]
+[seStop ad83 0.5]
+[wt 0.7]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.2 1]
+[charaMove A 0,-30 0.2]
+[wt 0.1]
+[se ad223]
+[charaMove A 1 0.3]
+[wt 0.3]
+
+＠隊長
+狙え！[line 3]一斉射用意！
+[k]
+
+[messageOff]
+[se ad346]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠カーター
+銀の弾丸を込めてくれ！[r]これだ！　残弾は大量にある！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠兵士
+そんなものが[line 3]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[se ade64]
+[wt 0.5]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+[fowardEffect bit_shot_01]
+[charaShake C 0.05 3 3 0.5]
+[se bac16]
+[wt 0.5]
+
+[se ad22]
+[charaSpecialEffect C enemyErasure 1 1.0]
+[wt 2.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠隊長
+おお……効くようだな！[r]了解した、教授！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠兵士
+銃で倒れる相手なら俺たちの常識の範疇だ！[r]連中はそう素早くはありません。やれますぜ！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

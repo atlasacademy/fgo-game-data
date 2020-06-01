@@ -1,0 +1,1174 @@
+
+
+
+＄94-04-78-26-1-0
+
+[soundStopAll]
+
+
+
+[charaSet A 98001000 1 マシュ]
+[charaSet C 3043000 1 エリセ]
+[charaSet D 25005000 1 ボイジャー]
+[imageSet E cut171_token_201 1]
+[charaSet F 4017001 1 マリー]
+[charaSet G 7037000 1 鬼女紅葉]
+[imageSet H cut169_spaceprobe 1]
+[imageSet I cut139_Grail 1]
+[charaSet S 5009000 1 エフェクト用ダミー１]
+[charaSet T 5009000 1 エフェクト用ダミー２]
+
+
+[scene 96000]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.5]
+
+[scene 93200 1.2]
+[wt 2.7]
+
+[scene 96400 1.2]
+[wt 2.5]
+
+[bgm BGM_EVENT_1 0.1]
+
+
+＠マシュ
+……ゲームが、それぞれの箱へ仕舞われていくと、[r]星々も隠されていきます。
+[k]
+
+＠マシュ
+サーヴァントの皆さんも、一時的にトークン化して、[r]箱の中へ一緒に収まりました。
+[k]
+
+＠マシュ
+[#遊戯界:monde du jeu]の冒険も、もうじきおしまい。[r]ちょっと寂しい気もします。
+[k]
+
+＠マシュ
+……あのう、先輩。ひとつ心配があるのですが。
+[k]
+
+[bgmStop BGM_EVENT_1 1.2]
+
+＠マシュ
+帰りは、どうしたらいいのでしょう？
+[k]
+
+？1：えっと……どうしよう……
+
+？！
+
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth S 2]
+[charaDepth T 3]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠マシュ
+だ、大丈夫でしょうか……？
+[k]
+
+＠マシュ
+ダ・ヴィンチちゃんとの通信も[r]再び途絶えてしまって…………[wt 0.5][charaFace A 6]おや？
+[k]
+
+
+[messageOff]
+
+[charaPut S 0]
+[charaEffect S bit_talk_token_float]
+[charaPut T 2]
+[charaEffect T bit_talk_token_float 0,0 H]
+[se adm19]
+[wt 3.0]
+[seStop adm19 0.5]
+
+[charaFace A 7]
+
+＠マシュ
+これは……トークンです！[r]エジソンさんと、エミヤさんのトークンです、先輩！
+[k]
+
+[charaFace A 0]
+
+＠マシュ
+こんなところにまで、はぐれて漂って……？
+[k]
+
+？1：大変だったね。一応、無事……だったんだよね？
+？2：心配してこっちを見に来てくれたのかな
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut S 1200,1200]
+[charaEffectDestroy S]
+[charaPut T 1200,1200]
+[charaEffectDestroy T]
+[charaTalk depthOn]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠マリー
+カルデアへ戻ったら、お話を聞かせてほしいわ？
+[k]
+
+[charaFace F 0]
+
+＠マリー
+あら、今はその帰還の方法が[r]問題になっているのでしたわね。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エリセ
+……大丈夫です。[r]ここには、ボイジャーがいます。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth E 2]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 -100,0]
+[wt 0.2]
+
+[charaPut T 200,0]
+[charaEffect T bit_talk_token_float 0,0 H]
+[se adm19]
+[wt 3.0]
+
+[fadeout white 1.0]
+[wait fade]
+[seStop adm19 1.0]
+[charaEffectDestroy T]
+[charaFadein E 0.1 200,-200]
+[wt 0.5]
+[fadein white 1.0]
+[wait fade]
+
+＠ボイジャー
+やあ、きみもきたね、ナーサリー。[bgm BGM_EVENT_2 0.1]
+[k]
+
+[charaFace D 7]
+
+＠ボイジャー
+うん、そうだね。[r]ちゃんと、えすこーとしていくよ。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マシュ
+そうでした……！[r]ボイジャーさんが送ってくださるなら安心です！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠エリセ
+………………。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ボイジャー
+みんな、いいかい？　したくは、できた？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい！　エジソンさん、エミヤさん、[r]ナーサリーさんのトークンもしっかり収納しました。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ボイジャー
+じゃあ、いくよ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠マリー
+ボイジャーさんを中心に、みんなで手をつなぐのね。[r]紅葉さん？　爪先を拝借するわ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠鬼女紅葉
+ごるうっ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth C 2]
+
+[charaTalk F]
+[charaFace C 4]
+[charaFadein C 0.1 0]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+
+＠マリー
+[line 3]さあ、エリセさんも手を。
+[k]
+
+[messageOff]
+[charaMove F 200,0 0.6]
+[wt 0.5]
+[se ad183]
+[seVolume ad183 0 0]
+[wt 0.1]
+[seVolume ad183 0.2 1.0]
+[wt 0.7]
+
+[charaFace C 13]
+
+＠エリセ
+…………あっ……。
+[k]
+
+[charaFace F 4]
+
+＠マリー
+まだ戸惑っている。……震えている。[r]不安でいっぱいなのね、エリセさん。
+[k]
+
+＠エリセ
+マリー王妃……。
+[k]
+
+＠マリー
+生まれ変わるのだもの、無理はないわ。[r]これからもあなたは、何度も迷子になるでしょう。
+[k]
+
+[charaFace F 0]
+
+＠マリー
+でもね……？
+[k]
+
+＠マリー
+少なくとも今、この[#現界:いのち]で、[r]絆を結ぶことになるだろうマスターは[line 3]
+[k]
+
+＠マリー
+恥ずかしくない[#務め:いきかた]をさせてくれるはずよ。
+[k]
+
+[charaFace C 20]
+
+＠エリセ
+絆……。
+[k]
+
+[charaFace C 0]
+
+＠エリセ
+……あの、えっと……正直に告白すると……。
+[k]
+
+＠エリセ
+こうして、[%1]を目の当たりに[r]していても、まったくピンとは来ないのですが……。
+[k]
+
+[charaFace C 1]
+
+＠エリセ
+マリー王妃や、マシュさんの[#有:あ]り[#様:よう]を見ていると[r]やっと、ようやく、どうにか納得できそうな気がします。
+[k]
+
+？1：それでいいんだ[&:よ]
+
+[charaFace C 14]
+
+＠エリセ
+そ、そんな底抜けのお人好しっていうか……[r]素直な性格だとさ、[&きみ:あなた]自身が……。
+[k]
+
+[charaFace C 1]
+
+＠エリセ
+ううん、なんでもない。忘れて。
+[k]
+
+？2：ちょっと傷ついたかも……
+
+[charaFace C 11]
+
+＠エリセ
+あっ……ご、ごめん。[r]そんなつもりで言ったわけじゃ。
+[k]
+
+[charaFace C 18]
+
+＠エリセ
+ほら、ステロな魔術師像ってさ、もっとこうね……。[r]うん、あとでちゃんと謝らせて。
+[k]
+
+？！
+
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠鬼女紅葉
+ぐぁぁうううぅぅるるるる！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠エリセ
+ふぇ？　え、紅葉さん？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth C 2]
+
+[charaTalk F]
+[charaFace C 12]
+[charaFadein C 0.1 0]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+
+＠マリー
+真剣な調子ね。[r]なんとおっしゃったのかしら？
+[k]
+
+[charaFace C 0]
+
+＠エリセ
+はい……。[r]私の[#出立:しゅったつ]を祝福してくださいました。
+[k]
+
+[charaFace C 20]
+
+＠エリセ
+……死は、生の始まりでもあると。[r]ありがとう、紅葉さん。
+[k]
+
+[charaFace C 0]
+
+＠エリセ
+そうだ。[r]まさにこれは、死と再生の通過儀礼だった。
+[k]
+
+＠マリー
+死は生の始まり。[r][#一騎:ひとり]のサーヴァントにとっては重い言葉ね。
+[k]
+
+＠マリー
+いつの日か、あなたは世界の終わりを見るかもしれない。[wt 0.6][charaFace F 1][r]でも、その後には、何かを生むんじゃないかしら。
+[k]
+
+[charaFace C 12]
+
+＠エリセ
+……世界の終わりと、その後？
+[k]
+
+？1：見られるといいな
+
+？！
+
+[bgmStop BGM_EVENT_2 2.0]
+
+[charaFace C 0]
+
+＠エリセ
+……以前に約束したんです。ボイジャーと。[r]あるものを、終わらせようって。
+[k]
+
+＠エリセ
+それも、また最初からだ。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[bgm BGM_EVENT_78 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ボイジャー
+……ぼくわすれないよ、エリセ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠エリセ
+忘れてもいいんだよ、ボイジャー。[r]積み荷は軽いほうがいい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+先輩、星々の光がさらに弱まっていきます……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.7]
+
+？1：行こう、エリセ
+
+？2：帰ろう、カルデアへ
+
+？！
+
+＠エリセ
+そうだね。[r]ここに残ったって仕方が無い。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[wt 0.5]
+
+[effect bit_talk_np_buf]
+[se ad476]
+[seVolume ad476 0 0.6]
+[se adm19]
+[seStop ad400 1.5]
+[charaPut S 0,0]
+[charaEffect S bit_talk_golden_aura]
+[wt 0.5]
+[charaMove D 0,10 0.8]
+[wt 1.8]
+[seStop ad476 1.0]
+[seStop adm19 1.0]
+[wt 0.5]
+
+＠ボイジャー
+さあ、[#とぶよ:りふと・おふ]！
+[k]
+
+[messageOff]
+[wipeout upToDown 1.0 1.0]
+[wait wipe]
+[charaFadeout D 0.1]
+[charaEffectDestroy S]
+[scene 96500]
+[wt 0.5]
+[wipein downToUp 1.0 1.0]
+[wait wipe]
+[wt 0.4]
+
+＠ボイジャー
+エリセの、えらんだところへ[line 3]
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout white 2.0]
+[bgmStop BGM_EVENT_78 2.5]
+[wait fade]
+
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+[scene 66700]
+
+[branch lblConf2]
+[label lblNotClear2]
+
+[scene 60300]
+
+[label lblConf2]
+
+[wt 2.5]
+
+[fadein white 2.0]
+[wait fade]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠マシュ
+……帰ってきました！[bgm BGM_EVENT_2 0.1][r]懐かしきカルデアです！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エリセ
+カルデア[line 3]私の選んだ場所。[r]ここが……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ボイジャー
+…………ねえ（ちょいちょい）。
+[k]
+
+？1：おっとそうだ、預かっていたものを
+
+？2：さあ、受け取ってボイジャー
+
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.3]
+
+[charaFadein H 0.5 0,-200]
+[wt 2.0]
+
+
+＠ボイジャー
+そうじゃなくてね……。
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth H 1]
+[charaDepth I 2]
+[charaDepth S 3]
+
+[charaPut S 1]
+[charaEffect S bit_talk_radiallight02]
+[wt 0.3]
+
+[se ad852]
+[seVolume ad852 0 0.0]
+[seVolume ad852 2.0 1.0]
+[wt 1.7]
+
+
+[fadeout white 1.5]
+[bgm BGM_EVENT_2 1.5 0.5]
+[seStop ad852 1.5]
+[wait fade]
+
+[charaEffectDestroy S]
+[charaFadeout H 0]
+[charaFadein I 0 0,-200]
+[wt 0.5]
+
+[fadein white 1.5]
+[bgm BGM_EVENT_2 1.5 1.0]
+[wait fade]
+
+[charaTalk depthOn]
+[wt 1.0]
+
+
+＠マシュ
+これは……！？[r]ゲームの駒が、“聖杯”に変化しました！
+[k]
+
+＠ボイジャー
+ぼくと、エリセを、つないでくれていたもの。[r][#げえむ]はおわったから、ほんらいのかたちにもどった。
+[k]
+
+＠ボイジャー
+きみ、もってて。
+[k]
+
+？1：[&オレ:わたし]が？
+？2：エリセのものなんじゃ……？
+
+？！
+
+＠ボイジャー
+いいんだ。[r]だって、エリセは[line 3]
+[k]
+
+[messageOff]
+[charaFadeout I 0.4]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠エリセ
+[line 3]ひょっとして私、願いをかなえたのかな？
+[k]
+
+[charaFace C 20]
+
+＠エリセ
+サーヴァント……何より尊い[#存在:もの]……[r]その末席に、連なる……。
+[k]
+
+[charaFace C 4]
+
+＠エリセ
+そんな身の程知らずの夢を、心のどこかで[r]描いていたなら、すごく恥ずかしいんだけど……。
+[k]
+
+[charaFace C 0]
+
+＠エリセ
+だから私は、[#試練:ゲーム]を望んだんだなって、[r]今なら、やっと納得できる。
+[k]
+
+＠エリセ
+もうひとりのマリー王妃が、あんな役割で現れたのも、[r]私自身が望んだことだったのかも。
+[k]
+
+＠エリセ
+私を罰するにふさわしいひと……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth C 2]
+
+[charaTalk F]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+
+＠マリー
+だからこそ、エリセさん。あなたは立ち向かい、[r]克服しなければならなかったんだわ。
+[k]
+
+＠エリセ
+はい、王妃。
+[k]
+
+[charaFace C 14]
+
+＠エリセ
+て言うか、えっと、すごく申し訳なくて、[r]畏れ多いことなんですけど……。
+[k]
+
+[charaFace F 1]
+
+＠マリー
+いいえ、エリセさん。あなたはやり遂げました。[r]心から祝福します。
+[k]
+
+[charaFace C 1]
+
+＠エリセ
+王妃……！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マシュ
+そして、願いをかなえ、サーヴァントとして[r]わたしたちの元へ来てくださるんですね！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠エリセ
+……本当にいいのかなって、思うけど。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[charaFadein I 0.4 0,-200]
+[wt 1.0]
+
+？1：これは受け取っておく[&よ:ね]
+
+？！
+
+[charaFadeout I 0.4]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠エリセ
+……うん。えっと、お願い、します。
+[k]
+
+[charaFace C 3]
+
+＠エリセ
+[%1]は、私の[r]マスターだから。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ボイジャー
+よかった。
+[k]
+
+＠ボイジャー
+ねえ？　ぼくはね、[#ほし]をさがしていたんだ。[r]エリセのために、とびっきり、すてきなのを。
+[k]
+
+
+[charaFace D 7]
+
+＠ボイジャー
+きみ、さいこうだった。
+[k]
+
+
+？1：[&きみ:あなた]もね
+？2：本当にありがとう
+？！
+
+[bgmStop BGM_EVENT_2 1.5]
+
+[charaFace D 1]
+
+＠ボイジャー
+わすれないよ、きみのこと。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠エリセ
+ボイジャー……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_45 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ボイジャー
+ぼく、いかなくちゃ。
+[k]
+
+＠ボイジャー
+おおきな、おおきな、すいんぐ・ばい、だった。[r]ぼくはまた、たびにでるんだ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ボイジャーさん……。[r]ありがとうございました。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠エリセ
+……っ……待って、ボイジャー。[r]もう少しだけ、ここにいればいい！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ボイジャー
+だいじょうぶ。エリセ、きみの[r]あたらしい[#しごと]は、ここにある。
+[k]
+
+＠ボイジャー
+ぼくにも、あるんだ。[r]さあいこうか、[#コウヨウ]。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠鬼女紅葉
+るぅぅん……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth C 2]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 0]
+[charaFace D 0]
+[charaFadein D 0.1 2]
+
+＠エリセ
+紅葉さんまで！？
+[k]
+
+＠ボイジャー
+うん。いっしょにいくよ。[r]しっていただろう、きみ。
+[k]
+
+[charaFace C 14]
+
+＠エリセ
+……そうだけど……！
+[k]
+
+[charaFace C 13]
+
+＠エリセ
+カルデアは別の世界だ。私たちの生きた時代とは違う。[r]しかも紅葉さんは、本来はもっともっと過去の人だ。
+[k]
+
+[charaFace C 4]
+
+＠エリセ
+《秋葉原》とも関係がない。座に還るんだ……。[r]そのくらいの見当はついてた……。
+[k]
+
+＠エリセ
+ついてたけど……[wt 0.3][charaFace C 14]でもさぁ！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.5]
+[effect bit_talk_np_buf]
+[se ad476]
+[seVolume ad476 0 0.6]
+[se adm19]
+[seStop ad400 1.5]
+[charaPut S 0,0]
+[charaEffect S bit_talk_golden_aura]
+[wt 0.5]
+[charaMove D 0,10 0.8]
+[wt 1.8]
+[seStop ad476 1.0]
+[seStop adm19 1.0]
+[wt 0.5]
+
+[charaFace D 1]
+
+＠ボイジャー
+きみ、もうなかないだろう？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut S 2400,2400]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠エリセ
+……誰が！　泣くもんか！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut S 0,0]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 0,10]
+
+＠ボイジャー
+よかった。
+[k]
+
+[messageOff]
+[charaFace D 0]
+[wt 0.6]
+[charaEffectStop S bit_talk_golden_aura]
+[wt 0.5]
+[charaMove D 0,50 1.0]
+[wt 0.8]
+[charaFadeout D 0.4]
+[wt 1.0]
+[charaBackEffectDestroy D]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠鬼女紅葉
+あるぅぅうううううぅぅん……！
+[k]
+
+[messageOff]
+[effect bit_talk_np_buf]
+[se adm19]
+[charaMove G 0,50 1.0]
+[wt 0.8]
+[charaFadeout G 0.4]
+[seStop adm19 1.0]
+[wt 1.2]
+[effectDestroy bit_talk_np_buf]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠エリセ
+……ボイジャー……紅葉さん。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_45 1.0 0.5]
+[wait fade]
+[charaFadeout C 0.1]
+[scene 28302]
+[wt 0.3]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[effect bit_talk_starshine_golden 250,100]
+[se adm19]
+[seStop adm19 1.0]
+[wt 2.0]
+
+＠エリセ
+さよなら、[#よい旅を:Bon voyage]。[r]そして、行ってきます。
+[k]
+
+＠エリセ
+……いつかまた、会えるといいな。[r]もしかして……ひょっとしたら[line 3]。
+[k]
+
+
+[messageOff]
+[wt 0.7]
+
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout C 0.1]
+
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+[scene 66700]
+
+[branch lblConf3]
+[label lblNotClear3]
+
+[scene 60300]
+
+[label lblConf3]
+
+[wt 0.3]
+[fadein black 1.0]
+[bgm BGM_EVENT_45 1.0 1.0]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠マリー
+[line 3]行ってしまったわね、可愛い子。可愛い人。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ad518]
+[seVolume ad518 0 0.1]
+[seVolume ad518 2.0 0.3]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+おや……？　静まりかえっていたカルデアが、[r]急に騒がしくなってきました。
+[k]
+
+[charaFace A 1]
+
+＠マシュ
+皆さん、トークンから解放されたようです！
+[k]
+
+[messageOff]
+[seStop ad518 1.0]
+[charaFadeout A 0.1]
+[wt 1.2]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠エリセ
+…………えっと……。[r]じゃあ、あらためて挨拶、かな。
+[k]
+
+[messageOff]
+[wt 0.4]
+
+？1：どうぞよろしく。ようこそ、カルデアへ
+？！
+
+
+[wt 0.2]
+[charaFaceFade C 7 0.5]
+[wt 2.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_45 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+

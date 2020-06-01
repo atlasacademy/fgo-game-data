@@ -1,0 +1,174 @@
+
+＄94-03-50-02-2-1
+[soundStopAll]
+
+
+[charaSet A 10003000 1 殺生院キアラ]
+[charaSet B 3030000 1 パールヴァティー]
+[charaSet C 1098163800 1 春日局]
+[charaSet D 99502600 1 マシュ]
+[charaSet E 1098158220 1 シオン]
+[charaSet F 1098158230 1 シオン_腕上げ_通信]
+[charaSet G 1098164100 1 女中]
+
+[charaSet I 5009000 1 エフェクト用ダミー]
+[charaSet J 5009000 1 エフェクト用ダミー２]
+
+[scene 10000]
+[scene 71702]
+
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se bac26]
+[wt 0.1]
+[seStop bac41 0.5]
+[charaDepth J 9]
+[charaEffect J bit_talk_shelling_pink01]
+[wt 0.1]
+[fowardEffect bit_talk_14]
+[wt 0.4]
+
+[se bac18]
+[se bac25]
+[flashin once 0.1 0.1 e1a3ffFF e1a3ff50]
+[wt 0.1]
+[charaShake G 0.03 4 4 0.8]
+
+
+[bgmStop BGM_EVENT_3 0.8]
+[wt 1.0]
+[charaMove G 0,-100 0.4]
+[charaFadeout G 0.4]
+[wt 0.3]
+[se ade41]
+[wt 0.4]
+[se ad144]
+
+
+[wt 1.2]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠殺生院キアラ
+……はあ。あまりに怪しき姿ゆえ、流れのままに[r]調伏などしてしまいましたが……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠パールヴァティー
+攻撃してきませんでしたね……？[r]ちょっと悪いことをしてしまったような。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaDepth C 0]
+[charaDepth B 1]
+
+[wt 0.25]
+[fowardEffect bit_talk_tornado02]
+[se ad80]
+[seVolume ad80 0 0.5]
+[wt 0.3]
+
+[charaSpecialEffect B erasureReverse 1 0.3]
+[charaTalk off]
+[charaFace C 0]
+[charaFadein C 0.2 1]
+[wt 0.1]
+[seStop ad80 0.3]
+
+[wt 0.5]
+
+＠春日局
+女神様のご威光に怯えたのでしょう！　あと、[r]ええと、殺生院様の信心……？　的なものに……？
+[k]
+
+[charaFace C 1]
+
+＠春日局
+ともあれ、これで私たちの歩みを邪魔する者は[r]いなくなりました。さあ行きますよ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk on]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠マシュ
+マスター。そこから先の通路は[r]より異界化していると推測されます。
+[k]
+
+＠マシュ
+外部とは異なる[#空間構造:ス ト ラ ク チ ャ]、[#理論:セオリー]、[#法則:ルール]に[r]支配されている可能性があります。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠シオン
+何が起こるか分からない状況ってコトね！[r]うんうん、ダンジョン攻略はこうでないと！
+[k]
+
+[charaFace E 3]
+
+＠シオン
+と、失礼、つい観戦モードに入ってしまいました。[r]ホームズ氏の冷静さを見習いましょう。
+[k]
+
+[charaFace E 0]
+
+＠シオン
+皆さん、充分に気をつけて。[r]ここからが本番です、よろしくお願いします！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[wt 0.5]
+
+
+[se ade295]
+[bgmStop BGM_EVENT_81 2.0]
+[cameraMove 3.0 0,35 1.2]
+[wt 1.5]
+
+[messageOff]
+[fadeout black 2.0]
+[seStop ade295 2.0]
+[wait fade]
+[se ade269]
+[wt 1.0]
+[seStop ade269 1.0]
+[wt 2.0]
+[soundStopAll]
+[end]

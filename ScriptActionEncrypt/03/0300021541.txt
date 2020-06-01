@@ -1,0 +1,239 @@
+
+
+＄03-00-02-15-4-1
+
+[soundStopAll]
+
+[charaSet A 8001400 1 マシュ]
+[charaSet B 1098123000 1 ムニエル]
+[charaSet C 2031001 1 ナポレオン]
+[charaSet D 1033002 1 シグルド]
+[charaSet E 1098124510 1 ダ・ヴィンチ]
+[charaSet F 3012001 1 ブリュンヒルデ]
+[charaSet G 98115300 1 ホームズ]
+
+[charaSet H 98115000 1 エフェクト用]
+
+
+[scene 60603]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[se ad553]
+[seVolume ad553 0 0.2]
+[se ad629]
+[seVolume ad629 0 0.4]
+
+[shake 0.05 0 2 2.0]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad666]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+[wt 0.3]
+[seStop ad666 0.3]
+
+＠マシュ
+[line 3]戦闘終了。[r]今回、射出された種子はこれで最後のようです。
+[k]
+
+[charaFace A 12]
+
+＠マシュ
+走行中のボーダーに、ああして[r]巨人種が群がってくるとは思いませんでしたが……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[seStop ad553 2.0]
+[seStop ad629 2.0]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ナポレオン
+[#牽制:けんせい]なのか？　ただの遭遇か？[r]ンン。足止めになっているようには思えんが……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ホームズ
+確かに、種子には統率された意思を感じない。[r]スルトやクリプターの意思ではないのかもしれないな。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+種子が……[r]或いは空想樹が、自律的に射出していると？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠ホームズ
+それは有り得る話だ。面白い。[r]空想樹の防衛本能の発露こそが種子の射出、か。
+[k]
+
+[charaFace G 0]
+
+＠ホームズ
+最初に遭遇したのは、[r]旧ヨートゥンハイメン山地だった、そうだね？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい。ガルフピッゲン山です。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ホームズ
+ふむ。緯度、か？[r]キミたちが北上したことで自動反応した[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 17]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+ほら、面白がってないで！[r]終わったら戻ってきていいからね、みんな！
+[k]
+
+[charaFace E 16]
+
+＠ダ・ヴィンチ
+あっ。皇帝陛下はごめん、引き続き砲手してて！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠ナポレオン
+はいはい。任せておけ。[r]このオレを一砲兵扱いとは見上げた[#お嬢さん:マドモワゼル]だ！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_80 2.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1 0.6]
+
+[charaDepth D 10]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFace F 0]
+[charaFadein D 0.1 0]
+[charaFadein F 0.1 2]
+
+＠シグルド
+……ブリュンヒルデ。
+[k]
+
+＠シグルド
+[#傍:そば]にいると辛いだろう。[r]当方の存在は、おまえの在り方を[#軋:きし]ませてしまう。
+[k]
+
+＠シグルド
+たとえ女王の加護があろうとも[line 3]
+[k]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 1]
+[wt 1.0]
+[charaFace F 0]
+
+＠ブリュンヒルデ
+いいえ。[r]私、不思議と耐えられるのです。
+[k]
+
+[charaFace F 8]
+
+＠ブリュンヒルデ
+既に、霊核が……[r]半ば以上も砕けているせいでしょうか。
+[k]
+
+＠ブリュンヒルデ
+壊れかけたままの状態で現界する私は、[r]こうして、更に壊れた事で……
+[k]
+
+＠ブリュンヒルデ
+通常よりも、抑えられているのかもしれません。
+[k]
+
+[charaFace D 4]
+
+＠シグルド
+皮肉なものだな。英霊とは。
+[k]
+
+[charaFace F 1]
+
+＠ブリュンヒルデ
+いいえ。いいえ、貴方。[r]私は、[#是:これ]を嬉しく思っていますよ、シグルド。
+[k]
+[messageOff]
+[charaFace D 10]
+[wt 0.8]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_11 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

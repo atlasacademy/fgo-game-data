@@ -1,0 +1,197 @@
+
+＄94-03-50-03-1-1
+
+[soundStopAll]
+
+
+[charaSet A 10003000 1 殺生院キアラ]
+[charaSet B 3030000 1 パールヴァティー]
+[charaSet C 99502600 1 マシュ]
+[charaSet D 1098158220 1 シオン]
+[charaSet E 1098158230 1 シオン_腕上げ_通信]
+[charaSet F 1098163800 1 春日局]
+[charaSet G 1098164000 1 松平信綱]
+[charaSet H 1098164100 1 大奥女中1]
+[charaSet J 98115000 1 エフェクト用]
+
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 71700]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+[wt 0.4]
+
+[se ade295]
+[charaMove G -50,0 0.4]
+[charaFadeout G 0.4]
+[seStop ade295 0.8]
+[wt 1.2]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.4]
+
+[bgmStop BGM_EVENT_3 2.2]
+
+[se bac7]
+[effect bit_bolg_01y 0,0 H]
+[charaShake H 0.03 4 4 0.4]
+[wt 0.8]
+[charaMove H 0,-100 0.4]
+[charaFadeout H 0.4]
+[wt 0.3]
+[se ade41]
+[wt 0.4]
+[se ad144]
+[wt 1.2]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠パールヴァティー
+ふぅ。なんとかなりました。
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠マシュ
+周囲の敵性反応、ありません。[r]ですが……。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠殺生院キアラ
+あの殿方は立ち去られてしまったようですね。
+[k]
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[wt 0.1]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth F 0]
+
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+[wt 0.25]
+[fowardEffect bit_talk_tornado02]
+[se ad80]
+[seVolume ad80 0 0.5]
+[wt 0.3]
+[charaSpecialEffect B erasureReverse 1 0.3]
+
+[charaFace F 4]
+[charaFadein F 0.2 1]
+[wt 0.1]
+[seStop ad80 0.3]
+
+[wt 0.5]
+[charaTalk on]
+＠春日局
+信綱殿……。
+[k]
+
+＠春日局
+決して社交的な方ではありませんでしたが、将軍家を[r]想うお心は私と同じ、忠義の臣であったはず。
+[k]
+
+＠春日局
+どうして、あのような……。
+[k]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠シオン
+何にしても、元凶にはあのような協力者がいる、と[r]わかったのは収穫です。
+[k]
+
+＠シオン
+老中ともなれば将軍に次ぐ権力者。[r]江戸城の事も熟知しているでしょう。
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠マシュ
+協力者なら、ゴルドルフ新所長だけでなく、[r]他の方たちの居場所も知っているかもしれません。
+[k]
+
+＠マシュ
+次に会ったときには、[r]情報を聞き出したいところですね……。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠シオン
+答えはこの迷宮の先に進む事でしか[r]得られないのでしょう。
+[k]
+
+＠シオン
+[%1][&くん:さん]、[r]ここからが本格的な迷宮探索となります。
+[k]
+
+[charaFace D 14]
+＠シオン
+入り組んでいますが、[r]何者かが造ったものである以上、
+[k]
+
+＠シオン
+正解ルートには何らかの法則があっても[r]おかしくはないかと。
+[k]
+
+[charaFace D 11]
+＠シオン
+それはただのクセかもしれないし、あるいは[line 3][r]何らかの意図かもしれません。
+[k]
+
+[charaFace D 0]
+＠シオン
+それを見逃さないように、[r]警戒を厳にして進んでください！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

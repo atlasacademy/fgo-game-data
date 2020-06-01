@@ -1,0 +1,200 @@
+
+＄94-00-98-11-1-0
+
+[charaSet A 2006001 1 ダビデ]
+
+[soundStopAll]
+[bgm BGM_EVENT_5 1.0]
+[scene 10310]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 6]
+
+[fadein black 2]
+[wait fade]
+
+[wt 2.0]
+
+？1：なにか……
+？2：気配が……
+
+？！
+
+
+＠？？？
+…………。
+[k]
+
+？1：誰かに……
+？2：見られているような……
+
+？！
+
+[charaFace A 4]
+
+＠？？？
+なんて事だろう。[r]そういうパターンは想定していなかったな。
+[k]
+
+＠？？？
+やれやれ、奥ゆかしいのも困りものだ。[r]仕方がない、僕の方から助け船を出すとしようか。
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_5 0.3]
+
+[se ad60]
+[charaFadeout A 0.4]
+[wt 1.0]
+[seStop ad60 0.3]
+
+[bgm BGM_EVENT_2 0.3]
+
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ダビデ
+やあ、[%1]。こんにちは。[r]元気そうでなによりだ。
+[k]
+
+[flag MALE false]
+[flag FEMALE false]
+
+[selectionUse masterMale]
+？1：こんにちは
+[flag MALE true]
+？2：今日もいいお日柄で
+[flag MALE true]
+
+？！
+
+[selectionUse masterFemale]
+？1：こんにちは
+[flag FEMALE true]
+？2：今日もいいお日柄で
+[flag FEMALE true]
+
+？！
+
+[charaFace A 0]
+＠ダビデ
+そう畏まらなくていいとも、今日は素晴らしい日だ。[r]商業的かつシステマチック。実に趣味が合う。
+[k]
+
+＠ダビデ
+バレンタインといったかな？[r]発祥は地中海、極東では商品販促として発展した催しだ。
+[k]
+
+＠ダビデ
+綺麗に言えば文化の[#混淆:こんこう]と言えるだろう。[r]南米由来のカカオマスのお菓子というのが面白い。
+[k]
+
+＠ダビデ
+地中海、極東、南米。[r]言わば世界を股にかけた実に欲張り、もとい素敵な……
+[k]
+
+
+＠ダビデ
+え？[wt 0.5][charaFace A 1][r]僕は認めてるよ、バレンタイン。いい。かなりいい。
+[k]
+
+＠ダビデ
+日頃の感謝でも、[r]秘めた愛の告白でも……
+[k]
+
+＠ダビデ
+気持ちを伝えられる日だろ。[r]実に、無駄がない。僕好みのシステマチックだ。
+[k]
+
+[charaFace A 0]
+＠ダビデ
+もっと言えば、週に一度くらいあってもいいんじゃないかと[r]思うけど、そこはそれ、何事にも慎みは必要だ。
+[k]
+
+＠ダビデ
+商売にも、契約にも、戦闘にも愛情にもね。
+[k]
+
+[charaFace A 1]
+＠ダビデ
+そういう訳で、思慮深い僕は返礼を忘れない。[r]朝にチョコレートをくれたろう？　そのお返しだ。
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[equipSet B 9805230 1]
+[wait equipSet B]
+[charaFace B 0]
+[charaFadein B 0.5 0,-70]
+[wt 2.0]
+[charaFadeout B 0.4]
+[wt 0.5]
+
+？1：あ、ありがとうございます……ダビデ王……
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ダビデ
+なんと。感謝のしすぎで震えているとは。[r]群からはぐれた子羊のようだ。
+[k]
+
+？2：（絶句）
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ダビデ
+うん？　感激のあまり言葉もない、とは。[r]やはり君は奥ゆかしい。ん～～～、美徳だ。
+[k]
+
+？！
+
+＠ダビデ
+でもおおげさに受け止めないでいい。[r]気楽な方が僕も気楽だからね。
+[k]
+
+[branch _branchEnd MALE 1]
+[branch _isFemale FEMALE 1]
+
+[label _isFemale]
+
+＠ダビデ
+とは言え、君がどうしてもアビシャグしたいようなら[r]僕は全然構わないとも。
+[k]
+
+＠ダビデ
+さしあたって誰の目にもつかない個室に向かおう。[r]え、いや？　口は爽やかなのに眼が笑ってない？
+[k]
+
+
+
+
+＠ダビデ
+ははは。いやだなあ。ははは。[wt 0.3][charaFace A 1][se ad186][backEffect bit_talk_41 -23,168][r][line 3]当然さ、だって本気だからネ！
+[k]
+
+[label _branchEnd]
+
+
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+[soundStopAll]
+[end]

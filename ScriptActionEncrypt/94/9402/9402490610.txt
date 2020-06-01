@@ -1,0 +1,926 @@
+
+
+＄94-02-49-06-1-0
+
+[soundStopAll]
+
+
+[charaSet A 10007000 1 沖田オルタ]
+[charaSet B 1098138000 1 龍馬]
+[charaSet C 1098139000 1 お竜さん]
+[charaSet D 99502600 1 マシュ]
+[charaSet E 98111500 1 ダ・ヴィンチちゃん]
+[charaSet F 1098133000 1 士官]
+[charaSet G 1098141000 1 奄美少将]
+[charaSet H 98111500 1 通信用ノイズ]
+
+[charaDepth B 9]
+[charaDepth C 1]
+[charaDepth H 10]
+
+[bgm BGM_EVENT_90 0.1]
+
+[scene 60000]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.4]
+＠奄美少将
+……ランサーの[#戦線:レッドライン]が消滅したか。
+[k]
+
+＠奄美少将
+予想外だな、落としたのは何者か？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠士官
+敵戦線のため詳しくは不明ですが、[r]どうやらアサシンが関与していた模様です。
+[k]
+
+＠士官
+アサシンも手傷を負い行方をくらましたとのこと。
+[k]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠奄美少将
+アサシン……、後ろから刺しでもしたか、[r]小物にはお似合いの戦術だな。
+[k]
+
+＠奄美少将
+放っておけ……、[r]手負いのアサシンなどこの先、生き残れまい。
+[k]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠士官
+はっ！
+[k]
+
+[messageOff]
+[charaFadeout F 0.7]
+[se ad93]
+[wt 2.0]
+[se ad94]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠奄美少将
+では私もそろそろ動くとするか。
+[k]
+
+[charaFace G 1]
+＠奄美少将
+……信長公、[r]此度の[#饗応:きょうおう]、準備は万端ですぞ。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_90 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[wt 1.5]
+
+[fadeout white 2.0]
+[wait fade]
+
+[scene 10001]
+
+[skip false]
+
+[fadein white 0.1]
+[wait fade]
+
+
+
+[input selectBranch]
+[messageOff]
+[skip false]
+[charaSet A 10007000 1 沖田オルタ]
+[charaSet B 1098138000 1 龍馬]
+[charaSet C 1098139000 1 お竜さん]
+[charaSet D 99502600 1 マシュ]
+[charaSet E 98111500 1 ダ・ヴィンチちゃん]
+[charaSet F 1098133000 1 士官]
+[charaSet G 1098141000 1 奄美少将]
+[charaSet H 98111500 1 通信用ノイズ]
+
+[charaDepth B 9]
+[charaDepth C 1]
+[charaDepth H 10]
+
+[bgmStop BGM_EVENT_90 0.4]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+
+[scene 10001]
+[wt 0.4]
+[soundStopAll]
+[maskin white 1]
+[wait mask]
+[label selectBranch]
+
+[wt 0.4]
+
+[revivalBranch lblNormal lblRevival]
+
+[label lblNormal]
+
+[fowardEffect bit_queststart80107]
+[wait fowardEffect]
+
+[branch lblConf]
+[label lblRevival]
+
+[fowardEffect bit_queststart80242]
+
+[wait fowardEffect]
+
+[label lblConf]
+
+[fadeout white 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[fadein white 0.1]
+[wait fade]
+[wt 0.1]
+
+[fadeout black 2.0]
+[wait fade]
+
+[skip true]
+[wt 0.1]
+
+[scene 59400]
+
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1 1.0]
+
+[se ad93]
+[wt 2.0]
+[se ad94]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.7 1]
+[wt 0.7]
+＠沖田オルタ
+………戻ったぞ。
+[k]
+
+？1：ただいま帰りました
+？2：……つ、疲れた
+
+？！
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 11]
+[charaFace C 0]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 1]
+＠龍馬
+[line 3]やあ、ご苦労様。
+[k]
+
+＠龍馬
+どうやらそっちは無事に[r]済んだみたいだね。
+[k]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+そっちはボロボロだな？
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace B 0]
+[charaFace C 5]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 1]
+＠お竜さん
+こっちは大変だったからな。[r]無論、お竜さんは余裕だったぞ。
+[k]
+
+[charaTalk B]
+[charaFace B 11]
+＠龍馬
+はいはい、足手まといで申し訳ありません。
+[k]
+
+[charaFace B 0]
+＠龍馬
+実はバーサーカーと遭遇してね。
+[k]
+
+＠龍馬
+かなりきつかったけど、[r]何とか無事に帰ってこれたよ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaPut H 1]
+[charaEffect H bit_talk_10]
+[wt 0.1]
+[se ad13]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-90]
+[wt 0.3]
+
+＠ダ・ヴィンチちゃん
+ごくろうさま、[%1][&君:ちゃん]。[r]順調そうで何よりだ。
+[k]
+
+＠ダ・ヴィンチちゃん
+ランサーの支配下にあった[#楔:くさび]の消滅を[r]こちらでも確認したよ。
+[k]
+
+？1：あれ？　バーサーカーの[#楔:くさび]は？
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+
+[charaTalk B]
+[charaFace B 11]
+[charaFace C 0]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 1]
+＠龍馬
+ごめん、手ごわい相手でね。
+[k]
+
+＠龍馬
+僕も消耗が激しくて、[r]そこまで手が回らなかった……。
+[k]
+
+＠龍馬
+[#楔:くさび]の方はまた明日改めて行ってくるよ。
+[k]
+
+[charaTalk C]
+[charaFace C 5]
+＠お竜さん
+激闘芝公園２４時だったからな。
+[k]
+
+[charaFace C 4]
+＠お竜さん
+カエルを捕る暇もなかった、くやしみ。
+[k]
+
+？1：お疲れ様でした
+？2：カエルはいいです
+
+？！
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,-90]
+
+＠ダ・ヴィンチちゃん
+とにかく[#楔:くさび]を破壊すれば、その分、外からの干渉に[r]対する抵抗が弱まるようだ。
+[k]
+
+[charaFace E 0]
+＠ダ・ヴィンチちゃん
+通信妨害も弱まって安定しそうだしね。[r]引き続き、ほかの[#楔:くさび]を破壊してくれたまえ。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[se ad31]
+[wt 1.0]
+[seStop ad31 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-90]
+
+＠ダ・ヴィンチちゃん
+って、言ったそばからまたか……。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠マシュ
+先輩、[#単刀直入:たんとうちょくにゅう]に聞きます！[r]その沖田さんのような方とはどういうごかん[line 2]
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ad539]
+[wt 0.8]
+[charaPut D 1200,1200]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10]
+[wt 1.5]
+[charaFadeout D 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠お竜さん
+ぜんぜん安定してないな。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠龍馬
+ところで以蔵さんがいないようだけど？
+[k]
+
+？1：それが……
+？2：じつは……
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFace B 4]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1 1.0]
+
+＠龍馬
+……そうか、そんな事が。
+[k]
+
+＠龍馬
+でも生きてるならよかった。
+[k]
+
+＠龍馬
+以蔵さん、ああ見えて繊細だからね。[r]しばらくそっとしておこう。
+[k]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠お竜さん
+おい、あんなくそ雑魚ナメクジ心配する[r]暇があるならお竜さんを心配しろ。
+[k]
+
+[charaTalk B]
+[charaFace B 11]
+＠龍馬
+はいはい、いつも心配してますよ。
+[k]
+
+[charaTalk C]
+[charaFace C 1]
+＠お竜さん
+よしよし、それでいい。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+……いいのか。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+
+[charaSet E 1098135000 1 織田信長]
+[charaSet F 1098134000 1 兵卒]
+[charaSet G 98111600 1 織田信勝]
+
+[scene 59700]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1 1.0]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.4 1]
+[wt 0.4]
+＠織田信長
+……貴様がキャスターの使いか。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠兵卒
+失礼します。こちらが協力の条件です。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠織田信長
+……信勝、読め。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠織田信勝
+はい、姉上！
+[k]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠織田信長
+おい、ここでは信長様と呼べ。[r]何度も同じ事を言わすでない。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+＠織田信勝
+も、申し訳ありません！[r]姉…、信長様！
+[k]
+
+[messageOff]
+[se ade11]
+[wt 0.4]
+[seStop ade11 1.0]
+[wt 1.0]
+
+[charaFace G 4]
+＠織田信勝
+えーと……なになに？
+[k]
+
+＠織田信勝
+我々以外のサーヴァントを[r]討伐するまでの不可侵条約。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠織田信長
+フン、予想通りじゃな。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠織田信勝
+……あとは、……えっ！？[wt 0.4][charaFace G 9]
+[k]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠織田信長
+どうした？[r]鉄砲でもよこせと言ってきたか？
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+＠織田信勝
+い、いえ、その……、
+[k]
+
+＠織田信勝
+我々以外のサーヴァントを討伐したのち[r]聖杯を譲る、と。
+[k]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠織田信長
+……何じゃと？
+[k]
+
+＠織田信長
+おい、キャスターは聖杯戦争を[r]降りるということか？
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠兵卒
+はっ……、そのように伺っております。
+[k]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠織田信勝
+姉上……、[r]ちょっとおかしいですよこれ。
+[k]
+
+＠織田信勝
+じゃあ、キャスターはなんで[r]聖杯戦争に参加してるんですか？
+[k]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠織田信長
+だから信長様と呼べというに。
+[k]
+
+[charaFace E 0]
+＠織田信長
+……ふむ。
+[k]
+
+[charaFace E 7]
+＠織田信長
+……委細承知した。[r]キャスターにはそう伝えよ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠兵卒
+はっ、それでは失礼します！
+[k]
+
+[messageOff]
+[se ad60]
+[wt 0.2]
+[seStop ad60 1.0]
+[charaFadeout F 0.4]
+[wt 2.0]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠織田信長
+……ふん、なにを考えていようと[r]殺すのならば同じ事よ。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠織田信勝
+……確かにそうですね。[r]いや、姉上も[#悪:わる]ですな～！
+[k]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠織田信長
+おい、次は本当に許さんぞ。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[scene 59400]
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_90 0.1 1.0]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFace C 0]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 1]
+＠龍馬
+じゃあ、今後の話をしようか。
+[k]
+
+＠龍馬
+ランサー、バーサーカーを排除して、[r]残りはセイバー、アーチャー、キャスター。
+[k]
+
+＠龍馬
+セイバーとアーチャーはカルデアと僕の調べで[r]だいたいの居場所は掴んでる。
+[k]
+
+＠龍馬
+キャスターの[#戦線:レッドライン]は展開してはいるものの[r]本拠地に関してはいまだ不明。
+[k]
+
+＠龍馬
+もともと自陣を築くのには定評があるクラスだし、
+[k]
+
+＠龍馬
+なんらかの動きがないと[r]こちらとしてもお手上げだね。
+[k]
+
+[charaTalk C]
+[charaFace C 5]
+＠お竜さん
+じゃあ、セイバーかアーチャーだな。
+[k]
+
+＠お竜さん
+おまえらどっち行く？[r]怖くて寝れないなら両方お竜さんでもいいぞ。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+……セイバーだ。
+[k]
+
+？1：オルタ……
+？2：沖田さんは手強いよ
+
+
+？！
+
+[charaFace A 6]
+＠沖田オルタ
+マスター、私はもう一度あのセイバーに[r]会わなければならない気がする。
+[k]
+
+＠沖田オルタ
+なぜかは分からないがそんな気がするんだ。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFace C 0]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 1]
+＠龍馬
+そうだね……。
+[k]
+
+＠龍馬
+本当に君が沖田君の別側面だというなら[r]君はもう一度会うべきだろう。
+[k]
+
+[charaFace B 6]
+＠龍馬
+でも、気を付けてほしい。
+[k]
+
+＠龍馬
+沖田総司といえば幕末の京都を[r]震え上がらせた剣豪集団、
+[k]
+
+＠龍馬
+『新選組』の中でも[r]最強の一角を担ったといわれる剣士だ。
+[k]
+
+？1：よく知ってます
+？2：沖田さんみたいな剣士がほかにも……
+
+？！
+
+[charaFace B 0]
+
+＠龍馬
+僕も京の町を歩くときは気を遣ったもんさ。[r]浅葱のダンダラ、角曲がれってね。
+[k]
+
+[charaTalk C]
+[charaFace C 1]
+＠お竜さん
+じゃあ、お竜さんは[r]アーチャーをぶっ殺せばいいのか。
+[k]
+
+[charaTalk B]
+[charaFace B 11]
+＠龍馬
+女の子がぶっ殺すとかいわないでね。[r]でもまあ、そうなるかな。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+そちらこそ気をつけろよ。[r]あのアーチャー、恐ろしく強かった。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 1]
+＠お竜さん
+あんなへっぽこアーチャーの攻撃[r]お竜さんには通じないぞ。
+[k]
+
+[charaFace C 1]
+＠お竜さん
+ま、大船に乗った気で待ってろ。[r]こんどはカエルも捕ってきてやる。
+[k]
+
+？1：お互い気を付けましょう
+？2：カエル好きなのかな？
+
+？！
+
+＠お竜さん
+よーし、出陣だー。[r]景気づけに『[#狼煙:のろし]』でもあげるか？
+[k]
+
+[charaTalk B]
+[charaFace B 11]
+＠龍馬
+はいはい、そういうの良いから。
+[k]
+
+[charaFace B 0]
+[charaFace C 0]
+＠龍馬
+じゃあ、君たちも気を付けて。
+[k]
+
+[charaFace B 5]
+[charaFace C 0]
+＠龍馬
+[line 3]沖田君は強いよ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.7]
+[charaFadeout C 0.7]
+[se ad93]
+[wt 2.0]
+[se ad94]
+[wt 1.0]
+
+？1：自分たちも行こう！
+？2：沖田さんに会いに行こう
+
+？！
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+……ああ、マスター、ゆこう。
+[k]
+
+＠沖田オルタ
+もう一人の私に会うために。
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_90 2.0]
+[wait fade]
+[soundStopAll]
+[end]

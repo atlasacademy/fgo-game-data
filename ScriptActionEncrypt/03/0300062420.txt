@@ -1,0 +1,1190 @@
+
+
+
+＄03-00-06-21-2-0
+
+
+
+[soundStopAll]
+
+[charaSet A 8001410 1 マシュ]
+[charaSet B 1098191200 1 アデーレ]
+[charaSet C 1098191300 1 マカリオス]
+[charaSet D 98002000 1 フォウ]
+[charaSet E 9005001 1 ホームズ]
+[charaSet F 4040002 1 エウロペ]
+[charaSet G 1098124800 1 異星の巫女]
+[charaSet H 1098123410 1 神父]
+[charaSet I 1098123710 1 キリシュタリア]
+[charaSet J 3041001 1 カイニス]
+[charaSet K 1098118410 1 リンボ]
+[charaSet L 8001400 1 アーマード・マシュ]
+
+[verticalImageSet M scene88100 1]
+[charaScale M 1.5]
+
+[charaSet S 5009000 1 エフェクト用ダミー]
+[charaSet T 5009000 1 エフェクト用ダミー]
+
+
+[scene 91601]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[se ad223]
+[fowardEffect bit_talk_quickmove]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,10]
+[charaMove A 1 0.2]
+[wt 1.0]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠マシュ
+着地、成功しました。[r]周囲に敵性反応、ありません。
+[k]
+
+[charaFace A 7]
+＠マシュ
+マスター、こちらに落ちてください。[r][line 3]受け止めます！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ad75]
+[wt 1.8]
+
+[seStop ad75 0.1]
+[se ad222]
+[charaShake A 0.02 3 3 0.4]
+[wt 1.2]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth C 5]
+[charaDepth B 4]
+
+[se ad223]
+[fowardEffect bit_talk_quickmove]
+[charaFace C 0]
+[charaFace B 0]
+[charaFadein C 0.1 -150,10]
+[charaFadein B 0.1 150,10]
+[charaMove C -150,0 0.2]
+[charaMove B 150,0 0.2]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk C]
+＠マカリオス
+無事か？　[%1]。[r]まさかこの高度からの着地に補助が必要とは……
+[k]
+
+＠マカリオス
+汎人類史の人間ってのは、[r]肉体的には本当に脆弱なんだな。
+[k]
+
+
+[charaTalk B]
+[charaFace B 5]
+＠アデーレ
+マカリオス。[&彼:彼女]には加護がないのだから、[r]無理を言っては駄目。
+[k]
+
+
+[charaTalk C]
+[charaFace C 4]
+＠マカリオス
+分かってるつもりだけどな……[r]まあ、気を付けるさ。
+[k]
+
+？1：ナイスキャッチ、マシュ！
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠マシュ
+は、はい。[r]お役に立てたのなら幸いです。
+[k]
+
+
+？2：フォウは無事？
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠マシュ
+もちろんです。[r]盾の格納スペースに……
+[k]
+
+
+
+？！
+
+[messageOff]
+[wt 0.1]
+
+[se ad656]
+[wt 2.0]
+[se adm21]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth A 4]
+[charaDepth D 5]
+
+
+[charaFace D 0]
+[charaFadein D 0.4 -200,0]
+[charaMove D 0 0.4]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk D]
+＠フォウ
+フォウフォ！
+[k]
+
+
+[charaTalk A]
+[charaFace A 6]
+＠マシュ
+わっ、フォウさん、飛び出るのはいけません！[r]これから戦闘が予想されますので！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ホームズ
+あれほど配置されていた防衛機能が停止している。[r]震動も連続的になってきたようだ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+＠エウロペ
+……そのようですね。
+[k]
+
+＠エウロペ
+神器クロノス＝クラウンからはもう、[r]ゼウス様の灯りを感じません。
+[k]
+
+＠エウロペ
+大魔力を内包した結晶山脈を制御下に置き、[r]主神ゼウスに多くの権能をもたらす、[#神器環状体:クロノス＝クラウン]。
+[k]
+
+＠エウロペ
+それが停止した、という事は……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠マカリオス
+……[#神殿:ここ]もそのうち落下するってコトか……
+[k]
+
+＠マカリオス
+急ごう。[r]上層に続いている方に進めばいいんだな？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠エウロペ
+はい。離宮には清めの小神殿があり、[r]その奥に、空想樹に続く道がある筈です。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠フォウ
+フォウ、フォーウ！
+[k]
+
+[messageOff]
+[se ade235]
+[se ad667]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_70 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+[seStop ade235 2.0]
+[seStop ad667 2.0]
+[scene 54006]
+[wt 2.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+？1：ここは……
+
+？！
+
+[bgm BGM_EVENT_79 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ホームズ
+オリュンポスの意匠とは異なるテーブル……[r]七つの席……部屋に設置された現代の魔術回路……
+[k]
+
+＠ホームズ
+おそらくクリプターたちの会合の間だろうね。
+[k]
+
+＠ホームズ
+ここでキリシュタリアは他のクリプターたちと[r]連絡を[line 3][wt 0.7][charaFace E 6]む？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad806]
+[wt 0.8]
+
+＠機械音声
+『オリュンピア＝ドドーナに避難している[r]　クリプターの同志諸君』
+[k]
+
+＠機械音声
+『大神ゼウスはカルデアに敗れ、[r]　空想樹の使用権は私だけのものとなった』
+[k]
+
+＠機械音声
+『時は満ちた。[r]　空想樹に蓄積された魔力は臨界を迎えた』
+[k]
+
+＠機械音声
+『我々の取り決め……[r]　“異聞帯の成長を以て、次の人類史の道を決定する”』
+[k]
+
+＠機械音声
+『我が空想樹アトラスはここに満開を迎える。[r]　まことに申し訳ないが、私の勝利だ』
+[k]
+
+＠機械音声
+『諸君が生きてこの音声を聞いている事を願う』
+[k]
+
+＠機械音声
+『さらばだ。言いたい事はあるだろうが、[r]　新しい世界を、どうか甘受してほしい』
+[k]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠マシュ
+キリシュタリアさんの声です……！[r]あの通路の先が空想樹に繋がる道かと！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠異星の巫女
+………………。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠マシュ
+っ！？　マスター、通路の前に、[r]ロシア[#異聞帯:ロストベルト]に現れた女性が[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠異星の巫女
+………………。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 5]
+[charaDepth B 4]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFace B 4]
+[charaFadein C 0.1 -150,0]
+[charaFadein B 0.1 150,0]
+＠マカリオス
+[FFFFFF]？[-]　何を言っているんだマシュ。[r]通路には誰もいないぞ。
+[k]
+
+
+[charaTalk B]
+＠アデーレ
+ええ。魔力の反応もないわ。[r]……大丈夫？　疲れていない？
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+え……？[r]でも、目の前に、あんなにハッキリと……
+[k]
+
+？1：……二人には見えない[&のか:の]？
+？2：そういえば、ロシアの時も観測できないって……
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ホームズ
+何かを伝えたいのか、それとも、[r]ただそこにあるだけの『現象』なのか。
+[k]
+
+＠ホームズ
+どうあれ、いま関わっている時間はない。[r]妨害をしてこないのなら無視するべきでは？
+[k]
+
+？1：……[&そうですね:そうだよね]……
+？2：……行こう、マシュ
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠マシュ
+それは……そうなのですが。[r]……何か、伝えたがっているような気がして……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠マカリオス
+いいから行くぞ！[r]敵の親玉はもう目の前だ！
+[k]
+
+＠マカリオス
+ここで弱気になってどうする！[r]アトランティスじゃ完璧にやられたらしいが、
+[k]
+
+＠マカリオス
+今度こそリベンジするんだろう！？[r]後ろを気にしてどうするんだ！
+[k]
+
+？1：……[&ああ:うん]。今はキリシュタリアに集中しよう！
+
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+[wt 1.2]
+
+[charaFace A 7]
+＠マシュ
+は、はい！[r]その通りです、マスター！
+[k]
+
+＠マシュ
+ごめんなさい。あなたが何を言いたいのか、[r]わたしたちには分かりませんが、
+[k]
+
+＠マシュ
+次はきっと、落ち着いてお話ししますので！[r]失礼しますっ！
+[k]
+
+
+[messageOff]
+[se ade235]
+[se ad667]
+[bgm BGM_EVENT_79 0.7 0.4]
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+[seStop ade235 1.0]
+[seStop ad667 1.0]
+[charaFadeout A 0.4]
+[pictureFrame cut063_cinema]
+[wt 1.0]
+
+
+[wipein rightToLeft 0.7 1]
+[bgm BGM_EVENT_79 0.7 1.0]
+[wait wipe]
+
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+＠異星の巫女
+…………………………。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.4 0,-50]
+[wt 0.4]
+＠神父
+さて。止めたかったのか、[r]それとも、ここで殺したかったのか。
+[k]
+
+＠神父
+私でも貴女の考えは読み取れない。[r]どちらだったのです、巫女よ？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 0,-50]
+＠異星の巫女
+………………。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 0,-50]
+＠神父
+おや。言うまでも無い、という顔をされたか。[r]ではやはり、“どうでもいい”と。
+[k]
+
+[charaFace H 8]
+＠神父
+承知しました。では、私もそのように。[r]彼らの戦いに介入はいたしません。
+[k]
+
+＠神父
+キリシュタリアの人智を超えた決断、[r]その揺るぎのない精神力が勝つか。
+[k]
+
+＠神父
+カルデアの人理を背負った果敢、[r]その予断を許さぬ生存力が勝つか。
+[k]
+
+＠神父
+それとも[line 3]全てを敵に回してなお、[r]我々の運命力がこれに勝るか。
+[k]
+
+[charaFace H 1]
+＠神父
+ひとりの神父として[r]答えを見届けるとしましょう。
+[k]
+
+＠神父
+『異星の神』が求めた正解[line 3][r]それが、どのような姿なのかをね。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_79 1.0]
+[wait fade]
+
+[pictureFrame]
+[charaFadeout H 0.1]
+
+[charaFadein M 0.1 0,-200]
+[scene 93000]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+[charaMove M 0,-400 3.0]
+[wt 4.5]
+
+[wipeout rectangleStripDownToUp 0.7 1]
+[wait wipe]
+
+[charaFadeout M 0.1]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.7 1]
+[wait wipe]
+
+[wt 1.0]
+？1：あれが大西洋異聞帯の[line 3]
+？2：地球上、最大の空想樹……！
+
+？！
+
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠マシュ
+……？[r]シバからの反応がありません。
+[k]
+
+＠マシュ
+未来予測による攻撃確定判定が……[r]『敵性反応』が、まったくない……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠ホームズ
+（……？　つまり、あの空想樹は外敵への攻撃手段を[r]　持たない……いや、必要ない、という事か？）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+＠エウロペ
+これが空想樹アトラス……。[r]わたくしもこんな間近で見るのは初めてですが……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 4]
+[charaDepth C 5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein C 0.1 -150,0]
+[charaFadein B 0.1 150,0]
+＠アデーレ
+……本当に、樹の[#虚:うろ]の中に銀河が見える……[r]今まで、地上から見えてはいたけれど……
+[k]
+
+
+[charaTalk C]
+＠マカリオス
+……ああ。実際に見ると圧倒されるな。[r]美しくはあるが、これは[line 3]
+[k]
+
+＠？？？
+[charaTalk I]
+それ以上に恐怖を感じる……かな？[r]私も同感だよ、アデーレ、マカリオス。
+[k]
+
+＠？？？
+[charaTalk I]
+カルデアの残党と[r]オリュンポスの反逆者。
+[k]
+
+＠？？？
+[charaTalk I]
+二つの世界の代表者として、[r]君たちを歓迎しよう。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad311]
+[wt 1.0]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.7 1]
+[seStop ad311 0.5]
+[wt 1.0]
+
+[bgm BGM_MAP_36 0.1]
+＠キリシュタリア
+ようこそ、アトラスの空想樹へ。
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 0.1]
+
+
+[charaDepth I 6]
+[charaDepth J 5]
+[charaDepth K 4]
+
+[charaFace K 0]
+[charaFace J 20]
+[charaFadein K 0.4 0]
+[charaFadein J 0.4 2]
+[wt 1.6]
+
+[charaFadeout K 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.2]
+
+
+[charaDepth A 4]
+[charaDepth E 3]
+[charaDepth B 6]
+[charaDepth C 7]
+[charaDepth F 5]
+
+[charaFace A 7]
+[charaFace E 5]
+[charaFadein A 0.1 2]
+[charaFadein E 0.1 0]
+[wt 1.6]
+
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[wt 0.2]
+
+[charaFace B 5]
+[charaFace C 5]
+[charaFace F 5]
+[charaFadein B 0.1 400,0]
+[charaFadein C 0.1 100,0]
+[charaFadein F 0.1 0]
+[wt 1.6]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+アルターエゴ、リンボ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 12]
+[charaFadein K 0.1 1]
+＠リンボ
+[line 3]ええ、はい。[r]先ほど倒されたばかりのリンボでございます！
+[k]
+
+[charaFace K 13]
+＠リンボ
+驚きましたか？　驚かれましたかァ？
+[k]
+
+＠リンボ
+いえいえ言わずとも結構、心中は察しますぞ！[r]まさに皆さま、仰天し、焦燥の真っ最中！
+[k]
+
+[charaFace K 14]
+＠リンボ
+ですが拙僧はこの通り、不死身でして。[r]何をされようと本の[#頁:ページ]をめくるが如く、
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 10]
+[charaFadein I 0.1 1]
+＠キリシュタリア
+リンボ。君に発言は許可していない。[r]少し黙っていてくれるかな？
+[k]
+
+＠キリシュタリア
+私はゼウスほど寛大じゃない。[r]頁だというのなら、その体を一瞬で燃やすのみだが。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 15]
+[charaFadein K 0.1 1]
+＠リンボ
+[line 3]は？[r]クリプター如きが、私に何と？
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 8]
+[charaFadein I 0.1 1]
+＠キリシュタリア
+気づいていないのか、と呆れているんだよ。
+[k]
+
+＠キリシュタリア
+ここにいる君は、[r]リンボが空想樹の監視用に残した式神だが……
+[k]
+
+＠キリシュタリア
+[#その式神と本体を結ぶ糸が断たれている]。[r]君は文字通り、リンボの最後の分身になるだろう。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 4]
+[charaFadein K 0.1 1]
+＠リンボ
+ンン、あり得ません。あり得ませんとも！[r]拙僧の術を断つなど、[#彼:か]の陰陽師でないかぎり[line 3]
+[k]
+
+[charaFace K 2]
+＠リンボ
+なんとぉ！？　確かに途切れている！？[r]莫迦な、何があったというのだ、一体！？
+[k]
+
+＠リンボ
+これはいけない、これはいけない！[r]冗談にも程がある、[#あとたった一回しか死ねない]とは！
+[k]
+
+＠リンボ
+失礼、この場は貴方にお任せしましょう、[r]キリシュタリア・ヴォーダイム！
+[k]
+
+[charaFace K 0]
+＠リンボ
+拙僧、空想樹の[#側:そば]にて、遠巻きに皆さまの[r]殺し合いを眺めさせていただきますれば！
+[k]
+
+[messageOff]
+[bgmStop BGM_MAP_36 5.0]
+[se ade31]
+[effect bit_talk_pentagram_01_s]
+[wt 1.0]
+[effectStop bit_talk_pentagram_01_s]
+[se ad598]
+[charaSpecialEffect K wipeTime 0 2.0 0 0.2]
+[wt 2.5]
+[seStop ad598 0.3]
+[wt 1.2]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+＠キリシュタリア
+やれやれ。[r]最後まで困った男だな、彼は。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+
+[bgm BGM_TITLE_2 0.1]
+
+[charaFace I 0]
+＠キリシュタリア
+まずは大神ゼウスとの戦いに拍手を。
+[k]
+
+＠キリシュタリア
+君たちの勝ち目はほぼ無い筈だった。[r]それをよく、[#誰も欠けないまま]打ち破ったものだ。
+[k]
+
+？1：誰も、欠けないまま……？
+
+[charaFace I 9]
+＠キリシュタリア
+おや。私の認識違いかな。[r][%1]、マシュ・キリエライト、
+[k]
+
+＠キリシュタリア
+神妃エウロペ、シャーロック・ホームズ。
+[k]
+
+＠キリシュタリア
+汎人類史にいるべき正統な存在は、[r]この４名だったと記憶しているが？
+[k]
+
+？2：[line 3]（冷静に、冷静に）。
+
+[messageOff]
+[charaFace I 11]
+[wt 1.0]
+[charaFace I 1]
+＠キリシュタリア
+[line 3]。
+[k]
+
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ホームズ
+失礼。挑発はそこまでにしていただきたい、[r]ミスター・ヴォーダイム。
+[k]
+
+＠ホームズ
+こちらも時間がない。キミとの会話は魅力的だが、[r]これまでの努力を無にする事はできない。
+[k]
+
+＠ホームズ
+キミの後ろにある空想樹は危険な状態だ。[r]一刻も早く伐採させていただく。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 10]
+[charaFadein I 0.1 1]
+＠キリシュタリア
+……うん。至極、もっともな判断だ。
+[k]
+
+[charaFace I 0]
+＠キリシュタリア
+だが、いささか遅かったね。[r]私の空想樹は既に完成している。
+[k]
+
+＠キリシュタリア
+満開を待つだけとなった空想樹は、[r]その機能の大半を自己の護りに変えている。
+[k]
+
+＠キリシュタリア
+ああなった空想樹の樹皮は、[r]外部からの干渉を受け付けない。
+[k]
+
+＠キリシュタリア
+アレを枯らせる事ができるのは[r]空想樹と接続していた大神ゼウスか、
+[k]
+
+＠キリシュタリア
+その使用権を所持している私だけだ。[r]つまり[line 3]
+[k]
+
+？1：空想樹を切り倒すには、
+？！
+
+[messageOff]
+[wt 0.5]
+
+？1：[&おまえ:あなた]を倒すしかない、という事[&だろ:ですね]
+？！
+
+
+[charaFadeout I 0.1]
+[bgmStop BGM_TITLE_2 1.0]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 1.2]
+
+[charaFace A 7]
+＠マシュ
+[line 3]はい。[r]その通りです、マスター。
+[k]
+
+＠マシュ
+キリシュタリア・ヴォーダイム。[r]その言葉が本当なら、
+[k]
+
+＠マシュ
+あなたは姿を隠して[r]時間が経つのを待てば良かった。
+[k]
+
+＠マシュ
+なのに、こうして目の前に現れ、[r]マスター・[%1]と対峙している。
+[k]
+
+＠マシュ
+……つまり。[r]あなたには[#その用意がある]、という事ですね？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠キリシュタリア
+ああ。君たちが私を上回る人間であるなら、[r]空想樹を譲り渡す用意がある。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠マシュ
+[line 3]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+＠キリシュタリア
+それでこそだ。[r]いい顔をするようになったね、マシュ。
+[k]
+
+＠キリシュタリア
+君もだ、[%1]。[r]ようやく君たち本来の姿を見せてくれた。
+[k]
+
+＠キリシュタリア
+アトランティスでの戦闘は、[r]君たちの本気ではなかった。
+[k]
+
+＠キリシュタリア
+少なくとも、[r]私が伝え聞いた君たちの姿とは違っていた。
+[k]
+
+[charaFace I 10]
+＠キリシュタリア
+『相手がどれほど強大であろうと諦めず、[r]　絶望を呑み込んで立ち上がる』
+[k]
+
+＠キリシュタリア
+『恐れを消さず、模索を忘れず、希望を捨てず。[r]　[line 3]その上で、自分を疑わず』
+[k]
+
+＠キリシュタリア
+『人類の未来なんてものを背負わされた上で、[r]　そう戦い抜いたマスターがいた』
+[k]
+
+[charaFace I 1]
+＠キリシュタリア
+……ああ。実に胸が躍る。[r]ようやくイメージと一致したよ。
+[k]
+
+＠キリシュタリア
+まさしく、デイビットの話した通りだ。[r]今の君こそ、私が戦うべき最大の敵と言える。
+[k]
+
+？1：[line 3]色々と、言いたい事はあるけど
+？！
+
+[messageOff]
+[wt 0.5]
+
+？1：まずは、[&おまえ:あなた]を倒してからだ！
+
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgm BGM_BATTLE_47 0.1]
+
+＠フォウ
+フォウ、フォーウ！
+[k]
+
+[charaTalk depthOff]
+[charaDepth B 4]
+[charaDepth C 5]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFace B 1]
+[charaFadein B 0.1 150,0]
+[charaFadein C 0.1 -150,0]
+＠マカリオス
+うお、[%1]、[r]そんな強気な物言いができたのか！？
+[k]
+
+
+[charaTalk B]
+＠アデーレ
+ええ。意外なのに不思議ね、[r]とっても[%1]らしかったわ！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠ホームズ
+（確かに。カルデア本部にいた頃の[r]　[&ミスター:ミス][%1]に戻ったようだ）
+[k]
+
+＠ホームズ
+（異聞帯の事情も『異星の神』の謎も、[r]　今は二の次といわんばかり）
+[k]
+
+＠ホームズ
+（[&彼:彼女]はいま、ひとりのマスターとして[r]　目の前の強敵を見据えている）
+[k]
+
+[charaFace E 5]
+＠ホームズ
+（……そうか。[r]　キミが望んだのはこれか、キリシュタリア）
+[k]
+
+＠ホームズ
+（マスターとしての頂上決戦）
+[k]
+
+＠ホームズ
+（[%1]に、[r]　何の負い目も無く後を託す為の[line 3]）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 13]
+[charaFadein I 0.1 1]
+＠キリシュタリア
+[line 3]素晴らしい。
+[k]
+
+＠キリシュタリア
+それでこそだ、[r]我々ではない、新しいカルデアのマスター。
+[k]
+
+＠キリシュタリア
+なに。私は[#芥:あくた]の如く、なんて言わないさ。[r]その[#矜持:きょうじ]ごと、正面から粉砕するのみだ。
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth A 4]
+[charaDepth L 5]
+
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 0.4]
+
+[se ad658]
+[charaFace L 7]
+[charaFadein L 0.4 1]
+[wt 0.4]
+
+[charaFadeout A 0.4]
+[wt 0.4]
+
+
+[charaTalk on]
+[charaTalk L]
+[charaFace L 2]
+＠L：マシュ
+敵マスター、戦闘態勢に入りました！[r]マスター！
+[k]
+
+？1：ああ[line 3]見せつけてやろう、マシュ！
+
+？！
+
+[messageOff]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace I 13]
+[charaFace J 7]
+[charaFadein I 0.1 -150,0]
+[charaFadein J 0.1 200,0]
+[wt 1.0]
+[charaTalk on]
+[charaTalk I]
+＠キリシュタリア
+始めよう、カイニス！[r]これが、最後の『人間同士』の戦いだ！
+[k]
+
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_47 0.4]
+[wait fade]
+[soundStopAll]
+[end]

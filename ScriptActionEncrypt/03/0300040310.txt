@@ -1,0 +1,673 @@
+
+
+
+
+
+＄03-00-04-03-1-0
+
+[soundStopAll]
+
+[charaSet A 1098123210 1 ゴルドルフ]
+[charaSet B 1098123010 1 ムニエル]
+[charaSet C 1098124510 1 ダ・ヴィンチ]
+[charaSet D 8001410 1 マシュ]
+[charaSet E 1019001 1 ラーマ]
+[charaSet F 3004001 1 カルナ]
+[charaSet G 98002000 1 フォウ]
+[charaSet H 98115300 1 ホームズ]
+[charaSet I 3031001 1 哪吒]
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+[scene 74901]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ゴルドルフ
+しかし、ホントにいけるかね？[r]中国でもなんだかんだ苦労したよねぇ？
+[k]
+
+[charaFace A 1]
+
+＠ゴルドルフ
+まあ前回の序盤、私は自らの死と向き合う蛮勇を[r]行使しすぎたあまり冷静な判断力を失っていたため、
+[k]
+
+＠ゴルドルフ
+実際、なにがあったかよく覚えてはいないのだがね！[r]ええっと、サーヴァントが[#喚:よ]べなかったんだっけ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠ムニエル
+いちいち言わなくていいッスよ、[r]みんな知ってますから。
+[k]
+
+[charaFace B 0]
+
+＠ムニエル
+ま、中国みたいに特殊な状況なんて[r]そうそうあるわけでもないでしょ。
+[k]
+
+＠ムニエル
+今回はさっくりと頼りになるサーヴァントを[r]召喚できると思いますよ。希望的観測ですけど。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+そーそー。あとは実際にチャレンジあるのみ！[r]マシュ、準備はどう？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠マシュ
+はい。召喚術式の構築、[#敷設:ふせつ]は完了しています。[r]霊基トランクとの接続も問題ありません。
+[k]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaFace D 7]
+
+＠マシュ
+最終確認[line 3]英霊召喚システム・フェイト。[r]状況、[#全て問題なし:オ　ー　ル　グ　リ　ー　ン]！
+[k]
+
+[charaFace D 1]
+
+＠マシュ
+マスター。[r]ご準備よろしければ、いつでもどうぞ！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 1.4]
+
+[se bas16]
+[seVolume bas16 0 0.6]
+[wt 0.9]
+
+[se ad153]
+[seVolume ad153 0 0.0]
+[seVolume ad153 1.0 0.2]
+[effect bit_talk_summon]
+[wt 1.5]
+
+[bgm BGM_EVENT_82 0.1]
+
+＠
+汝の身は我が下に、我が命運は汝の剣に。[r]聖杯の寄るべに従い、この意、この[#理:ことわり]に従うならば応えよ。
+[k]
+
+[se ad632]
+[seStop ad632 3.0]
+[effect bit_talk_lightning_05t]
+
+＠
+誓いを此処に。
+[k]
+
+＠
+我は常世総ての善と成る者、[r]我は常世総ての悪を敷く者。
+[k]
+
+＠
+汝三大の言霊を纏う七天、[r]抑止の輪より来たれ、天秤の守り手よ[line 3]！
+[k]
+
+[se su3]
+[messageOff]
+[fadeout white 1.0]
+[wait fade]
+
+[effectDestroy bit_talk_summon]
+[effectDestroy bit_talk_lightning_05t]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[seStop ad632 3.0]
+[seStop ad153 3.0]
+[wt 5.0]
+
+[fadein white 2.0]
+[wait fade]
+
+[wt 1.0]
+
+[charaFace E 1]
+[wt 0.5]
+
+＠ラーマ
+サーヴァント、セイバー。[r]偉大なるコサラの王、ラーマだ。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 1.5]
+
+＠カルナ
+サーヴァント、ランサー。真名、カルナ。[r]宜しく頼む。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+[wt 1.2]
+[charaFace D 1]
+
+＠マシュ
+先輩！　召喚成功です！[r]というか、これは[line 3]やりましたね！
+[k]
+
+？1：やったー！
+？2：知ってる二人だ！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠ゴルドルフ
+おおっ！[wt 0.5][charaFace A 2][r]……ぃよし、よーし！　さすが私、持っているな！
+[k]
+
+[charaFace A 1]
+
+＠ゴルドルフ
+勝ったも同然の引きではないか。インド攻略に[r]最適なサーヴァントが[#喚:よ]べたと言ってもいいだろう！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 17]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+[#喚:よ]んだのは[%1][&君:ちゃん]だけどね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠マシュ
+ガッツポーズしたい気分ですが、さすがに自重して、
+[k]
+
+＠マシュ
+代わりにフォウさんに[r]飛び跳ねてもらいたいと思います。どうぞ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.2 90,0]
+[charaMove G 1 0.3]
+
+＠フォウ
+フォッフォウ、[wt 0.3][cueSe Battle bac469][charaMoveReturn G 0,40 0.4]フォーウ！
+[k]
+
+
+[messageOff]
+[wipeout rollRight 1.2 0.5]
+[bgmStop BGM_EVENT_82 1.2]
+[wait wipe]
+[charaFadeout G 0.1]
+[wt 0.7]
+[wipein rollLeft 1.0 0.5]
+[wt 0.9]
+[bgm BGM_EVENT_77 0.1]
+[wait wipe]
+
+[charaTalk depthOff]
+[charaDepth F 0]
+[charaDepth E 1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+
+＠カルナ
+なるほど。状況は[#大凡:おおよそ]理解した。[r]オレたちは[#汎人類史:カ　ル　デ　ア]側のサーヴァント、という事か。
+[k]
+
+＠ラーマ
+うむ！　なかなかに苦難に満ちた道程だったようだな、[r]マスター・[%1]よ。
+[k]
+
+＠ラーマ
+だが安心するがいい。おまえはこの余、コサラの王にして[r]ヴィシュヌの化身たるラーマを召喚する事に成功したのだ。
+[k]
+
+＠ラーマ
+いかなる[#艱難辛苦:かんなんしんく]がこの先に待ち受けていようとも、[r]我が退魔の刃はそれらを等しく[#雲散:うんさん]せしめよう。
+[k]
+
+[charaFace E 1]
+
+＠ラーマ
+しかし加えて、“施しの英雄”カルナまでも[r]引き当てているとは！
+[k]
+
+＠ラーマ
+幸運にも程があるというか……マスターよ、[r]おまえはこれまでどれだけの善行を積んできたのだ？
+[k]
+
+＠カルナ
+オレはそれほど喜ばれる英霊ではないが……[r]そうだな。
+[k]
+
+＠カルナ
+[#喚:よ]ばれた以上、マスターの使命に全霊を尽くすのみだ。[r]遠慮は無用、好きに使うがいい。
+[k]
+
+
+＠カルナ
+だが[line 3]かの王と肩を並べて戦えるとは[r][#戦士:クシャトリヤ]の冥利に尽きる。
+[k]
+
+＠カルナ
+オレ自身も幸運を感じている事を否定はしない。
+[k]
+
+＠ラーマ
+ははは、[#太陽神:スーリヤ]の息子は礼も[#弁:わきま]えているようだ。[r]余の背中を預けるに全くの不足はないぞ、大英雄カルナよ！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠マシュ
+………………。
+[k]
+
+？1：嬉しそうだね、マシュ
+？！
+
+[charaFace D 13]
+
+＠マシュ
+あ、はい！[r]嬉しい、というか、少しほっとしてしまって……。
+[k]
+
+＠マシュ
+お二人がとても頼りになる英雄でいらっしゃるのは[r]充分わかっていますから。
+[k]
+
+＠マシュ
+召喚に応じていただいて、[r]本当にありがたいと感じているのです。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+うんうん。地理条件が有利に働いたにせよ、[r]ベストに近い召喚結果なんじゃないかな？
+[k]
+
+＠ダ・ヴィンチ
+カルデアの霊基グラフから、最有力候補として[r]ラーマ、カルナ、アルジュナ、パールヴァティーの四騎を
+[k]
+
+＠ダ・ヴィンチ
+選出してはいたけど、こちらの召喚に応じてくれるかは[r]賭けだったからね！
+[k]
+
+[charaFace C 0]
+
+＠ダ・ヴィンチ
+加えて、このインドという地域において、[r]その二人は知名度や人気、信仰力が段違いだ。
+[k]
+
+＠ダ・ヴィンチ
+普段以上の力を発揮してくれるだろうし[line 3][r]純粋なインドの風土的知識に関しても頼りにできる。
+[k]
+
+[charaFace C 1]
+
+＠ダ・ヴィンチ
+まあ[#異聞帯:ロストベルト]である以上、少々のズレはあるかもしれないが、[r]ヨーロッパ人である我々よりはよほど適応力が高いはずだよ☆
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠ホームズ
+どうだろう、現時点で気になる部分がありはしないだろうか？[r]ここはキミたちの知るインドとどう違う？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace F 0]
+[charaFadein F 0.1 0]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+
+＠ラーマ
+どう違うと問われれば、まったく違う、と[r]答えざるを得ないぞ。地理や地形に見覚えはないし[line 3]
+[k]
+
+[charaFace E 4]
+
+＠ラーマ
+いや、それ以前に、なんと言えばいいのか。[r]ひどく感覚的なものだが、全体の空気が……。
+[k]
+
+[charaFace F 4]
+
+＠カルナ
+ああ。乾いている[line 3][r][#寂しい]、と感じる。
+[k]
+
+[charaFace E 0]
+
+＠ラーマ
+おお、それだ。確かにそんな感じだ。[r]意味は余にもわからんがな。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠マシュ
+寂しい、ですか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠フォウ
+フォウー？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠ラーマ
+そしてもちろん、余は現界するなり[#妻:シータ]の気配を探るのが[r][#常:つね]なのだが、反応は手応えなしのスッカスカ。
+[k]
+
+＠ラーマ
+その意味でも寂しい。ああ、愛しのシータよ。[r]ここでもまた君には逢えないのか……？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠カルナ
+オレも見知った何かの気配は感じない。[r]だが、しいて言うなら[line 3]
+[k]
+
+[charaFace F 4]
+
+＠カルナ
+………………。
+[k]
+
+？1：どうしたの？
+？2：何か感じ取れる？
+？！
+
+[charaFace F 0]
+
+＠カルナ
+……いや。薄くではあるが、身体が勝手に[r]戦が始まる前の緊張を示していた。
+[k]
+
+＠カルナ
+何かあるのかと考えてはみたものの、理由が見当たらない。[r]……気のせい、いや、気の迷いだろう。
+[k]
+
+＠カルナ
+紛らわしくてすまない、マスター。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠ホームズ
+あの、遠くに見える謎の立方体についてはどうだろう？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ラーマ
+正直、わからん。
+[k]
+
+＠ラーマ
+シータを捜して様々な国を飛び回った余だが、[r]あんなものは見た事も聞いた事もないぞ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠カルナ
+同じく、だ。……形だけならば、[r]どこかで見た事があるような気もするが。
+[k]
+
+＠カルナ
+求められているのは、そのような答えではあるまい。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+まーね。どこそこの芸術家が作った巨大サイコロや[r]巨大ルービックキューブのオブジェに似ている、
+[k]
+
+＠ダ・ヴィンチ
+とか言われても困っちゃうわけだし。[r]知りたいのはガワじゃなくて本質さ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ゴルドルフ
+ふん。正史サーヴァントのおまえたちにわからないのであれば、[r]やはりあれはこの[#異聞帯:ロストベルト]特有の[#何か]なのだろう。
+[k]
+
+[charaFace A 6]
+
+＠ゴルドルフ
+ならば鍵はこの[#異聞帯:ロストベルト]の中にしかないはず。[r]当初の予定どおり、さっさと周囲の調査に向かうのだ！
+[k]
+
+＠ゴルドルフ
+世界の危機なんだからキリキリと動きなさいよ、[r]ホント。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠ラーマ
+……なあマスター。おまえの上役だというだけで、どうして[r]この男はこうも偉そうなのだ？　余は王なのだが。
+[k]
+
+？1：なんかすみません……
+？2：根はいい人なんです！
+？！
+
+[charaFace E 0]
+
+＠ラーマ
+まあよい、今は余もサーヴァントの身！[r]ある程度は寛容を見せても構うまい。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠哪吒
+偉そうなのは確か。でも　害はない。[r][#気にしない:す　る　ー]　推奨。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠フォウ
+フォウ、フォウ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaPut J 1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+
+＠ホームズ
+さて、そろそろ行動開始といこう。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+まずは周囲の探索からだね。[r]ひとまずこちらの指示する方角へ向かってくれ。
+[k]
+
+＠ダ・ヴィンチ
+原生の野獣が出てくるかもしれないが、ま、[r]キミたちなら適切に対処してくれれば大丈夫だろう！
+[k]
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_77 0.4]
+[wait fade]
+[soundStopAll]
+[end]

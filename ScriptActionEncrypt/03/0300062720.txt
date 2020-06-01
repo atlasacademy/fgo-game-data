@@ -1,0 +1,538 @@
+
+
+
+＄03-00-06-24-2-0
+
+
+
+[soundStopAll]
+
+[charaSet A 1098181900 1 ネモ・マリーン]
+[charaSet B 1098158300 1 ネモ]
+[charaSet C 1098123000 1 ムニエル]
+[charaSet D 1098123200 1 ゴルドルフ]
+[charaSet E 1098182100 1 ネモ・プロフェッサー]
+[charaSet F 8001410 1 マシュ]
+[charaSet G 9005001 1 ホームズ]
+[charaSet H 3041002 1 カイニス]
+
+[charaSet R 1098121600 1 バリアエフェクト用ダミー]
+[charaSet S 1098121600 1 エフェクト用ダミー]
+[charaSet T 1098121600 1 エフェクト用ダミー]
+[charaSet U 1098121600 1 エフェクト用ダミー]
+
+[scene 86200]
+
+[charaPut R 2000,2000]
+[charaEffect R bit_talk_barrier_erp_01]
+[charaPut U 1200,1200]
+[charaEffect U bit_talk_10]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.5]
+[se ad15]
+[wt 0.5]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠ネモ・マリーン
+みんなの霊基反応、確認したよ～！[r]なんかふわふわ浮いてるけど、甲板に誘導するねー！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ネモ
+ムニエル、ボーダーをスラスターモードに移行。
+[k]
+
+＠ネモ
+[%1]たちが艦内に入るまで、[r]本艦は空中浮遊状態を維持する。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ムニエル
+了解、まかせろ！[r]えーと、スラスターのコントロールはっと……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠ゴルドルフ
+ううむ、祭壇で待機だと言ったのに、[r]わざわざ危険を冒しての浮遊魔術とは……！
+[k]
+
+＠ゴルドルフ
+まあいい、甲板のハッチを開け！
+[k]
+
+＠ゴルドルフ
+現地調査隊を収容次第、至急、[r]このおっかない空域から離脱する！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_82 1.0]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠ネモ・プロフェッサー
+はいごめんなさいー。[r]その前に緊急報告ー。
+[k]
+
+＠ネモ・プロフェッサー
+ドドーナ離宮方面から強い霊基反応が接近中、[r]本艦に接触まであと１０、９、８、
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠ゴルドルフ
+まだ危険は続くのか！？[r]いったい何だというのかね！？
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[se ad556]
+[seVolume ad556 0 0]
+[wt 0.1]
+
+[charaSet D 1098123210 1 ゴルドルフ]
+
+[seVolume ad556 2.0 0.8]
+
+[charaPut S 1]
+[charaEffect S bit_talk_barrier_erp]
+
+[scene 93100]
+
+[charaPut R 1]
+[wt 2.0]
+
+[seStop ad556 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk off]
+
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein F 0.4 256,20]
+[charaFadein G 0.4 -256,20]
+[charaMove F 256,6 0.3]
+[charaMove G -256,6 0.3]
+[se ad223]
+[se ad666]
+[wt 0.3]
+[seStop ad666 0.1]
+[charaMove F 256,0 0.1]
+[charaMove G -256,0 0.1]
+[wt 0.8]
+[charaEffectStop R bit_talk_barrier_erp_01]
+[wt 0.2]
+[se ad934]
+[wt 1.8]
+
+
+？1：……なんとか帰還できたね
+
+？！
+
+[charaTalk on]
+[charaFace F 4]
+
+＠マシュ
+はい。エウロペさんの防御結界は、[r]これでなくなってしまいましたが……
+[k]
+
+[charaFace G 4]
+
+＠ホームズ
+ああ。さすが神妃エウロペ、完璧な術式だった。
+[k]
+
+＠ホームズ
+繊細な彼女の魔術でなければ、[r]ここまで安全な空の旅は不可能だっただろう。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaPut T 1]
+[charaEffect T bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+なにをつっ立っている！[r]ハッチまで走れ！
+[k]
+
+＠ゴルドルフ
+そちらに正体不明の霊基反応が接近中だ！[r]あと３、２、１[wt 1.0][se ade8][charaFace D 9][line 3]うおおお！？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+
+[messageOff]
+[se ad709]
+[se ade388]
+[se bac416]
+[effect bit_talk_v_slash01]
+[se ad876]
+[effect bit_talk_impactlanding]
+[shake 0.05 0 2 2.0]
+[se ad776]
+[seVolume ad776 0 0.3]
+[seStop ad776 3.0]
+[wt 3.5]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.7 1]
+[wt 1.2]
+[charaFaceFade H 1 0.2]
+[wt 0.2]
+[bgm BGM_EVENT_71 0.1]
+
+＠カイニス
+よう。やっぱり生きてたかテメェら。[r]いいぜ、そうでなくちゃつまらねえ。
+[k]
+
+＠カイニス
+生き汚いのがテメェらの長所だもんな？[r]期待してカッ飛ばして正解だぜ。
+[k]
+
+＠カイニス
+双子とエウロペは[line 3]
+[k]
+
+[charaFace H 6]
+
+＠カイニス
+ああ、くたばったか。[r]そりゃあそうだよな。助ける道理もねえ。
+[k]
+
+＠カイニス
+いいねえ、さんざんやりたい放題して[r]テメェらだけトンズラってのは。後腐れがなくていい。
+[k]
+
+＠カイニス
+だが[line 3]
+[k]
+
+[charaFace H 1]
+
+＠カイニス
+このままテメェらだけ無傷でお帰りってのは、[r]さすがに虫が良すぎるってもんだ。
+[k]
+
+＠カイニス
+そうだろう、カルデア？
+[k]
+
+？1：……カイニス。
+
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠マシュ
+[line 6]。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_71 0.1]
+
+[charaPut T 1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠ゴルドルフ
+カイニス？　神霊カイニスか！？[r]そうか、ヤツも生き延びたか！
+[k]
+
+＠ゴルドルフ
+それはめでたい、共に勝利を祝おう！[wt 1.0][charaFace D 7][r]……む？　しかし本当にカイニスかね？
+[k]
+
+＠ゴルドルフ
+霊基パターンがこれまでのものと一致しない。[r]これまでのような『神性が混ざっている』[#程度:レベル]ではなく、
+[k]
+
+＠ゴルドルフ
+霊基そのものに神気が宿っている！[r]これではまるで、本当に神霊では？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠ホームズ
+……その通りです、ミスター・ゴルドルフ。[r]どのような仕組みかは分かりませんが……
+[k]
+
+＠ホームズ
+いま目の前にいるカイニスは紛れもなく神の一柱。[r]海神の代行者と言っても過言ではない。
+[k]
+
+＠ホームズ
+……まだハッチは開けないように。[r]これから戦闘になりますので。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠ゴルドルフ
+はあ！？　なぜかね、もう戦いは[line 3]
+[k]
+
+
+[messageOff]
+[se bac474]
+[seVolume bac474 0 0.6]
+[fowardEffect bit_talk_lightning_04r]
+[se ad65]
+[charaPut U 1]
+[charaFadeout D 0.4]
+[se ad539]
+[wt 0.5]
+[charaPut T 1200,1200]
+[charaEffectStop T bit_talk_10_LowLevel]
+[charaEffectStop U bit_talk_10]
+[wt 0.6]
+[charaPut U 1200,1200]
+[wt 0.6]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠カイニス
+うるせえな。チョビ髭の通信は切っておけよ。[r]まあ、察しの良さは褒めてやるがな。
+[k]
+
+＠カイニス
+これから殺し合うんだ。[r]外野の声は邪魔なだけだ。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+[wt 1.2]
+[charaFace F 7]
+
+[bgmStop BGM_EVENT_71 3.0]
+
+＠マシュ
+神霊カイニス。[r]わたしたちが戦う理由は、もう存在しません。
+[k]
+
+＠マシュ
+あなたはマスターを失い、[r]この[#異聞帯:ロストベルト]を守る理由も無くなりました。
+[k]
+
+＠マシュ
+その上で、まだ戦う事を選ぶのですか。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 1]
+
+＠カイニス
+…………だとさ。
+[k]
+
+＠カイニス
+おまえのサーヴァントはこう言ってるぜ、[r][%1]。
+[k]
+
+＠カイニス
+そっちからも何かあるか？
+[k]
+
+？1：……何もない。でも[line 3]
+
+？！
+
+？1：……戦うんだね？
+
+？！
+
+[messageOff]
+[charaFace H 6]
+[wt 1.5]
+[charaFace H 1]
+
+[bgm BGM_BATTLE_116 0.1]
+
+＠カイニス
+そうだ。[r]ケジメだけはつけなくっちゃな。
+[k]
+
+＠カイニス
+テメェらはオリュンポスを打ち倒した。[r]まさに大物だ。相手にとって不足はない。
+[k]
+
+＠カイニス
+オレはこれでもギリシャの英霊だからよぅ。[r]ほら。[#仇討:あだう]ちとか、やっぱりしておかないとな？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠ホームズ
+やれやれ。オリュンポスを憎んでいたキミが、かね。[r]まったく説得力のない発言だが[line 3]
+[k]
+
+[charaFace G 5]
+
+＠ホームズ
+キミの闘志が、気迫が、その精神が、[r]かつてないほど統合されているのは分かる。
+[k]
+
+＠ホームズ
+神話の世界……生前では果たせなかった終着点。[r]ひとりの英霊として答えを得たようだ、カイニス。
+[k]
+
+＠ホームズ
+であれば、こちらも応える他ない。[r]それが必要のない戦いであっても。
+[k]
+
+＠ホームズ
+いいかな、[%1]？[r]キミの魔力もとうに限界を迎えているが。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+[wt 1.0]
+
+？1：……もちろん
+？2：行くぞ、カイニス……！
+
+？！
+
+
+[charaFace H 4]
+
+＠カイニス
+[line 6]。
+[k]
+
+[charaFace H 1]
+
+＠カイニス
+[line 3]ハ。[r]クソ雑魚マスターが、一人前に睨みやがって！
+[k]
+
+＠カイニス
+いいぜ、テメェのサーヴァントともども[r]遠慮なく串刺しにしてやるよ！
+[k]
+
+[messageOff]
+[se ad556]
+[seVolume ad556 0 0.3]
+[se ad632]
+[seVolume ad632 0 0.3]
+[charaFace H 21]
+[charaEffect H bit_talk_kaineus]
+[charaEffect H bit_talk_lightning_01r]
+[wt 1.0]
+
+＠カイニス
+最後にオレの名を覚えていけ。
+[k]
+
+＠カイニス
+オレを辱めたポセイドンに罪を償わせ、[r]その代償に神の座をいただき[line 3]
+[k]
+
+＠カイニス
+[#殺戮:さつりく]と暴虐、怒りと[#驕:おご]りに身をやつした愚かな王。[r]だが[line 3]
+[k]
+
+＠カイニス
+この場においては、[r]我が主との契約に全てを捧げよう！
+[k]
+
+[charaFace H 2]
+
+＠カイニス
+我が名はカイニス、神霊カイニス！
+[k]
+
+＠カイニス
+キリシュタリア・ヴォーダイムが頼りにした、[r]ただ[#一騎:ひとり]のサーヴァントだ！
+[k]
+
+
+[messageOff]
+[seStop ad556 0.5]
+[seStop ad632 0.5]
+
+[fadeout black 0.5]
+[bgmStop BGM_BATTLE_116 0.4]
+[wait fade]
+[soundStopAll]
+[end]

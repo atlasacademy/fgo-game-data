@@ -1,0 +1,173 @@
+
+＄03-00-05-30-3-0
+
+[soundStopAll]
+
+[charaSet A 1098123210 1 ゴルドルフ]
+[charaSet B 8001400 1 マシュ]
+[charaSet C 98115300 1 ホームズ]
+[charaSet I 98115000 1 エフェクト用ダミー]
+[charaSet J 98115000 1 エフェクト用ダミー]
+
+[charaScale I 1.08]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_80 0.1]
+[wt 0.5]
+
+[scene 86500]
+
+
+
+[fadein black 0.7]
+[wait fade]
+
+
+[se ad679]
+[wt 0.2]
+[charaPut I 100,0]
+[charaEffect I bit_talk_gram_slash_02]
+[wt 0.2]
+[se ad682]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+[se ad170]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[effect bit_talk_14]
+[se ad686]
+[charaShake B 0.05 2 2 0.4]
+[wt 1.0]
+[charaFace B 2]
+
+＠マシュ
+防御態勢続行します！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠ゴルドルフ
+揺れるぞ、掴まっていろ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠マシュ
+はい！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ade329]
+[shake 0.05 3 3 1.8]
+[wt 2.0]
+
+＠[9bb9ff]アナウンス[-]
+[9bb9ff]攻撃目標　フランシス・ドレイク[-][r][9bb9ff]攻撃目標　フランシス・ドレイク[-]
+[k]
+
+＠[9bb9ff]アナウンス[-]
+[9bb9ff]迎撃せよ　迎撃せよ　迎撃せよ[-][r][9bb9ff]迎撃せよ　迎撃せよ　迎撃せよ[-]
+[k]
+
+＠[9bb9ff]アナウンス[-]
+[9bb9ff]迎[line 3]殺せ　殺す　殺して　殺す殺す殺す[-][r][9bb9ff]必ず殺す生かして帰さぬ死体も残さず焼却処分とする[-]
+[k]
+
+[messageOff]
+[se ad679]
+[wt 0.2]
+[charaPut I 100,0]
+[charaEffect I bit_talk_gram_slash_02]
+[wt 0.2]
+[se ad682]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+[se ad170]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[effect bit_talk_14]
+[se ad686]
+[charaFace B 15]
+[charaShake B 0.05 2 2 0.4]
+[wt 1.0]
+
+＠マシュ
+……っ！
+[k]
+
+？1：大丈夫！？
+？！
+
+[charaFace B 7]
+
+＠マシュ
+はい！[r][#霊基外骨骼:オ ル テ ナ ウ ス]、まだ行けます！
+[k]
+
+？1：本当にマシュへ攻撃が集中している……
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠ホームズ
+ポセイドンコアを撃破したことにより、[r]キミたちの脅威評価が更新されたのだろう。
+[k]
+
+＠ホームズ
+つまり、次のコアへの攻撃はより厳しくなる。[r]そこを念頭において、行動して欲しい！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠マシュ
+了解しました！[r]マスター、いきます！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠[9bb9ff]アナウンス[-]
+[9bb9ff]迎撃開始　迎撃開始[-][r][9bb9ff]標的[line 3]フランシス・ドレイク[-]
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

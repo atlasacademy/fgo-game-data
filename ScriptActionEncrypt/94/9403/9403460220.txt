@@ -1,0 +1,1061 @@
+
+＄94-03-46-02-2-0
+
+[soundStopAll]
+
+[charaSet A 1098163000 1 モリアーティ]
+[charaSet B 8001001 1 マシュ]
+
+[charaSet D 5038000 1 ジーク]
+[charaSet E 4015001 1 アレキサンダー]
+[charaSet F 1036001 1 蘭陵王]
+[charaSet G 7007001 1 ヴラド三世]
+[charaSet H 1035001 1 ディルムッド]
+[charaSet I 6026001 1 燕青]
+[charaSet J 6033000 1 以蔵]
+
+[scene 70900]
+
+[wipeout openEye 0.1 1.5]
+[wait wipe]
+
+[fadein black 1.5]
+[wait fade]
+
+[wipein openEye 2.0 1.5]
+[wait wipe]
+
+[wt 1.0]
+
+[bgm BGM_TEITO 0.1]
+
+？1：おはようございまーす
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠モリアーティ
+おはよう、マスター君。
+[k]
+
+[charaFace A 1]
+＠モリアーティ
+ふふん、君もマスター業を引退したら、[r]バーかカフェでも経営してみる気はないカナ？
+[k]
+
+＠モリアーティ
+マシュ・キリエライト嬢と一緒なら、[r]きっと楽しいぞぅ！
+[k]
+
+
+？1：マシュとバー経営……
+
+[branch select01_1]
+
+？2：マシュとカフェ経営……
+
+[branch select01_2]
+
+？！
+
+[label select01_1]
+
+[messageOff]
+[wipeout circleIn 1.5 1]
+[bgmStop BGM_TEITO 1.5]
+[se ade84]
+[wait wipe]
+
+[effect bit_talk_valentine_brilliant]
+
+[charaFadeout A 0.1]
+[seStop ade84 2.0]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 1.5]
+
+
+[wipein circleIn 1.0 1]
+[wait wipe]
+
+
+[bgm BGM_EVENT_7 0.1]
+
+＠マシュ
+いらっしゃいませ、お客さま。[r]バーテンダーのマシュ・キリエライトです。
+[k]
+
+＠マシュ
+バーテンダーなので、[r]ちょっとカッコイイ戦闘コーデです！
+[k]
+
+＠マシュ
+お酒は飲めませんが、[r]がんばってシェイクしますね！
+[k]
+
+[charaFace B 2]
+[se ade252]
+
+＠マシュ
+えいっ[charaMoveReturn B -10,0 0.5]、やーっ[wt 0.5]、とーっ[charaMoveReturn B -10,0 0.5][seStop ade252 0.5]。
+[k]
+
+？1：[&よし:うん]、かわいい！
+？！
+
+[branch select01_end]
+
+
+[label select01_2]
+
+[messageOff]
+[wipeout circleIn 1.5 1]
+[bgmStop BGM_TEITO 1.5]
+[se ade84]
+[wait wipe]
+
+[effect bit_talk_valentine_brilliant]
+
+[charaFadeout A 0.1]
+[seStop ade84 2.0]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 1.5]
+
+[scene 64100]
+
+[charaChange B 98001000 1 normal 0.1]
+
+[wipein circleIn 1.0 1]
+[wait wipe]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠マシュ
+カフェカルデアへようこそ！
+[k]
+
+＠マシュ
+ホールスタッフのマシュ・キリエライトです。[r]どうぞごゆっくりお過ごしくださいね！
+[k]
+
+[charaFace B 6]
+
+＠マシュ
+あ、いけない。[r]忘れてました。
+[k]
+
+[charaFace B 3]
+
+＠マシュ
+お帰りなさい、先輩……♡
+[k]
+
+？1：いい……
+？2：い、いや、マシュはそんなこと言わない
+？！
+
+[label select01_end]
+？！
+
+[messageOff]
+[wipeout circleIn 1.0 1]
+[se ade84]
+[bgmStop BGM_EVENT_7 1.0]
+[wait wipe]
+
+[seStop ade84 1.5]
+
+[charaFadeout B 0.1]
+[effectStop bit_talk_valentine_brilliant]
+
+[scene 70900]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[wipein circleIn 1.0 1]
+[wait wipe]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠モリアーティ
+……と、妄想はそこらへんにしておこう。[r]どうやら魔術師たちが到着したようだ。
+[k]
+
+[charaFace A 1]
+
+＠モリアーティ
+三人とも朝っぱらからとはネ。[r]待ちきれなかったんだろうか！
+[k]
+
+？1：マシュと……
+？！
+
+[charaFace A 2]
+
+＠モリアーティ
+って目がまだ覚めてなかった！[r]起きなさーい！　起きなさーーーい！
+[k]
+
+[messageOff]
+
+[wt 0.5]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[cameraHome 0.1]
+[charaScale A 1.0]
+[charaFadeout A 0.1]
+
+
+[scene 71000]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.1]
+
+＠ジーク
+ようこそ皆様、我が屋敷に。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_48 0.1]
+
+＠アレキサンダー
+うん、いい立地だ。[r]この屋敷ごと接収したいなー、いっそ。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠蘭陵王
+……戦う前に余分なことを[r]考えるのだな、あなたは。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠ヴラド三世
+大いに考えるがいい。
+[k]
+
+[charaFace G 5]
+＠ヴラド三世
+いずれにせよ、それはただの妄想。[r]あと数日、[#掌中:しょうちゅう]の珠を慈しむがいい。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[imageSet E cut100_aks 1]
+[imageSet F cut100_rro 1]
+[imageSet G cut100_vrd 1]
+
+[charaFadein E 0.4 0,-200]
+[charaFadein F 0.4 0,-200]
+[charaFadein G 0.4 0,-200]
+
+[wt 2.5]
+
+[charaFadeout E 0.4]
+[charaFadeout F 0.4]
+[charaFadeout G 0.4]
+[wt 0.5]
+
+[charaSet E 4015001 1 アレキサンダー]
+[charaSet F 1036001 1 蘭陵王]
+[charaSet G 7007001 1 ヴラド三世]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠モリアーティ
+……ふぅむ。
+[k]
+
+＠モリアーティ
+魔術師、と言うからキャスターたちが[r]代理出現すると思っていたが……。
+[k]
+
+[charaFace A 0]
+
+＠モリアーティ
+どうやら、三人とも[#戦:や]る気満々の[r]魔術師のようだネ。
+[k]
+
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_48 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+
+[imageSet B cut099_close 2]
+[imageSet C cut099_open 2]
+
+[se ad4]
+[seVolume ad4 0 0.3]
+
+[scene 70800]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+
+[seStop ad4 1.0]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+
+[charaFadein D 0.1 1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+
+＠ジーク
+改めてようこそ、皆様。[r]我が屋敷はあなたたちを心より歓迎します。
+[k]
+
+[charaFace D 4]
+
+＠ジーク
+……と言ったところで、[r]打ち解ける必要はないか。
+[k]
+
+[charaFace D 6]
+
+＠ジーク
+皆の目的は俺が所有しているモノである。[r]それは承知している。
+[k]
+
+＠ジーク
+幾つかの情報源から、それが九割方本物だと[r]あなたたちは理解しているはずだ。
+[k]
+
+[charaFace D 0]
+
+＠ジーク
+だから[line 3]まずは確証を得たいのでは？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠アレキサンダー
+まあ、そうだね。
+[k]
+
+[charaFace E 0]
+
+＠アレキサンダー
+ここまで来てただの贋作であれば、[r]余裕ぶった表情はしていられない。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠蘭陵王
+ああ、催促するようで悪いが、[r]実物を見せてほしい。
+[k]
+
+＠蘭陵王
+もちろん、この場で殺し合うような[r]真似はしない。
+[k]
+
+＠蘭陵王
+ヴラド公も、それには同意だろう？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ヴラド三世
+無論。
+[k]
+
+＠ヴラド三世
+正統なる魔術師として、この場での争いは[r]愚行であり誇りを打ち棄てた獣の所業だ。
+[k]
+
+＠ヴラド三世
+所有者であるこの男が礼儀を尽くす限り、[r]余もまた調律を乱す真似はせぬ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ジーク
+ありがとう。[r]それでは、まずは見てくれ。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.4]
+
+[charaFadein B 0.2 0,-200]
+[wt 0.1]
+[se ade253]
+[seVolume ade253 0 0.4]
+[wt 1.5]
+
+＠ジーク
+これが、我が一族に代々伝わってきた[r]聖遺物[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 0.5]
+[wt 0.5]
+[se ade254]
+[charaFadeout B 0.4]
+[charaFadein C 0.5 0,-200]
+[wt 0.2]
+[seStop ade254 0.5]
+[wt 2.3]
+
+＠ジーク
+[#竜殺しの英雄が背につけた菩提樹の葉]。
+[k]
+
+[messageOff]
+[se ad3]
+[seVolume ad3 0 0.4]
+[seVolume ad3 1.0 1.0]
+[wt 1.0]
+[seStop ad3 1.0]
+[charaFadeout C 0.4]
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠アレキサンダー
+……ッ！
+[k]
+
+[bgm BGM_EVENT_1 0.1]
+[charaFace E 2]
+
+＠アレキサンダー
+これは……これは、本物だ！[r]紛れもない本物だ！
+[k]
+
+＠アレキサンダー
+僕は魔術師としての歴史は浅いが、[r]見間違えるほど未熟ではない！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠蘭陵王
+ああ、確かにこの威容、見ただけでも[r]それと理解できる……！
+[k]
+
+＠蘭陵王
+これがあれば、亜種聖杯戦争は間違いなく[r]勝利できるだろう！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠ヴラド三世
+[line 3]なるほど。
+[k]
+
+＠ヴラド三世
+有力なサーヴァントたちを召喚するための[r]触媒……聖遺物。
+[k]
+
+＠ヴラド三世
+英雄王を召喚するための[#あの]蛇の皮、[r]征服王を召喚するための[#あの]結び目。
+[k]
+
+＠ヴラド三世
+それらほとんどが協会の手に渡っていることを[r]考えると、これは世にある最後の一つかもしれんな。
+[k]
+
+＠ヴラド三世
+余が聖杯戦争に参戦するための聖遺物に[r]相応しい大物だ……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠ジーク
+……どうやら皆様、[r]本物だと理解していただけたようで何よりだ。
+[k]
+
+[charaFace D 6]
+
+＠ジーク
+ここに集った魔術師の皆様には、[r]それなりの対価を支払ってもらうが[line 3]
+[k]
+
+[charaFace D 0]
+
+＠ジーク
+その価値がある、と俺は思う。
+[k]
+
+＠ジーク
+言うまでもないが、この聖遺物はかの大英雄、[r]ジークフリートを召喚するための強力な触媒となる。
+[k]
+
+＠ジーク
+彼以外が召喚されることはまずない。
+[k]
+
+＠ジーク
+そして同時に、これを分割する訳にもいかない。[r]破壊した時点で触媒としての効果は低下する。
+[k]
+
+＠ジーク
+つまり、この聖遺物を得られるのは[r]ただ一人。
+[k]
+
+＠ジーク
+けれど、その過程で血が流れるのは好ましくない。[r]俺もそれは望まない。
+[k]
+
+[charaFace D 6]
+
+＠ジーク
+だからオークションだ。
+[k]
+
+[bgmStop BGM_EVENT_1 2.0]
+
+＠ジーク
+あなたたちが、この聖遺物に見合うだけの[r]金銭を支払ってくれると信じている。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace E 0]
+[charaFadein E 0.1 0,0]
+[charaFace G 0]
+[charaFadein G 0.1 326,0]
+[charaFace F 0]
+[charaFadein F 0.1 -326,0]
+
+＠魔術師たち
+……。[r]……。
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_5 0.1]
+＠モリアーティ
+（いいねえ。理解できるかい、マスター君？）
+[k]
+
+[charaFace A 1]
+
+＠モリアーティ
+（彼ら全員、出し抜くことしか考えていないし。[r]　もちろん流血も承知の上だ）
+[k]
+
+[charaFace A 0]
+
+＠モリアーティ
+（オークションが開催されるかどうか、[r]　危ういところだねえ）
+[k]
+
+？1：（それは危険じゃない？）
+
+＠モリアーティ
+（危険だとも）
+[k]
+
+[charaFace A 3]
+
+＠モリアーティ
+（さて……我々は[r]　どう動くべきか……）
+[k]
+
+？2：（どうすればいい？）
+
+[charaFace A 1]
+
+＠モリアーティ
+（どうしようかねえ）
+[k]
+
+[charaFace A 0]
+
+＠モリアーティ
+（魔術師にとっても、[r]　バックの組織にとっても……）
+[k]
+
+＠モリアーティ
+（絶対に譲れない聖遺物だ）
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠アレキサンダー
+……。[r]……ただ一人、か。
+[k]
+
+＠アレキサンダー
+平和的な解決法が望ましいんだけどね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠蘭陵王
+その通りだな。[r]だが、そうはならない。
+[k]
+
+[charaFace F 5]
+
+＠蘭陵王
+で、あろう？[r]ヴラド公。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+[bgmStop BGM_EVENT_5 0.7]
+
+＠ヴラド三世
+以蔵。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaDepth J 10]
+[charaTalk J]
+[charaFace J 9]
+[charaFace G 0]
+[charaFadein J 0.1 2]
+[charaFadein G 0.1 0]
+
+
+＠以蔵
+あぁ、何ぜよ。
+[k]
+
+[charaFace G 1]
+
+[bgm BGM_EVENT_49 0.1]
+
+＠ヴラド三世
+[#貴様の全財産を寄越せ]。[r]あれにはそれだけの価値がある。
+[k]
+
+[charaFace J 11]
+
+＠以蔵
+め、滅茶苦茶言うなや！[r]全財産やと！？
+[k]
+
+＠以蔵
+こんな葉、一枚にか！？
+[k]
+
+[charaFace G 5]
+
+＠ヴラド三世
+黙れ。
+[k]
+
+＠ヴラド三世
+表の権力は貴様にくれてやる。[r]だが[line 3]
+[k]
+
+＠ヴラド三世
+この聖遺物を取り逃がせば、[r]貴様は一生をかけて余に償え。
+[k]
+
+[charaFace J 10]
+
+＠以蔵
+う、ぐ……！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[charaFadeout J 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+＠アレキサンダー
+……ふうん。
+[k]
+
+[charaFace E 1]
+
+＠アレキサンダー
+（こりゃあ、僕にもチャンスはあるな）
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+＠蘭陵王
+（後は資金の問題だが……）
+[k]
+
+[charaFace F 0]
+
+＠蘭陵王
+（まあ、所詮は地方都市のギャング組織だ。[r]　限界まで搾り取らないとどうにもならないか）
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+
+＠ヴラド三世
+（……本来であれば、我々の手の届く触媒ではない。[r]　それこそ[#典位:プライド]以上でもなければ）
+[k]
+
+[charaFace G 0]
+
+＠ヴラド三世
+（だが、ここにいるのは協会との繋がりも薄い[r]　魔術師二人。どうにでもなるか……）
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ジーク
+オークションは明日開催する。
+[k]
+
+＠ジーク
+参加者はアレキサンダー、蘭陵王、[r]そしてヴラド三世。
+[k]
+
+[charaFace D 5]
+
+＠ジーク
+彼ら以外の参戦は認めない。
+[k]
+
+＠ジーク
+このことを聞きつけた魔術師が三人より[r]高値を出したとしても[line 3]
+[k]
+
+＠ジーク
+我々としては、仁義を守りたい。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠ヴラド三世
+（完璧だ！）
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ジーク
+では、本日はごゆっくりおくつろぎください。
+[k]
+
+[charaFace D 0]
+
+＠ジーク
+もちろん、資金の調達に精を出すのも[r]自由ですが。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_49 1.1]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace E 0]
+[charaFadein E 0.1 0,0]
+[charaFace G 0]
+[charaFadein G 0.1 356,0]
+[charaFace F 0]
+[charaFadein F 0.1 -326,0]
+[wt 1.5]
+
+
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[wt 0.5]
+
+[charaDepth H 10]
+[charaDepth I 7]
+[charaDepth J 3]
+[charaFace H 0]
+[charaFadein H 0.1 0,0]
+[charaFace J 9]
+[charaFadein J 0.1 330,0]
+[charaFace I 0]
+[charaFadein I 0.1 -330,0]
+[wt 1.5]
+
+
+[charaFadeout H 0.1]
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[wt 0.5]
+
+[se ade74]
+[se ad311]
+[se ad184]
+[wt 1.0]
+[seStop ade74 1.0]
+[seStop ad311 1.0]
+[seStop ad184 1.0]
+[wt 1.0]
+
+[charaTalk on]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠ジーク
+……ふぅ。
+[k]
+
+[charaFace D 6]
+＠ジーク
+ミスター・モリアーティ、[r]それから[%1]だったか。
+[k]
+
+＠ジーク
+明日からが本番だ。[r]よろしく頼むぞ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠モリアーティ
+了解です。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ジーク
+うん。[r]じゃ、また後で。
+[k]
+
+[messageOff]
+[wt 0.3]
+[se ade74]
+
+[charaMove D -40,0 0.5]
+[charaFadeout D 0.4]
+[wt 0.5]
+[seStop ade74 1.0]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠モリアーティ
+さて……色々とあるが、[r]まずは目の前の仕事から片付けよう。
+[k]
+
+？1：ワイバーン退治だね
+
+[messageOff]
+[charaTalk J]
+[bgmStop BGM_EVENT_2 0.5]
+[se ad19]
+[seVolume ad19 0 0.5]
+[wt 2.0]
+
+[bgm BGM_EVENT_3 0.1]
+[charaFace A 6]
+
+＠モリアーティ
+ピンポーン！
+[k]
+
+？2：コモドオオトカゲ退治だね
+
+[messageOff]
+[charaTalk J]
+[bgmStop BGM_EVENT_2 0.5]
+[se ad19]
+[seVolume ad19 0 0.5]
+[wt 2.0]
+
+[bgm BGM_EVENT_3 0.1]
+[charaFace A 2]
+
+＠モリアーティ
+あくまでワイバーン退治なのだがネ！
+[k]
+
+？！
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.5]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

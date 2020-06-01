@@ -1,0 +1,797 @@
+
+＄94-04-01-06-2-1
+
+
+[soundStopAll]
+
+
+[charaSet A 98100400 1 マシュ]
+[charaSet B 1008300 1 ジークフリート]
+[charaSet C 6019300 1 小太郎]
+[charaSet D 1040000 1 葛飾北斎]
+[charaSet E 7036001 1 宮本伊織]
+[charaSet F 6028000 1 目慈恵怒]
+[charaSet G 6008002 1 クレオパトラ]
+[charaSet H 5030001 1 シェヘラザード]
+[charaSet I 1098180000 1 目慈恵怒（ハイビーム）]
+[charaSet J 98115000 1 エフェクト用]
+
+[branchQuestNotClear lblNotClear1 3000303]
+[flag IsClear true]
+[branch lblConf1]
+[label lblNotClear1]
+[flag IsClear false]
+[label lblConf1]
+
+
+
+[scene 10000]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad171]
+[wt 0.3]
+
+[effect bit_talk_kengekiall02]
+[wt 0.1]
+[se ad170]
+[wt 0.2]
+[se ad618]
+[se ad686]
+[wt 0.6]
+
+
+[se ad32]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 0.1]
+[scene 81400]
+
+
+
+[charaScale D 1.2]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0 0,20]
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[charaMove D 0,0 0.2]
+[charaMoveScale D 1.0 0.2]
+[charaShake D 0.02 3 3 0.6]
+[wt 1.2]
+
+＠葛飾北斎
+どうしたこってい！　攻撃が通りゃしねえヨ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ジークフリート
+あのルーラーの力だろう。やはり果たし状がなくては[r]水着剣豪とは戦えん、ということか。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+[se ad164]
+[wt 1.2]
+[charaFace D 23]
+[se bac246]
+[wt 0.5]
+[se ad7]
+[charaMove D 150,0 0.4]
+[charaFadeout D 0.4]
+[wt 0.4]
+[charaPut J 1]
+[se ad628]
+[shake 0.05 0 3 1.8]
+[charaEffect J bit_talk_impactlanding]
+[wt 2.0]
+[charaEffectStop J bit_talk_impactlanding]
+[seStop ad628 1.0]
+
+[charaTalk D]
+[charaFace D 23]
+[charaFadein D 0.1 1]
+
+＠葛飾北斎
+チッ、また吊り天井かい！[r]かじののくせになんでぇ、この罠の多さはヨウ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠宮本伊織
+ヒュー、サンダーマウンテン！[r]一歩歩くごとにトラップが出てくる感じデース！
+[k]
+
+[charaFace E 8]
+＠宮本伊織
+おっと[#槍衾:やりぶすま]、ひょいっと。
+[k]
+
+[messageOff]
+[se bac1]
+[charaMove E 260,0 0.3]
+[wt 0.2]
+[se bac307]
+[fowardEffect bit_talk_14]
+[wt 1.0]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠風魔小太郎
+これは、確かに……忍者屋敷もかくやというほどです！[r]危険なので主殿は動かれぬよう！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠クレオパトラ
+何を驚いているのかしら？　神聖なる墓を[#曝:あば]こうとする[r]不心得者たちを手痛く追い返すために、
+[k]
+
+＠クレオパトラ
+罠を仕掛けたり呪ったりするのはファラオの[r]得意分野でしてよ？
+[k]
+
+＠クレオパトラ
+ここは[#目慈恵怒:め　じ　ぇ　ど]様の居城も同然なのですから、[r]罠の１００や２００あって当然でしょう！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠I：目慈恵怒
+マダ　アキラメヌトハ　オロカナ。[r]オトナシク　オナワニ　ツキナサイ。
+[k]
+
+[charaFace I 2]
+＠I：目慈恵怒
+テイコウハ　[wt 0.5]フケイ　[wt 0.5][charaShake I 0.05 2 2 0]フケイ　フケイケフケイ[r]フケイイイイイイイ[line 3]
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaShakeStop F]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠シェヘラザード
+ああっ、いけません！
+[k]
+
+＠シェヘラザード
+真面目に頑張りすぎて急性メジェド中毒（仮称）の[r]兆候が！　落ち着かせます！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠宮本伊織
+む、隙ができた。
+[k]
+
+＠宮本伊織
+何にしても攻撃が通らないのは変わらないし、[r]地の利もないし、一時撤退といかない？
+[k]
+
+？1：乗った！　とりあえず退却しよう！
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+＠葛飾北斎
+チッ、ショウガもカラシもありゃしねえ！[r]ここはひとまず出直しでい！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 1.5]
+[se ade235]
+[charaMove D 100,0 0.6]
+[wt 0.2]
+[charaFadeout D 0.4]
+[wt 0.3]
+[seStop ade235 0.5]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠クレオパトラ
+お待ちなさい！
+[k]
+
+[se ade160]
+
+＠クレオパトラ
+警備スフィンクスたち、総動員！[r]目慈恵怒様の顔に泥を塗るわけにはいかなくてよ！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaSet B 1008300 1 ジークフリート]
+[charaSet H 1098178800 1 従業員A]
+[charaSet I 1098178800 1 従業員B]
+[charaSet J 1098178800 1 従業員C]
+
+[scene 81300]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 1.0 1.0]
+[wait wipe]
+
+[charaTalk off]
+
+[se ade210]
+
+[charaTalk depthOff]
+[charaDepth H 3]
+[charaDepth I 2]
+[charaDepth J 1]
+
+[charaFace H 2]
+[charaFadein H 0.4 1]
+[wt 0.2]
+
+[charaFace I 2]
+[charaFadein I 0.4 356,0]
+[charaMove I 300,0 0.3]
+
+[wt 0.2]
+
+[charaFace J 2]
+[charaFadein J 0.4 -356,0]
+[charaMove J -300,0 0.3]
+
+[wt 0.2]
+[seStop ade210 0.5]
+[wt 2.0]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+っ……包囲が厚いです！[r]このままでは、突破は難しいかもしれません……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠クレオパトラ
+ホホホ！　観念なさい！
+[k]
+
+[charaFace G 1]
+
+＠クレオパトラ
+大丈夫、命なんて取りません。[r]ただ夏が終わるまでおしおき部屋に閉じ込めて、
+[k]
+
+＠クレオパトラ
+目慈恵怒様の素晴らしさ、特にその美しさが身に[r]染みるまで延々と教育をするだけですから！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 24]
+[charaFadein D 0.1 1]
+
+＠葛飾北斎
+いやだ。おれは……天下一の剣豪になるんだ。[r]こんなところで夏を終わらせちまうわけには……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+
+＠宮本伊織
+…………。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ジークフリート
+連戦の疲れもある。[r]何か手があればよいが……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+[branch lblNotClear2 IsClear false]
+
+[label lblClear2]
+
+＠風魔小太郎
+最近、彷徨海で見るような見ないような軍師殿が[r]何かおっしゃっていた気がします。
+[k]
+
+[branch lblConf2]
+
+[label lblNotClear2]
+
+＠風魔小太郎
+最近、カルデアで見るような見ないような軍師殿が[r]何かおっしゃっていた気がします。
+[k]
+
+[label lblConf2]
+
+＠風魔小太郎
+そう。[#絶体絶命:ぜったいぜつめい]の窮地においても焦る必要はない。[r]手は必ずある。
+[k]
+
+[charaFace C 0]
+＠風魔小太郎
+困ったときにはアレをすれば[r]だいたい活路は開けると[line 3]
+[k]
+
+？1：自爆は駄目ー！
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[se ade210]
+
+[charaFace H 2]
+[charaFadein H 0.4 1]
+
+[charaFace I 2]
+[charaFadein I 0.4 300,0]
+
+[charaFace J 2]
+[charaFadein J 0.4 -300,0]
+
+[wt 0.3]
+
+[charaMoveScale H 1.1 0.5]
+[charaMoveScale I 1.1 0.5]
+[charaMoveScale J 1.1 0.5]
+
+[charaMove H 0,15 0.5]
+[charaMove I 300,15 0.5]
+[charaMove J -300,15 0.5]
+
+[wt 1.0]
+[charaMoveScale H 1.2 0.5]
+[charaMoveScale I 1.2 0.5]
+[charaMoveScale J 1.2 0.5]
+
+[charaMove H 0,30 0.5]
+[charaMove I 300,30 0.5]
+[charaMove J -300,30 0.5]
+
+[wt 0.6]
+[seStop ade210 0.2]
+[wt 1.5]
+
+[charaTalk A]
+
+
+[bgmStop BGM_EVENT_24 0.6]
+[se ade328]
+[seVolume ade328 0 0.5]
+[wt 0.9]
+[se ade327]
+[seVolume ade327 0 0]
+[seVolume ade327 1.0 1.0]
+[wt 1.6]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.2]
+
+[charaSet H 5030001 1 シェヘラザード]
+[charaSet I 1098177300 1 カーミラ]
+
+
+[seStop ade327 0.4]
+[se ade329]
+[wt 2.0]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+あ、あなたは！？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.4 1]
+[wt 0.8]
+
+＠カーミラ
+どうやらお困りのようね。[r][line 3]乗りなさい、[&ボウヤ:ガール]たち？
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 1.2]
+[charaFace A 7]
+[wt 0.4]
+
+＠マシュ
+マスター！[bgm BGM_EVENT_82 0.1]
+[k]
+
+？1：お願いします！
+？2：全員は乗れなくない？
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+＠宮本伊織
+（うわっ、スーパーカーだーー！[r]　しまった、ベガスならそっちもアリだったぁ！）
+[k]
+
+[charaFace E 8]
+
+＠宮本伊織
+っと、うらやましがってる場合じゃないわね。[r]さすがに定員オーバーでしょ？
+[k]
+
+＠宮本伊織
+私は自分でなんとかするから、[r]あとでホテルで合流しましょう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ジークフリート
+俺もだ。この図体では邪魔になる。
+[k]
+
+[charaFace B 1]
+
+＠ジークフリート
+自分一人なら、ここから脱出する方法も[r]すぐに思いつくさ。自爆以外にな。
+[k]
+
+[messageOff]
+[charaPut J 34,265]
+[charaEffect J bit_talk_starshine]
+[wt 0.2]
+[se ade126]
+[wt 0.9]
+[charaPut J 1200,1200]
+[charaEffectDestroy J]
+[wt 0.9]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠風魔小太郎
+僕は車体の上で平気です。[r]気にせず飛ばしてください。
+[k]
+
+＠風魔小太郎
+主殿、マシュ殿、北斎殿……三人ならなんとか[r]助手席に入ることぐらいはできるでしょう。
+[k]
+
+[charaFace C 12]
+
+＠風魔小太郎
+というかなぜこの車は二つしか席がないんでしょうか！[r][#吝嗇:りんしょく]の結果ですか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+＠カーミラ
+こ、高級スポーツカーとはそういうものなのよ、[r]覚えておきなさい！
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[wt 0.4]
+
+[se ade330]
+[wt 0.8]
+
+[se ade328]
+[wt 0.9]
+[se ade327]
+[wt 0.2]
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+
+[bgmStop BGM_EVENT_82 2.0]
+
+[wt 0.5]
+
+[wt 2.0]
+
+[scene 10000]
+
+[wipein rectangleStripLeftToRight 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+
+[scene 81400]
+
+[wipeFilter cinema 0.5 0]
+[wt 1.0]
+
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 0,-50]
+
+＠シェヘラザード
+[line 3]というわけで、いだいなるふぁらおは[r]すえながく、くにをまもりつづけたのでした。
+[k]
+
+＠シェヘラザード
+めでたし、めでたし。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 0,-50]
+[charaMove F 0,-35 0.4]
+＠目慈恵怒
+スゥー……ハァー……。[wt 0.6][charaMove F 0,-50 0.4]
+[k]
+
+[messageOff]
+[wait charaMove F]
+[wt 0.5]
+
+[charaShake F 0.05 2 2 0.2]
+[charaFace F 0]
+
+＠目慈恵怒
+ハッ？　我ハ　ナニヲ？[bgm BGM_EVENT_90 0.1]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+
+＠シェヘラザード
+いいえ、特に何もありません。[r]さあ、通常業務に戻りましょう。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+
+＠目慈恵怒
+ソウデスカ。デハ　我ハ　ＶＩＰルームニ　モドリ[r]勝ッタ者ニ　祝福ビームヲ　照射シマス。
+[k]
+
+＠目慈恵怒
+ファラオカジノ　ヨ　エイエン　ナレ……
+[k]
+
+[messageOff]
+[se bac166]
+[charaMove F 0,20 0.8]
+[charaFadeout F 0.7]
+[wt 1.0]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠クレオパトラ
+目慈恵怒様のヒーリング、ご苦労様。[r]貴方にしかできない重要な役目です。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 -256,-50]
+
+[charaFace G 0]
+[charaFadein G 0.1 256,-50]
+
+＠シェヘラザード
+どうも……マスターたちは？
+[k]
+
+[charaFace G 4]
+
+＠クレオパトラ
+逃がしてしまいましたわ。[r]おかしな赤い車が乗り付けてきて。
+[k]
+
+[charaFace G 0]
+
+＠クレオパトラ
+目慈恵怒様の目を曇らせるのは、[r]たとえマスターと言えども考え直してもらわなくては。
+[k]
+
+＠クレオパトラ
+次に来てもやはり拘束して教育コースです。
+[k]
+
+[charaFace H 4]
+
+＠シェヘラザード
+（私は……二人とも死なずに、健やかに[r]　この夏を乗り切れればそれでよいのですが……）
+[k]
+
+
+[charaTalk G]
+[charaFace G 1]
+＠クレオパトラ
+フフ、心配することはありませんわよ。
+[k]
+
+[charaFace G 0]
+＠クレオパトラ
+このファラオカジノは超高級カジノなのですから、[r]中の宝物庫には色々な宝が保管されています。
+[k]
+
+＠クレオパトラ
+そのために元々最高級の警備体制が敷かれているのです。[r]ファラオ式の罠もそうですし、それに……
+[k]
+
+[charaFace G 1]
+＠クレオパトラ
+まあ、宝物庫のことはマスターたちには関係なさそうね。
+[k]
+
+＠クレオパトラ
+とにかく貴方は安心して[r]目慈恵怒様のメンタルケアに励むとよろしくてよ？
+[k]
+
+＠クレオパトラ
+これからもその働き、期待していますわ。
+[k]
+
+[messageOff]
+
+[wt 0.1]
+[charaTalk H]
+[charaFace H 6]
+[wt 0.2]
+[charaMove H -256,-60 0.5]
+[wt 0.8]
+[charaMove H -256,-50 0.5]
+[wt 1.0]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_90 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

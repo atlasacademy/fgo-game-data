@@ -1,0 +1,888 @@
+
+
+
+
+
+＄94-03-35-51-8-0
+
+[soundStopAll]
+
+[charaSet A 1040000 1 葛飾北斎]
+[charaSet B 2001000 1 エミヤ]
+[charaSet C 7016002 1 タマモキャット]
+[charaSet D 6035000 1 虞美人]
+[charaSet E 1030000 1 鈴鹿御前]
+[equipSet I 9807540 1 バレンタイン礼装]
+[charaSet J 98115000 1 ダミーエフェクト１]
+
+[charaDepth A 10]
+
+[branchQuestNotClear lblNotClear2 3000303]
+[scene 66600]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10310]
+[label lblConf2]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V010]
+ヨウ、ますたあ。[r]わざわざお呼び立てしちまって、あいすまねぇナ。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V020]
+実は妙案が[#閃:ひらめ]いたもんでなァ？[r]もう、居ても立っても、そぞろわしくて！[wait tVoice]
+[k]
+
+[charaFace A 8]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V030]
+アレさ[line 3]。[r]“ばれんたいん”ってヤツだ。[wait tVoice]
+[k]
+
+[charaFace A 26]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V040]
+知ってるかい、ますたあ？[r]“ばーれんたーあーいん”。[wait tVoice]
+[k]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V050]
+ばれん、って言っても[r][#版木:はんぎ]をごしごし[#擦:こす]る[#道具:アレ]じゃねぇからナ？[wait tVoice]
+[k]
+
+？1：ぜひ、教えて[&ください:ほしいな]
+
+[charaFace A 7]
+
+＠北斎
+[tVoice ValVoice_104000 0_V060]
+なんでえ、ますたあも知らねえのかい。[r]アッハッハ！[twt 3.8][charaFace A 13]（……フゥ）[wait tVoice]
+[k]
+
+？2：語らせると長くな[&りますが:るよ]……
+
+[charaFace A 20]
+
+＠北斎
+[tVoice ValVoice_104000 0_V070]
+ながっ……？（ごくり）[wait tVoice]
+[k]
+
+[charaFace A 28]
+
+＠北斎
+[tVoice ValVoice_104000 0_V080]
+は、はははは、ハハァン……？[charaShake A 0.1 2 2 0][r]ささささ、流石はますたあだ？[wait tVoice][charaShakeStop A]
+[k]
+
+？！
+
+[messageOff]
+[charaFace A 29]
+[wt 1.2]
+
+[charaFace A 15]
+
+＠北斎
+[tVoice ValVoice_104000 0_V090]
+あ～～、な？　以前もちょいと口を滑らせたが、[r]おれはとにかく“コイバナ”ってぇのが大の苦手で！[wait tVoice]
+[k]
+
+＠北斎
+[tVoice ValVoice_104000 0_V100]
+そこへこの“[#ばれんたいん]”[#しいずん]の到来サァ……。[wait tVoice]
+[k]
+
+[charaFace A 3]
+
+＠北斎
+[tVoice ValVoice_104000 0_V110]
+もう、そこいら中に漂う甘い香りやら[#艶話:つやばなし]やらに[r]取り囲まれて、どうにかなっちまいそうなんでぇ……。[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_2 1.5]
+[charaFace A 11]
+
+＠北斎
+[tVoice ValVoice_104000 0_V120]
+そこでおれは一計をば案じたってぇわけサ！[r]そうサ、こいつァおれの、一年に一度の大願だ！[wait tVoice]
+[k]
+
+[messageOff]
+[charaPut J 2000,2000]
+[charaEffect J bit_talk_41]
+[se ad7]
+[seVolume ad7 0 0.6]
+[charaMove A 0,-30 0.4]
+[wt 0.8]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaFace A 12]
+
+＠北斎
+[tVoice ValVoice_104000 0_V130]
+ますたあ！　[cameraMove 0.2 0,3 1.05][twt 1.2]この通りサ！　[cameraMove 0.2 0,6 1.1][twt 1.35]おれに！[cameraMove 0.2 0,10 1.15][twt 1.3][cameraMove 0.2 0,14 1.2][r]おれに[twt 1.0][se ade211][wt 0.05][charaPut J 0,70][charaFace A 2]“ちよこ”を作っておくんな！[wait tVoice]
+[k]
+
+？1：…………えっ？……[&こっち:わたし]が作るの？？
+？2：うん。そう来たかー
+
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_7 1.0 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaPut J 2000,2000]
+[charaEffectStop J bit_talk_41]
+[cameraHome 0.1]
+
+[branchQuestNotClear lblNotClear3 3000303]
+[scene 66700]
+[branch lblConf3]
+[label lblNotClear3]
+[scene 60300]
+[label lblConf3]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_7 1.0 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.4 1]
+
+＠北斎
+[tVoice ValVoice_104000 0_V140]
+[line 3]あ、サアテ！　準備は万端！　気合いは充分！[r]あとは（ますたあの）仕事ぶりをば、ご[#覧:ろう]じろ！[wait tVoice]
+[k]
+
+[charaFace A 26]
+
+＠北斎
+[tVoice ValVoice_104000 0_V150]
+へへん、おれに[#健気:けなげ]に菓子作りなんかさせてみやがれ。[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠北斎
+[tVoice ValVoice_104000 0_V160]
+どんな大惨事が[#迸:ほとばし]って、[r][#挙句:あげく]とと様に[#呵々大笑:かかたいしょう]されるか知れたもんじゃねえ。[wait tVoice]
+[k]
+
+[charaFace A 11]
+
+＠北斎
+[tVoice ValVoice_104000 0_V170]
+そもそも、サルやら乙女みてぇな赤ら顔浮かべて菓子作り[r]なんざ、思い巡らしただけで、[twt 6.2][charaFace A 18]ヒィもう無理でぇー！[wait tVoice]
+[k]
+
+＠北斎
+[tVoice ValVoice_104000 0_V180]
+[#総身:そうみ]がむずがゆくなるわ、[#頭熱:ずねつ]は出るわ、[r]しゃっくりは止まらねぇわ……[twt 4.0][charaFace A 6]そこで[line 3]。[wait tVoice]
+[k]
+
+[charaFace A 26]
+
+＠北斎
+[tVoice ValVoice_104000 0_V190]
+[#ちよこ]を作るのはますたあ！（びしっ）[charaMoveScale A 1.04 0.4][charaMove A 0,7 0.4][twt 0.4][se ad7][twt 2.0][charaFace A 1][charaMoveScale A 1.0 0.4][charaMove A 0,0 0.4][r]有り難く頂戴するのは、このおれサァ！（ぐっ）[twt 0.5][se ad183][wait tVoice]
+[k]
+
+[charaFace A 7]
+
+＠北斎
+[tVoice ValVoice_104000 0_V200]
+そこに何の[#手抜:てぬ]かりもありゃしねェ！[wait tVoice]
+[k]
+
+？1：そうかなあ？
+？2：ぬかるのだ
+？！
+
+[charaFace A 5]
+
+＠北斎
+[tVoice ValVoice_104000 0_V210]
+ぐるりと立場が逆転すれば、[r]こそばゆさも消し飛ぶってえ寸法でぇ！[wait tVoice]
+[k]
+
+？1：本当にそうかなあ？
+？2：だんだん面白くなってきた
+？！
+
+[messageOff]
+[cameraMove 0.9 -120,90 1.3]
+[wt 1.2]
+
+＠とと様
+・・・・・・・・・・・・・・・。（じーっ）
+[k]
+
+？1：（……わかった、とと様。全部、[&まかせてくれ:まかせて]）
+
+＠とと様
+（ぬるぐっ）
+[k]
+
+？2：（とと様の娘さん、おちゃっぴぃすぎでは？）
+
+＠とと様
+（ぬる～ん？）
+[k]
+
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_7 1.0 0.5]
+[wait fade]
+
+[cameraHome 0.1]
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_7 1.0 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠北斎
+[tVoice ValVoice_104000 0_V220]
+まずは“刻み”サ！[r]この[#ちよこ]の塊を、粉微塵に刻みまくるんでぇい！[wait tVoice]
+[k]
+
+[messageOff]
+[charaMoveReturn A 0,10 0.4]
+[wt 0.2]
+
+[se ad222]
+[seVolume ad222 0 0.6]
+[wt 0.2]
+[shake 0.05 2 2 0.4]
+[wt 0.6]
+
+[charaTalk off]
+[charaFace A 26]
+[charaFace B 0]
+[charaFadein B 0.6 240,0]
+[charaMove B 270,0 0.6]
+[charaFadeTime B 0.3 0.6]
+[wt 0.6]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V230]
+厨房の赤い二刀のお[#兄:あに]いさんも太鼓判！[r]“くうべるちゅうる・ちよこれいと”でい！[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 6]
+[se ad230]
+[shake 0.1 0 3 0]
+[wt 0.3]
+[se ad230]
+[wt 0.3]
+[se ad230]
+[wt 0.3]
+[se ad230]
+[wt 0.3]
+[seStop ad230]
+[shakeStop]
+[wt 0.3]
+
+[charaFace B 1]
+[charaFace A 7]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V240]
+とにかく均一に、[#粒:つぶ]を揃えて刻んどくれナ。[r]オウ、いい手つきじゃねぇか、ますたあ。[wait tVoice]
+[k]
+
+[charaFadeout B 0.4]
+[charaMove B 290,0 0.4]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 29]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V250]
+お、おれは、こっちの“ほわいとちよこ”[r]ってぇのを刻むからナ！[wait tVoice]
+[k]
+
+[messageOff]
+[se ad230]
+[charaMoveReturn A 0,-7 0.15]
+[wt 0.3]
+[se ad230]
+[charaMoveReturn A 0,-7 0.15]
+[wt 0.3]
+[se ad230]
+[charaMoveReturn A 0,-7 0.15]
+[wt 0.3]
+[se ad230]
+[charaMoveReturn A 0,-7 0.15]
+[wt 0.3]
+[seStop ad230]
+[wt 0.4]
+
+？1：[line 3]刻んだよ！
+？！
+
+[charaFace A 7]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V260]
+ヨーシ！　上等でい！[wait tVoice]
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgm BGM_EVENT_7 1.0 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[wipein rollLeft 1.0 1.0]
+[bgm BGM_EVENT_7 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V270]
+お次は“てんぱりんぐ”でい！[r]この下ごしらえが運命の分かれ道サァ。[wait tVoice]
+[k]
+
+[messageOff]
+[se ade167]
+[seVolume ade167 0 0.4]
+[charaFace A 9]
+[wt 0.6]
+[seStop ade167 0.6]
+[wt 0.6]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V280]
+た、頼むぜ、ますたあ！[r]ここは[#湯煎:ゆせん]と[#氷水:こおりみず]の微妙～な温度管理が肝心なんでい。[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace C 0]
+[charaFadein C 0.6 230,0]
+[charaMove C 260,0 0.6]
+[charaFadeTime C 0.3 0.6]
+[wt 0.6]
+
+[charaFace A 2]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V290]
+[#曰:いわ]く！[r]化け猫のタマモ様がおっしゃることにゃ[line 3][wait tVoice]
+[k]
+
+[charaFace C 2]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V300]
+溶かすは五十と五十五度の胸突き八丁、[r]冷ますは二十九と二十七度のつま先下がり[line 3][wait tVoice]
+[k]
+
+[charaFace C 1]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V310]
+そしてぇ、[#均:なら]すは三十一と三十二度の段だら坂！[wait tVoice]
+[k]
+
+[charaFadeout C 0.4]
+[charaMove C 280,0 0.4]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 22]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V320]
+こっちの[#ほわいと]はまた別の道行きとくらぁ。[r]なんだってこんなに面倒なんだヨ……おっかねぇ……。[wait tVoice]
+[k]
+
+？1：ヘラについたチョコが固まってきたよ！
+？！
+
+[charaFace A 7]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V330]
+手際がいいね！　オウ、こりゃあ上首尾だ。[r]てえしたもんだ、イヨッ、大将軍！[wait tVoice]
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgm BGM_EVENT_7 1.0 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[wipein rollLeft 1.0 1.0]
+[bgm BGM_EVENT_7 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V340]
+ついに仕上げだ……こいつが一番肝心サァ……。[r]あとは型に注いで冷ますだけ……だって？　とんでもねェ！[wait tVoice]
+[k]
+
+[charaFace A 10]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V350]
+いいかい、ますたあ？　耳の穴かっぽじって聞いとくれ！？[r]絵でも何でも、仕上げが作品を左右するんだ……。[wait tVoice]
+[k]
+
+[charaFace A 26]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V360]
+おれァちゃあんと、[r]先人、諸先輩方に[#りさあち]してきたのサ。[wait tVoice]
+[k]
+
+[charaFace A 11]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V370]
+即ち、その極意とは[line 3]！[wait tVoice]
+[k]
+
+
+[messageOff]
+[charaTalk off]
+
+[charaEffect J bit_talk_41]
+
+
+
+
+[branchQuestNotClear lblNotClear4 3000320 4]
+
+[charaFace D 4]
+[charaFadein D 0.6 250,0]
+[charaMove D 280,0 0.6]
+[charaFadeTime D 0.3 0.6]
+[wt 0.8]
+
+[charaPut J 0,0]
+[charaFace A 2]
+[charaFace D 3]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V380]
+愛情でぃ！　愛情を込めまくるんでぇーい！[r]念仏でも真言でもなんでも唱えて充填しとくれ！[wait tVoice]
+[k]
+
+？1：それならまかせ[&て:ろ]！
+？2：令呪も重ねてぜんぶ使う！
+？！
+
+[charaFadeout D 0.4]
+[charaMove D 300,0 0.4]
+
+
+[branch lblConf4]
+[label lblNotClear4]
+
+[charaFace E 0]
+[charaFadein E 0.6 230,0]
+[charaMove E 260,0 0.6]
+[charaFadeTime E 0.3 0.6]
+[wt 0.8]
+
+[charaPut J 0,0]
+[charaFace A 2]
+[charaFace E 13]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V380]
+愛情でぃ！　愛情を込めまくるんでぇーい！[r]念仏でも真言でもなんでも唱えて充填しとくれ！[wait tVoice]
+[k]
+
+？1：それならまかせ[&て:ろ]！
+？2：令呪も重ねてぜんぶ使う！
+？！
+
+[charaFadeout E 0.4]
+[charaMove E 280,0 0.4]
+
+[label lblConf4]
+
+[charaFace A 6]
+[charaPut J 2000,2000]
+
+[charaTalk on]
+[charaTalk A]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V390]
+その心意気サァ、ますたあ！[r]おれはちょいと添え物の細工をさせてもらうからナ……。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad77]
+[charaMove A -150,0 1.0]
+[wt 1.2]
+
+[se ade137]
+[charaShake A 0.1 2 2 1.2]
+[wt 0.7]
+
+[cameraMove 1.0 40,0 1.1]
+[wt 0.7]
+
+[se ad7]
+[cameraHome 0.1]
+[charaTalk A]
+[charaFace A 11]
+[charaMove A 0,0 0.2]
+[wt 0.2]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V400]
+オイ、覗くなますたあ……[twt 2.4][charaFace A 28][messageShake 0.05 4 4 0.2]見るなってば！[r]冷め切るまで、おれの部屋で待っといとくれ！[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_7 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[scene 52700]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+[wt 0.5]
+
+[se ad59]
+[seVolume ad59 0 0.1]
+[seVolume ad59 1.0 1.0]
+[wt 1.0]
+[seStop ad59 0.2]
+[se ad8]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.4 50,0]
+[charaMove A 0,0 0.4]
+[wt 1.0]
+
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[charaFace I 0]
+[charaFadein I 0.5 0,-70]
+[wt 2.0]
+[charaFadeout I 0.4]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V410]
+[f large]ソウラ、完成でぃ！！[wait tVoice]
+[k]
+
+[charaFace A 8]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V420]
+ホウホウ、こいつぁたいしたもんだ！[r]ますたあの多才ぶりには感服するネエ！[wait tVoice]
+[k]
+
+？1：くっ……！　[&パティシエ:パティシエール]の才能が疼く……！
+？2：（細工の工程はほとんどお任せだったけど）
+？！
+
+[charaFace A 6]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V430]
+ウンウン。それじゃ約束通り頂戴するヨ？[twt 4.7][charaFace A 3][r]こ、コイツで……いいかい？[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 20]
+[wt 0.7]
+[se adm27]
+[seVolume adm27 0 0.4]
+[charaFace A 29]
+[charaMoveReturn A 0,-4 0.3]
+[wt 0.6]
+[se ade161]
+[seVolume ade161 0 0.5]
+[charaFace A 8]
+[charaMoveReturn A 0,-4 0.3]
+[wt 0.3]
+[charaMoveReturn A 0,-4 0.3]
+[wt 0.3]
+[seStop ade161 0.3]
+[wt 1.0]
+[charaFace A 29]
+[wt 0.7]
+
+？1：……お口に合うかな、北斎さん？
+？2：美味しい？　お栄ちゃん？
+？！
+
+[messageOff]
+[charaFace A 18]
+[charaShake A 0.04 3 3 0.2]
+[wt 0.7]
+[charaFace A 28]
+[wt 1.0]
+[charaFace A 3]
+[wt 0.7]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V440]
+オウ……ふぁ……ぅぅ……その……ナンだ……[r]もう胸が、いや腹がナ……くちくなっちまって……。[wait tVoice]
+[k]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V450]
+かたじけねェが……ま、アレだ……ホレ……。[wait tVoice]
+[k]
+
+？1：…………？
+？2：（急に歯切れが悪く？）
+？！
+
+[charaFace A 28]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V460]
+あ……『余り茶に福がある。[#然:しか]らば今一つ』って[r]言うだろ？[wait tVoice]
+[k]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V470]
+言い換えれば、残り物には福がある、ってなァ。[r]だから……あとのは、ま、ますたあに謹呈するからヨ？[wait tVoice]
+[k]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V480]
+に、煮るなり、焼くなり、カラッと揚げるなり[r]す、すすす、好きにしてくんナ？　ナ？[wait tVoice]
+[k]
+
+？1：……ありがとう、お栄さん！
+？2：まずはプレーンで食べてみる[&よ:かな]
+？！
+
+[charaFace A 2]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V490]
+ムム……！？　そ、その眼差しッ……！？[r]またかよ、コンチクショウめい！[wait tVoice]
+[k]
+
+？1：また、って何が？
+？2：誰のこと？
+？！
+
+[charaFace A 10]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V500]
+そいつぁ、アレだ。[#ちよこ]の教えを乞うた、[r]さあばんと衆にもちゃあんと言ってやったんだ。[wait tVoice]
+[k]
+
+[charaFace A 11]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V510]
+ちよこはますたあにやるんじゃァねえ。[r]いの一番に、このおれが食っちまう為だってナァ？[wait tVoice]
+[k]
+
+[branchQuestNotClear lblNotClear5 3000320 4]
+
+[charaTalk off]
+[charaFace A 9]
+
+[charaDepth B 1]
+[charaDepth C 3]
+[charaDepth D 2]
+
+[charaFace B 3]
+[charaFadein B 0.4 240,0]
+[charaFadeTime B 0.4 0.6]
+[charaMove B 260,0 0.4]
+
+[charaFace C 3]
+[charaFadein C 0.4 -380,0]
+[charaFadeTime C 0.4 0.6]
+[charaMove C -400,0 0.4]
+
+[charaFace D 3]
+[charaFadein D 0.4 400,0]
+[charaFadeTime D 0.4 0.6]
+[charaMove D 420,0 0.4]
+
+
+[branch lblConf5]
+[label lblNotClear5]
+
+[charaTalk off]
+[charaFace A 9]
+
+[charaDepth B 1]
+[charaDepth C 3]
+[charaDepth E 2]
+
+[charaFace B 3]
+[charaFadein B 0.4 240,0]
+[charaFadeTime B 0.4 0.6]
+[charaMove B 260,0 0.4]
+
+[charaFace C 3]
+[charaFadein C 0.4 -380,0]
+[charaFadeTime C 0.4 0.6]
+[charaMove C -400,0 0.4]
+
+[charaFace E 14]
+[charaFadein E 0.4 400,0]
+[charaFadeTime E 0.4 0.6]
+[charaMove E 420,0 0.4]
+
+[label lblConf5]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V520]
+ましてや、[#ばれんたいん]とは、[r][#一切合切:いっさいがっさい]、無縁の無関係だからナ！　って。[wait tVoice]
+[k]
+
+[charaFace A 15]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V530]
+そうすると……だ、連中なぜやら[r]生ぬるうい[#眼:まなこ]でこっちを見やがって……[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[charaMove B 280,0 0.4]
+
+[charaFadeout C 0.4]
+[charaMove C -420,0 0.4]
+
+[branchQuestNotClear lblNotClear6 3000320 4]
+
+
+[charaFadeout D 0.4]
+[charaMove D 440,0 0.4]
+[wt 0.8]
+
+[branch lblConf6]
+[label lblNotClear6]
+
+[charaFadeout E 0.4]
+[charaMove E 450,0 0.4]
+[wt 0.8]
+
+[label lblConf6]
+
+[cameraMove 0.9 -120,90 1.3]
+[wt 1.4]
+
+？1：（なるほど……往生際がわるい）
+？2：（とと様はお見通しだったかな？）
+？！
+
+[messageOff]
+[se ade139]
+[charaFace A 29]
+[charaMoveScale A 1.05 0.4]
+[cameraMove 0.4 0,0 1.0]
+[shake 0.04 3 3 0.4]
+[wt 0.4]
+
+[charaMoveScale A 1.0 0.3]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V540]
+な、何、ますたあ[#迄:まで]、とと様とにまにま[r][#以心伝心:いしんでんしん]してやがるんでい！[wait tVoice]
+[k]
+
+[charaFace A 3]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V550]
+あ[messageShake 0.04 3 3 0.4]あ、また落ち着かねえ！　後生だ、ますたあ？[r]そいつをとっとと胃の[#腑:ふ]の奥に片付けてくんな！[wait tVoice]
+[k]
+
+[charaFace A 18]
+
+＠葛飾北斎
+[tVoice ValVoice_104000 0_V560]
+江[messageShake 0.04 3 3 0.4]戸っ子は！[r]宵越しの[#ちよこ]は持たないんでぇ！[wait tVoice]
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

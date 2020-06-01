@@ -1,0 +1,998 @@
+
+
+＄03-00-02-11-2-0
+
+
+[soundStopAll]
+
+
+[charaSet A 1098154110 1 村の子供（少女）]
+[charaSet B 1098153910 1 村の子供（少年）]
+[charaSet C 1098123210 1 ゴルドルフ]
+
+[charaSet D 8001410 1 マシュ]
+[charaSet E 98002000 1 フォウ]
+[charaSet F 3012001 1 ブリュンヒルデ]
+[charaSet G 2031001 1 ナポレオン]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[scene 60700]
+
+[charaPut H 1]
+[charaEffect H bit_talk_41]
+[se ad543]
+
+[fadein black 1.0]
+[wait fade]
+[cameraMove 1.0 0,0 1.1]
+
+[wt 0.2]
+[se ad607]
+[wt 0.3]
+[seStop ad543 0.2]
+[wt 0.1]
+[seStop ad607 0.3]
+
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_41]
+[cameraMove 1.5 0,0 1.01]
+[wt 1.5]
+
+[bgm BGM_EVENT_77 0.1]
+
+[se ad580]
+[wt 1.0]
+[seStop ad580 0.5]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+
+＠ナポレオン
+[line 3]っと。現在位置は？
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[se ad15]
+[wt 1.0]
+
+＠マシュ
+旧スカゲラク海峡……[r]汎人類史での地図では海上です。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠フォウ
+フォゥ？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaDepth G 10]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 2]
+
+[charaFace G 0]
+[charaFadein G 0.1 0]
+
+＠マシュ
+あ、そうです。フォウさん、ここは海上ですよ。[r]汎人類史での地図ではという話ですが。
+[k]
+
+[charaFace G 4]
+
+＠ナポレオン
+見ての通りだからなあ[line 3]
+[k]
+
+[charaFace G 0]
+
+＠ナポレオン
+凍り付き、降雪し、山と[#見紛:みまご]う状態の領域って奴だ。[r]北欧[#異聞帯:ロストベルト]じゃあそう珍しくもないぜ。
+[k]
+
+
+
+[charaFace D 7]
+
+＠マシュ
+はい。雪原となった湖もありました。
+[k]
+
+[charaFace G 0]
+
+＠ナポレオン
+まあ、雪や氷の下にゃ海や湖があるんだろうさ。[r]ここの場合は海ってワケだ。
+[k]
+
+[charaFace D 13]
+
+＠マシュ
+わたしと先輩にとっては未踏域ですね。
+[k]
+
+
+[charaFadeout G 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ブリュンヒルデ
+このあたりは比較的暖かいのですね……[r]ヨートゥンハイメンあたりはもっと冷ややかでした。
+[k]
+
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ナポレオン
+ああ、そういやそうか。[r]どこもかしこも雪で覆われちゃあいたが、
+[k]
+
+＠ナポレオン
+オスロからガルフピッゲン山までは、[r]延々と続く氷の山嶺だったからなぁ。
+[k]
+
+[charaFace G 10]
+
+＠ナポレオン
+気温は確かにこのあたりよりも低かった。[r]……暖かいってのは何だかピンと来ないがな……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠マシュ
+確かに。暖かい、という[r]言葉自体が意味消失しそうですね……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠ナポレオン
+はは。うまいこと言いやがる。[r]ん[line 3]
+[k]
+
+[messageOff]
+[charaFace G 10]
+[wt 1.0]
+[charaFace G 1]
+
+＠ナポレオン
+よし決めたぞ。[r]うむ、せっかくだから寄り道していこう！
+[k]
+
+？1：寄り道？
+？2：もしかして、このあたりに来たことが？
+
+？！
+
+＠ナポレオン
+ああ、そんなところだ。[r]可能なら情報収集もしておきたいしな。
+[k]
+
+[charaFace G 6]
+
+＠ナポレオン
+あいにくと日暮れも近い。[r]はは、ここらで一休みしておくのもよかろうさ！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+
+[charaFadeout G 0.1]
+[wt 1.0]
+
+[scene 61600]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad512]
+[wt 2.5]
+[seStop ad512 1.0]
+
+[charaTalk B]
+[charaFace A 1]
+[charaFace B 1]
+[charaFadein A 0.1 2]
+[charaFadein B 0.1 0]
+
+＠B：子供たち
+なぽれおんだ！[bgm BGM_EVENT_92 0.1][r]こーてーへいかだ！
+[k]
+
+＠B：子供たち
+みんなー！[r]こーてーへいか、かえってきたよー！
+[k]
+
+＠A：子供たち
+隣の綺麗なお姉さんはだあれ？　つがう相手？[r]でもとっても綺麗だし、御使いなのかも！
+[k]
+
+＠A：子供たち
+鎧つけてるもんね！[r]槍もってるもんね！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠ナポレオン
+違う違う。つがいじゃない！
+[k]
+
+[charaFace G 4]
+
+＠ナポレオン
+この[#異聞帯:ロストベルト]には婚姻や恋人の概念がないからなあ……
+[k]
+
+
+[charaFace G 2]
+
+＠ナポレオン
+あっ、そこ！　そこの男子！[r]あんまりじゃれつくな、お姉さんが困るだろうが！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠ブリュンヒルデ
+いえ、お気になさらず。[r]子供は好きです。
+[k]
+
+＠ブリュンヒルデ
+愛らしい子供たち、はじめまして。[r]そうですね、お姉さんが一緒に遊んであげましょうか。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace A 1]
+[charaFace B 1]
+[charaFadein A 0.1 2]
+[charaFadein B 0.1 0]
+
+＠子供たち
+わーい！！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk on]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFace F 0]
+[charaFadein G 0.1 0]
+[charaFadein F 0.1 2]
+＠ナポレオン
+……いいのかい？
+[k]
+
+＠ブリュンヒルデ
+構いません。[r]貴方は、大人の方々とお話があるんでしょう？
+[k]
+
+[charaFace G 3]
+
+＠ナポレオン
+おう。すまん。[r][line 3]気の回る女なんだなあ、アンタは。
+[k]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 1]
+[wt 1.0]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ad54]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+[wt 0.3]
+[seStop ad580]
+
+＠マシュ
+ここは……
+[k]
+
+？1：第２３集落にそっくりだ
+？2：第２３集落じゃ……ないんだよね？
+
+？！
+
+[charaFace D 7]
+
+＠マシュ
+ナポレオンさんのお話によれば、[r]ここは第６７集落だということですが[line 3]
+[k]
+
+＠マシュ
+ディテールが異なってはいるものの、[r]基本的な構造は本当に、何もかも同じようです。
+[k]
+
+＠マシュ
+数字にすると80％の一致。[r]意図的なもの、なんでしょうか。
+[k]
+
+[charaFace D 13]
+
+＠マシュ
+それにしてもこの歓迎の雰囲気……
+[k]
+
+＠マシュ
+こんなに、子供たちが嬉しそうに……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace A 0]
+[charaFace B 0]
+[charaFadein A 0.1 2]
+[charaFadein B 0.1 0]
+
+＠B：子供たち
+ねえ、ねえ。[r]あんたたち、おじちゃんの友達？
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠マシュ
+は、はい。[r]友達というか仲間というか……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFace B 1]
+[charaFadein A 0.1 2]
+[charaFadein B 0.1 0]
+
+＠A：子供たち
+じゃあ、はい！[r]これあげる！
+[k]
+
+＠A：子供たち
+なぽれおんのおじちゃん、[r]来るといっつも遊んでくれるから、友達にもお礼！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠マシュ
+あっ、ありがとうございます。[r]綺麗なお花ですね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace A 1]
+[charaFace B 1]
+[charaFadein A 0.1 2]
+[charaFadein B 0.1 0]
+
+＠B：子供たち
+みんなで育ててるんだよ。[r]定めの日の特別なやつじゃないけど、ごめんね！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠マシュ
+いえ。ありがとうございます。[r]大切にしますね。
+[k]
+
+[messageOff]
+[charaFace D 8]
+[wt 1.0]
+[charaFace D 4]
+[wt 0.5]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.1]
+[se adm21]
+[charaMoveReturn E 0,10 0.4]
+
+＠フォウ
+フォウフォーウ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace A 1]
+[charaFace B 1]
+[charaFadein A 0.1 2]
+[charaFadein B 0.1 0]
+
+＠B：子供たち
+おっなんだおまえ！　追いかけっこするかー！
+[k]
+
+[messageOff]
+[se ad456]
+[charaMove A 206,0 0.4]
+[charaFadeout A 0.4]
+[wt 0.2]
+[charaMove B -306,0 0.4]
+[charaFadeout B 0.4]
+[wt 1.0]
+[seStop ad456]
+
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+[wt 0.5]
+
+？1：…………
+？2：分かっていても、つらいね
+
+？！
+
+＠マシュ
+先輩……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠ナポレオン
+おうおうどうした、暗いぞ[&少年少女:お嬢さん方]！[r]初めての場所で初対面の人々に会ってるんだぞ、
+[k]
+
+＠ナポレオン
+暗い顔でどうする！[r]旅先では、明るく楽しくだ。な！
+[k]
+
+[messageOff]
+[wt 0.2]
+[se ad660]
+[wt 0.2]
+[shake 0.05 4 3 0.2]
+[wt 0.3]
+[shake 0.05 4 3 0.2]
+
+[wt 0.3]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠マシュ
+あ、あの、ナポレオンさん！[r]先輩の背中をそう強く叩くのはどうか……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ナポレオン
+おっと、そうか？
+[k]
+
+＠ナポレオン
+一通り聞き込んでみたが[line 3][r]住民によると、何ら変わったところはないな。
+[k]
+
+＠ナポレオン
+御使いやらが警戒飛行してるって話もなければ、[r]巨人種が暴れてるなんて話もなかった。
+[k]
+
+[charaFace G 6]
+
+＠ナポレオン
+とりあえずは一安心だ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+
+＠マシュ
+そういうことなら、[r]今夜はゆっくり休めそうですね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 1]
+
+＠ナポレオン
+ああ。ただ、な……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_92 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_79 0.1]
+
+[charaFace G 0]
+
+
+＠ナポレオン
+結界がある。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠マシュ
+……結界？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ナポレオン
+集落を取り囲む柵と扉に、[r]何やら新しい結界が付与されているらしい。
+[k]
+
+＠ナポレオン
+オレじゃあなくて、彼女が気付いたんだがな。[r]流石は原初のルーンの遣い手だぜ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+[se ad166]
+[wt 0.2]
+[seStop ad166 0.15]
+
+＠ブリュンヒルデ
+…………はい、僭越ながら。
+[k]
+
+[charaFace F 0]
+
+＠ブリュンヒルデ
+スカサハ＝スカディが人類生存圏へと配した[r]巨人[#避:よ]け、冷気[#避:よ]けの結界以外のものを感知しました。
+[k]
+
+＠ブリュンヒルデ
+まるで大盾、まるで堅牢の要塞。[r]あらゆる外敵から身を守るための強力な結界。
+[k]
+
+＠ブリュンヒルデ
+術式の種別までは読み取れませんが、[r]神代の域に達した魔術です。
+[k]
+
+[charaFace F 9]
+
+＠ブリュンヒルデ
+少なくとも、ルーンではない。[r]つまり[line 3]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠マシュ
+女王の手による結界では、ない……
+[k]
+
+？1：誰かが、ここの結界を強化してくれた？
+？2：一体誰が……
+
+？！
+
+[charaFace F 0]
+
+＠マシュ
+誰、なんでしょう？
+[k]
+
+＠マシュ
+[#異聞帯:ロストベルト]側の戦力の中で、[r]ルーン以外の術式を操ることができるのは……
+[k]
+
+[charaFace D 12]
+
+＠マシュ
+オフェリアさん……いえ、でも、[r]彼女が得意としているのは結界魔術などではなく、
+[k]
+
+＠マシュ
+召喚関係の魔術であったはずです。
+[k]
+
+[charaFace D 7]
+
+＠マシュ
+神霊カイニスについても、[r]魔術を得意とする霊基には見えませんでした。
+[k]
+
+＠マシュ
+となると本当に、誰が[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_79 1.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad313]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 30,0]
+[charaMove E 1 0.6]
+[wt 0.6]
+[seStop ad313 1.0]
+
+＠フォウ
+フォウフォウ！[r]フォーウ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+
+＠マシュ
+あっ。おかえりなさい、フォウさん。[bgm BGM_EVENT_77 0.1]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 1]
+
+＠ナポレオン
+ん～…………。
+[k]
+
+[charaFace G 0]
+
+＠ナポレオン
+まあ、考えていても始まらん！[r]今日はここで休んで、明日、また移動再開[line 3]
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut A 1200,1200]
+[charaEffect A bit_talk_10]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+[charaFace C 1]
+
+＠ゴルドルフ
+[line 3]おおお！　繋がった！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFace D 0]
+[charaFadein E 0.1 0]
+[charaFadein D 0.1 2]
+
+＠フォウ
+フォウ！
+[k]
+
+＠マシュ
+新所長？
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+やればできるではないか、早々に繋がった！[r]こちらシャドウ・ボーダーだ！　声は聞こえているな！
+[k]
+
+？1：新所長！？
+？2：通信、また繋がった！
+
+？！
+
+[charaFace C 1]
+
+＠ゴルドルフ
+ふふ。驚く事はない。奇跡的な偶然だよ。[r]なにしろなんで繋がったかまるでわからん。
+[k]
+
+＠ゴルドルフ
+ふんだんな私の魅力とは違う、というコトだ。[r]ちなみに、あと数十秒で接続は切れるらしい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠ナポレオン
+お。誰だこのおっさん！[r]ああ、オマエたちが話してたゴルドルフ所長ってのか！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠ブリュンヒルデ
+…………。
+[k]
+
+[charaFace F 8]
+
+＠ブリュンヒルデ
+（困るような……困らないような……曖昧な印象です……）
+[k]
+
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.3]
+
+＠A：ムニエル
+おっさん、そんな場合じゃないだろ！？[r]用件、用件！　さっきの話、早く！
+[k]
+
+[charaFace C 8]
+[bgmStop BGM_EVENT_77 0.5]
+
+＠ゴルドルフ
+そうだった、今は挨拶の時間ではない！[r]緊急事態だ、[%1]！
+[k]
+
+[bgm BGM_EVENT_80 0.1]
+
+＠ゴルドルフ
+旧ヴェーネルン湖上！[r]ゲルダ嬢の集落に現在、巨人種の集団が接近中だ！
+[k]
+
+＠ゴルドルフ
+どう考えても子供や若者ばかりの集落では手に負えん、[r]巨人種なんぞが入り込もうものなら、まず全滅となる！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaDepth G 10]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFace G 2]
+[charaFadein D 0.1 2]
+[charaFadein G 0.1 0]
+
+＠マシュ
+！
+[k]
+
+＠ナポレオン
+第２３集落か[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠マシュ
+マスター！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠フォウ
+フォ！　フォウ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+たった今、魔術礼装式ドローンが観測したばかりだ！[r]何処にいるか分からんが救出へ向かわんか！
+[k]
+
+＠ゴルドルフ
+既に情報取得済みの集落だが、こちらの味方になる[r]可能性の高い拠点だ！　何としても死守せよ！
+[k]
+
+[messageOff]
+[charaPut A 1]
+[se ad539]
+[wt 0.7]
+[charaPut C 1200,1200]
+[charaPut H 1200,1200]
+[charaPut A 1200,1200]
+[wt 0.5]
+[messageOff]
+[charaFadeout C 0.1]
+[wt 1.0]
+
+？1：助けに行く！
+？2：全速力で移動開始、いいよね！
+
+？！
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠ブリュンヒルデ
+はい。巨人種による虐殺は見逃せません。[r]それは、正しき勇士同士の戦いなどではないでしょう。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠ナポレオン
+行くぞ！　間に合うかどうかは分の悪い賭けだが[line 3][r]我ら[#大陸軍:グランダルメ]は足が速い！
+[k]
+
+＠ナポレオン
+新兵の言う通り！　全速力で！　行くぞ！
+[k]
+
+[messageOff]
+[fadeout black 0.8]
+[bgmStop BGM_EVENT_80 0.8]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

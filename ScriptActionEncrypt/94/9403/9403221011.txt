@@ -1,0 +1,202 @@
+
+＄94-03-22-10-1-1
+[soundStopAll]
+
+
+[charaSet A 1035001 1 ディルムッド]
+[charaSet B 1017000 1 悪鬼羅刹]
+[charaSet C 3011000 1 フィン・マックール]
+[charaSet D 1098162000 1 マシュ]
+[charaSet E 1098123200 1 ゴルドルフ]
+[charaSet F 1098161900 1 蛇庄屋]
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+[scene 70100]
+
+[bgm BGM_EVENT_63 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ディルムッド
+二刀流、破れたり！
+[k]
+
+[messageOff]
+[effect bit_talk_v_slash01]
+[wt 0.1]
+[se bac308]
+[wt 0.3]
+[charaFadeout A 0.1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[charaShake B 0.05 4 4 0.4]
+
+＠悪鬼羅刹
+くわああああ！[r]惜しい、美形だけどあと６年……っ！
+[k]
+
+[messageOff]
+[flashin once 0.2 0.2 FFFFFFFF FFFFFF80]
+[bgmStop BGM_EVENT_63 0.5]
+[se ad528]
+[charaSpecialEffect B enemyErasure 1 1.7]
+[wt 2.0]
+
+？1：一瞬だけ……本性が見えたね……
+？2：とてつもない強敵だった……
+
+？！
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ディルムッド
+む！？
+[k]
+
+[messageOff]
+
+[wt 0.7]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[charaChange A 3002001 3 fade 0.1]
+[wait charaChange A]
+[cueSe Battle bac384]
+[wt 1.0]
+
+＠ディルムッド
+くっ……不覚……[r]我が鎧ばかりか霊基すら削るとは……
+[k]
+
+＠ディルムッド
+二刀流の羅刹……互角で……あったか……
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[charaMove A 0,-30 0.4]
+[wt 0.4]
+[se ad144]
+[seVolume ad144 0 0.4]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠フィン・マックール
+私の活躍の場がなかったなぁ……[r]温泉が開放されたのだから良しとするが……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠マシュ
+やりましたね、先輩！[r]待望の温泉です！
+[k]
+
+[charaFace D 3]
+
+＠マシュ
+あ……いえ、その前に、ディルムッドさんを[r]休憩室にお運びしないと……！
+[k]
+
+＠ディルムッド
+いいのです……私の事は気にせず、[r]お二人でごゆっくり……
+[k]
+
+[charaFace D 2]
+
+＠マシュ
+いいえ、そうはいきません！
+[k]
+
+＠マシュ
+マシュ・キリエライト、急いでお運びしてきますので、[r]待っていてくださいね！
+[k]
+
+[messageOff]
+[charaFadeout D 0.4]
+[wt 2.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠蛇庄屋
+あっらーー！？[r]温泉が開いてるじゃなーーい！
+[k]
+
+＠蛇庄屋
+なになに、アナタたちであの闇落ち仁王を[r]やっつけちゃったのーーぅ！？
+[k]
+
+＠蛇庄屋
+いいわいいわ、素敵じゃない！[r]飲みに行きましょう、ゴルドルフちゃん！
+[k]
+
+＠蛇庄屋
+温泉に入りながらのお酒は格別よぉーー！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 17]
+[charaFadein E 0.1 1]
+
+＠ゴルドルフ
+あれだな、月見で一杯というヤツだな！
+[k]
+
+[charaFace E 10]
+
+＠ゴルドルフ
+ふむ。それはそれとして、[r]なぜ私はこの蛇男に懐かれているのだろうね？
+[k]
+
+[messageOff]
+[charaFace F 0]
+[charaFadein F 0.4 196,0]
+[wt 0.5]
+
+[charaTalk off]
+[charaFace E 7]
+[charaMove E 10,0 0.1]
+[charaMove F 186,0 0.1]
+[wt 0.2]
+
+[se ad345]
+[seVolume ad345 0 0.3]
+[charaFace E 8]
+[charaMove E 202,0 2.0]
+[charaShake E 0.07 7 0 2.0]
+[charaMove F 378,0 2.0]
+[wt 1.6]
+[charaFadeout E 0.2]
+[charaFadeout F 0.2]
+[seStop ad345 0.2]
+[wt 0.1]
+
+
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

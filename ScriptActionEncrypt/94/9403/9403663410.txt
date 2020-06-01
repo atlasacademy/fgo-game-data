@@ -1,0 +1,452 @@
+
+
+
+
+＄94-03-66-34-1-0
+
+
+
+
+[soundStopAll]
+
+[charaSet A 8001002 1 マシュ]
+[charaSet B 2020001 1 イシュタル]
+[charaSet C 98003000 1 Dr.ロマン]
+[charaSet D 4018001 1 ケツァル・コアトル]
+[charaSet E 3006001 1 弁慶]
+[charaSet F 5019001 1 エルメロイⅡ世]
+[charaSet G 98107400 1 牛若丸]
+[charaSet H 6015001 1 ケリィ]
+
+
+
+[scene 20735]
+
+[se ad31]
+[wt 0.1]
+[seStop ad31]
+[wt 0.1]
+
+[se ad31]
+[wt 0.2]
+[seStop ad31]
+[wt 0.2]
+
+[se ad31]
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.0]
+
+[seStop ad31 1.5]
+[scene 20733 1.5]
+[wt 2.5]
+
+[bgm BGM_EVENT_24 0.1]
+[se ad2]
+[seVolume ad2 0.1 0.2]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠マシュ
+やりました！　ティアマト神、ついに捕捉！[r]作戦可能域です、マスター！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠イシュタル
+ヒュウ、やったわね[%1]！
+[k]
+
+＠イシュタル
+ケイオスなんたらの汚染も強くなる一方だったし、[r]これ以上近づかなくていいのは助かるわ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.6]
+
+？1：これは、第七特異点の……
+？2：ティアマトを追いかけてたとき……
+
+？！
+
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 5]
+
+＠Dr.ロマン
+（ビーストⅡから十分に距離を取ってこの霊基汚染……[r]　もし直接戦闘する状況になったら……）
+[k]
+
+＠Dr.ロマン
+いや、そんな最悪の状況にはならないとも！[r]ケツァル・コアトル、準備はいいかい！？
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[messageOff]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠ケツァル・コアトル
+ええ、任せて。いつでも行けるわ。[r][%1][&君:さん]からの魔力提供も十分。
+[k]
+
+＠ケツァル・コアトル
+ここまで来れば[line 3]
+[k]
+
+？1：伏せて、マシュ！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[messageOff]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 0.4]
+[charaMove A 0,-512 0.2]
+[charaFadeout A 0.2]
+[effect bit_talk_37]
+
+[se bac93]
+[effect bit_talk_03]
+[wt 2.5]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.7 1]
+[wt 1.0]
+
+
+＠弁慶
+[#残念至極:ざんねんしごく]。[r]まずマシュ殿から始末するつもりでしたが。
+[k]
+
+？1：弁慶？！
+？2：ここは牛若丸だったはず……
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠エルメロイⅡ世
+今回は、そこが[#改竄:かいざん]されたのか……[r]だが、これは君にとってあまりに……
+[k]
+
+[messageOff]
+[wipeout openEye 0.8 0.5]
+[bgm BGM_EVENT_24 0.5 0.5]
+[seVolume ad2 0.5 0.1]
+[wait wipe]
+
+[charaFadeout F 0.1]
+
+[scene 10000]
+
+[wt 0.1]
+
+[wipein openEye 0.1 0.5]
+[wait wipe]
+
+[wipeFilter openEye 0.2 0.7]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 20733]
+
+[effect bit_sepia01]
+
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 1.4]
+[charaMove A 0,-512 0.2]
+[charaFadeout A 0.2]
+[effect bit_talk_37]
+
+[se bac93]
+[effect bit_talk_03]
+[wt 2.5]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠牛若丸
+残念。[#目障:めざわ]りな[#護:まも]り役から始末したかったのだが。[r]また功を焦ったな、私は。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 5]
+
+＠Dr.ロマン
+牛若丸……！　そうか、ケイオスタイドの範囲内では[r]とてもじゃないが反応を分けて観測できない……！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠マシュ
+牛若丸さん……！　また我々の妨害をするのですか！？[r]身も心もティアマト神の従属になってしまったと……！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+そう宣言した筈だが？[r]母上の支配は心地よい。何を考えずとも良くなる。
+[k]
+
+＠牛若丸
+憎しみを晴らす事だけに専心できる。[r]貴様らを殺す事だけが舌を濡らす愉しみとなる。
+[k]
+
+＠牛若丸
+この地に残った人間はもはや数えるほど。[r]私もずいぶんと斬り殺した。肉の感触はもう十分だ。
+[k]
+
+[messageOff]
+
+[fadeout white 1.5]
+[wait fade]
+
+[charaFadeout G 0.1]
+[effectStop bit_sepia01]
+
+[scene 10000]
+[wt 0.1]
+[wipeOff]
+
+[fadein white 1.0]
+[bgm BGM_EVENT_24 1.0 1.0]
+[seVolume ad2 1.0 0.2]
+[wait fade]
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[charaSet D 3006001 1 弁慶2]
+[charaSet G 3006001 1 弁慶3]
+[charaDepth D 1]
+[charaDepth G 2]
+
+[scene 20733]
+
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 2]
+
+[wt 1.5]
+
+[wipein openEye 1.0 0.5]
+[wait wipe]
+[wt 0.4]
+
+＠Dr.ロマン
+駄目だ、[%1]君！
+[k]
+
+＠Dr.ロマン
+外見はともかく、武蔵坊弁慶の内側は[r]完全にケイオスタイドに食い尽くされてる！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠マシュ
+弁慶さん……！　また我々の妨害をするのですか！？[r]身も心もティアマト神の従属になってしまったと……！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠弁慶
+そう宣言したはずでございます。[r]母上の支配こそ楽土。菩薩の導く安寧ですぞ。
+[k]
+
+＠弁慶
+拙僧の無念も後悔も、この心身から消えて失せた。[r]あとは皆様を連れて行くのみでございます。
+[k]
+
+＠弁慶
+お許しめされい。ご覚悟めされい。[r]どうぞ我らが泥にお沈みめされい。
+[k]
+
+＠弁慶
+無論、拙僧もお供いたします。[r]どうぞ、我らが楽土の一部となってくだされ。
+[k]
+
+？1：そんなの……
+？2：こんな可能性も、ありえたってこと？
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠ケリィ
+ありえたんだろう。[r]そして、誰かの代わりに、この僧侶が犠牲になった。
+[k]
+
+
+＠ケリィ
+何の犠牲も出さずにすむほど、君の旅は[#生温:なまぬる]かったか？[r]再現記録が合理性を帯びているなら、当然のことだ。
+[k]
+
+[messageOff]
+[se bac56]
+[wt 0.6]
+[se ad563]
+[wt 0.2]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.3]
+
+[se ad618]
+[fowardEffect bit_talk_13]
+[charaFace E 5]
+[charaShake E 0.05 4 4 0.4]
+[wt 0.2]
+[se ad442]
+[wt 0.2]
+
+[charaMove E 0,-50 0.3]
+[se ad144]
+[seVolume ad144 0 0.5]
+[charaFadeout E 0.4]
+[wt 1.5]
+
+[charaTalk off]
+[charaFace D 5]
+[charaFace G 5]
+
+[charaFadein D 0.4 0]
+[se ad199]
+[wt 0.3]
+[seStop ad199]
+[se ad54]
+[se ad442]
+[wt 0.3]
+
+[charaFadein G 0.4 2]
+[se ad199]
+[wt 0.3]
+[seStop ad199]
+[se ad54]
+[se ad442]
+[wt 2.0]
+
+？1：増殖！
+？！
+
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠イシュタル
+……ええ。知り合いらしいけど、コイツはもう手遅れよ。[r]中身、ぐちゃぐちゃだもの。
+[k]
+
+
+＠イシュタル
+自己増殖からの個体融合。何百という自分と[#融:と]け合って、[r]今にも内側から破裂しそう。
+[k]
+
+＠イシュタル
+……そうなったら中からどんな化け物が出てくるのか、[r]想像したくもないわ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠弁慶
+無論、決まっております。我が[#裸:ウチ]から溢れるは[r]一切曇りなき衆生の救済。完全なる法の確立。
+[k]
+
+[messageOff]
+[wt 0.5]
+[charaFace E 2]
+
+＠弁慶
+ゆえ、悔いなく未練なく皆様をお連れしましょう。[r][line 2]『[#裏:うら]・[#五百羅漢補陀落渡海:ごひゃくらかんふだらくとかい]』！[se ad39][charaEffect E bit_talk_36]
+[k]
+
+
+
+
+[messageOff]
+[wt 1.5]
+
+[fadeout black 0.5]
+[seStop ad2 0.4]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

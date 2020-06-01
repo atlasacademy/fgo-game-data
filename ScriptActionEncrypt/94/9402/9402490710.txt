@@ -1,0 +1,988 @@
+
+
+
+＄94-02-49-07-1-0
+
+[soundStopAll]
+
+
+
+[charaSet A 10007000 1 沖田オルタ]
+[charaSet B 1027001 1 沖田総司]
+[charaSet C 1098138000 1 坂本龍馬]
+[charaSet D 1098139000 1 お竜さん]
+[charaSet E 1098135000 1 織田信長]
+[charaSet F 98112300 1 村人男]
+[charaSet G 1098139000 1 お竜さん２]
+[charaSet H 98002000 1 エフェクト用ダミー]
+
+[charaDepth C 9]
+[charaDepth D 1]
+[charaDepth H 10]
+
+
+[scene 59900]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad207]
+[seVolume ad207 0 0.0]
+[wt 0.1]
+[seVolume ad207 2.0 0.4]
+[se ad60]
+[wt 1.5]
+[seStop ad60 1.0]
+[wt 0.1]
+
+
+
+？1：とくになにもなく着いちゃったね
+？2：……静かだね
+
+？！
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.7 1]
+[wt 0.7]
+＠沖田総司
+来ましたか……。
+[k]
+
+＠沖田総司
+では早速始めましょう。
+[k]
+
+
+[messageOff]
+[seStop ad207 1.0]
+[wt 1.2]
+[se bac304]
+[wt 0.7]
+[seStop bac304 1.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_3 0.1 1.0]
+
+？1：ちょ、ちょっとまって！？
+？2：沖田さんなんでしょ？
+
+？！
+
+[charaFace B 4]
+＠沖田総司
+敵である私に随分と気安いですね。
+[k]
+
+[charaFace B 5]
+＠沖田総司
+なにやら私をよくご存じのようですが[r]これは聖杯戦争。
+[k]
+
+＠沖田総司
+あなたの知る沖田総司と、ここで剣をふるう沖田総司が[r]同じものであるはずがないでしょう。
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+……一つ聞きたい。[r]……私はおまえなのか？
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠沖田総司
+さあ、どうでしょう？
+[k]
+
+＠沖田総司
+私はそんな大太刀は振ったこと[r]ありませんしね。
+[k]
+
+＠沖田総司
+……ですが、先ほども言いましたがこれは聖杯戦争。[r]そんな事もあるのかもしれません。
+[k]
+
+[charaFace B 4]
+＠沖田総司
+………。[r]変ですね……、
+[k]
+
+＠沖田総司
+斬り合いの前にこうペラペラと[r]喋るなんて私らしくもない。
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+そうだな、私もそんな気がする。
+[k]
+
+[charaFace A 5]
+＠沖田オルタ
+……だから直接確かめるとしよう。
+[k]
+
+[messageOff]
+[se bac305]
+[wt 0.7]
+[seStop ad60 1.0]
+[wt 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠沖田総司
+いいでしょう……。
+[k]
+
+＠沖田総司
+[line 3]戦場に事の善悪なし。[r]ただひたすらに斬るのみ。
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+………いくぞ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[se ad171]
+[effect bit_talk_Slash_white_01]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_3 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[scene 59700]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1 1.0]
+
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠織田信長
+ライダーか……。[r]わしの軍勢を苦も無く蹴散らすとはのぅ。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠坂本龍馬
+いやいや、見た目はともかく[r]恐ろしい戦力だねあの謎の生き物は……。
+[k]
+
+＠坂本龍馬
+あれが君の[#戦線:レッドライン]の力かい？
+[k]
+
+[charaFace C 5]
+＠坂本龍馬
+[line 3]第六天魔王、織田信長公。
+[k]
+
+＠坂本龍馬
+こうして相対するとなるほど[r]流石は戦国の覇王、凄い圧だね。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠織田信長
+ふん、心にもないことを抜かしよるわ。
+[k]
+
+[charaFace E 6]
+＠織田信長
+時にライダー、貴様の目的はなんじゃ？
+[k]
+
+[charaFace E 0]
+＠織田信長
+事と次第によってはわしらが[r]争う必要もないのではないか？
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+＠坂本龍馬
+いやあ、それができれば楽なんだけどね。
+[k]
+
+[charaFace C 5]
+＠坂本龍馬
+残念ながら僕の目的は信長公、[r]貴方なんでね。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠織田信長
+わしが目的？
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠坂本龍馬
+ああ、僕が調べた限り今回の聖杯戦争、[r]鍵は恐らく君さ。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠織田信長
+ほう……、ライダー、[r]貴様も勝負を投げるのか？
+[k]
+
+＠織田信長
+聖杯にかける望みも諦めるてか？
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠坂本龍馬
+ああ、それなんだけどね、[r]本物のライダーならもう居ないよ。
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+＠お竜さん
+本物はこのお竜さんがぶっ飛ばしたぞ。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠織田信長
+……なに？
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 6]
+[charaFace D 0]
+[charaFadein C 0.1 1]
+[charaFadein D 0.1 1]
+＠坂本龍馬
+僕はもともとこの聖杯戦争の員数外、
+[k]
+
+[bgm BGM_EVENT_24 0.1 1.0]
+
+＠坂本龍馬
+[line 3][#世界の後押し]でここに来た。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠織田信長
+なんじゃと？[r]もしや貴様、抑止の……。
+[k]
+
+[charaFace E 1]
+＠織田信長
+うはははは！　これは面白い！[r]わしもついに世界の敵となったか！！
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 5]
+[charaFace D 0]
+[charaFadein C 0.1 1]
+[charaFadein D 0.1 1]
+＠坂本龍馬
+まあ、そういうことさ。
+[k]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠織田信長
+なれば、わしらが争うも必定か。
+[k]
+
+＠織田信長
+よかろう、貴様を倒して[r]この狭き国より[#出:い]で、世界を広げるとしよう。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 2]
+[charaFace D 0]
+[charaFadein C 0.1 1]
+[charaFadein D 0.1 1]
+＠坂本龍馬
+……いくぜよ、お竜さん！　宝具を抜く。
+[k]
+
+[charaTalk D]
+[charaFace D 7]
+＠お竜さん
+まかしとけ、お竜さんにかかれば[r]こんなやつ、余裕のお竜さんだ。
+[k]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠織田信長
+いきなりとは勝負をかけてきたな。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaDepth C 9]
+[charaDepth D 1]
+[charaDepth H 10]
+[charaDepth G 2]
+
+
+[charaTalk C]
+[charaFace C 6]
+[charaFace D 7]
+[charaFace G 7]
+[charaFilter D silhouette 00000080]
+[charaFadein C 0.1 1]
+[charaFadein D 0.1 1]
+[charaFadein G 0.1 1]
+[se ad153]
+＠坂本龍馬
+[#天逆鉾:あまさかほこ]に[#忌:ぬ]われし、国津の[#大蛇:オロチ][charaFadeout G 1.5][wt 1.5][seStop ad153 1.0]
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaSet D 1098140000 1 お竜さん_竜形態]
+[charaFilter D normal 00000080]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠織田信長
+ほう、やはりその女が貴様の宝具か！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.2]
+
+[charaTalk off]
+[charaFace C 2]
+[charaFace D 0]
+[charaFadein C 0.7 1]
+[charaFadein D 0.7 1]
+[wt 0.7]
+＠坂本龍馬
+いくぞ、第六天魔王！
+[k]
+
+＠坂本龍馬
+『天駆ける、[line 3]竜が如く！』
+[k]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠織田信長
+はっ！　竜退治とは面白い！
+[k]
+
+＠織田信長
+我が『[#三千世界:さんだんうち]』に敵はなし！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_24 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaSet C 1027002 1 沖田総司]
+[charaSet G 1098118800 1 みつ]
+
+
+[scene 59700]
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1 1.0]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠沖田総司
+[#疾:はや]く、[#鋭:するど]く！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[charaPut H 0,125]
+[charaScale H 1.5]
+[charaEffect H bit_talk_ichimon01wh]
+[se ad32]
+[wt 0.2]
+[flashin once 0.1 0.1 FFFFFFD0 FFFFFF00]
+[fowardEffect bit_talk_14]
+[shake 0.05 2 4 0.5]
+[se ad170]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[charaShake A 0.04 4 4 0.5]
+＠沖田オルタ
+……くっ！？
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠沖田総司
+[line 3]遅い！
+[k]
+
+＠沖田総司
+踏み込みは足でするものではありません！
+[k]
+
+＠沖田総司
+[#臍下丹田:せいかたんでん]に気を張り[r]身体で相手の間を削ぐのです！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+
+[flashin once 0.05 0.05 FFFFFF66 FFFFFF00]
+[wt 0.5]
+[flashin once 0.05 0.05 FFFFFF4D FFFFFF00]
+[wt 0.2]
+[flashin once 0.05 0.05 FFFFFF66 FFFFFF00]
+[wt 0.4]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+……なんだこれは？
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_3 0.5 0.2]
+[shake 0.05 4 4 0.2]
+[flashin loop 0.1 0.05 FFFFFF80 FFFFFF00]
+[se ad437]
+[scene 46100]
+[charaFadeout A 0.1]
+[wt 0.1]
+[effect bit_sepia01]
+[cameraFilter gray]
+[wt 0.3]
+[flashOff]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFilter F silhouette 00000080]
+[charaFadein F 0.1 1]
+＠F：？？？
+……この子はもうだめだ。[r]生まれるんが早すぎたんじゃ。
+[k]
+
+
+＠F：？？？
+見ろ、肌は土色、息もほとんどしとらん。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFilter G silhouette 00000080]
+[charaFadein G 0.1 1]
+＠G：？？？
+なんとか……、何とかなりませんか？
+[k]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠F：？？？
+あきらめろ、おみつ。
+[k]
+
+＠F：？？？
+もってあと２、３日だ。[r]もう仏様にでもすがるしかあるめぇ。
+[k]
+
+
+[messageOff]
+[shake 0.05 4 4 0.2]
+[flashin loop 0.1 0.05 FFFFFF80 FFFFFF00]
+[se ad437]
+[charaFadeout F 0.1]
+[wt 0.1]
+[effectStop bit_sepia01]
+[cameraFilter normal]
+[scene 59700]
+[wt 0.3]
+[flashOff]
+
+
+[bgm BGM_EVENT_3 0.5 1.0]
+
+[charaPut H 1]
+[charaScale H 1.0]
+[charaEffect H bit_talk_h_slash01 0,0 H]
+[se ad32]
+[wt 0.2]
+[flashin once 0.1 0.1 FFFFFF4D FFFFFF00]
+[fowardEffect bit_talk_14]
+[shake 0.05 2 4 0.5]
+[se ad170]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠沖田総司
+剣を手先で振ってどうするのです！[r]剣とは腰で振るうものです！
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+……ぐっ！[r]そんなことは……！
+[k]
+
+
+[messageOff]
+[bgm BGM_EVENT_3 0.5 0.2]
+[shake 0.05 4 4 0.2]
+[flashin loop 0.1 0.05 FFFFFF66 FFFFFF00]
+[scene 46901]
+[se ad437]
+[charaFadeout A 0.1]
+[wt 0.1]
+[effect bit_sepia01]
+[cameraFilter gray]
+[wt 0.3]
+[flashOff]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠みつ
+……[#阿弥陀:あみだ]様！[r]なんとか宗次郎を、宗次郎をお救いください。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+…………。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠みつ
+どうか、どうか……、宗次郎を。
+[k]
+
+＠みつ
+この子はきっと良き事をなします……。[r]なにとぞ、宗次郎をお救いください。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad39]
+[seVolume ad39 0 0.5]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+……なれば、その[#童:わらし]。
+[k]
+
+＠沖田オルタ
+この先の生において、
+[k]
+
+＠沖田オルタ
+[line 3]ただ一度、我と約し。
+[k]
+
+＠沖田オルタ
+その身、世界へと召し上げん。
+[k]
+
+
+[messageOff]
+[shake 0.05 4 4 0.2]
+[flashin loop 0.1 0.05 FFFFFF66 FFFFFF00]
+[se ad437]
+[se ad39]
+[fadeout white 1.5]
+[wait fade]
+[charaFadeout A 0.1]
+[wt 0.1]
+[effectStop bit_sepia01]
+[cameraFilter normal]
+[scene 59700]
+[seStop ad39 1.0]
+[wt 0.3]
+[flashOff]
+[fadein white 1.0]
+[wait fade]
+
+
+
+[bgm BGM_EVENT_3 0.5 1.0]
+
+
+[effect bit_talk_14 0,-60]
+[wt 0.2]
+[flashin once 0.1 0.1 FFFFFF66 FFFFFF00]
+[shake 0.03 3 3 0.4]
+[se ad32]
+[wt 0.2]
+[effect bit_talk_14 -192,0]
+[wt 0.2]
+[flashin once 0.1 0.1 FFFFFF4D FFFFFF00]
+[shake 0.03 3 3 0.4]
+[se ad32]
+[wt 0.2]
+[effect bit_talk_14 204,40]
+[wt 0.2]
+[flashin once 0.1 0.1 FFFFFF66 FFFFFF00]
+[shake 0.03 3 3 0.4]
+[se ad32]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠沖田総司
+……バカですかあなたは！
+[k]
+
+＠沖田総司
+私の刀とあなたの大太刀、[r]見てくれは違いますがその理は同一！
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+そんなことは分かっている！[r]あと少しだ、あと少しで追いつく！
+[k]
+
+
+[se ad592]
+[messageOff]
+[bgmStop BGM_EVENT_3 0.5]
+[fadeout white 0.6]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 59200]
+[wt 2.0]
+
+[wipeFilter cinema 0.5 0]
+[wt 0.1]
+
+
+[fadein white 3.0]
+[wait fade]
+
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠沖田オルタ
+……そうか、私はこの時の借りを返すために[r]ここに抑止の顕現として……。
+[k]
+
+
+[messageOff]
+[se ad592]
+[fadeout white 0.6]
+[wait fade]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[wipeOff]
+
+[scene 59700]
+[wt 2.0]
+
+[fadein white 0.5]
+[wait fade]
+
+
+[charaPut H 1]
+[charaScale H 1.0]
+[charaEffect H bit_talk_v_slash01]
+[se ad32]
+[wt 0.2]
+[flashin once 0.1 0.1 FFFFFFD0 FFFFFF00]
+[fowardEffect bit_talk_14]
+[shake 0.05 2 4 0.5]
+[se ad170]
+[wt 0.5]
+
+
+[se ad7]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.4 1]
+[charaShake B 0.03 5 5 0.5]
+[wt 0.5]
+
+
+＠沖田総司
+……むっ！[r]私の剣速にその大太刀で！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 0.1 1.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+……追いついたぞ。
+[k]
+
+＠沖田オルタ
+……そして思い出した。[r]やはり私はおまえだ。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠沖田総司
+……さあ、それはどうでしょうね。[r]それに勝負はまだついてませんよ。
+[k]
+
+？1：もうかなり打ち合ってるのに……
+？2：沖田さんなら長期戦は苦手のはず！
+
+？！
+
+＠沖田総司
+何を期待しているか知りませんが、[r]私の魔力切れを待っているならば無駄なことです。
+[k]
+
+＠沖田総司
+私はこの[#戦線:レッドライン]にいるかぎり[r]魔力が途切れることはありません。
+[k]
+
+＠沖田総司
+この身体に刻まれた病魔の呪いすら[r]私の動きを阻むことはない。
+[k]
+
+＠沖田総司
+それがこの[#戦線:レッドライン]で私に与えられた力。
+[k]
+
+？1：な、なんだって……！？
+？2：パーフェクト沖田さんじゃないか
+
+？！
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+いや、そうでなくては困る。[r]私は本当の私を取り戻さなければならない。
+[k]
+
+[charaFace A 2]
+＠沖田オルタ
+行くぞ、次で最後だ[line 3]！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠沖田総司
+いいでしょう……[r]では私も全てをかけてお相手しましょう。
+[k]
+
+[messageOff]
+[se ad39]
+[effect bit_talk_36]
+[wt 1.5]
+
+[fadeout white 0.3]
+[wait fade]
+
+[effectStop bit_talk_36]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+[seStop ad39 1.0]
+[fadein white 1.0]
+[wait fade]
+
+[wt 0.4]
+
+[charaFace C 2]
+＠C：沖田総司
+新選組一番隊隊長『沖田総司』推参！
+[k]
+
+＠C：沖田総司
+[line 3]我が秘剣の[#煌:きら]めき、受けるが良い！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

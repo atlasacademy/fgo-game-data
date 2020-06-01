@@ -1,0 +1,947 @@
+
+＄91-70-20-02-3-0
+
+
+
+[soundStopAll]
+
+[charaSet A 7020001 1 クー・フーリン・オルタ]
+[charaSet B 5005001 1 アンデルセン]
+[charaSet C 4013001 1 メイヴ]
+[charaSet D 3004001 1 カルナ]
+[charaSet E 1002001 1 アルトリア・オルタ]
+[charaSet F 7001001 1 ヘラクレス]
+
+
+
+[cameraFilter gray]
+
+[scene 27800]
+
+[bgm BGM_EVENT_41 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+
+
+＠
+呼吸する度に、鈍痛が襲い掛かる。[r]思考は[#覚束:おぼつか]ない。何をすればいいかも不明瞭だ。
+[k]
+
+＠
+だから、眼前の敵を食い破る。[r]そのことだけに執心する。
+[k]
+
+[bgmStop BGM_EVENT_41 0.7]
+
+＠
+元より戦士とはそういうもの。[r]まして狂戦士であれば。
+[k]
+
+[cameraFilter normal]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_3 0.1]
+
+
+＠カルナ
+真の英雄は[line 3]眼で殺す！
+[k]
+
+[messageOff]
+[fowardEffect bit_talk_41]
+[charaScale D 1.1]
+[se ad73]
+[wt 0.3]
+[fowardEffectStop bit_talk_41]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[charaScale D 1.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠クー・フーリン・オルタ
+チッ……！
+[k]
+
+[messageOff]
+
+[se ad7]
+[charaMoveReturn A 0,5 0.2]
+[charaMoveScale A 0.95 0.2]
+[wt 0.2]
+[charaFadeout A 0.4]
+
+[se ad171]
+[fowardEffect bit_talk_ichimon01wh]
+[wt 0.2]
+[se ad98]
+[wt 0.7]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+[charaEffect C bit_talk_36]
+[se ad39]
+[wt 1.5]
+
+[fadeout white 1.0]
+[wait fade]
+[charaFadeout C 0.1]
+[charaEffectStop C bit_talk_36]
+
+[scene 10001]
+[wt 0.1]
+
+[fadein white 0.1]
+[wait fade]
+
+＠メイヴ
+来なさい！[r]『[#愛しき私の鉄戦車:チャリオット・マイ・ラブ]』！
+[k]
+
+[se adm32]
+
+＠クー・フーリン・オルタ
+舐[messageShake 0.05 5 5 0.5]めンじゃねぇ、メイヴ！
+[k]
+
+[se ad34]
+
+[seStop adm32 0.1]
+[se ad211]
+
+[wt 0.5]
+
+[messageOff]
+[fadeout white 0.1]
+[wait fade]
+
+[seStop ad211 0.5]
+[wt 0.5]
+[scene 27800]
+
+[fadein white 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠メイヴ
+真っ向から受け止めた……！
+[k]
+
+[charaScale A 1.0]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠クー・フーリン・オルタ
+返礼だ、カルナ。[r][#くれてやる]……！
+[k]
+
+
+[charaFadeout A 0.1]
+[se ad85]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠カルナ
+……ッ！
+[k]
+
+[messageOff]
+[charaFace D 4]
+
+[se ad34]
+
+[se ad211]
+[charaEffect D bit_talk_14]
+[wt 0.5]
+[seStop ad211 1.5]
+[charaShake D 0.04 4 4 0.7]
+
+[wt 1.5]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠メイヴ
+カルナ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[charaEffect D bit_talk_06]
+
+＠カルナ
+……どうやら、ここまでか……。
+[k]
+
+[messageOff]
+[se ad52]
+[charaSpecialEffect D flashErasure 1 1.7]
+[wait charaSpecialEffect D]
+[charaEffectStop D bit_talk_06]
+[wt 0.7]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠クー・フーリン・オルタ
+隙を見せたな、メイヴ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠メイヴ
+！[r]しまっ[line 3]
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+[wt 0.3]
+
+[charaEffect A bit_talk_36]
+[se ad39]
+[wt 1.5]
+
+＠クー・フーリン・オルタ
+『[#抉り穿つ鏖殺の槍:ゲイ・ボルク]』[line 3]！
+[k]
+
+
+[messageOff]
+[charaEffectStop A bit_talk_36]
+[wipeout rectangleStripRightToLeft 0.2 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[scene 10000]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.1 1]
+[wait wipe]
+
+
+[se ad80]
+[charaEffect C bit_bolg_01]
+[wt 0.5]
+
+[wipeout rectangleStripRightToLeft 0 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[scene 27800]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.2 1]
+[wait wipe]
+
+[charaEffect C bit_talk_14]
+[charaShake C 0.03 3 3 0.7]
+
+[wt 0.7]
+
+[charaEffect C bit_talk_35]
+[se ad466]
+[wt 1.5]
+
+＠メイヴ
+カ、ハッ……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠クー・フーリン・オルタ
+終わりだ、諸共に死ね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+[charaEffect C bit_talk_06]
+
+＠メイヴ
+ふ、ふふ……いったぁい……。[r]いいの、もらっちゃった……
+[k]
+
+[charaFace C 9]
+
+＠メイヴ
+今回は私の負けね。でも……残る三騎、[r]そんな体で本当に勝てるのかしら？
+[k]
+
+[charaFadeout C 0.1]
+[charaPut C 0,-1200]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠クー・フーリン・オルタ
+うるせえ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut C 1]
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+＠メイヴ
+ふふ……。[r]先に……待ってるわ……。
+[k]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+[messageOff]
+[se ad52]
+[charaSpecialEffect C flashErasure 1 1.7]
+[wait charaSpecialEffect C]
+[charaEffectStop C bit_talk_06]
+[wt 0.7]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.3]
+
+[charaShake A 0.05 5 4 0.3]
+[charaFace A 4]
+[fowardEffect bit_talk_35]
+[se ad46]
+[wt 1.0]
+
+[charaMove A 0,-10 0.3]
+[wt 0.2]
+[se ad54]
+[seVolume ad54 0 0.4]
+[wt 0.3]
+
+？1：クー・フーリン！
+？2：オルタ！
+？！
+
+[bgm BGM_EVENT_70 0.1]
+
+＠クー・フーリン・オルタ
+……次だ……次に行くぞ……。
+[k]
+
+？1：少し休もう
+？！
+
+＠クー・フーリン・オルタ
+[FFFFFF]？[-]
+[k]
+
+＠クー・フーリン・オルタ
+……ああ、そうだったな。[r]テメェはここで留守番していろ。
+[k]
+
+＠クー・フーリン・オルタ
+オレは……残る三騎と、[r]決着をつけに行く。
+[k]
+
+？1：[&自分:わたし]がそんなに信用できない？
+？！
+
+[charaFace A 0]
+＠クー・フーリン・オルタ
+……いいや、信用できなかったら[r]とうの昔に殺してる。
+[k]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+＠クー・フーリン・オルタ
+……。[r]……。
+[k]
+
+
+[bgm BGM_EVENT_11 0.1]
+
+＠クー・フーリン・オルタ
+……カルナはオレの在り方が、[r]おまえにとっての重荷だと言ったが……。
+[k]
+
+＠クー・フーリン・オルタ
+多分、それは正解かもしれん。
+[k]
+
+＠クー・フーリン・オルタ
+オレはどうあれ、何であれ……。[r][#一人で決着を付けるのが流儀だ]。
+[k]
+
+
+＠クー・フーリン・オルタ
+仲間、同志、戦友……。
+[k]
+
+
+＠クー・フーリン・オルタ
+本来なら、荷を肩代わりするはずの[r]それが、オレにとっては心底の重荷だ。
+[k]
+
+[charaFace A 4]
+
+＠クー・フーリン・オルタ
+マスター、おまえもそうだ。
+[k]
+
+
+＠クー・フーリン・オルタ
+アンタにとって、オレのことが重荷なように、[r][#オレにとっても]、[#おまえが重荷なんだろう]。
+[k]
+
+[charaFace A 0]
+
+＠クー・フーリン・オルタ
+だから洞窟で待っていろ。[r]オレは決着を付けに行く。
+[k]
+
+[messageOff]
+[charaMove A 0,0 0.3]
+[se ad78]
+[seVolume ad78 0 0.2]
+[seStop ad78 0.4]
+[wt 0.8]
+
+[bgmStop BGM_EVENT_11 0.7]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout A 0.1]
+
+[scene 20800]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+？1：と言われて置き去りにされたけど
+？2：何か、納得がいかない……
+？！
+
+＠？？？
+おや、何だ。[r]おまえがカルデアのマスターとやらか。
+[k]
+
+[messageOff]
+
+[se ad27]
+[wt 0.7]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+
+[wt 1.5]
+
+？1：アンデルセン……！？
+？！
+
+
+＠アンデルセン
+そうだ。
+[k]
+
+[charaFace B 1]
+
+＠アンデルセン
+今回の聖杯戦争で唯一、自主的に脱落した[bgm BGM_EVENT_2 0.1][r]三流サーヴァント、アンデルセンだ。
+[k]
+
+[charaFace B 0]
+
+＠アンデルセン
+俺を知っているなら、余計な紹介は不要だな。[r]で、こんなところでどうした。
+[k]
+
+
+＠アンデルセン
+おまえのサーヴァントは、[r]聖杯戦争に参加していないのか？
+[k]
+
+？1：聖杯戦争といっても……
+？！
+
+＠アンデルセン
+確かに、定番のバトルロイヤルとは[r]形が異なるな。
+[k]
+
+＠アンデルセン
+俺たち七騎はあくまで聖杯の守り手。[r]攻め手は単騎で駆け抜けなければならん。
+[k]
+
+＠アンデルセン
+まあ、俺なんぞ居ても居なくても[r]戦局にさして変化はない。故にここで傍観だ。
+[k]
+
+＠アンデルセン
+そもそも、いくら倒しても残り一騎で終わるだろうさ。[r]ギリシャ神話最高の英雄、ヘラクレスが相手ではな。
+[k]
+
+？1：ヘラクレス……！
+？！
+
+[charaFace B 1]
+
+＠アンデルセン
+そう。並のサーヴァントが発情したゴリラなら、[r]あれは飢えた恐竜だ。戦うだけ馬鹿らしい。
+[k]
+
+[charaFace B 0]
+
+＠アンデルセン
+で。なぜおまえは此処に居る？[r]カルデアのマスター。
+[k]
+
+？1：実は……
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+[bgmStop BGM_EVENT_2 1.0]
+
+[wt 2.0]
+
+[fadein black 1.0]
+[wait fade]
+
+＠アンデルセン
+ふむ。単身でいい、か。
+[k]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠アンデルセン
+クー・フーリン・オルタらしい言葉と[r]言えるだろうな。
+[k]
+
+＠アンデルセン
+元々の奴はケルトの戦士らしい、[r]敵も味方も気分次第で友人という男だが[line 3]
+[k]
+
+
+＠アンデルセン
+それを全て排除したのが、[r]クー・フーリン・オルタというわけか。
+[k]
+
+[charaFace B 4]
+
+＠アンデルセン
+他者が脆弱なのは当然の理であり、[r]自分一人が強靱であれば、それでいい。
+[k]
+
+＠アンデルセン
+守るべき者を遠ざけ、[r]傷つくことを良しとする。
+[k]
+
+[charaFace B 2]
+
+＠アンデルセン
+お笑い草というやつだ！
+[k]
+
+＠アンデルセン
+それこそが守られる側にとっての、[r]傷心に繋がるというのにな！
+[k]
+
+[bgmStop BGM_EVENT_11 1.5]
+[charaFace B 0]
+
+
+＠アンデルセン
+というところで、おまえも傷ついて[r][#蹲:うずくま]っているのだろう。
+[k]
+
+？1：なるほど
+
+＠アンデルセン
+おい、わかったならさっさと行け。
+[k]
+
+？2：この感情はそういうことか……
+
+＠アンデルセン
+納得がいったか？[r]いったなら、するべきことは一つだろう。
+[k]
+
+？！
+
+
+[bgm BGM_EVENT_63 0.1]
+
+＠アンデルセン
+おまえはとっとと奴の元に行け。[r]場所はこの森を抜けて、左に真っ直ぐだ。
+[k]
+
+＠アンデルセン
+洞窟がある。[r]そこが決戦場だ。
+[k]
+
+？1：ありがとう
+？！
+
+
+[charaFace B 1]
+＠アンデルセン
+言葉だけの礼は不要だ。[r]本のお代を払える様子でもなさそうだしな。
+[k]
+
+＠アンデルセン
+さっさと行け。[r]そして、[#マスターとしての責務を果たせ]。
+[k]
+
+＠アンデルセン
+残りのサーヴァント二騎を倒せば、[r]この特異点もすぐに消滅するだろうよ。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+
+[bgmStop BGM_EVENT_63 1.0]
+[charaFadeout B 0.1]
+
+[scene 20210]
+
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_41]
+
+[se ad59]
+[wt 1.0]
+
+[bgm BGM_EVENT_24 0.1]
+
+[se adm24]
+
+[wt 1.0]
+
+[seStop ad59 1.5]
+[effectStop bit_talk_41]
+
+？1：音がする……！
+？！
+
+[voice 700100_0_B100]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠クー・フーリン・オルタ
+[#殺:シャ][line 12]ッ！！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+
+[se ad33]
+[effect bit_talk_kengekiall03]
+[wt 1.0]
+
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.03 3 3 0.4]
+[wt 0.6]
+
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠ヘラクレス
+[voice 700100_0_B100]
+[shake 0.05 3 4 1.2]
+[image berserker_language_2][wt 0.7]
+[k]
+
+[charaFadeout F 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠クー・フーリン・オルタ
+フーッ、フーッ、フーッ……！
+[k]
+
+[charaFace A 0]
+
+＠クー・フーリン・オルタ
+……。[r]……。
+[k]
+
+[charaFace A 5]
+
+＠クー・フーリン・オルタ
+マスターか、[#手前:テメェ]……なぜ、ここに居る。
+[k]
+
+？1：戦いに来た
+？2：こちらの都合
+？！
+
+[charaFace A 0]
+
+＠クー・フーリン・オルタ
+……チッ。[r]勝手にしろ。
+[k]
+
+？1：お互いにね
+？！
+
+[charaFadeout A 0.1]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.4 1]
+[wt 0.4]
+＠アルトリア・オルタ
+[line 3]マスターの登場か。
+[k]
+
+[charaFace E 0]
+
+
+＠アルトリア・オルタ
+だが、遅きに失したな。[r]刃は私に届かず。
+[k]
+
+＠アルトリア・オルタ
+こちらのバーサーカーの勝ちとなる。
+[k]
+
+[charaFadeout E 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠ヘラクレス
+[voice 700100_0_B100]
+[shake 0.05 3 4 1.2]
+[image berserker_language_2][wt 0.7]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠クー・フーリン・オルタ
+……ッ！
+[k]
+
+
+[messageOff]
+[se ad32]
+[charaEffect A bit_talk_13]
+[charaShake A 0.04 4 4 0.7]
+[wt 0.5]
+
+[charaFace A 2]
+＠クー・フーリン・オルタ
+まだだ。[r]まだ……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[cameraFilter gray]
+[bgm BGM_EVENT_24 0.4 0.3]
+
+＠
+崩壊する肉体。[r]崩壊する精神。
+[k]
+
+＠
+ギリシャ神話最強の英雄。[r]十二の試練を踏破して不死を得た化物。
+[k]
+
+＠
+既に幾度も殺しているはずなのに、[r]その度に蘇り、こちらを破壊する。
+[k]
+
+
+＠
+骨が[#軋:きし]む。[r]肉が千切れる。
+[k]
+
+＠
+だが、それがどうした。
+[k]
+
+＠
+オレは勝利するために、[r]勝ち続けるために、ここに居る。
+[k]
+
+＠
+……そこにマスターは不要だ。[r]不要なはずなのだが。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[cameraFilter normal]
+[bgm BGM_EVENT_24 0.3]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠クー・フーリン・オルタ
+チッ……！
+[k]
+
+[messageOff]
+
+？1：回復！
+
+[effect bit_talk_cure]
+[wt 0.2]
+[cueSe Battle bas2]
+[wt 1.0]
+
+？2：強化！
+
+[effect bit_talk_attack_buf]
+[wt 0.2]
+[se bas10]
+[wt 1.0]
+
+？！
+
+[charaFace A 0]
+＠クー・フーリン・オルタ
+有り難いが、すっこんでろ。[r]……そこに居ればいい。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[cameraFilter gray]
+[bgm BGM_EVENT_24 0.4 0.3]
+
+＠
+[line 3]ああ、何とも忌々しいことに。
+[k]
+
+＠
+オレの力は、オレの槍は、[r]コイツがここに居るだけで、力を増すらしい……！
+[k]
+
+[cameraFilter normal]
+[bgm BGM_EVENT_24 0.3]
+
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠アルトリア・オルタ
+[line 3]ほう。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+
+[se ad32]
+[effect bit_bolg_03]
+[shake 0.04 4 4 0.7]
+[wt 0.7]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+
+＠アルトリア・オルタ
+ヘラクレスも打倒せぬまま、[r]私に槍を届かせたか。
+[k]
+
+＠アルトリア・オルタ
+……いいだろう。[r]ならば、私も剣を抜く。
+[k]
+
+[charaFace E 2]
+
+＠アルトリア・オルタ
+[line 3]行くぞ、アルスターの戦士。[r]その身に聖剣を刻むがいい。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠クー・フーリン・オルタ
+嫌なこった。
+[k]
+
+＠クー・フーリン・オルタ
+マスター、ボケッとするなよ。[r][#勝つぞ]。
+[k]
+
+？1：[&ああ:うん]……！
+？！
+
+[charaFace A 2]
+
+＠クー・フーリン・オルタ
+[#全呪解放:ぜんしゅかいほう]、加減は無しだ。
+[k]
+
+[messageOff]
+
+
+[se ad632]
+[charaEffect A bit_talk_charge_red]
+[wt 1.5]
+
+
+＠クー・フーリン・オルタ
+[line 3]殺しに行くぞ。[r]『[#噛み砕く死牙の獣:クリード・コインヘン]』……！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[seStop ad632]
+[bgmStop BGM_EVENT_24 0.5]
+[wait fade]
+
+[charaEffectStop A bit_talk_charge_red]
+
+[soundStopAll]
+[end]

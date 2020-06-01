@@ -1,0 +1,1181 @@
+
+＄94-03-35-50-0-0
+
+[soundStopAll]
+
+[charaSet A 5044000 1 陳宮]
+[charaSet B 4017001 1 マリー・アントワネット]
+[charaSet C 1010000 1 エリザベート(セイバー)]
+[charaSet D 7004001 1 フランケンシュタイン]
+[charaSet E 3025001 1 清姫(ランサー)]
+[charaSet F 98102400 1 イリヤ]
+[charaSet G 25001000 1 アビゲイル・ウィリアムズ]
+[charaSet H 1098164300 1 キングプロテア]
+[imageSet I cut152_chocolate 1]
+[charaScale I 1.1]
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66700]
+[branch lblConf]
+[label lblNotClear]
+[scene 60300]
+[label lblConf]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad405]
+[seVolume ad405 0 0]
+[se ad518]
+[seVolume ad518 0 0]
+[se ad5]
+[seVolume ad5 0 0]
+[seVolume ad405 1.0 0.5]
+[seVolume ad518 1.0 0.5]
+[seVolume ad5 1.0 0.7]
+[wt 2.0]
+
+[seStop ad405 1.0]
+[seStop ad518 1.0]
+[seStop ad5 1.0]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠陳宮
+[tVoice ValVoice_1000900 0_V010]
+これはこれは、マシュ殿抜きとは珍しい。[bgm BGM_EVENT_2 0.1][r]お食事ですかなマスター？　ほう、間食ですか。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠陳宮
+[tVoice ValVoice_1000900 0_V020]
+頭脳労働の合間に甘いものを欲しがる気持ちは[r]分かります。実のところ、私もその[#類:たぐい]でして。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠陳宮
+[tVoice ValVoice_1000900 0_V030]
+ですが、本日の食堂は避けた方がよろしいかと。[r]あちらをごらんなさい。[wait tVoice]
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 1.0 1.0]
+[bgm BGM_EVENT_2 1.0 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+[se ad405]
+[seVolume ad405 0 0]
+[se ad5]
+[seVolume ad5 0 0]
+
+[wipein rectangleStripRightToLeft 1.0 1.0]
+[seVolume ad405 1.0 0.4]
+[seVolume ad5 1.0 0.4]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk off]
+[charaDepth B 1]
+[charaDepth C 2]
+[charaDepth D 3]
+[charaFace B 1]
+[charaFace C 1]
+[charaFace D 1]
+[charaFadein B 0.4 -360,0]
+[charaFadein C 0.4 0,0]
+[charaFadein D 0.4 360,0]
+[wt 2.0]
+
+[charaFadeout B 0.4]
+[charaFadeout C 0.4]
+[charaFadeout D 0.4]
+[wt 0.4]
+
+[charaDepth E 2]
+[charaDepth F 1]
+[charaDepth G 3]
+[charaFace E 1]
+[charaFace F 1]
+[charaFace G 1]
+[charaFadein E 0.4 -360,0]
+[charaFadein F 0.4 0,0]
+[charaFadein G 0.4 330,0]
+[wt 2.0]
+
+[wipeout rectangleStripRightToLeft 1.0 1.0]
+[seStop ad405 1.0]
+[seStop ad5 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 1.0 1.0]
+[bgm BGM_EVENT_2 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+？1：行列ができてる……？
+？2：あれはいったい……？
+
+？！
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠陳宮
+[tVoice ValVoice_1000900 0_V040]
+見ての通り、調理室の順番待ちですよ。[wait tVoice]
+[k]
+
+＠陳宮
+[tVoice ValVoice_1000900 0_V050]
+調理室をパーティションで区切って、[r]最大12人まで個別に使える仕様だとか。[wait tVoice]
+[k]
+
+＠陳宮
+[tVoice ValVoice_1000900 0_V060]
+手作りの贈り物はいわば切り札。[r]ライバルに秘しておきたいのは当然の心理です。[wait tVoice]
+[k]
+
+＠陳宮
+[tVoice ValVoice_1000900 0_V070]
+分かります。分かりますとも。[r]意表を突いてこその奇策、奇襲ですからな。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠陳宮
+[tVoice ValVoice_1000900 0_V080]
+しかし。言うまでもなく、当日まで秘しておきたい[r]本命はライバルではありません。[wait tVoice]
+[k]
+
+＠陳宮
+[tVoice ValVoice_1000900 0_V090]
+この場に貴方がいては皆さんの戦意を損なうというもの。[r]いや、むしろ燃え上がるかもですが。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠陳宮
+[tVoice ValVoice_1000900 0_V100]
+ここは空気を読んで自室に戻られるのがよろしい。[r][#軽いもの:ス　ナ　ッ　ク]であれば部屋でも間食はできますからな！[wait tVoice]
+[k]
+
+＠
+（ははは、と笑いながら、[se ade161][charaMoveReturn A 0,-4 0.4][wt 0.4][charaMoveReturn A 0,-4 0.4][r]　出来のいい桃のガレットに[#舌鼓:したつづみ]を打つ軍師）[wt 0.4][seStop ade161 0.2][wt 0.4][wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth A 2]
+[charaDepth H 1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.6 650,-50]
+[charaMove H 640,-50 0.6]
+[wt 1.5]
+[charaFadeout H 0.4]
+[charaMove H 650,-50 0.4]
+[wt 0.8]
+
+？1：（あれ……）
+？2：（今のは……）
+
+？！
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 1.0 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait wipe]
+
+[charaTalk depthOn]
+[charaFadeout A 0.1]
+
+[branchQuestNotClear lblNotClear2 3000303]
+[scene 66600]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10310]
+[label lblConf2]
+[wt 1.0]
+
+[wipein rectangleStripLeftToRight 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk H]
+[charaFace H 11]
+[charaFadein H 0.4 1]
+[wt 0.4]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V110]
+……あそこが女の子の戦場、お嫁さんへの道、[bgm BGM_EVENT_11 0.1][r]調理実習室……むむむ、実在していたんですね……[wait tVoice]
+[k]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V120]
+みなさん自信満々に並んでいます……[wait tVoice]
+[k]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V130]
+なんだか、今日だけは小さなみなさんが[r]大きく見えるプロテアです……[wait tVoice]
+[k]
+
+[charaFace H 3]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V140]
+ううん、怖じ気づいてる場合じゃなくて……[r]チョコを作るなら、わたしも頑張らないと。[wait tVoice]
+[k]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V150]
+あんなに調理法を学習したんだし、材料だって、[r]メルトリリスからのお給料でいっぱい揃えられたし……[wait tVoice]
+[k]
+
+[charaFace H 10]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V160]
+でも……やっぱり、すごく小さい……[r]あのドアの大きさじゃ、わたし入れない……[wait tVoice]
+[k]
+
+[charaFace H 4]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V170]
+……バカだなぁ……[r]もっと早くに気づくよね、こんなの……[wait tVoice]
+[k]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V180]
+……いいなあ……入りたいなあ……[r]……みんな、キラキラしてるなあ……[wait tVoice]
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_11 1.0]
+[wait wipe]
+
+[charaFadeout H 0.1]
+
+[branchQuestNotClear lblNotClear3 3000303]
+[scene 66700]
+[branch lblConf3]
+[label lblNotClear3]
+[scene 60300]
+[label lblConf3]
+[wt 1.0]
+
+[wipein rectangleStripRightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[bgm BGM_EVENT_2 0.1]
+
+？1：………………。
+
+？！
+
+[messageOff]
+[wt 0.5]
+[se ad59]
+[wipeout leftToRight 1.0 1.0]
+[bgm BGM_EVENT_2 1.0 0.5]
+[wt 0.5]
+[seStop ad59 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+[wipein rightToLeft 0.1 1.0]
+[wait wipe]
+
+[wipeFilter cinema 0.5 0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+[wt 1.5]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_2 1.0 1.0]
+[wait fade]
+
+＠陳宮
+[tVoice ValVoice_1000900 0_V190]
+おや、[#眦:まなじり]を決したかと思えば、[r]戦場に向かう勇士のように走り出された。[wait tVoice]
+[k]
+
+＠陳宮
+[tVoice ValVoice_1000900 0_V200]
+あちらには確か[line 3][wait tVoice]
+[k]
+
+[charaFace A 3]
+
+＠陳宮
+[tVoice ValVoice_1000900 0_V210]
+ああ、成る程。[r]確かに、彼女であれば解決できる問題ですな。[wait tVoice]
+[k]
+
+＠陳宮
+[tVoice ValVoice_1000900 0_V220]
+いやはや。いざとなれば策をご用意しようと[r]陣取っていましたが、要らぬ気遣いだったようで。[wait tVoice]
+[k]
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_2 1.5]
+[wait fade]
+
+[wipeOff]
+[charaFadeout A 0.1]
+
+[branchQuestNotClear lblNotClear4 3000303]
+[scene 66800]
+[branch lblConf4]
+[label lblNotClear4]
+[scene 10400]
+[label lblConf4]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad624]
+[seVolume ad624 0 0.0]
+[wt 0.1]
+[seVolume ad624 0 0.4]
+[shake 0.05 1 2 0.3]
+[wt 1.2]
+[seVolume ad624 0 0.6]
+[shake 0.05 1 3 0.3]
+[wt 1.1]
+[seVolume ad624 0 0.8]
+[shake 0.05 1 4 0.3]
+[wt 0.9]
+[seStop ad624]
+
+[se ad8]
+[wt 1.7]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.4 60,15]
+[charaMove H 1 0.4]
+[wt 0.3]
+[se ad624]
+[shake 0.05 1 4 0.3]
+[wt 0.7]
+[seStop ad624 0.2]
+[wt 0.2]
+
+[bgm BGM_EVENT_94 0.1]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V230]
+マスタ～～～！[r]見てください、マスタ～～～～！[wait tVoice]
+[k]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V240]
+チョコです、チョコができたのです！[r]なんと手作りですよ、手作り！[wait tVoice]
+[k]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V250]
+わはー！　これでわたしも堂々と[r]バレンタインの仲間入り、[twt 4.0][charaMove H 0,15 0.2][twt 0.1][se ad7]あいた！？[twt 0.1][se ad76][charaFace H 2][charaMove H 0,-15 0.4][shake 0.05 2 0 0.3][charaFadeout H 0.4][twt 0.3][se ad546][seVolume ad546 0 0.4][wait tVoice]
+[k]
+
+？1：うわっと、危ない……！
+
+[messageOff]
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.4 0,-30]
+[charaMove H 1 0.4]
+[charaShake H 0.05 2 2 0.4]
+[wt 0.4]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V260]
+はい……ごめんなさい……[r]危うく、上から押し潰しちゃうところでした……[wait tVoice]
+[k]
+
+[charaFace H 3]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V270]
+……でも、それはそれで嬉しいような……[r]……もっと触ってほしい、というか……[wait tVoice]
+[k]
+
+？2：頭、大丈夫？
+
+[messageOff]
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.4 0,-30]
+[charaMove H 1 0.4]
+[charaShake H 0.05 2 2 0.4]
+[wt 0.4]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V280]
+だ、だいじょうぶ、ですよ？[r]頭をぶつけるのは慣れているので……[wait tVoice]
+[k]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V290]
+心配してもらえるのも、とても嬉しいので……[wait tVoice]
+[k]
+
+？！
+
+[charaFace H 1]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V300]
+[line 3]と、そうではなく！[wait tVoice]
+[k]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V310]
+今日はもっと、も～っと素敵なコトが[r]あったので！[wait tVoice]
+[k]
+
+[charaFace H 7]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V320]
+はい、どうぞマスター！[r]バレンタインチョコをお渡ししますね！[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[wt 4.0]
+
+[charaFadeout H 0.4]
+
+[se ade11]
+[wt 0.4]
+[charaFace I 0]
+[charaFadein I 0.5 0,-210]
+[wt 2.0]
+[charaFadeout I 0.4]
+[wt 0.5]
+
+[input selectBranch]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.4]
+[bgmStop BGM_EVENT_11 0.4]
+[seStop ad518 0.4]
+[seStop ad405 0.4]
+[seStop ad5 0.4]
+[seStop ade161 0.4]
+[seStop ad59 0.4]
+[seStop ad624 0.4]
+
+[charaSet A 5044000 1 陳宮]
+[charaSet B 4017001 1 マリー・アントワネット]
+[charaSet C 1010000 1 エリザベート(セイバー)]
+[charaSet D 7004001 1 フランケンシュタイン]
+[charaSet E 3025001 1 清姫(ランサー)]
+[charaSet F 98102400 1 イリヤ]
+[charaSet G 25001000 1 アビゲイル・ウィリアムズ]
+[charaSet H 1098164300 1 キングプロテア]
+[imageSet I cut152_chocolate 1]
+[charaScale I 1.1]
+
+[branchQuestNotClear lblNotClear5 3000303]
+[scene 66800]
+[branch lblConf5]
+[label lblNotClear5]
+[scene 10400]
+[label lblConf5]
+[wt 0.4]
+
+[bgm BGM_EVENT_94 0.1]
+
+[maskin black 1.0]
+[wait mask]
+[label selectBranch]
+
+
+？1：ありがとう！
+
+[branch select01_01]
+
+？2：…………。
+
+[branch select01_02]
+
+？！
+
+[label select01_01]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 1]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V330]
+どういたしまして！[r]お口に合うと幸いです！[wait tVoice]
+[k]
+
+[charaFace H 6]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V340]
+……ふふ。他のみなさんに比べると、[r]大雑把で、不細工で、面白味のないものなのに。[wait tVoice]
+[k]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V350]
+マスターは笑顔で受け取ってくれました。[r]それだけで、わたしは良かったと思うのです。[wait tVoice]
+[k]
+
+[charaFace H 3]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V360]
+えーと……次はもっと工夫して、[r]人並みのチョコが作れるよう頑張るので……[wait tVoice]
+[k]
+
+[charaFace H 8]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V370]
+それまで、気長に待っていてくださいね！[wait tVoice]
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_94 2.0]
+
+[branch select01_end]
+
+[label select01_02]
+
+[rewardSwitch true]
+
+[bgmStop BGM_EVENT_94 1.5]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V380]
+マスター？[r]なにか、おかしなところがありましたか……？[wait tVoice]
+[k]
+
+？1：これは『チョコの欠片』だよね
+
+？！
+
+[charaFace H 10]
+[charaShake H 0.1 2 2 0.2]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V390]
+あ……それは、そうなのです、けど……[wait tVoice]
+[k]
+
+？1：ならプロテアが[#一生懸命:いっしょうけんめい]作ってくれた、
+？2：『本当のチョコ』が欲しいです
+
+？！
+
+[messageOff]
+[charaFace H 0]
+[wt 0.7]
+[charaFace H 7]
+[wt 1.0]
+[charaFace H 8]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V400]
+えへへ。隠してたコト、[bgm BGM_EVENT_2 0.1][r]見抜かれちゃいました。[wait tVoice]
+[k]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V410]
+でも、泣きたくなるほど嬉しいので[r]もう恥ずかしくありません！[wait tVoice]
+[k]
+
+[charaFace H 1]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V420]
+しっかり掴まっていてくださいね、マスター。[r]『本当のチョコ』の場所までご案内しますので！[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_2 1.5]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+[charaSet A 1098188400 1 キングプロテア（立ち上がり）]
+[imageSet B cut153_kpt_foot 1]
+[charaSet C 5005002 1 アンデルセン]
+[charaSet D 23001000 1 ＢＢ]
+[equipSet E 9807250 1 バレンタイン礼装]
+
+[scene 45810]
+[wt 1.0]
+
+[se ad624]
+[seVolume ad624 0 0.0]
+[wt 0.1]
+[seVolume ad624 0 0.8]
+[wt 3.0]
+[seStop ad624 0.2]
+[wt 0.2]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.3]
+[se ad624]
+[shake 0.05 1 4 0.3]
+[wt 0.7]
+[seStop ad624 0.2]
+[wt 0.2]
+
+＠A：キングプロテア
+[tVoice ValVoice_1000900 0_V430]
+はい、到着です♡[r]ゆっくり降ろしますけど、気をつけてください。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad619]
+[seVolume ad619 0 0.5]
+
+[wipeout downToUp 0.7 1.0]
+[bgm BGM_EVENT_94 0.7 0.5]
+[seVolume ad619 0.7 0.8]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 21100]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,0]
+[wt 0.1]
+
+[wipein upToDown 0.7 1.0]
+[bgm BGM_EVENT_94 0.7 1.0]
+[seStop ad619 0.7]
+[wait wipe]
+[wt 0.5]
+
+[shake 0.1 0 3 0.3]
+[se ad132]
+[wt 0.4]
+[seStop ad132]
+
+
+？1：ここは……
+？2：SE.RA.PHの再現？
+
+？！
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[bgm BGM_EVENT_94 0.4 0.5]
+[wait wipe]
+[charaFadeout B 0.1]
+[scene 45810]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+[wt 0.5]
+[wipein rectangleStripDownToUp 0.4 1.0]
+[bgm BGM_EVENT_94 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠A：キングプロテア
+[tVoice ValVoice_1000900 0_V440]
+はい！　ＢＢが用意してくれた、[r]わたし専用のキッチンなのです！[wait tVoice]
+[k]
+
+[charaFace A 11]
+
+＠A：キングプロテア
+[tVoice ValVoice_1000900 0_V450]
+お母様……ＢＢのコトだから、チョコ作りに[r]失敗するわたしをからかう気だったんだと思います。[wait tVoice]
+[k]
+
+[charaFace A 2]
+
+＠A：キングプロテア
+[tVoice ValVoice_1000900 0_V460]
+でも、そうはオモチャ屋さんが[#卸:おろ]さないのです！[r]どんなに大きくても料理はできます！[wait tVoice]
+[k]
+
+[charaFace A 9]
+
+＠A：キングプロテア
+[tVoice ValVoice_1000900 0_V470]
+なぜなら、特撮怪獣史は深淵なのですから！[r]過去、料理が上手な怪獣もいたのです！[wait tVoice]
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[bgm BGM_EVENT_94 0.4 0.5]
+[wait wipe]
+[charaFadeout A 0.1]
+[scene 21100]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,0]
+[wt 0.5]
+[wipein rectangleStripUpToDown 0.4 1.0]
+[bgm BGM_EVENT_94 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+？1：特撮怪獣史とは
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[bgm BGM_EVENT_94 0.4 0.5]
+[wait wipe]
+[charaFadeout B 0.1]
+[scene 45810]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+[wt 0.5]
+[wipein rectangleStripDownToUp 0.4 1.0]
+[bgm BGM_EVENT_94 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠A：キングプロテア
+[tVoice ValVoice_1000900 0_V480]
+あ……いえ、映像記録のお話というか……[r]実際にいたかどうかは定かではなくて……[wait tVoice]
+[k]
+
+[charaFace A 7]
+
+＠A：キングプロテア
+[tVoice ValVoice_1000900 0_V490]
+でもでも、怪獣が[#多種多様:たしゅたよう]なのは確かです！[wait tVoice]
+[k]
+
+＠A：キングプロテア
+[tVoice ValVoice_1000900 0_V500]
+たとえば、お菓子を武器に地球を征服する[r]怪獣もいたと思うのです、もちろん！[wait tVoice]
+[k]
+
+？2：ここなら立ち上がれるね！
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[bgm BGM_EVENT_94 0.4 0.5]
+[wait wipe]
+[charaFadeout B 0.1]
+[scene 45810]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.5]
+[wipein rectangleStripDownToUp 0.4 1.0]
+[bgm BGM_EVENT_94 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠A：キングプロテア
+[tVoice ValVoice_1000900 0_V510]
+はい。普段の窮屈さは苦じゃないですけど、[r]やっぱり背中を伸ばせるのは気持ちがいいです。[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth D 1]
+[charaDepth A 2]
+[charaFace D 0]
+[charaFadein D 0.4 -330,0]
+[charaFadeTime D 0.4 0.6]
+[charaMove D -310,0 0.4]
+[wt 0.4]
+
+[charaFace A 2]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V520]
+“巨人用のキッチンとか面倒なので作りませんが、[r][f small]  [f -]無人島なら用意してあげましょう[line 3]”[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout D 0.4]
+[charaMove D -290,0 0.4]
+[wt 0.4]
+
+[charaTalk on]
+[charaFace A 1]
+
+＠A：キングプロテア
+[tVoice ValVoice_1000900 0_V530]
+そう言ってＢＢはバレンタインの間だけ、[r]この島と海をわたしにくれたのです。[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 3]
+
+＠A：キングプロテア
+[tVoice ValVoice_1000900 0_V540]
+……と、いうワケで……[wait tVoice]
+[k]
+
+＠A：キングプロテア
+[tVoice ValVoice_1000900 0_V550]
+こっちが一晩かけて作った、[r]本当のチョコレートなので……[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠A：キングプロテア
+[tVoice ValVoice_1000900 0_V560]
+すー……はー……[r]（勇気を出して、覚悟を決めて……）[wait tVoice]
+[k]
+
+[charaFace A 2]
+
+＠A：キングプロテア
+[tVoice ValVoice_1000900 0_V570]
+キングプロテア、はじめての贈り物です！[r]受け取ってくださーい！[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[bgm BGM_EVENT_94 0.4 0.5]
+[wait wipe]
+[charaFadeout A 0.1]
+[scene 21100]
+[wt 0.5]
+[wipein rectangleStripUpToDown 0.4 1.0]
+[bgm BGM_EVENT_94 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+[effect bit_talk_impactlanding]
+[wt 0.1]
+[se ad608]
+[shake 0.04 4 4 1.0]
+[wt 2.2]
+[seStop ad608 0.5]
+[wt 0.5]
+
+[se bas2]
+[charaFace E 0]
+[charaFadein E 0.5 0,-70]
+[wt 2.0]
+[charaFadeout E 0.4]
+[wt 0.5]
+
+？1：すっごーーーーい！
+？2：でっかーーーーい！
+
+？！
+
+[messageOff]
+[charaTalk off]
+
+[charaDepth B 1]
+[charaDepth H 2]
+
+[charaFace B 0]
+[charaFadein B 0.1 0,0]
+
+[se ad619]
+[seVolume ad619 0 0.5]
+[seVolume ad619 0.7 0.8]
+[shake 0.04 2 4 1.5]
+
+[charaMove B 0,-100 1.2]
+[charaFadeout B 1.2]
+[wt 0.7]
+
+[charaFace H 1]
+[charaFadein H 0.8 1]
+[wt 0.4]
+[seStop ad619 0.8]
+[wt 0.8]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V580]
+はい！　マスターへの気持ちを、[r]思いっきりカタチにした結果なのです！[wait tVoice]
+[k]
+
+[charaFace H 6]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V590]
+はじめはみなさんみたいな可愛いチョコを[r]作ろうとしたのですが、[wait tVoice]
+[k]
+
+[charaFace H 10]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V600]
+どうしても上手くいかなくて……[r]お米に写経しているようなものだし…[wait tVoice]
+[k]
+
+[charaFace H 1]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V610]
+でも、そこになぜかアンデルセンさんがやってきて、[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth C 1]
+[charaDepth H 2]
+[charaFace C 0]
+[charaFadein C 0.4 -330,0]
+[charaFadeTime C 0.4 0.6]
+[charaMove C -310,0 0.4]
+[wt 0.4]
+[charaFace C 2]
+[charaFace H 2]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V620]
+“馬鹿が、持ち味をいかせ！　おまえの大きさは[r][f small]  [f -]マイナスではない、オリジナリティだ！”[wait tVoice]
+[k]
+
+[charaFace C 5]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V630]
+“なにより自分の気持ちを偽ってどうする。[r][f small]  [f -]その巨体でも隠しきれるものではあるまい”[wait tVoice]
+[k]
+
+[charaFace C 0]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V640]
+“いいか。バレンタインなんぞ何をしても[r][f small]  [f -]恥ずかしいもの。何しろ本音の見せ合いだ！”[wait tVoice]
+[k]
+
+[charaFace C 1]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V650]
+“本当に見てほしいものを作るがいい。[r][f small]  [f -]それが義理ではないのならな”[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout C 0.4]
+[charaMove C -290,0 0.4]
+[wt 0.4]
+
+[charaTalk on]
+[charaFace H 1]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V660]
+って。ふふ。あの人、どうしてわたしに[r]親切にしてくれるのか、不思議ですけど。[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_94 1.5]
+[charaFace H 3]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V670]
+それで……あの、どうですか？[r]とてもうまく出来ていると思うのですが……[wait tVoice]
+[k]
+
+？1：プロテアらしい（ニッコリ）
+？2：食べきるの、たいへんそうだね（ニッコリ）
+
+？！
+
+[bgm BGM_EVENT_45 0.1]
+[charaFace H 7]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V680]
+[line 3]！[wait tVoice]
+[k]
+
+[charaFace H 8]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V690]
+はい、わたしにしか作れない、[r]世界を覆うくらいのチョコレートです！[wait tVoice]
+[k]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V700]
+わたしだと思って、[r]好きなところから食べてください！[wait tVoice]
+[k]
+
+[charaFace H 3]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V710]
+食べきれなくても、最後はわたしが[r]海に溶かしちゃいますので……[wait tVoice]
+[k]
+
+＠キングプロテア
+[tVoice ValVoice_1000900 0_V720]
+その時は一緒に食べてあげますね、[r]わたしのマスター♡[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgm BGM_EVENT_45 1.5 0.5]
+[wait fade]
+
+[charaFadeout H 0.1]
+[cameraHome 0.1]
+
+[scene 10000]
+[wt 1.5]
+
+[fadein black 1.5]
+[bgm BGM_EVENT_45 1.5 1.0]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠ＢＢ
+[tVoice ValVoice_1000900 0_V730]
+ええー……プロテアを調理室に[r]入れてあげられないか、ですかぁ？[wait tVoice]
+[k]
+
+[charaFace D 9]
+
+＠ＢＢ
+[tVoice ValVoice_1000900 0_V740]
+いくら無敵のＢＢちゃんでも、[r]それは無理な注文というもの。[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_1000900 0_V750]
+カズラドロップならワンチャンあるかもですが、[r]プロテアをあれ以上小さくする事はできませんし、[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_1000900 0_V760]
+他のファイブたちの手前、[r]プロテアにだけ手を貸すのは……[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_1000900 0_V770]
+“そこをなんとか、[r][f small]  [f -]ＢＢスロットばりにとんちを効かせて”と。[wait tVoice]
+[k]
+
+[charaFace D 5]
+
+＠ＢＢ
+[tVoice ValVoice_1000900 0_V780]
+……はあ。せっかくのバレンタインに[r]こんな相談をされるコト自体がショックですけど、[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_1000900 0_V790]
+そこまで真剣にお願いされては仕方ありません。[r]ひとつ貸しですからね、センパイ。[wait tVoice]
+[k]
+
+[charaFace D 1]
+
+＠ＢＢ
+[tVoice ValVoice_1000900 0_V800]
+実のところ、解決なんて簡単でーす☆[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_1000900 0_V810]
+プロテアを縮められないのなら、[r]プロテアが自由に動ける空間を用意しましょう！[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_1000900 0_V820]
+その後はあの娘の努力と[#才能:スキル]次第。[r]うまくいくかどうかは神のみぞ知る[line 3][wait tVoice]
+[k]
+
+[charaFace D 0]
+
+＠ＢＢ
+[tVoice ValVoice_1000900 0_V830]
+まあ、わたしは人間の真似事をしようとして[r]失敗する方に賭けますけど。[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_1000900 0_V840]
+三つ子の魂百まで、ですから。[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_1000900 0_V850]
+持って生まれた[#宿業:しゅくごう]から、[r]はたして逃れるコトができるのか[line 3][wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_1000900 0_V860]
+その結果をじっくり、[r]ファイリングさせてもらうとしましょう。[wait tVoice]
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_45 2.0]
+
+[label select01_end]
+
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

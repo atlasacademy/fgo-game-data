@@ -1,0 +1,910 @@
+
+
+＄03-00-02-11-3-0
+
+
+[soundStopAll]
+
+
+[charaSet A 1098153610 1 ゲルダ]
+[charaSet D 8001410 1 マシュ]
+[charaSet E 98002000 1 フォウ]
+[charaSet F 3012001 1 ブリュンヒルデ]
+[charaSet G 2031001 1 ナポレオン]
+[charaSet H 98115000 1 エフェクト用]
+
+[scene 61604]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[se bac170]
+[wt 0.8]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠マシュ
+[line 3]第２３集落に到着です！　先輩！
+[k]
+
+？1：巨人は……！
+
+＠マシュ
+はい！　周辺の魔力は……！
+[k]
+
+？2：周囲にはいなかったけど、まさか中に！
+
+＠マシュ
+はい。既に、集落内に巨人がいる可能性もあります！
+[k]
+
+？！
+
+＠マシュ
+扉や周辺の柵が破壊された形跡はありませんが、[r]農耕地までは確認できていません！
+[k]
+
+＠マシュ
+無断で扉を乗り越えてしまいましたが……[r]今は、緊急事態ということで！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠フォウ
+フォウ、フォーウ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠ナポレオン
+長距離の全力スキーは疲れるが、今は言っていられん！[r]巨人種の魔力やらは近くに感じないが[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+
+＠ブリュンヒルデ
+急ぎましょう。まずは、集落の中心地へ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠ナポレオン
+おう！！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[wt 0.5]
+
+
+
+[wipein rectangleStripRightToLeft 0.4 1]
+[bgm BGM_EVENT_80 1.0 0.5]
+[wait wipe]
+
+[se adm13]
+[wt 2.0]
+[seStop adm13 1.0]
+
+[se ad60]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.4 1]
+[wt 0.4]
+[seStop ad60 0.1]
+＠ナポレオン
+……このあたりか！　集落中央！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠マシュ
+外に出ている人はいないようです。[r]身を守るため、屋内に立て籠もっているのか……
+[k]
+[charaFace D 12]
+
+＠マシュ
+既に襲撃を受けてしまった後なのか。[r]でも、それにしては……
+[k]
+
+
+
+？1：地面にも建物にも巨人が暴れた跡がない
+？2：普通に、灯りの点いた家もある？
+
+？！
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaFace D 6]
+
+＠マシュ
+は、はい。これは一体[line 3]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad93]
+[wt 1.0]
+
+＠ゲルダ
+だ、だれ？
+[k]
+
+＠ゲルダ
+話し声が聞こえた気がするけど……[r]こんな遅くに、外を歩いちゃいけないのよ。
+[k]
+
+＠ゲルダ
+集落の外に出たあたしが[r]言えたことじゃないかもだけど……
+[k]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠マシュ
+ゲルダさん！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+＠ゲルダ
+その声！
+[k]
+
+[messageOff]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠ゲルダ
+マシュさまと[&お兄さん:お姉さん]！[bgm BGM_EVENT_92 0.1][r]それに、あの時のおじさんも！
+[k]
+
+[charaFace A 1]
+
+＠ゲルダ
+わあ……[r]きょうは他の御使いもいっしょなの？
+[k]
+
+[charaFace A 5]
+
+＠ゲルダ
+ってことはそうだわ、そうよね！[r]御使いと喧嘩するのはやめたのね、よかったぁ。
+[k]
+
+＠ゲルダ
+ずっと心配してたの！[r]あんなに喧嘩してしまって大丈夫なのかしらって！
+[k]
+
+[charaFace A 8]
+
+＠ゲルダ
+あれ？　そういえば、大扉はどうしたの？[r]大人が何人も集まって引かないと開かないのに[line 3]
+[k]
+
+＠ゲルダ
+あっ、あんまり話してると迷惑になるから……[r]家に上がって？
+[k]
+
+[messageOff]
+[charaFace A 6]
+[wt 1.0]
+[charaFace A 1]
+
+＠ゲルダ
+すぐにスープを温め直すから召し上がってね？[r]寒い中、外を歩いてきたんでしょ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠マシュ
+え、あ、あの……
+[k]
+
+？1：あれ？
+？2：巨人が集落を襲ったにしては……
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠ナポレオン
+…………おやあ？
+[k]
+
+＠ナポレオン
+ちょっと待て。このおっとりした反応。[r]巨人が暴れ回ってる最中って感じじゃあないよなあ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+
+＠ブリュンヒルデ
+ふぅ。
+[k]
+
+＠ブリュンヒルデ
+被害がないのであれば、[r]ええ、ええ。それに越した事はありません。
+[k]
+
+
+[charaFace F 0]
+
+＠ブリュンヒルデ
+ですが気になりますね。[r]カルデアの方は『巨人が接近している』と確かに。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaDepth A 10]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFace A 0]
+[charaFadein D 0.1 2]
+[charaFadein A 0.1 0]
+
+＠マシュ
+……ゲルダさん。[r]少しだけ、質問をしてもいいですか？
+[k]
+
+＠ゲルダ
+なに？[r]あたし、知ってることは多くないけど[line 3]
+[k]
+
+＠マシュ
+今日、この集落に何か変わった事はありましたか？[r]日没前から、今にかけての間に。
+[k]
+
+[charaFace A 1]
+
+＠ゲルダ
+あ、ええ、うん！[r]それならあたしも知ってるわ！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ゲルダ
+あのね、おひさまが沈む前かしら。[r]知らない人が大扉の向こうまで来たのよ！
+[k]
+
+＠ゲルダ
+寒いだろうから中へ入ってはどうですか、[r]と大人は言ったのだけど……
+[k]
+
+[charaFace A 0]
+
+＠ゲルダ
+『寒くはない。暖は不要だ』って。[r]でも、お召し物はボロボロで、顔も見えなくて……
+[k]
+
+＠ゲルダ
+みんな心配して中にお招きしたの。[r]そうしたら、チッ、って音がして……
+[k]
+
+＠ゲルダ
+『私はカルデアの者だ。気にする必要はない』[r]と言って……それから、えっと……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 2]
+
+[charaFace A 0]
+[charaFadein A 0.1 0]
+
+[charaFace D 6]
+[wt 1.0]
+[charaFace A 1]
+
+＠ゲルダ
+村の[#皆:みんな]のことを祝福する言葉を述べて、[r]そのまま去ってしまったの。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠マシュ
+先輩……いまのお話は……
+[k]
+
+？1：（顔も見せずに結界だけ強化した？）
+？2：（前にも似たような事が……）
+
+？！
+
+＠マシュ
+はい。ロシアでも、『カルデアの者』を名乗る[r]第三者がいたようですが……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ゲルダ
+あ、あとね。[r]ラウラが、大きな足音を聞いたかもしれない、って！
+[k]
+
+[charaFace A 2]
+
+＠ゲルダ
+特別な日以外には聞いた事ないから、[r]巨人の足音かどうかはよくわからないけど……
+[k]
+
+[charaFace A 0]
+
+＠ゲルダ
+その知らない人が来るほんの少し前に、[r]聞こえたよ、って言ってたわ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ナポレオン
+……こりゃあ、あれだな！
+[k]
+
+[charaFace G 4]
+
+＠ナポレオン
+巨人種は確かに第２３集落に接近しちゃあいたが、[r]ソイツが追い払った、ってあたりかね。
+[k]
+
+＠ナポレオン
+つまりオレたちは……
+[k]
+
+＠ナポレオン
+急いで来て……[r]疲れただけ、か……
+[k]
+
+[charaFace G 10]
+
+＠ナポレオン
+……いや、被害がないのは良かったが……うむ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠フォウ
+フォウ、フォ、フォーウ！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_92 1.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+[wt 1.0]
+
+[scene 61701]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaSet D 98001000 1 マシュ]
+
+[se ad450]
+[wt 2.0]
+[seStop ad450 1.0]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+
+＠マシュ
+……ごちそうさま。[r]優しい味の、胸の奥まで温かくなるスープでした。
+[k]
+
+＠マシュ
+ありがとうございます。[r]ゲルダさん。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+？1：体の芯まで温まったよ
+？2：ありがとう、ゲルダちゃん
+
+？！
+
+＠ゲルダ
+ふふ。褒めてもらって嬉しいわ。[r]魚のスープ、第２３集落の伝統の味なんですって。
+[k]
+
+[charaFace A 1]
+
+＠ゲルダ
+それじゃあ、[r]あたしはお片付けしてくるわね。
+[k]
+
+＠ゲルダ
+マシュさまたちはゆっくりしていて？[r]フォウも。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠フォウ
+フォウ、フォーウ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠マシュ
+あ、ゲルダさん。[r]わたしもお手伝いしますね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ゲルダ
+いいわ、マシュさまも[&お兄さん:お姉さん]もゆっくりして？[r]お客さまはこういう時はくつろぐものなのよ。
+[k]
+
+＠ゲルダ
+昔話でそんな風に言ってたのを聞いたわ。[r]でも、まさかほんとに……
+[k]
+
+[charaFace A 5]
+
+＠ゲルダ
+お客さまを家に迎えることになるなんて、[r]ちっとも思わなかったけど！
+[k]
+
+＠ゲルダ
+ふふふ。[r]ほんとに、ゆっくりしててね。
+[k]
+
+[messageOff]
+[se ade172]
+[charaFadeout A 0.7]
+[charaMove A -30,0 0.8]
+[wt 0.8]
+[seStop ade172 0.5]
+[wt 1.0]
+
+？1：………………
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠マシュ
+……先輩。
+[k]
+
+？2：本当に、美味しかった
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+
+＠マシュ
+はい……[r]本当に……
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[se ad525]
+[wt 1.3]
+[seStop ad525]
+[wt 0.3]
+[se ad95]
+[wt 1.0]
+[seStop ad95 0.2]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ナポレオン
+おお、食事は終わったみたいだな。[r]丁度いいな。
+[k]
+
+＠ナポレオン
+……食糧危機って訳じゃないだろうが、[r]決して豊富とも言えまいさ。
+[k]
+
+＠ナポレオン
+それを、摂食を必要としないオレたちに[r]割いてもらうってのは、
+[k]
+
+＠ナポレオン
+流石に気が引けるからなあ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠マシュ
+ナポレオンさんとブリュンヒルデさんは、[r]既に食事を終えているから、と説明してあります。
+[k]
+
+＠マシュ
+それで[line 3]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[bgmStop BGM_EVENT_77 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+
+＠ブリュンヒルデ
+はい。
+[k]
+
+[charaFace F 0]
+
+＠ブリュンヒルデ
+此処の外壁と大扉にも、結界の上書きがありました。
+[k]
+
+＠ブリュンヒルデ
+第６７集落のそれと完全に同一のもので、[r]ルーンに依らざる強力な結界です。
+[k]
+
+[charaFace F 4]
+
+＠ブリュンヒルデ
+ただ、少しだけ異なる点もあって……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ナポレオン
+元の結界に小さな綻びがあったようだ。[r]前回、オレたちが御使いの群れと戦った影響だろう。
+[k]
+
+＠ナポレオン
+巨人種が接近したっていうのは、[r]まあ恐らく、そのせいだな……つまり……
+[k]
+
+[charaFace G 4]
+
+＠ナポレオン
+……オレの不始末を、誰かが拭ってくれたって事だ。
+[k]
+
+[messageOff]
+[charaFace G 8]
+[wt 1.0]
+[charaFace G 2]
+
+＠ナポレオン
+しかも、綻びは見事なまでに修復済みだ。[r]蟻の子一匹入れまいよ。まったく、いい仕事しやがる！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠ブリュンヒルデ
+蟻は、集落の外には棲息しませんが……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠ナポレオン
+はは。そういやそうだった。
+[k]
+
+[charaFace G 0]
+
+＠ナポレオン
+で、そっちはどうだ？[r]ボーダーとの通信ってのは繋がるか？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠マシュ
+いえ。何度か試してみたものの、[r]シャドウ・ボーダーとの回線は開きませんでした。
+[k]
+
+＠マシュ
+前回はかろうじて繋がったのですが、[r]これは……[#件:くだん]の新たな結界のためでしょうか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ナポレオン
+有り得るな。[r]そうかもしれん。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[bgmStop BGM_EVENT_70 0.5]
+[wt 0.1]
+[se ad625]
+[seVolume ad625 0 0.3]
+[wt 1.5]
+
+[charaTalk off]
+[charaFace D 6]
+[charaFace F 5]
+[charaFadein D 0.1 2]
+[charaFadein F 0.1 0]
+
+[wt 1.0]
+
+[charaFadeout F 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠ナポレオン
+[line 3]聞こえたな！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠マシュ
+……少しだけ外に出ます、ゲルダさん！[r]すぐに戻ります！
+[k]
+
+＠A：ゲルダ
+はーい！
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.7 1]
+[se ad59]
+[wait wipe]
+
+[scene 61604]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+[seStop ad59]
+
+[se ad166]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+[wt 0.1]
+[seStop ad166 0.2]
+＠ブリュンヒルデ
+[line 3]感じます。[r]巨人が数体、集落付近を徘徊しているようです。
+[k]
+
+[charaFace F 0]
+
+＠ブリュンヒルデ
+強化された結界に気付かないまま、[r]まだ穴が空いていると勘違いしているのか……
+[k]
+
+＠ブリュンヒルデ
+同じ場所を、ぐるぐると……[r]放っておけばいずれ諦めるかもしれませんが、
+[k]
+
+＠ブリュンヒルデ
+定かではありません。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠ナポレオン
+おや、謎の結界野郎が倒し損ねた個体ってあたりか？[r]丁度いい。後始末の後始末といくか！
+[k]
+
+？1：行こう！
+？2：集落の人も気になるだろうし
+
+？！
+
+＠ナポレオン
+おう！[r]んじゃ、住民の安眠に留意をしつつ戦闘といこう！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaDepth G 10]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFace G 2]
+[charaFadein F 0.1 2]
+[charaFadein G 0.1 0]
+
+＠ブリュンヒルデ
+…………了解しました。
+[k]
+
+[charaFace G 1]
+
+＠ナポレオン
+ウープス。冗談だぜ一応？
+[k]
+
+＠ブリュンヒルデ
+はい。[r]承知しています。
+[k]
+
+[charaFace G 3]
+
+＠ナポレオン
+惚れるねえ。
+[k]
+
+[charaFace F 3]
+
+＠ブリュンヒルデ
+困ります……
+[k]
+
+[charaFace G 5]
+
+＠ナポレオン
+はは！　つれないところも気に入った！[r]それじゃあ新生[#大陸軍:グランダルメ]、戦闘開始だ！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

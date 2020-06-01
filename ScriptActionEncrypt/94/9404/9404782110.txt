@@ -1,0 +1,107 @@
+
+
+
+＄94-04-78-21-1-0
+
+
+[soundStopAll]
+
+
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 25005000 1 ボイジャー]
+[charaSet C 4014001 1 牛若丸]
+[charaSet E 98115000 1 エフェクト用]
+
+[charaPut E 1200,1200]
+[charaEffect E bit_talk_41]
+[charaScale E 0.7]
+
+[scene 47001]
+
+[pictureFrame cut170_gameframe_dark]
+
+
+[fadein black 1.5]
+[wait fade]
+
+[pictureFrame]
+[pictureFrameTop cut170_gameframe_dark]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[effect bit_talk_dice110]
+[voice 2500500_0_X030]
+[wt 6.0]
+[wait voice 2500500_0_X030]
+
+
+[se ad399]
+[charaPut E 0,-70]
+[cameraMove 0.2 0,0 1.5]
+[wipeout circleOut 0.4 1.0]
+[wait wipe]
+
+[cameraHome 0.1]
+[charaPut E 1200,1200]
+[charaEffectStop E bit_talk_41]
+[charaScale E 1.0]
+[wt 1.0]
+
+[wipein circleIn 0.4 1.0]
+[seStop ad399 0.4]
+[wait wipe]
+
+[wt 0.4]
+
+[bgmStop BGM_EVENT_62 1.0]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+＠マシュ
+跳躍完了。およそ1000メートルをひとっ飛びです！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.4 0,-50]
+[wt 0.4]
+＠牛若丸
+甘いな！　[#八艘:はっそう]跳びの極意、見せてやろう！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠マシュ
+牛若丸さん、仕掛けてきます！
+[k]
+
+[messageOff]
+[maskout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[soundStopAll]
+[end]
+
+

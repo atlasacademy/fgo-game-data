@@ -1,0 +1,327 @@
+
+
+
+＄94-03-66-07-2-0
+
+[soundStopAll]
+
+[charaSet A 4032000 1 ライネス]
+[charaSet B 6039000 1 グレイ]
+[charaSet C 1098166200 1 トリムマウ]
+[charaSet D 1098165900 1 スチームゴースト]
+[charaSet E 98006200 1 エフェクト用]
+[charaSet F 98006200 1 エフェクト用2]
+
+[scene 73900]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ade74]
+[seVolume ade74 0 0.1]
+[se ad60]
+[seVolume ad60 0 0.1]
+[seVolume ade74 1.0 1.0]
+[seVolume ade74 1.0 1.0]
+[wt 1.3]
+[seStop ade74 0.5]
+[seStop ad60 0.5]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ライネス
+これで、おおよそ蒸気城の中は回ったか？[r]しかし、それらしいところは……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠グレイ
+[%1]さん！　そこの壁！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[messageOff]
+[wt 0.8]
+
+[se ad39]
+[charaEffect E bit_talk_radiallight02]
+[wt 2.3]
+[seStop ad39]
+[wt 0.5]
+[charaEffectStop E bit_talk_radiallight02]
+
+[shake 0.05 3 3 2.2]
+[se ad14]
+[wt 2.0]
+[seStop ad14 0.5]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ライネス
+壁が、開いた？[bgm BGM_EVENT_81 0.3]
+[k]
+
+＠ライネス
+どうやら、君が回収した紙片に反応して、[r]隠し扉が開く仕掛けだったらしいな。
+[k]
+
+[charaFace A 8]
+
+＠ライネス
+はてさて、鬼が出るか蛇が出るか。[r]ともあれ行ってみるとしようか。
+[k]
+
+[messageOff]
+
+[se ade74]
+[se ad60]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_81 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[seStop ade74 1.0]
+[seStop ad60 1.0]
+
+[scene 73901]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ライネス
+………地下は、こうなっていたのか。[bgm BGM_EVENT_70 0.1]
+[k]
+
+＠ライネス
+大量の歯車にクランク、意味不明な計器、[r]金属管にハンドル。なんともスチームパンク的だな。
+[k]
+
+＠ライネス
+どこから化け物が出てきてもおかしくないが、[r]今ならグレイもいるし、どうにかなるだろう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠グレイ
+頑張り、ます。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ライネス
+ああ、もちろん君も頼りにしてるぞ。[r]我が弟子、というかサーヴァントの影かな？
+[k]
+
+？1：分かってますけどね……
+？2：マスターも大事なんですよ！
+
+？！
+
+[charaChange A 1098164900 0 nomal 0]
+[wait charaChange A]
+
+＠ライネス
+くくく、君は拗ねた顔もいいな。[r]分かってると思うが、意地悪を言ってみたかったんだ。
+[k]
+
+[charaChange A 4032000 0 nomal 0]
+[wait charaChange A]
+
+＠ライネス
+疑似サーヴァントになろうが、どうなろうが、[r]私の場合、この性質は変わらないらしいな。
+[k]
+
+？1：愉悦……
+？2：昔からなんですか？
+
+？！
+
+[charaFace A 1]
+
+＠ライネス
+そうとも。まあ、これはこれで悪くないんだよ。[r]おかげで、時計塔の権力抗争も苦じゃなかった。
+[k]
+
+[charaFace A 0]
+
+＠ライネス
+ああ。こうして地下を歩くと、我が故郷にして[r]ろくでもない魔窟での日々を思い出すとも。
+[k]
+
+＠ライネス
+なにしろ時計塔での陰謀劇たるや、毎日飽きることなく[r]続くわけだからね。趣味じゃなきゃやってられない。
+[k]
+
+？1：魔術師の本拠地でしたっけ？
+？2：魔術師って陰謀好きなんですか？
+
+？！
+
+＠ライネス
+カルデアが天体科絡みの組織ということは、[r]時計塔から何らかの干渉を受けてるだろう。
+[k]
+
+＠ライネス
+君は抜けてそうだから、あまり考えないだろうが、[r]たまに組織の人間が相談しあってたりしないかな？
+[k]
+
+？1：そういえば……
+？2：人理修復の後に、いろいろ話してた
+
+？！
+
+[charaFace A 5]
+
+＠ライネス
+そういうことさ。たとえ根源を探求する魔術師だろうが、[r]むしろだからこそ、大きな権力を必要とする。
+[k]
+
+
+＠ライネス
+我々の目的のためには、[#途轍:とてつ]もない道のりを踏破せねば[r]ならない。そのためには金も権力も必要だからだ。
+[k]
+
+＠ライネス
+とはいえ、時計塔でもかなりの魔術師が[r]権力そのものに取り憑かれたりするんだがね。
+[k]
+
+[messageOff]
+
+[charaFace A 4]
+
+[wt 1.0]
+
+[bgmStop BGM_EVENT_70 1.5]
+
+[charaFace A 0]
+
+＠ライネス
+……面倒くさい話もこれまでだ。[r]トリムマウが、なにかを見つけたな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageOff]
+[se ad130]
+[charaTalk C]
+[charaFace C 0]
+[charaSpecialEffect C appearance 1 0.4]
+[wt 0.7]
+
+＠トリムマウ
+あちらです、[#ご主人様:マ ス タ ー]。
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripLeftToRight 0.3 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[wipein rectangleStripRightToLeft 0.3 1.0]
+[wait wipe]
+
+[wt 0.5]
+[se ad42]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 1.0]
+[bgm BGM_EVENT_80 0.1]
+[wt 1.5]
+
+[wipeout rectangleStripRightToLeft 0.3 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.3]
+
+[wipein rectangleStripLeftToRight 0.3 1.0]
+[wait wipe]
+[wt 0.4]
+
+＠グレイ
+ライネスさん！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ライネス
+なんだこれは……[r]人工的な死霊と気体を混ぜ合わせたようなものか？
+[k]
+
+＠ライネス
+グレイ、いけるか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠グレイ
+大丈夫、です。[r]拙も、これは怖くありません。
+[k]
+
+[charaFace B 9]
+
+＠アッド
+イッヒヒヒヒ！[r]気持ちよく機嫌よく食事の時間だな！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

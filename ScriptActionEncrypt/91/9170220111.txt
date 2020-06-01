@@ -1,0 +1,163 @@
+
+
+＄91-70-22-01-1-1
+
+[soundStopAll]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 32710]
+
+[charaSet A 8001002 1 マシュ]
+[charaSet B 98003003 1 Dr.ロマン]
+[charaSet C 7022001 1 茨木童子]
+[charaSet D 98006200 1 巴御前？]
+[charaSet E 98006000 1 通信用ノイズ]
+[charaSet F 98006000 1 シャドウサーヴァント用泥]
+[charaSet G 98006000 1 シャドウサーヴァント用消滅演出]
+
+[charaPut E 1200,1200]
+[charaEffect E bit_talk_10]
+
+[charaPut F 1200,1200]
+[charaEffect F bit_talk_11]
+
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaPut F 1]
+[charaPut G 1]
+[charaEffect G bit_talk_06b2]
+[wt 1.0]
+＠巴御前？
+イバラ、キ[line 3][r]ソウ[line 3]戻ッテ、キタノデスネ、イバラキ[line 3]
+[k]
+
+[charaPut F 1200,1200]
+[charaPut G 1200,1200]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠茨木童子
+……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaPut F 1]
+[charaPut G 1]
+＠巴御前？
+[line 3]ソレハ頼モシイ[line 3][r]アナタヲ、認メル事ガデキナカッタ[line 3]私ヲ[line 3]
+[k]
+
+＠巴御前？
+人ヲ　理解シヨウトスル　オニ　ナド、イル筈ガナイ、と[line 3][r]私、ヲ、美シイ、ト　言ッタ、ギルタブリル　ノ、心を[line 3]
+[k]
+
+＠巴御前？
+踏みにじった、鬼以下の、私を[line 3][r]どうか、笑ッテ、クダサイ[line 3]
+[k]
+
+[bgmStop BGM_EVENT_3 0.7]
+
+[messageOff]
+[charaMove F 0,-1200 1.7]
+[charaSpecialEffect D darkEnemyErasure 1 1.7]
+[se ad52]
+[wt 1.7]
+[charaEffectStop F bit_talk_11]
+[charaEffectStop G bit_talk_06b2]
+[wait charaSpecialEffect D]
+[wt 0.7]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaPut E 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0 0,-151]
+[wt 0.3]
+＠Dr.ロマン
+……脅威反応、完全に消滅だ。[r]お疲れ様。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠茨木童子
+なんだ、こいつ。[r]……[#吾:われ]と面識でもあったのか？
+[k]
+
+＠茨木童子
+……まあよい。[r]やはり、楽しくもなければ美味くもなかった。
+[k]
+
+＠茨木童子
+こんな些事で酒呑の手を[r]煩わせるような事がなかったのだけが幸いだ。
+[k]
+
+[charaFadeout C 0.2]
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠マシュ
+マスター、見てください。
+[k]
+
+[charaFace A 12]
+＠マシュ
+茨木童子さん……さっきの敵が倒れていたあたりを見つめて。[r]なんだか、寂しそうな目をしてらっしゃるように思います。
+[k]
+
+？1：さっきまで仲間の話をしてたからかな……
+？！
+
+[charaFace A 4]
+＠マシュ
+そうですね。口ではああ言っていましたが、やはり同族。[r]何か思うところがあるのかもしれません……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠茨木童子
+……[#汝:なれ]がただの残滓でなければな。
+[k]
+
+＠茨木童子
+正しく鬼の血を流すものとならば、大江の山に来よ。[r][#吾:われ]は鬼どもの首魁ぞ、無下にはせぬ。
+[k]
+
+＠茨木童子
+気が向けば人の胆のひとつ、いや、忌々しいが美しい、[r]異国の菓子のひとつでも馳走してやろう……。
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_11 2.0]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,1078 @@
+
+＄94-03-35-04-1-0
+
+[soundStopAll]
+
+[charaSet A 5005001 1 アンデルセン]
+[charaSet B 99502600 1 マシュ]
+[charaSet C 5042000 1 紫式部]
+[charaSet D 98002000 1 フォウ]
+[charaSet E 6031000 1 刑部姫]
+[sceneSet H 10000 1]
+[charaSet I 5009000 1 エフェクト用]
+[charaSet J 98115000 1 エフェクト用]
+
+[charaScale H 1.01]
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66600]
+[branch lblConf]
+[label lblNotClear]
+[scene 10310]
+[label lblConf]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[se ade12]
+[wt 2.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+＠アンデルセン
+……。[r]……。
+[k]
+
+
+[messageOff]
+[charaTalk J]
+[se ade12]
+[wt 2.0]
+
+[charaTalk A]
+[charaFace A 0]
+＠アンデルセン
+………出ないな。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[se ad13]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.3]
+＠マシュ
+刑部姫さんの魔力反応、感知できません。[r]お部屋にはいらっしゃらないみたいですね。
+[k]
+
+＠マシュ
+あ、呪本反応もないようです。[r]無理に扉を開けてしまう必要はありませんね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠紫式部
+そうですか……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠アンデルセン
+あの[#出不精:でぶしょう]が外出とはな。[r]……ふん。居場所の心当たりはある。
+[k]
+
+[charaFace A 0]
+＠アンデルセン
+乗りかかった船だ。[r]気分転換がてら案内してやろう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠紫式部
+お手数をお掛けしてしまい、[r]申し訳ありません……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠アンデルセン
+なに。読書の椅子に戻るついでだ。[r]恩に感じるなら次は[#稀覯本:きこうぼん]を貸し出すがいい。
+[k]
+
+[bgmStop BGM_EVENT_2 0.4]
+[se ade250]
+[charaTalk H]
+[charaFadeTime H 0.1 0.4]
+＠J：解説
+などと。[r]口では冷たいそぶりで言うものの[line 3]
+[k]
+
+[turnPageOff]
+＠J：解説
+どうにも彼女を見捨てられない、[r]面倒見のいいアンデルセン氏なのであった。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[turnPageOn]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaShake D 0.03 4 4 0.4]
+＠フォウ
+フォウ！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠アンデルセン
+ん。どうした。[r]俺の方を見てなぜ目を丸くしている？
+[k]
+
+？1：解説が……出てる……
+？2：さっきの解説は気のせいじゃなかった！？
+
+？！
+
+[charaFace A 4]
+＠アンデルセン
+解説？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠紫式部
+あ[messageShake 0.03 2 2 1.0]っ！　す、すすす、すみませんアンデルセン様！[wt 1.2][r]つい……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠マシュ
+い、今のは一体何なんでしょう！[r]何やら解説めいた文字列がスッと浮かんだような？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+＠紫式部
+……お恥ずかしいのですが、はい。
+[k]
+
+＠紫式部
+これぞ生前の私が[#安倍晴明:あべのせいめい]様から教わった中で[r]唯一自分のものとした術[line 3]
+[k]
+
+＠紫式部
+[#泰山解説祭:たいざんかいせつさい]、にございます。
+[k]
+
+？1：泰山
+？2：解説祭
+
+？！
+
+＠紫式部
+名前は適当に私が付けただけで、[r]本物の[#泰山府君祭:たいざんふくんさい]とはいっさい関係ありません。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠フォウ
+フォウ～。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠紫式部
+うっかり修得してしまいましたが、[r]これは、[#晴明:せいめい]様の悪戯心が具現化したが如き……
+[k]
+
+＠紫式部
+恐るべき技なのです……
+[k]
+
+[charaFace C 5]
+＠紫式部
+解説される本人には見えず！[r]周囲の人々にのみ見えるという、悪辣の極み！
+[k]
+
+＠紫式部
+解説ゆえに『嘘』を書くことはできませんが、[r]使いようによっては対象の心を酷く傷付けてしまう！
+[k]
+
+[charaFace C 2]
+＠紫式部
+『なんという羞恥、なんという卑劣！[r]　ンンンン拙僧はこの技の真髄を見抜きましたぞ』
+[k]
+
+[charaFace C 6]
+＠紫式部
+等と、とある怖い御坊に云われてしまった程の……。
+[k]
+
+？1：なるほどお坊さんに……
+？2：ンンンンその口調どこかで聞き覚えが
+
+？！
+
+[charaFace C 4]
+＠紫式部
+[#無闇矢鱈:む や み や た ら]と使うものではないと戒めていたのですが、[r]つ、つい、発動してしまいました。
+[k]
+
+＠紫式部
+気が緩むと発動してしまうのです……[r]まるで呪いのように……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠マシュ
+そ、それは本当に呪いなのでは[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠フォウ
+フォウ～。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠紫式部
+お許しくださいアンデルセン様！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠アンデルセン
+ふん。[r]今さら何を解説されたところで痛くもかゆくもない。
+[k]
+
+＠アンデルセン
+俺たちがこれまでどれだけの数の批評家や批評家もどき、[r]果ては素人になじられ[#嬲:なぶ]られ続けたと思う？
+[k]
+
+[charaFace A 5]
+＠アンデルセン
+それこそ星の数より多い！[r][#誹謗中傷:ひぼうちゅうしょう]などむしろ飯の種だ、バカめ！
+[k]
+
+[charaFace A 0]
+＠アンデルセン
+式部。[r]おまえも作家なら分かるだろう。
+[k]
+
+＠アンデルセン
+物書きにとってモノローグの当て込みの一つや二つ、[r]どうという事はないとな。
+[k]
+
+[messageOff]
+[charaFace A 1]
+[wt 1.0]
+
+＠A：アンデルセン（解説風）
+“[line 3]しかも、だ。この解説、[r][f small]  [f -]東方の天才作家・紫式部の手によるものなのだろう”
+[k]
+
+[turnPageOff]
+＠A：アンデルセン（解説風）
+“むしろ願ってもない光栄だ。[r][f small]  [f -]男、いや作家冥利に尽きるというものである”
+[k]
+
+＠A：アンデルセン（解説風）
+アンデルセンはひとり、“後でシェイクスピアに[r]自慢してやろう”と笑うのであった。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[turnPageOn]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠紫式部
+アンデルセン様……
+[k]
+
+？1：アンデルさん……
+？2：（この男……なんというツン……）
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠アンデルセン
+[FFFFFF]？？[-]　なんだ、[%1]まで。[r]気にするな、と言っている。
+[k]
+
+[se ade250]
+[bgm BGM_EVENT_7 0.4 0.5]
+[charaTalk H]
+[charaFadeTime H 0.1 0.4]
+＠J：解説
+述べた言葉には一片の曇りもない、[r]澄み渡る朝焼けのソラが如きアンデルセン氏であった。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.4 1.0]
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+＠紫式部
+ああっ、また……！[r]ごめんなさい！
+[k]
+
+＠紫式部
+あわわ……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFace C 3]
+[charaFadein A 0.1 0]
+[charaFadein C 0.1 2]
+＠アンデルセン
+……本当にアンコントローラブルなのか、それは。[r]どんな解説なのか、当人である俺には分からんが……
+[k]
+
+[charaFace A 0]
+＠アンデルセン
+作家による解説だ、そう間違った記述ではあるまい。[r]いちいち謝るな。
+[k]
+
+
+[messageOff]
+[charaTalk C]
+[charaFace C 6]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 2]
+＠アンデルセン
+さっさと行くぞ。[r]刑部姫を見つけて、呪本とやらも処理して解決だ！
+[k]
+
+[se ade250]
+[bgm BGM_EVENT_7 0.4 0.5]
+[charaTalk H]
+[charaFadeTime H 0.1 0.4]
+＠J：解説
+“おかしな事になった。[r][f small]  [f -]カルデアにおいて、冒険は簡単にやってくる”
+[k]
+
+[turnPageOff]
+＠J：解説
+などと痛快な気持ちになり、“呪本の処理まで面倒をみるか”、[r]と気持ちを新たにするアンデルセン氏であった。
+[k]
+
+
+？1：あっ、また……
+
+？！
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.4 1.0]
+[turnPageOn]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠フォウ
+フォーウ！
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_7 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+[scene 70300]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_25 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠マシュ
+ここは[line 3]
+[k]
+
+＠マシュ
+地下図書館の受付ですね。[r]つまり、戻ってきてしまった形になりますが……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠アンデルセン
+刑部姫は特に図書館通いが多かったからな、[r]個室にいないならここだろう。
+[k]
+
+＠アンデルセン
+見ろ。机の上にメモ書きが残っている。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠紫式部
+拝見いたします。[r]ふむふむ。ええと、達筆でいらっしゃいますね。
+[k]
+
+＠紫式部
+『司書さんいないみたいなんで、[r]　[#姫:わたし]が自分で本棚に戻しておきますねー』
+[k]
+
+[charaFace C 1]
+＠紫式部
+麗しくも優しい文字です。[r]書いた方のお人柄が滲み出ているかのようですね。
+[k]
+
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠アンデルセン
+ほう？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+あっ。
+[k]
+
+＠マシュ
+そういえば、お伝えしていませんでした！
+[k]
+
+[charaFace B 1]
+＠マシュ
+紫式部さんは、地下図書館の司書を務めながら、[r]習字教室や作文教室も開かれているんです。
+[k]
+
+[charaFace B 13]
+＠マシュ
+それに、お手紙の書き方教室なども……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠アンデルセン
+成る程な。[r]確かに、読み書きの得意な者ばかりではないか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠紫式部
+綺麗な文字を書きたい、[r]感じるがままに己が心の[#在処:ありか]を紡ぎたい[line 3]
+[k]
+
+＠紫式部
+そういった想いを抱いた方々の、[r]せめてもの力になれればと。
+[k]
+
+[charaFace C 1]
+＠紫式部
+ささやかなお手伝い、程度にございます。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠フォウ
+フォウ、フォウ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠アンデルセン
+さて、刑部姫を探すとするか。[r]何処かの本棚に本を戻しているんだろう？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+[wt 1.0]
+
+[charaFace C 0]
+＠紫式部
+お待ちください。[r]メモを残されたのは……お一人だけではありません！
+[k]
+
+＠紫式部
+ええと……
+[k]
+
+
+
+
+
+＠紫式部
+『では私も』『あたしも』『私も』[r]『私も』『拙者も』『私も』
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠アンデルセン
+…………[wt 0.7][charaFace A 2]ええい、面倒な！　図書館へ入ったのか全員！
+[k]
+
+？1：追い掛けよう！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠紫式部
+はいっ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠マシュ
+念のため、図書館前の隔壁は閉じておきます！
+[k]
+
+
+？2：出入口は封鎖しておいた方がいいかな
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠マシュ
+はい！[r]図書館前の隔壁を閉じるようにしておきますね。
+[k]
+
+＠マシュ
+それと、隔壁まで来た方は、[r]マスターが来るまで待つようにとメッセージも。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠アンデルセン
+それでいいだろう。行くぞ。
+[k]
+
+
+？！
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_25 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaPut J 1200,1200]
+
+[scene 70400]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.5]
+
+[bgm BGM_EVENT_25 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.4 1]
+[wt 0.4]
+＠刑部姫
+ふんふーん。
+[k]
+
+
+[messageOff]
+[charaMoveReturn E 0,10 0.4]
+[wt 0.5]
+[charaMoveReturn E 0,10 0.4]
+[wt 0.6]
+
+[charaFace E 1]
+＠刑部姫
+[#姫:わたし]は親切なので～♪[r]自分で元あった場所に本を戻してしまいます～♪
+[k]
+
+[charaFace E 4]
+＠刑部姫
+……普通の図書館だとルール違反だけど。
+[k]
+
+[charaFace E 6]
+＠刑部姫
+ここの図書館の蔵書、[r]貸し出しチェックとかはしてないみたいだし。
+[k]
+
+＠刑部姫
+後で司書さんに言っておけば大丈夫だよね～。[r]ふんふーん。
+[k]
+
+[messageOff]
+[charaMoveReturn E 0,10 0.4]
+[wt 0.5]
+[charaMoveReturn E 0,10 0.4]
+[wt 1.0]
+
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_EVENT_25 0.5 0.3]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠マシュ
+いました！[r]刑部姫さんです！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠アンデルセン
+よし、追い付いたか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠紫式部
+はっ……あの御方は！[r]いつも図書館に来て下さる眼鏡の女の子……！
+[k]
+
+？1：刑部姫、その本返すの待ったー！
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_25 0.5]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠刑部姫
+マスターちゃん！[r]そ、そそ、それに紫式部パイセン！　もとい先輩！
+[k]
+
+[messageOff]
+[charaFace E 8]
+[charaShake E 0.03 4 4 0.4]
+[wt 1.0]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠刑部姫
+あわ、あわわわわわわわ……！[r]どど、ど、どうしよう、どうしようこんなのってー！
+[k]
+
+＠刑部姫
+先輩と[#姫:わたし]は同じ文系和風女性サーヴァント同士！[r]言ってしまえばキャラだだ被り！
+[k]
+
+＠刑部姫
+だから、だから先輩と一緒にマーちゃんと会ったり[r]しないように気を付けてたのにぃ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠フォウ
+…………[wt 0.7]フォウ？
+[k]
+
+？1：え……
+？2：そんなに被ってる、かな？
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠マシュ
+どう……なんでしょう？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+＠刑部姫
+文系だし陰キャだしやっぱり被ってるよねえ！？[r]被ってるよねえマーちゃん！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠紫式部
+あ、あの、刑部姫様！[r]被っている被っていないはこの際置いておきまして、
+[k]
+
+＠紫式部
+その貸し出し本を確認させていただけませんか！[r]あと、知らない本が増えていたりしませんでしたか！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠刑部姫
+え、本を確認……？[r]それは別にいいですけど……。
+[k]
+
+[charaFace E 2]
+＠刑部姫
+はっ。[wt 0.4][charaFace E 8][messageShake 0.03 3 3 0.6]マ、マ、マーちゃんの前で！？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 0.4]
+[charaFadeout E 0.1]
+[wt 0.6]
+
+[se ad39]
+[charaPut I 1]
+[charaEffect I bit_talk_warp]
+[wt 3.5]
+[seStop ad39 0.4]
+[wt 0.4]
+[charaPut I 1200,1200]
+[wt 0.2]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+＠刑部姫
+きゃあっ！
+[k]
+
+＠刑部姫
+[#姫:わたし]の本が、勝手に浮かんで……！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠マシュ
+間違いありません、呪本反応があります！[r]かなり強い反応です！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠アンデルセン
+これはあれだな。書斎で見たパターンからすると[r]エネミー化して襲い掛かってくるとみたが。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠紫式部
+はい！　来ます！[r]撃破すれば元の本に戻りますので[line 3]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+[charaShake E 0.03 4 4 0.3]
+[wt 1.0]
+
+＠刑部姫
+い、い、い……
+[k]
+
+＠刑部姫
+いやだー。マーちゃんに本見せたくなぁーい！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[se ad57]
+[shake 0.05 0 4 0.3]
+[wt 1.3]
+[seStop ad57 0.1]
+
+[se ad17]
+[wt 2.0]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠マシュ
+呪本、東洋型の多頭大蛇に変形しました！[r]高い魔力反応です！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+＠刑部姫
+く[messageShake 0.03 3 3 0.8]、く、くるなぁー！[r]来ないでぇー！
+[k]
+
+？1：刑部姫、ごめん！
+？2：なるべくタイトル見ないようにするから！
+
+？！
+
+＠刑部姫
+[f large]いーやー！！
+[k]
+
+[messageOff]
+[se ad7]
+[charaMove E -150,0 0.4]
+[charaFadeout E 0.2]
+[wt 0.5]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+あ、あれ！？[r]刑部姫さん、呪本の大蛇の側に立っています……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠アンデルセン
+余程見せたくないようだな。[r]……ふむ。作家として、俺にも多少の情けはある。
+[k]
+
+[charaFace A 2]
+＠アンデルセン
+あの女の行為にダメ出しはせん。[r]大蛇を撃破しつつ刑部姫をやんわり無力化するぞ！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

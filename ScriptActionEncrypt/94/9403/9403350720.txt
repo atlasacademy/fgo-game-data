@@ -1,0 +1,374 @@
+
+＄94-03-35-07-2-0
+
+[soundStopAll]
+
+[charaSet A 5005001 1 アンデルセン]
+[charaSet B 5042000 1 紫式部]
+[charaSet C 98002000 1 フォウ]
+[charaSet D 6031000 1 刑部姫]
+[charaSet E 99502600 1 マシュ]
+[sceneSet F 70600 1]
+[sceneSet G 70601 1]
+[charaSet I 5009000 1 エフェクト用ダミー]
+[charaSet J 98115000 1 エフェクト用]
+
+[charaPut I 2400,2400]
+[charaEffect I bit_talk_voice01]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+
+[scene 70601]
+
+[charaDepth F 0]
+[charaDepth G 1]
+
+[charaPut F 0,-200]
+[charaFadein F 0.1]
+
+
+[cameraMove 0.1 0,0 1.01]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[se ade74]
+[wt 1.5]
+[seStop ade74 0.5]
+[wt 1.0]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+＠アンデルセン
+…………静か、だな。
+[k]
+
+＠アンデルセン
+通路ではあれだけ殺到した呪本の群れも姿を見せん。[r]戦力の小出しを中止するだけの頭はある、か。
+[k]
+
+＠アンデルセン
+書庫への入口は？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠紫式部
+こちらです。[r]普段は私の術で隠されておりますが[line 3]
+[k]
+
+[messageOff]
+[charaFace B 4]
+[wt 0.1]
+
+[fowardEffect bit_talk_pentagram_03]
+[wt 0.2]
+[se ad598]
+[wt 3.3]
+
+[se ade251]
+[fowardEffectStop bit_talk_pentagram_03]
+[wt 2.0]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaMoveScale F 1.3 1.0]
+[charaMove F 150,-280 1.0]
+
+[charaMoveScale G 1.3 0.1]
+
+[wt 1.2]
+
+[se ad547]
+[wt 1.0]
+[se ad619]
+[shake 0.05 3 3 3.4]
+[wt 0.4]
+[charaFadein G 3.0 150,-280]
+[wt 3.0]
+[seStop ad619 0.4]
+[wt 0.9]
+
+[charaFadeout F 1.0]
+[charaFadeout G 1.0]
+[wt 1.2]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠フォウ
+フ[messageShake 0.03 3 3 0.4]ォウ！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠刑部姫
+わ。本棚がずれて、奥へ続く通路ができた。[r]ダークヒーローの秘密基地とか魔術師の工房って感じ……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠紫式部
+目に付かないようにしているだけですので、[r]大層なものではないんです。本当に、ただの書庫で。
+[k]
+
+
+[charaFace B 7]
+＠紫式部
+……。[r]……。
+[k]
+
+[charaFace B 0]
+＠紫式部
+…………皆様、ここまでご尽力いただき、[r]本当にありがとうございます。
+[k]
+
+＠紫式部
+私の不始末もこれにて仕舞いでございます。[r]ここから先は[line 3]
+[k]
+
+？1：皆で行って、皆で終わらせよう
+？2：一人で行かせたりしないよ
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠アンデルセン
+だ、そうだ。なにしろ極まった暇人だからな。[r]ここまで来て帰るような[&男:娘]でもない。
+[k]
+
+＠アンデルセン
+遠慮せず最後まで頼るがいい。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠アンデルセン
+なんだその顔は。[r]まだ申し訳ない、などと思っているのか？
+[k]
+
+＠アンデルセン
+どうあれおまえはカルデアに現界した英霊だ。[r]放っておいてほしい、なんて言い分は通らんぞ。
+[k]
+
+＠アンデルセン
+だいたい、命を懸けた聖杯戦争という訳でもない。[r]サーヴァントがマスターを頼ってもいいだろうに。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠紫式部
+………………[wt 0.8][charaFace B 0]はい。
+[k]
+
+＠紫式部
+紫式部、ことここに至り心底観念いたしました。[r][#マスター]。
+[k]
+
+[charaFace B 5]
+＠紫式部
+貴方たちと共に参ります。[r]私の不始末、どうか最後の最後までお力をお貸し下さい。
+[k]
+
+？1：[line 3]行こう！
+
+？！
+
+[charaFace B 2]
+＠紫式部
+はいっ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠フォウ
+フォーーーウ！
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_5 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 70700]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.5]
+
+[cueSe Battle bac428]
+[charaPut I 1]
+[shake 0.05 4 4 2.0]
+[wt 2.0]
+[charaPut I 2400,2400]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠マシュ
+大型の魔力反応……！[r]いえ、最大規模の呪本反応がそこに存在しています！
+[k]
+
+＠マシュ
+注意してください、先輩！　皆さん！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠紫式部
+何処までも大きくなった一冊の和書[line 3][r]まるで、本の王。本の竜。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠刑部姫
+わー、大きい！　かなりの大きさ！[r]お、大きい方のメカエリチャンほどじゃないけどもー！
+[k]
+
+[charaFace D 8]
+＠刑部姫
+で[messageShake 0.03 2 2 0.6]も大きい、大きいよう！[r]人間大の存在が戦う相手じゃないんじゃないかなって！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠アンデルセン
+ヒトの想いを喰らう[#大呪本]！[r]前衛が一人もいない[#一行:パーティ]で仕留めきれるか！？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[cueSe Battle bac428]
+[charaPut I 1]
+[shake 0.05 3 10 1.5]
+[wt 1.5]
+[charaPut I 2400,2400]
+[charaEffectStop I bit_talk_voice01]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠紫式部
+間違いありません。[r]この気配、あれこそ『最初の呪本』です……！
+[k]
+
+？1：やることはひとつ！
+？2：いく[&ぞ:よ]、みんな！
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace A 5]
+[charaFace D 5]
+[charaFadein A 0.1 0]
+[charaFadein D 0.1 2]
+[wt 1.2]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaMoveReturn C 0,50 0.4]
+＠フォウ
+フォウフォウ！　キャーウ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠紫式部
+参ります！[r]最終呪本、これより回収[line 6]開始です！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,1712 @@
+
+
+
+
+＄94-03-35-01-1-0
+
+[soundStopAll]
+
+[charaSet A 5035000 1 アナスタシア]
+[charaSet B 3035001 1 秦良玉]
+[charaSet C 5002001 1 ジル・ド・レェ]
+[charaSet D 3011001 1 フィン]
+[charaSet E 1007001 1 ガウェイン]
+[charaSet F 98001000 1 マシュ]
+[charaSet G 98002000 1 フォウ]
+[charaSet H 5042000 1 紫式部]
+[charaSet I 1098162300 1 セミラミス]
+[charaSet J 98115000 1 エフェクト用]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66700]
+[branch lblConf]
+[label lblNotClear]
+[scene 60300]
+[label lblConf]
+
+
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.4]
+＠アナスタシア
+……。[r]……。
+[k]
+
+[se ade96]
+＠アナスタシア
+（本を読んでいる）
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[wt 0.4]
+＠秦良玉
+……。[r]……。
+[k]
+
+[se ade96]
+＠秦良玉
+（本を読んでいる）
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+＠ジル
+…………………………。
+[k]
+
+[se ade96]
+＠ジル
+（本を読んでいる）
+[k]
+
+？1：おや？
+？2：本を読んでいるサーヴァントが多い……
+
+？！
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgm BGM_EVENT_2 1.0 0.2]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[branchQuestNotClear lblNotClear2 3000303]
+[scene 66600]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10310]
+[label lblConf2]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[bgm BGM_EVENT_2 1.0 1.0]
+[wait wipe]
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+[se ade96]
+＠フィン
+（本を読んでいる）
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+[se ade96]
+＠ガウェイン
+（本を読んでいる）
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFace E 0]
+[charaFadein D 0.1 0]
+[charaFadein E 0.1 2]
+[charaMove D -180,0 1.2]
+[charaMove E 180,0 1.2]
+[wt 1.0]
+[se ad420]
+[seVolume ad420 0 0.1]
+[wt 0.1]
+[seVolume ad420 0.1 1.0]
+[charaFace D 5]
+[charaFace E 5]
+[charaShake D 0.02 3 3 0.3]
+[charaShake E 0.02 3 3 0.3]
+[charaMove D 0 0.4]
+[charaMove E 2 0.4]
+[wt 0.8]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 4]
+＠フィン
+おっと失礼。夢中で本を読み[#耽:ふけ]っていたため、[r]他人の接近に気が付かなかったよ！
+[k]
+
+[charaFace D 0]
+＠フィン
+ん？　私ほどの男がそんな[#粗忽:そこつ]なミスをするとは、[r]いったいどれほどの名著なのか気になると？
+[k]
+
+＠フィン
+ふ。いやなに。『黄金の騎士　フィン・マックール』[r]という、実に素朴な[#題:タイトル]の本でね。
+[k]
+
+[charaFace D 1]
+＠フィン
+いやはや、読書というのはこれでなかなか奥深い！
+[k]
+
+
+[charaTalk E]
+[charaFace E 0]
+＠ガウェイン
+こちらこそ。失礼を。
+[k]
+
+＠ガウェイン
+私も同じです。マックール卿。[r]剣に比すれば、知の蓄積に勤しむ時間は多くなかった。
+[k]
+
+[charaFace E 4]
+＠ガウェイン
+[#貪:むさぼ]るように書を読み[#耽:ふけ]る、などとは……。
+[k]
+
+＠ガウェイン
+紙の上に[#綴:つづ]られた文字の群れ、[r]ここまで人の心を捉えてみせる。
+[k]
+
+[charaFace E 0]
+＠ガウェイン
+いやはや。[r]文字通り、初心に戻って勉強中の身です。
+[k]
+
+
+[charaTalk D]
+[charaFace D 1]
+＠フィン
+わかる。とてもわかる。[r][#親指:フィネガス]しなくてもわかる。
+[k]
+
+[charaFace D 0]
+＠フィン
+騎士団などと言っているが、基本的には[r]武勇を誉れとするさもしい男所帯だからねぇ。
+[k]
+
+＠フィン
+読み物に夢中になっていては最愛の妻にも[r]心配される、というものだ。
+[k]
+
+[charaFace D 5]
+＠フィン
+『あなた、何かイヤな事でも？[r]　あるいは浮気でも隠しているの？』とね！
+[k]
+
+[charaFace D 0]
+＠フィン
+いやいや、無論、そんな事はないのだが。[r]そちらの騎士団でもそうだろう、ガウェイン君？
+[k]
+
+
+[charaTalk E]
+[charaFace E 1]
+＠ガウェイン
+はい。[r]私にかぎっては断言できます。
+[k]
+
+＠ガウェイン
+卿。よろしければそちらの本、[r]読み終わった後に私が借り受けても？
+[k]
+
+
+[charaTalk D]
+[charaFace D 1]
+＠フィン
+いいともいいとも是非読みなさい。
+[k]
+
+[charaFace D 0]
+＠フィン
+で、そちらの本は？　ほほう、[r]『サー・ガウェインと緑の騎士』と……
+[k]
+
+？1：フムフム
+？2：なるほど……
+
+？！
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_2 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+
+[branchQuestNotClear lblNotClear3 3000303]
+[scene 66400]
+[branch lblConf3]
+[label lblNotClear3]
+[scene 10204]
+[label lblConf3]
+[wt 1.0]
+
+[se ad8]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠マシュ
+[line 8]。
+[k]
+
+[se ade96]
+＠マシュ
+（本を読んでいる）
+[k]
+
+＠マシュ
+……。[r]……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠フォウ
+フォウ！
+[k]
+
+[messageOff]
+[se ad7]
+[effect bit_talk_42 0,0 H]
+[charaMove G 50,0 0.4]
+[charaFadeout G 0.4]
+[wt 0.1]
+[effectStop bit_talk_42]
+[wt 0.5]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFadein F 0.1 2]
+[wt 0.1]
+
+[se adm21]
+[charaFace G 0]
+[charaFadein G 0.1 -260,-300]
+[charaAttack G normal -20,85 0.4]
+[wt 0.4]
+[charaMove G 0,0 0.2]
+[wt 0.3]
+
+[charaTalk on]
+[charaFace F 14]
+[charaShake F 0.03 2 2 0.4]
+＠マシュ
+わわ。フォウさん？
+[k]
+
+[messageOff]
+[charaFace F 6]
+[wt 1.0]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+＠マシュ
+はっ、先輩！　い、いつのまに管制室に！
+[k]
+
+
+＠マシュ
+気が付かず、申し訳ありません……！
+[k]
+
+？1：いいよいいよ
+
+[charaFace F 12]
+＠マシュ
+初めて読む本ではないのですが……[r]なのに、つい夢中になってしまいました。
+[k]
+
+
+
+
+
+
+
+[branch select01]
+
+
+？2：マシュは何を読んでるの？
+
+[charaFace F 0]
+＠マシュ
+『イリアス』を読んでいました。[r]ホメロスの[#綴:つづ]った、古代ギリシャの叙事詩です。
+[k]
+
+[branch select02_end]
+
+？！
+
+
+[label select01]
+
+？1：何を読んでたの？
+
+？！
+
+[charaFace F 0]
+＠マシュ
+えと、『イリアス』です。[r]ホメロスの[#綴:つづ]った古代ギリシャの叙事詩ですね。
+[k]
+
+
+
+[label select02_end]
+
+
+＠マシュ
+アキレウスさんやヘクトールさんが戦ったという、[r]トロイア戦争について語られた本で[line 3]
+[k]
+
+？1：カルデアにもその本好きな英霊多いね
+
+[charaFace F 1]
+＠マシュ
+ですね！
+[k]
+
+＠マシュ
+この本には、古代ギリシャの神々の企みで[r]引き起こされた一種の代理戦争が描かれています。
+[k]
+
+＠マシュ
+多くの人が死んでしまう残酷な物語ですが……
+[k]
+
+＠マシュ
+同時に、数々の英雄や、[r]両国の人々が命を輝かせる物語でもあって……
+[k]
+
+[messageOff]
+[charaFace F 6]
+[wt 1.0]
+
+[charaFace F 3]
+＠マシュ
+すみません。[r]一度読み始めると、止まらなくなってしまって。
+[k]
+
+？2：確か、シュリーマンがトロイア遺跡を発掘したんだよね
+
+[charaFace F 1]
+＠マシュ
+はい！　そうなんです！
+[k]
+
+＠マシュ
+人類史では長らく架空の神話とされてきた物語ですが、[r]19世紀末の考古学者シュリーマンによる発掘事業で、
+[k]
+
+＠マシュ
+現代では、歴史的事実としての可能性が語られています。[r]歴史と神話の織り成す神秘ですね……
+[k]
+
+？！
+
+？1：……読書、流行ってるのかな
+
+？！
+
+[charaFace F 0]
+＠マシュ
+あ、それは。
+[k]
+
+[messageOff]
+[charaFace F 13]
+[wt 1.0]
+
+[charaFace F 1]
+＠マシュ
+はい。まさしく！
+[k]
+
+[charaFace F 13]
+＠マシュ
+最近、サーヴァントの皆さんもよく読んでいますよね。[r]今まではあまり見ない光景でした。
+[k]
+
+＠マシュ
+理由は簡単なんです。[r]実は[line 3]
+[k]
+
+[charaFace F 1]
+＠マシュ
+なんと！
+[k]
+
+＠マシュ
+[#図書館]ができたんです！
+[k]
+
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+
+[charaFadeout F 0.1]
+[scene 10000]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[input selectBranch]
+[messageOff]
+[skip false]
+
+
+[charaSet A 5035000 1 アナスタシア]
+[charaSet B 3035001 1 秦良玉]
+[charaSet C 5002001 1 ジル・ド・レェ]
+[charaSet D 3011001 1 フィン]
+[charaSet E 1007001 1 ガウェイン]
+[charaSet F 98001000 1 マシュ]
+[charaSet G 98002000 1 フォウ]
+[charaSet H 5042000 1 紫式部]
+[charaSet I 1098162300 1 セミラミス]
+[charaSet J 98115000 1 エフェクト用]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 0.4]
+
+[seStop ad5 0.4]
+[seStop ad7 0.4]
+[seStop ad8 0.4]
+[seStop ad420 0.4]
+[seStop ade96 0.4]
+[seStop adm21 0.4]
+
+[charaPut J 0,-2000]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[scene 10000]
+[wt 0.4]
+[soundStopAll]
+[maskin black 1]
+[wait mask]
+[label selectBranch]
+
+[skip false]
+
+[wt 1.0]
+
+
+[fowardEffect bit_queststart80233]
+[wait fowardEffect]
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 70400]
+[skip true]
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[se ade74]
+[wt 1.5]
+[seStop ade74 0.4]
+[wt 0.4]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 1]
+＠マシュ
+ここが地下図書館[line 3]
+[k]
+
+＠マシュ
+これまでにも存在していた図書室とは別に、[r]新たに[#発生]した大図書館なんだそうです。
+[k]
+
+＠マシュ
+広くて大きな図書館に見えますが、[r]実際は、魔術で空間が歪曲している状態で……
+[k]
+
+＠マシュ
+倉庫エリアの未使用部分が消えた程度なので、[r]システムや魔力炉への影響は特にないとのことです。
+[k]
+
+？1：初　耳
+
+？！
+
+[charaFace F 12]
+＠マシュ
+ど、どうしてなんでしょうね？
+[k]
+
+＠マシュ
+ダ・ヴィンチちゃんが連絡ミスだなんて……[wt 0.9][charaFace F 7][r]あ、メールの送信バグも有り得ますね！
+[k]
+
+？1：確かに
+
+＠マシュ
+後で、サーバーをチェックしておきます。[r]物理的な原因かもしれないですし。
+[k]
+
+？2：ダ・ヴィンチちゃんは忘れないだろうしね
+
+＠マシュ
+ですね。
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ade74]
+[wt 1.5]
+[seStop ade74 0.4]
+[wt 0.4]
+
+[bgmStop BGM_EVENT_2 1.0]
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+[wt 1.0]
+
+[charaFace F 0]
+＠マシュ
+……。[r]……。
+[k]
+
+[bgm BGM_EVENT_11 0.1]
+＠マシュ
+カルデアでは……
+[k]
+
+＠マシュ
+情報の[#類:たぐい]は電子データ化されていて、[r]紙の本は、あまり充実しているとは言えませんでした。
+[k]
+
+[charaFace F 4]
+＠マシュ
+そのせいか、つい、[r]ここの本に夢中になってしまって……
+[k]
+
+？1：いいんだよ、オフなんだ[&し:もの]！
+
+[messageOff]
+[charaFace F 6]
+[wt 1.0]
+
+[charaFace F 1]
+＠マシュ
+はい！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠フォウ
+フォウフォウ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[branch select01_end]
+
+
+？2：紙の本、好きなんだね
+
+[charaFace F 0]
+＠マシュ
+[line 3]はい。
+[k]
+
+＠マシュ
+やっぱりカルデアでは、[r]紙の本は珍しいものでしたから……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠フォウ
+フォウ？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+＠マシュ
+……。[r]……。
+[k]
+
+[charaFace F 0]
+＠マシュ
+……情報の閲覧という意味では、[r]タブレットの液晶越しに見ても同じはず、ですよね。
+[k]
+
+＠マシュ
+でも、不思議です。[r]紙の本で読むとなんだか[line 3]
+[k]
+
+[branch select02]
+
+？！
+
+[label select02]
+
+？1：どんどん読んじゃう？
+
+？！
+
+[messageOff]
+[charaFace F 6]
+[wt 1.0]
+
+[charaFace F 3]
+＠マシュ
+はい。そうなんです。
+[k]
+
+？！
+
+[label select01_end]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[messageOff]
+[se ade74]
+[wt 1.5]
+[seStop ade74 0.4]
+[wt 0.4]
+
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠マシュ
+到着です。[r][line 3]ここが、地下図書館の“受付”です！
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_11 1.5]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[charaSet A 5042000 1 紫式部（シルエット）]
+
+[scene 70300]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad311]
+[wt 1.0]
+[seStop ad311 0.4]
+[wt 0.4]
+
+[charaTalk depthOff]
+[charaDepth A 6]
+[charaDepth H 4]
+
+[charaTalk off]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[charaFilter A silhouette 00000080]
+[wt 0.6]
+
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.6]
+
+[charaFadeout A 0.4]
+[wt 0.6]
+
+[bgm BGM_EVENT_25 0.1]
+
+[charaTalk on]
+＠H：司書
+[line 6]ようこそいらっしゃいました。
+[k]
+
+[turnPageOff]
+＠H：司書
+我が地下図書館には、[#古今東西:ここんとうざい]、[r]さまざまな本を取り揃えてございます。
+[k]
+
+＠H：司書
+史書に伝記、神話に伝説、悲劇に喜劇、古典に新作、[r][#御伽話:おとぎばなし]に童話、時代劇に西部劇、低俗劇に政治劇、
+[k]
+
+＠H：司書
+オクシデンタルにオリエンタル……[r]中世に近世、古代に現代、虚構に現実、
+[k]
+
+＠H：司書
+図鑑や地図もございます。
+[k]
+
+＠H：司書
+ああ、それと[line 3][r][#復讐譚:ふくしゅうたん]に恋物語も、もちろん揃えてありますので。
+[k]
+
+＠H：司書
+ラインナップにない本がございましたら、[r]ぜひお申し付けくださいませ。
+[k]
+
+？1：司書さんだ……
+
+[charaFace H 7]
+＠H：司書
+……。[r]……。
+[k]
+
+[charaFace H 0]
+＠H：司書
+はじめまして、になりますでしょうか。[r]カルデアのマスター様。
+[k]
+
+？2：はじめまして
+
+＠H：司書
+はい、はじめまして。[r]カルデアのマスター様。
+[k]
+
+？！
+
+＠H：司書
+僭越ながら、[r]この地下図書館にて司書をつとめております。
+[k]
+
+[messageOff]
+[charaFace H 1]
+[wt 1.0]
+
+[charaFace H 0]
+＠H：司書
+サーヴァント、キャスター。[r][line 3]真名を[#紫式部:むらさきしきぶ]と申します。
+[k]
+
+[turnPageOn]
+＠紫式部
+[#文:ふみ]に親しみ、[#詞:ことば]に焦がれ、[r]ひとの想いに寄り添う女にて……
+[k]
+
+＠紫式部
+当世の多くを知らぬ身でありますゆえ、[r]どうぞよしなに。優しくしてくださいましね。
+[k]
+
+？1：どうぞよろしく！
+？2：[%1]です
+
+？！
+
+[messageOff]
+[charaFace H 1]
+[wt 1.5]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠マシュ
+紫式部さんは、日本の平安時代出身ですね。[r]あの頼光さんや金時さんと同じ時代を生きた英霊です。
+[k]
+
+？1：作家さん……なんだっけ？
+
+[charaFace F 1]
+＠マシュ
+はい！[r]特に『源氏物語』が広く知られています。
+[k]
+
+[charaFace F 13]
+＠マシュ
+平安時代の貴族社会を舞台とした、主人公光源氏と[r]数多くの女性たちによる恋愛劇で……
+[k]
+
+＠マシュ
+他にも、優れた歌人として有名で、[r]小倉百人一首にも紫式部さんの歌が収録されています。
+[k]
+
+？2：源氏物語の作者にして歌人、だよね！
+
+[charaFace F 1]
+＠マシュ
+はい！
+[k]
+
+？！
+
+[charaFace F 0]
+＠マシュ
+英霊としてはキャスターとして現界なさっていて、[r]東洋の魔術を得意とされるようです。
+[k]
+
+[charaFace F 1]
+＠マシュ
+ここが、まさにその行使の結果ですね。[r]ご自身の魔力で地下図書館を一から構築して[line 3]
+[k]
+
+＠マシュ
+データベースの形式で保存されていた大量の本を[r]魔術的な効果で物理書籍に変換した上で、
+[k]
+
+＠マシュ
+サーヴァントや職員の皆さんへ、[r]無償で貸し出していらっしゃるんです。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠紫式部
+魔術……？
+[k]
+
+＠紫式部
+魔術で図書館を構築……？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+＠マシュ
+は、はい。です……よね？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠フォウ
+フォウ、フォウ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠紫式部
+[line 3]ええと、はい。そう……なのでしょうね。[r]恐らく。
+[k]
+
+＠紫式部
+私にとっては陰陽道の一種のつもりですけれど……
+[k]
+
+＠紫式部
+人の世の[#理:ことわり]を時に超えて紡がれるわざ、[r]想うこころを持ったモノたちが導き出す[#天然自然:てんねんしぜん]。
+[k]
+
+＠紫式部
+美しきもの。……ええ。[r]そういったものを皆様が魔術と呼ぶのであれば。
+[k]
+
+＠紫式部
+マシュ様のおっしゃった言の葉で[r]きっと間違いないのでしょう。
+[k]
+
+[messageOff]
+[charaFace H 7]
+[wt 1.0]
+
+[charaFace H 0]
+＠紫式部
+……正直に申し上げまして。
+[k]
+
+＠紫式部
+私、かつての平安の折には、[r]さほど陰陽道に長けていた訳ではありません。
+[k]
+
+＠紫式部
+ですのでこうして、サーヴァントとして成立して、[r]初めてあれこれと多くのわざを振るえている状態です。
+[k]
+
+[charaFace H 1]
+＠紫式部
+不慣れなキャスターではありますが、[r]皆様のお役に立てましたら幸いです。
+[k]
+
+？1：こちらこそよろしく！
+
+？！
+
+＠紫式部
+はい、よろしくお願いいたします。
+[k]
+
+＠紫式部
+……。[r]……。
+[k]
+
+[bgmStop BGM_EVENT_25 1.0]
+[charaFace H 0]
+＠紫式部
+……………………などと、言っておきながら[line 3]
+[k]
+
+[messageOff]
+[charaFace H 4]
+[wt 1.5]
+
+[charaFace H 6]
+＠紫式部
+申[messageShake 0.03 3 3 0.6]し訳ありませーん！！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+[wt 1.0]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[charaMoveReturn G 0,30 0.3]
+[wt 1.2]
+
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+＠紫式部
+…………大ポカをやってしまったんです、私！！
+[k]
+
+
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[bgm BGM_EVENT_11 0.1]
+
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠紫式部
+今度こそはと思っていたのに……[r]華麗な英霊デビューをキメようと思っていましたのに……
+[k]
+
+＠紫式部
+私、やってしまったんです……
+[k]
+
+[charaFace H 5]
+＠紫式部
+私が魔力なるものを込めて作り上げた蔵書！[r]そのうちの一冊が、私の管理下を離れてしまったのです！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠フォウ
+フォウ、フォーウ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠マシュ
+つまり本が……暴走を……？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠紫式部
+はい、その通りでございます。[r]あれは今朝のこと、書庫の整理をしていた際に[line 3]
+[k]
+
+[messageOff]
+[wipeout circleIn 1.5 1.0]
+[bgmStop BGM_EVENT_11 1.5]
+[wait wipe]
+
+[charaFadeout H 0.1]
+
+
+
+[pictureFrame cut063_cinema]
+
+[effect bit_sepia01]
+
+[scene 70700]
+[wt 1.0]
+
+[wipein circleIn 1.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[bgm BGM_EVENT_25 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+＠紫式部
+よいしょ、と。
+[k]
+
+[messageOff]
+[charaMove H 0,-60 0.4]
+[wt 0.2]
+[se ad144]
+[seVolume ad144 0 0.25]
+[wt 0.6]
+[charaMove H 0,-50 0.4]
+[wt 1.0]
+
+＠紫式部
+ふう。今日の補充はこれくらいでしょうか。
+[k]
+
+＠紫式部
+書庫にしまいこんでおくには[r]惜しい、本の数々。心を込めて編まれた文の群れ。
+[k]
+
+[charaFace H 1]
+＠紫式部
+いつか、誰かの心に届く一冊になると[r]よいですね[line 3]
+[k]
+
+[messageOff]
+[charaFace H 7]
+[wt 1.0]
+
+＠紫式部
+おや……この本は何でしょうか……不思議と見慣れぬ……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_25 0.4]
+[charaFadeout H 0.1]
+[wt 0.6]
+
+[se ad39]
+[charaPut J 1]
+[charaEffect J bit_talk_warp]
+[wt 3.5]
+[seStop ad39 0.4]
+[wt 0.4]
+[charaPut J 1200,1200]
+[wt 0.1]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 0,-50]
+＠紫式部
+！[messageShake 0.03 2 2 0.4]！
+[k]
+
+＠紫式部
+宙に、本が浮いて……！？
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[wt 0.5]
+[se ade36]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF00]
+[wt 0.6]
+[se ade36]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF00]
+[wt 0.2]
+[se ade36]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF00]
+[wt 0.9]
+[charaPut J 1200,1200]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 0,-50]
+[charaShake H 0.03 4 4 0.4]
+＠紫式部
+きゃっ！！
+[k]
+
+[charaFace H 0]
+＠紫式部
+あっ……[r]な、何を……そ、それは……！
+[k]
+
+[charaFace H 2]
+＠紫式部
+私が[#鞄:かばん]に入れておいた、大切な……！[r]や、やめて、[#吸収しないで]！
+[k]
+
+＠紫式部
+[line 3]返しなさい！　返して！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[wt 0.5]
+[se ade36]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF00]
+[wt 0.6]
+[se ade36]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF00]
+[wt 0.2]
+[se ade36]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF00]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_5 1.0]
+[se ad39]
+[seVolume ad39 0 0.1]
+[seVolume ad39 1.0 1.0]
+[charaEffectStop J bit_talk_warp]
+[wt 2.0]
+[seStop ad39 1.0]
+[wt 1.0]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 0,-50]
+＠紫式部
+あっ……！
+[k]
+
+＠紫式部
+消えた……消えて……しまった……！？
+[k]
+
+[messageOff]
+[wipeout circleIn 1.5 1.0]
+[wait wipe]
+
+[charaFadeout H 0.1]
+
+[pictureFrame]
+
+[effectStop bit_sepia01]
+
+[scene 70300]
+[wt 1.0]
+
+[wipein circleIn 1.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠紫式部
+…………私の不始末、不手際でございます。
+[k]
+
+＠紫式部
+我が図書館書庫に眠っていた本のうち一冊が、[r]ひとりでに動き、暴れる、呪わしき書と化したのです。
+[k]
+
+[charaFace H 0]
+＠紫式部
+周囲の情報を食し、[r]周囲の魔力を食し、
+[k]
+
+＠紫式部
+そして、自己保存の本能に従って逃げ回る[line 3]
+[k]
+
+＠紫式部
+これを私は[#呪本:じゅほん]と呼称いたしました。[wt 0.7][charaFace H 4][r]うう……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠フォウ
+フォーウ、フォウ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠紫式部
+……。[r]……。
+[k]
+
+[charaFace H 5]
+＠紫式部
+かつての[#中宮:ちゅうぐう]、彰子様にお仕えした折には、[r]何このインテリ女と同僚の女房たちにいじめられ……
+[k]
+
+＠紫式部
+あまりの哀しみに一度は[r]引き籠もってしまったこの私……
+[k]
+
+[charaFace H 4]
+＠紫式部
+その後、モノを知らない天然キャラを装うことで[r]なんとかギリギリ職場に溶け込めましたが……
+[k]
+
+[charaFace H 6]
+＠紫式部
+で[messageShake 0.03 2 2 0.4]も、でも！[r]今度こそはちゃんとしようと！
+[k]
+
+＠紫式部
+何の憂いもない完璧なデビューをキメようと、[r]皆様に喜んでいただける“書の英霊”たらんと、
+[k]
+
+[charaFace H 4]
+＠紫式部
+心に決めておりましたのに……うう……[r]いと嘆かし……
+[k]
+
+[bgmStop BGM_EVENT_11 0.7]
+
+
+？1：大丈夫
+？2：その本を回収すればいいのかな？
+
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[bgm BGM_EVENT_2 0.1]
+
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠マシュ
+はい！[r]危険な本なのでしたら、回収してしまいましょう！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠フォウ
+フォウ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+＠紫式部
+……………………。
+[k]
+
+[charaFace H 0]
+＠紫式部
+……わ、私をお責めにならないのですか？[r]マシュ様、[%1]様？
+[k]
+
+？1：図書館ができて皆楽しそうだし
+？2：責めたりしないですよ
+
+？！
+
+[messageOff]
+[charaFace H 2]
+[wt 1.0]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+
+[branch lblConf4]
+[label lblNotClear4]
+
+＠マシュ
+なにぶんバレンタインデーの季節ですから、[r]何が起きてもおかしくありません！
+[k]
+
+[branch lblNotClear4_out]
+[label lblConf4]
+＠マシュ
+なにぶん伝説の彷徨海の中ですから、[r]何が起きてもおかしくありません！
+[k]
+
+[label lblNotClear4_out]
+
+
+？！
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[se ad13]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 0.3]
+＠セミラミス
+む。ああ、どうやらこのスイッチで合っていたな。[r]聞こえているか？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠マシュ
+セミラミスさん？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠セミラミス
+うむ。我だ。
+[k]
+
+＠セミラミス
+ダ・ヴィンチは何やら調子がよくないとかで[r]席を外しているゆえ、仕方なく我が通信役を代わった。
+[k]
+
+[charaFace I 3]
+＠セミラミス
+で、だ。[r]その、何だ。
+[k]
+
+＠セミラミス
+何というか……異常事態が発生していてな。
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+
+[bgmStop BGM_EVENT_2 0.7]
+
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+[charaShake H 0.03 3 3 0.3]
+[wt 0.8]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 1]
+＠セミラミス
+バレンタインデーのチョコレート作成用に保存していた[r]魔力リソースが[line 3]
+[k]
+
+＠セミラミス
+一冊の本が近付いたかと思うと、[r]みるみるうちに吸い上げられてしまったのだ。[wt 1.0]全て。
+[k]
+
+？1：あ、それってもしかして！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+
+[bgm BGM_EVENT_5 0.1]
+
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠マシュ
+はい先輩！　おそらく[#件:くだん]の呪本かと……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+？2：全部かー！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+
+[bgm BGM_EVENT_5 0.1]
+
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+＠紫式部
+[f small]……ごめんなさい……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+？！
+
+[charaPut J 1]
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+＠セミラミス
+いわゆる魔本のエネミーとも違うようだったが、[r]あれはもしや、そこの図書館の貸し出し本なのでは？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+＠紫式部
+その通りです！[r]ああ、いけない、いけません……！　何ということ！
+[k]
+
+＠紫式部
+遂に、被害が……出てしまった……！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.4]
+[charaFadeout H 0.1]
+[wt 0.6]
+
+[se ad9]
+[seVolume ad9 0 0.4]
+[wt 2.5]
+[seStop ad9 0.4]
+[wt 0.5]
+
+[charaPut J 1]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠セミラミス
+む。この警報は何だ？[r]カルデア式の操作盤は癖が強くて読み[#難:にく]いが[line 3]
+[k]
+
+[charaFace I 7]
+＠セミラミス
+うむ。何やら魔力反応らしきモノがそちらに[r]移動しているようだ。ま、独力で対処するがよいぞ。
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+[wt 1.0]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ad19]
+[wt 2.0]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[charaShake G 0.03 4 4 0.4]
+＠フォウ
+フォ、フォウ！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠マシュ
+先輩！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠紫式部
+すべて、すべて、私の不始末に[#因:よ]るものです。[r]申し訳ありません。
+[k]
+
+[charaFace H 5]
+＠紫式部
+せめて、流される血は私のみで終わらせねば！[r]どうかお任せくださいませ！
+[k]
+
+？1：一緒に戦うよ！
+？2：ひとりで無茶しない！
+
+？！
+
+[messageOff]
+[charaFace H 2]
+[wt 1.0]
+
+[charaFace H 5]
+＠紫式部
+は、はい！　……参ります！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

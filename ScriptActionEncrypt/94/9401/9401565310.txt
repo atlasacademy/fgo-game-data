@@ -1,0 +1,262 @@
+
+＄94-01-56-53-1-0
+
+
+
+[soundStopAll]
+
+
+
+[messageOff]
+
+
+[branch _PlayEffect_1st PM4 1]
+
+
+[label _PlayEffect_etc]
+
+[tapSkip _from_TapSkip_etc]
+
+[scene 10001]
+
+[effectPause bit_talk_goal2_3]
+[wait effectStart bit_talk_goal2_3]
+
+[fadein white 0.5]
+[wait fade]
+
+[effectStart bit_talk_goal2_3]
+[wait effect bit_talk_goal2_3]
+
+[label _from_TapSkip_etc]
+
+[effectDestroy bit_talk_goal2_3]
+[fadein black 0]
+[wait fade]
+
+[branch _PlayEffect_End]
+
+
+[label _PlayEffect_1st]
+
+[bgm BGM_EVENT_3 0.1]
+
+[tapSkip _from_TapSkip_1st]
+
+[effectPause bit_talk_winner2_3]
+[wait effectStart bit_talk_winner2_3]
+
+[scene 10001]
+
+[fadein white 0.5]
+[wait fade]
+
+[effectStart bit_talk_winner2_3]
+
+[bgmStop BGM_EVENT_3 3.7]
+
+[wt 3.9]
+[se ad251]
+[seVolume ad251 0 0.7]
+
+[wt 0.6]
+
+[voice 402600_0_M790]
+
+[scene 10000]
+
+[wait effect bit_talk_winner2_3]
+[wt 1.4]
+
+[label _from_TapSkip_1st]
+
+[voiceStop]
+[scene 10000]
+[effectDestroy bit_talk_winner2_3]
+[fadein black 0]
+[wait fade]
+
+
+[label _PlayEffect_End]
+
+[branch _PlayVoice_Start PM4 1]
+
+[branch _PlayVoice_End]
+
+
+
+
+[label _PlayVoice_Start]
+
+[charaSet A 3029002 1 源頼光]
+[charaSet B 5022001 1 三蔵]
+
+[bgm BGM_EVENT_64 0.1]
+
+[scene 45201 1.0]
+[wt 1.0]
+
+[flagRandom _PlayVoiceNo 1 3]
+
+
+[branch _PlayVoice_3rd _PlayVoiceNo 3]
+[branch _PlayVoice_2nd _PlayVoiceNo 2]
+[branch _PlayVoice_1st _PlayVoiceNo 1]
+
+
+
+[label _PlayVoice_1st]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 1]
+[charaDepth A 9]
+[charaDepth B 1]
+[charaFadein A 0.4 0]
+[charaFadein B 0.4 2]
+[wt 0.7]
+
+＠源頼光
+[tVoice ChrVoice_9010004 0_M700]
+１位？　何が１位なのです？[wait tVoice]
+[k]
+
+＠三蔵
+[tVoice ChrVoice_9010004 0_M701]
+なんだっけ。あ、そうだ脱獄、[wait tVoice]
+[k]
+[tVoice ChrVoice_9010004 0_M702]
+[charaFace B 0]
+脱獄の成果っていう事じゃないかしら！[wait tVoice]
+[k]
+
+＠源頼光
+[tVoice ChrVoice_9010004 0_M703]
+まあそれは……。[r]ともかくすみやかに牢を出なければなりません。[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠源頼光
+[tVoice ChrVoice_9010004 0_M704]
+引き続きがんばりましょうね。[wait tVoice]
+[k]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_2nd]
+
+[charaTalk B]
+[charaFace A 0]
+[charaFace B 4]
+[charaDepth A 9]
+[charaDepth B 1]
+[charaFadein A 0.4 0]
+[charaFadein B 0.4 2]
+[wt 0.7]
+
+＠三蔵
+[tVoice ChrVoice_9010004 0_M710]
+はー疲れたー。[wait tVoice]
+[k]
+
+＠三蔵
+[tVoice ChrVoice_9010004 0_M711]
+体を動かすのは嫌いじゃないけれど、[r]お日さまが見られないのはしょんぼりするわ。[wait tVoice]
+[k]
+
+＠源頼光
+[tVoice ChrVoice_9010004 0_M712]
+そうですね。一刻も早く外へ出ませんと。[wait tVoice]
+[k]
+
+[charaFace B 0]
+＠三蔵
+[tVoice ChrVoice_9010004 0_M713]
+大丈夫、きっと御仏のご加護があるわ。絶対出られる！　[wait tVoice]
+[k]
+[tVoice ChrVoice_9010004 0_M714]
+悪い事してないもの！　[wait tVoice]
+[k]
+
+[charaFace B 4]
+＠三蔵
+[tVoice ChrVoice_9010004 0_M715]
+……してないわよね？[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠源頼光
+[tVoice ChrVoice_9010004 0_M716]
+もちろんです。[wait tVoice]
+[k]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_3rd]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFace B 1]
+[charaDepth A 9]
+[charaDepth B 1]
+[charaFadein A 0.4 0]
+[charaFadein B 0.4 2]
+[wt 0.7]
+
+＠源頼光
+[tVoice ChrVoice_9010004 0_M720]
+掘り進むというのも奥が深いのですね。勉強になります。[wait tVoice]
+[k]
+
+[charaFace B 5]
+＠三蔵
+[tVoice ChrVoice_9010004 0_M721]
+掘るだけに……奥が深い……？　[r]ふむふむ、今のってもしかしてシャレ……[wait tVoice]
+[k]
+
+[charaFace A 4]
+＠源頼光
+[tVoice ChrVoice_9010004 0_M722]
+い、いいえ。いいえ決して！　そのようなことはーっ！[wait tVoice]
+[k]
+
+
+
+[label _PlayVoice_End]
+
+
+[messageOff]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_64 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

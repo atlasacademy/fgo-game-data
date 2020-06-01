@@ -1,0 +1,157 @@
+
+
+
+＄94-04-77-95-1-1
+
+[soundStopAll]
+
+[skip false]
+
+[maskout black 0]
+[wait mask]
+
+[charaSet A 5001001 1 メディア]
+[charaSet B 5033001 1 キルケー]
+[imageSet C cut171_token_mda 1]
+[imageSet D cut171_token_407 1]
+[charaSet G 1026001 1 デオン]
+[charaSet S 5009000 1 エフェクト用ダミー１]
+
+[scene 20730]
+
+[pictureFrameTop cut170_gameframe_bright]
+
+[skip true]
+
+[fadein black 0]
+[wait fade]
+[maskin black 1.0]
+[wait mask]
+
+[bgm BGM_EVENT_2 0.1]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+[charaEffect G bit_talk_06]
+
+＠デオン
+フランス王家と、我がマスターに栄光あれ！
+[k]
+
+[messageOff]
+[wt 0.3]
+
+[se ade406]
+[wt 0.2]
+[flashin once 0.1 0.6 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaFadeout G 0.1]
+[wt 0.2]
+[charaEffectStop G bit_talk_06]
+[wt 0.1]
+[seStop ade406 0.6]
+[wt 1.0]
+
+[charaTalk depthOff]
+[charaDepth S 4]
+[charaDepth C 5]
+[charaDepth D 6]
+[charaDepth A 1]
+[charaDepth B 2]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+
+[charaEffect A bit_talk_token_change01]
+[wt 1.0]
+
+＠メディア
+無様に敗北したばかりか、[#宝物:ごほうび]扱いなんて……[r]たとえ異世界の出来事としても屈辱ね……。
+[k]
+
+[messageOff]
+[charaEffectStop A bit_talk_token_change01]
+[charaPut S 0,-10]
+[charaEffect S bit_talk_token_change02]
+[se ad39]
+[wt 3.2]
+
+[se ad29]
+[seStop ad29 1.5]
+[wt 0.5]
+[charaFadeout A 0.4]
+
+[charaEffectStop S bit_talk_token_change02]
+[charaTalk C]
+[charaFadein C 0.4 0,-210]
+[wt 1.5]
+
+[charaEffectDestroy S bit_talk_token_change02]
+
+[charaMove C -200,100 0.3]
+[se ad75]
+[charaFadeout C 0.2]
+[wt 0.4]
+[seStop ad75 0.5]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+[charaEffect B bit_talk_token_change01]
+[wt 1.0]
+
+＠キルケー
+私は、まんざらでもないがなあ……。
+[k]
+
+[messageOff]
+[charaEffectStop B bit_talk_token_change01]
+[charaPut S 0,-10]
+[charaEffect S bit_talk_token_change02]
+[se ad39]
+[wt 3.2]
+
+[se ad29]
+[seStop ad29 1.5]
+[wt 0.5]
+[charaFadeout B 0.4]
+
+[charaTalk D]
+[charaFadein D 0.4 0,-210]
+[wt 0.5]
+
+[charaMove S 0,10 1.2]
+[wt 1.2]
+
+[charaFadeout D 0.4]
+[wt 0.5]
+
+[se adm19]
+[seVolume adm19 0 0.3]
+[seVolume adm19 1.0 1.0]
+[wt 0.5]
+
+[seStop adm19 1.7]
+[charaMove S 0,700 2.2]
+[wt 2.2]
+
+[charaEffectStop S bit_talk_token_change02]
+[wt 0.1]
+[charaEffectDestroy T bit_talk_token_change02]
+
+[maskout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+

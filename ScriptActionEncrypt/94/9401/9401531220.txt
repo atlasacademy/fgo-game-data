@@ -1,0 +1,553 @@
+
+
+＄94-01-53-12-2-0
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+
+[charaSet A 1098116710 1 メイヴ監獄長]
+[charaSet B 4018001 1 ケツァル・コアトル副監獄長]
+[charaSet C 4026000 1 イシュタル]
+[charaSet D 98001000 1 マシュ]
+[charaSet E 5009003 1 ダ・ヴィンチ]
+[charaSet F 3029002 1 源頼光]
+[charaSet G 5022001 1 三蔵]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[scene 44301]
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+[charaEffect A bit_talk_06]
+
+＠メイヴ監獄長
+なんなのよ、もーう！[r]確かにコノートは私の土地なのに[line 2]ぃ！
+[k]
+
+＠メイヴ監獄長
+そりゃまあさんざん好き勝手に支配したけど、[r]だって私は女王だしトーゼンでしょ！
+[k]
+
+[charaFace A 8]
+
+＠メイヴ監獄長
+納得いかない、納得いかなーい！[r]もう、何処に行けば素敵な勇者にあえるのかしらー！
+[k]
+
+[messageOff]
+[charaEffectStop A bit_talk_06]
+[wait charaEffect A bit_talk_06]
+[se ad52]
+[charaSpecialEffect A flashErasure 1 2.0]
+[wait charaSpecialEffect A]
+
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+[charaEffect B bit_talk_06]
+
+＠ケツァル・コアトル副監獄長
+ムーチョ、ムーチョ！　といきたいところですが……
+[k]
+
+＠ケツァル・コアトル副監獄長
+楽しいルチャタイムもそろそろ[r]お開きにしないとですかネ～？
+[k]
+
+[charaFace B 0]
+
+＠ケツァル・コアトル副監獄長
+看守が出所者を引き留めるなんて[#本末転倒:ほんまつてんとう]ですし。[r]ここで消えておくのが交換条件でしたしネ！
+[k]
+
+[charaFace B 1]
+
+＠ケツァル・コアトル副監獄長
+よーし、合格！[r]ククルカン式卒業試験、これにて終了デース！
+[k]
+
+[bgmStop BGM_EVENT_3 1.0]
+[messageOff]
+[charaEffectStop B bit_talk_06]
+[wait charaEffect B bit_talk_06]
+[se ad52]
+[charaSpecialEffect B flashErasure 1 2.0]
+[wait charaSpecialEffect B]
+
+[wt 1.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.4 1]
+[wt 0.2]
+
+＠イシュタル
+（ナイス、大金星よ[%1]！[r]　一番の強敵が退場してくれたわ……！）
+[k]
+
+[charaFace C 6]
+
+＠イシュタル
+みんな、よくやったわ！[r]これで悪はほぼ滅んだと言っていいでしょう！
+[k]
+
+[charaFace C 1]
+
+＠イシュタル
+さあ、レースを再開しましょう！[r]あともうちょっとで全ての苦労が報われるのだから！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+[wt 0.2]
+
+＠マシュ
+そうですね。メイヴさんとは戦う事になってしまいましたが、[r]皆さんが自由になったのは何よりです。
+[k]
+
+[charaFace D 0]
+
+＠マシュ
+ですが……メイヴさんは特異点の核、のようなものでは[r]なかったようです。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-90]
+[wt 0.3]
+
+＠ダ・ヴィンチ
+やあ、久しぶりのダ・ヴィンチちゃんだよ。
+[k]
+
+＠ダ・ヴィンチ
+マシュの言うとおり、その場所の特異点反応は消えては[r]いない。土地に根ざしているタイプのようだ。
+[k]
+
+＠ダ・ヴィンチ
+彼女の影響力が消えた今、きちんと探査をすれば[r]その核の位置も判明するだろうが[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠イシュタル
+そんなの時間が勿体ないわ。[r]イシュタルレースが終われば自動的にその核も消滅する。
+[k]
+
+＠イシュタル
+言うまでもないけど、レースを続けるのが一番の早道よ。
+[k]
+
+？1：元々そのためのレースだったんだしね
+？2：ゴールも近いし、ここまで来たら最後まで！
+？！
+
+
+[charaFace C 2]
+
+＠イシュタル
+そーよ、そのとおり！
+[k]
+
+＠イシュタル
+だからマシン！　なによりもマシンよ！[r]みんな、倉庫から自分たちのマシンを回収して！
+[k]
+
+[charaFace C 0]
+
+＠イシュタル
+再調整の時間はあるから、慌てずにね！
+[k]
+
+[charaFace C 6]
+
+＠イシュタル
+この際、新しいマシンを作っていこう、とか駄目だから！[r]必ず今までのマシンを使う事！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+[wt 0.2]
+
+＠源頼光
+それは、まぁ。今まで[#一生懸命:いっしょうけんめい]働いてくれた京極を[r]乗り換えるなどという事はいたしませんよ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.2]
+
+＠三蔵
+うんうん！　結果はどうあれ、[r]ここまで来たら最後まで今の白竜と一緒じゃなきゃ、
+[k]
+
+＠三蔵
+ゴールしても無事に旅を終えたとは言えないわ！[r]あ、もちろん一位は目指すんだけど！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠イシュタル
+私もチェックはするけど、マシンを回収したらまず、[r]レース前に渡したあの儀式パーツを確認するのよ。
+[k]
+
+＠イシュタル
+あれがなかったら[#問答無用:もんどうむよう]で失格だからね。
+[k]
+
+[charaSet H 5032000 1 ネロ]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+[wt 0.2]
+
+＠ネロ
+妙にアレにこだわるな……ま、そうでなくば[r]特異点消滅の儀式が成立しない、というコトであろう。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠イシュタル
+はい、という訳で準備を急いだ急いだ！
+[k]
+
+[charaFace C 1]
+
+＠イシュタル
+長かった監獄生活はもう終わり。[r]観客席のみんなが、アナタたちの走りを待っているわ！
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[bgmStop BGM_EVENT_2 1.2]
+[wait fade]
+[charaFadeout C 0.1]
+[wt 1.0]
+[wipeFilter cinema 0.5 0]
+[charaSet A 6026001 1 怪人∞面相]
+[charaSet B 98106900 1 ゴルゴーン]
+[charaSet C 3008000 1 エルキドゥ]
+[charaSet D 98106000 1 キングゥ]
+[charaSet E 5009000 1 エフェクト用ダミー]
+[charaScale B 1.01]
+[fadein black 1.2]
+[wait fade]
+
+[wt 1.5]
+
+[bgm BGM_EVENT_1 0.1]
+
+[charaEffect A bit_talk_06]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 0,-50]
+
+＠怪人∞面相
+……ふう。[r]なんとか上手く誤魔化せたか。
+[k]
+
+＠怪人∞面相
+ま、芝居が真に迫りすぎて霊核をブチ抜かれちまった[r]のはご愛敬。その分、観客の皆様も騙されるってモンだ。
+[k]
+
+
+[charaFace A 0]
+＠怪人∞面相
+地味っちゃあ地味な役割だが、やり甲斐はあった。[r]闇の[#侠客:きょうかく]、その[#面目躍如:めんもくやくじょ]ってな。
+[k]
+
+[charaFace A 1]
+
+＠怪人∞面相
+んじゃあまあ、後は好きにやってくれや[#姐:あね]さん。[r]次があったら、そん時は俺と手合わせ宜しくってな。
+[k]
+
+[messageOff]
+[charaEffectStop A bit_talk_06]
+[wait charaEffect A bit_talk_06]
+[se ad52]
+[charaSpecialEffect A flashErasure 1 2.0]
+[wait charaSpecialEffect A]
+
+[wt 0.5]
+
+[messageOff]
+[fadeout black 1.2]
+[wait fade]
+[scene 45100]
+[wt 1.0]
+[se ad14]
+[seVolume ad14 0 0.05]
+[wt 0.1]
+[seVolume ad14 1.2 0.6]
+[fadein black 1.2]
+[wait fade]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.4 0,-50]
+[wt 0.2]
+
+＠ゴルゴーン
+……監獄が崩壊していく。[r]そうか。この騒ぎは貴様の一計だな？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 0,-50]
+[wt 0.2]
+
+＠エルキドゥ
+うん？　ああ、メイヴが消えて監獄が無くなる事？[r]それなら確かに。
+[k]
+
+＠エルキドゥ
+彼女たちは脱獄がしたかった。[r]けど僕はこの監獄を壊したかった。
+[k]
+
+[charaFace C 1]
+＠エルキドゥ
+その食い違いを指摘する人はいなかったからね。[r]あえて口にせず、そうなるように動いただけだよ。
+[k]
+
+＠エルキドゥ
+異邦の女神を定礎にして、強力な監獄を作る……[r]その発想に文句はないけど、生贄の相手は選ぶべきだ。
+[k]
+
+[charaFace C 0]
+＠エルキドゥ
+そうだろう？　監獄であれば正義の女神を柱にしないとね。[r]復讐の女神なんて、監獄の風紀を乱すだけだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠ゴルゴーン
+嫌味か？　私とて好きで柱になった訳ではない。[r]初めから生贄として召喚され[line 3]、待て！
+[k]
+
+[messageOff]
+[charaFace B 2]
+[se bac167]
+[seStop bac167 0.3]
+[charaPut E 192,50]
+[charaEffect E bit_talk_kushizashi01]
+[wt 0.2]
+[fowardEffect bit_talk_13 192,0]
+[charaShake B 0.15 3 3 0.5]
+[wt 0.1]
+[charaPut E 1200,-1200]
+[se ad250]
+[seVolume ad250 0 0.3]
+[wt 0.4]
+[se bac167]
+[seStop bac167 0.3]
+[charaPut E -192,50]
+[charaEffect E bit_talk_kushizashi01]
+[wt 0.2]
+[fowardEffect bit_talk_13 -192,0]
+[charaShake B 0.15 3 3 0.5]
+[wt 0.1]
+[charaPut E 1200,-1200]
+[se ad251]
+[seVolume ad251 0 0.3]
+[wt 0.4]
+[wt 0.4]
+
+
+
+[charaFace B 2]
+
+＠ゴルゴーン
+……貴様……何のつもりだ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠エルキドゥ
+手荒い手段になったのは謝ろう。[r]玉の[#鱗:はだ]に少し傷を付けてしまったね。
+[k]
+
+[charaFace C 0]
+
+＠エルキドゥ
+でも、これで監獄を支えていた柱は自由になった。[r]行儀良く扉から出る、なんて事はできないだろうけど、
+[k]
+
+[charaFace C 1]
+
+＠エルキドゥ
+君ならこの状況でも脱出できるだろう？[r]土の中を潜るのは得意だったんだしね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-50]
+
+＠ゴルゴーン
+…………礼を言えと言うのか、この私に。[r]だが私は貴様など知らぬ。貴様は一体[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠エルキドゥ
+さあ？　君を助けたかった理由は、[r]正直、僕にも分からない。
+[k]
+
+[charaFace C 5]
+＠エルキドゥ
+けれど強く、この[#心臓:むね]が訴えていた。
+[k]
+
+＠エルキドゥ
+複合神性。復讐に落ちた女神が、ただの一度も[r]自由を知らぬまま消える事を、二度とは見たくないと。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠ゴルゴーン
+[line 6]。
+[k]
+
+[shake 0.07 3 3 1.2]
+[seVolume ad14 1.0 0.9]
+[se ad228]
+[seStop ad228 1.5]
+[wt 0.8]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠エルキドゥ
+そろそろここも埋まってしまうね。[r]僕はここで失礼するよ。
+[k]
+
+＠エルキドゥ
+お互い、マスターのいない身だ。
+[k]
+
+＠エルキドゥ
+そう長くは現界できないだろうけど、退去するまでの[r]間ぐらいは、この世界を楽しんでもいいんじゃない？
+[k]
+
+[messageOff]
+[charaDepth D 2]
+[charaDepth C 1]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFadein D 0.7 0,-50]
+[wt 2.0]
+[charaFadeout D 0.7]
+[wt 1.5]
+
+[charaFadeout C 0.4]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠ゴルゴーン
+[line 3]おまえは[line 3][r]そうか、おまえは[line 3]
+[k]
+
+[messageOff]
+[shake 0.05 7 7 1.5]
+[seStop ad14 2.0]
+[se ad211]
+[wt 1.0]
+[shake 0.07 5 5 0]
+[effect bit_talk_33]
+[se ad228]
+
+
+[bgmStop BGM_EVENT_1 2.5]
+[fadeout black 2.5]
+[wait fade]
+[shakeStop]
+[seStop ad228 1.5]
+[wt 2.0]
+[soundStopAll]
+[end]

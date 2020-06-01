@@ -1,0 +1,99 @@
+
+
+＄91-90-01-03-2-0
+
+
+[soundStopAll]
+
+[charaSet A 9001001 1 ジャンヌ]
+[charaSet B 5014001 1 メフィストフェレス]
+[charaSet C 5014001 1 メフィストフェレス（敵）]
+[charaSet D 98006200 1 雑魚エネミー煙状]
+[charaSet E 98025000 1 シャドウサーヴァント(素手)]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 20500]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠ジャンヌ
+[#主:しゅ]は全ての不義を許し、全ての[#厄災:やまい]を許す。[r]そして其の命を墓穴から救い出し、慈しみ、憐れみ[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+[charaSpecialEffect D enemyErasure 1 1.5]
+[se ad42]
+[wait charaSpecialEffect D]
+[wt 1.0]
+
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠メフィストフェレス（敵）
+おやおや、さすがさすが！[r]最早亡霊程度では相手にもなりませんなあ！
+[k]
+
+＠メフィストフェレス（敵）
+では、こちらはいかがでしょう？[r]匿名サーヴァント諸君、カモン！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[se ad25]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 1.6]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠ジャンヌ
+シャドウサーヴァント……！
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠メフィストフェレス
+なーに、所詮はうつろい[#彷徨:さまよ]う影。
+[k]
+
+[charaFace B 2]
+＠メフィストフェレス
+自意識も持たずして、[r]ワタクシたちには勝てませんとも！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

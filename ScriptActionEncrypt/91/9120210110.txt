@@ -1,0 +1,1503 @@
+
+
+＄91-20-21-01-1-0
+
+
+
+
+[soundStopAll]
+
+[charaSet A 2021000 1 巴御前]
+[charaSet B 98001000 1 マシュ]
+[charaSet C 6005001 1 ジャック]
+[charaSet D 5004001 1 ナーサリー・ライム]
+[charaSet E 3026000 1 ジャンヌ・オルタ・サンタ・リリィ]
+[charaSet F 98111500 1 ダ・ヴィンチ]
+[charaSet G 1098124510 1 ダ・ヴィンチ（ロリ）]
+[charaSet H 98006200 1 エネミー]
+
+[charaSet I 98001000 1 通信エフェクト]
+[imageSet J back10000 1]
+
+[charaScale J 1.01]
+[charaFilter J silhouette E0000080]
+
+
+[charaDepth E 1]
+[charaDepth C 5]
+[charaDepth D 9]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+[flag IsClear true]
+[branch lblConf]
+[label lblNotClear]
+[flag IsClear false]
+[label lblConf]
+
+
+[branch lblNotClear1 IsClear false]
+[scene 66400]
+[branch lblConf1]
+[label lblNotClear1]
+[scene 10204]
+[label lblConf1]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[wt 0.4]
+＠マシュ
+……以上で本日のシミュレーター訓練は終了です。[bgm BGM_EVENT_2 0.1][r]お疲れさまでした！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠巴御前
+はい、お疲れさまでございました。
+[k]
+
+[charaFace A 1]
+＠巴御前
+貴方達もお疲れさま。[r]今日も佳い子で、よく頑張りましたね。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk off]
+[charaFace C 1]
+[charaFace D 1]
+[charaFace E 6]
+[charaFadein C 0.4 0]
+[charaFadein D 0.4 1]
+[charaFadein E 0.4 2]
+[wt 0.6]
+[charaTalk on]
+[charaTalk C]
+
+＠ジャック
+ふふふ。わたしたち、頑張ってた？
+[k]
+
+[charaFace D 1]
+
+＠ナーサリー・ライム
+ええ、とってもね。[r]最初から最後まで頑張れていたんじゃないかしら。
+[k]
+
+[charaFace E 1]
+＠ジャンヌ・オルタ・サンタ・リリィ
+勿論です。何事も真面目にこなすべきだと[r]お師匠さんに教わっていますので！
+[k]
+
+[charaFace E 6]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+ではでは、おやつの時間ですね？[r]食堂へ行ってきます！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠巴御前
+はいそうですね[line 3][wt 0.3][charaFace A 1]でも、その前に、です。
+[k]
+
+＠巴御前
+いつもナイチンゲール殿から教わっておりますね。[r]はい、[#しみゅれえたあ]や[#れいしふと]から帰った後は？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace D 0]
+[charaFace E 0]
+[charaFadein C 0.1 0]
+[charaFadein D 0.1 1]
+[charaFadein E 0.1 2]
+
+＠ジャック
+[FFFFFF]？[-]
+[k]
+
+[charaFace E 8]
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+えーっと。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠巴御前
+……手洗いとうがい。はい復唱！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk off]
+[charaFace C 1]
+[charaFace E 6]
+[charaFadein C 0.1 0]
+[charaFadein E 0.1 2]
+[wt 0.2]
+
+＠ジャックとリリィ
+手洗い！[se adm21][seVolume adm21 0 0.3][charaMoveReturn C -256,10 0.4][wt 0.6]　うがい！[se adm21][seVolume adm21 0 0.3][charaMoveReturn E 256,10 0.35][wt 0.4]
+[k]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ナーサリー・ライム
+ええ、そうね。手洗いうがい！
+[k]
+
+[charaFace D 4]
+
+＠ナーサリー・ライム
+ぜんぶ忘れてドーナッツを手にしたら、[r]エミヤおじ様やブーディカもきっと哀しい顔をするわ。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠巴御前
+ええ、ええ。[r]ですから、きちんと手洗いうがい。宜しいですね？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace C 1]
+[charaFace D 1]
+[charaFace E 6]
+[charaFadein C 0.1 0]
+[charaFadein D 0.1 1]
+[charaFadein E 0.1 2]
+
+＠幼年系サーヴァントたち
+はーい。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠巴御前
+はい、よい御返事です。[r]それでは洗面所へ参りましょうね。寄り道はナシですよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace C 1]
+[charaFace D 1]
+[charaFace E 6]
+[charaFadein C 0.1 0]
+[charaFadein D 0.1 1]
+[charaFadein E 0.1 2]
+
+＠幼年系サーヴァントたち
+はーい！
+[k]
+
+[messageOff]
+[se ad59]
+[seVolume ad59 0 0.7]
+[charaFadeout E 0.4]
+[charaMove E 296,0 0.4]
+[wt 0.2]
+
+[charaFadeout D 0.4]
+[charaMove D 40,0 0.4]
+[wt 0.3]
+
+[charaFadeout C 0.4]
+[charaMove C -216,0 0.4]
+[wt 0.4]
+
+[seVolume ad59 1.4 0]
+[wt 1.4]
+
+[se ad8]
+[seStop ad59 0.3]
+[wt 2.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+[charaFace B 1]
+＠マシュ
+……さすが巴さん。[r]幼年系サーヴァントの皆さんに対する見事な引率ぶりは、
+[k]
+
+＠マシュ
+カルデアの英霊の中でも五本の指に入るかと。[r]何か、コツがあったりするのでしょうか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠巴御前
+いえ、いえ、特別なことは何も。[r]幼子の扱いには慣れておりますし……
+[k]
+
+＠巴御前
+何より、ここにいるのは素直で佳い子ばかりですので。[r]苦労など微塵もありませぬ。
+[k]
+
+[charaFace A 0]
+＠巴御前
+此度の[#しみゅれえたあ]でも、[r]皆、はしゃぎつつも[#てきぱき]とマスターの指示をこなし、
+[k]
+
+＠巴御前
+実に見事な働きを見せておりました。[r]マスター。後で是非、褒めてあげてくださいませ。
+[k]
+
+？1：そうだね
+
+[messageOff]
+[wt 0.4]
+
+[charaFace A 1]
+[wt 1.4]
+
+？2：まずは巴さん、ありがとう
+
+[charaFace A 3]
+
+＠巴御前
+あ、私にではなく……
+[k]
+
+[charaFace A 1]
+
+＠巴御前
+いえ。まずは、と仰っておりましたね。[r]ありがとうございます。
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠マシュ
+では、わたしは訓練関係のデータをまとめた後、[r]ダ・ヴィンチちゃんへ報告に行ってきます。
+[k]
+
+[charaFace B 13]
+
+＠マシュ
+どうぞ、先輩はごゆっくり。
+[k]
+
+＠マシュ
+自室でのんびりするもよし、[r]レクリエーションルームで遊ぶもよし、です。
+[k]
+
+＠マシュ
+朝からずっと訓練でしたので、[r]休むのもまた任務のひとつかと。
+[k]
+
+？1：マシュも根を詰めすぎないようにね
+
+[charaFace B 13]
+
+＠マシュ
+ありがとうございます、先輩。
+[k]
+
+[charaFace B 1]
+
+？2：じゃあ、終わったら食堂で合流しよう
+
+[charaFace B 12]
+
+＠マシュ
+あ、でも、終わるのは夜になりますが……
+[k]
+
+[messageOff]
+[wt 0.7]
+
+[charaFace B 6]
+[wt 1.1]
+
+[charaFace B 1]
+
+＠マシュ
+あ、夕食をご一緒にという意味ですね。[r]了解です。
+[k]
+
+？！
+
+＠マシュ
+それでは、お先に失礼します！
+[k]
+
+[messageOff]
+[se ade74]
+[charaFace B 13]
+[charaFadeout B 0.4]
+[wt 0.3]
+
+[seVolume ade74 1.2 0]
+[wt 1.0]
+
+[se ad8]
+[seStop ade74]
+[wt 2.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠巴御前
+……。[r]……。
+[k]
+
+＠巴御前
+………………[wt 0.3][charaFace A 1][charaMoveReturn A 0,-6 0.3]ふむ。[wt 0.3]
+[k]
+
+＠巴御前
+…………………………[wt 0.4][charaMoveReturn A 0,-2 0.3]ふむ[wt 0.3][charaMoveReturn A 0,-2 0.3]ふむ！[wt 0.3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.2]
+[wt 1.2]
+
+[charaFace A 5]
+
+＠巴御前
+[f large]成[messageShake 0.04 2 2 0.4]る程！
+[k]
+
+[messageShakeStop]
+[charaFace A 1]
+＠巴御前
+マスター。マスター。[bgm BGM_EVENT_7 0.1][r]付かぬ事をお伺いしますが[line 3]
+[k]
+
+＠巴御前
+[&貴方:貴女]は、マシュ殿と仲がよろしいのですね。[r]うんうん。それはとても宜しいことかと思います。
+[k]
+
+[charaFace A 3]
+
+＠巴御前
+それで……ですね？[r]マスター。
+[k]
+
+＠巴御前
+時に、マスター。[r]お若い身の[&貴方:貴女]にこう尋ねるのは[#不躾:ぶしつけ]とは思いつつ、
+[k]
+
+＠巴御前
+[&貴方:貴女]は、そのう、[r]故郷には幾人ほど残しておられるのでしょうか。
+[k]
+
+？1：何を？
+
+？！
+
+[charaFace A 0]
+
+＠巴御前
+え、ええとその……[r]ですから……
+[k]
+
+[messageOff]
+[wt 0.7]
+[charaFaceFade A 3 0.8]
+[charaShake A 0.04 2 0 0.8]
+[wt 1.2]
+＠巴御前
+[f small][#懸想人:けそうびと]を……[wt 0.4]に、ございます。
+[k]
+
+＠巴御前
+あっ。当世の風習についてはよく分かりませぬので、[r]正式に婚姻を果たしているか等はここでは問いませぬ！
+[k]
+
+[charaFace A 1]
+
+＠巴御前
+実際のところ、どうなのでしょう？[r]お若い身であれば未だ、ということも充分ありえますが、
+[k]
+
+＠巴御前
+当世でも早い人は早いと孔明殿からお聞きしまして、[r]であればマスターも或いはそうなのかしら、と。
+[k]
+
+[charaFace A 3]
+
+＠巴御前
+ど[messageShake 0.04 2 2 0.7]、[wt 0.2]ど、[wt 0.2]どうなのです？[r]故郷に残した想い人がおありですか？
+[k]
+
+[messageShakeStop]
+
+＠巴御前
+そ、それとも[#まっさら]な身でおられますか？
+[k]
+
+？1：まっさら　ですか
+？2：まっさら　とは一体……
+
+？！
+
+[charaShake A 0.04 3 0 0.6]
+
+＠巴御前
+い、い、いえ。あの、その……
+[k]
+
+[charaShakeStop A]
+＠巴御前
+根掘り葉掘り聞くつもりはないのですが、[r]マシュ殿の甲斐甲斐しい姿を眺めていたら、ふと……。
+[k]
+
+＠巴御前
+思ってしまったのです。[r]嗚呼、マシュ殿はどのようにお考えなのかしら、と。
+[k]
+
+[charaFace A 1]
+
+＠巴御前
+マスターは言わば一軍の将、人理の最前線にて戦う御方。[r]しかし決してカルデアを故郷とはしていない身。
+[k]
+
+＠巴御前
+ならば故郷には家族や友、[r]或いは[#懸想人:けそうびと]なぞ、居ておかしくはないのでは、と。
+[k]
+
+
+？1：[#懸想人:けそうびと]？
+
+[charaFace A 3]
+
+＠巴御前
+ええと、ですね。[r]当世風に申し上げれば……恋人……でしょうか？
+[k]
+
+？2：恋人っていう意味の言葉だっけ
+
+[charaFace A 3]
+
+＠巴御前
+さ、左様です。[r]当世風に言えばそのようになるかと……
+[k]
+
+？！
+
+？1：いやいやいやいやいやいやいやいやいや
+？2：いません！
+
+
+？！
+
+[charaShake A 0.04 1 2 0.4]
+
+＠巴御前
+まあ！
+[k]
+
+[charaShakeStop A]
+＠巴御前
+数多の英霊を率いて戦うマスターなれば、[r]故郷には[#懸想人:けそうびと]のひとりふたり、と思いかけましたが……
+[k]
+
+＠巴御前
+やはりマスターはお若い身、[r]このような話は早かったのですね！？
+[k]
+
+[charaShake A 0.04 3 0 0.8]
+
+[charaFace A 3]
+
+＠巴御前
+あわわわわわわわわわわわ……[r]こ、こ、これは大変失礼いたしました。
+[k]
+
+[charaShakeStop A]
+
+＠巴御前
+やはりマスターはきちんと節度を重んじておられる！[r]不意に妙なことを考えた巴をお許しくださいっ。
+[k]
+
+[charaFace A 4]
+
+＠巴御前
+……。[r]……。
+[k]
+
+[charaFace A 3]
+
+＠巴御前
+…………い、いちおうご確認をば。マスター。
+[k]
+
+＠巴御前
+もしかしなくとも、[r][&貴方:貴女]は[#お子をお持ちではない]のですね。
+[k]
+
+？1：お持ちではないですね
+？2：子供はいませんね……
+
+？！
+
+＠巴御前
+そう、ですか。[r]そう……。
+[k]
+
+[charaFace A 0]
+
+＠巴御前
+幼子の姿をした英霊たちに好かれるマスターならば……[r]当世を生きる一軍の将ともなれば或いは、と……
+[k]
+
+＠巴御前
+思いかけてしまった巴の愚かさをお許しください。[r]申し訳ありません……。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.2]
+[charaFaceFade A 4 1.2]
+[wt 1.2]
+
+＠巴御前
+……。[r]……。
+[k]
+
+？1：もしかして、子供を持つ親と話をしたいのかな？
+
+[charaFace A 0]
+
+＠巴御前
+…………は、はい。
+[k]
+
+[bgm BGM_EVENT_2 0.1]
+
+？2：子供を持った経験のある英霊はいると思うよ
+
+[charaFace A 0]
+
+＠巴御前
+……そうですね。
+[k]
+
+[bgm BGM_EVENT_2 0.1]
+＠巴御前
+但馬さまやマリー殿とはよくお話を。[r]お陰様で、私は多くを勉強させていただきました。
+[k]
+
+＠巴御前
+たとえ、時と場所が違えども……
+[k]
+
+＠巴御前
+尊くも眩き、愛おしい、[r]変わらぬものが世にはあるのだと私は学びました。
+[k]
+
+＠巴御前
+だからこそ[line 3]
+[k]
+
+？！
+
+＠巴御前
+今、子を育てておられる人の話を聞きたかったのです。[r]私に何ができる訳ではありませんが……
+[k]
+
+[charaFace A 4]
+
+＠巴御前
+いえ、私は、私のために聞いてみたかった。
+[k]
+
+＠巴御前
+一言だけでも……。
+[k]
+
+[messageOff]
+[wt 0.7]
+
+[charaFace A 0]
+＠巴御前
+いえ。[#我:わ]が[#儘:まま]を申してすみません。[r]我らの置かれた状況を想えば、難しいのは当然ですね。
+[k]
+
+[charaFace A 1]
+
+＠巴御前
+それではまた、明日にでも。[r]戦闘訓練でも何らかの作戦でも、ぜひお呼びください！
+[k]
+
+＠巴御前
+巴御前、[&貴方:貴女]の御力になります。
+[k]
+
+？1：待って
+？2：もう少し話をしよう
+
+？！
+
+[charaFace A 3]
+
+＠巴御前
+は[line 3]
+[k]
+
+？1：巴さんの家族のこと
+？2：今まで、あまり聞いたことなかったよね
+
+
+？！
+
+[charaFace A 3]
+＠巴御前
+……………………………………[wt 0.7][charaFace A 0]はい。
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[bgmStop BGM_EVENT_2 1.2]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 10000]
+[wt 0.4]
+
+[fadein black 0.4]
+[wait fade]
+
+[fadeout black 0.4]
+[wait fade]
+
+[charaSet A 2021002 1 巴御前]
+
+[scene 20805]
+
+[se adm13]
+[se ad452]
+[seVolume ad452 0 0]
+[fadein black 1.2]
+[wait fade]
+
+[seVolume ad452 0.2 1.0]
+[wt 0.9]
+[seStop ad452 0.3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.6]
+
+＠巴御前
+……足元、お気をつけくださいませ。
+[k]
+
+＠巴御前
+[#しみゅれえたあ]とは言えども夜の森、[r]木の根や[#蔦:つた]に足を取られれば転びもしましょう。
+[k]
+
+[charaFace A 5]
+
+＠巴御前
+此処での怪我は現実には残らぬとのことですが、[r]主君に怪我をさせてしまっては英霊の名折れ。
+[k]
+
+＠巴御前
+さ。こちらへ。
+[k]
+
+[messageOff]
+[se ad452]
+[charaFadeout A 0.4]
+[charaMove A -30,0 0.4]
+[wt 0.2]
+
+[wipeout leftToRight 1.2 1.0]
+[wait wipe]
+
+[seVolume ad452 1.0 0.6]
+[wt 1.0]
+
+[wipein rightToLeft 1.2 1.0]
+[wait wipe]
+
+[seVolume ad452 0.4 1.0]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 30,0]
+[charaMove A 1 0.4]
+[wt 0.6]
+
+[seStop ad452 0.1]
+[wt 0.1]
+
+[charaFace A 0]
+
+＠巴御前
+このあたりで宜しいでしょうか。
+[k]
+
+[charaFace A 1]
+
+＠巴御前
+お気遣いいただき、恐縮です。[r]巴の昔語りなぞに……
+[k]
+
+？1：気にしないで
+？2：管制室は他の人たちもいるからね
+
+？！
+
+＠巴御前
+……はい。
+[k]
+
+[messageOff]
+[seVolume adm13 1.1 0.4]
+[charaFace A 0]
+[wt 1.1]
+
+＠巴御前
+……。[r]……。
+[k]
+
+[seStop adm13 1.8]
+[bgm BGM_EVENT_11 0.1]
+
+＠巴御前
+私の家族……[r]マスターには、どこまでお伝えしていたでしょうか。
+[k]
+
+
+＠巴御前
+私は、義仲さま[line 3]
+[k]
+
+＠巴御前
+[line 3]木曾義仲の[#乳父:めのと]である[#中原兼遠:なかはらのかねとお]の娘です。[r]幼少より義仲さまとは面識がありました。
+[k]
+
+[charaFace A 1]
+
+＠巴御前
+兄たる兼光、兼平よりも、[r]よほど義仲さまには良くしていただいたのです。
+[k]
+
+[charaFace A 0]
+
+＠巴御前
+私は、兄たちとは母が違い……
+[k]
+
+[messageOff]
+[charaFace A 5]
+[wt 1.2]
+
+[charaFace A 0]
+＠巴御前
+思えば、母方の血なのやもしれません。[r]我が身に流るる鬼種の力の[#所以:ゆえん]は。
+[k]
+
+＠巴御前
+後世の伝説では、我が母は[#巴淵:ともえがふち]の竜神の御力にて孕み、[r]私を産み落としたという逸話もあるそうです。
+[k]
+
+＠巴御前
+そのせいでしょうか。[r]私は、あまり、兄君たちとは顔を合わせることなく……
+[k]
+
+＠巴御前
+木曾谷ではいつも、[r][#駒王丸:こまおうまる]さま[line 3]義仲さまと共におりました。
+[k]
+
+？1：義仲さんとは幼馴染みだったんだね
+？2：ずっと一緒だったんだね
+
+？！
+
+[messageOff]
+[charaFace A 1]
+[wt 1.2]
+
+[charaFace A 0]
+
+＠巴御前
+はい。
+[k]
+
+＠巴御前
+私が鬼のように成り果てても、[r]この額におぞましき角が[#にょきり]と[#顕:あらわ]れようとも、
+[k]
+
+＠巴御前
+義仲さまだけは、表情ひとつお変えにならず、[r]このように仰ったのです。
+[k]
+
+＠巴御前
+“なるほど、おまえの怪力の源はそれか。[r][f small]  [f -]であれば何を恥じ入ることがあろう、誇るがいい”
+[k]
+
+＠巴御前
+“その力あればこそ、おまえは俺の片腕になれるぞ”
+[k]
+
+＠巴御前
+……そして、[#呵々大笑:かかたいしょう]してくださいました。
+[k]
+
+＠巴御前
+それから……[r]そう、義仲さまの妻の一人となった後のこと。
+[k]
+
+＠巴御前
+[#倶利伽羅峠:くりからとうげ]の戦いの少し前です。[r]ある御方が、私に[line 3]
+[k]
+
+[messageOff]
+[fadeout black 1.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaSet A 2021001 1 巴御前]
+
+[scene 46103]
+[effect bit_sepia01]
+[wipeFilter cinema 0.5 0]
+[wt 0.8]
+
+[fadein black 1.4]
+[wait fade]
+
+
+＠山吹御前
+……はあ、もう。[r]巴殿はそんなにもお強いのにどうして[#か弱い]のかしら。
+[k]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.2 0,-50]
+[charaScale A 1.1]
+[wt 0.1]
+
+＠巴御前
+……。[r]……。
+[k]
+
+＠巴御前
+私は……[r]真に、義仲さまのお役に……立てているのでしょうか？
+[k]
+
+＠巴御前
+弓を取っては兄君たち木曾四天王に及ばず、[r]妻として、女としては貴方や冬姫さまに遠く及ばず……
+[k]
+
+＠巴御前
+未だ子を成すこともなく……
+[k]
+
+＠巴御前
+だというのに、我が身には、[r]二本の人ならざる証までもがありありと[#顕:あらわ]れて……
+[k]
+
+＠巴御前
+……。[r]……。
+[k]
+
+＠巴御前
+このような私が、果たして、[r]義仲さまの目指すところまで付いてゆけるのか……[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠山吹御前
+胸を張りなさい。[r]私たちの巴。
+[k]
+
+＠山吹御前
+冬姫様も、この私も、貴女を信じておりますよ。[r]だいたい幼少のみぎりからの馴染みならば私も同じです。
+[k]
+
+＠山吹御前
+私たちはそれぞれが義仲様の妻です。[r]まあ、本来ならばご寵愛の多寡をめぐり相争うでしょうし、
+[k]
+
+＠山吹御前
+実際のところ私と冬姫様の仲はさほど良くはありません。[r]でもね、巴。私たちの巴。
+[k]
+
+＠山吹御前
+貴女だけは別です。
+[k]
+
+＠山吹御前
+貴女は、血煙ただよう[#戦場:いくさば]にあっても尚、[r]義仲様に付き添える女です。戦える女なのです。
+[k]
+
+＠山吹御前
+私たちが祈るより他にない時、[r]貴女は、その身に授かった力を振るうことができます。
+[k]
+
+＠山吹御前
+これを幸いと言わずして、何と言いましょうか。巴。
+[k]
+
+＠山吹御前
+貴女は、私たちの分まで……[r]義仲様をお助けすることができるのよ。
+[k]
+
+＠山吹御前
+正室、側室、そんなものが戦場で何の役に立つでしょう。[r]貴女は間違いなく“木曾義仲と共に在る女”です。
+[k]
+
+＠山吹御前
+ええ、鬼の角がどうしましたか！[r]そのように[#鉢金:はちがね]と合わせれば戦場では目立ちませぬ！
+[k]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 0,-50]
+
+＠巴御前
+山吹さま……！
+[k]
+
+＠巴御前
+そのように……[r]私のことを、想ってくださっていただなんて……
+[k]
+
+[charaFace A 5]
+
+＠巴御前
+私、私[line 3]心に決めました。
+[k]
+
+[charaFace A 2]
+＠巴御前
+ならば私は、義仲さまを愛する女たちの総名代として戦い、[r]必ずや……！
+[k]
+
+＠巴御前
+万が一に義仲さまが戦場で最期を迎える時には、[r]私が、皆さまになり代わり、看取らせていただく覚悟！
+[k]
+
+＠山吹御前
+[charaTalk B]
+…………巴。
+[k]
+
+[charaFace A 5]
+
+＠巴御前
+はいっ。
+[k]
+
+[charaFace A 3]
+[charaShake A 0.06 2 2 0.2]
+
+＠山吹御前
+[charaTalk B]
+負[messageShake 0.04 4 3 0.8]けた時のことなんて考えてどうするのーっ！[r]巴ーっ！
+[k]
+
+[messageShakeStop]
+
+＠巴御前
+は[messageShake 0.04 3 3 1.1]、[wt 0.3]は、[wt 0.3]は、[wt 0.3]はいーっ！
+[k]
+
+[messageOff]
+[fadeout black 1.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaMoveScale A 1.0 0.1]
+[wt 0.1]
+
+[wipeOff]
+[scene 10000]
+[effectStop bit_sepia01]
+[wt 0.4]
+
+[charaSet A 2021002 1 巴御前]
+
+[fadein black 0.4]
+[wait fade]
+
+[scene 20805]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[fadein black 1.4]
+[se adm13]
+[seVolume adm13 1.4 0.6]
+[wait fade]
+＠巴御前
+…………[#倶利伽羅峠:くりからとうげ]の戦いでは、大勝いたしました。[seStop adm13 3.2]
+[k]
+
+＠巴御前
+平家の大軍勢を相手に義仲さまは見事に戦われた。[r]そして京の都へと入り……
+[k]
+
+[charaFace A 5]
+
+＠巴御前
+……。[r]……。
+[k]
+
+＠巴御前
+すべてが、上手く廻るものばかりではありません。[r]遂には征夷大将軍となった義仲さまですが……
+[k]
+
+[charaFace A 4]
+＠巴御前
+源頼朝公の命を受けた源[#範頼:のりより]、源義経によって[r]命を奪われました。
+[k]
+
+＠巴御前
+そして、私は……[line 4]
+[k]
+
+？1：彼の最期を看取れなかったんだね
+
+＠巴御前
+はい。
+[k]
+
+？2：……………………
+
+＠巴御前
+…………義仲さまの最期を、看取れなかった。
+[k]
+
+？！
+
+[messageOff]
+[wt 0.3]
+
+[charaFaceFade A 0 0.6]
+[wt 1.2]
+
+[charaFace A 5]
+
+＠巴御前
+山吹さまとの約定は守れなかった。[r]義仲さまは……
+[k]
+
+＠巴御前
+私に申し付けたのです。[r]生きろ、と。
+[k]
+
+[charaFace A 0]
+
+＠巴御前
+義仲さまの御言葉の意味のひとつを、私は後に知りました。[r]我が身は[#義仲さまの子を授かっていた]のです。
+[k]
+
+
+？1：それって……
+？2：朝比奈三郎義秀さん
+
+？！
+
+[charaFace A 1]
+
+＠巴御前
+はい。義秀です。
+[k]
+
+＠巴御前
+表向きには和田義盛さまとの間に成した子としましたが、[r]間違いなく。義仲さまの子にございます。
+[k]
+
+＠巴御前
+……巴は、人の女として義秀を育てました。
+[k]
+
+＠巴御前
+その頃には、もう、[r]私の額からは鬼種、混血の証たる角は消えていて……
+[k]
+
+＠巴御前
+義秀を育てた後には義仲さまの[#菩提:ぼだい]を弔い、[r]人として、私は一生を終えました。
+[k]
+
+＠巴御前
+[#骸:むくろ]も。まるで人のように。[r]何ら奇異なものではなかったと聞きます。
+[k]
+
+[charaFace A 0]
+
+＠巴御前
+……。[r]……。
+[k]
+
+[charaFace A 5]
+＠巴御前
+鬼の血の衝動の[#悉:ことごと]くに耐えて生きたつもりでいましたが、[r]実際のところ、果たしてどうだったのか。
+[k]
+
+＠巴御前
+義仲さまの最期を看取っていたとしたら、私は[line 3]
+[k]
+
+＠巴御前
+愛殺反転し、我が子義秀さえ喰らう、[r]まことの鬼と成り果てていたやもしれません。
+[k]
+
+[charaFace A 0]
+
+＠巴御前
+ともすれば義仲さまは……[r]この私を、二重の意味で救ってくださったとも思うのです。
+[k]
+
+[messageOff]
+[wt 0.6]
+[charaFaceFade A 5 0.5]
+[wt 0.5]
+
+[charaFace A 3]
+[charaShake A 0.04 2 2 0.3]
+[wt 0.2]
+
+＠巴御前
+す、すみませんマスター。[r]結局、義仲さまの話ばかりになってしまって……！？
+[k]
+
+＠巴御前
+あ、あれ？[r]あれれ？
+[k]
+
+＠巴御前
+おかしいですね……[r]私、家族の話をするつもりでいたのに……
+[k]
+
+＠巴御前
+特に今日は、子の話を！[r]義秀の話をたっぷりするつもりで[line 3]あれぇ……？
+[k]
+
+＠巴御前
+どこから変わってしまったのか……[r]こ、これでは、ただただ義仲さまの話をしただけに！？
+[k]
+
+＠巴御前
+ええとええとぉ、幼少の……
+[k]
+
+＠巴御前
+で、でも、うーんうーん、[r]あの頃からやはり[#駒王丸:こまおうまる]さまには良くしていただいて……
+[k]
+
+？1：大丈夫、伝わったよ
+
+＠巴御前
+そ、そうでしょうかっ。
+[k]
+
+？2：巴さんは今も義仲さんと義秀さんが好きなんだね
+
+[charaFace A 0]
+
+＠巴御前
+は[line 3]
+[k]
+
+[charaFace A 1]
+
+＠巴御前
+はい！　それはもう！
+[k]
+
+？！
+
+[charaFace A 0]
+＠巴御前
+我が新たな主君、[%1]さま。[r]義仲さまや義秀がもしも、[&貴方:貴女]とお会いしたならば……
+[k]
+
+＠巴御前
+きっと、親子や兄弟のように[r]親しくおなりになったに違いありません。
+[k]
+
+[charaFace A 1]
+
+＠巴御前
+なぜならば[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.0]
+[se ad9]
+[seVolume ad9 0 0.8]
+[charaTalk J]
+
+
+[charaFadein J 0.6 0,-200]
+[charaFadeTime J 0.6 0.4]
+[wt 0.2]
+[charaFace A 5]
+[wt 0.4]
+[charaFadeout J 0.9]
+[wt 0.9]
+[charaFadein J 0.6 0,-200]
+[charaFadeTime J 0.6 0.4]
+[wt 0.6]
+[charaFadeout J 0.9]
+[wt 0.9]
+[charaFadein J 0.6 0,-200]
+[charaFadeTime J 0.6 0.4]
+[wt 0.6]
+[charaFadeout J 0.9]
+[wt 0.4]
+
+[charaFadeout J 0]
+[wt 0.1]
+
+[seStop ad9 0.4]
+[wt 0.3]
+
+＠巴御前
+むむっ。[bgm BGM_EVENT_3 0.1]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+
+[branch lblClear2 IsClear true]
+
+[label lblNotClear2]
+
+
+[charaPut I 1]
+[charaEffect I bit_talk_10_MiddleLevel]
+[wt 0.2]
+
+[se ad13]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 0,-90]
+[wt 0.3]
+
+＠F：ダ・ヴィンチ
+あー、ごめんよ二人とも。[r]シミュレーター使用中だってのは分かっていたんだけど！
+[k]
+
+[charaFace F 4]
+＠F：ダ・ヴィンチ
+寝ぼけたスタッフがウイルススキャンを掛けた結果、[r]うろついてたキミたちが異物だと判定されてしまった。
+[k]
+
+[charaFace F 2]
+
+＠F：ダ・ヴィンチ
+なので、例外的に強力なエネミーが……[r]言ってしまえばワクチンデータが出現するはずだ！
+[k]
+
+＠F：ダ・ヴィンチ
+こっちでも急いで停止を試みてるけど、[r]ごめん！　当座、なんとかしのいでくれたまえ！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+[wt 0.4]
+
+[branch lblConf2]
+
+[label lblClear2]
+
+[charaPut I 1]
+[charaEffect I bit_talk_10_MiddleLevel]
+[wt 0.2]
+
+[se ad13]
+[charaTalk G]
+[charaFace G 34]
+[charaFadein G 0.1 1]
+[wt 0.3]
+
+＠G：ダ・ヴィンチ
+あー、ごめんよ二人とも。[r]シミュレーター使用中だってのは分かっていたんだけど！
+[k]
+
+[charaFace G 31]
+＠G：ダ・ヴィンチ
+寝ぼけたスタッフがウイルススキャンを掛けた結果、[r]うろついてたキミたちが異物だと判定されてしまった。
+[k]
+
+＠G：ダ・ヴィンチ
+なので、例外的に強力なエネミーが……[r]言ってしまえばワクチンデータが出現するはずだ！
+[k]
+
+[charaFace G 4]
+
+＠G：ダ・ヴィンチ
+こっちでも急いで停止を試みてるけど、[r]ごめん！　当座、なんとかしのいでくれたまえ！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+[wt 0.4]
+
+[label lblConf2]
+
+
+？1：まさかの人的ミス！
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠巴御前
+あわわわ。[r]何であっても完璧とはいかぬものですね……
+[k]
+
+[charaFace A 5]
+
+？2：なんとかしておく、大丈夫
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠巴御前
+はい、マスター。
+[k]
+
+？！
+
+[messageOff]
+[se ad51]
+[wt 0.7]
+
+[charaFace A 5]
+
+＠巴御前
+[line 3]それでは。主君を助ける武者として、巴御前！
+[k]
+
+[charaFace A 2]
+＠巴御前
+半日であろうと一日であろうと、[r][%1]殿をお守りして差し上げましょう！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.6]
+
+[se ad25]
+[wt 1.1]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠巴御前
+[f large]参[messageShake 0.04 2 2 0.5]ります！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

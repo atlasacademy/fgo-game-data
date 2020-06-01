@@ -1,0 +1,965 @@
+
+
+
+＄03-00-06-25-3-0
+
+
+
+[soundStopAll]
+
+[charaSet A 1098123010 1 ムニエル]
+[charaSet B 1098191200 1 アデーレ]
+[charaSet C 1098191300 1 マカリオス]
+[charaSet D 1017001 1 武蔵]
+
+
+[charaSet S 5009000 1 エフェクト用ダミー]
+[charaSet T 5009000 1 エフェクト用ダミー]
+
+
+[scene 86301]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.5]
+
+[charaPut T 1]
+[charaEffect T bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+
+＠ムニエル
+…………あー。その、だな。起きてるか？
+[k]
+
+[charaFace A 1]
+＠ムニエル
+ああ、起きてたか。[r]実はおまえに見せなきゃならんモノがあるんだ。
+[k]
+
+[charaFace A 5]
+＠ムニエル
+俺としては悩んだんだが……[r]やっぱり、見せた方がいいと思うんだよ。
+[k]
+
+[charaFace A 0]
+＠ムニエル
+疲れてる時に悪い。[r]でも、後で見せるのもどうかと……な……。
+[k]
+
+？1：見せなきゃいけないモノ……？
+
+？！
+
+＠ムニエル
+[line 3]破神同盟基地からの映像データだ。
+[k]
+
+
+？1：……！
+
+？！
+
+＠ムニエル
+タイムスタンプを確認したところ、[r]こいつが撮影されたのはデメテル撃破の後らしい。
+[k]
+
+＠ムニエル
+送信されたタイミングは少しずれて、[r]おまえたちが軌道大神殿に向かう直前あたり。
+[k]
+
+
+＠ムニエル
+どういう理屈か、映像規格はカルデア式だ。[r]オリュンポスの技術ってのは凄いな。
+[k]
+
+＠ムニエル
+データはもう、[r][#個室:そこ]の端末に送ってある。
+[k]
+
+＠ムニエル
+……見るか見ないかは、おまえが決めろ。[r]俺たちはもう見た。
+[k]
+
+[messageOff]
+[charaFace A 5]
+[wt 1.2]
+
+[charaFace A 0]
+＠ムニエル
+見た上で、ゴルドルフ所長は[r]連中全員を[#未帰還者]に指定した。
+[k]
+
+＠ムニエル
+“連中が本当に死亡したかは断定できない。[r][f small]  [f -]いつか我々に合流するかもしれない”
+[k]
+
+＠ムニエル
+とかなんとか……。
+[k]
+
+[charaFace A 5]
+＠ムニエル
+おまえたちもおまえたちなら、[r]おっさんもおっさんだ。
+[k]
+
+＠ムニエル
+悪いとは言わないけどな。[r]……感傷だって、時には必要なんだろう。
+[k]
+
+[charaFace A 1]
+＠ムニエル
+取りあえずは以上だ。[r]じゃあな。
+[k]
+
+[messageOff]
+[charaEffectStop T bit_talk_10_LowLevel]
+[charaFadeout A 0.1]
+[se ad15]
+[wt 0.5]
+[charaPut T 1200,1200]
+[wt 1.2]
+
+[se ad661]
+[wt 2.0]
+
+[se ad95]
+[wt 1.8]
+
+[seStop ad95 0.1]
+[wt 0.8]
+
+[se ad15]
+[wt 0.8]
+
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+
+
+[scene 10000]
+
+[effect bit_talk_security]
+
+[wt 1.0]
+
+[se ad31]
+[seVolume ad31 0 0]
+
+[seVolume ad31 1.0 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.5]
+
+
+[seStop ad31 0.1]
+[se ad539]
+
+[scene 92100]
+[wt 0.1]
+[scene 10000]
+[wt 0.1]
+[scene 92100]
+[wt 0.1]
+[scene 10000]
+[wt 0.5]
+[scene 92100]
+[wt 1.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_116 0.1]
+
+＠マカリオス
+[line 3]映ってるな。よし。
+[k]
+
+＠マカリオス
+あー、あー。音声よし。[r]問題ないな。
+[k]
+
+＠マカリオス
+録画準備完了。[r]これで後は、誰にも気付かれないように注意する。
+[k]
+
+＠マカリオス
+内輪揉めをしたい訳じゃないが、[r]組織には内部調査が必要、だからな。
+[k]
+
+＠マカリオス
+たとえ今は少人数でも、破神同盟は組織。[r]各員の内心は把握すべきだ。
+[k]
+
+[charaFace C 9]
+＠マカリオス
+……。[r]……。
+[k]
+
+[charaFace C 8]
+＠マカリオス
+こっそり録画ってのは趣味じゃないが……[r]やって当然だとエジソンも言ってたしな。うん。
+[k]
+
+＠マカリオス
+まあ、あくまで参考だ。
+[k]
+
+[messageOff]
+[se ad95]
+[wt 0.4]
+[charaFadeout C 0.4]
+[seStop ad95 0.8]
+[wt 1.8]
+
+[se ade74]
+[seVolume ade74 0 0.5]
+[seVolume ade74 0.8 1.0]
+[wt 0.6]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+[seStop ade74 0.1]
+[wt 0.4]
+
+＠アデーレ
+マカリオス？　どこ？
+[k]
+
+[charaFace B 4]
+＠アデーレ
+このあたりにいたと思ったけど、[r]個室の方かしら。もう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠武蔵
+んー。[r]アデーレちゃん、どうかした？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace D 9]
+[charaFadein D 0.1 2]
+[charaFace B 4]
+[charaFadein B 0.1 0]
+
+＠アデーレ
+マカリオスの姿が見えなくて。[r]頼み事があったのに……
+[k]
+
+[charaFace D 0]
+
+＠武蔵
+ふむふむ。[r]なら、私でよければ手伝いましょう。
+[k]
+
+[charaFace B 1]
+
+＠アデーレ
+ありがとう。でも、お気持ちだけ。[r]あなたとマシュさんのクリロノミアの調整をね、
+[k]
+
+＠アデーレ
+マカリオスにお願いしたかったの。
+[k]
+
+[charaFace D 8]
+
+＠武蔵
+ありゃ、残念。それは流石に[r]専門家じゃないと難しそう。
+[k]
+
+[charaFace B 6]
+
+＠アデーレ
+私たちも専門家ではないのだけど……
+[k]
+
+[charaFace D 0]
+
+＠武蔵
+でも、ソレ弄るようになって何年くらい？
+[k]
+
+[charaFace B 0]
+
+＠アデーレ
+千二百年くらいかしら。[r]あ。そうね、確かに他の世界の尺度なら……
+[k]
+
+[charaFace D 8]
+
+＠武蔵
+充分、専門家以上です！
+[k]
+
+[charaFace B 1]
+
+＠アデーレ
+そうみたい。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad95]
+[seVolume ad95 0 0.3]
+[seVolume ad95 0.8 1.0]
+[wt 0.6]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+[seStop ad95 0.1]
+[wt 0.4]
+
+＠マカリオス
+……なんだ、こんな所にいたのか姉さん。[r]ムサシも。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠アデーレ
+ああ、良かった。[r]マカリオス、あのね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠マカリオス
+クリロノミアの調整だろ。やっておく。[r]後遺症とかがないように処理しておかないとな。
+[k]
+
+[charaFace C 4]
+＠マカリオス
+それより、あー。[r]姉さん。ムサシ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_116 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+[charaFadein D 0.1 2]
+＠武蔵
+ん？
+[k]
+
+＠アデーレ
+なに？
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠マカリオス
+ちょっとした質問なんだが……[r]カルデアの連中の事、どう思ってる？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アデーレ
+どうって……
+[k]
+
+＠アデーレ
+私たち同盟を助けてくれる、同志だわ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠マカリオス
+ムサシは？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠武蔵
+んー、なんでしょう。[r]旅の仲間……とはちょっと違うかしら。
+[k]
+
+[charaFace D 8]
+＠武蔵
+ホームズさんの事は正直よく分かりません。[r]他の職員さんとかも、あんまり。話してないしね！
+[k]
+
+[charaFace D 7]
+＠武蔵
+でも、ええ。[r][%1][&君:]なら、好きよ。
+[k]
+
+[charaFace D 3]
+＠武蔵
+もちろんマシュも！[r]んー、好き好き、だーい好き！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+＠アデーレ
+まぁ……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠武蔵
+最初は[%1][&君:]の事しか[r][#碌:ろく]に知らなかったけどね。
+[k]
+
+[charaFace D 9]
+＠武蔵
+真面目な子かな？[r]とか、マシュはそんな第一印象だったけど……
+[k]
+
+
+[charaFace D 7]
+＠武蔵
+戦う姿を見てるとね。[r]ああ、そうか、って。
+[k]
+
+＠武蔵
+この[#娘:こ]と一緒にいたから、[r][%1][&君:]は……
+[k]
+
+＠武蔵
+……ああいう生き方ができてるんだなって。
+[k]
+
+
+[charaFace D 6]
+＠武蔵
+そう感じてからは、もう。[r]好きで好きで。お姉さんは大満足です！
+[k]
+
+＠武蔵
+あの二人が頑張る姿を見ていると、[r]こう、自然と笑顔になるくらい！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠アデーレ
+……いいわね、そういうの。[r]素敵だわ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠マカリオス
+なんだかよく分からん。[r]じゃあ、次の質問だ。
+[k]
+
+[charaFace C 0]
+＠マカリオス
+連中に何か要求したい事はあるか？[r]改善して欲しい不満点、とかでもいいんだが。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠武蔵
+むむ。なにその質問。[r]お[#白州:しらす]にいるような気分なんだけど。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+[charaShake C 0.02 3 3 0.3]
+[wt 1.0]
+
+＠マカリオス
+い、いや。ただの世間話だ。[r]他に何の意味もない。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+＠武蔵
+ほんとにぃ？
+[k]
+
+
+[messageOff]
+[charaFace D 7]
+[wt 1.2]
+
+[charaFace D 0]
+＠武蔵
+まあいいわ。えーと、[r]あの子たちにお願いをするとしたら、よね。
+[k]
+
+[charaFace D 9]
+＠武蔵
+そうね、んー。[r]……あの二人には、私の分まで……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アデーレ
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠武蔵
+あ、ううん何でもないわ。[r]今のなし。やり直しでお願いします。
+[k]
+
+[charaFace D 0]
+＠武蔵
+あの二人には[line 3]
+[k]
+
+[charaFace D 1]
+＠武蔵
+うん。元気でいて欲しい、かな！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠マカリオス
+な、なんだそれ。[r]要求でもなんでもないぞ、そんなの。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠武蔵
+仲良く、できるだけ長く元気で。[r]つらい思いとか、痛い思いとかしないように。
+[k]
+
+[charaFace D 7]
+＠武蔵
+それが、武蔵お姉さんから[r]あの二人へのたったひとつのお願いです！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠マカリオス
+…………まるで参考にならない。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠武蔵
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠アデーレ
+本当に、あの二人の事が好きなのね。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+[wt 1.2]
+
+[charaFace D 7]
+＠武蔵
+ええ、それはもう。[r]大好きサ！
+[k]
+
+[charaFace D 0]
+＠武蔵
+貴方たちはどう？[r]あの二人の事、どう思ってるの？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace B 0]
+[charaFadein C 0.1 -150,0]
+[charaFadein B 0.1 150,0]
+＠マカリオス
+オレたちが？
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠武蔵
+そ。貴方たちが。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 4]
+[charaDepth C 5]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFace B 0]
+[charaFadein C 0.1 -150,0]
+[charaFadein B 0.1 150,0]
+＠マカリオス
+ま、まあ……そうだな。[r]あいつらがいなけりゃデメテルは倒せなかった。
+[k]
+
+＠マカリオス
+というか、あいつらが来てからだ。[r]オレたち破神同盟が、本当に破神を為せたのは。
+[k]
+
+＠マカリオス
+だから[line 3]
+[k]
+
+
+[charaTalk B]
+[charaFace B 1]
+＠アデーレ
+私はあの子たち、好きよ。[r]作戦や同盟とは関係なく。
+[k]
+
+
+[charaTalk C]
+[charaFace C 3]
+＠マカリオス
+ね、姉さん！
+[k]
+
+
+[charaTalk B]
+[charaFace B 6]
+＠アデーレ
+こんな風に[#忙:せわ]しない、[r]戦いの中での出逢いでなかったら……
+[k]
+
+＠アデーレ
+友達になれたかしら、と思ったりもするくらい。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠武蔵
+当然。[r]というか、もう友達じゃないの？　違う？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 4]
+[charaDepth C 5]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFace C 4]
+[charaFadein B 0.1 150,0]
+[charaFadein C 0.1 -150,0]
+＠アデーレ
+……そうだといいけど。[r]どうでしょうね。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠武蔵
+そうだと思うけどなぁ。[r]ん～～～。
+[k]
+
+[charaFace D 9]
+＠武蔵
+あ。
+[k]
+
+[bgmStop BGM_EVENT_11 3.0]
+
+[charaFace D 1]
+＠武蔵
+そうだ。思い付いた。[r]宮本武蔵、ここで名案を思い付いてしまいました！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFace B 0]
+[charaFadein C 0.1 -150,0]
+[charaFadein B 0.1 150,0]
+＠マカリオス
+な、何だ急に。名案？
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠武蔵
+ええ、名案も名案。フツーに名案！[r]破神作戦のすべてが順調に進んで、無事終わったら、
+[k]
+
+[charaFace D 6]
+＠武蔵
+みんなで、酒宴を開きましょう。[r]美味しいお料理を用意して。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth B 4]
+[charaDepth C 5]
+
+[charaFace B 3]
+[charaFace C 7]
+[charaFadein B 0.1 150,0]
+[charaFadein C 0.1 -150,0]
+[wt 1.2]
+
+[bgm BGM_EVENT_78 0.1]
+
+[charaTalk on]
+[charaTalk depthOff]
+[charaTalk B]
+[charaFace B 1]
+＠アデーレ
+いいわね。素敵！
+[k]
+
+[charaTalk C]
+[charaFace C 8]
+＠マカリオス
+……それは、だな。作戦が完全成功した上に、[r]誰一人も欠ける事なく、時間の余裕があればの話だ。
+[k]
+
+＠マカリオス
+名案とは、到底[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠武蔵
+うまくいきます！[r]うまくいくように、頑張りましょう！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 4]
+[charaDepth C 5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace B 6]
+[charaFadein C 0.1 -150,0]
+[charaFadein B 0.1 150,0]
+＠マカリオス
+……。[r]……。
+[k]
+
+＠マカリオス
+……まあ、そうだな。[r]作戦の完全成功を目指すのは当然だ。
+[k]
+
+
+[charaTalk B]
+＠アデーレ
+なら、今から献立を考えないといけないわ。[r]そうね……何がいいかしら……
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠武蔵
+うどんは必須として！[r]あとは、そうね。全員に好きなものを聞いて回って、
+[k]
+
+[charaFace D 1]
+＠武蔵
+あ。ゴルドルフのおじさんにも、[r]とっておきのオムレツとかを用意してもらって！
+[k]
+
+[messageOff]
+[charaFaceFade D 13 0.8]
+[wt 1.4]
+
+＠武蔵
+とびきり、楽しいパーティーにしましょう！
+[k]
+
+
+[messageOff]
+[wt 2.0]
+
+[bgmStop BGM_EVENT_78 0.1]
+
+[se ade49]
+[fowardEffect bit_talk_03]
+[wt 0.3]
+
+[fadeout white 0.1]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+
+[scene 10000]
+[wt 2.0]
+
+[se ad31]
+[seVolume ad31 0 0]
+[seVolume ad31 1.5 1.0]
+
+[fadein white 1.5]
+[wait fade]
+[wt 3.0]
+
+
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[seStop ad31 2.0]
+
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

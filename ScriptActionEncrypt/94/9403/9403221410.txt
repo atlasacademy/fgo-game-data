@@ -1,0 +1,486 @@
+
+
+＄94-03-22-14-1-0
+[soundStopAll]
+
+
+[charaSet A 1098157500 1 エリザベート]
+[charaSet B 6013000 1 ファントム・オブ・ジ・オペラ]
+[charaSet C 11006000 1 サリエリ]
+[charaSet D 1098123200 1 ゴルドルフ]
+[charaSet E 1098162000 1 マシュ]
+[imageSet F back10000 1]
+[charaSet G 1098161300 1 雀（五官）]
+[charaSet H 1098161400 1 雀（初江）]
+[charaSet I 1098161200 1 雀（泰山）]
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+[charaScale F 1.01]
+[charaPut F 0,-200]
+[charaFadeTime F 0.1 1.0]
+
+[scene 69800]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk depthOff]
+[charaDepth F 0]
+[charaDepth B 1]
+[charaDepth C 2]
+[charaDepth A 3]
+[charaDepth J 4]
+
+[charaPut J 20,0]
+[charaEffect J bit_talk_spotlight]
+[charaTalk A]
+[charaFace B 0]
+[charaFadein B 0.1 -400,0]
+[charaFace A 0]
+[charaFadein A 0.1 20,0]
+[charaFace C 0]
+[charaFadein C 0.1 416,0]
+[se ad410]
+[charaFadeTime F 0.1 0.6]
+[wt 0.5]
+[se ade76]
+[seVolume ade76 0 0.0]
+[seVolume ade76 1.0 0.4]
+[wt 1.0]
+[bgm BGM_EVENT_49 0.1]
+[wt 0.5]
+
+＠エリザベート
+来たわ！[r]こんにちは！
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[seStop ade76 1.0]
+[bgm BGM_EVENT_49 1.0 0.4]
+[wait fade]
+[charaEffectStop J bit_talk_spotlight]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[charaScale F 1.0]
+[wt 0.7]
+
+[charaSet F 1098161000 1 雀（都市）]
+[charaSet J 1098161500 1 雀（平等）]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 0]
+[charaFace E 6]
+[charaFadein E 0.1 2]
+
+＠ゴルドルフ
+え。[r]（誰これ、というアイコンタクト）
+[k]
+
+＠マシュ
+え。[r]（誰でしょう、というアイコンタクト）
+[k]
+
+？1：え。（分からない、というアイコンタクト）
+？2：メタルバンド・シュラのエリザＪさんだーー！
+
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[bgm BGM_EVENT_49 0.3 1.0]
+[wt 0.3]
+
+
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0]
+[charaFace G 0]
+[charaFadein G 0.1 2]
+
+＠雀（泰山）
+げぇーーーー！？[r]なんでこんなところにエリザベートさんがチュン！？
+[k]
+
+＠雀（五官）
+信じられないチュン、鬼界のスーパーアイドルである[r]エリザベートさんがうちらの宴会場に来てくれてるチュン！？
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 0]
+[charaFace H 0]
+[charaFadein H 0.1 2]
+
+＠雀（平等）
+[#本気:マ ジ]チュン、破壊の化身と名高い[r]メタルモンスターの声が聞けるのかよチュン！？
+[k]
+
+＠雀（初江）
+ボクたちの日々の[#祈り:ストレス]が届いたんだチューーン！[r]エリザベートさん、退屈な日常をブッ壊してくれチューン！
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace I 0]
+[charaFadein I 0.1 -384,0]
+[charaFace F 0]
+[charaFadein F 0.1 -128,0]
+[charaFace G 0]
+[charaFadein G 0.1 128,0]
+[charaFace H 0]
+[charaFadein H 0.1 348,0]
+
+[cueSe Battle bac469]
+[charaMoveReturn I -384,25 0.5]
+[charaMoveReturn F -128,40 0.5]
+[charaMoveReturn G 128,10 0.5]
+[charaMoveReturn H 384,32 0.5]
+[wt 0.5]
+[cueSe Battle bac469]
+[charaMoveReturn I -384,32 0.5]
+[charaMoveReturn F -128,27 0.5]
+[charaMoveReturn G 128,39 0.5]
+[charaMoveReturn H 384,27 0.5]
+[wt 1.0]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+[#煩:うるさ]い家畜ども、[#罵倒:せいえん][#デストローーーイ:ありがとーーーーう]ーーー！[r]今夜もまとめて丸焼きにしてやるぜーーーーぇ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaFace G 0]
+[charaFadein G 0.1 -384,0]
+[charaFace H 0]
+[charaFadein H 0.1 -128,0]
+[charaFace I 0]
+[charaFadein I 0.1 128,0]
+[charaFace F 0]
+[charaFadein F 0.1 384,0]
+
+[cueSe Battle bac469]
+[charaMoveReturn G -384,25 0.5]
+[charaMoveReturn H -128,40 0.5]
+[charaMoveReturn I 128,10 0.5]
+[charaMoveReturn F 384,32 0.5]
+[wt 0.5]
+[cueSe Battle bac469]
+[charaMoveReturn G -384,32 0.5]
+[charaMoveReturn H -128,27 0.5]
+[charaMoveReturn I 128,39 0.5]
+[charaMoveReturn F 384,27 0.5]
+[wt 1.0]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+凄いわ、こんなに歓迎されたのはじめて！[r]地道なネット配信が功を奏したのね！
+[k]
+
+＠エリザベート
+[#雀:すずめ]しかいないけど！[r]なんか[#座布団:ざぶとん]敷き詰められてるけど！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠雀（都市）
+[#鬼:オーガ]格好いいチュン！　おニューのドレスチュン！[r]着物とメタルの相性は抜群チュンーーーー！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+そ、そう？　やっぱりそう思う？
+[k]
+
+＠エリザベート
+[#私:アタシ]も、“これ本気でＵＫのトップ狙えない？”[r]とか思っちゃったっていうか……
+[k]
+
+[charaFace A 0]
+
+＠エリザベート
+でも当然よね！　だって、[r][#火蜥蜴:サラマンダー]の皮を加工して作ったドレスなんだもの！
+[k]
+
+＠エリザベート
+もう一度言うわ！[r][#火蜥蜴:サラマンダー]の皮を加工して作ったドレスなんだもの！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+なんだと……！？[r]つまり火属性の幻獣の[#裘:かわ]、という事か！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[bgmStop BGM_EVENT_49 1.0]
+
+＠エリザベート
+オッス！　それじゃあ冷血にブチかましましょうか。
+[k]
+
+＠エリザベート
+オープニングナンバーは、[r]日本有数の悲恋を歌ったこの魔曲！
+[k]
+
+＠エリザベート
+『病み姫☆ストーキングドラゴン』！[r]お正月仕様で盛大にDisっていくわよーーー！
+[k]
+
+＠雀たち
+[charaTalk G]
+イェーーーーーイ！[r]焼き尽くせ安[#珍:チ]ューーーン！
+[k]
+
+[messageOff]
+[wt 0.2]
+[bgm BGM_EVENT_63 0.1]
+
+[charaTalk A]
+[charaEffect A bit_talk_voice01]
+[charaFace A 2]
+[wt 2.0]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[charaPut A 1200,1200]
+[charaEffectStop A bit_talk_voice01]
+[charaFadeout A 0.1]
+[wt 0.2]
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wt 0.2]
+
+
+[shake 0.07 8 8 0]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaRollMoveEx G 7.0 -3600 0,200]
+[charaMove F 900,0 1.5]
+
+[charaFace G 0]
+[charaFadein G 0.1 640,-200]
+[charaRollMoveEx F 7.0 3600 0,200]
+[charaMove G -1500,400 1.5]
+
+[charaFace H 0]
+[charaFadein H 0.1 900,-400]
+[charaRollMoveEx H 7.0 3600 0,200]
+[charaMove H -1500,800 1.5]
+
+[charaFace I 0]
+[charaFadein I 0.1 -1000,600]
+[charaRollMoveEx I 7.0 -3600 0,200]
+[charaMove I 1800,-1200 1.5]
+
+[wt 0.9]
+[shakeStop]
+[wt 0.1]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+
+＠マシュ
+ああ、エリザベートさんの[#竜の息吹:ソニックブレス]で[r][#雀:すずめ]の皆さんが……！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFadein F 0.1 1200,900]
+[charaRollMoveEx G 7.0 -3600 0,200]
+[charaMove F -600,0 1.2]
+
+[charaFace G 0]
+[charaFadein G 0.1 -1200,0]
+[charaRollMoveEx F 7.0 3600 0,200]
+[charaMove G 500,-600 1.2]
+
+[wt 1.0]
+
+[charaMove G 900,200 1.0]
+
+＠雀たち
+ヒ[charaMove F 300,-600 1.0]ュー！　最高だチューーン！[twt 0.6][charaMove F 1200,500 1.5][charaMove G -1200,800 1.0][r]まるで嵐の中を飛んでいるような気持ちチューーーン！
+[k]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+ゴムマリのように……楽しんでいる……だと……？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaSet F 1098161000 1 雀（都市）]
+[charaSet G 1098161300 1 雀（五官）]
+[charaSet H 1098161400 1 雀（初江）]
+[charaSet I 1098161200 1 雀（泰山）]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠エリザベート
+サイッコー！　[#私:アタシ]の歌に付いてこられる[r]ファンが地上にいたのね！
+[k]
+
+＠エリザベート
+続けていくわ、『恋のレッドナード・チェリーパイ』、[r]テクノアレンジで電子に変換してあげる！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace I 0]
+[charaFadein I 0.1 -384,0]
+[charaFace F 0]
+[charaFadein F 0.1 -128,0]
+[charaFace G 0]
+[charaFadein G 0.1 128,0]
+[charaFace H 0]
+[charaFadein H 0.1 348,0]
+
+＠雀たち
+チ[cueSe Battle bac469][charaMoveReturn I -384,25 0.5][charaMoveReturn F -128,40 0.5][charaMoveReturn G 128,10 0.5][charaMoveReturn H 384,32 0.5]ューーーン！　畳や壁が壊れ始めたけど[wt 0.5][r]構わないチューーン！　[cueSe Battle bac469][charaMoveReturn I -384,32 0.5][charaMoveReturn F -128,27 0.5][charaMoveReturn G 128,39 0.5][charaMoveReturn H 384,27 0.5]デッドチューーーン！
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠マシュ
+マスター、あんなに嬉しそうなエリザベートさんと[r][#雀:すずめ]さんたちの邪魔をするのは気が引けますが[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+うむ、このまま大広間を破壊されては元も子もない！[r]貴様が止めるのだ、[%1]！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[wt 0.7]
+
+？1：待ちたまえ！
+
+[charaFace A 2]
+
+＠エリザベート
+待たないわ！
+[k]
+
+？2：その角、悪魔的に可愛いね
+
+＠エリザベート
+最高の褒め言葉ね、ありがとう！[r]それ、[#私:アタシ]的にＡＥＤなキラー・ワードよ！
+[k]
+
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_63 0.4]
+[wait fade]
+[soundStopAll]
+[end]

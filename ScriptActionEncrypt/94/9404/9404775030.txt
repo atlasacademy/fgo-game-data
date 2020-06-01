@@ -1,0 +1,174 @@
+
+
+
+＄94-04-77-50-3-0
+
+
+[soundStopAll]
+
+[charaSet A 25005000 1 ボイジャー]
+[charaSet B 2016000 1 エミヤ・オルタ]
+[charaSet C 5025001 1 エジソン]
+[charaSet D 98001000 1 マシュ]
+[charaSet E 1098192800 1 マリー]
+[charaSet S 5009000 1 エフェクト用ダミー１]
+[charaSet T 5009000 1 エフェクト用ダミー２]
+
+[scene 96301]
+
+[charaPut S 1200,1200]
+[charaEffect S bit_talk_warp_starry_sky]
+[charaPut T 1200,1200]
+[charaEffect T bit_talk_warp_starry_sky]
+
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk depthOff]
+[charaDepth S 1]
+[charaDepth T 2]
+[charaDepth A 3]
+[charaDepth B 4]
+
+[charaPut B 0]
+[charaFace B 0]
+[charaSpecialEffect B wipeTimeRe 0 1.2]
+[charaPut A 2]
+[charaFace A 0]
+[charaSpecialEffect A wipeTimeRe 0 1.2]
+[wt 0.3]
+[charaPut S 0]
+[charaPut T 2]
+[se ade410]
+[charaEffectStop S bit_talk_warp_starry_sky]
+[charaEffectStop T bit_talk_warp_starry_sky]
+[wt 2.0]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaFadein A 0.0 256,0]
+[charaFadein B 0.0 -256,0]
+
+[charaFace A 11]
+
+＠ボイジャー
+……まだ、ほしぞらだ。[r]エリセには、だいぶとおいみたい。
+[k]
+
+＠エミヤ・オルタ
+ひと息に越えられる距離には限界があるらしいな。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エジソン
+歩みを止めず進もう、諸君。[r]それ以外に達成の道はない。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠マシュ
+はい、エジソンさん。[r]マシュ・キリエライト、前進します。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth E 4]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+
+＠マリー
+道々に、聞かせてくれないかしら？[r]ボイジャー、あなたとエリセさんの関係を。
+[k]
+
+＠ボイジャー
+……ぼくとエリセは、やくそくしたんだ。[r]いっしょに、[#おしまい]を、みとどけようって。
+[k]
+
+[charaFace E 4]
+
+＠マリー
+[#おしまい]？[r][#遊戯界:monde du jeu]を終わらせるってこと？
+[k]
+
+
+[charaFace A 4]
+＠ボイジャー
+うまく、いえないけど……。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠エミヤ・オルタ
+気をつけろ、小僧。[r]来るぞ……
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut S 1]
+[charaEffect S bit_talk_warp_starry_sky]
+[wt 0.4]
+[se ade410]
+[wt 1.7]
+[seStop ade410 0.3]
+[cameraMove 0.2 0,0 1.5]
+[cueSe Battle bac110]
+[wt 0.1]
+
+[fadeout white 0.2]
+[wait fade]
+
+[charaEffectDestroy S]
+[cameraHome 0]
+[scene 10000]
+[wt 1.5]
+
+[fadein white 1.0]
+[wait fade]
+
+[fadeout black 0.1]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

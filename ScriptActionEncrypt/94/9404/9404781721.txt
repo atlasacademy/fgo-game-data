@@ -1,0 +1,160 @@
+
+
+
+＄94-04-78-17-2-1
+
+
+[soundStopAll]
+
+
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 3043000 1 エリセ]
+[charaSet C 2016000 1 エミヤ・オルタ]
+[charaSet D 5025001 1 エジソン]
+[charaSet E 1098192800 1 マリー]
+[charaSet G 98115000 1 エフェクト用]
+
+[scene 47001]
+
+[pictureFrame cut170_gameframe_dark]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[pictureFrame]
+[pictureFrameTop cut170_gameframe_dark]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+＠マシュ
+なんとか制圧完了です！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+＠マリー
+番人は、負けてもトークンにはならないのね？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠エミヤ・オルタ
+ゲームに取り込まれた存在という訳か。[r]こうなると、サーヴァントとも言い難いな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+＠エジソン
+見たまえ、諸君！[r]今来た方向で、何か光ったぞ！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_62 1.0 0.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_62 1.0 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[effect bit_talk_dice28]
+[voice 304300_0_X030]
+[wt 6.0]
+[wait voice 304300_0_X030]
+
+
+
+[charaTalk depthOff]
+[charaDepth G 2]
+[charaDepth B 1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+[wt 0.5]
+
+[charaPut G 0,0]
+[charaEffect G bit_talk_quickmove]
+[charaFadein B 0.1 0,-50]
+[charaMove B 0,-44 0.3]
+[se ad27]
+[se ad399]
+[seVolume ad399 0 0.7]
+[wt 0.1]
+[charaSpecialEffect B erasureReverse 1 0.3]
+[wt 0.5]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_62 0.7 0.5]
+[wait wipe]
+[wt 0.5]
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_62 0.7 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaEffect G bit_talk_quickmove]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 0,-44]
+[charaMove B 0,-50 0.2]
+[wt 0.1]
+[se ad27]
+[wt 0.4]
+
+[charaTalk depthOn]
+
+＠エリセ
+ふうん。こういうふうになるのか。
+[k]
+
+[charaFace B 0]
+
+＠エリセ
+プレイヤー同士の声も、状況も伝わるみたいだ。[r]まあそうでなくちゃ、競争の緊迫感も無いか。
+[k]
+
+[messageOff]
+[maskout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+
+

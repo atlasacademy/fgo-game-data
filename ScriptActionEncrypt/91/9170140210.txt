@@ -1,0 +1,1629 @@
+
+
+
+＄91-70-14-02-1-0
+
+[soundStopAll]
+[charaSet A 7014001 1 ナイチンゲール]
+[charaSet B 98001000 1 マシュ]
+[charaSet C 11002002 1 巌窟王]
+[charaSet E 7022001 1 茨木童子]
+
+[charaSet G 7014001 1 シルエット_ナイチンゲール]
+[charaFilter G silhouette 00000080]
+
+[charaSet D 5016001 1 エフェクト用_茨木使用]
+[charaSet F 1001000 1 エフェクト用_敵使用]
+[charaSet H 98006200 1 エネミー]
+
+[scene 20700]
+
+[cameraMove 0.1 0,0 1.01]
+[charaTalk off]
+
+[bgm BGM_EVENT_3 0.1]
+[fadein black 1.0]
+[wait fade]
+
+
+[se ad671]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[charaMove A 20,-5 0.1]
+[charaShake A 0.05 1 1 0.6]
+[wt 0.1]
+[charaMove A 40,-1 0.3]
+[wt 1.1]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad33]
+[effect bit_talk_kengekiall03]
+
+[wt 1.0]
+
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.03 3 3 0.4]
+[wt 0.5]
+
+
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[wt 0.1]
+
+[se ad7]
+[charaPut D 1]
+[charaMoveScale E 1.2 0.2]
+[charaMove E 0,10 0.2]
+[charaEffect D bit_talk_41]
+[charaFadeout E 0.2]
+[wt 0.2]
+[charaPut D 1200,1200]
+[charaEffectStop D bit_talk_41]
+[wt 0.2]
+
+[charaTalk depthOff]
+[charaDepth F 2]
+[charaDepth H 1]
+
+[charaPut F 1]
+[charaEffect F bit_talk_explosion]
+[wt 0.2]
+[shake 0.05 3 3 0.7]
+[seStop ad439]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[se ad63]
+[wt 3.0]
+[se ad42]
+[bgmStop BGM_EVENT_3 2.0]
+[charaSpecialEffect H enemyErasure 1 1.3]
+[wt 3.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 10000]
+[cameraMove 0.1 0,0 1.00]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_07_02]
+[se ad12]
+
+[charaSet D 5016001 1 ジェロニモ]
+
+[scene 10000]
+[wt 6.5]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[fadeout black 0.1]
+[wait fade]
+
+[charaScale E 1.0]
+
+[scene 10200]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠マシュ
+おかえりなさい、先輩！
+[k]
+
+＠マシュ
+それに皆さんも！[r]お疲れさまでした！
+[k]
+
+[charaFace B 13]
+
+＠マシュ
+観測によれば、微小特異点は順調に縮小しています。[r]これで一安心ですね。
+[k]
+
+？1：大ごとにならなくてよかったね
+
+[charaFace B 1]
+
+＠マシュ
+はいっ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[branch select01_end]
+
+？2：お疲れさま！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+
+＠茨木童子
+ふん、[#吾:われ]が出るまでもなかったな！[r]はっはっは！
+[k]
+
+＠茨木童子
+しかし貢ぎ物は用意しておけよ？[r]何を選べば助かるか、無論わかっているな？
+[k]
+
+[charaFace E 1]
+
+＠茨木童子
+ふっふっふ。鬼をいいように扱っている、等とは[r]決して思わぬことだ。隙あらば貴様らの首を食い破り、
+[k]
+
+[charaFace E 5]
+
+＠茨木童子
+はらわたを撒き散らしてくれる。[r]ゆめ忘れるな[line 3]
+[k]
+
+？！
+
+[branch select02]
+
+[label select02]
+
+？1：はい
+
+？！
+
+[charaFace E 1]
+
+
+＠茨木童子
+くはは、身の程がわかっているではないか！[r]悪くない！
+[k]
+
+[messageOff]
+[charaFace E 4]
+[wt 1.0]
+[charaFace E 0]
+
+
+＠茨木童子
+……それはそうと[#あれ]の様子が何やら妙だぞ。[r]貴様が何とかしておけ。
+[k]
+
+
+
+[messageOff]
+[se ade146]
+[seStop ade146 1.5]
+[charaMove E -100,0 0.8]
+[charaFadeout E 0.7]
+[wt 1.5]
+
+[label select01_end]
+
+？！
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠ジェロニモ
+……マスター。気付いていたか？
+[k]
+
+＠ジェロニモ
+先刻の戦闘だ。[r]私見だが、いつもの半分も動けていなかったようだ。
+[k]
+
+？1：………彼女だね
+
+？！
+
+
+＠ジェロニモ
+そう、フローレンス・ナイチンゲール。
+[k]
+
+＠ジェロニモ
+何らかの状態異常を受けている訳ではなさそうだが、[r]戦闘であそこまで動かない彼女は初めて目にした。
+[k]
+
+＠ジェロニモ
+霊基に変調を[#来:きた]している可能性がある。[r]何らかの処置が必要だろう。
+[k]
+
+＠ジェロニモ
+念のため、ダ・ヴィンチに伝えておくといい。
+[k]
+
+[messageOff]
+[se adm36]
+[seVolume adm36 0 0.2]
+[charaFadeout D 0.1]
+
+[bgmStop BGM_EVENT_2 1.2]
+[wt 0.3]
+[seVolume adm36 0.4 0.6]
+[wt 0.6]
+[seVolume adm36 0.4 1.0]
+[wt 0.8]
+[seStop adm36 0.1]
+
+[messageOff]
+[charaTalk off]
+
+[charaFace G 0]
+[charaFadein G 0.7 1]
+[wt 0.7]
+
+[charaTalk depthOff]
+[charaDepth G 2]
+[charaDepth A 1]
+
+
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[charaFadeout G 0.1]
+
+＠ナイチンゲール
+何のお話をされているのです？
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[bgm BGM_EVENT_5 0.1]
+[charaTalk on]
+
+＠ナイチンゲール
+戦闘？[r]私が？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ジェロニモ
+……そうだ。[r]敵を前に、二度、動かなかった。
+[k]
+
+
+＠ジェロニモ
+普段の君であれば有り得ない事態のはずだ。[r]自覚はあるか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ナイチンゲール
+……。[r]……。
+[k]
+
+[messageOff]
+[charaFace A 6]
+[wt 1.0]
+[charaFace A 0]
+
+＠ナイチンゲール
+すみません、何を言っているのか理解できません。[r]私は[#看護師:ナース]です。兵士ではありません。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[wt 1.3]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+
+[bgmStop BGM_EVENT_5 0.7]
+[wt 1.0]
+[charaFace A 0]
+[bgm BGM_EVENT_11 0.1]
+
+＠ナイチンゲール
+無論、必要に迫られれば話は別です。
+[k]
+
+
+＠ナイチンゲール
+救援物資が目前にあるにも[#拘:かか]わらず身動きが取れない、[r]といった状況もありましょう。
+[k]
+
+＠ナイチンゲール
+その時には、はい。[r]そうですね。
+[k]
+
+
+＠ナイチンゲール
+きっと私はこの手を以て障害を押しのけるでしょうし、[r]あらゆる手段を講じて前へと進みましょう。
+[k]
+
+＠ナイチンゲール
+拳銃などを撃ち放つのにも躊躇いはしない。[r]ええ、ええ。
+[k]
+
+＠ナイチンゲール
+ですが……
+[k]
+
+[messageOff]
+[charaFace A 4]
+[wt 1.0]
+[charaFace A 0]
+
+＠ナイチンゲール
+……それはすなわち、この手で新たに負傷者を生み出す[r]ということです。敵方とはいえ。
+[k]
+
+＠ナイチンゲール
+そんなものは私の本懐ではない。
+[k]
+
+＠ナイチンゲール
+良いですか司令官。私は小さな軍隊のように言われるが、[r]決して軍人そのものではない。
+[k]
+
+
+＠ナイチンゲール
+私は戦争に勝ちたいのではありません。[r]私は戦争を憎み、勝利ではなく終結を望みます。
+[k]
+
+＠ナイチンゲール
+私は……
+[k]
+
+[charaFace A 5]
+
+＠ナイチンゲール
+私は、命を救いたいのです。
+[k]
+
+[charaFace A 4]
+
+＠ナイチンゲール
+それだけです。それだけ。他には何も要らない。
+[k]
+
+？1：ナイチンゲール……
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.0]
+[charaFace A 7]
+[wt 1.0]
+
+[charaShake A 0.3 2 2 0.2]
+[charaFace A 2]
+[wt 0.2]
+
+＠ナイチンゲール
+……………………はっ。
+[k]
+
+＠ナイチンゲール
+む、む。むむ。記憶が混濁しています。[r]たった今、ゴーレムとの戦闘中だったのでは？
+[k]
+
+[charaFace A 4]
+
+＠ナイチンゲール
+ここはカルデア？　ですね？[r]私は何を……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠ジェロニモ
+自分は兵士ではないと言っていた。[r]いや、その通りではあるのだが……ふむ。
+[k]
+
+
+＠ジェロニモ
+やはり、彼女の霊基には何らかの[#歪:ゆが]みがあるようだ。[r]マスター。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ナイチンゲール
+成る程。
+[k]
+
+＠ナイチンゲール
+私は、不調のようですね。休みます。
+[k]
+
+[messageOff]
+[charaFace A 4]
+[bgmStop BGM_EVENT_70 1.3]
+[charaAttack A normal 25,1 0.5]
+[wt 0.5]
+[charaAttack A normal -25,3 0.8]
+[wt 0.8]
+
+？1：ナイチンゲール？
+
+？！
+
+[charaMove A 0,-50 0.4]
+[charaFadeout A 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+ナイチンゲールさん！？
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[charaSet H 98109900 1 シドニー・ハーバート]
+[charaFilter H silhouette 00000080]
+
+
+[scene 10901]
+
+[wt 1.5]
+
+[se adm35]
+[seVolume adm35 0 0.3]
+[wt 1.0]
+
+[fadein black 1.0]
+[seVolume adm35 1.0 1.0]
+[wait fade]
+
+[wt 2.0]
+[seVolume adm35 1.0 0.6]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.4]
+
+
+＠紳士
+[line 3]フローレンス、聞いているのかい。
+[k]
+
+[seStop adm35 1.0]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ナイチンゲール
+はい。[r]聞こえています。
+[k]
+
+＠ナイチンゲール
+戦場における医療物資についてのお話でしたね。[r]シドニー、貴方の助力が私には必要です。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠シドニー・ハーバート
+ああ、フローレンス。フローレンス！[r]まったく違う！　ここを何処だと思っているんだい！
+[k]
+
+＠シドニー・ハーバート
+ロンドンだ！　大英帝国の首都だ！[r]きみはもう、あの戦場にいる訳ではないだろう。
+[k]
+
+
+＠シドニー・ハーバート
+きみの心は未だあそこに在るままなのだ。[r]その姿は何だ。もはや軍属でもないきみが、陸軍の、
+[k]
+
+＠シドニー・ハーバート
+しかも制式の軍服を着ているだなんて[line 3]
+[k]
+
+＠シドニー・ハーバート
+あそこで何があったのかを問い詰めはしないが、[r]しかし此処はロンドンなんだ。フローレンス。
+[k]
+
+＠シドニー・ハーバート
+その在り方は間違っている。[r]分かるかい。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ナイチンゲール
+……この姿は。
+[k]
+
+[charaFace A 6]
+
+＠ナイチンゲール
+そうですね、奇妙な姿かもしれない。[r]けれど、私は戦っているのです。兵士たちと変わらず。
+[k]
+
+＠ナイチンゲール
+この地上に溢れ出るあらゆる傷病と戦い続ける私には、[r]ええ、このように何かと戦うための姿こそ相応しい。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠シドニー・ハーバート
+戦い続ける……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ナイチンゲール
+はい。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠シドニー・ハーバート
+ああ……
+[k]
+
+＠シドニー・ハーバート
+そんな風に生きるのはやめてくれ、フローレンス。[r]お願いだ。
+[k]
+
+＠シドニー・ハーバート
+きみがクリミアの天使であったのは過去のことで、[r]もう、きみが戦い続ける必要はないんだよ。
+[k]
+
+＠シドニー・ハーバート
+自分自身の人生を見つめ直すべきだ。[r]きみは……そう、結局、結婚だってしないまま……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ナイチンゲール
+シドニー？
+[k]
+
+[charaFace A 0]
+
+＠ナイチンゲール
+おかしなことを仰いますね。[r]人間はひとりでは結婚できませんでしょうに。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠シドニー・ハーバート
+……そういう言い方は意地が悪すぎるよ。
+[k]
+
+
+＠シドニー・ハーバート
+いい加減、気付かぬふりはやめてくれ。[r]私はすべてきみのために……
+[k]
+
+＠シドニー・ハーバート
+きみを援助してきたのも、すべて、すべて、[r]ただの善意から出た訳ではないんだよ。フローレンス。
+[k]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+＠シドニー・ハーバート
+私は、ずっと前から……
+[k]
+
+＠シドニー・ハーバート
+きみを[line 3]
+[k]
+
+[messageOff]
+
+[se adm35]
+[wt 2.0]
+
+[fadeout black 0.5]
+[seVolume adm35 0.5 0.3]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+[wipeFilter cinema 0.5 0]
+[cameraFilter gray]
+[wt 0.5]
+
+[seStop adm35 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_41 0.1]
+
+
+＠
+嘘だ。[r]これは嘘だ。
+[k]
+
+
+＠
+我が友シドニー・ハーバートには細君が有ったのだから、[r]こんなやり取りはなかった。なかった筈だ。
+[k]
+
+＠
+いや。それ以前に。
+[k]
+
+＠
+私が、一個人から愛の告白を受ける等とは[line 3]
+[k]
+
+[messageOff]
+[se ade74]
+[seVolume ade74 0 0.3]
+[wt 0.5]
+
+[seVolume ade74 0.5 0.7]
+[wt 0.5]
+
+[seVolume ade74 1.0 1.0]
+[wt 1.0]
+[seStop ade74]
+
+＠声
+成る程な。
+[k]
+
+
+＠声
+常々、おまえの在り方はいびつだと感じてはいたが、[r]遂に自らの[#欺瞞:ぎまん]に亀裂が入り始めたという訳か。
+[k]
+
+＠声
+クク。[r]それはそれで面白い。
+[k]
+
+＠声
+[line 3]だが、破綻と自滅は許さんぞ。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_41 1.0]
+[wait fade]
+
+[cameraFilter normal]
+[wipeOff]
+
+[scene 10420]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[se ad77]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠ナイチンゲール
+趣味が悪いですね。[r]貴方は。
+[k]
+
+＠ナイチンゲール
+無言のまま、そうして女の寝顔を覗き込むとは。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠巌窟王
+[line 3]フン。
+[k]
+
+
+＠巌窟王
+多くの場合、サーヴァントが睡眠を得ることはない。[r]夢を見ることもない。
+[k]
+
+＠巌窟王
+ならばおまえのそれは霊基の異常に他ならない。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFace A 5]
+[charaFadein A 0.1 2]
+
+＠ナイチンゲール
+……。[r]……。
+[k]
+
+
+＠巌窟王
+カルデアのサーヴァントは概ねマスターに繋がっている。[r]ならばそう、混線の[#類:たぐい]も時には起こるだろうよ。
+[k]
+
+[charaFace A 6]
+
+＠ナイチンゲール
+どの口で言うのだか。
+[k]
+
+＠巌窟王
+以前にも、似たようなことがあっただろう。
+[k]
+
+[charaFace A 0]
+
+＠ナイチンゲール
+あれは私ではなく[%1]が……
+[k]
+
+[messageOff]
+[charaFace A 4]
+[wt 1.0]
+[charaFace A 0]
+
+＠ナイチンゲール
+はい。ありました。
+[k]
+
+＠巌窟王
+素直だな。
+[k]
+
+＠ナイチンゲール
+状態は明らかです。[r]否定しても意味はない。
+[k]
+
+[charaFace A 6]
+
+＠ナイチンゲール
+…………私はおそらく、精神を負傷しています。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_70 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+
+
+[charaSet D 5009001 1 ダ・ヴィンチ]
+[charaSet E 11002002 1 シルエット_巌窟王]
+[charaFilter E silhouette 00000080]
+[charaSet F 9005001 1 ホームズ]
+
+[scene 10200]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_1 0.1]
+
+＠ホームズ
+英霊とは[line 3]
+[k]
+
+
+＠ホームズ
+本来、[#一箇:い っ こ]の人間であった存在が昇華されたものだろう。[r]この時、クラスの適性云々は想定されていない筈だ。
+[k]
+
+
+＠ホームズ
+クラスというのはそもそもからして、[r]決戦魔術・英霊召喚によって発生した概念だからね。
+[k]
+
+＠ホームズ
+そして、当然ながらカルデア式召喚でも同じく、[r]基本七つのクラスに英霊を当てはめることで実行される。
+[k]
+
+＠ホームズ
+型に嵌まりきらない例外は当然ながら起こり得る。[r]該当するエクストラクラスがあれば問題は少ないだろうが、
+[k]
+
+
+＠ホームズ
+結果として、無理矢理にクラスへ押し込まれる英霊も[r]数としてゼロではないだろう。
+[k]
+
+＠ホームズ
+そうなれば、[r][#ひずみ]が発生する事だって有り得るという訳だ。
+[k]
+
+？1：………つまり？
+？2：もう一歩わかりやすく
+
+？！
+
+[messageOff]
+[charaFace F 6]
+[wt 1.0]
+[charaFace F 0]
+[wt 0.8]
+
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[charaTalk off]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+[wipeFilter cinema 0.5 0]
+[cameraFilter gray]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.5]
+
+＠ホームズ
+[line 3]バーサーカー、ナイチンゲール。
+[k]
+
+＠ホームズ
+彼女は明らかに“戦う者”であり、[r]人を救うモノ、医療看護という概念にさえ近いだろう。
+[k]
+
+＠ホームズ
+だが、本来の彼女は果たしてそうだろうか？[r]あそこまで[#かたくな]な精神性は、元からなのか？
+[k]
+
+
+＠ホームズ
+それとも、バーサーカークラスの適性として[#顕:あらわ]れる[r]彼女の猛烈な精神性が、[#誇張:カリカチュア]されたものであるのか？
+[k]
+
+＠ホームズ
+後者であるとすれば、そう。ただ活動しているだけでも[r]霊基や精神に多少の負担は掛かり続けるというものだ。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[cameraFilter normal]
+[wipeOff]
+
+[charaFadeout A 0.1]
+
+[charaTalk on]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+？1：……………
+？2：普段から無理させてるってこと、だよね
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+あ、あの！
+[k]
+
+[charaFace B 12]
+
+
+＠マシュ
+わたしの場合ですが……[r]自己の精神に負担が掛かる感覚はありませんでした。
+[k]
+
+＠マシュ
+ですから、必ずしも[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+
+＠ホームズ
+レディ。キミの場合は更に特殊な事例、[r]デミ・サーヴァントだったからね。
+[k]
+
+＠ホームズ
+反証としては、[#些:いささ]か相応しくないかもしれないな。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[bgmStop BGM_EVENT_1 1.6]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+[wt 1.3]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_2 0.1]
+
+
+＠ダ・ヴィンチ
+まったくもう、ホームズ。[r]キミは意地悪だなあ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ホームズ
+そうかい？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+言い方ってものがあるだろう。[r]精神を有した英霊の召喚は元からとてつもないことだし、
+[k]
+
+＠ダ・ヴィンチ
+特にバーサーカーとの契約と維持は難しいんだ。[r]今さらと言えば今さらじゃないか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+＠巌窟王
+[line 3]何でも構わん。
+[k]
+
+[messageOff]
+[se ad343]
+[effect bit_talk_06_b3]
+[wt 1.0]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFadein E 0.7 0,-70]
+[charaMove E 0,0 0.7]
+[wt 1.2]
+
+[seStop ad343 1.0]
+
+[charaTalk depthOff]
+[charaDepth E 2]
+[charaDepth C 1]
+
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 1.0]
+
+[effectStop bit_talk_06_b3]
+[charaFadeout E 0.1]
+[wt 1.0]
+
+＠巌窟王
+[%1]、行くぞ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+[bgmStop BGM_EVENT_2 0.5]
+
+＠マシュ
+え[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFace B 6]
+[charaFadein B 0.1 2]
+
+＠巌窟王
+肉体の方は頼んだ。[r]娘。いや、マシュ・キリエライト。
+[k]
+
+[charaFace B 12]
+
+＠マシュ
+え、あの！　巌窟王さん……！？
+[k]
+
+[messageOff]
+[wipeout openEye 0.5 0.7]
+[wait wipe]
+[wt 0.7]
+[wipein openEye 0.3 0.7]
+[wait wipe]
+[wt 0.1]
+[wipeout openEye 0.2 0.5]
+[wait wipe]
+[wt 0.5]
+[wipein openEye 0.5 0.7]
+[wait wipe]
+[wt 1.0]
+
+[charaFace B 6]
+
+＠マシュ
+あっ……！　先輩！
+[k]
+
+[charaFace E 0]
+[charaFadein E 0.7 0]
+
+[messageOff]
+[wipeout openEye 1.5 0.7]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+
+
+[scene 10901]
+[wt 1.5]
+
+[se adm35]
+[seVolume adm35 0 0.3]
+[wt 1.0]
+
+[wipein openEye 0.5 0.7]
+[seVolume adm35 0.5 1.0]
+[wait wipe]
+
+[wt 2.0]
+
+[seStop adm35 2.4]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠シドニー・ハーバート
+ああ、きみ！　丁度いいところに来てくれた！[r][%1][&君:嬢]！
+[k]
+
+＠シドニー・ハーバート
+きみからも言ってくれたまえよ。[r]私の言葉はどうにも届かないかもしれないが、
+[k]
+
+＠シドニー・ハーバート
+同じ職場の同僚であるきみの言葉なら[r]フローレンスも受け入れてくれるかもしれない。
+[k]
+
+＠シドニー・ハーバート
+さあ！　頼むよ！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ナイチンゲール
+……。[r]……。
+[k]
+
+？1：ち、ちょっと待った！
+？2：ここって……
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[se ad343]
+[effect bit_talk_06_b3]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.7 0,-70]
+[charaMove E 0,0 0.7]
+[wt 1.2]
+
+[seStop ad343 1.0]
+
+[charaTalk depthOff]
+[charaDepth E 2]
+[charaDepth C 1]
+
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 1.0]
+
+[effectStop bit_talk_06_b3]
+[charaFadeout E 0.1]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk C]
+
+
+＠巌窟王
+本来であればおまえの見る夢として[#顕:あらわ]れるはずのモノ。[r]あれの心象だろうさ。
+[k]
+
+？1：ナイチンゲールの[line 3]
+
+？！
+
+＠巌窟王
+そうだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠シドニー・ハーバート
+突然ぼうっとしたりして、一体どうしたんだい？[r][%1][&君:嬢]？
+[k]
+
+＠シドニー・ハーバート
+頼むよ。フローレンスに言ってやってくれ。彼女は[r]このあたりで長い休みをとって、生活に戻るべきなんだ。
+[k]
+
+＠シドニー・ハーバート
+せっかく戦地から戻ったというのに、[r]彼女は戦い続けているんだよ。あれでは体に障る。
+[k]
+
+？1：え、ええと
+？2：どなた、でしたっけ……
+
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠巌窟王
+ソレは誰でもない。
+[k]
+
+[messageOff]
+[charaFace C 1]
+[wt 1.0]
+[charaFace C 0]
+
+＠巌窟王
+いいか、そもそもからしてこの女はバーサーカーだ。[r]理性の多くを封じた状態で現界する。
+[k]
+
+＠巌窟王
+常人は、強烈な戦闘衝動を心に留め置き続けられまいが、[r]バーサーカー。狂戦士。奴らは違う。
+[k]
+
+[charaFace C 5]
+
+＠巌窟王
+その分、積もり積もってゆくものも[line 3]
+[k]
+
+＠巌窟王
+奥底に溜まっていくものもあるのだろうさ。[r]特に……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 0.3]
+[se ad77]
+[wt 0.5]
+[seStop ad77 0.5]
+[bgm BGM_EVENT_72 0.1]
+
+[charaFace C 2]
+
+＠巌窟王
+[#まるで理性有するが如く言葉を放つ者]はな！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ナイチンゲール
+……。[r]……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+
+＠巌窟王
+ねじれ、[#軋:きし]み、[#歪:ゆが]んでいるのだ。[r]時にはそれが[#澱:よど]みとなって湧き上がることもある。
+[k]
+
+
+＠巌窟王
+万象を[#灼:や]き尽くすかの如き怒りの炎として、[r]破壊衝動の[#顕:あらわ]れたる怪物として[line 3]
+[k]
+
+＠巌窟王
+或いは、そう、旧き友の姿をとる[#理性の具現]として！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠シドニー・ハーバート
+彼女はもう休むべきだ。[r]これ以上の無理をさせちゃいけない。
+[k]
+
+＠シドニー・ハーバート
+負荷を掛け続けてまですることか？[r]少し考えれば分かるようなものじゃないか、フローレンス。
+[k]
+
+＠シドニー・ハーバート
+きみもそう思うだろう、[%1][&君:嬢]！？
+[k]
+
+？1：そうかもしれない
+
+？！
+
+＠シドニー・ハーバート
+そうだろう。そうだろう！
+[k]
+
+＠シドニー・ハーバート
+なら、今すぐに[line 3]
+[k]
+
+[bgmStop BGM_EVENT_72 1.0]
+
+？1：でも、今じゃない
+？！
+
+＠シドニー・ハーバート
+なに……？
+[k]
+
+？1：最後まで、ナイチンゲールと一緒に戦いたい
+？！
+
+＠シドニー・ハーバート
+何……！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ナイチンゲール
+……。[r]……。
+[k]
+
+[messageOff]
+[charaFaceFade A 8 1.0]
+[wt 2.0]
+[charaFace A 5]
+
+[bgm BGM_EVENT_63 0.1]
+
+
+＠ナイチンゲール
+……貴方はそう言うのですね、[%1]。
+[k]
+
+＠ナイチンゲール
+いいでしょう。要請を受諾。[r]引き続き、私は戦場を駆ける。
+[k]
+
+＠ナイチンゲール
+すべての命を救うために。[r]私は、たとえ暴力を用いてでも誰かを救い続けよう。
+[k]
+
+[messageOff]
+
+[se ad39]
+[effect bit_talk_36_sl01]
+[wt 2.0]
+
+[effectStop bit_talk_36_sl01]
+
+[fadeout ffffcf 0.5]
+[wait fade]
+
+[charaChange A 7014002 0 fade 0.1]
+[seStop ad39 1.0]
+[wait charaChange A]
+[se ad29]
+[wt 0.5]
+
+[fadein ffffcf 0.5]
+[wait fade]
+
+[wt 2.0]
+
+＠ナイチンゲール
+まったく。[r]私も私なら、司令官も司令官ということですか。
+[k]
+
+＠ナイチンゲール
+私と共に戦場に在り続けようなどというその精神、[r]決して健全とは言えないでしょう。いずれ治療します。
+[k]
+
+？1：その時は、よろしく
+
+？！
+
+[messageOff]
+[charaFace A 1]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠巌窟王
+姿が変わったな。[r]悪くない。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠ナイチンゲール
+そうですね。[r]髪を[#解:ほど]いてしまったのは本意ではありませんが、
+[k]
+
+＠ナイチンゲール
+今の私には相応しくもあるでしょう。[r]バーサーカー……狂える戦士としての私であれば。
+[k]
+
+[charaFace A 5]
+
+＠ナイチンゲール
+これが私です。
+[k]
+
+＠ナイチンゲール
+我が身が傷付こうとも命を救う、髪振り乱す狂女。[r]これこそが今の私のカタチであるのでしょう。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_63 1.0]
+[charaFaceFade C 2 0.5]
+[wt 1.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠ナイチンゲール
+では司令官。マスター。[r]少し、付き合っていただきます。
+[k]
+
+＠ナイチンゲール
+私の中であれこれと言ってくる理性の欠片[line 3][r]旧友に擬態した免疫もどきを、一時切除します。
+[k]
+
+？1：付き合うよ！
+？2：治療開始！
+
+？！
+
+[charaFace A 5]
+
+＠ナイチンゲール
+はい。では[line 3]
+[k]
+
+[charaFace A 7]
+
+＠ナイチンゲール
+[f x-large]本格治療、開始！！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.5]
+[wait fade]
+[soundStopAll]
+[end]

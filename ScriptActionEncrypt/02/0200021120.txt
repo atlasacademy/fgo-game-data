@@ -1,0 +1,669 @@
+
+
+＄02-00-02-11-2-0
+[soundStopAll]
+[charaSet A 4004001 1 アストルフォ]
+[charaSet B 98002000 1 フォウ]
+[charaSet C 99502600 1 マシュ]
+[charaSet D 98114600 1 レジスタンス男Ａ]
+[charaSet E 98114620 1 レジスタンス男Ｂ]
+[charaSet F 4025000 1 ライダー]
+[charaSet G 98113900 1 フェルグス]
+[charaSet H 5030001 1 シェヘラザード]
+
+[scene 42404]
+[fadein black 1.5]
+[wait fade]
+[charaPut B 0,0]
+[charaEffect A bit_talk_sparks]
+[se ad11]
+[wt 2.5]
+[fadeout black 0.4]
+[wait fade]
+[scene 42501]
+[fadein black 0.4]
+[wait fade]
+[bgm BGM_EVENT_3 0.1]
+[seVolume ad11 0 0.5]
+[se ad93]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+＠アストルフォ
+マスター、起きて！　たいへんだよ！
+[k]
+
+？1：むにゃむにゃ……あと５分……
+
+？2：ううん……新事実……アストルフォはモフモフ……
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠フォウ
+フ[charaMoveReturn B 20,0 0.3]ォウフォウ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠アストルフォ
+だ[messageShake 0.01 5 5 0.7]からフォウに頬ずりしてる場合じゃないってばー！
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 2]
+[charaEffect C bit_talk_10_LowLevel]
+[se ad13]
+[wt 0.1]
+[charaFadein C 0.1 1]
+＠マシュ
+アストルフォさん、マスターの身の安全が第一です！[r]抱えて動いてください！
+[k]
+
+[charaPut C 0,-10000]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠アストルフォ
+だよね！　とーう！
+[k]
+
+[messageOff]
+[charaMoveScale ast 1.1 0.3]
+[wt 0.3]
+[se ad7]
+[charaFadeout A 0.1]
+[wt 0.1]
+[fadeout black 0.4]
+[wait fade]
+[scene 42404]
+[charaScale A 1]
+[wt 2.0]
+[charaSet B 1026001 1 デオン]
+[fadein black 1.5]
+[wait fade]
+
+？1：[line 2]！？　なになに！？
+？2：起きたら……燃えてる……！？
+？！
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠アストルフォ
+そーなんだよ！　火事！　っていうレベルじゃないかな！[r]とにかくこの桃源郷が燃えてるんだ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠レジスタンス男Ａ
+くそっ、[charaMoveReturn D 256,-20 0.4][se ad7]消せ、[wait charaMove D][charaMoveReturn D 256,-20 0.4]消せっ！[se ad7]
+[k]
+
+[charaShake E 0.01 5 5 0.4]
+＠レジスタンス男Ｂ
+ダメだ、火の勢いが強すぎる！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠D：レジスタンス男Ｃ
+ちくしょう、どうしてこんなっ……。
+[k]
+
+[charaShake E 0.01 5 5 0.7]
+＠E：レジスタンス男Ｄ
+アマゾネスだ。奴らの焼き討ちだっ！[r]ああ、みんな、燃えちまう……！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠ライダー
+[line 2][messageShake 0.01 7 7 0.7]うろたえんじゃねぇ！
+[k]
+
+[charaFace F 0]
+＠ライダー
+まずは火の中に取り残されてる奴がいねえか確かめろ。[r]優先事項はモノより命だ！
+[k]
+
+＠ライダー
+同時に何人かは周囲の警戒にあたれ。[r]合わせて敵が襲ってくる可能性もあるぞ。
+[k]
+
+[charaFace F 5]
+＠ライダー
+あるいは火を点けた奴がまだそこらにいるかもしれねぇ。[r]見つけたら逃がすな！
+[k]
+
+＠ライダー
+それが全部クリアできたら初めて物資だ！[r]燃えてねえヤツを安全な場所に避難させろ！
+[k]
+
+[charaFace F 2]
+＠ライダー
+さあ、動け動け！[r]じゃなきゃ、本当に全部燃えちまうぞ！
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[charaFadeout F 0.1]
+[wt 0.4]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.4 1]
+＠フェルグス
+不覚です。気付けばこうなっていました。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+＠シェヘラザード
+油断……していましたね……。[r]まさかこちらの本拠地に……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠デオン
+後悔はあとだ。私たちは負傷者の救護に向かうよ。[r]サーヴァントならば火に巻かれることはない。
+[k]
+
+？1：お願い。こっちはこっちでみんなを手伝うよ
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠アストルフォ
+うん、マスターは安全な場所に！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 1.5]
+[seStop ad11 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaPut A 0,-10000]
+[charaEffectStop A bit_talk_sparks]
+[charaFadeout A 0.1]
+[wt 2.0]
+[scene 42401]
+[fadein black 1.5]
+[wait fade]
+[bgm BGM_EVENT_5 0.1]
+[charaTalk D]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠レジスタンス男Ａ
+ああ……嘘だ、こんな……。
+[k]
+
+＠レジスタンス男Ｂ
+つ、ついに……ここがバレちまったのかっ。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠D：レジスタンス男Ｃ
+昨日は……みんな、逃げるのに無我夢中だったからな。[r]痕跡を消すのが甘かったかもしれない。
+[k]
+
+[charaShake D 0.01 5 5 0.7]
+＠D：レジスタンス男Ｃ
+ここまでの道のりを辿られたのかも……。
+[k]
+
+＠E：レジスタンス男Ｄ
+じ、じゃあ、いつ奴らの本隊が来ても不思議じゃないって[r]ことじゃないか！　ど、どうするんだよ！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFadein D 0.1 1]
+＠D：レジスタンス男Ｅ
+ど[messageShake 0.01 5 5 0.7]うするったって……わかんねえよ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠ライダー
+どうするかなんてのは[line 2]決まってンだろが。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk off]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠レジスタンス男達
+ライダーさん……。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ライダー
+俺が今までずっと言い続けてきたことだ。[r]教え続けてきたことだ。俺はそれを変える気はねぇ。
+[k]
+
+＠ライダー
+だから[line 2][#諦めずに、前へ、だ]。[r]俺たちにできることは、それしかねぇんだぜ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠レジスタンス男達
+ライダーさん……でも……。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ライダー
+ああ、そうだな。[r]何もかも、ぜーんぶ焼けちまった。
+[k]
+
+＠ライダー
+俺たちのメシの種だった桃の木も。[r]苦労して建てていった小屋も。
+[k]
+
+＠ライダー
+敵から少しずつぶんどってきた物資も。[r]ここまでに死んでいった仲間たちの[line 2]墓も。
+[k]
+
+＠ライダー
+全部、全部、灰になっちまった。居心地のよかった[r]このアジト、桃源郷はもうおしまいだ。
+[k]
+
+[bgmStop BGM_EVENT_5 0.7]
+[charaFace F 2]
+＠ライダー
+だが……だがよォ！[r]だからこそ、俺たちは言うべきなんだろうが！
+[k]
+
+[bgm BGM_EVENT_4 0.1]
+[charaFace F 0]
+＠ライダー
+[line 2][#だからどうした]、ってな。
+[k]
+
+＠ライダー
+俺たちはまだここにいるぜ。生きてここにいるぜ。[r]自分の足で歩いて行けるぜ。
+[k]
+
+＠ライダー
+だったら、まだやれることはあるはずだろうがよ。
+[k]
+
+＠ライダー
+また笑っちまうくれえ当たり前のことを言ってやる。[r]もう一度。何度でも、言ってやる。
+[k]
+
+[charaFace F 1]
+＠ライダー
+終わるまでは、どんなことも、終わっちゃいねぇんだ。[r]だから、諦めない限り[line 2][#夢は必ず叶う]。
+[k]
+
+＠ライダー
+他の誰でもねぇ。俺の魂がそれを知ってる。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk off]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠レジスタンス男達
+…………。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠ライダー
+おまえたちはどうなんだ。ここまで俺と一緒に戦ってきた、[r]勇気あるおまえたちはどうなんだ！
+[k]
+
+＠ライダー
+ここで諦めて終わっちまうのか！？[r]それとも、俺と一緒にまだ前を向くか！　どうなんだ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk on]
+[charaTalk D]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+
+＠レジスタンス男Ａ
+ああ……そうかも、しれない。[r]まだ俺たちは、生きてるんだ。
+[k]
+
+＠レジスタンス男Ｂ
+ここまできて諦めたら……[r]死んだあいつらに、怒られるよな。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠D：レジスタンス男Ｃ
+この地底に落とされて、奴隷のまま死ぬのかと思ってた[r]俺たちがここまでやれたんだ。
+[k]
+
+＠D：レジスタンス男Ｃ
+最後まで行けないなんて、[r]そっちのほうが、間違ってる……！
+[k]
+
+＠E：レジスタンス男Ｄ
+やります、俺、やってやりますよ、ライダーさん！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk off]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠レジスタンス男達
+俺も！　俺も！
+[k]
+
+[messageOff]
+[se ad16]
+[wt 2.0]
+[seStop ad16 1.5]
+[messageOff]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.4]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠デオン
+凄いな。沈んでいた彼らに活気が戻った。
+[k]
+
+＠デオン
+理屈としてはあってなきがごとしだが[line 2]彼らに[r]必要なのは理屈ではなかったということなんだろう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠フェルグス
+ええ。千の言葉を尽くそうと、万の理を語ろうと、[r]心の折れた兵は動かないときには動かない。
+[k]
+
+＠フェルグス
+ですが不思議なことに、才ある者が一言『立て』と[r]言うだけで我先にと走り出すこともある。
+[k]
+
+＠フェルグス
+ライダーはその才を持っているようです。[r]多少、特攻寄りになっているのは危ういですが。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠アストルフォ
+有り体に言っちゃうと、カリスマってやつかな？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠マシュ
+…………。
+[k]
+
+[charaPut C 0,-10000]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠フェルグス
+大雑把に言えば、そうでしょうね。
+[k]
+
+＠フェルグス
+とはいえそれも、王が持つもの、女王が持つもの、[r]将軍が持つもの、孤高の戦士が持つもの、
+[k]
+
+＠フェルグス
+どれもが異なる性質のものだと思います。[r]僕の見立てでは、彼が持っているのは、やはり[line 2]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠シェヘラザード
+…………。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ライダー
+おっと、ここにいたか。[r]で、軍師よ。ここから先はまたおまえさんの仕事だ。
+[k]
+
+＠ライダー
+発破はかけたが、正直、[r]現時点で先が見えてるわけじゃねえ。
+[k]
+
+＠ライダー
+聞かせてくれや。[r]この状況から逆転する手立て、何か思いつくか？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠シェヘラザード
+……はい。たった今、思い浮かびました。
+[k]
+
+？1：グッドタイミング！　聞かせて
+？！
+
+[charaFace H 6]
+＠シェヘラザード
+単純に言えば……再び奇襲をかけます。
+[k]
+
+＠シェヘラザード
+いえ、この戦力で、ということで言い直しますと[line 2][r]特攻、ということになるのかも、しれませんが。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠ライダー
+特攻上等だぜ、と言いたいところだが。[r]昨日と同じことになりゃしねぇか？
+[k]
+
+＠ライダー
+あえてもう一度、っつう驚きがあるのはわかるがよ。[r]それで相手の裏がかけるとは限らねぇぞ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+＠シェヘラザード
+昨日と同じ奇襲ではありません。[r]方法に、方式に、経路に、明確な違いがあります。
+[k]
+
+＠シェヘラザード
+それは[line 2]変化があった今だからこそ、できるように[r]なったことです。喜ばしくはない変化、ですが。
+[k]
+
+＠シェヘラザード
+ひとつは、レジスタンスの数が少なくなったこと。[r]もうひとつは、帰路を気にする必要がなくなったこと……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠アストルフォ
+…………。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠シェヘラザード
+そしてそこに、最後の理由を加えます。[r]貴方です、ライダー。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ライダー
+……あ？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠シェヘラザード
+今までも、その衣装や戦い方からして予想はしていましたが[line 2][r]先のやりとりで、やはり、という確信を得ました。
+[k]
+
+＠シェヘラザード
+おそらく皆様、そうでしょう。
+[k]
+
+＠シェヘラザード
+貴方は、自分を含んだ配下の人員を、[r]まるでひとつの生き物のように[line 2]
+[k]
+
+＠シェヘラザード
+ある目的に対して突き進む[#一塊:いっかい]の前進体として[r]まとめ上げ、そして導く才を持ったもの。
+[k]
+
+＠シェヘラザード
+王のような支配ではなく、将のような鼓舞でもなく。[r]ただ、共に進ませる[#力:ちから]を持つもの。
+[k]
+
+＠シェヘラザード
+[#船長のサーヴァント]です。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ライダー
+…………。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠シェヘラザード
+ならば、貴方にはそれにふさわしい役目があります。
+[k]
+
+＠シェヘラザード
+貴方にしかできない[line 2][r]いえ、貴方だからこそできる、そんな役目が。
+[k]
+
+＠シェヘラザード
+この作戦は、それが鍵となるのです……。
+[k]
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_4 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

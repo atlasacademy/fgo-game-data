@@ -1,0 +1,178 @@
+
+
+
+＄94-04-78-21-1-1
+
+
+[soundStopAll]
+
+
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 3043000 1 エリセ]
+[charaSet C 4014001 1 牛若丸]
+[charaSet D 1098192800 1 マリー]
+[charaSet F 98115000 1 エフェクト用]
+
+[scene 47001]
+
+[pictureFrame cut170_gameframe_dark]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[pictureFrame]
+[pictureFrameTop cut170_gameframe_dark]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+＠マシュ
+撃墜完了。[#飛燕:ひえん]の舞を打ち破りました！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 0,-50]
+＠マリー
+とっても素敵だったわ♪
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠牛若丸
+……ひとつ聞きたい。[r]貴様、何者か。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+＠マリー
+まさか、わたしを知らないの？[r]マリーよ。ヴィヴ・ラ・フランス♪
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠牛若丸
+……そういうことにしておこう。[r]が、ならば答えてみよ。
+[k]
+
+[charaFace C 5]
+＠牛若丸
+貴様が背負った、[#遊戯界:このせかい]での役割は何だ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 0,-50]
+＠マリー
+役割ですって？[r]無粋なことを聞くのねえ。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_62 1.0 0.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_62 1.0 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[effect bit_talk_dice26]
+[voice 304300_0_X020]
+[wt 6.0]
+[wait voice 304300_0_X020]
+
+
+
+[charaTalk depthOff]
+[charaDepth F 2]
+[charaDepth B 1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+[wt 0.5]
+
+[charaPut F 0,0]
+[charaEffect F bit_talk_quickmove]
+[charaFadein B 0.1 0,-50]
+[charaMove B 0,-44 0.3]
+[se ad27]
+[se ad399]
+[seVolume ad399 0 0.7]
+[wt 0.1]
+[charaSpecialEffect B erasureReverse 1 0.3]
+[wt 0.5]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_62 0.7 0.5]
+[wait wipe]
+[wt 0.5]
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_62 0.7 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaEffect F bit_talk_quickmove]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-44]
+[charaMove B 0,-50 0.2]
+[wt 0.1]
+[se ad27]
+[wt 1.5]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠マシュ
+エリセさん、後方に出現しました。[r]約100メートルに迫っています。
+[k]
+
+[messageOff]
+[maskout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

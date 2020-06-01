@@ -1,0 +1,734 @@
+
+
+＄94-04-49-05-1-0
+
+[soundStopAll]
+
+[charaSet A 7027300 1 アマゾネスＣＥＯ_普通]
+[charaSet B 1098119600 1 アマゾネスＣＥＯ_ろくろ]
+[charaSet C 99502600 1 マシュ]
+[charaSet D 6008000 1 コスモティック・ビューティ夫人]
+[charaSet E 5042001 1 ＬＳハンター・パープル]
+[charaSet F 98002000 1 フォウ]
+[imageSet G cut161_ceo19 1]
+[imageSet H back10000 1]
+[charaSet I 5009000 1 エフェクト用１]
+[charaSet J 5009000 1 エフェクト用２]
+
+[charaScale H 1.01]
+[charaScale G 1.01]
+
+[scene 37310]
+
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_10_LowLevel]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_66 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+静かで[#趣:おもむき]のある[#場所:惑星]だな。
+[k]
+
+＠A：アマゾネスＣＥＯ
+こんなところに住まうのは[r]さぞ落ち着いた雰囲気の客に違いない。
+[k]
+
+＠A：アマゾネスＣＥＯ
+注文の品も[#栞:しおり]が一つという奥ゆかしいものだしな。
+[k]
+
+？1：たまには穏便に配達を済ませたいですね
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠マシュ
+同感です……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠コスモティック・ビューティ夫人
+ああ、そうこう言っているうちに。[r]目的地はあの家ではなくて？
+[k]
+
+[messageOff]
+[charaFadeout D 0.4]
+[se ad60]
+[se ad95]
+[wt 0.2]
+[wipeout leftToRight 1.0 1.0]
+[bgm BGM_EVENT_66 1.0 0.4]
+[wait wipe]
+[scene 46300]
+[wt 1.0]
+[seStop ad60 0.1]
+[wt 0.3]
+[seStop ad95 0.5]
+[wipein rightToLeft 1.0 1.0]
+[bgm BGM_EVENT_66 1.0 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+たのもう！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.5]
+
+＠E：？？？
+はい。どちらさまでいらっしゃいますか。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+アマゾネス・ドットコムである。[r]サインか判子をお願いしたい。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠E：？？？
+……そうですか。ついに。
+[k]
+
+[messageOff]
+[wt 0.7]
+[charaFace E 0]
+[wt 0.3]
+
+[cueSe Servants_2500200 bac612]
+[cueSeVolume bac612 0 0.5]
+[wt 0.4]
+[cueSeStop bac612 0.1]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+筆でサインとは珍しいが、まあいいだろう。[r]それではここに……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_66 0.7]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠E：？？？
+それでは、いざ尋常に[line 3][r]勝負！！
+[k]
+
+[messageOff]
+[charaPut J 1]
+[charaEffect J bit_talk_pentagram_03]
+
+[cueSe Battle bac398]
+[cueSeVolume bac398 0 0.3]
+[wt 1.0]
+[cueSeStop bac398 0.3]
+
+[cueSe Battle bac399]
+[cueSeVolume bac399 0 0.2]
+[wt 0.3]
+[cueSeStop bac399 0.2]
+[wt 0.1]
+[cueSe Battle bac399]
+[cueSeVolume bac399 0 0.2]
+[wt 0.3]
+[cueSeStop bac399 0.2]
+[wt 0.1]
+[cueSe Battle bac399]
+[cueSeVolume bac399 0 0.2]
+[wt 0.3]
+[cueSeStop bac399 0.2]
+[wt 0.1]
+[cueSe Battle bac399]
+[cueSeVolume bac399 0 0.2]
+[wt 0.3]
+[cueSeStop bac399 0.2]
+[wt 0.1]
+[cueSe Battle bac399]
+[cueSeVolume bac399 0 0.2]
+[wt 0.3]
+[cueSeStop bac399 0.5]
+[wt 0.2]
+
+[fadeout black 0.2]
+[wait fade]
+[charaEffectDestroy J]
+[charaFadeout E 0]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0 1]
+[charaSet J 6031001 1 刑部姫]
+[fadein black 0.2]
+[wait fade]
+
+[cueSe Battle bac26]
+[effect bit_talk_shelling_pink01]
+[wt 0.3]
+
+[charaMove A 512,0 0.2]
+[se ad73]
+[wt 0.1]
+
+[fadeout black 0.2]
+[wait fade]
+[effectDestroy bit_talk_shelling_pink01]
+[charaScale A 1.1]
+[charaPut A 1]
+[fadein black 0.2]
+[se ad671]
+[seVolume ad671 0 0.3]
+[charaShake A 0.08 6 2 0.4]
+[charaMoveScale A 1.0 0.3]
+[wait fade]
+
+[seStop ad671 0.4]
+[wt 0.7]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaFace A 2]
+
+＠A：アマゾネスＣＥＯ
+何をする！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：？？？
+もちろん、[#宣戦布告:せんせんふこく]です！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠コスモティック・ビューティ夫人
+まあ、なんと美……ＢＴポイントの高い筆さばき、[r]そして流麗な文字。コスモティックです！
+[k]
+
+＠コスモティック・ビューティ夫人
+ちなみにコスモティックとコスメティックは[r]語源が同じらしいですわよ？
+[k]
+
+[charaFace D 2]
+
+＠コスモティック・ビューティ夫人
+いえ、感心している場合ではありませんわ。
+[k]
+
+＠コスモティック・ビューティ夫人
+さては貴方も、弱ったアマゾネス・ドットコムにとどめを[r]刺そうとしている華麗なハイエナ……ですわね？
+[k]
+
+[charaFace D 5]
+
+＠コスモティック・ビューティ夫人
+かつては[#妾:わらわ]もそうでしたが今は業務提携中の身。[r]まだ潰れてしまっては困ります。
+[k]
+
+＠コスモティック・ビューティ夫人
+せめてこうしてＢＴポイント高く立ち回った結果としての[r]利益が出るまで。
+[k]
+
+＠コスモティック・ビューティ夫人
+決算期に下から突き上げをくらいたくはありませんので。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：アマゾネスＣＥＯ
+欲望ダダ漏れの素直なマニフェスト。貪欲に[r]プロフィットを求めてこそのＣＥＯである。わかる。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠E：？？？
+いいえ、違います。[r]私はハイエナなどではありません。
+[k]
+
+[bgm BGM_EVENT_50 0.1]
+
+＠E：？？？
+私の名は[line 3]ＬＳハンター・パープル。[r]義を[#以:もっ]て貴方に天誅を下す者です！
+[k]
+
+？1：ＬＳハンター？
+？！
+
+[charaFace E 7]
+
+＠ＬＳハンター・パープル
+……[#ラ:Ｌ]ブ[#ス:Ｓ]トーリーハンターです。
+[k]
+
+[charaFace E 2]
+
+＠ＬＳハンター・パープル
+そう、この私は[#古今東西:ここんとうざい]の恋物語に目がないもの。
+[k]
+
+＠ＬＳハンター・パープル
+満足できなければ自分で作っちゃえばいいじゃないと[r]自ら書いたりもするもの！
+[k]
+
+[charaFace E 0]
+
+＠ＬＳハンター・パープル
+つまり恋愛系に関しては銀河一の品揃えを誇る[r]書店の経営者にして恋愛小説作家、それが私です。
+[k]
+
+＠ＬＳハンター・パープル
+これは私一人の恨みからではありません。
+[k]
+
+[charaFace E 2]
+
+＠ＬＳハンター・パープル
+あらゆる物語に携わる皆様の想いを受けた[r]義憤の徒であるとご理解くださいませ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+ふむ、物語。
+[k]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth B 1]
+[charaDepth A 2]
+[charaFadeout A 0.2]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠B：アマゾネスＣＥＯ
+[#古今東西:ここんとうざい]の人々は物語を好む。[r]時に非日常の興奮を、心揺さぶる感動の体験を求めて、
+[k]
+
+＠B：アマゾネスＣＥＯ
+ありとあらゆる物語を消費するもの。[r]我が社も当然、商品として取り扱っている。
+[k]
+
+＠B：アマゾネスＣＥＯ
+しかし何かと忙しい現代社会では、[r]読書や映画鑑賞に時間を費やすのはコストの無駄。
+[k]
+
+[bgmStop BGM_EVENT_50 1.0]
+
+[charaFace B 0]
+
+＠B：アマゾネスＣＥＯ
+そこで我が社が開発した新商品[line 3]
+[k]
+
+[bgm BGM_EVENT_49 0.1]
+
+＠B：アマゾネスＣＥＯ
+Ｋｉｎｄｎｅｓｓフレア！
+[k]
+
+？1：カインドネスフレア……
+？2：それは一体？
+
+？！
+
+[charaFace B 1]
+
+＠B：アマゾネスＣＥＯ
+物語を受容するのは脳だ。[r]脳によって人々は物語からさまざまな興奮と感動を得る。
+[k]
+
+＠B：アマゾネスＣＥＯ
+ならばソレだけがあれば良いのでは？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠ＬＳハンター・パープル
+ぐぬぬぬぬぬぬぬぬ……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth H 2]
+[charaDepth G 3]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+具体的に言うと、我が社は[r]脳に直接働きかけるデータを商品化したのだ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠刑部姫
+マジで？　ヤバくない？
+[k]
+
+＠刑部姫
+それだけ聞くとサイバーパンク感っていうか[r]ディストピア感がものすごいんだけど……。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+今や、Ｋｉｎｄｎｅｓｓフレアシリーズは[r]我が社において最大の売れ筋商品。
+[k]
+
+＠A：アマゾネスＣＥＯ
+もはやわざわざ本を読まずとも、[r]映像を見ずとも、事足りる。
+[k]
+
+[charaFace A 8]
+
+＠A：アマゾネスＣＥＯ
+物語そのものではないが、[r]物語と同様の結果を約束しよう。
+[k]
+
+＠A：アマゾネスＣＥＯ
+いつでもどこでもワンクリックで、[r]味わいたい感動を貴方の脳髄に最速当日お届け。
+[k]
+
+[charaFace A 11]
+
+＠A：アマゾネスＣＥＯ
+そう[line 3][r]アマゾネス・ドットコムならね！[wt 0.7][charaFadeTime H 0.2 0.5][charaFadein G 0.2 0,-70][se ade126][seVolume ade126 0 0.6]
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[bgmStop BGM_EVENT_49 1.0]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠ＬＳハンター・パープル
+だ・か・ら、です！
+[k]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaFace E 6]
+
+＠ＬＳハンター・パープル
+なんたらかんたらフレアのせいで、[r]ユニヴァース中で、物語は絶滅の危機なのですよーっ！
+[k]
+
+[charaFace E 5]
+
+＠ＬＳハンター・パープル
+いいじゃないですか、お気に入りの本を探して[r]何軒も本屋さんを巡って足が棒になるのも！
+[k]
+
+＠ＬＳハンター・パープル
+楽しみにしていた映画を見るために、[r]遠くの劇場に足を運んで丸一日を潰すのも！
+[k]
+
+[charaFace E 4]
+
+＠ＬＳハンター・パープル
+クリックひとつでデータ送信、しかる後に[r]脳内物質変換からの注入でハイおしまいだなんて……
+[k]
+
+[charaFace E 2]
+
+＠ＬＳハンター・パープル
+わくわくしながらページをめくるのもなければ、[r]どきどきしながら劇場で手に汗を握るのもない！
+[k]
+
+＠ＬＳハンター・パープル
+それではだめです！　だめなのです！
+[k]
+
+？1：たしかに……
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠マシュ
+わたしもそう思います！[r]物語は、人類の生み出した素晴らしい宝物です！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ＬＳハンター・パープル
+ほら！　そこにも賛同者がいらっしゃいました！
+[k]
+
+＠ＬＳハンター・パープル
+ドットコム側にいるのはきっと何かの間違いですね。
+[k]
+
+＠ＬＳハンター・パープル
+落ち着いたらどうぞごゆっくり、この店舗の本棚を[r]心ゆくまで巡って貴方だけの一冊を探してみてください。
+[k]
+
+＠ＬＳハンター・パープル
+お買い上げの際は[r]素敵なブックカバーをお付けいたしますね？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+？2：いろんなものを省きすぎてる気はするね……
+
+[charaFace E 1]
+
+＠ＬＳハンター・パープル
+ですよね！
+[k]
+
+[charaFace E 4]
+
+＠ＬＳハンター・パープル
+うう、分かってくださる方がいるなんて……。[r]今ではもう多くの方がなんたらかんたらフレアの虜。
+[k]
+
+＠ＬＳハンター・パープル
+ユニヴァースからすべての物語が消えてしまいます……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth F 2]
+
+[charaTalk F]
+[charaFace E 4]
+[charaFadein E 0.1 0]
+[charaFace F 0]
+[charaFadein F 0.1 128,0]
+
+＠フォウ
+フ[charaMove F 96,0 0.3]ォウフォ、フォーウ……。フォウ？
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaPut I 1]
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠マシュ
+フォウさんが優しい目でパープルさんに肉球タッチを。[r]慰めていらっしゃるのでしょうか……。
+[k]
+
+[charaFace C 4]
+
+＠マシュ
+わたしも、本のない世界は寂しい気がします……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+？！
+
+[charaTalk J]
+[charaFace J 4]
+[charaFadein J 0.1 1]
+
+＠刑部姫
+まー確かに[#電子:デジタル]は読むのも描くのも便利だけど、
+[k]
+
+＠刑部姫
+紙の本がなくなっちゃったら[r]それはそれで寂しい気がするかなあ。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：アマゾネスＣＥＯ
+私に言わせれば、これは時代の流れだ。
+[k]
+
+＠B：アマゾネスＣＥＯ
+コンビニエントでカスタマーのリクワイアメントに[r]合っているからこそ、人は我が社を利用する。
+[k]
+
+＠B：アマゾネスＣＥＯ
+ユーザーフレンドリーなシステムと[r]時代に合った適切なサービスが結果として
+[k]
+
+＠B：アマゾネスＣＥＯ
+他の商品よりアドバンテージを得ていると[r]いうことだろう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_11 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ＬＳハンター・パープル
+何を仰っているのかいまいち分かりませんが、[r]我々だって滅びたくありません。
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaFace E 2]
+
+＠ＬＳハンター・パープル
+ですから、これは[#生存競争:せいぞんきょうそう]です！[r]信念と物語の未来のため、私は戦います！
+[k]
+
+＠ＬＳハンター・パープル
+というわけで皆様、どうかお覚悟！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠マシュ
+こ、これは……[r]シンプルかつ根が深い問題なのかもしれませんね。
+[k]
+
+[charaFace C 14]
+
+＠マシュ
+し、しかし、黙ってやられるわけにもいきません。[r]対処をお願いします、マスター！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+

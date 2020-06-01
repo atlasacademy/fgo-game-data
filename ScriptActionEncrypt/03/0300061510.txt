@@ -1,0 +1,622 @@
+
+
+
+＄03-00-06-14-1-0
+
+
+
+
+[soundStopAll]
+
+[charaSet A 1098191200 1 アデーレ]
+[charaSet B 1098191300 1 マカリオス]
+[charaSet C 1017001 1 武蔵]
+[charaSet D 8001410 1 マシュ]
+[charaSet E 98002000 1 フォウ]
+[charaSet F 1098128200 1 カイニス]
+[charaSet G 9005001 1 ホームズ]
+[charaSet H 1098182400 1 ディオスクロイ・カストロ]
+[charaSet I 1098182500 1 ディオスクロイ・ポルクス]
+
+
+[charaSet S 5009000 1 エフェクト用ダミー]
+[charaSet T 5009000 1 エフェクト用ダミー]
+
+
+[scene 92501]
+
+[se ade123]
+[seVolume ade123 0 0]
+[seVolume ade123 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[se ad68]
+[wt 2.0]
+[seStop ade123 1.0]
+
+[se ad542]
+[shake 0.03 3 2 1.2]
+[effect bit_talk_celebro]
+[wt 0.2]
+[se ad226]
+[seVolume ad226 0 0.4]
+[seStop ad226 2.5]
+[wt 3.0]
+
+[bgm BGM_EVENT_116 0.1]
+
+
+
+＠マカリオス
+ステュムパリデス、着陸成功だ。
+[k]
+
+[effectStop bit_talk_celebro]
+
+＠マカリオス
+……[%1]、どうだ？[r]動けるか。
+[k]
+
+？1：大丈夫、心配いらない
+
+？！
+
+[se ad674]
+
+＠マシュ
+先輩のバイタル、安定しています。[r]これは[line 3]
+[k]
+
+＠アデーレ
+治癒術式の名残が肉体に残っているんです。[r]ある種の、継続効果というか……
+[k]
+
+＠アデーレ
+汎人類史の人間が同盟に参加するなら、[r]相当の危険がつきまとう。
+[k]
+
+＠アデーレ
+そのように、ブラヴァツキーさんは[r]想定されていましたから……。
+[k]
+
+＠ホームズ
+なるほど。[r]実に有り難い。
+[k]
+
+＠ホームズ
+だが、効果時間がいつまで続くか。[r]長時間の無理な活動は避けるべきではあるね。
+[k]
+
+＠マシュ
+はい！
+[k]
+
+＠マカリオス
+……分かった。[r]今は動けるみたいだな。
+[k]
+
+＠マカリオス
+まずは、全員ステュムパリデスから降りてくれ。[r]縮小格納して帰還するぞ！
+[k]
+
+
+[messageOff]
+[se ade4]
+[seVolume ade4 0 0.7]
+[wt 0.7]
+[seStop ade4 0.1]
+[fowardEffect bit_talk_quickmove]
+[wt 0.1]
+[se ad223]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠武蔵
+はいなっと。[r]鮮やかに着地～♪
+[k]
+
+[charaFace C 0]
+＠武蔵
+マシュ、大丈夫？　その武器、冷えてる？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠マシュ
+はい、問題ありません。[r]砲身冷却も無事終了しています。
+[k]
+
+＠マシュ
+先輩、わたしたちも地上に降りますね。
+[k]
+
+＠マシュ
+では失礼して、抱えます……。[r]よいしょ。
+[k]
+
+[messageOff]
+[se ad158]
+[seVolume ad158 0 0.4]
+[seStop ad158 0.5]
+[se ade4]
+[seVolume ade4 0 0.3]
+[wt 0.2]
+[seStop ade4 0.4]
+[wt 0.8]
+[se ad709]
+[seVolume ad709 0 0.4]
+[shake 0.05 3 3 0.3]
+[se ad208]
+[se ad881]
+[seVolume ad881 0 0.3]
+[wt 1.2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+＠マシュ
+……着地成功です。[r]お疲れさまでした、先輩。[charaFace D 13]
+[k]
+
+？1：ありがとう、マシュ
+
+[charaFace D 1]
+＠マシュ
+いえ！
+[k]
+
+？2：戦闘おつかれさま！
+
+[charaFace D 1]
+＠マシュ
+ありがとうございます。[r]ミッション、今回も無事完了できました！
+[k]
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠フォウ
+フォウ、フォウ！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[wt 0.2]
+[se ad54]
+[wt 0.1]
+[se ad223]
+[wt 1.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+＠カイニス
+ん……
+[k]
+
+[charaFace F 8]
+
+＠カイニス
+なんだよ、あのでかい赤鎧は消えちまったのか。[r][#壊し:やり]がいのある相手に見えたんだがな。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+＠ホームズ
+ははは、やめてくれたまえ。[r]神霊カイニス。
+[k]
+
+＠ホームズ
+彼は間違いなく私たちの戦力のひとつであり、[r]破神作戦を進めるためには必要だ。破壊は困るね。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠マカリオス
+魔力の消耗が激しいからな、[r]ヒュージ・ベアー号の展開は一時的なものだ。
+[k]
+
+＠マカリオス
+あくまで宝具の仮想展開。[r]常時顕現は難しい、との事だ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠アデーレ
+金時さんやブラヴァツキーさんの言葉です。[r]私たちにはよく分かりませんが……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠フォウ
+フォウフォウ！　フォウ！　フォーーウ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠マシュ
+フォウさん、ヒュージ・ベアー号に大興奮でしたね。[r]ああいう大きなものが好きなのでしょうか。
+[k]
+
+
+[selectionUse masterMale]
+？1：格好いいよね、あれ！
+
+[flag _Sel 1]
+
+？2：マシュはヒュージ・ベアー号、どう？
+
+[flag _Sel 3]
+
+？！
+
+[selectionUse masterFemale]
+？1：男の子は好きだよね
+
+[flag _Sel 2]
+
+？2：マシュはヒュージ・ベアー号、どう？
+
+[flag _Sel 3]
+
+？！
+
+[branch _Sel01m _Sel 1]
+[branch _Sel01f _Sel 2]
+[branch _Sel02 _Sel 3]
+
+[label _Sel01m]
+
+[charaFace D 6]
+＠マシュ
+そう……ですね……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[branch _branchEnd]
+
+[label _Sel01f]
+
+[charaFace D 1]
+＠マシュ
+そういうものなんですね！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[branch _branchEnd]
+
+[label _Sel02]
+
+[charaFace D 13]
+＠マシュ
+はい。[r]わたしも好きです。
+[k]
+
+＠マシュ
+赤を基調にした色合いがとても鮮やかで、[r]こう、まるでぬいぐるみのようで。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠フォウ
+フォウゥゥ……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[branch _branchEnd]
+
+[label _branchEnd]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠ホームズ
+さて、歓談の続きは後だ。[r]早々に帰還せねば。
+[k]
+
+＠ホームズ
+市民の大半は退避しているはずだが、[r]兵士や、自動戦闘機械の類は活動を止めてはいまい。
+[k]
+
+＠ホームズ
+対神戦闘で我々の魔力も底をついているからね。[r]休息、休養が肝要だ。
+[k]
+
+＠ホームズ
+そして次の作戦目標を[line 3]
+[k]
+
+[bgmStop BGM_EVENT_116 1.0]
+[wt 0.4]
+[charaTalk H]
+
+＠H：男の声
+[line 6]次が、あるつもりでいるのか。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace C 5]
+[charaFace F 10]
+[charaFadein C 0.1 0]
+[charaFadein F 0.1 2]
+＠剣士と戦士
+！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth I 4]
+[charaDepth H 3]
+
+[se ad681]
+[wt 0.1]
+[charaPut I 120,0]
+[charaPut H -120,0]
+[charaFace I 0]
+[charaSpecialEffect I appearance 1 0.2]
+[charaFace H 0]
+[charaSpecialEffect H appearance 1 0.2]
+[wt 0.7]
+
+[fowardEffect bit_talk_gram_slash_03]
+[se ad171]
+[cueSe Battle bac263]
+[wt 0.4]
+
+[charaFadeout I 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[wt 0.2]
+[fowardEffect bit_talk_14]
+[se ad32]
+
+[charaScale F 1.2]
+[charaTalk on]
+[charaTalk F]
+[charaFace F 21]
+[charaFadein F 0.1 0,8]
+[se ad671]
+[charaMoveScale F 1.0 0.3]
+[charaMove F 0,0 0.3]
+[charaShake F 0.03 3 2 0.4]
+[wt 0.7]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaFace F 2]
+＠カイニス
+[#クソ双子野郎:デ　ィ　オ　ス　ク　ロ　イ]ッ！
+[k]
+
+？1：ディオスクロイ！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠マシュ
+双神ディオスクロイ！[r]キリシュタリアさんのサーヴァント……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？2：ホームズ、今の大丈夫だった！？
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠ホームズ
+ああ、問題ない。[r]あと２インチ程で私の首は[#抉:えぐ]れていたがね。
+[k]
+
+[charaFace G 10]
+＠ホームズ
+神霊カイニスの槍がなければ、死んでいた。[r]……此処は感謝を述べねばなるまいね。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠フォウ
+フォフォウ、フォーウ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+？！
+
+
+[charaTalk H]
+[charaFace I 5]
+[charaFace H 2]
+[charaFadein I 0.1 120,0]
+[charaFadein H 0.1 -120,0]
+＠ディオスクロイ・カストロ
+お[#目出度:め で た]いな！[r]カルデア！
+[k]
+
+[charaFace I 2]
+＠ディオスクロイ・ポルクス
+この場で殺す！[r]カルデア！
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠武蔵
+いやいやいや、ちょっとは空気を読んだら？
+[k]
+
+＠武蔵
+機神との戦いを終えたばかりで[r]すっかり[#疲労困憊:ひろうこんぱい]の私たちと戦っても、
+[k]
+
+＠武蔵
+貴方たちの名誉には、ならな[line 3]
+[k]
+
+[messageOff]
+[wt 0.4]
+
+[charaFace C 12]
+[wt 0.3]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaDepth S 2]
+[charaDepth T 1]
+
+[cueSe Battle bac529]
+[charaEffect S bit_talk_v_slash01 0,0 H]
+[wt 0.15]
+[cueSe Battle bac526]
+[charaEffect T bit_talk_h_slash01 0,0]
+[wt 0.15]
+[charaEffectDestroy S bit_talk_v_slash01]
+[wt 0.3]
+
+[charaTalk off]
+[charaFace I 5]
+[charaFace H 5]
+[charaFadein I 0.1 120,0]
+[charaFadein H 0.1 -120,0]
+[wt 0.2]
+
+[charaEffect S bit_talk_14 128,56]
+[charaShake H 0.03 3 2 0.3]
+[se ad32]
+[wt 0.2]
+[charaEffect T bit_talk_14 -96,-28]
+[charaShake I 0.03 3 2 0.3]
+[se ad32]
+[wt 1.5]
+
+[charaTalk on]
+[charaFace I 2]
+＠ディオスクロイ・ポルクス
+笑止！　我が剣技は光！
+[k]
+
+[charaFace H 2]
+＠ディオスクロイ・カストロ
+無駄！　ヒトの不意打ちなど我らには届かんさ！
+[k]
+
+＠ディオスクロイ・カストロ
+機神を二機、いいやアトランティスから数えて四機！[r]よくぞ[#屠:ほふ]ったと軍神アレスであれば讃えようが、
+[k]
+
+[charaFace H 5]
+＠ディオスクロイ・カストロ
+俺は！　違う！[r]破神！　笑わせるな！
+[k]
+
+＠ディオスクロイ・カストロ
+おまえたちは神の力で神を殺しているにすぎん！[r]小癪にも、クリロノミアを用いて[line 3]
+[k]
+
+[charaFace I 5]
+＠ディオスクロイ・ポルクス
+黒き光。我らにも放ってみるがいい、ヒトよ。
+[k]
+
+＠ディオスクロイ・カストロ
+我らは光。嵐の後に輝けるモノである！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaMoveScale H 1.05 0.2]
+[charaMove I 120,6 0.2]
+[charaMoveScale I 1.05 0.2]
+[charaMove H -120,6 0.2]
+[se ad54]
+[seVolume ad54 0 0.5]
+[se ad132]
+[seStop ad132 0.5]
+[wt 0.4]
+
+[charaFace I 2]
+[charaFace H 2]
+＠ディオスクロイ
+[f large]破神同盟！
+[k]
+
+＠ディオスクロイ
+[f large]ここで殺す！
+[k]
+
+[messageOff]
+
+
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

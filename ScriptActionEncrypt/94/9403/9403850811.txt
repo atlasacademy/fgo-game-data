@@ -1,0 +1,183 @@
+
+
+＄94-03-85-08-1-1
+
+[soundStopAll]
+
+[charaSet A 98001000 1 家老マシュ]
+[charaSet B 5001001 1 メディア店長]
+[charaSet C 1098118800 1 店員]
+[charaSet D 3038000 1 長尾景虎]
+
+[scene 40600]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+[fowardEffect bit_talk_kengekiall02]
+[se ad470]
+[seStop ad470 0.5]
+[wt 0.3]
+
+[charaShake B 0.02 3 3 1.1]
+
+[se ad470]
+[seStop ad470 0.5]
+[wt 0.2]
+[se ad471]
+[seStop ad471 0.5]
+[wt 0.4]
+[fowardEffect bit_talk_ichimon01wh]
+[fowardEffect bit_talk_14]
+[se ad471]
+[wt 1.0]
+[bgmStop BGM_EVENT_3 1.0]
+[seStop ad471 0.5]
+
+[fowardEffectDestroy bit_talk_ichimon01wh]
+
+[se ad144]
+[charaFace B 4]
+[charaShake B 0.02 3 3 0.7]
+[charaMove B 0,-30 0.5]
+[charaFadeout B 0.4]
+
+[wt 2.0]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.4 0,-30]
+[charaMove B 1 0.4]
+[wt 0.4]
+
+＠メディア店長
+ま、負けた……、[r]このままではキュケオーンの在庫で破産……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠長尾景虎
+へぇ、これがそのキュケオーンですか、[bgm BGM_EVENT_2 0.1][r]なかなか美味しいですね。
+[k]
+
+[charaFace D 1]
+
+＠長尾景虎
+どうでしょう？　栄養価も高そうですし、[r]カルデア家でも陣中食に採用しては？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠メディア店長
+そこの……、誰かしら？[r]まあいいわ、なかなか目が肥えているじゃない。
+[k]
+
+＠メディア店長
+キュケオーンは薬にもなるからおすすめよ？[r]貴方たち、連日戦なのでしょう？
+[k]
+
+？1：景虎さんが気に入ったなら
+
+？2：じゃあ、お願いしますね
+
+？！
+
+[charaFace B 0]
+
+＠メディア店長
+……ふう。これで今月の在庫は処理出来たわ。[r]しばらくはゆっくりできそうね……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠店員
+店長、先ほど本店から追加のキュケオーンが届きました。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠メディア店長
+受[messageShake 0.01 4 4 0.8]け取り拒否しなさい！[bgm BGM_EVENT_7 0.1][r]ほんとに加減を知らないのね、叔母様は！
+[k]
+
+
+
+
+
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_7 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 82500]
+[wt 2.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_MEIJI 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠メディア店長
+メディア店長よ。今後のカルデア家の厨房の仕入れは[r]私に任せてもらいましょうか。
+[k]
+
+＠メディア店長
+それじゃあ、早速在庫のキュケオーンを運び込んでと……。
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[wt 0.7]
+
+メディア店長が配下に加わった。[r]（NPCとして選択できるようになりました）
+[k]
+
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 2.0]
+[bgmStop BGM_MEIJI 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

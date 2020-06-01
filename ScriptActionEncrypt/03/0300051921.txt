@@ -1,0 +1,368 @@
+
+＄03-00-05-19-2-1
+
+
+[soundStopAll]
+
+[charaSet A 1038000 1 イアソン]
+[charaSet B 6029001 1 望月千代女]
+[charaSet C 8001410 1 マシュ]
+[charaSet D 2038000 1 オリオン]
+[charaSet E 98006000 1 魔獣]
+[charaSet F 2003300 1 マンドリカルド]
+[charaSet G 6038002 1 シャルロット・コルデー]
+[charaSet H 4029001 1 アキレウス]
+[charaSet J 98115000 1 エフェクト用]
+
+[scene 21501]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk depthOff]
+
+[charaDepth J 10]
+
+？！
+
+[branch INPUT_SELECT_BRANCH_2 INPUT_SELECT_BRANCH 1]
+
+[label INPUT_SELECT_BRANCH_1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠アキレウス
+うし、これでラスト！
+[k]
+
+[messageOff]
+[charaMoveScale H 1.15 0.2]
+[charaMove H 0,15 0.2]
+[se adm14]
+[effect bit_talk_v_slash01]
+[wt 0.1]
+[charaFadeout H 0.1]
+[wt 0.6]
+[charaScale H 1.0]
+
+[se bac403]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaEffect E bit_talk_14]
+[charaShake E 0.05 3 3 0.8]
+[wt 1.0]
+
+[se ad24]
+[charaMove E 0,-30 0.4]
+[charaFadeout E 0.4]
+[wt 0.5]
+[se ad144]
+[wt 1.5]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠オリオン
+あ、くそ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠アキレウス
+数も速さも俺が勝ったな。[r]文句あるか？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠オリオン
+ありません、はい。[r]しょんぼり。
+[k]
+
+[charaFace D 12]
+
+＠オリオン
+マスター、こっちにも指示くれよー！
+[k]
+
+？1：さすがに二つも見るのは難しくて……
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_2]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠オリオン
+フンガー！！
+[k]
+
+[messageOff]
+[charaMoveScale D 1.15 0.2]
+[charaMove D 0,10 0.2]
+[se ad85]
+[effect bit_talk_v_slash01]
+[wt 0.1]
+[charaFadeout D 0.1]
+[wt 0.6]
+[charaScale D 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[charaPut J 1]
+[charaEffect J bit_talk_impactlanding]
+[charaShake E 0.05 2 2 0.8]
+[se ade315]
+[shake 0.05 0 4 1.0]
+[wt 0.8]
+
+[se ad24]
+[charaMove E 0,-30 0.4]
+[charaFadeout E 0.4]
+[wt 0.5]
+[se ad144]
+
+[wt 2.0]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠アキレウス
+よっしゃ！！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[se bac403]
+[charaEffect E bit_talk_Slash_white_01]
+[charaShake E 0.05 3 3 1.0]
+[wt 0.8]
+
+[se ad24]
+[charaMove E 0,-30 0.4]
+[charaFadeout E 0.4]
+[wt 0.5]
+[se ad144]
+[wt 1.5]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠オリオン
+数は互角なので、俺の勝ち！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠アキレウス
+は？　今の、悪くても引き分けだろ！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠オリオン
+ってところだが、マスターどう思う？
+[k]
+
+？1：オリオンの方が速かったよ
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠アキレウス
+くっそー！[r]遅かったかー！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠オリオン
+怪我を言い訳にしないのかい？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠アキレウス
+そんなみっともない真似、[r]マスターの前では晒せねえよ。
+[k]
+
+＠アキレウス
+第一、この迷宮じゃ速度よりも[r]効率の方が大事だ。
+[k]
+
+[charaFace H 4]
+
+＠アキレウス
+ちょっとばかり俺の戦いの[r]組み立て方が悪かった。
+[k]
+
+＠アキレウス
+マスターのバックアップがあれば、[r]俺の勝ちだったんだがなあ。
+[k]
+
+？1：さすがに両方まとめて面倒見るのは……
+？！
+
+＠アキレウス
+まあ、そうだけどさー！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_3]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠イアソン
+はっはっは。[r]そこらへんはまだまだ経験不足と見える。
+[k]
+
+[charaFace A 6]
+
+＠イアソン
+だが安心しろ。
+[k]
+
+＠イアソン
+そこは仮眠で頭脳が覚醒したオレが、[r]しっかりフォローしてやろう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+
+＠シャルロット・コルデー
+サーヴァントに睡眠は必要ありませんってば。[r]もー。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠イアソン
+ってところで、[#斥候:ちよめ]。[r]先はどうなってる？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠望月千代女
+ご老人から戴いた地図はここで終わりでござるな。[r]まだまだ迷宮は続いております。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠シャルロット・コルデー
+ここから先はどうしましょう。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠望月千代女
+拙者にお任せくだされ。
+[k]
+
+＠望月千代女
+ヘファイストス殿の気配は強まっているので、[r]進行方向を間違えることはないかと。
+[k]
+
+＠望月千代女
+さあ、行きましょう！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[soundStopAll]
+[end]

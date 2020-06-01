@@ -1,0 +1,254 @@
+
+
+＄03-00-01-19-1-1
+
+[soundStopAll]
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 1098126400 1 パツシィ]
+[charaSet C 2010001 1 ビリー]
+[charaSet D 1098123600 1 オプリチニキ1]
+[charaSet E 1098123600 1 オプリチニキ2]
+[charaSet F 1098123600 1 オプリチニキ3]
+[charaSet G 1098128800 1 武蔵]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_80 0.1]
+[wt 0.2]
+
+[scene 21500]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFadein D 0.1 2]
+
+[charaFace E 0]
+[charaFadein E 0.1 0]
+
+[se ad563]
+[wt 0.3]
+[se ad563]
+[wt 0.3]
+
+[charaShake D 0.05 2 2 0.7]
+[charaShake E 0.05 2 2 0.7]
+
+[fadein black 0.8]
+[wait fade]
+
+
+[charaFadeout D 0.4]
+[charaFadeout E 0.4]
+[wt 0.05]
+[charaMove D 256,-30 0.3]
+[charaMove E -256,-30 0.3]
+
+[wt 0.3]
+[se ad144]
+[wt 0.1]
+[se ad144]
+[wt 0.5]
+
+[se ad58]
+[seVolume ad58 0 0.3]
+[wt 0.1]
+[seVolume ad58 1.0 1.0]
+[wt 2.0]
+[seStop ad58 0.5]
+
+[charaFace D 0]
+[charaFadein D 0.4 1]
+
+[charaFace E 0]
+[charaFadein E 0.4 2]
+
+[charaFace F 0]
+[charaFadein F 0.4 0]
+
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠マシュ
+[#殺戮猟兵:オプリチニキ]の反応、さらに増大……！[r]まだ止まりません、マスター……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[wt 0.2]
+
+[se ad563]
+[flashin once 0.1 0.1 FFFFFF90 FFFFFF90]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠パツシィ
+くそ、弾が切れる……！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+[se ade22]
+[seVolume ade22 0 0.5]
+[wt 0.8]
+[charaFace C 4]
+
+＠ビリー
+[#不発:ミスファイア]……ごめん、フォローよろしく！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad7]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+[se ad346]
+[wt 0.6]
+[seStop ad346]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[se ad563]
+[charaEffect D bit_talk_muzzleflash]
+[charaShake D 0.05 4 4 0.6]
+[wt 1.5]
+
+[charaTalk on]
+
+
+＠ビリー
+当たったが……まだ倒れない！[r]心臓では駄目だ、脳を一撃……！
+[k]
+
+
+＠マシュ
+[#殺戮猟兵:オプリチニキ]が突撃！[r]マスター、後退を……！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 1.0]
+
+[charaTalk off]
+
+[se ad54]
+[charaMoveScale D 1.2 0.2]
+[charaMove D 0,30 0.2]
+[wt 0.5]
+
+？1：（しまった[line 3]！）
+？！
+
+[charaMoveScale D 1.4 0.1]
+[charaMove D 0,60 0.1]
+
+[wipeout openEye 0.2 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[wt 2.5]
+
+？1：……いた……くない？
+？2：何も……起きない？
+？！
+
+[se ad85]
+[wt 0.5]
+[se ad171]
+[wt 0.1]
+[se ad467]
+[wt 0.8]
+
+＠？？？
+[#暫:しばら]く、[#暫:しばら]くぅ！[r]年端もいかない[&青少年:女の子]に銃口向ける悪漢ども！
+[k]
+
+[messageOff]
+[se bac307]
+[wt 0.2]
+[se bac307]
+[wt 0.5]
+[se bac308]
+[wt 0.3]
+
+
+＠？？？
+右も左も分からぬ[#異境:くに]なれど、[se ad144][r]悪逆横暴の[#秤:はかり]は明白、天神さまもお見通し！
+[k]
+
+＠？？？
+私好みの[&青少年:女の子]を襲うのなら、[r]こちらもそちらを斬り伏せよう！
+[k]
+
+[se bac305]
+
+＠？？？
+[#天網恢々:てんもうかいかい]、[#無頼放浪:ぶらいほうろう]！[r]この武蔵の刀を恐れぬのなら、あ、かかってこ[line 2]い！
+[k]
+
+[messageOff]
+[wt 0.4]
+
+？1：（いまの声は……！）
+？2：（まさかの……！？）
+？！
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+[wipein openEye 1.5 1.0]
+[wait wipe]
+
+[wt 1.4]
+
+[bgm BGM_EVENT_82 0.1]
+
+
+＠武蔵
+はあい！　お久しぶり、[%1][&君:]！[r]やっぱりまた会えたわね！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_82 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

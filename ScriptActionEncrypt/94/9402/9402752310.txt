@@ -1,0 +1,562 @@
+
+
+＄94-02-75-23-1-0
+
+
+
+
+
+
+
+
+
+
+
+[soundStopAll]
+
+[charaSet A 7031000 1 ジャンヌ・オルタ]
+[charaSet B 98100400 1 マシュ]
+[charaSet C 98105600 1 サンタアイランド仮面]
+[charaSet D 2032001 1 ジャンヌ]
+[charaSet E 1098156400 1 メイヴ]
+[charaSet F 2003300 1 ロビンフッド]
+
+[imageSet H cut086_sdbb01 1]
+[charaScale H 0.9]
+
+[scene 10000]
+
+[revivalBranch lblNormal lblRevival]
+
+[label lblNormal]
+
+[flag isQueSkip true]
+
+[branch lblRevivalConf]
+
+[label lblRevival]
+
+[branchQuestNotClear lblNoClear 94039123 1]
+
+[flag isQueSkip true]
+
+[branch lblClearCheckConf]
+
+[label lblNoClear]
+
+[flag isQueSkip false]
+
+[label lblClearCheckConf]
+
+[label lblRevivalConf]
+
+[branch lblQueSkipConf isQueSkip false]
+
+[messageOff]
+[fadein black 0.1]
+[wait fade]
+
+[charaFadein H 0.1 -600,-300]
+[charaMove H -400,-300 0.7]
+[wait charaMove]
+[wt 0.4]
+
+[charaMoveReturn H -400,-250 0.2]
+[se ad673]
+[wait charaMove]
+
+[charaMoveReturn H -400,-250 0.2]
+[se ad673]
+[wait charaMove]
+[wt 0.5]
+
+？1：スキップする
+[charaMove H -420,-300 0.3]
+[wait charaMove]
+[charaMove H 800,-300 1.0]
+[se ad348]
+[wait charaMove]
+[wt 0.5]
+
+[flag isSkip true]
+
+？2：スキップしない
+[charaMove H -520,-300 0.7]
+[charaFadeout H 0.7]
+[wait charaMove]
+[wt 0.5]
+
+[flag isSkip false]
+？！
+
+[branch lblEnd isSkip true]
+
+[fadeout black 0.1]
+[wait fade]
+
+[label lblQueSkipConf]
+
+[scene 63501]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.2]
+
+[bgm BGM_EVENT_2 0.1 1.0]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠ジャンヌ・オルタ
+もう夕方かぁ……[r]まだ少しだけ時間はあるけど、ここまでね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠マシュ
+ですがサークルは盛況でしたよ。
+[k]
+
+＠マシュ
+黒髭さんが買ってくれてから、[r]海賊の方々が流れ込んできたのが大きかったです。
+[k]
+
+＠マシュ
+他にも色々な方が買いに来られましたし。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad60]
+[seStop ad60 1.0]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠サンタアイランド仮面
+ギリギリでしたが、一冊ください。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaFace C 0]
+[charaFace B 1]
+[charaFadein C 0.1 0]
+[charaFadein B 0.1 2]
+
+[charaMove C -150,0 0.4]
+[charaMove B 150,0 0.4]
+[wt 0.2]
+[se ad27]
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 13]
+
+＠マシュ
+はい、ありがとうございます。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠マシュ
+……それでですね……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+待って。[r]今、なんか凄く変なのが居た気が。
+[k]
+
+？1：大丈夫、よくいるから
+
+[charaFace A 2]
+
+＠ジャンヌ・オルタ
+ああいうのがよく居るはずないでしょ！？
+[k]
+
+？2：クリスマスによく出てくるから
+
+[charaFace A 2]
+
+＠ジャンヌ・オルタ
+アンタのクリスマス、なんか間違ってない！？
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠ジャンヌ
+オルタ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFace A 15]
+[charaFadein A 0.1 2]
+
+＠ジャンヌ・オルタ
+げ。[r]何よ、私たちのサークルを笑いに来たワケ？
+[k]
+
+[charaFace D 5]
+
+＠ジャンヌ
+[#被害妄想:ひがいもうそう]にも程があります。[r]挨拶に来ただけです。
+[k]
+
+
+[charaFace A 13]
+
+＠ジャンヌ・オルタ
+……で。[r]結局アンタのとこが一番売り上げ大きい訳？
+[k]
+
+[charaFace D 4]
+
+＠ジャンヌ
+いいえ、今年はダメですね。
+[k]
+
+[charaFace A 8]
+
+＠ジャンヌ・オルタ
+はぁ！？　アンタのところのイルカ本、[r]吐き気がするほど良かったじゃない！？
+[k]
+
+＠ジャンヌ・オルタ
+アレが負けたの！？[r]いくらメイヴの写真集でもそこまで……！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠マシュ
+あ、あのう。[r]実はですね[line 3]
+[k]
+
+[messageOff]
+[wipeout rollRight 1.5 1.0]
+[bgmStop BGM_EVENT_2 1.5]
+[wait wipe]
+[charaFadeout B 0.1]
+[wt 1.0]
+[wipein rollLeft 1.5 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_7 0.1 1.0]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+……フン、くっだらない手。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠メイヴ
+くだらないとは何よ！
+[k]
+
+[charaFace E 8]
+
+＠メイヴ
+私の踏み台にしてあげるのよ？[r]応募券でも発行しなけりゃ大パニックなんだから！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠ロビンフッド
+げ、出た。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠メイヴ
+あなたたちに足りないものは３つ！
+[k]
+
+＠メイヴ
+流行・ＳＮＳ・モチベ、[r]そして何より『美しさ』が足りないわ！
+[k]
+
+[charaFace E 7]
+
+＠メイヴ
+具体的に言うと、私が！
+[k]
+
+？1：合計４つでは？
+？！
+
+[charaFace E 2]
+
+＠メイヴ
+[messageShake 0.01 3 3 0.6]
+……あなたたちに足りないものは４つ！
+[k]
+
+[charaFace E 7]
+
+＠メイヴ
+流行・ＳＮＳ・モチベ、[r]そして美たるこの私よ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠マシュ
+どんどん増えますね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠メイヴ
+ともかく、[r]メイヴちゃんはここでもナンバーワン。
+[k]
+
+[charaFace E 12]
+
+＠メイヴ
+自分の美しさが恐ろしいわ……。[r]もう、石像とか作っちゃおうかしら。
+[k]
+
+？1：崩壊しますよ、それ
+？！
+
+[charaFace E 10]
+
+＠メイヴ
+……そうね。立て続けに石像が破壊されるのは[r]さすがの私でも[#挫:くじ]けるわ。
+[k]
+
+＠メイヴ
+ま、今年はサバフェスで１位を[r]取っただけで満足してあげる。
+[k]
+
+[charaFace E 8]
+
+＠メイヴ
+これで聖杯は私のものだしね！[r]じゃ、残りの夏を有意義に過ごしなさい。
+[k]
+
+＠メイヴ
+私ほど優雅で実りあるバカンスは[r]無理でしょうけどね！
+[k]
+
+[charaFace E 1]
+
+＠メイヴ
+ホーッホッホッホ！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.0]
+[se ad95]
+[seStop ad95 1.0]
+[charaFadeout E 0.4]
+[wt 1.6]
+
+[bgm BGM_EVENT_2 0.1 1.0]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠ジャンヌ・オルタ
+凄いわ、アイツどこぞの悪役令嬢みたいな[r]笑い方で立ち去っていったわ。
+[k]
+
+＠ジャンヌ・オルタ
+漫画とかの読み過ぎじゃないの。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+
+＠ジャンヌ
+あ、私はあれ思い出しました。[r]せえるすまんの方。
+[k]
+
+[charaFace D 11]
+
+＠ジャンヌ
+……でも、今年も楽しかったですよ。
+[k]
+
+[charaTalk A]
+[charaFace A 13]
+
+＠ジャンヌ・オルタ
+大変だっただけかもね。
+[k]
+
+[charaFace A 15]
+
+＠ジャンヌ・オルタ
+……フン、次こそは追いついてやるから。
+[k]
+
+[charaTalk D]
+[charaFace D 1]
+
+＠ジャンヌ
+ええ、楽しみにしています！[r]それでは私も自分のスペースに戻ります。
+[k]
+
+[charaFace D 6]
+＠ジャンヌ
+お疲れ様でした！
+[k]
+
+[label lblEnd]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 2.5]
+[fadeout black 2.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaSet A 7031000 1 ジャンヌ・オルタ]
+[charaSet B 98100400 1 マシュ]
+[charaSet C 98105600 1 サンタアイランド仮面]
+[charaSet D 2032001 1 ジャンヌ]
+[charaSet E 1098156400 1 メイヴ]
+[charaSet F 2003300 1 ロビンフッド]
+
+
+[scene 63501]
+[wt 1.0]
+
+[fadein black 2.5]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1 1.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠F：ロビンフッド
+結果は参加賞、か。[r]ま、いい本が出来たんで悔しくはないですがね？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠ジャンヌ・オルタ
+…………。[r]これでループは確定か。
+[k]
+
+＠ジャンヌ・オルタ
+ま、しょうがない。[r]過ぎたことを悔やむより、次よ次。
+[k]
+
+[charaFace A 0]
+＠ジャンヌ・オルタ
+……何より、まだ解いていない謎が幾つもある。
+[k]
+
+＠ジャンヌ・オルタ
+それらが解決するまでは、[r]こうして繰り返し本を描き続けるべきよ。
+[k]
+
+[charaFace A 6]
+＠ジャンヌ・オルタ
+[line 3]さあ、バカンスを楽しみましょうか。[r]マスター。
+[k]
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 3.0]
+[bgmStop BGM_EVENT_11 3.0]
+[wait fade]
+[soundStopAll]
+[end]

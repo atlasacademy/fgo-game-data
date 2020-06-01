@@ -1,0 +1,1157 @@
+
+
+＄94-04-49-12-2-1
+
+[soundStopAll]
+
+[skip false]
+
+[branchQuestNotClear lblNotClear1 3000320 4]
+[label lblClear1]
+[flag IsGirl true]
+[branch lblIsClearConf1]
+[label lblNotClear1]
+[flag IsGirl false]
+[label lblIsClearConf1]
+
+[skip true]
+
+[charaSet A 98002000 1 フォウ]
+[charaSet B 99502600 1 マシュ]
+[charaSet C 4029001 1 アキレウス]
+[charaSet D 7027300 1 アマゾネスＣＥＯ_普通]
+[charaSet E 1098119600 1 アマゾネスＣＥＯ_ろくろ]
+[charaSet F 7027002 1 ペンテシレイア]
+[charaSet G 1098124510 1 ダ・ヴィンチ]
+[charaSet H 6008000 1 コスモティック・ビューティ夫人]
+[imageSet I back10000 1]
+[charaSet J 5009000 1 エフェクト用]
+
+[branch lblNotGirl1 IsGirl false]
+[label lblGirl1]
+[charaSet G 1098124510 1 ダ・ヴィンチ]
+[branch lblIsGirlConf1]
+[label lblNotGirl1]
+[charaSet G 98111500 1 ダ・ヴィンチ]
+[label lblIsGirlConf1]
+
+[charaScale I 1.01]
+
+[scene 90003]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+[charaPut D 1200,1200]
+[charaEffect D bit_talk_charge_red]
+[charaPut F 1200,1200]
+[charaEffect F bit_talk_charge_red]
+
+[bgm BGM_EVENT_24 0.1 0.6]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠フォウ
+フォウー！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠マシュ
+ゴーレムの中から……アキレウスさんが！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠アキレウス
+ええいくそ、バレちまったか。[r]アヴィケブロンの技術でも感付かれるとはな！
+[k]
+
+[charaFace C 5]
+
+＠アキレウス
+ここは素直に、そちらさんの勘が[r]冴え渡ってるって考えるべきか。
+[k]
+
+[se ad61]
+[seVolume ad556 0 0.0]
+[se ad556]
+[seVolume ad556 0 0.0]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 0.3 1.0]
+
+[seVolume ad61 0.1 1.0]
+[seVolume ad556 0.1 0.6]
+
+[charaTalk off]
+[charaFace F 7]
+[charaFadein F 0.1 0]
+[charaFace D 7]
+[charaFadein D 0.1 2]
+
+[wt 0.7]
+
+
+[charaEffectStop D bit_talk_charge_red]
+[charaFadeout D 0.1]
+[se ad73]
+[seStop ad61 0.1]
+[seStop ad556 0.1]
+[wt 0.1]
+[charaEffectDestroy D]
+
+[wt 0.1]
+
+[charaEffectStop F bit_talk_charge_red]
+[charaFadeout F 0.1]
+[se ad73]
+[seStop ad61 0.1]
+[seStop ad556 0.1]
+[wt 0.1]
+[charaEffectDestroy F]
+
+[wt 0.1]
+
+[fowardEffect bit_talk_v_slash01 0,0]
+[cueSe Battle bac388]
+[cueSeVolume bac388 0 0.6]
+[wt 0.2]
+[effect bit_talk_v_slash01 0,0 H]
+[wt 0.1]
+[cueSeStop bac388 0.1]
+[fowardEffectDestroy bit_talk_v_slash01]
+[cueSe Battle bac388]
+[cueSeVolume bac388 0 0.6]
+[wt 0.3]
+[effectDestroy bit_talk_v_slash01]
+[cueSeStop bac388 0.1]
+
+[fadeout black 0.2]
+[wait fade]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 -20,0]
+[fadein black 0.2]
+[wait fade]
+
+[charaShake C 0.05 3 3 0.6]
+
+[se ad32]
+[effect bit_talk_14 -70,100]
+[wt 0.2]
+[se ad32]
+[effect bit_talk_14 70,-100]
+[wt 0.1]
+
+[charaShake C 0.05 0 1 0.5]
+[charaMove C 1 0.3]
+[wt 0.5]
+
+＠アキレウス
+うおっと。自分の身体すらも顧みねえ、[r]半神級のバーサーカーが二騎はきついっつーの！
+[k]
+
+[charaFace C 4]
+
+＠アキレウス
+フム、こいつはもうどうしようもねぇな。[r]逃げの一手といこう。
+[k]
+
+[se ad61]
+[seVolume ad556 0 0.0]
+[se ad556]
+[seVolume ad556 0 0.0]
+[charaPut D 1200,1200]
+[charaEffect D bit_talk_charge_red]
+[charaPut F 1200,1200]
+[charaEffect F bit_talk_charge_red]
+
+[messageOff]
+[charaSpecialEffect C erasureReverse 0 0.4]
+[wt 0.1]
+[fowardEffect bit_talk_quickmove]
+[se ad73]
+[wt 0.4]
+
+[seVolume ad61 0.1 1.0]
+[seVolume ad556 0.1 0.6]
+
+[charaTalk D]
+[charaFace F 7]
+[charaFadein F 0.1 0]
+[charaFace D 7]
+[charaFadein D 0.1 2]
+
+＠D：アマゾネスＣＥＯ
+待て……逃げるな……！
+[k]
+
+＠ペンテシレイア
+アア、アアア、アキレウスゥゥゥ！[r]この身が、どうなろうと、貴様だけはッ……！
+[k]
+
+[charaEffectStop F bit_talk_charge_red]
+[charaFadeout F 0.1]
+[charaEffectStop D bit_talk_charge_red]
+[charaFadeout D 0.1]
+[seStop ad61 0.1]
+[seStop ad556 0.1]
+[wt 0.1]
+[charaEffectDestroy F]
+[charaEffectDestroy D]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠マシュ
+駄目です、お二人とも！[r]アキレウスさんには戦車がありますが、
+[k]
+
+＠マシュ
+生身でここから飛び降りれば……[r]サーヴァントと言えどもただではすみません！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[branch lblNotGirl2 IsGirl false]
+[label lblGirl2]
+[charaFace G 15]
+[charaFadein G 0.1 1]
+[branch lblIsGirlConf2]
+[label lblNotGirl2]
+[charaFace G 4]
+[charaFadein G 0.1 0,-90]
+[label lblIsGirlConf2]
+
+＠ダ・ヴィンチ
+って言って話を聞いてくれる状況かなぁ？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgm BGM_EVENT_24 1.0 0.4]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠コスモティック・ビューティ夫人
+……この最後の配達まで道行きを共にしたのは、[r]なんとなくではありません。
+[k]
+
+＠コスモティック・ビューティ夫人
+アウトソーシングではない第１の提携会社として。
+[k]
+
+＠コスモティック・ビューティ夫人
+次世代のアマゾネス・ドットコムの進む道行きを[r]共に歩む者として、見定めねばと思ったからです。
+[k]
+
+＠コスモティック・ビューティ夫人
+アマゾネス・ドットコムの未来を、[r][#妾:わらわ]も信じたのです。
+[k]
+
+＠コスモティック・ビューティ夫人
+こんなところで終わりにされては困ります。
+[k]
+
+[charaFace H 2]
+
+＠コスモティック・ビューティ夫人
+[#妾:わらわ]にお任せください。トーゥ！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[se ad73]
+
+[wipeout downToUp 0.3 1]
+[wait wipe]
+[charaEffectDestroy J]
+[wt 0.2]
+[wipein upToDown 0.3 1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+[se ad223]
+[wait wipe]
+
+＠コスモティック・ビューティ夫人
+既にああなっている状況ならば聞く耳も持たないでしょう。
+[k]
+
+＠コスモティック・ビューティ夫人
+[#妾:わらわ]の[#宇宙規模の:コ ス モ テ ィ ッ ク な]美を[line 3][r]その目に焼き付けなさいませ！
+[k]
+
+[messageOff]
+[se adm19]
+[effect bit_talk_valentine_brilliant]
+[charaPut J 1]
+[charaEffect J bit_talk_radiallight01]
+
+[wt 1.0]
+
+[fadeout white 2.0]
+[seStop adm19 3.0]
+[bgmStop BGM_EVENT_24 2.0]
+[wait fade]
+[charaFadeout H 0.1]
+[effectDestroy bit_talk_valentine_brilliant]
+[charaEffectDestroy J]
+[charaTalk depthOn]
+[scene 10001]
+[charaTalk off]
+[charaFace F 6]
+[charaFadein F 0.1 0]
+[charaFace D 6]
+[charaFadein D 0.1 2]
+[charaSet C 6031001 1 刑部姫]
+[wt 1.0]
+[fadein white 0.3]
+[wait fade]
+
+
+＠ペンテシレイア＆アマゾネスＣＥＯ
+ムウッ……！？
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠コスモティック・ビューティ夫人
+今ですわ！　何か、何か[line 3][r]そう、そこの！　運んできた荷物の段ボール箱を！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠刑部姫
+任せて！[r]折り紙に乗せて持ち上げて……そぉーい！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth D 2]
+[charaDepth I 3]
+
+[charaTalk off]
+[charaFace F 6]
+[charaFadein F 0.1 0]
+[charaFace D 6]
+[charaFadein D 0.1 2]
+
+[charaFadeTime I 0.4 0.5]
+[se ade407]
+[charaTalk on]
+[charaTalk F]
+[wt 0.36]
+[charaFadeTime I 0.4 1.0]
+[se ade407]
+[charaTalk H]
+[wt 0.4]
+
+[fadeout black 0.3]
+[wait fade]
+[charaPut F 1200,1200]
+[charaPut D 1200,1200]
+[charaFadeout I 0.1]
+[charaTalk depthOn]
+[scene 90003]
+[wt 0.5]
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠ペンテシレイア＆アマゾネスＣＥＯ
+………………。
+[k]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠マシュ
+お二人にそれぞれ段ボール箱をかぶせたら、[r]動きが止まりました……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[branch lblNotGirl3 IsGirl false]
+[label lblGirl3]
+[charaFadein G 0.1 1]
+[branch lblIsGirlConf3]
+[label lblNotGirl3]
+[charaFadein G 0.1 0,-90]
+[label lblIsGirlConf3]
+
+＠ダ・ヴィンチ
+視界を覆うと落ち着く動物みたいだね。
+[k]
+
+＠ダ・ヴィンチ
+とはいえ、長くは持たないだろう。
+[k]
+
+＠ダ・ヴィンチ
+[%1][&君:ちゃん]、[r]何か一言を頼むよ。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgmStop BGM_EVENT_5 1.2]
+
+[wt 0.5]
+
+？1：そこまで！　バトルの時間は終了です
+？2：はっきり言いましょう。お二人の勝利です！
+？！
+
+[se ade408]
+[wt 0.3]
+[seStop ade408 0.1]
+
+[wt 0.3]
+
+[charaTalk off]
+[charaPut F 0]
+[charaPut D 2]
+
+[charaEffectStop F bit_talk_charge_red]
+[charaEffectStop D bit_talk_charge_red]
+[wt 0.6]
+
+[charaTalk on]
+[charaFace F 10]
+
+＠ペンテシレイア
+勝っ……た……？
+[k]
+
+[charaFace D 0]
+
+＠D：アマゾネスＣＥＯ
+…………。
+[k]
+
+
+[charaFadeout F 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 4]
+[branch lblNotGirl4 IsGirl false]
+[label lblGirl4]
+[charaFadein G 0.1 1]
+[branch lblIsGirlConf4]
+[label lblNotGirl4]
+[charaFadein G 0.1 0,-90]
+[label lblIsGirlConf4]
+
+＠ダ・ヴィンチ
+やれやれ、やっと収まってくれたか……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠ペンテシレイア
+いや。勝利……などではない。仕留めきれてはいない。[r]逃げられた。こちらは二人がかりだった。
+[k]
+
+＠ペンテシレイア
+満足などできはしない。[wt 0.3][charaFace F 8]だが、だが、だ[line 3][r]今この時において、我らがヤツを凌駕したのは事実。
+[k]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+[charaFace F 11]
+
+＠ペンテシレイア
+[#故:ゆえ]に、一つの知見は得られた気がするぞ。
+[k]
+
+？1：……それは？
+？！
+
+＠ペンテシレイア
+私が二人いて奴に勝てたのならば、それは。
+[k]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaFace F 2]
+
+＠ペンテシレイア
+少なくとも今の二倍強くなれば、[r]私は間違いなく奴に勝てるということだな！
+[k]
+
+[charaFace F 1]
+
+＠ペンテシレイア
+ならば話は早い。今までの二倍鍛えればよい。[r]そうすれば[line 3]フフ、そうすれば、奴は[line 3]！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：アマゾネスＣＥＯ
+ああ。違う銀河の私とはいえ、私は私。[r]そのカルキュレーションに間違いはあるまい。
+[k]
+
+＠E：アマゾネスＣＥＯ
+今後の活動のための素晴らしい指針が得られたぞ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ペンテシレイア
+あえて気にしていなかったが……貴様にも、[r]ヤツの息の根を止めねばならない理由が？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：アマゾネスＣＥＯ
+当然だ。口にするどころか思い出すだけで[r]頭がアマゾネーションするので詳しくは言えんが。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+アマゾネーション……？
+[k]
+
+？1：たぶんユニヴァース用語だけど
+？2：なんとなく意味することはわかる……
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠D：アマゾネスＣＥＯ
+ともかく。[r]ヤツが私にとっての敵である事は間違いない。
+[k]
+
+＠D：アマゾネスＣＥＯ
+ドットコムはそのために創ったものだと言っても[r]過言ではないぞ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+
+＠ペンテシレイア
+そうか。会社経営でしか得られぬ強さがある。ならば、[r]会社経営でしか殺せないヤツもいる……ということか。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：アマゾネスＣＥＯ
+ザッツライト！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+
+＠ペンテシレイア
+なるほど……わかった、もう一人の私。[r]貴様が私であり、
+[k]
+
+＠ペンテシレイア
+私と同様にヤツを殺すために生きているというので[r]あれば、その他の立ち位置の違いなど些細なことだ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace F 0]
+[charaFadein F 0.1 0]
+[charaFace D 11]
+[charaFadein D 0.1 2]
+
+＠D：アマゾネスＣＥＯ
+わかってくれたか。私も認めよう。[r]おまえも、[wt 0.1][charaFace D 12]いや、私たちこそが[line 3]ＣＥＯだ！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace D 1]
+[charaMove D 160,0 1.0]
+[wt 1.0]
+[charaFace F 1]
+[charaMove F -160,0 1.0]
+[wt 1.2]
+[se ad215]
+[wt 1.0]
+
+[charaFadeout F 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk on]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+お二人が、何やらわかりあった様子で[r]ぐっと握手を……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠フォウ
+フォウ。フォーウ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠コスモティック・ビューティ夫人
+他人にはよくわからない部分もあるのですが、まあ、[r][#一件落着:いっけんらくちゃく]したのならばよしとしましょう。
+[k]
+
+[bgmStop BGM_EVENT_62 1.2]
+
+＠コスモティック・ビューティ夫人
+いえ、しかし、解決していない問題が一つだけ[r]あちらに残されているような。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[charaFadeout H 0.1]
+[charaSet A 98114500 1 アマゾネスＡ]
+[charaSet B 98114510 1 アマゾネスＢ]
+[charaSet I 98114500 1 アマゾネスＣ]
+[charaSet F 98114510 1 アマゾネスＤ]
+[charaSet G 98114500 1 アマゾネスＥ]
+[wt 0.4]
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth F 2]
+[charaDepth A 3]
+[charaDepth I 4]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 -384,0]
+[charaFace B 0]
+[charaFadein B 0.1 -128,0]
+[charaFace I 0]
+[charaFadein I 0.1 128,0]
+[charaFace F 0]
+[charaFadein F 0.1 384,0]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠アマゾネスＡ
+わ、私たちはどうしたら。
+[k]
+
+＠アマゾネスＢ
+私たちはアマゾネス・ドットコム社員。[r]それは魂に刻み込まれている。
+[k]
+
+＠アマゾネスＢ
+今や半分眠りながらでも仕事をこなせるほどの[r]配達スキルは、決して失われない……。
+[k]
+
+[charaFace I 1]
+
+＠アマゾネスＣ
+でも、もう私たちは目覚めさせられてしまった！
+[k]
+
+[charaFace F 1]
+
+＠アマゾネスＤ
+気付いてしまったんだ、配達をせずに筋トレを[r]し続ける事の『これはこれでいいかな感』に！
+[k]
+
+＠アマゾネスＤ
+あとドットコムがちょっとブラックだったことに！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout I 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠D：アマゾネスＣＥＯ
+待て。おまえたちが戸惑うのも当然だ。
+[k]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaFace D 8]
+
+＠D：アマゾネスＣＥＯ
+だが少しだけ私の話を聞いてほしい。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アマゾネスＡ
+ＣＥＯ……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠E：アマゾネスＣＥＯ
+この場所に至るまで、かなりの困難があった。[r]なにしろ私一人しかいなかったからな。
+[k]
+
+＠E：アマゾネスＣＥＯ
+偶然にもこのカルデア社の者と出会い、信念を曲げて[r]アウトソーシング契約を結ぶことでなんとか先に進めた。
+[k]
+
+＠E：アマゾネスＣＥＯ
+いや、こやつらだけではない。そこの夫人のような、[r]他の会社との協力関係も結んだ。
+[k]
+
+＠E：アマゾネスＣＥＯ
+それ[#故:ゆえ]に乗り越えられた困難であったとも言えるだろう。
+[k]
+
+＠E：アマゾネスＣＥＯ
+だから、私は[line 3]次世代のイニシアチブのために、[r]考えを変えることにしたのだ。
+[k]
+
+[charaFace E 0]
+
+＠E：アマゾネスＣＥＯ
+そう、変化は忌避すべきものではない。[r]フレキシブルなそれこそが利益を掴むための源泉。
+[k]
+
+＠E：アマゾネスＣＥＯ
+私は学んだのだ。アウトソーシングだけでなく、[r]根本的な労働体系にもイノベーションが必要だとな。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_11 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アマゾネスＢ
+つ、つまり？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 1.0]
+[charaFace D 12]
+
+[bgm BGM_EVENT_48 0.1]
+
+＠D：アマゾネスＣＥＯ
+簡単に言えば。[r]私は人の心がわかるＣＥＯにレベルアップした！
+[k]
+
+＠D：アマゾネスＣＥＯ
+今後、アマゾネス・ドットコムは、[r]配達員に更なる[#魔力供給:き ゅ う り ょ う]向上を約束する！
+[k]
+
+[charaFace D 8]
+
+＠D：アマゾネスＣＥＯ
+それだけではない。[r]ボーナスと有給休暇も倍にする！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth F 2]
+[charaDepth A 3]
+[charaDepth I 4]
+[charaTalk off]
+[charaFace A 1]
+[charaFadein A 0.1 -384,0]
+[charaFace B 1]
+[charaFadein B 0.1 -128,0]
+[charaFace I 1]
+[charaFadein I 0.1 128,0]
+[charaFace F 1]
+[charaFadein F 0.1 384,0]
+
+[charaShake A 0.09 3 2 0.3]
+[charaShake B 0.09 1 3 0.3]
+[charaShake I 0.09 2 3 0.3]
+[charaShake F 0.09 2 2 0.3]
+
+＠アマゾネスたち
+[f large]なっ……
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout I 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaShakeStop A]
+[charaShakeStop B]
+[charaShakeStop I]
+[charaShakeStop F]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠D：アマゾネスＣＥＯ
+だが、選択は自由だ。[r]どうする？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace A 1]
+[charaFadein A 0.1 -384,0]
+[charaFace B 1]
+[charaFadein B 0.1 -128,0]
+[charaFace I 1]
+[charaFadein I 0.1 128,0]
+[charaFace F 1]
+[charaFadein F 0.1 384,0]
+[wt 0.1]
+
+[effect bit_talk_41]
+[se ade242]
+
+[charaShake A 0.09 3 2 0.3]
+[charaShake B 0.09 1 3 0.3]
+[charaShake I 0.09 2 3 0.3]
+[charaShake F 0.09 2 2 0.3]
+
+＠アマゾネスたち
+[f large]帰ります！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[seStop ade242 0.3]
+[wait fade]
+[effectDestroy bit_talk_41]
+[charaShakeStop A]
+[charaShakeStop B]
+[charaShakeStop I]
+[charaShakeStop F]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout I 0.1]
+[charaFadeout F 0.1]
+[wt 0.5]
+[charaTalk depthOn]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠アマゾネスＡ
+夢みたいだ！　夢じゃないよな？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 -384,0]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[charaFace F 0]
+[charaFadein F 0.1 384,0]
+
+＠アマゾネスＢ
+有給休暇ってのは、聞いたことがある。[r]休んでよくて、それでいて給料がもらえるってやつだ！
+[k]
+
+＠アマゾネスＣ
+そういえばそんな制度もあるって、[r]入社前に聞いたような。
+[k]
+
+＠アマゾネスＣ
+なんか配達で走ったり暴れたりするのが楽しくて、[r]すっかり忘れてた。
+[k]
+
+[charaFace F 1]
+
+＠アマゾネスＤ
+合法！？　それ合法なのか！？[r]銀河警察にしょっぴかれたりしないよな！？
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout B 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠アマゾネスＥ
+[f medium][messageShake 0.07 7 5 0.5]うおおおお！[wt 0.5][r][f medium][charaMoveReturn G 0,10 0.4]アーマーゾーネース！　[wt 0.5][charaMoveReturn G 0,10 0.4]アーマーゾーネース！（社歌）
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[bgmStop BGM_EVENT_48 1.0]
+[wait wipe]
+[charaFadeout G 0.1]
+[charaSet A 98002000 1 フォウ]
+[charaSet B 99502600 1 マシュ]
+[wt 0.4]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠刑部姫
+労働と娯楽が一体化してたから、[r]有給休暇を取るという発想がなかったのか……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠フォウ
+フォウ……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠マシュ
+ま、まあ、これで部下さんたちが[r]アマゾネス・ドットコムに戻れるということになれば、
+[k]
+
+＠マシュ
+[#一件落着:いっけんらくちゃく]と言ってもいいのではないでしょうか？[r]お給料とお休みがあるのはいいことです！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth H 2]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠コスモティック・ビューティ夫人
+フフ……屋台骨が揺らぐほどのピンチを乗り越えた[r]会社というのは、今まで以上に結束を強めるもの。
+[k]
+
+＠コスモティック・ビューティ夫人
+アマゾネス・ドットコムは、またさらに大きな怪物と[r]なっていくのかもしれませんわね。
+[k]
+
+＠コスモティック・ビューティ夫人
+これからも[#妾:わらわ]はライバルＣＥＯとして見届け、[r]提携し、美味しく利益をいただくという美し……
+[k]
+
+[messageOff]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 -128,0]
+[charaMove D -160,0 1.0]
+[wt 1.5]
+
+[charaFace H 3]
+
+＠コスモティック・ビューティ夫人
+オホン、ＢＴポイントの高いムーブをさせてもらいますわ？[wt 0.7][charaFace H 1][r]オホホホホホホ！　コスモティック！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠マシュ
+それではマスター、お疲れさまでした！
+[k]
+
+＠マシュ
+今すぐ通常営業に戻るというわけにもいかないと[r]思いますので、
+[k]
+
+＠マシュ
+ひとまずリラクゼーション施設に戻りましょう！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

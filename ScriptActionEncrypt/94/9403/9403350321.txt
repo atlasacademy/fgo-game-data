@@ -1,0 +1,268 @@
+
+＄94-03-35-03-2-1
+
+
+[soundStopAll]
+
+[charaSet A 4031000 1 赤兎]
+[charaSet B 1098160000 1 陳宮]
+[charaSet C 5042000 1 紫式部]
+[charaSet D 99502600 1 マシュ]
+[charaSet E 5007001 1 シェイクスピア]
+[charaSet F 1013001 1 カエサル]
+[charaSet G 5005001 1 アンデルセン]
+[sceneSet H 10000 1]
+[charaSet I 5009000 1 エフェクト用]
+[charaSet J 98115000 1 エフェクト用]
+
+[charaScale H 1.01]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_warp]
+
+[charaScale A 1.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 11010]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+
+[se ad171]
+[wt 0.2]
+[fowardEffect bit_talk_kengekiall02]
+[wt 0.2]
+[se ad32]
+[wt 0.3]
+[se ad170]
+[wt 0.2]
+[flashin once 0.1 0.3 FFFFFF80 FFFFFF00]
+[wt 0.4]
+
+[se bac18]
+[effect bit_talk_h_slash01 0,0 H]
+[wt 0.8]
+
+[se ad22]
+[wt 1.6]
+
+
+
+[se ad127]
+[charaMoveScale A 1.0 0.2]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[charaShake A 0.02 3 3 0.4]
+[seStop ad127 0.6]
+[wt 0.6]
+
+＠赤兎
+…………今です！　黒き衣を身に[#纏:まと]う美しき御方！
+[k]
+
+
+[se ade250]
+[bgm BGM_EVENT_3 0.4 0.5]
+[charaTalk H]
+[charaFadeTime H 0.1 0.4]
+＠J：解説
+行間で騒ぎを聞きつけて戻って来た赤兎馬であった！[r]なお、作家英霊たちはもうバテている！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.4 1.0]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠紫式部
+ありがとうございます！[r]お馬とは思えぬ凛々しき声をしたお馬の御仁！
+[k]
+
+[charaFace C 2]
+＠紫式部
+呪本、回収いたします！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 1.0]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[se adm20]
+[charaPut I 1]
+[charaEffectStop I bit_talk_warp]
+[fowardEffect bit_talk_22]
+[wt 1.5]
+[seStop adm20 1.0]
+[wt 2.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠マシュ
+呪本の回収を完了！[wt 0.6][charaFace D 12][r]ですが……今回も、獲得できた魔力量はわずかですね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠紫式部
+……はい。
+[k]
+
+＠紫式部
+確かに『最初の呪本』ではありませんでしたが、[r]しかし魔力を持った呪本、放っていて良いものではなく。
+[k]
+
+[charaFace C 1]
+＠紫式部
+回収できて幸いでした。[r]皆様、ありがとうございます。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 2]
+[charaDepth B 4]
+[charaDepth F 6]
+[charaDepth E 8]
+
+[charaTalk off]
+[charaFace A 1]
+[charaFace B 1]
+[charaFadein A 0.1 2]
+[charaFadein B 0.1 0]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaFace E 0]
+[charaFace F 0]
+[charaFadein E 0.1 0]
+[charaFadein F 0.1 2]
+[wt 1.2]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠アンデルセン
+ふむ。[r]地下図書館から貸し出された本……
+[k]
+
+＠アンデルセン
+そのものではないにせよ、そういった貸し出し本に[r]『最初の呪本』が紛れている可能性がある。だったな？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠紫式部
+はい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠アンデルセン
+図書館の本といえばそうだな。[r]あいつが大量に借りていたはずだ。
+[k]
+
+？1：あいつ？
+？2：誰？
+
+？！
+
+＠アンデルセン
+そら、同人だかの漫画描きがいただろう。眼鏡の。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠マシュ
+あっ、なるほど！　先輩！
+[k]
+
+？1：[line 3]刑部姫か！
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠アンデルセン
+行ってみるか。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[wt 1.2]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠アンデルセン
+何、奴が占拠している個室は[#書斎:ここ]の近くだ。[r]見送りぐらいはしてやろう。
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

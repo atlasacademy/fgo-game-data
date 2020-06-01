@@ -1,0 +1,315 @@
+
+
+
+＄03-00-06-06-5-0
+
+
+
+
+[soundStopAll]
+
+[charaSet A 8001400 1 マシュ]
+[charaSet B 1017001 1 武蔵]
+[charaSet C 9005001 1 ホームズ]
+[charaSet D 98002000 1 フォウ]
+[charaSet E 1098191310 1 マカリオス]
+[charaSet F 1098190300 1 ニコラ・テスラ]
+[sceneSet G 93901 1]
+[charaSet S 5009000 1 エフェクト用ダミー１]
+[charaSet T 5009000 1 エフェクト用ダミー２]
+
+[charaScale G 1.01]
+
+[scene 91803]
+[backEffect bit_talk_sparks]
+
+[charaPut T 1200,1200]
+[charaEffect T bit_talk_10_red]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[se ad668]
+[wt 0.2]
+[seStop ad668 0.1]
+
+＠マシュ
+[line 3]護衛戦団、第二波を突破！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+[se adm15]
+[wt 0.7]
+[cueSe Battle bac305]
+[wt 0.5]
+
+[charaFace B 1]
+
+＠武蔵
+いける。いけるわ。[r]異郷の軍神のナノなんとか、すっごーーい！
+[k]
+
+[charaFace B 6]
+
+＠武蔵
+帰依まではできないけど尊敬いたしますっ！[r]力を貸してくれてありがとう！
+[k]
+
+[charaFace B 12]
+
+＠武蔵
+で、それはそうと！[r]機神デメテル、こっちに注意……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 2.0]
+[wipeout rectangleStripUpToDown 0.7 1.0]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaFadein G 0.1 0,-200]
+[wt 0.3]
+[wipein rectangleStripDownToUp 0.7 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[se ad895]
+[wt 2.0]
+[seStop ad895 1.0]
+[wt 1.0]
+
+＠
+『哀しきかな。哀しきかな』
+[k]
+
+＠
+『哀しきは死。哀しきは終わり』
+[k]
+
+＠
+『我が愛しきオリュンポス市民、我が愛しき子供たちよ』
+[k]
+
+[messageOff]
+[se ad895]
+[wt 2.0]
+[seStop ad895 1.0]
+[wt 1.0]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.7 1.0]
+[wait wipe]
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+[charaFadeout G 0.1]
+[wt 0.3]
+[wipein rectangleStripUpToDown 0.7 1.0]
+[wait wipe]
+
+＠武蔵
+…………注意、向けてなくない？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+護衛戦団の[#趨勢:すうせい]に機神デメテルは関与しない、か。[r]ならば、指揮系統は各自独立していると見るべきだな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠フォウ
+フォ？　フォウ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+護衛戦団はただの障害物でしかないのさ。[r]この場合、γ地点へお[#出:い]でいただくためには……
+[k]
+
+[messageOff]
+[charaFace C 8]
+[wt 1.0]
+[bgm BGM_EVENT_63 0.1]
+[charaFace C 7]
+
+＠ホームズ
+こちらから神前へ出向く事で、[r]どうあってもデメテル神には気付いていただこう。
+[k]
+
+＠ホームズ
+如何に無敵の再生力を有しているとはいえ、[r]直接攻撃を仕掛けられれば無視もできまいさ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+対神攻撃……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+敢えてこう言おう！[r]対機神戦術その三“取りあえず力いっぱい殴る”だ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠マカリオス
+……シャーロック・ホームズ。[r]汎人類史の賢者。
+[k]
+
+＠マカリオス
+無茶だが、確かに理には適ってると思う。
+[k]
+
+[charaFace E 7]
+
+＠マカリオス
+マシュ、ムサシ、[%1]。[r]頼む。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠F：人工知能
+倒し切ろうとは思うな。[r]耐える[line 3]のも想像を絶する程の困難だろう。
+[k]
+
+[charaFace F 2]
+
+＠F：人工知能
+だが何としても[#躱:かわ]し、[#凌:しの]げ。[r]そしてポイントγまで誘導するのだ！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[se ad668]
+[wt 0.2]
+[seStop ad668 0.1]
+[wt 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[cueSe Battle bac305]
+[wt 1.0]
+
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaFadein G 0.1 0,-200]
+[wt 0.2]
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[se ad895]
+[wt 2.0]
+[seStop ad895 1.0]
+[wt 1.0]
+
+＠
+『哀しきかな。哀しきかな』
+[k]
+
+＠
+『哀しきは死。哀しきは終わり』
+[k]
+
+[messageOff]
+[se ad895]
+[wt 2.0]
+[seStop ad895 1.0]
+[wt 1.0]
+
+＠武蔵
+さっきから同じ口上ばっかりね！[r]神さまでも苦手な分野はあるとみた！
+[k]
+
+＠武蔵
+現代の家電ＡＩだってもっとお喋りなんじゃない？[r]歌舞伎の一つも見たらどう？
+[k]
+
+＠武蔵
+なーんて、強がりを言ってみるんだけど、[r][%1][&君:]はどう思うーー！？
+[k]
+
+？1：うん、電子レンジと同じくらい！
+？2：武蔵ちゃんの口には勝てないって！
+
+？！
+
+＠武蔵
+やっぱりね！[r]ならあと一押し、強気でいこっか！
+[k]
+
+＠マシュ
+機神デメテルとの相対距離、現在2600！[r]高速移動で突撃の上、戦闘開始します！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_63 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

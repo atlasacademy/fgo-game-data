@@ -1,0 +1,377 @@
+
+
+
+＄94-03-66-02-5-1
+
+[soundStopAll]
+
+[charaSet A 4032000 1 ライネス]
+[charaSet B 98001000 0 マシュ回想]
+[charaSet C 98003000 1 Dr.ロマン]
+[charaSet D 98002000 1 フォウ]
+
+[charaSet J 1098120900 1 通信用ノイズ]
+
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipeout noise 0.1 1.0]
+[wait wipe]
+
+[effect bit_sepia01]
+[pictureFrame cut063_cinema]
+
+[scene 10201]
+
+[bgm BGM_EVENT_48 0.1]
+[wt 0.3]
+
+[se ad31]
+[wt 0.2]
+[seStop ad31]
+
+[se ad31]
+[wt 0.3]
+[seStop ad31]
+
+[se ad31]
+[wt 0.5]
+
+[wipein noise 1.5 1.0]
+[seStop ad31 1.0]
+[wait wipe]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+
+＠フォウ
+フォウ！　フォーウ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFace D 0]
+[charaFadein B 0.1 256,-50]
+[charaFadein D 0.1 -256,-50]
+
+＠B：マシュ
+……フォウさんもしっかり帰還しています。[r]やはりラッキーアニマルなのではないでしょうか？
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-50]
+
+＠Dr.ロマン
+お……おおおおお！
+[k]
+
+＠Dr.ロマン
+やった、十五世紀フランスの修正は完璧だ！[r]まだ七つの内、たった一つだけだが[line 2]
+[k]
+
+＠Dr.ロマン
+我々は人類史をきちんとあるべき姿に戻したという訳だ！[r]やったな、[%1][&君:ちゃん]！
+[k]
+
+
+
+[messageOff]
+
+[wipeout noise 1.0 1.0]
+[bgm BGM_EVENT_48 1.0 0.5]
+[se ad31 1.0 1.0]
+[wait wipe]
+
+[pictureFrame]
+[effectStop bit_sepia01]
+
+[charaFadeout C 0.1]
+
+[charaSet B 99502600 1 マシュ]
+
+[scene 73000]
+[wt 1.5]
+
+[se ad31]
+[wipein noise 1.0 1.0]
+[bgmStop BGM_EVENT_48 1.0]
+[seStop ad31 1.0]
+[wait wipe]
+[wt 0.6]
+
+？1：そうだ。自分はカルデアの……
+？2：人類最後のマスター……
+
+？！
+
+[charaPut J 1]
+[se ad13]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+
+＠マシュ
+……先輩！　先輩、聞こえてますか！[bgm BGM_EVENT_81 0.1]
+[k]
+
+[charaFace B 1]
+
+＠マシュ
+よかった！　今度こそ、ちゃんとつながりました！
+[k]
+
+
+？1：マシュ！
+？2：カルデアからの通信！
+？！
+
+
+
+
+
+
+＠マシュ
+先輩！　ああ、やっと……やっと通信成功です。[r]先輩が無事で、本当によかった……！
+[k]
+
+[charaFace B 0]
+
+＠マシュ
+身体状況はモニタリングできていますが、[r]そちらで何があったか、話してもらえますか？
+[k]
+
+
+
+？1：エルメロイさんが……殺されて
+？2：自分もカルデアのことを忘れていた
+
+？！
+
+[charaFace B 6]
+
+＠マシュ
+エルメロイさんに、先輩の記憶まで？[r]そんな……！
+[k]
+
+[messageOff]
+[charaFace B 4]
+[wt 1.0]
+[charaFace B 0]
+
+＠マシュ
+すみません。でしたら、[r]わたしから状況を説明します。
+[k]
+
+＠マシュ
+今回のレイシフトは、[r]19世紀末のロンドンに特異点の反応が生じたためです。
+[k]
+
+？1：１９世紀末のロンドン？
+？2：それって……第四特異点の……
+
+？！
+
+＠マシュ
+それに近い座標でした。もちろん、かつての特異点に[r]小さな揺り返しは時々起こります。
+[k]
+
+＠マシュ
+ノウム・カルデアのレイシフト態勢も整ったので、[r]先輩にレイシフトしてもらったんですが……。
+[k]
+
+
+？1：ひょっとしてエルメロイさんを連れて？
+
+？！
+
+＠マシュ
+はい。ロンドンの事情に詳しいサーヴァントとして、[r]ロード・エルメロイⅡ世が選ばれました。
+[k]
+
+[charaFace B 4]
+
+＠マシュ
+ですが、レイシフト途中で、通信が突然遮断、[r]先輩たちの反応がロストしてしまったんです。
+[k]
+
+＠マシュ
+まさか……そんなことになっているなんて。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFace B 0]
+
+＠マシュ
+申し訳ありません。話を続けます。
+[k]
+
+[charaFace B 8]
+
+＠マシュ
+今も極めて不安定な状態ですが、[r]かろうじて、存在証明の必要分はデータが届いてます。
+[k]
+
+[charaFace B 12]
+
+＠マシュ
+この通信もシステムを組み替えて、わたしの感覚器に[r]焦点をつくることで、やっと成立したんです。
+[k]
+
+[charaFace B 4]
+
+＠マシュ
+そのせいでわたししか話せませんし、[r]これでも、ほんの短時間しか持ちそうにないんですが。
+[k]
+
+？1：さすがマシュ！
+？2：無理させたね
+
+？！
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ライネス
+ふむ。私にも話は聞こえてるが。[r]というか、今カルデアと言ったな。
+[k]
+
+
+
+
+
+
+
+＠ライネス
+ライネス・エルメロイ・アーチゾルテだ。[r]ひょっとして、君たちはアニムスフィアの近縁か？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠マシュ
+はじめまして、ミス・ライネス。[r]わたしたちの記録にもあなたの名前はあります。
+[k]
+
+[charaFace B 8]
+
+＠マシュ
+ただ、現状でわたしたちの説明は……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ライネス
+いや、戻ってきた記憶で、ある程度見当はつく。[r]並行世界の不必要な情報をいれるのはやめておこう。
+[k]
+
+[charaFace A 7]
+
+＠ライネス
+私も召喚された疑似サーヴァントだが、[r]そうした情報は爆弾と同じだ。扱いが難しすぎる。
+[k]
+
+[charaFace A 0]
+
+＠ライネス
+もちろん、必要となれば説明してもらうが、[r]現時点ではリスクの方が大きいと見た。
+[k]
+
+＠ライネス
+時計塔的な言い方になるが、互いに協力できる範囲での[r]共同作業といこう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠マシュ
+賢明な判断、ありがとうございます。
+[k]
+
+＠マシュ
+今の通信再開から、[r]ようやく、こちらも正確なデータを取得できています。
+[k]
+
+＠マシュ
+ただ、先輩の脱出のためには、どうしても[r]その特異点の原因を見つけ出す必要がありそうです……
+[k]
+
+？1：いつものことだよ
+？2：慣れてる
+
+？！
+
+[charaFace B 7]
+
+＠マシュ
+はい、わたしも全力でサポートします！
+[k]
+
+＠マシュ
+ところで、さきほど特異点の地形に変動が[r]ありました。そちらでも確認願えますか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ライネス
+ほほう。どうやらまた何かあったか。
+[k]
+
+＠ライネス
+頼もしい味方も加わったことだしね。[r]さあ、行こうか我が弟子よ！
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

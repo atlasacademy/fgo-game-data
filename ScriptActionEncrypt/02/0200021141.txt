@@ -1,0 +1,131 @@
+
+
+＄02-00-02-11-4-1
+[soundStopAll]
+[bgm BGM_EVENT_62 0.1]
+
+[charaSet A 1026001 1 デオン]
+[charaSet B 99502600 1 マシュ]
+[charaSet C 4025000 1 ライダー]
+[charaSet D 98114300 1 アストルフォ]
+[charaSet E 98113900 1 フェルグス]
+[charaSet F 5030001 1 シェヘラザード]
+[charaSet G 98114210 1 メガロス]
+
+[se ad414]
+[seVolume ad414 0 0.01]
+[scene 43101]
+[fadein black 1.5]
+[seVolume ad414 1.0 0.3]
+[wait fade]
+[wt 1.0]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+＠デオン
+……！　マスター、あれを！[r]あの木の向こう！
+[k]
+
+？1：黄金の……神殿みたいなのが見える！
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？2：こいつはゴールデンだ！
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaEffect B bit_talk_10_LowLevel]
+[se ad13]
+[wt 0.1]
+[charaFadein B 0.1 1]
+＠マシュ
+はい、金時さんが大喜びしそうな建築物[line 2][r]あれがエルドラドの中心部のようです！
+[k]
+
+[charaPut B 0,-10000]
+[charaFadeout B 0.1]
+[wt 0.1]
+？！
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠ライダー
+見えた！　[#黄金郷:エルドラド]だ、ついに辿り着いたぞ！[r]よし、あそこの岸につけろ！　最短ルートで[line 2]！
+[k]
+
+[seStop ad414 0.5]
+[bgmStop BGM_EVENT_62 0.7]
+[se ad14]
+[shake 0.05 1 1 0]
+[charaFace C 5]
+＠ライダー
+…………なんだ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠アストルフォ
+船が……揺れてる。川の流れがおかしい……？[r]いや、川の中に、大きな何かが[line 2]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[bgm BGM_EVENT_24 0.1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠フェルグス
+っ[line 2]まずい、これは。[r]この感覚は……覚えがある！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠デオン
+今すぐ船を止めろ、アストルフォ！[r]マスターは私に掴まれ……[#出てくるぞ]！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠シェヘラザード
+ああ……そんな！[r]よりによって、こんなところで……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[se ad425]
+＠G：？？？
+[image berserker_language_6][line 2][image berserker_language_7][line 2]！！
+[k]
+
+[messageOff]
+[shakeStop]
+[shake 0.05 0 5 0.7]
+[seStop ad14]
+[se ad416]
+[wt 2.0]
+[charaTalk G]
+[charaFace G 0]
+[se ad226]
+[shake 0.05 0 10 1.0]
+[charaFadein G 0.4 0,40]
+[charaMove G 0,0 0.7]
+[charaEffect G bit_talk_impactlanding]
+[effect bit_talk_rain01]
+[wt 3.0]
+[messageOff]
+[bgmStop BGM_EVENT_24 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,566 @@
+
+
+
+
+＄94-03-84-01-1-1
+
+[soundStopAll]
+
+
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[branch lblConf]
+[label lblNotClear]
+
+[charaSet A 8001000 1 マシュ]
+
+
+[branch lblNotClear_out]
+[label lblConf]
+
+[charaSet A 8001410 1 マシュ]
+
+
+
+[label lblNotClear_out]
+
+
+[charaSet B 1098173200 1 兵士？]
+[charaSet C 1098170800 1 お虎]
+[charaSet D 1098172700 1 村人]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[scene 78700]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.4 -80,0]
+[charaShake A 0.05 2 1 0.6]
+[charaMove A -20,0 0.2]
+[wt 0.2]
+[charaMove A 1 0.2]
+[wt 0.2]
+[seStop ad671 0.5]
+
+＠マシュ
+くっ……！　やはり数が多い……！[r]さすがに単騎では……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠兵士？
+[line 3]指揮官らしき対象を捕捉、排除します。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+マ[messageShake 0.05 4 4 0.2]スター！！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+[se ad270]
+[seStop ad270 0.5]
+[charaMoveScale B 1.1 0.1]
+[charaMove B 0,15 0.1]
+[charaEffect H bit_talk_41]
+[wt 0.4]
+
+[fadeout black 0.1]
+[bgmStop BGM_EVENT_3 0.1]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_41]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad32]
+[effect bit_talk_Slash_white_01]
+[effect bit_talk_14]
+[wt 1.0]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 78700]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,15]
+
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[wt 0.5]
+
+[se ade48]
+[seStop ade48 1.0]
+[charaShake B 0.05 3 3 0.7]
+[charaMove B 0,-50 0.4]
+[charaFadeout B 0.4]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 5]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect C appearance 1 0.25]
+[wt 0.4]
+
+＠お虎
+そんなか弱き衆生の[#危地:ピンチ]に颯爽参上、この私。[bgm BGM_EVENT_4 0.1]
+[k]
+
+[charaFace C 6]
+
+＠お虎
+これぞびしゃ……、[r]じゃない天の導きというものですね！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……お、お虎さん！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠お虎
+多少は腕に自信があったのでしょうが、まさか正面から[r][#馬鹿正直:ばかしょうじき]に仕掛けるとは思いませんでした。
+[k]
+
+[charaFace C 1]
+
+＠お虎
+せめて敵陣の弱みを突くとか、機を[#窺:うかが]うとかあるでしょう。
+[k]
+
+＠お虎
+都合よく私が居なければ死んでいましたよ、貴方たち。
+[k]
+
+？1：ありがとう、ごめんなさい！
+
+？！
+
+[charaFace C 16]
+
+＠お虎
+…………！
+[k]
+
+[charaFace C 14]
+
+＠お虎
+あはははははははは！[r]この状況でまずありがとう、ですか！
+[k]
+
+＠お虎
+[line 3]あははは！　おかしな方たちですね。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+[se ad7]
+[charaMoveScale B 1.1 0.1]
+[charaMove B 0,15 0.1]
+[charaPut H 1]
+[charaEffect H bit_talk_41]
+[wt 0.4]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_41]
+
+[se ad32]
+[fowardEffect bit_talk_ichimon01wh 0,-100]
+[fowardEffect bit_talk_14]
+[wt 0.1]
+[charaShake B 0.05 3 3 0.3]
+[wt 0.5]
+
+[charaShake B 0.05 3 3 0.7]
+[charaMove B 0,-50 0.4]
+[charaFadeout B 0.2]
+[wt 0.3]
+[fowardEffectDestroy bit_talk_ichimon01wh]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠お虎
+はいはい、邪魔ですから少し黙っててください。
+[k]
+
+[charaFace C 0]
+
+＠お虎
+さて、とりあえずこ奴らを蹴散らしましょう。[r]私が斬り込むので貴方は[&彼:彼女]の守りを！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+は、はい！　……先輩、わたしの後ろに！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠お虎
+素直でよろしい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠兵士？
+敵対勢力の増援を確認。[r]敵戦力未知数につき増援の可否を問う。
+[k]
+
+[messageOff]
+
+[se ad473]
+[seStop ad473 0.5]
+[fowardEffect bit_talk_Slash_white_01_L]
+[fowardEffect bit_talk_14]
+[wt 0.1]
+[charaShake B 0.05 3 3 0.3]
+[wt 0.4]
+
+[charaShake B 0.05 3 3 0.7]
+[charaMove B 0,-50 0.5]
+[charaFadeout B 0.3]
+[wt 0.4]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠お虎
+[#戦場:いくさば]でなにを眠たいことを言っているのですか。[r]退くなら退く、攻めるなら攻める！
+[k]
+
+[charaFace C 5]
+
+＠お虎
+どこの家中の者か知りませんが、[r]民を苦しめるようなならず者は見過ごせません！
+[k]
+
+[charaFace C 13]
+
+＠お虎
+びしゃも……、じゃない、[r]この私が天に代わって成敗致します！
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_4 1.0 0.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+
+
+[se ad170]
+[wt 0.5]
+
+[se ad33]
+[wt 1.5]
+
+[se ad32]
+[wt 0.5]
+
+[fadein black 1.0]
+[bgmStop BGM_EVENT_4 1.0]
+[wait fade]
+
+＠兵士？
+作戦……、続行困難……。
+[k]
+
+[messageOff]
+
+[se ad471]
+[seStop ad471 1.0]
+[effect bit_talk_v_slash01]
+[wt 0.4]
+[charaShake B 0.05 3 3 0.7]
+[wt 0.5]
+
+[se ade48]
+[seStop ade48 1.0]
+[charaMove B 0,-50 0.4]
+[charaFadeout B 0.4]
+[wt 0.4]
+[charaShakeStop B]
+[wt 1.2]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠お虎
+……意外とあっけなかったですね。[r]もうすこしやるものかと思いましたが。
+[k]
+
+＠お虎
+それに妙な鎧を着ているようですが……。
+[k]
+
+？1：つ、強い……
+
+？2：あの数の敵をあっという間に！？
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+お虎さんもサーヴァントだったのですね……。[bgm BGM_EVENT_2 0.1]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠お虎
+隠していて申し訳ありません。[r]ひとまずあなた方の素性を見極めるまではと……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠村人
+どこのどなたか存じ上げませんが助かりました！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠お虎
+弱き者を助くるは強き者の務め。[r]義を見てせざるはなんとやらですのでお気になさらず。
+[k]
+
+[charaFace C 1]
+
+＠お虎
+それより礼はこちらのお二人に。[r]私は[&彼:彼女]らに付き合っただけですから。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠村人
+お二人も本当にありがとうございます。[r]珍しいお召し物ですが、旅の方で？
+[k]
+
+？1：ええ、まあ……
+
+？2：ところでここは？
+
+？！
+
+＠村人
+立ち話もなんですし、ささ、こちらへ。[r]今日のところはわしらの村で休んでいってください。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠お虎
+これはありがたい、マシュに[%1]、[r]せっかくなのでご厄介になりますか。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ではお言葉に甘えて休ませて頂きましょうか、先輩？
+[k]
+
+＠マシュ
+……ところでお虎さんには、[r]マスターはいらっしゃらないのですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠お虎
+……実はお察しの通りこの地に召喚されたものの、[r]マスターがおりません、私。
+[k]
+
+＠お虎
+このままですといずれは魔力が尽きて[r]消滅してしまうかもなのですが……、
+[k]
+
+[charaFace C 8]
+
+＠お虎
+そうです！　袖すりあうも他生の縁と申しますし、[r]しばらくの間、私と仮契約していただけませんか？
+[k]
+
+？1：いいですよ
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+あっさり！？　先輩の順応力にはいつも驚かされますが[r]本日もまた驚くマシュ・キリエライトです！
+[k]
+
+？2：どうしようマシュ？
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠マシュ
+わ、わたしの意見ですか……？[r]そうですね……
+[k]
+
+＠マシュ
+お虎さんの実力は先ほど拝見した通りですし、[r]ご一緒してもらえれば心強いのではないかと。
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠お虎
+では話はまとまりましたね！　ご安心ください。[r]こう見えて戦働きには多少の心得がありますし、
+[k]
+
+[charaFace C 14]
+
+＠お虎
+このなが……、お虎にドーン！　とお任せくださいね！
+[k]
+
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

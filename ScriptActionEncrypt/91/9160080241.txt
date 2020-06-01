@@ -1,0 +1,431 @@
+
+
+
+＄91-60-08-02-4-1
+
+[soundStopAll]
+
+[charaSet A 6008000 1 クレオパトラ]
+[charaSet B 1013001 1 カエサル]
+[charaSet C 5012001 1 ニトクリス]
+
+[charaSet D 1001000 1 エフェクト用]
+[charaDepth D 1]
+
+[charaSet E 98115000 1 カエサリオンの声]
+
+
+[scene 21101]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut D 1]
+
+[se ad33]
+[effect bit_talk_kengekiall02]
+[wt 1.0]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+[cueSe Battle bac216]
+[charaEffect D bit_talk_radiallight01]
+[charaEffect A bit_talk_valentine_brilliant]
+[wt 1.0]
+[cueSeStop Battle bac216 0.1]
+
+
+[charaMoveScale A 1.1 0.2]
+[charaMove A 0,20 0.2]
+[se ad73]
+[wt 0.3]
+
+[charaFadeout A 0.1]
+[charaPut D 1200,1200]
+[wt 0.5]
+
+
+[fadeout white 0.7]
+[wait fade]
+
+[cueSe Battle bac215]
+
+[charaScale A 1.0]
+
+[charaFadeout A 0.1]
+[charaEffectStop D bit_talk_radiallight01]
+[charaEffectStop A bit_talk_valentine_brilliant]
+[wt 1.7]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+[fadein white 0.5]
+[wait fade]
+
+[wt 0.3]
+[se ad7]
+[charaMoveReturn B 0,5 0.2]
+[charaMoveScale B 0.95 0.2]
+[wt 0.2]
+
+
+[charaFace B 2]
+＠カエサル
+ば、馬鹿な……！
+[k]
+
+
+＠カエサル
+この私の黄金剣を見切っただと……！[r]なるほど、そうか確かに……
+[k]
+
+
+＠カエサル
+自分でもびっくりするほど軽やかに[#剣戟:けんげき]を行うこの私とて、[r]さすがにこの体型では限界というものがあったか[line 3]
+[k]
+
+[messageOff]
+[wt 0.3]
+[bgmStop BGM_EVENT_3 0.7]
+
+[charaFace B 1]
+[wt 1.0]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaEffect B bit_talk_06]
+[wt 1.0]
+
+＠カエサル
+見事だ。[r]クレオパトラ。そして、マスター。
+[k]
+
+[charaFace B 4]
+
+
+＠カエサル
+私が消えた後も……どうか……どうか……！
+[k]
+
+＠カエサル
+クレオパトラのことを……頼んだぞ、さらば……！[r]ああ……カエサリオン、今そこに行くぞ！
+[k]
+
+
+＠カエサリオンの声
+（いや、こなくていいですよ？）
+[k]
+
+[messageOff]
+[charaTalk B]
+
+
+[bgmStop BGM_EVENT_70 2.8]
+
+[se ad52]
+[charaSpecialEffect B flashErasure 1 1.7]
+[wait charaSpecialEffect B]
+[charaEffectStop B bit_talk_06]
+[wt 0.7]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠クレオパトラ
+え[line 3]
+[k]
+
+[bgm BGM_EVENT_41 0.1]
+
+＠クレオパトラ
+[messageShake 0.05 5 5 0.5]
+う、うそ、うそうそうそうそ嘘！？[r]カエサル様、き、消えてしまわれ……[wt 0.3][charaFace A 4]そんな……[line 3]
+[k]
+
+＠クレオパトラ
+ああ……！[r]ああ、あ、あああ……妾……私……！
+[k]
+
+＠クレオパトラ
+なんてこと……を……！
+[k]
+
+
+[charaFace A 2]
+＠クレオパトラ
+[messageShake 0.01 5 5 0.7]
+カエサル様[line 8]！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 506,0]
+
+[bgmStop BGM_EVENT_41 0.1]
+
+＠ニトクリス
+……。[r]……。
+[k]
+
+[se ad173]
+[charaMove C 0,0 1.2]
+[wait charaMove]
+[seStop ad173 0.1]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaFace C 0]
+＠ニトクリス
+実はいた私なのですがええとご心配はいらないかと。[r]彼、霊体化しただけで、別に消滅などはしていません。
+[k]
+
+[charaFace C 4]
+＠ニトクリス
+そもそもこれはシミュレーターですので、はい。[r]よほどの事故でもないかぎり消滅はないかと。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠クレオパトラ
+ええっ！？[r]で、でもほら、あんなにキラキラしていました！
+[k]
+
+[charaFace A 4]
+＠クレオパトラ
+あんな風にキラキラするのは[r]霊核を破壊されて完全に消滅する時だけなのでは……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+
+＠ニトクリス
+それはその、クレオパトラ。[r]貴女のように彼もキラキラする魅力を持っていたとか、
+[k]
+
+[charaFace C 4]
+＠ニトクリス
+貴女と共にいただけあって実は身に付けていたとか、[r]そんなアレではないでしょうか。言ってて疲れてきました。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠クレオパトラ
+！
+[k]
+
+[charaFace A 4]
+＠クレオパトラ
+な、なんてこと……[r]ということは妾はまたカエサル様に！
+[k]
+
+？1：逃げられちゃったねえ
+？2：残念！
+
+？！
+
+[charaFace A 2]
+＠クレオパトラ
+[messageShake 0.05 5 5 0.7]
+ぐぬぬぬぬぬぬぬぬ、なんたること！[r]あまりにきらきらと輝いていたものだから妾、つい！
+[k]
+
+
+[messageOff]
+
+[wt 0.5]
+
+[bgmStop BGM_EVENT_7 0.7]
+[charaFace A 1]
+
+[wt 1.5]
+
+[bgm BGM_EVENT_6 0.1]
+
+[charaFace A 0]
+＠クレオパトラ
+……でも仕方ありません。ファラオはくよくよしません。[r]いえ昔はどうしようもないくらい落ち込んだりしましたが。
+[k]
+
+＠クレオパトラ
+カエサル様が言っていたことも一理ありますものね。[r]ええ。それもそうね。
+[k]
+
+＠クレオパトラ
+マスター。[r]私が当世にて見つけた、我が第一の秘書よ。
+[k]
+
+[charaFace A 2]
+
+
+＠クレオパトラ
+せっかくアナタを秘書にまで格上げしたのですから！[r]アナタが妾の傍らで仕える日々をもっと楽しまずして、
+[k]
+
+[charaFace A 3]
+＠クレオパトラ
+ファラオなどとは恥ずかしくって名乗れません。[r]そうでしょう？　ええはいそうですとも、お返事は不要！
+[k]
+
+[charaFace A 2]
+＠クレオパトラ
+ああ、妾の秘書でよかった！[r]妾を召喚してよかった！
+[k]
+
+[charaFace A 0]
+＠クレオパトラ
+と心から思えるようになるまでは、ええ。[r]願いを完全に遂げるのは後回しにしてもよろしくてよ。
+[k]
+
+？1：じゃあ、カエサルは痩せなくてもＯＫ？
+
+？！
+
+[messageOff]
+[wt 0.1]
+[bgmStop BGM_EVENT_6 0.7]
+[charaFace A 1]
+[wt 1.0]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠クレオパトラ
+いいえ！
+[k]
+
+＠クレオパトラ
+それはそれ！　これはこれです！
+[k]
+
+[charaFace A 2]
+＠クレオパトラ
+さあ、まずは日暮れまで浜辺を堪能するとしましょう！[r]マシュも呼んであげましょう、それからニトクリス様！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+
+＠ニトクリス
+はいはい。
+[k]
+
+
+[charaFace A 5]
+＠クレオパトラ
+ダブルファラオの輝きというものが如何なるものか、[r]この秘書めに教えとうございますが、よいですね！
+[k]
+
+[charaFace C 8]
+＠ニトクリス
+ええー……。
+[k]
+
+[charaFace A 2]
+＠クレオパトラ
+よろしくて！
+[k]
+
+[charaFace C 2]
+＠ニトクリス
+ああもう、わかりました。[r]わかりましたとも！
+[k]
+
+＠クレオパトラ
+よい御返事をいただきました！　流石は天空の女王！
+[k]
+
+[charaFace A 1]
+＠クレオパトラ
+では、まずは[line 3]水着に着替えねばいけませんね。[r]妾にいちばん似合う最高の水着を探し[line 3]
+[k]
+
+[charaFace C 1]
+＠ニトクリス
+あ。それでしたら私にアイディアが。[r]この、新しい素材で作ったメジェド様の、
+[k]
+
+[charaFace A 2]
+
+
+＠クレオパトラ
+結構！　メジェド様のセンス、[r]妾、まだ身に付ける自信がありませんので！
+[k]
+
+[charaFace A 4]
+
+
+＠クレオパトラ
+とりあえず現段階では……
+[k]
+
+[charaFace C 4]
+[charaShake C 0.05 3 3 0.3]
+＠ニトクリス
+[se ad119]
+（がーん）
+[k]
+
+[charaFace A 2]
+
+＠クレオパトラ
+妾が目指すものはパリコレ的な先鋭芸術！
+[k]
+
+＠クレオパトラ
+何をするにも全力で輝いてしまうのが、この妾！[r]こればかりはどうしても止められるものではありません！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠クレオパトラ
+[line 4]さあ！　皆で参りましょう！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

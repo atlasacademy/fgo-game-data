@@ -1,0 +1,630 @@
+
+＄91-30-30-01-2-1
+
+[soundStopAll]
+
+[charaSet A 3030000 1 パールヴァティー]
+[charaSet B 23003000 1 ガネーシャ_石像]
+[charaSet C 2021000 1 巴御前]
+[charaSet D 6031000 1 刑部姫]
+[charaSet E 23003001 1 ガネーシャ]
+[charaSet F 1001000 1 エフェクト用]
+
+[imageSet H back10000 1]
+
+[charaScale H 1.02]
+
+[scene 10000]
+
+[bgm BGM_EVENT_3 0.1]
+[fadein black 1.0]
+[wait fade]
+
+
+[effect bit_talk_throwing]
+[se ad28]
+[seStop ad28 0.5]
+[wt 0.6]
+
+[effect bit_talk_14]
+[se ad170]
+[wt 0.5]
+
+[effect bit_talk_tornado02]
+[se bac30]
+[wt 0.8]
+
+[effect bit_talk_kengekiall02]
+[se ad32]
+[wt 0.5]
+[se ad32]
+[wt 0.1]
+[se ad32]
+[wt 0.7]
+
+[effectDestroy]
+
+[fadeout black 0.3]
+[bgmStop BGM_EVENT_3 0.8]
+[wait fade]
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[branch lblConf]
+[label lblNotClear]
+[scene 10400]
+
+[branch lblNotClear_out]
+[label lblConf]
+[scene 66800]
+
+[label lblNotClear_out]
+
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠巴御前
+ご指導ありがとうございましたーっ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠刑部姫
+なんか満足そうに！[r]これだから体育会系ゲーマーは！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.5]
+[se ad576]
+[seStop ad576 1.0]
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.4 0,-50]
+[charaMove E 0,0 0.4]
+[charaShake E 0.05 3 3 0.3]
+[wt 0.4]
+
+＠ガネーシャ
+ぐうう、逃亡失敗っス……。[r]ホントにフレに呼ばれてたらどうするんスかぁ……。
+[k]
+
+[charaFace E 5]
+
+＠ガネーシャ
+え、そんなに友達多くないだろって？[r]やめてその真実はアタシに効く。
+[k]
+
+？1：誰も何も言ってないから！
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠パールヴァティー
+巴さんはそんなに真面目なのに、[r]どうしてゲームだけは度を越してしまうのですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠巴御前
+…………ど、どうしてでしょうね？
+[k]
+
+＠巴御前
+私としては、[r]ただ遊んでいるだけのつもりなのですが……？
+[k]
+
+＠巴御前
+ただ、戦にまつわるものについては[r]ついついのめり込んでしまうことが多いかも……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠パールヴァティー
+あなたにとっては鍛錬の一種でも[r]あるのかもしれませんね。
+[k]
+
+＠パールヴァティー
+昨今のゲームがよくできている事ぐらいは[r]私も知っています。
+[k]
+
+＠パールヴァティー
+そうですね……『やりすぎ注意』ということで。[r]これからは気をつけてください。
+[k]
+
+＠パールヴァティー
+……刑部姫さんは？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠刑部姫
+[#姫:わたし]は単にオタクのカルマっていうか？[r]好きなのもあるし、あと……
+[k]
+
+[charaFace D 0]
+
+＠刑部姫
+ネタになるから、ってのもあるかな。[r]つまり次の新刊を作るための取材よ取材。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠パールヴァティー
+あなたが受け取った楽しさを、別の形の楽しさにして[r]また誰かに返すため……という事でしょうか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠刑部姫
+そ、そんな高尚なもんじゃないよ。[r]そうしないと溢れちゃうだけ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠パールヴァティー
+どうあれ、創作や芸術の正しき在り方とは[r]そのようなものなのでしょう。
+[k]
+
+＠パールヴァティー
+立派な営みです。[r]あなたも、度を越さないようご注意を。
+[k]
+
+[charaFace A 0]
+
+＠パールヴァティー
+で、ガネーシャ。あなたは……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ガネーシャ
+楽しいだけっス！
+[k]
+
+＠ガネーシャ
+ボクという存在のプライドをかけて言うっスけど、[r]マジでそれだけっス！　他に意味とかなーんもなし！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠パールヴァティー
+そうですか。[wt 0.6][bgmStop BGM_EVENT_2 1.5][r]それでは……仕方ないですね……！
+[k]
+
+[messageOff]
+
+[charaMoveReturn A 0,6 0.3]
+[charaMoveScale A 1.1 0.3]
+[se ade74]
+[seStop ade74 1.0]
+[se ad14]
+[seVolume ad14 0 0.6]
+[wt 1.0]
+[charaMoveReturn A 0,8 0.6]
+[charaMoveScale A 1.2 0.6]
+[seVolume ad14 1.2 0.5]
+[se ade74]
+[seStop ade74 1.0]
+[wt 1.6]
+
+[seVolume ad14 0.5 0.2]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+[charaFadeTime H 0.3 0.4]
+[wt 0.4]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠ガネーシャ
+（とは、言ってみたものの。[r]　ひ、ひぇぇぇぇぇ……なんという圧！）
+[k]
+
+＠ガネーシャ
+（さすがは[#パパン:シヴァ]のヨメ！[r]　いやトーゼン知ってたっスけど！）
+[k]
+
+[messageOff]
+[seVolume ad14 0.3 0.5]
+[charaFadeout H 0.3]
+[wt 0.3]
+
+[charaFace E 8]
+[charaMove E 0,-10 0.3]
+
+＠ガネーシャ
+はわわわ。ま、まぁその、グータラしすぎたのは[r]しすぎたかなって反省しなくもないところもあり……
+[k]
+
+[messageOff]
+[charaMove E 0,-20 0.3]
+[wt 0.3]
+
+＠ガネーシャ
+これからはもう少しだけ真面目に働こうかなー、[r]なんて思ったりしちゃったりして……
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[seVolume ad14 1.0 0.7]
+
+[charaMoveReturn A 0,15 0.9]
+[charaMoveScale A 1.4 0.9]
+[se ade74]
+[seStop ade74 1.0]
+[bgmStop BGM_EVENT_5 1.0]
+[wt 3.0]
+
+[charaFace A 1]
+[charaMoveReturn A 0,15 0.9]
+[charaMoveScale A 1.0 0.9]
+[seStop ad14 1.0]
+[wt 1.9]
+
+＠パールヴァティー
+わかればよいのです。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠ガネーシャ
+ほっ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠パールヴァティー
+ただ……もちろんその言葉を信じてはいますが、
+[k]
+
+＠パールヴァティー
+どうもあなたはいまいち禁欲とか我慢とか[r]そういう言葉に縁遠い様子。
+[k]
+
+＠パールヴァティー
+一つ、手は打たせてもらいます。
+[k]
+
+[charaFace A 7]
+
+
+＠パールヴァティー
+具体的には……その、手元でカチャカチャやってるそれ！[r]こんとろーらー、ですか？
+[k]
+
+[charaFace A 2]
+
+＠パールヴァティー
+あなたのぶんだけ没収！　です！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠ガネーシャ
+は…………はぁ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+
+＠パールヴァティー
+この仕打ちをひどいと思いたければ思いなさい。[r]ですがこれも、立派な神として[#崇:あが]められるための試練。
+[k]
+
+＠パールヴァティー
+私は心をオニにしてこうするのです。[r]いいですね、ガネーシャ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠ガネーシャ
+そりゃまあ、いいといえばいいっスけど。
+[k]
+
+？1：ええと……（教えるべきか迷う）
+？2：まあ、いいかな……（諦める）
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+
+＠パールヴァティー
+よろしい！　それでは、ここの風紀チェック＆生活指導、[r]つつがなく完了です！
+[k]
+
+＠パールヴァティー
+これで皆様、生活態度を改めてくれるでしょう！
+[k]
+
+[charaFace A 1]
+
+
+＠パールヴァティー
+この勢いのまま次の場所に向かいましょう、マスターさん！
+[k]
+
+[messageOff]
+
+[charaMove A 50,0 0.5]
+[charaFadeout A 0.4]
+[se ade74]
+[seStop ade74 2.5]
+[wt 1.5]
+
+[se ad8]
+[wt 1.0]
+
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_2 0.5]
+[wait fade]
+
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+
+＠ガネーシャ
+いやいやいやいや……[r]１６Ｂｉｔ時代じゃないんだから。
+[k]
+
+
+＠ガネーシャ
+今どきは予備のコントローラも簡単に用意できるし、[r]それ持ってきたらゲームなんていくらでもできるのに。
+[k]
+
+＠ガネーシャ
+なーんかズレてるんスよねぇ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-50]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠巴御前
+ふふ。[r]でも、いいご母堂だと思いますよ。
+[k]
+
+
+＠巴御前
+厳しさの全ては他者のためを想ってのこと。[r]貴方という子だけでなく、我々に対しても、です。
+[k]
+
+＠巴御前
+それは充分に伝わりました。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 0,-50]
+
+＠ガネーシャ
+まあ……しょーがないか。
+[k]
+
+[messageOff]
+
+[charaChange E 23003000 4 fade 0.8]
+[se ad576]
+[seStop ad576 0.8]
+[wt 0.8]
+
+＠ガネーシャ
+とりあえず、しばらくはありがたい神様の[r]お仕事でもやっとくとしますかね、と。
+[k]
+
+＠ガネーシャ
+見つかってまたママンに小言くらうのもめんどいし。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠刑部姫
+ふーん、たまにはガっちゃんも真面目になるんだね。[r][#姫:わたし]も帰って原稿やろーっと。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠ガネーシャ
+フヒヒ。何ページの原稿の予定っスか？
+[k]
+
+＠ガネーシャ
+飽きて姫さんが気晴らしを始めたころに[r]部屋に行くっス。
+[k]
+
+
+＠ガネーシャ
+[#有耶無耶:う　や　む　や]になった勝負の続きはつけとかないと。[r]ゲームがあるのはここだけじゃないっスからねー。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 0,-50]
+
+＠巴御前
+こ、[#懲:こ]りませんね！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 0,-50]
+
+＠ガネーシャ
+見つかれば困るってコトは、[r]つまり、見つからなければいいんスよ～。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 0,-50]
+
+＠刑部姫
+……はいはい。グータラしてないガっちゃんは[r]ガっちゃんじゃない、か。
+[k]
+
+＠刑部姫
+ちょっとだけでも自分から働こうって決めただけで、[r]まぁ、わりとレアな事なんじゃない？
+[k]
+
+[charaFace D 2]
+
+＠刑部姫
+飽きたら来てもいいけど、原稿の進捗[#如何:いかん]によっては[r]鍵を閉めて絶対入れさせないから！
+[k]
+
+
+＠刑部姫
+立ち入り禁止札が出てるときはマジで帰ってね！
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[soundStopAll]
+[end]

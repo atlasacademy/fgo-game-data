@@ -1,0 +1,179 @@
+
+
+＄94-03-85-07-1-0
+
+[soundStopAll]
+
+[charaSet A 98001000 1 家老マシュ]
+[charaSet B 7035001 1 森長可]
+[charaSet C 6002000 1 百地ハサン太夫]
+[charaSet D 1098173100 1 僧兵らしき男]
+
+[scene 70200]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠家老マシュ
+[#先輩:との]、最近城下で人[#攫:さら]いが[r]多発しているとのことで調査をしていたのですが、
+[k]
+
+＠家老マシュ
+ついにその人[#攫:さら]い達の根城を突き止めました！
+[k]
+
+？1：さっそく行こう
+
+？2：人[#攫:さら]いなんて許せない
+
+？！
+
+[messageOff]
+[se ad443]
+[seVolume ad443 0 0.8]
+
+[wipeout leftToRight 1.0 1.0]
+[bgm BGM_EVENT_5 1.0 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[seStop ad443 1.0]
+
+[scene 20110]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[bgm BGM_EVENT_5 1.0 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠森長可
+[line 3]で、ここがその根城ってわけか？[r]よーし、さっそく皆殺しと[#洒落:しゃれ]こもうじゃねぇか！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.7 25,0]
+
+[charaMove C 0,0 0.5]
+[wt 0.9]
+
+＠？？？
+……静かに、カルデア家の手の者ですな？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠家老マシュ
+あなたは！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠？？？
+私は[#百地:ももち]ハサン[#太夫:だゆう]と申すしがない忍びにございます。
+[k]
+
+＠百地ハサン太夫
+実は私もこのあたりで暗躍している人[#攫:さら]いを[r]調査しておりまして、ここを突き止めた次第。
+[k]
+
+＠百地ハサン太夫
+このまま攻め込んでは[#攫:さら]われた人たちに[r]危害が及ぶやもしれません。
+[k]
+
+＠百地ハサン太夫
+ここはひとつ協力致しませんか？
+[k]
+
+[messageOff]
+[wt 0.3]
+
+[wipeout rollRight 1.0 0.5]
+[bgmStop BGM_EVENT_5 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+
+[wt 0.5]
+
+[wipein rollLeft 1.0 0.5]
+[wait wipe]
+[wt 0.4]
+
+[se ad662]
+[seVolume ad662 0 0.2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠僧兵らしき男
+……よし、集めた連中は総本山へ移送しろ。
+[k]
+
+＠僧兵らしき男
+ああ、城下には信長の仕業と吹聴するのも忘れずにな。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[seStop ad662 1.0]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠森長可
+ああん？　何が大殿の仕業だと？[r]てめぇら、大殿の名を騙ってタダで済むと思うなよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠僧兵らしき男
+なんだ貴様らは！　ええい、見つかっては仕方ない、[r]こ奴らを始末しろ！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

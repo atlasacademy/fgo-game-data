@@ -1,0 +1,244 @@
+
+
+＄03-00-01-23-1-1
+
+
+[soundStopAll]
+
+[charaSet A 8001410 1 マシュ]
+[charaSet B 11006001 1 アマデウス・オルタ]
+[charaSet C 98115300 1 ホームズ]
+[charaSet D 1098124510 1 ダ・ヴィンチ]
+[charaSet E 7030001 1 アタランテ・オルタ]
+[charaSet F 1098127900 1 カドック]
+[charaSet G 4028001 1 イヴァン雷帝]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[scene 55600]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_41 0.1]
+
+[charaEffect G bit_talk_06]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠イヴァン雷帝
+おお……おおお……おおおおお……。[r]ここまで……ここまでか……。
+[k]
+
+＠イヴァン雷帝
+しかも……おまえは……覚悟すらできずに、[r]ここに立っている……。
+[k]
+
+＠イヴァン雷帝
+惰弱な汎人類史らしい在り方だ……。[r]しかし……。
+[k]
+
+＠イヴァン雷帝
+その哀しみは……もう、ヤガが持てなくなったもの。[r]他者に対する[#憐憫:れんびん]……共感……。
+[k]
+
+＠イヴァン雷帝
+か弱い、幸福者……。[r]そうだ、そうだ、思い出した……。
+[k]
+
+＠イヴァン雷帝
+我が正妃……アナスタシアも……。[r]そのような……[#女:ひと]で……あった……。
+[k]
+
+＠イヴァン雷帝
+生きることの辛さではなく……。[r]他者の不幸に……泣くことができる……。
+[k]
+
+＠イヴァン雷帝
+その“余分”こそが……。[r]何より、私には……美しく……。
+[k]
+
+＠イヴァン雷帝
+……ああ、そうか……。[r]それで……この世界は……敗北したのか……。
+[k]
+
+＠イヴァン雷帝
+我々が何より愛おしむべきものが……何も……[r]無くなって……しまったから……。
+[k]
+
+＠イヴァン雷帝
+……認めよう……[%1]……。[r]おまえの……勝利を……。
+[k]
+
+＠イヴァン雷帝
+たとえ、貴様が認めずとも……。[r]余は……認め……敗者として……去りゆく……のみだ……。
+[k]
+
+[messageOff]
+[charaEffectStop G bit_talk_06]
+
+
+[charaEffect G bit_talk_atomization]
+[wt 0.5]
+[charaFadeout G 1.0]
+[cueSe Battle ba6]
+[wt 2.5]
+
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 1.2]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠マシュ
+イヴァン雷帝……消滅……しました……。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.5]
+
+？1：ホームズ
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+ああ。[r]……イヴァン雷帝の言っていることは正しい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+？2：ダ・ヴィンチちゃん
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+……うん。
+[k]
+
+＠ダ・ヴィンチ
+イヴァン雷帝の言っていることに……[r]恐らく、間違いはない。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+？！
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠マシュ
+申し訳ありません、マスター。[r]わたしも……理解していました。
+[k]
+
+＠マシュ
+わたしたちの歴史を守るという事は、[r]この世界を踏みにじる事になる、って[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[bgmStop BGM_EVENT_41 0.3]
+[wt 0.5]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠カドック
+やれやれ。[r][line 3]やっと倒れたか。
+[k]
+
+？1：カドック……！
+？！
+
+[charaFace F 0]
+
+＠カドック
+騒がしいのは嫌いだ。[r]アタランテ、さっさと始末しろ。
+[k]
+
+[charaFace F 1]
+
+＠カドック
+そういう段取りだっただろう？[r]イヴァンを殺した後は、僕たちでコイツらを殺すって。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+アタランテさん！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠アタランテ・オルタ
+…………。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠カドック
+どうした。ここまできて後戻りはできないぞ。[r]それとも[line 3]
+[k]
+
+＠カドック
+子供たちがどうなってもいいと、[r]アンタは割り切ることができるのか？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠アタランテ・オルタ
+……ああ。[r]……すまないな、[%1]。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,904 @@
+
+＄91-10-32-01-1-0
+
+[soundStopAll]
+
+[charaSet A 98110000 1 柳生但馬守]
+[charaSet B 6029001 1 千代女]
+[charaSet C 98001000 1 マシュ]
+[charaSet D 1035001 1 ディルムッド]
+[charaSet E 2021000 1 巴御前]
+[charaSet F 1098124510 1 ダ・ヴィンチ]
+[charaSet J 1098120900 1 通信用ノイズ]
+
+[charaDepth D 1]
+[charaDepth B 3]
+[charaDepth E 2]
+
+[scene 66600]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[wt 1.0]
+
+[se ad452]
+[seVolume ad452 0 0.1]
+[seVolume ad452 1.0 1.0]
+[wt 1.0]
+[seStop ad452]
+
+＠柳生但馬守
+[line 3]これは、主殿。
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠柳生但馬守
+ふむ。
+[k]
+
+＠柳生但馬守
+顔色は佳いか。うむ。
+[k]
+
+＠柳生但馬守
+ならば[#然程:さほど]の影響はないものと見えるが……
+[k]
+
+？1：柳生さん？
+？2：どうかした？
+
+？！
+
+＠柳生但馬守
+いや。失敬。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[charaFaceFade A 1 0.5]
+[wt 1.0]
+
+＠柳生但馬守
+主殿は、新たなる“かるであ”には馴染まれた頃合いかな。[r]聞けば過酷な旅を続けてこられた模様にて。
+[k]
+
+＠柳生但馬守
+年若き身とはいえども無理は禁物、[r]今はゆるりと休まれよ。
+[k]
+
+＠柳生但馬守
+では。私は是にて。
+[k]
+
+[messageOff]
+
+[se ad452]
+[charaFadeout A 0.4]
+[wt 0.4]
+[seStop ad452 0.4]
+
+[wt 1.5]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[scene 66400]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect B appearance 1 0.25]
+[wt 0.4]
+
+＠千代女
+お館様！
+[k]
+
+[charaFace B 4]
+
+＠千代女
+お知らせせねばならぬ儀がございます。[r]その、実は[line 3]
+[k]
+
+[charaFace B 0]
+
+＠千代女
+柳生但馬守様についてのお話にて。[r]但馬守様が近頃、奇妙な行動を繰り返してござる。
+[k]
+
+？1：柳生さん？
+？2：さっき会ったけど……
+
+？！
+
+＠千代女
+具体的に申し上げると、[r]戦闘訓練用シミュレーターにご執心の模様にて。
+[k]
+
+＠千代女
+これまでは月に一、二回の頻度であったものが[r]ここ数日というもの毎日毎夜、入り浸っておられます。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+[se ad15]
+[wt 0.4]
+
+＠マシュ
+ええと……[r]確かに、記録には残っていますね。
+[k]
+
+＠マシュ
+戦闘訓練を積んでいるというよりは[line 3]
+[k]
+
+[charaFace C 7]
+
+＠マシュ
+特定のエリアではなくアットランダムに、[r]さまざまな時代、場所を歩かれているようです。
+[k]
+
+＠マシュ
+今日も先ほどシミュレーターを起動なさってます。[r]やはり、場所と時代はアットランダムな設定ですね。
+[k]
+
+？1：直接[#訊:き]けばいいような気がする
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branch select01_01]
+
+？2：……行ってみようか
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[branch select01_02end]
+
+？！
+
+[label select01_01]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠千代女
+それが……
+[k]
+
+[charaFace B 4]
+
+＠千代女
+申し訳ありません！[r]拙者、辛抱しきれずお尋ねしてしまったのです！
+[k]
+
+＠千代女
+夜な夜なシミュレーターを起動するのは何故なのですか、[r]と但馬守様に直接申し上げて……！
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_81 1.0 0.3]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 66400]
+[effect bit_sepia01]
+[wipeFilter cinema 0.5 0]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠柳生但馬守
+はは。
+[k]
+
+＠柳生但馬守
+アサシン・パライソ[line 3]否、甲賀望月の千代女殿。[r]何もそなたが案ずることはない。
+[k]
+
+＠柳生但馬守
+すべては主殿の[#御為:おんため]である。
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_81 1.0 1.0]
+[wait fade]
+
+[wipeOff]
+[effectStop bit_sepia01]
+
+[charaFadeout A 0.1]
+
+[scene 66400]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠千代女
+但馬守様はこのように申されて……
+[k]
+
+？1：……分かった。じゃあ、行ってみよう
+
+？！
+
+
+[label select01_02end]
+
+[charaFace B 0]
+
+＠千代女
+はっ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[se ad166]
+[wt 0.5]
+[seStop ad166 0.1]
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠ディルムッド
+ならばこのディルムッドもお連れいただきたい！[r]かの御仁には、日頃より世話になっているのです。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad59]
+[seVolume ad59 0 0.1]
+[seVolume ad59 0.3 1.0]
+[wt 0.7]
+[seStop ad59]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠巴御前
+お話は聞きました！　私も参ります！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠千代女
+インフェルノ殿[line 3][r]いえ、巴様。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠巴御前
+但馬さまには私も良くしていただいております。[r]もしもお困りであるなら、お力にならねばなりません。
+[k]
+
+＠巴御前
+マスター。[r]ぜひ、この巴もお連れください。
+[k]
+
+？1：じゃあ、みんなで行こう！
+
+？！
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFace B 0]
+[charaFace E 1]
+[charaFadein D 0.1 -300,0]
+[charaFadein B 0.1 300,0]
+[charaFadein E 0.1 1]
+[wt 0.7]
+
+[charaMoveReturn D -300,-5 0.4]
+[charaMoveReturn B 300,-5 0.4]
+[charaMoveReturn E 0,-5 0.4]
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠マシュ
+シミュレーターの調整とモニタリングは[r]わたしに任せてください！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ディルムッド
+これは有り難い。[r]マシュ殿、よろしく頼みます。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠千代女
+では[line 3]いざ！　シミュレーター起動にござる！
+[k]
+
+[messageOff]
+
+[se ad15]
+[wt 0.4]
+[se ad15]
+[wt 0.4]
+[se ad1]
+[wt 1.0]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_81 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 46700]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad451]
+[seVolume ad451 0 0.1]
+[wt 0.1]
+[seVolume ad451 1.4 0.95]
+
+[wt 3.0]
+[seStop ad451 0.5]
+
+[se ad60]
+[wt 0.5]
+[seStop ad60 0.5]
+[se ad166]
+[seStop ad166 0.5]
+[wt 0.5]
+
+[bgm BGM_EVENT_66 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ディルムッド
+ふむ……
+[k]
+
+＠ディルムッド
+シミュレーターによって構成された仮想空間。[r]いつ目にしても、見事なものですね。
+[k]
+
+＠ディルムッド
+この木造建築[line 3]場所でいえば恐らくは極東、[r]時代の頃は十六世紀あたりといったところ。
+[k]
+
+[charaFace D 1]
+
+＠ディルムッド
+もしや、マスターの[#生地:せいち]の過去にあたるのでは？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠千代女
+……此処は。もしや。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ディルムッド
+む？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠巴御前
+え、ええ。[r]直接見知っている訳ではございませんが……
+[k]
+
+＠巴御前
+かるであの記録で見たものに、[r]よく似てございます。
+[k]
+
+？1：……よく似ているね
+？2：並行世界の下総、[#土気:とけ]城下町だ
+
+？！
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaSet C 99502600 1 マシュ]
+
+[charaPut J 1]
+[se ad13]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠マシュ
+先輩、聞こえますか？
+[k]
+
+＠マシュ
+シミュレーターに残されたログによれば、[r]柳生但馬守さんは現在もそのエリアにいるはずです。
+[k]
+
+＠マシュ
+ランダム発生で形成されたエリアですので、[r]何かの意図が介在している可能性は[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+ゼロってことはないだろうけど可能性はごく低いね。[r]ダ・ヴィンチちゃん登場っと。
+[k]
+
+[charaFace F 19]
+
+＠ダ・ヴィンチ
+なんだか面白そうなことしてるね。[r]ふふ、私もこっちからサポートしてあげよう。
+[k]
+
+[messageOff]
+[se ad15]
+[wt 0.4]
+[se ad15]
+[wt 0.4]
+
+＠ダ・ヴィンチ
+えいやっと！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[wt 0.3]
+[charaEffect E bit_talk_np_buf]
+[charaFace E 3]
+[wt 0.2]
+[cueSe Battle bas7]
+[cueSeVolume bas7 0 0.5]
+[wt 1.0]
+
+＠巴御前
+わ。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[wt 0.3]
+[charaEffect E bit_talk_np_buf]
+[wt 0.2]
+[cueSe Battle bas7]
+[cueSeVolume bas7 0 0.5]
+[wt 1.0]
+
+＠千代女
+これは……
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+[wt 0.3]
+[charaEffect E bit_talk_np_buf]
+[wt 0.2]
+[cueSe Battle bas7]
+[cueSeVolume bas7 0 0.5]
+[wt 1.0]
+
+＠ディルムッド
+[line 3]成る程。
+[k]
+
+＠ディルムッド
+何らかの加護のような効果が付与されたようですね。[r]恐らくは、アサシンの気配遮断スキルに類したものかと。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 26]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+ディルムッド、するどい！[r]そうそう、みんなでスパイの真似事をしてるんでしょ？
+[k]
+
+＠ダ・ヴィンチ
+それなら気配は隠しておかなきゃね。[r]アサシンのクラススキル程ではなくとも、
+[k]
+
+[charaFace F 12]
+
+＠ダ・ヴィンチ
+ある程度の[#隠形:おんぎょう]はできるはずだよ。
+[k]
+
+＠ダ・ヴィンチ
+柳生但馬守くらいの達人には、[r]通じないかもだけど……
+[k]
+
+＠ダ・ヴィンチ
+うーん、ないよりはマシってことでどうだろう！
+[k]
+
+？1：ありがとう、ダ・ヴィンチちゃん
+？2：助かる！
+
+？！
+
+[charaFace F 29]
+
+＠ダ・ヴィンチ
+えへん。もっと褒めてもいいんだよ。
+[k]
+
+？1：普段からこれがあると便利だ[&なあ:よね]……
+
+？！
+
+[charaFace F 1]
+
+＠ダ・ヴィンチ
+いやぁ、あはは。[r]残念ながらシミュレーター内だけの[#裏技:チート]でね。
+[k]
+
+[charaFace F 0]
+
+＠ダ・ヴィンチ
+勿論、そういう能力を持つ英霊がいるなら別さ。[r]とりあえず今だけってことで、がんばってね諸君！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠千代女
+はっ。[#粉骨砕身:ふんこつさいしん]いたします。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠巴御前
+さて、但馬さまの居場所を探らねばなりませんが、[r]果たしてどちらに向かわれたのか[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠マシュ
+あっ。皆さん、待ってください！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_66 1.5]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+ありゃりゃ。これは……
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaSet A 98006200 1 エネミー1]
+[charaSet C 98006200 1 エネミー2]
+[charaSet G 98006200 1 エネミー3]
+
+[se ad433]
+[seVolume ad433 0 0.05]
+[wt 0.1]
+[seVolume ad433 1.0 0.6]
+[wt 1.5]
+[seStop ad433 1.0]
+
+[wt 1.5]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk off]
+
+[se ad463]
+
+[charaDepth A 1]
+[charaDepth C 2]
+[charaDepth G 3]
+
+[charaPut A -350,0]
+[charaFace A 0]
+[charaSpecialEffect A appearance 1 0.5]
+
+[charaPut C 350,0]
+[charaFace C 0]
+[charaSpecialEffect C appearance 1 0.5]
+
+[charaPut G 1]
+[charaFace G 0]
+[charaSpecialEffect G appearance 1 0.5]
+
+[wt 0.4]
+
+[seStop ad463 1.0]
+
+[wt 2.0]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠巴御前
+！！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠千代女
+エネミー！　気配遮断チートを無視して！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠ディルムッド
+むむ。これは邪魔ですね。
+[k]
+
+[messageOff]
+[charaFace D 2]
+[se adm37]
+[wt 1.5]
+
+＠ディルムッド
+排除して進みましょう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+おかしいな[line 3][r]エネミーがチートをすり抜ける設定なんてしてないけど……
+[k]
+
+[charaFace F 5]
+
+＠ダ・ヴィンチ
+とりあえず撃破するしかないみたい！[r]ごめんね、みんな！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk off]
+
+[charaFace A 0]
+[charaFace C 0]
+[charaFace G 0]
+
+[charaFadein A 0.1 -350,0]
+[charaFadein C 0.1 350,0]
+[charaFadein G 0.1 1]
+
+[wt 1.0]
+
+[se ad463]
+[wt 0.5]
+[seStop ad463 1.0]
+
+[wt 1.0]
+
+？1：出てきたからには仕方ない！
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠千代女
+[line 3]はっ。押し通るでござる！
+[k]
+
+？2：戦闘開始！
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠巴御前
+はい！　参ります！
+[k]
+
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

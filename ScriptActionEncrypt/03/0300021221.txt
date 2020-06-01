@@ -1,0 +1,365 @@
+
+
+＄03-00-02-12-2-1
+
+
+
+[soundStopAll]
+
+[charaSet A 3012001 1 ブリュンヒルデ]
+[charaSet B 3033002 1 スルーズ]
+[charaSet C 1098123210 1 ゴルドルフ]
+[charaSet D 8001400 1 マシュ]
+[charaSet E 1098124510 1 ダ・ヴィンチ]
+[charaSet F 2031001 1 ナポレオン]
+[charaSet G 98002000 1 フォウ]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[bgm BGM_EVENT_81 0.1]
+
+[scene 60601]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad442]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠ブリュンヒルデ
+[line 3]力の差を理解しなさい。
+[k]
+
+[charaFace A 0]
+
+＠ブリュンヒルデ
+これ以上の破壊は無意味です。[r]貴女たちは、個が破壊されてしまう哀しさを知りなさい。
+[k]
+
+＠ブリュンヒルデ
+増産される事はあるでしょう、[r]でも、それは、決して死からの再生ではない。
+[k]
+
+＠ブリュンヒルデ
+新たな個体が生み出されるだけです。[r]個としての貴女たちは、決して、永遠ではない。
+[k]
+
+＠ブリュンヒルデ
+退きなさい。[r]姉妹たち。
+[k]
+
+[bgm BGM_EVENT_81 1.0 0.5]
+
+＠スルーズ
+…………いいえ。退ける訳がありません、お姉様。
+[k]
+
+[charaFace A 4]
+
+＠ブリュンヒルデ
+その声……[r]聞き覚えがある[line 3]
+[k]
+
+＠スルーズ
+力の差と仰いましたね？[r]確かに、個々の量産型では貴女たちには及ばない。
+[k]
+
+＠スルーズ
+けれどこちらには数の有利があります！[r]総勢100騎の量産型ワルキューレを前に、貴女は！
+[k]
+
+＠スルーズ
+何処まで戦えますか！[r]ブリュンヒルデお姉様！　そして[line 3]カルデアの残党！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 0.5]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk E]
+[charaFace E 26]
+[charaFadein E 0.1 1]
+[wt 0.6]
+
+＠ダ・ヴィンチ
+そうだね、もちろん！[bgm BGM_EVENT_82 0.1][r]それなりに戦わせていただくとも！
+[k]
+
+＠ダ・ヴィンチ
+態勢を整え直すだけの時間は[r]作ってもらえたからねー！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[se ad607]
+
+[shake 0.05 0 2 1.0]
+[wt 0.8]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠マシュ
+急[#制動:ブレーキ]！[r]マスター、掴まってください……！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad553]
+[seVolume ad553 0 0.7]
+[fowardEffect bit_talk_41]
+[shake 0.05 2 2 3.0]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠フォウ
+フォフォフォウ！[r]キャーウ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[seVolume ad553 1.0 0.4]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠ナポレオン
+ははは！　いいねえいいねえ、調子が戻ったか！[r]成る程！　カルデアのシャドウ・ボーダー！
+[k]
+
+＠ナポレオン
+なかなか憎い事を考えるもんだ！[r]悪くない！
+[k]
+
+？1：闇雲に逃げ回るんじゃなくて
+？2：どこかに、向かってる！？
+
+？！
+
+[charaFace F 1]
+
+＠ナポレオン
+そうだ！[r]すぐに分かるだろうよ[line 3]そら、もうすぐそこだ！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[cueSe Battle bac428]
+[cueSeVolume bac428 0 0.6]
+[wt 2.0]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠マシュ
+巨人種……！[r]これは、先ほど突破した群れの……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 26]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+今までただ修理だけしていた訳じゃあないからね～！[r]巨人種の性質はあらかた把握してあるさ！
+[k]
+
+＠ダ・ヴィンチ
+彼らは熱源を感知して対象に襲い掛かる。[r]人間も、動物も、英霊も、一切の区別をせずに！
+[k]
+
+＠ダ・ヴィンチ
+ワルキューレにだって疑似心臓やら何やらあって、[r]構造は人体のそれに似て、温かい！
+[k]
+
+[messageOff]
+
+[se ad553]
+[shake 0.05 3 2 1.2]
+[wt 2.0]
+[seStop ad553 1.0]
+[fowardEffectStop bit_talk_41]
+
+[charaFace E 27]
+
+＠ダ・ヴィンチ
+つまり、どういうコトかと言うとぉ[line 3]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[cueSe Battle bac428]
+[wt 1.0]
+
+[se ad85]
+[se ad246]
+[wt 0.4]
+[seStop ad246 0.7]
+
+[wt 0.6]
+
+[se ad85]
+[se ad246]
+[wt 0.4]
+[seStop ad246 0.7]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠フォウ
+フォ……[charaShake G 0.05 3 3 0.5]フォ、フォウウ！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠マシュ
+巨人の群れによる投石攻撃……！[wt 0.5][charaFace D 2][r]来ます！　全力防御姿勢！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[flashin once 1.0 1.5 FFFFFF80 FFFFFF00]
+
+[se bac247]
+[seVolume bac247 0 0.7]
+[shake 0.05 5 4 0.7]
+[se ad608]
+
+[wt 0.7]
+
+[se bac325]
+[seVolume bac325 0 0.7]
+[shake 0.05 5 4 0.7]
+[wt 1.2]
+
+[se bac332]
+[seVolume bac332 0 0.7]
+[shake 0.05 5 4 0.7]
+
+[charaSet G 1098123010 1 ムニエル]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠ムニエル
+当たってる当たってる！[r]焼け石に水だけど、戦乙女に氷塊ってな！
+[k]
+
+＠ムニエル
+ヤッホー、作戦成功だぜ！[r]今までさんざん狙撃してきやがって、ざまあみろ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ゴルドルフ
+ふ。なんというコトはない。
+[k]
+
+＠ゴルドルフ
+単に、私が採用した技術顧問の計算が優秀だった、[r]というだけの話だよキミィ。
+[k]
+
+[charaFace C 2]
+
+＠ゴルドルフ
+よし、ではこのまま巨人種の習性を利用し続けたまえ！
+[k]
+
+＠ゴルドルフ
+なにも真面目に100騎を相手する事はない！[r]我々はファイターではなくレ、トラベラーなのだから！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+ここまで派手にやれば他の巨人種も集結するからねぇ。[r]私たちは華麗に逃げ切りながら[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠ナポレオン
+統率個体を探せ！[r]スルーズがいるのは間違いない、声が聞こえた。
+[k]
+
+＠ナポレオン
+道理だぜ。総勢100騎とやらが揃ってるんだ、[r]これだけの数は頭がいなけりゃ運用できんだろうよ！
+[k]
+
+[charaFace F 2]
+
+＠ナポレオン
+この空の何処かに奴がいる！[r]それを見付けて、叩くことができれば……！
+[k]
+
+[charaFace F 5]
+
+＠ナポレオン
+オレたちの！　勝利だ！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_82 1.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

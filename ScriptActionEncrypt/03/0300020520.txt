@@ -1,0 +1,1146 @@
+
+
+＄03-00-02-05-2-0
+[soundStopAll]
+
+
+[charaSet A 98002000 1 フォウ]
+[charaSet B 98001000 1 マシュ]
+[charaSet C 1098124510 1 ダ・ヴィンチ]
+[charaSet D 1098153610 1 ゲルダ]
+[charaSet E 1098123210 1 ゴルドルフ]
+[charaSet G 5009000 1 エフェクト用ダミー]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[scene 61604]
+
+[fadein black 1.5]
+[wt 0.5]
+[se ad117]
+[seVolume ad117 0.0 0.1]
+[seVolume ad117 2.0 1.0]
+[wait fade]
+
+[wt 3.0]
+
+[fadeout black 1.0]
+[seStop ad117 1.0]
+[wait fade]
+
+[scene 61701]
+
+[wt 0.5]
+
+[fadein black 1.0]
+[wt 0.5]
+[se ade24]
+[seVolume ade24 0.0 0.1]
+[seVolume ade24 1.0 1.0]
+[wait fade]
+
+[wt 2.0]
+[seStop ade24 0.5]
+[wt 0.3]
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠フォウ
+フォウ、フォ、フォウウ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠マシュ
+やはり、通信は繋がらないようです。
+[k]
+
+？1：さっきは繋がったのにね……
+？2：仕方ない、今日はもう休もうか
+
+？！
+
+[charaFace B 12]
+
+＠マシュ
+……はい。そうですね。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10]
+[se ad13]
+[wt 0.3]
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+[wt 0.3]
+
+＠ダ・ヴィンチ
+あっ！　繋がった！！
+[k]
+
+[charaFace C 1]
+
+＠ダ・ヴィンチ
+やっほー、私の顔は見えてるかい二人とも！[r]いや、フォウもだね！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.2]
+[charaPut G 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[charaMoveReturn A 0,30 0.25]
+
+＠フォウ
+フォフォフォウ、ファーウ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+ダ・ヴィンチちゃん！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+長い時間は話せないだろうから、手短に。[r]こちらが魔術礼装式ドローンで収集しておいた情報と、
+[k]
+
+＠ダ・ヴィンチ
+ゴルドルフくんから聞いた情報を併せた上で、[r]私の至った結論を言おう。ちなみに彼はもう寝てる。
+[k]
+
+[charaFace C 10]
+
+＠ダ・ヴィンチ
+“ええい気に食わん、私は船長室で休む！[r][f small]  [f -]朝食の時間に起こしてくれたまえ！”だってさ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.2]
+[charaPut G 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠フォウ
+フォウフォウ……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 0.8]
+
+[charaPut G 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 1.0]
+[charaFace C 25]
+
+＠ダ・ヴィンチ
+さて。大きく分けて、[bgm BGM_EVENT_81 0.1][r]北欧には三種の霊長が存在している。
+[k]
+
+＠ダ・ヴィンチ
+ここで言う霊長とは高度な知性体や文明の保持者とかの[r]意味ではなくて、生命力や支配力を指している。
+[k]
+
+[charaFace C 24]
+
+＠ダ・ヴィンチ
+その上で[line 3]
+[k]
+
+＠ダ・ヴィンチ
+第一に、強靭きわまる捕食者である巨人種。[r]第二に、集落外では生存できない存在である人類。
+[k]
+
+＠ダ・ヴィンチ
+そして第三の存在が“御使いと神”という訳だ。[r]少なくとも、彼らは人類に対する上位者であるようだね。
+[k]
+
+[charaFace C 25]
+
+＠ダ・ヴィンチ
+氷の獣は人類よりは強者だろうけど、[r]どうも巨人種の従属存在で自由意志を持たないようだから、
+[k]
+
+＠ダ・ヴィンチ
+いったん三種には含めない。[r]いいね。
+[k]
+
+[charaFace C 24]
+
+＠ダ・ヴィンチ
+通常の生物については、希少であり殆ど存在していない。[r]ごくまれに存在する花園……
+[k]
+
+＠ダ・ヴィンチ
+炎と氷の中間地点の温暖箇所にのみ、[r]かろうじて動植物が生きている状態だ。
+[k]
+
+＠ダ・ヴィンチ
+これもまた三種には含めずに例外としておくと……
+[k]
+
+[messageOff]
+[charaFace C 14]
+[wt 1.0]
+
+[charaFace C 24]
+
+＠ダ・ヴィンチ
+北欧[#異聞帯:ロストベルト]に於いては、残念ながら[r]人類は決して万物の霊長などではないと言えるだろう。
+[k]
+
+＠ダ・ヴィンチ
+人類こそが[#最底辺の生物]だ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.2]
+[charaPut G 1200,1200]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠マシュ
+最底辺[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaTalk C]
+[charaFace C 25]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+ここでは人間を戦力としては考えるべきじゃないと思う。[r]おそらく、文明も魔術もろくに発達していないんだ。
+[k]
+
+＠ダ・ヴィンチ
+機械装置なんてろくに見ないだろう？[r]一人で集落の外に出た女の子も、通信装置は勿論だけど、
+[k]
+
+[charaFace C 24]
+
+＠ダ・ヴィンチ
+巨人避けの護符さえ持たない。[r]集落の外を生き抜くための力が、ないんだ。人類には。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.2]
+[charaPut G 1200,1200]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠マシュ
+………………確かに、納得できる結論です。
+[k]
+
+[charaFace B 12]
+
+＠マシュ
+少なくともこの集落……第２３集落では、[r]集落の外の世界は存在していないに等しい状態です。
+[k]
+
+＠マシュ
+ゲルダさんは例外的に飛び出してしまったようですが、[r]複数の要因が重なったためで、通常ならまず有り得ない。
+[k]
+
+＠マシュ
+唯一、外部に扉を開くのは……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+そう。間引きのためだけだ。
+[k]
+
+？1：………………
+
+？！
+
+＠ダ・ヴィンチ
+一見にして平穏だけど、[r]ロシアにも引けを取らない苛酷な状況だと言える。
+[k]
+
+[charaFace C 14]
+
+＠ダ・ヴィンチ
+上位者である“神と御使い”がどういう存在なのかは[r]まだ殆ど分からないけれど、
+[k]
+
+＠ダ・ヴィンチ
+私たちに友好的であるかどうかは不透明なままだ。
+[k]
+
+[charaFace C 25]
+
+＠ダ・ヴィンチ
+ただ、既にクリプターと繋がっているかもしれない、[r]という可能性を念頭に置きながら行動してほしい。
+[k]
+
+[messageOff]
+[se ad539]
+[wt 0.2]
+[charaFace C 22]
+[charaPut H 1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_10_LowLevel]
+[wt 0.4]
+[seStop ad539]
+
+[wt 0.5]
+
+[charaFace C 21]
+
+＠ダ・ヴィンチ
+いけない、通信が不安定になってきた[line 3][r]手早く追加の情報だよ。
+[k]
+
+[charaFace C 25]
+
+＠ダ・ヴィンチ
+まだ召喚に適した土地は発見できない。[r]残念だけど、なんとかキミたちで偵察を続行して……
+[k]
+
+[messageOff]
+[se ad539]
+[wt 0.7]
+[charaPut C 1200,1200]
+[charaPut H 1200,1200]
+[wt 0.5]
+[messageOff]
+[charaFadeout C 0.1]
+
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠フォウ
+フォウフォウゥゥゥ……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 1.5]
+
+[se ad93]
+[wt 0.7]
+[se ad456]
+[seVolume ad456 0.0 0.2]
+[wt 0.3]
+[seVolume ad456 0.8 1.0]
+[wt 0.8]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+[seStop ad456 0.1]
+
+[bgm BGM_EVENT_92 0.1]
+
+＠ゲルダ
+ねえねえマシュさま！　フォウ！[r]それに[%1]さまも！
+[k]
+
+[charaFace D 8]
+
+＠ゲルダ
+……あれ？　いま、小さな誰かとお話をしてた？
+[k]
+
+[charaFace D 4]
+
+＠ゲルダ
+あっ。またあのふとっちょのおじさんね！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace D 1]
+[charaFadein D 0.1 0]
+[charaFace B 12]
+[charaFadein B 0.1 2]
+
+＠マシュ
+ええと、話してはいたんですが、[r]ちょうど今しがた繋がらなくなってしまって……
+[k]
+
+＠ゲルダ
+なになに？　何と繋がるの？
+[k]
+
+[charaFace D 5]
+
+＠ゲルダ
+ふふ、マシュさまたちはあたしの知らないものを[r]いっぱい知っていて、持っていて、とっても楽しいわ。
+[k]
+
+＠ゲルダ
+御使いのお口に合うか自信がなかったけれど、[r]パンもお魚も美味しいっていってくれたし！
+[k]
+
+＠ゲルダ
+優しくて、強くて、素敵だわ。[r]もっともっと一緒にいたいわ、あたし。
+[k]
+
+[charaFace D 2]
+
+＠ゲルダ
+今夜だけじゃなくて明日も泊まっていって？[r]明日は特別な日だから、お仕事があるだろうけど[line 3]
+[k]
+
+＠マシュ
+……いえ、ですからわたしたちは御使いでは……
+[k]
+
+[charaFace D 4]
+
+＠ゲルダ
+ふふ。騙されないわ。[wt 0.5][charaFace D 0][r]あ、もしかして明日になってから来る予定だったのが、
+[k]
+
+＠ゲルダ
+あたしのせいで一日早く来てしまったの？[charaFace D 2][r]そ、そうだったらごめんなさいっ。
+[k]
+
+＠マシュ
+いえ、そうでは……[r]せ、先輩。どこから何を訂正したらいいか……
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+？1：きっと御使いだと信じ切っているから
+？2：説明しても、分からないかもだね
+
+？！
+
+[charaFace B 13]
+
+＠マシュ
+そう、ですね。[r]ではいったん説得を試みるのはやめておきます。
+[k]
+
+[messageOff]
+[charaFace B 8]
+[wt 1.0]
+[charaFace B 0]
+
+＠マシュ
+[line 3]ただ、ゲルダさんには尋ねたいことがあります。[r]構わないでしょうか、先輩。
+[k]
+
+？1：うん
+？2：こっちも色々聞きたいと思っていたから
+
+？！
+
+＠マシュ
+ありがとうございます。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace D 1]
+[charaFadein D 0.1 0]
+[charaFace B 0]
+[charaFadein B 0.1 2]
+
+＠マシュ
+……ゲルダさん。少しだけ、いいですか？
+[k]
+
+＠ゲルダ
+なあに？
+[k]
+
+[charaFace B 12]
+
+＠マシュ
+その……[r]ええと、ですね……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_92 1.0]
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10]
+[se ad13]
+[wt 0.3]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ゴルドルフ
+[line 3]待て。そこから先は私が聞こう。
+[k]
+
+？1：所長？　起きたんですか？
+？2：通信がまた繋がって……
+
+？！
+
+＠ゴルドルフ
+睡眠導入剤でもないか、と探していたら[r]通信が回復したと聞いてな。
+[k]
+
+＠ゴルドルフ
+うむ。[r]音声だけだが３０秒前から繋がっていたのだ。
+[k]
+
+＠ゴルドルフ
+マシュ・キリエライト、私が代わる。[r]どう考えても私の方が交渉能力に長けている。
+[k]
+
+＠ゴルドルフ
+あー、そこの子供。[bgm BGM_EVENT_70 0.1][r]これは個人的な質問なので気軽に回答しても構わん。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.2]
+[charaPut G 1200,1200]
+
+[charaPut G 2]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 0]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+
+＠ゲルダ
+[FFFFFF]？[-]
+[k]
+
+＠ゴルドルフ
+君に聞きたい事がある。
+[k]
+
+[charaFace D 0]
+
+＠ゲルダ
+なあに？
+[k]
+
+[charaFace E 10]
+
+＠ゴルドルフ
+君はこの[#異聞帯:ロストベルト]を……[r]いや。この集落と、その周囲にあるすべてについて……
+[k]
+
+＠ゴルドルフ
+一体、どのように感じて生きているのだ？
+[k]
+
+[charaFace D 8]
+
+＠ゲルダ
+[FFFFFF]？？？[-]
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.2]
+[charaPut G 1200,1200]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠マシュ
+……。[r]……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 2]
+[charaTalk E]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFace E 10]
+[charaFadein E 0.1 2]
+
+＠ゴルドルフ
+[#辛:つら]くは、ないのかね。[r]将来、大人になった時のことを考えたりはせんのか？
+[k]
+
+＠ゴルドルフ
+巨人種に怯えたりせず、その小さな集落以外の……[r]広い世界を見てみたいとは思わんのか。
+[k]
+
+＠ゴルドルフ
+自由を……得たいとは、考えた事はないのか。
+[k]
+
+＠ゲルダ
+将来……自由……
+[k]
+
+[charaFace D 8]
+
+＠ゲルダ
+世界……？
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.2]
+[charaPut G 1200,1200]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠マシュ
+ゲルダさん。
+[k]
+
+＠マシュ
+どんなに健康であっても２０代で人生を終えてしまう、[r]この世界で、どうしてそんな風に[line 3]
+[k]
+
+[charaFace B 4]
+
+＠マシュ
+あなたは屈託なく、明るく……
+[k]
+
+＠マシュ
+………………………………。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠ゲルダ
+え、え。え。マシュさま、お顔を上げて？[r]ふとっちょのおじさんも、そんな困った顔しないで？
+[k]
+
+＠ゲルダ
+えっと、ね。ごめんなさい。[r]よく分からない[line 3]
+[k]
+
+＠ゲルダ
+ふたりが何を言っているのか、[r]ちゃんと意味が分からなくて。
+[k]
+
+[charaFace D 7]
+
+＠ゲルダ
+読み書き、あんまり得意じゃないからかな……[r]将来というのはどんな意味なのかしら……
+[k]
+
+[charaFace D 0]
+
+＠ゲルダ
+ううん、言葉はわかるわ。[r]明日よりもっと先のことよね？
+[k]
+
+[charaFace D 2]
+
+＠ゲルダ
+ううん……[r]難しい……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut G 0]
+[charaTalk B]
+[charaFace E 0]
+[charaFadein E 0.1 0]
+[charaFace B 12]
+[charaFadein B 0.1 2]
+
+＠マシュ
+……。[r]……。
+[k]
+
+[charaFace E 10]
+
+＠ゴルドルフ
+…………難しい、か。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+[wt 0.2]
+[charaPut G 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ゲルダ
+自由っていうのも、ええと、言葉は分かるの。[r]家に閉じ込められたり、縄で縛られていないって意味で、
+[k]
+
+＠ゲルダ
+合っているわよ……ね？
+[k]
+
+[messageOff]
+[charaFace D 6]
+[wt 1.0]
+[charaFace D 5]
+[wt 0.3]
+
+＠ゲルダ
+それならあたしは自由よ、[r]集落のどこにでも行けるもの！
+[k]
+
+[charaFace D 1]
+
+＠ゲルダ
+集落の中の農耕地にも行けるし池にだって行ける。[r]誰の家にもお邪魔できるし！
+[k]
+
+＠ゲルダ
+ラウラの家にだって遊びに行けて、[r]新しく生まれた赤ちゃんの顔を見にも行けるの。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace D 1]
+[charaFadein D 0.1 0]
+[charaFace B 13]
+[charaFadein B 0.1 2]
+[wt 1.0]
+[charaFace B 0]
+
+＠マシュ
+わたしが……
+[k]
+
+＠マシュ
+わたしたちがいた世界では、[r]もっと、人は長い時間を生きることができるんです。
+[k]
+
+[charaFace D 8]
+
+＠ゲルダ
+25歳よりも？
+[k]
+
+＠マシュ
+はい。もっとです。もっと、ずっと長く……[r]皆が皆ではありませんが……
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠ゴルドルフ
+そうだぞ。[r]人によっては80歳や90歳まで長く生きるものだ。
+[k]
+
+＠ゴルドルフ
+子供だけではなく、その、孫や[#曾孫:ひまご]を可愛がる者もいる。[r]むろん健康であればの話だが、な。
+[k]
+
+＠ゴルドルフ
+病気や事故といった要因で亡くなるのならまだしも、[r]15や25で全員が終わったりしないんだよ。
+[k]
+
+＠ゴルドルフ
+生まれつき短命なヒトなぞホムンクルスぐらいのものだ。[r]私が心配する事ではないがね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.2]
+[charaPut G 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ゲルダ
+孫……ひまご……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠ゴルドルフ
+うむ。子供や孫がいなくとも、だ。[r]愛した者と一生を長く生きる人間だっている。
+[k]
+
+＠ゴルドルフ
+これと決めた事のために……[r]家庭を持たずとも、友人や仲間と共に歩く者もいる。
+[k]
+
+[messageOff]
+[charaFace E 4]
+[wt 1.0]
+[charaFace E 5]
+
+＠ゴルドルフ
+ええい、なぜ私がこんな話をしなくてはならんのか！[r]魔術師が人間としての幸福を語るなど！
+[k]
+
+＠ゴルドルフ
+だが、誰も言わんのなら私が言うしかあるまい！
+[k]
+
+＠ゴルドルフ
+どうなっているのだ！？[r]どうなっているのだおまえたちは！
+[k]
+
+＠ゴルドルフ
+寿命を定められ、それを笑顔で受け止めてどうする！[r]怒りさえなければ恐れすらないというのか！？
+[k]
+
+＠ゴルドルフ
+過酷な生活を強いられていたヤガたちでさえ、[r]“生き抜く”という自由だけは持っていたというのに！
+[k]
+
+[charaFace E 6]
+
+＠ゴルドルフ
+くう、不愉快だ、私は不愉快だ！[r]そして通信の調子も悪い！　もう寝るぞ！　じゃあな！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 1.0]
+[charaFadeout E 0.1]
+[wt 0.2]
+[charaPut G 1200,1200]
+[wt 0.5]
+
+？1：ゴルドルフ新所長……
+？2：（言葉にならない）
+
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠フォウ
+フォ……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[wt 0.5]
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠マシュ
+……ふとっちょさんの言う通りです、ゲルダさん。
+[k]
+
+＠マシュ
+わたしたちの世界はとても複雑ですが、[r]その分、選択肢は無数にありました。
+[k]
+
+＠マシュ
+互いを肯定し、互いを否定し、[r]その上で育み続けてきたからでしょう。
+[k]
+
+[charaFace B 17]
+
+＠マシュ
+……人間はそういうものでした。[r]それはこの北欧でも変わりはないはず。
+[k]
+
+[charaFace B 0]
+
+＠マシュ
+人間はなんだってできるんです。[r]自由というのは、きっと、そういう事です。
+[k]
+
+＠マシュ
+できない事、やれない事のほうが実際には沢山あって、[r]ままならない事ばかりかもしれません。でも、でも、
+[k]
+
+[charaFace B 8]
+
+＠マシュ
+皆が、そう[line 3][r]きっと願っています。
+[k]
+
+？1：マシュ……
+
+[messageOff]
+[charaFace B 13]
+[wt 0.7]
+
+？2：（無言）
+
+[messageOff]
+
+？！
+
+[charaFace B 4]
+
+＠マシュ
+ゲルダさん……
+[k]
+
+＠マシュ
+あなたは……[r]この世界で……何かを、願えていますか……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ゲルダ
+願っているか？
+[k]
+
+[messageOff]
+[charaFace D 8]
+[wt 1.0]
+[charaFace D 2]
+
+＠ゲルダ
+え、ええと、ええと、[r]ええとね……ううん、うーん[line 3]
+[k]
+
+[charaFace D 6]
+
+＠ゲルダ
+薬草は摘めたし、[r]今日の晩ご飯も美味しかったし……
+[k]
+
+[charaFace D 0]
+
+＠ゲルダ
+あれ？　そういえば、[r]今のあたしには何も願いごとがないわ。
+[k]
+
+＠ゲルダ
+い、いつもはあるのよ？　本当よ？
+[k]
+
+＠ゲルダ
+大きなお魚が捕れますようにとか、[r]パンが美味しく焼けますようにとか……色々……
+[k]
+
+[charaFace D 1]
+
+＠ゲルダ
+あ、綺麗な虹はもう一回だけ見たいかな……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠フォウ
+フォウゥゥ……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠ゲルダ
+ごめんなさい、ごめんね。[r]あたしは、あなたたちの言っていることが分からなくて、
+[k]
+
+[charaFace D 7]
+
+＠ゲルダ
+きちんと答えられてないと思うけど、[r]でも……
+[k]
+
+[charaFace D 5]
+
+＠ゲルダ
+素敵ね。お年寄りになれちゃうし、[r]なんでもできちゃうなんて。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+[wt 0.8]
+[charaFace B 4]
+
+＠マシュ
+……。[r]……。
+[k]
+
+[charaFace B 8]
+
+＠マシュ
+……………………いえ。
+[k]
+
+[charaFace B 12]
+
+＠マシュ
+謝るのは、わたしの方です。[r]混乱させたかった訳ではないんです。
+[k]
+
+＠マシュ
+…………ごめんなさい、ゲルダさん。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠ゲルダ
+そんなことないわ！[r]本当の本当に素敵と思ったもの！
+[k]
+
+[charaFace D 2]
+
+＠ゲルダ
+難しかったけれど……[r]途方もないお話なんだわって感じたの。
+[k]
+
+＠ゲルダ
+驚いて、頭の中でぼんやりとも思い浮かべられなくて、[r]こんなのって初めて。
+[k]
+
+＠ゲルダ
+御使いの言葉は難しいというけど、[r]本当ね。あたし、子供だってまだよく分からないのに、
+[k]
+
+[charaFace D 0]
+
+＠ゲルダ
+孫、それからえっと……ひまご？
+[k]
+
+＠ゲルダ
+何代も先の子供の顔を見るだなんて……[r]もしもお年寄りになれたら、そんな事ができるのね。
+[k]
+
+[charaFace D 7]
+
+＠ゲルダ
+そんなの考えたこともなかったわ。[r]だって[line 3]
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_11 2.0]
+[wait fade]
+[scene 10000]
+[wt 1.5]
+
+＠
+『だって』
+[k]
+
+＠
+『誰も、そんなに長くは生きられないもの』
+[k]
+
+
+[messageOff]
+[wt 3.0]
+[soundStopAll]
+[end]

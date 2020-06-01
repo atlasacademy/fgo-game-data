@@ -1,0 +1,672 @@
+
+＄91-30-30-01-4-1
+
+[soundStopAll]
+
+[charaSet A 1001000 1 パールヴァティー_演出用]
+[charaSet B 3030000 1 パールヴァティー]
+[charaSet C 1001000 1 パールヴァティー_演出用]
+
+[charaSet D 6037000 1 カーマ]
+
+[charaSet E 6005001 1 ジャック]
+[charaSet F 5004001 1 ナーサリー・ライム]
+[charaSet G 7028000 1 バニヤン]
+[charaSet H 3026000 1 ジャンヌ・オルタ・サンタ・リリィ]
+
+[charaSet J 1001000 1 エフェクト用1]
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[branch lblConf]
+[label lblNotClear]
+[charaSet I 5009001 1 ダ・ヴィンチ]
+[scene 10310]
+
+[branch lblNotClear_out]
+[label lblConf]
+[charaSet I 1098124500 1 ダ・ヴィンチ]
+[scene 66600]
+
+[label lblNotClear_out]
+
+[charaPut J 326,0]
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[fowardEffect bit_talk_lightning_03t]
+[effect bit_talk_lightning_03t -326,0]
+[charaEffect J bit_talk_lightning_03t]
+[se bac40]
+[wt 0.5]
+
+[se bac437]
+[seVolume bac437 0 0.5]
+[fowardEffect bit_talk_lightning_02t]
+[wt 1.0]
+
+[fadeout white 0.3]
+[wait fade]
+
+[fowardEffectStop bit_talk_lightning_02t]
+[wt 0.1]
+
+[effect bit_talk_thunderbolt]
+
+[fadein white 0.3]
+[se ad63]
+[seStop bac437 0.3]
+[wait fade]
+
+[wt 1.8]
+
+[effectStop bit_talk_thunderbolt]
+[wt 1.0]
+[bgmStop BGM_EVENT_3 1.5]
+[wt 1.5]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove 0,0 H]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.2 0,20]
+[charaMove D 0,0 0.3]
+[wt 0.3]
+
+[charaFace D 11]
+
+＠カーマ
+ぶーぶー。
+[k]
+
+＠カーマ
+理不尽ですおーぼーです！
+[k]
+
+[charaFace D 12]
+
+＠カーマ
+私はただ、自分のできることをやっただけ[line 3][r]そう、普段通り愛してあげただけなのに。
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+
+
+＠カーマ
+[#満漢全席:まんかんぜんせき]が欲しい人には[#満漢全席:まんかんぜんせき]を。お手軽万能食が[r]欲しい人にはお手軽万能食を用意する。
+[k]
+
+[charaFace D 7]
+
+＠カーマ
+それが私です、ナイスサービス♡[r]むしろ褒められてもいいのでは？
+[k]
+
+[messageOff]
+
+[charaFadeout D 0.1]
+[wt 0.4]
+
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.4 1]
+[se adm36]
+[seStop adm36 0.7]
+[wt 0.4]
+
+＠ダ・ヴィンチ
+やあ、とおりすがりの天才発明家だよ。[r]何か興味深い話してたね。
+[k]
+
+＠ダ・ヴィンチ
+ちょっとスポイトで採らせてもらって、[r]カーマ印レモネードの成分分析を、と……。
+[k]
+
+[messageOff]
+[se ade271]
+[seStop ade271 0.8]
+[wt 0.8]
+
+[charaFace I 1]
+
+＠ダ・ヴィンチ
+ふむふむ。確かにこのカロリー量、[r]災害時の非常食としてはとっても有用かもだ。
+[k]
+
+＠ダ・ヴィンチ
+研究のために一杯もらっていくよー。[r]お代金はここに置いとくからね。
+[k]
+
+＠ダ・ヴィンチ
+それじゃ、チャオ～。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 0.7]
+[charaMove I -50,0 0.5]
+[charaFadeout I 0.4]
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+[branch lblConf1]
+[label lblNotClear1]
+[se adm36]
+[wt 1.0]
+[seStop adm36 0.4]
+[wt 0.3]
+
+[branch lblNotClear_out1]
+[label lblConf1]
+[se adm53]
+[wt 0.6]
+[seStop adm53 0.6]
+[wt 0.9]
+
+[label lblNotClear_out1]
+
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠パールヴァティー
+……あなたのこれが『悪事』でないのは認めます。
+[k]
+
+[charaFace B 4]
+
+＠パールヴァティー
+美味しくて栄養たっぷりのレモネード、[r]それ自体はとてもいいものです。
+[k]
+
+＠パールヴァティー
+たとえばカロリーオフのそれを作るなら[r]文句なんてつけないのに……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠カーマ
+嫌ですよ。私が本当に、[r]誰かにとってメリットしかないものを作ったら……
+[k]
+
+[charaFace D 1]
+
+＠カーマ
+[#普通に愛してあげた]コトになっちゃうじゃないですか？
+[k]
+
+＠カーマ
+今の私は、そういうマジメなお仕事は[r]極力しない事に決めてるんで。
+[k]
+
+＠カーマ
+そちらだって、そのほうが安心でしょう？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠パールヴァティー
+あなたって[#神:ヒト]は……。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+
+[charaMove D -150,0 0.5]
+[wt 0.6]
+
+＠カーマ
+自分で気付いてるかどうか知りませんけど、[r]あれだけ短時間にバリバリ激しくやったら[line 3]
+[k]
+
+[charaMove D -200,0 0.5]
+[wt 0.5]
+
+[charaFace D 5]
+
+＠カーマ
+あーあ、せっかく摂ったカロリーを[r]消費しちゃっているかもしれません。
+[k]
+
+[charaMove D -250,0 0.5]
+[wt 0.5]
+
+[charaFace D 14]
+
+＠カーマ
+命拾いしましたね、パールヴァティー。[r]みっともない貴女の姿が見れなくて本当に残念。
+[k]
+
+[charaMove D -300,0 0.5]
+[wt 0.5]
+
+[charaFace D 7]
+
+＠カーマ
+それじゃ、今日はこんなところで～。
+[k]
+
+[messageOff]
+[se ad348]
+[charaMove D -900,0 0.2]
+[wt 1.0]
+[charaFadeout D 0.4]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+
+＠バニヤン
+またねー！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ジャック
+そう言えば今日は食堂にプリンがあるって、[r]赤いヒトが言ってたよー。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+
+＠ナーサリー・ライム
+わ。急に直角に曲がったわ？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+
+＠ジャンヌ・オルタ・サンタ・リリィ
+私たちも、もうちょっとレモネードを売ったら[r]おやつの時間にしましょう！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠バニヤン
+そうだね、じゃあ次のところに行こー！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠ナーサリー・ライム
+またなのだわ、マスター、パールヴァティー！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠パールヴァティー
+……ええ、また。廊下で誰かと[r]ぶつからないように気をつけるんですよ？
+[k]
+
+[charaTalk off]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaFace H 1]
+[charaFadein H 0.1 -379,0]
+[charaFace F 1]
+[charaFadein F 0.1 -113,0]
+[charaFace E 1]
+[charaFadein E 0.1 153,0]
+[charaFace G 1]
+[charaFadein G 0.1 379,0]
+
+＠子供たち
+はーい！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.7]
+[se ad456]
+[charaMove H -429,0 0.5]
+[charaFadeout H 0.4]
+[wt 0.3]
+[charaMove F -163,0 0.5]
+[charaFadeout F 0.4]
+[wt 0.2]
+
+[se ade235]
+[charaMove E 63,0 0.5]
+[charaFadeout E 0.4]
+[wt 0.2]
+[charaMove G 289,0 0.5]
+[charaFadeout G 0.4]
+[seStop ad456 1.5]
+[seStop ade235 1.5]
+[wt 1.5]
+
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠パールヴァティー
+……ふぅ。
+[k]
+
+？1：お疲れさまです
+？！
+
+[charaFace B 4]
+[bgm BGM_EVENT_11 0.1]
+
+＠パールヴァティー
+すみません……[r]お見苦しいところを見せてしまって……
+[k]
+
+＠パールヴァティー
+カーマはやっぱり私にとっては[r]特別な関係性の相手ですから……。
+[k]
+
+？1：知ってますので大丈夫です
+？2：ある意味微笑ましいです
+？！
+
+＠パールヴァティー
+カーマの在り方は、多分、これからも変わりません。
+[k]
+
+＠パールヴァティー
+小悪魔というか愉快犯的というか……最低限の[r]サーヴァントの仕事はしてくれるでしょうけど。
+[k]
+
+[charaFace B 0]
+
+＠パールヴァティー
+あ、でも、マスターさんが心配する事は何もありません。[r]今日のように、ちゃーんと私が目を光らせますから！
+[k]
+
+＠パールヴァティー
+風紀委員代理のお仕事がなくても、[r]あの仕方ない神の事は見守り続けます。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 0.7]
+[wt 1.0]
+
+[charaFace B 1]
+[bgm BGM_EVENT_6 0.1]
+
+
+＠パールヴァティー
+……ああ。今、なんとなく、わかりました。[r]それは他のインドの方たちに関しても同じかもです。
+[k]
+
+
+＠パールヴァティー
+ひょっとしたら、そうやって一歩離れた場所から[r]彼ら彼女らを見守るのが[line 3]私の役割なのかも。
+[k]
+
+[charaFace B 11]
+
+＠パールヴァティー
+だってその、お恥ずかしながら、インドの英霊は[r]やりすぎな方ばかりですから。
+[k]
+
+？1：みんな、スケール大きいですからね
+？！
+
+[charaFace B 0]
+
+＠パールヴァティー
+ええ。[r]そのせいで放っておくと暴走しかねません。
+[k]
+
+＠パールヴァティー
+だから[line 3]意識的に、彼らを押し止める[r]ストッパーのようなものが必要なのかな、と。
+[k]
+
+＠パールヴァティー
+そして、それは……今の私のような、
+[k]
+
+＠パールヴァティー
+『ただの女神というだけの女神』が果たすのに[r]ぴったりな役割なんじゃないか、と思うのです。
+[k]
+
+[charaFace B 4]
+
+＠パールヴァティー
+ただそこにいるだけの、強いわけでも特別な何かが[r]できるわけでもない、けれど[line 3]
+[k]
+
+[charaFace B 0]
+
+＠パールヴァティー
+[#ただみんなを見守り]、[#支える柱]。
+[k]
+
+＠パールヴァティー
+そういうものが自分なのかもと……[r]いえ。そう在りたい、と改めて思いました。
+[k]
+
+[charaFace B 6]
+
+＠パールヴァティー
+ふふ。考えをまとめる機会を与えてくれた[r]頼光さんには感謝しないと、です。
+[k]
+
+？1：みんなのお母さん、みたいな感じですね
+？！
+
+[charaFace B 11]
+
+＠パールヴァティー
+そう……なりますかね？　なんだか[r]はっきり言葉にされると恥ずかしいですけど。
+[k]
+
+[charaFace B 10]
+
+＠パールヴァティー
+あ、もちろん、バトルも必要なら頑張りますけどね！
+[k]
+
+[charaFace B 3]
+
+＠パールヴァティー
+何度も言いますけれど、大事なことですので。[r]遠慮せず呼んでください！
+[k]
+
+？1：もちろんです。これからもよろしくお願いします！
+？！
+
+[messageOff]
+[wt 0.5]
+[charaFaceFade B 1 1.0]
+[wt 2.0]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_6 2.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[wipeFilter cinema 0.5 0]
+
+[charaSet E 6031000 1 刑部姫]
+[charaSet F 23003001 1 ガネーシャ]
+
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+
+＠
+　　　　　　～　おまけ　今回の一番の被害者　～
+[k]
+
+[messageOff]
+[scene 48800 0.7]
+[wt 1.5]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 0,-50]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠刑部姫
+……………………うそ。
+[k]
+
+[messageOff]
+[se ad111]
+[wt 0.5]
+
+[charaFace E 0]
+
+＠刑部姫
+き、気のせいだよね、多分。ぜったい。
+[k]
+
+
+＠刑部姫
+えー、でも一応、サーヴァント用体重計に[r]乗ってみて、と……。
+[k]
+
+[messageOff]
+[charaMoveReturn E 0,-60 0.5]
+[wait charaMove E]
+[se adm49]
+[charaFace E 4]
+[wt 1.3]
+
+[charaFace E 8]
+[charaShake E 0.05 3 3 0]
+
+＠刑部姫
+はわわわわわわわ嘘じゃなかったー！[r]なんで、なんでなんでーっ！？
+[k]
+
+＠刑部姫
+原稿しながらジャンクばっかり食べてたから！？[r]それにしたっていきなりじゃない！？
+[k]
+
+[messageOff]
+[charaShakeStop E]
+
+[se ade12]
+[wt 1.0]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 562,-50]
+[charaMove F 502,-50 0.5]
+[wt 0.5]
+
+＠ガネーシャ
+おーい、話してたとおり来たっスよ～。[r]ポテチの差し入れもたっぷり[line 3]
+[k]
+
+[charaFace E 2]
+
+＠刑部姫
+絶[messageShake 0.03 5 5 0.5]対・ダメー！[r]これより[#姫:わたし]は修羅道に突入します！
+[k]
+
+＠刑部姫
+ポテチに逢うてはポテチを斬り！[r]ケーキに逢うてはケーキを斬る！
+[k]
+
+[charaFace E 3]
+
+＠刑部姫
+ああそうだ化生ＳＮＳに一刻も早くヘルプ流さなきゃ、
+[k]
+
+＠刑部姫
+『急募！　引きこもりながら楽々ダイエットする方法』[r]っと[line 3]お願い！　お願い！
+[k]
+
+[charaFace F 4]
+
+＠ガネーシャ
+……漏れ聞こえてきた声に[r]同じ引きこもり属性としてツッコむけど。
+[k]
+
+
+＠ガネーシャ
+そんな都合のいいお願いは、このガネーシャさんでも[r]叶えられない[#無理難題:むりなんだい]っス……。
+[k]
+
+＠ガネーシャ
+生活態度を改めるしかないんじゃないっスか？
+[k]
+
+[charaFace F 1]
+
+＠ガネーシャ
+それかボクのように諦めるか！
+[k]
+
+[charaFace E 8]
+
+＠刑部姫
+やだー！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[soundStopAll]
+[end]

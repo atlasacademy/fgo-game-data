@@ -1,0 +1,241 @@
+
+＄91-70-07-02-2-0
+[charaSet A 7007001 1 ヴラド三世]
+[charaSet B 99502600 1 マシュ]
+[charaSet C 98021000 1 男性]
+[charaSet D 98021100 1 女性]
+[charaSet E 98006200 1 魔物]
+[charaSet F 98006100 1 魔物2]
+
+[scene 10952]
+[fadein black 1.5]
+[wait fade]
+
+
+[se ad42]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaSpecialEffect E enemyErasure 1 2.0]
+[wt 2.4]
+[charaPut E 0,-10000]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[bgm BGM_EVENT_2 0.1]
+
+＠ヴラド三世
+[#雲散霧消:うんさんむしょう]したか、他愛ない。
+[k]
+
+[charaFace A 4]
+＠ヴラド三世
+しかし、特異点が消失したにもかかわらず、[r]幽霊騒ぎとは……。
+[k]
+
+＠ヴラド三世
+さすがは魔都ロンドン、というところか。
+[k]
+
+＠女性
+あ、あの。[r]ありがとう……ございます。
+[k]
+
+？1：気をつけて帰ってくださいね
+？！
+
+＠女性
+ありがとうございます……！
+[k]
+
+[charaFace A 2]
+[bgmStop BGM_EVENT_2 0.7]
+
+＠ヴラド三世
+[line 2]待て。
+[k]
+
+＠女性
+は、はい？
+[k]
+
+
+[bgm BGM_EVENT_1 0.1]
+[charaFace A 0]
+
+＠ヴラド三世
+余はヴラド三世。[r]我が名を胸に刻み、これからの生を健やかに生きるがよい。
+[k]
+
+＠ヴラド三世
+それから良いか。
+[k]
+
+＠ヴラド三世
+余は些か変わった技を行使するが、[r]それは吸血鬼などという存在とは無関係である。
+[k]
+
+[bgmStop BGM_EVENT_1 0.7]
+[charaFace A 2]
+＠ヴラド三世
+良いな？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaScale A 1.2]
+[charaFadein A 0.1 1]
+[bgm BGM_EVENT_7 0.1]
+＠ヴラド三世
+[f large]良いな？
+[k]
+
+
+＠女性
+は、はい！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.0]
+[se ad59]
+[seVolume ad59 2.0 0.1]
+[wt 2.0]
+[seStop ad59 0.1]
+[charaFadeout A 0.1]
+[wt 0.4]
+[charaScale A 1.0]
+[charaTalk A]
+[charaFadein A 0.1 1]
+[charaFace A 1]
+＠ヴラド三世
+……ふむ。これで少なくとも彼女は[r]余を吸血鬼とは思うまい。
+[k]
+
+[bgm BGM_EVENT_5 0.1]
+[charaFace A 0]
+＠ヴラド三世
+さて、続けよう。[r]マシュ・キリエライトよ、何か発見はあったか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 7]
+[charaEffect B bit_talk_10]
+[charaFadein B 0.1 1]
+
+＠マシュ
+は、はい……ロンドンの北端に、[r]前回の悪魔と酷似した反応があります。
+[k]
+
+＠マシュ
+ただ、前回と同じく反応としては弱いです。
+[k]
+
+＠マシュ
+……推測ですが、悪魔とは名ばかりのただの魔獣という[r]可能性が高いです。
+[k]
+
+＠マシュ
+残っている魔霧の影響で出現したのでしょうか。
+[k]
+
+[bgmStop BGM_EVENT_5 1.5]
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+[scene 10912]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠ヴラド三世
+さもなくば。[r][#魔術的な何か]で召喚されたのか、だろうな。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.4]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.4]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[se ad23]
+[wt 2.0]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 6]
+[charaEffect B bit_talk_10]
+[charaFadein B 0.1 1]
+
+＠マシュ
+これは[line 3]もしや、何かの召喚陣。
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+
+
+＠男性
+バケモノだ！[r]バケモノが出たぞ！
+[k]
+
+＠男性
+すぐに避難しろ！[r]おい、アンタ達も……！
+[k]
+
+＠男性
+あれはきっと、悪魔だ！
+[k]
+
+[messageOff]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[se ad23]
+[wt 2.0]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ヴラド三世
+ほう。これが悪魔か。[r]片腹痛い、狂った獣とそう変わりはせん。
+[k]
+
+＠男性
+お、おいアンタ！？
+[k]
+
+[charaFace A 2]
+
+＠ヴラド三世
+捻り潰してくれよう、字義通りにな！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

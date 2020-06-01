@@ -1,0 +1,397 @@
+
+
+
+
+＄94-04-01-14-1-0
+
+[soundStopAll]
+
+[charaSet A 98100400 1 マシュ]
+[charaSet B 1040000 1 葛飾北斎]
+[charaSet C 1098176810 1 刑部姫]
+[charaSet D 1098177300 1 カーミラ]
+[charaSet E 1098177400 1 ラムダ]
+[charaSet F 1098180700 1 ？？？]
+[charaFilter F silhouette 00000080]
+[charaSet G 98112300 1 屋台の店員]
+[charaSet H 98109000 1 ごろつき１]
+[charaSet I 98002000 1 フォウ]
+
+[charaSet J 98115000 1 エフェクト用]
+
+
+[charaDepth F 1]
+[charaDepth J 9]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 28300]
+
+[shake 0.05 1 2 0]
+
+[se ade208]
+[seVolume ade208 0 0]
+[se ade343]
+[seVolume ade343 0 0]
+
+[charaPut J 1]
+[charaEffect J bit_talk_41]
+[wt 0.1]
+
+[seVolume ade208 1.5 0.8]
+[seVolume ade343 1.5 0.8]
+[fadein black 1.5]
+[wait fade]
+[wt 2.2]
+
+[seStop ade208 1.0]
+[seStop ade343 1.0]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.7 1]
+[wt 1.2]
+
+[bgm BGM_EVENT_48 0.1]
+
+＠？？？
+……見えました。
+[k]
+
+＠？？？
+……あれが噂のラスベガスですね。
+[k]
+
+＠？？？
+…………。
+[k]
+
+＠？？？
+……私に残された時間はあとわずか。
+[k]
+
+＠？？？
+…………。
+[k]
+
+＠？？？
+……それまで持ってくださいよ、……私の身体！
+[k]
+
+[messageOff]
+[se ade208]
+[seVolume ade208 0 0]
+[se ade343]
+[seVolume ade343 0 0]
+[seVolume ade208 0.4 1.0]
+[seVolume ade343 0.4 1.0]
+[wt 1.9]
+
+[wipeout circleIn 1.5 1.0]
+[seStop ade208 1.5]
+[seStop ade343 1.5]
+[bgmStop BGM_EVENT_48 1.5]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[shakeStop]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_41]
+[cameraHome 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+[wipein circleIn 0.1 1.0]
+[wait wipe]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[bgmStop BGM_EVENT_48 0.4]
+
+[charaSet A 98100400 1 マシュ]
+[charaSet B 1040000 1 葛飾北斎]
+[charaSet C 1098176810 1 刑部姫]
+[charaSet D 1098177300 1 カーミラ]
+[charaSet E 1098177400 1 ラムダ]
+[charaSet F 1098180700 1 ？？？]
+[charaSet G 98112300 1 屋台の店員]
+[charaSet H 98109000 1 ごろつき１]
+[charaSet I 98002000 1 フォウ]
+[charaSet J 98115000 1 エフェクト用]
+
+[scene 10000]
+[wt 0.4]
+[soundStopAll]
+[maskin black 1]
+[wait mask]
+[label selectBranch]
+
+[skip false]
+
+[wt 1.5]
+
+
+[fowardEffect bit_queststart80254]
+[wait fowardEffect]
+
+[fadeout black 1.0]
+[wait fade]
+
+
+[charaSet F 98109000 1 ごろつき２]
+[charaSet J 98109000 1 ごろつき３]
+
+[charaDepth F 1]
+[charaDepth J 1]
+[charaDepth H 9]
+
+
+
+[scene 81900]
+[wt 1.0]
+
+[skip true]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_111 0.1]
+
+＠葛飾北斎
+おやァ？　適当に歩いてたら、[r]知らねえかじのに迷い込んじまったぞ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+どうやら和風のカジノのようですね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠葛飾北斎
+見慣れた感じじゃああるんだけどヨ。[r]なーんか他のかじのとは雰囲気が違う気がするなァ？
+[k]
+
+＠葛飾北斎
+他んとことは匂いが根っこから違ぇっつーか、[r]妙にトンチキな感じがあるっつーか……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠フォウ
+フォウフォウ。
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgm BGM_EVENT_111 1.0 0.2]
+[wait wipe]
+
+[charaFadeout I 0.1]
+[wt 1.0]
+
+[bgm BGM_EVENT_111 1.0 1.0]
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠屋台の店員
+へい、いらっしゃい、いらっしゃい！[r]型抜き、くじ引き、金魚すくい！
+[k]
+
+＠屋台の店員
+揚げバターもおすすめだよ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠刑部姫
+型抜きだの金魚すくいだのラスベガスらしからぬ[r]お店が並んでるし……。
+[k]
+
+＠刑部姫
+揚げバターはアメリカンかもだけど。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠カーミラ
+揚げバター？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠マシュ
+た、たしか冷凍バターにはちみつとシナモンで[r]味を付けた衣をつけて揚げ、
+[k]
+
+＠マシュ
+甘いソースなどをかけた料理という[r]記事を以前どこかで見た記憶が……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ラムダ
+バターに衣をつけて揚げる？[r]ここの人間にカロリー管理の概念はないのかしら。
+[k]
+
+[charaFace E 1]
+＠ラムダ
+まあ、私はもともと電脳世界の知的生命体。[r]カロリーでは[#外観:フォルム]は変化しないからいいけど。[wt 0.6]（もぐもぐ）[charaMoveReturn E 0,10 0.3][wt 0.3][charaMoveReturn E 0,10 0.3][wt 0.3]
+[k]
+
+？1：ずるい
+？2：めっちゃ　ずるい
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_111 1.0]
+[charaFadeout E 0.1]
+[wt 0.2]
+
+[se ad60]
+[wt 0.6]
+
+[charaTalk off]
+[charaFace H 0]
+[charaFace F 0]
+[charaFace J 0]
+[charaFadein H 0.4 1]
+[charaFadein F 0.4 -300,0]
+[charaFadein J 0.4 300,0]
+[seStop ad60 0.4]
+[wt 0.8]
+
+[charaTalk on]
+[charaTalk H]
+＠H：ごろつき
+おうおう、そこの小娘ども、みねぇ顔だな。[r]ここがどこか分かってんのかい？
+[k]
+
+＠H：ごろつき
+ここはあの水着獅子王の息も届かねぇ、[r]無法者の集まる『カジノ・ＤＥ・楽市楽座』！
+[k]
+
+＠H：ごろつき
+ここに来たからには俺らの流儀に従ってもらうぜ！
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout F 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠カーミラ
+へぇ……レディに随分な扱いをするカジノじゃない。[r]覚悟はできてるんでしょうね？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ラムダ
+ゲームの内容はともかく、[r]店員の質は下の下のようね、ここ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠刑部姫
+うーん、和風なのはともかく、全体的に趣味が悪い[r]というか安土桃山時代ノリというか……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFace F 0]
+[charaFace J 0]
+[charaFadein H 0.1 1]
+[charaFadein F 0.1 -300,0]
+[charaFadein J 0.1 300,0]
+
+＠H：ごろつき
+なんだとてめぇら、好き放題言いやがって！[r]おい、やっちまえ！
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout F 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠葛飾北斎
+へっ！　いきなりとは落ち着きのねぇ輩だネェ！[r]いいさ、かかってきナ！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

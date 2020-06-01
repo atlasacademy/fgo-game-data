@@ -1,0 +1,648 @@
+
+
+
+＄94-04-78-17-1-0
+
+
+
+[soundStopAll]
+
+
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 25005000 1 ボイジャー]
+[charaSet C 3043000 1 エリセ]
+[charaSet D 5025001 1 エジソン]
+[charaSet E 2016000 1 エミヤ・オルタ]
+[charaSet F 1098192800 1 マリー]
+
+[charaSet G 98111500 1 ダ・ヴィンチ]
+[charaSet H 1098124510 1 ダ・ヴィンチ（騎）]
+[charaSet I 98115000 1 通信用]
+
+[imageSet J back10000 1]
+[charaScale J 1.05]
+
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_10_LowLevel]
+
+[scene 95800]
+
+[se ade431]
+[seVolume ade431 0 0]
+
+[charaDepth J 1]
+[charaDepth B 2]
+[charaDepth C 3]
+
+[fadein black 1.0]
+[seVolume ade431 1.0 0.5]
+[wait fade]
+
+
+[charaTalk off]
+[charaFace C 4]
+[charaFadein C 0.4 -170,0]
+[wt 1.0]
+
+[cameraMove 1.2 120,-50 1.4]
+[wt 1.6]
+[charaPut J 0,-200]
+[charaFadeTime J 0.3 0.5]
+[wt 0.7]
+
+
+＠ダ・ヴィンチ
+[line 3]なるほどなるほど。[r]エリセは、なかなか難しい子らしいね。
+[k]
+
+[messageOff]
+[seStop ade431 2.0]
+
+[cameraMove 1.2 20,-20 1.1]
+[wt 1.5]
+
+[cameraMove 1.2 0,-20 1.1]
+[wt 1.2]
+
+[charaFace B 4]
+[charaFadein B 0.4 250,0]
+[wt 1.0]
+
+
+＠ダ・ヴィンチ
+かつて、彼女とボイジャーが暮らしていた世界では、[bgm BGM_EVENT_11 0.1][r]ふたりはマスターとサーヴァントの関係だったが[line 3]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_11 1.0 0.5]
+[wait fade]
+
+[cameraHome 0.1]
+[charaFadeout J 0.1]
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_11 1.0 1.0]
+[wait fade]
+
+[charaTalk on]
+[charaPut I 1]
+
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+
+[charaTalk H]
+[charaFace H 14]
+[charaFadein H 0.1 1]
+
+＠H：ダ・ヴィンチ
+[#遊戯界:monde du jeu]では、エリセは令呪を失い、[r]はぐれサーヴァントとして戦っている。
+[k]
+
+＠H：ダ・ヴィンチ
+しかし本人には、サーヴァントとしての自覚はない、か。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠マシュ
+ダ・ヴィンチちゃん……少し、声を小さく……。[r]エリセさんを刺激しないほうが……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠H：ダ・ヴィンチ
+どうしてだい？　語り合えるチャンスじゃないか。[r]対話は相互理解への第一歩であり、かつ最高の手法だよ？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠マシュ
+どんなに真摯で、まっとうな言葉でも、[r]素直に受け止められないことがあると思います。
+[k]
+
+[charaFace A 12]
+＠マシュ
+心が、何かに囚われて、閉ざされている時とか[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk H]
+[charaFace H 24]
+[charaFadein H 0.1 1]
+＠H：ダ・ヴィンチ
+ふむふむ。それもまた一理あるね。[r]では確認するが[line 3]
+[k]
+
+[charaFace H 25]
+＠H：ダ・ヴィンチ
+エリセの心を占めているものとは、[r]彼女の過去かな？
+[k]
+
+[charaFadeout H 0.1]
+
+
+[branch lblConf1]
+[label lblNotClear1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-90]
+
+＠ダ・ヴィンチ
+[#遊戯界:monde du jeu]では、エリセは令呪を失い、[r]はぐれサーヴァントとして戦っている。
+[k]
+
+＠ダ・ヴィンチ
+しかし本人には、サーヴァントとしての自覚はない、か。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠マシュ
+ダ・ヴィンチちゃん……少し、声を小さく……。[r]エリセさんを刺激しないほうが……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 0,-90]
+＠ダ・ヴィンチ
+どうしてだい？　語り合えるチャンスじゃないか。[r]対話は相互理解への第一歩であり、かつ最高の手法だよ？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠マシュ
+どんなに真摯で、まっとうな言葉でも、[r]素直に受け止められないことがあると思います。
+[k]
+
+[charaFace A 12]
+＠マシュ
+心が、何かに囚われて、閉ざされている時とか[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-90]
+＠ダ・ヴィンチ
+ふむふむ。それもまた一理あるね。[r]では確認するが[line 3]
+[k]
+
+[charaFace G 5]
+＠ダ・ヴィンチ
+エリセの心を占めているものとは、[r]彼女の過去かな？
+[k]
+
+[charaFadeout G 0.1]
+
+
+[label lblConf1]
+
+
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ボイジャー
+[#かこ]じゃない。[r][#いま]だよ。
+[k]
+
+[charaFace B 5]
+＠ボイジャー
+エリセが、エリセとして、いきられる[#せかい]。[r]それを、とりもどしたいんだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠エジソン
+[#遊戯界:monde du jeu]で垣間見た《秋葉原》によく似た、[r]しかし人間は[#駒:ミープル]ではなく、生きている世界、か。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠エミヤ・オルタ
+誰もが“聖杯”を持ち、サーヴァントと絆を結ぶ世界か。[r]それはそれで異様なところだが[line 3]
+[k]
+
+＠エミヤ・オルタ
+小僧、おまえとエリセは、そこで生きてきたんだな。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ボイジャー
+うん。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠マリー
+……そう。むしろ過去に囚われているのは、このわたし。[r]かつて失った、いとしい幼子の面影を今も夢に見るわ。
+[k]
+
+[messageOff]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+[charaShake C 0.1 2 4 0.2]
+[wt 1.0]
+
+
+＠ダ・ヴィンチ
+ルイ十七世のことだね？
+[k]
+
+
+＠マリー
+ええ。かわいそうなシャルル。
+[k]
+
+
+[charaTalk C]
+[charaFace C 19]
+＠エリセ
+（ルイ……）
+[k]
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+
+[charaTalk H]
+[charaFace H 14]
+[charaFadein H 0.1 1]
+＠H：ダ・ヴィンチ
+[#王太子:ドーファン]ルイ＝シャルル。王党派からすれば[r]国王ルイ十七世とされた少年は、気の毒な死に方をした。
+[k]
+
+[charaFace H 25]
+＠H：ダ・ヴィンチ
+もし、英霊の座にその霊基があり、召喚されたならば、[r][#復讐者:アヴェンジャー]のクラスがふさわしかろう。
+[k]
+
+[charaFadeout H 0.1]
+
+
+[branch lblConf2]
+[label lblNotClear2]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 0,-90]
+＠ダ・ヴィンチ
+[#王太子:ドーファン]ルイ＝シャルル。王党派からすれば[r]国王ルイ十七世とされた少年は、気の毒な死に方をした。
+[k]
+
+[charaFace G 4]
+＠ダ・ヴィンチ
+もし、英霊の座にその霊基があり、召喚されたならば、[r][#復讐者:アヴェンジャー]のクラスがふさわしかろう。
+[k]
+
+[charaFadeout G 0.1]
+
+
+[label lblConf2]
+
+[wt 0.1]
+[charaPut I 1200,1200]
+
+
+
+
+
+
+[charaTalk C]
+[charaFace C 19]
+[charaFadein C 0.1 1]
+＠エリセ
+くっ……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠マリー
+よしましょうか、こんな話は。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠エリセ
+……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠マリー
+エリセさんには、今もいるのね。[r]大切な、大切な……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ボイジャー
+……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠マシュ
+今のエリセさんは、大切なものを奪われて、[r]不可解な状況へ巻き込まれ、必死に頑張っています。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠ボイジャー
+ぼくもおなじだ。[r]エリセをたすけたい。
+[k]
+
+＠ボイジャー
+だから、みんなと[#ここ]へきたんだ。
+[k]
+
+？1：そのための[#勝負:ゲーム]だ[&:よ]
+？2：サイコロで殴り合って開く扉もある！　…といいなぁ
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+
+[charaTalk H]
+[charaFace H 23]
+[charaFadein H 0.1 1]
+＠H：ダ・ヴィンチ
+ふむふむ。つまり、全力で戦うことで、[r][#彼女:エリセ]の心を開かせようというんだね？
+[k]
+
+[charaFace H 1]
+
+＠H：ダ・ヴィンチ
+ハハ、まったく[r][%1][&君:ちゃん]らしいよ。
+[k]
+
+
+[messageOff]
+[wt 0.5]
+[se ad1]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+[charaEffectStop I bit_talk_10_LowLevel]
+[wt 1.0]
+
+[fadeout black 0.5]
+[bgm BGM_EVENT_11 0.5 0.5]
+[wait fade]
+
+[charaSet H 1098124500 1 ダ・ヴィンチ（騎）]
+
+[scene 66400]
+[wt 0.3]
+
+[fadein black 0.5]
+[bgm BGM_EVENT_11 0.5 0.5]
+[wait fade]
+[wt 0.3]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠H：ダ・ヴィンチ
+結構。ならば、思う存分やってみるといい。
+[k]
+
+[charaFace H 9]
+
+＠H：ダ・ヴィンチ
+[%1][&君:ちゃん]に[r][#骰子:サイコロ]の女神が微笑みますように！
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+
+[branch lblConf3]
+[label lblNotClear3]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 0,-90]
+＠ダ・ヴィンチ
+ふむふむ。つまり、全力で戦うことで、[r][#彼女:エリセ]の心を開かせようというんだね？
+[k]
+
+[charaFace G 1]
+
+＠ダ・ヴィンチ
+ハハ、まったく[r][%1][&君:ちゃん]らしいよ。
+[k]
+
+
+[messageOff]
+[wt 0.5]
+[se ad1]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+[charaEffectStop I bit_talk_10_LowLevel]
+[wt 1.0]
+
+[fadeout black 0.5]
+[bgm BGM_EVENT_11 0.5 0.5]
+[wait fade]
+
+[charaSet G 5009001 1 ダ・ヴィンチ]
+
+[scene 10204]
+[wt 0.3]
+
+[fadein black 0.5]
+[wait fade]
+[wt 0.3]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ダ・ヴィンチ
+結構。ならば、思う存分やってみるといい。
+[k]
+
+[charaFace G 1]
+
+＠ダ・ヴィンチ
+[%1][&君:ちゃん]に[r][#骰子:サイコロ]の女神が微笑みますように！
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout G 0.1]
+
+
+[label lblConf3]
+
+
+[scene 95800]
+[wt 0.3]
+
+[se ade430]
+[seVolume ade430 0 0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_11 1.0 1.0]
+[seVolume ade430 1.0 1.0]
+[wait fade]
+
+[wt 1.5]
+
+[seStop ade430 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠エジソン
+次の舞台に着いたようだね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠マリー
+今度はどんな[#戦い:レビュー]を観られるかしら♪
+[k]
+
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠エミヤ・オルタ
+…………。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_11 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+
+

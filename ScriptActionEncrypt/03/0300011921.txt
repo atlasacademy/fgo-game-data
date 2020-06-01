@@ -1,0 +1,687 @@
+
+
+＄03-00-01-19-2-1
+[soundStopAll]
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 1098126400 1 パツシィ]
+[charaSet C 2010001 1 ビリー]
+[charaSet D 1098123600 1 オプリチニキ1]
+[charaSet E 1098123600 1 オプリチニキ2]
+[charaSet F 1017001 1 武蔵]
+[charaSet H 98115000 1 エフェクト用]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 21500]
+
+[fadein black 0.8]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ビリー
+ファイア！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[charaEffect D bit_shot_01 0,180]
+[se ad563]
+[wt 0.1]
+[charaShake D 0.05 4 4 0.6]
+[se ad563]
+[wt 0.1]
+[se ad563]
+[wt 1.2]
+[charaEffectStop D bit_shot_01]
+
+[charaFadeout D 0.7]
+[wt 0.1]
+[charaMove D 0,-30 0.6]
+
+[wt 0.3]
+[se ad144]
+[wt 1.5]
+
+[bgmStop BGM_EVENT_80 2.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠武蔵
+よし、おしまいっと！
+[k]
+
+[flag MALE false]
+[flag FEMALE false]
+
+[selectionUse masterMale]
+？1：武蔵ちゃん！
+[flag MALE true]
+？！
+
+[selectionUse masterFemale]
+？1：武蔵ちゃん！
+[flag FEMALE true]
+？！
+
+＠武蔵
+ええ、ええ。武蔵ですとも。[bgm BGM_EVENT_77 0.1][r][&きみ:あなた]も随分と逞しくなっちゃって。
+[k]
+
+[charaFace F 7]
+
+＠武蔵
+元気そうで何よりです。[r]そしてやっぱり、君はまだ戦っているのね。
+[k]
+
+[charaFace F 0]
+
+＠武蔵
+ならば、私ができる事もあるでしょう！[r]なーに、皆まで言わない、事情はなんとなく察したわ！
+[k]
+
+[charaFace F 1]
+
+＠武蔵
+新免武蔵、これから[&きみ:あなた]のボディガードを務めましょう！[r]はい、そういうワケで契約、契約♪
+[k]
+
+[messageOff]
+
+[charaPut H 1]
+
+[se ad452]
+[charaMoveScale F 1.2 0.4]
+[charaMove F 0,30 0.4]
+[wt 0.3]
+[seStop ad452 0.3]
+[wt 0.5]
+[charaMoveReturn F 0,25 0.4]
+[se ad215]
+[wt 1.0]
+
+[branch play01 MALE 1]
+[branch play02 FEMALE 1]
+
+[label play01]
+[charaEffect H bit_talk_CommandMantra_01 0,64]
+[branch play03]
+
+[label play02]
+[charaEffect H bit_talk_CommandMantra_02 0,64]
+[branch play03]
+
+[label play03]
+
+[se bas16]
+[wait charaEffect H]
+[charaPut H 1200,1200]
+[charaEffectStop H]
+
+[charaFace F 7]
+
+[wt 1.5]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaEffect H bit_talk_10_LowLevel]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠マシュ
+お、驚きの契約速度です。マスターと手を繋いで、[r]あっという間に簡易契約をなされました。
+[k]
+
+？1：そんな簡単でいいの……！？
+？2：（相手からパスが繋げられたの初めてだ……）
+
+？！
+
+[charaScale F 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠武蔵
+やったー、これで常に全開で戦えるわね！[r]あ、報酬は小判十枚と毎日うどん一杯、よろしくね！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ビリー
+しかも俗物的な見返りを要求してきたね。[r]このサムライ、西部出身かい？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠武蔵
+ええ、西部は良いところだったわね。[r]毎日が決闘だから食い[#扶持:ぶち]にも困らなかったし。
+[k]
+
+[charaFace F 5]
+
+＠武蔵
+ところで、えーと、ビリー君？[r]此処はどこ？
+[k]
+
+＠武蔵
+私、雪原でヤガの皆さんに雇われて、[r]盗賊団を追い掛けていたんだけど……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ビリー
+ミノタウロスの迷宮だよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠武蔵
+ミノタウロス……ああ、確かギリシャ神話の！？[r]参ったわ。道理で迷うはずだ。
+[k]
+
+＠武蔵
+ここが盗賊団のアジトかと、突然あらわれた迷宮の[r]入り口に飛び込んだのがマズかったか……。
+[k]
+
+？1：マズすぎる……
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……話には聞いていましたが……
+[k]
+
+＠マシュ
+[#下総国:しもうさのくに]で何があったのか、[r]いまリアルに脳内補完できました……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠パツシィ
+すげえな、[%1]以上だ。[r]なんだ、[#迂闊:うかつ]が服を着て歩いてんのか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaDepth B 9]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 2]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+
+＠武蔵
+むっ、ヤガ！[r]ちょっと見せて見せて、顔！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad7]
+[charaMove F 150,0 0.3]
+[wt 0.3]
+
+[charaMove B -200,0 0.1]
+[wt 0.1]
+[charaShake B 0.1 2 2 1.5]
+[se ad180]
+[charaFace B 2]
+[wt 0.6]
+
+[charaTalk on]
+
+＠パツシィ
+ギャ！　何だこの女！[r]力強っ！
+[k]
+
+[charaShakeStop B]
+＠武蔵
+えーと、人相書きにある特徴はないわね……[r]盗賊団の一員ではなし、と。
+[k]
+
+[charaFace F 0]
+
+＠武蔵
+ごめんなさい、これも請け負った仕事だから。[r]私、ヤガの見分けって苦手で。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠武蔵
+こっちの世界に転がり出てから[r]ヤガには警戒されるわ攻撃されるわ……。
+[k]
+
+[charaFace F 1]
+
+＠武蔵
+最近はようやく話ができるようになって、[r]ギブアンドテイクの関係を保てるようになったんだけど。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ビリー
+ああ！[r]噂の辻斬りって君のコトか！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+
+＠武蔵
+え、辻斬り？
+[k]
+
+[bgmStop BGM_EVENT_77 1.5]
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFace F 4]
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+＠武蔵
+……ああ、うん。[bgm BGM_EVENT_7 0.1][r]それは私です、うん。
+[k]
+
+[charaFace F 5]
+
+＠武蔵
+でも、誓って言うけど斬り殺したのは、[r]村を襲う盗賊と、[#殺戮猟兵:オプリチニキ]だけよ？
+[k]
+
+？1：カルデアの者、と名乗ったのは？
+？！
+
+[charaFace F 3]
+
+＠武蔵
+名乗った事もあったかな？[r]雪原でクリチャーチにやられそうな人がいてさ。
+[k]
+
+[charaFace F 8]
+
+＠武蔵
+ヤガって[#弱肉強食:じゃくにくきょうしょく]のクセに、妙に恩義を感じる人が多くて。[r]どうしてもお名前を、なんて言うから、その……
+[k]
+
+＠武蔵
+格好つけて、『拙者、カルデア[#一:いち]の剣豪なり』とか[r]言っちゃった……ゴメン！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace F 8]
+[charaFadein F 0.1 200,0]
+[charaFace B 4]
+[charaFadein B 0.1 -200,0]
+
+[se ad180]
+[charaShake B 0.05 2 2 1.5]
+[wt 1.0]
+[charaTalk on]
+[charaTalk C]
+＠パツシィ
+いい加減放してくれ！[r]一体なんなんだ、アンタ！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ビリー
+本当に何なんだろうねえ。
+[k]
+
+
+[messageOff]
+[bgm BGM_EVENT_7 1.5 0.5]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[scene 51600]
+[wt 0.5]
+
+[charaSet A 98001000 1 マシュ]
+[charaSet D 98086000 1 ホームズ]
+
+[wipeFilter cinema 0.5 0]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+[fadein black 0.5]
+[wait fade]
+
+＠ホームズ
+（宮本武蔵……とある特異点の一つ、[#下総国:しもうさのくに]で[r]　出会った“[#異邦人:ストレンジャー]”か……）
+[k]
+
+＠ホームズ
+（彼女はレイシフトなしで“並行世界”を渡り歩く[r]　特異能力者だった）
+[k]
+
+＠ホームズ
+（おそらく、地表が漂白されたタイミングで基本世界から[r]　このロシアに“転がり出た”）
+[k]
+
+＠ホームズ
+（そのおかげで今回の異常に飲まれる事もなく、[r]　こうしてロシア領で再会できた……と）
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠マシュ
+ホームズさん？[r]何かありましたか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 0,-50]
+
+＠ホームズ
+[&ミスター:ミス][%1]の幸運……[r]いや、人の縁、というものに感心してただけさ。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.5]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wipeOff]
+
+[charaSet A 99502600 1 マシュ]
+[charaSet D 98115300 1 ホームズ]
+[charaSet E 1098124510 1 ダ・ヴィンチ]
+
+[wt 0.5]
+
+[scene 21500]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ホームズ
+ミズ・宮本。貴女がカルデアに協力してくれる事に、[bgm BGM_EVENT_77 0.1][r]我々は疑いを挟まない。過去、大いに助けられたからね。
+[k]
+
+＠ホームズ
+むしろ今回もよくうっかりしてくれた。[r]キミの特異体質がこんな意味を持っていたとは。
+[k]
+
+＠ホームズ
+この[#異聞帯:ロストベルト]ではあらゆるものが敵であり、[r]信頼してはいけないものだが、キミだけは違う。
+[k]
+
+＠ホームズ
+キミは数多の世界を渡り、その上で善悪を計ってきた者。
+[k]
+
+＠ホームズ
+[&ミスター:ミス][%1]にとって、[r]これ以上の助っ人はいまい。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaDepth F 9]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 2]
+
+[charaPut H 0]
+[charaFace D 5]
+[charaFadein D 0.1 0]
+
+＠武蔵
+うっかりって何よ、うっかりって！[r]私だって好きに世界を渡って[line 3]
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[wt 0.8]
+[charaFace F 9]
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 3]
+
+＠武蔵
+やだ、なにこの美男子！[r]ちょっとトウが立ってるけど、見てて幸せになる顔してるー！
+[k]
+
+[charaFace D 6]
+
+＠ホームズ
+そ、それはどうも。賛美には慣れているが、[r]そんな喜ばれ方は初めてだ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 17]
+[charaFadein E 0.1 0]
+
+＠ダ・ヴィンチ
+はいはい、ホームズもそこで手鏡をチェックしない。[r]武蔵、でいいね？　セイバーのサーヴァント。
+[k]
+
+[charaFace F 10]
+
+＠武蔵
+（ちょっ、またもすっごい美少女が出てきたとな！？）
+[k]
+
+[charaFace E 0]
+
+＠ダ・ヴィンチ
+私はレオナルド・ダ・ヴィンチ。[r]ダ・ヴィンチちゃん、と呼んでほしい。
+[k]
+
+＠ダ・ヴィンチ
+キミは自分から迷宮に入ってきたんだね？[r]帰り道は覚えているかな？
+[k]
+
+[charaFace F 3]
+
+＠武蔵
+あはははは。
+[k]
+
+＠武蔵
+ゴメン、皆目見当つきません！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠パツシィ
+……まあ、期待していなかったけどよ。[r]振りだしに戻る、ってやつだな。コレ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ホームズ
+戦力が増えただけで上出来さ。
+[k]
+
+＠ホームズ
+こちらで座標データを片っ端から入力して、[r]どうにか地図を作成してみよう。
+[k]
+
+＠ホームズ
+ただ、考察するに迷宮は外側から把握することはできず、[r]内側の人間が踏破しなければいけない代物だ。
+[k]
+
+＠ホームズ
+キミたちに頑張って進んでもらうしかない。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ビリー
+ともかく進もうよ、ここで留まっていたって[r]何も変わらないだろうし。
+[k]
+
+＠ビリー
+[%1]、武蔵とは久しぶりなんだろ？[r]歩きながら、これまでの情報を交換したら？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠武蔵
+そうね。三ヶ月こっちにいたけど、[r]私に分かったのはロシア寒い、って事だけだし。
+[k]
+
+＠武蔵
+[%1][&君:]の事だから、[r]もう状況は掴んでいるんでしょ？
+[k]
+
+[charaFace F 1]
+
+＠武蔵
+なら気前よく教えてもらえるわね！[r][&きみ:あなた]のそういうところ、私大好き！
+[k]
+
+？1：もちろん！
+？2：再会できて嬉しい、武蔵ちゃん
+？！
+
+[messageOff]
+[charaFace F 7]
+[wt 1.0]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

@@ -1,0 +1,863 @@
+
+
+
+
+＄94-04-59-01-1-0
+
+[soundStopAll]
+
+[charaSet A 5042000 1 紫式部]
+[charaSet B 5010001 1 パラケルスス]
+[charaSet C 5033001 1 キルケー]
+[charaSet D 6032000 1 セミラミス]
+[charaSet E 5043000 1 アスクレピオス]
+[charaSet F 4008001 1 盗賊頭_シルエット]
+[charaSet G 4008001 1 盗賊頭]
+[charaSet H 98018100 1 盗賊Ａ]
+[charaSet I 98018100 1 盗賊Ｂ]
+[charaSet J 1098187800 1 ？？？]
+
+[charaFilter F silhouette 00000080]
+
+[scene 10000]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.5]
+
+[se ad77]
+[seVolume ad77 0 0.2]
+
+＠？？？
+……スター……マスター……。
+[k]
+
+？1：むにゃむにゃ……
+
+？！
+
+[se ad77]
+[seVolume ad77 0 0.5]
+
+＠？？？
+マスター……起きてください……。[r]あの、少しばかり困った事に……マスター？[se ad77][seVolume ad77 0 0.5]
+[k]
+
+？1：あと５分寝かせて、マシュ
+
+？！
+
+＠？？？
+えっ……マシュ様！？[r]い、いえ、私、マシュ様ではなく……。
+[k]
+
+＠？？？
+お２人はやはりその、そういうご関係の……？[r]そのあたり、もう少し詳しくお聞かせ願いたく……。
+[k]
+
+＠？？？
+いいえ、そうではありませんでした！[r]どうかお目覚めになってください、マスター！
+[k]
+
+[messageOff]
+[fadeout white 1.5]
+[wait fade]
+
+[scene 20305]
+[wt 1.0]
+
+[fadein white 1.5]
+[wait fade]
+
+[wt 0.5]
+
+？1：ここは……どこ？
+
+？！
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠紫式部
+すみませんすみません！[bgm BGM_EVENT_2 0.1][r]私、何も聞いてはおりませんので！
+[k]
+
+[charaFace A 1]
+
+＠紫式部
+そんな事よりも、[r]お目覚めになって何よりでございます。
+[k]
+
+[charaFace A 0]
+
+＠紫式部
+さて、どうやらここはカルデアの外。[r]辺りには私ども以外の姿もありません。
+[k]
+
+＠紫式部
+もしや、知らぬ間にレイシフトが[r]行われてしまったのでしょうか？
+[k]
+
+？1：これは
+？2：いつものアレかな
+
+？！
+
+＠紫式部
+そ、そうなのですか？[r]随分と慣れていらっしゃるのですね……。
+[k]
+
+[charaFace A 7]
+
+＠紫式部
+はぁ、はぁ、なるほど。それではここは、[r]マスターが見ている夢の中[line 3]。
+[k]
+
+＠紫式部
+どのような理由かはわかりませんが、
+[k]
+
+＠紫式部
+そこに私までご一緒してしまった……[r]という事でしょうか。
+[k]
+
+？1：目覚める前のこと
+
+？2：紫式部さんは何か覚えてない？
+
+？！
+
+[charaFace A 0]
+
+＠紫式部
+覚えている事……。[r]そうですね……。
+[k]
+
+[charaFace A 7]
+
+＠紫式部
+…………。[r]…………。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_2 1.0 0.6]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[branchQuestNotClear lblNotClear1 3000303]
+[scene 66600]
+[branch lblConf1]
+[label lblNotClear1]
+[scene 10310]
+[label lblConf1]
+
+[cameraFilter gray]
+[wipeFilter cinema 0.5 0]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+＠紫式部
+あれは確か、夕食の後だったかと思います。
+[k]
+
+[messageOff]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 0,-50]
+[wt 1.2]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 0,-50]
+[wt 1.2]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 0,-50]
+[wt 1.2]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 0,-50]
+[wt 1.2]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth B 1]
+[charaDepth C 2]
+[charaDepth D 3]
+[charaDepth E 4]
+
+[charaFace B 0]
+[charaFace C 0]
+[charaFace D 0]
+[charaFace E 0]
+[charaFadein B 0.1 -350,-50]
+[charaFadein C 0.1 -150,-50]
+[charaFadein D 0.1 120,-50]
+[charaFadein E 0.1 370,-50]
+
+＠紫式部
+パラケルスス様、キルケー様、セミラミス様に[r]アスクレピオス様が連れだって歩いておられました。
+[k]
+
+＠紫式部
+何でも究極のチョコレートを開発されたとの事で、[r]バレンタインデーの主力商品にするのだとか。
+[k]
+
+＠紫式部
+是非マスターに試食を、と仰るものですから。[r]私がお使いを引き受け、部屋へとお持ちしました。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_2 1.0 0.3]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+
+[branchQuestNotClear lblNotClear2 3000303]
+[scene 66800]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10400]
+[label lblConf2]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_2 1.0 0.6]
+[wait fade]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 50,-50]
+[charaMove A 0,-50 0.4]
+[wt 1.2]
+
+[charaFace A 7]
+[wt 1.5]
+
+[charaFace A 1]
+[wt 0.7]
+
+[charaMoveReturn A 0,-55 0.5]
+[wt 1.2]
+
+[charaFadeout A 0.4]
+[wt 0.4]
+
+＠紫式部
+チョコレートをマスターにお渡しして、[r]すぐに失礼するつもりだったのですが。
+[k]
+
+＠紫式部
+マスターに勧められるまま、[r]私もご相伴に[#与:あずか]って[line 3]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[wipeOff]
+[cameraFilter normal]
+
+[scene 20305]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+[wt 0.4]
+
+？1：間違いなく
+？2：それが原因だ……！
+
+？！
+
+[charaFace A 2]
+
+＠紫式部
+えっ、今の話だけで！？
+[k]
+
+[charaFace A 7]
+
+＠紫式部
+チョコレートが原因……ですか。[r][#古今東西:ここんとうざい]の霊薬秘薬が、あの中に？
+[k]
+
+＠紫式部
+最近はあの[#界隈:かいわい]のヤバみが増すばかり、と……。[r]なるほど……。
+[k]
+
+＠紫式部
+……。[r]……。
+[k]
+
+[charaFace A 6]
+
+＠紫式部
+あああ、すみませんすみません！[r]まさかそのような危険物だったなんて！
+[k]
+
+？1：紫式部は悪うないよ
+
+？！
+
+[charaFace A 4]
+
+＠紫式部
+マスター……。[r]ありがとうございます。
+[k]
+
+＠紫式部
+この失態のお詫びは後ほど改めて。[r]今は……。
+[k]
+
+[charaFace A 0]
+
+＠紫式部
+原因がどうあれ、一刻も早くここから[r]戻る方法を探さねばなりません。
+[k]
+
+＠紫式部
+さしあたっては……そうですね。
+[k]
+
+[bgmStop BGM_EVENT_7 1.5]
+
+＠紫式部
+あちらに見える街に向かいましょう。[r]手掛かりが見つかると良いのですが……。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[se ad443]
+[wt 0.4]
+[seStop ad443 0.2]
+[wt 0.2]
+
+＠？？？
+おおっと待ちな、そこのお二人さん。[bgm BGM_EVENT_5 0.1][r]今、確かにチョコレートと言ったよなぁ？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠紫式部
+！？[r]何者です！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠？？？
+オレらは甘い物に目が無くてなぁ。[r]ここで会ったのも何かの縁だ。
+[k]
+
+＠？？？
+出すモン出してからお別れしようや。[r]そう……
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[charaDepth F 2]
+[charaDepth G 1]
+
+[charaFace G 2]
+[charaFadein G 0.1 1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 1.0]
+[charaFadeout F 0.7]
+[wt 1.2]
+
+[charaTalk on]
+
+＠盗賊頭
+ギブミーチョコレートってなぁ！！[bgm BGM_EVENT_3 0.1]
+[k]
+
+？1：いつものアレだコレ
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠紫式部
+これもいつもの！？[r]マスターの夢はどうなっているのですか！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠盗賊頭
+[FFFFFF]？[-]　いつものアレコレ？[r]何おかしな事を口走ってやがる。
+[k]
+
+＠盗賊頭
+無駄話は止めな。こっちも素人じゃねえんだ。[r]別に命までは取らねえ。
+[k]
+
+＠盗賊頭
+なぁ、あるんだろ、チョコレート。[r]大人しくそいつを置いてってくれや。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadein H 0.4 0]
+[charaFadein I 0.4 2]
+[se ad443]
+[wt 0.4]
+[seStop ad443 0.2]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk H]
+
+＠盗賊Ａ
+へへへ……チョコだ、チョコだぁ！
+[k]
+
+＠盗賊Ｂ
+久々の新鮮なチョコだぜえ！
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠紫式部
+マスター……！
+[k]
+
+？1：持ってません
+？2：とは言い辛い雰囲気……
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠盗賊頭
+チョコ持ってないのキミたちぃ？
+[k]
+
+[bgmStop BGM_EVENT_3 1.5]
+[charaFace G 5]
+
+＠盗賊頭
+チッ……なんだ[#余所者:よそもの]かよ。[r]ヌカ喜びさせやがって。
+[k]
+
+[charaFace G 0]
+
+＠盗賊頭
+うん、もういい。[r]行っちゃっていいよ。
+[k]
+
+[bgm BGM_EVENT_2 0.1]
+[charaFace G 1]
+
+＠盗賊頭
+この辺り物騒だから気をつけてね！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadein H 0.1 0]
+[charaFadein I 0.1 2]
+
+＠盗賊Ａ
+モンスターとか出ますよ！
+[k]
+
+＠盗賊Ｂ
+道なりに進むと街に着きますぜ！
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠紫式部
+ど、どうやら……。
+[k]
+
+＠紫式部
+銃を収めてくれたようですね。
+[k]
+
+
+＠紫式部
+それに、この方はどう見てもティーチ様。[r]何かお話を[#伺:うかが]えるのでは？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠盗賊頭
+うん、どうしたのキミたち？[r]何かワケありって感じ？
+[k]
+
+[charaFace G 3]
+
+＠盗賊頭
+拙者に相談とかしちゃう？[r]こう見えて意外と聞き上手ですぞ。
+[k]
+
+＠盗賊頭
+いやいや遠慮などは結構。[r]そちらのレディの、とても豪華な胸回り[line 3]
+[k]
+
+[charaFace G 0]
+
+＠盗賊頭
+おっと失敬、間違えた。
+[k]
+
+＠盗賊頭
+そう、服。服の仕立ての話です。[r]すっげえ細かな[#刺繍:ししゅう]とか、そういうの。
+[k]
+
+[charaFace G 3]
+
+＠盗賊頭
+文化的な意味で興味が湧き立ち、[r]たまらなく目の保養になりますのでね……フフフ。
+[k]
+
+？1：じゃあ、少し話を……
+
+？！
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+[se ad443]
+[seVolume ad443 0 0.1]
+[seVolume ad443 1.0 1.0]
+[wt 1.5]
+
+[charaEffect J bit_talk_41]
+[charaShake J 0.1 0 5 0]
+[charaTalk J]
+[charaFace J 3]
+[charaFadein J 0.4 1]
+[wt 0.4]
+
+＠？？？
+ほぁっちゃあーーーーーーーー！！！！
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaShakeStop J]
+[charaPut J 1200,1200]
+[charaEffectDestroy J bit_talk_41]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth J 2]
+[charaDepth G 1]
+
+[charaFace G 3]
+[charaFadein G 0.1 1]
+[wt 0.4]
+
+[seStop ad443 0.2]
+[charaFace J 0]
+[charaFadein J 0.2 600,0]
+[charaMove J 200,0 0.2]
+[wt 0.2]
+
+[fowardEffect bit_talk_14]
+[charaFace G 2]
+[charaShake G 0.05 5 5 0.1]
+[se adm50]
+[se ad102]
+[wt 0.05]
+[charaMove G -800,0 0.5]
+
+＠盗賊頭
+もあっちゃあーーーーーーーーーッ！！？？[se ad348][charaMove J 300,50 0.25][charaFadeout J 0.25][charaFadeout G 0.4][bgm BGM_EVENT_27 0.1]
+[k]
+
+[seStop ad348 0.5]
+
+[charaTalk depthOn]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadein H 0.1 0]
+[charaFadein I 0.1 2]
+
+＠盗賊達
+お、お[#頭:かっち]ゃあーーーーーーーーッ！！？？
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+
+＠？？？
+トアーッ！[r]キックの反動を利用して空中三回転！
+[k]
+
+[messageOff]
+[charaTalk on]
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.2 -100,50]
+[charaMove J 0,0 0.2]
+[se ad223]
+[seVolume ad223 0 0.7]
+[se ad443]
+[wt 0.2]
+[seStop ad443 0.2]
+
+[charaFace J 2]
+
+＠？？？
+かーらーのー、華麗に着地10.00！[r]決まった……決まりすぎた！
+[k]
+
+
+
+＠？？？
+いやー、危ないところだったな[&少年少女:少女達]！[r]あたしちゃんが来たからにはもう安心だぜぃ！
+[k]
+
+[charaFace J 3]
+
+＠？？？
+いや安心じゃないかも？[r]安心かも？
+[k]
+
+[charaFace J 2]
+
+＠？？？
+まあどっちでもいいか、わははは！
+[k]
+
+
+？1：なんかすごいの来ちゃった……
+
+？！
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠紫式部
+……！！
+[k]
+
+＠紫式部
+あの方は……[r]そんな……まさか……？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad77]
+[seStop ad77 0.7]
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.7 0,-50]
+[charaMove G 0,0 0.7]
+[charaShake G 0.05 3 3 0.7]
+[wt 0.7]
+
+＠盗賊頭
+い、いや、おまえが誰だか知らねえが、[r]ちゃんと状況を見てましたか？
+[k]
+
+＠盗賊頭
+会話の流れからして、そこの二人と[r]打ち解けそうな雰囲気だったでしょ？
+[k]
+
+＠盗賊頭
+拙者の紳士的な社交術でカップル成立まで[r]秒読み段階だったでしょ？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 3]
+[charaFadein J 0.1 1]
+
+＠？？？
+ストップザモラルハザード！
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+[wt 0.3]
+
+[se ad102]
+[se bac9]
+[charaEffect G bit_talk_13]
+[wt 0.15]
+
+[charaFace G 2]
+[charaMove G 0,-50 0.3]
+[charaShake G 0.05 3 3 0.3]
+
+＠盗賊頭
+あふん！？[charaFadeout G 0.2]
+[k]
+
+
+[charaTalk J]
+[charaFace J 2]
+[charaFadein J 0.1 1]
+
+＠？？？
+ホワチャッ！　ホワチャッ！[r]みんなかかってホーイ！
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadein H 0.1 0]
+[charaFadein I 0.1 2]
+[wt 0.3]
+
+[se ad102]
+[se bac8]
+[charaEffect H bit_talk_13]
+[wt 0.15]
+
+[charaMove H -256,-50 0.3]
+[charaShake H 0.05 3 3 0.3]
+[charaFadeout H 0.2]
+
+＠盗賊達
+ぐはぁーーーーーーーーッ！？[se ad102][se bac11][seVolume bac11 0 0.6][charaEffect I bit_talk_13][wt 0.15][charaMove I 256,-50 0.3][charaFadeout I 0.3]
+[k]
+
+[messageOff]
+[wt 0.1]
+
+？1：あ、とりあえず止めよう
+？2：紫式部、いける？
+
+？！
+
+[bgmStop BGM_EVENT_27 1.0]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠紫式部
+……。[r]……。
+[k]
+
+[charaFace A 2]
+
+＠紫式部
+は、はい、大丈夫です！[bgm BGM_EVENT_3 0.1]
+[k]
+
+＠紫式部
+お任せください。[r]この争い、紫式部が止めてみせます！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

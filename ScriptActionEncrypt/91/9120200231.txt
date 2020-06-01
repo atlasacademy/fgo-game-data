@@ -1,0 +1,373 @@
+＄91-20-20-02-3-1
+
+[soundStopAll]
+
+[charaSet A 8001002 1 マシュ]
+[charaSet B 2020001 1 イシュタル]
+[charaSet C 2002001 1 ギルガメッシュ]
+[charaSet D 3008001 1 エルキドゥ]
+[charaSet E 1001000 1 エフェクト用]
+[charaSet F 1001000 1 エフェクト用]
+
+[imageSet G cut030_ggr 1]
+[charaScale G 1.5]
+
+
+[scene 10000]
+
+[bgm BGM_EVENT_24 0.1]
+[charaPut F -256,126]
+
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_kengekiall01]
+[se ad32]
+[wt 0.5]
+[se ad32]
+[wt 0.1]
+[se ad32]
+[wt 0.6]
+
+[effect bit_talk_14]
+[se ad170]
+[wt 0.5]
+[charaEffect F bit_talk_14]
+[se ad170]
+[wt 0.8]
+
+[effect bit_talk_arrow01or]
+[se ade8]
+[wt 1.3]
+
+[fadeout white 0.3]
+[se ade7]
+[wait fade]
+
+[charaFadein G 0 0,-400]
+[wt 0.3]
+
+[fadein white 1.0]
+[seStop ade7 1.0]
+[effect bit_talk_explosion]
+[wait fade]
+
+[se ad63]
+[shake 0.05 3 3 0.7]
+[wt 0.7]
+
+[shake 0.05 0 3 1.5]
+[se ad109]
+[se ad203]
+[seVolume ad203 0 0.7]
+[wt 2.5]
+
+[wipeout rectangleStripUpToDown 0.3 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+
+[scene 20730]
+[wt 0.3]
+
+[wipein rectangleStripDownToUp 0.3 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+[bgmStop BGM_EVENT_24 1.5]
+
+
+＠マシュ
+グガランナ・マークⅢ、活動停止しました！[r]戦闘終了です！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+
+＠ギルガメッシュ
+ふん。全盛期には及ばぬな天の牡牛よ。[r]この程度であれば[#我:オレ]が出るまでもなかったわ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠エルキドゥ
+角は回収させてもらうよ。[r]いいね？　イシュタル。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠イシュタル
+ああぁ……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+これで万事解決ですね。[r]ところで、女神イシュタル。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[charaFace B 3]
+[charaFadein B 0.1 0]
+
+＠イシュタル
+……なあに、マシュ？
+[k]
+
+
+＠マシュ
+今回の件はオフレコに、とおっしゃっていましたが。
+[k]
+
+[charaFace B 15]
+
+＠イシュタル
+……ええ、そうよ？
+[k]
+
+[charaFace A 2]
+
+＠マシュ
+今後の警告も含めて、[r]しっかり記録させていただきますので、そのつもりで！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠イシュタル
+……………………てへ。
+[k]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+？1：“てへ”じゃありません女神様
+？2：少しは反省してください女神様
+
+？！
+
+[charaFace B 11]
+
+＠イシュタル
+はい……[charaMove B 0,-20 0.5]
+[k]
+
+[messageOff]
+[charaFace B 1]
+[charaMove B 0,0 0.2]
+[se bac1]
+[seStop bac1 0.3]
+[wt 0.3]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠イシュタル
+で[messageShake 0.03 5 5 0.8]もスーパーな私、すごかったでしょ？[r]ブラッシュアップしたら今度こそいけると思うの！
+[k]
+
+＠イシュタル
+目的意識がしっくり来てたっていうか……[r]財宝集めもいいけど、復讐も[#滾:たぎ]るものがあるなって！
+[k]
+
+
+[bgmStop BGM_EVENT_7 1.0]
+
+？1：一瞬で立ち直った！？
+？2：全く反省してない！？
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_6 0.1]
+
+
+＠ギルガメッシュ
+……まったく、これのどこが豊穣の女神という。[r]大地母神の系譜というのは下手な悪神より[#性質:たち]が悪い。
+[k]
+
+
+＠ギルガメッシュ
+おい、そこの巻き込まれただけの雑種！　それが[r][#莫迦:ばか]な真似をしでかさぬよう、しかと見張っておけ！
+[k]
+
+
+？1：王さまにもできなかったのに？
+？2：王さまも放置していたのに？
+
+？！
+
+＠ギルガメッシュ
+たわけ。[r]できなかったのではない。しなかったのだ。
+[k]
+
+
+＠ギルガメッシュ
+[#爆:は]ぜると知れている火中の栗など拾うまでもないと、[r]関わり合いを持たなかったまでのこと。
+[k]
+
+
+＠ギルガメッシュ
+そも、[#自然:かみ]には報復機能があるからな。[r]理由もなく倒す事はできん。
+[k]
+
+
+＠ギルガメッシュ
+加えて、少々落ちたとは言え[r]あれは[#正真正銘:しょうしんしょうめい]の女神。
+[k]
+
+
+＠ギルガメッシュ
+その気になれば何の躊躇もなく貴様らを滅ぼし得る[r]存在である事、[#努々:ゆめゆめ]忘れるなよ。
+[k]
+
+[charaFace C 3]
+
+
+＠ギルガメッシュ
+その上でなお懲りずに付き合い続けるのなら、[r][#此度:こたび]程度の騒動の百や二百、覚悟しておけ。
+[k]
+
+[charaFace C 0]
+
+＠ギルガメッシュ
+[#我:オレ]からの忠告は以上だ。[r]しっかりな。
+[k]
+
+？1：はい！
+？2：はい！
+
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFadein D 0.1 2]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[effect bit_talk_06]
+[wt 2.0]
+
+[charaFaceFade D 1 1.0]
+[charaFaceFade C 1 1.0]
+[wt 2.0]
+[se ad52]
+[charaSpecialEffect D flashErasure 1 1.7]
+[charaSpecialEffect C flashErasure 1 1.7]
+[wait charaSpecialEffect D]
+[wait charaSpecialEffect C]
+[effectStop bit_talk_06]
+[wt 1.0]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ギルガメッシュ王、エルキドゥさん、[r]共に退去なされました。
+[k]
+
+＠マシュ
+厳しい方たちですが、[r]今回もたいへん頼もしかったですね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+
+＠イシュタル
+え、なにその[#纏:まと]め方。[r]アナタたち、私の味方よね！？
+[k]
+
+？1：…………………………、もちろん！
+？2：…………………………（ぐっ！　とサムズアップ）
+
+？！
+
+[charaFace B 1]
+
+
+＠イシュタル
+そうよね！　返答まですっごく間があったけど、[r]疲れからくるロード時間と考えましょう！
+[k]
+
+[charaFace B 11]
+
+＠イシュタル
+まあ……リベンジは失敗しちゃったけど、[r]貴重な経験もできたし、宝具もキレが上がったし……
+[k]
+
+[charaFace B 13]
+
+
+＠イシュタル
+貴方にしてみれば、悪くない結果になったわよね？[r]頼れる女神がさらに頼れるようになったんだから。
+[k]
+
+[charaFace B 1]
+
+＠イシュタル
+これからも私の宝具でバッタバッタと[r]邪魔者を蹴散らしてあげる。
+[k]
+
+＠イシュタル
+天舟に乗った気分で、これからも私のお願いを[r]聞いてね、[%1]♡
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_6 2.0]
+[wait fade]
+[soundStopAll]
+[end]

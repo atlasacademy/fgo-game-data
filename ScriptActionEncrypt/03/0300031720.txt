@@ -1,0 +1,180 @@
+
+＄03-00-03-17-2-0
+
+[soundStopAll]
+
+[charaSet A 8001400 1 マシュ]
+[charaSet B 9005001 1 ホームズ]
+[charaSet C 1098124500 1 ダ・ヴィンチ]
+[charaSet D 1098160000 1 陳宮]
+[charaSet E 1098160900 1 赤兎]
+[charaSet F 1098123200 1 ゴルドルフ]
+[charaSet H 98115000 1 エフェクト用]
+
+[scene 65500]
+
+[bgm BGM_EVENT_80 0.1]
+[wt 0.5]
+
+[se ad608]
+[shake 0.01 2 3 4.0]
+
+[charaPut H 1]
+
+[fadein black 1.5]
+[wait fade]
+[se ad609]
+[charaEffect H bit_talk_explosion]
+[seVolume ad609 0 0.6]
+[wt 3.0]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_explosion]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠赤兎
+うわっ、[#脆:もろ]ッ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠ホームズ
+うむ……虚数潜航に耐えるボーダーの装甲を[r]そのまま模倣しているのなら、
+[k]
+
+＠ホームズ
+かつてない難敵になると危ぶんでいたが……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……残念です。武装はかなり強烈でしたが、[r]まさか殴って壊せる代物だったとは。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠陳宮
+まあサーヴァントの打撃は通常兵器を上回るもの。[r]そこまでガラク……失礼。
+[k]
+
+[charaFace D 6]
+
+＠陳宮
+そこまで[#安普請:やすぶしん]ではない、とは思いますが。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ホームズ
+相変わらず[#傀儡:くぐつ]兵士と同様、自動化された無人機だね。[r]しかしここまで雑に造るとは……まさか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+うん、ちょっと……私も雑に嫌な予感がする。
+[k]
+
+＠ダ・ヴィンチ
+これは単機あたりの性能よりも生産性に重きを置いて……[se ade87][seVolume ade87 0 0.1][r]置きすぎている風に見える。ということは……
+[k]
+
+[messageOff]
+[seVolume ade87 0.6 0.3]
+[se ad619]
+[seVolume ad619 0 0.3]
+[se ad629]
+
+[wipeout rectangleStripRightToLeft 0.8 1.0]
+[bgm BGM_EVENT_80 1.0 0.8]
+[wait wipe]
+
+[cameraMove 0.1 0,0 1.01]
+[charaFadeout C 0.1]
+[cameraMove 0.1 -60,-30 1.2]
+[scene 68400]
+[wt 0.1]
+
+[seVolume ade87 0.6 0.5]
+
+[shake 0.05 3 1 2.6]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[se ad629]
+[se ad126]
+[se ad607]
+[wait wipe]
+[wt 0.8]
+[cameraMove 1.5 60,-30 1.2]
+[se ad629]
+[se ad126]
+[wt 0.4]
+
+[wt 2.0]
+[cameraHome 2.0]
+
+＠ゴルドルフ
+うわぁ！　いっぱい来た！[bgm BGM_EVENT_80 1.0 1.0]
+[k]
+
+＠ホームズ
+やはりか。[r]増やすだけ増やして数で圧倒しようという戦略だ！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+
+[scene 65500]
+[cameraHome 0.1]
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+焼[messageShake 0.01 2 2 0.2]き尽くしてー！　あれすぐに焼き尽くして！[r]誰か、対界宝具持ってきて！　早くッ！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[seStop ad619 0.5]
+[seStop ad629 0.5]
+[seStop ade87 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

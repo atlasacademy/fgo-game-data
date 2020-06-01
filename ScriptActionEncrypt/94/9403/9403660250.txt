@@ -1,0 +1,131 @@
+
+
+
+＄94-03-66-02-5-0
+
+[soundStopAll]
+
+[charaSet A 4032000 1 ライネス]
+[charaSet B 98001000 0 マシュ回想]
+[charaSet C 98003000 1 Dr.ロマン]
+[charaSet D 98002000 1 フォウ]
+
+[charaSet J 1098120900 1 通信用ノイズ]
+
+[scene 73000]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_90 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠ライネス
+思い出したぞ……！
+[k]
+
+[charaFace A 0]
+
+
+＠ライネス
+そうだ、私は……[#私もサーヴァントだ]！[r]召喚された人間を器として、英霊を憑依させた者だ！
+[k]
+
+＠ライネス
+君も、何か思い出したんじゃないのか？
+[k]
+
+？1：それは……
+？2：頭が……痛くて……
+？！
+
+[messageOff]
+[bgm BGM_EVENT_90 1.5 0.5]
+[fowardEffect bit_talk_noise_gr]
+[se ad31]
+[wt 0.2]
+[fowardEffectStop bit_talk_noise_gr]
+[seStop ad31]
+
+[fowardEffect bit_talk_noise_gr]
+[se ad31]
+[wt 0.3]
+[fowardEffectStop bit_talk_noise_gr]
+[seStop ad31]
+
+[fowardEffect bit_talk_noise_gr]
+[se ad31]
+
+[wipeout noise 1.0 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[fowardEffectStop bit_talk_noise_gr]
+
+[scene 10110]
+[effect bit_sepia01]
+[pictureFrame cut063_cinema]
+[wt 1.5]
+
+[wipein noise 2.0 1.0]
+[seStop ad31 1.0]
+[wait wipe]
+
+＠[51d4ff]アナウンス[-]
+[51d4ff][line 3]塩基配列　　ヒトゲノムと確認[-][r][51d4ff][line 3]霊器属性　　善性・中立と確認[-]
+[k]
+
+＠[51d4ff]アナウンス[-]
+[51d4ff]ようこそ、人類の未来を語る資料館へ。[-][r][51d4ff]ここは[#人理継続保障機関:じんりけいぞくほしょうきかん]　カルデア。[-]
+[k]
+
+＠[51d4ff]アナウンス[-]
+[51d4ff]指紋認証　声紋認証　遺伝子認証　クリア。[-][r][51d4ff]魔術回路の測定……完了しました。[-]
+[k]
+
+＠[51d4ff]アナウンス[-]
+[51d4ff]登録名と一致します。[-][r][51d4ff]貴方を霊長類の一員である事を認めます。[-]
+[k]
+
+＠[51d4ff]アナウンス[-]
+[51d4ff]はじめまして。[-][r][51d4ff]貴方は本日　最後の来館者です。[-]
+[k]
+
+＠[51d4ff]アナウンス[-]
+[51d4ff]どうぞ、善き時間をお過ごしください。[-]
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[bgmStop BGM_EVENT_90 2.0]
+[fadein black 2.0]
+[wait fade]
+
+[se ad15]
+
+＠[51d4ff]アナウンス[-]
+[51d4ff]……申し訳ございません。[-][r][51d4ff]入館手続き完了まであと180秒必要です。[-]
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠[51d4ff]アナウンス[-]
+[51d4ff]その間、模擬戦闘をお楽しみください。[-]
+[k]
+
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

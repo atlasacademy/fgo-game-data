@@ -1,0 +1,207 @@
+
+＄91-60-27-01-1-1
+
+
+[soundStopAll]
+
+
+[scene 10310]
+[charaSet A 98001000 1 マシュ]
+[charaSet B 6027000 1 武則天]
+[charaSet C 98115000 1 NPC]
+[charaSet D 25002000 1 葛飾北斎]
+[charaSet E 5010001 1 ？？？]
+[charaSet F 25002000 1 葛飾北斎2]
+
+[messageOff]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaDepth B 9]
+[wt 0.5]
+
+[charaDepth C 10]
+[wt 0.5]
+
+
+[bgm BGM_EVENT_7 0.1]
+
+
+[fadein black 1]
+[wait fade]
+[wt 0.1]
+
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+
+＠武則天
+なんじゃ、服を着ておってもよかったのか。[r]それならそうと早く言え。
+[k]
+
+[charaFace B 1]
+
+＠武則天
+くふふ、五分程度で済ませられるなら[r]付き合ってやらんでもないぞ？
+[k]
+
+＠武則天
+ぽーずは、こうか？
+[k]
+
+[messageOff]
+[charaPut C 156,0]
+[charaFace B 0]
+[charaMove B 156,0 0.4]
+[wt 0.4]
+[fowardEffect bit_talk_valentine_brilliant]
+[se adm19]
+[wt 0.6]
+[fowardEffectStop bit_talk_valentine_brilliant]
+[seStop adm19 0.4]
+[wt 1]
+
+＠武則天
+それとも、こうかっ？
+[k]
+
+[messageOff]
+[charaFace B 0]
+[charaMove B -156,0 0.6]
+[wt 0.8]
+[charaPut C -156,0]
+[fowardEffect bit_talk_valentine_brilliant]
+[se adm19]
+[wt 1]
+[fowardEffectStop bit_talk_valentine_brilliant]
+[seStop adm19 0.4]
+[wt 1]
+[charaPut C -1536,1024]
+[wt 1]
+
+[charaFadeout B 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+
+＠葛飾北斎
+おっ、いいねェ。だいたいあんたの造作は覚えたが、[r]目の前で筆を振るえるならそれにこしたこたねぇ。
+[k]
+
+[charaFace D 6]
+
+＠葛飾北斎
+花のお江戸に聞こえし北斎の速筆っぷり、[r]その目でとくと[#御覧:ごろう]じろ、てなモンだ！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth F 0]
+[charaDepth D 1]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaFadeout D 0.4]
+[se ade174]
+[wt 1.2]
+[seStop ade174 0.1]
+
+[charaFace D 7]
+[charaFadein D 0.4 1]
+[se ade174]
+[wt 1]
+[seStop ade174 0.1]
+
+[charaFace F 12]
+[charaFadein F 0.1 1]
+[charaFadeout D 0.4]
+[se ade174]
+[wt 1.2]
+[seStop ade174 0.1]
+
+[charaFace D 9]
+[charaFadein D 0.4 1]
+[se ade174]
+[wt 1.4]
+[seStop ade174 0.1]
+
+[charaFadeout F 0.1]
+[charaTalk D]
+[charaFace D 0]
+
+＠葛飾北斎
+ふむ。別にソッチばかりに[#拘:こだわ]る気はねぇが、[r]色気ってのはやっぱり大事な主題だからなァ。
+[k]
+
+[charaFace D 13]
+
+＠葛飾北斎
+ヨシ、ちーっと肩をはだけてみようか？
+[k]
+
+[charaFadeout D 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠武則天
+んー？　にゅっふふふ、しょうがないやつじゃのう。[r]さーびすじゃぞ！
+[k]
+
+[charaFadeout B 0.1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠マシュ
+なんだか流れで春画になってしまいかねないので、[r]一応終わるまで注意して見ておきましょうね、先輩……。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 2]
+
+[wipeFilter cinema 0.5 0]
+
+[se ad95]
+[wt 1]
+
+[scene 10310]
+
+[bgm BGM_EVENT_5 0.1]
+
+[seStop ad95 0.1]
+[fadein black 1]
+[wait fade]
+[wt 0.7]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFilter E silhouette 000000]
+[charaFadein E 0.4 1]
+
+
+＠？？？
+………………。
+[k]
+
+
+
+
+[messageOff]
+
+[wt 0.9]
+
+[bgmStop BGM_EVENT_5 1]
+[fadeout black 2]
+[wait fade]
+[soundStopAll]
+[end]
+

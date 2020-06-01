@@ -1,0 +1,695 @@
+
+
+
+＄94-03-35-05-1-0
+
+[soundStopAll]
+
+[charaSet A 3033000 1 オルトリンデ]
+[charaSet B 3033001 1 ヒルド]
+[charaSet C 3033002 1 スルーズ]
+[charaSet D 99502600 1 マシュ]
+[charaSet E 6031000 1 刑部姫]
+[charaSet F 5042000 1 紫式部]
+[charaSet G 5005001 1 アンデルセン]
+[sceneSet H 10000 1]
+[charaSet I 5009000 1 エフェクト用]
+[charaSet J 98115000 1 エフェクト用]
+
+[charaScale H 1.01]
+
+[scene 70500]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+＠オルトリンデ
+…………このあたりのはず、です。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.4 1]
+[wt 0.4]
+＠ヒルド
+うーん、返却しちゃうのが勿体ないなぁ。[r]あたし、もうちょっと借りてようかな。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+＠スルーズ
+必要ありません。[r]既に読了した書籍であれば。
+[k]
+
+＠スルーズ
+私たちは戦乙女ですから、[r]記録した情報は共有され消えることはないのです。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 6]
+[charaDepth A 8]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFace A 0]
+[charaFadein B 0.1 2]
+[charaFadein A 0.1 0]
+＠ヒルド
+それはそうなんだけどさ。[r]紙の本ってなんだか不思議だよ。
+[k]
+
+＠ヒルド
+ページをめくる時のわくわくする感じって、[r]先が分かってたとしても[#ある]と思うんだよね。
+[k]
+
+
+[charaTalk A]
+[charaFace A 7]
+＠オルトリンデ
+あ。それは、確かに……
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠スルーズ
+いえ。霊子的な情報や電子的な情報でも、[r]似た感慨を得ることは可能です。
+[k]
+
+＠スルーズ
+それに[line 3]二人とも。
+[k]
+
+[charaFace C 6]
+＠スルーズ
+感傷は人のもの。[r]感情も人のもの。
+[k]
+
+＠スルーズ
+私たちには不要なものでしょう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFace A 0]
+[charaFadein B 0.1 2]
+[charaFadein A 0.1 0]
+＠ヒルド
+ちぇー。
+[k]
+
+
+[charaTalk A]
+[charaFace A 0]
+＠オルトリンデ
+では、返却行動を開始しましょう。[r]返却の記録は後ほど、司書の英霊に伝達を[line 3]
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_2 0.5 0.3]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[se ad13]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+[wt 0.3]
+＠マシュ
+発見しました！[r]本を返却しに来たと[#思:おぼ]しき英霊、三騎です！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠刑部姫
+ロボ姉妹百合萌え……[r]いいかも……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠紫式部
+ああ、あの仲の良い三姉妹ですね。覚えがあります。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠アンデルセン
+ワルキューレ、北欧の戦乙女か。[r]さて。話が通じるといいが。
+[k]
+
+？1：おーい、三人とも
+？2：その本の返却、ちょっと待った！
+
+？！
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgmStop BGM_EVENT_2 0.5]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+
+[se ade32]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[charaShake A 0.03 4 4 0.4]
+[wt 0.4]
+[seStop ade32 0.4]
+[wt 0.8]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth C 4]
+
+[charaTalk off]
+[charaFace B 2]
+[charaFace C 2]
+[charaFadein B 0.1 0]
+[charaFadein C 0.1 2]
+[wt 1.2]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠スルーズ
+…………マスター。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFace A 0]
+[charaFadein B 0.1 2]
+[charaFadein A 0.1 0]
+＠ヒルド
+……え。なんでマスターがいるの？
+[k]
+
+
+[charaTalk A]
+[charaFace A 0]
+＠オルトリンデ
+推測します。[r]私たちの行動にマスターは何らかの不審を感じ、
+[k]
+
+＠オルトリンデ
+今まさに返却しようとする本の内容を[r]確認するつもりなのではないでしょうか。
+[k]
+
+
+[charaTalk B]
+[charaFace B 2]
+＠ヒルド
+え、ええ！？
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠スルーズ
+……。[r]……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+＠ヒルド
+ええっと！　マスターこんにちは！[r]べつにあたしたち、何も変なコトしてないよ！
+[k]
+
+＠ヒルド
+最近図書館に通ってるのも偶然だし、[r]あたしたち三人みんな、恋の物語を集めたりなんて[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠スルーズ
+ヒルド。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠ヒルド
+ぴ[messageShake 0.03 3 3 0.4]ゃっ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 4]
+[charaFadein A 0.1 0]
+[charaFadein B 0.1 2]
+＠オルトリンデ
+そうです。私は『イソップ一家物語』なので、[r]恋の物語とは言い切れません。
+[k]
+
+
+[charaTalk B]
+[charaFace B 13]
+＠ヒルド
+え、そうなの？[r]あたしは『若草物語』だから恋の話もあったけど。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠スルーズ
+……。[r]……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFace C 4]
+[charaFadein B 0.1 0]
+[charaFadein C 0.1 2]
+＠ヒルド
+スルーズは[line 3]
+[k]
+
+
+[charaTalk C]
+[charaFace C 4]
+＠スルーズ
+私は、その……………………[wt 0.9]『嵐が丘』を。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠アンデルセン
+ほう。そいつはなかなか趣味がいい。[r]燃えるような情愛の物語、大人向けのチョイスだな。
+[k]
+
+＠アンデルセン
+では次は『源氏物語』を読むといい。[r]これも実に情熱的でな。今なら音読するのもいいぞ？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+＠紫式部
+ア、アンデルセン様……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠刑部姫
+（き、鬼畜眼鏡！　え、うそ、鬼畜眼鏡ショタなの！？）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠スルーズ
+『源氏物語』は。
+[k]
+
+＠スルーズ
+既に。
+[k]
+
+[charaFace C 6]
+＠スルーズ
+読了しています。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠ヒルド
+うんうん。いの一番に読んでたよねスルーズ。[r]共有記録にあっという間に上がっていたし。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠スルーズ
+実に……人間の精神、情愛、そういったものが[r]描き込まれた……不可解な……
+[k]
+
+＠スルーズ
+それでいて、不思議と惹き付けられる物語でした。[r]それが何か。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠ヒルド
+へえーそうなんだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠スルーズ
+そうです。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠オルトリンデ
+そうなのですね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠スルーズ
+そうです。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaFace A 1]
+[charaFace B 1]
+[charaFadein A 0.1 0]
+[charaFadein B 0.1 2]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+[wt 1.2]
+
+
+[charaFace C 2]
+＠スルーズ
+はっ！　貴方たち！[r]違います[line 3]私は別に、人間の精神に興味など[line 3]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace A 1]
+[charaFace B 1]
+[charaFadein A 0.1 0]
+[charaFadein B 0.1 2]
+[wt 1.2]
+
+[se ade250]
+[bgm BGM_EVENT_7 0.4 0.5]
+[charaTalk H]
+[charaFadeTime H 0.1 0.4]
+＠J：解説
+すっかり夢中な姉の様子に、なぜだか嬉しくなって[r]笑みがこぼれてしまう妹たちなのだった。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.4 1.0]
+[charaTalk depthOn]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+＠スルーズ
+！[messageShake 0.03 3 3 0.4]？
+[k]
+
+？1：こ、ここで解説！？
+？2：確かに恐るべき呪いかもしれない……
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_7 0.4]
+[charaFadeout C 0.1]
+[wt 0.6]
+
+[se ad39]
+[charaPut I 1]
+[charaEffect I bit_talk_warp]
+[wt 3.5]
+[seStop ad39 0.4]
+[wt 0.4]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠スルーズ
+はっ……私の『嵐が丘』が……！[r]空中に浮遊！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠マシュ
+先輩、呪本反応です！[r]前回と同じくらいの魔力反応があるようです！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠アンデルセン
+また外れか。とはいえ捨て置けん。[r]見つけたからには撃破して回収する他ないな。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠刑部姫
+よーし、[#姫:わたし]もいいとこみせちゃおう！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠紫式部
+回収、開始いたします！[r]事情は後で説明いたしますので、戦乙女の皆様！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠オルトリンデ
+状況、把握しました。[r]図書館の蔵書に異常発生。戦闘による対処の開始。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠ヒルド
+オッケー！　まかせて！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠スルーズ
+…………いいでしょう。協力します。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[se ad57]
+[shake 0.05 0 4 0.3]
+[wt 0.6]
+[se ad57]
+[shake 0.05 0 4 0.3]
+[wt 1.3]
+[seStop ad57 0.1]
+
+[se ad19]
+[wt 2.0]
+
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠マシュ
+呪本、大型の氷獣形態に変形しました！[r]気を付けてください皆さん！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠紫式部
+…………では、[wt 0.6][charaFace F 2]参ります！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

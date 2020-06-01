@@ -1,0 +1,692 @@
+
+
+＄03-00-02-07-4-0
+[soundStopAll]
+
+
+[charaSet A 1033000 1 シグルド]
+[charaSet B 8001400 1 バイザーありマシュ]
+[charaSet C 2031000 1 ナポレオン]
+[charaSet D 1098123820 1 オフェリア]
+[charaSet E 1098123810 1 オフェリア_眼帯]
+[charaSet F 1033001 1 シグルド_残像]
+[charaSet G 8001410 1 マシュ]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[scene 10000]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[wt 0.7]
+
+[fowardEffect bit_talk_kengekiall03]
+[charaPut H -70,50]
+[charaEffect H bit_talk_14]
+[se ad32]
+[wt 0.3]
+[charaPut H 60,10]
+[charaEffect H bit_talk_14]
+[se ad32]
+[wt 0.2]
+[charaPut H -50,-20]
+[charaEffect H bit_talk_14]
+[se ad32]
+
+[wt 0.5]
+
+[wipeout leftToRight 0.1 1]
+[wait wipe]
+
+[scene 61000]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 -30,0]
+
+[wipein rightToLeft 0.2 1]
+[se ad671]
+[wt 0.1]
+[charaMove B 1 0.2]
+[wait wipe]
+
+[wt 0.2]
+[seStop ad671 0.3]
+[wt 0.7]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[cueSe Battle bac170]
+[charaScale H 1.4]
+[charaEffect H bit_talk_rarrow01br 1 F]
+[charaPut H 1200,1200]
+[wt 0.4]
+[charaFace C 2]
+[wt 0.2]
+[charaPut H -50,-100]
+[wt 0.3]
+[cueSe Battle bac423]
+
+[wt 0.5]
+[charaFadeout C 0.1]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠シグルド
+[line 3]ほう。[r]以前より、多少は動けているようだ。
+[k]
+
+[messageOff]
+[se ad73]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[wt 0.5]
+
+
+[se ad671]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.4 1]
+[wt 0.2]
+
+[seStop ad671 0.3]
+[wt 0.7]
+
+[charaFace B 2]
+
+＠B：マシュ
+外骨骼への負荷は高いですが、充分いけます。[r]出力は低下していません。戦闘継続可能です、先輩！
+[k]
+
+[charaFace B 7]
+
+＠B：マシュ
+魔力供給とは異なるようですが、[r]恐らくナポレオンさんが、何らかの魔術的効果を[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠ナポレオン
+忘れたか？[r]オレは、北欧[#異聞帯:ロストベルト]に於ける唯一の人理の英雄だ。
+[k]
+
+＠ナポレオン
+北欧で戦うためにチューンされた状態なんだろうさ。[r]他にも、それなりの隠し球を持ってるぜ。
+[k]
+
+[charaFace C 0]
+
+＠ナポレオン
+アンタはどうだい？[r]大英雄。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠シグルド
+……。[r]……。
+[k]
+
+＠シグルド
+……………………成る程、[#汎人類史:あ　ち　ら]の抵抗か。
+[k]
+
+＠シグルド
+小賢しい。[r]だが、クク。いいぞ。そうでなくてはつまらん。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：マシュ
+……？
+[k]
+
+＠B：マシュ
+（英霊シグルドが、笑っている[line 3]？）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠シグルド
+オフェリア。[r]限定解除をひとつだ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：オフェリア
+いいでしょう。[r]認めます。
+[k]
+
+＠E：オフェリア
+[line 3]霊基強制再臨・限定解除。[r]立ちはだかる敵のすべてを打ち倒しなさい、我が騎士。
+[k]
+
+[messageOff]
+[fowardEffect bit_talk_easy_spell_r]
+[cueSe Battle bac32]
+[wt 2.0]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠B：マシュ
+霊基の再臨……！？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+
+[wt 0.2]
+
+
+[charaPut H 1]
+[charaEffect H bit_talk_charge_red]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth H 2]
+[charaDepth A 1]
+
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+[se ad61]
+[se ad556]
+[seVolume ad556 0 0.6]
+
+[wt 2.0]
+[seStop ad61 0.5]
+[seStop ad556 0.5]
+[se ad574]
+
+[fadeout white 0.2]
+[wait fade]
+
+[charaChange A 1033001 12 fade 0.1]
+[charaPut H 2400,2400]
+[charaEffectStop H bit_talk_charge_red]
+[charaTalk depthOn]
+[wait charaChange A]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 1.5]
+
+＠シグルド
+限定解除。第二段階。[r]英霊シグルドの手による魔剣グラム本格使用を開始する。
+[k]
+
+＠シグルド
+さて、どう殺すか。どいつから殺そうか。[r]いやいや、やはり貴様か弓兵。口の減らん間男め。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠ナポレオン
+ほう。装甲と刃が増えたな！[r]成る程、[#武装形態を取る]程度には本気を出したか！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaDepth B 10]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+[charaFace G 14]
+[charaFadein G 0.1 1]
+
+
+＠B：マシュ
+魔力が、さらに増大していくのが分かります！[r]触れてもいないのに外骨骼が[#軋:きし]む……
+[k]
+
+[messageOff]
+
+[wt 0.5]
+[charaTalk off]
+[charaFace B 7]
+[charaFace G 7]
+
+[charaFadeout B 0.4]
+[wt 0.3]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+
+[wt 0.7]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 2]
+
+＠マシュ
+ですが……ですが、いけます。先輩！[r][#霊基外骨骼:オ ル テ ナ ウ ス]、自動調律機能によって出力高めで安定中！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+
+＠E：オフェリア
+[line 3]ああ、そう。そうなのね[line 3]
+[k]
+
+[bgm BGM_EVENT_80 1.0 0.7]
+
+＠E：オフェリア
+アナタ、そういう[#瞳:め]ができるようになったのね。[r]マシュ・キリエライト。
+[k]
+
+[charaFace D 1]
+
+＠E：オフェリア
+なんだかとても[#眩:まぶ]しいわ。[r]それに、綺麗。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠マシュ
+…………。
+[k]
+
+＠マシュ
+オフェリアさん。クリプターの事情が[r]どのようなものなのか、わたしは分かりません。
+[k]
+
+[charaFace G 2]
+
+＠マシュ
+でも、たとえ知っていても退く事はできない[line 3][r]あなたの操る異聞帯サーヴァントが如何に強くとも！
+[k]
+
+＠マシュ
+強いだけの相手に負けるなと、[r]弱くとも強く叫んだ人を、わたしたちは知っている……！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+
+＠E：オフェリア
+そう。アナタ、昔に比べて本当に強くなった。[r]驚いてしまうくらいに。
+[k]
+
+[charaFace E 0]
+
+＠E：オフェリア
+[line 3]ごめんなさい、マシュ。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth E 2]
+[charaDepth D 1]
+
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[wt 0.5]
+[bgmStop BGM_EVENT_80 1.0]
+
+[se ad661]
+[wt 0.2]
+
+[charaFadeout E 0.4]
+[wt 2.0]
+[charaTalk depthOn]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ナポレオン
+ン……！？
+[k]
+
+＠ナポレオン
+おいオフェリア、眼帯の下にあるそいつは……何だ？[r]その瞳は……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠マシュ
+魔眼です！[r]具体的な効果は不明！
+[k]
+
+＠マシュ
+先輩！　ナポレオンさん！[r]強力な魔術的効果が来ます、抵抗に専念してください！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[wt 0.7]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠オフェリア
+[line 6]事象・[#照準固定:シュフェン・アウフ]。
+[k]
+
+[se ad476]
+
+
+＠オフェリア
+その鎧。凄いのね。[wt 0.6][charaFace D 5][r][line 3][#私は、それが輝くさまを視ない:I c h   w i l l   e s   n i e m a l s   g l ä n z e n   s e h e n .]。
+[k]
+
+[messageOff]
+[seStop ad476 0.5]
+[fadeout black 0.1]
+[wait fade]
+[cameraMove 0 0,-50 1.4]
+[wt 0.1]
+[fadein black 0.1]
+[wait fade]
+
+[se ad693]
+[effect bit_talk_ophe_eye 35,-28]
+[wt 0.2]
+
+[fadeout white 0.8]
+[wait fade]
+
+[charaFadeout D 0.1]
+[cameraHome 0.1]
+
+[charaTalk G]
+[charaFace G 14]
+[charaFadein G 0.1 1]
+
+[wt 0.1]
+[fadein white 1.0]
+[wait fade]
+
+＠マシュ
+！！
+[k]
+
+[messageOff]
+
+[se ad632]
+[wt 0.5]
+
+[charaShake G 0.05 1 1 0.5]
+[wt 0.5]
+[seStop ad632 0.5]
+[charaMove G 0,-10 0.3]
+
+[se ad643]
+[wt 0.5]
+
+[seStop ad643 0.5]
+
+
+[charaFace G 2]
+
+＠マシュ
+あっ……！[r]外骨骼の負荷が……！？
+[k]
+
+[charaFace G 15]
+
+＠マシュ
+[#霊基外骨骼:オ ル テ ナ ウ ス]・全箇所の出力が急激に低下中……！[r]自動調律機能が働いたはずなのに……
+[k]
+
+＠マシュ
+こ、これは……何……
+[k]
+
+
+[charaFace G 11]
+
+＠マシュ
+まさか限定的な……[r]事象の、巻き戻り、だとでも……[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠オフェリア
+私の魔眼。[r]ランクは『宝石』。
+[k]
+
+＠オフェリア
+視ないと決めたものが輝くさまを、私は、視ない。[r]私の前で輝くことはできない。
+[k]
+
+[charaFace D 1]
+
+＠オフェリア
+アナタに披露した事はなかったわよね？[r]その気になればこういう事だってできるの、私。
+[k]
+
+[charaFace D 0]
+
+＠オフェリア
+悪いけれど、[r]アナタはそこでじっとしていて頂戴ね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 0,-10]
+
+＠マシュ
+対象を限定した上での、時間操作[line 3]
+[k]
+
+[charaFace G 14]
+
+＠マシュ
+いえ、それは魔法の領域です！[r]魔眼といえど魔術の延長でかなう技術ではありません！
+[k]
+
+＠マシュ
+何か、何かの……仕掛けがある筈[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ナポレオン
+考えるのは後だ！　奴が来る！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaTalk depthOff]
+[charaDepth A 2]
+[charaDepth F 1]
+
+[charaFace A 12]
+[charaFadein A 0.1 1]
+[wt 0.3]
+[charaFace F 12]
+[charaPut F 1]
+[charaFadeTime F 0.1 0.4]
+
+[se ad171]
+[wt 0.7]
+
+＠シグルド
+話は終わったな？[r]では、再開だ。限定解除状態の魔剣グラムをくれてやる。
+[k]
+
+＠シグルド
+真のグラムにまではやや遠いものだが、我慢しろ。[r]第三段階は流石にオフェリアが許さん。
+[k]
+
+＠シグルド
+死ね。[r]クク。クク、クククク！
+[k]
+
+[messageOff]
+[charaSpecialEffect A erasureReverse 1 0.3]
+[cueSe Battle bac52]
+[wt 0.6]
+[cueSeStop bac52 0.3]
+[charaFadeout F 0.2]
+
+[wt 0.2]
+[charaTalk depthOn]
+
+[charaPut H 1]
+[charaScale H 1.5]
+[charaEffect H bit_talk_ichimon01wh]
+[se ad171]
+[wt 0.3]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[charaPut H 1200,1200]
+[charaScale H 1.0]
+[charaEffectStop H bit_talk_ichimon01wh]
+[effect bit_talk_14]
+[shake 0.05 2 4 0.5]
+[se ad32]
+
+[wt 0.3]
+[flashOff]
+
+[charaFace C 7]
+
+＠ナポレオン
+ははははははは！　こいつは！　なかなか！[r]巨人の一撃より重いっていうのは、想像以上だ大英雄！
+[k]
+
+[charaFace C 0]
+
+＠ナポレオン
+[line 3]僅かたりとも気は抜けんな。[r]鎧が不調なら防御に専念しておけ、[#お嬢さん:マドモワゼル]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 14]
+[charaFadein G 0.1 1]
+
+＠マシュ
+いえ！　まだ……やれます……！[r]退かないと決めたんです、三度も同じ相手を前に！
+[k]
+
+＠マシュ
+退けません！　先輩！
+[k]
+
+？1：無茶は駄目！
+？2：無茶をしないレベルで踏ん張る！
+
+？！
+
+[charaFace G 2]
+
+＠マシュ
+…………はい！[r]無茶の半歩前くらいで、いきます！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

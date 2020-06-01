@@ -1,0 +1,113 @@
+
+
+
+＄94-04-77-13-1-0
+
+
+
+
+[soundStopAll]
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 3039000 1 ガレス]
+[charaSet C 1098193100 1 《秋葉原》のマスター]
+[charaSet D 98006000 1 獣人エネミー]
+[charaSet E 98006000 1 エフェクト用ダミー]
+
+[pictureFrame cut170_gameframe_bright]
+
+
+[branchMaterial lblMaterial]
+
+
+[branch lblBranchMaterialEnd]
+
+[label lblMaterial]
+[scene 95500]
+
+[label lblBranchMaterialEnd]
+
+
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk off]
+[charaFace C 0]
+[charaFace B 0]
+[charaFadein C 0.4 -236,-50]
+[charaFadein B 0.4 236,-50]
+[wt 0.8]
+[charaTalk on]
+[charaTalk C]
+＠《秋葉原》のマスター
+ペットショップ・ポテトへようこそ！
+[k]
+
+？1：ポテト？
+
+？2：『ポチ』とかじゃなく？
+
+？！
+
+[charaFace B 1]
+＠ガレス
+うちの兄様の大好物からいただきました。[r]サーヴァントになってからの主食だそうで。
+[k]
+
+[charaFace B 0]
+＠ガレス
+それはともかく、どんなペットをお望みですか？[r]どの子も、とっても人懐っこくてかわいいですよ！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+＠マシュ
+このお店、放し飼いなんですね。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale E 0.95]
+[charaPut E 1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+[charaEffect E bit_talk_41]
+[se ad25]
+[wt 1.4]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaEffectDestroy E bit_talk_41]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-50]
+＠マシュ
+……って、飛びかかってきたのですが！？[bgm BGM_EVENT_3 0.1]
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[wt 0.4]
+[soundStopAll]
+[end]
+
+

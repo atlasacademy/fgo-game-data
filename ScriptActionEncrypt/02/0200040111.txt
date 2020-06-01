@@ -1,0 +1,591 @@
+
+
+＄02-00-04-01-1-1
+[soundStopAll]
+
+
+[charaSet A 2003001 1 ロビンフッド]
+[charaSet B 6012001 1 サンソン]
+[charaSet C 3031001 1 哪吒]
+[charaSet D 5001001 1 メディア]
+[charaSet E 98001000 1 マシュ]
+[charaSet F 25001000 1 アビゲイル]
+[charaSet G 1098120400 1 カーター]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[cameraMove 0.1 0,-50 1.0]
+[scene 20802]
+
+[wipeFilter cinema 0.5 0]
+
+[fadein black 1.0]
+[wt 0.5]
+[bgm BGM_EVENT_3 0.1]
+[wait fade]
+
+[se bac20]
+[charaPut H 0,80]
+[charaEffect H bit_shot_01]
+[wt 0.5]
+[se bac16]
+[shake 0.05 2 4 0.25]
+[wt 0.7]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,0]
+
+＠ロビンフッド
+ほい、とどめ[line 3]っと。
+[k]
+
+[bgmStop BGM_EVENT_3 1.5]
+
+[charaFace A 0]
+
+＠ロビンフッド
+オレはマスターについて先に行く。[r]あとは頼んだぜ、あんたら。
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.4]
+[se ad443]
+[wt 0.5]
+[seStop ad443 1.2]
+
+[wt 1.4]
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,0]
+
+＠サンソン
+…………。
+[k]
+
+＠サンソン
+しかしこれは……。[r]この程度の獣が相手だったからよかったが。
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠哪吒
+我々の戦力　強さが　明らかに半減……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠サンソン
+ええ。この、偽りの受肉の影響はかなり大きい。[r]脆弱な……[#これではまるで人間の肉体だ]。
+[k]
+
+＠サンソン
+今後は厳しい戦闘を迫られるのじゃ[r]ないだろうか……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,0]
+
+＠哪吒
+確かに　やりづらい！[r]けれど心配　無用　さんそん。
+[k]
+
+[charaFace C 0]
+
+＠哪吒
+天運見離す　不毛の地こそ[r][#御仏:みほとけ]の加護ぞあり。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,0]
+
+＠サンソン
+……それは心強いです、哪吒。
+[k]
+
+[charaFace B 0]
+
+＠サンソン
+あなたの実感はどうです、メディア。[r]……いや、あなたは戦闘を静観されていたか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0,0]
+
+＠メディア
+………………。[r]……戦闘への影響だけで……済むとは……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 -256,0]
+[charaFace D 5]
+[charaFadein D 0.1 256,0]
+
+＠サンソン
+どうされました、メディア。
+[k]
+
+＠サンソン
+まさか、僕らが先に敵を倒してしまったのが[r]不服であるとか……？
+[k]
+
+[charaFace D 4]
+
+＠メディア
+……そうね、やり過ぎたかもしれない。
+[k]
+
+＠メディア
+見られたわ。戦っているところを。[r]先ほどの[#白子:アルビノ]の娘に。
+[k]
+
+[charaFace B 5]
+
+＠サンソン
+……む。[r]それは……まずかったかも。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,0]
+
+＠哪吒
+口止め　必要？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,0]
+
+＠サンソン
+物騒な言い方はやめてほしい、哪吒。[r]ただ、彼女が他の獣に襲われていないか心配だ。
+[k]
+
+＠サンソン
+一応、僕が周囲を見てくる。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0,0]
+
+＠メディア
+ええ。[r]私はこの獣を調べるわ。
+[k]
+
+[messageOff]
+[wt 0.4]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_5 1.25]
+[wait fade]
+[cameraMove 0.1 0,0 1.0]
+[charaFadeout D 0.1]
+[scene 20805]
+[wipeOff]
+
+[charaSet B 6014001 1 マタ・ハリ]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.4 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠マシュ
+先輩[line 3]ご無事でしたか。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 0]
+[charaFace E 7]
+[charaFadein E 0.1 2]
+
+＠F：？？？
+……せんぱい？
+[k]
+
+[charaFace E 6]
+
+＠マシュ
+あ、いえ、そのっ。
+[k]
+
+[charaFace F 1]
+
+＠F：？？？
+くすっ……[r]ありがとうございました。
+[k]
+
+[charaFace F 0]
+
+＠F：？？？
+おかげで森の獣から逃げられました。[r]皆さんは、私たちの命の恩人よ？
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠ロビンフッド
+サンソンと哪吒、メディアは[r]焚き火やらの後始末だ。すぐに来る。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠F：？？？
+あ[charaShake F 0.05 2 0 0.5]……ああ……
+[k]
+
+[charaDepth F 10]
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 220,0]
+[charaMove E 192,0 0.2]
+[wt 0.1]
+[se ad110]
+[seVolume ad110 0 0.4]
+
+＠マシュ
+大丈夫ですか？[r]どうぞわたしに掴まって。
+[k]
+
+＠F：？？？
+ほっとしたら、急に、脚が震えて……
+[k]
+
+？1：自分は[%1]。[&きみ:あなた]は……？
+？！
+
+[charaFace F 0]
+
+＠F：？？？
+[%1]……さん。
+[k]
+
+＠アビゲイル
+はい。私は、アビゲイル。[r]このセイレムで暮らしてるの。
+[k]
+
+[charaFace F 10]
+
+＠アビゲイル
+皆さんはいったい……？[r]船乗りでも、物売りでもないみたいだし……
+[k]
+
+＠アビゲイル
+この村には巡礼者や旅の方はめったに……[r]それに、とても不思議な格好だわ。
+[k]
+
+[charaFace E 13]
+
+＠マシュ
+わたしたちは『[%1]一座』。[r]旅の劇団です。
+[k]
+
+＠マシュ
+名前の示す通り、こちらが座長です。[r]まだお若いですけれど。
+[k]
+
+＠マシュ
+セイレムには道に迷って、[r]森に入り込んでしまいました。
+[k]
+
+[charaFace F 1]
+
+＠アビゲイル
+劇団……？　[charaShake F 0.07 0 3 0.3]わぁ、わぁあ……！[r]でしたら、わざわざボストンから来てくれたの？
+[k]
+
+＠アビゲイル
+なんて素敵なの！[r]本当の職人のお芝居なんてはじめて！
+[k]
+
+＠アビゲイル
+みんなとっても喜ぶわ！
+[k]
+
+？1：ところで今日は何日だっけ、アビゲイル？
+？！
+
+＠アビゲイル
+どうぞ“アビー”って呼んでください、座長さん。[r]今日の日付……ですか？[charaFace F 0]
+[k]
+
+＠アビゲイル
+もう日付が変わったから……[r]『４月２１日』です。きのうが安息日でした。
+[k]
+
+[charaFace F 10]
+
+＠アビゲイル
+[line 3]西暦も？　はい、ええと……[r]１６９２年です。
+[k]
+
+[charaFace E 8]
+
+＠マシュ
+……！[r]（１６９２年……よりによって……）
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaDepth F 6]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.2]
+
+[bgmStop BGM_EVENT_2 0.7]
+
+＠G：？？？
+[line 3]アビゲイル。[r]その方々は？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+
+＠アビゲイル
+伯父様。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠ロビンフッド
+……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠マタ・ハリ
+…………
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace F 4]
+[charaFadein F 0.1 0]
+[charaFace G 0]
+[charaFadein G 0.1 2]
+
+＠G：？？？
+子供たちばかり連れ立って、真夜中に家を抜け出して、[r]森で何をしていたのか[line 3]
+[k]
+
+＠G：？？？
+それはあとで尋ねよう。
+[k]
+
+＠アビゲイル
+はい……
+[k]
+
+[charaFace F 0]
+
+＠アビゲイル
+伯父様、この方々は[line 3]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_5 1.0]
+[wait fade]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.8]
+[fadein black 0.7]
+[wait fade]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠G：？？？
+ほう。旅の劇団。
+[k]
+
+＠G：？？？
+他の娘たちからも聞いた。[r]森の獣に襲われたところを救ってくださったと。
+[k]
+
+＠G：？？？
+[&ミスター:ミス]・[%1]、[r]貴方が座長か。どうか礼を言わせてほしい。
+[k]
+
+[charaFace G 0]
+
+＠G：？？？
+この時間からセイレムで[r]まともな宿を取るのは難しい。
+[k]
+
+＠G：？？？
+かといって、波止場の荒くれ者たちの[r]木賃宿に押し込んでは申し訳ない。
+[k]
+
+＠G：？？？
+どうぞ、よければ私の家に[r]泊まってくれないか？
+[k]
+
+？1：では有り難くご厄介になります
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠アビゲイル
+……まぁ……！
+[k]
+
+＠アビゲイル
+本当に、伯父様！？[r]素晴らしいわ！　こんな嬉しいことはないわ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace F 4]
+[charaFadein F 0.1 0]
+[charaFace G 0]
+[charaFadein G 0.1 2]
+
+＠G：？？？
+アビゲイル。[r]浮かれるのもいい加減にしなさい。
+[k]
+
+＠G：？？？
+お前は友人を危険に[#晒:さら]したのだよ。[r]家に戻ったら、すぐに部屋に行くのだ。
+[k]
+
+＠G：？？？
+明日の朝食と昼食は水だけとする。
+[k]
+
+＠G：？？？
+もちろん、私が良いと言うまで、[r]客人たちとお喋りをするのは禁止だ。
+[k]
+
+＠アビゲイル
+……はい……。[r]わかりました……。言う通りにします。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠G：？？？
+……そう、申し遅れた。
+[k]
+
+＠G：？？？
+私は学者だ。亡くなった妹夫婦の娘のアビゲイルを[r]引き取り、養育している。
+[k]
+
+＠カーター
+名を、ランドルフ・カーターという。
+[k]
+
+[charaFace G 2]
+
+＠カーター
+随分と冷え込んできた。話は明日だ。[r]ひとまずベッドで旅の疲れを癒やしてくれ。
+[k]
+
+＠カーター
+ティテュバに軽い食事も用意させよう。
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

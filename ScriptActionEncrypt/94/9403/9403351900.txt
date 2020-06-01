@@ -1,0 +1,282 @@
+
+＄94-03-35-19-0-0
+
+[charaSet A 7008001 1 ベオウルフ]
+[charaSet B 98006000 1 アナウンス]
+[charaSet C 98006000 1 エネミー]
+[charaSet D 98002000 1 フォウ]
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[scene 20800]
+
+[fadein black 2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+＠ベオウルフ
+[tVoice ValVoice_700800 0_V010]
+あらよっと！[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.5]
+
+[se bac10]
+[effect bit_talk_13]
+[wt 0.1]
+[charaShake C 0.01 2 2 0.5]
+[wt 0.3]
+
+[charaSpecialEffect C enemyErasure]
+[wt 0.5]
+[se ad18]
+[wt 1.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wt 0.5]
+
+＠[51d4ff]アナウンス[-]
+[tVoice ValVoice_700800 0_V020]
+[51d4ff]エネミー、撃破しました。[-][r][51d4ff]全標的掃討完了。[-][wait tVoice]
+[k]
+
+[charaFadeout C 0.1]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ベオウルフ
+[tVoice ValVoice_700800 0_V030]
+へい、一丁あがりっと。[r]マスター、アンタはもうすぐ飯の時間だろ。[wait tVoice]
+[k]
+
+＠ベオウルフ
+[tVoice ValVoice_700800 0_V040]
+そろそろ上がった方がいいんじゃないか？[wait tVoice]
+[k]
+
+？1：そうしよっか
+？2：お疲れ様ー！
+？！
+
+[charaFace A 1]
+
+＠ベオウルフ
+[tVoice ValVoice_700800 0_V050]
+おうよ、お疲れさん。[wait tVoice]
+[k]
+
+？1：それはともかく
+？2：チョコですよ
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+[charaFace A 0]
+
+＠ベオウルフ
+[tVoice ValVoice_700800 0_V060]
+ん？　何だコレ？[r]チョコ？　何でチョコが？[wait tVoice]
+[k]
+
+＠ベオウルフ
+[tVoice ValVoice_700800 0_V070]
+……。[r]……。[wait tVoice]
+[k]
+
+[charaFace A 2]
+＠ベオウルフ
+[tVoice ValVoice_700800 0_V080]
+あー！[r]アレか！　他の連中がキャーキャー騒いでたアレか！[wait tVoice]
+[k]
+
+＠ベオウルフ
+[tVoice ValVoice_700800 0_V090]
+バン……バレ……。[r]バレットダイ（銃弾で死ぬ）デーだっけか！[wait tVoice]
+[k]
+
+？1：全然違います
+？！
+
+[charaFace A 0]
+＠ベオウルフ
+[tVoice ValVoice_700800 0_V100]
+ぬ、違うか。[r]まあいいや、ともかくチョコかチョコ！[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠ベオウルフ
+[tVoice ValVoice_700800 0_V110]
+ははは、頂こう！[wait tVoice]
+[k]
+
+
+[se ad217]
+[seStop ad217 0.5]
+
+＠ベオウルフ
+[tVoice ValVoice_700800 0_V120]
+甘ぇ！[r]甘ぇなコレ！　ごちそうさん！[wait tVoice]
+[k]
+
+＠ベオウルフ
+[tVoice ValVoice_700800 0_V130]
+ん？　食っちゃ悪かったか？[r]別にいいんだろ？　ははははは、そうだな。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠ベオウルフ
+[tVoice ValVoice_700800 0_V140]
+折角だから、こっちもプレゼントをくれてやろう。[r]そうさな……ちっとばかり、部屋で待ってな！[wait tVoice]
+[k]
+
+[messageOff]
+
+[wipeout leftToRight 1.0 1.0]
+[wait wipe]
+
+[charaFadeout A 0.4]
+
+[wt 1.0]
+
+[scene 10400]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+＠フォウ
+[tVoice ValVoice_700800 0_V150]
+フォウ……。[wait tVoice]
+[k]
+
+？1：おなかすいた……
+？！
+
+＠フォウ
+[tVoice ValVoice_700800 0_V160]
+……！[r]フォウ、フォウ、フォウ！[wait tVoice]
+[k]
+
+[charaFadeout D 0.1]
+[messageOff]
+
+[se ad8]
+[wait se ad8]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠ベオウルフ
+[tVoice ValVoice_700800 0_V170]
+おっと悪い悪い、待たせちまったな。[r]そらよ！[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+
+？1：ステーキ！？
+？！
+
+＠ベオウルフ
+[tVoice ValVoice_700800 0_V180]
+おう、付け合わせはエミヤのあんちゃんだが、[r]肉は俺が焼いたぞ。[wait tVoice]
+[k]
+
+[wt 0.3]
+
+？1：ンマーイ！
+
+[charaFace A 1]
+
+＠ベオウルフ
+[tVoice ValVoice_700800 0_V190]
+おう、食え食えもっと食え。[r]獲ってきた甲斐があったってモンだ！[wait tVoice]
+[k]
+
+？2：味に目覚めたァァ！
+
+[charaFace A 1]
+
+＠ベオウルフ
+[tVoice ValVoice_700800 0_V200]
+いや、俺ぁ肉を焼いただけでソースはブーディカの[r]姉さんが作ってくれたんだがな！[wait tVoice]
+[k]
+
+？！
+
+＠ベオウルフ
+[tVoice ValVoice_700800 0_V210]
+おう、実にいい食べっぷりだったぜ。[wait tVoice]
+[k]
+
+？1：ところでこれ、どこの部位？
+？！
+
+
+＠ベオウルフ
+[tVoice ValVoice_700800 0_V220]
+喉の部分だな。[r]あいつらブレスを吐くから、喉が一番鍛えられてて美味ぇんだ。[wait tVoice]
+[k]
+
+？1：……今、なんと？
+
+？2：……何の、お肉、です？
+？！
+
+[charaFace A 0]
+＠ベオウルフ
+[tVoice ValVoice_700800 0_V230]
+ん？[wait tVoice]
+[k]
+
+＠ベオウルフ
+[tVoice ValVoice_700800 0_V240]
+ドラゴンはブレスを吐くだろ？[r]だから、喉が一番鍛えられてて美味いんだって。[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠ベオウルフ
+[tVoice ValVoice_700800 0_V250]
+そんなに喜んでくれるたぁ、作った甲斐があったぜ！[wait tVoice]
+[k]
+
+？1：まあ
+？2：美味しいからいいや！
+？！
+
+＠ベオウルフ
+[tVoice ValVoice_700800 0_V260]
+おー、食え食え！[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+[soundStopAll]
+[end]
+

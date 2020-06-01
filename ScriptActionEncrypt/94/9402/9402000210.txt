@@ -1,0 +1,376 @@
+
+
+＄94-02-00-02-1-0
+
+
+
+
+[soundStopAll]
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 2021001 1 節分大将]
+[charaSet C 98111500 1 ダ・ヴィンチ]
+[charaSet D 2021000 1 節分女将]
+
+[charaSet G 98115000 1 エフェクト用]
+[charaSet H 98115000 1 エフェクト用]
+
+[scene 37300]
+[se ad173]
+[wt 0.2]
+[se ad60]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+
+[seStop ad60 1.0]
+[seStop ad173 1.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+？1：まだ塔を攻略してる途中だけど
+？2：どうしてこんなところに？
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+
+＠節分大将
+はい。大将としてはやはり、他のサーヴァントの方々の[r]疲労度にも気をかけねばならないと思いまして。
+[k]
+
+＠節分大将
+それを軽減する方策がないかと[r]考えておりましたところ……
+[k]
+
+＠節分大将
+ひとつばかり想到いたしましたので、[r]ご足労いただいた次第です。
+[k]
+
+[charaFace B 1]
+＠節分大将
+……このあたりがよさそうですね。[r]それでは、しばしお目汚しを[line 3]
+[k]
+
+[messageOff]
+[charaDepth H 10]
+[se ad39]
+[imageSet E back10001 1]
+
+[charaScale E 1.01]
+
+[charaDepth E 10]
+
+[charaPut E 0,-200]
+[charaFadeTime E 1.5 0.5]
+[wt 0.4]
+[wt 1.5]
+[charaFadeout B 0.1]
+[wt 0.05]
+[charaPut H 1200,1200]
+[wt 0.5]
+
+？1：へ？
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.05]
+[charaPut H 1]
+[charaEffect H bit_talk_36]
+[se bas1]
+[charaPut H 1]
+[wt 0.5]
+[fadeout white 1.0]
+[wait fade]
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop H bit_talk_36]
+[wt 0.5]
+
+[fadein white 0.1]
+[wait fade]
+
+[charaFace B 2]
+
+＠節分大将
+はぁぁぁぁぁぁっ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad226]
+[shake 0.05 5 4 0.3]
+[effect bit_talk_explosion_triple]
+[wt 0.5]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[wt 1.0]
+
+[effect bit_talk_rain01]
+[wt 0.5]
+
+[effectStop bit_talk_rain01]
+
+[wt 2.0]
+
+？1：あっつーいっ！？
+？！
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠節分大将
+あっ！？　し、失礼いたしました、マスター！[r]気をつけてはいたのですが、思いのほか岩盤が頑丈で……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……岩盤？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠節分大将
+はい、マシュ殿、マスター。[r]どうぞご覧ください。そろそろ湧き出てまいります。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[scene 53100]
+
+[charaPut H 0,-100]
+[charaEffect H bit_talk_40]
+
+[cameraMove 0 20,0 1.5]
+
+[fadein black 1.0]
+[cameraMove 3.0 -20,0 1.5]
+[wait fade]
+
+[se ade150]
+[wt 0.5]
+
+[se ade151]
+[seVolume ade151 0 0]
+
+[wt 1.0]
+[seVolume ade151 0 1.0]
+
+[wt 0.5]
+[fadeout black 0.5]
+[wait fade]
+
+[cameraHome 0]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaPut G 1]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 0,-90]
+
+＠ダ・ヴィンチ
+なんとまあ、これは……。
+[k]
+
+？1：お、温泉だー！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠節分大将
+滞っていた泉脈に[#活を入れました]。[r]疲労回復といえば温泉、温泉といえば疲労回復です。
+[k]
+
+＠節分大将
+これは霊泉ですから、サーヴァントにも[r]一定の効果が見込めるはずでございます。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-90]
+
+＠ダ・ヴィンチ
+ふむ。[r]塔の戦闘で[#疲れ:酔い]が溜まったサーヴァントも、
+[k]
+
+＠ダ・ヴィンチ
+これに浸かって心身を癒せば復帰が早くなるかも、[r]というコトか……いいね！
+[k]
+
+[charaFace C 2]
+
+＠ダ・ヴィンチ
+というか私も仕事をホームズに任せて、[r]今すぐそこで心身ともに癒されたいな！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠節分大将
+そう……皆様が一刻も早く活力を取り戻せるよう[r]お世話をするのも私の勤めと心得ます。
+[k]
+
+＠節分大将
+湯がぬるい、熱すぎる、等々の諸問題にも対応すべく、[r]ここでは装束を変えておきましょう。
+[k]
+[messageOff]
+
+[charaMove B 0,-30 0.3]
+[charaFadeout B 0.3]
+[wt 0.5]
+[se ad77]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 0,-30]
+[charaMove D 1 0.3]
+[wt 1.0]
+
+
+[charaFace D 1]
+
+＠節分女将
+ここでの私は節分[#女将:おかみ]。この霊泉を管理するものに[r]ございます。温泉卵だって作れます。
+[k]
+
+＠節分女将
+マスターもぜひお浸かりくださいませ。[r]お背中をお流しいたしましょう。
+[k]
+
+＠節分女将
+……いえ、私は分かっております。
+[k]
+
+＠節分女将
+今世における[#貞操観念:ていそうかんねん]その他もろもろようく分かります。[r]男湯と女湯はきちんと分けますゆえ、ご心配なく。
+[k]
+
+[charaFace D 0]
+
+＠節分女将
+どちらでもない方、どちらかはっきりさせたくない方、[r]そしてアストルフォ殿には、
+[k]
+
+＠節分女将
+少し離れた場所に天幕付きのどらむ缶風呂を[r]別途ご用意いたします。
+[k]
+
+＠節分女将
+強制という訳ではありませんが、[r]何かの助けになるようでしたらお使いください。
+[k]
+
+＠節分女将
+ああ、乗騎のかた用の湯も作っておいたほうがよろしい[r]ですね……？　まだまだ準備すべき事は多そうです。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-90]
+
+＠ダ・ヴィンチ
+え[se ad172]ーと、[wt 0.3]ここをこうしてこう、[wt 0.3][seStop ad172][wt 0.2][se ad15]と。[r]さすが私、いつものように天才だ。
+[k]
+
+＠ダ・ヴィンチ
+映像フィルターを設定したよ。[r]もし何かの拍子にそこの光景がカルデアに届いてきても、
+[k]
+
+＠ダ・ヴィンチ
+こちらのモニター上では自動で画像処理を行って[r]服を着た姿に仮想的に変換される。
+[k]
+
+＠ダ・ヴィンチ
+風情はないが倫理のためだ、仕方ない[line 3]
+[k]
+
+[charaFace C 2]
+
+＠ダ・ヴィンチ
+おっとMr.ムニエル、コンソールに落とした涙は[r]拭いておきたまえ。後でトラウマになるからね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ええと、背後から哀しい[#慟哭:どうこく]が届いてきますが、[r]それは聞こえなかった事にして、ですね。
+[k]
+
+[charaFace A 1]
+
+＠マシュ
+ともあれ、現地で英気を養えるポイントができたのは[r]非常に大きな前進かと思います。
+[k]
+
+＠マシュ
+みなさんの疲労と休息のタイミングを勘案しつつ、[r]少しずつ塔を攻略していきましょう、マスター！
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[soundStopAll]
+[end]

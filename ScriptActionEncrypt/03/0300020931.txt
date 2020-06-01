@@ -1,0 +1,156 @@
+
+＄03-00-02-09-3-1
+[soundStopAll]
+
+[charaSet A 8001400 1 マシュ]
+[charaSet B 98002000 1 フォウ]
+[charaSet C 2031001 1 ナポレオン]
+[charaSet D 1098123320 1 コヤンスカヤ]
+
+[scene 60900]
+
+[bgm BGM_EVENT_80 0.1]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.5]
+
+[se ad608]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[cueSe Battle bac234]
+[shake 0.05 1 4 1.0]
+[effect bit_talk_impactlanding]
+[wt 3.0]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+退避経路、確保できました！[r]今です、マスター！
+[k]
+
+？1：全力、てったーい！
+？2：オレルス・ボード、最大噴射だ！
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[charaMoveReturn B 0,10 0.3]
+
+＠フォウ
+フォウ、フォーウ！[wait charaMove B][charaMoveReturn B 0,10 0.3][r]ザマフォーーウ！
+[k]
+
+[messageOff]
+[wait charaMove B]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[effect bit_talk_42 0,0 H]
+[wt 0.2]
+
+[wipeout rectangleStripLeftToRight 0.3 1]
+[bgmStop BGM_EVENT_80 2.5]
+[se ade122]
+[wait wipe]
+
+[effectStop bit_talk_42]
+
+[wt 1.0]
+[seStop ade122 1.0]
+
+[scene 10000]
+
+[wipein rectangleStripLeftToRight 0.1 1]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 60900]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[wt 0.8]
+[charaFace D 7]
+[wt 0.4]
+
+＠コヤンスカヤ
+……逃げられましたか。[bgm BGM_EVENT_81 0.1][r]まあ、力試しとしては及第点といたしましょう。
+[k]
+
+＠コヤンスカヤ
+逃げ足の速さだけならもう一級品ですけどね。[r]蹴散らすや否や魔術スキーで加速とか、何なんです？
+[k]
+
+＠コヤンスカヤ
+とはいえ狙撃不可能な距離ではない、ですが。
+[k]
+
+[messageOff]
+[charaFace D 4]
+[wt 1.2]
+[charaFace D 17]
+
+＠コヤンスカヤ
+今回はこのあたりで止め、が賢い[#獣:ケモノ]というもの。[r]この北欧で手に入るものはすべて手に入りましたし。
+[k]
+
+＠コヤンスカヤ
+後は人間同士の、[#擦:す]った[#揉:も]んだの後始末。[r]チップス片手に観客席に回るとしましょうか。
+[k]
+
+[charaFace D 16]
+
+＠コヤンスカヤ
+カルデアもクリプターも同じ人間。[r]近くにいるだけで虫酸が走るというもの。
+[k]
+
+＠コヤンスカヤ
+[#私:ワタクシ]はどちらの味方でもありませんが……[r]アナタは少しだけ例外です、オフェリア。
+[k]
+
+＠コヤンスカヤ
+アナタの破滅願望は見応えがある。
+[k]
+
+＠コヤンスカヤ
+無自覚な加害者。自分で気がつかないうちに[r]すべてを台無しにする、可哀想な[#被害者:スケープゴート]。
+[k]
+
+[charaFace D 21]
+
+＠コヤンスカヤ
+好きではないけど、[r]そういう人間を見るのは楽しいわ。
+[k]
+
+＠コヤンスカヤ
+この[#異聞帯:ロストベルト]の美しさは薄氷の上のもの。[r]アナタの甘さで、それを知らしめてあげなさい。
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_81 1.5]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,194 @@
+
+
+＄94-04-49-01-2-1
+
+[soundStopAll]
+
+[skip false]
+
+[branchQuestNotClear lblNotClear1 3000320 4]
+[label lblClear1]
+[flag IsGirl true]
+[branch lblIsClearConf1]
+[label lblNotClear1]
+[flag IsGirl false]
+[label lblIsClearConf1]
+
+[skip true]
+
+[charaSet A 6031001 1 刑部姫]
+[charaSet B 7027300 1 アマゾネスＣＥＯ_普通]
+[charaSet C 1098119600 1 アマゾネスＣＥＯ_ろくろ]
+[charaSet E 99502600 1 マシュ]
+[charaSet J 5009000 1 エフェクト用]
+
+[branch lblNotGirl1 IsGirl false]
+[label lblGirl1]
+[charaSet D 1098124510 1 ダ・ヴィンチ]
+[branch lblIsGirlConf1]
+[label lblNotGirl1]
+[charaSet D 98111500 1 ダ・ヴィンチ]
+[label lblIsGirlConf1]
+
+[scene 90100]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠刑部姫
+つーかーれーたー。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠マシュ
+お疲れ様でした……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠B：アマゾネスＣＥＯ
+よし、合格。[r]あれだけやって五体が砕けていないとは素晴らしい。
+[k]
+
+[charaFace B 11]
+
+＠B：アマゾネスＣＥＯ
+そちらの会社名は、カルデアとか言ったか？
+[k]
+
+＠B：アマゾネスＣＥＯ
+我がアマゾネス・ドットコム初のアウトソーシング相手だ。[r]ホームページの取引企業リストに載せておこう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 0]
+[branch lblNotGirl2 IsGirl false]
+[label lblGirl2]
+[charaFadein D 0.1 1]
+[branch lblIsGirlConf2]
+[label lblNotGirl2]
+[charaFadein D 0.1 0,-90]
+[label lblIsGirlConf2]
+
+＠ダ・ヴィンチ
+それで、具体的には[r]どういう形で仕事をすることになるのかな？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠B：アマゾネスＣＥＯ
+フフフ……心配はいらない。[r]気にしているのは我ら二社が、
+[k]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth C 1]
+[charaDepth B 2]
+[charaFadeout B 0.2]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[charaEffect C bit_talk_41]
+[se ad186]
+
+＠C：アマゾネスＣＥＯ
+ウィン・ウィンの関係！
+[k]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth C 2]
+[charaEffectDestroy C]
+[charaFadeout C 0.2]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠B：アマゾネスＣＥＯ
+になれるかどうか、ということだろう？[r]ノープロブレムだ。
+[k]
+
+[charaFace B 12]
+
+＠B：アマゾネスＣＥＯ
+業務委託相手とは[#一心同体:いっしんどうたい]の運命共同体、[r]もはや家族や戦友のような間柄と言える。
+[k]
+
+＠B：アマゾネスＣＥＯ
+そちらの労働環境も無論、アマゾネス・ドットコムの誇る[r][#意識:パワー]高いワークスタイルに合わせてもらうつもりだ。
+[k]
+
+[charaFace B 1]
+
+＠B：アマゾネスＣＥＯ
+安心で安全で、楽しく、しかもやりがいのある仕事を[r]生み出せる最高の環境だと自負しているぞ。グーだ。
+[k]
+
+[charaFace B 11]
+
+＠B：アマゾネスＣＥＯ
+そうだな。[r]さしあたっては[line 3]
+[k]
+
+＠B：アマゾネスＣＥＯ
+もう使われていないようだし、ここをアマゾネス・[r]ドットコムの新たな支店にさせてもらうとするか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[bgmStop BGM_EVENT_2 2.0]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠刑部姫
+なるほどねえ……………………。
+[k]
+
+[charaFace A 8]
+
+＠刑部姫
+ちょっと待って！？
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

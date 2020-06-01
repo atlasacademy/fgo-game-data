@@ -1,0 +1,206 @@
+
+
+＄91-10-09-02-2-0
+
+[soundStopAll]
+
+[charaSet A 1009001 1 モードレッド]
+[charaSet B 98084000 1 粛清騎士１]
+[charaSet C 98084000 1 粛清騎士２]
+[charaSet D 98084000 1 粛清騎士３]
+
+[scene 20730]
+[cameraFilter gray]
+[effect bit_sepia01]
+[fadein black 1.5]
+[wait fade]
+
+[se ad16]
+[wt 1.5]
+[effect bit_talk_kengekiall02]
+[se ad33]
+[wt 1.5]
+[effect bit_talk_13]
+[se ad170]
+[wt 1.5]
+[effect bit_talk_v_slash01]
+[se ad32]
+[seStop ad16 1.0]
+[wt 1.0]
+[bgm BGM_EVENT_1 0.1]
+
+＠
+[line 3]幾人斬ったか、覚えてもいない。
+[k]
+
+＠
+[line 3]幾人[#屠:ほふ]ったか、数えてもいない。
+[k]
+
+＠
+ただ、斬って、斬って、斬りまくった。
+[k]
+
+＠
+別に[#雑兵:ぞうひょう]共に憎しみなんて抱いちゃいない。
+[k]
+
+＠
+だが、それがアーサー王の手勢であるならば、[r]それは王の手足であり指先だ。
+[k]
+
+＠
+ならば、斬る。
+[k]
+
+＠
+[#一切合切:いっさい がっさい]斬って落とす。
+[k]
+
+＠
+[line 3]さぁ、どうだ！　偉大なるアーサー王！
+[k]
+
+＠
+貴方の国はこれで終わりだ！[r]貴方の伝説はこれで終わりだ！
+[k]
+
+＠
+全て[line 3]全て！[r]他ならぬオレが終わらせた！
+[k]
+
+＠
+オレが憎いだろう！[r]オレが忌まわしいだろう！
+[k]
+
+＠
+[#怨嗟:えんさ]を寄越せ。憤激を寄越せ。[r]敵意を！　殺意を向けてみろ！
+[k]
+
+＠
+オレを憎め！[r]オレを忌め！
+[k]
+
+＠
+オレを[line 3]
+[k]
+
+＠
+見てくれよ、父上……！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_1 2.0]
+[fadeout black 2.0]
+[wait fade]
+[cameraFilter normal]
+[effectStop bit_sepia01]
+
+[scene 20730]
+[wt 1.0]
+[effect bit_talk_haboob_01]
+[fadein black 2.0]
+[wait fade]
+
+[se ad2]
+
+？1：…………
+？！
+
+？1：……どこだろう、ここ
+？2：……昨日の夢と随分違うのですが？
+？！
+
+[seStop ad2 1.0]
+[effectStop bit_talk_haboob_01]
+[wt 1.5]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+[bgm BGM_EVENT_2 0.1]
+＠モードレッド
+マスター！
+[k]
+
+＠モードレッド
+ハッ、本当に来やがったな、この物好きめ！
+[k]
+
+？1：それはいいんだけど……
+？2：ここはどこ？
+？！
+
+[bgmStop BGM_EVENT_2 0.7]
+[charaFace A 5]
+＠モードレッド
+残念だが、楽しいおしゃべりは後回しだ、マスター。[r][line 3]何かが近づいてきやがる。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.4]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[se ad166]
+[charaTalk off]
+[charaFadein B 0.4 -250,0]
+[charaFadein C 0.4 50,0]
+[charaFadein D 0.4 306,0]
+[charaMove B 0 0.4]
+[charaMove C 1 0.4]
+[charaMove D 2 0.4]
+[wait charaMove B]
+[wt 1.5]
+[seStop ad166]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaTalk on]
+[wt 0.4]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_3 0.1]
+＠モードレッド
+こいつらは[line 3]。
+[k]
+
+[charaFace A 2]
+＠モードレッド
+へっ、そういうことかよ。
+[k]
+
+＠モードレッド
+どうりで見覚えがあるはずだ。[r]まったく、昨日に続き悪趣味な夢を見せてくれるな。
+[k]
+
+
+＠モードレッド
+[line 3]いいぜ、来いよボンクラ共。
+[k]
+
+＠モードレッド
+円卓の騎士が一人、モードレッドの力、[r]心ゆくまで味わいな！
+[k]
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

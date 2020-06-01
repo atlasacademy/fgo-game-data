@@ -1,0 +1,629 @@
+
+
+
+
+
+＄91-70-25-01-2-0
+
+[soundStopAll]
+[charaSet A 7025000 1 土方]
+[charaSet B 1098118900 1 敵軍]
+[charaSet C 98006300 1 隊士]
+
+[imageSet D cut104_text27 1]
+[charaSet E 98111500 1 エフェクト用ダミー]
+
+[charaEffect E bit_talk_41]
+[charaPut E 0,-2000]
+
+[bgm BGM_EVENT_3 0.1 0.7]
+
+[scene 47000]
+[fadein black 1.0]
+[wait fade]
+
+[se ad647]
+[seVolume ad647 0.3 0.7]
+[wt 1.5]
+[se bac7]
+[wt 0.3]
+[se bac6]
+[wt 0.4]
+[se bac5]
+[se ad161]
+
+[seStop ad647 1.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_3 0.5 1.0]
+
+＠敵軍
+なんだこの異様な強さは！？　話が違うではないか！
+[k]
+
+＠敵軍
+これが幕軍の残党だと！？
+[k]
+
+[messageOff]
+[wt 0.2]
+
+[se bac135]
+[effect bit_talk_h_slash01]
+
+[wt 0.9]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠土方
+幕軍じゃねぇ、俺たちは……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale A 1.2]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-10]
+
+[se ad35]
+
+[charaPut E 0,100]
+
+＠土方
+[f large]新選組だ！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut E 0,-2000]
+[charaScale A 1.0]
+
+＠敵軍
+し、新選組……だと！？
+[k]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠土方
+敵は崩れた、片っ端からたたっ斬れ！！
+[k]
+
+＠土方
+新選組、前進！！
+[k]
+
+[messageOff]
+[se ad647 0.3 0.5]
+
+[wt 2.0]
+
+[fadeout black 1.0]
+[seStop ad647 1.0]
+[bgmStop BGM_EVENT_3 1.0]
+[wait fade]
+[charaFadeout A 0.1]
+[wt 0.5]
+[scene 47001]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_50 0.1]
+
+[wt 0.5]
+
+[se ad413]
+[seVolume ad413 0 0.5]
+[seVolume ad413 1.0 0.8]
+[wt 2.5]
+
+[seStop ad413 1.0]
+[wt 1.0]
+
+＠隊士
+久々の大勝利ですね副長！
+[k]
+
+＠隊士
+いや、いまや陸軍奉行並でしたか？
+[k]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠土方
+その呼び方はよせ、どうも据わりがわりぃ。[r]今まで通り、副長で構わん。
+[k]
+
+＠隊士
+[#蝦夷:え　ぞ]に来た頃はどうなるかと思いましたが、[r]これなら薩長の連中も追い返せるかもしれませんね。
+[k]
+
+＠土方
+ああ、俺たちがいるかぎり、この二股口は抜かせねぇ。[r]薩長の奴らは一人たりとも箱館の地は踏ません。
+[k]
+
+＠土方
+おまえたちも少ない手勢でよくやってくれた。
+[k]
+
+＠土方
+褒美をたんまり弾みたいところだが、[r]今日のところは酒で勘弁してくれ。
+[k]
+
+＠隊士
+こいつはありがたい！[r]今はこれが一番うれしい褒美ですよ。
+[k]
+
+＠土方
+おいおい、あまり飲んで規律を乱されても困る。[r]今日のところは一杯だけにしてくれよ。
+[k]
+
+＠隊士
+こいつは手厳しい、流石は鬼の副長といった所ですな！[r]はっはっはっは！
+[k]
+
+[messageOff]
+
+[wipeout rollRight 1.5 0.5]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.8]
+[wipein rollLeft 1.5 0.5]
+[wait wipe]
+[wt 0.4]
+
+
+[se ad413]
+[seVolume ad413 0.3 0.5]
+
+[wt 2.0]
+
+[seStop ad413 1.0]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠土方
+おう、新入り。おまえも飲んでるか？
+[k]
+
+？1：変わりましたね、土方さん
+？2：変わりませんね、土方さん
+
+？！
+
+[charaFace A 0]
+＠土方
+そうか？
+[k]
+
+[charaFace A 4]
+＠土方
+…………。
+[k]
+
+＠土方
+……いや、そうかもな。
+[k]
+
+[charaFace A 7]
+＠土方
+俺は明日、[#五稜郭:ごりょうかく]に戻り、増援の手はずをつけてくる。
+[k]
+
+＠土方
+おまえもついてこい、一つ頼みたいことがある。
+[k]
+
+？1：わかりました
+？2：頼み……、ですか？
+
+？！
+
+[charaFace A 0]
+＠土方
+ああ、昔からの新選組の生き残りも俺やおまえ、[r]もうほんの一握りだ。
+[k]
+
+＠土方
+そのおまえに頼みたい事がある。
+[k]
+
+[messageOff]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_50 1.5]
+[wait fade]
+[charaFadeout A 0.1]
+[scene 10000]
+
+[charaFadein D 0.1 30,-210]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[wait touch]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+[charaSet A 7025001 1 土方]
+
+[scene 46801]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠土方
+[line 3]おまえは江戸に戻れ。
+[k]
+
+＠土方
+日野にある俺の家にこれまでの戦況を伝えてくれ。
+[k]
+
+？1：そんな……
+
+？！
+
+＠土方
+手紙とそうだな……、あとこの写真も持ってけ。
+[k]
+
+[charaFace A 8]
+＠土方
+フン、我ながら男前に写ってるじゃねぇか。[r]こういうのも悪くないな。
+[k]
+
+？1：最後までお供します！
+
+？！
+
+[charaFace A 9]
+＠土方
+法度を[#違:たが]えるものは俺が斬る！
+[k]
+
+？1：…………
+
+？！
+
+[charaFace A 7]
+＠土方
+…………。
+[k]
+
+[charaFace A 8]
+＠土方
+日野へ行けば俺の親類に面倒を見てもらえる。[r]気を付けて行けよ、新入り。
+[k]
+
+[charaFace A 0]
+＠土方
+……いや、今更新入りってのは変な話だな。
+[k]
+
+＠土方
+おまえの名前、たしか市村……、
+[k]
+
+[charaFace A 7]
+＠土方
+…………。
+[k]
+
+＠土方
+いや、[%1]……、おまえか。
+[k]
+
+？1：気づいてたんですか？
+？2：これは土方さんの……、記憶……？
+
+？！
+
+[charaFace A 8]
+＠土方
+さて、どうだかな……、
+[k]
+
+＠土方
+サーヴァントの記憶なんてもんはどこまでが本当で、[r]どこまでが幻かなんて俺にも分かりゃしねぇ。
+[k]
+
+＠土方
+まあ、俺の記憶か誰の記憶かなんてことは[r]この際どうでもいい。
+[k]
+
+[charaFace A 0]
+＠土方
+もうこいつは遠い彼方の出来事だ。
+[k]
+
+＠土方
+誓いの誠、ただそれだけを胸に走ったあの頃。
+[k]
+
+＠土方
+…………。
+[k]
+
+＠土方
+だが、俺の新選組は今も死んじゃいない。
+[k]
+
+＠土方
+…………。
+[k]
+
+[charaFace A 7]
+＠土方
+さあ、もう行け…………。
+[k]
+
+＠土方
+ここから先はいつもの地獄、俺一人の新選組だ。
+[k]
+
+？1：……行くんですか？
+？2：この先は……
+
+？！
+
+[charaFace A 0]
+＠土方
+……ああ、俺は行く。
+[k]
+
+＠土方
+どんな戦場だろうと、どんな地獄だろうと、[r]俺の誠は倒れることはない。
+[k]
+
+[charaFace A 7]
+＠土方
+[line 3]俺があるところが新選組だ。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_11 1.5]
+[wait fade]
+[charaFadeout A 0.1]
+[imageSet C cut104_text28 1]
+
+[imageSet D cut104_text29 1]
+
+[imageSet E cut104_text30 1]
+
+[imageSet F cut104_text31 1]
+
+[imageSet G cut104_text32 1]
+
+[imageSet H cut104_text33 1]
+
+[scene 10000]
+[wt 1.0]
+
+[charaFadein C 0.1 220,-300]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+[wait touch]
+
+[charaFadeout C 0.4]
+[wt 1.0]
+
+[charaFadein D 0.4 0,-210]
+
+[wt 1.5]
+[wait touch]
+
+[charaFadeout D 0.4]
+[wt 1.0]
+
+[charaFadein E 0.4 0,-210]
+
+[wt 1.5]
+[wait touch]
+
+[charaFadeout E 0.4]
+[wt 1.0]
+
+[charaFadein F 0.4 50,-210]
+
+[wt 1.0]
+[wait touch]
+
+[charaFadeout F 0.4]
+[wt 1.0]
+
+[charaFadein G 0.4 0,-210]
+
+[wt 1.0]
+[wait touch]
+
+[charaFadeout G 0.4]
+[wt 1.0]
+
+[charaFadein H 0.4 50,-210]
+
+[wt 1.0]
+[wait touch]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+[charaSet A 7025000 1 土方]
+[charaSet C 98006200 1 亡霊]
+[charaSet D 98006200 1 亡霊1]
+[charaSet E 98006200 1 亡霊2]
+
+[scene 40800]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠隊士
+無茶です、土方さん！　死にに行くようなもんだ！
+[k]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠土方
+うるせぇ！　ここで負けたら地下の近藤さんに[r]合わせる顔がねぇ！！
+[k]
+
+＠土方
+いいか、下がるやつは俺が斬る！
+[k]
+
+＠土方
+斬[messageShake 0.05 4 4 0.2]れっ、[wt 0.5][messageShake 0.05 4 4 0.2]進め！[wt 0.5]　[messageShake 0.05 4 4 0.2]斬れっ！！[wt 0.5]　[messageShake 0.05 4 4 0.2]進めぇっ！！！！
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[se ad647]
+[seVolume ad647 0.3 0.7]
+[wt 1.5]
+[seStop ad647 0.5]
+[wt 1.2]
+
+[charaTalk C]
+[charaFace C 0]
+[se ad354]
+[seVolume ad354 0.5 0.5]
+[charaFadein C 0.4 1]
+[wt 0.4]
+[seStop ad354 0.8]
+＠亡霊
+新…選組……？
+[k]
+
+＠亡霊
+新[messageShake 0.05 4 4 0.4]選組……っ！
+[k]
+
+[messageOff]
+
+[charaTalk D]
+[charaFace D 0]
+[se ad354]
+[seVolume ad354 0.5 0.5]
+[charaFadein D 0.4 -300,0]
+[wt 0.4]
+[seStop ad354 0.8]
+＠D：亡霊
+恨めしや、新選組……、口惜しや、新選組……！
+[k]
+
+[messageOff]
+[charaTalk E]
+[charaFace E 0]
+[se ad354]
+[seVolume ad354 0.5 0.5]
+[charaFadein E 0.4 300,0]
+[wt 0.4]
+[seStop ad354 0.8]
+＠E：亡霊
+貴様は……、貴様は……！
+[k]
+
+[charaTalk off]
+＠亡霊
+[f large]貴様には地獄すら生ぬるい……！！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠土方
+……フン、ようやくらしくなってきたじゃねぇか。
+[k]
+
+＠土方
+俺が行く戦場はこうじゃねぇとな。
+[k]
+
+＠土方
+……てめぇらの恨み言なんざ聞き飽きたぜ。
+[k]
+
+＠土方
+そうさ、俺の戦いはいつもこのありさまよ。
+[k]
+
+＠土方
+いつだって[#徹頭徹尾:てっとうてつび]、負け戦だ。
+[k]
+
+[messageOff]
+[charaFace A 4]
+[bgmStop BGM_EVENT_24 0.1]
+
+[bgm BGM_EVENT_91 0.1]
+[charaFace A 9]
+＠土方
+だがな！　……俺だ！
+[k]
+
+＠土方
+俺がいる限り新選組は終わらねぇ！
+[k]
+
+＠土方
+俺の誠はどんな戦場だろうが地獄だろうが[r]誰にも折ることは出来ねぇ！
+[k]
+
+＠土方
+ただひたすらに進み！
+[k]
+
+＠土方
+ただひたすらに斬るのみだ！
+[k]
+
+[charaFace A 6]
+＠土方
+[line 3]行くぞ、新選組、前進ッ！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_91 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

@@ -1,0 +1,615 @@
+
+
+
+＄94-04-01-23-1-1
+
+[soundStopAll]
+
+[charaSet A 1009002 1 モードレッド]
+[charaSet B 1008300 1 ジークフリート]
+[charaSet C 7036001 1 宮本伊織]
+[charaSet D 6007001 1 ジキル]
+[charaSet E 3039001 1 ガレス]
+[charaSet F 1040000 1 葛飾北斎]
+[charaSet G 1098176500 1 葛飾北斎_墨]
+[charaSet H 98100400 1 マシュ]
+[charaSet I 5009000 1 エフェクト用１]
+[charaSet J 5009000 1 エフェクト用２]
+
+
+[flashin once 0 0 191919FF 191919FF]
+[wt 0.1]
+
+
+[scene 80600]
+
+[charaTalk depthOff]
+[charaDepth I 7]
+[charaDepth J 8]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0 1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.2]
+
+[charaPut J 0,0]
+[charaScale J 1.4]
+[charaEffect J bit_talk_v_slash01]
+[wt 0.2]
+[se ad85]
+[wt 0.1]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[se ad170]
+
+[effect bit_talk_14]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[charaShake B 0.05 3 1 0.3]
+
+[wt 0.7]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_v_slash01]
+[charaScale J 1.0]
+
+[se ad442]
+
+[charaTalk E]
+[charaFace E 16]
+[charaFadein E 0.1 1]
+
+[wt 0.4]
+
+[charaPut J 1]
+[charaEffect J bit_talk_h_slash01 0,0 H]
+[wt 0.2]
+[se ad171]
+[wt 0.1]
+[charaFadeout E 0.1]
+
+[wt 0.3]
+
+[se ad32]
+[effect bit_talk_14]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[charaShake C 0.05 3 1 0.3]
+
+[wt 0.7]
+[charaEffect C bit_talk_quickmove]
+[charaFadeout C 0.1]
+[se ad73]
+[wt 0.5]
+
+[charaPut I 1]
+[charaEffect I bit_talk_kengekiall02]
+[charaPut J -70,50]
+[charaScale J 1.2]
+[charaEffect J bit_talk_14]
+[se ad32]
+[wt 0.3]
+[charaScale J 1.1]
+[charaPut J 60,10]
+[charaEffect J bit_talk_14]
+[se ad32]
+[wt 0.2]
+[charaScale J 1.4]
+[charaPut J -50,-20]
+[charaEffect J bit_talk_14]
+[se ad32]
+[wt 0.1]
+[charaScale J 1.0]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 5]
+[charaScale A 1.1]
+[charaFadein A 0.1 1]
+
+[se ad671]
+[charaMoveScale A 1.0 0.2]
+[charaMove A 1 0.2]
+[charaShake A 0.02 3 3 0.4]
+[wt 0.1]
+[seStop ad671 0.6]
+[wt 0.6]
+
+＠モードレッド
+…………ま、こんなトコかね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ジークフリート
+ああ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠宮本伊織
+それがいいんじゃないかしら。[r]これ以上は、双方ケガどころじゃすまなくなるわ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠モードレッド
+へえ。
+[k]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[messageOff]
+[se ade321]
+[wt 0.8]
+
+[charaFace A 1]
+＠モードレッド
+ま、そんじゃこのへんで終わりにしといてやるか。[r]そこそこ楽しかったぜ。
+[k]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaFace A 4]
+
+＠モードレッド
+……ちょっとスカッとした。[r]ふう、カジノってのはなんだか性に合わねーからなー。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ジキル
+無事に済んでなによりだ。[r]マスター、怪我はないかい。
+[k]
+
+？1：大丈夫
+
+＠ジキル
+よかった。
+[k]
+
+？2：それより三人とも、協力してくれる？
+
+＠ジキル
+ああ、それは問題ないと思うよ。
+[k]
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠モードレッド
+ストレスも多少発散できたしな。[r]約束は約束だ、オレたちもマスターに協力してやるよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠ガレス
+私は最初からそのつもりでしたよ。[r]もう、モードレッドの短気は本当によくないです。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠モードレッド
+うるせえ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠ガレス
+言葉遣い！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ジキル
+今のはセイバーがよくないな。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠モードレッド
+はぁ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠宮本伊織
+…………へえ、仲いいのねあの三人。[wt 0.7][charaFace C 10][r]喧嘩するほど仲がいい、と昔から言うものね！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ジークフリート
+そういうものか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠葛飾北斎
+なんてえか、もーどれっど殿には親しみが湧くねえ。[r]どうにも口が悪いのは江戸っ子も同じサア。
+[k]
+
+[messageOff]
+[se ade324]
+[flashin once 0.1 0.1 191919FF 19191980]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0 1]
+[charaFadeout F 0]
+[charaShake G 0.02 3 3 0.8]
+[wt 0.1]
+[flashin once 0.1 0.1 191919FF 19191980]
+[wt 1.0]
+
+＠G：葛飾北斎
+わあっぷ。モウ、なんでいとと様！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+
+[se ade312]
+[wt 0.6]
+[seStop ade312 0.4]
+[wt 0.6]
+
+[charaTalk F]
+[charaFace F 23]
+[charaFadein F 0.1 1]
+
+＠葛飾北斎
+口が悪いのを江戸のせいにするなってェ？[r]じゃあなんでい、とと様のせいにした方が[line 3]
+[k]
+
+[messageOff]
+[se ade324]
+[flashin once 0.1 0.1 191919FF 19191980]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0 1]
+[charaFadeout F 0]
+[charaShake G 0.02 3 3 0.8]
+[wt 0.1]
+[flashin once 0.1 0.1 191919FF 19191980]
+[wt 1.0]
+
+＠G：葛飾北斎
+わーっ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠モードレッド
+なんだなんだ。ははははタコが墨吹いてるぞ、おい。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ジキル
+失礼。レディ、ハンカチを使うかい？[r]僕のものでよければ……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ガレス
+ガレスのハンカチもどうぞ！[r]騎士たるものエチケットは肝要ですからね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠G：葛飾北斎
+ぺっぺっぺっ。墨が口鼻に入るったらモウ！[r]あ、ああ、なんだい西洋手拭いかい。こりゃあ悪いね。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠モードレッド
+ははははははははは！
+[k]
+
+[charaFace A 0]
+＠モードレッド
+あー笑った笑った！[r]笑ったついでに、そうだな。オマケもひとつ付けてやるよ。
+[k]
+
+？1：オマケ？
+？2：もしかして……
+
+？！
+
+＠モードレッド
+追加戦力だ。[r]まあ、なんだ。とっておきの奥の手に使えるハズだ。
+[k]
+
+[charaFace A 1]
+＠モードレッド
+特にキャメロットを落とすにはもってこいさ。[r]目には目を、歯には歯を。ってな！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ジキル
+ハンムラビ法典かい？[r]世界最古、いや、世界で二番目に古い法典だね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠モードレッド
+あーもう、混ぜっ返すなモヤシ！
+[k]
+
+[messageOff]
+[charaFace A 4]
+[wt 1.2]
+
+[charaFace A 5]
+＠モードレッド
+ともかくマスター！[r]オレたちの力は貸してやる。
+[k]
+
+＠モードレッド
+父上だけならともかく、アロハのバカどもと花畑野郎は[r]どうにも気に入らなかったしな！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 16]
+[charaFadein E 0.1 1]
+
+＠ガレス
+………………。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠モードレッド
+お。アンタも同じ気持ちか、そうかそうか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠ガレス
+ガレスは何も言ってませんよ！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ジキル
+ははは。顔に出やすいのはよく似てるね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+
+＠ガレス
+え、え、え。似てますか、ガレスとモードレッド？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠モードレッド
+似てねえよバカ！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠ジークフリート
+……俺はあの二人がどこか似ている気がするが、[r]どうだろう。マスター。
+[k]
+
+？1：似てる（小声）
+
+[charaFace B 1]
+
+＠ジークフリート
+やはりそうか。
+[k]
+
+？2：……ど、どうだろうね
+
+＠ジークフリート
+ふむ。
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠葛飾北斎
+ともかくだ。[r]これで助太刀の約定は取り付けたってことで、いいかい？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠宮本伊織
+いいはず。そうよね？
+[k]
+
+？1：オッケー！
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠マシュ
+はい。順調ですね、先輩！
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

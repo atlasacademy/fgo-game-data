@@ -1,0 +1,590 @@
+
+
+＄03-00-02-13-5-0
+[soundStopAll]
+
+
+[charaSet A 1033001 1 シグルド]
+[charaSet B 8001410 1 マシュ]
+[charaSet C 3012001 1 ブリュンヒルデ]
+[charaSet D 1098123820 1 オフェリア]
+[charaSet E 2031001 1 ナポレオン]
+[charaSet F 3033000 1 オルトリンデ]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[scene 60900]
+
+[bgm BGM_EVENT_81 0.1]
+
+[wt 0.5]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth C 3]
+[charaDepth E 2]
+[charaDepth B 1]
+
+[charaFace C 4]
+[charaFadein C 0.1 0]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+[charaFace B 14]
+[charaFadein B 0.1 2]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.8]
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaFace F 6]
+[charaFadein F 0.1 0]
+[charaFace D 12]
+[charaFadein D 0.1 2]
+
+[wt 1.8]
+
+[charaFadeout F 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠シグルド
+[line 3]この俺は、[#英霊シグルドではない]のだ。[r]戦乙女の好む英雄でさえない。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠マシュ
+！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ブリュンヒルデ
+何を……[r]言って……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠シグルド
+オフェリア。[r]限定解除、二つ目だ。
+[k]
+
+＠シグルド
+急げ。[r]この霊基ではそう長くは[#保:も]たんぞ。
+[k]
+
+[charaFace A 1]
+
+＠シグルド
+別段、俺としては構わんのだが[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠オフェリア
+……いいえ。駄目！
+[k]
+
+[charaFace D 7]
+
+＠オフェリア
+その肉体を砕かれる訳にはいかない。[r][#異聞帯:ロストベルト]にあって、アナタは我が騎士のままでいなさい。
+[k]
+
+[messageOff]
+[wt 0.8]
+[charaFace D 14]
+[wt 0.4]
+
+＠オフェリア
+[line 3]霊基強制再臨・最終限定解除。[r]立ちはだかる敵のすべてを討ち滅ぼしなさい、我が騎士。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 1.0]
+
+
+[fowardEffect bit_talk_easy_spell_r]
+[cueSe Battle bac32]
+[wt 2.0]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaPut H 1]
+[charaEffect H bit_talk_charge_red]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth H 2]
+[charaDepth A 1]
+
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+[se ad61]
+[se ad556]
+[seVolume ad556 0 0.6]
+
+[wt 2.0]
+[seStop ad61 0.5]
+[seStop ad556 0.5]
+[se ad574]
+
+
+
+[fadeout white 0.2]
+[wait fade]
+
+[charaChange A 1033002 12 fade 0.1]
+[wait charaChange A]
+
+[charaPut H 2400,2400]
+[charaEffectStop H bit_talk_charge_red]
+
+[charaTalk depthOn]
+
+[fadein white 1.0]
+[wait fade]
+
+
+[wt 1.5]
+
+＠シグルド
+限定解除。最終段階。[bgm BGM_EVENT_24 0.1][r]英霊シグルドの全性能を利用して対象の[#殲滅:せんめつ]を開始する。
+[k]
+
+[messageOff]
+[cueSe Battle bac375]
+
+[wt 1.0]
+
+＠シグルド
+ああ、体が軽い。[r]ようやく[#煩:わずら]わしい仮面も外れた。
+[k]
+
+＠シグルド
+[#是:これ]を好きこのんで[#被:かぶ]っているのだから、[r]クク。大層な[#傾:かぶ]き[#者:もの]だ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠ナポレオン
+……へえ。ソイツが真の姿って訳か、色男！
+[k]
+
+＠ナポレオン
+魔剣グラムの発光色が変わったな。[r]放たれる魔力も桁がひとつふたつ跳ね上がったと来る！
+[k]
+
+[charaFace E 7]
+
+＠ナポレオン
+はは！　こいつは何とも楽しめそうだ！[r]その眼鏡ってのもいい発想だぜ！
+[k]
+
+＠ナポレオン
+どれだけ凶暴な魔剣使いだろうと理知的に映る！[r]オレも真似したいところだ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠シグルド
+[#是:これ]か。神々の[#叡智:えいち]だそうだ。[r]フ。おまえの顔には似合うまい。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠ナポレオン
+どうかな？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠シグルド
+試してみるといい。[r]俺を殺して、[#是:これ]を取り外せればの話だ。
+[k]
+
+[messageOff]
+
+[cueSe Battle bac66]
+
+[wt 1.0]
+
+＠シグルド
+[line 3]魔剣、一閃。
+[k]
+
+[messageOff]
+[charaPut H -80,0]
+[charaScale H 1.4]
+[charaEffect H bit_talk_gram_slash_05]
+[cueSe Battle bac265]
+[wt 0.5]
+
+
+[se ad32]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaFadeout A 0.1]
+[fowardEffect bit_talk_14]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+[charaShake B 0.05 3 3 0.3]
+[wt 0.3]
+
+＠マシュ
+くっ……！[r]魔剣の斬撃と……炎！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠ナポレオン
+すまん！　回避するつもりだったが出遅れた！[r]挑発のし過ぎも考え物だ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠マシュ
+いえ！　防御間に合いましたので！[r]マスター、今のは……
+[k]
+
+？1：ルーンによる炎？
+？2：でも、何かを描いたようには見えなかった
+
+？！
+
+[charaFace B 7]
+
+＠マシュ
+は、はい。[r]ルーン魔術は文字・紋様を描くことによって、
+[k]
+
+＠マシュ
+詠唱プロセスを短縮して発動される魔術です。[r]ですが今、英霊シグルドは[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠オルトリンデ
+ルーンを……[r]描く素振りはなかった……？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+[messageOff]
+[se ad51]
+[wt 0.7]
+
+＠ブリュンヒルデ
+……………………。
+[k]
+
+[charaFace C 10]
+
+＠ブリュンヒルデ
+……貴方は、シグルド。シグルド……
+[k]
+
+[charaFace C 0]
+
+＠ブリュンヒルデ
+いいえ。[r]貴方は……[line 3]
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[bgmStop BGM_EVENT_24 1.5]
+[wait fade]
+[charaFadeout C 0.1]
+[charaFilter A silhouette 00000080]
+[scene 61900]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaPut H 1]
+[charaEffect H bit_sepia01]
+[fadein black 1.5]
+[wt 1.2]
+[bgm BGM_EVENT_79 0.1]
+[wait fade]
+
+＠
+『雪と氷は、時に命を凍えさせてしまう』
+[k]
+
+＠
+『人は、その寒さに耐えて冬を凌がねばならない』
+[k]
+
+＠
+『けれど、春の訪れのためには必要だ。[r]　大地はひとたびの眠りを求めるものなのだから』
+[k]
+
+＠
+『雪と氷を憎んではならない。[r]　いずれ、祝福と暖かな陽差しの日々は来る』
+[k]
+
+[messageOff]
+[wt 0.7]
+
+＠
+[line 3]そうですね。[r][line 3]ええ、私もそのように思います。シグルド。
+[k]
+
+＠
+[line 3]人は、私たちは待つことができる。[r][line 3]春の芽吹きを想いながら。
+[k]
+
+[messageOff]
+[wt 0.7]
+
+＠
+『そうだ』
+[k]
+
+＠
+『[#天然自然:てんねんしぜん]に在るものの多くは、[r]　ひとつの顔だけを持つものではないだろう』
+[k]
+
+＠
+『ある時は、正しくも在れば。[r]　ある時は、悪の如きありさまを見せる事もある』
+[k]
+
+＠
+『だが……』
+[k]
+
+[messageOff]
+[wt 0.7]
+
+＠
+[line 3]だが、何です？
+[k]
+
+[messageOff]
+[wt 0.7]
+
+＠
+『炎だけはいけない』
+[k]
+
+＠
+『炎には、冬の寒さを凌がせる優しき顔がある。[r]　炎には、人の営みを豊かに導く為の力がある』
+[k]
+
+＠
+『だが……[r]　当方は、きっとルーンの炎を扱う事はないだろう』
+[k]
+
+[messageOff]
+[wt 0.7]
+
+＠
+[line 3]私は、貴方にルーンの多くを与えました。
+[k]
+
+＠
+[line 3]多くの事が為せましょう。[r][line 3]人がするよりも遙かに効率よく、炎を扱えます。
+[k]
+
+＠
+[line 3]だのに、それをしないのですか？
+[k]
+
+[messageOff]
+[wt 0.7]
+
+＠
+『ああ、そうだ。[r]　半神であった君には分かり難いかもしれないが』
+[k]
+
+＠
+『人は、炎を[#畏:おそ]れねばならない。[r]　炎はすべてを[#灼:や]き尽くす故に』
+[k]
+
+＠
+『剣も、命も、想いも。[r]　時に、運命さえをも』
+[k]
+
+＠
+『だから、当方はルーンの炎だけは扱うまい』
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_79 1.5]
+[wait fade]
+[charaEffectStop H bit_sepia01]
+[charaFilter A normal 00000080]
+[charaFadeout A 0.1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 1.0]
+[scene 60900]
+[fadein black 2.0]
+[wt 1.5]
+[bgm BGM_EVENT_24 0.1]
+[wait fade]
+
+[wt 0.5]
+
+[charaFace C 2]
+
+＠ブリュンヒルデ
+シグルド……！
+[k]
+
+＠ブリュンヒルデ
+シグルド、シグルド、シグルド！[r]いいえ、違う！　彼ではない、決して彼ではない！
+[k]
+
+＠ブリュンヒルデ
+おまえは！　誰だ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠シグルド
+[line 3]いいや？[r][line 3][#正真正銘:しょうしんしょうめい]、俺はシグルドだ。ブリュンヒルデ。
+[k]
+
+[messageOff]
+[charaFace A 12]
+[se ad683]
+[seVolume ad683 0 0.4]
+[wt 1.0]
+
+＠シグルド
+ク。ククク。[r]ヒトとは[#斯様:かよう]に哀れなものか！
+[k]
+
+＠シグルド
+せめて神であれば！[r]我が魂たる炎の何たるかを知ったろうに！
+[k]
+
+
+＠シグルド
+哀れ！　哀れ！　哀れ！
+[k]
+
+＠シグルド
+クク！　その醜さ[line 3][#最早:もはや]、見るに堪えん！！
+[k]
+
+[messageOff]
+[se ad678]
+[seVolume ad678 0 0.7]
+[wt 0.2]
+
+[se ade8]
+[seVolume ade8 0 0.4]
+[charaMoveScale A 1.1 0.2]
+[charaMove A 0,15 0.2]
+[charaPut H 1]
+[charaScale H 1.1]
+[charaEffect H bit_talk_41]
+[charaPut H -30,90]
+[shake 0.05 2 4 1.0]
+
+
+[messageOff]
+[fadeout white 1.0]
+[wait fade]
+
+[charaEffectStop H bit_talk_41]
+[charaFadeout A 0.1]
+[wt 0.1]
+[scene 10000]
+
+[fadein white 1.0]
+[wait fade]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_24 1.0]
+[wait fade]
+[soundStopAll]
+[end]

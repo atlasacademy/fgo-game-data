@@ -1,0 +1,289 @@
+
+
+＄94-03-01-06-1-1
+
+
+[soundStopAll]
+
+[charaSet A 6029001 1 アサシン・パライソ]
+[charaSet B 6013001 1 ファントム]
+[charaSet C 6013001 1 ファントム・オブ・ジ・オペラ（シルエット）]
+[charaFilter C silhouette 00000080]
+[charaSet D 99502600 1 マシュ]
+[charaSet E 10008001 1 シトナイ]
+[charaSet F 6007001 1 ジキル]
+[charaSet G 5014001 1 メフィストフェレス]
+
+[charaSet H 98115000 1 エフェクト用]
+
+
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 64900]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[se ad7]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+[charaEffect H bit_talk_41]
+[wt 1.0]
+
+[bgm BGM_EVENT_3 0.5 0.3]
+
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_41]
+[charaFadeout G 0.1]
+[wt 0.2]
+
+[cueSe NoblePhantasm_501400 NP_501400_3]
+[wt 1.0]
+[cueSeStop NP_501400_3]
+
+[bgm BGM_EVENT_3 0.5 1.0]
+
+[se ad609]
+[fowardEffect bit_talk_explosion]
+[shake 0.03 4 4 0]
+[wt 1.5]
+[seStop ad609 0.5]
+[fowardEffectStop bit_talk_explosion]
+[shakeStop]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠A：[servantName 602900:アサシン・パライソ:望月千代女]
+ぬうう、爆炎で視界が……[wt 1.0][charaFace A 2]お館様！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠シトナイ
+[%1]！　後ろ！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.2]
+
+
+[charaTalk off]
+[charaDepth B 10]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 1.0]
+
+[charaFace B 0]
+[charaFadein B 1.0 1]
+[wt 1.0]
+[charaFadeout C 0.4]
+
+[wt 0.4]
+
+[charaSet E 3034002 1 茨木童子]
+
+[se bac304]
+[charaMove B 0,-5 0.2]
+[wt 0.5]
+
+[charaFace B 5]
+＠ファントム
+[line 9]クリスティーヌ。すまない。
+[k]
+
+[messageOff]
+[se ad7]
+[charaMoveScale B 1.1 0.1]
+[charaMove B 0,-20 0.1]
+[wt 0.1]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+
+[charaTalk on]
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠マシュ
+先輩！！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+[charaScale B 1.2]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-20]
+
+＠ファントム
+………………………………[wt 1.2][charaFace B 0]我が、爪は。
+[k]
+
+＠ファントム
+私は、クリスティーヌだけは抉ってはいけない。[r]私は、クリスティーヌだけは殺してはいけない。
+[k]
+
+[messageOff]
+[charaMoveScale B 1.1 0.4]
+[charaMove B 0,-20 0.4]
+[charaFadeout B 0.4]
+[wt 1.0]
+
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠茨木童子
+[line 3]何だ？[r]仮面の人が[#鉤爪:かぎづめ]をマスターに突き付けたが……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠A：[servantName 602900:アサシン・パライソ:望月千代女]
+すぐに引きました……[r]こ、これは、どういう……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ジキル
+……。[r]……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_5 0.1 1.0]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠メフィストフェレス
+おやぁ？
+[k]
+
+[charaFace G 1]
+＠メフィストフェレス
+おやおやおやぁ？　これはオカシイですねえ！[r]とってもとっても奇妙キテレツ！　[#奇想天外:きそうてんがい]マカフシギ！
+[k]
+
+＠メフィストフェレス
+おっっっっやあ？[r]有り得ない光景を[#私:わたくし]たちは見てしまいましたねえ！
+[k]
+
+[charaFace G 2]
+＠メフィストフェレス
+ジキル氏！　ジキル氏！[r]哀れなるヘンリー・ジキル氏！
+[k]
+
+[charaFace G 0]
+＠メフィストフェレス
+アナタ、マスターを失うのを相当嫌がる英霊だと[r]記憶していたんですが……
+[k]
+
+＠メフィストフェレス
+おやぁ？　おやおやおやぁ？[r]どうしてマスターの近くに立っていながら……
+[k]
+
+＠メフィストフェレス
+身を挺して暗殺者の[#鉤爪:かぎづめ]からマスターを守らないので？[r]アナタ、棒立ちじゃアリマセンカ。
+[k]
+
+[charaFace G 5]
+＠メフィストフェレス
+ははあ。[r]もしやアナタ[line 3]
+[k]
+
+[charaFace G 1]
+
+＠メフィストフェレス
+[line 6][#またですかァ]？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaSet A 6007003 1 殺人の鬼]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ジキル
+……………。[r]……………。
+[k]
+
+＠ジキル
+……………………[wt 0.7][charaFace F 2]クソッ、勢いだけじゃ誤魔化せねェか！
+[k]
+
+[messageOff]
+
+[se ade91]
+[effect bit_talk_charge_red]
+[wt 1.5]
+
+[fadeout white 1.5]
+[seStop ad429 1.5]
+[wait fade]
+[effectStop bit_talk_charge_red]
+[charaFadeout F 0.1]
+
+[se ad29]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[seStop ad29 0.5]
+
+[fadein white 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1 1.0]
+
+＠殺人の鬼
+ヒャハハハハハハ！[r]そうだよ俺だ俺様さ[line 3]殺しのアイドル、ハイド様だ！
+[k]
+
+[charaFace A 2]
+＠殺人の鬼
+[f large]こ[messageShake 0.01 3 3 0.2]こで！　[wt 0.4][messageShake 0.01 3 3 0.2]全員！　[wt 0.4][messageShake 0.01 3 3 0.3]殺してやるぜェ！！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_3 2.0]
+[wait fade]
+[soundStopAll]
+[end]

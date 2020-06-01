@@ -1,0 +1,1419 @@
+
+＄94-03-46-01-1-0
+
+[soundStopAll]
+[charaSet A 2023001 1 モリアーティ]
+[charaSet B 5038000 1 ジーク]
+[charaSet C 5038000 1 シルエット_ジーク]
+[charaFilter C silhouette 00000080]
+[charaSet D 1035001 1 ディルムッド]
+[charaSet E 1098162700 1 手下A]
+[charaSet F 1098162700 1 手下A_2]
+[charaSet G 1098162700 1 手下A_3]
+
+[charaSet H 5012001 1 エフェクト用ダミー]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_spotlight]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 1.0 1]
+[wt 1.6]
+
+＠A：？？？
+[line 3]人には誰しも未練がある。
+[k]
+
+
+[charaFace A 1]
+
+＠A：？？？
+“こうであったらいい” “こうすれば良かった”[r]そんなことは誰しも人生、一度は考える。
+[k]
+
+[charaFace A 5]
+[bgm BGM_EVENT_48 0.1]
+
+＠A：？？？
+人生に失敗がついてまわる以上、[r]気にしても仕方がないのだが[line 3]
+[k]
+
+[charaFace A 1]
+
+＠A：？？？
+まあ！[r]フツー気にするよネ！
+[k]
+
+＠A：？？？
+私もするし！
+[k]
+
+[cameraMove 15.0 0,-40 1.2]
+
+[charaFace A 0]
+＠A：？？？
+それでは今日は少しばかり、[r]未練の話をしようと思う。
+[k]
+
+＠A：？？？
+未練を[#抱:いだ]くのはいい。
+[k]
+
+＠A：？？？
+しかし、未練を無くそうとすると[r]思っていたより大変なことになる。
+[k]
+
+[charaFace A 1]
+
+＠A：？？？
+まあ、そんな面白おかしい教訓話サ！
+[k]
+
+[branchQuestClear ep1_5_user 2000118]
+[branchQuestNotClear ep1_5nc_user 2000118]
+
+[label ep1_5_user]
+
+[charaFace A 0]
+＠A：？？？
+という訳で懐かしいネ、マスター君！
+[k]
+
+[charaFace A 2]
+＠A：？？？
+アラフィフ異次元おじさん、[r]皆のジェームズ・モリアーティだヨー！
+[k]
+
+[charaFace A 3]
+
+＠モリアーティ
+え、もっと真剣にやってくれ？[r]しょうがないなァ。
+[k]
+
+[charaFace A 0]
+
+＠モリアーティ
+[line 3]我が名はジェームズ・モリアーティ。[r]犯罪界のナポレオン、[#老いた蜘蛛:オールド・スパイダー]。
+[k]
+
+[branch user_join]
+
+[label ep1_5nc_user]
+
+[charaFace A 0]
+
+＠A：？？？
+おっと、失礼。[r]初対面のマスターにペラペラペラペラと。
+[k]
+
+[charaFace A 1]
+
+＠A：？？？
+今の君には、私が誰かも不明だったか。[r]フフフ……。
+[k]
+
+[charaFace A 0]
+
+＠A：？？？
+[line 3]我が名はジェームズ・モリアーティ。[r]犯罪界のナポレオン、[#老いた蜘蛛:オールド・スパイダー]。
+[k]
+
+[branch user_join]
+
+[label user_join]
+
+
+＠モリアーティ
+そして、君のサーヴァント。
+[k]
+
+＠モリアーティ
+さて、それでは愉快な旅にご招待だ！[r]なーに、命の危険は少ししかない！
+[k]
+
+＠モリアーティ
+安心してくつろぎ、[r]未練の世界を[#廻転:かいてん]させてみようじゃないか！
+[k]
+
+[charaFace A 1]
+
+＠モリアーティ
+ワーッハッハッハッハ！
+[k]
+
+[messageOff]
+
+[wt 1.0]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_48 1.0]
+[wait fade]
+
+[scene 10000]
+
+[charaSet A 1098163000 1 モリアーティ]
+
+[cameraHome 0.1]
+[effectStop bit_talk_spotlight]
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 1.0]
+
+[effect bit_talk_07]
+[se ad12]
+[wt 4.0]
+
+[fadeout white 1.0]
+[wait fade]
+[scene 10001]
+
+[wt 1.0]
+
+[fadein white 0.1]
+[wait fade]
+
+[skip false]
+
+[scene 10000 1.5]
+[wt 1.5]
+
+
+[input selectBranch]
+[messageOff]
+[skip false]
+[bgmStop BGM_EVENT_48 0.4]
+[charaFadeout A 0.1]
+[charaSet A 1098163000 1 モリアーティ]
+[scene 10000]
+[effectStop bit_talk_spotlight]
+[wt 0.4]
+[soundStopAll]
+[maskin black 1]
+[wait mask]
+[label selectBranch]
+
+
+
+[wt 1.0]
+[movie talk_mov008]
+[wt 1.5]
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[scene 70900]
+[skip true]
+
+[wt 0.5]
+[wipein openEye 1.0 1]
+[wt 0.5]
+[wipeout openEye 0.5 1]
+[wt 1.0]
+[wipein openEye 1.0 1]
+[wait wipe]
+
+[wt 1.5]
+
+？1：久しぶりの強制レイシフト……！？
+？！
+
+[wt 0.5]
+[cameraMove 1.0 75,0 1.2]
+[wt 1.5]
+
+[cameraMove 2.0 -75,0 1.2]
+[wt 2.5]
+
+[cameraHome 1.0]
+[wt 1.5]
+
+？1：ここは一体……？
+？！
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[charaPut H 1]
+[charaEffect H bit_talk_41]
+
+[se adm22]
+＠モリアーティ
+[f x-large]グッモーニン！！
+[k]
+
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_41]
+
+？1：[&やかましい:うるさーい]！！
+？！
+
+[bgm BGM_TEITO 0.1]
+
+[charaFace A 1]
+
+＠モリアーティ
+おっと失礼こんにちは！
+[k]
+
+[charaFace A 0]
+
+＠モリアーティ
+[%1]君、[r]元気そうで何よりだ。
+[k]
+
+＠モリアーティ
+おや、『ここはどこ？』という顔だネ。
+[k]
+
+＠モリアーティ
+うん、端的に言おう。[r]我々はレイシフト迷子だ！
+[k]
+
+＠モリアーティ
+通信無し、支援なし。[r]つまりまあ、
+[k]
+
+[charaFace A 2]
+
+＠モリアーティ
+『武器は現地調達、スニークミッション開始』[r]というアレだネ！
+[k]
+
+？1：アレかー……
+
+？！
+
+[charaFace A 1]
+
+＠モリアーティ
+ああ。[#秘密情報部:Ｍ　　Ｉ　　６]の工作員もかくや、という[r]厳しさだ。丸投げにも程がある。
+[k]
+
+[charaFace A 0]
+＠モリアーティ
+だが、安心したまえマスター君。[r]私は[#この世界とこの時代を知っている]。
+[k]
+
+＠モリアーティ
+というよりむしろ、[r][#そのために喚び出された]と考えている。
+[k]
+
+？1：つまりプロフェッサーのせい？
+
+[charaFace A 4]
+
+＠モリアーティ
+……えー……有り体に言えば……[r]そうなるやも……。
+[k]
+
+？2：つまりお爺さんのせい？
+
+[charaFace A 2]
+
+＠モリアーティ
+ワタシ、マダ、アラフィフ！[r]ノー、グランパ！
+[k]
+
+？！
+
+[charaFace A 0]
+
+＠モリアーティ
+……さて、では端的に説明すると、だ。
+[k]
+
+＠モリアーティ
+我々が居るのは、ヨーロッパのとある街、[r]とある屋敷だ。
+[k]
+
+＠モリアーティ
+年代は１９世紀後半、新聞がないから[r]具体的な日付と年代までは不明だがね。
+[k]
+
+＠モリアーティ
+我々はこの屋敷で雇われている使用人、[r]バーテンダー……という設定だ。
+[k]
+
+＠モリアーティ
+ここまでは大丈夫かな？
+[k]
+
+？1：なるほど、この服は……
+？！
+
+[charaFace A 2]
+
+＠モリアーティ
+よく似合っているとも！
+[k]
+
+[charaFace A 1]
+
+＠モリアーティ
+さて……ここからが……フフフ、[r]問題なのだがネ！
+[k]
+
+[charaFace A 0]
+
+＠モリアーティ
+まあ、論より証拠だ。
+[k]
+
+＠モリアーティ
+このバーを出て、屋敷を一通り[r]見て回るとしよう。
+[k]
+
+＠モリアーティ
+ああ、基本的に叫んだり[r]誰かに話しかけたりするのはＮＧだ。
+[k]
+
+[charaFace A 6]
+
+＠モリアーティ
+……今はまだ、ネ。
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1]
+[bgmStop BGM_TEITO 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+
+[se ad311]
+[wt 0.1]
+[se ad95]
+
+[scene 70800]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1]
+[seStop ad311 1.0]
+[seStop ad95 1.0]
+[wait wipe]
+
+[wt 1.5]
+
+？1：豪華っぽい屋敷……！
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+＠モリアーティ
+うん、この屋敷の主は地元の名士でね。[r]この街の事実上の管理者とも言える。
+[k]
+
+＠モリアーティ
+いやあ、こんな豪勢な屋敷を建てるくらいだ。[r]さぞ悪どいことをやっていたんだろうネェ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠？？？
+おいおい、ミスター・モリアーティ。
+[k]
+
+＠？？？
+先祖は知らないが、俺は悪どい真似なんて、[r]記憶にないぞ。
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[se ad311]
+[charaDepth B 10]
+[charaTalk off]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 1.0]
+[seStop ad311]
+[charaFace B 0]
+[charaFadein B 0.7 1]
+[wt 0.7]
+[charaFadeout C 0.5]
+[wt 0.5]
+
+[charaTalk on]
+
+？1：（この人が……？）
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+＠モリアーティ
+ははははは、申し訳ない。[r]ただの冗談ですヨ、冗談。
+[k]
+
+？2：（ジーク！？）
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠モリアーティ
+（カルデアにいる彼とは別人だ。[r]　素知らぬ顔で話しなさい）
+[k]
+
+？！
+
+[charaFace A 0]
+
+＠モリアーティ
+[%1]君、[r]この方が我々の雇用主、ジークだ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 0.1]
+
+＠ジーク
+よろしく、[%1]。
+[k]
+
+[charaFace B 0]
+
+＠ジーク
+入ったばかりですまないが、[r]当面は忙しくなりそうだ。
+[k]
+
+＠ジーク
+君も客人に失礼のないよう、[r]行動してほしい。
+[k]
+
+[charaFace B 6]
+
+＠ジーク
+間違っても、[r][#馴れ馴れしく話しかけてはいけないからな]。
+[k]
+
+＠ジーク
+それさえ覚えていてくれれば、[r]好きに働いてくれて構わない。
+[k]
+
+[charaFace B 0]
+
+＠ジーク
+ああ、それからミスター・モリアーティ。[r]先ほど言った件、よろしく頼む。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[se ad311]
+[charaMove B -30,0 0.4]
+[charaFadeout B 0.4]
+[wt 0.4]
+[seStop ad311 1.0]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠モリアーティ
+……という訳で、あれが我々の雇用主だ。
+[k]
+
+？1：なんでジークが……？
+
+＠モリアーティ
+ああ、それについてはこの後に[r]引き合わせる客人たちを見れば理解できるサ。
+[k]
+
+？2：客人……？
+
+＠モリアーティ
+ああ、今すぐ彼らに会いに行こう。
+[k]
+
+？！
+
+[charaFace A 6]
+
+＠モリアーティ
+そして繰り返すが[line 3][r]驚いてはいけないヨ？
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_70 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+
+[scene 71000]
+[wt 1.0]
+
+[wipeFilter cinema 0.5 0]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[charaTalk off]
+
+[se ade210]
+[seVolume ade210 0 0.5]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein F 0.4 256,-50]
+[charaFadein G 0.4 -256,-50]
+[wt 0.4]
+[seStop ade210 0.3]
+[wt 0.7]
+
+[se ad60]
+[charaTalk on]
+[charaDepth D 10]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.7 0,-50]
+[wt 0.7]
+[seStop ad60]
+
+[bgm BGM_EVENT_90 0.1]
+
+＠ディルムッド
+ほう。
+[k]
+
+[charaFace D 5]
+
+＠ディルムッド
+安酒を飲むしか能の無いチンピラが、[r]この屋敷に入り込むとは。
+[k]
+
+＠ディルムッド
+嘆かわしい。[r]ジーク殿の品格が疑われるな。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaSet D 6033000 1 以蔵]
+[charaSet E 1098162900 1 手下C]
+[charaSet F 1098162900 1 手下C_2]
+[charaSet G 1098162900 1 手下C_3]
+
+[charaTalk off]
+
+[se ade210]
+[seVolume ade210 0 0.5]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein F 0.4 256,-50]
+[charaFadein G 0.4 -256,-50]
+[wt 0.4]
+[seStop ade210 0.3]
+[wt 0.7]
+
+[se ad452]
+[charaTalk on]
+[charaDepth D 10]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.7 0,-50]
+[wt 0.7]
+[seStop ad452]
+
+＠以蔵
+[line 3]ハッ。[r]歳を食っただけの老いぼれがよう抜かしよる。
+[k]
+
+[charaFace D 13]
+＠以蔵
+船にも乗れないヘタレこそ、[r]こん屋敷には、[#相応:ふさわ]しゅうないきに。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaSet D 6026001 1 燕青]
+[charaSet E 1098162800 1 手下B]
+[charaSet F 1098162800 1 手下B_2]
+[charaSet G 1098162800 1 手下B_3]
+
+[charaTalk off]
+
+[se ade210]
+[seVolume ade210 0 0.5]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein F 0.4 256,-50]
+[charaFadein G 0.4 -256,-50]
+[wt 0.4]
+[seStop ade210 0.3]
+[wt 0.7]
+
+[se ad60]
+[charaTalk on]
+[charaDepth D 10]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.7 0,-50]
+[wt 0.7]
+[seStop ad60]
+
+＠燕青
+まあまあ、まあまあ。[r]熱くなりなさんなって。
+[k]
+
+[charaFace D 0]
+
+＠燕青
+俺も、アンタたちも、[r]ジークさんに呼び出された。
+[k]
+
+[charaFace D 6]
+
+＠燕青
+つまりその時点で、品格もヘタレもない！[r]俺たちには全員、[#あの]資格があるってこと！
+[k]
+
+[charaFace D 0]
+
+＠燕青
+……で、まだ三組織とも準備が整っちゃいない。[r]到着していないんだろう？
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaSet E 1035001 1 ディルムッド]
+[charaSet F 6033000 1 以蔵]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,-50]
+
+＠ディルムッド
+……フン。[r]後からやってきたハイエナ風情が。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 0,-50]
+
+＠燕青
+おうおう、ハイエナいいねぇ。[r]死肉にたかるんだから、最後の勝利者だ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 0,-50]
+
+＠以蔵
+……。[r]……チッ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠ディルムッド
+[line 3]まあ良い。[r]オークションまでは、まだ時間がある。
+[k]
+
+＠ディルムッド
+燕青、以蔵。[r]それまでに身の振り方を考えておくべきだな。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 0,-50]
+
+＠燕青
+ああ、ああ。[r]ありがとさん！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 0,-50]
+
+＠以蔵
+そりゃあこっちの台詞じゃ。
+[k]
+
+[charaFace F 0]
+
+＠以蔵
+……いや違うか。[r]身の振り方なぞ考えんでもえい。
+[k]
+
+[charaFace F 2]
+
+＠以蔵
+老いぼれは魚の餌になると、[r]相場が決まっちゅう！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaSet D 1098162700 1 手下A]
+[charaSet F 1098162700 1 手下A_2]
+[charaSet G 1098162700 1 手下A_3]
+
+[charaDepth E 10]
+[charaTalk E]
+[charaFace E 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein E 0.1 0,-50]
+[charaFadein F 0.1 256,-50]
+[charaFadein G 0.1 -256,-50]
+[wt 1.0]
+[se ad60]
+[charaFadeout E 0.7]
+[wt 1.0]
+[seStop ad60 0.5]
+[wt 0.7]
+[se ade210]
+[seVolume ade210 0 0.5]
+[charaFadeout F 0.7]
+[charaFadeout G 0.7]
+[wt 0.5]
+[seStop ade210 0.5]
+[wt 1.0]
+
+[charaSet D 6026001 1 燕青]
+[charaSet E 1098162800 1 手下B]
+[charaSet F 1098162800 1 手下B_2]
+[charaSet G 1098162800 1 手下B_3]
+
+[charaDepth D 10]
+[charaTalk D]
+[charaFace D 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein D 0.1 0,-50]
+[charaFadein F 0.1 256,-50]
+[charaFadein G 0.1 -256,-50]
+[wt 1.0]
+[se ad60]
+[charaMove D 30,-50 0.7]
+[charaFadeout D 0.7]
+[wt 1.0]
+[seStop ad60 0.5]
+[wt 0.7]
+[se ade210]
+[seVolume ade210 0 0.5]
+[charaFadeout F 0.7]
+[charaMove F 286,-50 0.7]
+[charaFadeout G 0.7]
+[charaMove G -226,-50 0.7]
+[wt 0.5]
+[seStop ade210 0.5]
+[wt 1.0]
+
+[charaSet D 6033000 1 以蔵]
+[charaSet E 1098162900 1 手下C]
+[charaSet F 1098162900 1 手下C_2]
+[charaSet G 1098162900 1 手下C_3]
+
+[charaDepth D 10]
+[charaTalk D]
+[charaFace D 9]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein D 0.1 0,-50]
+[charaFadein F 0.1 256,-50]
+[charaFadein G 0.1 -256,-50]
+[wt 1.0]
+[se ad452]
+[charaMove D -30,-50 0.7]
+[charaFadeout D 0.7]
+[wt 1.0]
+[seStop ad452 0.5]
+[wt 0.7]
+[se ade210]
+[seVolume ade210 0 0.5]
+[charaFadeout F 0.7]
+[charaMove F 226,-50 0.7]
+[charaFadeout G 0.7]
+[charaMove G -286,-50 0.7]
+[wt 0.5]
+[seStop ade210 0.5]
+[wt 1.0]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_90 1.5]
+[wait fade]
+
+[wipeOff]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1]
+
+[wt 0.5]
+
+？1：ディルムッドと燕青と以蔵さんが……
+
+＠モリアーティ
+ああ、安心したまえ。[r]もちろん、彼らは彼らであって彼らではない。
+[k]
+
+？2：これもしかして……
+
+[charaFace A 1]
+
+＠モリアーティ
+察しがいいねェ。[r]恐らく君の考えている通りだとも。
+[k]
+
+[charaFace A 0]
+
+？！
+
+＠モリアーティ
+……そう、以前の騒動を覚えているかな？[wt 0.7][charaFace A 3][r]えーと……確か[#虚月館:こげつかん]だったか。
+[k]
+
+[charaFace A 0]
+
+
+
+＠モリアーティ
+人物データの再現が脳を圧迫するため、[r]見知った人物に置き換える、と。
+[k]
+
+＠モリアーティ
+こんな感じで言ったよネ？
+[k]
+
+[charaFace A 1]
+
+＠モリアーティ
+まあ、ああいう現象だと思うがいいサ。[r]どうやら今回は、名前もそのままのようだ。
+[k]
+
+？1：モリアーティからはどう[&見えている:見えるの]？
+
+？！
+
+[charaFace A 0]
+
+＠モリアーティ
+ああ、それが困ったことに[r]私の目でも同じくサーヴァントに視認できる。
+[k]
+
+＠モリアーティ
+ただ、少々事情があって、[r]君よりは彼らを把握しやすい。
+[k]
+
+＠モリアーティ
+……簡単に言うとだネ、[r]あの三人はギャングだ。
+[k]
+
+＠モリアーティ
+ディルムッド君はともかくとして、[r]他二人は何となくそれっぽいだろう？
+[k]
+
+？1：まあ……それっぽい……
+？！
+
+＠モリアーティ
+そしてディルムッド君は恐らく、[r]顔や属性が近いので選ばれたのではないかな。
+[k]
+
+＠モリアーティ
+あのギャング、何しろ伊達っぷりでは[r]この街で話題になるほどらしいからネ。
+[k]
+
+？1：ところであの三人、仲悪いね？
+？！
+
+＠モリアーティ
+ああ、もちろん。
+[k]
+
+[messageOff]
+
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_5 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[charaSet B 1035001 1 ディルムッド]
+[charaSet C 6026001 1 燕青]
+
+[cameraFilter gray]
+[wt 0.5]
+
+[scene 10000]
+
+[charaTalk off]
+
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_49 0.1]
+
+[charaScale B 1.2]
+[charaFace B 0]
+[charaPut B -20,-50]
+[charaFadeTime B 0.7 0.6]
+[charaMove B 0,-50 1.0]
+
+＠モリアーティ
+ディルムッド率いる彼らは、昔からこの地域を[r]根城にしていた由緒正しいギャングだ。
+[k]
+
+＠モリアーティ
+この街の暗黒を一手に引き受けるが、[r]その一方で地元の住人からは慕われてもいる。
+[k]
+
+[messageOff]
+[charaMove B 20,-50 0.7]
+[charaFadeout B 0.7]
+[wt 0.7]
+[charaScale B 1.0]
+
+[charaScale C 1.2]
+[charaFace C 0]
+[charaPut C -140,25]
+[charaFadeTime C 0.7 0.6]
+[charaMove C -170,0 1.0]
+
+＠モリアーティ
+そんな彼らの平和を二十年ほど前に打ち崩したのが、[r]燕青たちさ。
+[k]
+
+＠モリアーティ
+彼らはこの街に移り住むと、街の汚れ仕事を[r]積極的に引き受け始めた。
+[k]
+
+＠モリアーティ
+それまで、ディルムッドが手を出さなかった[r]領域にもね。
+[k]
+
+＠モリアーティ
+もちろん、抗争が勃発。[r]両者は街中でバンバン銃をぶっ放す殺し合いサ。
+[k]
+
+＠モリアーティ
+それが十数年ほど続いて、『お互いにやるだけ[r]やったし、手打ちとしよう』となったのが三年前。
+[k]
+
+[messageOff]
+[charaMove C -200,-20 0.7]
+[charaFadeout C 0.7]
+[wt 0.7]
+[charaScale C 1.0]
+
+[charaScale D 1.2]
+[charaFace D 0]
+[charaPut D 230,-75]
+[charaFadeTime D 0.7 0.6]
+[charaMove D 250,-50 1.0]
+
+＠モリアーティ
+そこにやってきたのが、港湾労働者を集めて[r]結成された、以蔵君の組織だ。
+[k]
+
+＠モリアーティ
+そんなこんなで三つの組織は対立し、[r][#膠着:こうちゃく]状態に[#陥:おちい]った。
+[k]
+
+[messageOff]
+[charaMove D 270,-40 0.7]
+[charaFadeout D 0.7]
+[wt 0.7]
+[fadeout black 0.5]
+[wait fade]
+
+[charaScale D 1.0]
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[cameraFilter normal]
+
+[charaTalk on]
+[scene 71000]
+
+[fadein black 0.5]
+[wait fade]
+
+＠モリアーティ
+おや、不思議そうな表情だね。[r]うん、無理もない。
+[k]
+
+？1：二つが手を組めばいいのでは？
+
+[charaFace A 2]
+
+＠モリアーティ
+困ったことに、そうはならないのだヨ！
+[k]
+
+[charaFace A 0]
+＠モリアーティ
+なぜなら。[r]ここで、三つの組織の特徴が[#枷:かせ]になる。
+[k]
+
+
+？2：一番弱い組織が潰れるのでは？
+
+[charaFace A 1]
+＠モリアーティ
+弱いモノから先に潰す。[r]常道だね。
+[k]
+
+[charaFace A 0]
+＠モリアーティ
+だがしかし。[r]ここで、三つの組織の特徴が[#枷:かせ]になる。
+[k]
+
+？！
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+
+[charaSet E 1098162700 1 手下A]
+[charaSet F 1098162700 1 手下A_2]
+[charaSet G 1098162700 1 手下A_3]
+[imageSet I cut063_cinema 1]
+[charaScale I 1.01]
+[charaDepth I 10]
+[charaFadein I 0.1 0,-200]
+
+
+[cameraFilter gray]
+
+[charaTalk off]
+
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+[charaFace E 0]
+[charaFadein E 0.1 -256,-50]
+
+[charaFace F 0]
+[charaFadein F 0.1 256,-50]
+
+
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+＠モリアーティ
+まずディルムッドの組織は数も多く、[r]街に溶け込んでいる。
+[k]
+
+＠モリアーティ
+だが逆に言うと、彼らはあまりに[r]癒着しすぎた。
+[k]
+
+＠モリアーティ
+ディルムッドは[#伊達男:ディルムッド]で[r]あり続けなければならない。
+[k]
+
+＠モリアーティ
+……思いきった行動が取れない、[r]老成した組織、という訳だネ。
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+
+[charaSet E 1098162800 1 手下B]
+[charaSet F 1098162800 1 手下B_2]
+[charaSet G 1098162800 1 手下B_3]
+
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+[charaFace E 0]
+[charaFadein E 0.1 -256,-50]
+
+[charaFace F 0]
+[charaFadein F 0.1 256,-50]
+
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[wt 0.5]
+
+＠モリアーティ
+一方、燕青率いる組織はこの街に[r]後から住み着いた新参者だ。
+[k]
+
+＠モリアーティ
+この街の人間は、後からやってきた彼らに[r]警戒心を解くことはないだろう……永遠にネ。
+[k]
+
+＠モリアーティ
+だが、その分やりたい放題だ。
+[k]
+
+＠モリアーティ
+この街は彼らの街ではなく、[r]従って何の遠慮もない。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+
+[charaSet E 1098162900 1 手下C]
+[charaSet F 1098162900 1 手下C_2]
+[charaSet G 1098162900 1 手下C_3]
+
+[charaDepth D 9]
+
+[charaFace D 9]
+[charaFadein D 0.1 0,-50]
+
+[charaFace E 0]
+[charaFadein E 0.1 -256,-50]
+
+[charaFace F 0]
+[charaFadein F 0.1 256,-50]
+
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[wt 0.5]
+＠モリアーティ
+そして最後に以蔵君の組織。
+[k]
+
+＠モリアーティ
+彼らは組織こそ小さいが、[r]何しろ港を牛耳っている。
+[k]
+
+＠モリアーティ
+この街の産業が港を中心にしている以上、[r]そうそう手出しはできない。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+
+[cameraFilter normal]
+[charaFadeout I 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+
+＠モリアーティ
+ここまでは分かったかネ？
+[k]
+
+？1：何とか……
+
+[charaFace A 1]
+＠モリアーティ
+よしよし。[r]これから、更にややこしくなるぞぅ！
+[k]
+
+？2：段々ややこしくなってきた！
+
+[charaFace A 1]
+
+＠モリアーティ
+まあまあ。[r]要するに[line 3]
+[k]
+
+[charaFace A 0]
+
+＠モリアーティ
+ディルムッド……大組織、[r]燕青……中組織、
+[k]
+
+＠モリアーティ
+以蔵君……小組織、[r]そう理解してくれればいい。
+[k]
+
+[charaFace A 6]
+
+＠モリアーティ
+これなら分かりやすいかネ？
+[k]
+
+？！
+
+
+[charaFace A 0]
+
+＠モリアーティ
+では、一旦講義は打ち切りにして、[r]お仕事をしよう。
+[k]
+
+？1：お仕事？
+？！
+
+[bgmStop BGM_EVENT_49 0.1]
+[charaFace A 2]
+
+[charaPut H 1]
+[charaEffect H bit_talk_41]
+
+[se ade242]
+＠モリアーティ
+[f x-large]話の途中だが！！
+[k]
+
+[se ad186]
+
+＠モリアーティ
+[f x-large]ワイバーンだ！！
+[k]
+
+[messageOff]
+[charaPut H 1200,1200]
+[wt 1.0]
+
+[charaEffectStop H bit_talk_41]
+[bgm BGM_EVENT_7 0.1]
+
+？1：いきなり何を言い出すんです？
+
+[charaFace A 6]
+
+＠モリアーティ
+全サーヴァントアンケート、[r]一度は言ってみたいセリフ二位。
+[k]
+
+＠モリアーティ
+ｂｙダ・ヴィンチちゃん調べ。
+[k]
+
+？2：モリアーティさん？
+
+[charaFace A 4]
+
+＠モリアーティ
+そのジトッとした目は[r]やめておくれでないか！
+[k]
+
+？！
+
+[charaFace A 0]
+
+＠モリアーティ
+いや、この時代は不思議なことに[r]ワイバーンが徘徊しているらしくてネ！
+[k]
+
+＠モリアーティ
+この屋敷にちょくちょくと忍び込んでいるらしく、[r]ジークにその退治を任されたのサ！
+[k]
+
+？1：不思議すぎるよ！？
+？！
+
+[charaFace A 1]
+＠モリアーティ
+まあまあ、理由は見当がついているが、[bgmStop BGM_EVENT_7 0.7][wt 1.0][charaFace A 2][r]今[bgm BGM_EVENT_3 0.1]はそれより、目の前のワイバーン退治といこう！
+[k]
+
+＠モリアーティ
+ではマスター君、[r]援護ヨロシク！
+[k]
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.5]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

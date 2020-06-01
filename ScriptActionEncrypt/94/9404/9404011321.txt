@@ -1,0 +1,171 @@
+
+＄94-04-01-13-2-1
+
+[soundStopAll]
+
+
+[charaSet A 98100400 1 マシュ]
+[charaSet B 1008300 1 ジークフリート]
+[charaSet C 1098117301 1 ネロ]
+[charaSet D 6019300 1 小太郎]
+[charaSet E 1098181300 1 キングプロテア]
+[charaSet F 1040000 1 葛飾北斎]
+[charaSet G 10001002 1 パッションリップ]
+
+[charaSet I 98115000 1 エフェクト用]
+[charaSet J 98115000 1 エフェクト用]
+
+[charaPut I 2000,2000]
+[charaPut J 2000,2000]
+[charaEffect I bit_talk_fire]
+[charaEffect J bit_talk_sparks]
+
+[scene 10000]
+
+[bgm BGM_EVENT_80 0.1]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[se bac108]
+[effect bit_talk_14]
+[wt 0.8]
+[cueSe Servants_603000 bac521]
+
+
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 0.1]
+
+[scene 81700]
+
+[charaPut I 0,-200]
+[charaPut J 1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0 1]
+[charaShake E 0.02 3 3 0.8]
+[bgmStop BGM_EVENT_80 1.0]
+
+[wt 1.4]
+
+＠キングプロテア
+やーーらーーれーーまーーしーーたーー！[wt 0.9][charaFace E 6][r]でも楽しかったので、わたし的にはＯＫなのです！
+[k]
+
+[messageOff]
+[wt 0.1]
+[se ad619]
+[seVolume ad619 0 0.5]
+[charaMove E 0,-30 0.9]
+[charaFadeout E 0.7]
+[wt 1.0]
+[seStop ad619 1.0]
+[se ad226]
+[shake 0.05 0 3 1.5]
+[wt 3.0]
+
+[se ad9]
+[seVolume ad9 0 0.7]
+
+＠工場アナウンス
+エマージェンシー。[r]エマージェンシー。
+[k]
+
+＠工場アナウンス
+『[#Ｓシステム:サ デ ィ ス テ ム]・メルトパージ』に異常発生。[r]タンク内の経験値を圧縮できません。
+[k]
+
+＠工場アナウンス
+90秒後に　貯蔵した紫コインを放出します。[r]その場合　コインは元の所有者に返還されます。
+[k]
+
+[seStop ad9 1.0]
+
+＠工場アナウンス
+現状の出力では『最後のステージ』の実行は困難。[r]現状の出力では『最後のステージ』の実行は困難。
+[k]
+
+＠工場アナウンス
+ラムダリリス様におかれましては、[r]いちから計画をやり直してください。
+[k]
+
+＠工場アナウンス
+繰り返します。[r]90秒後に[line 3]
+[k]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠パッションリップ
+やったーーー！[bgm BGM_EVENT_82 0.1][r]とりあえず工場を潰してみましたが
+[k]
+
+＠パッションリップ
+結果オーライですね、[r][%1]さん！
+[k]
+
+？1：う、ぅん。そうだね
+？2：シークタイムなしで破壊活動はよくないよ
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ジークフリート
+フッ。恋する乙女とはそういうものだ。[r]シグルド殿もそう言っていた。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ネロ
+わかるぞ、ロマンシアというヤツだな！[r]だが時と場合は考えるがよい！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マシュ
+マスター、プロテアさんが倒れた事で[r]エレベーターが開放されました！
+[k]
+
+＠マシュ
+急いで水天宮に戻り、[r]ラムダさんと対決しましょう！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 26]
+[charaFadein F 0.1 1]
+
+＠葛飾北斎
+オウ！　[#黒頭巾:くろずきん]には返してぇもんがある！[r]今度こそ決着をつけてみせらぁな！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_82 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

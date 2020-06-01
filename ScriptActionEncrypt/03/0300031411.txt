@@ -1,0 +1,728 @@
+
+＄03-00-03-14-1-1
+
+[soundStopAll]
+
+[charaSet A 8001400 1 ゴーグルありマシュ]
+[charaSet B 6011001 1 荊軻]
+[charaSet C 1098123330 1 コヤンスカヤ]
+[charaSet D 1098124800 1 ？？？]
+[charaSet E 1098159200 1 傀儡兵１]
+[charaSet F 1098159200 1 傀儡兵２]
+[charaSet G 1098159200 1 傀儡兵３]
+[charaSet H 98115000 1 エフェクト用]
+[charaSet I 8001410 1 マシュ]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 65500]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.1]
+
+[se ad688]
+[wt 0.4]
+
+[se ad687]
+[fowardEffect bit_talk_14]
+
+[charaShake E 0.05 2 1 1.0]
+
+[fadeout white 0.3]
+[wait fade]
+[se ad608]
+
+[charaFadeout E 0.1]
+[wt 1.0]
+[seStop ad608 1.0]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.2]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth A 2]
+[charaDepth I 1]
+
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+[se ade18]
+[seVolume ade18 0.0 0.5]
+[wt 0.7]
+
+[bgmStop BGM_EVENT_80 2.0]
+
+[wt 0.5]
+[seStop ade18 0.8]
+[wt 1.5]
+
+[charaFace I 7]
+[charaFadein I 0.1 1]
+[wt 0.1]
+[charaFadeout A 0.4]
+[wt 0.2]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[wt 0.3]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk on]
+[charaTalk I]
+
+＠マシュ
+戦闘終了。敵、壊滅しました。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠荊軻
+思っていた以上に数を動員しているな。[r]これは哨戒って規模じゃないだろう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 1]
+＠マシュ
+それが……見て下さい、この残骸。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaDepth I 1]
+[charaDepth B 2]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFace I 7]
+[charaFadein B 0.1 0]
+[charaFadein I 0.1 2]
+＠荊軻
+[FFFFFF]？[-]　我々が壊したものだけじゃない？
+[k]
+
+
+[charaTalk I]
+[charaFace I 7]
+＠マシュ
+はい。既に誰かがここで機械人形と[r]戦闘を行った後みたいです。
+[k]
+
+＠マシュ
+さっきの敵は遅れてきた増援か、[r]あるいは戦闘跡の調査をしていたのではないかと。
+[k]
+
+
+[charaTalk B]
+[charaFace B 0]
+＠荊軻
+モードレッドも哪吒も反対方向に進んでいる筈だ。
+[k]
+
+＠荊軻
+すると我々カルデア以外に、[r][#秦:しん]帝国に楯突いている連中がいるってことか？
+[k]
+
+？1：はぐれサーヴァント、かな？
+？！
+
+[charaFadeout B 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠荊軻
+その可能性は高い。霊基グラフがあんな反応を[r]示した直後だ。偶然とは思えない。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+＠マシュ
+！　もし合流できれば、[r]新たな戦力になってくれるかもしれません！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠荊軻
+或いはその逆、って可能性もあるがね。[r]いずれにせよ、このまま放置して進む手はないな。
+[k]
+
+？1：辺りを捜索してみよう
+？！
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[wipeFilter cinema 0.5 0]
+
+[imageSet A back10000 1]
+[charaDepth A 10]
+[charaScale A 1.01]
+
+[scene 66200]
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_90 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 0,-50]
+＠コヤンスカヤ
+とはいえ……さすがにこのままではお話になりません。[r]この呪符、まさかと思ったが本物ですわ。
+[k]
+
+＠コヤンスカヤ
+2000年を越えて仙術を維持しているなんて[r]人間にあるまじき、と呆れていましたが……
+[k]
+
+＠コヤンスカヤ
+この異聞帯、[#私:わたくし]と相性が悪すぎます。[r]維持どころか進歩してやがりますわ。
+[k]
+
+[charaFace C 19]
+＠コヤンスカヤ
+大体、人間ふぜいが[#蓬莱山:ほうらいさん]に踏み込んで仙道の秘奥を[r]手に入れるなんてのが横紙破りも甚だしい。
+[k]
+
+[charaFace C 2]
+＠コヤンスカヤ
+そこまでやったら向こう側に居座って[r]神仙になるのが筋でしょうに！
+[k]
+
+＠コヤンスカヤ
+なに涼しい顔して人間界で[r]皇帝続けているのでございましょう！！
+[k]
+
+[messageOff]
+[wt 0.8]
+[charaFace C 0]
+[wt 0.2]
+
+＠コヤンスカヤ
+まぁ涼しいも何も[r]顔がそもそもありませんけどねあのメカ皇帝。
+[k]
+
+＠コヤンスカヤ
+ああもう、一生の不覚ですわ。表情が読めなかった[r]ばかりに、まんまと足を[#掬:すく]われるなんて！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.7 0,-50]
+[wt 2.0]
+＠？？？
+[line 6]。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFace D 0]
+[charaFadein C 0.1 -256,-50]
+[charaFadein D 0.1 256,-50]
+＠コヤンスカヤ
+…………おや。[r]平和なこの異聞帯には現れない、と思いましたが。
+[k]
+
+＠コヤンスカヤ
+どこにでも現れるのですね、アナタは。[r]異星の巫女さま？
+[k]
+
+
+[charaTalk D]
+[charaFace D 0]
+＠？？？
+[line 3]、[line 6]。
+[k]
+
+
+[charaTalk C]
+[charaFace C 4]
+＠コヤンスカヤ
+ああもう、何を言っているのだか分かりませんわ。[r]そろそろこちらの言葉を憶えてほしいものですが……
+[k]
+
+[charaFace C 19]
+＠コヤンスカヤ
+キリシュタリアなら理解できているのかしら。
+[k]
+
+＠コヤンスカヤ
+アナタが[#私:わたくし]たちにどんな言葉を投げかけ、[r]どんな事を記録しているのか、を。
+[k]
+
+
+[charaTalk D]
+[charaFace D 0]
+＠？？？
+[line 6]。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 0,-50]
+＠コヤンスカヤ
+ま、そのあたり[#私:わたくし]には関係のないコト。
+[k]
+
+＠コヤンスカヤ
+[#私:わたくし]が契約したのは『異星の神』であって、[r]代弁者であるアナタではありませんので。
+[k]
+
+[charaFace C 0]
+＠コヤンスカヤ
+それはともかく、[r]この呪符剥がして下さいませんこと？
+[k]
+
+＠コヤンスカヤ
+この異聞帯の王は[#強:したた]かです。[r]他の異聞帯の王は純粋に“人の手に余る怪物”ですが、
+[k]
+
+＠コヤンスカヤ
+あの始皇帝は“人の手に余る人”。[r]力任せの怪物は“その存在”自体が怖ろしいですが、
+[k]
+
+＠コヤンスカヤ
+知恵持つ人間は“その行動”が怖ろしいのです。
+[k]
+
+[charaFace C 16]
+＠コヤンスカヤ
+このままではこの異聞帯、[r]クリプター側の手を離れますわよ？
+[k]
+
+＠コヤンスカヤ
+空想樹もアナタの苗床になる前に、[r]あのレトロ皇帝に伐採されるかもですわ？
+[k]
+
+[bgmStop BGM_EVENT_90 0.6]
+
+＠A：始皇帝
+レトロ皇帝とは言ってくれるなヤンヤンスキー。[r]朕のどのあたりがレトロなのだ？　ん？
+[k]
+
+[charaTalk C]
+[charaFace C 13]
+＠コヤンスカヤ
+げ。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+[wt 0.5]
+[bgmStop BGM_EVENT_90 1.5]
+[se ad216]
+[seVolume ad216 0 0.4]
+[charaSpecialEffect D wipeTime 0 1.5 0 0.2]
+[wt 2.0]
+
+[bgm BGM_EVENT_71 0.1]
+
+＠始皇帝
+何を壁に向かって喚いておるか。[r]さてはいよいよ気が触れたか？
+[k]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠コヤンスカヤ
+ふふ。わざわざこんな女の監房を[r]覗き見いただくとは恐悦ですわ陛下。
+[k]
+
+＠コヤンスカヤ
+ウフフ、所構わず出歯亀できるくせに[#肝心要:かんじんかなめ]のものは[r]見えていないなんて、滑稽も甚だしいですこと。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠始皇帝
+……朕はカルデアに裁定を下した。
+[k]
+
+＠始皇帝
+よって、もう一方の来訪者である[#其方:そなた]の行状についても、[r]改めて正しく裁量すべき時が来た。
+[k]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-50]
+＠コヤンスカヤ
+あらあら。ではようやくお気づきになられましたか？[r]カルデアが[#不倶戴天:ふぐたいてん]の敵であると。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠始皇帝
+然り。だがそれは[#其方:そなた]を[#赦免:しゃめん]する要因にはなり得ぬ。[r][#其方:そなた]の罪はまた別にあるが故に、な。
+[k]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠コヤンスカヤ
+何を仰いましょう。敵の敵は味方でございましょう？
+[k]
+
+＠コヤンスカヤ
+[#私:わたくし]、カルデアの敵であって、[r]皇帝陛下の農場を荒らす者ではありませんわ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠始皇帝
+カルデアと同時期に出現し朕の領民を食い荒らした魔獣。[r]あれは[#其方:そなた]の差し金だな？
+[k]
+
+[charaTalk C]
+[charaFace C 20]
+[charaFadein C 0.1 0,-50]
+＠コヤンスカヤ
+……（あー、それがありましたねぇ……）
+[k]
+
+[charaFace C 9]
+＠コヤンスカヤ
+それは～、え～っと、う～んと、あれぇ～？[r]あ、もしかして積み荷から落としちゃったカナ？
+[k]
+
+[charaFace C 17]
+＠コヤンスカヤ
+ですが、それが[#私:わたくし]のミスであると[r]確証をお持ちでしょうか？？
+[k]
+
+＠コヤンスカヤ
+魔獣の召喚も英霊の召喚も同じこと。[r]カルデアがシラを切ってるだけじゃありませんこと？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠始皇帝
+カルデアは民を損なう。[r]その在り方を[#歪:ゆが]めることに喜びを見出す。
+[k]
+
+＠始皇帝
+なればこそ、奴らは決して殺して喰うことだけはせぬ。
+[k]
+
+＠始皇帝
+一方で[#其方:そなた]はといえば、まず本質において民とは[#貪:むさぼ]り喰らう[r]もの。事を[#検:あらた]めるまでもなく、誰の仕業かは明らかだ。
+[k]
+
+[charaTalk C]
+[charaFace C 19]
+[charaFadein C 0.1 0,-50]
+＠コヤンスカヤ
+…………なるほど。[r]異聞帯とはいえ、前の[#私:わたくし]の記録はあるのですね。
+[k]
+
+＠コヤンスカヤ
+それで、どうなされるのです？[r]陛下にとってカルデアこそ国を荒らす最大の敵。
+[k]
+
+＠コヤンスカヤ
+それが分かった以上、[r][#私:わたくし]に構っている余裕はないのでは？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠始皇帝
+まあな。並列処理は朕の得意とするところだが、[r]目下の急務はあくまでカルデア。
+[k]
+
+＠始皇帝
+[#其方:そなた]については片手間で対処せざるを得ぬ。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_71 1.0]
+
+[charaTalk off]
+[se ad66]
+[charaDepth F 10]
+[charaFace E 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein E 0.4 -300,-50]
+[charaFadein F 0.4 0,-50]
+[charaFadein G 0.4 300,-50]
+[wt 1.2]
+[seStop ad66 0.6]
+[wt 0.4]
+
+
+[charaTalk on]
+＠A：始皇帝
+というわけで、[#雑にいく]。
+[k]
+
+＠A：始皇帝
+その呪符に縛られている限りは手向かいもできまい？[r]ただ痛めつけるだけなら[#機械:オートメーション]で充分。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 0,-50]
+＠コヤンスカヤ
+な……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠始皇帝
+朕が本腰を入れて処断できるようになるまでは、[r]場繋ぎとしてその人形らが拷問にあたる。
+[k]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 0,-50]
+＠コヤンスカヤ
+え？　ちょっと、ちょっと！　冗談ですよね？
+[k]
+
+＠コヤンスカヤ
+仮にも[#秦:しん]の始皇帝ともあろう御方が、[r]そんな下品なリョナ趣味とか！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠始皇帝
+趣味ではないがこれは務めだ。[r]法を預かる者としての、な。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ad712]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 0,-50]
+＠コヤンスカヤ
+……ちょ、やっ、やめ……[wt 0.3][se adm26][fowardEffect bit_talk_35][charaFace C 27][se ad713][charaShake C 0.05 1 3 0.8]ひギッ！[r]ギャァァァァッ！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[seVolume ad712 2.0 0.5]
+[seVolume ad713 2.0 0.5]
+
+＠始皇帝
+気の毒だが、サーヴァントだのアルターエゴだの、[r]異界における霊魂の在り方については
+[k]
+
+＠始皇帝
+判断材料が足りず確証が持てぬ。
+[k]
+
+＠始皇帝
+うっかり肉体だけ壊したのでは、[r]ただ[#枷:かせ]を解いただけ、なんて[#藪蛇:やぶへび]にもなりかねん。
+[k]
+
+＠始皇帝
+辺り一面を硫黄に沈められても困る。
+[k]
+
+[seVolume ad712 0.5 1.0]
+[seVolume ad713 0.5 1.0]
+
+[charaTalk C]
+[charaFace C 27]
+[charaFadein C 0.1 0,-50]
+[wt 0.1]
+[charaShake C 0.05 1 2 0.8]
+
+＠コヤンスカヤ
+ぐ……や……いたい、[charaShake C 0.05 1 3 0.8]痛い痛い痛いぃぃィヤァァァッ！[r]ぎひッ！　ギャァァッ！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaShakeStop C]
+
+[seVolume ad712 1.0 0.5]
+[seVolume ad713 1.0 0.5]
+
+＠始皇帝
+だが今この場に現界した肉体のある限り、[r][#其方:そなた]はその[#容:かたち]に縛られる。そこだけは間違いない。
+[k]
+
+＠始皇帝
+よって脱走だの企まぬ程度に力を削ぎつつ生かしておく。
+[k]
+
+＠始皇帝
+その肉、動脈だけを避けて昼夜を問わず掘り穿ってやれば、[r]魔力を養う余地もなく大人しくしているしかなかろう？
+[k]
+
+[seVolume ad712 1.0 0.2]
+[seVolume ad713 1.0 0.2]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-50]
+
+＠コヤンスカヤ
+……お……お許しを……すぐにも去ります……ので！
+[k]
+
+＠コヤンスカヤ
+二度とこの異聞帯には立ち入りませんわ……[r]だから、だからこんな……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠始皇帝
+ならぬ。[#其方:そなた]、この[#秦:しん]を去っても余所の歴史で[r]また悪を為す所存であろう？
+[k]
+
+＠始皇帝
+そもそも[#其方:そなた]、見かけ通りのモノではあるまい。[r]重さがな、サーヴァントどもとは違う。
+[k]
+
+＠始皇帝
+魂……いや、霊基とやらの質量がケタ違いだ。[r]10万トン近い質量など、朕もドン引くぞ？
+[k]
+
+[charaTalk C]
+[charaFace C 26]
+[charaFadein C 0.1 0,-50]
+＠コヤンスカヤ
+[line 3]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠始皇帝
+朕はな、天と地の間で人の世を司る帝である。[r]時代や因果が変わろうとその天命は変わらない。
+[k]
+
+＠始皇帝
+種としてのヒトに仇なす[#其方:そなた]を、[r]みすみす解き放ちはせんよ。
+[k]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-50]
+＠コヤンスカヤ
+他の異聞帯の平和すら気に掛けるというの……？[r]アナタ、つくづく……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠始皇帝
+うむ。[r][#其方:そなた]はここ[#秦:しん]の地において[#岩になるまで][#虐:しいた]げられる。
+[k]
+
+＠始皇帝
+いずれ正しく封印する術式が構築できれば眠らせても[r]やれようが、その日が来るまでは懲罰の時間だ。
+[k]
+
+＠始皇帝
+この[#永久凌遅:えいきゅうりょうち]の刑にて、[r]今まで殺めた民の苦痛を[#偲:しの]ぶが良いぞ。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[seVolume ad712 1.0 1.0]
+[seVolume ad713 1.0 1.0]
+
+[charaPut A 0,-200]
+[charaFadeTime A 1.5 0.5]
+[wt 1.5]
+
+＠コヤンスカヤ
+岩になるまでって、そんな、孫悟空じゃあるまいし……
+[k]
+
+＠コヤンスカヤ
+あ……いや、いや[line 3][wt 0.8][messageShake 0.03 2 2 0.8][r]ぎゃあああ[line 6]！！！！！！
+[k]
+
+
+[messageOff]
+[seStop ad712 2.0]
+[seStop ad713 2.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_48 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

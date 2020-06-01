@@ -1,0 +1,561 @@
+
+＄91-30-14-01-3-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 3014001 1 胤舜]
+[charaSet B 99502600 1 マシュ]
+[charaSet C 98002000 1 フォウ]
+[charaSet D 1098117700 1 ランサー・プルガトリオ]
+[charaSet E 98111500 1 通信用ノイズ]
+[charaSet F 1098118900 1 侍衆１]
+[charaSet G 1098118900 1 侍衆２]
+[charaSet H 1098118900 1 侍衆３]
+
+[scene 37312]
+
+[charaPut E 0,-2000]
+[charaEffect E bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.4 1]
+[wt 1.0]
+
+[se ad680]
+[effect bit_talk_h_slash01]
+[wt 0.1]
+[fowardEffect bit_talk_14]
+[wt 0.5]
+[se ad161]
+[charaFace D 4]
+[charaShake D 0.05 7 7 3.0]
+[wt 0.2]
+[charaShakeStop D]
+[wt 0.7]
+
+[bgmStop BGM_EVENT_3 0.5]
+[charaEffect D bit_talk_06]
+
+[wt 1.7]
+
+[charaEffectStop D bit_talk_06]
+[charaSpecialEffect D flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect D]
+[wt 0.7]
+
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 1]
+＠胤舜
+うーむ。[r]確かにそれなりの難敵ではあったが……。
+[k]
+
+＠胤舜
+やや拍子抜けであった。[r]槍技も甘い。切先に殺気が伴っておらぬ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut E 1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠マシュ
+……そうですか……[r]シミュレーターではこれが限界かもしれません。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut E 0,-2000]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠胤舜
+[#残念無念:ざんねんむねん]。[r]これでは技を競い合う以前の問題だな。
+[k]
+
+[charaFace A 0]
+＠胤舜
+いやマスター、[r]付き合わせてすまなんだ！
+[k]
+
+？1：いいってこと[&よ:ですよ]
+？！
+
+[charaFace A 1]
+＠胤舜
+ははははは。[r]大物らしい返答だ。
+[k]
+
+＠胤舜
+では、本日はそろそろ終了するか。[r]お疲れ様だ、マスター！
+[k]
+
+？1：おつかれー
+？！
+
+[bgmStop BGM_EVENT_2 1.0]
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[scene 10310]
+
+[fadein black 1.5]
+[wait fade]
+[wt 1.0]
+
+[se ad8]
+[wt 0.8]
+
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[scene 10400]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+＠フォウ
+フォーウ……。
+[k]
+
+[messageOff]
+[charaFadeout C 0.7]
+[se ad77]
+[wt 1.8]
+
+[wipeout openEye 2.0 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[fadeout black 0.4]
+[wait fade]
+[wipein openEye 0.1 1]
+[wt 0.4]
+[scene 10000]
+[fadein black 0.5]
+
+[scene 10000]
+[wait scene]
+[se ad46]
+[effect bit_talk_35]
+[wt 2.0]
+[fadeout black 0.1]
+[wait fade]
+
+[bgm BGM_EVENT_72 0.1]
+
+＠
+空は赤くて血のように。[r]赤い[#鴉:からす]が[#哭々:こくこく]と不吉を[#啼:な]く。
+[k]
+
+＠
+槍から[#滴:したた]る血が赤い糸のよう。[r]結びつけば死に殺すまで手離さぬ。
+[k]
+
+＠
+[line 3][#悦:よろこ]べ。[r]貴様への供物が出揃った。
+[k]
+
+＠
+[#無辜:むこ]の者を殺そう。[r]子供、老人、赤子、這う者たちを。
+[k]
+
+＠
+理由は無論、槍のため。[r]槍は殺すためにあり、殺すことが槍のためになる。
+[k]
+
+＠
+虐殺の刻限だ。
+[k]
+
+
+[messageOff]
+[scene 45900]
+[fadein black 0.7]
+[wait fade]
+
+[se ad9]
+[wt 3.0]
+[seStop ad9]
+
+
+？1：な、なんだコレ[line 3]！？
+？！
+
+[bgmStop BGM_EVENT_72 0.5]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+[scene 46702]
+[charaSet E 1098117700 1 シルエット用]
+[wt 0.4]
+
+
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[bgm BGM_EVENT_71 0.1]
+[charaTalk off]
+
+[charaFilter E silhouette 00000080]
+[charaFadein E 0.4 1]
+＠ランサー・プルガトリオ
+カカカカカカッ！[r]キィ……キキキキキキッ！
+[k]
+
+[messageOff]
+[charaDepth D 0]
+[charaDepth E 1]
+[charaFace E 0]
+
+[charaFace D 0]
+[charaFadein D 0 1]
+[wt 0.1]
+
+[charaFadeout E 0.7]
+[wt 1.0]
+＠ランサー・プルガトリオ
+[#痛快無比:つうかいむひ]とはこのことか！[r]人を殺す度に技量が上がる！
+[k]
+
+[charaFace D 6]
+＠ランサー・プルガトリオ
+ああ、思えば[line 3][r]生前は何とつまらぬ人生を過ごしたものよォッ！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaFace G 0]
+[charaFadein G 0.1 2]
+[charaFace H 0]
+[charaFadein H 0.1 0]
+[wt 0.5]
+
+[effect bit_bolg_02]
+[wt 0.1]
+[se bac14]
+[shake 0.04 4 4 0.7]
+[wt 0.4]
+[se ad161]
+[wt 0.4]
+[charaFadeout F 0.4]
+[charaFadeout G 0.4]
+[charaFadeout H 0.4]
+[wt 0.3]
+[se ad144]
+[se ad222]
+
+[wt 0.7]
+
+
+[charaTalk on]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ランサー・プルガトリオ
+どうだ、見よ見よ見よ[r][%1]！
+[k]
+
+＠ランサー・プルガトリオ
+死体が一つ積み上がる度、[r]我が槍が冴え渡るのが見て取れよう！
+[k]
+
+[charaFace D 6]
+＠ランサー・プルガトリオ
+さあ、ご[#覧:ろう]じろ。[r]千人万人殺の果て、我が槍が神に届く様を！
+[k]
+
+[bgmStop BGM_EVENT_71 0.5]
+
+＠A：？？？
+あー……ご高説のところ、失礼する。[r]ランサー・プルガトリオ殿で相違ないだろうか。
+[k]
+
+[charaFace D 5]
+＠ランサー・プルガトリオ
+[line 3]ク、来たか。[r]宝蔵院胤舜……！
+[k]
+
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[bgm BGM_EVENT_63 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.7 1]
+[wt 0.7]
+＠胤舜
+無論。外道にも劣る悪逆の所業、[r]耳にした以上は捨て置けぬ。
+[k]
+
+＠胤舜
+宝蔵院胤舜、見参。[r]いざ、尋常に勝負なり。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ランサー・プルガトリオ
+ハハハ、何が胤舜か。[r]所詮は[#紛:まが]い[#物:もの]。
+[k]
+
+＠ランサー・プルガトリオ
+俺と貴様とでは、既に見ているものが違うのだ。[r]不殺の精神？　御仏の慈悲？
+[k]
+
+[charaFace D 6]
+＠ランサー・プルガトリオ
+下らぬ！　下らぬ下らぬ下らぬゥッ！
+[k]
+
+＠ランサー・プルガトリオ
+自らを鎖に繋いだその縛りこそが、[r]貴様の技の限界地点だ胤舜！
+[k]
+
+＠ランサー・プルガトリオ
+勝負になどなるものか！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠胤舜
+殺せば殺すほど強くなるというのなら[r]戦国では達人であふれようが……ふむ。
+[k]
+
+＠胤舜
+マスター、こやつの所見、どう考える？[r]否、より端的に言うとだな。
+[k]
+
+＠胤舜
+[#彼奴:きゃつ]と拙僧、[r]どちらが強いと思う？
+[k]
+
+？1：胤舜！
+
+[charaFace A 1]
+＠胤舜
+ふはははは！[r]うむ、目が肥えてきたのだな。マスターよ！
+[k]
+
+？2：[&自分:わたし]たち[&だ:だよ]！
+
+[charaFace A 3]
+＠胤舜
+お、おう。[r]うむ、そこまで断言されると[#些:いささ]か[#面映:おもは]ゆいな！
+[k]
+
+？！
+
+[charaFace A 0]
+＠胤舜
+しかし[#呵々大笑:かかたいしょう]したいのは拙僧だ。
+[k]
+
+＠胤舜
+先ほどから槍の冴え、槍の冴えと、[r]かしましいが……。
+[k]
+
+＠胤舜
+おまえは槍の冴えが欲しいのか、[r]強くなりたいのか、どちらなのだ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠ランサー・プルガトリオ
+なに……？
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠胤舜
+猫は[#鼠:ねずみ]を捕るのが役割だが、[r]では猫が鼠も捕るが人も喰らう、では駄目だろう。
+[k]
+
+＠胤舜
+猫はまず可愛ければ、それで良い。[r]なあ？
+[k]
+
+？1：ニャー
+
+[charaFace A 1]
+＠胤舜
+うむうむ。[r]ニャーニャー鳴くだけで猫は良い。
+[k]
+
+？2：まあそうですね
+
+＠胤舜
+そこを[#違:たが]えてしまっているのだなあ。[r]こやつは。
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠ランサー・プルガトリオ
+貴様の、理屈は理解できん！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠胤舜
+簡単なことだ。
+[k]
+
+＠胤舜
+槍の冴えが欲しければ、[r]人を殺さなくとももっと良い方法がある。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠ランサー・プルガトリオ
+何……！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠胤舜
+[#もっと強い者に槍を任せれば良い]。[r]それが一番楽だろう？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ランサー・プルガトリオ
+笑止！　笑止だ、胤舜！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠胤舜
+なのにわざわざ他人と自分を[r]苦しめる必要があるのかね？
+[k]
+
+＠胤舜
+[#拙僧が殺めたのだ]などと[r][#嘯:うそぶ]きたいがためか？
+[k]
+
+[charaFace A 4]
+＠胤舜
+浅はかにして愚か。
+[k]
+
+＠胤舜
+うむ、汚染されたは不覚であるが、その程度の認識で[r]強くなったと[#自惚:うぬぼ]れていたのは片腹痛い！
+[k]
+
+[charaFace A 0]
+＠胤舜
+よし、もう聞くべきことは聞いた。[r]もはや、後腐れなく立ち会うのみ。
+[k]
+
+＠胤舜
+なにしろ同情の余地がありすぎる！[r]ああ、哀れ哀れ哀れ極まる！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠ランサー・プルガトリオ
+ご託を並べて煙に巻くか、胤舜ッ！！
+[k]
+
+＠ランサー・プルガトリオ
+この腐り果てた魂に残されし槍の業。[r]最後に貴様に叩きつけてやろう！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠胤舜
+ではマスター。
+[k]
+
+[charaFace A 1]
+＠胤舜
+さくりと負かして、[r]かるであに戻るとするか！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_63 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

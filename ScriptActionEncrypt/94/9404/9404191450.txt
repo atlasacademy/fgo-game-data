@@ -1,0 +1,167 @@
+
+
+＄94-04-19-14-5-0
+
+[soundStopAll]
+
+
+[charaSet A 6018002 1 Ｘ]
+[charaSet B 1033002 1 シグルド]
+[charaSet J 5009000 1 エフェクト用]
+
+[scene 82801]
+
+[shake 0.05 4 4 0]
+[effect bit_talk_41]
+[se ad59]
+
+[cameraMove 0.1 0,0 1.01]
+[wipeFilter cinema 0.5 0]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[fadeout black 0.5]
+[wait fade]
+[cameraHome 0.1]
+[effectStop bit_talk_41]
+[shakeStop]
+[scene 49000]
+[wt 0.1]
+[seStop ad59 0.1]
+[se ade354]
+[seVolume ade354 0 0.6]
+[fadein black 0.6]
+[wait fade]
+
+[wt 0.2]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠Ｘ
+危なげなく到着しました！[r]ここが中枢部ですね。
+[k]
+
+＠Ｘ
+これは……見た事のないリアクターですが、[r]使われているのは間違いなく[#竜の宝玉:ドラゴン・ハート]。
+[k]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth J 2]
+
+[bgmStop BGM_EVENT_5 0.7]
+
+[charaPut J 0,-50]
+[charaEffect J bit_talk_radiallight01]
+[se ad606]
+
+＠Ｘ
+ではサクッと真名解放から聖剣解放[line 3]
+[k]
+
+[messageOff]
+[effect bit_talk_gram_slash_04]
+[se ad697]
+[seStop ad697 1.0]
+[seStop ad606 0.2]
+[wt 0.1]
+[charaFadeout A 0.1]
+[charaEffectDestroy J]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-50]
+[wt 0.1]
+
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[effect bit_talk_14 0,-50]
+[se ad32]
+[charaShake A 0.07 4 2 0.6]
+[wt 0.1]
+[se ad671]
+[seVolume ad671 0 0.3]
+[seStop ad671 1.0]
+[charaMove A 140,-50 0.3]
+[wt 0.3]
+[charaMove A 160,-50 0.4]
+[wt 0.7]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠シグルド
+目的は要塞の破壊か。[bgm BGM_EVENT_3 0.1][r]だが当方の目が黒いうちは[line 3]
+[k]
+
+＠シグルド
+失敬。[r]目が青いうちは、貴殿の目的は達成されない。
+[k]
+
+[charaFace B 5]
+
+＠シグルド
+[line 3]カタパルトで戦った時から感じていた。[r]貴殿、やはり聖剣使いだったか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+
+＠Ｘ
+そういうあなたは魔剣使いですね。[r]かつては名のあるセイバーだったようですが……
+[k]
+
+[charaFace A 2]
+
+＠Ｘ
+スペース神陰流に加担するようでは[r]一流のセイバーとは言えません！
+[k]
+
+＠Ｘ
+そもそもなんですか、[r]『銀河アスカロン運動』って！
+[k]
+
+＠Ｘ
+そんなチートスキル、[r]他の竜属性が許しても、このわたしが許しません！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠シグルド
+神秘が薄れ竜種が減少したユニヴァースに[r]未練はない。
+[k]
+
+[charaFace B 5]
+
+＠シグルド
+真の強敵に出会えず放浪した我が2000年の焦燥。[r]果たして、貴殿に理解できようか。
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

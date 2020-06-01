@@ -1,0 +1,230 @@
+
+
+＄91-10-36-01-2-1
+
+[soundStopAll]
+
+[charaSet A 1036001 1 蘭陵王]
+[charaSet B 1038000 1 イアソン]
+[charaSet C 7027001 1 ペンテシレイア]
+
+[charaDepth C 1]
+[charaDepth A 9]
+
+
+[branchQuestNotClear lblNotClear1 3000303]
+[flag IsClear true]
+[branch lblConf1]
+[label lblNotClear1]
+[flag IsClear false]
+[label lblConf1]
+
+
+[branch lblNotClear2 IsClear false]
+[scene 66400]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10204]
+[label lblConf2]
+
+[wipeFilter cinema 0.5 0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠ペンテシレイア
+剣の術に一点の曇りもなし、か。[wt 1.0][charaFace C 2][r]よし、ここで終わりだ！
+[k]
+
+＠ペンテシレイア
+貴様を戦士と認め、[r]私を[#罵:ののし]ってはいないと信用しよう！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+＠蘭陵王
+ありがとう、ペンテシレイア殿。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+[wt 1.2]
+[charaFace C 3]
+
+＠ペンテシレイア
+ところでその仮面……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠蘭陵王
+はい？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 0,-50]
+
+＠ペンテシレイア
+戦闘で湿気は籠もらないタイプか？[r]羨ましいな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠蘭陵王
+ああ。これはあくまで目元を隠すタイプなので。
+[k]
+
+[charaFace A 4]
+＠蘭陵王
+ただ、頭より少し高いので気を抜くと[r]ぶつけてしまうのはいただけないですね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠ペンテシレイア
+ふむ……なるほど。
+[k]
+
+[charaFace C 4]
+
+＠ペンテシレイア
+私がつけていた仮面は、土地柄もあってか[r]湿気が籠もりやすくてな……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠蘭陵王
+顔を全て覆う感じの？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠ペンテシレイア
+そう、それだ。[r]お陰で鼻が痒くなると大変でな……。
+[k]
+
+[messageOff]
+[fadeout black 1.4]
+[wait fade]
+
+[se ad8]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branch lblNotClear3 IsClear false]
+[scene 66600]
+[branch lblConf3]
+[label lblNotClear3]
+[scene 10310]
+[label lblConf3]
+
+[fadein black 1.4]
+[wait fade]
+[wt 0.6]
+
+[charaTalk off]
+[charaFace C 1]
+[charaFace A 1]
+[charaFadein C 0.4 -256,-50]
+[charaFadein A 0.4 -26,-50]
+[wt 1.1]
+
+[se ade74]
+[charaMove C -306,-50 0.6]
+[charaMove A -76,-50 0.6]
+[wt 0.2]
+
+[charaFadeout C 0.4]
+[charaFadeout A 0.4]
+[wt 1.7]
+
+[charaTalk on]
+[seStop ade74 0.2]
+
+＠
+[charaTalk C][line 3]と、ペンテシレイアと[r]仮面あるある話に興じる。
+[k]
+
+＠
+[charaTalk C]
+終わった頃には、二人とも[#和気藹々:わきあいあい]としており、[r]一安心。
+[k]
+
+[messageOff]
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.4 400,-50]
+[charaMove B 360,-50 0.6]
+[charaShake B 0.04 3 2 0.5]
+[wt 0.5]
+[charaShakeStop B]
+[wt 0.2]
+＠イアソン
+ちょ、ちょっと意図的に間違えただけなのに……。
+[k]
+
+＠
+[charaTalk C]
+イアソンは知らぬ。
+[k]
+
+[messageOff]
+[charaTalk B]
+[charaFadeout B 0.4]
+[charaMove B 360,-80 0.4]
+[wt 0.3]
+
+[se ad144]
+[wt 1.1]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

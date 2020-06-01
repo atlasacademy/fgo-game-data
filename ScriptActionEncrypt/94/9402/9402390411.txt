@@ -1,0 +1,1512 @@
+
+
+＄94-02-39-04-1-1
+
+[soundStopAll]
+
+[charaSet A 6010000 1 ジュリエット]
+[charaSet C 1012001 1 クリス]
+[charaSet D 6026000 1 伍]
+[charaSet F 98006000 1 雑魚エネミー]
+[charaSet G 1098120700 1 ？？？]
+[charaFilter G silhouette 00000080]
+[charaSet H 98115000 1 エフェクト用]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 30400]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠クリス
+はぁっ！
+[k]
+
+[messageOff]
+[se adm14]
+[effect bit_talk_h_slash01]
+[charaMoveReturn C -10,0 0.2]
+[wt 0.2]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.1]
+[se bac136]
+[charaPut H 1]
+[charaDepth H 10]
+[charaEffect H bit_talk_ichimon01wh]
+[wt 0.1]
+[se ad569]
+[charaShake F 0.05 3 3 0.5]
+[wt 0.5]
+[charaMove F 0,-50 0.4]
+[charaFadeout F 0.4]
+[wt 0.4]
+[se ad144]
+[seVolume ad144 0 0.5]
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ジュリエット
+すごい……オオカミを子犬扱いしてる。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠伍
+おいおい、オオカミなんざ狩っても美味くないんだ。[r]適当に追っ払うぐらいでいいんだぞ。
+[k]
+
+
+[messageOff]
+[se adm15]
+[charaPut H 1]
+[charaEffect H bit_talk_41]
+[charaMoveScale D 1.05 0.2]
+[charaMove D 0,-10]
+[wt 0.2]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_41]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaScale D 1.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.1]
+[effect bit_talk_13]
+[se bac149]
+[charaShake F 0.05 3 3 0.5]
+[wt 0.5]
+[se ad577]
+[wt 0.3]
+[se ad313]
+[charaMoveScale F 0.95 0.5]
+[charaMove F 0,-10 0.5]
+[charaFadeout F 0.5]
+[wt 0.5]
+[seStop ad313 0.5]
+
+[wt 1.0]
+
+
+[bgmStop BGM_EVENT_3 0.3]
+[wt 0.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk C]
+[charaFace D 5]
+[charaFace C 10]
+[charaFadein D 0.1 2]
+[charaFadein C 0.1 0]
+
+＠クリス
+はい、伍さん。[r]こちらは片付きました。
+[k]
+
+[charaFace D 1]
+
+＠伍
+こっちも済んだ。[wt 0.5][charaFace D 4][r]けど、肝心のお坊ちゃんは出てこないな。
+[k]
+
+[charaFace C 0]
+
+＠クリス
+草木を[#掻:か]きわけても出てくるのは野生動物ばかり……[r]どうやら、ここにはいないようですね。
+[k]
+
+＠伍
+隠れるにはもってこいの場所ではあるんだけどな。[r]俺クラスならともかく、ここに潜伏するのは
+[k]
+
+＠伍
+都会暮らしのお坊ちゃんでは無理だ。[r]オオカミや他の野獣に骨にされちまうのがオチだぜ。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ジュリエット
+怖いこと言わないでよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠クリス
+大丈夫ですよ、ジュリエット様。[r]今のところそれらしい痕跡もありませんね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠伍
+ここにいねえとなるとあとは海だが……まあ、無理だな。[r]海流も速いし、素人が本土まで泳ぎきれる距離でもねえ。
+[k]
+
+＠伍
+無駄足だったな。戻るとしよう。
+[k]
+
+[messageOff]
+[wipeout rightToLeft 0.7 1]
+[bgmStop BGM_EVENT_2 0.7]
+[se ad173]
+[se ad527]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[wt 0.5]
+[seStop ad173 0.5]
+[seStop ad527 0.5]
+
+[wipein leftToRight 0.7 1]
+[wait wipe]
+
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠？？？
+……行ったか。
+[k]
+
+＠？？？
+しかし、大したものだ。[r]腕の立つ用心棒というのは本当のようだな。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout G 0.1]
+[wt 1.0]
+
+[charaSet B 3011000 1 アーロン]
+[charaSet C 2012000 1 ハリエット]
+[charaSet D 1020000 1 アダムスカ]
+[charaSet E 3028002 1 アン]
+[charaSet G 4017000 1 ドロシー]
+[charaSet H 7028000 1 ローリー]
+
+[scene 58500]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ジュリエット
+ただいま。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ハリエット
+あら、お帰り。どうだった？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ジュリエット
+収穫なし。それらしい痕跡も見つからなかった。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠アーロン
+ええい、モーリスはまだ見つからないのか！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaSet C 1012001 1 クリス]
+[charaSet D 6026000 1 伍]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠ドロシー
+あなた、飲み過ぎよ……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠アーロン
+黙れ。これが飲まずにいられるか。[r]モーリスが行方不明など……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠アン
+我々はまず皆様の安全を守らなければなりませんので。[r]モーリスさんの捜索に割ける労力にも限度があります。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠アーロン
+モーリスの命以外に優先すべき事があるか！？[r]あいつは私の後継者だぞ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠ローリー
+ねえねえ、パパ。[r]どうしてお兄ちゃんいなくなったの？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠ドロシー
+ローリー、静かにしてなさい。
+[k]
+
+[charaFadeout G 0.1]
+[bgmStop BGM_EVENT_2 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠ローリー
+もしかして探偵さんを[se ade182]殺しちゃったから？
+[k]
+
+[messageOff]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk G]
+[charaFace H 0]
+[charaFace G 4]
+[charaFadein H 0.1 0]
+[charaFadein G 0.1 2]
+
+＠ドロシー
+ローリー、そういうこと言うのはよしましょうね。
+[k]
+
+＠ローリー
+でも見たんだもん。[r]昨日の夜、お兄ちゃんが探偵さんの部屋から出てくるの。
+[k]
+
+[messageOff]
+[charaTalk G]
+[charaFace G 2]
+[wt 1.0]
+
+[charaFace G 4]
+＠ドロシー
+ローリー、今のは嘘よね？[r]あなたは私と一緒に寝てたでしょう？
+[k]
+
+＠ローリー
+夜に目が覚めて、お部屋をこっそり抜け出したの。[r]その時に見たの。嘘じゃないよ。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaSet H 1020000 1 アダムスカ]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+[wt 1.2]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFace H 5]
+[charaFadein B 0.1 0]
+[charaFadein H 0.1 2]
+
+＠アーロン
+こ、こんな子供の言い分を信じるのか？
+[k]
+
+＠アダムスカ
+アーロンさん、我々だって信じたくはない。[r]信じたくはないが……
+[k]
+
+＠アダムスカ
+損得勘定から遠いところにいる子供だからこそ、[r]真実を言っているとは思えないだろうか？
+[k]
+
+[charaFace B 2]
+
+＠アーロン
+だからと言ってモーリスが[r]シェリンガム氏を殺した事にはならない！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠ドロシー
+あなた、少し頭を冷やして。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 1.0]
+[charaFace B 4]
+[wt 0.2]
+
+＠アーロン
+……私としたことが冷静さを欠いたようだ。[r]お見苦しい姿を見せて申し訳なかった。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFace B 4]
+[charaFadein H 0.1 2]
+[charaFadein B 0.1 0]
+
+＠アダムスカ
+いえ、こちらこそ[#不躾:ぶしつけ]なことを。
+[k]
+
+＠アーロン
+まだモーリスが殺人者になったと決まったわけではない。[r]が、このままモーリスが姿を現さない可能性は充分ある。
+[k]
+
+＠アーロン
+そうなればゴールディ家の先行きも怪しくなり、[r]何より[#此度:こたび]の縁談も立ち消えになってしまう。
+[k]
+
+＠アダムスカ
+それは我々としても避けたいのですが……
+[k]
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 1.0]
+[charaFace B 0]
+
+＠アーロン
+………………そうだな。
+[k]
+
+＠アーロン
+だから私から一つ、秘密の告白をしよう。[r]これは妻のドロシーでさえ知らない事だ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠ドロシー
+あなた、何を？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠アーロン
+できれば私の胸に一生秘めておこうと思ったのだが……
+[k]
+
+[bgmStop BGM_EVENT_5 0.1]
+[charaFace B 0]
+
+＠アーロン
+そこにいる[se ade182]クリスは私の実の子だ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFace C 9]
+[charaFadein G 0.1 2]
+[charaFadein C 0.1 0]
+
+＠ドロシー
+えっ？
+[k]
+
+＠クリス
+アーロン様！？
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaSet G 7023000 1 エヴァ]
+[charaSet H 2023000 1 ホーソーン]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠アーロン
+クリス……その反応を見るに、[r]商会では何も知らされていなかったようだな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠アン
+……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠アーロン
+昔は私も若かった。結婚後いくらか大人しくはなったが、[r]それでも特別にピンと来た女性とは夜を共にしていた。
+[k]
+
+[charaFace B 0]
+
+＠アーロン
+そうやって誕生したのがおまえだ、クリスよ。[r]ただ、当時はもう前の妻と結婚しており、
+[k]
+
+＠アーロン
+モーリスも生まれていた。[r]立場上、おまえを引き取るわけにはいかなかったのだ。
+[k]
+
+＠アーロン
+それでおまえをマーブル商会に頼むことになった。[r][#勿論:もちろん]、養育費分の付け届けと一緒にな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠クリス
+……そうだったのですか。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠アーロン
+私にとってモーリスは可愛い長男だ。[r]その思いに変わりはない。
+[k]
+
+[charaFace B 5]
+
+＠アーロン
+だが私はゴールディ家の当主として、[r]家の存続のためにできることは何でもする。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠伍
+まさかとは思いますが……[r]クリスを差し出せって言ってるんですかね？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠アーロン
+おお、そうとも！[r]シェリンガム氏を死なせ、モーリスの逃亡を許したのは、
+[k]
+
+＠アーロン
+マーブル商会の失態ではないのか？[r]この状況に責任がないとは言わせないぞ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠アン
+そちらの言い分はもっともです。[r]幸いクリスは見習いの身、抜けても痛手ではありません。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠伍
+見習いったって仕込むまで相当……つーか[#姐:あね]さん、[r]アンタだってクリスのことは可愛がって……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠アン
+余計な口を叩くな！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠伍
+……あー、[#覆:くつがえ]らないんですね。分かりやしたよ。
+[k]
+
+[charaFace D 0]
+
+＠伍
+良かったじゃねえか、クリス。[r]いずれはゴールディ家の大旦那だ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アーロン
+無論、クリスが抜ける分の補償はする。[r]マーブル商会とは今後も良好な関係でいたいからな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠クリス
+お待ち下さい、アン様。[r]今のお役目だけはやり遂げさせて下さい。
+[k]
+
+＠クリス
+それがこのクリスの、商会への最後のご奉公です。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠アン
+よかろう。ではこの島を去るまでは[r]あくまでマーブル商会の人間として扱おう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠アーロン
+私の後継者だと公言した者に[r]使用人のような働きなど……
+[k]
+
+[charaFace B 0]
+
+＠アーロン
+……いや、よそう。ケジメの問題らしい。[r]最後になるのだ、大目に見てやろう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠クリス
+それと……長らくお世話になりました。[r]アン様から受けた恩義は一生忘れません。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠アン
+……
+[k]
+
+[charaFadeout E 0.1]
+[bgmStop BGM_EVENT_11 1.0]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 1]
+
+＠ホーソーン
+待てよ。クリス君がゴールディ家に入るということは[r]それはつまり……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アーロン
+ジュリエット嬢の婚約相手はクリスになるということだ。[r]これで我々の目的は達成される。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ジュリエット
+え、嘘……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠エヴァ
+何を戸惑ってるの？[r]いいお話じゃない。素直に喜びなさい。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠クリス
+ジュリエット様、至らないところはあるとは思いますが[r]どうかよろしくお願いします。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ジュリエット
+あ……うん。そうね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠アーロン
+卑屈だな、クリスよ。[r]もう他人の顔色を[#窺:うかが]わなくていいのだぞ？
+[k]
+
+＠アーロン
+これからはゴールディ家を……[r]いや、ヴァイオレット家共々継ぐのだからな！
+[k]
+
+＠アーロン
+ハッハッハッハッ！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 1.0]
+
+
+[scene 58600]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠ホーソーン
+随分と豪勢な[#晩餐:ばんさん]だったね。[r]だがいささか食べ過ぎた。胃薬を飲まないと。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ジュリエット
+はあ……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace A 4]
+[charaFace H 3]
+[charaFadein A 0.1 2]
+[charaFadein H 0.1 0]
+
+＠ホーソーン
+ため息なんてついて……君も胃薬を飲むかい？
+[k]
+
+＠ジュリエット
+いい。そういうのじゃないから。
+[k]
+
+[charaFace H 1]
+
+＠ホーソーン
+ああ、クリス君のことで胸が一杯だったのか。[r]しかしいい相手じゃないか。
+[k]
+
+＠ホーソーン
+なあ、[%1]君。
+[k]
+
+？1：突然ではあるけど……
+？2：クリスさんはいい人だし……
+
+？！
+
+[charaFace A 2]
+＠ジュリエット
+……何が？
+[k]
+
+[charaFace A 4]
+
+＠ジュリエット
+さっきからみんなニヤニヤして……バッカじゃないの？
+[k]
+
+[messageOff]
+[se ad95]
+[charaMove A 300,0 0.4]
+[wt 0.4]
+[seStop ad95 0.5]
+
+[charaFace H 3]
+＠ホーソーン
+ジュリエット、どこに行くのかね？
+[k]
+
+[charaFace A 2]
+
+＠ジュリエット
+自分の部屋。[r]でも、絶対についてこないでよね！
+[k]
+
+[messageOff]
+[se ad95]
+[charaMove A 350,0 0.4]
+[charaFadeout A 0.4]
+[wt 1.0]
+[seStop ad95]
+
+[charaFace H 4]
+＠ホーソーン
+やれやれ、乙女心は難しい。でも確かに私が悪かった。[r]今から謝ってくるよ。
+[k]
+
+[messageOff]
+[se ad95]
+[charaMove H -200,0 0.4]
+[charaFadeout H 0.4]
+[wt 1.0]
+[seStop ad95]
+
+[charaSet D 2012000 1 ハリエット]
+[wt 1.5]
+
+[se ad95]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 1]
+[wt 0.5]
+[seStop ad95]
+
+＠ハリエット
+ふふ、今の聞いてたわよ？[r]あれは落第ねえ。
+[k]
+
+？1：クリスじゃ駄目なんですか？
+
+？！
+
+[charaFace D 0]
+＠ハリエット
+そりゃ、クリスは素敵な旦那様になると思うけど？[r]ジュリエットだってそれは分かってる。
+[k]
+
+[charaFace D 4]
+
+＠ハリエット
+だけどね、そんな単純な話じゃないのよねえ……
+[k]
+
+[charaFace D 1]
+
+＠ハリエット
+まあ、あなたのそういうところがジュリエットの[r]琴線に触れたのかもね。
+[k]
+
+？1：ジュリエットとは友達ですよ？
+
+？！
+
+[charaFace D 4]
+
+＠ハリエット
+あのね、あなたがどう思ってるかは関係ないの。[r]これはジュリエットの気持ちの問題。
+[k]
+
+[charaFace D 0]
+
+＠ハリエット
+あの子にほとんど友達がいないの、知ってる？[r]っていうかね、友達はもうあなただけなの。
+[k]
+
+？1：……え？
+
+？！
+
+＠ハリエット
+あなたも覚えがあるんじゃないかしら。[r]大学で変な連中から脅かされなかった？
+[k]
+
+＠ハリエット
+『名家であろうとヴァイオレット家は[r]　よくない噂がつきまとう一族だ』
+[k]
+
+＠ハリエット
+『そんな家の娘と一緒にいれば[r]　おまえの将来まで食いつぶされるぞ』って。
+[k]
+
+[charaFace D 4]
+
+＠ハリエット
+まあ、ゴールディ家側の人間の仕業なんだろうけど、[r]ずいぶんとつまらない事するわよね。
+[k]
+
+＠ハリエット
+ええ、よくない噂がすべてデマカセとは言わないわ。[r]一つの地域を牛耳るってことはそういう事だから。
+[k]
+
+＠ハリエット
+色々な人間の血と涙……あと、ちょっとの[#屍:しかばね]で[r]今の私たちの暮らしは成り立っているの。
+[k]
+
+＠ハリエット
+私たちにとってはそれが普通で当たり前だけど、[r]ジュリエットのお友達はそうじゃなかったみたい。
+[k]
+
+＠ハリエット
+だからお金持ちの家に生まれた美人のお嬢様だと思って[r]近づいてきた人たちはみんな逃げちゃったの。
+[k]
+
+[charaFace D 0]
+
+＠ハリエット
+[#勿論:もちろん]、ジュリエットだって家のことは承知していたから[r]友達と思っていた人たちが離れていったのも我慢できた。
+[k]
+
+[charaFace D 4]
+
+＠ハリエット
+けど我慢できるのと平気なのは違うでしょ。[r]あの子はとっても傷ついたの。ひとりで泣くぐらいね。
+[k]
+
+[charaFace D 0]
+
+＠ハリエット
+でもだからこそ……あの嫌がらせで離れていかなかった[r]あなたの存在に救われてるのよ。
+[k]
+
+[charaFace D 1]
+
+＠ハリエット
+そういう意味であなたはジュリエットの特別なの。[r]あなたさえ良ければこれからも一緒にいてあげてね。
+[k]
+
+＠ハリエット
+じゃあ、おやすみなさい。
+[k]
+
+？1：……おやすみなさい
+？2：（……ひとまず横になろう……）
+
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 1.0]
+[scene 10000]
+
+[charaSet A 5014000 1 ケイン]
+[charaSet B 7028000 1 ローリー]
+[charaSet C 4017000 1 ドロシー]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠A：？？？
+（子供はいいな……遊んでても怒られないし。[r]　大人みたいにやらなきゃいけない仕事だってない）
+[k]
+
+＠A：？？？
+（何よりいいのが……誰も警戒しないこと）
+[k]
+
+[messageOff]
+[se ad570]
+[wt 1.5]
+
+＠A：？？？
+（誰か来た……）
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_5 1.0]
+[se ad525]
+[wait fade]
+
+[scene 11000]
+
+[wipeFilter cinema 0.5 0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠ドロシー
+まあ、またベッドから抜け出したと思ったら、[r]こんな真っ暗な部屋に隠れて。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace B 1]
+[charaFace A 1]
+[charaFadein B 0.1 256,-50]
+[charaFadein A 0.1 -256,-50]
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk B]
+＠ローリー
+あ、ママ。[r]見つかっちゃったね、お兄ちゃん。
+[k]
+
+＠ケイン
+見つかってしまいましたナー。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠ドロシー
+もう。目を覚ましたら姿が見えなくて心配したんだから。[r]かくれんぼするならママに言いなさいね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-50]
+
+＠ローリー
+だってママ、すぐに寝かせようとするんだもん。[r]まだ遊んでたいのに。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠ケイン
+見つかった以上、ゲームは終わりですぞー？[r]続きはまた明日にー。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-50]
+
+＠ドロシー
+……ありがとうケイン。[r]モーリスはこんな風に遊んでくれなかったから。
+[k]
+
+＠ドロシー
+ローリーったら新しいお兄ちゃんができた[r]と思って[#懐:なつ]いてるのね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠ケイン
+うふふふ。[r]僕ぐらいでお兄ちゃんになれるなら良かったなー。
+[k]
+
+＠ケイン
+[#ヴァイオレット:う　　　　ち]だと姉さんたちは[r]妙にオトナぶってるというか、ね？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠ドロシー
+そうね。さ、もうおやすみの時間よ。[r]またベッドに戻りましょうね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠ローリー
+はーい。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠ケイン
+じゃあ僕も寝ますぞー。[r]明かりを消して。明かりを消して。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[wipeOff]
+[charaFadeout A 0.1]
+[scene 10000]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+＠A：？？？
+（やっぱり子供はいいな。誰も疑わないから）
+[k]
+[messageOff]
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[scene 10400]
+[wt 2.0]
+
+[charaSet A 98001000 1 マシュ]
+[charaSet H 2023001 1 プロフェッサーＭ]
+[charaSet C 9005001 1 ホームズ]
+
+[wipein openEye 1.0 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠マシュ
+おはようございます、先輩。[r]今回はどんな事がありましたか？
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+品のない男性と結婚させられそうだったヒロインが[r]一転して非の打ち所のない王子様と結ばれる……
+[k]
+
+[charaFace C 6]
+
+＠ホームズ
+まあ、ハッピーエンドではあるが、お話としては[r]いささか[#捻:ひね]りが足りないような気がするね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠マシュ
+わたしはとても素敵な展開だと感じましたが……[r]ジュリエットさんを応援したい気持ちでいっぱいです！
+[k]
+
+[charaFace A 4]
+
+＠マシュ
+でも……そう言っていられる状況ではないのですよね……
+[k]
+
+＠マシュ
+殺されてしまったシェリンガム、[r]そして行方の知れないモーリスさん……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+現時点でモーリスの行方について議論をしても不毛だ。[r]それよりもっと重要な話題があるだろう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠プロフェッサーＭ
+ゴールディ家の新たな後継者の出現だね。[r]そして新たなターゲットでもあるかもしれない。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+あっ……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+脅迫者の目的が両家の接近を阻止することにあるなら、[r]モーリスの失踪に脅迫者が関与している可能性は高い。
+[k]
+
+＠ホームズ
+だが、そうだとするとクリスの存在は脅迫者にとって[r]完全に計算外だ。再び実力行使に及ぶかもしれない。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠プロフェッサーＭ
+またも想定外、か。飛び入りの探偵に[r]明かされた隠し子とは、運のない犯人だ。
+[k]
+
+＠プロフェッサーＭ
+せっかくゴールディ家の次期当主を排除したのに、[r]新しい当主候補が出てくるなんて。
+[k]
+
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+特に何かを仕掛けるなら夜は絶好のチャンスだ。[r]脅迫者が本気なら機会を逃さないだろうね。
+[k]
+
+＠ホームズ
+狙われるのはクリスか、[r]あるいはジュリエットという事になるかな。
+[k]
+
+？1：ジュリエットが殺される？
+？2：今すぐ向こうに行って阻止しないと！
+
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad59]
+[cameraMove 1.0 -30,-10 1.5]
+[wt 1.0]
+[seStop ad59]
+[cameraMove 0.2 -30,-10 1.6]
+[wt 0.2]
+[shake 0.05 5 4 0.3]
+[se ade183]
+
+[wt 0.3]
+[cameraMove 0.5 -30,-10 1.5]
+[wt 0.5]
+[cameraMove 0.2 -30,-10 1.6]
+[wt 0.2]
+[shake 0.05 5 4 0.3]
+[se ade183]
+
+[wt 0.8]
+
+
+[messageShake 0.05 5 5 0.5]
+＠マシュ
+先輩、壁に頭を打ちつけないで下さい！[r]危ないです！
+[k]
+
+[messageOff]
+
+[cameraHome 1.5]
+[wt 2.0]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+落ち着きたまえ。こちらで気を失ったからといって[r]早く目覚めるとはかぎらないだろう。
+[k]
+
+[charaFace C 0]
+
+＠ホームズ
+それよりキミは覚悟を済ませるべきだ。[r]どんな惨劇が待っていても冷静に捜査ができるようにね。
+[k]
+
+[charaFace C 4]
+
+＠ホームズ
+まあ、私の[#杞憂:きゆう]で済めばいいのだが……
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

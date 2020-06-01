@@ -1,0 +1,1351 @@
+
+
+
+＄03-00-06-19-1-0
+
+
+
+
+[soundStopAll]
+
+[charaSet A 1017002 1 武蔵]
+[charaSet B 8001400 1 マシュ]
+[charaSet C 3041001 1 カイニス]
+[charaSet D 4040002 1 エウロペ]
+[charaSet E 9005001 1 ホームズ]
+[charaSet F 1098189810 1 ゼウス]
+[sceneSet G 94200 1]
+
+[sceneSet H 10000 1]
+[charaScale H 1.01]
+
+[charaSet R 5009000 1 エフェクト用ダミー]
+[charaSet S 5009000 1 エフェクト用ダミー]
+[charaSet T 5009000 1 エフェクト用ダミー]
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 10000]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk depthOff]
+[charaDepth R 0]
+[charaDepth S 1]
+
+[charaPut R 1]
+[charaEffect R bit_talk_kengekiall02]
+[charaPut S -70,50]
+[charaScale S 1.2]
+[charaEffect S bit_talk_14]
+[se ad32]
+[wt 0.3]
+[charaScale S 1.1]
+[charaPut S 60,10]
+[charaEffect S bit_talk_14]
+[se ad32]
+[wt 0.2]
+[charaScale S 1.4]
+[charaPut S -50,-20]
+[charaEffect S bit_talk_14]
+[se ad32]
+[wt 0.1]
+[charaScale S 1.0]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 91500]
+
+[fadein black 0.7]
+[wait fade]
+
+
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+[se ad399]
+[charaEffect B bit_talk_shield_mash_atn]
+[wt 0.6]
+
+[se ade344]
+[charaPut R -50,10]
+[charaEffect R bit_talk_impactlanding]
+[shake 0.03 7 7 1.5]
+[wt 1.6]
+[se ade345]
+[charaPut S 100,0]
+[charaEffect S bit_talk_impactlanding]
+[shake 0.03 7 7 1.5]
+[charaShake B 0.05 2 2 0.6]
+[charaMove B 0,-20 1.0]
+[se ad468]
+[wt 1.4]
+[seStop ad57 0.2]
+
+＠マシュ
+踏みつけを……耐えて……！
+[k]
+
+[charaFace B 2]
+＠マシュ
+このまま跳ね上げます、カイニスさん！
+[k]
+
+[messageOff]
+[se ad880]
+[se ad876]
+[fadeout white 0.2]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_shield_mash_atn]
+
+[shake 0.03 0 5 1.5]
+[fadein white 0.2]
+
+[wt 0.2]
+[se ad898]
+[seVolume ad898 0 0.6]
+[se ad882]
+[wait fade]
+[wt 0.6]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠カイニス
+ハッ！　デカブツの[#踵:かかと]をかち上げるかよ！[r]テメェ、大した莫迦力だぜマシュ・キリエライト！
+[k]
+
+[charaFace C 2]
+
+＠カイニス
+んじゃ、オレも[line 3]！[r]っらあああああああああああああああああ！
+[k]
+
+[messageOff]
+[messageOff]
+[se ad678]
+[seVolume ad678 0 0.4]
+[charaMoveScale C 1.1 0.2]
+[charaMove C 0,15 0.2]
+[charaFadeout C 0.2]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[wt 0.2]
+[blurOff motion 0.3]
+[wt 0.3]
+[charaScale C 1.0]
+[wt 0.2]
+[cueSe Battle bac169]
+[se ad878]
+[fowardEffect bit_talk_v_slash01]
+[wt 0.8]
+[se ad881]
+[se ad880]
+
+[se ad625]
+[shake 0.05 2 3 1.5]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠武蔵
+好機！
+[k]
+
+[messageOff]
+[effect bit_talk_quickmove]
+[charaFadeout A 0.2]
+[se ad73]
+[wt 0.6]
+
+[effect bit_talk_kengekiall02 0,0 F]
+[wt 0.2]
+[se ad687]
+[seVolume ad687 0 0.6]
+[wt 0.2]
+[se ad686]
+[seVolume ad686 0 0.6]
+[wt 0.2]
+[se ad686]
+[seVolume ad686 0 0.6]
+[wt 0.05]
+[fowardEffect bit_talk_kengekiall02 0,0 V]
+[wt 0.2]
+[se ad686]
+[seVolume ad686 0 0.6]
+[wt 0.2]
+[se ad687]
+[seVolume ad687 0 0.6]
+[wt 0.4]
+
+[charaPut R 1]
+[charaEffect R bit_talk_x_slash03]
+[cueSe Battle bac509]
+[wt 0.3]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.2]
+
+[bgmStop BGM_EVENT_24 2.5]
+
+[charaPut R 1200,1200]
+[charaEffectDestroy S]
+
+[se ad625]
+[se ad886]
+[seVolume ad886 0 0.6]
+[wt 1.5]
+[seStop ad886 2.0]
+[wt 0.5]
+[se ad619]
+[seVolume ad619 0 0.6]
+
+[wt 1.6]
+
+[seStop ad619 2.0]
+
+[se ad628]
+[effect bit_talk_impactlanding]
+[shake 0.05 1 6 1.5]
+[wt 3.5]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠エウロペ
+あ[line 6]
+[k]
+
+＠エウロペ
+あ、ああ……あああ……
+[k]
+
+＠エウロペ
+わたくしの……タロス、タロス、タロス……！
+[k]
+
+[charaFace D 10]
+
+＠エウロペ
+わたくしの……[r]愛するあの方から、賜った……大切な……
+[k]
+
+＠エウロペ
+タロス……！
+[k]
+
+[charaDepth D 5]
+[charaDepth E 4]
+
+[se ad73]
+
+[charaPut E 200,0]
+
+[charaEffect E bit_talk_quickmove]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 200,0]
+
+＠ホームズ
+失礼。ユア・マジェスティ。
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[se bac148]
+[charaEffect D bit_talk_13 0,30]
+[charaShake D 0.05 2 2 0.8]
+[wt 0.8]
+[charaMove D 0,-15 0.4]
+[charaFadeout D 0.4]
+[wt 0.2]
+[se ad775]
+[wt 0.5]
+
+？1：ホームズ！
+
+？！
+
+[charaFace E 6]
+
+＠ホームズ
+なに、当て身で眠っていただいたんだ。[r]この私がご婦人を手に掛ける訳がないだろう？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad632]
+[seVolume ad632 0 0.6]
+[wt 1.8]
+
+
+[effect bit_talk_thunder_01]
+[se ade346]
+[flashin once 0.2 0.2 FFFFFFAF FFFFFF00]
+[wt 2.0]
+
+[seStop ad632 2.0]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠ホームズ
+…………だが。
+[k]
+
+＠ホームズ
+紳士的行為だとしても、[r]全能神はお怒りかな。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 1.0]
+
+[bgm BGM_EVENT_114 0.1]
+
+＠ゼウス
+何故だ。
+[k]
+
+＠ゼウス
+何故、殺さぬ。[r]忘れたか。
+[k]
+
+＠ゼウス
+我は、おまえたちに神妃エウロペの処刑を命じた。[r]ならば是を[#恩寵:おんちょう]として速やかに実行せよ。
+[k]
+
+＠ゼウス
+何故……[r]殺さぬ？
+[k]
+
+＠ゼウス
+よもやこの局面においても、[r]ヒトとはヒトを生かす生命だと[#望む:かたる]のか？
+[k]
+
+？1：[line 6]。
+？2：…………それは、
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 21]
+[charaFadein C 0.1 1]
+＠カイニス
+いいや？
+[k]
+
+＠カイニス
+オレは大いに殺したいね！[r]オリュンポスの神々、テメェらは皆殺しだ！
+[k]
+
+＠カイニス
+ポセイドンの野郎はとうとうくたばったが、[r]ゼウス。テメェには散々苛つかされてンだ[line 3]
+[k]
+
+[charaFace C 2]
+
+＠カイニス
+此処で！　死ね！
+[k]
+
+＠カイニス
+天に溶け、雷に溶けて[#世界:ほし]に消えろ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ゼウス
+カイニス。ポセイドンの権能を授かった女よ。
+[k]
+
+＠ゼウス
+キリシュタリアのサーヴァントでありながら[r]神々に従わず、その愚かさを改めず、
+[k]
+
+＠ゼウス
+傲慢さ故にカルデアに敗れ、[r]ディオスクロイに粛清された。
+[k]
+
+＠ゼウス
+そこまでは余の予測の内だ。[r]だが、その後の行動は不可解極まる。
+[k]
+
+＠ゼウス
+何故、消滅をしていない。[r]何故、カルデアの側に立っている。
+[k]
+
+＠ゼウス
+何故[line 3]否。[r]そうなるよう、道を与えられたのか。
+[k]
+
+[charaFace F 3]
+
+＠ゼウス
+やるものだヴォーダイム。[r]これでは確かに、おまえの落ち度とは言えぬ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠カイニス
+おう。オレがカルデアについたのは、[r]テメェらオリュンポスの莫迦どもが莫迦だからだ！
+[k]
+
+＠カイニス
+やられたらやり返すのは自然な流れだろ？[r]あくまでオレの独断ってな！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠ゼウス
+神々の傲慢が生んだ結果と言うのだな。[r]おまえ自身の運命も含めて。
+[k]
+
+[charaFace F 0]
+
+＠ゼウス
+[line 3]ではおまえはどうだ、宮本武蔵。[r]おまえは汎人類史の英霊ではない。
+[k]
+
+＠ゼウス
+このオリュンポス同様、異聞帯にも等しき[r]“破棄された”歴史から転がり出たもの。
+[k]
+
+＠ゼウス
+おまえは何故、神に刃を向ける。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠武蔵
+何故って、カルデアの敵だからよ？[r]それ以外に理由はないわ。
+[k]
+
+＠武蔵
+汎人類史が正しいとか、[r]異聞帯にも残り続ける権利があるとか、
+[k]
+
+＠武蔵
+どっちが正しくてどっちが間違いだとか。[r]そういうの、真剣に考えられないの。
+[k]
+
+＠武蔵
+他人のために戦う時は、自分が心底信頼できる[r]人のために剣を振るうの。
+[k]
+
+[charaFace A 6]
+
+＠武蔵
+私はそういう人間なの。[r]なにしろ、根が悪党ですから。
+[k]
+
+[charaFace A 0]
+
+＠武蔵
+そして、いま私が剣を振るうのは自分のため。
+[k]
+
+＠武蔵
+生涯をかけて目指した境地にたどり着いて、[r]これを気持ち良く飛び越えるため。
+[k]
+
+[charaFace A 12]
+
+＠武蔵
+[line 3]大神ゼウス。[r]あるいは貴方が、とも思ったけど違うみたい。
+[k]
+
+＠武蔵
+私の剣の行き先は貴方じゃない。[r]その途中の、ただの大きな障害よ。
+[k]
+
+＠武蔵
+降りかかる火の粉は払わなくちゃ進めない。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ゼウス
+火の粉[line 3]
+[k]
+
+＠ゼウス
+旅を続け、旅の終わりを失った剣士。[r]天空にして全能たる我を前に、そう[#喩:たと]えるか。
+[k]
+
+＠ゼウス
+ならば如何する。
+[k]
+
+＠ゼウス
+ならば、おまえは、このオリュンポスにて、[r]おまえ自身を焼き尽くさんとする炎を前にして、
+[k]
+
+＠ゼウス
+如何にして、身を守り。[r]如何にして、己が道を歩むのか。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+[wt 1.2]
+[se bac306]
+[charaFace A 5]
+
+＠武蔵
+[line 3]それは当然、押し通るまで！
+[k]
+
+＠武蔵
+天空であろうと雷であろうと斬り伏せて、[r]私は、私の道を征く！
+[k]
+
+＠武蔵
+遙か頭上の空想樹！[r]否、今やアトラスの世界樹なる空想の根、すべて！
+[k]
+
+[charaFace A 2]
+
+＠武蔵
+速やかに！[r]斬り捨てる！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_114 2.0]
+
+[se ad61]
+[seVolume ad61 0 0.4]
+[effect bit_talk_lightning_02t]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+[wt 1.5]
+
+＠ゼウス
+ほう。
+[k]
+
+[charaFace F 1]
+
+＠ゼウス
+実に、面白い。
+[k]
+
+[charaFace F 0]
+
+＠ゼウス
+ヒト。[r]そして、その成れの果てたる英霊どもよ。
+[k]
+
+＠ゼウス
+おまえたちは考える。その小さき身の[#裡:うち]に、[r]ひとつずつ、異なる願いと苦悩を抱いて生きている。
+[k]
+
+[effectStop bit_talk_lightning_02t]
+
+＠ゼウス
+かくも小さく、[r]脆き身でありながら[line 3]
+[k]
+
+[messageOff]
+[charaFaceFade F 6 0.2]
+[wt 1.5]
+[charaFaceFade F 0 0.2]
+[wt 0.2]
+
+[bgm BGM_EVENT_71 0.1]
+＠ゼウス
+…………かつて、およそ一万と四千の周期の以前。
+[k]
+
+＠ゼウス
+[#白き:レウコス]マキアと名付けられた大戦を経て、[r]我は、我らは、白き滅びたる[#巨影:セファール]さえも打ち砕いた。
+[k]
+
+＠ゼウス
+そう。本来滅びる筈の[#先史文明:こ　の　せ　か　い]を、[r]力尽くで存続させた。
+[k]
+
+＠ゼウス
+だが[#此度:こたび]のおまえたち、汎人類史。[r]おまえたちは決して滅びではなく、神ではなく、
+[k]
+
+＠ゼウス
+滅びの化身でさえなく、[r]その分霊たる[#巨人:ギガース]でさえない。
+[k]
+
+[charaFaceFade F 6 0.2]
+
+＠ゼウス
+あまりに……[r]あまりに、小さきものである。
+[k]
+
+＠ゼウス
+小さきものよ。[r]か弱きものよ。
+[k]
+
+＠ゼウス
+再度、我はおまえたちに問い掛けよう。
+[k]
+
+[charaFaceFade F 0 0.2]
+
+＠ゼウス
+[line 5][#何故だ]。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+…………………………？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠ホームズ
+全能であるにしては、随分と質問が多い。[r]ゼウス神。貴方のそれは私たちへの慈悲なのかな？
+[k]
+
+＠ホームズ
+それとも或いは、単に、[r]既に知り得ている情報を再認するに過ぎないのか。
+[k]
+
+[charaFace E 5]
+
+＠ホームズ
+まあ、この場合は後者だろうが……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ゼウス
+何故。
+[k]
+
+＠ゼウス
+何故、おまえたちは旅をする。[r]何故、おまえたちは[#異聞帯:我　　ら]を殺す。
+[k]
+
+＠ゼウス
+既に、この惑星に於ける人理なるモノ、[r]刻まれた人類史のすべては白紙と化したというのに。
+[k]
+
+？1：……それは、もうあなたに言った
+
+[charaFaceFade F 6 0.2]
+
+＠ゼウス
+世界を取り戻す。[r]そうだな。
+[k]
+
+？2：世界を取り戻すために
+
+[charaFaceFade F 6 0.2]
+
+＠ゼウス
+世界を、取り戻す。
+[k]
+
+？！
+
+＠ゼウス
+…………この[#惑星:せかい]を、汎人類史を救うと？
+[k]
+
+[charaFaceFade F 1 0.2]
+
+[bgmStop BGM_EVENT_71 2.0]
+
+＠ゼウス
+はは。
+[k]
+
+＠ゼウス
+はは、ははははは。ははは。
+[k]
+
+[charaFace F 2]
+
+＠ゼウス
+は[messageShake 0.05 3 3 0.6]は、ははははははははははははははははははははは！[r]はははははははははははははははははははははははは！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ad875]
+[se ad14]
+[seVolume ad14 0 0.4]
+[shake 0.05 0 2 1.2]
+[effect bit_talk_pressure]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+[charaShake B 0.05 2 2 0.4]
+
+＠マシュ
+っ……！[r]また、あの重圧です……！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[effectStop bit_talk_pressure]
+[wt 0.8]
+[seStop ad14 2.0]
+
+[bgm BGM_MAP_58 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠ゼウス
+[f large]面白い！
+[k]
+
+[messageOff]
+[effect bit_talk_thunder_01]
+[se ade346]
+[flashin once 0.2 0.2 FFFFFFAF FFFFFF00]
+[wt 2.0]
+
+＠ゼウス
+やはり、おまえたちは面白い。[r]全能たる我にすべてを委ねるならまだしも！
+[k]
+
+＠ゼウス
+小さきものが己が力でやり遂げると、そう言うか！[r]我が軌道大神殿オリュンピア＝ドドーナの祭壇で！
+[k]
+
+＠ゼウス
+愉快。実に、愉快。
+[k]
+
+＠ゼウス
+ああ……[r]そうか。おまえたちは、そうなのだな。
+[k]
+
+＠ゼウス
+[#我が娘:アルテミス]！　[#我が弟:ポセイドン]！　[#我が妹:デメテル]！　[#我が娘:アフロディーテ]！[r]魂なき虚ろの鋼では、おまえたちには到底勝てまい！
+[k]
+
+＠ゼウス
+その愚直、その[#眩:まばゆ]き輝きをなんと言う！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ad875]
+[se ad14]
+[seVolume ad14 0 0.4]
+[shake 0.05 0 2 1.2]
+[effect bit_talk_pressure]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+[charaShake C 0.05 2 2 0.4]
+
+＠カイニス
+畜生……！[r]何度も、何度も、同じ手品ばっかり……ッ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[charaShake A 0.05 2 2 0.4]
+
+＠武蔵
+この……重さ……！[r]骨まで、[#軋:きし]む……！
+[k]
+
+[charaFace A 2]
+
+＠武蔵
+マシュ！[r][%1]の近くにいてあげて！
+[k]
+
+＠武蔵
+貴女が[#具:そな]えた加護なら、きっと、[r]多少は緩和できる……んじゃないかなあと期待！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠マシュ
+は、はい！[r]マスター、わたしの近くに！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[effectStop bit_talk_pressure]
+[seStop ad14 2.0]
+[wt 0.5]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ゼウス
+カルデアのものたち。[r]汎人類史の我ならばソラに上げ、星座としただろう。
+[k]
+
+＠ゼウス
+だが[line 3]
+[k]
+
+＠ゼウス
+我は違う。
+[k]
+
+＠ゼウス
+我は、寛大であるが慈悲の神ではなく、[r]雷を以て、ヒトを征する神である。
+[k]
+
+[charaFaceFade F 6 0.2]
+
+＠ゼウス
+[#真体:アリスィア]よ。[r]此処に。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ad632]
+[seVolume ad632 0 0.5]
+[effect bit_talk_lightning_02t]
+[wt 1.5]
+
+[se ade130]
+[se ad630]
+[scene 91501 3.0]
+[wt 3.0]
+
+[se ad842]
+[se ade346]
+[effect bit_talk_thunder_02]
+[se ad879]
+[skip false]
+[wt 2.0]
+
+＠神殿音声
+[line 3]大帯電、確認。
+[k]
+
+＠神殿音声
+[line 3]大主神、承認。
+[k]
+
+＠神殿音声
+[line 3]神器クロノス＝クラウンとの同調、完了。[r][line 3][#真体:アリスィア]の空間偽装をただちに解除します。
+[k]
+
+＠神殿音声
+[line 3]空間展開、大祭壇領域直上に設定。[r][line 3]神格真体名、ゼウス。
+[k]
+
+＠神殿音声
+[line 3]指定霊基：エンシェント・ゴッド／ルーラー。
+[k]
+
+＠神殿音声
+[line 3]展開。展開。展開。[r][line 3]周囲の知性体は速やかに退去してください。
+[k]
+
+[messageOff]
+[se ade393]
+[shake 0.05 3 3 1.5]
+
+[bgmStop BGM_MAP_58 1.0]
+[wipeout rectangleStripUpToDown 0.8 1.0]
+[wait wipe]
+
+[effectStop bit_talk_lightning_02t]
+
+[scene 10000]
+[wt 1.0]
+
+[wipein rectangleStripUpToDown 0.1 1.0]
+[wait wipe]
+[seStop ade48 1.5]
+[seStop ad632 1.5]
+
+[se ade346]
+[effect bit_talk_thunder_01]
+
+[wt 1.5]
+
+[se ade346]
+[se ad842]
+[seVolume ad842 0 0.6]
+[effect bit_talk_thunder_02]
+
+[fadeout white 1.2]
+[wait fade]
+
+
+[wt 2.0]
+
+[scene 94200]
+
+[fadein white 3.0]
+[bgm BGM_EVENT_114 0.1]
+[criMovie talk_mov052 bgmPlay false]
+[wait fade]
+[wt 5.0]
+[overlayFadein G 1.5 0,-200]
+[wt 2.5]
+
+？1：空、に……！
+
+？！
+
+？1：巨大な、神の……顔……！
+
+？！
+
+[skip true]
+
+[charaFadeout G 1.0]
+
+＠
+超大。
+[k]
+
+＠
+神顔。
+[k]
+
+
+[messageOff]
+[se ad895]
+[seVolume ad895 0 0.1]
+[seVolume ad895 1.0 1.0]
+[seStop ade393 2.0]
+
+[wt 2.0]
+
+
+＠
+遙かソラへと届かんばかりの神鋼の巨大構造体。[r]これこそが、神の[#象:かたち]。
+[k]
+
+＠
+星間都市山脈オリュンポスに座す神々の主にして、[r]星の海を渡る船団の旗艦。
+[k]
+
+＠
+天空と雷を司る[#真体:アリスィア]。[r][line 3]神としての名は、全能の大主神ゼウス。
+[k]
+
+＠
+名の意味は“輝き”。[r]天空に於ける自然現象のすべてを支配する大神。
+[k]
+
+＠
+あらゆる権能と機能の数々を以て、人類を導く大要塞。
+[k]
+
+
+＠
+[line 3]人を、[#庇護:ひご]する神である。けれど。
+[k]
+
+
+[clear]
+
+[se ad875]
+
+＠
+[f large][align center]『　平伏せよ　』[align]
+[k]
+
+＠
+[f large][align center]『　崇拝せよ　』[align]
+[k]
+
+＠
+[f large][align center]『　我は全能神ゼウス　』[align]
+[k]
+
+[messageOff]
+[se ade346]
+[se ad842]
+[seVolume ad842 0 0.6]
+[effect bit_talk_thunder_02]
+[wt 3.0]
+
+
+
+[charaPut H 1]
+[charaFadeTime H 0 0.6]
+[wt 0.1]
+
+＠アデーレ
+……星間戦闘用殲滅型機動要塞、旗艦ゼウス！
+[k]
+
+＠マカリオス
+神器クロノス＝クラウンを制する事で[r]十二神の全権能を所有する……
+[k]
+
+＠マカリオス
+奴は、無敵の要塞だ！
+[k]
+
+＠マカリオス
+攻撃の事は考えるな！[r]まずは防御に徹して、生き延びろ！
+[k]
+
+＠マカリオス
+アイテール起動まで、耐えろ……！
+[k]
+
+
+[charaFadeout H 0]
+[wt 0.1]
+
+＠
+[align center]『　我は　天空　』[align]
+[k]
+
+＠
+[align center]『　我は　[#雷霆:らいてい]　』[align]
+[k]
+
+＠
+[align center]『　ソラより万象を支配せし全能の神なれば　』[align]
+[k]
+
+＠
+[align center]『　地球は　我が救おうぞ　』[align]
+[k]
+
+＠
+[f large][align center]『　神話復権である　』[align]
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.6 1.0]
+[wait wipe]
+
+[scene 91501]
+[wt 0.1]
+
+[wipein rectangleStripUpToDown 0.6 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠ホームズ
+ならばゼウス！[r]今度は私が、貴方に問おう！
+[k]
+
+＠ホームズ
+空想樹マゼラン！[r][line 3]貴方の名付けによれば、アトラスの世界樹！
+[k]
+
+＠ホームズ
+地球に張り巡らされたこの空想の根を、[r]貴方はどうするつもりか！
+[k]
+
+＠ホームズ
+異聞帯発生及び維持のための要であると同時に、[r]『異星の神』降臨のための触媒でもあるはず！
+[k]
+
+[charaFace E 5]
+
+＠ホームズ
+貴方は、いずれ降り立つ『異星の神』と……[r]共にこの地球を支配するつもりなのか？
+[k]
+
+＠ホームズ
+貴方はまさに全能の神そのもの。[r]そんな貴方が、『異星の神』[line 3]
+[k]
+
+[charaFace E 2]
+
+＠ホームズ
+恐らく同一の神話体系でさえない輩と、共同統治を？[r]いいや、あり得ない！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.6 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[scene 94200]
+[wt 0.1]
+
+[wipein rectangleStripDownToUp 0.6 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠
+[align center]『　……　』[align]
+[k]
+
+＠
+[align center]『　やはり　』[align]
+[k]
+
+＠
+[align center]『　貴様は危険な存在だ　賢者よ　』[align]
+[k]
+
+＠
+[align center]『　貴様は　我を見てはならぬ　』[align]
+[k]
+
+＠
+[align center]『　貴様は　神を見てはならぬ　』[align]
+[k]
+
+＠
+[align center]『　その瞳は　世界の敵である　』[align]
+[k]
+
+[charaPut H 1]
+[charaFadeTime H 0 0.6]
+
+＠ホームズ
+話を逸らすのはやめていただこう！
+[k]
+
+＠ホームズ
+それに、今も……[r]私は、[#貴方の呪詛を受け続けている]！
+[k]
+
+[charaFadeout H 0]
+[wt 0.1]
+
+＠
+[align center]『　……　』[align]
+[k]
+
+[charaPut H 1]
+[charaFadeTime H 0 0.6]
+
+＠ホームズ
+貴方は一体何を考えているのです、全能神。[r]『異星の神』に……
+[k]
+
+＠ホームズ
+貴方は、[#どのように対処するつもりなのか]！
+[k]
+
+[messageOff]
+[charaFadeout H 0]
+
+[se ade346]
+[se ad842]
+[seVolume ad842 0 0.6]
+[effect bit_talk_thunder_02]
+[wt 2.0]
+
+＠
+[align center]『　嗚呼　小さきものども　』[align]
+[k]
+
+＠
+[align center]『　おまえたちの存在は我に多くを気付かせた　』[align]
+[k]
+
+＠
+[align center]『　世界を背負う苦悩　』[align]
+[k]
+
+＠
+[align center]『　その小さき身に背負わせる無惨　』[align]
+[k]
+
+＠
+[align center]『　決して　我が民にもたらしてなるものか　』[align]
+[k]
+
+[se ad875]
+
+＠
+[align center]『　ヒトよ　』[align]
+[k]
+
+＠
+[align center]『　悩まず　抗わず　考えず　従順たる[#葦:あし]であれ　』[align]
+[k]
+
+＠
+[align center]『　我だけが考えよう　』[align]
+[k]
+
+＠
+[align center]『　我だけが苦悩しよう　』[align]
+[k]
+
+＠
+[align center]『　おまえたちはただ在り続け　』[align]
+[k]
+
+＠
+[align center]『　ただ微笑み　』[align]
+[k]
+
+
+＠
+[align center]『　神への崇敬を捧げるだけで　よい　』[align]
+[k]
+
+[messageOff]
+[se ade282]
+[se ad489]
+[se ade393]
+[se ad911]
+[scene 94201 0.3]
+
+[se ade346]
+[se ad842]
+[seVolume ad842 0 0.6]
+
+[wt 1.5]
+
+＠
+[align center]『　汎人類史　』[align]
+[k]
+
+＠
+[align center]『　考える[#葦:あし]たちよ　』[align]
+[k]
+
+＠
+[align center]『　黒き光に触れる愚者よ　』[align]
+[k]
+
+＠
+[align center]『　[#恐るべきものたちよ]　』[align]
+[k]
+
+＠
+[align center]『　暫し眠れ　』[align]
+[k]
+
+＠
+[align center]『　再び　目覚めた時には　』[align]
+[k]
+
+＠
+[align center]『　その[#双眸:そうぼう]　神話復権を為す我を仰がん　』[align]
+[k]
+
+
+[messageOff]
+[effect bit_talk_thunder_01]
+[shake 0.05 3 3 0.9]
+[se ade346]
+[flashin once 0.2 0.2 FFFFFFAF FFFFFF00]
+[wt 1.4]
+
+
+[se ade346]
+[se ad842]
+[seVolume ad842 0 0.8]
+[effect bit_talk_thunder_02]
+[shake 0.05 3 5 1.0]
+[fadeout white 0.6]
+[wait fade]
+
+[wt 0.8]
+[scene 10000]
+[seStop ade393 2.5]
+[fadein white 2.0]
+[wait fade]
+
+
+
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_114 0.4]
+[wait fade]
+[soundStopAll]
+[end]

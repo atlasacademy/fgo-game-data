@@ -1,0 +1,183 @@
+
+
+＄94-04-01-11-1-1
+
+[soundStopAll]
+
+[charaSet A 98100400 1 マシュ]
+[charaSet B 1040000 1 葛飾北斎]
+[charaSet C 1008300 1 ジークフリート]
+[charaSet D 4034001 1 優雅な海賊]
+[charaSet E 98018100 1 心をなくした客]
+[charaSet F 99363000 1 理性的なマシーン]
+[charaSet G 99363000 1 ？？？]
+[charaSet J 98115000 1 エフェクト用]
+
+[scene 81500]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+
+[charaFace F 0]
+[charaFadein F 0.1 0]
+
+＠心をなくした客
+チクショウ、こいつら強ぇ！[r]こうなったら自爆してでもコインとったらぁ！
+[k]
+
+＠理性的なマシーン
+アト一回。一回　デ　宇宙　ガ[line 3][bgmStop BGM_EVENT_80 1.0][r]ガ？　ガ？　危険、危険、巨大ナ物体ガ上空、
+[k]
+
+＠？？？
+が[messageShake 0.02 3 3 0.6]おーーーー！[r]たーーべちゃーーーうぞーーーーー！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad241]
+[seVolume ad241 0 0.2]
+[se ad214]
+[seVolume ad214 0 0.5]
+[wt 1.5]
+
+[seStop ad214 1.0]
+[seStop ad241 1.0]
+[se ad211]
+[seVolume ad211 0 0]
+[seVolume ad211 1.4 0.5]
+[wt 0.4]
+
+[effect bit_talk_tidal_wave]
+[wt 1.0]
+
+[seStop ad211 0.1]
+[se ad226]
+[seVolume ad226 0 0.8]
+[se ad416]
+[seVolume ad416 0 0.8]
+
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 1.5]
+
+[se ad414]
+
+[seStop ad414 1.0]
+
+[se ad218]
+
+[wt 1.0]
+[seStop ad218 1.0]
+[wt 3.0]
+
+[se ade39]
+[wt 1.8]
+
+＠場内アナウンス
+たいへんお騒がせしました。[r]興奮したお客様２名、無事保護させていただきました。
+[k]
+
+＠場内アナウンス
+引き続き、エレガント＆スリリングなカジノ、[r]水天宮をお楽しみください。
+[k]
+
+[messageOff]
+[se ade40]
+[wt 2.2]
+
+
+[charaTalk depthOff]
+[charaDepth C 3]
+[charaDepth B 2]
+[charaDepth A 1]
+
+[charaFace C 2]
+[charaFadein C 0.1 -330,0]
+
+[charaFace B 20]
+[charaFadein B 0.1 30,0]
+
+[charaFace A 6]
+[charaFadein A 0.1 330,0]
+
+[wt 2.5]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_55 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠マシュ
+疲れているのでしょうか……[r]いま、波の向こうに大きな人影があったような……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ジークフリート
+……ああ。警備員はいないが、[r]得体の知れない守護神がいるようだ。
+[k]
+
+[charaFace C 0]
+
+＠ジークフリート
+カジノには先ほどのような暴徒が多々いるだろう。[r]気を引き締めなければ。
+[k]
+
+＠ジークフリート
+とりあえず小太郎とネロと合流しよう。[r]なに、広いカジノじゃない。すぐ見つかるさ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠葛飾北斎
+オウ。それなら別行動といこう。[r]昼になったらここに戻ってくる、でいいかい？
+[k]
+
+？1：了解。みんな、自制心強めでよろしく
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ジークフリート
+もちろんだ。午後のステージが本命だからな。[r]それまでは力を温存しよう。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_55 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

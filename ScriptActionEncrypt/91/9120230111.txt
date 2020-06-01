@@ -1,0 +1,122 @@
+
+＄91-20-23-01-1-1
+
+[soundStopAll]
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 98115300 1 ホームズ]
+[charaSet C 2023002 1 モリアーティ]
+[charaSet D 6005001 1 ジャック]
+[charaSet E 1098124510 1 ダ・ヴィンチ]
+
+[charaSet F 98115000 1 エフェクト用]
+
+[charaPut F 1200,1200]
+[charaEffect F bit_talk_10_LowLevel]
+
+[scene 10900]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad22]
+[se ad31]
+[wt 1.5]
+[seStop ad31 1.0]
+[seStop ad22 1.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_77 0.1]
+[charaPut F 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+魔本、消滅確認しました。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠ホームズ
+おや？[r]少しノイズがあったようだが。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+魔霧の影響……でしょうか。
+[k]
+
+[charaFace A 12]
+
+＠マシュ
+あの特異点自体は消滅しましたが、[r]それと酷似した霧が発生しているようです。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+ジャミングか……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠モリアーティ
+大丈夫大丈夫。[r]さー、ズンドコズンドコ行こうぜー！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ジャック
+だいじょうぶだよ、[#おかあさん:マスター]。[r]霧はわたしたちの『りょーいき』だから！
+[k]
+
+＠ジャック
+ズンドコズンドコいこー！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠モリアーティ
+……[#迂闊:うかつ]にヘンな単語を使うと、[r]記憶しちゃいそうね、この子……。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

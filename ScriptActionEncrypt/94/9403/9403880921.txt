@@ -1,0 +1,176 @@
+
+
+
+＄94-03-88-09-2-1
+
+[soundStopAll]
+
+[charaSet A 7026000 1 茶々]
+[charaSet B 11007002 1 魔王信長]
+[charaSet C 1027000 1 沖田総司]
+[charaSet D 10007001 1 沖田オルタ]
+[charaSet E 3038000 1 長尾景虎]
+[charaSet F 98001000 1 マシュ]
+
+[charaSet H 98115000 1 煉獄剣]
+
+
+
+
+
+
+
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66700]
+[branch lblConf]
+[label lblNotClear]
+[scene 60300]
+[label lblConf]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠茶々
+へー、あの後大変だったのね。
+[k]
+
+＠茶々
+茶々ったらけものパークで遊んでたから[r]気づかなかったし。
+[k]
+
+[charaFace A 0]
+＠茶々
+あ、これお土産のアタラン餅。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠魔王信長
+安直な土産物を売りおって……。
+[k]
+
+[charaFace B 19]
+＠魔王信長
+にしても、姿が見えんと思っとったら、[r]我が入れなかったパークで楽しく過ごしとったとはの。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠茶々
+ま、沖田ちゃんも無事だったし結果オーライよね！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠沖田総司
+特異点で迷子とかほんと勘弁してくださいよ、私オルタ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠沖田オルタ
+でも、みんなが迎えに来てくれて嬉しかったぞ。嬉しみ。
+[k]
+
+？1：見つかってよかったよ
+
+＠沖田オルタ
+次はしっかり行き先を調べて旅のしおりを作るとしよう。
+[k]
+
+？2：煉獄にＧＰＳをつけるとか……
+
+＠H：煉獄剣
+おいやめろ、ＧＰＳついてる魔剣とかしまらないだろ。
+[k]
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 21]
+[charaFadein B 0.1 1]
+＠魔王信長
+やれやれ、それにしても人騒がせな箱よな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+＠長尾景虎
+あの小さな箱にあれほどの世界を展開できるとは、[r]なんとも恐ろしい箱ですね、あれは。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 0.6]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad59]
+[seVolume ad59 0 0.1]
+[seVolume ad59 0.8 1.0]
+[wt 1.0]
+[seStop ad59]
+
+[se ad8]
+[wt 0.4]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.4 50,0]
+[charaMove F 1 0.4]
+[wt 0.5]
+[bgm BGM_EVENT_27 0.1]
+
+＠マシュ
+た、大変です！　今度はあの箱に取り残された森君が、[r]あらゆるバーサーカーを集めた特異点をですね！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 20]
+[charaFadein B 0.1 1]
+
+＠魔王信長
+ふ[messageShake 0.05 5 5 0.4]はははははは！　そういうのもう良いから！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_27 2.0]
+[wait fade]
+[soundStopAll]
+[end]
+

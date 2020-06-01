@@ -1,0 +1,317 @@
+
+
+
+＄94-04-78-13-1-0
+
+[soundStopAll]
+
+[charaSet A 25005000 1 ボイジャー]
+[charaSet B 3043000 1 エリセ]
+[charaSet C 2016000 1 エミヤ・オルタ]
+[charaSet D 5025001 1 エジソン]
+[charaSet E 1098192800 1 マリー]
+[charaSet F 98001000 1 マシュ]
+[charaSet H 5009000 1 エフェクト用ダミー]
+[charaSet I 5009000 1 エフェクト用ダミー2]
+[charaSet J 5009000 1 エフェクト用ダミー3]
+
+[scene 20730]
+
+[pictureFrame cut170_gameframe_bright]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[se ad216]
+[fadeout white 0.5]
+[wait fade]
+
+[pictureFrame]
+[wt 0.1]
+
+[fadein white 1.0]
+[seStop ad216 1.0]
+[wait fade]
+[wt 0.4]
+
+[fowardEffect bit_talk_gamefinish]
+[se ade445]
+[wt 5.3]
+
+[fadeout white 0.4]
+[wait fade]
+
+[scene 10001]
+[pictureFrame]
+[wt 1.0]
+
+[fadein white 1.5]
+[scene 96300 1.5]
+[wait fade]
+[wt 1.0]
+
+[charaPut H -250,400]
+[charaPut I 0,400]
+[charaPut J 250,400]
+
+[charaEffect H bit_talk_token_change02]
+[charaEffect I bit_talk_token_change02]
+[charaEffect J bit_talk_token_change02]
+
+[charaMove H -250,0 2.0]
+[charaMove I 0,0 2.0]
+[charaMove J 250,0 2.0]
+[se adm19]
+[seVolume adm19 0 0.3]
+[seVolume adm19 1.0 1.0]
+[wt 2.0]
+
+[wt 1.5]
+[seStop adm19 1.0]
+[wt 2.5]
+[charaEffectDestroy H bit_talk_token_change02]
+[charaEffectDestroy I bit_talk_token_change02]
+[charaEffectDestroy J bit_talk_token_change02]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠マシュ
+トークンの皆さんが、降り注いでいらっしゃいました。[r]勝利者たる、先輩の手へ[line 3]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 19]
+[charaFadein B 0.1 1]
+
+＠エリセ
+……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_90 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth B 2]
+
+[charaTalk A]
+[charaFace B 4]
+[charaFadein B 0.1 0]
+[charaFace A 11]
+[charaFadein A 0.1 2]
+
+＠ボイジャー
+エリセ。もうやめよう。[r]いっしょに、かえろう。
+[k]
+
+[charaFace B 13]
+
+＠エリセ
+帰るって……いったいどこへ？
+[k]
+
+[charaFace B 0]
+
+＠エリセ
+私たちはトークン化された英霊たちと同じなんだ。[r][#遊戯界:このせかい]での役割を終えなきゃ帰れない。
+[k]
+
+[charaFace A 0]
+
+＠ボイジャー
+でも、エリセ。きみ、まけたよ。
+[k]
+
+[charaFace B 5]
+
+＠エリセ
+まだ……終わりじゃない。[r]最後のゲームが残ってる！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エミヤ・オルタ
+そうだな。[r]メモによれば……謎のゲームは、全部で５つ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠エジソン
+うむ。[r]そして今回は、[#遊戯界:monde du jeu]第４の[#勝負:ゲーム]だったぞ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ade430]
+[seVolume ade430 0 0.1]
+[seVolume ade430 3.5 0.3]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠マリー
+素敵だわ♪　また楽しませてもらえるのね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[seStop ade430 1.5]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠マシュ
+勝敗は決したはずですが……[r]まだゲームが続くとすれば、その対戦相手は……？
+[k]
+
+＠マシュ
+先輩、[#路面電車:ト　 ラ　 ム]が近づいてきます。[r]次のゲームへ向け、間もなく発車するようです。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ボイジャー
+いくのかい、ぼくたち？
+[k]
+
+？1：もちろん[&！:だよ]
+
+？2：エリセも[#路面電車:ト　 ラ　 ム]に乗って
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 1]
+
+＠エリセ
+え……？　なっ……！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ボイジャー
+そっか。それは、いいね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠エリセ
+[&きみ:あなた]たちとは敵同士だ！[r]決着がつくまで、馴れ合ったりなんてしない！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠ボイジャー
+エリセ。またきみは、そんなことを。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 1]
+
+＠マシュ
+……確かに、わたしたちは戦っています。[r]でも、それはゲームの中での話のはず。
+[k]
+
+[charaFace F 1]
+
+＠マシュ
+エリセさん。わたしたち、敵じゃありません。[r]同じゲームのプレイヤーです。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[se ade430]
+[seVolume ade430 0 0.4]
+[seVolume ade430 1.0 0.9]
+
+[charaTalk B]
+[charaFace B 19]
+[charaFadein B 0.1 1]
+
+＠エリセ
+ああ、そうだ！　そうだけどさ！[r]くっ……！
+[k]
+
+[messageOff]
+[wt 0.2]
+[charaMove B -800,0 0.6]
+[se ad132]
+[se ade149]
+[seVolume ade149 0 0.1]
+[seStop ad132 1.5]
+[seStop ade149 1.5]
+[seStop ade430 1.5]
+[wt 0.2]
+[charaFadeout B 0.4]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ボイジャー
+まって、エリセ！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_90 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

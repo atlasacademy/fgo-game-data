@@ -1,0 +1,202 @@
+
+
+
+＄03-00-06-03-1-0
+
+
+
+[soundStopAll]
+
+[sceneSet A 93400 1]
+[charaSet B 9005001 1 ホームズ]
+[charaSet C 8001410 1 アーマード・マシュ（ゴーグルなし）]
+[charaSet D 1017001 1 武蔵]
+[charaSet E 8001400 1 マシュ]
+[charaSet S 5009000 1 エフェクト用ダミー１]
+[charaSet T 5009000 1 エフェクト用ダミー２]
+
+[charaScale A 1.01]
+
+[scene 91900]
+
+[charaFadein A 0 0,-200]
+
+
+[fadein black 1.5]
+[wait fade]
+
+
+[bgm BGM_EVENT_71 0.1]
+
+＠
+[f large]『侵入者発見』
+[k]
+
+＠
+[f large]『排除開始』
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.6 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[wipein rectangleStripUpToDown 0.6 1.0]
+[wait wipe]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+[wt 0.1]
+
+＠ホームズ
+青銅巨人！[r]神話では怪物とされる存在だが、[wt 0.5][charaFace B 2]そうか！
+[k]
+
+＠ホームズ
+ロードス島の伝承を取り込んだのか[line 3][r]なるほど青銅の巨人、神に鋳造された大怪異！
+[k]
+
+＠ホームズ
+星間都市山脈オリュンポスにあっては[r]侵入者を撃退する自動防衛機構といったところか！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad674]
+[wt 0.25]
+[se ad674]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+＠C：マシュ
+魔力計測！[r]計測数値、限界値を超えています！
+[k]
+
+＠C：マシュ
+神霊級の出力です！[r]魔力性質は……巨人種のものとは異なっています！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠武蔵
+さっすがギリシャ、青銅の巨人ときた！[bgmStop BGM_EVENT_71 1.0][r]いかにも刃が通じにくい雰囲気だけど[line 3]
+[k]
+
+[charaFace D 5]
+
+＠武蔵
+このまま見逃してくれる訳もないわよね！
+[k]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaFace D 2]
+
+＠武蔵
+[%1][&君:]、[r]マシュ！
+[k]
+
+＠武蔵
+見付かったからには最早やむなし！[r]この[#堅:かった]そうなのにはお帰り願いましょう！
+[k]
+
+？1：了解！
+？2：マシュ、戦闘準備！
+
+？！
+
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth E 2]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+[se ade57]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[charaTalk off]
+[charaFace E 7]
+[charaFadein E 0.4 1]
+[wt 0.5]
+[charaFadeout C 0]
+
+＠マシュ
+[#霊基外骨骼:オ ル テ ナ ウ ス]出力上昇！[r]戦闘機能解放！
+[k]
+
+＠マシュ
+調律機能問題なし！[r]霊基覚醒率、基準値クリア！
+[k]
+
+[messageOff]
+[se ad668]
+[wt 0.1]
+[charaMove E 0,5 0.2]
+[charaMoveScale E 1.05 0.2]
+[wt 0.1]
+[seStop ad668 0.1]
+
+[charaFace E 2]
+
+＠マシュ
+[line 3]マシュ・キリエライト、いきます！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[wt 0.5]
+[charaMove D 0,-5 0.3]
+
+[cueSe Battle bac305]
+[wt 0.5]
+
+＠武蔵
+数多の世界、数多の異境、巡り巡った[#武者修行:むしゃしゅぎょう]！[r]斬った妖物魔物など数えておらぬが是は別！
+[k]
+
+＠武蔵
+[#遙:はる]けき[#希臘:ギリシャ]の青銅巨人とは初死合い！[r]斬って斬れぬモノかどうか、此処に試し奉る！
+[k]
+
+[charaFace D 2]
+
+＠武蔵
+新免武蔵、いざ[line 3]勝負！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

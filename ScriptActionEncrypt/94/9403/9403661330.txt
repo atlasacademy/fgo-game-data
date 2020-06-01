@@ -1,0 +1,755 @@
+
+＄94-03-66-13-3-0
+
+[soundStopAll]
+
+[charaSet A 1098165700 1 ムネーモシュネー]
+[charaSet B 4032000 1 ライネス]
+[charaSet C 6039000 1 グレイ]
+
+[charaSet D 9008001 1 アストライア]
+
+[charaSet E 1098123210 1 ゴルドルフ]
+[charaSet F 99502600 1 マシュ]
+[charaSet G 1098124510 1 ダ・ヴィンチ]
+[charaSet H 98115300 1 ホームズ]
+
+[charaSet I 98006200 1 エフェクト用]
+
+[scene 10000]
+[charaEffect I bit_talk_lens_flare]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.5]
+[se ad216]
+[wt 1.5]
+
+[se ad641]
+[scene 10001 1.0]
+[wt 2.0]
+
+[fadeout white 0.1]
+[wait fade]
+
+[charaPut I 1200,1200]
+[charaEffectStop I bit_talk_lens_flare]
+
+[scene 74201]
+[wt 0.1]
+
+[fadein white 1.0]
+[wait fade]
+
+[se ad207]
+[seVolume ad207 0 0.8]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠ライネス
+おい、グレイ！　我が弟子！　大丈夫か！[r]状況は分からないが、あの空間から脱出したらしい。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ムネーモシュネー
+…………
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ライネス
+どうやら、逃がしてくれはしないか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ムネーモシュネー
+想定外のことがいくつもありました。ですが、[r]だからこそ、最後は計画通りでなければなりません。
+[k]
+
+＠ムネーモシュネー
+でなければ、誰も救われないでしょう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[seStop ad207 1.5]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+
+＠グレイ
+[%1]さんも、[r]ライネスさんも渡せません！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[messageOff]
+[wt 1.0]
+[effect bit_talk_40 0,-370]
+[se ad73]
+[se ad59]
+[fowardEffect bit_talk_quickmove 0,0 H]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.2 0,20]
+[charaMove D 0,0 0.3]
+[effectStop bit_talk_40]
+[wt 0.3]
+[seStop ad59]
+[wt 0.5]
+
+[charaFace D 5]
+
+＠アストライア
+まったくですわ。[bgm BGM_EVENT_63 0.1][r]ずいぶん手をかけさせますわね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠ライネス
+アストライア！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠アストライア
+どなたかの宝具で、外殻が破壊されましたから。[r]ええ、とんだ無様を晒しましたわ。
+[k]
+
+[charaFace D 5]
+
+＠アストライア
+ですが、これで裁定の場が調いました。[r]関係者がすべて集い、星に近きこの場ならば。
+[k]
+
+[messageOff]
+[wt 0.5]
+[se ad474]
+[charaEffect D bit_talk_36_bl]
+
+[wt 1.0]
+[seStop ad474 1.5]
+[wt 1.5]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut D -1200,-1200]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ムネーモシュネー
+何をする！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠アストライア
+無論、私のなすべきことを！
+[k]
+
+[messageOff]
+
+[se ad474]
+[wt 1.0]
+[charaEffectStop D bit_talk_36_bl]
+
+[effect bit_talk_blue_fire]
+[wt 1.5]
+
+[se ad300]
+[wt 0.1]
+[backEffect bit_talk_charge_blu]
+
+
+[charaChange D 9008002 0 fade 1.0]
+[wait charaChange D]
+
+[fowardEffect bit_talk_06_blue 0,-200]
+
+[effectStop bit_talk_blue_fire]
+[seStop ad632 1.5]
+[wt 2.5]
+
+＠アストライア
+我は招く星の法廷。[r]我は掲げる断罪の剣。
+[k]
+
+＠アストライア
+正しき裁きをここに。[r]正しき[#赦:ゆる]しをここに。
+[k]
+
+＠ライネス
+アストライアの第二宝具……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[charaTalk on]
+[charaTalk D]
+[wt 0.7]
+[charaFace D 2]
+
+＠アストライア
+『[#ここに秩序は帰還せり:ヤ ム ・ レ デ ィ ト ・ エ ト ・ ウ ィ ル ゴ]』[line 2]！
+[k]
+
+[messageOff]
+[se ad476]
+[wt 1.0]
+
+[fadeout white 1.5]
+[bgm BGM_EVENT_63 1.5 0.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+[fowardEffectDestroy bit_talk_06_blue]
+[backEffectStop bit_talk_charge_blu]
+
+[charaSet I 98006200 1 通信用]
+
+[scene 10000]
+
+[seStop ad476 1.0]
+[se ad472]
+[seVolume ad472 0 0]
+[wt 1.5]
+
+[fadein white 1.0]
+[wait fade]
+
+[seVolume ad472 1.0 1.0]
+[wt 0.8]
+
+[effect bit_talk_radiallight01]
+[wt 2.0]
+[effectStop bit_talk_radiallight01]
+
+[fadeout white 1.5]
+[wait fade]
+
+[scene 74201]
+[wt 1.0]
+
+[fadein white 1.0]
+[seStop ad472 1.0]
+[bgm BGM_EVENT_63 1.0 1.0]
+[wait fade]
+
+
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠グレイ
+空が……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠ライネス
+スモッグに隠されていた夜空が、[#露:あらわ]に……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[messageOff]
+[wt 0.4]
+
+[charaPut I 1]
+[se ad13]
+[charaEffect I bit_talk_10_LowLevel]
+[wt 0.2]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠マシュ
+先輩！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ゴルドルフ
+おお、やっとつながったかね！[r]待たされすぎて、痩せてしまいそうだったぞ！
+[k]
+
+？1：今度は本当のマシュ！？
+？2：ゴルドルフ新所長も！
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+
+＠アストライア
+私の第二宝具は、あるべき形にすべてを戻します。[r]秩序は帰還し、罪は[#赦:ゆる]される。
+[k]
+
+[charaFace D 0]
+
+＠アストライア
+たとえ、誰かの手によって、[r]この特異点が閉ざされていたとしても。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠マシュ
+先輩がレイシフトしてすぐに通信がつながらなくなって、[r]一瞬だけ交信できたんですが、姿も見えなくて。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ライネス
+ああ、最初の霊基グラフのことを言ってた通信。[r]あれだけが本物だったのか。
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠ダ・ヴィンチ
+もちろん、ノウム・カルデアからさ！[r]いやあ、今回の調整は手こずったよ！
+[k]
+
+[charaFace G 0]
+
+＠ダ・ヴィンチ
+そして、状況は少し前からモニタリングできていた。
+[k]
+
+＠ダ・ヴィンチ
+シャドウ・ボーダーの底に残ったデータから、[r]君の存在も確定できたよ、ムネーモシュネー。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[bgmStop BGM_EVENT_63 1.0]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠ムネーモシュネー
+…………お前は………[#あなた]は………。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ダ・ヴィンチ
+君がなぜこんな行為に至ったのかも、[r]私には分かるような気がするんだけど……どうかな？
+[k]
+
+[charaFace G 7]
+
+＠ダ・ヴィンチ
+同じくレオナルド・ダ・ヴィンチにつくられたものとして、[r]胸襟を開いて話をするつもりはあるかい？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ムネーモシュネー
+やめろ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ダ・ヴィンチ
+聞く耳持たない、か。まあそうだろうね。[r]今更といえば今更だ。私もここに届くのが遅すぎた。
+[k]
+
+[charaFace G 14]
+
+＠ダ・ヴィンチ
+うん。時間が足りなかった。[r]天才でも、こればかりはどうにもできないからね。
+[k]
+
+
+
+[charaFace G 0]
+
+＠ダ・ヴィンチ
+[%1][&君:ちゃん]、[r]キミに委ねてかまわないかな？
+[k]
+
+？1：そのつもりです
+？2：最後まで、やらせてほしい
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ライネス
+ああ、もちろんだとも。我が弟子。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[bgm BGM_MAP_6 0.1]
+
+[charaFace B 0]
+
+
+＠ライネス
+なあ、おとぎ話のパッチワークを覚えているか。[r]あのときは言わなかったんだがね。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[wipeFilter cinema 0.5 0]
+[cameraFilter gray]
+
+[imageSet E back10000 1]
+[imageSet F cut108_mask1 1]
+[charaScale E 1.01]
+
+[scene 73000]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+＠ライネス
+隠れる理由には、よくあるホワイダニットがある。[r][#見つけてほしいから]、だよ。
+[k]
+
+[messageOff]
+[scene 73100 1.0]
+[charaFadeTime E 0.3 0.5]
+[wt 1.4]
+
+[charaFadein F 0.7 0,-200]
+[wt 1.5]
+
+＠ライネス
+仮面をつける理由はもっと単純だ。[r][#あなたと話したいが]、[#私の姿は知らせたくない]。
+[k]
+
+[messageOff]
+[charaFadeout F 0.3]
+[wt 0.4]
+
+[charaFadeout E 1.0]
+[scene 73700 1.0]
+[wt 1.0]
+
+
+＠ライネス
+ああ、[#蒸気絢爛:じょうきけんらん]のパッチワークについては[r]蒸気王がずばり言ってたな。
+[k]
+
+＠ライネス
+あの土地は、矛盾に目をつむらないと成立しない。[r]何かを忘れていないと、ありえないと分かってしまう夢。
+[k]
+
+＠ライネス
+[#忘れていたい]という願いが、[r]あのパッチワークのホワイダニットだった。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[wipeOff]
+[cameraFilter normal]
+
+[scene 74201]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠ムネーモシュネー
+だから……なんだと言うんですか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ライネス
+意味はないよ。[r]正直、[#なぜやったか:ホ  ワ  イ  ダ  ニ  ッ  ト]なんて、今更意味はない。
+[k]
+
+＠ライネス
+だけど、この特異点や、そこで起こった事件については、[r]ひょっとしたら、君の心理が影響してたんじゃないのか。
+[k]
+
+＠ライネス
+私たちが触れてきた、忘却にまつわる事件は、[r]結局、君が求めてやまなかったものじゃないのか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠ホームズ
+おや。[r]私をおいて、探偵らしいことをしてるじゃないか。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠グレイ
+まさか、シャーロック・ホームズ……？！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠ライネス
+さすがカルデア。探偵の中の探偵までいるわけか。[r]これではさも探偵っぽく言ったのが、気恥ずかしくなる。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠ホームズ
+いや興味深かった。エルメロイⅡ世も言ってたが、[r]神秘にメスを入れるなら、そんなアプローチになるのか。
+[k]
+
+[charaFace H 1]
+
+＠ホームズ
+胸を張るといい。[r]謎を解き明かしたなら、残るのは犯人との対峙だけさ！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ライネス
+調子よく言ってくれるが、これは困ったな。[r]私は探偵じゃなくて、魔術師なんだよ。
+[k]
+
+[charaFace B 8]
+
+＠ライネス
+それも結構ひねくれ者の類だ。真っ当にやるには、[r]真っ当な弟子に手を貸してもらわないと。
+[k]
+
+？1：もちろんだよ
+？2：自分でいいのなら
+
+？！
+
+[charaSet I 1098166200 1 トリムマウ]
+
+[messageOff]
+[wt 0.5]
+[charaFaceFade B 1 0.5]
+[wt 1.0]
+
+＠ライネス
+……ありがとう。我が弟子。
+[k]
+
+[bgmStop BGM_MAP_6 1.5]
+
+[charaFace B 3]
+
+＠ライネス
+ああ、くそ、ようやくちゃんと言えた。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[charaShake A 0.05 3 3 0.7]
+[se ad149]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠トリムマウ
+聖槍とムネーモシュネーの同調、低下を確認しました。[bgm BGM_EVENT_24 0.1][r]アストライアの第二宝具の結果と思われます。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ライネス
+特異点の閉鎖がゆるんだことで、[r]フェイク・ロンゴミニアドの強度も保てなくなったな。
+[k]
+
+[charaFace B 2]
+
+＠ライネス
+さあ、我が弟子！　気張りどころだぞ！[r]グレイもいいな！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠グレイ
+はい。最後まで、手伝わせてください。[r]パッチワーク・ロンドンでの最終戦闘、開始します！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.5]
+[wait fade]
+[soundStopAll]
+[end]

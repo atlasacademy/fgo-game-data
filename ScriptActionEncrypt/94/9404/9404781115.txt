@@ -1,0 +1,183 @@
+
+
+
+
+＄94-04-78-11-1-5
+
+[soundStopAll]
+
+[skip false]
+
+[maskout black 0]
+[wait mask]
+
+[charaSet A 9008001 1 アストライア]
+[charaSet C 3043000 1 エリセ]
+[charaSet D 98001000 1 マシュ]
+[charaSet E 1098192800 1 マリー]
+[charaSet H 98115000 1 エフェクト用]
+[charaSet I 98115000 1 エフェクト用2]
+[charaSet J 98115000 1 エフェクト用2]
+
+[scene 20730]
+
+[pictureFrameTop cut170_gameframe_bright]
+
+[skip true]
+
+[fadein black 0]
+[wait fade]
+[maskin black 1.0]
+[wait mask]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+[charaEffect A bit_talk_06]
+[wt 1.0]
+
+
+＠アストライア
+みごとな戦いでした！[r]さあ、[#財宝:トークン]を返しましょう。収めなさい。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+[wt 0.3]
+
+[charaPut H -250,400]
+[charaPut I 0,400]
+[charaPut J 250,400]
+
+[charaEffect H bit_talk_token_change02]
+[charaEffect I bit_talk_token_change02]
+[charaEffect J bit_talk_token_change02]
+
+[charaMove H -250,0 2.0]
+[charaMove I 0,0 2.0]
+[charaMove J 250,0 2.0]
+[se adm19]
+[seVolume adm19 0 0.3]
+[seVolume adm19 1.0 1.0]
+[wt 2.0]
+
+[wt 1.5]
+[seStop adm19 1.0]
+[wt 2.5]
+[charaEffectDestroy H bit_talk_token_change02]
+[charaEffectDestroy I bit_talk_token_change02]
+[charaEffectDestroy J bit_talk_token_change02]
+
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠アストライア
+判決を下します。正義は為され、示されました。[r]勝者、宇津見エリセ！　その名を高らかに讃えましょう！
+[k]
+
+[messageOff]
+[se ade406]
+[wt 0.2]
+[flashin once 0.1 0.6 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaFadeout A 0.1]
+[wt 0.2]
+[charaEffectStop A bit_talk_06]
+[wt 0.1]
+[seStop ade406 0.6]
+[wt 1.2]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-50]
+
+＠エリセ
+ありがとうございます、女神よ。[r]天空の星座を仰ぐたび、私もあなたを讃えましょう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 0,-50]
+
+＠マシュ
+先輩……。
+[k]
+
+？1：惜しかった[&ね:よね]
+
+？2：あと一歩だった[&んだけど:のにな]
+
+？！
+
+[charaFace D 8]
+
+＠マシュ
+はい。本当に……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,-50]
+
+＠マリー
+観客の立場からすると、とっても面白い勝負だったわ。[r]お疲れさま、[%1]♪
+[k]
+
+[charaFace E 0]
+
+＠マリー
+そして、エリセさんもね。[r]あなたの戦い方、とってもどきどきしたわ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 0,-50]
+
+＠エリセ
+え……あっ、はい。あの……ありがとうございます……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠マリー
+ふふ……本当にかわいらしい方ねえ。[r]砂糖菓子より繊細で、マドレーヌより柔らかくて[line 3]
+[k]
+
+[charaFace E 7]
+
+＠マリー
+でも、ちょっと苦みが恋しくなったかも。[r]深煎りの[#珈琲:コーヒー]みたいに。
+[k]
+
+[messageOff]
+[maskout black 2.0]
+[bgmStop BGM_EVENT_5 2.0]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+

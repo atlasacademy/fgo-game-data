@@ -1,0 +1,588 @@
+
+
+
+＄03-00-06-13-2-0
+
+
+
+[soundStopAll]
+
+[sceneSet A 94000 1]
+[charaSet C 1098191200 1 アデーレ]
+[charaSet D 1098191300 1 マカリオス]
+[charaSet E 7010001 1 カリギュラ]
+[charaSet F 8001410 1 マシュ]
+[charaSet G 9005001 1 ホームズ]
+[charaSet H 1017001 1 武蔵]
+[charaSet I 8001400 1 アーマード・マシュ（ゴーグルあり）]
+[sceneSet J 94100 1]
+[sceneSet K 94101 1]
+[charaSet S 5009000 1 エフェクト用ダミー１]
+[charaSet T 5009000 1 エフェクト用ダミー２]
+
+[charaScale A 1.01]
+[charaScale J 1.01]
+[charaScale K 1.01]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+
+[charaFadein A 0 0,-200]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad895]
+[wt 1.5]
+[seStop ad895 1.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_71 0.1]
+
+＠
+『ヒトよ、[#噎:むせ]び泣け』
+[k]
+
+＠
+『ヒトよ、平伏せよ』
+[k]
+
+＠
+『おまえたちの苦悶の叫びはすべて、この私に届く』
+[k]
+
+＠
+『案ずる事などない』
+[k]
+
+＠
+『[#明日にはその苦痛も消えている]』
+[k]
+
+[messageOff]
+[se ad895]
+[wt 2.0]
+[seStop ad895 1.0]
+[wt 1.0]
+
+＠
+『カルデアを[#悉:ことごと]く殺し尽くすまで』
+[k]
+
+＠
+『もう暫し、おまえたちも殺し合っていろ。市民よ』
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_71 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[scene 92601]
+[wt 1.0]
+[skip false]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_62 0.1]
+
+
+＠ホームズ
+…………作戦は以上。
+[k]
+
+＠ホームズ
+[#やってみなければ分からない]。[r]それが、現時点に於ける我々の破神戦術だ！
+[k]
+
+＠カイニス
+なんだよそりゃあ！[r]はははははははは、出たとこ勝負だな！
+[k]
+
+＠ホームズ
+敵戦力を正確に数値化できないものでね。[r]こうなれば、当たって砕けながら勝機を狙うまでだ。
+[k]
+
+＠ホームズ
+だが現在の我々には複数の対抗手段がある。[r]これをもって、機神アフロディーテへの破神を為す！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_62 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[scene 10000]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[criMovie talk_mov049 bgmPlay true]
+
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 92601]
+[wt 0.5]
+[skip true]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_24 0.1]
+
+
+＠アデーレ
+私たちが上空にいる事が察知されました！[r]霊子戦攻撃、こちらに来ます！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[se ad903]
+[wt 1.0]
+
+＠アデーレ
+！？
+[k]
+
+＠アデーレ
+英霊カリギュラ、なぜキャノピーを開放して[line 3]！？
+[k]
+
+[messageOff]
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 1.0 0.6]
+[wt 1.2]
+
+[se ad7]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.7 1]
+[wt 1.0]
+
+＠カリギュラ
+余の舞台である！[r]ならば、余が立たずして如何とする！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.3]
+
+[se ad903]
+[wt 1.5]
+
+＠マカリオス
+キャノピー緊急閉鎖！
+[k]
+
+＠マシュ
+キャノピーの真上、カリギュラ帝が直立しています！[r]そして……魔力の急激な上昇……！
+[k]
+
+＠アデーレ
+アフロディーテの霊子戦攻撃、到達します！
+[k]
+
+[seStop ad556 2.0]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠カリギュラ
+おおおッ！
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth E 1]
+
+[effect bit_talk_36]
+[se ad39]
+[wt 1.5]
+[seStop ad39 0.7]
+[effectStop bit_talk_36]
+[wt 0.6]
+
+[charaFace E 2]
+
+＠カリギュラ
+[f large][line 3]『[#我が心を喰らえ、月の光:フ　 ル　 ク　 テ　 ィ　 ク　 ル　 ス　 ・　 デ　 ィ　 ア　 ー　 ナ]』！
+[k]
+
+[messageOff]
+[wt 0.3]
+
+[backEffect bit_talk_caligula_np]
+[se ad968]
+[se ad966]
+[wt 2.0]
+[seStop ad968 0.4]
+[se ad967]
+[wt 2.5]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+
+＠マシュ
+これは……！[r]カリギュラさんの宝具……！
+[k]
+
+
+
+＠ホームズ
+精神汚染はまだ中和できている！[r]恐らく敵は出力を上げてくるだろう！
+[k]
+
+＠ホームズ
+攻撃を避けながら急降下し、[r]直接攻撃を仕掛ける！
+[k]
+
+＠ホームズ
+[line 3]マカリオス！
+[k]
+
+
+
+＠マカリオス
+掴まってろ！[r]カリギュラはキャノピーにしがみついてろ！
+[k]
+
+＠マカリオス
+いッくぞおおおおおおおおおおおおお！
+[k]
+
+
+
+＠武蔵
+いざ！
+[k]
+
+
+
+＠I：マシュ
+行きます、マスター！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[se ade8]
+[se ade123]
+[wait wipe]
+[charaFadeout I 0.1]
+[charaTalk depthOff]
+[charaDepth A 1]
+[overlayFadein A 0.1 0,-200]
+[wt 0.5]
+[skip false]
+[cameraMove 0 0,0 1.2]
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wt 0.7]
+[seStop ade123 0.5]
+[wait wipe]
+[wt 0.5]
+
+＠
+『見える、見えるぞ小さき者！』
+[k]
+
+＠
+『小癪にも翼を使うだなんて、思い上がったもの！』
+[k]
+
+＠
+『神に、その小さき身で挑むか！　人間！』
+[k]
+
+[messageOff]
+[criMovie talk_mov049 bgmPlay false]
+[wt 1.0]
+[charaFadeout A 1.5]
+
+
+[scene 10000]
+[wt 12.5]
+
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[cameraMove 0.1 0,0 1.01]
+[scene 92601]
+[wt 0.1]
+
+[skip true]
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠カリギュラ
+おお……！[r]おおおおおおおおおおおおお……！！
+[k]
+
+[charaFace E 2]
+
+＠カリギュラ
+[f large]ディアァアアナアアア！！
+[k]
+
+[messageOff]
+[wt 0.2]
+
+
+[backEffect bit_talk_caligula_np]
+[se ad968]
+[se ad966]
+[wt 2.0]
+
+[seStop ad968 0.4]
+[se ad967]
+[wt 2.5]
+
+＠カリギュラ
+おお、神よ！　美神ウェヌスよ！[r]汎人類史における太母シルウィアの祖たる、美しき神！
+[k]
+
+＠カリギュラ
+トロイア王家のアンキセス王子、[r]あなたが愛したその男の息子こそは、アイネイアス！
+[k]
+
+＠カリギュラ
+彼こそは、神祖の母シルウィアの祖なり！[r]すなわち……
+[k]
+
+＠カリギュラ
+[#あなたの愛がローマを生んだ]のだ！[r]その事実を、異聞帯に生きるあなたは知るまいが！
+[k]
+
+＠カリギュラ
+余は！　忘れまい！
+[k]
+
+＠カリギュラ
+たとえ今は、愛なくして愛を統べる神なれど！[r]余は、ローマは、あなたへの愛を忘れじ！
+[k]
+
+[bgmStop BGM_EVENT_24 3.0]
+[skip false]
+
+＠カリギュラ
+そして[line 3]
+[k]
+
+＠カリギュラ
+人の[#浪漫:ローマ]を以て、異聞帯のあなたと余は決別しよう！[r]見るがいい！　これが！　人の願いの形である！
+[k]
+
+[charaFace E 2]
+
+＠カリギュラ
+[f large]来い！　ライダー！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.3]
+
+[se ad474]
+[charaPut S 1]
+[charaEffect S bit_talk_36]
+[wt 2.5]
+
+[fadeout white 1.0]
+[wait fade]
+[charaEffectDestroy S]
+[charaTalk depthOff]
+[charaDepth J 1]
+[charaDepth K 2]
+
+[scene 10000]
+[seStop ad474 0.2]
+[wt 0.5]
+[fadein white 0.7]
+[wait fade]
+[criMovie talk_mov050 bgmPlay false]
+
+[wt 15.0]
+[bgm BGM_EVENT_82 0.1]
+[wt 3.0]
+[overlayFadein J 2.0 0,-200]
+[wt 2.5]
+
+＠黄金の大武者
+[f large]ゴオオオオオオオオルデンッ！！！
+[k]
+
+＠黄金の大武者
+[f large][line 3]ダゼ！！
+[k]
+
+[skip true]
+
+＠
+『な……に……！？』
+[k]
+
+＠
+『貴様は……何だ……！』
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+
+
+＠
+[line 3]星間都市山脈オリュンポス。[r][line 3]都市区画東部、上空。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+＠
+空を見上げていた。[r]人々の多くが。
+[k]
+
+＠
+美神の霊子情報攻撃によって魂を、精神を[r]破壊されかけたオリュンポス市民のおよそ八割強が、
+[k]
+
+＠
+空を見た。
+[k]
+
+＠
+空征く異形を掴む、人のカタチを。[r]嘲笑の機神を掴む、鋼のヨロイを目にしていた。
+[k]
+
+＠
+ソレは、[#奇:く]しくも[line 3]
+[k]
+
+
+
+
+
+＠
+数千年の昔。ゼウスの絶対支配を否定し、[r]人との共生を望んだ[#軍神:アレス]の似姿のようではあった。
+[k]
+
+＠
+[line 3]異形を阻む、巨大な人型！
+[k]
+
+＠
+[line 3]支配を拒む、人類の守護者！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+＠I：マシュ
+先輩……巨大な、人型の構造体が……！
+[k]
+
+＠I：マシュ
+機神アフロディーテに取り付いています！
+[k]
+
+＠I：マシュ
+どこか、日本の……[r]平安時代を思わせる意匠……！
+[k]
+
+＠アデーレ
+破神召喚陣、緊急試験起動に成功！[r]英霊・坂田金時の宝具情報体を仮想展開！
+[k]
+
+＠マカリオス
+成功だ！
+[k]
+
+＠マカリオス
+大召喚陣を利用した、仮想召喚！
+[k]
+
+＠マカリオス
+破神作戦の要である存在とは違うが[line 3][r]それでも！　機神に立ち向かう、大いなる力だ！
+[k]
+
+[messageOff]
+[charaFadein K 0 0,-200]
+[se ad908]
+[wt 0.1]
+[charaFadeout J 0.4]
+[wt 1.0]
+
+＠黄金の大武者
+このオリュンポスで！[r]オレたちは命をかけた！
+[k]
+
+＠黄金の大武者
+大召喚陣はゼウスを倒す[#ＶＩＰ:グランドクラス]を[#喚:よ]ぶモンだが、[r]その前段階！　露払いにと置いていった宝具情報！
+[k]
+
+＠黄金の大武者
+[#オレっち:坂 田 金 時]の霊核の一部を混ぜ込んだ[#とっておき]！[r]それが！　平安最強、頼光四天王のフェイバリット[line 3]
+[k]
+
+＠黄金の大武者
+かつて[#北山蓮台野:きたやまれんだいの]の大土蜘蛛を討ち果たせし大金剛！[r]その名も、ゴールデン・ヒュージ・ベアー号！
+[k]
+
+[se ad938]
+[effect bit_talk_41]
+＠ゴールデン・ヒュージ・ベアー号
+[f large]大宝具『[#摂津式大具足:せ　っ　つ　し　き　お　お　ぐ　そ　く]・[#熊野:く　ま　の]』！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_82 1.0]
+[effectDestroy bit_talk_41]
+[wt 1.5]
+
+[bgm BGM_EVENT_24 0.1]
+＠
+[f large]『小癪な絡繰如きが！』
+[k]
+
+＠ゴールデン・ヒュージ・ベアー号
+[f large]絡繰はお互い様だバカ！
+[k]
+
+＠ゴールデン・ヒュージ・ベアー号
+カルデアの大将と！[r][#一騎当千:いっきとうせん]の英霊たち！
+[k]
+
+＠ゴールデン・ヒュージ・ベアー号
+さあ[line 3]ここは、フルパワーでやるとしようや！
+[k]
+
+＠ゴールデン・ヒュージ・ベアー号
+[f x-large]神を！
+[k]
+
+＠ゴールデン・ヒュージ・ベアー号
+[f x-large][#斃:たお]すぜ！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

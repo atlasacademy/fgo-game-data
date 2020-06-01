@@ -1,0 +1,779 @@
+
+
+＄94-04-49-09-2-0
+
+[soundStopAll]
+
+[skip false]
+
+[branchQuestNotClear lblNotClear1 3000320 4]
+[label lblClear1]
+[flag IsGirl true]
+[branch lblIsClearConf1]
+[label lblNotClear1]
+[flag IsGirl false]
+[label lblIsClearConf1]
+
+[skip true]
+
+[charaSet A 7027300 1 アマゾネスＣＥＯ_普通]
+[charaSet B 1098119600 1 アマゾネスＣＥＯ_ろくろ]
+[charaSet C 99502600 1 マシュ]
+[charaSet E 4023000 1 坂田金時]
+[charaSet F 5011001 1 バベッジ]
+[charaSet G 4036000 1 カーミラ]
+[charaSet H 4027001 1 アルトリア・オルタ]
+[charaSet I 5025001 1 エジソン]
+[charaSet J 5009000 1 エフェクト用]
+
+[branch lblNotGirl1 IsGirl false]
+[label lblGirl1]
+[charaSet D 1098124510 1 ダ・ヴィンチ]
+[branch lblIsGirlConf1]
+[label lblNotGirl1]
+[charaSet D 98111500 1 ダ・ヴィンチ]
+[label lblIsGirlConf1]
+
+[scene 90000]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+アマゾネス・ドットコムは、[r]決してモンスタークレーマーには屈しない！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠マシュ
+予想外にシンプルな脅威が待ち構えていましたね……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgm BGM_EVENT_90 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠B：アマゾネスＣＥＯ
+シンプル。それだ。予想外ではあったが、[r]メインストリームからは外れていないと思う。
+[k]
+
+＠B：アマゾネスＣＥＯ
+このタワー全体、あるいは事件全体というマターを見て[r]私が感じるのは、
+[k]
+
+＠B：アマゾネスＣＥＯ
+そういうシンプルさというか、力任せさというか……[r]そんなものだ。
+[k]
+
+＠B：アマゾネスＣＥＯ
+それが黒幕の正体に繋がるヒントである気がする。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[branch lblNotGirl2 IsGirl false]
+[label lblGirl2]
+[charaFace D 24]
+[charaFadein D 0.1 1]
+[branch lblIsGirlConf2]
+[label lblNotGirl2]
+[charaFace D 0]
+[charaFadein D 0.1 0,-90]
+[label lblIsGirlConf2]
+
+＠ダ・ヴィンチ
+まあ、わからなくもないかな。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+とはいえ今の我々にできるのは、[r]それを真正面から乗り越えることだけだ。
+[k]
+
+[charaFace A 12]
+
+＠A：アマゾネスＣＥＯ
+シンプルにはシンプルで、力任せには力任せで対抗する[r]ということだな。何を隠そう得意技だ！
+[k]
+
+？1：隠せていない気もしますけど
+？2：引き続き頑張っていきましょう！
+？！
+
+[messageOff]
+[charaFace A 1]
+[wt 1.2]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_90 2.0]
+[wait fade]
+[charaFadeout A 0.1]
+[scene 90100]
+[wt 1.5]
+[charaSet A 10005000 1 Ⅱ号機]
+[charaSet B 10004000 1 メカエリチャン]
+[charaSet C 2011001 1 ニコラ・テスラ]
+[fadein black 2.0]
+[wait fade]
+
+[wt 1.2]
+
+＠
+[align center]～　一方そのころ　～[align]
+[k]
+
+[messageOff]
+[scene 44501 1.4]
+[wt 3.0]
+
+[se ad121]
+[wt 1.6]
+[seStop ad121 0.1]
+[se ad127]
+[seVolume ad127 0 0.8]
+[wt 0.5]
+[seStop ad127 0.3]
+
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.4 1]
+[wt 0.5]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠坂田金時
+おう！　ハイオク魔力満タンで頼まぁ！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.5]
+
+＠バベッジ
+了解した。だがこの機械系メンテナンスエリア、[r]大盛況につき混雑中である。しばし待たれよ。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.5]
+
+＠カーミラ
+……そこは渇きが集う heavenly zone……[r]……明日へと続く essential time……
+[k]
+
+[charaFace G 1]
+
+＠カーミラ
+悪いわね、ボウヤ。[r]私のマシンも今調整待ちなの。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace G 1]
+[charaFadein G 0.1 0]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+
+＠坂田金時
+おう、そうかい。[r]全然構わねえぜ、急かすつもりはねえよ。
+[k]
+
+[charaFace E 1]
+
+＠坂田金時
+しっかし……見れば見るほど、[r]アンタのマシンもゴールデンだなぁオイ！
+[k]
+
+[charaFace G 0]
+
+＠カーミラ
+[FFFFFF]？[-]　ブラッドレッドとかワインレッドだと思うけど。
+[k]
+
+[charaFace E 0]
+
+＠坂田金時
+おう、色がゴールデンだったらさらにゴールデンだったな！[r]オープンカー、憧れるぜ……。
+[k]
+
+＠坂田金時
+ウィィンって屋根が出てくるのがいいよな！[r]変形合体みたいでソークールじゃん！？
+[k]
+
+[charaFace G 1]
+
+＠カーミラ
+フフフ。ボウヤのバイクも素敵よ？
+[k]
+
+＠カーミラ
+いい女にレザーのツナギとバイクはベストマッチ。[r]機会があれば私のもバイクタイプにしていいかもね。
+[k]
+
+[charaFace G 4]
+
+＠カーミラ
+ヘルメットを脱いで髪がファッサーってなるあの美しい[r]動き、練習しておかないと。怪盗的必須技術だわ……。
+[k]
+
+[charaFace E 1]
+
+＠坂田金時
+おう、レッド・ゴールデン・バイクか？[r]そいつはいいな、ツーリングでも行こうぜ。
+[k]
+
+[charaFace E 7]
+
+＠坂田金時
+だが、そんときゃ盗みは勘弁な。
+[k]
+
+＠坂田金時
+鬼で盗みとくりゃあ、アイツらと似たようなモンで……[r]立場上、止めなきゃなんねーからよ。
+[k]
+
+[charaFace G 1]
+
+＠カーミラ
+ええ、わかったわ。大人しくするわよ。
+[k]
+
+＠カーミラ
+（表向きは、ね……それもまた怪盗ムーブ……）
+[k]
+
+[charaFace E 0]
+
+＠坂田金時
+ところで、マジで盛況なんだな。[r]意外にマシン系の奴らは多かったのか。
+[k]
+
+[charaFace G 0]
+
+＠カーミラ
+そうね。整備するほうの人員があまりいない[r]というのもあるかもしれないけど。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.4 1]
+[wt 0.5]
+
+＠アルトリア・オルタ
+ハリー、ハリーだ。さっさとしろ。さもなくば鉛玉が[r]メンテナンスの礼として貴様の頭に飛び込むだろう。
+[k]
+
+[charaFace H 0]
+
+＠アルトリア・オルタ
+久しぶりのスピードに乗ったご奉仕に気分が高揚している。[r]セクエンスの引き金も軽くなろうというものだ。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.4 1]
+[wt 0.5]
+
+＠エジソン
+ええい、直流システムの組み込みを営業するヒマもない！[r][line 3]よし、一丁あがり！
+[k]
+
+[charaFace I 4]
+
+＠エジソン
+私の得意は大量生産であって一点モノの[r]メンテナンスじゃないんだけどなー！
+[k]
+
+[charaFace I 1]
+
+＠エジソン
+しかしそれはそれとして仕事は完璧に[r]こなしてしまうのが真の発明家というもの。
+[k]
+
+＠エジソン
+惜しみない賞賛は浴びせてくれてよいぞ？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0]
+[charaFace I 0]
+[charaFadein I 0.1 2]
+
+＠アルトリア・オルタ
+ご苦労だったな。[r]よし、次の[#任務:配達]に向かう。
+[k]
+
+[charaFace H 1]
+
+＠アルトリア・オルタ
+待っていろまだ見ぬご主人様、あまりに完璧なご奉仕で[r]きっと貴様は泣いたり笑ったりできなくなる。エンジョイ。
+[k]
+
+[messageOff]
+[charaFace H 0]
+[wt 0.7]
+[se ade86]
+[seVolume ade86 0 0.9]
+[seStop ade86 1.0]
+[charaMove H -1000,0 0.3]
+[wt 1.7]
+
+[charaTalk off]
+[charaFace I 4]
+[wt 2.0]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠坂田金時
+あれもいいバイクだな！　ブラックなボディと[r]ニトロでも積んでるみてえな加速がゴールデンだぜ！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+[charaFadeout E 0.1]
+[wt 0.5]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.5]
+
+[bgm BGM_EVENT_48 0.1]
+
+＠Ⅱ号機
+急ぎなさい。[#残滓:ざんし]で蜃気楼のような[r]この偽りのチェイテは[#疾:と]く消し去らねばなりません。
+[k]
+
+＠Ⅱ号機
+ここで私が活躍せず誰が活躍するというの。さあ早く。[r]守護神伝～完全版～の再開予定は１２０秒後です。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.5]
+
+＠メカエリチャン
+偽物が被さっているからこそ、[r]なぜか我々が同時存在しているわけですが。
+[k]
+
+[charaFace B 9]
+
+＠メカエリチャン
+ともあれ、社員の全てを失ったという事は領民の全てを[r]失ったのと同じ事。その憤りはよくわかります。
+[k]
+
+[charaFace B 6]
+
+＠メカエリチャン
+なればこそ、アマゾネスＣＥＯの手伝いをするのは[r]やぶさかではありません。迅速な再起動を求めます。
+[k]
+
+＠メカエリチャン
+さあ。さあさあさあ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.4 1]
+[wt 0.5]
+
+＠ニコラ・テスラ
+ううむ、交流アタッチメントの取り付けを[r]目論む暇もない！　そら、完了だ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace A 0]
+[charaFadein A 0.1 -384,0]
+[charaFace B 0]
+[charaFadein B 0.1 384,0]
+
+＠メカエリチャン＆Ⅱ号機
+[line 3]ご苦労。では発進します。[r]リフトオフ。
+[k]
+
+[messageOff]
+[wt 0.7]
+[se ad270]
+[charaShake A 0.02 2 2 1.0]
+[charaShake B 0.02 2 2 1.0]
+[cueSe Servants_1000400 bac539]
+[charaPut J 0,-200]
+[charaEffect J bit_talk_40]
+[wt 0.4]
+[charaMove A -400,100 1.5]
+[charaMove B 400,100 1.5]
+[charaMove J 0,-100 1.5]
+[wt 0.2]
+[cueSeStop bac539 0.4]
+[wt 0.5]
+
+[wipeout rectangleStripUpToDown 0.3 1.0]
+[wt 0.1]
+[se ade90]
+[wait wipe]
+[charaEffectDestroy J]
+[charaFadeout A 0]
+[charaFadeout B 0]
+[scene 10000]
+[wipein rectangleStripDownToUp 0.1 1.0]
+[wait wipe]
+[fadeout black 0.1]
+[wait fade]
+[scene 44501]
+[charaTalk on]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+[wt 1.0]
+[seStop ade90 0.5]
+[wt 1.0]
+[imageSet A cut148_callout01 1]
+[imageSet B cut148_callout02 1]
+[imageSet D cut148_callout03 1]
+[imageSet H cut148_callout04 1]
+[charaScale A 1.01]
+[charaScale B 1.01]
+[charaScale D 1.01]
+[charaScale H 1.01]
+[fadein black 1.0]
+[bgmStop BGM_EVENT_48 1.0]
+[wait fade]
+
+＠カーミラ
+そう言えば、ボディがメカ系なのもいたわね。
+[k]
+
+[charaFace E 3]
+
+＠坂田金時
+段蔵や哪吒たちも来るんだろうから、[r]そりゃ忙しくもなるか。ゴールデンな働き者だぜ。
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠バベッジ
+プシュー……待たせたな。[r]いよいよ汝らの番である。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠エジソン
+次はスポーツカーに、再びバイクのメンテナンスか。[r]了解した。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ニコラ・テスラ
+うむ、やはりロケットパンチやスカートミサイルよりは[r]こういったもののほうが手に馴染む。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠バベッジ
+確かに。……待たせた詫びに、提案である。[r]時間と労力の余裕ができた。
+[k]
+
+＠バベッジ
+この際、メンテナンスだけでなくマシンの改良も[r]我らに任せる気はないだろうか？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk I]
+[charaFace I 3]
+[charaFadein I 0.1 1]
+
+＠エジソン
+ナイス提案と言わざるをえない。[r]そろそろ発明の腕が疼いてきたところだ。
+[k]
+
+＠エジソン
+パワフルな直流推進ユニットをつければ、今までの二倍の[r]効率で配達業務ができると思うのだがどうだね？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ニコラ・テスラ
+ハハハ。三倍の能率を叩き出す、しかも安心安全な[r]交流ブースターのほうがいいと？　さもありなん、だ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠カーミラ
+……いきなり言われてもねぇ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠坂田金時
+オレっちの愛車のベアー号がさらに速く、[r]さらにクールでゴールデンになるんなら、
+[k]
+
+＠坂田金時
+蒸気式でも電動式でもいいっちゃいいんだが……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠バベッジ
+不安に思う必要はない。[r]我らには以前のレースの実績がある。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+＠エジソン
+その通り！　既に我らのマシンの走行能力・デザイン性は[r]高く評価され、また証明されているのであーる！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠ニコラ・テスラ
+フフ……創造性が溜まっている。今ならあのマシンに[r]匹敵する傑作が作れそうな予感がある……！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[charaTalk depthOff]
+[charaDepth G 1]
+[charaDepth E 2]
+[charaDepth A 3]
+[charaDepth B 4]
+[charaDepth D 5]
+[charaDepth H 6]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+[charaTalk off]
+[charaFace G 0]
+[charaFadein G 0.1 0]
+[charaFace E 7]
+[charaFadein E 0.1 2]
+
+[wt 0.3]
+
+[se ade84]
+[seVolume ade84 0 0.0]
+[wt 0.4]
+[seVolume ade84 0.3 1.0]
+[charaFadein A 0.4 0,-200]
+[wt 0.4]
+[charaFadein B 0.4 0,-200]
+[wt 0.5]
+[fadeout black 0.4]
+[wait fade]
+[charaFadeout G 0]
+[charaFadeout E 0]
+[scene 10000]
+[charaFadein D 0 0,-200]
+[wt 0.1]
+[fadein black 0.4]
+[wait fade]
+[seStop ade84 1.1]
+[wt 0.1]
+[charaFadein H 0.4 0,-200]
+[wt 0.5]
+
+[wt 3.0]
+
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout H 0.1]
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[charaTalk depthOn]
+[scene 44501]
+[charaTalk on]
+[charaTalk E]
+[charaFace G 3]
+[charaFadein G 0.1 0]
+[charaFace E 3]
+[charaFadein E 0.1 2]
+[wt 0.3]
+[fadein black 0.7]
+[wait fade]
+
+＠坂田金時
+あー……悪ィんだけどよ。ちょっと今のオレっちじゃ[r]まだレベルが足りねぇっつーか……。
+[k]
+
+＠カーミラ
+謹んで辞退させていただくわね？
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_27 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth I 2]
+[charaDepth C 3]
+
+[charaTalk off]
+[charaFace F 2]
+[charaFadein F 0.1 -384,0]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+[charaFace I 2]
+[charaFadein I 0.1 384,0]
+
+＠三人
+[f large][messageShake 0.07 7 5 0.3]なぜだ！？
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_27 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

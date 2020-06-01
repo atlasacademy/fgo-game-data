@@ -1,0 +1,331 @@
+
+
+
+＄03-00-06-06-4-0
+
+
+
+[soundStopAll]
+
+[charaSet A 1017001 1 武蔵]
+[charaSet B 8001400 1 アーマード・マシュ（ゴーグルあり）]
+[charaSet C 8001410 1 マシュ]
+[charaSet D 9005001 1 ホームズ]
+[charaSet E 1098191310 1 マカリオス]
+[charaSet F 1098191220 1 アデーレ]
+[charaSet S 5009000 1 エフェクト用ダミー１]
+[charaSet T 5009000 1 エフェクト用ダミー２]
+
+[scene 10000]
+[backEffect bit_talk_sparks]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk depthOff]
+[charaDepth S 1]
+[charaDepth T 2]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut S 1]
+[charaEffect S bit_talk_kengekiall02]
+[charaPut T -70,50]
+[charaEffect T bit_talk_14]
+[se ad32]
+[wt 0.3]
+[charaPut T 60,10]
+[charaEffect T bit_talk_14]
+[se ad32]
+[wt 0.2]
+[charaPut T -50,-20]
+[charaEffect T bit_talk_14]
+[se ad32]
+[wt 0.1]
+
+[fadeout black 0.1]
+[wait fade]
+[charaEffectDestroy S]
+[charaEffectDestroy T]
+[charaTalk depthOn]
+[scene 91803]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0 1]
+[fadein black 0.2]
+[wait fade]
+
+[charaFace A 2]
+[charaMove A 0,5 0.2]
+[charaMoveScale A 1.05 0.2]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[se ad443]
+[wt 0.2]
+[seStop ad443 0.2]
+[wt 0.1]
+
+[blurOff motion 0.1]
+[charaEffect S bit_talk_h_slash01 0,0 F]
+[cueSe Battle bac528]
+[cueSeVolume bac528 0 0.4]
+[wt 0.4]
+[charaFadeout A 0.1]
+[wt 0.2]
+[charaScale A 1.0]
+
+[effect bit_talk_blood_splash]
+[se ad464]
+[seVolume ad464 1.0 0.4]
+[wt 0.7]
+
+[se ad20]
+[wt 1.8]
+
+[charaTalk A]
+[charaFace A 5]
+[charaPut A 1]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect A appearance 1 0.25]
+[wt 1.0]
+[charaFace A 1]
+＠武蔵
+ヒュウ、絶好調！[r]すごいわね、アレス・クリロノミア！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth B 2]
+
+[charaTalk off]
+[charaFace B 7]
+[charaFadein B 0.1 0,10]
+[wt 0.3]
+[charaFace C 7]
+[charaFadein C 0 0,10]
+[charaMove C 0,0 0.5]
+[charaMove B 0,0 0.5]
+
+[se ade18]
+[seVolume ade18 0.0 0.5]
+[wt 0.5]
+[seStop ade18 0.8]
+[wt 1.2]
+
+[charaFadeout B 0.2]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[wt 1.2]
+
+＠マシュ
+複数の敵性体を撃破！
+[k]
+
+[charaFace C 1]
+
+＠マシュ
+アテナ・クリロノミアも凄いです……[r][#霊基外骨骼:オ ル テ ナ ウ ス]の出力が９０％まで上昇しています！
+[k]
+
+＠マシュ
+マスター、これなら！[r]オリュンポスの保有戦力とも対等に戦えます！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ホームズ
+だが機神との対峙には更なる力が必要だ。[r]今回の場合は、七重連英霊砲による外装の破壊！
+[k]
+
+＠ホームズ
+それに、たったいま破壊した護衛戦団も[r]いずれ再生するに違いない！
+[k]
+
+[charaFace D 2]
+
+＠ホームズ
+このまま敵陣突破してデメテルに張り付く！[r]前進だ！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 1.0]
+[charaFadeout D 0.1]
+
+[charaPut T 1200,1200]
+[charaEffect T bit_talk_10_red]
+
+[wt 1.5]
+
+
+[messageOff]
+[se ad895]
+[wt 1.5]
+[seStop ad895 1.0]
+[wt 1.0]
+[bgm BGM_EVENT_72 0.1]
+
+＠
+『哀しきかな。哀しきかな』
+[k]
+
+＠
+『哀しきは死。哀しきは終わり』
+[k]
+
+[messageOff]
+[se ad895]
+[wt 2.0]
+[seStop ad895 1.0]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠武蔵
+！！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+＠マシュ
+機神デメテル、方向転換……！？[r]移動方向を……
+[k]
+
+＠マシュ
+南端ではなく、東方面に変更しています！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠マカリオス
+な、何だ！？[r]無敵の再生力と攻撃力で[#吶喊:とっかん]してこないのか！
+[k]
+
+[charaFace E 2]
+
+＠マカリオス
+くそっ、作戦修正！[r][line 3]α地点、β地点を緊急放棄！　γ地点へ急げ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠アデーレ
+機神デメテル護衛戦団の再編成を確認。[r]再度、これを撃破してデメテルを誘導してください！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[bgmStop BGM_EVENT_72 0.7]
+
+[se ad564]
+[wt 0.3]
+[se ade215]
+[seVolume ade215 0 0.6]
+[wt 0.7]
+[seStop ad564 0.4]
+[wt 0.2]
+[seStop ade215 0.4]
+[wt 0.8]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠マシュ
+……敵性反応再び複数！[r]再編成された護衛戦団はこちらに気付いています！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠ホームズ
+やれやれ。大した忠犬の群れじゃないか。[r]だが、おあつらえ向きではある。
+[k]
+
+[charaFace D 0]
+
+＠ホームズ
+これも撃破して今度こそデメテルの気を引こう。[r]連戦だが[line 3]耐えられるかい、[&ボーイ＆ガールズ:諸君]？
+[k]
+
+？1：当然！
+？2：みんな、戦闘継続！
+
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth B 2]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+[se ade57]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[charaTalk off]
+[charaFace B 7]
+[charaFadein B 0.2 1]
+[wt 0.5]
+[charaFadeout C 0]
+
+[charaFace B 2]
+
+＠B：マシュ
+はい、マスター。[r]マシュ・キリエライト、戦闘継続します！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

@@ -1,0 +1,641 @@
+
+＄94-03-35-50-5-0
+
+[soundStopAll]
+
+[charaSet A 7033000 1 アルジュナ・オルタ_第一]
+[charaSet B 7033002 1 アルジュナ・オルタ_第三]
+[equipSet H 9807310 1 バレンタイン礼装]
+
+
+
+[fadein black 1.0]
+[wait fade]
+
+＠
+あなたが出会ったのは[line 3]
+[k]
+
+
+？1：神に近いアルジュナ・オルタ
+
+[branch select01_01]
+
+？2：人に近いアルジュナ・オルタ
+
+[branch select01_02]
+
+？！
+
+
+
+
+
+[label select01_01]
+
+[messageOff]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66800 1.0]
+[branch lblConf]
+[label lblNotClear]
+[scene 10400 1.0]
+[label lblConf]
+[wt 1.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠アルジュナ・オルタ
+[line 3]。[r][line 3]。
+[k]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V010]
+呼び声を聞き届け……。[r]参上しましたが……。[wait tVoice]
+[k]
+
+？1：はい、アルジュナ
+？2：これ、チョコレート！
+？！
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V020]
+……。[r]……。[wait tVoice]
+[k]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V030]
+……ふむ。[r]チョコレートは……菓子の類いですね。[wait tVoice]
+[k]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V040]
+こちらを受け取ることが……。[r]今回の任務と……？[wait tVoice]
+[k]
+
+？1：そういうこと
+？！
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V050]
+なるほど……。[r]では、受け取ります。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V060]
+……。[r]……。[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V070]
+何も……起きませんね……。[wait tVoice]
+[k]
+
+？1：食べてくれると大変嬉しい
+？！
+
+[charaFace A 0]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V080]
+食べる……。[r]サーヴァントに食事は不要なような……？[wait tVoice]
+[k]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V090]
+……。[r]……。[wait tVoice]
+[k]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V100]
+しかし、それが任務であるならば……。[wait tVoice]
+[k]
+
+[messageOff]
+[se ade11]
+[wt 1.4]
+[se ade13]
+[wt 1.0]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V110]
+……。[r]……。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V120]
+ふむ。[r]……甘いですね。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V130]
+こちらで任務は終了でしょうか？[wait tVoice]
+[k]
+
+？1：あ、うん
+？！
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V140]
+それでは失礼……。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad95]
+[seStop ad95 1.5]
+[charaMove A -50,0 0.5]
+[charaFadeout A 0.4]
+[wt 1.0]
+[se ad8]
+[wt 2.2]
+
+？1：美味しかったかな……？
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_2 1.0 0.5]
+[wait fade]
+[wt 2.0]
+[fadein black 1.0]
+[bgm BGM_EVENT_2 1.0 1.0]
+[wait fade]
+[wt 0.5]
+
+[se ade169]
+[seVolume ade169 0 0.7]
+[wt 1.2]
+
+？1：はいー？
+？！
+
+[se ad8]
+[wt 0.8]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V150]
+マスター……。[r]先ほどの任務の詳細、理解しました……。[wait tVoice]
+[k]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V160]
+[#祭事:イベント]だったのですね……。[r]なるほど……道理で……。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V170]
+心より感謝を……。[wait tVoice]
+[k]
+
+？1：不味くなかった？
+
+[charaFace A 4]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V180]
+不味い……？[wait tVoice]
+[k]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V190]
+……。[r]……失礼。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V200]
+今の私は浮世離れしていること、[r]この上ありませんが……。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V210]
+それでも……。[r]真心を籠めて作られた物を踏みにじるほど……。[wait tVoice]
+[k]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V220]
+機械的ではありませんよ……。[wait tVoice]
+[k]
+
+？2：美味しかった？
+
+[charaFace A 1]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V230]
+ええ、とても。[wait tVoice]
+[k]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V240]
+……サーヴァントとなった身の上ですが……。[r]味はわかります。[wait tVoice]
+[k]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V250]
+……否。わからずとも[line 3][r]私は美味しいと、形容したでしょう。[wait tVoice]
+[k]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V260]
+あなたが心を籠めて作られたもの。[r]その感情を戴いたのですから。[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 0]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V270]
+ともあれ……。[wait tVoice]
+[k]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V280]
+私もまた、チョコレートに対して[r]相応の返礼をしなくては。[wait tVoice]
+[k]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V290]
+望みがあるならば、今の内に。[wait tVoice]
+[k]
+
+？1：特には……ないかな
+？2：アルジュナが贈りたいもので
+？！
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V300]
+……。[r]……了解しました。[wait tVoice]
+[k]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V310]
+しばしお待ちを……。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad39]
+[charaEffect A bit_talk_36_bl]
+[wt 1.5]
+[charaEffectStop A bit_talk_36_bl]
+[fowardEffect bit_talk_release]
+[wt 1.7]
+
+[charaFace A 1]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V320]
+……こちらをどうぞ。[wait tVoice]
+[k]
+
+[messageOff]
+[fowardEffectDestroy bit_talk_release]
+[charaFadeout A 0.4]
+
+[se bas2]
+[charaFace H 0]
+[charaFadein H 0.5 0,-70]
+[wt 2.0]
+[charaFadeout H 0.4]
+[wt 0.5]
+
+？1：これ宝石……！？
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V330]
+……いえ。[wait tVoice]
+[k]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V340]
+こちらは半貴石、[r]あるいは準宝石と呼ぶべきもの。[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_2 3.5]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V350]
+石は人の手で仕分けられ、[r]価値を決められる……。[wait tVoice]
+[k]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V360]
+ですが、その前段階として、[bgm BGM_EVENT_6 0.1][r][#ただ輝こうとしただけで価値がある]。[wait tVoice]
+[k]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V370]
+……私はどうやら……[r]そう認識しているようです。[wait tVoice]
+[k]
+
+？1：大切にするよ
+？！
+
+[charaFace A 1]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V380]
+特にその石に何かがある訳ではないですが、[r]そうするといいでしょう……。[wait tVoice]
+[k]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V390]
+それでは。[r]幸あらんことを……。[wait tVoice]
+[k]
+
+[messageOff]
+
+[branch select01_end]
+
+
+
+
+[label select01_02]
+
+[messageOff]
+
+[branchQuestNotClear lblNotClear2 3000303]
+[scene 66800 1.0]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10400 1.0]
+[label lblConf2]
+[wt 1.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V400]
+おや、マスター。[r]いらっしゃいませ。[wait tVoice]
+[k]
+
+[charaFace B 0]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V410]
+マイルームに特色をつけないのか、[r]ですか？[wait tVoice]
+[k]
+
+[charaFace B 9]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V420]
+……色々考えているのですが、[r]これがなかなか……。[wait tVoice]
+[k]
+
+[charaFace B 0]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V430]
+それはそうと、何かご用でしょうか？[wait tVoice]
+[k]
+
+？1：ハッピーバレンタイン！
+？！
+
+[charaFace B 4]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V440]
+マスターと共にある限り、[r]私は常に幸福ですが……。[wait tVoice]
+[k]
+
+[charaFace B 0]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V450]
+そういうことではなく？[r]ふむ、なるほど。[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_2 1.0 0.5]
+[wait fade]
+[charaFace B 1]
+[wt 1.5]
+[fadein black 1.0]
+[bgm BGM_EVENT_2 1.0 1.0]
+[wait fade]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V460]
+そういう[#祭事:イベント]だったのですね。[r]ありがとうございます。[wait tVoice]
+[k]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V470]
+本来なら、神々に捧げるべき供物ですが……。[r]いえ、よしましょう。[wait tVoice]
+[k]
+
+[charaFace B 6]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V480]
+これは私に与えられた褒賞と考え、[r]謹んで戴かせてもらいます。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[se ade11]
+[wt 1.4]
+
+[se ade13]
+[wt 1.0]
+
+[charaFace B 12]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V490]
+ああ、なるほど。[r]これは……新鮮な甘さです。[wait tVoice]
+[k]
+
+[charaFace B 6]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V500]
+戦うにせよ、考えるにせよ、[r]人体に糖分は必須です。[wait tVoice]
+[k]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V510]
+サーヴァントたる身に必要ではないですが、[r]それでも心持ち、気分が軽やかです。[wait tVoice]
+[k]
+
+[charaFace B 12]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V520]
+……いや、そうか。[r]これはマスターから受け取った贈り物だからか……。[wait tVoice]
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 0.5]
+[bgm BGM_EVENT_2 1.0 0.5]
+[wait wipe]
+[charaFace B 1]
+[wt 1.0]
+[wipein rollLeft 1.0 0.5]
+[bgm BGM_EVENT_2 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V530]
+ごちそうさまでした。[wait tVoice]
+[k]
+
+？1：じっくり味わって食べたね……
+？！
+
+[charaFace B 9]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V540]
+最後の一欠片が、[r]何とも名残惜しい……。[wait tVoice]
+[k]
+
+[charaFace B 1]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V550]
+さて、それはそれとして。[r]返礼の品を捧げたいと思います。[wait tVoice]
+[k]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V560]
+こちらです。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+
+[se bas2]
+[charaFace H 0]
+[charaFadein H 0.5 0,-70]
+[wt 2.0]
+[charaFadeout H 0.4]
+[wt 0.5]
+
+？1：宝石！？
+？2：こんな貴重な……！
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V570]
+いいえ、これは厳密には宝石ではなく、[r]半貴石、または準宝石と呼称されるものです。[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_2 3.5]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V580]
+価値こそ異なりますが、[r]美しさは決して劣りません。[wait tVoice]
+[k]
+
+[charaFace B 1]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V590]
+そして何より、[bgm BGM_EVENT_6 0.1][r]この石は美しく輝くことを選んだ。[wait tVoice]
+[k]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V600]
+美しく輝いているから美しいのではなく、[r]輝こうとするからこその美しさ。[wait tVoice]
+[k]
+
+[charaFace B 6]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V610]
+あなたがいつまでも、[r]この準宝石のような心を抱けるよう……。[wait tVoice]
+[k]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V620]
+私は心から祈るのです。[wait tVoice]
+[k]
+
+？1：大切にするよ
+？！
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V630]
+ありがとうございます、マスター。[wait tVoice]
+[k]
+
+[charaFace B 0]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V640]
+……神に近い方の私だったら、[r]何を贈ったか、ですか？[wait tVoice]
+[k]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V650]
+……神であれ、人であれ、[r]根幹は私でしかない。[wait tVoice]
+[k]
+
+＠アルジュナ・オルタ
+[tVoice ValVoice_703300 0_V660]
+恐らく、同じものをお贈りしたでしょう。[r]少しばかり、[#不躾:ぶしつけ]かもしれませんがね。[twt 4.0][charaFace B 1][wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[label select01_end]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_6 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

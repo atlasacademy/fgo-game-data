@@ -1,0 +1,648 @@
+＄91-30-12-02-1-0
+
+
+[soundStopAll]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaSet A 3012002 1 ブリュンヒルデ]
+[charaSet B 6009002 1 静謐のハサン]
+[charaSet C 2013001 1 アーラシュ]
+[charaSet D 5009001 1 ダ・ヴィンチ]
+[charaSet E 98001000 1 マシュ]
+[charaSet F 9005001 1 ホームズ]
+[charaSet G 98006200 1 雑魚エネミー煙状]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[scene 20803]
+
+[fadein black 0.5]
+[wait fade]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.3]
+[se ad25]
+[wt 1.0]
+
+
+
+[se ad98]
+[effect bit_talk_12_blue_L 0,50]
+[wt 0.2]
+[se bac139]
+[effect bit_talk_12_blue_L 0,-50]
+[charaShake G 0.05 2 1 0.5]
+[wt 1.0]
+
+[se bac71]
+[charaEffect G bit_shot_01]
+[wt 0.5]
+
+[charaEffect G bit_talk_13]
+[charaShake G 0.05 2 2 0.5]
+[se bac16]
+[wt 0.5]
+
+[charaSpecialEffect G enemyErasure 0 1.0]
+[se ad26]
+[bgmStop BGM_EVENT_3 1.0]
+[wt 1.5]
+
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+[wt 0.4]
+＠アーラシュ
+よっしゃ。戦闘終了だな！
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+＠静謐のハサン
+はい。これ以上の敵勢力増援はないようです。[r]お味方の損害、軽微です。
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[messageOff]
+
+[wt 1.0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.7 1]
+[wt 1.0]
+＠ブリュンヒルデ
+……………………戦闘、終了……ですね。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠アーラシュ
+おう、ランサーの[#姐:ねえ]さんもお疲れさん！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+[charaFace C 4]
+＠アーラシュ
+（なあ、嬢ちゃん。いまの気付いてるか？）
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 2]
+[charaFace C 4]
+[charaFadein C 0.1 0]
+＠静謐のハサン
+（はい。少し[line 3]）
+[k]
+
+＠アーラシュ
+（ああ。いまいちキレが良くないっていうのかねえ。[r]　ランサーの[#姐:ねえ]さん、ココロここにあらずって感じだぜ）
+[k]
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ブリュンヒルデ
+……。[r]……。
+[k]
+
+？1：ブリュンヒルデ？
+？2：大丈夫、もしかして調子悪い？
+
+？！
+
+＠ブリュンヒルデ
+マスター。いえ……
+[k]
+
+＠ブリュンヒルデ
+お気遣いありがとうございます。[r]でも、私は問題ありません。正常に稼働しています。
+[k]
+
+＠ブリュンヒルデ
+できている……はずです……が[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFace A 4]
+＠ブリュンヒルデ
+…………いいえ、いいえ。[r]ごめんなさい。
+[k]
+
+[charaFace A 0]
+＠ブリュンヒルデ
+私が戦闘に集中できていないのは事実でしょう。[r]マスターや皆さんの足を引っ張っているように感じます。
+[k]
+
+＠ブリュンヒルデ
+しばらく、お暇をいただけますか。[r]マスター。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 2.0]
+
+
+[scene 10200]
+
+[charaSet B 2022000 1 ？？？]
+[charaSet C 2022000 1 アルテラサンタ]
+[charaFilter B silhouette 00000080]
+[charaSet G 9005001 1 ホームズシルエット]
+[charaFilter G silhouette 00000080]
+
+[charaDepth C 5]
+[charaDepth B 2]
+
+[charaDepth F 5]
+[charaDepth G 2]
+
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 1]
+＠ダ・ヴィンチ
+成る程ね。それで、彼女自身が休養を申し出てきた訳だ。[r]確かに珍しい事かもしれないねえ。
+[k]
+
+＠ダ・ヴィンチ
+サーヴァントは超常の存在であると同時に、[r]人間のような精神を有した存在だ。常人を[#遥:はる]かに超えて、
+[k]
+
+＠ダ・ヴィンチ
+絶対性とも言うべき耐久度を誇ってはいるけれど、[r]時には疲弊や消耗が表に出てきてしまう事もあるだろう。
+[k]
+
+[charaFace D 0]
+＠ダ・ヴィンチ
+ほら、特に彼女はあれだろう？　最近はあんまり[r]シグルドシグルド言わないようにしてるみたいだし……
+[k]
+
+[charaFace D 1]
+＠ダ・ヴィンチ
+そのあたりが関係しているのかもしれない。[r]我慢しすぎは体に毒、という事だったりするのかも？
+[k]
+
+？1：あれ、そう？
+？2：言う時はちょくちょく言ってる気がする[line 3]
+
+？！
+
+＠ダ・ヴィンチ
+比較的って話さ。[r]相対的と言った方がわかりやすいかな？
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+＠マシュ
+……。[r]……。
+[k]
+
+＠マシュ
+わたしが経験したのは、デミ・サーヴァントとしての[r]活動によるものですから、少し違うかもしれませんが……
+[k]
+
+[charaFace E 1]
+＠マシュ
+特異点へのレイシフトを繰り返す中でも、[r]適宜、お休みをいただけたのはとても嬉しかったです。
+[k]
+
+＠マシュ
+先輩とお話をして、一緒に食事をして[line 3]
+[k]
+
+＠マシュ
+ドクターのいつもの検診を受けながら[r]世間話もしたりして……
+[k]
+
+[charaFace E 13]
+＠マシュ
+そんな風に過ごす時間は……
+[k]
+
+＠マシュ
+魔力やバイタルの直接的な数値には[r]どのくらい影響があったかはわかりませんが、
+[k]
+
+＠マシュ
+わたしには、とても大切なものに感じられました。[r]ですから[line 3]
+[k]
+
+？1：うん、休息は大切だ
+？2：サーヴァントの皆にも休んでもらわなきゃね
+
+？！
+
+[charaFace E 1]
+＠マシュ
+はい、先輩。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace E 13]
+[charaFadein E 0.1 2]
+[charaFace D 1]
+[charaFadein D 0.1 0]
+＠ダ・ヴィンチ
+彼女、今はマイルームで休んでいるんだっけ？
+[k]
+
+[charaFace E 1]
+＠マシュ
+はい。少し前から。[r]レイシフトからの帰還後、すぐに個室へ戻られました。
+[k]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.7]
+[charaTalk off]
+
+[se ad95]
+[seStop ad95 2.0]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.5]
+
+[charaFace F 0]
+[charaFadein F 1.5 1]
+
+[wt 0.5]
+
+＠ホームズ
+話は聞かせてもらったよ。ふむ。[r]一度、メンテナンスをした方がいいのかもしれないな。
+[k]
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+英霊にだって休みは必要だという流れを無視しての[r]風情のない言葉！　流石だねえ名探偵。
+[k]
+
+＠ダ・ヴィンチ
+まあでも、うん。ホームズの言うのも一理ある。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFace D 1]
+[bgm BGM_EVENT_1 0.1]
+
+＠ダ・ヴィンチ
+北欧神話に[#於:お]ける最高存在、大神オーディンによって[r]生み出された[#彼女:ブリュンヒルデ]の霊基は英霊としても特殊なものだ。
+[k]
+
+＠ダ・ヴィンチ
+今でこそ英霊としての格に収まってくれてはいるけど、[r]本来は半分神霊のようなものだからね。
+[k]
+
+[charaFace D 0]
+＠ダ・ヴィンチ
+言ってしまえば、その現界自体が[r]奇跡に対する奇跡の上乗せ[line 3]みたいなものなんだぜ？
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠マシュ
+奇跡の上乗せ……
+[k]
+
+？1：でも神霊ってそこそこいませんか……？
+
+＠マシュ
+はい。比率で言えば多くはありませんが……
+[k]
+
+？2：ステンノ、エウリュアレ、ケツァル、ジャガー……
+
+＠マシュ
+イシュタルさんにエレシュキガルさん、[r]ゴルゴーンさんも神霊サーヴァントの一種、ですね。
+[k]
+
+？！
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+ソレがそもそも奇跡なんだ。まあ、それを言うなら[r]カルデア召喚式による英霊召喚も[#稀有:けう]なものなんだけど。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠ホームズ
+[line 3]そうとも。[r]何せ、かの[#ゴーストライナー]だからね！
+[k]
+
+[charaFace F 0]
+＠ホームズ
+[#境界記録帯:ゴーストライナー]。人理に紐付けられた英霊なる上位霊格、[r]その恐るべき力の一部を瞬間的に借り受ける術式でさえ、
+[k]
+
+＠ホームズ
+たとえば時計塔に[#於:お]ける分類で言うところの降霊魔術、[r]俗に言う召喚術の中でも別格の難度とされている。
+[k]
+
+[charaFace F 6]
+＠ホームズ
+低位の魔獣や亡霊の召喚とはまさしく格が違う。[r][#稀有:けう]であり、脅威の存在なんだ。英霊は。
+[k]
+
+[charaFace F 0]
+＠ホームズ
+そんなものにあろうことかエーテルによる実体を伴わせ、[r]肉体と、生前に近しい人格まで与えて現界させる[line 3]
+[k]
+
+＠ホームズ
+これを奇跡と言わずして、さあ、何と呼ぼう？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 2]
+[charaFadein F 0.1 0]
+＠ダ・ヴィンチ
+……いやはや、詳しいねえミスター・ホームズ。
+[k]
+
+＠ホームズ
+いやいや。詳しいだけさ、私はね。
+[k]
+
+[charaFace D 5]
+＠ダ・ヴィンチ
+否定しないんだなあ……[r]相変わらずだねえホント、キミっていう男はさ。
+[k]
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[bgmStop BGM_EVENT_1 0.7]
+
+＠ダ・ヴィンチ
+まあ、混ぜ返されかけたけど話を戻そうか。あー、[r]つまりね、ブリュンヒルデはカルデアでも[#稀有:けう]な存在だ。
+[k]
+
+[bgm BGM_EVENT_2 0.1]
+＠ダ・ヴィンチ
+何かにつけて気に掛けてあげるのは悪くない。[r]それが良いマスターというものだろう。
+[k]
+
+＠ダ・ヴィンチ
+あとはまあ、霊基のメンテナンスもしておこう。[r]前回の定期検査では特に異常は見当たらなかったけど……
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[messageOff]
+
+[bgmStop BGM_EVENT_2 0.5]
+
+
+
+[se ad8]
+[wt 1.0]
+
+
+[se ade137]
+[wt 0.5]
+[charaFace B 13]
+[charaFadein B 1.0 1]
+[se ade137]
+
+[charaTalk off]
+
+[bgm BGM_EVENT_7 0.1]
+
+[wt 1.5]
+＠？？？
+フォッフォッフォッ。[r]お困りのようじゃな？
+[k]
+
+＠マシュ
+そ、その声は！
+[k]
+
+？1：アルテラさん！
+？2：アルテラサン（タ）！
+
+？！
+[messageOff]
+
+
+[charaFace C 13]
+[charaFadein C 1.5 1]
+
+＠アルテラサンタ
+そうじゃよ、ワシじゃよ。[r]フォッフォッフォッ。通りすがりのサンタクロースじゃ。
+[k]
+
+
+
+[bgmStop BGM_EVENT_7 1.0]
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaSet D 98111500 1 ダ・ヴィンチ]
+[charaSet E 99502600 1 マシュ]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[scene 21803]
+[wt 1.5]
+
+[se ad555]
+[seVolume ad555 0 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 2.5]
+[seStop ad555 1.0]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠アルテラサンタ
+[line 3]うん。みなまで言わずとも分かっている。
+[k]
+
+＠アルテラサンタ
+[#あれ]の元気がないというのだろう？[r]あれはどうやら難しい立ち位置のようだ。
+[k]
+
+＠アルテラサンタ
+そういう風になってしまうこともある。だろう。
+[k]
+
+[charaFace C 1]
+＠アルテラサンタ
+だから私が来たのだぞ。[r]そう、今まさに、季節はずれのサンタクロースが！
+[k]
+
+？1：あの[line 3]
+？2：どうしてまたアーチャーの霊基に？
+
+？！
+
+[charaFace C 4]
+
+＠アルテラサンタ
+あまり追及しないでほしい……。[r]我に返ると元に戻ってしまう。
+[k]
+
+＠アルテラサンタ
+一度変化した霊基を無理矢理思い出して再現中だから、[r]あまり私をいじめてはいけない。
+[k]
+
+[charaFace C 0]
+＠アルテラサンタ
+それに、だ。[r]今は、あれのために力を蓄える必要がある。
+[k]
+
+＠アルテラサンタ
+協力してほしい、[r]我がふわふわのマスターよ。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[se ad13]
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+[wt 0.3]
+＠マシュ
+マスター！　アルテラさん！
+[k]
+
+＠マシュ
+言われるままにシミュレーターを起動してみましたが……[r]え、ええと、そこで何をするんです？
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠アルテラサンタ
+当然、雪景色の中でハントだ。[r]まずは私のサンタパワーを補充しなければ。
+[k]
+
+？1：サンタパワーとは
+？2：戦闘で回収できるのかな、それ？
+
+？！
+
+[charaFace C 6]
+＠アルテラサンタ
+考えるな。若者よ、ただサンタを信じればいい。[r]でも怪我はしないように気を付けるんだぞ？
+[k]
+
+＠アルテラサンタ
+まずは体を馴染ませる。[r]それが、サンタパワーを取り戻す第一歩！　と聞いた。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[bgmStop BGM_EVENT_7 0.7]
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-90]
+＠ダ・ヴィンチ
+アーチャーとしての、もとい、サンタクロースとしての[r]自分の霊基を調整したいってことなのかな？
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+[wt 0.2]
+[bgm BGM_EVENT_3 0.1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠アルテラサンタ
+行くぞ。軍神のケインに夢をたくさん詰め込む！[r]虹よ集え、空を駆けろ！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

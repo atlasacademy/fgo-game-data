@@ -1,0 +1,535 @@
+
+＄94-04-02-08-1-0
+
+
+
+[soundStopAll]
+
+[charaSet A 98100400 1 マシュ]
+[charaSet B 6040000 1 オキタ・Ｊ・ソウジ]
+[charaSet C 6040002 1 沖田総司]
+[charaSet D 6005001 1 ジャック]
+[charaSet E 7028001 1 バニヤン]
+[charaSet F 5004001 1 ナーサリー・ライム]
+[charaSet G 98100400 1 ダミーエフェクト]
+
+
+[charaDepth D 1]
+[charaDepth E 5]
+[charaDepth F 9]
+
+[scene 80600]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+[wt 1.0]
+
+[se ade126]
+[seVolume ade126 0.0 0.7]
+[charaEffect G bit_talk_hikari01 -360,245]
+[wt 0.6]
+
+[charaPut G 1200,1200]
+[wt 0.5]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaFace F 1]
+[charaFace D 1]
+[charaFace E 1]
+[charaFadein F 0.4 1]
+[charaFadein D 0.4 -286,0]
+[charaFadein E 0.4 286,0]
+[wt 0.7]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk on]
+[charaTalk D]
+
+＠ジャック
+鳥だ！
+[k]
+
+＠バニヤン
+飛行機だ！
+[k]
+
+＠F：ナーサリー・ライム
+いいえ！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad704]
+[seVolume ad704 0 0.3]
+[fowardEffect bit_talk_rarrow01br -30,0]
+[wt 1.3]
+[seStop ad704 0.7]
+
+[se ad34]
+[se ad64]
+[bgmStop BGM_EVENT_77 1.2]
+[shake 0.05 5 5 1.5]
+[fowardEffect bit_talk_explosion]
+[fowardEffectStop bit_talk_rarrow01br]
+[wt 1.3]
+
+[se ad127]
+[seVolume ad127 0 0.5]
+
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.4 -33,0]
+[wt 0.15]
+
+[charaMove B 1 0.2]
+[seStop ad127 0.8]
+[wt 1.2]
+
+＠オキタ・Ｊ・ソウジ
+[line 3]新選組ですとも！
+[k]
+
+[wt 0.4]
+
+[bgm BGM_EVENT_94 0.1]
+
+？1：なにしてるの？
+
+？2：空から新選組が！
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk F]
+[charaFace F 1]
+[charaFace D 1]
+[charaFace E 1]
+[charaFadein F 0.1 1]
+[charaFadein D 0.1 -286,0]
+[charaFadein E 0.1 286,0]
+
+＠F：ナーサリー・ライム
+あら、マスター。わたしたち、いま、新選組さんに[r]お願いしてお空の散歩をさせてもらっているの。
+[k]
+
+＠ジャック
+あの観覧車より高く飛べるなんてすごいよね。
+[k]
+
+＠バニヤン
+大きい私の頭より高いものね。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠オキタ・Ｊ・ソウジ
+このジェット天然理心流の沖田さんにかかれば[r]お安い御用です！
+[k]
+
+＠オキタ・Ｊ・ソウジ
+それに子供たちと遊んでいると、[r][#壬生:みぶ]の屯所にいた頃を思い出しますよ。
+[k]
+
+[charaFace B 0]
+
+＠オキタ・Ｊ・ソウジ
+昔もよくこうして近所の子供たちと遊んでいたものです。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ジャックさん達も楽しそうでなによりですね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠オキタ・Ｊ・ソウジ
+そうです！　折角ですからマスターも、[r]空の散歩にお連れしましょうか？
+[k]
+
+？1：遠慮しときます
+
+＠オキタ・Ｊ・ソウジ
+まあまあ遠慮せずに。[r]空の散歩もなかなか乙なものですよ。
+[k]
+
+？2：ちなみに速度はどのくらい？
+
+＠オキタ・Ｊ・ソウジ
+測ったことはないのですが、ソニックブームとやらが[r]出るので音速は超えているかとは思いますが。
+[k]
+
+？！
+
+[bgmStop BGM_EVENT_94 1.0]
+[charaFace B 2]
+
+＠オキタ・Ｊ・ソウジ
+それでは、早速参りましょう！
+[k]
+
+[messageOff]
+[charaMoveScale B 1.1 0.2]
+[wt 0.1]
+
+[se ad7]
+[wt 0.7]
+
+[se ade102]
+[seVolume ade102 0 0.4]
+[charaMove B 0,15 1.8]
+[wt 2.4]
+[seStop ade102 0.5]
+[wt 0.2]
+
+＠オキタ・Ｊ・ソウジ
+Ｍ・ドライブフルバースト！[bgm BGM_EVENT_62 0.1]
+[k]
+
+＠オキタ・Ｊ・ソウジ
+ジェット天然理心流オキタ・Ｊ・ソウジ、[r]テイクオフ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.2]
+[wt 0.1]
+
+[se ad704]
+[seVolume ad704 0 0.3]
+[effect bit_talk_arrow01br]
+[wt 1.2]
+
+[se ad147]
+[seVolume ad147 0 0.7]
+[wt 0.5]
+[seStop ad704 0.7]
+[seStop ad147 1.1]
+
+[effectStop bit_talk_arrow01br]
+[wt 0.6]
+
+[wipeout leftUpToRightDown 0.4 1.0]
+[wait wipe]
+
+[scene 28300]
+[cameraMove 0 0,0 1.05]
+[shake 0.07 3 4 0]
+[wt 0.1]
+
+[se ade208]
+[seVolume ade208 0 0]
+[se ade343]
+[seVolume ade343 0 0]
+[effect bit_talk_41]
+
+[seVolume ade208 0.6 0.8]
+[seVolume ade343 0.6 0.8]
+[wipein rightDownToLeftUp 0.6 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠オキタ・Ｊ・ソウジ
+マスターには大サービスで、リミッターぎりぎりの[r]限界速度をご堪能いただきましょう！
+[k]
+
+＠オキタ・Ｊ・ソウジ
+行きますよ！　どこまでも高く！　そして速く！
+[k]
+
+＠オキタ・Ｊ・ソウジ
+あの[#蒼穹:そうきゅう]を超えた先にある何かを目指して！
+[k]
+
+？1：うわああああああああ！！！！？？？
+
+？2：じ、Ｇがこんなに凄いとは……！
+
+？！
+
+＠マシュ
+せ、先輩！　お気をつけてーーー！
+[k]
+
+
+[messageOff]
+[se ade101]
+[fadeout white 1.5]
+[cameraMove 1.6 0,0 1.5]
+[bgmStop BGM_EVENT_62 1.5]
+[seStop ade343 1.5]
+[wait fade]
+
+[effectStop bit_talk_41]
+[shakeStop]
+
+[scene 10000]
+[cameraHome 0.2]
+[wt 0.5]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[scene 28302]
+[wt 1.0]
+
+
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 1.5 0.2]
+
+[wipein openEye 1.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 15]
+[charaScale B 1.0]
+[charaFadein B 0.4 1]
+[wt 0.6]
+
+＠オキタ・Ｊ・ソウジ
+……気が付きましたか、マスター。
+[k]
+
+？1：ここは？
+
+？2：気を失ってしまった……
+
+？！
+
+[messageOff]
+[charaEffect B bit_talk_36]
+[se ad39]
+[wt 1.2]
+
+[fadeout white 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaEffectStop B bit_talk_36]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.4 1]
+[wt 0.5]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.6]
+
+[charaFace C 4]
+
+＠沖田総司
+ここはラスベガスのタワーの上です。
+[k]
+
+＠沖田総司
+すみませんマスター、つい張り切り過ぎて、[r]飛び回ってしまって……。
+[k]
+
+？1：気にしないでいいよ
+
+？2：面白かったし
+
+？！
+
+
+[charaFace C 13]
+
+＠沖田総司
+そうですか、ありがとうございます。
+[k]
+
+[charaFace C 0]
+
+＠沖田総司
+…………。
+[k]
+
+[seStop ad556 2.0]
+
+＠沖田総司
+マスター、少しお話ししてもいいですか？[r]聞いてもらうだけで構いませんので。
+[k]
+
+？1：なに？
+
+？2：いいよ
+
+？！
+
+＠沖田総司
+…………。
+[k]
+
+＠沖田総司
+マスターには感謝しているんです。[bgm BGM_EVENT_95 0.1]
+[k]
+
+＠沖田総司
+英霊としては、悔いしか残していない私でしたが、[r]カルデアに召喚され、生前、叶えたくとも叶わなかった、
+[k]
+
+＠沖田総司
+マスターの為に剣を振るい続けるという望みが[r]叶ったのですから。
+[k]
+
+＠沖田総司
+それにもう二度と会えないと思っていた[r]土方さんにまで会えましたし……。
+[k]
+
+＠沖田総司
+…………。
+[k]
+
+[charaFace C 4]
+
+＠沖田総司
+でもたまに思うんです。
+[k]
+
+＠沖田総司
+土方さんはああいう人ですから、[r]気にはしないでしょうが、
+[k]
+
+＠沖田総司
+隊士のみんなや近藤さんは、[r]今の私を見たらどう思うのか、と。
+[k]
+
+＠沖田総司
+…………。
+[k]
+
+[charaFace C 13]
+
+＠沖田総司
+す、すみません、急に変なことを言い出して。
+[k]
+
+＠沖田総司
+水着で浮かれてたせいでまた熱でも[r]出てきましたかね？
+[k]
+
+？1：よくわからないけど沖田さんは沖田さんだよ
+
+？2：もう少し空を飛ぼうか？
+
+？！
+
+[charaFace C 3]
+
+＠沖田総司
+マスター……。
+[k]
+
+＠沖田総司
+そうですね……、私は私、ですか。
+[k]
+
+[charaFace C 13]
+＠沖田総司
+…………。
+[k]
+
+[charaFace C 1]
+＠沖田総司
+それじゃあそろそろ帰りましょうか！
+[k]
+
+＠沖田総司
+すっかり遅くなってしまったので、[r]マシュさんたちも心配しているでしょうし。
+[k]
+
+？1：みんなのところに帰ろう
+
+？2：帰りはゆっくりお願いします
+
+？！
+
+[messageOff]
+[charaFace C 0]
+[wt 0.3]
+[charaEffect C bit_talk_36]
+[se ad39]
+[wt 1.2]
+
+[fadeout white 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaEffectStop C bit_talk_36]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.5]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.6]
+
+[charaMoveScale B 1.2 0.6]
+[charaMove B 0,20 0.6]
+[wt 0.6]
+
+[se ad7]
+[wt 0.7]
+
+＠オキタ・Ｊ・ソウジ
+はい、それでは沖田さんに[r]しっかりつかまってくださいね。
+[k]
+
+[messageOff]
+[charaFaceFade B 1 0.4]
+[wt 0.8]
+
+＠オキタ・Ｊ・ソウジ
+[line 3]ええ、しっかりと！
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_95 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

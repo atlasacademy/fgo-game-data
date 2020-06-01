@@ -1,0 +1,289 @@
+
+＄03-00-01-10-2-0
+[soundStopAll]
+
+[charaSet A 1098126400 1 パツシィ]
+[charaSet B 7030001 1 アタランテ・オルタ]
+[charaSet C 99502600 1 マシュ]
+[charaSet D 2010001 1 ビリー]
+[charaSet G 5009000 1 エフェクト用ダミー２]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[charaFilter D silhouette 00000080]
+
+[scene 54100]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10]
+
+[effect bit_talk_snowstorm_02]
+[se ad555]
+[seVolume ad555 0 0.1]
+
+[wt 0.7]
+
+[fadein black 1.5]
+[seVolume ad555 1.5 0.6]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠パツシィ
+地図によれば、この先には崩壊した村しかないんだが。[r]そこで合っているんだな？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠アタランテ・オルタ
+ああ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+
+＠マシュ
+今日は一段と吹雪が強烈ですね……。[r]そのせいか、通信も断続気味です。
+[k]
+
+[charaFace C 8]
+
+＠マシュ
+カルデアならあらゆる時空を跳躍して、[r]通信を送信できるのですが……。
+[k]
+
+[charaFace C 12]
+
+＠マシュ
+マスター、大丈夫ですか？
+[k]
+
+？1：息が凍る！
+
+[charaFace C 0]
+
+＠マシュ
+本来なら大変なことですが、[r]極地用魔術礼装のお陰で無事のようです。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+？2：なんとか大丈夫！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠パツシィ
+スゲえな、今日は俺みたいなヤガでも[r]キツいのに。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？！
+
+[wt 1.2]
+
+[se bac21]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠アタランテ・オルタ
+！
+[k]
+
+[messageOff]
+[seVolume ad555 0.3 0.3]
+[bgm BGM_EVENT_80 0.1]
+
+[messageOff]
+[se ad73]
+[charaMoveScale B 1.1 0.1]
+[charaMove B 0,-10 0.1]
+[wt 0.15]
+[charaShake B 0.05 3 3 0.3]
+
+[charaDepth G 10]
+[charaPut G 1]
+[charaEffect G bit_talk_14]
+[charaMoveScale G 1.1 0.3]
+[wt 0.1]
+[se bac179]
+[wt 0.7]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaScale B 1.0]
+
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠パツシィ
+！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠アタランテ・オルタ
+何者か！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.4 1]
+[wt 0.2]
+
+
+＠D：？？？
+それはこちらの台詞さあ！
+[k]
+
+[charaFace D 5]
+
+＠D：？？？
+こんな辺境も辺境の、[r]打ち棄てられた村に何か用かい？
+[k]
+
+[charaFace D 2]
+
+＠D：？？？
+生憎と、こんな吹雪じゃあ適当に[r]撃つしかないんでね！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠マシュ
+……今、思いっきりこちらを狙われた気がしました！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠アタランテ・オルタ
+我が名はギリシャの狩人、アタランテ！[r]そちらのリーダーに話がある！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠D：？？？
+こちらが話すべきことなんて、[r]何もないね！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠アタランテ・オルタ
+話があるのだ！
+[k]
+
+[charaMoveReturn B 0,-5 0.2]
+[se ad581]
+[wt 0.3]
+[charaMoveReturn B 0,-5 0.2]
+[se ad581]
+
+[wt 0.7]
+[charaFace B 2]
+
+＠アタランテ・オルタ
+[#問答無用:もんどうむよう]だ、[r]……そちらに行くぞ！
+[k]
+
+[charaSet G 2010001 1 ビリー演出用]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠D：？？？
+……しょうがないなあ！[wt 0.3][charaFace D 5][r]わかった、来られるもんなら来てみな！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace D 2]
+
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+
+＠ビリー
+だが、その前に腕試しといこう！[r]我が名はビリー・ザ・キッド！
+[k]
+
+[charaFilter D normal 00000080]
+[charaFadeout G 0.1]
+
+[charaTalk on]
+[charaTalk D]
+
+＠ビリー
+さあ、乗り越えてきな！
+[k]
+
+
+[messageOff]
+[seStop ad555 0.4]
+[bgmStop BGM_EVENT_80 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

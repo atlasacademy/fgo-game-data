@@ -1,0 +1,1318 @@
+
+
+
+
+＄03-00-04-02-1-0
+
+[soundStopAll]
+
+[charaSet A 9005001 1 ホームズ]
+[charaSet B 98002000 1 フォウ]
+[charaSet C 98001000 1 マシュ]
+[charaSet D 1098158300 1 キャプテン]
+[charaSet E 1098123200 1 ゴルドルフ]
+[charaSet F 1098124510 1 ダ・ヴィンチ]
+[charaSet G 1098123000 1 ムニエル]
+[charaSet H 3031001 1 哪吒]
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+[imageSet I back74901 1]
+[charaScale I 1.2]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[scene 51602]
+
+[fadein black 1.5]
+[se ad566]
+[seVolume ad566 0 0]
+[seVolume ad566 1.5 1.0]
+[wait fade]
+
+＠[51ffff]アナウンス[-]
+[51ffff]ペーパームーン惑星航路図プラスマイナス収束開始。[-][r][51ffff]シャドウ・ボーダー、間もなく実数境域へ入港します。[-]
+[k]
+
+＠[51ffff]アナウンス[-]
+[51ffff]汎人類史残存数値：Ｃ[-][r][51ffff]異聞深度：Ａ[-]
+[k]
+
+＠[51ffff]アナウンス[-]
+[51ffff]実数空間における[#存在証明:ハ　ー　ケ　ン]、[-][r][51ffff]英霊■■による仮想海図に[#投錨:アタリ]。[-]
+[k]
+
+＠[51ffff]アナウンス[-]
+[51ffff]虚数潜航、終了。[-][r][51ffff]これより実数空間へ浮上します。[-]
+[k]
+
+[messageOff]
+
+[shake 0.05 3 3 1.9]
+[se ad14]
+[seVolume ad14 0 0.7]
+[wt 1.2]
+[seStop ad14 0.3]
+[se ade8]
+[seVolume ade8 0 0.7]
+[wt 0.2]
+[seStop ade8 1.0]
+
+[cameraMove 0.3 0,-10 1.1]
+[wt 0.2]
+[wipeout rectangleStripUpToDown 0.3 1.0]
+[seStop ad566 0.3]
+[wait wipe]
+[cameraHome 0]
+[scene 10000]
+[wipein rectangleStripDownToUp 0.1 1.0]
+[wait wipe]
+[wt 1.2]
+
+[effect bit_talk_zero_sail2]
+[wt 0.5]
+[scene 10001]
+[wait effect bit_talk_zero_sail2]
+
+[fadeout white 1.5]
+[wait fade]
+
+＠[51ffff]アナウンス[-]
+[51ffff]実数空間にアンカー固定。[-][r][51ffff]実数証明完了。[-]
+[k]
+
+＠[51ffff]アナウンス[-]
+[51ffff]シャドウ・ボーダーの存在確立。[-][r][51ffff]ゼロセイルによる帰港に成功しました。[-]
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[scene 51600]
+
+[fadein white 1.5]
+[wait fade]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ホームズ
+よし。無事に実数復帰できたようだ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠フォウ
+フォウフォウ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠マシュ
+っ……相変わらずのひどい振動でした。[r]ご無事ですか、マスター。
+[k]
+
+？1：もう慣れたから平気
+
+[charaFace C 13]
+
+＠マシュ
+さすがはマスター、素晴らしい適応力です。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？2：今の浮上、北欧の時みたいだった……
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠キャプテン
+…………ふうん。[r]けっこう勘が良いんだね、[%1]。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ゴルドルフ
+フ。どうかね、私のこの余裕。そして貫禄は。[r]虚数潜航などもはや雨天走行のようなもの。
+[k]
+
+＠ゴルドルフ
+ぬるま湯のベースから出てきたばかりの[r]新参サーヴァントにはキツい揺れだったのでは？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠キャプテン
+……オキアミのように無力。[r]もちろん、クジラの胃の中のオキアミの話。
+[k]
+
+[charaFace D 0]
+＠キャプテン
+でも、どんな揺れだろうと、海の中なら僕には[r]そよ風と変わらない。
+[k]
+
+＠キャプテン
+船酔いに注意するのはキミたちの方だ。[r]明らかにこの[#艦:ふね]には快適性が足りていないし。
+[k]
+
+[charaFace D 5]
+
+＠キャプテン
+うん……具体的には、[r]もう少しシートにクッションを入れたい。
+[k]
+
+＠キャプテン
+搭乗員の健康を守るのも一流の船長の仕事だ。[r]乗る前に分かっていれば改造してたのに……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 17]
+[charaFadein F 0.1 1]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]きちんと話し合ってボーダーの機能的な部分を[-][r][51ffff]共同整備するならともかく、[-]
+[k]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]さすがにそんな細かいところまで[-][r][51ffff]勝手に弄らせたりはしないぞー。[-]
+[k]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]トイレの芳香剤の種類を勝手に変えただけで、[-][r][51ffff]私は落ち着く、いや俺は落ち着かない、とか[-]
+[k]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]スタッフ間の問題が起こる可能性もあるんだ。[-][r][51ffff]実はいろいろ気を遣ってるんだよ？[-]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠キャプテン
+[#気遣:きづか]い、ご苦労さま。[r]でもこんなの、ある意味建造ミスだ。
+[k]
+
+＠キャプテン
+性能面を重視して、搭乗員たちのモチベーション維持を[r]考慮していないとか。
+[k]
+
+[charaFace D 6]
+
+＠キャプテン
+前のダ・ヴィンチとやらは、[r]船の旅を甘く見ていたんじゃないか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]む、それを言われると弱い。[-]
+[k]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]なにぶん、前の私はそのあたり非人道的だったからね。[-][r][51ffff]“大丈夫、我慢して”系の天才だった……[-]
+[k]
+
+[charaFace F 32]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]でも、何が起こるか分からない状態で[-][r][51ffff]これだけの万能装甲車を造っておいたんだ。[-]
+[k]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]もうそれだけで充分すぎるほど[-][r][51ffff]仕事をこなしていたと思うなあ、私は！[-]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgmStop BGM_EVENT_77 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ホームズ
+ああ。乗組員への[#気遣:きづか]い……[r]特に航行中の腰回りへの配慮などは今後の課題として。
+[k]
+
+＠ホームズ
+諸君。ここはもう嵐の壁の内側。[r]インドに発生した[#異聞帯:ロストベルト]の中だ。
+[k]
+
+[charaFace A 5]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠ホームズ
+何はともあれ、まずは周囲の状況を探ろう。[r]第一に……Mr.ムニエル、空想樹は目視できるかい？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠ムニエル
+……あー、あれだろうなあ……[r]遠いがなんとか見える。現在地から南東方向！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[charaFadeout G 0.1]
+[charaFadein I 0.1 0,-200]
+[wt 0.2]
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+[wt 0.5]
+[charaMove I 0,-300 3.0]
+
+[wt 4.5]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[charaFadeout I 0.1]
+[charaScale I 1.01]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.2]
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+
+＠ホームズ
+やはり既に根付いている、か。しかもある程度[r]生育してしまっているように見受けられる。
+[k]
+
+＠ホームズ
+中国やら北欧やらと違って、[r]位置が最初から分かっているのは手間が省けるがね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠哪吒
+では早速　伐採に　向かおう。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+
+＠ゴルドルフ
+いきなりダイタンだね、この中華ロボット！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ホームズ
+いや、それは危険だ。かなり距離があるし、[r]敵側も無防備ではないだろう。
+[k]
+
+[charaFace A 6]
+
+＠ホームズ
+ああ、いきなり中身が定義されていない単語を使って[r]しまったが、異議を唱えるものはいないね？
+[k]
+
+[charaFace A 0]
+
+＠ホームズ
+そう[line 3]ここにもおそらく『敵』がいる。
+[k]
+
+＠ホームズ
+今までの例からして、この[#異聞帯:ロストベルト]担当のクリプター、[r]さらには[#異聞帯:ロストベルト]の王が待ち受けている可能性は高い。
+[k]
+
+＠ホームズ
+きちんと情報を集め、準備を[#調:ととの]えてから向かうべきだ。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+[charaPut A 1200,1200]
+[charaFadein I 0.1 0,-200]
+[wt 0.2]
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+
+＠ホームズ
+……生育はしているにしろ、[r]あの空想樹はある程度安定しているように見える。
+[k]
+
+＠ホームズ
+今すぐ状況が進むような様子はない。
+[k]
+
+＠ホームズ
+今後、急激な変化が観測できたならば、[r]動かないわけにもいかないだろうが……
+[k]
+
+＠ホームズ
+今はまだ[#異聞帯:ロストベルト]の調査を優先していい状況だろう。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+[charaFadeout I 0.1]
+[charaPut A 1]
+[cameraHome 0.1]
+[wt 0.2]
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+
+＠ホームズ
+何をするにしても、まずはこの新しい事件[line 3]失礼、[r]知られざる歴史の真偽を確認しなければ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ゴルドルフ
+ウ、ウム。まずは情報集めからだな。[r]何が危険なものなのか、調査するのは大切だ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠哪吒
+そうか。ひとまず　理解。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠[51ffff]ダ・ヴィンチ
+[51ffff]はてさて、他に何か気になるモノは見えるかなー？[-][wt 0.9][charaFace F 23][r][51ffff]って、んん？[-]
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+[charaFadeout F 0.1]
+[charaPut J 1200,1200]
+[scene 75302]
+
+[wt 0.2]
+[wipein rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+
+[wt 2.5]
+
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+[scene 51600]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.2]
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[charaFace A 6]
+
+＠ホームズ
+ふむ。空想樹とは距離があるが、他にも妙なモノが目視で[r]確認できる。なかなか興味深い。
+[k]
+
+？1：四角い……何か……
+？2：大きな……何か……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠ゴルドルフ
+おい、何だあれは。自然物か、人工建造物か？[r]モニター遅いよ！　さっさと調べたまえ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠ムニエル
+もうやってますよ！　でも[line 3]
+[k]
+
+[messageOff]
+[se ad172]
+[wt 1.5]
+[seStop ad172]
+[wt 0.2]
+[cueSe Battle ba17]
+
+＠ムニエル
+駄目だ、どんな探査にも引っかからない！[r]手応えがないというか、全てが弾かれてる感じだ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ホームズ
+魔術的構造物かとも思ったが……[r]魔力探査にも引っかからない、か。
+[k]
+
+[charaFace A 0]
+
+＠ホームズ
+かろうじて確認できるのは目視のみ。
+[k]
+
+＠ホームズ
+すなわち、あれが本当にあそこに在るものかどうかすら[r]数値的には証明できない、というわけだ。
+[k]
+
+[charaFace A 1]
+
+＠ホームズ
+これは……我々が全員で幻覚を見ている、[r]という結論もあるかな？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+
+
+＠ゴルドルフ
+集団幻覚……？　つまり宇宙的なビジョン……？[r]都合のいい接待……恐い少女……[wt 0.6][charaShake E 0.03 4 1 0.3][charaFace E 14]うう、頭が……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠マシュ
+落ち着いてください、ゴルドルフ新所長。[r]今のはホームズさん流のジョークでしょう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠フォウ
+フォッフォウ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ホームズ
+まあとにかく、『わけがわからない』という事だけが[r]わかる、となると。
+[k]
+
+＠ホームズ
+ロシアの空想樹付近で目撃された、[r]あの謎の少女のような存在との関連も気にかかるな。
+[k]
+
+＠ホームズ
+観測できないが確かに見える、という意味でね。
+[k]
+
+[charaFace A 4]
+
+＠ホームズ
+いや、あれは『空白である』という反応だったか。[r]厳密には……ふむ……？
+[k]
+
+[charaFace A 0]
+
+＠ホームズ
+……いかんせん、まだ情報が少ない。[r]この状況で結論を下すのは軽率にすぎるだろう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+＠ムニエル
+うーん。もっと近くに寄って精密調査すれば、[r]きちんと数値が返ってきたりするのかなぁ？
+[k]
+
+＠ムニエル
+あんまり近寄りたくないですけど、[r]このまま向かいますかー？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠ゴルドルフ
+バカモン、いきなりあんな怪しげな構造物に[r]乗り込んでいけるか！
+[k]
+
+＠ゴルドルフ
+このボーダーや私に何かあったらどうする、それは[r]まさに人類最後の希望が潰える事を意味するのだぞ！
+[k]
+
+＠ゴルドルフ
+まずは周囲の安全確認、そして私の安全確保だ！[r]そうだろう、技術顧問、経営顧問君！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]まあねぇ。[#異聞帯:ロストベルト]と言えど人類の世界。[-][r][51ffff]であれば、町は必ずある。[-]
+[k]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]あの立方体の付近にあるのか、それとも[-][r][51ffff]別の場所にあるのかは現時点ではわからないけど、[-]
+[k]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]とにかくいきなりボーダーで町に[-][r][51ffff]接近してしまうのは危険だ。中国の例もある。[-]
+[k]
+
+[charaFace F 25]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]だから、物資補給と情報収集を行うためにも、[-][r][51ffff]まずは適当な仮宿……キャンプ地を探すべきかな。[-]
+[k]
+
+[charaFace F 8]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]幸い、周囲の環境数値は安定している。安全確保は[-][r][51ffff]果たされていると考えて、隠密性を優先させよう。[-]
+[k]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]開発した迷彩機能はあるにしても、[-][r][51ffff]そこに割くリソースだってバカにならないからね。[-]
+[k]
+
+[charaFace F 0]
+
+＠[51ffff]ダ・ヴィンチ[-]
+[51ffff]ボーダーが隠せそうな、目立たない場所は……と。[-][r][51ffff]よし、ひとまずあそこの岩山の陰に向かうよー。[-]
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_81 1.5]
+[wt 0.5]
+[se ad629]
+[seVolume ad629 0 0.0]
+[seVolume ad629 1.5 0.8]
+[wait fade]
+[charaFadeout F 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+[scene 28300]
+[wt 0.1]
+[charaSet F 1098124500 1 ダ・ヴィンチ]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 2.0]
+
+[fadeout black 1.0]
+[seStop ad629 1.0]
+[wait fade]
+[scene 51600]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+さて、これからの具体的な方針を決めないとね。[r]一応聞いてみるけど、例の装置の調子はどうだい？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠キャプテン
+……“[#証憑機構:アロニクス・ファンタズム]”はサンゴのようにおとなしい。[r]励起の気配はないよ。
+[k]
+
+[charaFace D 6]
+
+＠キャプテン
+懸念が的中した。この[#異聞帯:ロストベルト]の上では[r]設定座標に赴いても儀式は不可能だと思う。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 24]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+ふうむ。やはり、この[#異聞帯:ロストベルト]を消さない限り[r]キミ謹製の追加装置は使い物にならないし、
+[k]
+
+＠ダ・ヴィンチ
+ひいてはシャドウ・ボーダーのアップデートもできない、[r]というわけだねぇ。困った困った。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ホームズ
+レースの賞品だけを先に[#掠:かす]め取るような事はできない、[r]という当たり前の話だろう。
+[k]
+
+＠ホームズ
+どのみち[#異聞帯:ロストベルト]は切除しなくてはならないのだから。[r]やるべき事が単純化したと考えればいいさ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ゴルドルフ
+うむ！　そして例によって私はこのボーダー、[r]人類最後の砦を守るという使命がある。
+[k]
+
+＠ゴルドルフ
+外に出て働くのは実働部隊……[r][%1]、マシュ・キリエライト。
+[k]
+
+[charaFace E 1]
+
+＠ゴルドルフ
+言うまでもなくおまえたちの役目だ。[r][#異聞帯:ロストベルト]調査もこれで四度目、もはや素人ではあるまい。
+[k]
+
+？1：了解です
+？2：頑張ります
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠マシュ
+……はい。[r]気を引き締めて調査に当たりたいと思います。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+さっきも言ったけど、ここはロシアや北欧とは違い、[r]環境自体は安定している。
+[k]
+
+＠ダ・ヴィンチ
+中国のような平穏さだとも言えるけど……物理的な温度や[r]湿度以外の要素、つまりマナの濃度は濃いめだ。
+[k]
+
+＠ダ・ヴィンチ
+中国で使った携帯型ステルス装備は[r]使えないからそのつもりでね。
+[k]
+
+[charaFace F 8]
+
+＠ダ・ヴィンチ
+まあそれでも、オレルス・ボードのような特殊な[r]移動用装備が必要な場所じゃないのは確かだ。
+[k]
+
+＠ダ・ヴィンチ
+安心して行ってくるといい。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠マシュ
+は[charaMoveReturn C 0,-5 0.4]い！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 11]
+[charaFadein E 0.1 1]
+
+＠ゴルドルフ
+うむ、やる気に満ちた良い返事だ。
+[k]
+
+[charaFace E 1]
+＠ゴルドルフ
+しかしやる気だけで私の腹部は膨れない。[r]実働部隊が２名では[#心許:こころもと]ないというもの。
+[k]
+
+＠ゴルドルフ
+他に調査に同行するサーヴァントは[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠キャプテン
+その意見には同意だけど、僕に期待されても困る。[r]戦闘要員として送り込まれたわけじゃないし。
+[k]
+
+＠キャプテン
+同行しても[%1]の足を[r]引っ張るだけだ。
+[k]
+
+＠キャプテン
+僕の仕事はこの[#艦:ふね]を[r]今より使えるものにすること。
+[k]
+
+＠キャプテン
+すぐには無理だとしても、[#来:きた]るべき時のために[r]しておいたほうがいい準備は色々ある。
+[k]
+
+[charaFace D 6]
+
+＠キャプテン
+さしあたってはこのブリッジの衝撃吸収性能が最優先。[r]座席のクッションをもっといいものにしたい。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 17]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+むー。私だって頃合いを見てなんとかしようと[r]思っていたんですぅー。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠哪吒
+ボクは　無論　二人に　同行する。
+[k]
+
+＠哪吒
+[#インド:印度]の地も　ボクと　無関係ではない。[r]役に立てる　はず。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace H 0]
+[charaFadein H 0.1 0]
+[charaFace C 13]
+[charaFadein C 0.1 2]
+
+＠マシュ
+はい。インドといえば天竺……[r]哪吒さんにとっては馴染みのある土地かと。
+[k]
+
+[charaFace C 1]
+
+＠マシュ
+ありがとうございます、哪吒さんに[r]お手伝いいただけるのであれば百人力です！
+[k]
+
+＠哪吒
+…………。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ゴルドルフ
+…………。[r]だが、やはりそれだけでは足るまい。
+[k]
+
+＠ゴルドルフ
+ダ・ヴィンチは非常時に備え、[r]いつでもボーダーを動かせるようにここで待機。
+[k]
+
+＠ゴルドルフ
+ホームズもボーダーの計測機器をフル活用しての[r]情報分析に集中してもらわねばならん。
+[k]
+
+[charaFace E 10]
+
+＠ゴルドルフ
+[%1]よ、これまた例の如く、[r][#異聞帯:ロストベルト]の調査に必要な戦力を補強するためには
+[k]
+
+＠ゴルドルフ
+おまえは現地でサーヴァントの召喚を試みる必要が[r]あるという事だ。
+[k]
+
+[charaFace E 2]
+
+＠ゴルドルフ
+アトラス院のサーヴァントにもう少し融通というものが[r]利けばよかったのだがな、いやあ仕方ない仕方ない！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 17]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+（ボーダーに残るサーヴァントの数だけは増えたから、[r]　ゴルドルフくんはゴキゲンだなー）
+[k]
+
+[charaFace F 0]
+
+＠ダ・ヴィンチ
+まず召喚を試みなきゃいけないのには[r]同意するけど、苦あれば楽ありって言うよね？
+[k]
+
+＠ダ・ヴィンチ
+今回は召喚に関していくつかいい情報がある。
+[k]
+
+[charaFace F 7]
+
+＠ダ・ヴィンチ
+一つは電力だ。中国のときと同様に、[r]シオンから使い捨てブースターの提供を受けている。
+[k]
+
+＠ダ・ヴィンチ
+[#霊子収集体:ヴ　ォ　イ　ド　セ　ル]とかいうものさ。[r]さすがはアトラス院、実に興味深いアイテムだね。
+[k]
+
+＠ダ・ヴィンチ
+改めて言うと、これをマシュの盾に接続する事で、[r]召喚に必要なリソースが肩代わりされるってわけ。
+[k]
+
+[charaFace F 16]
+
+＠ダ・ヴィンチ
+まあ今回は作製時間の関係上、[r]サーヴァント２騎ぶんしかないようだけど……
+[k]
+
+＠ダ・ヴィンチ
+凧を飛ばして雷からエネルギーを受け取るよりは[r]はるかにマシだよねー。
+[k]
+
+[charaFace F 8]
+
+＠ダ・ヴィンチ
+そして二つ目。召喚に適した霊脈ポイントが既に近くで[r]見つかっている。徒歩圏内だよ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ホームズ
+肯定だ。まずそこに向かって戦力を増やすのがいいだろう。[r]それから改めて周囲の探索を始めればいい。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠マシュ
+了解しました。それなら、味方を増やした状態で[r]最初の調査に向かうことができますね。
+[k]
+
+？1：よし、それじゃあ早速……行こうか！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠フォウ
+フォウフォーウ！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_77 1.0 0.4]
+[wait fade]
+[charaFadeout B 0.1]
+[wipeFilter cinema 0.5 0]
+[wt 0.5]
+[charaTalk F]
+[charaFace F 23]
+[charaFadein F 0.1 0,-50]
+[fadein black 1.0]
+[wait fade]
+
+＠ダ・ヴィンチ
+……ゴルドルフくん、いいの？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 -256,-50]
+[charaFace F 23]
+[charaFadein F 0.1 256,-50]
+
+＠ゴルドルフ
+な、何がだ？
+[k]
+
+[charaFace F 0]
+
+＠ダ・ヴィンチ
+ほら、いつもなら『待てい！　所長の号令を待たんか！』[r]とか言いそうだなーって思ってさ。
+[k]
+
+[charaFace E 3]
+
+＠ゴルドルフ
+む。
+[k]
+
+＠ゴルドルフ
+…………まあ、今回も司令官らしい号令を[r]事前に考えてはいたが……
+[k]
+
+[charaFace E 1]
+
+＠ゴルドルフ
+特に必要ない、と判断したのだよ。[r]この[#異聞帯:ロストベルト]はそこまで物騒ではなさそうだ。
+[k]
+
+＠ゴルドルフ
+意味の無い、無駄な手間と時間をかけるだけの[r]フェーズなら省略しても構うまい。エコだよエコ。
+[k]
+
+[charaFace F 8]
+
+＠ダ・ヴィンチ
+そんな事はないさ。とても重要だ。[r]ほらほら、早く早く。
+[k]
+
+[charaFace E 10]
+
+＠ゴルドルフ
+う、うむ？　技術顧問がそう言うのなら、[r]まあ、今さらではあるが……うおっほん。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wipeOff]
+[wt 0.5]
+[fadein black 1.0]
+[bgm BGM_EVENT_77 1.2 1.0]
+[wait fade]
+
+[wt 0.2]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠ゴルドルフ
+待てい、待て待て！[r]貴様らは大事なことを忘れているぞ！
+[k]
+
+？1：…………それは？
+？！
+
+[charaPut J 1]
+[charaEffect J bit_talk_41]
+[se ad186]
+
+＠ゴルドルフ
+無論、司令官の号令だ！[r]全ての作戦はそこから始まるものなのだからねぇ！
+[k]
+
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_41]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaFace E 10]
+
+＠ゴルドルフ
+整列！　背筋伸ばす！　敬礼は結構！[r]はい、よーく拝聴しなさいよ！
+[k]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaFace E 16]
+
+＠ゴルドルフ
+シャドウ・ボーダー艦長兼カルデア所長として[r][%1]に命ずる！
+[k]
+
+＠ゴルドルフ
+このインドの地に広がる[#異聞帯:ロストベルト]を調査し、[r]あの空想樹を速やかに伐採する手立てを見つけよ！
+[k]
+
+＠ゴルドルフ
+[#異聞帯:ロストベルト]を消失させ、[r]その侵略から地球を守ると共に[line 3]
+[k]
+
+＠ゴルドルフ
+シャドウ・ボーダーの改造と進化に至る道筋を[r]確保するのだ！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+[wt 0.5]
+
+？1：[line 3]了解！
+？2：行ってきます！
+？！
+
+[wt 0.3]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 30]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+（そうそう。過酷な任務だからこそ、[r]　期待と責任をもって送りだしてあげないとね）
+[k]
+
+＠ダ・ヴィンチ
+（私たちもいいチームになってきた。[r]　前のカルデアにだって負けないくらいさ！）
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_82 2.0]
+[wait fade]
+
+[scene 10000]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[bgmStop BGM_EVENT_77 0.4]
+[bgmStop BGM_EVENT_81 0.4]
+[bgmStop BGM_EVENT_82 0.4]
+
+[seStop ad566 0.4]
+[seStop ad14 0.4]
+[seStop ade8 0.4]
+[seStop ad172 0.4]
+[cueSeStop ba17 0.4]
+[seStop ad629 0.4]
+[seStop ad186 0.4]
+
+[charaSet A 9005001 1 ホームズ]
+[charaSet B 98002000 1 フォウ]
+[charaSet C 98001000 1 マシュ]
+[charaSet D 1098158300 1 キャプテン]
+[charaSet E 1098123200 1 ゴルドルフ]
+[charaSet F 1098124500 1 ダ・ヴィンチ]
+[charaSet G 1098123000 1 ムニエル]
+[charaSet H 3031001 1 哪吒]
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_41]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[scene 10000]
+[wt 0.4]
+[soundStopAll]
+
+[maskin black 1]
+[wait mask]
+[label selectBranch]
+
+[skip false]
+
+[wt 1.0]
+
+[fowardEffect bit_chapterstart304]
+[wait fowardEffect]
+
+[scene 10000]
+
+[wt 1.0]
+[soundStopAll]
+[end]

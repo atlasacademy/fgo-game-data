@@ -1,0 +1,169 @@
+
+
+
+
+＄94-04-77-57-1-1
+
+[soundStopAll]
+
+[skip false]
+
+[maskout black 0]
+[wait mask]
+
+[charaSet A 2005001 1 アタランテ]
+[charaSet B 1038000 1 イアソン]
+[imageSet C cut171_token_402 1]
+[imageSet D cut171_token_ias 1]
+[charaSet K 6038002 1 シャルロット・コルデー]
+[charaSet T 5009000 1 エフェクト用ダミー]
+
+[scene 20730]
+
+[pictureFrameTop cut170_gameframe_bright]
+
+[charaTalk depthOff]
+[charaDepth T 3]
+[charaDepth C 4]
+[charaDepth D 5]
+[charaDepth A 1]
+[charaDepth B 2]
+
+[skip true]
+
+[fadein black 0]
+[wait fade]
+[maskin black 1.0]
+[wait mask]
+
+[bgm BGM_EVENT_2 0.1]
+
+
+[charaTalk K]
+[charaFace K 7]
+[charaFadein K 0.1 0,-50]
+[charaEffect K bit_talk_06]
+
+＠シャルロット・コルデー
+ふう……。[r]やり遂げました……！
+[k]
+
+[messageOff]
+[wt 0.3]
+
+[se ade406]
+[wt 0.2]
+[flashin once 0.1 0.6 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaFadeout K 0.1]
+[wt 0.2]
+[charaEffectStop K bit_talk_06]
+[wt 0.1]
+[seStop ade406 0.6]
+[wt 1.0]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠アタランテ
+[#約定:やくじょう]だ。決着の[#暁:あかつき]には勝利者に従おう。[wt 0.7][charaFace A 1][r]……そちらの陣営には子供もいるようだな。
+[k]
+
+[charaEffect A bit_talk_token_change01]
+
+[charaFace A 4]
+＠アタランテ
+大人になりかけの娘や、いつまでも大人になれない男は、[r]もう懲りごりだ……。
+[k]
+
+[messageOff]
+[charaEffectStop A bit_talk_token_change01]
+[charaPut T 0,-10]
+[charaEffect T bit_talk_token_change02]
+[se ad39]
+[wt 3.2]
+
+[se ad29]
+[seStop ad29 1.5]
+[wt 0.5]
+[charaFadeout A 0.4]
+
+[charaTalk C]
+[charaFadein C 0.4 0,-210]
+[wt 0.5]
+
+[charaMove T 0,10 1.2]
+[wt 1.2]
+
+[charaFadeout C 0.4]
+[wt 0.5]
+
+[se adm19]
+[seVolume adm19 0 0.3]
+[seVolume adm19 1.0 1.0]
+[wt 0.5]
+
+[seStop adm19 1.7]
+[charaMove T 0,700 2.2]
+[wt 2.2]
+
+[charaEffectStop T bit_talk_token_change02]
+[wt 0.1]
+[charaEffectDestroy T bit_talk_token_change02]
+
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 0,-50]
+
+＠イアソン
+それはオレのことか！？
+[k]
+
+[charaEffect B bit_talk_token_change01]
+
+＠イアソン
+ええい、もう駒扱いはごめんだ。オレは自由の旅に発つ！[r]さらばだ！
+[k]
+
+[messageOff]
+[charaEffectStop B bit_talk_token_change01]
+[charaPut T 0,-10]
+[charaEffect T bit_talk_token_change02]
+[se ad39]
+[wt 3.2]
+
+[se ad29]
+[seStop ad29 1.5]
+[wt 0.5]
+[charaFadeout B 0.4]
+
+[charaEffectStop T bit_talk_token_change02]
+[charaTalk D]
+[charaFadein D 0.4 0,-210]
+[wt 1.5]
+
+[charaEffectDestroy T bit_talk_token_change02]
+
+[se ade244]
+[se ad415]
+[seVolume ad415 0 0.4]
+[charaRollMoveEx D 6.0 3600 0,-250]
+[charaMove D -800,400 1.0]
+[seStop ade244 1.0]
+[seStop ad415 1.0]
+[wt 1.0]
+
+[messageOff]
+[maskout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

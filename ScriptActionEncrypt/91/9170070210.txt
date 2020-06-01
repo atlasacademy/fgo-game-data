@@ -1,0 +1,197 @@
+＄91-70-07-02-1-0
+[charaSet A 7007001 1 ヴラド三世]
+[charaSet B 99502600 1 マシュ]
+[charaSet C 98021100 1 女性]
+[charaSet D 98006200 1 魔物]
+
+
+[bgm BGM_EVENT_5 0.1]
+[scene 10902]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠ヴラド三世
+ふむ、またもやロンドンか。[r]かの悪魔は退治したが[line 2]また別物か？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[se ad13]
+[charaTalk B]
+[charaFace B 0]
+[charaEffect B bit_talk_10]
+[charaFadein B 0.1 1]
+
+＠マシュ
+そこまではわかりません。[r]ただ、このロンドンから反応があったのは事実です。
+[k]
+
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ヴラド三世
+……いいだろう。たとえ小さなものだろうと[r]摘み取り、我が伝説を盤石のものにする。
+[k]
+
+＠ヴラド三世
+ヴラドの名は、悪魔を冠する。[r]されど、我は悪鬼にあらず吸血鬼にあらず、だ。
+[k]
+
+＠ヴラド三世
+よろしい、行くぞマスター！
+[k]
+
+？1：がんばろう！
+？！
+
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout A 0.1]
+[scene 10952]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[se ad21]
+[wt 2.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠ヴラド三世
+……ほう。どうやら見つけたようだぞ。[r]今度は悪魔ではなく、ただの亡霊のようだが。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 7]
+[charaEffect B bit_talk_10]
+[charaFadein B 0.1 1]
+
+＠マシュ
+はい、とはいえ害のない訳ではありません。[r]このロンドンは魔霧の影響が、まだ色濃く残っているようです。
+[k]
+
+＠マシュ
+本来ならただの亡霊でも、[r]今は人を死に至らしめる悪霊です。
+[k]
+
+[bgmStop BGM_EVENT_5 0.7]
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+＠女性
+たす……けて……！
+[k]
+
+？1：救出しよう！
+？！
+
+[bgm BGM_EVENT_3 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+
+＠ヴラド三世
+ああ、分かっているとも。[r]では、あの時のように[line 2]『[#血塗れ王鬼:カズィクル・ベイ]』！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[messageOff]
+[se ad397]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaShake D 0.01 5 5 0.7]
+[charaEffect D bit_talk_14]
+[flashin once 0.1 0.1 FF000080 FF000080]
+[wait flash]
+[flashin once 0.1 0.1 FF000080 FF000080]
+[wait flash]
+[flashin once 0.1 0.1 FF000080 FF000080]
+[wait flash]
+[seStop ad397 1.0]
+[wt 1.0]
+
+[se ad22]
+[charaShake D 0.01 5 5 0.7]
+[wt 1.5]
+[wipeout leftToRight 0.4 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[wt 0.4]
+
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+
+＠女性
+な、何……！？
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ヴラド三世
+そこの女。立ち去るがいい。
+[k]
+
+[charaFace A 5]
+＠ヴラド三世
+これは貴様たちの領域に侵入した[line 3][r]いてはならぬ[#概念:モノ]。
+[k]
+
+＠ヴラド三世
+触れれば死ぬぞ。[r]命が惜しくば、去れ。
+[k]
+
+＠女性
+で、でも、でも、足がうごか、なくて……！
+[k]
+
+[charaFace A 0]
+＠ヴラド三世
+[line 3]ほう、ならば仕方あるまい。[r]マスターは彼女を守って退がるがいい。
+[k]
+
+[charaFace A 5]
+＠ヴラド三世
+余は、あの亡霊を蹂躙する。[r]我が杭は本来、刑罰の証。
+[k]
+
+[charaFace A 2]
+＠ヴラド三世
+死してなお民に害を為すとは、無礼にも程があろう。[r]速やかに砕け散るがいい、亡霊。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

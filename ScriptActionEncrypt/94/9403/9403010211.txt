@@ -1,0 +1,355 @@
+
+
+＄94-03-01-02-1-1
+
+
+[soundStopAll]
+
+[charaSet A 3034001 1 茨木童子]
+[charaSet B 6029001 1 アサシン・パライソ]
+[charaSet C 99502600 1 マシュ]
+[charaSet G 10008001 1 シトナイ]
+[charaSet D 98115000 1 エフェクト用2]
+[charaSet H 98115000 1 エフェクト用]
+
+[scene 20110]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad347]
+[effect bit_talk_kengekiall01]
+[wt 0.5]
+[seStop ad347 0.5]
+[se adm15]
+[effect bit_talk_v_slash01]
+
+[wt 0.5]
+
+[se bac149]
+[charaPut D -100,50]
+[charaEffect D bit_talk_14]
+[wt 0.3]
+[se bac150]
+[charaPut D 100,-50]
+[charaEffect D bit_talk_14]
+[wt 0.6]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠シトナイ
+もういいよ、シロウ！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+[se ad526]
+[wt 1.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠シトナイ
+よしよし。[r]お疲れさま、シロウ。またお願いね。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+[se ad52]
+[wt 1.5]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠マシュ
+戦闘終了です！[r]シトナイさんが宝具らしき獣の戦闘状態を解除しました！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠シトナイ
+ほんとは犬なんだけどね、ロウヒが変なことを言い出して[r]おっきなクマみたいにしちゃったの。
+[k]
+
+[charaFace G 15]
+
+＠シトナイ
+名前は……[r]ほんとはシロウじゃないんだけど、うん。
+[k]
+
+[charaFace G 1]
+
+＠シトナイ
+ともかくあなたたち、強いね。[r]これなら一緒に『カムイの黄金』を集められると思う。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+…………むう。
+[k]
+
+[charaFace A 5]
+
+
+＠茨木童子
+[#吾:われ]、ちょっぴり暴れたりない。[r]仮初めの[#躯:からだ]がやっと温まってきたところだというのに。
+[k]
+
+＠茨木童子
+もう少し続けてくれればシトナイ、[#汝:なれ]の霊基なぞ[r]この槍にて薄紙の如く引き裂くところなのだが……。
+[k]
+
+[charaFace A 1]
+
+＠茨木童子
+まあ、よい。この霊基での暴れ方も概ね掴み直せたぞ。[r]オニランドの鬼もどきどもなぞ、物の数ではないわ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：[servantName 602900:アサシン・パライソ:望月千代女]
+シトナイ殿。[r]アトラクションマネージャーとやらも、鬼、なのでござるか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk G]
+[charaFace G 14]
+[charaFadein G 0.1 1]
+
+＠シトナイ
+……。[r]……。
+[k]
+
+[messageOff]
+[charaFace G 13]
+[wt 1.0]
+
+[charaFace G 5]
+＠シトナイ
+鬼だけどちょっと違うわ。[r]マネージャーたちは[line 3]
+[k]
+
+＠シトナイ
+[line 6]全員、サーヴァントなの。
+[k]
+[messageOff]
+[wt 1.0]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_5 1.5]
+[wait fade]
+
+[charaFadeout G 0.1]
+[wt 2.0]
+
+[scene 64600]
+
+
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[bgm BGM_BATTLE_29 0.1]
+
+＠鬼王朱裸
+グフフフフ……！
+[k]
+
+＠鬼王朱裸
+[#小癪:こしゃく]なクレーマーどもを待ち伏せて[r]オニランド・タウンバスをジャックしてみたというのに！
+[k]
+
+＠鬼王朱裸
+来ない！
+[k]
+
+＠鬼王朱裸
+アイツら全然来ないじゃん！[r]おのれ、おのれ卑怯な……！！
+[k]
+
+＠鬼王朱裸
+どうも市街に潜んでいる訳ではないようだな！[r]ならばグフフフ、よかろう！
+[k]
+
+＠鬼王朱裸
+我がアトラクションマネージャーが出迎えてくれる！[r]グフフフフ！　ガハハハハハハハハハ！
+[k]
+
+＠鬼王朱裸
+ゆけい！　メリーゴーラウンド・マネージャー！[r]ゴールドサーヴァントの力を見せてやるがよいぞ！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+
+
+
+[fadeout black 1.0]
+[bgmStop BGM_BATTLE_29 1.0]
+[wait fade]
+
+[input selectBranch]
+
+[bgmStop BGM_EVENT_3 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[bgmStop BGM_EVENT_5 1.0]
+[bgmStop BGM_BATTLE_29 1.0]
+
+[seStop ad347 0.1]
+[seStop adm15 0.1]
+[seStop bac149 0.1]
+[seStop bac150 0.1]
+[seStop ad526 0.1]
+[seStop ad52 0.1]
+
+[effectStop bit_talk_kengekiall01]
+[effectStop bit_talk_v_slash01]
+
+[charaSet A 3034001 1 茨木童子]
+[charaSet B 6029001 1 アサシン・パライソ]
+[charaSet C 99502600 1 マシュ]
+[charaSet G 10008001 1 シトナイ]
+[charaSet D 98115000 1 エフェクト用2]
+[charaSet H 98115000 1 エフェクト用]
+
+[scene 10000]
+[skip false]
+
+[messageOff]
+[maskin black 1.0]
+[wait mask]
+
+[fadeout black 0.1]
+[wait fade]
+[soundStopAll]
+
+[label selectBranch]
+
+[skip false]
+
+
+[fadein black 1.0]
+[wait fade]
+
+
+＠
+【caution！】[r]【この先、専用演出としてボイスが再生されます】
+[k]
+
+＠
+【[line 3]準備が整ったら画面をタッチしてね！】
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+[tapSkip stop_tapSkip]
+[label stop_tapSkip]
+
+[bgm BGM_EVENT_99 0.1]
+
+[revivalBranch lblNormal lblRevival]
+[label lblNormal]
+[effect bit_talk_oniland_nexttitle]
+[wait fowardEffect]
+[branch lblConf]
+[label lblRevival]
+[effect bit_talk_oniland_nexttitle_r]
+[wait fowardEffect]
+[label lblConf]
+
+[wt 3.1]
+[effect bit_talk_oniland_cut02]
+
+[wt 0.2]
+
+[pictureFrame cut132_text_07]
+[voice 9010011_0_M620]
+[wait voice 9010011_0_M620]
+[pictureFrame]
+
+[wt 0.2]
+
+[pictureFrame cut132_text_08]
+[voice 9010011_0_M621]
+[wait voice 9010011_0_M621]
+[pictureFrame]
+
+[wt 0.2]
+
+[pictureFrame cut132_text_09]
+[voice 9010011_0_M622]
+[wait voice 9010011_0_M622]
+[pictureFrame]
+
+[wt 0.3]
+
+[pictureFrame cut132_text_10]
+[voice 9010011_0_M623]
+[wait voice 9010011_0_M623]
+[pictureFrame]
+
+[pictureFrame cut132_text_05]
+[voice 9010011_0_M624]
+[wt 4.7]
+[pictureFrame]
+
+[effect bit_talk_oniland_telop02]
+[wait voice 9010011_0_M624]
+
+[wt 0.3]
+
+[voice 9010011_0_M625]
+[wait voice 9010011_0_M625]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_99 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

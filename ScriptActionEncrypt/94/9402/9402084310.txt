@@ -1,0 +1,203 @@
+
+＄94-02-08-43-1-0
+[soundStopAll]
+
+
+[charaSet A 2028001 1 エレナ]
+[equipSet H 9806390 1 バレンタイン礼装]
+
+[scene 10310]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.2]
+
+＠エレナ
+ふふふ[line 3]
+[k]
+
+＠エレナ
+よくってよ、マスター。今年のあたしは準備万端なの。
+[k]
+
+＠エレナ
+あまり深く考えたことはなかったけれど、[r]やっぱり現代の子に贈るプレゼントは現代風がいいわよね。
+[k]
+
+[charaFace A 1]
+
+＠エレナ
+だから、ええ。うん！[r]現代っ子がどういうモノを好むのか考慮してみたわ！
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace A 0]
+
+＠エレナ
+つぶさにデータを集めて研究した訳ではないのだけれど、[r]ピンと来るものがあったの。ああ、これだわ、って。
+[k]
+
+＠エレナ
+きっとこれなら喜んでくれる。[r]あなたもそうだし、マシュもきっと喜んでくれるはず。
+[k]
+
+[charaFace A 4]
+
+＠エレナ
+……なんて、[r]あんまり期待を上げすぎてもダメよね。
+[k]
+
+[charaFace A 3]
+
+＠エレナ
+でもね、本当に。[r]これが現代の若い子に喜ばれるものだっていう、
+[k]
+
+＠エレナ
+直感？　みたいなものがあったの！[r]マハトマの声っていうのとはまた違って[line 3]
+[k]
+
+[charaFace A 0]
+
+＠エレナ
+いいえ、勿体ぶるのはだめね。じゃあ、はい。[charaFace A 1][r]ハッピー・バレンタイン！
+[k]
+
+[messageOff]
+[wt 0.3]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[charaFace H 0]
+[charaFadein H 0.5 0,-70]
+
+[wt 2.0]
+
+？1：こ、これは……！
+？2：ただよう昭和っぽいキャラクター商品の気配！
+
+？！
+
+[charaFadeout H 0.4]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.2]
+
+＠エレナ
+えへへ。どう、今風でしょう！
+[k]
+
+[charaFace A 0]
+
+＠エレナ
+ダ・ヴィンチに言って、あれこれとアーカイブのデータを[r]見せて貰ったのよ。半日かけて検討して。
+[k]
+
+＠エレナ
+それで見つけたのが、こういう、可愛い感じに[r]カリカチュアされたキャラクターたちのチョコレート！
+[k]
+
+＠エレナ
+もちろんカルデアのあなたへ贈るものだから、[r]キャラクターは英霊たちにしてみたわ。
+[k]
+
+[charaFace A 1]
+
+＠エレナ
+ふふ。どう？[r]今風でしょう！　現代っ子、大喜びよね！
+[k]
+
+？1：あ……あり、が、とう！
+
+＠エレナ
+ええ、ええ！　よくってよ！
+[k]
+
+
+[branch select03_end]
+
+？2：現代っ子とかは置いといて、ありがとう！
+
+[charaFace A 0]
+
+＠エレナ
+ん？
+[k]
+
+＠エレナ
+…………え、あれ？　も、もしかして[line 3]
+[k]
+
+[messageOff]
+[wt 0.8]
+[charaFace A 4]
+
+＠エレナ
+チョイス、何かおかしかった？[r]まさか現代風じゃなくて一世代か二世代前っぽい？
+[k]
+
+＠エレナ
+そ、そうなの？[r]え……で、でもあたし、これよねってピンときて……
+[k]
+
+＠エレナ
+…………。[r]…………。
+[k]
+
+＠エレナ
+…………………………間違えちゃった？
+[k]
+
+
+[branch select04]
+
+？！
+
+[label select04]
+
+？1：そんなことないです
+？2：嬉しいよ。ありがとう！
+
+？！
+
+[charaFace A 0]
+
+＠エレナ
+……ほっ。ああ、よかった！
+[k]
+
+[charaFace A 1]
+
+＠エレナ
+たくさんあるから、たっくさん食べてね！[r]とっても甘くておいしいんだから！
+[k]
+
+
+[label select03_end]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

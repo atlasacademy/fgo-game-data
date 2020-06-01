@@ -1,0 +1,132 @@
+
+
+
+＄94-04-77-58-1-0
+
+[soundStopAll]
+
+[skip false]
+
+[maskout black 0]
+[wait mask]
+
+[charaSet A 25005000 1 ボイジャー]
+[charaSet B 1038000 1 イアソン]
+[charaSet C 2005001 1 アタランテ]
+[imageSet D cut174_2nd 1]
+[imageSet E cut174_2nd 1]
+[charaSet T 5009000 1 エフェクト用ダミー]
+
+[scene 20730]
+
+[pictureFrameTop cut170_gameframe_bright]
+
+[skip true]
+
+[fadein black 0]
+[wait fade]
+[maskin black 1.5]
+[wait mask]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 0,-50]
+
+＠ボイジャー
+あるご、のおつ……？
+[k]
+
+[charaFace A 16]
+
+＠ボイジャー
+あのひとたちも、たびをしたんだね。[r]ながい、ながい、ぼうけんのたびを……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠イアソン
+そうとも。聞きたいか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-50]
+
+＠アタランテ
+語るな！　誇るな！　怠るな！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 1.2]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 0,-50]
+
+＠ボイジャー
+イアソン……ジェイソン……？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+[wt 0.6]
+
+[charaDepth D 2]
+[charaDepth E 1]
+[charaScale E 1.4]
+
+[effect bit_talk_x_slash01]
+[se ad470]
+[seVolume ad470 0 0.9]
+[wt 0.1]
+[seStop ad470 0.2]
+[wt 0.1]
+
+[effect bit_talk_x_slash02]
+[se ad470]
+[seVolume ad470 0 0.9]
+[wt 0.2]
+[seStop ad470 0.3]
+[wt 0.3]
+
+[backEffect bit_talk_sparks]
+
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[se ad471]
+[charaFadein E 0.2 0,-270]
+[wt 0.1]
+
+[charaFadein D 0.2 0,-200]
+
+[charaMove E 0,-200 0.2]
+[charaMoveScale E 1.0 0.2]
+[wt 0.5]
+[effectStop bit_talk_fire]
+
+[wt 2.0]
+
+[maskout black 0.5]
+[seStop ad471 0.4]
+[bgmStop BGM_EVENT_3 0.4]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[soundStopAll]
+[end]
+
+

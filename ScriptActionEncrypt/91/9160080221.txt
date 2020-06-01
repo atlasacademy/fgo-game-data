@@ -1,0 +1,114 @@
+
+
+
+＄91-60-08-02-2-1
+
+[soundStopAll]
+[charaSet A 6008000 1 クレオパトラ]
+[charaSet B 5010001 1 パラケルスス]
+[charaSet D 98006000 1 敵]
+
+[scene 20720]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_valentine_brilliant]
+
+[cueSe Battle bac214]
+[wt 0.3]
+[effect bit_shot_01]
+[wt 0.7]
+
+[effectStop bit_talk_valentine_brilliant]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.1]
+[se bac151]
+[charaEffect D bit_talk_14]
+[wt 0.5]
+
+[se ad24]
+[charaShake D 0.05 5 5 0.5]
+[wt 1.7]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+[se ad42]
+[charaSpecialEffect D enemyErasure 1 1.0]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠クレオパトラ
+…………なかなか不気味な[r]手ごたえではありましたが。
+[k]
+
+
+[messageOff]
+[charaFace A 5]
+[wt 1.0]
+[charaFace A 4]
+[bgm BGM_EVENT_2 0.1]
+
+＠クレオパトラ
+美しさが足りない……ううん……。[r]なかなか、理想の運動にならない……むつかしいわね……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠パラケルスス
+最後のファラオ、クレオパトラ。[r]貴方のご期待に添えず申し訳ありません。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠クレオパトラ
+いえ、よいのです。妾の方こそお詫びいたします。[r]せっかく協力していただいたのに、[#碌:ろく]に御礼もせずに、
+[k]
+
+[charaFace A 1]
+＠クレオパトラ
+次のエリアに移動してしまう妾をお許しになって？[r]きっとこの御礼はいたします。ニトクリス様もお呼びして、
+[k]
+
+＠クレオパトラ
+最高の酒宴を用意いたしますので。[r]それでは。
+[k]
+
+[charaFace A 2]
+＠クレオパトラ
+[line 3]マスター！
+[k]
+
+？1：はいはい
+？2：じゃあ、次かな？
+
+？！
+
+＠クレオパトラ
+参りましょう！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

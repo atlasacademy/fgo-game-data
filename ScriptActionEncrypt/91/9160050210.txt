@@ -1,0 +1,741 @@
+
+＄91-60-05-02-1-0
+
+[soundStopAll]
+
+
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 6005001 1 ジャック]
+[charaSet C 9002001 1 天草四郎]
+[charaSet D 98006200 1 エネミー１]
+
+[charaSet F 8001000 1 ダミーエフェクト１]
+[charaSet G 8001000 1 ダミーエフェクト２]
+[charaSet H 8001000 1 通信エフェクト]
+[imageSet I cut128_text 1]
+[imageSet J 37101 1]
+
+[charaScale J 1.01]
+[charaFilter J silhouette e4e4e4FF]
+
+[charaDepth B 1]
+[charaDepth J 5]
+[charaDepth F 9]
+
+
+[scene 10000]
+[cameraMove 0 0,0 1.01]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1]
+
+
+
+[charaFadein I 1.4 -20,-200]
+
+[wait touch]
+
+[fadeout black 1.2]
+[wait fade]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[scene 10902]
+[cameraFilter gray]
+
+[fadein black 1.2]
+[wait fade]
+
+＠
+繁栄の時代の到来だ。
+[k]
+
+＠
+第二次産業革命。[r]偉大なる英国は世界に覇を唱えた。
+[k]
+
+＠
+壊れたレコードのように繰り返される技術革新。[r]金は世界をぐるぐる巡り肥え太る。
+[k]
+
+＠
+富む者、驕る者、貪る者、[r]腐る者、奪う者、嘲る者[line 3]
+[k]
+
+＠
+暗黒の時代の到来だ。
+[k]
+
+＠
+弱きは食い物にされ、[r][#機構:システム]は半自動的に貧しさを生産する。
+[k]
+
+＠
+人は順番に死んでいく。[r]男が死に女が死に子供が死に老人が死んだ。
+[k]
+
+＠
+そして最後に、富める者が生き残った。[r]生き残って笑い続けた。
+[k]
+
+＠
+[#笑顔:スマイル]。
+[k]
+
+＠
+常に満面の笑顔で。[r]幸福な人生を歩め。
+[k]
+
+＠
+人間として当然の思考回路をしかし、[r]その少女たちは拒絶する。
+[k]
+
+＠
+[#笑顔:スマイル]。
+[k]
+
+＠
+[line 3]わたしたちに、[#咎:とが]と[#罰:ばつ]と[#贖:あがな]いが、[r]押し寄せますように。
+[k]
+
+＠
+ところで、そこの君。
+[k]
+
+＠
+[#彼女が壊れていることなんて]、[r][#とっくの昔に気がついていたんじゃないかな]？
+[k]
+
+？1：……！
+？！
+
+
+[messageOff]
+[se ad240]
+[fowardEffect bit_talk_35]
+[wt 1.8]
+
+[se ad144]
+[cameraMove 0.3 0,10 1.01]
+[wt 0.6]
+
+[fadeout black 0.8]
+[wait fade]
+
+[scene 10000]
+[wt 0.8]
+
+[se ade103]
+[seVolume ade103 0 0.7]
+
+[fadein black 0.8]
+[wait fade]
+[wt 0.6]
+
+＠C：？？？
+どうかしっかり。[r]ハンカチがあります。こちらで呼吸してください。
+[k]
+
+[messageOff]
+[wipeout openEye 1.0 1.0]
+[wait wipe]
+
+[scene 10902]
+[cameraFilter normal]
+
+[seStop ade103 1.0]
+
+[wipein openEye 1.0 1.0]
+[wait wipe]
+
+[se ad7]
+[cameraMove 0.3 0,0 1.01]
+[wt 0.6]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.6]
+
+？1：ここは……？
+
+＠C：？？？
+どうやら[#倫敦:ロンドン]のようですね。[r]私の名前は天草四郎ですが、わかります？
+[k]
+
+[charaFace C 1]
+
+＠天草四郎
+おや、理解できる。[r]それは結構。
+[k]
+
+？2：天草四郎……？
+
+＠天草四郎
+どうやらトラブルのようです。[r]ここは……[#倫敦:ロンドン]のようですが。
+[k]
+
+？！
+
+[charaFace C 4]
+
+＠天草四郎
+さて、マスターも無事目を覚ましたので[r]カルデアに帰還したいところですが……。
+[k]
+
+＠天草四郎
+[#やらなければいけないことがある]、[r]そういう気持ちに突き動かされています。
+[k]
+
+[charaFace C 0]
+
+＠天草四郎
+……ここに至る原因が、どこかにあるはずです。[r]マスター、何か思い出しましたか？
+[k]
+
+？1：そう言えば確か……
+？！
+
+
+[messageOff]
+[wipeout circleIn 1.4 1.0]
+[bgmStop BGM_EVENT_5 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[scene 11112]
+[pictureFrame cut063_cinema]
+[wt 0.3]
+
+[wipein circleIn 1.4 1.0]
+[wait wipe]
+[wt 0.6]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-50]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠ジャック
+えいっ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+[wt 0.2]
+
+[se bac6]
+[fowardEffect bit_talk_ichimon01wh 0,-50]
+[charaShake D 0.03 2 3 0.3]
+[wt 0.6]
+
+[se ad42]
+[charaSpecialEffect D enemyErasure 0,-50 1.2]
+[wt 0.4]
+
+[wait charaSpecialEffect D]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_3 0.9]
+[wt 1.2]
+
+[fowardEffectDestroy bit_talk_ichimon01wh]
+
+[charaPut H 0,0]
+[charaEffect H bit_talk_10_MiddleLevel]
+[wt 0.2]
+
+[se ad13]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+[wt 0.2]
+
+＠マシュ
+お疲れ様です、ジャックさん。[bgm BGM_EVENT_2 0.1][r]戦闘データの計測、終了です。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-50]
+
+＠ジャック
+えー、もう？
+[k]
+
+[charaFace B 2]
+
+＠ジャック
+つまんなーい！[r]もっとしたーい！
+[k]
+
+[charaPut H 0,0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 0,-50]
+
+＠マシュ
+えーと……できればもう少しデータが[r]蓄積できると確かにありがたいですけど。
+[k]
+
+[charaFace A 0]
+
+＠マシュ
+マスターはいかがでしょうか？
+[k]
+
+？1：問題ないよ
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠ジャック
+やった。[r]それじゃ、場所を変えちゃおう！
+[k]
+
+？2：本当にまだいける？
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-50]
+
+＠ジャック
+本当だよぅ。
+[k]
+
+
+[charaPut H 0,0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 0,-50]
+
+＠マシュ
+それなら、少々お待ちください。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠ジャック
+あ、場所も変えて場所も！
+[k]
+
+？！
+
+[charaPut H 0,0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 0,-50]
+
+[se ad172]
+
+＠マシュ
+了解です。[wt 1.0][seStop ad172 0.2][se ad15][charaFace A 1][r]それでは、こちらからお選びください。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠ジャック
+えーと、どこがいいかな……。
+[k]
+
+＠ジャック
+うーん、うーん、うーん。[wt 0.4][charaFace B 0][r]……あれ？
+[k]
+
+＠ジャック
+シンジュクって、どこ？
+[k]
+
+[charaPut H 0,0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠マシュ
+新宿は日本という国の首都である東京、[r]その一区画に当たります。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠ジャック
+じゃ、ここがいいや。[r]何となく、楽しそうだし。
+[k]
+
+[charaPut H 0,0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠マシュ
+了解しました。[r]それでは、場所を変更させていただきますね。
+[k]
+
+[messageOff]
+[se ad172]
+[wt 0.3]
+
+＠マシュ
+併せてエネミーも調整して[line 3][seStop ad172 0.4]
+[k]
+
+[messageOff]
+[wipeout cutSide 0.4 1.0]
+[se ad15]
+[wait wipe]
+
+
+[scene 38300]
+[wt 0.6]
+
+[se ad1]
+[wipein cutSide 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+＠マシュ
+こちらになります。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠ジャック
+おー……おおー。
+[k]
+
+[charaFace B 1]
+
+＠ジャック
+いいなぁ、いいよぅ、[r]わたしたち、ここ気に入ったかも！
+[k]
+
+[charaPut H 0,0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠マシュ
+そ、そうですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠ジャック
+[#ざつざつ]で、ゴミゴミしていて。[r]とっても素敵じゃない？
+[k]
+
+[bgmStop BGM_EVENT_2 0.9]
+
+＠ジャック
+きっといっぱい人が死んでいて、[r]いっぱい[#かわいそう]な人がいて、
+[k]
+
+＠ジャック
+それから、それから[line 3]
+[k]
+
+？1：……ジャック？
+？！
+
+[charaFace B 0]
+
+＠ジャック
+……。[r]……あれ？
+[k]
+
+[charaFace B 4]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠ジャック
+あれ？　あれれ？[r]おかしいな。おかしいよ。
+[k]
+
+＠ジャック
+わたしたち、この街、知らない。[r]知らないのに。
+[k]
+
+＠ジャック
+どうして……こんなに、[r][#理解:わか]っちゃうの？
+[k]
+
+[charaPut H 0,0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 0,-50]
+
+＠マシュ
+ジャックさん……！？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-50]
+[charaShake B 0.06 2 2 0.6]
+[wt 0.6]
+
+？1：落ち着いて！
+
+[charaShakeStop B]
+
+＠ジャック
+ダメ。[r]ダメダメダメ。
+[k]
+
+＠ジャック
+今のわたしたちは、違う、[r]違うんだから……！
+[k]
+
+？2：大丈夫？　何が起きているの？
+
+[charaShakeStop B]
+＠ジャック
+何も……ない、何もないよ。[r]心配しないで、[#おかあさん:マスター]！
+[k]
+
+＠ジャック
+……う、う、くっ……うぅっ……！
+[k]
+
+？！
+
+[messageOff]
+[se ad626]
+[seVolume ad626 0 0.2]
+[charaEffect F bit_talk_restraint 0,-50]
+[wt 1.4]
+
+＠ジャック
+……だめ。
+[k]
+
+＠ジャック
+……戻らなきゃ、戻らなきゃ、[r]急いで戻らなきゃ……！
+[k]
+
+[seStop ad626 0.3]
+[charaPut H 0,0]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+
+＠マシュ
+高密度の魔力反応……！？[r]そこから離れてください、マスター！
+[k]
+
+＠マシュ
+マスター、急いで……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut F 0,-150]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-50]
+
+＠ジャック
+[line 3]ッ！
+[k]
+
+[messageOff]
+[se ade153]
+[wt 0.2]
+
+
+
+[charaTalk off]
+[bgmStop BGM_EVENT_5 1.0]
+[charaEffect G bit_talk_snowstorm_03 0,-50]
+[charaMove F 0,-250 1.3]
+[wt 1.3]
+
+[se ad574]
+[seVolume ad574 0 0.9]
+[charaFadeout B 0.8]
+[charaFadein J 0.8 0,-200]
+[wt 0.2]
+
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_restraint]
+[wt 0.2]
+
+[se ade310]
+[wt 0.4]
+
+？1：ジャック！？
+？！
+
+
+[messageOff]
+[fadeout black 1.2]
+[wait fade]
+
+[scene 10000]
+
+[charaFadeout J 0.1]
+[charaFadeout B 0.1]
+[charaPut G 1200,1200]
+
+[pictureFrame]
+[wt 0.1]
+
+[fadein black 0.4]
+[wait fade]
+
+[wipeout circleOut 0.4 1.0]
+[wait wipe]
+
+[scene 10902]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+[wipein circleIn 1.2 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠天草四郎
+なるほど。[r]それで気付いたらここにいた、と。
+[k]
+
+＠天草四郎
+……思い出しました。[r]私も戦闘シミュレーターを使用する予定だったのです。
+[k]
+
+＠天草四郎
+入れ替わる直前、シミュレーションエラーが起きて、[r]気付けばここでした。
+[k]
+
+[charaFace C 0]
+
+＠天草四郎
+話を聞く限り、[r]ジャックが原因という線が濃厚そうですね。
+[k]
+
+[bgmStop BGM_EVENT_5 0.9]
+＠天草四郎
+では捜してみるとしますか。[r]と、その前に[line 3]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+[se ad25]
+[wt 1.5]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠天草四郎
+まず、彼らの消去から始めましょう。[bgm BGM_EVENT_3 0.1][r]戦闘シミュレーション、スタートです。
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,361 @@
+
+
+＄94-01-49-01-2-1
+
+[soundStopAll]
+
+[charaSet A 9005001 1 ホームズ]
+[charaSet B 9005001 1 ホームズ表情変化用]
+[charaSet C 99502600 1 マシュ]
+[charaSet D 2023000 1 新宿のアーチャー]
+[charaSet E 2023000 1 新宿のアーチャー表情変化用]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[scene 43900]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10]
+
+[bgm BGM_EVENT_2 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+[charaPut H 1]
+
+＠マシュ
+戦闘、終了しました。[r]周囲には魔力反応も残っていないようです。
+[k]
+
+[charaFadeout C 0.1]
+
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ホームズ
+お疲れさま、[%1]君。[r]これでひとまず事態は解決だ。
+[k]
+
+＠ホームズ
+今後のシミュレーター運用にも問題はないだろうし、[r]ＮＰＣが怒りを持つ事もないだろう。
+[k]
+
+[charaFace A 5]
+
+＠ホームズ
+だが忘れないで欲しい。[r]彼らはキミ達を鍛えるために日夜戦い続けてくれるし、
+[k]
+
+[charaFace A 4]
+
+＠ホームズ
+二度と、無念も怒りも覚えたりはしないだろうが……。
+[k]
+
+[wt 1.0]
+[charaFace A 0]
+
+＠ホームズ
+人格も命もないデータである彼らもまた、[r]広い視野で見れば共に人理のために戦うカルデアの一員。
+[k]
+
+＠ホームズ
+戦闘シミュレーションを行う時には、[r]それを心のどこかに留めておくと良いかもしれないね。
+[k]
+
+[charaFadeout A 0.1]
+
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+[charaPut H 1]
+
+＠マシュ
+ミスター・ホームズ…………。
+[k]
+
+？1：いい風にまとめられた気がする……
+？2：で、ホームズは結局どういう存在なの？
+
+？！
+
+[charaFadeout C 0.1]
+
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ホームズ
+ははははは。
+[k]
+
+[charaTalk off]
+[charaDepth B 5]
+[charaDepth A 1]
+[messageOff]
+[charaFace B 0]
+[charaFadein B 0.7 1]
+[wt 2.0]
+[charaFace A 0]
+[charaFadeout B 0]
+[charaFace B 4]
+[charaFadein B 0.7 1]
+[wt 1.2]
+
+＠ホームズ
+その話をすると面倒な話を再開する事になるが[line 3][r][line 3]キミは、構わないかな？
+[k]
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_2 2.0]
+[fadeout black 2.0]
+[wait fade]
+[charaFadeout A 0]
+[charaFadeout B 0]
+[wt 1.0]
+[scene 10310]
+[wipeFilter cinema 0.5 0]
+[fadein black 1.5]
+[wait fade]
+
+[se ad95]
+[wt 1.8]
+[seStop ad95 2.0]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.7 -50,-50]
+[charaMove D 0,-50 0.5]
+
+[bgm BGM_EVENT_1 0.1]
+
+＠新宿のアーチャー
+………………誤魔化したねえ、君。
+[k]
+
+[charaFace D 1]
+
+＠新宿のアーチャー
+ヒュドラの赤子、竜の皮や牙、東洋の土蜘蛛の爪、[r]物質として神代から遺される聖遺物や宝具……
+[k]
+
+＠新宿のアーチャー
+社会の陰のそのまた向こう、魔術の領域であれば[r]幾らでも『証拠』など提示できる話だろうに。
+[k]
+
+[charaFace D 0]
+＠新宿のアーチャー
+実在？　架空？　いまさら何を言っているのかネ？
+[k]
+
+[charaFadeout D 0.1]
+
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+＠ホームズ
+仕方ないさ。あまり踏み込むと並行世界や[#剪定事象:せんていじしょう]の話に[r]なってしまうし、神代の解説にまで踏み込む事になる。
+[k]
+
+＠ホームズ
+実在の痕跡が一切ない遙かなる過去、[r]私たちはそんなあやふやなモノの上に生きている[line 3]
+[k]
+
+[charaFace A 0]
+
+＠ホームズ
+それも当然、こうして我々が目にして触れられる現実など[r]所詮は薄皮一枚での出来事にすぎないのだからね。
+[k]
+
+＠ホームズ
+聖槍で繋ぎ留められてはいても、[r]手段を尽くせば剥ぎ取ってしまえる程度のモノだ。
+[k]
+
+[charaFace A 4]
+
+＠ホームズ
+人が知る必要はないのさ。[r]知ってはいけない。
+[k]
+
+[wt 1.2]
+[charaFace A 0]
+[wt 0.7]
+[charaFace A 5]
+
+＠ホームズ
+だからこそ私には[line 3][r][line 3]調停者であり裁定者、ルーラーの霊基が与えられた。
+[k]
+
+＠ホームズ
+真実を調停し、人類史を維持するためにこそ[r]万物を裁定せよという訳だ。
+[k]
+
+＠ホームズ
+……“明かす者”であるこの私に、幻想と夢のすべてを[r]明かしきってはならないと世界は告げているかのようだよ。
+[k]
+
+[charaFadeout A 0.1]
+
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 -256,-50]
+[charaFace A 0]
+[charaFadein A 0.1 256,-50]
+
+＠新宿のアーチャー
+詭弁だネ。そのあたりを上手く躱しながら語ることさえ[r]君には不可能じゃないだろう、名探偵。
+[k]
+
+[charaFace A 4]
+
+＠ホームズ
+キミに持ち上げられるのは気味が悪いな、[r]やめて欲しいな。やめたまえ。
+[k]
+
+[charaFace D 1]
+
+＠新宿のアーチャー
+はははいやはや辛辣だネ！
+[k]
+
+[charaFace A 5]
+
+＠ホームズ
+当然だろう。
+[k]
+
+[bgmStop BGM_EVENT_1 0.3]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠ホームズ
+あー、ところで真犯人君。[r]シミュレーターを弄ったのはキミで間違いないな？
+[k]
+
+[charaFadeout A 0.1]
+
+[wt 0.1]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0,-50]
+
+＠新宿のアーチャー
+ンン～何の話かネ？
+[k]
+
+[wt 0.8]
+[charaFace D 4]
+
+＠新宿のアーチャー
+数学的興味をほんのり抱いたのは確かだし、[r]システムを拝見したのも確かだがそれ以上は別に何も？
+[k]
+
+[charaFadeout D 0.1]
+
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠ホームズ
+じっくり話を聞こうか。カルデアの五月の[#記録:ログ]には[r]数秒ほど解析不可能なノイズがあった。
+[k]
+
+[charaFace A 4]
+
+＠ホームズ
+あれが何であるかは私の目でも解析できない。[r]よほどの特殊事例だったのだろうね。
+[k]
+
+[charaFace A 5]
+
+＠ホームズ
+だが、どんな種別のものかは想像がつく。[r]キミ、あのノイズブロックを参照して応用したな？
+[k]
+
+
+[messageOff]
+
+[charaFadeout A 0.1]
+
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+[wt 0.7]
+[charaFace D 4]
+[wt 1.0]
+[charaFace D 2]
+[wt 0.5]
+
+＠新宿のアーチャー
+最初から分かってるなら聞かないで欲しいものだネ！[r]昔から本当に意地の悪い嫌な探偵だ、君は。
+[k]
+
+[charaFadeout D 0.1]
+
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠ホームズ
+おや。サー・ドイルの著作の中で、[r]私がキミに意地の悪さを見せた事などあったかい？
+[k]
+
+[charaFadeout A 0.1]
+
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠新宿のアーチャー
+………………まったく。貴様という男は！！
+[k]
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_1 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,169 @@
+
+＄94-03-50-20-1-1
+[soundStopAll]
+
+
+[charaSet G 3030000 1 パールヴァティー]
+[charaSet C 5030001 1 シェヘラザード]
+[charaSet B 6014001 1 マタ・ハリ]
+[charaSet E 10003000 1 殺生院キアラ]
+[imageSet I cut103_item01 1]
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+
+[scene 72000]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[cueSe Battle bas2]
+[wt 0.2]
+[charaFadein I 0.7 0,-200]
+[wt 2.2]
+
+[se ad592]
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout I 0.1]
+
+[charaPut J 1]
+[charaEffect J bit_talk_noise02]
+
+[scene 10001]
+[wt 0.5]
+
+[fadein white 0.5]
+[wait fade]
+[wt 1.0]
+
+[se ad592]
+[fadeout white 0.5]
+[wait fade]
+
+[scene 72000]
+
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_noise02]
+[wt 0.5]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠パールヴァティー
+いつもの印籠ですね。『吉宗』とあります。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠シェヘラザード
+それは……知っています。[r]アバレンボーイ・ヨシムネ……！
+[k]
+
+[charaFace C 0]
+
+＠シェヘラザード
+なかなか善き王だと思います。
+[k]
+
+＠シェヘラザード
+平民のふりをして城を抜け出す癖があるのは[r]いただけませんが。
+[k]
+
+＠シェヘラザード
+まあ、ハールーン・アッ＝ラシード様も似たような事を[r]されていたというお話があります。
+[k]
+
+＠シェヘラザード
+高貴なお方のありがちな息抜き法なのでしょうか……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠マタ・ハリ
+さて、もう邪魔者はいないみたいだし、[r]次の階層に進めるわね。
+[k]
+
+＠マタ・ハリ
+そこに着いたら宝具の酔い状態を解除してみるから、[r]もう少し我慢してね、マスター？
+[k]
+
+？1：全然酔ってないので大丈夫ですよ
+
+[charaFace B 3]
+
+＠マタ・ハリ
+酔ってる人ほどそう言うのよ～？
+[k]
+
+？2：よろしくお願いします
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠殺生院キアラ
+もしこれまでの考えが正しければ、残る五戒は二つ。[r]つまり、大きな階層は残り二つ、という事になりましょう。
+[k]
+
+[charaFace E 0]
+
+＠殺生院キアラ
+既に後半戦に入っている、とも言えますね。[r]重々、お気を付けを……。
+[k]
+
+
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[charaFadeout E 0.1]
+[wt 0.5]
+[soundStopAll]
+
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+
+[cueSe Battle bas2]
+[charaFace I 0]
+[charaFadein I 0.5 0,-200]
+[wt 1.4]
+
+＠
+[s 1000]
+　　　　[s 16]第八代将軍『徳川吉宗の印籠』を手に入れた。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[wait fade]
+[end]

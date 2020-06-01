@@ -1,0 +1,276 @@
+
+＄91-70-07-02-3-1
+[charaSet A 7007001 1 ヴラド三世]
+[charaSet B 99502600 1 マシュ]
+[charaSet C 99502600 1 男性]
+
+[bgm BGM_EVENT_2 0.1]
+[scene 10912]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠ヴラド三世
+[line 3]さすがは竜種。[r]余の名を冠しているだけあって、伊達ではないな。
+[k]
+
+？1：逆です、王よ
+？！
+
+[charaFace A 4]
+＠ヴラド三世
+……コホン。
+[k]
+
+[charaFace A 1]
+＠ヴラド三世
+さて、これでロンドンの悪名は払拭できたか。
+[k]
+
+＠ヴラド三世
+……竜種からロンドンを救った謎の英雄、か。[r]悪くない、悪くないぞ……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 11]
+[charaEffect B bit_talk_10]
+[charaFadein B 0.1 1]
+
+＠マシュ
+（謎なら、ヴラドさんには影響しないのでは……）
+[k]
+
+[messageOff]
+[charaPut B 0,-10000]
+[charaFadeout B 0.1]
+[se ad6]
+[seVolume ad6 0 0.1]
+[wt 0.1]
+[seVolume ad6 0.9 0.9]
+
+[wt 1.0]
+
+
+[seStop ad6 0.7]
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+＠マシュ
+……！[r]いけません、人が集まってきました。
+[k]
+
+＠マシュ
+早めに退散しましょう、マスター、ヴラドさん。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+[wt 0.1]
+[se ad59]
+[seVolume ad59 2.0 0.1]
+[wt 2.0]
+[seStop ad59 0.7]
+[fadein black 0.4]
+[wait fade]
+
+＠男性
+あ、あの……。
+[k]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ヴラド三世
+む、何用か？
+[k]
+
+
+
+＠男性
+よろしければ……。[r]写真を一枚、撮らせていただけませんか？
+[k]
+
+
+[bgm BGM_EVENT_7 0.1]
+[charaFace A 1]
+＠ヴラド三世
+写真か。ふむ、よかろう許す。[r]マスター、一緒に写るぞ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 6]
+[charaEffect B bit_talk_10]
+[charaFadein B 0.1 1]
+
+＠マシュ
+え！？
+[k]
+
+？1：い、いいのかな？
+[charaPut B 0,-10000]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ヴラド三世
+良い。
+[k]
+
+[charaFace A 1]
+＠ヴラド三世
+かの聖ジョージ……ゲオルギウス殿が趣味としているなら、[r]決して神を穢す不遜なものではあるまい。
+[k]
+
+[charaFace A 3]
+[charaMoveReturn A 0,-10 0.3]
+＠ヴラド三世
+マスター、襟など曲がっておらぬ[charaMoveReturn A 0,-10 0.3]よな？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？2：だ、大丈夫？
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ヴラド三世
+フッ、余にも現代の知識はある。[r]魂を吸い取られるなどという世迷い言は気にせんよ。
+[k]
+
+[charaFace A 4]
+＠ヴラド三世
+モノクロなのが少々残念であるが……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 4]
+[charaEffect B bit_talk_10]
+[charaFadein B 0.1 1]
+
+＠マシュ
+（多分、そのことではないと思うのですが……）
+[k]
+[charaPut B 0,-10000]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+？！
+
+＠男性
+それではいきまーす！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth A 0]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 1.5]
+[se ad41]
+[fadeout white 0.4]
+[wait fade]
+[wipeFilter cinema 0.5 0]
+[charaScale A 0.8]
+[charaFadein A 0.1 0,-65]
+
+[effect bit_sepia01]
+[wt 0.2]
+[fadein white 0.7]
+[wait fade]
+[wt 2.0]
+
+[bgmStop BGM_EVENT_7 1.5]
+[fadeout black 1.5]
+[wait fade]
+[wipeOff]
+[charaScale B 1.0]
+[charaScale A 1.0]
+[charaPut B 0,-10000]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[effectStop bit_sepia01]
+
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+[bgm BGM_EVENT_6 0.1]
+
+＠マシュ
+こ、後世に残らないですよね、写真……。
+[k]
+
+[charaPut B 0,-10000]
+[charaEffectStop B bit_talk_10]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ヴラド三世
+安心しろ、残ったとしてもどんな写真かまでは[r]分からぬよ。
+[k]
+
+[charaFace A 0]
+＠ヴラド三世
+いずれ塵に消えゆく定め。[r]先ほどの竜種と同じだ。
+[k]
+
+＠ヴラド三世
+ではカルデアに帰還するぞ、マスター。[r]……我が果てなき夢に付き合ってくれたこと、感謝する。
+[k]
+
+[charaFace A 4]
+＠ヴラド三世
+無駄かもしれぬ。徒労かもしれぬ。[r][#戯言:ざれごと]であり、滑稽な旅なのかもしれぬ。
+[k]
+
+＠ヴラド三世
+そも、この力は[#その力]だ。[r]余が恥ずべきものと考えるのは道理ではない。
+[k]
+
+＠ヴラド三世
+そして。[r]それら全てを玩味してもなお[line 3]。
+[k]
+
+[charaFace A 0]
+＠ヴラド三世
+余は吸血鬼であることを、誇ることなどできんのだ。[r]永遠にな。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_6 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]
+

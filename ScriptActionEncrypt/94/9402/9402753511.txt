@@ -1,0 +1,275 @@
+
+＄94-02-75-35-1-1
+
+[soundStopAll]
+
+[charaSet A 98100400 1 マシュ]
+[charaSet B 7029000 1 織田信長]
+[charaSet C 7031000 1 ジャンヌ・オルタ]
+[charaSet D 6034000 1 牛若丸]
+[charaSet E 25003000 1 ヒロインＸＸ]
+[charaSet F 25003002 1 ヒロインＸＸ]
+[charaSet G 1001000 1 エフェクト用ダミー]
+[charaSet H 1001000 1 エフェクト用ダミー]
+
+[charaScale G 0.6]
+
+[scene 63700]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠F：ヒロインＸＸ
+うわあ、思いの[#外:ほか]気持ちがいい…[r]水着で浜辺、こんなの楽しいに決まってます……！
+[k]
+
+[charaFace F 2]
+
+＠F：ヒロインＸＸ
+ですが、私もフォーリナーとしての[r]意地があります！　そう簡単に誘惑には負けません！
+[k]
+
+＠F：ヒロインＸＸ
+今回はここまで！[r]本命は７日目の朝ですからね！
+[k]
+
+＠F：ヒロインＸＸ
+さらばです、トンチキノッブ！[r]そして地球のマスター！
+[k]
+
+＠F：ヒロインＸＸ
+次は衛星軌道上に待機させた私の愛船、[r]デスセイバー号を使用します！
+[k]
+＠A：ナレーション
+説明しよう！　ヒロインＸの愛船ドゥ・スタリオンⅡ号は[r]悪の正義の女神によって破壊されてしまったのだ！
+[k]
+
+＠F：ヒロインＸＸ
+対惑星宝具でサバフェスごと丸焼きにしますので、[r]命が惜しければこの特異点から退去するように！
+[k]
+
+[messageOff]
+[charaFadeout F 0.4]
+[se ad656]
+[wt 1.5]
+[seStop ad656 0.4]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+[se ad270]
+[charaShake E 0.02 2 2 1]
+[wt 0.7]
+[se ade157]
+[charaPut H 0,-200]
+[charaEffect H bit_talk_40]
+[wt 0.4]
+
+[charaPut G 0,0]
+[charaEffect G bit_talk_43l]
+[charaMove E 0,150 2.0]
+[charaFadeout E 2.0]
+[wt 1.0]
+
+[charaEffectDestroy H bit_bolg_01b]
+[charaEffectDestroy G bit_talk_43l]
+
+[seStop ade157 0.4]
+[wipeout rectangleStripUpToDown 0.3 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[charaPut G 1200,1200]
+[charaPut H 1200,1200]
+[scene 28300]
+[wt 0.1]
+
+[wipein rectangleStripDownToUp 0.2 1.0]
+[wait wipe]
+
+[effect bit_talk_arrow01br]
+[wt 0.2]
+[se ade90]
+[wt 1.3]
+[seStop ade90 1.5]
+[wt 0.2]
+
+[bgmStop BGM_EVENT_3 0.7]
+[fadeout black 1.0]
+[wait fade]
+
+[charaSet G 6031000 1 刑部姫]
+[charaSet H 3025000 1 清姫（水着）]
+
+[scene 63700]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠織田信長
+逃げたかー……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠マシュ
+失敗でしたね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠織田信長
+じゃが、アレなら交渉の余地はあるぞ。
+[k]
+
+＠織田信長
+要するに、あやつは縛られている……。[r]労働義務という名の鎖に……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ジャンヌ・オルタ
+つまり？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠織田信長
+その義務から解放し、[r][#刑部姫:ニート]に転職させれば万事解決なんじゃが！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[bgmStop BGM_EVENT_2 0.4]
+[wt 0.5]
+
+[charaTalk off]
+[charaFace G 2]
+[charaFadein G 0.4 1256,0]
+[wt 0.1]
+[se ad348]
+[wt 0.2]
+[charaMove G 1 0.2]
+[wt 0.4]
+[seStop ad348 0.4]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk on]
+＠刑部姫
+ノッブいま、滅茶苦茶聞き捨てならないこと[r]抜かしやがりましたね！？
+[k]
+
+＠刑部姫
+いい？　刑部姫に労働の義務はないの！[r]だって未成年だからネ！
+[k]
+
+＠刑部姫
+[#姫:わたし]ってば、[r]永遠の未成年サーヴァントだから！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠織田信長
+嘘こけ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠清姫
+嘘です。[r]焼きますよおっきー？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠刑部姫
+嘘じゃないモン、[r]少なくとも[#姫:わたし]そう信じてる！
+[k]
+
+？1：働かない訳だ……
+？！
+
+
+
+
+
+
+
+
+
+[charaFace G 6]
+
+＠刑部姫
+だからマスターちゃんも、[r]しんみりした顔で呟かないで！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠織田信長
+という訳だマスター、[r]次にＸＸが来るまでに就職口を用意しておけい。
+[k]
+
+[charaFace B 1]
+
+＠織田信長
+なーに、交渉材料さえあれば、[r]わしの[#舌先三寸:したさきさんずん]でどうとでもなるわい！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,604 @@
+
+
+
+＄03-00-01-17-2-1
+[soundStopAll]
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 7030001 1 アタランテ・オルタ]
+[charaSet C 5036001 1 アヴィケブロン]
+[charaSet D 1098124510 1 ダ・ヴィンチ]
+[charaSet E 1098123210 1 ゴルドルフ]
+[charaSet F 98115300 1 ホームズ]
+[charaSet G 1098128400 1 ヤガ叛逆軍]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+
+[branch INPUT_SELECT_BRANCH_2 INPUT_SELECT_BRANCH 1]
+
+[label INPUT_SELECT_BRANCH_1]
+
+[scene 55300]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マシュ
+魔獣撃退、成功しました！
+[k]
+
+？1：よかったよかった
+？！
+
+[charaFace A 0]
+
+＠マシュ
+しばらくはここと新しい砦の往復に[r]なりそうですね……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠アタランテ・オルタ
+アヴィケブロンが嬉々とした様子で……[r]いや、仮面越しだから実際は不明なのだが……。
+[k]
+
+[charaFace B 0]
+
+＠アタランテ・オルタ
+ともかく、トンネルを掘削しながら[r]鉱石を採掘してゴーレム化し、運搬中だ。
+[k]
+
+＠アタランテ・オルタ
+[line 3]しばらくの間は砦建築と[r]トンネルの掘削に集中しよう。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+[charaFadeout B 0.1]
+[wt 1.0]
+
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_2]
+
+[scene 54701]
+
+[cameraMove 0.1 -86,0 1.2]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaScale C 0.83]
+[charaFadein C 0.1 0,-48]
+
+[seLoop ad60]
+[seVolume ad60 0 0.8]
+[cameraMove 0.7 -46,0 1.2]
+[charaMove C -60,-48 0.8]
+[charaShake C 0.2 0 2 0.8]
+[wait charaMove C]
+[wait camera]
+[seStop ad60]
+[wt 0.7]
+
+[seLoop ad60]
+[seVolume ad60 0 0.8]
+[cameraMove 1.8 0,0 1.2]
+[charaFace C 8]
+[charaMove C 60,-48 2.0]
+[charaShake C 0.2 0 2 2.0]
+[wait charaMove C]
+[wait camera]
+[seStop ad60]
+[wt 0.7]
+
+[seLoop ad60]
+[seVolume ad60 0 0.8]
+[cameraMove 1.0 40,0 1.2]
+[charaFace C 9]
+[charaMove C 0,-48 1.5]
+[charaShake C 0.2 0 2 1.5]
+[wait charaMove C]
+[wait camera]
+[seStop ad60]
+[wt 1.0]
+
+＠アヴィケブロン
+ではこの魔猪の骨もゴーレムにしよう。[r]おっと、それは竜牙兵と呼ぶべきかな？
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+[cameraHome 0.1]
+[charaFadeout C 0.1]
+[charaScale C 1.0]
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+＠マシュ
+すごいです。
+[k]
+
+＠マシュ
+アヴィケブロンさんが冗談を口にするなんて、[r]信じられません。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[wt 0.3]
+
+[bgmStop BGM_EVENT_7 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アヴィケブロン
+……申し訳ない、もう大丈夫だ。[r]うん、頭が冷えた。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 0,0]
+
+＠ダ・ヴィンチ
+それで、シャドウ・ボーダーの装甲には[r]適しているかい？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アヴィケブロン
+あくまで外殻の損傷データから推察するだけだが……。
+[k]
+
+＠アヴィケブロン
+これなら虚数潜航の際に生じる車体への損傷も[r]防ぎきれるだろう。
+[k]
+
+＠アヴィケブロン
+予備装甲を製造できるだけの余裕もある。[r]もちろん、採掘にはしばらくの時間を要するがね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,0]
+
+＠ゴルドルフ
+素晴らしい！[r]よし、さっさとこんな辺境から脱出しよう！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 34]
+[charaFadein D 0.1 0,0]
+
+＠ダ・ヴィンチ
+それでは問題の解決にならない、と[r]言っているだろー！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠ホームズ
+ミズ・アタランテが疑いたくなるのも[r]無理はないな。
+[k]
+
+[charaFace F 0]
+
+＠ホームズ
+さあ、ともかく皆。[r]仕事をしよう。
+[k]
+
+＠ホームズ
+我々もやるべきことは、[r]山ほどあるぞ！
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+[charaFadeout F 0.1]
+[charaPut H 1200,1200]
+[wt 1.0]
+
+
+
+
+[branch INPUT_SELECT_BRANCH_3]
+
+
+[label INPUT_SELECT_BRANCH_3]
+
+
+[se ad648]
+[seVolume ad648 0 0.5]
+[scene 54403]
+[fadein black 1.2]
+[wait fade]
+[wt 2.0]
+
+[scene 54400 1.5]
+[wt 3.0]
+[scene 54403 1.5]
+[wt 1.5]
+[se ad648]
+[wt 1.5]
+[scene 54400 1.5]
+[wt 3.5]
+
+[fadeout black 1.2]
+[seStop ad648 0.6]
+[wait fade]
+[scene 54903]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠アタランテ・オルタ
+砦も完成し、トンネルも開通した。
+[k]
+
+
+＠アタランテ・オルタ
+……まあ、まだ使い残しの材料が置きっ放しだが、[r]どうせ短期間しか使用しない砦だ。捨て置こう。
+[k]
+
+＠アタランテ・オルタ
+向こう側は擬装しているが、[r]ここから三日で首都に肉薄できる。
+[k]
+
+＠アタランテ・オルタ
+[line 3]ベオウルフに連絡し、[r]陽動に動いてもらうことにする。
+[k]
+
+？1：ということは……
+？！
+
+[charaFace B 1]
+
+＠アタランテ・オルタ
+ああ、いよいよだ。
+[k]
+
+＠アタランテ・オルタ
+[#殺戮猟兵:オプリチニキ]の圧制から、[r]ヤガたちを救う。
+[k]
+
+[charaFace B 2]
+
+＠アタランテ・オルタ
+首都ヤガ・モスクワに乗り込み、[r]イヴァン雷帝を討つぞ！
+[k]
+
+[se ad522]
+[wt 1.2]
+[seStop ad522 0.5]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠ヤガ叛逆軍
+だ、大丈夫ですか？[r]我々で、本当にやれるのですか？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠アタランテ・オルタ
+……正直に言って、わからない。
+[k]
+
+＠アタランテ・オルタ
+[#殺戮猟兵:オプリチニキ]の数はあまりに多く、[r]イヴァン雷帝の姿すら[#窺:うかが]えない。
+[k]
+
+[charaFace B 4]
+
+＠アタランテ・オルタ
+だが、首都にいることだけは確かだ。[r]そして[line 3]
+[k]
+
+[charaFace B 5]
+
+＠アタランテ・オルタ
+持久戦では、我々の敗北になる。[r]現状が我々の持ち得る最大戦力だからだ。
+[k]
+
+[charaFace B 2]
+
+＠アタランテ・オルタ
+……これ以上の時間はかけられない。[r]生き延びるには戦うのみだ！
+[k]
+
+＠アタランテ・オルタ
+汝らは、[#子々孫々:ししそんそん]に平和をもたらすため、[r]イヴァン雷帝を討たねばならぬ！
+[k]
+
+＠アタランテ・オルタ
+自由と平和を得るために戦い、[r]勝利を得るために尽力せよ！
+[k]
+
+＠アタランテ・オルタ
+四百五十年の歴史を、[r]汝らが塗り替えるのだ！
+[k]
+
+[charaSet E 11006001 1 サリエリ]
+[charaSet G 2010001 1 ビリー]
+
+[se ad6]
+[wt 1.0]
+[seStop ad6 0.5]
+[wt 0.5]
+
+[charaFace B 4]
+
+＠アタランテ・オルタ
+……やれやれ。
+[k]
+
+＠アタランテ・オルタ
+カエサルではないが、賽は投げられた[line 3][r]というところだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+では、我々はシャドウ・ボーダーの装甲を[r]改修するために、一旦離脱します。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アタランテ・オルタ
+ああ。
+[k]
+
+＠アタランテ・オルタ
+汝らも当然ながら、[r]首都攻略のためには必須の戦力だ。
+[k]
+
+[charaFace B 5]
+
+＠アタランテ・オルタ
+間違っても逃げてくれるなよ？
+[k]
+
+＠アタランテ・オルタ
+もし逃げたなら……私は全力でロシアを走り回り、[r]汝らを追い回すからな？
+[k]
+
+？1：逃げないよ
+
+[charaFace B 1]
+
+＠アタランテ・オルタ
+ああ、その辺は……信頼している。[r]汝は誠実だ。
+[k]
+
+＠アタランテ・オルタ
+汝が逃げない、と言った以上は[r]そうなのだろう。
+[k]
+
+？2：イヴァン雷帝を倒さなきゃいけないから
+
+[charaFace B 1]
+
+＠アタランテ・オルタ
+……そうか。
+[k]
+
+＠アタランテ・オルタ
+汝は[#そう]と決めたら、[r]何が何でもそうするのだろうな。
+[k]
+
+＠アタランテ・オルタ
+汝は多くの修羅場と多くの時代を[r]乗り越えたと聞く。
+[k]
+
+＠アタランテ・オルタ
+その幸運を、我々にもたらして欲しい。
+[k]
+
+？！
+
+[charaFace B 6]
+
+＠アタランテ・オルタ
+ではこの砦で会おう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ビリー
+シャンシャン、よろしくね。[r]戻ってくるのはサリエリのところだぞ。
+[k]
+
+＠ビリー
+匂いは覚えたな？
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaSet C 1098127100 1 シャンシャン]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[wt 0.1]
+[se ad582]
+[charaMoveReturn C 0,30 1.0]
+[wt 1.5]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠サリエリ
+私はこのために留守番か。[r]ふむ。まあ致し方ない。
+[k]
+
+[charaFace E 6]
+
+＠サリエリ
+シャドウ・ボーダーにはピアノはないのだろう？[r]なら微塵も興味はない。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠ビリー
+僕も大して興味はないんだけど、[r]なんでダ・ヴィンチが呼んでるんだろ？
+[k]
+
+[charaFace G 5]
+
+＠ビリー
+ま、いいか。[r]そら、シャンシャン！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.1]
+[se ad582]
+[charaMoveReturn C 0,15 0.5]
+[wt 0.5]
+[charaMoveReturn C 0,15 0.5]
+[wt 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ビリー
+ところでベオウルフが動かない、[r]という可能性は考えているかい？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠アタランテ・オルタ
+否、だ。
+[k]
+
+＠アタランテ・オルタ
+[%1]と同じくらい、[r]私は[#彼奴:きゃつ]の戦闘力と行動力に信頼を置いている。
+[k]
+
+＠アタランテ・オルタ
+間違いなく動くとも。[r]では、待っているぞ！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_82 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

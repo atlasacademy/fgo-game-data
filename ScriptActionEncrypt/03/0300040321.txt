@@ -1,0 +1,114 @@
+
+＄03-00-04-03-2-1
+
+[soundStopAll]
+
+[charaSet A 1098124510 1 ダ・ヴィンチ]
+[charaSet B 8001410 1 マシュ]
+[charaSet C 98115300 1 ホームズ]
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+[scene 74901]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+ところで、周りの印象はどう？
+[k]
+
+＠ダ・ヴィンチ
+ある程度はこちらでも把握できるけど、やっぱり[r]実際歩いているキミたちの肌感覚を聞いておきたいな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠マシュ
+そうですね。流れの穏やかな水場が多く見えます。[r]たくさん蓮の花が咲いていて、綺麗です。
+[k]
+
+＠マシュ
+一方でしっかり乾いている地面もありますので、[r]歩くのに不都合はありません。
+[k]
+
+？1：つまり、意外と普通です
+？2：つまり、意外と平和です
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+ふむ……水というのは[r]もちろん生き物にとって必要不可欠だ。
+[k]
+
+＠ダ・ヴィンチ
+大河もありそうだし、自然環境的にはやはり[r]この前の中国のように安定しているっぽいね。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[se ad659]
+[wt 0.5]
+[seStop ad659 0.2]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+おや、この反応は……？
+[k]
+
+[messageOff]
+[se ad172]
+[wt 1.5]
+[seStop ad172]
+
+[charaFace C 0]
+＠ホームズ
+ビンゴ。過ごしやすい世界であれば人がいるだろうし、[r]人がいれば町も生まれる。予想通りだ。
+[k]
+
+＠ホームズ
+キミたちの行く手に町らしき反応をキャッチしたよ。[r]座標を送る。
+[k]
+
+＠ホームズ
+まずは慎重に接近し、安全確認を行ってくれ[line 3]
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

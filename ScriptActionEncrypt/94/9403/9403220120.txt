@@ -1,0 +1,529 @@
+
+
+＄94-03-22-01-2-0
+[soundStopAll]
+
+
+[charaSet A 1098161000 1 雀]
+[charaSet B 98001000 1 マシュ]
+[charaSet C 5003000 1 玉藻の前]
+[charaSet D 2021000 1 巴御前]
+[charaSet E 7013001 1 清姫]
+[charaSet F 1037000 1 紅閻魔]
+[charaSet G 1037000 1 紅閻魔_シルエット]
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+[charaFilter G silhouette 00000080]
+
+[scene 69500]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_61 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠雀
+それでは中に案内するチュン。[r]５名様、ご案内チュン。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace A 0]
+[charaFadein A 0.1 0]
+[charaFace B 1]
+[charaFadein B 0.1 2]
+
+＠マシュ
+はい、よろしくお願いします[#雀:すずめ]さん。[r]あの、失礼ですがお名前はおありですか？
+[k]
+
+＠雀
+個体名でチュン？[r]自分は『[#都市:と　し]』という名前チュン。
+[k]
+
+＠雀
+個体名で呼んでくれるチュン？[r]お客様は温かい意味での神様チュン？
+[k]
+
+？1：よろしく、[#都市:と　し]
+
+＠雀
+嬉[charaMoveReturn A -256,10 0.3]しいチュン！[wt 0.5][r]昔[charaMoveReturn A -256,10 0.3]に戻ったみたいチュン！
+[k]
+
+？2：そうではないのでチュン
+
+＠雀
+でチューン。ではやっぱり迷い[#人:びと]チュン？[r]神様は名前で呼び合うのを嫌うチュン。
+[k]
+
+？！
+
+＠マシュ
+では改めて、よろしくお願いします[#都市:と　し]さん。[r]旅館にお邪魔するのは初めてなので、とても新鮮です！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+[bgmStop BGM_EVENT_61 1.0]
+
+＠玉藻の前
+あいや、[#暫:しばら]く、暫くぅ！[r]ちょっと待った、ちょっと待ったぁ！
+[k]
+
+[charaFace C 5]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠玉藻の前
+マシュ様。[%1]様。[r]この建物、見るからに怪しいと思われませんか？
+[k]
+
+[charaFace C 2]
+
+＠玉藻の前
+いえ思いますよね、だって[#建築学:けんちくがく]的にありえねー！[r]きっと妖怪の住み[#処:か]に違いない、ゼ！
+[k]
+
+[charaFace C 1]
+
+＠玉藻の前
+なので帰りましょう。戻りましょう。[r]今回のレイシフト実験はここまでという事で。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠巴御前
+はい。私も同意見です。この巴、悪い事は申しませんので[r]居残り授業は勘弁してください先生[line 3]
+[k]
+
+[charaFace D 3]
+
+＠巴御前
+ああいえ、そうではなく！
+[k]
+
+＠巴御前
+この旅館は我々には過ぎたもの、他を当たりましょう！[r]そうですよね、清姫さん！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠清姫
+ふ[charaShake E 0.07 8 2 0.7][se ade238][seVolume ade238 0 0.6]ふ。ふふふ。うふふふふ……！[r]ゆるして。ゆるして。ゆーるーしーてー！[wt 0.5][seStop ade238 0.3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠マシュ
+清姫さん、ものすごい発汗です！[r]まるで重度のＰＴＳＤのように……！
+[k]
+
+？1：よく分からないけど（面白いから）
+？2：とにかく中に入ろう（面白いから）
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 0]
+[charaDepth D 1]
+[charaDepth E 2]
+
+[charaTalk off]
+[charaFace C 2]
+[charaFadein C 0.1 0]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+[charaFace D 2]
+[charaFadein D 0.1 2]
+
+＠玉藻の前＆巴御前＆清姫
+い[charaShake C 0.07 6 2 0.7][charaShake E 0.07 7 3 0.7][charaShake D 0.07 8 2 0.7]やーーーーーーーぁ！[r]やめて、やーーーめーーーてーーーーー！
+[k]
+
+[messageOff]
+[wt 0.7]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_7 1.5]
+[wait fade]
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[scene 69600]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_66 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠雀
+女将、女将！[r]お客様をお連れしたチュン！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth G 0]
+[charaDepth F 1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠？？？
+報告は聞いているでち。[r]おまえは[#御厨:みくりや]に豆腐を届けなちゃい。
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+[charaFadeout G 0.1]
+
+＠紅閻魔
+ようこそ[#閻魔亭:えんまてい]へ。[r]歓迎するでち、お客様がた。
+[k]
+
+＠紅閻魔
+人の身においては迷い込むしか[#術:すべ]はなく、[r]人以外であれば分け[#隔:へだ]てなく迎える[#湯治:とうじ]の宿。
+[k]
+
+＠紅閻魔
+あちきは当旅館を取り仕切る女将、[r][#舌斬:したき]り[#雀:すずめ]の[#紅閻魔:べにえんま]。
+[k]
+
+[charaTalk on]
+[charaFace F 1]
+
+＠紅閻魔
+[#雀:すずめ]を助けてくれたその優しさに、[r][#閻魔亭:えんまてい]を代表して感謝の気持ちを述べるでちよ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+舌斬り[#雀:すずめ]の紅閻魔……とても強い霊基反応です！[r]もしや、紅閻魔さんもサーヴァントなのですか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠紅閻魔
+ちゃーヴァント？　聞かない単語でちね。
+[k]
+
+＠紅閻魔
+英霊としての在り方を許されてはいまちが、[r]あちきはただの地獄の[#獄卒:ごくそつ]でち。
+[k]
+
+＠紅閻魔
+[#賽:さい]の河原でカカ様の手伝いをしていた鬼でちが、[r]色々あって[#閻魔亭:えんまてい]を受け継ぎまちた。
+[k]
+
+＠紅閻魔
+今はこうして[#閻魔亭:えんまてい]に訪れたお客様を[r]もてなす事が使命なのでちが[line 3]
+[k]
+
+[charaFace F 2]
+
+[bgmStop BGM_EVENT_66 0.5]
+
+＠紅閻魔
+その前に！[r]そこの三人、前に出るでち！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.3]
+
+[charaTalk off]
+[charaFace C 2]
+[charaFadein C 0.1 0]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+[charaFace D 2]
+[charaFadein D 0.1 2]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠玉藻の前＆巴御前＆清姫
+は、はーーーい！[r]お久しぶりです、紅閻魔先生～～～♡
+[k]
+
+[charaTalk on]
+[charaFace C 1]
+
+＠玉藻の前
+英霊の座・出張教室以来のご挨拶となります。[r]先生においてはおかわりなく。ほほほ。
+[k]
+
+[charaFace E 1]
+
+＠清姫
+そういえば旅館経営もやっている、という話でしたわ。[r]まさかの再会、清姫も嬉しゅうございます。ほほほ。
+[k]
+
+[charaFace D 0]
+
+＠巴御前
+はい。先生に教えていただいた秘伝の数々、[r]今も巴の中に生きております。
+[k]
+
+＠巴御前
+ですので、どうか本当にご心配なく。[r]ほほ。ほほほ。おほほほ。
+[k]
+
+[messageOff]
+[charaFaceFade D 4 0.2]
+[wt 1.0]
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 0]
+[charaFace D 4]
+[charaFadein D 0.1 2]
+
+＠紅閻魔
+なぜそこで目を[#逸:そ]らすのでち巴。[r]そもそも、巴には何の秘伝も伝えておりまちぇん。
+[k]
+
+＠紅閻魔
+それ以前の問題でちたからね。[r]下ごしらえを自分基準で省略する[#性格:くせ]は直りまちたか？
+[k]
+
+[charaFace D 1]
+
+＠巴御前
+は、はい、もちろん！[r]『生野菜　水で[#濯:すす]げば　[#即美味:そくうま]い』ですよね！
+[k]
+
+[charaFace F 10]
+
+＠紅閻魔
+……はあ。ある意味感動的でち。[r]水洗いすればなんでも食べられるのでちね巴は。
+[k]
+
+＠紅閻魔
+[#猪肉:ししにく]も木の根も岩塩も素材のまま。[r]今から『まるかじり御前』と改名してはいかがでちか？
+[k]
+
+[charaFace D 3]
+
+＠巴御前
+す、すみません、そうですよね！[r]食べやすいようにまず二つに[#切断:わける]、ですよね！
+[k]
+
+[charaFace F 9]
+
+＠紅閻魔
+………………。
+[k]
+
+？1：あのー……紅閻魔さんと三人は知り合い？
+
+？！
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠紅閻魔
+チュ。これは失礼をいたしまちた。[r][#雀:すずめ]からの話によると、
+[k]
+
+＠紅閻魔
+おまえ様は[%1]。[r]そちら様はマシュ、でちたね。
+[k]
+
+[charaFace F 0]
+
+＠紅閻魔
+お二人はお客様として大広間にお通しするでち。[r][#雀:すずめ]は受けた恩は忘れまちぇん。
+[k]
+
+[charaFace F 5]
+
+＠紅閻魔
+でちが、そこな三人は別でち。[r]一時のものとはいえ、師弟の[#契:ちぎ]りを交わちた[#間柄:あいだがら][line 3]
+[k]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+＠紅閻魔
+その腕前がどれほどのものになったのか、[r]試さなければなりまちぇん！
+[k]
+
+[messageOff]
+[se ad39]
+[flashin once 0.2 0.4 FFFFFFAF FFFFFF00]
+[charaChange F 1037001 0 fade 0.3]
+[wait charaChange F]
+[se ade239]
+[seVolume ade239 0 0.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_62 0.1]
+
+[seStop ad39 0.3]
+[wt 0.2]
+
+[seVolume ade239 0.3 1.0]
+[wt 1.0]
+[seStop ade239 0.5]
+[wt 1.0]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠マシュ
+紅閻魔さんが刀を抜きました……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠玉藻の前
+げぇぇ！[r]あれは[#閻雀:えんじゃく][#抜刀術:ばっとうじゅつ]・一の型……！
+[k]
+
+？1：知っているのかたまもん！？
+
+[charaFace C 0]
+
+＠玉藻の前
+はい。紅閻魔先生は調理の達人、[r]その包丁[#捌:さば]きは一流の剣豪に匹敵するのです！
+[k]
+
+＠玉藻の前
+ひとたび抜かば弁舌無用、回る舌をも[#一刀両断:いっとうりょうだん]。[r]最短・最小・最速の居合い術！
+[k]
+
+＠玉藻の前
+それが紅閻魔ヘルズキッチンの鬼教官、[r]紅閻魔ちゃんのめっちゃ怖いところなのです！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？2：[#閻雀:えんじゃく]……抜刀術？
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠清姫
+ふふ。正しくは[#閻雀裁縫:えんじゃくさいほう]抜刀術と言うのです。
+[k]
+
+[charaFace E 11]
+
+＠清姫
+料理のために上手くなったのか、[r]剣士として優れていたから料理が上手いのか……
+[k]
+
+[charaFace E 0]
+
+＠清姫
+諸説様々ですが、ともかく紅閻魔先生の抜刀術は[r]地獄の裁判長も[#唾:つば]を呑むほどの恐ろしさだとか。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠紅閻魔
+[#御託:ごたく]はそこまで、かかってくるでち！
+[k]
+
+＠紅閻魔
+料理の腕は[#体幹:たいかん]に表れるもの。[r]身のこなしを見れば腕前は測れまチュ。
+[k]
+
+＠紅閻魔
+おまえ様がたがどれほど上達したか、[r]見せるがいいでち！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_62 0.4]
+[wait fade]
+[soundStopAll]
+[end]

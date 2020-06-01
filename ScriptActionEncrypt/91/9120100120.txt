@@ -1,0 +1,137 @@
+
+
+
+＄91-20-10-01-2-0
+[soundStopAll]
+[charaSet A 3009001 1 レオニダス]
+[charaSet B 3016001 1 ヘクトール]
+[charaSet C 6003001 1 百貌のハサン]
+[charaSet D 2010002 1 ビリー]
+[charaSet E 3002001 1 ディルムッド]
+
+[scene 20720]
+
+[bgm BGM_EVENT_2 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+
+＠レオニダス
+手応えのない敵でしたな！[r]先遣隊にしてはあまりに迂闊！
+[k]
+
+[charaFace A 0]
+
+＠レオニダス
+しかし、まだまだ敵は多そうです。[r]休める者は今の内に休んでおきましょう！
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ヘクトール
+ホイお疲れさん。
+[k]
+
+[charaFace B 0]
+
+＠ヘクトール
+……持久戦になりそうなんで、[r]マスターも頭を休めな。
+[k]
+
+[charaFace B 4]
+
+＠ヘクトール
+しかしまあ、腐ってもケルト兵。[r]これだけ数が揃えば歯応えあるわ。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠百貌のハサン
+報告だ、マスター。[r]街の人間の避難はまだ済んでいない。
+[k]
+
+＠百貌のハサン
+総数でおおよそ４割程度。[r]ディルムッドもよく女どもを誘導できているが……
+[k]
+
+[charaFace C 4]
+
+＠百貌のハサン
+いかんせん乳飲み子や老人もいる。[r]そう簡単に全員避難とはいかんぞ。
+[k]
+
+[charaFadeout C 0.1]
+[bgmStop BGM_EVENT_2 0.3]
+[wt 0.4]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠ビリー
+マスター、来たよ！[r]まだまだ行くぞ！
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠ディルムッド
+避難は一時中断し、我らも参陣致します。
+[k]
+
+？1：[&頼む:お願い]、ディルムッド！
+
+[charaFadeout D 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ディルムッド
+お任せあれ！
+[k]
+
+？2：ビリー、[&行けるか:行ける]！？
+
+[charaFadeout E 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ビリー
+当然、[#再装填:リロード][se ad346][seStop ad346 0.5]は終わっているさ。[r]さあ、来いよ侵入者。
+[k]
+
+[charaFace D 2]
+
+＠ビリー
+１人残らず、鴨撃ちにしてやるから！
+[k]
+
+？！
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

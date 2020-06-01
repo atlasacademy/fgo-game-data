@@ -1,0 +1,323 @@
+
+
+
+＄94-04-78-15-1-0
+
+
+[soundStopAll]
+
+[charaSet A 3043000 1 エリセ]
+[charaSet B 98001000 1 マシュ]
+[charaSet C 25005000 1 ボイジャー]
+[charaSet D 1098192800 1 マリー]
+[charaSet E 5025001 1 エジソン]
+[charaSet F 2016000 1 エミヤ・オルタ]
+[charaSet H 5009000 1 エフェクト用ダミー]
+[charaSet I 5009000 1 エフェクト用ダミー]
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+[scene 20730]
+
+[pictureFrame cut170_gameframe_bright]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[se ad216]
+[fadeout white 0.5]
+[wait fade]
+
+[pictureFrame]
+[wt 0.1]
+
+[fadein white 1.0]
+[seStop ad216 1.0]
+[wait fade]
+[wt 0.4]
+
+[fowardEffect bit_talk_gamefinish]
+[se ade445]
+[wt 5.3]
+
+[fadeout white 0.4]
+[wait fade]
+
+[scene 10001]
+[pictureFrame]
+[wt 1.0]
+
+
+[fadein white 1.5]
+[scene 96300 1.5]
+[wait fade]
+
+[wt 1.0]
+[charaPut H -250,400]
+[charaPut I 0,400]
+[charaPut J 250,400]
+
+[charaEffect H bit_talk_token_change02]
+[charaEffect I bit_talk_token_change02]
+[charaEffect J bit_talk_token_change02]
+
+[charaMove H -250,0 2.0]
+[charaMove I 0,0 2.0]
+[charaMove J 250,0 2.0]
+[se adm19]
+[seVolume adm19 0 0.3]
+[seVolume adm19 1.0 1.0]
+[wt 2.0]
+
+[wt 1.5]
+[seStop adm19 1.0]
+[wt 2.5]
+[charaEffectDestroy H bit_talk_token_change02]
+[charaEffectDestroy I bit_talk_token_change02]
+[charaEffectDestroy J bit_talk_token_change02]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠マシュ
+トークンの皆さんが、降り注いでいらっしゃいました。[r]勝利者たる、先輩の手へ[line 3]
+[k]
+
+[charaFace B 0]
+＠マシュ
+戦いを終えて、いったんは消え去ったはずの方々の姿も[r]見受けられるようですね。
+[k]
+
+？1：サーヴァントには、よくある[&ことだよ:こと]
+
+？2：これもゲームのルールの一部なのかも
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 19]
+[charaFadein A 0.1 1]
+
+＠エリセ
+……。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[se ade430]
+[seVolume ade430 0 0.1]
+[seVolume ade430 2.0 0.4]
+
+[wt 2.2]
+[seStop ade430 1.0]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠エリセ
+今回は[&きみ:あなた]たちの勝ちだ。でも、勝負はまだついてない。[bgm BGM_EVENT_90 0.1][r]次のゲームが待ってる。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠マシュ
+[#路面電車:ト　 ラ　 ム]が近づいてきました。[r]次の街へ向かう時間が来たようです。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth A 2]
+
+[charaTalk C]
+[charaFace A 0]
+[charaFadein A 0.1 0]
+[charaFace C 1]
+[charaFadein C 0.1 2]
+
+＠ボイジャー
+エリセ、ようやくいっしょだ。
+[k]
+
+[charaFace A 18]
+
+＠エリセ
+き、気安く話しかけないで！
+[k]
+
+[charaFace C 4]
+
+＠ボイジャー
+エリセ……。
+[k]
+
+[charaFace A 20]
+
+＠エリセ
+きみは……今は、私のそばにはいない。
+[k]
+
+[charaFace A 0]
+
+＠エリセ
+でも、取り戻すよ。必ず。
+[k]
+
+[charaFace A 4]
+
+＠エリセ
+その時までは、馴れ合うわけにはいかないから……。
+[k]
+
+[charaFace C 11]
+
+＠ボイジャー
+いやだな。[r]ぼくは[line 3]
+[k]
+
+＠ボイジャー
+エリセ。きみは、ともだちだ。[r]いっしょにいたい。
+[k]
+
+[charaFace C 5]
+
+＠ボイジャー
+そのために、ぼくはきたんだから。
+[k]
+
+＠ボイジャー
+みんなといっしょに[line 3]
+[k]
+
+[charaFace A 13]
+
+＠エリセ
+そんなこと、言われたって[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠マリー
+仲良しなのねえ、ふたりとも。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠エリセ
+マリー王妃……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠マリー
+わたしにも、以前はそんな人がいたわ。[r]かけがえのない間柄の、今はもういない人が。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠エジソン
+『人狼』となった幼なじみは、実にお気の毒だったね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠エミヤ・オルタ
+愛しいひとを、かばって死んだ[line 3]ね。
+[k]
+
+＠エミヤ・オルタ
+……。[r]……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠マリー
+あの人のことなら、もういいの。[r]わたしが思い出してるのは、別の相手よ。
+[k]
+
+＠マリー
+そう、ちょうどボイジャーのような子[line 3]
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠エリセ
+……っ……。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[se ade430]
+[seVolume ade430 0 0.1]
+[seVolume ade430 1.0 0.9]
+[wt 2.0]
+[seStop ade430 0.5]
+
+
+＠エリセ
+[line 3]もう行かなきゃ。次のゲームが始まる。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_90 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

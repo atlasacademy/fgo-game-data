@@ -1,0 +1,728 @@
+
+＄02-00-04-01-4-0
+[soundStopAll]
+
+
+
+
+[charaSet A 1098121000 1 老婆（村人）]
+[charaSet B 1098120700 1 中年男性（村人）]
+[charaSet C 1098120900 1 男性の老人]
+[charaSet D 98001000 1 マシュ]
+[charaSet E 6014001 1 マタ・ハリ]
+[charaSet F 2003001 1 ロビンフッド]
+[charaSet G 5001002 1 メディア]
+[charaSet H 6012001 1 サンソン]
+
+[scene 49500]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.0]
+
+[scene 49502 1.5]
+[wt 1.0]
+[se ad117]
+[seVolume ad117 0 0.4]
+[wt 2.7]
+
+[scene 49601 1.5]
+[wt 2.0]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠A：村人
+……お芝居なんて本当に久々ねえ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：村人
+まったくの時間の無駄だ！
+[k]
+
+＠B：村人
+こんな夜に[r]ランプの油すらもったいない！
+[k]
+
+＠B：村人
+我々が建てた公会堂を、[r]ふざけた芝居なんぞに使うとは……。
+[k]
+
+＠B：村人
+だいたい肝心の牧師がおらんじゃないか。[r]牧師はどうしたんだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠C：村人
+牧師は急病人の家に向かったそうだ。[r]今夜は来られない。しかし十分だろう。
+[k]
+
+＠C：村人
+さあ、[%1]座長。[r]村の者は揃った。いつでも芝居を始めてくれ。
+[k]
+
+？1：[&了解:オッケー]
+？2：では俳優たちの様子は、と……
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[wt 0.5]
+
+[wipeout leftToRight 0.7 1]
+[se ad59]
+[seVolume ad59 0 0.1]
+[seVolume ad59 0.7 0.5]
+[wt 0.5]
+[seStop ad59 0.5]
+[bgmStop BGM_EVENT_70 0.7]
+[wait wipe]
+[scene 49700]
+
+[charaSet B 3031001 1 哪吒]
+
+[wipein rightToLeft 0.5 1]
+[wait wipe]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_2 0.1 0.5]
+
+＠マシュ
+皆さん、それでは手はず通りに[r]お願いいたします。
+[k]
+
+＠マシュ
+芝居の内容は、すでにカルデアで[r]ざっと目を通していただいた通りです。
+[k]
+
+＠マシュ
+台本そのものはセイレムには持ち込めませんでしたが、[r][#台詞:せりふ]を書き出したメモを、それぞれにお渡ししています。
+[k]
+
+＠マシュ
+マタ・ハリさんには“シバの女王”役を[line 3]。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠マタ・ハリ
+エキゾチックな役柄ね。[r]得意なタイプだわ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠マシュ
+ロビンさんには“ソロモン王”役を[line 3]。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠ロビンフッド
+へえへえ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠マシュ
+そして勿論先輩には[line 3]あっ失礼しました、[r][#座長]には劇の進行指示をお願いいたしますね。[charaFace D 13]
+[k]
+
+＠マシュ
+兼ね役もありますからお忙しいですよ。
+[k]
+
+？1：けっこう緊張する[&ものだなあ:なあ]
+
+[charaFace D 8]
+
+＠マシュ
+じ、じつは……わたしも……。[r]実際に舞台に立たれるのは皆さんなのに。
+[k]
+
+？2：マシュが手伝ってくれて助かった
+
+[charaFace D 1]
+
+＠マシュ
+はい。[r]普段できないお仕事でとても楽しかったです。
+[k]
+
+＠マシュ
+でも肝心の上演はこれからです。
+[k]
+
+？！
+
+[charaFace D 7]
+
+＠マシュ
+不肖わたしもナレーターとして[line 3]
+[k]
+
+＠マシュ
+そして兼プロンプターとして[r]舞台の袖から補佐いたします。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠メディア
+私、屋敷に残ってやることがあったのだけど。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠マタ・ハリ
+これも任務よ、メディア。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠サンソン
+そうです。劇団員の顔見せでもある。[r]慎重にやろう。
+[k]
+
+[charaFace H 0]
+
+＠サンソン
+と言っても、今回は僕は脇役のようだ。[r][line 3]ロビン、頼んだぞ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠ロビンフッド
+森の木役でケッコウ、ったのにオレは。[r]なんすかアレ、もうさっきからじろじろと。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠哪吒
+熱い視線　という奴だ。[r]観念の　[#臍:ほぞ]を固めろ伊達男。
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+[charaFadeout B 0.1]
+[wt 0.3]
+[scene 49601]
+
+[charaSet B 1098120800 1 中年女性（村人）]
+[charaSet C 1098121100 1 判事]
+[charaSet F 1098120400 1 カーター]
+
+[fadein black 0.3]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：村人
+（じぃーっ）
+[k]
+
+[bgmStop BGM_EVENT_2 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_70 0.1]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 0]
+[charaFace F 2]
+[charaFadein F 0.4 2]
+[wt 0.2]
+
+＠判事
+…………ふん……。
+[k]
+
+＠カーター
+私の客人のためにお時間を割いてくださり[r]感謝します[line 3]判事。
+[k]
+
+＠判事
+……ふむ。[r]当官は劇としての優劣は判断しない。
+[k]
+
+＠判事
+清教徒の信条をうるさく唱えるのも[r]公平とは言えない。
+[k]
+
+＠判事
+すなわち公衆道徳に反するものであるか否か、[r]その一点だ。
+[k]
+
+＠カーター
+もっともですな。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠カーター
+[line 3]さて、演目はなんだね？[r]ミス・マシュ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠マシュ
+[line 3]はい、カーターさん。
+[k]
+
+＠マシュ
+今宵、わたしたち一座が演じますのは[r]聖書からの一節になります。
+[k]
+
+＠マシュ
+『ソロモンとシバの女王』です。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠A：村人
+まあ、それはそれは素敵だこと。[r]期待しているわ。
+[k]
+
+＠A：村人
+どうぞ、はじめてちょうだいな。[r]あいにくベルベットの[#緞帳:どんちょう]は無いけれど。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[wt 0.5]
+
+[bgmStop BGM_EVENT_70 1.0]
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+[scene 49700]
+
+[charaSet D 1098121700 1 マシュ《ナレーター》]
+[charaSet F 5034001 1 シバの女王]
+[wt 0.5]
+
+[wipein rightToLeft 0.5 1]
+[wait wipe]
+
+[wt 0.4]
+[bgm BGM_EVENT_11 0.1]
+
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.4 1]
+
+＠マシュ《ナレーター》
+[line 3]こほん。
+[k]
+
+[charaFace D 1]
+
+＠マシュ《ナレーター》
+さて、ご招待にお応えくださった皆様がた。
+[k]
+
+＠マシュ《ナレーター》
+今宵、[%1]一座の[r]特別公演にお付き合い頂き、感謝の言葉もございません。
+[k]
+
+＠マシュ《ナレーター》
+演じますのは、[r]聖書で語られます謎多き女王の物語です。
+[k]
+
+[charaFace D 0]
+
+＠マシュ《ナレーター》
+彼女は南方の富める王国の女王[line 3]。[r]その国はアラビアの南かアフリカの東か、いずこやら。
+[k]
+
+＠マシュ《ナレーター》
+比類無き知恵者と名高いソロモンに心惹かれた女王は、[r]砂漠を旅して[#彼:か]の[#王:おう]に会いに行こうと決意いたします。
+[k]
+
+＠マシュ《ナレーター》
+砂漠[line 3]本物の砂漠をご存じでしょうか？[r]地平線まで続く砂の海。一滴の水もない死の土地です。
+[k]
+
+＠マシュ《ナレーター》
+なだらかにうねる砂漠の峰を、[r]何百頭ものラクダの群れが細い線となり[#闊歩:かっぽ]します。
+[k]
+
+＠マシュ《ナレーター》
+ラクダの背には驚くべき莫大なる財宝が。[r]黄金、宝石、貴重な[#乳香:にゅうこう]。
+[k]
+
+＠マシュ《ナレーター》
+何千人もの兵と従者を連れ、ラクダの[#輿:こし]に揺られる[r]女王一行の様子から劇の幕開けとなります……。
+[k]
+
+[messageOff]
+[charaFadeout D 0.4]
+[wt 1.0]
+
+[wipeout upToDown 1.0 1]
+[bgmStop BGM_EVENT_11 1.0]
+[wait wipe]
+[wt 0.5]
+[wipein downToUp 1.0 1]
+[wt 0.5]
+[bgm BGM_EVENT_1 0.5]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.4 1]
+
+＠E：シバの女王
+はあ……[#憂鬱:ゆううつ]です。[r]ラクダに揺られる旅も苦にはなりませぬが……、
+[k]
+
+＠E：シバの女王
+エルサレムの都で、もしソロモン王に[r]お会いできなかったらと思うと……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠H：女王の家来
+何を気をもまれますか女王陛下？[r]ここ二ヶ月間の旅のあいだ、その心配ばかり！
+[k]
+
+＠H：女王の家来
+紅海の港まで、あと二日はかかりましょう。[r]エルサレムはさらにその彼方です。そもそも[line 3]
+[k]
+
+[messageOff]
+[se ad7]
+[wt 0.7]
+[charaFace H 1]
+
+＠H：女王の家来
+どうぞご覧ください貴女様の手土産の数々を！
+[k]
+
+＠H：女王の家来
+ラクダ二十頭にも載りきらぬ[r]百二十タラントもの黄金！
+[k]
+
+＠H：女王の家来
+サファイア、琥珀、オパール、[#石榴石:ガーネット]、貴石の数々。[r]我が国が誇る最高の質の[#乳香:にゅうこう]。
+[k]
+
+＠H：女王の家来
+これだけの財宝が砂漠を旅することなど[r]いまだかつてありませんぞ！
+[k]
+
+＠H：女王の家来
+なにより、陛下の美貌は知れわたっております。[r]あなた様の訪問を拒む男王など、この世におりますまい！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠E：シバの女王
+そうでしょうか……？
+[k]
+
+
+[maskout white 2.0]
+[bgmStop BGM_EVENT_1 2.0]
+[wait mask]
+[messageOff]
+[charaFadeout E 0.1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 0,-50]
+[pictureFrame cut049_frame01]
+[talkNameBack img_talk_namebg02]
+[scene 28800]
+
+[charaSet A 98080000 1 女王の家来]
+[charaSet B 98107500 1 女王の兵士]
+[charaScale A 0.85]
+[charaScale B 0.85]
+[charaScale F 0.85]
+[wt 1.0]
+
+[maskin white 1.0]
+[wt 0.5]
+[bgm BGM_EVENT_5 0.1]
+[wait mask]
+
+
+
+＠シバの女王
+本当にそうでしょうか……。
+[k]
+
+[charaFace F 0]
+
+＠シバの女王
+これらの宝は、彼の王へ信頼と誠意を[r]お伝えするためのもの。
+[k]
+
+＠シバの女王
+真の積み荷は、私自身の胸のうちにあります。
+[k]
+
+＠シバの女王
+なにより彼の王は、神により祝福された[r]生まれついての王なのですから、商隊長。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 0,-45]
+[wt 0.2]
+
+＠女王の家来
+私にはどうも理解が及びませんなあ。
+[k]
+
+＠女王の家来
+一国の王であれ一家の長であれ、[r]男はそう変わるものではございませんぞ。
+[k]
+
+＠女王の家来
+おだてられればのぼせあがり、[r]強欲をかけば目がくらむ。
+[k]
+
+＠女王の家来
+生まれついての王ならば尚のこと[r]血筋にあぐらをかいてはおりませぬか？
+[k]
+
+＠女王の家来
+たしかにイスラエルは、先王の治世と比べれば[r]ずいぶん取引しやすい穏やかな国となりましたがね。
+[k]
+
+＠女王の家来
+知恵者と申されても、はて。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-45]
+
+＠シバの女王
+港の見える場所からはそのような口は慎みなさい。[r]彼の王の耳たちがそばだてておるやも。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-45]
+
+[bgmStop BGM_EVENT_5 0.7]
+
+＠女王の家来
+御意。[line 3]おや？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 0,-45]
+[wt 0.2]
+[se ad54]
+[seVolume ad54 0 0.4]
+[seStop ad54 0.7]
+[wt 0.2]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠女王の兵士
+商隊長！[r]隊列前方に異変ありとの知らせが！
+[k]
+
+＠女王の兵士
+強盗の待ち伏せのようです！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-45]
+
+＠女王の家来
+懲りずにまた来なすったか。
+[k]
+
+＠女王の家来
+そろそろオアシスも近い。[r]いっそう盗賊の手合いが増える頃合いだ。
+[k]
+
+＠女王の家来
+前代未聞のこの商隊の噂を耳にすれば、[r]一攫千金を夢想して向かってくる者がいても仕方ない。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-45]
+
+＠シバの女王
+でしたらば賊の襲撃の備えもまた[r]それなりの勝算をふくむということ。
+[k]
+
+＠シバの女王
+対処するなら[r]私もなにかお手伝いしましょうか？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-45]
+
+＠女王の家来
+ご冗談を！
+[k]
+
+＠女王の家来
+それにご安心くだされ！[r]我々には[#手練:てだ]れの強者どもがおります。
+[k]
+
+＠女王の家来
+即刻、彼らと兵を向かわせましょうぞ。[r]彼らは金で動く者ではありませぬ。
+[k]
+
+＠女王の家来
+あなた様と王国にぞ仕えまする、[r]忠誠と名誉の者たちです！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 0,-45]
+
+＠シバの女王
+急にものものしいわね。
+[k]
+
+[charaFace F 0]
+
+＠シバの女王
+ええ。[r]それでは、頼みましたよ[line 3]。
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[pictureFrame]
+[talkNameBack]
+[soundStopAll]
+[end]

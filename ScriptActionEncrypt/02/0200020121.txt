@@ -1,0 +1,325 @@
+
+
+＄02-00-02-01-2-1
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+[charaSet A 99502600 1 マシュ]
+[charaSet B 4004001 1 アストルフォ]
+[charaSet C 1026001 1 デオン]
+[charaSet D 98111500 1 ダ・ヴィンチ]
+[charaSet E 98113900 1 ？？？]
+[charaSet F 98115000 1 エフェクト用]
+
+[scene 20310]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アストルフォ
+とりあえず、さっきの獣達の足跡を逆に辿ってるけど[r]……人、いるかなぁ？
+[k]
+
+？1：アストルフォのカンを信じてる
+
+[charaFace B 1]
+＠アストルフォ
+えへへー、ありがと、マスター！[r]何でも信じてくれるのは嬉しいな！
+[k]
+
+[charaFace B 0]
+
+？2：デオンの観察眼を信じてる
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠デオン
+もちろん。[r]マスターの期待は裏切らないとも。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+？！
+
+[wt 0.1]
+[charaMoveReturn B 0,7 0.1]
+[wt 0.1]
+[charaMoveReturn B 0,7 0.1]
+[wt 0.1]
+＠アストルフォ
+とか話してたらさっそく！[r]ほらほら、あそこの岩陰、誰か倒れてない？
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠デオン
+獣たちの足跡はまだ途中だ……向こうに続いている。[r]無関係でもないだろうな。
+[k]
+
+＠デオン
+獣の群れの行進に巻き込まれて負傷し、[r]あそこに隠れた人間だろうか……？
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アストルフォ
+起こして聞いたほうが話が早いよ。[r]おーい、生きてるー？
+[k]
+
+[charaMove B 0,-100 0.4]
+[charaFadeout B 0.4]
+[wt 0.5]
+[se bac101]
+[seVolume bac101 0 0.4]
+[wt 0.2]
+[se bac101]
+[seVolume bac101 0 0.4]
+[wt 1.0]
+
+＠？？？
+う……ううん……。
+[k]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+＠アストルフォ
+あ、生きてた。[r]ん？　でもこれって……。
+[k]
+
+[charaFadeout B 0.1]
+
+[charaEffect F bit_talk_10_LowLevel]
+[charaPut F 1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠マシュ
+待ってください[line 2]サーヴァント反応！[r]マスター、その人はサーヴァントです！
+[k]
+
+[charaFace A 6]
+＠マシュ
+え、でも、これは。[r]この霊基パターンは……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+
+[messageOff]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.7 1]
+[wt 1.2]
+＠？？？
+ううん……君達、は……？
+[k]
+
+？1：通りすがりのものです
+
+[charaFadeout E 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アストルフォ
+そうそう。ここに来たばかりの旅人、って感じかな。[r]身体は平気かい？
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+？2：大丈夫？
+
+[charaFace E 1]
+
+？！
+
+
+＠？？？
+大丈夫……だと思います、ありがとう。
+[k]
+
+＠？？？
+その言葉だけでわかります。[r]君達はいい人ですね。出会いに感謝しよう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace E 1]
+[charaFadein E 0.1 0]
+[charaFace C 5]
+[charaFadein C 0.1 2]
+＠デオン
+キミはこの地下世界の住人か……と聞こうと思ったが、[r]サーヴァントなら意味はないかもしれないな。
+[k]
+
+＠デオン
+代わりに聞くが、キミはこの世界について詳しいか？
+[k]
+
+[charaFace E 4]
+＠？？？
+いいえ。僕もただここに召喚されてしまっただけで。
+[k]
+
+＠？？？
+自分がサーヴァントであることだけはわかるけれど、[r]それ以外はさっぱりです。
+[k]
+
+[charaFace E 6]
+＠？？？
+地下世界……とさっき言ったのですか？[r]どうりで空が見えないと思った。
+[k]
+
+＠？？？
+しかしどうして、僕のような未熟者が[r]そんなところに喚ばれてしまったんだろう。
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 2]
+＠アストルフォ
+未熟者……なのかい、キミ？
+[k]
+
+[charaFace E 3]
+＠？？？
+恥ずかしながら。[r]ここでこうして倒れていたのも、
+[k]
+
+＠？？？
+自分では歯が立たない魔獣の群れがいきなり走ってきて、[r]それに為す術なく巻き込まれてしまったからです。
+[k]
+
+[charaFace E 4]
+＠？？？
+あれが、ケルトの戦士が生涯で一度は戦うという[r]魔猪なんだろうか……普通に死ねるよ……。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+
+[charaPut F 1]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠マシュ
+マスター……その。とても信じがたいことですが、[r]その人は、ですね……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠？？？
+おや。遠くにドルイドの仲間もいるのですか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-90]
+＠ダ・ヴィンチ
+ああ、そこにいる彼らを支援している者だ、[r]怪しい者じゃないよ。以後よろしく。
+[k]
+
+＠ダ・ヴィンチ
+というわけで、どれどれ、私にもその霊基パターンを[r]見せてごらんよ……[charaFace D 5]ほう？　ほほう？
+[k]
+
+[charaFace D 1]
+＠ダ・ヴィンチ
+マシュが絶句するのもわかるな。[r]興味深い、これは実に興味深いよ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut F 1200,1200]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠？？？
+皆さんはいい人で、信じていい味方だと思います。
+[k]
+
+＠？？？
+この絶対的な信頼感は[line 2]きっと、[r]僕ではない僕が縁を結んでいたんでしょう。
+[k]
+
+？1：そうかも
+？2：そうかな？
+
+[charaFace E 1]
+＠？？？
+そうですよ、きっとね。
+[k]
+
+？！
+
+[charaFace E 0]
+＠？？？
+……唐突に切り出すのですが。[r]僕も同行させてもらって構わないでしょうか。
+[k]
+
+[charaFace E 4]
+＠？？？
+正直に言って、[r]僕は戦士としてまだまだ半人前の身です。
+[k]
+
+＠？？？
+力になれると断言はできませんが、[r]皆さんに迷惑はおかけしません。
+[k]
+
+[charaFace E 3]
+＠？？？
+[line 3]なんというか。[r]皆さんと共に旅をするべきだ、と心臓が早打つのです。
+[k]
+
+[charaFace E 0]
+＠？？？
+無論、それだけでは信用には足りません。[r]信義の証として、僕の真名をお教えします。
+[k]
+
+[charaFace E 1]
+＠？？？
+僕はアルスターの王族の一人。[r]その名をフェルグス・マック・ロイと言います。
+[k]
+
+
+[messageOff]
+[wt 0.7]
+[bgmStop BGM_EVENT_2 1.5]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

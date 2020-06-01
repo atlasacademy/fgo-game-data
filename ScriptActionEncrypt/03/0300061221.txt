@@ -1,0 +1,391 @@
+
+
+
+＄03-00-06-11-2-1
+
+
+
+
+[soundStopAll]
+
+[charaSet A 1017001 1 武蔵]
+[charaSet B 8001400 1 アーマード・マシュ]
+[charaSet C 1098183600 1 四つ足エネミー]
+[charaSet D 1098183600 1 四つ足エネミー]
+[charaSet E 1098190600 1 モードレッド]
+[charaSet F 98002000 1 フォウ]
+[charaSet G 9005001 1 ホームズ]
+[charaSet H 8001410 1 マシュ]
+
+[charaSet O 5009000 1 人工知能用ダミー]
+[charaSet S 5009000 1 エフェクト用ダミー]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 92501]
+
+[charaPut O 1200,1200]
+[charaEffect O bit_talk_10_red_ai 0,33]
+
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠武蔵
+[line 3]よ、っと！
+[k]
+
+[messageOff]
+[se ad7]
+[charaFace A 2]
+[charaMoveScale A 1.1 0.2]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.2]
+
+[se bac210]
+[fowardEffect bit_talk_x_slash03]
+[wt 0.2]
+
+[charaShake C 0.02 3 3 0.4]
+[wt 0.7]
+
+[se ad42]
+[charaSpecialEffect C enemyErasure 1 1.2]
+[seStop ad42 1.6]
+[wt 2.0]
+[charaScale A 1.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠武蔵
+マシュ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+
+
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠B：マシュ
+はいっ！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaDepth B 4]
+[charaDepth A 5]
+
+[charaFace A 5]
+[se ad7]
+[charaFadein A 0.2 -200,0]
+[charaMove A -150,0 0.2]
+[wt 0.2]
+[charaShake B 0.05 3 3 0.2]
+[charaMove B 0,-10 0.3]
+[se ad775]
+[wt 0.2]
+
+
+[se ad678]
+[charaDepth S 9]
+[charaPut S -150,0]
+[charaEffect S bit_talk_quickmove]
+
+[wt 0.1]
+[charaMove A -150,20 0.2]
+[charaFadeout A 0.2]
+
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+
+[scene 10000]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+[se bac210]
+[charaPut S 1]
+[charaEffect S bit_talk_x_slash01]
+[wt 0.3]
+
+[se bac211]
+[fowardEffect bit_talk_x_slash02]
+[wt 0.4]
+
+[se ad20]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+
+[scene 92501]
+
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein C 0 2]
+[charaFadein D 0 0]
+[charaShake C 0.02 3 3 0.6]
+[charaShake D 0.02 3 3 0.6]
+[wt 1.0]
+
+
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[se ad42]
+[charaSpecialEffect C enemyErasure 1 1.2]
+[charaSpecialEffect D enemyErasure 1 1.2]
+[seStop ad42 1.6]
+[wt 2.6]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠武蔵
+…………よし終わりっ、と。[r]戦闘しながら地味にじりじり動いたけど、どう？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut O 1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠E：人工知能
+どうもこうもねえな。[r]このあたりに目標はないぜ。次だ、次！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut O 1200,1200]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠フォウ
+フォウゥゥ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠武蔵
+ね、がっかり。[r]この分だとカリギュラ帝とカイニスさんが早いかな？
+[k]
+
+？1：来た道は戻らず、先へ進む！
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth B 5]
+[charaDepth H 6]
+
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[wt 0.4]
+
+[se ad658]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.4]
+
+[charaFadeout B 0.4]
+[wt 0.4]
+
+
+[charaTalk on]
+[charaTalk H]
+＠マシュ
+はい。ですが無理は禁物です、マスター。
+[k]
+
+[charaFace H 12]
+
+＠マシュ
+今回は特にお体の消耗には注意を……[r]いえ、今更ですね。すみません。
+[k]
+
+[charaFace H 7]
+＠マシュ
+では、行きます！[r]わたしたちの班も負けられません！
+[k]
+
+[bgmStop BGM_EVENT_70 1.0]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠武蔵
+……。[r]……。
+[k]
+
+[charaFace A 3]
+＠武蔵
+…………ん～～～～ッ！　も～！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth H 4]
+[charaDepth A 5]
+
+[charaFace H 7]
+[charaFadein H 0.1 80,0]
+[wt 0.4]
+
+[se ad7]
+[seVolume ad7 0 0.4]
+[charaFace A 3]
+[charaFadein A 0.4 -100,0]
+[charaMove A -80,0 0.4]
+[wt 0.6]
+
+[se ad168]
+[seVolume ad168 0 0.6]
+[charaFace H 3]
+[charaShake A 0.02 3 3 0.4]
+[charaShake H 0.02 3 3 0.4]
+[wt 0.2]
+[seStop ad168 0.1]
+[wt 0.8]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk on]
+[charaTalk H]
+＠マシュ
+わ、わわっ、武蔵さん！？[r]どうしてわたしの頭を胸元に！？
+[k]
+
+
+＠マカリオス
+[charaTalk S]
+何をしてるんだ……？
+[k]
+
+＠アデーレ
+[charaTalk S]
+まあ、仲がいいのね。まるで姉妹のよう。
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaTalk off]
+[charaMove A -150,0 0.4]
+[wt 0.8]
+
+[charaTalk on]
+[charaFace A 8]
+＠武蔵
+ごめんごめん。[r]つい、本能的に！
+[k]
+
+[charaFace H 6]
+[charaTalk H]
+＠マシュ
+本能……
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠ホームズ
+話は終わったかな？[r]いや。丁度、[%1]にはいい休息だ。
+[k]
+
+[charaFace G 1]
+＠ホームズ
+それでは改めて、巨大彫像街を駆けるとしよう！[r]無人の街を[#縦横無尽:じゅうおうむじん]に走り回るというのは、何とも、
+[k]
+
+＠ホームズ
+これはこれで未知の快感がある！[r]そうは思わないかね！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠フォウ
+フォウフォウ、ファーウ！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 0.8]
+[charaFadeout F 0.1]
+[wt 1.0]
+
+[bgm BGM_EVENT_62 0.1]
+
+？1：行こう！
+？2：身体強化礼装よし、まだまだ走るよ！
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+＠マシュ
+はい、マスター！
+[k]
+
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

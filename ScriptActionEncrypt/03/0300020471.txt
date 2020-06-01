@@ -1,0 +1,845 @@
+
+
+＄03-00-02-04-7-1
+
+
+
+
+[soundStopAll]
+
+
+[charaSet A 8001410 1 マシュ]
+[charaSet B 1098153600 1 ゲルダ]
+[charaSet C 8001400 1 マシュ]
+[imageSet D cut068_srt_spk 2]
+[charaSet E 98002000 1 フォウ]
+[charaSet F 1098123810 1 オフェリア]
+[charaSet G 1098123320 1 コヤンスカヤ]
+[charaSet H 98115000 1 エフェクト用]
+
+[scene 61500]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_ichimon01wh]
+[se bac9]
+[wt 0.5]
+[effect bit_talk_Slash_white_01_L]
+[se bac10]
+[wt 0.7]
+
+[effect bit_talk_14]
+[se ad687]
+[wt 1.0]
+
+[effectStop bit_talk_ichimon01wh]
+
+[se ad10]
+[shake 0.05 0 2 1.0]
+[effect bit_talk_impactlanding]
+[wt 2.5]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……第二波まで迎撃完了。[wt 0.6][charaFace A 1][r]さすがはダ・ヴィンチちゃんです、戦闘継続できます！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠フォウ
+フォーウ、フォフォウ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ええと、はいっ。まだ無茶の域ではないと思います！[r]外骨骼出力は約20％低下していますが、
+[k]
+
+[charaFace A 7]
+
+＠マシュ
+あと一度の連続戦闘には充分耐えられます。[r]先輩、わたしのことは気にせずに、状況判断を……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[se ad57]
+[shake 0.05 0 2 0.3]
+[wt 0.8]
+[se ad57]
+[shake 0.05 0 2 0.3]
+[wt 0.8]
+[seStop ad57]
+
+[cueSe Battle bac428]
+[wt 1.5]
+
+
+？1：まだまだ集まって来る！
+？2：流石に、これ以上の戦闘は避けたいけど！
+
+？！
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠フォウ
+フォ……フォッフォフォ、フォウ！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+え……
+[k]
+
+
+[charaFace A 15]
+
+＠マシュ
+フォウさん！　ゲルダさんを止めてください！[r]飛び出そうとしています[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠ゲルダ
+すぐに戻るわ！[r]あたしだけ、じっとしたままなんてダメだと思う！
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[charaMove B -30,0 0.4]
+[se ad443]
+[wt 1.0]
+[seStop ad443]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ゲルダさん！
+[k]
+
+[messageOff]
+[charaTalk E]
+[cueSe Battle bac428]
+[wt 1.5]
+
+[charaFace A 15]
+
+＠マシュ
+くっ……行かせ、ません！！
+[k]
+
+[messageOff]
+[se ad628]
+[charaShake A 0.05 3 3 0.5]
+[fowardEffect bit_talk_14]
+[wt 1.5]
+[seStop ad628 1.0]
+[wt 0.3]
+
+[charaDepth H 10]
+[charaPut H 1]
+[charaShake A 0.05 3 3 0.3]
+[se ade18]
+[wt 1.0]
+
+[charaFace A 2]
+＠マシュ
+[#霊基外骨骼:オ ル テ ナ ウ ス]・機能拡大！[r]出力一時上昇！　[line 6]アマルガムゴート！
+[k]
+
+[messageOff]
+[wt 0.5]
+[charaPut H 1]
+[charaEffect H bit_talk_np_buf]
+
+[cueSe Battle bac171]
+[cueSeVolume bac171 0 0.3]
+[wt 0.4]
+[cueSeStop bac171 0.3]
+[cueSe Battle bas1]
+[cueSeVolume bas1 0 0.6]
+[wt 0.5]
+[cueSeStop bas1 0.2]
+[cueSe Battle bas7]
+[cueSeVolume bas7 0 0.5]
+[wt 1.0]
+[charaPut H 1200,1200]
+
+[se ad170]
+[charaFace A 15]
+[charaShake A 0.05 3 3 0.5]
+[fowardEffect bit_talk_14]
+[wt 1.0]
+
+？1：マシュ、もう少しだけ耐えて！
+
+[charaFace A 2]
+
+＠マシュ
+はい！　問題なしです！
+[k]
+
+？2：戻ってきなさい、ゲルダ！
+
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad443]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+[wt 0.2]
+[seStop ad443]
+
+＠ゲルダ
+[f large]摘んできたわ！　薬草！
+[k]
+
+＠ゲルダ
+はあっ、はあっ、はあっ……ぜえ、はあっ……！[r]やった。やったわ、あたし！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+？1：マシュ！
+？2：西方向、下り斜面へ移動開始！
+
+？！
+
+[charaFace A 2]
+
+＠マシュ
+了解しました！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[se ad687]
+[effect bit_talk_14]
+[wt 1.0]
+
+[se ad10]
+[effect bit_talk_impactlanding]
+[shake 0.05 0 2 1.0]
+[wt 3.5]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ゲルダ
+わああああああああ……！[r]すごい、すごい、あんなに大きな巨人なのに……
+[k]
+
+＠ゲルダ
+のし掛かられてもマシュさまは全然平気なのね……[r]こんなことってあるのね……すごいわ……
+[k]
+
+[charaFace B 1]
+
+＠ゲルダ
+やっぱり、御使いは巨人なんて怖くないんだわ！
+[k]
+
+＠ゲルダ
+大人はみんな巨人につかまって、[r]残らずぺしゃんこにされてしまうのに[line 3]
+[k]
+
+？1：大人はみんな？
+？2：それってどういう意味……
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+先輩、わたしの体につかまってください！[r]ゲルダさんも、フォウさんも……ええっと、よいしょ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ゲルダ
+きゃっ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[se ad7]
+[wt 0.4]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠フォウ
+フォウフォウ、キャーウ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+[#霊基外骨骼:オ ル テ ナ ウ ス]・追加装備オレルス・ボード[line 3][r]ブースター緊急起動します！
+[k]
+
+＠マシュ
+風圧がすごいと思いますので目を閉じていてください！[r]わたしは、バイザーを使用します！
+[k]
+
+[charaFace A 7]
+[messageOff]
+[charaTalk off]
+[charaDepth C 10]
+[charaFace C 7]
+[charaFadein C 0.4 1]
+
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+
+
+＠マシュ
+噴射モード第三加速から緊急起動。[r]オレルス・ボード、スタンバイ。３、２、１[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaFace C 2]
+
+＠マシュ
+[line 6]ブースト・スタート！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[se ade122]
+[effect bit_talk_41]
+[wt 1.5]
+
+[fadeout white 1.0]
+[bgmStop BGM_EVENT_80 1.0]
+[wait fade]
+
+[effectStop bit_talk_41]
+
+[wt 2.0]
+[scene 10000]
+
+[fadein white 1.0]
+[wait fade]
+
+
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 61100]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_EVENT_81 0.1]
+
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+
+＠コヤンスカヤ
+ハーイ、オフェリアちゃーん☆
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠オフェリア
+アナタは……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠コヤンスカヤ
+お姫さまの部屋じみた雪と氷のゲストルームへ、[r]ようこそ[line 3]じゃなかった、今日もおかえりなさい。
+[k]
+
+[se ad657]
+
+＠コヤンスカヤ
+先に始めてるわよ？[r]北欧の氷で割ったウォッカ、意外にいけますねー☆
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠オフェリア
+……。[r]……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadein G 0.1 1]
+
+＠コヤンスカヤ
+あら、勤務中に飲酒はいいのか？　というお顔。[wt 1.2][charaFace G 0][r]ええ、[#私:ワタクシ]もまったくの同意見ですわ。
+[k]
+
+[charaFace G 4]
+
+＠コヤンスカヤ
+ですが、それもこの城が悪いというもの。[r]こちら、ロシアよりは暖かいかと思いきやコレですもの。
+[k]
+
+[charaFace G 20]
+
+＠コヤンスカヤ
+こと雪と氷のお城だけは例外中の例外。[r]礼装がなければ霜だらけになっている寒さとか。
+[k]
+
+＠コヤンスカヤ
+暑いよりはマシだけど寒すぎるのもどうかしら？[r]ねえ、そう思わない？
+[k]
+
+[charaFace G 17]
+
+＠コヤンスカヤ
+[line 3]北欧出身のオフェリアちゃん？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠オフェリア
+……どうという事はありません。
+[k]
+
+＠オフェリア
+まだ留まっていたのですね、コヤンスカヤ。[r]とっくに他の[#異聞帯:ロストベルト]へ移動しているものと思ったけれど。
+[k]
+
+＠オフェリア
+アナタにも御役目があるでしょう。[r]私が、キリシュタリア様から任されたのと同じように。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+
+＠コヤンスカヤ
+いえいえ、心配には及びません。[r]この北欧において、[#私:ワタクシ]の仕事はほぼおしまい。
+[k]
+
+[charaFace G 1]
+
+＠コヤンスカヤ
+空想樹は順調に成長していますし、[r][#異聞帯:ロストベルト]の王も協力的ですし？
+[k]
+
+＠コヤンスカヤ
+個人的なコレクションも充実させていただきましたし、[r]そろそろ次の[#異聞帯:ロストベルト]に向かう頃合いではあります。
+[k]
+
+[charaFace G 4]
+
+＠コヤンスカヤ
+こんな事なら、もっと真面目にカドック君の面倒を[r]見てあげていれば良かったかも、と反省すらしていました。
+[k]
+
+[charaFace G 16]
+
+＠コヤンスカヤ
+まあ、でも[line 3]
+[k]
+
+[messageOff]
+[charaFace G 17]
+[wt 1.0]
+[charaFace G 14]
+
+＠コヤンスカヤ
+心配するなら脱落した彼より、[r]これから活躍するアナタですよねえ？
+[k]
+
+[charaFace G 9]
+
+＠コヤンスカヤ
+というか、[r]同じ女子として放っておけないゾ☆　みたいな☆
+[k]
+
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠オフェリア
+アナタに心配される謂れはないと思います。[r]コヤンスカヤ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadein G 0.1 1]
+
+＠コヤンスカヤ
+ええー、そうかしら？　ほんとうに？[r]本当の本当の、ほんとうに？
+[k]
+
+[charaFace G 0]
+
+＠コヤンスカヤ
+オフェリアちゃんは真面目で[r]魔術師としての性能も優秀だけど、
+[k]
+
+[charaFace G 18]
+
+＠コヤンスカヤ
+なんだか心ここにあらずといったアンニュイさ。[r][#私:ワタクシ]の中の母性が疼いてしまいますわ。
+[k]
+
+[charaFace G 16]
+
+＠コヤンスカヤ
+まあ言うまでもなく、[r]母親の気持ちとか分からないんですけどね？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠オフェリア
+しつこい……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 2]
+
+[charaFace G 16]
+[charaFadein G 0.1 0]
+
+＠オフェリア
+私はキリシュタリア・ヴォーダイム様に[r]絶対の忠誠を捧げています。ご心配なく、迷いはしません。
+[k]
+
+＠オフェリア
+惑わされる事もない。[r]私の礼装には、心理防御のための護符も組み込まれている。
+[k]
+
+＠コヤンスカヤ
+えー。守りを固めるってコトはぁ、[r]そこが弱いって自覚があるってコトじゃないのぅ？
+[k]
+
+[messageOff]
+
+[charaTalk F]
+[charaFace F 5]
+[wt 1.0]
+
+[charaFace G 17]
+
+＠コヤンスカヤ
+おっと、やぶ蛇、やぶ蛇。こういうの、[r]人間社会では言わぬが花だったわね。
+[k]
+
+[charaFace G 9]
+
+＠コヤンスカヤ
+じゃ、ここは気付かないフリで仕切り直しー！
+[k]
+
+＠コヤンスカヤ
+一緒に呑みましょ、オフェリアちゃん！[r]朝まで一緒に楽しくやろう、ゼ！
+[k]
+
+[charaFace F 9]
+
+＠オフェリア
+…………はぁ。
+[k]
+
+[charaFace G 13]
+
+＠コヤンスカヤ
+あらら。溜息？
+[k]
+
+[charaFace F 0]
+
+＠オフェリア
+……分からないようだから言っておきます。
+[k]
+
+＠オフェリア
+アナタは北欧[#異聞帯:ロストベルト]には不要です。[r]趣味を続けたいのなら、他の[#異聞帯:ロストベルト]へ行くといい。
+[k]
+
+[charaFace G 0]
+
+＠コヤンスカヤ
+ええ。北欧のバカンスに飽きたら[r]すぐにお[#暇:いとま]しますとも。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠コヤンスカヤ
+それまでは仲良くしましょう？[r][#私:ワタクシ]たち、『人間嫌い』のお仲間でしょう？
+[k]
+
+[se ad657]
+
+[charaFace G 17]
+
+＠コヤンスカヤ
+フフ……大丈夫。大丈夫よ、[r]オフェリア・ファムルソローネ。可哀想なお嬢さん。
+[k]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+＠コヤンスカヤ
+此処にはアナタを追い詰める人間はいない。[r]此処には[#日曜日なんて永遠に来ない]。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+[wt 1.0]
+[charaFace F 5]
+
+＠オフェリア
+え……？
+[k]
+
+＠オフェリア
+アナタ、何を……言って[line 3]
+[k]
+
+[messageOff]
+[se ad437]
+[fadeout white 0.2]
+[wait fade]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[scene 62100]
+
+[charaPut H 1]
+[charaEffect H bit_sepia01]
+[wt 0.1]
+
+[fadein white 0.2]
+[wait fade]
+
+[wt 0.6]
+
+[fadeout white 0.1]
+[wait fade]
+
+[scene 10001]
+
+
+[charaFadein D 0.1 0,-200]
+[wt 0.1]
+
+[fadein white 0.1]
+[wait fade]
+
+[wt 0.2]
+
+[fadeout white 0.3]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaPut H 2000,2000]
+[charaEffectStop H bit_sepia01]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+[wt 0.1]
+
+[scene 61100]
+
+[fadein white 1.0]
+[wait fade]
+
+＠オフェリア
+……………………何を知っているの。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠コヤンスカヤ
+同じ女子同士、数少ないオトモダチだもの。[r]お互い知らないことなんてないわ、そうでしょう？
+[k]
+
+[charaFace G 17]
+
+＠コヤンスカヤ
+いいのよオフェリア。[r]何も、心配なんて要らないわ。
+[k]
+
+＠コヤンスカヤ
+怖いことなんて何もないし、悔いることも何もない。[r]思う存分、アナタは大事な人の命令に従えばいい。
+[k]
+
+＠コヤンスカヤ
+世界は真っ白に消え失せて、[r][#異聞帯:ロストベルト]だっていつかは破綻する。
+[k]
+
+＠コヤンスカヤ
+すべては『異星の神』が降臨するまでの暇つぶし。[r]なら、好きに楽しまなくってはね？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 16]
+[charaFadein F 0.1 1]
+
+＠オフェリア
+…………アナタ[line 3]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠コヤンスカヤ
+だから、ね。なーんにも気にしないで？
+[k]
+
+[charaFace G 17]
+
+＠コヤンスカヤ
+[line 3]いっしょに、永遠の[#水曜日:ウォーデンズ・デイ]を[#愉:たの]しみましょう？
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

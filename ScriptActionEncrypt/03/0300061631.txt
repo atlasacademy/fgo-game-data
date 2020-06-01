@@ -1,0 +1,2115 @@
+
+
+
+＄03-00-06-15-3-1
+
+
+
+[soundStopAll]
+
+[charaSet A 3041001 1 カイニス]
+[charaSet B 1017001 1 武蔵]
+[charaSet C 98006200 1 雑魚エネミー煙状]
+[charaSet D 7010001 1 カリギュラ]
+[charaSet E 8001400 1 アーマード・マシュ]
+[charaSet F 8001410 1 マシュ]
+[charaSet G 98002000 1 フォウ]
+[charaSet H 1098127610 1 ペペロンチーノ]
+[charaSet I 9005001 1 ホームズ]
+[charaSet J 1098191200 1 アデーレ]
+[charaSet K 1098191300 1 マカリオス]
+[charaSet L 1098118000 1 千子村正（シルエット）]
+[charaFilter L silhouette 00000080]
+[charaSet M 1098118000 1 千子村正]
+[charaSet N 1098190200 1 ミネルヴァ]
+[charaSet O 4040002 1 エウロペ（シルエット）]
+[charaFilter O silhouette 00000080]
+[charaSet P 4040002 1 エウロペ]
+[imageSet Q back10000 1]
+[charaScale Q 1.01]
+
+[charaSet S 5009000 1 エフェクト用ダミー]
+[charaSet T 5009000 1 エフェクト用ダミー]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 92400]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.4]
+[cueSe Battle bac169]
+[fowardEffect bit_talk_gram_slash_03]
+[wt 0.3]
+[se ad878]
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.2]
+[se ad73]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[charaMoveScale B 1.1 0.2]
+[charaMove B 0,10 0.2]
+[wt 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaScale B 1.0]
+
+[blurOff motion 0.1]
+
+[se bac209]
+[effect bit_talk_x_slash01]
+[wt 0.1]
+[se bac209]
+[effect bit_talk_x_slash02]
+[wt 0.4]
+[se bac211]
+[effect bit_talk_x_slash03]
+[wt 0.6]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[se ad20]
+[wt 0.4]
+
+[charaSpecialEffect C enemyErasure 1 1.0]
+[se ad42]
+[wait charaSpecialEffect C]
+[wt 1.5]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠カリギュラ
+オオオオオオオオッ！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut S 0,0]
+[charaEffect S bit_talk_14 -100,-50]
+[se bac149]
+[wt 0.2]
+
+[charaPut T 0,0]
+[charaEffect T bit_talk_14 120,70]
+[se bac149]
+[wt 0.2]
+
+[charaPut P 0,0]
+[shake 0.03 3 3 0.4]
+[se bac151]
+[wt 0.6]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[se ad20]
+[wt 0.4]
+
+[charaSpecialEffect C enemyErasure 1 1.0]
+[se ad42]
+[wait charaSpecialEffect C]
+[wt 1.5]
+
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth E 2]
+
+[charaTalk off]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+[se ad666]
+[wt 0.1]
+[charaFace F 7]
+[charaFadein F 0 1]
+[wt 0.3]
+[seStop ad666]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+＠マシュ
+敵性体、全個体沈黙……！
+[k]
+
+[messageOff]
+[se ade18]
+[seVolume ade18 0.0 0.5]
+[wt 0.5]
+[seStop ade18 0.8]
+[wt 1.5]
+
+[charaFadeout E 0.4]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[wt 1.2]
+
+＠マシュ
+周囲に敵性反応はありません。[r]残骸に、再生の権能が働く気配も……ありません！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠カイニス
+当然だ、オレがいるんだぜ？
+[k]
+
+＠カイニス
+ゼウスの野郎がデメテルの権能を肩代わりしようが、[r]オレがいる限り即時再生なんてさせるかよ。
+[k]
+
+＠カイニス
+ま、離れちまえば分からねえけどな。[r]オレの目の前じゃまず再生しねえから安心しとけ。
+[k]
+
+[charaFace A 0]
+＠カイニス
+…………なんて、テメェら相手に言うとはな。
+[k]
+
+[charaFace A 1]
+＠カイニス
+ヤキが回ったもんだぜ！　っと！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.2]
+[charaEffect C bit_talk_attack_splash]
+[se bac91]
+[wt 0.1]
+[charaShake C 0.03 3 3 0.4]
+[wt 0.2]
+[se ad20]
+[wt 0.4]
+
+[charaSpecialEffect C enemyErasure 1 1.0]
+[se ad42]
+[wait charaSpecialEffect C]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠武蔵
+……今のとどめ、必要だった？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 20]
+[charaFadein A 0.1 1]
+＠カイニス
+ンなもん何でもいいだろうが。
+[k]
+
+[charaFace A 21]
+
+＠カイニス
+つか、それを言うならテメェもなあ、[r]仕留めた後に首落とした奴がいなかったか？　あ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠武蔵
+私のそれは残心なので。[r]必要です。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠カイニス
+ザンシンだぁ？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 1]
+[wt 0.7]
+
+＠マシュ
+マスター、戦闘終了です。[r]お疲れさまでした。
+[k]
+
+[messageOff]
+[wt 0.4]
+[charaFace F 7]
+[wt 1.0]
+[charaFace F 0]
+＠マシュ
+ところで、あの……[r]最後に出現した巨大な“手”の敵性体は……
+[k]
+
+
+？1：[&見覚えがあった……:見覚えあったよね？]
+？2：あれって、シミュレーターの……
+
+？！
+
+＠マシュ
+は、はい。[r]酷似していました。
+[k]
+
+＠マシュ
+以前に聞いた話では、カルデアの[r]戦闘シミュレーターの稼働当初から実装されていた、
+[k]
+
+＠マシュ
+模擬敵性体のアーキタイプという事ですが……
+[k]
+
+＠マシュ
+一部特異点での霊脈上でも、[r]わたしたちは同様の敵性体と遭遇しています。
+[k]
+
+＠マシュ
+デザインの源流は、不明、ですね。
+[k]
+
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠フォウ
+フォウフォウ、フォウ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaDepth B 2]
+[charaDepth G 3]
+
+[charaTalk B]
+[charaFace G 0]
+[charaFadein G 0.1 -128,0]
+[charaFace B 6]
+[charaFadein B 0.1 192,0]
+[charaMove B 128,0 0.4]
+＠武蔵
+うんうん、でっかい手だったねえ。
+[k]
+
+[charaTalk G]
+[charaMove G -192,24 0.4]
+[se adm21]
+[charaFadeout G 0.4]
+＠フォウ
+フォッ。
+[k]
+
+[charaTalk B]
+[charaFace B 4]
+
+＠武蔵
+チッ。どさくさに紛れて懐くかと思ったのに……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 1]
+＠ペペロンチーノ
+はいはいお疲れさま。[r]私は何もしてないけど、いいものを見たわ。
+[k]
+
+[charaFace H 0]
+＠ペペロンチーノ
+それじゃあ[line 3][r]行くとしましょうか。
+[k]
+
+＠ペペロンチーノ
+ああ。でも、そうね。ここから先の案内は[r]隠れ家の家主ご本人にお願いをすべきかしら？
+[k]
+
+[bgmStop BGM_EVENT_77 1.0]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠マシュ
+ご本人？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+＠合成音声
+[line 3]私は、それでも構わんがね。
+[k]
+
+＠合成音声
+どうあれ、我が秘密工房はもう目と鼻の先だ。
+[k]
+
+＠合成音声
+門に鍵は掛けていないから、[r]君たちはまっすぐに進むだけでいい。
+[k]
+
+＠合成音声
+我がプロメテウス＝ヘファイストス大工房が、[r]破神同盟とカルデアの諸君を迎えよう。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+[wt 1.0]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaDepth K 5]
+[charaDepth J 3]
+[charaFace J 5]
+[charaFace K 2]
+[charaFadein J 0.1 150,0]
+[charaFadein K 0.1 -150,0]
+[wt 1.0]
+
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠マシュ
+！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠フォウ
+フォ……！？
+[k]
+
+？1：ヘファイストス！？
+？2：アトランティスで破壊されたはずじゃ……！
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+＠合成音声
+一度は破壊されたとも。だがそれは、[r]此処にいる私のバックアップのようなモノだ。
+[k]
+
+＠合成音声
+破壊される前の私は君たちに言わなかったかな？[r]私には、別個体が存在しているのだと。
+[k]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠マシュ
+は、はい。確かに！[r]別個体がオリュンポスに存在すると……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+＠合成音声
+そういう事だ。[r]その、別個体がまさしく私だよ。
+[k]
+
+＠合成音声
+正確には、超越個体と言うべきかもしれないがね。
+[k]
+
+＠合成音声
+にしても[line 3][r]興味深いものだ。
+[k]
+
+＠合成音声
+君たちは汎人類史で、[#私の手と出逢っていた]のだね。
+[k]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠マシュ
+手……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠フォウ
+フォウ、フォウフォウ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠武蔵
+あー、あのでっかい手って貴方の手なの！？[r]さすがはオリュンポス十二神、手も大きい！
+[k]
+
+？1：え！？
+？2：ヘファイストスの手！？
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠合成音声
+ああ、違う違う。分かり難い表現をしてしまったな。[r]あれはプロメテウス＝ヘファイストスである以前の私、
+[k]
+
+＠合成音声
+プロメテウス神、単体であった頃の手。[r]その模造品だとも。
+[k]
+
+＠合成音声
+君たちはどうやら、汎人類史に於ける[#私:プロメテウス]から、[r][#叡智:えいち]と経験を与えられていたようだな。奇妙な縁だ！
+[k]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+[wt 1.0]
+
+[charaFace F 7]
+＠マシュ
+[#叡智:えいち]の神プロメテウスは……[r]人類に、火を与えたと言われています……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+＠ホームズ
+つまり、我々がカルデア式戦闘シミュレーターで[r]遭遇するあの巨大な手型のエネミーは[line 3]
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+＠合成音声
+[#叡智の手:プロメテウスハンド]。
+[k]
+
+＠合成音声
+異聞帯では“かつて存在した私の手の[#残滓:ざんし]”だが……
+[k]
+
+＠合成音声
+汎人類史にあっては恐らく、[r]人理の危機にあって“人類を[#援:たす]ける手”なのだろう。
+[k]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠マシュ
+…………！
+[k]
+
+＠マシュ
+それは……[r]その、なんと言えばいいのか……
+[k]
+
+[charaFace F 1]
+＠マシュ
+……ありがとう、ございます！
+[k]
+
+？1：ありがとう、プロメテウス
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+＠合成音声
+いやいや礼には及ばんよ。[r]なに、此処に在る私は異聞帯の存在なのだからね。
+[k]
+
+＠合成音声
+さあ、進みたまえ。[r]再会というにはいささか異なるが、歓迎しよう。
+[k]
+
+＠合成音声
+[line 3]神々に抗い、挑み続ける者たちよ。
+[k]
+
+[messageOff]
+[wt 0.7]
+[bgmStop BGM_EVENT_70 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[scene 92700]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad666]
+[wt 1.8]
+[seStop ad666]
+[wt 1.0]
+
+[bgm BGM_EVENT_79 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+＠マシュ
+似て、いますね……
+[k]
+
+＠マシュ
+アトランティスで目にした神殿跡と……[r]どこか印象が……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠フォウ
+フォウ、フォウフォウ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠マシュ
+此処もそうなんでしょうか。[r]この場所全体が、あなたの頭脳そのもの……
+[k]
+
+＠マシュ
+……プロメテウス＝ヘファイストスさん。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+＠プロメテウス＝ヘファイストス
+その通り。[r]久しぶり、と言っておこう。カルデアの諸君。
+[k]
+
+＠プロメテウス＝ヘファイストス
+そして破神同盟の諸君、初めましてだ。
+[k]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+＠マカリオス
+……ああ。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 7]
+[charaFadein J 0.1 1]
+＠アデーレ
+お初にお目に掛かります、知識神。[r]いえ、鍛冶神[line 3]
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+＠プロメテウス＝ヘファイストス
+どちらでも構わんよ。[r]現在の我々はどちらでもなく、どちらでもある。
+[k]
+
+？1：そういえば、口調が……
+？2：前よりも流暢に喋ってるような
+
+？！
+
+＠プロメテウス＝ヘファイストス
+発話パターンが異なるのは、この施設が[r]プロメテウス主体の頭脳構築体であるからなので、
+[k]
+
+＠プロメテウス＝ヘファイストス
+気にしないでくれたまえ。[r]そういう意味では、やはり私は一度死んだのだ。
+[k]
+
+＠プロメテウス＝ヘファイストス
+鍛冶神ヘファイストスを主体とした、[r]情報知性体としての私はね。
+[k]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠ホームズ
+汎人類史のギリシャ神話に於いて、[r]人類に知恵を与えたと語られる知識神、プロメテウス。
+[k]
+
+＠ホームズ
+異聞帯に於いては、マキアに敗れた神と同化し、[r]その存在を永らえていたか[line 3]
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+＠プロメテウス＝ヘファイストス
+そうとも。オリュンピアマキアに敗れ、[r]虜囚となった鍛冶神ヘファイストスと同化したのだ。
+[k]
+
+＠プロメテウス＝ヘファイストス
+……ふむ。
+[k]
+
+＠プロメテウス＝ヘファイストス
+アトランティスでは、そこまでの機密情報は[r]開示できていなかったようだが……
+[k]
+
+＠プロメテウス＝ヘファイストス
+破神同盟とは深いレベルでの情報共有をしているな？[r]賢明な判断だ、カルデアの諸君。
+[k]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠ホームズ
+我々は異聞帯においてあまりに無知だ。[r]こと情報については、貪欲ですよ。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+＠プロメテウス＝ヘファイストス
+そのようだ。
+[k]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠武蔵
+ええっと、私はそのあたりって[r]よくわからないのだけど……
+[k]
+
+＠武蔵
+とりあえず、破神同盟の『協力者』とは、[r]貴方の事である[line 3]と捉えていいのかしら？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠プロメテウス＝ヘファイストス
+間違いではないな。
+[k]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠武蔵
+ふむふむ。[r]では、まず一言。ありがとうございます。
+[k]
+
+[charaFace B 12]
+＠武蔵
+七重連英霊砲には助けられました。[r]あれだけで勝てた訳ではないけれど、
+[k]
+
+＠武蔵
+あれなくしては勝てませんでした。[r]それと……
+[k]
+
+＠武蔵
+これから私たちが譲り受ける『大召喚器』も、[r]きっと必要なものなのでしょう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠ホームズ
+失礼。私としては、[r]もうひとつ欲しいものがあるのだが[line 3]
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+＠武蔵
+あら。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+＠ホームズ
+我々がオリュンポスの神々と初めて遭遇した際、[r]ある種の[#不協和音:ふきょうわおん]が鳴り響いていた。
+[k]
+
+＠ホームズ
+神造霊脈、なるオリュンポス独自の霊脈に干渉する、[r]神々に対して有効な切り札のようだったが……
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+＠プロメテウス＝ヘファイストス
+ああ、気付いていたか。
+[k]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠ホームズ
+マカリオスとアデーレは、どうやら[r]ソレを所有していないようだからね。
+[k]
+
+＠ホームズ
+ならば『協力者』たる貴方の所有物であるはずだ。[r]どうだろう、借り受けられるかな？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_79 1.0]
+
+＠プロメテウス＝ヘファイストス
+はっはっはっは。
+[k]
+
+＠プロメテウス＝ヘファイストス
+あんなもん二度も効きゃせんわい。
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[charaFace F 6]
+[charaFadein F 0.1 1]
+[wt 1.2]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaFace B 9]
+[charaFadein B 0.1 1]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaDepth A 4]
+[charaDepth D 5]
+
+[charaFace A 23]
+[charaFace D 4]
+[charaFadein A 0.1 0]
+[charaFadein D 0.1 2]
+[wt 1.6]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaFace I 1]
+[charaFadein I 0.1 1]
+[wt 1.2]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk on]
+＠プロメテウス＝ヘファイストス
+……おっと、コホン。
+[k]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk J]
+[charaFace J 8]
+[charaFadein J 0.1 1]
+＠アデーレ
+あれは、英雄オルフェウスの音楽魔術を発展させた[r]特殊な魔術礼装ですが、その……
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+＠マカリオス
+オレたちの[#攪乱:かくらん]術式と同じで、[r]一度使えば二度はそう使えない代物なんだ。
+[k]
+
+＠マカリオス
+完全に無意味ではないかもしれないが、[r]決定的な手、と言えるのは……初回だけだ。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠マシュ
+……では、つまり……
+[k]
+
+＠マシュ
+貴重なものを、皆さんは……[r]わたしたちのために使ってくださったんですね。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 6]
+[charaFadein J 0.1 1]
+＠アデーレ
+どうあれ必要な事でした。[r]気にしないで、マシュ。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠マシュ
+アデーレさん……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠フォウ
+フォウフォウ！
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[charaDepth J 3]
+[charaDepth G 5]
+
+[se adm21]
+[charaFadeout G 0.3]
+[charaMove G -50,15 0.3]
+[wt 0.4]
+
+[charaFace J 0]
+[charaFadein J 0.1 -120,0]
+[wt 0.4]
+[charaFadein G 0.3 170,15]
+[charaMove G 120,0 0.3]
+[wt 0.4]
+[charaShake J 0.03 2 2 0.1]
+
+
+[charaFace J 3]
+＠アデーレ
+きゃっ。な、なにかしら？
+[k]
+
+[charaFadeout J 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk K]
+[charaFace K 5]
+[charaFadein K 0.1 1]
+＠マカリオス
+こいつ、姉さんに飛びつきたいだけだ！[r]あっちにいけ！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 1]
+＠ペペロンチーノ
+あら、なあにアニマルちゃん？[r]ちょっと見ないうちに面食いになった？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[se adm21]
+[charaMoveReturn G 0,20 0.4]
+＠フォウ
+フォウ！
+[k]
+
+[messageOff]
+[wipeout rollRight 1.5 0.5]
+[wait wipe]
+
+[charaFadeout G 0.1]
+
+[wt 1.2]
+
+[wipein rollLeft 1.5 0.5]
+[wait wipe]
+
+[wt 0.2]
+
+[bgm BGM_EVENT_77 0.1]
+
+？1：とりあえず
+？！
+
+？1：本当に生きていたんだ
+
+＠プロメテウス＝ヘファイストス
+正確には、バックアップと同期した個体だがね。
+[k]
+
+？2：元気みたいでよかった、ヘファイストス
+
+＠プロメテウス＝ヘファイストス
+とりあえずこの個体は正常に稼働しているよ。[r][%1]。
+[k]
+
+＠プロメテウス＝ヘファイストス
+諸君こそ、よくぞアトランティスを抜け、[r]このオリュンポスへ到達した。
+[k]
+
+？！
+
+＠プロメテウス＝ヘファイストス
+アトランティスでは、アルテミス、ポセイドン。[r]オリュンポスでは、デメテル、アフロディーテ。
+[k]
+
+＠プロメテウス＝ヘファイストス
+数多くの機神を打ち砕き、[r]諸君は今やゼウスの喉元にまで喰らい付いている。
+[k]
+
+＠プロメテウス＝ヘファイストス
+……見事、と言う他にない。
+[k]
+
+＠プロメテウス＝ヘファイストス
+その上で、ひとつ尋ねたい。[r]アフロディーテは何か言っていたろうか。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.0]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.7]
+[charaFace F 7]
+[wt 1.0]
+
+[bgm BGM_EVENT_75 0.1]
+
+[charaFace F 12]
+＠マシュ
+それは……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠ホームズ
+美と愛の女神アフロディーテ。[r]汎人類史の神話では、鍛冶神ヘファイストスの妻。
+[k]
+
+＠ホームズ
+異聞帯でも、同様の関係だったのですね。[r]プロメテウス＝ヘファイストス。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+＠プロメテウス＝ヘファイストス
+……昔の話だ。
+[k]
+
+＠プロメテウス＝ヘファイストス
+いや、私は既に[#真体:アリスィア]なき知性のみの存在。[r][#妻殺し]を責めるつもりは毛頭ない。
+[k]
+
+＠プロメテウス＝ヘファイストス
+ただ、あれも一度は寄り添った相手。[r]オリュンピアマキアの後、変質を果たしたが……
+[k]
+
+＠プロメテウス＝ヘファイストス
+……過去には、愛深き女であったのだ。
+[k]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+＠マシュ
+……。[r]……。
+[k]
+
+？1：最後に、あなたの名前を
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+＠プロメテウス＝ヘファイストス
+そうか。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_75 1.0]
+[wt 1.0]
+
+[se ad806]
+[wt 1.2]
+[bgm BGM_EVENT_70 0.1]
+＠プロメテウス＝ヘファイストス
+さて、では『大召喚器』についてだが[line 3]
+[k]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+＠武蔵
+……っとと。き、切り替えの早い御仁！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠カイニス
+そりゃあ、そうだろ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠武蔵
+ん……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 20]
+[charaFadein A 0.1 1]
+＠カイニス
+文字通り、血が通っちゃいねえんだよ連中は。[r]人間みたいに見えるとしたら気のせいだ、気のせい。
+[k]
+
+＠カイニス
+獣の心を知る人がいねえように、[r]人の心を知る神なんざいねえんだよ。
+[k]
+
+[charaFace A 15]
+
+＠カイニス
+いるとしたら、例外中の例外さ！[r]基本、コイツらは権能が智惠を持っただけの[#がらくた]だ。
+[k]
+
+[charaFace A 16]
+＠カイニス
+[#地球:ほし]に根ざす自然の神か、[r]ソラから来た機械の神か。
+[k]
+
+[charaFace A 5]
+＠カイニス
+ンなもんは大した違いじゃねえ！[r]権能っていうデカい“力”を取り巻く“何か”だ！
+[k]
+
+＠カイニス
+それがコイツらだぜ。[r]切り替え？　そりゃあ早いさ！
+[k]
+
+＠カイニス
+海が、人の心の何を知る？[r]嵐が、人の心の何を知る？
+[k]
+
+[charaFace A 20]
+＠カイニス
+…………そういうこった。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠プロメテウス＝ヘファイストス
+カイニス。[r]ポセイドンの加護を得たモノか。
+[k]
+
+＠プロメテウス＝ヘファイストス
+あまりそう嫌うな。[r]うむ。確かに、ポセイドンの在り方は……
+[k]
+
+＠プロメテウス＝ヘファイストス
+……決して、褒められたものではないが……
+[k]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠カイニス
+[f large][messageShake 0.03 3 3 0.4]テメェが語るな！
+[k]
+
+＠カイニス
+クソッ！[r]さっさと召喚器とやらを出しやがれ、クソ神！
+[k]
+
+＠カイニス
+そしたらオレが殺してやるよ！[r]なあ！　おい！　さっさとブツを出しやがれ[line 3]
+[k]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+＠M：男の声
+ずいぶんと[#喧:やかま]しいオニイサンだな。[r]なんだ、腹でも減ってんのか？
+[k]
+
+＠M：男の声
+飯なら奥に[#儂:オレ]の分がある。[r]気が立ってンなら食っていけ。
+[k]
+
+＠M：男の声
+あとな、邪魔だぜ、槍が。[r]長物振り回すンならちっとは気を付けな。
+[k]
+
+[se ad192]
+[seVolume ad192 0 0.8]
+[seStop ad192 0.3]
+[se ad51]
+[seVolume ad51 0 0.2]
+[charaShake A 0.03 2 2 0.15]
+
+[charaFace A 10]
+＠カイニス
+！？
+[k]
+
+[messageOff]
+[se ad671]
+[charaMoveScale A 0.9 0.15]
+[charaMove A 0,-12 0.15]
+[wt 0.15]
+[seStop ad671 0.4]
+[wt 0.4]
+
+[charaFace A 11]
+
+＠カイニス
+テ、メェ……！
+[k]
+
+[charaFace A 2]
+
+＠カイニス
+オレの、槍に……触れたな！　何だ！　テメェは！[r]アサシンクラス……いや、違う！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaScale A 1.0]
+
+[charaDepth Q 1]
+[charaDepth B 2]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_81 0.2 0.5]
+[charaFadeTime Q 0.2 0.5]
+[wt 0.2]
+
+＠武蔵
+（カイニスさんの背後を取る！？）
+[k]
+
+＠武蔵
+（殺気は感じない、でも、この感じ……どこかで！）
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_81 0.2 1.0]
+[charaFadeout Q 0.1]
+[wt 0.1]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+？1：だ、[&誰だ:誰]！？
+？2：カイニスの後ろに誰かいる……！？
+
+？！
+
+[charaTalk F]
+[charaFace F 15]
+[charaFadein F 0.1 1]
+＠マシュ
+は、はい先輩！[r]今の今まで、誰の姿もなかったはずです[line 3]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 21]
+[charaFadein A 0.1 1]
+＠カイニス
+この感じ！[r]ただの英霊じゃねえ……
+[k]
+
+[charaFace A 2]
+
+＠カイニス
+テメェは！　何だ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.7]
+
+[charaTalk off]
+[charaDepth L 2]
+[charaDepth M 1]
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.7 1]
+[wt 0.7]
+[charaFadein M 0 1]
+[wt 0.5]
+＠男
+[#儂:オレ]か？
+[k]
+
+＠男
+ここは鍛冶の神の工房だ。[r]なら、鍛冶屋がいるのが筋ってもンさ。
+[k]
+
+＠男
+テメェらの言うなんだかの絡繰を、[r][#お師さん:ヘファイストス]の指示で鋳造してる真っ最中だ。
+[k]
+
+＠男
+で、おまえさんは何だ。客か？
+[k]
+
+＠男
+客なら、客なりの口の利き方ってモンがある。[r]押し入りにゃ何もやらねえぞ。
+[k]
+
+[messageOff]
+[charaFace M 0]
+[wt 1.0]
+
+[charaFadeout L 0.7]
+[wt 1.4]
+
+[charaTalk on]
+＠M：男
+取りあえず、その長物は仕舞っておきな。
+[k]
+
+[charaFace M 1]
+＠M：男
+悪くない業物だ。[r]ひなびた[#爺:ジジイ]を叩き斬るにゃ勿体ねえ。
+[k]
+
+
+[messageOff]
+[se ad592]
+[seVolume ad592 0 0.5]
+[bgm BGM_EVENT_81 0.3 0.5]
+[fadeout white 0.4]
+[wait fade]
+
+[scene 46400]
+[charaFadein M 0.1 0,-50]
+[pictureFrame cut063_cinema]
+[effect bit_sepia01]
+[wt 0.2]
+
+[fadein white 0.4]
+[wait fade]
+
+[wt 1.2]
+
+[se ad592]
+[seVolume ad592 0 0.5]
+[fadeout white 0.4]
+[wait fade]
+
+[charaFadein M 0.1 0,0]
+[charaFace M 0]
+[scene 92700]
+[effectDestroy bit_sepia01]
+[wt 0.1]
+[pictureFrame]
+[bgm BGM_EVENT_81 0.3 1.0]
+[wt 0.1]
+
+[fadein white 0.4]
+[wait fade]
+
+[wt 0.4]
+
+？1：貴方は[line 3]千子村正……！
+
+？！
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 1]
+＠ペペロンチーノ
+まあ、見事な偉丈夫。[r]言葉と容姿がなんだか[#ちぐはぐ]なようだけど。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠マシュ
+待ってください、ペペさん！[r]わたしたちは彼の姿に見覚えがあります！
+[k]
+
+[messageOff]
+[charaFace F 12]
+[wt 1.0]
+
+[charaFace F 7]
+＠マシュ
+アルターエゴ、千子村正！[r]下総国で先輩を助けてくださった英霊、そして[line 3]
+[k]
+
+[charaFace F 2]
+＠マシュ
+現在は、『異星の神』の使徒！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠カリギュラ
+！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+＠ホームズ
+千子村正、か。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠フォウ
+フォウ……！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 7]
+[charaFadein M 0.1 1]
+
+
+
+
+
+
+
+
+
+
+
+＠千子村正
+まったく。[r]刀鍛冶に生涯をかけた報いってヤツかねぇ。
+[k]
+
+＠千子村正
+そりゃあツムカリ様には信仰厚いが、[r]何の因果かアルターエゴ。
+[k]
+
+[charaFace M 8]
+＠千子村正
+今じゃ『異星の神』なんてモンの小間使い、[r]巡り巡って人理の敵ときた。笑い話にもなりゃしねえ。
+[k]
+
+[charaFace M 0]
+＠千子村正
+まあ、おかげで本物の鍛冶の神に会えはした。[r]会えはしたが[line 3]
+[k]
+
+[bgm BGM_EVENT_81 1.0 0.5]
+[charaFace M 6]
+＠千子村正
+この[#爺:ジジイ]、正体は[#絡繰:きかい]ときた！[r]いやまあ、神さまほど年季の入った[#爺:ジジイ]だがな！
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+＠プロメテウス＝ヘファイストス
+じじいにじじい呼ばわりされるほど陰鬱な気分はないな。[r]鍛冶の技術と口の悪さは比例しているのかね？
+[k]
+
+[charaTalk M]
+[charaFace M 1]
+[charaFadein M 0.1 1]
+＠千子村正
+おっと。気に障ったンなら謝るよ。[r]後でそのつるっ[#禿:ぱげ]た頭、磨いてやろうか？
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+＠プロメテウス＝ヘファイストス
+[f large][#機神:わ た し]に禿という概念はない。
+[k]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+＠マシュ
+あの……ええと……マスター、[r]この方は、なんというか……
+[k]
+
+？1：『異星の神』の使徒だけど……
+？2：ぜんぜんそんな気がしない……
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 1.0 1.0]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠武蔵
+……『異星の神』の使徒。アルターエゴ、ね。
+[k]
+
+＠武蔵
+私の知ってる村正殿はセイバークラスでの現界に[r]不満があるって言ってたわ。
+[k]
+
+＠武蔵
+今はアルターエゴ？[r]忙しいのね、おじいちゃま。
+[k]
+
+＠武蔵
+で[line 3]実際のとこ、どうなのかしら。[r]こんなところで私たちが会うのは、奇遇？
+[k]
+
+＠武蔵
+それとも[#そうでもないのかしら]。[r]『異星の神』に逆らうカルデアを待ち構えてたって訳？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 7]
+[charaFadein M 0.1 1]
+＠千子村正
+…………。[r]さて、どうしたモンかねぇ。
+[k]
+
+＠千子村正
+[#お師さん:ヘファイストス]の頼みは聞いてやりてぇ。[r]『異星の神』の使徒としての立場もワヤにはできねぇ。
+[k]
+
+[charaFace M 0]
+＠千子村正
+ここらが決め時、別れ時かね？[r]どう思う、つるぴか[#爺:ジジイ]？
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+＠プロメテウス＝ヘファイストス
+ううむ[line 3]（つるぴか？）
+[k]
+
+＠プロメテウス＝ヘファイストス
+我が生涯最後の弟子たる英霊村正と、[r]汎人類史の私から希望を受け取ったカルデアの子ら。
+[k]
+
+＠プロメテウス＝ヘファイストス
+この知識神にも見通せぬ縁がある、か。[r]私としては実に面白いのだが……
+[k]
+
+＠プロメテウス＝ヘファイストス
+カルデア一行にとっては[#一触即発:いっしょくそくはつ]の状況であるらしい。[r]まあ、[#蕃神:ばんしん]が相手では無理もなかろうが。
+[k]
+
+[charaTalk M]
+[charaFace M 7]
+[charaFadein M 0.1 1]
+＠千子村正
+だよなァ。[#儂:オレ]も見つけ次第、真っ二つにして[r]供えモンにしろってゼウス神に言われてんだよなァ……
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠武蔵
+………………。
+[k]
+
+[bgm BGM_EVENT_81 0.2 0.5]
+[charaFadeTime Q 0.2 0.5]
+[wt 0.2]
+
+＠武蔵
+（アルターエゴ、千子村正……）
+[k]
+
+＠武蔵
+（カルデアと顔を合わせるつもりはなかった言いぶり[r]　だけど、相手は敵方。『異星の神』の使徒）
+[k]
+
+＠武蔵
+（……私の知る千子村正とは別の[#霊基:むらまさ]翁、と[r]　考えるべきだけど……）
+[k]
+
+[bgm BGM_EVENT_81 0.2 1.0]
+[charaFadeout Q 0.1]
+[wt 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 1]
+＠千子村正
+おう、そこの物騒な女剣士。
+[k]
+
+＠千子村正
+この顔に馴染みでもあるのか？[r]まさか、この肉体の持ち主の知己かよ。
+[k]
+
+[charaFace M 7]
+＠千子村正
+ってェ、そうじゃねえよな。[r]過去の現界ってやつで出逢ったクチなんだろうが。
+[k]
+
+＠千子村正
+あいにく[#儂:オレ]には[#与:あずか]り知らねえ話だ。[r]だが……
+[k]
+
+[charaFace M 1]
+＠千子村正
+[#よく知らんが]、[#ありがとうよ]。
+[k]
+
+＠千子村正
+この状況で刀に指をかけていないところを見ると、[r][#儂:オレ]とはずいぶんと親しかったらしい。
+[k]
+
+[charaFace M 6]
+＠千子村正
+はは、いやァ。[r]テメェみたいな仁王サマが、敵を前にしてなァ。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+＠武蔵
+えっ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠マシュ
+……？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+＠カイニス
+はぁ？　な、なんだよ。コイツ敵じゃねえのか？[r]なんつったよ今。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠マシュ
+は、はい。[r]確かに、ありがとう、と……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠フォウ
+フォウ！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 1]
+[wt 1.0]
+
+？1：貴方は、敵ではないんですね？
+
+？！
+
+
+＠千子村正
+おう。今はな。ただし味方でもない。[r]そこらへんはきちんと線引きをしておくこった。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠カイニス
+……なんだよなんだよ、おい。コレはよ。
+[k]
+
+[bgm BGM_EVENT_116 0.1]
+
+[charaFace A 15]
+
+＠カイニス
+戦いも殺しもナシか？[r]あーやだやだ、喧嘩売っといてなんだテメェはよ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 1]
+＠千子村正
+ケンカなんざ売ってねえぞ？[r]その業物、大事にしろって忠告だ。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠カイニス
+…………はぁ。
+[k]
+
+
+
+
+
+
+
+[charaFace A 0]
+
+＠カイニス
+そもそもなんだテメェはよ。若いくせに爺で？[r][%1]とサムライ女の知己ってか？
+[k]
+
+
+
+
+
+
+
+
+[charaFace A 15]
+＠カイニス
+あー知らねえしつまんねえ。[r]つまんねえからオレは寝てるぞ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠カリギュラ
+余も知らぬ。[r]まったく覚えがない。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 9]
+[charaFadein H 0.1 1]
+
+＠ペペロンチーノ
+そうね、知らない英霊だわ。[r]他のアルターエゴと随分雰囲気違うわぁ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth J 3]
+[charaDepth K 5]
+[charaFace J 0]
+[charaFace K 0]
+[charaFadein J 0.1 150,0]
+[charaFadein K 0.1 -150,0]
+[charaMoveReturn J 150,-8 0.4]
+[charaMoveReturn K -150,-8 0.4]
+＠オリュンポスの双子
+（同時に頷く）
+[k]
+
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠フォウ
+フォウフォウ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠カイニス
+テメェらと一緒でも全然嬉しかねえんだよ！[r]チッ。霊体化して寝るぞオレは！
+[k]
+
+[messageOff]
+
+[wt 0.1]
+[charaSpecialEffect A erasure 1 1.0]
+[se ad595]
+[wait charaSpecialEffect A]
+[wt 1.0]
+
+[bgm BGM_EVENT_116 1.0 0.2]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[bgm BGM_EVENT_116 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+＠ホームズ
+ふむ。アルターエゴ、千子村正。[r]アトランティスでその名前は確認されていたが……
+[k]
+
+＠ホームズ
+まさか中立状態とはね。[r]これもまた興味深い事実だ。
+[k]
+
+＠ホームズ
+対話が可能であるなら、確認したい事柄もある。
+[k]
+
+[charaFace I 6]
+＠ホームズ
+たとえば、だ。[r]ミスター・村正。
+[k]
+
+＠ホームズ
+カルデアが此処に来たという情報を、キミは[r]他のアルターエゴと共有しない、と考えて良いのかな？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 8]
+[charaFadein M 0.1 1]
+＠千子村正
+言ったろうが。[r]今この刹那、[#儂:オレ]はしがない刀鍛冶だ。
+[k]
+
+＠千子村正
+請け負ったモノができるまでは、[r]他の仕事の事なんざ考えてたまるかい。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠ホームズ
+なるほど。[r]これは有り難い。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠武蔵
+[line 6]ちょっと待った。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_116 1.0]
+[charaFace B 5]
+[wt 0.7]
+
+[charaFace B 2]
+＠武蔵
+そこ！[r]そこの陰にいる御方、どなたかしら！
+[k]
+
+＠武蔵
+気配を殺しもせずに佇んでるようだけど、[r]そろそろ姿を見せては如何か！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad536]
+[seVolume ad536 0 0.1]
+[seVolume ad536 1.5 1.0]
+[wt 1.5]
+
+[charaTalk N]
+[charaFace N 1]
+[charaFadein N 0.4 1]
+＠ミネルヴァ
+ホーッ、ホーッ、ホーッ！
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠マシュ
+あれは、機械のフクロウ！[r]カドックさんが連れていたのと同じ型……！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ad536]
+[seVolume ad536 1.4 0.1]
+[wt 1.4]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+
+＠ホームズ
+[#件:くだん]のオルフェウス魔術を発生させる、[r]発振装置でもあるだろう。
+[k]
+
+＠ホームズ
+だが、今日の主人はカドック君ではないようだ。[r]ぺぺロンチーノでもない。
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth O 1]
+[charaDepth P 2]
+
+[se ade422]
+[wt 1.5]
+[seStop ade422 1.0]
+
+[charaFace O 0]
+[charaFadein O 0.7 1]
+[wt 2.0]
+[charaFace P 0]
+[charaFadein P 0.7 1]
+[wt 1.0]
+
+[charaFadeout O 0.7]
+[wt 1.0]
+
+[bgm BGM_EVENT_79 0.1]
+＠エウロペ
+ええ、そう。
+[k]
+
+＠エウロペ
+その[#聖梟:せいきょう]を預かっているのは、わたくしです。
+[k]
+
+＠エウロペ
+こうしてお会いするのは二度目になるでしょうか。[r]カルデアの……そして同盟の皆さん。
+[k]
+
+[messageOff]
+[charaFace P 10]
+[wt 1.0]
+
+[charaFace P 0]
+＠エウロペ
+わたくしは、エウロペ。
+[k]
+
+＠エウロペ
+星間都市山脈オリュンポスを統べるゼウス神の[r]巫女にして神妃。そして……
+[k]
+
+＠エウロペ
+[line 5]破神同盟の『協力者』である者です。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_79 2.0]
+[wait fade]
+[soundStopAll]
+[end]

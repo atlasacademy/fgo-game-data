@@ -1,0 +1,729 @@
+
+＄03-00-05-29-3-0
+
+
+[soundStopAll]
+
+[charaSet A 1098124500 1 ダ・ヴィンチ]
+[charaSet B 1038000 1 イアソン]
+[charaSet C 9005001 1 ホームズ]
+[charaSet D 1098158300 1 ネモ]
+[charaSet E 8001410 1 マシュ]
+[charaSet F 1098123200 1 ゴルドルフ]
+[charaSet G 98002000 1 フォウ]
+
+[charaSet J 98115000 1 エフェクト用ダミー]
+
+[scene 84801]
+
+[se ad60]
+[seVolume ad60 0 0.1]
+[wt 0.1]
+[seVolume ad60 1.0 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 2.0]
+
+[scene 85601 2.0]
+[wt 2.0]
+[seStop ad60 1.0]
+[wt 1.5]
+
+[se ad746]
+[wt 1.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[seStop ad746 1.0]
+[wt 1.0]
+
+[scene 86200]
+
+[se ad8]
+[fadein black 1.5]
+[wait fade]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠ダ・ヴィンチ
+おかえり、三人とも！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠イアソン
+オレは客人だけどな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ダ・ヴィンチ
+まあまあ、細かいことは気にしない。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+……。[r]……ふむ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 0]
+
+[charaFace C 6]
+[charaFadein C 0.1 2]
+
+＠イアソン
+ホームズ、その目でオレを見るな。[r]あっちいけ、シッシッ。
+[k]
+
+[charaFace C 8]
+
+＠ホームズ
+おっと、これは失礼。[r]職業柄、というやつだ。
+[k]
+
+[charaFace C 7]
+
+＠ホームズ
+キミが帰還してくれて非常に心強い。
+[k]
+
+[charaFace B 21]
+
+＠イアソン
+心にもないことを言うな、探偵。[r]まあいい。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠イアソン
+そら、『[#虚ろの穴:ビッグホール]』に出発だ！
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_77 1.5 0.5]
+[fadeout black 1.5]
+[se ad746]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[seStop ad746 1.5]
+[fadein black 1.5]
+[wait fade]
+
+
+[bgm BGM_EVENT_77 1.0 1.0]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠ネモ
+……？
+[k]
+
+＠ネモ
+[%1]、[r]潜望鏡でちょっと空想樹を確認してくれる？
+[k]
+
+？1：了解
+？！
+
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.5]
+[wipeout rectangleStripUpToDown 0.7 1]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[se ad540]
+[scene 84903]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.7 1]
+[wait wipe]
+[wt 4.0]
+
+[wipeout rectangleStripDownToUp 0.7 1]
+[wait wipe]
+[scene 86200]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.7 1]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠マシュ
+マスター、何かありましたか？
+[k]
+
+？1：空想樹が……何か変だ
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ネモ
+潜望鏡の映像を映すよ。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad15]
+[wt 0.5]
+[se ad1]
+[wt 1.0]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠ゴルドルフ
+む？[r]別にどこも違いはないのでは？
+[k]
+
+＠ゴルドルフ
+強いて言うなら、他の空想樹より[r]少々……[wt 1.2][charaFace F 7]んむ？
+[k]
+
+[charaFace F 8]
+
+＠ゴルドルフ
+な、何だコレは！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+透けていますね。[r]……やはり[#蜃気楼か]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠ゴルドルフ
+やはり？
+[k]
+
+[charaFace F 10]
+
+＠ゴルドルフ
+……ああ、あの戦闘の最中考えていたのは[r]コレのことか！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+その通り。[r]あの空想樹は伐採できない、ただの幻だ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠マシュ
+ど、どういうことですか！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 1.5]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+星間都市山脈オリュンポスは、[r]上空にあるのではない[line 3]その逆だ。
+[k]
+
+＠ホームズ
+[#地底深くに存在する]！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace A 5]
+[charaFadein A 0.1 2]
+
+[charaFace D 5]
+[charaFadein D 0.1 0]
+
+[wt 1.2]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaFace F 5]
+[charaFadein F 0.1 2]
+
+[charaFace B 5]
+[charaFadein B 0.1 0]
+
+[wt 1.2]
+
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+[wt 1.0]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+
+[bgm BGM_EVENT_72 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+
+＠ゴルドルフ
+それはアレか？[r]地球空洞説というやつかね！？
+[k]
+
+＠ゴルドルフ
+馬鹿な……そんなもの、[r]とっくの昔に否定されているぞ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+以前調べたのですが、時計塔地下には[r]巨大な霊墓が存在するのでは？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+
+＠ゴルドルフ
+霊墓アルビオン！？
+[k]
+
+＠ゴルドルフ
+いや、しかし。
+[k]
+
+＠ゴルドルフ
+時計塔地下と大西洋のど真ん中では[r]訳が違うだろう！？
+[k]
+
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+……これが開花した空想樹の力、[r]ということでしょう。
+[k]
+
+＠ホームズ
+本来存在しないはずの空間は、[r]空想樹によって現実に紐付けられている。
+[k]
+
+[charaFace C 5]
+
+＠ホームズ
+[#こちらの異聞帯ではこの穴の向こうこそが現実です]。
+[k]
+
+＠ホームズ
+なるほど、キリシュタリアの領域が[r]最大と言われるだけのことはある。
+[k]
+
+＠ホームズ
+シャドウ・ボーダーも魔術的に拡張することで[r]広さを保っていましたし……。
+[k]
+
+＠ホームズ
+『陣地作成』が得意なキャスターであれば、[r]自身の領地を拡張することも可能でしょう。
+[k]
+
+＠ホームズ
+しかし、これは地球という巨大な容器を[r]加工するようなものだ。
+[k]
+
+＠ホームズ
+まさに桁違いです。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+
+＠ゴルドルフ
+で、では今見える空想樹を伐採するのは[line 3]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+意味がありません。[r]となれば、答えは一つ。
+[k]
+
+＠ホームズ
+上昇するのではなく、下降する。[r]あの『[#虚ろの穴:ビッグホール]』へ向かい、ひたすらね。
+[k]
+
+[charaFace C 5]
+
+＠ホームズ
+恐らく、オリュンポス最後の門番たるポセイドンは[r]そこにいるだろう！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_72 2.0]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ネモ
+……ともかくあの穴に向けて潜航だね。[r]いいさ、わかりやすい！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+
+＠ゴルドルフ
+おいおい、穴に向かうのはいいが[r]落ちてくれるなよ？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ネモ
+わかってるって。[r]接近しつつ、ぐるりと回って様子を[line 3]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad815]
+[shake 0.05 2 3 1.5]
+[wt 1.2]
+
+[se ad9]
+[flashin loop 0.7 0.7 FF333380 FF333300]
+[wt 2.8]
+
+[flashOff]
+[seStop ad9 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ネモ
+くっ……引っ張られる！？[r]急速浮上！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+
+＠ゴルドルフ
+ほら言わんこっちゃないーーー！！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ad797]
+[shake 0.05 2 3 1.5]
+[wt 0.8]
+[se ad776]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ネモ
+も、物凄い強烈な重力で『[#虚ろの穴:ビッグホール]』へと[r]引っ張られている！[seStop ad776 3.0]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+いや、抵抗はかえってストーム・ボーダーに負担をかける。[r]ここは身を任せた方がいい！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ネモ
+でも穴に[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠ホームズ
+私の推測が確かであれば、[r]墜落死はない。
+[k]
+
+＠ホームズ
+これは[#海神]の招待状と[r]考えるべきだろう！
+[k]
+
+[charaFace C 6]
+
+＠ホームズ
+……ということなのですが、[r]如何だろうか、司令官！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+
+＠ゴルドルフ
+いかがも何も、もうその前提で[r]動いてますよねぇー！？
+[k]
+
+[se ad776]
+[shake 0.05 3 3 0.8]
+[charaFace F 13]
+
+＠ゴルドルフ
+イヤー！　おちるー！[r]（※絹を裂くがごとき悲鳴）[seStop ad776 3.0]
+[k]
+
+？1：イヤー！！
+
+[charaFace F 8]
+
+＠ゴルドルフ
+え、なんかちょっと余裕ない！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+？2：つまりジェットコースター……！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠マシュ
+はいマスター、はい！
+[k]
+
+＠マシュ
+わたし、ジェットコースターを体験したことは、[r]ないのですが[line 3]
+[k]
+
+[charaFace E 2]
+
+＠マシュ
+多分、それよりずっと酷いと思います！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[charaMoveReturn G 0,30 0.4]
+＠フォウ
+フォーーウ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ネモ
+さあ、皆朗報。
+[k]
+
+＠ネモ
+『[#虚ろの穴:ビッグホール]』に到達、[r]つまりここから先は落ちるだけだ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaDepth A 4]
+[charaDepth E 5]
+[charaDepth F 6]
+
+[charaTalk off]
+
+[charaFace E 2]
+[charaFadein E 0.1 350,0]
+
+[charaFace F 9]
+[charaFadein F 0.1 80,0]
+
+[charaFace A 2]
+[charaFadein A 0.1 -150,0]
+
+[charaFace C 2]
+[charaFadein C 0.1 -350,0]
+
+＠全員
+[f large]ヤーー！！
+[k]
+
+[messageOff]
+[se ad745]
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[charaTalk on]
+
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[scene 10000]
+
+[wipein rectangleStripDownToUp 0.1 1.0]
+[wait wipe]
+[seStop ad745 2.0]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_80 2.0]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,229 @@
+
+
+＄94-03-88-05-1-0
+
+[soundStopAll]
+
+[charaSet A 98001000 1 家老マシュ]
+[charaSet B 4014000 1 源義経]
+[charaSet C 11007000 1 ノッブ]
+[charaSet D 7035001 1 森長可]
+[charaSet E 3038000 1 長尾景虎]
+[charaSet F 1001000 1 エフェクト用]
+
+[scene 79900]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠源義経
+さて、兄上も居ないのでとりあえず私が[r]いい国作ろう鎌倉幕府を再建したわけですが、
+[k]
+
+＠源義経
+意外と簡単でしたね、天才ですので。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠家老マシュ
+それなのですが、最近の教科書では、[r][#いいはこ:１　１　８　５]作ろう鎌倉幕府らしいですよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠源義経
+な[messageShake 0.03 4 4 0.3]んと！？
+[k]
+
+[charaFace B 3]
+
+＠源義経
+いつのまにか７年も成立が早まっているとは流石は兄上。[r]おごる源氏も久しぶりといった所でしょうか。
+[k]
+
+？1：ところでオルタじゃないみたいですけど
+
+？2：オルタの方はどちらに？
+
+？！
+
+[charaFace B 4]
+
+＠源義経
+おっと、これは失礼。ちょっと待ってくださいね。
+[k]
+
+[messageOff]
+
+[se ad77]
+[charaMove B 0,-50 0.5]
+[charaFadeout B 0.5]
+[wt 0.5]
+
+＠源義経
+ペタペタペタ……、と、これでいいですかね？
+[k]
+
+[messageOff]
+[charaSet B 98107400 1 源義経オルタ風]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[se ad500]
+[seVolume ad500 0 0.3]
+[wt 0.5]
+[se ad500]
+[seVolume ad500 0 0.3]
+[wt 1.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 0,-50]
+[charaMove B 0,0 0.5]
+[charaPut F 1200,1200]
+[charaEffect F bit_talk_41]
+[wt 0.6]
+[charaPut F 0,0]
+[se ade211]
+[wt 1.4]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_41]
+
+[charaFace B 2]
+
+＠源義経オルタ風
+それではいざ、源氏と平氏の存亡をかけて、[bgm BGM_EVENT_3 0.1]
+[k]
+
+＠源義経オルタ風
+オール源氏総進撃、[r]ファイナル源平合戦２０１９と参りましょう！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+
+＠ノッブ
+ところでわし平氏だけど、他にも平氏おる？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠長尾景虎
+私も平氏ですけど、貴方の経歴怪しくないです？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠森長可
+あ、オレん家、清和源氏だったわ。
+[k]
+
+＠森長可
+悪いな、大殿、オレあっちにつくわ。
+[k]
+
+[charaFace D 1]
+
+＠森長可
+あ、殿様を裏切るわけじゃねぇからよ、安心してくれや。
+[k]
+
+[messageOff]
+[se ad60]
+[seStop ad60 1.5]
+[charaMove D -50,0 0.5]
+[charaFadeout D 0.4]
+[wt 1.2]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠ノッブ
+まさかここでわしの平氏属性が裏目に出るとは……。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 1.0]
+
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠森長可
+よっしゃ！　大殿が相手じゃ、オレも気合入れていくか！[r]オルタだかはよくしらねぇが、本気の備えでいくぜ！
+[k]
+
+[messageOff]
+[se ad474]
+[charaEffect D bit_talk_charge_red]
+[wt 1.5]
+
+[charaChange D 7035002 2 fade 1.0]
+[wait charaChange D]
+[charaEffectStop D bit_talk_charge_red]
+[charaEffect D bit_talk_attack_buf]
+[se ade43]
+[se ad270]
+[seStop ad474 0.5]
+[wt 1.8]
+
+＠森長可
+うはははははは！　これが森家の最終決戦仕様よ！[r]覚悟しろよ、大殿！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠源義経オルタ風
+おや、これはなかなかに平安期を偲ばせる[r]荒々しい鬼武者ざっくり感！　では行きますよ！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

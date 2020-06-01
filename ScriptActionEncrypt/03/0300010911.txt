@@ -1,0 +1,151 @@
+
+
+＄03-00-01-09-1-1
+[soundStopAll]
+
+[charaSet A 98006000 1 クリチャーチ]
+[charaSet B 5036001 1 アヴィケブロン]
+[charaSet C 99502600 1 マシュ]
+[charaSet D 1098123210 1 ゴルドルフ]
+[charaSet H 5009000 1 エフェクト用ダミー]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[scene 54100]
+
+
+[fadein black 1.0]
+
+
+[branch INPUT_SELECT_BRANCH_2 INPUT_SELECT_BRANCH 1]
+
+[label INPUT_SELECT_BRANCH_1]
+
+[bgm BGM_EVENT_80 0.1]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[wt 1.2]
+[charaSpecialEffect A enemyErasure 1]
+[se ad26]
+[wait charaSpecialEffect A]
+[wt 1.5]
+
+[bgmStop BGM_EVENT_80 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_77 0.1]
+
+[wt 0.7]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アヴィケブロン
+クリチャーチの口を塞いで回ったお陰で、[r]ジャヴォル・トローンがこちらに気付いた様子もない。
+[k]
+
+＠アヴィケブロン
+気付かれる前に離れよう。[r]今回は僕好みの展開だったな。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_2]
+
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠マシュ
+やりました！　ジャヴォル・トローン、[r]敵性反応の消失を確認しました！
+[k]
+
+＠マシュ
+敵性情報も細かに分析できたかと。[r]どうやら体内にアルコールを生成する種のようです。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+ほう。それはまさか[line 3][r]ロシア名物、ウォッカかね！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+え？　いえ、蒸留酒ではなく、[r]どちらかというと発酵酒のような……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ゴルドルフ
+発酵酒！　腑抜けたアルコールか！[r]ええい、要らぬわ、放っておけ！
+[k]
+
+[charaFace D 6]
+
+＠ゴルドルフ
+さっさと[#叛逆:はんぎゃく]軍のアジトに向かえ[r][%1]！
+[k]
+
+[charaFace D 10]
+
+＠ゴルドルフ
+連中も兵士であればウォッカの一つも隠し持っている筈！[r]そのおこぼれを上手いこと手に入れてきてほしい！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠アヴィケブロン
+ヤガにそういった豊かさが残っていればいいのだがね。[r]急ごうか、[%1]。
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_3]
+
+[wt 1.0]
+[soundStopAll]
+[end]

@@ -1,0 +1,165 @@
+
+
+＄02-00-04-05-5-0
+
+[soundStopAll]
+
+
+[charaSet A 98018000 1 船員“眼帯”]
+[charaSet B 98018100 1 船員Ｂ]
+[charaSet C 98018100 1 船員Ｃ]
+[charaSet D 1098120700 1 中年男性（村人）]
+
+[charaSet E 2003001 1 ロビンフッド]
+
+[charaSet F 98115000 1 エフェクト用]
+
+[charaSet G 5033001 1 キルケー]
+
+[charaSet H 98006200 1 ゴースト]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 49502]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠D：村人
+ひ、ひいーっ！　助けてくれぇー！[r]まだ、こっちにも怪物がいる！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.1]
+[se ad21]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_3 0.1]
+[charaDepth F 10]
+
+[se ade64]
+[wt 0.2]
+[se ade64]
+[charaPut F 1]
+[wt 0.2]
+[charaEffect F bit_shot_01]
+[se bac15]
+[wt 0.3]
+[se bac16]
+[charaShake H 0.05 3 3 0.7]
+[wt 1.0]
+[se ad22]
+[charaSpecialEffect H enemyErasure 1 1.0]
+[wt 2.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein A 0.4 1]
+[wt 0.1]
+[charaFadein B 0.4 2]
+[wt 0.1]
+[charaFadein C 0.4 0]
+[wt 0.4]
+[bgm BGM_EVENT_4 0.1]
+＠船員“眼帯”
+おう、[%1]！[r]困ってるな！？
+[k]
+
+？1：波止場の船乗りさんたち？
+？！
+
+＠船員“眼帯”
+昼の芝居はひどいもんだったが、[r]おチビちゃんの可愛さに免じて加勢に来たぜ！
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaSet D 1098120900 1 老人]
+[charaSet F 3031001 1 哪吒]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠キルケー
+おチビちゃんと言うな！[r]豚に変えるぞ！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[bgmStop BGM_EVENT_4 0.4]
+[wt 0.7]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.2]
+[se ad21]
+[effect bit_talk_41]
+[wt 0.7]
+[effectStop bit_talk_41]
+[wt 0.2]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.3 -100,0]
+[charaMove D 1 0.3]
+[wt 0.3]
+[charaShake D 0.05 3 3 0.5]
+
+＠D：村人
+もう村は駄目じゃ、おしまいじゃぁ！
+[k]
+
+[messageOff]
+[charaFadeout D 0.3]
+[charaMove D 100,0 0.3]
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ロビンフッド
+爺さん、あぶねーって！[r]ああ、こいつはめんどうくせえ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠哪吒
+依然　劣勢！[r]敵　特殊　対応困難！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

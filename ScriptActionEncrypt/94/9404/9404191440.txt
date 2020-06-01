@@ -1,0 +1,394 @@
+
+
+＄94-04-19-14-4-0
+
+[soundStopAll]
+
+
+[charaSet A 1033000 1 シグルド門下生]
+[charaSet B 6018002 1 Ｘ]
+[charaSet C 1098161000 1 スペース丁稚]
+[charaSet D 11009001 1 Ｓイシュタル]
+[charaSet E 2037000 1 ジェーン]
+[charaSet F 11009000 1 アシュタレト]
+[charaSet G 1098185100 1 アシュタレト_怒り？]
+[charaSet J 5009000 1 エフェクト用]
+
+[scene 82801]
+
+[wipeFilter cinema 0.5 0]
+
+[se ade371]
+[flashin loop 0.9 0.9 FF000080 FF000000]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 2.2]
+[flashOff]
+
+[se ad55]
+[seVolume ad55 0 0.0]
+[seVolume ad55 0.5 1.0]
+[wt 0.5]
+[seStop ade371 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+[seStop ad55 0.1]
+
+＠シグルド門下生
+監房よりアーチャークラス、アサシンクラス、[bgm BGM_EVENT_3 0.1][r]ほかエクストラクラスが脱走。
+[k]
+
+＠シグルド門下生
+各員、至急これを捕らえるべし。[r]繰り返し、各員[line 3][wt 0.1][cueSe Battle bac221][fowardEffect bit_talk_Slash_white_01_L 0,-50][fowardEffect bit_talk_14 0,-50][charaShake A 0.05 3 3 0.7]グワァ！？
+[k]
+
+[messageOff]
+[charaMove A 0,-100 0.4]
+[charaShake A 0.05 4 4 0.4]
+[charaFadeout A 0.4]
+[wt 0.2]
+[se ad144]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-50]
+
+＠Ｘ
+対応が素早い！[r]さすがに本拠地ともなると、ひと味違いますね！
+[k]
+
+＠Ｘ
+それで、要塞中枢部へのルートは[r]こちらでいいんですね、雀さん！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠スペース丁稚
+合ってるチュン。[r]玉座へはそっちの直通エレベーターを上がるチュン！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 28]
+[charaFadein D 0.1 0,-50]
+
+＠Ｓイシュタル
+サンキュー！[r]私たちは玉座ね、そっちは任せたＸ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+
+＠Ｘ
+ええ、反応炉を発見次第[#破壊:デストロイ]して、[r]カタパルトに戻ります！
+[k]
+
+＠Ｘ
+ジェーンはカタパルトに向かってマアンナ号を確保、[r]スタンバイさせておいてください！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,-50]
+
+＠ジェーン
+オッケー！[r]戦力分散は痛いけど、陽動にもなるものね！
+[k]
+
+＠ジェーン
+ギリギリまで待つけど、もうダメって判断したら[r]マアンナ号飛ばすからね！
+[k]
+
+＠ジェーン
+二人とも、寄り道しないで帰ってくるように！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 0,-50]
+
+＠Ｓイシュタル
+任せて！[r][%1]を連れてすぐ戻るわ！
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[bgmStop BGM_EVENT_3 1.2]
+[wait fade]
+[wipeOff]
+[charaFadeout D 0.1]
+[scene 82701]
+[wt 2.0]
+[fadein black 1.2]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠アシュタレト
+……というのがスペース神陰流の目的。[bgm BGM_EVENT_90 0.1][r]私を『原始の女神』に戻す……
+[k]
+
+＠アシュタレト
+いえ、依り代にして目覚めさせる、というのが[r]正しいのでしょうね。
+[k]
+
+？1：アシュタレトは銀河を支配したい[&のか:の]？
+？2：あまり楽しそうには見えないけど
+
+？！
+
+[charaFace F 4]
+
+＠アシュタレト
+……これは私に課せられた運命。[r]そう望まれたから叶える。それだけの話です。
+[k]
+
+＠アシュタレト
+ムネノリの話では、トキオミ教授が持ち帰った[r]『女神の霊核』は、自ら善と悪に分かれたそうです。
+[k]
+
+＠アシュタレト
+なぜ『原始の女神』が自らを二つに分けたのか。[r]その理由は私には分かりませんが……
+[k]
+
+[charaFace F 0]
+
+＠アシュタレト
+『原始の女神』の目的が人類への復讐であるなら、[r]彼女はこう思ったのではないでしょうか。
+[k]
+
+＠アシュタレト
+『善』なんて甘さがあったから自分は人類に敗れた。[r]彼女にしてみれば虫けらのような人類に。
+[k]
+
+＠アシュタレト
+なら次は失敗しない。自らの『善』が欠点になるのなら、[r]それを切り落としてしまえばいい、と。
+[k]
+
+[charaFace F 5]
+
+＠アシュタレト
+そうして生まれたのが私であるのなら、[r]その考えに従うまで。
+[k]
+
+＠アシュタレト
+たとえ私自身がどう感じようが、[r]悪の女神として完成し、人類への報復を行う。
+[k]
+
+＠アシュタレト
+その過程でムネノリの望みが叶うのなら、[r][#一石二鳥:いっせきにちょう]というもの。
+[k]
+
+＠アシュタレト
+私を目覚めさせなかったトキオミ教授ではなく、[r]私を育てたムネノリの為に、私は[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_90 0.3]
+[se ade371]
+[seVolume ade371 0 0.5]
+[charaFace F 5]
+[wt 1.4]
+[seStop ade371]
+
+[charaFace F 2]
+
+＠アシュタレト
+何事です！[r]いま大事な話をしている最中だと、
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シグルド門下生
+緊急事態です、総統！[r]捕らえた囚人が脱走し、破壊活動を開始！
+[k]
+
+[charaTalk depthOff]
+[charaDepth J 1]
+[charaDepth A 2]
+
+＠シグルド門下生
+現在、エンジン中枢付近とカタパルトで[r]交戦が始まったとの[line 3][wt 0.1][cueSe Battle bac509][charaEffect J bit_talk_14][charaShake A 0.05 3 3 0.7]トウワ！？
+[k]
+
+[messageOff]
+[charaMove A 0,-50 0.4]
+[charaShake A 0.05 4 4 0.4]
+[charaFadeout A 0.4]
+[wt 0.2]
+[se ad144]
+[wt 0.4]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠Ｓイシュタル
+待たせたわねアシュタレト、[bgm BGM_EVENT_62 0.1][r][%1]！
+[k]
+
+＠Ｓイシュタル
+『女神の復活』なんて時代遅れもいいところ！[r]私の顔でそんなコトされても迷惑だし、
+[k]
+
+＠Ｓイシュタル
+ここでまるっと、スペース神陰流ごと[r]ぶっ潰させてもらいにきたわ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_62 0.7]
+
+[charaTalk G]
+[charaFace G 22]
+[charaFadein G 0.1 1]
+
+＠G：アシュタレト
+……私の顔、ですって？
+[k]
+
+＠G：アシュタレト
+『女神の半身』は自分ひとりだけ、と言いたいの？[bgm BGM_EVENT_72 0.1][r]アナタこそ、私の不出来な半身です。
+[k]
+
+＠G：アシュタレト
+父を殺され、10年も仇を捜せず、[r]今までその日暮らしで生きてきた半端者。
+[k]
+
+＠G：アシュタレト
+そんな出来損ないが私と同じだなんて、[r]吐き気を通り越して涙さえ出てくるわ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 28]
+[charaFadein D 0.1 1]
+
+＠Ｓイシュタル
+[line 3]よし殺す。[r]宇宙の平和とか関係なしにここで死ね！
+[k]
+
+？1：Ｓイシュタル、ストップ！
+？2：待った、その前に二人でよく話して
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace F 21]
+[charaFadein F 0.1 0]
+[charaFace D 2]
+[charaFadein D 0.1 2]
+
+＠Ｓイシュタル＆アシュタレト
+[f large][messageShake 0.05 8 5 0.4]アナタは黙っていて！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠Ｓイシュタル
+話し合いなんてコイツを倒したあと！[r]そうでなくっちゃ気が収まらないわ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠アシュタレト
+どこまで[#粗忽:そこつ]なのかしら。[r]クイーンズでの戦いを忘れているようね。
+[k]
+
+＠アシュタレト
+私に手も足も出なかったアナタが私を倒す？[r]笑わせないで。私の腹筋をゴリラにしたいのかしら。
+[k]
+
+[bgmStop BGM_EVENT_72 1.0]
+
+[charaFace F 2]
+
+＠アシュタレト
+命乞いをするのはアナタの方よ、イシュタル。
+[k]
+
+＠アシュタレト
+もっとも、手足を斬り落とされた後で、[bgm BGM_EVENT_24 0.1][r]まだ泣き叫ぶ元気があればの話でしょうけど……！
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaPut J 1]
+[charaEffect J bit_talk_v_slash01]
+[cueSe Battle bac508]
+[wt 0.2]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[wt 0.1]
+[charaFadeout F 0]
+[charaEffectDestroy I]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0 1]
+
+[se ad467]
+[fowardEffect bit_talk_14 -50,0]
+[charaShake D 0.05 5 2 0.5]
+[wt 0.4]
+
+[charaFace D 28]
+
+＠Ｓイシュタル
+上等……ッ！[r]少しは言い返せるじゃない、お嬢様！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

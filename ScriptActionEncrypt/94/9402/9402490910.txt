@@ -1,0 +1,988 @@
+
+＄94-02-49-09-1-0
+
+
+
+[soundStopAll]
+
+
+[charaSet A 10007001 1 沖田オルタ]
+[charaSet B 6033002 1 以蔵]
+[charaSet C 98111600 1 織田信勝（ノッブIN）]
+[charaSet D 1098133000 1 士官]
+[charaSet E 1098132000 1 英霊兵１]
+[charaSet F 1098132000 1 英霊兵２]
+[charaSet G 1098132000 1 英霊兵３]
+[charaSet H 98002000 1 エフェクト用ダミー]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 60000]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[se ad9]
+[wt 2.6]
+
+＠警報
+侵入警報発令、侵入警報発令。
+[k]
+
+＠警報
+敵サーヴァント侵入、英霊兵展開、至急迎撃せよ。[r]敵サーヴァント侵入、英霊兵展開、至急迎撃せよ。
+[k]
+
+[messageOff]
+[seStop ad9 0.4]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+
+[scene 60100]
+[wt 0.1]
+
+[wipein leftToRight 0.4 1]
+[wait wipe]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠以蔵
+邪魔じゃああああ！！！
+[k]
+
+
+[messageOff]
+[charaTalk off]
+[fadeout black 0.2]
+[wait fade]
+[charaFadeout B 0.1]
+
+[charaFace E 0]
+[charaFadein E 0.1 -256,5]
+[charaFace F 0]
+[charaFadein F 0.1 256,5]
+[charaFace G 0]
+[charaFadein G 0.1 0,-5]
+[wt 0.1]
+[fadein black 0.2]
+[wait fade]
+[wt 0.1]
+
+[se bac14]
+[effect bit_bolg_02]
+
+[shake 0.04 4 4 0.7]
+[wt 0.6]
+[se ad42]
+[charaSpecialEffect E enemyErasure 1 1.0]
+[charaSpecialEffect F enemyErasure 1 1.0]
+[charaSpecialEffect G enemyErasure 1 1.0]
+
+[wt 1.5]
+
+
+[charaSet E 1098138000 1 龍馬]
+[charaSet F 1098139000 1 お竜さん]
+
+[charaDepth E 9]
+[charaDepth F 1]
+[charaDepth H 10]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠士官
+銃は効かん！　英霊兵を回せ！　数で圧し潰すのだ！
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+＠織田信勝（ノッブIN）
+いやいや、予想外に敵の数が多すぎるじゃろ！？[r]桶狭間かここは！
+[k]
+
+＠織田信勝（ノッブIN）
+そういや、そもそもなんじゃ英霊兵って！？
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk depthOff]
+[charaTalk E]
+[charaFace E 6]
+[charaFace F 0]
+[charaFadein E 0.1 1]
+[charaFadein F 0.1 1]
+＠龍馬
+回収した英霊の霊基から作り出された[r]人工的な魔術兵士だね。
+[k]
+
+＠龍馬
+西洋で言うゴーレムに近いかな。
+[k]
+
+＠龍馬
+無論サーヴァントには及びもしないけど、[r]数で押されると少し厳しいね。
+[k]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+＠織田信勝（ノッブIN）
+ええい、わしの身体が使えればこんな奴ら[r][#一網打尽:いちもうだじん]なんじゃが！　じゃが！
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+……このままだと進めないな。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠龍馬
+仕方ない、ここは僕らに任せて[r]先に行ってくれ。
+[k]
+
+？1：坂本さん、でも……
+？2：たしかにこのままじゃ
+
+？！
+
+[charaFace E 0]
+＠龍馬
+大丈夫さ、傷も回復したし、[r]お竜さんと以蔵さんもいるしね。
+[k]
+
+[charaFace E 7]
+＠龍馬
+というわけで以蔵さん、[r]悪いけど付き合ってもらえるかな？
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠以蔵
+勝手に話を進めるんじゃないぞ！？
+[k]
+
+＠以蔵
+わしはキャスターを斬りに来たがじゃ！[r]足止めなら龍馬、おまんが一人でやれや！
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠お竜さん
+イゾーは雑魚専門だしついてってもやられるだけだ。[r]おとなしくお竜さんの露払いしとけ。
+[k]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠以蔵
+なんじゃあ？[r]このヘビ女から先にぶった斬っちゃろうか？
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠龍馬
+あははは……、まあ、頼むよ以蔵さん。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠以蔵
+……？
+[k]
+
+＠以蔵
+龍馬……、おまん。
+[k]
+
+[charaFace B 2]
+＠以蔵
+チッ、わしの邪魔にならんように隅っこにおれよ！
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+＠織田信勝（ノッブIN）
+行くぞ、[%1]！
+[k]
+
+＠織田信勝（ノッブIN）
+ライダーにはあのトンデモ宝具がある、[r]普通の人間であるそなたがおっては逆にやり辛かろう！
+[k]
+
+？1：……わかった！
+？2：……気を付けて！
+
+？！
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+すまない、ライダー。[r]……ここは任せる。
+[k]
+
+[messageOff]
+[se bac343]
+[seStop bac343 1.0]
+[charaFadeout A 0.4]
+[wt 1.4]
+
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+＠織田信勝（ノッブIN）
+……すまんなライダー、外れくじを引かせてしもうて。
+[k]
+
+[messageOff]
+[se bac343]
+[seStop bac343 1.0]
+[charaFadeout C 0.4]
+[wt 1.4]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFace F 0]
+[charaFadein E 0.1 1]
+[charaFadein F 0.1 1]
+＠龍馬
+……さすがにお見通しだね。[r]いや、[&彼:彼女]も分かってたかな。
+[k]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠以蔵
+おい、お竜……、[r]おまん、もう大して動けんがやろ？
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace E 7]
+[charaFace F 3]
+[charaFadein E 0.1 1]
+[charaFadein F 0.1 1]
+＠お竜さん
+なんてこった、くそ雑魚アサシンにまで[r]見抜かれるとはお竜さん一生の不覚だぞ。
+[k]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFace F 4]
+＠龍馬
+まあね、結構無理したからなぁ……、[r]僕もそろそろ年貢の納め時か。
+[k]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠以蔵
+龍馬ァッ！！[messageShake 0.03 4 4 0.8][r]なに寝ぼけたこと抜かしゆう！！
+[k]
+
+[messageShakeStop]
+
+＠以蔵
+わしらを置いてまで土佐を飛び出した[r]あん頃のおまんはどうした！
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 10]
+[charaFace F 5]
+[charaFadein E 0.1 1]
+[charaFadein F 0.1 1]
+＠龍馬
+……え？
+[k]
+
+[charaFace E 7]
+[charaFace F 5]
+＠龍馬
+ハハ……、こいつは参ったねどうも。
+[k]
+
+[charaTalk F]
+[charaFace F 6]
+＠お竜さん
+なーんかむかつくな。
+[k]
+
+＠お竜さん
+まあ、今日は許してやるか、[r]お竜さんは瀬戸内レベルに寛大だからな。
+[k]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠士官
+先行した奴らを追え！[r]こいつらはあとでも構わ……、
+[k]
+
+[bgmStop BGM_EVENT_3 0.4]
+[messageOff]
+[effect bit_talk_Slash_white_01]
+[se bac95]
+[wt 0.2]
+[effect bit_talk_35]
+[charaShake D 0.03 3 3 0.4]
+[wt 1.5]
+
+＠士官
+うっ……！？
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 0.1 1.0]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠以蔵
+おい、わしを無視するんじゃないがぞ。[r]わしはわしを無視する奴はみんな殺してきたがじゃ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.2]
+
+[charaMove D 0,-50 0.5]
+[charaFadeout D 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠以蔵
+おおおおおおおおおおおお！！！！
+[k]
+
+＠以蔵
+[line 3]わしが土佐の人斬り以蔵じゃ！[r]おまんらここで皆殺しぜよ！
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace E 0]
+[charaFace F 4]
+[charaFadein E 0.1 1]
+[charaFadein F 0.1 1]
+＠お竜さん
+なんだよ、イゾー。頼りになるじゃないか。
+[k]
+
+[charaTalk E]
+＠龍馬
+ああ、以蔵さんはなんたって、
+[k]
+
+[charaFace E 1]
+[charaFace F 6]
+＠龍馬
+[line 3]天才剣士だからね！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaSet B 1098142000 1 南光坊天海]
+[charaSet D 1098149000 1 織田信長_コート（シルエット）]
+
+
+[scene 60200]
+[wt 1.0]
+
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_90 0.1 1]
+
+[se ad566]
+[wt 1.0]
+
+
+？1：これは……！
+？2：もしかして、これが聖杯？
+
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+＠南光坊天海
+ん？　なんだ貴様らは、[r]ライダーではないようだが……。
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+おまえがキャスターか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠南光坊天海
+……妙だな、三騎士は倒れ、[r]ライダー、アサシンももはや虫の息。
+[k]
+
+＠南光坊天海
+貴様、何者だ……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+…………。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠南光坊天海
+なに、どちらにせよもう遅い。
+[k]
+
+＠南光坊天海
+見るがいい、[r]この私が長きをかけて集積した英霊の魂。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.7 1]
+[wt 2.0]
+
+[charaFadeout D 0.7]
+[wt 1.0]
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠南光坊天海
+我が手に落ちた信長公の霊基、そして聖杯！
+[k]
+
+＠南光坊天海
+ようやく蘇るのだ……！[r]真の第六天魔王・織田上総介信長公がな！
+[k]
+
+？1：どういうことなんだ？
+？2：信長を殺したのはあなたじゃないのか？
+
+？！
+
+[charaFace B 8]
+＠南光坊天海
+[line 3]無論、私だよ。[r]だって仕方ないじゃないかね。
+[k]
+
+＠南光坊天海
+あ奴のせいで、信長公は信長公で[r]なくなってしまったのだから……。
+[k]
+
+？1：何を言って……
+？2：……あ奴？
+
+？！
+
+[charaFace B 8]
+＠南光坊天海
+そうだ！　忌々しいあ奴！！
+[k]
+
+＠南光坊天海
+あ奴が現れてから、[r]信長公は信長公でなくなってしまった！
+[k]
+
+[charaFace B 7]
+＠南光坊天海
+信長公は私の光！　私の救い！[r]私の全てだったのに！
+[k]
+
+＠南光坊天海
+信長公には何もかも捧げてきた！[r]私の全てをだ！
+[k]
+
+＠南光坊天海
+母でさえ公に捧げるも惜しくはなかった！[r]なのに、なぜ私でなくあ奴に笑いかけるのですか！
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+…………。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠南光坊天海
+信長公は私だけのものだったのに……、[r]私が、私だけが信長公の理解者だった！
+[k]
+
+＠南光坊天海
+私だけが信長公の理解者でなければならない！
+[k]
+
+＠南光坊天海
+私以外の者に、[r]楽しげに天下を語るなど許されるはずがない！
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaSet B 1098142000 1 明智光秀]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+……こいつは。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠明智光秀
+[line 3]だから殺した。
+[k]
+
+？1：……なんてことを
+？2：……狂ってる
+
+？！
+
+[charaFace B 1]
+＠明智光秀
+仕方がなかったのですよ、信長公。[r]すべては信長公の為だったのです！
+[k]
+
+＠明智光秀
+あのような奴にこの日の本が治められるはずがない！
+[k]
+
+[charaFace B 7]
+＠明智光秀
+事実、あ奴は何もかも失い、[r]惨めな最期を迎えたではありませんか！
+[k]
+
+＠明智光秀
+ですがご安心ください！[r]日の本を治めるにたるは信長公以外にはありません！
+[k]
+
+[charaFace B 3]
+＠明智光秀
+そう！　私の信長公！　私だけの信長公が！[r]さあ、聖杯よ！　数多の英霊の魂よ！
+[k]
+
+＠明智光秀
+私の、私だけの信長公をここに生み落とさん[line 3]！
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_90 1.0]
+[seVolume ad566 1.0 0]
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+＠C：織田信長
+はぁ……、つまらん。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠明智光秀
+……は？
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[bgm BGM_EVENT_1 0.1 1.0]
+[seVolume ad566 0.1 1]
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+＠C：織田信長
+つまらんのぅ、キンカン……。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠明智光秀
+なんだ、貴様は……。
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+＠C：織田信長
+いや、計画自体はええじゃろ、スケールもでかいし。[r]割とわしも好きなタイプの絵面じゃ。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠明智光秀
+……なにを、……いや貴様は。
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+＠C：織田信長
+じゃが、何故、そこで[#わし]なんじゃ？
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠明智光秀
+……まさか、信長公？
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+＠C：織田信長
+そこまでやるなら、自分でやらんか、自分で。[r]そういうとこじゃぞ、おまえのダメなとこ。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠明智光秀
+……な、なにを言っているのだ、貴様。
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+＠C：織田信長
+……わしにはわかるぞキンカン、[r]おまえ怖かったんじゃろ？　わし無き世が。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠明智光秀
+……なんだと？
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+＠C：織田信長
+わしを殺してはみたものの、[r]怖くなったんじゃおまえは、その先の世が。
+[k]
+
+＠C：織田信長
+[line 3]そこがおまえとあやつとの差よ。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠明智光秀
+……差、だと？
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+＠C：織田信長
+あやつは、わしが死んだとき、わし無き世ではなく、[r]己ある世を見た、己が照らす天下をな。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠明智光秀
+黙れ……。
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+＠C：織田信長
+おまえはあやつに負けたのではない、
+[k]
+
+＠C：織田信長
+おまえは己を恐れる、己に負けたんじゃ。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠明智光秀
+黙れ……！
+[k]
+
+＠明智光秀
+貴様に信長公の何が分かる！
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+＠C：織田信勝
+あのー、僕も一言いいですか姉上？
+[k]
+
+[charaFace C 1]
+＠C：織田信勝
+正直、僕の前でそういうこと言われるの[r]ホント腹立つんですけど！
+[k]
+
+＠C：織田信勝
+こいつが誰か知りませんが、
+[k]
+
+[charaFace C 2]
+＠C：織田信勝
+姉上を一番理解してるのは、[r]僕に決まってるじゃないですか！
+[k]
+
+？1：えぇ……
+？2：ですよねー
+
+？！
+
+[charaFace C 13]
+＠C：織田信長
+話の腰を折るでない、馬鹿者！
+[k]
+
+[charaFace C 14]
+＠C：織田信長
+とにかく貴様にわしの身体は使わせられんな。[r]返してもらうぞ光秀。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_1 1.0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠明智光秀
+……もういい、[r]貴様が何者かなどどうでもいい。
+[k]
+
+＠明智光秀
+……現に、ここに私の信長公は誕生するのだから！
+[k]
+
+[bgm BGM_EVENT_24 0.1 1.0]
+＠明智光秀
+英霊兵！　この乱心者どもを片付けろ！！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[se ad270]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.4]
+＠G：英霊兵
+………！
+[k]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+＠C：織田信長
+うーむ、ついうっかり喋りすぎてしまった。
+[k]
+
+＠C：織田信長
+様子を[#窺:うかが]うつもりが、流石にキンカンの物言いは[r]頭に来たから是非もないよね。
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+……喋ってる間に斬りかかればよかった。[r]あのセイバーならそうした気がする。
+[k]
+
+？1：とにかく英霊兵を片付けよう！
+？2：あー、そうかも
+
+？！
+
+[charaFace A 2]
+＠沖田オルタ
+……とにかくいくぞ、マスター！
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[seStop ad566 0.4]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

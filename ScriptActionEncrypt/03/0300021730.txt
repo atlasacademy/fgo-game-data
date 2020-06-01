@@ -1,0 +1,600 @@
+
+
+＄03-00-02-17-3-0
+
+
+[soundStopAll]
+
+[charaSet A 8001410 1 マシュ]
+[charaSet B 3012001 1 ブリュンヒルデ]
+[charaSet C 1033002 1 シグルド]
+[charaSet D 3033000 1 オルトリンデ]
+[charaSet E 2031000 1 ナポレオン]
+[charaSet F 1098123810 1 オフェリア]
+[charaSet G 1098123200 1 ゴルドルフ]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[scene 62000]
+
+[charaPut H 1]
+[charaEffect H bit_talk_06 0,-60]
+[charaEffect H bit_talk_sparks]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad429]
+[seVolume ad429 0 0.3]
+
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.4 1]
+[wt 0.5]
+
+＠ブリュンヒルデ
+……貴方。そろそろ、時が来ました。[bgm BGM_EVENT_78 0.1]
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.4 1]
+[wt 0.5]
+
+＠シグルド
+ああ。既に魔力も尽き果てた。[r]ここまでか[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠マシュ
+お二人とも……[r]炎が……
+[k]
+
+？1：（言葉がない）
+？2：（最後まで、見つめる）
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth C 10]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFace B 0]
+[charaFadein C 0.1 0]
+[charaFadein B 0.1 2]
+
+＠シグルド
+攻撃のさなか、スルトの中枢に深く触れもした。[r]こうして燃え尽きるのは当然の事。
+[k]
+
+[charaFace C 1]
+
+＠シグルド
+貴殿らの気に病む事ではない。[r]付き合わせたな、我が愛。ブリュンヒルデ。
+[k]
+
+[charaFace B 1]
+
+＠ブリュンヒルデ
+いいえ。[r]私は私の役割を果たしただけですよ、シグルド。
+[k]
+
+＠ブリュンヒルデ
+私は嬉しく思います。[r]こんな風に、貴方と共に槍を振るえるだなんて、
+[k]
+
+＠ブリュンヒルデ
+一度たりとも想像しませんでした。[r]だから、私は満足です。
+[k]
+
+[charaFace B 7]
+
+＠ブリュンヒルデ
+まるで夢のよう。[r]私、願ってもない夢が叶ってしまいました。
+[k]
+
+＠シグルド
+おまえの槍であれば、[r]当方はいつでも受け止める準備はある。
+[k]
+
+＠シグルド
+次に何処かで[#見:まみ]える時には、[r]迷わず当方を殺すがいい。
+[k]
+
+[charaFace C 8]
+
+＠シグルド
+それがおまえの愛の証明であれば[line 3][r]当方は生存し、尚且つ愛を証明してみせよう。
+[k]
+
+[messageOff]
+[charaTalk B]
+[charaFace B 6]
+[wt 1.0]
+[charaFace B 7]
+
+＠ブリュンヒルデ
+……はい。
+[k]
+
+[messageOff]
+[wt 0.8]
+[charaFace C 0]
+[charaFace B 0]
+[wt 0.4]
+
+＠ブリュンヒルデ
+[%1]。[r]マシュさん。
+[k]
+
+[charaFace B 1]
+
+＠ブリュンヒルデ
+此処でお別れのようです。[r]良き旅を下さって、ありがとうございました。
+[k]
+
+＠ブリュンヒルデ
+何処かでまた会えた時には……
+[k]
+
+＠ブリュンヒルデ
+きっと再び、[&貴方:貴女]の力に……[r]なるものと……
+[k]
+[messageOff]
+
+
+[se ad528]
+[charaSpecialEffect B flashErasure 1 2.0]
+[wait charaSpecialEffect B]
+
+[wt 1.0]
+
+
+＠シグルド
+次に[#見:まみ]える時には[line 3][r]そう。初めから、貴殿の力となれる事を願っている。
+[k]
+
+？1：ありがとう
+？2：きっとまた会お[&う:うね]、二人とも
+
+？！
+
+[messageOff]
+[charaFace C 8]
+[wt 1.0]
+[se ad528]
+[charaSpecialEffect C flashErasure 1 2.0]
+[wait charaSpecialEffect C]
+
+[seStop ad429 1.0]
+
+[charaEffectStop H bit_talk_sparks]
+[charaEffectStop H bit_talk_06]
+
+[wt 1.5]
+
+
+[fadeout black 1.0]
+[wait fade]
+
+
+[scene 61602]
+[wt 1.0]
+
+[wipeFilter cinema 0.5 0]
+
+[fadein black 1.0]
+[se ad518]
+[seVolume ad518 0 0.3]
+[wait fade]
+
+[wt 1.5]
+[seStop ad518 1.0]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 0,-50]
+
+＠オルトリンデ
+お姉様[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_78 2.0]
+[wait fade]
+
+[wipeOff]
+
+[charaFadeout D 0.1]
+[wt 1.5]
+
+[scene 51600]
+
+[charaSet A 98001000 1 マシュ]
+
+[fadein black 1.0]
+[se ad8]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+マシュ・キリエライト帰還しました！
+[k]
+
+＠マシュ
+あの、ええと……[r]オフェリアさんは……どこに……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠ゴルドルフ
+医務室だ。[r]今、技術顧問と[#異聞帯:ロストベルト]の女王が治療を施して[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ありがとうございます！
+[k]
+
+[messageOff]
+[se ad59]
+[charaMove A -100,0 0.4]
+[charaShake A 0.1 0 3 0.4]
+[charaFadeout A 0.4]
+[wt 0.6]
+[seStop ad59]
+[se ad8]
+[wt 1.0]
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+
+
+
+[wt 1.0]
+[scene 10000]
+
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+
+＠スカサハ＝スカディ
+[line 3][#大令呪:シリウスライト]。
+[k]
+
+＠スカサハ＝スカディ
+クリプターに与えられた最大の力なるもの。切り札。[r]その解放に際しての代償は……
+[k]
+
+＠スカサハ＝スカディ
+術者の生命だ。
+[k]
+
+＠スカサハ＝スカディ
+そしてそれは、[r]如何なる手段を以てしても代替できぬ。
+[k]
+
+＠スカサハ＝スカディ
+治癒の霊薬を浴びるほど服用させようと、[r]回復機能に長じた礼装を使用しても、無駄である。
+[k]
+
+＠スカサハ＝スカディ
+原初のルーンであろうとも叶わぬ。[r]ブリュンヒルデが見せた例外的な最大励起を用いれば、
+[k]
+
+＠スカサハ＝スカディ
+或いは、僅かな延命も叶うか。[r]けれどそれも、せいぜいが数分程度に過ぎぬよ。
+[k]
+
+＠スカサハ＝スカディ
+つまり[line 3]
+[k]
+[messageOff]
+[fadeout black 0.1]
+[wait fade]
+
+[wt 1.2]
+[scene 62700]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_75 0.1]
+
+＠オフェリア
+マシュ……[r]マシュ？
+[k]
+
+＠マシュ
+オフェリアさん、ここにいます。[r]わたし[line 3]
+[k]
+
+＠マシュ
+わたしたち、スルトを破壊できました。[r]あなたが……あなたの……
+[k]
+
+＠マシュ
+お陰で……
+[k]
+
+＠オフェリア
+マシュ、すごいのね。[r]本当にあれを倒してしまうんだから。
+[k]
+
+＠オフェリア
+私、カドックをもう責められない。[r]アナタたちを止める事なんて、きっと……
+[k]
+
+＠オフェリア
+最初から……
+[k]
+
+＠マシュ
+……。[r]……。
+[k]
+
+＠オフェリア
+アナタの歩みを、私……[r]できれば、応援してあげたいのだけど……
+[k]
+
+＠オフェリア
+でも、駄目。[r]ごめんなさい。マシュ。
+[k]
+
+＠オフェリア
+キリシュタリア様は裏切れない。[r]裏切りたくは、ないの。
+[k]
+
+＠マシュ
+いえ[line 3]
+[k]
+
+＠オフェリア
+ねえ、マシュ。知っていた？[r]私……
+[k]
+
+＠オフェリア
+[#彼:シグルド]を想う[#彼女:ブリュンヒルデ]ほどでは、[r]ないかも、しれないけれど……
+[k]
+
+＠オフェリア
+私、ね。キリシュタリア様の事……
+[k]
+
+＠マシュ
+……はい。
+[k]
+
+＠マシュ
+正確なメカニズムをわたしは知りませんが、[r]あなたが彼を見つめる、それは……
+[k]
+
+＠マシュ
+多くの書籍や情報の中で目にした、[r]いわゆる、恋であるように[line 3]感じられました。
+[k]
+
+[messageOff]
+[scene 62701 0.5]
+[wt 2.0]
+[scene 62702 0.5]
+[wt 1.0]
+
+＠オフェリア
+……そう？
+[k]
+
+＠オフェリア
+おかしいな、そういうつもりじゃ……[r]私の、想いは……
+[k]
+
+＠オフェリア
+私、根からの魔術師だもの……[r]恋なんて……
+[k]
+
+＠マシュ
+なら魔術師も恋をするんです。[r]そして、それはきっと、間違いではありません。
+[k]
+
+＠マシュ
+そう、思います。
+[k]
+
+＠オフェリア
+そう……
+[k]
+
+＠オフェリア
+ええ。そう、なのかもね。[r]私よりもよほど、マシュには……視えていて……
+[k]
+
+＠オフェリア
+……やっぱり。とても綺麗に成長したわ、アナタ。[r]……それが、とても嬉しい。嬉しいの、マシュ。
+[k]
+
+＠オフェリア
+あの、雪と氷に閉ざされたカルデアで、[r]ずっと窓を見ていた、もうひとりの[#わたし]。
+[k]
+
+＠オフェリア
+……毎日を怯えて暮らしていた私なんかと一緒に[r]しては、迷惑でしょうけど[line 3]
+[k]
+
+＠オフェリア
+ずっと、アナタと……
+[k]
+
+＠オフェリア
+（[line 6]友達に、なりたかった）
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠オフェリア
+……アナタは、進んで。
+[k]
+
+＠オフェリア
+踏み出して。マシュ・キリエライト。
+[k]
+
+＠マシュ
+はい。はい、オフェリアさん。[r]わたしたちは、進みます。きっと止まりません。
+[k]
+
+＠マシュ
+きっと人理を守って、[r]生き残って、そして……世界を……
+[k]
+
+＠マシュ
+世界を[line 3]
+[k]
+
+＠オフェリア
+ええ。
+[k]
+
+＠オフェリア
+アナタたちなら、やれるかもしれない。[r]私としては……
+[k]
+
+＠オフェリア
+少し、複雑、だけど……
+[k]
+
+[messageOff]
+[scene 62703 0.5]
+[wt 1.0]
+
+＠オフェリア
+ああ、そうだ[line 3]
+[k]
+
+＠オフェリア
+[#あの英霊:ナ ポ レ オ ン]……に……[r]もしも、また、出逢えたら……
+[k]
+
+＠オフェリア
+彼、私を、覚えてないでしょうけど……
+[k]
+
+＠オフェリア
+…………ありがとう、って。
+[k]
+
+＠オフェリア
+結婚は、お断りする、けど……
+[k]
+
+＠オフェリア
+アナタの虹、綺麗、だった、って、
+[k]
+
+＠オフェリア
+伝え[line 4]
+[k]
+[messageOff]
+[wt 2.0]
+[fadeout black 2.5]
+[bgmStop BGM_EVENT_75 3.0]
+[wait fade]
+
+[wt 2.0]
+
+[scene 60900]
+
+[wipeFilter cinema 0.5 0]
+
+[effect bit_sepia01]
+
+
+[fadein black 1.0]
+[bgm BGM_EVENT_78 1.0]
+[wait fade]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 0,-50]
+
+＠ナポレオン
+ふうむ、こいつは困ったな！
+[k]
+
+＠ナポレオン
+アンタはオレの求婚が信じられんのか。[r]一目惚れだと言ったんだが、それでも納得しないのか？
+[k]
+
+[charaFace E 3]
+
+＠ナポレオン
+なら、そうだな。[r]こういうのはどうだ、クリプター。
+[k]
+
+＠ナポレオン
+オレがこの[#霊基:いのち]を終えるまでに、[r]アンタにとびきりの贈り物をしてやろうじゃないか。
+[k]
+
+[charaFace E 5]
+
+＠ナポレオン
+はは！　愉しみにしてろ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 0,-50]
+
+＠オフェリア
+いいえ。遠慮します。
+[k]
+
+[charaFace F 2]
+
+＠オフェリア
+[line 3]大体、アナタは妻帯者の英霊なのでしょう！
+[k]
+
+[messageOff]
+[wt 2.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_78 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

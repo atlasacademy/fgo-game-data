@@ -1,0 +1,325 @@
+
+＄94-02-75-16-1-1
+
+[soundStopAll]
+
+[charaSet A 98100400 1 マシュ]
+[charaSet B 7031000 1 ジャンヌ・オルタ]
+[charaSet C 1098156400 1 メイヴ]
+[charaSet D 25003000 1 ？？？]
+[charaSet E 6034000 1 牛若丸]
+[charaSet F 1001000 1 エフェクト用ダミー]
+[charaSet G 1001000 1 エフェクト用ダミー]
+
+[charaScale F 0.6]
+
+[scene 63700]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+[se ade39]
+[wt 2.0]
+
+＠D：ＸＸ
+午前業務時間　超過。[r]処刑ヲ　中断スル。
+[k]
+
+[messageOff]
+[messageOff]
+[se ad270]
+[charaShake D 0.02 2 2 1]
+[wt 0.7]
+[se ade157]
+[charaPut G 0,-200]
+[charaEffect G bit_talk_40]
+[wt 0.4]
+
+[charaPut F 0,0]
+[charaEffect F bit_talk_43l]
+[charaMove D 0,150 2.0]
+[charaFadeout D 2.0]
+[wt 1.0]
+
+[charaEffectDestroy G bit_talk_40]
+[charaEffectDestroy F bit_talk_43l]
+
+[seStop ade157 0.4]
+[wipeout rectangleStripUpToDown 0.3 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[charaPut F 1200,1200]
+[charaPut G 1200,1200]
+[scene 28300]
+[wt 0.1]
+
+[wipein rectangleStripDownToUp 0.2 1.0]
+[wait wipe]
+
+[effect bit_talk_arrow01br]
+[wt 0.2]
+[se ade90]
+[wt 1.3]
+[seStop ade90 1.5]
+[wt 0.2]
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 63700]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1 1.0]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠マシュ
+……フォーリナー、またもロストです……[r]あのスピードで空を飛ばれると追跡できません……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠メイヴ
+あー、もう逃がした！[r]なんなの、アレ。マシュ、事情を話しなさい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠マシュ
+あ、はい。[r]実はですね……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+＠メイヴ
+ふーん。フォーリナーねぇ……
+[k]
+
+[bgm BGM_EVENT_28 0.1]
+
+[charaFace C 0]
+＠メイヴ
+ま、私には関係のない話のようだし、[r]どうでもいいでしょう！
+[k]
+
+＠メイヴ
+体を動かしてスッキリしたし、[r]ホテルのプールサイドでのんびりしよっと！
+[k]
+
+[charaFace C 8]
+＠メイヴ
+じゃあね、[%1]。
+[k]
+
+＠メイヴ
+私の美しさの虜になるなら、[r]サークルの一員にしてあげても良くてよ☆
+[k]
+
+[messageOff]
+[se ad173]
+[seStop ad173 1.0]
+[charaFadeout C 0.4]
+[wt 1.4]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠牛若丸
+誰が蜂蜜女のサークルになぞ入るものか。[r]そうですよね、主殿！
+[k]
+
+？1：自分のカメラがないからね……
+？2：黒髭氏と相談してからね……
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaSet F 98002000 1 フォウ]
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠マシュ
+メイヴさんはオルタさんの条件に[r]ピッタリだったのですが……
+[k]
+
+[charaFace A 0]
+＠マシュ
+仕方ありません、一度ホテルに戻りましょう。[wt 0.6][charaFace A 5][r]い、いざという時はわたしが！
+[k]
+
+[charaFace A 3]
+＠マシュ
+オルタさんの求める像とは[r]程遠いかもしれませんが……。
+[k]
+
+[charaFace A 16]
+＠マシュ
+がんばって、高慢ちきで世界で一番美しいと[r]自信満々に考えてみせます！
+[k]
+
+？1：マシュは世界で一番可愛いよ！
+
+[charaFace A 3]
+
+＠マシュ
+[messageShake 0.01 4 4 0.4]
+[charaShake A 0.03 4 4 0.4]
+[f large]カッ！
+[k]
+
+
+[messageOff]
+[charaFadeout A 0.4]
+[charaMove A 0,-30 0.4]
+[wt 0.4]
+[se ad144]
+[seVolume ad144 0 0.4]
+[wt 1.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠フォウ
+フォウ。フォウ？[r]（特別意訳：マシュを殺す気かい？）
+[k]
+
+
+？2：期待してるから！
+
+[charaFace A 5]
+＠マシュ
+マ、マシュ・キリエライト……。[r]期待に応えてみせます！
+[k]
+
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_28 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout F 0.1]
+[charaFadeout A 0.1]
+
+[scene 63410]
+[wt 1.0]
+
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠ジャンヌ・オルタ
+ん？[r]ああ、戻ってきたの。
+[k]
+
+＠ジャンヌ・オルタ
+それでどうだっ[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 0.2]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠マシュ
+わわわわたしが世界で一番[r]グッドルッキングレディです！
+[k]
+
+[charaFace A 16]
+[charaMoveReturn A 0,20 0.2]
+＠マシュ
+[f large]ジュテーム！
+[k]
+
+[messageOff]
+[wt 1.2]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_2 0.1 1.0]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠ジャンヌ・オルタ
+あ、そ。[r]妙な呪いにでも掛かったの？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠マシュ
+先輩、撃墜されましたーーー！[r]うわーん！
+[k]
+
+[messageShakeStop]
+[charaShakeStop A]
+[messageOff]
+
+？1：よしよし
+？2：頑張った頑張った
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠ジャンヌ・オルタ
+何なのよ！？
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[soundStopAll]
+[end]

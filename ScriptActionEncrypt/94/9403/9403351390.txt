@@ -1,0 +1,297 @@
+
+＄94-03-35-13-9-0
+
+[charaSet A 7006001 1 坂田金時]
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+
+[scene 10310]
+
+[fadein black 2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠坂田金時
+[tVoice ValVoice_700600 0_V010]
+なあ大将[line 3][r]朝から気になってるコトがあるんだがよ。[wait tVoice]
+[k]
+
+＠坂田金時
+[tVoice ValVoice_700600 0_V020]
+今日はアレか？[r]またハロウィンだかなんだかいう祭りの日か？[wait tVoice]
+[k]
+
+[charaFace A 3]
+＠坂田金時
+[tVoice ValVoice_700600 0_V030]
+……ったく、どういうコトだかなあ。[r]朝からこっち、職員の女子連中がやたらと……[wait tVoice]
+[k]
+
+[charaFace A 4]
+＠坂田金時
+[tVoice ValVoice_700600 0_V040]
+チョコレート？[r]くれるんだよな。オレに。[wait tVoice]
+[k]
+
+＠坂田金時
+[tVoice ValVoice_700600 0_V050]
+ハロウィンで菓子をもらえンのは子供だろ？[r]オレっちは誰がどう見たって子供じゃねえし、なぁ。[wait tVoice]
+[k]
+
+＠坂田金時
+[tVoice ValVoice_700600 0_V060]
+茨木あたりが人間の子供と見間違えられんのは[r]仕方ねえとしても、オレだぜ。オレ。[wait tVoice]
+[k]
+
+？1：ハロウィンじゃないよ
+？2：バレンタインだよ
+
+？！
+
+＠坂田金時
+[tVoice ValVoice_700600 0_V070]
+バレンタイン。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 3]
+[wt 1.0]
+[charaFace A 1]
+
+
+[charaFace A 1]
+＠坂田金時
+[tVoice ValVoice_700600 0_V080]
+ああ！　バレンタインか！[r]ソイツなら知ってるぜ、当世のイベントだったか！[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠坂田金時
+[tVoice ValVoice_700600 0_V090]
+あーそうか、それでチョコレートか……[r]酒呑や頼光サンがサンダーな[#喧嘩:バトル]してたのも……[wait tVoice]
+[k]
+
+？1：へえ、それはそれは
+？2：モテるねえ……
+？！
+
+[charaFace A 2]
+＠坂田金時
+[tVoice ValVoice_700600 0_V100]
+いやオレじゃねえよ！　ねえだろ！[r]そんなん絶対ノーサンキューバッドテイストだぜ……。[wait tVoice]
+[k]
+
+[charaFace A 4]
+＠坂田金時
+[tVoice ValVoice_700600 0_V110]
+あれだろ、きっと大将に渡すチョコがどうとかで[r]喧嘩してんだ。あれはそういうガチの喧嘩だな、絶対。[wait tVoice]
+[k]
+
+[flag MALE false]
+[flag FEMALE false]
+
+[selectionUse masterMale]
+
+？1：もうチョコレートは間に合ってる？
+
+[flag MALE true]
+
+？2：あとひとつぐらいは食べられそう？
+
+[flag MALE true]
+
+？！
+
+[selectionUse masterFemale]
+？1：もうチョコレートは間に合ってる？
+
+[flag FEMALE true]
+
+？2：あとひとつぐらいは食べられそう？
+
+[flag FEMALE true]
+
+？！
+
+[charaFace A 0]
+＠坂田金時
+[tVoice ValVoice_700600 0_V120]
+ん？　何だ？[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[branch _isMale MALE 1]
+[branch _isFemale FEMALE 1]
+
+[label _isMale]
+
+
+＠坂田金時
+[tVoice ValVoice_700600 0_V130]
+お、何だ。くれんのか？[tdelay 1 4.0 1][charaFace A 2][delay -][r]むぐむぐ……ってなんだ、またチョコレートじゃねーか！[wait tVoice]
+[k]
+
+[delayStop 1]
+
+[charaFace A 0]
+＠坂田金時
+[tVoice ValVoice_700600 0_V140]
+だけどよ[line 3]。[r]人からもらって喰う菓子も悪くねえな。[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠坂田金時
+[tVoice ValVoice_700600 0_V150]
+ゴールデンサンキューな、マスター。[r]ようし！　ちょっくら待ってろ！[wait tVoice]
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.4]
+[se ad59]
+[seStop ad59 1.0]
+[wt 1.0]
+
+
+[branch _branchEnd]
+
+[label _isFemale]
+
+[charaFace A 3]
+＠坂田金時
+[tVoice ValVoice_700600 0_V160]
+お、おう……[wait tVoice]
+[k]
+
+＠坂田金時
+[tVoice ValVoice_700600 0_V170]
+そ、そっか。大将……いやその何だ、あー……[r]ベリーゴールデンサンキューだぜ……[wait tVoice]
+[k]
+
+＠坂田金時
+[tVoice ValVoice_700600 0_V180]
+…………あ、あー何だ。ちょっくら待っててくれや。[wait tVoice]
+[k]
+
+
+[messageOff]
+[se ad59]
+[seStop ad59 1.0]
+[charaFadeout A 0.4]
+[wt 1.0]
+
+[label _branchEnd]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad59]
+[seVolume ad59 0 0.2]
+[wt 0.5]
+[seVolume ad59 1.0 0.9]
+[wt 1.0]
+[seStop ad59 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+
+＠坂田金時
+[tVoice ValVoice_700600 0_V190]
+待たせたな！[r]って訳で、オレからも大将にお返しだ。そーらよ！[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[equipSet B 9805940 1 ]
+[wait equipSet B]
+[charaFace B 0]
+[charaFadein B 0.5 0,-70]
+[wt 2.0]
+[charaFadeout B 0.4]
+[wt 0.5]
+
+？1：わあ、凄い！
+？2：お腹いっぱいに[&なりそうだ:なっちゃいそう]！
+
+？！
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+
+＠坂田金時
+[tVoiceUser ValVoice_700600 0_V200 ValVoice_700600 0_V210]
+菓子には菓子を返すのが雅だろうと思ってよ。[r]だが、オレっちの部屋は[&お返し:女子]向けのもンがなくてなぁ……[wait tVoice]
+[k]
+
+[charaFace A 3]
+＠坂田金時
+[tVoice ValVoice_700600 0_V220]
+面目ねえが、こんな感じになっちまった。[r]良かったら受け取ってくれや。[wait tVoice]
+[k]
+
+？1：よく見たら[line 3]金のネックレスも入ってる！？
+
+？！
+
+[charaFace A 1]
+＠坂田金時
+[tVoice ValVoice_700600 0_V230]
+菓子だけじゃ何だしな！[r][#正真正銘:しょうしんしょうめい]十八金のゴールデン・ゴールド・ネックレスだ！[wait tVoice]
+[k]
+
+[charaFace A 4]
+＠坂田金時
+[tVoice ValVoice_700600 0_V240]
+……予備っつーかまあ、オレの予備だ。[r]悪い。スマン。この通り。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠坂田金時
+[tVoice ValVoice_700600 0_V250]
+でもアンタにゃ似合うと思うぜ。[r]なにせこのオレ、坂田金時のマスターだからな！[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠坂田金時
+[tVoice ValVoice_700600 0_V260]
+気に入ったら付けてくれ。そうすりゃオレとアンタで、[r]揃いのエンブレムって訳だ！[wait tVoice]
+[k]
+
+
+
+
+
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,197 @@
+
+
+
+＄91-20-06-01-3-0
+
+[soundStopAll]
+
+[charaSet A 2006001 1 ダビデ]
+[charaSet B 8001002 1 マシュ]
+[charaSet C 98003003 1 Dr.ロマン]
+[charaSet D 98002000 1 フォウ]
+
+[bgm BGM_EVENT_5 0.1]
+[scene 28400]
+[fadein black 1.5]
+[wait fade]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+
+＠ダビデ
+……さて、そろそろお目当ての親玉だ。
+[k]
+
+＠ダビデ
+きみたちの活躍によって修正されゆく特異点。[r]元に戻るはずのこの大地。
+[k]
+
+＠ダビデ
+そこに顕れて押し寄せようとする巨人の軍勢。[r]神の威光たるこの大地を破壊せんとするものども。
+[k]
+
+＠ダビデ
+その首魁といったら[line 2]
+[k]
+
+？1：ゴリアテ？
+？2：何だっけ？
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠マシュ
+……ゴリアテ。もしくはゴライアス。[r]イスラエル王国と敵対した巨人の戦士、でしょうか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 5]
+＠Dr.ロマン
+ダビデとゴリアテの戦い。[r]第一サムエル記にある伝説だが、今は13世紀。つまり、
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ダビデ
+本物のゴリアテじゃないだろうね。[r]それだったらもう少し大変な事になっているさ。
+[k]
+
+＠ダビデ
+これは伝説の再現。[r]何かの象徴のようなものなんだろう。
+[k]
+
+＠ダビデ
+だからこそ僕も此処にいる。[r]本物の、生前のイスラエル建国王ならざるこの僕。
+[k]
+
+＠ダビデ
+なら、出てくるゴリアテも、[r]それらしい偽物の[line 2]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.4]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.4]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[voice 700100_0_B100]
+[wt 2.5]
+[bgm BGM_EVENT_3 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠ダビデ
+……来た！　ほら、巨人だ！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+＠マシュ
+……いや、すいません少々お待ちを。[r]あれは巨人ではなく……。
+[k]
+
+＠マシュ
+巨大なゴーストと……魔猪と……ドラゴンでは？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ダビデ
+うん、ほらまあ３体とも全体攻撃かましてくるし……。[r]巨人みたいなもの、と言っていいんじゃないかな？
+[k]
+
+？1：良くないよ！？
+
+[charaPut D 0,0]
+[charaEffect D bit_talk_41]
+[charaFace A 2]
+＠ダビデ
+だよね！
+[k]
+
+[charaPut D 0,-1000]
+[charaEffectStop D bit_talk_41]
+
+？2：それが巨人判定なの！？
+
+[charaFace A 1]
+＠ダビデ
+うん、大きい奴は全体攻撃をしてくる。[r]これが僕の世界の常識だ。
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠Dr.ロマン
+あー……だから全体を守る技術に特化しているんだ、[r]この王様……てっきり羊を守る為の技かと思ってた……
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠ダビデ
+え？　同じだよ？[r]だって、どっちもうまく誘導すれば[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[communicationCharaLoop 98003003 1 5 0 2]
+＠Dr.ロマン
+う[messageShake 0.01 5 5 0.7]わああストップストップ！[r]それ以上は聞きたくなーい！
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaTalk D]
+[charaFadein D 0.1 1]
+＠フォウ
+フォーウ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+＠マシュ
+あ、あのっ。[r]指示をお願いします、マスター！
+[k]
+
+？1：戦闘態勢だ、マシュ！
+？！
+
+[charaFace B 7]
+＠マシュ
+[line 3]了解。[r]戦闘、開始します！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

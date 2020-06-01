@@ -1,0 +1,740 @@
+
+
+＄94-03-35-32-2-0
+
+[soundStopAll]
+
+[charaSet A 23002000 1 ＢＢ]
+[charaSet B 23002001 1 ＢＢ]
+[equipSet C 9807000 1 バレンタイン礼装]
+[imageSet D back10001 2]
+[imageSet E back41330 2]
+[imageSet F cut100_time 1]
+
+[charaScale D 1.01]
+[charaScale E 1.01]
+[charaScale F 0.75]
+[charaSet H 5009000 1 エフェクト用ダミー]
+[charaSet I 5009000 1 エフェクト用ダミー2]
+
+[effectPause bit_talk_bbchannel01]
+[wait effectStart]
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66800]
+[branch lblConf]
+[label lblNotClear]
+[scene 10400]
+[label lblConf]
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[fadein black 0.1]
+[wt 0.1]
+
+[wipein openEye 1.5 1]
+[wait wipe]
+[wt 0.5]
+
+？1：……むむ
+
+？！
+
+＠
+甘い予感に目を覚ますと、[r]そこはいつもの風景だった。
+[k]
+
+[messageOff]
+[se ad592]
+[fadeout white 0.3]
+[wait fade]
+
+[scene 10000]
+[cameraFilter gray]
+
+
+[cueSe ChrVoice_2300100 0_T010]
+[cueSeVolume 0_T010 0.0 0.0]
+[wt 1.2]
+[cueSeVolume 0_T010 30.0 0.6]
+[wt 1.0]
+
+
+[cueSe ChrVoice_2300100 0_T010]
+[cueSeVolume 0_T010 0.0 0.0]
+[wt 0.8]
+[cueSeVolume 0_T010 10.0 0.8]
+[wt 1.8]
+
+
+[cueSe ChrVoice_2300100 0_T010]
+[cueSeVolume 0_T010 0.0 0.0]
+[wt 0.4]
+[cueSeVolume 0_T010 4.0 1.0]
+[wt 2.2]
+
+
+[fadein white 0.1]
+[wait fade]
+
+[bgm BGM_EVENT_51 0.1]
+[effectStart]
+[wt 8.0]
+
+
+[fadeout white 0.4]
+[bgmStop BGM_EVENT_51 0.4]
+[se ad592]
+[wait fade]
+
+[cameraFilter normal]
+
+[branchQuestNotClear lblNotClear2 3000303]
+[scene 66800]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10400]
+[label lblConf2]
+
+[fadein white 0.5]
+[wait fade]
+
+
+？1：はっ！？　この展開は……！
+
+？！
+
+＠
+いつかの既視感に体を起こす。[r]楽しいオモチャにされる前に、部屋から飛び出した。
+[k]
+
+
+[messageOff]
+[se ad7]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[se ad8]
+[wt 1.5]
+
+[branchQuestNotClear lblNotClear3 3000303]
+[scene 66600]
+[branch lblConf3]
+[label lblNotClear3]
+[scene 10310]
+[label lblConf3]
+
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[wt 0.5]
+
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_94 0.1]
+
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V010]
+はーい、いつもより２分だけクイックな目覚め、[r]グッモーニン！　ですね、センパイ！[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V020]
+さすがは幾度となくバレンタインを経験してきた勇者！[r]ＢＢちゃんの強制召喚を回避するとは、このこの～！[wait tVoice]
+[k]
+
+[charaFace A 4]
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V030]
+まあ、渾身のＢＢチャンネルをスルーされたのは[r]ヒロインとしては辛いですけど……[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V040]
+あの番組、わりと前準備がいるんですよね……[r]いえ、スタジオ自体は指パッチンで作れるんですけど……[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V050]
+モチベーションを上げるのに……[r]とてもとても時間がかかるというか……[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V060]
+わたし……もともと根の暗いヒロインなので……[r]気に病むと、とことん重い手段を選ぶ女の子なので……[wait tVoice]
+[k]
+
+？1：……そうだったのか……
+
+？！
+
+
+＠
+……ちょっと悪い事をしてしまった。
+[k]
+
+＠
+普段は陽気で強気で[#支離滅裂:し り め つ れ つ]な彼女だが、[r]その根底は『一途な少女』である事はもう知っている。
+[k]
+
+＠
+気ままなイタズラなんだから、一度や二度といわず、[r]何度でも付き合ってあげるべきだったのかもしれない。
+[k]
+
+[charaTalk A]
+[charaFace A 19]
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V070]
+なーんて、どんなに苛酷なスルーであろうと[r]へっちゃらです☆[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V080]
+どんな傷みも耐えきって、立ち直りが早いのが[r]ＢＢちゃんの長所なのですから！[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V090]
+そんな事よりバレンタインですよ、センパイ。[r]今日は女の子にとって大切な一日なのでぇ……[wait tVoice]
+[k]
+
+[charaFace A 13]
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V100]
+特別に！[r]ＢＢちゃんの秘密をなんでも答えてあげちゃいま～す！[wait tVoice]
+[k]
+
+[messageOff]
+[se ad139]
+[wt 1.8]
+
+？1：そこはチョコレートじゃないの！？
+
+？！
+
+[charaFace A 15]
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V110]
+チョコレートなんかあげませーん！[r]ＢＢちゃんはもっとオンリーワンに攻めるのでーす！[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V120]
+だいたい、今まで沢山もらってるんですから[r]もう飽き飽きでしょう？　[#偶:たま]にはドキドキも必要かなって。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V130]
+なので、遠慮なく質問をどうぞ。[r]今まで怖くて聞けなかった事とか聞いていいんですよ？[wait tVoice]
+[k]
+
+
+？1：じゃあ……なんなの、あの宝具？
+
+？！
+
+＠
+かねてからの疑問を口にする。[r]水着である必要性をまったく感じられなかったからだ。
+[k]
+
+[charaTalk A]
+[charaFace A 11]
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V140]
+えー！　可愛いじゃないですか、わたしの宝具！[r]涼しげな月面旅行ですよーー！？[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V150]
+たしかに、ちょっと水気がたりませんけど！[r]水着らしくありませんけど！　色々でっかいけど！[wait tVoice]
+[k]
+
+[charaFace A 12]
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V160]
+いいんです、わたしの宝具はあれで。[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V170]
+皆さん、夏といえば海だ山だと騒ぎますけど、[r]怪談、ホラーだってあるんですっ！[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V180]
+ふーんだ。だーれもやらないから、[r]わたしが仕方なくかって出てあげたんですよーだっ！[wait tVoice]
+[k]
+
+
+？1：そうだったのか……
+
+？！
+
+＠
+長年の謎が解けた。[r]あれはあれできちんと信念に基づくものだったらしい。
+[k]
+
+＠
+しかし、[#怪談:ホラー]といえば……
+[k]
+
+？1：『邪神』とは何だった[&のか:の]？
+
+？！
+
+
+[bgmStop BGM_EVENT_94 1.0]
+
+[charaTalk A]
+[charaFace A 8]
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V190]
+[line 6]。[wait tVoice]
+[k]
+
+＠
+ごくり、と[#生温:なまぬる]い唾を[#嚥下:えんか]する。[r][#雉:きじ]も啼かずば撃たれまい。
+[k]
+
+＠
+聞かなければ、知らなければ安穏と過ごせる[r]質問を、まるで取り憑かれたように[&彼:彼女]はしていた。
+[k]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V200]
+そうですねー。簡単に言うと[r]“ごっこ遊び”のようなもの、でしょうか？[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V210]
+ＢＢちゃんのヒロインツリーには[r]『おとなしくて気が利く後輩系ＢＢちゃん』、[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V220]
+『清純派でとにかく可愛いＢＢちゃん』、[r]『ラスボスになっても悪魔で可愛いＢＢちゃん』、[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V230]
+『最後に名前を呼んでほしかった系ＢＢちゃん』、[r]と様々な[#成長系統樹:ス キ ル ツ リ ー]がありますが、[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V240]
+今回は『邪神系ＢＢちゃん』という新しいツリーを[r]開眼して、そちらに全振りしただけの話です。てへ☆[wait tVoice]
+[k]
+
+[charaFace A 19]
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V250]
+バグにバグを重ねたようなものなので、[r]それはもう、成長結果はねじくれていますとも！[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V260]
+ＢＢという骨子は同じでも、その外装は[r]戦士と魔法使いぐらいに違う、というコトです。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V270]
+はたして邪神を[#従:したが]えているのか、[r]それとも邪神に従っているのか。[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V280]
+ノリノリで邪神の演技をしているのか。[r]ニヤニヤと邪神が演技をしているのか。[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V290]
+それは見る人の判断に委ねます。[r]マスターさんがそう思いたい方をお好きにどうぞ♡[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V300]
+ああ、でも[line 3][wait tVoice]
+[k]
+
+[charaFace A 17]
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V310]
+そんな質問をするというコトは、アレですか？[r]そろそろわたしが怖くなってきた、というコトですか？[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V320]
+ふふふ。ならわたしも、[r]ちょっとだけ本気を出しちゃおっかなぁ……？[wait tVoice]
+[k]
+
+
+？1：そんなつもりは……
+
+？！
+
+＠
+怖がる必要はないはずだ。[r]なぜなら、とっくに正気という物差しは、
+[k]
+
+[charaTalk A]
+[charaFace A 13]
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V330]
+ですよね！[r]変わらぬ愛情、本当に嬉しいです！[wait tVoice]
+[k]
+
+[charaFace A 14]
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V340]
+でも残念、せっかく素敵なラブコールをいただいたのに、[r]今回はここまでのようです。[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V350]
+もう。楽しい時間は早くすぎる、とは[r]よく言ったものです。……さて。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V360]
+賢明なセンパイにおかれましては、[r]このあたりで目をお閉じください。[wait tVoice]
+[k]
+
+[charaFace A 6]
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V370]
+ワルイ事はじゃんじゃん言いますけど、[r]本当にヤバイ事は言わない、が[#通常:もと]のわたしですので[line 3][wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V380]
+ここでSKIPを押しておいた方が、[r]万事きれいに収まりますよ？[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V390]
+…………。[r]…………。[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V400]
+…………。[r]…………。[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V410]
+…………。[r]…………。[wait tVoice]
+[k]
+
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V420]
+…………。[r]…………。[wait tVoice]
+[k]
+
+[charaFace A 17]
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V430]
+……押しませんでしたね？[r]押しませんでしたねぇ？[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠ＢＢ
+[tVoice ValVoice_2300200 0_V440]
+それじゃあ今夜はこのへんで。[r][#理性:テレビ]の前の皆さん、また明日、お会いしましょう！[wait tVoice]
+[k]
+
+
+
+[messageOff]
+[charaFadeout A 0.1]
+
+[scene 10000]
+
+[se bac29]
+[seStop bac29 0.4]
+[bgmStop BGM_EVENT_77 0.1]
+[flashin once 0.1 0.8 FFFFFFFF FFFFFF00]
+[wt 1.0]
+
+[se ad31]
+[charaPut I 0,0]
+[charaEffect I bit_talk_noise_gr]
+
+[charaDepth F 1]
+[charaFadein F 0.1 100,-500]
+[wt 2.5]
+
+[wipeout circleIn 5.0 1.0]
+[seVolume ad31 5.5 0]
+[charaMoveScale F 0.0 5.5]
+[charaMoveScale I 0.0 5.5]
+[charaMove F 100,0 5.5]
+[charaMove I 0,-300 5.5]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[charaMoveScale I 1.0 0.1]
+[charaMoveScale F 0.75 0.1]
+[charaMove I 2000,2000 0.1]
+[charaMove F 2000,2000 0.1]
+
+[scene 63401]
+[wt 1.5]
+
+
+[wipein circleIn 0.1 1.0]
+[wait wipe]
+
+[fadein black 1.5]
+[seVolume ad31 1.5 1.0]
+[wait fade]
+[wt 1.5]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaPut I 0,0]
+[charaPut F 100,-500]
+[scene 10000]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 4.0]
+
+？1：……………………。
+
+？！
+
+[seStop ad31 0.1]
+[se ade49]
+[effect bit_talk_03]
+[charaPut I 2000,2000]
+[charaPut F 2000,2000]
+[charaFadeout F 0.1]
+[wt 2.0]
+
+[scene 63401 1.5]
+[wt 2.0]
+
+＠
+時代遅れのテレビの電源を切る。[r]夜風を浴びたくなったので外に出る事にした。
+[k]
+
+[messageOff]
+[wt 0.1]
+[fadeout black 1.5]
+[se ad93]
+[wait fade]
+[wt 0.5]
+[se ad94]
+
+[scene 63200]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+＠
+ロビーに人影はない。[r]観光客も、ホテルのスタッフも見当たらない。
+[k]
+
+[messageOff]
+[scene 63101 1.5]
+[wt 2.0]
+
+＠
+毎日がお祭りのようだった通りにも、[r]人影は見当たらない。
+[k]
+
+[messageOff]
+[scene 63800 1.5]
+[wt 2.0]
+
+＠
+まるで、時間が止まったかのような夜だった。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[se ad60]
+[wt 0.2]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.4 1]
+[wt 0.4]
+[seStop ad60 0.4]
+＠B：ＢＢ
+[tVoice ValVoice_2300200 0_V450]
+もう、またひとりでこんなところに来て。[r]いくら敵がいないからって、危ないですよ。[wait tVoice]
+[k]
+
+[charaFace B 6]
+＠B：ＢＢ
+[tVoice ValVoice_2300200 0_V460]
+あ。それとも、あえて危ないコトをして[r]わたしの目を惹こう、とか思っちゃいました？[wait tVoice]
+[k]
+
+[charaFace B 19]
+＠B：ＢＢ
+[tVoice ValVoice_2300200 0_V470]
+その手には乗りませーん！[r]というか効果ありませーん！[wait tVoice]
+[k]
+
+＠B：ＢＢ
+[tVoice ValVoice_2300200 0_V480]
+だって片時も離れず、ずっとマスターさんを[r]見守っているのがこのわたし[line 3][wait tVoice]
+[k]
+
+＠B：ＢＢ
+[tVoice ValVoice_2300200 0_V490]
+[#人類:アナタ]の健康を管理する月のスーパーAI、[r]グレートイビルなＢＢちゃんなのですから！[wait tVoice]
+[k]
+
+
+？1：[line 3]おまえの考える人類の健康とは？
+
+？！
+
+＠
+先ほどの番組の影響だろうか。[r]私も、今まで聞けなかった質問を口にした。
+[k]
+
+[charaTalk B]
+[charaFace B 13]
+＠B：ＢＢ
+[tVoice ValVoice_2300200 0_V500]
+ふふ。ふふふ。おっかしーい！[r]マスターさんったら今さらそんなコトを聞くなんて！[wait tVoice]
+[k]
+
+[charaFace B 7]
+＠B：ＢＢ
+[tVoice ValVoice_2300200 0_V510]
+『いつまでも有り続けるコト』。[r]それがこのわたしが定義した、アナタたちの健康です。[wait tVoice]
+[k]
+
+＠B：ＢＢ
+[tVoice ValVoice_2300200 0_V520]
+さあ[line 3]元の場所に戻りましょう？[r]この先の未来には辛いコトばかりですもの。[wait tVoice]
+[k]
+
+＠B：ＢＢ
+[tVoice ValVoice_2300200 0_V530]
+過酷な現実から目を背けて、[r]残酷な未来には別れを告げて。[wait tVoice]
+[k]
+
+＠B：ＢＢ
+[tVoice ValVoice_2300200 0_V540]
+ここでずっと、宇宙が飽和してドロドロになるまで、[r]楽しいバカンスを続けましょう？[wait tVoice]
+[k]
+
+？1：[line 3]それは[line 3]
+
+？！
+
+[messageOff]
+[wt 0.8]
+
+？1：[line 3]それは[line 3]
+
+？！
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+＠B：ＢＢ
+[tVoice ValVoice_2300200 0_V550]
+ふふふ。[r]ところで、さっきから『わたし』『わたし』と言っていますが。[wait tVoice]
+[k]
+
+＠B：ＢＢ
+[tVoice ValVoice_2300200 0_V560]
+あなた　は　一体　どなた　ですか？[wait tVoice]
+[k]
+
+？1：[line 3]それは[line 3]
+
+？！
+
+[charaTalk off]
+[messageOff]
+[charaFadeout B 0.1]
+[se ad437]
+[charaPut I 0,0]
+[wt 0.2]
+[charaPut I 2000,2000]
+[charaEffectStop I bit_talk_noise_gr]
+[wt 1.5]
+
+[fadeMove black 1.0 0.4]
+[wt 1.0]
+
+[charaTalk on]
+＠
+意識が遠くなる。[r]妄想がいつまでも現実を引き離す。
+[k]
+
+＠
+私に知覚できる事は、[r]もうほんの少ししかないと痛感する。
+[k]
+
+[messageOff]
+[wt 0.1]
+[fadeMove black 1.5 1.0]
+[wait fade]
+
+[scene 10000]
+[wt 1.5]
+
+[fadein black 0.1]
+[wait fade]
+
+＠
+最後に。
+[k]
+
+＠
+女の笑い声だけが聞こえた。
+[k]
+
+[messageOff]
+[wt 0.2]
+
+[se ad79]
+[wt 0.1]
+
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[se bas2]
+[charaFace C 0]
+[charaFadein C 0.5 0,-70]
+[wt 2.5]
+[charaFadeout C 0.4]
+[wt 0.5]
+
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

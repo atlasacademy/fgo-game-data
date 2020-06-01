@@ -1,0 +1,1945 @@
+
+
+
+＄94-04-01-15-1-1
+
+[soundStopAll]
+
+
+[charaSet A 1098180700 1 オキタ・Ｊ・ソウジ]
+[charaSet B 1040000 1 葛飾北斎]
+[charaSet C 1098180700 1 残像エフェクト１]
+[charaSet D 1098180700 1 残像エフェクト２]
+[charaSet E 98115000 1 ダミーエフェクト１]
+[charaSet F 98115000 1 ダミーエフェクト２]
+[charaSet G 98115000 1 ダミーエフェクト３]
+[charaSet H 98115000 1 ダミーエフェクト４]
+[charaSet I 98115000 1 ダミーエフェクト５]
+
+[charaDepth D 1]
+[charaDepth B 1]
+[charaDepth C 7]
+[charaDepth F 8]
+[charaDepth A 9]
+
+[bgm BGM_EVENT_24 0.1]
+
+[branchQuestNotClear lblNotClear1 3000303]
+[flag IsClear true]
+[branch lblConf1]
+[label lblNotClear1]
+[flag IsClear false]
+[label lblConf1]
+
+
+
+[scene 10000]
+
+[se ade208]
+[seVolume ade208 0 0]
+[seVolume ade208 0.5 0.8]
+
+[charaPut F 1]
+[charaEffect F bit_talk_41]
+
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk depthOff]
+
+[se ad704]
+[seVolume ad704 0 0.6]
+
+
+[charaFace A 2]
+[charaPut A 1]
+[charaFadeTime A 0 0.8]
+[wt 0.1]
+
+[shake 0.03 4 4 0]
+[charaFace C 2]
+[charaPut C 1]
+[charaFadeTime C 0 0.6]
+
+[charaMoveScale A 1.3 0.2]
+[charaMove A 0,50 0.2]
+[wt 0.1]
+[charaFadeout A 0.1]
+[wt 0.05]
+
+
+[charaFace D 2]
+[charaPut D 1]
+[charaFadeTime D 0 0.3]
+
+[charaMoveScale C 1.3 0.2]
+[charaMove C 0,50 0.2]
+[wt 0.1]
+[charaFadeout C 0.1]
+[wt 0.05]
+
+[charaMoveScale D 1.3 0.2]
+[charaMove D 0,50 0.2]
+[wt 0.1]
+[charaFadeout D 0.1]
+[wt 0.05]
+
+[charaTalk depthOn]
+[shakeStop]
+[charaPut F 2000,2000]
+[wt 0.3]
+
+[se ad32]
+[effect bit_talk_14 40,0]
+
+[charaFace B 9]
+[charaScale B 1.08]
+[charaFadein B 0.1 1]
+
+[charaMoveReturn B 15,10 0.3]
+[charaShake B 0.04 2 3 0.3]
+[wt 0.4]
+
+[se ad32]
+[effect bit_talk_14 -50,-20]
+
+[charaMoveReturn B -20,-10 0.2]
+[charaShake B 0.04 3 2 0.2]
+[wt 0.4]
+
+[se ad32]
+[effect bit_talk_14 40,20]
+
+[charaMoveScale B 1.0 0.2]
+[charaMoveReturn B 0,20 0.1]
+[charaShake B 0.04 3 3 0.1]
+[wt 0.8]
+
+
+[se bac1]
+[charaFace B 2]
+[charaMoveScale B 1.2 0.2]
+[charaMove B 0,30 0.2]
+[charaFadeout B 0.2]
+[wt 0.4]
+
+[charaPut F 1]
+
+[charaFace A 5]
+[charaFace C 5]
+[charaFace D 5]
+[charaScale A 1.0]
+[charaScale C 1.0]
+[charaScale D 1.0]
+[charaFadein A 0.1 1]
+[charaFadein C 0.1 1]
+[charaFadein D 0.1 1]
+[wt 0.3]
+
+[se bac7]
+[effect bit_talk_Slash_white_01_L 0,0 H]
+[wt 0.15]
+[charaMove A -280,0 0.1]
+[charaMove C -140,0 0.1]
+[wt 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaFadein C 0.1 -280,0]
+[charaFadein D 0.1 -280,0]
+
+[se bac7]
+[effect bit_talk_Slash_white_01 -280,0 H]
+[wt 0.15]
+[charaMove A 280,0 0.1]
+[charaMove C 0,0 0.1]
+[wt 0.1]
+[charaFadeout C 0.2]
+[charaFadeout D 0.2]
+[wt 0.1]
+[charaFadein C 0.1 280,0]
+[charaFadein D 0.1 280,0]
+
+[se bac7]
+[effect bit_talk_Slash_white_01_L 280,0 F]
+[wt 0.15]
+[charaMove A 0,0 0.1]
+[charaMove C 0,0 0.1]
+[wt 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaFace A 2]
+[wt 0.15]
+[fowardEffect bit_talk_quickmove]
+[charaFadeout A 0.1]
+
+[se bac136]
+[effect bit_talk_h_slash01 0,0 H]
+[wt 0.15]
+
+[fadeout white 0.3]
+[wait fade]
+
+[charaFadeout A 0.25]
+[wt 0.1]
+[charaPut F 2000,2000]
+[charaEffectStop F bit_talk_41]
+
+[scene 10721]
+
+[fadein white 0.3]
+[wait fade]
+
+[se ad223]
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,30]
+[charaMove B 1 0.2]
+[wt 0.4]
+
+
+＠葛飾北斎
+……速い！　なんて速さだい！[r]突進力だけなら水着剣豪でもピカ[#一:イチ]だ！
+[k]
+
+
+＠葛飾北斎
+だが筆さばきで慣らしたおれの剣さばき、[r]負けてねぇはずだ！
+[k]
+
+＠葛飾北斎
+もう少しで捉えられる……！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.2 0,30]
+
+[se ad223]
+[charaMove A 1 0.2]
+[wt 0.8]
+
+＠オキタ・Ｊ・ソウジ
+なるほど……、素人剣術かと思いましたが、[r]その四本刀は伊達ではありませんね。
+[k]
+
+＠オキタ・Ｊ・ソウジ
+ならば私も本気を出すしかないようです。
+[k]
+
+[charaFace A 2]
+
+＠オキタ・Ｊ・ソウジ
+リミッター解除！
+[k]
+
+[messageOff]
+[se ad270]
+[wt 0.15]
+
+[se ad370]
+[seStop ad270 0.9]
+[effect bit_talk_starshine 47,157]
+[effect bit_talk_starshine -8,151]
+[wt 1.6]
+
+[charaFace A 5]
+
+＠オキタ・Ｊ・ソウジ
+では行きますよ、これが最後の一撃です！
+[k]
+
+[charaFace A 2]
+
+＠オキタ・Ｊ・ソウジ
+持ってくださいよ、私の身体……！
+[k]
+
+[messageOff]
+[wt 0.1]
+[se ad39]
+[charaPut E 1]
+[charaEffect E bit_talk_36]
+[wt 2.4]
+[seStop ad39 0.5]
+
+＠オキタ・Ｊ・ソウジ
+Ｍ・ドライブフルバースト！！
+[k]
+
+＠オキタ・Ｊ・ソウジ
+[f large][line 3]『ジェット三段突き』！！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut E 2000,2000]
+[charaEffectStop E bit_talk_36]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠葛飾北斎
+なんの！　ここで退いたら女がすたるってもんヨ！
+[k]
+
+＠葛飾北斎
+いざ！　きりふり、くわんおん、あおい、ろうべん、[r]よしつね、ようろう、おの、あみだ！
+[k]
+
+[messageOff]
+[wt 0.1]
+[se ad39]
+[charaPut F 1]
+[charaEffect F bit_talk_36]
+[wt 2.4]
+[seStop ad39 0.5]
+
+＠葛飾北斎
+[fontSize large][line 3]『[#諸国瀧廻:し　ょ　こ　く　た　き　め　ぐ]り』！！！
+[k]
+
+[messageOff]
+[fadeout black 0.4]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_36]
+
+
+[charaSet C 11007002 1 カジノ魔王]
+[charaSet D 98100400 1 マシュ]
+
+[imageSet J cut063_cinema 1]
+[charaScale J 1.01]
+
+[charaDepth J 10]
+
+[scene 10000]
+[wt 0.5]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad32]
+[effect bit_bolg_03b]
+[wt 0.45]
+
+[se bac18]
+[effect bit_talk_14 30,0]
+[wt 0.2]
+[se bac18]
+[effect bit_talk_14 -80,50]
+[wt 0.25]
+[se bac18]
+[effect bit_talk_14 60,40]
+[wt 0.2]
+
+[fadeout white 0.5]
+[wait fade]
+
+[effectDestroy bit_bolg_03b]
+[effectDestroy bit_talk_14]
+
+[scene 10721]
+[wt 1.0]
+
+[fadein white 0.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 4]
+[charaScale B 1.0]
+[charaFadein B 0.2 30,50]
+[charaMove B 10,30 1.0]
+[wt 0.2]
+
+[se ad223]
+[charaMove B 1 0.1]
+[wt 0.8]
+
+＠葛飾北斎
+……ぐっ！？　なんて威力だい。[r]そのじぇっとってやつ、たいした絡繰りだねぇ。
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaMove B 0,-30 0.3]
+[wt 0.2]
+[se ad54]
+[wt 0.8]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaScale A 1.1]
+[charaFadein A 0.2 -30,50]
+[charaMove A -10,30 1.0]
+[wt 0.2]
+
+[se ad223]
+[charaMove A 1 0.1]
+[wt 0.8]
+
+＠オキタ・Ｊ・ソウジ
+いえ、あなたの剣捌きこそお見事でした、
+[k]
+
+[charaFace A 9]
+
+＠オキタ・Ｊ・ソウジ
+……よ。
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaFadeout A 0.4]
+[charaMove A 0,-50 0.4]
+[wt 0.3]
+[se ad144]
+[wt 1.4]
+
+？1：沖田さん……！？
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 0,-50]
+[charaMove A 1 0.4]
+[charaShake A 0.02 3 3 0.6]
+[wt 0.8]
+
+＠オキタ・Ｊ・ソウジ
+ま、マスター……。
+[k]
+
+
+？2：オキタ・Ｊ・ソウジ……！？
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 0,-50]
+[charaMove A 1 0.4]
+[charaShake A 0.02 3 3 0.6]
+[wt 0.8]
+
+＠オキタ・Ｊ・ソウジ
+すみません、その呼び名やっぱり慣れませんね……。
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠マシュ
+それにしても沖田さんはなぜ水着剣豪に……。[r]カルデアに残っていた筈では……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠オキタ・Ｊ・ソウジ
+じ、実はこれには深いわけがありまして、[r]話せば長くなるのですが……。
+[k]
+
+
+[charaFace A 4]
+＠オキタ・Ｊ・ソウジ
+ホワンホワンホワンミブロ～……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 19]
+[charaFadein C 0.1 1]
+
+＠カジノ魔王
+え？　ここから回想？
+[k]
+
+[messageOff]
+[se ade84]
+[wt 0.2]
+[wipeout circleIn 2.0 1.0]
+[bgmStop BGM_EVENT_11 2.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[charaSet A 1098180800 1 水着沖田さん]
+[charaSet B 7029000 1 水着ノッブ]
+[charaSet C 7026000 1 茶々]
+[charaSet D 10007001 1 沖田オルタ]
+[charaSet E 3038000 1 長尾景虎]
+[charaSet F 7035001 1 森長可]
+[charaSet G 7025001 1 土方歳三]
+[charaSet H 1098138000 1 坂本龍馬]
+[charaSet I 1098139000 1 お竜さん]
+
+[charaDepth I 1]
+[charaDepth H 9]
+
+[branch lblNotClear2 IsClear false]
+[scene 66600]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10310]
+[label lblConf2]
+
+[pictureFrame cut063_cinema]
+[wt 1.5]
+
+[seStop ade84 1.5]
+
+[wipein circleIn 1.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 0,-50]
+[wt 0.4]
+
+[bgm BGM_EVENT_94 0.1]
+
+＠水着沖田さん
+フンフンフ～ン♪
+[k]
+
+＠水着沖田さん
+イェーイ！　水着沖田さん大勝利～！！
+[k]
+
+[charaFace A 0]
+＠水着沖田さん
+いやー、水着を求めて苦節何年でしたかね……。
+[k]
+
+＠水着沖田さん
+ノッブに煽られ続けること幾星霜、[r]長く厳しい下積み時代でした。
+[k]
+
+[charaFace A 18]
+＠水着沖田さん
+まあ、今となってはそんなことは[r]どうでもいい事ですがね！
+[k]
+
+＠水着沖田さん
+そうです、ついに……！
+[k]
+
+[charaFace A 1]
+＠水着沖田さん
+ついにあの沖田さんが水着で登場ですよ！
+[k]
+
+＠水着沖田さん
+実際問題、我ながら素敵すぎませんかね、[r]この水着姿！　胸のリボンとか実にキュートです！
+[k]
+
+[charaFace A 18]
+＠水着沖田さん
+ふふふふふ……！[r]これにはマスターやノッブたちも[line 3]
+[k]
+
+[messageOff]
+[fadeout white 0.8]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 39900]
+
+[wipeFilter circleIn 0.5 0.5]
+
+
+[pictureFrame]
+[wt 1.0]
+
+
+[fadein white 0.8]
+[wait fade]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠水着ノッブ
+ゲェー！？　どうしたんじゃ沖田！？[r]その激烈マブイ水着姿はーーーっ！？
+[k]
+
+＠水着ノッブ
+可愛すぎてわし大敗北なんじゃがー！？！？？？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+＠水着沖田さん
+ふふふ……[r]そうでしょう、そうでしょう。
+[k]
+
+＠水着沖田さん
+あんぽんたんのノッブもようやく気付いたようですね。
+[k]
+
+[charaFace A 1]
+＠水着沖田さん
+この沖田さんが水着姿に着替えたら、その魅力は[r]幕末最強新選組☆娘と言っても過言ではありませんとも！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠水着ノッブ
+おのれ、大方、クソダサクイックＴシャツとかの[r]水着が関の山じゃろうと思っとったわし、浅はか！
+[k]
+
+＠水着ノッブ
+今世紀最高にクソ可愛い水着ではないか！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠茶々
+確かにとてつもなく似合ってるかも！[r]これには茶々も脱帽ならぬ脱兜だし！
+[k]
+
+[charaFace C 4]
+
+＠茶々
+この殿下の兜、夏は蒸すからアレなのよね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠沖田オルタ
+流石は元祖私だな、素敵すぎる水着姿だ。
+[k]
+
+＠沖田オルタ
+下手をするとその可愛さは抑止の対象に[r]なるかもしれないレベルだぞ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaSet C 6033000 1 岡田以蔵]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠長尾景虎
+これは[#毘沙門天:びしゃもんてん]、いや弁天様の化身と[#謳:うた]われても[r]差支えの無い神々しさですね。
+[k]
+
+＠長尾景虎
+具体的に言いますと神性Ａ＋とかの神話級の[r]凄いパッシブスキルが雑についちゃいますよ、多分！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+
+＠森長可
+うひゃはははははは！　なんだよその格好！[r]すげぇ[#傾奇:かぶき]っぷりだな！
+[k]
+
+＠森長可
+こりゃあ利休居士も裸足でタップダンスじゃねぇの！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.1 1]
+
+＠土方歳三
+ふ……今まで気づかなかったが、[r]まさかてめぇがこれほどの魅力を秘めていたとはな、
+[k]
+
+＠土方歳三
+俺のハートも撃ち抜かれたぜ。[r]普段はさらし巻いてやがったかてめぇ。
+[k]
+
+＠土方歳三
+だが流石は新選組一番隊隊長、沖田総司。[r]この際、ダイナマイツ☆オキタに改名しちゃどうだ？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFace I 5]
+[charaFadein H 0.1 1]
+[charaFadein I 0.1 1]
+
+＠坂本龍馬
+たしかにこれは超絶魅力的と言わざるを得ないね。[r]日本の夜明けは沖田君から始まるに違いないよ。
+[k]
+
+[charaFace H 0]
+
+＠坂本龍馬
+お竜さんもそう思うだろ？
+[k]
+
+＠お竜さん
+ああ、こいつ人間にしては美しすぎる女剣士だぞ、[r]まさか地上に降り立ったウルトラ天女か？
+[k]
+
+[charaFace I 1]
+
+＠お竜さん
+お祝いにカエルを１ケース届けさせよう。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠岡田以蔵
+よっ！　さすが幕末最強の美少女剣士様！[r]このクソ雑魚人斬りの以蔵も頭が下がりますきに！
+[k]
+
+＠岡田以蔵
+わしが脚でもお揉み致しましょうか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠水着沖田さん
+いやー、やめてくださいよ皆さん。
+[k]
+
+[charaFace A 18]
+
+＠水着沖田さん
+そんなに褒められるとこそばゆいですが、[r]それほどのこともありますかね！
+[k]
+
+＠水着沖田さん
+何といっても、我ながら沖田さんの水着姿、[r]素敵すぎますし！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaSet C 7026000 1 茶々]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠水着ノッブ
+その通りじゃ沖田。改めて、クソダサＴシャツの[r]わしなんぞ足元にも及ばぬ、
+[k]
+
+＠水着ノッブ
+天才美少女水着剣士の沖田様を皆で称えようではないか！
+[k]
+
+＠水着ノッブ
+水着姿おめでとう！　おめでとう！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+
+[charaTalk off]
+[charaDepth D 5]
+[charaDepth C 6]
+
+[charaFace C 1]
+[charaFace D 1]
+[charaFadein C 0.1 -230,0]
+[charaFadein D 0.1 230,0]
+
+＠みんな
+おめでとう！　おめでとう！　おめでとう！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaSet C 6033000 1 岡田以蔵]
+
+[charaDepth E 2]
+[charaDepth F 3]
+[charaDepth G 4]
+[charaFace E 14]
+[charaFace F 1]
+[charaFace G 1]
+[charaFadein E 0.1 1]
+[charaFadein F 0.1 260,0]
+[charaFadein G 0.1 -290,0]
+
+
+＠みんな
+おめでとう！　おめでとう！　おめでとう！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaDepth H 6]
+[charaDepth I 5]
+[charaDepth C 7]
+[charaFace H 1]
+[charaFace I 1]
+[charaFace C 1]
+[charaFadein H 0.1 -220,0]
+[charaFadein I 0.1 -220,0]
+[charaFadein C 0.1 250,0]
+
+＠みんな
+おめでとう！　おめでとう！　おめでとう！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+[se ad6]
+[seVolume ad6 0 0]
+[seVolume ad6 0.6 1.0]
+[wt 2.0]
+
+[seStop ad6 1.0]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 7]
+＠水着沖田さん
+皆さん、ありがとうございます！　ありがとうございます！
+[k]
+
+＠水着沖田さん
+これまで生きてきた幕末と全ての新選組に感謝！
+[k]
+
+[charaFace A 1]
+＠水着沖田さん
+水着沖田さん、[wt 0.4]大、[wt 0.4]大、[wt 0.4]大勝利～！！
+[k]
+
+[messageOff]
+[fadeout white 0.8]
+[wait fade]
+
+[wipeOff]
+
+[branch lblNotClear3 IsClear false]
+[scene 66600]
+[branch lblConf3]
+[label lblNotClear3]
+[scene 10310]
+[label lblConf3]
+
+[pictureFrame cut063_cinema]
+
+[charaSet D 25003002 1 ヒロインＸＸ]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+[wt 1.0]
+
+
+[fadein white 0.8]
+[wait fade]
+
+＠水着沖田さん
+[line 3]となること間違いありません！
+[k]
+
+[charaFace A 1]
+
+＠水着沖田さん
+ふんふふ～ん♪
+[k]
+
+＠水着沖田さん
+早速、みんなに見せびらかしに行きましょう！
+[k]
+
+[messageOff]
+[se ad59]
+[charaFadeout A 0.7]
+[charaMove A 206,-50 0.7]
+[wipeout rectangleStripRightToLeft 1.0 1.0]
+[seStop ad59 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[se ad95]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 50,-50]
+[charaMove D 0,-50 0.4]
+[wt 0.4]
+[seStop ad95 0.4]
+[wt 0.4]
+
+＠ヒロインＸＸ
+くっ！　まさかカップ麺にお湯を注いだ直後に[r]出動とはついていませんね、私！
+[k]
+
+
+＠ヒロインＸＸ
+ですが、そこは凄腕宇宙刑事の私ですから、[r]出撃からたったの３分で目標殲滅！
+[k]
+
+＠ヒロインＸＸ
+また一つ宇宙の危機を救ってしまいました。[r]今年のボーナス査定は期待できますね！
+[k]
+
+[charaFace D 2]
+
+＠ヒロインＸＸ
+それにこの時間ならばさっきお湯を注いだ[r]カップ麺もまだ伸びていないはず！
+[k]
+
+＠ヒロインＸＸ
+待っていてください！　今月最後の私のカップ麺！
+[k]
+
+[messageOff]
+[se ad59]
+[charaFadeout D 0.7]
+[charaMove D -206,-50 0.7]
+[wipeout rectangleStripLeftToRight 1.0 1.0]
+[seStop ad59 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+
+[se ad59]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 -256,-50]
+[charaMove A 0,-50 0.4]
+[wt 0.4]
+
+＠水着沖田さん
+フンフフ～ン♪
+[k]
+
+[seStop ad59 0.1]
+[charaFace A 6]
+＠水着沖田さん
+あ[messageShake 0.04 3 3 0.4]っ！？
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[se ad59]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 256,-50]
+[charaMove D 0,-50 0.4]
+[wt 0.4]
+
+＠ヒロインＸＸ
+わったっしのカップ麺～♪
+[k]
+
+[seStop ad59 0.1]
+[charaFace D 2]
+＠ヒロインＸＸ
+え[messageShake 0.04 3 3 0.4]っ！？
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+
+[charaTalk off]
+
+[charaFace D 2]
+[charaFadein D 0.4 460,-50]
+
+[charaFace A 6]
+[charaFadein A 0.4 -460,-50]
+[wt 0.3]
+
+
+[se ad59]
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wt 0.1]
+[charaMove A -100,-50 0.6]
+[charaMove D 100,-50 0.6]
+[wt 0.5]
+
+[seStop ad59 0.4]
+[se ad322]
+[seVolume ad322 0 0.5]
+[charaShake A 0.03 4 4 0.5]
+[charaShake D 0.03 4 4 0.5]
+
+
+
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_94 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+
+[effect bit_talk_celebro 0,75]
+[backEffect bit_talk_celebro_back 0,75]
+
+[charaSet E 1098177600 1 水着沖田さん（シルエット）]
+[wt 1.0]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.4 0,-100]
+[charaMove D 0,-50 0.4]
+[wt 0.8]
+
+[effectStop bit_talk_celebro]
+[backEffectStop bit_talk_celebro_back]
+
+＠ヒロインＸＸ
+あいたたた……。し、失礼しました。[r]急いでいたもので……。
+[k]
+
+＠ヒロインＸＸ
+アナタはたしか以前ボイラー室の横でお会いした、[r]沖田さん……でしたか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+＠E：水着沖田さん
+…………。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+
+＠ヒロインＸＸ
+大丈夫ですか？　軽くぶつかっただけですし、[r]みたところ怪我はなさそうですが……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠E：水着沖田さん
+…………。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠ヒロインＸＸ
+あのー、返事がないのですが、もしもーし？
+[k]
+
+＠ヒロインＸＸ
+ＣＱ？　ＣＱ？　応答してくださーい？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠E：水着沖田さん
+…………。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,-50]
+＠ヒロインＸＸ
+…………こ、これはまさか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠E：水着沖田さん
+…………（ちーん）
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,-50]
+＠ヒロインＸＸ
+…[messageShake 0.02 3 3 0.4]…し、死んでる！？[se ad119]
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+[scene 49000]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+＠ヒロインＸＸ
+た、大変なことになってしまいました……、
+[k]
+
+＠ヒロインＸＸ
+非好戦的な原生生物の殺害となると、[r]今年のボーナスは間違いなく減額、
+[k]
+
+＠ヒロインＸＸ
+下手をすると全額カット！？
+[k]
+
+＠ヒロインＸＸ
+このままでは、来月分のカップ麺も[r]仕入れられません……！
+[k]
+
+[charaFace D 2]
+＠ヒロインＸＸ
+かくなる上はユニヴァース的科学力で[r]なんとか彼女を救うしかありません！
+[k]
+
+[charaFace D 4]
+＠ヒロインＸＸ
+幸い、なんとなく発見したこの謎の工房と、[r]私のアーマーの余剰パーツでなんとかなるかも……
+[k]
+
+[charaFace D 2]
+＠ヒロインＸＸ
+いえ、してみせます！　がんばれ私！[r]ボーナスの神様が見ていますので！
+[k]
+
+＠ヒロインＸＸ
+絶対に負けられない戦いがここにはある！
+[k]
+
+[messageOff]
+[wipeout rollRight 0.7 0.5]
+[wait wipe]
+
+[charaSet I 98115000 1 ダミーエフェクト５]
+
+[charaScale I 0.55]
+[charaRoll I 30]
+[wt 0.5]
+
+[wipein rollLeft 0.7 0.5]
+[wait wipe]
+[wt 0.3]
+
+＠ヒロインＸＸ
+それでは早速、改造手術を開始します！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[se ad712]
+[seVolume ad712 0 0.8]
+[se ade318]
+[wt 1.0]
+[scene 10001 0.1]
+[wt 0.1]
+[scene 49000 0.1]
+[wt 0.1]
+[scene 10001 0.1]
+[wt 0.1]
+[scene 49000 0.1]
+[wt 1.4]
+
+[seVolume ad712 1.0 0.1]
+[seVolume ade318 1.0 0.4]
+
+＠ヒロインＸＸ
+えーと、このパーツはここ……。
+[k]
+
+＠ヒロインＸＸ
+とりあえず生命維持装置代わりに、[r]このギャラクシー・セル・ドライブを設置して、
+[k]
+
+＠ヒロインＸＸ
+動力源はあのとき原始宇宙で拾った[r]よく分からないエネルギージェムをセット。
+[k]
+
+＠ヒロインＸＸ
+あとはユニヴァース的にはちょっと時代遅れ気味な[r]ジェットパックにリアクターを装着してと……。
+[k]
+
+[messageOff]
+[se ad516]
+[wt 1.0]
+
+[se ad516]
+[wt 1.0]
+
+[fadeout black 1.5]
+[seStop ad712 1.5]
+[seStop ade318 1.5]
+[wait fade]
+
+
+[charaSet A 1098180700 1 水着沖田さん]
+[charaSet E 1098180700 1 水着沖田さん（シルエット）]
+[charaSet H 98115000 1 ダミーエフェクト６]
+[charaFilter E silhouette 000000FF]
+
+[charaDepth E 1]
+[charaDepth D 1]
+[charaDepth H 9]
+[charaDepth A 9]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 0,-50]
+
+＠ヒロインＸＸ
+[line 3]で、出来た！
+[k]
+
+＠ヒロインＸＸ
+これで理論上は完璧のはずです！　多分！
+[k]
+
+[charaFace D 2]
+＠ヒロインＸＸ
+さあ、蘇るのです！　私のボーナス！
+[k]
+
+＠ヒロインＸＸ
+……じゃない、新たな戦士よ！
+[k]
+
+＠ヒロインＸＸ
+スイッチ、オン！　レヴォルーション！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[se ad1]
+[wt 1.0]
+[se ad270]
+[seVolume ad270 0 0.6]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 0,-50]
+[wt 0.8]
+＠B：？？？
+……う、うーん。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠ヒロインＸＸ
+やりました、成功です！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+[charaShake E 0.02 3 3 0.5]
+＠B：？？？
+はっ？！　ここは一体……？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠ヒロインＸＸ
+気が付いたようで何よりです。私は無実のもの。[r]廊下で倒れたアナタを手当てしていたのです。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠B：？？？
+そ、それはどうもご丁寧に……、
+[k]
+
+＠B：？？？
+すみません、昔から虚弱なもので、[r]ちょっとしたことで倒れてしまうんですよね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠ヒロインＸＸ
+道理で。ますます私は悪くない感じになってきました。[r]ところで、もう安心ですよ。
+[k]
+
+＠ヒロインＸＸ
+これからはそのジェットパックが[r]アナタの身体を守ってくれますから。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠A：？？？
+そ、それはどうもご丁寧に……、
+[k]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+＠B：？？？
+なるほど……、って、え？　ジェット？
+[k]
+
+[messageOff]
+[wt 0.2]
+
+[charaTalk off]
+[charaDepth A 4]
+[charaDepth E 6]
+
+[charaFace A 4]
+[charaFadein A 0.4 0,-50]
+[wt 0.5]
+
+[charaFadeout E 0.7]
+[wt 1.5]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk on]
+[charaFace A 2]
+＠A：？？？
+え[messageShake 0.02 3 3 0.6]ーっ！？　な、なんですかこれ！？
+[k]
+
+＠A：？？？
+じぇ、ジェット！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠ヒロインＸＸ
+生命維持装置内蔵の空間戦闘用ガジェットですが、なにか？
+[k]
+
+＠ヒロインＸＸ
+少し旧式ですがこの星の文明レベルからすると[r]間違いなくオーパーツクラスですし、
+[k]
+
+＠ヒロインＸＸ
+頑張れば宙間戦闘もいけるかもしれません。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-50]
+
+＠A：？？？
+いやいや、よりにもよってジェットって！？
+[k]
+
+＠A：？？？
+沖田さんこう見えても幕末の正統派美少女剣士なんですよ！？
+[k]
+
+＠A：？？？
+ジェットとかおかしいでしょ！？　幕末ジェット！？
+[k]
+
+[messageOff]
+[se ade102]
+[seVolume ade102 0 0.4]
+[charaMove A 0,-30 2.0]
+[wt 2.4]
+[seStop ade102 0.5]
+[wt 0.4]
+
+[charaFace A 6]
+＠A：？？？
+うわっ！？　と、飛んだ！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠ヒロインＸＸ
+ははは。[r]そりゃ飛びますよ、ジェットですから。
+[k]
+
+
+＠ヒロインＸＸ
+アナタは生まれ変わったのです、沖田総司さん。[r]そう、[#蒼穹:そうきゅう]を翔けるジェット剣士、
+[k]
+
+[charaEffect H bit_talk_41]
+[charaFace D 2]
+＠ヒロインＸＸ
+[line 3]オキタ・Ｊ・ソウジとして！（適当）[se ad186]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-30]
+
+＠オキタ・Ｊ・ソウジ
+お、オキタ・Ｊ・ソウジ！？
+[k]
+
+[charaFace A 2]
+
+＠オキタ・Ｊ・ソウジ
+って、ＪってなんですかＪって！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠ヒロインＸＸ
+ジェット　の　Ｊ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-30]
+
+＠オキタ・Ｊ・ソウジ
+そういう問題じゃないですよ！？[r]こんな格好じゃ外歩けませんよ、お返しします！
+[k]
+
+[messageOff]
+[se ad156]
+[charaShake A 0.05 2 2 0.9]
+[wt 1.2]
+[seStop ad156 0.1]
+[wt 0.4]
+
+[charaFace A 4]
+
+＠オキタ・Ｊ・ソウジ
+あ、あれ？　外れませんよ、これ……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠ヒロインＸＸ
+はい。生命維持装置も兼ねてますので。
+[k]
+
+
+＠ヒロインＸＸ
+えーと、炉心のＭ・ＤＲＩＶＥの説明書はと……[se ade96]
+[k]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+＠ヒロインＸＸ
+なになに稼働時間は………………[wt 0.8][messageShake 0.02 3 3 0.4][charaFace D 2]あーーーーーっ！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-30]
+
+＠オキタ・Ｊ・ソウジ
+ど、どうしたんです？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+
+＠ヒロインＸＸ
+も、申し訳ありません。急いでいたので説明書を[r]よく読んでなかったのですが、
+[k]
+
+＠ヒロインＸＸ
+生命維持装置の稼働時間はあと７２時間、[r]すなわち、地球時間であと３日ほど……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-30]
+
+＠オキタ・Ｊ・ソウジ
+説明書も読まずに作るってプラモデルじゃあるまいし、[r]右足と左足の関節間違えたらどうするんですか、
+[k]
+
+[charaFace A 2]
+
+＠オキタ・Ｊ・ソウジ
+…[messageShake 0.02 3 3 0.4]…って、３日！？
+[k]
+
+＠オキタ・Ｊ・ソウジ
+私の命、あと３日なんです！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+
+＠ヒロインＸＸ
+説明書によるとそのようです……
+[k]
+
+＠ヒロインＸＸ
+す、すみません、助けるつもりが[r]まさかこのようなことになるとは……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-30]
+
+＠オキタ・Ｊ・ソウジ
+どうするんですか、これ！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,-50]
+
+＠ヒロインＸＸ
+あ、慌てないでください！
+[k]
+
+＠ヒロインＸＸ
+こういう時こそ落ち着いてカップ麺に[r]お湯を注ぎましょう。
+[k]
+
+[messageOff]
+[se ade256]
+[seVolume ade256 0 0]
+[seVolume ade256 0.6 1.0]
+[charaFace D 5]
+[charaMove D 0,-60 0.6]
+[wt 0.8]
+
+[charaMove D 0,-50 0.4]
+[seStop ade256 0.4]
+[wt 1.8]
+
+[se ade116]
+[charaFace D 2]
+[charaMoveReturn D 0,-40 0.2]
+[wt 0.8]
+
+＠ヒロインＸＸ
+……[#閃:ひらめ]いた、そうです！
+[k]
+
+＠ヒロインＸＸ
+聖杯！　そう、こういう時は聖杯です！[r]聖杯があれば何でもできる！
+[k]
+
+＠ヒロインＸＸ
+たしか今ラスベガスで開かれている水着剣豪[r]七色勝負とやらで勝ち抜けば聖杯が手に入るとか！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-30]
+
+＠オキタ・Ｊ・ソウジ
+み、水着剣豪七色勝負……！
+[k]
+
+[messageOff]
+[se ade84]
+[wt 0.2]
+[bgmStop BGM_EVENT_81 2.0]
+[wipeout circleIn 2.0 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[pictureFrame]
+
+[charaSet B 11007002 1 カジノ魔王]
+[charaSet F 1040000 1 葛飾北斎]
+
+[scene 10721]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 1.5]
+
+[seStop ade84 1.5]
+[wipein circleIn 1.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠オキタ・Ｊ・ソウジ
+[line 3]というわけで、私は水着剣豪七色勝負に[r]勝ち抜いて聖杯を手に入れ、
+[k]
+
+＠オキタ・Ｊ・ソウジ
+この身体を治すつもりだったのです……。
+[k]
+
+？1：あと三日の命……！？
+？2：そ、そんな……
+
+？！
+
+＠オキタ・Ｊ・ソウジ
+ちなみにここに来るまでに道に迷ったり[r]うっかり屋台の焼きそばを買い食いしていたせいで、
+[k]
+
+＠オキタ・Ｊ・ソウジ
+残り時間はあと１０分ほどに……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠カジノ魔王
+貴[messageShake 0.02 3 3 0.6]重な時間を無駄遣いしすぎであろう！？
+[k]
+
+＠カジノ魔王
+なに買い食いとかしとるんじゃ、貴様は！
+[k]
+
+[charaFace B 19]
+
+＠カジノ魔王
+ん？　というかその話の流れだと我の賭場、[r]貴様に破壊される理由なくない？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠オキタ・Ｊ・ソウジ
+いえ、それはそれ、無認可[#賭場:カジノ]とか、[r]新選組的に見過ごせませんし。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 19]
+[charaFadein B 0.1 1]
+
+＠カジノ魔王
+うわー、これじゃから人斬りサークルは嫌なのよな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠葛飾北斎
+なんてこったい、それならそうと言ってくれりゃあ[r]おれだって……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠オキタ・Ｊ・ソウジ
+いえ、剣士が一度相対すればあとは命のやり取りのみ。
+[k]
+
+＠オキタ・Ｊ・ソウジ
+そこに善悪も[#主義主張:しゅぎしゅちょう]も関係ありません、[r]私の身体の事とは別の話なのです。
+[k]
+
+[charaFace A 0]
+
+＠オキタ・Ｊ・ソウジ
+覚えておいてください、北斎さん、[r]剣に生きるとはそういう事なのですから。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠葛飾北斎
+おきた・Ｊ・そうじ……、あんた……。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 0.3]
+
+[se ade128]
+[charaMove A 0,-10 0.7]
+[wt 2.0]
+
+＠オキタ・Ｊ・ソウジ
+すみません、リアクターの出力落ちてきました。
+[k]
+
+＠オキタ・Ｊ・ソウジ
+それに目もよく見えなくなってきました……。
+[k]
+
+＠オキタ・Ｊ・ソウジ
+マスター……、最後にお願いがあるのですが[r]聞いていただけますか？
+[k]
+
+？1：沖田さんのお願い……？
+
+？2：オキタ・Ｊ・ソウジのお願い……？
+
+？！
+
+＠オキタ・Ｊ・ソウジ
+……ええ、最後にラスベガスの夕日を[r]私に見せてくれませんか？
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_11 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

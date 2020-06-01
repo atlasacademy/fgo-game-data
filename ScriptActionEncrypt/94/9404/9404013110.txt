@@ -1,0 +1,247 @@
+
+
+
+＄94-04-01-31-1-0
+
+
+[soundStopAll]
+
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 1040000 1 葛飾北斎]
+[charaSet C 1040000 1 葛飾北斎(シルエット)]
+[charaSet D 3029001 1 源頼光]
+
+[charaFilter C silhouette 000000FF]
+
+[branchQuestNotClear lblNotClear1 3000303]
+[flag IsClear true]
+[branch lblConf1]
+[label lblNotClear1]
+[flag IsClear false]
+[label lblConf1]
+
+
+
+[branch lblNotClear2 IsClear false]
+[scene 66600]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10310]
+[label lblConf2]
+
+[pictureFrame cut063_cinema]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠源頼光
+禁制禁制！　ご禁制ですよ！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[pictureFrame]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+あの声は……[r]ランサー霊基の頼光さんでしょうか？
+[k]
+
+
+＠マシュ
+一体誰がご禁制なんでしょう？
+[k]
+
+？1：行ってみようか
+？2：騒ぎになるといけないしね
+
+？！
+
+[charaFace A 7]
+
+＠マシュ
+はい！
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠源頼光
+まったくもう、なんですかその装いは。[r]うら若き乙女がそのように肌を晒してはなりません。
+[k]
+
+[charaFace D 2]
+
+＠源頼光
+万歩譲って観光地ならまだしも、ここは違いましょう。[r]禁制禁制、ご禁制ですよ！
+[k]
+
+＠源頼光
+節度を守り、過去と現在の己に恥じぬ装いを。[r][line 3]そこの貴女！　貴女ですよ！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[charaTalk off]
+[charaDepth B 4]
+[charaDepth C 6]
+
+[charaFace C 0]
+[charaFadein C 0.7 1]
+[wt 0.7]
+
+[charaFace B 10]
+[charaFadein B 0.4 1]
+[wt 0.6]
+
+[charaFadeout C 0.7]
+[wt 1.2]
+
+[charaTalk on]
+＠葛飾北斎
+…………恥だァ？
+[k]
+
+[charaFace B 12]
+＠葛飾北斎
+なーにを恥じることがあるってんだ。[r]肌が出ようがなんのその、[#産声:うぶごえ]発したまんまのおれ自身！
+[k]
+
+＠葛飾北斎
+せいぜいお天道様に見せつけてやるサア！[r]それが、このおれヨ！
+[k]
+
+[charaFace B 2]
+＠葛飾北斎
+天才剣客絵師にして未来の仙女！[r]葛飾北斎だ！
+[k]
+
+？1：あれ！？
+？2：また水着の霊基になってる！？
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+い、いえ、先輩違います！
+[k]
+
+＠マシュ
+確認しました。[r]元の北斎さんは現在食堂にいらっしゃるようで……
+[k]
+
+＠マシュ
+つまりあの北斎さんは完全な別霊基、別の個体です！
+[k]
+
+？1：霊基が分離したのかな
+
+[charaFace A 7]
+＠マシュ
+は、はい。おそらく。
+[k]
+
+？2：今更驚かないけどね！
+
+＠マシュ
+あ……。
+[k]
+
+[charaFace A 7]
+＠マシュ
+そういえば、そうかもですね。[r]ジャンヌ・ダルク・オルタ・サンタ・リリィさん……
+[k]
+
+＠マシュ
+……サンタなジャンヌ・オルタさんの例もあります。
+[k]
+
+＠マシュ
+本来ひとつの霊基だったものが、[r]ふたつに分かれた例は以前にも……。
+[k]
+
+？！
+
+[charaFace A 12]
+＠マシュ
+…………でも、そうなると、あれ？
+[k]
+
+＠マシュ
+蛸風の、お父さんのほうの北斎さんは……[r]どういうことになるんでしょうね……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠葛飾北斎
+お、ますたあ！　それに、ましゅかい！
+[k]
+
+＠葛飾北斎
+涙の別れの後だってのに悪いが、[r]こうして顕れちまったみてえだし、マアなんだ。
+[k]
+
+[messageOff]
+[charaFace B 1]
+[wt 1.2]
+
+[charaFace B 7]
+
+＠葛飾北斎
+今後ともよろしく！　ってこった！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

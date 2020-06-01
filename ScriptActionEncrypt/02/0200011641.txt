@@ -1,0 +1,61 @@
+
+＄02-00-01-16-4-1
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 98111500 1 ダ・ヴィンチ]
+[charaSet C 98111500 1 通信用ノイズ]
+[charaSet D 1002001 1 アルトリア・オルタ]
+[charaSet E 2023000 1 モリアーティ]
+[charaSet F 98086000 1 ホームズ]
+
+[soundStopAll]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 38800]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaPut C 1]
+[charaEffect C bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0 0,-90]
+[wt 0.3]
+＠ダ・ヴィンチ
+いやー、すまないすまない。[r]ちょっと興が乗りすぎたようだ。
+[k]
+
+[charaFace B 0]
+＠ダ・ヴィンチ
+以前なら[line 3]。[r]あ、いや何でもない。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+＠マシュ
+……はい！[r]ともかく、座標によればもうすぐ最上階です。
+[k]
+
+[charaFace A 7]
+＠マシュ
+サーヴァントの反応もあります。[r]どうかマスター、気をつけて下さい……！
+[k]
+
+
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 2.0]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

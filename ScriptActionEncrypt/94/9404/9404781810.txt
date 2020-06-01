@@ -1,0 +1,116 @@
+
+
+
+＄94-04-78-18-1-0
+
+
+[soundStopAll]
+
+
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 2016000 1 エミヤ・オルタ]
+[charaSet C 6019001 1 風魔小太郎]
+[charaSet E 98115000 1 エフェクト用]
+[charaSet F 25005000 1 ボイジャー]
+
+[charaPut E 1200,1200]
+[charaEffect E bit_talk_41]
+[charaScale E 0.7]
+
+[scene 47001]
+
+[pictureFrame cut170_gameframe_dark]
+
+
+[fadein black 1.5]
+[wait fade]
+
+[pictureFrame]
+[pictureFrameTop cut170_gameframe_dark]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+[wt 1.2]
+
+[charaFadeout F 0.1]
+[wt 0.3]
+
+[effect bit_talk_dice110]
+[voice 2500500_0_X020]
+[wt 6.0]
+[wait voice 2500500_0_X020]
+
+
+[se ad399]
+[charaPut E 0,-70]
+[cameraMove 0.2 0,0 1.5]
+[wipeout circleOut 0.4 1.0]
+[wait wipe]
+
+[cameraHome 0.1]
+[charaPut E 1200,1200]
+[charaEffectStop E bit_talk_41]
+[charaScale E 1.0]
+[wt 1.0]
+
+[wipein circleIn 0.4 1.0]
+[seStop ad399 0.4]
+[wait wipe]
+
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠マシュ
+ワープしました！[r]引き離します！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_62 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠エミヤ・オルタ
+そうはいかないらしいな。[r]番人がお待ちかねだ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 10]
+[charaDepth C 1]
+
+[charaPut E 0,0]
+[charaPut C 0,-50]
+[charaTalk C]
+[charaFace C 0]
+[se ad73]
+[charaEffect E bit_talk_quickmove]
+[charaSpecialEffect C appearance 1 0.25]
+[wt 0.4]
+
+＠風魔小太郎
+恨まないで欲しいんですが……、[bgm BGM_EVENT_3 0.1][r]足止めさせていただきます。
+[k]
+
+[messageOff]
+[maskout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[soundStopAll]
+[end]
+
+

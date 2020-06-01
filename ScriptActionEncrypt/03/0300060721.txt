@@ -1,0 +1,306 @@
+
+
+
+＄03-00-06-07-2-1
+
+
+[soundStopAll]
+
+[charaSet A 1017001 1 武蔵]
+[charaSet B 8001400 1 アーマード・マシュ]
+[charaSet C 8001410 1 マシュ]
+[charaSet D 1098128200 1 カイニス]
+
+[charaSet G 1098190300 1 ニコラ・テスラ]
+[charaSet H 1098123210 1 ゴルドルフ]
+
+[charaSet S 5009000 1 エフェクト用ダミー]
+[charaSet T 5009000 1 エフェクト用ダミー]
+
+[charaPut T 1200,1200]
+[charaEffect T bit_talk_10_red_ai 0,33]
+
+[charaPut S 1200,1200]
+[charaEffect S bit_talk_10_LowLevel]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 91803]
+[backEffect bit_talk_sparks]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_63 0.1]
+
+[se ad609]
+[se ad608]
+[shake 0.02 3 3 0]
+[wt 2.0]
+
+[se ad876]
+[se ade212]
+[wt 1.5]
+
+[seStop ade212 0.5]
+[shakeStop]
+
+[charaPut A 1]
+[charaEffect A bit_talk_quickmove 0,0 V]
+
+[charaTalk A]
+[charaFace A 5]
+[charaSpecialEffect A appearanceReverse 0,0 0.2]
+[wt 0.1]
+
+[se ad223]
+[charaEffectStop A bit_talk_quickmove]
+[wt 0.6]
+[wait charaSpecialEffect A]
+
+＠武蔵
+神の外殻、何枚かは落とせた感じ！[r]どうかしら……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth B 4]
+[charaDepth C 5]
+
+[se ade18]
+[seVolume ade18 0.0 0.5]
+[wt 0.5]
+[seStop ade18 0.8]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+[se ad658]
+[charaFace C 7]
+[charaFadein C 0.2 1]
+[wt 0.2]
+
+[charaFadeout B 0.4]
+[wt 0.4]
+
+
+[charaTalk on]
+＠マシュ
+はい！　機神デメテル、外殻の損傷大と見ます！[r]神核らしき箇所の露出を確認！
+[k]
+
+＠マシュ
+[#霊基外骨骼:オ ル テ ナ ウ ス]出力安定！[r]対神白兵戦闘、十数分までは継続できます！
+[k]
+
+
+？1：あと一歩だ！
+？2：このまま神核もたたく！
+
+？！
+
+[charaFace C 2]
+＠マシュ
+はい！
+[k]
+
+[bgmStop BGM_EVENT_63 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠カイニス
+待った待った待った！　待った！[r]揃いも揃って節穴揃いじゃねえかテメェらはよォ！
+[k]
+
+[charaFace D 11]
+
+＠カイニス
+クリロノミアを見くびるな！[r]……くそっ、ヤツの再生機能は完全に停止しちゃいねえ！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[backEffectDestroy bit_talk_sparks]
+[scene 93903]
+
+
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.5 1]
+[wait wipe]
+
+[se adm20]
+[flashin once 0.3 1.2 FFFFFF80 FFFFFF00]
+[wt 1.5]
+
+[scene 93904 1.0]
+[se ad886]
+[seVolume ad886 0 0.5]
+[wt 3.0]
+[seStop ad886 2.0]
+
+
+[bgm BGM_EVENT_24 0.1]
+
+[se ad13]
+＠アデーレ
+無限再生の再開を確認！[r]敵性機神、損傷箇所が塞がっていきます！
+[k]
+
+＠マカリオス
+あと少しだってのに……！[r]デメテル！　どこまでもオレたちを……
+[k]
+
+＠ゴルドルフ
+な、な、な、何をしているのかね畳み掛けたまえよ！[r]あれだろう貴様は大地の権能を中和できるのでは！？
+[k]
+
+＠カイニス
+やってンだよ！[r]やっててこの程度なんだ、くそったれの女神が！
+[k]
+
+＠カイニス
+ガイア直系は伊達じゃねえな異聞帯デメテルよォ！[r]ヌカ喜びさせやがって！
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.5 1]
+[bgm BGM_EVENT_24 0.5 0.4]
+[wait wipe]
+
+[scene 91803]
+[backEffect bit_talk_sparks]
+[wt 1.0]
+
+[bgm BGM_EVENT_24 0.5 1.0]
+[wipein rectangleStripUpToDown 0.5 1]
+[wait wipe]
+
+[charaPut T 1]
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠人工知能
+…………よもや。よもや、ここまで。
+[k]
+
+＠人工知能
+この多大なる幸運を持ってさえ、倒しきれんとは。[r]敵機体の性能予測はかなりの余裕を持って試算したが、
+[k]
+
+[charaFace G 5]
+
+＠人工知能
+それすら超える再生力！[r]我らの[#総:すべ]てを超えるというのか、オリュンポス機神群！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠カイニス
+[f large]まだだ！
+[k]
+
+＠カイニス
+あの海神を倒したテメェらが、[r]デメテル程度に負けてどうする！
+[k]
+
+＠カイニス
+そもそもテメェらをブッ殺すのはオレの役目だ！[r]こんなところで死なせてなんかやらねえよ！
+[k]
+
+[charaFace D 2]
+＠カイニス
+そうだろう、[%1]！[r]オラ、チョビ髭からの『届け物』を受け取りな！
+[k]
+
+＠カイニス
+[#正真正銘:しょうしんしょうめい]、そいつがテメェらの切り札だとさ！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 1.0]
+[wt 0.1]
+
+[se ad171]
+[charaShake D 0.02 3 3 0.4]
+[wt 1.0]
+
+[se ad215]
+[shake 0.02 3 3 0.4]
+[wt 0.6]
+
+
+
+？1：っと、なんとかキャッチ！
+
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+？1：[#霊基外骨骼:オ ル テ ナ ウ ス]と同じ規格の外付けパーツ……？
+
+？！
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠マシュ
+それは[line 3]まさか[line 3]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaPut S 1]
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠ゴルドルフ
+うむ！　我がカルデアの技術顧問と、アトラス院の[r]錬金術師が共同設計した[#霊基外骨骼:オ ル テ ナ ウ ス]の新装備！
+[k]
+
+＠ゴルドルフ
+人智ではとうてい及ばぬ長大な[#存在:いのち]を[r][#斃:たお]すために作られた[#癌細胞:キャンサー][line 3]
+[k]
+
+＠ゴルドルフ
+その名もブラックバレル！
+[k]
+
+＠ゴルドルフ
+七大兵器の一つと言われる『天寿』の概念武装だ！
+[k]
+
+[charaFace H 2]
+＠ゴルドルフ
+まあ、私もよく分からんのだが！[r]わはははははは！
+[k]
+
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_82 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

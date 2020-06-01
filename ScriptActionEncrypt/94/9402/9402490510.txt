@@ -1,0 +1,1175 @@
+
+
+＄94-02-49-05-1-0
+
+[soundStopAll]
+
+
+[charaSet A 10007000 1 沖田オルタ]
+[charaSet C 1098139000 1 お竜さん]
+[charaSet B 1098138000 1 龍馬]
+[charaSet D 6033000 1 以蔵]
+[charaSet E 1098135000 1 織田信長]
+[charaSet F 9940030 1 斥候ちびノブ]
+[charaSet G 98111600 1 織田信勝]
+[charaSet H 98002000 1 エフェクト用ダミー]
+
+[charaDepth B 9]
+[charaDepth C 1]
+[charaDepth H 10]
+
+[bgm BGM_EVENT_5 0.1]
+
+[scene 59700]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+＠織田信長
+………ほう、[r]ライダーとアサシンがのう。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠斥候ちびノブ
+ノ[voice 9940030_0_B030]ッブ！
+[k]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠織田信長
+フン、まあ小物が集まったところで[r]わしに勝てる道理もなし。
+[k]
+
+[charaFace E 5]
+＠織田信長
+貴様らは引き続き情報を集めよ。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠斥候ちびノブ
+ノ[voice 9940030_0_B010]ブッ！
+[k]
+
+[messageOff]
+[se ad132]
+[charaFadeout F 0.7]
+[wt 1.5]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFilter G silhouette 00000080]
+[charaFadein G 0.4 1]
+[wt 0.4]
+＠E：？？？
+信長様……。
+[k]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠織田信長
+………どうした？
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠E：？？？
+キャスターから使いの者が来ております。
+[k]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠織田信長
+ほう……、キャスターがのう。[r]本気で組もうとしとるとも思えんが……。
+[k]
+
+
+
+[charaFace E 0]
+＠織田信長
+まあ、話ぐらいは聞いてやれ[#信勝:のぶかつ]。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFilter G normal 00000080]
+[charaFadein G 0.4 1]
+[wt 0.4]
+＠織田信勝
+[line 3]はっ！[r]承知しました、姉上。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_5 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+
+[wt 1.5]
+
+[fadeout white 2.0]
+[wait fade]
+
+[skip false]
+[scene 10001]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[fadein white 0.1]
+[wait fade]
+
+
+
+[input selectBranch]
+[messageOff]
+[skip false]
+[charaSet A 10007000 1 沖田オルタ]
+[charaSet C 1098139000 1 お竜さん]
+[charaSet B 1098138000 1 龍馬]
+[charaSet D 6033000 1 以蔵]
+[charaSet E 1098135000 1 織田信長]
+[charaSet F 9940030 1 斥候ちびノブ]
+[charaSet G 98111600 1 織田信勝]
+[charaSet H 98002000 1 エフェクト用ダミー]
+
+[bgmStop BGM_EVENT_5 0.4]
+
+[charaDepth B 9]
+[charaDepth C 1]
+[charaDepth H 10]
+
+[bgmStop BGM_EVENT_5 0.4]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+
+[scene 10001]
+[wt 0.4]
+[soundStopAll]
+[maskin white 1]
+[wait mask]
+[label selectBranch]
+
+[wt 0.4]
+
+[revivalBranch lblNormal lblRevival]
+
+[label lblNormal]
+
+[fowardEffect bit_queststart80107]
+[wait fowardEffect]
+
+[branch lblConf]
+[label lblRevival]
+
+[fowardEffect bit_queststart80242]
+
+[wait fowardEffect]
+
+[label lblConf]
+
+[fadeout white 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[fadein white 0.1]
+[wait fade]
+[wt 0.1]
+
+[fadeout black 2.0]
+[wait fade]
+
+[skip true]
+[wt 0.1]
+
+
+[scene 59300]
+
+[charaSet E 3017001 1 李書文]
+[charaSet F 1098150000 1 土方]
+[charaSet G 98025100 1 はぐれサーヴァント]
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1 1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠はぐれサーヴァント
+[image berserker_language_1][line 3]ッ！！！！
+[k]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠以蔵
+邪魔じゃ！　三下ぁっ！！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.3]
+
+[se bac6]
+[charaEffect G bit_talk_ichimon01wh]
+[wt 0.15]
+[charaShake G 0.01 4 4 0.4]
+[wt 0.4]
+
+＠はぐれサーヴァント
+[i berserker_language_2][line 3]ッ！？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.5]
+[charaFadeout G 0.4]
+[wt 0.4]
+
+[se ad144]
+[wt 1.2]
+
+[bgm BGM_EVENT_2 0.1 1.0]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠以蔵
+フン……、雑魚が。[r]おい、道が開いたき、いくぜよ。
+[k]
+
+？1：[#問答無用:もんどうむよう]だね……
+？2：なんていうかその……
+
+？！
+
+[charaFace D 13]
+＠以蔵
+なんじゃ？　なんぞ文句でもあるがか？
+[k]
+
+＠以蔵
+わしが斬らなんだら今頃おまんの首は[r]繋がっちょらんぞ。
+[k]
+
+＠以蔵
+それとも、死にたいがかおまんは？
+[k]
+
+？1：た、たしかにそうだけど……
+？2：ぐうの音も出ない正論
+
+？！
+
+[charaFace D 8]
+＠以蔵
+フン、まあおまんのサーヴァント、[r]まるきり素人じゃからのぅ。
+[k]
+
+＠以蔵
+わしじゃなけりゃ、こう簡単にはいかんき。
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+……む、事実だがかなり心外だぞ。[r]だがマスター、本当にいいのか？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.5]
+[wipeout circleOut 1.5 1]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[wipein circleIn 0.1 1]
+[wait wipe]
+
+[charaFace A 6]
+
+[cameraFilter gray]
+[wipeFilter cinema 0.1 0]
+[cameraMove 0.1 0,-50 1.0]
+
+[scene 59400]
+
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1 1.0]
+
+＠沖田オルタ
+こいつはマスターを殺そうとしてたんだぞ。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠龍馬
+大丈夫だよ、以蔵さん、仕事は真面目だから。[r][#勝:かつ]先生の時もしっかりやってくれたしね。
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+＠以蔵
+[#仕事は]は余計じゃ、[#仕事は]は！
+[k]
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[wipeOff]
+[cameraFilter normal]
+[cameraHome 0.1]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[scene 59300]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+[wt 0.5]
+
+[wipeout circleOut 0.1 1]
+[wait wipe]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipein circleIn 1.5 1]
+[wait wipe]
+
+[bgm BGM_EVENT_2 0.1 1.0]
+
+＠以蔵
+安心せい、わしは約束は守るがじゃ。
+[k]
+
+＠以蔵
+……あの嘘吐き、……龍馬とは違うきに。
+[k]
+
+？1：ところで坂本さんとはどういう？
+
+[charaFace D 13]
+＠以蔵
+……あいつとは同郷じゃ。昔は釣りでもなんでも、[r]つるんでよう遊んだもんじゃがな。
+[k]
+
+？2：意外といい人ですね
+
+[charaFace D 2]
+＠以蔵
+はぁ？　おまんも龍馬と同じ阿呆か？[r]手を貸すんは今だけじゃ、今だけ！
+[k]
+
+？！
+
+[charaFace D 2]
+＠以蔵
+とにかくこれが済んだらおまんらも[r]まとめて始末しちゃるきの！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.5]
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+
+[scene 59900]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1 1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠以蔵
+……ここじゃな。
+[k]
+
+？1：ここがランサーの……
+？2：なんでここが判ったの？
+
+？！
+
+[charaFace D 7]
+＠以蔵
+アサシンのわしは[#戦線:レッドライン]におる[r]サーヴァントの位置をおおむね把握できる。
+[k]
+
+＠以蔵
+つまりわしからは[r]誰も逃げられんちゆうことよ。
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+なるほどな、それで私たちの居場所もバレたわけか。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠以蔵
+……静かにせぇ。
+[k]
+
+
+[charaFace D 13]
+＠以蔵
+変じゃのぉ……、[r]さっきまであったランサーの気配が消えたぜよ。
+[k]
+
+？1：そうなの？
+
+＠以蔵
+今の今まで確かにランサーの気配が[r]しよったんじゃが……。
+[k]
+
+？2：もしかして間違えた？
+
+[charaFace D 12]
+＠以蔵
+[#天誅:てんちゅう]の名人といわれたこのわしが[r]間違えるわけないろうが！
+[k]
+
+？！
+
+[charaFace D 6]
+
+＠以蔵
+……いや、そういうことか。
+[k]
+
+[charaFace D 8]
+＠以蔵
+どうやらわしらの先客がおったようぜよ。
+[k]
+
+[charaFace D 0]
+
+＠以蔵
+……中じゃ、ついてこい。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.5]
+
+[wipeout leftToRight 1.5 1]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[scene 59700]
+[wt 0.5]
+
+[wipein rightToLeft 1.5 1]
+[wait wipe]
+
+[bgm BGM_EVENT_90 0.1 1.0]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+＠李書文
+……ようこそ、極東の客人。[r]とでもいうべきかな。
+[k]
+
+＠李書文
+まあ、儂もいま来たところだがな。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠以蔵
+……おんしがここのランサーをやったがか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠李書文
+[#呵々:カカ]、そう気構えるな！
+[k]
+
+
+[charaFace E 1]
+＠李書文
+聖杯戦争とやらに担ぎ出されたものの、[r][#有象無象:うぞうむぞう]がうろつくばかりで退屈でな。
+[k]
+
+[charaFace E 4]
+＠李書文
+こうして陣を構えた正規のサーヴァントとやらを[r]ものは試しと訪ねてみたが、ご覧のありさまよ。
+[k]
+
+＠李書文
+古今の[#英雄豪傑:えいゆうごうけつ]が集い[#鎬:しのぎ]を削る。[r]それが聖杯戦争と聞いた。
+[k]
+
+
+[charaFace E 1]
+＠李書文
+であれば、己が腕を試したくなるのも詮無きこと。
+[k]
+
+[charaFace E 4]
+＠李書文
+しかし『一つ打てば事足りる』と謳われた儂だが、
+[k]
+
+＠李書文
+実際、一突きで倒れられては[r]張り合いがなさすぎるというものだ。
+[k]
+
+？1：一撃でここのランサーを！？
+？2：以蔵さん、このランサーは……！
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+＠以蔵
+……おまんは黙っちょれ。
+[k]
+
+[charaFace D 9]
+＠以蔵
+フン、おおかた武芸者かなんかやろ？[r]道場剣法が何を偉そうに……。
+[k]
+
+[charaFace D 12]
+＠以蔵
+そこらの雑魚サーヴァントを倒した程度で[r]随分、調子に乗っちゅうるようじゃが、
+[k]
+
+＠以蔵
+このわしに見つかったのが運の尽きよ。
+[k]
+
+[charaFace D 5]
+＠以蔵
+今すぐぶった斬っちゃるき覚悟せい！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠李書文
+よいよい。よい声だ。[r]凶犬さながらよ。ぶち撒けるにも遠慮はいらん。
+[k]
+
+[charaFace E 0]
+＠李書文
+で、どちらから始めるのだ。[r][#纏:まと]めてでも一向にかまわんが。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠以蔵
+ああん？　こいつらはおまけやき。
+[k]
+
+＠以蔵
+おまんごとき槍使い、[r]わしの剣の敵やないきに。
+[k]
+
+[bgmStop BGM_EVENT_90 0.3]
+[wt 0.4]
+[bgm BGM_EVENT_24 0.1 1.0]
+[charaFace D 5]
+＠以蔵
+[line 3]死ねやあああああ！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+
+
+[effect bit_talk_ichimon01wh]
+[se ade23]
+[wt 0.2]
+
+[fowardEffect bit_talk_41]
+[wt 0.1]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[se ad170]
+[shake 0.03 3 3 0.7]
+[fowardEffectStop bit_talk_41]
+[wt 1.0]
+
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠李書文
+呵々、そう来なくてはな！
+[k]
+
+[charaFace E 0]
+＠李書文
+極東の剣術、しかと堪能させてもらおうぞ！
+[k]
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_24 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[scene 59800]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1 1.0]
+
+[charaTalk depthOff]
+[charaTalk B]
+[charaFace B 4]
+[charaFace C 0]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 1]
+＠龍馬
+……こいつは酷いありさまだね。[r]綺麗な花が台無しじゃないか。
+[k]
+
+＠龍馬
+バーサーカーにしたってこれほど[r][#無茶苦茶:むちゃくちゃ]するものかね。
+[k]
+
+＠龍馬
+一応、みんなの公園だよここ。
+[k]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace B 0]
+＠お竜さん
+手あたり次第、皆殺しカーニバル状態だな。[r]お竜さんでももう少し綺麗にやるぞ。
+[k]
+
+[charaTalk B]
+[charaFace B 11]
+＠龍馬
+いやあ、そこはいい勝負かも。[r]さて……、問題のバーサーカーだけど。
+[k]
+
+[charaTalk F]
+＠F：？？？
+……おい、おまえ。
+[k]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFace B 0]
+＠お竜さん
+あ、リョーマうしろ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.4 1]
+[wt 0.4]
+＠F：？？？
+おい、おまえ、……薩摩か？　長州か？
+[k]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 6]
+[charaFace C 0]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 1]
+＠龍馬
+おっと……、見つかったか。
+[k]
+
+[charaFace B 10]
+＠龍馬
+あれ？　身なりは随分違うけど[r]君はもしかして……、
+[k]
+
+＠龍馬
+[line 3]いやぁ、今回はつくづく[r]業の深いめぐりあわせだね。
+[k]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+＠F：？？？
+答えろ……、薩摩か？　長州か？
+[k]
+
+[bgmStop BGM_EVENT_5 1.0]
+＠F：？？？
+答えねぇってことは、
+[k]
+
+[bgm BGM_EVENT_3 0.1 1.0]
+＠F：？？？
+そういうことだな……！
+[k]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFace C 5]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 1]
+＠龍馬
+まさかこんなところで鬼の副長と花見酒とは。
+[k]
+
+＠龍馬
+お竜さん、加減はいらなそうだよ！
+[k]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+＠F：？？？
+なんだ、やっぱりおまえら敵か。
+[k]
+
+[charaFace F 6]
+＠F：？？？
+[line 3]ここは新選組が陣取った。[r]誰一人生かして帰さねぇぞ！！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[scene 59700]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_24 0.1 1.0]
+
+
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[se ad32]
+[shake 0.03 3 3 0.7]
+[wt 0.6]
+[se ad44]
+[wt 0.8]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+＠以蔵
+……ば、馬鹿な！
+[k]
+
+[charaFace D 11]
+＠以蔵
+こ、このわしが、負けるじゃと！？
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠李書文
+……落胆もここまでくると肩の骨が外れかねん。[r]吼え声は立派だったが、この程度とはな。
+[k]
+
+[charaFace E 0]
+＠李書文
+底は見えた。あとは玉砕しかあるまい。
+[k]
+
+＠李書文
+そら、最後の一突きを仕掛けてこい。[r]首を貫いて終わりにしてやろう。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠以蔵
+……っ、そんな訳があるか！
+[k]
+
+＠以蔵
+わしは、わしの剣は無敵なんじゃ！
+[k]
+
+
+
+[charaFace D 10]
+＠以蔵
+……そ、そうじゃ！　[#戦線:レッドライン]！
+[k]
+
+＠以蔵
+おまん、さっき正規のランサーと[r]なり替わったがじゃろ！？
+[k]
+
+＠以蔵
+知っちゅうぞ！　三騎士はわしらより強い[r]聖杯からの支援があるゆうがよ！
+[k]
+
+＠以蔵
+な、なんぞ卑怯な手をつこうちゅうろう！
+[k]
+
+？1：……いや、以蔵さん
+？2：ランサーは……
+
+？！
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+……何も使っていない。[r]……こいつはただ[#強い]だけだ。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠李書文
+……ふむ、生来の短慮さがアダとなったか。
+[k]
+
+＠李書文
+惜しいな。それほどの剣才であれば、[r]伸ばしようはいくらでもあったろうに。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠以蔵
+な、なんじゃと！？
+[k]
+
+[charaFace D 5]
+＠以蔵
+わしは剣では誰にも後れを取ったことは[r]ないがじゃ！
+[k]
+
+＠以蔵
+誰もわしには勝てんかった！[r]どんな剣でも一目見ればモノにできる！
+[k]
+
+＠以蔵
+わしは……、わしは剣の天才なんじゃ！
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠李書文
+語るに及ばず。まさに天性の観察眼よ。[r]才で言えば儂を[#凌:しの]ぐだろうさ。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+＠以蔵
+……なっ！？
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠李書文
+だがそれだけよ。武の才とは多岐にわたるもの。[r]一のみを鍛えれば頂きに届くなど、いやはや。
+[k]
+
+＠李書文
+そのような思い上がりは若造のうちに捨てておくものよ。[r]……だが、貴様は武運には恵まれなかったようだな。
+[k]
+
+[charaFace E 0]
+＠李書文
+生前は[#若造のまま死に絶えた]と見える。[r]何とも勿体ないことよ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+＠以蔵
+なんじゃと……。
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠李書文
+さて、話は終わりだ。[r]儂は一戦一殺を心がけておる。
+[k]
+
+＠李書文
+アサシンはここで殺すが、[r]そこの[&小僧:小娘]は今なら見逃そう。
+[k]
+
+＠李書文
+なに、毎度殺していては明日の食い[#扶持:ぶち]にも困る。[r]獲物は長生きさせんとな。
+[k]
+
+？1：そうはいかない
+？2：以蔵さん下がって、行くぞオルタ！
+
+？！
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+……わかった。
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+＠以蔵
+阿呆か！　おまんら、何回言わすんじゃ！[r]このわしでもかなわんのじゃぞ！
+[k]
+
+＠以蔵
+そんな素人剣法のサーヴァントが[r]相手になるわけがないじゃろうが！
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+…………。
+[k]
+
+[messageOff]
+[se bac305]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠李書文
+……ほう。[r]どうやらこちらが本命か。
+[k]
+
+＠李書文
+よかろう、此度の一殺はお主に決めたぞ。
+[k]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠沖田オルタ
+……マスター、こいつは強い。
+[k]
+
+＠沖田オルタ
+だがマスターだけは殺させない。
+[k]
+
+？1：うん、頼むよオルタ！
+？2：信じてるよ
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠李書文
+[line 3]忠あってこそ信極まる、か。[r]よかろう。[#人]を仕留めるのは久方ぶりよ！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

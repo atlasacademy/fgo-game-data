@@ -1,0 +1,509 @@
+
+＄94-03-50-35-1-1
+[soundStopAll]
+
+[charaSet A 1098163700 1 カーマ]
+[charaSet B 98110000 1 柳生但馬守]
+[charaSet C 99502600 1 マシュ]
+[charaSet D 1098158200 1 シオン]
+[charaSet E 1098158230 1 シオン_腕上げ_通信]
+[charaSet F 3030000 1 パールヴァティー]
+[charaSet G 5030001 1 シェヘラザード]
+[charaSet H 6014001 1 マタ・ハリ]
+[charaSet I 5009000 1 エフェクト用ダミー２]
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+
+[scene 10000]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_24 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[cueSe Battle bac226]
+[effect bit_talk_hikari02]
+[wt 0.4]
+[effectStop bit_talk_hikari02]
+[wt 0.3]
+
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[charaTalk off]
+[charaFace A 16]
+[charaFadein A 0 1]
+[scene 72400]
+
+[charaPut I 0,175]
+[charaEffect I bit_talk_lightning_03g]
+[se bac46]
+[charaShake A 0.05 3 3 0.3]
+[wt 0.3]
+[charaPut I 1200,1200]
+[charaEffectStop I bit_talk_lightning_03g]
+
+[wt 0.3]
+
+[wipeout rectangleStripRightToLeft 0.15 1.0]
+[wait wipe]
+[charaFadeout A 0]
+[charaFace B 2]
+[charaFadein B 0 1]
+[wipein rectangleStripLeftToRight 0.15 1.0]
+[wait wipe]
+[wt 0.1]
+[charaPut I 1]
+[charaEffect I bit_talk_h_slash01]
+[se ad171]
+[wt 0.3]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[cueSe Battle bac361]
+[charaFadeout B 0]
+[charaFace A 16]
+[charaFadein A 0 1]
+[charaShake A 0.05 10 3 0.5]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠マシュ
+マスター、見てください！[r]カーマの角にヒビが入っているように見えます！
+[k]
+
+＠マシュ
+ダメージが入っている証拠かと！
+[k]
+
+？1：いけてる！　もう少し[&だ:]！
+？！
+
+[messageOff]
+[fadeout black 0.5]
+[bgm BGM_EVENT_24 0.5 0.4]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaPut J 1200,1200]
+
+[scene 66400]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0,-50]
+[wt 0.1]
+
+[wipeFilter cinema 0.5 0]
+[fadein black 0.5]
+[wait fade]
+
+＠シオン
+（[line 6][#いえ]）
+[k]
+
+＠シオン
+（[#本当に]、[#そうですかね]、[#アレ]？）
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[scene 72400]
+
+[charaSet D 1098158220 1 シオン]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+[wt 0.1]
+
+[wipeOff]
+
+[fadein black 0.5]
+[bgm BGM_EVENT_24 0.5 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaFace F 2]
+
+＠パールヴァティー
+カーマ！　あなたの歪みの一端は、[r]確かに私にも責任があるのでしょう。
+[k]
+
+＠パールヴァティー
+ですが[line 3]だからと言って、災害の獣となるのを[r]見過ごすわけにはいきません。ここで止めます！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠カーマ
+ああ、なんて……なんて……。
+[k]
+
+[charaFace A 17]
+
+＠カーマ
+[#なんていじらしいんでしょう]、[&貴方:貴女]たちは。
+[k]
+
+＠カーマ
+腹が立つほど生意気で、哀れで、失笑もので。
+[k]
+
+＠カーマ
+私に勝てるなんて信じている。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠シェヘラザード
+！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠マタ・ハリ
+負け惜しみで言ってる……ってわけじゃ、なさそうね。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠シオン
+残念なお知らせです、手応えが想定よりありません！[r]確かに対徳川化の効能は出ていますが[line 3]
+[k]
+
+＠シオン
+この現状は、決して計算通りではない。
+[k]
+
+＠シオン
+何かが誤魔化され、偽られている……[r]そんなイメージです。まだ秘匿情報があるかと！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠カーマ
+一つ反撃道具を見つけただけで浮かれる、[r]短絡的で楽観的な[&貴方:貴女]たち。
+[k]
+
+＠カーマ
+実にウザくて可愛らしいですね。[r]だから[#教えて:愛 し て]あげましょう。
+[k]
+
+＠カーマ
+最後の将軍の“徳川を終わらせる”力を[&貴方:貴女]たちが[r]手に入れる事なんて、私は最初から想定済みですよ。
+[k]
+
+[charaFace A 13]
+
+＠カーマ
+本気で脅威に思ってるなら、もっと本気で隠しておくに[r]決まってるじゃないですか。
+[k]
+
+＠カーマ
+むしろ見つけてもらいたかったのです。
+[k]
+
+[charaFace A 6]
+
+＠カーマ
+そう[line 3][&貴方:貴女]たちが逆転の一手だと思っているそれも、[r]私の愛の一部。
+[k]
+
+[charaFace A 0]
+
+＠カーマ
+ああ、どうしてそんな事をするのか、ですか？[r]そんなの決まってるじゃないですかぁ[line 3]
+[k]
+
+[charaFace A 17]
+
+＠カーマ
+私、誰かが不幸になる瞬間を見るのが大好きなんです。
+[k]
+
+＠カーマ
+だって、そこからはもう上がるしかないじゃないですか？[r]ふふ……とっても、とっても愛し甲斐があります。
+[k]
+
+＠カーマ
+だからもっと、もっともっと下へ。[r]できれば不幸のどん底へ。絶望のさらに先へ。
+[k]
+
+＠カーマ
+ねえ、パールヴァティー。
+[k]
+
+[charaFace A 6]
+
+＠カーマ
+人間を助けて普段通りには[#霊基:からだ]の動かない貴女、[r]シヴァのものを借りてまで慣れない戦いをする貴女。
+[k]
+
+＠カーマ
+そんないじらしい貴女にも愛のプレゼントです。[r]もっと身体が動かないようにしてあげましょう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠パールヴァティー
+……何ですって？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠カーマ
+今回の件。そもそも[line 3][r]どうして私が徳川と大奥を道具に選んだと思います？
+[k]
+
+
+＠カーマ
+いえ、ハーレムならどこでもよかった、と前に[r]言いましたよねぇ。たまたま大奥が目に付いたからだ、と。
+[k]
+
+[charaFace A 1]
+
+＠カーマ
+さらにその先です。[r][#どうして目に付いたんだと思います]？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠柳生但馬守
+問答には付き合わぬ。[r][line 3]斬る。
+[k]
+
+[messageOff]
+[se bac2]
+[seVolume bac2 0 0.8]
+[wt 0.1]
+[charaFadeout B 0.15]
+[charaMove B 0,15 0.15]
+[charaMoveScale B 1.1 0.15]
+[wt 0.15]
+[charaEffect I bit_talk_v_slash01]
+[cueSe Battle bac153]
+[cueSe Battle bac52]
+[wt 0.3]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[charaMove A 120,0 0.2]
+[wt 0.6]
+
+
+[charaSet I 1098163800 1 春日局]
+
+[bgmStop BGM_EVENT_24 1.0]
+
+＠カーマ
+おっと……いえいえ、聞いてください。[r]貴方のお友達に関係するお話ですよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠柳生但馬守
+…………。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠カーマ
+天秤が右に揺れた反動のため、[r]左の獣として顕現する資格を得た私は、
+[k]
+
+＠カーマ
+まず人理全体を見回して[r]丁度良さそうな舞台と材料を探しました。
+[k]
+
+＠カーマ
+[%1]という人間を堕落させ、
+[k]
+
+＠カーマ
+不完全な右ならぬモノ、[r]完全な左として自分が羽化するのに最適な場所。
+[k]
+
+[charaFace A 17]
+
+＠カーマ
+そこでねえ……感じてしまったのですよ。[r]一人の、死にかけの女の妄念を。
+[k]
+
+＠カーマ
+私が感じ取れるほど強く大きな、世界に杭を打つが如き[r][line 3]あるいは、愛の叫び。
+[k]
+
+？1：…………？
+？！
+
+[charaFace A 1]
+
+＠カーマ
+その女は、苛烈な人生を生きた女でした。自らの生の[r]全てをかけて、一つのモノを愛し続けてきた女でした。
+[k]
+
+＠カーマ
+[#それ]が正しく続くように。[r][#それ]が正しく育つように。
+[k]
+
+＠カーマ
+その愛に満ちた人生の果て、病に倒れた布団の中。[r]まさに臨終の間際[line 3]
+[k]
+
+＠カーマ
+彼女は、人間らしく、足掻いたのです。自らの生に[r]満足して燃え尽きる事なく、足掻いてしまったのです。
+[k]
+
+＠カーマ
+どうしてここで終わるのか、と。[r]まだ足りない、まだ駄目だ、まだ心配だ。
+[k]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+＠カーマ
+もっと、もっと、もっともっと[line 3][r][#私は徳川を愛し続けていたいのに]、と！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+＠マシュ
+そ、それは……ひょっとして……！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth I 1]
+[charaDepth F 0]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+[wt 0.75]
+[fowardEffect bit_talk_tornado02]
+[se ad80]
+[seVolume ad80 0 0.5]
+[wt 0.3]
+
+[charaSpecialEffect F erasureReverse 1 0.3]
+[charaFace I 16]
+[charaFadein I 0.2 1]
+[wt 0.1]
+[seStop ad80 0.3]
+
+[wt 0.6]
+
+＠春日局
+あ……[wt 0.4]あ[messageShake 0.02 3 3 0.4]、ああ……！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠カーマ
+私は愛の神にして愛欲の獣。それは私にとっては[r]とても心地良い妄執でした。だから選びました。
+[k]
+
+＠カーマ
+ちょうど、人間を堕落させる愛の巣にぴったりな[r]ハーレムもそこにありましたしね。
+[k]
+
+
+＠カーマ
+ねえ、もうわかったでしょう？
+[k]
+
+[charaFace A 7]
+
+＠カーマ
+私は貴女の妄念に引き寄せられてここに来たのですよ、[r]春日局！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

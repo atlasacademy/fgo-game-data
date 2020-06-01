@@ -1,0 +1,184 @@
+
+＄02-00-01-12-2-0
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 1002001 1 アルトリア・オルタ]
+[charaSet C 11003001 1 ジャンヌ・オルタ]
+[charaSet D 2023000 1 モリアーティ]
+[charaSet E 98109400 1 新宿のアサシン]
+[charaSet F 98111500 1 通信用ノイズ]
+[charaSet G 98110900 1 ロミオ＋ジュリエット]
+
+
+[soundStopAll]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 39100]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠新宿のアサシン
+チッ……！[r]増援をどんどん増やせ！
+[k]
+
+[charaFace E 2]
+＠新宿のアサシン
+コロラトゥーラも投入しろ！　スポンサーは帰ったな？[r]よし、なら残ってる連中はどうでもいい！
+[k]
+
+＠新宿のアサシン
+新規に創作された“[#創作幻想:Ｓ・Ｐ]”を投入しろ！[r]あれは周囲を巻き込みまくるらしいが、まあ仕方ないな！
+[k]
+
+[charaFace E 5]
+＠新宿のアサシン
+……って。[r][#アイツ]もいる、だと……！？
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaPut F 1]
+[charaEffect F bit_talk_10_LowLevel]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wt 0.3]
+＠マシュ
+エネミーの反応が……新しいです。[r]気をつけて下さい、マスター！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_10_LowLevel]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ジャンヌ・オルタ
+ちょっとー？[r]何かケッタイなのが出てきたわよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaSet A 98109900 1 セレブ]
+
+
+[charaTalk off]
+[charaFace G 0]
+[charaFadein G 0.7 1]
+[charaEffect G bit_talk_11 0,-96]
+＠？？？
+愛しい[#あなた:わたし]！
+[k]
+
+
+＠？？？
+愛しい[#わたし:あなた]！
+[k]
+
+
+＠？？？
+さりとて死が二人を分かつことはなく、[r]こうして共に過ごすことの、何と素晴らしき人生か！
+[k]
+
+＠？？？
+ああ、[#ロミオ:ジュリエット]！[r]おお、[#ジュリエット:ロミオ]！
+[k]
+
+＠？？？
+さあ、今こそ平和を取り戻そう。[r]我々のように[#とろけよう]！
+[k]
+
+[charaEffectStop G bit_talk_11]
+[charaFadeout G 0.1]
+[wt 0.4]
+
+[charaTalk on]
+
+
+[charaDepth A 9]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[charaShake A 0.05 7 0 1.0]
+＠セレブ
+ひっ……ぎゃあああああああ！？[r]やめ、触るな！　溶ける、とけるとけるとけるぅぅぅ！！
+[k]
+
+[messageOff]
+
+[charaSpecialEffect A enemyErasure 1 1.7]
+[wt 0.4]
+[se ad137]
+[wait charaSpecialEffect A]
+[seStop ad137 1.0]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アルトリア・オルタ
+……なるほど。リア王の次はロミオとジュリエットか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠モリアーティ
+ははははは、これはまたシェイクスピアも落胆する[r]ロミオとジュリエットだ！
+[k]
+
+[charaFace D 1]
+＠モリアーティ
+愛を誓った恋人の成れの果て、という訳かネ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ジャンヌ・オルタ
+ふーん、私は全然興味ないけれど。[r]まあ、哀れなことは哀れね。
+[k]
+
+[charaFace C 5]
+＠ジャンヌ・オルタ
+積極的に他人を巻き込む恋愛は、[r]単なる妄執に過ぎない。
+[k]
+
+[charaFace C 2]
+＠ジャンヌ・オルタ
+この魔女の旗に懸けて、アンタたちの愛を[r]思いっきり否定してやるわ！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

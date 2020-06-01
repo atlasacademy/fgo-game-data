@@ -1,0 +1,620 @@
+
+＄94-03-35-50-2-0
+
+[soundStopAll]
+
+[charaSet A 23003001 1 ジナコ]
+[charaSet B 23003000 1 ありがたい石像]
+[charaSet C 98002000 1 フォウ]
+[imageSet D cut151_gns 1]
+[equipSet H 9807300 1 バレンタイン礼装]
+[charaSet I 98002000 1 ダミーエフェクト１]
+[charaScale I 0.95]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_1 0.1 0.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.7 1]
+[wt 1.2]
+
+＠B：神託の声
+[tVoice ValVoice_2300300 0_V010]
+目覚めよ……[r]目覚めよ……[wait tVoice]
+[k]
+
+＠B：神託の声
+[tVoice ValVoice_2300300 0_V020]
+汝、カロリーの足らぬものよ……[r]砂糖と油とバターの力を侮るものよ……[wait tVoice]
+[k]
+
+＠B：神託の声
+[tVoice ValVoice_2300300 0_V030]
+覚醒の時はきた……[r]神にガッツが掛かっている間に目覚めよ……[wait tVoice]
+[k]
+
+＠B：神託の声
+[tVoice ValVoice_2300300 0_V040]
+ガッツ……即ち[#克己:こっき]心……[r]あるいはコミュ強への憧れと憎しみ……[wait tVoice]
+[k]
+
+＠B：神託の声
+[tVoice ValVoice_2300300 0_V050]
+ちなみに神のガッツは[r]あと２ターンで切れるゾウ……[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_1 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 2.0]
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+[fadein black 0.1]
+[wait fade]
+
+[se ad189]
+[seVolume ad189 0 0.1]
+[seVolume ad189 2.0 1.0]
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66800]
+[branch lblConf]
+[label lblNotClear]
+[scene 10400]
+[label lblConf]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 200,-40]
+[charaScale D 0.55]
+[wt 1.0]
+
+[wipein openEye 0.7 1.0]
+[wait wipe]
+
+[wipeout openEye 0.6 1.0]
+[wait wipe]
+
+[wipein openEye 1.4 1.0]
+[wt 0.5]
+[seStop ad189 0.5]
+[wait wipe]
+[wt 0.5]
+
+[bgm BGM_EVENT_2 0.1]
+[wt 0.5]
+
+？1：よし。時間通り、仮眠から目を覚ました
+
+？！
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth C 9]
+
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠フォウ
+[tVoice ValVoice_2300300 0_V060]
+………………。[wait tVoice]
+[k]
+
+
+[charaTalk on]
+
+＠D：インテリア
+………………。
+[k]
+
+＠D：インテリア
+………………………………。
+[k]
+
+[charaTalk off]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaMoveReturn C 0,50 0.2]
+[se bac469]
+
+＠フォウ
+[tVoice ValVoice_2300300 0_V070]
+フォ。[r]フォウ、フォーウ！[wait tVoice]
+[k]
+
+？1：おやつタイムだね？　食堂に行こう
+
+？！
+
+[messageOff]
+[se ad8]
+[wipeout leftToRight 1.0 1.0]
+[bgm BGM_EVENT_2 1.0 0.5]
+[wait wipe]
+
+[charaTalk depthOn]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+
+[branchQuestNotClear lblNotClear2 3000303]
+[scene 66600]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10310]
+[label lblConf2]
+[wt 0.3]
+
+[se ade74]
+[seVolume ade74 0 0.5]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[bgm BGM_EVENT_2 1.0 1.0]
+[seVolume ade74 1.0 1.0]
+[wait wipe]
+
+[wt 1.5]
+
+[fadeout black 1.0]
+[seStop ade74 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[branchQuestNotClear lblNotClear3 3000303]
+[scene 66800]
+[branch lblConf3]
+[label lblNotClear3]
+[scene 10400]
+[label lblConf3]
+
+[charaFace D 0]
+[charaFadein D 0.1 200,-40]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+
+[se ade156]
+[seVolume ade156 0 0.4]
+[charaShake D 0.02 2 4 0.9]
+[charaMove D 146,-100 0.3]
+[charaMoveScale D 0.75 0.3]
+[wt 0.3]
+[seVolume ade156 0 0.6]
+[charaMove D 74,-120 0.3]
+[charaMoveScale D 0.9 0.3]
+[wt 0.3]
+[seVolume ade156 0 0.8]
+[charaMove D -7,-153 0.3]
+[charaMoveScale D 1.0 0.3]
+[wt 0.3]
+[seStop ade156 0.2]
+[charaShakeStop D]
+
+[charaDepth D 0]
+[charaDepth A 1]
+
+[charaMove D -7,-163 0.4]
+[wt 0.2]
+[se ad576]
+[seVolume ad576 0 0.9]
+[wt 0.3]
+[charaFace A 2]
+[charaFadeout D 0.4]
+[charaFadein A 0.2 0,-50]
+[wt 0.1]
+
+[se ad7]
+[charaMove A 1 0.2]
+[seStop ad576 0.3]
+
+[charaTalk on]
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V080]
+っ[messageShake 0.05 4 4 0.2]て、本気で気づかないんかーーーい！[wait tVoice]
+[k]
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V090]
+ワーカホリック通りすぎて[r]ワーカーゾンビになってんじゃーーーん！[wait tVoice]
+[k]
+
+[charaFace A 7]
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V100]
+っていうか、[r]アタシそんなに影薄いっスかぁ！？[wait tVoice]
+[k]
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V110]
+そりゃあＢＢに比べたら面白いコト[r]できないけど、[wait tVoice]
+[k]
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V120]
+安定のガチガチ守備パーティなら[r]めっちゃ便利な性能なのにーー！[wait tVoice]
+[k]
+
+[messageOff]
+[se ad8]
+[wt 1.8]
+
+[charaFace A 4]
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V130]
+あ。[wait tVoice]
+[k]
+
+？1：[#陳謝:すまない]……あまりのインパクトで、つい……
+
+？2：話しかけたら天罰系のイベントだと思って……
+
+？！
+
+[messageOff]
+[wt 0.2]
+[charaFace A 8]
+[wt 1.2]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠フォウ
+[tVoice ValVoice_2300300 0_V140]
+フォウ、フォウ。[wait tVoice]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V150]
+なんだ、気づいてたんだ。[r]それなら、まあ、別にいいけど。[wait tVoice]
+[k]
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V160]
+ああいや良くない、ぜんぜん良くない！[r]なんで何事も無かったようにスルーできるっスか。[wait tVoice]
+[k]
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V170]
+フツー驚くじゃん、つっこむじゃん、[r]部屋に見慣れない石像あったらさぁ。[wait tVoice]
+[k]
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V180]
+格ゲーで席立つレベルの舐めプをくらった時でも[r]ここまで酷くないよ。うん。経験ないけど。[wait tVoice]
+[k]
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V190]
+せっかくやる気だしてリア活したのに、[r]ワクワクを返してほしいよね、ホント。[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠フォウ
+[tVoice ValVoice_2300300 0_V200]
+フォーウ。フォウフォーウ。[wait tVoice]
+[k]
+
+？1：というコトは！
+？2：ありがたいチョコがもらえるんだ！
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V210]
+お、ぉう？　予想外の食いつき？[wait tVoice]
+[k]
+
+[charaFace A 6]
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V220]
+そっかぁ……ウヒヒ、そうだったんだぁ。[wait tVoice]
+[k]
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V230]
+[%1]、[r]ボクからのチョコが楽しみだったッスね？[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V240]
+そうだよねー、だって今のジナコさん、[r]インドナンバーワンの人気神だった！[wait tVoice]
+[k]
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V250]
+[#好意:ライク]どころか[#親愛:ラブ]、[r]いや[#信仰:フェイス]に到達するこの魅力！[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 5]
+[cameraMove 0.3 0,-55 1.4]
+[wt 0.25]
+[se ade98]
+[seVolume ade98 0 0.6]
+[charaPut I 0,90]
+[charaEffect I bit_talk_41]
+[wt 0.2]
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V260]
+やったぜ、第２部・完。[r][%1]先生の新連載にご期待ください。[wait tVoice]
+[k]
+
+[messageOff]
+[cameraHome 0.6]
+[charaFace A 0]
+[charaEffectDestroy I bit_talk_41]
+[wt 0.9]
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V270]
+はい、そういうワケでコレを授けよう！[r]いやあ、求められるのって嬉しいよね！[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[charaFace H 0]
+[charaFadein H 0.5 0,-70]
+[wt 2.0]
+[charaFadeout H 0.4]
+[wt 0.5]
+
+？1：ありがとう！　ナイスカロリー！
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V280]
+イエーイ、ナイスカロリー！[r]チャイと一緒に食べなチャイ！　なんチャッテ！[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠フォウ
+[tVoice ValVoice_2300300 0_V290]
+フォフォーウ……[wait tVoice]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+？2：これは何処の……？
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V300]
+んー、ちょっとした思い出の品。[r]ＢＢに無理いって特別に再現してもらったの。[wait tVoice]
+[k]
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V310]
+交換条件に山ほど働かされたけど、[r]ボクもそれくらいは体を張らないとね！[wait tVoice]
+[k]
+
+[charaFace A 3]
+
+？！
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V320]
+あ。でもボクのオリジナル要素も入ってるから、[r]そこもちゃんと有り難がるよーに。[wait tVoice]
+[k]
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V330]
+ロールケーキじゃ芸がないから、[r]チョコレート風味にしたんだから。[wait tVoice]
+[k]
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V340]
+それと……[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth A 0]
+
+[charaMove A 0,-10 0.4]
+[wt 0.2]
+[se ad576]
+[seVolume ad576 0 0.7]
+[wt 0.3]
+[charaFace B 0]
+[charaFadeout A 0.4]
+[charaFadein B 0.4 1]
+[wt 0.2]
+
+[seStop ad576 0.3]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+＠ありがたい石像
+[tVoice ValVoice_2300300 0_V350]
+それはこの部屋で、[r]誰にも見られないように食べるべし……[wait tVoice]
+[k]
+
+＠ありがたい石像
+[tVoice ValVoice_2300300 0_V360]
+他のサーヴァント、スタッフに[r]見られる事がないよう気をつけるのだ……[wait tVoice]
+[k]
+
+[charaFace B 3]
+
+＠ありがたい石像
+[tVoice ValVoice_2300300 0_V370]
+だって……噂になったら恥ずかしいし……[wait tVoice]
+[k]
+
+？1：？？？
+
+[charaFace B 4]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth B 1]
+
+＠ありがたい石像
+[tVoice ValVoice_2300300 0_V380]
+しまった……[%1]さんには[r]ちょっと古かったか……[twt 5.0][charaMove B 0,-10 0.4][twt 0.2][se ad576][seVolume ad576 0 0.9][twt 0.3][charaFace A 3][charaFadeout B 0.4][charaFadein A 0.2 0,-5][twt 0.1][charaMove A 1 0.2][seStop ad576 0.3]よっと。[wait tVoice]
+[k]
+
+[charaTalk depthOn]
+[charaTalk on]
+[charaFace A 8]
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V390]
+まあまあ、そこはそれ、[r]ボクも一応、気持ち的にはヒロインなので……[wait tVoice]
+[k]
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V400]
+ひとりでゆっくり、ノベルゲーでもしながら[r]味わってほしいってコトで、よろしくッス！[wait tVoice]
+[k]
+
+？2：オッケー、ときめき的なアレだね！
+
+[charaFace B 2]
+
+＠ありがたい石像
+[tVoice ValVoice_2300300 0_V410]
+メーーモーーリーーアーールーー！[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaMove B 0,-10 0.4]
+[wt 0.2]
+[se ad576]
+[seVolume ad576 0 0.9]
+[wt 0.3]
+[charaFace A 6]
+[charaFadeout B 0.4]
+[charaFadein A 0.2 0,-10]
+[wt 0.1]
+
+[charaMove A 1 0.2]
+[seStop ad576 0.3]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V420]
+そうそう、古典わかってるじゃーーん！[wait tVoice]
+[k]
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V430]
+ウヒヒ、バレンタインイベントだもんねぇ？[r]ゲーマーとしてコレは外せないッス。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V440]
+よーし、そんな話の分かる[%1]さんは[r]いまからボクとゲームしよう、ぜ！[wait tVoice]
+[k]
+
+＠ジナコ
+[tVoice ValVoice_2300300 0_V450]
+ゲームしながら食べるジャンクフードが[r]一番美味しいに決まってるしね！[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠フォウ
+[tVoice ValVoice_2300300 0_V460]
+フォウ……フォーーーウ……[wait tVoice]
+[k]
+
+？！
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

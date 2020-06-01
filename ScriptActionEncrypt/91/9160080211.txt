@@ -1,0 +1,136 @@
+
+
+
+＄91-60-08-02-1-1
+
+[soundStopAll]
+[charaSet A 6008000 1 クレオパトラ]
+[charaSet B 5012001 1 ニトクリス]
+[charaSet C 98115000 1 演出用]
+[charaDepth C 1]
+[charaSet D 98006200 1 敵]
+
+[scene 31501]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut C 1]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[wt 0.5]
+[charaFace A 1]
+
+[cueSe Battle bac216]
+[charaEffect C bit_talk_radiallight01]
+[charaEffect A bit_talk_valentine_brilliant]
+[wt 0.5]
+
+[charaMoveScale C 1.5 1.0]
+[charaMove C 0,80 1.0]
+
+
+
+[wt 1.5]
+
+[cueSe Battle bac214]
+[fadeout white 1.0]
+[wait fade]
+[charaFadeout A 0.1]
+
+[effectStop bit_talk_41]
+[charaEffectStop C bit_talk_radiallight01]
+[charaEffectStop A bit_talk_valentine_brilliant]
+[charaFadeout C 0.1]
+[wt 0.7]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[fadein white 0.1]
+[wait fade]
+
+[wt 0.2]
+[se bac151]
+[charaEffect D bit_talk_14]
+[wt 0.5]
+
+[se ad22]
+[charaShake D 0.05 5 5 0.5]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+[se ad42]
+[charaSpecialEffect D enemyErasure 1 1.0]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠クレオパトラ
+[line 3]ふぅ！　なかなか！
+[k]
+
+[messageOff]
+[charaFace A 5]
+[wt 1.0]
+[charaFace A 4]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠クレオパトラ
+ですが、これで終わりとは物足りない……。[r]もしかしてニトクリス様は手加減をしてしまいましたか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠ニトクリス
+それなりに本気だったのですが、[r]むむ、足りませぬか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠クレオパトラ
+うーん、そうですね！　残念ながら足りません！[wt 1.0][charaFace A 5][r]こちらのエリアと貴方の召喚では、些かばかり不足です！
+[k]
+
+＠クレオパトラ
+妾の理想の運動には相応しくありません。[r]マスター！
+[k]
+
+？1：はいはい
+？2：次のシミュレーターエリアにいくのかな？
+
+？！
+
+[charaFace A 1]
+＠クレオパトラ
+はい！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

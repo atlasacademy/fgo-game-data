@@ -1,0 +1,1152 @@
+
+
+
+
+＄91-60-30-01-2-1
+
+[soundStopAll]
+
+
+[charaSet A 6030000 1 段蔵]
+[charaSet B 6019001 1 風魔小太郎]
+[charaSet C 1098157800 1 キャスター・リンボ？]
+[charaSet D 1001000 1 エフェクト用]
+[charaSet E 1001000 1 エフェクト用2]
+
+[charaSet F 98006200 1 リンボエフェクト]
+
+[charaSet H 1098157800 1 シルエット_リンボ]
+[charaFilter H silhouette 00000080]
+
+
+[scene 47300]
+
+[bgm BGM_EVENT_24 0.1]
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.1]
+
+[effect bit_talk_kengekiall02]
+[wt 0.1]
+[se ad33]
+[wt 1.0]
+[shake 0.03 3 3 0.4]
+[effect bit_talk_14]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.7]
+
+[flashin once 0.3 0.3 FFFFFFAF FFFFFF00]
+[se bac194]
+[wt 0.1]
+[shake 0.03 3 3 0.4]
+[wt 0.7]
+[flashin once 0.3 0.3 FFFFFFAF FFFFFF00]
+[se bac194]
+[wt 0.1]
+[shake 0.03 3 3 0.4]
+[wt 0.7]
+
+[shake 0.05 1 4 1.0]
+[se ad211]
+[effect bit_talk_impactlanding]
+[wt 3.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[se ad7]
+[charaMoveReturn A 0,5 0.2]
+[charaMoveScale A 0.95 0.2]
+[wt 0.7]
+
+[charaFace A 2]
+
+
+＠段蔵
+[#絡繰:からくり]忍法、風魔・噴進弾！[r]あやかしの者であろうとたちまち引き裂き砕く！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale A 1.0]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+
+＠風魔小太郎
+[line 3]キャスター・リンボ。[r]おぞましきは貴様の[#残滓:ざんし]。消え失せろ！
+[k]
+
+[charaFace B 5]
+＠風魔小太郎
+何度でも。[r]何度でも。
+[k]
+
+[charaFace B 2]
+＠風魔小太郎
+僕はおまえを打ち砕く！
+[k]
+
+[messageOff]
+
+
+[flag MALE false]
+[flag FEMALE false]
+
+[selectionUse masterMale]
+？1：宝具解放！
+[flag MALE true]
+？！
+
+[selectionUse masterFemale]
+？1：宝具解放！
+[flag FEMALE true]
+？！
+
+[branch play01 MALE 1]
+[branch play02 FEMALE 1]
+
+[label play01]
+[charaEffect B bit_talk_CommandMantra_01 0,64]
+[wt 0.5]
+[se bas16]
+[wt 1.5]
+
+[branch play03]
+
+[label play02]
+[charaEffect B bit_talk_CommandMantra_02 0,64]
+[wt 0.5]
+[se bas16]
+[wt 1.5]
+
+[branch play03]
+
+[label play03]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 2]
+[charaFace B 5]
+[charaFadein B 0.1 0]
+＠段蔵
+小太郎殿！　共に！
+[k]
+
+[charaFace B 1]
+＠風魔小太郎
+はい！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaEffect B bit_talk_36]
+[charaEffect A bit_talk_36]
+[se ad39]
+[wt 1.7]
+
+
+[cueSe NoblePhantasm_603000 NP_603000_2]
+
+[charaFace A 2]
+[charaFace B 2]
+
+
+＠風魔と絡繰
+[line 3]『イビルウィンド・デス・ストーム』！[r][line 3]『[#不滅の混沌旅団:イモータル・カオス・ブリゲイド]』！
+[k]
+
+[messageOff]
+[cueSeStop NoblePhantasm_603000 NP_603000_2 0.1]
+[fadeout white 1.0]
+[wait fade]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaEffectStop A bit_talk_36]
+[charaEffectStop B bit_talk_36]
+
+[wt 0.5]
+
+[fadein white 0.5]
+[wait fade]
+
+[charaPut D 1]
+[charaPut E 1]
+[charaEffect D bit_talk_tornado01]
+[se bac30]
+[wt 0.5]
+[charaEffect E bit_talk_32]
+[se ad439]
+[seVolume ad167 0 0.3]
+[wt 1.5]
+[charaEffectStop E bit_talk_32]
+[wt 0.1]
+
+[charaEffectStop D bit_talk_tornado01]
+
+[effect bit_talk_explosion_triple]
+[wt 0.2]
+[shake 0.05 3 3 0.7]
+[seStop ad439]
+[se ad63]
+[wt 2.5]
+
+[effectStop bit_talk_explosion_triple]
+
+[charaPut F 1200,1200]
+[charaEffect F bit_talk_shadow_aura01]
+
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[charaPut F 0,-180]
+
+[charaShake C 0.04 4 4 0.7]
+[wt 1.0]
+
+＠キャスター・リンボ？
+ぬ、う[line 6]ッ！
+[k]
+
+[charaFadeout C 0.1]
+[charaPut F 1200,1200]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠段蔵
+…………そして是なる奥義、忌み技にて。
+[k]
+
+[messageOff]
+[charaEffect A bit_talk_36]
+[se ad39]
+[wt 1.5]
+
+[charaFace A 5]
+＠段蔵
+風魔の技にあらず。[r]ヒトの技にあらず。
+[k]
+
+＠段蔵
+悪鬼外道の技ゆえ封じられた我が禁じ手、[r]決して余人の前では使わぬと誓った絶技なれど。
+[k]
+
+
+＠段蔵
+此処は我が記録回路の[#裡:うち]なれば[r]我が夢、幻の如きもの。一度きりの過ち也。
+[k]
+
+[charaPut D 1200,1200]
+
+[charaFace A 4]
+＠段蔵
+マスター、どうかお許しを。
+[k]
+
+[messageOff]
+[charaEffectStop A bit_talk_36]
+[cameraMove 1.0 100,-65 1.4]
+[wt 1.5]
+
+＠マシュ
+段蔵さんの手に……夕顔の花が……？
+[k]
+
+[charaFace A 5]
+＠段蔵
+[line 6][#御免:ソーリー]。
+[k]
+
+[messageOff]
+[charaScale D 0.7]
+[charaPut D -150,50]
+[charaEffect D bit_talk_12_platinum_L]
+[se bac95]
+[wt 1.0]
+
+[wipeout rectangleStripRightToLeft 0.2 1]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[cameraHome 0.1]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.1 1]
+[wait wipe]
+
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[charaPut F 0,-180]
+＠キャスター・リンボ？
+！！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 0.1]
+[charaEffectStop F bit_talk_shadow_aura01]
+
+[charaTalk off]
+
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[charaFadeout C 0.1]
+[wt 0.8]
+
+[charaFadeout H 0.1]
+
+[fowardEffect bit_talk_blood_splash]
+[se ad464]
+[wt 2.0]
+
+[se ad144]
+[wt 1.0]
+[seStop ad144]
+[seStop ad464]
+
+[charaTalk on]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠段蔵
+我が手に握った花を斬らば、[r]我が敵の首たちまち落ちる。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠風魔小太郎
+…………お見事です、段蔵殿。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+
+＠段蔵
+[line 3]『妖術斬法・夕顔』。
+[k]
+
+＠段蔵
+忌み技にて、お忘れください。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+
+[charaSet C 5009001 1 ダ・ヴィンチ]
+[charaSet D 9005001 1 ホームズ]
+[charaSet E 98001000 1 マシュ]
+
+[scene 10200]
+
+[wt 2.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠マシュ
+[line 3]ダ・ヴィンチちゃん、ミスター・ホームズ。[r]あちらは戦闘終了したようです。
+[k]
+
+＠マシュ
+先輩も皆さんもご無事です。[r]これで……
+[k]
+
+[messageOff]
+[charaFace E 6]
+[wt 1.0]
+
+[charaFace E 12]
+＠マシュ
+……ダ・ヴィンチちゃん？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ダ・ヴィンチ
+ああ、うん。戦闘終了だね。異常データの消滅なら[r]こちらでもしっかり観測できてるよ。一安心のはずだ。
+[k]
+
+[charaFace C 4]
+＠ダ・ヴィンチ
+それはそれでいいんだけどね。[r]ただ、妙なんだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠マシュ
+妙、ですか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+
+＠ダ・ヴィンチ
+記録回路の破損がね。一部だけれど……[r]全てではない。でもね、確かに一部の領域が……
+[k]
+
+＠ダ・ヴィンチ
+綺麗さっぱり修復されているんだ。[r]なんだろうね、これ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+[wt 1.0]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ホームズ
+私たちは、白昼夢という誤作動をもたらす[r]不明のデータをバグないしウイルスであると判断した。
+[k]
+
+＠ホームズ
+勿論、今現在もその認識は変わらない。[r]だが[line 3]
+[k]
+
+[charaFace D 6]
+＠ホームズ
+この異常データが破壊を目的としたものではなく。[r][#修復を目的としたもの]であったとしたら、どうだろうか？
+[k]
+
+[charaFace D 0]
+＠ホームズ
+勿論その意図までは分からない。[r]ああ。敵に塩を送る、というのは極東の言葉だったかな。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace E 6]
+[charaFadein E 0.1 2]
+[charaFace C 2]
+[charaFadein C 0.1 0]
+[wt 1.0]
+
+[charaTalk on]
+[bgmStop BGM_EVENT_2 0.1]
+
+[charaFace C 5]
+＠ダ・ヴィンチ
+………………あのさホームズまたかキミまたかい。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠ホームズ
+いや、当初から確信があった訳ではないさ。[r]可能性のひとつではあったがね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠ダ・ヴィンチ
+[messageShake 0.03 4 4 0.7]
+やっぱりいつものやつじゃないか！[r]あーもう！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[fadeout white 1.0]
+[wait fade]
+
+[scene 10001]
+[wt 2.0]
+
+[wipeFilter cinema 0.5 0]
+
+[fadein white 1.0]
+[wait fade]
+
+
+＠
+[line 8][image berserker_language_5]殿。
+[k]
+
+
+＠
+[image berserker_language_5]殿。[r][image berserker_language_5]殿。
+[k]
+
+[messageOff]
+[se ad31]
+[effect bit_talk_noise_gr]
+[wt 1.0]
+[seStop ad31 0.1]
+
+
+[se ad15]
+[wt 0.5]
+[se ad15]
+[wt 0.7]
+[effectStop bit_talk_noise_gr]
+[effect bit_talk_security]
+
+[bgm BGM_EVENT_6 0.1]
+
+
+＠
+繋がっていく。
+[k]
+
+＠
+何かが、ひとつ、ワタシの中で組み上がる。
+[k]
+
+＠
+ああ、再生できなかったはずのものが再生できる。[r]ワタシの記録、そのほんの一部だけれど……
+[k]
+
+＠
+繋ぎ直されていく。[r]新たに、組み上げられていく。
+[k]
+
+
+＠
+それは在りし日の記録。[r]果心居士さまも初代風魔様も消えてから後のこと。
+[k]
+
+＠
+乱世の各地を忍びとして駆け巡ったより後のこと。[r]まだ、乱世は続いていたけれど……
+[k]
+
+
+＠
+どこかに落ち着いた後のことだ。
+[k]
+
+＠
+ああ、遠い。なんて遠いのだろう。
+[k]
+
+＠
+今はもう遠いもの。[r]ワタシの中で明瞭に再生される、失われた記録。
+[k]
+
+＠
+人のように言うのであれば、そう……
+[k]
+
+＠
+…………想い出。
+[k]
+
+[messageOff]
+[fadeout white 1.0]
+[bgmStop BGM_EVENT_6 1.0]
+[wait fade]
+
+[effectStop bit_talk_security]
+
+[scene 47000]
+[wt 1.0]
+
+[effect bit_sepia01]
+
+[charaSet A 6030002 1 段蔵]
+[charaSet E 1001000 1 幼子]
+
+[fadein white 1.0]
+[wait fade]
+
+[se ad443]
+[wt 1.0]
+[seStop ad443 0.1]
+
+[bgm BGM_EVENT_25 0.1]
+
+＠幼子
+……はあ、はあ。ふう。
+[k]
+
+＠幼子
+た、ただいま戻りました。
+[k]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠段蔵
+ご苦労さまでした。[r]刻限より、四半刻も早く済ませられましたね。
+[k]
+
+
+＠段蔵
+本日の山は、[#相模:さがみ]の山々の中でもいっそう険しいもの。[r]よくぞお一人で踏破なさいました。
+[k]
+
+[charaFace A 1]
+＠段蔵
+お見事です。[r][line 3]五代目。
+[k]
+
+＠幼子
+はい。
+[k]
+
+＠幼子
+あ、いいえ。五代目と呼ぶのはまだ……
+[k]
+
+＠幼子
+僕はその器に到達できていません。[r]今も、あなたから教えを授かっている最中の身。
+[k]
+
+＠幼子
+あなたからすべての風魔の術を授かり、[r]我が物とした時にこそ、僕は五代目を名乗ります。
+[k]
+
+＠幼子
+だから、それまでは……
+[k]
+
+[charaFace A 0]
+＠段蔵
+では、小太郎殿。
+[k]
+
+＠幼子
+それは[line 3]
+[k]
+
+[charaFace A 5]
+＠段蔵
+いいえ。せめて、この名だけでもお耐えください。[r]アナタは既に襲名なさっておられるのです。
+[k]
+
+[charaFace A 1]
+＠段蔵
+胸を張ってください。[r]小太郎殿。
+[k]
+
+＠段蔵
+現段階では、ええ。アナタの望む通りに[r]五代目と呼ぶことは避けましょう。
+[k]
+
+[charaFace A 0]
+＠段蔵
+でも、アナタは既に風魔小太郎であるのですから。[r]いつまでも幼名のままではいけません。
+[k]
+
+＠段蔵
+お亡くなりになられた先代、[r]父君もきっとそのようにお望みでしょう。
+[k]
+
+[messageOff]
+[charaFace A 1]
+[wt 1.0]
+
+[charaFace A 0]
+＠段蔵
+ね？
+[k]
+
+＠幼子
+……はい。
+[k]
+
+
+＠段蔵
+それでは、これから[#夕餉:ゆうげ]の支度をしましょう。[r]本日は風魔の里に戻らず、そこの山小屋に泊まります。
+[k]
+
+＠幼子
+え、兵糧丸ではなく……
+[k]
+
+＠段蔵
+育ちざかりなのです。[r]たくさん食べて、大きくなってくださいませ。
+[k]
+
+
+＠幼子
+は、はい！
+[k]
+
+＠幼子
+では、魚か獣をとってきます！
+[k]
+
+
+＠段蔵
+いえ、不要です。既にワタシが[#岩魚:いわな]を何匹か。[r]それは囲炉裏で焼いて[line 3]
+[k]
+
+
+＠段蔵
+[#兔:うさぎ]も仕留めてありますから、汁にしましょう。[r]たっぷり滋養を付けなければいけません。
+[k]
+
+
+＠幼子
+岩魚も[#兔:うさぎ]も好きです！[r]あ、えと。
+[k]
+
+＠段蔵
+[FFFFFF]？[-]
+[k]
+
+＠幼子
+母上がこしらえてくださるのですか？[r]いつもは里の者が……
+[k]
+
+＠段蔵
+はい。
+[k]
+
+[charaFace A 3]
+
+
+＠段蔵
+母、と……[line 3]
+[k]
+
+
+＠段蔵
+母と、このワタシを呼んでくださるからには……
+[k]
+
+
+＠段蔵
+少しは母らしいことをしてみようと考えたのです。[r][#些:いささ]か、差し出がましかったでしょうか。
+[k]
+
+＠幼子
+いえ、母上。[r]そんなことはありません。
+[k]
+
+＠幼子
+その……
+[k]
+
+＠幼子
+夕餉、楽しみです！
+[k]
+
+
+[messageOff]
+[charaTalk A]
+[charaFace A 1]
+[wt 1.0]
+
+[charaFace A 0]
+＠段蔵
+では、山小屋へ戻りましょうね。[r]ええと……
+[k]
+
+＠段蔵
+……。[r]……。
+[k]
+
+[charaFace A 4]
+＠段蔵
+………………こういう時、母は手を繋ぐものですか？
+[k]
+
+＠幼子
+え、えっと。[r]たぶん……？
+[k]
+
+[charaFace A 1]
+＠段蔵
+では手を。行きましょう[line 3]小太郎。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_25 1.0]
+[wait fade]
+
+[effectStop bit_sepia01]
+[charaFadeout A 0.1]
+
+
+[wt 2.0]
+
+[effect bit_talk_security]
+
+[scene 47900]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_41 0.1]
+
+＠声
+くくく[line 3]
+[k]
+
+＠声
+くく、くくくくくくくくくく。フフフフフフフ。[r]ああ、随分と時が掛かったものです。
+[k]
+
+
+
+＠声
+[#漸:ようや]くやっと、繋がりましたねえ。[r]たったひとつきりではありますが、ソレこそ貴方の至宝。
+[k]
+
+＠声
+何よりも[#尊:とうと]きものと定めたはずの[#記録:おもいで]だ。
+[k]
+
+＠声
+大切になさい。[r]大切になさい。
+[k]
+
+＠声
+愛しきものを、あたたかなもののすべてを忘却せしめて[r]冷たい鋼のこころだけを秘めてはいけません。
+[k]
+
+＠声
+それではいけない。[r]いけない。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠段蔵
+なぜ……………？
+[k]
+
+＠段蔵
+ワタシに、なぜ……[r]アナタは、このような……
+[k]
+
+＠段蔵
+段蔵の宝……
+[k]
+
+＠段蔵
+絶対に忘れたくなかった、けれど忘れてしまった……[r]大切な……
+[k]
+
+＠段蔵
+思い出を……ワタシに……？
+[k]
+
+
+＠声
+ええ、ええ。[r]貴方はすっかり壊れてしまっていたのです。
+[k]
+
+＠声
+過去の尊きものさえ思い出せない程に。[r]己が、何のために在るのかさえ、分からない程に。
+[k]
+
+＠声
+それではあまりにあまり。[r]あまりというものではありませんか。
+[k]
+
+＠声
+そう[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠声
+[#それではあまりにつまらない]。
+[k]
+
+＠声
+ええ、ええ！　つまらないではないですか！[r]壊す場所が見当たらないというのは、実に、[#宜:よろ]しくない！
+[k]
+
+＠声
+ですので。[r]ええ。
+[k]
+
+＠声
+貴方には思い出していただく。[r]ヒトのように、かけがえのない、代わりのきかないものを。
+[k]
+
+＠声
+親子の情愛？　たとえ血が繋がらずとも？[r]はあ、そうですか。それはよかった。はいはいよかった。
+[k]
+
+＠声
+よかったですねえ。[r][#木偶:デク]人形。
+[k]
+
+＠声
+拙僧にはとんと分からぬモノですが……
+[k]
+
+
+＠声
+せいぜい、貴方はこの記憶を大切にするといい。[r][line 3]いつか、この拙僧が[#悉:ことごと]く壊しに参りますので。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠段蔵
+壊す……
+[k]
+
+＠段蔵
+この段蔵を？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_41 1.0]
+[wt 1.0]
+
+＠声
+いいえ。
+[k]
+
+
+＠声
+壊しましょう、貴方がこの世で最も慈しんでいたものを。[r]壊しましょう、貴方にとっての至宝そのものを。
+[k]
+
+[bgm BGM_EVENT_72 0.1]
+
+
+＠声
+かつての命在る頃と同じ姿をして振る舞う死者の影、[r]サーヴァントなる[#仮初:かりそ]めの客を。
+[k]
+
+
+＠声
+貴方の愛する男を。[r]貴方の愛の結晶を。
+[k]
+
+
+＠声
+[#貴方の目の前で擦り潰してさしあげる]。
+[k]
+
+＠声
+ですので、ええ。ええ。[r]その時は、是非に[line 3]
+[k]
+
+＠声
+[line 3]滑稽極まる泣き顔を私に見せろ、美しき木偶人形。
+[k]
+
+
+[messageOff]
+[fadeout white 1.5]
+
+[bgmStop BGM_EVENT_72 1.5]
+[wait fade]
+
+[effectStop bit_talk_security]
+[wipeOff]
+
+
+
+[charaSet A 6030000 1 段蔵]
+[charaSet D 6030000 1 段蔵_演出用]
+[charaSet E 98001000 1 マシュ]
+
+[wt 1.0]
+
+[scene 10000]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 2.0]
+
+[effect bit_talk_07_02]
+[se ad12]
+[wt 6.5]
+
+
+[fadeout black 1.0]
+[wait fade]
+
+
+[scene 10200]
+
+[wt 2.0]
+
+[fadein black 2.0]
+[wait fade]
+[wt 0.8]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠マシュ
+おかえりなさい、先輩！[r]お疲れさまでした。
+[k]
+
+？1：ただいま！
+
+＠マシュ
+ご無事でなによりです。[r]段蔵さんもたった今、再起動なさったところです。
+[k]
+
+？2：段蔵ちゃんは大丈夫？
+
+＠マシュ
+はい。ちょうど今、再起動なさったところです！
+[k]
+
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[scene 10310]
+
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠風魔小太郎
+……。[r]……。
+[k]
+
+[charaFace B 1]
+＠風魔小太郎
+ただいま戻りました。は……[line 3]
+[k]
+
+[charaFace B 4]
+＠風魔小太郎
+いえ。段蔵殿。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad95]
+[seVolume ad95 0 0.3]
+[wt 0.5]
+[seVolume ad95 0.5 1.0]
+[wt 1.0]
+
+
+[charaTalk off]
+[charaFace A 4]
+[charaFadein A 0.7 1]
+
+
+[charaFace D 1]
+[charaFadein D 0.7 1]
+
+
+[seStop ad95 0.1]
+
+[wt 1.5]
+
+[charaFadeout A 0.7]
+
+[wt 0.7]
+[bgm BGM_EVENT_45 0.1]
+
+[wt 1.0]
+
+＠段蔵
+[line 6]おかえりなさい、[#小太郎]。
+[k]
+
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.5]
+[bgmStop BGM_EVENT_45 2.5]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

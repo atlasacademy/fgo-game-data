@@ -1,0 +1,505 @@
+
+
+
+＄03-00-06-03-2-0
+
+
+[soundStopAll]
+
+[charaSet A 8001400 1 マシュ]
+[charaSet B 1017001 1 武蔵]
+[charaSet C 8001410 1 アーマード・マシュ（ゴーグルなし）]
+[charaSet D 98002000 1 フォウ]
+[charaSet E 9005001 1 ホームズ]
+[charaSet S 5009000 1 エフェクト用ダミー１]
+[charaSet T 5009000 1 エフェクト用ダミー２]
+
+[scene 10000]
+
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk depthOff]
+[charaDepth S 0]
+[charaDepth T 1]
+
+[charaPut S 1]
+[charaEffect S bit_talk_kengekiall02]
+[charaPut T -70,50]
+[charaScale T 1.2]
+[charaEffect T bit_talk_14]
+[se ad32]
+[wt 0.3]
+[charaScale T 1.1]
+[charaPut T 60,10]
+[charaEffect T bit_talk_14]
+[se ad32]
+[wt 0.2]
+[charaScale T 1.4]
+[charaPut T -50,-20]
+[charaEffect T bit_talk_14]
+[se ad32]
+[wt 0.1]
+[charaScale T 1.0]
+
+[fadeout black 0.1]
+[wait fade]
+[scene 91900]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0 1]
+[fadein black 0.2]
+[wait fade]
+
+[charaPut S 1]
+[charaEffect S bit_talk_v_slash01]
+[se ad618]
+[wt 0.3]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaFadeout B 0]
+[wt 0.1]
+[charaPut S 1200,1200]
+[charaEffectDestroy S]
+
+[se ad625]
+[wt 0.2]
+[shake 0.03 4 4 1.2]
+[wt 1.5]
+[seStop ad625 0.3]
+
+[se ad85]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+[se bac170]
+[wt 0.6]
+
+[se ade345]
+[se ad882]
+[se ad881]
+[charaPut S -50,10]
+[charaEffect S bit_talk_impactlanding]
+[effect bit_talk_14]
+[shake 0.03 7 7 1.5]
+[wt 1.6]
+[se ade345]
+[charaPut T 100,0]
+[charaEffect T bit_talk_impactlanding]
+[effect bit_talk_14]
+[shake 0.03 7 7 1.5]
+[charaShake A 0.05 2 2 0.6]
+[se ad608]
+[se ad468]
+[wt 1.4]
+[seStop ad608 0.3]
+[seStop ad57 0.2]
+
+
+
+
+
+
+
+[wt 0.5]
+
+[charaFace A 2]
+
+＠マシュ
+武蔵さん……！
+[k]
+
+[charaEffectDestroy A]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠武蔵
+マシュ、ナイスサポート！[r]よーし、防御は任せた！
+[k]
+
+[charaFace B 2]
+
+＠武蔵
+捨て身もかくやの攻撃全振り、後先なしの五連撃！[r][#一意専心:いちいせんしん]、狙いは[#右腕:そこ]！
+[k]
+
+[messageOff]
+[se ad73]
+[charaFadeout B 0.1]
+[effect bit_talk_quickmove]
+[wt 0.6]
+[se ad976]
+[wt 0.5]
+
+
+[se ad980]
+[wt 0.4]
+
+[se ad618]
+[effect bit_talk_x_slash01 0,0 V]
+[wt 0.2]
+[se ad618]
+[effect bit_talk_x_slash03]
+[effect bit_talk_14]
+[wt 0.1]
+[se ad618]
+[effect bit_talk_x_slash03 0,0 H]
+[wt 0.1]
+[se ad618]
+[effect bit_talk_14]
+[effect bit_talk_x_slash02]
+
+[wt 0.5]
+
+
+[charaPut S 1]
+[charaEffect S bit_talk_v_slash01]
+[se ad878]
+[wt 0.3]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.2]
+
+[charaPut S 1200,1200]
+[charaEffectDestroy S]
+
+[se ad885]
+[wt 1.0]
+[seStop ad885 1.0]
+[wt 0.5]
+
+[cueSe Battle bac234]
+[shake 0.05 0 4 1.5]
+[wt 2.0]
+
+[charaTalk off]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+すごい……！[r]刀の峰での連続攻撃で[#罅:ヒビ]を入れた箇所へ……！
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth A 2]
+
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.1]
+[charaFadeout A 0.4]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[wt 1.2]
+
+[charaFace C 7]
+
+＠C：マシュ
+武蔵さんの攻撃、青銅巨人の右腕部を切断しました！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 1.0]
+
+[charaTalk on]
+[charaTalk B]
+[shake 0.05 0 2 1.5]
+[se ad885]
+[seVolume ad885 0 0.1]
+[seVolume ad885 1.0 0.6]
+[wt 1.5]
+[seStop ad885 1.0]
+
+＠C：マシュ
+青銅巨人！[r]魔力反応が減衰しています！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 12]
+[se ad223]
+[fowardEffect bit_talk_quickmove 0,0 V]
+[charaSpecialEffect B appearanceReverse 1 0.25]
+[wt 1.5]
+
+[cueSe Battle bac306]
+[wt 1.0]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaFace B 0]
+
+＠武蔵
+一斬で斬れぬ相手は殴って殴ってそれから斬る！[r]柳生の[#灯籠:とうろう]、真っ二つってね！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠C：マシュ
+な、なるほど。[r]勉強になりますっ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠フォウ
+フォウフォウ。[r]フォウ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠武蔵
+なあに、まかせてこれくら[line 3][wt 0.1][bgmStop BGM_EVENT_70 0.7][charaFace B 9]む？[r]むむむ？
+[k]
+
+[charaFace B 12]
+
+＠武蔵
+んー……どうもしっくり来ないわね。[r]この、“まだ勝負はついてない”感は……
+[k]
+
+[messageOff]
+[wt 0.3]
+
+[charaMove B 0,-5 0.2]
+[cueSe Battle bac305]
+[wt 1.0]
+
+[bgm BGM_EVENT_81 0.1]
+
+？1：武蔵ちゃん？
+
+[charaFace B 7]
+[wt 1.0]
+[charaFace B 12]
+
+＠武蔵
+[%1]、ごめんね。[r][#全然効いてない]みたい。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？2：！　マシュ、戦闘態勢を維持！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+[wt 0.7]
+[charaFace C 7]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth A 2]
+
+[se ade57]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[charaFace A 7]
+[charaFadein A 0.4 1]
+[wt 0.5]
+[charaFadeout C 0]
+
+[wt 0.5]
+
+[cueSe Battle bac170]
+[wt 1.0]
+
+[charaFace A 2]
+
+＠マシュ
+了解です、マスター！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+[charaTalk on]
+
+？！
+
+[wt 0.3]
+
+[se ad426]
+[shake 0.05 0 2 1.5]
+[wt 1.2]
+[se ad898]
+[seVolume ad898 0 0.3]
+[wt 1.0]
+
+[se ad883]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+切断された右腕部が……[r]繋ぎ……
+[k]
+
+[charaFace A 15]
+
+＠マシュ
+繋ぎ直されて……復元しています！[r]青銅巨人！　魔力、再び不明数値まで上昇！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠ホームズ
+自己修復機能！[r]大いに興味を惹かれるところではあるが[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠武蔵
+あっちゃあ！[r]うーん、やっぱ血が通ってないヤツはダメかぁ！
+[k]
+
+[charaFace B 0]
+
+＠武蔵
+みんな！[r]再戦というか連戦になるけど、体力オッケー！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠武蔵
+[%1][&君:]！
+[k]
+
+？1：まだいける！
+？2：今度こそ倒して、それから離脱！
+
+？！
+
+[charaFace B 1]
+
+＠武蔵
+いい返事ありがとう！[wt 0.4][charaFace B 7][r]気合い入るぅ～！
+[k]
+
+[charaFace B 0]
+
+＠武蔵
+でも、これだけ騒げば追っ手の兵には[#一目瞭然:いちもくりょうぜん]。[r]石にかじりついてでも早めになんとかして[line 3]
+[k]
+
+＠武蔵
+[#三十六計:さんじゅうろっけい]逃げるにしかず、[r]風のようにお[#暇:いとま]しましょう！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad625]
+[se ad423]
+[seVolume ad423 0 0.5]
+[wt 1.5]
+[seStop ad625 1.0]
+
+[se ad57]
+[shake 0.03 4 4 1.2]
+[wt 1.4]
+[seStop ad57 0.2]
+
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠武蔵
+うおお、じゃないっての！[r]そっちには言ってないから黙っていて！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 0.7]
+[charaFace B 5]
+[wt 1.0]
+
+[charaMove B 0,10 0.2]
+[charaMoveScale B 1.05 0.2]
+[charaMove B 0,5 0.2]
+[se ad443]
+[wt 0.2]
+[seStop ad443 0.1]
+[wt 0.5]
+
+[bgm BGM_EVENT_63 0.1]
+[charaFace B 2]
+
+＠武蔵
+いざ迅速に[line 3][r][line 3]素ッ首！　斬り落とす！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_63 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

@@ -1,0 +1,394 @@
+
+
+＄03-00-02-03-2-0
+
+
+
+[soundStopAll]
+
+[charaSet A 8001400 1 マシュ]
+[charaSet C 1033000 1 シグルド（シルエット）]
+[charaFilter C silhouette 00000080]
+[charaSet D 1098123000 1 ムニエル]
+[charaSet F 1098123200 1 ゴルドルフ]
+[charaSet G 1033000 1 シグルド]
+[charaSet H 98115000 1 エフェクト用]
+[charaSet B 98115000 1 エフェクト用]
+
+[scene 55700]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_41]
+[se ad667]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+[seStop ad667 0.5]
+
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_41]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+マシュ・キリエライト、追いつきました！
+[k]
+
+＠マシュ
+対象はまだ船内通路を移動中[line 3][r]コクピットに侵入したものと思われます！
+[k]
+
+？1：ホームズの宝具が効いているうちに
+？2：シグルドを叩く！
+
+？！
+
+＠マシュ
+はい！
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[wt 0.7]
+[se ad8]
+[wt 0.2]
+
+[scene 51600]
+
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+[wt 0.8]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠マシュ
+！？　コクピットには誰もいません！[r]争った形跡もないし、一体[line 3]
+[k]
+
+？1：横のハッチが開いてる……？
+？2：マシュ、甲板だ！
+
+？！
+
+[messageOff]
+[charaFace A 6]
+[wt 0.5]
+
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+
+[charaDepth B 10]
+
+[charaPut B 1]
+[charaEffect B bit_talk_celebro]
+[charaEffect B bit_talk_celebro_back]
+
+[se ad548]
+[seVolume ad548 0 0.7]
+[wt 0.5]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+[scene 60601]
+
+[se ad546]
+
+[wipein rightToLeft 0.7 1]
+[bgmStop BGM_EVENT_80 1.0]
+[wait wipe]
+
+＠ムニエル
+いいのかよ、おっさん！[r]そいつを渡しちまったらこの船は……！
+[k]
+
+＠ゴルドルフ
+ええい、うるさい！　黙っていろ、殺されるぞ！[r]こういう時はこうするしかない、私に任せておけ！
+[k]
+
+＠ゴルドルフ
+ほら！　これが貴様の探しているペーパームーンだ！[r]持っていけ！
+[k]
+
+＠ゴルドルフ
+本来なら隠しているところだが、[r]貴様の強さは大したものだからな！　褒美としてくれてやる！
+[k]
+
+
+[bgm BGM_EVENT_81 0.1]
+[messageOff]
+[charaTalk off]
+[charaDepth G 10]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 1.0 1]
+[wt 1.0]
+[charaFadeout C 0.1]
+[charaTalk on]
+
+＠シグルド
+…………予想外だ。[r]ヒトにしては話が早すぎる。
+[k]
+
+＠シグルド
+思いの外、気軽に扱うのだな。[r]これは貴様たちにとっての生命線だと聞いていたが？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+[charaShake F 0.05 1 1 0]
+
+＠ゴルドルフ
+そそそ、その通りだが生命そのものではないわ！[r]そんなものがあっても腹は膨れんしな！
+[k]
+
+＠ゴルドルフ
+さあ、もも、目的は果たしたのだろう？[r]私たちに用はないのだろう？　ないですよね？
+[k]
+
+＠ゴルドルフ
+こうなっては我々は憐れな漂流者、[r]放っておいても自滅するだけの敗北者だ！
+[k]
+
+＠ゴルドルフ
+キミも無駄な労力はどうかと思うだろう？[r]なら、さっさと立ち去ってみるのはいかがかな！？
+[k]
+
+[charaShakeStop F]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+
+＠シグルド
+……確かに。[r]無駄な肉を断つほど、この剣は安物でもない。
+[k]
+
+[messageOff]
+[charaFadeout G 0.4]
+[wt 1.0]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠ゴルドルフ
+（いよぅし！　今回も生き残った！）
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[bgmStop BGM_EVENT_81 1.0]
+[wt 0.5]
+
+？1：ちょっと待ったーーー！
+？2：そうはいかない……！
+
+？！
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい！　その羅針盤を返していただきます、[r]英霊シグルド！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+
+＠ゴルドルフ
+（え……ちょっと待って、いまいい流れだったでしょ？[r]　なーんでこんなキレキレのナイフマンに啖呵きっちゃうの？）
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠シグルド
+…………ほう？
+[k]
+
+＠シグルド
+ヒトと、混ざり物。[r]力の差を理解していないのか。
+[k]
+
+＠シグルド
+ああ、そうか。死に損ないの英霊から[r]何らかの加護を受け取って[#俄:にわか]に増長したあたりか。
+[k]
+
+[messageOff]
+[se ad51]
+[wt 0.5]
+
+＠シグルド
+……叩き甲斐があるな。[r]その度しがたさ、質の悪い鉄のようだ。
+[k]
+
+＠シグルド
+いいだろう。[r]もう少し、肉体の稼働を確かめておきたくはあった。
+[k]
+
+＠シグルド
+[line 3]来るがいい。[r]遊びの範疇だが、それなりに真剣にやってやる。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+言われずとも行きます。[r]あなたが、わたしたちの船から退いてくれないのなら。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+
+＠シグルド
+フ。退け、とまで言うか。
+[k]
+
+＠シグルド
+娘。そして[&小僧:もうひとりの娘]。名を聞いておく。[r]ヒトの英雄とは得てしてそういうモノなのだろう。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+[line 3]マシュ・キリエライトです。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+？1：[%1][&だ:！]
+
+？！
+
+＠シグルド
+聞いた。[r]だが、すぐに忘れる。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい。それで結構です。
+[k]
+
+[charaFace A 2]
+
+＠マシュ
+……マスター。敵性サーヴァント、シグルドから[r]ペーパームーンを奪還します！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+
+＠シグルド
+増長。過信。傲慢。慢心。
+[k]
+
+＠シグルド
+ヒトは変わらんな。[r]フ。まるで神々のようじゃないか。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+（神々……？）
+[k]
+
+[charaFace A 7]
+
+＠マシュ
+なんと言われようと構いません。[r]或いは本当に、その通りなのかもしれませんから。
+[k]
+
+＠マシュ
+でも、それでも……
+[k]
+
+[charaFace A 2]
+
+＠マシュ
+わたしも先輩も退きません！[r]今度は、ホームズさんが背中を押してくれています！
+[k]
+
+＠マシュ
+[line 3]退くのは！[r][line 3]あなたです、英霊シグルド！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

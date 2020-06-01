@@ -1,0 +1,483 @@
+
+＄94-03-35-02-1-0
+
+[soundStopAll]
+
+[charaSet A 5042000 1 紫式部]
+[charaSet B 99502600 1 マシュ]
+[charaSet C 98002000 1 フォウ]
+[charaSet D 1098162300 1 セミラミス]
+[charaSet E 7016001 1 タマモキャット]
+[charaSet F 4011001 1 ブーディカ]
+[charaSet G 2001000 1 エミヤ]
+[charaSet I 98115000 1 エフェクト用]
+[charaSet J 98115000 1 エフェクト用]
+
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_41]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66700]
+[branch lblConf]
+[label lblNotClear]
+[scene 60300]
+[label lblConf]
+
+
+[se ad413]
+[seVolume ad413 0 0.1]
+[seVolume ad413 1.0 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+[seStop ad413 1.0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+＠紫式部
+なるほど、これはまた賑やかな[line 3]
+[k]
+
+？1：食堂は初めて？
+
+＠紫式部
+はい。そうなのです。
+[k]
+
+＠紫式部
+生来、籠もるのが好きといいますか……[r]書に親しみ、[#詞:ことば]に触れるのが大好きで。
+[k]
+
+＠紫式部
+あまり自慢できることではないのですが、[r]幼い頃からよく漢書などを読んでおりました。
+[k]
+
+？2：図書館の外にはあんまり出ない？
+
+＠紫式部
+そう、ですね。[r]意識していた訳ではないのですが……
+[k]
+
+＠紫式部
+暇さえあれば、[r]図書館の蔵書を読むばかりで。
+[k]
+
+[charaFace A 4]
+＠紫式部
+気付けば皆様との交流をおろそかにしていました。[r]いけませんね。
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[se ad13]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 0.3]
+＠マシュ
+食堂には皆さんよく集まりますから、[r]呪本の行方を捜すにはもってこいかと！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠フォウ
+フォウ？？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠マシュ
+セミラミスさんと一緒に、[r]私が管制室から先輩と紫式部さんをサポートしますね。
+[k]
+
+＠マシュ
+ミスター・ホームズはお休み中で、[r]ダ・ヴィンチちゃんもお疲れ気味のようなので……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+＠セミラミス
+ホームズはいつものあれであろう。[r]放っておくがよい。
+[k]
+
+[charaFace D 0]
+＠セミラミス
+ダ・ヴィンチは何やら足元がふらついていたからな、[r]今回は休ませてやるのが良いだろう。
+[k]
+
+＠セミラミス
+さて。[r]それで『最初の呪本』とやらだが[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.4]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.4 1]
+[wt 0.4]
+＠タマモキャット
+お！　おお？
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaFace E 0]
+＠タマモキャット
+またひとり知らない新顔がテーブルイン！[r]栄養不足に見えてなかなかのボリュームに[#眩暈:めまい]がする。
+[k]
+
+＠タマモキャット
+しかしどのような矛盾ボディであれ[r]お客とあらば取って食う。我ネコ故な。
+[k]
+
+[charaFace E 1]
+＠タマモキャット
+そういう訳で、キャットの手料理を食べていくワン！[r]新人には９９％割引で振る舞おう！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFace E 1]
+[charaFadein F 0.1 2]
+[charaFadein E 0.1 0]
+＠ブーディカ
+なになに、どうしたの？
+[k]
+
+[charaFace F 1]
+＠ブーディカ
+おや、[%1]に……図書館の司書さん！[r]珍しいね。何か食べにきたのかな。
+[k]
+
+
+[charaTalk E]
+[charaFace E 0]
+＠タマモキャット
+しかも愁いの図書館司書ときた。[r]やはりここはサンドイッチの出番では？
+[k]
+
+[charaFace E 4]
+＠タマモキャット
+だが残念だ、お手々綺麗な女よ……[r][#紙魚:しみ]だけはどんなネコでも調理できぬ……。
+[k]
+
+＠タマモキャット
+いや、いつかはサバこうと企んでいるのだが、[r]そもそも姿が見当たらぬものをどうやって……
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠紫式部
+は、はあ……。[r]あの、この方はどういう……？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.4 1]
+[wt 0.4]
+＠エミヤ
+すまない。[r]彼女の発言はフィーリングで受け止めてくれ。
+[k]
+
+[charaFace G 0]
+＠エミヤ
+食堂では初めまして、紫式部。[r]図書館から出てきたのは初めてかな？
+[k]
+
+？1：キャット以外は面識があるんだね
+？2：紫式部さん、有名人なんだね
+
+？！
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+[charaMoveReturn A -30,0 0.6]
+[wt 0.6]
+[charaMoveReturn A 30,0 0.5]
+[wt 0.5]
+
+[charaFace A 6]
+＠紫式部
+も、もも、申し訳……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠セミラミス
+あー、うむ。そこのマスターと英霊は本を捜している。[r]特殊な魔力を帯びた本でな。
+[k]
+
+＠セミラミス
+厨房を司る英霊たちよ、[r]何か[line 3]知ってはいないか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠紫式部
+（セミラミス様……）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFace F 0]
+[charaFadein G 0.1 0]
+[charaFadein F 0.1 2]
+＠エミヤ
+いや、厨房を司る英霊という訳ではないが[line 3]
+[k]
+
+
+[charaTalk F]
+[charaFace F 4]
+＠ブーディカ
+本なら最近はみんな読んでるけど、そうだねぇ。[r]特に目立ったのはやっぱり……
+[k]
+
+
+[charaTalk G]
+[charaFace G 0]
+＠エミヤ
+作家系サーヴァントだな。[r]普段から読書する姿は見掛けていたが、
+[k]
+
+＠エミヤ
+特に最近は、テーブルに本を積み上げていたはずだ。[r]今朝あたりもな。
+[k]
+
+
+[charaTalk F]
+[charaFace F 1]
+＠ブーディカ
+うん、そうだったそうだった！[r]いつもよりたくさん読んでるよねえ。
+[k]
+
+
+[charaTalk G]
+[charaFace G 0]
+＠エミヤ
+流行、というのだろうな。
+[k]
+
+
+[charaTalk F]
+[charaFace F 3]
+＠ブーディカ
+そうそう。あたしたちも読んでるくらいだもんね。[r]面白いねぇ、読書。知らないことがすらすら頭に入って。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad127]
+[seVolume ad127 0 0.5]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 -350,0]
+[charaMove E 0,0 0.4]
+[wt 0.4]
+[seStop ad127 0.4]
+[wt 0.6]
+＠タマモキャット
+サッとキャットワンダフルエントリー！[r]待たせたな、皆の者！
+[k]
+
+＠タマモキャット
+インテリジェンスの香りをスパイスに、[r]食堂に相応しいメニューをお出ししよう！
+[k]
+
+[charaFace E 1]
+＠タマモキャット
+そう[line 3]我ら厨房英霊といえば！　コレ！
+[k]
+
+[se ad186]
+[charaPut I 1]
+＠タマモキャット
+『おっきーでも出来る簡単お料理集／[r]　シラサギ印の[#百毅苦々堂:ひゃっきくっくどう]サマ！！』
+[k]
+
+？1：おおっと！
+？2：この流れからするとその本はまさか
+
+？！
+
+[bgmStop BGM_EVENT_7 1.0]
+[charaPut I 1200,1200]
+[charaEffectStop I bit_talk_41]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se adm21]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaMoveReturn C 0,40 0.5]
+＠フォウ
+フォウフォウ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠タマモキャット
+お、おお？　何だ何だ？[r]頼光に借りてきてもらった本だぞ？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠紫式部
+キャット様！[r]失礼！
+[k]
+
+[messageOff]
+[fowardEffect bit_talk_pentagram_03]
+[wt 0.1]
+[se ad598]
+[wt 3.4]
+
+[se ade251]
+[fowardEffectStop bit_talk_pentagram_03]
+[wt 2.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+[charaShake E 0.03 4 4 0.4]
+[wt 0.6]
+
+[se adm21]
+[charaFace E 2]
+＠タマモキャット
+バ[messageShake 0.03 3 3 0.4]カなー！？[r]キャットの本が空中にぴょんと飛んだー！？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk off]
+[charaFace G 5]
+[charaFace F 5]
+[charaFadein G 0.1 0]
+[charaFadein F 0.1 2]
+[wt 1.0]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠紫式部
+やはり！　その本[line 3]呪本にてございます！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠マシュ
+その本から、特殊な魔力反応が感知されました！[r]呪本反応と仮称しますね！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠紫式部
+皆様失礼！[r]呪本回収、開始いたします！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,277 @@
+
+
+＄94-03-85-06-1-0
+
+[soundStopAll]
+
+[charaSet A 98001000 1 家老マシュ]
+[charaSet B 11007000 1 足軽ノッブ]
+[charaSet C 1098172100 1 モブ足軽]
+[charaSet D 7035001 1 森長可]
+[charaSet E 10008001 1 シトナイ]
+[charaSet F 7001001 1 ヘラクレス]
+[charaSet J 98115000 1 シロウ]
+
+
+[scene 79000]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_66 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠家老マシュ
+[#先輩:との]、[#蝦夷:えぞ]から商人が来るそうですよ。
+[k]
+
+？1：[#蝦夷:えぞ]っていうと、北海道？
+
+？2：なにを売ってくれるのかな？　シャケ？
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠足軽ノッブ
+[#蝦夷:えぞ]のう……、わしらの頃は遠すぎて、[r]なんもわからんかったからな。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_66 1.5]
+
+[se ad55]
+[seVolume ad55 0 0.1]
+[seVolume ad55 0.5 1.0]
+[wt 1.0]
+[seStop ad55]
+
+[se ade34]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.4 -50,0]
+[charaMove C 1 0.5]
+[wt 0.5]
+
+＠モブ足軽
+大変です！　城下の橋で長可様が[#蝦夷:えぞ]の商人と[r]争っております！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠家老マシュ
+ええ！？　森君には出迎えを、[r]お願いしたはずなのですが！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠足軽ノッブ
+なに！？　それはいかんぞ！　詳しい説明は省くが[bgm BGM_EVENT_3 0.1][r]橋と勝蔵って、なぜか血が流れる運命なのじゃ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠家老マシュ
+まことに！？　どういうことでしょうか！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠足軽ノッブ
+いや、あいつ橋の門番にちょっと注意されただけで[r]門番を斬り殺すとかいうハートフルな逸話持ちでな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠家老マシュ
+ハートフルどころかハートレスです！
+[k]
+
+＠家老マシュ
+先輩、商人の方が心配です！　急いで向かいましょう！
+[k]
+
+[messageOff]
+
+[se ad59]
+
+[wipeout rightToLeft 0.5 0.5]
+[bgm BGM_EVENT_3 0.5 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+
+[seVolume ad59 0.5 0.5]
+
+[scene 52600]
+[wt 0.3]
+
+[wipein leftToRight 0.5 0.5]
+[bgm BGM_EVENT_3 0.5 1.0]
+[seVolume ad59 0.5 1.0]
+[wait wipe]
+
+[wt 0.5]
+[seStop ad59]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠家老マシュ
+先輩！　あそこです！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠足軽ノッブ
+で、[#蝦夷:えぞ]の商人とやらは生きとるのか？[r]やっぱ死んじゃった？　シャケ食べたかったのう……。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+[effect bit_talk_kengekiall03]
+[wt 0.1]
+[se ad32]
+[wt 0.2]
+[se bac6]
+[wt 0.2]
+[se bac7]
+[wt 0.5]
+[flashin once 0.1 0.3 CC3300AF CC330000]
+[shake 0.02 3 3 0.5]
+[effect bit_talk_Slash_red_01]
+[se ad170]
+[wt 1.0]
+
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.4 -80,0]
+[charaShake D 0.05 2 1 0.6]
+[charaMove D -20,0 0.2]
+[wt 0.2]
+[charaMove D 1 0.2]
+[wt 0.2]
+[seStop ad671 0.5]
+
+＠森長可
+うはははははは！[r][#蝦夷:えぞ]のサムライもなかなかやるじゃねぇか！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠足軽ノッブ
+まさかの勝蔵が血だらけではないか！？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 22]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠シトナイ
+もう、橋を渡ろうとしただけなのに[r]いきなり斬りかかるなんてなんなのこいつは？
+[k]
+
+＠シトナイ
+シロウ、バーサーカー、やっちゃって！
+[k]
+
+[cueSe Servants_1000800 bac838]
+
+＠シロウ
+ガアアアアアアアア！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+[se ade263]
+
+＠ヘラクレス
+[image berserker_language_2][line 3]！！！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠家老マシュ
+あれは……、シトナイさん！？[r]と、とにかく止めましょう！　先輩！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[seStop ade263 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

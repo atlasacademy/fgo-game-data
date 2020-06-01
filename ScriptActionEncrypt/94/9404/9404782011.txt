@@ -1,0 +1,203 @@
+
+
+
+＄94-04-78-20-1-1
+
+
+[soundStopAll]
+
+
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 25005000 1 ボイジャー]
+[charaSet C 3043000 1 エリセ]
+[charaSet D 7006001 1 坂田金時]
+[charaSet F 98115000 1 エフェクト用]
+
+[scene 47001]
+
+[pictureFrame cut170_gameframe_dark]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[pictureFrame]
+[pictureFrameTop cut170_gameframe_dark]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 0,-50]
+
+＠坂田金時
+オレの出番はここまでだ。じゃあな、大将。[r]ゴールデンなラッキーを祈ってるぜ。
+[k]
+
+[charaFace D 0]
+＠坂田金時
+ああ、それと、あのエリセって女の子な？[r]泣かすんじゃねえぞ？
+[k]
+
+？1：そんなことしないし
+
+？2：ボイジャーがさせない
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+＠ボイジャー
+むつかしいな……。[r]エリセ、なきむしだから、ね。
+[k]
+
+[charaFace B 1]
+＠ボイジャー
+でも、がんばってみるよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 0,-50]
+
+＠坂田金時
+よーし頼むぞ坊主、いや兄弟。[r]おまえさんもゴールデン魂の持ち主だ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 0,-50]
+＠ボイジャー
+そうさ。[r]あなたのごーるでんも、なかなかだね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠坂田金時
+おまえさんは星さんみたいにピカピカしてるが、[r]エリセは、ちょっとダークだな。
+[k]
+
+＠坂田金時
+けど、そんな黒くて暗くてワケわかんねぇもんを抱えて、[r]アイツは独りで戦ってんだろ？
+[k]
+
+[charaFace D 1]
+＠坂田金時
+たいしたタマだろうが、なぁ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+＠ボイジャー
+うん。たいした、[#たま]なんだ。[r]エリセは。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_62 1.0 0.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_62 1.0 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+[wt 1.2]
+
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[effect bit_talk_dice24]
+[wt 0.15]
+[voice 304300_0_X090]
+[wt 5.85]
+[wait voice 304300_0_X090]
+
+
+
+[charaTalk depthOff]
+[charaDepth F 2]
+[charaDepth C 1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+[wt 0.5]
+
+[charaPut F 0,0]
+[charaEffect F bit_talk_quickmove]
+[charaFadein C 0.1 0,-50]
+[charaMove C 0,-44 0.3]
+[se ad27]
+[se ad399]
+[seVolume ad399 0 0.7]
+[wt 0.1]
+[charaSpecialEffect C erasureReverse 1 0.3]
+[wt 0.5]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_62 0.7 0.5]
+[wait wipe]
+[wt 0.5]
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_62 0.7 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaEffect F bit_talk_quickmove]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-44]
+[charaMove C 0,-50 0.2]
+[wt 0.1]
+[se ad27]
+[wt 1.5]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+＠マシュ
+エリセさんのダイスロールを確認しました。[r]移動先、前方約300メートル。
+[k]
+
+[messageOff]
+[maskout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+

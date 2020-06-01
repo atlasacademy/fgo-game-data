@@ -1,0 +1,209 @@
+
+
+＄94-03-01-01-2-0
+
+
+
+
+[soundStopAll]
+
+[charaSet A 3034001 1 茨木童子]
+[charaSet B 6029001 1 アサシン・パライソ]
+[charaSet C 99502600 1 マシュ]
+[charaSet F 98115000 1 エフェクト用]
+[charaSet G 98115000 1 エフェクト用2]
+[charaSet H 98115000 1 通信用]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 64600]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.5]
+[se adm15]
+[effect bit_talk_v_slash02]
+[wt 0.3]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se bac80]
+[se ad267]
+[charaPut F -200,-50]
+[charaEffect F bit_talk_32]
+[wt 0.3]
+[se bac80]
+[se ad267]
+[charaPut G 200,-50]
+[charaEffect G bit_talk_32]
+
+[wt 1.0]
+
+[charaEffectStop F bit_talk_32]
+[wt 0.3]
+[charaEffectStop G bit_talk_32]
+[wt 0.5]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.5]
+[se adm14]
+[charaMoveReturn B 10,0 0.2]
+[wt 0.2]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se bac141]
+[charaPut F 0,50]
+[charaEffect F bit_talk_14]
+[wt 0.2]
+[se bac141]
+[charaPut F -100,0]
+[charaEffect F bit_talk_14]
+[wt 0.4]
+[se bac142]
+[charaPut F 100,-30]
+[charaEffect F bit_talk_14]
+[wt 1.0]
+
+
+[cueSe Battle bac234]
+[shake 0.05 0 5 0.5]
+[effect bit_talk_impactlanding]
+[bgmStop BGM_EVENT_3 1.0]
+[wt 2.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：[servantName 602900:アサシン・パライソ:望月千代女]
+…………お館様、大型の鬼を仕留めてござる。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+ふふん！　ぬるいわ！[r][#汝:なれ]ら如きが鬼将とまで呼ばれた[#吾:われ]に敵うものかよ！
+[k]
+
+＠茨木童子
+大物の一匹や二匹を連れてきたところで[r]変わらぬ、変わらぬ！　鬼を[#騙:かた]る[#不埒者:ふらちもの]なぞこの[#吾:われ]が……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.0]
+[charaTalk B]
+[se ad57]
+[shake 0.05 0 3 0.3]
+[wt 1.5]
+[shake 0.05 0 3 0.3]
+[wt 1.0]
+[seStop ad57 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+はて。この足音は……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad57]
+[shake 0.05 0 3 0.3]
+[wt 1.0]
+[seStop ad57]
+[wt 0.5]
+[se ad17]
+[wt 2.0]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠マシュ
+大型の反応が複数接近！[r]先ほどの戦闘の最後に出現した戦闘に特化したタイプ、
+[k]
+
+＠マシュ
+あるいはその亜種と思しき個体が複数集結しています！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠茨木童子
+面白い！　続々と新手が押し寄せる！[r]図体ばかりの大物が多いようだが、そんなもの[line 3]
+[k]
+
+？1：変な挑発[&しない:しないの]！
+
+[charaFace A 5]
+
+＠茨木童子
+む？　何が悪い？
+[k]
+
+？2：とりあえず切り抜ける！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠B：[servantName 602900:アサシン・パライソ:望月千代女]
+承知！[r]童子殿！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+？！
+
+[charaFace A 1]
+
+＠茨木童子
+[#木偶:で　く]の坊なぞ幾ら集めても同じこと。[r]くく、くはははは！　もうひと暴れしてやるまでだ！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

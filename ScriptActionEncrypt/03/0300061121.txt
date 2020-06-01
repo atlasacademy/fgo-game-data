@@ -1,0 +1,420 @@
+
+
+
+＄03-00-06-10-2-1
+
+
+
+[soundStopAll]
+
+[charaSet A 3041001 1 カイニス]
+[charaSet B 1098191900 1 オリュンポス正規兵]
+[charaSet C 8001400 1 マシュ]
+[charaSet D 1017001 1 武蔵]
+[charaSet E 1098191200 1 アデーレ]
+[charaSet F 1098191300 1 マカリオス]
+[imageSet G back10000 1]
+[charaSet O 5009000 1 エフェクト用ダミー]
+[charaSet S 5009000 1 エフェクト用ダミー１]
+[charaSet T 5009000 1 エフェクト用ダミー２]
+
+[charaScale G 1.41]
+
+[scene 92501]
+
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth S 2]
+[charaDepth T 3]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[se ad51]
+[wt 0.6]
+
+[charaMoveScale A 1.1 0.2]
+[charaMove A 0,10 0.2]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[charaFadeout A 0.2]
+[effect bit_talk_41]
+[se ad73]
+[wt 0.4]
+
+[charaScale A 1.0]
+
+[blurOff motion 0.1]
+[se ad32]
+[effect bit_talk_14 -200,150]
+[wt 0.1]
+[se ad32]
+[effect bit_talk_14 0,-200]
+[wt 0.1]
+[se ad32]
+[effect bit_talk_14 200,150]
+[wt 0.5]
+[se bac210]
+[se ad897]
+[effect bit_talk_attack_splash 0,0 H]
+[effectStop bit_talk_41]
+[wt 0.8]
+
+[charaTalk B]
+[charaFace B 0]
+[charaScale B 1.05]
+[charaFadein B 0.1 -64,20]
+[charaShake B 0.08 6 3 0.4]
+[charaMoveScale B 1.0 0.5]
+[se ad671]
+[seVolume ad671 0 0.9]
+[wt 0.6]
+[seStop ad671 0.5]
+[wt 1.0]
+
+＠オリュンポス正規兵
+カルデアの悪魔。[r]我らが神々の威光を畏れぬ不心得者。
+[k]
+
+＠オリュンポス正規兵
+死ね[line 3]
+[k]
+
+＠オリュンポス正規兵
+死ね。死ね。死ねェ！[r]死んで、冥府を成す機構となりて神々に詫びよ！
+[k]
+
+[messageOff]
+[wt 0.3]
+
+[charaPut S 1]
+[charaEffect S bit_talk_h_slash01 0,0 F]
+[se ad680]
+[seVolume ad680 0 0.6]
+[wt 0.1]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaFadeout B 0]
+[charaPut S 1200,1200]
+[charaEffectDestroy S]
+
+[charaTalk C]
+[charaFace C 15]
+[charaScale C 1.05]
+[charaFadein C 0 1]
+[fowardEffect bit_talk_14]
+[se ad32]
+[charaShake C 0.08 8 2 0.6]
+[wt 1.0]
+
+[charaFace C 15]
+
+＠マシュ
+……ッ！　カイニスさん！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠カイニス
+死ね死ねうるせえな、死ね！
+[k]
+
+[messageOff]
+[se bac210]
+[se ad897]
+[charaPut S 150,0]
+[charaEffect S bit_talk_attack_splash]
+[wt 0.1]
+[charaFadeout A 0.1]
+[se ad414]
+[effect bit_talk_water_splash]
+[wt 0.2]
+[seStop ad414 0.4]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0 1]
+[wt 0.2]
+[se ad161]
+[fowardEffect bit_talk_35]
+[charaShake B 0.08 5 1 0.2]
+[wt 1.0]
+[charaEffectDestroy S]
+
+＠オリュンポス正規兵
+ぐッ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+[wt 0.5]
+[charaEffect D bit_talk_quickmove]
+[se ad73]
+[charaSpecialEffect D erasureReverse 1 0.2]
+[wt 0.5]
+
+[charaTalk depthOff]
+[charaDepth B 2]
+[charaDepth D 1]
+[charaFace D 12]
+[charaTalk B]
+[charaFadein B 0.1 -100,0]
+[wt 0.5]
+[se ad223]
+[charaTalk D]
+[charaPut D 150,0]
+[charaEffect D bit_talk_quickmove 0,0 V]
+[charaSpecialEffect D appearance 1 0.2]
+[wt 0.5]
+[se bac306]
+[wt 0.2]
+
+
+[charaFace D 2]
+[charaPut S 0,90]
+[charaEffect S bit_talk_x_slash03]
+[charaShake B 0.05 8 3 0.6]
+[cueSe Battle bac509]
+[wt 0.7]
+
+＠オリュンポス正規兵
+呪……われよ……[r]カルデア！
+[k]
+
+[messageOff]
+[wt 0.3]
+[bgmStop BGM_EVENT_80 1.0]
+[fowardEffect bit_talk_blood_splash]
+[se ad464]
+[charaFadeout B 0.4]
+[wt 1.0]
+[se ad144]
+[charaFace D 12]
+[wt 1.5]
+[charaTalk D]
+[se ad975]
+[wt 0.5]
+
+＠武蔵
+[line 3]恨み、怨念承る。[r]せめて浄土に[line 3]
+[k]
+
+[charaFace D 6]
+
+＠武蔵
+って、そっか、オリュンポスの人たちは[r]すぐ生き返るんだっけ。拝んでも意味なかった！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠カイニス
+（……情け深いかと思えばこれだからな、この女……[r]　サムライってのはここまで頭がアレなのか？）
+[k]
+
+[charaFace A 22]
+
+＠カイニス
+って、なに感心してんだオレは！
+[k]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaFace A 2]
+
+＠カイニス
+オイ、二刀流！[r]オレの権能が効いてるうちに進むぞ！
+[k]
+
+[charaFace A 0]
+
+＠カイニス
+即時の完全再生は阻めるが、[r]自動再生までは止まらん。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.4 0.4]
+[charaTalk depthOff]
+[charaDepth G 1]
+[charaDepth D 2]
+[charaFadeTime G 0.2 0.6]
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+[wt 0.2]
+
+＠武蔵
+（んんんん？）
+[k]
+
+＠武蔵
+（何となく。何となく、だけど。[r]　前よりも幾らか戦いやすくなってる[line 3]）
+[k]
+
+＠武蔵
+（クリロノミアの強化があるのは間違いない。[r]　カイニスさんが助太刀に入ってくれたのも大きい）
+[k]
+
+[charaFace D 12]
+
+＠武蔵
+（でも、この感じ。それだけじゃない）
+[k]
+
+＠武蔵
+（何？）
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_70 0.4 1.0]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaFace D 0]
+
+＠武蔵
+でもまあ、ね！[r]やっぱり強いわオリュンポス兵！
+[k]
+
+＠武蔵
+その上、本質的には数が減らないし。[r]やっぱり大物狙いしかないってコトか！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠マカリオス
+そうだ。兵士たちと戦うのが目的じゃない。[r]間違えるなよ。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 0.8]
+[wt 1.0]
+[bgm BGM_EVENT_62 0.1]
+
+[charaFace F 2]
+
+＠マカリオス
+次の場所まではもうすぐだ[line 3]急げ！[r]彫像街には正規兵が多い。すぐに新手が来るぞ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠アデーレ
+マカリオス！[r][#攪乱:かくらん]を！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠マカリオス
+……分かった。
+[k]
+
+[charaFace F 7]
+
+＠マカリオス
+[#攪乱:かくらん]の術式を張る！[r]毒性はないが、あんたたち！
+[k]
+
+[charaFace F 2]
+
+＠マカリオス
+[#噎:む]せるから吸い込むなよ！[r]……ッと！
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth F 5]
+[charaDepth S 7]
+[charaPut S 1]
+[charaEffect S bit_talk_spell_b]
+[se ad39]
+[wt 1.2]
+[se bac32]
+[wt 0.5]
+[charaFadeout F 0.1]
+[wt 0.3]
+[shake 0.05 0 4 2.5]
+[cueSe Battle bac325]
+[cueSeVolume bac325 0 0.3]
+
+[wt 1.5]
+[effect bit_talk_sand_dust_front]
+[charaEffect O bit_talk_sand_dust_back]
+[wt 3.0]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠武蔵
+けほっけほっ。[r]これって、最初に会った時のアレね！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠マカリオス
+同盟特製の緊急用術式だ。[r]短時間だが、魔力感知に対する[#攪乱:かくらん]にもなる！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠アデーレ
+皆さん、こちらです！[r]第二の場所へ……！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait fade]
+[wt 1.2]
+[soundStopAll]
+[end]
+

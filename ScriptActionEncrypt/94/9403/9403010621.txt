@@ -1,0 +1,519 @@
+
+
+＄94-03-01-06-2-1
+
+
+[soundStopAll]
+
+[charaSet A 6007003 1 殺人の鬼]
+[charaSet B 1098157600 1 護法少女]
+[charaSet C 1098157700 1 小動物]
+[charaSet D 10008001 1 シトナイ]
+[charaSet E 99502600 1 マシュ]
+[charaSet F 3034002 1 茨木童子]
+[charaSet G 6029001 1 アサシン・パライソ]
+[charaSet H 98115000 1 エフェクト用]
+
+
+[scene 64900]
+
+[bgm BGM_EVENT_24 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[wt 0.3]
+
+[se adm14]
+[charaPut H -150,0]
+[charaEffect H bit_talk_v_slash02]
+[wt 0.2]
+
+[se adm14]
+[charaPut H 150,0]
+[charaEffect H bit_talk_v_slash02]
+[charaFadeout F 0.1]
+[wt 0.5]
+
+[charaPut H 1]
+
+[se ad267]
+[effect bit_talk_29]
+[wt 1.5]
+
+[charaDepth H 10]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 0.5]
+[se ad39]
+[charaEffect H bit_talk_36_bl]
+[wt 1.5]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_36_bl]
+[charaFadeout B 0.1]
+[wt 0.3]
+[se bac165]
+[flashin once 0.1 1.0 5944EAFF 5944EA80]
+[effect bit_talk_14]
+[wt 0.5]
+[seStop bac165 0.5]
+[wt 0.1]
+[se bas13]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.3]
+[charaShake A 0.05 3 3 0.5]
+[bgmStop BGM_EVENT_24 1.0]
+[wt 1.0]
+
+
+
+＠殺人の鬼
+………………ッ！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[bgm BGM_EVENT_11 0.1 1.0]
+[charaEffect A bit_talk_06]
+[wt 1.5]
+
+[charaFace A 0]
+＠殺人の鬼
+っかしいなあ……[r]サーヴァント数騎相手取るのは流石にキツイって……
+[k]
+
+＠殺人の鬼
+分かってたはずなんだよなァ……
+[k]
+
+[charaFace A 4]
+＠殺人の鬼
+分かってたから、一匹ずつ仕留めて……[r]ラクするつもりだったのによォ……クソッ……
+[k]
+
+＠殺人の鬼
+コピー元が悪かったかなァ……[r]いや……
+[k]
+
+[charaFace A 0]
+＠殺人の鬼
+……………やっぱり、アイツの真似すんのは駄目だな。
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaEffectStop A bit_talk_06]
+[wait charaEffect A bit_talk_06]
+[se ad52]
+[charaSpecialEffect A flashErasure 1 2.0]
+[wait charaSpecialEffect A]
+
+[wt 1.5]
+
+[cueSe Battle bac199]
+[cueSeVolume bac199 0 0.6]
+
+[charaPut H 1]
+[charaEffect H bit_talk_gold_kamui]
+[wt 3.0]
+[charaPut H 1200,1200]
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+＠シトナイ
+お疲れさま。
+[k]
+
+＠シトナイ
+おいで。おいで。[r]もう、そんなに頑張らなくてもいいんだよ。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+
+[wt 1.0]
+[se adm19]
+[charaEffectStop H bit_talk_gold_kamui]
+[wt 1.0]
+[seStop adm19 1.0]
+[wt 1.0]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+＠シトナイ
+………うん。もう眠ろうね。[r]誰も、あなたの眠りを邪魔したりしないから。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_11 1.0]
+[wt 1.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+＠マシュ
+戦闘終了です、先輩。[r]これで第四の黄金も回収できましたね。
+[k]
+
+[charaFadeout E 0.1]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+[charaDepth C 10]
+[charaTalk B]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 0,0]
+＠護法少女
+ほな、うちは行くさかい。[r]そこで転がっとる黒髭はん、ちゃんと持って帰り？
+[k]
+
+[charaFace C 1]
+
+＠小動物
+残る黄金の塊は鬼王を除けばひとつだけだ。[r]気を引き締めてかかれよ、カスども。
+[k]
+
+
+[messageOff]
+[charaTalk off]
+[charaEffect B bit_talk_quickmove]
+[charaSpecialEffect C erasureReverse 1 0.3]
+[charaSpecialEffect B erasureReverse 1 0.3]
+[se ad73]
+[wt 0.5]
+
+
+[charaSet A 6013001 1 ファントム]
+[charaSet B 4025000 1 コロンブス]
+[charaSet C 5014001 1 メフィストフェレス]
+[wt 0.5]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠茨木童子
+ありがとう！[r]ありがとう護法少女・鬼救阿！　また会いたい！
+[k]
+
+＠茨木童子
+いつか、ゆっくり団子でも食いたいものだ……[r]まかろんでも良いのだが……
+[k]
+
+[charaFace F 1]
+＠茨木童子
+ちょこれえとでも良いのだが……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠G：[servantName 602900:アサシン・パライソ:望月千代女]
+お館様、連戦連勝お見事にござる。[r]しかしその[line 3]
+[k]
+
+[charaFace G 4]
+＠G：[servantName 602900:アサシン・パライソ:望月千代女]
+拙者、いささか疑問があるのですが……[r]なにゆえにそこの殿方たちは戦闘に参加しなかったので？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠ファントム
+クリスティーヌ……。[r]君の歌声を、聴く資格が、私には……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠B：[servantName 402500:レジスタンスのライダー:コロンブス]
+……………魔力が足りねェんだよ、情けないことにな。
+[k]
+
+[charaFace B 0]
+＠B：[servantName 402500:レジスタンスのライダー:コロンブス]
+このオニランドだったか？[r]奇妙な場所だぜ。ただ遊んでるだけで魔力が減りやがる。
+[k]
+
+＠B：[servantName 402500:レジスタンスのライダー:コロンブス]
+流石にさっさとカルデアに戻りたいんだが[r]それもできねえとくる。縁が結ばれちまってんだな。
+[k]
+
+[charaFace B 1]
+＠B：[servantName 402500:レジスタンスのライダー:コロンブス]
+早いとこなんとかしてくれや、マスター。[r]ふう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠メフィストフェレス
+まあそんな状態で戦闘なぞしたものですから、ええ！[r][#私:わたくし]たちもうからっけつなのです！　エンプティー！
+[k]
+
+[charaFace C 2]
+＠メフィストフェレス
+正直この状態であの偽ハイドさんに襲い掛かられれば[r]危なかったかもですねぇ！　んー残念！　助かりました！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠B：[servantName 402500:レジスタンスのライダー:コロンブス]
+ハッハー。残念なのか助かったのかハッキリしろ！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_2 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 2.0]
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[bgm BGM_BATTLE_29 0.1]
+
+＠鬼王朱裸
+グフフ……グフフフフフ……！！
+[k]
+
+＠鬼王朱裸
+ガーッハッハッハッハ！[r]まさに愚かな連中よ、遂に我を本気にさせるとはな！
+[k]
+
+＠鬼王朱裸
+あらゆるアトラクションマネージャーの中でも[r]最も怖い系の雰囲気を持ったマネージャー！
+[k]
+
+＠鬼王朱裸
+我がオニランドで一番人気を誇るアトラクション！[r]伝説の！　観覧車マネージャーよ[line 3]今こそきたれ！
+[k]
+
+＠鬼王朱裸
+不遜なるクレーマー連中を！[r]貴様のその恐い感じで……地獄に叩き落とすのだ！
+[k]
+
+＠鬼王朱裸
+千歳の美麗にして雄大なる自然………[r]それこそが、連中が見る最後の景色となろう！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠鬼王朱裸
+あっ。
+[k]
+
+＠鬼王朱裸
+あとさ、えーとほら、前にキミに発注した[r]アレって用意……できてる？　え、できてない？
+[k]
+
+＠鬼王朱裸
+あれ？[r]あーそっか、[#朱裸:シ ュ ラ]勘違いしてたかもー。
+[k]
+
+＠鬼王朱裸
+うんうんでも[#本物のカレ]に発注はしたはず！[r]してたはず！　ガハハハハハ！　ノープロブレム！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+
+
+
+[fadeout black 1.0]
+[bgmStop BGM_BATTLE_29 1.0]
+[wait fade]
+
+[input selectBranch]
+
+[bgmStop BGM_EVENT_24 1.0]
+[bgmStop BGM_EVENT_11 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[bgmStop BGM_BATTLE_29 1.0]
+
+[seStop adm14 0.1]
+[seStop ad267 0.1]
+[seStop ad39 0.1]
+[seStop bac165 0.1]
+[seStop bas13 0.1]
+[seStop ad52 0.1]
+[seStop adm19 0.1]
+[seStop ad73 0.1]
+[cueSeStop bac199 0.1]
+
+[effectStop bit_talk_29]
+[effectStop bit_talk_14]
+
+[charaSet A 6007003 1 殺人の鬼]
+[charaSet B 1098157600 1 護法少女]
+[charaSet C 1098157700 1 小動物]
+[charaSet D 10008001 1 シトナイ]
+[charaSet E 99502600 1 マシュ]
+[charaSet F 3034002 1 茨木童子]
+[charaSet G 6029001 1 アサシン・パライソ]
+[charaSet H 98115000 1 エフェクト用]
+
+[scene 10000]
+[skip false]
+
+[messageOff]
+[maskin black 1.0]
+[wait mask]
+
+[fadeout black 0.1]
+[wait fade]
+[soundStopAll]
+
+[label selectBranch]
+
+[skip false]
+
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+＠
+【caution！】[r]【この先、専用演出としてボイスが再生されます】
+[k]
+
+＠
+【[line 3]準備が整ったら画面をタッチしてね！】
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+[tapSkip stop_tapSkip]
+[label stop_tapSkip]
+
+[bgm BGM_EVENT_99 0.1]
+
+[revivalBranch lblNormal lblRevival]
+[label lblNormal]
+[effect bit_talk_oniland_nexttitle]
+[wait fowardEffect]
+[branch lblConf]
+[label lblRevival]
+[effect bit_talk_oniland_nexttitle_r]
+[wait fowardEffect]
+[label lblConf]
+[wt 3.1]
+[effect bit_talk_oniland_cut06]
+
+[wt 0.3]
+
+[pictureFrame cut132_text_25]
+[voice 9010011_0_M660]
+[wait voice 9010011_0_M660]
+[pictureFrame]
+
+[pictureFrame cut132_text_26]
+[voice 9010011_0_M661]
+[wait voice 9010011_0_M661]
+[pictureFrame]
+
+[wt 0.3]
+
+[pictureFrame cut132_text_27]
+[voice 9010011_0_M662]
+[wt 3.2]
+[pictureFrame]
+[pictureFrame cut132_text_39]
+[wait voice 9010011_0_M662]
+[pictureFrame]
+
+[wt 0.3]
+
+[pictureFrame cut132_text_28]
+[voice 9010011_0_M663]
+[wait voice 9010011_0_M663]
+[pictureFrame]
+
+[wt 0.2]
+
+[pictureFrame cut132_text_29]
+[voice 9010011_0_M664]
+[wait voice 9010011_0_M664]
+
+[wt 0.1]
+[pictureFrame]
+
+[pictureFrame cut132_text_30]
+[voice 9010011_0_M665]
+[wt 2.5]
+[pictureFrame]
+[pictureFrame cut132_text_40]
+[wt 3.0]
+[pictureFrame]
+
+[effect bit_talk_oniland_telop06]
+
+[wait voice 9010011_0_M665]
+
+[wt 0.3]
+
+[voice 9010011_0_M666]
+[wait voice 9010011_0_M666]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_99 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

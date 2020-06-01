@@ -1,0 +1,463 @@
+
+＄94-03-66-13-1-0
+
+[soundStopAll]
+
+[charaSet A 4032000 1 ライネス]
+[charaSet B 6039000 1 グレイ]
+[charaSet C 9008001 1 アストライア]
+[charaSet D 1098165700 1 ムネーモシュネー]
+
+[charaSet E 1098165700 1 ムネーモシュネー_シルエット]
+[charaFilter E silhouette 00000080]
+
+[charaSet G 98109200 1 エフェクト用ダミー]
+
+[scene 74200]
+[cameraMove 0.1 0,0 1.01]
+
+[se ad207]
+[seVolume ad207 0 0.6]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.0]
+[seVolume ad207 1.0 1.0]
+[wt 2.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠グレイ
+……ここが、フェイク・ロンゴミニアドの内側？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アストライア
+そのようですわね。ずいぶん、殺風景な場所だこと。[r]主人の野暮が透けますわ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ライネス
+ふむ。我が弟子、何か感じられたりするかね？
+[k]
+
+？1：何も
+？2：もっと奥なのかな？
+
+？！
+
+[seStop ad207 1.0]
+
+＠D：？？？
+いいえ、ここで合っていますとも。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ade285]
+[charaPut G 0,-560]
+[charaRoll G 180]
+[charaEffect G bit_talk_throwing 0,0 F]
+[wt 0.5]
+
+[se ad211]
+[seStop ad211 1.3]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF00]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+[se ad171]
+[seVolume ad171 0 0.7]
+[charaMove C 200,0 0.2]
+[charaShake C 0.05 2 1 0.5]
+
+[charaFadeout C 0.4]
+
+＠アストライア
+きゃあっ！[bgm BGM_EVENT_80 0.1]
+[k]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ライネス
+アストライアが弾き出された[line 2]！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.3 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 74403]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.3 1.0]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-40]
+[se ad77]
+[seVolume ad77 0 0.6]
+[charaShake C 0.05 2 1 0.5]
+[charaMove C 1 0.5]
+[wt 0.3]
+[seStop ad77 0.3]
+
+＠アストライア
+いいえ……！[r]不意を討たれましたが……この程度……
+[k]
+
+[messageOff]
+[charaFace C 4]
+[charaMove C 0,-5 0.3]
+[se ad54]
+[seVolume ad54 0 0.5]
+[seStop ad54 0.5]
+
+＠アストライア
+力が……入らない……？
+[k]
+
+＠アストライア
+魔神柱との戦いで……魔力を使いすぎ……
+[k]
+
+
+[messageOff]
+
+＠グレイ
+アストライアさん！
+[k]
+
+[messageOff]
+
+[charaTalk C]
+
+[se ade290]
+[shake 0.03 0 3 1.9]
+[wt 1.6]
+
+[charaFace C 5]
+
+[charaDepth B 10]
+[charaPut B 1200,1200]
+[charaEffect B bit_talk_impactlanding]
+[wt 0.3]
+[se ad238]
+[shake 0.05 0 3 0]
+[charaPut B 0,-50]
+[wt 1.0]
+
+[wipeout cutSide 2.0 1.0]
+[wait wipe]
+[charaDepth B 0]
+[se ade125]
+
+[charaFadeout C 0.1]
+[shakeStop]
+
+[scene 10000]
+[wt 0.1]
+
+[fadeout black 0.1]
+[wait fade]
+[wipein cutSide 0.1 1.0]
+[wait wipe]
+
+[scene 74200]
+
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠アッド
+外殻が、勝手に閉じた？！
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 1.0]
+
+
+＠D：？？？
+ええ、かの神霊だけは厄介でした。[r]ですので、排除させていただきました。
+[k]
+
+
+＠D：？？？
+とはいえ、万全のアストライアなら[r]こうはいかなかったでしょう。
+[k]
+
+＠D：？？？
+魔神柱の記憶は、十分な役割を果たしてくれました。
+[k]
+
+？1：万全のアストライアなら？
+？2：まさか、そのためにあの再現記録を？
+
+？！
+
+＠D：？？？
+アストライアの存在が発覚した段階から、[r]彼女が最大の障害となることは分かっていました。
+[k]
+
+＠D：？？？
+だから、かの女神をも確実に撃退しうるだけの、[r]戦闘用の偽装記憶を構築していたのです。
+[k]
+
+＠D：？？？
+そちらの疑似サーヴァントが見抜いたように、[r]小紙片はその際の副産物ですとも。
+[k]
+
+＠D：？？？
+ですが、それさえも、あなたがたは乗り越えてしまった。[r]あそこで倒れてくれればよかったのに………
+[k]
+
+＠D：？？？
+………だから
+[k]
+
+＠D：？？？
+今、あなたたちの中から、[r][%1]だけを残していただきましょう。
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_80 1.5]
+[wt 1.5]
+
+[charaTalk off]
+
+[se ad31]
+[wt 0.1]
+[seStop ad31]
+[wt 0.3]
+
+[se ad31]
+[wt 0.1]
+[seStop ad31]
+[wt 0.5]
+
+[se ad31]
+[seVolume ad31 0 0.6]
+[effect bit_talk_11]
+[wt 1.0]
+
+[charaFace E 0]
+[charaFadein E 0.7 1]
+[wt 2.3]
+
+[charaTalk depthOff]
+[charaDepth E 2]
+[charaDepth D 1]
+
+[effectStop bit_talk_11]
+
+[se ad1]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[charaFadeout E 0.1]
+
+[seStop ad31 1.0]
+[wt 2.4]
+
+？1：ダ・ヴィンチちゃん……
+
+？2：どうして、そんな姿を
+
+？！
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠グレイ
+ダ・ヴィンチ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠D：？？？
+本来、私はカタチを持たないプログラムです。[bgm BGM_EVENT_90 0.1]
+[k]
+
+＠D：？？？
+一時的なカタチを取りましたが、[r]これはあなたにとってよくありませんでしたね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ライネス
+自律観測型存在証明システム……ムネーモシュネー。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ムネーモシュネー
+その名前に辿り着きましたか。
+[k]
+
+[charaFace E 7]
+
+＠ムネーモシュネー
+ええ、その通りです。私はレイシフトの際、[r]存在証明のためにつくられたサブシステムです。
+[k]
+
+？1：存在証明の、サブシステム？
+？！
+
+[charaFace E 0]
+
+＠ムネーモシュネー
+レイシフト先で、マスターが無事にいられるのは、[r]常に職員たちが観測し、存在証明しているからです。
+[k]
+
+＠ムネーモシュネー
+仮に職員がすべて倒れても、マスターが消滅しないよう、[r]初期のカルデアは別系統のシステムをつくっていました。
+[k]
+
+＠ムネーモシュネー
+ですが、結局技術的な問題で、実装されませんでした。[r]つまり、この私、ムネーモシュネーのことですとも。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ライネス
+そのムネーモシュネーが、どうして我が弟子を欲しがる。[r]君にとっては、庇護の対象だろう！
+[k]
+
+[bgmStop BGM_EVENT_90 1.2]
+
+[charaFace A 0]
+
+＠ライネス
+いや……そうか。庇護の対象だからか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+
+＠ムネーモシュネー
+お分かりいただけましたか。
+[k]
+
+＠ムネーモシュネー
+でしたら、[%1]を[bgm BGM_EVENT_24 0.1][r]お引き渡し願いましょう。
+[k]
+
+[messageOff]
+[charaEffect D bit_talk_charge_blu]
+[wt 0.5]
+[se ad14]
+[wt 2.0]
+
+[se ad39]
+[backEffect bit_talk_tornado01_02 0,0]
+[wt 0.7]
+
+[fadeout white 0.5]
+[seStop ad14 0.5]
+[se ad556 1.3]
+[seVolume ad556 0 0.2]
+[wait fade]
+
+[charaEffectStop D bit_talk_charge_blu]
+[backEffectStop bit_talk_tornado01_02]
+[effect bit_talk_ivan_lightning_charge_l]
+[charaFadeout D 0.1]
+[wt 2.0]
+
+[shake 0.05 2 2 0]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0]
+[charaFace A 5]
+[charaFadein A 0.1 2]
+
+＠グレイ
+ムネーモシュネーから、強い魔力が……！
+[k]
+
+[charaFace A 2]
+
+＠ライネス
+くそ、我が弟子！　もう一戦いくぞ！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.5]
+[seStop ad556 0.5]
+[wait fade]
+[shakeStop]
+[soundStopAll]
+[end]
+
+
+

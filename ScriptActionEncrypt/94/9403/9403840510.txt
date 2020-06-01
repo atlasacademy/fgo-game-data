@@ -1,0 +1,1346 @@
+
+
+
+
+＄94-03-84-05-1-0
+
+
+[soundStopAll]
+
+[charaSet A 98001000 1 家老マシュ]
+[charaSet B 3038000 1 長尾景虎]
+[charaSet C 11007000 1 足軽ノッブ]
+[charaSet D 7035001 1 森長可]
+[charaSet E 1098170600 1 高名な天才芸術家（ロリンチ）]
+[charaSet F 1098174800 1 高名な天才芸術家（ダ・ヴィンチ）]
+[sceneSet G 80100 1]
+[sceneSet H 10000 1]
+
+[charaSet J 98115000 1 エフェクト用]
+
+
+[charaScale G 1.01]
+[charaScale H 1.01]
+
+[charaDepth G 1]
+[charaDepth A 2]
+[charaDepth C 3]
+[charaDepth D 4]
+[charaDepth B 5]
+[charaDepth H 6]
+[charaDepth E 7]
+[charaDepth F 8]
+
+
+[scene 79000]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_66 0.1]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠家老マシュ
+それでは今回攻め込むことになる、[r]加賀のちびノブ一揆衆なのですが……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠長尾景虎
+その前に一ついいでしょうか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠家老マシュ
+はい、なんでしょう、景虎さん？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠長尾景虎
+ちびノブというのはいったい何のことなのですか？
+[k]
+
+？1：普通そこですよね
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠家老マシュ
+す、すみません。毎度のことなので[r]わたしも感覚がマヒしていました。
+[k]
+
+？2：あー
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+＠足軽ノッブ
+じゃよなー、正直わしもよくわからんし。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+？！
+
+[charaFace A 7]
+＠家老マシュ
+それでは改めまして……、[twt 0.7][charaFace A 2]ちびノブとは！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_66 0.4]
+[charaFadeout A 0.1]
+[wt 0.6]
+
+[charaTalk depthOff]
+[se ad139]
+[charaFadein G 0.1 0,-200]
+[wt 2.2]
+
+[wait touch]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaScale A 0.6]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 350,-240]
+
+＠家老マシュ
+一般的に聖杯の暴走により生まれた、[r]信長さんの[#潜在意識:せんざいいしき]の具現化といわれており、
+[k]
+
+＠家老マシュ
+どういう仕組みかよくわからないのですが、[r]雰囲気で自己増殖、自己再生、自己進化などをし
+[k]
+
+＠家老マシュ
+戦闘力は並みのサーヴァントが[r]若干めんどくさく感じるレベルとなっております。
+[k]
+
+＠家老マシュ
+実際の所、カルデアの解析結果もはっきりせず、
+[k]
+
+
+[messageOff]
+
+[branchQuestNotClear lblNotClear 3000303]
+
+
+
+[branch lblConf]
+[label lblNotClear]
+
+
+[bgm BGM_EVENT_7 0.4 0.4]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[charaFadeTime H 0.4 0.6]
+[wt 0.4]
+
+＠F：高名な天才芸術家
+『謎のナマモノ判定でいいんじゃないかな？』
+[k]
+
+＠F：高名な天才芸術家
+『あまり考えたくないし、疲れてるんだよね』
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_7 0.4 1.0]
+[charaFadeout F 0.4]
+[charaFadeout H 0.4]
+[wt 0.4]
+
+
+
+
+
+[branch lblNotClear_out]
+[label lblConf]
+
+
+[bgm BGM_EVENT_7 0.4 0.4]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[charaFadeTime H 0.4 0.6]
+[wt 0.4]
+
+＠E：高名な天才芸術家
+『謎のナマモノ判定でいいんじゃないかな？』
+[k]
+
+＠E：高名な天才芸術家
+『あまり考えたくないし、疲れてるんだよね』
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_7 0.4 1.0]
+[charaFadeout E 0.4]
+[charaFadeout H 0.4]
+[wt 0.4]
+
+
+
+[label lblNotClear_out]
+
+
+
+
+[charaTalk A]
+[charaFace A 7]
+＠家老マシュ
+[line 3]と、こちらが信頼できる関係者の言となります。
+[k]
+
+[charaScale B 0.6]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 -350,-240]
+＠長尾景虎
+なるほどねー。
+[k]
+
+[charaFace B 14]
+＠長尾景虎
+うん、説明を聞いてもまるでわかりません。
+[k]
+
+[charaFace B 7]
+＠長尾景虎
+というかこの信長からは考えられないというか、[r]愛らしいというか、なんとも愛嬌のある姿ですね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaScale C 0.6]
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 -350,-240]
+
+＠足軽ノッブ
+こうみえてこやつら割と容赦ないがな。
+[k]
+
+＠足軽ノッブ
+ところでなんで奴らが国をもっとるんじゃ？
+[k]
+
+[charaTalk A]
+[charaFace A 7]
+
+＠家老マシュ
+それが調べによりますと、もともとちびノブさん達は[r]各地の信長さんの元で働いていたようなのですが、
+[k]
+
+＠家老マシュ
+待遇への不満やキャリアアップ、社会の闇に精神を[r]蝕まれるなど、様々な理由で信長さんの元を離れ、
+[k]
+
+＠家老マシュ
+それらのちびノブ達はやがて加賀の国へと集まり、
+[k]
+
+＠家老マシュ
+ちびノブ達のちびノブ達によるちびノブ達の為の国を[r]建国したとのことです。
+[k]
+
+[charaTalk C]
+[charaFace C 15]
+＠足軽ノッブ
+何しとるんじゃあいつら。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaScale D 0.6]
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 -350,-240]
+＠森長可
+で、どうすんだ？　根切りか？　撫で斬りか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 -350,-240]
+＠足軽ノッブ
+それどっちも一緒じゃろ。
+[k]
+
+[charaFace C 12]
+＠足軽ノッブ
+そうじゃな、とりあえず捕まえて言うことを[r]きかせれば足軽くらいは務まるじゃろ。
+[k]
+
+[charaFace C 1]
+＠足軽ノッブ
+あいつら使い減りせんし、[r]いくらこき使っても問題ないからの。
+[k]
+
+＠足軽ノッブ
+うっはっはっは！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 -350,-240]
+
+＠長尾景虎
+なるほど、なぜ貴方の元を離れたのかは[r]わかりました。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_7 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[charaFadeout G 0.1]
+
+
+[scene 10000]
+[skip false]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[bgmStop BGM_EVENT_7 0.4]
+[bgmStop BGM_EVENT_66 0.4]
+[seStop ad139 0.4]
+
+[charaSet A 98001000 1 家老マシュ]
+[charaSet B 3038000 1 長尾景虎]
+[charaSet C 11007000 1 足軽ノッブ]
+[charaSet D 7035001 1 森長可]
+[charaSet E 1098170600 1 高名な天才芸術家（ロリンチ）]
+[charaSet F 1098174800 1 高名な天才芸術家（ダ・ヴィンチ）]
+[sceneSet G 80100 1]
+[sceneSet H 10000 1]
+
+
+
+[wt 0.4]
+[soundStopAll]
+[maskout black 1.0]
+[wait mask]
+[scene 10000]
+[wt 0.1]
+[maskin black 0.1]
+[wait mask]
+[label selectBranch]
+
+
+
+
+[revivalBranch lblNormal lblRevival]
+[label lblNormal]
+
+[fowardEffect bit_queststart80250]
+[wait fowardEffect]
+
+[branch lblConf2]
+[label lblRevival]
+
+[fowardEffect bit_queststart80286]
+[wait fowardEffect]
+
+[label lblConf2]
+
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaSet A 1098173700 0 1]
+[charaSet B 98111700 1 ノブ選組]
+[charaSet C 1098173100 1 僧兵？]
+[charaSet D 1098173200 1 魔導僧兵]
+[charaSet E 7025000 1 土方歳三]
+[charaSet F 9940030 1 ちびノブ]
+[charaSet G 9940030 1 ちびノブ2]
+[charaSet H 9940030 1 ちびノブ3]
+
+[charaDepth F 3]
+[charaDepth G 1]
+[charaDepth H 2]
+
+[charaPut J 2400,2400]
+[charaEffect J bit_talk_fire]
+
+[wipeFilter cinema 0.5 0]
+
+[scene 46800]
+[wt 1.0]
+
+[skip true]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 0,-50]
+[wt 0.4]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠ビッグノッブ
+ノッブ、ノッブァー！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace F 0]
+[charaFace G 0]
+[charaFace H 0]
+[charaFadein F 0.4 0,-50]
+[charaFadein G 0.4 -256,-50]
+[charaFadein H 0.4 256,-50]
+[wt 0.4]
+＠ちびノブ達
+ノ[voice 9940030_0_B020]ブノブ、ノブノブブブー！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 0,-50]
+[wt 0.4]
+＠土方歳三
+さて、よくわからねぇとこにすっ飛ばされて、[r]こいつらに連れられてきたがどうしたもんかな。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠ビッグノッブ
+ノッブ、ノッブブァー！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace F 0]
+[charaFace G 0]
+[charaFace H 0]
+[charaFadein F 0.1 0,-50]
+[charaFadein G 0.1 -256,-50]
+[charaFadein H 0.1 256,-50]
+＠ちびノブ達
+ノ[voice 9940030_0_B030]ブノブブ！　ノブブー！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 0,-50]
+＠土方歳三
+ん？　なんだたくあんじゃねぇか、気が利くな。
+[k]
+
+＠土方歳三
+なに？　ここの名産品？
+[k]
+
+[charaFace E 8]
+＠土方歳三
+ほう、悪くねぇな（ぽりぽりぽり）[se ade117]
+[k]
+
+[seStop ade117 0.3]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠ビッグノッブ
+ノッブブァー！　ノブッブ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 0,-50]
+＠土方歳三
+おう、このたくあんは気に入ったから[r]しばらく厄介になるとするぜ。
+[k]
+
+[charaFace E 0]
+＠土方歳三
+それに、あいつらも探さなきゃならんしな。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace F 0]
+[charaFace G 0]
+[charaFace H 0]
+[charaFadein F 0.1 0,-50]
+[charaFadein G 0.1 -256,-50]
+[charaFadein H 0.1 256,-50]
+＠ちびノブ達
+ノ[voice 9940030_0_B010]ッブー！　ノッブー！！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+[wt 0.3]
+
+[charaFace F 0]
+[charaFadein F 0.1 340,-100]
+[charaMove F 310,-100 0.2]
+[wt 0.2]
+[se ad111]
+[seStop ad111 0.3]
+[charaMoveReturn F 310,-80 0.3]
+[charaShake E 0.05 3 3 0.6]
+[wt 0.3]
+[se ad111]
+[seStop ad111 0.3]
+[charaMoveReturn F 310,-80 0.3]
+[wt 0.5]
+
+[charaTalk on]
+
+[charaTalk E]
+[charaFace E 9]
+
+＠土方歳三
+おい、引っ付くんじゃねぇ！[r]鬱陶しいだろうが！！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.6]
+
+[bgmStop BGM_EVENT_7 0.4]
+
+
+[se ade34]
+[wt 0.6]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+＠ノブ選組
+ノノノブブブブー！！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠ビッグノッブ
+ノッブ！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 0,-50]
+＠土方歳三
+なんだ？　随分慌ててるようだが……。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[charaSet A 1098173200 1 魔導僧兵5]
+[charaSet B 1098173200 1 魔導僧兵2]
+[charaSet I 1098173200 1 魔導僧兵3]
+[charaSet J 1098173200 1 魔導僧兵4]
+
+[charaDepth D 5]
+[charaDepth B 3]
+[charaDepth I 4]
+[charaDepth J 1]
+[charaDepth A 2]
+
+[scene 78700]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-50]
+
+＠僧兵？
+さあ、このように邪悪な生物は衆生の為になりません。[r][#摩玖主:まくず]教の名のもとに駆除してしまいなさい！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace F 0]
+[charaFace G 0]
+[charaFace H 0]
+[charaFadein F 0.1 0,-50]
+[charaFadein G 0.1 -256,-50]
+[charaFadein H 0.1 256,-50]
+＠ちびノブ達
+ノ[voice 9940030_0_B160]ッブァー！？
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+＠魔導僧兵
+これより未確認生命体の捕獲を開始、[r]抵抗するものは排除せよ。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.3]
+
+[se bac27]
+[effect bit_talk_29 0,-150]
+
+[wt 1.5]
+
+[charaTalk off]
+
+[charaFace F 0]
+[charaFace G 0]
+[charaFace H 0]
+[charaFadein F 0.1 0,-50]
+[charaFadein G 0.1 -256,-50]
+[charaFadein H 0.1 256,-50]
+＠ちびノブ達
+ノ[voice 9940030_0_B100]ッブ！？　ノブブアアァー！！？
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-50]
+＠僧兵？
+不浄なるものどもよ、我が神の威光にひれ伏しなさい！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace F 0]
+[charaFace G 0]
+[charaFace H 0]
+[charaFadein F 0.1 0,-50]
+[charaFadein G 0.1 -256,-50]
+[charaFadein H 0.1 256,-50]
+＠ちびノブ達
+ノ[voice 9940031_0_B300]ーブブ……！　ノブブー……！！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠僧兵？
+ふん、言葉も解せぬくせに慈悲を求めるとは片腹痛い。[r]さっさと始末して……、
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.4]
+[charaFadeout C 0.1]
+[wt 0.6]
+
+
+
+[se bac14]
+[effect bit_talk_h_slash01]
+[wt 0.3]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0 0,-50]
+[charaShake D 0.03 4 4 0.8]
+[wt 0.6]
+
+[se ade48]
+[seStop ade48 1.0]
+[charaMove D 0,-100 0.4]
+[charaFadeout D 0.4]
+[wt 0.3]
+[wt 0.4]
+[wt 1.2]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 0,-50]
+＠土方歳三
+オ[messageShake 0.02 3 3 0.6]ラアアアアアアアッ！！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+＠魔導僧兵
+…………！？
+[k]
+
+[messageOff]
+[wt 0.1]
+
+
+[se bac16]
+[charaEffect D bit_talk_v_slash01]
+[wt 0.3]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 0.1]
+[charaShake D 0.03 4 4 0.8]
+[wt 0.6]
+
+[se ade48]
+[seStop ade48 1.0]
+[charaMove D 0,-150 0.4]
+[charaFadeout D 0.4]
+[wt 0.3]
+[wt 0.4]
+[wt 1.2]
+
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 0,-50]
+＠僧兵？
+な、何奴！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 0,-50]
+＠土方歳三
+……ここは新選組が陣取った。
+[k]
+
+＠土方歳三
+てめぇら生きて帰れると思うなよ……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace F 0]
+[charaFace G 0]
+[charaFace H 0]
+[charaFadein F 0.1 0,-50]
+[charaFadein G 0.1 -256,-50]
+[charaFadein H 0.1 256,-50]
+＠ちびノブ達
+ノ[voice 9940030_0_B010]……、ノッブー！　ノッブノッブ！
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 0,-50]
+＠僧兵？
+な、なんですかこの者は？
+[k]
+
+＠僧兵？
+わ、私たちは衆生に害をなす、[r]このおかしな生き物を排除にですね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 0,-50]
+＠土方歳三
+んなこたぁ、聞いてねぇよ……、[r]ここは新選組が陣取ったって言ってんだろうが、
+[k]
+
+[charaFace E 6]
+＠土方歳三
+[line 3]た[messageShake 0.02 3 3 0.5]だ、それだけだ！！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 0,-50]
+
+＠僧兵？
+は、話が通じな……、ま、魔導僧兵！[r]この者を排除なさい！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+＠魔導僧兵
+敵対サーヴァントを排除、１６番までを包囲展開。
+[k]
+
+[messageOff]
+[wt 0.2]
+
+[charaTalk off]
+[se ad270]
+[charaFace B 0]
+[charaFace I 0]
+[charaFace J 0]
+[charaFace A 0]
+[charaFadein B 0.4 -250,-60]
+[charaFadein I 0.4 250,-60]
+[charaFadein J 0.4 -520,-70]
+[charaFadein A 0.4 520,-70]
+[wt 1.6]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 0,-50]
+＠土方歳三
+面白くなってきたじゃねぇか！
+[k]
+
+＠土方歳三
+おい！　てめぇらもぼさっとしてんじゃねぇ！[r]死にたくなけりゃ、俺の言うとおりに動け！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace F 0]
+[charaFace G 0]
+[charaFace H 0]
+[charaFadein F 0.1 0,-50]
+[charaFadein G 0.1 -256,-50]
+[charaFadein H 0.1 256,-50]
+
+＠ちびノブ達
+ノ[voice 9940030_0_B020]、ノッブー！　ノブノブノブノブ！！
+[k]
+
+[messageOff]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[se ad16]
+[seVolume ad16 0 0]
+[seVolume ad16 0.5 1.0]
+[wt 1.8]
+
+[fadeout black 1.5]
+[seStop ad16 1.5]
+[bgmStop BGM_EVENT_3 1.5]
+[wait fade]
+
+[wipeOff]
+
+[charaSet A 98001000 1 家老マシュ]
+[charaSet G 3038000 1 長尾景虎]
+[charaSet C 11007000 1 足軽ノッブ]
+[charaSet D 7035001 1 森長可]
+
+
+[scene 78600]
+[wt 1.0]
+
+[se ad16]
+[seVolume ad16 0 0]
+[seVolume ad16 1.5 0.2]
+
+[fadein black 1.5]
+[wait fade]
+[wt 1.5]
+
+[bgm BGM_EVENT_5 0.1]
+
+[seStop ad16 0.6]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠長尾景虎
+物見がてら出張ってきましたが、[r]どうやら戦の真っ最中のようですね。
+[k]
+
+＠長尾景虎
+あれがちびノブとかいう者たちですか？
+[k]
+
+？1：はい、あれがちびノブです
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠家老マシュ
+どうやら別の勢力と戦っているようですが……、
+[k]
+
+？2：あれは……！？
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+＠足軽ノッブ
+おい、あそこで暴れとるのはもしかせんでも……、
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+？！
+
+[charaFace A 6]
+＠家老マシュ
+あれは……！　土方さんでは？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠長尾景虎
+どうやら顔見知りのようですが、どうします？
+[k]
+
+[charaFace G 6]
+＠長尾景虎
+幸い我々は風下……、[r]いま仕掛ければ、どちらもまとめて殲滅できそうですが。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+＠足軽ノッブ
+えぐい、さすが笑い虎えぐい。[r]だが理にかなっとるのう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠森長可
+どっちも殿様の敵なんだろ？[r]確かにちょうどいいじゃねーか！
+[k]
+
+＠森長可
+片っ端からぶち殺そうぜ！！
+[k]
+
+？1：カルデアの土方さんかもしれないし
+
+？2：たしかにちびノブたちは敵だけど……
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠長尾景虎
+どうやら、事情がありそうですね。
+[k]
+
+＠長尾景虎
+では、とりあえずちびノブと、[r]その土方なにがしに助勢するとしますか。
+[k]
+
+＠長尾景虎
+そのうえで揉めるようであれば、[r]改めて一掃すればよいでしょう。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+＠足軽ノッブ
+この自分の負けは全く考えにない感じ、[r]これが後世に言う越後の軍神なんじゃよね。
+[k]
+
+＠足軽ノッブ
+ちょっとひくわ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠長尾景虎
+ごちゃごちゃうるさいです。
+[k]
+
+[charaFace G 0]
+＠長尾景虎
+さあ、機を逃してはなりません！[r]長可は左から回り込んで、あの連中の側面を！
+[k]
+
+＠長尾景虎
+私は正面からちびノブとやらの前に出ます！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠森長可
+うるせぇ！　オレに命令するんじゃねーよ！
+[k]
+
+？1：森君、お願い
+
+？2：そこをなんとか
+
+？！
+
+[charaFace D 9]
+＠森長可
+おう！　殿様の采配なら文句はねーぜ！！
+[k]
+
+[charaFace D 11]
+＠森長可
+行[messageShake 0.02 3 3 0.6]くぞ！　おらあああああ！！！！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠家老マシュ
+森君……先輩には妙に素直ですね……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+＠足軽ノッブ
+あいつに言うこと聞かせれる奴、[r]わし生まれて初めて見たんじゃが。
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_5 1.0]
+[wait wipe]
+
+
+[charaFadeout C 0.1]
+
+[scene 79900]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ちびノブ
+ノ[voice 9940030_0_B010]ッブ！　ノッブブ！！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+
+＠土方歳三
+弱音を吐いてんじゃねぇ！[r]いいか、己の場所は己で勝ち取るもんだ！
+[k]
+
+＠土方歳三
+退く奴は俺が斬る！　斬れ！　進め！　斬れぇっ！！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.2]
+
+
+[se bac143]
+[charaPut F 1]
+[charaScale F 1.5]
+[charaRoll F 30 -100,0]
+[charaEffect F bit_talk_Slash_white_01_L]
+[wt 0.3]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0 1]
+[charaShake B 0.03 4 4 0.4]
+[wt 0.6]
+
+[se ade48]
+[seStop ade48 1.0]
+[charaMove B 0,-100 0.4]
+[charaFadeout B 0.4]
+[wt 0.3]
+[wt 0.4]
+[wt 1.0]
+
+
+[se ad444]
+[seVolume ad444 0 0]
+[seVolume ad444 1.0 1.0]
+[wt 0.4]
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.4 1]
+[se ad60]
+[wt 0.4]
+[seStop ad60]
+[seStop ad444]
+[wt 0.4]
+
+＠長尾景虎
+なかなか戦を分かっていますね、その通りです。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠土方歳三
+なんだてめぇは……？　奴らの新手か？
+[k]
+
+？1：助けに来ました！
+
+？2：カルデアの[%1]です！
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠家老マシュ
+土方さん、援護します！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+＠足軽ノッブ
+というわけで話はあとじゃ！[r]こやつらを殲滅するぞ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠長尾景虎
+越後の軍神、長尾景虎推参！
+[k]
+
+[charaFace G 8]
+
+＠長尾景虎
+ちびノブ……？　たちよ！[r]義によって助太刀致します！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

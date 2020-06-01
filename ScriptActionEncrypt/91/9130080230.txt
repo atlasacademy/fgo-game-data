@@ -1,0 +1,1397 @@
+
+＄91-30-08-02-3-0
+
+
+
+[soundStopAll]
+
+[charaSet A 98006000 1 魔獣1]
+[charaSet B 98006000 1 魔獣2]
+[charaSet C 98006000 1 魔獣3]
+[charaSet D 98001000 1 マシュ]
+[charaSet E 5009001 1 ダ・ヴィンチ]
+[charaSet G 3008001 1 エルキドゥ]
+[charaSet H 1009001 1 モードレッド]
+[charaSet I 7004001 1 フラン]
+
+[charaSet J 98115000 1 エフェクト用]
+
+
+[scene 10313]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk off]
+
+[charaDepth A 3]
+[charaDepth B 2]
+[charaDepth C 1]
+
+[charaFace A 0]
+[charaFace B 0]
+[charaFace C 0]
+
+[charaFadein A 0.1 1]
+[charaFadein C 0.1 -300,0]
+[charaFadein B 0.1 300,0]
+[wt 0.6]
+
+[fowardEffect bit_talk_Slash_white_01]
+[wt 0.1]
+[se bac7]
+[charaShake A 0.05 3 3 0.8]
+[charaShake B 0.05 3 3 0.8]
+[charaShake C 0.05 3 3 0.8]
+[wt 0.3]
+[fowardEffect bit_talk_ichimon01wh]
+[fowardEffect bit_talk_14]
+[se ad32]
+[wt 0.25]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[fowardEffect bit_talk_Slash_white_01_L]
+[se ad32]
+[wt 0.5]
+[fowardEffectDestroy bit_talk_ichimon01wh]
+
+[se bac167]
+[fowardEffect bit_talk_kushizashi01 -300,0]
+[fowardEffect bit_talk_kushizashi01 300,0]
+[wt 0.1]
+[fowardEffect bit_talk_13 -300,0]
+[fowardEffect bit_talk_13 300,0]
+[charaShake B 0.05 3 3 0.3]
+[charaShake C 0.05 3 3 0.3]
+[wt 0.1]
+
+[se bac167]
+[fowardEffect bit_talk_kushizashi01]
+[wt 0.1]
+[fowardEffect bit_talk_13]
+[charaShake A 0.05 3 3 0.3]
+[wt 0.5]
+[flashin once 0.1 0.5 FFFFFFAF FFFFFF00]
+[wt 0.5]
+
+[se ad20]
+[charaSpecialEffect B enemyErasure 1 1.2]
+[charaSpecialEffect C enemyErasure 1 1.2]
+[wt 0.1]
+[charaSpecialEffect A enemyErasure 1 1.2]
+[wait charaSpecialEffect A]
+
+[bgmStop BGM_EVENT_3 1.0]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠マシュ
+今のはいったい……。
+[k]
+
+[charaFace D 15]
+
+＠マシュ
+ああッ！　管制室の皆さんは……！？[r]皆さん、ご無事ですか！？　いったい何が……
+[k]
+
+[messageOff]
+[se ad8]
+[wipeout rightToLeft 1.0 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_noise_gr]
+
+[scene 10200]
+[wt 0.1]
+
+[wipein leftToRight 1.0 1.0]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+やあ、お疲れ様。[r]こちらでも状況は観測して把握している。
+[k]
+
+＠ダ・ヴィンチ
+早く食堂に行くといい。[r]みんな待ってるだろうからね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠マシュ
+ダ・ヴィンチちゃん……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaDepth J 2]
+[charaDepth E 1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ？
+10100100111001001010010010100010[se ad31][charaPut J 1][r]1010000110100010お疲れ様。[r]こちらでも状況は観測して把握している。[twt 0.3][charaPut J 1200,1200][seStop ad31]
+[k]
+
+＠ダ・ヴィンチ？
+早く食堂に行くといい。みんな待ってるだろうか101001001[r]110100110100100110011011010000110100011[se ad31][charaPut J 1][twt 0.8]
+[k]
+
+[charaPut J 1200,1200]
+[seStop ad31]
+
+＠ダ・ヴィンチ？
+101001001110010010100100101000101010000[se ad31][charaPut J 1][r]110100010101001001010101011001000111010[r]0010100100111011001100110111001101
+[k]
+
+[charaPut J 1200,1200]
+[seStop ad31]
+
+＠ダ・ヴィンチ？
+こちらでも状況は観測して把握している。[twt 0.3][r]早く食堂に行くと1010010010100100い。[se ad31][charaPut J 1][twt 0.7][charaPut J 1200,1200][seStop ad31]
+[k]
+
+[messageOff]
+[wt 0.5]
+[se ad31]
+[charaPut J 1]
+[wt 0.2]
+[charaPut J 1200,1200]
+[seStop ad31]
+[wt 0.3]
+
+[se ad31]
+[charaPut J 1]
+[wt 0.2]
+[charaPut J 1200,1200]
+[seStop ad31]
+[wt 0.3]
+
+[se ad31]
+[charaPut J 1]
+[charaChange E 1098180200 0 normal 0]
+[wt 0.2]
+[charaPut J 1200,1200]
+[seStop ad31]
+[wt 0.1]
+
+[se ad31]
+[charaPut J 1]
+[charaChange E 5009001 0 normal 0]
+[wt 0.2]
+[charaPut J 1200,1200]
+[seStop ad31]
+[wt 0.2]
+
+[se ad31]
+[charaPut J 1]
+[charaChange E 1098180200 0 normal 0]
+[wt 0.2]
+[charaPut J 1200,1200]
+[seStop ad31]
+[wt 0.2]
+
+[se ad31]
+[charaPut J 1]
+[charaChange E 5009001 0 normal 0]
+[wt 0.2]
+[charaPut J 1200,1200]
+[seStop ad31]
+[wt 0.6]
+
+[se ad31]
+[charaPut J 1]
+[charaChange E 1098180200 0 fade 1.0]
+[wait charaChange E]
+[wt 0.5]
+
+
+＠1010010111010101■■
+みんな10100101111100101010010110111111101[r]0010110111001……10100101101100011010010[r]111000110……101001011010100010100101111[r]010111010010110101101101001011100100110[r]10010110100101……………………
+[k]
+
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[seStop ad31]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠エルキドゥ
+これは……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠？？？
+ミンナ　食堂　ニ　ミンナ　ミンナ　ミンナ　ミンナ[se ad31][charaPut J 1][r]食堂ニ　食堂ニ食堂ニニニニニニニニニニニニニニニニニ
+[k]
+
+
+[messageOff]
+[wt 0.2]
+[charaPut J 1200,1200]
+[seStop ad31]
+
+[se ad31]
+[charaPut J 1]
+[wt 0.2]
+[charaPut J 1200,1200]
+[seStop ad31]
+[wt 0.3]
+
+[se ad31]
+[charaPut J 1]
+[wt 0.2]
+[charaPut J 1200,1200]
+[seStop ad31]
+[wt 0.6]
+
+[se ad31]
+[charaPut J 1]
+[wt 0.2]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_noise_gr]
+[seStop ad31]
+[wt 0.6]
+
+[charaSpecialEffect E flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect E]
+[wt 1.0]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠モードレッド
+おいおい、何がどうなってんだ？[r]管制室の中、誰もいなくなっちまってるぞ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠フラン
+ウウ……ウゥ？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠エルキドゥ
+……行こう。食堂だ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠マシュ
+え？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠エルキドゥ
+僕の[#感覚器:センサー]が正常なら、[r]『みんな』は……そこにいる筈だ。
+[k]
+
+[messageOff]
+[se ad8]
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_48 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+
+[charaSet A 1098167700 1 聖獣1]
+[charaSet B 1098167700 1 聖獣2]
+[charaSet C 1098167700 1 聖獣3]
+
+[scene 10313]
+[wt 0.1]
+
+[se ad59]
+[seVolume ad59 0 0]
+[se ad55]
+[seVolume ad55 0 0]
+[shake 0.05 0 3 0]
+
+[wipein rightToLeft 1.0 1.0]
+[seVolume ad59 1.0 1.0]
+[seVolume ad55 1.0 1.0]
+[wait wipe]
+
+
+[wt 2.0]
+
+[seStop ad59]
+[seStop ad55]
+
+[se ad8]
+
+[wipeout leftToRight 1.0 1.0]
+[wait wipe]
+
+[shakeStop]
+
+[scene 34701]
+[wt 0.1]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+
+[wt 1.0]
+
+？1：！？
+？2：いつのまにかレイシフトした！？
+
+？！
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠モードレッド
+なにがどうなってやがんだ？[r]なんで食堂の中が森になってんだよ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+＠フラン
+ウ？[r]ウー！　ウァー！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠マシュ
+どうしたんですか、フランさ……。[r]……え！？
+[k]
+
+？1：今、入って来た扉が……消えてる……
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠モードレッド
+はッ。閉じ込められた、って事かよ。[r]森なのに閉じ込められたってのも変な話だけどな。
+[k]
+
+＠モードレッド
+しかし……随分でっけえ木だな。[r]なんだこりゃ？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠エルキドゥ
+レバノン杉……だね。
+[k]
+
+？1：杉？
+
+？2：でも、どっちかっていうと……
+
+？！
+
+＠エルキドゥ
+マスターの国の言葉だと『杉』と呼ばれているけれど[r]正確には松という植物の系統だよ。
+[k]
+
+＠エルキドゥ
+５０メートル近くの大きさになる巨木で、[r]船の資材としてよく使われていたね。
+[k]
+
+＠エルキドゥ
+……ここまで巨大な森は、マスターの時代には[r]もう残っていないと思う。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠マシュ
+レバノン杉の森……。[r]それは、もしかして……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠エルキドゥ
+ああ、その通りだよ。
+[k]
+
+[bgmStop BGM_EVENT_5 1.2]
+
+＠エルキドゥ
+ここは……。[r]僕とギルが[#終わらせた]、神々の森だ。
+[k]
+
+
+[messageOff]
+[wt 0.7]
+
+[charaFace G 4]
+
+＠エルキドゥ
+誰がなんの目的で、[bgm BGM_EVENT_11 0.1][r]僕たちをここに導いたのかは解らない。
+[k]
+
+＠エルキドゥ
+ただ……この場所という事は、[r]高確率で僕を対象とした誘導だろうね。
+[k]
+
+＠エルキドゥ
+マスターたちを巻き込んでしまった事、[r]申し訳なく思うよ。
+[k]
+
+？1：気にしないで
+
+？2：カルデアにいたら、こんなの[#日常茶飯事:にちじょうさはんじ]だから
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠モードレッド
+……つうかよ。[r]『みんなが居る』とか言ってやがったろ。
+[k]
+
+＠モードレッド
+ありゃ、どういう意味だ。[r]カルデアの連中がいるってわけじゃねえだろ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠エルキドゥ
+……そうだね。
+[k]
+
+＠エルキドゥ
+僕のシステムの根幹。あるいはシステム阻害の[r]根本に関わる部分ではあるけれど……。
+[k]
+
+＠エルキドゥ
+君にも深入りした問いを放った以上、黙っているのは[r]フェアじゃなかった。もちろん、マスターに対しても。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠マシュ
+システム阻害……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠エルキドゥ
+心残り……とも少し違う。[r]死ぬ時に遺した悔恨は、[#彼]に対しての想いだけだ。
+[k]
+
+？1：そういう事、割と隠さず言うよね、エルキドゥ
+
+[charaFace G 0]
+
+＠エルキドゥ
+必要があれば話すし、隠す必要があれば隠す。[r]それだけの事さ。
+[k]
+
+[bgmStop BGM_EVENT_11 1.5]
+
+[charaFace G 1]
+
+＠エルキドゥ
+ただ……マスターだからこそ話せる事もある[r]というのはあるかもしれないね。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+？2：そういえば、王様とは話とかしてるの？
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠モードレッド
+おいマスター。どうせ金ピカ野郎の事だろうが、[r]オレの前で気軽に父上以外を『王様』って呼ぶな。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠エルキドゥ
+そこは我慢してもらうしかないね、モードレッド。[r]彼もウルクを背負う立場だ。
+[k]
+
+＠エルキドゥ
+マスターと二人きりの時はともかく、[r]人目のあるところではギルガメッシュ王と呼ばないと。
+[k]
+
+[charaFace G 1]
+
+＠エルキドゥ
+まあ、戦いを挑まれてもかまわないくらい[r]親しみを抑えきれないなら、略称でもいいだろうけどね？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_11 1.5]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠モードレッド
+あーそうですか。[r]はいはい、ごちそうさま。
+[k]
+
+？！
+
+＠モードレッド
+つーか、あの偏屈な金ピカとダチってマジか？[r]あいつ、絶対友達とかいねえタイプだと思ってたのによ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠エルキドゥ
+だとしても、僕とギルガメッシュは親友だ。[bgm BGM_EVENT_25 0.1][r][#唯一無二:ゆいいつむに]の存在だと断言できる。
+[k]
+
+[charaFace G 0]
+
+＠エルキドゥ
+たまに会えば割と長く言葉を交わすけど、[r]毎日積極的に会って話す、という事は少ないね。
+[k]
+
+＠エルキドゥ
+お互いを理解するのに、[r]言葉はそんなに重要じゃないんだ。
+[k]
+
+？1：じゃあ、何が重要なの？
+
+＠エルキドゥ
+上手く言えないけれど……僕たちの場合は、[r]ただ、いるだけで充分なんだろうね。
+[k]
+
+＠エルキドゥ
+お互いに分かち合う感情[line 3]何より[#別離:わかれ]に[r]向ける悲しみや未練は、全て[#生前:あちら]で綴りきった。
+[k]
+
+[charaFace G 3]
+
+＠エルキドゥ
+仮に、ギルがいま目の前で死にかけていても、[r]僕は『いずれ、また』とだけ言って微笑むだろう。
+[k]
+
+＠エルキドゥ
+ギルも同じだと思うよ。[r][#別離:わかれ]の悲しみは、一人につき一度で充分だ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠マシュ
+なんだか凄いお話です。英霊の中には死に対して[r]前向きで、悲観なされない方もいらっしゃいますが……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠エルキドゥ
+それでいいと思うよ。僕もギルも、[r]周りに理解されにくい性格だっていう自覚はある。
+[k]
+
+＠エルキドゥ
+こう言うと傲慢と受け取られるかもしれないけれど、[r]彼が新しい友達を作るとしたら[line 2]
+[k]
+
+[charaFace G 0]
+
+＠エルキドゥ
+それは多分、僕に全く似てない誰かだと思う。[r]目と鼻と口があるぐらいしか共通点が無い、そんな人さ。
+[k]
+
+＠エルキドゥ
+それでも、ギルが一緒に歩こうと思える……[r]たとえ星の果てまでも並び歩んでくれるような……
+[k]
+
+[charaFace G 1]
+
+＠エルキドゥ
+僕にはできなかった事を、ギルにしてあげられる誰かだ。
+[k]
+
+＠エルキドゥ
+そうだね……例えば、僕が死んだ後のギルガメッシュ王は、[r]それこそ『ウルク』という国と共に歩んだ。
+[k]
+
+＠エルキドゥ
+ウルクの人々も、ただの生命から意志を持つ人間となって[r]王と共に世界を拡げてくれた。
+[k]
+
+＠エルキドゥ
+それを知る事ができただけでも、英霊になって良かった。[r]ギルと千の月夜を過ごすのと同等の価値だよ。
+[k]
+
+[charaFace G 0]
+
+？2：なるほど、モーさんとフランみたいな
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠フラン
+ウゥ？　ウー。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠モードレッド
+おいおい。マスターはわかんねえのかよって言ってるぞ。[r]大体わかるだろ、普通。
+[k]
+
+[charaFace H 2]
+
+＠モードレッド
+あッ！　つうかよ、オレにあんな事を聞いたって事は、[r]フランにも何か変な事を言ったりしやがったのか？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠エルキドゥ
+いや？　彼女は確かに作られた存在だけれど、[r]僕からすれば、普通の生命体と変わらない。
+[k]
+
+＠エルキドゥ
+博士の手で『呪い』に近いシステムを組み込まれていた[r]なら、あるいは興味を持っていたかもしれないけれどね。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠フラン
+ウー？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠モードレッド
+……。
+[k]
+
+＠モードレッド
+なるほどな。[r]ったく、本当にまどろっこしいやつだな、おまえ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠エルキドゥ
+すまないね。[r]自分でも、他者に受け入れられがたいとは思っているよ。
+[k]
+
+？！
+
+＠エルキドゥ
+それに……。
+[k]
+
+[bgmStop BGM_EVENT_25 0.3]
+
+[charaFace G 5]
+
+＠エルキドゥ
+[line 2]ッ！
+[k]
+
+＠エルキドゥ
+……マスター、マシュ。[r]少し下がっていた方がいいね。
+[k]
+
+＠エルキドゥ
+『彼女』が……[bgm BGM_EVENT_5 0.1][r]いや……これは……『みんな』が僕に気付いたらしい。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠マシュ
+[FFFFFF]？[-][r]エルキドゥさん、『彼女』に、『みんな』とは……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠エルキドゥ
+僕の、最初の友達さ。
+[k]
+
+＠エルキドゥ
+……いや、僕の育ての親と言ってもいい。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠マシュ
+育ての親……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠モードレッド
+来るぞ、マスター！[r]気を付けろ！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaDepth A 3]
+[charaDepth B 2]
+[charaDepth C 1]
+
+[charaFace A 0]
+[charaFace B 0]
+[charaFace C 0]
+
+[se ad42]
+[seVolume ad42 0 0.5]
+[seVolume ad42 0.4 1.0]
+[charaFadein C 0.4 -350,0]
+[wt 0.2]
+[charaFadein B 0.4 350,0]
+[wt 0.2]
+[charaFadein A 0.4 1]
+[seStop ad42 0.5]
+[wt 0.8]
+
+
+[se ad216]
+[se ad21]
+[seVolume ad21 0 0.8]
+[wt 0.1]
+[se ad25]
+[seVolume ad25 0 0.7]
+[seStop ad216 1.5]
+[wt 2.0]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+＠フラン
+ウァア……！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠モードレッド
+なんだこいつら……。[r]これも、バビロニアの魔獣って奴か？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠エルキドゥ
+いいや……。
+[k]
+
+＠エルキドゥ
+彼女は……いや、彼女『たち』は……。
+[k]
+
+＠エルキドゥ
+[line 2]人間だよ。
+[k]
+
+？1：……人間？
+
+？！
+
+[charaFace G 0]
+
+＠エルキドゥ
+ああ……久しぶりだね。[r]本当に、久しぶりだ……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace A 0]
+[charaFace B 0]
+[charaFace C 0]
+
+[charaFadein C 0.1 -350,0]
+[charaFadein B 0.1 350,0]
+[charaFadein A 0.1 1]
+
+＠？？？
+『オ』    　　『エ』    　　　『ダ』[r]　　　『マ』      　『ハ』        　　『レ』　『ダ』
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠モードレッド
+なんだこいつら！？[r]喋った……のか？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠マシュ
+一つ一つの音は別の魔獣から放たれたようですが……。[r]それが繋がって、言葉に……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠エルキドゥ
+……。[r]そうか、『君たち』はもう、僕と別れた後の『君』なんだね。
+[k]
+
+＠エルキドゥ
+一つの姿に融合していないから、もしかして……と[r]期待したんだけれど……。それは都合が良すぎるか。
+[k]
+
+＠エルキドゥ
+でも……それでも、敢えて尋ねたい。
+[k]
+
+＠エルキドゥ
+欠片でもいい。[#残滓:ざんし]でも構わない。[r]君はもう……この森に残ってはいないのかい？
+[k]
+
+＠エルキドゥ
+[line 2]フワワ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace A 0]
+[charaFace B 0]
+[charaFace C 0]
+
+[charaFadein C 0.1 -350,0]
+[charaFadein B 0.1 350,0]
+[charaFadein A 0.1 1]
+
+＠？？？
+　『フ』[r]　　　　　　　　　　　『ワ』　　　　　　『ワ』
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠マシュ
+[line 4]ッ。
+[k]
+
+？1：知らない名前だ
+
+？2：フワワって確か……
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠エルキドゥ
+僕とギルで倒した、神の森の番人だよ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠マシュ
+神々の命令でレバノン杉の森を護っていた番人で、[r]とても恐ろしい怪物だと……。
+[k]
+
+＠マシュ
+あのギルガメッシュ王が怖れたという逸話がある時点で、[r]どれほど強力な生物だったか想像できるかと……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠モードレッド
+あの金ピカが、こいつらをか？[r]そんなおっかねえ連中にゃ見えねえが……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠フラン
+ウゥ……。[r]ウー、アウアー。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠モードレッド
+なんだよフラン。[r]……『まだ組み上がってない』って、なにがだ？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠エルキドゥ
+！[r]そうか、君には解るんだね。
+[k]
+
+[charaFace G 0]
+
+＠エルキドゥ
+……確かにフワワは……あの子たちは、[r][#生まれる前の君によく似ているかもしれない]。
+[k]
+
+
+＠エルキドゥ
+組み上げたのが、肉体主体か魂が主体かの差はあるけれど。
+[k]
+
+＠エルキドゥ
+科学者の技術と期待ではなく、神々の権能と祝福……
+[k]
+
+＠エルキドゥ
+いや……呪いと共に生み出された『完全な人間』。[r]それがフワワだよ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠マシュ
+完全な人間……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠エルキドゥ
+詳しく話しておきたい所だけれど……。[r]それは、状況が許してくれないらしい。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace A 0]
+[charaFace B 0]
+[charaFace C 0]
+
+[charaFadein C 0.1 -350,0]
+[charaFadein B 0.1 350,0]
+[charaFadein A 0.1 1]
+
+＠フワワ？
+『ダレダ』『ダレ』『タノシイ』『ダレダ』『オマエハ』[r]『カナシイ』『マモル』『モリヲ』『タスケテ』『ニクイ』
+[k]
+
+＠フワワ？
+『モリヲコワス』『たす』『テキ』『コロス』『イタイ』[r]『イタイ』『ウレシイ』『けて』『カミサマ』『コロシテ』
+[k]
+
+＠フワワ？
+『コロセ』『タスケテ』『ううん』『モリ』『マモル』[r]『タスケ』『タスケテ』『タスケテ』『ちがう』『タスケテ』
+[k]
+
+＠フワワ？
+『シネ』『テキ』『ちがう』『ニンゲン』『カミサマ』[r]『コロセ』『わたしは』『コロス』モリ』いい』マモル』
+[k]
+
+＠フワワ？
+『モリヲ』『ダレ』『オレハ』『ワタシ』ボク』ダレ』ア』[r]ユメ』オマエ』にげ』イヤダ』シヌ』シネ』て』コロセ』
+[k]
+
+＠フワワ？
+『アァ』『イタイ』『え』『クルシイ』『ドウシテ』『ヤダ』[r]『ギアァァ』『るき』『イタイ』イタイ』イタイ』イタイ』
+[k]
+
+[bgmStop BGM_EVENT_5 1.5]
+
+＠フワワ？
+『ニクイ』『ニクイ』『ニクイニクイコロスコロシテコロ[r]　シネコロシテコロシテどぅシネシａａａａａａａａａ』
+[k]
+
+＠フワワ？
+　　　『『『[line 16]』』』
+[k]
+
+
+
+[messageOff]
+[shake 0.02 3 3 1.0]
+
+[se ad216]
+[se ad21]
+[seVolume ad21 0 0.8]
+[wt 0.1]
+[se ad25]
+[seVolume ad25 0 0.8]
+[se ad22]
+[seVolume ad22 0 0.6]
+[seStop ad22 1.0]
+[seStop ad216 1.5]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠モードレッド
+なんだかわからねえが、来るぞ！[r]おい、やっちまっていいんだよな！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠エルキドゥ
+そうか……。
+[k]
+
+＠エルキドゥ
+誰の意図かは知らないけれど……。[r]僕に、もう一度『状況を再現しろ』と言うんだね。
+[k]
+
+[charaFace G 5]
+
+＠エルキドゥ
+……無論、迷わないとも。[r]今の僕は、サーヴァントだからね。
+[k]
+
+＠エルキドゥ
+僕はランサー、エルキドゥ。[r]人理の護り手として『再起動』した存在だ。
+[k]
+
+＠エルキドゥ
+ここでマスターを脅威に晒すわけにはいかない。[r]たとえここが、どのような場であっても。
+[k]
+
+＠エルキドゥ
+統合した[#別個体:キングゥ]の為にも、[r]僕は僕としての役割を果たそう。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace A 0]
+[charaFace B 0]
+[charaFace C 0]
+
+[charaFadein C 0.1 -350,0]
+[charaFadein B 0.1 350,0]
+[charaFadein A 0.1 1]
+[wt 0.4]
+
+[shake 0.02 3 3 1.0]
+
+[se ad216]
+[se ad21]
+[seVolume ad21 0 0.8]
+[wt 0.1]
+[se ad24]
+[seVolume ad24 0 0.8]
+[se ad22]
+[seVolume ad22 0 0.9]
+[seStop ad22 1.0]
+[seStop ad24 1.0]
+[seStop ad216 1.5]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠エルキドゥ
+……本当にすまない。[r]許して欲しいとも言わない。
+[k]
+
+＠エルキドゥ
+たとえ、この場限りの[#夢や幻:バ　　　グ]だとしても[line 2]
+[k]
+
+＠エルキドゥ
+僕はまた……君をこの森から廃棄する。
+[k]
+
+[charaFace G 3]
+
+＠エルキドゥ
+なに、造作も無い事だよ。[r]同じ後悔をするだけの話さ。
+[k]
+
+＠エルキドゥ
+こんな存在になるまで君を救おうとしなかった[r]僕には……当然の報いだ。
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

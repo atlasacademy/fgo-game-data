@@ -1,0 +1,862 @@
+
+＄02-00-01-10-1-0
+
+
+[charaSet A 11002001 1 エドモン・ダンテス]
+[charaSet B 6026000 1 新宿のアサシン]
+[charaSet C 2023001 1 新宿のアーチャー]
+[charaSet D 98111302 1 シェイクスピア]
+[charaSet E 2023001 1 新宿のアーチャーのシルエット]
+[charaSet F 2023000 1 新宿のアーチャー回想用]
+[charaSet G 11002001 1 エドモン・ダンテスの残像]
+
+[soundStopAll]
+
+[bgm BGM_EVENT_1 0.1]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.7 1]
+＠エドモン・ダンテス
+メッセージか。
+[k]
+
+
+[charaFace A 4]
+＠エドモン・ダンテス
+[#新宿のアーチャー:ア　　イ　　ツ　]め……俺を引っ張り出すために[r]マスターを危険に晒すとは。
+[k]
+
+[charaFace A 0]
+＠エドモン・ダンテス
+……いや、違うか。あれは薄々、[#俺が何者なのか]を[r]理解している。
+[k]
+
+＠エドモン・ダンテス
+となると必然、自分の真名も推理済みか。[r]自分の真名が確定したのであれば、俺の正体もそれと知れる。
+[k]
+
+
+[charaFace A 4]
+＠エドモン・ダンテス
+……俺は盤上に乗ることを好まない。[r]まして相手が奴なら、尚更だ。
+[k]
+
+[charaFace A 0]
+＠エドモン・ダンテス
+ともかく……[&彼:彼女]の不安を鎮めに行くとするか。
+[k]
+
+[bgmStop BGM_EVENT_1 1.0]
+[messageOff]
+
+[charaTalk off]
+[se ad85]
+[seStop ad85 0.7]
+[charaFadein G 0 1]
+[fowardEffect bit_talk_quickmove]
+[charaMoveReturn A 0,5 0.05]
+[charaFadeTime A 0.05 0.5]
+[charaFadeTime G 0.05 0.5]
+[wt 0.05]
+[charaMoveReturn A 0,-5 0.05]
+[charaFadeTime G 0.05 0.75]
+[charaFadeTime A 0.05 0.75]
+[wt 0.05]
+[charaFadeout A 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk on]
+
+[wipeout uzumaki 1.0 1.0]
+[wait wipe]
+
+[scene 38900]
+
+[wt 1.4]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_48 0.1]
+[wipein openEye 1.0 1.0]
+[wait wipe]
+[wipeout openEye 0.4 1.0]
+[wait wipe]
+
+[wipein openEye 2.0 1.0]
+[wait wipe]
+
+[wt 0.4]
+
+[shake 0.05 4 4 0.4]
+[se ad7]
+[wt 0.4]
+
+[charaFace B 1]
+＠新宿のアサシン
+よ、起きたか。
+[k]
+
+？1：……
+？2：ここは……？
+？！
+
+＠新宿のアサシン
+何処に居るか知りたそうだな。[r]ここは“バレル”。
+[k]
+
+＠新宿のアサシン
+幻影魔人同盟の本拠地だよ。
+[k]
+
+？1：！？
+？！
+
+
+[charaFace B 0]
+＠新宿のアサシン
+安心しろ、触れた感じ怪我はないさ。
+[k]
+
+
+[charaFace B 7]
+＠新宿のアサシン
+ただし、言うまでもないが逃げたら死ぬし殺すぞ。
+[k]
+
+
+[charaFace B 6]
+＠新宿のアサシン
+さて、実はここに連れてきたのは気紛れだ！[r]もし首領に殺されたらごめんな！
+[k]
+
+？1：首領……！
+？！
+
+[charaFace B 7]
+＠新宿のアサシン
+そう。我らの首領……悪の化身、悪の権化、悪の概念。[r][line 3]真の、新宿のアーチャーだよ。
+[k]
+
+
+
+[messageOff]
+
+[bgm BGM_EVENT_48 2.0 0.1]
+[charaFadeout B 0.7]
+[wt 1.0]
+
+[cameraMove 1.0 0,0 1.2]
+[wait camera]
+
+[charaTalk E]
+[charaScale E 0.83]
+[charaFilter E silhouette 00000080]
+[charaFace E 0]
+[charaFadein E 0.7 0,-48]
+[wt 2.0]
+
+[se ad95]
+[cameraMove 3.0 0,0 1.0]
+[charaFadeout E 2.0]
+[wait camera]
+
+[bgm BGM_EVENT_48 2.0]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.7 1]
+[wt 1.0]
+
+[wt 1.0]
+
+？1：本当に……アーチャーだ
+？2：同一人物……じゃないんだよね
+？！
+
+[charaFace C 0]
+＠新宿のアーチャー
+その通り。[r]私が悪、彼が善だ。
+[k]
+
+[charaFace C 5]
+＠新宿のアーチャー
+聖杯の力によって我々[line 3]否、私は余分な感情、[r]善に焦がれる心を引き裂いた。
+[k]
+
+＠新宿のアーチャー
+[#彼]と戦うにあたり、そのような感情は[r]不要なのでね。
+[k]
+
+[charaFace C 1]
+＠新宿のアーチャー
+……その過程で、あのような残滓が意識を[r]持ってしまったことは計算外だった。
+[k]
+
+[charaFace C 0]
+＠新宿のアーチャー
+ましてそれが、逃げ出して我々に抵抗しようとはね。
+[k]
+
+
+[charaFace C 1]
+＠新宿のアーチャー
+もっとも、君が来るまでは逃げ回る羽虫程度の[r]存在だったが[line 3]。
+[k]
+
+
+[charaFace C 0]
+＠新宿のアーチャー
+新宿のバーサーカーは[#斃:たお]され、[r]ライダーは未だ復帰の目処が立っていない。
+[k]
+
+＠新宿のアーチャー
+……しかし、我々にはまだ二人の[#魔人:サーヴァント]がいる。[r]計画に支障はない。
+[k]
+
+？1：計画とは？
+
+[charaFace C 1]
+＠新宿のアーチャー
+おや、まだ彼から聞いてなかったとは。[r]もしや、接触もしていないのか？
+[k]
+
+[charaFace C 0]
+＠新宿のアーチャー
+アサシンから聞いているだろう？[r]与太話だとでも思ったのかね？
+[k]
+
+？2：もしかして星を打ち砕く……？
+
+[charaFace C 1]
+＠新宿のアーチャー
+やはり既に知っていたか。
+[k]
+
+？！
+
+＠新宿のアーチャー
+今、君が想像した通り。私の目的は、紛れもなく[r]この星の解体だよ、[%1]。
+[k]
+
+[charaFace C 0]
+＠新宿のアーチャー
+不可能だと思うかね？[r][#私ならできるさ]。
+[k]
+
+＠新宿のアーチャー
+私はそう信じているし、[r]彼らもそう信じて私と行動を共にしている。
+[k]
+
+[charaFace C 1]
+＠新宿のアーチャー
+１９９９年に、世界は終わるのだ。[r]かつての与太話が、現実に成り代わるのだよ。
+[k]
+
+？1：どうしてそんなことを！？
+？！
+
+[charaFace C 3]
+＠新宿のアーチャー
+動機、動機か……。[r]ふむ…………。[charaFace C 1]
+[k]
+
+[charaFace C 0]
+＠新宿のアーチャー
+強いて言うのであれば、私は数学者だからだろうな。[r]私は星を破壊するために必要な力を算出した。
+[k]
+
+＠新宿のアーチャー
+ならば、[#その解が正しいかどうか]確かめたいと[r]思うのは、当然の心理だろう？
+[k]
+
+[charaFace C 0]
+＠新宿のアーチャー
+『そんなことで？』という顔をしているな。[r]確かにそうかもしれない。
+[k]
+
+＠新宿のアーチャー
+だが、これは数学者としてのサガだ。[r]私は私の邪悪を誇り、阻む者を憎む。
+[k]
+
+＠新宿のアーチャー
+……だが、カルデアに介入されるのは上手くない。[r]たとえ君を殺しても、次の誰かがやってくるだけだろうな。
+[k]
+
+＠新宿のアーチャー
+取引しよう、[%1]。[r]君をカルデアへと帰還させてあげよう。
+[k]
+
+[charaFace C 5]
+＠新宿のアーチャー
+その代わり、カルデアは我々に干渉するな。
+[k]
+
+？1：できるはずがない！
+
+[charaFace C 0]
+＠新宿のアーチャー
+できるさ。後で、レオナルド・ダ・ヴィンチにでも[r]事情を教えてもらうがいい。
+[k]
+
+？2：それは無理[&だ:]
+
+[charaFace C 1]
+＠新宿のアーチャー
+確かにそうかもしれないな。
+[k]
+
+[charaFace C 0]
+＠新宿のアーチャー
+だが[line 3]星を砕く真の意味を、レオナルド・ダ・ヴィンチ[r]あたりなら、そろそろ理解していそうだ。
+[k]
+
+？！
+
+[charaFace C 0]
+＠新宿のアーチャー
+まあ、じっくり考えなさい。[r]今すぐには殺さない、殺しても無駄だからね。
+[k]
+
+[messageOff]
+
+[se ad95]
+[charaFadeout C 2.0]
+[seStop ad95 3.0]
+[wt 2.4]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠新宿のアサシン
+おう、やっぱりツイてんなあおまえさん！[r]敵ながら天晴れ！　ってやつか。
+[k]
+
+[charaFace B 1]
+＠新宿のアサシン
+ま、しばらくは大人しくしていてくれよな。[r]そうだ。ついでにアイツの話し相手にでもなってくれ。
+[k]
+
+
+＠新宿のアサシン
+アイツは誰かが傍にいないと調子狂うタイプだからなあ。[r]おまえさんが話し相手なら、奴も満足するだろうさ！
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_48 1.0]
+[wipeout rightToLeft 1.0 1]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[wipein leftToRight 1.0 1]
+[wait wipe]
+
+[bgm BGM_EVENT_5 0.1]
+
+
+[wt 0.2]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 1]
+＠シェイクスピア
+おお、麗しきカルデアのマスターよ！[r]お久しぶりですな、ウィリアム・シェイクスピアですぞ！
+[k]
+
+
+？1：一体、その鎖は……！？
+
+[charaFace D 3]
+＠シェイクスピア
+サーヴァント捕縛用の鎖だそうです！[r][#弱小:キャスター]の身では、まず脱出不可能！
+[k]
+
+
+
+？2：……黒幕？
+
+[charaFace D 3]
+＠シェイクスピア
+黒幕ではありませんぞ！[r]この痛々しい鎖と楔を見ればお分かりの通り！
+[k]
+
+
+[charaFace D 0]
+＠シェイクスピア
+確かにこのスタイルでは疑われることもあるかと[r]思いますが！
+[k]
+
+？！
+
+[charaFace D 4]
+＠シェイクスピア
+実は吾輩、こうして捕まって日がな一日[r]拷問を受けているのです。
+[k]
+
+[charaFace D 2]
+＠シェイクスピア
+[#逆境こそ利をもたらす:Sweet are the uses of adversity.]とか、[r]自分で言っておいてなんですが嘘っぱちですな！
+[k]
+
+[charaFace D 1]
+＠シェイクスピア
+おお、辛い。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠新宿のアサシン
+ああ、シェイクスピアの言うことは本当だ！
+[k]
+
+＠新宿のアサシン
+うん、拷問を受けてこの間ようやくリア王を[r]生み出してくれたからな！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠シェイクスピア
+ははははは。お役に立てたようで何よりです、[r]く[charaFace D 2]そくらえですがね！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠新宿のアサシン
+今度、もっと痛めつけるから[r]次はそうさな……マクベスとかがいいな！
+[k]
+
+[charaFace B 6]
+＠新宿のアサシン
+ほら、確かアイツ不死身だったろ？[r]期待してるぞ、じゃなー！
+[k]
+
+[messageOff]
+
+[se ad60]
+[charaFadeout B 0.7]
+[seStop ad60 2.0]
+[wt 2.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+＠シェイクスピア
+……はぁ、やれやれ。[r]しかし、[&貴方:貴女]がここに来てしまうとは。
+[k]
+
+？1：脱出方法は？
+？！
+
+
+[charaFace D 4]
+[se ad164]
+[seStop ad164 0.7]
+[charaShake D 0.05 2 0 0.4]
+＠シェイクスピア
+残念ながら、[se ad164]見ての通り縛られていまして。
+[k]
+
+
+[charaFace D 0]
+＠シェイクスピア
+[%1]殿は縛られてこそいませんが、[r]サーヴァントならぬ身での脱出は難しいでしょう。
+[k]
+
+＠シェイクスピア
+周囲を雀蜂が巡回していますし、[r]吾輩が創り出してしまった量産型リア王も闊歩しています。
+[k]
+
+[charaFace D 1]
+＠シェイクスピア
+いやー、リア王を褒め称えたり貶したりする文章、[r]そろそろ種切れなんですけど。
+[k]
+
+＠シェイクスピア
+おお、申し訳ありません[%1]殿！[r]吾輩が歴史に残る超傑作を書いてしまったばっかりに……！
+[k]
+
+
+？1：よかった、いつものアレだ！
+
+＠シェイクスピア
+む？
+[k]
+
+[charaFace D 0]
+＠シェイクスピア
+何やら生暖かい視線が気になりますが、[r]元気なのは良いことですな！
+[k]
+
+？2：シェイクスピアらしい
+
+＠シェイクスピア
+ははははは。[r]それは褒めていらっしゃいますよね？
+[k]
+
+[charaFace D 2]
+＠シェイクスピア
+褒めていると信じておりますが！
+[k]
+
+？！
+
+[charaFace D 5]
+＠シェイクスピア
+しかし話を聞く限り、[r]捕まった経緯が間抜けですな……。
+[k]
+
+[charaFace D 0]
+＠シェイクスピア
+あ、いえ。[%1]殿のことではなく。[r]新宿のアーチャー殿のことです。
+[k]
+
+[charaFace D 4]
+＠シェイクスピア
+彼は恐らく、新宿のアサシンがどのような能力を[r]持っているのか、ある程度は把握していたのでは？
+[k]
+
+＠シェイクスピア
+なのに、突然現れたハサンを警戒もせず[r]受け入れるなど[line 3]。
+[k]
+
+？1：確かに変だ
+？！
+
+[charaFace D 3]
+＠シェイクスピア
+……ふむ、となるとここは一つ、[r]探偵役っぽく逆に考えてみましょう。
+[k]
+
+[charaFace D 0]
+＠シェイクスピア
+彼がハサンを警戒していないのがおかしいなら、[r]つまり彼は新宿のアサシンであると知っていたのでは？
+[k]
+
+[charaFace D 5]
+＠シェイクスピア
+普通に考えれば、これは裏切りですが[line 3]。
+[k]
+
+？1：裏切りじゃない……と思う
+
+[charaFace D 1]
+＠シェイクスピア
+大したサーヴァントですな、[r][&貴方:貴女]の信頼をそこまで獲得しているとは。
+[k]
+
+？2：その必要性がない
+
+[charaFace D 0]
+＠シェイクスピア
+確かに。攫って何かするのかと思えば、[r]特に何もしておりませんしな。
+[k]
+
+？！
+
+
+[charaFace D 3]
+＠シェイクスピア
+……ふむ。もしかすると、何か託されていませんか？[r]例えば、手紙とか。
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_5 1.0]
+[wipeout diaOut 1.0 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[effect bit_sepia01]
+[scene 38600]
+
+[wipein diaOut 1.0 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_7 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠F：新宿のアーチャー
+いやー、マスター君！[r]チミはよくやっているなあ！
+[k]
+
+[se bac9]
+[shake 0.05 3 3 0.2]
+[wt 0.3]
+[se bac9]
+[shake 0.05 3 3 0.4]
+[wt 1.0]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_7 1.0]
+[wipeout diaOut 1.0 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+[effectStop bit_sepia01]
+[scene 38900]
+[wt 1.0]
+
+[wipein diaOut 1.0 1.0]
+[wait wipe]
+
+
+[bgm BGM_EVENT_5 0.1]
+[wt 0.1]
+
+[charaFace D 0]
+[se ad27]
+[wt 1.0]
+
+？1：手紙だ
+？！
+
+[charaFace D 1]
+＠シェイクスピア
+グッド。
+[k]
+
+[charaFace D 0]
+＠シェイクスピア
+早速、中身を拝見致しましょう！[r]えーと何何……。
+[k]
+
+＠シェイクスピア
+『大丈夫、マスター君は殺されない』[r]『助けも向かうはずだ』
+[k]
+
+＠シェイクスピア
+『その助けが、全てを語ってくれるだろう』[r]『君を怖がらせたことを、心から陳謝する』
+[k]
+
+＠シェイクスピア
+……とのことです。
+[k]
+
+[charaFace D 4]
+＠シェイクスピア
+裏切った訳ではないですが、[r]不明な点が多々あるのは確かですな。
+[k]
+
+
+[bgmStop BGM_EVENT_5 0.4]
+
+
+＠A：？？？
+……その辺については、私から説明しよう。
+[k]
+
+[charaFace D 5]
+＠シェイクスピア
+むむ、何者！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[messageOff]
+[bgm BGM_EVENT_1 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.7 1]
+[wt 1.0]
+＠エドモン・ダンテス
+我が名はエドモン・ダンテス。[r]人によっては、巌窟王とも呼ぶがね。
+[k]
+
+？1：巌窟王！？
+？！
+
+[charaFace A 5]
+＠エドモン・ダンテス
+静かにしろ、[%1]。[r]新宿のアーチャーが寄越した助けだよ、私は。
+[k]
+
+[charaFace A 2]
+＠エドモン・ダンテス
+正確には、[#そう仕向けられた]んだがね。[r]まあいい、ともかく時間がない。
+[k]
+
+[charaFace A 0]
+＠エドモン・ダンテス
+シェイクスピア、キミも救出したいのは山々なんだが[r]置き去りにさせてもらう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠シェイクスピア
+おお、何たる悲劇！[r]……と言いつつ、割と納得している吾輩です。
+[k]
+
+？1：でも……
+？！
+
+[charaFace D 1]
+＠シェイクスピア
+いやいや、全然大丈夫です。
+[k]
+
+[charaFace D 3]
+＠シェイクスピア
+拷問を受けてすげえ痛い辛いってだけで、[r]死ぬことは当分無さそうですしな。
+[k]
+
+[charaFace D 0]
+＠シェイクスピア
+何より、今は[%1]殿の安全が最優先でしょう。
+[k]
+
+[charaFace D 2]
+＠シェイクスピア
+吾輩のことは構わず！[r]しかして後でちゃんとお助け下さい。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠エドモン・ダンテス
+分かっているさ。[r]達者でな、シェイクスピア。
+[k]
+
+[messageOff]
+
+[se ad59]
+[charaFadeout A 0.7]
+[seStop ad59 2.0]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[wt 0.7]
+
+[fadeout black 0.1]
+[wait fade]
+[wipein leftToRight 0.1 1.0]
+[wait wipe]
+
+[fadein black 0.7]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠シェイクスピア
+幸運を！
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_1 1.0]
+[fadeout black 0.7]
+[wait fade]
+
+[charaFadeout D 0.7]
+[wt 1.0]
+
+[flashin loop 0.1 0.1 000000FF FFFFFF80]
+[flashOff]
+
+[fadein black 0.7]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[se ad9]
+[flashin loop 0.7 0.7 D72727FF FFFFFF00]
+[wt 3.0]
+[seStop ad9 1.0]
+[flashOff]
+
+[charaFace A 5]
+＠エドモン・ダンテス
+気付かれたか、急ぐぞマスター。[r]何、安心しろ。
+[k]
+
+[charaFace A 2]
+＠エドモン・ダンテス
+この程度のセキュリティ、[#私にかかれば造作もない]！
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.7]
+[se ad59]
+[seStop ad59 2.0]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[scene 38300]
+
+[wt 1.0]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠エドモン・ダンテス
+おっと。“リア王”のご登場か。
+[k]
+
+＠エドモン・ダンテス
+やれやれ、シェイクスピアめ。[r]厄介なものを書き上げてくれたものだ……！
+[k]
+
+[charaFace A 0]
+＠エドモン・ダンテス
+マスター、悪いが今の私にはそれほど力がない。[r]上手く指揮をして、どうにか生き延びてくれ……！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

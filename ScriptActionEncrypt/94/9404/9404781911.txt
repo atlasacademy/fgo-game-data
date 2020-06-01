@@ -1,0 +1,149 @@
+
+
+
+＄94-04-78-19-1-1
+
+
+[soundStopAll]
+
+
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 3043000 1 エリセ]
+[charaSet C 2016000 1 エミヤ・オルタ]
+[charaSet D 5025001 1 エジソン]
+[charaSet F 98115000 1 エフェクト用]
+
+[scene 47001]
+
+[pictureFrame cut170_gameframe_dark]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[pictureFrame]
+[pictureFrameTop cut170_gameframe_dark]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+＠マシュ
+鈴鹿御前さんの撃退に成功しました！
+[k]
+
+[charaFace A 0]
+＠マシュ
+弁慶さん、小太郎さん、そして鈴鹿御前さんと[r]続いたということは……。
+[k]
+
+？1：和サヴァ縛り……？
+？2：ということは、ラスボスもそっち系？
+
+？！
+
+[charaFace A 12]
+＠マシュ
+“[#戸隠:とがくし]”とおっしゃっていましたね。[r]山の名前……でしょうか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-50]
+
+＠エミヤ・オルタ
+ああ、そうだとも。戸隠山は[#修験道:しゅげんどう]や忍者の里だ。[r]こいつはどう転んでも厄介だぞ。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_62 1.0 0.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wt 0.5]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_62 1.0 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[effect bit_talk_dice212]
+[voice 304300_0_X050]
+[wt 6.0]
+[wait voice 304300_0_X050]
+
+
+
+[charaTalk depthOff]
+[charaDepth F 2]
+[charaDepth B 1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+[wt 0.5]
+
+[charaPut F 0,0]
+[charaEffect F bit_talk_quickmove]
+[charaFadein B 0.1 0,-50]
+[charaMove B 0,-44 0.3]
+[se ad27]
+[se ad399]
+[seVolume ad399 0 0.7]
+[wt 0.1]
+[charaSpecialEffect B erasureReverse 1 0.3]
+[wt 0.5]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[wipeout rectangleStripRightToLeft 0.7 1.0]
+[bgm BGM_EVENT_62 0.7 0.5]
+[wait wipe]
+[wt 0.5]
+[wipein rectangleStripLeftToRight 0.7 1.0]
+[bgm BGM_EVENT_62 0.7 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaEffect F bit_talk_quickmove]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-44]
+[charaMove B 0,-50 0.2]
+[wt 0.1]
+[se ad27]
+[wt 1.5]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+＠エジソン
+おおっ、あちらでは[r]エリセ君が最大値を出したぞ！
+[k]
+
+[messageOff]
+[maskout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait mask]
+[fadeout black 0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

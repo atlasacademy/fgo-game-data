@@ -1,0 +1,212 @@
+
+＄94-03-35-30-3-0
+
+[soundStopAll]
+[charaSet A 1035001 1 ディルムッド]
+[charaSet B 5012001 1 エフェクト用]
+
+[equipSet H 9807030 1 バレンタイン礼装]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66700]
+[branch lblConf]
+[label lblNotClear]
+[scene 60300]
+[label lblConf]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠ディルムッド
+[tVoice ValVoice_103500 0_V010]
+おお、[%1]。[r]こちらにおられましたか。[wait tVoice]
+[k]
+
+
+＠ディルムッド
+[tVoice ValVoice_103500 0_V020]
+[#不躾:ぶしつけ]ながら、御身を捜しておりました。[r]不肖ディルムッド・オディナ、捧げ物を用立てております。[wait tVoice]
+[k]
+
+？1：え、ちょっと待って
+？2：まずこっちから[line 3]
+
+？！
+
+[messageOff]
+[charaFace A 3]
+[wt 0.5]
+[charaMoveReturn A 10,0 0.5]
+[wait charaMove A]
+[charaMoveReturn A -10,0 0.5]
+[wait charaMove A]
+[wt 1.0]
+
+[charaFace A 0]
+
+
+＠ディルムッド
+[tVoice ValVoice_103500 0_V030]
+今日という日が如何なる意味合いを持っているのか、[r]ダ・ヴィンチ殿から聞き及んでおります。[wait tVoice]
+[k]
+
+＠ディルムッド
+[tVoice ValVoice_103500 0_V040]
+であれば我が忠義、忠節、そして想いを形にせねば。[r]どうかお受け取りいただきたい。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠ディルムッド
+[tVoice ValVoice_103500 0_V050]
+[line 3]こちらとなります。[r]我が主。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se bas2]
+[charaFace H 0]
+[charaFadein H 0.5 0,-70]
+[wt 2.0]
+
+[charaFadeout H 0.4]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ディルムッド
+[tVoice ValVoice_103500 0_V060]
+妖精の果実、とも言うべき神秘の実にございます。[wait tVoice]
+[k]
+
+
+＠ディルムッド
+[tVoice ValVoice_103500 0_V070]
+[#是:これ]なる果実こそは、海の彼方にありし[r][#異界:イムラヴァ]の一つたる大地を華やかに彩る木々の果実。[wait tVoice]
+[k]
+
+＠ディルムッド
+[tVoice ValVoice_103500 0_V080]
+かつて、我が養父たる海神マナナンに導かれし[r]勇士ブランと仲間たちが辿り着いた地の植物にて[line 3][wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠ディルムッド
+[tVoice ValVoice_103500 0_V090]
+……。[r]……。[wait tVoice]
+[k]
+
+＠ディルムッド
+[tVoice ValVoice_103500 0_V100]
+……いや。あれは、ただ詩を吟じただけだったか。[r]導いたとは言えないかもしれませんが、その、はい。[wait tVoice]
+[k]
+
+？1：おいしそうなリンゴだね
+？2：ありがとう！
+
+？！
+
+[charaFace A 1]
+
+
+＠ディルムッド
+[tVoice ValVoice_103500 0_V110]
+常日頃より戦いに[#勤:いそ]しんでおられる我が主、[r][&貴方:貴女]の一時の安らぎとなれば幸いです。[wait tVoice]
+[k]
+
+？1：それじゃあお返しってことで！　はい！
+
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[charaFace A 2]
+[wt 1.0]
+[charaFace A 3]
+
+＠ディルムッド
+[tVoice ValVoice_103500 0_V120]
+おお……これは……[line 3][wait tVoice]
+[k]
+
+＠ディルムッド
+[tVoice ValVoice_103500 0_V130]
+ああ、なんということ……[wait tVoice]
+[k]
+
+
+＠ディルムッド
+[tVoice ValVoice_103500 0_V140]
+[&貴方:貴女]が何らかの品を[#下賜:か　し]してくださる。[r]そう、分かっていたはずなのにこれほどの感激とは。[wait tVoice]
+[k]
+
+＠ディルムッド
+[tVoice ValVoice_103500 0_V150]
+これこそは身に余る光栄です。[r]ご厚情、痛み入ります。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 2]
+[bgmStop BGM_EVENT_77 0.1]
+[wt 1.0]
+
+[cameraMove 0.2 0,-60 1.2]
+[se ad186]
+[wt 0.2]
+[charaEffect B bit_talk_41]
+
+
+＠ディルムッド
+[tVoice ValVoice_103500 0_V160]
+[f large]……こうなれば！！[wait tVoice]
+[k]
+
+[bgm BGM_EVENT_94 0.1]
+
+
+＠ディルムッド
+[tVoice ValVoice_103500 0_V170]
+戴いたチョコは私ただ一人が完食いたしましょう！[r]たとえ命に代えようと！　[#屍山血河:し ざ ん け つ が]を築こうとも！[wait tVoice]
+[k]
+
+[charaEffectStop B bit_talk_41]
+
+？1：大袈裟に考えなくていいってば！
+？2：あれ、こんなやりとり前にも……？
+
+？！
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_94 2.0]
+[wait fade]
+[soundStopAll]
+[end]

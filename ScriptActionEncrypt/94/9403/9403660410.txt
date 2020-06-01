@@ -1,0 +1,623 @@
+
+
+
+＄94-03-66-04-1-0
+[soundStopAll]
+
+[charaSet A 4032000 1 ライネス]
+
+[charaSet B 1098166200 1 トリムマウ]
+[charaSet C 1098165400 1 シェイクスピア仮面姿]
+[charaSet D 1098165300 1 Ｍ]
+[charaSet E 6015001 1 暗殺者]
+[charaSet F 1002000 1 女王]
+[charaSet G 6015001 1 シルエット用]
+[charaSet H 98015000 1 エフェクト用]
+[charaSet I 98015000 1 エフェクト用]
+
+[scene 73500]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_90 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ライネス
+女王たちは行ったか……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠トリムマウ
+『Ｍ』とシェイクスピアは[r]女王の兵士に連れられていきました。
+[k]
+
+？1：ところで勝算はあるの？
+？2：手がかりとかあった？
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ライネス
+まったくなければ、[r]さすがにあんなことを言わないとも。
+[k]
+
+[charaFace A 5]
+
+＠ライネス
+とはいえ、現状では薄すぎるのも確かだな。
+[k]
+
+＠ライネス
+とりあえず、関係者は三人。
+[k]
+
+＠ライネス
+あの女王様。[charaFace F 0][charaPut F 260,0][charaFadeTime F 0.4 0.75]
+[k]
+
+[charaFadeout F 0.4]
+
+＠ライネス
+『Ｍ』と名乗る怪しいアラフィフ。[charaFace D 0][charaPut D -260,0][charaFadeTime D 0.4 0.75]
+[k]
+
+[charaFadeout D 0.4]
+
+＠ライネス
+シェイクスピア。[charaFace C 0][charaPut C 260,0][charaFadeTime C 0.4 0.75]
+[k]
+
+[charaFadeout C 0.4]
+
+[charaFace A 0]
+
+＠ライネス
+しかし、今はそういうことを談義してる場合じゃないな。[r]もっとずっと、単純で効果的な策をとるべきだ。
+[k]
+
+[bgmStop BGM_EVENT_90 0.5]
+
+[charaFace A 2]
+
+＠ライネス
+たとえば……そこだ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ade285]
+[effect bit_talk_magicbullet]
+[wt 0.6]
+
+[se bac316]
+[flashin once 0.1 1.5 FFFFFFAA 00000000]
+[shake 0.05 3 2 1.0]
+[fowardEffect bit_talk_14]
+[wt 1.5]
+
+？1：え？
+？2：ピアノの陰に？
+
+？！
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ライネス
+気配遮断のクラススキルか。[r]アサシンのサーヴァントだな。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[charaFilter G silhouette 00000080]
+
+[charaTalk off]
+[charaDepth E 0]
+[charaDepth G 1]
+[charaFace G 0]
+
+[charaFadein G 0.7 1]
+[wt 1.5]
+
+[charaFace E 0]
+[charaFadein E 0 1]
+[wt 0.1]
+[charaFadeout G 0.7]
+[wt 0.8]
+
+[charaTalk on]
+
+＠暗殺者
+……どうして分かったかな？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠トリムマウ
+[#ご主人様:マ ス タ ー]いわく、周囲の魔力が妙だとのことで、[r]諸要素の再計算をさせていただきました。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ライネス
+そういうわけさ。女王がいる場で明かせば、[r]事態がややこしくなりそうなんで黙っていた。
+[k]
+
+＠ライネス
+で、君が犯人なら、こんなに簡単な事件はないんだが。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠暗殺者
+そういうわけではないが、[r]申し開きをする状況でもあるまい。
+[k]
+
+[messageOff]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect E erasureReverse 1 0.3]
+[wt 0.4]
+[se ade187]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ライネス
+待て！　くそ、窓から逃げたな！[r]追うぞ、我が弟子！
+[k]
+
+？1：また窓から[line 2]！
+？！
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad59]
+[cameraMove 0.7 80,-60 1.2]
+[wt 0.3]
+
+[seStop ad59]
+
+[wt 0.4]
+
+[se ad7]
+[wipeout rectangleStripDownToUp 0.3 1.0]
+[wait wipe]
+
+[cameraHome 0.1]
+[wait camera]
+
+[charaDepth A 0]
+[charaDepth B 1]
+
+[scene 10000]
+[effect bit_talk_43h]
+[wt 0.1]
+
+[se ad75]
+[wt 1.5]
+
+[wipein rectangleStripUpToDown 0.3 1.0]
+[wait wipe]
+
+[wipeout rectangleStripDownToUp 0.3 1.0]
+[wait wipe]
+
+[effectStop bit_talk_43h]
+
+[charaSet C 6015001 1 エミヤ演出用シルエット]
+
+[charaSet D 6015001 1 エミヤ演出用シルエット]
+
+[scene 73200]
+[se ad77]
+[seStop ad77 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,15]
+
+[wipein rectangleStripUpToDown 0.3 1.0]
+[shake 0.05 0 3 0.9]
+
+[charaPut I 1]
+[charaEffect I bit_talk_impactlanding 0,-550]
+[cameraMove 0.3 0,0 1.0]
+[charaMove B 0,-20 0.3]
+[se ad222]
+[wait wipe]
+[wt 0.8]
+
+[charaFadeout B 0.1]
+[charaPut I 2000,2000]
+[wt 0.9]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.7]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect E erasureReverse 1 0.3]
+[wt 0.7]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ライネス
+くそ、速い[line 2]！[r]トリムマウ、逃すな！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠トリムマウ
+了解いたしました。[r]戦闘用の機能を解放いたします。
+[k]
+
+[messageOff]
+[se ad386]
+[fowardEffect bit_talk_attack_buf]
+
+[wt 2.0]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect B erasureReverse 1 0.3]
+[wt 0.7]
+
+[wipeout rectangleStripLeftToRight 0.3 1.0]
+[wait wipe]
+
+[wipein rectangleStripRightToLeft 0.3 1.0]
+[wait wipe]
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 80,0]
+[charaMove E 1 0.2]
+[wt 0.4]
+[seStop ad671 0.5]
+
+＠暗殺者
+まったく、何から何まで優秀な使い魔だな。[r][#生半:なまなか]な礼装じゃない。なら[line 2]
+[k]
+
+[messageOff]
+
+[charaTalk depthOff]
+
+[charaDepth E 3]
+[charaDepth C 2]
+[charaDepth D 1]
+
+[charaPut C 50,0]
+[charaPut D -50,0]
+
+[se ad681]
+[wt 0.2]
+[charaPut H 1]
+[charaShake E 0.05 6 0 0.6]
+[charaFadeTime C 0.2 0.6]
+[wt 0.1]
+[charaFadeTime D 0.2 0.6]
+[wt 0.1]
+[charaFadeout C 0.2]
+[wt 0.1]
+[charaFadeout D 0.2]
+
+[se bac52]
+[effect bit_talk_Slash_white_01_L]
+[wt 0.1]
+[effect bit_talk_Slash_white_01]
+[wt 0.1]
+
+[charaMove E 0,15 0.1]
+[charaMoveScale E 1.1 0.1]
+[charaFadeout E 0.2]
+[wt 0.2]
+
+[charaScale E 1.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ライネス
+まだ、速くなるだと[line 2]！
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[fowardEffect bit_talk_kengekiall02]
+[se ad170]
+[wt 0.2]
+[se ad32]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.05 3 3 0.4]
+[wt 0.7]
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 -80,0]
+[charaMove A -20,0 0.2]
+[charaShake A 0.05 2 1 0.5]
+[wt 0.2]
+[charaMove A 1 0.2]
+[wt 0.4]
+[seStop ad671 0.5]
+
+＠ライネス
+目にもとまらぬほどの高速戦闘に、[r]気配遮断と隠蔽魔術の合わせ技か。
+[k]
+
+＠ライネス
+くそ、トリムとふたりがかりでやっとだ。[r]君に召喚魔術を使わせる隙もないぞ[line 2]！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se bac56]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠暗殺者
+そこだ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠トリムマウ
+[#ご主人様:マ ス タ ー]！
+[k]
+
+[messageOff]
+
+[charaTalk off]
+
+[se ad7]
+[charaMove B 50,0 0.3]
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[wt 0.2]
+[se ad563]
+[wt 0.1]
+
+[charaFace B 4]
+[charaFadein B 0.1 -256,0]
+[charaMove B -150,0 0.2]
+
+[wt 0.2]
+
+[se ad618]
+[fowardEffect bit_talk_13 -200,0]
+[charaShake B 0.05 4 4 0.4]
+[wt 0.1]
+[fowardEffect bit_talk_14 -100,0]
+[wt 0.9]
+
+[se ad178]
+[charaSpecialEffect B erasure 1 0.7]
+[wt 1.4]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ライネス
+おいおい、サーヴァントのくせに銃まで使うのか。[r]トリムがいなかったら、[#霊核:しんぞう]持っていかれてたぞ。
+[k]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaFace A 0]
+
+＠ライネス
+……ああ、仕方ない。
+[k]
+
+＠ライネス
+正直魔力がもったいなかったんでね。[r][#司馬懿:し ば い]どのも嫌がるし、極力使いたくはなかったんだが。
+[k]
+
+[messageOff]
+
+[bgm BGM_EVENT_63 0.1]
+
+[se ad39]
+[charaEffect A bit_talk_36]
+
+[wt 1.5]
+[charaFace A 8]
+
+＠ライネス
+[#渾沌:こんとん]に[#七穴:しちけつ]。英傑に毒婦。落ちぬ日はなく、月もなし。[r]とくと、我が策[#御覧:ごろう]じろ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[se bac56]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠暗殺者
+[line 2]宝具！　させるか！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut A 1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠ライネス
+『[#混元一陣:かたらずのじん]』[line 2]！
+[k]
+
+[messageOff]
+
+[se ad29]
+[flashin once 0.1 1.0 FFFFFFAF FFFFFF00]
+[charaEffectStop A bit_talk_36]
+[wt 1.2]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad170]
+[charaEffect E bit_talk_14]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaShake E 0.05 2 1 0.3]
+[wt 0.8]
+
+＠暗殺者
+何[line 2]？！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠ライネス
+私の宝具は、いささか特殊でね。特定の形を持たない。
+[k]
+
+[charaFace A 0]
+
+＠ライネス
+しかし、現れ出る幻の[#陽:ひ]と月は、[r]相手の得手を潰し、弱点を炙り出す。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad61]
+[charaEffect E bit_talk_restraint]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaShake E 0.05 2 1 0.3]
+[wt 0.8]
+[charaMove E 0,-10 0.2]
+[se ad54]
+
+＠暗殺者
+ぐっ……身体の、動きが………！
+[k]
+
+？1：相手の、様子が[line 2]！
+？2：動きが、突然鈍くなった[line 2]！
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠ライネス
+つまり、こういうことさ。[r]強力なスキルや宝具に頼るタイプには、よくはまるぞ？
+[k]
+
+[charaFace A 2]
+
+＠ライネス
+さあ、いいな我が弟子！[r]こいつにはいろいろ吐いてもらうぞ！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_63 0.5]
+[wait fade]
+[soundStopAll]
+[end]

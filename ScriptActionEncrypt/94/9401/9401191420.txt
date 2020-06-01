@@ -1,0 +1,179 @@
+
+＄94-01-19-14-2-0
+[soundStopAll]
+[charaSet A 2003001 1 ロビンフッド]
+[charaSet B 7016000 1 タマモキャット]
+[charaSet C 10002000 1 メルトリリス]
+[charaSet D 98112700 1 パッションリップ]
+[charaSet E 23001000 1 ＢＢ]
+[charaSet F 98006300 1 雑魚１]
+[charaSet G 98006300 1 雑魚２]
+[charaSet H 98006300 1 雑魚３]
+
+[scene 41000]
+[fadein white 1.5]
+[wait fade]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+＠ロビンフッド
+来たぞ！[r]っ[bgm BGM_EVENT_3 0.1]て、なんだこの状況、聞いてねえぞＢＢ！？
+[k]
+
+[messageOff]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.1]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+[charaTalk off]
+[charaDepth F 1]
+[charaDepth G 0]
+[charaDepth H 0]
+[se ad21]
+[charaFadein F 0.4 1]
+[wt 0.4]
+[charaFadein G 0.4 0]
+[wt 0.4]
+[charaFadein H 0.4 2]
+[wt 0.7]
+
+？1：敵がこんなに……！？
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠タマモキャット
+ザコだけではないぞご主人！[r]さりげなくサーヴァントが偽装して混ざっている！
+[k]
+
+＠タマモキャット
+ぬうう、ザコに紛れて大金星あげようとはアサシンの風上[r]にも置けぬ悪鬼外道！　キャットの怒りにも限度があろう！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？2：やっぱり罠だった……！？
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠メルトリリス
+いえ、これはＢＢ側のエネミーではないわ！[r]あの女、本気で嫌われる嫌がらせはできないもの！
+[k]
+
+＠メルトリリス
+……そういうコト。[r]リップがセパレータに現れたのは偶然ではなかったのね……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？！
+[messageOff]
+[wt 0.4]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.4 1]
+[charaEffect D bit_talk_voice01]
+＠パッションリップ
+ア[line 3]ァ、ア[line 3][r]アアアアアアアアアアアアアアアアアア！
+[k]
+
+[shake 0.01 0 5 0]
+[se ad14]
+[charaFadeout D 0.1]
+[charaEffectStop D bit_talk_voice01]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+＠ロビンフッド
+クソ、どうすんだコレ！？[r]パッションリップも暴れ出してやがる！
+[k]
+[charaFadeout A 0.1]
+[imageSet H back41330 2]
+[bgmStop BGM_EVENT_3 0.1]
+[shakeStop]
+[seStop ad14 0.1]
+[wt 0.1]
+[charaDepth E 3]
+[charaScale H 1.01]
+[charaDepth H 1]
+[charaFadein H 0.1 0,312]
+[bgm BGM_EVENT_52 0.1]
+[messageOff]
+[charaMove H 0,-200 0.3]
+[charaMove E 0,0 0.3]
+[wait charaMove]
+[charaMove H 0,-170 0.15]
+[wait charaMove]
+[charaMove H 0,-200 0.15]
+[wait charaMove]
+[charaMove H 0,-170 0.2]
+[wait charaMove]
+[charaMove H 0,-200 0.2]
+[wait charaMove]
+[charaTalk E]
+[charaFace E 2]
+[charaPut F 0,0]
+[charaEffect F bit_talk_noise_pink01]
+[charaFadein E 0.4 0,0]
+＠ＢＢ
+はいそこ、静かにしてくださーい！[r]うろたえるな小僧ども[line 5]！
+[k]
+
+？1：ＢＢ！？
+？2：小僧！？
+
+？！
+
+＠ＢＢ
+多少のトラブルはありましたが、[r]これぐらいの難易度調整は想定内です！
+[k]
+
+＠ＢＢ
+緑茶さん、メルト、キャットちゃん！[r]まずはそこの攻性プログラムを一掃してください！
+[k]
+
+[charaFace E 5]
+＠ＢＢ
+リップを解放するのはその後です！[r]大丈夫[line 3]信じていますからね、センパイ！
+[k]
+
+[bgmStop BGM_EVENT_52 0.4]
+[wt 0.2]
+[messageOff]
+[charaFadeout E 0.1]
+[charaFadeout H 0.1]
+[charaPut F 0,-1000]
+[charaEffectStop F bit_talk_noise_pink01]
+[scene 41000 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[bgm BGM_EVENT_3 0.1]
+＠ロビンフッド
+仕方ねえ、サービス残業とシャレこむか！[r]行くぜ、カルデアのマスターさんよ！
+[k]
+
+＠ロビンフッド
+ＢＢの嫌がらせから鍛え直した[r]オレの[#技巧:テク]、見せてやろうじゃねえか！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

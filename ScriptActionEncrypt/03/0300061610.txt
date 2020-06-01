@@ -1,0 +1,644 @@
+
+
+
+＄03-00-06-15-1-0
+
+
+[soundStopAll]
+
+
+[charaSet A 98002000 1 フォウ]
+[charaSet B 1098191200 1 アデーレ]
+[charaSet C 1098191300 1 マカリオス]
+[charaSet D 1098127610 1 ペペロンチーノ]
+[charaSet E 8001410 1 マシュ]
+[charaSet F 1017001 1 武蔵]
+[charaSet G 9005001 1 ホームズ]
+[charaSet H 1098190600 1 モードレッド]
+[charaSet I 1098190700 1 フラン]
+[charaSet J 1098191000 1 源頼光]
+[charaSet K 1098190800 1 坂田金時]
+[charaSet L 1098128200 1 カイニス]
+[charaSet M 8001400 1 アーマード・マシュ]
+[imageSet N cut063_cinema 1]
+[charaScale N 1.01]
+[charaDepth N 10]
+
+[charaSet S 5009000 1 エフェクト用ダミー]
+[charaSet T 5009000 1 エフェクト用ダミー]
+
+[charaPut T 1200,1200]
+[charaEffect T bit_talk_10_red]
+
+
+
+[scene 92100]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ade131]
+[seVolume ade131 0 0.0]
+[seVolume ade131 1.2 0.5]
+[wt 2.5]
+
+[seStop ade131 1.0]
+[wt 0.5]
+[shake 0.03 0 4 0.4]
+[se ade56]
+[seVolume ade56 0 0.4]
+[wt 1.5]
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠フォウ
+フォウ、フォーウ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アデーレ
+指定座標に到着しました。[r]……位置は、都市中央に存在する祭壇街の直下です。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ペペロンチーノ
+ここから先は徒歩になるわ。[r]ほら、さっさと支度。
+[k]
+
+[charaFace D 1]
+＠ペペロンチーノ
+３０秒……じゃ何だから１分で支度なさい！[twt 1.2][charaFace D 9][r]マシュちゃんはもう、大丈夫ね。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[se ad666]
+[wt 0.4]
+[seStop ad666]
+[wt 0.5]
+
+[charaFace E 7]
+＠マシュ
+は、はい。[#霊基外骨骼:オ ル テ ナ ウ ス]は装着済みです。
+[k]
+
+？1：こっちも大丈夫
+？2：いつでも行けるよ
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠武蔵
+こちらも問題なし！
+[k]
+
+[charaFace F 7]
+＠武蔵
+ふふん、こう見えても剣士のはしくれ。[r][#常在戦場:じょうざいせんじょう]ですから。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 2.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠マカリオス
+祭壇街の地下、か……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アデーレ
+……。[r]……。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+[wipeout rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth B 3]
+[charaDepth C 5]
+[charaFadeout G 0.1]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 0.1 150,-50]
+[charaFadein C 0.1 -150,-50]
+[charaFadein N 0.1 0,-200]
+[wt 0.2]
+[wipein rectangleStripRightToLeft 0.3 1]
+[wait wipe]
+
+[wt 1.5]
+
+[wipeout rectangleStripRightToLeft 0.3 1]
+[wait wipe]
+[charaTalk on]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout N 0.1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.2]
+[wipein rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+
+[wt 0.4]
+
+＠ホームズ
+アデーレ、マカリオス。[r]このあたりはどういった区域の地下になるのかな？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace B 0]
+[charaFadein C 0.1 -150,0]
+[charaFadein B 0.1 150,0]
+＠マカリオス
+……神のお膝元だよ、此処は。
+[k]
+
+＠アデーレ
+星間都市山脈オリュンポス中央区、祭壇街。[r]クロノス＝クラウンを擁する軌道大神殿の直下です。
+[k]
+
+＠アデーレ
+各地の分神殿を統轄する中央神殿群が存在し、[r]その直上には、神々の座す大神殿が。
+[k]
+
+＠アデーレ
+最も、ゼウス神に近い街なんです。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠マシュ
+……敵陣中枢の地下……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠マカリオス
+それに加えて、だ。
+[k]
+
+＠マカリオス
+この座標はあまりに深度が浅い。[r]ハデス神の加護の[#残滓:ざんし]が薄く、ゼウスの加護が[#篤:あつ]い。
+[k]
+
+？1：それってつまり……
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アデーレ
+いかに地下機構帯とはいえ、他の区画よりも[r]危険度は遙かに高いと考えてください。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+？2：いつもの地下とは勝手が違うって事？
+
+＠マカリオス
+ああ。そうだ。
+[k]
+
+？！
+
+[charaFace C 7]
+＠マカリオス
+もう少し深度があれば問題ないんだが……
+[k]
+
+＠マカリオス
+この深度のまま、[r]歩かなきゃならないんだよな？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ペペロンチーノ
+残念ながら、そうね。
+[k]
+
+＠ペペロンチーノ
+そんなに長いピクニックにはならないけど、[r]深度については調整できないわ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠マカリオス
+なら、細心の注意が必要だ。[r]自動機械なりがうろついている可能性がある。
+[k]
+
+＠マカリオス
+見付かれば面倒な事になる。[r]もしも先に発見できたら[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+＠武蔵
+できたら？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠マカリオス
+[line 3]即座に逃げろ。[r]壊したら壊したで、居場所は知られるからな。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[scene 92400]
+[wt 1.2]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaPut T 1]
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+＠人工知能
+自動戦闘機械？
+[k]
+
+[charaFace H 0]
+＠人工知能
+アルゴスか？[r]ああいや、アルゴスはオレたちがぶっ壊したか。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠人工知能
+ゥウウウ、アウ。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠人工知能
+ああ、そうだな。そうだった。[r]広域殲滅機械とか対人殲滅装置とかそのへんか。
+[k]
+
+＠人工知能
+奴ら、ゼウスの感覚と繋がってんだよ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+＠人工知能
+かの神は地下を直接覗く事はできませんが、[r]絡繰が見るモノを知覚できるようなのです。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+＠人工知能
+つまり、機械どもはゼウスの目なのさ。[r]普段の同盟基地の深度ならまず出ねえんだが……
+[k]
+
+＠人工知能
+このあたりの深度ならそりゃあ出るわな。[r]せいぜい気を付けるこった！　ビーケアフルだ！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠ペペロンチーノ
+ソレ、本当に人工知能なの？[r]ころころペルソナ変わってるみたいだけど。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠フォウ
+フォウ、フォウウ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠武蔵
+いろいろ秘密兵器とか作戦とか出してくれる、[r]頼りになる相棒ってあたりかしら。
+[k]
+
+[bgmStop BGM_EVENT_70 1.5]
+
+＠武蔵
+これまでに何度も……[r]ん。[charaFace F 12]
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ade321]
+
+[charaTalk L]
+[charaFace L 7]
+[charaFadein L 0.1 1]
+[wt 0.4]
+＠カイニス
+お、気付いたかサムライ女。[r]こういうのは東の方じゃどう言うんだったかな！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠武蔵
+噂をすれば影！[r][%1][&君:]、マシュ！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth M 2]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+[se ade57]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[charaTalk off]
+[charaFace M 7]
+[charaFadein M 0.4 1]
+[wt 0.5]
+[charaFace M 2]
+[charaFadeout E 0]
+
+＠M：マシュ
+前方距離２００に魔力反応です！[r]目視の限り、地下経路に横道はありません！
+[k]
+
+＠M：マシュ
+進むか、後退するか……[r]マスター！
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠マカリオス
+くそっ、だからこの深度は嫌だったんだ！[r]いったん退くぞ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠アデーレ
+感知される前に別経路を探します！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 5]
+[charaFadein L 0.1 1]
+＠カイニス
+……あーあーあーあー、ったくやり難いなァおい！[r]邪魔ならぶっ殺して進みゃいいんだよ！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠マカリオス
+それができれば苦労はないんだよ！[r]くそっ、いいから下がれ[line 3]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[se ad922]
+[seVolume ad922 0 0.6]
+[wt 0.4]
+
+＠合成音声
+あー、大丈夫。心配は要らない。
+[k]
+
+＠合成音声
+ゼウス神経網との接続は切ってある。[r]カルデア流に分かりやすく言えばオフライン状態だ。
+[k]
+
+＠合成音声
+あいや、オフラインと分からんよう[r]幾つか[#欺瞞:ぎまん]を噛ませてある。
+[k]
+
+＠合成音声
+心配は要らんさ。
+[k]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠武蔵
+……………………あら[#僥倖:ぎょうこう]。
+[k]
+
+[messageOff]
+[charaFace F 0]
+[cueSe Battle bac305]
+[wt 0.7]
+
+[charaFace F 1]
+＠武蔵
+息を潜めるのも逃げるのもどうか、なんて[r]じわじわ思っていた矢先の[#僥倖:ぎょうこう]！
+[k]
+
+＠武蔵
+誰の声かは知らないけれど、[r]天の導き、観音さまのご加護と信じましょう！
+[k]
+
+[charaFace F 5]
+＠武蔵
+[line 3][%1][&君:]！
+[k]
+
+？1：……信じよう！
+？2：撃破してこのまま進む！
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠マカリオス
+本気か！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠ペペロンチーノ
+決断、意外と早いのね。[r]ここは正解よ。信じてそのままやってみるといいわ。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 7]
+[charaFadein M 0.1 1]
+[wt 0.2]
+
+[se ad668]
+[charaMoveScale M 1.05 0.2]
+[charaMove M 0,6 0.2]
+[wt 0.2]
+[seStop ad668 0.1]
+
+[charaFace M 2]
+
+＠M：マシュ
+[#霊基外骨骼:オ ル テ ナ ウ ス]、戦闘機動開始。[r][line 3]敵性存在、距離１００。戦闘に入ります！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

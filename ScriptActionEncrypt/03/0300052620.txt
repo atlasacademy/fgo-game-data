@@ -1,0 +1,473 @@
+
+＄03-00-05-26-2-0
+
+
+[soundStopAll]
+
+[imageSet A cut137_paris0 1]
+[charaScale A 1.01]
+[charaSet B 1098182700 1 アトランティス防衛兵]
+[charaSet C 1098182700 1 アトランティス防衛兵]
+[charaSet D 1098182700 1 アトランティス防衛兵]
+[imageSet E cut137_paris2 1]
+[charaScale E 1.01]
+[imageSet F cut137_paris4 1]
+[charaScale F 1.01]
+[imageSet G cut137_paris5 1]
+[charaScale G 1.01]
+
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+[charaTalk depthOff]
+[charaDepth A 5]
+[charaDepth E 6]
+[charaDepth F 7]
+[charaDepth G 8]
+
+
+[cameraMove 0 0,0 1.01]
+
+[scene 28300]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad555]
+[seVolume ad555 0 0.5]
+[charaEffect J bit_talk_42 0,0 H]
+[wt 2.5]
+[seStop ad555 1.0]
+[charaEffectStop J bit_talk_42]
+[wt 1.0]
+
+
+[bgm BGM_EVENT_82 0.1]
+
+＠A：クサントス
+しかしまさか、主の[#敵:かたき]を乗せることになるとは。[r]人生において禍福は[#糾:あざな]える縄の如しですねグヒヒヒヒ。
+[k]
+
+[messageOff]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.2 150,0]
+[charaMove A 150,-200 0.2]
+[wt 0.2]
+
+＠A：パリス
+そ、そうですね！
+[k]
+
+[charaFadein E 0.1 150,-200]
+
+＠A：パリス
+……いや、馬じゃん！？
+[k]
+
+[clear]
+
+＠A：クサントス
+人も馬も哺乳類ですし。
+[k]
+
+
+[charaFadein F 0.1 150,-200]
+[clear]
+
+＠A：パリス
+そっかー。[r]……そうかなぁ……。
+[k]
+
+[clear]
+
+＠A：アポロン
+はいはい。[r][#駄弁:だべ]ってないでお仕事お仕事。
+[k]
+
+＠A：アポロン
+べ、別にパリスちゃんが私以外の[r]獣と喋っていて嫉妬したんじゃないんだからね！
+[k]
+
+[clear]
+
+＠A：クサントス
+何だそのレトロキャラ付け。
+[k]
+
+[clear]
+
+＠A：アポロン
+古代ギリシャの神です。
+[k]
+
+[clear]
+
+[charaFadein G 0.1 150,-200]
+[wt 0.1]
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+
+＠A：パリス
+よーし、やるぞー！
+[k]
+
+[messageOff]
+[charaMove G 150,-500 0.2]
+[bgmStop BGM_EVENT_82 1.0]
+[charaFadeout G 0.2]
+[wt 0.6]
+
+
+[fowardEffect bit_talk_38]
+[wt 0.2]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+[fowardEffectStop bit_talk_38]
+
+[scene 86000]
+
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaDepth B 5]
+[charaDepth C 4]
+[charaDepth D 3]
+
+[effect bit_talk_38]
+[wt 0.2]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.2]
+[effectStop bit_talk_38]
+
+[se bac16]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace B 0]
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein B 0 0,-50]
+[charaFadein C 0 -300,-50]
+[charaFadein D 0 300,-50]
+[effectDestroy bit_talk_ereshki02]
+[charaShake B 0.02 3 3 0.8]
+[charaShake C 0.02 3 3 0.8]
+[charaShake D 0.02 3 3 0.8]
+[wt 1.0]
+
+＠アトランティス防衛兵
+！？
+[k]
+
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk on]
+＠B：アトランティス防衛兵
+敵、上空に視認！[r]あの戦車を排除せよ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+
+
+[effect bit_talk_arrow_enemy_l 0,0 V]
+[wt 0.2]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[effectStop bit_talk_arrow_enemy_l]
+
+[scene 28300]
+
+[pictureFrame]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 150,-200]
+＠A：パリス
+クサントス、回避！
+[k]
+
+[clear]
+
+＠A：クサントス
+了解了解。
+[k]
+
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se bac30]
+[charaEffect J bit_talk_42 0,0 H]
+[wt 0.4]
+[charaEffectStop J bit_talk_42]
+[wt 0.2]
+
+
+[effect bit_talk_shot_02]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.4]
+
+
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+
+[scene 86000]
+
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+＠B：アトランティス防衛兵
+くそ、当たらないか……！[r]想定以上の速度だ！
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[scene 28300]
+
+[pictureFrame]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaDepth F 6]
+[charaDepth E 7]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 150,-200]
+＠A：パリス
+よし、これなら……！
+[k]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+
+＠アトランティス防衛兵
+[charaTalk B]
+仕方ない。広域殲滅兵器起動！
+[k]
+
+[charaFadein F 0.1 150,-200]
+＠A：パリス
+え？[r]今、誰か何か言いませんでしたか？
+[k]
+
+[clear]
+
+＠A：アポロン
+地上の兵士どもが広域殲滅兵器とか[r]言っていたみたいだけど。
+[k]
+
+[clear]
+
+＠A：パリス
+ま、まさかー。
+[k]
+
+
+＠A：パリス
+……。[r]……。
+[k]
+
+[clear]
+
+＠A：アポロン
+どうやらそのまさか。
+[k]
+
+[clear]
+
+＠A：クサントス
+みたいですなー。
+[k]
+
+
+[charaFadein E 0.1 150,-200]
+[clear]
+
+＠A：パリス
+に[messageShake 0.02 3 3 0.4]、逃げてーーー！！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.2]
+
+[se ad609]
+[shake 0.02 3 3 0]
+
+[wt 2.0]
+
+[fadeout black 1.0]
+[seStop ad609 1.0]
+[wait fade]
+
+[shakeStop]
+
+[charaSet E 1038000 1 イアソン]
+[charaSet F 98006200 1 人型端末]
+[charaSet G 98006200 1 人型端末]
+[charaSet H 98006200 1 人型端末]
+
+
+[scene 85800]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ade210]
+[charaTalk off]
+[charaFace F 0]
+[charaFace G 0]
+[charaFace H 0]
+[charaFadein F 0.4 1]
+[charaFadein G 0.4 -300,-10]
+[charaFadein H 0.4 300,-10]
+[wt 0.4]
+[seStop ade210 0.1]
+[wt 1.2]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+＠イアソン
+新手の敵だと！？[r]くそ、コイツは計算外の連中だ！
+[k]
+
+＠イアソン
+オデュッセウスの野郎、[r]このときのために取っておいたってやつか！
+[k]
+
+[charaFace E 5]
+＠イアソン
+苦戦する訳にはいかん。[r]とっとと始末しろ！　オレも加勢する！
+[k]
+
+？1：策とかあります！？
+？！
+
+[charaFace E 2]
+＠イアソン
+ない！
+[k]
+
+＠イアソン
+真っ向勝負で叩きのめす、[r]以上だ！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

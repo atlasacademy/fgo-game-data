@@ -1,0 +1,448 @@
+
+
+＄02-00-02-14-2-0
+[soundStopAll]
+[bgm BGM_EVENT_24 0.1]
+
+[charaSet A 98113900 1 フェルグス]
+[charaSet B 5030001 1 シェヘラザード]
+[charaSet C 4025000 1 コロンブス]
+[charaSet D 98114220 1 メガロス]
+[charaSet E 4004001 1 アストルフォ]
+[charaSet F 1026001 1 デオン]
+[charaSet G 99502600 1 マシュ]
+[charaSet H 98114600 1 レジスタンス]
+
+[scene 43200]
+[fadein black 1.5]
+[wait fade]
+
+[effect bit_talk_kengekiall01]
+[wt 0.1]
+[se ad33]
+[wt 1.0]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.05 3 3 0.4]
+[wt 0.7]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+＠フェルグス
+ぐぅっ……！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠シェヘラザード
+…………っ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠コロンブス
+ハッハー、こいつの強さは[r]おまえらもよく知ってるはずだろうが！
+[k]
+
+＠コロンブス
+そして俺は[#錨:いかり]も下ろす！[r]こいつはそうするたびに宝を得た、俺の夢の象徴よ！
+[k]
+
+＠コロンブス
+この島で下ろせば健康な原住民の奴隷が待っている！[r]この島で下ろせばガラス玉と金の交換が待っている！
+[k]
+
+[charaFace C 10]
+＠コロンブス
+さぁて、そしてこの島では！？　ワクワクが止まらねぇ！[r][line 2]『[#新天地探索航:サンタマリア・ドロップアンカー]』！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[se ad428]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.05 3 3 0.4]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+
+[wt 1.5]
+[charaTalk D]
+[charaFadein D 0.1 1]
+[charaEffect D bit_talk_voice01]
+[se ad425]
+＠メガロス
+[image berserker_language_8][line 2]！
+[k]
+
+？1：同時攻撃は、まずいっ……！
+？！
+
+[charaEffectStop D bit_talk_voice01]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠フェルグス
+おおおおっ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠シェヘラザード
+ああっ……！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[effect bit_talk_41]
+[wt 0.1]
+[se ad171]
+[se ad85]
+[wt 1.0]
+[effectStop bit_talk_41]
+[wt 0.4]
+[se ad73]
+[effectPause bit_talk_42]
+[effectStart]
+[wt 0.2]
+[effectStop bit_talk_42]
+[wt 0.3]
+[effect bit_bolg_03]
+[wt 0.1]
+[se ad32]
+[wt 0.2]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.05 3 3 0.7]
+[wt 1.0]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein F 0.4 2]
+[charaFadein E 0.4 0]
+＠アストルフォ
+ふひー、しんどい！　けど間に合ったー！
+[k]
+
+[charaFace F 5]
+＠デオン
+無事か、マスター！
+[k]
+
+？1：２人とも！　そっちこそ無事！？
+？！
+
+＠アストルフォ
+ぶっちゃけ、けっこうガス欠気味だけどねー。
+[k]
+
+[charaFace F 0]
+＠デオン
+外のアマゾネスたちは全滅はさせていないが、[r]人形のようにぼうっとしている状態になった。
+[k]
+
+＠デオン
+ひとまず放置しておいても問題ないと判断した。[r]ペンテシレイアは倒せたんだな？
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 7]
+[charaEffect G bit_talk_10_LowLevel]
+[charaFadein G 0.1 1]
+＠マシュ
+はい。ですが……。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaPut G 0,-10000]
+[charaFadeout G 0.1]
+[wt 0.4]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.4 1]
+[wt 1.5]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠デオン
+[line 2]悪い予想が当たった、という訳だね。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+＠コロンブス
+こんな状況で飛び込んできてくれるとはな。[r]いいお仲間さんじゃねぇか。
+[k]
+
+＠コロンブス
+もちろん大歓迎だぜ。[r]おまえさんたちはそういう趣味の方々に大ウケだろうしよ？
+[k]
+
+[charaFace C 7]
+＠コロンブス
+その価値、猛烈にプライスレス！[r]いや値段はつけてもらわにゃ困るんだが！　ハッハー！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠デオン
+……仲間か。その言葉で思い出したよ。[r]一つ確認しておかなくてはいけないことがあった。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+＠コロンブス
+ホー、何かな？　船長はなーんでも答えるぜ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠デオン
+[#桃源郷に火を放ったのはお前か]？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 1.0]
+[charaFace C 9]
+＠コロンブス
+[#当ったりィ]！[r]そいつは勿論、俺がこの手でやったことだぜェ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠レジスタンス
+な……！？　あの、ときの、火事が……！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+＠コロンブス
+つーか、ちっと考えたらわかるだろ。[r]相手はアマゾネスだったんだぞ？
+[k]
+
+＠コロンブス
+もし本当にあそこで俺たちの本拠地がバレてたんなら、[r]火を点けるだけで済むもんかよ。
+[k]
+
+＠コロンブス
+実際に斧やら剣やら持って、それこそ雄叫びをあげて、[r]トドメを刺しに突っ込んでくるに決まってらぁ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[charaShake H 0.01 2 0 0.7]
+＠レジスタンス
+で、でもなんで……わざわざ、安全だった隠れ家を！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+＠コロンブス
+アア？　そりゃ、テメェらがアマゾネスたちにビビって[r]役立たずになりかけてたからに決まってる。
+[k]
+
+＠コロンブス
+船員がビビってるときにゃあ、船長はどんな手を[r]使っても船を前に進ませるもんだ。
+[k]
+
+＠コロンブス
+航海日誌を二重に書いたり、テキトーな理由を作っては[r]『陸地は近い』ってこじつけたりよ。
+[k]
+
+＠コロンブス
+それと同じだぜ？　あそこでテメェらを[#前に進ませる]には、[r]あれしかなかった。
+[k]
+
+＠コロンブス
+生き残るには戦うしかねぇ、って腹を括らせるにはな。
+[k]
+
+＠コロンブス
+ったくよォ……あんなとこで、やっぱり奴らの奴隷でもいいか、[r]なんて諦められちゃあ困るんだっつーの。
+[k]
+
+[charaFace C 7]
+＠コロンブス
+おまえらは最初っから、俺がここを手に入れるための[#手駒:どれい][r]だったんだからよ！　勝手に持ち主を変えんじゃねぇ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[charaShake H 0.01 5 0 0.7]
+＠レジスタンス
+あ、ああ……や、やっぱり、俺たちは……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+＠コロンブス
+桃源郷を手に入れた後、次に必要だったのは兵士だ。
+[k]
+
+＠コロンブス
+もちろん、鬱憤が溜まってる男どもを集めて焚きつけるのが[r]一番早ぇとすぐ気付いた。だからそうした。
+[k]
+
+＠コロンブス
+それがおまえらだ……まったく、疑いもせずよく[r]ついてきてくれたぜ。実に立派な船員だった。
+[k]
+
+＠コロンブス
+俺はけっこう反乱とか起こされるのには慣れてるからよォ。[r]今にして思えば逆にビックリだぜ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠レジスタンス
+あ、あんたを信じて死んだ仲間だって……いっぱい、[r]いるのにっ……！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+＠コロンブス
+ああ、そうだな。まだ使える労働力が一銭の金も残さず[r]ポコポコ死んでいった。心が痛むぜ。
+[k]
+
+[charaFace C 11]
+＠コロンブス
+だが、俺は俺の夢を諦めないぞ？[r]教えたとおりだとも[line 2][#諦めない限り、目的地には必ず辿り着く]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠アストルフォ
+うわー……ブレないねぇ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠デオン
+ポジティブである事と悪である事は矛盾しない。[r]単に、よりタチが悪くなるだけだ。
+[k]
+
+＠デオン
+……何人かこういう人間と知り合ったがね。[r]奴ほど[#てらい]のないのは初めてだ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+＠マシュ
+同感です。ともあれ[line 2]アストルフォさんたちが[r]合流してくださったのなら百人力です！
+[k]
+
+＠マシュ
+これまでの戦いでダメージを与えているのは[r]間違いないと思います。もう一踏ん張りです、マスター！
+[k]
+
+[charaSet H 98002000 1 フォウ]
+
+？1：人を食い物にするヤツには、負けない！
+[charaPut G 0,-10000]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠コロンブス
+はっはー！　そいつは棚上げってモンだ！
+[k]
+
+＠コロンブス
+この中で一度も“金が欲しい”と思わなかったヤツだけが、[r]俺に石を投げろって話さ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？2：コロンブス！　おまえを王にはさせない！
+[charaPut G 0,-10000]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+？！
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[charaMoveReturn H 0,-15 0.4]
+＠フォウ
+フォウ、フォーウ！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_24 0.4]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

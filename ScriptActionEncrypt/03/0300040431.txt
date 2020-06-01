@@ -1,0 +1,164 @@
+
+＄03-00-04-04-3-1
+
+[soundStopAll]
+
+[charaSet A 23003000 1 ？？？]
+[charaSet B 1019001 1 ラーマ]
+[charaSet C 3004001 1 カルナ]
+[charaSet D 23003001 1 ？？？]
+[charaSet E 98002000 1 フォウ]
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+[scene 27710]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠？？？
+“我を崇めよ……我を褒めよ……我を甘やかせよ……[r][f small]  [f -]いまレベル上げで忙しいからコンビニでアイス買ってきて……”
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ラーマ
+……なあカルナ。[r]まさかとは思うが、この神気……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠カルナ
+…………………………。
+[k]
+
+[charaFace C 0]
+
+＠カルナ
+そこを動くな、ラーマ。すぐ済む。
+[k]
+
+
+[messageOff]
+[charaPut J 1]
+[charaEffect J bit_talk_h_slash01]
+[wt 0.4]
+[cueSe Battle bac526]
+[cueSeVolume bac526 0 0.4]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaFadeout C 0]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_h_slash01]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[charaShake A 0.08 5 1 0.4]
+
+＠？？？
+え、あ、うわわわわわっ！？
+[k]
+
+[messageOff]
+[fadeout white 0.2]
+[se ad243]
+[wait fade]
+[charaFadeout A 0.1]
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+[wt 0.1]
+[fadein white 0.5]
+[wait fade]
+
+[wt 1.5]
+
+[bgm BGM_EVENT_7 0.1]
+[charaFace D 2]
+[charaShake D 0.05 5 2 0.7]
+
+＠D：？？？
+あ、あぶねーっス！？[r]メッチャクチャ[#危機一髪:き き い っ ぱ つ]だったっスよ今の！
+[k]
+
+[charaFace D 5]
+
+＠D：？？？
+槍の穂先がもうちょっとでボクのお肉を[r]絶対美味しくないシシカバブに[line 3]
+[k]
+
+[charaFace D 5]
+
+＠D：？？？
+…………。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠カルナ
+…………。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 0]
+[charaDepth D 1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0]
+[charaFace C 0]
+[charaFadein C 0.1 2]
+
+＠D：？？？
+……[#カルナさん]？　何してるんスか、こんなトコで。
+[k]
+
+＠カルナ
+それはこちらの台詞だ。[r]なにをしている、■■■。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠フォウ
+フォウ……[wt 0.4][messageShake 0.05 3 3 0.5]フォーーーーウ！？
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

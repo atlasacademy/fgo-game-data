@@ -1,0 +1,933 @@
+
+
+
+＄03-00-06-11-1-0
+
+
+
+
+[soundStopAll]
+
+[charaSet A 1098128200 1 カイニス]
+[charaSet B 1017001 1 武蔵]
+[charaSet C 1098191200 1 アデーレ]
+[charaSet D 1098191300 1 マカリオス]
+[charaSet E 1098190600 1 モードレッド]
+[charaSet F 98002000 1 フォウ]
+[charaSet G 8001410 1 マシュ]
+[charaSet H 1098190800 1 坂田金時]
+[charaSet I 9005001 1 ホームズ]
+[charaSet J 7010001 1 カリギュラ]
+[charaSet K 8001400 1 アーマード・マシュ]
+
+[charaSet N 5009000 1 通信用ダミー]
+[charaSet O 5009000 1 通信用ダミー]
+[charaSet S 5009000 1 エフェクト用ダミー]
+[charaSet T 5009000 1 エフェクト用ダミー]
+
+
+[scene 92501]
+
+[se ad769]
+[seVolume ad769 0 0]
+[seVolume ad769 1.5 1.0]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.5]
+
+
+
+[charaTalk A]
+[charaFace A 20]
+[charaFadein A 0.4 1]
+[wt 0.2]
+[seStop ad769 0.2]
+[wt 0.4]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaFace A 2]
+＠カイニス
+ッらあ！[r]第二のアレってのはこのあたりか！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠武蔵
+相変わらず荘厳な眺めの街が続いてるけど、[r]一般市民の気配がないのは有り難いわ！
+[k]
+
+＠武蔵
+でも、その分、[r]機神の出陣が近いって事よねコレ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠マカリオス
+そうだ、前回は機神アフロディーテの強襲に遭った。[r]打てる手はすべて打ったが……
+[k]
+
+[charaFace D 2]
+＠マカリオス
+一刻も早く済ませるぞ！[r]人工知能！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut N 1]
+[charaEffect N bit_talk_10_red_ai 0,33]
+[wt 0.1]
+[se ad922]
+[seVolume ad922 0 0.6]
+[wt 0.3]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠E：人工知能
+おう、第二の場所はこのあたりだ。[r]で、正確な場所なんだが……
+[k]
+
+[bgmStop BGM_EVENT_62 1.0]
+[charaFace E 4]
+＠E：人工知能
+…………ンン？　何だこりゃ。分からねえぞ？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaShake F 0.02 3 3 0.4]
+＠フォウ
+フォ！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠マシュ
+え、ええと？[r]それはどういう[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaPut N 1]
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+＠H：人工知能
+イッツソーバッド！[r]シットだ！
+[k]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠H：人工知能
+悪い、目的の座標を見失っちまった！[r]こんな事は構造上起こらねえはずなんだが、
+[k]
+
+＠H：人工知能
+実際、皆目見当が付かねえときた！[r]ソーリー！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+＠マシュ
+目的地が分からない、となると……[r]オリュンポス兵の格好の餌食になります！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠武蔵
+まっずいわね、それ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut N 1]
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+＠H：人工知能
+数メートル距離まで接近すりゃ感知できる……[r]と、思うんだが、なんともハッキリしねえ！
+[k]
+
+＠H：人工知能
+それとだ！　イッツ・ザ・メンドクセエ！[r]ぼかした言い方で会話すんのは面倒だ！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠武蔵
+それ同感！[r]もうちょっと詳しい話をしたいとこ！
+[k]
+
+＠武蔵
+特に、今は！[r]何がどうしてどうなってるのか、整理したい！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+＠ホームズ
+仕方ないさ。ゼウスの『耳』がある以上、[r]地上で、作戦や目標の具体的性質を口にはできない。
+[k]
+
+＠ホームズ
+だが、念話の類の術式であればどうかな？[r]同時複数への展開は難しいかもしれないが。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠アデーレ
+可能です。ただし、一度きり。[r]同じ術式を二度使う危険は冒せません。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠ホームズ
+二度使えば、ゼウスの全能に絡め取られるか。[r]道理ではあるね。
+[k]
+
+＠ホームズ
+しかし現在は緊急事態だ。[r]どうかな、[%1]。
+[k]
+
+？1：お願いします、アデーレさん
+？2：一度、正確な状況を全員で共有しよう
+
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠アデーレ
+分かりました。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 1.0]
+[wt 0.1]
+
+
+[se ad39]
+[fowardEffect bit_talk_spell_b]
+[wt 0.2]
+[se ad942]
+[wt 1.2]
+[se bac32]
+[wt 0.5]
+
+
+＠アデーレ
+[line 3]聡きヘルメスの加護を！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaDepth O 10]
+
+[charaPut O 1]
+[charaEffect O bit_talk_summon 0,-200]
+
+[se bas8]
+
+[charaPut S 1]
+[charaEffect S bit_talk_release]
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+[wt 1.8]
+[bgm BGM_EVENT_70 0.1]
+
+＠武蔵
+わっ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠カイニス
+ん……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+
+[charaFace J 0]
+[charaFace I 0]
+[charaFadein I 0.1 2]
+[charaFadein J 0.1 0]
+[wt 1.5]
+
+[messageOff]
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+
+
+[charaDepth D 5]
+[charaDepth C 4]
+
+[charaFace D 0]
+[charaFace C 0]
+[charaFadein D 0.1 -150,0]
+[charaFadein C 0.1 150,0]
+[wt 1.5]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠フォウ
+フォウ！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠マシュ
+（これは……）
+[k]
+
+[charaFace G 7]
+
+＠マシュ
+（皆さん、聞こえますか？）
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠武蔵
+（聞こえてる聞こえてる。わ、すごいわねコレ）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+＠カイニス
+（頭ン中でごちゃごちゃうるせえな……[r]　さっさと話して、さっさと終わりやがれ）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠武蔵
+（まあまあ。折角の初体験なのだし！）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠カイニス
+（敵に追われてンだろうが莫迦！[r]　随分と余裕がありやがるよなァ、サムライ女）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+＠武蔵
+（あ、褒めてくれてる？　ありがとう！）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠カイニス
+（呆れてんだよタコ！[r]　言葉の裏までは伝わらねえなコレ！？）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠マシュ
+（複数同時、並行で行われる念話……[r]　先輩も、わたしの声が届いていますか？）
+[k]
+
+？1：（大丈夫、聞こえるよ）
+
+[charaFace G 1]
+＠マシュ
+（はいっ）
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+？2：（もしかして今ならフォウの言葉も……？）
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠フォウ
+（フォウ！　フォウフォウ！）
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠武蔵
+（あら残念……）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠カイニス
+（ははははははははは、畜生は畜生ってか！[r]　ま、いきなりべらべら喋られちゃ逆に面倒だ！）
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth F 5]
+[charaDepth A 4]
+
+[se adm21]
+[charaFace F 0]
+[charaFadein F 0.1 300,0]
+[charaMove F 2 0.6]
+[wt 0.8]
+
+[charaTalk on]
+[charaTalk F]
+＠フォウ
+（フォウ。フォフォフォ……）[r]（特別意訳：品がないね、うさ耳は……）
+[k]
+
+[charaTalk A]
+＠カイニス
+（ははははははは。[wt 0.5][charaFace A 0][r]　……なんかイラッときたな今？）
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+？！
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠アデーレ
+（……では、皆さんに状況をお伝えします）
+[k]
+
+＠アデーレ
+（詳細な解説は後に回しますが、[r]　破神術式・[#冠位英霊:グランドクラス]指定召喚[line 3]）
+[k]
+
+＠アデーレ
+（通称大召喚陣の完成に必要な座標は、[r]　一種の、魔力の[#歪:ゆが]みを利用したものです）
+[k]
+
+＠アデーレ
+（それは本来、空間に深く結びついていて、[r]　一度座標が判明すれば、まず見失いはしません）
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠ホームズ
+（それを見失った、という事は……[r]　予定座標に存在したはずの[#歪:ゆが]みが、消失したと？）
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠フォウ
+（フォ、フォウ？）
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠カイニス
+（まずくねえかそれ。ハハッ、作戦失敗だ！）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠マカリオス
+（いや。それはない。[r]　詳細に話すと長くなるが、この[#歪:ゆが]みは永遠だ）
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠武蔵
+（でも消えた、と）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth D 5]
+[charaDepth C 4]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFace C 0]
+[charaFadein D 0.1 -150,0]
+[charaFadein C 0.1 150,0]
+＠マカリオス
+（！　そ、そうだ……そうだが……）
+[k]
+
+[charaTalk C]
+＠アデーレ
+（[#消失する類のものではない]んです。[r]　それを見失うという事は、恐らくは[line 3]）
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠ホームズ
+（単に感知に掛からなくなっているか、[r]　或いは、そう。結び付く空間がずれているのか）
+[k]
+
+＠ホームズ
+（たとえば、何かしら[#予定外の干渉]によって、[r]　本来の空間から一時的に移動している可能性は？）
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+[wt 1.0]
+
+[charaFace C 0]
+＠アデーレ
+（ない、とは言い切れません）
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠ホームズ
+（なるほど。では[line 3]）
+[k]
+
+？1：（みんなでこのあたりを探索しよう）
+？2：（手分けして探せるなら、そうすべきかな）
+
+？！
+
+[charaFace I 7]
+＠ホームズ
+（私も賛成だよ。[r]　地域一帯を固まって探るのは非効率だ）
+[k]
+
+＠ホームズ
+（今はともかく時間が惜しい。[r]　二、いや、三班に分かれて探すのがいいだろう）
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace A 0]
+[charaFace J 0]
+[charaFadein A 0.1 2]
+[charaFadein J 0.1 0]
+＠ホームズ
+（神霊カイニス、英霊カリギュラは[r]　それぞれ単騎行動で探索を行ってくれたまえ）
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠B：ホームズ
+（ミズ・宮本は我々の護衛役を頼む）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠アデーレ
+（カイニスさんとカリギュラには、[r]　人工知能の端末をお渡しします）
+[k]
+
+＠アデーレ
+（数メートル距離まで接近すれば、反応が出ます）
+[k]
+
+＠アデーレ
+（人工知能同士は繋がっていますから……[r]　反応があれば、即座に全員に周知されます）
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+＠カイニス
+……チッ。
+[k]
+
+[charaFace A 0]
+＠カイニス
+（しち面倒くせえが、[r]　まだ船を降りたつもりもねえ。やってやンよ）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+＠カリギュラ
+（任された。[r]　余一騎でこの領域の七割を走り尽くそう）
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠カイニス
+（ハッ！　じゃあオレは九割だ！）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠武蔵
+（それじゃ私たちの出る幕がなーい！[r]　あれね、誰かが発見した暁には……）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠マシュ
+（各員直ちに合流！　ですね！）
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠武蔵
+（そゆこと！[r]　では[line 3]各人、いきましょう。散開！）
+[k]
+
+[messageOff]
+[se ad596]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaMove O 0,-500 3.0]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠カイニス
+じゃあなッ！
+[k]
+
+
+[messageOff]
+[se ad73]
+[charaMove A -200,0 0.2]
+[charaFadeout A 0.2]
+[wt 0.8]
+
+
+[charaTalk J]
+[charaFace J 2]
+[charaFadein J 0.1 1]
+＠カリギュラ
+では……ひとまずの、さらばである！
+[k]
+
+
+[messageOff]
+[se ad60]
+[charaMove J 0,-10 0.4]
+[wt 0.3]
+[seStop ad60 0.2]
+[wt 0.6]
+
+[se ad678]
+[effect bit_talk_43h]
+[effectStop bit_talk_43h]
+[charaMove J 0,30 0.2]
+[charaFadeout J 0.2]
+[wt 0.8]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠フォウ
+フォウ……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+＠武蔵
+（カリギュラさん、凄い跳躍！[r]　超高層の屋上から攻めるってコトね）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth D 5]
+[charaDepth C 4]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFace C 0]
+[charaFadein D 0.1 -150,0]
+[charaFadein C 0.1 150,0]
+＠マカリオス
+（カイニスは超高速移動で行ったのか。[r]　それこそ、ヘルメス神もかくやの瞬速ぶりだな）
+[k]
+
+[charaTalk C]
+[charaFace C 5]
+＠アデーレ
+（そろそろ念話の限界時間です。[r]　私たちも、探索を開始しなくては！）
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠武蔵
+（ええ、そうね！　[line 3]でもその前に！）
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 1.0]
+[charaFace B 5]
+[se ad51]
+[wt 0.8]
+
+[charaFace B 2]
+＠武蔵
+マシュ、前方！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠マシュ
+！
+[k]
+
+
+[messageOff]
+[charaFace G 7]
+[se bac170]
+[wt 0.6]
+
+[bgm BGM_EVENT_80 0.1]
+
+
+＠マシュ
+敵性反応を感知しました！[r]オリュンポス正規兵、ならびに敵性特殊幻想種！
+[k]
+
+？1：突破しながら探索開始！
+？2：ひとまず、作戦会議中じゃなくて助かった！
+
+＠マシュ
+はい！　本当に！
+[k]
+
+？！
+
+＠マシュ
+では、正面から突撃しつつ[line 3]
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth K 5]
+[charaDepth G 4]
+
+[se ad658]
+[charaFace K 0]
+[charaFadein K 0.4 1]
+[wt 0.4]
+
+[charaFadeout G 0.4]
+[wt 0.4]
+
+
+[charaTalk on]
+[charaFace K 2]
+＠K：マシュ
+同時に、探索を開始します！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

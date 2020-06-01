@@ -1,0 +1,438 @@
+
+＄03-00-05-26-5-0
+
+
+[soundStopAll]
+
+[charaSet A 1038000 1 イアソン]
+[charaSet B 8001410 1 マシュ]
+[charaSet C 4039002 1 マンドリカルド]
+[charaSet D 4034000 1 バーソロミュー]
+[charaSet E 2038000 1 オリオン]
+[charaSet F 1098182700 1 アトランティス防衛兵]
+[charaSet G 1098181800 1 オデュッセウス]
+[charaSet H 98115300 1 ホームズ]
+
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+
+[cameraMove 0 0,0 1.01]
+
+[scene 85800]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠イアソン
+よし、どうにか合流できそうだ。
+[k]
+
+＠イアソン
+結局のところ、オレたちの誰か一人が[r]オリオンをネメシス島に届けられればそれでいい。
+[k]
+
+[charaFace A 1]
+＠イアソン
+ってことは、[r]まあ当然おまえさんたちも、それに合流だ。
+[k]
+
+？1：了解
+
+[charaFace A 2]
+＠イアソン
+よし、オレはもう早いとこ逃げたいから[r]さっさと行け！
+[k]
+
+？2：イアソンは大丈夫？
+
+[charaFace A 22]
+＠イアソン
+おまえら乗せてる方が危ないに[r]決まってるだろうが！　さっさと行け！
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠マシュ
+はい……イアソンさん、[r]ありがとうございました！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠マンドリカルド
+うっす、イアソン。[r]色々とあんがとな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠イアソン
+さっさと行け、こっちは忙しい。[r]後は“爆弾”が破裂することを祈れ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠マンドリカルド
+なあ、結局その“爆弾”ってのは、[r]どんな代物なんだ？
+[k]
+
+＠マンドリカルド
+っつーか、何で誰にも彼にも[r]秘密にしてたんだ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+＠イアソン
+おまえらの動きで、[r]オデュッセウスに感付かれないためだよ。
+[k]
+
+＠イアソン
+感付かれる確率を１％でも引き下げたかった。[r]それでも成功率は低いがな。
+[k]
+
+[charaFace A 2]
+＠イアソン
+さあ、行け！
+[k]
+
+？1：幸運を！
+？！
+
+[charaFace A 21]
+＠イアソン
+ああ、まったくだ。[r]もうオレにはそれしか残されてないからな！
+[k]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaFace A 13]
+＠イアソン
+……ちっ。[r]まあ、これは読まれるよな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠マシュ
+あ……！？
+[k]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaFace B 15]
+＠マシュ
+マスター！　ロイヤル・フォーチュンとの[r]間に敵船が多数割り込んできています！
+[k]
+
+＠マシュ
+これでは、[r]わたしたちが移動できません！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠イアソン
+おまえらは何としてでも[r]ロイヤル・フォーチュンに向かえ！
+[k]
+
+？1：そう言われても……！
+？！
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 85900]
+[wt 1.0]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠バーソロミュー
+よし、アルゴーが見えてきた！[r]オリオン、援護して欲しい！
+[k]
+
+＠バーソロミュー
+狙うのは敵船中央にある機関及び[r]ビームセイル！
+[k]
+
+＠バーソロミュー
+[&彼:彼女]らの道を切り開こう！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠オリオン
+よしきた！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.2]
+
+[se bac25]
+
+[se bac19]
+[se bac20]
+[wt 1.0]
+
+[se ad609]
+[seVolume ad609 0 0.3]
+[shake 0.01 2 2 1.0]
+[wt 1.4]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[seStop ad609 0.4]
+[wait wipe]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+
+[scene 86000]
+
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠アトランティス防衛兵
+防げ！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+[scene 85900]
+
+[pictureFrame]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠オリオン
+チッ……！[r]ダメだ、時間が掛かるぞコレ！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[scene 86002]
+
+[pictureFrame cut063_cinema]
+[wt 1.0]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+＠オデュッセウス
+当然だ。十隻で進路を固めたからな。[r]これで合流は封じた。
+[k]
+
+＠オデュッセウス
+絶対に仕留めるためだ。[r]さあ、ケルベロスを投入せよ。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_48 1.0 0.5]
+[wait fade]
+
+[charaFadeout G 0.1]
+
+[scene 85800]
+
+[pictureFrame]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_48 1.0 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠イアソン
+くそ、もう目の前だったっつーのに！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_48 1.0]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠ホームズ
+ネモが操船で忙しいため、[r]私から緊急の伝達だ！
+[k]
+
+＠ホームズ
+強力な敵性反応、登録済みデータから[r]抽出、確認[line 3]ケルベロスが来るぞ！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠イアソン
+こちらに乗り込まれたら（オレが）終わりだ！
+[k]
+
+[charaFace A 8]
+＠イアソン
+……向こうに乗り込んで倒せ、[r]そう言ったら怒るか？
+[k]
+
+？1：怒らないよ！
+
+[charaFace A 2]
+＠イアソン
+そうか、ならよし頼む！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠マンドリカルド
+イアソン……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠イアソン
+その目はやめろ！
+[k]
+
+＠イアソン
+別にオレだって自分本位だけで[r]動いている訳じゃない！
+[k]
+
+
+？2：こちらからそう言おうと！
+
+[charaFace A 2]
+＠イアソン
+マジか、無謀だな！[r]いや、無謀なのは全員一緒か！
+[k]
+
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠マンドリカルド
+ま、それはわかってるっすよ！
+[k]
+
+＠マンドリカルド
+ヘファイストス・クリロノミア[line 3][r]最大励起！
+[k]
+
+[messageOff]
+[se ad626]
+[seVolume ad626 0 0.2]
+[se ad429]
+[backEffect bit_talk_charge_red]
+[effect bit_talk_lightning_01r]
+[wt 1.0]
+[seStop ad429 1.0]
+[seStop ad626 1.0]
+[wt 1.0]
+[charaFace C 2]
+＠マンドリカルド
+[line 3]よし、行くぞ！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,269 @@
+
+
+＄94-03-22-06-1-0
+[soundStopAll]
+
+
+[charaSet A 1098162000 1 マシュ]
+[charaSet B 1098161000 1 雀１]
+[charaSet C 1098161100 1 雀２]
+[charaSet D 1098161200 1 雀３]
+[charaSet E 98006200 1 ？？？]
+[charaSet F 1037001 1 紅閻魔]
+[charaSet G 8001410 1 アーマード・マシュ（ゴーグルなし）]
+[imageSet H back10000 1]
+[imageSet I back10000 1]
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+[charaScale H 1.01]
+[charaPut H 1200,1200]
+[charaFadeTime H 0.1 0.4]
+[charaScale I 1.01]
+[charaPut I 1200,1200]
+[charaFadeTime I 0.1 0.0]
+
+[scene 69700]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ふう。二階の窓拭き、[r]これでおしまいですね、先輩。
+[k]
+
+＠マシュ
+[#閻魔亭:えんまてい]の窓は大きく見晴らしがいい分、[r]清掃もたいへんです。
+[k]
+
+？1：ハシゴが必要だもんね
+？2：こういう時、[#雀:すずめ]たちが[#羨:うらや]ましいよね
+
+？！
+
+[charaFace A 13]
+
+＠マシュ
+そうですね。空を飛べる[#雀:すずめ]さんたちだと、[r]高いところの手入れも……おや？[wt 1.5][bgmStop BGM_EVENT_77 0.3]
+[k]
+
+[messageOff]
+
+[se ad226]
+[shake 0.03 3 3 1.5]
+[wt 1.0]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[scene 45810]
+[wt 0.2]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wt 0.2]
+[wait wipe]
+
+[charaTalk off]
+[charaFace B 0]
+[charaFadein B 0.1 -640,-800]
+[charaRollMoveEx B 3.0 -3600 0,200]
+[charaMove B 1200,300 2.0]
+[wt 0.6]
+[charaFace C 0]
+[charaFadein C 0.1 -512,-200]
+[charaRollMoveEx C 7.0 -3600 0,200]
+[charaMove C 1200,50 1.5]
+[wt 2.0]
+
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[scene 69700]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 0.2]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wt 0.2]
+[bgm BGM_EVENT_81 0.1]
+[wait wipe]
+[wt 0.3]
+
+[charaFace A 2]
+
+＠マシュ
+何事ですか！？[r]いま、客間から放り投げられたようですが！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠雀
+あっ、マシュさま！　[%1]さま！[r]ナイスタイミングチュン！
+[k]
+
+＠雀
+お願いチュン、お願いチュン！[r][#鶫:つぐみ]の間に急いでほしいチュン！
+[k]
+
+＠雀
+[#虎名主:とらなぬし]さまがまた暴れ出したチュン！[r]女将に助勢してあげてほしいチュン！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+！　状況は分かりませんが、[r]緊急事態である事は分かりました！
+[k]
+
+＠マシュ
+マスター、急ぎましょう！[r][#鶫:つぐみ]の間は二階の一番奥です！
+[k]
+
+[messageOff]
+[charaFadeout A 0.2]
+[se ad459]
+[wt 0.1]
+[wipeout rightToLeft 0.5 1]
+[wt 0.3]
+[seStop ad459 0.5]
+[wait wipe]
+
+[charaPut H 0,-200]
+[charaTalk depthOff]
+[charaDepth H 0]
+[charaDepth E 1]
+[charaDepth F 2]
+
+[scene 69900]
+[fadeMove black 0.1 0.4]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.2]
+[bgmStop BGM_EVENT_81 0.5]
+[wt 0.6]
+[wipein leftToRight 0.5 1]
+[bgm BGM_EVENT_80 0.1]
+[wt 0.1]
+[seStop ad59 0.2]
+[wait wipe]
+
+＠？？？
+うううう……[r]う゛う゛う゛う゛う゛う゛う゛う゛う゛！
+[k]
+
+＠？？？
+ハラ……減ッタ……[r]喰ワセロ……喰ワセロ……
+[k]
+
+＠？？？
+[f large]人間ノ、指ヲ、喰ワセロォォォ！
+[k]
+
+＠？？？
+左利キ　ノ　人間ガ　イイ！[r]左利キ　ノ　人間ノ　右足ノ　指ガ　イイィィ！
+[k]
+
+[messageOff]
+
+[se ad7]
+[seVolume ad7 0 0.4]
+[se ad85]
+[charaMoveScale E 1.1 0.2]
+[charaMove E 0,7 0.2]
+[wt 0.1]
+[charaFadeout E 0.1]
+[effect bit_talk_claw]
+[wt 0.4]
+[fadeout black 0.2]
+[wait fade]
+[effectStop bit_talk_claw]
+[charaFadeout E 0]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0 1]
+[fadeMove black 0.1 0.4]
+[se bac136]
+[effect bit_talk_h_slash01]
+[wait fade]
+[wt 0.1]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[se ad32]
+[wt 0.4]
+[seStop ad32 0.5]
+[wt 0.5]
+
+[charaFace F 2]
+
+＠紅閻魔
+それはできまちぇん！[r]今まで何の為に耐えてきたのでちか！？
+[k]
+
+？1：助けにきたよ、女将！
+？2：随分マニアックな要求[&だな:だね]！？
+
+？！
+
+[charaFace F 5]
+
+＠紅閻魔
+[%1]様でちか！[r]いいところに来てくれたでち！
+[k]
+
+＠紅閻魔
+このお客様をおとなしくさせる[r]手伝いをお願いしまチュ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠？？？
+人間……人間ノ　匂イ……[r]ヤッパリ　人間ガ　イルジャネェカァ！
+[k]
+
+＠？？？
+[#焦:ジ]ラシヤガッテ、クソ[#雀:スズメ]！[r]喰ワセロ、喰ワセロヨォォオオオ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠G：マシュ
+正体不明のお客さま、きます……！[r]マスター、応戦を！
+[k]
+
+
+[messageOff]
+
+[charaTalk depthOff]
+[charaDepth G 0]
+[charaDepth I 1]
+
+[bgmStop BGM_EVENT_80 0.4]
+[charaPut I 0,-200]
+[charaFadeTime I 0.5 1.0]
+[wt 0.5]
+[soundStopAll]
+[end]

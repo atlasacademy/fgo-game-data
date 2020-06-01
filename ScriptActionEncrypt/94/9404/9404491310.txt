@@ -1,0 +1,1089 @@
+
+
+＄94-04-49-13-1-0
+
+[soundStopAll]
+
+[skip false]
+
+[branchQuestNotClear lblNotClear1 3000320 4]
+[label lblClear1]
+[flag IsGirl true]
+[branch lblIsClearConf1]
+[label lblNotClear1]
+[flag IsGirl false]
+[label lblIsClearConf1]
+
+[skip true]
+
+[charaSet A 7027300 1 アマゾネスＣＥＯ_普通]
+[charaSet B 1098119600 1 アマゾネスＣＥＯ_ろくろ]
+[charaSet C 99502600 1 マシュ]
+[charaSet D 7027002 1 ペンテシレイア]
+[charaSet E 1098124510 1 ダ・ヴィンチ]
+[charaSet F 2035000 1 パリス]
+[charaSet G 3016000 1 ヘクトール]
+[charaSet H 4029001 1 アキレウス]
+[charaSet J 5009000 1 エフェクト用]
+
+[branch lblNotGirl1 IsGirl false]
+[label lblGirl1]
+[charaSet E 1098124510 1 ダ・ヴィンチ]
+[branch lblIsGirlConf1]
+[label lblNotGirl1]
+[charaSet E 98111500 1 ダ・ヴィンチ]
+[label lblIsGirlConf1]
+
+[scene 89703]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.7]
+
+[cameraMove 2.0 -118,0 1.3]
+[wt 2.8]
+[cameraMove 3.2 118,0 1.3]
+[wt 4.0]
+[cameraHome 2.0]
+[wt 3.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+？1：よし、綺麗になった
+？2：いいところだったな……
+？！
+
+[se ade74]
+[seVolume ade74 0 0.6]
+[seVolume ade74 0.7 1.0]
+[wt 1.7]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.4 1]
+[seStop ade74 0.1]
+[wt 0.5]
+
+＠A：アマゾネスＣＥＯ
+まだここにいたのか。
+[k]
+
+[charaFace A 1]
+
+＠A：アマゾネスＣＥＯ
+掃除など、そんなに隅から隅までやらなくても[r]よかったのだぞ。
+[k]
+
+？1：たくさん使わせてもらったので
+？2：感謝の気持ちです
+？！
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth B 1]
+[charaDepth A 2]
+[charaFadeout A 0.2]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠B：アマゾネスＣＥＯ
+そういうものか。きちんと仕事をしてくれただけで[r]こちらとしてはウィンウィンの関係だったのだが……。
+[k]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth B 2]
+[charaFadeout B 0.2]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+まあいい、そろそろ外に出よう。[r]中にいては空間が切り離せないぞ。
+[k]
+
+＠A：アマゾネスＣＥＯ
+私が帰還ポータルをくぐるのと連動して、この……[r]チェイテピラミッド姫路城？　の中に繋げた商品倉庫と
+[k]
+
+＠A：アマゾネスＣＥＯ
+リラクゼーション施設も切り離されるようにセットした。
+[k]
+
+＠A：アマゾネスＣＥＯ
+巻き込まれたおまえが一人、遠く離れたうちの[r]本社のほうに来て取り残されることになったとしても、
+[k]
+
+[charaFace A 1]
+
+＠A：アマゾネスＣＥＯ
+私としては[line 3][r]それならそれで、という感じなのだがな？
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[wait fade]
+[charaFadeout A 0.1]
+[charaTalk depthOn]
+[scene 90100]
+[wt 0.5]
+[fadein black 1.2]
+[wait fade]
+
+[charaPut J 1]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠マシュ
+あ、いらっしゃったようですよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠ペンテシレイア
+来たか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+おや、この銀河の私。[r]この[&彼:彼女]だけでなく、おまえも見送りに？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 0]
+[branch lblNotGirl2 IsGirl false]
+[label lblGirl2]
+[charaFadein E 0.1 1]
+[branch lblIsGirlConf2]
+[label lblNotGirl2]
+[charaFadein E 0.1 0,-90]
+[label lblIsGirlConf2]
+
+＠ダ・ヴィンチ
+ま、誰が一番代表としてふさわしいかって言ったら、[r][%1][&君:ちゃん]以外では
+[k]
+
+＠ダ・ヴィンチ
+間違いなく彼女だからね。
+[k]
+
+[branch lblNotGirl3 IsGirl false]
+[label lblGirl3]
+[charaFace E 17]
+[branch lblIsGirlConf3]
+[label lblNotGirl3]
+[charaFace E 5]
+[label lblIsGirlConf3]
+
+＠ダ・ヴィンチ
+……他にも覗き見してる誰かがいるかもしれないけど。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 0]
+[charaFace A 11]
+[charaFadein A 0.1 2]
+
+＠ペンテシレイア
+誤解するな。見送りなどという[r]軟弱で女々しい行為をしにきたわけではない。
+[k]
+
+＠ペンテシレイア
+私はアマゾネスの女王として、[r]大事なことを言い忘れていたのに気付いただけだ。
+[k]
+
+＠A：アマゾネスＣＥＯ
+ふむ？[r]迷惑料がわりのリソースなら既に受け取っているぞ。
+[k]
+
+？1：迷惑料なんて払ってたんだ
+？！
+
+[charaFace D 3]
+
+＠ペンテシレイア
+何かの判断を間違えたならば素直に認める。[r]それがよき女王だ。
+[k]
+
+[charaFace D 9]
+
+＠ペンテシレイア
+自分の非を認めぬ王族に支配された国は[r]遠からず滅びるだろう。
+[k]
+
+＠A：アマゾネスＣＥＯ
+ＣＥＯ的にも同感である。[r]それで、言い忘れていたこととは？
+[k]
+
+[charaFace D 0]
+
+＠ペンテシレイア
+うむ。よく考えれば、貴様の世界……銀河か？　にも、[r]アキレウス的な男はいるはずだな。
+[k]
+
+＠ペンテシレイア
+貴様が私の世界のヤツを許せなかったように、私も[r]貴様の世界だからといってヤツを見逃すつもりはない。
+[k]
+
+＠ペンテシレイア
+けっして許せん。恥辱は[#雪:そそ]がねばならん。[r][#故:ゆえ]にだ。そちらの対処は任せるぞ。
+[k]
+
+＠A：アマゾネスＣＥＯ
+そんなことか。言うまでもなく当然のコンセンサスだ。
+[k]
+
+＠A：アマゾネスＣＥＯ
+言葉を返すぞ。そちらはそちらのヤツを任せる。[r]必ず殺すと書いて必殺である。
+[k]
+
+[charaFace D 8]
+
+＠ペンテシレイア
+ああ。やるべきことが今までと変わったわけではないが、[r]女王として誓おう。
+[k]
+
+＠A：アマゾネスＣＥＯ
+では私もＣＥＯとして約束すべきだな。[r]あとで合意書を送付するので目を通しておいてくれ。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠マシュ
+どこの世界でも、狙われるあの方が大変そうだということ[r]だけはわかりますね……。
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[bgmStop BGM_EVENT_2 1.2]
+[wait fade]
+[charaFadeout C 0.1]
+[charaPut J 1200,1200]
+[scene 49100]
+[wt 1.0]
+[fadein black 1.2]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠パリス
+うんうん。もっと大変になっちゃえばいいんです。[r]いい気味です！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠ヘクトール
+しかしなあ。
+[k]
+
+＠ヘクトール
+真面目にもう一人の自分と向き合うことで、[r]何かあいつ自身の救いになればと考えたが。
+[k]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaFace G 4]
+
+＠ヘクトール
+おこがましかったかもしれん。
+[k]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠ヘクトール
+冷静になって考えたら、あいつの中身以外の状況は[r]あんまり変わってない気がするな……。
+[k]
+
+＠ヘクトール
+最低限の目的は果たせたと言えばそれまでだから、[r]別にいいっちゃいいんだけどよ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0]
+[charaFace G 4]
+[charaFadein G 0.1 2]
+
+＠パリス
+兄さんは……ペンテシレイアさんに、[r]救われてほしいんですか？
+[k]
+
+[charaFace G 0]
+
+＠ヘクトール
+どうだろう。結局、何が救いなのかを決めるのは[r]ペンテシレイア自身だもんなあ。
+[k]
+
+＠ヘクトール
+そんな当たり前の結論がわかったからこその[r]おこがましさだよ。
+[k]
+
+＠ヘクトール
+だからやっぱり俺としては、[r]単純に借りを返しただけ、の話になるのさ。
+[k]
+
+＠パリス
+そうですね。確かに僕たちは彼女に借りがあります。
+[k]
+
+＠パリス
+兄さんがアキレウスに殺されてから、僕も……[r]トロイアのみんなも、どれだけ気持ちが沈んだか。
+[k]
+
+＠パリス
+そして、そのとき駆けつけてくれた黄金の女戦士たちに、[r]どれだけ勇気づけられたか。
+[k]
+
+[charaFace G 1]
+
+＠ヘクトール
+アカイアの戦力のことはわかってたはずなのにな。
+[k]
+
+＠ヘクトール
+罪滅ぼしの神託を愚直に守って、決して多くない手勢で[r]援軍に来てくれた……不器用すぎるぜ、まったく。
+[k]
+
+[charaFace G 0]
+
+＠ヘクトール
+うん。俺はそんな、[r]とことん不器用で愚直な恩人の代わりに、
+[k]
+
+＠ヘクトール
+[#何かの救いを発生させるかもしれない小細工]に必要だった[r]器用さを、お節介ながら提供してみたってだけさ。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaFace H 0]
+[charaFadein H 0.3 -128,0]
+[wt 0.2]
+[charaMove H -64,0 0.7]
+[wt 2.0]
+[charaTalk H]
+
+＠アキレウス
+[line 3]だから、アヴィケブロンを[#唆:そそのか]して[r]手持ち無沙汰だった俺に接触させたってわけか？
+[k]
+
+[charaFace H 5]
+
+＠アキレウス
+しかし、何つーかまわりくどいな、[r]トロイアの連中は！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠パリス
+あーっ！　出たなアキレウス！[r]やっちゃいますか兄さん、アポロン様！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ヘクトール
+止めとけ。ここでドタバタすると[r]下の二人にまた気付かれるぜ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace H 0]
+[charaFadein H 0.1 0]
+[charaFace G 0]
+[charaFadein G 0.1 2]
+
+＠ヘクトール
+[line 3]せっかくだから聞かせろよ。
+[k]
+
+＠ヘクトール
+[#俺]は『事態が動くかもしれない可能性』を提示しただけ。[r]なんでアヴィケブロンに言わせた提案を受け入れた？
+[k]
+
+[charaFace G 1]
+
+＠ヘクトール
+アカイアの英雄であることに疲れて、一介のゴーレムへの[r]変身願望があったってんならそれでもいいが……。
+[k]
+
+＠ヘクトール
+ま、それはないよね。
+[k]
+
+＠アキレウス
+ある訳ねーだろスカポラチンキ。
+[k]
+
+[charaFace G 4]
+
+＠ヘクトール
+それ悪口なの？
+[k]
+
+[charaFace H 4]
+
+＠アキレウス
+……ったく。[r]あっちのアイツを初めて見たから、だよ。
+[k]
+
+[charaFace G 0]
+
+＠ヘクトール
+ＣＥＯのほうか？
+[k]
+
+[charaFace H 0]
+
+＠アキレウス
+ああ。噂にゃ聞いてたが、実際にいるとわかって……。[r]それで、気になったのさ。
+[k]
+
+＠アキレウス
+[#向こうのアイツはどういう立場なんだ]？　ってな。
+[k]
+
+＠アキレウス
+[line 3]ああ、わかってる。態度は変わらない。
+[k]
+
+＠アキレウス
+名前を聞いただけで[#見境:みさかい]をなくして[r]暴れ始めるくらいの関係なのはな。
+[k]
+
+＠アキレウス
+向こうのアイツがどうしてそうなっちまったのかは知らん。[r]だが俺のせいではあるんだろう。
+[k]
+
+＠アキレウス
+だったら知っておくべきかも、と思っただけだ。[r]何があったのか。どうしてああなったのか。
+[k]
+
+＠アキレウス
+だが直接聞けるわけがない。顔を見せただけで[r]暴れられるに決まってる。だから[line 3]
+[k]
+
+＠ヘクトール
+だから近くにいて諜報員の真似事を[r]しようとしたってわけか。
+[k]
+
+＠ヘクトール
+荷運びゴーレムの前なら、マスターとかの会話の中で[r]ぽろっとヒントくらいは言うかもしれないからな。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠パリス
+まるでストーカーですねアポロン様！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠アキレウス
+うっせぇぞボンヤリ弟！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠パリス
+ボンヤリしてない！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace H 0]
+[charaFadein H 0.1 0]
+[charaFace G 1]
+[charaFadein G 0.1 2]
+
+＠ヘクトール
+で、わかったのか？[r]ちなみにオジサンは知らないぞ。
+[k]
+
+＠ヘクトール
+よほどのトップシークレットなんだろ。[r]マスターにだって言ってないはずだ。
+[k]
+
+[charaFace G 0]
+[charaFace H 4]
+
+＠アキレウス
+そうだな。結局、わからなかった。
+[k]
+
+＠アキレウス
+わかったのは、ただ、あれがこっちのペンテシレイアと[r]同等以上の怒りを持っているってことだけだ。
+[k]
+
+＠アキレウス
+話だけじゃなく、実際に殴り合ってわかった。
+[k]
+
+[charaFace H 1]
+
+＠アキレウス
+[line 3]はっ。だからまあ、[r]わかんねぇなりに理解はできたさ。
+[k]
+
+[charaFace H 4]
+
+＠アキレウス
+あっちの俺も、アイツに対して……戦場で辱めるのと[r]同等以上の行為をしちまったんだろう、ってな。
+[k]
+
+[charaFace G 5]
+
+＠ヘクトール
+まさか……後悔してんのか？
+[k]
+
+[charaFace H 5]
+
+[messageOff]
+[charaTalk H]
+[wt 0.7]
+[charaFace H 0]
+
+＠アキレウス
+それこそまさか、だ。
+[k]
+
+＠アキレウス
+俺はどこでも俺なんだろうって感じで、[r]むしろ安心したさ。
+[k]
+
+＠アキレウス
+誰かにとっちゃ迷惑なことかもしれんがな。
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 1.2 1]
+[bgm BGM_EVENT_81 1.2 0.4]
+[wait wipe]
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[scene 90100]
+[charaTalk off]
+[charaFace D 1]
+[charaFadein D 0.1 0]
+[charaFace A 1]
+[charaFadein A 0.1 2]
+[wt 0.5]
+[wipein rectangleStripUpToDown 1.2 1]
+[wait wipe]
+
+[wt 3.0]
+
+[wipeout rectangleStripDownToUp 1.2 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[scene 49100]
+[charaTalk on]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0]
+[charaFace G 0]
+[charaFadein G 0.1 2]
+[wt 0.5]
+[wipein rectangleStripUpToDown 1.2 1]
+[bgm BGM_EVENT_81 1.2 1.0]
+[wait wipe]
+
+＠アキレウス
+どうあれ、俺は後悔も謝罪も抱いていないだろう。
+[k]
+
+＠アキレウス
+ただ……向こうの俺たちも、こっちの俺たちと同じような[r]強度の鎖で繋がっちまってるってことだけはわかった。
+[k]
+
+＠アキレウス
+だったらそれでいい。
+[k]
+
+＠アキレウス
+その鎖を形作るものが憎悪と狂気でも、それが俺たちだ。[r]どこでだってそうだってことがわかっただけで収穫だ。
+[k]
+
+[bgmStop BGM_EVENT_81 3.0]
+
+[charaFace G 1]
+
+＠ヘクトール
+はっ。互いの[#どうしようもなさ]を確認して、[r]安心してんじゃないよ。
+[k]
+
+＠ヘクトール
+そういうのも若さなのか？　いやあ、やっぱり嫌いだねぇ、[r]オジサンは。石投げていいか？
+[k]
+
+＠アキレウス
+長居する気はねぇよ。全部テメェの掌の上で[r]踊ってたわけじゃねえぞ、ってのを言いに来ただけだ。
+[k]
+
+＠アキレウス
+おまえにお膳立てされなくても、俺は俺で[r]きっと同じものを手に入れてただろうからな。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠パリス
+それを負け惜しみっていうんだよーだ！
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠パリス
+兄さん、はい、石はなかったですけど屋根瓦です！[r]どうぞ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ヘクトール
+もういねぇよ。足腰にガタのきたオジサンに[r]足の速さ見せつけるなっつーの。
+[k]
+
+＠アキレウスの声
+[charaTalk H]
+腰はともかく足にガタが来てたらマズいだろ、[r]サーヴァント！
+[k]
+
+[charaFace G 4]
+
+＠ヘクトール
+へいへい。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_7 1.5]
+[wait fade]
+[charaFadeout G 0.1]
+[scene 90100]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFace A 11]
+[charaFadein A 0.1 2]
+
+＠A：アマゾネスＣＥＯ
+さて、それではそろそろ行く。[r]社員たちが帰りを待っているのでな。
+[k]
+
+[charaFace A 1]
+
+＠A：アマゾネスＣＥＯ
+もし女王業ではなくＣＥＯに興味が出てきたら[r]連絡をよこすがいい。
+[k]
+
+＠A：アマゾネスＣＥＯ
+私の自伝を送ってやる。きっと勉強になるぞ。
+[k]
+
+[charaFace D 10]
+
+＠ペンテシレイア
+う、うむ……？
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+それから[line 3][%1]。[r]世話になったな。
+[k]
+
+？1：こちらこそお世話になりました
+？2：いい職業体験ができました
+？！
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth B 1]
+[charaDepth A 2]
+[charaFadeout A 0.2]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：アマゾネスＣＥＯ
+前にも言ったかもしれんが、ピンチこそがチャンス。
+[k]
+
+＠B：アマゾネスＣＥＯ
+この窮地において、ドットコムにはアウトソーシングの[r]解禁というパラダイムシフトが起こった。
+[k]
+
+＠B：アマゾネスＣＥＯ
+他社の力を借りるのもそう悪いものではない、[r]と初めて思えたのだ。感謝する。
+[k]
+
+[charaFace B 1]
+
+＠B：アマゾネスＣＥＯ
+……うん、今後もシステム自体は続けていっても[r]いいかもしれん。
+[k]
+
+＠B：アマゾネスＣＥＯ
+会社だけでなく、個人事業主が相手でも[r]行けそうな気がしてきた。
+[k]
+
+＠B：アマゾネスＣＥＯ
+アマゾネス・フレックス制度とでも名付けるか……。
+[k]
+
+[charaFace B 0]
+
+＠B：アマゾネスＣＥＯ
+謳い文句は『君も好きな時間に好きなだけアマゾネス！』[r]でどうだろうか？
+[k]
+
+？1：じゃあ、いつかまたバイトに行くかも
+？！
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth B 2]
+[charaFadeout B 0.2]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+フフ。駄目だ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaPut J 1]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠マシュ
+ど、どうしてでしょうか？
+[k]
+
+＠マシュ
+事務員として後方支援していただけのわたしですが、[r]先輩の働きはとても真面目なものだったと思います！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+だからこそだ。[r]バイトでは惜しい。
+[k]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+[charaFace A 11]
+
+＠A：アマゾネスＣＥＯ
+[%1]。[r]一度だけ、本気で問う。
+[k]
+
+[messageOff]
+[wt 0.7]
+[charaFace A 0]
+
+＠A：アマゾネスＣＥＯ
+アマゾネス・ドットコムの、[r]正式な社員になる気はないか？
+[k]
+
+[messageOff]
+[wt 1.2]
+
+？1：ありがたいお誘いですけど
+？2：やらなくちゃいけないことがあるから
+？！
+
+[charaFace A 4]
+[wt 0.7]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaFaceFade A 1 0.2]
+[wt 0.1]
+
+＠A：アマゾネスＣＥＯ
+……そうか。
+[k]
+
+＠A：アマゾネスＣＥＯ
+ならば、仕方がないな。残念だ。
+[k]
+
+＠A：アマゾネスＣＥＯ
+では、おまえは今回の働きを鑑みて[r]特別名誉社員ということにしておく。
+[k]
+
+？1：ありがとうございます
+？2：ありがとう……ございます……？
+
+＠A：アマゾネスＣＥＯ
+疑問符はいらんぞ。
+[k]
+
+＠A：アマゾネスＣＥＯ
+採用試験なしでいつでも現場に復帰できる、[r]銀河でもそうそういないスペシャルな立場だ。喜べ。
+[k]
+
+？！
+
+[charaFace A 11]
+
+＠A：アマゾネスＣＥＯ
+それでは、時間だ。
+[k]
+
+＠A：アマゾネスＣＥＯ
+[line 3]あまり感傷的な事を言うのは柄ではないが。[r]この出来事を、私は忘れないだろう。
+[k]
+
+＠A：アマゾネスＣＥＯ
+次に出る最新の自伝でも大きくページが割かれるであろう[r]事件だったからな、これは。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[branch lblNotGirl4 IsGirl false]
+[label lblGirl4]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+[branch lblIsGirlConf4]
+[label lblNotGirl4]
+[charaFace E 4]
+[charaFadein E 0.1 0,-90]
+[label lblIsGirlConf4]
+
+＠ダ・ヴィンチ
+本当に全員総出で賑やかにワイワイ、みたいな出来事、[r]ありそうであんまりないからねぇ。
+[k]
+
+？1：ちょっと寂しくなります
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠A：アマゾネスＣＥＯ
+ふふ。私も[line 3][wt 0.1][charaFace A 11]いや。
+[k]
+
+
+[bgmStop BGM_EVENT_11 3.0]
+
+[charaFace A 8]
+
+＠A：アマゾネスＣＥＯ
+寂しがる必要はない、[r]インポータントな顧客にして名誉社員よ！
+[k]
+
+[effect bit_talk_06]
+
+[charaFace A 11]
+
+＠A：アマゾネスＣＥＯ
+君が望めば私はいつでも現れる。[r]それが我々だ。
+[k]
+
+[charaFace A 12]
+
+＠A：アマゾネスＣＥＯ
+そう[line 3]アマゾネス・ドットコムはクリック一本、[r]銀河のどこでも迅速お届け、なのだからな！
+[k]
+
+
+＠A：アマゾネスＣＥＯ
+それでは！[r]またのご注文をお待ちしております！
+[k]
+
+[messageOff]
+[charaFace A 0]
+[wt 2.0]
+[distortionstart 0.0 0.5 0.6 0.0 0.0 100.0]
+[distortionstart 1.5 0.5 0.6 0.5 0.3 20.0]
+[wt 0.1]
+[cueSe Servants_202900 bac655]
+[wt 1.0]
+[distortionstop 1.2]
+[wt 0.6]
+[effectStop bit_talk_06]
+[wt 0.1]
+[charaFadeout A 0.4]
+[wait distortion]
+
+
+[wt 3.0]
+
+[fadeout black 1.5]
+[wait fade]
+[wt 2.0]
+[scene 83605]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_45 0.1]
+
+＠
+[align center]～　その後　～[align]
+[k]
+
+＠
+創業以来の窮地に陥ったアマゾネス・ドットコムだが、[r]従業員の復帰により、ほどなくして通常営業を再開。
+[k]
+
+＠
+勢いは落ちるどころか、他社との連携を解禁した[r]アマゾネス・ドットコムはそれ以降もさらなる成長を続けた。
+[k]
+
+＠
+革新的で時代性の高い様々なサービスを取り入れつつ、[r]カスタマーのニーズに合致した魅力的な品揃えを維持拡大。
+[k]
+
+＠
+そして配達経路の安定確保が配達員の運用リソースに[r]おいても重要だと考えたアマゾネスＣＥＯは、
+[k]
+
+＠
+銀河ハイウェイの買収事業にも乗り出す。
+[k]
+
+＠
+専門家の誰しもが不可能だと首を横に振ったその挑戦を[r]圧倒的な筋肉量で成し遂げた彼女らはさらに成長。
+[k]
+
+＠
+サーヴァント・ユニヴァースにおいて今まで以上の[r]影響を及ぼす勢力へとなっていくのであるが[line 3]
+[k]
+
+＠
+それはまた、別の話である。
+[k]
+
+
+[messageOff]
+[wt 2.0]
+[fadeout black 3.0]
+[bgmStop BGM_EVENT_45 3.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

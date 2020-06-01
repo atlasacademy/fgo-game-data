@@ -1,0 +1,659 @@
+
+＄03-00-03-13-2-0
+
+[soundStopAll]
+
+[charaSet A 8001400 1 ゴーグルありマシュ]
+[charaSet B 6011001 1 荊軻]
+[charaSet C 1009001 1 モードレッド]
+[charaSet D 7005001 1 スパルタクス]
+[charaSet E 1098158800 1 農夫Ａ]
+[charaSet F 1098158810 1 農夫Ｂ]
+[charaSet G 1098159000 1 少年]
+[charaSet H 98115000 1 エフェクト用]
+
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 65501]
+
+[fadein black 1.0]
+[wait fade]
+
+[se bac150]
+[charaPut H 200,100]
+[charaEffect H bit_talk_14]
+[wt 0.1]
+[se bac149]
+[charaPut H 0,-50]
+[charaEffect H bit_talk_14]
+[wt 0.1]
+[se bac150]
+[charaPut H -100,150]
+[charaEffect H bit_talk_14]
+[wt 0.5]
+
+[se ad170]
+[charaPut H 1]
+[charaEffect H bit_talk_kengekiall01]
+[wt 0.2]
+[se ad32]
+[wt 0.3]
+[se ad170]
+[wt 0.2]
+[charaPut H 1200,1200]
+
+[wt 0.4]
+
+[charaTalk off]
+[se ad671]
+[wt 0.2]
+[charaScale B 1.1]
+[charaScale C 1.1]
+
+[charaFace B 5]
+[charaFace C 5]
+[charaFadein C 0.2 256,-15]
+[charaFadein B 0.2 -256,-15]
+
+[charaMoveScale B 1.0 0.3]
+[charaMoveScale C 1.0 0.3]
+
+[wt 0.5]
+[charaTalk on]
+[charaTalk B]
+[charaFace B 2]
+
+＠荊軻
+モードレッド！[r]膝を折らせて分からせるという話だったな！
+[k]
+
+[charaFace C 0]
+
+＠モードレッド
+ああ、それが？
+[k]
+
+＠荊軻
+こいつ膝を折るどころか、打てば打つほど[#昂:たか]ぶり励むぞ！[r]言いたくはないが気色悪い！　どうするのだ！？
+[k]
+
+[charaFace C 1]
+
+＠モードレッド
+ああ、超楽しいよな！　底抜けの闘志だ。[r]浴びせられるだけでゾクゾクする！
+[k]
+
+[charaFace B 4]
+
+＠荊軻
+うわぁ……やはり君もバーサーカーだろ。[r]セイバーなんて嘘だろ。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠スパルタクス
+お[messageShake 0.03 2 2 0.6]お、快なり！　この逆境、この痛み！[r]不屈の力が泉のごとく湧き上がる！
+[k]
+
+[messageShakeStop]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 1.0 0.6]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠少年
+頑張って、スパルタクス！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFace F 3]
+[charaFadein E 0.1 2]
+[charaFadein F 0.1 0]
+＠農夫Ａ
+しかしなんでスパルタクスの旦那は[r][#姐:ねえ]さんらと喧嘩してるんだ？
+[k]
+
+＠農夫Ｂ
+さあ……
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[fadeout 800000 0.4]
+[wt 0.2]
+[se ad231]
+[wait fade]
+
+[fadein 800000 1.0]
+[seStop ade103]
+[wait fade]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠A：マシュ
+このままじゃマスターの体力が保ちません。
+[k]
+
+？1：本気できつい……熱も出てきた……
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠荊軻
+駄目だ、あいつらマスターの魔力を[r]吸い上げてるってこと完全に忘れてる。
+[k]
+
+[charaFace B 2]
+＠荊軻
+このままじゃ、真っ先に倒れるのは[r][%1]だ……ああもう！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？2：……でもスパもモーさんも楽しそう
+
+[charaFace A 14]
+＠A：マシュ
+今回は自重しましょう！[r]マスターの体温が38度に達していますので！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？！
+
+[charaSet E 3031001 1 哪吒]
+[charaSet F 98002000 1 フォウ]
+[charaSet G 8001410 1 マシュ]
+
+[bgmStop BGM_EVENT_80 1.5]
+[cueSe NoblePhantasm_303100 NP_303100_3]
+[cueSeVolume NP_303100_3 0 0]
+[cueSeVolume NP_303100_3 1.5 1.0]
+[wt 1.5]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.4 15,0]
+[charaMove E 1 0.3]
+[wt 0.4]
+＠哪吒
+暫く、暫くーーー！
+[k]
+
+＠哪吒
+大変！　非常事態！[r]戦ってる場合じゃない！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaMoveReturn F 0,30 0.2]
+＠フォウ
+フォウ、フォウ、フォーウ！[wt 0.2][charaMoveReturn F 0,30 0.2]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠荊軻
+哪吒！？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaTalk depthOff]
+
+[charaDepth A 2]
+[charaDepth G 1]
+
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+[wt 0.1]
+
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+[wt 0.5]
+
+[charaFadeout A 0.4]
+[wt 0.2]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+
+[charaTalk on]
+[charaTalk G]
+
+＠マシュ
+それにフォウさんも！？　なぜここに？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠モードレッド
+どういうこった？　おまえは留守番役だろ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠哪吒
+秦良玉、裏切った。シャドウ・ボーダー盗まれた。[r]ホームズ、ボクにこれを持てと……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠荊軻
+霊基グラフ！？[r]じゃあ本当にボーダーは……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠モードレッド
+おい！　おまえが付いていながらなんてザマだ！[r]みすみす敵に城を奪われたってのか！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠哪吒
+……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠荊軻
+やめろモードレッド。[r]哪吒だって残って戦いたかった筈だ。
+[k]
+
+＠荊軻
+だがホームズは[%1]の[r]手元に霊基グラフを届けるのを優先した。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠スパルタクス
+然り。おそらく敵はシャドウ・ボーダーそのものを[r]盾にしていたのだろう。
+[k]
+
+＠スパルタクス
+[#叛逆:はんぎゃく]すれば守るべき者もろとも破壊する……[r]圧制者がよくやる手口だ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠モードレッド
+テ[messageShake 0.03 2 2 0.4]メエ荒ぶってんのか冷静なのかどっちだよ！？
+[k]
+
+[messageShakeStop]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠フォウ
+フォーウ、フォー……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+＠マシュ
+ですが、霊基グラフだけあっても[r]この異聞帯では使えません。
+[k]
+
+＠マシュ
+土地の霊脈がこちらに応えてくれない以上、[r]必要な電力が[#賄:まかな]えないので……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠荊軻
+ああ、やはりボーダーを奪われたのはまずい。
+[k]
+
+＠荊軻
+ダ・ヴィンチの小細工だって、[r]あの車内という条件が不可欠だったんだ。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_48 1.0]
+[charaFadeout B 0.1]
+[wt 1.0]
+
+？1：始皇帝、聞こえているの[&か:]？
+？！
+
+[bgm BGM_EVENT_71 0.1]
+
+＠始皇帝
+ああ。[r]大地は全て我が庭なれば。[#喧噪:けんそう]は嫌でも耳に届く。
+[k]
+
+？1：約束が違[&う！:います]
+？！
+
+[charaSet A 7032001 1 項羽]
+
+＠始皇帝
+いかにも。[r]神であれば言葉一つが絶対であり自らを縛る[#枷:かせ]にもなろう。
+[k]
+
+＠始皇帝
+だが朕は人であり、為政者だ。[r]約定よりも国を重んじるのは当然である。
+[k]
+
+＠始皇帝
+なのでシャドウ・ボーダーは奪い、[#其方:そなた]たちは滅殺する。[r][#其方:そなた]らは民を[#脅:おびや]かす害悪と判明したのでな。
+[k]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+
+＠マシュ
+何故ですか？[r]わたしたちが村の人たちに何かしたと？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+＠始皇帝
+無自覚か。無遠慮か。[r]やはり貴様らは『儒』の[#輩:やから]であるな。
+[k]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠荊軻
+……ああ、成る程。
+[k]
+
+＠荊軻
+やはり貴様は始皇帝だな。2200年経っても変わらない。[r]いや、輪をかけて悪辣になった。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFace B 4]
+[charaDepth B 10]
+[charaFadein G 0.1 2]
+[charaFadein B 0.1 0]
+＠マシュ
+どういうことなんです、荊軻さん？
+[k]
+
+
+[charaFace B 5]
+
+＠荊軻
+こいつはな、私が子供に文字を教えたのを怒ってるのさ。[r]それだけで私たちを儒学者だと決めつけた。
+[k]
+
+[charaFace G 6]
+
+＠マシュ
+儒学……
+[k]
+
+[charaFace B 0]
+
+＠荊軻
+仁、義、礼、智、信の五常。[r][#詩:うた]に[#興:おこ]り、礼に立ち、楽に成る。
+[k]
+
+[charaFace B 5]
+
+＠荊軻
+……あの暴君が憎悪して止まなかった在り方だ。
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+＠始皇帝
+[#蒙昧:もうまい]なまま安らかにあるべき民草を、[r]貴様らは儒によって[#惑:まど]わした。
+[k]
+
+＠始皇帝
+まさに儒は悪性の伝染病。[#其方:そなた]らはその病巣である。[r]速やかに切除せねばならぬ。
+[k]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠スパルタクス
+民衆が知識を得ることを、[r]そこまで病的に恐れるか？　暴君よ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+＠始皇帝
+智を得た者は[#惑:まど]う。妄念に囚われ、[r]自他を比し、ままならぬ世に恨みを[#募:つの]らすようになる。
+[k]
+
+＠始皇帝
+その醜悪なる個の自我を廃すればこその我が永続楽土。
+[k]
+
+＠始皇帝
+[#蒙:もう]なるが故に民は安穏と健やかに生きるのだ。
+[k]
+
+＠始皇帝
+それを敢えて[#啓:ひら]こうとする儒者どもの、[r]なんと[#傲岸不遜:ごうがんふそん]なることか！
+[k]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠モードレッド
+民が無知なら治めやすいってだけの[r]テメェの都合だろうがよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠始皇帝
+貴様ら儒者の[#蔓延:はびこ]った世界において、[r]果たしてどれほど長く[#保:も]った平穏があった？
+[k]
+
+＠始皇帝
+智を得た群衆が我を通し、我こそが[#賢:さか]しいと他者を責め、[r]その末に尽きせぬ戦を繰り返す。広まるのはただ嘆きのみ！
+[k]
+
+＠始皇帝
+民の祈りが『英霊』などという抑止力を生じせしめる程の[r][#阿鼻叫喚:あびきょうかん]。衆合地獄。想像するだに身の毛がよだつ。
+[k]
+
+＠始皇帝
+異論があれば申すがいい。[r]我々の世界は万人が慈しみ合える世界だ、とな。
+[k]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠マシュ
+[line 3]それは[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+＠始皇帝
+シャドウ・ボーダーを騙し取るに当たってはもっと周到な[r]手口もあったであろうが、嫌悪が勝った。
+[k]
+
+＠始皇帝
+貴様らは骨も残さず[#焚:ふん]さねばならぬ。[r]跡形もなく坑さねばならぬ。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_71 0.6]
+[wt 1.0]
+
+[se ad710]
+[seVolume ad710 0 0.1]
+[shake 0.02 0 2 0.5]
+[wt 0.1]
+[seVolume ad710 1.2 0.7]
+[wt 0.7]
+[shake 0.05 0 5 1.0]
+[wt 0.5]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.7 1]
+[wt 0.4]
+[seStop ad710 0.2]
+[wt 0.8]
+
+
+？1：[#項羽:こうう]……ッ！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠始皇帝
+さあ[#会稽零式:かいけいぜろしき]。新たなる[#勅:ちょく]だ。儒者どもを[#殲滅:せんめつ]すべし。
+[k]
+
+[se ad714]
+[se ad51]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠項羽
+御意に。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠荊軻
+……なあ[%1]。
+[k]
+
+＠荊軻
+私は君に詫びるべきか？[r][#詩:うた]も文字も知らなかった人々を哀れんだことを。
+[k]
+
+？1：いいや、胸を張っていい！
+？2：良くはなかった、でも悪くもなかった！
+？！
+
+[charaFace B 2]
+
+＠荊軻
+[line 3]ああ！[r]その応えこそ、私たちが築いた道だ！
+[k]
+
+＠荊軻
+過ちを認め、過ちを正す！[r]即ち、“許す”という歩み寄り！
+[k]
+
+＠荊軻
+それだけは、この世界にはないものと知れ！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

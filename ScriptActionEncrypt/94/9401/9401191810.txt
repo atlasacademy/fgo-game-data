@@ -1,0 +1,331 @@
+
+
+＄94-01-19-18-1-0
+[soundStopAll]
+[charaSet A 10002000 1 メルトリリス]
+[charaSet B 1030000 1 鈴鹿御前]
+[charaSet C 10001000 1 パッションリップ]
+[charaSet D 2008001 1 トリスタン]
+[charaSet E 7016001 1 タマモキャット]
+[charaSet F 7016001 1 エフェクト用]
+
+
+[scene 10000]
+[fadein black 1.5]
+[wait fade]
+[charaDepth F 0]
+[charaDepth A 1]
+[charaDepth B 2]
+[charaDepth C 3]
+[charaDepth D 4]
+[charaDepth E 5]
+
+[charaPut F 0,0]
+[charaEffect F bit_talk_43h]
+
+[se ad75]
+[wt 1.5]
+[charaEffectStop F bit_talk_43h]
+[charaPut F 0,-1000]
+[scene 41000 0.7]
+[wt 2.0]
+[se ad74]
+[shake 0.01 5 5 0.7]
+[wt 0.7]
+
+？1：あいた！？
+
+？！
+
+[messageOff]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[scene 10000]
+[charaEffect F bit_talk_43h]
+[charaPut F 0,0]
+[wt 0.4]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+[se ad75]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.4 1]
+＠トリスタン
+……なんの！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+＠鈴鹿御前
+ちょっとメルト、重いんですけど！？[r]なんで私にひっつくわけ！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠メルトリリス
+仕方ないでしょう、消去法です！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠タマモキャット
+くわー、おのれＢＢ[line 3]！[r]いつまでも落とし穴に落ちるアタシたちと思うなよ[line 2]！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠パッションリップ
+どどど、どいてくださ[line 3]い！[r]下敷きにしちゃうとシャレじゃすみませ[line 2]ん！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[messageOff]
+[charaEffectStop F bit_talk_43h]
+[charaPut F 0,-1000]
+[scene 41000 0.7]
+[se ad74]
+[shake 0.01 5 10 1.0]
+[wt 1.5]
+
+？1：リップ！？
+[bgm BGM_EVENT_2 0.1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-50]
+[se ad7]
+[charaMove C 0,0 0.4]
+＠パッションリップ
+はい！　ご無事でなによりです、[r][%1]さん！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？2：キャット！？
+[bgm BGM_EVENT_2 0.1]
+[se ad7]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠タマモキャット
+ははは、追いついたぞご主人！[r]落下中、無駄に回転した甲斐があったのだな！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠メルトリリス
+そう。全員揃ったのね。[r]強引なのが気になるけど、考えがあっての事でしょう。
+[k]
+
+[charaFace A 6]
+＠メルトリリス
+それじゃ、手早く済ませてしまいましょうか。
+[k]
+
+＠メルトリリス
+ここはクルーエル・シィーナー。[r]私に与えられていたセンチネル用の特区よ。
+[k]
+
+＠メルトリリス
+セラフィックスでは石油を掘る……という作業に[r]見せかけて、[#霊脈:レイライン]を探査していた秘匿施設。
+[k]
+
+＠メルトリリス
+簡単に言うと、地球の脳波を調べていたみたい。[r]足でぶどうを踏んでワインにするように、ね。
+[k]
+
+[charaFace A 1]
+＠メルトリリス
+ま、そのあたりの話はどうでもいいわ。[r]時間も残り少ないし。
+[k]
+
+[bgmStop BGM_EVENT_2 0.7]
+＠メルトリリス
+[#単刀直入:たんとうちょくにゅう]に言うと[line 3][r]私の中に入りなさい、[%1]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+＠タマモキャット
+にゃんと！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠トリスタン
+……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠鈴鹿御前
+（ものすごい切り込みの早さじゃん……[r]　なんかもうシャークって感じじゃん……）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠パッションリップ
+だ、大胆だねメルト……[r]でも、もうちょっとお[#淑:しと]やかじゃなかったかな？
+[k]
+
+？1：えっと……
+？2：……それはどういう？
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[bgm BGM_EVENT_1 0.1]
+
+＠メルトリリス
+あら。他の女にはさんざんしてきたクセに、[r]私が相手だと[#奮:ふる]い立てないのかしら？
+[k]
+
+[charaFace A 0]
+＠メルトリリス
+なんて、言わなくても分かるでしょう。[r]ちゃっかり私用の『鍵』も手に入れているんだから。
+[k]
+
+＠メルトリリス
+ここは私の神殿で、アナタにはＢＢ特製の鍵がある。[r]なら私の心の中に入れる筈よ。
+[k]
+
+＠メルトリリス
+そこで私と戦って、打ち負かして。[r]それが最後にして、決して、アナタがしなかった事だから。
+[k]
+
+？1：…………そうか
+？2：…………メルトがそう言うなら、いいよ
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+＠トリスタン
+いいのですか！？[r]いえ、今の会話で何が分かったと！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠メルトリリス
+そこ、水を差さないで。[r][%1]は分かってないわよ、何も。
+[k]
+
+[charaFace A 0]
+＠メルトリリス
+……ただ私を信じているだけなのよ、コイツ。[r]だから私も説明はしないわ。
+[k]
+
+[charaFace A 1]
+＠メルトリリス
+さ、てっとり早く始めてちょうだい。[r]でも気をつけてね？
+[k]
+
+＠メルトリリス
+体はこの通りボロボロだけど、[r]心の中の私は健在よ？
+[k]
+
+＠メルトリリス
+月の裏側で快楽のアルターエゴとして[r]思うままに振る舞ってきた私が残っている。
+[k]
+
+＠メルトリリス
+本当にどうしようもないほど強敵よ？[r]甘く見て、飲み込まれないよう注意なさいね？
+[k]
+
+？1：……わかった
+
+？2：メルトを甘く見た事なんてないよ
+
+[charaFace A 6]
+＠メルトリリス
+なんだ。それはそれで残念。
+[k]
+
+＠メルトリリス
+これでも蜜の女王なんだから、[r]たまには甘い水に誘惑されてほしかったわ。
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+＠パッションリップ
+……[%1]さん、
+[k]
+
+
+＠パッションリップ
+心の中のメルトを倒せば、メルトに残ったＫＰも[r]消えて、この特区のロックも外れます。
+[k]
+
+
+＠パッションリップ
+それが最後の鍵なんです。[r]だから、メルトをお願いします。
+[k]
+
+？1：もちろん！
+？2：深層落下、スタート……！
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[messageOff]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 0.4]
+[messageOff]
+[bgmStop BGM_EVENT_1 2.0]
+[fadeout white 2.0]
+[wait fade]
+[wt 1.5]
+[soundStopAll]
+[end]
+

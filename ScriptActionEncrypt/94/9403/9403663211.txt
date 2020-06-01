@@ -1,0 +1,371 @@
+
+
+
+
+＄94-03-66-32-1-1
+
+
+
+
+[soundStopAll]
+
+[charaSet A 1098166200 1 トリムマウ]
+[charaSet B 4032000 1 ライネス]
+[charaSet C 5019001 1 エルメロイⅡ世]
+[charaSet D 6015001 1 ケリィ]
+[charaSet E 6039000 1 グレイ]
+[charaSet F 9008000 1 アストライア]
+
+
+
+[scene 10000]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.5]
+[fowardEffect bit_talk_noise_gr]
+[se ad31]
+[wt 0.1]
+[fowardEffectStop bit_talk_noise_gr]
+[seStop ad31]
+[wt 0.3]
+
+[fowardEffect bit_talk_noise_gr]
+[se ad31]
+[wt 0.2]
+[fowardEffectStop bit_talk_noise_gr]
+[seStop ad31]
+[wt 0.2]
+
+[fowardEffect bit_talk_noise_gr]
+[se ad31]
+[wt 0.5]
+
+[fadeout black 0.5]
+[wait fade]
+
+[fowardEffectStop bit_talk_noise_gr]
+
+[scene 10922]
+[wt 0.1]
+
+[fadein black 1.0]
+[seStop ad31 1.0]
+[wait fade]
+
+[wt 0.5]
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠トリムマウ
+小紙片、回収いたしました。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ライネス
+今のは……聖杯と結びついたホムンクルス？[r]第四次聖杯戦争の異説の再現か……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠エルメロイⅡ世
+イリヤスフィール・フォン・アインツベルン……
+[k]
+
+？1：知り合いだったの？
+
+？2：最後の子だけ、前と違ってた気がする
+
+？！
+
+[charaFace C 0]
+
+＠エルメロイⅡ世
+いや、知っている名なんだ。[r]あくまで資料を通じてというだけだが。
+[k]
+
+＠エルメロイⅡ世
+アインツベルンは、冬木の聖杯戦争で[r]御三家と言われていた魔術の大家だからね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ライネス
+兄上は冬木の聖杯戦争を長く調べていたからな。[r]なんというか、私たちにひどく近い再現記録だった。
+[k]
+
+[charaFace B 6]
+
+＠ライネス
+ところで、あなたも何かしら考えていたようだが、[r]ひょっとして、あの時代の冬木の関係者なのかな？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ケリィ
+…………。
+[k]
+
+＠ケリィ
+残念だが、[#この僕]が知るところじゃないな。
+[k]
+
+[messageOff]
+[charaEffect D bit_talk_quickmove]
+[charaSpecialEffect D erasureReverse 1 0.3]
+[se ad73]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠ライネス
+む、逃げた！
+[k]
+
+[charaFace B 0]
+
+＠ライネス
+特異点に[#喚:よ]ばれたサーヴァントということだが、[r]どうも、何か縁がある気がするんだな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠グレイ
+……拙も、そんな気がします。
+[k]
+
+＠グレイ
+小紙片の記録は不思議ですね。[r]何も知らないはずなのに、懐かしく思えたりします。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaChange B 1098164900 0 fade 0.1]
+[wait charaChange B]
+
+＠ライネス
+第四次聖杯戦争だと、若い頃の兄上も参加していたな。[r]どんな気分だ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+
+
+[branchQuestClear fgozero 94003118]
+[branch another]
+[label another]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠エルメロイⅡ世
+……いや、やはり違う世界だ。[r]どんなに私のいる世界と似ていて、
+[k]
+
+＠エルメロイⅡ世
+私の理想に近くても、やはり違う世界だとも。[twt 1.0][charaFace C 1][r]だけど、だからこそ垣間見られてよかった。
+[k]
+
+[branch user_join]
+
+[branch lblNotClear isClear false]
+[label fgozero]
+
+
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠エルメロイⅡ世
+……いや、実はあの異説にも、私が参加したのさ。[r]正確には、あの異説に近い世界だがね。
+[k]
+
+＠エルメロイⅡ世
+マスターはよく知っているだろう。[r]ああ、触れられてよかったとも。
+[k]
+
+[branch user_join]
+
+
+[label user_join]
+
+？1：辛くならない？
+
+[charaFace C 0]
+
+＠エルメロイⅡ世
+そうだな。[r]まるで辛くない、と言えば嘘になる。
+[k]
+
+
+？2：自分の世界がああだったらって思わない？
+
+[charaFace C 0]
+
+＠エルメロイⅡ世
+愚問だ。[r]思うに決まっている。
+[k]
+
+？！
+
+
+＠エルメロイⅡ世
+だが、だとしてもそれは、自分の行動次第で、[r]何かしら世界が変えられるということだろう。
+[k]
+
+[charaFace C 1]
+
+＠エルメロイⅡ世
+失敗しても、成功しても、それが私なんだ。[r]それが分かる機会を得られただけで、幸運だ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠アストライア
+苦労性な考え方ですわね。[r]さあ、早く次に行きますわよ！[charaFace F 0]
+[k]
+
+[messageOff]
+[se ad60]
+[wt 0.1]
+[se ad95]
+[wipeout rightToLeft 1.0 1.0]
+[bgmStop BGM_EVENT_70 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[scene 10000]
+[wt 0.6]
+
+[seStop ad95 1.0]
+[seStop ad60 1.0]
+[wt 1.0]
+
+[wipein rightToLeft 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[wipeFilter cinema 0.5 0]
+
+[scene 10922]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_95 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+
+＠ケリィ
+……行ったか。
+[k]
+
+[charaFace D 4]
+
+＠ケリィ
+この僕は何も覚えてない。覚えてるはずもない。[r]そもそも、君たちとの縁などなかった。
+[k]
+
+[charaFace D 0]
+
+＠ケリィ
+だけど、これぐらいはかまわないだろう。[r]僕を知ることなどない、見知らぬ[#女性:ヒト]と少女に。
+[k]
+
+＠ケリィ
+君たちには、花が似合うだろうから。
+[k]
+
+[messageOff]
+
+[charaMove D 0,-60 0.4]
+[wt 0.3]
+[se ad27]
+[seVolume ad27 0 0.5]
+[wt 0.6]
+[charaMove D 0,-50 0.4]
+
+[wt 2.0]
+
+[charaFadeout D 0.4]
+[wt 2.0]
+
+
+
+
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.4 -350,-50]
+[wt 0.4]
+
+＠アストライア
+……………………まったく。
+[k]
+
+[charaFace F 0]
+
+＠アストライア
+……雇い主にぐらい、話せばいいのに。[r]意地っ張りな暗殺者だこと。
+[k]
+
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_95 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

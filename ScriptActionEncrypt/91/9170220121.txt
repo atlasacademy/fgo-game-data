@@ -1,0 +1,576 @@
+
+
+＄91-70-22-01-2-1
+
+[soundStopAll]
+
+[charaSet A 8001002 1 マシュ]
+[charaSet B 98003003 1 Dr.ロマン]
+[charaSet C 7022001 1 茨木童子]
+[charaSet D 98006000 1 通信用ノイズ]
+[charaSet E 2002001 1 ギルガメッシュ]
+[charaSet F 98107600 1 ？？？]
+[charaSet G 6021001 1 酒呑童子]
+
+[charaPut D 1200,1200]
+[charaEffect D bit_talk_10]
+[charaFilter F silhouette 00000080]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 33000]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠ギルガメッシュ
+フハハハハハハ！[r]興が乗ってきた故、鎧も着込んでやろうぞ！
+[k]
+
+＠ギルガメッシュ
+この[#我:オレ]の高貴にして凜乎たる姿、[r]とくとその目に焼き付けるがいい！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠茨木童子
+おのれ……やはり黄金の奴は好かぬ！[r]派手だし、眩しいし、なにやらむかつく！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0 0,-151]
+＠Dr.ロマン
+いや、キミも大概金色メインの配色してるけどね！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut D 1200,1200]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠茨木童子
+上品と言え！　[#吾:われ]の着物は母上が見立ててくれたもの、[r]あのように無闇やたらに輝かぬ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠ギルガメッシュ
+しかし雑種にしてはよく粘る。[r]その根性に褒美を与えて終わりとしよう。
+[k]
+
+＠ギルガメッシュ
+喜べ、貴様らが望んでいた宝物庫の中身を、[r]見せるだけは見せてやろうというのだ。
+[k]
+
+＠ギルガメッシュ
+[line 2][#王の財宝:ゲート・オブ・バビロン]！
+[k]
+
+[scene 10000 2.0]
+[se bac24]
+[messageOff]
+[charaEffect E bit_talk_gate_of_babylone]
+[wt 2.0]
+[se bac35]
+[wt 0.7]
+[se bac25]
+[wt 0.7]
+[charaEffectStop E bit_talk_gate_of_babylone]
+[wt 0.3]
+
+[wipeout rectangleStripLeftToRight 0.1 1.0]
+[wait wipe]
+[charaFadeout E 0.1]
+[scene 33000]
+[wipein rectangleStripRightToLeft 0.1 1.0]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠茨木童子
+[line 2]ここまでか！[r][#已:や]む無しッ！
+[k]
+
+[messageOff]
+[se bac1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+
+[charaDepth C 5]
+[charaDepth A 1]
+[charaFace C 5]
+[charaFace A 7]
+[charaFadein C 0.1 -1024,64]
+[charaFadein A 0.1 1]
+
+[se ad73]
+[seStop ad73 0.4]
+[charaMove C -128,0 0.1]
+
+[se bac245]
+[charaShake A 0.05 4 0 0.4]
+＠マシュ
+……茨木童子さん！？[r]わたしとマスターを掴んで、何を[line 2][charaMove C -128,-20 0.1][charaMove A 0,-20 0.1][wt 0.1][charaSpecialEffect C erasureReverse -128,-20 0.1][charaSpecialEffect A erasureReverse 0,-20 0.1][charaMove C 128,96 0.1][charaMove A 256,96 0.1][se bac1][wait charaSpecialEffect C][wait charaSpecialEffect A][charaFadeout C 0.1][charaFadeout A 0.1][wt 0.4]
+[k]
+
+[messageOff]
+[charaTalk on]
+
+[wipeout rectangleStripDownToUp 0.2 1.0]
+[wait wipe]
+[scene 20320]
+[effect bit_talk_43h]
+[se ad2]
+[seVolume ad2 0 0.5]
+[wipein rectangleStripUpToDown 0.2 1.0]
+[wait wipe]
+
+[shake 0.05 4 4 4.0]
+
+＠マシュ
+[line 2]っ！？
+[k]
+
+
+？1：跳ん、だっ！？
+？2：[&うわわわわ:きゃ[line 3]]っ！？
+
+？！
+
+[effectStop bit_talk_43h]
+[seVolume ad2 0 0.5]
+
+＠茨木童子
+口を閉じろ！　舌を噛むぞ！
+[k]
+
+＠Dr.ロマン
+駄目だ、いくら茨木童子の跳躍が羅生門を飛び越える[r]ほどのものでも、王の財宝の前では致命の追撃が……。
+[k]
+
+[messageOff]
+
+[seStop ad2 0.1]
+[wipeout rectangleStripUpToDown 0.2 1.0]
+[wait wipe]
+
+[scene 32900]
+
+[wipein rectangleStripDownToUp 0.2 1.0]
+[wait wipe]
+
+[effect bit_talk_43h]
+[wt 0.4]
+[effectStop bit_talk_43h]
+[charaTalk off]
+[charaDepth C 5]
+[charaDepth A 1]
+[charaFace C 5]
+[charaFace A 6]
+[charaFadein C 0.1 -128,0]
+[charaFadein A 0.1 1]
+[charaMove C -128,-40 0.1]
+[charaMove A 0,-40 0.1]
+[wait charaMove C]
+[wait charaMove A]
+[se ad144]
+[seVolume ad144 0 0.5]
+[seStop ad144 0.3]
+[se ad223]
+[charaMove C -128,0 0.1]
+[charaMove A 1 0.1]
+[wait charaMove C]
+[wait charaMove A]
+
+[wt 1.0]
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaPut D 1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0 0,-151]
+＠Dr.ロマン
+……追撃が……ない！？
+[k]
+
+＠Dr.ロマン
+これは[line 3]そういう機を捉え、あるいは作り出す[r]茨木童子の『仕切り直し』スキルの発露か！
+[k]
+
+[charaFace B 5]
+＠Dr.ロマン
+頼光四天王の鬼退治から唯一逃げ延びた逸話、渡辺綱に[r]腕を切り落とされても逃げ延びた逸話が昇華されて[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut D 1200,1200]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠茨木童子
+うるさいぞ陰陽師！　こんな時にあのにっくき源氏ども[r]の名を出すな、誰でもいいから殺したくなる！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠マシュ
+話している場合ではないのは同感です！[r]ドクター、レイシフトの準備を！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 33100]
+[wt 1.0]
+
+[fadein black 2.0]
+[wait fade]
+[bgm BGM_EVENT_40 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ギルガメッシュ
+ふん。まさしく獣か。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.7]
+＠？？？
+追っ手をかけますか、ギルガメッシュ王？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+＠ギルガメッシュ
+よい、捨て置け。あれはああいうモノだ。
+[k]
+
+＠ギルガメッシュ
+矜恃も名誉も顧みることなく、ただ生きるために、[r]その他の全てに背を向けられる。
+[k]
+
+＠ギルガメッシュ
+それのなんと醜く、なんと浅ましく、なんと美しいことか。
+[k]
+
+＠ギルガメッシュ
+……思い出した。故に[#我:オレ]はあれを捨て置いた。[r]無理に飼い犬にしても意味は無い。獣は獣で朽ちるが道理よ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠？？？
+はぁ……。では、王の宝物庫を狙ってきた罪については[r]お咎めなしということで？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ギルガメッシュ
+獣と言ったであろう。
+[k]
+
+＠ギルガメッシュ
+あれは宝物庫の肉の匂いに惹かれ、[r]扉の前をうろついていた野犬に等しい。
+[k]
+
+＠ギルガメッシュ
+わざわざ巣穴まで追って殺すこともあるまい[line 2][r]再び来れば容赦なく踏み潰すがな。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_40 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+
+[wt 0.4]
+[effect bit_talk_07_02]
+[se ad12]
+[wt 4]
+[fadeout white 1.0]
+[wait fade]
+
+[cameraMove 0.1 0,0 1.2]
+[wait camera]
+[charaScale G 0.83]
+[charaScale C 0.83]
+[charaDepth G 1]
+[charaDepth C 1]
+
+[scene 10310]
+[wt 2.0]
+
+[fadein white 2.0]
+[wait fade]
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[se ad95]
+[seStop ad95 2.0]
+[charaFadein G 0.7 0,-48]
+[wt 1.0]
+＠酒呑童子
+ふわぁ……退屈でかなわんわぁ。
+[k]
+
+[cameraMove 1.4 -86,0 1.2]
+[charaMove G -76,-48 1.2]
+[charaTalk C]
+[charaFace C 4]
+[se ad95]
+[charaFadein C 2.0 278,-48]
+[seStop ad95 2.0]
+[wt 1.2]
+[wait camera]
+[wt 0.3]
+
+[charaDepth G 1]
+[charaDepth C 9]
+
+[charaTalk G]
+[charaFace G 0]
+＠酒呑童子
+ん、茨木。おかえり。どこ行っとったん？
+[k]
+
+[charaTalk C]
+[charaFace C 3]
+[charaShake C 0.05 2 0 0.4]
+[wt 0.4]
+[charaFace C 4]
+＠茨木童子
+…………。
+[k]
+
+[charaFace G 4]
+＠酒呑童子
+[FFFFFF]？[-]
+[k]
+
+[charaFace C 4]
+＠茨木童子
+すまぬ、酒呑。[r]土産を持って帰ろうと思っていたが……叶わず……。
+[k]
+
+[charaFace G 0]
+＠酒呑童子
+まぁ、どこ行っとったかすらも知らんからなあ。[r]気にせんとき。
+[k]
+
+＠酒呑童子
+それよりも、うち、一人で退屈しとったんや。
+[k]
+
+＠酒呑童子
+旦那はんはおらんし、小僧にちょっかいかけたら[r]案の定逃げられるし、
+[k]
+
+＠酒呑童子
+こんなときに限って、頼光もうちの首を[#狙ってきぃひん]し。
+[k]
+
+＠酒呑童子
+土産言うなら、茨木が帰ってきたんが一番の土産やで。
+[k]
+
+[charaFace C 3]
+＠茨木童子
+！
+[k]
+
+[charaFace G 1]
+＠酒呑童子
+なんかぁ、近いうちにえらく大規模な戦でもありそうな[r]気配やないの。
+[k]
+
+＠酒呑童子
+こら景気付けに飲むしかないで。まぁいつも飲んどるけど。[r]付き合ってや、茨木。
+[k]
+
+[charaFace C 3]
+＠茨木童子
+ああ、うん、その。[r]もちろんだ。
+[k]
+
+[charaFace C 1]
+＠茨木童子
+……もちろん、だ……！
+[k]
+
+[messageOff]
+[fadeout black 0.7]
+[wait fade]
+
+[charaFadeout G 0.1]
+[charaFadeout C 0.1]
+[wt 1.0]
+[cameraHome 0.1]
+[wait camera]
+[charaScale G 1.0]
+[charaScale C 1.0]
+
+[fadein black 0.7]
+[wait fade]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠酒呑童子
+で、今までどこ行っとったん？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠茨木童子
+く……くはは、そうだ、土産はないが土産話はある！[r]聞かせてやろう、[#吾:われ]の大活躍を！
+[k]
+
+＠茨木童子
+[#吾:われ]の所業、まさに鬼！　マスターは泣き叫び、[r]民草どもは怖れ震え、その数は数百、いや数千[line 2]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠酒呑童子
+……？　すんすん。それよりもやな、[r]なんかあんたから知らん鬼の臭いがするんやけど。
+[k]
+
+[charaFace G 4]
+＠酒呑童子
+まさか……寂しいうちをほっといて、[r]他の鬼とよろしくやっとったん違うやろねぇ？
+[k]
+
+＠酒呑童子
+もしそうやったら……うち、泣いてまうわぁ……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+[charaShake C 0.05 4 0 0.4]
+＠茨木童子
+ち、ちちちち違う！　断じて違う！[r]これには理由があってだな！　聞くのだ酒呑！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠酒呑童子
+……よよよ……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+[messageShake 0.05 5 5 1.0]
+＠茨木童子
+しゅ……[#酒呑:しゅてーん]！
+[k]
+
+[messageShakeStop]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[messageOff]
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.7 1]
+[wt 1.2]
+[charaFace G 1]
+＠酒呑童子
+（ああ……やっぱり茨木は、一番の酒の肴やねぇ。[r]　飽きひんわぁ……）
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[soundStopAll]
+[end]

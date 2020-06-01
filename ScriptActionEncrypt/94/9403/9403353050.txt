@@ -1,0 +1,507 @@
+
+
+
+＄94-03-35-30-5-0
+
+[soundStopAll]
+
+[charaSet A 3033001 1 ヒルド]
+[charaSet B 3033001 1 ヒルド_シルエット]
+[charaFilter B silhouette FFFFFFFF]
+
+[charaSet C 3033002 1 スルーズ]
+[charaSet D 3033002 1 スルーズ_シルエット]
+[charaFilter D silhouette FFFFFFFF]
+
+[charaSet E 3033000 1 オルトリンデ]
+[charaSet F 3033000 1 オルトリンデ_シルエット]
+[charaFilter F silhouette FFFFFFFF]
+
+[equipSet H 9806950 1 バレンタイン礼装]
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66800]
+[branch lblConf]
+[label lblNotClear]
+[scene 10400]
+[label lblConf]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad8]
+[wt 1.5]
+
+[se ad95]
+[seVolume ad95 0 0.3]
+[wt 0.5]
+[seVolume ad95 1.5 0.5]
+[wt 2.0]
+[seStop ad95 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠スルーズ
+[tVoice ValVoice_303300 0_V010]
+[line 3]マスター。[wait tVoice]
+[k]
+
+＠スルーズ
+[tVoice ValVoice_303300 0_V020]
+少々、お時間をいただけますか。[wait tVoice]
+[k]
+
+＠スルーズ
+[tVoice ValVoice_303300 0_V030]
+本日が祝祭の日であることは承知しています。[r]その上で、数分、私たちにお時間をいただきたく思います。[wait tVoice]
+[k]
+
+＠スルーズ
+[tVoice ValVoice_303300 0_V040]
+ご判断を。[r]マスター。[wait tVoice]
+[k]
+
+？1：うん、いいよ
+
+[charaFace C 1]
+
+＠スルーズ
+[tVoice ValVoice_303300 0_V050]
+ありがとうございます。[wait tVoice]
+[k]
+
+[charaFace C 0]
+
+？2：許可する……って言えばいいのかな？
+
+＠スルーズ
+[tVoice ValVoice_303300 0_V060]
+はい。承認ありがとうございます。[wait tVoice]
+[k]
+
+？！
+
+＠スルーズ
+[tVoice ValVoice_303300 0_V070]
+では、失礼します。[wait tVoice]
+[k]
+
+[messageOff]
+[se bac24]
+[charaEffect C bit_talk_easy_spell_r]
+[wt 2.0]
+
+[wipeout openEye 0.5 0.7]
+[wait wipe]
+[wt 0.7]
+[wipein openEye 0.3 0.7]
+[wait wipe]
+[wt 0.1]
+[wipeout openEye 0.2 0.5]
+[wait wipe]
+[wt 0.5]
+[wipein openEye 0.5 0.7]
+[wait wipe]
+[wt 1.0]
+
+？1：あれ、眠い……
+？2：これって……
+
+？！
+
+＠スルーズ
+[tVoice ValVoice_303300 0_V080]
+睡眠のルーンを刻みました。ごく軽いものです。[r]数分、眠りの中での接触を行います。[wait tVoice]
+[k]
+
+＠スルーズ
+[tVoice ValVoice_303300 0_V090]
+おやすみなさい。[r]マスター。[wait tVoice]
+[k]
+
+[messageOff]
+[wipeout openEye 1.0 0.7]
+[bgmStop BGM_EVENT_77 2.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[scene 10000]
+
+[wt 1.0]
+
+[wipein openEye 0.5 0.7]
+[wait wipe]
+[wt 1.0]
+
+[charaTalk off]
+
+[charaDepth F 2]
+[charaDepth E 1]
+
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 1.4]
+
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.1]
+[charaFadeout F 0.7]
+[wt 1.0]
+
+＠オルトリンデ
+[tVoice ValVoice_303300 0_V100]
+…………マスター。マスター？[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaDepth B 2]
+[charaDepth A 1]
+
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 1.4]
+
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[charaFadeout B 0.7]
+[wt 1.0]
+
+＠ヒルド
+[tVoice ValVoice_303300 0_V110]
+あ、繋がった。おーい、マスター！[r]見えてる？[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth D 2]
+[charaDepth C 1]
+
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 1.4]
+
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.1]
+[charaFadeout D 0.7]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk C]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠スルーズ
+[tVoice ValVoice_303300 0_V120]
+……失礼しました。[r]お忙しいものと見えたので、時間短縮を考えた次第です。[wait tVoice]
+[k]
+
+＠スルーズ
+[tVoice ValVoice_303300 0_V130]
+現実で私たちの霊基を三つに分割することは[r]可能ですが、貴方及び召喚システムに負担を掛けるもの。[wait tVoice]
+[k]
+
+＠スルーズ
+[tVoice ValVoice_303300 0_V140]
+ですのでこのように。[r]最小の魔力消費で済むよう、精神的な接触で[line 3][wait tVoice]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ヒルド
+[tVoice ValVoice_303300 0_V150]
+難しいことはいいから、ね。[r]時間もないから渡すもの渡しちゃおうよ！[wait tVoice]
+[k]
+
+＠ヒルド
+[tVoice ValVoice_303300 0_V160]
+ブリュンヒルデお姉様にもお渡ししたいし！[r]ほらほら！[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠オルトリンデ
+[tVoice ValVoice_303300 0_V170]
+ええと、マスター。[r]今日は……。[wait tVoice]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ヒルド
+[tVoice ValVoice_303300 0_V180]
+バレンタインデー。だよね？[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠オルトリンデ
+[tVoice ValVoice_303300 0_V190]
+……はい。想いを伝える日だと聞きました。[wait tVoice]
+[k]
+
+
+＠オルトリンデ
+[tVoice ValVoice_303300 0_V200]
+勇士としての魂なのかどうかは分からないけれど、[r]あなたは少なくとも……[wait tVoice]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+
+＠スルーズ
+[tVoice ValVoice_303300 0_V210]
+戦うことで切り[#拓:ひら]く人です。貴方は。[r]そんな貴方に仕えることを、今の私たちは誇りに思う。[wait tVoice]
+[k]
+
+＠スルーズ
+[tVoice ValVoice_303300 0_V220]
+ですからこれは、[r]私たちから貴方への[line 3][wait tVoice]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ヒルド
+[tVoice ValVoice_303300 0_V230]
+贈り物！[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠オルトリンデ
+[tVoice ValVoice_303300 0_V240]
+はい。ささやかなものですが、お納めください。[wait tVoice]
+[k]
+
+[messageOff]
+
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se bas2]
+[charaFace H 0]
+[charaFadein H 0.5 0,-70]
+[wt 2.0]
+
+[charaFadeout H 0.4]
+[wt 0.5]
+
+？1：ありがとう
+
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+[wt 1.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+[wt 1.5]
+
+
+？2：これは、ブリュンヒルデを……？
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠オルトリンデ
+[tVoice ValVoice_303300 0_V250]
+…………はい。そうです。[wait tVoice]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠スルーズ
+[tVoice ValVoice_303300 0_V260]
+私たちは、人のような好き嫌い、[r]優先度を決めることはない戦乙女ではありますが。[wait tVoice]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠ヒルド
+[tVoice ValVoice_303300 0_V270]
+でも、強いて言えば。強いて言えばね。[r]お姉様を愛しているから！[wait tVoice]
+[k]
+
+＠ヒルド
+[tVoice ValVoice_303300 0_V280]
+お姉様を想って作った砂糖菓子！[r]特別に、きみにも同じものをあげるね。[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+？！
+
+＠オルトリンデ
+[tVoice ValVoice_303300 0_V290]
+[line 3]以上です。[r]同じものをマイルームの机に置いておきました。[wait tVoice]
+[k]
+
+
+＠オルトリンデ
+[tVoice ValVoice_303300 0_V300]
+マスター。時間を割いてくれて、ありがとう。[wait tVoice]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠スルーズ
+[tVoice ValVoice_303300 0_V310]
+それでは本日の祝祭。[r]どうか、充実した日となりますように。[wait tVoice]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠ヒルド
+[tVoice ValVoice_303300 0_V320]
+じゃあ、またね！[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout white 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[branchQuestNotClear lblNotClear2 3000303]
+[scene 66800]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10400]
+[label lblConf2]
+
+[wt 0.1]
+
+[wipein openEye 2.0 1.0]
+[wait wipe]
+
+
+[wt 2.0]
+
+[se ad77]
+[wt 1.0]
+
+？1：（机の上を確認する）
+
+？！
+
+[se bas2]
+[charaFace H 0]
+[charaFadein H 0.5 0,-70]
+[wt 2.0]
+
+[charaFadeout H 0.4]
+[wt 0.5]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

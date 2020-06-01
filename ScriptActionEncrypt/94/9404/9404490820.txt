@@ -1,0 +1,1187 @@
+
+
+＄94-04-49-08-2-0
+
+[soundStopAll]
+
+[skip false]
+
+[branchQuestNotClear lblNotClear1 3000320 4]
+[label lblClear1]
+[flag IsGirl true]
+[branch lblIsClearConf1]
+[label lblNotClear1]
+[flag IsGirl false]
+[label lblIsClearConf1]
+
+[skip true]
+
+[charaSet A 6008000 1 コスモティック・ビューティ夫人]
+[charaSet B 7034001 1 サロメ]
+[charaSet C 99502600 1 マシュ]
+[charaSet D 7027300 1 アマゾネスＣＥＯ_普通]
+[charaSet E 1098119600 1 アマゾネスＣＥＯ_ろくろ]
+[charaSet F 98002000 1 フォウ]
+[imageSet H cut147_head 1]
+[charaSet I 6031001 1 刑部姫]
+[charaSet J 5009000 1 エフェクト用]
+
+[branch lblNotGirl1 IsGirl false]
+[label lblGirl1]
+[charaSet G 1098124510 1 ダ・ヴィンチ]
+[branch lblIsGirlConf1]
+[label lblNotGirl1]
+[charaSet G 98111500 1 ダ・ヴィンチ]
+[label lblIsGirlConf1]
+
+[scene 90000]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠コスモティック・ビューティ夫人
+実のところ、その[#髑髏:ドクロ]はなかなかＢＴポイントが[r]高いと思ってはいますわ。
+[k]
+
+＠コスモティック・ビューティ夫人
+スカル柄はロックファッションなどには[r]欠かせないものですから。[#妾:わらわ]の今の服にも合います。
+[k]
+
+＠コスモティック・ビューティ夫人
+ただ、やりすぎると少々下品になってしまうのが注意点。[r]それ以上の首を求めるのはやりすぎというものです。
+[k]
+
+[charaFace A 2]
+
+＠コスモティック・ビューティ夫人
+[#妾:わらわ]のファッションを見て研究なさいませ！
+[k]
+
+[bgmStop BGM_EVENT_24 1.0]
+
+[messageOff]
+[se adm19]
+[fowardEffect bit_talk_valentine_brilliant]
+[charaPut J 1]
+[charaEffect J bit_talk_radiallight01]
+
+[wt 2.0]
+
+[seStop adm19 0.7]
+[fowardEffectStop bit_talk_valentine_brilliant]
+[wt 0.6]
+[charaPut J 1200,1200]
+[charaEffectDestroy J]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 1.2]
+[charaMove B 0,-60 1.0]
+[wt 0.4]
+[charaFadeout B 0.4]
+[wt 0.6]
+[se ad775]
+
+[charaEffect J bit_talk_10_LowLevel]
+
+[wt 1.2]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠コスモティック・ビューティ夫人
+フフフフ！　決まりましたわ！[r]華麗、あまりにも華麗！
+[k]
+
+？1：なんかファッションバトルしてたＣＥＯもいたけど
+？2：とりあえず勝てた……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠サロメ
+ヨカナーンの首……どうして……？[r]頼んだのに……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠マシュ
+もう襲いかかってくる気はないようですが、[r]物凄くしょんぼりしていらっしゃいますね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgmStop BGM_EVENT_2 1.2]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠D：アマゾネスＣＥＯ
+すまない……アマゾネス・ドットコムにも……[r]送れないものくらいは、ある……。
+[k]
+
+[messageOff]
+[wt 0.7]
+[charaFace D 12]
+
+[bgm BGM_EVENT_49 0.1]
+
+＠D：アマゾネスＣＥＯ
+[line 3]いや！
+[k]
+
+＠D：アマゾネスＣＥＯ
+諦めるなＣＥＯ、おまえが会社の力を信じずしてどうする！[r]アマゾネス・ドットコムの可能性は無限だ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth E 2]
+
+[charaTalk E]
+[charaFace B 4]
+[charaFadein B 0.1 0]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+
+＠E：アマゾネスＣＥＯ
+もしもしお客様、このタブレットをごらんください。[r]代わりにこのような商品では……？
+[k]
+
+[charaFace B 1]
+
+＠サロメ
+まあ！　ヨカナーンの首！　欲しいわ、これ！
+[k]
+
+？1：あるの！？
+？！
+
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaShake F 0.07 3 1 0.6]
+
+＠フォウ
+フォウ！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 21]
+[charaFadein D 0.1 1]
+
+＠D：アマゾネスＣＥＯ
+これならばバッチリ配達できます。[r]少々お待ちを。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠サロメ
+うんうん、待ってるわ？　よろしくね。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 0.4]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+＠コスモティック・ビューティ夫人
+まさか本当に生首が商品としてあるわけでは[r]ないですわよね？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠D：アマゾネスＣＥＯ
+できるだけ似たようなものを探して提案した。[r]これだ。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[se ad807]
+[seVolume ad807 0 0.6]
+[wt 0.5]
+[seStop ad807 0.15]
+[wt 0.6]
+[charaFace H 0]
+[charaFadein H 0.5 0,-200]
+[wt 3.2]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[branch lblNotGirl2 IsGirl false]
+[label lblGirl2]
+[charaFace G 31]
+[charaFadein G 0.1 1]
+[branch lblIsGirlConf2]
+[label lblNotGirl2]
+[charaFace G 3]
+[charaFadein G 0.1 0,-90]
+[label lblIsGirlConf2]
+
+＠ダ・ヴィンチ
+ヘアカット練習用のマネキンヘッドかぁ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠D：アマゾネスＣＥＯ
+お客様に寄り添ったこのフレキシブルな提案こそが[r]ＣＥＯの実力である。満足いただけて嬉しい。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠マシュ
+納得できるような、できないような……。[r]いえ、満足されたのならばいいことなのですが。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgmStop BGM_EVENT_49 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠D：アマゾネスＣＥＯ
+それよりも[line 3]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[cameraMove 0.7 0,-10 1.3]
+[wt 1.0]
+[cameraMove 1.5 0,-75 1.3]
+[wt 3.0]
+
+[cameraHome 0.5]
+[wt 0.6]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠D：アマゾネスＣＥＯ
+やはり女神アルテミスの像か。[r]推測は当たっていたようだな……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠マシュ
+黒幕について何か思い至ることなどはありませんか？
+[k]
+
+[charaFace C 12]
+
+＠マシュ
+サロメさんは結局誰かに[#唆:そそのか]されただけで、それが[r]誰なのかも覚えていらっしゃらないようでしたが。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠D：アマゾネスＣＥＯ
+……いや。まだなんとも言えんな。
+[k]
+
+[charaFace D 11]
+
+＠D：アマゾネスＣＥＯ
+とにかく、代わりの商品は例の荷運びゴーレムにでも[r]運ばせるとして、我々は先を急ごう。
+[k]
+
+[charaFace D 12]
+
+＠D：アマゾネスＣＥＯ
+まだまだお客様はこの上に待っている。[r][#登攀:とうはん]、再開だ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠コスモティック・ビューティ夫人
+貴方と小動物くんは今までと同じく、[r]我々がフォローいたしますわ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+
+＠刑部姫
+うんうん、しょうがないから[r]マーちゃんも折り紙乗せたげるー。
+[k]
+
+？1：お手数おかけします……
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠フォウ
+フォウフォウフォーウ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠マシュ
+命綱だけはしっかりとお願いしますね、皆さん……。
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_70 2.0]
+[wait fade]
+[charaFadeout C 0.1]
+[charaPut J 1200,1200]
+[charaEffectDestroy J]
+[scene 90100]
+[wt 1.5]
+[charaSet A 7005001 1 スパルタクス]
+[charaSet B 2030002 1 ケイローン]
+[charaSet C 2005001 1 アタランテ]
+[charaSet D 5007001 1 シェイクスピア]
+[charaSet E 4029001 1 アキレウス]
+[charaSet F 5036001 1 アヴィケブロン]
+[charaSet G 6032000 1 セミラミス]
+[charaSet H 9002001 1 天草四郎]
+[charaSet I 4004001 1 アストルフォ]
+[fadein black 2.0]
+[wait fade]
+
+[wt 1.2]
+
+＠
+[align center]～　一方そのころ　～[align]
+[k]
+
+[messageOff]
+[scene 89703 1.4]
+[wt 3.0]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk I]
+[charaFace A 0]
+[charaFadein A 0.4 0]
+[charaFace I 4]
+[charaFadein I 0.4 2]
+[wt 0.5]
+
+＠アストルフォ
+ねーねー、スパルタクスー。[r]ここ、一応リラクゼーションルームなんだしさー。
+[k]
+
+＠アストルフォ
+リラクゼーション、しないの？
+[k]
+
+＠スパルタクス
+リラクゼーションは圧制者のやるべきこと。[r]私は苦痛に耐える者であれば！
+[k]
+
+[charaFace I 5]
+
+＠アストルフォ
+い、いやまあ確かにある意味そうかもだけど！[r]リラックスすることも戦士に必要なのでは！
+[k]
+
+[charaFace A 2]
+
+＠スパルタクス
+おお、民を虐げるものよ！[r]我が筋肉による[#叛逆:はんぎゃく]を見よ！
+[k]
+
+[charaFace A 1]
+
+＠スパルタクス
+常に耐え、常に鍛えていれば、[r]筋肉痛もまたよし！　ふはははは！
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[se ad57]
+[seVolume ad57 0 0.4]
+[wt 0.4]
+[seStop ad57 0.1]
+[wt 0.5]
+[se ad57]
+[seVolume ad57 0 0.3]
+[wt 0.4]
+[seStop ad57 0.1]
+
+[charaFace I 0]
+
+＠アストルフォ
+……つまり耐えてるのか。[r]今度、肩でも叩いてやろう……。
+[k]
+
+
+＠アストルフォ
+あ、そうだ。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠アストルフォ
+ねーねーねーねー、ちょっと質問なんだけど、[r]いいかな？
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.5]
+
+＠ケイローン
+はいはい、何でしょう？[r]私に答えられるものであれば。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0]
+[charaFace B 0]
+[charaFadein B 0.1 2]
+
+＠アストルフォ
+キミが答えられない質問、[r]あんまりないと思うけど……まあ、それは置いといて。
+[k]
+
+＠アストルフォ
+ボクはヒポグリフでぴゅーんって飛んでいくだけ[r]だけどさ、ケイローンはその馬の足で走るわけだろ？
+[k]
+
+＠アストルフォ
+それってどんぐらいの……うーん、[r]疲れっぷりなのかなって。
+[k]
+
+＠アストルフォ
+やっぱりボクたちが走るより疲れないのかい？
+[k]
+
+[charaFace B 3]
+
+＠ケイローン
+ふふ、どうでしょうね。[r]厳密に言うなら、
+[k]
+
+[charaFace B 0]
+
+＠ケイローン
+私はあなたのような『二足歩行しかしない方々』の[r]感覚を心から理解しているわけではありませんから。
+[k]
+
+＠ケイローン
+私が二本の足で走っているときも、それは本質的には[r]ケンタウロスの足と同じなのです。
+[k]
+
+＠ケイローン
+走りに関してアドバンテージがあるのは確かでしょうが、
+[k]
+
+＠ケイローン
+それが一般人とマラソン選手程度の差異なのか、[r]あるいは徒歩と自動車レベルの差異なのかはわからない、
+[k]
+
+＠ケイローン
+ということですね。
+[k]
+
+[charaFace I 4]
+
+＠アストルフォ
+うーん……？
+[k]
+
+＠ケイローン
+ピンときませんか。[r]そのあたり、あなたはどう思います？
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.5]
+
+＠アタランテ
+さあな。
+[k]
+
+＠アタランテ
+私に言えるのは、いくら走るのが得意でも[r]走れば走っただけ疲れるということだ。（もぐもぐ）
+[k]
+
+＠アタランテ
+しかし心身の健康にはいいだろうし、気分も良い。
+[k]
+
+[charaFace C 1]
+
+＠アタランテ
+お前もヒポグリフをブラダマンテに返して、[r]たまには自分の足で配達したらどうだ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+
+＠アストルフォ
+やだよ無理だよー！　疲れるじゃないか！
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 1]
+[wt 0.5]
+
+＠シェイクスピア
+ハハハ！[r]やはり騎士は何かに乗っておらねば格好がつかぬもの。
+[k]
+
+[charaFace D 3]
+
+＠シェイクスピア
+シャルルマーニュ十二勇士の一人、[r]ゼイゼイと肩で息をしながら徒歩で戦場に辿り着く……
+[k]
+
+[charaFace D 0]
+
+＠シェイクスピア
+あ、待てよ。[r]アストルフォ殿なら、これはこれでいけるのでは？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+＠アストルフォ
+いけないよ！！[r]ボクは常にカッコ可愛い役回りで！
+[k]
+
+[charaFace I 5]
+
+＠アストルフォ
+それより、シェイクスピア。[r]キミは配達しないのかよー。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠シェイクスピア
+吾輩は事務員ですからして。[r]文系サーヴァントの[#適材適所:てきざいてきしょ]ですとも。
+[k]
+
+[charaFace D 3]
+
+＠シェイクスピア
+サボっているわけではないですぞ、どうぞご理解を。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠アストルフォ
+でさ、配達してないといえば……。
+[k]
+
+[charaFace I 5]
+
+＠アストルフォ
+キミ、ここにいていいの？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠アキレウス
+むぐむぐ。美味ぇなこれ……[r]あん？　別にメシ食う間くらいいいだろ。
+[k]
+
+＠アキレウス
+あの小さな[#女将:おかみ]の雀に見張りを頼んでる。[r]逃げなきゃならん誰かの気配がしたら即行で逃げるさ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ケイローン
+ふふ、あなたの仕事は、そうやって懸命に[r]カルデアの平和を維持する事だとも言えるでしょう。
+[k]
+
+[charaFace B 0]
+
+＠ケイローン
+あなたがそうしなければ我々も配達どころでは[r]ないのですから。
+[k]
+
+＠ケイローン
+プラスを生み出すのも、マイナスが発生しないように[r]するのも仕事に変わりはありませんよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠アキレウス
+まあ……良いように解釈すれば[r]そうなるんでしょうがねえ。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.5]
+
+＠アヴィケブロン
+それもまた[#適材適所:てきざいてきしょ]、というものだよ。
+[k]
+
+＠アヴィケブロン
+思うに、アストルフォ。[r]彼はただここに食事をしに来たわけではない。
+[k]
+
+＠アヴィケブロン
+皆が働いている中、[r]部屋で一人隠れているのが申し訳なくなり、
+[k]
+
+＠アヴィケブロン
+旧知に顔を見せて激励でもしようという目的が[r]あったのだと推測するね。
+[k]
+
+＠アヴィケブロン
+配達をしていないのだから[r]それほど[#魔力消費:空　　腹]もないはずだし、
+[k]
+
+＠アヴィケブロン
+ならばわざわざここに来なくても部屋に何かを[r]持ってこさせればそれで済む話だからだ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠アキレウス
+おい…………。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠アストルフォ
+えーっ、そうなんだ？[r]わざわざボクの応援に？
+[k]
+
+[charaFace I 3]
+
+＠アストルフォ
+にひひー、意外と仲間想いなヤツだったんだね、[r]キミってば。
+[k]
+
+[charaFace I 1]
+
+＠アストルフォ
+大丈夫、申し訳なく思う必要なんてないさ！[r]ボクがキミのぶんまでしっかり働いてあげるからね！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠アキレウス
+いやおまえを応援しに来たとは言ってねえぞ！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠アヴィケブロン
+ああ、僕の特製ゴーレムも君のぶんまで働くさ。[r]気にせず君は君のすべきことをするといい。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠アキレウス
+…………。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.4 1]
+[wt 0.5]
+
+＠セミラミス
+どうした、どうした。
+[k]
+
+＠セミラミス
+どこかで見たような見ていないような顔たちが[r]揃って馬鹿話とは。
+[k]
+
+[charaFace G 11]
+
+＠セミラミス
+この右に左に引く手あまたの我と違って、[r]よほどの暇人たちばかりと見える。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠アストルフォ
+セミラミス！[r]意外だ、ちゃんと仕事してるの！？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠セミラミス
+ふん。民のための荷運びなぞ女帝のする事ではないが、[r]マスターの頼みとあってはな。
+[k]
+
+[charaFace G 5]
+
+＠セミラミス
+できぬと思われるのも[#癪:しゃく]だ。
+[k]
+
+[charaFace G 0]
+
+＠セミラミス
+この我の威容を改めて知らしめるべく、[r]暇潰しがてら付き合ってやっているだけよ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アタランテ
+『[#虚栄の空中庭園:ハンギングガーデンズ・オブ・バビロン]』を使っているのか？[r]確かにあれなら誰よりも多くの荷物を運べそうだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth H 1]
+[charaDepth G 2]
+[charaDepth J 3]
+
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 64,0]
+
+＠セミラミス
+う、うむ？　まあ、その通り[line 3]
+[k]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 -384,0]
+[wt 0.5]
+
+＠天草四郎
+ははは、いえいえ。確かに最初は『[#虚栄の空中庭園:ハンギングガーデンズ・オブ・バビロン]』で[r]壮大に運ぼうとしたのですが、
+[k]
+
+＠天草四郎
+当然のように一件目の配達の途中に魔力切れでダウン。[r]それからは使い魔の[#鳩:ピジョン]を利用する形にしていますよ。
+[k]
+
+[charaFace G 2]
+
+＠セミラミス
+なっ、なっ、天草四郎！　どこから生えた！[r]そしていつから見ていた！
+[k]
+
+[charaFace H 1]
+
+＠天草四郎
+ははは、当然サーヴァントなので召喚陣からです。[r]そしていつから見ていたかは秘密です。
+[k]
+
+＠セミラミス
+ええい、相変わらずのすっとぼけか！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+[wt 2.0]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+[wt 2.0]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+[wt 1.2]
+
+[bgmStop BGM_EVENT_2 0.5]
+
+[charaFace G 2]
+
+＠セミラミス
+[f large][messageShake 0.09 7 5 0.3]『[#虚栄の空:ハ ン ギ ン グ ガ ー デ][line 3]！[q]
+
+[wt 1.3]
+
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+
+[bgm BGM_EVENT_27 0.1]
+
+[charaTalk off]
+[charaFace I 2]
+[charaFadein I 0.1 4]
+[charaFace E 2]
+[charaFadein E 0.1 6]
+
+[charaMove I 0 0.2]
+[charaMove E 2 0.2]
+
+[messageShakeStop]
+
+＠アストルフォ＆アキレウス
+照れ隠しで宝具を使うのやめろーーー！
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠セミラミス
+照れておらん！[r]屈辱の帳尻を合わせているだけだ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠アヴィケブロン
+よし、ケイローン。[r]何とかしたまえ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth G 2]
+
+[bgmStop BGM_EVENT_27 1.2]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ケイローン
+……仕方ありません。本人の同意なしにやるのは、[r]本当はよくないのですが。
+[k]
+
+[charaFace B 0]
+
+＠ケイローン
+瞬間的に意識を飛ばせる医療用のツボを、こう。
+[k]
+
+[messageOff]
+[charaMove B -512,0 0.3]
+[wt 0.1]
+[fadeout black 0.3]
+[wait fade]
+[charaFadeout B 0.1]
+[charaTalk off]
+[charaFace G 0]
+[charaFadein G 0 -128,0]
+[wt 0.1]
+[fadein black 0.3]
+[charaFace B 0]
+[charaFadein B 0.1 2]
+[charaMove B 196,0 0.1]
+[wait fade]
+
+[se ad342]
+[seVolume ad342 0 0.6]
+[charaFace G 2]
+[charaShake G 0.08 6 2 0.4]
+
+[wt 0.1]
+[seStop ad342 0.1]
+
+＠セミラミス
+ごっ。
+[k]
+
+
+[messageOff]
+[charaMove G -128,-50 0.4]
+[charaFadeout G 0.4]
+[wt 0.4]
+[se ad775]
+[seVolume ad775 0 0.6]
+[wt 1.2]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠ケイローン
+……という訳で天草四郎殿。[r]後はお任せします。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠天草四郎
+心得ました。[r]では、後は私が何とかします。
+[k]
+
+[charaFace H 1]
+
+＠天草四郎
+目覚めた頃には、落ち着いているでしょう。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 0]
+[charaFace E 4]
+[charaFadein E 0.1 2]
+
+＠アストルフォ
+（膝枕されてると知ったら、[r]　また宝具出すんじゃないかな……）
+[k]
+
+＠アキレウス
+（……まあ、アイツが大丈夫って言うなら[r]　多分大丈夫だろ……）
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+

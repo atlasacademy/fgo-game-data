@@ -1,0 +1,443 @@
+
+＄03-00-04-04-2-1
+
+[soundStopAll]
+
+[charaSet A 8001400 1 マシュ]
+[charaSet B 1098166400 1 哪吒]
+[charaSet C 1019001 1 ラーマ]
+[charaSet D 1098127610 1 ペペロンチーノ]
+[charaSet E 3004001 1 カルナ]
+[charaSet F 98002000 1 フォウ]
+[charaSet G 1098158310 1 キャプテン]
+[charaSet H 98115300 1 ホームズ]
+[charaSet I 1098124510 1 ダ・ヴィンチ]
+[charaSet J 5009000 1 エフェクト用ダミー]
+
+
+
+[scene 10000]
+[bgm BGM_EVENT_24 0.1]
+[fadein black 0.5]
+[wait fade]
+
+[effect bit_talk_kengekiall01]
+[wt 0.1]
+[se ad32]
+[wt 0.3]
+[se ad32]
+[wt 0.2]
+[se ad32]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[scene 27710 0.1]
+[cueSe Servants_103200 bac512]
+[charaTalk A]
+[charaFace A 7]
+[charaScale A 1.2]
+[charaFadein A 0.1 1]
+[charaShake A 0.08 6 2 0.4]
+[charaMoveScale A 1.0 0.3]
+[wt 0.2]
+[cueSeStop bac512 0.4]
+[wt 0.4]
+
+＠マシュ
+っ、強い……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠哪吒
+戦闘順調／勝利は目前。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠ラーマ
+っ、こちらの哪吒より少しだけ喋りは達者なようだが、[r]状況判断が正しいとは思えんな！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠哪吒
+否定／[#哪吒:我]の分析機能に問題はない。
+[k]
+
+[bgm BGM_EVENT_24 0.5 0.4]
+
+[charaFace B 7]
+
+＠哪吒
+む[line 3]？
+[k]
+
+[messageOff]
+[fadeout black 0.3]
+[wait fade]
+[charaFadeout B 0.1]
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 300,-50]
+[wt 0.1]
+[wipeFilter cinema 0.5 0]
+[fadein black 0.3]
+[wait fade]
+
+[wt 1.5]
+
+[charaMove D 400,-50 0.4]
+[charaFadeout D 0.4]
+[wt 1.2]
+
+[fadeout black 0.3]
+[wait fade]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wipeOff]
+[fadein black 0.3]
+[bgm BGM_EVENT_24 0.5 1.0]
+[wait fade]
+
+＠哪吒
+…………。
+[k]
+
+＠哪吒
+優先目的を思い出した。[r]離脱を選択する。
+[k]
+
+[messageOff]
+[charaEffect B bit_talk_quickmove]
+[charaSpecialEffect B erasureReverse 1 0.3]
+[se ad73]
+[cueSe NoblePhantasm_303100 NP_303100_3]
+[cueSeVolume NP_303100_3 0 0.5]
+[wt 1.0]
+[bgmStop BGM_EVENT_24 1.0]
+[wt 2.2]
+
+[charaSet A 8001410 1 マシュ]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ラーマ
+むう。逃げたか。[r]マスターの指示か……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠カルナ
+わからん。だが、あの哪吒はかなりの使い手だった。[r]この地に最適化されていると感じる。
+[k]
+
+＠カルナ
+あのままでは、いずれこちらの誰もが[r]宝具を全力解放する事になっていただろう。
+[k]
+
+＠カルナ
+捜している神のいるこの山を吹き飛ばさずに[r]済んだのは[#僥倖:ぎょうこう]だったのかもしれん。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠フォウ
+フォウ……。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 0.8]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaFace A 4]
+
+＠マシュ
+…………。
+[k]
+
+？1：マシュ……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[se ad13]
+[wt 0.2]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠キャプテン
+……事態は把握しているよ。[bgm BGM_EVENT_41 0.1]
+[k]
+
+＠キャプテン
+どう願おうと、どう祈ろうと、[r]人が潮の満ち引きを止められないように[line 3]
+[k]
+
+＠キャプテン
+受け入れるしかないものというのはある。
+[k]
+
+[charaFace G 4]
+
+＠キャプテン
+彷徨海で出会ってから、彼、もしくは彼女とは[r]それなりに僕も仲良くしていた。
+[k]
+
+＠キャプテン
+ボディの仙術機構に興味を持ったのは事実だけど、[r]どことなく似ている部分もある気がしたから。
+[k]
+
+＠キャプテン
+……だから、わかるよ。[r]哪吒は立派なサーヴァントで、武人だった。
+[k]
+
+＠キャプテン
+きっと覚悟はしている。その必要すらないほどに。[r]キミたちが[#嘆:なげ]いて歩みを止めることこそを気にするだろう。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……はい。そう、ですね……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠キャプテン
+ただ、一つ聞かせてほしい。[r][line 3]意味はあった？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠カルナ
+無論だ。[r]敵の機動力は目を[#瞠:みは]るものだった。
+[k]
+
+＠カルナ
+哪吒が最初に接敵していなければ、オレたちは奇襲を受け、[r]大打撃を与えられていたかもしれん。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠キャプテン
+……キミがそう言うなら真実だろうね、施しの英雄。
+[k]
+
+[charaFace G 1]
+
+＠キャプテン
+帰ってシオンに報告するとき、僕は胸を張って[r]『哪吒は立派に役目を果たした』と伝えるよ。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgmStop BGM_EVENT_41 1.0]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaFaceFade A 0 0.5]
+[wt 0.5]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠マシュ
+……すみません、もう大丈夫です。[r]やるべき事に、戻りましょう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠ホームズ
+ああ。今のサーヴァント、[r]敵方の哪吒の分析はこちらに任せてくれ。
+[k]
+
+＠ホームズ
+あちらには、我々が感じている[line 3]
+[k]
+
+＠ホームズ
+何と言うか、“この世界から[#乖離:かいり]している感覚”[r]の影響を受けている様子はなさそうだった。
+[k]
+
+＠ホームズ
+そこから何かが探れるかもしれない。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ラーマ
+“この世界から乖離している感覚”……か。[r]確かに、言葉にするならそのようなものだな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠ダ・ヴィンチ
+とはいえ、すぐに答えが出るものでもないさ。[r]キミたちは引き続き、この山にいる神の捜索を頼むよ。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgmStop BGM_EVENT_81 2.0]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ラーマ
+よし、それでは行こうではないか。
+[k]
+
+＠ラーマ
+王命だ、元気を出していくぞ。[r]暗い顔をしていても何にもならぬ。
+[k]
+
+＠ラーマ
+思わぬ別れがあれば思わぬ出会いもある。[r]それが人生というものだ。
+[k]
+
+
+＠ラーマ
+ゆくぞマスター、新たな神との出会いは近いぞ！
+[k]
+
+？1：……はい
+？2：頑張って見つけよう！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+
+＠フォウ
+フォウ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい[line 3]マシュ・キリエライト、[r]全力で捜索を再開します！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFace A 4]
+[charaPut A 0,-50]
+[wt 1.0]
+[wipeFilter cinema 0.5 0]
+[fadein black 1.0]
+[wait fade]
+[wt 1.2]
+[charaFace A 8]
+[wt 2.0]
+[charaFace A 7]
+[wt 0.5]
+[charaMove A -256,-50 2.0]
+[se ad666]
+[wt 0.4]
+[charaFadeout A 0.7]
+[wt 0.2]
+
+[messageOff]
+[fadeout black 2.0]
+[seStop ad666 1.2]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]
