@@ -1,0 +1,538 @@
+
+＄94-02-49-03-1-0
+
+
+
+[soundStopAll]
+
+
+
+[charaSet A 10007000 1 "Okita Alter"]
+[charaSet B 6033000 1 "Man in Black Coat"]
+[charaSet C 98025100 1 "Rogue Servant"]
+[charaSet D 98002000 1 "Effect Dummy 1"]
+[charaSet E 98002000 1 "Effect Dummy 2"]
+[charaSet F 98002000 1 "Effect Dummy 3"]
+[charaSet G 1098154400 1 "Man in Black Coat Silhouette"]
+
+[charaDepth C 1]
+[charaDepth F 6]
+
+[bgm BGM_EVENT_90 0.1]
+
+[scene 59300]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+[effect bit_talk_Slash_white_01]
+[se bac143]
+[wt 0.3]
+[charaShake C 0.03 3 3 0.4]
+[wt 0.5]
+
+＠Rogue Servant
+...!?
+[k]
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.4]
+＠G：Man in Black Coat
+Hmph. I don't know if you were some big,[sr]tough Saber in your day, but you're nothing to me.
+[k]
+
+＠G：Man in Black Coat
+You got some nerve, thinking you[sr]could take me on as weak as you are.
+[k]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Rogue Servant
+...!
+[k]
+
+[messageOff]
+[charaPut D 0,200]
+[charaEffect D bit_talk_06b]
+[se bac165]
+[wt 2.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut D 1200,1200]
+
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+＠G：Man in Black Coat
+Oho... So you're trying to use the closest thing you have to a Noble Phantasm.
+[k]
+
+＠G：Man in Black Coat
+Too bad.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaPut D 0,200]
+＠Rogue Servant
+...!
+[k]
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaEffectStop D bit_talk_06b]
+[charaPut D 1200,1200]
+
+
+[charaTalk depthOff]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.2]
+
+[charaEffect E bit_talk_v_slash01]
+[se bac154]
+[wt 0.3]
+[charaMove G 256,0 0.2]
+[charaFadeout E 0.1]
+[wt 0.5]
+[charaFadeout G 0.1]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.2]
+
+
+[charaEffect F bit_talk_ichimon01wh]
+[se bac95]
+[wt 0.3]
+[charaFadeout F 0.1]
+[charaShake C 0.03 4 4 0.4]
+[wt 0.3]
+[se ad341]
+[fowardEffect bit_talk_35]
+[wt 1.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠G：Man in Black Coat
+...I've already learned your technique.
+[k]
+
+[wt 0.1]
+
+[messageOff]
+[se bac127]
+[fadeout black 0.1]
+[wait fade]
+
+[charaFadeout G 0.1]
+
+[scene 10000]
+[wt 0.2]
+
+[fadein black 0.1]
+[wait fade]
+
+[fowardEffect bit_talk_blood_splash]
+[se ad464]
+[wt 0.6]
+
+
+
+[bgmStop BGM_EVENT_90 2.0]
+[wt 2.5]
+
+[fadeout white 2.0]
+[wait fade]
+
+[scene 10001]
+
+[skip false]
+
+[fadein white 0.1]
+[wait fade]
+
+
+
+[input selectBranch]
+[messageOff]
+[skip false]
+[charaSet A 10007000 1 "Okita Alter"]
+[charaSet B 6033000 1 "Man in Black Coat"]
+[charaSet C 98025100 1 "Rogue Servant"]
+[charaSet D 98002000 1 "Effect Dummy 1"]
+[charaSet E 98002000 1 "Effect Dummy 2"]
+[charaSet F 98002000 1 "Effect Dummy 3"]
+[charaSet G 1098154400 1 "Man in Black Coat Silhouette"]
+
+[bgmStop BGM_EVENT_90 0.4]
+
+[charaFadeout G 0.1]
+[charaFadeout C 0.1]
+[charaPut D 2000,2000]
+[charaFadeout D 0.1]
+[charaPut E 2000,2000]
+[charaFadeout E 0.1]
+[charaPut F 2000,2000]
+[charaFadeout F 0.1]
+
+[charaEffectStop D bit_talk_06b]
+[charaEffectStop E bit_talk_v_slash01]
+[charaEffectStop F bit_talk_ichimon01wh]
+
+[scene 10001]
+[wt 0.4]
+[soundStopAll]
+[maskin white 1]
+[wait mask]
+[label selectBranch]
+
+[wt 0.4]
+
+[fowardEffect bit_queststart80107]
+[wait fowardEffect]
+
+[fadeout white 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[fadein white 0.1]
+[wait fade]
+[wt 0.1]
+
+[fadeout black 2.0]
+[wait fade]
+
+[scene 10000]
+[skip true]
+[wt 0.1]
+
+
+
+[scene 59400]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1 1]
+
+[se ad31]
+[wt 0.8]
+[seVolume ad31 0.3 0.5]
+[wt 0.5]
+[seVolume ad31 0.3 0.8]
+[wt 0.5]
+[seVolume ad31 0.3 0.2]
+[wt 0.8]
+
+＠Radio Announcement
+This just in. Early this morning,[sr]the Army's 4th Magecraft Unit announced...
+[k]
+
+＠Radio Announcement
+...that a Holy Grail War has begun[sr]in the Imperial Capital, Tokyo.
+[k]
+
+＠Radio Announcement
+...that a Holy Grail War has begun[sr]in the Imperial Capital, Tokyo.
+[k]
+
+[seStop ad31 0.5]
+[messageOff]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.2]
+＠Okita Alter
+...
+[k]
+
+？1：Huh, it's on the news?
+
+[charaFace A 7]
+
+＠Okita Alter
+...Oh, normally it isn't?[sr]...I see.
+[k]
+
+？2：Do you like listening to the radio?
+
+＠Okita Alter
+...Yes.[sr]...It's also good for learning words.
+[k]
+
+？！
+
+[charaFace A 4]
+＠Okita Alter
+...For some reason, there are many things I don't know.
+[k]
+
+＠Okita Alter
+Servants should have memories of their lives,[sr]but I do not.
+[k]
+
+＠Okita Alter
+Okita Souji... Is that who I am?
+[k]
+
+＠Okita Alter
+And why am I missing the knowledge of this era that the Grail should have given me when I materialized?
+[k]
+
+＠Okita Alter
+I couldn't even speak until a little while ago...
+[k]
+
+＠Okita Alter
+...What am I?
+[k]
+
+？1：Alter...
+
+＠Okita Alter
+...
+[k]
+
+＠Okita Alter
+I don't even know if I'm a Saber.[sr]I think I'm too weak for that.
+[k]
+
+？2：At least you learned quickly, right?
+
+[charaFace A 7]
+＠Okita Alter
+...Hm?[sr]Yes, I guess that's true.
+[k]
+
+[charaFace A 1]
+＠Okita Alter
+Maybe...I'm actually smart?
+[k]
+
+？！
+
+[charaFace A 6]
+＠Okita Alter
+By the way, Master, are you sure you're okay[sr]making a contract with a strange Servant like me?
+[k]
+
+＠Okita Alter
+I'm not even sure if we sealed[sr]our contract properly...
+[k]
+
+？1：I'm sure I can count on you.
+？2：I'm glad I met you.
+
+？！
+
+[charaFace A 7]
+＠Okita Alter
+...!
+[k]
+
+[charaFace A 1]
+＠Okita Alter
+...I see. I'm glad I met you, too.
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.0]
+[charaTalk B]
+[se ade74]
+[seVolume ade74 0 0.1]
+[wt 2.2]
+[seStop ade74 0.4]
+
+[charaTalk A]
+[charaFace A 6]
+＠Okita Alter
+...Hold it.
+[k]
+
+＠Okita Alter
+...Someone's here.
+[k]
+
+[messageOff]
+[wt 0.1]
+[se ade169]
+[seVolume ade169 0 0.3]
+[wt 1.5]
+[seStop ade169 0.4]
+
+？1：Maybe it's a customer?
+？2：Maybe it's Sakamoto?
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.2]
+
+
+[se ad93]
+[wt 1.5]
+[seStop ad93 0.7]
+[wt 0.7]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFilter B normal 00000080]
+[charaFadein B 0.4 1]
+[wt 0.7]
+
+＠Man in Black Coat
+...Pardon me.[sr]Is this the Sakamoto residence?
+[k]
+
+
+？1：...Uh, yes, that's right.
+？2：...I'm afraid Sakamoto isn't here right now.
+
+？！
+
+
+[charaFace B 1]
+＠Man in Black Coat
+I see. Just what I wanted to hear.
+[k]
+
+[charaFace B 6]
+＠Man in Black Coat
+...I am going to kill you now.
+[k]
+
+[bgm BGM_EVENT_24 0.1 1]
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+
+[se ad171]
+[fowardEffect bit_talk_Slash_white_01]
+[wt 0.3]
+
+[se ad32]
+[shake 0.03 3 3 0.7]
+[fowardEffect bit_talk_14]
+[wt 1.0]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠Okita Alter
+What do you think you're doing?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠Man in Black Coat
+What's this? Who are you?[sr]Why are you getting in my way?
+[k]
+
+＠Man in Black Coat
+Ah, the sword...[sr]I take it you are a Saber?
+[k]
+
+？1：An enemy Servant!?
+？2：Alter! Are you okay!?
+
+？！
+
+[charaFace B 0]
+＠Man in Black Coat
+What nonsense.
+[k]
+
+＠Man in Black Coat
+Servants killing each other is the point of a Holy Grail War. Of course I'd start by getting rid of the weaker ones.
+[k]
+
+[charaFace B 7]
+＠Man in Black Coat
+And you ARE weak, aren't you, Saber?[sr]I could tell the moment we crossed blades.
+[k]
+
+＠Man in Black Coat
+Honestly, I can hardly believe you're[sr]a Saber with such pitiful skills.
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠Okita Alter
+...
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠Man in Black Coat
+Haha!
+[k]
+
+＠Man in Black Coat
+So THIS is the Saber? One of the three strongest classes? That's hysterical!
+[k]
+
+[charaFace B 6]
+＠Man in Black Coat
+Talk about a lucky break,[sr]getting you as my first opponent.
+[k]
+
+[charaFace B 2]
+
+＠Man in Black Coat
+NOW DIE!
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]
