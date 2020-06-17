@@ -1,0 +1,88 @@
+
+
+＄91-60-27-01-5-0
+
+
+[soundStopAll]
+
+[scene 20110]
+[charaSet A 98001000 1 Mash]
+[charaSet B 6027000 1 "Wu Zetian"]
+[charaSet C 98115000 1 NPC]
+[charaSet E 1098154600 1 ???]
+
+[messageOff]
+
+[charaTalk A]
+[charaFace A 6]
+
+[seStop ad527 0.1]
+
+[fadein black 1]
+[wait fade]
+[wt 0.1]
+
+
+
+[se ad527]
+[wt 1]
+[seStop ad527 0.1]
+[bgm BGM_EVENT_1 0.1]
+[wt 0.4]
+[charaFadein A 0.4 1]
+[wt 0.5]
+
+＠Mash
+Wh-who's that...?
+[k]
+
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaPut C 1]
+[charaEffect C bit_talk_11]
+[charaTalk E]
+[charaFadein E 0.4 1]
+[wt 1]
+
+？1：What the... What's going on?
+？！
+
+[charaFadeout E 0.1]
+[charaEffectStop C 0 bit_talk_11]
+[wt 0.1]
+[charaPut C 0,-1024]
+
+[bgmStop BGM_EVENT_1 0.3]
+[wt 0.4]
+[bgm BGM_EVENT_3 0.1]
+
+
+
+[charaFace B 4]
+[charaTalk B]
+[charaFadein B 0.1 1]
+
+＠Wu Zetian
+...(Sigh). Now I think I see what is going on here.
+[k]
+
+[charaFace B 0]
+
+＠Wu Zetian
+No need to spell it out for me, Zǐcài and Pá Tù.[sr]...No, Mash and [%1].
+[k]
+
+＠Wu Zetian
+I am aware it is time to put my own affairs in order. Come, we will talk more once this is taken care of.
+[k]
+
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.5]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

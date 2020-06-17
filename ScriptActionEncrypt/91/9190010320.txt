@@ -1,0 +1,99 @@
+
+
+＄91-90-01-03-2-0
+
+
+[soundStopAll]
+
+[charaSet A 9001001 1 Jeanne]
+[charaSet B 5014001 1 Mephistopheles]
+[charaSet C 5014001 1 "Mephistopheles (Enemy)"]
+[charaSet D 98006200 1 "Fodder Enemy Smoke"]
+[charaSet E 98025000 1 "Shadow Servant (Barehanded)"]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 20500]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠Jeanne
+The Lord forgives all sin and wickedness. He rescues the lives that crawl forth from the grave, grieves for them, and takes mercy upon them...
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+[charaSpecialEffect D enemyErasure 1 1.5]
+[se ad42]
+[wait charaSpecialEffect D]
+[wt 1.0]
+
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠Mephistopheles (Enemy)
+My, my, how impressive! It looks like ghosts just aren't enough to put up a decent fight anymore!
+[k]
+
+＠Mephistopheles (Enemy)
+In that case, how about this?[sr]Come on up, anonymous Servants!
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[se ad25]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 1.6]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠Jeanne
+Shadow Servants!
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Mephistopheles
+What, them? Those are just a few shadows[sr]that happened to be hanging around.
+[k]
+
+[charaFace B 2]
+＠Mephistopheles
+They're not even self-aware.[sr]Trust me, we have nothing to worry about!
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

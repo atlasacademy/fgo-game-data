@@ -1,0 +1,385 @@
+
+
+＄91-50-33-01-4-0
+
+[soundStopAll]
+
+[charaSet A 5033001 1 Circe]
+[charaSet B 2005001 1 Atalante]
+[charaSet C 5017000 1 "Medea Lily"]
+[charaSet D 98001000 1 Mash]
+[charaSet E 98006000 1 "Fodder Enemy"]
+[charaSet F 98006000 1 "Fodder Enemy"]
+[charaSet G 98006000 1 "Fodder Enemy"]
+
+
+
+
+[charaDepth F 4]
+[charaDepth G 5]
+[charaDepth C 6]
+
+
+[bgm BGM_EVENT_3 0.1]
+
+[se ad507]
+
+[scene 21200]
+
+[fadein black 1.0]
+[wait fade]
+
+[seVolume ad507 0.5 0.5]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠Atalante
+Haaa!
+[k]
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+
+[fowardEffect bit_talk_38]
+[wt 0.1]
+[shake 0.05 0 4 0]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.1]
+[se bac19]
+[se bac20]
+[wt 0.2]
+[fowardEffectStop bit_talk_38]
+[wt 0.1]
+[shakeStop]
+
+[wt 0.3]
+[charaTalk off]
+[charaFace E 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein E 0.1 0]
+[charaFadein F 0.1 2]
+[charaFadein G 0.1 1]
+[wt 0.1]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[se bac16]
+[wt 0.5]
+[charaSpecialEffect G enemyErasure 1 0.8]
+[wt 0.2]
+[se ad42]
+[wt 0.1]
+[charaSpecialEffect F enemyErasure 1 0.8]
+[wt 0.3]
+[charaSpecialEffect E enemyErasure 1 0.8]
+[wait charaSpecialEffect E]
+[wt 0.5]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠Atalante
+There, that takes care of all[sr]the monsters on the deck!
+[k]
+
+＠Atalante
+Now we just need to take care of the ones[sr]in the hold. What are your orders, Jason!?
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠Mash
+Well, uh, I'm afraid...
+[k]
+
+？1：Jason got hit by a barrel of apples and knocked out...
+？2：Jason died a hero's death in defense of his ship, I hear.
+
+？！
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Atalante
+Again, hmm. Very well then,[sr]we will just have to finish this ourselves.
+[k]
+
+＠Atalante
+Circe...?[sr]...Ah...[wt 0.2][charaFace B 2]
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaSet F 98006200 1 "Fodder Enemy with Miasma"]
+[charaSet G 98006200 1 "Fodder Enemy with Miasma"]
+
+[bgmStop BGM_EVENT_3 1.0]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠Circe
+...So, you've finally shown yourself before me.
+[k]
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[charaTalk off]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 1.0]
+
+[charaFace F 0]
+[charaFace G 0]
+[charaPut F -256,0]
+[charaPut G 256,0]
+[se ad19]
+[charaSpecialEffect F appearance 1 0.8]
+[wt 0.5]
+[charaSpecialEffect G appearance 1 0.8]
+
+[wait charaSpecialEffect F]
+[wait charaSpecialEffect G]
+[wt 1.2]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_5 0.1 1.0]
+
+[charaTalk on]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠Mash
+Huh? Medea's...commanding the curse monsters...?
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠Atalante
+What... What is the meaning of this, Medea...!?
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein C 0.1 1]
+[charaFadein F 0.1 0]
+[charaFadein G 0.1 2]
+＠Medea Lily
+Hello, Circe, Atalante... Did you come here to laugh at me while I was bawling my eyes out?
+[k]
+
+＠Medea Lily
+Or perhaps to admonish me for my sins...?
+[k]
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠Circe
+...Medea...
+[k]
+
+[charaFace A 0]
+＠Circe
+...No, nothing like that.[sr]I'm here to celebrate this new chapter in your life.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein C 0.1 1]
+[charaFadein F 0.1 0]
+[charaFadein G 0.1 2]
+＠Medea Lily
+New chapter...?
+[k]
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Circe
+Just as I will never again be[sr]seen merely as a priestess...
+[k]
+
+＠Circe
+...Medea, you too have become[sr]a woman to be feared as a witch.
+[k]
+
+[charaFace A 1]
+＠Circe
+So of course you're gonna mess other people's lives up something fierce. You can't help it! You're a witch!
+[k]
+
+＠Circe
+Go ahead and seduce any man you want,[sr]then toss him aside when you're done!
+[k]
+
+[charaFace A 0]
+＠Circe
+That's one of the best parts of being a witch, you know. You should be proud that you're worth that.
+[k]
+
+[charaFace A 5]
+＠Circe
+Although, I gotta say...you don't[sr]look all that happy about this to me.
+[k]
+
+＠Circe
+I can see you're smiling while we stand here, but I can also tell you're crying on the inside, and I have to say I don't like that.
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 4]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein C 0.1 1]
+[charaFadein F 0.1 0]
+[charaFadein G 0.1 2]
+＠Medea Lily
+...
+[k]
+
+＠Medea Lily
+These curses come from me...[sr]They're my sins made manifest.
+[k]
+
+[charaFace C 0]
+＠Medea Lily
+So I'll take them with me when I go.
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 0.3]
+[wt 0.4]
+[bgm BGM_EVENT_3 0.1 1.0]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠Atalante
+I cannot let you get away with that, Medea.[sr]Those curses will not stop until they sink this ship.
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein C 0.1 1]
+[charaFadein F 0.1 0]
+[charaFadein G 0.1 2]
+＠Medea Lily
+...
+[k]
+
+？1：Medea...
+？！
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠Circe
+(Sigh)... How many times did I tell you[sr]to learn the medicinal arts too, Medea?
+[k]
+
+[charaFace A 0]
+＠Circe
+Hecate's medicinal arts don't just heal the body.[sr]They have a powerful effect on the heart, too.
+[k]
+
+＠Circe
+But only if you spent time devoting yourself to the study of how the heart works while learning them.
+[k]
+
+＠Circe
+If you do that, it's a wonderful way to tame the monsters lurking in your heart.
+[k]
+
+＠Circe
+For a disciple of Hecate, I gotta say...I'm disappointed in myself for releasing such a half-assed witch into the world.
+[k]
+
+[charaFace A 5]
+＠Circe
+...This is exactly why I didn't want to[sr]take on an apprentice in the first place.
+[k]
+
+
+[charaFace A 2]
+＠Circe
+But, now that we're here, I guess this scuffle's as good a time as any to teach you one last lesson!
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[seStop ad507 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
