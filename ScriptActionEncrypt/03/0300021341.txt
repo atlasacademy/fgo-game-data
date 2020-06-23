@@ -1,0 +1,1361 @@
+
+
+＄03-00-02-13-4-1
+[soundStopAll]
+
+[charaSet A 8001400 1 Mash]
+[charaSet B 2031001 1 Napoleon]
+[charaSet C 3012001 1 Brynhild]
+[charaSet D 3033000 1 Ortlinde]
+[charaSet E 1098124510 1 "Da Vinci"]
+[charaSet F 1033001 1 Sigurd]
+[charaSet G 5009000 1 "Effect Dummy"]
+[charaSet H 5009000 1 "Effect Dummy 2"]
+
+[scene 60900]
+
+[bgm BGM_EVENT_80]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+[cueSe Battle bac169]
+[effect bit_talk_h_slash01]
+[wt 0.2]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[se ad32]
+[fowardEffect bit_talk_14]
+[effectStop bit_talk_h_slash01]
+[wt 0.1]
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[effect bit_talk_kengekiall01]
+[wt 0.1]
+[charaPut G 1]
+[charaEffect G bit_talk_14]
+[se ad32]
+[wt 0.2]
+[charaScale H 1.4]
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_rarrow01br 1 F]
+[wt 0.2]
+[charaPut G 60,10]
+[charaEffect G bit_talk_14]
+[se ad32]
+[wt 0.1]
+[charaPut G -50,-20]
+[charaEffect G bit_talk_14]
+[se ad32]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[charaPut H -50,-100]
+[wt 0.3]
+[cueSe Battle bac423]
+[wt 0.4]
+[charaFadeout B 0.1]
+[wt 0.7]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+[effect bit_talk_gram_slash_02]
+[cueSe Battle bac169]
+[wt 0.4]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaFadeout F 0.1]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 -64,0]
+[se ad32]
+[fowardEffect bit_talk_14 -64,0]
+[effectStop bit_talk_h_slash01]
+[wt 0.1]
+
+[charaShake A 0.05 3 2 0.5]
+[se ad671]
+[charaMove A 16,0 0.2]
+[wt 0.2]
+[seStop ad671 0.2]
+[wt 0.5]
+
+＠Mash
+...!
+[k]
+
+[messageOff]
+[se ade18]
+[seVolume ade18 0.0 0.5]
+[wt 0.5]
+[seStop ade18 0.8]
+[wt 1.0]
+
+[se ad672]
+[charaMove A 6,0 0.3]
+
+[wt 0.5]
+
+[charaFace A 7]
+
+＠Mash
+They're very strong...but not unbeatable!
+[k]
+
+＠Mash
+The Ortinax's output is stable. The auto-maintenance function is still working, and both Brynhild and Napoleon are providing me with extra protection.
+[k]
+
+[charaFace A 2]
+
+＠Mash
+I can still fight! I'm not going to shut down...[sr]Not before we bring down that demonic sword!
+[k]
+
+？1：Let's keep up the pressure!
+？2：Keep fighting!
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠Napoleon
+Right on! I can tell he's feeling the pain now more than ever! But I've still got some concerns!
+[k]
+
+＠Napoleon
+How're you doing, Brynhild!?[sr]Think you can keep this up!?
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[se ad51]
+[wt 0.7]
+
+＠Brynhild
+...That could be a bit difficult.[bgm BGM_EVENT_80 1.0 0.4]
+[k]
+
+[charaFace C 4]
+
+＠Brynhild
+I never thought even Sigurd could be this formidable in a time of war. I thought I understood, but clearly I was mistaken.
+[k]
+
+＠Brynhild
+The Sigurd I knew was from peacetime,[sr]when he never so much as went on an adventure.
+[k]
+
+＠Brynhild
+I never imagined facing off against Sigurd with his demonic sword would be so...daunting...
+[k]
+
+＠Brynhild
+Ahh, what a magnificent hero.[sr]Ahh, what a frightening man.
+[k]
+
+＠Brynhild
+This is no good...[sr]In the face of such a strong, confident warrior...
+[k]
+
+＠Brynhild
+I...
+[k]
+
+[messageOff]
+[charaFace C 0]
+[wt 1.0]
+[charaFace C 2]
+
+[bgm BGM_EVENT_80 0.8 1.0]
+
+＠Brynhild
+I have no choice but to set my soul ablaze.[sr]...Odinseal Prototype, engaged.
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth G 2]
+[charaDepth C 1]
+[charaFace D 5]
+
+[charaPut G 1]
+[charaEffect G bit_talk_charge_blu]
+
+[se ad61]
+[se ad556]
+[seVolume ad556 0 0.6]
+
+[wt 2.0]
+
+[messageOff]
+[seStop ad61 0.5]
+[seStop ad556 0.5]
+[se ad574]
+
+[flashin once 0.1 1.0 FFFFFF80 FFFFFF00]
+[cueSe Battle bac31]
+
+[wt 1.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_charge_blu]
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠Mash
+Wh-where's all this magical energy coming from...!?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Ortlinde
+The Odinseal Prototype.[sr]A power given only to Sister, not us.
+[k]
+
+[charaFace D 6]
+
+＠Ortlinde
+Sister. Sister Brynhild. Would you truly go so far to defeat us...?
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut G 1]
+[charaEffect G bit_talk_10_LowLevel]
+[se ad13]
+[wt 0.3]
+[charaTalk E]
+[charaFace E 22]
+[charaFadein E 0.1 1]
+[wt 0.3]
+
+＠Da Vinci
+I just detected a MASSIVE surge of magical energy![sr]What in the world is going[line 2]Wait, is that...!?
+[k]
+
+＠Da Vinci
+The Odinseal!?[sr]One of the Primordial Runes from the Age of Gods!?
+[k]
+
+＠Da Vinci
+It's got to be hundreds of times more powerful than modern runes, easily. It looks like a spell from the Age of Gods...closer to True Magic than magecraft!
+[k]
+
+[charaFace E 2]
+
+＠Da Vinci
+Using that energy in a spell would be one thing, but if you let it all loose at once, it wouldn't just destroy your Spirit Origin, it would...!
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.2]
+[charaPut G 1200,1200]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠Brynhild
+Annihilate my soul?[sr]Yes, it would.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠Mash
+!
+[k]
+
+？1：Whoa, wait!
+？2：You didn't say anything about that!
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Brynhild
+Thank you, [%1].[sr]You are so very kind.
+[k]
+
+[charaFace C 0]
+
+＠Brynhild
+But...this is what it means for[sr]me to put my life on the line.
+[k]
+
+[charaFace C 5]
+
+＠Brynhild
+Forgive me for making you wait so long, Sigurd. I am finally ready to express my love and kill you once again.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠Sigurd
+...What a shame. Here I thought we could still have some fun together, but then you went and pulled out one of Odin's tricks.
+[k]
+
+[charaFace F 12]
+
+＠Sigurd
+I've had enough.[sr]No more play-fighting. Time to die.
+[k]
+
+[bgmStop BGM_EVENT_80 0.5]
+
+＠G：Ophelia
+Hold it.
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaSet A 8001410 1 Mash]
+[charaSet D 8001400 1 Mash_Goggles]
+[charaSet E 1098123820 1 Ophelia]
+[charaSet G 1098123810 1 Ophelia_Eyepatch]
+[charaSet H 5009000 1 "Effect Dummy"]
+
+[se ad95]
+[seVolume ad95 0 0.2]
+[seVolume ad95 2.0 1.0]
+[wt 1.4]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.4]
+[seStop ad95 0.1]
+[wt 0.5]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠G：Ophelia
+Hold it, Saber.[sr]How many times have I told you?
+[k]
+
+[charaFace G 7]
+
+＠G：Ophelia
+You're only supposed to kill the Servants,[sr]but you were going to kill everyone, weren't you?
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+＠Sigurd
+...Hmph.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠Napoleon
+...Why hello there! If it isn't my beloved Ophelia!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠G：Ophelia
+You haven't changed a bit, Archer.[sr]I should have killed you when we first met.
+[k]
+
+＠G：Ophelia
+But I do commend your efforts,[sr]much as I hate their result.
+[k]
+
+[charaFace G 14]
+
+＠G：Ophelia
+You just had to go and bring[sr]Brynhild here, didn't you?
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠Napoleon
+You honor me, ma chérie. Haha![sr]It's enough to make me cry out of sheer gratitude!
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaDepth D 2]
+[charaDepth A 1]
+
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+[wt 0.2]
+[charaFadeout D 0.4]
+[wt 0.2]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[wt 0.7]
+
+＠Mash
+...Ophelia.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+
+＠G：Ophelia
+...[sr]...
+[k]
+
+[charaFace G 8]
+
+＠G：Ophelia
+I see you're here again, Mash.[sr]Why? Why did you come?
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠Mash
+It's our duty.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠G：Ophelia
+Duty? You mean you feel like you're[sr]honor bound to protect humanity?
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠Mash
+...I don't know. I haven't met enough humans to say whether I feel any obligation to them.
+[k]
+
+[charaFace A 12]
+
+＠Mash
+But...even if we end up destroying[sr]this Lostbelt as a result...
+[k]
+
+[charaFace A 7]
+
+＠Mash
+...we can't give up on our world. Just like the Yaga in their frozen world didn't give up their survival.
+[k]
+
+[charaFace A 16]
+
+＠Mash
+No matter what happens as a result, we've decided to hold our heads high and keep moving forward.
+[k]
+
+？1：(...Yeah. We did, didn't we.)
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+[wt 1.0]
+[charaFace G 8]
+
+＠G：Ophelia
+...Like Master, like Servant, I see.
+[k]
+
+＠G：Ophelia
+I can practically see you buckling under the weight of your guilt, yet you meet my gaze, unblinking.
+[k]
+
+[charaFace G 9]
+
+＠G：Ophelia
+...You really have grown strong, Mash.
+[k]
+
+＠G：Ophelia
+I'm nothing like you.[sr]I could never be like you.
+[k]
+
+[charaFace G 0]
+
+＠G：Ophelia
+But I still cannot step aside. Wodime...
+[k]
+
+[charaFace G 5]
+
+[bgmStop BGM_EVENT_70 0.5]
+
+＠G：Ophelia
+...Lord Kirschtaria made a decision,[sr]and I refuse to betray his faith in me!
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth G 2]
+[charaDepth E 1]
+
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+[wt 0.7]
+
+[se ad661]
+[wt 0.3]
+
+[charaFadeout G 0.4]
+[wt 2.0]
+[charaTalk depthOn]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_80]
+
+＠Napoleon
+Uh-oh. Here comes her Mystic Eye!
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[wt 0.5]
+
+[charaFace E 5]
+
+＠Ophelia
+...Phenomena, schufen auf.
+[k]
+
+[se ad476]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠Ophelia
+The Odinseal... What a marvelous Primordial Rune![sr]Ich will es niemals glänzen sehen!
+[k]
+
+[messageOff]
+[seStop ad476 0.5]
+[fadeout black 0.1]
+[wait fade]
+[cameraMove 0 0,-50 1.4]
+[wt 0.1]
+[fadein black 0.1]
+[wait fade]
+
+[se ad693]
+[effect bit_talk_ophe_eye 35,-28]
+[wt 0.2]
+
+[fadeout white 0.8]
+[wait fade]
+
+[charaFadeout E 0.1]
+[cameraHome 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+[wt 0.1]
+[fadein white 0.6]
+
+[charaFace C 5]
+
+＠Brynhild
+...!
+[k]
+
+[wait fade]
+
+[messageOff]
+[se ade70]
+[wt 0.7]
+[wipeout gunya 1.0 1.5]
+[wait wipe]
+[wt 0.3]
+[wipein gunya 0.5 1.5]
+[se ad632]
+[seVolume ad632 0 0.4]
+[wait wipe]
+
+[charaFace C 4]
+
+＠Brynhild
+Nghh...![sr]My rune is...weakening...!?[seStop ad632 1.0]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Ophelia
+You shine too brightly. That's why this eye of mine refuses to see that possibility go any further.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠Mash
+Then, she is rewinding phenomena...![sr]B-but...she can't be interfering with time itself!
+[k]
+
+＠Mash
+Even if it were a Noble Color, a Jewel-rank Mystic Eye, controlling time should be impossible!
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+[charaMove C 0,-20 0.5]
+[charaFadeout C 0.4]
+[se ade75]
+[wt 0.4]
+[seStop ade75 0.5]
+
+[wt 1.0]
+
+＠Brynhild
+Khh... Aah...![wt 0.6][messageShake 0.05 5 5 1.0][sr]Aaaaaahhh...!
+[k]
+
+[messageShakeStop]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+＠Sigurd
+Hehe. That's it. That's what I like to see! Your pathetic Spirit Origin can't handle the Odinseal Prototype.
+[k]
+
+＠Sigurd
+Hehe. Now that Ophelia's stopped it, all that's left is your Spirit Core tearing itself apart, huh?
+[k]
+
+＠Sigurd
+That's it. Squeal.[sr]Writhe in agony.
+[k]
+
+＠Sigurd
+You deserve to crawl on your belly after reducing yourself to nothing more than a human woman.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+＠Brynhild
+Sig...urd...![wt 0.5][messageShake 0.05 5 5 1.0][sr]Ghh... Aaaaaaaaahhh...
+[k]
+
+？1：Brynhild!
+？2：Hang on! I'll heal you with a Mystic Code right[line 2]!
+
+？！
+
+[charaSet D 3033000 1 Ortlinde]
+
+[messageShakeStop]
+[bgmStop BGM_EVENT_80 1.0]
+
+＠Brynhild
+N-no... It's...all right...[sr]I'm not...finished yet, [%1].
+[k]
+
+＠Brynhild
+Please...it's dangerous for you to...worry about me like that...
+[k]
+
+
+[messageOff]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.7 0,-16]
+[wt 0.2]
+[charaMove C 1 0.5]
+[se ad166]
+[wt 0.3]
+[seStop ad166 0.2]
+
+[wt 0.7]
+
+＠Brynhild
+Remember what I said...? [bgm BGM_EVENT_82 0.1]I told you to let[sr]me handle her Mystic Eye, and I meant it.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠Ophelia
+!
+[k]
+
+[charaFace E 5]
+
+＠Ophelia
+...Phenomena, schufen auf!
+[k]
+
+[messageOff]
+
+[se ad476]
+
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Brynhild
+...No. No more. [seStop ad476 2.0]One experience with[sr]your eye was more than sufficient.
+[k]
+
+＠Brynhild
+Reinitializing Odinseal. Reengaging.[sr]Your eye will no longer lead me astray.
+[k]
+
+＠Brynhild
+You aren't truly rewinding phenomena. No, it is more a matter of you determining their possibilities.
+[k]
+
+[charaFace C 10]
+
+＠Brynhild
+And in that case...one can deal with it like so.
+[k]
+
+[messageOff]
+
+[messageOff]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth H 2]
+[charaDepth C 1]
+[charaFace C 10]
+
+[charaPut H 1]
+[charaEffect H bit_talk_charge_blu]
+
+[se ad61]
+[se ad556]
+[seVolume ad556 0 0.6]
+
+[wt 2.0]
+
+[messageOff]
+[seStop ad61 0.5]
+[seStop ad556 0.5]
+[se ad574]
+
+[flashin once 0.1 1.0 FFFFFF80 FFFFFF00]
+[cueSe Battle bac31]
+
+[wt 1.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_charge_blu]
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠Ortlinde
+You restarted it...!? But, you're a Servant... Your Spirit Core is tied directly to your brain and heart...
+[k]
+
+＠Ortlinde
+Restarting the Odinseal now would mean...completely destroying your Spirit Core... Sister...!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠Ophelia
+Wh-what are you[line 2]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠Brynhild
+You can't see it anymore, can you?[sr]That is because I have narrowed its possibilities.
+[k]
+
+？1：You narrowed its possibilities!?
+？2：What do you mean by[line 2]
+
+？！
+
+[charaFace C 0]
+
+＠Brynhild
+I have seen powerful, magical eyes before.
+[k]
+
+＠Brynhild
+So I will not back down in the face of more, even should they belong to a foreign god such as Balor.
+[k]
+
+[charaFace C 5]
+
+＠Brynhild
+Even were my father himself looking down upon me...
+[k]
+
+[charaFace C 2]
+
+＠Brynhild
+[f large]...I will still...
+[k]
+
+＠Brynhild
+[f large]...kill Sigurd!
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+[se ad683]
+[seVolume ad683 0 0.4]
+
+[wt 1.0]
+
+[charaFace F 1]
+
+＠Sigurd
+Out of the way. Hmph.[sr]You're chatty for a damn walking doll.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠Brynhild
+...Sigurd!
+[k]
+
+[messageOff]
+[se ad73]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[effect bit_talk_kengekiall04]
+[wt 0.1]
+[se ad32]
+[fowardEffect bit_talk_14]
+[wt 0.4]
+[se ad32]
+[wt 0.1]
+[fowardEffect bit_talk_14]
+[se ad618]
+
+[wt 1.2]
+
+[charaTalk E]
+[charaFace E 16]
+[charaFadein E 0.1 1]
+
+＠Ophelia
+No way...[sr]That's impossible...!
+[k]
+
+＠Ophelia
+She...she actually fixed her mind in place...!
+[k]
+
+＠Ophelia
+She decided there was only one path forward for her, and cut off any other possibilities... How can she do that!?
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[cueSe Battle bac109]
+[fowardEffect bit_talk_quickmove]
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+＠Sigurd
+I doubt any ordinary human could cut off[sr]possibilities through sheer force of will.
+[k]
+
+＠Sigurd
+Not even an ordinary demigod could pull that off.[sr]But a demigod mad enough to burn herself alive...!
+[k]
+
+＠Sigurd
+Well, she just might be twisted[sr]enough to wield a demonic spear!
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠Brynhild
+Sigurd, Sigurd, SIGURD!
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF00]
+[effect bit_talk_14]
+[shake 0.05 2 4 0.5]
+[se ad32]
+
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠Ortlinde
+Sister...
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[effect bit_talk_41]
+[effect bit_talk_14]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[se ad468]
+
+[se ad632]
+
+[shake 0.03 3 3 0.3]
+[wt 0.3]
+[shake 0.03 2 2 0]
+[se ad468]
+[wt 1.5]
+[effectStop bit_talk_41]
+[se ad32]
+[wipeout rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+[seStop ad632 0.5]
+[shakeStop]
+[wt 0.2]
+[wipein rectangleStripRightToLeft 0.3 1]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠Brynhild
+Hraaaaaaaaa![sr]To you who walks the path of evil...!
+[k]
+
+＠Brynhild
+I offer up my fire, my madness, and my love!
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth H 2]
+[charaDepth C 1]
+
+[se ad690]
+[seVolume ad690 0 0.6]
+[charaPut H 1]
+[charaEffect H bit_talk_charge_blu]
+[wt 4.0]
+[flashin once 0.2 0.5 FFFFFFFF FFFFFF00]
+[charaPut H 2400,2400]
+[charaEffectStop H bit_talk_charge_blu]
+[seStop ad690 0.3]
+[charaTalk depthOn]
+
+[effect bit_talk_36]
+[se ad39]
+[wt 1.3]
+
+＠Brynhild
+Till death do us part...[sr]Brynhild Romantia!
+[k]
+
+[messageOff]
+[fadeout white 1.2]
+[se ad703]
+[wt 0.8]
+[seStop ad703 0.2]
+[wait fade]
+[effectStop bit_talk_36]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠Mash
+Brynhild's spear is...growing and changing shape!
+[k]
+
+＠Napoleon
+That must be her Noble Phantasm...the spear made for taking warriors' lives! Damn, it's huge...! Look out for the shock wave!
+[k]
+
+[scene 45810]
+
+[messageOff]
+[charaTalk on]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+[charaSet G 1098123210 1 Goredolf]
+
+[messageOff]
+[fadein white 1.0]
+[se ad704]
+[seVolume ad704 0 0.0]
+[wait fade]
+
+[seVolume ad704 0.5 1.0]
+[wt 1.4]
+[charaPut H 1]
+[charaScale H 1.2]
+[charaEffect H bit_talk_v_slash01]
+[wt 1.2]
+
+[se ad705]
+[flashin once 0.5 1.0 FFFFFFAF FFFFFF00]
+[fadeout white 0.2]
+[wait fade]
+[wt 2.7]
+[flashOff]
+[seStop ad704 1.0]
+
+[fadein white 0.7]
+[wait fade]
+
+＠Brynhild
+This is my killer spear. The spear made to kill the heroic Dragon Slayer...the love of my life.
+[k]
+
+＠Brynhild
+Sigurd! By virtue of who you are,[sr]it is impossible for you to avoid my blade!
+[k]
+
+＠Brynhild
+It is this great spear[line 2]its weight reflecting the depths of my love[line 2]that will end you...
+[k]
+
+[charaFace C 2]
+
+＠Brynhild
+[f large]...in one blow!
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_82 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaScale H 1.4]
+[charaEffect H bit_talk_arrow01bl 1 F]
+[wt 0.7]
+[se bac176]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.4]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.4]
+[se ad705]
+
+[se bac187]
+[seVolume bac187 0 0.6]
+[fadeout white 2.0]
+[se ad608]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+[wt 2.0]
+
+[scene 60900]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[fadein white 0.5]
+[wait fade]
+
+＠Brynhild
+It's done[line 2]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+＠Sigurd
+Nice try.[wt 0.5][charaFace F 13][sr]But that's not going to work.
+[k]
+
+[messageOff]
+[effect bit_talk_v_slash01]
+[cueSe Battle bac169]
+[wt 0.4]
+
+[fowardEffect bit_talk_29 0,-50]
+[se bac325]
+[seVolume bac325 0 0.8]
+[wt 0.1]
+
+[fowardEffect bit_talk_14]
+[se ad618]
+[wt 0.3]
+[wt 0.5]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth C 3]
+[charaDepth B 2]
+[charaDepth A 1]
+
+[charaFace C 4]
+[charaFadein C 0.1 0]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[charaFace A 14]
+[charaFadein A 0.1 2]
+
+[wt 3.0]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaFace D 6]
+[charaFadein D 0.1 0]
+[charaFace E 12]
+[charaFadein E 0.1 2]
+
+[wt 3.0]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk on]
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠Goredolf
+Wha...
+[k]
+
+[charaFace G 8]
+
+＠Goredolf
+H-how can that be!? That was Brynhild's[sr]Noble Phantasm, the hero killer!
+[k]
+
+＠Goredolf
+And she just used it on Sigurd...the very man it was created for! It couldn't possibly have missed its target! It should have killed him!
+[k]
+
+＠Goredolf
+So then...how is he still alive!?
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.2]
+[charaPut H 1200,1200]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠Sigurd
+That Noble Phantasm of yours[sr]was definitely impressive.
+[k]
+
+[charaFace F 12]
+
+＠Sigurd
+But, unfortunately for you...I'm not Sigurd.
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

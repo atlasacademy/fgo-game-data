@@ -1,0 +1,253 @@
+＄94-00-31-13-1-0
+
+
+[soundStopAll]
+[bgm BGM_EVENT_5 0.1]
+[charaSet A 8001001 1 Mash]
+[charaSet B 98003000 1 "Dr. Roman"]
+[charaSet C 98002000 1 Fou]
+[charaSet D 98065000 1 El-Melloi]
+[charaSet E 98063000 1 "Matou Kariya"]
+[charaSet F 2002001 1 Gilgamesh]
+[charaSet G 7002001 1 Berserker]
+
+[scene 25300]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+[fadein black 2.0]
+[wait fade]
+
+＠Gilgamesh
+Damn you! What a farce...
+[k]
+
+[messageOff]
+[se ad52]
+[charaSpecialEffect F flashErasure 0 0 1]
+[wait charaSpecialEffect F]
+[charaFadeout F 0.4]
+[wt 1.0]
+[seStop ad52 1.5]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠El-Melloi
+We did it! The King of Heroes, the greatest threat of the Fourth Holy Grail War, is defeated!
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠Matou Kariya
+Hahh... Hahh... Did you see that![sr]I showed... Tokiomi...
+[k]
+
+[charaFadeout E 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠Mash
+Hm!? Berserker's Master is...
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[se ad13]
+[communicationChara 98003003 1 5 0 5]
+[wt 0.3]
+
+＠Dr. Roman
+This is bad. The vital signs I'm seeing here show he's dying!
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠El-Melloi
+Damn it! We made him use too much magical energy!
+[k]
+
+＠El-Melloi
+Hey, if you're going to pass out, at least bind Berserker with a Command Spell!
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠Matou Kariya
+...
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[se bac2]
+[wait se bac2]
+[wt 0.5]
+
+？1：He collapsed?
+？2：Hang in there!
+
+？！
+
+[charaTalk C]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[charaFadein C 0.1 0]
+＠Fou
+Fou, fou!
+[k]
+
+[charaFace A 7]
+＠Mash
+It's okay. He's just unconscious. He's still breathing.
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[charaSet B 1001000 1 Altria]
+[charaSet C 3002000 1 Diarmuid]
+[charaSet E 98061000 1 Waver]
+[charaSet F 4002001 1 Iskandar]
+
+[bgmStop BGM_EVENT_5 1.5]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠El-Melloi
+No! When this Berserker loses control, it'll go after Saber...
+[k]
+
+[charaFadeout D 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+[fowardEffect bit_talk_41]
+[shake 0.05 0 4 1.0]
+＠Berserker
+[fontSize x-large]Aaaaa, uaaaaa!
+[k]
+
+[fowardEffectStop bit_talk_41]
+[wait fowardEffect bit_talk_41]
+
+[messageOff]
+[charaFace G 5]
+[se ba2]
+[wipeout leftToRight 0.5 1]
+[charaMove G 900,0 0.2]
+[wait wipe]
+[wait charaMove]
+[charaFadeout G 0]
+
+[charaTalk off]
+
+[charaFace B 5]
+[charaFadein B 0 2]
+
+[charaFace G 5]
+[charaFadein G 0 -900,0]
+
+[wipein rightToLeft 0.5 1]
+[wait wipe]
+
+[charaMove G 0 0.2]
+[wait charaMove]
+
+[se ad32]
+[fowardEffect bit_talk_13]
+[shake 0.05 0 4 0.8]
+[wt 0.8]
+
+[charaTalk on]
+[charaFace B 2]
+＠Altria
+What? Why is it attacking me!?
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout G 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠El-Melloi
+We've got no choice.  [%1],[sr]let's give up on Berserker. We'll take him out here!
+[k]
+
+？1：What?
+？2：Isn't he on our side?
+
+？！
+
+＠El-Melloi
+We can't put Saber in danger here!
+[k]
+
+[charaFace D 0]
+＠El-Melloi
+With Archer out of the picture now, we're past the stage where we need Berserker's help anyway.
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk C]
+[charaFace D 0]
+[charaFace C 0]
+[charaFadein D 0.1 2]
+[charaFadein C 0.1 0]
+＠Diarmuid
+This won't be a pleasant fight...[sr]But I guess I've got no choice against this mad warrior!
+[k]
+
+[charaFace D 5]
+＠El-Melloi
+Lancer, your Noble Phantasm gives you an advantage against him. Stop whining and help!
+[k]
+
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFace F 0]
+[charaFadein E 0.1 2]
+[charaFadein F 0.1 0]
+＠Waver
+W-What's going on here?
+[k]
+
+＠Iskandar
+...
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

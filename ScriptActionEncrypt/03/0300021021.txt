@@ -1,0 +1,146 @@
+
+＄03-00-02-10-2-1
+[soundStopAll]
+
+[charaSet A 8001400 1 "Visor Mash"]
+[charaSet B 8001410 1 Mash]
+[charaSet C 98002000 1 Fou]
+[charaSet D 2031001 1 Napoleon]
+
+[scene 61400]
+
+[charaTalk off]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[se ad67]
+[seVolume ad67 0 0.6]
+[wt 1.0]
+
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[charaFadeout A 0.4]
+
+[wt 0.5]
+[charaTalk on]
+
+＠Mash
+We've destroyed all the ice beasts.[bgm BGM_EVENT_77 0.1][sr]The battle is over!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaDepth D 10]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 0]
+
+[charaFace B 0]
+[charaFadein B 0.1 2]
+
+＠Napoleon
+All right then, let's get our march back underway![sr]We can even make a friendly race of it!
+[k]
+
+[charaFace B 8]
+
+＠Mash
+Um, I'm sorry, Napoleon, but I have to refuse.[sr]That would be far too dangerous!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 2]
+
+＠Fou
+Fou, fo fooou!
+[k]
+
+[charaFace D 3]
+
+＠Napoleon
+You're siding with the mademoiselle, pupper?[sr]Just be careful the wind doesn't blow you away.
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠Mash
+Equipping the Ortinax Ollerus Board[sr]attachments now... Boosters, activated.
+[k]
+
+[messageOff]
+
+[charaTalk off]
+
+[se ade57]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+
+[charaFace A 7]
+[charaFadein A 0.4 1]
+[wt 0.5]
+
+
+＠Mash
+Switching from thruster mode's first gear to booster. Ollerus Boards, standing by. Three, two, one...
+[k]
+
+[charaFace A 2]
+
+＠Mash
+...Ignition!
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ade83]
+[effect bit_talk_41]
+[cameraMove 2.0 0,0 1.2]
+
+[wt 1.0]
+
+[fadeout white 1.0]
+[wait fade]
+
+[scene 10001]
+
+[fadein white 0.1]
+[wait fade]
+
+[wt 0.8]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+[soundStopAll]
+[end]

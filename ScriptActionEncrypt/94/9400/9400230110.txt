@@ -1,0 +1,452 @@
+＄94-00-23-01-1-0
+
+[soundStopAll]
+[charaSet A 8001001 1 Mash]
+[charaSet B 98003000 1 "Dr. Roman"]
+[charaSet C 98002000 1 Fou]
+[charaSet D 4004001 1 Astolfo]
+[charaSet E 9002001 1 "Amakusa Shirou"]
+[charaSet F 2018001 1 "Gilgamesh (Child)"]
+[charaSet G 98006300 1 Enemy]
+
+[scene 10000]
+[fadein black 0.5]
+[wait fade]
+
+[effect bit_talk_07]
+[se ad12]
+[wt 4]
+[fadeout white 1.0]
+[wait fade]
+[wt 2.0]
+
+[bgm BGM_EVENT_2 0.1]
+[scene 20300]
+[fadein white 2.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠Mash
+Doctor. These coordinates mark the location where a Singularity is forming, correct?
+[k]
+
+[charaFadeout A 0.1]
+
+[se ad13]
+[charaTalk B]
+[communicationChara 98003003 1 5 0 5]
+[wt 0.3]
+＠Dr. Roman
+Yes, enemy readings are exceeding predictions and have been confirmed in several areas.
+[k]
+
+＠Dr. Roman
+If we don't do anything about it, it might exacerbate the separation and collapse of the Seven Eras.
+[k]
+
+＠Dr. Roman
+It seems that Servants are being summoned in opposition, so I want you to go and help correct the era.
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Mash
+Okay. Well then, Master, let's look for those Servants for the time being.
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+[bgmStop BGM_EVENT_2 0.1]
+[wt 1.0]
+[charaFadeout A 0.1]
+[scene 20520]
+[bgm BGM_EVENT_5 0.1]
+[fadein black 1.0]
+[wait fade]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.4 1]
+＠Mash
+This town is in ruins.[sr]There is not a single soul in sight...
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠Dr. Roman
+I'm getting readings on a Servant near you.[sr]Do you not see it?
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Mash
+A...Servant? I can sense its presence, but I cannot see its form[line 2]
+[k]
+
+[charaFadeout A 0.1]
+
+[bgmStop BGM_EVENT_5 0.1]
+[charaFilter D silhouette 00000000]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[wt 0.1]
+[se ad7]
+[wait charaSpecialEffect D]
+[shake 0.05 0 5 0.4]
+＠???
+[f large]Boo![f -]
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠Mash
+Ahhh!?
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Fou
+Foou!?
+[k]
+
+[charaFadeout C 0.1]
+
+[charaFilter D normal 00000000]
+[bgm BGM_EVENT_2 0.1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 1]
+＠???
+Hah hah hah![sr]Did I startle you? Did I?
+[k]
+
+＠???
+Ah, sorry about that.[sr]I just got carried away in the moment!
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace D 1]
+[charaFadein D 0.1 0]
+[charaFace A 8]
+[charaFadein A 0.1 2]
+＠Mash
+To just suddenly appear like that out of the sky... That made me scream out loud. How unbefitting of a Servant...
+[k]
+
+[charaFace A 12]
+＠Mash
+Uhh, you are a Servant...correct?
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠???
+Indeed![sr]My name is Astolfo!
+[k]
+
+[charaFace D 1]
+＠Astolfo
+My class is Rider,[sr]and I am one of the Twelve Paladins of Charlemagne!
+[k]
+
+[charaFace D 0]
+＠Astolfo
+My hobbies are walking, eating, jousting, gambling, drinking, reading, chatting, and also...
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[charaFace A 8]
+[charaFadein A 0.1 2]
+＠Mash
+Th-That's enough.[sr]My name is Mash Kyrielight.
+[k]
+
+[charaFace A 13]
+＠Mash
+This is [%1],[sr]my Master.
+[k]
+
+[charaFace D 1]
+＠Astolfo
+What a cute little Servant... So you're the Master, huh! Nice to meet you!
+[k]
+
+[charaFace D 4]
+＠Astolfo
+Huh?[sr]Have we met before?
+[k]
+
+[charaFace D 0]
+＠Astolfo
+Hmm... I forgot, but whatever![sr]So what are you doing here?
+[k]
+
+[charaFace A 0]
+＠Mash
+Y-Yes. We are investigating a Singularity[line 2]
+[k]
+
+[charaFace D 4]
+＠Astolfo
+A Singularity?[sr]I see. I think I've heard of those.
+[k]
+
+＠Astolfo
+But I don't really know much myself.
+[k]
+
+＠Mash
+I see... In that case, do you know any of the remaining Servants?
+[k]
+
+[charaFace D 2]
+＠Astolfo
+Ah!
+[k]
+
+[charaFace A 6]
+＠Mash
+W-What!?
+[k]
+
+[charaFace D 1]
+＠Astolfo
+That's right! The reason why I called out to you![sr]Now I remember!
+[k]
+
+[charaFace D 3]
+＠Astolfo
+Oh man, I was just about to forget about it, too! Heh heh.
+[k]
+
+[charaFace A 8]
+＠Mash
+Please don't forget...
+[k]
+
+[charaFace D 1]
+＠Astolfo
+There are actually two other Servants here.[sr]One of them is a Ruler!
+[k]
+
+[charaFace A 6]
+＠Mash
+A Ruler... A Ruler!?[sr]Like Jeanne d'Arc?
+[k]
+
+[charaFace D 1]
+＠Astolfo
+That's right, just like her![sr]The other is an Archer.
+[k]
+
+[charaFace D 4]
+＠Astolfo
+Umm, I can't quite recall the name...[sr]Gira...Giri...Gil...
+[k]
+
+[charaFace A 0]
+＠Mash
+...Perhaps “Gilgamesh”?
+[k]
+
+[charaFace D 1]
+＠Astolfo
+Oh yes, that's right! Gilgamesh!
+[k]
+
+[charaFace A 7]
+＠Mash
+The King of Heroes, Gilgamesh... The oldest Heroic Spirit who possesses an inexhaustible amount of treasures.
+[k]
+
+＠Mash
+The weapons from his treasury later became prototypes for weapons owned by other heroes in this world.
+[k]
+
+＠Mash
+Or that's what Da Vinci said.[sr]I've never actually met Gilgamesh, but...
+[k]
+
+[charaFace A 12]
+＠Mash
+Ah, I'm not sure.[sr]I have this feeling...that maybe I have met him...
+[k]
+
+？1：Surely it was a dream.
+
+[charaFace A 13]
+＠Mash
+A dream, huh.[sr]I see. Now that you mention it, I think you're right.
+[k]
+
+？2：I've seen him.
+
+[charaFace A 6]
+＠Mash
+Really?[sr]Umm... Are you talking about Santa?
+[k]
+
+[charaFace A 8]
+＠Mash
+What are you talking about?[sr]I apologize for my ignorance...
+[k]
+
+？！
+
+[charaFace D 0]
+＠Astolfo
+Indeed. He did seem like a child worthy of that name.
+[k]
+
+[charaFace D 1]
+＠Astolfo
+I'm sure in the future that child will be a great hero! But he'll also probably turn out to be a tyrant!
+[k]
+
+[charaFace A 0]
+＠Mash
+So, what happened to the two of them?
+[k]
+
+[charaFace D 4]
+＠Astolfo
+Oh, um, you see...[sr]How do I explain...
+[k]
+
+＠Astolfo
+That Ruler and Archer I met, you see... They're...waging.
+[k]
+
+[charaFace A 12]
+＠Mash
+Waging... What are they waging?
+[k]
+
+[bgmStop BGM_EVENT_2 0.1]
+[charaFace D 5]
+＠Astolfo
+A Holy Grail War.
+[k]
+
+[charaFace A 0]
+＠Mash
+What...[sr]A Holy Grail...
+[k]
+
+[bgm BGM_EVENT_2 0.1]
+[charaFace A 14]
+＠Mash
+Whaaaat!?
+[k]
+
+[charaFace D 1]
+＠Astolfo
+Come, follow me![sr]At any rate, I want you to stop the two of them!
+[k]
+
+＠Astolfo
+Come on! Hurry, hurry!
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[communicationCharaLoop 98003003 1 5 0 0]
+＠Dr. Roman
+Hey! Sorry to ruin the party,[sr]but it's time for battle.
+[k]
+
+＠Dr. Roman
+Some Lamia-type enemies are heading in your direction.
+[k]
+
+[communicationCharaClear]
+[wait communicationChara]
+[wt 0.1]
+[bgmStop BGM_EVENT_2 0.1]
+
+[messageOff]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.2]
+[se ad21]
+[wt 0.2]
+[wt 1.2]
+[bgm BGM_EVENT_3 0.1]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠Mash
+Okay. I have visual confirmation of the enemy. Preparing to engage!
+[k]
+
+[charaFace A 14]
+＠Mash
+...Uh, Astolfo!?
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠Astolfo
+Ahhhhhh![sr]Snakes, there are snakes!
+[k]
+
+[charaFace D 0]
+＠Astolfo
+Okay! It's hunting time! I'll make sure that at least thirty of them enter Nirvana...or Heaven?
+[k]
+
+[charaFace D 1]
+＠Astolfo
+Anyway, I'll send them packing down the road to the afterlife!
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[wt 0.4]
+[bgmStop BGM_EVENT_3 0.1]
+[wait fade]
+[soundStopAll]
+[end]

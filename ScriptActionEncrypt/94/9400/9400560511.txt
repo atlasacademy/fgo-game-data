@@ -1,0 +1,261 @@
+
+＄94-00-56-05-1-1
+
+[soundStopAll]
+[bgm BGM_EVENT_5 0.1]
+[charaSet A 9004000 1 Martha]
+[charaSet B 98100400 1 Mash]
+[charaSet C 98002000 1 Fou]
+[charaSet D 6024000 1 Scáthach]
+[charaSet E 5027000 1 Marie]
+[charaSet F 98100800 1 "Boar Piglet"]
+
+
+[charaPut F 0,-312]
+[charaEffect F bit_talk_19]
+
+[scene 30600]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+＠Martha
+I see, so that's why you brought me here.[sr]You want me to purify this place.
+[k]
+
+＠Martha
+I don't know if it can be done, but let me try.[sr]First I'll sprinkle a little holy water...
+[k]
+
+[bgmStop BGM_EVENT_5 0.4]
+[messageOff]
+[charaFadeout A 0.4]
+[wt 0.4]
+[se ad78]
+[wt 0.5]
+[se ad42]
+[seStop ad42 2.0]
+[wt 0.2]
+[effect bit_talk_06]
+[wt 0.7]
+[se ad79]
+[wt 0.3]
+[fadeout white 0.5]
+[wait fade]
+[effectStop bit_talk_06]
+[wt 1.0]
+[charaPut F 0,-700]
+[charaEffectStop F bit_talk_19]
+[fadein white 1.0]
+[wait fade]
+[wt 1.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Martha
+...Hmm, how about this.
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠Mash
+That's amazing! The poisonous puddles are disappearing... The stench in the air is clearing up too!
+[k]
+
+？1：Nice purification!
+
+[charaFadeout B 0.1]
+
+？2：How much do you charge for your holy water, Martha?
+
+[charaFadeout B 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Martha
+I can give you as much as you want, but what's more important is faith.
+[k]
+
+＠Martha
+Without faith, the water is meaningless.
+[k]
+
+[charaFadeout A 0.1]
+
+？！
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Fou
+Fouu!
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠Martha
+Obviously, a withered plant could not be revived. Unfortunate as it is...
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠Scáthach
+But something else will take root again in this place now, and surely bloom.
+[k]
+
+[charaFace D 0]
+＠Scáthach
+That poisonous ground was meant to molder the island's land. It was fortunate that we could purify it this early.
+[k]
+
+＠Scáthach
+I feared that, if neglected, the island would have transformed into a land of death that could not grow a single weed in the end.
+[k]
+
+＠Scáthach
+At the very least, this island is rich in its natural resources. I cannot see them all gone to waste.
+[k]
+
+[charaFace D 4]
+＠Scáthach
+...I can't believe this. Not only are you asking others to take care of the monsters for you, you're even asking the same people to take care of your environment?
+[k]
+
+＠Scáthach
+I don't know if the ruler has forgotten about this island or just abandoned it, but I just added one more entry to the list of items I want to complain about.
+[k]
+
+[charaFadeout D 0.1]
+
+[charaTalk E]
+[charaFace F 0]
+[charaFadein F 0.1 -128,0]
+[charaFace E 0]
+[charaFadein E 0.1 128,0]
+[wt 0.4]
+＠Marie
+Huh? [charaMove F -256,0 0.5][charaFadeout F 0.4]Where are you going, little one?
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.4]
+
+[bgmStop BGM_EVENT_2 0.4]
+[charaTalk F]
+[charaFadein F 0.4 128,0]
+[charaMove F 0,0 0.5]
+[wt 0.5]
+
+[bgm BGM_EVENT_3 0.1]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+[wt 0.1]
+[se ad51]
+[charaFace F 2]
+[charaShake F 0.05 3 3 0.25]
+
+＠Boar Piglet
+Hoink, oink! ...Oi?
+[k]
+
+[charaFace D 5]
+＠Scáthach
+Selfish behavior will only lead to your own demise.[sr]What are you after? Tell me, look me in the eyes and spit everything out.
+[k]
+
+？1：Er, pointing your spear is a bit excessive, no?
+？2：Don't be a hero that kills with your eyes!
+？！
+
+[bgmStop BGM_EVENT_3 0.3]
+[wt 0.4]
+[bgm BGM_EVENT_2 0.1]
+[charaFace D 0]
+＠Scáthach
+...Ugh! How base of me. I still have the notion that boars are vermin. Well, they actually are, but...
+[k]
+
+[charaFace F 2]
+＠Boar Piglet
+Oi...oi!
+[k]
+
+[charaAttack F normal -768,0 0.5]
+[charaFadeout F 0.4]
+[se ad14]
+[seStop ad14 1.5]
+[wt 0.4]
+
+[charaFadeout D 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Fou
+Fouu. Fou, Foou!
+[k]
+
+[charaAttack C normal -768,0 0.75]
+[charaFadeout C 0.4]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Mash
+Oh no... Not you too, Fou![sr]I'll go after them.
+[k]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Fou
+Fou!
+[k]
+
+[charaFadeout C 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Mash
+...? Oh, I see.
+[k]
+
+[charaFace B 13]
+＠Mash
+Judging from Fou's behavior, it doesn't look like the boar piglet was trying to flee.
+[k]
+
+[bgmStop BGM_EVENT_2 0.3]
+[wt 0.4]
+[bgm BGM_EVENT_5 0.1]
+[charaFace B 7]
+＠Mash
+It seems there's another place the piglet wanted to take us to. In other words, another place plagued by the poison.
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_5 1.4]
+[wait fade]
+[wt 0.4]
+[soundStopAll]
+[end]

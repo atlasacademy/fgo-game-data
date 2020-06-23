@@ -1,0 +1,156 @@
+
+＄03-00-02-09-3-1
+[soundStopAll]
+
+[charaSet A 8001400 1 Mash]
+[charaSet B 98002000 1 Fou]
+[charaSet C 2031001 1 Napoleon]
+[charaSet D 1098123320 1 Koyanskaya]
+
+[scene 60900]
+
+[bgm BGM_EVENT_80 0.1]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.5]
+
+[se ad608]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[cueSe Battle bac234]
+[shake 0.05 1 4 1.0]
+[effect bit_talk_impactlanding]
+[wt 3.0]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Mash
+There, we've secured an exit route![sr]Now's our chance, Master!
+[k]
+
+？1：Full speed retreaaat!
+？2：Ollerus Boards, maximum thrust!
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[charaMoveReturn B 0,10 0.3]
+
+＠Fou
+Fou, fooou![wait charaMove B][charaMoveReturn B 0,10 0.3][sr]Fou off!
+[k]
+
+[messageOff]
+[wait charaMove B]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[effect bit_talk_42 0,0 H]
+[wt 0.2]
+
+[wipeout rectangleStripLeftToRight 0.3 1]
+[bgmStop BGM_EVENT_80 2.5]
+[se ade122]
+[wait wipe]
+
+[effectStop bit_talk_42]
+
+[wt 1.0]
+[seStop ade122 1.0]
+
+[scene 10000]
+
+[wipein rectangleStripLeftToRight 0.1 1]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 60900]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[wt 0.8]
+[charaFace D 7]
+[wt 0.4]
+
+＠Koyanskaya
+...So, they got away. [bgm BGM_EVENT_81 0.1]Well, I guess if nothing[sr]else, they passed that test of ability.
+[k]
+
+＠Koyanskaya
+They're certainly experts at running away. First they knock the giants aside, then they make a getaway on magecraft skis? I can't say I was expecting that.
+[k]
+
+＠Koyanskaya
+Admittedly, they're still well within sniping range...
+[k]
+
+[messageOff]
+[charaFace D 4]
+[wt 1.2]
+[charaFace D 17]
+
+＠Koyanskaya
+...but the smart money says to leave them alone for now. Especially since I've already got everything I came to this Lostbelt for.
+[k]
+
+＠Koyanskaya
+Might as well let these humans fight it out among themselves, and I can just sit on the sidelines with a bag of popcorn.
+[k]
+
+[charaFace D 16]
+
+＠Koyanskaya
+Chaldeans, Crypters...[sr]Humans are humans, and being around them makes me sick.
+[k]
+
+＠Koyanskaya
+I have no interest in either side...except for where it comes to you, Ophelia. Sort of.
+[k]
+
+＠Koyanskaya
+It's such fun, watching you come to grips with your wish for destruction. You don't even realize you're harming others.
+[k]
+
+＠Koyanskaya
+You think you're just a poor scapegoat,[sr]even as you blindly blunder about ruining everything.
+[k]
+
+[charaFace D 21]
+
+＠Koyanskaya
+Much as I don't care about them,[sr]I can't deny it's fun watching humans like that.
+[k]
+
+＠Koyanskaya
+This Lostbelt's beauty is all built on thin ice, and your naivete's going to show just how fragile it is.
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_81 1.5]
+[wait fade]
+[soundStopAll]
+[end]

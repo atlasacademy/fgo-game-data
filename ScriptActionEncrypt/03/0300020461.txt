@@ -1,0 +1,87 @@
+
+
+＄03-00-02-04-6-1
+
+
+[soundStopAll]
+
+
+[charaSet A 8001400 1 Mash]
+[charaSet B 98002000 1 Fou]
+[charaSet H 98115000 1 Effect]
+
+[scene 61500]
+
+[bgm BGM_EVENT_80 0.1]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[cueSe Battle bac234]
+[shake 0.05 1 4 1.0]
+[effect bit_talk_impactlanding]
+[wt 3.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Mash
+The first wave is down! Auto-tuning Ortinax for consecutive battles. Releasing exhaust, now!
+[k]
+
+[messageOff]
+[charaFace A 0]
+[se ade18]
+[wt 1.5]
+[charaFace A 7]
+
+＠Mash
+Output values remain stable.[sr]I'm still good to go.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Fou
+Fou fou fou![sr]Kyuuu, kyu!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Mash
+Don't worry, Fou![sr]I'm conserving energy for our escape!
+[k]
+
+[messageOff]
+[charaTalk B]
+[charaFace A 7]
+[cueSe Battle bac428]
+[shake 0.05 2 2 1.0]
+[wt 1.5]
+
+[charaFace A 2]
+
+＠Mash
+Resuming battle, Master!
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,418 @@
+
+＄94-02-08-24-1-0
+[soundStopAll]
+
+
+[charaSet A 1029002 1 Arthur]
+[charaSet B 98006200 1 "Small Fry Enemy"]
+[equipSet G 9806230 1 "Valentine's CE"]
+[charaSet H 5009000 1 "Dummy for Effect"]
+
+[scene 20802]
+
+[fadein black 1.5]
+[wt 0.5]
+[seLoop adm13]
+[seVolume adm13 0 0.1]
+[seVolume adm13 1.0 1.0]
+[wait fade]
+
+[wt 2.0]
+
+？1：...
+
+？！
+
+[seVolume adm13 2.0 0.6]
+
+[se ad27]
+[seVolume ad27 0.1 0.2]
+[wt 0.2]
+[se ad27]
+[seVolume ad27 0.4 0.3]
+
+[wt 1.5]
+
+＠???
+...It's best not to make any sound.
+[k]
+
+＠???
+Soul Eaters have sensitive hearing.[sr]And they don't like it when their territory is invaded.
+[k]
+
+＠???
+I don't know that much about them,[sr]but there's no harm in being careful.
+[k]
+
+＠???
+Even in the simulator, there is some amount of physical feedback...
+[k]
+
+[messageOff]
+[wt 0.5]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 -32,0]
+[charaMove A 1 0.5]
+[wt 1.0]
+
+＠Arthur
+At least that's what I heard.[sr]So I should proceed with extreme caution.
+[k]
+
+＠Arthur
+Isn't that right, Master?
+[k]
+
+？1：FOUND YOU!
+
+[charaFace A 10]
+[charaMoveReturn A 0,7 0.2]
+
+＠Arthur
+Wha[line 2][%1]!?
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace A 4]
+
+＠Arthur
+(Too! Shush![sr]There really are Soul Eaters around here...)
+[k]
+
+[seStop adm13 0.2]
+[se ad19]
+
+[wt 1.2]
+
+[charaFace A 11]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠Arthur
+...They noticed us.[sr]We have no choice. We'll have to fight.
+[k]
+
+[charaFace A 8]
+
+＠Arthur
+I'll have you help me, Master!
+[k]
+
+[charaFace A 5]
+
+＠Arthur
+...Okay?
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+[charaFadeout A 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 1.0]
+[fadein black 0.3]
+[wait fade]
+
+[se bac137]
+[charaScale H 5.0]
+[charaRoll H 30 center]
+[charaEffect H bit_talk_Slash_red_01_L 50,0]
+[charaShake B 0.05 4 2 0.5]
+[wt 0.5]
+
+[se ad19]
+[wt 0.7]
+
+[se bac139]
+[charaScale H 5.0]
+[charaRoll H 330 center]
+[charaEffect H bit_talk_Slash_red_01 -50,0]
+[charaShake B 0.05 4 2 0.5]
+
+[se ad20]
+[wt 0.7]
+
+[charaScale H 1.0]
+[charaPut H 1]
+[charaSpecialEffect B enemyErasure 1 3]
+[wt 1.0]
+[se ad42]
+[wait charaSpecialEffect B]
+[wt 1.0]
+
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_3 1.0]
+[wait fade]
+
+[wt 2.0]
+
+[branch select01_end]
+
+？2：Psst! Found you.
+
+＠Arthur
+Hm...?
+[k]
+
+＠Arthur
+Did you say, “found you”?
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace A 6]
+
+＠Arthur
+You did. Yes, I heard.
+[k]
+
+＠Arthur
+So were you looking for me, Master?
+[k]
+
+[charaFace A 4]
+
+＠Arthur
+I apologize in advance if you took the trouble to go into the simulator to find me. I know you're always so busy.
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace A 0]
+
+＠Arthur
+...For now, let's go back to the Control Room. Okay?
+[k]
+
+
+[branch select02]
+
+？！
+
+[label select02]
+
+？1：(Nods)
+
+[charaFace A 6]
+
+＠Arthur
+Good child.
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.5]
+[seStop adm13 1.5]
+[wait fade]
+[charaFadeout A 0.1]
+[wt 2.0]
+
+？2：Okay!
+
+[charaFace A 10]
+
+＠Arthur
+Ahh! Don't shout...
+[k]
+
+[seStop adm13 0.2]
+[se ad19]
+
+[wt 1.2]
+
+[charaFace A 11]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠Arthur
+...They noticed us.[sr]We have no choice. We'll have to fight.
+[k]
+
+[charaFace A 8]
+
+＠Arthur
+I'll have you help me, Master!
+[k]
+
+[charaFace A 5]
+
+＠Arthur
+...Okay?
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+[charaFadeout A 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 1.0]
+[fadein black 0.3]
+[wait fade]
+
+[se bac137]
+[charaScale H 5.0]
+[charaRoll H 30 center]
+[charaEffect H bit_talk_Slash_red_01_L 50,0]
+[charaShake B 0.05 4 2 0.5]
+[wt 0.5]
+
+[se ad19]
+[wt 1.2]
+
+[se bac139]
+[charaScale H 5.0]
+[charaRoll H 330 center]
+[charaEffect H bit_talk_Slash_red_01 -50,0]
+[charaShake B 0.05 4 2 0.5]
+
+[se ad20]
+[wt 0.5]
+
+[charaScale H 1.0]
+[charaPut H 1]
+[charaSpecialEffect B enemyErasure 1 3]
+[wt 1.0]
+[se ad42]
+[wait charaSpecialEffect B]
+[wt 1.0]
+
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_3 1.0]
+[wait fade]
+
+[wt 2.0]
+
+？！
+
+[label select01_end]
+
+[scene 10200]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠Arthur
+We've safely returned.
+[k]
+
+＠Arthur
+Well, I heard that a simulation program isn't as dangerous as Rayshifting.
+[k]
+
+＠Arthur
+Either way, I need to be mindful of my Master's well-being.
+[k]
+
+？1：Now that we've returned...
+？2：Here you go. Happy Valentine's Day!
+
+[charaFace A 10]
+
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[wt 1.0]
+[charaFace A 11]
+[wt 0.5]
+
+＠Arthur
+...For me?
+[k]
+
+＠Arthur
+This is...ah, yes. It's Valentine's Day...
+[k]
+
+＠Arthur
+February 14th. Yes.[sr]Now that I think about it, that's right...
+[k]
+
+[charaFace A 4]
+
+＠Arthur
+Even in that Holy Grail War, I...
+[k]
+
+＠Arthur
+Oh. Sorry. I just don't know what to say.[sr]I just thought it had nothing to do with me.
+[k]
+
+[charaFace A 12]
+
+＠Arthur
+No, no. I need to express it with words.
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace A 1]
+
+＠Arthur
+Thank you, Master. I'm very happy.
+[k]
+
+[charaFace A 6]
+
+＠Arthur
+I can't reciprocate immediately, but...if you come back tomorrow morning, I'll give you something special in return.
+[k]
+
+＠Arthur
+I hope you don't mind waiting until then.
+[k]
+
+＠Arthur
+Would you be able to promise me, Master?
+[k]
+
+？1：Of course!
+？2：I'll look forward to it!
+
+？！
+
+[messageOff]
+[charaFadeout A 0.4]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 1.5]
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+
+[se bas2]
+[charaFace G 0]
+[charaFadein G 0.5 0,-70]
+
+[wt 2.0]
+
+[charaFadeout G 0.4]
+
+
+
+
+[wt 1.0]
+[soundStopAll]
+[end]

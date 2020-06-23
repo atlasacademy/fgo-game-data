@@ -1,0 +1,179 @@
+
+
+＄94-01-50-14-3-1
+[soundStopAll]
+
+[charaSet A 2028000 1 Helena]
+[charaSet B 1031002 1 Fran]
+[charaSet C 2023000 1 "Professor M"]
+[charaSet D 5011001 1 Babbage]
+[charaSet E 5025001 1 Edison]
+[charaSet F 2011001 1 "Nikola Tesla"]
+
+[scene 44100]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_3 0.1]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠Helena
+That should make her happy,[sr]being defeated by the two most beautiful girls here.
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout A 0]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.4 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠Fran
+Ugh... So tired...
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.05]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.4 1]
+
+＠Professor M
+I wish I could let you rest, my dear,[sr]but I am afraid we don't seem to have that luxury.
+[k]
+
+＠Professor M
+The other teams have closed the gap while we were fighting her.
+[k]
+
+[charaFace C 0]
+
+＠Professor M
+We must make one last push if we are to come out victorious in this area. Are you up to it?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.05]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠Fran
+Uh. I'll do my best!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.05]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠Babbage
+...What a good girl you are.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.05]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Professor M
+I couldn't agree more. Incidentally, I don't suppose you could also give your Papa a little back massage after he spent all that time working hunched over?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.05]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Fran
+Sure.[sr]Hang on.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.05]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠Professor M
+Huh? Electrotherapy? Wait, slow down.[sr]Even at its lowest setting, isn't that a D-ran[line 2]
+[k]
+
+[se ad61]
+[fowardEffect bit_talk_lightning_02g]
+[charaFace C 2]
+
+＠Professor M
+K[charaShake C 0.05 7 10 0]aaarrrgh![seStop ad61 2.0][wait se ad61][charaShakeStop C][fowardEffectStop]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.05]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Babbage
+R.I.P.
+[k]
+
+[messageOff]
+[wt 0.4]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[wt 0.3]
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+
+＠Helena
+...What about you two?[sr]I could use a shoulder massage if you don't mind.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.05]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+[charaFace F 0]
+[charaFadein F 0.1 0]
+
+＠Edison & Tesla
+Leave it to me. This DC/AC electrotherapy apparatus will cure any sort of shoulder stiffness!
+[k]
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.5]
+[fadeout black 1.5]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

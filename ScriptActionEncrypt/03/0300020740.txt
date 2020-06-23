@@ -1,0 +1,692 @@
+
+
+＄03-00-02-07-4-0
+[soundStopAll]
+
+
+[charaSet A 1033000 1 Sigurd]
+[charaSet B 8001400 1 "Mash with Visor"]
+[charaSet C 2031000 1 Napoleon]
+[charaSet D 1098123820 1 Ophelia]
+[charaSet E 1098123810 1 Ophelia_Eyepatch]
+[charaSet F 1033001 1 Sigurd_Afterimage]
+[charaSet G 8001410 1 Mash]
+[charaSet H 5009000 1 "Effect Dummy"]
+
+[scene 10000]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[wt 0.7]
+
+[fowardEffect bit_talk_kengekiall03]
+[charaPut H -70,50]
+[charaEffect H bit_talk_14]
+[se ad32]
+[wt 0.3]
+[charaPut H 60,10]
+[charaEffect H bit_talk_14]
+[se ad32]
+[wt 0.2]
+[charaPut H -50,-20]
+[charaEffect H bit_talk_14]
+[se ad32]
+
+[wt 0.5]
+
+[wipeout leftToRight 0.1 1]
+[wait wipe]
+
+[scene 61000]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 -30,0]
+
+[wipein rightToLeft 0.2 1]
+[se ad671]
+[wt 0.1]
+[charaMove B 1 0.2]
+[wait wipe]
+
+[wt 0.2]
+[seStop ad671 0.3]
+[wt 0.7]
+
+[charaFadeout B 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[cueSe Battle bac170]
+[charaScale H 1.4]
+[charaEffect H bit_talk_rarrow01br 1 F]
+[charaPut H 1200,1200]
+[wt 0.4]
+[charaFace C 2]
+[wt 0.2]
+[charaPut H -50,-100]
+[wt 0.3]
+[cueSe Battle bac423]
+
+[wt 0.5]
+[charaFadeout C 0.1]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠Sigurd
+...Well, well.[sr]You are moving better than the last time.
+[k]
+
+[messageOff]
+[se ad73]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[wt 0.5]
+
+
+[se ad671]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.4 1]
+[wt 0.2]
+
+[seStop ad671 0.3]
+[wt 0.7]
+
+[charaFace B 2]
+
+＠B：Mash
+We're really straining the Ortinax, but its output hasn't fallen. I can still fight, Senpai!
+[k]
+
+[charaFace B 7]
+
+＠B：Mash
+I think Napoleon is somehow providing some sort of spell boost...
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠Napoleon
+Don't tell me you forgot? I'm the only[sr]hero of humanity in this whole Lostbelt.
+[k]
+
+＠Napoleon
+I believe I'm basically calibrated for fighting here. And that's not even the only trick I have up my sleeve!
+[k]
+
+[charaFace C 0]
+
+＠Napoleon
+How 'bout you, great hero?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠Sigurd
+...[sr]...
+[k]
+
+＠Sigurd
+...Now I see. Joint resistance[sr]from Proper Human History, huh.
+[k]
+
+＠Sigurd
+Clever. Hehe, good. This would just be boring if you couldn't fight back at least a little.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：Mash
+...?
+[k]
+
+＠B：Mash
+(Am I imagining things, or is Sigurd smiling...?)
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠Sigurd
+Ophelia. Release one of my limiters.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：Ophelia
+Very well. I'll give you that.
+[k]
+
+＠E：Ophelia
+...Forced Spirit Origin Ascension limiter release.[sr]Destroy all who would stand in our way, my knight.
+[k]
+
+[messageOff]
+[fowardEffect bit_talk_easy_spell_r]
+[cueSe Battle bac32]
+[wt 2.0]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠B：Mash
+A Spirit Origin Ascension...!?
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+
+[wt 0.2]
+
+
+[charaPut H 1]
+[charaEffect H bit_talk_charge_red]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth H 2]
+[charaDepth A 1]
+
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+[se ad61]
+[se ad556]
+[seVolume ad556 0 0.6]
+
+[wt 2.0]
+[seStop ad61 0.5]
+[seStop ad556 0.5]
+[se ad574]
+
+[fadeout white 0.2]
+[wait fade]
+
+[charaChange A 1033001 12 fade 0.1]
+[charaPut H 2400,2400]
+[charaEffectStop H bit_talk_charge_red]
+[charaTalk depthOn]
+[wait charaChange A]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 1.5]
+
+＠Sigurd
+Phase two limiter released. Authorization granted to Heroic Spirit Sigurd for full employment of the demonic sword Gram.
+[k]
+
+＠Sigurd
+Now then, how should I kill you? Which one should I kill first? Ah, what am I saying. I've gotta start with you, lover boy. Maybe that'll shut you up.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠Napoleon
+Oho, more armor and blades, huh! I see, I see.[sr]So you're starting to take us seriously, eh?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaDepth B 10]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+[charaFace G 14]
+[charaFadein G 0.1 1]
+
+
+＠B：Mash
+I can tell his magical energy is spiking even higher! I haven't even touched him, and I can still feel the Ortinax groaning under the strain...
+[k]
+
+[messageOff]
+
+[wt 0.5]
+[charaTalk off]
+[charaFace B 7]
+[charaFace G 7]
+
+[charaFadeout B 0.4]
+[wt 0.3]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+
+[wt 0.7]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 2]
+
+＠Mash
+But...but I can still keep on going, Senpai! The Ortinax's auto-maintenance is keeping its output high and stable!
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+
+＠E：Ophelia
+...I see. You really have grown, haven't you...
+[k]
+
+[bgm BGM_EVENT_80 1.0 0.7]
+
+＠E：Ophelia
+You never showed such fierce[sr]determination before, Mash.
+[k]
+
+[charaFace D 1]
+
+＠E：Ophelia
+It's dazzling to behold.[sr]And beautiful.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠Mash
+...
+[k]
+
+＠Mash
+Ophelia, I don't know what the Crypters' reasons are for doing this.
+[k]
+
+[charaFace G 2]
+
+＠Mash
+But even if I did, I can't walk away...no matter how strong the Lostbelt Servant you control may be!
+[k]
+
+＠Mash
+We know someone who may not have been strong himself, but if he were here now, he would still yell at us not to lose just because our opponent was stronger...!
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+
+＠E：Ophelia
+I see. You've grown so much stronger since I last saw you, Mash. Shockingly so, in fact.
+[k]
+
+[charaFace E 0]
+
+＠E：Ophelia
+...I'm sorry about this.
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth E 2]
+[charaDepth D 1]
+
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[wt 0.5]
+[bgmStop BGM_EVENT_80 1.0]
+
+[se ad661]
+[wt 0.2]
+
+[charaFadeout E 0.4]
+[wt 2.0]
+[charaTalk depthOn]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠Napoleon
+Huh...!?
+[k]
+
+＠Napoleon
+Hey, Ophelia. What's up with your eye?[sr]Why's it look like that...?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠Mash
+It's a Mystic Eye![sr]But I don't know exactly what it can do!
+[k]
+
+＠Mash
+Senpai! Napoleon! Be ready![sr]She's about to use some sort of powerful spell!
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[wt 0.7]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Ophelia
+...Phenomena, schufen auf.
+[k]
+
+[se ad476]
+
+
+＠Ophelia
+That armor of yours is impressive.[wt 0.6][charaFace D 5][sr]Ich will es niemals glänzen sehen.
+[k]
+
+[messageOff]
+[seStop ad476 0.5]
+[fadeout black 0.1]
+[wait fade]
+[cameraMove 0 0,-50 1.4]
+[wt 0.1]
+[fadein black 0.1]
+[wait fade]
+
+[se ad693]
+[effect bit_talk_ophe_eye 35,-28]
+[wt 0.2]
+
+[fadeout white 0.8]
+[wait fade]
+
+[charaFadeout D 0.1]
+[cameraHome 0.1]
+
+[charaTalk G]
+[charaFace G 14]
+[charaFadein G 0.1 1]
+
+[wt 0.1]
+[fadein white 1.0]
+[wait fade]
+
+＠Mash
+!!!
+[k]
+
+[messageOff]
+
+[se ad632]
+[wt 0.5]
+
+[charaShake G 0.05 1 1 0.5]
+[wt 0.5]
+[seStop ad632 0.5]
+[charaMove G 0,-10 0.3]
+
+[se ad643]
+[wt 0.5]
+
+[seStop ad643 0.5]
+
+
+[charaFace G 2]
+
+＠Mash
+Ah...! The load on the Ortinax[sr]just increased exponentially...!
+[k]
+
+[charaFace G 15]
+
+＠Mash
+Output is dropping rapidly across the board,[sr]even though the auto-maintenance is working fine...!
+[k]
+
+＠Mash
+Wh-what's going on...?
+[k]
+
+
+[charaFace G 11]
+
+＠Mash
+Does this mean...you were able to rewind phenomena...over a limited area...?
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Ophelia
+My Mystic Eye's rank is Jewel.
+[k]
+
+＠Ophelia
+Once I have decided I don't want to see something shine,[sr]it will never shine in front of me.
+[k]
+
+[charaFace D 1]
+
+＠Ophelia
+I never showed this to you before, did I? Well, now you know: this is what I can do if I feel like it.
+[k]
+
+[charaFace D 0]
+
+＠Ophelia
+I'm sorry, Mash,[sr]but you're going to sit this one out.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 0,-10]
+
+＠Mash
+So once you define a target,[sr]you can manipulate its passage through time...
+[k]
+
+[charaFace G 14]
+
+＠Mash
+But, that's the domain of True Magic! Even with a Mystic Eye, that could never just be an extension of any regular magecraft!
+[k]
+
+＠Mash
+There must be more to it...[sr]Something I'm not seeing...
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠Napoleon
+Worry about that later! Here he comes!
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaTalk depthOff]
+[charaDepth A 2]
+[charaDepth F 1]
+
+[charaFace A 12]
+[charaFadein A 0.1 1]
+[wt 0.3]
+[charaFace F 12]
+[charaPut F 1]
+[charaFadeTime F 0.1 0.4]
+
+[se ad171]
+[wt 0.7]
+
+＠Sigurd
+Done talking? I want to get back to it. Let me show you what Gram can do when its limits have been released.
+[k]
+
+＠Sigurd
+It's still a ways off from its true power, but you'll just have to deal with that. There's no way Ophelia's going to let me use my third phase.
+[k]
+
+＠Sigurd
+Now, time for you to die.[sr]Hehe. Hehe, hehehehe!
+[k]
+
+[messageOff]
+[charaSpecialEffect A erasureReverse 1 0.3]
+[cueSe Battle bac52]
+[wt 0.6]
+[cueSeStop bac52 0.3]
+[charaFadeout F 0.2]
+
+[wt 0.2]
+[charaTalk depthOn]
+
+[charaPut H 1]
+[charaScale H 1.5]
+[charaEffect H bit_talk_ichimon01wh]
+[se ad171]
+[wt 0.3]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[flashin loop 0.1 0.1 FFFFFFFF FFFFFF00]
+[charaPut H 1200,1200]
+[charaScale H 1.0]
+[charaEffectStop H bit_talk_ichimon01wh]
+[effect bit_talk_14]
+[shake 0.05 2 4 0.5]
+[se ad32]
+
+[wt 0.3]
+[flashOff]
+
+[charaFace C 7]
+
+＠Napoleon
+Hahahaha! Whadda ya know![sr]This great hero guy hits even harder than the giants!
+[k]
+
+[charaFace C 0]
+
+＠Napoleon
+...Looks like I can't let my guard down, even for a moment. Mademoiselle Mash, if your armor's not working right, just hang in there and focus on defense!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 14]
+[charaFadein G 0.1 1]
+
+＠Mash
+No! I can...still fight...! I'm not going to turn and run...not for a third time against the same opponent!
+[k]
+
+＠Mash
+I can't turn back now, Senpai!
+[k]
+
+？1：Don't you dare overdo it!
+？2：Okay, but don't push yourself too far!
+
+？！
+
+[charaFace G 2]
+
+＠Mash
+...I won't![sr]I'll make sure to keep just shy of reckless!
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

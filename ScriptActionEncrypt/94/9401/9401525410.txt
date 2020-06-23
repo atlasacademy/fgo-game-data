@@ -1,0 +1,215 @@
+
+＄94-01-52-54-1-0
+
+
+
+[soundStopAll]
+
+[bgm BGM_EVENT_65 0.1]
+
+
+
+[messageOff]
+[effectPause bit_talk_parasolwipe]
+[wait effectStart bit_talk_parasolwipe]
+
+
+[branch _PlayEffect_1st PM4 1]
+
+
+[label _PlayEffect_etc]
+
+[tapSkip _from_TapSkip_etc]
+
+[scene 10001]
+
+[fadein white 1.0]
+[wait fade]
+
+[effectPause bit_talk_goal1_5]
+[wait effectStart bit_talk_goal1_5]
+
+[effectStart bit_talk_parasolwipe]
+[wt 1.0]
+
+[effectStart bit_talk_goal1_5]
+[wait effect bit_talk_goal1_5]
+[label _from_TapSkip_etc]
+
+[effectDestroy bit_talk_goal1_5]
+[effectDestroy bit_talk_parasolwipe]
+[fadein black 0]
+[wait fade]
+
+[branch _PlayEffect_End]
+
+
+[label _PlayEffect_1st]
+
+[tapSkip _from_TapSkip_1st]
+
+[effectPause bit_talk_winner1_5]
+[wait effectStart bit_talk_winner1_5]
+
+[scene 10001]
+
+[fadein white 1.0]
+[wait fade]
+
+[effectStart bit_talk_winner1_5]
+
+[wt 4.9]
+[voice 402600_0_M810]
+
+[wt 1.0]
+[voice 402600_0_M811]
+
+[wt 3.8]
+
+
+[wt 1.2]
+
+[effectStart bit_talk_parasolwipe]
+[scene 10001]
+[wt 1.0]
+[scene 44300]
+[wait effect bit_talk_parasolwipe]
+
+[label _from_TapSkip_1st]
+
+[voiceStop]
+[scene 44300]
+[effectDestroy bit_talk_winner1_5]
+[effectDestroy bit_talk_parasolwipe]
+[fadein black 0]
+[wait fade]
+
+
+[label _PlayEffect_End]
+
+[bgmStop BGM_EVENT_65 0.3]
+[wt 0.4]
+
+[branch _PlayVoice_Start PM4 1]
+
+[branch _PlayVoice_End]
+
+
+
+
+[label _PlayVoice_Start]
+
+[charaSet A 7029000 1 "Oda Nobunaga"]
+[charaSet B 6018000 1 "Mysterious Racer X"]
+
+[flagRandom _PlayVoiceNo 1 3]
+
+
+[branch _PlayVoice_3rd _PlayVoiceNo 3]
+[branch _PlayVoice_2nd _PlayVoiceNo 2]
+[branch _PlayVoice_1st _PlayVoiceNo 1]
+
+
+[label _PlayVoice_1st]
+
+[bgm BGM_EVENT_64 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 0]
+[charaFadein A 0.4 2]
+[charaFadein B 0.4 0]
+[wt 0.7]
+
+[charaFace A 11]
+＠Oda Nobunaga
+I'm [voice 9010003_0_M670]in first place![wait voice 9010003_0_M670][charaFace A 0][sr]...[voice 9010003_0_M671]So, the world has grown smaller again.
+[k]
+[wait voice 9010003_0_M671]
+
+[charaFace B 2]
+＠Mysterious Racer X
+Too [voice 9010003_0_M672]easy! I'm just getting started![wait voice 9010003_0_M672][charaFace B 5][sr]My [voice 9010003_0_M673]battle will continue until I've destroyed all Sabers!
+[k]
+[wait voice 9010003_0_M673]
+
+[charaFace A 1]
+＠Oda Nobunaga
+I'll [voice 9010003_0_M674]race you!
+[k]
+[wait voice 9010003_0_M674]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_2nd]
+
+[bgm BGM_EVENT_64 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 0]
+[charaFadein A 0.4 2]
+[charaFadein B 0.4 0]
+[wt 0.7]
+
+[charaFace A 1]
+＠Oda Nobunaga
+Go[voice 9010003_0_M680]ooal! [wait voice 9010003_0_M680][charaFace A 10][sr]No[voice 9010003_0_M681]bunaga has secured the top spot in the race to conquer the world!
+[k]
+[wait voice 9010003_0_M681]
+
+[charaFace A 1]
+＠Oda Nobunaga
+Wa[voice 9010003_0_M682]hahaha! This takes me back to my younger days![wt 1.7][charaFace A 7]
+[k]
+[wait voice 9010003_0_M682]
+
+[charaFace B 1]
+＠Mysterious Racer X
+I'm [voice 9010003_0_M683]well on my way to becoming top Saber too![wait voice 9010003_0_M683][charaFace B 2][sr]Ba[voice 9010003_0_M684]sara!
+[k]
+[wait voice 9010003_0_M684]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_3rd]
+
+[bgm BGM_EVENT_64 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFace B 0]
+[charaFadein A 0.4 2]
+[charaFadein B 0.4 0]
+[wt 0.7]
+
+[charaFace A 4]
+＠Oda Nobunaga
+Phew[voice 9010003_0_M690]... Th-that was a close one![wt 1.7][charaFace A 5]
+[k]
+[wait voice 9010003_0_M690]
+
+[charaFace B 4]
+＠Mysterious Racer X
+In[voice 9010003_0_M691]deed. If the tip of my blade had been just one centimeter to the right, who knows what could have happened!?
+[k]
+[wait voice 9010003_0_M691]
+
+[charaFace A 8]
+＠Oda Nobunaga
+What [voice 9010003_0_M692]the hell were YOU trying to do!?
+[k]
+[wait voice 9010003_0_M692]
+
+
+[label _PlayVoice_End]
+
+
+[messageOff]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_64 0.4]
+[wait fade]
+[soundStopAll]
+[end]

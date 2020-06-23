@@ -1,0 +1,756 @@
+
+
+＄94-02-08-04-1-0
+
+
+[skip false]
+[soundStopAll]
+[scene 10001]
+[fadein black 0.2]
+[wait fade]
+
+[fowardEffectPause bit_queststart80089_4]
+[wait fowardEffectStart]
+[wt 0.5]
+[fowardEffectStart]
+[wait fowardEffect]
+
+[wt 0.7]
+[fadeout black 0.4]
+[wait fade]
+
+[wt 2.0]
+[skip true]
+
+[scene 53401]
+
+[charaSet A 2011000 1 "Nikola Tesla"]
+[charaSet B 5025000 1 Edison]
+[charaSet C 6032000 1 Semiramis]
+[charaSet D 1098126200 1 "Chocogolem"]
+[charaSet E 2011000 1 ???]
+[charaSet F 1098126200 1 "Left Dummy for Effect"]
+[charaSet G 1098126200 1 "Right Dummy for Effect"]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaDepth E 1]
+[charaDepth A 0]
+
+
+
+[se ad60]
+[wt 1.0]
+[seStop ad60 1.0]
+[wt 0.4]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFilter E silhouette 00000080]
+[charaFadein E 0.7 1]
+[wt 1.5]
+
+＠???
+This must be the place.
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 0.1]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[charaFadeout E 0.7]
+[wt 1.0]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠Nikola Tesla
+Even without Presence Concealment, my burning disdain for mass production facilities has managed to bring me here undetected.
+[k]
+
+[charaFace A 2]
+
+＠Nikola Tesla
+Ugh, what a truly horrid, evil DC factory.
+[k]
+
+[charaFace A 4]
+
+＠Nikola Tesla
+...I sense neither Servants nor humans lurking about.[sr]I just need to be quick, then.
+[k]
+
+[charaFace A 0]
+
+＠Nikola Tesla
+Much as I'd like to blow this place to smithereens,[sr]that would make me no more than a terrorist.
+[k]
+
+＠Nikola Tesla
+Unlike that DC devil, an AC gentleman understands what is right and wrong. I must act with dignity and purge the evil from this factory.
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk on]
+
+[se ad157]
+[wt 1.2]
+[seStop ad157 0.5]
+
+[se ad61]
+[wt 0.1]
+[seStop ad61 1.0]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠Nikola Tesla
+Perfect. I've changed the power system from DC to AC. And...this must be the factory operation manual.
+[k]
+
+＠Nikola Tesla
+A great genius like me does not leave the details untended. Hah! I will switch their operation manuals out with the ones I prepared.
+[k]
+
+＠Nikola Tesla
+The diagrams all have images of AC circuits hidden within, undetectable by the conscious mind...
+[k]
+
+＠Nikola Tesla
+On each page, the letters “A” and “C” are always bolded...
+[k]
+
+＠Nikola Tesla
+Anyone reading the manual will be subtly guided to the conclusion that the factory should be run on AC!
+[k]
+
+＠Nikola Tesla
+What an efficient means of education... Have I just discovered an aptitude for instruction in myself?
+[k]
+
+[charaDepth D 0]
+[charaDepth A 10]
+[charaScale D 1.2]
+[wt 0.1]
+[charaFace D 0]
+[charaFilter D silhouette 00000080]
+[charaFadein D 0.4 180,50]
+
+[charaMove D 150,50 0.3]
+[wt 0.3]
+
+＠Nikola Tesla
+Now that should do[line 2][bgmStop BGM_EVENT_7 0.1][se ad7][charaShake A 0.05 1 1 0.2][charaMove A 0,10 0.2][charaFace A 5]Hmmmmrgh!?
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaFace A 0]
+
+＠Nikola Tesla
+(What's going on!? Something's grabbing me...[sr]I didn't even sense anyone... Hyaaah!)
+[k]
+
+[messageOff]
+[se ad62]
+[fowardEffect bit_talk_lightning_02t]
+[wt 1.0]
+[fowardEffectStop]
+[seStop ad62 0.1]
+[wt 0.4]
+
+[charaEffect D bit_talk_lightning_03t]
+[se ad63]
+[shake 0.02 5 4 1.0]
+[fadeout white 0.7]
+[wait fade]
+[wt 0.7]
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[seStop ad63 0.4]
+[charaEffectStop D]
+
+[charaPut F -220,-60]
+[charaPut G 300,-128]
+[wt 0.1]
+[charaFadein D 0.1 1]
+[wt 0.1]
+[fadein white 0.4]
+[wt 0.6]
+[charaFadeout D 0.4]
+[charaMove D 0,-30 0.4]
+[wt 0.4]
+[se ad322]
+[seVolume ad322 0 0.4]
+[shake 0.05 0 7 1.0]
+[wt 1.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Nikola Tesla
+Hm. It appears I have destroyed it.[sr]It was...a golem...?
+[k]
+
+[messageOff]
+[se ad410]
+[flashin once 0.2 0.2 FFFFFF80 00000000]
+[charaEffect A bit_talk_searchlight]
+[seStop ad410 0.2]
+[wt 0.2]
+[se ad410]
+[charaEffect F bit_talk_searchlight]
+[seStop ad410 0.2]
+[wt 0.2]
+[se ad410]
+[charaEffect G bit_talk_searchlight]
+[seStop ad410 0.6]
+[wt 1.0]
+
+[charaFace A 5]
+
+＠Nikola Tesla
+!!!
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaEffectStop F]
+[charaEffectStop G]
+[charaEffectStop A]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.4 1]
+[wt 0.2]
+＠Edison
+Hah! So you did come, plebeian![sr]I just knew you couldn't resist meddling!
+[k]
+
+＠Edison
+There's nowhere to run.[sr]Take a good look around you.
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaSet F 1098126200 1 "Chocogolem"]
+[charaSet G 1098126200 1 "Chocogolem"]
+[wt 0.1]
+[charaScale D 0.9]
+[charaScale F 0.9]
+[charaScale G 0.9]
+[charaDepth D 1]
+[charaDepth F 0]
+[charaDepth G 0]
+[charaTalk off]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[charaFilter D normal 00000080]
+[charaFadein D 0.1 0,-30]
+[wt 0.1]
+[charaFadein F 0.4 340,-20]
+[charaMove F 360,-20 0.4]
+[charaFadein G 0.4 -380,-20]
+[charaMove G -360,-20 0.4]
+[wt 2.2]
+
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.4]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Nikola Tesla
+...? So the guards are indeed golems.[sr]But that coloring and sweet scent... Could it be...?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠Edison
+Yes. These are the dedicated, industrious[sr]employees of my factory! My Chocogolems!
+[k]
+
+＠Edison
+Well, technically the empress created them, so they aren't MINE per se...
+[k]
+
+＠Edison
+...but they never complain about benefits, do not require rest, don't ask for pay, and taste good on top of it all.
+[k]
+
+＠Edison
+They kill FOUR birds with one stone![sr]Ah, if only I'd had employees like them in my company...
+[k]
+
+[charaFace B 0]
+
+＠Edison
+And these guys don't just work in the factory. They also handle other tasks. They are wonderful simple workers.
+[k]
+
+[charaFace B 5]
+
+＠Edison
+And naturally one of their tasks is the eradication of any AC-obsessed stupidheads who foolishly attempt to infiltrate my factory in the dark of night!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 2]
+[charaFadein B 0.1 0]
+＠Nikola Tesla
+Ha! Since Master is involved in this operation,[sr]I had intended to resolve it peacefully...
+[k]
+
+＠Nikola Tesla
+...but it seems that I must tear this place down![sr]I will rip out the hideous weed that is DC root and stem!
+[k]
+
+[charaTalk off]
+[messageOff]
+
+[se ad61]
+[charaEffect A bit_talk_lightning_01t]
+[charaEffect B bit_talk_lightning_01g]
+[wt 0.4]
+[seStop ad61 1.0]
+[wt 1.0]
+
+[se ad62]
+[charaEffect A bit_talk_lightning_02t]
+[charaEffect B bit_talk_lightning_02g]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaEffectStop B]
+[charaEffectStop A]
+[wt 0.1]
+[charaSet A 2011000 1 "Dummy for Effect 1"]
+[charaSet B 5025000 1 "Dummy for Effect 2"]
+
+[charaPut A 0]
+[charaPut B 2]
+[wt 0.1]
+
+[se ad63]
+[flashin once 0.2 0.2 FFFFFF80 00000000]
+[charaEffect A bit_talk_lightning_03t]
+[charaEffect B bit_talk_lightning_03g]
+[wt 0.2]
+[se ad285]
+[shake 0.05 2 2 0.8]
+[wt 0.8]
+[seStop ad63 0.4]
+[seStop ad285 0.4]
+[wt 0.4]
+
+[flashin once 0.2 0.2 FFFFFF80 00000000]
+[charaPut A 200,100]
+[charaPut B -200,0]
+[charaEffect A bit_talk_lightning_04t]
+[charaEffect B bit_talk_lightning_05g]
+[se ad284]
+[shake 0.05 8 8 0.2]
+[wt 0.2]
+[seStop ad284 0.2]
+[wt 0.2]
+
+[se ad285]
+[shake 0.05 6 6 0.6]
+[seStop ad285 0.6]
+[wt 0.6]
+
+[flashin once 0.2 0.2 FFFFFF80 00000000]
+[charaPut A 300,150]
+[charaPut B -400,-50]
+[charaEffect A bit_talk_lightning_04g]
+[charaEffect B bit_talk_lightning_05t]
+[se ad284]
+[shake 0.05 8 8 0.2]
+[wt 0.2]
+[seStop ad284 0.2]
+[wt 0.2]
+
+[se ad285]
+[shake 0.05 6 6 0.2]
+[seStop ad285 0.2]
+[wt 0.2]
+
+[flashin once 0.8 0.8 FFFFFF80 00000000]
+[effect bit_talk_lightning_03t]
+[effect bit_talk_lightning_03g]
+[se bac474]
+[shake 0.08 7 4 2.0]
+[wt 1.0]
+[fadeout black 1.0]
+[wait fade]
+[wt 1.0]
+
+[seStop bac474]
+[effectStop bit_talk_lightning_03t]
+[effectStop bit_talk_lightning_03g]
+[wt 0.1]
+[charaSet A 2011000 1 "Nikola Tesla"]
+[charaSet B 5025000 1 Edison]
+[wt 1.0]
+[fadein black 1.0]
+[wt 1.0]
+
+[charaFace A 4]
+[charaFadein A 0.4 2]
+[charaFace B 4]
+[charaFadein B 0.4 0]
+[wt 0.4]
+
+＠Both
+(Pant...pant...)
+[k]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 5]
+
+＠Edison
+I'm still standing...!
+[k]
+
+[charaTalk A]
+[charaFace A 5]
+
+＠Nikola Tesla
+As am I![sr]Justice is mine...!
+[k]
+
+[charaTalk off]
+[messageOff]
+[se ad61]
+[charaEffect A bit_talk_lightning_02t]
+[charaEffect B bit_talk_lightning_02g]
+[wt 2.0]
+[seStop ad61 0.4]
+[wt 0.1]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaEffectStop B]
+[charaEffectStop A]
+[wt 0.2]
+
+[bgmStop BGM_EVENT_3 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠Semiramis
+[messageShake 0.05 4 4 0.3]
+[font large]UGH! BE SILENT!
+[k]
+
+[bgm BGM_EVENT_27 0.1]
+
+＠Semiramis
+And what is this blinding light!? Are you both mad, causing such uproar in the middle of the night?[sr]How am I to sleep in this racket!?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaDepth C 0]
+[charaDepth A 10]
+[charaDepth B 10]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Edison
+Ah, my empress. I apologize if I interrupted your repose. This criminally foolish AC fanatic is to blame.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Nikola Tesla
+I was simply defending myself, my lady. I will have you know that I am a peaceful and mild-mannered gentleman.
+[k]
+
+
+＠Nikola Tesla
+While it is true that I snuck in here for a covert operation, I can assure you that I've done nothing wrong as a scientist.
+[k]
+
+＠Nikola Tesla
+And actually, I am honored to be in the[sr]august presence of such a great empress.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Semiramis
+Hm?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Nikola Tesla
+My empress. O great lady of a beautiful heart. I can say with certainty that those who love birds are of pure and noble heart.
+[k]
+
+＠Nikola Tesla
+That is my honest opinion.[sr]So please, as a fellow lover of doves, hear me out.
+[k]
+
+＠Nikola Tesla
+Using the wrong kind of energy[sr]will lead only to disaster!
+[k]
+
+＠Nikola Tesla
+Of course, chocolate mass production is all fine and good, but you should reconsider what type of system you want to power it!
+[k]
+
+＠Nikola Tesla
+More specifically, you should think seriously about how trustworthy that furry scoundrel really is!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+＠Semiramis
+(...Sigh). As long as the chocolate continues to flow,[sr]I do not care what manner of power...is...used...
+[k]
+
+[charaFace C 0]
+＠Semiramis
+Well...now that I think of it...
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Nikola Tesla
+???
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠Semiramis
+...Yes, while I do not care about how the necessary power is generated, I confess to having a simple, childish curiosity...
+[k]
+
+＠Semiramis
+Curiosity about which of you two is[sr]able to produce more electrical power...
+[k]
+
+[charaFadeout C 0.1]
+[charaTalk off]
+[wt 0.1]
+
+[charaFace A 2]
+[charaFadein A 0.1 2]
+[charaFace B 2]
+[charaFadein B 0.1 0]
+
+＠Both
+[messageShake 0.05 4 4 0.3]
+[font large]Me, of course!
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠Semiramis
+Hah. Words are cheap.[sr]Show me who is superior.
+[k]
+
+＠Semiramis
+I will arrange it so that each of you[sr]may power a separate factory at the same time.
+[k]
+
+＠Semiramis
+Each factory will have the same number of golems.[sr]The only difference shall be the power you provide. I will determine which factory is superior by seeing which produces more chocolate.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠Edison
+Ah, interesting. Are you really up to the task, Tesla!?[sr]In a battle of mass production, I am sure to be the victor!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠Nikola Tesla
+Quit your yapping, lion-head. My limitless genius will show you how extraordinary my production can be!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+＠Semiramis
+Fine, fine. I don't care anymore. Chocogolem, get these two out of my sight and to their separate factories.
+[k]
+
+[charaFace C 4]
+
+＠Semiramis
+I've seen enough. Those two may be useful separately, but putting them together is dreadfully irritating.
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[wt 0.1]
+
+[charaFadeout C 0.1]
+
+[charaTalk off]
+[charaScale D 0.95]
+[charaScale F 0.95]
+[charaScale A 0.9]
+[charaScale B 0.9]
+[wt 0.1]
+
+[charaFace A 0]
+[charaFadein A 0.1 240,-120]
+[charaFace B 0]
+[charaFadein B 0.1 -240,-120]
+
+[charaDepth D 0]
+[charaDepth F 0]
+[charaDepth A 10]
+[charaDepth B 10]
+
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+
+[charaFadein D 0.4 340,-20]
+[charaFadein F 0.4 -340,-20]
+[wt 0.4]
+
+[charaMove A 240,-90 0.7]
+[charaShake A 0.05 1 1 0.2]
+[charaMove B -240,-90 0.7]
+[charaShake B 0.05 1 1 0.2]
+
+[se ad77]
+[wt 0.2]
+[seStop ad77 0.4]
+[wt 1.5]
+
+[se ade79]
+[charaMove B -260,-90 1.0]
+[charaMove F -360,-20 1.0]
+
+[charaMove A 260,-90 1.0]
+[charaMove D 360,-20 1.0]
+
+[wt 0.7]
+[charaFadeout B 0.4]
+[charaFadeout A 0.4]
+[charaFadeout D 0.4]
+[charaFadeout F 0.4]
+[wt 0.4]
+[bgmStop BGM_EVENT_27 1.8]
+[seStop ade79 1.8]
+[wt 2.0]
+
+[bgm BGM_EVENT_2 0.4]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Semiramis
+At any rate, now I have twice the power, and golem minions. My chocolate production can only increase now!
+[k]
+
+＠Semiramis
+And then, when all is said and done...
+[k]
+
+
+[charaFace C 12]
+＠Semiramis
+Hehehe...[wt 0.7][charaFace C 4](Yawn)
+[k]
+
+[charaFace C 3]
+
+＠Semiramis
+...I'm going back to bed...
+[k]
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.4]
+[soundStopAll]
+[end]

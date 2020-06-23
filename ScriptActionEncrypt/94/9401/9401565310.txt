@@ -1,0 +1,215 @@
+
+＄94-01-56-53-1-0
+
+
+
+[soundStopAll]
+
+
+
+[messageOff]
+
+
+[branch _PlayEffect_1st PM4 1]
+
+
+[label _PlayEffect_etc]
+
+[tapSkip _from_TapSkip_etc]
+
+[scene 10001]
+
+[effectPause bit_talk_goal2_3]
+[wait effectStart bit_talk_goal2_3]
+
+[fadein white 0.5]
+[wait fade]
+
+[effectStart bit_talk_goal2_3]
+[wait effect bit_talk_goal2_3]
+
+[label _from_TapSkip_etc]
+
+[effectDestroy bit_talk_goal2_3]
+[fadein black 0]
+[wait fade]
+
+[branch _PlayEffect_End]
+
+
+[label _PlayEffect_1st]
+
+[bgm BGM_EVENT_3 0.1]
+
+[tapSkip _from_TapSkip_1st]
+
+[effectPause bit_talk_winner2_3]
+[wait effectStart bit_talk_winner2_3]
+
+[scene 10001]
+
+[fadein white 0.5]
+[wait fade]
+
+[effectStart bit_talk_winner2_3]
+
+[bgmStop BGM_EVENT_3 3.7]
+
+[wt 3.9]
+[se ad251]
+[seVolume ad251 0 0.7]
+
+[wt 0.6]
+
+[voice 402600_0_M790]
+
+[scene 10000]
+
+[wait effect bit_talk_winner2_3]
+[wt 1.4]
+
+[label _from_TapSkip_1st]
+
+[voiceStop]
+[scene 10000]
+[effectDestroy bit_talk_winner2_3]
+[fadein black 0]
+[wait fade]
+
+
+[label _PlayEffect_End]
+
+[branch _PlayVoice_Start PM4 1]
+
+[branch _PlayVoice_End]
+
+
+
+
+[label _PlayVoice_Start]
+
+[charaSet A 3029002 1 Minamoto-no-Raikou]
+[charaSet B 5022001 1 Sanzang]
+
+[bgm BGM_EVENT_64 0.1]
+
+[scene 45201 1.0]
+[wt 1.0]
+
+[flagRandom _PlayVoiceNo 1 3]
+
+
+[branch _PlayVoice_3rd _PlayVoiceNo 3]
+[branch _PlayVoice_2nd _PlayVoiceNo 2]
+[branch _PlayVoice_1st _PlayVoiceNo 1]
+
+
+[label _PlayVoice_1st]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 1]
+[charaDepth A 9]
+[charaDepth B 1]
+[charaFadein A 0.4 0]
+[charaFadein B 0.4 2]
+[wt 0.7]
+
+＠Minamoto-no-Raikou
+First[voice 9010004_0_M700] place?[sr]First place in what?
+[k]
+[wait voice 9010004_0_M700]
+
+＠Sanzang
+What[voice 9010004_0_M701] was it...? Oh, right, prison breaking[wait voice 9010004_0_M701][charaFace B 0]...[sr][voice 9010004_0_M702] I think it's about the outcome of the prison break!
+[k]
+[wait voice 9010004_0_M702]
+
+＠Minamoto-no-Raikou
+Oh[voice 9010004_0_M703] my...[sr]Right then! We need to escape, and quickly!
+[k]
+[wait voice 9010004_0_M703]
+
+[charaFace A 1]
+＠Minamoto-no-Raikou
+Keep[voice 9010004_0_M704] going!
+[k]
+[wait voice 9010004_0_M704]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_2nd]
+
+[charaTalk B]
+[charaFace A 0]
+[charaFace B 4]
+[charaDepth A 9]
+[charaDepth B 1]
+[charaFadein A 0.4 0]
+[charaFadein B 0.4 2]
+[wt 0.7]
+
+＠Sanzang
+(Sigh)[voice 9010004_0_M710] I'm beyond tired. [wait voice 9010004_0_M710][voice 9010004_0_M711]I don't mind physical activity,[sr]but it's such a downer when I can't see the sunshine.
+[k]
+[wait voice 9010004_0_M711]
+
+＠Minamoto-no-Raikou
+I[voice 9010004_0_M712] would agree.[sr]However, escaping is our current priority.
+[k]
+[wait voice 9010004_0_M712]
+
+[charaFace B 0]
+＠Sanzang
+We[voice 9010004_0_M713] should be fine. We have the blessings of the Buddha. We will definitely get out! [wait voice 9010004_0_M713] Because [voice 9010004_0_M714]we didn't do anything wrong! [wait voice 9010004_0_M714][charaFace B 4][voice 9010004_0_M715]...We haven't, right?
+[k]
+[wait voice 9010004_0_M715]
+
+[charaFace A 1]
+＠Minamoto-no-Raikou
+Of[voice 9010004_0_M716] course not.
+[k]
+[wait voice 9010004_0_M716]
+
+[branch _PlayVoice_End]
+
+
+[label _PlayVoice_3rd]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFace B 1]
+[charaDepth A 9]
+[charaDepth B 1]
+[charaFadein A 0.4 0]
+[charaFadein B 0.4 2]
+[wt 0.7]
+
+＠Minamoto-no-Raikou
+We[voice 9010004_0_M720]have been busily digging. It is quite the deep exercise. I am learning a great deal.
+[k]
+[wait voice 9010004_0_M720]
+
+[charaFace B 5]
+＠Sanzang
+Digging[voice 9010004_0_M721]...quite deep...?[sr]Hmm, did you just make a pun...?
+[k]
+[wait voice 9010004_0_M721]
+
+[charaFace A 4]
+＠Minamoto-no-Raikou
+N-[voice 9010004_0_M722]no. Absolutely not![sr]I would never do such a thing!!!
+[k]
+[wait voice 9010004_0_M722]
+
+
+[label _PlayVoice_End]
+
+
+[messageOff]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_64 0.4]
+[wait fade]
+[soundStopAll]
+[end]

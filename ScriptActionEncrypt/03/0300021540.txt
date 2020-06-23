@@ -1,0 +1,327 @@
+
+
+＄03-00-02-15-4-0
+
+
+[soundStopAll]
+
+
+[charaSet A 8001410 1 Mash]
+[charaSet B 1098123000 1 Meunière]
+[charaSet C 1098153000 1 Napoleon]
+[charaSet D 1033002 1 Sigurd]
+[charaSet E 1098124500 1 "Da Vinci"]
+[charaSet F 3012001 1 Brynhild]
+
+[charaSet H 98115000 1 Effect]
+
+[scene 51600]
+
+[shake 0.05 0 2 3.0]
+
+[fadein black 1.0]
+
+[se ad629]
+[seVolume ad629 0 0.4]
+
+[se ad553]
+[seVolume ad553 0 0.4]
+[wait fade]
+
+
+[cameraMove 1.5 0,0 1.2]
+[wt 0.5]
+[fadeout white 1.0]
+[wait fade]
+
+[cameraHome 0.1]
+
+[scene 60703]
+[fadein white 1.0]
+[seStop ad553 2.0]
+[seStop ad629 2.0]
+
+[wait fade]
+
+[wt 1.2]
+
+[bgm BGM_EVENT_80 0.1 0.6]
+
+＠Scáthach-Skadi
+...Why are we using this lump of metal for transport?
+[k]
+
+＠Scáthach-Skadi
+That seems terribly inefficient.
+[k]
+
+＠Scáthach-Skadi
+The Heroic Spirits would reach our destination far more quickly with a flight rune, or a speed rune.
+[k]
+
+＠Fou
+Fou? Fo fou?
+[k]
+
+＠Holmes
+We determined this was the best course of action under the circumstances, Your Majesty.
+[k]
+
+＠Da Vinci
+Totally. The giants are waaay more aggressive now, AND we've got Tree of Emptiness seeds falling from the sky.
+[k]
+
+＠Da Vinci
+Flying would make us easy targets for the giants lobbing ice boulders, and fleeing on foot would open us up to getting picked off individually.
+[k]
+
+＠Da Vinci
+Here in the Border, it's much easier to attack and defend at once.
+[k]
+
+＠Da Vinci
+For example, the emperor can use his cannon up on the deck to scatter any groups that come after us!
+[k]
+
+＠Meunière
+Hm...?[sr]I just saw something new on the radar.
+[k]
+
+＠Goredolf
+More enemies!?
+[k]
+
+＠Meunière
+No, they're not hostile. But they are flying...[sr]Are those...birds?
+[k]
+
+＠Holmes
+Can you put them up on the monitor?
+[k]
+
+＠Meunière
+Of course. Here you go.
+[k]
+
+[messageOff]
+[se ade165]
+[wt 0.4]
+[seStop ade165 0.1]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_80 1.0]
+[wait fade]
+
+[cameraMove 0.1 0,-80 1.0]
+
+[effect bit_talk_security 0,80]
+
+[scene 62200]
+[wt 0.5]
+
+[wipeFilter cinema 0.5 0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_79 0.1]
+
+[wt 2.0]
+
+＠Mash
+Ah, look...
+[k]
+
+＠Fou
+Fou!
+[k]
+
+？1：Huh. Birds.
+？2：Haven't seen these in a while.
+
+？！
+
+＠Mash
+Yes. Two of them again, no less.
+[k]
+
+＠Mash
+They must be native to the fields that crop[sr]up in between the fire and ice zones...
+[k]
+
+＠Sitonai
+Huh. They must be good friends.[sr]...Wait. Let me get a better look at them. Hmm?
+[k]
+
+＠Scáthach-Skadi
+You two. You say you have seen these birds before?
+[k]
+
+＠Mash
+Yes. Several times...
+[k]
+
+＠Scáthach-Skadi
+I see...
+[k]
+
+＠Scáthach-Skadi
+That explains it. Now it all makes sense.
+[k]
+
+＠Da Vinci
+Something on your mind, Your Majesty?
+[k]
+
+＠Scáthach-Skadi
+Oh, just thinking aloud, young sage.
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_79 1.5]
+[wait fade]
+
+[wipeOff]
+
+[cameraHome 0.1]
+
+[effectStop bit_talk_security]
+
+[scene 51600]
+[wt 0.5]
+
+
+[fadein black 0.7]
+[wait fade]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.3]
+
+＠Napoleon
+Hey! Mesdames et messieurs! Can you hear me down there in that luxurious, toasty room of yours!
+[k]
+
+[bgm BGM_EVENT_80 0.1]
+[charaFace C 2]
+
+＠Napoleon
+This is Napoleon, reporting in from atop the Border.[sr]I just saw some flying creatures besides those birds!
+[k]
+
+＠Napoleon
+We've got another bunch of seeds headed our way![sr]How far away are these things coming from, anyway!?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠Meunière
+I'm not seeing anything over[line 2][wt 0.7][charaFace B 2][sr]Whoa, scratch that! Definitely more of those seeds!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠Napoleon
+...Ah crap. They're changing course[sr]to try and land on top of this thing.
+[k]
+
+[charaFace C 2]
+
+＠Napoleon
+Moving to intercept now![sr]Anyone who wants to join me, come on up!
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+？1：Let's go take them out.
+？2：Are you sure you're fully recovered, Mash?
+
+？！
+
+＠Mash
+Yes. I'm all set! Da Vinci already[sr]finished looking over the Ortinax!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+
+＠Da Vinci
+It was pretty much good as new, thanks to the queen fixing it up. Man, those Primordial Runes really are something.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[se ad166]
+
+[charaDepth D 10]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+
+[charaFace F 0]
+[charaFadein F 0.1 2]
+[wt 0.2]
+[seStop ad166 0.15]
+
+＠Sigurd
+I'll head out as well. I would like to familiarize myself with Gram's weight a bit more.
+[k]
+
+＠Brynhild
+I'll go too.
+[k]
+
+＠Sigurd
+No, you stay here. I can handle this alone,[sr]and I want you to rest up.
+[k]
+
+＠Brynhild
+No, my love.[sr]Come what may, I will not leave your side.
+[k]
+
+[charaFace D 1]
+
+＠Sigurd
+...I see. Very well then, let us go together.
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

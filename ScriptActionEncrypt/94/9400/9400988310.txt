@@ -1,0 +1,228 @@
+
+＄94-00-98-83-1-0
+
+[charaSet A 2003001 1 "Robin Hood"]
+[charaSet B 98006000 1 Enemy]
+[charaSet C 98024100 1 Maiden]
+
+[soundStopAll]
+
+
+[scene 20820]
+
+[fadein black 2]
+[wait fade]
+
+[se bac20]
+[charaPut B 0,0]
+[charaEffect B bit_shot_01]
+[wt 0.5]
+[se bac16]
+[shake 0.05 2 4 0.25]
+[wt 0.7]
+
+[wt 0.7]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+＠Robin Hood
+Done with work. Looks like we got rid of the mountain bandits around here.
+[k]
+
+＠Robin Hood
+But you're a curious one, Master.[sr]You didn't have to hang out with the likes of me.
+[k]
+
+？1：Good work today. Here you go.
+？2：Take your day's nutrition!
+
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[charaFace A 0]
+＠Robin Hood
+Wh-what the? Well, I'm not complaining about getting something fr[line 3]
+[k]
+
+＠Robin Hood
+...
+[k]
+
+？1：Huh...? Hello?
+
+？！
+
+[charaFace A 1]
+＠Robin Hood
+No, sorry. It was so unexpected, I just kind of froze.
+[k]
+
+＠Robin Hood
+Valentine's Day, was it? I do like holidays, so...[sr]Thank you!
+[k]
+
+[charaFace A 4]
+＠Robin Hood
+But now I have to give you something in return. Something that my whimsical Master would appreciate...
+[k]
+
+＠Robin Hood
+Hmmm, it may not be useful during battle, but it'll net you good pocket money for your travels if you sell it.
+[k]
+
+[charaFace A 1]
+＠Robin Hood
+Here. As your squire, I humbly offer you this, my Master.
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[equipSet C 9805220 1]
+[wait equipSet C]
+[charaFace C 0]
+[charaFadein C 0.5 0,-70]
+[wt 2.0]
+[charaFadeout C 0.4]
+[wt 0.5]
+
+？1：...A silver coin?
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Robin Hood
+Yeah. It's a commemorative item that was made when some evil lord was overthrown. It was apparently made by crushing all of his silver.
+[k]
+
+＠Robin Hood
+It was none of my business, but some village maiden insisted I take it.
+[k]
+
+＠Robin Hood
+It was a commemoration of victory, however brief. That's why it could probably be used as some kind of talisman.
+[k]
+
+？2：What was up with that look?
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Robin Hood
+Eh, nothing special. I was just remembering something. Caught me off-guard.
+[k]
+
+＠Robin Hood
+Well, something similar happened in the past.
+[k]
+
+
+[messageOff]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[charaSet A 98110700 1 "Robin Hood_Monotone"]
+[charaSet C 98024100 1 Maiden]
+[charaFilter C silhouette 00000000]
+
+
+[fowardEffect bit_talk_rain01]
+
+[wipeFilter cinema 0.5 0]
+
+[scene 20823]
+
+[charaTalk C]
+[charaFadein C 0.4 1]
+
+
+[fadein black 1.0]
+[wait fade]
+
+
+[wt 2.0]
+[se ad59]
+[seVolume ad59 0 0.6]
+[charaFadeout C 0.7]
+[wt 0.5]
+[seStop ad59 1.0]
+[wt 1.0]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+[wt 2.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[wipeOff]
+[fowardEffectStop bit_talk_rain01]
+
+[charaFadeout A 0.1]
+
+[wt 1.0]
+
+[charaSet A 2003001 1 "Robin Hood"]
+[charaSet C 98024100 1 Maiden]
+
+[scene 20820]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_2 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+＠Robin Hood
+Today's supposed to be a celebratory day. What's up with you calling on a wanderer like me on a day like this?
+[k]
+
+？！
+
+[charaFace A 1]
+＠Robin Hood
+Wait a minute, we shouldn't be hanging around in this forest if it's Valentine's Day!
+[k]
+
+＠Robin Hood
+We'd better get back to Chaldea.[sr]If it's a festival, we should enjoy it to the fullest.
+[k]
+
+＠Robin Hood
+After all, a real connoisseur knows the best part of a festival is when you head back to your room to bask in the memories you made.
+[k]
+
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+[soundStopAll]
+[end]

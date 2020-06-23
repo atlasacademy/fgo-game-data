@@ -1,0 +1,267 @@
+
+＄94-00-98-10-1-0
+
+[charaSet A 7006001 1 "Sakata Kintoki"]
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+
+[scene 10310]
+
+[fadein black 2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠Sakata Kintoki
+Yo, Boss. Somethin's been botherin' me since this morning.
+[k]
+
+＠Sakata Kintoki
+Is today that Halloween festival thing again?
+[k]
+
+[charaFace A 3]
+＠Sakata Kintoki
+...Sheesh. I don't get it.[sr]All the women staff have been so restless...
+[k]
+
+[charaFace A 4]
+＠Sakata Kintoki
+Chocolate?[sr]You're givin' me some?
+[k]
+
+＠Sakata Kintoki
+Kids get candy during Halloween.[sr]Take a good look at me. I ain't no kid.
+[k]
+
+＠Sakata Kintoki
+I get you thinkin' Ibaraki is a kid, 'cause she looks like one, but this is me we're talking about. ME.
+[k]
+
+？1：It's not Halloween.
+？2：It's Valentine's Day.
+
+？！
+
+＠Sakata Kintoki
+Valentine's, huh?
+[k]
+
+[messageOff]
+[charaFace A 3]
+[wt 1.0]
+[charaFace A 1]
+
+
+[charaFace A 1]
+＠Sakata Kintoki
+Oh! Valentine's Day! I know that! It's like a holiday in this era, yeah?
+[k]
+
+[charaFace A 0]
+＠Sakata Kintoki
+Ah, I get it now. Chocolates... So that's why Shuten and Raikou were havin' a golden brawl...
+[k]
+
+？1：Oh is that so?
+？2：You're a popular one...
+？！
+
+[charaFace A 2]
+＠Sakata Kintoki
+It ain't over me! 'Course not! That's definitely a no-thanks-leaves-a-bad-taste-in-your-mouth kind of situation!
+[k]
+
+[charaFace A 4]
+＠Sakata Kintoki
+I bet they were duking it out to see who would give chocolates to you, Boss. That battle looked serious.
+[k]
+
+[flag MALE false]
+[flag FEMALE false]
+
+[selectionUse masterMale]
+
+？1：Do you have enough chocolates?
+
+[flag MALE true]
+
+？2：Got room to eat another one?
+
+[flag MALE true]
+
+？！
+
+[selectionUse masterFemale]
+？1：Do you have enough chocolates?
+
+[flag FEMALE true]
+
+？2：Got room to eat another one?
+
+[flag FEMALE true]
+
+？！
+
+[charaFace A 0]
+＠Sakata Kintoki
+Hm? What?
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[branch _isMale MALE 1]
+[branch _isFemale FEMALE 1]
+
+[label _isMale]
+
+＠Sakata Kintoki
+What? You're givin' this to me? [wt 0.3][charaFace A 2]Munch, munch...hey! These're chocolates again!
+[k]
+
+[charaFace A 0]
+＠Sakata Kintoki
+Now that I think of it, havin' someone gift you candy's kinda nice.
+[k]
+
+[charaFace A 1]
+＠Sakata Kintoki
+I give you my golden thanks, Master.[sr]All right! Wait right there!
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.4]
+[se ad59]
+[seStop ad59 1.0]
+[wt 1.0]
+
+
+[branch _branchEnd]
+
+[label _isFemale]
+
+[charaFace A 3]
+＠Sakata Kintoki
+Y-yeah...
+[k]
+
+＠Sakata Kintoki
+O-oh right. Boss...um...well...um, I give you my very golden thanks...
+[k]
+
+＠Sakata Kintoki
+...Uh, well... Yeah, just wait right there.
+[k]
+
+
+[messageOff]
+[se ad59]
+[seStop ad59 1.0]
+[charaFadeout A 0.4]
+[wt 1.0]
+
+[label _branchEnd]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad59]
+[seVolume ad59 0 0.2]
+[wt 0.5]
+[seVolume ad59 1.0 0.9]
+[wt 1.0]
+[seStop ad59 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+
+＠Sakata Kintoki
+Thanks for waiting! So, here's a little somethin' back for ya, Boss. Here ya go!
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[equipSet B 9805940 1 ]
+[wait equipSet B]
+[charaFace B 0]
+[charaFadein B 0.5 0,-70]
+[wt 2.0]
+[charaFadeout B 0.4]
+[wt 0.5]
+
+？1：Whoa, amazing!
+？2：This is sure to fill me up!
+
+？！
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠Sakata Kintoki
+I figured givin' sweets in return for getting' sweets is the most GOLDEN thing to do. But my room ain't got anything like that to give you, Boss.
+[k]
+
+[charaFace A 3]
+＠Sakata Kintoki
+Forgive me, but these are all I got.[sr]Accept 'em if ya like.
+[k]
+
+？1：Hey, there's even a golden necklace too!
+
+？！
+
+[charaFace A 1]
+＠Sakata Kintoki
+Figured I can't just give you sweets![sr]That's a genuine 18-karat golden gold goldy necklace!
+[k]
+
+[charaFace A 4]
+＠Sakata Kintoki
+...It's a spare, yeah, I had extra. Sorry, Boss.
+[k]
+
+[charaFace A 0]
+＠Sakata Kintoki
+But I thought it'd look good on ya. After all, you're the Master to the great Sakata Kintoki!
+[k]
+
+[charaFace A 1]
+＠Sakata Kintoki
+If ya like it, put it on.[sr]That way, we'll both have matchin' emblems!
+[k]
+
+
+
+
+
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+[soundStopAll]
+[end]

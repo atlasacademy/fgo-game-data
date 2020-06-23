@@ -1,0 +1,658 @@
+
+
+＄03-00-02-03-2-1
+
+
+[soundStopAll]
+
+[charaSet A 8001400 1 Mash]
+[charaSet B 1033000 1 "Sigurd (Silhouette)"]
+[charaFilter B silhouette 00000080]
+[charaSet C 1033000 1 Sigurd]
+[charaSet G 98115000 1 Effect]
+[charaSet H 98115000 1 Effect]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[charaDepth H 10]
+
+[charaPut H 1]
+[charaEffect H bit_talk_celebro]
+[charaEffect H bit_talk_celebro_back]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 60601]
+
+[fadein black 1.0]
+[wait fade]
+
+[se adm14]
+[effect bit_talk_kengekiall03]
+
+[wt 0.2]
+[se adm14]
+[wt 0.5]
+
+[se ad32]
+[effect bit_talk_14]
+[wt 1.0]
+
+[se ad170]
+[effect bit_talk_14]
+[wt 0.3]
+[se ad32]
+[effect bit_talk_14]
+[wt 0.7]
+
+
+[se ad671]
+[charaShake A 0.05 3 2 1.2]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.4 1]
+
+＠Mash
+Khh...!
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+[wt 0.4]
+[se ad681]
+
+[charaShake C 0.05 5 0 0.4]
+[charaFadeout C 0.4]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Mash
+(Here he comes!)
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad680]
+[fowardEffect bit_talk_gram_slash_02]
+[wt 0.6]
+
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[se ad170]
+[effect bit_talk_14]
+[charaShake A 0.05 3 3 0.6]
+[wt 0.5]
+
+＠Mash
+Ghh...![wt 0.5][charaFace A 2][sr]Haaaaaa!
+[k]
+
+[flag MALE false]
+[flag FEMALE false]
+
+[selectionUse masterMale]
+？1：Using a Command Spell!
+[flag MALE true]
+？！
+
+[selectionUse masterFemale]
+？1：Using a Command Spell!
+[flag FEMALE true]
+
+？！
+
+[messageOff]
+
+[branch play01 MALE 1]
+[branch play02 FEMALE 1]
+
+[label play01]
+[charaEffect G bit_talk_CommandMantra_01 0,64]
+[wt 0.5]
+[se bas16]
+[wt 1.5]
+
+[branch play03]
+
+[label play02]
+[charaEffect G bit_talk_CommandMantra_02 0,64]
+[wt 0.5]
+[se bas16]
+[wt 1.5]
+
+[branch play03]
+
+[label play03]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠Sigurd
+Nn...
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[seStop ad632 0.5]
+[fadeMove white 0.4 1.0]
+[se ad467]
+[se ad170]
+[se ad32]
+[wait fade]
+
+[fadein white 0.3]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Mash
+Haaaaaa!!!
+[k]
+
+[messageOff]
+
+[se ad73]
+[charaMoveScale A 1.0 0.3]
+[charaPut G 1]
+[charaEffect G bit_talk_41]
+[wt 0.3]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_41]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+[wt 0.1]
+[se ad686]
+[charaEffect C bit_talk_13]
+[flashin once 0.2 0.2 FFFFFF80 FFFFFF80]
+[charaShake C 0.05 4 3 0.5]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaScale A 1.0]
+
+＠Mash
+(There!)
+[k]
+
+＠Mash
+(I got him!)
+[k]
+
+[messageOff]
+[se ad54]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.4 1]
+
+＠Mash
+(Gasp, gasp, gasp...)[sr]Phew...
+[k]
+
+[charaFace A 7]
+
+＠Mash
+...That blow had all of our magical energy behind it. Both mine and Senpai's. And thanks to Holmes's help, I'm sure it was very powerful.
+[k]
+
+＠Mash
+It may not have been true baritsu, but I'm certain you felt it anyway. Your Spirit Core should be damaged in several places now.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠Sigurd
+...[sr]...
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠Mash
+...Please leave, Sigurd.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠Sigurd
+My Spirit Core, huh?[sr]What about it?
+[k]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠Sigurd
+[f large]What about it?
+[k]
+
+[messageOff]
+[se ad681]
+
+[charaFadeout C 0.4]
+[charaShake C 0.05 5 0 0.4]
+[wt 0.8]
+
+？1：Mash!
+？2：I can't see where he[line 2]
+
+？！
+
+
+[se adm14]
+[se ad679]
+[effect bit_bolg_01]
+[wt 0.2]
+
+[se ad680]
+[effect bit_bolg_02]
+[wt 0.2]
+
+[effect bit_talk_14]
+[se ad170]
+[wt 0.8]
+[se ad322]
+[shake 0.05 3 2 1.0]
+[wt 1.0]
+
+＠Mash
+Aaagh...!
+[k]
+
+[messageOff]
+[se ad632]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.4 1]
+[charaShake A 0.05 2 1 0.8]
+[wt 0.4]
+
+＠Mash
+Sen...pai...![seStop ad632 1.5]
+[k]
+
+＠Mash
+My exoskeleton's drive is failing... I've only got a little magical energy left... Khh... No, not yet...!
+[k]
+
+＠Mash
+I can't...afford to...fall...yet...![sr]Senpai... Sen...pai...
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[charaMove A 0,-15 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+
+？1：(Run over to her)
+
+？！
+
+[messageOff]
+[se ad55]
+[seVolume ad55 0 0.4]
+[shake 0.05 0 1 0]
+[wt 0.4]
+
+[seStop ad55]
+[shakeStop]
+
+[se ad1]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.4 1]
+[charaShake C 0.05 3 3 0.4]
+
+＠Sigurd
+Stop. Don't move.
+[k]
+
+＠Sigurd
+So... What was that just now?[sr]Something only a hybrid could do?
+[k]
+
+＠Sigurd
+I was pretty surprised to hear you put all your magical energy into that attack. Never thought I'd see a hunter be so chatty before they were about to take down their quarry.
+[k]
+
+＠Sigurd
+...[sr]...
+[k]
+
+＠Sigurd
+No, that's not right. You're not hunters or heroes.[sr]You're probably not warriors, either.
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_24 0.5 0.5]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se bac151]
+[shake 0.05 3 4 1.0]
+[flashin once 0.2 0.2 FF000080 FF000000]
+
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠Mash
+Senpai...!!!
+[k]
+
+＠Mash
+Khh... Come on... Move, Ortinax...![sr]Please...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠Sigurd
+You poor, pathetic children.[sr]This is an act of mercy.
+[k]
+
+＠Sigurd
+Rejoice. I will behead you with[sr]the sword of your own beloved hero.
+[k]
+
+＠Sigurd
+Pitiful humans. Neither you, nor the world,[sr]have any future to look forward to.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠Mash
+No! Stop...! Senpai, please![sr]Use another Command Spell on me...! Senpai...!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠Sigurd
+Don't bother. You'll be dead long before you[sr]get the chance to summon your magical energy.
+[k]
+
+＠Sigurd
+Farewell.
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 2.0]
+[se ad51]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaFilter B normal 00000000]
+
+？1：(Refuse to look away)
+
+[se adm14]
+
+＠
+...
+[k]
+
+＠
+His sword swung through the air,[sr]slicing even the wind.
+[k]
+
+＠
+...[sr]...
+[k]
+
+＠
+...There was no blood.
+[k]
+
+＠
+There was no spray from the neck. No gruesome[sr]sounds of meat being cleaved from bone.
+[k]
+
+＠
+[%1]'s head remained attached to [&his:her][sr]shoulders. [&He:She] was still alive.
+[k]
+
+＠
+If the tip of Sigurd's demonic sword had come even a hairsbreadth closer...[%1]'s life would have ended.
+[k]
+
+＠
+But that didn't happen.
+[k]
+
+[messageOff]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.7 1]
+[wt 1.0]
+
+＠
+[charaTalk A]
+The red blade stopped dead in its tracks,[sr]right before reaching its mark.
+[k]
+
+？2：(Close eyes and use a Command Spell)
+
+[wipeout openEye 0.1 0.1]
+[wait wipe]
+
+[charaPut H 2000,2000]
+[wt 0.1]
+
+[scene 10000]
+
+[wipein openEye 0.1 0.1]
+[wait wipe]
+
+[se adm14]
+
+＠
+...Sigurd was right.[sr]The sword did come faster than the Command Spell.
+[k]
+
+＠
+The sound of the sword slicing[sr]through the air rang out...
+[k]
+
+＠
+...but for some reason, that was the only sound.
+[k]
+
+＠
+A second passed, then two...and nothing changed.
+[k]
+
+＠
+[%1] remained unharmed...
+[k]
+
+＠
+...and somehow still alive.
+[k]
+
+
+[messageOff]
+[wipeout openEye 0.1 0.1]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[scene 60601]
+
+[wipein openEye 1.0 0.5]
+[wait wipe]
+[wt 1.0]
+
+＠
+[charaTalk A]
+The red blade had stopped dead in its tracks,[sr]right before [&his:her] eyes.
+[k]
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠Mash
+(His sword stopped...mid-swing...)
+[k]
+
+[charaFace A 9]
+
+＠Mash
+Master!
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[wt 0.3]
+[charaFace B 12]
+[charaFadein B 0.4 1]
+[wt 0.7]
+
+＠Sigurd
+...Hmph.[charaFadeout C 0.1][bgm BGM_EVENT_81 0.1] I guess this is what[sr]they call a hero's pride.
+[k]
+
+[se ad51]
+
+＠Sigurd
+You got lucky, child.
+[k]
+
+
+[messageOff]
+[se ad60]
+[charaFadeout B 0.7]
+[wt 1.0]
+[seStop ad60 1.0]
+[wt 0.6]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+[se ad632]
+[wt 0.8]
+
+＠Mash
+Master![seStop ad632 1.5]
+[k]
+
+＠Mash
+Please don't move...![sr]I'm afraid his kick injured me pretty badly...
+[k]
+
+[messageOff]
+[charaFace A 11]
+[wt 1.0]
+[charaFace A 8]
+
+＠Mash
+So...please, just stay still for now...
+[k]
+
+＠Mash
+...Senpai...
+[k]
+
+[messageOff]
+[charaFadeout A 0.7]
+[charaMove A 0,-15 1.0]
+[wt 1.0]
+[se ad144]
+
+
+？1：Mash...!
+
+？！
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

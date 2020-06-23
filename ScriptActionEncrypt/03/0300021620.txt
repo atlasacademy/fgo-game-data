@@ -1,0 +1,440 @@
+
+
+＄03-00-02-16-2-0
+
+
+[soundStopAll]
+
+
+[charaSet A 8001400 1 Mash]
+[charaSet B 98002000 1 Fou]
+[charaSet C 2031001 1 Napoleon]
+[charaSet D 1033002 1 Sigurd]
+[charaSet E 1098124510 1 "Da Vinci"]
+[charaSet F 3012001 1 Brynhild]
+
+[charaSet H 98115000 1 Effect]
+
+[scene 51600]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[se ad629]
+[se ad553]
+[seVolume ad553 0 0.4]
+
+[fadein black 1.0]
+[shake 0.05 0 2 0]
+[wait fade]
+
+
+[wt 1.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 60703]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+[seStop ad553 1.0]
+[seStop ad629 1.0]
+[wt 0.5]
+
+[bgm BGM_EVENT_82 0.1]
+
+＠Meunière
+I'm about to really kick it into gear here! If you're not a Heroic Spirit, make sure you're strapped in good and tight, or you're liable to bite your tongue off!
+[k]
+
+＠Goredolf
+Whooooooa! We're bouncing all over the place! I know this isn't exactly the time to be obeying traffic laws, but you will NOT flip us over, Piccata!
+[k]
+
+[shakeStop]
+
+＠Meunière
+It's not Piccata! It's Meunière! And I'm just getting the hang of the control stick, dammit!
+[k]
+
+＠Meunière
+...Hey, where'd Holmes run off to, anyway!?
+[k]
+
+＠Da Vinci
+He said he'd talked too much and went back to the recovery pod. Mr. Great Detective pretty much just woke up to assess the situation and negotiate a bit!
+[k]
+
+＠Scáthach-Skadi
+What an astonishing man! To think he remained so calm and collected even despite his many injuries.
+[k]
+
+＠Scáthach-Skadi
+I take it this “recovery pod” is off that way?[sr]I shall grace him with one of my healing runes.
+[k]
+
+＠Scáthach-Skadi
+Freyja, Ortlinde, come with me.
+[k]
+
+＠Sitonai
+Ugh, how many times do I have to tell you?[sr]My name is Illya. But, fine, I'll go with you.
+[k]
+
+＠Ortlinde
+Understood.
+[k]
+
+＠Meunière
+Man, imagine getting nursed back[sr]to health by an actual goddess...
+[k]
+
+＠Meunière
+But that doesn't excuse Holmes's sheer recklessness![sr]Not that he's the only one here guilty of that!
+[k]
+
+＠Goredolf
+Heh, well, there's only so much a man of his meager abilities can do. Not everyone can be blessed with an abundance of talent like myself, after all.
+[k]
+
+＠Goredolf
+And let me be clear about one thing: I am not like the rest of you. I have no craving whatsoever for adventure!
+[k]
+
+＠Goredolf
+A good commander in chief always assesses the[sr]situation calmly, deploys the right people to the right places, and ensures his organization runs as smoothly as [wt 0.5][messageShake 0.05 3 2 1.0]pthhible.
+[k]
+
+[messageShakeStop]
+
+＠Meunière
+Oh for... I TOLD you to be careful you don't bite your tongue! How are things over with you, [%1]!?
+[k]
+
+？1：(Call out to Napoleon)
+？2：(Confirm what's happening on the deck)
+
+？！
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1]
+[bgmStop BGM_EVENT_82 0.7]
+[wait wipe]
+
+
+[scene 60603]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.5 1]
+[se ad207]
+[seVolume ad207 0 0.5]
+[wait wipe]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Napoleon
+That you, [%1]?[sr]Me? What else?
+[k]
+
+[charaFace C 2]
+[messageOff]
+[charaMoveReturn C 6,0 0.4]
+[flashin once 0.2 0.8 FFFFFF80 FFFFFF00]
+[cueSe Battle bac423]
+[wt 1.5]
+[charaFace C 5]
+
+＠Napoleon
+I'm still blasting away at everything following us![sr]As you can imagine, they're not letting up!
+[k]
+
+[messageOff]
+[seStop ad207 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+[se ad201]
+[wt 0.4]
+[seStop ad201 0.3]
+[wt 0.5]
+
+[cueSe Battle bac428]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Mash
+The number of giants hasn't changed from earlier,[sr]but we're seeing more and more seeds!
+[k]
+
+[charaFace A 15]
+
+＠Mash
+In addition to the flying types, there are also some running along the ground and trying to attach themselves to the Border!
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+[wt 0.3]
+＠Da Vinci
+I hate to keep bugging you while you're up there fighting,[sr]but this seems pretty important!
+[k]
+
+[charaFace E 25]
+
+＠Da Vinci
+You know the massive magical energy signature we saw up in the northern part of old Sweden?
+[k]
+
+＠Da Vinci
+Well, I'm pretty sure it's Surtr, and he's heading south fast! You know what this means!?
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠Napoleon
+...He's coming to fight us?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Sigurd
+No. He doesn't consider us a challenge worthy of meriting that approach.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠Brynhild
+That means he must be headed toward something else.[sr]Something that does not exist in Muspelheim...
+[k]
+
+＠Brynhild
+For example, something that exists atop old Lake Vänern...
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+[wt 0.8]
+[charaFace C 2]
+[wt 0.4]
+
+＠Napoleon
+The settlement!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠Da Vinci
+Bingo! That's exactly where[sr]Surtr's route will take him!
+[k]
+
+＠Da Vinci
+He's currently headed due south toward Lake Vänern,[sr]where the village is!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠Napoleon
+Guess that means he got himself connected to the tree then. Dammit, now we've got to reverse course!
+[k]
+
+[charaFace C 2]
+
+＠Napoleon
+Still, we can't just sit around complaining![sr]If it gets us closer to him, well, so much the better!
+[k]
+
+[charaFace C 4]
+
+＠Napoleon
+After all, I was really hoping[sr]to avoid a situation...
+[k]
+
+＠Napoleon
+...where I'd have to try sniping at extreme range with my cannon because we couldn't catch him.
+[k]
+
+[charaFace C 6]
+
+＠Napoleon
+So in that respect, this has worked out nicely! Phew!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+
+＠Da Vinci
+I wish I knew why he was headed there, though... That flaming sword of his is absurdly powerful. He could use it anywhere, and it'd still be just as destructive.
+[k]
+
+＠Da Vinci
+So why go so far out of his way for one village?[sr]Hmm. Does he just want to make us watch it burn?
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Napoleon
+I doubt he'd bother doing something like that.
+[k]
+
+＠Napoleon
+I think Sigurd is right. Doesn't seem like he cares much about gods or Heroic Spirits.
+[k]
+
+＠Napoleon
+I do have a thought about what he might be up to...[sr]But that's not important!
+[k]
+
+
+[charaFace C 1]
+＠Napoleon
+All that matters is that this is a stroke of luck for my Grande Armée! It's about time I got serious, anyway!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Fou
+Fo fo fo, fou![sr]Kyau!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠Napoleon
+Haha, thanks for cheering me on, doggo! To be fair, it's not really like I've been holding back...
+[k]
+
+[charaFace C 10]
+
+＠Napoleon
+...but at this point, it's looking clear[sr]that I need to get really, REALLY serious.
+[k]
+
+[charaFace C 3]
+
+＠Napoleon
+Plus, I've still got my trump card! Not that I'd ever play that in the opening act before things really get going, of course!
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad201]
+[wt 0.4]
+[seStop ad201 0.3]
+[wt 0.5]
+[cueSe Battle bac428]
+[shake 0.05 3 2 1.5]
+[wt 2.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Mash
+More seeds and giants are bearing down on us! There appear to be several of them attempting to stick to the Border!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠Napoleon
+There you go![sr]How do you wanna handle this, Private!?
+[k]
+
+？1：Let's fight them off!
+？2：Let's push our way through!
+
+？！
+
+[charaFace C 5]
+
+＠Napoleon
+D'accord! All right, gods and humans of the Grande Armée, get ready! We're gonna punch our way through these things without slowing down!
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

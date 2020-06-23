@@ -1,0 +1,328 @@
+
+
+＄94-99-98-20-1-0
+
+
+[charaSet A 4023000 1 "Sakata Kintoki"]
+[soundStopAll]
+[bgm BGM_EVENT_7 0.1]
+
+[scene 10400]
+
+[fadein black 2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.4 1]
+
+
+＠Sakata Kintoki
+...Phew.
+[k]
+
+[charaFace A 7]
+
+＠Sakata Kintoki
+No one's around anymore, yeah?[wt 0.3][charaFace A 0][sr]Good. Good, good. All's clear. I've secured a safe area.
+[k]
+
+＠Sakata Kintoki
+...Good thing I changed into my Rider class. Right now I'm the wind. Y'know, some might even say the wind is me.
+[k]
+
+＠Sakata Kintoki
+Yeah, I just gotta be the wind.[sr]If I'm gonna deal with this catastrophe, I got no choice.
+[k]
+
+？1：Kintoki?
+？2：Why are you so on edge?
+
+？！
+
+[charaMoveReturn A 0,20 0.2]
+
+[charaFace A 2]
+
+＠Sakata Kintoki
+[fontSize large]B-Boss!
+[k]
+
+
+[messageOff]
+[charaFace A 3]
+[wt 1.0]
+[charaFace A 7]
+
+＠Sakata Kintoki
+B-be quiet. Cool... Be cool... Be quiet. Okay?
+[k]
+
+＠Sakata Kintoki
+For both our sakes, Boss, don't move a muscle.
+[k]
+
+＠Sakata Kintoki
+Valentine's Day. I thought it was just some cutesy holiday from the West...
+[k]
+
+[charaFace A 2]
+
+＠Sakata Kintoki
+But lo and behold! It's freakin' horrible![sr]It's an evil day!
+[k]
+
+[charaFace A 7]
+
+＠Sakata Kintoki
+Boss... No, Master. Now that you caught me, I'm gonna need you to keep your voice down.
+[k]
+
+[charaFace A 0]
+
+＠Sakata Kintoki
+We're in this together now.[sr]It's sorta like both our lives are at risk!
+[k]
+
+？1：I don't understand what you're talking about.
+
+＠Sakata Kintoki
+What, you don't get it? That brat Shuten and Boss Raikou showed up this afternoon...
+[k]
+
+[charaFace A 3]
+
+＠Sakata Kintoki
+And they all of a sudden jumped me! I thought I was a goner! I'll freakin' die before I take those chocolate things!
+[k]
+
+？2：This is about Shuten-Douji and Raikou, isn't it?
+
+＠Sakata Kintoki
+Boss, you're as sharp as ever. Exactly. That brat Shuten and Boss Raikou showed up this afternoon...
+[k]
+
+[charaFace A 3]
+
+＠Sakata Kintoki
+And they all of a sudden jumped me! I thought I was a goner! I'll freakin' die before I take those chocolate things!
+[k]
+
+？！
+
+[charaFace A 7]
+
+＠Sakata Kintoki
+Shuten being awful is normal, but Boss Raikou seems to have a screw loose or somethin' today.
+[k]
+
+＠Sakata Kintoki
+The moment I said, “I don't want that. I'm no kid.”
+[k]
+
+＠Sakata Kintoki
+I was half a step away from wakin' up Ushi Gozen.[sr]Gave me a “Sakata-must-die” look, that kinda situation.
+[k]
+
+＠Sakata Kintoki
+Ya get it? No?[wt 0.3][charaFace A 0][sr]Come on, just read the room!
+[k]
+
+＠Sakata Kintoki
+Anyway, Boss. Just promise me you'll never do somethin' dumb like refusin' their offering!
+[k]
+
+[messageOff]
+[charaFace A 7]
+[wt 1.0]
+[charaFace A 0]
+
+
+
+＠Sakata Kintoki
+They wanna give it to me 'cause we got history, y'know? But you, Boss, got a special place in their hearts.
+[k]
+
+＠Sakata Kintoki
+You're more than a Master.[sr]You're new[line 3]a new plaything to Shuten.
+[k]
+
+
+＠Sakata Kintoki
+And to Boss Raikou...[sr]Well, 's like you're a new child for her.
+[k]
+
+[flag MALE false]
+[flag FEMALE false]
+
+[selectionUse masterMale]
+
+
+？1：Anyway.
+
+[flag MALE true]
+
+？2：Here, have some chocolates!
+
+[flag MALE true]
+
+？！
+
+[selectionUse masterFemale]
+
+？1：Anyway.
+
+[flag FEMALE true]
+
+？2：Here, have some chocolates!
+
+[flag FEMALE true]
+
+？！
+
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[charaFace A 1]
+
+＠Sakata Kintoki
+Ah, you got me! Haha! I thought I was bein' all stealthy like the wind, but I've been captured!
+[k]
+
+＠Sakata Kintoki
+I should've expected it.[sr]After all, you're my one and only Master.
+[k]
+
+[branch _isMale MALE 1]
+[branch _isFemale FEMALE 1]
+
+[label _isMale]
+
+＠Sakata Kintoki
+It musta been fate that I ran into ya while I was tryin' to hide.
+[k]
+
+[branch _branchEnd]
+
+[label _isFemale]
+
+
+＠Sakata Kintoki
+It musta been fate that I ran into ya while I was tryin' to hide.
+[k]
+
+[charaFace A 3]
+
+＠Sakata Kintoki
+...Well, y'know... Very, very golden thanks... Yeah.
+[k]
+
+[charaFace A 1]
+
+＠Sakata Kintoki
+That was a cool and golden critical hit to me.[sr]An absolute surprise.
+[k]
+
+＠Sakata Kintoki
+But it ain't bad. No matter how hard I try not to, I'm findin' myself smilin' a bit.
+[k]
+
+[charaFace A 0]
+
+＠Sakata Kintoki
+...Thanks, [%1], Boss.
+[k]
+
+[label _branchEnd]
+
+[messageOff]
+[charaFace A 7]
+[wt 1.0]
+[charaFace A 0]
+
+
+＠Sakata Kintoki
+So I need to give something back.[sr]Something to give back... Hmmm... Ah...yeah...
+[k]
+
+＠Sakata Kintoki
+Lessee...
+[k]
+
+[charaFace A 1]
+
+＠Sakata Kintoki
+Okay. Take this!
+[k]
+
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[equipSet B 9805530 1 ]
+[wait equipSet B]
+[charaFace B 0]
+[charaFadein B 0.5 0,-70]
+[wt 2.0]
+[charaFadeout B 0.4]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+
+＠Sakata Kintoki
+It's a replica of my prized Rider Belt!
+[k]
+
+＠Sakata Kintoki
+I know you're human, so no matter how much you try, your Spirit Origin ain't gonna change.
+[k]
+
+＠Sakata Kintoki
+But it's still a customized item. The nerdy Servants are always tryin' to get their mitts on it.
+[k]
+
+[charaFace A 0]
+
+＠Sakata Kintoki
+It's one of my favorite things, even among all my other favorites!
+[k]
+
+＠Sakata Kintoki
+I was gonna display it like a trophy, but I kinda like you havin' it.
+[k]
+
+[charaFace A 1]
+
+＠Sakata Kintoki
+Yeah. You're the special one who can duke it out in tandem with me, so I've got no problem givin' it to ya.
+[k]
+
+＠Sakata Kintoki
+Well, do as you want with it, Boss!
+[k]
+
+
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+[soundStopAll]
+[end]

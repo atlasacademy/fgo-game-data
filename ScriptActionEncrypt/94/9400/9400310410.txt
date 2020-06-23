@@ -1,0 +1,85 @@
+＄94-00-31-04-1-0
+
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 8001001 1 Mash]
+[charaSet B 98003000 1 "Dr. Roman"]
+[charaSet D 98065000 1 El-Melloi]
+
+[scene 25800]
+[fadein black 2.0]
+[wait fade]
+
+[charaTalk B]
+[se ad13]
+[communicationChara 98003003 1 5 0 2]
+[wt 0.3]
+
+＠Dr. Roman
+Wait up! I'm picking up traces of magical energy nearby... They're not human, and they're heading straight for you!
+[k]
+
+[messageOff]
+[communicationCharaClear]
+[wait communicationChara]
+
+[se ad46]
+[wt 0.8]
+[se ad46]
+[wt 0.2]
+[seStop ad46 0.5]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠Mash
+I can see them too. What are those monsters? They look like something, um... that I want nothing to do with.
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠El-Melloi
+They're fragments of the sea monsters summoned by Caster.
+[k]
+
+＠El-Melloi
+The Caster who participated in this Holy Grail War has completely lost his sanity.
+[k]
+
+[charaFace D 5]
+
+＠El-Melloi
+He doesn't have any strategy or plan. He just keeps summoning familiars to devour innocent civilians.
+[k]
+
+？1：We have to stop them.
+？2：Let's get them!
+
+？！
+
+[charaFace D 4]
+＠El-Melloi
+They won't hurt us if we leave them alone, but...
+[k]
+
+[charaFace D 0]
+＠El-Melloi
+Even in a dark back alley like this, if innocent people come back here there'll be a disaster.
+[k]
+
+[charaFace D 1]
+＠El-Melloi
+Let's take the time to get rid of them.
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

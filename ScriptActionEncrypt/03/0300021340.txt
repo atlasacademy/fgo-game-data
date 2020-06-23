@@ -1,0 +1,592 @@
+
+
+＄03-00-02-13-4-0
+[soundStopAll]
+
+
+[charaSet A 8001400 1 Mash]
+[charaSet B 98002000 1 Fou]
+[charaSet C 1033001 1 Sigurd]
+[charaSet D 2031001 1 Napoleon]
+[charaSet E 3012001 1 Brynhild]
+[charaSet F 3033000 1 Ortlinde]
+[charaSet H 5009000 1 "Effect Dummy"]
+
+[scene 10000]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.7]
+
+[effect bit_talk_kengekiall02]
+[wt 0.1]
+[se ad32]
+[wt 0.4]
+[se ad32]
+[wt 0.1]
+[se ad32]
+
+[wt 0.2]
+
+[wipeout leftToRight 0.1 1]
+[wait wipe]
+[scene 60900]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.1]
+[wipein rightToLeft 0.4 1]
+[charaScale H 1.4]
+[charaEffect H bit_talk_rarrow01or 1 F]
+[charaPut H 1200,1200]
+[wait wipe]
+
+[charaFace D 2]
+[charaPut H -50,-100]
+[wt 0.3]
+[cueSe Battle bac423]
+[wt 0.3]
+[charaFadeout D 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.5]
+[charaMove A -15,0 0.2]
+[charaFadeout A 0.2]
+[se ad73]
+[wt 0.6]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaPut H 0,200]
+[charaEffect H bit_talk_explosion]
+[se ad609]
+[seVolume ad609 0 0.7]
+[charaEffect H bit_talk_14]
+
+[se ad708]
+[wt 0.6]
+[seStop ad708 0.2]
+
+[wt 0.4]
+
+[cueSe Battle bac234]
+[shake 0.05 1 4 1.0]
+[effect bit_talk_impactlanding]
+[wt 3.0]
+
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+[se ade18]
+[seVolume ade18 0.0 0.7]
+[wt 0.5]
+[seStop ade18 0.8]
+[wt 1.5]
+
+[charaFace A 2]
+
+＠Mash
+We've defeated the Muspel giants and ice beasts![sr]That's all the hostiles that emerged from underground!
+[k]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+＠Mash
+Wait...I have a visual on a new hostile approaching from the other side of the bridge.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Fou
+Fooou!
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ade74]
+[seVolume ade74 0 0.4]
+[wt 0.1]
+[seVolume ade74 1.0 1.0]
+[wt 1.2]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.4 1]
+[wt 0.2]
+[seStop ade74 0.1]
+
+＠Sigurd
+Heh. Hehe. That's it.[bgm BGM_EVENT_90 0.1]
+[k]
+
+＠Sigurd
+None of you has changed much, but I can see you have a lot more momentum now than you did before.
+[k]
+
+＠Sigurd
+You've done a lot with a little,[sr]humans and Heroic Spirits.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠Napoleon
+Ha! Takes a Heroic Spirit to know a Heroic Spirit,[sr]ain't that right, Mr. Big Shot?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠Sigurd
+Heh.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠Brynhild
+Sigurd...!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠Sigurd
+Hmm...
+[k]
+
+＠Sigurd
+It's been a long time. The last time I saw you,[sr]you were being sealed away.
+[k]
+
+＠Sigurd
+You're from Proper Human History too, right?[sr]Well, that's reason enough for us to fight.
+[k]
+
+[charaFace C 1]
+
+＠Sigurd
+Come at me, Brynhild, eldest of the Valkyries and daughter of Odin. If you really are a demigod, that makes you worth killing.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠Brynhild
+...You speak as though I'm a stranger.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠Sigurd
+'Cause you are.[sr]At least as far as I'm concerned.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Brynhild
+So you claim to be a Servant from this Lostbelt? The change in your eye color is not enough to confuse the identity of my quarry.
+[k]
+
+＠Brynhild
+You are Sigurd, son of Sigmund. You are the[sr]warrior-king who excels in every regard.
+[k]
+
+[charaFace E 9]
+
+＠Brynhild
+Every fiber of my being screams that[sr]you are the one I must love and kill.
+[k]
+
+[charaFace E 10]
+
+＠Brynhild
+...This was never supposed to happen. My actions,[sr]my madness, in service of justice? Unthinkable.
+[k]
+
+＠Brynhild
+But here you are, on the side of this Lostbelt.[sr]You have chosen a path that pits you against humanity.
+[k]
+
+[messageOff]
+[wt 0.8]
+[charaFace E 5]
+[wt 0.4]
+
+＠Brynhild
+So...you won't mind dying now, right, Sigurd?
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 0,400]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠Sigurd
+You're going to die here, Valkyrie.
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[cueSe Battle bac166]
+[charaEffect H bit_talk_17]
+[charaMove H 1 1.5]
+[wt 2.0]
+[cueSeStop bac166 0.3]
+
+[fadeout white 1.5]
+[se ad606]
+[wait fade]
+
+[charaEffectStop H bit_talk_17]
+[charaPut H 2000,2000]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.1]
+
+[fadein white 2.0]
+[wait fade]
+
+[wt 1.0]
+
+＠Ortlinde
+...[sr]...
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠Mash
+Another hostile is incoming...![sr]It's the last remaining Valkyrie commander!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Fou
+Fo fou, fou!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠Napoleon
+So she's here too, huh. Makes sense. I had my suspicions that she might still be hung up on what happened last time we fought.
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_90 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Brynhild
+Stand down, Ortlinde.[sr]You were there when our sisters made their final plea.
+[k]
+
+＠Brynhild
+There is no point in you fighting me. You know this. No point...and no need. You cannot interfere in my dance with Sigurd.
+[k]
+
+[charaFace E 8]
+
+＠Brynhild
+Stand down. Please.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Ortlinde
+Sister...
+[k]
+
+[messageOff]
+[se ad706]
+[wt 0.2]
+[seStop ad706 0.3]
+[wt 0.7]
+[charaFace F 8]
+
+＠Ortlinde
+I've been thinking a lot about the[sr]last thing Thrúd and Hildr said.
+[k]
+
+[charaFace F 8]
+
+＠Ortlinde
+But, no matter how much I think...I can't understand it. I believe I feel something similar[line 2]it's fleeting, but it's also too overwhelming to describe.
+[k]
+
+＠Ortlinde
+That's why I'm taking up my spear.[sr]Just like Thrúd and Hildr did...
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 1.0]
+[charaFace F 0]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth H 2]
+[charaDepth F 1]
+[charaFace F 5]
+
+[charaPut H 1]
+[charaEffect H bit_talk_charge_red]
+
+[se ad61]
+[se ad556]
+[seVolume ad556 0 0.6]
+
+[wt 1.0]
+
+＠Ortlinde
+Force-expanding combat functionality.[sr]Increasing output beyond safety limiters.
+[k]
+
+[messageOff]
+[seStop ad61 0.5]
+[seStop ad556 0.5]
+[se ad574]
+
+[flashin once 0.2 0.5 FFFFFFFF FFFFFF00]
+[charaPut H 2400,2400]
+[charaEffectStop H bit_talk_charge_red]
+
+[charaTalk depthOn]
+[wt 1.0]
+
+[charaFace F 2]
+
+[bgm BGM_EVENT_80 0.1]
+
+＠Ortlinde
+Overload. Overload. Synchronizing magical energy with Gram... Initiating team combat!
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠Sigurd
+You're planning to keep up with me? You're a cheeky little thing, aren't you! Well, this should be amusing.
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[cueSe Battle bac170]
+
+[wt 0.7]
+
+[charaFace D 5]
+
+＠Napoleon
+I think you mean “admirable,” Mr. Demonic Sword! You might be real strong, but you're pretty pathetic when it comes to understanding women!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Sigurd
+...Hmph. I see your little surge in momentum has led to a big surge in irritating chatter, Archer.
+[k]
+
+[charaFace C 12]
+
+＠Sigurd
+What would a modern-day man like yourself know of the Valkyries, anyway? Such Mystics are all completely beyond your comprehension.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠Napoleon
+Oh, I don't know about that. I'm actually pretty into mythology. I always made it a point to go exploring pyramids whenever I went on one of my expeditions.
+[k]
+
+[charaFace D 5]
+
+＠Napoleon
+So seeing a wielder of a demonic sword and a Valkyrie together like this? It's a dream come true, really!
+[k]
+
+＠Napoleon
+And, well, this isn't something I'm thrilled about...but now that I'm a Heroic Spirit, I have a knack for crushing Mystics!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠Sigurd
+Oh? Take your best shot, then. You've already tried that absurdly oversized cannon on me twice, and it didn't do a damn thing.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠Napoleon
+Ooh la la! Only twice? That's nothing![sr]Everyone knows the third time's the charm!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠Mash
+This will be the fifth time for us! This time,[sr]I'll do everything I can to defend against Gram!
+[k]
+
+？1：Prepare for battle!
+？2：Let's do this thing, Mash!
+
+？！
+
+[messageOff]
+[se ad672]
+[wt 1.0]
+
+[charaFace A 2]
+
+＠Mash
+Raising Ortinax output. Maintaining combat mode...[sr]All equipment, standing by. I'm good to go!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Fou
+Fou fou! Foooooou!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠Brynhild
+Sigurd...[sr]Sigurd...
+[k]
+
+[charaFace E 2]
+
+＠Brynhild
+...Now that I've found you,[sr]I won't rest until I've killed you!
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

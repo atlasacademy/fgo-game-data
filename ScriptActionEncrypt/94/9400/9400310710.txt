@@ -1,0 +1,170 @@
+＄94-00-31-07-1-0
+
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 8001001 1 Mash]
+[charaSet B 98003000 1 "Dr. Roman"]
+[charaSet D 98065000 1 El-Melloi]
+[charaSet E 3002000 1 Diarmuid]
+[charaSet F 98059000 1 Kayneth]
+[charaSet G 5002001 1 Gilles]
+
+[scene 25100]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+[fadein black 2.0]
+[wait fade]
+
+＠Mash
+The enemy's weakening! Hurry!
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk E]
+[charaFace F 0]
+[charaFace E 0]
+[charaFadein F 0.1 2]
+[charaFadein E 0.1 0]
+
+＠Diarmuid
+We'll break through. Is that all right, Master?
+[k]
+
+[charaFace F 5]
+
+＠Kayneth
+Yes. Punish the owner of these filthy beasts in the name of El-Melloi!
+[k]
+
+？1：El-Melloi?
+？2：You really are related?
+
+？！
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠El-Melloi
+(I'll tell you about that some other time...)
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[scene 25200]
+
+[charaFadeout D 0.1]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_5 2.0]
+[fadein black 2.0]
+[wait fade]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.4 1]
+＠Mash
+Th-This is...
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk E]
+[charaFace F 0]
+[charaFace E 5]
+[charaFadein F 0.1 2]
+[charaFadein E 0.1 0]
+＠Diarmuid
+How disgusting...who could do such a thing to a corpse?
+[k]
+
+＠Kayneth
+Humph. This explains the Overseer's hurry.
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+
+[charaTalk B]
+[se ad13]
+[communicationChara 98003003 1 5 0 5]
+[wt 0.3]
+
+＠Dr. Roman
+Be careful! I'm detecting a Servant very close to you!
+[k]
+
+[messageOff]
+[communicationCharaClear]
+[wait communicationChara]
+
+[bgmStop BGM_EVENT_5 0.5]
+[wt 0.5]
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.4 1]
+
+＠G：Caster
+How dare you philistines interfere with our pursuit of beauty? Are you trying to stop the awakening of the Holy Maiden, too?
+[k]
+
+[charaFadeout G 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠Mash
+Marshal Gilles de Rais?
+[k]
+
+[charaFadeout A 0.1]
+
+[wt 0.1]
+[charaTalk B]
+
+[charaFace D 0]
+[charaFadein D 0.1 2]
+
+[communicationCharaLoop 98003003 0 5 0 4]
+
+＠Dr. Roman
+No matter where he's summoned, this guy never listens to what you have to say...
+[k]
+
+＠El-Melloi
+The Master who summoned him this time has only made him worse. Even without the Holy Grail War, he needs to be eliminated.
+[k]
+
+[charaFadeout D 0.1]
+[communicationCharaClear]
+[wait communicationChara]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠Gilles
+Nonsense! You will be the ones sacrificed here!
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

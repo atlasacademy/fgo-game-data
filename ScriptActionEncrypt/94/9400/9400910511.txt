@@ -1,0 +1,643 @@
+
+
+＄94-00-91-05-1-1
+
+[charaSet A 99502600 1 Mash]
+[charaSet B 98003000 1 "Dr. Roman"]
+[charaSet C 6005001 1 Jack]
+[charaSet D 5004001 1 "Nursery Rhyme"]
+[charaSet E 3009001 1 Leonidas]
+[charaSet F 3026000 1 "Jeanne Alter Santa Lily"]
+[charaSet G 98105600 1 "Santa Island Mask"]
+[charaSet H 98105600 1 "Santa Island Mask (Silhouette)"]
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+
+[scene 21804]
+
+[fadein black 2.0]
+[wait fade]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0 1]
+[wt 0.3]
+＠Mash
+We've defeated Leonidas...!
+[k]
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠Leonidas
+Ha! Ha! Ha! It seems I have lost, Master!
+[k]
+
+？1：Okay then, we shall pass after all.
+？2：We won, so we'll be stepping over you.
+？！
+
+[charaFace E 0]
+＠Leonidas
+Oh, I almost forgot to tell you.
+[k]
+
+[charaFace E 0]
+＠Leonidas
+Santa, there is still a group of Servants waiting ahead called the Fabulous Five, or the Magnificent Seven, or the Dirty Dozen or something like that!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0 1]
+[wt 0.3]
+＠Mash
+Th-that many!?
+[k]
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠Leonidas
+What? There's not that many? I must have miscounted then... Pardon me. There may be a little less than that.
+[k]
+
+＠Leonidas
+...Anyhow, your journey to the sea will not be an easy one!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠Jeanne Alter Santa Lily
+Wh-why are you getting in the way of Santa trying to fulfill a wish!?
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFace D 4]
+[charaFadein C 0.1 2]
+[charaFadein D 0.1 0]
+[charaShake C 0.1 4 4 0.7]
+＠Jack
+We just want to see the sea!
+[k]
+
+[charaTalk D]
+[charaShake D 0.1 4 4 0.7]
+＠Nursery Rhyme
+Meaniehead!
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠Leonidas
+You'll have to ask our evil mastermind![sr]I don't really, uh...know all the details either...
+[k]
+
+[charaFace E 0]
+＠Leonidas
+I am a man of logic, so I am not very good in psychology and things like that!
+[k]
+
+＠Leonidas
+So please ask the next villainous Servant to come along!
+[k]
+
+[charaEffect E bit_talk_06]
+＠Leonidas
+Farewell then, everyone![sr]Let us meet again at Chaldea!
+[k]
+
+[wt 0.3]
+[messageOff]
+[bgmStop BGM_EVENT_2 1.0]
+
+[charaSpecialEffect E flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect E]
+[charaEffectStop E bit_talk_06]
+[wt 1.2]
+[charaFadeout E 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0 1]
+[wt 0.3]
+＠Mash
+Servant has vanished.[sr]I will go and speak with Leonidas later!
+[k]
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10]
+[wt 0.3]
+
+[bgm BGM_EVENT_2 0.4]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Jeanne Alter Santa Lily
+Is everyone all right?
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFace D 1]
+[charaFadein C 0.1 2]
+[charaFadein D 0.1 0]
+
+[charaMove C 256,20 0.2]
+[wait charaMove C]
+[charaMove C 256,0 0.1]
+[wait charaMove C]
+＠Jack
+Yep!
+[k]
+
+[charaTalk D]
+＠Nursery Rhyme
+Are you all right, Santa?
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Jeanne Alter Santa Lily
+Yes! That was a cakewalk!
+[k]
+
+[wt 0.4]
+
+[bgmStop BGM_EVENT_2 0.4]
+[wt 0.4]
+
+[messageOff]
+[cameraMove 0.5 64,-64 1.4]
+[charaMove F 5 0.5]
+[charaFadeout F 0.7]
+[wt 0.3]
+
+[effect bit_talk_rarrow01red]
+[scene 10000 0.2]
+[wt 0.2]
+[se bac20]
+[wt 1.0]
+[effectStop bit_talk_rarrow01red]
+[se bac12]
+[seVolume bac12 0 0.5]
+[effect bit_talk_bara]
+[wt 0.7]
+[effectStop bit_talk_bara]
+[wt 0.8]
+
+[cameraHome 0.1]
+[scene 21804 0.2]
+[wt 0.4]
+
+？1：Now what do you want, Santa Island Mask?
+？！
+
+[se ad188]
+[seVolume ad188 0 0.5]
+[charaTalk H]
+[charaFace H 0]
+[charaFace G 0]
+[charaPut G 1]
+[charaFadeTime G 0 0]
+[charaFilter H silhouette 00000080]
+[charaFadein H 0.7 1]
+＠Santa Island Mask
+So how about it, Jeanne d'Arc Alter Santa Lily?
+[k]
+
+[bgm BGM_EVENT_7 0.7]
+[charaFadeTime G 2.0 1.0]
+＠Santa Island Mask
+It looks like there are a number of enemy Servants awaiting you in your journey to come.
+[k]
+
+[wait charaFade G]
+[charaFadeout H 0.1]
+＠Santa Island Mask
+Neither their identities nor goals are known, but they will try and put a stop to your grand Christmas quest.
+[k]
+
+＠Santa Island Mask
+Granting wishes is a hopelessly difficult journey.[sr]But even if you do manage that, expect no reward.
+[k]
+
+＠Santa Island Mask
+Why? Because you are Santa Claus. There is no such thing as a reward for completing your task.
+[k]
+
+＠Santa Island Mask
+Will you still continue?
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 2.0]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠Jeanne Alter Santa Lily
+I-I...
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein C 0.1 2]
+[charaFadein D 0.1 0]
+＠Jack
+...
+[k]
+
+[charaTalk D]
+＠Nursery Rhyme
+...
+[k]
+
+？1：That's something Santa must decide.
+？！
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠Jeanne Alter Santa Lily
+I... I want to grant their wish, instead of forcing a present they don't want on them.
+[k]
+
+[charaFace F 0]
+＠Jeanne Alter Santa Lily
+I want to give them both exactly what they wished for!
+[k]
+
+[bgm BGM_EVENT_4 0.4]
+
+[charaFace F 6]
+＠Jeanne Alter Santa Lily
+If the two of you don't mind, I would still like to grant your wish. So let's go see... the ocean!
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein C 0.1 2]
+[charaFadein D 0.1 0]
+＠Both
+Okaaay!
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠Santa Island Mask
+I see. Then, proceed with caution, Santa.
+[k]
+
+＠Santa Island Mask
+Fulfilling a wish is intrinsically an unequal thing. Unequal... That is, a problem of desire.
+[k]
+
+＠Santa Island Mask
+Be it a simple, casual wish or a desperate need with life hanging in the balance, it is Santa Claus who decides whether or not to grant it.
+[k]
+
+＠Santa Island Mask
+The one who prays and pleads has their wish granted, while those who don't are not so fulfilled.
+[k]
+
+[charaFace G 4]
+＠Santa Island Mask
+...When you think about it, Santa may not be a saint at all.
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_4 0.7]
+[charaFadeout G 0.7]
+[wt 0.7]
+
+[wipeout rectangleStripDownToUp 1.3 1.0]
+[wt 0.4]
+[messageOff]
+[wait wipe]
+
+[scene 20322]
+[wt 0.1]
+
+[wipein rectangleStripUpToDown 1.3 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠
+Santa may not be a saint at all[line 3][sr]That's what Santa Island Mask said.
+[k]
+
+＠
+I wanted to argue and say it wasn't true.
+[k]
+
+[wt 0.3]
+[messageOff]
+
+[wipeout rollFlashRight 1.0 1]
+[wait wipe]
+
+[wt 0.5]
+
+[scene 21805]
+[wt 0.1]
+
+[wipein rollFlashRight 1.0 1]
+[wait wipe]
+
+＠
+I wanted to say Santa Claus is a noble saint who grants everyone's wishes, and that's why I chose to become Santa.
+[k]
+
+＠
+But I can't shake the feeling that what he said might really be true.
+[k]
+
+＠
+...When I think about what happens after Christmas, I start trembling with fear.
+[k]
+
+＠
+Reindeer Master, Reindeer Master, Reindeer Master.[sr]Am I okay? Will I be okay?
+[k]
+
+＠
+...Will I still be allowed to exist?
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.0]
+[wipeout circleIn 2.0 1.0]
+[wait wipe]
+
+[scene 21804]
+[wt 0.1]
+
+[wipein circleIn 0.7 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_7 0.4]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein C 0.1 2]
+[charaFadein D 0.1 0]
+＠Jack
+Huh? It's no use.[sr]The sleigh won't move.
+[k]
+
+？1：Huh, even Santa's sleigh can break down.
+？！
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Jeanne Alter Santa Lily
+I see... Well, we'd be in trouble if we got dragged down to the ground anyway!
+[k]
+
+＠Jeanne Alter Santa Lily
+Let's leave the sleigh here.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0 1]
+[wt 0.3]
+＠Mash
+Don't worry, we'll retrieve the sleigh later.
+[k]
+
+＠Mash
+Luckily, we aren't too far from the ocean.
+[k]
+
+[charaFace A 8]
+＠Mash
+It may be a little taxing for Master though...
+[k]
+
+？1：I'm okay, we can all walk.
+？！
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10]
+[wt 0.3]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Jeanne Alter Santa Lily
+I agree. Jack and Nursery Rhyme, are you two okay with that too?
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFace D 0]
+[charaFadein C 0.1 2]
+[charaFadein D 0.1 0]
+＠Jack
+Umm, then we have a favor to ask Reindeer.
+[k]
+
+[charaTalk D]
+[charaFace D 1]
+＠Nursery Rhyme
+Yes, I have something to ask of Reindeer too.
+[k]
+
+[charaTalk off]
+＠Both
+Ready and... Let's all hold hands and walk!!!
+[k]
+
+[charaMove C 128,20 0.1]
+[charaMove D -128,20 0.1]
+[wt 0.2]
+[se ad111]
+[wait charaMove C]
+[wait charaMove D]
+[wt 0.4]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[charaShake F 0.05 4 0 1.0]
+＠Jeanne Alter Santa Lily
+Hey, no fair...!
+[k]
+
+[charaFace F 0]
+＠Jeanne Alter Santa Lily
+No, I mean, you're making it difficult for Reindeer Master to walk! Stop it!
+[k]
+
+？1：I don't mind.
+
+[charaFace F 2]
+＠Jeanne Alter Santa Lily
+Uh, well... P-please mind!
+[k]
+
+＠Jeanne Alter Santa Lily
+A Reindeer should not walk hand-in-hand with small children! Santa rules!
+[k]
+
+？2：Wanna join, Santa?
+
+[charaFace F 3]
+＠Jeanne Alter Santa Lily
+...![wt 0.1][sr]W-well, if you insist... [charaFace F 2]Hey, you're out of hands!?
+[k]
+
+[charaFace F 0]
+＠Jeanne Alter Santa Lily
+What, your back? Piggyback?
+[k]
+
+[charaFace F 3]
+＠Jeanne Alter Santa Lily
+N-no, that's embarrassing. Please stop!!
+[k]
+
+[charaShake F 0.05 4 0 1.0]
+＠Jeanne Alter Santa Lily
+...Errr... Thank you...
+[k]
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut B 1]
+[charaEffect B bit_talk_10]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0 1]
+[wt 0.3]
+＠Mash
+Senpai! Um, when you return, would you please give me... No, a piggyback ride is too embarrassing!
+[k]
+
+[charaFadeout A 0.1]
+[charaPut B 1200,1200]
+[charaEffectStop B bit_talk_10]
+[wt 0.3]
+
+[communicationCharaLoop 98003003 1 5 0 0]
+[wt 0.3]
+＠Dr. Roman
+Mash? Maaash?
+[k]
+
+[charaFace B 2]
+＠Dr. Roman
+It would be nice for me to get in on an event one of these days... Maaash?
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[soundStopAll]
+[end]

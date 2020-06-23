@@ -1,0 +1,507 @@
+
+＄94-00-37-01-1-0
+
+[soundStopAll]
+
+
+[charaSet A 8001001 1 Mash]
+[charaSet B 98003003 1 "Dr. Roman"]
+[charaSet C 7006000 1 "Sakata Kintoki"]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+
+[se ad12]
+
+[effect bit_talk_07]
+
+[wt 0.5]
+
+[scene 27000]
+
+[wt 6.5]
+
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠Mash
+[line 2]Rayshift complete.[sr]We've arrived in Japan, Master.
+[k]
+
+[charaFadeout A 0.1]
+
+[wt 0.3]
+
+[se ad13]
+[charaTalk B]
+[communicationChara 98003003 1 5 0 0]
+
+
+[wt 0.3]
+
+[seLoop ad31]
+
+
+＠Dr. Roman
+And it seems you got there safely. Sorry if the ride was bumpy, [%1].
+[k]
+
+
+＠Dr. Roman
+As if to be expected, I'm not getting a clear visual of you. This time it's even worse than normal.
+[k]
+
+[seStop ad31 0.3]
+
+
+[communicationCharaClear]
+[wait communicationChara]
+
+[communicationCharaLoop 98003003 0 5 0 0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+
+＠Mash
+I'm guessing you can't pinpoint the cause?
+[k]
+
+
+[charaTalk B]
+
+＠Dr. Roman
+Yeah. There are times when you travel so far back that we don't have enough data on that era...but that's not the case here.
+[k]
+
+＠Dr. Roman
+This observation impediment doesn't follow any pattern we've seen before. It's like someone is jamming our signal.
+[k]
+
+＠Dr. Roman
+However, the fact remains that I'm picking up very unusual responses from that era. It's bound to turn into a Singularity if we leave it alone.
+[k]
+
+＠Dr. Roman
+That's why I sent you two to check it out.[sr]For starters, what are your surroundings like?
+[k]
+
+
+
+[charaTalk A]
+[charaFace A 1]
+
+
+
+
+
+＠Mash
+Right. Well, it's safe here. I mean, we've never been to a place this idyllic. Especially, um...
+[k]
+
+[se ad112]
+
+[backEffect bit_talk_sakura01]
+
+[charaFace A 13]
+
+＠Mash
+The cherry blossoms are lovely.[sr]Just beautiful.
+[k]
+
+
+
+[communicationCharaFace 0]
+
+＠Dr. Roman
+Cherry blossoms, huh? That's nice. I've seen them before, too. Although I didn't get to have a viewing party...
+[k]
+
+
+
+[charaTalk A]
+[charaFace A 3]
+
+＠Mash
+...On top of that, there's a kind of sweet aroma...all around... Mm...
+[k]
+
+？1：Yeah, I'd say it smells delicious.
+？2：Wait, could this scent be...
+
+？！
+
+
+[charaTalk B]
+
+＠Dr. Roman
+Hmmm... An aroma you say... I wonder what it could be. We definitely need more information.
+[k]
+
+
+＠Dr. Roman
+My estimate is that you're in the Heian era right now. That said, the Heian era lasted for nearly 400 years.
+[k]
+
+＠Dr. Roman
+Stand by while I try to pinpoint your exact coordinates. Please keep an eye on your surroundings.
+[k]
+
+＠Mash
+Understood. Still...[sr]I can't get over how beautiful it is here.
+[k]
+
+？1：I can't get over how beautiful you are, Mash.
+
+[charaTalk A]
+[charaFace A 6]
+
+[wt 0.5]
+
+＠Mash
+[charaFace A 3]
+R-Right... As you can see, my primary colors are purple and black... So I am no match for the beautiful pink of cherry blossoms.
+[k]
+
+？2：I wish we had some dumplings from the moon festivals.
+
+[charaTalk A]
+[charaFace A 13]
+
+＠Mash
+Hehe. Shhh, Senpai.[sr]Caesar will appear if you bring that up again.
+[k]
+
+？！
+
+[charaFace A 12]
+
+＠Mash
+But... Ummm. Actually, this has been bothering me since we got here...
+[k]
+
+＠Mash
+There's a big pile of petals over there, but it's human-shaped.
+[k]
+
+[charaPut C 0,-100]
+
+＠Mash
+It's as if someone fell asleep while viewing the cherry blossoms and was left behind for a full day...
+[k]
+
+[messageOff]
+
+
+[backEffectStop bit_talk_sakura01]
+
+[seStop ad112 0.3]
+
+[communicationCharaClear]
+[wait communicationChara]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaFace C 2]
+[charaFadein C 0.4 0,-300]
+
+
+[effect bit_talk_sakura02]
+
+[wt 0.1]
+
+[se ad110]
+
+
+[charaMove C 1 0.2]
+
+
+[charaTalk C]
+
+＠Sakata Kintoki
+Ah[line 4]chooo! Ahhh, what, morning already!? Daaammit!
+[k]
+
+
+[effectStop bit_talk_sakura02]
+
+[charaTalk A]
+
+＠Mash
+K-Kintoki!?
+[k]
+
+
+[charaTalk B]
+
+＠Dr. Roman
+Okay, if I just do this and voila... Huh?[sr]Hey, I'm picking up a Servant in your proximity.
+[k]
+
+＠Dr. Roman
+Going by the powerful magical energy reading... No doubt about it, it's a musclehead Servant with a suffocating presence!
+[k]
+
+[charaTalk A]
+
+＠Mash
+Yes, Doctor. Mr. Golden, Sakata Kintoki himself is right in front of us.
+[k]
+
+[charaTalk B]
+
+＠Dr. Roman
+Oh, Kintoki is there.[sr]That would explain this strength level I'm seeing.
+[k]
+
+＠Dr. Roman
+Wait, what's he doing there!?[sr]Did you two bring him along!?
+[k]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+
+＠Sakata Kintoki
+Oooh, my head hurts... I went overboard brawling with those bears...
+[k]
+
+？1：Golden morning, mister.
+
+[charaFace C 1]
+
+＠Sakata Kintoki
+Oh! That's a nice greeting, Boss![sr]To be golden in the morning is very golden!
+[k]
+
+？2：God morning, Kintoki.
+
+[charaFace C 4]
+
+＠Sakata Kintoki
+O-Oh, that's a strange mangling of the language.[sr]“God morning” sounds a little ominous.
+[k]
+
+？！
+
+[charaFace C 0]
+
+＠Sakata Kintoki
+At any rate, it's good to start off with a greeting.[sr]It shows you have good manners.
+[k]
+
+＠Sakata Kintoki
+A fulfilling day begins with a nice greeting, a nice breakfast, and nice wood-chopping.
+[k]
+
+＠Sakata Kintoki
+My boss... Oh, I don't mean you.[sr]My former boss, or I guess more like my foster parent...
+[k]
+
+＠Sakata Kintoki
+Boss Raikou, you know?[sr]She lived around here.
+[k]
+
+＠Sakata Kintoki
+She was usually lax, but very serious about table manners. Even bad sitting posture would earn a demonic glare.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFadein A 0.1 2]
+
+＠Mash
+Um, Kintoki. My apologies for interrupting, but would you tell us what you're doing here?
+[k]
+
+[charaTalk C]
+
+＠Sakata Kintoki
+Oh, sorry. I slipped into reminiscing about the olden days. But the reason I'm here[line 3]
+[k]
+
+＠Sakata Kintoki
+Whoa, wait. Don't get too close.
+[k]
+
+[charaTalk A]
+[charaFace A 6]
+
+＠Mash
+Huh?
+[k]
+
+[charaTalk C]
+[charaFace C 3]
+
+
+＠Sakata Kintoki
+(I'm the one just waking up here... And even though I'm the man they called the Beast of Ashigara...)
+[k]
+
+＠Sakata Kintoki
+(Dangerous... she's the true dangerous beast![sr]I mean, look at her outfit!)
+[k]
+
+[charaTalk A]
+[charaFace A 12]
+
+＠Mash
+Senpai, he won't look me in the eye.[sr]Does he hate me now?
+[k]
+
+？1：I don't think that's it.
+？2：Dangerous... beast!
+
+？！
+
+[charaTalk C]
+[charaFace C 3]
+
+＠Sakata Kintoki
+No, it's not your fault, young lady.[sr]In fact, I would compliment you, if you were a man.
+[k]
+
+[charaTalk A]
+[charaFace A 6]
+
+＠Mash
+H-Huh? Thank you... I think?
+[k]
+
+[charaTalk C]
+[charaFace C 0]
+
+＠Sakata Kintoki
+Oh, you even bow to me?![sr]Then I gotta man up... Here we go...
+[k]
+
+
+[se bac101]
+
+[charaShake C 0.1 4 5 0.2]
+
+[wt 1.0]
+
+[charaShakeStop C]
+
+[charaTalk A]
+[charaFace A 14]
+
+＠Mash
+K-Kintoki!? Oh no, Senpai, Kintoki is punching himself hard in the cheek!
+[k]
+
+[charaTalk C]
+[charaFace C 1]
+
+＠Sakata Kintoki
+All right, that woke me up![sr]So, shall we get going, Boss!?
+[k]
+
+＠Sakata Kintoki
+I wouldn't call it a world crisis, but there's trouble in my neck of the woods.
+[k]
+
+＠Sakata Kintoki
+Deep in the mountains, somebody called.[sr]I don't know who it is, but I'm goin' there.
+[k]
+
+＠Sakata Kintoki
+All the signs point to good things, so I'll push on ahead. My axe will carve a way through the mountains. Make way for this thunderclap!
+[k]
+
+？1：Kintoki sure is in high spirits!
+
+
+[charaTalk A]
+[charaFace A 0]
+
+＠Mash
+Yes, I've never seen him so full of energy.
+[k]
+
+＠Mash
+That said... Where are we going?
+[k]
+
+
+？2：Um... Where are we going?
+
+？！
+
+[charaTalk C]
+[charaFace C 0]
+
+
+＠Sakata Kintoki
+Huh? Where are we going? Why, that's obvious.[sr]It's[line 3]
+[k]
+
+[soundStopAll]
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+
+＠???
+[bgm BGM_EVENT_3 0.1]
+Gyaaaaooooo[line 5]!
+[k]
+
+
+[charaTalk B]
+
+＠Dr. Roman
+Aaaah! A hostile response already![sr]Is it[line 2]a wild beast?
+[k]
+
+
+[charaEffectStop B bit_talk_10]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0]
+[charaFace A 7]
+[charaFadein A 0.1 2]
+
+＠Sakata Kintoki
+Your ambush is well-timed[line 3]! But I don't think I've seen you around these parts before!
+[k]
+
+[charaTalk A]
+[charaFace A 2]
+
+＠Mash
+It seems to see us as food.[sr]It's charging!
+[k]
+
+[charaTalk C]
+[charaFace C 2]
+
+＠Sakata Kintoki
+This is also a perfect way to start the day.[sr]A nice warm-up! Let's go wild, Master!
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[wt 0.1]
+[soundStopAll]
+[end]

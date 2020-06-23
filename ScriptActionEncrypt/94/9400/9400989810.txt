@@ -1,0 +1,306 @@
+
+＄94-00-98-98-1-0
+
+[charaSet A 1007001 1 Gawain]
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+
+[scene 10310]
+
+[fadein black 2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠Gawain
+Good morning, [%1].[sr]Will you be training this morning?
+[k]
+
+＠Gawain
+Well, I have confirmed with the Command Room that you have no directives today.
+[k]
+
+＠Gawain
+I thought you would be enjoying a leisurely day off.
+[k]
+
+？1：The excitement has just begun.
+？2：A day off... In other words, a chocolate holiday!
+
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[charaFace A 4]
+＠Gawain
+Oh, my... This is for me? No, it's not that I wasn't expecting something like this...
+[k]
+
+[charaFace A 1]
+＠Gawain
+Thank you very much.[sr]This is a pleasant surprise, [%1].
+[k]
+
+＠Gawain
+Well, naturally I would like to jump up and down to express my excitement, but unfortunately that would be somewhat unbecoming.
+[k]
+
+＠Gawain
+There are other Knights of the Round Table in Chaldea. If only they weren't around, I would twirl you around and give you a high-five.
+[k]
+
+[flag MALE false]
+[flag FEMALE false]
+
+[selectionUse masterMale]
+？1：That's a bit much.
+[flag MALE true]
+？！
+
+[selectionUse masterFemale]
+？1：That's a bit much.
+[flag FEMALE true]
+？！
+
+[charaFace A 5]
+＠Gawain
+It certainly is not. An affectionate gesture must be returned in kind... That is the way of a gentleman.
+[k]
+
+[charaFace A 4]
+＠Gawain
+This simply will not do.
+[k]
+
+＠Gawain
+If only [%1] was a knight, there would be plenty of things to give in return, but you are a mage.
+[k]
+
+＠Gawain
+...Hm. No, wait. It's too early to get discouraged, Gawain. Just think of it as searching for something for Gareth's birthday... Hm.
+[k]
+
+[charaFace A 5]
+＠Gawain
+Excuse me. Please wait a moment.
+[k]
+
+[messageOff]
+[se ad59]
+[seStop ad59 1.2]
+
+[charaFadeout A 0.4]
+[wt 0.6]
+
+
+
+[fadeout black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[scene 10310]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠Gawain
+Thank you for waiting. It's a modest item, but please take this.
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[equipSet B 9805060 1]
+[wait equipSet B]
+[charaFace B 0]
+[charaFadein B 0.5 0,-70]
+[wt 2.0]
+[charaFadeout B 0.4]
+[wt 0.5]
+
+[branch _isMale MALE 1]
+[branch _isFemale FEMALE 1]
+
+[label _isMale]
+
+？1：Cosmetics...?
+？2：Magical...makeup?
+
+？！
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠Gawain
+Yes. I had purchased it for my sister, but I shall give it to you instead, Master [%1].
+[k]
+
+[charaFace A 0]
+＠Gawain
+Just because one is male, it does not mean they never use cosmetics. Rather, think of them as arms and armor used on a daily basis.
+[k]
+
+＠Gawain
+When someone you have your eyes set on appears, your battle begins there. By decorating your appearance, one's inner beauty is also enhanced.
+[k]
+
+＠Gawain
+Well, these are for women, but nevermind that.
+[k]
+
+＠Gawain
+Simply pick an item, and subtly yet boldly hand it to a woman you have your eyes on.
+[k]
+
+[charaFace A 1]
+＠Gawain
+If all goes well, please report back to me. We shall both celebrate our victories, and talk all night of our lovers!
+[k]
+
+？1：Thank you. But...
+
+？！
+
+＠Gawain
+Yes, but?
+[k]
+
+？1：That is absolutely none of your business!
+
+？！
+
+[charaFace A 2]
+＠Gawain
+Wh-what!?
+[k]
+
+[charaFace A 4]
+＠Gawain
+...I see. So you too have mistaken me for a stiff.
+[k]
+
+＠Gawain
+You can talk about love with Lancelot and Tristan, but not with me... This always happens...
+[k]
+
+＠Gawain
+...Ah, how disheartening... I am also a member of the Knights of the Round Table...
+[k]
+
+＠Gawain
+If I got word that you wanted to chat with me about a possible romance with a beautiful maiden, I would ride Gringolet like the wind to come to your side.
+[k]
+
+＠Gawain
+Maybe I should have made a harp or something part of my Noble Phantasm...
+[k]
+
+[charaFace A 1]
+＠Gawain
+Well, regardless, I would like Master to enjoy Valentine's Day.
+[k]
+
+＠Gawain
+The victory of my contractor is my victory.[sr]I hope you have glorious military achievements!
+[k]
+
+[branch _branchEnd]
+
+
+[label _isFemale]
+
+？1：Cosmetics set...?
+？2：Where did you get this...?
+
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Gawain
+I asked Da Vinci to get it for me.
+[k]
+
+＠Gawain
+The interior temperature within Chaldea is set to optimal conditions, but take one step outside and you'll be enveloped by a blizzard at an altitude of 6,000 meters.
+[k]
+
+＠Gawain
+I cannot imagine this is a good environment for women. That's why I would like you to use this.
+[k]
+
+
+＠Gawain
+You may be the well-renowned Master now, but to me you are still a delicate lady ready to bloom.
+[k]
+
+＠Gawain
+Like watering a flower, your heart must be properly tended to as well. You must never forget to adorn yourself.
+[k]
+
+＠Gawain
+By doing so, you shall blossom into a grand flower.[sr]I have an eye for such things.
+[k]
+
+？1：Thank you. But...
+
+？！
+
+＠Gawain
+Yes, but?
+[k]
+
+？1：That is absolutely none of your business!
+
+？！
+
+[charaFace A 1]
+＠Gawain
+Hahahaha. Yes. I knew you would resent my statement.
+[k]
+
+[charaFace A 0]
+＠Gawain
+But please forgive me, [%1].
+[k]
+
+＠Gawain
+The more of sound mind and body you are, the more powerful my sword becomes.
+[k]
+
+＠Gawain
+Even if it be a temporary contract, I have sworn to be your knight. And so, I shall do everything in my power to protect you, my lord.
+[k]
+
+[charaFace A 1]
+＠Gawain
+So, please resign and accept it. May we continue to have such a wonderful time together, Master.
+[k]
+
+[label _branchEnd]
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+[soundStopAll]
+[end]

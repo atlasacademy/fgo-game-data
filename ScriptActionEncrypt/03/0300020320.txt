@@ -1,0 +1,394 @@
+
+
+＄03-00-02-03-2-0
+
+
+
+[soundStopAll]
+
+[charaSet A 8001400 1 Mash]
+[charaSet C 1033000 1 "Sigurd (Silhouette)"]
+[charaFilter C silhouette 00000080]
+[charaSet D 1098123000 1 Meunière]
+[charaSet F 1098123200 1 Goredolf]
+[charaSet G 1033000 1 Sigurd]
+[charaSet H 98115000 1 Effect]
+[charaSet B 98115000 1 Effect]
+
+[scene 55700]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaPut H 1]
+[charaEffect H bit_talk_41]
+[se ad667]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+[seStop ad667 0.5]
+
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_41]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Mash
+I've caught up to the target!
+[k]
+
+＠Mash
+He's still somewhere inside the Border...[sr]He appears to be headed for the cockpit!
+[k]
+
+？1：Holmes's Noble Phantasm is still active!
+？2：This is our chance to take Sigurd down!
+
+？！
+
+＠Mash
+Right!
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[wt 0.7]
+[se ad8]
+[wt 0.2]
+
+[scene 51600]
+
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+[wt 0.8]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠Mash
+Huh!? There's nobody here![sr]No signs of a struggle, either. What in the[line 2]
+[k]
+
+？1：It looks like the side hatch is open...?
+？2：They must be on the deck!
+
+？！
+
+[messageOff]
+[charaFace A 6]
+[wt 0.5]
+
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+
+[charaDepth B 10]
+
+[charaPut B 1]
+[charaEffect B bit_talk_celebro]
+[charaEffect B bit_talk_celebro_back]
+
+[se ad548]
+[seVolume ad548 0 0.7]
+[wt 0.5]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+[scene 60601]
+
+[se ad546]
+
+[wipein rightToLeft 0.7 1]
+[bgmStop BGM_EVENT_80 1.0]
+[wait wipe]
+
+＠Meunière
+You sure about this, old man!?[sr]If you give him that, we'll be[line 2]!
+[k]
+
+＠Goredolf
+Stop that! Shut your mouth before he kills us all![sr]We don't have any other choice! Trust me!
+[k]
+
+＠Goredolf
+Here! This is the Paper Moon you said[sr]you were looking for! Go on, take it!
+[k]
+
+＠Goredolf
+Normally, we'd keep it hidden, but you're so strong[sr]that I decided to give it to you as a reward!
+[k]
+
+
+[bgm BGM_EVENT_81 0.1]
+[messageOff]
+[charaTalk off]
+[charaDepth G 10]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 1.0 1]
+[wt 1.0]
+[charaFadeout C 0.1]
+[charaTalk on]
+
+＠Sigurd
+...I'm surprised.[sr]You humans are seldom so intelligent.
+[k]
+
+＠Sigurd
+Still, I didn't think you'd give it up so easily.[sr]I heard this thing was your lifeline.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+[charaShake F 0.05 1 1 0]
+
+＠Goredolf
+I-i-it may be our lifeline, but you are a threat to our actual lives! That thing certainly won't help fill our bellies!
+[k]
+
+＠Goredolf
+N-now go on, you got what you came here for, didn't you?[sr]You don't have any further business with us, right? Right?
+[k]
+
+＠Goredolf
+Without the Paper Moon, we're just helpless drifters. At this point, it's only a matter of time until we die on our own!
+[k]
+
+＠Goredolf
+There's no reason for you to sully your hands with the blood of insignificant specks like us, is there? S-so why not just be on your way then!?
+[k]
+
+[charaShakeStop F]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+
+＠Sigurd
+...You've got a point. This sword wasn't[sr]made for cutting up useless meat.
+[k]
+
+[messageOff]
+[charaFadeout G 0.4]
+[wt 1.0]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠Goredolf
+(Yes! I made it out alive again!)
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[bgmStop BGM_EVENT_81 1.0]
+[wt 0.5]
+
+？1：Hold it right there!
+？2：I don't think so...!
+
+？！
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Mash
+Right! You need to give us back[sr]that compass right now, Sigurd!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+
+＠Goredolf
+(Nooo! Things were going so well! Have you gone mad,[sr]picking a fight with the scary knife guy!?)
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠Sigurd
+...Oh?
+[k]
+
+＠Sigurd
+The human and the hybrid, huh.[sr]Do you still not see how outclassed you are?
+[k]
+
+＠Sigurd
+Ah, I see. So you got a little boost from the Heroic Spirit who doesn't know when he's beaten.
+[k]
+
+[messageOff]
+[se ad51]
+[wt 0.5]
+
+＠Sigurd
+...Fine, I suppose you're worth killing.[sr]You two obviously don't know when to quit either.
+[k]
+
+＠Sigurd
+All right. It wouldn't hurt to put this body through its paces a little more, anyway.
+[k]
+
+＠Sigurd
+...Give me your best shot. I'll humor you and take this at least halfway seriously.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Mash
+You better believe we will. We're not backing down until you leave our ship, one way or another.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+
+＠Sigurd
+Heh. Now you're telling me to leave, hm?
+[k]
+
+＠Sigurd
+All right, then tell me your names.[sr]I hear that's what human heroes are supposed to do.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠Mash
+...I'm Mash Kyrielight.
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+？1：And I'm [%1]!
+
+？！
+
+＠Sigurd
+Got it. I'll probably forget them shortly.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠Mash
+Fine with us.
+[k]
+
+[charaFace A 2]
+
+＠Mash
+...Come on, Master.[sr]Let's get our Paper Moon back from Sigurd!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+
+＠Sigurd
+Conceit. Overconfidence. Arrogance. Pride.
+[k]
+
+＠Sigurd
+You humans never change.[sr]Heh. You're just like the gods.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠Mash
+(Gods...?)
+[k]
+
+[charaFace A 7]
+
+＠Mash
+Call us whatever you want.[sr]You may even be right.
+[k]
+
+＠Mash
+But, be that as it may...neither[sr]Senpai nor I will back down!
+[k]
+
+[charaFace A 2]
+
+＠Mash
+This time, we've got Holmes cheering us on!
+[k]
+
+＠Mash
+...Sigurd! If anyone's going to[sr]back down here, it will be you!
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

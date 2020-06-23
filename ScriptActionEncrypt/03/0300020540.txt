@@ -1,0 +1,362 @@
+
+
+＄03-00-02-05-4-0
+[soundStopAll]
+
+
+[charaSet A 8001400 1 Mash]
+[charaSet B 1098153200 1 Envoy]
+[charaSet C 98002000 1 Fou]
+[charaSet D 1098153600 1 Gerda]
+[charaSet E 1098153900 1 Boy]
+[charaSet F 1098154100 1 Girl]
+[charaSet H 5009000 1 "Effect Dummy"]
+
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[wt 0.7]
+
+[effect bit_talk_kengekiall01]
+[wt 0.1]
+[se ad32]
+[fowardEffect bit_talk_14]
+[wt 0.4]
+[se ad32]
+[wt 0.1]
+[fowardEffect bit_talk_14]
+[se ad32]
+
+[wt 1.0]
+
+[wipeout leftToRight 0.1 1]
+[wait wipe]
+
+[scene 61800]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 -25,0]
+
+[wipein rightToLeft 0.3 1]
+[se ad671]
+[wt 0.1]
+[charaMove A 1 0.2]
+[wait wipe]
+
+[wt 0.3]
+[seStop ad671 0.3]
+[wt 1.0]
+
+[charaFace A 2]
+
+＠Mash
+...!
+[k]
+
+
+[messageOff]
+
+[se ad688]
+
+[charaFace A 2]
+[charaMoveScale A 1.1 0.2]
+[charaMove A 0,20 0.2]
+
+[charaPut H 1]
+[charaScale H 1.1]
+
+[charaEffect H bit_talk_41]
+
+[charaPut H -30,90]
+[shake 0.05 2 4 0.5]
+
+[wt 0.2]
+
+[charaPut H 1200,1200]
+[charaFadeout A 0.4]
+[wt 0.2]
+[charaEffectStop H bit_talk_41]
+
+[wt 0.3]
+
+[charaScale H 1.0]
+[charaScale A 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[charaShake B 0.05 5 2 1.0]
+[fowardEffect bit_talk_13]
+[flashin once 0.2 0.2 FFFFFF80 FFFFFF80]
+[effect bit_talk_14]
+[se ad687]
+[wt 0.2]
+[cueSeStop bac54 0.3]
+
+[wt 1.0]
+
+＠Envoy
+...How? How can a human defeat an envoy?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠Mash
+I may be human, but I'm also a Demi-Servant who once possessed the power of a Heroic Spirit...
+[k]
+
+＠Mash
+The sort who is exactly the kind of hero whose soul Valkyries would have desired, at least in Proper Human History.
+[k]
+
+＠Mash
+Given your nature, you can't ignore the remains of that hero inside me. That's why...
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaPut H 0,-70]
+[charaEffect H bit_talk_06_blue]
+
+[wt 0.7]
+
+＠Envoy
+The soul of a hero...
+[k]
+
+＠Envoy
+...Two thousand and several hundred years since I was manufactured...and never once...did I get...to see one...
+[k]
+
+[messageOff]
+[charaSpecialEffect B enemyErasure 1 2.0]
+[wt 0.3]
+[cueSe Battle ba5]
+[wt 2.0]
+[charaEffectStop H bit_talk_06_blue]
+[cueSeStop ba5 0.3]
+
+[wt 1.0]
+
+[charaSet G 1098153700 1 "Village Grown-Up_Man"]
+[charaSet H 1098153800 1 "Village Grown-Up_Woman"]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Mash
+...Target has disappeared. [bgm BGM_EVENT_81 0.1]The Ortinax's output[sr]drop is within tolerance. I'm still good to go!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Fou
+Fou, fau kyaaau!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠Mash
+She wasn't a Servant. She did give off a magical energy signal...but she wasn't summoned here!
+[k]
+
+[charaFace A 14]
+
+＠Mash
+Which would mean, here in 2020,[sr]this Scandinavian Lostbelt is home to...!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Gerda
+There are...lots and lots of envoys...
+[k]
+
+[charaFace D 3]
+
+＠Gerda
+Lots, and lots, and lots!
+[k]
+
+＠Gerda
+Wh-why did you do that, Lady Mash!?[sr]How could you fight another envoy!?
+[k]
+
+[charaFace D 2]
+
+＠Gerda
+The...the Goddess is going to be really mad...
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0]
+[charaFace F 2]
+[charaFadein F 0.1 2]
+
+＠E：Children
+The envoy's gone... Just vanished into thin air...[sr]Is that even possible...?
+[k]
+
+＠F：Children
+H-huh? Now what's going to happen with the ritual...?
+[k]
+
+＠E：Children
+This isn't right! It doesn't make sense! We gave them the bouquet, but the envoy never opened the gate!
+[k]
+
+＠F：Children
+We can't open it ourselves, right? Gerda did yesterday,[sr]but we can't do that on the ordained day, right?
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 0]
+[charaFace H 0]
+[charaFadein H 0.1 2]
+
+＠G：Grown-Ups
+Oh no... This is terrible! The envoy's gone![sr]She was supposed to take us to Valhalla!
+[k]
+
+[charaFace H 1]
+
+＠H：Grown-Ups
+It's okay! The envoys are servants of the Goddess, right? Even if one disappears, more will come in her place. There, look...!
+[k]
+
+＠H：Grown-Ups
+See that light in the sky?
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 0.3]
+[wt 0.5]
+[bgm BGM_EVENT_80]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaMoveReturn C 0,30 0.25]
+
+＠Fou
+Fou, fou fo fooou![sr]Kyaaau!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Mash
+I'm sensing lots of new magical energy signals in the sky! ...The Ortinax should be fine to handle a series of consecutive battles!
+[k]
+
+[messageOff]
+[charaFace A 7]
+[cueSe Battle bac170]
+[wt 1.0]
+
+＠Mash
+Amalgam Goad is in good shape.[sr]It should stand up to combat, at a minimum.
+[k]
+
+[charaFace A 0]
+
+＠Mash
+It also seems that the envoys view the people of these villages as something to be protected.
+[k]
+
+＠Mash
+When we fought, it seemed like she didn't want to hurt the people or damage the village.
+[k]
+
+＠Mash
+I'm willing to bet that the next envoys will probably take the same approach...
+[k]
+
+＠Mash
+...[sr]...
+[k]
+
+[charaFace A 8]
+
+＠Mash
+...I'm sorry.[sr]I really should be apologizing for all this...
+[k]
+
+＠Mash
+I was foolish...reckless...
+[k]
+
+？1：Hey, it's okay. I would've said the same.
+？2：I had the same thing in mind. You just beat me to it.
+
+？！
+
+[charaFace A 13]
+
+＠Mash
+Thank you, Master. [wt 0.5][charaFace A 2]Multiple magical energy signals[sr]approaching quickly from above. Here they come!
+[k]
+
+＠Mash
+Initiating combat while maintaining the Ortinax's output! Requesting orders and backup, Master!
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

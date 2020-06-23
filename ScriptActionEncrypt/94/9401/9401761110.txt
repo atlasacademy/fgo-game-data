@@ -1,0 +1,91 @@
+
+
+＄94-01-76-11-1-0
+[soundStopAll]
+
+
+[charaSet A 98018100 1 "Pirate A"]
+[charaSet B 98018100 1 "Pirate B"]
+[charaSet C 99502600 1 Mash]
+[charaSet D 10004000 1 "Mecha Eli-chan"]
+[charaSet E 98102900 1 Fou]
+[charaSet H 5009000 1 "Effect Dummy"]
+
+[scene 48900]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_3 0.1]
+[wait fade]
+
+[charaTalk A]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+
+＠A：Ruffian
+Heehahaha! We're the baddest bad dudes EVER! There's nothing we won't do to avoid having to listen to our former ruler's horrible singing!
+[k]
+
+＠B：Ruffian
+Hell, even if we gotta die!
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠Mash
+I don't really like where this is going,[sr]but we can't turn back now!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Mecha Eli-chan
+What is it about singing that makes you so passionate?[sr]I just don't understand.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Fou
+Fou.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠Mash
+I think Fou is saying, “I can't help but feel that in this case, their passion is a little misguided!”
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

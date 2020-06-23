@@ -1,0 +1,495 @@
+
+＄94-02-49-01-1-0
+
+
+[soundStopAll]
+
+
+[charaSet A 10007000 1 "Okita Alter"]
+[charaSet B 1098135000 1 "Oda Nobunaga"]
+[charaSet C 9940030 1 "Mini Nobu?"]
+[charaSet D 1098130800 1 "Citizen A"]
+[charaSet E 1098130900 1 "Citizen B"]
+
+[charaSet F 98002000 1 "Effect Dummy 1"]
+[charaSet G 98002000 1 "Effect Dummy 2"]
+[charaSet H 1098135000 1 "Nobbu Darkening"]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[effect bit_talk_07]
+[se ad12]
+[wt 4]
+[fadeout white 1.0]
+[wait fade]
+[wt 2.0]
+
+
+[scene 59300]
+
+[fadein white 2.0]
+[wait fade]
+
+[se ad9]
+[seVolume ad9 0.0 0.0]
+[se ad587]
+[seVolume ad587 0.0 0.0]
+[wt 0.1]
+[seVolume ad9 3.0 0.8]
+[seVolume ad587 3.0 0.5]
+[wt 3.5]
+
+？1：Huh? What is this place?
+？2：...Am I dreaming again?
+
+？！
+
+[seVolume ad9 0.4 0.2]
+[seVolume ad587 0.4 0.2]
+[wt 0.4]
+[messageOff]
+[se ad59]
+[seVolume ad59 0 0.6]
+[wt 0.7]
+[seStop ad59 0.4]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.4 1]
+[wt 0.4]
+＠D：Citizen
+...Hey! What're you standing around for!?
+[k]
+
+＠D：Citizen
+Can't you hear the alarm!?[sr]You've gotta get as far away from here as you can!
+[k]
+
+？1：Excuse me, can you tell me where we are?
+
+＠D：Citizen
+Huh? What're you talking about!?[sr]This is the Imperial Capital, Tokyo! Obviously!
+[k]
+
+？2：Alarm?
+
+＠D：Citizen
+Hurry up, before you get caught in their cross fire!
+[k]
+
+？！
+
+＠D：Citizen
+Fine, then! If you and your weird outfit[sr]are so eager to die, then stay there!
+[k]
+
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+＠C：Mini Nobu
+N[voice 9940030_0_B010]obbuuu!
+[k]
+
+[seStop ad587 0.4]
+[seStop ad9 0.4]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠D：Citizen
+[messageShake 0.05 4 4 0.7]
+Aaaaaahhh!!![sr]I'm too late!
+[k]
+
+？1：Oh, it's just a Mini Nobu.
+？2：NOW what's Nobbu up to?
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Mini Nobu?
+N[voice 9940030_0_B030]obbu!
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.4]
+[charaFadeout C 0.1]
+[wt 0.4]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.3]
+
+[se ade64]
+[charaEffect F bit_shot_01]
+[wt 0.3]
+[charaPut F 1200,1200]
+[se ad240]
+[fowardEffect bit_talk_35]
+
+[charaFace D 2]
+[charaShake D 0.03 3 3 0.4]
+[wt 1.5]
+
+＠D：Citizen
+...Wh-why?[sr]I'm a good...imperial citizen...
+[k]
+
+
+[messageOff]
+[charaFadeout D 0.4]
+[charaMove D 0,-30 0.4]
+[wt 0.4]
+[se ad144]
+[seVolume ad144 0 0.4]
+[wt 1.0]
+
+[bgm BGM_EVENT_90 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Mini Nobu?
+N[voice 9940030_0_B010]obbuuu!
+[k]
+
+？1：...Huh?
+？2：...I've gotta get out of here!
+
+？！
+
+＠Mini Nobu?
+N[voice 9940030_0_B020]obu nobuuu!
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+[se ad587]
+[seVolume ad587 0.1 0.8]
+[wt 0.7]
+
+
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[wt 0.4]
+[wipein rectangleStripLeftToRight 0.2 1]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠E：Citizen
+P-please, h-help...!
+[k]
+
+[messageOff]
+[se ade64]
+[charaEffect F bit_shot_01]
+[wt 0.3]
+[charaPut F 1200,1200]
+[se ad240]
+[fowardEffect bit_talk_35]
+
+[charaFace E 3]
+[charaShake E 0.03 3 3 0.4]
+[wt 0.8]
+
+[charaFadeout E 0.1]
+[charaMove E 0,-30 0.4]
+[wt 0.2]
+[se ad144]
+[seVolume ad144 0 0.4]
+[wt 0.6]
+
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[wt 0.4]
+[wipein rectangleStripRightToLeft 0.2 1]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠E：Citizen
+Aaaaaahhh!
+[k]
+
+
+[messageOff]
+[se ade64]
+[charaEffect F bit_shot_01]
+[wt 0.3]
+[charaPut F 1200,1200]
+[se ad240]
+[fowardEffect bit_talk_35]
+
+[charaFace E 3]
+[charaShake E 0.03 3 3 0.4]
+[wt 0.8]
+
+[charaFadeout E 0.1]
+[charaMove E 0,-30 0.2]
+[wt 0.2]
+[se ad144]
+[seVolume ad144 0 0.4]
+[wt 0.6]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Mini Nobu?
+N[voice 9940030_0_B020]obu nobu!
+[k]
+
+？1：...!
+？2：I've just gotta find a way out!
+？！
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+[wt 0.1]
+
+[charaFadeout C 0.1]
+[cameraMove 0.1 0,0 1.2]
+[charaMoveScale H 1.2 0.1]
+[charaTalk off]
+
+[charaDepth H 1]
+[charaDepth B 0]
+
+[wt 0.5]
+
+[se ad59]
+[seVolume ad59 0 0.6]
+
+[wipein rectangleStripRightToLeft 0.5 1]
+
+[effect bit_talk_41]
+[wt 1.7]
+
+[seStop ad587 1.0]
+[charaFilter H silhouette 00000080]
+[charaFadein H 0.7 1]
+[wt 0.7]
+[seStop ad59 0.1]
+[se ad222]
+[effectStop bit_talk_41]
+[shake 0.05 8 8 0.5]
+[wt 0.2]
+[charaFadeout H 0.1]
+[seStop ad222 0.1]
+[cameraHome 0.4]
+[wait camera]
+[wt 1.0]
+
+
+[charaMoveScale H 1.0 0.1]
+[wt 0.1]
+[charaFace H 0]
+[charaFadein H 0.7 1]
+[wt 0.7]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 1.0]
+[charaFadeout H 0.7]
+[wt 1.7]
+
+＠Oda Nobunaga
+...
+[k]
+
+？1：Nobbu! Oh, great timing!
+？2：Nobbu...?
+
+？！
+
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_90 0.4]
+[flashin once 0.2 0.2 FFFFFF80 00000000]
+[se ade64]
+[wt 0.3]
+[fowardEffect bit_talk_35]
+[se ad240]
+[shake 0.05 4 4 0.5]
+[wt 1.5]
+
+
+？1：...!?
+？2：(Oof, that hurt!)
+
+？！
+
+[charaFace B 7]
+＠Oda Nobunaga
+How dare you talk to me like that.[sr]Who do you think I am?
+[k]
+
+＠Oda Nobunaga
+I'm Oda Nobunaga, the Demon King of the Sixth Heaven. Don't you forget it.
+[k]
+
+？1：What's going on...?
+？2：I'm passing out...
+？！
+
+＠Oda Nobunaga
+Hmm, so you're an outsider.[sr]And here I thought you were one of Caster's people...
+[k]
+
+[charaFace B 0]
+
+＠Oda Nobunaga
+Seems I was worried over nothing.
+[k]
+
+＠Oda Nobunaga
+...Die.
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ade64]
+[charaPut F 1]
+[charaEffect F bit_shot_01]
+[wt 0.4]
+[charaPut F 1200,1200]
+
+[effect bit_talk_ichimon01wh]
+[se ad171]
+[wt 0.2]
+[effectStop bit_talk_ichimon01wh]
+
+[fowardEffect bit_talk_14]
+[se ad170]
+[shake 0.05 5 5 0.5]
+[wt 2.0]
+
+[bgm BGM_EVENT_3 0.1 1.0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.7 1]
+[wt 2.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠Oda Nobunaga
+...And who are you?
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠A：???
+...
+[k]
+
+？1：Aren't you...?
+？2：...Okita?
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠Oda Nobunaga
+...If that oversized sword you carry is anything to go by,[sr]I take it you are a Saber?
+[k]
+
+＠Oda Nobunaga
+And on top of that,[sr]you're that little [&boy's:girl's] Servant?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠A：???
+...
+[k]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠Oda Nobunaga
+To think there was a Servant[sr]here still bound to a Master...
+[k]
+
+[charaFace B 5]
+＠Oda Nobunaga
+Interesting... I don't know where you came from, but no one comes strolling into my territory and gets away with it.
+[k]
+
+＠Oda Nobunaga
+You Sabers are supposed to be the most powerful of the classes, right? Then let's see what you've got!
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠A：???
+...!
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
