@@ -1,0 +1,438 @@
+
+
+＄91-20-34-01-2-1
+
+[soundStopAll]
+
+[charaSet A 2034000 1 テル]
+[charaSet C 2038000 1 オリオン]
+
+[charaSet I 8001000 1 ダミーエフェクト１]
+[imageSet J back10000 1]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+[flag IsClear true]
+[branch lblConf]
+[label lblNotClear]
+[flag IsClear false]
+[label lblConf]
+
+
+[branch lblNotClear1 IsClear false]
+
+[charaSet B 1098124510 1 ダ・ヴィンチ]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+[charaSet B 98111500 1 ダ・ヴィンチ]
+
+[label lblConf1]
+
+
+
+
+[charaScale J 1.01]
+
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_10_MiddleLevel]
+
+[scene 20803]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠テル
+フゥ、こんなものかね。[bgm BGM_EVENT_94 0.1]
+[k]
+
+＠テル
+鳥は好きだぜ、皮が柔らかいからな。[r]矢を弾かれる心配がない。
+[k]
+
+[charaPut I 0,0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch lblNotClear2 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[branch lblConf2]
+[label lblNotClear2]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf2]
+
+＠ダ・ヴィンチ
+ふむ、その発言どおりスコアはかなりのものだね。[r]一方、オリオンのほうは……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 2000,2000]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠オリオン
+いやさ、『この森にいるライオン１０頭を[r]誰よりも早く倒せ（素手で）』とかなら自信あるよ？
+[k]
+
+＠オリオン
+ラミアとかも何ならオマケにつけちゃっていいよ？[r]でもなぁ……
+[k]
+
+
+＠オリオン
+『森のどこかにいるかもしれないちっこい鳥を[r]　制限時間内にできるだけ多く捕まえろ』なんてのは、
+[k]
+
+[charaFace C 11]
+
+＠オリオン
+よく考えたらやったことなかったわ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠テル
+ふむ。狩人としての圧はそりゃもう凄まじいもので、[r]森の空気の中にも感じ取れるほどだったが……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠オリオン
+俺の狩りって基本、獲物を見つける！[r]矢を射る！　終了！　だからよ。
+[k]
+
+＠オリオン
+そっちみたいにちまちま罠かけたり獲物を追い込んだり[r]ってのはする必要がなかったっつーかさ。
+[k]
+
+[charaFace C 6]
+
+＠オリオン
+どんな遠くからでも矢を撃てば当たるからな。[r]だって俺だし。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+
+＠テル
+うむ……言うまでもなく、弓の腕自体は[r]オリオン殿のほうがわしなどより上だろうよ。
+[k]
+
+＠テル
+機械仕掛けの[#弩:いしゆみ]を使っている時点で[r]推して知るべし、だ。
+[k]
+
+[charaPut I 0,0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch lblNotClear3 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+[branch lblConf3]
+[label lblNotClear3]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf3]
+
+＠ダ・ヴィンチ
+うーん。どうやら、テルの狩りとオリオンの狩りは[r]ちょっとジャンルが違っていたみたいだね。
+[k]
+
+＠ダ・ヴィンチ
+弓の腕前とかの基本パラメータは圧勝でも、
+[k]
+
+＠ダ・ヴィンチ
+小動物の獲物の見つけ方とか[r]そういう細かい技術は別のスキルだってことかぁ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 2000,2000]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+
+＠オリオン
+おう、俺はデカい獲物のほうが好きだな！[r]矢は当てやすいし食い出があるし。
+[k]
+
+＠オリオン
+ちっこいのとかわざわざ狙う必要ないだろ。
+[k]
+
+？1：さすがはオリオン、ワイルドだね
+？！
+
+[charaPut I 0,0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branch lblNotClear4 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 32]
+[charaFadein B 0.1 1]
+
+[branch lblConf4]
+[label lblNotClear4]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf4]
+
+＠ダ・ヴィンチ
+大物相手のほうが得意だったか……。[r]ちょっとフィールド設定が偏ってたかもだ。
+[k]
+
+[charaFace B 4]
+
+＠ダ・ヴィンチ
+ごめんねー、公平な勝負じゃなかったかな？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 2000,2000]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠オリオン
+いやいや、でも勝負は勝負さ！
+[k]
+
+
+＠オリオン
+テルよ、おまえの腕前が見事なのは充分にわかった。
+[k]
+
+＠オリオン
+同じ森に入ってたんだからな、それくらいは感じ取れる。[r]今回の負けは素直に認めとくぜ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠テル
+不得意な獲物でありながらこの僅差だ。[r]素直にその勝ちを受け入れるのは難しいが……
+[k]
+
+[charaFace A 1]
+
+＠テル
+だが、どうあれ、あんたと共に狩りが[r]できたのは貴重な体験だった。
+[k]
+
+[charaFace A 3]
+
+＠テル
+ありがとうよ、神話の狩人オリオン[line 3]久しぶりに、[r]『わしが狩人であること』が誇らしい気分になったよ。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.8]
+
+[charaFace C 1]
+[wt 1.3]
+
+[charaPut I 0,0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branch lblNotClear5 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 30]
+[charaFadein B 0.1 1]
+
+[branch lblConf5]
+[label lblNotClear5]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf5]
+
+＠ダ・ヴィンチ
+だが、まだ満足しきったわけじゃないんだろう？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 2000,2000]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠テル
+へっへ。欲が出ちまってるかな？[r]こんな機会、そうそうないもんでね。
+[k]
+
+＠テル
+山男の貧乏性だと思って許しておくれ。
+[k]
+
+[charaPut I 0,0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch lblNotClear6 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 26]
+[charaFadein B 0.1 1]
+
+[branch lblConf6]
+[label lblNotClear6]
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf6]
+
+＠ダ・ヴィンチ
+任せといて～。[r]実は声をかけたのはオリオンだけじゃない。
+[k]
+
+
+＠ダ・ヴィンチ
+他にも狩り場シミュレーションのパターンは[r]用意してあるし、
+[k]
+
+[branch lblNotClear7 IsClear false]
+
+
+[charaFace B 11]
+
+[branch lblConf7]
+[label lblNotClear7]
+
+
+[charaFace B 7]
+
+[label lblConf7]
+
+＠ダ・ヴィンチ
+せっかくだからテルが満足するまで[r]おかわりといこうじゃないか！
+[k]
+
+？1：ＯＫ、狩りバトル第二戦目だ！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 2000,2000]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠オリオン
+んー、久しぶりの森だし、俺は[r]ジャマにならないところでもう少し遊んどこうかな。
+[k]
+
+[charaFadein J 0.1 0,-200]
+[charaFadeTime J 0.2 0.7]
+[wt 0.1]
+
+[charaFace C 13]
+
+＠オリオン
+（偶然森で出会う美女……俺の狩りの腕に惚れ込んで……[r]　そして……フフフフフ！）
+[k]
+
+[charaFadeout J 0.2]
+[wt 0.1]
+
+[charaFace C 8]
+
+＠オリオン
+よし、んじゃそういうことで。[r]頑張れよな！　俺も頑張る！
+[k]
+
+[messageOff]
+[se ad348]
+[charaMove C -150,0 0.4]
+[charaFadeout C 0.4]
+[wt 1.8]
+
+
+？1：嫌な予感しかしないけど……
+？2：オリオンならきっと大丈夫[&さ:だよね]！
+？！
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_94 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

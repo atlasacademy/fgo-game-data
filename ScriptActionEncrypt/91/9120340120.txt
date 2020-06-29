@@ -1,0 +1,333 @@
+
+
+＄91-20-34-01-2-0
+
+[soundStopAll]
+
+[charaSet A 2034000 1 テル]
+[charaSet C 2038000 1 オリオン]
+
+[charaSet J 8001000 1 ダミーエフェクト１]
+
+[branchQuestNotClear lblNotClear 3000303]
+[flag IsClear true]
+[branch lblConf]
+[label lblNotClear]
+[flag IsClear false]
+[label lblConf]
+
+
+[branch lblNotClear1 IsClear false]
+
+[charaSet B 1098124510 1 ダ・ヴィンチ]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+[charaSet B 98111500 1 ダ・ヴィンチ]
+
+[label lblConf1]
+
+[scene 10000]
+
+[fadein black 1.2]
+[wait fade]
+
+[se ad15]
+[wt 0.35]
+[se ad15]
+[wt 0.2]
+
+[wipeout moza 1.0 1.0]
+[wait wipe]
+
+[scene 20803]
+
+[se ad146]
+[wipein moza 1.0 1.0]
+[wait wipe]
+
+[seStop ad146 0.4]
+[wt 0.7]
+
+[charaPut J 0,0]
+[charaEffect J bit_talk_10_MiddleLevel]
+[wt 0.2]
+
+[se ad13]
+
+[branch lblNotClear2 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+[branch lblConf2]
+[label lblNotClear2]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+[wt 0.5]
+
+[label lblConf2]
+
+＠ダ・ヴィンチ
+と、いうわけで！[bgm BGM_EVENT_62 0.1]
+[k]
+
+
+＠ダ・ヴィンチ
+さっそくプログラムを組んで作ってみたよ～。[r]より狩りに特化した設定の、スペシャルなフィールドさ。
+[k]
+
+[charaFace B 1]
+
+＠ダ・ヴィンチ
+生態系とか環境変化も[r]できるだけ自然なものになるようにしたよ。
+[k]
+
+？1：さすが仕事が早い
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 2000,2000]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠テル
+おお、ありがとさん。すまんねぇ。[r]なかなかいい森じゃないか。
+[k]
+
+[charaPut J 0,0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch lblNotClear3 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[branch lblConf3]
+[label lblNotClear3]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf3]
+
+＠ダ・ヴィンチ
+そして歯ごたえのある相手も用意しておいたよ。
+[k]
+
+＠ダ・ヴィンチ
+狩りバトルがしたいというなら[r]これ以上の適任はいないだろう。
+[k]
+
+[branch lblNotClear4 IsClear false]
+
+
+[charaFace B 19]
+
+[branch lblConf4]
+[label lblNotClear4]
+
+
+[charaFace B 1]
+
+[label lblConf4]
+
+＠ダ・ヴィンチ
+ぞんぶんに神代の狩人と腕前を競ってくれたまえ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 2000,2000]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.8]
+
+[charaFace C 1]
+
+＠オリオン
+ほいほい、なんか呼ばれたから来たぜ。
+[k]
+
+[charaFace C 6]
+
+
+＠オリオン
+いいのかー？　俺ってば、[r]自他ともに認めるギリシャ[#一:いち]の狩人だぞ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠テル
+おお、ギリシャ神話の狩人、オリオン殿か。
+[k]
+
+＠テル
+こいつは相手にとって不足なし……[wt 0.7][charaFace A 4][r]というか、大丈夫かねコレ？
+[k]
+
+＠テル
+わしのようなただの人間の狩人からしてみれば[r]もったいなさすぎる大物だぜ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠オリオン
+謙遜すんなよ、同じアーチャーの狩人同士じゃないか。
+[k]
+
+[charaFace C 1]
+
+
+＠オリオン
+俺もたまにはガールハントじゃなくて[r]真面目な狩りもできるってとこを見せとかんとな。
+[k]
+
+[charaFace C 13]
+
+
+＠オリオン
+それによって俺の魅力が改めて示されて、今後は[r]よりやりやすくなるって寸法だ！　……フフフ……。
+[k]
+
+[charaFace C 1]
+
+＠オリオン
+まぁそれ抜きにしても狩りは久しぶりだし。[r]楽しみだぜ！
+[k]
+
+[charaFace C 0]
+
+＠オリオン
+あ、マスターの同行はそっちでいいぞ。
+[k]
+
+＠オリオン
+魔力補給しやすくなるだろ？[r]俺のほうが筋肉が多いからハンデな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠テル
+そちらがいいのならば構わんが。[r]やれやれ、これは下手な狩りなどできんな。
+[k]
+
+[charaPut J 0,0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch lblNotClear5 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[branch lblConf5]
+[label lblNotClear5]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf5]
+
+＠ダ・ヴィンチ
+もちろん、可能な限りのリアリティで[r]設定しているからね。
+[k]
+
+
+＠ダ・ヴィンチ
+シミュレーター内であっても[r]本物の狩りと同じだと思ってくれていい。
+[k]
+
+[branch lblNotClear6 IsClear false]
+
+
+[charaFace B 26]
+
+[branch lblConf6]
+[label lblNotClear6]
+
+
+[charaFace B 5]
+
+[label lblConf6]
+
+＠ダ・ヴィンチ
+プロであるキミたちに言うのは[r]釈迦に説法というものだろうけど[line 3]
+[k]
+
+＠ダ・ヴィンチ
+森には危険がいっぱいだ。気を抜くと怪我をするよ。[r]充分注意するように！
+[k]
+
+？1：わかりました！
+？2：気をつけていこう……
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 2000,2000]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠テル
+勿論だ。[r]マスターはわしが責任を持って見ておくよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠オリオン
+おう、頼まあ。[wt 0.45][charaFace C 1][r]それじゃあ狩り勝負、スタートといくか！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_62 0.5]
+[wait fade]
+[soundStopAll]
+[end]

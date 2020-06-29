@@ -1,0 +1,1278 @@
+
+
+＄91-10-39-01-3-0
+
+[soundStopAll]
+
+[charaSet A 1039000 1 ラクシュミー]
+[charaSet B 1098158300 1 ネモ]
+[charaSet C 1098181900 1 ネモ・マリーン]
+[charaSet D 1098181900 1 ネモ・マリーン]
+[charaSet E 1098181900 1 ネモ・マリーン]
+[charaSet F 1098181900 1 ネモ・マリーン]
+[charaSet G 1098182100 1 ネモ・プロフェッサー]
+[charaSet H 1098182210 1 ネモ・エンジン]
+[charaSet I 6034000 1 牛若丸]
+[charaSet J 7016000 1 タマモキャット]
+[charaSet K 7016000 1 タマモキャット(分身)]
+[charaSet L 7016000 1 タマモキャット(シルエット1)]
+[charaSet M 7016000 1 タマモキャット(シルエット2)]
+[charaSet N 5002001 1 ジル]
+
+[charaSet O 98002000 1 ダミーエフェクト１]
+[imageSet P back10000 1]
+[imageSet Q back10000 1]
+[charaSet R 98002000 1 ダミーエフェクト２]
+
+
+[charaPut O 2000,2000]
+[charaEffect O bit_talk_41]
+
+[charaScale Q 1.01]
+[charaFilter Q silhouette E0000080]
+
+[charaScale P 1.01]
+
+[charaDepth E 1]
+[charaDepth F 1]
+[charaDepth C 5]
+[charaDepth D 5]
+[charaDepth I 8]
+[charaDepth B 10]
+
+[scene 66500]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+[se ad453]
+[seVolume ad453 0 0]
+[bgm BGM_EVENT_94 0.1]
+
+＠ネモ
+……とはいえ、僕たちも専門職とは言えない。[r]万全を期すため、遊びのプロを雇ったよ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[seVolume ad453 1.2 1.0]
+[wt 1.6]
+[seStop ad453]
+[wt 0.1]
+
+[se ad73]
+[wt 0.8]
+
+[se ad223]
+[fowardEffect bit_talk_quickmove]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,-10]
+[wt 0.2]
+[charaMove I 1 0.2]
+[wt 0.8]
+[charaFace I 6]
+
+＠牛若丸
+はっはっはー！　遊びのことなら[r]この夏の牛若丸にお任せください！
+[k]
+
+[charaFace I 1]
+
+＠牛若丸
+かけっこに木登り、かくれんぼに[r]だるまさんがころんだ……なんでもこいです。
+[k]
+
+＠牛若丸
+お山での[#修行:遊び]の数々が、[r]まさかこのようなところでも役立とうとは！
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace C 3]
+[charaFace D 3]
+[charaFace E 3]
+[charaFace F 3]
+[charaFadein C 0.2 300,0]
+[charaFadein D 0.2 -300,0]
+[charaFadein E 0.2 100,0]
+[charaFadein F 0.2 -100,0]
+[wt 0.2]
+
+＠ネモ・マリーンたち
+にょてんぐししょー！[se adm21][seVolume adm21 0 0.2][charaMoveReturn C 300,12 0.4][wt 0.1][charaMoveReturn F -100,12 0.4][wt 0.3]　にょてんぐししょー！[r]（何やら楽しくなっている）[charaMoveReturn E 100,12 0.4][wt 0.1][se adm21][seVolume adm21 0 0.3][charaMoveReturn D -300,12 0.4][wt 0.6]
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk I]
+[charaFace I 3]
+[charaFadein I 0.1 1]
+
+
+＠牛若丸
+おっと。それは私のお師さまに聞かれると、
+[k]
+
+[charaFace I 2]
+
+＠牛若丸
+『まだまだ未熟な技で師とは何事か！』[wt 0.8][charaFace I 3]と[r]バチコーンとされる流れなのでご容赦ください。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ラクシュミー
+よろしく頼む、牛若丸殿。[r]未熟者ではあるが、精一杯やらせてもらうつもりだ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+＠牛若丸
+遊びに真剣なその姿勢や、よし！
+[k]
+
+[charaFace I 4]
+
+＠牛若丸
+[line 3]ですが、ええ、やはり聞いていたとおり、[r]何やら真面目すぎる気はしますね……？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ネモ
+そこを何とかしてもらいたくて[r]キミに頼んだんだ。
+[k]
+
+＠ネモ
+聞けば遊びの達人なんだろう？[r]その手腕に期待するよ。
+[k]
+
+？1：で、ここで遊んでいいの？
+？2：確かにドックは広いからいい場所だけど……
+？！
+
+＠ネモ
+身体を動かして遊ぶときに、[r]シミュレーターでは少し味気ないからね。
+[k]
+
+＠ネモ
+船乗りの間では、退屈な航海の間に[r]甲板で運動不足を解消するのは大事なことだ。
+[k]
+
+[charaFace B 1]
+＠ネモ
+ドックなら言うに及ばず、だよ。
+[k]
+
+[charaFace B 6]
+
+＠ネモ
+……ただし船のエンジン区画を[r]かくれんぼの潜伏場所に選ぶのは推奨しない。
+[k]
+
+＠ネモ
+ネモ・エンジンのスパナが飛んでくる。[r]キャプテンである僕の攻撃より痛いよ、アレは。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠牛若丸
+無論、遊びにはルールが必要です。[r]気をつけておきましょう。
+[k]
+
+[charaFace I 1]
+＠牛若丸
+さあ、それではさっそく身体を動かして[r]遊ぶことにしますか！
+[k]
+
+[charaFace I 4]
+
+＠牛若丸
+うーん。ううーん。ここは、[r]せっかく人数が揃っているので……
+[k]
+
+[messageOff]
+[wt 0.5]
+[charaFace I 1]
+[charaMoveReturn I 0,-10 0.4]
+[wt 0.3]
+
+＠牛若丸
+そうだ、以前に主殿に教えていただいた、[r]現代の上級鬼ごっこをやるのはどうでしょう。
+[k]
+
+＠牛若丸
+確か[line 3]ケイドロとかいう！
+[k]
+
+
+？1：かくれんぼ＆追いかけっこの夢の共演……
+？2：警察側も泥棒側も楽しめる遊びだよ
+？！
+
+
+＠牛若丸
+どうやら自信がありそうですね。[r]そうこなくては！
+[k]
+
+[charaFace I 0]
+
+＠牛若丸
+主殿、皆の者にもルール説明をお願いします！
+[k]
+
+[messageOff]
+[wipeout rollRight 1.2 1.0]
+[bgm BGM_EVENT_94 1.2 0.7]
+[wait wipe]
+
+[charaFadeout I 0.1]
+[wt 0.4]
+
+[wipein rollLeft 1.2 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_94 1.0 1.0]
+
+＠ネモ
+なるほど。チーム対抗戦なわけだね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFace G 0]
+[charaFadein C 0.1 0]
+[charaFadein G 0.1 2]
+
+＠ネモ・マリーン
+たのしそー！
+[k]
+
+[charaFace G 1]
+
+＠ネモ・プロフェッサー
+私はチームのハンデにしかなりませんのでー。[r]審判役ということでー。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠牛若丸
+どうですラクシュミー殿、[r]遊びの準備は整いましたか？
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[bgmStop BGM_EVENT_94 1.2]
+[wt 0.6]
+
+[charaFace A 1]
+[charaMoveReturn A 0,-5 0.6]
+[wt 1.2]
+
+[charaFace A 7]
+
+＠ラクシュミー
+フッ。大丈夫だ、完璧に理解している。
+[k]
+
+[messageOff]
+[se ade84]
+[seVolume ade84 0 0.0]
+[wt 0.6]
+[fadeout white 1.4]
+[seVolume ade84 0.3 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 22000]
+[charaEffect R bit_sepia01_depth]
+[wt 0.2]
+
+[fadein white 1.4]
+[wait fade]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.6 266,0]
+[charaMove A 256,0 0.6]
+[wt 0.9]
+
+[bgm BGM_EVENT_70 0.1 0.8]
+
+＠ラクシュミー
+つまりこれは、官憲と反社会的勢力の[r]終わりなき戦いを模したもの。
+[k]
+
+＠ラクシュミー
+禁固刑に処したところでその後の警備に[r]手抜かりがあれば全てが水泡に帰すという、
+[k]
+
+
+[messageOff]
+[fadeout white 0.4]
+[bgmStop BGM_EVENT_70 0.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 66500]
+
+[charaPut R 2000,2000]
+[charaEffectStop R bit_sepia01_depth]
+
+[fadein white 0.4]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.2 1]
+
+＠ラクシュミー
+司法の絶対性と刑罰の現実的運用の難しさを[r]同時に学べる[line 3][wt 0.65][se ade98][charaPut O 0,160][charaFace A 2]遊び、だな！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut O 2000,2000]
+
+[charaTalk off]
+
+[charaFace G 2]
+[charaFace B 6]
+[charaFace I 2]
+[charaFadein G 0.1 -280,0]
+[charaFadein B 0.1 -30,0]
+[charaFadein I 0.1 270,0]
+[wt 1.4]
+
+[charaFace G 4]
+[charaFace B 4]
+[charaFace I 4]
+＠一同
+（……これは[#前途多難:ぜんとたなん]そうだ……）
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout B 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+[bgm BGM_EVENT_94 0.1]
+
+＠牛若丸
+ま、まぁ、とりあえず始めてみますか！[wt 0.9][charaFace I 6][r]全力で楽しんでいきましょーう！
+[k]
+
+[messageOff]
+[fadeout black 1.4]
+[wait fade]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaMoveScale D 1.1 0.1]
+[charaMoveScale E 0.9 0.1]
+[charaMoveScale F 1.05 0.1]
+
+[fadein black 1.4]
+[wait fade]
+[wt 0.4]
+
+[charaTalk off]
+
+[se ad456]
+[se ad518]
+[seVolume ad518 0 0.2]
+[wt 0.3]
+
+[charaFace C 3]
+[charaFadein C 0.3 300,0]
+[charaMove C -300,0 1.6]
+[wt 0.7]
+
+[charaFace D 3]
+[charaFadein D 0.3 350,0]
+[charaMove D -250,0 1.6]
+[charaFadeout C 0.7]
+[wt 0.7]
+
+[charaFace E 3]
+[charaFadein E 0.3 250,-50]
+[charaMove E -350,-50 1.6]
+[charaFadeout D 0.9]
+[wt 0.7]
+
+[charaFace C 3]
+[charaFadein C 0.3 260,0]
+[charaMove C -290,0 1.6]
+[wt 0.2]
+
+[charaFace F 3]
+[charaFadein F 0.3 500,0]
+[charaMove F -100,0 1.6]
+[charaFadeout C 0.8]
+[charaFadeout E 0.5]
+[wt 0.7]
+
+[seStop ad456 0.6]
+[seStop ad518 0.6]
+[charaFadeout F 0.6]
+[wt 1.0]
+
+[se ad73]
+[wt 0.55]
+
+[se ad223]
+[fowardEffect bit_talk_quickmove]
+
+[charaTalk on]
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 0,-5]
+[wt 0.2]
+[charaMove I 1 0.2]
+[wt 0.4]
+
+＠牛若丸
+あっはっはー！　天狗の機動力に[#敵:かな]うと思うてか！[r]捕まえてしまいますよー！
+[k]
+
+[messageOff]
+[charaMove I -40,0 0.5]
+[wt 0.5]
+[se ad7]
+[seVolume ad7 0 0.7]
+[charaFace I 2]
+[charaMove I 128,0 0.15]
+[wt 0.15]
+[charaMove I 256,0 0.15]
+[wt 0.3]
+
+[se ad223]
+[fowardEffect bit_talk_quickmove -256,0]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 -256,-5]
+[wt 0.2]
+[charaMove J 0 0.2]
+[wt 0.4]
+
+＠タマモキャット
+待たれよ！[r]遊びと言えばネコの気まぐれノー天気！
+[k]
+
+[charaFace J 1]
+
+＠タマモキャット
+唐突に通りすがった結果チームの大黒柱となった[r]キャットの奥義を喰らうがいい！　秘技ネコ分身！
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaDepth J 1]
+[charaDepth K 1]
+[charaDepth L 9]
+[charaDepth M 9]
+[charaDepth A 10]
+
+[charaTalk off]
+
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[wt 0.4]
+
+
+[se ade223]
+[seVolume ade223 0 0.4]
+[charaShake J 0.04 4 1 0.7]
+[charaMoveReturn J -20,0 0.3]
+[wt 0.3]
+[se ade223]
+[seVolume ade223 0 0.6]
+[charaMoveReturn J 20,0 0.3]
+[wt 0.3]
+[se ade223]
+[seVolume ade223 0 0.6]
+[charaMoveReturn J -20,0 0.3]
+[wt 0.7]
+
+[charaFace J 1]
+[charaFace K 1]
+[charaFace L 1]
+[charaFace M 1]
+[charaFadein K 0.1 1]
+[charaFadein L 0.1 1]
+[charaFadein M 0.1 1]
+[charaFadeTime L 0.1 0.3]
+[charaFadeTime M 0.1 0.3]
+[charaFadeTime J 0.1 0.8]
+[charaFadeTime K 0.1 0.8]
+[wt 0.3]
+
+[charaMove L 256,0 0.2]
+[charaMove M -256,0 0.2]
+[wt 0.1]
+
+[se bac122]
+[se bac134]
+[seVolume bac134 0 0.1]
+[charaMove J 256,0 0.2]
+[charaMove K -256,0 0.2]
+[charaFadeTime J 0.2 1.0]
+[charaFadeTime K 0.2 1.0]
+[wt 0.9]
+
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaMove J 256,-10 0.2]
+[charaMove K -256,-10 0.2]
+[wt 0.2]
+
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove -256,0]
+[fowardEffect bit_talk_quickmove 256,0]
+[wt 0.9]
+
+[charaTalk on]
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+＠牛若丸
+なんと面妖な！　まあ私も似たようなことはできますが。[r]こうなれば全員捕まえるまでです。
+[k]
+
+＠牛若丸
+ラクシュミー殿、援護をお願いいたします！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ラクシュミー
+任された。私は左から回りこむ！
+[k]
+
+[messageOff]
+[charaFace A 4]
+[wt 0.4]
+
+[bgm BGM_EVENT_94 0.4 0.7]
+
+[charaFadein P 0.1 0,-200]
+[charaFadeTime P 0.4 0.3]
+[wt 0.4]
+
+＠ラクシュミー
+（とはいえ……これはカオスすぎる。[r]　いかなる戦場とも比較にならぬ）
+[k]
+
+＠ラクシュミー
+（指揮にはそれなりに覚えがあるつもりでいたが、[r]　はたしてどうすれば[line 3]？）
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace L 0]
+[charaFadein L 0.4 186,0]
+[charaFadeTime L 0.4 0.7]
+[charaMove L 206,0 0.4]
+[wt 0.4]
+
+[bgm BGM_EVENT_94 1.8 0.3]
+
+＠タマモキャット
+（こちらの動きを読もうとしているな？[r]　ネコを[#躾:しつ]けた事もあるまいに、憐れな）
+[k]
+
+[charaFace A 6]
+
+＠ラクシュミー
+（な[messageShake 0.04 3 2 0.3]にっ！？）
+[k]
+
+[messageOff]
+[charaFace L 5]
+
+[scene 83605 2.4]
+[wt 1.2]
+
+＠タマモキャット
+（遊びは頭の中をからっぽにした者が勝つ……）
+[k]
+
+＠タマモキャット
+（それゆえに遊びではない、血湧き肉躍る頭蓋の中身[r]　放り投げコンテストといえよう……わかれ……）
+[k]
+
+[charaFace L 0]
+
+＠タマモキャット
+（ネコは宇宙の真理。真理は人と共にある……[r]　いかなる時も……ネコ缶をもらえるうちは……）
+[k]
+
+[messageOff]
+[charaFace L 1]
+[charaFadeout L 0.4]
+[charaMove L 186,0 0.4]
+[wt 0.8]
+
+[charaFace A 10]
+[wt 1.1]
+
+[charaTalk on]
+[charaFace A 4]
+
+＠ラクシュミー
+（からっぽ……からっぽ……からっぽとは虚空すなわち[r]　０にして無であり全ての宇宙の始まりとはいったい[line 2]）
+[k]
+
+＠ラクシュミー
+（……そもそもなぜネコの声が頭の中に……）
+[k]
+
+[messageOff]
+[scene 66500 1.4]
+[seStop ad653 1.4]
+[wt 1.8]
+
+[charaFace A 7]
+
+＠ラクシュミー
+フ……フフ……フフフフ！[bgm BGM_EVENT_94 2.0 1.0][r]よくわからないが楽しくなってきた！
+[k]
+
+？1：（いろいろ考えすぎて一周しちゃったのかな？）
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+
+＠タマモキャット
+想定とはキャッと違う方向な気がするが、[r]まあ楽しければなによりだワン！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠牛若丸
+そうそう、楽しければよいのです！
+[k]
+
+[charaFace I 6]
+
+＠牛若丸
+さあ今がチャンスですよラクシュミー殿、[r]本能の赴くままに身体を動かされよ！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ネモ
+となると、いよいよ本気で[r]逃げねばならないときが来たようだね。
+[k]
+
+＠ネモ
+カジキのように速度でいくか、[r]カレイのように隠れていくか……。
+[k]
+
+[messageOff]
+[wt 0.8]
+[wipeout rightToLeft 1.6 1.0]
+[bgmStop BGM_EVENT_94 1.6]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[pictureFrame cut063_cinema]
+[wt 0.4]
+
+[wipein leftToRight 1.6 1.0]
+[wait wipe]
+
+[se ad60]
+[wt 0.4]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.4 296,-50]
+[charaMove N 256,-50 0.4]
+[wt 0.6]
+[seStop ad60 0.2]
+[wt 0.2]
+
+＠ジル
+おやァ？　あれは……。
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 0.1]
+
+[charaFace A 1]
+[charaFadein A 0.6 -256,-50]
+[charaFadeTime A 0.6 0.8]
+[wt 1.6]
+
+[charaFadeout A 0.4]
+[wt 0.8]
+
+[charaTalk on]
+[charaTalk N]
+[charaFace N 1]
+
+＠ジル
+なるほど、なるほど。[bgm BGM_EVENT_70 0.1][r]わかりますよォ。
+[k]
+
+＠ジル
+ジャンヌが童心に返って[r]遊んでいる姿を見るのもまた尊いもの。
+[k]
+
+＠ジル
+邪魔などいたしませんとも。
+[k]
+
+[charaFace N 4]
+
+＠ジル
+ですが、ええ……見る限り、[r]どうやら戦力の数に不均衡があるようですね？
+[k]
+
+[charaFace N 1]
+
+＠ジル
+それはいけません。[r]熱く豪快な進撃こそがジャンヌの戦の真骨頂。
+[k]
+
+＠ジル
+ここは人知れず足長おじさんとして[r]手助けするといたしましょう。
+[k]
+
+[charaFace N 3]
+
+＠ジル
+おお、なんというこの奥ゆかしさ……[r]まさにジャンヌの一番の理解者たる！
+[k]
+
+[charaFace N 0]
+
+＠ジル
+というわけで、[charaMoveReturn N 260,-50 0.4][se ade277][seVolume ade277 0 0.6][wt 0.4][charaMoveReturn N 252,-50 0.3]本をペラリと。
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.6 1.0]
+[bgmStop BGM_EVENT_70 1.6]
+[wait wipe]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaSet K 98006100 1 エネミーＡ]
+[charaSet L 98006100 1 エネミーＢ]
+[charaSet M 98006100 1 エネミーＣ]
+
+[charaDepth K 9]
+[charaDepth L 1]
+[charaDepth M 1]
+
+[charaMoveScale D 1.0 0.1]
+[charaMoveScale E 1.0 0.1]
+[charaMoveScale F 1.0 0.1]
+
+[pictureFrame]
+[wt 0.2]
+
+[wipein rightToLeft 1.6 1.0]
+[wait wipe]
+[wt 0.2]
+
+[se ade59]
+[effect bit_talk_06b2]
+[wt 1.2]
+[seStop ade59 0.4]
+[effectStop bit_talk_06b2]
+[wt 0.4]
+
+[se ad177]
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.4 1]
+[charaSpecialEffect K appearance 60,0 1.2]
+[wt 2.2]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠ラクシュミー
+何だと！？[bgm BGM_EVENT_80 0.1]
+[k]
+
+[messageOff]
+[charaFace A 5]
+[wt 0.5]
+[charaPut O 0,0]
+
+[se bac1]
+[charaFace A 2]
+[charaFadeout A 0.3]
+[charaMove A 0,10 0.2]
+[charaMoveScale A 1.2 0.2]
+[wt 0.2]
+
+[charaPut O 2000,2000]
+[charaEffectStop O bit_talk_41]
+[wt 0.2]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+[wt 0.6]
+
+[charaMoveScale A 1.0 0.1]
+
+[se bac511]
+[effect bit_talk_h_slash01]
+[charaShake K 0.04 4 3 1.2]
+[wt 0.9]
+
+[se ade244]
+[wt 1.1]
+[seStop ade244 0.4]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+
+＠牛若丸
+[line 3]お見事！[r]突然の[#海星:ヒトデ]型の魔物でしたが、剣筋鮮やか！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 2]
+[charaFadein J 0.1 1]
+
+＠タマモキャット
+（だが……断たれた部分が、くるくると飛んで……？[r]　[#予知:みみ]にきた！　何かが起ころうとしているワン！）
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[se ade244]
+[wt 1.5]
+[seStop ade244 0.4]
+[wt 0.4]
+
+[se ad50]
+[seVolume ad50 0 0.4]
+[wt 0.25]
+[seStop ad50]
+[wt 0.7]
+
+[charaTalk off]
+[bgm BGM_EVENT_80 1.2 0.6]
+[wt 0.7]
+
+[se ad9]
+[seVolume ad9 0 0.3]
+
+[charaTalk Q]
+[charaFadein Q 0.6 0,-200]
+[charaFadeTime Q 0.6 0.4]
+[wt 0.2]
+
+[charaFadeout Q 0.9]
+[wt 0.2]
+
+[charaFadein Q 0.6 0,-200]
+[charaFadeTime Q 0.6 0.4]
+[wt 0.6]
+
+[se ade157]
+[seVolume ade157 0 0.6]
+[se ade307]
+[seVolume ade307 0 0.5]
+[effect bit_talk_rain01]
+[wt 0.2]
+
+[charaFadeout Q 0.9]
+[wt 0.9]
+
+[charaFadein Q 0.6 0,-200]
+[charaFadeTime Q 0.6 0.4]
+[wt 0.6]
+[charaFadeout Q 0.9]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+[seVolume ade307 1.0 0.2]
+[seVolume ad9 1.0 0.2]
+[bgm BGM_EVENT_80 1.0 1.0]
+
+＠ネモ
+！　天井に当たって、その衝撃でスプリンクラーが！
+[k]
+
+＠ネモ
+そして……！？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace K 0]
+[charaFadein K 0.1 1]
+[wt 0.6]
+
+[se ade59]
+[effect bit_talk_06b2]
+[wt 1.2]
+[seStop ade59 0.4]
+[effectStop bit_talk_06b2]
+[wt 0.4]
+
+[se ad177]
+[charaFace L 0]
+[charaFace M 0]
+[charaFadein L 0.4 256,0]
+[charaFadein M 0.4 -256,0]
+[charaSpecialEffect L appearance 256,0 1.2]
+[charaSpecialEffect M appearance -256,0 1.2]
+[wt 2.5]
+
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFace E 7]
+[charaFadein D 0.1 150,0]
+[charaFadein E 0.1 -150,0]
+＠D：ネモ・マリーン
+わ～！　見てアレ、キモ～い！[charaMoveReturn D 150,15 0.2][wt 0.2][charaMoveReturn D 150,15 0.2][wt 0.2][r]ただのヒトデはお友達だけどアレはダメだよ～。[charaMoveReturn D 150,15 0.2][wt 0.2][charaMoveReturn D 150,15 0.2][wt 0.2]
+[k]
+
+[clear]
+
+[charaShake E 0.04 3 3 0.6]
+＠E：ネモ・マリーン
+なんか水気を吸ってモリモリ増えてる～！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaShakeStop E]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠ネモ・プロフェッサー
+いやはや、これはいささか……[r][#運が悪い]、ですね？
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaMoveScale D 1.1 0.1]
+[charaMoveScale E 0.9 0.1]
+[charaMoveScale F 1.05 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[charaShake A 0.04 3 2 0.3]
+[wt 0.8]
+[charaFace A 4]
+[wt 0.7]
+
+＠ラクシュミー
+また……やってしまった、か……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠ネモ
+元凶はわかってる。あのデメキンのような[r]キャスターだろう。まったく……。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[se ad754]
+[seVolume ad754 0 0.6]
+[se ade235]
+[seVolume ade235 0 0.4]
+
+[charaFace C 7]
+[charaFace F 2]
+[charaFadein C 0.4 -400,0]
+[charaFadein F 0.4 500,0]
+[charaMove C 300,0 1.2]
+[charaMove F -400,0 1.2]
+[wt 0.8]
+
+[charaFadeout C 0.4]
+[charaFadeout F 0.4]
+
+[charaFace D 7]
+[charaFace E 7]
+[charaFadein D 0.4 400,0]
+[charaFadein E 0.4 -200,0]
+[charaMove D -350,0 1.2]
+[charaMove E 550,0 1.2]
+[wt 0.8]
+
+[charaFadeout D 0.4]
+[charaFadeout E 0.4]
+
+[charaFace C 2]
+[charaFace F 7]
+[charaFadein C 0.4 300,0]
+[charaFadein F 0.4 -400,0]
+[charaMove C -400,0 1.2]
+[charaMove F 400,0 1.2]
+[wt 0.8]
+
+[charaFadeout C 0.4]
+[charaFadeout F 0.4]
+[wt 1.0]
+
+[seVolume ad754 0.8 0.4]
+
+[charaPut O 0,0]
+[charaEffect O bit_talk_10_LowLevel]
+[wt 0.2]
+
+[se ad13]
+[charaTalk on]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+[wt 0.2]
+
+＠ネモ・エンジン
+コ[messageShake 0.03 3 3 0.6]ラうっせぇぞー！
+[k]
+
+[messageShakeStop]
+[charaFace H 4]
+[charaShake H 0.04 2 4 0.4]
+＠ネモ・エンジン
+ってなんだそれキモ！？[wt 0.4][charaFace H 5]　機関室に[r]そのヌメヌメ入れたら許さねえからな！？
+[k]
+
+＠ネモ・エンジン
+ド、ドックだけで片付けてくれよな！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut O 2000,2000]
+
+[seStop ad754 1.0]
+[seStop ade235 1.0]
+[wt 0.4]
+[se ade157]
+[seVolume ade157 0 0.6]
+[wt 1.2]
+[se ade157]
+[seVolume ade157 0 0.6]
+[seVolume ade307 1.0 0.6]
+[wt 1.8]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ネモ・プロフェッサー
+なぜか別のスプリンクラーも連鎖的に起動。[r]そしてさらに水気で増えてしまう、と……。
+[k]
+
+[charaFace G 1]
+
+＠ネモ・プロフェッサー
+知ってる知ってる。ライブラリにあった[r]モンスターパニック映画ですー。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+
+＠牛若丸
+しかしまあ、こういうのもカルデアでは[r]よくあることにて！
+[k]
+
+[charaFace I 2]
+
+＠牛若丸
+これも[#修行:遊び]の一環として、[r]この牛若も刀を抜かせていただきましょう！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ネモ
+そうだね。[r]ひとまずこいつらを片付けるのが先決だと思う。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠ラクシュミー
+すまん……！　迷惑をかける！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[seStop ad9 0.5]
+[seStop ade307 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

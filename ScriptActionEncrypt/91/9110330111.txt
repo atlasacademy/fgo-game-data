@@ -1,0 +1,483 @@
+
+
+＄91-10-33-01-1-1
+
+[soundStopAll]
+
+
+[charaSet A 1033002 1 シグルド]
+[charaSet C 4019001 1 マルタ]
+[charaSet D 5038000 1 ジーク]
+[charaSet E 98013300 1 ドラゴン]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+[flag IsClear true]
+[branch lblConf]
+[label lblNotClear]
+[flag IsClear false]
+[label lblConf]
+
+
+[branch lblNotClear1 IsClear false]
+
+[charaSet B 8001410 1 マシュ]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+[charaSet B 8001000 1 マシュ]
+
+[label lblConf1]
+
+
+[charaDepth B 1]
+[charaDepth C 1]
+[charaDepth D 9]
+[charaDepth A 9]
+
+
+[scene 20805]
+[cameraMove 0.1 0,0 1.02]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.4]
+
+[se ad18]
+[wt 0.4]
+
+[charaSpecialEffect E erasure 1 1.4]
+[wt 1.1]
+[se ad716]
+[shake 0.04 3 2 1.0]
+[wt 2.0]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.2 1]
+[wt 0.1]
+
+＠シグルド
+よし、と。[bgm BGM_EVENT_77 0.1][r]全滅を確認した、マスター。
+[k]
+
+？1：お疲れ様ー
+？！
+
+[charaFace A 10]
+
+＠シグルド
+ああ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠マルタ
+と言っても、まだ特異点が完全に修正できてないから、[r]気を抜く訳にはいかないけどね。
+[k]
+
+[charaFace C 5]
+
+＠マルタ
+それで、シグルド。戦闘の最中の考え事について、[r]釈明をしていただけます？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シグルド
+確かに、な。
+[k]
+
+＠シグルド
+論理的に考えても、[r]戦闘の最中に別の事を考えるなど[#言語道断:ごんごどうだん]である。
+[k]
+
+[charaFadeout A 0.1]
+
+＠
+[charaTalk B]
+しかし[line 3]
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シグルド
+不覚を取った。[r]申し訳ない。
+[k]
+
+？1：ま、まあまあ
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFace B 12]
+[charaFadein D 0.1 0]
+[charaFadein B 0.1 2]
+
+＠ジーク
+驚いた。[r]あなたでもミスをするのだな。
+[k]
+
+＠マシュ
+わたしも驚きました……。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠マルタ
+……はあ。今のは私たちでフォローできる[r]程度のミスだったけど、次もそうとは限りません。
+[k]
+
+[charaFace C 0]
+
+＠マルタ
+自己解決できる問題だと思うなら、[r]しっかり解決しておいてください。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+[wt 0.4]
+[charaFaceFade A 0 0.2]
+[wt 0.2]
+
+＠シグルド
+ああ、今後は気を付けよう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠ジーク
+……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シグルド
+どうした？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ジーク
+ああ、いや。[r]何でもない。気のせいだろう。
+[k]
+
+[charaFace D 4]
+
+＠ジーク
+（楽しそうに見えたのは、[r]　気のせいかな……）
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.0]
+[wt 1.1]
+
+[charaFace D 0]
+
+＠ジーク
+む。
+[k]
+
+＠ジーク
+ここからもう少し奥に、[r]竜種の気配がする。[bgm BGM_EVENT_70 0.1]
+[k]
+
+？1：数はわかる？
+？！
+
+＠ジーク
+小さいのが大量、[r]中くらいのが二つ、大きいのが一つ。
+[k]
+
+＠ジーク
+これまでの感覚から考えると、[r]小さいのはワイバーンで中くらいのはドラゴンだろう。
+[k]
+
+[charaFace D 5]
+
+＠ジーク
+大きいのは……ファヴニールかな。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace C 0]
+[charaFadein A 0.1 0]
+[charaFadein C 0.1 2]
+
+＠シグルド
+では、それを仕留めれば特異点は解消か。
+[k]
+
+＠マルタ
+多分そうね。
+[k]
+
+[charaFace C 4]
+＠マルタ
+……何度遭遇しても、[#悪竜現象:ファヴニール]は[r]ちょっと御免[#蒙:こうむ]りたいけど。
+[k]
+
+[charaFace A 0]
+
+＠シグルド
+そうだな。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠ジーク
+そう言えば、ジークフリートはファヴニールとの[r]戦いを何も覚えてないそうだ。
+[k]
+
+[charaFace D 8]
+＠ジーク
+チェスやショーギ……将棋？[wt 0.5][charaFace D 6]　みたいなもので、[r]一手指し間違えただけで致命傷になる状況。
+[k]
+
+＠ジーク
+それを頭がおかしくなるほど、繰り返し続けたせいで、[r]どう倒したかすら覚えていないとか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シグルド
+苛烈な戦いには、よくあることだ。
+[k]
+
+＠シグルド
+俺もファヴニールとの戦いは、勝ったことを[r]覚えていても、どうやって戦ったかと問われると[line 3]
+[k]
+
+＠シグルド
+さて、どういうものだったのか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠マルタ
+その剣は使ったのでしょう？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シグルド
+それだけは確実だな。[r]……しかし、不思議なものだ。
+[k]
+
+＠シグルド
+戦士、英雄と讃えられ、気の遠くなるような月日が[r]流れてなお、竜殺しとして名が残るというのに。
+[k]
+
+＠シグルド
+今の俺が思い出せるのは、[r]苛烈な戦いよりも日常の方が多い気がする。
+[k]
+
+＠シグルド
+それでいいのか、と考えなくもないが。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠マルタ
+……まったく。弱気なんて、それこそらしくない。[wt 0.75][charaFace C 1][r]それはいいことですシグルド。間違いなく。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シグルド
+ふむ。
+[k]
+
+＠シグルド
+この人理を救う旅も、終わってみれば[r]戦いより日常が色濃く残っているかもしれないな。
+[k]
+
+？1：それは……いいことじゃないかな？
+？！
+
+＠シグルド
+いいこと、とマスターは思うか？
+[k]
+
+[charaFace A 10]
+
+＠シグルド
+そうか……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ジーク
+この先の洞窟から気配がするが……。[r]気のせいか、先ほどより数が増えている。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠シグルド
+……まずいな、恐らく出産で増えている。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace A 4]
+[charaFace C 2]
+[charaFadein A 0.1 0]
+[charaFadein C 0.1 2]
+
+＠マルタ
+嘘、成長が早すぎない！？
+[k]
+
+[charaFace A 0]
+
+＠シグルド
+それが特異点故だろう。
+[k]
+
+＠シグルド
+強力な霊脈が近くにあるか、[r]さもなくば聖杯の力を得たか……。
+[k]
+
+＠シグルド
+いずれにせよ、急ぐべきだ。
+[k]
+
+？1：了解！
+？！
+
+
+[branch lblNotClear2 IsClear false]
+
+[messageOff]
+[charaTalk off]
+[wt 0.3]
+[se ad769]
+[seVolume ad443 0 0.5]
+[se ad443]
+[seVolume ad443 0 0.7]
+[charaFadeout A 0.8]
+[charaFadeout C 0.8]
+[wt 1.2]
+[charaTalk on]
+[seStop ad769 1.2]
+[seStop ad443 1.2]
+
+[branch lblConf2]
+[label lblNotClear2]
+
+[messageOff]
+[charaTalk off]
+[wt 0.2]
+[se ad443]
+[charaFadeout A 0.8]
+[charaFadeout C 0.8]
+[wt 1.2]
+[charaTalk on]
+[seStop ad443 1.2]
+
+[label lblConf2]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_70 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

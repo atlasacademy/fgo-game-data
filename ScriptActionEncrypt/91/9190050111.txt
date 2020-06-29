@@ -1,0 +1,258 @@
+
+
+＄91-90-05-01-1-1
+
+[soundStopAll]
+
+[charaSet A 9005001 1 ホームズ]
+[charaSet B 1098123200 1 ワトソン]
+
+[charaSet C 9005001 1 ホームズ(映写機演出１)]
+[charaSet D 9005001 1 ホームズ(映写機演出２)]
+[charaSet E 9005001 1 ホームズ(映写機演出３)]
+[charaSet F 9005001 1 ホームズ(映写機演出４)]
+[charaSet G 9005001 1 ホームズ(映写機演出５)]
+[charaSet H 9005001 1 ホームズ(映写機演出６)]
+
+[charaSet I 8001000 1 ダミーエフェクト１]
+[charaSet J 8001000 1 ダミーエフェクト２]
+
+
+[charaEffect I bit_talk_film_noise]
+[charaEffect J bit_talk_movie_film]
+[wt 0.5]
+
+[scene 11000]
+[cameraFilter gray]
+[cameraMove 0.1 0,0 1.02]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad563]
+[wt 0.15]
+[se ad563]
+[effect bit_shot_01 0,0 F]
+[wt 0.15]
+[se ad563]
+[wt 0.2]
+[shake 0.04 2 1 0.4]
+[wt 0.6]
+
+[se ad460]
+[se bac370]
+[shake 0.04 2 2 1.0]
+[wt 0.6]
+
+[effectDestroy bit_shot_01]
+
+[seVolume ad460 1.0 0.0]
+[seVolume bac370 1.0 0.0]
+[wt 1.0]
+
+[se ad42]
+[bgmStop BGM_EVENT_80 1.4]
+[wt 2.2]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.3 1]
+[wt 0.3]
+
+＠ワトソン
+お、終わったか……！[bgm BGM_EVENT_77 0.1][wt 0.4][r]ぜえ、[charaMoveReturn B 0,-3 0.25][wt 0.25]はあ……[charaMoveReturn B 0,-4 0.4][wt 0.4][charaMoveReturn B 0,-3 0.25][wt 0.25]
+[k]
+
+[charaFace B 5]
+
+＠ワトソン
+い、いったいどういうことなんだ……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ホームズ
+事件が終わったということさ。
+[k]
+
+＠ホームズ
+邪悪な黒魔術師が、[r]カタチある[#呪詛:じゅそ]を送り込んで殺人を行っていたが[line 3]
+[k]
+
+＠ホームズ
+こうして[#呪詛:じゅそ]を破られた。[r]奴自身もただでは済むまい。
+[k]
+
+[charaFace A 8]
+
+＠ホームズ
+反動を一身に浴びて、隣の部屋で死んでいるだろう。[r]暴力は結局のところ、振るう者に返ってくると言う訳だ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠ワトソン
+ははあ？
+[k]
+
+＠ワトソン
+では、私は怪物を撃つのと同時に、[r]悪辣なる殺人犯を撃っていた、というコトになるのか。
+[k]
+
+[charaFace B 4]
+＠ワトソン
+き、君ィ、そういうの先に言ってくれない？[r]手持ちの弾丸をすべて撃ち込んでしまった……
+[k]
+
+[charaFace B 12]
+
+＠ワトソン
+……とワトソンはそんなこと言わんかな。どうかな。[wt 1.1][charaFace B 18][r]ウーンこれはこれで難しい。
+[k]
+
+[messageOff]
+[wt 0.8]
+[charaFace B 4]
+
+＠ワトソン
+しかしこの事件、[r]どう書いて本にしたものか……
+[k]
+
+＠ワトソン
+まともに書いてしまったらそれこそ、[r]時計塔に目を付けられてしまうだろうしなぁ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ホームズ
+はっはっは。
+[k]
+
+＠ホームズ
+そこはキミ、ワトソン君。[r]うまいことぼかして書いておいてくれたまえよ！
+[k]
+
+[messageOff]
+[wt 0.2]
+[se ade306]
+[seVolume ade306 0 0.8]
+[wt 1.2]
+
+[bgmStop BGM_EVENT_77 2.0]
+[wt 0.3]
+
+[scene 10001 0.4]
+[wt 0.7]
+
+[charaFadeout A 0.2]
+[scene 10000 0.1]
+[wt 0.1]
+
+[scene 10001 0.1]
+
+[charaTalk B]
+[charaFace D 1]
+[charaFace C 1]
+[charaFace H 1]
+[charaFadein D 0.1 0,1000]
+[charaFadein C 0.1 0,500]
+[charaFadein H 0.1 0,0]
+[charaMove D 0,0 0.4]
+[charaMove C 0,-500 0.4]
+[charaMove H 0,-1000 0.4]
+[wt 0.2]
+
+[charaFadeout D 0.2]
+[charaFadeout C 0.2]
+[charaFadeout H 0.2]
+
+[charaFace G 1]
+[charaFace F 1]
+[charaFace E 1]
+[charaFadein G 0.1 0,1000]
+[charaFadein F 0.1 0,500]
+[charaFadein E 0.1 0,0]
+[charaMove G 0,0 0.4]
+[charaMove F 0,-500 0.4]
+[charaMove E 0,-1000 0.4]
+[wt 0.2]
+
+[charaFadeout G 0.2]
+[charaFadeout F 0.2]
+[charaFadeout E 0.2]
+
+[charaFace C 1]
+[charaFace A 1]
+[charaFace H 1]
+[charaFadein C 0.1 0,1000]
+[charaFadein A 0.1 0,500]
+[charaFadein H 0.1 0,0]
+[charaMove C 0,0 0.4]
+[charaMove A 0,-500 0.4]
+[charaMove H 0,-1000 0.4]
+[wt 0.2]
+
+[charaFadeout C 0.2]
+[charaFadeout A 0.2]
+[charaFadeout H 0.2]
+
+[charaFace F 1]
+[charaFace E 1]
+[charaFace D 1]
+[charaFadein F 0.1 0,1000]
+[charaFadein E 0.1 0,500]
+[charaFadein D 0.1 0,0]
+[charaMove F 0,0 0.4]
+[charaMove E 0,-500 0.4]
+[charaMove D 0,-1000 0.4]
+[wt 0.2]
+
+[charaFadeout F 0.2]
+[charaFadeout E 0.2]
+[charaFadeout D 0.2]
+
+[scene 10000 0.1]
+[seStop ade306 0.3]
+[wt 0.1]
+
+[scene 10001 0.1]
+[wt 0.1]
+
+[se ad508]
+[scene 10000 0.1]
+[cameraMove 0.2 0,0 1.02]
+[charaMove I 0,0 0.2]
+[wt 1.4]
+[charaPut I 2000,2000]
+[charaEffectStop I bit_talk_film_noise]
+
+[fadeout black 1.5]
+[charaEffectStop J bit_talk_movie_film]
+[wait fade]
+[wt 0.4]
+
+[charaPut J 2000,2000]
+[cameraFilter normal]
+[cameraHome 0.1]
+[wt 0.1]
+
+[soundStopAll]
+[end]

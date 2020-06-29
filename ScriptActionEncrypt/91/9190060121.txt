@@ -1,0 +1,1346 @@
+
+
+＄91-90-06-01-2-1
+
+[soundStopAll]
+
+[charaSet A 9006002 1 始皇帝]
+[charaSet B 98104300 1 怨霊]
+[charaSet C 98001000 1 マシュ]
+[charaSet D 1098158200 1 シオン]
+[charaSet E 1098158210 1 シオン腕上げ]
+[charaSet F 1098124500 1 ダ・ヴィンチ]
+[charaSet G 9005001 1 ホームズ]
+[charaSet H 1098196600 1 始皇帝(シルエット)]
+[charaSet I 98002000 1 フォウ]
+
+[charaSet J 8001000 1 ダミーエフェクト１]
+[imageSet K back10001 1]
+
+[charaScale K 1.01]
+[charaFilter K silhouette FFFFFFFF]
+
+[charaDepth H 1]
+[charaDepth J 5]
+[charaDepth D 10]
+
+
+[scene 10000]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se bac124]
+[seVolume bac124 0 0.6]
+[effect bit_talk_kengekiall04]
+[wt 0.2]
+[se bac90]
+[seVolume bac90 0 0.6]
+[wt 0.3]
+[se bac89]
+[seVolume bac89 0 0.8]
+[se bac124]
+[seVolume bac124 0 0.8]
+[wt 0.4]
+
+[se bac124]
+[se bac395]
+[effect bit_talk_gram_slash_04]
+[wt 0.2]
+
+[effectDestroy bit_talk_kengekiall04]
+
+[fadeout white 0.2]
+[wait fade]
+
+[scene 66000]
+
+[charaTalk B]
+[charaFace B 0]
+[charaScale B 1.05]
+[charaFadein B 0.1 1]
+
+[fadein white 0.2]
+[wait fade]
+
+[effectDestroy bit_talk_gram_slash_04]
+
+[se bac417]
+[fowardEffect bit_bolg_03b 15,0]
+[wt 0.2]
+[charaPut J 0,0]
+[charaEffect J bit_talk_06b2]
+[charaMoveScale B 1.0 0.2]
+[charaShake B 0.04 4 3 0.8]
+[wt 0.6]
+
+[fowardEffectDestroy bit_bolg_03b]
+
+＠怨霊
+グァァァァ……[r]なぜ阻む？　なぜ朕を摘み取る？
+[k]
+
+＠怨霊
+今度こそ永遠の[#秦:しん]を……太平の統治を……[r]その兆しがようやく見えたというのに……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 2000,2000]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠始皇帝
+死を越えられなかった定命の朕に、[r]どんな忠言も無為ではあるが。
+[k]
+
+＠始皇帝
+まぁそう憤るな。そう嘆くな。
+[k]
+
+＠始皇帝
+そうやってただ一人で背負い込まずとも、[r]人理というのは[#案外なんとかなる]ものかもしれんぞ？
+[k]
+
+[charaPut J 0,0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠怨霊
+馬鹿な……朕だけが……
+[k]
+
+＠怨霊
+始点にして終点たる唯一の[#帝:みかど]だけが……[r]世界の命運を担えたというのに……
+[k]
+
+[messageOff]
+[se ad42]
+[charaSpecialEffect B enemyErasure 0,0 1.5]
+[wt 0.7]
+
+[wait charaSpecialEffect B]
+[bgmStop BGM_EVENT_80 1.2]
+[charaFadeout B 0.1]
+[wt 0.9]
+
+[charaEffectStop J bit_talk_06b2]
+[wt 0.6]
+
+[charaEffectDestroy J bit_talk_06b2]
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.3 1]
+[wt 0.2]
+
+
+＠始皇帝
+あーしんどかった。[bgm BGM_EVENT_77 0.1][r]まさに黒歴史ノートの音読会であったな。
+[k]
+
+[charaFace A 0]
+
+＠始皇帝
+さあ、果たすべきは果たした。とっとと戻ろう。
+[k]
+
+＠始皇帝
+こんな汚れた御所の空気なんぞ[r]一分一秒たりとも我慢がならん。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+
+＠シオン
+果たすべきを果たした……[r]そうですか。これで全てと仰います？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠始皇帝
+そうだよ？[r]何か他に期待する所でもあったかな？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+
+＠シオン
+……いいえ。ごく順当に特異点を解消できました。[r]サーヴァントとして申し分ない働きです。
+[k]
+
+[charaFace D 12]
+
+＠シオン
+[%1][&くん:さん]も、お疲れ様でした。[r]さ、帰還しましょう。
+[k]
+
+[messageOff]
+[wt 0.2]
+[charaFadeout D 0.4]
+[wt 0.6]
+
+[fadeout black 1.2]
+[bgmStop BGM_EVENT_77 1.2]
+[wait fade]
+
+[scene 10000]
+[wt 0.5]
+
+[fadein black 0.1]
+[wait fade]
+
+[effect bit_talk_07_02]
+[se ad12]
+[wt 4.0]
+
+[fadeout white 1.0]
+[wait fade]
+[wt 2.0]
+
+[scene 66400]
+
+[fadein white 1.2]
+[wait fade]
+[wt 0.5]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.3 1]
+[wt 0.2]
+
+[bgm BGM_EVENT_94 0.1]
+
+＠ダ・ヴィンチ
+うんうん、今回もバッチリだったね。お見事！
+[k]
+
+[charaFace F 0]
+
+＠ダ・ヴィンチ
+さ、いったんシャワーでも浴びて休息するといい。[r]報告はまた後でいいから。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+え？　普段の手続きとは違いますが……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠ダ・ヴィンチ
+こちらもまあ、色々と。[r]機材の調整とかあるからね。
+[k]
+
+[charaFace F 9]
+
+＠ダ・ヴィンチ
+あ、始皇帝はちょっと残ってて。[r]手伝って欲しい事案があるから。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠始皇帝
+ん？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.4]
+
+？1：それじゃ、お言葉に甘えて
+？2：失礼します
+？！
+
+[messageOff]
+[wt 0.6]
+[se ade74]
+[wipeout rightToLeft 1.6 1.0]
+[bgmStop BGM_EVENT_94 1.6]
+[wait wipe]
+
+[seStop ade74 0.2]
+
+[se ad8]
+[wt 1.1]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[scene 10000]
+
+[wipein leftToRight 1.0 1.0]
+[wait wipe]
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 66400]
+[wipeFilter cinema 0.5 0]
+[wt 0.1]
+
+[se ad8]
+[wt 1.0]
+
+[fadein black 1.6]
+[wait fade]
+[se ade74]
+[wt 1.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 40,-50]
+[charaMove G 0,-50 0.4]
+[wt 0.5]
+
+[seStop ade74 0.2]
+[wt 0.4]
+＠ホームズ
+さて、事件の[#顛末:てんまつ]はこれですべて開示されたわけか。[r]後は謎解きを残すだけだ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠始皇帝
+おおっと、[%1]がＯＵＴして[r]探偵がＩＮとか何この嫌な雰囲気。
+[k]
+
+[charaFace A 1]
+＠始皇帝
+あ、そういえば朕も書文と[#飲茶:やむちゃ]の約束してたんだっけ。[r]いやぁ忘れる所であった。じゃあそういう訳で……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 0,-50]
+
+＠ホームズ
+見え透いた嘘はやめたまえ。[r]ともかく話には付き合ってもらうよ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 24]
+[charaFadein F 0.1 0,-50]
+
+＠ダ・ヴィンチ
+既に我々はこれまで大小様々な特異点を観測してきた。
+[k]
+
+＠ダ・ヴィンチ
+以前の私から引き継いだデータを合わせれば、
+[k]
+
+＠ダ・ヴィンチ
+もう傾向に応じて分類できるだけの[r]サンプルは充分に揃ってる。
+[k]
+
+[charaFace F 8]
+
+＠ダ・ヴィンチ
+だから断定できるんだ。[r]今回の特異点は自然発生したものじゃない。
+[k]
+
+＠ダ・ヴィンチ
+外部からの干渉で意図的に[r]仕組まれたパターンに符合する、ってね。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+＠始皇帝
+まさか朕の仕業とか疑われてる？[wt 0.65][charaFace A 1][r]いやいや買い被りにも程があろうぞ。
+[k]
+
+＠始皇帝
+確かに、ここにサーヴァントとして現界を果たしている姿は[r]至高の超生命たる[#真人躯体:しんじんくたい]を実現したものではあるのだが。
+[k]
+
+＠始皇帝
+裏を返せばただ個としての究極というだけの裸一貫。かつて[r]地球全域を支配した機械化[#聖躯:せいく]の権能には及ぶべくもない。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 0,-50]
+
+＠ダ・ヴィンチ
+滑舌のいい、目一杯の長文での弁明、ありがとう。
+[k]
+
+[charaFace F 0]
+＠ダ・ヴィンチ
+たしかに今のキミの在り方がサーヴァントである以上、
+[k]
+
+＠ダ・ヴィンチ
+[%1][&君:ちゃん]が[r]令呪で御する目もまだある。
+[k]
+
+[charaFace F 25]
+
+＠ダ・ヴィンチ
+しかし今以上の……かつてキミが異聞帯で発揮してた程の[r]力を取り戻すようなことがもしあれば、話は別だ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠始皇帝
+ま、その警戒は畏敬ゆえと見過ごすにしてもだ。
+[k]
+
+＠始皇帝
+まさか特異点作成などという[r]離れ業が今の朕に叶うとでも？
+[k]
+
+＠始皇帝
+大体なんだその人為的な特異点というのは。[r]可能性として有り得るのか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 0,-50]
+
+＠ダ・ヴィンチ
+理論上はね。ただし前提として、レイシフト、[r]もしくはそれに準ずる手段が必要になる。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠始皇帝
+つまりここの設備が[r]何者かによって不正利用されたとでも？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 0,-50]
+＠シオン
+ザルなセキュリティ、とでも[#嘲:あざけ]りたいのなら却下です。
+[k]
+
+[charaFace D 5]
+
+＠シオン
+私もハッカーなので『万全な保安体制』なんて寝言は[r]言いませんが、ノウム・カルデアの設備に限って言えば、
+[k]
+
+
+＠シオン
+何の[#痕跡:ログ]も残さずシステムを稼働させるなんて[r]芸当は不可能だと断言します。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠ホームズ
+むしろ検討すべきは、我々以外の何者かが[r]レイシフトを実現させた可能性の方だ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠始皇帝
+可能性の話なんぞし出せばキリがなかろう。[r]それこそ未来にはありふれた技術なのかもしれんぞ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+＠ホームズ
+そんな極論に走らなくても、真っ先に実現しうるのが誰か、[r]という容疑者捜しは可能だよ。
+[k]
+
+
+＠ホームズ
+アニムスフィアの理論と[r]ソフトウェアとしてのラプラスを入手し、
+[k]
+
+＠ホームズ
+かつトリスメギストスに匹敵する演算手段を持つ……[r]そこまで条件が揃えば、ほぼ黒と断定できる。
+[k]
+
+[messageOff]
+[fadeout black 1.6]
+[bgm BGM_EVENT_70 1.6 0.6]
+[wait fade]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaDepth K 1]
+[charaDepth H 5]
+[charaDepth G 3]
+[charaDepth D 10]
+[charaDepth E 10]
+
+[scene 65500]
+[wipeFilter cinema 0.5 0]
+[wt 0.1]
+
+[charaFadein K 0.1 0,-200]
+[charaFadeTime K 0.1 0.2]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.4]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.3 0,-50]
+[wt 0.2]
+＠ダ・ヴィンチ
+まあこれは私の[#迂闊:うかつ]さでもあるけど、[bgm BGM_EVENT_70 1.2 1.0][r]中国異聞帯に踏み込んだ時点でのシャドウ・ボーダーには、
+[k]
+
+＠ダ・ヴィンチ
+万が一の場合に備えて、南極のカルデアから退避させた[r]バックアップデータが積みっぱなしだったからね。
+[k]
+
+[charaFace F 17]
+＠ダ・ヴィンチ
+まさか車両ごと[#鹵獲:ろかく]されて解析されるなんて[r]可能性は想像もしてなかったし。
+[k]
+
+[messageOff]
+[charaFadeout F 0.8]
+[scene 66300 1.2]
+[wt 1.5]
+
+[charaTalk off]
+
+[charaFace G 0]
+[charaFace D 5]
+[charaFadein D 0.3 -300,-50]
+[charaFadein G 0.3 300,-50]
+[wt 0.6]
+[charaTalk on]
+[charaTalk D]
+
+＠シオン
+そして現地における貴方のもう一つの姿は、[r]地球全域を支配統治していたスパコンでした。
+[k]
+
+[charaFace D 15]
+
+＠シオン
+直々に拝見できなかったのが本当に残念です。[r]そして、[#その後の顛末]を知る機会がなくなった事も。
+[k]
+
+＠ホームズ
+そう。我々が退去した後、外部から観測できる[r]姿としての中国異聞帯は速やかに消滅した。
+[k]
+
+[charaFace G 5]
+＠ホームズ
+だが内部での時間経過がどうだったかは知りようがない。[r]もし急激な崩壊ではなく、
+[k]
+
+＠ホームズ
+シャドウ・ボーダーから取得したデータを充分に[r]解析できるだけの猶予時間があったとしたら……
+[k]
+
+[messageOff]
+[charaFadeout D 0.3]
+[charaFadeout G 0.3]
+[wt 0.2]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[scene 66000 0.8]
+
+[charaFace H 0]
+[charaFadein H 0.7 200,-50]
+[wt 1.6]
+[charaPut J 200,0]
+
+[charaFace D 18]
+[charaFadein D 0.4 -100,-50]
+[wt 0.7]
+
+＠シオン
+そして何より揺るがぬ証拠は、特異点で暴走していた[r]もう一人の始皇帝の発言です。
+[k]
+
+＠シオン
+貴方が剪定事象の存在であることを一発で看破するなんて。[r]あのときは上手く誤魔化したつもりでしょうが、
+[k]
+
+＠シオン
+論理的に有り得ません。唯一可能性があるとすれば……
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[scene 66400]
+
+[fadein black 1.6]
+[wait fade]
+[wt 0.4]
+
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.3 0,-50]
+[wt 0.2]
+＠ホームズ
+あの特異点の始皇帝が既に一度、剪定事象における貴方と[r]接触を済ませていた場合だけ、だね。
+[k]
+
+＠ホームズ
+カルデアのサーヴァントとしての始皇帝ではなく、
+[k]
+
+＠ホームズ
+異聞帯の王であった始皇帝こそが、[r]あの特異点を配置した黒幕……
+[k]
+
+[charaFace G 7]
+
+＠ホームズ
+違うかな？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠始皇帝
+フフン……だが剪定事象としての破滅が確定した後で、[r]朕がレイシフトなんぞ実現しても何の役に立つ？
+[k]
+
+[charaFace A 0]
+＠始皇帝
+レイシフトで歴史の[#改竄:かいざん]は叶わぬ。せいぜい時空の[#澱:よど]みに[r]過ぎぬ特異点を生み出すのが関の山、であろうに。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 24]
+[charaFadein F 0.1 0,-50]
+
+＠ダ・ヴィンチ
+そうだね。[r]剪定事象の結末を変えることは不可能だ。
+[k]
+
+[charaFace F 25]
+＠ダ・ヴィンチ
+でも過去に遡れば、どんな剪定事象であったとしても、[r]かつて[#編纂:へんさん]事象の流れに乗っていた時期は確実にあるわけだ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+＠ホームズ
+君がさっきの[#咸陽:かんよう]特異点に固執した理由こそが答えだろう。
+[k]
+
+＠ホームズ
+異聞帯の始皇帝は複数の特異点を段階的に設置し、そのうち[r]どれがカルデアに察知されるか試そうとしたんじゃないか？
+[k]
+
+[charaFace G 5]
+
+＠ホームズ
+そしてその特定こそが、共犯者である[r]『サーヴァント・始皇帝』の役目……
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+[wt 0.9]
+[charaFaceFade A 1 0.4]
+[wt 0.6]
+
+
+＠始皇帝
+……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 24]
+[charaFadein F 0.1 0,-50]
+
+＠ダ・ヴィンチ
+異聞帯の側から設定し、[r]汎人類史から観測できる特異点反応があったとしたら、
+[k]
+
+＠ダ・ヴィンチ
+それこそが共有された過去、剪定と[#編纂:へんさん]の分岐点だ。
+[k]
+
+＠ダ・ヴィンチ
+そして、そこからより過去に遡って設定された特異点は、[r]汎人類史に干渉する手段になり得る。
+[k]
+
+＠ダ・ヴィンチ
+かつて魔術王ゲーティアが仕組んだ罠のように、ね。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 0,-50]
+＠シオン
+先程のレイシフトで何か仕掛けるつもりなのかと疑って[r]同行しましたが、そんな素振りは微塵もなかった。
+[k]
+
+＠シオン
+であれば、本命は他にある、と考えるのが妥当です。
+[k]
+
+[charaFace D 5]
+
+＠シオン
+幾つも仕掛けたトラップのうち、[r]どれを発動させればこちら側の人理を攻略できるのか……
+[k]
+
+＠シオン
+それを確認するのが目的だった。
+[k]
+
+＠シオン
+むしろそのために貴方はカルデアからの[r]英霊召喚に応じたのではないですか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠始皇帝
+ああまったく。闘争に慣れ親しんだ人類というのは[r]これだから可愛げがない。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 0,-50]
+
+＠ダ・ヴィンチ
+こんな話、[%1][&君:ちゃん]の[r]前では到底できない。
+[k]
+
+＠ダ・ヴィンチ
+せめてキミの真意を確かめる所までは[r]我々だけでやらないと。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+＠始皇帝
+あのなー。いざ朕を弾劾するとなれば、
+[k]
+
+＠始皇帝
+令呪を備えた[%1]の[r]立ち会いは必須であろうが。
+[k]
+
+＠始皇帝
+推理の鋭さに比して対処のなんと甘ったるいことか。[r]朕が汎人類史の行く末を危ぶむの、そういうところだぞ。
+[k]
+
+[charaFace A 0]
+
+＠始皇帝
+どのみち[%1]には[r]重ね重ね警告しておる。
+[k]
+
+＠始皇帝
+この汎人類史の人理が目に余るほど醜悪な代物ならば、[r]朕は再び[#秦:しん]を興す、とな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 2.4]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 0,-50]
+
+＠ダ・ヴィンチ
+じゃあ……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠始皇帝
+おっとマジギレは３秒待て。[r]まだ実行に移すとは言っておらんぞ。
+[k]
+
+＠始皇帝
+朕は[%1]の[r]妨害をする気は毛頭ない。
+[k]
+
+[charaFace A 0]
+
+＠始皇帝
+その奮闘を見届けるためにこの汎人類史に足を運んだのだし、[r]あれが苦境に陥るならば援助も惜しまぬ。
+[k]
+
+＠始皇帝
+既に禅譲は成されたのだからな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 0,-50]
+＠ホームズ
+……ではなぜこんな[#胡乱:うろん]な真似を？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠始皇帝
+未来の希望は[%1]たち[bgm BGM_EVENT_95 0.1][r]『人民』の手で切り[#拓:ひら]かれるものと信じている。
+[k]
+
+[charaFace A 4]
+
+＠始皇帝
+が、信用と信頼は別だ。[r]朕は為政者だからな。博打は打たぬ。
+[k]
+
+[charaFace A 0]
+＠始皇帝
+人理の漂白という[#未曾有:みぞう]の危機に、
+[k]
+
+＠始皇帝
+もし民にして人たる[%1]が[r]膝を屈するようなことがあれば……
+[k]
+
+＠始皇帝
+そのときは改めて朕が人理を担う。[r]『[#貴:たか]き人のみによる人理』を、な。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 32]
+[charaFadein F 0.1 0,-50]
+
+＠ダ・ヴィンチ
+………………。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 0,-50]
+
+＠シオン
+[line 3]いえ。敗北を前提にした契約。[r]それは裏切りと言われても仕方がないのでは？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+＠始皇帝
+たしかに[#友誼:ゆうぎ]や信条で[%1]を[r]奉じておる英霊もおろうさ。[wt 0.7][charaFace A 0]だが。
+[k]
+
+＠始皇帝
+『善良なるもの』では救えない世界など[r]いっそ滅んでしまえばいい[line 3]
+[k]
+
+＠始皇帝
+そう抜かしかねない頓狂どもと、朕は違う。
+[k]
+
+[charaFace A 5]
+＠始皇帝
+[%1]との絆は義である。[r]しかして『異星の神』の打倒は大義である。
+[k]
+
+[charaFace A 0]
+＠始皇帝
+もしどちらかを[#秤:はかり]にかける時が来るならば……朕は迷わず、[r][#過:あやま]たず重い方を選ぶだろう。裁定者としての責務のもとに。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 0,-50]
+＠シオン
+……。あくまでこれも、人理の漂白に[r]抵抗するための手段だと主張されるのですね？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠始皇帝
+いわば保険、というやつだ。
+[k]
+
+[charaFace A 5]
+
+＠始皇帝
+朕は人の世を統べる天子であるぞ。[r]人ならざる者の地球侵略なんぞ断じて許さぬ。
+[k]
+
+[charaFace A 0]
+＠始皇帝
+もしも[%1]が[r]『異星の神』に完勝を果たした暁には、
+[k]
+
+＠始皇帝
+朕の用心も杞憂にすぎなかったものとして[r]忘却されよう。
+[k]
+
+＠始皇帝
+すべての特異点の棄却をもって、『人民』の勝利を[r][#寿:ことほ]ぐものとする。もとよりそういう段取りだ。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+[wt 0.5]
+[charaMove D 0,-49 0.4]
+[wt 0.4]
+[charaMoveReturn D 0,-53 0.6]
+[wt 0.65]
+[charaMove D 0,-50 0.2]
+[wt 0.4]
+[charaFaceFade D 12 0.4]
+[wt 0.7]
+
+＠シオン
+やれやれ。
+[k]
+
+＠シオン
+つい先程、野心の果てに妄執に堕ちた[r]もう一人の始皇帝を見た後では信じがたい話ですが。
+[k]
+
+[charaFace D 14]
+
+＠シオン
+（まああんなの、始皇帝陛下とは認めませんが）
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+
+＠始皇帝
+だからな、再三言っておるだろうが。[r]あれから死を越えて２２００年を生きたのがこの朕だ。
+[k]
+
+[charaFace A 0]
+
+＠始皇帝
+視座も変わるし煩悩も滅するさ。[r]登仙の境地を侮るでない。
+[k]
+
+＠始皇帝
+……それにな。この保険が当初考えていたほど冴えた一手に[r]なるのかどうか、今になって一抹の不安も、なくはない。
+[k]
+
+[charaFace A 4]
+
+＠始皇帝
+まずそもそもレイシフトなる仕組みが、どうにもなぁ……[r]いまひとつ気に食わん。そこはかとなく臭う邪法の気配がな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 23]
+[charaFadein F 0.1 0,-50]
+
+＠ダ・ヴィンチ
+[FFFFFF]？　邪法って、どのあたりが？[-]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+＠始皇帝
+大体、[#其方:そなた]らにこうもあっさりと看破されてる時点でな……[r]同じ事が他のクリプター共にできん道理もないし。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠ホームズ
+その慎重さについては評価に値すると言っておこう。[r]おいそれと軽挙に訴えるつもりはなさそうだね。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-50]
+＠始皇帝
+いっそ[%1]と[r][#其方:そなた]らが朕の方針に乗ってくれるなら、
+[k]
+
+＠始皇帝
+万事が盤石の布陣で進むんだがな～。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 0,-50]
+
+＠ダ・ヴィンチ
+あはは。それは有り得ないから諦めて。
+[k]
+
+[charaFace F 0]
+
+＠ダ・ヴィンチ
+どんな理由であれ、[r]犠牲を前提にした作戦は容認できない。
+[k]
+
+＠ダ・ヴィンチ
+とくにこのノウム・カルデアではね。[r]そうでなければ勝利しても意味がない。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠ホームズ
+[line 3]ふむ。[r]始皇帝陛下の考えには頷けるところはあるが……
+[k]
+
+＠ホームズ
+現実問題として、我々はまず残りの空想樹の伐採を[r]最優先しなくてはならない。
+[k]
+
+[charaFace G 7]
+＠ホームズ
+共通の敵として、『異星の神』という侵略者がいる限り、[r]同盟関係は維持されるものと期待しよう。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+＠ダ・ヴィンチ
+うん、[%1][&君:ちゃん]に[r]対する害意がないことだけは間違いなさそうだしね。
+[k]
+
+[charaFace F 5]
+＠ダ・ヴィンチ
+でも始皇帝。我々がこうしてキミの動向に[r]目を光らせていることだけは忘れないように。
+[k]
+
+＠ダ・ヴィンチ
+もしもあの子を悲しませるような真似をしたら、[r]そのときは容赦しないよ？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠始皇帝
+それはこちらの台詞だ。英霊。[wt 0.6][charaFace A 2][r]かの者こそは人の世の次なる可能性。
+[k]
+
+＠始皇帝
+いかなる犠牲を払おうと、必ずや勝利を掴み取らせよ。[r]朕を再び奮起させたくなければ、な。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.8]
+[bgmStop BGM_EVENT_95 1.8]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[wipeOff]
+
+[scene 66800]
+[cameraMove 0.1 0,0 1.05]
+
+[wt 0.5]
+
+[fadein black 1.8]
+[wait fade]
+[wt 0.2]
+
+[bgm BGM_EVENT_77 0.1]
+[wt 0.4]
+
+
+
+[masterBranch _Male _Female]
+
+
+[label _Male]
+
+[cameraMove 0.1 0,0 1.02]
+[wt 0.4]
+[se adm62]
+[cameraMove 0.1 0,0 1.04]
+[shake 0.04 4 5 0.5]
+[wt 0.5]
+[cameraMove 0.1 0,0 1.02]
+[wt 0.3]
+
+[branch _branchEnd]
+
+
+[label _Female]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.4]
+[se adm63]
+[cameraMove 0.1 0,0 1.015]
+[shake 0.04 1 1 0.5]
+[wt 0.5]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.3]
+
+[branch _branchEnd]
+
+[label _branchEnd]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 0.15]
+
+＠フォウ
+フォウ？[charaMoveReturn I 0,10 0.2][wt 0.2]　フォーウ！[charaMoveReturn I 0,15 0.2][wt 0.2]
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠マシュ
+だ、大丈夫ですか先輩？[wt 0.55][charaFace C 12][r]まさかお風邪でも？
+[k]
+
+
+？1：いや平気なんだけど
+？2：なんとなく変な寒気が……
+？！
+
+[messageOff]
+[se ade74]
+[seVolume ade74 0 0.5]
+[charaMoveScale C 1.3 0.9]
+[charaMove C 0,50 0.9]
+[wt 1.2]
+[seStop ade74 0.2]
+
+[se ad183]
+[seVolume ad183 0 0.3]
+[charaFace C 8]
+[charaMove C 0,40 0.4]
+[wt 1.4]
+[charaMove C 0,50 0.4]
+[wt 0.4]
+
+[charaFace C 0]
+[charaMove C 0,0 0.6]
+[charaMoveScale C 1.0 0.6]
+[wt 0.6]
+
+＠マシュ
+……はい。熱はないようですね。[wt 0.65][charaFace C 13][r]誰かが先輩の噂話でもしていたのかもしれません。
+[k]
+
+
+？1：変な話題じゃなきゃいいけど……
+？2：うーん、なぜか両肩がずっしり重い……
+
+？！
+
+
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

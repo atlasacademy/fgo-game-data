@@ -1,0 +1,722 @@
+
+
+＄91-20-34-01-4-1
+
+[soundStopAll]
+
+[charaSet A 2034000 1 テル]
+[charaSet C 2038000 1 オリオン]
+[charaSet D 2009201 1 アルテミス]
+[charaSet E 2009201 1 アルテミス（シルエット）]
+[charaSet F 1098183600 1 エネミー]
+
+[charaSet I 8001000 1 ダミーエフェクト１]
+[charaSet J 8001000 1 ダミーエフェクト２]
+[charaSet K 8001000 1 ダミーエフェクト３]
+[charaSet L 8001000 1 ダミーエフェクト４]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+[flag IsClear true]
+[branch lblConf]
+[label lblNotClear]
+[flag IsClear false]
+[label lblConf]
+
+
+[branch lblNotClear1 IsClear false]
+
+[charaSet B 1098124510 1 ダ・ヴィンチ]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+[charaSet B 98111500 1 ダ・ヴィンチ]
+
+[label lblConf1]
+
+
+[charaDepth L 1]
+[charaDepth C 5]
+[charaDepth J 9]
+[charaDepth K 9]
+
+[charaRoll J 90]
+[charaRoll K 90]
+
+[charaPut E 2000,2000]
+[charaPut L 2000,2000]
+[charaEffect L bit_talk_41]
+
+[bgm BGM_EVENT_82 0.1]
+
+[scene 10000]
+[wt 0.3]
+
+[effect bit_talk_arrow01or 0,0 F]
+[wt 0.2]
+
+[fadein black 0.8]
+[wait fade]
+
+[se bac368]
+[wt 0.6]
+
+[fadeout black 0.4]
+[wait fade]
+
+[scene 20820]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[fadein black 0.4]
+[wait fade]
+[wt 0.2]
+
+[se bac16]
+[fowardEffect bit_talk_14 -110,-20]
+[charaShake F 0.04 3 3 0.3]
+[wt 0.4]
+[se ad19]
+[charaShake F 0.04 2 2 0.9]
+[wt 1.4]
+
+[se ad42]
+[charaSpecialEffect F enemyErasure 0,0 1.5]
+[wt 0.7]
+
+[wait charaSpecialEffect F]
+[bgmStop BGM_EVENT_82 1.2]
+[charaFadeout F 0.1]
+[wt 1.6]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 1]
+[wt 0.6]
+
+＠テル
+やれやれだ。冷や汗を搔いたぞ。[bgm BGM_EVENT_77 0.1]
+[k]
+
+？1：でも、さすがだった
+？2：信じてました
+？！
+
+[charaFace A 1]
+
+＠テル
+……へっへ。[r]正直に言えば、わしは怖かったぜ。
+[k]
+
+[charaFace A 0]
+
+＠テル
+手が震えて、心臓が跳ねて、喉はカラカラで……
+[k]
+
+＠テル
+ああ、頭にあるのは、できるならやりたくねぇな、[r]って情けねぇ考えばかりだった。
+[k]
+
+＠テル
+そうさ。息子の頭の上にあったリンゴを撃ったときと、[r]同じようにな。
+[k]
+
+[charaFace A 4]
+
+＠テル
+……いい機会だ、改めて言っておこう。[r]わしはそんな弱いサーヴァントだ。
+[k]
+
+[charaFace A 0]
+
+＠テル
+神の血を引いているわけでもない。[r]伝説の武具を持っているわけでもない。
+[k]
+
+＠テル
+平凡な技術の果てにあるものになんとか[#縋:すが]って、[r]かろうじて悪党を一人射殺しただけの、ただの人だ。
+[k]
+
+＠テル
+人として普通に弱く、人として普通に破滅を恐れる……[r]ただの人の親で、ただの狩人。それがわしなんだ。
+[k]
+
+[charaFace A 3]
+
+＠テル
+だから、何と言うかな。
+[k]
+
+＠テル
+あんまりそういう……英雄に向けるようなまっすぐな目で[r]見られると、気恥ずかしいってこともあるのさ。
+[k]
+
+[messageOff]
+[wt 0.9]
+
+？1：でも、人の弱さの中で大事な矢を撃てることが
+？2：[line 3]他でもない、あなたの強さだと思うから
+？！
+
+[messageOff]
+[wt 0.4]
+[charaFace A 0]
+[wt 0.9]
+
+？1：だからやっぱり、あなたは英雄なんです
+？！
+
+[messageOff]
+[wt 0.4]
+[charaFaceFade A 3 0.7]
+[wt 1.4]
+
+＠テル
+……弱ったなあ。うちのマスターは、[r]どうやらわしを照れさせるのが趣味らしい。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad539]
+[wt 0.4]
+[seStop ad539 0.5]
+[wt 0.4]
+
+[charaPut I 0,0]
+[charaEffect I bit_talk_10_MiddleLevel]
+[wt 0.2]
+
+[se ad13]
+
+
+
+[branch lblNotClear2 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 22]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+＠ダ・ヴィンチ
+無事かい、二人とも？　無事だね？[wt 0.55][charaFace B 33][r]はぁ、よかったー。
+[k]
+
+[branch lblConf2]
+[label lblNotClear2]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-90]
+[wt 0.5]
+
+＠ダ・ヴィンチ
+無事かい、二人とも？　無事だね？[wt 0.55][charaFace B 4][r]はぁ、よかったー。
+[k]
+
+[label lblConf2]
+
+
+＠ダ・ヴィンチ
+いや本当にすまない。[r]システムエラーというかバグのようなもので、
+[k]
+
+＠ダ・ヴィンチ
+ボス用に設定していた強敵獲物データが[r]さらにもう一段階危険な形で出力されてしまった。
+[k]
+
+＠ダ・ヴィンチ
+いや、そういうことがないように[r]ちゃんとチェックはしていたはずなんだけどなぁ……？
+[k]
+
+[branch lblNotClear3 IsClear false]
+
+
+[charaFace B 32]
+
+[branch lblConf3]
+[label lblNotClear3]
+
+
+[label lblConf3]
+
+
+＠ダ・ヴィンチ
+うーん、何らかの不確定要素がシミュレーター内に[r]入っていて、それが計算外の影響を与えたのかな。
+[k]
+
+＠ダ・ヴィンチ
+たとえば強大な神性による魔力操作が[r]システムに干渉したとか……。
+[k]
+
+[messageOff]
+[wt 0.9]
+
+[wipeout rectangleStripUpToDown 1.4 1.0]
+[bgmStop BGM_EVENT_77 1.4]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 2000,2000]
+
+[scene 28300]
+[pictureFrame cut063_cinema]
+[wt 0.2]
+
+[wipein rectangleStripDownToUp 1.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 0,-50]
+[wt 0.6]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠アルテミス
+だ・[wt 0.3]あ・[wt 0.3]り・[wt 0.3]ん～！[wt 0.4][r]やっぱりマジメに狩りしてるダーリンって素敵！
+[k]
+
+[charaFace D 5]
+
+＠アルテミス
+[line 3]そして。[r]真面目にガールハントしてるダーリンはダメね。
+[k]
+
+[messageOff]
+[wipeout leftDownToRightUp 0.6 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[scene 20803]
+
+
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaFace C 15]
+[charaFadein C 0.1 -256,-50]
+[charaShake C 0.04 0 3 0]
+
+[charaEffect J bit_talk_43l 430,0]
+[charaEffect K bit_talk_43l -810,0]
+[wt 0.2]
+
+[se ad443]
+[seVolume ad443 0 0.5]
+[wipein rightUpToLeftDown 0.6 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠オリオン
+くそーっ、釣れた！　釣れちまったよ、[r]よりによって一番何もしないでも釣れそうなヤツが！
+[k]
+
+＠オリオン
+自分からビクに飛び込んでくる系のヤツが！
+[k]
+
+[messageOff]
+[charaFace E 1]
+[charaScale E 1.2]
+[charaPut E 360,-30]
+[charaFadeTime E 0.4 0.6]
+[charaMove E 380,-30 0.4]
+[wt 0.6]
+
+＠E：アルテミス
+どうしてガッカリしたみたいに言ってるのかしら？[r]そしてどうして逃げるのかしら？
+[k]
+
+＠E：アルテミス
+フフフ、これは何をしようとしていたのか、[r]じっくりその体に聞いてみないといけないわね！
+[k]
+
+
+＠オリオン
+おまえ以外なら艶々しい色事を連想するんだけど、[r]おまえなので拷問以外に考えられねー！
+[k]
+
+[charaFace E 5]
+
+＠E：アルテミス
+もちろんよ。[r]だってダーリン、浮気を策謀してたでしょ？
+[k]
+
+＠オリオン
+策[messageShake 0.04 3 3 0.3]謀て。
+[k]
+
+[messageShakeStop]
+[charaFace C 11]
+
+＠オリオン
+でもさー、キャッチ＆リリースって[r]釣り人の権利じゃない？
+[k]
+
+[charaFace C 15]
+
+
+＠オリオン
+たまには別のお魚さんを持ち帰りたいっていうかー！[r]クマだって紅鮭以外も食べたいっていうかー！
+[k]
+
+[charaFace E 2]
+
+
+＠E：アルテミス
+食べられちゃいたいっていうお魚さんの気持ちに[r]応えないのって、かなりの罪だと思うの！
+[k]
+
+＠E：アルテミス
+[f large]え[messageShake 0.04 3 2 0.5]ーい、届け私の愛（混沌）！
+[k]
+
+[messageOff]
+[wipeout rightUpToLeftDown 0.5 1.0]
+[seStop ad443 0.5]
+[wait wipe]
+
+[charaPut J 2000,2000]
+[charaPut K 2000,2000]
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaEffectStop J bit_talk_43l]
+[charaEffectStop K bit_talk_43l]
+
+[scene 10000]
+[wt 0.2]
+
+[wipein leftDownToRightUp 0.5 1.0]
+[wait wipe]
+
+[effect bit_talk_ereshki02 0,0 H]
+[se ad246]
+[seVolume ad246 0 0.5]
+[wt 1.0]
+[se ad247]
+[seVolume ad247 0 0.5]
+[wt 1.0]
+[se ad248]
+[seVolume ad248 0 0.5]
+[wt 1.0]
+[seStop ad246 0.5]
+[seStop ad247 1.0]
+[seStop ad248 1.5]
+[wt 0.5]
+[effectStop bit_talk_ereshki02]
+[wt 0.6]
+
+[wipeout leftDownToRightUp 0.5 1.0]
+[wait wipe]
+
+[scene 20803]
+[cameraMove 0.1 0,0 1.02]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 0,-50]
+[charaShake C 0.04 0 1 0]
+
+[charaPut L 0,0]
+
+[wipein rightUpToLeftDown 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+[charaMove C -76,-50 0.2]
+[wt 0.1]
+[backEffect bit_talk_explosion 326,-50]
+[se ad609]
+[seVolume ad609 0 0.3]
+[wt 0.5]
+[charaMove C 66,-50 0.2]
+[wt 0.1]
+[backEffect bit_talk_explosion -296,0]
+[se ad609]
+[seVolume ad609 0 0.3]
+[wt 0.4]
+[charaMove C 0,-50 0.1]
+[wt 0.3]
+
+[charaShakeStop C]
+
+[shake 0.04 3 3 0.5]
+[backEffect bit_talk_explosion 26,-50]
+[se ad609]
+[seVolume ad609 0 0.3]
+[wt 0.1]
+
+[charaFadeout C 0.4]
+[charaMoveScale C 1.4 0.2]
+[wt 0.2]
+[shakeStop]
+[charaPut L 2000,2000]
+[charaEffectStop L bit_talk_41]
+[wt 0.4]
+
+＠オリオン
+ぎ[messageShake 0.04 3 3 1.2]ゃああああああ筋肉のせいで[r]表面積が大きいいいいい！
+[k]
+
+[messageOff]
+[wt 0.6]
+[fadeout black 1.6]
+[bgmStop BGM_EVENT_3 1.6]
+[wait fade]
+
+
+[scene 20820]
+[pictureFrame]
+[cameraHome 0.1]
+[wt 0.1]
+
+[charaPut I 0,0]
+[wt 0.1]
+
+[branch lblNotClear4 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[branch lblConf4]
+[label lblNotClear4]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf4]
+
+[fadein black 1.6]
+[wait fade]
+[wt 0.2]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠ダ・ヴィンチ
+まあいいや、きちんとセキュリティ強化して[r]ロックをかけたし。もうこんなことはないはずだよ。
+[k]
+
+[charaFace B 4]
+
+＠ダ・ヴィンチ
+ほんとにごめんね～。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 2000,2000]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠テル
+なに、いいってことさ。心構えをする前に出てきたから[r]驚いたが、幸い、マスターに被害は出なかった。
+[k]
+
+[charaFace A 0]
+
+＠テル
+ああいうヌシ的な手合いを仕留めるのも……
+[k]
+
+＠テル
+よくあることじゃあないが、[r]狩人としての腕の見せ所だと言えなくもない。
+[k]
+
+[charaFace A 1]
+
+＠テル
+最後の締めとしちゃあ丁度よかったさ。
+[k]
+
+[charaPut I 0,0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch lblNotClear5 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[branch lblConf5]
+[label lblNotClear5]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf5]
+
+＠ダ・ヴィンチ
+それじゃあ、満足できたのかな？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 2000,2000]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠テル
+ああ。調子は取り戻せたとも。
+[k]
+
+＠テル
+わしは等身大のわしを思い出して[line 3][r]マスターにも改めてそれを見せることができた。
+[k]
+
+＠テル
+どう受け止めるか、その解釈にはいろいろあるにしても、[r]このわしという土台は固められたさ。
+[k]
+
+[charaFace A 3]
+
+＠テル
+……さんざん照れさせられたがね。
+[k]
+
+[charaPut I 0,0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch lblNotClear6 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 32]
+[charaFadein B 0.1 1]
+
+[branch lblConf6]
+[label lblNotClear6]
+
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf6]
+
+＠ダ・ヴィンチ
+むむ。なんだか私が知らない間に[r]大事なイベントがあったような気がするー。
+[k]
+
+[branch lblNotClear7 IsClear false]
+
+
+[charaFace B 31]
+
+[branch lblConf7]
+[label lblNotClear7]
+
+
+[charaFace B 2]
+
+[label lblConf7]
+
+＠ダ・ヴィンチ
+多分、自慢話になる系だ！　ずるい！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut I 2000,2000]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠テル
+いやいや、勘弁してくれ。わしにとっちゃあ、[r]ちょっとした[#悪夢:トラウマ]に近いんだぜ？
+[k]
+
+[messageOff]
+[charaPut I 0,0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch lblNotClear8 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 32]
+[charaFadein B 0.1 1]
+[wt 0.4]
+
+[branch lblConf8]
+[label lblNotClear8]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+[wt 0.4]
+
+[label lblConf8]
+
+
+？1：ということなんで、黙秘します
+？2：二人だけの秘密です
+？！
+
+
+
+[branch lblNotClear9 IsClear false]
+
+
+[charaFace B 22]
+
+＠ダ・ヴィンチ
+ひょっとしてリンゴ？[r]まさかリンゴ関わってたりする？[wt 1.0]　[charaFace B 31][messageShake 0.04 3 3 0.6]ずー[wt 0.2]るー[wt 0.2]いー！
+[k]
+
+
+[branch lblConf9]
+[label lblNotClear9]
+
+
+[charaFace B 1]
+
+＠ダ・ヴィンチ
+ひょっとしてリンゴ？[r]まさかリンゴ関わってたりする？[wt 1.0]　[charaFace B 2][messageShake 0.04 3 3 0.6]ずー[wt 0.2]るー[wt 0.2]いー！
+[k]
+
+[label lblConf9]
+
+
+
+
+[messageOff]
+[wt 0.6]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,574 @@
+
+
+＄91-40-32-01-1-1
+
+[soundStopAll]
+
+[charaSet A 4032000 1 ライネス]
+[charaSet B 1098164900 1 ライネス（しっぽ）]
+[charaSet C 1098166210 1 トリムマウ]
+[charaSet D 98065001 1 エルメロイⅡ世]
+[charaSet E 2020001 1 イシュタル]
+[charaSet F 3030000 1 パールヴァティー]
+[charaSet G 4032000 1 ライネス]
+
+[charaSet J 8001000 1 ダミーエフェクト１]
+
+[charaMoveScale C 0.6 0.1]
+[charaDepth A 1]
+[charaDepth B 9]
+[charaDepth C 9]
+
+[scene 66700]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+[se ade160]
+[charaMoveReturn D 0,-3 0.3]
+[wt 0.6]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaFace F 5]
+[charaFace E 10]
+[charaFadein F 0.1 0]
+[charaFadein E 0.1 2]
+[wt 0.6]
+
+[se bac59]
+[seVolume bac59 0 0.7]
+[fowardEffect bit_talk_explosion -256,0]
+[wt 0.2]
+
+[se bac36]
+[seVolume bac36 0 0.8]
+[se bac59]
+[seVolume bac59 0 0.4]
+[fowardEffect bit_talk_explosion 20,0]
+[wt 0.1]
+
+[charaFace F 10]
+[charaShake F 0.04 3 4 1.6]
+[wt 0.2]
+
+[charaFace E 12]
+[charaShake E 0.04 3 4 1.4]
+[wt 0.2]
+
+[se bac59]
+[seVolume bac59 0 1.0]
+[fowardEffect bit_talk_explosion 256,0]
+[wt 1.8]
+
+[charaShake F 0.04 3 4 0.6]
+[charaShake E 0.04 3 4 0.6]
+[wt 1.0]
+
+[se ade66]
+[charaSpecialEffect F enemyErasure -256,0 1.2]
+[charaSpecialEffect E enemyErasure 256,0 1.2]
+[wt 0.7]
+
+[wait charaSpecialEffect F]
+[wait charaSpecialEffect E]
+[bgmStop BGM_EVENT_80 1.2]
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 1.2]
+
+[fowardEffectDestroy bit_talk_explosion]
+
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 0.2]
+
+[se ad414]
+[seVolume ad414 0 0.5]
+[wt 0.8]
+[seStop ad414 0.3]
+
+[se ad130]
+[charaPut C 140,-220]
+[charaFace C 0]
+[charaSpecialEffect C appearance 1 0.7]
+[wt 0.5]
+[seStop ad130 0.2]
+[wt 1.4]
+[charaTalk on]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠ライネス
+回収できたが……全体の二割程度だな。[r]トリムのヤツ、どうやら本体は別行動中か。
+[k]
+
+[charaFace A 1]
+＠ライネス
+とはいえ、一部でも回収したなら追跡のしようがあるぞ。[r]私も戦線に戻れるってものだ。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠エルメロイⅡ世
+これは、どういうことだ。ライネス。[r]トリムマウがいないとも言ったな……？
+[k]
+
+？1：実は……
+？2：月霊髄液に逃げられたらしくて
+？！
+
+[charaFace D 3]
+
+＠エルメロイⅡ世
+はあ！？
+[k]
+
+[charaFace D 5]
+
+＠エルメロイⅡ世
+どこの世界に、礼装に逃げられる魔術師がいるんだ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠ライネス
+ははは、聞いて驚け！　ここにだとも兄上！
+[k]
+
+？1：師匠、すごくドヤ顔してる……
+
+[messageOff]
+[wt 0.7]
+[charaFace A 9]
+[wt 0.6]
+[charaFaceFade A 3 0.4]
+[wt 0.6]
+
+＠ライネス
+言うな……。
+[k]
+
+？2：ヤケになってませんか師匠
+
+[messageOff]
+[wt 0.7]
+[charaFaceFade A 9 0.4]
+[wt 0.6]
+[charaFace A 2]
+
+＠ライネス
+若[messageShake 0.04 3 3 0.4]干その通り！
+[k]
+
+[messageShakeStop]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠エルメロイⅡ世
+どういうことだ、ライネス。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ライネス
+まあ、ちょっとした研究をしていたんだよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠エルメロイⅡ世
+研究、だと？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ライネス
+ほら、いささか世界は異なるが、私と兄上は[r]時計塔の深部を知る者同士だろう。
+[k]
+
+＠ライネス
+腐っても、時計塔の[#君主:ロード]。[r]ロード・エルメロイに、その次期後継者だ。
+[k]
+
+＠ライネス
+時計塔独特のセキュリティやパターンについても、[r]ある程度の知識がある。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠エルメロイⅡ世
+だから、なんだ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ライネス
+……というわけで、当時を思い出して、[r]カルデアの秘匿データにハッキングしてた。
+[k]
+
+[bgm BGM_EVENT_94 0.1]
+
+？1：というわけで、じゃない！
+？2：何してるんですか師匠！
+？！
+
+＠ライネス
+まあまあまあ。[r]君だって、興味はあるだろう？
+[k]
+
+？1：それはまあ……
+
+[charaFace A 0]
+
+＠ライネス
+私もある。が、残念ながら、[r]カルデアの中枢部分には食い込めなかった。
+[k]
+
+？2：勝手に秘密を暴くのはどうかと
+
+[charaFace A 7]
+
+＠ライネス
+ひどいな我が弟子。[r]私を裏切るのか……！
+[k]
+
+[charaFace A 0]
+
+＠ライネス
+とはいえ、残念ながら、[r]カルデアの中枢部分には食い込めなかったんだがね。
+[k]
+
+？！
+
+＠ライネス
+セキュリティの癖からして、おそらく中枢部分は、[r]マリスビリー直々の手によるものだな。
+[k]
+
+[charaFace A 8]
+＠ライネス
+それでも、研究内容のごく一部は[r]覗き見ることができたわけさ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠エルメロイⅡ世
+……どういう内容だったんだ、ライネス。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFace A 0]
+[charaFadein B 0.1 1]
+[charaFadein A 0.1 1]
+
+＠ライネス
+お、食いついたな兄上。
+[k]
+
+[charaFadeout B 0.1]
+[charaFace A 0]
+
+[charaTalk on]
+[charaTalk A]
+
+＠ライネス
+私の場合、気になっていたのは、[r]サーヴァントの性質についてだ。
+[k]
+
+＠ライネス
+これについては、以前から[r][#司馬懿:し ば い]どのとも相談していてな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 1]
+
+＠司馬懿
+……うむ。[r][#俺]としても興味深い疑問ではあったからな。
+[k]
+
+
+？1：疑問？
+？2：[#司馬懿:し ば い]さんも？
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ライネス
+疑似サーヴァント、だよ。
+[k]
+
+＠ライネス
+こいつは私たちの世界では見られなかった現象だ。
+[k]
+
+？1：あ……
+？2：それで、さっきイシュタルたちに？
+
+？！
+
+＠ライネス
+とりわけ、私たちのように元の人格を[r]ほとんど残しているパターンは珍しい。
+[k]
+
+[charaFace A 8]
+
+＠ライネス
+だったら、[r][#裏技]を使う余地があるんじゃないかってね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠エルメロイⅡ世
+裏技……？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace A 8]
+[charaFace C 0]
+[charaFadein A 0.1 1]
+[charaFadein C 0.1 135,-220]
+[wt 0.6]
+[se ad730]
+[seVolume ad730 0 0.4]
+[charaEffect J bit_talk_20 130,0]
+[wt 0.8]
+[charaMove J -130,0 0.6]
+[wt 1.0]
+
+[fowardEffect bit_talk_warp -80,0]
+[charaEffectStop J bit_talk_20]
+[wt 0.5]
+[se adm20]
+[seVolume adm20 0 0.6]
+[fowardEffectStop bit_talk_warp]
+[wt 3.2]
+[charaTalk on]
+[charaFace A 0]
+＠ライネス
+……と、こっちも解析が終わった。[r]トリムマウを追えるぞ。
+[k]
+
+[charaFace A 1]
+
+＠ライネス
+残りは、追いながらと行こうか。我が弟子に兄上。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠エルメロイⅡ世
+結局、私も付き合わせる気か。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：ライネス
+面倒見のいい我が兄だ。天使のように愛らしい妹を[r]放置するなんて、残酷なことはしないだろう？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠エルメロイⅡ世
+[f large]誰[messageShake 0.04 3 3 0.6]が天使のようだ！
+[k]
+
+[messageOff]
+[wt 0.4]
+[fadeout black 1.6]
+[bgmStop BGM_EVENT_94 1.6]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[scene 66400]
+
+[fadein black 1.6]
+[wait fade]
+[wt 0.6]
+
+[bgm BGM_EVENT_70 0.1]
+
+？1：シミュレーター？
+？！
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠ライネス
+トリムマウのヤツ、こいつを起動したらしいな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠エルメロイⅡ世
+くそ、月霊髄液によるハッキングか……！
+[k]
+
+？1：そんなことまで！
+？！
+
+[charaFace D 4]
+
+＠エルメロイⅡ世
+あれがいかに万能の礼装かは身に染みて知っている。[r]なにしろ、我が師の傑作だからな……
+[k]
+
+[charaFace D 0]
+
+＠エルメロイⅡ世
+ふむ。[r]行き場所は……19世紀のロンドン？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠司馬懿
+第四特異点と同じ時代か。[r]レイシフトじゃないんだな？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠エルメロイⅡ世
+データの限りなら。[r]だが……妙に数値の揺らぎがある。なんだこれは？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠司馬懿
+残念だが、精査してる時間がないな。[r]追うぞ！
+[k]
+
+[messageOff]
+[se ad15]
+[wt 0.3]
+
+[se ad172]
+[wt 0.7]
+
+[fadeout black 2.0]
+[seStop ad172 2.0]
+[bgmStop BGM_EVENT_70 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

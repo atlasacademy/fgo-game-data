@@ -1,0 +1,1645 @@
+
+＄91-10-33-01-1-0
+
+[soundStopAll]
+
+[charaSet A 1033002 1 シグルド]
+[charaSet C 98002000 1 フォウ]
+[charaSet D 4019001 1 マルタ]
+[charaSet E 5038000 1 ジーク]
+[charaSet F 4012000 1 オジマンディアス]
+[charaSet G 2031001 1 ナポレオン]
+[charaSet H 4003001 1 ドレイク]
+[charaSet I 7001001 1 ヘラクレス]
+[charaSet J 98013300 1 ドラゴン]
+
+[charaSet K 8001000 1 ダミーエフェクト１]
+[charaSet L 8001000 1 ダミーエフェクト２]
+[charaSet M 8001000 1 ダミーエフェクト３]
+
+[charaPut K 0,-350]
+[charaMoveScale K 0.1 0.1]
+
+[charaSet N 1033002 1 シグルド（シルエット_黒）]
+[charaFilter N silhouette 01060eFF]
+
+[branchQuestNotClear lblNotClear 3000303]
+[flag IsClear true]
+[branch lblConf]
+[label lblNotClear]
+[flag IsClear false]
+[label lblConf]
+
+
+[branch lblNotClear1 IsClear false]
+
+[charaSet B 8001410 1 マシュ]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+[charaSet B 8001000 1 マシュ]
+
+[label lblConf1]
+
+
+[scene 10000]
+
+[charaDepth B 1]
+[charaDepth E 5]
+[charaDepth D 9]
+
+[se ad450]
+[seVolume ad450 0 0.2]
+[effect bit_talk_fire_blue]
+[backEffect bit_talk_fire_blue]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.4]
+
+[se bac302]
+[charaEffect K bit_talk_blue_fire]
+[wt 1.2]
+[seStop bac302 1.4]
+[seStop ad450 1.4]
+[wt 2.2]
+[effectStop bit_talk_fire_blue]
+[backEffectStop bit_talk_fire_blue]
+[wt 0.9]
+
+＠
+[line 3]燃える、燃える、燃えている。[bgm BGM_EVENT_79 0.1 0.6]
+[k]
+
+＠
+それは身を焦がし、心を焦がし、[r]情熱を焦がし、幸福を昇華するもの。
+[k]
+
+＠
+ああ、我が炎は、我が[#焔:ほむら]は、[r]未だ衰えることを知らず。
+[k]
+
+＠
+凍結を拒絶し、氷雪を溶かし……。
+[k]
+
+＠
+この内側の力は、[r]今もなお猛っている。
+[k]
+
+＠
+今も、なお。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_79 2.8]
+[wt 1.0]
+
+[fadeout black 1.8]
+[wait fade]
+
+[charaPut K 20000,2000]
+[charaEffectStop K bit_talk_blue_fire]
+[wt 0.1]
+
+[scene 20802]
+[cameraMove 0 0,0 1.02]
+[wt 0.8]
+
+[se ade294]
+[seVolume ade294 0 0.4]
+[se ad450]
+[seVolume ad450 0 0.5]
+
+[fadein black 1.8]
+[wait fade]
+[wt 0.2]
+
+[bgm BGM_EVENT_2 0.1]
+[wt 0.6]
+
+[seStop ade294 0.9]
+[seStop ad450 1.8]
+[wt 1.2]
+
+？1：シグルド、シチューできたよ
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠シグルド
+これはこれは、大変にかたじけない。
+[k]
+
+[charaFace A 10]
+＠シグルド
+サーヴァントに食事は不要なれど、[r]量に不足なければ、喜んでご[#相伴:しょうばん]に[#与:あずか]ろう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠マシュ
+大丈夫ですよ。量はたくさんありますので。[r]わたしたちだけでは食べきれないくらいです。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠フォウ
+フォウフォウ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠マルタ
+ごめんなさい。私が料理を担当すると、[r]何故か大家族用になりがちで……。
+[k]
+
+＠マルタ
+大人数でのキャンプには向いているのでしょうけど、[r]こういう時は大雑把というか、雑というか。
+[k]
+
+？1：美味しいけど？
+
+[charaFace D 1]
+
+＠マルタ
+まあ。ありがとう、マスター。[r]台所に立つ者として、励みになります。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？2：豪快！
+
+[charaFace D 1]
+
+＠マルタ
+褒めていると受け取っておきましょう。[wt 0.9][charaFace D 4][r]……よね？
+[k]
+
+[messageOff]
+[cameraMove 0.2 0,5 1.02]
+[wt 0.2]
+[cameraMove 0.25 0,0 1.02]
+[wt 0.9]
+
+[charaFace D 1]
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シグルド
+……ふむ、温かな味がする。[r]これが家庭の味、というものだろうか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠マルタ
+どうでしょう。私が家族に作っていた時は、[r]大体こういったものでしたが。
+[k]
+
+＠マルタ
+家庭の味、と言われると……そうね。
+[k]
+
+[charaFace D 1]
+
+＠マルタ
+温かみと栄養、それに気取らない空気。[r]それがあれば充分だと思います。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠シグルド
+なるほどなるほど。
+[k]
+
+[charaFace A 0]
+
+＠シグルド
+当方、[#旧:ふる]き英雄ゆえか、[r]家庭の味は忘れがちである。
+[k]
+
+？1：そうなの？
+？！
+
+＠シグルド
+うむ。
+[k]
+
+[charaFace A 1]
+
+＠シグルド
+当方は……もぐ……[charaMoveReturn A 0,-3 0.4][wt 0.4][charaMoveReturn A 0,-3 0.3][wt 0.6]母と共に育ったが……。[charaMoveReturn A 0,-3 0.4][wt 0.4][charaMoveReturn A 0,-3 0.3][wt 0.6][r]もぐもぐ……。[charaMoveReturn A 0,-3 0.4][wt 0.4][charaMoveReturn A 0,-3 0.3][wt 0.3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠マルタ
+コラコラ、食べながら喋らない。[r]大英雄なのでしょう？　お行儀が悪いですよ！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.3]
+[charaMoveReturn A 0,-3 0.4]
+[wt 0.4]
+[charaMoveReturn A 0,-3 0.3]
+[wt 0.6]
+[charaFace A 10]
+
+＠シグルド
+……失礼した。[wt 0.5][r]もぐもぐ……。[charaMoveReturn A 0,-3 0.4][wt 0.4][charaMoveReturn A 0,-3 0.3][wt 0.6][charaMoveReturn A 0,-6 0.6][se ad217][seVolume ad217 0 0.2][wt 0.5][seStop ad217][wt 0.2]
+[k]
+
+？1：（噛み締めるように食べている……）
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠マルタ
+……まあ、無言で食事というのもアレだし。[r]噛みながらじゃなければ、喋るべきよね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シグルド
+それもそうか。
+[k]
+
+
+[messageOff]
+[wt 0.4]
+[se ad217]
+[seVolume ad217 0 0.2]
+[charaMoveReturn A 0,-6 0.6]
+[wt 0.5]
+[seStop ad217]
+[wt 0.4]
+
+＠シグルド
+……当方の父親は戦士シグムンド、[r]しかしながら当方が赤子の頃に戦死したという。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[bgmStop BGM_EVENT_2 1.4]
+
+＠マルタ
+……。[r]……。
+[k]
+
+[charaFace D 4]
+＠マルタ
+それは……ご愁傷様です。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.2 1]
+[wt 1.4]
+[se ade126]
+[charaFace A 7]
+[wt 0.7]
+
+＠シグルド
+[#戦士:せんし]だけに戦死。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaShake C 0.04 6 1 0.3]
+
+＠フォウ
+フォウ！？[bgm BGM_EVENT_7 0.1]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠マルタ
+ち[messageShake 0.04 4 4 0.3]ょまっ！？
+[k]
+
+[messageShakeStop]
+
+＠マルタ
+何で言っちゃうの！？[r]私も一瞬考えてしまったけれど！
+[k]
+
+[charaFace D 3]
+
+＠マルタ
+……ってああ！[r]今のなし、今のなし！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠シグルド
+失礼。[r]当方、思いついたら言わずにいられぬ[#性質:タチ]。
+[k]
+
+＠シグルド
+我が愛からも『冗談は控えめの方がいいですよ』と、[r]助言を受けるほどに。
+[k]
+
+[bgmStop BGM_EVENT_7 3.0]
+
+[charaFace A 0]
+
+＠シグルド
+ともあれ父の死後、母は再婚し……[r]当方の養育はとある鍛冶屋に任された。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠マシュ
+それは[line 3]
+[k]
+
+？1：もしかしてレギン？
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シグルド
+ああ、当方の伝説を知っているならば、[bgm BGM_EVENT_11 0.1 0.8][r]話が早い。
+[k]
+
+＠シグルド
+その通り、あのレギンである。
+[k]
+
+？2：どんな人だった？
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シグルド
+レギン、という名の男でな。[bgm BGM_EVENT_11 0.1 0.8][r]養父となって、当方の養育を担当した。
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.6]
+[charaFace B 12]
+
+＠マシュ
+厳しかった……のですか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シグルド
+無論。
+[k]
+
+＠シグルド
+レギンは当方を英雄に育てる必要があった。
+[k]
+
+＠シグルド
+故に幼い頃から、[r]当方は英雄に至る者として育てられた。
+[k]
+
+[messageOff]
+[fadeout black 1.8]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 20160902]
+[cameraMove 0.1 180,50 1.55]
+[cameraFilter gray]
+[wt 0.2]
+
+[fadein black 1.8]
+[wait fade]
+[wt 0.4]
+
+＠
+剣の術理を。槍の[#捌:さば]きを。[r]弓の技術を。斧の道理を。
+[k]
+
+＠
+あらゆる武器のあらゆる戦い方を仕込まれ、[r]自らも貪欲に学び続ける。
+[k]
+
+[messageOff]
+[fadeout black 1.8]
+[wait fade]
+
+[scene 60701]
+[cameraHome 0.1]
+[wt 0.1]
+
+[fadein black 1.8]
+[wait fade]
+[wt 0.4]
+
+＠
+それに伴って、肉体を鍛えねばならない。
+[k]
+
+＠
+朝から晩まで走り続け、[r]音を立てることなく、草原を駆け抜ける。
+[k]
+
+＠
+獣の狩り方を学んだ。[r]人の倒し方を学んだ。
+[k]
+
+＠
+戦士、勇者、英雄の倒し方を身に付けた。[r]魔性の者を相手取るための戦い方も。
+[k]
+
+＠
+[line 3]鍛錬は生まれた頃から。[r][line 3]英雄となるのは宿命として受け入れている。
+[k]
+
+＠
+辛くはない。[r]辛くはなかったのだが。
+[k]
+
+[messageOff]
+[fadeout black 1.6]
+[wait fade]
+
+[scene 20802]
+[cameraFilter normal]
+
+[fadein black 1.6]
+[wait fade]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠シグルド
+……いや、よく考えてみるとあれは辛かったな。
+[k]
+
+[charaFadeout A 0.1]
+
+＠
+[charaTalk B]
+[line 3]我知らず、サラリとそんな言葉が[r]口を[#衝:つ]いて出た。
+[k]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠マルタ
+そう、そうね。[r]それは……辛いものね。
+[k]
+
+[charaFace D 0]
+
+＠マルタ
+でも驚きました。シグルドは、そういうものを[r]我慢するタイプだと思っていたので。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠シグルド
+うむ。
+[k]
+
+[charaFace A 10]
+
+＠シグルド
+ここに当方が愛を語るべき存在はおらず、[r]掛け値無しに命を託せる戦友がいるだけならば。
+[k]
+
+＠シグルド
+……少しは弱音くらい、吐いてもよかろう。[r]そう思ったのでな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_11 1.2]
+
+[charaTalk B]
+[charaFace D 0]
+[charaFace B 6]
+[charaFadein D 0.1 0]
+[charaFadein B 0.1 2]
+
+＠マシュ
+[line 3]。
+[k]
+
+＠マルタ
+……。[r]……。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[wt 0.6]
+
+＠マルタ
+こほん！[charaMoveReturn D 0,-5 0.4][wt 0.65][charaFace D 3][r]……食事を続けましょうか。
+[k]
+
+？1：マルタさんが照れてる……！
+？！
+
+[charaFace D 2]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠マルタ
+はいそこ食事に集中！[wt 0.6][charaFace D 1][r]……まあ。
+[k]
+
+＠マルタ
+時代も国も違う人間に、[r]こうまで信じられると照れたくもなるものです。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠シグルド
+ははは、それは失敬。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠マルタ
+あなたの辛き日々……。[r]私では想像もつきませんが。
+[k]
+
+[charaFace D 1]
+
+＠マルタ
+ともあれ、祈りましょう。
+[k]
+
+＠マルタ
+その辛き日々と、屈せず英雄となった信念に[r]敬意を表して。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シグルド
+確かにマルタ殿の言う通り。
+[k]
+
+＠シグルド
+あれは辛く、重たい日々であったが。
+[k]
+
+[charaFace A 10]
+
+＠シグルド
+それもこれも、今こうしてここにいる理由ならば。[r]笑って振り返ることができるもの。
+[k]
+
+[charaFace A 0]
+＠シグルド
+とはいえ、レギンと再会すれば[r]また殴り倒すことは確実なのだが。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠フォウ
+フォウフォウ……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シグルド
+うむ。
+[k]
+
+＠シグルド
+既に伝説に残されているのでぶっちゃけるが、[r]レギンは当方を騙していてな。
+[k]
+
+＠シグルド
+邪竜を倒した後、残された財宝を手に入れんと[r]画策していたのだ。
+[k]
+
+＠シグルド
+そしてその為に、障害となる俺……当方を[r]排除しようとすら考えていた。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠マシュ
+それは……大変、ですね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠シグルド
+うむ。[r]だがこの通り、当方が返り討ちにしたのである。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠マルタ
+う、うん。[r]そこは胸を張るのね、あなた。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シグルド
+当然だ。
+[k]
+
+＠シグルド
+当方、己を正義の味方だと考えたことは一度もない。[r]だが[line 3]
+[k]
+
+＠シグルド
+いくら何でも、育てておだてて[r]財宝のために騙し討ち、というのは邪悪であろうし。
+[k]
+
+＠シグルド
+それを返り討ちにしたのは、[r]一般的な正義の範疇に入るのではないか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFace B 12]
+[charaFadein D 0.1 0]
+[charaFadein B 0.1 2]
+
+＠マルタ
+まあ、そうよね。[r]騙して裏切って、動機は金銭欲だもの。
+[k]
+
+＠マシュ
+……。シグルドさんは、[r]レギンさんを恨んでいるのでしょうか？
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シグルド
+……。[r]……。
+[k]
+
+＠シグルド
+いや、そう言われて我が身を振り返ってみたが、[r]特に恨んではいない。
+[k]
+
+[charaFadeout A 0.1]
+
+＠
+[charaTalk B]
+[line 3]確かに恨んではいない。[r]悲しくはあったのだが。
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シグルド
+当方を英雄として育ててくれた恩義がある。
+[k]
+
+＠シグルド
+何より、当方が我が愛と巡り会うためには、[r]あの[#道筋:ルート]を辿らなければならなかった。
+[k]
+
+[charaFace A 10]
+
+＠シグルド
+幸運と不幸は紙一重、というものだろう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠マルタ
+それ、楽天的と言いませんか？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+[charaShake A 0.04 2 3 0.4]
+
+＠シグルド
+……。[r]……[wt 0.6]そうだったのか……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠マルタ
+ショック受けるほどのことだったの！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠シグルド
+当方、[#四角四面:しかくしめん]な性格ゆえに[r]楽天的と言われたことがなし。
+[k]
+
+＠シグルド
+今まで気にならなかったが、[wt 0.5][charaFace A 1][r]そうか……当方は楽天家だったのか……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠マルタ
+死後に己を理解できるのも、[r]サーヴァントの長所と言えるでしょう。
+[k]
+
+[charaFace D 1]
+＠マルタ
+今後とも楽天的に[#研鑽:けんさん]に努めるべきです。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠シグルド
+うむ。
+[k]
+
+＠シグルド
+当方が思うに、[r]マルタ殿も楽天家のようだな。
+[k]
+
+＠シグルド
+貴殿は硬き鉄の心と、それを包む柔らかな慈愛を持ち、[r]人に希望を持っているのだから。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠マルタ
+む。[wt 0.3][charaFace D 1][r]……そうね。私は恐らく楽天的でしょう。
+[k]
+
+＠マルタ
+でも、世の中を憂いつつ行動しないよりは、[r]余程いいと思ってますので。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠シグルド
+そうでなければ聖女は務まらないのだろうな。[r]感服した。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[charaShake D 0.04 2 2 0.3]
+[wt 0.9]
+[charaFace D 3]
+
+＠マルタ
+あなたに褒められると、[r]少々こそばゆくなるわね……。
+[k]
+
+[messageOff]
+[wt 0.6]
+[wipeout rollRight 1.6 1.0]
+[bgm BGM_EVENT_2 1.6 0.5]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[wipein rollLeft 1.6 1.0]
+[wait wipe]
+[wt 0.4]
+
+
+[se ad492]
+[wt 1.1]
+[seStop ad492 0.2]
+[wt 0.2]
+[se adm40]
+
+[bgm BGM_EVENT_2 1.0 1.0]
+[wt 0.4]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+[wt 0.2]
+
+＠マルタ
+ごちそうさま、と。
+[k]
+
+[charaFace D 0]
+＠マルタ
+それにしても。[r]本当にこの特異点に邪竜がいるのかしら。
+[k]
+
+＠マルタ
+ジーク、どうなの？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.6 1]
+[wt 1.0]
+
+＠ジーク
+確かに同種……いや、[r]俺と彼らを同種と呼ぶべきではないかもだが。
+[k]
+
+＠ジーク
+そういう気配がするのは間違いない。[wt 0.6][charaFace E 1][r]あと、それはそれとしてシチューが美味しい。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠マルタ
+ああ、あなたのは味付け、[r]かなり濃いめにしておいたから。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ジーク
+助かる。
+[k]
+
+＠ジーク
+人より味覚が鈍いので、[r]これくらい濃くないと味がわからないんだ。
+[k]
+
+＠ジーク
+……うん。[r]美味しい。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠マルタ
+良かった良かった。
+[k]
+
+[charaFace D 2]
+
+＠マルタ
+さて、それを食べ終わったらもう一度探索ね。[r]今度こそ、邪竜をしばくわよ。
+[k]
+
+[charaFace D 5]
+
+＠マルタ
+……もとい、[#調伏:ちょうぶく]させましょう……[r]慈悲と祈りを以て、正面から堂々と……
+[k]
+
+？1：ついていきます、鉄拳の姐さん！
+
+[charaFace D 2]
+
+＠マルタ
+だ[messageShake 0.04 3 3 0.9]から私は回復専門のライダー！[r]ライダーです！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[messageShakeStop]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠ジーク
+（姉は気に入らないのだろうか……？）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+？2：頼もしいね
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠シグルド
+うむ。
+[k]
+
+＠シグルド
+当方とマルタ殿、竜殺しが二人揃えば[r]邪竜といえども難敵には当たるまい。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠マシュ
+それでは出発しましょう。
+[k]
+
+？1：（お代わりが欲しい……）
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠マルタ
+それはまた後でね、マスター。[r]帰ったら、新しいの作ってあげますから。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠シグルド
+その時は、当方も是非。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠マルタ
+それはもう。沢山作ってこその私だし。[r]大人数の料理ならキャットにも負けません。
+[k]
+
+[messageOff]
+[wt 0.8]
+[fadeout black 1.8]
+[bgmStop BGM_EVENT_2 1.8]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+？2：よし、行こう！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠ジーク
+うん。
+[k]
+
+＠ジーク
+ジークフリートの戦い方はそれなりに[r]理解しているつもりだが……。
+[k]
+
+[charaFace E 1]
+
+＠ジーク
+シグルドと共闘するのは初めてだからな。[r]とても楽しみだ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シグルド
+ふむ、少年の期待に応えるのも[r]英雄の務め。
+[k]
+
+[charaFace A 10]
+
+＠シグルド
+精々、いいところを見せるとしよう。
+[k]
+
+[messageOff]
+[wt 0.8]
+[fadeout black 1.8]
+[bgmStop BGM_EVENT_2 1.8]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？！
+
+[scene 10000]
+[pictureFrame cut063_cinema]
+[wt 0.8]
+
+[fadein black 1.8]
+[wait fade]
+
+＠
+[line 3]笑わないし笑えないし笑う必要もない。[bgm BGM_EVENT_1 0.1 0.6]
+[k]
+
+＠
+[line 3]怒らないし怒れないし怒る必要もない。
+[k]
+
+＠
+[line 3]悲しまないし悲しめないし悲しむ必要もない。
+[k]
+
+＠
+[line 3]幸福を。[r]そう願うことも、特にない。
+[k]
+
+＠
+それでいい、と己を育てた鍛冶屋は言った。
+[k]
+
+＠
+おまえは兵器であり、刃であり、[r]弱者を守護するための番人なのだと。
+[k]
+
+＠
+英雄が人格を持つ人間であろうとしてはならない。[r]それはいつしか、悲劇を招く。
+[k]
+
+＠
+……欺瞞の言葉であるのに、[r]その言葉にはどこか真実の響きがあった。
+[k]
+
+＠
+百万人の人間がいれば、[r]その内の一万人は優秀であろう。
+[k]
+
+＠
+そして優秀な一万人の中から、[r]更に百人が選び出されるとすると。
+[k]
+
+＠
+心技体全てに秀でた、劣るところなど一つもない[line 3][r]万能の存在たちが、百人いることになる。
+[k]
+
+＠
+そしてその百人から。[r]たった一人。[#そういう存在]がいる。
+[k]
+
+
+
+
+
+
+[messageOff]
+[scene 28802 1.2]
+[charaFace F 2]
+[charaFadein F 0.8 0,-50]
+[wt 1.2]
+
+＠
+神の血を引く偉大なる者、[wt 1.2][charaFadeout F 0.6][scene 20404 1.2][charaFace G 1][charaFadein G 0.8 240,-50][wt 1.2]奇跡を具現化する者、[wt 1.2][charaFadeout G 0.6][scene 21300 1.2][charaFace H 2][charaFadein H 0.8 -180,-50][wt 1.2][r]鋼の精神を持つ者、[wt 1.2][charaFadeout H 0.6][scene 28420 1.2][charaFace I 2][charaFadein I 0.8 220,-50][wt 1.2]人ならざる力を持つ者。[wt 1.2][charaFadeout I 0.9][scene 10000 1.2][wt 1.2]
+[k]
+
+
+＠
+英雄、そう呼ばれる者。
+[k]
+
+＠
+歴史の流れが彼ら彼女らを生み、[r]人の激情が彼女ら彼らを育む。
+[k]
+
+＠
+俺は、私は、当方も。[r]またその一人なのであろう。
+[k]
+
+＠
+現界し剣を振るうことに疑問はない。[r]この力が世界の役に立つのであれば。
+[k]
+
+[bgmStop BGM_EVENT_1 2.4]
+
+＠
+ああ、しかし。[r]名状しがたい、何か心地のよい、むず痒さがある。
+[k]
+
+＠
+ふわふわと、どこか夢見心地のよう。[r]これではまるで[line 3]
+[k]
+
+＠マルタ
+[f large]シ[messageShake 0.04 3 3 0.5]グルド！
+[k]
+
+[messageOff]
+[wipeout openEye 0.6 1.0]
+[wait wipe]
+
+[charaTalk off]
+
+[scene 20805]
+[pictureFrame]
+[blur lens 0.1 4 50]
+[cameraMove 0.1 0,0 1.05]
+
+[charaPut L 2000,2000]
+[charaPut M 2000,2000]
+[charaEffect L bit_talk_43h]
+[charaEffect M bit_talk_41]
+
+[charaDepth A 1]
+[charaDepth N 9]
+
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[wt 0.1]
+
+[wipein openEye 0.6 1.0]
+[wait wipe]
+[blurOff lens 1.0]
+[wt 1.0]
+
+＠シグルド
+……ッ！[bgm BGM_EVENT_80 0.1]
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaFace A 9]
+[charaFadein A 0.1 1]
+[wt 0.2]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+[charaFadeTime N 0.4 0.3]
+[wt 0.4]
+
+[se ade216]
+[charaPut L 0,0]
+[wt 0.6]
+[seStop ade216 0.4]
+[charaEffectStop L bit_talk_43h]
+[wt 0.3]
+[charaPut L 2000,2000]
+
+[se ad73]
+[charaFace A 5]
+[charaMove N 0,-8 0.15]
+[charaMove A 0,-8 0.15]
+[charaMoveScale K 0.96 0.15]
+[charaMoveScale A 0.96 0.15]
+[wt 0.1]
+[charaFadeout A 0.2]
+[charaFadeout N 0.2]
+[wt 0.2]
+
+[charaMoveScale A 1.4 0.1]
+
+[effect bit_talk_impactlanding 0,0]
+[shake 0.04 4 2 1.4]
+[se bac433]
+[wt 0.3]
+[seStop bac433 0.8]
+[wt 1.2]
+
+[se ad671]
+[charaFace A 5]
+[charaFadein A 0.4 0,60]
+[charaMove A 1 0.4]
+[charaShake A 0.04 4 4 0.5]
+[wt 0.1]
+
+[charaMoveScale A 1.0 0.4]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[effectDestroy bit_talk_impactlanding]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠マルタ
+どうしたのです、あなたともあろう戦士が、[r]集中が途切れましたか！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠ジーク
+食事が美味しくて、満腹で[r]眠たくなった……とか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シグルド
+いや、申し訳ない。[r]少し考え事をしていたものでな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠マルタ
+……なんだ、よかった。[r]てっきり精神攻撃にでもあったのかと。
+[k]
+
+[charaFace D 5]
+
+＠マルタ
+でも、コイツ相手に考え事をするなんて、[r]呆れるを通り越して感心するわ。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[wt 0.6]
+[se ad17]
+[charaPut M 0,0]
+[shake 0.04 3 3 1.4]
+[wt 2.0]
+[charaPut M 2000,2000]
+[charaEffectStop M bit_talk_41]
+[wt 0.1]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シグルド
+すまん。
+[k]
+
+＠シグルド
+……その不安と不満は、[r]今から償うとしよう。
+[k]
+
+[input selectBranch]
+
+
+[charaSet A 1033002 1 シグルド]
+
+
+[charaSet C 98002000 1 フォウ]
+[charaSet D 4019001 1 マルタ]
+[charaSet E 5038000 1 ジーク]
+[charaSet F 4012001 1 オジマンディアス]
+[charaSet G 2031001 1 ナポレオン]
+[charaSet H 4003001 1 ドレイク]
+[charaSet I 7001001 1 ヘラクレス]
+[charaSet J 98013300 1 ドラゴン]
+
+[scene 20805]
+[cameraMove 0.1 0,0 1.05]
+[cameraFilter normal]
+[pictureFrame]
+[wt 0.2]
+
+[seStop ad450 0.4]
+[seStop ade294 0.4]
+[seStop ad450 0.4]
+[seStop ad217 0.4]
+[seStop ade126 0.4]
+[seStop ad492 0.4]
+[seStop adm40 0.4]
+[seStop ade216 0.4]
+[seStop ad73 0.4]
+[seStop ad671 0.4]
+[seStop ad17 0.4]
+[wt 0.4]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[maskin black 1.0]
+[wait mask]
+[label selectBranch]
+
+＠シグルド
+マスター、指示を！
+[k]
+
+
+？1：シグルドを中心に叩く
+
+＠シグルド
+了解。
+[k]
+
+＠シグルド
+こちらに魔力を回してくれ、[wt 0.65][charaFace A 5][r]では[line 3]参る！
+[k]
+
+
+
+？2：マルタさんとジークで援護を
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace E 5]
+[charaFace D 2]
+[charaFadein E 0.1 0]
+[charaFadein D 0.1 2]
+
+＠マルタ
+お任せを。[r]どんな傷でもすぐに回復してみせましょうとも。
+[k]
+
+[charaFace E 2]
+
+＠ジーク
+こちらも宝具を展開して、[r]援護する。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠シグルド
+そして当方が突撃する。[r]よし、行くぞ！
+[k]
+
+？！
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

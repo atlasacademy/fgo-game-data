@@ -1,0 +1,993 @@
+
+
+＄91-90-05-01-3-0
+
+[soundStopAll]
+
+[charaSet A 9005001 1 ホームズ]
+[charaSet B 98001000 1 マシュ]
+[charaSet C 6007001 1 ジキル]
+[charaSet D 6007003 1 ハイド]
+[charaSet E 5023001 1 エレナ]
+[charaSet F 2023002 1 モリアーティ]
+
+[imageSet I back10000 1]
+[charaSet J 6007001 1 ジキル（黒シルエット）]
+[charaSet K 6007001 1 ジキル（シルエット）]
+[charaSet L 6007003 1 ハイド（シルエット）]
+
+[charaScale I 1.01]
+
+[charaDepth A 1]
+[charaDepth K 1]
+[charaDepth L 1]
+[charaDepth F 5]
+[charaDepth C 5]
+[charaDepth E 10]
+[charaDepth J 10]
+
+
+[branchQuestNotClear lblNotClear1 91202301]
+[flag IsClear true]
+[branch lblConf1]
+[label lblNotClear1]
+[flag IsClear false]
+[label lblConf1]
+
+
+
+[scene 66400]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.2]
+
+[bgm BGM_EVENT_77 0.1]
+[wt 0.8]
+
+？1：キメラを投げた！？
+？2：生前に！？
+
+？！
+
+[charaFace E 1]
+
+＠エレナ
+そうそう。[r]ばびゅーん、とね！　それはもう鮮やかに！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠マシュ
+生前からホームズさんのバリツは健在……[wt 0.75][charaFace B 7][r]流石です！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠ホームズ
+所詮、当時の魔術師の手による合成獣だ。[r]ギリシャ神話に由来する幻想種そのものではないさ。
+[k]
+
+[charaFace A 8]
+
+＠ホームズ
+壁に叩きつけてやれば全身の骨も折れる。[r]さして、致命的な存在ではなかったとも。
+[k]
+
+[charaFace A 7]
+
+＠ホームズ
+私の感覚ではそう、[r]野生のライオン等と大差がないかな。
+[k]
+
+？1：野生のライオンも
+？2：相当のものだと思います
+
+？！
+
+＠ホームズ
+……まあ、危険な生物というのは確かではあったがね。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.7]
+[charaFace C 1]
+[wt 0.9]
+
+？1：どうかした、ジキル？
+？2：あれ？　ジキルちょっと笑った？
+
+？！
+
+[charaFace C 3]
+
+＠ジキル
+ああ、うん。[r]その、何と言えばいいのかな。
+[k]
+
+[charaFace C 1]
+
+＠ジキル
+話を聞いていてね、少し……[r]僕は安心したんだ。
+[k]
+
+[charaFace C 4]
+
+＠ジキル
+英霊として現界したことで、こう……[line 3]
+[k]
+
+[charaFace F 0]
+[charaFadein F 0.4 520,0]
+[charaMove F 480,0 0.4]
+＠ジキル
+謎めいた人物としての[#彼:ミスター]の存在が、[r]此処ではすっかり解き明かされているのかとばかり、
+[k]
+
+[charaFace C 1]
+
+＠ジキル
+思い込んでいたんだろうね。[r]ところがどうだ！
+[k]
+
+[charaFadeout F 0.4]
+[charaMove F 520,0 0.4]
+＠ジキル
+[#呪詛:じゅそ]は破る！[r]人造の魔獣をも、ちぎっては投げる！
+[k]
+
+＠ジキル
+当時も今も変わることなく、謎多き紳士のままだ。[r]ミスター・シャーロック・ホームズ。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 0.7]
+
+[charaFace A 9]
+[wt 0.2]
+
+＠ホームズ
+……褒めてくれている、のかな？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ジキル
+勿論ですよ、ミスター。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠エレナ
+謎多き紳士、ねえ。
+[k]
+
+＠エレナ
+謎。謎。[r]最大の謎といえばあれよね、シゲルソン？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠ホームズ
+ん？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 1.4]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+
+＠エレナ
+そういえばあなた、[wt 0.1][charaFace F 0][charaFadein F 0.3 -550,0][charaMove F -510,0 0.3]元ははぐれサーヴァントなの？[r]それとも[#誰か召喚者がいるの]？
+[k]
+
+[charaFace F 3]
+
+＠F：画面端の怪紳士
+！[messageShake 0.02 3 3 0.2]！
+[k]
+
+[messageShakeStop]
+
+＠エレナ
+それに、どうやって第六特異て……
+[k]
+
+[messageOff]
+[se ad59]
+[charaFace F 2]
+[charaMove F -150,0 0.3]
+[wt 0.3]
+[seStop ad59]
+
+[charaTalk depthOff]
+
+[se ad7]
+[charaFace E 4]
+[charaMove E 0,-40 0.2]
+[charaShake E 0.02 5 2 0.3]
+[wt 0.2]
+
+＠エレナ
+むぐ。
+[k]
+
+[charaFace F 1]
+
+[bgm BGM_EVENT_49 0.1]
+
+＠モリアーティ
+ははははははこれはこれはブラヴァツキー女史。[r]それ以上はやめておこうネー？
+[k]
+
+[branch lblClear2 IsClear true]
+
+[label lblNotClear2]
+
+[messageOff]
+[wt 0.4]
+
+[branch lblConf2]
+
+
+[label lblClear2]
+
+[messageOff]
+[charaFadein I 0.1 0,-200]
+[charaFadeTime I 0.3 0.7]
+[wt 0.2]
+
+[charaFace F 2]
+
+＠モリアーティ
+（折角仕掛けたあれこれが無駄になってしまうからネ！）
+[k]
+
+[messageOff]
+[charaFadeout I 0.2]
+[wt 0.6]
+
+[label lblConf2]
+
+
+？1：教授！
+？2：なにしてんの！？
+
+？！
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+き、教授？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+[wt 0.1]
+[charaShake C 0.04 3 3 0.3]
+
+＠ジキル
+！
+[k]
+
+[charaFace C 5]
+[charaShake C 0.01 5 1 0.4]
+[wt 0.1]
+
+＠ジキル
+蜘蛛……！[wt 0.2]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFace E 4]
+[charaFadein F 0.1 -150,0]
+[charaFadein E 0.1 0,-40]
+[charaShake E 0.05 2 1 0]
+
+＠モリアーティ
+ああいや失礼。[r]なんでもないヨ？　本当だヨ？
+[k]
+
+＠モリアーティ
+変なコトするつもりは無論ないのだけれども、[r]いや、このあたりに唐突に魔力の淀みがね……
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaShakeStop E]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ホームズ
+レディから手を離したまえ、教授。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaFace F 1]
+[charaFace E 4]
+[charaFadein F 0.1 -150,0]
+[charaFadein E 0.1 0,-40]
+[charaShake E 0.05 2 1 0]
+[wt 0.6]
+
+[charaMove E 1 0.4]
+[wt 0.4]
+[charaShakeStop E]
+
+[charaFace F 3]
+[charaMove E -15,0 0.15]
+[charaMove F -135,0 0.15]
+[wt 0.15]
+
+[se ad7]
+[charaFace E 2]
+[charaMove F -256,0 0.3]
+[charaMove E 256,0 0.3]
+[wt 1.1]
+
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 1]
+
+＠モリアーティ
+ああ、これは失敬。[r]レディ。
+[k]
+
+[charaFace E 5]
+
+＠エレナ
+いえいえ、どうも。[r]魔力の淀みというのは取れたかしら？
+[k]
+
+[charaFace F 0]
+
+＠モリアーティ
+ええ、勿論ですとも。[r]ご心配なく、レディ・ブラヴァツキー。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ホームズ
+…………ジェームズ・モリアーティ。
+[k]
+
+＠ホームズ
+まるで悪の格率が如き男。[r]悪の王、犯罪界の皇帝であった者よ。
+[k]
+
+＠ホームズ
+良心の[#呵責:かしゃく]なく、人類社会を踏みにじった闇の蜘蛛。
+[k]
+
+＠ホームズ
+キミがどれだけの人を不幸に陥れ、[r]傷つけ、殺してきたか。忘れたとは言わせない。
+[k]
+
+[charaFace A 7]
+＠ホームズ
+[#贖罪:しょくざい]を口にすることさえなく、[r]善を内包したと[#嘯:うそぶ]きながらも悪で在り続けるキミが……
+[k]
+
+
+＠ホームズ
+……唐突にご婦人の背後を取るとなれば、[se bac180][charaMoveReturn A 0,-1 0.2][wt 0.2][r]これはバリツを出すしかあるまい。どうかな？[se bac180][charaMoveReturn A 0,-2 0.2][wt 0.2]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠モリアーティ
+いやいや悪そうな形容が出てくる出てくる！[r]あんまり悪いコトはするものじゃないネ！
+[k]
+
+[charaFace F 0]
+
+＠モリアーティ
+確かに悪事ばかりを積み重ねてきた私だ！[r]心当たり？　当然あるとも！
+[k]
+
+[charaFace F 5]
+
+＠モリアーティ
+……とはいえ。だ。
+[k]
+
+＠モリアーティ
+そう[#逸:はや]るな、名探偵。[r]この私は美女を[#攫:さら]って高笑いする吸血鬼とは違うぞ。
+[k]
+
+＠モリアーティ
+その程度の嫌味で私をどうこうできるとでも？[r]思っているのかネ？
+[k]
+
+＠モリアーティ
+なあ、[wt 0.2]名探偵[line 3]
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 0.7]
+[charaFaceFade A 5 0.5]
+[wt 1.2]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠モリアーティ
+名探偵。[r]なんとも胸躍る響きの言葉だ！
+[k]
+
+＠モリアーティ
+しかし。ネ。
+[k]
+
+[charaFace F 2]
+＠モリアーティ
+いやいやなあにが名探偵かネ、ホームズ。[r][#正義の味方気取り]でよくぞ振る舞うものだ！　君ィ！
+[k]
+
+[messageShakeStop]
+
+[charaFace F 0]
+
+＠モリアーティ
+真実を調停し、人類史を維持するためにこそ[r]万物を裁定する者。裁定者。
+[k]
+
+＠モリアーティ
+とか[line 3]前は言ってなかったかネ？
+[k]
+
+[messageOff]
+[wt 0.4]
+
+[fadeout black 1.4]
+[bgm BGM_EVENT_49 1.4 0.6]
+[wait fade]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[scene 10310]
+[effect bit_sepia01]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+[fadein black 1.4]
+[wait fade]
+[wt 0.2]
+
+＠ホームズ
+人が知る必要はないのさ。[r]知ってはいけない。
+[k]
+
+[charaFace A 0]
+
+＠ホームズ
+だからこそ私には[line 3][wt 0.35][charaFace A 5][r][line 3]調停者であり裁定者、ルーラーの霊基が与えられた。
+[k]
+
+＠ホームズ
+真実を調停し、人類史を維持するためにこそ[r]万物を裁定せよという訳だ。
+[k]
+
+[messageOff]
+[fadeout black 1.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 66400]
+[effectStop bit_sepia01]
+[wt 0.1]
+
+[fadein black 1.4]
+[wait fade]
+
+[bgm BGM_EVENT_49 1.2 1.0]
+[wt 0.2]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaFace F 0]
+[charaFace A 0]
+[charaFadein F 0.1 0]
+[charaFadein A 0.1 2]
+[wt 1.2]
+[charaFace A 8]
+[charaFace F 1]
+[wt 0.5]
+
+[se bac2]
+[seVolume bac2 0 0.7]
+
+[charaMove F -246,0 0.3]
+[charaMove A 246,0 0.3]
+[cameraMove 0.3 0,-10 1.07]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+
+＠ホームズ
+ははは。
+[k]
+
+[se bac2]
+[seVolume bac2 0 0.7]
+
+[charaMove F -236,0 0.3]
+[charaMove A 236,0 0.3]
+[cameraMove 0.3 0,-20 1.14]
+[wt 0.1]
+[charaTalk F]
+
+＠モリアーティ
+ふふふ。
+[k]
+
+[se bac2]
+[seVolume bac2 0 0.8]
+
+[charaFace A 1]
+[charaMove F -226,0 0.3]
+[charaMove A 226,0 0.3]
+[cameraMove 0.4 0,-30 1.21]
+[wt 0.1]
+[charaTalk A]
+
+＠ホームズ
+は[messageShake 0.04 4 3 0.7]はははははははははははは！
+[k]
+
+[se bac2]
+[seVolume bac2 0 0.8]
+
+[charaMove F -216,0 0.3]
+[charaMove A 216,0 0.3]
+[cameraMove 0.4 0,-40 1.28]
+[wt 0.1]
+[charaTalk F]
+[charaFace F 2]
+
+＠モリアーティ
+ふ[messageShake 0.04 4 3 0.7]はははははははははははは！
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 0.8]
+
+[charaFace F 0]
+[charaFace A 5]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk A]
+＠ホームズ
+メインフレームのノイズブロック、戦乙女の暴走、[r]機械型エリザベートの登場、等々……
+[k]
+
+＠ホームズ
+数えきれない程あるが[line 3]
+[k]
+
+＠ホームズ
+かつてと変わらず悪事を働き続ける蜘蛛の王！[r]その癖、マスターに対しては保護者として振る舞う。
+[k]
+
+[charaFace A 6]
+
+＠ホームズ
+キミの真実は何処にあるのかな。[r]モリアーティ。
+[k]
+
+＠モリアーティ
+[line 6]ンン？
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 0.7]
+
+[se ad7]
+[charaFace F 3]
+[charaFace E 2]
+[charaFace A 2]
+[charaFadein E 0.4 0,-30]
+[charaMove E 0,20 0.2]
+
+[cameraHome 0.35]
+
+[charaMove A 306,0 0.3]
+[charaMove F -306,0 0.3]
+[wt 0.3]
+[charaMove E 1 0.2]
+[wt 0.2]
+[charaFace A 4]
+[charaFace E 5]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+
+＠エレナ
+はいはい、そこまで！
+[k]
+
+＠エレナ
+あたしと[%1]を[r]挟んだまま喧嘩なんかしないの！
+[k]
+
+＠エレナ
+あとほら、ジキル君が……
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[wt 0.6]
+[charaMove C 0,-40 0.8]
+[charaShake C 0.03 4 1 0.8]
+[wt 0.8]
+
+＠ジキル
+い、いや……[wt 0.4][r]いやだ[wt 0.25][messageShake 0.04 4 3 0.7]だ[wt 0.25]だ[wt 0.25]だ[wt 0.25]大丈夫だよ僕は……[wt 0.4][messageShake 0.04 4 3 0.3][charaFace C 4]ははは……
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 0.1]
+
+[se bac334]
+[seVolume bac334 0 0.6]
+[fowardEffect bit_talk_06b]
+[wt 1.4]
+
+[charaFadeout C 0.4]
+
+[se bac334]
+[charaFace D 5]
+[charaFadein D 0.2 -110,-40]
+[wt 0.4]
+
+[charaFadeout D 0.4]
+
+[charaFace C 5]
+[charaFadein C 0.2 0,-40]
+[wt 0.2]
+[fowardEffectStop bit_talk_06b]
+[wt 0.7]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 4]
+[charaShake C 0.04 3 2 0.3]
+
+＠ジキル
+いや大丈夫……
+[k]
+
+？1：いや絶対大丈夫じゃないよね！？
+？2：いまハイド出たよね！？
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+は、はい先輩！[r]一瞬ハイドさんの姿が見えたような！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠エレナ
+はい[se ad500][charaMoveReturn E 0,-4 0.2][wt 0.2]はい！[charaMoveReturn E 0,-2 0.2][wt 0.4]　口喧嘩はここまで！
+[k]
+
+[charaFace E 0]
+
+＠エレナ
+喧嘩するならそうね、ええ！[r]元気よく[#お外:シミュレーター]でやりましょう！
+[k]
+
+[charaFace E 1]
+
+[bgmStop BGM_EVENT_49 1.6]
+
+＠エレナ
+マシュ、お願いしたわ！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+[wt 0.6]
+[charaFace B 6]
+[charaShake B 0.04 4 1 0.3]
+
+＠マシュ
+えっ……
+[k]
+
+？1：マシュお願い！
+？2：シミュレーターで発散してもらおう！
+
+？！
+
+[charaFace B 2]
+
+[bgm BGM_EVENT_80 0.1]
+
+＠マシュ
+は、はいっ。
+[k]
+
+[messageOff]
+[se ad59]
+[charaFadeout B 0.4]
+[wt 0.7]
+[seStop ad59 0.3]
+[wt 0.4]
+
+[se ad172]
+[wt 2.8]
+[seStop ad172 0.2]
+
+[se ad15]
+[wt 0.3]
+
+＠マシュ
+シミュレーター設定開始！[r]ええとこの場合、割り振りはどのように[line 3]
+[k]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠モリアーティ
+悪の軍団ＶＳ名探偵とその仲間たち！[r]でいこうじゃないかここは！　なあ[#ハイド君]！
+[k]
+
+[messageOff]
+
+[charaFilter J silhouette 01060eFF]
+[charaMoveScale K 1.4 0.1]
+[charaMoveScale L 1.4 0.1]
+[wt 0.2]
+
+[se ade25]
+[charaMoveReturn F 0,-3 0.2]
+[wt 0.6]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[fowardEffect bit_talk_06b]
+[wt 0.8]
+
+[se bac334]
+[charaFace C 2]
+[charaShake C 0.02 5 1 0.4]
+[wt 0.7]
+
+[charaFace K 4]
+[charaFadein K 0.2 -400,0]
+[charaFadeTime K 0.8 0.9]
+[charaMove K -400,-30 1.5]
+[wt 1.1]
+[charaFadeout K 0.3]
+[wt 0.2]
+
+[charaFace L 2]
+[charaFadein L 0.2 250,50]
+[charaFadeTime L 0.8 0.9]
+[charaMove L 250,80 1.5]
+[wt 1.1]
+[charaFadeout L 0.3]
+[wt 0.4]
+
+[se ad193]
+[charaFace J 0]
+[charaFadein J 1.2 1]
+[fowardEffectStop bit_talk_06b]
+[wt 1.6]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaMove J 0,-10 0.5]
+[wt 0.15]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[wt 0.8]
+
+[se ad223]
+[fowardEffect bit_talk_quickmove]
+
+[charaFace D 1]
+[charaFadein D 0.1 0,-10]
+[wt 0.2]
+[charaMove D 1 0.2]
+[wt 0.9]
+[charaTalk on]
+[charaFace D 2]
+
+＠ハイド
+な[messageShake 0.04 4 3 1.4]んだァてめえジジイじゃねえか！！[r]いいぜぇぶっっっ殺してやるぜ、全員だッッ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[messageShakeStop]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠マシュ
+ジキルさん、いえ、ハイドさん出現しました！[r]やる気全開のようです！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠ホームズ
+……やれやれ。[r]降りかかる火の粉は払う他にないか！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠マシュ
+ホームズさんもやる気全開です！[r]先輩！
+[k]
+
+？1：戦闘シミュレーション、開始！
+
+？！
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

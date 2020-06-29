@@ -1,0 +1,689 @@
+
+
+＄91-10-33-01-3-1
+
+
+[soundStopAll]
+
+
+[charaSet A 1033002 1 シグルド]
+[charaSet B 3012001 1 ブリュンヒルデ]
+[charaSet C 5038000 1 ジーク]
+[charaSet D 1040000 1 葛飾北斎]
+[charaSet E 1041001 1 アストルフォ]
+
+[charaSet J 8001000 1 ダミーエフェクト１]
+
+[scene 31501]
+
+[charaDepth A 9]
+[charaDepth B 1]
+[charaDepth C 9]
+[charaDepth D 1]
+
+[charaPut J 2000,2000]
+[charaMoveScale J 0.1 0.1]
+[charaEffect J bit_talk_blue_fire]
+
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+[charaTalk off]
+
+[charaFace C 2]
+[charaFace D 12]
+[charaFadein C 0.4 0]
+[charaFadein D 0.4 2]
+[wt 0.4]
+
+＠二人
+ぜえ、[charaMoveReturn C -256,-2 0.44][wt 0.04][charaMoveReturn D 256,-2 0.4][wt 0.4]ぜえ、[charaMoveReturn D 256,-2 0.44][wt 0.04][charaMoveReturn C -256,-2 0.4][wt 0.4]ぜえ……。[charaMoveReturn C -256,-2 0.44][wt 0.04][charaMoveReturn D 256,-2 0.4][wt 0.4]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[charaFaceFade A 10 0.6]
+[wt 0.9]
+
+[charaMoveReturn A 0,-8 0.3]
+[wt 0.1]
+
+＠シグルド
+うむ。[bgm BGM_EVENT_2 0.1][r]なかなかの出来だ。
+[k]
+
+＠シグルド
+後は[#弛:たゆ]まず鍛錬を行えば、[r]剣の道を切り開くこともできるだろう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace C 7]
+[charaFace D 7]
+[charaFadein C 0.1 0]
+[charaFadein D 0.1 2]
+
+＠葛飾北斎
+い[messageShake 0.04 3 4 0.6]やっほうい、終わったー！
+[k]
+
+[messageShakeStop]
+
+[charaFace D 15]
+
+＠葛飾北斎
+あー、もうダメでぇ。[r]えねるぎい切れってやつさ。
+[k]
+
+[messageOff]
+[charaFace C 2]
+[charaFadeout D 0.4]
+[charaMove D 256,-70 0.7]
+[charaShake D 0.04 4 1 0.7]
+[wt 0.3]
+[se ade75]
+[seVolume ade75 0 0.4]
+[wt 0.9]
+
+[charaFace C 8]
+
+＠ジーク
+運んであげたいところだが、[r]生憎と俺も限界だ……申し訳ない。
+[k]
+
+[messageOff]
+[charaFadeout C 0.4]
+[charaMove C -256,-70 0.7]
+[charaShake C 0.04 4 1 0.7]
+[wt 0.3]
+[se ade75]
+[seVolume ade75 0 0.4]
+[wt 1.5]
+
+？1：二人とも満足げに倒れている……
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シグルド
+仕方あるまい。[r]二人は当方が運ぶことにしよう。
+[k]
+
+[messageOff]
+[charaMove A 0,-20 0.5]
+[wt 0.5]
+
+[se ad748]
+[seVolume ad748 0 0.6]
+[charaShake A 0.05 3 1 0.4]
+[wt 0.8]
+
+[charaMove A 1 0.2]
+[wt 0.4]
+
+[se ad7]
+[seVolume ad7 0 0.7]
+[charaMove A 0,7 0.1]
+[wt 0.1]
+
+[charaMove A 1 0.2]
+[wt 1.0]
+
+[charaFace A 1]
+
+＠シグルド
+いやしかし。[r][line 3]楽しい一時であった。
+[k]
+
+[charaFace A 4]
+
+＠シグルド
+……む。[r]また楽しいなどと考えたか。
+[k]
+
+＠シグルド
+いかんな。
+[k]
+
+？1：良くないことではないと思うよ
+？！
+
+[charaFace A 0]
+
+＠シグルド
+……そう……か……？
+[k]
+
+？1：一番身近な人に聞いてみたら？
+？！
+
+＠シグルド
+……ふむ。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.4]
+[bgmStop BGM_EVENT_2 1.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 10000]
+
+[fadein black 1.4]
+[wait fade]
+
+＠
+戦うが故の英雄。[r]弱者を守るが故の英雄。
+[k]
+
+＠
+笑わぬが故の英雄。[r]笑えば、俺はきっと弱くなる。
+[k]
+
+＠
+……そう思っていたが。
+[k]
+
+[messageOff]
+[fadeout black 1.4]
+[wait fade]
+
+[se ad37]
+[seVolume ad37 0 0]
+
+[scene 21105]
+
+[seVolume ad37 1.4 0.4]
+[fadein black 1.4]
+[wait fade]
+[wt 0.6]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠ブリュンヒルデ
+[line 3]まあ、そういうことがあったのですね。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.3 1]
+[wt 0.2]
+
+＠シグルド
+ああ、我が愛。[r]当方の弱さについてどう思う？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ブリュンヒルデ
+……。[r]……。
+[k]
+
+[messageOff]
+[seStop ad37 2.8]
+[wt 0.6]
+[charaFaceFade B 1 0.6]
+[wt 1.0]
+
+＠ブリュンヒルデ
+いいえ、貴方は弱くなどなってはいません。[r]勇士の資格を失ってなどいません。[bgm BGM_EVENT_6 0.1]
+[k]
+
+＠ブリュンヒルデ
+かつての昔、決して笑わぬ貴方が、[r]私の前で会心の笑みを見せてくださったように。
+[k]
+
+＠ブリュンヒルデ
+今の貴方は、[r]微笑むことができる。
+[k]
+
+＠ブリュンヒルデ
+それは決して、弱くなったのではなく[line 3]
+[k]
+
+＠ブリュンヒルデ
+[#人間:ひと]として、[r]在るべき姿に近付いているのでしょう。
+[k]
+
+＠ブリュンヒルデ
+とても素晴らしいことだと、私は思います。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.7]
+
+[charaFaceFade A 10 0.6]
+[wt 0.9]
+
+＠シグルド
+そうか……。
+[k]
+
+＠シグルド
+だとするならば、それもやはりおまえのお陰だ。[r]我が愛、ブリュンヒルデよ。
+[k]
+
+＠シグルド
+生前に抱いたあの激情、[r]あるいは慈しもうとした、あの感覚。
+[k]
+
+[charaFace A 1]
+
+＠シグルド
+それを生前に感じ取っていたからこそ、[r]当方はここに立っているのだからな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ブリュンヒルデ
+……ふふ。[r]いつもいつも、貴方は私の心をくすぐるのですね。
+[k]
+
+＠ブリュンヒルデ
+でも。[r]そこが好きですよ、[#あなた]。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+[charaShake A 0.04 4 3 0.4]
+
+＠シグルド
+[line 3]む。[wt 0.5][charaFaceFade A 3 0.6][r]……[wt 0.6][charaFaceFade A 11 0.4]突然の奇襲だな……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠ブリュンヒルデ
+いつもいつも、私の心を[#掻:か]き乱すのですから。[r]たまにはお返し……です。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace A 0]
+[charaFace B 0]
+[charaFadein A 0.1 0]
+[charaFadein B 0.1 2]
+[wt 0.8]
+
+[charaFace A 10]
+[charaFace B 1]
+[wt 1.0]
+
+[charaFace A 9]
+[charaFace B 3]
+[charaShake A 0.04 2 2 0.2]
+[charaShake B 0.04 2 2 0.2]
+
+[charaTalk on]
+[charaTalk D]
+
+＠葛飾北斎
+おーうい……って[#応為:おうい]はおれだ、[r]しぐるどの旦那やーい！　修行だ修行！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad133]
+[wt 0.6]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.8 1]
+[wt 1.2]
+
+＠葛飾北斎
+必殺技ってえのを思いついたんでい。[wt 0.7][charaFace D 0][r]いっちょ、試させてくん……[wt 0.65][charaFace D 18][charaShake D 0.04 3 4 0.4]わわ！
+[k]
+
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad133]
+[wt 0.6]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.8 1]
+[wt 1.2]
+[charaFace C 8]
+
+＠ジーク
+……申し訳ない。[r]お二人の逢瀬を邪魔するつもりはなかったのだが。
+[k]
+
+[charaFace C 5]
+
+＠ジーク
+ほらみろお栄。[r]夜は危険だと言っただろ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 28]
+[charaFadein D 0.1 1]
+
+＠葛飾北斎
+そ[messageShake 0.04 3 4 1.0]、そ、そういう意味合いだったあ、[r]思わねェよ！！
+[k]
+
+[messageShakeStop]
+
+[charaFace D 3]
+
+＠葛飾北斎
+あー、そ、そういうことなら、[r]やっぱいいや、また明日ってことで！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠シグルド
+何を言う、北斎。[r]必殺技なのだろう？
+[k]
+
+[charaFace A 10]
+＠シグルド
+是非見せてもらいたい。
+[k]
+
+＠シグルド
+よし、我が愛よ。[r]この二人に少し手を貸してやってくれ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ブリュンヒルデ
+了解です、シグルド。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠ジーク
+それから……追加でもう一人増えるが、[r]構わないだろうか。
+[k]
+
+[charaFace C 2]
+
+＠ジーク
+『自分でも何でセイバーになったのか、[r]　よくわかんなーい！』
+[k]
+
+[charaFace C 8]
+
+＠ジーク
+と言っているので、それならと[r]連れてきたのだが。
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 0.3]
+
+[charaDepth C 1]
+[charaDepth E 9]
+
+[se ad132]
+[charaFadeout C 0.4]
+[charaMove C -256,0 0.8]
+[wt 1.8]
+
+[se ad345]
+[seVolume ad345 0 0.2]
+[wt 0.6]
+
+[charaFace C 8]
+[charaFace E 22]
+[charaFadein C 0.8 -160,0]
+[charaFadein E 0.6 -470,-200]
+[charaMove C -120,0 0.4]
+[charaMove E -420,-200 0.4]
+[charaShake E 0.04 3 1 0.4]
+[wt 0.6]
+
+[charaMove C -80,0 0.4]
+[charaMove E -390,-200 0.4]
+[charaShake E 0.04 3 1 0.4]
+[wt 0.6]
+
+[charaMove C -40,0 0.4]
+[charaMove E -350,-200 0.4]
+[charaShake E 0.04 3 1 0.4]
+[wt 0.6]
+
+[charaMove C 0,0 0.4]
+[charaMove E -310,-200 0.4]
+[charaShake E 0.04 3 1 0.4]
+[wt 0.6]
+[seStop ad345 0.4]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 19]
+
+＠アストルフォ
+こんばんは！　デートの邪魔してゴメン！[wt 1.1][charaFace E 26][r]でも、楽しく鍛えてくれるならありがたいな！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠シグルド
+ふっ……。[r]もちろん構わないとも。
+[k]
+
+[charaFace A 10]
+
+＠シグルド
+とはいえ、楽しいかどうかはそちら次第だぞ。
+[k]
+
+[messageOff]
+[wt 0.4]
+
+[se ade126]
+[charaFace A 7]
+[wt 0.7]
+
+＠シグルド
+当方の剣術教室は、[r]時に厳しく、時に厳しく、稀に優しくの方針だ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+＠アストルフォ
+わ[messageShake 0.04 3 3 0.7]わわわわ、がんばりまーす！
+[k]
+
+[messageOff]
+[wt 0.4]
+[fadeout black 1.4]
+[bgm BGM_EVENT_6 1.4 0.6]
+[wait fade]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[scene 10000]
+[charaPut J 0,-350]
+[wt 1.7]
+
+[fadein black 1.4]
+[wait fade]
+[wt 0.4]
+
+＠
+[#それ]は[#焔:ほむら]ではなくなっても、[r]燃え[#滾:たぎ]るものではなくなっても。
+[k]
+
+＠
+穏やかな春の日差しのような、[r]そういう慈しむ感情に変わったとしても。
+[k]
+
+＠
+それでも。[r]それでもなお[line 3]
+[k]
+
+＠
+英雄シグルドよ。[r]今の[#俺]ならば、よく感じ取れるだろう。
+[k]
+
+＠シグルド
+[line 3]無論。よく感じるとも。
+[k]
+
+＠
+それは、己の内側で蓄えられた力であり……。
+[k]
+
+＠
+外と内の接触によって、絡み合い繋がり合い、[r]爆発的に高まる力だ。
+[k]
+
+[messageOff]
+[fadeout black 1.4]
+[wait fade]
+
+[scene 21105]
+[wt 0.4]
+
+[charaPut J 2000,2000]
+[charaEffectStop J bit_talk_blue_fire]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 80,0]
+
+[bgm BGM_EVENT_6 1.4 1.0]
+
+[fadein black 1.4]
+[wait fade]
+[wt 0.4]
+
+
+＠ブリュンヒルデ
+シグルド。[r]皆、貴方を待っていますよ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.6]
+[charaFace A 8]
+
+＠シグルド
+ああ。[r]……では、始めるとしよう。
+[k]
+
+[messageOff]
+[se ad132]
+[charaFadeout A 0.8]
+[wt 2.2]
+
+＠
+呼びかけに応じつつ、[r]俺はひとまずその一歩を歩み出す。
+[k]
+
+＠
+式もなく、質量もなく、形もなく、[r]けれど、確かにそこに在るエネルギー。
+[k]
+
+＠
+我らはそれを、“愛”と呼ぶのだ。
+[k]
+
+[messageOff]
+[wt 1.2]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_6 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

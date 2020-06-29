@@ -1,0 +1,304 @@
+
+
+＄91-20-34-01-3-1
+
+[soundStopAll]
+
+[charaSet A 2034000 1 テル]
+[charaSet C 2005001 1 アタランテ]
+
+[charaSet G 8001000 1 ダミーエフェクト１]
+[charaSet H 8001000 1 ダミーエフェクト２]
+[charaSet I 8001000 1 ダミーエフェクト３]
+[charaSet J 8001000 1 ダミーエフェクト４]
+
+[charaDepth C 1]
+[charaDepth J 9]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+[flag IsClear true]
+[branch lblConf]
+[label lblNotClear]
+[flag IsClear false]
+[label lblConf]
+
+
+[branch lblNotClear1 IsClear false]
+
+[charaSet B 1098124510 1 ダ・ヴィンチ]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+[charaSet B 98111500 1 ダ・ヴィンチ]
+
+[label lblConf1]
+
+
+[charaPut G 1200,1200]
+[charaEffect G bit_talk_10_MiddleLevel]
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10]
+[charaPut I 1200,1200]
+
+[charaEffect I bit_talk_20re]
+
+
+[scene 20820]
+[pictureFrame cut063_cinema]
+
+[fadein black 1.0]
+[wait fade]
+
+[se adm60]
+[seVolume adm60 0 0.6]
+[charaPut I 700,-70]
+[wt 0.6]
+[seStop adm60 1.2]
+[charaMove I -40,-140 1.2]
+[wt 1.2]
+
+[se ad73]
+[charaEffect J bit_talk_quickmove]
+[backEffect bit_talk_quickmove]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-50]
+[wt 0.1]
+
+[se ad215]
+[seVolume ad215 0 0.3]
+[charaMove I -10,-70 0.2]
+[charaEffectStop I bit_talk_20re]
+[wt 0.4]
+[charaPut I 2000,2000]
+[wt 0.8]
+
+[charaFace C 0]
+
+＠アタランテ
+……………………。
+[k]
+
+[charaFace C 3]
+[charaShake C 0.04 2 4 0.3]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠アタランテ
+（はっ）
+[k]
+
+[charaFace C 2]
+
+＠アタランテ
+[f large]リ[messageShake 0.04 3 3 0.6]、リンゴを転がす者、滅ぶべし！
+[k]
+
+
+[messageOff]
+[wt 0.3]
+[wipeout rightToLeft 1.2 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[pictureFrame]
+
+[wipein leftToRight 1.2 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠テル
+さて、と。結果はどうなったのかねぇ？
+[k]
+
+[charaPut G 0,0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch lblNotClear2 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+[branch lblConf2]
+[label lblNotClear2]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf2]
+
+
+＠ダ・ヴィンチ
+うーん。彼女の名誉のために詳細は省くが、[r]どうもキミたちのほうに軍配が上がるような……
+[k]
+
+[bgmStop BGM_EVENT_7 1.6]
+
+
+[branch lblNotClear3 IsClear false]
+
+
+[charaFace B 23]
+
+＠ダ・ヴィンチ
+ん、あれ？　ちょっと待って、[wt 0.6][charaFace B 22]何だこの反応[line 3]
+[k]
+
+[branch lblConf3]
+[label lblNotClear3]
+
+
+[charaFace B 5]
+
+＠ダ・ヴィンチ
+ん、あれ？　ちょっと待って、[wt 0.6][charaFace B 2]何だこの反応[line 3]
+[k]
+
+[label lblConf3]
+
+[messageOff]
+[se ad539]
+[charaPut G 2000,2000]
+[charaPut H 0,0]
+[wt 0.2]
+[charaPut G 0,0]
+[charaPut H 2000,2000]
+[wt 0.3]
+
+[charaPut G 2000,2000]
+[charaPut H 0,0]
+[wt 0.15]
+[se ad31]
+[seVolume ad31 0 0.5]
+[wt 0.2]
+
+[charaFadeout B 0.1]
+[wt 1.1]
+
+？1：ダ・ヴィンチちゃん？
+？！
+
+
+
+[branch lblNotClear4 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 21]
+[charaFadein B 0.1 1]
+
+＠B：ノイズ混じりの声
+[line 3]まずい、[wt 0.25]これ……[seVolume ad31 0 0.9][charaFadeout B 0.1][wt 0.1][charaTalk B][charaFace B 21][charaFadein B 0.1 1][wt 0.4][seVolume ad31 0 0.5]おそらく……[wt 0.3][r]バグで……[wt 0.6][seVolume ad31 0 0.9][charaFadeout B 0.1][wt 0.1][charaTalk B][charaFace B 21][charaFadein B 0.1 1][charaFadeout B 0.1][wt 0.1][charaTalk B][charaFace B 21][charaFadein B 0.1 1]なんで[line 3]
+[k]
+
+
+[branch lblConf4]
+[label lblNotClear4]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-90]
+
+＠B：ノイズ混じりの声
+[line 3]まずい、[wt 0.25]これ……[seVolume ad31 0 0.9][charaFadeout B 0.1][wt 0.1][charaTalk B][charaFace B 2][charaFadein B 0.1 0,-90][wt 0.4][seVolume ad31 0 0.5]おそらく……[wt 0.3][r]バグで……[wt 0.6][seVolume ad31 0 0.9][charaFadeout B 0.1][wt 0.1][charaTalk B][charaFace B 2][charaFadein B 0.1 0,-90][charaFadeout B 0.1][wt 0.1][charaTalk B][charaFace B 2][charaFadein B 0.1 0,-90]なんで[line 3]
+[k]
+
+[label lblConf4]
+
+[messageOff]
+[se ad539]
+[seStop ad31]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[branch lblNotClear5 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 21]
+[charaFadein B 0.1 1]
+[wt 0.3]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 2000,2000]
+[wt 0.05]
+
+[charaPut H 0,0]
+[charaTalk B]
+[charaFace B 21]
+[charaFadein B 0.1 1]
+[wt 0.1]
+
+[branch lblConf5]
+[label lblNotClear5]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-90]
+[wt 0.3]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 2000,2000]
+[wt 0.05]
+
+[charaPut H 0,0]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-90]
+[wt 0.1]
+
+[label lblConf5]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 2000,2000]
+[wt 1.5]
+
+[bgm BGM_EVENT_81 0.1]
+
+？1：何があったんだろう……
+？！
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠テル
+[line 6]！！
+[k]
+
+[charaFace A 2]
+
+＠テル
+待[messageShake 0.04 3 2 0.4]った！[r][#動くな]、[#マスター]！
+[k]
+
+
+[messageOff]
+[wt 0.4]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

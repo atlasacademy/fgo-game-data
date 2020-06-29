@@ -1,0 +1,353 @@
+
+
+＄91-10-33-01-2-0
+
+
+[soundStopAll]
+
+[branchQuestNotClear lblNotClear 3000303]
+[flag IsClear true]
+[branch lblConf]
+[label lblNotClear]
+[flag IsClear false]
+[label lblConf]
+
+[branch lblNotClear1 IsClear false]
+
+[charaSet B 8001410 1 アーマード・マシュ（ゴーグルなし）]
+[charaSet C 8001400 1 マシュ]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+[charaSet B 8001000 1 マシュ２]
+[charaSet C 8001000 1 マシュ]
+
+[label lblConf1]
+
+
+[charaSet A 1033002 1 シグルド]
+[charaSet D 4019001 1 マルタ]
+[charaSet E 5038000 1 ジーク]
+[charaSet F 98013000 1 ファヴニール]
+[charaSet G 98013300 1 ドラゴン]
+[charaSet H 98006100 1 ワイバーンＡ]
+[charaSet I 98006100 1 ワイバーンＢ]
+
+[charaSet J 8001000 1 ダミーエフェクト１]
+
+[charaMoveScale H 0.8 0.1]
+[charaMoveScale I 0.8 0.1]
+
+[charaPut J 2000,2000]
+[charaEffect J bit_talk_41]
+
+
+
+
+
+
+[charaDepth C 1]
+[charaDepth D 1]
+[charaDepth F 1]
+[charaDepth G 1]
+[charaDepth H 5]
+[charaDepth I 9]
+[charaDepth E 9]
+[charaDepth A 9]
+[charaDepth J 10]
+
+[scene 20112]
+[cameraMove 0.1 -40,0 1.08]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.4]
+
+
+
+
+[charaFace G 0]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadein G 0.3 0,0]
+[charaFadein H 0.3 300,-170]
+[charaFadein I 0.3 -300,-170]
+[wt 0.3]
+
+[bgm BGM_EVENT_81 0.1]
+[wt 0.6]
+
+[se ade215]
+[charaShake H 0.04 3 1 0.6]
+[charaMoveReturn H 300,-160 0.6]
+[wt 0.5]
+[charaShake I 0.04 3 1 0.6]
+[charaMoveReturn I -300,-160 0.6]
+[wt 0.3]
+[charaShake H 0.04 2 1 0.5]
+[wt 0.2]
+[charaShake I 0.04 2 1 0.3]
+[wt 0.6]
+[seStop ade215 0.6]
+[wt 0.6]
+
+[wipeout rectangleStripLeftToRight 0.8 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 0.8 1.0]
+[wait wipe]
+[wt 0.4]
+
+[se ad58]
+[shake 0.04 2 3 1.4]
+[wt 0.5]
+
+[charaFace F 0]
+[charaFadein F 0.7 1]
+[wt 1.2]
+[seStop ad58 0.3]
+[wt 0.6]
+
+[se ad17]
+[charaPut J 0,0]
+[shake 0.04 4 4 1.6]
+[wt 1.9]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[seStop ad17 0.8]
+[wait wipe]
+
+[charaPut J 2000,2000]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaFace G 0]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadein G 0.1 0,0]
+[charaFadein H 0.1 300,-170]
+[charaFadein I 0.1 -300,-170]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[se ad17]
+[charaPut J 0,0]
+[shake 0.04 2 2 1.6]
+[wt 1.9]
+
+[charaPut J 2000,2000]
+[charaEffectStop J bit_talk_41]
+[wt 0.2]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠マルタ
+うっわ、酷いわね……！
+[k]
+
+
+[branch lblNotClear2 IsClear false]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[wt 0.1]
+
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[wt 0.6]
+
+[charaFace C 7]
+[charaFadein C 0.2 1]
+[wt 0.2]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+
+[charaFadeout B 0.1]
+[wt 0.4]
+[charaTalk on]
+[charaTalk depthOn]
+
+
+[branch lblConf2]
+[label lblNotClear2]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+[label lblConf2]
+
+＠マシュ
+まるでオルレアンのときのようです。
+[k]
+
+[charaFace C 2]
+
+＠マシュ
+急がなければ、増殖速度の方が[r]上回ってしまいます……！
+[k]
+
+[input selectBranch]
+
+
+[branch lblNotClear3 IsClear false]
+
+[charaSet B 8001410 1 アーマード・マシュ（ゴーグルなし）]
+[charaSet C 8001400 1 マシュ]
+
+[branch lblConf3]
+[label lblNotClear3]
+
+[charaSet B 8001000 1 マシュ２]
+[charaSet C 8001000 1 マシュ]
+
+[label lblConf3]
+
+
+[charaSet A 1033002 1 シグルド]
+
+
+[charaSet D 4019001 1 マルタ]
+[charaSet E 5038000 1 ジーク]
+[charaSet F 98013000 1 ファヴニール]
+[charaSet G 98013300 1 ドラゴン]
+[charaSet H 98006100 1 ワイバーンＡ]
+[charaSet I 98006100 1 ワイバーンＢ]
+
+[seStop ad58]
+
+[scene 20112]
+[cameraMove 0.1 -40,0 1.08]
+[wt 0.2]
+
+[seStop ade215 0.4]
+[seStop ad58 0.4]
+[seStop ad17 0.4]
+[seStop ad17 0.4]
+[seStop ade57 0.4]
+[seStop ad658 0.4]
+[wt 0.4]
+
+
+[messageOff]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+[maskin black 1.0]
+[wait mask]
+[label selectBranch]
+
+[bgmStop BGM_EVENT_81 1.4]
+
+＠マシュ
+マスター！
+[k]
+
+
+
+？1：一点突破で[&頼む:お願い]、シグルド！
+
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_80 0.1]
+
+＠シグルド
+委細承知！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠マシュ
+わたしたちで可能な限り道を切り開きます！[r]シグルドさん、お願いします！
+[k]
+
+
+
+
+？2：最低限、周囲を片付けてから……！
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaFace E 2]
+[charaFace D 2]
+[charaFadein E 0.1 0]
+[charaFadein D 0.1 2]
+
+[bgm BGM_EVENT_80 0.1]
+
+＠マルタ＆ジーク
+了解！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠シグルド
+ああ、まずはこの竜種たちを[r]何とかしなければ……！
+[k]
+
+？！
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

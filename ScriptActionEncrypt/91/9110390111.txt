@@ -1,0 +1,295 @@
+
+
+＄91-10-39-01-1-1
+
+[soundStopAll]
+
+[charaSet A 1039000 1 ラクシュミー]
+[charaSet B 1098182100 1 ネモ・プロフェッサー]
+[charaSet C 5004001 1 ナーサリー・ライム]
+[charaSet D 7028000 1 バニヤン]
+[charaSet E 5002001 1 ジル]
+
+[charaSet H 98006100 1 ダミーエフェクト１]
+[charaSet I 98006100 1 ダミーエフェクト２]
+[charaSet J 98006100 1 ダミーエフェクト３]
+
+[charaMoveScale I 0.05 0.1]
+[charaMoveScale J 0.05 0.1]
+
+
+[scene 20300]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.2 1]
+[wt 0.1]
+
+＠ラクシュミー
+ハッ……見えたぞ。[r]さっきのピースサインの意味は……こうか！
+[k]
+
+[messageOff]
+＠ラクシュミー
+トゥ！（目潰し）[se bac1][charaFace A 2][charaFadeout A 0.3][charaMove A 0,50 0.2][charaMoveScale A 1.2 0.2][charaEffect H bit_talk_41][wt 0.2][charaPut H 2000,2000][wt 0.2]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaMoveScale A 1.0 0]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+[wt 0.4]
+
+[charaDepth I 10]
+[charaDepth J 10]
+
+[se bac13]
+[seVolume bac13 0 0.8]
+[charaFace E 2]
+[charaEffect I bit_talk_13 520,-1400]
+[charaEffect J bit_talk_13 -520,-1400]
+[wt 0.1]
+[charaShake E 0.04 4 3 0.6]
+[wt 0.8]
+＠ジル
+ホゥ！？[r]これこそは私の眼球を[#諫:いさ]めるジャンヌの目潰し！
+[k]
+
+[charaFace E 3]
+＠ジル
+間違いありません、貴女こそ[#本物:まこと]の、[r]久しぶりに降臨なされた新しいジャンヌ！
+[k]
+
+[messageOff]
+[charaFadeout E 0.4]
+[charaMove E 0,-50 0.4]
+[bgmStop BGM_EVENT_80 1.6]
+[wt 0.4]
+
+[se ad144]
+[wt 1.4]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 1]
+[wt 0.6]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠ラクシュミー
+まったく……。
+[k]
+
+[messageOff]
+[charaMoveReturn A 0,-5 0.6]
+[wt 0.9]
+[charaFace A 0]
+[wt 0.5]
+[se ad452]
+[charaFadeout A 0.4]
+[charaMove A -40,0 0.4]
+[wt 0.8]
+
+[wipeout rectangleStripRightToLeft 0.9 1.0]
+[seStop ad452 0.9]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.9 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ネモ・プロフェッサー
+ほうほう。[r]少し見えてきた気がしますー。
+[k]
+
+＠ネモ・プロフェッサー
+せっかくなので、裏付けを取るべく[r]彼女が見ていた子供たちに接触してみましょう。
+[k]
+
+＠ネモ・プロフェッサー
+ジャンヌ氏はもういないみたいですが、[r]子供たちのほうがメインな気がするので問題はないかと。
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.1 1.0]
+[se ad452]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein C 0.1 0]
+[charaFadein D 0.1 2]
+
+[wipein rightToLeft 1.1 1.0]
+[wait wipe]
+
+[seStop ad452 0.2]
+[wt 0.4]
+
+？1：こんにちはー
+？！
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 1]
+
+＠ナーサリー・ライム
+あっ、マスターに、めがねのネモ！[r]どうしたの？
+[k]
+
+[charaFace D 1]
+＠バニヤン
+私たちは[#花冠:はなかんむり]作ってるんだ！[r]一緒に作るー？
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ネモ・プロフェッサー
+それは興味深い試みですが、[r]また今度の機会ということにさせてください。
+[k]
+
+[charaFace B 0]
+
+＠ネモ・プロフェッサー
+今日は一つ質問があってきたのです。
+[k]
+
+＠ネモ・プロフェッサー
+貴方たちは……ラクシュミー・バーイー女史と[r]遊んだことはありますか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein C 0.1 0]
+[charaFadein D 0.1 2]
+
+＠ナーサリー・ライム
+インドのお姉さんね？[wt 0.6][charaFace C 4]　うーんと……。
+[k]
+
+[charaFace D 4]
+
+＠バニヤン
+一緒に遊んだことは、ないよねぇ。
+[k]
+
+[charaFace C 0]
+
+＠ナーサリー・ライム
+いつもお顔が怖いから[r]なかなか声がかけ辛いというのもあるけど[line 3]
+[k]
+
+＠ナーサリー・ライム
+いいえ、それでももちろん、[r]何度か遊びやお茶会に誘ったことはあるのよ。
+[k]
+
+＠ナーサリー・ライム
+近くにいるときが何度かあったから。
+[k]
+
+[charaFace C 4]
+
+＠ナーサリー・ライム
+だけど、忙しいとか用事があるとか、[r]そのたびに断られてしまったわ。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ネモ・プロフェッサー
+ふむ……。
+[k]
+
+[charaFace B 1]
+
+＠ネモ・プロフェッサー
+なるほど、ありがとうございました。[r]知りたいことは、これでだいたい。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFace D 1]
+[charaFadein C 0.1 0]
+[charaFadein D 0.1 2]
+
+＠ナーサリー・ライム
+そう。お力になれたのならよかったわ。
+[k]
+
+[messageOff]
+[fadeout black 1.2]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[fadein black 1.2]
+[wait fade]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.3 1]
+[wt 0.2]
+＠ネモ・プロフェッサー
+さてマスター、[r]彼女を追いましょう。
+[k]
+
+＠ネモ・プロフェッサー
+これだけの情報があれば、[r]彼女もシラは切り通せないでしょう。
+[k]
+
+[charaFace B 6]
+
+＠ネモ・プロフェッサー
+一応キャプテンを呼んで交代しておきます。[r]こういうのは圧が大事ですから……。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

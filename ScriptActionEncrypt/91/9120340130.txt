@@ -1,0 +1,802 @@
+
+
+＄91-20-34-01-3-0
+
+[soundStopAll]
+
+[charaSet A 2034000 1 テル]
+[charaSet C 2005001 1 アタランテ]
+
+[charaSet G 8001000 1 ダミーエフェクト１]
+[charaSet H 8001000 1 ダミーエフェクト２]
+[charaSet I 8001000 1 ダミーエフェクト３]
+[imageSet J back10000 1]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+[flag IsClear true]
+[branch lblConf]
+[label lblNotClear]
+[flag IsClear false]
+[label lblConf]
+
+
+[branch lblNotClear1 IsClear false]
+
+[charaSet B 1098124510 1 ダ・ヴィンチ]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+[charaSet B 98111500 1 ダ・ヴィンチ]
+
+[label lblConf1]
+
+
+
+[charaScale J 1.01]
+
+[charaPut G 1200,1200]
+[charaEffect G bit_talk_10_MiddleLevel]
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_20re]
+
+
+[scene 20820]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.4]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.6]
+
+[bgm BGM_EVENT_62 0.1]
+
+＠アタランテ
+なるほど。[r]それで私と狩り勝負をしたいというわけか。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠テル
+うむ、どうもそういう話のようだな。
+[k]
+
+[charaFace A 0]
+
+＠テル
+いやはや、わしにとっては[r]あんたもオリオン殿と変わらぬ神話の狩人だ。
+[k]
+
+＠テル
+相手してもらうのが[r]申し訳なくなるほど勿体ない相手だよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠アタランテ
+[#謙遜:けんそん]するな。[r]汝もなかなかの腕だと聞いているぞ。
+[k]
+
+[charaFace C 5]
+
+＠アタランテ
+……というか、私をあの好色男と一緒にするな。
+[k]
+
+＠アタランテ
+筋肉量では負けているかもしれんが、[r]狩りに本当に必要なのはそんなものではない。
+[k]
+
+[charaFace C 2]
+
+＠アタランテ
+誰が最初に奴をギリシャ[#一:いち]の狩人などと[r]言い始めたのだろうな？　まったく。
+[k]
+
+[charaPut G 0,0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branch lblNotClear2 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 26]
+[charaFadein B 0.1 1]
+
+[branch lblConf2]
+[label lblNotClear2]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf2]
+
+＠ダ・ヴィンチ
+そう、この狩り勝負においては、[r]確かに彼女のほうがオリオンよりも難敵かもしれないよ。
+[k]
+
+＠ダ・ヴィンチ
+油断はしないことだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut G 2000,2000]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠テル
+わかっているとも。[r]オリオン殿にも負けぬ弓の腕に、闇夜すら見通す目。
+[k]
+
+＠テル
+そして何より彼女は、
+[k]
+
+＠テル
+『走りではどんな男にも負けなかった』[line 3][r]と言われた存在だろう？
+[k]
+
+
+＠テル
+狩人としての[#敏捷性:びんしょうせい]が高い、ということだな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アタランテ
+私はオリオンのような力任せの狩りなどしない。[r]小さな獲物を見つけるのも大得意だ。
+[k]
+
+＠アタランテ
+必要とあれば罠とて使う。必要になる時がないだけだ。[r]どんな獲物にも追いつけてしまうからな。
+[k]
+
+[charaFace C 1]
+
+＠アタランテ
+無駄のない真の狩りというものを見せてやろう。[r]悪いが手加減のやり方など知らんぞ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠テル
+へっへ、そうこなくてはな。
+[k]
+
+＠テル
+わしは人としての[#生:せい]で身に着けただけの、[r]ごく当たり前の技術しか持っていないが[line 3]
+[k]
+
+＠テル
+あんたと森を駆けられる幸運に報いるべく、[r]その全てを以て対抗させてもらうとしよう。
+[k]
+
+[charaPut G 0,0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch lblNotClear3 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 27]
+[charaFadein B 0.1 1]
+
+[branch lblConf3]
+[label lblNotClear3]
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf3]
+
+＠ダ・ヴィンチ
+よし。それでは、勝負スタートだ！[r]今回も安全第一で頑張っておくれ！
+[k]
+
+[messageOff]
+[fadeout black 1.6]
+[bgm BGM_EVENT_62 1.6 0.6]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut G 2000,2000]
+
+[wipeFilter cinema 0.5 0]
+[wt 0.4]
+
+[fadein black 1.6]
+[wait fade]
+
+[se bac20]
+[wt 0.1]
+[se bac20]
+[wt 0.1]
+[se bac20]
+[wt 0.5]
+[effect bit_shot_01 -60,-30]
+[se bac15]
+[wt 0.1]
+[se bac15]
+[wt 0.1]
+[se bac15]
+[wt 0.9]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-60]
+[wt 0.2]
+[charaMove C 0,-50 0.2]
+[wt 0.4]
+
+＠アタランテ
+うん、いい調子だ。
+[k]
+
+[effectDestroy bit_shot_01]
+
+[charaFace C 1]
+
+＠アタランテ
+私もただの狩りは久しぶりだからな……[r]だんだん楽しくなってきたぞ。
+[k]
+
+＠アタランテ
+普通の森ならば生態系のことも考えるが、[r]ここはシミュレーターだ。
+[k]
+
+＠アタランテ
+いくら獲っても獲りつくすということはあるまい。[r]もう少しペースを上げてみるか……。
+[k]
+
+[messageOff]
+[charaMove C 0,-70 0.1]
+[wt 0.1]
+
+[se ad73]
+[charaEffect C bit_talk_quickmove]
+[charaFadeout C 0.1]
+[wt 0.8]
+
+[fadeout black 1.2]
+[wait fade]
+
+[wipeOff]
+[cameraMove 0.1 0,0 1.02]
+[wt 0.1]
+
+[fadein black 1.2]
+[bgm BGM_EVENT_62 1.2 1.0]
+[wait fade]
+
+[se bac19]
+[wt 0.5]
+[se bac16]
+[effect bit_talk_13]
+[wt 1.0]
+
+？1：また１匹！　いい感じ！
+？！
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠テル
+…………。
+[k]
+
+？1：じゃ、ないの、かな……？
+？！
+
+[charaFace A 0]
+
+＠テル
+もちろん、わしとしてはこれ以上ないペースだがね。
+[k]
+
+＠テル
+森の気配でなんとなくわかる。[r]獲物がどんどん少なくなっていってるぜ。
+[k]
+
+
+＠テル
+どうも月女神の狩人さんは、わしなんかに[r]本気を出してくれているらしい。名誉なことだね。
+[k]
+
+[charaFace A 4]
+
+＠テル
+……あん？　何か手は、って？
+[k]
+
+[charaFace A 1]
+
+＠テル
+へっへ。決まってらぁ。
+[k]
+
+＠テル
+んなもんありゃしねぇさ。
+[k]
+
+＠テル
+狩りをするのはわしら自身だ。[r]んで、わしらは既にベストを尽くしている。
+[k]
+
+＠テル
+これ以上ペースは上がらんよ。
+[k]
+
+[charaFace A 0]
+
+
+＠テル
+狩りなんてのは結局、[r]わしにとっては日々の[#糧:かて]を得るための日常だ。
+[k]
+
+
+＠テル
+命を懸けた[#一世一代:いっせいちだい]の勝負なんてモンじゃない。[r]自分の中にあるもの以上の力が出るわけはないし、
+[k]
+
+＠テル
+もしそんなものを要求されるなら、[r]それは既に狩りではないってことだよ。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut G 0,0]
+[wt 0.1]
+
+[branch lblNotClear4 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 24]
+[charaFadein B 0.1 1]
+
+[branch lblConf4]
+[label lblNotClear4]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf4]
+
+[wt 0.7]
+
+[bgm BGM_EVENT_62 0.4 0.5]
+
+[charaFadein J 0.1 0,-200]
+[charaFadeTime J 0.4 0.7]
+[wt 0.4]
+
+＠ダ・ヴィンチ
+（ふむ。彼らしい、自らの力に対する[r]　『マイナス思考ではない諦観』というか……）
+[k]
+
+＠ダ・ヴィンチ
+（ありのままを認めたうえでそれを自らの拠り所とする、[r]　一種の悟りのようなものすら感じるコメントだ）
+[k]
+
+＠ダ・ヴィンチ
+（必要以上のものは求めないし、依存しない）
+[k]
+
+＠ダ・ヴィンチ
+（自分の力すらも、ただ天候の変化と同じように、[r]　狩りの一要素でしかないと受け入れる[line 3]）
+[k]
+
+[branch lblNotClear5 IsClear false]
+
+
+[charaFace B 0]
+
+[branch lblConf5]
+[label lblNotClear5]
+
+
+[charaFace B 0]
+
+[label lblConf5]
+
+
+＠ダ・ヴィンチ
+（やはり、キミはとっても狩人らしいよ。[r]　あるいはオリオンやアタランテ以上にね）
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaFadeout B 0.1]
+[charaFadeout J 0.3]
+[wt 0.2]
+[charaPut G 2000,2000]
+[wt 0.1]
+
+[bgm BGM_EVENT_62 0.4 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠テル
+しかしまあ、すべきことがないわけじゃない。
+[k]
+
+？1：そのココロは？
+？2：是非それをやってみましょう！
+？！
+
+[charaFace A 1]
+
+＠テル
+それじゃあ……。お、この岩、ちょうどいいな。[r]どっこいせっと。
+[k]
+
+[messageOff]
+[charaMove A -15,-10 0.4]
+[wt 0.2]
+[se ade255]
+[seVolume ade255 0 0.3]
+[wt 0.5]
+[seStop ade255 0.2]
+
+？1：？？？
+？！
+
+[charaFace A 0]
+
+＠テル
+おまえさんも座るといい。[r]今まで働きづめだったんだ、少し休憩を入れよう。
+[k]
+
+[charaFace A 1]
+
+＠テル
+……ああ、言いたいことはわかるさ。
+[k]
+
+[charaFace A 4]
+
+＠テル
+でもな、今はわしらの狩りに向こうの情報っていう[r]余計な要素が入ってきちまったわけだ。
+[k]
+
+
+＠テル
+意識しようとしまいと、[r]そんなときには余計な力みや焦りが体に出ちまう。
+[k]
+
+[charaFace A 0]
+
+＠テル
+で、それを森の動物たちは敏感に察知するぜ。
+[k]
+
+
+＠テル
+頑張っても逆にペースが落ちるだけってんなら、[r]わしらにできる一番いい策はひとまず休むことさ。
+[k]
+
+？1：急がば回れ、ですね
+？！
+
+
+＠テル
+そういうこと。ああ、おまえさん、[r]もし腹が減っていたら今のうちに……
+[k]
+
+[messageOff]
+[se ade309]
+[wt 1.5]
+
+[charaFace A 1]
+
+
+＠テル
+腹ごしらえを、てなわけだ。今わしが持ってるのは……[r]おう、リンゴしかないが、食べるかね？
+[k]
+
+？1：いただきます！（赤面）
+？2：テルのリンゴ！（興奮）
+？！
+
+＠テル
+ほいよ。投げるぜ。
+[k]
+
+
+[messageOff]
+[wt 0.7]
+[charaMoveScale A 1.01 0.2]
+[wt 0.1]
+[se bac23]
+[effectStop bit_talk_20]
+[wt 0.1]
+[charaMoveScale A 1.00 0.2]
+[wt 0.5]
+
+[cameraMove 0.2 0,-8 1.02]
+[wt 0.2]
+[se ad775]
+[seVolume ad775 0 0.7]
+[cameraMove 0.2 0,0 1.02]
+[wt 0.4]
+
+[se ade253]
+[shake 0.04 3 1 0.3]
+[wt 0.6]
+
+[charaFadeout A 0.2]
+[wt 0.1]
+
+[se adm60]
+[wt 0.8]
+[seStop adm60 1.2]
+[wt 1.2]
+
+？1：あっ、受け取り損ねて落としちゃった……
+？2：坂を転がっていく！　ごめん、追いかける！
+？！
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 -15,-10]
+
+＠テル
+なに、構わんさ。まだリンゴはあるからな。[r]わざわざ追いかけることはないだろう。
+[k]
+
+＠テル
+ほっときゃ森にリンゴの木が生えるかもだぜ？
+[k]
+
+[charaPut G 0,0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch lblNotClear6 IsClear false]
+
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+[branch lblConf6]
+[label lblNotClear6]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf6]
+
+
+＠ダ・ヴィンチ
+シミュレーター内だから、それはどうかなあ？
+[k]
+
+[messageOff]
+[fadeout black 1.6]
+[bgm BGM_EVENT_62 1.6 0.6]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut G 2000,2000]
+
+[wipeFilter cinema 0.5 0]
+[wt 0.4]
+
+[fadein black 1.6]
+[wait fade]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-60]
+[wt 0.2]
+[charaMove C 0,-50 0.2]
+[wt 0.4]
+
+＠アタランテ
+よし、次は[line 3][wt 0.4][bgmStop BGM_EVENT_62 1.1][charaFace C 0][r]……ん？
+[k]
+
+[messageOff]
+[charaPut H 550,-70]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaMove H -600,-190 1.7]
+
+[se adm60]
+[seVolume adm60 0 0.7]
+[wt 1.2]
+[seStop adm60 0.8]
+[wt 1.1]
+[charaPut H 2000,2000]
+[charaEffectStop H bit_talk_20re]
+[wt 0.8]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠アタランテ
+なまじ視力がいいために見えてしまった……[r]遠くを転がっているあれは、[wt 0.9][charaFace C 2][messageShake 0.04 3 3 0.4]あれは[line 3]
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_7 0.1]
+
+＠アタランテ
+[f large]リ[messageShake 0.04 3 3 0.5]ンゴではないか！
+[k]
+
+[charaFace C 5]
+
+＠アタランテ
+っ、くっ……待て、我慢しろ私。[r]落ち着け私の右腕！
+[k]
+
+[charaFace C 2]
+
+＠アタランテ
+あれは黄金のリンゴではない、ただのリンゴだ。[r]私が心動かされるようなものではない。ないのだ！
+[k]
+
+＠アタランテ
+…………………………[wt 0.4][charaFace C 4]だが。
+[k]
+
+[messageOff]
+[charaFadein J 0.1 0,-200]
+[charaFadeTime J 0.4 0.7]
+[wt 0.7]
+
+[charaShake C 0.05 3 2 0.4]
+
+＠アタランテ
+（うずっ）
+[k]
+
+[charaShakeStop C]
+[charaFace C 5]
+
+＠アタランテ
+（いかん、いかんぞ。森の中。久々の狩りのせいで高揚[r]　している狩猟本能、リンゴ、りんご林檎リンゴ……）
+[k]
+
+
+＠アタランテ
+（林檎……[wt 0.35]勝負……[wt 0.35]リンゴ……[wt 0.35]狩り……。[wt 0.5][charaFace C 4][r]　いかん、これはいいことではない！）
+[k]
+
+
+＠アタランテ
+…………………………。
+[k]
+
+[charaShake C 0.04 3 4 0.4]
+
+＠アタランテ
+（うずうずっ）
+[k]
+
+[messageOff]
+[charaFadeout J 0.4]
+[wt 0.7]
+
+[charaShake C 0.04 3 4 1.2]
+[wt 1.2]
+
+[charaFace C 2]
+
+＠アタランテ
+[f large]ニ[messageShake 0.04 4 3 0.5]ャー！！
+[k]
+
+[messageOff]
+[se ad348]
+[charaFadeout C 0.4]
+[charaEffect I bit_talk_42]
+[charaMove C -400,-50 0.6]
+[wt 0.6]
+
+[charaEffectStop I bit_talk_42]
+[wt 0.2]
+
+[charaPut I 2000,2000]
+[wt 0.8]
+
+[fadeout black 1.6]
+[bgmStop BGM_EVENT_7 1.6]
+[wait fade]
+
+[wipeOff]
+
+[fadein black 1.6]
+[wait fade]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 -15,-10]
+
+[bgm BGM_EVENT_62 0.1]
+
+＠テル
+はて？　何やら向こうさんの狩猟プレッシャーが[r]森から薄れていってるような気がするが……。
+[k]
+
+[charaFace A 1]
+
+＠テル
+ま、関係ないか。
+[k]
+
+[messageOff]
+[se ad7]
+[charaMove A 1 0.3]
+[wt 0.7]
+
+
+＠テル
+んじゃ、そろそろわしらはわしらの狩りを[r]再開するとしようかねぇ？　マイペースに、な。
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_62 0.5]
+[wait fade]
+[soundStopAll]
+[end]

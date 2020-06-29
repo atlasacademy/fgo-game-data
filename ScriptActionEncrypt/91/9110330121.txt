@@ -1,0 +1,486 @@
+
+
+＄91-10-33-01-2-1
+
+
+[soundStopAll]
+
+[charaSet A 1033002 1 シグルド]
+[charaSet D 4019001 1 マルタ]
+[charaSet E 5038000 1 ジーク]
+[charaSet F 98013000 1 ファヴニール]
+
+[charaSet G 8001000 1 ダミーエフェクト１]
+[charaSet H 8001000 1 ダミーエフェクト２]
+[charaSet I 8001000 1 ダミーエフェクト３]
+[charaSet J 8001000 1 ダミーエフェクト４]
+[charaSet K 8001000 1 ダミーエフェクト５]
+[charaSet L 8001000 1 ダミーエフェクト６]
+
+[charaPut G 2000,2000]
+[charaEffect G bit_talk_41]
+[charaPut H 2000,2000]
+[charaEffect H bit_talk_42 0,0 H]
+
+[charaRoll I 30]
+[charaRoll J -90]
+[charaRoll K -20]
+[charaRoll L -30]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+[flag IsClear true]
+[branch lblConf]
+[label lblNotClear]
+[flag IsClear false]
+[label lblConf]
+
+
+[branch lblNotClear1 IsClear false]
+
+[charaSet B 8001410 1 マシュ]
+[charaSet C 8001400 1 アーマード・マシュ（ゴーグルあり）]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+[charaSet B 8001000 1 マシュ]
+
+[label lblConf1]
+
+
+[scene 20112]
+[cameraMove 0.1 0,0 1.02]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad17]
+[charaPut G 0,0]
+[shake 0.04 3 3 1.6]
+[wt 1.8]
+[charaPut G 2000,2000]
+[wt 0.3]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.4]
+[seStop bac117 0.4]
+[charaMove A 40,-3 0.1]
+[wt 0.2]
+
+[se bac1]
+[charaPut H 0,0]
+[charaFadeout A 0.4]
+[charaMove A -480,2 0.4]
+[wt 0.25]
+
+[se bac78]
+[fowardEffect bit_talk_explosion_triple02 450,-300]
+[wt 0.1]
+[charaPut H 2000,2000]
+[charaEffectStop H bit_talk_42 0,0 H]
+[fowardEffect bit_talk_explosion_triple02 300,-200]
+[wt 0.1]
+[fowardEffect bit_talk_explosion_triple02 -100,-250]
+[wt 2.4]
+
+[effectDestroy bit_talk_explosion_triple02]
+
+[se ad671]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 280,7]
+[charaMove A 20,0 0.3]
+[charaShake A 0.04 5 3 0.6]
+[wt 0.3]
+
+[charaMove A 1 0.3]
+[wt 1.0]
+
+＠シグルド
+ここだっ！
+[k]
+
+[messageOff]
+[se ad39]
+[se ad476]
+[seVolume ad476 0 0.6]
+[charaEffect A bit_talk_36]
+[wt 1.2]
+[seStop ad476 1.0]
+[se ad626]
+[seVolume ad626 0 0]
+[charaEffectStop A bit_talk_36]
+[wt 1.4]
+
+[seVolume ad626 0.8 0.3]
+[effect bit_talk_lightning_01t 0,-80]
+＠シグルド
+魔剣完了、絶技駆動[line 3][r]汝が見るものこそ、破滅の[#黎明:れいめい]！
+[k]
+
+＠シグルド
+[f large]『[messageShake 0.04 4 4 0.6][#壊劫の天輪:ベルヴェルク・グラム]』！！
+[k]
+
+[messageOff]
+[seStop ad626 0.4]
+[effectStop bit_talk_lightning_01t]
+[wt 0.4]
+
+[charaMoveScale A 0.98 0.1]
+[wt 0.1]
+[se bac1]
+[charaPut G 0,0]
+[charaMoveScale A 1.2 0.2]
+[charaMove A 0,10 0.2]
+[charaFadeout A 0.2]
+[wt 0.2]
+[charaPut G 2000,2000]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.4]
+
+[se bac85]
+[se bac308]
+[charaEffect I bit_bolg_02b]
+[charaShake F 0.04 2 2 1.0]
+[wt 0.15]
+
+[se bac85]
+[se bac308]
+[charaEffect L bit_bolg_01b 0,0 V]
+[wt 0.25]
+
+[se bac86]
+[se bac308]
+[charaEffect J bit_bolg_02b 250,250 V]
+[wt 0.2]
+
+[se bac86]
+[se bac308]
+[charaEffect K bit_bolg_01b 0,0 H]
+[charaMove F 20,0 0.3]
+[wt 0.4]
+
+[se bac308]
+[se bac474]
+[seVolume bac474 0 0.7]
+[fowardEffect bit_talk_gram_slash_04 0,0 H]
+[charaShake F 0.04 4 4 0.8]
+[wt 1.0]
+[seStop bac308 0.6]
+[seStop bac474 0.6]
+[wt 0.4]
+
+[charaEffectDestroy I]
+[charaEffectDestroy J]
+[charaEffectDestroy K]
+[charaEffectDestroy L]
+
+[bgmStop BGM_EVENT_80 1.6]
+
+[se ad18]
+[charaShake F 0.04 4 1 1.2]
+[wt 1.7]
+
+[se ad42]
+[charaSpecialEffect F erasure 1 1.4]
+[wt 2.4]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[branch lblNotClear2 IsClear false]
+
+
+[charaTalk off]
+
+[charaFace C 2]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+[charaMoveScale A 1.0 0.1]
+[wt 0.1]
+
+[charaFace C 7]
+[wt 0.6]
+
+[charaFace B 7]
+[charaFadein B 0.2 1]
+[wt 0.2]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+
+[charaFadeout C 0.1]
+[wt 0.6]
+[charaTalk on]
+
+
+[branch lblConf2]
+[label lblNotClear2]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+[charaMoveScale A 1.0 0.1]
+[wt 0.1]
+
+[charaFace B 7]
+[wt 0.7]
+
+[label lblConf2]
+
+[charaFace B 1]
+
+＠マシュ
+敵、完全沈黙……消滅です！[bgm BGM_EVENT_77 0.1]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠シグルド
+[line 3]よし。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠マルタ
+[f large]し[messageShake 0.04 4 3 0.5]ゃーーあ！
+[k]
+
+[messageOff]
+[wt 0.6]
+[charaFace D 0]
+[charaMoveReturn D 0,-4 0.4]
+[wt 0.2]
+
+＠マルタ
+……こほん。[wt 0.3][charaFace D 1][r]皆さま、お疲れ様でした。
+[k]
+
+＠マルタ
+これでこの特異点も、[r]速やかに修正されるでしょう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ジーク
+[%1]、じゃないマスター。
+[k]
+
+＠ジーク
+アレをやろう。
+[k]
+
+？1：やろうやろう
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シグルド
+む？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠ジーク
+うえーい。
+[k]
+
+？1：うえーい
+？！
+
+[messageOff]
+[wt 0.1]
+[charaMoveScale E 1.1 0.3]
+[charaMoveReturn E 0,10 0.6]
+[wt 0.2]
+[se ade124]
+[wt 0.1]
+[charaMoveScale E 1.0 0.3]
+[wt 1.1]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠シグルド
+今のは、何だ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ジーク
+ハイタッチという。
+[k]
+
+＠ジーク
+俺もよくは知らないが、[r]一仕事終えた後にやる儀式らしい。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠シグルド
+ふむ。[r]では、当方も。
+[k]
+
+？1：うえーい
+？！
+
+[charaFace A 9]
+
+＠シグルド
+う、うえーい。
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaMoveScale A 1.1 0.3]
+[charaMoveReturn A 0,10 0.6]
+[wt 0.2]
+[se ade124]
+[wt 0.1]
+[charaMoveScale A 1.0 0.3]
+[wt 1.1]
+[charaFace A 10]
+[wt 0.9]
+
+＠シグルド
+……。[r]……ふむ、これはいいな。[charaFace A 1]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠マシュ
+それでは、帰還しましょう。[r]皆さん、お疲れ様でした。
+[k]
+
+？1：おつかれー
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠シグルド
+ああ。
+[k]
+
+[messageOff]
+[wt 0.6]
+[fadeout black 1.6]
+[bgmStop BGM_EVENT_77 1.6]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[scene 10000]
+
+[fadein black 1.6]
+[wait fade]
+[wt 0.2]
+
+＠
+[line 3]カルデアに来て以来、妙に笑う機会が多い。[bgm BGM_EVENT_11 0.1]
+[k]
+
+＠
+良いことなのか、悪いことなのか。[r]己ではどうも判別がつかぬ。
+[k]
+
+＠
+英雄とは、笑うものではない。[r]笑いを守るための者である。
+[k]
+
+＠
+そう言ったのはレギンだったか、[r]あるいは己自身だったか。
+[k]
+
+＠
+いずれにせよ、生前では[r]想像もつかなかった環境に身を委ねている。
+[k]
+
+＠
+俺は[line 3]当方は、[r]もしかすると。
+[k]
+
+＠
+少し、弱くなっているのかもしれない。
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_11 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
