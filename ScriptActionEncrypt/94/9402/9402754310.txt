@@ -1,0 +1,447 @@
+
+
+＄94-02-75-43-1-0
+
+
+
+[soundStopAll]
+
+[charaSet A 7031000 1 "Jeanne Alter"]
+[charaSet B 98100400 1 Mash]
+[charaSet C 2003300 1 "Robin Hood"]
+[charaSet D 6034000 1 Ushiwakamaru]
+
+[imageSet H cut086_sdbb01 1]
+[charaScale H 0.9]
+
+[imageSet E cut079_time03 1]
+[imageSet F cut079_moji01 1]
+[imageSet G cut079_moji03 1]
+
+
+
+[branchQuestNotClear _bqc01b 94027543 1]
+
+
+[label _bqc01a]
+
+[flag isQueSkip true]
+[branch _bqc01c]
+
+[label _bqc01b]
+
+[flag isQueSkip false]
+[branch _bqc01c]
+
+[label _bqc01c]
+
+[branch _noQuestion isQueSkip false]
+
+[messageOff]
+
+[fadein black 0.1]
+[wait fade]
+
+
+[charaFadein H 0.1 -600,-300]
+[charaMove H -400,-300 0.7]
+[wait charaMove]
+[wt 0.4]
+[charaMoveReturn H -400,-250 0.2]
+[se ad673]
+[wait charaMove]
+[charaMoveReturn H -400,-250 0.2]
+[se ad673]
+[wait charaMove]
+[wt 0.5]
+
+
+？1：Skip
+[flag isSkip true]
+
+？2：Don't skip
+[flag isSkip false]
+
+
+[branch _end2 isSkip false]
+
+？！
+
+
+[charaMove H -420,-300 0.3]
+[wait charaMove]
+[charaMove H 800,-300 1.0]
+[se ad348]
+[wait charaMove]
+[wt 0.5]
+
+[branch _end isSkip true]
+
+
+[label _end2]
+[label _noQuestion]
+
+[charaMove H -520,-300 0.7]
+[charaFadeout H 0.7]
+[wait charaMove]
+[wt 0.5]
+
+
+
+
+[fadeout black 0.1]
+[wait fade]
+
+
+[scene 10000]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaScale E 1.0]
+[charaScale F 1.0]
+[charaScale G 1.0]
+[charaFadein E 0.1 0,-200]
+[charaFadein F 0.1 50,-200]
+[charaFadein G 0.1 100,-200]
+[wait charaCut E]
+[wait charaCut F]
+[wait charaCut G]
+[wt 2.2]
+
+[charaFadeout E 2.0]
+[charaFadeout F 2.0]
+[charaFadeout G 2.0]
+
+[scene 63500 2.0]
+[wt 2.0]
+
+[charaSet E 6031000 1 Osakabehime]
+[charaSet F 2032001 1 Jeanne]
+[charaSet G 5007001 1 Shakespeare]
+[wt 0.5]
+
+[bgm BGM_EVENT_93 0.1 1.0]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+＠Ushiwakamaru
+All right, Lord Robin and I will go around and say hello to everyone else.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Robin Hood
+And if we see any other good books while we're at it, we'll go ahead and pick those up too.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠Jeanne Alter
+Good idea. Those'll give me some ideas[sr]for how to make the next one better.
+[k]
+
+＠Jeanne Alter
+I just need to finish reading them before nightfall.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Robin Hood
+You got it.
+[k]
+
+[messageOff]
+[se ad60]
+[seStop ad60 1.0]
+[charaFadeout C 0.4]
+[wt 1.6]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.4 1]
+[wt 0.4]
+＠Osakabehime
+Konnichiwassup?[sr]Wanna trade books?
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠Jeanne Alter
+Right, right.[sr]Here you go.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠Osakabehime
+Arigathanks! And here's mine.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠Jeanne Alter
+Great, thanks.
+[k]
+
+[messageOff]
+[wipeout rightToLeft 1.0 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[wipein leftToRight 1.0 1.0]
+[wait wipe]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 1]
+[wt 0.4]
+＠Jeanne
+Hi there! This is St. Orleans's newest book!
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠Jeanne Alter
+...Grr...
+[k]
+
+[charaFace A 5]
+＠Jeanne Alter
+Ah well, I guess I shouldn't be too upset.[sr]She's the bar I'm aiming for. Okay, here's ours.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠Jeanne
+Thanks![sr]I can't wait to read it about a hundred times!
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+＠Jeanne Alter
+Uh, could you...not?[sr]You're freaking me out.
+[k]
+
+[messageOff]
+[wipeout rightToLeft 1.0 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[wipein leftToRight 1.0 1.0]
+[wait wipe]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.4 1]
+[wt 0.4]
+＠Shakespeare
+Good day, my fellow compatriots!
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFace G 0]
+[charaFadein A 0.1 2]
+[charaFadein G 0.1 0]
+＠Jeanne Alter
+Ugh, piss off.
+[k]
+
+
+[charaTalk G]
+[charaFace G 4]
+＠Shakespeare
+Huh? Why would you treat me so boorishly?
+[k]
+
+＠Shakespeare
+And here I thought myself something[sr]of a star in an event such as this.
+[k]
+
+
+[charaTalk A]
+[charaFace A 15]
+＠Jeanne Alter
+That's the problem. Your star's too damn bright.
+[k]
+
+＠Jeanne Alter
+You and the little blue-haired guy could destroy ServantFes if you wanted to.
+[k]
+
+[charaFace A 16]
+＠Jeanne Alter
+In fact, I'd probably rather go surfing with sharks, carrying buckets of chum, than have you read my book!
+[k]
+
+
+[charaTalk G]
+[charaFace G 1]
+＠Shakespeare
+Why, I have a place at ServantFes as much as anyone!
+[k]
+
+
+[charaTalk A]
+[charaFace A 14]
+＠Jeanne Alter
+Grr... All right, fine.
+[k]
+
+[charaFace A 13]
+＠Jeanne Alter
+Here's our latest book.[sr]But don't you DARE tell me what you think of it.
+[k]
+
+
+[charaTalk G]
+[charaFace G 0]
+＠Shakespeare
+Very well then.
+[k]
+
+[charaFace G 1]
+＠Shakespeare
+And here is our newest collaborative novel.
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Mash
+...I can't help but wonder how much money this would earn if you published it professionally...
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_93 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 63501]
+
+[wt 1.0]
+
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Robin Hood
+Hey, I'm back.[sr]How's it selling?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Jeanne Alter
+Okay, I guess.[sr]Not bad, not great.
+[k]
+
+[charaFace A 13]
+＠Jeanne Alter
+We're definitely not gonna win this time.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠Ushiwakamaru
+Well, there is nothing we can do about that now.
+[k]
+
+[charaFace D 4]
+＠Ushiwakamaru
+We shall just have to consider this another learning experience so that our efforts are not in vain!
+[k]
+
+？1：Let's start brainstorming for the next one right now!
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠Jeanne Alter
+Good idea.
+[k]
+
+＠Jeanne Alter
+Let me see the books you bought, Robin. Master[sr]and I have a lot to discuss for our next attempt.
+[k]
+
+
+
+[label _end]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[soundStopAll]
+[end]

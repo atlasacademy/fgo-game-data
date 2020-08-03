@@ -1,0 +1,713 @@
+
+
+＄94-02-75-10-1-1
+
+[soundStopAll]
+
+[charaSet A 98100400 1 Mash]
+[charaSet B 7031000 1 "Jeanne Alter"]
+[charaSet C 3009001 1 Leonidas]
+[charaSet D 25003000 1 XX]
+[charaSet E 6002001 1 "Cursed Arm"]
+[charaSet F 6034000 1 Ushiwakamaru]
+
+[scene 63500]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.4 1]
+[wt 0.4]
+＠XX
+Uh-oh, I'm running out of steam fast. Knew I should've had more than instant Cosmic Noodles for breakfast...
+[k]
+
+[charaFace D 0]
+
+＠XX
+...Dammit, guess I don't have any other option.
+[k]
+
+＠XX
+I'll just have to detonate my armor and reduce the convention center to rubble in the blast!
+[k]
+
+[messageOff]
+[se ad61]
+[effect bit_talk_lightning_01t]
+[wt 0.7]
+[se ad62]
+[seVolume ad62 0 0.7]
+[charaShake D 0.02 2 2 2.0]
+[effect bit_talk_lightning_02t]
+[wt 1.5]
+[se ad189]
+[seStop ad189 0.15]
+[wt 0.5]
+[charaFadeout D 0.1]
+[seStop ad61 1.0]
+[seStop ad62 1.0]
+[effectStop bit_talk_lightning_01t]
+[effectStop bit_talk_lightning_02t]
+[wt 0.1]
+[se ad189]
+[seStop ad189 0.15]
+[wt 0.65]
+[se ad189]
+[seStop ad189 0.15]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠Jeanne Alter
+...Shit. That beeping sound giving[sr]anyone else a real bad feeling?
+[k]
+
+？1：Maybe it's a self-destruct timer?
+？2：Sounds like a countdown to me.
+？！
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Leonidas
+That's terrible! We need to get her[sr]away from the con center immediately!
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-20]
+[charaMove E 0,0 0.1]
+[wt 0.5]
+＠Cursed Arm
+What's all this commotion about?[sr]Is there a problem?
+[k]
+
+？1：Hassan!
+？！
+
+[charaFace E 4]
+
+＠Cursed Arm
+She's going to self-destruct?
+[k]
+
+＠Cursed Arm
+...[sr]...Hmm.
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaDepth E 10]
+
+[charaFace D 0]
+[charaFadein D 0.1 -200,0]
+[wt 0.4]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.4 150,0]
+[charaMove E 50,0 0.4]
+[wt 0.4]
+＠Cursed Arm
+Very well then, I'll carry her away.[wt 0.4][charaShake D 0.04 1 3 0.4][charaShake E 0.02 2 1 0.4][se ad270][seStop ad270 0.7][sr]Hup.
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠Mash
+Hassan!?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 100,0]
+[charaFace D 0]
+[charaFadein D 0.1 -200,0]
+＠Cursed Arm
+Don't worry about me.[sr]The rest of you, please enjoy ServantFes.
+[k]
+
+[charaFace E 2]
+
+＠Cursed Arm
+Farewell!
+[k]
+
+[messageOff]
+[se ad73]
+[seVolume ad73 0 0.7]
+[effect bit_talk_43h 0,0 V]
+[charaMove E 0 100,50 0.5]
+[charaMove D -200,50 0.5]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[effectStop bit_talk_43h]
+[wt 0.8]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠Mash
+No...!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Jeanne Alter
+...Not bad for an Assassin.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠Ushiwakamaru
+Lord Hassan...
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_EVENT_3 0.4]
+[charaFadeout F 0.1]
+[wt 0.1]
+[se ad609]
+[shake 0.03 5 5 0.4]
+[wt 1.0]
+[seStop ad609 1.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_41 0.7]
+
+？1：...Hassan...
+？！
+
+
+[wt 2.0]
+
+[bgmStop BGM_EVENT_41 0.4]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-20]
+[charaMove E 0,0 0.1]
+[wt 0.5]
+
+＠Cursed Arm
+All done.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠Mash
+Huh?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠Jeanne Alter
+...What the hell? How are you still alive!?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠Cursed Arm
+Well, I have Protection Against the Wind,[sr]so a little explosion is nothing to me.
+[k]
+
+？1：Talk about an SSR skill...
+？！
+
+＠Cursed Arm
+Very true. You never know[sr]what skill may come in handy.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Leonidas
+You have my heartfelt thanks, Lord Hassan.[sr]Fortunately, collateral damage appears to be minimal.
+[k]
+
+＠Leonidas
+Now that we only have a minute to go until the doors open, I had better return to my post.
+[k]
+
+
+＠Leonidas
+May you all have a wonderful ServantFes!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠Jeanne Alter
+Yep. Planning to, thanks. You guys all ready?
+[k]
+
+＠Jeanne Alter
+It's time for Gespenst Ketzer[sr]to make its official debut!
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[imageSet C cut079_time02 1]
+[imageSet D cut079_time03 1]
+[imageSet E cut079_moji01 1]
+[imageSet F cut079_moji03 1]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 0.1]
+[wait fade]
+
+[charaScale C 1.0]
+[charaFadein C 0.1 0,-200]
+[wait charaCut C]
+[wt 1.8]
+
+[charaFadeout C 0.1]
+[charaScale D 1.0]
+[charaFadein D 0.1 0,-200]
+[wait charaCut D]
+[wt 1.8]
+
+
+[charaScale E 1.0]
+[charaScale F 1.0]
+[charaFadein E 0.1 50,-200]
+[charaFadein F 0.1 100,-200]
+[wait charaCut E]
+[wait charaCut F]
+[wt 2.2]
+
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+
+[charaSet A 2032000 1 Jeanne]
+[charaSet B 5027001 1 Marie]
+[charaSet C 5002002 1 "Gilles de Rais"]
+[charaSet D 6031000 1 Osakabehime]
+[charaSet E 3025000 1 Kiyohime]
+[charaSet F 5005001 1 Andersen]
+[charaSet G 5007001 1 Shakespeare]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth A 2]
+
+[scene 63500]
+[wt 1.0]
+
+[fadein black 1.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_28 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠Jeanne
+Thanks so much!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+＠Marie
+We're so glad you came.[sr]What's that? You want me to do my thing?
+[k]
+
+[charaFace B 1]
+
+＠Marie
+Yes, of course.[sr]Vive la France♪
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+[wt 0.4]
+＠Gilles de Rais
+[charaMoveReturn C 0,-10 0.4]
+Ahhh, that's the stuff.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 2]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+
+＠Jeanne
+Gilles, try to stay away from our table. Oh, and if you get so excited that you start dripping seafood everywhere...
+[k]
+
+＠Jeanne
+...I'm going to crush those eyes of[sr]yours like cheap Ping-Pong balls.
+[k]
+
+[charaTalk C]
+[charaFace C 2]
+
+＠Gilles de Rais
+[messageShake 0.04 3 3 0.4]
+Yikes! I know this may seem rich coming from me,[sr]but don't you think that's a bit extreme!?
+[k]
+
+＠Gilles de Rais
+And yes, the absurdity of me saying that is not lost!
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.4 1]
+[wt 0.4]
+＠Osakabehime
+I...I can't gaman anymore... I've already hit my social interaction limit... It's all up to you now, Kiyo-yo...
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+＠Kiyohime
+Oh, all right.[sr]Two copies? Here you go. Thank you♪
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 0.5]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.4 1]
+[wt 0.4]
+＠Andersen
+What do you want? A book? Fine, take one.
+[k]
+
+[charaFace F 2]
+
+＠Andersen
+Now what? You want to pay for it? Ugh, just leave whatever you feel like on the table!
+[k]
+
+＠Andersen
+I'm far too tired to worry about[sr]taking your goddamn money!
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.4]
+＠Shakespeare
+As am I!
+[k]
+
+＠Shakespeare
+I cannot help but notice that we have a habit of running ourselves absolutely ragged every year when the convention rolls around.
+[k]
+
+[charaFace G 1]
+
+＠Shakespeare
+Oh, hello. By all means, help yourself to a book.
+[k]
+
+＠Shakespeare
+If you insist on payment, just put whatever[sr]you feel is fair into this box, please.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠Andersen
+Next time, we're gonna take it a damn sight easier for once. You hear me, Mr. Masterpiece? Hey! I'm talking to you!
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_28 2.0]
+[fadeout black 2.0]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[scene 28300]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+[wt 1.0]
+
+[charaSet A 98100400 1 Mash]
+[charaSet B 7031000 1 "Jeanne Alter"]
+[charaSet C 98002000 1 Fou]
+
+[imageSet D cut079_time04 1]
+[imageSet E cut079_moji01 1]
+[imageSet F cut079_moji04 1]
+
+[scene 28301 2.0]
+[wt 3.0]
+
+[scene 10000 1.0]
+[wt 1.8]
+
+[charaScale D 1.0]
+[charaScale E 1.0]
+[charaScale F 1.0]
+[charaFadein D 0.1 25,-200]
+[charaFadein E 0.1 75,-200]
+[charaFadein F 0.1 150,-200]
+[wait charaCut D]
+[wait charaCut E]
+[wait charaCut F]
+[wt 2.2]
+
+[charaFadeout D 2.0]
+[charaFadeout E 2.0]
+[charaFadeout F 2.0]
+
+
+[scene 63501 2.0]
+[wt 2.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠P.A. System
+Attention, attendees. It is now 5:00 p.m.[sr]The convention hall is now closed.
+[k]
+
+＠P.A. System
+On behalf of ServantFes,[sr]we thank you all for coming.
+[k]
+
+＠P.A. System
+See you again at the next Servant Summer Festival!
+[k]
+
+[se ade76]
+
+
+＠Mash
+We did it, everyone![sr]Congratulations on a job well done!
+[k]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠Mash
+Now we just have to clean up our booth!
+[k]
+
+＠Mash
+We may not have made much money, but it was fun meeting so many other clubs and Servants!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠Jeanne Alter
+People seemed to like our book, too.[wt 0.4][charaFace B 4][sr]Although, we've still got one copy left over.
+[k]
+
+？1：I'll take it.
+
+[charaFace B 8]
+
+＠Jeanne Alter
+Really? You still want a copy after[sr]all the time you spent looking at it?
+[k]
+
+？2：I'll hang onto it.
+
+[charaFace B 6]
+
+＠Jeanne Alter
+All yours, then.
+[k]
+
+？！
+
+[charaFace B 0]
+
+＠Jeanne Alter
+...All right.
+[k]
+
+＠Jeanne Alter
+Now that the Foreigner's defeated, and ServantFes is over, this Singularity oughta go away pretty soon.
+[k]
+
+＠Jeanne Alter
+It might not've gone exactly how we planned, but at least we did everything we were supposed to. Guess this means we go back to Chaldea tomorrow.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Mash
+I'm very sorry, Senpai, but I'm afraid[sr]we'll need to blindfold you again.
+[k]
+
+＠Mash
+Well, shall we head back to the hotel now?
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 3.0]
+[fadeout black 3.0]
+[wait fade]
+[charaFadeout A 0.1]
+[scene 63200]
+[wt 0.1]
+
+[wt 2.0]
+
+[fadein black 2.0]
+[wait fade]
+
+[scene 63401 2.0]
+[wt 3.0]
+
+[bgm BGM_EVENT_25 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Fou
+Fou, fou...
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？1：Man, I'm exhausted.
+？2：I'm definitely gonna sleep well tonight.
+？！
+
+
+[wipeout openEye 1.0 1.0]
+[wait wipe]
+
+？1：Good night...
+？！
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_25 2.0]
+[wait fade]
+[soundStopAll]
+[end]

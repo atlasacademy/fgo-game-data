@@ -1,0 +1,543 @@
+
+
+＄94-02-75-23-1-0
+
+
+
+
+
+
+
+
+
+
+
+[soundStopAll]
+
+[charaSet A 7031000 1 "Jeanne Alter"]
+[charaSet B 98100400 1 Mash]
+[charaSet C 98105600 1 "Santa Island Mask"]
+[charaSet D 2032001 1 Jeanne]
+[charaSet E 1098156400 1 Medb]
+[charaSet F 2003300 1 "Robin Hood"]
+
+[imageSet H cut086_sdbb01 1]
+[charaScale H 0.9]
+
+[scene 10000]
+
+
+
+[branchQuestNotClear _bqc01b 94027523 1]
+
+[label _bqc01a]
+
+[flag isQueSkip true]
+[branch _bqc01c]
+
+[label _bqc01b]
+
+[flag isQueSkip false]
+[branch _bqc01c]
+
+[label _bqc01c]
+
+[branch _noQuestion isQueSkip false]
+
+[messageOff]
+
+[fadein black 0.1]
+[wait fade]
+
+
+[charaFadein H 0.1 -600,-300]
+[charaMove H -400,-300 0.7]
+[wait charaMove]
+[wt 0.4]
+[charaMoveReturn H -400,-250 0.2]
+[se ad673]
+[wait charaMove]
+[charaMoveReturn H -400,-250 0.2]
+[se ad673]
+[wait charaMove]
+[wt 0.5]
+
+
+？1：Skip
+[flag isSkip true]
+
+？2：Don't skip
+[flag isSkip false]
+
+[branch _end2 isSkip false]
+
+？！
+
+
+[charaMove H -420,-300 0.3]
+[wait charaMove]
+[charaMove H 800,-300 1.0]
+[se ad348]
+[wait charaMove]
+[wt 0.5]
+
+[branch _end isSkip true]
+
+
+[label _end2]
+[label _noQuestion]
+
+[charaMove H -520,-300 0.7]
+[charaFadeout H 0.7]
+[wait charaMove]
+[wt 0.5]
+
+
+
+[fadeout black 0.1]
+[wait fade]
+
+
+
+[scene 63501]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.2]
+
+[bgm BGM_EVENT_2 0.1 1.0]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 1]
+[wt 0.4]
+＠Jeanne Alter
+Damn, day's almost over... We've still got a little time left, but at this point, I think we can call it.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠Mash
+Still, we did pretty well for ourselves.
+[k]
+
+＠Mash
+We especially sold a lot of copies to those pirates who came in after Blackbeard bought one.
+[k]
+
+＠Mash
+And then there's all the other[sr]people who bought a copy.
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad60]
+[seStop ad60 1.0]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+＠Santa Island Kamen
+Phew, made it just in time. One, please.
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaFace C 0]
+[charaFace B 1]
+[charaFadein C 0.1 0]
+[charaFadein B 0.1 2]
+
+[charaMove C -150,0 0.4]
+[charaMove B 150,0 0.4]
+[wt 0.2]
+[se ad27]
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 13]
+
+＠Mash
+Here you go. Thank you.
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠Mash
+...And then there's[line 2]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+＠Jeanne Alter
+Wait, hold up. Who the hell was that weirdo?
+[k]
+
+？1：Don't worry, we see guys like that all the time.
+
+[charaFace A 2]
+＠Jeanne Alter
+Uh, no!? If that were common, it wouldn't be weird!
+[k]
+
+？2：He often shows up at Christmas.
+
+[charaFace A 2]
+＠Jeanne Alter
+How's a guy like that a staple of your Christmas!?
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+＠Jeanne
+Hi, Alter.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFace D 0]
+[charaFadein A 0.1 2]
+[charaFadein D 0.1 0]
+＠Jeanne Alter
+Great. What do you want?[sr]Here to laugh at how pitifully our club did?
+[k]
+
+[charaTalk D]
+[charaFace D 5]
+＠Jeanne
+No, I'm just here to say hello. You do know that not everyone's out to get you, right?
+[k]
+
+
+[charaTalk A]
+[charaFace A 13]
+＠Jeanne Alter
+...So? You take the sales crown again this year?
+[k]
+
+[charaTalk D]
+[charaFace D 4]
+＠Jeanne
+No, I'm afraid not.
+[k]
+
+[charaTalk A]
+[charaFace A 8]
+＠Jeanne Alter
+You didn't!? But your dolphin book was so good it made me want to barf! How could it possibly lose!?
+[k]
+
+＠Jeanne Alter
+Not even Medb's photo album should[line 2]
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠Mash
+W-well, as it turns out...
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.5]
+[wipeout rollRight 1.5 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[wipein rollLeft 1.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[bgm BGM_EVENT_7 0.1 1.0]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠Jeanne Alter
+...Hmph. Sneaky bitch.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠Medb
+What do you mean, sneaky!?
+[k]
+
+[charaFace E 8]
+＠Medb
+I HAD to start issuing raffle tickets,[sr]or the whole con was going to riot!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠Robin Hood
+Great, just what we need right now.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠Medb
+Listen up! There's three things you guys lack!
+[k]
+
+＠Medb
+Trendiness, social media presence,[sr]motivation, and most importantly, beauty!
+[k]
+
+[charaFace E 7]
+＠Medb
+Specifically, me!
+[k]
+
+？1：Isn't that four things?
+？！
+
+
+[charaFace E 2]
+＠Medb
+[messageShake 0.01 3 3 0.6]
+...Like I was saying,[sr]there's four things you guys lack!
+[k]
+
+[charaFace E 7]
+＠Medb
+Trendiness, social media presence,[sr]motivation, and me in all my beautiful glory!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠Mash
+Why does it feel like the list is growing?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠Medb
+The point is, I'm taking first place here as well.
+[k]
+
+[charaFace E 12]
+＠Medb
+Honestly, I'm so beautiful I scare myself sometimes...[sr]Maybe I'll make another statue.
+[k]
+
+？1：No statue lasts forever.
+？！
+
+[charaFace E 10]
+＠Medb
+...True. I'm not sure even I could take[sr]having a third statue of myself destroyed.
+[k]
+
+＠Medb
+So I guess I can settle for just taking first place[sr]in sales. That Holy Grail is as good as mine!
+[k]
+
+[charaFace E 8]
+＠Medb
+Aaanyway, good luck trying to[sr]enjoy the rest of your summer.
+[k]
+
+＠Medb
+It might not compare to my beautifully elegant vacation, but then, what could?
+[k]
+
+[charaFace E 1]
+＠Medb
+Hooohohoho!
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.0]
+[se ad95]
+[seStop ad95 1.0]
+[charaFadeout E 0.4]
+[wt 1.6]
+
+[bgm BGM_EVENT_2 0.1 1.0]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+＠Jeanne Alter
+Damn, she actually walked away laughing[sr]like some kind of stuck-up evil rich girl.
+[k]
+
+＠Jeanne Alter
+For a lady not making her own manga, she sure seems like she's read too damn many of them.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFace A 0]
+[charaFadein D 0.1 0]
+[charaFadein A 0.1 2]
+＠Jeanne
+Personally, she reminds me of that salesman who's always laughing.
+[k]
+
+[charaFace D 11]
+＠Jeanne
+...Anyway, I sure had a lot of fun again this year.
+[k]
+
+[charaTalk A]
+[charaFace A 13]
+＠Jeanne Alter
+I don't know. Think it might've been[sr]a whole lot of work for nothing.
+[k]
+
+[charaFace A 15]
+＠Jeanne Alter
+...Hmph. Next time, I'm gonna[sr]hand you your ass for sure.
+[k]
+
+[charaTalk D]
+[charaFace D 1]
+
+＠Jeanne
+Wonderful! I look forward to it![sr]Okay, I'm going to go back to my own table.
+[k]
+
+[charaFace D 6]
+＠Jeanne
+Great work, everyone!
+[k]
+
+
+
+[label _end]
+
+
+
+
+[messageOff]
+[bgmStop BGM_EVENT_2 2.5]
+[fadeout black 2.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaSet A 7031000 1 "Jeanne Alter"]
+[charaSet B 98100400 1 Mash]
+[charaSet C 98105600 1 "Santa Island Mask"]
+[charaSet D 2032001 1 Jeanne]
+[charaSet E 1098156400 1 Medb]
+[charaSet F 2003300 1 "Robin Hood"]
+
+
+[scene 63501]
+[wt 1.0]
+
+[fadein black 2.5]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1 1.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠F：Robin Hood
+A participation prize, huh. Ah well, at least the book came out pretty well, right?
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠Jeanne Alter
+...Guess this means we've got to start over again.
+[k]
+
+＠Jeanne Alter
+Oh well, no point looking backwards.[sr]Just have to focus on what comes next.
+[k]
+
+[charaFace A 0]
+＠Jeanne Alter
+...Besides, there's still a bunch[sr]of things we don't know.
+[k]
+
+＠Jeanne Alter
+So if we have to keep redrawing this book until[sr]we figure those out, that's what we're gonna do.
+[k]
+
+[charaFace A 6]
+＠Jeanne Alter
+...Now, what do you say we make[sr]the most of this vacation, Master?
+[k]
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 3.0]
+[bgmStop BGM_EVENT_11 3.0]
+[wait fade]
+[soundStopAll]
+[end]
