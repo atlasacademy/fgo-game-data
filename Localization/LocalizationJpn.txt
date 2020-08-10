@@ -1155,12 +1155,12 @@
 	"SERVANT_SELL_RARE_TEXT" : "個　レアプリズム：",
 	"SERVANT_SELL_RARE_TEXT2" : "個",
 	"SERVANT_SELL_NUM_TEXT" : "{0:#,0}",
-    "SERVANT_SELL_REQUEST_RARITY_MESSAGE" : "[FF0000]★4以上の対象が含まれています。",
-    "SERVANT_EQUIP_SELL_REQUEST_RARITY_MESSAGE" : "[FF0000]★4以上の対象が含まれています。",
-    "SERVANT_COMMAND_CODE_SELL_REQUEST_RARITY_MSG" : "[FF0000]★3以上の対象が含まれています。",
-    "SERVANT_ALL_SELL_REQUEST_RARITY_MESSAGE" : "[FF0000]★4以上の対象が含まれています。",
-    "SERVANT_MATERIAL_SELL_REQUEST_RARITY_MESSAGE" : "[FF0000]★4以上の対象が含まれています。"
-    "SERVANT_SELL_EQUIP_CMD_CODE_WARNING_MSG" : "[FFA500]コマンドコード刻印済みの素材が含まれています。",
+    "SERVANT_SELL_REQUEST_RARITY_MESSAGE" : "[FFFF00]★4以上の対象が含まれています。",
+    "SERVANT_EQUIP_SELL_REQUEST_RARITY_MESSAGE" : "[FFFF00]★4以上の対象が含まれています。",
+    "SERVANT_COMMAND_CODE_SELL_REQUEST_RARITY_MSG" : "[FFFF00]★3以上の対象が含まれています。",
+    "SERVANT_ALL_SELL_REQUEST_RARITY_MESSAGE" : "[FFFF00]★4以上の対象が含まれています。",
+    "SERVANT_MATERIAL_SELL_REQUEST_RARITY_MESSAGE" : "[FFFF00]★4以上の対象が含まれています。"
+    "SERVANT_SELL_EQUIP_CMD_CODE_WARNING_MSG" : "[FFFF00]コマンドコードスロット開放済みの対象が含まれています。",
     "SERVANT_SELL_EQUIP_CMD_CODE_LAST_SVT_MSG1" : "[FF0000]選択したサーヴァントをくべると[-]",
     "SERVANT_SELL_EQUIP_CMD_CODE_LAST_SVT_MSG2" : "[FF0000]そのサーヴァントのコマンドコードを[-]",
     "SERVANT_SELL_EQUIP_CMD_CODE_LAST_SVT_MSG3" : "[FF0000]分離する事ができなくなるため、[-]",
@@ -1445,8 +1445,8 @@
     "PARTY_ORGANIZATION_CONFIRM_START_FIXED_SUPPORT_POSITION_RESTRICTION_CLOSE" : "閉じる",
 
     "PARTY_ORGANIZATION_CONFIRM_FIXED_MY_SERVANT_POSITION_RESTRICTION_SPLIT" : "、",
-	"PARTY_ORGANIZATION_CONFIRM_FIXED_MY_SERVANT_POSITION_RESTRICTION_START" : "「",
-	"PARTY_ORGANIZATION_CONFIRM_FIXED_MY_SERVANT_POSITION_RESTRICTION_END" : "」",
+    "PARTY_ORGANIZATION_CONFIRM_FIXED_MY_SERVANT_POSITION_RESTRICTION_START" : "「",
+    "PARTY_ORGANIZATION_CONFIRM_FIXED_MY_SERVANT_POSITION_RESTRICTION_END" : "」",
 
     "PARTY_ORGANIZATION_CONFIRM_START_FIXED_MY_SERVANT_POSITION_RESTRICTION_TITLE" : "[FCF050]編成条件を満たしていません",
     "PARTY_ORGANIZATION_CONFIRM_START_FIXED_MY_SERVANT_POSITION_RESTRICTION_MESSAGE" : "クエストを開始するためには、\n{0}を\nスターティングメンバーに\n設定している必要があります。",
@@ -1605,9 +1605,9 @@
     "HAVE_SVT_NUM_TITLE" : "サーヴァント",
     "HAVE_SVTEQ_NUM_TITLE" : "概念礼装",
 
-    "CONFIRM_GROUPSUMMON_INFOMSG" : "[00FFFF]{1}か\n{0}どちらかを\n{2}回のみ実行できます。[-]\n\n聖晶石を{3}個使用して11回召喚します。\n召喚を実行しますか？\n[FF0000]この召喚は有償分を消費します。[-]",
+    "CONFIRM_GROUPSUMMON_INFOMSG" : "[00FFFF]{1}か\n{0}どちらかを\n{2}回のみ実行できます。[-]\n\n聖晶石を{3}個使用して11回召喚します。\n召喚を実行しますか？\n[FFFF00]この召喚は有償分を消費します。[-]",
     "CONFIRM_GROUPSUMMON_STONEMSG" : "所持聖晶石：[20C0FF]{0:N0}[-]個\n（有償分：[20C0FF]{1:N0}[-]個 無償分：[20C0FF]{2:N0}[-]個）\n\n召喚後聖晶石：[FFA500]{3:N0}[-]個\n（有償分：[FFA500]{4:N0}[-]個 無償分：[FFA500]{5:N0}[-]個）",
-    "CONFIRM_GROUPSUMMON_INFOMSG_2" : "[00FFFF]{0}は\n{1}種類の中から{2}つだけ実行できます。[-]\n\n聖晶石を{3}個使用して召喚します。\n召喚を実行しますか？\n[FF0000]この召喚は有償分を消費します。[-]",
+    "CONFIRM_GROUPSUMMON_INFOMSG_2" : "[00FFFF]{0}は\n{1}種類の中から{2}つだけ実行できます。[-]\n\n聖晶石を{3}個使用して召喚します。\n召喚を実行しますか？\n[FFFF00]この召喚は有償分を消費します。[-]",
 
     "SUMMON_AUTOSALE_TITLE" : "自動変還の対象設定",
     "SUMMON_AUTOSALE_MSG" : "[00FFFF]各カテゴリで選択したレアリティのカードは\n召喚実行後に自動的にマナプリズムまたはQPに変還されます。",
@@ -1907,49 +1907,66 @@
     "COMBINE_COMMAND_CODE_EQUIP_HEADER_MSG" : "「刻印する」ボタンをタッチしてください",
     "COMBINE_COMMAND_CODE_UNLOCK_HEADER_MSG" : "「開放する」ボタンをタッチしてください",
     "COMBINE_COMMAND_CODE_EQUIPED_HEADER_MSG" : "「分離する」ボタンをタッチしてください",
-    "COMBINE_COMMAND_CODE_OVERWRITE_HEADER_MSG" : "刻印しなおす場合は「上書きする」「分離する」ボタンをタッチしてください",
+    "COMBINE_COMMAND_CODE_REPLACE_HEADER_MSG" : "刻印しなおす場合は「付け替える」「分離する」ボタンをタッチしてください",
     
-    "COMBINE_COMMAND_CODE_SELECT_COMMAND_CODE_MSG" : "刻印するコマンドコードを選択して下さい。",
-    
-    "COMBINE_COMMAND_CODE_OVERWRITE_WARNING_MSG" : "[FF0000]★3以上、上書き不可",
+    "COMBINE_COMMAND_CODE_SELECT_COMMAND_CODE_MSG" : "刻印するコマンドコードを選択してください",
+	"COMBINE_COMMAND_CODE_TOUCH_EMPTY_COMMAND_CODE_MSG" : "タッチしてコマンドコードを\n選択してください",
     
     // CommandCodeDialog
-    "COMMAND_CODE_UNLOCK_TITLE" : "コマンドカードの開放",
+    "COMMAND_CODE_UNLOCK_TITLE" : "コマンドコードスロットの開放",
     "COMMAND_CODE_ITEM_ITEM_INFO" : "[FFFF00]開放に必要なアイテム",
     "COMMAND_CODE_UNLOCK_SPEND_QP" : "開放に必要なQP：",
-    "COMMAND_CODE_UNLOCK_CONFIRM_MSG" : "コマンドカードの開放を行いますか？",
+    "COMMAND_CODE_UNLOCK_CONFIRM_MSG" : "コマンドコードスロットの開放を行いますか？",
 
     "COMMAND_CODE_EQUIP_TITLE" : "コマンドコードの刻印",
     "COMMAND_CODE_EQUIP_MSG" : "以下の内容でコマンドコードの刻印を実行してもよろしいですか？",
     
-    "COMMAND_CODE_EQUIP_CONFIRM_MSG" : "[FFFF00]刻印した場合は専用のアイテムを使用しないと\n分離することはできません。",
+    "COMMAND_CODE_LOCK_TITLE" : "コマンドコードスロットの削除",
+    "COMMAND_CODE_LOCK_MSG" : "コマンドカードをコマンドコードスロット開放前の状態へ戻します。\nコマンドコードスロットの削除を実行しますか？",
+    "COMMAND_CODE_LOCK_EQUIP_WARNING_MSG" : "[FFFF00]刻印されているコマンドコードは分離されます。\n",
+    "COMMAND_CODE_LOCK_DEFAULT_WARNING_MSG" : "[FFFF00]コマンドコードスロットの開放時に使用したコード・オープナーは返還されます。\n使用したQPは返還されません。",
+    "COMMAND_CODE_LOCK_SPEND_ITEM" : "削除に必要なアイテム数：",
+    "COMMAND_CODE_LOCK_HAVE_ITEM" : "所持しているアイテム数：",
     
-    "COMMAND_CODE_REMOVE_TITLE" : "コマンドコードの分離",
-    "COMMAND_CODE_REMOVE_MSG" : "以下のアイテムを消費して\nコマンドコードの分離を実行しますか？",
+	"COMMAND_CODE_LOCK_RETURN_MSG" : "『{0}』が\n返還されました。",
+	"COMMAND_CODE_LOCK_RETURN_DETAIL_MSG" : "所持アイテムに追加されました。\n所持　{0:#,0}個　→　{1:#,0}個",
     
-    "COMMAND_CODE_REMOVE_SPEND_ITEM" : "分離に必要なアイテム数：",
-    "COMMAND_CODE_REMOVE_HAVE_ITEM" : "所持しているアイテム数：",
-    
-    "COMMAND_CODE_WARNING_TITLE" : "コマンドコードの刻印（上書き制限）",
-    "COMMAND_CODE_REMOVE_WARNING_MSG" : "[FFFF00]分離したコマンドコードは、\n再び他のコマンドカードに刻印する事ができるようになります。",
-    
-    "COMMAND_CODE_OVERWRITE_TITLE" : "コマンドコードの刻印（上書き）",
-    "COMMAND_CODE_OVERWRITE_MSG" : "以下の内容でコマンドコードの刻印（上書き）を実行してもよろしいですか？",
-    
-    "COMMAND_CODE_OVERWRITE_COFIRM_MSG" : "[FF0000]先に刻印していたコマンドコードは消去されます。",
-    
-    "COMMAND_CODE_LOCK_WARNING_TITLE" : "コマンドコードの刻印（上書き制限）",
-    "COMMAND_CODE_LOCK_WARNING_MSG" : "[FFFF00]ロック、セレクト状態のコマンドコードには上書きする事ができません。",
-    
-    "COMMAND_CODE_NOT_CLEAR_ITEM_MSG" : "コマンドコードの分離に\n必要なアイテムが足りません。",
+    "COMMAND_CODE_NOT_CLEAR_ITEM_MSG" : "コマンドコードスロットの削除に\n必要なアイテムが足りません。",
     
     "COMBINE_LAST_EQUIP_CMD_SVT" : "[FF0000]選択したサーヴァントを素材にすると\nそのサーヴァントのコマンドコードを\n分離する事ができなくなるため、\nサーヴァント強化を実行できません。",
+	"COMBINE_LAST_EQUIP_CMD_SVT_INFO" : "強化の素材に選択した霊基の中に、\nコマンドコードスロットが開放されたサーヴァントが存在します。",
+	"COMBINE_LAST_EQUIP_CMD_SVT_MESSAGE" : "[FFFF00]表示されているサーヴァントを素材にしてサーヴァント強化を行った場合\n同一の霊基がすべてなくなるため、コマンドコードスロットの削除ができなくなります。\n\nまた、コマンドコードが刻印されている場合はすべて分離、返還されます。",
     
-    "COMMAND_CODE_WARNING_MSG" : "[FFFF00]★3以上のコマンドコードには上書きする事ができません。",
-    
+	"SELL_LAST_EQUIP_CMD_SVT_INFO" : "選択した霊基の中に、\nコマンドコードスロットが開放されたサーヴァントが存在します。",
+	"SELL_LAST_EQUIP_CMD_SVT_MESSAGE" : "[FFFF00]表示されているサーヴァントをくべると\n同一の霊基がすべてなくなるため、コマンドコードスロットの削除ができなくなります。\n\nまた、コマンドコードが刻印されている場合はすべて分離、返還されます。",
+
+	"COMMAND_CODE_REMOVE_RESULT_TITLE" : "分離されたコマンドコード",
+	"COMMAND_CODE_REMOVE_RESULT_MESSAGE" : "コマンドコードを分離したことで、返還されました。",
+
     "SELECTED_COMMAND_CODE" : "選択中", 
     "NOT_SELECT_EQUIPED" : "刻印中",
     "NOT_SELECT_MAX_EQUIP" : "刻印可能上限到達",
+
+	"COMMAND_CODE_REMOVE_TITLE" : "コマンドコードの分離",
+	"COMMAND_CODE_REMOVE_MSG" : "以下のコマンドコードを分離します。\nコマンドコードの分離を実行しますか？",
+	"COMMAND_CODE_REMOVE_DETAIL_MSG" : "分離したコマンドコードは、\n再び他のコマンドカードに刻印する事ができるようになります。",
+    
+	// OldCommandCode
+	"COMBINE_COMMAND_CODE_OVERWRITE_HEADER_MSG" : "刻印しなおす場合は「上書きする」「分離する」ボタンをタッチしてください",
+	"COMBINE_COMMAND_CODE_OVERWRITE_WARNING_MSG" : "[FF0000]★3以上、上書き不可",
+	"COMMAND_CODE_EQUIP_CONFIRM_MSG" : "[FFFF00]刻印した場合は専用のアイテムを使用しないと\n分離することはできません。",
+
+    "COMMAND_CODE_OVERWRITE_TITLE" : "コマンドコードの刻印（上書き）",
+    "COMMAND_CODE_OVERWRITE_MSG" : "以下の内容でコマンドコードの刻印（上書き）を実行してもよろしいですか？",
+    "COMMAND_CODE_OVERWRITE_COFIRM_MSG" : "[FF0000]先に刻印していたコマンドコードは消去されます。",
+
+	"COMMAND_CODE_LOCK_WARNING_TITLE" : "コマンドコードの刻印（上書き制限）",
+    "COMMAND_CODE_LOCK_WARNING_MSG" : "[FFFF00]ロック、セレクト状態のコマンドコードには上書きする事ができません。",
+	"COMMAND_CODE_WARNING_MSG" : "[FFFF00]★3以上のコマンドコードには上書きする事ができません。",
+
+	"COMMAND_CODE_REMOVE_ITEM_MSG" : "以下のアイテムを消費して\nコマンドコードの分離を実行しますか？",
+	"COMMAND_CODE_REMOVE_SPEND_ITEM" : "分離に必要なアイテム数：",
+    "COMMAND_CODE_REMOVE_HAVE_ITEM" : "所持しているアイテム数：",
     
 	//CommandCardExceed
 	"COMMAND_CARD_EXCEED_SELECT_BASE_HEADER_MSG" : "[00E1FD]コマンドカードの強化を行います[-]",
@@ -3305,9 +3322,11 @@
 	// サポートサーヴァントのバトル中宝具速度設定変更不能説明文言
 	"BATTLE_SUPPORT_SERVANT_NP_SPEED" : "サポートサーヴァントの設定は変更できません。",
 
-	// 起動時ムービーのスキップ確認ダイアログ
-	"OPENING_MOVIE_SKIP_CONFIRM_DIALOG_TITLE" : "確認",
-	"OPENING_MOVIE_SKIP_CONFIRM_DIALOG_MESSAGE" : "オープニング再生中に\nプレイが中断されました。\nオープニング再生をスキップしますか？\n[FFDF00]（オープニングはマテリアルで確認できます）",
-	"OPENING_MOVIE_SKIP_CONFIRM_DIALOG_CLOSE" : "閉じる",
-	"OPENING_MOVIE_SKIP_CONFIRM_DIALOG_SKIP" : "スキップ",
+    // 起動時ムービーのスキップ確認ダイアログ
+    "OPENING_MOVIE_SKIP_CONFIRM_DIALOG_TITLE" : "確認",
+    "OPENING_MOVIE_SKIP_CONFIRM_DIALOG_MESSAGE" : "オープニング再生中に\nプレイが中断されました。\nオープニング再生をスキップしますか？\n[FFDF00]（オープニングはマテリアルで確認できます）",
+    "OPENING_MOVIE_SKIP_CONFIRM_DIALOG_CLOSE" : "閉じる",
+    "OPENING_MOVIE_SKIP_CONFIRM_DIALOG_SKIP" : "スキップ",
+
+	"TUTORIAL_MESSAGE_FOLLOW_OFFER" : "サポートしてくれたプレイヤーをフォローしましょう!\n\nフォローすると第1部メインクエストのバトルで\nサポートとして選択できるようになります"
 }

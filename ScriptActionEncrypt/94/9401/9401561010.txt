@@ -262,6 +262,12 @@
 [charaSet G 1007001 1 ガウェイン]
 [charaSet H 7015001 1 エイリーク]
 
+[charaTalk depthOff]
+[charaDepth A 4]
+[charaDepth C 3]
+[charaDepth G 2]
+[charaDepth H 1]
+
 
 [se ad3]
 
@@ -287,6 +293,7 @@
 
 [wt 0.7]
 
+[charaTalk depthOn]
 [charaTalk on]
 
 [charaTalk B]
@@ -365,9 +372,8 @@
 [k]
 
 [charaFace F 4]
-
 ＠シェイクスピア
-おっと、ソテーの皿にパセリを乗せるのは[r]遠慮いただきたい！　吾輩、アレ苦手でして！
+おっと、ソテーの皿にパセリを載せるのは[r]遠慮いただきたい！　吾輩、アレ苦手でして！
 [k]
 
 [charaFadeout F 0.1]
@@ -454,6 +460,12 @@
 [wipein rightToLeft 0.4 1]
 [wait wipe]
 
+[charaTalk depthOff]
+[charaDepth A 4]
+[charaDepth C 3]
+[charaDepth G 2]
+[charaDepth H 1]
+
 [charaTalk A]
 [charaFace A 2]
 [charaScale A 1.4]
@@ -476,6 +488,7 @@
 [charaFadeout H 0.1]
 
 [wt 0.1]
+
 
 [charaTalk off]
 
@@ -522,6 +535,7 @@
 [charaFadeout H 0.1]
 
 [wt 0.1]
+[charaTalk depthOn]
 
 [charaSet H 5009000 1 エフェクト用ダミー]
 
@@ -1132,14 +1146,16 @@
 マシュ！　考えるな、感じるんだ！[r]レイシフト開始！
 [k]
 
+[messageOff]
 [charaFadeout C 0.4]
 [wt 0.5]
 [messageOff]
+[scene 10001 1.0]
 [bgmStop BGM_EVENT_3 0.4]
 [effect bit_talk_07]
 [se ad12]
 [wt 4]
-[fadeout white 1]
+[fadeout white 2.0]
 [wait fade]
 [soundStopAll]
 [end]

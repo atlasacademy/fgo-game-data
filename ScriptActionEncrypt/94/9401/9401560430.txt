@@ -17,10 +17,19 @@
 [charaSet E 98006000 1 魔物]
 [charaSet F 6005001 1 ジャック]
 [charaSet G 5004001 1 ナーサリー・ライム]
+[charaSet H 98006000 1 エフェクト用]
+[charaSet I 98006000 1 エフェクト用2]
 
 [fadein black 1.5]
 [wait fade]
 
+[charaTalk depthOff]
+[charaDepth H 9]
+[charaDepth A 1]
+[charaDepth B 2]
+[charaDepth C 3]
+[charaDepth D 4]
+[charaDepth E 5]
 [charaTalk off]
 
 [charaFace A 0]
@@ -31,20 +40,26 @@
 [wt 0.5]
 
 [se bac14]
-[effect bit_bolg_01y]
+[charaPut H 1]
+[charaEffect H bit_bolg_01y]
 [wt 0.2]
 [charaSpecialEffect A enemyErasure 1 0.5]
 
 [se ad24]
 [wt 0.3]
+[charaPut H 1200,1200]
+[charaEffectDestroy H]
 
+[charaPut I 1]
 [se bac14]
-[effect bit_bolg_02y]
+[charaEffect I bit_bolg_02y]
 [wt 0.2]
 [charaSpecialEffect B enemyErasure 1 0.5]
-
 [se ad24]
-[wt 0.6]
+[wt 0.3]
+[charaPut I 1200,1200]
+[charaEffectDestroy I]
+[wt 0.3]
 
 [charaFace C 0]
 [charaFace D 0]
@@ -56,7 +71,8 @@
 [se ad23]
 [wt 0.5]
 
-[fowardEffect bit_talk_ichimon01re]
+[charaPut H 1]
+[charaEffect H bit_talk_ichimon01re]
 [se ad373]
 [charaSpecialEffect C enemyErasure 1 0.5]
 [charaSpecialEffect D enemyErasure 1 0.5]
@@ -64,6 +80,8 @@
 
 [se ad24]
 [wt 1.0]
+[charaPut H 1200,1200]
+[charaEffectDestroy H]
 
 [wipeout rectangleStripLeftToRight 0.5 1]
 [wait wipe]
@@ -95,6 +113,11 @@
 [wt 0.1]
 [wipein leftToRight 0.4 1]
 [wait wipe]
+[charaDepth A 4]
+[charaDepth B 2]
+[charaDepth C 5]
+[charaDepth D 1]
+[charaDepth E 3]
 
 [charaTalk off]
 
@@ -132,6 +155,7 @@
 [charaSet D 5025001 1 ？？？]
 [charaSet E 1018002 1 女神コロンビア]
 
+[charaTalk depthOn]
 [charaTalk on]
 
 [charaTalk A]
@@ -322,7 +346,7 @@
 [charaFace C 2]
 
 ＠エジソン
-[#Ｗ・Ｆ・Ｄ:ワールド・フェイス・ドミネーション]！！[r]アニバ[line 3]サリ[line 4]エディショ[line 4]ン！
+『[#Ｗ・Ｆ・Ｄ:ワールド・フェイス・ドミネーション]』！！[r]アニバ[line 3]サリ[line 4]エディショ[line 4]ン！
 [k]
 
 [messageOff]
