@@ -1,0 +1,286 @@
+
+＄94-05-24-01-1-1
+
+[soundStopAll]
+
+[charaSet A 98001000 1 マシュ]
+[charaSet H 98115000 1 エフェクト用]
+
+
+[fadein black 1.0]
+[wait fade]
+
+
+＠
+“Dear　[%1]さま、[r][f small]  [f -]マシュ・キリエライトさま”
+[k]
+
+＠
+“お待たせして申し訳ありません。[r][f small]  [f -]約束通り、ステージを用意いたしました”
+[k]
+
+＠
+“この声が届いているのなら、どうぞ[line 3][r][f small]  [f -]今宵、月の光の舞踏会にお越しください”
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[scene 10310]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+[bgm BGM_EVENT_2 0.1]
+
+＠マシュ
+……という事ですが。
+[k]
+
+[charaFace A 12]
+
+＠マシュ
+メールが示しているのはこの先の倉庫、[r]なのですよね？
+[k]
+
+＠マシュ
+この先は管制室の真裏に位置するエリアで、[r]長いこと空き倉庫になっています。
+[k]
+
+[charaFace A 7]
+
+＠マシュ
+ルーム名をムーンライト。
+[k]
+
+＠マシュ
+カルデアで唯一、天窓のある部屋なので[r]誰かがそう名付けたらしいのですが……
+[k]
+
+[charaFace A 12]
+
+＠マシュ
+……先輩はご存じですか？[r]カルデアの怪談話を。
+[k]
+
+？1：知ってる
+？2：幽霊が出る、[&だろう:でしょ]？
+
+？！
+
+
+[charaFace A 7]
+
+＠マシュ
+はい。レイシフトした先の特異点ではなく、[r]このカルデア内で唯一、霊障があるとされる部屋。
+[k]
+
+＠マシュ
+それがムーンライト……今ではスタッフから[r]『ロストルーム』と噂されるエリアです。
+[k]
+
+[charaFace A 12]
+
+＠マシュ
+そんな場所で舞踏会を開く、とは[r]どういう意味なのでしょう？
+[k]
+
+？1：まあ、行ってみれば分かる[&さ:よ]
+？2：なぜか悪意は感じないんだよね
+
+？！
+
+
+[charaFace A 13]
+
+＠マシュ
+マスターがそう仰るなら、そのように。
+[k]
+
+＠マシュ
+……実は、わたしも不安はないのです。
+[k]
+
+＠マシュ
+差出人は不明、メールの内容も覚えはないのに、[r]とても大切な約束な気がして[line 3]
+[k]
+
+[messageOff]
+[se ade422]
+[wt 0.2]
+[se ad95]
+
+
+[wipeout leftToRight 1.0 1]
+[wait wipe]
+
+[wt 1.0]
+
+
+[wipein rightToLeft 1.0 1]
+[seStop ad95 1.0]
+[seStop ade422 1.0]
+[wait wipe]
+[wt 0.5]
+
+＠マシュ
+あ、ここがムーンライトです。[r]扉を開けますか、先輩？
+[k]
+
+？1：もちろん
+
+？！
+
+
+[messageOff]
+[skip false]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[input selectBranch]
+[messageOff]
+[charaFadeout A 0.1]
+[soundStopAllFade 0.4]
+[scene 10000]
+[wt 0.4]
+[soundStopAll]
+[skip false]
+[maskin black 0.1]
+[fadein black 1.0]
+[wait mask]
+[wait fade]
+[label selectBranch]
+
+[se ad832]
+[effect bit_talk_door_open]
+[scene 10001]
+[wt 1.0]
+
+
+[wt 4.5]
+[se ade422]
+[wt 2.5]
+[seStop ade422 0.5]
+[wt 1.0]
+
+？1：すごーーい！
+？2：なんかいつもと空気が違うような？
+
+？！
+
+[fadeout white 1.0 withFrameFadeout]
+[wait fade]
+
+[messageOff]
+[bgm BGM_EVENT_128 0.1]
+
+[advSet 1000000]
+[advSoundSet CampaignVoice_800100]
+
+[advPrepare RootObject]
+[advActorHide タブレット]
+[wt 0.3]
+[fadein white 1.0]
+[wait fade]
+
+
+[advPlayAnimator マシュ 001]
+[advPlayAnimator カメラ 001]
+[wait advPlayAnimator マシュ]
+
+
+？1：そういうマシュも、ドレスが似合っている
+
+？！
+
+[advPlayAnimator マシュ 002]
+[advPlayAnimator カメラ 002]
+[wt 8.5]
+[se ade518]
+[wt 1.5]
+[advActorShow タブレット]
+
+[wait advPlayAnimator マシュ]
+
+[advActorHide タブレット]
+
+[messageOn]
+＠
+“どうかお二人で、ステージに。[r][f small]  [f -]あなたたちの旅の記憶をうたってください”
+[k]
+
+＠
+“言葉も気持ちも届けられない彼方にいますが[r][f small]  [f -]その映像だけは、きっと伝わることでしょう[line 3]”
+[k]
+[messageOff]
+
+？1：意味は分からないけど、悪いことではなさそうだ
+
+？！
+
+[advPlayAnimator マシュ 003]
+[advPlayAnimator カメラ 003]
+[wait advPlayAnimator マシュ]
+
+？1：とりあえず、やってみようか？
+
+？！
+
+[advPlayAnimator マシュ 004]
+[advPlayAnimator カメラ 004]
+[wait advPlayAnimator マシュ]
+
+[wt 1.0]
+？1：[line 3]もちろん
+？2：お手をどうぞ、マイレディ
+
+？！
+
+[advPlayAnimator マシュ 005]
+[advPlayAnimator マスター 005]
+[advPlayAnimator カメラ 005]
+[wait advPlayAnimator マシュ]
+
+[fadeout white 1.0]
+[wait fade]
+[advRelease]
+
+[scene 10001]
+
+[fadein white 1.0 withFrameFadein]
+[wait fade]
+
+[skip true]
+
+[wt 1.0]
+
+＠
+“失われたものに、失われるものを。[r][f small]  [f -]彼方にいるものに、輝かしいものを”
+[k]
+
+＠
+“奇跡はこの一夜だけ。[r][f small]  [f -]どうか、楽しい時間でありますように”
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_128 2.0]
+
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
