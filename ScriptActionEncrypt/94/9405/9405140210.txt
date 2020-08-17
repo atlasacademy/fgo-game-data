@@ -1,0 +1,1105 @@
+
+
+＄94-05-14-02-1-0
+
+
+[soundStopAll]
+
+
+[charaSet B 8001600 1 マシュ]
+[charaSet C 2001300 1 エミヤ]
+[charaSet D 7032001 1 項羽]
+[charaSet E 1098123200 1 ゴルドルフ]
+[charaSet F 1033300 1 シグルド]
+[charaSet H 98002000 1 フォウ]
+[charaSet I 6035000 1 虞美人（通常）]
+[imageSet J back10000 1]
+[charaScale J 1.01]
+[charaSet K 5009040 1 エフェクト用ダミー]
+
+[charaPut K 1200,1200]
+[charaEffect K bit_sepia01]
+
+
+[branchQuestNotClear lblNotClear 3000320]
+
+[scene 66400]
+
+[charaSet A 3044000 1 虞美人]
+[charaSet G 1098124500 1 ダ・ヴィンチ]
+[branch lblConf]
+
+[label lblNotClear]
+[scene 10204]
+
+[charaSet A 1098196710 1 虞美人]
+[charaSet G 5009001 1 ダ・ヴィンチ]
+[label lblConf]
+
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠マシュ
+マシュ・キリエライト。[r]準備完了しました。
+[k]
+
+＠マシュ
+特異点攻略用の装備はもちろんのこと、[r]レジャー活動用の装備も万端です。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+[wt 0.4]
+＠エミヤ
+それは良かった。[r]ミッションとは言え、今回は夏の山だ。
+[k]
+
+＠エミヤ
+キャンプ用の道具はあればあるほどいい。[r]オレも、いくつかグッズを持ち込むつもりだよ。
+[k]
+
+？1：ひぇっ！？
+？2：エミヤさん！？
+
+？！
+
+[bgm BGM_EVENT_7 0.1]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠エミヤ
+レイシフト先が日本だからね。[r]現地での調停役に選ばれた。
+[k]
+
+[charaFace C 8]
+＠エミヤ
+とはいえ、いつもの姿では目立つだろう？[r]夏服を用意してもらったんだ。
+[k]
+
+[charaFace C 1]
+＠エミヤ
+[#赤原礼装:れ  い  そ  う]を着ている私は[r]お堅いサーヴァントだが、
+[k]
+
+＠エミヤ
+この服装なら君たちの気持ちに合わせられる。[r]まあ、大学の先輩、とでも思ってくれ。
+[k]
+
+[charaFace C 6]
+＠エミヤ
+せっかくのサマー・キャンプなんだ。[r]ラフに、楽しんでいこう、[%1]。
+[k]
+
+？1：さっすが、話せるー！
+
+[charaFace C 8]
+＠エミヤ
+ああ。オレは海より山派だ。[r]山の遊びならいくらでもレクチャーしよう。
+[k]
+
+？2：失礼ですが、大学ではどんなサークルに？
+
+[charaFace C 8]
+＠エミヤ
+フィッシング同好会とか、どうかな。[r]もちろん釣った魚は調理する本格派がいい。
+[k]
+
+？！
+
+＠エミヤ
+昼は山を楽しみながら調査し、[r]夜は山を学びながら調査する。
+[k]
+
+＠エミヤ
+今回はそんな方針でいこう。[r]もちろん、気を抜きすぎないよう注意して。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.4]
+＠虞美人
+[line 3]準備できたわよ。[r]さ、とっとと行きましょう。
+[k]
+
+？1：（楽しむ気満々だなこの人……）
+？！
+
+[charaFace A 0]
+＠虞美人
+何か言いたそうだけど、[r]クレームは受け付けないわ。
+[k]
+
+
+？1：それと、その槍は？
+？！
+
+[charaFace A 1]
+＠虞美人
+いいところに目をつけたわね、後輩。
+[k]
+
+＠虞美人
+この槍は項羽様からお預かりしたもの。[r]私と同じくらい崇め奉りなさい。
+[k]
+
+＠虞美人
+具体的に何があったかは[line 3]
+[k]
+
+[messageOff]
+[se ade84]
+[wipeout loveHeartOut 2.0 1.0]
+[bgm BGM_EVENT_7 2.0 0.4]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[charaPut K 1]
+[wt 1.0]
+
+[wipein loveHeartOut 2.0 1.0]
+[wait wipe]
+
+
+[charaTalk depthOff]
+[charaDepth D 4]
+[charaDepth I 6]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFace I 1]
+[charaFadein D 0.1 2]
+[charaFadein I 0.1 0]
+＠項羽
+[line 3]ところで。
+[k]
+
+＠I：虞美人
+はい、なんでしょう？
+[k]
+
+＠項羽
+演算の結果、[r][#此度:こたび]は汝にこれを渡しておくべきという解が出た。
+[k]
+
+[charaFace I 4]
+＠I：虞美人
+これは……項羽様の槍？[r]それほどまでの強敵がいるということですか？
+[k]
+
+＠項羽
+詳細は省くが、[r]窮地に立つ事は一度や二度ではあるまい。
+[k]
+
+＠項羽
+さらに言えば、今は夏である。
+[k]
+
+＠I：虞美人
+……ええと、そうですね？
+[k]
+
+＠項羽
+未だ不完全な定義ながら、夏の避暑地には[r]『夏の魔物』なる脅威が現れるとの情報を得ている。
+[k]
+
+＠項羽
+それを演算パラメータに暫定的に加えた結果、[r]念には念を入れた方がよい、と判断した。
+[k]
+
+[charaFadeTime J 0.1 0.6]
+＠I：虞美人
+（夏の魔物……日本の土着の幻想種か何かかしら。[r]　あとで私も調べておかなくちゃ）
+[k]
+
+＠I：虞美人
+（とにかく、せっかくの項羽様のお心遣い、[r]　無駄になんかできないわ）
+[k]
+
+[charaFadeout J 0.1]
+[charaFace I 1]
+＠I：虞美人
+では……ありがたくお預かりしておきます。[r]項羽様の代わりと思って大事に扱わせていただきます！
+[k]
+
+＠I：虞美人
+まあ向こうに行ってもお傍を離れる気はないので[r]関係はないかもですが。
+[k]
+
+[charaFace I 3]
+＠I：虞美人
+……項羽様の隣で、項羽様の槍を振るって……[r]二人の、二人だけの、共同作業……ふふ、うふふふ！
+[k]
+
+＠項羽
+…………。
+[k]
+
+[messageOff]
+[se ade84]
+[wipeout loveHeartOut 2.0 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[charaFadeout I 0.1]
+
+[charaPut K 1200,1200]
+[charaEffectStop K bit_sepia01]
+
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_7 2.0 1.0]
+[wipein loveHeartOut 2.0 1.0]
+[wait wipe]
+
+＠虞美人
+そう、具体的に何があったかは……ふふふ。[r][#軽々:けいけい]に話せはしないわ。
+[k]
+
+＠虞美人
+これは項羽様が私を気に掛けてくださっているという[r]何よりの証だもの。
+[k]
+
+[charaFace A 3]
+＠虞美人
+ああ、持っているだけで項羽様の真心に[r]包まれているよう……（うっとり）
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠エミヤ
+見事な槍だ。[r]……ふむ、竿に使えるだろうか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFace C 1]
+[charaFadein A 0.1 0]
+[charaFadein C 0.1 2]
+＠虞美人
+そこ。絶世の名槍を釣りの道具と一緒にしないで。[r]そもそも、項羽様なら糸も餌も必要ないわ。
+[k]
+
+[charaFace C 6]
+＠エミヤ
+なるほど、[#銛:もり]というワケか。素晴らしい。[r]原始的かつ本格的だ。いい川があるといいな。
+[k]
+
+[charaFace A 0]
+＠虞美人
+……純粋に感心しているようだから許すけど。[r]いちいち話の腰を折らないで、無銘の英霊。
+[k]
+
+＠虞美人
+む。エミヤと呼ぶべきかしら、一応。
+[k]
+
+＠エミヤ
+どちらでも呼びやすい方を。[r]今回はエミヤ、と呼んでもらいたい気分だが。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠項羽
+我が妻よ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+[charaShake A 0.02 3 3 0.3]
+＠虞美人
+はいっ、項羽様っ。
+[k]
+
+[messageOff]
+[charaTalk off]
+[cueSe Battle bac198]
+[effect bit_talk_28]
+[wt 2.2]
+
+
+[branchQuestNotClear lblNotClear2 3000320]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+（ハートマークが飛び散ったように見えたが、[r]　幻覚かな？　いよいよ精神の限界かな？）
+[k]
+
+？1：もっのすごいハートマークが乱舞した……
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[branch lblConf2]
+
+[label lblNotClear2]
+
+？1：もっのすごいハートマークが乱舞した……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[label lblConf2]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+はい。[r]わたしの目にもハッキリと。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠？？？
+[line 3]おお、確かに当方の目にも見えた。
+[k]
+
+＠？？？
+……当方も我が愛へと愛の形を[r]注ぐことができるか？
+[k]
+
+＠？？？
+ふむ、興味深いな。[r]練習が必要かもしれん。
+[k]
+
+？1：その声はシグルド……！
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+＠シグルド
+いかにも。
+[k]
+
+＠シグルド
+[#此度:こたび]の微小特異点攻略に抜擢された、[r]シグルドである。
+[k]
+
+？2：そののろけはシグルド……！
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 1]
+[wt 0.4]
+＠シグルド
+のろけで判断されるとは……。[r]当方、嬉しいこと限りなし。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+嬉しいんですね……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+？！
+
+[charaFace F 0]
+＠シグルド
+エミヤ同様、当方もスカサハ殿に依頼し、[r]夏用の霊衣を準備してもらった。
+[k]
+
+＠シグルド
+動きやすく涼しく、実に快適なり。
+[k]
+
+？1：似合ってるー！
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFace F 0]
+[charaFadein B 0.1 2]
+[charaFadein F 0.1 0]
+＠マシュ
+はい。[r]とてもお似合いです、シグルドさん。
+[k]
+
+[charaFace F 1]
+＠シグルド
+フッ……そういう台詞は、[r]マスターに取っておくべきだ、マシュ・キリエライト。
+[k]
+
+[charaFace B 3]
+[charaShake B 0.02 3 3 0.3]
+＠マシュ
+[f large]ひゃい！？
+[k]
+
+[charaFace F 0]
+＠シグルド
+そしてマスターも。
+[k]
+
+＠シグルド
+そういう褒め言葉は、[r]まずファーストサーヴァントからがマナーというもの。
+[k]
+
+？1：そ、[&そうだった:そうでした]……！
+？！
+
+[charaFadeout B 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠フォウ
+フォウフォウ……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+＠マシュ
+……。[r]……。
+[k]
+
+？1：[line 3]マシュ、とても似合ってるよ
+
+？2：マシュ、最高に綺麗だよ！！
+
+[branch select01]
+
+？！
+
+[charaFace B 3]
+＠マシュ
+は、はい……。[r]はい……ありがとうございます……。
+[k]
+
+[charaFace B 18]
+＠マシュ
+……。[r]……。
+[k]
+
+？1：……
+？2：……
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠エミヤ
+青春だな。実にいい。[r]思わず後方守護者顔してしまいそうだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear3 3000320]
+
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+こ[messageShake 0.02 3 3 0.3]ほん！
+[k]
+
+[charaFace G 0]
+＠ダ・ヴィンチ
+……では、そろそろレイシフトしようか。
+[k]
+
+[branch lblConf3]
+
+[label lblNotClear3]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+こ[messageShake 0.02 3 3 0.3]ほん！
+[k]
+
+[charaFace G 0]
+＠ダ・ヴィンチ
+……では、そろそろレイシフトしようか。
+[k]
+
+[label lblConf3]
+
+
+[branch select_end]
+
+
+[label select01]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaFace B 2]
+[charaShake B 0.03 4 4 0.4]
+＠マシュ
+[f large]！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_27 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[charaShake H 0.02 3 3 0.4]
+＠フォウ
+フォウウウ！？[r]（特別意訳：それは破壊力が高すぎない！？）
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+[charaMove B 0,-30 3.0]
+＠マシュ
+だ、大丈夫です。[r]大丈夫です、大丈夫なので大丈夫です。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠エミヤ
+ストレートすぎだ、[%1]。[r]今くらいのは二人きりの時にしないと。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠シグルド
+ははは。[r]善くぞ言った、[%1]殿。
+[k]
+
+＠シグルド
+それでこそ、[r]我らのマスターとして相応しい。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠虞美人
+……なんか、普段より[r]数倍リラックスしてない、この[#二騎:ふたり]？
+[k]
+
+
+[branchQuestNotClear lblNotClear4 3000320]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠ゴルドルフ
+（ああ。私もそう思う）
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[bgmStop BGM_EVENT_27 0.6]
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+[branch lblConf4]
+
+
+[label lblNotClear4]
+
+[label lblConf4]
+
+[messageOff]
+[charaFadeout A 0.1]
+[bgmStop BGM_EVENT_27 0.6]
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+[label select_end]
+
+
+
+
+[branchQuestNotClear lblNotClear5 3000320]
+
+
+[bgm BGM_EVENT_82 0.1]
+
+＠ダ・ヴィンチ
+見ての通り、頼れるお兄さん二人組だ。[r]今回の引率役はこの二騎に一任している。
+[k]
+
+
+[charaFace G 9]
+＠ダ・ヴィンチ
+他の調査メンバーはこちらのリストを参考に。[r]はい、どうぞ[%1][&君:ちゃん]。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠虞美人
+あ、ちょっと見せて。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+はいはい、どうぞ。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth A 4]
+[charaDepth G 6]
+
+[charaFace A 0]
+[charaFace G 0]
+[charaFadein A 0.1 -200,0]
+[charaFadein G 0.1 200,0]
+[wt 0.4]
+
+[charaMove G 150,0 0.4]
+[wt 0.5]
+[charaMoveReturn G 150,10 0.5]
+[se ad748]
+[seStop ad748 0.4]
+[wt 0.6]
+[charaMove G 200,0 0.4]
+[wt 0.9]
+
+
+[branch lblConf5]
+
+
+[label lblNotClear5]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+見ての通り、頼れるお兄さん二人組だ。[r]今回の引率役はこの二騎に一任している。
+[k]
+
+＠ダ・ヴィンチ
+他の調査メンバーはこちらのリストを参考に。[r]はい、どうぞ[%1][&君:ちゃん]。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠虞美人
+あ、ちょっと見せて。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+はいはい、どうぞ。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaDepth A 4]
+[charaDepth G 6]
+
+[charaFace A 0]
+[charaFace G 0]
+[charaFadein A 0.1 -200,0]
+[charaFadein G 0.1 200,0]
+[wt 0.3]
+
+[charaMove G 180,0 0.4]
+[wt 0.5]
+[charaMoveReturn G 180,10 0.5]
+[se ad748]
+[seStop ad748 0.4]
+[wt 0.6]
+[charaMove G 200,0 0.4]
+[wt 0.8]
+
+
+[label lblConf5]
+
+[charaTalk on]
+[charaFace A 4]
+＠虞美人
+現地に溶け込めるよう、[r]水着に着替えたサーヴァントを４騎ぃ？
+[k]
+
+
+＠虞美人
+戦力、過剰なんじゃない？
+[k]
+
+＠虞美人
+[%1]とマシュ、そこの二人。[r]そして私と項羽様。
+[k]
+
+＠虞美人
+本来なら、これだけで充分だと思うけど？
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠項羽
+否。
+[k]
+
+＠項羽
+これほどの人数でなければ、[r]攻略することは困難であろう。
+[k]
+
+＠項羽
+しかし恐れるな、我が妻よ。[r]汝ならば、必ずや解決に導くことができよう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠虞美人
+[FFFFFF]？[-]
+[k]
+
+[charaFace A 1]
+＠虞美人
+は、はい。[r]もちろんです！
+[k]
+
+[charaFace A 3]
+＠虞美人
+それでその、解決に至った暁にはですね。[r]折角ですし、二人で……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠項羽
+もちろんだ。[r]共にゆるりと休暇を楽しむとしよう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠虞美人
+は、はい！
+[k]
+
+[charaFace A 2]
+＠虞美人
+さあ後輩、そんなところでイチャイチャしてないで[r]とっととレイシフトするわよ！
+[k]
+
+？1：イチャイチャしていた訳では！
+
+[charaFace A 5]
+＠虞美人
+お黙り。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？2：りょ、了解です！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 0,-80]
+＠マシュ
+（しゃがんで顔を覆っている）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？！
+
+
+[branchQuestNotClear lblNotClear6 3000320]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+うんうん。
+[k]
+
+[charaFace G 1]
+＠ダ・ヴィンチ
+じゃあみんな、レイシフト開始するよ。[r]今年の夏も、楽しい思い出をいっぱい作ろうね！
+[k]
+
+[messageOff]
+[charaFace G 10]
+[wt 1.2]
+
+[branch lblConf6]
+
+[label lblNotClear6]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+よろしい。
+[k]
+
+＠ダ・ヴィンチ
+では諸君、レイシフト開始だ。[r]今年の夏も、頑張って乗り切ろう！
+[k]
+
+[messageOff]
+[charaFace G 1]
+[wt 1.2]
+
+[label lblConf6]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_82 1.5]
+[wait fade]
+
+[charaFadeout G 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 0.1]
+[wait fade]
+[se ad12]
+[effect bit_talk_07]
+[wt 4.0]
+
+[fadeout white 1.0]
+[wait fade]
+
+[wt 1.5]
+
+[fadein white 1.0]
+[wait fade]
+
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[skip false]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout A 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[scene 10000]
+[wt 1.0]
+[fadein black 0.1]
+[wait fade]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[soundStopAllFade 0.4]
+
+[charaSet J 5009000 1 初期化用ダミー]
+[charaSet I 5009000 1 初期化用ダミー]
+[charaSet H 5009000 1 初期化用ダミー]
+[charaSet G 5009000 1 初期化用ダミー]
+[charaSet F 5009000 1 初期化用ダミー]
+[charaSet E 5009000 1 初期化用ダミー]
+[charaSet D 5009000 1 初期化用ダミー]
+[charaSet C 5009000 1 初期化用ダミー]
+[charaSet B 5009000 1 初期化用ダミー]
+[charaSet A 5009000 1 初期化用ダミー]
+
+[maskout black 1.0]
+[wait mask]
+[scene 10000]
+[wt 0.1]
+[maskin black 0.1]
+[wait mask]
+
+[label selectBranch]
+
+[fowardEffect bit_chapterstart80294]
+[wait fowardEffect]
+
+[wt 1.0]
+
+
+
+
+
+
+
+
+
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

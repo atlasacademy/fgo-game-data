@@ -1,0 +1,848 @@
+
+
+
+＄94-05-14-02-2-0
+
+[soundStopAll]
+
+
+[charaSet A 1098200900 1 紫式部]
+[charaSet B 2001300 1 エミヤ]
+[charaSet C 3044000 1 虞美人]
+[charaSet D 1036300 1 蘭陵王]
+[imageSet E cut220_kuu00 1]
+[charaScale E 0.9]
+[charaSet F 2042001 1 イリヤ]
+
+
+
+[charaSet S 5009040 1 エフェクト用ダミー]
+
+[cameraMove 0 0,0 1.01]
+
+
+[scene 28300]
+
+[se ad75]
+[effect bit_talk_43h]
+[shake 0.02 3 3 0]
+
+[fadein black 1.5]
+[wait fade]
+
+
+
+[wt 1.0]
+
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[effectStop bit_talk_43h]
+
+[shakeStop]
+
+[scene 10000]
+[wt 0.5]
+
+[se ad183]
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[wt 0.8]
+
+？1：（柔らかな感触が……）
+
+？2：（しっかりとした感触が……）
+
+[branch select01]
+
+？！
+
+
+＠？？？
+大丈夫ですか、マスター？
+[k]
+
+[messageOff]
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[scene 99900]
+
+[charaScale A 1.2]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+[wt 0.5]
+
+[wipein openEye 1.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaFace A 1]
+＠紫式部
+ああ、良かった。[r]お目覚めになりましたか。
+[k]
+
+[charaFace A 0]
+＠紫式部
+……ええと。
+[k]
+
+＠紫式部
+今回、私も水着霊基なるものに挑戦してみました。[r]何とも動きやすいのです、これが。
+[k]
+
+[charaFace A 1]
+＠紫式部
+お陰でマスターを支えることができましたね？[r]ふふふふふ。
+[k]
+
+[charaFace A 0]
+＠紫式部
+もう立てますか？[r]よいしょ……。
+[k]
+
+[messageOff]
+[charaMoveScale A 1.0 0.8]
+[charaMove A 0,12 0.5]
+[wt 0.1]
+[se ad60]
+[wt 0.4]
+[charaMove A 1 0.3]
+[wt 0.2]
+[seStop ad60 0.1]
+[wt 0.8]
+
+＠紫式部
+ご無事で何よりです、マスター。
+[k]
+
+？1：と、とても破壊力のある水着ですね、紫式部さん
+
+？！
+
+[messageOff]
+[charaFace A 1]
+[wt 1.0]
+
+＠紫式部
+ふふ。ありがとうございます。[r]頑張って選んだ甲斐があるというものです。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch select_end]
+
+[label select01]
+
+[messageOff]
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[scene 99900]
+
+[charaScale B 1.2]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+[wt 0.5]
+
+[wipein openEye 1.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠エミヤ
+そこそこ。感慨にふけるのも分かるが、[r]まずは自分と、周りの確認を先にしよう。
+[k]
+
+＠エミヤ
+レイシフトによる不調はないか？[r]ひとりで立てないのなら肩を貸そう。
+[k]
+
+
+[messageOff]
+[charaMoveScale B 1.0 0.8]
+[charaMove B 0,15 0.5]
+[wt 0.1]
+[se ad60]
+[wt 0.4]
+[charaMove B 1 0.3]
+[wt 0.2]
+[seStop ad60 0.1]
+[wt 1.0]
+
+
+
+[charaFace B 10]
+＠エミヤ
+おや、紫式部。[r]君もメンバーだったな。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.7 1]
+[wt 1.1]
+＠紫式部
+はい、日本ということで抜擢されました。[r]マスター、今回はよろしくお願いいたします。
+[k]
+
+[charaFace A 8]
+＠紫式部
+水着は少々恥ずかしいのですが……。[r]やはり夏ならば、ということで大胆に！
+[k]
+
+？1：よろしくお願いします！
+？！
+
+[charaFace A 1]
+＠紫式部
+はい。[r]さて、他の皆様は[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+
+
+[label select_end]
+
+
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠虞美人
+何？[r]また座標がズレたの？
+[k]
+
+[charaFace C 5]
+＠虞美人
+ったく。[r]ダ・ヴィンチもしっかりレイシフトさせなさいよ。
+[k]
+
+[charaFace C 4]
+＠虞美人
+……。[r]……ん？
+[k]
+
+＠虞美人
+あれ？[r]項羽様？
+[k]
+
+＠虞美人
+おかしいわね。[r]項羽様の気配がないわ。
+[k]
+
+＠虞美人
+気配遮断？[r]アサシン的な感じで？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠エミヤ
+……ダ・ヴィンチ。[r]聞こえるか？
+[k]
+
+？1：ダ・ヴィンチちゃーん
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+
+
+[charaPut S 1]
+[charaEffect S bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+
+[se ad31]
+[wt 1.8]
+
+[seStop ad31 0.1]
+[charaPut S 1200,1200]
+[charaEffectStop S bit_talk_10_LowLevel]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠エミヤ
+ダメか？[r]やれやれ、いきなり通信途絶ときたか。
+[k]
+
+[charaFace B 0]
+＠エミヤ
+どう思う、[%1]？[r]君の感想を聞こう。
+[k]
+
+
+[branchQuestNotClear lblNotClear 3000320]
+
+？1：大丈夫。慣れてます
+
+？！
+
+[charaFace B 1]
+＠エミヤ
+上出来だ。[r]伊達に人理を救う旅を続けてきた訳じゃないな。
+[k]
+
+
+[branch lblConf]
+
+
+[label lblNotClear]
+？1：まずは落ち着いて、状況確認？
+？！
+
+[charaFace B 1]
+＠エミヤ
+その通り。[r]何事も基本が大事、ということだな。
+[k]
+
+[label lblConf]
+
+
+
+[charaFace B 0]
+＠エミヤ
+通信途絶には大きく分けて二種類ある。
+[k]
+
+＠エミヤ
+神霊やサーヴァントの影響力が大きいため、[r]通信が阻害されるタイプ。
+[k]
+
+＠エミヤ
+これはその影響下から脱出すれば、[r]通信が復帰するので、害はあっても危険じゃない。
+[k]
+
+[charaFace B 4]
+＠エミヤ
+しかし、誰かが悪意によって[r]通信を途絶させている場合、話は別だ。
+[k]
+
+＠エミヤ
+お互い運が無いな、マスター。[r]あまり浮かれていい現場ではなさそうだ。
+[k]
+
+[charaFace B 10]
+＠エミヤ
+おっと。[r]あそこにいるのは[line 3]
+[k]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+＠？？？
+[charaTalk D]
+申し訳ありません、少々よろしいですか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠虞美人
+ん？[r]何よ、蘭陵王じゃない。
+[k]
+
+＠虞美人
+っていうか、貴方も来てたの？[r]メンバーリストにいなかったけど。
+[k]
+
+[charaFace C 1]
+＠虞美人
+それにその霊衣。いいわね、夏らしく涼やかだわ。[r]貴方によく似合ってる。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠蘭陵王
+[line 3]は。[r]やはり夏ということで。
+[k]
+
+[charaFace D 4]
+＠蘭陵王
+私は夏だからといって着替える必要はない、[r]そう抗弁したのですが……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 4]
+[charaDepth D 6]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFace D 4]
+[charaFadein C 0.1 2]
+[charaFadein D 0.1 0]
+＠虞美人
+ああ、圧されたのね。
+[k]
+
+＠蘭陵王
+はい。
+[k]
+
+＠虞美人
+生前からつくづく圧しに弱くない？[r]もっと断固たる態度を取るべきだと思うけど。
+[k]
+
+[charaFace D 3]
+＠蘭陵王
+こほん、まあそれは置いてください。
+[k]
+
+＠虞美人
+……そうね。
+[k]
+
+[charaFace D 0]
+＠蘭陵王
+実は項羽殿から手紙を預かっていまして。
+[k]
+
+[charaFace C 2]
+＠虞美人
+項羽様から！？[r]ちょ、ちょっとそれ見せて！
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[se ad7]
+[seVolume ad7 0 0.5]
+[charaMove C 20,0 0.4]
+[wt 0.6]
+
+[charaMoveReturn D -236,0 0.6]
+[se ad77]
+[seVolume ad77 0. 0.4]
+[wt 0.2]
+[seStop ad77 0.2]
+[wt 0.7]
+
+[charaFace C 0]
+[charaMoveReturn C 20,-10 0.5]
+[se ade96]
+[wt 1.2]
+
+[charaTalk on]
+＠虞美人
+『愛する我が妻よ』
+[k]
+
+[charaFace C 3]
+＠虞美人
+愛するだなんてそんな……そんな……。
+[k]
+
+？1：あの、続きを
+
+[charaFace C 0]
+＠虞美人
+はいはい、ちょっと待ちなさい。
+[k]
+
+？2：いつも言われてるのに……
+
+[charaFace C 2]
+＠虞美人
+声にして伝えられるのもいいけど、[r]文にされると新鮮さがあるのよ！
+[k]
+
+？！
+
+[charaFace C 0]
+＠虞美人
+ええと……。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.0]
+[charaFadeout C 1.0]
+[charaFadeout D 1.0]
+
+[scene 28300 1.0]
+[wt 1.0]
+
+[charaFadein E 0.6 0,-140]
+[charaFadeTime E 0.6 0.6]
+[wt 1.0]
+
+
+[charaTalk depthOn]
+＠
+『[line 3]愛する我が妻よ』[bgm BGM_EVENT_11 0.1]
+[k]
+
+＠
+『是まさに[#慚愧:ざんき]に堪えない事実であるが、[r]　今回のレイシフトに私は参加できない』
+[k]
+
+＠
+『私がレイシフトした結果、特異点が確立し、[r]　人類史に甚大なる被害が及ぶとの結果が算出された』
+[k]
+
+＠
+『逆に。汝が行かねばやはり同じ結果になるとも』
+[k]
+
+＠
+『我が妻を[#騙:だま]すようで気が引けるが、[r]　これも人理のため。私は心を鬼にした』
+[k]
+
+＠
+『ああ、ああ、虞よ。[r]　汝の帰還を楽しみに待つものなり』
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.0]
+[scene 99900 1.0]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 1.0 1]
+[charaFadeout E 1.0]
+[wt 1.5]
+
+＠虞美人
+な[line 3]
+[k]
+
+＠虞美人
+な[line 3]な[line 3]な[line 3]
+[k]
+
+[messageOff]
+[scene 28300 1.0]
+[charaFadeout C 1.0]
+[wt 1.5]
+
+＠虞美人
+[f large]何[messageShake 0.02 3 3 0.5]ですってェェェッ！！
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[scene 99900]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠エミヤ
+やはりなんらかの妨害があったのか。[r]とはいえ、レイシフト自体は成功している。
+[k]
+
+＠エミヤ
+第二陣が来たぞ、マスター。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_94 0.1]
+
+＠イリヤ
+[%1][&お兄:お姉]さーーーーん！
+[k]
+
+[messageOff]
+[charaMoveScale F 1.2 0.2]
+[charaMove F 0,20 0.2]
+[wt 0.1]
+
+[cueSe Battle bac149]
+[seVolume bac149 0 0.4]
+[shake 0.03 4 4 0.4]
+[wt 0.1]
+[seStop bac10 0.2]
+[wt 0.7]
+
+？1：ちょっと！？
+？2：ヘディング！？
+？！
+
+
+＠イリヤ
+わーいわーい！[r]夏休みだ夏休みだよ[%1][&お兄さん:お姉さん]！
+[k]
+
+＠イリヤ
+ほら見てこれ見て、とりあえず夏休みに[r]やりたいことのリストは持ってきたから！
+[k]
+
+[charaFace F 10]
+＠イリヤ
+楽しいよ、きっとずっと楽しいよー！[r]さあ、何から始めよっか！
+[k]
+
+＠イリヤ
+かき氷スイカ花火大会……[r]それからそれからええとええとー！
+[k]
+
+[charaFace F 12]
+[charaShake F 0.02 3 3 0.3]
+＠イリヤ
+はっ！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠エミヤ
+いいから。続けて。[r]軍隊じゃないんだ、自由にふるまいなさい。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 0,20]
+[wt 0.2]
+
+[se ad7]
+[charaMove F 0,0 0.2]
+[charaMoveScale F 1.0 0.2]
+[wt 0.6]
+
+[charaFace F 8]
+＠イリヤ
+ごごごごめんなさい、[r]そーゆーワケにもいかないですよね！？
+[k]
+
+＠イリヤ
+わたし、水着をもらって、レイシフトして、[r]何か妙にテンションが高くなって……。
+[k]
+
+[charaFace F 15]
+＠イリヤ
+つい、カルデアのお仕事を忘れてしまいました！[r]めんぼくありません、マスターさん！
+[k]
+
+？1：いいって、いいって
+
+[charaFace F 6]
+＠イリヤ
+うー……。
+[k]
+
+＠ルビー
+[charaTalk F]
+オトナの余裕ある態度でホッとするけど、[r]それはそれとして物足りないイリヤさんでした☆
+[k]
+
+[charaFace F 2]
+＠イリヤ
+なんで人の心情をいちいち[r]ナレーションするの！？
+[k]
+
+？2：子供は元気が一番だよ
+
+[charaFace F 3]
+＠イリヤ
+あはははは、ごめんなさい……。
+[k]
+
+＠ルビー
+[charaTalk F]
+イリヤさんはテンション高くなると、[r]甘えん坊気質が顔を出すんですよ、マスターさん。
+[k]
+
+＠ルビー
+[charaTalk F]
+これはもう、甘やかす以外にないのでは？
+[k]
+
+[charaFace F 2]
+＠イリヤ
+あああもうルビーはちょっと黙っててー！
+[k]
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFace F 3]
+[charaFadein B 0.1 2]
+[charaFadein F 0.1 0]
+＠エミヤ
+……レイシフト酔い、というものかもな。
+[k]
+
+＠エミヤ
+サーヴァントにあるものではないが、[r]君は数少ない例外らしい。
+[k]
+
+＠イリヤ
+えへへ、お恥ずかしいところを……。
+[k]
+
+[charaFace B 1]
+＠エミヤ
+まあいいさ。[r]ふむ、他のサーヴァントたちも到着しているようだ。
+[k]
+
+＠エミヤ
+ベースキャンプを設置し、[r]それから……。
+[k]
+
+[charaFace B 0]
+＠エミヤ
+うん？[r]……あそこに見えるのはコテージ……か？
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠蘭陵王
+そのようですね。
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠エミヤ
+……罠かもしれないが、[r]調査する価値はありそうだな。
+[k]
+
+＠エミヤ
+だが、コテージの前に、[r]まずは慎重に周囲を調べておくか。
+[k]
+
+＠エミヤ
+ざっと見た感じだが……[r]魔獣めいたものの姿も垣間見えるしな。
+[k]
+
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠蘭陵王
+まずはそこらへんを掃討してから、[r]という訳ですね。
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[pictureFrame cut063_cinema]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+
+[charaShake C 0.02 2 4 0.6]
+＠虞美人
+あﾞあﾞあﾞあﾞあﾞあﾞあﾞ……。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[pictureFrame]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+
+＠紫式部
+あの、虞美人様はいかがいたしましょう……？
+[k]
+
+
+？1：とりあえずこちらで何とかします！
+？！
+
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_94 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
