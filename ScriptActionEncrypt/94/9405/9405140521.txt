@@ -1,0 +1,409 @@
+
+
+
+＄94-05-14-05-2-1
+
+[soundStopAll]
+
+
+[charaSet A 2001300 1 エミヤ]
+[charaSet B 1036300 1 蘭陵王]
+[charaSet C 2042001 1 イリヤ]
+[charaSet D 1098200900 1 紫式部]
+[charaSet E 6013001 1 ファントム]
+[imageSet F back10000 1]
+[charaScale F 1.01]
+
+[charaSet S 5009040 1 エフェクト用ダミー]
+[charaSet T 5009040 1 エフェクト用ダミー]
+
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad33]
+[effect bit_talk_kengekiall02]
+[wt 0.9]
+
+[se ad32]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+[effectDestroy bit_talk_kengekiall02]
+
+[scene 99503]
+
+[se ad671]
+[seStop ad671 0.6]
+[charaScale A 1.1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0 0,20]
+[charaMove A 0,0 0.2]
+[charaMoveScale A 1.0 0.2]
+[charaShake A 0.02 3 3 0.5]
+[wt 1.0]
+
+＠エミヤ
+くっ……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠蘭陵王
+はあああ！
+[k]
+
+[messageOff]
+[cueSe Battle bac138]
+[effect bit_talk_v_slash01]
+[wt 0.4]
+
+
+
+[charaTalk depthOff]
+[charaDepth E 4]
+[charaDepth B 6]
+[charaDepth F 1]
+
+[se ad170]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0 -50,0]
+[charaPut B 50,0]
+[charaMove B 200,0 0.15]
+[charaMove E -200,0 0.15]
+[charaShake E 0.02 3 3 0.4]
+[charaShake B 0.02 3 3 0.4]
+[wt 0.8]
+
+＠ファントム
+……。[r]……。
+[k]
+
+
+[messageOff]
+[se ad7]
+[charaMove E 0,0 0.2]
+[wt 0.3]
+[charaMove B 200,10 0.2]
+[se ad787]
+[charaFace B 8]
+[charaShake B 0.01 2 2 0.8]
+[wt 0.6]
+[seStop ad787 0.4]
+[wt 0.6]
+
+[charaFadeTime F 0.1 0.6]
+＠蘭陵王
+（何だ、この[#膂力:りょりょく]は……！[r]　マスターの援護があってなお圧し負けるだと……！）
+[k]
+
+[charaFace B 7]
+＠蘭陵王
+（首……を……ま、ずい……意識が……）
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠エミヤ
+蘭陵王！　食いしばれ！
+[k]
+
+[charaFace A 2]
+＠エミヤ
+マスター、合わせろ！[r][#投影:トレース][#開始:オン]！
+[k]
+
+
+[messageOff]
+[wt 0.1]
+
+[se bas1]
+[fowardEffect bit_talk_30]
+[wt 1.0]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[fowardEffectDestroy bit_talk_30]
+
+
+[charaDepth T 9]
+[charaDepth S 8]
+[charaDepth B 6]
+[charaDepth E 4]
+
+[charaFace E 5]
+[charaFace B 4]
+[charaFadein E 0.1 0,-50]
+[charaFadein B 0.1 200,-40]
+
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠蘭陵王
+くっ……！
+[k]
+
+？1：緊急回避！
+？！
+
+[messageOff]
+[charaTalk off]
+[cueSe Battle NP_START_1]
+[wt 0.6]
+
+
+[se ade282]
+[wt 0.3]
+[charaPut S 200,-40]
+[charaEffect S bit_talk_21]
+[charaSpecialEffect B erasureReverse 0,0 0.4]
+[wt 1.0]
+
+
+[se ad609]
+[charaPut T 1]
+[charaEffect T bit_talk_explosion]
+[wt 0.1]
+[charaFace E 4]
+
+[charaShake E 0.03 4 4 1.2]
+[wt 0.8]
+
+
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaPut T 1200,1200]
+[charaEffectStop T bit_talk_explosion]
+[charaPut S 1200,1200]
+[charaEffectStop S bit_talk_21]
+[charaFadeout E 0.1]
+
+[pictureFrame]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+
+[se ade282]
+[wt 0.3]
+[charaPut S 1]
+[charaEffect S bit_talk_21 0,0 V]
+[charaPut B 1]
+[charaFace B 7]
+[charaSpecialEffect B appearanceReverse 0,0 0.2]
+[wt 0.4]
+[charaEffectStop S bit_talk_21]
+[wt 0.6]
+
+
+[charaTalk on]
+＠蘭陵王
+た、助かりました……[wt 0.6][charaFace B 4][charaShake B 0.02 3 3 0.3]ケホッ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠エミヤ
+手荒い措置をしてすまなかった。[r]威力を抑えたとはいえ、
+[k]
+
+＠エミヤ
+目の前で宝具をぶっ放したんだ。[r]君は少し休んでいろ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠蘭陵王
+しかし[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠エミヤ
+……まあ、問題は解決していないがね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠ファントム
+……。[r]……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠イリヤ
+が、頑丈すぎませんかあのファントムさん！？
+[k]
+
+？1：カルデアのファントムとは別人？
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠エミヤ
+……いや、違うな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？2：何かに洗脳された……？
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠エミヤ
+その可能性が高い。
+[k]
+
+[charaFace A 4]
+＠エミヤ
+だが、ファントムは『精神汚染』スキルにより、[r]精神に干渉する類いの術には抵抗力が強いはずだ。
+[k]
+
+＠エミヤ
+その彼をこうも容易く……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠紫式部
+これは……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠ファントム
+……。[r]……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠紫式部
+皆様、コテージに入ってください！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠蘭陵王
+コテージへ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠エミヤ
+確かにこのままでは[#埒:らち]が明かないが……[r]室内だとますます追い込まれてしまうのでは？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠紫式部
+いいえ。あの方は[line 3][wt 0.4][charaFace D 2][r][#倒す方法を把握しないと倒せないのです]！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+＠エミヤ
+……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠紫式部
+皆様、急いで！
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_80 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,642 @@
+
+
+
+＄94-05-14-10-3-0
+
+[soundStopAll]
+
+[charaSet A 3044000 1 虞美人]
+[charaSet B 2042001 1 イリヤ]
+[charaSet C 1098200900 1 紫式部]
+[charaSet D 1036300 1 蘭陵王]
+[charaSet E 2001300 1 エミヤ]
+[charaSet F 6013002 1 ファントム]
+[charaSet G 1098198300 1 殺生院リリィ]
+[charaSet H 1098198500 1 虞美人_幽霊]
+
+[charaSet J 5009000 1 エフェクト用ダミー]
+[imageSet K back10000 1]
+[charaScale K 1.01]
+
+[charaSet L 1098200600 1 ルビー]
+
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_41]
+
+
+[charaDepth A 2]
+[charaDepth C 3]
+[charaDepth E 4]
+[charaDepth B 5]
+[charaDepth D 6]
+
+[charaDepth J 9]
+
+[scene 99902]
+
+[effect bit_talk_40]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[se ad769]
+[wt 1.5]
+
+[seStop ad769 0.5]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠蘭陵王
+切り抜けましたが……しかし……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠エミヤ
+もうコテージは近いはずだが、[r]まだ見えないか！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠イリヤ
+き、霧が濃すぎて何がなんだか[r]サッパリでーす！
+[k]
+
+＠イリヤ
+ルビー、探知とかできないの！？
+[k]
+
+＠ルビー
+みょんみょんみょん……手応えなし！
+[k]
+
+＠ルビー
+すみません、[r]これはちょっと無理くさいですねー！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠エミヤ
+ならばこの霧、[r]一瞬だけでも吹き飛ばす……！
+[k]
+
+[charaFace E 2]
+＠エミヤ
+全員、伏せろ……！
+[k]
+
+[bgmStop BGM_EVENT_80 1.0]
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace D 5]
+[charaFadein D 0.1 -350,0]
+
+
+[charaFace B 5]
+[charaFadein B 0.1 0,0]
+
+[charaFace C 8]
+[charaFadein C 0.1 350,0]
+[wt 0.6]
+
+[se ad7]
+[charaMove C 350,-50 0.3]
+[charaMove D -350,-50 0.3]
+[charaMove B 0,-50 0.3]
+[wt 0.1]
+
+[charaFadeout C 0.2]
+[charaFadeout D 0.2]
+[charaFadeout B 0.2]
+[wt 0.8]
+
+[se ad855]
+[fowardEffect bit_talk_14]
+[wt 0.6]
+
+[se ad353]
+[shake 0.02 3 3 0.5]
+[fadeout white 0.5]
+[wait fade]
+
+[effectStop bit_talk_40]
+[fowardEffectStop bit_talk_14]
+
+[seStop ad353 1.0]
+[wt 1.5]
+
+[se ad596]
+[wt 0.8]
+
+[fadein white 0.5]
+[wait fade]
+[wt 1.0]
+
+？1：霧が晴れた……！
+？！
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠蘭陵王
+見えた！[r]このまま進みます！
+[k]
+
+[messageOff]
+[se ad769]
+
+[wipeout rightToLeft 0.5 1.0]
+[seStop ad769 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+
+[scene 99601]
+[wt 1.6]
+
+[se ad533]
+
+[wipein leftToRight 0.5 1.0]
+[wait wipe]
+[wt 1.0]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠ファントム
+おお　クリスティーヌ！[r]我が　歌姫。我が　歌声。
+[k]
+
+＠ファントム
+無事の帰還を　此処に　共に祝おう[line 3]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠殺生院リリィ
+はーい、おかえりなさいー。[wt 0.5][charaFace G 0][r]……おや？　どうしたのですか？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠蘭陵王
+皆さん、お怪我は？
+[k]
+
+？1：問題……なし……
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+＠イリヤ
+はひー……だ、だいじょうぶ……です……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠紫式部
+はい……。[r]何とか……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠エミヤ
+執拗な追跡だったが、[r]どうにか[line 3]む？
+[k]
+
+[charaFace E 10]
+＠エミヤ
+ひとりにすると危険な虞美人、[r]ダイナマイト虞美人はどうした？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+[charaShake D 0.05 3 3 0.2]
+＠蘭陵王
+[line 3]！[r]（※ツボにはいって咳き込んでいる）
+[k]
+
+[charaFace D 3]
+＠蘭陵王
+失礼、今のは[#他言無用:たごんむよう]で！[r]あの方なら、先ほどまで気配が…………。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.0]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.7 -420,0]
+[charaMove H -400,0 0.7]
+[wt 1.2]
+
+？1：まさか……
+？！
+
+[charaFace H 4]
+＠H：虞美人
+……後輩。[r]その目をやめなさい後輩。
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠H：虞美人
+死んだわ。[r]ものの見事に、[#ねじれて]死んだわ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace E 10]
+[charaFadein E 0.1 -400,0]
+
+[charaFace D 2]
+[charaFadein D 0.1 -140,0]
+
+[charaFace B 2]
+[charaFadein B 0.1 140,0]
+
+[charaFace C 10]
+[charaFadein C 0.1 400,0]
+
+＠全員
+[f large]また！？
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+＠殺生院リリィ
+なんとー。人魚の肉で[#不老不死:ふ ろ う ふ し]になった[r][#八百比丘尼:や   お   び   く   に]が言うのもなんですが、
+[k]
+
+＠殺生院リリィ
+そうポンポンと死んでだいじょうぶですか？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠H：虞美人
+問題ないわ。[r]しばらくすれば元に戻るでしょう。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.0]
+[charaFadeout H 0.1]
+[wt 0.4]
+
+[se ad61]
+[seVolume ad61 0 0.3]
+[seVolume ad61 0.2 0.1]
+[scene 99602 0.1]
+[wt 0.1]
+[scene 99601 0.1]
+[wt 0.4]
+[seVolume ad61 0.2 0.4]
+
+[scene 99602 0.1]
+[wt 0.1]
+[scene 99601 0.1]
+[wt 0.1]
+[seVolume ad61 0.2 0.1]
+[wt 0.8]
+
+[se ade36]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[se ad61]
+[seVolume ad61 0 0.5]
+[scene 99602 0.1]
+[wt 0.1]
+[seStop ad61 0.2]
+[wt 1.4]
+
+
+[bgm BGM_EVENT_126 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠エミヤ
+来たか……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠紫式部
+ここはこちらの領域。[r]対峙するに不足はないでしょう。
+[k]
+
+[charaFace C 5]
+＠紫式部
+でも、あともう一つ[#何か:ピース]が……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠H：虞美人
+……手がかりになるかどうかは[r]わからないけど。
+[k]
+
+＠H：虞美人
+相手は魔眼保有者みたいよ。[r][#視:み]た相手をぐにゃりとやる感じね。
+[k]
+
+[charaFace H 4]
+＠H：虞美人
+あと、多分視界がどうとかこうとかも無関係。
+[k]
+
+＠H：虞美人
+霧で視界が[#零:ゼロ]だったのに、[r]きっちり狂いなく私の体をねじりきったし。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠エミヤ
+魔眼か……厄介な。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠紫式部
+魔眼……視覚……[r]概念としての対処法……。
+[k]
+
+[charaFace C 9]
+＠紫式部
+うう、もう少し、もう少しで何かが……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠エミヤ
+鏡はどうだい？[r]古来より、魔眼に対する定番だと思うが。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠紫式部
+そ、そうですね。[r]ですが、ただの鏡ではさすがに難しいのでは。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠エミヤ
+では、あらかじめ投影しておいた、[r]この魔鏡を使うとしよう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠イリヤ
+料理番組の仕込みみたいだ……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠H：虞美人
+何でもありねおまえ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠エミヤ
+よし、戦うとするか！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[charaFadeTime K 0.1 0.6]
+＠紫式部
+（一抹の不安が[line 3]けれど、今はこれしか……！）
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_126 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,415 @@
+
+＄94-05-14-06-1-1
+
+[soundStopAll]
+
+[charaSet A 2001300 1 エミヤ]
+[charaSet B 6013001 1 ファントム]
+[charaSet C 1098200900 1 紫式部]
+[charaSet D 2042001 1 イリヤ]
+[charaSet E 1036300 1 蘭陵王]
+[charaSet F 1098198500 1 虞美人]
+[charaSet G 1098200400 1 雑魚仮面]
+[charaSet H 1098200400 1 雑魚仮面]
+[charaSet I 1098200400 1 雑魚仮面]
+
+[charaSet S 5009040 1 エフェクト用ダミー]
+[charaSet T 5009040 1 エフェクト用ダミー]
+
+
+[branch INPUT_SELECT_BRANCH_2 INPUT_SELECT_BRANCH 1]
+
+[label INPUT_SELECT_BRANCH_1]
+
+
+
+
+[scene 99501]
+
+[fadein black 1.5]
+[wait fade]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠エミヤ
+目覚めの時間だ、ファントム。[r]この一撃で正気に戻るがいい……！
+[k]
+
+[messageOff]
+[se ad171]
+[effect bit_talk_x_slash03]
+[wt 0.4]
+
+[se ad148]
+[se ad170]
+[seVolume ad170 0 0.4]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0 1]
+[charaFadeout A 0]
+[charaShake B 0.02 3 3 0.6]
+[wt 0.5]
+[seStop ad148 0.1]
+[wt 0.5]
+
+＠ファントム
+……。[r]……。
+[k]
+
+[charaFace B 2]
+＠ファントム
+ぐ、おお。[r]お[messageShake 0.02 3 3 0.4]おおおおおおお！
+[k]
+
+[messageOff]
+
+[se ad149]
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[charaSet B 6013000 1 ファントム]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+[fadein white 1.5]
+[wait fade]
+
+＠ファントム
+くっ……むっ……。[r]ここ、は……。
+[k]
+
+＠ファントム
+うっ……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠エミヤ
+やれやれ。ホラー映画らしい、[r]骨の折れる仕事だったが[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠紫式部
+はい、やりました皆様！
+[k]
+
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_2]
+
+
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 99503]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠イリヤ
+ごめんなさい、ファントムさん。[r]でも、どうかこれで[line 3]
+[k]
+
+[charaFace D 2]
+＠イリヤ
+てりゃーーーっ！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[effect bit_talk_arrow_back_y]
+[cueSe Battle bac25]
+[wt 0.6]
+
+
+[se ad148]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0 1]
+[charaFadeout A 0]
+[charaShake B 0.02 3 3 0.6]
+[wt 0.5]
+[seStop ad148 0.1]
+[wt 0.9]
+
+
+[se ad149]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[charaSet B 6013000 1 ファントム]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+[fadein white 1.5]
+[wait fade]
+
+
+＠ファントム
+……。[r]……。
+[k]
+
+＠ファントム
+……っ……。[r]ぐっ……うっ……。
+[k]
+
+＠ファントム
+私、は……。[r]……。
+[k]
+
+[messageOff]
+[charaMove B 0,-50 0.4]
+[charaFadeout B 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.2]
+
+
+[charaTalk off]
+[charaDepth G 6]
+[charaDepth H 5]
+[charaDepth I 4]
+
+[charaFace G 0]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadein G 0.1 1]
+[charaFadein H 0.1 -350,0]
+[charaFadein I 0.1 350,0]
+[wt 0.4]
+
+[se ad42]
+[charaSpecialEffect G darkEnemyErasure 0,0 2.0]
+[wt 0.1]
+[charaSpecialEffect H darkEnemyErasure 0,0 2.0]
+[wt 0.1]
+[charaSpecialEffect I darkEnemyErasure 0,0 2.0]
+[wt 1.5]
+[charaMove G 0,-200 2.0]
+[charaMove H 0,-200 2.0]
+[charaMove I 0,-200 2.0]
+[wt 2.0]
+
+[scene 99501 1.5]
+[wt 2.0]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠イリヤ
+[%1][&お兄さん:お姉さん]。[r]……朝、ですね……。
+[k]
+
+＠イリヤ
+よかったぁ……。
+[k]
+
+？1：よくがんばったね
+？！
+
+[charaFace D 1]
+＠イリヤ
+がんばりましたー！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+[branch INPUT_SELECT_BRANCH_3]
+
+
+[label INPUT_SELECT_BRANCH_3]
+
+
+
+
+＠紫式部
+[charaFadein F 0.4 500,0]
+[charaMove F 450,0 0.5]
+ファントム様も無事なようですね……。[r]ああ、良かった。[wt 0.7][charaMove F 500,0 0.5][charaFadeout F 0.5]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠蘭陵王
+悪夢のような一夜も、[r]これで終了という訳ですか。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠エミヤ
+[charaFadein F 0.4 -500,0]
+[charaMove F -450,0 0.5]
+特異点も解消するといいのだが、[r]そう上手くはいかないか。[wt 0.7][charaMove F -500,0 0.5][charaFadeout F 0.5]
+[k]
+
+[charaFace A 6]
+＠エミヤ
+とりあえず、当面の危機は去った。[r]今はそれを喜ぼう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠イリヤ
+やったー！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.0]
+[charaFadeout D 0.1]
+[wt 0.4]
+
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.7 -50,0]
+[charaMove F 1 0.7]
+[wt 1.2]
+
+？1：……？
+？！
+
+[wipeout openEye 0.3 1.0]
+[wait wipe]
+
+[wipein openEye 0.3 1.0]
+[wait wipe]
+
+[wipeout openEye 0.3 1.0]
+[wait wipe]
+
+[wipein openEye 0.3 1.0]
+[wait wipe]
+[wt 0.8]
+
+
+＠虞美人
+後輩。[r]ちょっと言い難いんだけど[line 3]
+[k]
+
+＠虞美人
+私、死んだわ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠エミヤ
+……。[r]……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠イリヤ
+……。[r]……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠紫式部
+……。[r]……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠蘭陵王
+……。[r]……。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+[wt 1.2]
+
+＠全員
+[f large]何で！？
+[k]
+
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

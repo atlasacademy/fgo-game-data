@@ -1,0 +1,1249 @@
+
+
+
+＄94-05-14-09-1-0
+
+
+[soundStopAll]
+
+[charaSet A 3044000 1 虞美人]
+[charaSet B 2042001 1 イリヤ]
+[charaSet C 1098200900 1 紫式部]
+[charaSet D 1098200500 1 蘭陵王]
+[charaSet E 2001300 1 エミヤ]
+[charaSet F 1098200720 1 アビゲイル]
+[charaSet G 1098200600 1 ルビー]
+
+[charaDepth A 1]
+[charaDepth D 2]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 99600]
+
+[fadein black 1.5]
+[wait fade]
+
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠虞美人
+つっかれたわね……。
+[k]
+
+？1：いやホント疲れた……
+？！
+
+
+
+
+
+[charaFace A 0]
+＠虞美人
+とりあえず一度死んだくらいで、[r]私の[#戦闘能力:ス  ペ  ッ  ク]に変化はなさそう。
+[k]
+
+[charaFace A 1]
+＠虞美人
+それがわかっただけでも、[r]よしとしましょう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠エミヤ
+さて、本来は調査を続けたいところだが[line 3][r]昨日の今日で疲れただろう。
+[k]
+
+[charaFace E 6]
+＠エミヤ
+調査に関しては午後以降として、[r]午前は休養にあてるのはどうかな、マスター。
+[k]
+
+？1：そうだね……
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠紫式部
+そうですね。[r]マスターもお疲れのようですし。
+[k]
+
+＠紫式部
+ゆるりと休んだ方がいいかと。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branch select01-end]
+
+？2：一人死んだ人もいるしね……
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠虞美人
+まったくよ。[r]死人に鞭打つとはこのことだわ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠蘭陵王
+ははは……まあまあ。[r]我々は皆、一律で死人ですし。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠虞美人
+……ま、まあそうだけど。[r]いきなりどうしたの？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠蘭陵王
+ええと……ジョークだったんですが……。
+[k]
+
+？1：言い慣れてないから……
+？！
+
+[charaFace D 3]
+＠蘭陵王
+はい……お恥ずかしい。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠虞美人
+……あはははは！
+[k]
+
+＠虞美人
+しょんぼりする蘭陵王を見たら、[r]何だか元気が出てきたわ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[label select01-end]
+
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠エミヤ
+では解散だ。[r]各自、ゆったりと午前を過ごしてくれ。
+[k]
+
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠イリヤ
+[%1][&お兄さん:お姉さん]はどうします？
+[k]
+
+？1：イリヤ、遊ぶ？
+
+[branch select02-1]
+
+？2：蘭陵王はどうする？
+
+[branch select02-2]
+
+？！
+
+[label select02-1]
+
+[charaTalk off]
+
+[charaFace B 1]
+＠イリヤ
+あ、いいんですか？[r]それじゃあ遠慮なくガンガン遊びましょー！
+[k]
+
+[charaFace B 9]
+＠イリヤ
+でも何して遊びます？[r]水浴び……散歩……うーん。
+[k]
+
+＠ルビー
+３……２……１……♪
+[k]
+
+[charaFace B 8]
+[charaShake B 0.05 3 3 0.3]
+＠イリヤ
+ちょっとルビーカウントやめて！[r]何か妙に焦るから！
+[k]
+
+？1：ゆっくりでいいよ
+？！
+
+[charaFace B 9]
+＠イリヤ
+ゆ、ゆっくり。[r]そうですか……なら。
+[k]
+
+[charaFace B 0]
+＠イリヤ
+森のお散歩とか、どうですか？
+[k]
+
+＠イリヤ
+何だっけ、森のエキス？　成分？[r]が出て、いいと聞いたことがあります！
+[k]
+
+＠ルビー
+フィトンチッドですねー。
+[k]
+
+＠ルビー
+樹木が幹や葉から放出する物質で、[r]清々しい爽やかな香りだそうです。
+[k]
+
+[charaFace B 1]
+＠イリヤ
+それそれ。[r]よーし、それじゃあいきましょー！
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[scene 20803]
+[wt 1.0]
+
+[se ade485]
+[seVolume ade485 0 0]
+[seVolume ade485 1.0 0.6]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 1.8]
+
+[seStop ade485 1.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_25 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+＠イリヤ
+うわあ……[#蝉:せみ]がいっぱい鳴いてる。
+[k]
+
+？1：何のセミだろうね？
+
+＠ルビー
+はいはい。[r]わたしが代わってお答えいたしましょー！
+[k]
+
+＠ルビー
+こちらクマゼミですね。[r]午前中に鳴いて昼前には退散してしまうそうです。
+[k]
+
+＠ルビー
+これならセミ取りにも捕まりにくく、[r]早起きは三文の徳ですねー。
+[k]
+
+？2：これはクマゼミ！
+
+[charaFace B 10]
+＠イリヤ
+おおー……詳しい。[r]さすが[%1][&お兄さん:お姉さん]……。
+[k]
+
+＠ルビー
+そんな……セミの声を聞いただけで、[r]どんな種類かわかるなんて！
+[k]
+
+[charaFace B 2]
+＠イリヤ
+そこまで過剰に褒める必要あった！？
+[k]
+
+？！
+
+[charaFace B 16]
+＠イリヤ
+でも本当にいい匂い。[r]えーと、フィトンチッドだっけ？
+[k]
+
+＠イリヤ
+体が浄化される感じがするー……。
+[k]
+
+？1：するねー
+？！
+
+[messageOff]
+
+[bgm BGM_EVENT_25 0.6 0.4]
+
+[se ade485]
+[seVolume ade485 0 0]
+[seVolume ade485 0.6 1.0]
+[wt 2.8]
+
+[bgm BGM_EVENT_25 1.0 1.0]
+[seStop ade485 1.0]
+[wt 1.0]
+
+
+[charaFace B 6]
+＠イリヤ
+でもセミは少しうるさいですね……。
+[k]
+
+＠イリヤ
+もうちょっと静かにしてもらえると、[r]嬉しいかなー……。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_25 1.0 0.4]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.4 -430,0]
+[wt 0.6]
+
+
+
+[messageOff]
+[se ad527]
+[charaMove F -480,0 0.4]
+[charaFadeout F 0.4]
+[wt 0.4]
+[seStop ad527 0.8]
+[wt 1.4]
+
+
+？1：……？
+？！
+
+[bgm BGM_EVENT_25 1.0 1.0]
+
+[charaTalk off]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠イリヤ
+どうしたの、[%1][&お兄さん:お姉さん]。[wt 0.5][charaFace B 9][r]ふむふむ……謎の女の子がいた？　この森に？
+[k]
+
+＠イリヤ
+新しいサーヴァントさんかな……？[r]ルビー、何かわかる？
+[k]
+
+＠ルビー
+サーヴァントならそれっぽいものを[r]知覚できるんですけどー……。
+[k]
+
+＠ルビー
+この森だと、[r]どうも探知機能があまり有効ではないですねー。
+[k]
+
+＠イリヤ
+どうして？
+[k]
+
+＠ルビー
+ジェロニモさんが言ってましたが、[r]この森って呪的な汚染がかなり強いので。
+[k]
+
+[charaFace B 12]
+[charaShake B 0.05 3 3 0.3]
+＠イリヤ
+そんな森で森林浴楽しんでたの、わたしたち！？
+[k]
+
+＠ルビー
+サーヴァントですからー。
+[k]
+
+[charaFace B 2]
+＠イリヤ
+[%1][&お兄さん:お姉さん]は人間だよ！？
+[k]
+
+＠ルビー
+これがホラー物なら、[r]呪われた土地に入った時点でアウトですねー。
+[k]
+
+＠ルビー
+[%1]さん、[r]体の調子がおかしいとか、あります？
+[k]
+
+？1：全然平気！
+？！
+
+[charaFace B 16]
+＠イリヤ
+よかった……。
+[k]
+
+[charaFace B 0]
+＠イリヤ
+特異点修正とはいえ、[r]やっぱり夏休みなんだし。
+[k]
+
+[charaFace B 1]
+＠イリヤ
+[%1][&お兄さん:お姉さん]も、[r]いい夏休みになるといいですね！
+[k]
+
+[branch select02-end]
+
+
+[label select02-2]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠蘭陵王
+そうですね……。[r]貴女はどうなさいます？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠虞美人
+コテージでダラダラしてるわ。[r]死んだせいでかったるいし。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠蘭陵王
+……とのことなので、[r]私もそちらに付き合おうかと。
+[k]
+
+？1：じゃあ[&自分:わたし]も……
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+＠エミヤ
+ではだらだらした夏には、[r]だらだらした夏に相応しいそうめんにしよう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠虞美人
+いいわねー、そうめん。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠蘭陵王
+日本の夏の風物詩、というものでしょうか。[r]楽しみですね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠虞美人
+あー……そうねー……。
+[k]
+
+？1：（早くもだらけ始めている……！）
+？！
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[scene 99600]
+
+[wt 0.5]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_25 0.1]
+
+[charaTalk depthOff]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0]
+
+[charaFace A 0]
+[charaFadein A 0.1 2]
+＠蘭陵王
+エアコンはつけますか？
+[k]
+
+＠虞美人
+いいでしょ。[r]まだ涼しいし。
+[k]
+
+＠蘭陵王
+はい。[r]飲み物はご入り用ですか？
+[k]
+
+＠虞美人
+んー……氷水でいいわ。
+[k]
+
+[charaFace D 1]
+＠蘭陵王
+はい。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠蘭陵王
+マスターはいかがします？[r]コーヒー、紅茶、オレンジジュース……。
+[k]
+
+＠蘭陵王
+定番のものは一通り揃っているようですので。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠エミヤ
+少量なら酒類もあるが、こちらは？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠虞美人
+いや……いくら私でも、[r]朝からお酒とか、さすがにどうかと思うわよ。
+[k]
+
+[charaFace A 5]
+＠虞美人
+というか、おまえ私に対する認識が[r]雑というか、荒くなくて？
+[k]
+
+＠虞美人
+まるで無法者が暴れ出さないか[r]監視されてるようなんだけど！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠エミヤ
+そんな事はないですよ、虞美人どの。
+[k]
+
+[charaFace E 6]
+＠エミヤ
+ただ、これまでの行いから[r]注意を払っているだけです。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠虞美人
+ぐ[messageShake 0.05 2 2 0.3]ぬぬ……。
+[k]
+
+？1：虞だけに？
+？！
+
+[messageOff]
+
+[charaMove A 0,10 0.3]
+[charaMoveScale mkbj 1.1 0.3]
+[wt 0.4]
+
+[charaFace A 2]
+＠虞美人
+ち・[shake 0.02 2 2 2.5][se ad102][seVolume ad102 0 0.5][wt 0.5]が・[se ad102][seVolume ad102 0 0.5][wt 0.5]う・[se ad102][seVolume ad102 0 0.5][wt 0.5]わ・[se ad102][seVolume ad102 0 0.5][wt 0.5]よ。[se ad102][seVolume ad102 0 0.5]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaScale A 1.0]
+[charaTalk D]
+[charaFace D 6]
+[charaFace A 5]
+[charaFadein D 0.1 0]
+[charaFadein A 0.1 2]
+＠蘭陵王
+ははは。
+[k]
+
+[charaFace D 0]
+＠蘭陵王
+いつもの調子を取り戻したようで何より。[r]こちら氷水です。
+[k]
+
+[messageOff]
+[charaMove D -150,0 0.5]
+[wt 0.6]
+
+[se adm40]
+[wt 0.3]
+
+[charaMove D -256,0 0.5]
+[wt 0.7]
+
+[charaFace A 1]
+＠虞美人
+ありがとー……。[r]んぐ、んぐ……ぷはー。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace D 0]
+
+[charaMoveScale D 1.1 0.5]
+[charaMove D -256,20 0.5]
+[wt 0.4]
+
+[se adm40]
+[wt 0.4]
+
+[charaTalk on]
+＠蘭陵王
+こちらマスターのものです。
+[k]
+
+？1：ありがとー
+？！
+
+[charaFace D 1]
+＠蘭陵王
+いえいえ。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠虞美人
+[line 3]はあ、それにしても。
+[k]
+
+＠虞美人
+項羽様がいらっしゃらないのは、[r]本当に残念だわ……。
+[k]
+
+？1：見せる相手がいませんしね……
+
+？！
+
+[charaFace A 5]
+＠虞美人
+まったくよ。
+[k]
+
+[charaFace A 0]
+＠虞美人
+……まあ、だからといって[r]着ないのも勿体ないしね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠エミヤ
+写真か動画にでもしておけば、[r]見てもらえるのでは？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠虞美人
+おまえたちと違って、[r]私は瞬間を重要視しているの。
+[k]
+
+＠虞美人
+[#千変万化:せんぺんばんか]するおまえたちと、[r][#永久不変:えいきゅうふへん]である私とでは違うのよ。
+[k]
+
+＠虞美人
+留めることに意味を感じることが、[r]あまりできないの。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale D 1.0]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠蘭陵王
+おや、そうですか。
+[k]
+
+＠蘭陵王
+私としては、[r]死ぬ間際のよすがとして写真や絵画があれば[line 3]
+[k]
+
+＠蘭陵王
+と思ったことはありますが。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠虞美人
+……いきなり[#特攻:ぶっこ]んできたわね……。[r]なら好きになさいな。
+[k]
+
+？1：じゃあ好きに撮影しまーす
+？！
+
+[charaFace A 0]
+＠虞美人
+……項羽様と蘭陵王以外には非公開ね。[wt 0.6][charaFace A 4][r]えんまちゃん？　えんまちゃんなら、まあ……。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_25 1.0]
+
+[se ad41]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.3]
+[se ad41]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.6]
+[se ad41]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.3]
+[se ad41]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.3]
+[se ad41]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.8]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaFace A 2]
+＠虞美人
+撮りすぎじゃない！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠蘭陵王
+ははは。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠虞美人
+おまえもそこで笑ってないで[r]巻き込まれなさい。
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaTalk off]
+[wt 0.1]
+
+[charaMove A 50,0 0.2]
+
+[se ad7]
+
+[charaFace D 9]
+[charaFadein D 0.4 150,0]
+[wt 0.3]
+
+[charaMove A -70,0 0.3]
+[charaMove D 80,0 0.3]
+[wt 0.3]
+
+[charaTalk on]
+＠蘭陵王
+の[messageShake 0.05 3 3 0.2]わっ！
+[k]
+
+？1：ピースして蘭陵王！
+？！
+
+[charaFace D 8]
+＠蘭陵王
+ピースですか！？
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+＠蘭陵王
+え、えっと……。[r]こ、こう……ですかね……？
+[k]
+
+[messageOff]
+[wt 0.2]
+
+[se ad41]
+[wt 1.6]
+
+[bgmStop BGM_EVENT_7 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[scene 99600]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_25 0.1 1.0]
+
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠虞美人
+ふぅ、これでよし。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+＠蘭陵王
+何とも気恥ずかしい……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠虞美人
+ふふふ。
+[k]
+
+＠虞美人
+貴人と[#謳:うた]われたおまえも、[r]羞恥に悶えるときがあるか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠蘭陵王
+生前の頃は指を二本立てて笑顔を浮かべるなど、[r]想像もしませんでしたからね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠エミヤ
+いいじゃないか、[r]たまには肩の荷を下ろしても。
+[k]
+
+[charaFace E 6]
+＠エミヤ
+さあ、そうめんが上がったぞ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠虞美人
+うむ。ほめてつかわす。
+[k]
+
+？1：ではいただきまーす！
+？！
+
+[messageOff]
+
+[bgm BGM_EVENT_25 1.0 0.4]
+[wipeout rollRight 1.0 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+
+[bgm BGM_EVENT_25 1.0 1.0]
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠虞美人
+はー……するする入るわね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠エミヤ
+そうめんは夏に食欲のない時でも[r]食べられるものだからね。
+[k]
+
+[charaFace E 8]
+＠エミヤ
+食欲増進のために[r]包丁で叩いた梅干しも混ぜてある。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠蘭陵王
+ごちそうさまでした。[r]お皿は私が洗いますので。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠エミヤ
+そうか？[r]では遠慮なく。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠蘭陵王
+はい。[r]エミヤ殿もゆっくりしてください。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.6]
+
+？1：テレビでもつけてみるか……
+
+[se ad189]
+[wt 0.1]
+[seStop ad189 0]
+[wt 0.3]
+
+[se ad31]
+[wt 2.0]
+[seStop ad31 1.0]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠虞美人
+……サイケデリックな映像？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+＠エミヤ
+ただの砂嵐。[r]映像電波を受信していないだけだな。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk A]
+[charaFace D 0]
+[charaFace A 0]
+[charaFadein D 0.1 0]
+[charaFadein A 0.1 2]
+
+[branch select03-end]
+
+？2：音楽でもかけてみるか……
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠虞美人
+蘭陵王。[r]おまえ、雅楽はいけたっけ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk D]
+[charaFace D 4]
+[charaFace A 0]
+[charaFadein D 0.1 0]
+[charaFadein A 0.1 2]
+＠蘭陵王
+無骨者ゆえ、お目にかけられるものでは……。[r]申し訳ありません。
+[k]
+
+[charaFace A 0]
+＠虞美人
+そ。[r]じゃあ仕方ないわね。
+[k]
+
+
+？！
+
+[label select03-end]
+
+＠虞美人
+……。[r]……。
+[k]
+
+[charaFace D 0]
+＠蘭陵王
+……。[r]……。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠エミヤ
+……。[r]……。
+[k]
+
+？1：（静かだけど気まずくはない[&な:ね]……）
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠虞美人
+[%1]。
+[k]
+
+[messageOff]
+
+[wipeout openEye 0.2 1.0]
+[wait wipe]
+[wipein openEye 0.2 1.0]
+[wait wipe]
+[wipeout openEye 0.2 1.0]
+[wait wipe]
+[wipein openEye 0.2 1.0]
+[wait wipe]
+[wt 0.8]
+
+＠虞美人
+何きょとんとした顔しているの、[r]おまえよ、おまえ。
+[k]
+
+＠虞美人
+……おまえにとって、[r]ここの風景は馴染み深いもの？
+[k]
+
+？1：懐かしいなあ、と
+
+＠虞美人
+そう。
+[k]
+
+[charaFace A 4]
+＠虞美人
+……不思議ね。[r]私も少し懐かしいのよ、ここ。
+[k]
+
+＠虞美人
+マスターに引っ張られているのかしら。
+[k]
+
+？2：特には……
+
+＠虞美人
+そ。
+[k]
+
+＠虞美人
+まあ別にいいわ。
+[k]
+
+＠虞美人
+私が感じたものは、[r]マスター由来ではないのね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠蘭陵王
+懐かしいのですか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠虞美人
+……少し、ね。
+[k]
+
+？！
+
+
+[label select02-end]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_25 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
