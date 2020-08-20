@@ -1,0 +1,505 @@
+
+
+
+＄94-05-14-12-2-0
+
+
+[soundStopAll]
+
+[charaSet A 8001600 1 マシュ]
+[charaSet B 3044000 1 虞美人]
+[charaSet C 2042001 1 イリヤ]
+[charaSet D 1098200900 1 紫式部]
+[charaSet E 1098200700 1 アビゲイル]
+[charaSet F 98002000 1 フォウ]
+[charaSet G 1098198300 1 殺生院リリィ]
+[charaSet H 1033300 1 シグルド]
+[charaSet I 7038000 1 ブリュンヒルデ]
+[charaSet J 1098200800 1 巴御前]
+[charaSet K 1098183600 1 モンスター1]
+[charaSet L 1098183600 1 モンスター2]
+[charaSet M 1098183600 1 モンスター3]
+[charaSet O 98115000 1 夢用エフェクト]
+[imageSet P back10001 1]
+[imageSet R back10000 1]
+[charaScale R 1.01]
+
+
+[charaPut O 1200,1200]
+[charaEffect O bit_talk_yume01]
+
+[charaTalk depthOff]
+[charaDepth P 1]
+[charaDepth A 2]
+[charaDepth F 3]
+[charaDepth J 4]
+
+[charaDepth M 5]
+[charaDepth L 6]
+[charaDepth K 7]
+[charaDepth O 8]
+
+[scene 10000]
+
+[bgm BGM_EVENT_80 0.1]
+
+[effect bit_talk_41]
+
+[se ad769]
+[seVolume ad769 0 0]
+[seVolume ad769 1.0 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.5]
+
+？1：はあ、はあっ……
+？！
+
+[effect bit_talk_blight_01]
+[effectStop bit_talk_41]
+[seStop ad769 0.5]
+
+[wt 3.0]
+
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+[effectDestroy bit_talk_blight_01]
+＠殺生院リリィ
+[&お兄さん:お姉さん]、あっちに光があります！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠虞美人
+よくわからないけど、行くしかないでしょう。[r]なんだってここにいるよりマシよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+＠アビゲイル
+っ[line 3]駄目。駄目よ。[r][#そっちに行っては駄目]。
+[k]
+
+[charaFace E 24]
+＠アビゲイル
+嗚呼、いけない、戻ってきて！[r]戻ってきてったら！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠イリヤ
+あの子の足が止まったよ！[r]このまま！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[effect bit_talk_blight_01]
+[fowardEffect bit_talk_41]
+
+[se ad769]
+[wt 0.5]
+[seStop ad769 1.5]
+[wt 0.5]
+
+
+[effect bit_talk_blight_02]
+[cameraMove 2.0 0,0 1.5]
+
+[wt 1.3]
+
+[se ad598]
+
+[fadeout white 1.5]
+[bgmStop BGM_EVENT_80 1.5]
+[wait fade]
+
+
+[wt 0.5]
+
+[cameraHome 0.1]
+[fowardEffectStop bit_talk_41]
+
+[scene 99902]
+
+
+[charaFadein P 0.1 0,-200]
+[charaFadeTime P 0 0.5]
+[effect bit_talk_celebro]
+[effect bit_talk_celebro_back]
+[fowardEffect bit_talk_celebro]
+[fowardEffect bit_talk_celebro_back]
+
+[wt 1.0]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.4]
+
+[wt 1.0]
+
+[charaPut O 1200,1200]
+[charaFadeout P 1.5]
+[effectStop bit_talk_celebro]
+[effectStop bit_talk_celebro_back]
+[fowardEffectStop bit_talk_celebro]
+[fowardEffectStop bit_talk_celebro_back]
+[wt 2.0]
+
+？1：ここは……？
+？！
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠虞美人
+さてね。今いる特異点と似てはいるけど、[r]夢から覚めてはいないようよ。
+[k]
+
+[charaFace B 5]
+＠虞美人
+どうせマトモな場所じゃないわ。[r]気をつけなさい。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠紫式部
+先程の少女は……[wt 0.3][charaFace D 4]どうやら振り切ったようですね。[r]ほっ。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ade255]
+[wt 0.9]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+[charaShake C 0.05 3 3 0.3]
+＠イリヤ
+ぴ[messageShake 0.05 3 3 0.3]ゃー！　なんかいるぅー！？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[se ad27]
+
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.4 1]
+[wt 1.0]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaFace A 19]
+＠マシュ
+声が聞こえたと思えば……先輩！[r]こちらにいらっしゃったのですね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠イリヤ
+あ、マシュさーん！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+＠マシュ
+イリヤさん！[r]はい、お元気そうで何よりです。
+[k]
+
+[messageOff]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 400,-100]
+[se adm21]
+[charaMove F 250,0 0.6]
+[wt 1.0]
+
+＠フォウ
+フォウ、フォウ！
+[k]
+
+[charaFace A 1]
+＠マシュ
+フォウさん！[r]とても寂しかったですよ……！
+[k]
+
+[messageOff]
+
+[charaTalk off]
+
+[se ad183]
+[charaMove A 25,0 0.3]
+[charaMove F 225,0 0.3]
+[wt 0.6]
+[charaMoveReturn A 25,10 0.4]
+[charaMoveReturn F 225,10 0.4]
+[wt 0.4]
+[charaMoveReturn A 25,10 0.4]
+[charaMoveReturn F 225,10 0.4]
+[wt 0.8]
+
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠シグルド
+驚いたな。まさかここでマスターとは。
+[k]
+
+＠シグルド
+夢の中で顔を合わせる妙な事態だが、[r][&貴殿:貴方]も無事なようで何より。
+[k]
+
+[messageOff]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+？1：マシュたちも寝たらここに？
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠マシュ
+はい。どうやらここは……信じがたいことですが、[r]夢の世界のようですね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？2：ここは夢の中……だよね？
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠ブリュンヒルデ
+はい。総合的に判断すると、[r]そうとしか解釈できないような気がします。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠紫式部
+どこがどうとは言えませんが、全体的に[r]ぼんやりしているような気がします……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠虞美人
+アンタたちも追われてきたの？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠マシュ
+いえ、わたしたちは[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaTalk J]
+[charaFace J 12]
+[charaFadein J 0.1 1]
+＠巴御前
+……！
+[k]
+
+[charaFace J 2]
+＠巴御前
+敵襲です！　皆様、戦闘準備を！
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[se ade255]
+[wt 1.0]
+
+[se ad20]
+[charaTalk off]
+[charaFace K 0]
+[charaFadein K 0.4 370,0]
+
+[charaFace L 0]
+[charaFadein L 0.4 30,0]
+
+[charaFace M 0]
+[charaFadein M 0.4 -300,0]
+
+[wt 2.0]
+
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+＠イリヤ
+今度は変なの出た！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠殺生院リリィ
+あれは……[r]この世界の生き物のようですねー。
+[k]
+
+[charaFace G 11]
+＠殺生院リリィ
+わー、[#涎:よだれ]がだらだら。[r]お腹を空かせているのでしょうか？
+[k]
+
+[charaFace G 4]
+＠殺生院リリィ
+でも、困っているふうには見えないので、[r]リリィそそられませんー。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠虞美人
+冷静に分析してる場合じゃないわよ。[r]囲まれてるわ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+＠シグルド
+ふむ。こちらの頭数も負けてはいないが……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 17]
+[charaFadein I 0.1 1]
+＠ブリュンヒルデ
+ここが夢の中ならば、[r]身体が万全に動くとは限りません。
+[k]
+
+＠ブリュンヒルデ
+油断は禁物かと……。
+[k]
+
+？1：一点集中、どこか包囲を破って突破しよう！
+？！
+
+[messageOff]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 12]
+[charaFadein J 0.1 1]
+
+[wt 0.5]
+
+[se ad658]
+[charaCrossFade J 1098198100 0 0.5]
+[wait charaCrossFade]
+[wt 0.5]
+[charaFace J 2]
+＠巴御前
+承りました！[r]ぶいあーる新陰流の真髄、今こそ見せるとき！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth C 2]
+[charaDepth R 1]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+[charaFadeTime R 0.1 0.6]
+＠イリヤ
+（ぶいあーるって何だろう……）
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+

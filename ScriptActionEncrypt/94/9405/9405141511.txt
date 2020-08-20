@@ -1,0 +1,193 @@
+
+
+
+＄94-05-14-15-1-1
+
+[soundStopAll]
+
+[charaSet A 8001600 1 マシュ]
+[charaSet B 1033300 1 シグルド]
+
+[charaSet S 5009040 1 エフェクト用ダミー]
+
+[charaPut S 1200,1200]
+[charaEffect S bit_sepia01_depth]
+
+[scene 58600]
+
+[pictureFrame cut063_cinema]
+
+[fadein black 1.0]
+[wait fade]
+
+
+＠マシュ
+（マスターは、巴さんと人形の残骸を[r]　調べていらっしゃいます）
+[k]
+
+＠マシュ
+（わたしも、そのお手伝いをしなくては[r]　ならないのですが……）
+[k]
+
+＠マシュ
+（どうしてでしょう。[r]　どうして、わたしは……）
+[k]
+
+[messageOff]
+[fadeout white 1.0]
+[wait fade]
+
+[scene 99602]
+
+[pictureFrame]
+
+[charaPut S 1]
+
+[wt 1.0]
+
+[fadein white 1.0]
+[wait fade]
+
+
+[bgm BGM_EVENT_129 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠シグルド
+違和感？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 4]
+[charaFadein A 0.1 2]
+[charaFadein B 0.1 0]
+＠マシュ
+同じ質問になりますが。
+[k]
+
+＠マシュ
+シグルドさんは、違和感……のようなものを[r]覚えてはいらっしゃらないでしょうか？
+[k]
+
+[charaFace B 10]
+＠シグルド
+ふむ。それは、この現状に対して、という[r]ことだろうか？
+[k]
+
+[charaFace A 12]
+＠マシュ
+そうでもあるような、もう少しだけ焦点が[r][#絞:しぼ]られているもののような……
+[k]
+
+[charaFace A 8]
+＠マシュ
+すみません。わたしにもよく理解できては[r]いないのです。ただ[line 3]
+[k]
+
+＠シグルド
+『確かにそれがある』というのを貴方が感じて[r]いるのならば。気のせいにできないのであれば。
+[k]
+
+[charaFace B 0]
+＠シグルド
+それは確かに[#ある]のだろう。
+[k]
+
+[charaFace A 6]
+＠マシュ
+……！
+[k]
+
+＠シグルド
+当方にはそれほど感じられないものではあるが、[r]おそらくそれは、『[#貴方だからこその違和感]』だ。
+[k]
+
+＠シグルド
+そこにこそ意味があると推察する。
+[k]
+
+＠マシュ
+わたし、だからこその……？
+[k]
+
+[messageOff]
+[fadeout white 1.0]
+[bgm BGM_EVENT_129 1.0 0.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+
+[charaPut S 1200,1200]
+[charaEffectStop S bit_sepia01_depth]
+
+[pictureFrame]
+
+[scene 100900]
+[wt 1.0]
+
+[bgm BGM_EVENT_129 1.0 1.0]
+[fadein white 1.0]
+[wait fade]
+
+＠
+ちょうど、廊下に鏡が掛かっていた。[r]なんとはなしに見つめてしまう。
+[k]
+
+＠
+自分。自分だけが感じている違和感。[r]自分だからこそ気付ける違和感。
+[k]
+
+＠
+それは、それは、いったい……？
+[k]
+
+？1：[line 3]マシュ？
+？！
+
+[messageOff]
+
+[masterBranch _Male _Female]
+
+[label _Male]
+[scene 100902 1.5]
+
+[branch _brunchEnd]
+
+[label _Female]
+[scene 100901 1.5]
+
+[label _brunchEnd]
+
+[wt 1.9]
+
+＠
+マスターだ。[r]心配して見に来てくださったのだろう。
+[k]
+
+＠
+とにかく今は、やるべきことをやらなくては[line 3]
+[k]
+
+＠マシュ
+あ、はい！　すみません！[r]マシュ・キリエライト、調査に戻ります！
+[k]
+
+[messageOff]
+[se ade491]
+[wt 0.5]
+[seStop ade491 1.6]
+[scene 100903 1.5]
+[wt 3.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_129 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

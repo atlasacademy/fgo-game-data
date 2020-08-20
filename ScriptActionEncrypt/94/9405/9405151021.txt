@@ -1,0 +1,592 @@
+
+
+
+＄94-05-15-10-2-1
+
+[soundStopAll]
+
+[charaSet A 5041002 1 美遊]
+[charaSet C 6027000 1 武則天]
+[charaSet D 3027001 1 メドゥーサ]
+[charaSet E 2028000 1 エレナ]
+[charaSet F 3028001 1 最も恐ろしきもの]
+[charaSet G 7016001 1 タマモキャット]
+
+[charaSet H 98002000 1 ダミーエフェクト１]
+[charaSet I 98002000 1 ダミーエフェクト１]
+[charaSet J 98002000 1 ダミーエフェクト１]
+
+[cameraMove 0.1 0,0 1.01]
+
+[charaDepth D 9]
+[charaDepth C 9]
+[charaDepth E 5]
+[charaDepth G 1]
+[charaDepth A 1]
+
+[scene 23000]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.3]
+
+[se ad73]
+[effect bit_talk_quickmove]
+[wt 0.1]
+
+[charaFace F 2]
+[charaFadein F 0.1 0,-10]
+[charaMove F 1 0.2]
+[wt 0.4]
+
+＠最も恐ろしきもの
+ふははは！[r]誰がミニイベントのやられ役じゃオラー！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠美遊
+くっ、ふざけた見た目のくせに意外と強い……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠エレナ
+……こうなったら奥の手を使うしかないわね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠メドゥーサ
+それは？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠エレナ
+マハトマパックからの光線を交差させるのよ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠武則天
+待てい、それは確か貴様が『危険だからやるな』と[r]言っておった注意事項ではなかったか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠エレナ
+ええ。でも背に腹は代えられない。[r]ここはそれを利用するしかないと思うわ。
+[k]
+
+＠エレナ
+どうする、女帝様。信じてくれる？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠武則天
+ふん。[#妾:わらわ]の人を見る目は確かじゃ。[r]貴様の目にウソはない。
+[k]
+
+[charaFace C 2]
+
+＠武則天
+[line 3]乗った！　ゆくぞ[#鬼魂討伐隊:ぐいふぇんばすたーず]、[r]この世からあの悪霊を消し去るのじゃ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠美遊
+悪霊なんてそもそも存在しないけれど、マスターと[r]イリヤの露払いだと考えれば、拒否する理由はない。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠メドゥーサ
+私に異論はありません。コレは現実に長く[r]存在していてはいけないものです。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠最も恐ろしきもの
+止めたまえ！　この姿は仮のものとはいえ、[r]存在の全否定はなんか哀しくなる！
+[k]
+
+[messageOff]
+[se ad65]
+[charaPut H 1]
+[charaEffect H bit_talk_beam_shot01]
+[wt 0.2]
+[charaFace F 2]
+[charaShake F 0.04 4 1 1.2]
+[wt 0.3]
+
+[seStop ad65 0.5]
+[wt 0.1]
+
+[se ad65]
+[charaFace F 6]
+[charaPut I 1]
+[charaEffect I bit_talk_beam_shot02]
+[wt 0.2]
+[charaShake F 0.04 4 1 0.6]
+[wt 0.3]
+[charaPut H 2000,2000]
+[charaEffectStop H bit_talk_beam_shot01]
+
+[seStop ad65 0.5]
+
+＠最も恐ろしきもの
+[f large]グワー！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut I 2000,2000]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠武則天
+決まった！[wt 0.4][charaFace C 0]　で、どうなるんじゃ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠エレナ
+うん、過負荷と過干渉を起こして……[r]かなりマハトマもびっくりな事態になるでしょうね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠美遊
+申し訳ないけれど、わたしたちにはその概念が[r]まだよくわからない。わかりやすく言ってほしい。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠エレナ
+あ、そうね。[r]じゃあ、簡単に言うと[line 3]
+[k]
+
+
+[charaFace E 1]
+＠エレナ
+大爆発するわ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠メドゥーサ
+…………。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠美遊
+…………。
+[k]
+
+
+＠サファイア
+…………。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠武則天
+だっ、[wt 0.3][messageShake 0.04 3 3 0.4]脱出じゃー！
+[k]
+
+[messageOff]
+[se ad443]
+[charaFadeout C 0.4]
+[wt 0.4]
+[seStop ad443 0.8]
+[wt 0.2]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_3 1.0 0.4]
+[wait fade]
+
+[pictureFrame cut063_cinema]
+
+[charaPut H 1]
+[charaPut I 1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 0,-80]
+[charaShake F 0.04 4 1 0]
+[wt 1.0]
+
+[se ad65]
+[fadein black 1.0]
+[wt 0.6]
+[seStop ad62 0.5]
+[wt 0.1]
+[se ad65]
+[wt 0.6]
+[wait fade]
+
+
+[charaFace F 2]
+[seStop ad62 0.5]
+＠最も恐ろしきもの
+油断するな、なんとかバスターズよ。[r]たとえ私を倒そうとも、第二第三の私がきっと……
+[k]
+
+[charaFace F 4]
+
+＠最も恐ろしきもの
+いない？　あ、そう。
+[k]
+
+[charaFace F 2]
+
+＠最も恐ろしきもの
+でもまぁ、ネコ科よ不滅なれー！
+[k]
+
+[messageOff]
+[se ad65]
+[charaEffectStop I bit_talk_beam_shot02]
+[wt 0.6]
+[seStop ad65 0.5]
+[wt 0.2]
+
+
+[charaTalk off]
+[charaDepth H 5]
+[charaDepth I 6]
+[charaDepth J 7]
+[charaDepth F 4]
+
+[shake 0.04 3 3 0]
+[charaPut H 326,-50]
+[charaEffect H bit_talk_explosion]
+[se ad609]
+[seVolume ad609 0 0.3]
+[wt 0.6]
+
+[charaFace F 2]
+[charaShake F 0.04 3 4 0]
+
+[charaPut I -296,0]
+[charaEffect I bit_talk_explosion -296,0]
+[se ad609]
+[seVolume ad609 0 0.3]
+[wt 0.7]
+
+[charaPut J 26,-50]
+[charaEffect J bit_talk_explosion 26,-50]
+[se ad609]
+[seVolume ad609 0 0.3]
+[wt 0.3]
+
+[shakeStop]
+[wt 0.4]
+
+[fadeout white 1.5]
+[bgmStop BGM_EVENT_3 1.5]
+[wait fade]
+
+[charaFadeout F 0.1]
+[charaPut H 1200,1200]
+[charaPut I 1200,1200]
+[charaPut J 1200,1200]
+
+[pictureFrame]
+[scene 10000]
+[wt 2.0]
+
+[fadein white 1.5]
+[wait fade]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 99500]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠エレナ
+うーん。威力は充分だけど、[bgm BGM_EVENT_77 0.1][r]やっぱり安定性にまだ難があるわね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠美遊
+そういう問題じゃない気がするけど。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠メドゥーサ
+やはり手に馴染んだ武器が一番です。[r]別にこの鎌が好きなわけではないですが……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠武則天
+爆発するならすると先に言わんか。[r]あやうく全員で生き埋めになるところじゃったぞ。
+[k]
+
+[charaFace C 0]
+
+
+＠武則天
+しかしまあ、霊も猫も片付けられて気分がよい！[r]これでこの特異点には平和が訪れたというわけ[line 3]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.4 0,0]
+[wt 0.4]
+
+＠タマモキャット
+ネコがどうかしたかワン？
+[k]
+
+[charaFace G 6]
+
+＠タマモキャット
+ほう、そんなに[#煤:すす]だらけになって、[r]よっぽど庭駆け回り遊んできたものと見える。
+[k]
+
+[charaFace G 0]
+
+＠タマモキャット
+疲れた身体にはこのキャット特製オムライスが[r][#五臓六腑:ごぞうろっぷ]に染み渡ろうというもの。
+[k]
+
+[charaFace G 1]
+
+＠タマモキャット
+きちんと手を洗ってから[r]食卓という戦場へ向かうのだ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[charaShake C 0.02 3 3 0.5]
+＠武則天
+お……おおお……！
+[k]
+
+
+＠武則天
+まだ、じゃったか。[r]この特異点に住まう悪は。そうか。
+[k]
+
+[charaFace C 2]
+
+＠武則天
+ええい、ならば！
+[k]
+
+＠武則天
+[#妾:わらわ]は諦めんぞ、[r]我が臣民が健やかに暮らせる日が来るまで！
+[k]
+
+＠武則天
+次は[#妖猫討伐隊:やおまおばすたーず]、結成じゃ！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaFace E 0]
+[charaFace A 0]
+[charaFace D 0]
+[charaFadein E 0.1 -330,0]
+[charaFadein A 0.1 80,0]
+[charaFadein D 0.1 360,0]
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 3]
+
+＠メドゥーサ
+確かにお腹は減りましたね。
+[k]
+
+＠エレナ
+そうね。魔力の補給は大事だわ。
+[k]
+
+＠美遊
+そして霊はともかく[r]猫はそれほど脅威とは見なせない。
+[k]
+
+[charaFace A 6]
+
+＠美遊
+イリヤも好きだと思うし。
+[k]
+
+[messageOff]
+[charaTalk C]
+
+[se ad173]
+[charaFadeout E 0.4]
+[charaFadeout A 0.4]
+[charaFadeout D 0.4]
+[wt 0.4]
+[seStop ad173 0.8]
+[wt 1.2]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠武則天
+あ、おい貴様ら、どこへ行く？[r]手を洗うより前にこやつをじゃな！
+[k]
+
+＠武則天
+こ[messageShake 0.04 3 3 0.5]らー、待たんか！[r]女帝の命令じゃぞー……！
+[k]
+
+[messageOff]
+[se ad132]
+[charaFadeout C 0.4]
+[wt 0.4]
+[seStop ad132 0.8]
+[wt 1.2]
+
+[wt 1.0]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
