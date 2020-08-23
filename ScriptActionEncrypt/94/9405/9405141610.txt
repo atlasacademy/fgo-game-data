@@ -1,0 +1,535 @@
+
+
+
+＄94-05-14-16-1-0
+
+
+[soundStopAll]
+
+[charaSet A 5004001 1 ナーサリー・ライム]
+[charaSet B 7038000 1 ブリュンヒルデ]
+[charaSet C 8001600 1 マシュ]
+[charaSet D 1098198300 1 殺生院リリィ]
+[charaSet E 1098200800 1 巴御前]
+[charaSet F 1033300 1 シグルド]
+[charaSet G 3044000 1 虞美人]
+
+[charaSet H 98109200 1 コロラトゥーラ]
+[charaSet I 98109200 1 コロラトゥーラ]
+[charaSet J 1098200300 1 おてもやん人形]
+[charaSet K 1098200300 1 おてもやん人形]
+
+[charaSet L 1022001 1 ジル・ド・レェ]
+[charaSet M 6002001 1 ハサン]
+[charaSet N 7015001 1 エイリーク]
+
+[imageSet O back10000 1]
+[charaScale O 1.01]
+
+[charaSet S 5009040 1 エフェクト用ダミー]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 58600]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠ナーサリー・ライム
+うふふ、うふふふふふ……。
+[k]
+
+[messageOff]
+[se ad456]
+[charaMove A -50,0 0.4]
+[charaFadeout A 0.4]
+[seStop ad456 0.8]
+[wt 1.4]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+＠ブリュンヒルデ
+あそこの階段を下りていったようですね。
+[k]
+
+？1：行ってみよう
+？！
+
+
+[messageOff]
+[se ade74]
+[wipeout leftToRight 1.0 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[seStop ade74 0.8]
+
+[scene 45100]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠マシュ
+マスター、[r]あそこにいらっしゃるのは……！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[pictureFrame cut063_cinema]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+[wt 0.8]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠殺生院リリィ
+すぅ……すぅ……。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[pictureFrame]
+[wt 0.8]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 9]
+[charaDepth S 5]
+[charaDepth D 3]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠巴御前
+リリィ様ですね。[r]どうやら、眠っていらっしゃるようです。
+[k]
+
+
+＠巴御前
+では、救出を……[charaMove E -50,0 0.7][wt 0.8][cueSe Battle bac73][seVolume bac73 0 0.6][charaPut S 1][charaEffect S bit_talk_barrier04][charaFace E 2][charaShake E 0.02 3 3 0.5]あつっ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut S 1200,1200]
+
+
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+＠ブリュンヒルデ
+魔力で編まれた檻に囲まれているようです。[r]相当に強固なようですね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠シグルド
+殺生院リリィ！
+[k]
+
+？1：リリィー！
+？！
+
+[messageOff]
+[wt 1.0]
+
+
+[charaFace F 0]
+＠シグルド
+声をかけても目覚める気配はないな。[r]そして[line 3]
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace F 5]
+[wt 0.1]
+
+[se ad695]
+[wt 0.4]
+[effect bit_talk_gram_slash_03 0,0 H]
+[wt 0.3]
+
+[seStop ad695 0]
+[se ad682]
+[seVolume ad682 0 0.5]
+[se ad170]
+[seVolume ad170 0 0.5]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+[effectDestroy bit_talk_gram_slash_03]
+[charaPut S 1]
+
+[charaFace D 4]
+[charaFadein D 0 1]
+[charaFadeout F 0]
+
+[shake 0.02 3 3 0.4]
+[wt 1.6]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut S 1200,1200]
+[charaEffectStop S bit_talk_barrier04]
+
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠シグルド
+力ずくの破壊は難しいな……。[r]加減を間違えば、殺生院リリィに危害が及ぶ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠ブリュンヒルデ
+私たちのルーンでは如何でしょう……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+＠シグルド
+解錠も不可能ではあるまいが、[r]解析に些かの時間がかかると思われる。
+[k]
+
+[charaFace F 0]
+＠シグルド
+ここは『鍵』を探したほうが早い。
+[k]
+
+？1：鍵……
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠マシュ
+ですが、この魔力の檻には[r]鍵穴や錠前といったものは存在しません。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠巴御前
+……皆様、あそこをご覧ください。[r]ほら、壁に何かが刻まれています。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠マシュ
+これは……文字ですね？[r]ええと。
+[k]
+
+
+[charaFace C 0]
+＠マシュ
+『生きぬ鋼に生きる赤を[#捧:ささ]げよ。[r]　さすれば見えぬ檻からは解放される』
+[k]
+
+＠マシュ
+とありますが……。
+[k]
+
+？1：[&どういう意味かな:どういう意味だろう……]？
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠巴御前
+謎解きです！
+[k]
+
+＠巴御前
+恐らくはこの部屋に、更なる何かがあるはず。[r]生きぬ鋼と生きる赤とやらを探しましょう！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+
+[charaTalk depthOff]
+[charaDepth F 6]
+[charaDepth B 4]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFace B 12]
+[charaFadein F 0.1 0]
+[charaFadein B 0.1 2]
+＠シグルド
+了解した。当方たちはあの柱のあたりを。
+[k]
+
+[charaFace B 0]
+＠ブリュンヒルデ
+はいっ。[r]お供いたしますね。
+[k]
+
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgmStop BGM_EVENT_70 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[charaFadeout F 0.1]
+
+[wt 1.0]
+
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk depthOn]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠巴御前
+さてはこの欠片をカチリとここに嵌め込めば[line 3][wt 0.6][charaFace E 4][r]違いましたか。意味深な形に見えたのですが。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠マシュ
+なかなか手がかりらしきものは[r]見つかりませんね……。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[bgm BGM_EVENT_81 0.8 0.4]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+
+[pictureFrame cut063_cinema]
+[wt 0.8]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 -350,-50]
+＠ナーサリー・ライム
+うーん。だめね。[wt 0.5][charaFace A 1][r]少しお手伝いしてあげようかしら？
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[bgmStop BGM_EVENT_81 0.8]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[pictureFrame]
+[wt 0.8]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+[se ad66]
+[se ad340]
+[wt 0.8]
+
+[charaTalk off]
+[charaDepth H 7]
+[charaDepth I 5]
+[charaDepth J 6]
+[charaDepth K 4]
+
+[charaFace H 0]
+[charaFace I 0]
+[charaFace J 0]
+[charaFace K 0]
+[charaFadein H 0.4 -150,0]
+[charaFadein I 0.4 -350,0]
+[charaFadein J 0.4 150,0]
+[charaFadein K 0.4 350,0]
+[wt 0.4]
+[seStop ad66 0.1]
+[seStop ad340 0.1]
+[wt 0.4]
+
+[bgm BGM_EVENT_80 0.1]
+
+？1：人形の混成部隊が！
+？！
+
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+＠巴御前
+悠長に調査をさせてはもらえないようですね。[r]むっ、[#此度:こたび]は蝋人形も！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaDepth L 6]
+[charaDepth M 5]
+[charaDepth N 4]
+
+[charaFace L 1]
+[charaFadein L 0.1 1]
+[charaFace M 1]
+[charaFadein M 0.1 -350,0]
+[charaFace N 1]
+[charaFadein N 0.1 350,0]
+
+[charaShake L 0.3 2 5 0]
+[wt 0.1]
+[charaShake M 0.2 2 5 0]
+[wt 0.1]
+[charaShake N 0.3 2 5 0]
+
+[charaMove L -10,0 2.8]
+[charaMove M -340,0 2.8]
+[charaMove N 340,0 2.8]
+[wt 2.5]
+
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠マシュ
+不気味にカクカクした動きで、[r]無理矢理歩いています……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠巴御前
+なんというかその、存在感が気にかかりますね！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+[charaFadein O 0.1 0,-200]
+[charaFadeTime O 0.1 0.6]
+＠虞美人
+（まさかさっきの、出来の悪い項羽様の人形まで[r]　いるんじゃないでしょうね……？）
+[k]
+
+＠虞美人
+（それだったら困るわ。いかに不出来でも[r]　私の手で壊すわけにはいかないし、）
+[k]
+
+＠虞美人
+（別の奴らにも壊されたくないし。[r]　かといって放置もできないし……）
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+＠巴御前
+ひとまず牢を開ける方法を探す手は止めて、[r]こちらに対処するしかないでしょう。
+[k]
+
+＠巴御前
+シグルドさまたちはそちら側を……。
+[k]
+
+[charaFace E 11]
+[charaShake E 0.02 3 3 0.4]
+＠巴御前
+あれ、シグルドさま、ブリュンヒルデさまー！？[r]何処に！？
+[k]
+
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

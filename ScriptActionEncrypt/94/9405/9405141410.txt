@@ -1,0 +1,930 @@
+
+＄94-05-14-14-1-0
+[soundStopAll]
+
+[charaSet A 2001300 1 エミヤ]
+[charaSet B 1036300 1 蘭陵王]
+[charaSet C 3044000 1 虞美人]
+[charaSet D 2042001 1 イリヤ]
+[charaSet F 1098200900 1 紫式部]
+[charaSet G 98002000 1 フォウ]
+
+[imageSet H cut202_viedo 1]
+[imageSet I back10000 1]
+[charaScale I 1.01]
+
+[charaSet J 1098199500 1 ゾンビ]
+[charaSet K 1098199600 1 ゾンビ]
+[charaSet L 1098199600 1 ゾンビ]
+
+[imageSet M cut203_diary 1]
+[charaSet N 1098200600 1 ルビー]
+
+[charaDepth I 5]
+[charaDepth H 8]
+
+[scene 100300]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[se ad186]
+[effect bit_talk_41]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠虞美人
+復活。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[effectDestroy bit_talk_41]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠紫式部
+どこか痒いところはございますか？[r]あとお肉が欲しいとか。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠虞美人
+美容室と焼肉屋でも始めるのかしら。
+[k]
+
+[charaFace C 0]
+
+＠虞美人
+……それはともかく、痒いところはないし、[r]肉なんて欲しくもないわ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠紫式部
+なら安心ですね！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠蘭陵王
+では、手がかりを探すとしましょう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠イリヤ
+探すの大変そうだねー……。
+[k]
+
+
+？1：端からじっくりやっていくしかないか……
+
+[branch select01_1]
+
+？2：出たとこ勝負で……
+
+[branch select01_2]
+
+？！
+
+[label select01_1]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠蘭陵王
+堅実ですね。[r]では私と共にやりましょう。
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgm BGM_EVENT_77 1.0 0.4]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[bgm BGM_EVENT_77 1.0 1.0]
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+
+＠蘭陵王
+退屈で面白みのない作業ですが、[r]それだけに確実な成果が出るのは好みですね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠エミヤ
+確かに。
+[k]
+
+[charaFace A 1]
+
+＠エミヤ
+それにしても、話には聞いていたが[r]凄まじい貯蔵量だな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠紫式部
+量だけでなく、サイズも特大ですね……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠エミヤ
+ああ。
+[k]
+
+＠エミヤ
+この牛乳のガロン容器など、[r]いかにもアメリカという感じがしないか？
+[k]
+
+[charaFace A 7]
+＠エミヤ
+と言っても[%1]以外には[r]伝わりにくいな、そうだな……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠紫式部
+あら。
+[k]
+
+[charaFace F 0]
+
+＠紫式部
+小さいですが、ビデオコーナーがあります。[r]こちら、もしかして……。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.2]
+
+
+[se bas2]
+[charaFadein H 0.4 0,-200]
+[charaFadeTime I 0.4 0.6]
+[wt 2.1]
+
+[charaFadeout H 0.4]
+[charaFadeout I 0.4]
+[wt 0.5]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠紫式部
+ありました！
+[k]
+
+＠紫式部
+ビデオコーナーの隅に、[r]白いラベルの貼られているテープで……。
+[k]
+
+＠紫式部
+微弱ながら魔力も感じられますので、[r]こちらで間違いないかと。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠虞美人
+何か見つかった？
+[k]
+
+＠虞美人
+こちらも見つけたわよ。[r]例の日記。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[branch select01_end]
+
+[label select01_2]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠虞美人
+ざっくり適当に探すってことね。[r]じゃ、私もそっち。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠イリヤ
+わたしもー。
+[k]
+
+＠ルビー
+いい加減三人組ですねー。
+[k]
+
+[charaFace D 2]
+
+＠イリヤ
+ル[messageShake 0.02 3 3 0.4]ビーに言われるのはなんか納得いかない！
+[k]
+
+[charaFace D 5]
+
+＠イリヤ
+わたし、ルビーほどいい加減なひと……じゃない、[r]ステッキ見たことないんだけど！
+[k]
+
+＠ルビー
+ははは、まっさかー。
+[k]
+
+＠ルビー
+るびいちゃんはいつでもしっかりものですよ？
+[k]
+
+[charaFace D 2]
+
+＠イリヤ
+みんな[#騙:だま]されないでー！　これはいつでもしっかり[r]わたしたちをテキトーに引っ[#掻:か]き回すって意味だから！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk depthOff]
+[charaDepth C 4]
+[charaDepth D 6]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace D 2]
+[charaFadein C 0.1 2]
+[charaFadein D 0.1 0]
+
+＠虞美人
+イリヤ、少し静かに。
+[k]
+
+[charaFace D 4]
+＠イリヤ
+あっ、ご、ごめんなさい。[r]うるさいの、お嫌いでしたね。
+[k]
+
+[charaFace C 0]
+＠虞美人
+[FFFFFF]？[-]
+[k]
+
+＠虞美人
+別に嫌いじゃないわよ。[r]そも、自然とはうるさいもの。
+[k]
+
+＠虞美人
+落雷は際限のない[#大音声:だいおんじょう]、[r]大滝はあらゆるものを粉砕する音を奏でる。
+[k]
+
+[charaFace D 9]
+＠イリヤ
+へー……。
+[k]
+
+＠虞美人
+まあ、今は少し静かにしないと、[r]探すのに手間取るだけよ。
+[k]
+
+[charaFace D 0]
+＠イリヤ
+は、はい。[r]ごめんなさい。
+[k]
+
+＠虞美人
+……。[r]……。
+[k]
+
+[charaFace D 9]
+＠イリヤ
+えっと、何か……？
+[k]
+
+[charaFace C 4]
+＠虞美人
+いや……サーヴァントって、[r]全盛期なのよね？
+[k]
+
+[charaFace D 12]
+＠イリヤ
+あはは、わたしは例外でして……。
+[k]
+
+[charaFace C 0]
+＠虞美人
+魔法少女？[r]護法少女だっけ？
+[k]
+
+[charaFace D 3]
+＠イリヤ
+ま、まあそんな感じです。
+[k]
+
+[charaFace C 0]
+＠虞美人
+そういえば、あの殺生院とかいうのも[r]全盛期って少女期なのかしら。
+[k]
+
+？1：そうなるのかな
+
+[charaFace C 4]
+＠虞美人
+……不思議ね。
+[k]
+
+＠虞美人
+何となくだけど、もうちょっと成長した姿が[r]真の全盛期って感じがするわ、あの子。
+[k]
+
+[charaFace D 0]
+＠イリヤ
+あ、それはわたしも思うかな。
+[k]
+
+[charaFace D 6]
+＠イリヤ
+同年代なのに、[r]三学年くらい上な感じなんだよね……。
+[k]
+
+？2：何となく違うような……
+
+[charaFace D 10]
+＠イリヤ
+そうですよね。[r]喋っていても何となく、
+[k]
+
+＠イリヤ
+『あ、リリィさんって人生経験積んでるなぁ』[r]って感心しちゃうんです！
+[k]
+
+？！
+
+[charaFace C 4]
+＠虞美人
+まあ、貫禄はあるわね、あの子。[r]四聖……いえ、四凶よりの貫禄だけど。
+[k]
+
+[charaFace D 9]
+＠イリヤ
+アビゲイルちゃん……ちゃん？[r]と何か関係あるのかなって思ったけど。
+[k]
+
+＠イリヤ
+リリィさんに聞いても、[r]特にピンと来るものはなかったみたいだし。
+[k]
+
+[charaFace C 0]
+＠虞美人
+そうなの？
+[k]
+
+[charaFace D 0]
+[charaMoveReturn D -256,-10 0.3]
+＠イリヤ
+（こくこく）[wt 0.3][charaMoveReturn D -256,-10 0.3]
+[k]
+
+[charaFace C 0]
+＠虞美人
+ふーん。[r]じゃあ、あの子がやってきたのはたまたまか……。
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgm BGM_EVENT_77 1.0 0.4]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 1.0]
+
+[bgm BGM_EVENT_77 1.0 1.0]
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk depthOn]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠虞美人
+ん？[r]何ここ、本屋？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠イリヤ
+本屋というには規模が小さいような……。[r]書籍売り場、みたいな感じかな？
+[k]
+
+＠ルビー
+あー、スーパーの片隅に昔よくあったやつですねー。
+[k]
+
+＠ルビー
+週刊少年漫画雑誌が、なぜかいつまでーも[r]残って埃が積もるやつー。
+[k]
+
+＠ルビー
+小学生たちが『わーい新しいやつだー、[r]あっれーなんかコレ読んだことあるわー』
+[k]
+
+＠ルビー
+ってなるアレですねー。
+[k]
+
+[charaFadeTime I 0.1 0.6]
+[charaFace D 6]
+＠イリヤ
+（何だか詳しいなこのステッキ……と思ったけど、[r]　ツッコめばツッコむほど泥沼だから黙ろっと）
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠虞美人
+……。[r]……なるほど。
+[k]
+
+[charaFace C 1]
+
+＠虞美人
+では、この本は何でしょうね。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[se bas2]
+[charaTalk M]
+[charaFadein M 0.4 0,-200]
+[charaFadeTime I 0.4 0.6]
+[wt 1.8]
+
+？1：それは……
+？！
+
+[charaFadeout M 0.4]
+[charaFadeout I 0.4]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠虞美人
+どうやら当たりみたいね。[r]何で書籍売り場にあったかはわからないけど。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+
+＠ルビー
+おおー。[r]誰かの日記、ゲット！
+[k]
+
+[messageOff]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[se ade74]
+[wt 0.4]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+[seStop ade74 0.1]
+[wt 0.4]
+
+＠紫式部
+皆様、こちらにいらっしゃいましたか。
+[k]
+
+＠紫式部
+私たちもビデオテープを見つけました。[r]何かの手がかりになるといいのですが……。
+[k]
+
+[label select01_end]
+？！
+
+[charaFace F 10]
+[bgmStop BGM_EVENT_77 0.6]
+
+＠紫式部
+！
+[k]
+
+[charaFace F 2]
+＠紫式部
+虞美人様！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.2]
+
+[se ade471]
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.4 1]
+[wt 1.2]
+
+[bgm BGM_EVENT_71 0.1]
+
+[charaMoveScale J 1.1 0.6]
+
+[charaMove J 0,15 0.6]
+[wt 0.5]
+[cueSe Battle bac2]
+[wt 0.6]
+
+[charaMoveScale J 1.2 0.6]
+[charaMove J 0,30 0.6]
+[wt 0.5]
+[cueSe Battle bac2]
+[wt 0.6]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠虞美人
+まったく。[r]項羽様の槍を無駄に汚させるんじゃないわよ。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaScale J 1.0]
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+[se bac139]
+[charaEffect J bit_talk_x_slash03 0,100]
+[wt 0.2]
+[charaShake J 0.03 5 5 0.3]
+[wt 0.6]
+
+[charaFadeout J 0.4]
+[charaMove J 0,-50 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠イリヤ
+わ、大丈夫ですか？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+
+[se ade472]
+
+[charaTalk off]
+[charaDepth J 6]
+[charaDepth K 5]
+[charaDepth L 4]
+
+[charaFace J 0]
+[charaFadein J 0.4 0,0]
+[charaFace K 0]
+[charaFadein K 0.4 -350,0]
+[charaFace L 0]
+[charaFadein L 0.4 350,0]
+[wt 0.4]
+
+＠ゾンビ
+ＯＯｏＯＯｏｏＯｏＯｏ……。
+[k]
+
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠虞美人
+まだ残党がいたのね。[r]といっても、これなら楽勝。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_71 1.0]
+
+[charaTalk off]
+
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[charaFace K 0]
+[charaFadein K 0.1 -350,0]
+[charaFace L 0]
+[charaFadein L 0.1 350,0]
+
+＠ゾンビ
+……。[r]……。
+[k]
+
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠虞美人
+む？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+
+[charaFace J 1]
+[charaFadein J 0.1 1]
+[charaFace K 1]
+[charaFadein K 0.1 -350,0]
+[charaFace L 1]
+[charaFadein L 0.1 350,0]
+[charaShake J 0.03 4 4 0.4]
+[charaShake K 0.03 4 4 0.4]
+[charaShake L 0.03 4 4 0.4]
+＠ゾンビ
+ＯＯＯｏＯｏｏＯ○○○○○ｏ！
+[k]
+
+[messageOff]
+[se ad184]
+[se ad788]
+[wt 0.1]
+[charaMoveScale J 1.2 0.4]
+[charaMoveScale K 1.2 0.4]
+[charaMoveScale L 1.2 0.4]
+[charaMove J 0,30 0.4]
+[charaMove K -380,30 0.4]
+[charaMove L 380,30 0.4]
+[charaFadeout J 0.4]
+[charaFadeout K 0.4]
+[charaFadeout L 0.4]
+[wt 0.4]
+[seStop ad184 0.2]
+[seStop ad788 0.2]
+[wt 0.4]
+
+
+[bgm BGM_EVENT_126 0.1]
+
+[charaDepth C 5]
+[charaDepth B 8]
+[charaDepth D 7]
+[charaDepth A 6]
+[charaDepth F 3]
+
+[charaFace C 2]
+[charaFadein C 0.1 -406,0]
+[charaFace B 2]
+[charaFadein B 0.1 -206,0]
+[charaFace D 2]
+[charaFadein D 0.1 0,0]
+[charaFace A 2]
+[charaFadein A 0.1 236,0]
+[charaFace F 2]
+[charaFadein F 0.1 406,0]
+
+＠全員
+[f large]走ったー！？
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠フォウ
+フォウフォウフォウ！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠紫式部
+た、大変です！[r]走るゾンビです！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠蘭陵王
+歩くタイプとどう違うのでしょう！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠紫式部
+情緒も余韻もなく、デタラメに強いです！[r]あと噛みつかれると死にます。
+[k]
+
+[charaFace F 11]
+
+＠紫式部
+そして30秒くらいで[#蘇:よみがえ]り[line 3][r]ゾンビになります！
+[k]
+
+＠紫式部
+走るゾンビはスピード感が売りなので！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠蘭陵王
+なるほど分かりやすい！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠エミヤ
+接敵するぞ、各自戦闘準備！
+[k]
+
+＠エミヤ
+マスターに限らず、[r]噛みつかれることにだけは気を付けろ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+
+＠紫式部
+ちなみに噛みつきだけでなく、[r]爪で傷ついてもダメな場合もあります！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠エミヤ
+……とにかく傷つかないように！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_126 0.5]
+[wait fade]
+[soundStopAll]
+[end]
