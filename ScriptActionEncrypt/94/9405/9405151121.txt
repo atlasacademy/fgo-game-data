@@ -1,0 +1,1657 @@
+
+
+＄94-05-15-11-2-1
+
+[soundStopAll]
+
+[charaSet A 2040000 1 清少納言]
+[charaSet B 1030000 1 鈴鹿御前]
+[charaSet C 7029000 1 織田信長]
+[charaSet D 6040000 1 オキタ・Ｊ・ソウジ]
+[charaSet E 98006000 1 獣人？]
+[charaSet F 98006000 1 エネミーＢ]
+[charaSet G 98006000 1 エネミーＣ]
+[charaSet H 1098167600 1 エネミー(四足獣)]
+
+[charaSet J 2001300 1 エミヤ]
+
+[charaSet O 98006100 1 ダミーエフェクト１]
+[charaSet P 98006100 1 ダミーエフェクト２]
+[charaSet Q 98006100 1 ダミーエフェクト３]
+[charaSet R 98006100 1 ダミーエフェクト４]
+[charaSet S 98006100 1 ダミーエフェクト５]
+
+[imageSet T back10001 1]
+[charaScale T 1.01]
+
+[cameraMove 0 0,0 1.01]
+
+[charaPut O 2000,2000]
+[charaEffect O bit_talk_41]
+
+[charaDepth E 9]
+[charaDepth D 9]
+[charaDepth B 5]
+[charaDepth A 1]
+[charaDepth C 1]
+
+
+[scene 20805]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaFace E 0]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadein E 0.4 0,0]
+[charaFadein F 0.4 -300,0]
+[charaFadein G 0.4 300,0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.4]
+
+[charaMove F -300,-15 0.15]
+[charaMove G 300,-15 0.15]
+[charaMove E 0,-15 0.15]
+[charaMoveScale E 1.02 0.15]
+[charaMoveScale G 1.02 0.15]
+[charaMoveScale F 1.02 0.15]
+[wt 0.15]
+
+[se ad73]
+[charaMoveScale F 0.95 0.15]
+[charaMoveScale G 0.95 0.15]
+[charaMoveScale E 0.95 0.15]
+[charaFadeout G 0.15]
+[charaFadeout F 0.15]
+[charaFadeout E 0.15]
+[charaMove E 0,5 0.15]
+[charaMove G 300,5 0.15]
+[charaMove F -300,5 0.15]
+[wt 0.15]
+
+[se bac5]
+[effect bit_talk_ichimon01re 0,-80]
+[wt 0.5]
+
+[se bac2]
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.2 0,-30]
+[charaMove B 0,0 0.15]
+[wt 0.15]
+
+[effectDestroy bit_talk_ichimon01re]
+
+[charaFace B 11]
+
+＠鈴鹿御前
+このっ、逃げんなっ！
+[k]
+
+＠鈴鹿御前
+……なんか、どんどん数が増えてるし！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0,0]
+
+＠オキタ・Ｊ・ソウジ
+１人減って、ここが仕留め時と見ましたか。[r]こうなるともう、止まりませんね……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 0,0]
+＠清少納言
+イェーイ、あたしちゃん大ピンチー！
+[k]
+
+[charaFace A 6]
+＠清少納言
+いや、ピンチなんだからイェーイは無いよな。[r]もっとこう……イヤーン？
+[k]
+
+＠清少納言
+パイセンはどう思う？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,0]
+
+＠鈴鹿御前
+あー……。[r]いや、どうでもいいかな……。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_3 1.0 0.4]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 20806]
+
+[pictureFrame cut063_cinema]
+[wt 1.0]
+
+[se ad347]
+[seVolume ad347 0 0]
+[seVolume ad347 1.0 0.1]
+
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.5]
+
+[se ade255]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 0,-80]
+[charaMove E 0,-50 0.4]
+[wt 0.8]
+
+＠獣人？
+…………。
+[k]
+
+[bgmStop BGM_EVENT_3 1.0]
+[seStop ad347 1.0]
+＠C：？？？
+戦にも加わらず、高みの見物か。
+[k]
+
+＠C：？？？
+……貴様が[#大将首:リーダー]じゃな。
+[k]
+
+＠獣人？
+！[messageShake 0.03 4 4 0.3]？
+[k]
+
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ade255]
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.4 50,-50]
+[charaMove C 0,-50 0.4]
+[wt 0.4]
+[seStop ade255 0.4]
+[wt 0.4]
+＠織田信長
+遅いわーーーー！！　うつけ殺法！！[r]ヘシKill・ハセーベクラーッシュ！！！
+[k]
+
+[messageOff]
+[se ad110]
+[charaMove C -100,-50 0.3]
+[charaFadeout C 0.3]
+[wt 0.5]
+
+[cueSe Battle bac151]
+[seVolume bac151 0 0.6]
+[effect bit_talk_13 150,180]
+[effect bit_talk_14 150,180]
+[wt 0.2]
+
+[cueSe Battle bac151]
+[seVolume bac151 0 0.6]
+[effect bit_talk_13 -20,0]
+[effect bit_talk_14 -20,0]
+[wt 0.2]
+
+[se adm43]
+[cueSe Battle bac151]
+[seVolume bac151 0 0.6]
+[effect bit_talk_13 -170,-100]
+[effect bit_talk_14 -170,-100]
+
+[charaTalk off]
+[charaDepth T 10]
+
+[charaFadein T 0.1 0,-200]
+[wt 0.1]
+
+[charaTalk E]
+[charaFadein E 0 0,-50]
+[charaShake E 0.03 4 4 0.5]
+[charaFadeout T 0.1]
+[wt 0.9]
+
+[charaTalk on]
+
+＠獣人
+グルオオオオオーーーー！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-50]
+＠織田信長
+うはははは！[bgm BGM_EVENT_4 0.1]
+[k]
+
+＠織田信長
+見たか、これぞ！[r]『おぬしらと一緒だと恥ずかしいし』大作戦！
+[k]
+
+＠織田信長
+堂々巡りするというのなら、逃げたその先が[r]背後に繋がってるのも道理じゃからな！
+[k]
+
+＠織田信長
+敵の大将討ち取ったりじゃー！
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[scene 20805]
+[pictureFrame]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 0,0]
+
+＠鈴鹿御前
+あ……なんだ、そういうこと。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,0]
+＠清少納言
+ふうん。
+[k]
+
+＠清少納言
+ジェイジェイってばさー。[r]これ最初っから気付いてたよね？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 0,0]
+
+＠オキタ・Ｊ・ソウジ
+さぁ、どうでしょうね。
+[k]
+
+[charaFace D 1]
+
+＠オキタ・Ｊ・ソウジ
+あんぽんたんのノッブがやる事なんて、[r]予想するだけ無駄ですからね！
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[scene 20806]
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-50]
+
+＠織田信長
+聞こえとるぞ！[r]誰があんぽんたん大名じゃ！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaScale E 1.0]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 0,-80]
+[charaMove E 0,-50 0.4]
+[charaShake E 0.04 4 0 0.4]
+[wt 0.4]
+
+＠獣人？
+グ……ググ……。
+[k]
+
+[bgmStop BGM_EVENT_4 1.0]
+[se ad564]
+＠獣人？
+…[messageShake 0.02 3 3 0.4]…グアアアアアア！！
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 0.2]
+
+[se ad466]
+[charaMove E 0,-55 0.5]
+[charaShake E 0.04 3 1 0.5]
+[wt 0.7]
+
+[se ad466]
+[charaFadeout E 0.5]
+[charaMove E 0,-65 0.5]
+[charaShake E 0.04 4 1 0.5]
+[wt 0.9]
+
+[charaFace H 0]
+[charaFadein H 0.5 0,-50]
+[charaMove H 0,-30 0.4]
+[charaShake H 0.04 4 0 0.4]
+[wt 0.5]
+
+[se ad19]
+[charaShake H 0.04 3 3 1.8]
+[wt 1.4]
+
+[seStop ad19 0.4]
+[wt 0.4]
+
+[charaFadeout H 0.1]
+[wt 0.2]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-50]
+
+＠織田信長
+げえーーー！？[bgm BGM_EVENT_80 0.1][r]なんか化けおったーーー！？
+[k]
+
+[charaFace C 4]
+[charaMove C 0,-65 0.6]
+[charaShake C 0.04 3 3 0.6]
+
+＠織田信長
+そしてわし、今の大技で魔力がもう限界ー！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[scene 20805]
+[pictureFrame]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,0]
+
+＠オキタ・Ｊ・ソウジ
+いけません！[r]敵の大将がまだ元気いっぱいです！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,0]
+＠清少納言
+ジェイジェイ、[r]ここはあたしちゃんにまかせろ！
+[k]
+
+[charaFace A 2]
+＠清少納言
+うおおおおお！！[r][#蹴鞠:けまり]をデカブツの頭にシューッ！！
+[k]
+
+[messageOff]
+
+[charaTalk off]
+
+[se bas2]
+[charaEffect P bit_talk_20]
+[wt 1.4]
+
+[charaMoveScale A 0.98 0.4]
+[charaMove A 0,-10 0.4]
+[charaMove P -90,-120 0.4]
+[wt 0.6]
+
+[charaMoveScale A 1.02 0.1]
+[charaMove A 0,0 0.1]
+[wt 0.06]
+
+[charaPut O -90,-120]
+[charaEffectStop P bit_talk_20]
+[wt 0.1]
+
+[se bac10]
+[effect bit_talk_14 -90,-120]
+[wt 0.7]
+[charaPut O -2000,-2000]
+
+[wipeout rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+
+[scene 20806]
+
+[charaFadeout A 0.1]
+[charaPut O 0,0]
+[pictureFrame cut063_cinema]
+
+[charaFace H 0]
+[charaFadein H 0.1 0,20]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+[wt 0.3]
+
+[se ade255]
+[wt 0.6]
+
+[charaFace E 0]
+[charaFadein E 0.3 320,-60]
+[charaMove E 320,-30 0.3]
+[wt 0.4]
+
+[charaTalk on]
+＠E：獣人
+ウガッ！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk off]
+[charaMove E 0,20 0.25]
+[wt 0.2]
+
+
+[se bac11]
+[seVolume bac11 0 0.7]
+[fowardEffect bit_talk_13 0,60]
+[wt 0.3]
+[charaPut O -2000,-2000]
+[charaShake E 0.02 3 3 0.4]
+[wt 0.6]
+
+[wipeout rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+
+[charaFadeout H 0.1]
+[charaFadeout E 0.1]
+
+[scene 20805]
+[pictureFrame]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 0,0]
+＠清少納言
+な……何ィー！？
+[k]
+
+＠清少納言
+ナイスセービングだ！[r]こいつら只者じゃないぞ、パイセン！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 0,0]
+
+＠鈴鹿御前
+敵を褒めてどうするし！[r]ええい……！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[se ad223]
+[charaFace F 0]
+[charaFadein F 0.3 -286,30]
+[charaMove F -256,0 0.3]
+[wt 0.35]
+
+[se ad223]
+[charaFace G 0]
+[charaFadein G 0.3 286,30]
+[charaMove G 256,0 0.3]
+[wt 0.2]
+
+[se ad223]
+[charaFace E 0]
+[charaFadein E 0.3 0,30]
+[charaMove E 0,0 0.3]
+[wt 0.5]
+
+[se ade215]
+
+＠獣人
+グルル……！[wt 0.4][seStop ade215 0.8]
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 0,0]
+
+＠鈴鹿御前
+もうっ、邪魔すんなし！[r]そこどけってのー！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0,0]
+
+＠オキタ・Ｊ・ソウジ
+くっ……。
+[k]
+
+＠オキタ・Ｊ・ソウジ
+こんな時に、ジェットがあれば……。[r]空を飛べたなら……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,0]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+＠清少納言
+空……。
+[k]
+
+[charaFace A 2]
+＠清少納言
+！[messageShake 0.02 3 3 0.3]！[r]ジェイジェイ、これだ！
+[k]
+
+[messageOff]
+[se ade434]
+[wt 0.1]
+[charaMoveReturn A 0,10 0.4]
+[wt 1.0]
+
+[bgm BGM_EVENT_63 0.1]
+
+＠清少納言
+[f large]傘！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 0,0]
+
+＠オキタ・Ｊ・ソウジ
+……はい？
+[k]
+
+＠オキタ・Ｊ・ソウジ
+傘を空に向けて、一体何を……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 0,0]
+
+＠鈴鹿御前
+あっ……なるほど！[r]だったら……。
+[k]
+
+[charaFace B 1]
+＠鈴鹿御前
+私は、この[#鞘:さや]じゃん！
+[k]
+
+[messageOff]
+[se ad51]
+[charaMoveReturn B 0,10 0.4]
+[wt 1.0]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[scene 20806]
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-50]
+
+＠織田信長
+となれば……[r]当然わしはこのギターじゃな！
+[k]
+
+[charaFace C 11]
+
+＠織田信長
+来い、沖田！！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[scene 20805]
+[pictureFrame]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0,0]
+
+＠オキタ・Ｊ・ソウジ
+傘、[#鞘:さや]、ギター……？
+[k]
+
+[charaFace D 2]
+＠オキタ・Ｊ・ソウジ
+！！[r]いえ、わかりました！
+[k]
+
+＠オキタ・Ｊ・ソウジ
+空は飛べずとも……[#３歩あれば充分]！
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 0.1]
+
+[se ad443]
+[charaMoveScale D 1.08 0.2]
+[wt 0.2]
+[seStop ad443 0.4]
+[wt 0.2]
+
+[charaMove D 0,-80 0.4]
+[wt 0.4]
+
+[se ad73]
+[effect bit_talk_quickmove]
+[charaFadeout D 0.1]
+[wt 0.3]
+
+[wipeout leftToRight 0.4 1.0]
+[wait wipe]
+
+[charaPut O 0,0]
+
+
+[wt 0.4]
+
+[wipein rightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaFace A 2]
+[charaFadein A 0.3 -40,-190]
+[charaMove A -80,-160 0.3]
+[wt 0.3]
+
+[se bac10]
+[effect bit_talk_14]
+[shake 0.04 1 2 0]
+[charaFadeout A 0.2]
+[charaMove A -120,-190 0.2]
+[wt 0.2]
+
+
+＠オキタ・Ｊ・ソウジ
+傘を足場にして、一歩音越え……！
+[k]
+
+[messageOff]
+[wt 0.2]
+[charaFace B 10]
+[charaFadein B 0.3 20,-140]
+[charaMove B 60,-110 0.3]
+[wt 0.3]
+[se bac10]
+[effect bit_talk_14]
+[shake 0.04 2 3 0]
+[charaFadeout B 0.2]
+[charaMove B 100,-140 0.2]
+[wt 0.2]
+
+
+＠オキタ・Ｊ・ソウジ
+二歩無間……！
+[k]
+
+[messageOff]
+[charaMoveScale H 0.95 0.1]
+[wt 0.2]
+[charaFace C 11]
+[charaFadein C 0.3 -80,-133]
+[charaMove C -80,-103 0.3]
+[wt 0.3]
+[se bac10]
+[effect bit_talk_14]
+[shake 0.03 3 3 0]
+[charaFadeout C 0.2]
+[charaMove C -80,-133 0.2]
+[wt 0.2]
+
+
+＠オキタ・Ｊ・ソウジ
+[f large]三歩絶刀[line 3]！
+[k]
+
+[messageOff]
+[charaTalk on]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 0,-10]
+[charaMove H 0,-30 0.4]
+[charaMoveScale H 1.08 0.4]
+[wt 0.3]
+
+＠H：魔性の獣
+[f large]！？
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[charaMoveScale D 1.0 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.2 0,-40]
+[charaMoveScale D 1.04 0.2]
+[wt 0.2]
+[charaPut O 0,0]
+
+＠オキタ・Ｊ・ソウジ
+『[#無明三段突き:む み ょ う さ ん だ ん づ き]』！！[r]もらったぁー！！
+[k]
+
+[messageOff]
+[charaMoveScale D 1.01 0.2]
+[wt 0.2]
+[se ade285]
+[charaFadeout D 0.2]
+[charaMoveScale D 1.05 0.2]
+[wt 0.2]
+
+[charaMoveScale H 1.5 0.4]
+
+[wipeout circleIn 0.2 1.0]
+[wait wipe]
+
+[shakeStop]
+[scene 10000]
+[charaPut O 2000,2000]
+[pictureFrame]
+[wt 0.1]
+
+[wipein circleOut 0.1 1.0]
+[wait wipe]
+
+[bgmStop BGM_EVENT_63 1.0]
+
+[se bac151]
+[seVolume bac151 0 0.4]
+[fowardEffect bit_talk_14]
+[wt 0.2]
+[se bac151]
+[seVolume bac151 0 0.6]
+[fowardEffect bit_talk_14]
+[wt 0.15]
+[se bac151]
+[seVolume bac151 0 0.8]
+[fowardEffect bit_talk_14]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 20806]
+[wt 0.1]
+
+[charaMoveScale D 1.0 0.1]
+
+[charaScale H 1.1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 0,-60]
+[charaMoveScale H 0.9 0.3]
+[charaShake H 0.03 5 5 0.8]
+
+[fadein black 0.2]
+[wait fade]
+[wt 0.2]
+
+[se ad19]
+＠魔性の獣
+グオ……オオオオオオ……！！
+[k]
+
+
+[messageOff]
+[wt 0.2]
+
+[se ad42]
+[charaSpecialEffect H enemyErasure 0,0 1.5]
+[wt 0.7]
+
+[wait charaSpecialEffect H]
+[wt 1.2]
+
+[se ad732]
+[fadeout white 1.8]
+[wait fade]
+
+
+[scene 99901]
+[pictureFrame]
+[wt 1.0]
+
+[fadein white 1.8]
+[wait fade]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,0]
+＠清少納言
+あれ？
+[k]
+
+＠清少納言
+何かさっきまでと景色が違うっつーか……。[bgm BGM_EVENT_77 0.1][r]ここ、みんなのいるコテージの近くじゃんか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 0,0]
+
+＠鈴鹿御前
+気付かないうちに森を抜けて、[r]外に出ちゃってたわけ？
+[k]
+
+[charaFace B 4]
+＠鈴鹿御前
+ていうか、なんか……。[r]空がまだ明るくない？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,0]
+
+＠オキタ・Ｊ・ソウジ
+恐らくですが……。
+[k]
+
+＠オキタ・Ｊ・ソウジ
+私たちが森から出られなかったのは、[r]先ほどの魔性による幻術だったのでしょう。
+[k]
+
+[charaFace D 14]
+＠オキタ・Ｊ・ソウジ
+その魔性を倒す事で術が解け、[r]こうして出てこられた……のはいいんですが。
+[k]
+
+＠オキタ・Ｊ・ソウジ
+なんというか、私達はコテージのすぐ近くで[r]ぐるぐると走り回ってたんじゃないですかね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 0,0]
+
+＠清少納言
+うーむ。[wt 0.4][charaFace A 7][r]想像すると結構情けないな、それ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,0]
+
+＠織田信長
+うははは！
+[k]
+
+＠織田信長
+わしの機転で敵を倒すだけでなく、[r]無事に戻ってこれたというわけじゃな！
+[k]
+
+[charaFace C 10]
+＠織田信長
+遠慮なく感謝してくれていいんじゃぞ！[r]弱小人斬りサークルの姫！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,0]
+
+＠オキタ・Ｊ・ソウジ
+魔性を倒したのは私じゃないですか！？
+[k]
+
+[charaFace D 14]
+
+＠オキタ・Ｊ・ソウジ
+あ、いえ……。
+[k]
+
+[charaFace D 0]
+
+＠オキタ・Ｊ・ソウジ
+ノッブはともかく、[r]お二人の協力があってこそですね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 0,0]
+＠清少納言
+いいってことよー！[r]これが友情のチカラってやつだ！
+[k]
+
+[charaFace A 0]
+＠清少納言
+だよね、パイセン？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,0]
+
+＠鈴鹿御前
+ま、そーゆーこと。[r]私らの間に遠慮なんかいらないっしょ。
+[k]
+
+[charaFace B 14]
+＠鈴鹿御前
+あと、ノッブには感謝しなくていいと思うし。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,0]
+
+＠織田信長
+え、ひどくない？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[se ad452]
+[wt 0.8]
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.4 0,0]
+[wt 0.4]
+[seStop ad452 0.4]
+[wt 0.4]
+
+＠エミヤ
+騒がしいと思って来てみれば、見知った面子か。[r]先行調査をしていた……ワケはないか。
+[k]
+
+[charaFace J 9]
+＠エミヤ
+まあ、なんだ。気が合う面子なのは分かるよ。
+[k]
+
+＠エミヤ
+カーチェイスの後はバーベキュー。[r]そしてビールとファミリーの話。
+[k]
+
+＠エミヤ
+そういうワイルドな速度組、という事だろ？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 -50,0]
+
+＠オキタ・Ｊ・ソウジ
+いえ、待ってください！
+[k]
+
+＠オキタ・Ｊ・ソウジ
+私もそのグループにカウントされるのは[r]あまりに納得がいかないのですが！？
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth D 4]
+[charaDepth B 5]
+[charaDepth C 6]
+[charaDepth A 7]
+
+[se bac2]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.3 190,0]
+[charaMove B 150,0 0.3]
+[wt 0.2]
+
+＠鈴鹿御前
+私もじゃん！
+[k]
+
+[messageOff]
+[se bac2]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.3 320,0]
+[charaMove C 280,0 0.3]
+[charaMove D -120,0 0.3]
+[charaMove B 65,0 0.3]
+[wt 0.2]
+
+＠織田信長
+じゃあ、わしも！
+[k]
+
+[messageOff]
+[se bac2]
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.3 390,0]
+[charaMove A 350,0 0.3]
+[charaMove C 160,0 0.3]
+[charaMove D -190,0 0.3]
+[charaMove B -20,0 0.3]
+[wt 0.2]
+
+＠清少納言
+あたしちゃんも！
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 1.2]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaTalk on]
+[charaTalk J]
+[charaFace J 6]
+[charaFadein J 0.1 0,0]
+＠エミヤ
+……フッ。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,0]
+＠清少納言
+あっ！　こいつ今、[r]慈愛に満ちた微笑みを浮かべやがった！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,0]
+
+＠織田信長
+じゃが、例のブツを見ても[r]笑っていられるかの！？
+[k]
+
+[charaFace C 1]
+
+＠織田信長
+見せてやれい、なぎこ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 0,0]
+
+＠清少納言
+あいよー！[r]採れたてピチピチの山の幸でいっ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 10]
+[charaFadein J 0.1 0,0]
+＠エミヤ
+ほう、これは……！
+[k]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaFace J 4]
+＠エミヤ
+ふむ……。
+[k]
+
+＠エミヤ
+……毒キノコだな。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,0]
+
+＠清少納言
+あれぇー？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,0]
+
+＠織田信長
+い[messageShake 0.03 3 3 0.5]、いやそんな筈はないんじゃが！[r]セップクとかいうキノコなんじゃが！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 0,0]
+＠エミヤ
+セップ[#茸:たけ]、ポルチーニか。
+[k]
+
+＠エミヤ
+確かによく似ているが、[r]こいつは毒性を持った別の品種だよ。
+[k]
+
+[charaFace J 4]
+
+＠エミヤ
+そもそもが、そこの森で収穫した物だろう？[r]こいつも充分に周囲の呪力を吸っていて……。
+[k]
+
+
+
+
+
+
+[charaFace J 7]
+＠エミヤ
+こんな物を口にすれば、[r]霊基にダメージを受けかねないぞ。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 0,0]
+
+＠清少納言
+マ[messageShake 0.03 4 4 0.5]ーーージーーーでーーー！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 9]
+[charaFadein J 0.1 0,0]
+
+＠エミヤ
+森の分解者、[r]地球でもっとも種目の多い菌類を舐めてはいけない。
+[k]
+
+[charaFace J 8]
+＠エミヤ
+オレがいなければ危ない所だったな。[r]いやいや、礼などは不要だとも。
+[k]
+
+＠エミヤ
+さて、もうじき夕食だ。[r]手を洗って、行儀よく待っているといい。
+[k]
+
+[messageOff]
+[se ad452]
+[charaFadeout J 0.4]
+[charaMove J -50,0 0.4]
+[wt 0.4]
+[seStop ad452 0.4]
+[wt 0.8]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 0,0]
+
+＠オキタ・Ｊ・ソウジ
+ものすごい保護者顔でしたね……[r]あのアーチャー、あんなキャラでしたっけ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 0,0]
+
+＠鈴鹿御前
+確かに、めっちゃいいお兄さん風味だったし。[r]あのアーチャー、アレが素ってワケ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,0]
+＠清少納言
+ちぇー。[r]調子狂っちゃうの。
+[k]
+
+[charaFace A 0]
+
+＠清少納言
+でもま、エミやんが言うなら間違いないか。[r]このキノコは処分すんべ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,0]
+
+＠織田信長
+しかしのう……。[r]結構美味そうではないか。
+[k]
+
+[charaFace C 0]
+
+＠織田信長
+ちょっとだけなら大丈夫じゃね？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,0]
+＠清少納言
+えー、駄目だってば。[r]毒キノコだって言われたばっかじゃん。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,0]
+
+
+＠織田信長
+いいじゃろ別に！　わしらサーヴァントじゃし[r]ひとつくらい余裕余裕！　多分の！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,0]
+＠清少納言
+お客様、おひとつでよろしいですか！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 0,0]
+
+＠鈴鹿御前
+本[messageShake 0.03 3 3 0.4]当にバカか！[r]おなか壊れてしまえ！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[se adm13]
+[seVolume adm13 0 0]
+[seVolume adm13 1.0 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 2.0]
+
+[seStop adm13 0.6]
+[wt 0.6]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,0]
+＠オキタ・Ｊ・ソウジ
+やれやれ……。
+[k]
+
+＠オキタ・Ｊ・ソウジ
+結局のところ、得る物も何もなく、[r]湖でも泳げず……。
+[k]
+
+[charaFace D 15]
+
+＠オキタ・Ｊ・ソウジ
+わりと散々な一日でしたね？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 0,0]
+＠鈴鹿御前
+ま、確かにそうかも。[r]めちゃくちゃなピクニックだったけど……。
+[k]
+
+[charaFace B 7]
+
+＠鈴鹿御前
+でもこんな風にして、[r]みんな無事に帰ってこられたワケだし？
+[k]
+
+[charaFace B 13]
+
+＠鈴鹿御前
+それにほら、夜だと思ってたらまだ夕方だなんて、[r]ちょっと得した気分っしょ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 0,0]
+
+＠清少納言
+それなー！[r]夜はこれからだぞ、ジェイジェイ！
+[k]
+
+[charaFace A 0]
+
+＠清少納言
+今日が散々で終わるかどうかなんて、[r]まだわからないんだからさ。
+[k]
+
+[charaFace A 17]
+
+＠清少納言
+残りの時間は全部、[r]楽しい事で埋め尽くしちゃおうぜ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 0,0]
+
+＠オキタ・Ｊ・ソウジ
+そ、そうですか……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 0,0]
+
+＠清少納言
+とりま、もっかいみんなで空飛んで、[r]てっぺんから夕陽でも眺めちゃう？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,0]
+
+＠オキタ・Ｊ・ソウジ
+それだけは遠慮しておきます！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+＠織田信長
+フッ……。[r]良いではないか。
+[k]
+
+＠織田信長
+夏は始まったばかりじゃ。[r]湖に空に、存分にエンジョイするがよかろう。
+[k]
+
+＠織田信長
+なにせ、おぬしは……。
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.0]
+[wt 0.2]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 0,0]
+[charaEffect S bit_talk_06]
+[wt 0.8]
+
+＠織田信長
+ジェット天然理心流ビキニ！[r]オキタ・Ｊ・ソウジなのじゃからな！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut S 2000,2000]
+
+[bgm BGM_EVENT_27 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 0,0]
+
+＠清少納言
+な[messageShake 0.03 3 3 0.5]んか消えかけとるーーーー！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 0,0]
+
+＠鈴鹿御前
+こいつ本当に食いやがったし！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 0,0]
+＠オキタ・Ｊ・ソウジ
+いやいや、キノコ食べて死ぬとか、[r]天ぷら食べて死んだ大名じゃないんですから……、
+[k]
+
+[charaFace D 14]
+
+＠オキタ・Ｊ・ソウジ
+って、それって誰でしたっけ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut S 0,0]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 0,0]
+
+＠織田信長
+うっはっはっは！　それ竹千代！
+[k]
+
+[charaFace C 1]
+＠織田信長
+ま、是非もないよネ！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_27 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

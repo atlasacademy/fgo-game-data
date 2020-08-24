@@ -1,0 +1,218 @@
+
+＄94-05-14-21-4-0
+
+[soundStopAll]
+
+
+[charaSet A 1033300 1 シグルド]
+[charaSet B 3044000 1 虞美人]
+[charaSet C 1098199800 1 徐福]
+[charaSet D 1036000 1 蘭陵王]
+[charaSet E 1098200400 1 殺人鬼]
+[charaSet F 98104300 1 ゴースト]
+
+[scene 100400]
+
+[bgm BGM_EVENT_24 0.1]
+
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.1]
+
+
+[se ad7]
+[charaMoveScale E 1.1 0.3]
+[charaMove E 0,10 0.3]
+[charaFadeout E 0.3]
+[wt 0.3]
+
+[se bac143]
+[charaEffect F bit_talk_v_slash02]
+[wt 0.4]
+
+[flashin once 0.2 0.1 FFFFFFAF FFFFFF00]
+[effect bit_talk_14]
+[wt 0.1]
+[charaFadeout F 0]
+[charaPut F 1200,1200]
+[se ad32]
+[se ad170]
+
+
+[charaScale A 1.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[se ad671]
+[charaShake A 0.04 3 3 0.4]
+[charaMoveScale A 1.0 0.4]
+[charaMove A 0,0 0.4]
+[wt 0.7]
+＠シグルド
+ぐっ……！[r]当方、愛の力で何とか耐えたが……！
+[k]
+
+[charaFace A 2]
+＠シグルド
+次は無理だ。[r]虞美人殿！　後は！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠虞美人
+了解！[r]まだ間に合うはず……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 19]
+[charaFadein C 0.1 1]
+＠徐福
+ぴゃ、ぴゃあ！[r]うう、出……出てこい蘭陵王！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠虞美人
+！？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 1.0]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+
+
+[cueSe Battle bac166]
+[charaEffect D bit_talk_shadow_aura01]
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 0]
+[charaSpecialEffect D wipeTimeRe 1 0.7]
+[wt 0.7]
+[charaFadein D 0.0 1]
+[wt 0.8]
+[charaEffectDestroy D bit_talk_shadow_aura01]
+[wt 0.2]
+
+[charaFace D 1]
+＠蘭陵王
+……フッ。[bgm BGM_EVENT_80 0.1]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠虞美人
+蘭陵王、おまえ[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠蘭陵王
+残念ですが、[r]今の私は徐福殿に[#与:くみ]する者。
+[k]
+
+＠蘭陵王
+闇に堕ち、暗黒に失墜した男です。[r]そう、[#喩:たと]えるなら[line 3]
+[k]
+
+[charaFace D 5]
+＠蘭陵王
+[#喩:たと]えるなら[line 3][r]何でしたっけ、徐福殿。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠徐福
+た、[#喩:たと]えるなら、[r]ダーク・ラン！
+[k]
+
+＠徐福
+暗闇を疾走するワイルド＆スラッシュ！[r]ぐっ様を追い詰める恐怖の男！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠D：ダーク・ラン
+だ、そうです。[r]という訳で、お覚悟を！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠虞美人
+くっ……後輩、手伝いなさい！[r]敵に回った蘭陵王は恐ろしいわよ！
+[k]
+
+[branchQuestNotClear lblNotClear 91603501]
+
+？1：思い出しますね、シミュレーターの戦い
+？！
+
+[charaFace B 4]
+＠虞美人
+余計なことは思い出さなくていいから。[r]私はもう忘れたわ綺麗さっぱり。
+[k]
+
+[branch lblConf]
+
+[label lblNotClear]
+[branch lblConf]
+
+[label lblConf]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠D：ダーク・ラン
+では参ります！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

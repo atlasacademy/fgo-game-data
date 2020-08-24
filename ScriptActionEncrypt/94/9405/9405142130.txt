@@ -1,0 +1,285 @@
+
+＄94-05-14-21-3-0
+
+
+[soundStopAll]
+
+[charaSet A 1098199800 1 徐福]
+[charaSet B 3044000 1 虞美人]
+[charaSet C 1033300 1 シグルド]
+[imageSet D cut206_Immortality 1]
+[charaSet E 98115000 1 エフェクト用１]
+[charaSet F 98115000 1 エフェクト用２]
+[charaSet G 98115000 1 エフェクト用３]
+[imageSet H back10000 1]
+[charaScale H 1.01]
+
+[scene 100400]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠徐福
+ぐっ様～。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠虞美人
+……久しぶりね、徐福。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠徐福
+いえ、全然久しぶりじゃないですけど？[r]ついさっきぶりですけど？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠虞美人
+ええ、そうね。[r]でも、やっぱり久しぶりよ。
+[k]
+
+＠虞美人
+さっきは色々あって、[r]ロクな挨拶もできなかったからね。
+[k]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaFace B 5]
+＠虞美人
+[line 3]という訳で、[r]改めてブッ飛ばしに来たわ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠徐福
+ふふふ。[r]わざわざ死ににやってくるなんて。
+[k]
+
+＠徐福
+ありがたいことです。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠虞美人
+かもしれないわね。[r]じゃ、私が死ぬか貴方が死ぬか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠徐福
+死ぬのは、当然ぐっ様です！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠虞美人
+さあて。[r]それは[line 3]どうかしら？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠シグルド
+よし。
+[k]
+
+＠シグルド
+お互いに挨拶も済んだところで、[r]それではこれより戦争に入る。
+[k]
+
+[charaFace C 2]
+＠シグルド
+行くぞ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠虞美人
+ええ。[r]ついてきなさい、後輩！
+[k]
+
+？1：はい先輩！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+＠徐福
+……！
+[k]
+
+[charaFadeTime H 0.1 0.6]
+[charaFace A 17]
+＠徐福
+（後輩？　後輩って言った今！？[r]　やっぱり羨ましいぃぃぃぃぃ…………！）
+[k]
+
+[charaFadeout H 0.1]
+[charaFace A 8]
+＠徐福
+唐突ですが、そこのあなた！[r]こ、殺します！
+[k]
+
+？1：唐突！？
+[flag SEL01 1]
+
+？2：こちらもブッ飛ばしに来たのでおあいこで[&:すね]
+[flag SEL01 0]
+
+？！
+
+[branch _sel01a SEL01 1]
+[branch _sel01b]
+
+[label _sel01a]
+
+[charaFace A 5]
+＠徐福
+羨ましいとか思ってないです死！[r][#死死死死死:し　 し　 し　 し　 し]！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠虞美人
+動揺激しすぎない？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[branch _sel01end]
+
+[label _sel01b]
+
+[charaFace A 22]
+＠徐福
+えぇ～。[r]何ですかそれぇ……。
+[k]
+
+＠徐福
+ふざけんなよぅ……。[r]私が何したって言うんだよぉ……。
+[k]
+
+？1：よし、反省の色がない
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branch _sel01end]
+
+[label _sel01end]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠シグルド
+空気を読まないことに定評のある当方、[r]大変申し訳ないがこのまま[#吶喊:とっかん]させていただく！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠徐福
+来るなーーーっ！[r]不死殺し、いっけぇぇ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth E 10]
+[charaDepth F 10]
+[charaDepth G 0]
+[charaDepth D 9]
+
+[charaFadein D 0.4 0,-200]
+[wt 0.4]
+[charaBackEffect G bit_talk_charge_ppl]
+[se ad350]
+[wt 1.4]
+[charaScale E 1.5]
+[charaScale F 1.5]
+[charaPut E -80,236]
+[charaPut F 28,176]
+[charaEffect E bit_talk_starshine]
+[charaEffect F bit_talk_starshine]
+[cueSe Battle bac283]
+[seStop ad350 1.0]
+[wt 1.0]
+[charaFadeout D 0.4]
+[wt 0.4]
+[charaPut G 1200,1200]
+[charaBackEffectStop G bit_talk_charge_ppl]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠シグルド
+最初の一度はどうにか耐えてみせよう。[r]……行くぞ！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]
