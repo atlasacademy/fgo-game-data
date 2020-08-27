@@ -1,0 +1,337 @@
+
+
+
+＄94-05-14-24-1-1
+
+[soundStopAll]
+
+
+
+[charaSet A 2042001 1 イリヤ]
+[charaSet C 1045000 1 巴御前]
+[charaSet D 2001300 1 エミヤ]
+[charaSet E 98006300 1 魔性]
+[charaSet F 8001600 1 マシュ]
+[charaSet G 4041001 1 紫式部]
+[charaSet H 1098200500 1 蘭陵王]
+[charaSet I 3044000 1 虞美人]
+
+[charaSet T 5009040 1 エフェクト用ダミー]
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 20113]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠ルビー
+何ですかこの泥沼な戦い。
+[k]
+
+[charaFace A 2]
+＠イリヤ
+わかってるなら、最大出力してーーー！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠巴御前
+れえすげえむで徹底的に妨害してくる[#性質:たち]ですね、[r]むむむっ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠エミヤ
+……そこだ！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+
+[wt 0.1]
+[cueSe Battle bac23]
+[wt 0.4]
+
+[cueSe Battle bac136]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0 1]
+[charaShake E 0.03 4 4 0.5]
+[wt 0.8]
+
+＠魔性
+！？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.1]
+
+[se ad100]
+[wt 1.0]
+[seStop ad100 0.2]
+
+[charaMoveReturn D 0,-4 0.2]
+[cueSe Battle bac244]
+[cueSeVolume bac244 0 0.7]
+[cueSe Battle bac467]
+[cueSeVolume bac467 0 0.7]
+[wt 0.7]
+
+＠エミヤ
+おまえたちのような魔性には、[r]それなりに効果のある双剣でな。
+[k]
+
+[charaFace D 2]
+＠エミヤ
+ではさよならだ、名無しの妄執！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 0.6]
+[wt 0.1]
+
+[se ad171]
+[effect bit_talk_x_slash01]
+[effect bit_talk_x_slash02]
+[charaMoveScale D 1.05 0.2]
+[charaMove D 0,2 0.1]
+[wt 0.1]
+[charaMove D 0,-4 0.2]
+[wt 0.3]
+
+[cueSe Battle bac211]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0 1]
+[charaShake E 0.03 4 4 0.6]
+[charaFadeout D 0]
+[effectDestroy bit_talk_x_slash01]
+[effectDestroy bit_talk_x_slash02]
+[wt 1.4]
+
+[se ad52]
+[charaSpecialEffect E enemyErasure 0,0 2.0]
+[wt 3.0]
+
+
+[cueSe Battle bac35]
+[cueSeVolume bac35 0 0]
+[cueSeVolume bac35 0.5 0.7]
+[effect bit_talk_20]
+[wt 3.0]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+[effectDestroy bit_talk_20]
+＠マシュ
+敵性反応の完全消滅及び聖杯回収、[r]確認しました。
+[k]
+
+[charaFace F 1]
+＠マシュ
+皆さん、お疲れ様です！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠紫式部
+はい！
+[k]
+
+＠紫式部
+これにて[line 3][r]続編のお話もきっと眠りに就いたことでしょう。
+[k]
+
+？1：任務完了、だね！
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠エミヤ
+ああ。
+[k]
+
+＠エミヤ
+映画ならスタッフロールが流れるところだが、[r]こちらの日常はまだまだ続いていく。
+[k]
+
+＠エミヤ
+では帰還するとしようか。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+[branchQuestNotClear lblNotClear 3000320]
+
+[scene 66700]
+[branch lblConf]
+
+[label lblNotClear]
+[scene 60300]
+[label lblConf]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠虞美人
+んー？[r]あれ？　アンタたちどこ行ってたの？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth D 4]
+[charaDepth H 6]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFace D 0]
+[charaFadein H 0.1 2]
+[charaFadein D 0.1 0]
+＠蘭陵王
+（皆様）
+[k]
+
+[charaFace D 8]
+＠エミヤ
+（わかっているさ）
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+＠イリヤ
+何でもないです、[r]ちょっとシミュレーターで遊んでいただけで！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+＠蘭陵王
+ええ、とても楽しい一時でした。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠虞美人
+ふうん……。
+[k]
+
+＠虞美人
+ま、蘭陵王がそう言うのなら、[r]そうだったんでしょうね。
+[k]
+
+[messageOff]
+[charaFaceFade I 1 0.6]
+[wt 1.0]
+＠虞美人
+全員、お疲れ様。
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.2]
+
+
+[charaTalk off]
+[charaDepth D 5]
+[charaDepth A 6]
+[charaDepth F 4]
+
+
+[charaFace D 1]
+[charaFace A 1]
+[charaFace F 1]
+[charaFadein F 0.1 350,0]
+[charaFadein D 0.1 -350,0]
+[charaFadein A 0.1 1]
+[wt 1.6]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[wt 0.2]
+
+[charaDepth H 6]
+[charaDepth G 4]
+[charaDepth C 5]
+
+[charaFace H 6]
+[charaFace G 1]
+[charaFace C 1]
+[charaFadein H 0.1 1]
+[charaFadein G 0.1 350,0]
+[charaFadein C 0.1 -300,0]
+[wt 2.6]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

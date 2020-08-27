@@ -1,0 +1,1189 @@
+＄94-05-15-05-1-0
+
+[soundStopAll]
+
+
+
+
+
+[charaSet A 2022000 1 アルテラサンタ]
+[charaSet B 7038000 1 ブリュンヒルデ]
+[charaSet C 3033001 1 ヒルド]
+[charaSet D 3033002 1 スルーズ]
+[charaSet E 3033000 1 オルトリンデ]
+[charaSet F 1033300 1 シグルド]
+
+[charaSet G 7038000 1 ブリュンヒルデ_シルエット]
+[charaFilter G silhouette 00000080]
+[charaSet H 7038000 1 ブリュンヒルデ_演出用]
+[charaSet I 1098197210 1 ブリュンヒルデエンジン_シルエット]
+[charaFilter I silhouette 00000080]
+[charaSet J 1098197210 1 ブリュンヒルデ]
+[charaSet K 1098199400 1 ブリュンヒルデ_血塗れ]
+
+[charaDepth A 8]
+[charaDepth G 7]
+[charaDepth B 5]
+[charaDepth H 6]
+[charaDepth I 7]
+[charaDepth J 5]
+
+
+[branchQuestNotClear lblNotClear 3000320]
+
+[scene 66700]
+[branch lblConf]
+
+[label lblNotClear]
+[scene 60300]
+[label lblConf]
+
+
+[flag IsLoop false]
+
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+
+＠アルテラサンタ
+ふむふむ。[r]今年の夏はそういう[#顛末:てんまつ]であったのだな。
+[k]
+
+[charaFace A 1]
+
+＠アルテラサンタ
+しかし見事に乗り越えた。[r]そうだな？
+[k]
+
+？1：みんなのおかげでね
+？！
+
+[charaFace A 7]
+
+＠アルテラサンタ
+うむ。その心がけだ。
+[k]
+
+＠アルテラサンタ
+しかし考えさせられるな。[r]徐福という者、大変な道程であったのだろう。
+[k]
+
+＠アルテラサンタ
+まずはゆっくり休め、ふわふわの……[r]いや、わんぱくのマスター。
+[k]
+
+＠アルテラサンタ
+ボーイ・スカウトというのか？[r]その礼装がとてもよく似合っている。
+[k]
+
+＠アルテラサンタ
+本来は湖畔でのんびり過ごすはずだったのだろうし、[r]夏の残りは休養するといい。
+[k]
+
+
+[label lblLoop1]
+
+
+？1：ありがとう、アルテラ
+
+[charaFace A 6]
+
+＠アルテラサンタ
+ん～～？
+[k]
+
+[flag IsLoop true]
+
+
+？2：ありがとう、サンタさん
+
+[charaFace A 13]
+
+＠アルテラサンタ
+そう、サンタなのじゃ。[r]夏に出番がないのも仕方がないのじゃ。
+[k]
+
+[flag IsLoop false]
+
+？！
+
+[branch lblLoop1 IsLoop true]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaTalk depthOff]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.4 530,0]
+[charaMove B 480,0 0.4]
+[wt 0.9]
+
+？1：ん？
+？！
+
+＠ブリュンヒルデ
+あのぅ……。
+[k]
+
+＠ブリュンヒルデ
+マスター、すみません。
+[k]
+
+＠ブリュンヒルデ
+少し……[r]お時間、いただけますでしょうか……？
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.4]
+[charaMove B 530,0 0.4]
+[wt 0.8]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_77 1.0 0.4]
+[wait fade]
+
+[charaTalk depthOn]
+
+[branchQuestNotClear lblNotClear1 3000320]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+[scene 10310]
+
+[branch lblNotClear_out1]
+[label lblConf1]
+
+[scene 66600]
+
+[label lblNotClear_out1]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_77 1.0 1.0]
+[wait fade]
+
+[wt 1.0]
+
+？1：あれ？　ブリュンヒルデはどこに[line 3]
+
+？！
+
+[messageOff]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.4 530,0]
+[charaMove B 480,0 0.4]
+[wt 0.4]
+
+＠ブリュンヒルデ
+……。[r]……。
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[charaMove B 530,0 0.4]
+[wt 0.8]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[scene 70400]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+
+？1：こっちに下りてきたはずだけど……
+？！
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth G 7]
+[charaDepth B 5]
+
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[se ade74]
+[seStop ade74 1.3]
+[wt 1.4]
+
+[charaFace B 8]
+[charaFadein B 0 1]
+[charaFadeout G 0.8]
+[wt 1.5]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+＠ブリュンヒルデ
+……ありがとうございます、マスター。
+[k]
+
+＠ブリュンヒルデ
+実は。[r]その。
+[k]
+
+＠ブリュンヒルデ
+お話ししなくてはならないことが、あるのです。[r]この夏、ずっと隠してきたことが……。
+[k]
+
+[messageOff]
+
+[charaFace B 16]
+[wt 1.0]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaFace B 17]
+＠ブリュンヒルデ
+マスターはご存知でしょうか。
+[k]
+
+
+＠ブリュンヒルデ
+マンションや洋館で、[r]シグルドが何者かに襲われた件について。
+[k]
+
+[messageOff]
+[fadeout white 0.6]
+[bgm BGM_EVENT_70 0.6 0.4]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[effect bit_sepia01]
+
+[scene 22140]
+
+[charaTalk off]
+[charaDepth F 6]
+[charaDepth B 4]
+
+[charaFace K 4]
+[charaFace F 14]
+[charaFadein K 0.1 150,0]
+[charaFadein F 0.1 -150,-50]
+[wt 0.4]
+
+[fadein white 0.6]
+[wait fade]
+
+[wt 1.5]
+
+[messageOff]
+[fadeout white 0.6]
+[bgm BGM_EVENT_70 0.6 0.4]
+[wait fade]
+
+[charaFadeout F 0.1]
+[charaFadeout K 0.1]
+[effectDestroy bit_sepia01]
+
+[scene 70400]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_70 0.6 1.0]
+[fadein white 0.6]
+[wait fade]
+[wt 0.3]
+
+
+？1：何度か、そういうことがあったらしいね
+？！
+
+[charaFace B 19]
+
+
+＠ブリュンヒルデ
+……はい。それだけではなく……
+[k]
+
+＠ブリュンヒルデ
+幾度も……。
+[k]
+
+
+＠ブリュンヒルデ
+本当は毎晩、同じことが起こっていたのです。[r]マスターが耳にしたのはそのほんの一部。
+[k]
+
+
+＠ブリュンヒルデ
+シグルドは、ああ……[r]あのひとは、[#毎晩殺されていた]のです。
+[k]
+
+＠ブリュンヒルデ
+あの湖畔で起きた[#一連の事件とは無関係に]。
+[k]
+
+[charaFace B 16]
+
+＠ブリュンヒルデ
+……。[r]……。
+[k]
+
+
+＠ブリュンヒルデ
+………………その卑劣な犯人は、毎晩、あのひとを。
+[k]
+
+＠ブリュンヒルデ
+殺そうとして、殺していたんです。
+[k]
+
+[charaFace B 8]
+
+＠ブリュンヒルデ
+私は、告白せねばなりません。
+[k]
+
+[messageOff]
+[charaFace B 20]
+[wt 1.0]
+[charaFace B 19]
+
+＠ブリュンヒルデ
+[#私なのです]。
+[k]
+
+＠ブリュンヒルデ
+私です。[r]シグルドを毎晩毎晩殺していた卑劣な犯人は……
+[k]
+
+[charaFace B 6]
+
+＠ブリュンヒルデ
+この、私なのです！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.6 1]
+[bgm BGM_EVENT_70 0.6 0.4]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.6 1]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+
+＠スルーズ
+！？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.4 0,-50]
+[wt 0.4]
+
+＠オルトリンデ
+そ、そんな……まさかお姉様が……
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.4 0,-50]
+[wt 0.4]
+＠ヒルド
+待って待って、今回の出来事って[r]ぜんぶ徐福とかいう東洋の存在の仕業じゃないの！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+
+＠オルトリンデ
+でも、傷跡……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠スルーズ
+ええ。勇士シグルドの肉体についていた傷跡は、[r]確かにお姉様の新たな宝具に似ていた。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 0,-50]
+
+
+＠ヒルド
+あっ、ギザギザのやつかぁ。
+[k]
+
+[charaFace C 4]
+
+＠ヒルド
+いやそう言われてみればそうかもだけどさ、[r]で、でも、どうしてそんな……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 0,-50]
+
+＠スルーズ
+……。[r]……。
+[k]
+
+[charaFace D 0]
+
+＠スルーズ
+普段の霊基のお姉様であれば、[r]どれだけ耐えようとしてもシグルドを殺す。
+[k]
+
+＠スルーズ
+短時間のみなら耐えられても、[r]一緒に長時間いれば、少なくとも殺そうとします。
+[k]
+
+[charaFace D 4]
+
+＠スルーズ
+でも……[r]霊基を変えたお姉様にはそれがなかった。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+
+＠オルトリンデ
+……はい。奇妙だとは、思っていました。
+[k]
+
+[charaFace E 8]
+
+＠オルトリンデ
+どうしてあんなにも長時間一緒にいて、[r]お姉様の口から殺意が一言も漏れなかったのか。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 0,-50]
+
+＠ヒルド
+もしかして、さ。
+[k]
+
+[charaFace C 8]
+
+＠ヒルド
+定期的に殺すことで、[r]霊基を安定させてた、とか……そういう……こと……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 0,-50]
+
+＠オルトリンデ
+！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.6 1]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[pictureFrame]
+[wt 0.5]
+
+[bgm BGM_EVENT_70 0.6 1.0]
+[wipein rectangleStripLeftToRight 0.6 1]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ブリュンヒルデ
+…………ルーンを用いたのです。
+[k]
+
+＠ブリュンヒルデ
+原初のルーンの重ね掛け。[r]強力な、魔術行使です。
+[k]
+
+＠ブリュンヒルデ
+[#私という英霊:ブ  リ  ュ  ン  ヒ  ル  デ]に定められた行動原理、[r]“愛する者を殺す”という性質は絶対不変です。
+[k]
+
+[charaFace B 16]
+
+＠ブリュンヒルデ
+だから、ほんの少しだけ[#ずらす]ことを試みました。[r]ルーンで、無理矢理にねじ曲げて……
+[k]
+
+＠ブリュンヒルデ
+昼間だけは仲睦まじく、[r]けれど、夜になれば[line 3]殺す。
+[k]
+
+＠ブリュンヒルデ
+夜の私は普段の霊基以上の殺意を以て、[r][#愛するひと:シ  グ  ル  ド]を必ず殺す。
+[k]
+
+＠ブリュンヒルデ
+毎晩、毎晩、殺し続ける。
+[k]
+
+[charaFace B 19]
+
+＠ブリュンヒルデ
+そういった霊基が……[r]私の、この一夏のものでありました。
+[k]
+
+＠ブリュンヒルデ
+…………ご迷惑を、お掛けいたしました。[r]一連の事件究明についても混乱させてしまいました。
+[k]
+
+[charaFace B 4]
+
+＠ブリュンヒルデ
+本当に……[r]ごめんなさい、マスター。
+[k]
+
+？1：大丈夫だよ、ブリュンヒルデ
+？！
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[charaFace B 7]
+＠ブリュンヒルデ
+……？
+[k]
+
+？1：なんとなく、そういう感じなのかなって
+？！
+
+[charaFace B 16]
+
+＠ブリュンヒルデ
+ああ……。
+[k]
+
+＠ブリュンヒルデ
+マスター……。[r]私の所業であると……分かっていたのですね……。
+[k]
+
+[bgm BGM_EVENT_6 0.1]
+
+＠ブリュンヒルデ
+それでも……[r]黙っていてくださった、と……。
+[k]
+
+？1：迷惑なことは何もないよ
+？2：（むしろシグルドがすごい）
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[charaTalk F]
+[charaFace F 0]
+[charaPut F 0,0]
+[se ad595]
+[charaSpecialEffect F appearanceReverse 1 0.7]
+[seStop ad42 1.2]
+[wait charaSpecialEffect F]
+[wt 1.0]
+
+＠シグルド
+[line 3]やはり、気付かれていたか。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠ブリュンヒルデ
+貴方……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠シグルド
+我が愛の言葉には些かの誤りがある。[r]いや、正確には、すべてを告げてはいないのだ。
+[k]
+
+＠シグルド
+マスター。当方だ。
+[k]
+
+＠シグルド
+[#此度:こたび]のブリュンヒルデ霊基改造についての首謀者は、[r]当方だ。当方が望み、ルーンを行使した。
+[k]
+
+
+[charaFace F 10]
+＠シグルド
+一夏のせめて数日間だけで構わない。[r]平穏の日々を、再び、寄り添って過ごしたい。
+[k]
+
+＠シグルド
+そんな我が愛の想いを当方は受け止めた。[r]計画し、実行に移した。
+[k]
+
+[charaFace F 4]
+
+＠シグルド
+無論、実行すれば夜毎に当方は血に[#塗:まみ]れよう。[r]霊基を失うことはなくとも……
+[k]
+
+＠シグルド
+マスターや他の英霊たちに[r]無用の混乱を与えかねない。
+[k]
+
+[charaFace F 10]
+
+＠シグルド
+その可能性は十二分に承知していた。[r]承知した上で当方は計画し、実行したのだ。
+[k]
+
+[charaFace F 0]
+
+＠シグルド
+事前に周囲への通達を行えば、[r]マスターは兎も角、組織の判断として、
+[k]
+
+＠シグルド
+我らのバカンス同行が[r]首肯されることはまずないだろうと踏んでのこと。
+[k]
+
+[charaFace F 10]
+＠シグルド
+すなわち[line 3]当方こそが、[r]黒幕であり大罪人であり真犯人である！！
+[k]
+
+[effect bit_talk_41]
+[se ad938]
+[charaFace F 2]
+
+＠シグルド
+我が愛に罪、なし！！！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[effectDestroy]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+[charaShake B 0.03 3 3 0.4]
+[wt 0.8]
+
+＠ブリュンヒルデ
+～～～ッ！
+[k]
+
+[charaFace B 12]
+＠ブリュンヒルデ
+…………ありがとう、シグルド。私のシグルド。
+[k]
+
+＠ブリュンヒルデ
+けれど、願ったのは私です。[r]刃を振るったのも。
+[k]
+
+＠ブリュンヒルデ
+私の罪です。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠シグルド
+当方の罪だ。[r]いや、最大限に譲歩しても[line 3]
+[k]
+
+[charaFace F 7]
+
+＠シグルド
+二人の罪、二人の共同作業と言えよう。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠ブリュンヒルデ
+……だ、だめですよ、シグルド。[r]だめです。
+[k]
+
+＠ブリュンヒルデ
+そのように言われては、私……[r]どんな顔をしたらいいか、分からない[line 3]
+[k]
+
+
+？1：大丈夫、誰も悪くないよ
+？！
+
+？1：驚きはしたけど、シグルドが受け止めた訳だし……
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+[wt 1.0]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠ブリュンヒルデ
+マスター…………。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.6 1]
+[bgm BGM_EVENT_6 0.6 0.4]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[pictureFrame cut063_cinema]
+
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.6 1]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠ヒルド
+……夜毎に愛する人を殺す、[r]けれどそれまでは寄り添い続けられる霊基。
+[k]
+
+＠ヒルド
+それが、お姉様の……[r]夏の霊基……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+
+＠オルトリンデ
+……………………。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠ヒルド
+……二人とも楽しそう、とか思ってたけど……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-50]
+
+＠オルトリンデ
+……二人とも、期間限定で寄り添っただけ……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 0,-50]
+
+＠スルーズ
+お姉様[line 3]
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.6 1]
+[bgmStop BGM_EVENT_6 0.6]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[pictureFrame]
+
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.6 1]
+[wait wipe]
+[wt 0.3]
+
+[se ade103]
+[seStop ade103 0.6]
+[wt 1.4]
+
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+[charaPut H 1]
+[charaFace H 6]
+[charaFadeTime H 0 0.3]
+[wt 0.3]
+
+[charaDepth B 9]
+[charaDepth H 6]
+
+[charaMoveScale H 1.15 0.4]
+[charaMove H 0,15 0.4]
+[se ade103]
+[seStop ade103 0.6]
+[wt 0.4]
+[charaFadeout H 0.3]
+[wt 0.6]
+
+[charaScale H 1.0]
+
+[charaTalk on]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠ブリュンヒルデ
+…[messageShake 0.02 3 3 0.4]……………！！！
+[k]
+
+＠ブリュンヒルデ
+こ、れは[line 3]
+[k]
+
+＠ブリュンヒルデ
+魔力が……[r]高まって……いく……どうして……[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠シグルド
+ブリュンヒルデ！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+[charaPut H 1]
+[charaFace H 6]
+[charaFadeTime H 0 0.3]
+[wt 0.3]
+
+[charaMoveScale H 1.15 0.4]
+[charaMove H 0,15 0.4]
+[se ade103]
+[seStop ade103 0.6]
+[wt 0.4]
+[charaFadeout H 0.3]
+[wt 0.3]
+
+[se ad39]
+[se ad153 1.8]
+[seVolume ad153 0 0.2]
+[charaEffect B bit_talk_charge_blu]
+[wt 2.0]
+[seVolume ad153 0.8 0.4]
+[wt 0.8]
+[seStop ad39 0.7]
+
+
+[charaEffectStop B bit_talk_charge_blu]
+[seStop ad153 1.0]
+
+[charaCrossFade B 7038001 6 1.0]
+[charaEffect G bit_talk_release]
+[se co9]
+[seVolume co9 0 0.7]
+[wait charaCrossFade B]
+[wt 3.0]
+[seStop co9 2.0]
+[seVolume co9 0.5 0.3]
+
+？1：霊基再臨！？
+？！
+
+[bgmStop BGM_EVENT_81 1.0]
+[charaFace B 5]
+
+＠ブリュンヒルデ
+いけない……[r]マスター、シグルド……
+[k]
+
+[charaFace B 16]
+
+＠ブリュンヒルデ
+私、私……
+[k]
+
+＠ブリュンヒルデ
+嬉しくて、愛しくて、愛しくて……愛しくて……！！
+[k]
+
+[charaFace B 2]
+[bgm BGM_EVENT_80 0.1]
+
+＠ブリュンヒルデ
+[#愛:殺]してしまいそう！！！
+[k]
+
+＠ブリュンヒルデ
+今、すぐにでも！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠シグルド
+……成る程。
+[k]
+
+
+＠シグルド
+夜毎の刃、で充分なガス抜きが出来るものと思ったが。[r]どうやら当方の誤りであったようだ。
+[k]
+
+[charaFace F 2]
+
+＠シグルド
+当方の男ぶりがあまりに凄まじすぎたな！[r]我が愛の中で、想いが渦巻き、高まりすぎている！
+[k]
+
+[charaFace F 0]
+
+＠シグルド
+更には、マスターの包容力がとどめを刺したか？[r]兎も角[line 3]
+[k]
+
+＠ブリュンヒルデ
+ああッ……！
+[k]
+
+＠ブリュンヒルデ
+あ、あ、あ、あ、あぁ、ああああああああ[line 4]
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 1.0]
+
+＠I：ブリュンヒルデ
+こ[line 3]
+[k]
+
+＠I：ブリュンヒルデ
+こま　り　ま　ス。
+[k]
+
+[messageOff]
+[se ade509]
+
+[wt 1.5]
+
+[se ade510]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[wt 1.0]
+[charaFace J 0]
+[charaFadein J 0 1]
+
+[charaFadeout I 0.8]
+[wt 1.5]
+
+[charaTalk on]
+
+＠J：ブリュンヒルデ
+私……私……わ、た、し……！
+[k]
+
+＠J：ブリュンヒルデ
+こま……り……ま……す……[line 4]ッ！！！
+[k]
+
+[seStop ade510 0.4]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠シグルド
+マスターは我が背後へ！[r]あの刃は、[#我が愛の愛そのもの]！
+[k]
+
+＠シグルド
+当方の霊基のみならず、[r]我が愛が大切に想うすべての命を切り裂くぞ！
+[k]
+
+？1：了解！
+？！
+
+[charaFace F 0]
+
+＠シグルド
+よもやこういった事態を招くとは。[r]成る程、我が愛はそこまで深く当方を想っているか。
+[k]
+
+[charaFace F 2]
+
+＠シグルド
+……事前に[#叡智:えいち]を用いておくべき、だったのかもだが！[r]我が愛を視線で丸裸にするなぞ[#言語道断:ごんごどうだん]ゆえ！
+[k]
+
+[messageOff]
+[charaCrossFade F 1098197100 0 0.4]
+[wait charaCrossFade F]
+[wt 0.4]
+
+＠シグルド
+許せ、マスター！
+[k]
+
+？1：（のろけられた気がするけど）とりあえず許[&す:します]！
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ade510]
+[seVolume ade510 0 0.3]
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠J：ブリュンヒルデ
+[fontSize x-large]困ります！
+[k]
+
+[messageOff]
+[charaMoveScale J 1.15 0.25]
+[charaMove J 0,20 0.25]
+[se bac1]
+[effect bit_talk_41]
+[charaFadeout J 0.25]
+[wt 0.25]
+[effectDestroy bit_talk_41]
+
+
+[messageOff]
+[fadeout black 0.5]
+[seStop ade510 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,703 @@
+
+
+
+＄94-05-15-06-2-0
+
+
+
+[soundStopAll]
+
+[charaSet A 5043000 1 アスクレピオス]
+[charaSet B 7014001 1 ナイチンゲール]
+[charaSet C 1098199500 1 ゾンビ]
+[charaSet D 2010001 1 ビリー]
+[charaSet E 2037000 1 ジェーン]
+[charaSet F 2022000 1 アルテラサンタ]
+[charaSet G 5035000 1 アナスタシア]
+[charaSet H 1098182900 1 アポロン]
+[charaSet I 25003000 1 ヒロインＸＸ_第一]
+[charaSet J 25003001 1 ヒロインＸＸ]
+[charaSet K 8001000 1 ダミーエフェクト]
+[charaSet L 8001000 1 ダミーエフェクト]
+
+[scene 20803]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ナイチンゲール
+……はて。不思議ですね。
+[k]
+
+＠ナイチンゲール
+確保失敗です。[r]消滅してしまいました。
+[k]
+
+[charaFace B 4]
+
+＠ナイチンゲール
+人間がこのように消え去るはずはありませんから、[r]何でしょう。我々は幻覚を見ている？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アスクレピオス
+魔力が残っている限り破壊行為を続け、[r]魔力が尽きると[#雲散霧消:うんさんむしょう]するのか[line 3]
+[k]
+
+
+＠アスクレピオス
+仕方ない、別の被検体を探すぞ。[r]難しそうだが、一体だけでも確保したい。
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[wait wipe]
+
+[scene 10000]
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[wipein rollLeft 0.1 1.0]
+[wait wipe]
+
+[se bac149]
+[effect bit_talk_14 -200,200]
+[wt 0.3]
+[se bac150]
+[wt 0.3]
+[se bac149]
+[effect bit_talk_14 200,-300]
+[wt 0.5]
+[effect bit_talk_13 100,100]
+[se bac9]
+[wt 0.2]
+[se bac10]
+[wt 0.2]
+[effect bit_talk_14 -100,-100]
+[se bac11]
+[wt 0.2]
+
+[fadeout black 0.1]
+[wait fade]
+
+
+[scene 20803]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ade473]
+[seVolume ade473 0 0.5]
+[seStop ade473 1.0]
+[wt 1.0]
+[charaSpecialEffect C enemyErasure 1 1.0]
+[se ad42]
+[wait charaSpecialEffect C]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アスクレピオス
+…………。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ナイチンゲール
+……やはり幻覚ですね。
+[k]
+
+＠ナイチンゲール
+[#或:ある]いは、私は夢を見ているのでしょうか？[r]そうですね。そうに違いない。
+[k]
+
+[charaFace B 5]
+
+＠ナイチンゲール
+では仕方なし。[r]しばらくお暇をいただきます。
+[k]
+
+＠ナイチンゲール
+夢の中であれば夢の中なりの看護方法、[r]殺菌、滅菌、消毒の方法もきっとありましょう。
+[k]
+
+＠ナイチンゲール
+鍛え直して参ります。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アスクレピオス
+う、む？　そうか……。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.5]
+[charaMoveReturn B 0,-10 1.0]
+[wt 1.5]
+[se ad527]
+[seStop ad527 1.0]
+[charaFadeout B 0.4]
+[charaMove B -100,0 0.4]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アスクレピオス
+どうあれ、向上心が強いのは良いことだ。[r]医療の場では日々、たゆまぬ[#研鑽:けんさん]が求められる。
+[k]
+
+[charaFace A 1]
+
+＠アスクレピオス
+惰性やルーチンワークで医術が振るわれることが[r]あってはならない[line 3]それは進歩とは真逆の方向性だ。
+[k]
+
+[charaFace A 7]
+
+＠アスクレピオス
+……とはいえ、ここでただ看護師の帰りを[r]待つというのも時間の無駄だろう。
+[k]
+
+＠アスクレピオス
+医術の進歩のためには休んでいる暇などない。[r]こちらはこちらで手を考えるか。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ade474]
+[wt 1.4]
+
+
+[se ad110]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,5]
+[charaMove C 0,-15 0.4]
+[wt 0.7]
+
+[se bac3]
+[charaShake C 0.02 4 4 0.8]
+[wt 1.2]
+[charaSpecialEffect C enemyErasure 1 1.0]
+[se ad42]
+[wait charaSpecialEffect C]
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠ビリー
+あちゃー。また首が取れちゃった。
+[k]
+
+
+＠ビリー
+バッファローみたいにはいかないか。[r][#投げ縄:ローピング]の技術が[#鈍:なま]ったかな？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠ジェーン
+ワーオ、これ激ムズだね～？
+[k]
+
+[charaFace E 7]
+
+＠ジェーン
+投げ縄一発でスペース猛牛の家族を[#電車ごっこ:プ レ イ ト レ イ ン]する[r]わたしのテクでも無理なんだから、
+[k]
+
+＠ジェーン
+そもそものボディの強度が[r]捕獲に向いてないんじゃないー？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠アスクレピオス
+だからと言って諦められん。医術の進歩のためだ。[r]他に手はないのか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ビリー
+そうだなぁ。ロープや素手が無理なら、何か別の……[r]柔らかいもので動きを止める、しかないかな？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠ジェーン
+柔らかいもの、柔らかいもの……
+[k]
+
+[charaFace E 7]
+
+＠ジェーン
+あっ、ハーイ！　ハイハイ！　思いついちゃった！[r]柔らかいと言えば、ヒツジよね、ヒツジ！
+[k]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth H 2]
+[charaDepth E 5]
+[charaDepth A 6]
+
+[charaFace F 13]
+[charaPut F 250,0]
+
+＠ジェーン
+多量のヒツジで[charaFadeTime F 0.6 0.6]モフッと挟み込んで動きを止めれば[r]いいんじゃないかな～？
+[k]
+
+[charaFace E 1]
+＠ジェーン
+ヒュー、わたしってば最高にクレバー！[r]そしてジューシー！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠アスクレピオス
+羊……だと……？
+[k]
+
+[messageOff]
+[charaPut H -200,-100]
+[charaFace H 0]
+[charaFadeTime H 0.6 0.8]
+[wt 1.2]
+[se bac9]
+[charaMoveReturn A -10,0 0.25]
+[charaMove H -300,100 0.3]
+[se ade97]
+[charaFadeout H 0.3]
+[wt 0.5]
+
+[charaFace A 1]
+＠アスクレピオス
+却下だ。くだらん。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠ジェーン
+えー！？　なんでー！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アスクレピオス
+だが、方向性はいいだろう。[r]もっと全体的に、包み込むような形での……ふむ。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[cueSe Battle bac28]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.4 1]
+[wt 1.0]
+
+[charaFadeout G 0.1]
+[wt 0.2]
+
+
+
+[charaPut C 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[se ad560]
+[charaEffect C bit_talk_blizzard]
+[charaEffect C bit_talk_frozen_cam]
+
+[wt 1.5]
+[se ad541]
+[fadeout white 0.1]
+[wait fade]
+[wt 0.2]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut C 1200,1200]
+[charaEffectStop C bit_talk_blizzard]
+[charaEffectStop C bit_talk_frozen_cam]
+
+[fadein white 0.3]
+[wait fade]
+[wt 1.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠アナスタシア
+まったく。避暑地だと言うから来たというのに、[r]基本的には暑いだなんてどうなってるの？
+[k]
+
+＠アナスタシア
+看板に偽りありだわ。[r]せめて氷を少しでも増やして気温を下げたいものね。
+[k]
+
+＠アナスタシア
+扇風機とかないのかしら……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アスクレピオス
+気温に応じた適切な体調管理も医術の領分となる。
+[k]
+
+＠アスクレピオス
+環境温度のほうを変えて対処できるなら[r]それも止めはしない。むしろ推奨してもいいぞ。
+[k]
+
+＠アスクレピオス
+熱中症になるくらいなら冷房を使えばいい。[r]凍死するなら暖房を点けろ。当然の話だ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠アナスタシア
+とにかく、これでお仕事は終わりね？[r][#私:わたくし]は失礼するわ。暑いから。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アスクレピオス
+待て。解凍はどうすればいい？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠アナスタシア
+手加減はしたわ。[r]放っておけばこの陽気で勝手に溶けるでしょう。
+[k]
+
+＠アナスタシア
+それでは失礼。電子レンジ役までは[r]雇用契約に入ってはいませんでしたので。
+[k]
+
+[messageOff]
+[se ad527]
+[charaFadeout G 0.4]
+[charaMove G -150,0 0.4]
+[wt 0.4]
+[seStop ad527 0.4]
+[wt 0.9]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠アスクレピオス
+……仕方ない。[r]台車で臨時研究室まで運ぶか……。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.6]
+[charaFadeout A 0.1]
+[wt 0.8]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth I 1]
+[charaDepth J 2]
+
+[charaPut L 0,-200]
+[charaEffect L bit_talk_40]
+[charaPut K 0,0]
+[charaEffect K bit_talk_43l]
+[wt 0.1]
+
+[charaFace I 0]
+[charaFadein I 1.0 0,70]
+[charaMove I 0,-20 1.5]
+[se ade90]
+[seVolume ade90 0 0.6]
+[wt 1.0]
+
+[charaEffectStop L bit_talk_40]
+[charaEffectStop K bit_talk_43l]
+
+[seStop ade90 0.5]
+[wt 0.5]
+[se ad270]
+[wt 1.0]
+[seStop ad270 0.4]
+[se ad656]
+[charaFace J 0]
+[charaFadein J 0.5 1]
+[wt 0.25]
+[charaFadeout I 0.5]
+[wt 2.0]
+[seStop ad656 0.4]
+[wt 0.2]
+
+[bgm BGM_EVENT_7 0.1]
+[charaFace J 2]
+
+＠ヒロインＸＸ
+と、いうところで看過できない事件の波動を[r]感知してやってきました、銀河警察です！
+[k]
+
+[charaFace J 5]
+
+＠ヒロインＸＸ
+え、この避暑地の異変はって？
+[k]
+
+[charaFace J 4]
+
+＠ヒロインＸＸ
+確かに逮捕しないといけない[#違法サーヴァント:フ　ォ　ー　リ　ナ　ー]の気配が[r]しなくもないのですが、ちょっとセンサーが不調で……。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFace C 0]
+[charaFadein A 0.1 100,0]
+[charaFadein C 0.1 -200,0]
+
+＠アスクレピオス
+警察だと？　治安機構に問題視されるようなことは[r]何もしていないぞ。通してもらおう。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.0]
+[se adm48]
+[charaMove A 0,0 0.5]
+[charaMove C -300,0 0.5]
+[charaFadeout C 0.4]
+[charaFadeout A 0.4]
+[wt 1.0]
+[seStop adm48 1.0]
+[wt 1.0]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[wt 1.0]
+[charaFace J 2]
+[bgm BGM_EVENT_3 0.1]
+＠ヒロインＸＸ
+待った待ったー！　あまりの自然さに[r]スルーしてしまいそうになりましたが、危ない！
+[k]
+
+[charaFace J 5]
+
+＠ヒロインＸＸ
+この私の目が青いうちは見逃しません。
+[k]
+
+[charaFace J 2]
+
+＠ヒロインＸＸ
+アナタの運んでいるそれは、見た目は似ていても[r]決してウナギのゼリー寄せにあらず！
+[k]
+
+＠ヒロインＸＸ
+えーと、死体遺棄……死体損壊？[r]まあ、どちらにせよアウトですよね。
+[k]
+
+＠ヒロインＸＸ
+見過ごすわけにはいかない大事件です。[r]おとなしく縛につきなさい。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠アスクレピオス
+馬鹿なことを言うな。損壊はしていない。[r]そのためにこうしている。
+[k]
+
+＠アスクレピオス
+いいか、これはただの[#動く屍体:ゾ　ン　ビ]だ。[r]研究のために必要なサンプルを運んでいるだけだぞ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 4]
+[charaFadein J 0.1 1]
+
+＠ヒロインＸＸ
+聞くだけで危険な研究じゃないですか……
+[k]
+
+＠ヒロインＸＸ
+巨大コロニーが動く屍体で覆われた[r]スペースアポカリプス事件のことを思い出します。
+[k]
+
+＠ヒロインＸＸ
+私、あのジャンル苦手なんですよね……[r]最後、必ずひどい目にあうし……
+[k]
+
+[charaFace J 2]
+
+＠ヒロインＸＸ
+という訳で、絶対に看過できません！[r]怪人スネークドクター、ここで逮捕します！
+[k]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アスクレピオス
+ちっ……これだから公権力は。
+[k]
+
+＠アスクレピオス
+やれ倫理がどうの立場がどうの、神のような傲慢を[r]振りかざしてこちらの仕事を妨げようとする。
+[k]
+
+[charaFace A 5]
+
+＠アスクレピオス
+僕の医術の進歩は公益となるものだろうに。[r]どうしてそれがわからない！？
+[k]
+
+＠アスクレピオス
+ああ、どうやら治療が必要な[r]愚患者だったようだな、おまえも！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

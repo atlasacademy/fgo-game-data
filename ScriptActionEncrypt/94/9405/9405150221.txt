@@ -1,0 +1,857 @@
+
+
+＄94-05-15-02-2-1
+
+[soundStopAll]
+
+[charaSet A 1098198420 1 エミヤ]
+[charaSet B 2042001 1 イリヤ]
+[charaSet C 4024000 1 モードレッド]
+[charaSet D 1098200510 1 蘭陵王]
+[charaSet E 1098181100 1 ジャンヌ]
+[charaSet F 7031000 1 ジャンヌ・オルタ]
+
+[charaSet G 98104300 1 巨大ゴースト]
+
+[charaSet H 1098178700 1 リースＸＰ]
+[charaSet I 1098178700 1 リース（妻）]
+[charaSet J 1098178700 1 リース（子ども）]
+[charaSet K 1098178700 1 リース（妻_シルエット）]
+[charaFilter K silhouette 00000080]
+[charaSet L 1098178700 1 リース（子ども_シルエット）]
+[charaFilter L silhouette 00000080]
+
+[charaSet M 5002002 1 ジル]
+[charaSet N 3001001 1 クー・フーリン]
+
+[charaSet O 8001000 1 ダミーエフェクト１]
+[charaSet P 8001000 1 ダミーエフェクト２]
+[charaSet Q 8001000 1 ダミーエフェクト３]
+
+[cameraMove 0.1 0,0 1.01]
+
+[charaPut Q 2000,2000]
+[charaEffect Q bit_talk_41]
+
+[charaDepth H 9]
+[charaDepth K 6]
+[charaDepth I 5]
+[charaDepth E 5]
+[charaDepth F 5]
+[charaDepth A 5]
+[charaDepth L 4]
+[charaDepth J 3]
+[charaDepth B 1]
+[charaDepth M 1]
+
+
+[scene 99900]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.4]
+
+[bgmStop BGM_EVENT_3 1.0]
+[se ad42]
+[charaSpecialEffect G enemyErasure 0,0 1.5]
+[wt 0.7]
+
+[wait charaSpecialEffect G]
+[charaFadeout G 0.1]
+[wt 0.9]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠エミヤ
+よし！[bgm BGM_EVENT_77 0.1]
+[k]
+
+
+？1：やった！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ジャンヌ
+やりました、心なしか湖が綺麗に！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠モードレッド
+あんま変わってなくね？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFace H 0]
+[charaFadein E 0.1 -100,0]
+[charaFadein H 0.1 260,0]
+
+＠ジャンヌ
+リースＸＰの顔も心なしか温和に！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠モードレッド
+まったく変わってなくね？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠リースＸＰ
+ありがとうございまサメ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠イリヤ
+語尾が戻った！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠リースＸＰ
+これで湖も平和になりまサメ。[r][#家族共々]お礼を言わせてくだサメ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 1]
+
+＠ジャンヌ・オルタ
+まあ、これでいいならいいけど。[wt 0.9][charaFace F 16][r]……家族？
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaFace H 0]
+[charaFadein H 0.1 450,0]
+[wt 0.2]
+
+[charaFace K 0]
+[charaFace L 0]
+[charaFadein K 0.1 450,0]
+[charaFadein L 0.1 450,0]
+[wt 0.2]
+
+[charaMove K 100,0 1.4]
+[charaMove L -220,0 1.6]
+[wt 1.6]
+
+[charaFadein I 0.3 100,0]
+[charaFadein J 0.3 -220,0]
+[wt 0.4]
+
+[charaFadeout K 0.7]
+[charaFadeout L 0.7]
+[wt 1.1]
+[charaTalk on]
+
+＠リースＸＰ
+右から私、夫、子供でサメ。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk F]
+[charaFace F 16]
+[charaFadein F 0.1 1]
+
+＠ジャンヌ・オルタ
+そう。[r]全員同じ顔なのね。
+[k]
+
+[charaTalk depthOff]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFace I 0]
+[charaFace J 0]
+[charaFadein H 0.1 450,0]
+[charaFadein I 0.1 100,0]
+[charaFadein J 0.1 -220,0]
+[wt 0.1]
+
+＠リースＸＰ
+魚類でないと区別は難しいでサメ。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+
+＠ジャンヌ・オルタ
+ああそう。[wt 0.6][charaFace F 13][r]……ジルなら見分けられるか……？
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+[wt 0.1]
+
+[charaFace M 3]
+[charaFadein M 0.4 -330,0]
+[charaMove M -280,0 0.4]
+[charaFadeTime M 0.4 0.6]
+[wt 0.6]
+
+＠ジル
+ははははは。[r]無茶を言うものではありませんよジャンヌ……。
+[k]
+
+[charaFace M 4]
+
+＠ジル
+いやさすがに無理です無理……。
+[k]
+
+[messageOff]
+[charaFadeout M 0.4]
+[wt 0.5]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠モードレッド
+ともかく、[r]これで湖でサーフィンできるってことだな！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠リースＸＰ
+あまり大波を立てなければどうぞどうぞサメ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠モードレッド
+イ[messageShake 0.03 3 4 0.5]ヤッホー、ちょっと一波やってくらあ！
+[k]
+
+[messageOff]
+[se ad132]
+[charaFadeout C 0.4]
+[charaMove C -100,0 0.4]
+[wt 0.4]
+[seStop ad132 0.8]
+[wt 1.2]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠エミヤ
+ではオレも釣りを[line 3][wt 0.6][charaFace A 7][r]む、君たちがいるのではマズいか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠リースＸＰ
+まさか。[r]私たちも普通に魚を食べるのでサメ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠蘭陵王
+ははは、それはそうですね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠ジャンヌ
+……。[r]……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ジャンヌ・オルタ
+どうしたのよ、塞ぎ込んで。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠ジャンヌ
+リースＸＰが結婚していたことも衝撃ですが、[r]三鮫の区別が全くつきませんでした……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+
+＠ジャンヌ・オルタ
+よし、帰っていいわ今すぐ帰りなさい帰れ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠ジャンヌ
+うう、そうします……。[wt 0.7][charaFace E 1][r]みんな、元気でね！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFace I 0]
+[charaFace J 0]
+[charaFadein H 0.1 450,0]
+[charaFadein I 0.1 100,0]
+[charaFadein J 0.1 -220,0]
+
+＠リースＸＰ
+が[messageShake 0.03 4 3 0.4]んばってサメー！
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 0.2]
+
+[charaMove J -220,-15 0.2]
+[wt 0.2]
+[se ad73]
+[effect bit_talk_quickmove -220,0]
+[charaFadeout J 0.1]
+[wt 0.5]
+
+[se ad417]
+[fowardEffect bit_talk_water_splash -220,0]
+[wt 0.8]
+
+[charaMove I 100,-15 0.2]
+[wt 0.2]
+[se ad73]
+[effect bit_talk_quickmove 100,0]
+[charaFadeout I 0.1]
+[wt 0.3]
+
+[se ad417]
+[fowardEffect bit_talk_water_splash 110,0]
+[wt 0.4]
+
+[charaMove H 450,-15 0.2]
+[wt 0.2]
+[se ad73]
+[effect bit_talk_quickmove 450,-15]
+[charaFadeout H 0.1]
+[wt 0.3]
+
+[se ad417]
+[fowardEffect bit_talk_water_splash 450,0]
+[wt 1.2]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠ジャンヌ・オルタ
+……。[r]……。
+[k]
+
+[charaFace F 0]
+
+＠ジャンヌ・オルタ
+ねえマスター。[r]ところで話は変わるけどさ。
+[k]
+
+[messageOff]
+[cameraMove 0.4 0,10 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 0.8]
+
+[charaFace F 16]
+
+＠ジャンヌ・オルタ
+アイツの場合、鮫より[r]普段使いのイルカの方が怖くない？
+[k]
+
+？1：……わかる……
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 8]
+[charaFace B 9]
+[charaFadein A 0.1 -256,0]
+[charaFadein B 0.1 256,0]
+
+＠エミヤ
+フッ、恐れることはないぞマスター。[r]どんな魚であろうと[line 3]
+[k]
+
+＠イリヤ
+エミヤさん、エミヤさん。[r]学校で習いましたが、イルカは哺乳類ですよ。
+[k]
+
+[messageOff]
+[charaTalk A]
+[charaFace A 7]
+[wt 1.0]
+
+[charaFace A 9]
+[charaMoveReturn A -256,-5 0.4]
+＠エミヤ
+……コホン。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠エミヤ
+どんな魚、またはイルカ、タコ、イカ、[r]その他海産物であろうと[line 3]
+[k]
+
+＠エミヤ
+このオレが、[r]そのことごとくを釣ってみせよう！
+[k]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+＠N：？？？
+おうおうおう、言ってくれるじゃねえか。
+[k]
+
+[charaFace A 10]
+＠エミヤ
+む、その声は！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 5]
+[charaFadein N 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_94 0.1]
+
+＠クー・フーリン
+釣りと聞いちゃ黙っていられねえな。[r]特におまえさんが相手なら！
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠エミヤ
+やはり来たな。[r]待っていたよ、タコ釣りのクー・フーリン。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 1]
+[charaFadein N 0.1 1]
+
+＠クー・フーリン
+おうよ。（タコ釣り？）
+[k]
+
+[charaFace N 5]
+
+＠クー・フーリン
+釣りは道具じゃねえ、[r]技量と精神の勝負ってところを見せてやる！
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠エミヤ
+あ。いや、そこは抑えてくれないか。
+[k]
+
+＠エミヤ
+道具についてこだわり始めると厄介なのが[r]やってくる。その辺にしておいて欲しい。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 4]
+[charaFadein N 0.1 1]
+
+＠クー・フーリン
+……そうだな……。[wt 0.6][charaFace N 1][r]ともかく、釣りだ釣り。
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠エミヤ
+ああ、どちらがこの湖の魚を釣り尽くすか[line 3][r]勝負といこうじゃないか！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad416]
+[wt 0.3]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 90,-210]
+[charaMove H 90,-180 0.4]
+[wt 0.7]
+[seStop ad416 0.8]
+
+＠リースＸＰ
+そこまでやられると迷惑なんで、[r]程ほどにしてくだサメ。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaFace N 3]
+[charaFace A 10]
+[charaFadein N 0.1 0]
+[charaFadein A 0.1 2]
+[wt 1.0]
+
+[charaFace N 4]
+[charaFace A 7]
+＠二人
+はい。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_94 1.0 0.4]
+[wait fade]
+
+[charaFadeout N 0.1]
+[charaFadeout A 0.1]
+
+[scene 10000]
+[wt 0.8]
+
+[fadein black 0.1]
+[wait fade]
+
+＠
+[line 3]こうして、赤と青のサーヴァントによる、[r]釣り勝負は始まった。
+[k]
+
+＠
+だがしかし。
+[k]
+
+[messageOff]
+[fadeout black 0.1]
+[wait fade]
+
+[charaSet B 2002001 1 ギルガメッシュ]
+[charaSet C 1098181810 1 オデュッセウス]
+[charaSet D 2038000 1 超人オリオン]
+[charaSet E 5025001 1 エジソン]
+[charaSet F 2033000 1 アシュヴァッターマン]
+[charaSet G 6011001 1 荊軻]
+[charaSet H 6034000 1 牛若丸]
+[charaSet I 98110000 1 柳生但馬守]
+[charaSet J 10008001 1 シトナイ]
+
+[charaDepth B 1]
+[charaDepth C 2]
+[charaDepth D 3]
+[charaDepth E 4]
+[charaDepth F 5]
+[charaDepth G 6]
+[charaDepth H 7]
+[charaDepth I 8]
+[charaDepth J 9]
+
+[scene 99900]
+[wipeFilter cinema 0.5 0]
+[wt 1.0]
+
+[bgm BGM_EVENT_94 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+
+[charaFace B 8]
+[charaFadein B 0.6 -300,-50]
+[charaMove B -400,-50 1.2]
+[wt 1.0]
+
+[charaFace C 1]
+[charaFadein C 0.6 -200,-50]
+[charaMove C -300,-50 1.2]
+
+[charaFadeout B 0.5]
+[charaMove B -500,-50 1.2]
+[wt 1.0]
+
+[charaFace D 7]
+[charaFadein D 0.6 -100,-50]
+[charaMove D -200,-50 1.2]
+
+[charaFadeout C 0.5]
+[charaMove C -400,-50 1.2]
+[wt 1.0]
+
+[charaFace E 2]
+[charaFadein E 0.6 0,-50]
+[charaMove E -100,-50 1.2]
+
+[charaFadeout D 0.5]
+[charaMove D -300,-50 1.2]
+[wt 1.0]
+
+[charaFace F 1]
+[charaFadein F 0.6 100,-50]
+[charaMove F 0,-50 1.2]
+
+[charaFadeout E 0.5]
+[charaMove E -200,-50 1.2]
+[wt 1.0]
+
+[charaFace G 1]
+[charaFadein G 0.6 200,-50]
+[charaMove G 100,-50 1.2]
+
+[charaFadeout F 0.5]
+[charaMove F -100,-50 1.2]
+[wt 1.0]
+
+[charaFace H 6]
+[charaFadein H 0.6 300,-50]
+[charaMove H 200,-50 1.2]
+
+[charaFadeout G 0.5]
+[charaMove G 0,-50 1.2]
+[wt 1.0]
+
+[charaFace I 1]
+[charaFadein I 0.6 400,-50]
+[charaMove I 300,-50 1.2]
+
+[charaFadeout H 0.5]
+[charaMove H 100,-50 1.2]
+[wt 1.0]
+
+[charaFace J 17]
+[charaFadein J 0.6 500,-50]
+[charaMove J 400,-50 1.2]
+
+[charaFadeout I 0.5]
+[charaMove I 200,-50 1.2]
+[wt 1.0]
+
+[charaFadeout J 0.5]
+[charaMove J 300,-50 1.2]
+[wt 0.6]
+
+[charaTalk on]
+
+＠
+案の定、金色以外にも密かな釣り自慢サーヴァントたちが[r][#虎視眈々:こ し た ん た ん]と[#釣王:ちょうおう]の座を狙い、暗躍し始めるのであった。
+[k]
+
+[messageOff]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.4 0,-50]
+[wt 0.4]
+
+＠エミヤ
+フッ、負ける気はしないな。
+[k]
+
+＠
+[charaTalk N]
+ニヒルに笑う男の手には、[r]２０１×年度版最新モデル最高級釣り竿が一つ。
+[k]
+
+[messageOff]
+[charaTalk A]
+[charaFace A 2]
+[wt 0.6]
+
+[charaMoveScale A 0.97 0.2]
+[charaMove A 0,-55 0.2]
+[wt 0.4]
+
+[se bac1]
+[se adm15]
+[charaPut Q 0,0]
+[charaMoveScale A 1.08 0.2]
+[charaMove A 0,-45 0.2]
+[wt 0.4]
+
+[charaPut Q 2000,2000]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaMoveScale H 1.0 0.1]
+
+[se ad75]
+[wt 1.8]
+
+[seStop ad75 0.6]
+[wt 0.6]
+
+[se adm16]
+[wt 1.0]
+
+＠
+戦えエミヤ！[wt 0.5]　負けるなエミヤ！[wt 0.5][r]特に人理には関係ないが、それはそれとして！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_94 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

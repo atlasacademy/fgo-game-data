@@ -1,0 +1,565 @@
+
+
+＄94-05-15-02-2-0
+
+[soundStopAll]
+
+[charaSet A 1098198420 1 エミヤ]
+[charaSet B 2042001 1 イリヤ]
+[charaSet C 4024000 1 モードレッド]
+[charaSet D 1098200510 1 蘭陵王]
+[charaSet E 1098181100 1 ジャンヌ]
+[charaSet F 7031000 1 ジャンヌ・オルタ]
+[charaSet G 1045000 1 巴御前]
+
+[charaSet H 1098155400 1 黒髭]
+[charaSet I 4034000 1 バーソロミュー]
+[charaSet J 1039000 1 ラクシュミー]
+[charaSet K 98104300 1 巨大ゴースト]
+[imageSet L back10000 1]
+[charaScale L 1.01]
+
+[charaDepth H 9]
+[charaDepth I 5]
+[charaDepth J 1]
+
+[charaDepth A 10]
+[charaDepth D 8]
+[charaDepth E 8]
+[charaDepth F 4]
+[charaDepth B 4]
+[charaDepth G 1]
+[charaDepth C 1]
+
+[scene 99900]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠エミヤ
+フィッシュ！　フィッシュ！　またもやフィッシュ！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[se ad416]
+[fowardEffect bit_talk_water_splash 0,0]
+[wt 0.6]
+
+[se ad416]
+[effect bit_talk_water_splash -300,0]
+[wt 0.3]
+
+[se ad416]
+[fowardEffect bit_talk_water_splash 300,0]
+[wt 0.8]
+
+[se ad75]
+[wt 1.6]
+
+[seStop ad75 0.4]
+[wt 0.4]
+
+[fowardEffect bit_talk_quickmove 0,0]
+[fowardEffect bit_talk_quickmove -300,0]
+[fowardEffect bit_talk_quickmove 300,0]
+[wt 0.1]
+
+[se ad322]
+[seVolume ad322 0 0.4]
+[charaEffect H bit_talk_impactlanding]
+[charaFace H 8]
+[charaFace I 2]
+[charaFace J 2]
+[charaFadein H 0.1 0,-10]
+[charaFadein I 0.1 -300,-10]
+[charaFadein J 0.1 300,-10]
+[charaShake H 0.03 3 1 0.8]
+[charaShake I 0.03 3 1 0.8]
+[charaShake J 0.03 3 1 0.8]
+[wt 0.2]
+[charaMove H 0,0 0.2]
+[charaMove I -300,0 0.2]
+[charaMove J 300,0 0.2]
+[wt 1.1]
+
+[seStop ad322 0.6]
+[wt 1.6]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaEffectDestroy G bit_talk_impactlanding]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[charaShake B 0.02 3 3 0.7]
+
+＠イリヤ
+後半になると、[r]もう魔性でも何でもないよ！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 1]
+
+＠黒髭
+気持ちのいい湖だなー、とぷかぷか浮いてたら[r]急に引きずり込まれたでござる！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠バーソロミュー
+目を閉じてメカクレのことを思い煩っていたら、[r]いつのまにか湖に。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 8]
+[charaFadein J 0.1 1]
+
+＠ラクシュミー
+普通に歩いていたら、[r]なぜか釣り針が服に引っ掛かって……。
+[k]
+
+[charaFace J 3]
+
+＠ラクシュミー
+うう。
+[k]
+
+？1：よしよし……
+？！
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠モードレッド
+おーい、釣りミヤのー。[r][#怨念:サメ]はまだかー。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠エミヤ
+落ち着くんだモードレッド。
+[k]
+
+[charaFace A 9]
+
+＠エミヤ
+釣りの戦いとは、自分との戦い。
+[k]
+
+＠エミヤ
+落ち着きのない精神で挑めば、[r]魚はいつまでもかかってこない。
+[k]
+
+＠エミヤ
+対話。自分との、そして湖との対話だよ。[r]剣術でいうところの[#明鏡止水:めいきょうしすい]の心境だ。
+[k]
+
+[charaFace A 8]
+
+＠エミヤ
+勝機を欲しがったものから転げ落ちていく。[r]“なあに、今日はオケラでもいいさ[line 3]”
+[k]
+
+[charaFace A 6]
+
+＠エミヤ
+強がりではなく、そう考えられる者にこそ[r]大物はやってくるんだ。強がりではなく。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠モードレッド
+フーン。[r]（ふわっとした返事）
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+[charaFadeTime L 0.1 0.6]
+
+＠イリヤ
+（まったく関心がなさそう）
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.7]
+
+[se ad421]
+[charaShake A 0.03 4 1 1.0]
+[wt 0.4]
+[se ad421 0.6]
+[wt 0.6]
+
+[charaFace A 5]
+＠エミヤ
+[line 3]ッ！[r]全員、静かに！　これは大物だ……！
+[k]
+
+[messageOff]
+[se ad421]
+[charaShake A 0.03 4 1 1.0]
+[wt 0.4]
+[se ad421 0.6]
+[wt 0.6]
+
+[charaFace A 2]
+＠エミヤ
+……蘭陵王、手伝ってくれ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠蘭陵王
+了解です！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaFace A 5]
+[charaFadein A 0.1 80,0]
+[charaShake A 0.04 3 1 0]
+[wt 0.4]
+
+[se ad223]
+[charaFace D 2]
+[charaFadein D 0.1 -110,25]
+[charaMove D -90,0 0.2]
+[wt 0.4]
+
+[charaMove D -80,0 0.1]
+[wt 0.1]
+
+[se ad421]
+[charaFace D 5]
+[charaFace A 2]
+[charaMoveScale D 1.05 0.2]
+[charaMoveScale A 1.05 0.2]
+[charaShakeStop A]
+[wt 0.5]
+
+[charaTalk depthOff]
+
+[charaTalk on]
+[charaShake D 0.04 2 1 0]
+[charaShake A 0.04 2 1 0]
+
+＠蘭陵王
+こ、これは確かに大物です……！
+[k]
+
+＠エミヤ
+体感では、３トン以上だ！[r]魔力で釣り竿を強化する、持ち堪えろ！
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaShakeStop D]
+[charaShakeStop A]
+
+[charaTalk depthOn]
+[charaTalk F]
+[charaFace F 5]
+[charaFace E 5]
+[charaFadein F 0.1 0]
+[charaFadein E 0.1 2]
+
+＠ジャンヌ・オルタ
+……チッ、仕方ないわね。[r]手を貸すわ。
+[k]
+
+[charaFace E 2]
+
+＠ジャンヌ
+はい、みんなの力を合わせましょう！
+[k]
+
+？1：よしきた！
+？！
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaFace D 5]
+[charaFace A 2]
+[charaFadein D 0.1 -80,0]
+[charaFadein A 0.1 0,0]
+[charaShake D 0.04 2 1 0]
+[charaShake A 0.04 2 1 0]
+[wt 0.4]
+
+[se ad223]
+[charaFace E 2]
+[charaFadein E 0.1 110,25]
+[charaMove E 90,0 0.2]
+[wt 0.4]
+
+[charaMove E 80,0 0.1]
+[wt 0.1]
+
+[charaMoveScale E 1.08 0.2]
+
+
+[se ad223]
+[charaFace F 2]
+[charaFadein F 0.1 -240,25]
+[charaMove F -210,0 0.2]
+[wt 0.2]
+
+
+[charaMoveScale E 1.07 0.2]
+[charaMoveScale D 1.07 0.2]
+[charaMoveScale A 1.07 0.2]
+[charaShake E 0.04 2 1 0]
+
+
+[charaMove F -200,0 0.1]
+[wt 0.1]
+
+[charaMoveScale F 1.07 0.2]
+
+
+[se ad223]
+[charaFace B 2]
+[charaFadein B 0.1 240,25]
+[charaMove B 210,0 0.2]
+[wt 0.2]
+
+[charaMoveScale F 1.06 0.2]
+[charaMoveScale E 1.06 0.2]
+[charaMoveScale D 1.06 0.2]
+[charaMoveScale A 1.06 0.2]
+[charaShake F 0.04 2 1 0]
+
+
+[charaMove B 200,0 0.1]
+[wt 0.1]
+
+[charaMoveScale B 1.06 0.2]
+
+
+[se ad223]
+[charaFace G 2]
+[charaFadein G 0.1 -350,25]
+[charaMove G -310,0 0.2]
+[wt 0.2]
+
+[charaMoveScale B 1.05 0.2]
+[charaMoveScale F 1.05 0.2]
+[charaMoveScale E 1.05 0.2]
+[charaMoveScale D 1.05 0.2]
+[charaMoveScale A 1.05 0.2]
+[charaShake B 0.04 2 1 0]
+
+
+[charaMove G -300,0 0.1]
+[wt 0.1]
+
+[charaMoveScale G 1.05 0.2]
+
+
+[se ad223]
+[charaFace C 2]
+[charaFadein C 0.1 390,25]
+[charaMove C 350,0 0.2]
+[wt 0.2]
+
+[charaMoveScale G 1.04 0.2]
+[charaMoveScale B 1.04 0.2]
+[charaMoveScale F 1.04 0.2]
+[charaMoveScale E 1.04 0.2]
+[charaMoveScale D 1.04 0.2]
+[charaMoveScale A 1.04 0.2]
+[charaShake G 0.04 2 1 0]
+
+
+[charaMove C 340,0 0.1]
+[wt 0.1]
+
+[charaMoveScale C 1.04 0.2]
+[wt 0.2]
+
+[charaMoveScale C 1.04 0.2]
+[charaMoveScale G 1.03 0.2]
+[charaMoveScale B 1.03 0.2]
+[charaMoveScale F 1.03 0.2]
+[charaMoveScale E 1.03 0.2]
+[charaMoveScale D 1.03 0.2]
+[charaMoveScale A 1.03 0.2]
+[charaShake C 0.04 2 1 0]
+[wt 0.2]
+
+＠全員
+[f large]いっせーの……で！！
+[k]
+
+[messageOff]
+[charaMoveScale A 1.1 0.2]
+[charaShakeStop A]
+[charaMoveScale D 1.1 0.2]
+[charaMoveScale E 1.1 0.2]
+[charaShakeStop D]
+[charaShakeStop E]
+[charaMoveScale B 1.1 0.2]
+[charaMoveScale F 1.1 0.2]
+[charaShakeStop F]
+[charaShakeStop B]
+[charaMoveScale C 1.1 0.2]
+[charaMoveScale G 1.1 0.2]
+[charaShakeStop G]
+[charaShakeStop C]
+[wt 0.2]
+
+[se ad872]
+[charaMoveScale C 1.0 0.2]
+[charaMoveScale G 1.0 0.2]
+[charaMoveScale B 1.0 0.2]
+[charaMoveScale F 1.0 0.2]
+[charaMoveScale D 1.0 0.2]
+[charaMoveScale E 1.0 0.2]
+[charaMoveScale A 1.0 0.2]
+[wt 0.5]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[charaFadeout G 0.1]
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[se ad416]
+[fowardEffect bit_talk_water_splash 0,0]
+[wt 0.8]
+
+[se ad75]
+[wt 1.8]
+
+[seStop ad75 0.4]
+[wt 0.4]
+
+[fowardEffect bit_talk_quickmove]
+[wt 0.1]
+
+[se ad595]
+
+[charaFace K 0]
+[charaFadein K 0.4 0,-40]
+[wt 0.2]
+
+[charaMove K 1 0.6]
+[wt 0.6]
+
+[seStop ad595 0.4]
+[wt 1.5]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠ジャンヌ
+でました、これが怨念の塊です！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠エミヤ
+よし。[r]ならば、ここからは本来の役割だ！
+[k]
+
+[charaFace A 2]
+
+＠エミヤ
+マスター、活け締めの用意を！[wt 0.6][charaFace A 7][r]……ではなく。
+[k]
+
+[charaFace A 2]
+
+＠エミヤ
+戦闘準備だ、いくぞ！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]
