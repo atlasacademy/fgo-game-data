@@ -1,0 +1,623 @@
+
+
+
+
+＄91-10-35-01-2-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 3002001 1 Diarmuid]
+[charaSet B 99502600 1 Mash]
+[charaSet C 1098157100 1 Kiyohime]
+[charaSet D 98111500 1 Static]
+[charaSet E 98025100 1 "Mysterious Swordsman"]
+[charaSet F 98015000 1 "Voice From The Shadows"]
+[charaSet H 3002002 1 "Effect Dummy"]
+
+[scene 20602]
+[fadein black 0.5]
+[wait fade]
+
+
+[effect bit_talk_kengekiall01]
+[wt 0.1]
+[se ad33]
+[wt 1.0]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.05 3 3 0.4]
+[wt 0.5]
+
+[charaPut D 0,-2000]
+[charaEffect D bit_talk_10_LowLevel]
+
+[charaTalk A]
+[charaFace A 5]
+[se ad73]
+[charaFadein A 0.5 -80,0]
+[charaMove A 1 0.2]
+
+＠Diarmuid
+Damn! I can't finish him off with this Spirit Origin!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠Mash
+Senpai! Diarmuid!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠Kiyohime
+Master!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠Mash
+The hostile shows no signs of disappearing! It's going to be fiendishly difficult to defeat them in battle!
+[k]
+
+＠Mash
+I think you should[line 2]
+[k]
+
+？1：Hold on.
+？2：They're trying to say something...
+
+？！
+
+[charaFace B 6]
+＠Mash
+!?
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut D 0,-2000]
+[wt 0.3]
+
+[bgm BGM_EVENT_3 0.5 0.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠Mysterious Swordsman
+...You are not the one.
+[k]
+
+＠Mysterious Swordsman
+You are not the one.[sr]You are not the one.
+[k]
+
+＠Mysterious Swordsman
+Your spear is not enough.[sr]Your spear is not enough.
+[k]
+
+＠Mysterious Swordsman
+Show me your true power. Show me the power[sr]of a knight raised by the sea-god Manannán.
+[k]
+
+[bgm BGM_EVENT_3 0.5]
+
+
+[se ad678]
+[seVolume ad678 0 0.7]
+[wt 0.1]
+[effect bit_talk_41]
+
+[charaMove E 0,15 0.2]
+[charaMoveScale E 1.2 0.2]
+
+＠Mysterious Swordsman
+[font large]Show me the sword of Manannán!
+[k]
+
+[messageOff]
+[effectStop bit_talk_41]
+[wt 0.3]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaMoveScale E 1.0 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠Diarmuid
+Master, stand back!
+[k]
+
+[charaFace A 2]
+[se ad442]
+＠Diarmuid
+[font large][messageShake 0.05 4 7 1.0]Hraaaaaahhh...!
+[k]
+
+[messageOff]
+[se ad73]
+[charaMove A -50,0 0.5]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[se ad170]
+[charaEffect E bit_talk_ichimon01wh]
+[wt 0.2]
+[effect bit_talk_14]
+[wt 0.1]
+
+[se ad32]
+[effect bit_talk_Slash_red_01]
+[wt 0.3]
+[effect bit_talk_14]
+[wt 0.7]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.3]
+
+[se ad39]
+[charaEffect A bit_talk_36]
+
+＠Diarmuid
+Gáe Buidhe!
+[k]
+
+[messageOff]
+[charaEffectStop A bit_talk_36]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.3]
+
+[se ad471]
+[effect bit_bolg_03y]
+[wt 0.2]
+
+[charaEffect E bit_talk_12_red_R]
+[charaEffect E bit_talk_14]
+[wt 0.4]
+[charaShake E 0.05 3 3 0.3]
+[wt 1.0]
+
+[seStop ad471 0.5]
+＠Mysterious Swordsman
+...You are not the one.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠Diarmuid
+(My demonic spear didn't work?)
+[k]
+
+[charaFace A 0]
+＠Diarmuid
+(No, that's not it...!)
+[k]
+
+＠D：Voice
+...That's right.[sr]He wishes to duel with swords alone.
+[k]
+
+＠D：Voice
+No other weapon will lay him to rest.
+[k]
+
+[charaFace A 5]
+＠Diarmuid
+!!!
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[se ad42]
+[charaTalk F]
+[charaSpecialEffect F wipeTimeRe 1 1.5]
+[wait charaSpecialEffect F]
+[wt 0.5]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠Mash
+I'm picking up a powerful magical energy reading![sr]It doesn't appear to be hostile, but...
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut D 0,-2000]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Diarmuid
+Are they here to fight too?[sr]No, wait. This feeling...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Voice From The Shadows
+...I'm sorry for the trouble. He is indeed looking for you, but he is also looking for me.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Diarmuid
+You're...
+[k]
+
+[charaFace A 1]
+＠Diarmuid
+Now I see...
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.8]
+[se ad51]
+[wt 0.8]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Mash
+Diarmuid!?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠Kiyohime
+You're lowering your spear...?[sr]Isn't that dangerous to do in the face of an enemy?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut D 0,-2000]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Diarmuid
+It's fine. This shadow is different.
+[k]
+
+＠Diarmuid
+If anything...I would say he's here to back us up.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_1 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Voice From The Shadows
+Indeed I am.
+[k]
+
+＠Voice From The Shadows
+However, I currently lack a corporeal Spirit Origin, and thus would like to make use of yours.
+[k]
+
+＠Voice From The Shadows
+If that is acceptable to you, Master.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Diarmuid
+...Master, I would ask you to grant his request.[sr]We must do this if we are to defeat this opponent.
+[k]
+
+？1：I trust you, Diarmuid.
+？2：(Nod)
+
+？！
+
+[messageOff]
+[charaFace A 1]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Voice From The Shadows
+Understood!
+[k]
+
+[messageOff]
+[se ad39]
+[charaPut H 1]
+[charaEffect H bit_talk_summon]
+[wt 0.2]
+[effect bit_talk_blight_02]
+[wt 2.5]
+[effectStop bit_talk_blight_02]
+[wt 0.5]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[wt 0.5]
+
+[se ad39]
+[wt 0.2]
+[effect bit_talk_blight_02]
+[wt 2.5]
+[effectStop bit_talk_blight_02]
+[wt 0.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut H 0,-2000]
+[wt 0.5]
+
+[charaPut D 1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠Mash
+They're resonating with each other...!?[wt 0.5][charaFace B 7][sr]It looks like Diarmuid's Spirit Origin is changing!
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut D 0,-2000]
+[wt 0.3]
+
+[charaPut H 1]
+[charaTalk off]
+[charaFace F 0]
+[charaFadein F 0.1 0]
+
+[charaFace A 0]
+[charaFadein A 0.1 2]
+
+[se ad39]
+[wt 2.5]
+
+[se bas7]
+[effectStop bit_talk_summon]
+[effectStop bit_talk_blight_02]
+[fadeout white 1.5]
+[bgmStop BGM_EVENT_1 1.5]
+[wait fade]
+[charaFadeout H 0.1]
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[wt 1.5]
+
+
+[charaSet A 1035001 1 Diarmuid]
+[charaSet H 1035001 1 Diarmuid_Silhouette]
+[charaFilter H silhouette 00000080]
+
+[charaDepth A 0]
+[charaDepth H 1]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.1]
+[charaFadein A 0.1 1]
+
+[charaTalk on]
+[scene 20602]
+
+[fadein white 1.5]
+
+[charaTalk off]
+
+[wait fade]
+[wt 1.0]
+
+
+[charaFadeout H 0.7]
+[wt 0.7]
+[bgm BGM_EVENT_4 0.1]
+＠Diarmuid
+...Servant, Saber. My True Name is Diarmuid Ua Duibhne, of the Knights of Fianna...
+[k]
+
+＠Diarmuid
+...and my two demonic blades are at your service!
+[k]
+
+[charaFace A 2]
+＠Diarmuid
+Now! Curse who has taken form in our simulator!
+[k]
+
+＠Diarmuid
+No... You are a pure, honest giant[line 2]a Giolla Deacair! But I also know you as the Fairy King Ábartach of the Danann!
+[k]
+
+[charaFace A 5]
+＠Diarmuid
+Why have you come to Chaldea!?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠Mash
+Fairy King Ábartach of the Danann!?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠Kiyohime
+Wh-who's that!?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Mash
+He's a king who ruled over one[sr]of the fairy kingdoms in Erin!
+[k]
+
+＠Mash
+In the Fenian Cycle of Celtic legend, he was said to have formed an alliance with the Knights of Fianna...
+[k]
+
+＠Mash
+...and in the process of forming that alliance,[sr]Diarmuid ended up fighting one of his knights...
+[k]
+
+[charaFace B 7]
+＠Mash
+Although some accounts of that legend say that Diarmuid actually fought the Fairy King himself!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut D 0,-2000]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠Mysterious Swordsman
+Yes... Yesss...
+[k]
+
+＠Mysterious Swordsman
+That is the knight of Fianna I have been searching for.[sr]At last, you have shown yourself before me.
+[k]
+
+＠Mysterious Swordsman
+I saw your swordsmanship in my dreams. I saw your swords shining brightly atop the earth once again.
+[k]
+
+＠Mysterious Swordsman
+Thus did my consciousness cross time and space to arrive in this digital domain...
+[k]
+
+＠Mysterious Swordsman
+...At last, I have found you again, Diarmuid!
+[k]
+
+＠Mysterious Swordsman
+Not the invincible knight Fionn,[sr]with his demonic sword Móralltach and demonic spear Gáe Dearg!
+[k]
+
+＠Mysterious Swordsman
+Nor the figure of the Lancer with two demonic spears! No, at last, you have become a Saber wielding two demonic swords!
+[k]
+
+＠Mysterious Swordsman
+A far cry indeed from the Diarmuid I saw at the spring on that fateful day...
+[k]
+
+＠Mysterious Swordsman
+...who was the only one able to leap[sr]beyond that precipitous cliff!
+[k]
+
+＠Mysterious Swordsman
+Ahh, I want nothing more than to defeat[sr]you and your two swords, Diarmuid!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Diarmuid
+...What a self-centered king you are.
+[k]
+
+[charaFace A 5]
+＠Diarmuid
+Nonetheless, I understand how you feel,[sr]and I accept your challenge!
+[k]
+
+＠Diarmuid
+I am Diarmuid Ua Duibhne, First Spear of the Knights of Fianna! But now I stand before you armed with two swords, not spears!
+[k]
+
+[charaFace A 2]
+＠Diarmuid
+Now, you shall know defeat!
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_4 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
