@@ -1,0 +1,133 @@
+
+＄91-50-36-01-2-1
+
+[soundStopAll]
+
+[charaSet A 5036001 1 アヴィケブロン]
+[charaSet B 11005000 1 ヘシアン・ロボ]
+[charaSet C 5004001 1 ナーサリー・ライム]
+
+[scene 20300]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth C 2]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0]
+[charaFace B 0]
+[charaFadein B 0.1 2]
+
+＠ナーサリー・ライム
+あー、負けちゃったー！[r]ごめんなさいロボ、うまくコマンドできなくて！
+[k]
+
+[charaFace B 0]
+[se ad334]
+
+＠ヘシアン・ロボ
+……。[r]……。
+[k]
+
+[charaFace C 5]
+
+＠ナーサリー・ライム
+ダメよ。
+[k]
+
+[charaFace C 0]
+
+＠ナーサリー・ライム
+戦闘シミュレーションとはいえ、敗北は敗北。[r]野生の中にもルールはあるでしょう？
+[k]
+
+＠ナーサリー・ライム
+いえ、野生だからこそ[#秩序:ルール]は絶対。[r][#生存戦略:ワイルドルール]は知っているでしょう？
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ヘシアン・ロボ
+……。[r]……。
+[k]
+
+
+[messageOff]
+[se ad85]
+[seStop ad85 0.7]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect B erasureReverse 1 0.7]
+[wt 0.4]
+
+[wipeout downToUp 0.3 1]
+[wait wipe]
+[wt 0.2]
+[fadeout black 0.1]
+[wait fade]
+[wipein circleIn 0.1 1]
+[wait wipe]
+[fadein black 0.4]
+[wait fade]
+
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+＠ナーサリー・ライム
+ふふ。納得はいかないけど、[r]わたしの顔をたててくれたみたい！
+[k]
+
+＠ナーサリー・ライム
+じゃあ頑張ってね！[r]マスターもアヴィケブロンも！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth C 2]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[charaFace C 1]
+[charaFadein C 0.1 0]
+
+＠アヴィケブロン
+ああ。[r]君の犠牲は無駄にしないよ。
+[k]
+
+[charaFace C 4]
+
+＠ナーサリー・ライム
+もう。[r]死んだみたいな言い方、およしになって！
+[k]
+
+＠アヴィケブロン
+そういうつもりではなかったんだが……。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[soundStopAll]
+[end]

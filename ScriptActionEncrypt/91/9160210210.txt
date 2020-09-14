@@ -1,0 +1,845 @@
+
+
+
+＄91-60-21-02-1-0
+
+
+[soundStopAll]
+[charaSet A 7022001 1 茨木童子]
+[charaSet B 1098203900 1 紫式部（通信）]
+[charaSet C 6029001 1 望月千代女]
+[charaSet D 5042000 1 紫式部]
+[charaSet E 6021001 1 ？？？]
+[charaSet V 98115000 1 通信用]
+[charaFilter E silhouette 00000080]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[scene 70500]
+[fadein black 2.0]
+[wait fade]
+
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.7]
+
+＠茨木童子
+…………………………？
+[k]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaFace A 4]
+＠茨木童子
+[#汝:なれ]は、誰だ。
+[k]
+
+＠茨木童子
+[#吾:われ]は知らぬ。[r]そのように言の葉を告げる[#汝:なれ]を、[#吾:われ]は知らぬ。
+[k]
+
+＠茨木童子
+[#汝:なれ]は……誰だ……？
+[k]
+
+＠茨木童子
+[#吾:われ]が誰よりも知るその顔で、[r][#吾:われ]が誰よりも知るカタチで[#嗤:わら]う、[#汝:なれ]は、誰だ。
+[k]
+
+[charaFace A 2]
+＠茨木童子
+答えよ！[messageShake 0.03 4 4 0.25]
+[k]
+
+＠茨木童子
+[#汝:なれ]は！　誰なのだ！[messageShake 0.03 4 4 0.5]
+[k]
+
+[messageOff]
+[wt 0.7]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠？？？
+[line 6]ん。
+[k]
+
+[messageOff]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 1.2]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠？？？
+ああ、小鬼がいる。
+[k]
+
+＠？？？
+山のモノが当世にはまだ在るか。いや。
+[k]
+
+＠？？？
+違うな。[r]おまえは影法師であろう。
+[k]
+
+＠？？？
+当世に生きるモノであれば幾らか興味も湧くが、[r]影法師如きに余は時を割かぬ。
+[k]
+
+＠？？？
+[#疾:と]く、失せよ。
+[k]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠茨木童子
+……ッ！
+[k]
+
+＠茨木童子
+やはり知らぬ、[#吾:われ]は知らぬ。[r]貴様、そのカタチで[#吾:われ]を愚弄する言の葉なぞを……
+[k]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaFace A 2]
+＠茨木童子
+吐くでないわ！[messageShake 0.03 4 4 0.25][r]去るのは貴様だ不届き者、今すぐ五体引き裂くぞ！
+[k]
+
+[branchQuestNotClear lblNotClear01 3000303]
+＠茨木童子
+[#角:つの]折り、首を[#刎:は]ねて、[r]此処の外へ放り投げて海の藻屑としてくれる[line 3]！
+[k]
+[branch lblConf01]
+
+[label lblNotClear01]
+＠茨木童子
+[#角:つの]折り、首を[#刎:は]ねて、[r]此処の外へ放り投げて氷の彫像としてくれる[line 3]！
+[k]
+
+[label lblConf01]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠？？？
+だまれ。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_80 0.4 0.5]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[charaShake A 0.04 3 3 0.4]
+[wt 1.2]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠？？？
+だまれ。[r]小鬼。
+[k]
+
+＠？？？
+すこし、うるさい。
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_80 0.5]
+
+[se ad875]
+[se ad14]
+[seVolume ad14 0 0.4]
+[shake 0.05 0 2 1.2]
+[effect bit_talk_pressure]
+[wt 1.5]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[charaShake A 0.05 2 2 1.2]
+
+＠茨木童子
+………………！
+[k]
+
+＠茨木童子
+こ、これ……はッ……！？
+[k]
+
+[charaFace A 4]
+＠茨木童子
+[#汝:なれ]……[r][#汝:なれ]は……
+[k]
+
+[messageOff]
+[charaTalk E]
+[se adm74]
+[seVolume adm74 0 0.2]
+[seVolume adm74 5.0 1.0]
+[wt 1.0]
+
+[charaFace A 5]
+＠茨木童子
+！
+[k]
+
+[charaFace A 4]
+＠茨木童子
+来るな……
+[k]
+
+＠茨木童子
+来るな、来るな来るな来るな……来るな……！[r]それ以上……！
+[k]
+
+[charaFace A 2]
+＠茨木童子
+こちらへ、来るなッ……[line 4]！
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[seStop ad14 1.0]
+[seStop adm74 1.0]
+[fadeout black 1.0]
+[wait fade]
+[effectStop bit_talk_pressure]
+[charaFadeout A 0.1]
+[branchQuestNotClear lblNotClear02 3000303]
+[scene 66400]
+[branch lblConf02]
+[label lblNotClear02]
+[scene 10204]
+[label lblConf02]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaEffect V bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠B：紫式部
+[%1]様。[r]お忙しいところ失礼いたします、紫式部です。
+[k]
+
+＠B：紫式部
+緊急の事態ゆえ、カルデアの回線を使用した上で[r]そちらへ言の葉を届けております。
+[k]
+
+[charaFace B 5]
+＠B：紫式部
+実は……
+[k]
+
+？1：どうしたの、紫式部さん
+
+＠B：紫式部
+高魔力反応を検知いたしました。[r]地下図書館、受付から最奥に向かって直進した先、
+[k]
+
+＠B：紫式部
+歴史関係を主に収蔵した書架のあたりです。
+[k]
+
+？2：地下図書館で何かあった？
+
+＠B：紫式部
+はい、ご[#慧眼:けいがん]の通りです。
+[k]
+
+＠B：紫式部
+地下図書館、受付から最奥に向かって直進した先、[r]歴史関係を主に収蔵した書架のあたりにて、
+[k]
+
+＠B：紫式部
+高魔力反応を検知しております。
+[k]
+
+？！
+
+＠B：紫式部
+先んじて図書館へ入っていた酒呑童子様、[r]その少し後に彼女を追いかけていった茨木童子様……
+[k]
+
+＠B：紫式部
+すなわち鬼のおふたりに[r]警戒を促すため館内放送で呼びかけてみましたが、
+[k]
+
+＠B：紫式部
+返答はなく、[r]受付に戻ってくる気配もありません。
+[k]
+
+＠B：紫式部
+ですので、その……
+[k]
+
+[messageOff]
+[charaFace B 4]
+[wt 1.0]
+
+[charaFace B 6]
+＠B：紫式部
+何らかの異状が発生している可能性がございます！[r]面倒ごとばかりの図書館ですみません！
+[k]
+
+？1：大丈夫
+
+？2：地下図書館にはみんなお世話になっているんだし
+
+？！
+
+＠B：紫式部
+勿体ない御言葉を……
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+
+[fowardEffect bit_talk_quickmove]
+[wt 0.1]
+[se ad73]
+[wt 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,4]
+[charaMove C 1 0.1]
+[wt 0.7]
+
+＠望月千代女
+委細、聞かせていただきました。[r]お館様。
+[k]
+
+[branchQuestNotClear lblNotClear03_01 01000822]
+[branchQuestNotClear lblNotClear03_02 3000303]
+
+[label lblNotClear03_01]
+＠望月千代女
+マシュ殿はメディカルチェックのさなかにて、[r]ここは拙者が御身をお守りいたします。
+[k]
+[branch lblConf03]
+
+[label lblNotClear03_02]
+＠望月千代女
+ここは拙者が御身をお守りいたします。[r]どうかお任せください。
+[k]
+
+[label lblConf03]
+
+？1：行こう！
+？2：いざ地下図書館！
+
+？！
+
+[charaFace C 5]
+＠望月千代女
+承知！
+[k]
+
+[messageOff]
+[se ad59]
+[charaFadeout C 0.2]
+[charaMove C -192,0 0.4]
+
+[bgm BGM_EVENT_5 0.7 0.2]
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+[scene 70300]
+[wt 0.5]
+[seStop ad59 1.0]
+[bgm BGM_EVENT_5 0.7 1.0]
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+
+[wt 0.2]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.4 1]
+＠紫式部
+[%1]様！
+[k]
+
+[charaFace D 5]
+＠紫式部
+現在のところ、目立った動きはありません。[r]件の高魔力反応は……
+[k]
+
+＠紫式部
+奥の書架に留まった状態のままで、[r]こちらへ移動してくる様子なども特になく。
+[k]
+
+[messageOff]
+[charaFace D 4]
+[wt 1.0]
+
+[charaFace D 5]
+＠紫式部
+なのですが……
+[k]
+
+＠紫式部
+危うい、と感じる点がございます。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠望月千代女
+と、いうと？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠紫式部
+安定した高魔力であるなら、[r]それはそれで安全だと思われます。けれど……
+[k]
+
+＠紫式部
+高魔力反応の主、正体不明のその御方は、[r]魔力の上昇と下降を不安定に繰り返しています。
+[k]
+
+＠紫式部
+危険な状態です。[r]いったい、何が起きてしまうのか……
+[k]
+
+[charaFace D 4]
+＠紫式部
+空間拡張の術式を施すことで形作られた、[r]図書館内で済めばよいですが……
+[k]
+
+＠紫式部
+もしも不安定なまま、[r]外に出てしまったならばっ。
+[k]
+
+[charaFace D 2]
+＠紫式部
+カルデアの大切な作戦に影響が！[r]出かねません！
+[k]
+
+[charaFace D 4]
+＠紫式部
+そ、そうなってしまったら……[r]私は……
+[k]
+
+[charaFace D 6]
+＠紫式部
+あわ、あわわわわわわわわわ[line 2]
+[k]
+
+？1：すぐに様子を見てくるよ
+
+？！
+
+？1：心配しないで
+
+＠紫式部
+は、はいっ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+？2：行こう、千代女さん！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠望月千代女
+引き続き承知にござる！
+[k]
+
+？！
+
+[charaFace C 0]
+＠望月千代女
+紫式部殿は此処にて待機を。[r]我ら、書架の高魔力反応の正体を確かめます。
+[k]
+
+[charaFace C 5]
+＠望月千代女
+それでは、お館様。[r]いざ！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout C 0.1]
+[scene 70500]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[se ad452]
+[seVolume ad452 0 0]
+[seVolume ad452 1.0 0.7]
+[wt 1.5]
+[seStop ad452 0.6]
+[wt 1.0]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+＠望月千代女
+高魔力反応……
+[k]
+
+＠望月千代女
+かなり近いでござる。[r]ご注意をば。
+[k]
+
+[messageOff]
+[charaFace C 5]
+[wt 0.7]
+
+[charaFace C 2]
+＠望月千代女
+前方！　お館様！[bgmStop BGM_EVENT_81 0.4]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad85]
+[seVolume ad85 0 0]
+[seVolume ad85 0.1 1.0]
+[se ad171]
+[seVolume ad171 0 0]
+[seVolume ad171 0.1 0]
+[wt 0.7]
+[shake 0.03 3 3 0.4]
+[se ad144]
+[se ade47]
+[seStop ade47 1.5]
+[wt 2.0]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠望月千代女
+人間大のモノが飛来して……[r]こ、これは！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.4]
+
+？1：茨木童子！
+？！
+
+？1：（抱え起こす）
+？！
+
+[cameraMove 0.4 0,20 1.01]
+[wt 0.7]
+[se ad7]
+[wt 0.1]
+[cameraMove 0.4 0,0 1.01]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 0,-6]
+[charaMove A 0,0 0.4]
+[charaShake A 0.03 2 2 0.4]
+[wt 0.7]
+
+＠茨木童子
+うううう……[r]この[#吾:われ]が、指先ひとつで投げ飛ばされる！
+[k]
+
+[charaFace A 0]
+＠茨木童子
+はっ。
+[k]
+
+＠茨木童子
+な、なんだ貴様らか！[r]丁度いいところに、いや、よくないところに[line 3]
+[k]
+
+[messageOff]
+[charaFace A 5]
+[wt 0.7]
+
+[charaFace A 2]
+＠茨木童子
+来るぞ。[r]構えよ、奴は敵だ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[se ade146]
+[wt 1.5]
+[seStop ade146]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 1.5]
+
+？1：酒呑童子…………？
+
+？！
+
+＠？？？
+ふ。ふふ。ふ。
+[k]
+
+＠？？？
+酒呑童子。[r]酒呑童子。
+[k]
+
+＠？？？
+ソレは、余を呼んでいるのだな？
+[k]
+
+＠？？？
+覚えなき名で呼ばれるのも、[r]うん。はじめは佳いが、二度三度となると[line 3]
+[k]
+
+＠？？？
+些か、飽きも来る。
+[k]
+
+＠？？？
+それとも余を相手に[#巫山戯:ふ ざ け]ているのか？[r]人よ。鬼よ。
+[k]
+
+＠？？？
+それに、ああ……
+[k]
+
+＠？？？
+何とも、おもしろきモノがある。[r]三郎の[#裔:すえ]とは。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.4]
+[flashin once 0.05 0.05 FFFFFF8F FFFFFF00]
+[cameraMove 0.05 0,0 1.06]
+[wait camera]
+[se ade103]
+[seVolume ade103 0 0.8]
+[cameraMove 0.05 0,0 1.01]
+[wait camera]
+[wt 0.5]
+[seStop ade103]
+[wt 0.4]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaFace C 5]
+＠望月千代女
+！
+[k]
+
+＠望月千代女
+この、気配[line 3]
+[k]
+
+＠望月千代女
+我が血を呪う[#大蛇:おろち]のそれ、そのもの！[r]普段感じられるモノより遥かに濃い！
+[k]
+
+＠望月千代女
+ならばあれなる酒呑童子殿、[r]よもや……！
+[k]
+
+[charaFace C 2]
+＠望月千代女
+[#伊吹の御子]としての側面に近付いた状態か！？[r]お館様、あれなるは酒呑童子にして酒呑童子に非ず！
+[k]
+
+＠望月千代女
+い、いえ、日本三大化生が一角たる酒呑童子！[r]その側面！
+[k]
+
+＠望月千代女
+伊吹の[line 3]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaEffect E bit_talk_charge_ppl]
+[se ad14]
+[seVolume ad14 0 0]
+[seVolume ad14 1.0 0.3]
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 1.0 0.2]
+[wt 1.5]
+
+＠？？？
+[#大蛇:おろち]よ、此処に。
+[k]
+
+[messageOff]
+[seStop ad14 1.5]
+[seStop ad556 1.5]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+
+[se ad789]
+[se ad619]
+[shake 0.03 3 3 1.5]
+[seStop ad619 1.5]
+[wt 1.0]
+[se ad212]
+[wt 0.3]
+[se ad190]
+[wt 0.15]
+[se ad212]
+[wt 0.7]
+[wt 1.5]
+
+？1：巨大敵性体！
+？2：大型の多頭蛇……！？
+
+？！
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠望月千代女
+お気を付けください！[r]拙者の予想が正しければ……
+[k]
+
+＠望月千代女
+あれなる[#大蛇:おろち]、幻想種としての分類は魔獣の上、[r]幻獣、或いは神獣でござる……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠茨木童子
+あんなものッ！[r]普段の酒呑は[#侍:はべ]らせたりはせぬ！
+[k]
+
+＠茨木童子
+気に入らぬ[line 3][#吾:われ]は、大いに気に入らぬぞ！
+[k]
+
+[charaFace A 2]
+＠茨木童子
+手を貸せマスター！[r]あれは酒呑ではない！
+[k]
+
+[charaFace A 4]
+＠茨木童子
+い、いや、見た目は酒呑であるから酒呑かも[r]しれぬが、なんだかいつもと違うのだ！
+[k]
+
+[charaFace A 5]
+＠茨木童子
+そうだ、きっと酒呑は[r]悪い酒にでも酔ってしまったに違いない！
+[k]
+
+＠茨木童子
+ならば目を[#醒:さ]ましてやるのが[r]大江の鬼を統べし首魁が務め、[#吾:われ]の務めであろう！
+[k]
+
+＠茨木童子
+うむ。[line 3][#吾:われ]は、そのように決めた！
+[k]
+
+？1：一緒に彼女を止めよう
+？2：戦闘、開始！
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[se ad212]
+[wt 0.3]
+[se ad190]
+[wt 0.7]
+[se ad460]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠望月千代女
+敵性体、接近！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠茨木童子
+ゆくぞッ！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]
