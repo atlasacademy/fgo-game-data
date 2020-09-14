@@ -1,0 +1,369 @@
+
+＄94-02-90-02-1-0
+[soundStopAll]
+
+
+
+[charaSet A 1005002 1 Nero]
+
+[charaSet B 8001000 1 Mash]
+
+[scene 64400]
+
+[se ad207]
+
+[fadein black 1.5]
+[wait fade]
+
+[seStop ad207 2.0]
+[se ad95]
+[seVolume ad95 0 0.2]
+[wt 0.5]
+[seVolume ad95 2.0 1.0]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.2]
+[seStop ad95 0.2]
+[wt 0.3]
+
+＠Mash
+So this is where the finals will be held...[sr]Huh? Emperor Nero?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Nero
+Mash and [%1]!?[sr]What is going on here?
+[k]
+
+＠Nero
+Is this not the site of the final battle?[sr]Has there been some kind of mistake!?
+[k]
+
+[charaTalk B]
+
+[bgm BGM_EVENT_40 0.1]
+
+＠B：???
+It is no mistake. I determined from the start that there would be two teams advancing to the finals.
+[k]
+
+[wt 0.5]
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[input selectBranch]
+[charaSet A 1005002 1 Nero]
+[charaSet B 8001000 1 Mash]
+[scene 64400]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+
+[seStop ad207 0.1]
+[seStop ad95 0.1]
+
+[wt 0.1]
+[messageOff]
+[maskin black 1]
+[bgm BGM_EVENT_40 0.1]
+[wait mask]
+[wt 0.4]
+[label selectBranch]
+
+
+？1：That sounded like...Gilgamesh!
+[charaSet C 2002001 1 Gilgamesh]
+
+？2：That sounded like...Gorgeous P!
+[charaSet C 5018300 1 Gilgamesh]
+？！
+
+
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+[wt 0.2]
+
+
+[branch INPUT_SELECT_BRANCH_2 INPUT_SELECT_BRANCH 1]
+
+[label INPUT_SELECT_BRANCH_1]
+
+＠Gilgamesh
+Hahaha, I expected you would make your way here, mongrels! You have put on a most entertaining show!
+[k]
+
+＠Gilgamesh
+As your reward, I shall give you the opportunity to compete directly with your king. You will have a chance to bask in the honor as you fall to the ground.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Nero
+So you mean to take us all on at once? If that is what your pride as a king demands, I have no objections.
+[k]
+
+＠Nero
+But first... I know that my reserves alone could not possibly have sufficed to pay for this extravaganza.
+[k]
+
+＠Nero
+So tell me, just how much did[sr]you spend to put on this event?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Gilgamesh
+Heh. I would estimate it cost about three times what you had in Rome's treasury...but that isn't to say I had to spend much myself.
+[k]
+
+＠Gilgamesh
+One came up with a business deal to restore your treasury's funds. It succeeded brilliantly, so you now lay claim to several times what you did before.
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.7]
+[charaFace A 0]
+[bgmStop BGM_EVENT_40 0.5]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Gilgamesh
+It is no wonder he is known as one of the Nine Worthies. His powers of elocution are no less effective in modern show business than they were in his own time.
+[k]
+
+＠Gilgamesh
+He must have been thinking harder about how[sr]to help Nero Fest succeed than you were.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠Mash
+Caesar... He certainly has his share of issues, but I guess he really was worried about you, in his own way.
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_11 0.3]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠Nero
+Umu! That is all I needed to know.[sr]Now we can focus entirely on our battle, King of Heroes!
+[k]
+
+＠Nero
+This festival may belong to you now,[sr]but I still have my own pride as an emperor!
+[k]
+
+＠Nero
+Besides, it is not the proprietor that is the star of the show, but the brave heroes who take part in it! Now, as the undisputed strongest of them all, I shall reclaim the Holy Grail that is rightfully mine!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Gilgamesh
+Foolish emperor. That is exactly why I will be fighting you in this form. The King of Heroes has been the star of this show from the beginning, and the star I will remain to the end.
+[k]
+
+＠Gilgamesh
+Unfortunately for you, I have grown tired of counting my money and playing the kind, understanding king.
+[k]
+
+＠Gilgamesh
+No, what I have in store for you is nothing less than hell itself! Your half-baked heroism will not be enough to defeat me!
+[k]
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_2]
+
+＠Gorgeous P
+Hahaha, I expected you would make your way here, mongrels! You have put on a most entertaining show!
+[k]
+
+＠Gorgeous P
+As your reward, I shall give you the opportunity to compete directly with your king. You will have a chance to bask in the honor as you fall to the ground.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Nero
+So you mean to take us all on at once? If that is what your pride as a king demands, I have no objections.
+[k]
+
+＠Nero
+But first... I know that my reserves alone could not possibly have sufficed to pay for this extravaganza.
+[k]
+
+＠Nero
+So tell me, just how much did[sr]you spend to put on this event?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Gorgeous P
+Heh. I would estimate it cost about three times what you had in Rome's treasury...but that isn't to say I had to spend much myself.
+[k]
+
+＠Gorgeous P
+One came up with a business deal to restore your treasury's funds. It succeeded brilliantly, so you now lay claim to several times what you did before.
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.7]
+[charaFace A 0]
+[bgmStop BGM_EVENT_24 0.5]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Gorgeous P
+It is no wonder he is known as one of the Nine Worthies. His powers of elocution are no less effective in modern show business than they were in his own time.
+[k]
+
+＠Gorgeous P
+He must have been thinking harder about how[sr]to help Nero Fest succeed than you were.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠Mash
+Caesar... He certainly has his share of issues, but I guess he really was worried about you, in his own way.
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_11 0.3]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠Nero
+Umu! That is all I needed to know.[sr]Now we can focus entirely on our battle, King of Heroes!
+[k]
+
+＠Nero
+This festival may belong to you now,[sr]but I still have my own pride as an emperor!
+[k]
+
+＠Nero
+Besides, it is not the proprietor that is the star of the show, but the brave heroes who take part in it! Now, as the undisputed strongest of them all, I shall reclaim the Holy Grail that is rightfully mine!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Gorgeous P
+Foolish emperor. That is exactly why I will be fighting you in this form. The King of Heroes has been the star of this show from the beginning, and the star I will remain to the end.
+[k]
+
+＠Gorgeous P
+Unfortunately for you, I have grown tired of counting my money and playing the kind, understanding king.
+[k]
+
+＠Gorgeous P
+No, what I have in store for you is nothing less than hell itself! Your half-baked heroism will not be enough to defeat me!
+[k]
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_3]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]
