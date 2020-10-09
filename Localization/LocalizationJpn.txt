@@ -359,6 +359,7 @@
     "NOTIFICATION_AP_RECOVER_MESSAGE" : "APが全回復しました。",
     "NOTIFICATION_RP_RECOVER_MESSAGE" : "BPが全回復しました。",
     "NOTIFICATION_FATIGUE_RECOVER_MESSAGE" : "リラクゼーション施設を利用していたサーヴァントが全員全快しました。",
+    "NOTIFICATION_COMPLETE_HARVEST_MESSAGE" : "邪馬台国の{0}で収穫ができるようになりました。",
 
     // Master Profile
     "CHANGE_TITLE" : "名前変更",
@@ -1481,7 +1482,7 @@
     "PARTY_ORGANIZATION_EVENT_MEMBER_TITLE" : "イベントボーナス詳細",
     "PARTY_ORGANIZATION_EVENT_MEMBER_MESSAGE_EMPTY" : "対象はいません",
     "PARTY_ORGANIZATION_EVENT_MEMBER_CLOSE" : "閉じる",
-    "PARTY_ORGANIZATION_TOTAL_EVENT_POINT_INFO_TITLE" : "パーティ全体合計",
+    "PARTY_ORGANIZATION_TOTAL_EVENT_POINT_INFO_TITLE" : "パーティ効果合計",
 
     "PARTY_ORGANIZATION_DECIDE_WARNING_TITLE_COST_OVER" : "[FF2020]コストオーバー",
     "PARTY_ORGANIZATION_DECIDE_WARNING_MESSAGE_COST_OVER" : "コストの制限をこえているので\nこのパーティを登録できません。",
@@ -1698,6 +1699,9 @@
 	"EVENT_RAID_IN_BATTLE" : "[FFFF00]交戦中[-]",
 	"EVENT_RAID_NEXT_TIME_1" : "[FFFFFF]次のバトル発生まで[-]\n[FFEC00]あと{0}時間{1}分[-]",
 	"EVENT_RAID_NEXT_TIME_2" : "[FFFFFF]次のバトル発生まで[-]\n[FFEC00]あと{0}分[-]",
+	"EVENT_RAID_TIME_LIMIT_TXT" : "集落防壁到達まで",
+	"EVENT_RAID_TIME_OVER_TXT" : "集落防壁到達済み",
+	"EVENT_RAID_TIME_OVER_NOTICE" : "凶つ神が集落の中心へ到達",
 
 	// CombineScene   
     "MSG_PRESELECT_BASE_SVT" : "先に強化するサーヴァントを選択してください",
@@ -2658,6 +2662,8 @@
 
     //クエストの開始確認ダイアログ
     "QUEST_CONFIRM_NO_BATTLE_CONSUME" : "このクエストにはバトルがありません\nこのクエストを開始すると、以下のアイテムを消費します{0}",
+    "QUEST_CONFIRM_NO_BATTLE_CONSUME_ICON" : "このクエストにはバトルがありません\nこのクエストを開始すると、以下のアイテムを消費します",
+    "QUEST_CONFIRM_NO_CONSUME_COUNT" : "[FF0000](-{0})[-]",
     "QUEST_CONFIRM_NO_BATTLE_NO_CONSUME" : "このクエストにはバトルがありません",
     "QUEST_CONFIRM_DELETE_MSG" : "また、選ばれなかった以下のクエストが消滅します[FFC020]{0}[-]",
     "QUEST_CONFIRM_RESET_MSG" : "{0}\n[FFC020]開拓の為に消費したアイテムは戻りません[-]",
@@ -2893,7 +2899,7 @@
 
     "BATTLE_RAID_TOTALHP": "Total HP:{0:#,0} ",
     "BATTLE_RAID_TOTALHP2": "撃破 {0:#,0}柱",
-    "BATTLE_RAID_TOTALHP3": "残り戦闘数 {0:#,0}回",
+    "BATTLE_RAID_TOTALHP3": "残り {0:#,0}体",
     "BATTLE_SUPERBOSS_TOTALHP": "Total HP:{0:#,0} ",
     "BATTLE_RAID_REMAINING_TIME": "残り時間 {0:D2}:{1:D2}:{2:D2}",
     "BATTLE_RAID_REMAINING_TURN": "残り{0:D}ターン",
@@ -2986,8 +2992,8 @@
     "USE_ITEM_CONFIRM_MSG" : "{0}を使用します。\nよろしいですか？",
 
     // 禁則処理対応文字
-    "KINSOKU_TOP_STR" : "”、。－ー）」］』】〕＞％ぁぃぅぇぉっゃゅょゎァィゥェォッャュョヮヵヶ>)%].>−-・!?！？｝〉》〙〟｠〗»ゕゖㇰㇱㇲㇳㇴㇵㇶㇷㇸㇹㇷ゚ㇺㇻㇼㇽㇾㇿ々〻‐–〜～ :：",
-    "KINSOKU_LAST_STR" : "（「［『【〔＜(<[｛〈《〘〝“｟〖«",
+    "KINSOKU_TOP_STR" : "”、。－ー）」］』】〕＞％ぁぃぅぇぉっゃゅょゎァィゥェォッャュョヮヵヶ>)%].>−-・!?！？｝〉》〙〟｠〗»ゕゖㇰㇱㇲㇳㇴㇵㇶㇷㇸㇹㇷ゚ㇺㇻㇼㇽㇾㇿ々〻‐–〜～ :：[",
+    "KINSOKU_LAST_STR" : "（「［『【〔＜(<[｛〈《〘〝“｟〖«/",
 	"KINSOKU_SEPARATION_STR" : "─—…‥〳〴〵",
 
     // 漢数字変換文字
@@ -3299,6 +3305,19 @@
     "EVENT_BOARD_GAME_DICE_ALLCLEAR_WARNING_MESSAGE" : "ガッポリークエストを全てクリア済みです。\nどのマスに止まってもクエストは発生しませんが\nダイスを使用しますか？",
     "EVENT_BOARD_GAME_DICE_ALLCLEAR_WARNING_DECIDE" : "はい",
     "EVENT_BOARD_GAME_DICE_ALLCLEAR_WARNING_CANCEL" : "いいえ",
+
+	// クールタイム用
+	"EVENT_COOLTIME_REMAIN" : "あと{0}:{1}:{2}",
+
+    // 収穫クエスト用
+    "EVENT_HARVEST_GROWTH_MESSAGE" : "{0}の\n生産数が増えました。",
+	"EVENT_HARVEST_GROWTH_ITEM_FORMAT" : "×{0:#,0}",
+	"EVENT_HARVEST_GROWTH_ITEM_ADD_FORMAT" : "[FFF000](+{0:#,0})[-]",
+	"EVENT_HARVEST_GROWTH_ITEM_ADD_LABEL_FORMAT" : "[FFD900]({0:#,0})[-]",
+	"EVENT_HARVEST_GROWTH_ITEM_GRADEUP" : "[FFD900](GRADEUP)[-]",
+	"EVENT_HARVEST_GROWTH_ITEM_NEW" : "[FFD900](NEW)[-]",
+	"EVENT_HARVEST_CAUTION_TITLE" : "{0}の改良について",
+	"EVENT_HARVEST_CAUTION_DECIDE_BUTTON" : "クエスト開始",
 
 	// サーバー証明書エラー時に表示する文言
 	"SERVER_CERTIFICATE_ERROR_TITLE" : "アプリバージョンエラー",

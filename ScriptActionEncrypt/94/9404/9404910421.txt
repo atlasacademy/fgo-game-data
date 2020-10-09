@@ -1,0 +1,394 @@
+
+
+＄94-04-91-04-2-1
+
+
+[soundStopAll]
+
+[branchQuestNotClear lblNotClear 3000320]
+
+
+[charaSet A 8001410 1 マシュ]
+[branch lblConf]
+
+[label lblNotClear]
+[charaSet A 8001000 1 マシュ]
+
+[label lblConf]
+
+
+[charaSet B 3038000 1 長尾景虎]
+[charaSet C 1044000 1 斎藤一]
+[charaSet D 1098195000 1 山南敬助]
+[charaSet E 1027001 1 沖田総司]
+[charaSet F 2041000 1 織田信勝]
+[charaSet G 1098196100 1 埴輪]
+
+[charaSet S 5009040 1 エフェクト用ダミー]
+[charaSet O 5009040 1 エフェクト用ダミー]
+
+[charaPut O 1200,1200]
+[charaEffect O bit_talk_radiallight01]
+
+[charaDepth G 7]
+[charaDepth O 4]
+
+[scene 20803]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk off]
+[charaFace G 0]
+[charaFadein G 0.1 0,0]
+[charaPut O 0,0]
+[wt 1.0]
+
+
+[fadeout white 0.3]
+[se ade456]
+[wait fade]
+
+[charaFadeout G 0.1]
+[charaPut O 1200,1200]
+[charaEffectStop O bit_talk_radiallight01]
+
+[charaFace B 8]
+[charaFadein B 0.1 0,0]
+[charaEffect B bit_talk_shadow_aura01]
+
+[wt 0.5]
+
+[fadein white 0.5]
+[se ad783]
+[seStop ad783 0.6]
+[seStop ade456 0.5]
+[wait fade]
+
+[wt 1.0]
+
+[charaPut S 0,0]
+[charaEffect S bit_talk_atomization]
+[wt 0.5]
+[cueSe Battle ba6]
+
+[charaEffectStop B bit_talk_shadow_aura01]
+[wt 4.0]
+
+[charaEffectDestroy S bit_talk_atomization]
+[charaEffectDestroy B bit_talk_shadow_aura01]
+
+
+
+[branch INPUT_SELECT_BRANCH_2 INPUT_SELECT_BRANCH 1]
+
+
+
+[label INPUT_SELECT_BRANCH_1]
+
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 8]
+＠長尾景虎
+ま、負けた……、にゃー。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠マシュ
+お、恐ろしい数の[#埴輪:はにわ]たちでしたね、先輩。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+＠長尾景虎
+戦術では勝ったのに、ごり押しで負けるとか[r]軍神ともあろうものが情けない……。
+[k]
+
+[charaFace B 14]
+＠長尾景虎
+でもそういうの好きです！
+[k]
+
+[charaFace B 1]
+＠長尾景虎
+やっぱり、不利な戦況をごり押しで打開してこそ、[r]戦の醍醐味というものです！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠斎藤一
+いやいや、勘弁してくれよ。
+[k]
+
+＠斎藤一
+なにこの滅茶苦茶な強さのお嬢さんは？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠長尾景虎
+戦国最強の軍神ですがなにか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 16]
+[charaFadein D 0.1 1]
+＠山南敬助
+もしや、また君たちの知り合いかな？
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[wt 1.0]
+
+
+
+[branch INPUT_SELECT_BRANCH_3]
+
+
+
+[label INPUT_SELECT_BRANCH_2]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 8]
+＠長尾景虎
+ま、負けた……、にゃー。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+やはり、景虎さんでしたか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+
+
+＠長尾景虎
+戦術で負けたので、私だけで戦況を[r]ひっくり返そうと思ったものの、
+[k]
+
+＠長尾景虎
+まさか[#埴輪:はにわ]の腕が短すぎて得物が[r]うまく扱えないとは……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠斎藤一
+何がうまく扱えない、だ。
+[k]
+
+[charaFace C 7]
+＠斎藤一
+[#埴輪:はにわ]の時点で滅茶苦茶な強さだったじゃないの、あんた。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠長尾景虎
+それはまあ、こう見えて戦国最強の軍神ですので。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 16]
+[charaFadein D 0.1 1]
+＠山南敬助
+もしや、また君たちの知り合いかな？
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[wt 1.0]
+
+
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_3]
+
+
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠長尾景虎
+はい、私も同じく[#埴輪:はにわ]に閉じ込められたのですが、[r]とりあえず、そこらへんの[#埴輪:はにわ]たちをボコって、
+[k]
+
+
+＠長尾景虎
+配下にしていたらいつの間にか神の如く[r][#祀:まつ]り上げられてしまいまして……、
+[k]
+
+[charaFace B 14]
+＠長尾景虎
+まあ、軍神ですし致し方ないですかね？
+[k]
+
+？1：ともかく解放できてよかった
+
+？2：こちらが長尾景虎さんです
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠斎藤一
+というか、このお嬢さんが長尾景虎……、
+[k]
+
+[charaFace C 7]
+＠斎藤一
+ってことはつまり、越後の龍、上杉謙信ってわけ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠長尾景虎
+その通りです、妙にめんどくさい剣筋をしていた貴方。
+[k]
+
+[charaFace B 8]
+＠長尾景虎
+次はもっと気持ちよく斬り込むように。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠斎藤一
+そいつはお褒めにあずかり光栄ですよっと。
+[k]
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 16]
+[charaFadein D 0.1 1]
+＠山南敬助
+いやいや、君の知り合いというのは[r]とんでもない人たちばかりだね。
+[k]
+
+
+＠山南敬助
+あの上杉謙信が[#斯様:かよう]に[#凛々:りり]しい女性とは……、
+[k]
+
+[charaFace D 11]
+＠山南敬助
+この分だと次は信長公でも出てくるんじゃないかい？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠沖田総司
+出てこないで欲しいものですね！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠織田信勝
+姉上ー！　どちらにいらっしゃるのですかー！！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+
+＠沖田総司
+信勝さん、居たんです！？
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

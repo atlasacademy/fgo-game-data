@@ -1,0 +1,663 @@
+
+
+＄94-04-91-06-2-1
+
+[soundStopAll]
+
+[branchQuestNotClear lblNotClear 3000320]
+
+
+[charaSet A 8001410 1 マシュ]
+[branch lblConf]
+
+[label lblNotClear]
+[charaSet A 8001000 1 マシュ]
+
+[label lblConf]
+
+
+[charaSet B 1027001 1 沖田総司]
+[charaSet C 9010000 1 卑弥呼]
+[charaSet D 1098194300 1 卑弥呼_第一_手さげ]
+[charaSet E 7025000 1 土方歳三]
+[charaSet F 1098195000 1 山南敬助]
+[charaSet G 1044000 1 斎藤一]
+[charaSet H 6033000 1 岡田以蔵]
+[charaSet I 1098196100 1 埴輪]
+
+
+[charaSet Q 5009040 1 エフェクト用ダミー]
+[charaSet R 5009040 1 エフェクト用ダミー]
+[charaSet S 5009040 1 エフェクト用ダミー]
+[charaSet T 5009040 1 エフェクト用ダミー]
+
+
+
+[scene 96903]
+
+[se ade307]
+[seVolume ade307 0 0]
+[seVolume ade307 1.0 0.2]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaFace I 2]
+[charaFadein I 0.1 0,0]
+
+[wt 1.0]
+
+
+[fadeout white 0.3]
+[se ade456]
+[wait fade]
+
+[charaFadeout I 0.1]
+
+[charaFace E 0]
+[charaFadein E 0.1 0,0]
+[charaEffect E bit_talk_shadow_aura01]
+
+[wt 0.5]
+
+[fadein white 0.5]
+[se ad783]
+[seStop ad783 0.6]
+[seStop ade456 0.5]
+[wait fade]
+
+[wt 1.0]
+
+[charaPut Q 0,0]
+[charaEffect Q bit_talk_atomization]
+[wt 0.5]
+[cueSe Battle ba6]
+[scene 96902 1.5]
+[charaEffectStop E bit_talk_shadow_aura01]
+[wt 4.0]
+
+[charaEffectDestroy Q bit_talk_atomization]
+[charaEffectDestroy E bit_talk_shadow_aura01]
+
+
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠沖田総司
+土方さん！
+[k]
+
+[charaFace B 4]
+
+
+＠沖田総司
+どうりで[#無茶苦茶:む ち ゃ く ち ゃ]な攻撃をしてくるわけです。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠マシュ
+とにかく元に戻ったようでよかったです。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠卑弥呼
+何？　また知ってる人？　なんか顔が怖いけど。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠土方歳三
+…………おまえ、そこで何をしている。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠沖田総司
+へ？　いや、土方さんこそ何を……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 0.6]
+[seStop ade307 0.6]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+＠土方歳三
+ボ[messageShake 0.02 3 3 0.4]ケっとしてんじゃねぇ！　後ろだ沖田ァッ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 6]
+[charaDepth F 4]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠沖田総司
+……っ！？[charaFace F 13][charaFadein F 0.4 -220,0][charaMove F -200,0 0.4]
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 0.1]
+
+[cueSe Battle bac53]
+[charaRoll Q 68]
+[charaPut Q -1200,50]
+[charaEffect Q bit_talk_Slash_white_01_L]
+[wt 0.2]
+
+
+[se ad32]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+
+[effectDestroy bit_talk_Slash_white_01_L]
+
+[charaFace F 15]
+[charaFace B 2]
+[charaMove B 200,0 0.2]
+[charaMove G -300,0 0.2]
+[charaShake B 0.03 4 4 0.6]
+[charaShake G 0.03 4 4 0.6]
+[wt 1.4]
+
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 15]
+＠山南敬助
+流石だ、沖田君。
+[k]
+
+＠山南敬助
+だが……！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠マシュ
+マスター！？
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠斎藤一
+[line 3]残念、遅かったな、盾の姉さん。
+[k]
+
+[charaFace G 2]
+＠斎藤一
+悪く思うなよ、[%1]ちゃん！
+[k]
+
+
+？1：斎藤さん！？
+
+？2：何を！？
+
+？！
+
+
+[messageOff]
+[wipeout circleIn 0.4 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+
+[scene 10000]
+[wt 0.1]
+
+[wipein circleIn 0.1 1.0]
+[wait wipe]
+
+[se ad171]
+[fowardEffect bit_talk_v_slash01]
+[wt 0.35]
+
+[se ad171]
+[fowardEffect bit_talk_h_slash01]
+[wt 0.3]
+
+[se ad170]
+[se ad32]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+[fowardEffectDestroy bit_talk_v_slash01]
+
+[scene 96902]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth H 6]
+[charaDepth G 4]
+
+[charaTalk H]
+[charaTalk G]
+[charaFace H 13]
+[charaFace G 5]
+[charaFadein H 0.1 50,0]
+[charaFadein G 0.1 -50,0]
+[charaMove H 2 0.2]
+[charaMove G 0 0.2]
+[charaShake H 0.03 4 4 0.6]
+[charaShake G 0.03 4 4 0.6]
+[wt 1.6]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk on]
+＠斎藤一
+てめぇ……！
+[k]
+
+
+＠岡田以蔵
+はっ、本性出しよったの……、[#壬生狼:みぶろ]！
+[k]
+
+
+[messageOff]
+[se ad443]
+[wt 0.05]
+[se ad132]
+[charaMove G -350,0 0.4]
+[charaFadeout G 0.4]
+[wt 0.2]
+[seStop ad443 0.1]
+[seStop ad132 0.1]
+[wt 0.6]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠マシュ
+以蔵さん！？　マスター、とにかくわたしの後ろに！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠斎藤一
+……いつからだ、人斬り以蔵。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+＠岡田以蔵
+わしは[#壬生狼:みぶろ]の事なんぞ、[r]はなから信用しちゃあせん。
+[k]
+
+[charaFace H 13]
+
+
+＠岡田以蔵
+しかしおまん、妙な剣を使いよってからに。
+[k]
+
+
+＠岡田以蔵
+どこの流派ぜよ……、いや、型が見えんぞ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠斎藤一
+そりゃこっちのセリフだ、サル真似野郎。
+[k]
+
+[charaFace G 8]
+＠斎藤一
+だが……、確かに少し舐め過ぎたかね。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+＠岡田以蔵
+フン、わしは護衛の仕事だけは[r]しくじった事はないきにのう。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+＠沖田総司
+そんな……、山南さんに斎藤さん……！
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠土方歳三
+おまえ……、何のつもりだ……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 1]
+＠山南敬助
+お久しぶりですね、土方君。
+[k]
+
+
+＠山南敬助
+まさかこんなところで会えるとは[r]思いませんでしたが。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠土方歳三
+そんな話はしてねぇ、どういうことだこれは。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 1]
+
+＠山南敬助
+どういう事も何も、[r]私は局長の命で動いているだけです。
+[k]
+
+
+[charaFace F 15]
+＠山南敬助
+[line 3]そう、芹沢局長のね。
+[k]
+
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+＠土方歳三
+芹沢……、だと……？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 15]
+[charaFadein F 0.1 1]
+＠山南敬助
+ここまでだ、退くぞ、斎藤君。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+＠斎藤一
+ま、やることはやりましたしね。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠卑弥呼
+やることって……。
+[k]
+
+？1：なにを……？
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 1]
+＠斎藤一
+さてね……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+？2：もしかして[#埴輪:はにわ]を壊してた事？
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠斎藤一
+へぇ……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk F]
+[charaFace F 10]
+[charaFace G 0]
+[charaFadein F 0.1 2]
+[charaFadein G 0.1 0]
+＠山南敬助
+それでは失礼しますよ、斎藤君。
+[k]
+
+[charaTalk G]
+[charaFace G 7]
+＠斎藤一
+これ苦手なんですがね。
+[k]
+
+
+[messageOff]
+[se ade153]
+[wt 0.1]
+[charaRoll Q 0]
+[charaPut Q 2]
+[charaPut R 0]
+[charaEffect Q bit_talk_11]
+[charaEffect R bit_talk_11]
+[wt 2.4]
+
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut Q 1200,1200]
+[charaPut R 1200,1200]
+
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+＠岡田以蔵
+ちぇりゃあああああ！！！
+[k]
+
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth F 2]
+[charaDepth G 3]
+[charaDepth Q 4]
+[charaDepth R 5]
+[charaDepth S 6]
+[charaDepth T 7]
+
+[charaPut Q 2]
+[charaPut R 0]
+[charaFace F 10]
+[charaFace G 7]
+[charaFadein F 0.1 2]
+[charaFadein G 0.1 0]
+[wt 0.1]
+
+[cueSe Battle bac138]
+[fowardEffect bit_talk_x_slash03 0,60]
+[wt 0.2]
+
+[se ade280]
+[charaPut S 2]
+[charaPut T 0]
+[charaEffect S bit_talk_19]
+[charaEffect T bit_talk_19]
+[charaEffectStop S bit_talk_19]
+[charaEffectStop T bit_talk_19]
+[wt 0.4]
+[seStop ade280 1.2]
+[wt 1.6]
+
+[se ade153]
+[charaFadeout G 0.7]
+[charaFadeout F 0.7]
+[wt 0.2]
+
+[charaEffectStop Q bit_talk_11]
+[charaEffectStop R bit_talk_11]
+[wt 2.8]
+
+
+[charaTalk on]
+[charaTalk H]
+[charaFace H 13]
+[charaFadein H 0.1 1]
+＠岡田以蔵
+…………チッ、逃がしたか。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠マシュ
+マスター、大丈夫ですか！？
+[k]
+
+[charaFace A 12]
+＠マシュ
+それにしても山南さんに斎藤さん……。
+[k]
+
+？1：うん……
+
+？2：沖田さん……
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠沖田総司
+…………。
+[k]
+
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_70 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

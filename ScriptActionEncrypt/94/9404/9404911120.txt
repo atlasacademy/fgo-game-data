@@ -1,0 +1,436 @@
+
+
+＄94-04-91-11-2-0
+[soundStopAll]
+
+[charaSet A 1098194300 1 卑弥呼]
+[charaSet C 7025002 1 土方歳三]
+[charaSet D 6033000 1 岡田以蔵]
+
+[branchQuestNotClear lblNotClear 3000320]
+
+[branch lblConf]
+[label lblNotClear]
+[charaSet E 8001000 1 マシュ]
+
+[branch lblNotClear_out]
+[label lblConf]
+[charaSet E 8001410 1 マシュ]
+
+[label lblNotClear_out]
+
+[charaSet G 1098194700 1 芹沢鴨]
+[charaSet H 1098195100 1 山南敬助]
+[charaSet I 1098196000 1 狗神]
+[charaSet J 1001000 1 エフェクト用]
+[charaSet L 1098196400 1 隊士]
+[charaSet M 1001000 1 エフェクト用]
+
+[charaDepth M 8]
+[charaDepth J 7]
+[charaDepth L 6]
+[charaDepth I 6]
+
+
+[scene 97200]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠土方歳三
+っらああああああああ！！！
+[k]
+
+[messageOff]
+
+[effect bit_talk_v_slash01]
+[se bac137]
+[wt 0.3]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+[charaShake L 0.03 4 4 0.3]
+[wt 0.6]
+
+[charaMove L 0,-50 0.4]
+[charaFadeout L 0.4]
+[wt 0.4]
+[se ad144]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠岡田以蔵
+死に晒せぇえええええ！！！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+[charaEffect L bit_talk_x_slash03 0,30]
+[se bac139]
+[wt 0.2]
+[charaShake L 0.03 5 5 0.3]
+[wt 0.6]
+
+[charaMove L 0,-50 0.4]
+[charaFadeout L 0.4]
+[wt 0.4]
+[se ad144]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+[bgmStop BGM_EVENT_3 1.5]
+
+
+＠マシュ
+マスター！　敵性体、撃退しました！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+
+＠土方歳三
+残念だったな芹沢……、これでてめぇもお[#終:しま]いだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠芹沢鴨
+残念……？　ああ、実に残念だよ……。
+[k]
+
+[charaFace G 3]
+[bgm BGM_EVENT_71 0.1]
+
+＠芹沢鴨
+我が新選組の隊士諸君、悔しかろう、恨めしかろう。
+[k]
+
+
+＠芹沢鴨
+[#凶つ闇:まがつやみ]に冒され、殺し合いをさせられ、
+[k]
+
+＠芹沢鴨
+ましてや君たちの信奉してやまない[r]女王までが君たちの敵に回ってしまった。
+[k]
+
+＠芹沢鴨
+無念だろうねぇ、実に無念だろう……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+貴方、何を言って……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠芹沢鴨
+いや、なに、仲間を殺すこともいとわない[r]残酷な君たちに感謝しているよ。
+[k]
+
+[charaFace G 7]
+
+＠芹沢鴨
+[line 3]よい生贄が出来た。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_71 0.4]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+[wt 0.5]
+
+[charaEffect J bit_talk_black_mist]
+[se bac33]
+[seStop bac33 0.7]
+[se ad556]
+[seVolume ad556 0 0.4]
+[wt 0.5]
+
+[charaFace L 1]
+
+＠隊士
+う、うあああ……、うあああああああ！！！
+[k]
+
+[charaPut J 2200,2200]
+[charaPut M 1200,1200]
+[charaFadeout L 0.1]
+[seStop ad556 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+[bgm BGM_EVENT_72 0.1]
+
+＠マシュ
+な、なにをして……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+まさか……、彼らを生贄に……！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+
+＠芹沢鴨
+ふははははははは！　我が身に宿る[#狗奴国:くなこく]の秘術！
+[k]
+
+＠芹沢鴨
+それこそが人の怨念を力に変える獣の呪法！
+[k]
+
+＠芹沢鴨
+より悲嘆を、より妄執を、より復讐を望む[r]人の想念を集め操る力！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+
+＠マシュ
+そんな……、ではそのためにわたしたちに彼らを倒させ、[r]更なる怨念を重ねようというのですか！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠土方歳三
+反吐が出る……。
+[k]
+
+＠土方歳三
+山南、これがてめぇが選んだ局長だってのか……。
+[k]
+
+[charaFace C 9]
+
+＠土方歳三
+これがてめぇが夢見た新選組か！
+[k]
+
+
+＠土方歳三
+答[messageShake 0.02 4 4 0.5]えろ、山南ィ！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+
+＠山南敬助
+土方君……、私は……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠芹沢鴨
+ふはははははははは！
+[k]
+
+
+＠芹沢鴨
+さあ、これが君たちのお陰で生まれた、[r]古きまつろわぬ民の国、[#狗奴国:くなこく]に伝わる化け物、
+[k]
+
+
+＠芹沢鴨
+[line 3]『[#狗神:いぬがみ]』だ！
+[k]
+
+
+＠芹沢鴨
+実に滑稽で醜悪極まる、素晴らしい姿だろう！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad169]
+
+[charaPut J 0,0]
+[charaTalk off]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_72 1.2]
+[charaEffectStop J bit_talk_black_mist]
+[wt 0.6]
+[charaPut M 0,0]
+[charaEffect M bit_talk_suspicious]
+[charaFadeout L 0.1]
+[se ad804]
+[seStop ad169 0.6]
+[wt 0.6]
+
+[charaPut I 1]
+[charaSpecialEffect I wipeTimeRe 1 1.0]
+[se ad42]
+[wait charaSpecialEffect I]
+[charaFadein I 0.0 1]
+[wt 0.5]
+
+[bgm BGM_EVENT_24 0.1]
+[wt 1.0]
+
+＠狗神
+ウァアア……、ウォアアアアアア……！
+[k]
+
+[charaPut J 2200,2200]
+[charaPut M 1200,1200]
+[charaEffectStop M bit_talk_suspicious]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+なんてことを……、みんな泣いてる……、
+[k]
+
+＠卑弥呼
+苦しくて辛くて悲しくて……、
+[k]
+
+＠卑弥呼
+ごめん、ごめんね……！
+[k]
+
+[charaFace A 5]
+
+＠卑弥呼
+あたしが、あたしがもっと……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 15]
+[charaFadein E 0.1 1]
+
+
+＠マシュ
+マスター！　あの『[#狗神:いぬがみ]』凄い魔力を放っています！
+[k]
+
+＠マシュ
+相対しているだけで圧し潰されそうな……！
+[k]
+
+？1：とにかく倒さないと……！
+？2：酷すぎる……！
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠芹沢鴨
+[line 3]さあ、お別れだ。
+[k]
+
+＠芹沢鴨
+出来るだけ滑稽に、惨たらしく死んでくれたまえ！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.5]
+[wait fade]
+[soundStopAll]
+[end]

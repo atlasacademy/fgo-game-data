@@ -1,0 +1,155 @@
+
+
+＄94-04-91-05-1-1
+
+[soundStopAll]
+
+[branchQuestNotClear lblNotClear 3000320]
+
+
+[charaSet A 8001410 1 マシュ]
+[branch lblConf]
+
+[label lblNotClear]
+[charaSet A 8001000 1 マシュ]
+
+[label lblConf]
+
+
+[charaSet B 1098196400 1 闇の新選組隊士]
+[charaSet C 1027001 1 沖田総司]
+[charaSet D 3038000 1 長尾景虎]
+[charaSet E 1098194700 1 ？？？]
+
+[charaSet S 5009040 1 エフェクト用ダミー]
+[charaSet T 5009040 1 エフェクト用ダミー]
+
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[cueSe Battle bac137]
+[effect bit_talk_x_slash02]
+[wt 0.4]
+
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+
+[scene 96800]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0 1]
+[charaShake B 0.03 4 4 0.6]
+[wt 0.8]
+
+[charaMove B 0,-50 0.4]
+[charaFadeout B 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠沖田総司
+……片付きましたか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠長尾景虎
+あらかたは……。
+[k]
+
+[bgmStop BGM_EVENT_3 1.0]
+[charaFace D 0]
+＠長尾景虎
+ですが、大将首がまだのようですよ。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[se ade448]
+[wt 1.4]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_71 0.1]
+
+＠？？？
+おやおや、誰かと思えば総司君じゃないかね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠沖田総司
+あなたは……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠？？？
+わっはっは！　まさか一番隊の隊長ともあろうものが、[r]新選組局長の顔を忘れたわけではあるまいね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+新選組の……！
+[k]
+
+？1：局長！？
+
+？2：という事は……
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠沖田総司
+芹沢……さん！？
+[k]
+
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_71 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

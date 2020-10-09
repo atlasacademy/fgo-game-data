@@ -1,0 +1,352 @@
+
+＄94-04-91-03-2-0
+
+[soundStopAll]
+
+[charaSet A 9010000 1 卑弥呼]
+[charaSet B 1098196100 1 卑屈そうな埴輪]
+[charaSet C 1098196100 1 お人好しっぽい埴輪]
+[charaSet D 1098140000 1 大蛇]
+
+[branchQuestNotClear lblNotClear 3000320]
+
+[branch lblConf]
+[label lblNotClear]
+[charaSet E 8001000 1 マシュ]
+
+[branch lblNotClear_out]
+[label lblConf]
+[charaSet E 8001410 1 マシュ]
+
+[label lblNotClear_out]
+
+[charaSet F 1027001 1 沖田総司]
+[charaSet G 1044000 1 斎藤一]
+
+[charaDepth D 7]
+[charaDepth C 6]
+
+[scene 96901]
+
+[pictureFrame cut063_cinema]
+
+[fadein black 1.5]
+[wait fade]
+
+[effect bit_talk_14]
+[se ad170]
+[wt 0.1]
+
+[charaScale B 1.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+[se ad671]
+[charaMoveScale B 1.0 0.3]
+[wt 0.8]
+
+[bgm BGM_EVENT_49 0.1]
+
+＠B：若干卑屈っぽい埴輪
+ハニョッブアアアアアアア！？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+
+＠大蛇
+イライラする奴め。
+[k]
+
+＠大蛇
+何を言ってるかさっぱりわからん。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 0,-50]
+[wt 0.4]
+
+＠お人好しっぽい埴輪
+ハニョハニョ……、ハニョブハニョ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 -256,-50]
+[charaFace C 1]
+[charaFadein C 0.1 256,-50]
+
+＠大蛇
+こっちのは何となくわかるな。
+[k]
+
+
+＠大蛇
+いいか、おまえが甘やかすから[r]付け上がるんだぞこいつは。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaMove D -156,-50 0.5]
+[wt 0.5]
+[charaTalk on]
+
+
+＠大蛇
+それはともかく、おまえは[#吾:われ]から離れるでない。[r]なんとも抱き心地がよい故な。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠B：若干卑屈っぽい埴輪
+ハ[messageShake 0.03 5 5 0.5]ニョッブアアアアアアア！！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[bgmStop BGM_EVENT_49 0.5]
+[wait wipe]
+
+[pictureFrame]
+
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠マシュ
+先輩、若干卑屈そうな[#埴輪:はにわ]が大蛇に殴られています。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+その割にお人好しっぽい[#埴輪:はにわ]は[r]妙に大事にされてるみたいね。
+[k]
+
+？1：このやり取りどこかで見覚えが……
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠沖田総司
+確かに食堂とかでよく見かけてる感じが……。
+[k]
+
+？2：あー、いつもの奴ですね
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠沖田総司
+確かに、となるとあの卑屈そうなのが[r]あれですかね。
+[k]
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+
+＠大蛇
+[line 3]貴様ら、何者だ。[#吾:われ]が気づかぬと思うてか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠沖田総司
+いや、言うまでもなくお竜さんですよね？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠大蛇
+なんだ、その妙に懐かしい様な哀しい様な呼び名は。
+[k]
+
+
+＠大蛇
+[#吾:われ]はまつろわぬ大蛇。気が付いたらここにいたが、[r]どういうわけか[#吾:われ]的になんとも居心地のいい土地柄。
+[k]
+
+
+＠大蛇
+いまいち記憶がはっきりせぬのが玉に[#瑕:きず]だが[r]それはそれとして、この黒い[#靄:もや]も妙に肌に馴染む。
+[k]
+
+
+＠大蛇
+下手に山に登ると空から鉾でも降ってきそうな[r]気がする故、この地に居座ることにした。
+[k]
+
+＠大蛇
+命が惜しければ即刻立ち去るがよい。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+なに？　もしかして知り合い？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+
+＠沖田総司
+はい、恐らくは私と同じ状態かと……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+
+＠マシュ
+[#凶つ闇:まがつやみ]のせいで記憶を失っているのでしょうか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠沖田総司
+うーん、お竜さんは野生に戻っているだけの[r]ような気もしますが……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+
+＠斎藤一
+とにかく沖田ちゃんと同じってんなら、[r]まずは[#埴輪:はにわ]から潰していきますかね。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 256,0]
+[charaFace C 1]
+[charaFadein C 0.1 -256,0]
+
+＠卑屈そうな埴輪
+ハニョブ、ハニュハニョハニョ（嘲笑感）
+[k]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+
+＠お人好しっぽい埴輪
+ハニョハニョ、ハニョブニョブ（困り笑い感）
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠沖田総司
+卑屈そうな方が腹立つのでそっちからやりましょう！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠卑屈そうな埴輪
+ハ[messageShake 0.03 6 6 0.3]ニョブアアアア！？
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

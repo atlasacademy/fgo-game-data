@@ -1,0 +1,171 @@
+
+＄94-04-91-12-1-0
+
+[soundStopAll]
+
+
+[charaSet B 9010001 1 卑弥呼]
+[charaSet C 1001000 1 名無しの弟]
+[charaSet M 1001000 1 エフェクト用]
+[charaSet N 1001000 1 エフェクト用]
+
+[effect bit_sepia01]
+
+[scene 97000]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠B：卑弥呼
+……本当にそれでよいのですか。
+[k]
+
+＠C：名無しの弟
+はい、姉上……、私にはこうする他ないのです。
+[k]
+
+＠B：卑弥呼
+ですが、名を捨てるという事がどういう事か[r]分かっているのですか？
+[k]
+
+[charaFace B 5]
+
+＠B：卑弥呼
+貴方はこの世の何者でもなくなるのですよ？
+[k]
+
+＠B：卑弥呼
+名とは己を守る言の葉の形、己を現す光なのです。
+[k]
+
+[charaFace B 2]
+
+＠B：卑弥呼
+その名を捨ててしまえば、いずれは人の身すら[r]保てぬようになるかもしれません。
+[k]
+
+＠C：名無しの弟
+もう決めたのです、姉上。
+[k]
+
+＠C：名無しの弟
+私は人ならぬ力を持つ姉上の助けとなりたい。
+[k]
+
+
+＠C：名無しの弟
+ただの人である私が姉上をお助けするには、
+[k]
+
+
+＠C：名無しの弟
+名を捨て、人の身、人の形すら捨て、[r]我が魂を[#星辰:せいしん]に奉じる他ありません。
+[k]
+
+[charaFace B 4]
+
+＠B：卑弥呼
+……決意は固いのですね。
+[k]
+
+＠C：名無しの弟
+はい、もう決めたことなのです。
+[k]
+
+＠B：卑弥呼
+……私は貴方のそれほどの献身に[r]何も返すことが出来ない。
+[k]
+
+＠B：卑弥呼
+貴方は名すら伝えることのできない、[r]何かへと成り果ててしまうでしょう。
+[k]
+
+＠B：卑弥呼
+貴方の名を奪い、形を奪い、すべてを奪い、
+[k]
+
+
+＠B：卑弥呼
+それでも私は光の巫女として、[r]邪馬台国の行く末を照らさねばならぬのですね。
+[k]
+
+＠C：名無しの弟
+ははは、奪うだなどと何をおっしゃるのです。
+[k]
+
+＠C：名無しの弟
+私と姉上は姉弟ではありませんか。
+[k]
+
+＠C：名無しの弟
+姉弟とは……、
+[k]
+
+＠C：名無しの弟
+[line 3]助け合う者なのですから。
+[k]
+
+[messageOff]
+[fadeout white 2.0]
+[bgmStop BGM_EVENT_11 2.0]
+[wait fade]
+
+[wipeOff]
+[effectStop bit_sepia01]
+[effectDestroy]
+[charaFadeout B 0.1]
+
+[scene 10000]
+[wt 1.5]
+
+[fadein white 1.0]
+[wait fade]
+
+[skip false]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[effectDestroy]
+
+[scene 10000]
+[wt 1.5]
+[fadein black 0.1]
+[wait fade]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[soundStopAllFade 0.4]
+[charaSet B 5009000 1 初期化用ダミー]
+
+[effectDestroy]
+
+[maskout black 1.0]
+[wait mask]
+[scene 10000]
+[wt 0.1]
+[maskin black 0.1]
+[wait mask]
+
+[label selectBranch]
+
+[fowardEffect bit_queststart80289]
+[wait fowardEffect]
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+[soundStopAll]
+[end]

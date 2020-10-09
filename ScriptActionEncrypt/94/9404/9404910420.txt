@@ -1,0 +1,988 @@
+
+＄94-04-91-04-2-0
+
+
+[soundStopAll]
+
+[branchQuestNotClear lblNotClear 3000320]
+
+
+[charaSet A 8001410 1 マシュ]
+[branch lblConf]
+
+[label lblNotClear]
+[charaSet A 8001000 1 マシュ]
+
+[label lblConf]
+
+
+[charaSet B 1098196100 1 埴輪]
+[charaSet C 9010000 1 卑弥呼]
+[charaSet D 1098194300 1 卑弥呼_第一_手さげ]
+[charaSet E 6033000 1 岡田以蔵]
+[charaSet F 1027001 1 沖田総司]
+[charaSet G 1044000 1 斎藤一]
+[charaSet H 1098195000 1 山南敬助]
+[charaSet I 1098196100 1 埴輪]
+[charaSet J 1098196100 1 埴輪]
+[charaSet K 1098196100 1 埴輪]
+[charaSet L 1098196100 1 埴輪]
+
+[charaSet S 5009040 1 エフェクト用ダミー]
+[charaSet T 5009040 1 エフェクト用ダミー]
+
+
+[scene 20808]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad527]
+[wt 1.0]
+[seStop ad527 0.3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠マシュ
+例の神殿はそろそろのはずですが……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠埴輪
+[voice 9942480_0_B140]
+ハ[messageShake 0.02 3 3 0.4]、ハニョッブ！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠卑弥呼
+あっ！　いた！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠埴輪
+[voice 9942480_0_B410]
+ハ、ハニョハニョー！？
+[k]
+
+
+[messageOff]
+
+[se ad443]
+[charaMove B -150,0 0.4]
+[charaFadeout B 0.4]
+[wt 0.4]
+[seStop ad443 0.4]
+[wt 0.8]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠岡田以蔵
+逃がさんぜよ！
+[k]
+
+
+[messageOff]
+
+[se ad443]
+[charaMove E -150,0 0.4]
+[charaFadeout E 0.4]
+[wt 0.4]
+[seStop ad443 0.4]
+[wt 0.8]
+
+
+
+[skip false]
+
+[input selectBranch]
+
+[seStop ad443]
+[seStop ad527]
+[soundStopAllFade 0.1]
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+
+[branchQuestNotClear lblNotClear2 3000320]
+[charaSet A 8001410 1 マシュ]
+[branch lblConf2]
+
+[label lblNotClear2]
+[charaSet A 8001000 1 マシュ]
+
+[label lblConf2]
+
+[charaSet B 1098196100 1 埴輪]
+[charaSet C 9010000 1 卑弥呼]
+[charaSet D 1098194300 1 卑弥呼_第一_手さげ]
+[charaSet E 6033000 1 岡田以蔵]
+[charaSet F 1027001 1 沖田総司]
+[charaSet G 1044000 1 斎藤一]
+[charaSet H 1098195000 1 山南敬助]
+[charaSet I 1098196100 1 埴輪]
+[charaSet J 1098196100 1 埴輪]
+[charaSet K 1098196100 1 埴輪]
+[charaSet L 1098196100 1 埴輪]
+
+[charaSet S 5009040 1 エフェクト用ダミー]
+[charaSet T 5009040 1 エフェクト用ダミー]
+
+
+[scene 20808]
+
+[bgm BGM_EVENT_5 0.1]
+
+[messageOff]
+[maskin black 1.0]
+[wait mask]
+[label selectBranch]
+
+
+？1：追いかけよう！
+
+？2：ちょっと待って
+
+
+？！
+
+[skip true]
+
+[branch INPUT_SELECT_BRANCH_2 INPUT_SELECT_BRANCH 1]
+
+
+
+[label INPUT_SELECT_BRANCH_1]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠マシュ
+はい、マシュ・キリエライト、追跡します！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠沖田総司
+一番隊隊長を差し置いて一番乗りとは[r]ダーオカのくせに生意気です！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠卑弥呼
+あ、まってまってー！　あたしもー！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+＠斎藤一
+しゃーねぇ、僕らも行きますか。
+[k]
+
+
+[messageOff]
+
+[se ad769]
+[charaFadeout G 0.4]
+[wt 0.4]
+[seStop ad769 0.8]
+[wt 1.4]
+
+
+[charaTalk H]
+[charaFace H 16]
+[charaFadein H 0.1 1]
+＠山南敬助
+……ちょっと待った。
+[k]
+
+[charaFace H 10]
+＠山南敬助
+っと、行ってしまったか……。[r]まあ、致し方ない。
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgm BGM_EVENT_5 1.0 0.4]
+[wait wipe]
+
+[charaFadeout H 0.1]
+[wt 1.0]
+
+[bgm BGM_EVENT_5 1.0 1.0]
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠埴輪
+[voice 9942480_0_B170]
+ハ、ハニョブブ……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+
+＠岡田以蔵
+うはははは！　もう逃がさんぜよ、この土人形が！[r]小憎らしい顔しよってからに。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠卑弥呼
+ダーオカ君、こないだまでその[#埴輪:はにわ]だったけどね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+
+＠岡田以蔵
+黙[messageShake 0.02 3 3 0.4]っちょれ！　大体、誰がダーオカじゃ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠沖田総司
+ダーオカはダーオカしかいないじゃないですか。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+＠岡田以蔵
+おまんが吹き込んだがか！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠卑弥呼
+えー、ダーオカ君っていいじゃない。
+[k]
+
+＠卑弥呼
+かわいいよね、[&未来クン:未来チャン]？
+[k]
+
+
+？1：呼びやすいよね
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+
+＠沖田総司
+ダーオカなんてダーオカで充分ですよ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+？2：可愛くはないです
+
+[charaFace C 0]
+＠卑弥呼
+えー、そうかなー。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？！
+
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+
+＠岡田以蔵
+黙っちょれ！　とにかくこいつを仕留めてさっさと……
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_5 1.0]
+[se ade308]
+[charaTalk S]
+[charaFace E 11]
+[wt 2.2]
+
+[charaFace E 10]
+
+
+＠岡田以蔵
+なんじゃ？　何の音ぜよ？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 16]
+[charaFadein H 0.1 1]
+＠山南敬助
+やはりか、どうやらまんまと釣られたようだね。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.2]
+
+
+[charaTalk off]
+[charaDepth B 3]
+[charaDepth I 4]
+[charaDepth J 6]
+[charaDepth K 5]
+[charaDepth L 7]
+
+[se ade255]
+[wt 0.2]
+
+[charaFace B 0]
+[charaFace I 0]
+[charaFace J 0]
+[charaFace K 0]
+[charaFace L 0]
+[charaFadein B 0.4 350,5]
+[charaFadein I 0.4 -350,5]
+[charaFadein J 0.4 175,0]
+[charaFadein K 0.4 -175,0]
+[charaFadein L 0.4 0,-5]
+[wt 0.4]
+
+＠埴輪
+[voice 9942480_0_B140]
+ハニョハニョハニョッブ！
+[k]
+
+
+[charaFadeout B 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠マシュ
+マスター！　後ろから突然[#埴輪:はにわ]たちの大軍が！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠斎藤一
+[#埴輪:はにわ]が伏兵とはね……、いや、舐め過ぎてたかな。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth B 6]
+[charaDepth T 4]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[charaPut T 0,0]
+[charaEffect T bit_talk_radiallight01]
+[wt 0.4]
+＠B：光り輝く埴輪
+ハニハニ、ハニハニョトラ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠D：卑弥呼
+あーっ！？　なんかあたしより神々しい[#埴輪:はにわ]！！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+あの輝きにこの伏兵の配置、もしやあれは……！
+[k]
+
+？1：もしかして景虎さん？
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaPut T 0,0]
+＠B：光り輝く埴輪
+ハニョハハニョトラ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠卑弥呼
+あっ、なんかうれしそう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？2：武田信玄！？
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[charaPut T 0,0]
+＠B：光り輝く埴輪
+ハ[messageShake 0.02 3 3 0.4]ニャーーーー！？！？！？？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠卑弥呼
+あっ、なんか怒ってる。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaShake B 0.03 4 4 0.4]
+[charaPut T 0,0]
+[charaShake T 0.03 4 4 0.4]
+＠B：光り輝く埴輪
+ハニョハー、ニャーーーーーー！！！！
+[k]
+
+
+
+
+
+
+[branch INPUT_SELECT_BRANCH_3]
+
+
+
+
+
+
+
+
+[label INPUT_SELECT_BRANCH_2]
+
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+＠山南敬助
+出会いがしらとはいえ、一目散に逃げだすとは[r]なんだか怪しいね。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠斎藤一
+つまり、囮かなにかってわけで？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+＠山南敬助
+こういう時は万が一に備えて行動した方がいい、[r]斎藤君は右手から、沖田君は左手から回り込んでくれ。
+[k]
+
+＠山南敬助
+岡田君には悪いけど、彼には囮になってもらおう。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠沖田総司
+なるほど、それはいい考えですね。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠卑弥呼
+えー、ダーオカ君かわいそうじゃない？
+[k]
+
+？1：以蔵さんならやってくれると信じて
+
+？2：でも行っちゃったし……
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+
+
+＠山南敬助
+とにかく急ごう、岡田君が敵を引き付けてる間に[r]私たちで決めてしまおう。
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_5 1.0]
+[wait wipe]
+
+[charaFadeout H 0.1]
+
+[charaTalk off]
+[charaDepth B 3]
+[charaDepth I 4]
+[charaDepth J 6]
+[charaDepth K 5]
+[charaDepth L 7]
+[charaDepth T 2]
+
+[charaPut T 1200,1200]
+[charaEffect T bit_talk_radiallight01]
+
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaPut T 0,0]
+＠B：光り輝く埴輪
+ハニョハニョブトラ！
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk off]
+[charaFace B 0]
+[charaFace I 0]
+[charaFace J 0]
+[charaFace K 0]
+[charaFace L 0]
+[charaFadein B 0.1 350,5]
+[charaFadein I 0.1 -350,5]
+[charaFadein J 0.1 175,0]
+[charaFadein K 0.1 -175,0]
+[charaFadein L 0.1 0,-5]
+＠埴輪たち
+[voice 9942480_0_B020]
+ハニョッブハニョッブブ！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 11]
+[charaFadein E 0.1 1]
+＠ダーオカ
+なんじゃおまんらあああああ！
+[k]
+
+＠ダーオカ
+数が多すぎじゃろ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth B 6]
+[charaDepth T 4]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaPut T 0,0]
+＠B：光り輝く埴輪
+ハニョトラ、ハニョトラ、ニャー！！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+＠ダーオカ
+くそっ！　他の奴らはどうしたがじゃ！？
+[k]
+
+
+[charaTalk F]
+＠沖田総司
+そこまでです、妙に光っている[#埴輪:はにわ]！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[cueSe Battle bac136]
+[charaPut S 1]
+[charaEffect S bit_talk_v_slash01]
+[wt 0.6]
+
+[charaTalk off]
+[charaDepth B 4]
+[charaDepth I 5]
+[charaDepth J 6]
+
+[charaFace B 1]
+[charaFace I 1]
+[charaFace J 1]
+[charaFadein B 0 0]
+[charaFadein I 0 2]
+[charaFadein J 0 1]
+[charaShake B 0.03 4 4 0.4]
+[charaShake I 0.03 4 4 0.4]
+[charaShake J 0.03 4 4 0.4]
+[wt 0.8]
+
+[charaMove B -256,-50 0.4]
+[charaMove I 256,-50 0.4]
+[charaMove J 0,-50 0.4]
+[charaFadeout B 0.4]
+[charaFadeout I 0.4]
+[charaFadeout J 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+[charaDepth B 6]
+[charaDepth T 4]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[charaPut T 0,0]
+＠B：光り輝く埴輪
+ハニョッ！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+＠斎藤一
+はいはい、後ろから失礼……っと！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[cueSe Battle bac137]
+[charaPut S 1]
+[charaEffect S bit_talk_h_slash01]
+[wt 0.5]
+
+
+[charaDepth B 4]
+[charaDepth I 5]
+[charaDepth J 6]
+
+[charaFace B 1]
+[charaFace I 1]
+[charaFace J 1]
+[charaFadein B 0 0]
+[charaFadein I 0 2]
+[charaFadein J 0 1]
+[charaShake B 0.03 4 4 0.4]
+[charaShake I 0.03 4 4 0.4]
+[charaShake J 0.03 4 4 0.4]
+[wt 0.6]
+
+＠埴輪
+[voice 9942480_0_B140]
+ハニョブー！？！？
+[k]
+
+
+[messageOff]
+
+[charaMove B -256,-50 0.4]
+[charaMove I 256,-50 0.4]
+[charaMove J 0,-50 0.4]
+[charaFadeout B 0.4]
+[charaFadeout I 0.4]
+[charaFadeout J 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+[charaDepth B 6]
+[charaDepth T 4]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[charaPut T 0,0]
+＠B：光り輝く埴輪
+ハ、ハニョトラ……！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠マシュ
+以蔵さん、お待たせしました！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠卑弥呼
+助けに来たわよ、ダーオカ君！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+＠岡田以蔵
+遅いわ！　って、誰がダーオカじゃ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠沖田総司
+勝手に飛び出しておいてうるさいダーオカですね。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+＠山南敬助
+さて、周りの[#埴輪:はにわ]は片付いたようだし残りは[r]あの光っている[#埴輪:はにわ]だけかな？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[charaPut T 0,0]
+＠B：光り輝く埴輪
+ハニョトラ……、ハニョハニョ……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+なんだかショックを受けているようですが……。
+[k]
+
+？1：作戦を見破られたのが悔しいのかな
+
+？2：いや、あれは……
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaShake B 0.03 4 4 0.4]
+[charaPut T 0,0]
+[charaShake T 0.03 4 4 0.4]
+＠B：光り輝く埴輪
+ハニョトラ！　ニャーーー！！！
+[k]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠卑弥呼
+開き直って突っ込んできた！？
+[k]
+
+
+
+
+
+
+
+
+
+
+[branch INPUT_SELECT_BRANCH_3]
+
+[label INPUT_SELECT_BRANCH_3]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
