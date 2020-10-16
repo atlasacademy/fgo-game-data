@@ -1,0 +1,449 @@
+
+
+＄94-04-91-27-1-0
+
+
+[soundStopAll]
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 9010000 1 卑弥呼]
+[charaSet C 1098194300 1 卑弥呼_第一_手さげ]
+[charaSet D 1027001 1 沖田総司]
+[charaSet E 1044001 1 斎藤一]
+[charaSet F 11007000 1 ノッブ]
+[charaSet G 1098194600 1 お米ゴーレム]
+[charaSet H 5036001 1 アヴィケブロン]
+[charaSet I 2041000 1 織田信勝]
+
+
+[charaSet S 5009040 1 エフェクト用ダミー]
+[charaSet T 5009040 1 エフェクト用ダミー]
+
+
+[scene 96802]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[se ade449]
+[wt 1.0]
+
+[se ade449]
+[wt 0.8]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_YAMA 0.1]
+
+
+＠マシュ
+それにしても、こうして稲を刈り取るだけでも[r]たいへんな作業なのですね、先輩。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠卑弥呼
+だよねー、それにこの石包丁、[r]慣れないと使いにくいのよね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+
+＠沖田総司
+ふっふっふ、そこでこの私の[r]出番というわけです。
+[k]
+
+[charaFace D 5]
+＠沖田総司
+いざ！　一歩稲刈り、二歩脱穀、三歩精米！
+[k]
+
+[charaEffect D bit_talk_41]
+[charaFace D 2]
+＠沖田総司
+『稲穂三段刈り』！！
+[k]
+
+[messageOff]
+[se ad7]
+[charaMoveScale D 1.1 0.2]
+[charaMove D 0,15 0.2]
+[charaFadeout D 0.2]
+[wt 0.2]
+[charaPut D 1200,1200]
+[charaEffectStop D bit_talk_41]
+[wt 0.3]
+
+
+[se ade450]
+[cueSe Servants_102800 bac657]
+[seVolume bac657 0 0.2]
+[flashin loop 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.15]
+[cueSe Servants_102800 bac657]
+[seVolume bac657 0 0.2]
+[wt 0.15]
+[cueSe Servants_102800 bac657]
+[seVolume bac657 0 0.2]
+[wt 0.15]
+[wt 0.05]
+[charaPut T 0,-300]
+[charaEffect T bit_talk_impactlanding]
+[wt 0.25]
+[flashOff]
+[wt 2.2]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+凄いです先輩！[r]稲が瞬く間に刈られてしまいました！
+[k]
+
+＠マシュ
+まるでプロの稲刈り屋さんです！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠斎藤一
+ははっ、あの沖田ちゃんが稲刈り屋だとさ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaScale D 1.0]
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+＠沖田総司
+こう見えても、新選組一番隊隊長なんですけど。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠斎藤一
+まあ、いいじゃないの。
+[k]
+
+[charaFace E 10]
+＠斎藤一
+人斬りなんて呼ばれてるよりいいと思うよ、僕ぁ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠卑弥呼
+前から思ってたけど、未来[&クン:チャン]たちの使ってる[r]鉄器って、凄い切れ味よね。
+[k]
+
+
+＠卑弥呼
+邪馬台国にも[#外:と]つ[#国:くに]から入ってきた鉄器はあるけど[r]そこまでスパスパと切れないもの。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 17]
+[charaFadein F 0.1 1]
+＠ノッブ
+まあ、こればっかりは日の本が誇る、[r]意味不明技術じゃからな。
+[k]
+
+
+＠ノッブ
+ちなみにわしの刀、[#圧切:へしきり][#長谷部:はせべ]も[r]めっちゃ切れるんじゃぞ。
+[k]
+
+[charaFace F 12]
+＠ノッブ
+膳棚の下に隠れても無駄じゃし。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+＠沖田総司
+いい話じゃないですからね、それ。
+[k]
+
+[charaFace D 0]
+
+＠沖田総司
+あ、ちなみに私の刀は[r][#加州:かしゅう][#清光:きよみつ]っていうんですよ。
+[k]
+
+[charaFace D 12]
+
+＠沖田総司
+斎藤さんのは[#鬼神丸:きじんまる][#国重:くにしげ]でしたっけ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+
+＠斎藤一
+ああ、[#一:はじめ]ちゃんみたいなちゃらんぽらんな剣に[r]馴染む刀ってのもなかなかなくてね。
+[k]
+
+[charaFace E 1]
+＠斎藤一
+気に入ってんのよ、これ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠卑弥呼
+なるほど、名前を貰ってるのね。[r]それならよく切れるのも納得。
+[k]
+
+[charaFace B 1]
+＠卑弥呼
+……名前がない何かは、[r]名前があるだけで強くなれるから。
+[k]
+
+[messageOff]
+[bgmStop BGM_YAMA 1.0]
+[charaFadeout B 0.1]
+
+
+[se ad4]
+[seVolume ad4 0 0]
+[seVolume ad4 0.6 1.0]
+[wt 2.0]
+
+[seVolume ad4 1.0 0.2]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+＠斎藤一
+ん、またなんか騒ぎかい？
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[seStop ad4 0.4]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[pictureFrame cut063_cinema]
+[wt 0.8]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 0,-50]
+[wt 0.4]
+＠お米ゴーレム
+コメコメコメコメコメ！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+
+[pictureFrame]
+[wt 0.8]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+お米の、ゴーレム……！？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.4]
+＠アヴィケブロン
+[f large]もちろん僕だ。
+[k]
+
+？1：いつも冷静で落ち着きまくったあの
+
+？2：アヴィケブロンさんまで、ぐだぐだに！？
+
+？！
+
+＠アヴィケブロン
+農耕もたいへんな仕事だが、僕のゴーレム製造もまた、[r]たいへんな仕事だと知ってもらういい機会だと思って……
+[k]
+
+＠アヴィケブロン
+いや、それはともかく。
+[k]
+
+＠アヴィケブロン
+米が大量に余っているから、[r]ゴーレムの素材にどうかと相談されてね。
+[k]
+
+＠アヴィケブロン
+戦った後は食べられるという、一体で二度おいしい[r]ゴーレムのつもりだったのだが、
+[k]
+
+＠アヴィケブロン
+想像以上に質の良い米だったので、[r]硬度が鉄並みに上がってしまった。
+[k]
+
+
+＠アヴィケブロン
+そのうえ有り余るお米パワーで[r]暴走してしまってね。
+[k]
+
+＠アヴィケブロン
+戦闘力は申し分ないが、[r]やはり、食べられるゴーレムは失敗だった。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+＠沖田総司
+ところで、その話を持ち掛けたというのは？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠アヴィケブロン
+彼女だが？
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 15]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+＠ノッブ
+[#兵站:へいたん]と兵士の問題を同時に解消する[r]革新的アイデアだったんじゃが。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+＠織田信勝
+流石姉上！　戦闘で返り血を浴びたゴーレムを[r]食料にとは、正気の沙汰ではありませんね！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+＠沖田総司
+はあああああああああ……（あからさまな溜息）[charaMove D 0,-10 1.5]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠アヴィケブロン
+とにかく止めてくれると助かるのだが。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠卑弥呼
+仕方ない、未来[&クン:チャン]たちのよく切れる刀と[r]あたしの拳で砕くしかないわね。
+[k]
+
+[charaFace B 1]
+＠卑弥呼
+あ、ちなみにお米ゴーレムはあとで煮てから[r]美味しくいただきました！
+[k]
+
+[charaFace B 12]
+＠卑弥呼
+と予言しておきます。
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

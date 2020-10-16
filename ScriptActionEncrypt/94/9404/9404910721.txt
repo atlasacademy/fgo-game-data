@@ -1,0 +1,720 @@
+
+＄94-04-91-07-2-1
+
+[soundStopAll]
+
+[charaSet A 1098194300 1 卑弥呼]
+[charaSet B 1098194500 1 名無しの亀]
+[charaSet C 1027001 1 沖田総司]
+[charaSet D 1098174900 1 織田信長]
+
+[branchQuestNotClear lblNotClear 3000320]
+
+[branch lblConf]
+[label lblNotClear]
+[charaSet E 8001000 1 マシュ]
+
+[branch lblNotClear_out]
+[label lblConf]
+[charaSet E 8001410 1 マシュ]
+
+[label lblNotClear_out]
+
+[charaSet F 2041000 1 織田信勝]
+[charaSet G 1001000 1 エフェクト用]
+[charaSet H 1001000 1 エフェクト用]
+[charaSet I 1001000 1 エフェクト用]
+
+
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_06_b3]
+[cameraMove 0.1 0,0 1.01]
+
+[scene 97000]
+
+[bgm BGM_EVENT_24 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_kengekiall02]
+[wt 0.2]
+[se ad470]
+[seStop ad470 0.7]
+[wt 0.2]
+[se ad170]
+[charaEffect G bit_talk_kengekiall02]
+[wt 0.2]
+[se ad170]
+[wt 0.2]
+[se ad170]
+[wt 0.2]
+[se ad170]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaPut I 0,0]
+
+[charaPut H 0,0]
+[charaEffect H bit_talk_x_slash02 0,0 F]
+[se bac139]
+[wt 0.2]
+[charaShake D 0.05 4 4 0.3]
+[wt 0.5]
+
+＠D：偽の壱与
+う……、ああ……！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 2.5]
+[fowardEffect bit_talk_atomization]
+[charaEffectStop I bit_talk_06_b3]
+[wt 0.5]
+[cueSe Battle ba6]
+
+[charaCrossFade D 11007000 4 2.0]
+[wait charaCrossFade D]
+[wt 1.5]
+
+[fowardEffectDestroy]
+
+
+＠織田信長
+ふう……、やれやれ、えらいめに遭うたわい。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠沖田総司
+ノッブ！　正気に戻ったんですね！？
+[k]
+
+？1：良かった……！
+？2：いや、様子が……
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 1]
+
+＠織田信勝
+姉上……！　よ、良かった、ご無事で！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠織田信長
+控えい、たわけ者！　わしに近寄るでない！
+[k]
+
+
+＠織田信長
+貴様も[#これ]に喰い殺されたいのか！
+[k]
+
+[charaPut H 0,0]
+
+[messageOff]
+[se ade409]
+[seStop ade409 1.3]
+[charaEffect H bit_talk_06_b3]
+[wt 2.0]
+
+[charaPut H 1200,1200]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠織田信勝
+えっ……！？　姉上……、もしやまだ……！？
+[k]
+
+[charaPut H 0,0]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠織田信長
+ふん、その方が卑弥呼とやらか……、[r]話は壱与に聞いておる。
+[k]
+
+[charaPut H 1200,1200]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+壱与に！？　どういうことなの？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 0,0]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+
+＠織田信長
+なに、わしがこの地に召喚され依り代として[r]この神の座とやらに縛られる時に、
+[k]
+
+
+＠織田信長
+壱与という、この座に僅かに残っていた[r]娘の魂に頼まれたのよ。
+[k]
+
+＠織田信長
+……卑弥呼が戻るまで時を稼いでほしいとな。
+[k]
+
+[charaPut H 1200,1200]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠マシュ
+時を……？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 0,0]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠織田信長
+そうじゃ、大体このわしを依り代になんぞしようとは[r]ふざけた話、わしもまっぴらごめんじゃ。
+[k]
+
+
+＠織田信長
+とはいえ、芹沢とか言ったか？　あやつの力……、[r]おそらくは聖杯の力……、
+[k]
+
+＠織田信長
+あれには逆らえず縛られる前に、[r]苦し紛れの嫌がらせをしてやったのよ。
+[k]
+
+
+＠織田信長
+同じく[#喚:よ]ばれた貴様らを[#埴輪:はにわ]に封じて、[r]奴の力を分け与え、各地に飛ばしてな。
+[k]
+
+[charaPut H 1200,1200]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠沖田総司
+ではやはりあの[#埴輪:はにわ]はノッブの……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 0,0]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠織田信長
+じゃが、それもただの時間稼ぎ。
+[k]
+
+＠織田信長
+奴らの目的はもう果たされつつある。
+[k]
+
+[charaPut H 1200,1200]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠名無しの亀
+……それは一体？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 0,0]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠織田信長
+それは……、って、なんで亀が喋ってるんじゃ。
+[k]
+
+[charaFace D 0]
+
+
+＠織田信長
+まあよい、奴らはこの地に眠る古き獣や[r]まつろわぬ者たちの怨念を集め、
+[k]
+
+＠織田信長
+古き神々の復活を目論んでおったのよ。
+[k]
+
+[charaPut H 1200,1200]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+古き神々……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 0,0]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+
+＠織田信長
+厳密にはもどきじゃがな、そやつらの怨念を[#纏:まと]め型に封じ、[r]この国を破壊しようと目論んでおるのじゃ。
+[k]
+
+[messageOff]
+
+[shake 0.05 1 4 1.5]
+[se ad14]
+[seVolume ad14 0 0.6]
+[wt 1.5]
+
+[charaPut H 1200,1200]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠マシュ
+こ、この地鳴りは……！？
+[k]
+
+[seStop ad14 1.0]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut H 0,0]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠織田信長
+始まったぞ……、『国生み』ならぬ『国崩し』がな。
+[k]
+
+[messageOff]
+[charaPut G 0,0]
+
+[charaEffect G bit_talk_06p]
+[wt 1.5]
+
+[charaFace D 1]
+
+＠織田信長
+さて、わしはここまでじゃ、流石に無理をしすぎたわい。
+[k]
+
+＠織田信長
+ま、壱与とやらに頼まれた時ぐらいは稼いでやったじゃろ。
+[k]
+
+[charaFace D 6]
+
+＠織田信長
+あとは任せるぞ、卑弥呼とやら……。
+[k]
+
+[charaPut G 1200,1200]
+[charaPut H 1200,1200]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠卑弥呼
+壱与の頼みで、ここまでしてくれたの……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+[charaPut G 0,0]
+[charaPut H 0,0]
+
+＠織田信長
+なに、気にするでない、半分は個人的な嫌がらせじゃ。
+[k]
+
+＠織田信長
+わしを生贄にするとかふざけすぎじゃろ、[r]あの新選組だか何だかの連中。
+[k]
+
+[charaFace D 0]
+
+＠織田信長
+おい沖田、貴様の身内らしいがしっかり片をつけろよ。
+[k]
+
+[charaPut G 1200,1200]
+[charaPut H 1200,1200]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠沖田総司
+ノッブ……、
+[k]
+
+[charaFace C 9]
+
+＠沖田総司
+わかりました……。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_11 1.0]
+
+？1：そんな……
+？2：ノッブ……
+？！
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+[bgm BGM_EVENT_41 0.1]
+
+＠織田信勝
+そ、そんな！？　嘘ですよね？
+[k]
+
+
+＠織田信勝
+姉上が消滅するなんて！？
+[k]
+
+＠織田信勝
+そんなことあるわけないじゃないですか！
+[k]
+
+[charaFace F 13]
+
+＠織田信勝
+僕が残って姉上が消滅するなんておかしいですよ！
+[k]
+
+＠織田信勝
+そんなの絶対おかしいんですから！
+[k]
+
+[charaFace F 2]
+
+＠織田信勝
+おい、卑弥呼！　何とかしろよ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+
+＠卑弥呼
+信勝君……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠織田信勝
+おまえもだよ！　おまえ、姉上のマスターなんだろ！[r]どうにかしてくれよ！
+[k]
+
+[messageOff]
+
+[charaShake F 0.05 3 2 0.5]
+[se ade524]
+[wt 1.0]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[charaPut G 0,0]
+[charaPut H 0,0]
+
+
+＠織田信長
+まだ[#呆:ほう]けておるのか！　うつけ者！
+[k]
+
+[charaFadeout D 0.1]
+[charaPut G 1200,1200]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠織田信勝
+えっ……、姉上……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[charaPut G 0,0]
+[charaPut H 0,0]
+
+＠織田信長
+……貴様は昔からそうじゃ、姉上姉上とわしの後を[r]うっとおしいほどくっ付いて回りおって……、
+[k]
+
+＠織田信長
+この際はっきりゆうてやる。
+[k]
+
+[charaFace D 2]
+[bgmStop BGM_EVENT_41 1.5]
+
+
+＠織田信長
+[line 3]二度とわしの前に姿を見せるでない。
+[k]
+
+[charaFadeout D 0.1]
+[charaPut G 1200,1200]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠織田信勝
+……え？　あ、姉上……、う、嘘ですよね……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[charaPut G 0,0]
+[charaPut H 0,0]
+
+[bgm BGM_EVENT_95 0.1]
+
+
+＠織田信長
+何度も言わせるな！　[#呆:ほう]けておる時などないわ！
+[k]
+
+＠織田信長
+是より訪れるは織田信長のおらぬ世！
+[k]
+
+
+＠織田信長
+貴様は己の足で歩き、己が[#啓:ひら]く道をゆけ！
+[k]
+
+[charaFadeout D 0.1]
+[charaPut G 1200,1200]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠織田信勝
+…………そ、そんな事。
+[k]
+
+？1：ノッブ……
+？2：信勝君……
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaPut G 0,0]
+[charaPut H 0,0]
+
+
+＠織田信長
+[%1]、[r]手間を取らせてすまぬが信勝を頼む。
+[k]
+
+＠織田信長
+……こんな奴じゃがわしの弟なのでな。
+[k]
+
+[charaFadeout D 0.1]
+[charaPut G 1200,1200]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠織田信勝
+……そんな、……待ってください！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaPut G 0,0]
+[charaPut H 0,0]
+
+＠織田信長
+……信勝。
+[k]
+
+[charaFadeout D 0.1]
+[charaPut G 1200,1200]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠織田信勝
+……あ、姉上。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+[charaPut G 0,0]
+[charaPut H 0,0]
+
+＠織田信長
+[line 3]あとは任せた。
+[k]
+
+[messageOff]
+[se ad52]
+[charaSpecialEffect D flashErasure 1 1.2]
+[wait charaSpecialEffect D]
+[charaEffectStop H bit_talk_06_b3]
+[charaEffectStop G bit_talk_06p]
+[seStop ad52 0.2]
+[wt 2.0]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+
+＠織田信勝
+姉上……、
+[k]
+
+＠織田信勝
+姉上…………！
+[k]
+
+[messageOff]
+[charaFaceFade F 12 1.0]
+[wt 1.5]
+
+＠織田信勝
+[line 3][messageShake 0.02 3 3 0.6]姉上えええええええええ！！！！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_95 2.0]
+[wait fade]
+[soundStopAll]
+[end]
