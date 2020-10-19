@@ -1,0 +1,445 @@
+
+
+＄94-03-01-04-2-1
+
+
+[soundStopAll]
+
+[charaSet A 4008002 1 "Blackbeard Oni"]
+[charaSet B 10008001 1 Sitonai]
+[charaSet C 99502600 1 Mash]
+[charaSet D 1098157600 1 "Magifender Girl"]
+[charaSet E 1098157700 1 Animal]
+[charaSet F 3034002 1 Ibaraki-Douji]
+[charaSet G 6029001 1 "Assassin of Paraíso"]
+[charaSet H 98115000 1 Effect]
+
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 64700]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[messageOff]
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+[wt 0.3]
+[charaFace G 2]
+
+[charaEffect H bit_talk_h_slash02]
+[se bac139]
+[wt 0.3]
+[charaEffect H bit_talk_v_slash02]
+[se bac139]
+[wt 0.3]
+[charaFadeout G 0.1]
+[wt 0.5]
+
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth D 0]
+[charaDepth E 1]
+[charaDepth H 2]
+
+[charaFace D 0]
+[charaFace E 0]
+[charaFadein D 0.1 1]
+[charaFadein E 0.1 0,0]
+[wt 0.5]
+[se ad39]
+[charaEffect H bit_talk_36_bl]
+[wt 1.5]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_36_bl]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.3]
+[charaTalk depthOn]
+[se bac165]
+[flashin once 0.1 1.0 5944EAFF 5944EA80]
+[effect bit_talk_14]
+[wt 0.5]
+[seStop bac165 0.5]
+[wt 0.1]
+[se bas13]
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.3]
+[charaShake A 0.05 3 3 0.5]
+[bgmStop BGM_EVENT_3 1.0]
+[wt 1.0]
+
+＠Blackbeard Oni
+Gaaaaaah!
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaFace A 0]
+[bgm BGM_EVENT_11 0.1]
+[charaEffect A bit_talk_06]
+[wt 1.5]
+
+[charaFace A 1]
+＠Blackbeard Oni
+...Heh. Gotta say, that was fun. No better way to go out than mixing it up with a bunch of cuties.
+[k]
+
+[charaFace A 2]
+＠Blackbeard Oni
+Ahh, I'm so glad I got to be a Gold Servant!
+[k]
+
+[messageOff]
+[charaEffectStop A bit_talk_06]
+[wait charaEffect A bit_talk_06]
+[se ad52]
+[charaSpecialEffect A flashErasure 1 2.0]
+[wait charaSpecialEffect A]
+
+[wt 1.5]
+
+[cueSe Battle bac199]
+[cueSeVolume bac199 0 0.6]
+
+[charaPut H 1]
+[charaEffect H bit_talk_gold_kamui]
+[wt 3.0]
+[charaPut H 1200,1200]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+＠Sitonai
+...You did great.
+[k]
+
+＠Sitonai
+Come on, it's okay.[sr]I'll make sure to get you back home.
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+
+[wt 1.0]
+[se adm19]
+[charaEffectStop H bit_talk_gold_kamui]
+[wt 1.0]
+[seStop adm19 1.0]
+[wt 1.0]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+＠Sitonai
+...Welcome back.
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[bgmStop BGM_EVENT_11 1.0]
+[wt 1.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠Mash
+That takes care of the second gold fragment!
+[k]
+
+[charaFadeout C 0.1]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth D 0]
+[charaDepth E 1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFace E 0]
+[charaFadein D 0.1 1]
+[charaFadein E 0.1 0,0]
+＠Magifender Girl
+All right, guess I'll be on my way then.[sr]All this running around is wearing me out.
+[k]
+
+[charaTalk E]
+[charaFace E 1]
+＠Animal
+You should get some rest.[sr]Later, losers.
+[k]
+
+[charaTalk off]
+[messageOff]
+[charaEffect D bit_talk_quickmove]
+[charaSpecialEffect E erasureReverse 1 0.3]
+[charaSpecialEffect D erasureReverse 1 0.3]
+[se ad73]
+[wt 1.0]
+
+[charaTalk on]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠Ibaraki-Douji
+Ah! She just ran off again!
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠G：[servantName 602900:Assassin of Paraíso:Mochizuki Chiyome]
+Very well then, shall we start looking for the third gold fragment now, or fall back to Lady Sitonai's hideout first?
+[k]
+
+[charaFace G 4]
+＠G：[servantName 602900:Assassin of Paraíso:Mochizuki Chiyome]
+For my part, I am worried about Master[sr]using too much magical energy, so...
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Sitonai
+Good point. We should probably hold off on the next attraction for now. Instead, we can go to...
+[k]
+
+[messageOff]
+[effect bit_talk_41]
+[bgmStop BGM_EVENT_2 0.5]
+[cameraMove 0.2 0,0 1.1]
+[wt 0.2]
+[se ad186]
+[charaFace B 2]
+＠Sitonai
+...the food court!
+[k]
+
+＠Sitonai
+How about we go there and get[sr]some rest and refreshment!?
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[effectStop bit_talk_41]
+[charaFadeout B 0.1]
+
+[cameraHome 0.1]
+
+[wt 2.0]
+
+[scene 10000]
+
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+[bgm BGM_BATTLE_29 0.1]
+
+＠Great Oni
+What blithering fools they are![sr]Gehehehe! Gahahahahaha!
+[k]
+
+＠Great Oni
+They've done me a huge favor,[sr]getting rid of that creepy Blackbeard oni!
+[k]
+
+＠Great Oni
+I wanted to fire him ages ago, but I couldn't[sr]do it in front of the other employees.
+[k]
+
+＠Great Oni
+Anyway...
+[k]
+
+＠Great Oni
+It looks like they're heading for the food court next. Gaaahahahaha! If only they knew what awaited them!
+[k]
+
+＠Great Oni
+Oniland's food court might serve amazingly delicious meals and treats...
+[k]
+
+＠Great Oni
+...but for those who would cause trouble here,[sr]it's also a kitchen of pure terror! Gehehehe!
+[k]
+
+＠Great Oni
+I've got a plan to ambush those rude guests as soon as they walk through the door! I call it...
+[k]
+
+＠Great Oni
+Operation “Seafood or Beef? Why Not Both!”
+[k]
+
+＠Great Oni
+Enjoy your fun while it lasts, Chaldee-something or other and Magifender Girl! Tomorrow it all ends!
+[k]
+
+
+[messageOff]
+[wt 1.0]
+
+
+
+
+
+
+[fadeout black 1.0]
+[bgmStop BGM_BATTLE_29 1.0]
+[wait fade]
+
+[input selectBranch]
+
+[bgmStop BGM_EVENT_3 1.0]
+[bgmStop BGM_EVENT_11 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[bgmStop BGM_BATTLE_29 1.0]
+
+[seStop bac139 0.1]
+[seStop ad39 0.1]
+[seStop bac165 0.1]
+[seStop bas13 0.1]
+[seStop ad52 0.1]
+[seStop adm19 0.1]
+[seStop ad73 0.1]
+[seStop ad186 0.1]
+[cueSeStop bac199 0.1]
+
+[effectStop bit_talk_14]
+[effectStop bit_talk_41]
+
+[charaSet A 4008002 1 "Blackbeard Oni"]
+[charaSet B 10008001 1 Sitonai]
+[charaSet C 99502600 1 Mash]
+[charaSet D 1098157600 1 "Magifender Girl"]
+[charaSet E 1098157700 1 Animal]
+[charaSet F 3034002 1 Ibaraki-Douji]
+[charaSet G 6029001 1 "Assassin of Paraíso"]
+[charaSet H 98115000 1 Effect]
+
+[scene 10000]
+[skip false]
+
+[messageOff]
+[maskin black 1.0]
+[wait mask]
+
+[fadeout black 0.1]
+[wait fade]
+[soundStopAll]
+
+[label selectBranch]
+
+[skip false]
+
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+＠
+Heads up![sr]This next segment contains spoken dialogue.
+[k]
+
+＠
+Make sure you're ready to listen[sr]before tapping the screen!
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+[tapSkip stop_tapSkip]
+[label stop_tapSkip]
+
+[bgm BGM_EVENT_99 0.1]
+
+[revivalBranch lblNormal lblRevival]
+[label lblNormal]
+[effect bit_talk_oniland_nexttitle]
+[wait fowardEffect]
+[branch lblConf]
+[label lblRevival]
+[effect bit_talk_oniland_nexttitle_r]
+[wait fowardEffect]
+[label lblConf]
+
+[wt 3.1]
+[effect bit_talk_oniland_cut04]
+
+[wt 0.3]
+
+[pictureFrame cut132_text_16]
+[voice 9010011_0_M640]
+[wait voice 9010011_0_M640]
+[pictureFrame]
+
+[wt 0.2]
+
+[pictureFrame cut132_text_17]
+[voice 9010011_0_M641]
+[wait voice 9010011_0_M641]
+[pictureFrame]
+
+[wt 0.2]
+
+[pictureFrame cut132_text_18]
+[voice 9010011_0_M642]
+[wait voice 9010011_0_M642]
+[pictureFrame]
+
+[pictureFrame cut132_text_19]
+[voice 9010011_0_M643]
+[wt 5.3]
+[pictureFrame]
+
+[effect bit_talk_oniland_telop04]
+
+[wait voice 9010011_0_M643]
+
+[wt 0.3]
+
+[voice 9010011_0_M644]
+[wait voice 9010011_0_M644]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_99 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

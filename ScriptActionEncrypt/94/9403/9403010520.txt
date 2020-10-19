@@ -1,0 +1,325 @@
+
+
+＄94-03-01-05-2-0
+
+
+
+[soundStopAll]
+
+
+[charaSet A 3034002 1 Ibaraki-Douji]
+[charaSet B 6029001 1 "Assassin of Paraíso"]
+[charaSet C 1098157600 1 "Magifender Girl"]
+[charaSet D 1098157700 1 Animal]
+[charaSet E 99502600 1 Mash]
+[charaSet F 5002001 1 "Seafood Oni"]
+[charaSet G 6005001 1 "Hamburger Oni"]
+[charaSet H 98115000 1 Effect]
+
+[charaDepth A 1]
+[charaDepth F 2]
+[charaDepth G 8]
+[charaDepth B 4]
+
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 64800]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+[se bac139]
+[charaEffect H bit_talk_ichimon01wh]
+[wt 0.4]
+
+[se bac139]
+[effect bit_talk_Slash_white_01_L]
+[wt 0.3]
+
+[se bac139]
+[fowardEffect bit_talk_h_slash01]
+[wt 0.8]
+
+
+
+[se ad85]
+[charaEffect H bit_talk_h_slash02]
+[wt 0.6]
+
+[se ad85]
+[effect bit_talk_v_slash02]
+[wt 0.4]
+
+[se bac11]
+[fowardEffect bit_talk_14]
+[wt 0.3]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+
+[charaMoveScale A 1.5 0]
+[se ad671]
+[seStop ad671 0.5]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[charaMoveScale A 1.0 0.2]
+[charaShake A 0.03 4 4 0.6]
+[wt 1.0]
+＠Ibaraki-Douji
+Damn, they're tough!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠B：[servantName 602900:Assassin of Paraíso:Mochizuki Chiyome]
+There appears to be no end to these sea creatures![sr]If only we had one more ally who could help us...!
+[k]
+
+
+[bgmStop BGM_EVENT_3 1.0]
+
+＠C：Magifender Girl
+...(Sigh) Guess you need my help again, huh?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠Mash
+That voice! It's Shuten[line 2]I mean, never mind!
+[k]
+
+
+？1：You came to help us yet again!
+？2：Oni Cure!
+
+？！
+
+[charaFadeout E 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_10_LowLevel]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠Seafood Oni
+Who are you!?[sr]Show yourself!
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.3 1]
+[wt 0.1]
+
+[charaEffect H bit_talk_rarrow01br]
+[wt 0.2]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[scene 10000]
+[charaPut H -50,50]
+
+[wipein rectangleStripDownToUp 0.1 1]
+[wait wipe]
+
+[se adm15]
+[wt 1.0]
+
+[wipeout rectangleStripDownToUp 0.1 1]
+[wait wipe]
+
+[scene 64800]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+[wt 0.1]
+
+[wipein rectangleStripUpToDown 0.1 1]
+[wait wipe]
+
+[charaTalk depthOff]
+[charaDepth F 0]
+[charaDepth H 1]
+
+[se ad322]
+[shake 0.05 3 3 0.3]
+[charaPut H 0,-300]
+[charaEffect H bit_talk_14]
+[wt 0.6]
+[seStop ad322 0.4]
+
+[charaFace F 2]
+
+＠Seafood Oni
+Whoa! What is this? Something from a foreign ritual!? I've never seen anything like it before!
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠Ibaraki-Douji
+Ooh! That looks like Oni Cure's wand!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaSet E 10008001 1 Sitonai]
+
+[charaDepth E 5]
+
+＠Magifender Girl
+Hehehe. You've got a nasty streak yourselves, haven't you, Master and Ibaraki? How many times have I told you? I'm Magifender Girl.
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth C 0]
+[charaDepth D 1]
+
+[charaTalk off]
+[charaFace C 0]
+[charaFace D 0]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect C appearance 1 0.25]
+[charaSpecialEffect D appearance 1 0.25]
+[wt 1.0]
+[bgm BGM_HALLOWEEN_2 0.1]
+[charaTalk on]
+
+＠Magifender Girl
+...Let's just skip the usual intro this time.[sr]Magifender Girl is on the scene!
+[k]
+
+[messageOff]
+[wt 0.3]
+[charaTalk off]
+[se ade217]
+[effect bit_talk_magic_girl_light]
+[wt 3.0]
+[charaTalk on]
+
+＠Animal
+Hmph. Guess we should be honored to face two Gold Servants at once, but we don't have much time to talk. Just hurry up and take them out quickly.
+[k]
+
+＠Magifender Girl
+Yeah, yeah. I know.[sr]I'm surprised you noticed though, Haku.
+[k]
+
+
+＠Magifender Girl
+Anyway, are we all on the same page here, Master?[sr]Ibaraki? [servantName 602900:Paraíso:Chiyome]? And, uh...you?
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace A 5]
+[charaFace B 5]
+[charaFace E 5]
+[charaFadein A 0.1 -300,0]
+[charaFadein B 0.1 1]
+[charaFadein E 0.1 300,0]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein C 0.1 1]
+[charaFadein D 0.1 0,0]
+＠Magifender Girl
+Good enough. I can see you're all plenty fired up for this. Let's do this quickly, shall we?
+[k]
+
+[charaFace C 1]
+＠Magifender Girl
+...That okay with you, oh-so-scary gold oni?
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[bgmStop BGM_HALLOWEEN_2 0.3]
+[wt 0.5]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠Hamburger Oni
+Fine with me.[sr]I'll just take all the good parts and throw away the rest.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaMoveScale F 1.0 0]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠Seafood Oni
+Now, now, don't be wasteful! There's a way to make use of every part! Don't worry, fair Servants, I'll make sure none of you go to waste!
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace G 2]
+[charaFace F 2]
+[charaFadein G 0.1 0]
+[charaFadein F 0.1 230,0]
+[se ad7]
+[charaMoveScale F 1.1 0.1]
+[charaMoveScale G 1.1 0.1]
+[charaMove G -266,0 0.1]
+[charaMove F 240,0 0.1]
+[fowardEffect bit_talk_41]
+＠Hamburger Oni & Seafood Oni
+[messageShake 0.01 3 3 0.2]
+[f large]Fresh! [wt 0.4][messageShake 0.01 3 3 0.2]Meat!
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[fowardEffectStop bit_talk_41]
+[soundStopAll]
+[end]

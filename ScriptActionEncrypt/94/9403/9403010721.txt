@@ -1,0 +1,482 @@
+
+
+＄94-03-01-07-2-1
+
+
+[soundStopAll]
+
+[charaSet A 3034002 1 Ibaraki-Douji]
+[charaSet B 6029001 1 "Assassin of Paraíso"]
+[charaSet C 10008001 1 Sitonai]
+[charaSet D 1098157600 1 "Magifender Girl"]
+[charaSet E 98115000 1 "Effect 2"]
+[charaSet F 11006000 1 "Wildfire Oni"]
+[charaSet G 99502600 1 Mash]
+[charaSet H 98115000 1 Effect]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 65000]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+[wt 0.5]
+[se adm14]
+[effect bit_talk_h_slash01]
+[wt 0.2]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaDepth E 10]
+[charaPut E 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[se ad39]
+[charaEffect E bit_talk_36_bl]
+[wt 1.2]
+
+[charaEffectStop E bit_talk_36_bl]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+[wt 0.5]
+[effect bit_talk_rarrow01br]
+[se bac71]
+[se bac34]
+[wt 2.0]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+[wt 0.1]
+[se bac151]
+[charaShake F 0.05 3 3 0.5]
+[fowardEffect bit_talk_14]
+[wt 0.5]
+
+＠Wildfire Oni
+Gnnnh...!
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Ibaraki-Douji
+[f large]Encomium Moriae!
+[k]
+
+[messageOff]
+[charaPut E 1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[se ad249]
+[se ad11]
+[charaEffect E bit_talk_fire_storm]
+[wt 1.0]
+[charaEffectStop E bit_talk_fire_storm]
+[wt 1.0]
+[charaPut E 2000,2000]
+
+[seStop ad249 0.5]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[effect bit_talk_gouka]
+
+[charaShake F 0.03 4 4 2.0]
+
+＠Wildfire Oni
+Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa[sr]aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah!
+[k]
+
+[messageOff]
+[seStop ad11 1.0]
+[bgmStop BGM_EVENT_24 1.0]
+[charaEffect F bit_talk_06]
+[wt 0.3]
+[effectStop bit_talk_gouka]
+[wt 0.5]
+
+＠Wildfire Oni
+Ahhh... Ahh...[sr]The show...must...go on...
+[k]
+
+＠Wildfire Oni
+No...matter...wha[line 2]
+[k]
+
+[messageOff]
+[charaEffectStop F bit_talk_06]
+[wait charaEffect F bit_talk_06]
+[se ad52]
+[charaSpecialEffect F flashErasure 1 2.0]
+[wait charaSpecialEffect F]
+
+[wt 1.5]
+
+
+[charaSet F 1098157700 1 Animal]
+
+[cueSe Battle bac199]
+[cueSeVolume bac199 0 0.6]
+[effect bit_talk_gold_kamui]
+[wt 3.0]
+[se adm19]
+[effectStop bit_talk_gold_kamui]
+[wt 1.0]
+[seStop adm19 1.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0.1 1]
+
+＠Sitonai
+...That's right. You won't disappear completely.
+[k]
+
+＠Sitonai
+You stay behind as magical energy. Don't worry, it's okay. I'll make sure you get back to the earth.
+[k]
+
+＠Sitonai
+Sleep well.[sr]You did great.
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[bgmStop BGM_EVENT_11 1.5]
+[wt 2.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaPut H 1]
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠Mash
+That takes care of the fifth gold fragment![sr]You must have a lot of gold by now!
+[k]
+
+[charaFace G 7]
+
+＠Mash
+According to my calculations, this should reduce the Great Oni's magical energy by about fifty percent.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaDepth F 10]
+[charaFace D 0]
+[charaFace F 0]
+[charaFadein D 0.1 1]
+[charaFadein F 0.1 0,0]
+
+＠Magifender Girl
+Well, see you 'round.[sr]Phew, I'm beat.
+[k]
+
+＠Animal
+Surprised you managed to get this done so smoothly.[sr]Hmph. Not bad, losers.
+[k]
+
+＠Magifender Girl
+What did I tell you about being nice?[sr]All right, we're done here.
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaEffect D bit_talk_quickmove]
+[charaSpecialEffect F erasureReverse 1 0.3]
+[charaSpecialEffect D erasureReverse 1 0.3]
+[se ad73]
+[wt 1.0]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[charaMoveReturn A 10,0 0.2]
+
+＠Ibaraki-Douji
+(Waving goodbye)[wt 0.2][charaMoveReturn A 10,0 0.2]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠B：[servantName 602900:Assassin of Paraíso:Mochizuki Chiyome]
+Phew. [wt 0.7]Oh, my apologies. The battle was so intense[sr]that I could not help but sigh in relief now that[sr]it's over. [charaFace B 0]Are you all right, Master?
+[k]
+
+？1：I'm fine, thanks.
+？2：So all that's left now is...
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Sitonai
+All that's left now is the Great Oni on Main Street.[sr]But since he only comes out for the parade at night...
+[k]
+[messageOff]
+[bgmStop BGM_EVENT_2 0.5]
+[effect bit_talk_41]
+[cameraMove 0.2 0,0 1.1]
+[wt 0.2]
+[se ad186]
+[charaFace C 2]
+＠Sitonai
+So, in the meantime...
+[k]
+
+＠Sitonai
+...we'll take this chance to get some rest!
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[effectStop bit_talk_41]
+[charaFadeout C 0.1]
+
+[cameraHome 0.1]
+
+[wt 2.0]
+[scene 10000]
+
+
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_BATTLE_29 0.1]
+
+
+
+＠Great Oni
+Huh?[sr]No way. He lost?
+[k]
+
+＠Great Oni
+Even with all that gold he had on top[sr]of his abundant musical sensibilities...?
+[k]
+
+＠Great Oni
+I see... I guess that's it for him, huh...
+[k]
+
+＠Great Oni
+Well, nothing to do about that now![sr]I have to admit, I really called this one wrong!
+[k]
+
+＠Great Oni
+Gehehe, still... Gehehe, things are getting really interesting now...
+[k]
+
+＠Great Oni
+Gehehe... Hehe... Gehehehe...!!![sr]Gaaahahahaha!
+[k]
+
+＠Great Oni
+Very well then! I, the Great Oni Vermilion Dragon,[sr]shall dispose of these impudent riffraff myself!
+[k]
+
+＠Great Oni
+With my Electrical Night Parade of a Hundred Pumpkin Oni, I will return Oniland to its regular schedule!
+[k]
+
+＠Great Oni
+Tremble, foolish guests, and despair![sr]You are not long for this world!
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+
+
+
+[fadeout black 1.0]
+[bgmStop BGM_BATTLE_29 1.0]
+[wait fade]
+
+[input selectBranch]
+
+[bgmStop BGM_EVENT_24 1.0]
+[bgmStop BGM_EVENT_11 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[bgmStop BGM_BATTLE_29 1.0]
+
+[seStop adm14 0.1]
+[seStop ad39 0.1]
+[seStop bac71 0.1]
+[seStop bac34 0.1]
+[seStop bac151 0.1]
+[seStop ad249 0.1]
+[seStop ad11 0.1]
+[seStop ad52 0.1]
+[seStop adm19 0.1]
+[seStop ad73 0.1]
+[seStop ad186 0.1]
+
+[effectStop bit_talk_h_slash01]
+[effectStop bit_talk_rarrow01br]
+[effectStop bit_talk_gouka]
+[effectStop bit_talk_gold_kamui]
+[effectStop bit_talk_41]
+
+[charaSet A 3034002 1 Ibaraki-Douji]
+[charaSet B 6029001 1 "Assassin of Paraíso"]
+[charaSet C 10008001 1 Sitonai]
+[charaSet D 1098157600 1 "Magifender Girl"]
+[charaSet E 98115000 1 "Effect 2"]
+[charaSet F 11006000 1 "Wildfire Oni"]
+[charaSet G 99502600 1 Mash]
+[charaSet H 98115000 1 Effect]
+
+[scene 10000]
+[skip false]
+
+[messageOff]
+[maskin black 1.0]
+[wait mask]
+
+[fadeout black 0.1]
+[wait fade]
+[soundStopAll]
+
+[label selectBranch]
+
+[skip false]
+
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+＠
+Heads up![sr]This next segment contains spoken dialogue.
+[k]
+
+＠
+Make sure you're ready to listen[sr]before tapping the screen!
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+[tapSkip stop_tapSkip]
+[label stop_tapSkip]
+
+[bgm BGM_EVENT_99 0.1]
+
+[revivalBranch lblNormal lblRevival]
+[label lblNormal]
+[effect bit_talk_oniland_nexttitle]
+[wait fowardEffect]
+[branch lblConf]
+[label lblRevival]
+[effect bit_talk_oniland_nexttitle_r]
+[wait fowardEffect]
+[label lblConf]
+[wt 3.1]
+[effect bit_talk_oniland_cut07]
+
+[wt 0.2]
+
+[pictureFrame cut132_text_31]
+[voice 9010011_0_M670]
+[wait voice 9010011_0_M670]
+[pictureFrame]
+
+[wt 0.3]
+
+[pictureFrame cut132_text_32]
+[voice 9010011_0_M671]
+[wait voice 9010011_0_M671]
+[pictureFrame]
+
+[pictureFrame cut132_text_33]
+[voice 9010011_0_M672]
+[wait voice 9010011_0_M672]
+[pictureFrame]
+
+[wt 0.2]
+
+[pictureFrame cut132_text_34]
+[voice 9010011_0_M673]
+[wait voice 9010011_0_M673]
+[pictureFrame]
+
+[pictureFrame cut132_text_35]
+[voice 9010011_0_M674]
+[wait voice 9010011_0_M674]
+[pictureFrame]
+
+[wt 0.2]
+
+[pictureFrame cut132_text_36]
+[voice 9010011_0_M675]
+[wait voice 9010011_0_M675]
+[pictureFrame]
+
+[pictureFrame cut132_text_37]
+[voice 9010011_0_M676]
+[wt 5.8]
+[pictureFrame]
+
+[effect bit_talk_oniland_telop07]
+[wt 0.1]
+[pictureFrame cut132_text_38]
+
+[wait voice 9010011_0_M676]
+
+[wt 0.3]
+[pictureFrame]
+
+[voice 9010011_0_M677]
+[wait voice 9010011_0_M677]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_99 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

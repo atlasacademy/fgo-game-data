@@ -1,0 +1,519 @@
+
+
+＄94-03-01-06-2-1
+
+
+[soundStopAll]
+
+[charaSet A 6007003 1 "Murder Oni"]
+[charaSet B 1098157600 1 "Magifender Girl"]
+[charaSet C 1098157700 1 Animal]
+[charaSet D 10008001 1 Sitonai]
+[charaSet E 99502600 1 Mash]
+[charaSet F 3034002 1 Ibaraki-Douji]
+[charaSet G 6029001 1 "Assassin of Paraíso"]
+[charaSet H 98115000 1 Effect]
+
+
+[scene 64900]
+
+[bgm BGM_EVENT_24 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[wt 0.3]
+
+[se adm14]
+[charaPut H -150,0]
+[charaEffect H bit_talk_v_slash02]
+[wt 0.2]
+
+[se adm14]
+[charaPut H 150,0]
+[charaEffect H bit_talk_v_slash02]
+[charaFadeout F 0.1]
+[wt 0.5]
+
+[charaPut H 1]
+
+[se ad267]
+[effect bit_talk_29]
+[wt 1.5]
+
+[charaDepth H 10]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 0.5]
+[se ad39]
+[charaEffect H bit_talk_36_bl]
+[wt 1.5]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_36_bl]
+[charaFadeout B 0.1]
+[wt 0.3]
+[se bac165]
+[flashin once 0.1 1.0 5944EAFF 5944EA80]
+[effect bit_talk_14]
+[wt 0.5]
+[seStop bac165 0.5]
+[wt 0.1]
+[se bas13]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.3]
+[charaShake A 0.05 3 3 0.5]
+[bgmStop BGM_EVENT_24 1.0]
+[wt 1.0]
+
+
+
+＠Murder Oni
+...!
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[bgm BGM_EVENT_11 0.1 1.0]
+[charaEffect A bit_talk_06]
+[wt 1.5]
+
+[charaFace A 0]
+＠Murder Oni
+Well, how about that...
+[k]
+
+＠Murder Oni
+I knew it'd be tough taking on[sr]a bunch of Servants all at once...
+[k]
+
+[charaFace A 4]
+＠Murder Oni
+Figured it'd be easier to take[sr]you out one at a time... Dammit.
+[k]
+
+＠Murder Oni
+Maybe there was something wrong[sr]with the guy I picked to imitate.
+[k]
+
+[charaFace A 0]
+＠Murder Oni
+...No, that's not it. It was me. I should have known better than to try and imitate him in the first place.
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaEffectStop A bit_talk_06]
+[wait charaEffect A bit_talk_06]
+[se ad52]
+[charaSpecialEffect A flashErasure 1 2.0]
+[wait charaSpecialEffect A]
+
+[wt 1.5]
+
+[cueSe Battle bac199]
+[cueSeVolume bac199 0 0.6]
+
+[charaPut H 1]
+[charaEffect H bit_talk_gold_kamui]
+[wt 3.0]
+[charaPut H 1200,1200]
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+＠Sitonai
+It's over now.
+[k]
+
+＠Sitonai
+Come here. It's okay.[sr]You can take it easy now.
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+
+[wt 1.0]
+[se adm19]
+[charaEffectStop H bit_talk_gold_kamui]
+[wt 1.0]
+[seStop adm19 1.0]
+[wt 1.0]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+＠Sitonai
+...There you go. Good night.[sr]Nobody's going to wake you up anymore.
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_11 1.0]
+[wt 1.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaPut H 1]
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+＠Mash
+The battle is over, Senpai.[sr]That takes care of the fourth gold fragment.
+[k]
+
+[charaFadeout E 0.1]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+[charaDepth C 10]
+[charaTalk B]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 0.1 1]
+[charaFadein C 0.1 0,0]
+＠Magifender Girl
+All right then, I'm off. Don't forget to scrape Blackbeard off the floor and take him with you, 'kay?
+[k]
+
+[charaFace C 1]
+
+＠Animal
+Only one more fragment left, besides the Great Oni's.[sr]Don't let me down now, losers.
+[k]
+
+
+[messageOff]
+[charaTalk off]
+[charaEffect B bit_talk_quickmove]
+[charaSpecialEffect C erasureReverse 1 0.3]
+[charaSpecialEffect B erasureReverse 1 0.3]
+[se ad73]
+[wt 0.5]
+
+
+[charaSet A 6013001 1 Phantom]
+[charaSet B 4025000 1 Columbus]
+[charaSet C 5014001 1 Mephistopheles]
+[wt 0.5]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Ibaraki-Douji
+Thank you, Magifender Girl Oni Cure![sr]I hope we can see each other again someday!
+[k]
+
+＠Ibaraki-Douji
+I hope we can share sweet dumplings someday...[sr]Or maybe macarons, if you don't like dumplings...
+[k]
+
+[charaFace F 1]
+＠Ibaraki-Douji
+Then again, you can't go[sr]wrong with chocolate either...
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠G：[servantName 602900:Assassin of Paraíso:Mochizuki Chiyome]
+Well done on your amazing winning streak, Master.
+[k]
+
+[charaFace G 4]
+＠G：[servantName 602900:Assassin of Paraíso:Mochizuki Chiyome]
+Still, there is one thing I do not understand...[sr]Why did you gentlemen refuse to take part in the battle?
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠Phantom
+Ahh, Christine...[sr]I have no right to listen to your beautiful singing voice...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠B：[servantName 402500:Rider of the Resistance:Columbus]
+...'Fraid we just didn't have the magical energy,[sr]much as I hate to admit it.
+[k]
+
+[charaFace B 0]
+＠B：[servantName 402500:Rider of the Resistance:Columbus]
+Oniland... This place is odd. Just going around enjoying the attractions drains your magical energy.
+[k]
+
+＠B：[servantName 402500:Rider of the Resistance:Columbus]
+We'd go back to Chaldea, but now we're bonded[sr]with this place, so we can't even do that.
+[k]
+
+[charaFace B 1]
+＠B：[servantName 402500:Rider of the Resistance:Columbus]
+All I can do now is ask you to hurry[sr]up and fix this mess, Master.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠Mephistopheles
+Not to mention we already fought you when we were low on magical energy to begin with, so now we have nary a bit to spare!
+[k]
+
+[charaFace C 2]
+＠Mephistopheles
+We'd have been in quite the pickle if Mr. Not-Hyde had come after us now! Ahh, what a shame! We're saved!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠B：[servantName 402500:Rider of the Resistance:Columbus]
+Hah. And that's a shame why, exactly?
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_2 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 2.0]
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[bgm BGM_BATTLE_29 0.1]
+
+＠Great Oni
+Gehehe... Gehehehehe...![sr]Gaaahahahaha!
+[k]
+
+＠Great Oni
+They've really done it now![sr]Those fools have finally forced my hand!
+[k]
+
+＠Great Oni
+The time has come to send in the[sr]scariest attraction manager of all!
+[k]
+
+＠Great Oni
+My manager of Oniland's most popular attraction...the legendary Ferris wheel!
+[k]
+
+＠Great Oni
+Now go forth, my most terrifying manager, and give those rude guests a suitably hellish reception!
+[k]
+
+＠Great Oni
+When they have come far enough to lay eyes upon Chitose's glorious true nature...they will find it to be the last thing they ever see!
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠Great Oni
+Ah.
+[k]
+
+＠Great Oni
+Oh, by the way, you know that thing I told you to take care of a while ago? Is it ready yet? ...No?
+[k]
+
+＠Great Oni
+Well that's weird... Ohhh, wait, duh.[sr]Silly me, I must have gotten you mixed up.
+[k]
+
+＠Great Oni
+I didn't ask you, I asked the REAL you to handle that![sr]At least, I think I did! Gahahaha! It's all good!
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+
+
+
+[fadeout black 1.0]
+[bgmStop BGM_BATTLE_29 1.0]
+[wait fade]
+
+[input selectBranch]
+
+[bgmStop BGM_EVENT_24 1.0]
+[bgmStop BGM_EVENT_11 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[bgmStop BGM_BATTLE_29 1.0]
+
+[seStop adm14 0.1]
+[seStop ad267 0.1]
+[seStop ad39 0.1]
+[seStop bac165 0.1]
+[seStop bas13 0.1]
+[seStop ad52 0.1]
+[seStop adm19 0.1]
+[seStop ad73 0.1]
+[cueSeStop bac199 0.1]
+
+[effectStop bit_talk_29]
+[effectStop bit_talk_14]
+
+[charaSet A 6007003 1 "Murder Oni"]
+[charaSet B 1098157600 1 "Magifender Girl"]
+[charaSet C 1098157700 1 Animal]
+[charaSet D 10008001 1 Sitonai]
+[charaSet E 99502600 1 Mash]
+[charaSet F 3034002 1 Ibaraki-Douji]
+[charaSet G 6029001 1 "Assassin of Paraíso"]
+[charaSet H 98115000 1 Effect]
+
+[scene 10000]
+[skip false]
+
+[messageOff]
+[maskin black 1.0]
+[wait mask]
+
+[fadeout black 0.1]
+[wait fade]
+[soundStopAll]
+
+[label selectBranch]
+
+[skip false]
+
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+＠
+Heads up![sr]This next segment contains spoken dialogue.
+[k]
+
+＠
+Make sure you're ready to listen[sr]before tapping the screen!
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+[tapSkip stop_tapSkip]
+[label stop_tapSkip]
+
+[bgm BGM_EVENT_99 0.1]
+
+[revivalBranch lblNormal lblRevival]
+[label lblNormal]
+[effect bit_talk_oniland_nexttitle]
+[wait fowardEffect]
+[branch lblConf]
+[label lblRevival]
+[effect bit_talk_oniland_nexttitle_r]
+[wait fowardEffect]
+[label lblConf]
+[wt 3.1]
+[effect bit_talk_oniland_cut06]
+
+[wt 0.3]
+
+[pictureFrame cut132_text_25]
+[voice 9010011_0_M660]
+[wait voice 9010011_0_M660]
+[pictureFrame]
+
+[pictureFrame cut132_text_26]
+[voice 9010011_0_M661]
+[wait voice 9010011_0_M661]
+[pictureFrame]
+
+[wt 0.3]
+
+[pictureFrame cut132_text_27]
+[voice 9010011_0_M662]
+[wt 3.2]
+[pictureFrame]
+[pictureFrame cut132_text_39]
+[wait voice 9010011_0_M662]
+[pictureFrame]
+
+[wt 0.3]
+
+[pictureFrame cut132_text_28]
+[voice 9010011_0_M663]
+[wait voice 9010011_0_M663]
+[pictureFrame]
+
+[wt 0.2]
+
+[pictureFrame cut132_text_29]
+[voice 9010011_0_M664]
+[wait voice 9010011_0_M664]
+
+[wt 0.1]
+[pictureFrame]
+
+[pictureFrame cut132_text_30]
+[voice 9010011_0_M665]
+[wt 2.5]
+[pictureFrame]
+[pictureFrame cut132_text_40]
+[wt 3.0]
+[pictureFrame]
+
+[effect bit_talk_oniland_telop06]
+
+[wait voice 9010011_0_M665]
+
+[wt 0.3]
+
+[voice 9010011_0_M666]
+[wait voice 9010011_0_M666]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_99 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

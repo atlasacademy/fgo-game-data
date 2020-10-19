@@ -1,0 +1,209 @@
+
+
+＄94-03-01-01-2-0
+
+
+
+
+[soundStopAll]
+
+[charaSet A 3034001 1 Ibaraki-Douji]
+[charaSet B 6029001 1 "Assassin of Paraíso"]
+[charaSet C 99502600 1 Mash]
+[charaSet F 98115000 1 Effect]
+[charaSet G 98115000 1 "Effect 2"]
+[charaSet H 98115000 1 Transmission]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 64600]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.5]
+[se adm15]
+[effect bit_talk_v_slash02]
+[wt 0.3]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se bac80]
+[se ad267]
+[charaPut F -200,-50]
+[charaEffect F bit_talk_32]
+[wt 0.3]
+[se bac80]
+[se ad267]
+[charaPut G 200,-50]
+[charaEffect G bit_talk_32]
+
+[wt 1.0]
+
+[charaEffectStop F bit_talk_32]
+[wt 0.3]
+[charaEffectStop G bit_talk_32]
+[wt 0.5]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.5]
+[se adm14]
+[charaMoveReturn B 10,0 0.2]
+[wt 0.2]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se bac141]
+[charaPut F 0,50]
+[charaEffect F bit_talk_14]
+[wt 0.2]
+[se bac141]
+[charaPut F -100,0]
+[charaEffect F bit_talk_14]
+[wt 0.4]
+[se bac142]
+[charaPut F 100,-30]
+[charaEffect F bit_talk_14]
+[wt 1.0]
+
+
+[cueSe Battle bac234]
+[shake 0.05 0 5 0.5]
+[effect bit_talk_impactlanding]
+[bgmStop BGM_EVENT_3 1.0]
+[wt 2.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠B：[servantName 602900:Assassin of Paraíso:Mochizuki Chiyome]
+...We have defeated the large oni, Master.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Ibaraki-Douji
+Hah! Too easy! Did you really think that would be enough to topple me, the oni general of Mt. Ooe!?
+[k]
+
+＠Ibaraki-Douji
+It'll take a lot more than a big oni or two to beat me![sr]No lame oni wannabe is ever gonna[line 2]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.0]
+[charaTalk B]
+[se ad57]
+[shake 0.05 0 3 0.3]
+[wt 1.5]
+[shake 0.05 0 3 0.3]
+[wt 1.0]
+[seStop ad57 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Ibaraki-Douji
+Hm? Those footsteps sounded kind of loud...
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad57]
+[shake 0.05 0 3 0.3]
+[wt 1.0]
+[seStop ad57]
+[wt 0.5]
+[se ad17]
+[wt 2.0]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaPut H 1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠Mash
+Multiple large hostiles are headed your way!
+[k]
+
+＠Mash
+They look to be more of those warrior oni things you just fought!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Ibaraki-Douji
+Well they don't seem shy about pouring on the reinforcements! Interesting! Too bad for them it takes more than just being big and strong to be a real oni!
+[k]
+
+？1：Will you stop taunting them!?
+
+[charaFace A 5]
+
+＠Ibaraki-Douji
+What? It's true.
+[k]
+
+？2：Let's just get out of here for now!
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠B：[servantName 602900:Assassin of Paraíso:Mochizuki Chiyome]
+Understood![sr]Lady Ibaraki!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+？！
+
+[charaFace A 1]
+
+＠Ibaraki-Douji
+You could throw all the oni wannabes in this park at me and it wouldn't make a difference. Hah...muahahaha![sr]You posers wanna go again? Fine, we'll go again!
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
