@@ -1,0 +1,297 @@
+
+＄91-70-27-01-3-0
+[soundStopAll]
+
+[charaSet A 7027001 1 Penthesilea]
+[charaSet B 3016001 1 Hektor]
+[charaSet C 98016000 1 "Roman Soldier"]
+[charaSet D 4029001 1 Achilles]
+[charaSet G 5009000 1 "Effect Dummy 1"]
+[charaSet H 5009000 1 "Effect Dummy 2"]
+
+[scene 10000]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[charaTalk depthOff]
+[charaDepth C 0]
+[charaDepth G 1]
+[charaDepth H 2]
+
+[charaEffect G bit_talk_kengekiall02]
+[charaPut H -70,50]
+[charaEffect H bit_talk_14]
+[cueSe Battle bac151]
+[wt 0.3]
+[charaPut H 60,10]
+[charaEffect H bit_talk_14]
+[cueSe Battle bac151]
+[wt 0.2]
+[charaPut H -50,-20]
+[charaEffect H bit_talk_14]
+[cueSe Battle bac151]
+
+[fadeout black 0.1]
+[wait fade]
+
+[charaPut G 2400,2400]
+[charaPut H 2400,2400]
+
+[scene 58200]
+
+[fadein black 0.3]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Penthesilea
+I will tear you to pieces!
+[k]
+
+[messageOff]
+[charaScale G 1.4]
+[charaEffect G bit_talk_v_slash01]
+[se ad85]
+[wt 0.4]
+[seStop ad85 0.3]
+[charaFadeout A 0]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0 1]
+
+[charaPut H 150,100]
+[charaFadeout A 0.1]
+[wt 0.2]
+[effect bit_talk_impactlanding]
+[se bac10]
+[se ad211]
+[shake 0.03 7 7 1.5]
+[wt 1.0]
+[charaSpecialEffect C erasure 0 0.5]
+[wt 2.0]
+
+？1：You really do pack a punch.
+？2：I love how you don't hold anything back when you attack.
+？！
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Penthesilea
+Heh... That is how we fight.[sr]We have no need of cheap tricks.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠Hektor
+Hmm, as a guy who depends on cheap tricks and strategies to stay alive, I gotta say that stings.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Penthesilea
+All that aside...these foes are quite skilled.[sr]They make for a good challenge.
+[k]
+
+？1：They do?
+？！
+
+＠Penthesilea
+The fact that we have yet to completely dominate them after all this fighting speaks volumes.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[bgmStop BGM_EVENT_3 0.5]
+
+＠Hektor
+Well sure they're tough.[sr]It'd be weird if they weren't.
+[k]
+
+[bgm BGM_EVENT_1 0.1]
+
+＠Hektor
+Remember, we're up against the Achaean army.
+[k]
+
+＠Hektor
+They're sparing no effort to invade Troy and take back Helen after my little brother, Paris, abducted her, and they're totally in the right to do so.
+[k]
+
+＠Hektor
+They've even got the gods' blessing...though we do have some gods on our side, too.
+[k]
+
+＠Hektor
+And then there's all the heroes they've got[sr]who're as strong as gods in their own right.
+[k]
+
+＠Hektor
+Agamemnon, Odysseus, Patroclus, the two Ajaxes...
+[k]
+
+[charaFace B 5]
+
+＠Hektor
+So...it shouldn't be long now before you-know-who shows up. This IS the Trojan War, after all.
+[k]
+
+＠Hektor
+Come on, Penthesilea.[sr]You've gotta be warmed up by now, right?
+[k]
+
+[bgmStop BGM_EVENT_1 0.5]
+
+＠Hektor
+Isn't it about time you remembered who's supposed[sr]to be on this battlefield more than anyone?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Penthesilea
+...
+[k]
+
+＠Penthesilea
+Yes... You're right...[sr]I do know...who should be here.
+[k]
+
+[charaFace A 5]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠Penthesilea
+I can even smell him now. Where is he...[sr]Where is he? Where is he!?
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠Hektor
+He's over there.
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.3 1]
+[wait wipe]
+
+[wt 2.0]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.3 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.3 1]
+[wait wipe]
+
+＠Penthesilea
+Ahh, ahh, ahhh...![sr]There you are... There you are!
+[k]
+
+[charaFace A 7]
+
+＠Penthesilea
+[f large][messageShake 0.05 7 5 0.7]Achilleeeeees!!!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Achilles
+...
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[charaPut G 1]
+[charaScale G 1.1]
+[charaEffect G bit_talk_41]
+[charaPut G -30,90]
+[shake 0.05 2 4 0.5]
+
+＠Penthesilea
+I'll kill you! I'll kill you, I'll kill you![sr]This time! This time...! I WILL KILL YOU!!!
+[k]
+
+[messageOff]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_41]
+[se ad624]
+[wt 0.1]
+[charaFadeout A 0.1]
+[se ad73]
+[seVolume ad73 0 0.6]
+[wt 0.3]
+[seStop ad624 0.2]
+[seStop ad73 0.2]
+
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠Hektor
+All right, time for Phase Two. I hope this works...[sr]Man, do I hope this works!
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+
+

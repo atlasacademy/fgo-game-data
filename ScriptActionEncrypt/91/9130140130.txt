@@ -1,0 +1,561 @@
+
+＄91-30-14-01-3-0
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+[charaSet A 3014001 1 Inshun]
+[charaSet B 99502600 1 Mash]
+[charaSet C 98002000 1 Fou]
+[charaSet D 1098117700 1 "Lancer of Purgatorio"]
+[charaSet E 98111500 1 Static]
+[charaSet F 1098118900 1 "Samurai 1"]
+[charaSet G 1098118900 1 "Samurai 2"]
+[charaSet H 1098118900 1 "Samurai 3"]
+
+[scene 37312]
+
+[charaPut E 0,-2000]
+[charaEffect E bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.4 1]
+[wt 1.0]
+
+[se ad680]
+[effect bit_talk_h_slash01]
+[wt 0.1]
+[fowardEffect bit_talk_14]
+[wt 0.5]
+[se ad161]
+[charaFace D 4]
+[charaShake D 0.05 7 7 3.0]
+[wt 0.2]
+[charaShakeStop D]
+[wt 0.7]
+
+[bgmStop BGM_EVENT_3 0.5]
+[charaEffect D bit_talk_06]
+
+[wt 1.7]
+
+[charaEffectStop D bit_talk_06]
+[charaSpecialEffect D flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect D]
+[wt 0.7]
+
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 1]
+＠Inshun
+Hmm. That was certainly a more challenging foe...[sr]but still a far cry from what I was hoping for.
+[k]
+
+＠Inshun
+His spear technique was lacking[sr]in both refinement and bloodlust.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut E 1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠Mash
+I see... I'm sorry. I'm afraid this might[sr]be as close as the simulator can get.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut E 0,-2000]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠Inshun
+What a shame. Then I suppose it will not be[sr]possible to compare our skills in this manner.
+[k]
+
+[charaFace A 0]
+＠Inshun
+I apologize for wasting your time with this, Master!
+[k]
+
+？1：Don't worry about it. All part of the job.
+？！
+
+[charaFace A 1]
+＠Inshun
+Hahahaha. Spoken like a true leader.
+[k]
+
+＠Inshun
+Very well then, let us call it a day.[sr]Thank you again, Master!
+[k]
+
+？1：Anytime, Inshun.
+？！
+
+[bgmStop BGM_EVENT_2 1.0]
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[scene 10310]
+
+[fadein black 1.5]
+[wait fade]
+[wt 1.0]
+
+[se ad8]
+[wt 0.8]
+
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[scene 10400]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+＠Fou
+Fooou...
+[k]
+
+[messageOff]
+[charaFadeout C 0.7]
+[se ad77]
+[wt 1.8]
+
+[wipeout openEye 2.0 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[fadeout black 0.4]
+[wait fade]
+[wipein openEye 0.1 1]
+[wt 0.4]
+[scene 10000]
+[fadein black 0.5]
+
+[scene 10000]
+[wait scene]
+[se ad46]
+[effect bit_talk_35]
+[wt 2.0]
+[fadeout black 0.1]
+[wait fade]
+
+[bgm BGM_EVENT_72 0.1]
+
+＠
+The sky is stained red as blood.[sr]Crimson crows caw eerily in the distance.
+[k]
+
+＠
+Blood drips from the tip of my spear. I will not relax my grip until those before me are dead.
+[k]
+
+＠
+...Rejoice. Your offerings are all here.
+[k]
+
+＠
+I will kill all manner of innocents.[sr]Children, the elderly, infants, invalids...
+[k]
+
+＠
+Why, you ask? To sharpen my spear. Spears are meant for killing, and so only killing can hone their edges.
+[k]
+
+＠
+The time for the massacre is at hand.
+[k]
+
+
+[messageOff]
+[scene 45900]
+[fadein black 0.7]
+[wait fade]
+
+[se ad9]
+[wt 3.0]
+[seStop ad9]
+
+
+？1：Wh-what the hell!?
+？！
+
+[bgmStop BGM_EVENT_72 0.5]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+[scene 46702]
+[charaSet E 1098117700 1 Silhouette]
+[wt 0.4]
+
+
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[bgm BGM_EVENT_71 0.1]
+[charaTalk off]
+
+[charaFilter E silhouette 00000080]
+[charaFadein E 0.4 1]
+＠Lancer of Purgatorio
+Hahahahahaha![sr]Hee... Heeheeheeheehee!
+[k]
+
+[messageOff]
+[charaDepth D 0]
+[charaDepth E 1]
+[charaFace E 0]
+
+[charaFace D 0]
+[charaFadein D 0 1]
+[wt 0.1]
+
+[charaFadeout E 0.7]
+[wt 1.0]
+＠Lancer of Purgatorio
+What a delightful discovery! I can feel my skills sharpening with every life my spear takes!
+[k]
+
+[charaFace D 6]
+＠Lancer of Purgatorio
+Thinking back on it now...[sr]my life could not have been more dull!
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[charaFace G 0]
+[charaFadein G 0.1 2]
+[charaFace H 0]
+[charaFadein H 0.1 0]
+[wt 0.5]
+
+[effect bit_bolg_02]
+[wt 0.1]
+[se bac14]
+[shake 0.04 4 4 0.7]
+[wt 0.4]
+[se ad161]
+[wt 0.4]
+[charaFadeout F 0.4]
+[charaFadeout G 0.4]
+[charaFadeout H 0.4]
+[wt 0.3]
+[se ad144]
+[se ad222]
+
+[wt 0.7]
+
+
+[charaTalk on]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠Lancer of Purgatorio
+Behold, behold, behold, [%1]!
+[k]
+
+＠Lancer of Purgatorio
+The more bodies pile up,[sr]the keener my spear grows!
+[k]
+
+[charaFace D 6]
+＠Lancer of Purgatorio
+Now, you will bear witness as I kill hundreds, thousands, all to propel my spear into the realm of the gods!
+[k]
+
+[bgmStop BGM_EVENT_71 0.5]
+
+＠A：???
+Ahem... I apologize for interrupting your speech,[sr]but I take it you are Lord Lancer of Purgatorio?
+[k]
+
+[charaFace D 5]
+＠Lancer of Purgatorio
+...So, you've come...[sr]Houzouin Inshun...!
+[k]
+
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[bgm BGM_EVENT_63 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.7 1]
+[wt 0.7]
+＠Inshun
+Of course. Now that I have heard your third-rate villainy for myself, I cannot simply stand by and do nothing about it.
+[k]
+
+＠Inshun
+My name is Houzouin Inshun.[sr]Now, let us have a good, fair fight.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠Lancer of Purgatorio
+Hahaha! You, Inshun?[sr]At best, you are a pale imitation.
+[k]
+
+＠Lancer of Purgatorio
+You live in a dreamworld, whereas I live in reality. Refusing to take life? The Buddha's mercy?
+[k]
+
+[charaFace D 6]
+＠Lancer of Purgatorio
+Foolishness! Complete and utter foolishness!
+[k]
+
+＠Lancer of Purgatorio
+You reached your limit the moment you allowed such pointless notions to hold you back!
+[k]
+
+＠Lancer of Purgatorio
+There will be no fight![sr]Only a slaughter!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Inshun
+If killing truly made one stronger, the Warring States period would have overflowed with masters of the blade.
+[k]
+
+＠Inshun
+Hmm... Be honest with me, Master.
+[k]
+
+＠Inshun
+Between him and me, who do you think is stronger?
+[k]
+
+？1：You!
+
+[charaFace A 1]
+＠Inshun
+Hahahaha! You have a good eye indeed, Master!
+[k]
+
+？2：Us!
+
+[charaFace A 3]
+＠Inshun
+O-oh, right. It is a bit embarrassing to have it pointed out so bluntly, but I cannot deny it!
+[k]
+
+？！
+
+[charaFace A 0]
+＠Inshun
+That aside, if anyone here[sr]should be laughing, it is me!
+[k]
+
+＠Inshun
+Purgatorio, you have been going on and on about making your spear sharper, which leaves me a bit confused.
+[k]
+
+＠Inshun
+Which is it? Do you wish for your spear to grow sharper, or do you wish to grow stronger?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠Lancer of Purgatorio
+What was that...?
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Inshun
+The best mouse-catching cat in the world would be no good to anyone if it also went around eating people.
+[k]
+
+＠Inshun
+After all, a cat's most important duty is to be cute. Would you not agree?
+[k]
+
+？1：Meow.
+
+[charaFace A 1]
+＠Inshun
+Exactly. All a cat need do to be cute is meow.
+[k]
+
+？2：Yeah, I guess that's true.
+
+＠Inshun
+Unfortunately, it seems Purgatorio here[sr]has gotten his priorities mixed up.
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠Lancer of Purgatorio
+What are you even talking about!?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Inshun
+It's simple.
+[k]
+
+＠Inshun
+If all you want is a sharper spear, there is a better way to obtain it than by slaughtering people.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠Lancer of Purgatorio
+What...!?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Inshun
+All you need do is let someone stronger handle it.[sr]What could be easier?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠Lancer of Purgatorio
+Ridiculous, Inshun![sr]You're not making the least bit of sense!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Inshun
+And what sense is there in causing[sr]others unnecessary pain and suffering?
+[k]
+
+＠Inshun
+Is your desire merely to brag about[sr]all the lives you have taken?
+[k]
+
+[charaFace A 4]
+＠Inshun
+If so, I can think of no more hollow or foolish endeavor than the one you undertake.
+[k]
+
+＠Inshun
+I imagine the corruption makes it impossible for you to know any better, but I cannot help but laugh when I think how you truly believed that was all you needed to grow stronger.
+[k]
+
+[charaFace A 0]
+＠Inshun
+All right. I've learned all I wanted to know.[sr]Now the only thing left to us is a duel.
+[k]
+
+＠Inshun
+Indeed, I consider this an act of mercy, for I have never in my life met a more pitiable opponent!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠Lancer of Purgatorio
+Enough of your foolish prattling, Inshun!
+[k]
+
+＠Lancer of Purgatorio
+You will see for yourself how sharp my spear has become...as it slices you to ribbons!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Inshun
+Come then, Master.
+[k]
+
+[charaFace A 1]
+＠Inshun
+Let us bring this to a speedy end[sr]and be on our way back to Chaldea!
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_63 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

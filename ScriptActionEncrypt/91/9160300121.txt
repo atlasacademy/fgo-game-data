@@ -1,0 +1,1152 @@
+
+
+
+
+＄91-60-30-01-2-1
+
+[soundStopAll]
+
+
+[charaSet A 6030000 1 Danzo]
+[charaSet B 6019001 1 "Fuuma Kotarou"]
+[charaSet C 1098157800 1 "Caster of Limbo?"]
+[charaSet D 1001000 1 Effect]
+[charaSet E 1001000 1 "Effect 2"]
+
+[charaSet F 98006200 1 "Limbo Effect"]
+
+[charaSet H 1098157800 1 Silhouette_Limbo]
+[charaFilter H silhouette 00000080]
+
+
+[scene 47300]
+
+[bgm BGM_EVENT_24 0.1]
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.1]
+
+[effect bit_talk_kengekiall02]
+[wt 0.1]
+[se ad33]
+[wt 1.0]
+[shake 0.03 3 3 0.4]
+[effect bit_talk_14]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.7]
+
+[flashin once 0.3 0.3 FFFFFFAF FFFFFF00]
+[se bac194]
+[wt 0.1]
+[shake 0.03 3 3 0.4]
+[wt 0.7]
+[flashin once 0.3 0.3 FFFFFFAF FFFFFF00]
+[se bac194]
+[wt 0.1]
+[shake 0.03 3 3 0.4]
+[wt 0.7]
+
+[shake 0.05 1 4 1.0]
+[se ad211]
+[effect bit_talk_impactlanding]
+[wt 3.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[se ad7]
+[charaMoveReturn A 0,5 0.2]
+[charaMoveScale A 0.95 0.2]
+[wt 0.7]
+
+[charaFace A 2]
+
+
+＠Danzo
+Mechanical ninja art: Fuuma Missile![sr]It will tear any target apart, even a monster!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale A 1.0]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+
+＠Fuuma Kotarou
+Caster of Limbo...or whatever remains of you.[sr]Go away, and leave us alone!
+[k]
+
+[charaFace B 5]
+＠Fuuma Kotarou
+If you ever think to try something like this again...
+[k]
+
+[charaFace B 2]
+＠Fuuma Kotarou
+...then I will crush you as many times as it takes!
+[k]
+
+[messageOff]
+
+
+[flag MALE false]
+[flag FEMALE false]
+
+[selectionUse masterMale]
+？1：Release your Noble Phantasm!
+[flag MALE true]
+？！
+
+[selectionUse masterFemale]
+？1：Release your Noble Phantasm!
+[flag FEMALE true]
+？！
+
+[branch play01 MALE 1]
+[branch play02 FEMALE 1]
+
+[label play01]
+[charaEffect B bit_talk_CommandMantra_01 0,64]
+[wt 0.5]
+[se bas16]
+[wt 1.5]
+
+[branch play03]
+
+[label play02]
+[charaEffect B bit_talk_CommandMantra_02 0,64]
+[wt 0.5]
+[se bas16]
+[wt 1.5]
+
+[branch play03]
+
+[label play03]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 2]
+[charaFace B 5]
+[charaFadein B 0.1 0]
+＠Danzo
+Allow me to join you, Lord Kotarou!
+[k]
+
+[charaFace B 1]
+＠Fuuma Kotarou
+Of course!
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaEffect B bit_talk_36]
+[charaEffect A bit_talk_36]
+[se ad39]
+[wt 1.7]
+
+
+[cueSe NoblePhantasm_603000 NP_603000_2]
+
+[charaFace A 2]
+[charaFace B 2]
+
+
+＠Fuuma & Puppet
+...Evil Wind Death Storm![sr]...Immortal Chaos Brigade!
+[k]
+
+[messageOff]
+[cueSeStop NoblePhantasm_603000 NP_603000_2 0.1]
+[fadeout white 1.0]
+[wait fade]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaEffectStop A bit_talk_36]
+[charaEffectStop B bit_talk_36]
+
+[wt 0.5]
+
+[fadein white 0.5]
+[wait fade]
+
+[charaPut D 1]
+[charaPut E 1]
+[charaEffect D bit_talk_tornado01]
+[se bac30]
+[wt 0.5]
+[charaEffect E bit_talk_32]
+[se ad439]
+[seVolume ad167 0 0.3]
+[wt 1.5]
+[charaEffectStop E bit_talk_32]
+[wt 0.1]
+
+[charaEffectStop D bit_talk_tornado01]
+
+[effect bit_talk_explosion_triple]
+[wt 0.2]
+[shake 0.05 3 3 0.7]
+[seStop ad439]
+[se ad63]
+[wt 2.5]
+
+[effectStop bit_talk_explosion_triple]
+
+[charaPut F 1200,1200]
+[charaEffect F bit_talk_shadow_aura01]
+
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[charaPut F 0,-180]
+
+[charaShake C 0.04 4 4 0.7]
+[wt 1.0]
+
+＠Caster of Limbo?
+Hngggh!
+[k]
+
+[charaFadeout C 0.1]
+[charaPut F 1200,1200]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Danzo
+...And this is not all. I have one more technique for you...a dark and cursed one.
+[k]
+
+[messageOff]
+[charaEffect A bit_talk_36]
+[se ad39]
+[wt 1.5]
+
+[charaFace A 5]
+＠Danzo
+This is not a Fuuma technique.[sr]In fact, it is not a technique used by any human.
+[k]
+
+＠Danzo
+It is my forbidden, ultimate technique for sealing away oni and those who have fallen. I swore I would never use it in the presence of another.
+[k]
+
+
+＠Danzo
+But this is my own database; it is a fleeting illusion, not unlike a dream. Here, I can cross this line at least once.
+[k]
+
+[charaPut D 1200,1200]
+
+[charaFace A 4]
+＠Danzo
+Forgive me, Master.
+[k]
+
+[messageOff]
+[charaEffectStop A bit_talk_36]
+[cameraMove 1.0 100,-65 1.4]
+[wt 1.5]
+
+＠Mash
+I'm seeing something in Danzo's hand...[sr]Is that...a moonflower?
+[k]
+
+[charaFace A 5]
+＠Danzo
+...I'm sorry.
+[k]
+
+[messageOff]
+[charaScale D 0.7]
+[charaPut D -150,50]
+[charaEffect D bit_talk_12_platinum_L]
+[se bac95]
+[wt 1.0]
+
+[wipeout rectangleStripRightToLeft 0.2 1]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[cameraHome 0.1]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.1 1]
+[wait wipe]
+
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[charaPut F 0,-180]
+＠Caster of Limbo?
+!!!
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 0.1]
+[charaEffectStop F bit_talk_shadow_aura01]
+
+[charaTalk off]
+
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[charaFadeout C 0.1]
+[wt 0.8]
+
+[charaFadeout H 0.1]
+
+[fowardEffect bit_talk_blood_splash]
+[se ad464]
+[wt 2.0]
+
+[se ad144]
+[wt 1.0]
+[seStop ad144]
+[seStop ad464]
+
+[charaTalk on]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠Danzo
+Once I cut the flower I hold in my hand,[sr]it causes my enemy's head to fall on the spot.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠Fuuma Kotarou
+...Impressive, Lady Danzo.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+
+＠Danzo
+...Youjutsu Zanhou: Moonflower.
+[k]
+
+＠Danzo
+It is a cursed, forbidden technique.[sr]Please, forget you saw it.
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+
+[charaSet C 5009001 1 "Da Vinci"]
+[charaSet D 9005001 1 Holmes]
+[charaSet E 98001000 1 Mash]
+
+[scene 10200]
+
+[wt 2.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠Mash
+...Da Vinci, Holmes.[sr]It looks like they finished their battle.
+[k]
+
+＠Mash
+Senpai, Kotarou, and Danzo are all doing fine.[sr]This should put an end to...
+[k]
+
+[messageOff]
+[charaFace E 6]
+[wt 1.0]
+
+[charaFace E 12]
+＠Mash
+...Da Vinci?
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Da Vinci
+Oh, right, yeah. The battle's all over, and I'm seeing the abnormal data disappear on my monitor too.
+[k]
+
+[charaFace C 4]
+＠Da Vinci
+That's all well and good, but there's[sr]still something strange about this.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠Mash
+What do you mean?
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+
+＠Da Vinci
+I'm looking at the damage to her database right now...
+[k]
+
+＠Da Vinci
+...and a segment of it has been repaired perfectly.[sr]I wonder what's going on?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+[wt 1.0]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠Holmes
+We determined that the mysterious data causing this daydream malfunction was either a bug or a virus.
+[k]
+
+＠Holmes
+I have not changed my position there, of course.[sr]However...
+[k]
+
+[charaFace D 6]
+＠Holmes
+...what if the purpose of this strange data lay[sr]not in destroying Danzo, but in repairing her...?
+[k]
+
+[charaFace D 0]
+＠Holmes
+Of course, that alone does not tell us why this data was sent, but opposing forces have been known to make merciful gestures towards their enemy at times.
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace E 6]
+[charaFadein E 0.1 2]
+[charaFace C 2]
+[charaFadein C 0.1 0]
+[wt 1.0]
+
+[charaTalk on]
+[bgmStop BGM_EVENT_2 0.1]
+
+[charaFace C 5]
+＠Da Vinci
+...Again, Holmes? Are you doing it AGAIN?
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠Holmes
+Well now, I wouldn't say I knew right away.[sr]This was merely one of many possibilities.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠Da Vinci
+[messageShake 0.03 4 4 0.7]
+So you DID do it again![sr]Dammit Holmes!
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[fadeout white 1.0]
+[wait fade]
+
+[scene 10001]
+[wt 2.0]
+
+[wipeFilter cinema 0.5 0]
+
+[fadein white 1.0]
+[wait fade]
+
+
+＠
+...Lord [image berserker_language_5].
+[k]
+
+
+＠
+Lord [image berserker_language_5].[sr]Lord [image berserker_language_5].
+[k]
+
+[messageOff]
+[se ad31]
+[effect bit_talk_noise_gr]
+[wt 1.0]
+[seStop ad31 0.1]
+
+
+[se ad15]
+[wt 0.5]
+[se ad15]
+[wt 0.7]
+[effectStop bit_talk_noise_gr]
+[effect bit_talk_security]
+
+[bgm BGM_EVENT_6 0.1]
+
+
+＠
+The pieces are fitting together.
+[k]
+
+＠
+Something is taking shape within me.
+[k]
+
+＠
+Ahh, I'm finally going to see this[sr]memory I was never able to play back.
+[k]
+
+＠
+It may still be just a small piece of my memories...but I can sense it knitting itself back together anew.
+[k]
+
+
+＠
+It's the record of a certain day. A day that transpired after Kashin Koji and the first Fuuma were gone...
+[k]
+
+＠
+...after I had traveled around all[sr]of Japan to fight in its wars.
+[k]
+
+
+＠
+It was still a turbulent time of war...but for me at least, things had calmed down considerably at this point.
+[k]
+
+＠
+Ahh, it was so long ago.
+[k]
+
+＠
+So very, very long since I was able to[sr]view the events of this lost record.
+[k]
+
+＠
+In human terms, this would be...
+[k]
+
+＠
+...a memory.
+[k]
+
+[messageOff]
+[fadeout white 1.0]
+[bgmStop BGM_EVENT_6 1.0]
+[wait fade]
+
+[effectStop bit_talk_security]
+
+[scene 47000]
+[wt 1.0]
+
+[effect bit_sepia01]
+
+[charaSet A 6030002 1 Danzo]
+[charaSet E 1001000 1 Child]
+
+[fadein white 1.0]
+[wait fade]
+
+[se ad443]
+[wt 1.0]
+[seStop ad443 0.1]
+
+[bgm BGM_EVENT_25 0.1]
+
+＠Child
+(...Huff, huff, gasp)
+[k]
+
+＠Child
+I-I'm back.
+[k]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+＠Danzo
+Good job. You finished exactly thirty minutes sooner today than you did last time.
+[k]
+
+
+＠Danzo
+What's more, the mountain you crossed today is the steepest in Sagami. You did well to traverse them.
+[k]
+
+[charaFace A 1]
+＠Danzo
+Well done...Lord Fifth.
+[k]
+
+＠Child
+Thank you.
+[k]
+
+＠Child
+Oh, but, it's still too soon to call me that...
+[k]
+
+＠Child
+I have a long way to go before I'm worthy.[sr]That's why I'm still training with you.
+[k]
+
+＠Child
+Once I've learned all the Fuuma arts, and made them my own, that's when I'll start going by “Fifth.”
+[k]
+
+＠Child
+So, until then...
+[k]
+
+[charaFace A 0]
+＠Danzo
+...I shall call you Lord Kotarou.
+[k]
+
+＠Child
+Um, I don't[line 2]
+[k]
+
+[charaFace A 5]
+＠Danzo
+I insist. At least let me call you by your name.[sr]You have already been chosen as the clan's successor.
+[k]
+
+[charaFace A 1]
+＠Danzo
+You should be proud of that, Lord Kotarou.
+[k]
+
+＠Danzo
+Given your current stage of progression, I will respect your wish to not be addressed as “Fifth.”
+[k]
+
+[charaFace A 0]
+＠Danzo
+But you have already been named as Fuuma Kotarou.[sr]You cannot go by your childhood name forever.
+[k]
+
+＠Danzo
+I am sure your late father would want the same.
+[k]
+
+[messageOff]
+[charaFace A 1]
+[wt 1.0]
+
+[charaFace A 0]
+＠Danzo
+Okay?
+[k]
+
+＠Child
+...Okay.
+[k]
+
+
+＠Danzo
+Good. Now, let's get ready for dinner. Today, instead of returning to Fuuma Village, we will be staying at that cabin there.
+[k]
+
+＠Child
+Huh? You mean, we're not just[sr]going to have hyourougan?
+[k]
+
+＠Danzo
+You are a growing boy. You need large[sr]meals to help you grow big and strong.
+[k]
+
+
+＠Child
+O-okay!
+[k]
+
+＠Child
+I'll go catch some fish and game then!
+[k]
+
+
+＠Danzo
+No need. I have already caught a number of trout.[sr]I can cook them in the cabin's fireplace.
+[k]
+
+
+＠Danzo
+I also killed a rabbit I can use to make soup.[sr]You need as much nourishment as you can get.
+[k]
+
+
+＠Child
+Oh, I love trout and rabbit![sr]But, um...
+[k]
+
+＠Danzo
+Hm?
+[k]
+
+＠Child
+Are you going to cook them, Mother?[sr]Usually, someone in the village prepares meals...
+[k]
+
+＠Danzo
+Yes.
+[k]
+
+[charaFace A 3]
+
+
+＠Danzo
+Since...
+[k]
+
+
+＠Danzo
+Since you are kind enough to call me “Mother”...[sr]I thought I would try to act like one.
+[k]
+
+
+＠Danzo
+If...if it's not too presumptuous of me.
+[k]
+
+＠Child
+No, Mother.[sr]Not at all.
+[k]
+
+＠Child
+I, uh...
+[k]
+
+＠Child
+I can't wait to try your cooking!
+[k]
+
+
+[messageOff]
+[charaTalk A]
+[charaFace A 1]
+[wt 1.0]
+
+[charaFace A 0]
+＠Danzo
+Then let's go back to the cabin.[sr]Um...
+[k]
+
+＠Danzo
+...[sr]...
+[k]
+
+[charaFace A 4]
+＠Danzo
+...Is it normal for mothers to hold their children's hands at times like this?
+[k]
+
+＠Child
+O-oh, um...[sr]I think so...?
+[k]
+
+[charaFace A 1]
+＠Danzo
+Then take my hand, and let's be on our way...Kotarou.
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_25 1.0]
+[wait fade]
+
+[effectStop bit_sepia01]
+[charaFadeout A 0.1]
+
+
+[wt 2.0]
+
+[effect bit_talk_security]
+
+[scene 47900]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_41 0.1]
+
+＠Voice
+Hehehe...
+[k]
+
+＠Voice
+Hehe, hehehehehehehehe. Hahahahahaha.[sr]Ahh, that took much longer than I expected.
+[k]
+
+
+
+＠Voice
+But at long last, the connection is made.[sr]A single, cherished treasure, at least for you.
+[k]
+
+＠Voice
+A record[line 2]a memory that you[sr]yourself singled out as being precious.
+[k]
+
+＠Voice
+Do continue to cherish it.
+[k]
+
+＠Voice
+You need memories that inspire warmth inside that cold, unfeeling body. You must not forget that which you love.
+[k]
+
+＠Voice
+No, that won't do at all.[sr]Not at all.
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠Danzo
+Why...?
+[k]
+
+＠Danzo
+Why are you...[sr]doing this...?
+[k]
+
+＠Danzo
+Are you really...
+[k]
+
+＠Danzo
+...helping me to recall these irreplaceable memories...
+[k]
+
+＠Danzo
+...I thought I had forgotten for good?
+[k]
+
+
+＠Voice
+Yes, of course. You were in a truly[sr]sorry state of disrepair, after all.
+[k]
+
+＠Voice
+You were so broken down that you couldn't even remember your own precious past, or why you were made to begin with.
+[k]
+
+＠Voice
+I couldn't bear it.[sr]I simply couldn't bear it.
+[k]
+
+＠Voice
+Why...
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠Voice
+...that would just be far too dull.
+[k]
+
+＠Voice
+Yes, dreadfully dull! For how could I hope to truly devastate you if I didn't know exactly what to break!
+[k]
+
+＠Voice
+That's why I did this.
+[k]
+
+＠Voice
+That's why I brought your memory back. A precious, cherished memory, just like a real human's!
+[k]
+
+＠Voice
+So, you care for this child as your own, even though you have oil running through your veins instead of blood? Hmm, I see. That's great. Wonderful, even.
+[k]
+
+＠Voice
+I'm so glad to hear that, my little wooden doll.
+[k]
+
+＠Voice
+I can't begin to understand why you cherish this memory so...but please, do not stop.
+[k]
+
+
+＠Voice
+Because one day, I will return...and I will see that you are utterly destroyed.
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠Danzo
+Destroyed...
+[k]
+
+＠Danzo
+You mean, you're going to break me?
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_41 1.0]
+[wt 1.0]
+
+＠Voice
+Oh no.
+[k]
+
+
+＠Voice
+I mean I'm going to devastate you.[sr]I'm going to destroy that which you cherish most.
+[k]
+
+[bgm BGM_EVENT_72 0.1]
+
+
+＠Voice
+I'm going to find the dead shadow...the Servant who looks exactly like the living boy you cared for so very much.
+[k]
+
+
+＠Voice
+I'm going to find the man you love...[sr]the so-called apple of your eye...
+[k]
+
+
+＠Voice
+...and I'm going to crush him to a pulp,[sr]right in front of you.
+[k]
+
+＠Voice
+And when that time comes...
+[k]
+
+＠Voice
+...I look forward to seeing your face twist in anguish, my beautiful wooden doll.
+[k]
+
+
+[messageOff]
+[fadeout white 1.5]
+
+[bgmStop BGM_EVENT_72 1.5]
+[wait fade]
+
+[effectStop bit_talk_security]
+[wipeOff]
+
+
+
+[charaSet A 6030000 1 Danzo]
+[charaSet D 6030000 1 Danzo_Effects]
+[charaSet E 98001000 1 Mash]
+
+[wt 1.0]
+
+[scene 10000]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 2.0]
+
+[effect bit_talk_07_02]
+[se ad12]
+[wt 6.5]
+
+
+[fadeout black 1.0]
+[wait fade]
+
+
+[scene 10200]
+
+[wt 2.0]
+
+[fadein black 2.0]
+[wait fade]
+[wt 0.8]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠Mash
+Welcome back, Senpai![sr]You did great.
+[k]
+
+？1：It's good to be back!
+
+＠Mash
+I'm so glad to see you're safe.[sr]And Danzo's just finished rebooting.
+[k]
+
+？2：How's Danzo? Is she okay?
+
+＠Mash
+Yes, she's fine.[sr]In fact, she just finished rebooting!
+[k]
+
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[scene 10310]
+
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Fuuma Kotarou
+...[sr]...
+[k]
+
+[charaFace B 1]
+＠Fuuma Kotarou
+I'm back, Moth[line 2]
+[k]
+
+[charaFace B 4]
+＠Fuuma Kotarou
+I mean, Lady Danzo.
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad95]
+[seVolume ad95 0 0.3]
+[wt 0.5]
+[seVolume ad95 0.5 1.0]
+[wt 1.0]
+
+
+[charaTalk off]
+[charaFace A 4]
+[charaFadein A 0.7 1]
+
+
+[charaFace D 1]
+[charaFadein D 0.7 1]
+
+
+[seStop ad95 0.1]
+
+[wt 1.5]
+
+[charaFadeout A 0.7]
+
+[wt 0.7]
+[bgm BGM_EVENT_45 0.1]
+
+[wt 1.0]
+
+＠Danzo
+...Welcome back, Kotarou.
+[k]
+
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.5]
+[bgmStop BGM_EVENT_45 2.5]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

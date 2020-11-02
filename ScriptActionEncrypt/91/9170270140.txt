@@ -1,0 +1,429 @@
+
+＄91-70-27-01-4-0
+[soundStopAll]
+
+[charaSet A 7027001 1 Penthesilea]
+[charaSet B 3016001 1 Hektor]
+[charaSet D 4029001 1 "Achilles 1"]
+[charaSet E 4029001 1 "Achilles 2"]
+[charaSet F 4029001 1 "Achilles 3"]
+[charaSet G 5009000 1 "Effect Dummy 1"]
+[charaSet H 5009000 1 "Effect Dummy 2"]
+
+[scene 58200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0 1]
+
+[bgm BGM_EVENT_24 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk depthOff]
+[charaDepth D 0]
+[charaDepth G 1]
+[charaDepth H 2]
+
+[charaShake D 0.05 7 4 0.2]
+[charaPut H -70,50]
+[charaEffect H bit_talk_13]
+[se ade37]
+[cueSe Battle bac151]
+[cueSe Battle bac386]
+[wt 0.3]
+[cueSeStop bac151 0.2]
+[charaEffectStop H bit_talk_13]
+
+[charaShake D 0.05 5 4 0.2]
+[charaPut G 60,10]
+[charaPut H 60,10]
+[charaEffect G bit_talk_13]
+[charaEffect H bit_talk_14]
+[se ade37]
+[cueSe Battle bac151]
+[cueSe Battle bac387]
+[wt 0.3]
+[cueSeStop bac151 0.2]
+[charaEffectStop G bit_talk_13]
+[charaEffectStop H bit_talk_14]
+
+[charaShake D 0.05 3 6 0.2]
+[charaPut H -50,-20]
+[charaEffect H bit_talk_13]
+[se ade37]
+[cueSe Battle bac151]
+[cueSe Battle bac388]
+[wt 0.3]
+[cueSeStop bac151 0.2]
+[charaEffectStop H bit_talk_13]
+
+[wt 0.1]
+
+[charaPut G 1]
+[charaPut H 1]
+[charaEffect G bit_talk_13]
+[charaEffect H bit_talk_14]
+[se ade37]
+[cueSe Battle bac151]
+[cueSe Battle bac389]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaShake D 0.05 7 4 0.5]
+
+[wt 0.7]
+
+[se ad161]
+[effect bit_talk_35]
+[wt 1.7]
+
+[charaSpecialEffect D flashErasure 1 1.5]
+[wt 0.2]
+[se ad52]
+[wait charaSpecialEffect D]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠Penthesilea
+AAH, AAH, AAAHHH!
+[k]
+
+＠Penthesilea
+Achilles, Achilles, Achilles!!![sr]You're dead, dead, deaaad!
+[k]
+
+[charaPut G 2400,-2400]
+[charaPut H 2400,-2400]
+[charaScale G 0.83]
+[charaScale H 0.83]
+[charaEffect G bit_talk_impactlanding]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[cameraMove 0.2 50,70 1.4]
+[wt 0.3]
+[charaPut G 0,-48]
+[cueSe Battle bac315]
+[shake 0.03 7 7 0.3]
+[wt 1.1]
+[charaEffect H bit_talk_impactlanding]
+[wt 0.4]
+[charaEffectStop G bit_talk_impactlanding]
+[charaPut H 0,-48]
+[cueSe Battle bac315]
+[shake 0.03 7 7 0.3]
+
+[wt 1.0]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 0.5]
+[bgm BGM_EVENT_24 0.5 0.4]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaPut G 2400,2400]
+[charaPut H 2400,2400]
+[charaEffectStop H bit_talk_impactlanding]
+[charaScale G 1.0]
+[charaScale H 1.0]
+[cameraHome 0.1]
+[charaSet H 5009000 1 "Effect Dummy 2"]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.4 0.5]
+[wait wipe]
+
+＠Hektor
+Damn, she's so far gone she hasn't even noticed that she's already killed him, huh?
+[k]
+
+＠Hektor
+Guess she went from warmed up to overheated.
+[k]
+
+？1：Still, this isn't over yet.
+？！
+
+[charaFace B 0]
+
+＠Hektor
+That it's not. Da Vinci oughta be playing her cards any moment... There we go.
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 0.5]
+[wait wipe]
+[charaFadeout B 0.1]
+[cameraMove 0.1 50,70 1.4]
+[charaTalk A]
+[charaFace A 7]
+[charaScale A 0.71]
+[charaFadein A 0.1 -50,-153]
+[bgm BGM_EVENT_24 0.5 1.0]
+[wt 0.1]
+[wipein rectangleStripLeftToRight 0.4 0.5]
+[wait wipe]
+
+
+＠Penthesilea
+[cueSe Battle bac315]
+[shake 0.03 7 7 0.3]
+Take that, [wt 1.0][cueSe Battle bac315][shake 0.03 7 7 0.3]and that, [wt 1.0][cueSe Battle bac315][shake 0.03 7 7 0.3]and that![wt 1.2][sr]You won't get away this time!
+[k]
+
+[charaFace A 6]
+
+[bgmStop BGM_EVENT_24 0.3]
+
+＠Penthesilea
+...
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace A 7]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠Penthesilea
+What!?
+[k]
+
+[messageOff]
+[fadeout black 0.3]
+[wait fade]
+[charaFadeout A 0.1]
+[charaScale A 1.0]
+[cameraHome 0.1]
+[charaTalk depthOff]
+[charaDepth E 0]
+[charaDepth F 1]
+[charaDepth D 2]
+[charaTalk off]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.1]
+[fadein black 0.3]
+[wait fade]
+
+[wt 1.0]
+
+[charaFace E 0]
+[charaPut E -288,0]
+[se ad42]
+[charaSpecialEffect E appearanceReverse 0 0.7]
+[seStop ad42 0.9]
+[wt 1.2]
+[charaFace F 0]
+[charaPut F 288,0]
+[se ad42]
+[charaSpecialEffect F appearanceReverse 0 0.7]
+[seStop ad42 0.9]
+[wt 2.5]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠Penthesilea
+How is this...!?
+[k]
+
+＠Penthesilea
+No. I know you, Achilles. You are...fast.[sr]You are quick, speedy, agile!
+[k]
+
+＠Penthesilea
+Is that why I see so many of you? Is this some trick you are playing with that incredible speed!?
+[k]
+
+＠Penthesilea
+...Heh. Hahahahaha...
+[k]
+
+[charaFace A 7]
+
+[bgmStop BGM_EVENT_5 0.3]
+
+＠Penthesilea
+Enough!
+[k]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠Penthesilea
+If that is your game, then I shall simply crush every last one of you! Run as fast and as far as you like.
+[k]
+
+＠Penthesilea
+I will always, always, always find you, and kill you! You will never escape death at my hands!
+[k]
+
+＠Penthesilea
+So if I crush every single one of you that stands before me, your vaunted speed will be meaningless!
+[k]
+
+[messageOff]
+[fadeout black 0.8]
+[bgm BGM_EVENT_24 0.8 0.4]
+[wait fade]
+[charaFadeout A 0.1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 0.7]
+[fadein black 0.8]
+[wait fade]
+
+＠Hektor
+Hmm, looks like even her capacity for speech is starting to go. Guess that's a Berserker for you.
+[k]
+
+[charaFace B 5]
+
+＠Hektor
+...Don't get too close, Master. There's a much greater chance of you getting hit by accident now.
+[k]
+
+＠Hektor
+At this point, she probably thinks[sr]anything that moves is Achilles.
+[k]
+
+＠Hektor
+If she starts getting too close...I'll have to use Durindana at full strength to keep you safe.
+[k]
+
+＠Hektor
+If it comes to that, either she or I might end up dying...but that's a risk we'll just have to take.
+[k]
+
+[charaFace B 0]
+
+＠Hektor
+Sheesh. This old man doesn't like working so hard,[sr]but what can you do?
+[k]
+
+＠Hektor
+Don't worry, Master, I'll make sure to hand you off to someone else if it looks like things're gonna take a turn for the worse. Mash would never forgive me if something happened to you, after all.
+[k]
+
+？1：Please try not to die out there!
+？！
+
+[charaFace B 1]
+
+＠Hektor
+Oh I'll try, believe me. But the thing about the Trojan War is that, sometimes, there's no helping what happens.
+[k]
+
+＠Hektor
+There's gods and heroes, resentment and obsession, honor and arrogance, vice and morals...
+[k]
+
+＠Hektor
+Any one of those on their own would be enough to fill you up, and every one of them is out in spades here.
+[k]
+
+＠Hektor
+And that's before you have the goddess of fate stepping in and stirring the pot even more.
+[k]
+
+＠Hektor
+It's terrifying, even for a battlefield. Anything could happen here, and anyone could bite it at any time.
+[k]
+
+＠Hektor
+Honestly, I still can't believe I[sr]managed to survive it for ten years.
+[k]
+
+？1：But, this isn't the real Trojan War, right...?
+？！
+
+[charaFace B 0]
+
+＠Hektor
+Oh, yeah, good point. This is just a simulation, huh?
+[k]
+
+＠Hektor
+Guess I got so caught up in it I didn't even notice.
+[k]
+
+＠Hektor
+Well that's embarrassing.
+[k]
+
+[charaFace B 5]
+
+＠Hektor
+Of course, Penthesilea's still[sr]real...and so is her madness.
+[k]
+
+＠Hektor
+That's why I'm out here doing[sr]this...and why I'm scared shitless.
+[k]
+
+[charaFace B 4]
+
+＠Hektor
+There's no telling what she'll have to destroy to satiate her frenzy...or even what she really wants to destroy.
+[k]
+
+＠Hektor
+The best we can do is make an educated guess.
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 0.5]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 0.5]
+[wipein rectangleStripRightToLeft 0.4 0.5]
+[bgm BGM_EVENT_24 0.4 1.0]
+[wait wipe]
+
+＠Penthesilea
+Ahh, Achilles.[sr]Achilles, son of Peleus!
+[k]
+
+＠Penthesilea
+Look at me. Look, and see a proud Amazon warrior! Then fight me! Fight me as a fellow warrior! No more! No less!
+[k]
+
+＠Penthesilea
+...I will never let you speak that word again.[sr]Not ever.
+[k]
+
+＠Penthesilea
+I am not beautiful. I am not even a woman![sr]I am only a warrior!
+[k]
+
+＠Penthesilea
+[f large]Now...[messageShake 0.05 7 7 0.5]fight me, Achilles!!!
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+
+
+

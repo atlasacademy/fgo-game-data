@@ -1,0 +1,534 @@
+
+＄91-70-27-01-2-0
+[soundStopAll]
+
+[charaSet A 7027001 1 Penthesilea]
+[charaSet B 3016001 1 Hektor]
+[charaSet C 98014000 1 "Middle Ages Soldier"]
+[charaSet D 98016000 1 "Roman Soldier"]
+[charaSet E 98114500 1 "Amazon A"]
+[charaSet F 98114500 1 "Amazon B"]
+[charaSet G 98114500 1 "Amazon C"]
+[charaSet H 5009000 1 "Effect Dummy"]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[wipeout openEye 0.1 1]
+[wait wipe]
+[scene 58200 1.2]
+[wipein openEye 1.5 1.0]
+[wait wipe]
+
+[wt 0.7]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 1]
+[wt 0.2]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠Penthesilea
+Nnn...
+[k]
+
+[charaFace A 0]
+
+＠Penthesilea
+...[sr]Where am I...?
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[wt 0.3]
+
+[wt 0.7]
+[bgm BGM_EVENT_11 0.3 0.2]
+[se ad16]
+[seVolume ad16 0 0.0]
+[seVolume ad16 1.0 0.5]
+[wt 0.3]
+[bgmStop BGM_EVENT_11 0.1]
+[bgm BGM_EVENT_3 0.1]
+
+[wt 0.4]
+
+[wipeout rectangleStripLeftToRight 0.4 0.5]
+[wait wipe]
+[wt 0.2]
+[charaTalk off]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+[wipein rectangleStripRightToLeft 0.4 0.5]
+[seVolume ad16 0.4 1.0]
+[wait wipe]
+
+[charaTalk depthOff]
+[charaDepth C 0]
+[charaDepth D 0]
+[charaDepth H 1]
+
+[se bac139]
+[effect bit_talk_Slash_white_01]
+[wt 0.3]
+[charaEffect H bit_talk_14]
+[charaShake C 0.05 3 2 0.4]
+[se ad467]
+[seVolume ad467 0 0.6]
+[wt 0.3]
+[se bac136]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[effect bit_talk_h_slash01]
+[wt 0.4]
+[seStop ad32 0.5]
+[charaFadeout C 0]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[effect bit_talk_Slash_white_01]
+[wt 0.3]
+[fowardEffect bit_talk_35]
+[se ad161]
+[charaShake D 0.05 4 2 0.7]
+[wt 1.0]
+[charaMove D 0,-98 0.5]
+[wt 0.2]
+[charaFadeout D 0.4]
+[wt 0.3]
+[se ad144]
+[seVolume ad144 0 0.7]
+[seStop ad144 0.5]
+[wt 0.5]
+
+[charaTalk depthOn]
+
+[bgm BGM_EVENT_3 0.5 0.4]
+[seVolume ad16 0.5 0.4]
+[wt 0.7]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Penthesilea
+So, this is a battlefield.[sr]But...why?
+[k]
+
+[bgmStop BGM_EVENT_3 0.5]
+[seStop ad16 0.5]
+
+[charaFace A 4]
+
+＠Penthesilea
+Do I know this place...?
+[k]
+
+？1：Morning, Penthesilea.
+？2：Good morning, Your Majesty.
+？！
+
+[charaFace A 0]
+
+
+＠Penthesilea
+Hm? You're...my Master.[sr]Yes. I recognize you.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠Hektor
+Um...how about me? Do you know who I am?
+[k]
+
+？1：(He looks like he's confronting a wolf...)
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaSet C 98114510 1 "Amazon D"]
+[charaSet D 98114510 1 "Amazon E"]
+[charaSet H 98114510 1 "Amazon F"]
+
+[charaTalk A]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+[charaFace A 3]
+[charaFadein A 0.1 2]
+
+＠Penthesilea
+Ah... Yes. I know you. As I recall,[sr]you are...Hektor, of the Shining Helmet.
+[k]
+
+＠Penthesilea
+You are the son of King Priam and Queen Hecuba. You are the prince of Troy, wielder of the sacred sword Durendal.
+[k]
+
+[charaFace B 3]
+
+＠Hektor
+U-uh, yeah, that's right.
+[k]
+
+[charaFace B 4]
+
+＠Hektor
+(Phew. Looks like getting that earlier rampage out of her system helped her calm down a bit...)
+[k]
+
+[messageOff]
+[charaFace B 5]
+[wt 1.0]
+[charaFace B 0]
+
+[bgm BGM_EVENT_1 0.1]
+
+＠Hektor
+Okay, so if you remember who I am,[sr]you should remember this place too, right?
+[k]
+
+＠Hektor
+This is Troy, my home.[sr]I'd give anything to keep it safe.
+[k]
+
+＠Hektor
+And this is the battlefield where you[sr]and your Amazons came to help us.
+[k]
+
+
+[charaFace A 4]
+
+＠Penthesilea
+Hm? But... That's strange... What is this feeling nagging at the back of my mind...?
+[k]
+
+[charaFace B 1]
+
+＠Hektor
+Hey now, no spacing out on the battlefield, all right?
+[k]
+
+＠Hektor
+Where else're you gonna find Troy's crown prince fighting for his homeland?
+[k]
+
+[charaFace A 3]
+
+＠Penthesilea
+Hmm... Yes, I suppose that makes sense...
+[k]
+
+[charaFace A 0]
+
+
+＠Penthesilea
+Yes, I remember now. I made a terrible mistake once, and so came to save Troy, hoping to atone.
+[k]
+
+[charaFace B 0]
+
+＠Hektor
+Never mind the backstory. Didn't you also think this would be a perfect chance to demonstrate the Amazons' strength and bravery to the world?
+[k]
+
+＠Hektor
+That's why you brought along your finest warriors, isn't it?
+[k]
+
+[charaFace A 0]
+
+[bgmStop BGM_EVENT_1 0.8]
+
+＠Penthesilea
+...Yes, I did. Are they here? What am I saying,[sr]of course they are. I brought them.
+[k]
+
+[charaFace B 1]
+
+＠Hektor
+You bet they're here. Da Vinci went all out making sure this simulation was as realistic as poss[line 2]
+[k]
+
+＠Hektor
+I mean, never mind.
+[k]
+
+？1：They should come if you call for them.
+？2：Let's try gathering them here.
+？！
+
+[charaFace A 0]
+
+＠Penthesilea
+Agreed.
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Penthesilea
+Heed my call, my valiant Amazons![sr]Your queen, Penthesilea, is here!
+[k]
+
+＠Penthesilea
+Chlonie! Polemussa! Derinoe![sr]Euandra, Antandra, Bremussa!
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad59]
+[seVolume ad59 0 0.1]
+[seVolume ad59 0.5 0.6]
+[wt 0.7]
+[seStop ad59 0.2]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth E 0]
+[charaDepth F 0]
+[charaDepth G 1]
+
+[charaFace E 0]
+[charaFadein E 0.4 -288,0]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[charaFace F 0]
+[charaFadein F 0.4 288,0]
+[wt 0.6]
+
+＠Amazon
+Yes, my queen!
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Penthesilea
+Hippothoe! Where are Harmotoe,[sr]Alchibie, and Antibrotae!?
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.2]
+
+＠C：Amazon
+We are right here, Your Majesty!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Penthesilea
+What of Derimachae, or Thermodosa!?
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaFace D 0]
+[charaFadein D 0.4 0]
+[charaFace H 0]
+[charaFadein H 0.4 2]
+[wt 0.6]
+
+＠D：Amazon
+We are at your command, Your Majesty! Say the word,[sr]and our spears will run red with our enemies' blood!
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+
+＠Penthesilea
+There is something about your faces and equipment that seems...different, somehow. Well, I suppose that is to be expected after marching all the way here.
+[k]
+
+[charaFace A 1]
+
+＠Penthesilea
+They have responded to my call,[sr]and so can only be my subordinates!
+[k]
+
+[charaFace A 0]
+
+
+＠Penthesilea
+Very well then... Attention, my twelve[sr]elite warriors. Saviors of Troy.
+[k]
+
+＠Penthesilea
+The time for battle is at hand.
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+
+＠Hektor
+Oh, just so we're all on the same page, the enemies are the guys coming in from over there.
+[k]
+
+＠Penthesilea
+Hektor, I have no objection to you or your army joining the battle, but do not interfere with us.
+[k]
+
+＠Penthesilea
+If you or any of your men come near us,[sr]I cannot promise you will survive doing so.
+[k]
+
+[charaFace B 4]
+
+＠Hektor
+Yikes. Good thing I warned them ahead of time.
+[k]
+
+[charaFace B 1]
+
+＠Hektor
+Besides, this old man has never been one to stay near the front lines, and that's not about to change now.
+[k]
+
+[charaFace B 0]
+
+＠Hektor
+(Gotta say, though...it looks like she's really not seeing anything besides the enemies right in front of her. Ah well, guess this is a good chance to get her warmed up.)
+[k]
+
+[bgmStop BGM_EVENT_62 0.5]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Hektor
+Okay Master, let's start with Phase One.
+[k]
+
+？1：Let's all make sure we don't get hurt!
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Penthesilea
+My Amazons![sr]We are the proud, fearless descendants of Ares.
+[k]
+
+＠Penthesilea
+We know neither fear nor defeat on the battlefield!
+[k]
+
+＠Penthesilea
+We know only victory, and the blood of our foes. Our enemies will know only fear and despair as they die!
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaScale A 1.4]
+[charaFadein A 0.1 0,60]
+[effect bit_talk_voice01 -10,80]
+[shake 0.05 2 4 0.7]
+
+＠Penthesilea
+[f large][messageShake 0.05 7 5 1.0]Your queen commands you: Roar!
+[k]
+
+
+[messageOff]
+[wipeout rightToLeft 0.3 1]
+[wait wipe]
+[effectStop bit_talk_voice01]
+[charaFadeout A 0.1]
+[wt 0.1]
+[wipein rightToLeft 0.4 1]
+[wait wipe]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFadein E 0.4 -288,0]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[charaFace F 0]
+[charaFadein F 0.4 288,0]
+[wt 0.6]
+[effect bit_talk_voice01]
+[wt 2.0]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[effectStop bit_talk_voice01]
+[soundStopAll]
+[end]
+
+
+
+

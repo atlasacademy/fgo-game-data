@@ -1,0 +1,431 @@
+
+
+
+＄91-60-08-02-4-1
+
+[soundStopAll]
+
+[charaSet A 6008000 1 Cleopatra]
+[charaSet B 1013001 1 Caesar]
+[charaSet C 5012001 1 Nitocris]
+
+[charaSet D 1001000 1 Effect]
+[charaDepth D 1]
+
+[charaSet E 98115000 1 "Caesarion's Voice"]
+
+
+[scene 21101]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut D 1]
+
+[se ad33]
+[effect bit_talk_kengekiall02]
+[wt 1.0]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+[cueSe Battle bac216]
+[charaEffect D bit_talk_radiallight01]
+[charaEffect A bit_talk_valentine_brilliant]
+[wt 1.0]
+[cueSeStop Battle bac216 0.1]
+
+
+[charaMoveScale A 1.1 0.2]
+[charaMove A 0,20 0.2]
+[se ad73]
+[wt 0.3]
+
+[charaFadeout A 0.1]
+[charaPut D 1200,1200]
+[wt 0.5]
+
+
+[fadeout white 0.7]
+[wait fade]
+
+[cueSe Battle bac215]
+
+[charaScale A 1.0]
+
+[charaFadeout A 0.1]
+[charaEffectStop D bit_talk_radiallight01]
+[charaEffectStop A bit_talk_valentine_brilliant]
+[wt 1.7]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+[fadein white 0.5]
+[wait fade]
+
+[wt 0.3]
+[se ad7]
+[charaMoveReturn B 0,5 0.2]
+[charaMoveScale B 0.95 0.2]
+[wt 0.2]
+
+
+[charaFace B 2]
+＠Caesar
+I-impossible...!
+[k]
+
+
+＠Caesar
+I can't believe you saw through my golden sword!
+[k]
+
+
+＠Caesar
+Hmm, maybe you do have a point. As impressive as my swordsmanship is, my body does limit how I can employ it.
+[k]
+
+[messageOff]
+[wt 0.3]
+[bgmStop BGM_EVENT_3 0.7]
+
+[charaFace B 1]
+[wt 1.0]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaEffect B bit_talk_06]
+[wt 1.0]
+
+＠Caesar
+Well done, Cleopatra.[sr]And, Master? If I may make one last request?
+[k]
+
+[charaFace B 4]
+
+
+＠Caesar
+Please...take care of Cleopatra in my absence!
+[k]
+
+＠Caesar
+Ahh... Wait for me, Caesarion![sr]I'm coming to join you, my son!
+[k]
+
+
+＠Caesarion's Voice
+(Uh, that's okay. I'm fine on my own. Really.)
+[k]
+
+[messageOff]
+[charaTalk B]
+
+
+[bgmStop BGM_EVENT_70 2.8]
+
+[se ad52]
+[charaSpecialEffect B flashErasure 1 1.7]
+[wait charaSpecialEffect B]
+[charaEffectStop B bit_talk_06]
+[wt 0.7]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠Cleopatra
+Wha[line 2]
+[k]
+
+[bgm BGM_EVENT_41 0.1]
+
+＠Cleopatra
+[messageShake 0.05 5 5 0.5]
+N-no! No, no, no, no! Caesar is...g-gone...?[wt 0.3][charaFace A 4][sr]This can't be happening...
+[k]
+
+＠Cleopatra
+Ahh...! Ahh, ahhh...![sr]I... I...!
+[k]
+
+＠Cleopatra
+What have I done!?
+[k]
+
+
+[charaFace A 2]
+＠Cleopatra
+[messageShake 0.01 5 5 0.7]
+Caesaaaaaaaaar!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 506,0]
+
+[bgmStop BGM_EVENT_41 0.1]
+
+＠Nitocris
+...[sr]...
+[k]
+
+[se ad173]
+[charaMove C 0,0 1.2]
+[wait charaMove]
+[seStop ad173 0.1]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaFace C 0]
+＠Nitocris
+So, um, it turns out I've been here all along, but never mind that. I don't think you have any reason to worry. He didn't disappear; he just changed into his spirit form.
+[k]
+
+[charaFace C 4]
+＠Nitocris
+Besides, this is the simulator. Nobody disappears in here unless there's a really, really serious accident.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠Cleopatra
+What!? B-but, but he was shimmering and everything!
+[k]
+
+[charaFace A 4]
+＠Cleopatra
+I thought the only time Heroic Spirits shimmer like that is when their Spirit Core has been destroyed and they're about to completely disappear...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+
+＠Nitocris
+Well, um, I'm guessing that's because he also has the kind of sparkling charm that you do?
+[k]
+
+[charaFace C 4]
+＠Nitocris
+Maybe just spending so much time with you was enough for it to rub off on him...? Or something like that.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠Cleopatra
+!
+[k]
+
+[charaFace A 4]
+＠Cleopatra
+I don't believe it...[sr]Then, this means...!
+[k]
+
+？1：He ran off on you again.
+？2：Sorry, Cleopatra! It sucks, I know.
+
+？！
+
+[charaFace A 2]
+＠Cleopatra
+[messageShake 0.05 5 5 0.7]
+Grrrrrrrrr, I can't believe it! He was shimmering[sr]so much I just assumed he was truly disappearing!
+[k]
+
+
+[messageOff]
+
+[wt 0.5]
+
+[bgmStop BGM_EVENT_7 0.7]
+[charaFace A 1]
+
+[wt 1.5]
+
+[bgm BGM_EVENT_6 0.1]
+
+[charaFace A 0]
+＠Cleopatra
+...Well, there's no point crying about it now. Besides, pharaohs don't get discouraged. Devastatingly depressed at times, maybe, but not discouraged. Besides, that was a long time ago.
+[k]
+
+＠Cleopatra
+Anyway, Caesar was right about at least one thing.
+[k]
+
+＠Cleopatra
+Master... My very first secretary.
+[k]
+
+[charaFace A 2]
+
+
+＠Cleopatra
+Now that I've promoted you to such an esteemed position, I would be a failure as a pharaoh if I didn't ensure you enjoyed each and every day you spent serving me.
+[k]
+
+[charaFace A 3]
+＠Cleopatra
+Wouldn't you agree? Yes, of course you would.[sr]No need to answer that!
+[k]
+
+[charaFace A 2]
+＠Cleopatra
+I want you to feel overwhelming joy and pride in being my secretary, and in having summoned me...
+[k]
+
+[charaFace A 0]
+＠Cleopatra
+...So it's all right if you hold off on completely fulfilling my wish until you do.
+[k]
+
+？1：Does that mean you're okay with Caesar not losing weight then?
+
+？！
+
+[messageOff]
+[wt 0.1]
+[bgmStop BGM_EVENT_6 0.7]
+[charaFace A 1]
+[wt 1.0]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠Cleopatra
+Absolutely not!
+[k]
+
+＠Cleopatra
+That is an entirely separate issue!
+[k]
+
+[charaFace A 2]
+＠Cleopatra
+Now then, let us go for a walk on this beach until the sun has set! In fact, we should call Mash and have her join us as well. Oh, and Pharaoh Nitocris!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace A 0]
+[charaFadein A 0.1 2]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+
+＠Nitocris
+Yes?
+[k]
+
+
+[charaFace A 5]
+＠Cleopatra
+I would like to demonstrate the glory of the Double Pharaoh sparkle to my secretary. I trust you don't mind!
+[k]
+
+[charaFace C 8]
+＠Nitocris
+Ah... Must I?
+[k]
+
+[charaFace A 2]
+＠Cleopatra
+I. Trust. You. Don't. Mind?
+[k]
+
+[charaFace C 2]
+＠Nitocris
+(Sigh) Fine, fine. If you insist.
+[k]
+
+＠Cleopatra
+Wonderful! I knew you would understand,[sr]queen of the heavens!
+[k]
+
+[charaFace A 1]
+＠Cleopatra
+Very well then...first, I'll need to change into a swimsuit. The finest swimsuit ever made that is sure to suit me per[line 2]
+[k]
+
+[charaFace C 1]
+＠Nitocris
+Oh, in that case, I have an idea. Why don't you try this Medjed outfit made with a new kind of[line 2]
+[k]
+
+[charaFace A 2]
+
+
+＠Cleopatra
+No, thank you! I don't have the courage to wear something imitating Lord Medjed!
+[k]
+
+[charaFace A 4]
+
+
+＠Cleopatra
+At this moment...
+[k]
+
+[charaFace C 4]
+[charaShake C 0.05 3 3 0.3]
+＠Nitocris
+[se ad119]
+(Shock)
+[k]
+
+[charaFace A 2]
+
+＠Cleopatra
+...I'm looking for something on the cutting edge of fashion, such as an outfit from Paris Fashion Week!
+[k]
+
+＠Cleopatra
+I always shine bright in all my endeavors,[sr]and that's not about to change anytime soon!
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠Cleopatra
+Now, let us all be on our way!
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
