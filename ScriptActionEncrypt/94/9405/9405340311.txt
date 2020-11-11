@@ -1,0 +1,593 @@
+
+＄94-05-34-03-1-1
+
+[soundStopAll]
+
+[charaSet A 4037000 1 ネモ]
+[charaSet B 1098181910 1 ネモ・マリーン]
+[charaSet C 1098197710 1 楊貴妃]
+[charaSet D 1098197800 1 マシュ]
+[charaSet E 1098176810 1 刑部姫]
+[charaSet F 25006000 1 ゴッホ]
+[charaSet G 1098182110 1 ネモ・プロフェッサー]
+[charaSet H 1098182210 1 ネモ・エンジン]
+[charaSet I 1098182310 1 ネモ・ベーカリー]
+[charaSet V 98115000 1 通信用]
+[charaSet J 98115000 1 通信用]
+[charaSet K 98115000 1 通信用]
+[charaPut J 1200,1200]
+[charaPut K 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+[charaEffect K bit_talk_10_LowLevel]
+
+[scene 99002]
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+[wt 0.2]
+
+？1：キャプテン・ネモ！
+？2：もう限界だ、撤収を！
+？！
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠ネモ
+マリーンたち、撤退だ！　命綱を巻いて！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠ネモ・マリーン
+んぐぐぐぐぐ……待って、リールが詰まってるー！！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠ネモ
+何だって！？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaEffect V bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+＠楊貴妃
+こちら現地の[#楊貴妃:ソナー]！[r]命綱まだですか！？
+[k]
+
+＠楊貴妃
+２－７－５から濃密な遊泳音！　増援が群れで来ます！[r]早いところ引っ張って～～！！
+[k]
+
+？1：マシュ、もう少し持ちこたえて！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠マシュ
+イエス、マスター！　しかし、限界が近いです……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+[wt 0.2]
+[se ad15]
+
+？2：楊貴妃、自力での移動は！？
+
+[charaFace C 10]
+＠楊貴妃
+[#不:ぶ]～[#可:くぁ]～[#能:のん]～！！[r]下手に動くと彼方まで吹っ飛ばされそうです！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+[wt 0.2]
+[se ad15]
+
+？！
+
+[bgm BGM_EVENT_80 0.4 0.5]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠ネモ
+いちおう提言するよ、マスター。
+[k]
+
+＠ネモ
+[#彼女らを見捨てて宝具攻撃をすれば]、[r]少なくとも僕らは、助かるかもしれない。
+[k]
+
+？1：それは
+？2：絶対にしない
+？！
+
+＠ネモ
+そうか。キミの意志は再確認した。[r]でも、このまま行けばそれが最終手段になる。
+[k]
+
+[messageOff]
+[se ad13]
+[wt 0.5]
+
+[bgm BGM_EVENT_80 0.4 1.0]
+
+[charaFace A 2]
+＠ネモ
+敵増援到着まで推定70秒！[r]マスター、みんな、頭をひねって！！
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_80 0.3 0.2]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaSet C 25004001 1 楊貴妃]
+[charaSet D 8001600 1 マシュ]
+[scene 98400]
+[wt 0.4]
+[bgm BGM_EVENT_80 0.3 0.6]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠マシュ
+ぐっうぅうううう……！　これ以上は……もちません！！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+＠刑部姫
+いやあああ～～も～ダメだああぁ～～～～！！[charaShake E 0.03 2 2 1.0][r]やっぱり大人しくひきこもっとくんだったぁ～～～！！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠ゴッホ
+ウフフ……ウフフ……みじかい人生でした……[r]ゴッホうれしい……退去する前にみなさまに会えて……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+＠楊貴妃
+諦めちゃダメ～～～～～！！！[messageShake 0.04 5 5 0.5]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+＠ゴッホ
+なーんちゃって、ウフフ、ちょっと早いですよね。[r]ゴッホジョーク……エヘヘ……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 22]
+[charaFadein C 0.1 1]
+＠楊貴妃
+存外つよいぞこの子！？[messageShake 0.03 3 3 0.4][r]その余裕、もしかして解決策をお持ちですか！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠ゴッホ
+みなさま、[#目を瞑って]。いいですか？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠楊貴妃
+え？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+＠ゴッホ
+[#宝具を解放します]。[r]ただ、何が起こるかゴッホには分からないのです。
+[k]
+
+[charaFace F 4]
+＠ゴッホ
+これは、ゴッホがかなりつらかった時期に描いた絵だし、[r]ゴッホはいま、フォーリナーだし……
+[k]
+
+[charaFace F 9]
+＠ゴッホ
+ただ、[#解放すればここを乗り切れる]という……[r]確信が……エヘヘ、あります……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠刑部姫
+ぜひ！！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠楊貴妃
+やってください！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠マシュ
+お願いします、ゴッホさん！！
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_80 0.3 0.2]
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[flashin once 0.1 0.1 FF000080 FF000000]
+[charaFadeout D 0.1]
+[scene 99002]
+[wt 0.4]
+[bgm BGM_EVENT_80 0.3 1.0]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[wt 0.4]
+[flashin loop 0.6 0.8 FF000080 FF000000]
+[wt 1.4]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠ネモ
+なに、次は！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠ネモ・プロフェッサー
+はい電算室、突如あらゆる計器類がいかれました！
+[k]
+
+＠ネモ・プロフェッサー
+虚数空間とはいえ通常ありえない事態ですので！[r][#固有結界レベルの宝具が発動した]と推測します！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠ネモ
+現場の誰かが宝具を使った！？　しかも未知の！？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 0.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+[flashOff]
+[wt 0.7]
+
+[charaPut V 1]
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠ネモ・プロフェッサー
+あ、待ってくださいこれは何でしょーう？[r]あー、はい、んー？　はい、
+[k]
+
+[charaFace G 3]
+＠ネモ・プロフェッサー
+計器類復旧……そして、うん、うん……[r]多分、どうにかなっちゃったみたいです……？
+[k]
+
+[charaFace G 0]
+＠ネモ・プロフェッサー
+白兵戦チーム、安全圏まで離脱を確認しましたー。[r]マスター、キャプテン、やるなら今かとー。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.7]
+
+？1：ネモ！
+？2：ここが勝負どころだ、[&やろう:やっちゃおう]！
+？！
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaFace A 7]
+＠ネモ
+ここで前に出る、というんだね。[r]勇敢な判断だ、司令代理。
+[k]
+
+[charaFace A 2]
+＠ネモ
+総員に伝達！[r]本艦はこれより、[#宝具攻撃を敢行する]！
+[k]
+
+＠ネモ
+当然、現状では艦体が持たない！[r]リソースを限界まで使って対衝撃術式を展開せよ！
+[k]
+
+＠ネモ
+目標は０－６－５の敵艦！[r]余波によって敵増援をも追い散らす！！
+[k]
+
+＠ネモ
+気合いをいれろ！[r]一撃で破壊できなければ反撃で当艦は撃沈されるぞ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+＠ネモ・エンジン
+気合いなんざいつでも満タンだっつーの！[r]電算室、[#機関部:こっち]はきっちり防ぎきれんだろーな！？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠ネモ・プロフェッサー
+はい無理ー、バラバラはギリ防ぐのでダメコンよろしく。[r]機関室のこわい人、踊れば許してくれます？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+＠ネモ・エンジン
+許すかバカ！　ギリ防御すらしくじったら、[r]焼けた魔力炉の残骸の上で踊らせてやるからな！！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠ネモ・マリーン
+うわー大変だー！[r]プロフェッサーが海鮮バーベキューになっちゃうよー！
+[k]
+
+？1：これ、本質的には
+？2：キャプテンの一人芝居なんだよね
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠ネモ
+それだけ僕も内心じゃ焦ってる、って話さ。[r]今の気分は、そうだな[line 3]セリフにしていいかい？
+[k]
+
+？1：聞きたい！
+？2：言って言って！
+？！
+
+[charaFace A 2]
+＠ネモ
+“よーし！[r][f small]  [f -]こうなったら当たって砕けろ！”
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠ネモ・マリーン
+だよねー！　海の男はそうでなくっちゃ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠ネモ
+トリトンエンジン、スタート！[r]各セクション、最終確認！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠ネモ・マリーン
+もちろん、照準よろし！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠ネモ・プロフェッサー
+目標までの距離と予測攻撃、計算完了です～！[r]魔力障壁、展開しまーす！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+＠ネモ・エンジン
+第一、第二エンジン、惚れ惚れする回転だ！[r]臨界までブン回すぜ！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 3]
+[charaFadein I 0.1 1]
+＠ネモ・ベーカリー
+ん～～、おやつにプリンつけていいかしら？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth B 2]
+[charaDepth H 3]
+[charaDepth A 4]
+[charaDepth G 1]
+[charaFace B 2]
+[charaFace H 2]
+[charaFace A 2]
+[charaFace G 2]
+[charaPut V -450,0]
+[charaPut J -225,0]
+[charaPut K 500,0]
+[charaFadein B 0.1 -375,0]
+[charaFadein H 0.1 -125,0]
+[charaFadein A 0.1 125,0]
+[charaFadein G 0.1 375,0]
+＠ネモ全員
+許可する！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout H 0.1]
+[charaFadeout A 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+[charaPut J 1200,1200]
+[charaPut K 1200,1200]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[se ad39]
+[charaEffect A bit_talk_36]
+＠ネモ
+いくぞ、宝具展開！[r]海を荒らす者を、キャプテン・ネモは許さない！
+[k]
+
+＠ネモ
+『[#我は征く、鸚鵡貝の大衝角:グ 　レ 　ー 　ト 　ラ 　ム 　・ 　ノ 　ー 　チ 　ラ 　ス]』！！
+[k]
+
+[messageOff]
+[fadeout white 2.0]
+[bgmStop BGM_EVENT_82 2.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaEffectStop A bit_talk_36]
+[wt 0.7]
+[se ad226]
+[se ad609]
+[seVolume ad609 0 0.6]
+[wt 3.5]
+
+[scene 10000]
+[fadein white 1.0]
+[wait fade]
+
+[fadeout black 0.1]
+[wait fade]
+[wt 0.7]
+[soundStopAll]
+[end]

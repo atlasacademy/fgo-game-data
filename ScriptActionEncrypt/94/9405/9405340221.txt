@@ -1,0 +1,250 @@
+
+＄94-05-34-02-2-1
+
+[soundStopAll]
+[charaSet A 8001600 1 マシュ]
+[charaSet B 1098197700 1 楊貴妃]
+[charaSet C 6024000 1 スカサハ＝スカディ]
+[charaSet D 1098176810 1 刑部姫]
+[charaSet E 4037000 1 ネモ]
+[charaSet F 25006000 1 ？？？]
+[charaSet G 98115000 1 通信用]
+
+[scene 98300]
+[fadein black 2.0]
+[wait fade]
+
+[wt 0.7]
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+見えます！　一定距離の虚数性エネミー、および、[r]海溝めいた壮観な地形も、視認可能です！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaEffect G bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+＠楊貴妃
+ひとまず成功と。ただ、私が音を拾ってない敵は[r]映像化できてないので、頼り過ぎにはご注意を！
+[k]
+
+＠楊貴妃
+あと、地形は戦闘音の反響から推定した仮のもの。[r]ゆくゆくは海図など参考に改善していくとしましょう。
+[k]
+
+[charaFace B 2]
+＠楊貴妃
+さて、一通り片付けがお済みでしたら救助作業を！[r]さきほどから声が弱くなってます！
+[k]
+
+＠楊貴妃
+たぶん、左側外殻に取り付いてるけど、手が離れたら……[r]その前に、なんとか頑張って、マシュさん～！！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+[charaShake C 0.03 2 0 1.0]
+＠スカサハ＝スカディ
+うう～、この[#出自のわからぬ朱槍:ゲ　　イ　　・　　ボ　　ル　　ク　　？]を[r]そっと差し出して掴ませて……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠刑部姫
+この女神様ぽんこつだー！　しょーがない、[r]レスキュー隊を折るから、マシュちゃん視認発見して！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠マシュ
+了解……[twt 0.4][charaFace A 2]あっ、おられました！！　あそこです！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠刑部姫
+近眼にはつらい！　先導して！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠マシュ
+はい！！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad2]
+[seVolume ad2 0 0]
+[seVolume ad2 0.7 0.15]
+[effect bit_talk_41]
+[cameraMove 1.2 0,0 1.1]
+[shake 0.03 2 3 2.2]
+[wt 2.2]
+[seStop ad2 1.0]
+[shake 0.03 0 2 0]
+[effectStop bit_talk_41]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠刑部姫
+見えた！　行けっ千代紙レスキュー隊！！[r]急造宝具、『[#白鷺城・海猿出動:はくろじょう・シーモンキーズ]』！！
+[k]
+
+[messageOff]
+[charaEffect D bit_talk_36]
+[se ad39]
+[wt 1.5]
+
+[bgm BGM_EVENT_80 0.4 0.5]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[cameraMove 0.1 0,0 1.0]
+[shakeStop]
+[charaFadeout D 0.1]
+[charaEffectDestroy D bit_talk_36]
+[charaSet A 1098197800 1 マシュ]
+[scene 99002]
+[wt 0.7]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[wt 0.2]
+[charaPut G 1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠マシュ
+『[line 2]やった、やりました！　救助に成功！』
+[k]
+
+？1：シーモンキーはたぶん違うけど
+？2：やった！
+
+？！
+
+[charaFace A 2]
+＠マシュ
+『救助部隊、帰投します！[r]　キャプテン・ネモ、エアロック操作をお願いします！』
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ネモ
+了解。[r]本艦はお客様を丁重にお迎えする。
+[k]
+
+[charaFace E 6]
+＠ネモ
+……なんだろうね、[%1]。
+[k]
+
+＠ネモ
+ド級の異常事態なのに、[r]不謹慎にもワクワクしてる自分がいるみたいだ。
+[k]
+
+＠ネモ
+死地と化した虚数の海の、漂流者。[r]果たしてどんな人物なんだろう？
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout E 0.1]
+[scene 10000]
+[wt 0.7]
+[wt 1.0]
+
+＠マシュ
+かくして『漂流者』を無事救助したわたしたちでしたが、
+[k]
+
+＠マシュ
+まさか、『漂流者』が『あの方』だなんて、[r]この時点では夢にも思っていませんでした……
+[k]
+
+[messageOff]
+[scene 99002]
+[wt 1.5]
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠？？？
+ウフフ……エヘヘ……
+[k]
+
+＠？？？
+よかったです、あのまま気付かれずに虚数のもくずと[r]消えるかと……もくず……もずく……似てるウフフ……
+[k]
+
+＠？？？
+あっこれすごい美味しいですね……エヘヘ……[r]人の優しさ……思いやり……ウフフ……人間好き……
+[k]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.4 1]
+[wt 1.0]
+＠？？？
+あ……申し遅れました……ウフフ、ごめんなさい！
+[k]
+
+＠？？？
+[#サーヴァント]・[#フォーリナー]。[r]真名は、[#見ての通り]、[#ゴッホです]！　エヘヘ！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
