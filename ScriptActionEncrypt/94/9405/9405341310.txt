@@ -1,0 +1,514 @@
+
+＄94-05-34-13-1-0
+
+
+[soundStopAll]
+[charaSet A 8001600 1 マシュ]
+[charaSet B 4037000 1 ネモ]
+[charaSet C 25004001 1 楊貴妃]
+[charaSet D 7004001 1 フラン]
+[charaSet E 1098182100 1 ネモ・プロフェッサー]
+[charaSet F 5039000 1 スカサハ＝スカディ]
+[charaSet G 25006000 1 ゴッホ]
+[charaSet H 1098176810 1 刑部姫]
+
+[scene 99002]
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠マシュ
+ついに、召喚に必要なリソースが溜まりました！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ネモ
+求められるサーヴァントは……
+[k]
+
+？1：巨大な近接宝具を振るう
+？2：超攻撃型のサーヴァント！
+？！
+
+[charaFace B 4]
+＠ネモ
+……バーサーカー、かなあ……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+＠C：楊貴妃Ａ
+船長ってバーサーカーは苦手です？[r]かわいいものだと思いますけど？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ネモ
+そうかなあ……だいたい[#意思疎通:い し そ つ う]困難で馬鹿力だから、[r]ふつうバーサーカーといったら構えると思うけど。
+[k]
+
+？1：誰が来てもきっと大丈夫
+？2：心配ない、やろう
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_82 1.0]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+[se ad153]
+[seVolume ad153 0 0]
+[seVolume ad153 0.7 0.2]
+[effect bit_talk_summon]
+[wt 1.0]
+[se ad632]
+[seStop ad632 5.0]
+[wt 1.0]
+
+[seStop ad632 1.0]
+[seStop ad153 1.0]
+[se ad574]
+[fadeMove white 1.0 0.6]
+[wt 2.0]
+
+[se su3]
+[fadeMove white 1.0 0.0]
+[effectStop bit_talk_summon]
+[wt 1.0]
+
+[wt 4.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 1.0]
+＠フラン
+ウ～……ウ、ウ～……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠ネモ
+やった！　狂化ランク低めの子だ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ネモ・プロフェッサー
+うーん、なるほどしかし、鈍器ですか……[r]装甲の破壊のために、かなりアレンジが要るかも……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠フラン
+ウ～……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace D 0]
+[charaFace A 0]
+[charaFadein D 0.1 0]
+[charaFadein A 0.1 2]
+＠マシュ
+フランさん、じつはこれこれこういう事情でして……
+[k]
+
+＠フラン
+ウ～…………ア～…………
+[k]
+
+＠フラン
+あつく…………なる…………？
+[k]
+
+[charaFace A 18]
+＠マシュ
+はっ！　そうです、フランさんもまた最適解！[r]スカサハ＝スカディさん、いらっしゃいますか！？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad8]
+[wt 0.7]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.4 1]
+＠スカサハ＝スカディ
+無論だ。さあフランケンシュタインよ、[r]この水着を着て熱くなるがいい！
+[k]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.4]
+
+
+[masterBranch _Male _Female]
+
+[label _Male]
+[se bas16]
+[effect bit_talk_CommandMantra_05 0,64]
+[wt 1.0]
+[branch _branchEnd]
+
+[label _Female]
+[se bas16]
+[effect bit_talk_CommandMantra_08 0,64]
+[wt 1.0]
+[branch _branchEnd]
+
+[label _branchEnd]
+[fadeout white 0.4]
+[wait fade]
+[effectDestroy bit_talk_CommandMantra_05]
+[effectDestroy bit_talk_CommandMantra_08]
+[charaFadeout D 0.1]
+[charaSet D 1031001 1 フラン]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[wt 0.1]
+[fadein white 0.4]
+[wait fade]
+
+
+[bgm BGM_EVENT_62 0.1]
+
+＠フラン
+う～、あつくないけど、あつくやる。
+[k]
+
+[charaFace D 5]
+＠フラン
+[#乙女の貞節:ぶらいだる・ぶれいど]ー。[r]これで、くじらは、くしやきだ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠ネモ・プロフェッサー
+こ、これは、まさに超大型の斬撃兵器……！？[r]装甲を貫通し内部に打撃を与えるには最適かとー！
+[k]
+
+[charaFace E 0]
+＠ネモ・プロフェッサー
+でも、どう考えても通常の[r]携行兵器運用思想じゃないですね？
+[k]
+
+[charaFace E 1]
+＠ネモ・プロフェッサー
+フフ、フフフ……明らかに天才なのにお馬鹿な[r]科学者と見ました……今度紹介してくださいぃー……
+[k]
+
+？1：人類最高の頭脳ではある
+？2：（会わせてはいけないのだけはわかった）
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_62 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠フラン
+うー、う？　しらないひとだらけだ。
+[k]
+
+＠フラン
+あなた、だれ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+
+[charaTalk C]
+[charaFace C 21]
+[charaFace D 0]
+[charaFadein C 0.4 0]
+[charaFadein D 0.1 2]
+＠C：楊貴妃Ｂ
+こんにちは！　私、楊貴妃っていいます！[r]ユゥユゥって呼んでくださっても……
+[k]
+
+＠C：楊貴妃Ｂ
+あっ、ちゃんと背筋を伸ばされると[r]けっこう背が高いですね、フランさん……
+[k]
+
+[charaFace D 8]
+＠フラン
+あー。ちゃいな。ちっちゃいな。かわいい。よろしく。
+[k]
+
+[charaFace C 6]
+＠C：楊貴妃Ｂ
+うわぁ、フランさんこそ、なんて可愛らしい……！[r]よろしくです！
+[k]
+
+[charaFace D 0]
+＠フラン
+うー。で、こっちは？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.4 0]
+＠ゴッホ
+ウフフ……ゴッホは、ゴッホです……
+[k]
+
+＠フラン
+ごっほ。
+[k]
+
+＠フラン
+うー？
+[k]
+
+[charaFace G 7]
+＠ゴッホ
+ウフフ……ウフフ……
+[k]
+
+[bgmStop BGM_EVENT_77 0.7]
+
+[charaFace D 6]
+＠フラン
+ごっほっほ。
+[k]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaFace G 9]
+＠ゴッホ
+プフフ……ナイスジョーク……
+[k]
+
+[charaFace D 8]
+＠フラン
+なんか、あう！　[#あなたもかいぶつ]？
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠ネモ
+！
+[k]
+
+？1：せっかくだから！
+？2：なかよくしてあげて！？
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace G 9]
+[charaFace D 0]
+[charaFadein G 0.1 0]
+[charaFadein D 0.1 2]
+＠フラン
+いっしょにごろごろするー？
+[k]
+
+[charaFace G 7]
+＠ゴッホ
+それなら、モデルになっていただけますか……？[r]エヘヘ、ひまわりみたい。いい絵になりそうです……
+[k]
+
+＠フラン
+いーよ。いこー。
+[k]
+
+[messageOff]
+[charaFadeout G 0.4]
+[charaFadeout D 0.4]
+[wt 0.4]
+[se ad8]
+[wt 1.5]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠H：刑部姫Ｂ
+……あの～、もしかしてゴッホ先生って、[r]正体に関する何らかの嫌疑がかかってたりする……？[bgmStop BGM_EVENT_94 0.4]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFace H 0]
+[charaFadein C 0.1 0]
+[charaFadein H 0.1 2]
+＠C：楊貴妃Ｂ
+はい、おっきーさん！[r]空気を読んで食堂に参りましょうか、おっきーさん！
+[k]
+
+＠C：楊貴妃Ｂ
+スカディ[#老師:せんせい]がライチ味ガリガリバーを[r]再現してくれたとか！　食堂へゴーゴーです！
+[k]
+
+[charaFace H 9]
+＠H：刑部姫Ｂ
+ギャー失言したあああ！　マーちゃん捨てないでええ！[charaShake H 0.04 3 3 0.7]
+[k]
+
+[messageOff]
+[charaFadeout C 0.4]
+[charaFadeout H 0.4]
+[wt 0.4]
+[se ad8]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+＠C：楊貴妃Ａ
+……おっきーさん、どんまい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠H：刑部姫Ａ
+自分の分身の失言と弁解を至近距離で聞かされるとか、[r]そんな拷問ほかにある……？
+[k]
+
+[charaFace H 5]
+＠H：刑部姫Ａ
+ええい、[#名誉挽回:めいよばんかい]ってわけじゃないけど、報告！[r]レーダーに敵影アリ！　またあの中型エネミーっぽいよ！[bgm BGM_EVENT_80 0.1]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 22]
+[charaFadein C 0.1 1]
+＠C：楊貴妃Ａ
+おっと会話に気をとられました！　方角は２－１－３！[r][#探査音:ピンガー]もガンガン来てますね！
+[k]
+
+？1：あれ？　これって
+？2：さっそくフランの出番では
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[se adm48]
+[seVolume adm48 0 0.1]
+[seVolume adm48 1.0 1.0]
+[wt 0.3]
+
+[se ad8]
+[wt 0.7]
+[seStop adm48 1.0]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.4 1]
+＠ゴッホ
+ハァハァ、フランちゃんをお連れしました……！
+[k]
+
+＠ゴッホ
+横になったら一瞬で山のごとく動かなくなったため、[r]台車にのせて……ゴッホ機転……あるいはゴッホ機動……
+[k]
+
+＠フラン
+だるい。めどい。えあこんは『[#きょう:強]』がいい。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠マシュ
+ゆ、愉快なコンビが誕生しています！[r]しかしここはひとつ、お力をお貸しください……！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]
