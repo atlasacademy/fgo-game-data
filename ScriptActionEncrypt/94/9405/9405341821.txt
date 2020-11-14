@@ -1,0 +1,88 @@
+
+＄94-05-34-18-2-1
+
+[soundStopAll]
+[charaSet A 4037000 1 ネモ]
+[charaSet B 1098182000 1 ネモ・ナース]
+[charaSet C 25006001 1 ゴッホ]
+[charaSet D 3029001 1 源頼光]
+
+[scene 98200]
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk C]
+[charaFace C 19]
+[charaFadein C 0.1 1]
+＠ゴッホ
+……エヘヘ……痛い…………[r]痛いの…………すき………………
+[k]
+
+[messageOff]
+[charaFadeout C 0.4]
+[wt 0.3]
+[se ad144]
+[wt 0.7]
+
+？1：キャプテン、ナースさんを呼んで
+？2：傷をふさごう
+？！
+
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠源頼光
+医務室ならここから近い……[r]連れて参ります、マスター！
+[k]
+
+[messageOff]
+[se ad73]
+[charaEffect D bit_talk_quickmove]
+[charaSpecialEffect D erasure 1 0.2]
+[wt 0.7]
+
+[wt 0.7]
+[se ad59]
+[seVolume ad59 0 0]
+[seVolume ad59 1.4 1.0]
+[wt 1.0]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.4 1]
+[seStop ad59 0.4]
+＠ネモ・ナース
+事情は承知してます、処置しますね！
+[k]
+
+？1：ネモはここを死守して
+？2：自分は艦橋へ向かう！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠ネモ
+了解、船長として情けないけど、[r]今はそれが[#適材適所:てきざいてきしょ]だろうね……
+[k]
+
+[charaFace A 2]
+＠ネモ
+頼むよ、[%1]……！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_80 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

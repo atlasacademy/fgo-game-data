@@ -1,0 +1,759 @@
+
+
+
+＄94-05-34-18-3-1
+
+[soundStopAll]
+[charaSet A 3029001 1 源頼光]
+[charaSet B 1031001 1 フラン]
+[charaSet C 8001600 1 マシュ]
+[charaSet D 1098176810 1 刑部姫]
+[charaSet E 1098182210 1 ネモ・エンジン]
+[charaSet F 1098182110 1 ネモ・プロフェッサー]
+[charaSet G 1098198000 1 スカサハ＝スカディ]
+[charaSet H 1098197400 1 ラムダ]
+[charaSet I 1098158310 1 ネモ]
+[charaSet J 25004001 1 楊貴妃]
+[charaSet K 1098181900 1 ネモ・マリーン]
+[charaSet O 1098181900 1 ネモ・マリーン1]
+[charaSet P 1098181900 1 ネモ・マリーン2]
+[charaSet L 1098182310 1 ネモ・ベーカリー]
+[charaSet M 1098182010 1 ネモ・ナース]
+[charaSet V 98115000 1 通信用]
+
+[se ad59]
+[seVolume ad59 0 0]
+[seVolume ad59 2.0 0.7]
+[effect bit_talk_41]
+[shake 0.03 0 2 0]
+[scene 55700]
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[wt 1.5]
+[effectStop bit_talk_41]
+[shakeStop]
+[seStop ad59 0.5]
+[wt 0.5]
+[effectDestroy bit_talk_41]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠源頼光
+あと……少しで……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠フラン
+ぶりっじだー。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se bac137]
+[effect bit_talk_h_slash01]
+[wt 0.1]
+[se bac263]
+[wt 1.4]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠源頼光
+今です、行って！
+[k]
+
+[messageOff]
+[se ad59]
+[seVolume ad59 0 0.5]
+[seStop ad59 0.7]
+[wipeout rightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[scene 99002]
+[se ad8]
+[wt 0.3]
+[wipein leftToRight 0.4 1]
+[wait wipe]
+
+[wt 0.4]
+
+？1：マシュ！
+？2：大丈夫！？
+？！
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠マシュ
+マスター！[r]はい、皆さんなんとか……！
+[k]
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠刑部姫
+[#姫:わたし]もユゥユゥも大丈夫！[r]籠城ならお手の物ってね！
+[k]
+
+＠刑部姫
+マリーンちゃんたちがちょっとケガしてたけど、[r]それもいちおう回復したし！
+[k]
+
+？1：各部署は
+？2：大丈夫！？
+
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaEffect V bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠ネモ・エンジン
+こちら機関室！　何匹か来ててどん詰まりだ！[r]悪いけど少数でいいから増援たのむ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ネモ・プロフェッサー
+こちら電算室、おなじくヘールプ！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠スカサハ＝スカディ
+こちら工房、ベーカリーともども立ち往生だ！[r]早いところ救援を……む、なんだ？　あっ、貴様[line 2]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠ラムダ
+こちらラムダ。シャワールームに行くのに邪魔だったから、[r]艦尾方面はこちらで掃討しておいたわ。
+[k]
+
+＠ラムダ
+これから機関室と電算室も通りすがる予定だけど、[r]念のため、全艦総点検を視野に入れる事ね。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+＠ネモ
+こちら倉庫……！　ラムダリリスの言うとおりだ！
+[k]
+
+＠ネモ
+[%1]、艦全体の総点検を！[r]バケモノ一匹たりとも残しちゃだめだ！
+[k]
+
+？1：了解！
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_80 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaSet F 1098182100 1 ネモ・プロフェッサー]
+[charaSet G 5039000 1 スカサハ＝スカディ]
+[charaPut V 1200,1200]
+[charaFadeout I 0.1]
+[wt 1.5]
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.4]
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ネモ・プロフェッサー
+まんまと生還しました。おおごとでしたね皆さん。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠フラン
+おおごとだった。ひとっぷろあびてねたい。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 4]
+[charaFadein J 0.1 1]
+＠楊貴妃
+[#一件落着:いっけんらくちゃく]みたいに言わないで～……[r]状況としては何一つ解決してないんだよ？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠源頼光
+相変わらず停泊するしかない船に、突然現れた怪物……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ネモ・プロフェッサー
+そこですが、ネモ・シリーズは当然、[r]キャプテンが見聞きしたことを捉えております。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 2]
+[charaFace O 6]
+[charaFace P 6]
+[charaFadein K 0.1 1]
+[charaFadein O 0.1 0]
+[charaFadein P 0.1 2]
+＠ネモ・マリーン
+ゴッホが……ゴッホが、血だらけになって……
+[k]
+
+＠ネモ・マリーン
+その血から、怪物が生まれてきたんだよー！
+[k]
+
+[charaFadeout K 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+＠ネモ・プロフェッサー
+はい静粛に。いちおうざっくり調べましたが、[r]あれをゴッホ氏が『生んだ』と言うのはちと違います。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.1 1]
+＠スカサハ＝スカディ
+うむ。あれは己が血を媒体とした召喚だな。[r]血をふき取ってしまえば特に問題は起きぬ。
+[k]
+
+＠スカサハ＝スカディ
+彼女の体内で、何らかの術式が自動作動したのかも[r]しれん。もしかすると、意志と関係なく、な。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+＠ネモ・プロフェッサー
+そこについては懐疑的です。彼女が精神不安から[r]自傷に走ったことはほぼ明白ですから。
+[k]
+
+＠ネモ・プロフェッサー
+この騒動じたい、手の込んだ自殺でないとも限らない……[r]と、『理性』担当としては言及しておきますがー。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 2]
+[charaFace O 6]
+[charaFace P 6]
+[charaFadein K 0.1 1]
+[charaFadein O 0.1 0]
+[charaFadein P 0.1 2]
+＠ネモ・マリーン
+そうだよ……どうしたって、ゴッホがおかしくなってて、[r]怪物が出たことには間違いないんだー！
+[k]
+
+＠ネモ・マリーン
+やっぱり彼女は危険だったんだよー！[r]マスター、ゴッホとまだ契約しておくつもりー！？
+[k]
+
+？1：それは……
+？！
+
+[charaFadeout K 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+＠ネモ・プロフェッサー
+うーん、ちょっと落ち着きましょうマリーン諸君。
+[k]
+
+＠ネモ・プロフェッサー
+素朴さがウリとはいえ、排他をむき出しにする貴方たちは[r]ひかえめに言って認めたくありませんのでー。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 2]
+[charaFace O 6]
+[charaFace P 6]
+[charaFadein K 0.1 1]
+[charaFadein O 0.1 0]
+[charaFadein P 0.1 2]
+＠ネモ・マリーン
+なんだよ、プロフェッサーは電算室にこもってるから、[r]虚数のすぐそばで働くボクらのことが分からないんだ！
+[k]
+
+[charaFadeout K 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk L]
+[charaFace L 6]
+[charaFadein L 0.1 1]
+＠ネモ・ベーカリー
+こちら厨房。プロフェッサーには悪いけど、[r]わたしはマリーンに賛成かも。
+[k]
+
+＠ネモ・ベーカリー
+自分じゃ解決に動けない支援サイドの気持ち、[r]ちょっとは分かってほしいかな？
+[k]
+
+[charaFace L 2]
+＠ネモ・ベーカリー
+みんなが安心できるよう艦内から異物を排除したーい！[r]って気持ち、ナースも同じなんじゃない？
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 3]
+[charaFadein M 0.1 1]
+＠ネモ・ナース
+こちら倉庫、ネモ・ナースです。[r]処置中につき応答を拒否させていただきます。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠ネモ・エンジン
+こちら機関室！　艦橋いい加減にしな！　キャプテンが[r]ヘバってるからって動揺しすぎだ！
+[k]
+
+＠ネモ・エンジン
+いいか、敵は倒す！　弱いヤツは守る！[r]それだけだ！　だから、えーと……
+[k]
+
+[charaFace E 2]
+＠ネモ・エンジン
+敵ならゴッホは倒すけど必ず守るっていうか、[r]ああもうわかんね！　頭冷やすからアイスくれ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠ネモ・プロフェッサー
+うあー、皆さんすみません。これが分割思考の弱みです。
+[k]
+
+＠ネモ・プロフェッサー
+一度混乱がきわまると、自分の中で色んな考えが[r]ぶつかって、議論が終わらなくなるのですよね。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+＠マシュ
+これは……大変です。[r]先輩……一体、どうしたら……
+[k]
+
+？1：まず
+？2：謎を解こう
+？！
+
+[charaFace C 6]
+＠マシュ
+え……？
+[k]
+
+？1：これを見て
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.4]
+
+[cameraMove 1.5 170,-30 1.5]
+[wt 2.7]
+＠マシュ
+これは、事件発生直前に、項羽さんが残した落書き……
+[k]
+
+＠ネモ・プロフェッサー
+あーすっかり忘れていましたねえ。メッセージとして[r]読み解こうとしましたがさっぱりで。
+[k]
+
+＠ネモ・プロフェッサー
+え、マスターもしや、これを解かれたのですか？
+[k]
+
+？1：これは
+？2：碁石な[&んだ:の]
+？！
+
+＠ネモ・プロフェッサー
+は……？
+[k]
+
+[messageOff]
+[cameraMove 1.2 0,0 1.0]
+[wt 1.5]
+
+？1：おっきーが敵の気配を感じた場所は
+？2：マス目に影がつけられてる
+？！
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠刑部姫
+う、うん、でも敵本体はいなくて……
+[k]
+
+？1：敵は、マス目じゃなくて
+？2：マス目の交点にいる[&んだ:の]
+？！
+
+[charaFace D 5]
+＠刑部姫
+……あ、え、もしかして碁ってそゆこと？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 22]
+[charaFadein J 0.1 1]
+＠楊貴妃
+……たしかに将棋と違って、碁は盤の線の交点に[r]石を置きますけど……
+[k]
+
+＠楊貴妃
+じゃあ敵はマス目の間のへんにいるってことです？[r]それはなんか、おかしくないですか～？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠刑部姫
+おかしい！　っていうか、さすがにエリアの切れ目を[r]見逃すほど粗い索敵はしてないよマーちゃん！
+[k]
+
+[messageOff]
+[wt 0.4]
+
+？1：そういうことじゃなくて
+？！
+
+？1：『空間の隙間』みたいなものが
+？！
+
+？1：この戦略盤によって『観測された』としたら？
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠スカサハ＝スカディ
+……な、る、ほど？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ネモ・プロフェッサー
+おっと……これは盲点かもしれませんー。
+[k]
+
+＠ネモ・プロフェッサー
+仮に、グリッド交点とぴたり重なる位置に、[r]広さゼロの空間が等間隔に並んでいたとすると……
+[k]
+
+＠ネモ・プロフェッサー
+……はい。はい。はいー。それなら、[r]戦略盤の現状の[#表示異常:グ　リ　ッ　チ]の説明、つきますねー。
+[k]
+
+＠ネモ・プロフェッサー
+まさに、異常化した世界を観測した機械が、[r][#発狂して:バ　グ　っ　て]しまった、というわけで[line 2]
+[k]
+
+[charaFace F 3]
+＠ネモ・プロフェッサー
+[line 2]いや、もしそんな空間の乱れが実在するなら、[r]もしかして[#戦略盤が原因で世界がバグった]？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 23]
+[charaFadein J 0.1 1]
+＠楊貴妃
+あ～！　観測者と世界のどっちが狂ってるかは[r]証明ができないから……
+[k]
+
+[charaFace J 2]
+＠楊貴妃
+狂った機械の観測が空間構造をねじ曲げて！　だから、[r]『空間の隙間』が碁盤の目そっくりになったってこと！？
+[k]
+
+？1：……よくわからないけど
+？2：もっと単純なことな気がする
+？！
+
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+＠マシュ
+……先輩、そういえば、[#虚数空間を最初に歪めた誰か]が[r]いたはずです……！
+[k]
+
+？1：怪現象の原因は機械じゃなくて
+
+？2：機械をヒントに隙間を観測した『誰か』だと思う
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠スカサハ＝スカディ
+私は常々、そう思っていたぞ。[r]我らを罠にかけたのは、機械ではなく[#人であろう]。
+[k]
+
+＠スカサハ＝スカディ
+マスターの言う特別な力……我らは既に幾度となく[r]目にし、あまつさえ恩恵を得てきたのではないか？
+[k]
+
+＠スカサハ＝スカディ
+そう、[#楊貴妃の高度な虚数空間の映像置換能力]や、[r][#ゴッホの血清に含まれる虚数存在の変換能力]……
+[k]
+
+[charaFace G 5]
+＠スカサハ＝スカディ
+提唱しよう。[#世界の裏側たる虚数空間]を操作したのは、[r][#世界の外側より来たるフォーリナー]ではないのか？
+[k]
+
+＠スカサハ＝スカディ
+そう考えれば、『空間の隙間』の形状にも不思議はない。
+[k]
+
+＠スカサハ＝スカディ
+この戦略盤を見て着想を得たフォーリナーが、[r]これに似せて『空間の隙間』を作ったとすれば、な。
+[k]
+
+
+＠スカサハ＝スカディ
+そして、楊貴妃が間違いなく、事件発生後に[r]座から[#喚:よ]ばれたものである以上、疑わしきはやはり……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 2]
+[charaFace O 6]
+[charaFace P 6]
+[charaFadein K 0.1 1]
+[charaFadein O 0.1 0]
+[charaFadein P 0.1 2]
+＠ネモ・マリーン
+ゴッホだよー！　ゴッホが全部の元凶だったんだー！！
+[k]
+
+[messageOff]
+[se ad4]
+[seVolume ad4 0 0]
+[seVolume ad4 1.0 0.7]
+[charaMoveReturn K 0,2 0.3]
+[wt 0.2]
+[charaMoveReturn O -256,2 0.3]
+[wt 0.1]
+[charaMoveReturn P 256,2 0.3]
+[wt 0.1]
+[charaMoveReturn K 0,2 0.3]
+[wt 0.2]
+[charaMoveReturn O -256,2 0.3]
+[wt 0.2]
+[charaMoveReturn P 256,2 0.3]
+[wt 0.4]
+[charaMoveReturn K 0,2 0.3]
+[wt 0.1]
+[charaMoveReturn O -256,2 0.3]
+[wt 0.2]
+[charaMoveReturn P 256,2 0.3]
+[wt 0.2]
+[charaMoveReturn K 0,2 0.3]
+
+[charaFadeout K 0.1]
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+[wt 0.1]
+
+？1：みんな、静まって！
+？2：まずは仮説を確かめよう
+？！
+
+[seStop ad4 1.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ネモ・プロフェッサー
+そーですね。空間の隙間……仮称『碁盤の空間』の[r]実在証明。すぐにやりましょう。
+[k]
+
+＠ネモ・プロフェッサー
+楊貴妃氏も刑部姫氏もおそらく無意識に、この空間が[r]通常の三次元空間だと認識して魔術を組んでますよね。
+[k]
+
+＠ネモ・プロフェッサー
+その辺をまるまる見直しつつ、複数の計算方法で[r]『碁盤の空間』実在に矛盾がないか確かめるんです。
+[k]
+
+＠ネモ・プロフェッサー
+全員で額を寄せて、仮説をベースに魔術関数を構築し、[r]戦略盤をアップデートしましょう。
+[k]
+
+＠ネモ・プロフェッサー
+それまで皆さん穏やかに。[r]っていうかキャプテンそろそろ戻ってきてー。[twt 0.4][charaFace F 4]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+＠ネモ
+……今は、ゴッホから離れられないよ。[r]そして、ゴッホを今の艦橋には連れていけない。
+[k]
+
+？1：それでいい
+？2：再計算をお願い
+？！
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+[wt 0.2]
+
+[charaTalk off]
+[charaDepth J 1]
+[charaDepth D 3]
+[charaDepth G 2]
+[charaDepth F 4]
+[charaFace J 13]
+[charaFace D 5]
+[charaFace G 0]
+[charaFace F 0]
+[charaFadein J 0.1 -375,0]
+[charaFadein D 0.1 -125,0]
+[charaFadein G 0.1 125,0]
+[charaFadein F 0.1 375,0]
+[wt 1.0]
+[charaMoveReturn J -375,-4 0.4]
+[charaMoveReturn D -125,-4 0.4]
+[charaMoveReturn G 125,-4 0.4]
+[charaMoveReturn F 375,-4 0.4]
+[wt 0.7]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
