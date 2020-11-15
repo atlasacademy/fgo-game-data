@@ -1,0 +1,794 @@
+
+＄94-05-34-21-5-1
+
+[soundStopAll]
+[charaSet A 1031001 1 フラン]
+[charaSet B 25006001 1 ゴッホ]
+[charaSet C 1098158310 1 ネモ]
+[charaSet D 3040001 1 ラムダ]
+[charaSet E 3029002 1 源頼光]
+[charaSet F 1098197710 1 楊貴妃]
+[charaSet G 1098197500 1 刑部姫]
+[charaSet H 1098197800 1 マシュ]
+[charaSet I 7032001 1 項羽]
+[charaSet J 25006000 1 ？？？]
+[charaSet V 98115000 1 通信用]
+[charaPut V 1200,1200]
+[charaEffect V bit_talk_10_LowLevel]
+
+[scene 10000]
+[fadein black 1.0]
+[wait fade]
+
+[charaEffect A bit_talk_kengekiall02]
+[wt 0.1]
+[se ad32]
+[wt 0.2]
+[se ad32]
+[seVolume ad32 0 0.8]
+[wt 0.2]
+[se ad170]
+[charaPut A 0,60]
+[wt 0.4]
+[effect bit_talk_v_slash01]
+[se ad878]
+[se bac263]
+[wt 1.2]
+
+[fadeout black 0.1]
+[wait fade]
+[scene 98900]
+[wt 0.1]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_24 0.1]
+
+？1：なんとか
+？2：やった……！！
+？！
+
+＠？？？
+想定外でした。
+[k]
+
+＠？？？
+戦闘能力。技術力。生命心理の掌握力。
+[k]
+
+＠？？？
+それをこの異空間において徹底的に抽出し活用せんとする[r]悪質なまでの執拗さ。
+[k]
+
+＠？？？
+ところで、我が本体は[#未:いま]だ健在ですが、[r]逃げられると思っていますか？
+[k]
+
+？1：フラン！
+？2：彼女を！
+？！
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠フラン
+あいあい～。でれる？　でれないね。[r]うごくな～？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[cueSe Battle bac23]
+[effect bit_talk_ichimon01wh 0,-70]
+[wt 0.1]
+[cueSe Battle bac139]
+[shake 0.03 3 3 0.4]
+[wt 0.7]
+[se ade80]
+[se ade403]
+[wt 0.5]
+[seStop ade80 1.1]
+[wt 1.5]
+[effectDestroy bit_talk_ichimon01wh]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.4 1]
+＠ゴッホ
+すみ、ませ……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠フラン
+あやまりきんし。わらえ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠ゴッホ
+……エヘヘ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠フラン
+よし。かかえるね。はしるから、くちとじる。
+[k]
+
+[messageOff]
+[charaMoveReturn A 0,-6 0.7]
+[wt 0.3]
+[se ad110]
+[wt 0.7]
+
+[charaFace A 5]
+＠フラン
+おりゃあ～。
+[k]
+
+[messageOff]
+[se ad132]
+[se ad59]
+[seVolume ad59 0 0.4]
+[charaFadeout A 0.4]
+[wt 0.7]
+[seStop ad132 1.5]
+[seStop ad59 1.0]
+
+＠？？？
+無駄です。
+[k]
+
+[messageOff]
+
+[se ad85]
+[effect bit_talk_whip01]
+[wt 0.3]
+[cueSe Battle bac137]
+[fowardEffect bit_talk_v_slash01 -60,0]
+[wt 1.0]
+
+＠？？？
+だから、無駄です。
+[k]
+
+[messageOff]
+[se ad85]
+[effect bit_talk_whip02]
+[wt 0.3]
+[cueSe Battle bac137]
+[fowardEffect bit_talk_h_slash01]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠フラン
+う～、しえんほしい！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠ネモ
+待ってて、いまラムダリリス経由で何かリソースを！
+[k]
+
+＠？？？
+それはさせません。
+[k]
+
+[messageOff]
+[se ad539]
+[charaFadeout C 0.1]
+[wt 0.1]
+[wt 1.0]
+[charaPut V 1200,1200]
+[charaEffectStop V bit_talk_10_LowLevel]
+[wt 0.1]
+
+＠？？？
+通信も経路も遮断しました。あなたがたは逃がせません。
+[k]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠フラン
+……ぜったいぜつめい？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠ゴッホ
+……フラン、ちゃん……
+[k]
+
+＠ゴッホ
+ほうぐ、を、つかう……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠フラン
+えー。だめでは？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠ゴッホ
+……エヘヘ、だいじょうぶ。[r]これは、別の、だから。
+[k]
+
+[charaFace B 10]
+＠ゴッホ
+この霊基でも使えそうな、もう一つの宝具……
+[k]
+
+[charaFace B 5]
+＠ゴッホ
+１分で描き上げる……！[r]時間をちょうだい、フランちゃん！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠フラン
+う！　わかった！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠？？？
+やめなさい！
+[k]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠フラン
+やめるかー！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[effect bit_talk_kengekiall02]
+[wt 0.2]
+[se ad33]
+[wt 0.8]
+[effect bit_talk_14]
+[flashin once 0.1 0.1 FFFFFFAF FFFFFF00]
+[shake 0.03 3 3 0.4]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+＠ゴッホ
+……ウフフ……ウフフ……
+[k]
+
+＠ゴッホ
+ゴッホの希望と絶望の入り口……[r]虚しく散った夢の軌跡……
+[k]
+
+[charaFace B 6]
+＠ゴッホ
+それでもわたしは……これを描く……[r]ゴッホの名において……これを使う……！
+[k]
+
+[messageOff]
+[se ad39]
+[charaEffect B bit_talk_36]
+[wt 0.4]
+
+[charaFace B 5]
+＠ゴッホ
+私は描かなければ。外は黄色で中が白、[r]陽光あふれるこの部屋で、仲間とともに希望の図画を。
+[k]
+
+＠ゴッホ
+影無き地、ミストラルを遮る暖かな壁の中より、[r]あえかなる[#友誼:ゆうぎ]の望みとともに、君に握手を送ろう。
+[k]
+
+[charaFace B 2]
+＠ゴッホ
+家とその住まう[#輩:ともがら]、街路！　またの名を、[r]『[#黄色い家:ヘット・ヒェーレ・ハイス]』！！
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_24 1.5 0.4]
+[fadeout white 1.5]
+[wait fade]
+[se ad744]
+[charaEffectStop B bit_talk_36]
+[charaFadeout B 0.1]
+[wt 1.0]
+[fadein white 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠フラン
+おお～？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠ゴッホ
+……かつてゴッホの手が届いた、もう一つの外なる力！
+[k]
+
+[charaFace B 2]
+＠ゴッホ
+親しき友には[#庇護:ひご]と祝福を！　敵には暴風の災いを！[r]これで、なんとか、突破して……！！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+[se ade283]
+[se ad2]
+[seVolume ad2 0 0]
+[seVolume ad2 1.0 0.4]
+[effect bit_talk_tornado01_02]
+[effect bit_talk_aerial_wave]
+[wt 1.5]
+[seStop ad2 1.5]
+[wt 0.7]
+[se ad85]
+[wt 0.4]
+[se ad322]
+[seVolume ad322 0 0.6]
+[shake 0.03 3 3 0.7]
+[wt 1.0]
+[effectStop bit_talk_tornado01_02]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.2]
+[cueSe Battle bas7]
+[charaEffect A bit_talk_np_buf]
+[wt 0.1]
+[charaFace A 1]
+[wt 0.3]
+[cueSe Battle bas13]
+[charaBackEffect A bit_talk_shadow_aura01]
+[wt 1.2]
+
+[bgm BGM_EVENT_24 1.5 1.0]
+
+[charaFace A 2]
+＠フラン
+おうし、これならいけるー！
+[k]
+
+＠フラン
+ちゃーじこんぷりーと！[r]でんげきひっちゅう！　びりびりのどっかんかーん！！
+[k]
+
+[messageOff]
+[se ad39]
+[charaEffect A bit_talk_36]
+[wt 0.4]
+
+＠フラン
+『[#串刺の雷刃:スキュアド・プラズマブレイド]』[line 2]！！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+＠？？？
+これは、いけない[line 2]
+[k]
+
+[messageOff]
+[se ade466]
+[bgmStop BGM_EVENT_24 1.0]
+[fadeout white 1.0]
+[wait fade]
+[wt 0.7]
+[se ade467]
+[charaEffectStop A bit_talk_36]
+[charaFadeout A 0.1]
+[charaBackEffect B bit_talk_shadow_aura01]
+[charaPut B 1200,1200]
+[scene 10001]
+[wt 1.5]
+[seStop ade467 2.5]
+[wt 1.5]
+[fadein white 0.1]
+[wait fade]
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 98900]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+
+[bgm BGM_EVENT_24 0.1 0.5]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠ラムダ
+遅い！　通信は途絶えるし、とんでもない宝具解放の[r]余波がきて痺れるし！　何をやっていたの！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠フラン
+すまんすまん。なんとかなった。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠ラムダ
+……貴方たち、呪われてるわよ？　すごく。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth A 2]
+[charaTalk B]
+[charaFace B 6]
+[charaFace A 0]
+[charaFadein B 0.1 0]
+[charaFadein A 0.1 2]
+＠ゴッホ
+すみません……エヘヘ、そういう副作用で……
+[k]
+
+[charaFace A 7]
+＠フラン
+はよかえろう。しぬ。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut B 1200,1200]
+[charaPut A 1200,1200]
+[charaBackEffectStop B bit_talk_shadow_aura01]
+[charaBackEffectStop A bit_talk_shadow_aura01]
+
+[charaTalk depthOn]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠ラムダ
+世話の焼ける……！　艦橋、合流完了、離脱するわ！
+[k]
+
+[charaFace D 2]
+＠ラムダ
+頼光！　お待ちかねの出番よ！
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_24 0.5 0.2]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[scene 98400]
+[wt 0.4]
+[bgm BGM_EVENT_24 0.5 0.7]
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+[wt 0.2]
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.4 1]
+＠源頼光
+……ああ。これほどまでに魔力、気力とも充実したのは、[r]甚だ久しいことですね……
+[k]
+
+[charaFace E 0]
+＠源頼光
+加えてとうとう、静音も不要。
+[k]
+
+[charaFace E 2]
+＠源頼光
+ならばこの頼光、[#渾身:こんしん]の[#一擲:いってき]を、邪知撲滅の念を、[r]誇らかに、高らかに、叫びましょう[line 3]！
+[k]
+
+[messageOff]
+[se ad39]
+[charaEffect E bit_talk_36]
+[wt 0.4]
+
+＠源頼光
+[#牛頭天王:ごずてんのう]！　東方神、[#帝釈天:たいしゃくてん]の[#金剛杵:こんごうしょ]！！[r]すなわち聖仙骨より造られし神の槍！！
+[k]
+
+＠源頼光
+今こそ来たりて、あらゆる敵を撃滅せん！！[r]『[#釈提桓因・金剛杵:しゃくだいかんいん・こんごうしょ]』[line 12]！！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 2.5]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+[cueSe NoblePhantasm_302900 NP_302900_4]
+[cueSeVolume NP_302900_4 0 0]
+[cueSeVolume NP_302900_4 0.7 0.7]
+[wt 0.7]
+[effect bit_talk_arrow01br]
+[wt 1.2]
+[cueSeStop NP_302900_4 0.2]
+[se ad842]
+[seVolume ad842 0 0.7]
+[fadeout white 0.4]
+[wait fade]
+[charaEffectStop E bit_talk_36]
+[charaFadeout E 0.1]
+[scene 10001]
+[wt 0.4]
+[fadein white 0.1]
+[wait fade]
+
+
+[fadeout black 1.0]
+[wait fade]
+[wipeout rectangleStripRightToLeft 0.1 1]
+[wait wipe]
+[fadein black 0.1]
+[wait fade]
+[charaSet C 4037000 1 ネモ]
+[charaSet D 1098197410 1 ラムダ]
+[scene 99002]
+[wt 0.4]
+[se ad14]
+[seVolume ad14 0 0]
+[seVolume ad14 0.5 0.3]
+[shake 0.03 3 3 1.7]
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+[bgm BGM_EVENT_24 0.1 0.4]
+
+[wt 0.2]
+[wt 1.0]
+
+？1：……
+？！
+
+[seStop ad14 1.5]
+[wt 0.1]
+
+[charaPut V 1]
+[charaEffect V bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠楊貴妃
+こちら楊貴妃！　怒涛のような破裂音！[r]敵構造体、内部から崩壊します！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠刑部姫
+[#姫:わたし]の側でも確認！　やったねー！
+[k]
+
+[charaFace G 7]
+＠刑部姫
+ところでラムダちゃん、はやいとこ回収してぇー！！[r]なんか足場崩れそうなんですけど！　トラウマががが！！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ラムダ
+姫君のエスコートは万事に優先すると分からないかしら。[r]既に回収部隊は送っているから、辛抱なさい？
+[k]
+
+[bgmStop BGM_EVENT_24 1.0]
+
+[charaFace D 6]
+＠ラムダ
+艦橋、いちおう言っておくけれど、２騎とも無事よ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠ネモ
+やった……！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠マシュ
+こちらマシュ！　やりました、やりましたね先輩！！
+[k]
+
+？1：ああ
+？2：良かった……！
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠ネモ
+みんな、作戦終了だ！　ネモ・シリーズ、[r]撤収の準備を[line 2]
+[k]
+
+[messageOff]
+[se ad874]
+[bgmStop BGM_EVENT_82 0.7]
+[charaFadeout C 0.1]
+[wt 1.5]
+[seStop ad874 1.5]
+
+＠？？？
+地球人のみなさん。
+[k]
+
+？1：うわ！
+？2：どこから声が！？
+？！
+
+[bgm BGM_EVENT_71 0.1]
+
+＠？？？
+私の想定不足、計算違いにより、私は敗北しました。
+[k]
+
+＠？？？
+あなたがたは、次善となる穏やかな滅びを拒絶しました。
+[k]
+
+＠？？？
+残念です。さようなら。
+[k]
+
+[messageOff]
+[se ad42]
+[seVolume ad42 0 0.3]
+[se ad528]
+[wt 3.5]
+
+？1：……なんだか嫌な捨て台詞だね
+？2：……なんだか不安な気持ちになったよ
+？！
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠ネモ
+……神っていうのは往々にしてそういう手に出るものさ。[r]だから人間は好悪にかかわらず拝むしかないんだ。
+[k]
+
+＠ネモ
+彼らが何と言おうと、人類は独力で希望を見出し、[r][#櫂:かい]を[#漕:こ]いでいくしかない。
+[k]
+
+[charaFace C 0]
+＠ネモ
+項羽も、そう思わない？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_71 1.5]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠項羽
+……
+[k]
+
+＠項羽
+肯定である。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠ネモ
+だよね！　さあ、みんなを迎える用意をしよう！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

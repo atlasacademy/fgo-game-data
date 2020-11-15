@@ -1,0 +1,248 @@
+
+＄94-05-34-21-5-0
+
+
+[soundStopAll]
+[charaSet A 3040001 1 ラムダ]
+[charaSet B 1031001 1 フラン]
+[charaSet C 25006001 1 ゴッホ]
+[charaSet D 1098158310 1 ネモ]
+[charaSet E 25006000 1 ？？？]
+[charaSet V 98115000 1 通信用]
+[charaPut V 1200,1200]
+[charaEffect V bit_talk_10_LowLevel]
+
+[scene 98900]
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+＠ラムダ
+花の邪神の内側なんて初めて見たわ。[r]楊貴妃の幻像、いい趣味してるわね……！
+[k]
+
+[charaFace A 0]
+＠ラムダ
+[%1]、[r]ノーチラス艦橋、感度は良好ね？
+[k]
+
+？1：ばっちり見えてる
+？2：しっかり聞こえてる
+？！
+
+[charaFace A 2]
+＠ラムダ
+よろしい。フラン、行ってきなさい！　カメラは大事に！[r]随時アップデートされる座標にも注意するのよ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠フラン
+がってんだ、まま。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠ラムダ
+それはやめて。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠フラン
+いくぞ～。ふんが～～。
+[k]
+
+
+[messageOff]
+[se ad54]
+[charaMoveScale B 1.1 0.4]
+[charaMove B 0,10 0.4]
+[charaFadeout B 0.2]
+[wt 0.4]
+
+[se ad237]
+[effect bit_talk_v_slash01]
+[wt 0.1]
+[se ad85]
+[seVolume ad85 0 0.4]
+[seStop ad85 0.7]
+[wt 0.2]
+[seStop ad237 0.3]
+[wt 0.5]
+
+[bgm BGM_EVENT_80 0.7 0.2]
+[fadeout black 0.7]
+[wait fade]
+[wt 0.7]
+[bgm BGM_EVENT_80 0.7 1.0]
+[fadein black 0.7]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.4 1]
+＠フラン
+こっちね。おりゃー。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+[se bac137]
+[effect bit_talk_h_slash01]
+[wt 0.1]
+[se bac263]
+[shake 0.03 3 3 0.4]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠フラン
+おーーー。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+？1：いた！
+？2：けど、これは……！
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_80 1.5]
+
+[scene 99200 1.5]
+[wt 2.5]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠ゴッホ
+フ、ラン、ちゃん……？
+[k]
+
+＠ゴッホ
+あぐっ！？
+[k]
+
+
+＠？？？
+立ち去りなさい。あなたがたの努力は無駄です。
+[k]
+
+＠？？？
+宝具解放には失敗しましたが、ここまで生長した[r]『わたし』は通常の手段では駆除不能です。
+[k]
+
+＠？？？
+心配いりません。現状のプランが完遂される場合、[r]あなたがたの領域への侵入は1000年先送りされます。
+[k]
+
+＠？？？
+またその場合も知的生命にはまったくの無痛、あるいは[r]快楽すら伴う共生の形で執行することを約束しましょう。
+[k]
+
+？1：ゴッホが壁に埋まってる……！？
+？2：その口を借りて、誰かがしゃべってる！！
+？！
+
+[messageOff]
+
+[sceneSet F 99200 0]
+[sceneSet G 98900 0]
+[charaDepth F 1]
+[charaDepth G 2]
+[charaDepth V 3]
+[charaDepth D 3]
+[charaDepth B 3]
+
+
+[charaFadein F 0.7 -320,-200]
+[charaFadein G 0.7 512,-200]
+[wt 0.7]
+
+[charaPut V 280,0]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 270,0]
+＠ネモ
+ダメだ、ゴッホもフランも耳を貸しちゃいけない！
+[k]
+
+＠ネモ
+相手は異界の神性だ！　こっちが納得しそうな言語を[r]適当に出力しているに過ぎない！
+[k]
+
+＠？？？
+それは違います。実のところ、私を受け入れることが[r]あなたがたにとって次善の結末となるでしょう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 2]
+＠フラン
+うー。それは、だめー。
+[k]
+
+
+＠？？？
+なぜですか。
+[k]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 2]
+＠フラン
+ごっほが、くるしそうだからだ。
+[k]
+
+[charaFace B 1]
+＠フラン
+ごっほ！　つぎはぎどうし、たのしくやろう！
+[k]
+
+＠ゴッホ
+……あ、り、がと……！
+[k]
+
+
+[bgm BGM_EVENT_24 0.1]
+
+＠？？？
+第一交渉に失敗。残念です。[r]捕縛し、拷問し、次の交渉に期待します。
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]
