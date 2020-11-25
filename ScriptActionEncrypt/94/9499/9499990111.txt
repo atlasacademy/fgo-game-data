@@ -1,0 +1,101 @@
+[soundStopAll]
+
+＄94-99-99-01-1-1
+[enableFullScreen]
+[charaSet A 8001002 1 マシュ]
+[charaSet B 98002000 1 フォウ]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[scene 20602]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠マシュ
+お疲れ様です。先輩
+[k]
+
+＠マシュ
+このテストスクリプトでは、画面端での[r]立ち絵の表示を行います。
+[k]
+
+＠マシュ
+タップすると、わたしとフォウさんが[r]それぞれ画面左右端に表示されます。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace A 0]
+[charaFace B 0]
+[charaFadeinFSSideR A 0.1 400,0]
+[charaFadeinFSSideL B 0.1 -400,0]
+[wt 1.5]
+
+＠マシュ
+16:9と21:9どちらの画面でも[r]画面端からの距離が同じになっていれば成功です。
+[k]
+
+
+＠マシュ
+次は、charaMoveのテストです。[r]わたし達が画面左右端から顔を出します。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[charaFadeinFSSideR A 0.4 500,0]
+[charaMoveFSSideR A 400,0 0.4]
+[charaFadeinFSSideL B 0.4 -500,0]
+[charaMoveFSSideL B -400,0 0.4]
+
+[wt 1.0]
+
+＠マシュ
+次は、charaMoveReturnのテストです。[r]わたし達がその場で頷きます。
+[k]
+
+[messageOff]
+[charaMoveReturnFSSideR A 400,-10 0.4]
+[charaMoveReturnFSSideL B -400,-10 0.4]
+
+[wt 1.5]
+
+＠マシュ
+最後に、charaPutのテストをします。[r]わたし達がそれぞれ左右画面端に特殊効果で現れます。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 1.0]
+[charaPutFSSideR A 400,0]
+[charaPutFSSideL B -400,0]
+
+[charaSpecialEffect A appearance 1 0.4]
+[charaSpecialEffect B appearance 1 0.4]
+[wt 1.0]
+
+＠マシュ
+いかがでしたか？[r]これにてテストを終了します。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

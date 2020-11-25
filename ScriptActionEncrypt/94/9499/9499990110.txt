@@ -1,0 +1,147 @@
+[soundStopAll]
+
+＄94-99-99-01-1-1
+[enableFullScreen]
+[charaSet A 8001002 1 マシュ]
+[charaSet B 98002000 1 フォウ]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[scene 20602]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠マシュ
+お疲れ様です。先輩
+[k]
+
+＠マシュ
+このスクリプトは、フルスクリーン化対応の[r]キャラ表示をテストします。
+[k]
+
+＠マシュ
+タップすると、わたしが右に、フォウさんが左に[r]表示されます。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaFace A 1]
+[charaFace B 0]
+[charaFadein A 0.1 2]
+[charaFadein B 0.1 0]
+
+＠マシュ
+まずはフルスクリーン化対応前の「左右二人立ち」です。[r]タップするとフルスクリーン後の二人立ちになります。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[charaFadeinFSR A 0.1 2]
+[charaFadeinFSL B 0.1 0]
+[wt 1.0]
+
+＠マシュ
+フルスクリーン化端末でない場合、[r]2回の表示が同じ位置になれば成功です。
+[k]
+
+＠マシュ
+次は、charaMoveのテストです。[r]わたし達が画面左右端から顔を出します。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[charaFadein A 0.4 500,0]
+[charaMove A 400,0 0.4]
+[charaFadein B 0.4 -500,0]
+[charaMove B -400,0 0.4]
+
+[wt 1.0]
+
+＠マシュ
+次に、フルスクリーンでも同じ動きをしますね。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[charaFadeinFSR A 0.4 500,0]
+[charaMoveFSR A 400,0 0.4]
+
+[charaFadeinFSL B 0.4 -500,0]
+[charaMoveFSL B -400,0 0.4]
+
+[wt 1.0]
+
+＠マシュ
+フルスクリーン化端末でない場合、[r]2回の表示が同じ位置になれば成功です。
+[k]
+
+＠マシュ
+最後に、charaPutのテストをします。[r]わたし達がそれぞれ左右に特殊効果で現れます。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[charaPut A 2]
+[charaPut B 0]
+[charaSpecialEffect A appearance 1 0.4]
+[charaSpecialEffect B appearance 1 0.4]
+[wt 1.0]
+
+＠マシュ
+次に、フルスクリーンでも同じ動きをしますね。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[charaPutFSR A 2]
+[charaPutFSL B 0]
+
+[charaSpecialEffect A appearance 1 0.4]
+[charaSpecialEffect B appearance 1 0.4]
+[wt 1.0]
+
+＠マシュ
+次に、charaMoveReturnのテストをします。[r]私たちがそれぞれその場で頷く動きをします。
+[k]
+
+[messageOff]
+
+[charaMoveReturnFSR A 256,-5 0.4]
+[charaMoveReturnFSL B -256,-5 0.4]
+[wt 1.5]
+
+＠マシュ
+いかがでしたか？[r]これにてテストを終了します。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
