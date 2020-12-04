@@ -1,0 +1,644 @@
+
+＄03-00-07-01-4-1
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 6030000 1 段蔵]
+[charaSet B 98006200 1 エネミー]
+[charaSet C 1098203100 1 大土蜘蛛]
+[charaSet D 1098201600 1 太刀の男]
+[charaSet E 1098201600 1 太刀の男_シルエット]
+[charaFilter E silhouette 00000080]
+[charaSet H 98115000 1 エフェクト用]
+
+[scene 102201]
+
+[cameraMove 0.1 0,0 1.01]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.3]
+
+[se ad158]
+[se ad443]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[charaMoveScale B 1.1 0.2]
+[charaMove B 0,15 0.2]
+[wt 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+[seStop ad443]
+[seStop ad158]
+[blurOff motion 0.2]
+[charaScale B 1.0]
+
+[effect bit_talk_v_slash02]
+[wt 0.1]
+[se ad85]
+[wt 0.2]
+
+[effect bit_talk_h_slash02_fs]
+[wt 0.1]
+[se ad85]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[fowardEffect bit_talk_14 -50,50]
+[charaShake A 0.05 3 3 0.2]
+[se ad1031]
+[wt 0.2]
+
+[fowardEffect bit_talk_14 50,-50]
+[charaShake A 0.05 3 3 0.2]
+[se ad1032]
+[wt 0.5]
+
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[charaMoveScale A 1.1 0.2]
+[charaMove A 0,20 0.2]
+[se ad7]
+[wt 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+[blurOff motion 0.2]
+[charaScale A 1.0]
+
+[fowardEffect bit_talk_h_slash01_fs]
+[se ad471]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 2]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect A appearance 1 0.25]
+[wt 0.4]
+
+＠段蔵
+[#是:これ]にて！[r][#為済:し　す]ませた！
+[k]
+
+[messageOff]
+[se ade160]
+[wt 0.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+[fowardEffect bit_talk_explosion_triple02]
+[charaShake B 0.05 3 3 0.7]
+[se ad609]
+[wt 1.6]
+[seStop ad609 1.0]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_80 2.2]
+
+[charaSpecialEffect B enemyErasure 1 1.2]
+[se ad42]
+[wait charaSpecialEffect B]
+[wt 0.5]
+[seStop ad609 0.5]
+[wt 0.5]
+
+？1：今の、見覚えがあるような
+
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠段蔵
+…………はい。[bgm BGM_EVENT_81 0.1]
+[k]
+
+＠段蔵
+この段蔵に下総の記録はございませぬが、[r]以前カルデアのデータベースにて拝見いたしました。
+[k]
+
+＠段蔵
+斬り捨てたる黒き武者の鎧姿、[r]乱世の頃のものによく似て[line 3]
+[k]
+
+？1：断言はしないけど
+？2：アルターエゴ・リンボが関係しているかも
+
+？！
+
+[charaFace A 5]
+
+＠段蔵
+段蔵も同じことを考えておりました。[r]まさか、と。
+[k]
+
+＠段蔵
+……。[r]……。
+[k]
+
+＠段蔵
+……………………。
+[k]
+
+[charaFace A 2]
+
+＠段蔵
+[line 3]はっ。
+[k]
+
+[charaFace A 5]
+
+＠段蔵
+いえ、今はそれよりも！[r]一刻も早く大路へ出ましょう、マスター。
+[k]
+
+[charaFace A 4]
+
+＠段蔵
+嫌な予感がいたします。[r]否、ワタシの易経回路にわずかな反応が[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 1.0]
+[se ad991]
+[seVolume ad991 0 0.1]
+[seVolume ad991 1.0 0.6]
+[wt 1.5]
+[seStop ad991 0.5]
+
+[charaFace A 2]
+
+＠段蔵
+！
+[k]
+
+＠段蔵
+記録からの予測に合致！[bgm BGM_EVENT_72 0.1][r][#地形変化を伴う特殊擬態]と断定[line 3]マスター！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[se ad989]
+[wt 1.2]
+[seStop ad989 0.3]
+[wt 0.3]
+
+？1：大蜘蛛！？
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[charaMoveScale A 1.1 0.15]
+[charaMove A 0,20 0.15]
+[se ad7]
+[wt 0.1]
+[shake 0.01 5 5 0.3]
+[wt 0.2]
+[charaMoveScale A 1.0 0.15]
+[charaMove A 0,0 0.15]
+[wt 0.2]
+
+[charaEffect A bit_talk_x_slash_bk_01]
+[charaFace A 5]
+[charaShake A 0.05 3 3 0.3]
+[wt 0.1]
+[se bac6]
+[wt 0.1]
+[charaEffect A bit_talk_x_slash_bk_02]
+[charaShake A 0.05 3 3 0.3]
+[wt 0.1]
+[se bac7]
+[wt 0.5]
+
+[fowardEffect bit_talk_35]
+[charaShake A 0.05 3 3 0.2]
+[se ad161]
+[charaCrossFade A 1098204400 4 0.1]
+[wait charaCrossFade A]
+[wt 1.5]
+
+＠段蔵
+……ッ！　不覚！
+[k]
+
+？1：段蔵さん！
+
+？！
+
+？1：（[&自分:わたし]を[#庇:かば]って[line 6]！？）
+
+？！
+
+[charaFace A 2]
+
+＠段蔵
+お逃げくださいマスター！[r]段蔵は[#此処:こ　こ]にて、大蜘蛛の怪異を食い止めまする！
+[k]
+
+＠段蔵
+この先の大路へ！[r]どうか！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ade311]
+[shake 0.02 4 4 0.6]
+[wt 0.6]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[se ad989]
+[wt 1.5]
+[seStop ad989 0.2]
+
+？1：置いては行かない！
+？2：生き延びるくらいのことは、やってみせる！
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠段蔵
+いけない！[r]マスター！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[se ad990]
+[wt 1.5]
+
+[fadeout black 0.5]
+[seStop ad990 0.5]
+[bgm BGM_EVENT_72 0.5 0.4]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+＠
+[line 3]魔圏、平安京にあって。
+[k]
+
+
+＠
+連れ合いを[#庇:かば]った[&男:娘]が、哀れ、[r]怪異に貪り喰われる光景などは日頃の常である。
+[k]
+
+＠
+特に、この頃、[r]京の外れには[#土蜘蛛:つちぐも]が出る。
+[k]
+
+＠
+怨の一文字で総身を形作ったかの如き、[r]黒き怪異。本朝にまつろわぬモノたちの、叫びの具現。
+[k]
+
+＠
+人の子なぞ呆気なく終わる。[r]刹那のうちに引き裂かれ、喰われ、呑まれる。
+[k]
+
+[bgmStop BGM_EVENT_72 1.0]
+
+＠
+……だが。[#併:しか]し。
+[k]
+
+[messageOff]
+[wt 0.7]
+
+＠
+その場に[line 3]
+[k]
+
+＠
+[#源氏の武者が通りすがったならば]？
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[scene 102201]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+[wt 0.5]
+
+＠太刀の男
+[line 5]ほう。
+[k]
+
+＠太刀の男
+連れ合いを捨て置き、[r]我先に一人きりで逃げ出さぬ。
+[k]
+
+＠太刀の男
+その心意気、悪くない。
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[charaDepth E 2]
+[charaDepth D 1]
+
+[charaFace E 0]
+[charaFadein E 0.4 1]
+
+[se ad60]
+[wt 0.4]
+[seStop ad60 0.2]
+[wt 0.5]
+
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.1]
+
+[charaFadeout E 0.7]
+[wt 1.0]
+
+[charaTalk on]
+[bgm BGM_EVENT_67 0.1]
+
+＠太刀の男
+土蜘蛛に狙われるとは。[r]どこぞの武家の嫡子か、縁戚の子か？
+[k]
+
+＠太刀の男
+或いは、どこぞの公家の血筋か[line 3]
+[k]
+
+[messageOff]
+[charaTalk A]
+[se ade311]
+[seVolume ade311 0 0.6]
+[shake 0.02 3 3 0.6]
+[wt 0.7]
+
+[se ad990]
+[wt 1.5]
+[seStop ad990 0.3]
+[wt 0.3]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠段蔵
+そこの御仁！[r]単身ではいけない、どうか人を……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠太刀の男
+人を呼ぶ？　助けを呼んで来いという意味か？
+[k]
+
+[charaFace D 1]
+
+＠太刀の男
+俺が、助けを。か。[r]面白い事を云う女がいたもの。
+[k]
+
+[messageOff]
+[charaTalk A]
+[se ade311]
+[shake 0.02 4 4 0.6]
+[wt 0.7]
+
+？1：……涼しい顔してないで、逃げて！
+
+？！
+
+[se ad990]
+[wt 1.5]
+[seStop ad990 0.3]
+[wt 0.3]
+[charaFace D 0]
+＠太刀の男
+[line 6][#五月蠅:う　る　さ]い蜘蛛だ。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.2]
+
+[effect bit_talk_h_slash01_fs]
+[se bac308]
+[wt 1.0]
+
+[fowardEffect bit_talk_blood_splash_fs]
+[se ad464]
+[charaFadeout C 0.1]
+
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠段蔵
+！
+[k]
+
+＠段蔵
+一刀……両断……！？
+[k]
+
+[charaFace A 4]
+
+＠段蔵
+し、しかし……[r]剣閃も太刀筋もワタシの[#感覚器:セ ン サ ー]では[#視えず]……
+[k]
+
+[charaFace A 5]
+＠段蔵
+アナタは……！[r]い、一体……何者か……！
+[k]
+
+[messageOff]
+[charaDepth H 9]
+[charaDepth B 8]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+[shake 0.02 4 4 0.7]
+[charaPut H 0,0]
+[charaMove C 0,-70 1.2]
+[wt 0.6]
+[se ade311]
+[charaEffect H bit_talk_impactlanding]
+[wt 1.2]
+[charaFadeout C 0.4]
+[wt 1.2]
+
+[se ad163]
+[seStop ad163 0.3]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+[se ad1034]
+[wt 1.0]
+
+＠太刀の男
+……………………。
+[k]
+
+？1：[line 8]。
+
+？！
+
+[charaFace D 0]
+
+＠太刀の男
+ふむ。
+[k]
+
+＠太刀の男
+土蜘蛛を前にして震えは多少なりともあれど、[r]腰を抜かさず、何より、そう……
+[k]
+
+＠太刀の男
+[#目が生きている]。
+[k]
+
+＠太刀の男
+平安の世ならざる奇異なる出で立ち。[r]異境の軽装。
+[k]
+
+＠太刀の男
+そして、[#斯様:か よ う]に二人仲良く連れ合って[line 3]
+[k]
+
+＠太刀の男
+特有の魔力とやらを感じなくもない、[r]と来れば間違いなかろうよ。
+[k]
+
+[charaFace D 5]
+[bgmStop BGM_EVENT_67 1.0]
+
+＠太刀の男
+[#英霊:サーヴァント]と、[#天覧武者:マ　ス　タ　ー]。だな？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠段蔵
+！？[bgm BGM_EVENT_48 0.1]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[wt 0.4]
+
+？1：………………あなたは、[&誰だ:誰]
+
+？！
+
+[charaFace D 0]
+
+＠太刀の男
+俺か。[r]名乗りが欲しいならくれてやる。
+[k]
+
+[messageOff]
+[charaFace D 4]
+[wt 0.7]
+
+＠太刀の男
+都の守護たる頼光四天王が筆頭。[r]天下の宝刀髭切を預かる、源氏の武者。
+[k]
+
+[charaFace D 5]
+
+＠太刀の男
+[line 6][#内舎人:う ど ね り][#渡辺綱:わたなべのつな]、[#此処:こ　こ]に推参。
+[k]
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_48 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

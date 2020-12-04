@@ -1,0 +1,628 @@
+
+＄03-00-07-05-4-1
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 7006300 1 坂田金時]
+[charaSet B 5011002 1 バベッジ]
+[charaSet C 1098202400 1 藤原香子]
+[charaSet D 1098203500 1 鋼の怪1]
+[charaSet E 1098203500 1 鋼の怪2]
+[charaSet F 1098203500 1 鋼の怪3]
+[charaSet G 1047001 1 渡辺綱]
+[charaSet H 5017000 1 メディア・リリィ]
+[charaSet I 6030000 1 段蔵]
+
+[imageSet O back10001 1]
+[charaScale O 1.05]
+
+[scene 103200]
+
+[cameraMove 0.1 0,0 1.01]
+
+[bgm BGM_EVENT_24 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaDepth B 1]
+[charaDepth A 2]
+
+[charaTalk off]
+
+[charaFace B 2]
+[charaFace A 9]
+[charaFadein B 0.1 -256,0]
+[charaFadein A 0.1 256,0]
+[wt 0.1]
+
+[effect bit_talk_x_slash01]
+[effect bit_talk_x_slash_gl_02]
+[se ad7]
+[charaMove B -150,0 0.2]
+[charaMove A 150,0 0.2]
+[wt 0.3]
+[charaShake A 0.05 3 3 0.3]
+[charaShake B 0.05 3 3 0.3]
+[effect bit_talk_14]
+[se ad471]
+[se ad32]
+[wt 0.5]
+
+[charaMove B -356,0 0.2]
+[charaMove A 356,0 0.2]
+[wt 0.1]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaFace A 8]
+[charaFadein A 0.4 -100,0]
+[se ad671]
+[seStop ad671 0.5]
+[charaMove A 56,0 0.2]
+[wt 0.2]
+[charaMove A 156,0 0.3]
+[wt 0.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaFace B 2]
+[charaFadein B 0.4 100,0]
+[se ad671]
+[seStop ad671 0.5]
+[charaMove B -56,0 0.2]
+[wt 0.2]
+[charaMove B -156,0 0.3]
+[wt 0.5]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠坂田金時
+おおおッ！
+[k]
+
+[messageOff]
+[se ad85]
+[se ad1010]
+[effect bit_talk_gold_slash_02]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.2]
+[effect bit_talk_14]
+[wt 0.2]
+[charaShake B 0.05 3 3 0.7]
+[charaFace B 4]
+
+[bgmStop BGM_EVENT_24 1.5]
+[wt 1.2]
+
+＠バベッジ
+…………………力、比べ、は。
+[k]
+
+＠バベッジ
+貴様の勝ちだな。[r]キントキ。
+[k]
+
+[messageOff]
+[charaMove B 0,-20 0.6]
+[se ad1003]
+[seStop ad1003 0.6]
+[se ade311]
+[wt 0.2]
+[charaFadeout B 0.4]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠藤原香子
+あ、ああ……あああああああああ……[line 3]
+[k]
+
+[charaFace C 6]
+
+＠藤原香子
+おじさま、おじさま……！[r]いやあ……！
+[k]
+
+＠藤原香子
+チャールズ・バベッジ…………！
+[k]
+
+[messageOff]
+[wt 1.0]
+[wipeout rectangleStripLeftToRight 1.0 1.0]
+[wait wipe]
+
+[scene 104300]
+[charaFadeout C 0.1]
+[effect bit_talk_40]
+[charaPut O 0,-200]
+[charaFadeTime O 0.1 0.4]
+[pictureFrame cut063_cinema]
+[wt 0.2]
+
+[charaDepth D 3]
+[charaDepth E 2]
+[charaDepth F 1]
+
+[charaTalk off]
+
+[charaFaceFade F 1 0.2]
+[charaFaceFade E 1 0.2]
+[charaFaceFade D 1 0.2]
+
+[charaFadeinFSL F 0.1 -400,-50]
+[charaFadeinFSR E 0.1 400,-50]
+[charaFadein D 0.1 0,-50]
+[wt 0.3]
+
+[wipein rectangleStripRightToLeft 1.0 1.0]
+[wait wipe]
+[se ad69]
+[wt 0.7]
+
+[se ad1003]
+[wt 1.2]
+
+[se ad1016]
+[charaFace F 0]
+[charaFace E 0]
+[charaFace D 0]
+[wt 1.0]
+
+[charaSpecialEffect D enemyErasure 1 1.7]
+[charaSpecialEffect E enemyErasure 1 1.7]
+[charaSpecialEffect F enemyErasure 1 1.7]
+[se ad42]
+[wait charaSpecialEffect D]
+[wait charaSpecialEffect E]
+[wait charaSpecialEffect F]
+
+[fadeout white 1.0]
+[wait fade]
+[effectDestroy bit_talk_40]
+[charaFadeout O 0.1]
+[wt 0.5]
+[fadein white 1.0]
+[wait fade]
+
+[charaTalk on]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠渡辺綱
+[#是:これ]は……[bgm BGM_EVENT_70 0.1]
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaPut H 0,-50]
+[charaSpecialEffect H appearance 1 0.8]
+[wt 0.2]
+[se ad52]
+[wt 0.5]
+[seStop ad52 0.3]
+[wt 0.5]
+
+＠メディア・リリィ
+綱さま、申し上げます。[r]敵性サーヴァントの霊核が砕かれました。
+[k]
+
+＠メディア・リリィ
+さほどの時を経ず、[r]彼は当世を退去しましょう。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+
+＠渡辺綱
+ふむ。
+[k]
+
+＠渡辺綱
+逃げの一手を打たずに死に果てるか。[r]ならば[#是:これ]は、自害[line 3]
+[k]
+
+[messageOff]
+[charaFace G 4]
+[wt 1.0]
+[charaFace G 0]
+
+＠渡辺綱
+否、些か違うか。
+[k]
+
+＠渡辺綱
+己が[#天覧武者:マ　ス　タ　ー]を護らんがため、[r]俺に劣る金時に賭けたか。
+[k]
+
+＠渡辺綱
+確かにな。[r]俺の太刀では加減が利かぬ。
+[k]
+
+＠渡辺綱
+四天王たる[#卜部:う ら べ]殿や[#碓井:う す い]殿を相手取ってさえ、[r]浅からぬ傷を与えし、我が髭切。
+[k]
+
+＠渡辺綱
+武を修めざる紫式部殿ならば、[r]さて。腕の一本で済んだか否か[line 3]
+[k]
+
+[messageOff]
+[se ad1034]
+[wt 0.7]
+
+[charaCrossFade G 1098201600 0 0.4]
+[wait charaCrossFade G]
+[wt 0.3]
+
+[charaFace G 1]
+
+＠渡辺綱
+去るぞキャスター。最早、[#此処:こ　こ]に用はない。
+[k]
+
+＠渡辺綱
+[#此度:こたび]の死合い、[r]金時の星となった。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+
+＠メディア・リリィ
+はい。綱さま。
+[k]
+
+[messageOff]
+[wt 0.5]
+[bgmStop BGM_EVENT_70 1.0]
+[wipeout rectangleStripRightToLeft 1.0 1.0]
+[wait wipe]
+
+[charaFadeout H 0.1]
+[pictureFrame]
+[wt 1.0]
+
+[wipein rectangleStripLeftToRight 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+[charaMove B 0,-30 0.5]
+[se ade311]
+[se ad68]
+[wt 0.5]
+[shake 0.02 4 4 0.7]
+[se ade311]
+[wt 1.5]
+[bgm BGM_EVENT_75 0.1]
+
+？1：チャールズ・バベッジ……
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠段蔵
+バベッジ殿……
+[k]
+
+？2：（無言）
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠段蔵
+……………………ッ。
+[k]
+
+
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠バベッジ
+フ、フフ、フ…………
+[k]
+
+＠バベッジ
+何も、何も不思議はないぞ……。[r]我が[#裡:うち]には、深き納得のみが染み渡っている。
+[k]
+
+＠バベッジ
+我が階差機関の導く解答に従いながら、[r]同時に我は、我が魂の閃きに、賭けた……！
+[k]
+
+[charaFace B 1]
+
+＠バベッジ
+[#其:そ][#処:こ]の[&黒髪の若人:赤毛の娘]、[r]他人のようには感じぬよ。
+[k]
+
+＠バベッジ
+まるで、そう、旧来の友であるかのような……[r]遠き彼方にて共に歩んだ、ような……
+[k]
+
+＠バベッジ
+錯覚か……？
+[k]
+
+＠バベッジ
+否。そうでは、あるまい。
+[k]
+
+？1：…………！
+
+？！
+
+＠バベッジ
+ならば……[r]我が使命を託すに、憂い、なし。
+[k]
+
+＠バベッジ
+召喚されし我が自身に定めしは、カオルコの護り。[r]我は自らの言葉を裏切ったが、それでも……
+[k]
+
+＠バベッジ
+護りたい、と、願うのだ。[r]我が命を以て、託したい。
+[k]
+
+＠バベッジ
+どうか[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠坂田金時
+……ああ。
+[k]
+
+＠坂田金時
+云われなくたって、[r]誰にも傷付けさせやしねえさ。
+[k]
+
+[charaFace A 4]
+
+＠坂田金時
+つってもな、旦那。[r][#術者:キャスター]が死ねば、[#天覧武者:マ　ス　タ　ー]は資格を失う。
+[k]
+
+＠坂田金時
+そうなりゃ、綱の兄貴にも狙われるコトはねえ。[r]なあ。アンタはそれを分かった上で……
+[k]
+
+＠坂田金時
+…………オレたちと死合ったんだろ。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.2]
+[se ad1016]
+[wt 1.5]
+
+＠バベッジ
+赤き龍が如き猛き者よ。
+[k]
+
+＠バベッジ
+麗しき東方の自動人形よ。
+[k]
+
+＠バベッジ
+[&黒髪の若人:赤毛の娘]よ。
+[k]
+
+＠バベッジ
+そして、カオルコ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠藤原香子
+あ、ああ……
+[k]
+
+＠藤原香子
+おじさま、おじさま……[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠バベッジ
+夢を捨てるな。[r]何ひとつとして貴様たちが捨てる必要は、ない。
+[k]
+
+＠バベッジ
+たとえ、この世で最も儚きモノこそが……
+[k]
+
+＠バベッジ
+夢、なのだとしても。[r]捨ててはいけない。
+[k]
+
+？1：夢……？
+？2：（無言）
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠坂田金時
+[#狡:ずる]いぜ、旦那。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.2]
+[se ad1016]
+[wt 1.5]
+
+＠バベッジ
+我、夢潰えし後に人理に刻まれし英霊である。[r]ならばこそ云う、若人たちよ。
+[k]
+
+＠バベッジ
+忘れるな。[r]己を、奮起させ続けよ。
+[k]
+
+＠バベッジ
+困難はあろう。[r]苦悶もあろう。
+[k]
+
+＠バベッジ
+立ち止まるのもよい。[r]休むのもよい。
+[k]
+
+[charaFace B 1]
+
+＠バベッジ
+だが、捨てるな……決して……！
+[k]
+
+＠バベッジ
+夢だけは捨てず、[r]立ち止まったなら、いつか再び進むがいい。
+[k]
+
+＠バベッジ
+己が夢を理想の鋼鉄で[#鎧:よろ]うのだ。[r]さすれば貴様たちは、きっと、進み続けられよう。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+[wt 1.4]
+
+[charaFace A 7]
+[wt 1.4]
+
+？1：[line 12]。
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[charaEffect B bit_talk_06]
+
+＠バベッジ
+歩め。進み、続けよ！
+[k]
+
+＠バベッジ
+迷い、傷付こうと、ただ……前へ、進め……！
+[k]
+
+＠バベッジ
+……若人たちよ……！
+[k]
+
+[messageOff]
+[charaSpecialEffect B flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect B]
+[charaEffectStop B bit_talk_06]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠藤原香子
+おじさま…………！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_75 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,717 @@
+
+
+
+＄03-00-07-12-2-0
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 1098201200 1 平景清]
+[charaSet B 1098203000 1 大土蜘蛛]
+[charaSet C 1098201200 1 平景清シルエット]
+[charaFilter C silhouette 00000080]
+[charaSet D 6030000 1 段蔵]
+[charaSet E 7006300 1 坂田金時]
+[charaSet F 6021001 1 酒呑童子]
+[charaSet H 98115000 1 エフェクト用]
+[imageSet M back10000 1]
+[charaScale M 1.05]
+
+[cameraMove 0.1 0,0 1.01]
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 102401]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[se ad32]
+[charaPut H 1]
+[charaEffect H bit_talk_kengekiall01_fs]
+[wt 0.2]
+[se ad32]
+[wt 0.3]
+[se ad32]
+[wt 0.2]
+[charaPut H 1200,1200]
+
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.4]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[charaFace A 2]
+[charaMove A 0,20 0.2]
+[charaMoveScale A 1.1 0.2]
+[effect bit_talk_v_slash02]
+[wt 0.2]
+[se ad85]
+[blurOff motion 0.2]
+[charaFadeout A 0.1]
+[wt 0.4]
+[charaScale A 1.0]
+[effect bit_talk_14]
+[se ad1013]
+[se ad1014]
+[wt 0.6]
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[wt 0.2]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.4 -100,0]
+[charaMove E -30,0 0.1]
+[wt 0.1]
+[charaMove E 1 0.2]
+
+＠坂田金時
+おおおッ！[r]頭、くらッくらするぜ！
+[k]
+
+[charaFace E 5]
+
+＠坂田金時
+[#疾:はや]いわ強いわでどう云うんだか、こりゃあ！[r]強い強い。なにせ、一騎のみでさえこの強さ[line 3]
+[k]
+
+[charaFace E 6]
+
+＠坂田金時
+二騎同時ならとうに死んでらァ！[r]なあ、酒呑！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[se ad57]
+[shake 0.05 4 4 0.5]
+[wt 1.0]
+[seStop ad57 0.5]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[se ad990]
+[shake 0.05 4 4 1.5]
+[wt 3.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠酒呑童子
+あ[messageShake 0.05 3 3 0.5]っははははははははははははは。愉快、愉快！
+[k]
+
+＠酒呑童子
+年甲斐もなくはしゃぐ蜘蛛さんや！[r]ほな蜘蛛さん蜘蛛さん[#此方:こちら]へどうぞ、手ェの[line 3]
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[se ad989]
+[shake 0.05 4 4 1.5]
+[wt 3.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠酒呑童子
+鳴る[line 3]
+[k]
+
+[charaFace F 1]
+
+＠酒呑童子
+方へェ[line 3]
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+
+[se ad746]
+[se ad1050]
+[seVolume ad1050 0 0.3]
+[effect bit_talk_liquor_wave]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[shake 0.05 4 4 6.5]
+
+[wt 1.8]
+[se ad745]
+
+[wt 1.7]
+[seStop ad746 1.5]
+[wt 1.5]
+[se ad990]
+
+[wt 3.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠段蔵
+妖酒による大津波！[r]お見事！
+[k]
+
+＠段蔵
+酒呑童子、何たる[#戦:いくさ]上手！[r]金時殿から[#大土蜘蛛:お お つ ち ぐ も]を引き離しつつの、源氏毒中和！
+[k]
+
+[charaFace D 5]
+
+＠段蔵
+あれなる妖酒を絶えず振りまくことで、[r]大気中の毒素を打ち消している……！
+[k]
+
+[charaTalk depthOff]
+[charaDepth D 5]
+[charaDepth M 2]
+
+[charaFadeTime M 0.2 0.5]
+
+＠段蔵
+（しかし、妖酒[line 3]）
+[k]
+
+＠段蔵
+（英霊・酒呑童子としての宝具とは異なれど、[r]　まさか、生前にも酒精を力として扱っていたとは）
+[k]
+
+＠段蔵
+（伝承、伝説には語られざる奥義。[r]　多くを語らぬ大陸の日々で会得せしものか？）
+[k]
+
+[messageOff]
+[charaFadeout M 0.1]
+[charaFadeout D 0.1]
+[wt 1.0]
+[charaTalk depthOn]
+
+[se ad57]
+[shake 0.05 0 4 1.0]
+[wt 1.0]
+[seStop ad57 0.5]
+[wt 0.3]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[se ad990]
+[shake 0.05 3 3 1.5]
+[wt 3.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠酒呑童子
+まあまあ、[#苛:いら]つかはって。[r]そろそろゆるりと休んだらええやないの。
+[k]
+
+[charaFace F 1]
+
+＠酒呑童子
+なあ、[#お爺はん]？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[se ad989]
+[wt 2.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠酒呑童子
+むかしむかし、大江の御山に[#棲:す]んではった大怪異！[r][#其:そ]の名も[#大土蜘蛛:お お つ ち ぐ も]・[#玖賀耳之御笠:く が み み の み か さ][line 3]
+[k]
+
+＠酒呑童子
+うちらが来るより随分前に[r]退治されはった云う話やけど、ああ、せや。
+[k]
+
+＠酒呑童子
+英霊ちゅうんは不思議やねえ？[r]死んだもんが蘇るが如きや。
+[k]
+
+＠酒呑童子
+でも[line 3]なァ[line 3]
+[k]
+
+[messageOff]
+[charaFace F 1]
+[wt 1.0]
+
+＠酒呑童子
+御山はもう、ぜぇんぶうちのもんや。[r]あんたはんは[#黄泉:よ　み]に還らはったらよろしおす。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ad57]
+[shake 0.05 0 4 0.5]
+[wt 1.0]
+[seStop ad57 0.5]
+[wt 0.5]
+[se ad57]
+[shake 0.05 0 4 0.5]
+[wt 1.0]
+[seStop ad57 0.5]
+[wt 0.5]
+[se ad57]
+[shake 0.05 0 4 0.5]
+[wt 1.0]
+[seStop ad57 0.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[se ad990]
+[shake 0.05 4 4 1.5]
+[wt 3.5]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠酒呑童子
+まあまあ、そないに怒らはって！[r]うち怖いわぁ。
+[k]
+
+＠酒呑童子
+怖いから[line 3][wt 0.5][charaFace F 1][r][line 6][#ばらばらにしたった]けど、堪忍え？
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_24 1.0]
+
+[se ad1053]
+[effect bit_talk_quick_slash]
+[wt 1.0]
+
+[effect bit_talk_blood_splash_fs 0,0 H]
+[effect bit_talk_blood_splash_fs]
+[se ad464]
+
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+[se ad42]
+[charaEffect B bit_talk_atomization]
+[wt 0.4]
+[charaFadeout B 1.2]
+[wt 1.0]
+[wt 2.0]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠段蔵
+……！
+[k]
+
+＠段蔵
+巨大敵性体、五体寸断され四散して沈黙！[r]魔力反応も急速に霧散！
+[k]
+
+
+[messageOff]
+[wt 0.6]
+[charaFace D 2]
+[wt 0.5]
+
+
+＠段蔵
+マスター！
+[k]
+
+
+？1：（晴明の符を一枚、放る！）
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[se ad7]
+[wt 0.8]
+
+
+[se ad1054]
+[effect bit_talk_pentagram_06]
+[wt 4.9]
+[se ad598]
+[wt 2.0]
+[seStop ad598 0.3]
+[wt 0.4]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠段蔵
+[#是:これ]にて三将目！[r]しかし、驚嘆すべきは酒呑童子のわざ……
+[k]
+
+
+＠段蔵
+ワタシの[#感覚器:セ ン サ ー]では感知不能の超高速攻撃を、[r]先刻の妖酒による[#波濤:は と う]と同時に、放っていた……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠酒呑童子
+どないやろねえ？[r]うちも、よう分からへんけど[#ばらばら]や。
+[k]
+
+＠酒呑童子
+幾らか分かることもあるんよ。
+[k]
+
+＠酒呑童子
+せや[line 3]小僧、源氏毒の正体見たりや！
+[k]
+
+[charaFace F 0]
+
+＠酒呑童子
+[#大土蜘蛛:お お つ ち ぐ も]の旦那はんが発してはった大瘴気に[r]なんや妖術混ぜはったんやなぁ、けったいやわぁ。
+[k]
+
+＠酒呑童子
+もう、息吸わはっただけで[r]源氏の武者が痺れることはあらへんえ。
+[k]
+
+＠酒呑童子
+あとは好きにやりや、小僧。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[wt 0.2]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.2 60,0]
+[charaMove E 0,0 0.3]
+[wt 0.4]
+
+＠坂田金時
+[#重畳:ちょうじょう]だ！
+[k]
+
+＠坂田金時
+これで心おきなく[#戦:や]れるッてもんだ、子孫殿！[r]いやさ牛若丸！
+[k]
+
+[messageOff]
+[seStop ad986 1.5]
+[charaFace E 7]
+[wt 1.5]
+[charaFace E 5]
+[bgm BGM_MAP_53 0.1]
+＠坂田金時
+[line 3]この橋、この道！
+[k]
+
+＠坂田金時
+[line 3]通りたくば拙僧と刃交えてからにするがよい！
+[k]
+
+＠坂田金時
+[line 3]拙僧、千本の太刀を集めんと誓いし破戒僧！[r][line 3]名を武蔵坊弁慶と云う！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠歳刑神・平景清
+！
+[k]
+
+＠歳刑神・平景清
+[#未:ま]だ続けるか。[r]貴様。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠坂田金時
+[line 3]五条の橋は通さぬぞ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠歳刑神・平景清
+止めろ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠坂田金時
+[line 3]腰に[#佩:は]いた太刀、名高き名剣と見たが如何に！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠歳刑神・平景清
+止めろ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠坂田金時
+[line 3]この武蔵坊、千本目の太刀は貴様に決めたわ！[r][line 3][#童:わっぱ]。いざ太刀を抜けい！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠歳刑神・平景清
+[f large]止[messageShake 0.05 3 3 0.3]めろ弁慶っ！
+[k]
+
+[messageOff]
+[se ad350]
+[charaPut H 1]
+[charaEffect H bit_talk_charge_ppl02]
+[wt 2.5]
+[se ad574]
+[fadeout white 1.5]
+[wait fade]
+
+[charaCrossFade A 1098201300 2 0.5]
+[wt 1.0]
+[wait charaCrossFade A]
+
+[fadein white 2.0]
+[wait fade]
+[wt 1.2]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[seStop ad350]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_charge_ppl02]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠段蔵
+魔力急上昇からの霊基再臨を確認！[r]皆さま、ご注意をば！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 0.5]
+[se ad60]
+[charaMoveScale A 1.05 0.4]
+[charaMove A 0,10 0.4]
+[wt 0.2]
+[seStop ad60]
+[wt 0.8]
+
+＠歳刑神・平景清
+儂は、私は……！
+[k]
+
+[charaFace A 2]
+
+＠歳刑神・平景清
+この[#義経:私]は……！[r][#景清:かげきよ]……[messageShake 0.05 3 3 0.3]否、否、否……！　否！
+[k]
+
+＠歳刑神・平景清
+この私こそは九郎[#判官:ほうがん]源義経！
+[k]
+
+＠歳刑神・平景清
+この[#骸:むくろ]こそ、かつて遮那王にして牛若であったモノ！
+[k]
+
+＠歳刑神・平景清
+[#騙:かた]るな弁慶もどき！[r]貴様如きに何が分かる……！
+[k]
+
+[charaFace A 7]
+
+＠歳刑神・平景清
+私は……！
+[k]
+
+＠歳刑神・平景清
+戦って、戦って、戦って、戦って、戦って……[line 3]
+[k]
+
+[charaFace A 6]
+
+＠歳刑神・平景清
+戦い続けた果てに、[r]得られたものは刃と炎のみであった。
+[k]
+
+＠歳刑神・平景清
+我が想いのすべては兄上に届かず、[r]紡ぐ言の葉すべては[#悉:ことごと]く焼き捨てられていた。
+[k]
+
+＠歳刑神・平景清
+この[#怨:うら]み、忘れまいぞ。[r]この[#怨:うら]み、魂の一片になろうとも失ってなるものか。
+[k]
+
+[charaFace A 2]
+
+＠歳刑神・平景清
+我が想いは裏切られ、我が道は[#穢:けが]され途絶えた！[r]最早この足が進む先に光はなく、明日もまたない！
+[k]
+
+[charaFace A 5]
+
+＠歳刑神・平景清
+おのれ……
+[k]
+
+＠歳刑神・平景清
+おのれ頼朝、おのれ日の本……
+[k]
+
+[charaFace A 2]
+
+＠歳刑神・平景清
+おのれ源氏ィィィ！！[r]郎等ごときが弁慶を[#騙:かた]るとは決して許すまじ！
+[k]
+
+[messageOff]
+[se ad350]
+[charaPut H 1]
+[charaEffect H bit_talk_charge_ppl02]
+[wt 1.3]
+
+
+＠歳刑神・平景清
+[f large]怨[messageShake 0.05 3 3 0.4]の一文字その身で喰らえッ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[seStop ad350 1.5]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_charge_ppl02]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠坂田金時
+[f large]おうとも！
+[k]
+
+＠坂田金時
+かかって来やがれ九郎[#判官:ほうがん]！[r]オレっちが話をしてえのはなんちゃら[#景清:かげきよ]じゃねえ！
+[k]
+
+＠坂田金時
+アンタだ！　義経！
+[k]
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_MAP_53 0.4]
+[wait fade]
+[soundStopAll]
+[end]

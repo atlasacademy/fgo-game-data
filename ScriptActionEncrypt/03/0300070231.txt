@@ -1,0 +1,878 @@
+
+＄03-00-07-02-3-1
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 1047001 1 渡辺綱]
+[charaSet B 5017000 1 メディア・リリィ]
+[charaSet C 7006300 1 坂田金時]
+[charaSet D 1098204400 1 段蔵]
+[charaSet E 98006200 1 エネミー]
+[charaSet F 98006200 1 エネミー]
+[charaSet G 98006200 1 エネミー]
+[imageSet L back10000 1]
+[charaScale L 1.05]
+
+[scene 102101]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠渡辺綱
+キャスター！[r]骨の式神はもういい、邪魔だ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠メディア・リリィ
+竜牙兵です！　ですが……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠渡辺綱
+金時には効かん！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠坂田金時
+どうりゃあッ！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaDepth E 1]
+[charaDepth F 2]
+[charaDepth G 3]
+
+[charaFace E 0]
+[charaFace E 0]
+[charaFace E 0]
+
+[se ad1010]
+[wt 0.2]
+[effect bit_talk_gold_slash_02]
+[wt 0.2]
+
+[charaFadeinFSL E 0.1 -350,0]
+[charaFadeinFSR F 0.1 350,0]
+[charaFadein G 0.1 1]
+
+[charaShake E 0.05 3 3 0.7]
+[charaShake F 0.05 3 3 0.7]
+[charaShake G 0.05 3 3 0.7]
+[wt 0.9]
+
+[se ad42]
+[charaSpecialEffect E enemyErasure 1 1.5]
+[charaSpecialEffect F enemyErasure 1 1.5]
+[charaSpecialEffect G enemyErasure 1 1.5]
+[wait charaSpecialEffect E]
+[wait charaSpecialEffect F]
+[wait charaSpecialEffect G]
+[wt 1.5]
+
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠坂田金時
+ハハッ、なんだよ！
+[k]
+
+＠坂田金時
+野山を駆ける一匹の狼が如きアンタが！[r]骨の雑兵引き連れて襲い来るとは面食らったが！
+[k]
+
+＠坂田金時
+どうってこたねえ[line 3][wt 0.5][charaFace C 10]おっと！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.2]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[charaMoveScale A 1.1 0.2]
+[charaMove A 0,10 0.2]
+[se ad7]
+[wt 0.1]
+[charaFadeout A 0.1]
+[blurOff motion 0.2]
+[wt 0.1]
+[charaScale A 1.0]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+[wt 0.2]
+
+[fowardEffect bit_talk_x_slash01]
+[se ad1013]
+[wt 0.2]
+[charaShake C 0.05 3 3 0.7]
+
+[fowardEffect bit_talk_x_slash02]
+[se ad1013]
+[wt 0.2]
+
+[fowardEffect bit_talk_x_slash03]
+[fowardEffect bit_talk_14]
+[se ad471]
+[wt 1.5]
+
+[charaFace C 0]
+
+＠坂田金時
+危ねえ危ねえ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠渡辺綱
+髭切を受けて尚、[#刃毀:は こ ぼ]れなし！[r]それでこそ！
+[k]
+
+[messageOff]
+[charaFace A 5]
+[charaEffect A bit_talk_charge_red]
+[se ad664]
+[seVolume ad664 0 0.1]
+[seVolume ad664 1.0 1.0]
+[wt 1.6]
+[seStop ad664 0.2]
+[se bas10]
+[wt 0.2]
+[charaEffect A bit_talk_attack_buf]
+[charaEffectStop A bit_talk_charge_red]
+
+[charaFace A 2]
+
+＠渡辺綱
+おおおッ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠坂田金時
+チイッ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[charaFadeTime L 0.2 0.5]
+
+＠段蔵
+（流石は頼光四天王が一角、金時殿！[r]　綱殿を前に一歩も退かぬ武者ぶりたるや！）
+[k]
+
+＠段蔵
+（ですが綱殿、底知れぬ気配[line 3]）
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠渡辺綱
+おまえとやり合うのは愉しいが、[r]悪いな金時。
+[k]
+
+＠渡辺綱
+天覧武者の資格持たぬ四天王を[r][#何:い][#時:つ]までも相手取る程、俺も[#莫:ば][#迦:か]ではない。
+[k]
+
+[charaFace A 5]
+
+＠渡辺綱
+フッ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+
+[se ad171]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+[fowardEffect bit_talk_14]
+[charaShake C 0.05 3 3 0.4]
+[se ad881]
+[se ad618]
+[wt 0.2]
+
+＠坂田金時
+……つぁ！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠渡辺綱
+この場に在るキャスターは二騎！[r]ならば、[#戴:いただ]く[#首級:しるし]もまた[#ひとつきり]！
+[k]
+
+[messageOff]
+[charaEffect A bit_talk_quickmove]
+[wt 0.05]
+[charaFadeout A 0.1]
+[se ad73]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[charaFadeTime L 0.1 0.5]
+
+＠段蔵
+（綱殿の狙いは[line 3]）
+[k]
+
+＠段蔵
+（金時殿ではない。[r]　ワタシ……にも、今、殺気は向けられていない！）
+[k]
+
+[charaFace D 2]
+
+＠段蔵
+（ならば、マスター！？）
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaScale A 1.2]
+[charaTalk A]
+[charaFace A 5]
+[se ad223]
+[charaPut A 0,20]
+[charaSpecialEffect A appearanceReverse 1 0.2]
+[wt 0.2]
+[seStop ad1 0.2]
+[wt 0.5]
+
+
+＠坂田金時
+あッ、いけねえ[line 3]
+[k]
+
+？1：段蔵さん、霊体化！
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠段蔵
+しょ、承知！
+[k]
+
+[messageOff]
+[wt 0.1]
+[charaSpecialEffect D erasure 1 0.5]
+[se ad595]
+[wait charaSpecialEffect D]
+[seStop ad595 0.3]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠坂田金時
+うお！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,20]
+
+＠渡辺綱
+！？
+[k]
+
+[charaFace A 5]
+
+＠渡辺綱
+消えた、否[line 3]
+[k]
+
+＠渡辺綱
+英霊特有の霊体化というやつか。
+[k]
+
+[charaFace A 2]
+
+＠渡辺綱
+キャスター！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠メディア・リリィ
+は、はい。[r]間違いなくサーヴァントです！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,20]
+[wt 0.2]
+
+[charaMoveScale A 1.0 0.7]
+[charaMove A 0,0 0.7]
+[se ad987]
+[wt 0.8]
+[seStop ad987 0.2]
+[wt 0.2]
+
+＠渡辺綱
+人形の方か。
+[k]
+
+[messageOff]
+[charaFace A 5]
+[wt 1.2]
+[charaFace A 4]
+
+＠渡辺綱
+この[&男:娘]ではない？[r]……目を眩まされたと言うよりは、俺の未熟か。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 1.0]
+[charaFace B 4]
+
+
+＠メディア・リリィ
+も、申し訳ありません！[r]私の言葉が足りぬばかりに！
+[k]
+
+[charaFace B 2]
+
+＠メディア・リリィ
+サーヴァントの反応を有していたのは、[r]たったいま姿を隠した[#長い黒髪]の女性です！
+[k]
+
+＠メディア・リリィ
+そちらの[&黒髪の少年:赤毛の少女]ではありません！
+[k]
+
+？1：……………………
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠渡辺綱
+成る程。[bgm BGM_EVENT_81 0.1]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠メディア・リリィ
+それに、その……
+[k]
+
+＠メディア・リリィ
+長い黒髪の女性はおそらく、[r]キャスター霊基の英霊ではありません。
+[k]
+
+＠メディア・リリィ
+あの身のこなし、[r]きっとアサシンであるかと。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠渡辺綱
+何。
+[k]
+
+＠渡辺綱
+[#キャスター以外のサーヴァント]？[r]そんなモノが在るか。
+[k]
+
+[charaFace A 4]
+
+＠渡辺綱
+……。[r]……。
+[k]
+
+[charaFace A 0]
+
+＠渡辺綱
+…………ふむ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠メディア・リリィ
+綱さま。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠渡辺綱
+いや、いい。[r]早合点をした俺の責だ。
+[k]
+
+[charaFace A 4]
+
+＠渡辺綱
+……[#洛内:らくない]ではまず見ぬ異境の[#衣:ころも]、[r]それに何らかの妖術を行使する素振りもあった。
+[k]
+
+＠渡辺綱
+考えを改める機がついぞなかった。[r]やはり、我が身の未熟だ。
+[k]
+
+[messageOff]
+[wt 0.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[wt 1.4]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠渡辺綱
+金時。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[se ad997]
+
+＠坂田金時
+……訳がわからねえや。[r]何だ何だ。怪我した姉ちゃん、どうやって消えた？
+[k]
+
+[charaFace C 0]
+
+＠坂田金時
+って、おう。何だい、兄ィ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠渡辺綱
+[#此処:こ　こ]は退く。[r]俺が求めるのはキャスターの[#首級:しるし]だけだ。
+[k]
+
+＠渡辺綱
+[#其:そ][#処:こ]の[&男:娘]を連れて、[r]何処へなりとも行くがよい。
+[k]
+
+[charaFace A 5]
+
+＠渡辺綱
+だが……
+[k]
+
+＠渡辺綱
+次に会う時は、[r]おまえの左手を改めようぞ。
+[k]
+
+＠渡辺綱
+何もなければよし。[r]だが、もしも、[#あかしの紋]が浮かんでいれば[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠坂田金時
+どうするつもりだい、兄ィ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠渡辺綱
+無論。[r]斬る。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠坂田金時
+！
+[k]
+
+[charaFace C 6]
+
+＠坂田金時
+ハハッ！　そいつはいいや！[r]本気でオイラにその太刀向けてくれるのかよ！
+[k]
+
+[charaFace C 0]
+
+＠坂田金時
+んじゃまァ[line 3][r]その時を腹ン底から楽しみにするぜ、綱の兄貴。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 1.5]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠渡辺綱
+…………行くぞ。キャスター。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠メディア・リリィ
+は、はい。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 1.5]
+
+[se ad987]
+[se ad60]
+[wt 1.0]
+[seStop ad987 1.5]
+[seStop ad60 1.5]
+[wt 2.0]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠坂田金時
+……。[r]……。
+[k]
+
+＠坂田金時
+………………………………。
+[k]
+
+[charaFace C 3]
+
+＠坂田金時
+………………ふぅ。行ったな？　行ったよな？
+[k]
+
+？1：行った！
+
+[charaFace C 6]
+
+＠坂田金時
+だよな！
+[k]
+
+？2：少なくとも姿は見えない、はず
+
+[charaFace C 6]
+
+＠坂田金時
+気配もねえや！[r]ふう、肝が冷えたぜこりゃあ！
+[k]
+
+？！
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaFace C 0]
+
+＠坂田金時
+はー、久々に痺れちまったぜ。[r]本気じゃなくても太刀[#佩:は]いた兄ィとヤるなんてなァ！
+[k]
+
+＠坂田金時
+アンタら、誇っていいぜ！[r]あの渡辺綱と渡り合って胴と首が繋がったまま、
+[k]
+
+＠坂田金時
+しかも手も足も残ってる！[r]コイツぁ末代までの誉れってもんだ！
+[k]
+
+？1：助けてくれてありがとう
+
+[charaFace C 1]
+
+＠坂田金時
+おう！
+[k]
+
+＠坂田金時
+どういたしまして、だ！　ハハ！
+[k]
+
+？2：……金時は、平安時代でも頼もしいね
+
+[charaFace C 4]
+
+＠坂田金時
+あ？？
+[k]
+
+？！
+
+？1：まるで正義の味方みたいだ
+？！
+
+[charaFace C 11]
+
+＠坂田金時
+セイギ？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaSpecialEffect D appearance 1 0.8]
+[wt 0.2]
+[se ad52]
+[wt 0.5]
+[seStop ad52 0.3]
+[wt 1.2]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+＠坂田金時
+うお[#吃驚:びっくり]したぁ！
+[k]
+
+＠坂田金時
+な、なんだ、[r]気配ごと消えてなかったかアンタ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠段蔵
+正しきを成す、義人の類。
+[k]
+
+＠段蔵
+そのようにこの御方は申しているのです。[r]坂田金時殿。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠坂田金時
+へえ。[r]正しきを成す、か。
+[k]
+
+[charaFace C 4]
+
+＠坂田金時
+ん～～～～～。
+[k]
+
+＠坂田金時
+……………………そうか？　オレがか？
+[k]
+
+[charaFace C 3]
+
+＠坂田金時
+何が正しいのか、オレっちにはよく分からねえ。[r]分かってンなら教えて欲しいくらいだぜ。
+[k]
+
+＠坂田金時
+オイラ、こう、流れで[#迷子に手ェ貸した]だけで、[r]深い事なんざ何も……
+[k]
+
+[messageOff]
+[charaFace C 7]
+[wt 1.0]
+
+[charaFace C 0]
+
+＠坂田金時
+とかく都ってのは難しい！[r]だろ！
+[k]
+
+[bgmStop BGM_EVENT_77 1.0]
+[charaFace C 4]
+
+＠坂田金時
+特に今は、[#天覧聖杯戦争の真っ最中]だしな[line 3]
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

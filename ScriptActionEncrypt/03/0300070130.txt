@@ -1,0 +1,492 @@
+
+
+＄03-00-07-01-3-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 6030000 1 段蔵]
+[charaSet B 1098203100 1 土蜘蛛]
+[imageSet L back10000 1]
+[charaScale L 1.05]
+
+[scene 10000]
+[se ad12]
+[seVolume ad12 0 0]
+
+[fadein black 1.5]
+[wait fade]
+
+[fadeout white 1.0]
+[seVolume ad12 1.0 1.0]
+[wait fade]
+[scene 102201]
+[wt 1.5]
+[fadein white 1.5]
+[wait fade]
+
+[se ad985]
+[seVolume ad985 0 0.1]
+[seVolume ad985 2.0 0.7]
+[wt 2.0]
+
+
+
+[cameraMove 0.5 0,0 1.1]
+[se ad60]
+[wt 0.5]
+[seStop ad60 0.2]
+[wt 0.5]
+
+？1：ここは……
+
+？！
+
+？1：レイシフト、成功した……？
+
+？！
+
+[messageOff]
+[cameraMove 1.5 75,0 1.2]
+[wt 1.8]
+[cameraMove 1.5 -75,0 1.2]
+[wt 1.8]
+[cameraMove 1.5 0,0 1.01]
+[wt 2.0]
+
+？1：マシュ！
+
+[seStop ad985 1.0]
+
+＠段蔵
+おそれながら！
+[k]
+
+？2：小太郎、段蔵さん！
+
+[seStop ad985 1.0]
+＠段蔵
+はっ！
+[k]
+
+？！
+
+[messageOff]
+[charaTalk A]
+[charaFace A 0]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect A appearance 1 0.25]
+[wt 0.4]
+
+＠段蔵
+[line 3]段蔵にございます。
+[k]
+
+＠段蔵
+周辺走査、既に完了にて。[r]平安時代の京へのレイシフトは終了しています。
+[k]
+
+[charaFace A 4]
+
+＠段蔵
+しかし……
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgm BGM_EVENT_81 0.1]
+[charaFace A 5]
+
+＠段蔵
+マシュ殿と！[r]小太郎殿の姿が！
+[k]
+
+＠段蔵
+何処にも、見えませぬ！
+[k]
+
+？1：！！
+
+？！
+
+＠段蔵
+お二人の魔力反応、[r]感知できず。
+[k]
+
+[charaFace A 4]
+
+＠段蔵
+足跡をはじめとする痕跡も一切なく、[r]小太郎殿であれば残すであろう忍び符丁もなく。
+[k]
+
+＠段蔵
+不可解な事態にて……
+[k]
+
+[messageOff]
+[charaFace A 0]
+[wt 0.2]
+[charaMoveReturn A 0,-2 0.3]
+[se ad15]
+[wt 0.4]
+[charaMoveReturn A 0,-2 0.3]
+[se ad15]
+[wt 0.6]
+
+＠段蔵
+現在地点、平安京南西部。
+[k]
+
+[charaFace A 4]
+
+＠段蔵
+[#搭載:インストール]した地図情報通りの無人地帯ではありますが、[r]ノウム・カルデアへの連絡もままならず、
+[k]
+
+＠段蔵
+この場に到着叶ったのは、[r]ワタシとマスターのみと[#思:おぼ]しく……！
+[k]
+
+？1：レイシフト妨害！
+
+[charaFace A 5]
+
+＠段蔵
+は。恐らくは！
+[k]
+
+[charaFace A 4]
+
+？2：リンボか……！
+
+＠段蔵
+……はい。恐らくは……
+[k]
+
+？！
+
+＠段蔵
+……。[r]……。
+[k]
+
+[charaFace A 0]
+
+＠段蔵
+………………マスター。
+[k]
+
+＠段蔵
+……妨害対策として、我ら、[r]気配遮断スキルの使用が定められておりました。
+[k]
+
+[branchQuestNotClear lblNotClear 2000118]
+
+＠段蔵
+[#是:これ]は新宿亜種特異点での妨害情報を元に、[r]技術顧問が考案なされた対抗策にて。
+[k]
+
+＠段蔵
+剣の霊基であれば対魔力の発揮、[r]術の霊基であれば陣地作成の応用、
+[k]
+
+＠段蔵
+等々、霊基別の対抗手段がございまする。
+[k]
+
+[branch lblConf]
+[label lblNotClear]
+[label lblConf]
+
+[charaFace A 5]
+
+＠段蔵
+小太郎殿も、ワタシも、[r]指定スキルを使用しましたが……
+[k]
+
+＠段蔵
+レイシフトの完了直前の事です。[r]結界が如き……
+[k]
+
+＠段蔵
+妙な、[#魔力のゆらぎ]を感じた次第にて。
+[k]
+
+？1：それが、マシュと小太郎のレイシフトを……
+
+？！
+
+＠段蔵
+はい。妨害、したのでしょう。
+[k]
+
+[messageOff]
+[charaFace A 0]
+[wt 1.0]
+[charaFace A 4]
+
+＠段蔵
+その時、実は……
+[k]
+
+＠段蔵
+僅かながらではありますが、[r]小太郎殿の魔力を感じましてございます。
+[k]
+
+＠段蔵
+[#是:これ]は、想像にすぎませぬが……
+[k]
+
+＠段蔵
+小太郎殿は、自ら、[r]囮になったのやもしれませぬ。
+[k]
+
+＠段蔵
+二騎ともレイシフトに失敗するよりは、[r]せめて一騎でもマスターのお側に、と。
+[k]
+
+？1：小太郎が、段蔵さんを送ってくれたんだね
+
+？！
+
+[charaFace A 1]
+
+＠段蔵
+……はい。
+[k]
+
+＠段蔵
+我が身の未熟を痛感するばかりです。[r]小太郎殿こそ、真の[#忍び:アサシン]でありましょう。
+[k]
+
+[messageOff]
+[charaFace A 4]
+[wt 1.0]
+[charaFace A 0]
+
+＠段蔵
+状況を整理いたします。[r]マスター。
+[k]
+
+＠段蔵
+指定地点に到着叶ったのはマスター、[r]および英霊・加藤段蔵。
+[k]
+
+＠段蔵
+マシュ殿、英霊・風魔小太郎、[r]以上両名の行方については現在不明。
+[k]
+
+＠段蔵
+レイシフト妨害によって、[r]両名はノウム・カルデアへと戻されたやもしれず、
+[k]
+
+＠段蔵
+または、平安京の何処か、[r]我らとは別の地点に飛ばされた可能性もゼロではなく。
+[k]
+
+
+？1：できることを、やろう
+
+？！
+
+[messageOff]
+[wt 0.5]
+
+？1：マシュと小太郎を捜索しつつ[line 3]
+
+？！
+
+[wt 0.5]
+
+？1：現地協力者を確保して
+？2：ノウム・カルデアへの通信回復を試みる！
+
+？！
+
+[charaFace A 5]
+
+＠段蔵
+承知！
+[k]
+
+＠段蔵
+まずはお二人を捜索しつつの場所移動。[r]そして、頼光殿をはじめとする現地協力者の確保！
+[k]
+
+＠段蔵
+通信阻害は結界の類に因るものでしょう。[r]であれば、結界の外縁、ないし綻びさえ見出せば、
+[k]
+
+＠段蔵
+カルデアへの連絡が叶うはず。
+[k]
+
+？1：ともかくここから移動、だね
+？2：行こう！
+
+？！
+
+[charaFace A 0]
+
+＠段蔵
+ははっ。
+[k]
+
+[messageOff]
+[wt 0.4]
+[bgmStop BGM_EVENT_81 1.2]
+[charaFace A 2]
+[wt 0.7]
+[charaFace A 5]
+＠段蔵
+…………お待ちを。マスター。
+[k]
+
+＠段蔵
+暗がりの奥[line 3]
+[k]
+
+＠段蔵
+大型質量を検知。[r]多量の魔力を有していると予想されまする。
+[k]
+
+＠段蔵
+マスターはどうか、ゆっくりと焦らず……
+[k]
+
+＠段蔵
+段蔵の後ろに。[r]移動を。
+[k]
+
+[charaFadeTime L 0.2 0.5]
+
+＠段蔵
+（迂闊！）
+[k]
+
+＠段蔵
+（なにゆえ今の今まで魔力を感じなかった！[r]　よもや気配遮断を有したアサシン霊基、或いは）
+[k]
+
+＠段蔵
+（気配を殺す[#すべ]に長けた、妖物魔物の類！）
+[k]
+
+[messageOff]
+[charaFadeout L 0.1]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[se ade311]
+[seVolume ade311 0 0.3]
+[shake 0.02 2 2 0.3]
+[wt 1.5]
+
+[se ade311]
+[seVolume ade311 0 0.5]
+[shake 0.02 2 2 0.6]
+[wt 0.8]
+[se ade311]
+[seVolume ade311 0 0.5]
+[wt 1.2]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠段蔵
+マスター！[bgm BGM_EVENT_80 0.1][r]段蔵の後ろに！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ade311]
+[shake 0.02 4 4 0.6]
+[wt 0.6]
+
+[se ad989]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 2.5]
+
+？1：来た！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠段蔵
+複数の脚を持つ、異形の巨体……[r]現地の敵性体と断じまする。
+[k]
+
+？2：段蔵さん、戦闘態勢！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠段蔵
+承知。[r]現地の敵性体と断じまする。
+[k]
+
+？！
+
+[se ad270]
+[seVolume ad270 0 0.4]
+[se ad69]
+[seStop ad69 1.5]
+＠段蔵
+戦闘機動開始[line 3][r]絡繰忍法、全種開放。
+[k]
+
+[charaFace A 2]
+＠段蔵
+[#彼我:ひ　が]の戦力差、不明であるからには！[r]手加減無用！
+[k]
+
+＠段蔵
+出力全開にて参ります！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[se ad989]
+[shake 0.02 4 4 1.0]
+[wt 1.2]
+[seStop ad989 0.5]
+[wt 0.4]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[effect bit_talk_41_fs]
+
+＠段蔵
+では！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

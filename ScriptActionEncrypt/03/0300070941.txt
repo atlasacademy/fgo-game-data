@@ -1,0 +1,215 @@
+
+
+
+＄03-00-07-09-4-1
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 7006300 1 坂田金時]
+[charaSet B 6030000 1 段蔵]
+[charaSet C 98006200 1 エネミー]
+[charaSet D 98006200 1 エネミー]
+[charaSet E 1098201900 1 歳殺神]
+[charaSet F 1098201900 1 歳殺神_シルエット]
+[charaFilter F silhouette 00000080]
+[charaSet G 1098202100 1 豹尾神]
+[charaSet H 1098202100 1 豹尾神_シルエット]
+[charaFilter H silhouette 00000080]
+
+[cameraMove 0.1 0,0 1.01]
+
+
+
+[scene 102002]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠坂田金時
+おおおッ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad1010]
+[wt 0.2]
+
+[se ad85]
+[effect bit_talk_gold_slash_02]
+[se ad1010]
+[wt 0.4]
+
+[se ad1056]
+[seVolume ad1056 0 0.4]
+[fowardEffect bit_talk_impactlanding]
+[shake 0.05 0 2 1.0]
+
+[charaTalk off]
+
+[charaFace C 0]
+[charaFace D 0]
+[charaFadeinFSL C 0.1 0]
+[charaFadeinFSR D 0.1 2]
+[wt 0.1]
+
+[se ad26]
+[wt 0.4]
+
+[se ad42]
+[charaEffect C bit_talk_atomization]
+[charaEffect D bit_talk_atomization]
+[wt 0.4]
+[charaFadeout C 1.2]
+[charaFadeout D 1.2]
+
+[wt 3.0]
+
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠段蔵
+敵性反応消滅！[r][#是:これ]にてリンボの配置したと[#思:おぼ]しき式神、全滅！
+[k]
+
+[charaFace B 5]
+
+＠段蔵
+そして前方！[r]二騎の高魔力反応。
+[k]
+
+＠段蔵
+どうかご注意ください、皆さま。[r]まず間違いなく安倍晴明殿が仰った、新たな英霊……
+[k]
+
+[bgmStop BGM_EVENT_80 1.0]
+[charaFace B 2]
+
+＠段蔵
+八将神が二騎！[r][#歳殺神:さいせつじん]および[#豹尾神:ひょうびじん]！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.6]
+
+[se ad984]
+
+[charaTalk off]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 1.0]
+[bgm BGM_EVENT_127 0.1]
+
+＠歳殺神
+[#骸:むくろ]名を、呼ばれたな。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.6]
+
+＠豹尾神
+……はあ。[#朱雀:す ざ く]の御門まであと少しだって云うのに。
+[k]
+
+＠豹尾神
+ああ、成る程。[r]英霊が何騎かいる。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠歳殺神
+いや。いや。よく目を凝らせ。[r]或いは気迫を感じ取れ。
+[k]
+
+＠歳殺神
+さんざ蹴散らした者たちとは格が違う。[r]お主もかつて知ったであろう、本物の武者のそれよ。
+[k]
+
+＠歳殺神
+……では、立ち止まる他なかろうな。
+[k]
+
+[messageOff]
+
+[charaTalk depthOff]
+[charaDepth F 2]
+[charaDepth E 1]
+
+[charaFace E 6]
+[charaFadein E 0.1 1]
+[wt 0.1]
+
+[charaFadeout F 0.7]
+[wt 1.6]
+
+＠歳殺神
+精強にして勇壮なる平安の武者たちよ、散れ。[r]何者も我らの歩みは止められぬ。
+[k]
+
+[charaFaceFade E 0 0.3]
+
+＠歳殺神
+[line 3]我が[#骸:むくろ]の[#忌名:いみな]、[#歳殺神:さいせつじん]・俵藤太。[r][line 3]貴様らの死である。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaDepth H 2]
+[charaDepth G 1]
+
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+[wt 1.0]
+
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.1]
+
+[charaFadeout H 0.7]
+[wt 1.6]
+
+＠豹尾神
+[line 3]我が[#骸:むくろ]の[#忌名:いみな]、[#豹尾神:ひょうびじん]・鈴鹿御前。[r][line 3]死にたいなら殺してあげる。
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_EVENT_127 1.5]
+[fadeout black 1.5]
+[wait fade]
+[soundStopAll]
+[end]

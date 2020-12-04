@@ -1,0 +1,336 @@
+
+
+＄03-00-07-06-3-1
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 7022001 1 茨木童子]
+[charaSet B 6021001 1 酒呑童子]
+[charaSet C 5010001 1 パラケルスス]
+[charaSet D 98006200 1 ホムンクルス１]
+[charaSet E 98006200 1 ホムンクルス２]
+[charaSet F 6030000 1 段蔵]
+[charaSet G 7006300 1 坂田金時]
+
+[cameraMove 0.1 0,0 1.01]
+
+[imageSet H back10000 1]
+[charaScale H 1.05]
+
+[charaSet J 98115000 1 エフェクト用]
+
+
+[scene 102001]
+
+[bgm BGM_EVENT_80 0.1]
+
+[wt 0.4]
+
+[fadein black 0.7]
+[wait fade]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠坂田金時
+ぜええええりゃあッ！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[se ad85]
+[effect bit_talk_x_slash_gl_03]
+[wt 0.3]
+
+[charaTalk off]
+
+[charaFace D 0]
+[charaFadeinFSL D 0.1 0]
+
+[charaFace E 0]
+[charaFadeinFSR E 0.1 2]
+
+[se bac403]
+[effect bit_talk_14]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+
+[charaShake D 0.05 2 2 0.6]
+[charaShake E 0.05 2 2 0.6]
+
+[wt 0.4]
+
+[se ad26]
+[wt 0.4]
+
+[se ad42]
+[charaEffect D bit_talk_atomization]
+[charaEffect E bit_talk_atomization]
+[wt 0.4]
+[charaFadeout D 1.2]
+[charaFadeout E 1.2]
+[wt 2.4]
+
+[charaTalk on]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠パラケルスス
+流石、坂田金時。[r]戦闘用ホムンクルスを軽々と一蹴してしまう。
+[k]
+
+＠パラケルスス
+マスター。[r]如何いたしましょう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠酒呑童子
+ああ[line 3]楽し！
+[k]
+
+＠酒呑童子
+[#いつも]よりやる気あるんとちゃうの、小僧？[r]ええわぁ。[#滾:たぎ]るわぁ。昂ぶるわぁ。
+[k]
+
+[charaFace B 4]
+
+＠酒呑童子
+ああ……[r]勿体ないわぁ。
+[k]
+
+＠酒呑童子
+こないなもん、一度きりで[r][#終:しま]いにしてもうたら[#ばち]が当たってまうわぁ。
+[k]
+
+[messageOff]
+[charaFace B 1]
+[wt 1.2]
+[charaFace B 0]
+[wt 0.4]
+
+[bgmStop BGM_EVENT_80 2.0]
+
+＠酒呑童子
+ほなキャスターはん。[r]ここらで。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadeinFSR C 0.1 2]
+
+[charaFace B 0]
+[charaFadeinFSL B 0.1 0]
+
+＠パラケルスス
+御意。
+[k]
+
+＠パラケルスス
+虎熊さま程の大質量を含むとなれば、[r][#移動先]は制御できませんが、宜しいですね。
+[k]
+
+＠酒呑童子
+ええから、ええから。[r]はよ頼むわぁ。
+[k]
+
+[charaFace B 1]
+
+＠酒呑童子
+小僧。ほな、またな！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠坂田金時
+おい待て、待て！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠パラケルスス
+[line 3]土よ。道を。
+[k]
+
+[messageOff]
+[se ad949]
+[wt 0.4]
+[seStop ad949 1.4]
+[fowardEffect bit_talk_easy_spell_r]
+[wt 1.4]
+
+[messageOff]
+[se ad598]
+[charaSpecialEffect C wipeTime 0 1.0 0 0.2]
+[wt 1.4]
+[seStop ad598 0.3]
+
+
+[charaTalk off]
+
+[charaFace B 0]
+[charaFadeinFSL B 0.1 0]
+
+[charaFace A 5]
+[charaFadeinFSR A 0.1 2]
+
+[wt 1.2]
+
+[se ad598]
+[charaSpecialEffect B wipeTime 0 1.0 0 0.2]
+[charaSpecialEffect A wipeTime 0 1.0 0 0.2]
+[wt 1.4]
+[seStop ad598 0.3]
+
+[wt 1.5]
+
+[charaTalk on]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠段蔵
+魔力反応消失！
+[k]
+
+＠段蔵
+通常の聖杯戦争に於ける令呪による超高速移動、[r]疑似転移の類とは、似て非なるモノ……！
+[k]
+
+＠段蔵
+恐らくは、[#目眩:め く ら]ましの術式と、[r]高速移動の術式との合わせ技。
+[k]
+
+＠段蔵
+戦場離脱に特化した多人数移動。[r]大陸の古き軍師・太公望がかつて用いたという、
+[k]
+
+＠段蔵
+かの土遁の術をさえ思わせまする。[r]なんと、鮮やかな腕前。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.1 1]
+
+＠坂田金時
+[#虎熊童子:デ　カ　ブ　ツ]も消えちまっていやがる。[r]くっ……
+[k]
+
+？1：段蔵さん、周辺哨戒できる？
+？2：酒呑童子たちを見失う訳にはいかない
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠段蔵
+はっ。霊体化を用いて……[r]一通り、[#洛内:らくない]を哨戒して参りまする。
+[k]
+
+＠段蔵
+長時間の霊体化は、ワタシであっても[r]何らかのペナルティを喰らう可能性がありますゆえ、
+[k]
+
+＠段蔵
+時は限られますが。[r]お任せを。
+[k]
+
+＠段蔵
+内裏の様子も見て参ります。[r]それでは、御免！
+[k]
+
+[messageOff]
+[charaEffect F bit_talk_quickmove]
+[charaSpecialEffect F erasureReverse 1 0.3]
+[se ad73]
+[wt 1.2]
+
+[se ad812]
+[wt 0.4]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠坂田金時
+……完全に遊ばれた。
+[k]
+
+＠坂田金時
+手加減どころの話じゃねえや。[r]今のはオレの負けだ、負け。……はー、負けた。
+[k]
+
+[charaFace G 2]
+
+＠坂田金時
+負けたァ！
+[k]
+
+[messageOff]
+[charaFace G 7]
+[wt 1.4]
+[charaFace G 9]
+[wt 0.4]
+
+＠坂田金時
+…………だが。次は、勝つぜ。
+[k]
+
+？1：（頷く）
+
+？！
+
+[messageOff]
+[cameraMove 0.4 0,5 1.01]
+[wt 0.4]
+[cameraMove 0.4 0,0 1.01]
+[wt 1.0]
+
+＠坂田金時
+おう。絶対だ。
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_70 2.0]
+[wait fade]
+[soundStopAll]
+[end]
+

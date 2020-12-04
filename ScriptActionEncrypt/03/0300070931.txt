@@ -1,0 +1,356 @@
+
+
+
+＄03-00-07-09-3-1
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 7006300 1 坂田金時]
+[charaSet B 5017000 1 メディア・リリィ]
+[charaSet C 1098201600 1 渡辺綱]
+[charaSet D 6030000 1 段蔵]
+[charaSet E 98074000 1 源頼光]
+[charaSet F 98006200 1 エネミー]
+[charaSet G 98006200 1 エネミー]
+[charaSet H 98006200 1 エネミー]
+
+[scene 102002]
+
+[bgm BGM_MAP_64 0.1]
+[wt 0.4]
+
+[fadein black 0.7]
+[wait fade]
+
+
+[effect bit_talk_kengekiall03_fs]
+[se ad1032]
+[wt 0.3]
+[se ad687]
+[wt 0.1]
+[se ad1031]
+[wt 0.6]
+
+[charaTalk D]
+[charaFace D 5]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect D appearance 1 0.25]
+[wt 0.4]
+
+[messageOff]
+[se ad1021]
+[se ad270]
+[seVolume ad270 0 0.3]
+[se ad896]
+[seStop ad896 1.5]
+[wt 1.5]
+
+[charaFace D 2]
+
+＠段蔵
+風魔・噴進弾！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.1]
+
+[effect bit_shot_01 -250,0]
+[fowardEffect bit_talk_impactlanding -250,0]
+[se ade337]
+[wt 0.5]
+[effect bit_shot_01 250,0]
+[fowardEffect bit_talk_impactlanding 250,0]
+[charaShake F 0.05 3 3 0.8]
+[wt 0.5]
+[effect bit_shot_01]
+[charaFadeout F 0.4]
+[wt 1.0]
+[effectDestroy bit_shot_01]
+[seStop ade337 0.5]
+[se ad609]
+[wt 1.0]
+
+
+[se ad768]
+[charaSpecialEffect F appearance 1 1.0]
+[wt 1.5]
+[seStop ad768 0.5]
+[se ad25]
+[wt 1.2]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠段蔵
+……くっ、敵性体の即時再生を確認！
+[k]
+
+？1：英霊剣豪と、同じ……！
+？2：即時再生！
+
+？！
+
+[charaFace D 5]
+
+＠段蔵
+然り。霊核を別保存させたがゆえの、[r]疑似的な不死！
+[k]
+
+＠段蔵
+下総国での戦いでは、かの武蔵殿の妙技と[r]村正殿の名刀を併せて[#漸:ようや]く届いたと聞きますが……！
+[k]
+
+[se ad51]
+＠段蔵
+晴明殿から渡された符は八枚きり！[r]如何にして[#屠:ほふ]るか！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad987]
+[wt 1.5]
+
+[seStop ad987 0.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.7 1]
+[wt 1.0]
+
+＠渡辺綱
+邪魔だな。
+[k]
+
+[messageOff]
+
+[se ad1004]
+[wt 0.3]
+[charaCrossFade C 1047001 5 0.4]
+[wait charaCrossFade C]
+[wt 1.5]
+
+[se bac307]
+[effect bit_talk_h_slash01_fs]
+[wt 0.2]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace F 0]
+[charaFadeinFSL F 0.1 0]
+
+[charaFace G 0]
+[charaFadeinFSR G 0.1 2]
+
+[se bac403]
+[effect bit_talk_14]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+
+[charaShake F 0.05 2 2 0.6]
+[charaShake G 0.05 2 2 0.6]
+
+[wt 0.4]
+
+[se ad26]
+[wt 0.4]
+
+[se ad42]
+[charaEffect F bit_talk_atomization]
+[charaEffect G bit_talk_atomization]
+[wt 0.4]
+[charaFadeout F 1.2]
+[charaFadeout G 1.2]
+[wt 3.0]
+
+[charaTalk on]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠段蔵
+！
+[k]
+
+＠段蔵
+敵性反応、完全に消滅……！[r][#是:これ]は……！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad997]
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠坂田金時
+[f large]ぜえりゃ！！
+[k]
+
+[messageOff]
+[se ad678]
+[charaMove A 0,15 0.2]
+[charaMoveScale A 1.1 0.2]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[wt 0.2]
+[charaFadeout A 0.2]
+[wt 0.2]
+
+[se ad85]
+[effect bit_talk_gold_slash_02]
+[blurOff motion 0.2]
+
+[charaScale A 1.0]
+
+[wt 0.4]
+
+[charaTalk F]
+[charaFadein F 0.1 1]
+
+[charaShake F 0.05 2 2 0.8]
+
+[se ad1056]
+[seVolume ad1056 0 0.6]
+[fowardEffect bit_talk_impactlanding]
+[shake 0.05 0 2 1.0]
+
+[wt 0.4]
+
+[se ad26]
+[wt 0.4]
+
+[se ad42]
+[charaEffect F bit_talk_atomization]
+[wt 0.4]
+[charaFadeout F 1.2]
+[wt 3.0]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠源頼光
+ふっ！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace F 0]
+[charaFadeinFSL F 0.1 0]
+
+[charaFace G 0]
+[charaFadeinFSR G 0.1 2]
+
+
+[effect bit_talk_quick_slash]
+
+[se bac210]
+[wt 0.1]
+[se bac209]
+[wt 0.1]
+[se bac211]
+
+[wt 1.1]
+
+[se bac403]
+[effect bit_talk_14]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+
+[charaShake F 0.05 2 2 0.6]
+[charaShake G 0.05 2 2 0.6]
+
+[wt 0.4]
+
+
+[se ad26]
+[wt 0.4]
+
+[se ad42]
+[charaEffect F bit_talk_atomization]
+[charaEffect G bit_talk_atomization]
+[wt 0.4]
+[charaFadeout F 1.2]
+[charaFadeout G 1.2]
+[wt 3.0]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠段蔵
+……………………ッ！
+[k]
+
+？1：これが平安武者！
+？2：鬼ヶ島を思い出すなぁ！
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠メディア・リリィ
+さらに攻撃強化の魔術を付与しています。[r]各々方の戦闘性能を併せれば、疑似不死の無効化も！
+[k]
+
+[charaFace B 0]
+
+＠メディア・リリィ
+……いえ、或いは。[r]私の魔術などなくても、あの方々はきっと。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad998]
+[wt 0.8]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠坂田金時
+邪魔する奴ァブッ飛ばす。[r]押し通るぜッ！
+[k]
+
+＠坂田金時
+目指すは、大路を北上中の八将神が二騎！[r]行くぜ[%1]、いやさ、
+[k]
+
+＠坂田金時
+[line 3]大将！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_64 2.0]
+[wait fade]
+[soundStopAll]
+[end]
+

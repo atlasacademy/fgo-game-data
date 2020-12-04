@@ -1,0 +1,777 @@
+
+＄03-00-07-05-3-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 7006300 1 坂田金時]
+[charaSet B 6030000 1 段蔵]
+[charaSet C 2040002 1 清子]
+[charaSet D 1098202400 1 藤原香子]
+[charaSet E 5011001 1 バベッジ]
+[charaSet F 98006200 1 エネミー1]
+[charaSet G 98006200 1 エネミー2]
+
+[scene 104300]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[se ad1006]
+[wt 0.2]
+
+＠坂田金時
+ぜえいっ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+
+[charaFace F 0]
+[charaFace G 0]
+[charaFadeinFSL F 0.1 0]
+[charaFadeinFSR G 0.1 2]
+[wt 0.1]
+
+[se ad1010]
+[wt 0.2]
+[effect bit_talk_gold_slash_01]
+[wt 0.2]
+[charaShake F 0.05 3 3 0.7]
+[charaShake G 0.05 3 3 0.7]
+[wt 0.9]
+
+[se ad42]
+[charaSpecialEffect F enemyErasure 1 1.5]
+[charaSpecialEffect G enemyErasure 1 1.5]
+[wait charaSpecialEffect F]
+[wait charaSpecialEffect G]
+
+[bgmStop BGM_EVENT_80 1.5]
+[wt 1.5]
+
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 5]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect B appearance 1 0.25]
+[wt 0.4]
+
+＠段蔵
+敵性反応、全消滅を確認。[r]戦闘終了にて！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[charaMove C 0,-20 0.4]
+[se ad999]
+[seStop ad999 0.6]
+[wt 0.4]
+
+＠清子
+ありゃ。
+[k]
+
+＠清子
+あいたたた……
+[k]
+
+？1：（手を伸ばす）
+
+？！
+
+[charaFace C 1]
+
+＠清子
+ん。ありがと。
+[k]
+
+[messageOff]
+[charaMove C 0,0 0.6]
+[charaShake C 0.1 2 2 0.6]
+[se ad77]
+[seStop ad77 0.6]
+[wt 0.6]
+
+＠清子
+……。[r]……。
+[k]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaFace C 6]
+
+＠清子
+あーあ、負けちゃったか。[r]慣れないコトはするもんじゃないね。
+[k]
+
+＠清子
+もらった護符も破けちゃったし、後がない。[r]これ、どうしたもんかなあ。
+[k]
+
+？1：清子さん[line 3]
+
+？！
+
+[messageOff]
+[charaFace C 1]
+[wt 1.0]
+
+[charaFace C 0]
+
+＠清子
+…………あの物語、読んだことある？
+[k]
+
+[charaFace C 7]
+＠清子
+あたし、やっぱり好きなんだぁ。[r][#光君:ひかるきみ]だけはどーしても趣味じゃないんだけども。
+[k]
+
+[charaFace C 16]
+＠清子
+[#耀:かがや]くばかりの幾つもの恋、[r]明るかったり暗かったり、元気だったり静かだったり。
+[k]
+
+＠清子
+それがねぇ……なんだか……
+[k]
+
+[charaFace C 9]
+
+＠清子
+なんだかキラキラして見えて、[r]読む度にワクワクしちゃって、止まらないんだよね。
+[k]
+
+[charaFace C 1]
+
+＠清子
+好きになっちゃったからには、[r][#最後まで読みたいんだ]。
+[k]
+
+[charaFace C 4]
+
+＠清子
+だからさ[line 3]
+[k]
+
+？1：本当に、香子さんに危害は加えません
+
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.4]
+
+？1：だよね、金時！
+
+？！
+
+＠坂田金時
+ン？
+[k]
+
+＠坂田金時
+当たり前だろ、女と子供は守るもんだ。[r]まかり間違ってもオレっちが戦う相手じゃねえさ！
+[k]
+
+＠坂田金時
+今のだって指一本アンタにゃ触れてねえ。[r]安心してくれ、清子サン。
+[k]
+
+＠坂田金時
+云っただろ？[r]オレはさ。
+[k]
+
+[messageOff]
+[charaFace A 1]
+[wt 1.0]
+
+＠坂田金時
+マサカリ振るいに来たんじゃなくて、[r]話をしに来たんだ！
+[k]
+
+[charaFace A 0]
+
+＠坂田金時
+アンタの心配してるようなコトにはならねえ。[r][line 3]いや。オイラが、させねえ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[wt 1.5]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wt 1.0]
+
+[se ad1002]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.5]
+[seStop ad1002 0.5]
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠藤原香子
+私も……[bgm BGM_EVENT_11 0.1]
+[k]
+
+＠藤原香子
+私も、夢を見とうございます。[r]貴方のように。
+[k]
+
+＠藤原香子
+その鋼。[r]その鎧。
+[k]
+
+＠藤原香子
+厚き殻の向こうへ行けば、私も……[r]貴方の世界を目の当たりにできましょうか。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[se ad67]
+[seStop ad67 1.5]
+[wt 1.0]
+
+＠バベッジ
+笑止である。[r]否、笑わせてくれるな。マスター。
+[k]
+
+＠バベッジ
+おまえはおまえの夢を見よ。[r]我が夢の[#残滓:ざ ん し]、我が思いの果ては我だけのもの。
+[k]
+
+＠バベッジ
+おまえには無用である。[r]そも、物語る、という行為は……。
+[k]
+
+＠バベッジ
+夢の旅路を征き、詩聖の閃きの[#頂:いただき]をこそ求め、[r]己が世界を編み続けるのによく似ている。
+[k]
+
+＠バベッジ
+おまえは、おまえの夢を既に得ている。[r]マスター・カオルコ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠藤原香子
+何故そう口にできるのです、おじさま。[r]チャールズ・バベッジ。
+[k]
+
+＠藤原香子
+貴方という御方は、確か……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠バベッジ
+無論、我は詩聖ならず。[r]しかし[line 3]
+[k]
+
+[charaFace E 1]
+
+＠バベッジ
+我が友には数々の詩聖あり。[r]故にこそ、我は、詩聖たちの言葉をよく聞いた。
+[k]
+
+＠バベッジ
+我は知る。[r]物語る者たちの、愉しみと哀しみの多くを。
+[k]
+
+＠バベッジ
+我は知る。[r]おまえの心よりの願いが何たるかを。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠藤原香子
+……。[r]……。
+[k]
+
+[charaFace D 0]
+
+＠藤原香子
+はい……[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_11 1.2]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠バベッジ
+………………さて。
+[k]
+
+＠バベッジ
+いつまで我らを覗き見るのか。[r]早々に姿を現すがいい、勇壮なる若人たちよ。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.1]
+[se ad984]
+[wt 0.3]
+
+＠坂田金時
+お見通し、ッてか。[bgm BGM_EVENT_124 0.1]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠段蔵
+歓談のさなか失礼。[r]英霊、チャールズ・バベッジ殿とお見受けする。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠藤原香子
+あ……！[r]貴方たち……
+[k]
+
+[messageOff]
+[charaFace D 2]
+[wt 0.7]
+
+＠藤原香子
+よもや、私の後を……！？[r]申し訳ございませんおじさま、私……！
+[k]
+
+？1：香子さん、ごめんね
+？2：後を付けさせてもらいました
+
+？！
+
+[messageOff]
+[charaFace D 4]
+[wt 1.2]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-20]
+[charaMove E 0,0 0.4]
+[se ad1003]
+[seStop ad1003 0.6]
+[wt 0.4]
+
+＠バベッジ
+若人たち。[r]我が真名を知るか。
+[k]
+
+＠バベッジ
+ならば、問い掛けはすまい。[r]いずれ天覧聖杯戦争に縁持つ者共であるのだろう。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠坂田金時
+おう。だが早合点は困るぜ。[r]オレは、アンタたちと話をしに来たんだ。
+[k]
+
+＠坂田金時
+天覧聖杯戦争は悪！[r]少なくとも、その疑いがありやがる！
+[k]
+
+[bgmStop BGM_EVENT_124 1.5]
+
+＠坂田金時
+外道の手のひらの上で踊るなんざ御免だね！[r]どうだい、オレっちと共に[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.4]
+
+[se ad171]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[charaMoveScale E 1.1 0.1]
+[charaMove E 0,20 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaScale E 1.0]
+[blurOff motion 0.2]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[se ad881]
+[se ad618]
+[charaShake A 0.05 3 3 0.5]
+[charaEffect A bit_talk_14]
+[wt 1.0]
+
+[charaFace A 0]
+
+＠坂田金時
+へへっ！[bgm BGM_EVENT_24 0.1]
+[k]
+
+＠坂田金時
+重い！[r]コイツは重い[#鎚:つち]だ！
+[k]
+
+＠坂田金時
+となりゃ今度は本物か、[#正真正銘:しょうしんしょうめい]の鋼の怪！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠バベッジ
+[f large]杖である！
+[k]
+
+[messageOff]
+[charaFace E 2]
+[se ad67]
+[seStop ad67 1.5]
+[wt 1.5]
+
+？1：バベッジ！
+？2：話を、聞いて欲しい
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠段蔵
+然り。何故に[#其:そ][#処:こ]まで焦っておられるのか！[r]バベッジ殿！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠バベッジ
+…………問答は無用。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠坂田金時
+頑固親父だな。
+[k]
+
+[charaFace A 2]
+
+＠坂田金時
+オレっちたちの声、届いてるよな？[r]鋼の旦那に香子サンよ！
+[k]
+
+＠坂田金時
+天覧聖杯戦争、悪の疑いあり！[r]とんでもねえ外道の仕掛けかもしれねえんだ！
+[k]
+
+＠坂田金時
+アンタらは、ンなもんに巻き込まれちゃならねぇ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠藤原香子
+私、私は……[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠バベッジ
+カオルコ。耳を傾けるな。
+[k]
+
+[charaFace E 2]
+
+＠バベッジ
+我が身を[#喚:よ]びしは[#紛:まご]うことなき聖杯の力であろう！[r]ならば我、鋼となりてマスターの願いに力を注ぐ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠坂田金時
+話の通じねえオッサンだな！[r]願いなんざ、叶うかどうか分からねえぞ！
+[k]
+
+＠坂田金時
+ンな不確かな[#聖杯:モ　ノ]に命を懸けるかよ！[r]鋼の旦那よ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+[se ad67]
+
+＠バベッジ
+[f large][#問答無用:も　ん　ど　う　む　よ　う]と云った！
+[k]
+
+[seStop ad67 0.2]
+[charaFace E 5]
+
+＠バベッジ
+人とは儚きモノ。[r]命とは脆きモノ。
+[k]
+
+＠バベッジ
+故に、僅かな可能性であっても請わずにおれぬ。[r]己が願いのために、すべてを燃やさざるを得ぬ。
+[k]
+
+[charaFace E 2]
+[se ad67]
+＠バベッジ
+[f large]分からぬならば[#退:ひ]け！
+[k]
+
+[seStop ad67 0.2]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠坂田金時
+[f large]いやだね！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth A 2]
+[charaFace E 0]
+[charaFadeinFSL E 0.1 0]
+[charaFace A 2]
+[se ad998]
+[wt 0.3]
+[charaFadeinFSR A 0.1 300,0]
+[charaMoveFSR A 100,0 0.2]
+[wt 0.2]
+[seStop ad998 0.1]
+
+
+[effect bit_talk_14 -10,50]
+[charaFace A 8]
+[charaShake A 0.05 3 3 0.2]
+[charaMoveFSR A 110,0 0.2]
+[se ad1013]
+[wt 0.2]
+[effect bit_talk_14 10,-50]
+[charaShake A 0.05 3 3 0.2]
+[charaMoveFSR A 120,0 0.2]
+[se ad1014]
+[wt 0.4]
+
+[se ad7]
+[charaMoveFSR A 160,0 0.2]
+[charaFadeout A 0.2]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.2 -50,0]
+[se ad671]
+[charaMove A 1 0.2]
+[wt 0.2]
+[seStop ad671 0.5]
+[wt 0.5]
+
+？1：金時！
+
+？！
+
+[charaFace A 2]
+
+＠坂田金時
+分かってる！[r]いったん、頭を冷やさせるだけだ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+[se ad67]
+[wt 1.3]
+[se ad1003]
+[seStop ad1003 0.5]
+[wt 0.5]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠坂田金時
+[line 3]そら、来るぜ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠バベッジ
+蒸気圧上昇。[r]蒸気圧上昇。
+[k]
+
+[charaFaceFade E 2 0.2]
+
+＠バベッジ
+戦闘機能[line 3]二段階解放！！
+[k]
+
+[messageOff]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[fowardEffect bit_talk_41_fs]
+[se ad171]
+[charaMoveScale E 1.1 0.1]
+[charaMove E 0,10 0.1]
+[wt 0.3]
+
+
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

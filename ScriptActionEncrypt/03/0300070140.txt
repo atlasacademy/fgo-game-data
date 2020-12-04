@@ -1,0 +1,286 @@
+
+＄03-00-07-01-4-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 6030000 1 段蔵]
+[charaSet B 98006200 1 エネミー]
+
+[scene 102201]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad985]
+[seVolume ad985 0 0.2]
+[seVolume ad985 1.0 1.0]
+[wt 1.0]
+[seStop ad985 2.0]
+[wt 1.5]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠段蔵
+先刻の怪異。[r]特有の性質を記録いたしました。
+[k]
+
+＠段蔵
+気配遮断によく似た[#わざ]を持っていた模様なれど、[r]アサシンのそれとは異なる、擬態にて。
+[k]
+
+[charaFace A 5]
+
+＠段蔵
+であれば、我が[#感覚器:セ ン サ ー]の全力を以てすれば！
+[k]
+
+＠段蔵
+十割とまでは言えぬまでも、[r]感知確率を限界まで高めておきまする。
+[k]
+
+[messageOff]
+[se ad270]
+[seVolume ad270 0 0.4]
+[seStop ad270 1.0]
+[se ad69]
+[seStop ad69 1.0]
+[wt 1.2]
+[fowardEffect bit_talk_30_fs]
+[se ad905]
+[seStop ad905 0.5]
+[wt 1.0]
+[fowardEffect bit_talk_30_fs]
+[se ad905]
+[seStop ad905 0.5]
+[wt 1.0]
+[fowardEffect bit_talk_30_fs]
+[se ad905]
+[seStop ad905 0.5]
+[wt 1.0]
+[fowardEffectStop bit_talk_30_fs]
+
+[charaFace A 2]
+
+＠段蔵
+絡繰式、風魔探査！
+[k]
+
+[charaFace A 0]
+
+＠段蔵
+[#是:これ]にて……[r]同じ敵には不意は打たれませぬ。
+[k]
+
+？1：すごいぞ絡繰くのいち
+？2：信頼してます！
+
+？！
+
+[messageOff]
+[charaFace A 3]
+[wt 1.0]
+[charaFace A 1]
+
+＠段蔵
+お任せあれ！
+[k]
+
+[charaFace A 0]
+
+＠段蔵
+と言う訳で。[r]蜘蛛接近の折には、先んじて察知いたします。
+[k]
+
+[charaFace A 4]
+
+＠段蔵
+ですが……[r]マスター。
+[k]
+
+＠段蔵
+[#此処:こ　こ]は[#洛内:らくない]なれど、無人の[#処:ところ]なれば、
+[k]
+
+＠段蔵
+他の怪異なぞが[#わんさ]と湧かぬとも限りません。[r]急ぎ、この場を離れるべきかと。
+[k]
+
+？1：分かった
+？2：まずは安全を確保しなきゃ[&だ:だね]
+
+？！
+
+[charaFace A 0]
+
+＠段蔵
+では、こちらへ。
+[k]
+
+[messageOff]
+[se ad73]
+[wipeout leftToRight 0.4 1.0]
+[bgmStop BGM_EVENT_70 0.4]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[wt 0.5]
+
+[wipein rightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+[se ad60]
+[seVolume ad60 0 0.1]
+[seVolume ad60 1.0 1.0]
+[wt 1.0]
+[seStop ad60 1.5]
+
+＠段蔵
+（[line 3]マスター）
+[k]
+
+＠段蔵
+（姿なく、声のみにて御免）
+[k]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠段蔵
+（新たなる怪異、[r]　一体ばかり前方に湧いてございまする）
+[k]
+
+＠段蔵
+（ですがご心配なく）
+[k]
+
+＠段蔵
+（段蔵がお相手いたします）
+[k]
+
+＠段蔵
+（マスターは、怪異を迂回して[r]　そのまま大路へと駆けていただきたく）
+[k]
+
+＠段蔵
+（大路へ出てしまえば撒けましょう。[r]　[#検非違使:け　 び 　い　 し]の類が見回っている可能性も、あります）
+[k]
+
+＠段蔵
+（……それでは御免）
+[k]
+
+？1：（待った！）
+
+？！
+
+＠段蔵
+（は、はい）
+[k]
+
+？1：（一人で無茶は駄目[&だ:だよ]、二人で戦おう）
+
+？！
+
+＠段蔵
+（マスター、それは）
+[k]
+
+[bgmStop BGM_EVENT_81 1.5]
+
+＠段蔵
+（………………いえ。主命、承知！）
+[k]
+
+[messageOff]
+[charaTalk A]
+[charaFace A 4]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect A appearance 1 0.25]
+[wt 0.4]
+＠段蔵
+段蔵の誤りでした。[r]マスター。
+[k]
+
+＠段蔵
+アナタは、そのように仰る御方でしたね。
+[k]
+
+[messageOff]
+[charaFace A 1]
+[wt 1.0]
+
+[charaFace A 5]
+
+＠段蔵
+ならば段蔵、[bgm BGM_EVENT_80 0.1][r]共に戦いまする！
+[k]
+
+＠段蔵
+[#不躾:ぶしつけ]なる我が忍法幻法外法の類、[r]正道を歩まんとする主にお見せするには忍びないが、
+[k]
+
+[charaFace A 2]
+
+＠段蔵
+共に肩を並べて戦う主君なれば！[r]御免！
+[k]
+
+[messageOff]
+[se ad270]
+[seVolume ad270 0 0.4]
+[se ad69]
+[seStop ad69 1.5]
+[wt 1.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[se ad463]
+[wt 2.0]
+[seStop ad463 0.5]
+[wt 0.7]
+
+？1：戦闘開始！
+？2：敵性体を撃破した後、大路まで走り抜ける！
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠段蔵
+御意！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaEffect B bit_talk_41_fs]
+[se ad463]
+[wt 1.5]
+[seStop ad463 0.5]
+
+
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

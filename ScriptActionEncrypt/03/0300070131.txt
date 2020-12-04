@@ -1,0 +1,399 @@
+
+＄03-00-07-01-3-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 6030000 1 段蔵]
+[charaSet B 6030000 1 加藤段蔵_演出用]
+[charaFilter B silhouette 00000080]
+[charaSet C 1098203100 1 土蜘蛛]
+[imageSet D back10000 1]
+[charaScale D 1.05]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[scene 102201]
+
+[cameraMove 0.1 0,0 1.01]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[effect bit_talk_41_fs]
+[se ad989]
+[wt 1.0]
+[seStop ad989 0.4]
+[wt 0.2]
+
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[charaMoveScale C 1.1 0.1]
+[charaMove C 0,20 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaScale C 1.0]
+[effectDestroy bit_talk_41_fs]
+[blurOff motion 0.2]
+
+[charaDepth B 1]
+[charaDepth A 2]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[fowardEffect bit_talk_x_slash_bk_03 0,100]
+[wt 0.1]
+[se bac7]
+
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+[charaFadeout A 0.2]
+[se ad488]
+[wt 0.9]
+
+[charaFadeout B 0.3]
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 0]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect A appearance 1 0.25]
+[wt 0.4]
+
+＠段蔵
+それは、[r]囮にて。
+[k]
+
+[messageOff]
+[charaFace A 5]
+[se ad1021]
+[se ad896]
+[seStop ad896 1.5]
+[wt 1.5]
+
+[charaFace A 2]
+＠段蔵
+風魔・噴進弾！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+[effect bit_shot_01 -250,0]
+[fowardEffect bit_talk_impactlanding -250,0]
+[se ade337]
+[wt 0.5]
+[effect bit_shot_01 250,0]
+[fowardEffect bit_talk_impactlanding 250,0]
+[charaShake C 0.05 3 3 0.8]
+[wt 0.5]
+[effect bit_shot_01]
+[wt 1.0]
+[seStop ade337 0.5]
+[wt 1.0]
+[effectDestroy bit_shot_01]
+
+[se ad990]
+[shake 0.02 3 3 1.7]
+[wt 1.7]
+[seStop ad990 0.3]
+[wt 0.3]
+
+[effect bit_talk_dark_blade]
+[se ad974]
+[seVolume ad974 0 0.7]
+[wt 0.5]
+[seStop ad974 1.0]
+[wt 1.0]
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠段蔵
+黒き刃の群れ……ッ！？[r]マスター！！
+[k]
+
+[messageOff]
+[charaMoveScale A 1.1 0.1]
+[charaMove A 0,20 0.1]
+[se ad7]
+[wt 0.2]
+
+
+[charaEffect A bit_talk_x_slash_bk_01]
+[charaShake A 0.05 3 3 0.3]
+[wt 0.1]
+[se bac6]
+[wt 0.1]
+
+[charaEffect A bit_talk_x_slash_bk_02]
+[charaShake A 0.05 3 3 0.3]
+[wt 0.1]
+[se bac7]
+[wt 0.5]
+
+[fowardEffect bit_talk_35]
+[charaShake A 0.05 3 3 0.2]
+[se ad161]
+[charaCrossFade A 1098204400 4 0.1]
+[wait charaCrossFade A]
+[wt 1.5]
+
+＠段蔵
+ッ！
+[k]
+
+[charaFace A 5]
+＠段蔵
+な、ん、のこれしき[line 3][r]大蜘蛛の怪異如きが何するものぞ、喰らえ我が奥義！
+[k]
+
+[messageOff]
+[se ad39]
+[charaPut H 1]
+[charaEffect H bit_talk_36]
+[wt 1.5]
+[charaFace A 2]
+[charaEffectStop H bit_talk_36]
+＠段蔵
+[line 6]『[#絡繰幻法・呑牛:イビルウィンド・デス・ストーム]』！
+[k]
+
+[messageOff]
+[charaPut H 1200,1200]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaScale A 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+[fowardEffect bit_talk_windstorm]
+[se ad1052]
+[wt 1.5]
+[se ad1038]
+[fowardEffectStop bit_talk_windstorm]
+[seStop ad1052 1.0]
+[fowardEffect bit_talk_aerial_wave]
+
+[charaShake C 0.05 3 3 0.5]
+[se ad990]
+[wt 1.5]
+
+[bgmStop BGM_EVENT_80 1.7]
+
+[charaSpecialEffect C enemyErasure 1 1.7]
+[wt 0.5]
+[se ad191]
+[wait charaSpecialEffect C]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 5]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect A appearance 1 0.25]
+[wt 0.4]
+
+＠段蔵
+…………ご無事ですか、マスター！[bgm BGM_EVENT_81 0.1]
+[k]
+
+？1：段蔵さん！
+？2：そっちこそ負傷[&してる！:してるよ！]
+
+？！
+
+[charaFace A 0]
+
+＠段蔵
+いえ、問題は……
+[k]
+
+[messageOff]
+[effect bit_talk_release]
+[se bas2]
+[wt 0.2]
+[charaCrossFade A 6030000 0 0.4]
+[wait charaCrossFade A]
+[wt 1.5]
+
+[charaFace A 1]
+
+＠段蔵
+自動修復にて[#是:これ]この通り。[r]大事はありませぬ。
+[k]
+
+＠段蔵
+……霊核には届いておりません故、ご案じめさるな。[r]段蔵はこんな[#処:ところ]で倒れませぬ。マスター。
+[k]
+
+[charaFace A 5]
+
+＠段蔵
+小太郎殿とマシュ殿の分まで、[r]お守り申し上げまする。
+[k]
+
+？1：……良かった
+
+[charaFace A 3]
+
+＠段蔵
+忍びなれば、この程度は。
+[k]
+
+？2：すごいぞ、段蔵さん
+
+[messageOff]
+[charaFace A 1]
+[wt 1.2]
+
+？！
+
+[charaFace A 4]
+
+＠段蔵
+しかし……
+[k]
+
+[charaFace A 5]
+
+＠段蔵
+[#是:これ]なる敵性体。[r]恐るべき相手にございました。
+[k]
+
+＠段蔵
+ワタシの記録は多くありませんが、[r]乱世の頃には見覚えのなき、大蜘蛛の怪異にて。
+[k]
+
+＠段蔵
+まるで、音に聞こえし神代の魔獣……
+[k]
+
+＠段蔵
+シミュレーターにて相対した、[r]数々のモノを想起しました。
+[k]
+
+？1：あれが、平安時代に[#棲息:せいそく]する怪異なら
+？2：戦闘はなるべく避けた方がいい
+
+？！
+
+[charaFace A 4]
+
+＠段蔵
+はい……。
+[k]
+
+[charaFace A 0]
+＠段蔵
+日の本は、多くの古き神秘を備えた地なのだと、[r]ダ・ヴィンチ殿より聞き及んでおります。
+[k]
+
+＠段蔵
+乱世の頃にも、[r]確かに鬼が在り、怪異が在った。
+[k]
+
+＠段蔵
+その更に幾百年の昔……
+[k]
+
+＠段蔵
+[#斯様:か よ う]に剛力の巨怪が、[r][#都のただ中]に出現する。
+[k]
+
+＠段蔵
+ともすれば平安の世とは、[r]想像を絶する魔圏であるのやもしれませぬ。
+[k]
+
+[charaFace A 4]
+
+＠段蔵
+段蔵、びっくり仰天にて……
+[k]
+
+？1：魔圏[line 3]
+？2：平安武者も相当強いってことになる、よね
+
+？！
+
+[charaFace A 4]
+
+＠段蔵
+……。[r]……。
+[k]
+
+[charaFace A 5]
+
+＠段蔵
+……はい。[r]味方であれば、この上なく頼りになりましょう。
+[k]
+
+[messageOff]
+[charaFace A 0]
+[wt 1.0]
+
+[charaFadeTime D 0.2 0.5]
+[charaFace A 5]
+
+＠段蔵
+（しかし万が一、[r]　敵に回るようなことがあれば……）
+[k]
+
+＠段蔵
+（その時こそは、我が身に代えても！）
+[k]
+
+？1：段蔵さん？
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaFace A 1]
+
+＠段蔵
+…………いえ。[r]何でもございませぬ。
+[k]
+
+[charaFadeTime D 0.2 0.5]
+[charaFace A 5]
+
+＠段蔵
+（如何なる相手であろうとも、[r]　この加藤段蔵のすべきことは変わりませぬ）
+[k]
+
+＠段蔵
+（マスター。必ず、お守りいたします）
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

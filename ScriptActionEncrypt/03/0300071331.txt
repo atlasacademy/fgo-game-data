@@ -1,0 +1,571 @@
+
+
+
+＄03-00-07-13-3-1
+
+
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 7006300 1 坂田金時]
+[charaSet B 7023001 1 源頼光]
+[charaSet C 1047001 1 渡辺綱]
+[charaSet D 6030000 1 段蔵]
+[charaSet E 7022001 1 茨木童子]
+[charaSet G 5017000 1 メディア・リリィ]
+[charaSet J 1098205900 1 伊吹童子]
+
+[charaSet H 98115000 1 エフェクト用]
+[charaSet I 1098205910 1 伊吹童子シルエット]
+[charaSet K 98115000 1 エフェクト用2]
+
+[scene 102002]
+
+[charaPut H 2000,2000]
+[charaEffect H bit_talk_barrier02_fs]
+
+[bgm BGM_EVENT_24 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.5]
+[se ad678]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[charaMoveScale A 1.1 0.2]
+[charaMove A 0,15 0.2]
+[effect bit_talk_gold_slash_02]
+[wt 0.2]
+[charaFadeout A 0.1]
+[wt 0.1]
+[blurOff motion 0.2]
+
+[effect bit_talk_thunder_03_fs]
+[se ad842]
+[se ade346]
+[wt 1.0]
+[seStop ad842 0.5]
+[seStop ade346 0.5]
+[wt 0.5]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+[wt 0.5]
+[se ad7]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[charaMoveScale C 1.1 0.2]
+[charaMove C 0,15 0.2]
+[wt 0.2]
+[charaFadeout C 0.1]
+[wt 0.1]
+[blurOff motion 0.2]
+
+[charaScale A 1.0]
+[charaScale C 1.0]
+
+[se ad1053]
+[effect bit_talk_quick_slash]
+[wt 0.4]
+[se bac308]
+[wt 0.8]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.5]
+[se ad85]
+[effect bit_talk_v_slash01]
+[wt 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk depthOff]
+[charaDepth J 1]
+[charaDepth H 2]
+
+[charaPut H 1]
+[charaScale J 1.3]
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 -30,15]
+[wt 0.5]
+[se ad1013]
+[effect bit_talk_14 -300,100]
+[wt 0.1]
+[se ad1014]
+[effect bit_talk_14 0,-200]
+[wt 0.1]
+[se ad1032]
+[effect bit_talk_14 300,100]
+[wt 1.0]
+
+[charaFadeout J 0.1]
+[charaPut H 2000,2000]
+
+[charaScale C 1.1]
+[se ad671]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[charaMoveScale C 1.0 0.2]
+[wt 0.2]
+
+＠渡辺綱
+……ッ！
+[k]
+
+[charaFace C 2]
+
+＠渡辺綱
+刃が、届かぬ！[r]キャスター！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠メディア・リリィ
+知り得る限りの……[r]高速神言による、術式を……既に……！
+[k]
+
+[charaFace G 2]
+
+＠メディア・リリィ
+ですが……通じていないのです、綱さま！[r]生得的な防御結界が、彼女の肉体を覆っています！
+[k]
+
+[charaFace G 5]
+
+＠メディア・リリィ
+この強度、[#此処:こ　こ]までの存在感……[r]まるで自然そのものを、相手取るかのよう……！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[se ad73]
+[charaPut D 1]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect D appearance 1 0.25]
+[wt 0.5]
+[charaFace D 2]
+＠段蔵
+神霊・伊吹童子、健在！[r]お味方の総力を以てしても霊核に届きませぬ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠坂田金時
+へッ！　ソイツはやってみなけりゃ[line 3]
+[k]
+
+[messageOff]
+[se ad1010]
+[wt 0.4]
+[se ad85]
+[charaFace A 2]
+[effect bit_talk_gold_slash_02]
+[wt 0.1]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[charaPut H 1]
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 -30,15]
+[wt 0.5]
+[se ad1013]
+[se ad32]
+[effect bit_talk_14]
+[wt 1.0]
+
+＠伊吹童子
+いのち。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠坂田金時
+！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 -30,15]
+
+＠伊吹童子
+儚きモノ。
+[k]
+
+＠伊吹童子
+捧げよ。
+[k]
+
+＠A：酒呑童子
+へえ、そないに？
+[k]
+
+＠伊吹童子
+[line 7]？
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_24 1.0]
+[wait fade]
+
+[scene 10000]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad1051]
+[effect bit_talk_14]
+[wt 1.0]
+[se ad464]
+[effect bit_talk_blood_splash_fs 0,0 H]
+[wt 3.0]
+
+[scene 102002 1.0]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠源頼光
+酒呑童子！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠段蔵
+神霊・伊吹童子の背後より奇襲攻撃[line 3][r]結界を砕き、酒呑童子の[#爪牙:そ う が]が[#体躯:たいく]を貫いています！
+[k]
+
+＠段蔵
+霊基深くへの直撃を確認！[r]マスター！
+[k]
+
+＠段蔵
+元より伊吹童子は酒呑童子の別側面！[r]であれば、姿違えど[#大本:オリジナル]を同じくする両者！
+[k]
+
+＠段蔵
+その[#爪牙:そ う が]、届くか……！？
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[se ad231]
+[effect bit_talk_35]
+[charaFadeout D 0.1]
+[wt 0.1]
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[wt 1.5]
+[se ad1041]
+[scene 102002 1.0]
+[wt 3.5]
+
+
+[bgm BGM_EVENT_132 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠坂田金時
+！？
+[k]
+
+＠坂田金時
+何だ……[r]こりゃあ、[#骸:むくろ]の式神と同じ……
+[k]
+
+＠坂田金時
+ヤツの傷が……癒える……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad1041]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaScale J 1.0]
+[charaDepth I 4]
+[charaDepth J 1]
+
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 1.2]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[wt 0.3]
+[charaFadeout I 1.2]
+[wt 2.0]
+＠伊吹童子
+ふむ。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠段蔵
+いいえ！　魔力の性質、[r][#骸:むくろ]の式神のソレとはまったく異なっておりまする！
+[k]
+
+＠段蔵
+伊吹童子が生来持ち合わせる、[r]恐らくは自動的再生力！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠渡辺綱
+元より[#不死:しなず]か。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠坂田金時
+ハッ！　ソイツは中々にゴールデンかもしれねえや！[r]だが見ろ。[#奴:やっこ]さん元の大きさに縮んだぜ！
+[k]
+
+[charaFace A 0]
+
+＠坂田金時
+[#此処:こ　こ]は！　攻め時と見たぜ[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 7]
+[charaFadein J 0.1 1]
+[wt 1.0]
+[charaFaceFade J 14 0.5]
+[wt 0.5]
+
+＠伊吹童子
+ゆかい。
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[se ad875]
+[se ad14]
+[seVolume ad14 0 0.4]
+[shake 0.05 0 2 1.2]
+[charaPut K 1]
+[charaEffect K bit_talk_pressure_fs]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠坂田金時
+…………ッ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 1.5]
+
+＠
+ただの、一言。
+[k]
+
+[messageOff]
+[wt 1.0]
+＠
+再びの超高密度魔力による重力負荷を導く一言により、[r]すべての人と鬼が動きを止めていた。
+[k]
+
+＠
+[#是:これ]なる脅威の神霊と、出自と大本を共有する[r]酒呑童子にしても同じく。
+[k]
+
+＠
+先刻の重さよりも、尚、重い。[r]此の場に於いては[line 3]
+[k]
+
+＠
+立ちたる者、神霊・伊吹童子ただの一騎のみ。
+[k]
+
+＠
+他の[#悉:ことごと]くは地に伏し、[r][#頭:こうべ]を垂れる。
+[k]
+
+＠
+大地の真なる支配者を前に、[r]命在るもの、為す術なく、その挙動を見守る他になし。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+[wt 0.5]
+[se ad222]
+[seVolume ad222 0 0.6]
+[charaMove A 0,-20 0.2]
+[wt 0.2]
+[seStop ad222 0.2]
+
+＠坂田金時
+ち、くっ、しょう……[line 3]！
+[k]
+
+[messageOff]
+[charaMove A 0,-50 0.4]
+[charaFadeout A 0.4]
+[wt 0.4]
+[se ad144]
+[wt 0.5]
+＠坂田金時
+腕が……
+[k]
+
+＠坂田金時
+指の、一本……ぴくりとも、しねえ、ぞッ……！？
+[k]
+
+[messageOff]
+[wt 0.5]
+
+？1：体、が……
+
+？！
+
+[wt 0.5]
+？1：動かない……！
+
+？！
+
+＠坂田金時
+大将！
+[k]
+
+＠段蔵
+マスター！
+[k]
+
+[messageOff]
+[seStop ad14 1.0]
+[charaPut K 1200,1200]
+[se ad1042]
+[wt 2.0]
+[seStop ad1042 0.5]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+
+＠伊吹童子
+………………さて。
+[k]
+
+＠伊吹童子
+いのちの群れよ。
+[k]
+
+＠伊吹童子
+今、余は生け贄を欲しておらぬが、[r]どうしてもと云うならば、喰ろうてやっても、よい。
+[k]
+
+[charaFace J 9]
+
+＠伊吹童子
+そうさな、まずは[line 3]
+[k]
+
+[messageOff]
+[charaFadeout J 0.4]
+[wt 0.1]
+
+[se ad1042]
+[wt 2.0]
+[seStop ad1042 0.5]
+
+
+[charaScale J 1.2]
+[charaTalk J]
+[charaFace J 14]
+[charaFadein J 0.1 1]
+
+＠伊吹童子
+おまえか？
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_132 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

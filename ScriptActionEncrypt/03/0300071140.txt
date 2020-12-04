@@ -1,0 +1,909 @@
+
+
+
+＄03-00-07-11-4-0
+
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[cameraMove 0.1 0,0 1.01]
+
+[charaSet A 7006300 1 坂田金時]
+[charaSet F 6030000 1 段蔵]
+[charaSet G 6021001 1 酒呑童子シルエット]
+[charaFilter G silhouette 00000080]
+[charaSet I 6021001 1 酒呑童子]
+[sceneSet K 10000 1]
+[charaScale K 1.01]
+[charaSet L 7022001 1 茨木童子]
+[charaSet M 7022001 1 茨木童子シルエット]
+[charaFilter M silhouette 00000080]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 27601]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad1055]
+[shake 0.05 4 4 1.5]
+[wt 2.5]
+
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠坂田金時
+うるせえ！
+[k]
+
+[messageOff]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[se ad678]
+[charaPut H 1]
+[charaEffect H bit_talk_41_fs]
+[charaMoveScale skt 1.1 0.1]
+[charaMove A 0,15 0.1]
+[wt 0.2]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_41_fs]
+[charaFadeout A 0.1]
+[wt 0.1]
+[blurOff motion 0.2]
+[charaScale A 1.0]
+
+[effect bit_talk_thunder_03_fs]
+[se ad842]
+[se ade346]
+[se ad626]
+[seVolume ad626 0 0.5]
+[wt 1.0]
+[seStop ad626 0.5]
+[wt 0.5]
+
+[se ad1018]
+[wt 1.5]
+[se ad10]
+[shake 0.05 0 4 1.5]
+[wt 1.5]
+[seStop ad640 0.5]
+[wt 1.0]
+
+[charaTalk L]
+[charaFace L 8]
+[charaFadein L 0.1 1]
+
+＠茨木童子
+ああっ、星熊……！[r]お、おのれ金時……人の身でふざけた真似をッ！
+[k]
+
+[charaFace L 5]
+
+＠茨木童子
+こ、こうなれば……[r]些か[#吾:われ]も気後れするが金熊童子を目覚めさせ……！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 1.0]
+[charaTalk depthOff]
+[charaDepth I 1]
+[charaDepth G 3]
+[charaDepth L 5]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 -200,0]
+[charaMove G -150,0 0.8]
+[wt 1.0]
+
+[charaTalk L]
+[se ad76]
+[charaFace L 7]
+[charaShake L 0.05 3 3 0.3]
+[wt 0.3]
+
+[charaFace L 4]
+[charaMove L 20,-10 0.5]
+[wt 0.5]
+[charaMove L 0,-20 0.5]
+[wt 0.5]
+
+＠茨木童子
+あう。
+[k]
+
+[messageOff]
+[charaMove L 0,-70 0.2]
+[charaFadeout L 0.2]
+[wt 0.2]
+[se ad144]
+[wt 1.0]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠段蔵
+星熊童子の沈静化を確認。[r]茨木童子の敵性反応も、消失！
+[k]
+
+[charaFace F 4]
+
+＠段蔵
+と云うか、その……[r]背後からの不意打ちにて意識を失った模様……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠坂田金時
+軽く殴ったように見えただろ。[r]そりゃ気のせいだからな。
+[k]
+
+＠坂田金時
+アレが[%1]の頭なら、[r]落ちた[#柘榴:ざくろ]もかくやの割れっぷり晒してらぁ。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.1]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 1.0]
+[charaFadeout G 1.0]
+[wt 1.0]
+[charaTalk on]
+[charaTalk depthOn]
+
+[bgm BGM_EVENT_71 0.1]
+
+＠酒呑童子
+まあ、まあ、ようけ揃わはって。
+[k]
+
+[charaFace I 1]
+
+＠酒呑童子
+佳い夜やねえ？[r]お月さん、血ィ流してはるわ。
+[k]
+
+[charaFace I 10]
+
+＠酒呑童子
+茨木が迷惑かけたみたいやねえ。[r]まあ、御山のあれやこれやも血の気増えとるさかい、
+[k]
+
+＠酒呑童子
+人が入り込もうもんなら、[r]喰い散らかされとるはずなんやけど[line 3]
+[k]
+
+[charaFace I 0]
+＠酒呑童子
+そのへんは、まあ、[r][#金髪碧眼:きんぱつへきがん]の小僧がおるからなぁ？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠坂田金時
+はは。どうかね！[r]オレは御山が似合いだってか、酒呑。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+[wt 1.0]
+
+＠酒呑童子
+ふふふふふふ。[r]怖い怖い。そないに睨まんといてえな。
+[k]
+
+[charaFace I 0]
+
+＠酒呑童子
+うちとお話ししに来たんちゃうん？
+[k]
+
+＠酒呑童子
+なあ、お話ししようや。
+[k]
+
+＠酒呑童子
+小僧もええけど、せやなあ……[r]そこの[&黒髪の小僧:赤毛の娘]、うちとお話ししぃひん？
+[k]
+
+[messageOff]
+[se ad1042]
+[seVolume ad1042 0 0.5]
+
+[charaMove I 0,8 0.4]
+[charaMoveScale I 1.05 0.4]
+[wt 0.2]
+[seStop ad1042 0.4]
+[wt 0.2]
+＠酒呑童子
+な。お話ししよか。
+[k]
+
+＠酒呑童子
+な。それとも……
+[k]
+
+＠酒呑童子
+酒呑まはるやろか。[r]甘ぁい[#蘇:そ]もあるんやけど、どない？
+[k]
+
+[messageOff]
+[charaFace I 1]
+[wt 1.0]
+[charaFace I 0]
+＠酒呑童子
+よう見たら、あんたはん……[r]うちの知らへんもん見てきた[#瞳:め]ぇしとるわあ。
+[k]
+
+＠酒呑童子
+[line 6]その[#瞳:め]ぇ、[#抉:えぐ]ったろか？
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.2]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[charaFace A 2]
+[charaMoveScale A 1.1 0.1]
+[se ad85]
+[effect bit_talk_gold_slash_02]
+[wt 0.2]
+[blurOff motion 0.2]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 -50,0]
+[wt 0.1]
+[charaMove F 50,15 0.2]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[charaMoveScale F 1.1 0.2]
+[se adm14]
+[effect bit_talk_x_slash03]
+[wt 0.2]
+[blurOff motion 0.2]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaScale A 1.0]
+[charaScale F 1.0]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 0,15]
+[wt 0.1]
+[se ad7]
+[se ad671]
+[seVolume ad671 0 0.5]
+[charaMoveScale I 1.0 0.2]
+[charaMove I 0,0 0.2]
+[wt 0.2]
+[seStop ad671 0.6]
+
+＠酒呑童子
+……ああ、もう。
+[k]
+
+[charaFace I 9]
+
+＠酒呑童子
+うち一流の冗談やないの。[r]長い付き合いなのに、つれないわぁ。
+[k]
+
+[messageOff]
+[charaFace I 1]
+[wt 1.0]
+[charaFace I 0]
+
+＠酒呑童子
+あ。せや。
+[k]
+
+＠酒呑童子
+勢いで腕もいでしもたから、返すわぁ。
+[k]
+
+[messageOff]
+[charaMoveReturn I 5,0 0.2]
+[wt 0.2]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaScale I 1.0]
+
+[se adm14]
+[wt 0.5]
+[se ad1046]
+[se ad227]
+[seVolume ad227 0 0.7]
+[wt 1.0]
+
+？1：今、放り投げてきたのは……
+？2：段蔵の右腕！？
+
+？！
+
+[wt 0.5]
+[se ad144]
+[wt 1.0]
+＠段蔵
+不覚ッ……！
+[k]
+
+＠段蔵
+ワタシが、交差した、刹那……[r]右腕を、取り外されましてございまする……！
+[k]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠坂田金時
+酒呑ッ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠酒呑童子
+ああ怖い怖い。[r]なんやのん、そないな顔して。
+[k]
+
+[charaFace I 9]
+
+＠酒呑童子
+ちいっと力加減間違えただけやないの。[r]それに、なあ。ソレあんまり綺麗なお人形やさかい、
+[k]
+
+＠酒呑童子
+割ったりしぃひんわぁ。[r]よう見てぇな。
+[k]
+
+＠酒呑童子
+腕、[#綺麗に外れとる]やろ？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+＠段蔵
+……マスター。金時殿。
+[k]
+
+＠段蔵
+お二人ともご心配なく。[r]酒呑童子の語る言葉は事実でありまする。
+[k]
+
+＠段蔵
+右腕、外されはしましたが……[r][#是:これ]このように取り付ければ……くッ……！
+[k]
+
+[messageOff]
+[se ad1047]
+[wt 1.0]
+
+[charaTalk F]
+[charaFace F 4]
+[charaShake F 0.1 2 2 0.4]
+[charaFadein F 0.4 0,-20]
+[charaMove F 0,0 0.4]
+
+＠段蔵
+……元通り、にて。
+[k]
+
+？1：無理に動かないで
+？2：今、回復術式を掛けるから
+？！
+
+[messageOff]
+[wt 0.5]
+
+？1：礼装起動
+
+？！
+
+[se bas3]
+[effect bit_talk_cure]
+[wt 2.0]
+＠段蔵
+……ありがとうございます。[r]いえ、かたじけない。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠坂田金時
+……。[r]……。
+[k]
+
+[charaFace A 7]
+
+＠坂田金時
+…………やれやれだ。
+[k]
+
+＠坂田金時
+誰あろうテメェのことだ、[r]とっくに、茨木とオレたちの話は耳に届いてンだろ？
+[k]
+
+[charaFace A 9]
+
+＠坂田金時
+返答は如何に。[r]酒呑童子。
+[k]
+
+[bgmStop BGM_EVENT_71 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠酒呑童子
+ええよ？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠段蔵
+！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠坂田金時
+そうか。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠段蔵
+即答！？
+[k]
+
+＠段蔵
+や、焼け付くが如き空気から、まさかの……
+[k]
+
+？1：わけが
+？2：わからない！
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠坂田金時
+ああ。それだ。
+[k]
+
+＠坂田金時
+それでいいンだ、[%1]。
+[k]
+
+＠坂田金時
+無理に[#理解しよ:わ　　か　　ろ]うとすんじゃねえ。[r]あれこれねじ曲げて呑み込んでも、意味なんざねえ。
+[k]
+
+＠坂田金時
+それが鬼だ。
+[k]
+
+[messageOff]
+[charaFace A 7]
+[charaMove A 0,-10 0.8]
+[wt 1.2]
+[charaMove A 0,0 0.4]
+[wt 0.8]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth I 1]
+[charaDepth A 2]
+[charaTalk A]
+[charaFace A 0]
+[charaFace I 0]
+[charaFadeinFSR A 0.1 2]
+[charaFadeinFSL I 0.1 0]
+
+＠坂田金時
+酒呑。
+[k]
+
+＠酒呑童子
+なあに？
+[k]
+
+＠坂田金時
+力、貸してくれるってことでいいんだな？
+[k]
+
+＠酒呑童子
+ええよぉ。
+[k]
+
+＠酒呑童子
+パラケルススはんも還らはったし、[r]天覧のなんちゃらも終わってしもて、暇してたんよ。
+[k]
+
+＠酒呑童子
+せやから、ええよぉ。
+[k]
+
+[charaFace I 1]
+
+＠酒呑童子
+小僧とも久々に遊びたいしなァ。[r]ふふふふふふふ。共闘なんていつ以来やろなぁ？
+[k]
+
+[charaFace A 4]
+
+＠坂田金時
+……初めてだ、共闘は。
+[k]
+
+[charaFace I 0]
+
+＠酒呑童子
+あら、そ？
+[k]
+
+[charaFace A 5]
+
+＠坂田金時
+一応だが云っておく。[r]酒呑、敵サンは[#正真正銘:しょうしんしょうめい]の[#強者:つわもの]だ。
+[k]
+
+＠坂田金時
+八将神。二将と[#戦:や]ったがとんでもねえ奴らさ。[r]まるで勝った気がしねえ、つか[line 3]
+[k]
+
+[charaFace A 4]
+
+＠坂田金時
+まだオレは八将の誰にも[#勝ててねえ]。[r]やり合いはしたが、とどめは頼光サンと綱の兄ィだ。
+[k]
+
+＠酒呑童子
+へえ[line 3]
+[k]
+
+[charaFace I 1]
+＠酒呑童子
+あんた、珍しいこともあるやないの。[r]ふふふふ。なあ、まさか、[#強者:つわもの]相手に[#滾:たぎ]ってへんの？
+[k]
+
+＠酒呑童子
+怯えてはるんかねえ。[r]かわいそやねえ。
+[k]
+
+＠酒呑童子
+そんなら[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+[wt 1.2]
+
+＠酒呑童子
+こっちの[&坊:娘]の方が、[r]なあ、よっぽど肝が据わってるんちゃう？
+[k]
+
+[messageOff]
+[se ad1042]
+[seVolume ad1042 0 0.6]
+[charaMove I 0,8 0.4]
+[charaMoveScale I 1.05 0.4]
+[wt 0.2]
+[seStop ad1042 0.4]
+[wt 0.5]
+[charaFace I 0]
+
+＠酒呑童子
+なあ、[&坊:娘]。
+[k]
+
+＠酒呑童子
+あんたはん。[%1]云うたねえ。
+[k]
+
+＠酒呑童子
+その年格好。うちらからしたら、[r]まあ大人で通じる頃やろけど……
+[k]
+
+[charaFace I 1]
+
+＠酒呑童子
+あんたはん、まだまだ雛やわぁ。
+[k]
+
+＠酒呑童子
+ちいちゃい子供。[r]雛。仔猫。
+[k]
+
+＠酒呑童子
+せやろ？
+[k]
+
+＠酒呑童子
+その[#瞳:め]ぇ見れば、うちはぜぇんぶ見えてまうの。
+[k]
+
+？1：[line 3]もう、子供じゃない
+
+？！
+
+[messageOff]
+[wt 0.5]
+
+？1：法的に未成年かどうかは
+？2：西暦がどうなってるか次第だろうけど
+
+？！
+
+[charaFace I 10]
+
+＠酒呑童子
+ふふ。[#可愛:か]いらしいなぁ。[r]ちいちゃい子はみんなそう云うんよ。
+[k]
+
+＠酒呑童子
+責めてるんとちゃうよ？[r]逆。逆。うちはねえ、あんたはんを褒めとるの。
+[k]
+
+＠酒呑童子
+偉いわぁ。[r]まだ、こんな、ちいちゃい子やのに[line 3]
+[k]
+
+[charaFace I 0]
+
+＠酒呑童子
+[#肝が据わっとる]。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠坂田金時
+……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠酒呑童子
+うちに聞かせてえな。
+[k]
+
+＠酒呑童子
+あんたはんは何故、[r]怖ぁい[#強者:つわもの]と戦うてはるん？
+[k]
+
+？1：帰るために
+
+？！
+
+[messageOff]
+[wt 0.5]
+
+？1：世界を、取り戻すために
+
+？！
+
+＠酒呑童子
+…………へえ。
+[k]
+
+＠酒呑童子
+よう分からへんけど、[r]なんやおもろいこと言わはるわぁ。なあ、小僧？
+[k]
+
+[charaFace I 1]
+
+＠酒呑童子
+ちいちゃい子やのに立派やわぁ。[r]ふふ。ふふふ。
+[k]
+
+＠酒呑童子
+そないなこと言う[#喉:のど]、美味しそやねえ。[r]舌、柔らかそうやねえ[line 3]
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+[charaMoveScale F 1.05 0.3]
+[charaMove F 0,8 0.3]
+[se ad984]
+[wt 0.2]
+[wt 0.2]
+
+＠段蔵
+冗談は止めにしていただく。[r]酒呑童子殿。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaScale F 1.0]
+[charaScale I 1.0]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+
+＠酒呑童子
+あら。いけず。
+[k]
+
+[charaFace I 9]
+
+＠酒呑童子
+小僧もやで？
+[k]
+
+＠酒呑童子
+その間合い、[r]うちの両腕切り落とすつもりやろ。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠坂田金時
+当たり前だ。[r]首落とさねえだけ感謝しやがれ。
+[k]
+
+[charaFace A 5]
+
+＠坂田金時
+テメェが脅しやがったソイツはな、[r]オレっちの仲間いやさ大将だ。喰われてたまるか！
+[k]
+
+＠坂田金時
+折角テメェに力を借りても、[r]大将がいなくちゃ話になんねえってンだよ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+
+＠酒呑童子
+はぁい。ふふふふ、必死やねえ！
+[k]
+
+＠酒呑童子
+そないに切羽詰まるくらいやから、[r]そら、よっぽどお強い敵さんなんやろねえ。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠坂田金時
+ああ、そうだ。[r]それについちゃあ[line 3]
+[k]
+
+[messageOff]
+[charaFace A 6]
+[wt 1.0]
+[charaFace A 0]
+
+＠坂田金時
+[%1]の大将。[r][#先刻:さっき]、段蔵サンと話をしてた感じからすりゃ、
+[k]
+
+＠坂田金時
+[#アンタたち:カ　ル　デ　ア]は[#歳刑神:ヤ　　ツ]の素性を知ってる。[r]そうだろ？
+[k]
+
+＠坂田金時
+なら[line 3]詳しく、話を聞かせちゃくれねえか。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_70 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,2182 @@
+
+
+
+＄03-00-07-16-2-0
+
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 6030000 1 段蔵]
+[charaSet B 7006300 1 坂田金時]
+[charaSet C 1098202400 1 藤原香子]
+[charaSet D 1098176400 1 源頼光]
+[charaSet E 1098202510 1 蘆屋道満]
+[charaSet F 5004001 1 ナーサリー・ライム]
+[charaSet G 99502600 1 マシュ]
+[charaSet H 6019001 1 風魔小太郎]
+[charaSet I 98115300 1 ホームズ]
+[charaSet J 1098124500 1 ダ・ヴィンチ]
+[charaSet K 98002000 1 フォウ]
+
+[charaSet L 98115000 1 エフェクト用]
+[charaPut L 1200,1200]
+[charaEffect L bit_talk_10_LowLevel]
+
+[charaSet N 98115000 1 エフェクト用]
+[charaScale N 1.1]
+
+[masterBranch _Male _Female]
+
+[label _Male]
+
+[charaSet M 1098128700 1 主人公_男]
+
+
+[branch _branchEnd]
+
+[label _Female]
+
+[charaSet M 1098128710 1 主人公_女]
+
+[label _branchEnd]
+
+[scene 101900]
+
+[fadein black 1.0]
+[se ad663 1.0]
+[wait fade]
+[wt 1.0]
+[seStop ad663 2.0]
+[wt 2.0]
+[scene 102600 1.0]
+[wt 2.5]
+
+[bgm BGM_EVENT_66 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠坂田金時
+と、云う訳でだ！
+[k]
+
+＠坂田金時
+[#此度:こたび]はまことに世話になった。[r]反物や米俵や珍しい品やあれこれ、
+[k]
+
+[charaFace B 1]
+
+＠坂田金時
+頼光サンから預かったンで家人に渡しといたぜ。[r]この通り。感謝申し上げる、香子サン！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠藤原香子
+いえ、そんなわざわざ[line 3]
+[k]
+
+[charaFace C 1]
+
+＠藤原香子
+でもありがとうございます。[r]お米をいただけるのは嬉しいのが本音でありますし、
+[k]
+
+＠藤原香子
+いただいておきますね。[r]頼光様にはどうぞ宜しくお伝えください。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠坂田金時
+おう！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠藤原香子
+それから。どうぞ、ゆっくりしていってください。[r]お疲れでしょうし[line 3]
+[k]
+
+[charaFace C 0]
+
+＠藤原香子
+それに何より、[r]私、バベッジ様より聞き及んでいるのです。
+[k]
+
+＠藤原香子
+異境異界より訪れし者はいずれ京を去るのだと。[r][%1]様。
+[k]
+
+[charaFace C 4]
+
+＠藤原香子
+貴方も、旅立たれるのですよね。
+[k]
+
+？1：あれ？
+
+？！
+
+[messageOff]
+[wt 0.5]
+
+？1：[&自分:わたし]がこの時代の人間じゃないって
+？2：香子さんに話したっけ
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠段蔵
+い、いえ。ワタシの記録によれば、[r]その情報は香子殿には一度も申し上げておらず！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠藤原香子
+えへ。ごめんなさい。
+[k]
+
+＠藤原香子
+今更のお話ではあるのですが……[r]実は。
+[k]
+
+＠藤原香子
+私、最初の晩に盗み聞きをしていました！[r]それをすべて、バベッジ様にお伝えしていたのです。
+[k]
+
+[messageOff]
+[fadeout white 1.0]
+[bgm BGM_EVENT_66 1.0 0.4]
+[wait fade]
+
+[charaPut N 0,15]
+[charaEffect N bit_sepia01]
+
+[charaFadeout C 0.1]
+[wt 1.0]
+[charaDepth C 10]
+[scene 102501]
+
+[fadein white 1.0]
+[wait fade]
+
+[charaFace C 0]
+[charaFadeinFSR C 0.2 500,0]
+[charaMoveFSR C 450,0 0.4]
+[wt 1.5]
+
+[charaPut L -200,0]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 -200,0]
+[wt 1.0]
+[charaFace I 6]
+
+[wt 0.5]
+[charaFace I 5]
+[wt 1.0]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut L 1200,1200]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 -200,0]
+[wt 1.5]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 -200,0]
+[wt 1.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut L -200,0]
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 -200,0]
+[wt 0.6]
+[charaMoveReturn G -200,-5 0.4]
+[wt 1.0]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut L 1200,1200]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 -200,0]
+[wt 1.5]
+
+
+
+[fadeout white 1.0]
+[wait fade]
+
+[charaPut N 2000,2000]
+[charaEffectStop N bit_sepia01]
+
+[scene 102600]
+[charaFadeout C 0.1]
+[charaFadeout M 0.1]
+[wt 1.0]
+
+[fadein white 1.0]
+[bgm BGM_EVENT_66 1.0 1.0]
+[wait fade]
+
+？1：気付かなかった！
+？2：香子さん、なかなかのスパイぶり……！
+
+？！
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠坂田金時
+こりゃ驚いた！[r]ってことは下手すりゃ……
+[k]
+
+＠坂田金時
+アンタとバベッジの出方次第じゃ、[r]オレっちたちは寝込み襲われて[#終:しま]いだった、と！
+[k]
+
+[charaFace B 0]
+
+＠坂田金時
+だが、ソレをしなかった。
+[k]
+
+[charaFace B 6]
+
+＠坂田金時
+まあ天覧聖杯戦争にゃ後ろ向きだったんだろうが、[r]それでもだ。恐れ入った！
+[k]
+
+[charaFace B 1]
+
+＠坂田金時
+香子サン、立派にアンタ[#天覧武者:マ　ス　タ　ー]だぜ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠段蔵
+はい。段蔵も気配を読み取れず！[r]よもや何らかの陰陽道の術に連なる[#隠形:おんぎょう]……？
+[k]
+
+[charaFace A 1]
+
+＠段蔵
+お見事です、香子殿。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[wt 1.0]
+
+＠藤原香子
+ふふふ。
+[k]
+
+＠藤原香子
+そんな風に云っていただけたら、[r]バベッジ様もお喜びになってくれるかもですね。
+[k]
+
+[charaFace C 0]
+
+＠藤原香子
+それでは。[r]私は、筆を執らねばなりませんので、[#是:これ]にて。
+[k]
+
+＠藤原香子
+お部屋は開けておきますので、[r]どうぞごゆるりと[line 3]
+[k]
+
+[messageOff]
+[se ad999]
+[bgmStop BGM_EVENT_66 1.5]
+[charaMove C -50,0 0.4]
+[charaFadeout C 0.4]
+[wt 1.0]
+[seStop ad999 1.0]
+[wt 2.0]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠坂田金時
+いやはや。[r]肝が冷えたぜ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠段蔵
+まさに人は見かけによらぬもの。[r]段蔵、今後は細心注意せねばと誓う次第にて。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠坂田金時
+オイラもだ。[r]いやはや、まさかなあ……
+[k]
+
+[charaFace B 4]
+
+＠坂田金時
+……。[r]……。
+[k]
+
+[charaFace B 0]
+
+＠坂田金時
+ところでよ。[r]やっぱりオイラ云っておきてえ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠段蔵
+金時殿？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[wt 1.0]
+[charaFace B 5]
+
+＠坂田金時
+天覧聖杯戦争、オレの[#術者:キャスター]は果たして誰なのか！
+[k]
+
+[charaFace B 4]
+＠坂田金時
+今更、天覧も願いもないもんだが、[r]何ともはっきりしねえ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠段蔵
+それは[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠坂田金時
+で、オレは考えた。[r]実のとこ亜種空想樹をまっぷたつにしてる最中も、
+[k]
+
+[charaFace B 11]
+＠坂田金時
+そういやオレの[#術者:キャスター]って誰だ？
+[k]
+
+[charaFace B 6]
+＠坂田金時
+って頭の片隅で想ってたぐらいだ。[r]そこんとこ、リンボの野郎に訊いとけばよかったぜ。
+[k]
+
+[charaFace B 4]
+
+＠坂田金時
+何せ、あの晴明殿さえぼかしやがった。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠段蔵
+確かに。[r]金時殿の仰る通り、謎のままです。
+[k]
+
+＠段蔵
+つい先刻、七騎目のキャスターの正体については[r]安倍晴明殿が語ってくださいましたが……
+[k]
+
+[messageOff]
+[fadeout white 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[charaPut N 0,15]
+[charaEffect N bit_sepia01]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+[scene 102700]
+
+[fadein white 1.0]
+[wait fade]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[bgm BGM_EVENT_70 0.1]
+
+＠[93CA76]空中の文字[-]
+[93CA76]ああ、そうだ。一応私から云っておこう。[-][r][93CA76]あの大莫迦は何も云わずに[#雲散霧消:うんさんむしょう]してしまった。[-]
+[k]
+
+＠[93CA76]空中の文字[-]
+[93CA76]天覧聖杯戦争、[-][r][93CA76]最後にして第七の[#術者:キャスター]たる人物[line 3][-]
+[k]
+
+＠[93CA76]空中の文字[-]
+[93CA76]それはアルターエゴ・リンボ自身です。[-]
+[k]
+
+＠[93CA76]空中の文字[-]
+[93CA76]何、キャスターじゃない？[-][r][93CA76]そこはそれ、エクストラクラスと言うモノだろう。[-]
+[k]
+
+＠[93CA76]空中の文字[-]
+[93CA76]ちなみに、マスターは……[-]
+[k]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠坂田金時
+……。[r]……。
+[k]
+
+＠坂田金時
+ああ。[r]分かってる。
+[k]
+
+[charaFace B 9]
+
+＠坂田金時
+…………オイラ、なんだろ。
+[k]
+
+[charaFace B 7]
+
+＠坂田金時
+悪い冗談だぜ。[r]オレっちの相棒たる[#術者:キャスター]が奴だったなんてよ。
+[k]
+
+[charaFace B 4]
+
+＠坂田金時
+なんだか気分が悪ィや。
+[k]
+
+[bgmStop BGM_EVENT_70 0.6]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠[93CA76]空中の文字[-]
+[93CA76]違う。[-]
+[k]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠坂田金時
+へ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠[93CA76]空中の文字[-]
+[93CA76]アルターエゴ・リンボのマスターは、[-][r][93CA76]誰あろうこの時代に生きる人間・蘆屋道満です。[-]
+[k]
+
+＠[93CA76]空中の文字[-]
+[93CA76]なので、金時は関係ないなァ。[-]
+[k]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+＠坂田金時
+はァー？
+[k]
+
+＠坂田金時
+おいおい晴明の旦那、[r]ってコトは……流石に信じらンねえ冗談だぜ！
+[k]
+
+[charaFace B 4]
+
+＠坂田金時
+だってよ、そりゃあつまり、[r]オレっちの相棒たる[#術者:キャスター]ってのは……
+[k]
+
+[charaFace B 5]
+
+＠坂田金時
+…………召喚されてない、ってコトになる。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠[93CA76]空中の文字[-]
+[93CA76]さてね。[-]
+[k]
+
+＠[93CA76]空中の文字[-]
+[93CA76]金時の手に令呪が浮かんだことは紛れもない事実。[-][r][93CA76]であれば、天覧聖杯戦争の参加者に選ばれたのも事実。[-]
+[k]
+
+＠[93CA76]空中の文字[-]
+[93CA76]金時は、第八のマスターだった。[-]
+[k]
+
+＠[93CA76]空中の文字[-]
+[93CA76]聖杯戦争をいっそう愉しむため、[-][r][93CA76]リンボが仕組んだか……[-]
+[k]
+
+＠[93CA76]空中の文字[-]
+[93CA76]或いは真逆で、リンボの目論みに抗うため発生した[line 3][-]
+[k]
+
+＠[93CA76]空中の文字[-]
+[93CA76][#奇跡のたぐい]か。[-]
+[k]
+
+＠[93CA76]空中の文字[-]
+[93CA76]私としては後者の解釈を推すが、[-][r][93CA76]諸君はどうかな。[-]
+[k]
+
+[messageOff]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+＠坂田金時
+……。[r]……。
+[k]
+
+[charaFace B 7]
+＠坂田金時
+……分かったような、分からんような……
+[k]
+
+[charaFace B 0]
+＠坂田金時
+いやまあ、リンボが相棒だったとか[r]云われるよりゃ何倍もマシっちゃマシだがよ。
+[k]
+
+[charaFace B 7]
+
+＠坂田金時
+晴明の旦那も焼きが回ったもんだぜ、[r]あれこれ明かすならきちんと頼むぜ、ったくよ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠源頼光
+まあ金時、晴明様に失礼ですよっ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠坂田金時
+へーんだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠ナーサリー・ライム
+ふふ。そっぽ向いたりして、子供みたい！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+
+
+
+
+
+
+＠坂田金時
+だ、だってよお！[r]左手にあかしの紋だって浮かんだんだぜ！？
+[k]
+
+[charaFace B 2]
+
+＠坂田金時
+ンなら、対応する[#術者:キャスター]が召喚されて然るべきだろ！
+[k]
+
+＠坂田金時
+気になって仕方ねえ！[r]リンボの仕業だか奇跡だか知らねえが！
+[k]
+
+＠坂田金時
+オイラの相棒、どこ行ったー！
+[k]
+
+？1：まあまあ
+
+[charaFace B 8]
+
+＠坂田金時
+ぐぬぬぬぬぬ！
+[k]
+
+？2：何にせよ、天覧聖杯戦争は終わってるし
+
+[charaFace B 7]
+
+＠坂田金時
+そりゃそうだがよぉ！
+[k]
+
+？！
+
+[messageOff]
+[fadeout white 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[charaPut N 2000,2000]
+[charaEffectStop N bit_sepia01]
+
+[wt 1.0]
+[charaFace B 6]
+
+[scene 102600]
+
+[fadein white 1.0]
+
+[wait fade]
+
+
+
+＠坂田金時
+ま、晴明の旦那はぼかしたが、[r]オレは考えた。
+[k]
+
+[messageOff]
+[charaFace B 7]
+[wt 1.0]
+[charaFace B 0]
+[bgm BGM_EVENT_78 0.1]
+
+＠坂田金時
+アンタがオレの[#術者:キャスター]……[r]だったんだよな？
+[k]
+
+＠坂田金時
+他にはやっぱり考えらンねえ。[r]異境異界からやってきて、オレと共に戦った術者。
+[k]
+
+＠坂田金時
+他でもないアンタさ。[r]段蔵サンは、そもそもアサシンって奴だろ？
+[k]
+
+[charaFace B 1]
+
+＠坂田金時
+アンタだ、[%1]。
+[k]
+
+
+
+
+＠坂田金時
+アンタがオレの大将で、サーヴァントって奴さ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠段蔵
+残念ながら金時殿、[r]マスターは正真正銘の人間であり……
+[k]
+
+＠段蔵
+サーヴァントとして召喚される、[r]ということは不可能かと思われまする。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠坂田金時
+んー。
+[k]
+
+[charaFace B 11]
+
+＠坂田金時
+そういうもんかぁ？
+[k]
+
+[messageOff]
+[charaFace B 4]
+[wt 1.0]
+
+[charaFace B 0]
+
+＠坂田金時
+よし分かった。[r]ま、それならそれでもいいさ！
+[k]
+
+[charaFace B 6]
+
+＠坂田金時
+オレと[%1]は……
+[k]
+
+＠坂田金時
+[#天覧武者:マ　ス　タ　ー]とサーヴァントじゃなかったかもしれねえ。[r]そうだとしても、だ！
+[k]
+
+[charaFace B 0]
+
+＠坂田金時
+大層ゴールデンな相棒同士だった！[r]そいつだけは間違いねえや！
+[k]
+
+＠坂田金時
+ああ、オイラにゃそれでいい！　そうと決めたッ！
+[k]
+
+[messageOff]
+[charaFace B 6]
+[wt 1.0]
+[charaFace B 0]
+＠坂田金時
+[line 6]どうだい、大将。
+[k]
+
+
+
+？1：（金時の瞳を見る）
+
+？！
+
+[messageOff]
+[wt 0.2]
+
+？1：（頷く）
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_78 1.5]
+[charaFace B 1]
+[wt 2.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad13]
+[wt 1.0]
+[bgm BGM_EVENT_77 0.1]
+[charaPut L 1]
+＠[51d4ff]ダ・ヴィンチ[-]
+[51d4ff]あ。繋がった！[-]
+[k]
+
+＠[51d4ff]ダ・ヴィンチ[-]
+[51d4ff]映像情報が繋がらないけど……[-][r][51d4ff]音声は届いてるね、こちらカルデア。聞こえてる？[-]
+[k]
+
+？1：ダ・ヴィンチちゃん！
+？2：聞こえてるよ、大丈夫
+
+？！
+
+[charaPut L 1200,1200]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠段蔵
+ノウム・カルデア管制室に報告！[r]マスターはご無事です、そして[line 3]
+[k]
+
+＠段蔵
+[#朱雀:す ざ く]門に発生した亜種空想樹の伐採に成功、[r]黒幕たるアルターエゴ・リンボについては、撃破！
+[k]
+
+[charaFace A 1]
+
+＠段蔵
+特異点発生源たる聖杯も回収済みにて。[r]任務完了でありまする！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut L 1]
+＠[51d4ff]ダ・ヴィンチ[-]
+[51d4ff]そちらの状況は管制室からも把握できているよ。[-][r][51d4ff]任務完了、ご苦労さま！[-]
+[k]
+
+＠[51d4ff]ダ・ヴィンチ[-]
+[51d4ff]平安京全域の結界をどうにかしてもらえれば、[-][r][51d4ff]もっとまともに通信が繋がるとは思うけど、[-]
+[k]
+
+＠[51d4ff]ダ・ヴィンチ[-]
+[51d4ff]結界は[#洛内:らくない]守護の[#要:かなめ]だろうし、[-][r][51d4ff]そうもいかないよね。[-]
+[k]
+
+＠[51d4ff]ダ・ヴィンチ[-]
+[51d4ff]だから、今、通信が繋がっているうちに、[-][r][51d4ff]緊急の帰還処理を行う。いいね！[-]
+[k]
+
+[charaPut L 1200,1200]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠段蔵
+それは[line 3]
+[k]
+
+？1：了解
+？2：帰還処理[&頼むよ:お願い]、ダ・ヴィンチちゃん
+
+？！
+
+[bgmStop BGM_EVENT_77 2.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠坂田金時
+……帰還ってことはだ。
+[k]
+
+＠坂田金時
+もう行っちまうのか？[r]アンタたち。
+[k]
+
+＠坂田金時
+あれだろ？　アンタの時代に戻れば、[r]世界は真っ白なんだろ？
+[k]
+
+＠坂田金時
+まだ[#市:いち]にも連れてってやれてねえし、[r]今宵は、そりゃあもうでかい宴を催すつもりで、
+[k]
+
+[charaFace B 7]
+
+＠坂田金時
+あれこれ企ててたんだが……
+[k]
+
+
+＠坂田金時
+そうか。行っちまうか。
+[k]
+
+？1：力を貸してくれてありがとう
+
+[charaFace B 0]
+
+＠坂田金時
+ソイツはこっちの言の葉だ、大将！
+[k]
+
+＠坂田金時
+アンタたちがいたから勝てた。[r]オレっち一人じゃ、綱の兄貴にゃ勝ててねえさ！
+[k]
+
+＠坂田金時
+だからオレに云わせてくれ！　大将！
+[k]
+
+[messageOff]
+
+[charaFace B 6]
+[wt 1.0]
+[bgm BGM_EVENT_110 0.1]
+[charaFace B 1]
+
+＠坂田金時
+[line 3]力、貸してくれて助かった！
+[k]
+
+？2：また、いつか何処かで会おう
+
+[charaFace B 4]
+
+＠坂田金時
+……ソイツはどうかな。
+[k]
+
+＠坂田金時
+オイラはきっと、英雄や英傑と呼ばれる程にゃ[r]大物にはなれねえ。なりたいとも思っちゃいねえんだ。
+[k]
+
+[charaFace B 0]
+[bgm BGM_EVENT_110 0.1]
+
+＠坂田金時
+せいぜいが、[r][#衆生:みんな]を想って踏ん張るだけさ！
+[k]
+
+＠坂田金時
+オレはそれを続けるだけだ。[r]だが、ああ。そうして進む道の先が……
+[k]
+
+[charaFace B 6]
+
+＠坂田金時
+もしも[#そう云うことになる]ってンなら、[r]その時には、ああ。そうさな。
+[k]
+
+[charaFace B 1]
+
+＠坂田金時
+[line 3]また、いつか何処かで会おうや。大将！
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[se ad15]
+[wt 0.4]
+[se ad15]
+[wt 0.6]
+＠段蔵
+座標情報、誤差修正。[r]ノウム・カルデア管制室との[#摺:す]り合わせ完了。
+[k]
+
+＠段蔵
+マスター、[r]時間でありまする。
+[k]
+
+[messageOff]
+[charaFace A 4]
+[wt 1.0]
+
+＠段蔵
+そして金時殿、実は……[r]詳しい仕組みを明かすには時間が足りぬのですが、
+[k]
+
+＠段蔵
+我々がこうして出逢い、共に戦い、[r]平安京で何を為したかという一連の記憶は[line 3]
+[k]
+
+＠段蔵
+[#汎人類史を生きる金時殿たちには残されませぬ]。[r][#是:これ]は、レイシフトの常でありまする。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+[wt 0.9]
+
+？1：…………
+？2：ごめん、金時
+
+？！
+
+[charaFace B 4]
+
+＠坂田金時
+そりゃあ[line 3]
+[k]
+
+[charaFace B 0]
+
+＠坂田金時
+いや。いい。責めやしねえさ！[r]顔見りゃ分かるぜ、どうしようもねえコトなんだろ。
+[k]
+
+＠坂田金時
+なら気にすんな。どうあれオレたちは[r]共に京を、いや日の本を、大陸を、[#現世:うつしよ]を護った！
+[k]
+
+[charaFace B 1]
+
+＠坂田金時
+大層ゴールデンなこった。[r]それだけで、充分以上だぜ。
+[k]
+
+？1：ゴールデン[line 3]
+
+？！
+
+[messageOff]
+[wt 0.5]
+？1：その言葉も、金時の記憶には残らないんだ
+？！
+
+[wt 0.2]
+
+？1：ごめん
+
+？！
+
+[charaFace B 0]
+
+＠坂田金時
+それがどうした。
+[k]
+
+＠坂田金時
+顔上げろ、暗い顔してんじゃねえぜ。
+[k]
+
+[charaFace B 6]
+
+＠坂田金時
+なあおい、大将！[r]去り際もゴールデンにいこうじゃねえか！
+[k]
+
+＠坂田金時
+この響きを気に入るのがオレなんだ。[r]いずれ耳にした時にゃ、また間違いなく気に入るさ。
+[k]
+
+[charaFace B 4]
+＠坂田金時
+とはいえ、そうだな。[r]どうあれ何もかも忘れちまうなら[line 3]
+[k]
+
+[charaFace B 0]
+
+＠坂田金時
+とりあえず今は、[#アンタが覚えててくれ]！
+[k]
+
+？1：……わかった！
+
+[charaFace B 1]
+
+＠坂田金時
+頼むぜ！
+[k]
+
+？2：……ゴールデン！
+
+[charaFace B 1]
+
+＠坂田金時
+おうとも！
+[k]
+
+？！
+
+[charaFace B 4]
+
+＠坂田金時
+……戻ってからもアンタたち、戦うんだろ？[r]云わなくても分かるぜ。
+[k]
+
+[charaFace B 0]
+
+＠坂田金時
+頑張れとは云わねえ。[r]頑張るのは目に見えてッからな。
+[k]
+
+＠坂田金時
+だから[line 3]
+[k]
+
+[messageOff]
+[charaFace B 6]
+[wt 1.0]
+[charaFace B 0]
+＠坂田金時
+アンタはアンタの世界を守れ。[r]オイラは、オイラの[#世界:みんな]のために！
+[k]
+
+[charaFace B 1]
+
+＠坂田金時
+戦うさ！
+[k]
+
+[messageOff]
+[wt 2.0]
+[fadeout black 3.0]
+[bgmStop BGM_EVENT_110 3.0]
+[wait fade]
+
+[scene 10000]
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_07_02_fs]
+[se ad12]
+[wt 4.0]
+[fadeout white 1.0]
+[wait fade]
+
+[pictureFrame cut063_cinema]
+[wt 2.0]
+
+[scene 101900]
+
+[fadein white 2.0]
+[wait fade]
+
+[wt 1.5]
+＠
+そして[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgm BGM_EVENT_95 0.1]
+＠
+平安京を嵐山より見下ろす、人影ひとつ。
+[k]
+
+＠
+賑わいを取り戻した[#洛内:らくない]を前にして、[r]そのすべてが失われる寸前であったことに思い至り、
+[k]
+
+＠
+己が行いの愚かしさと恐ろしさ、[r]そして、罪深さを想って身を震わせて涙する男だった。
+[k]
+
+[messageOff]
+[wt 1.0]
+＠
+男の名は蘆屋道満。
+[k]
+
+＠
+アルターエゴ・リンボならざる法師陰陽師である。
+[k]
+
+＠
+[#地獄界曼荼羅:じ ご く か い ま ん だ ら]たる亜種空想樹が両断され、[r]光に消える中、砕け散ってゆくリンボの霊基霊核から、
+[k]
+
+＠
+奇跡的にも生還を果たした身であった。
+[k]
+
+＠
+気付けば、[r]彼は、此の場に立って涙していた。
+[k]
+
+[messageOff]
+[wt 1.0]
+＠
+目元を拭い、[r]道満は力なく呟く[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠蘆屋道満
+……拙僧は。
+[k]
+
+＠蘆屋道満
+拙僧は恐ろしい。[r]解き放たれたはずであるのに、[#呪:しゅ]を感じてしまう。
+[k]
+
+＠蘆屋道満
+いつの日にか、儂は[#斯様:か よ う]な悪鬼に成り果てるのか？
+[k]
+
+＠蘆屋道満
+衆生の苦しみにこそ、[r]無上の悦びを見出すなどと……
+[k]
+
+＠蘆屋道満
+外道の[#窮:きわ]みへ至るのか。[r]ならば、ならば。
+[k]
+
+
+＠蘆屋道満
+儂は、明日の先など要らぬ。
+[k]
+
+＠蘆屋道満
+この日この時を以て、我が因業を断つ他に[line 3]
+[k]
+
+[messageOff]
+[se ad527]
+[seVolume ad527 0 0.2]
+[wt 0.2]
+[seStop ad527 0.1]
+[wt 0.4]
+
+[se ad527]
+[seVolume ad527 0 0.5]
+[wt 0.2]
+[seStop ad527 0.1]
+[wt 0.4]
+
+[se ad527]
+[seVolume ad527 0 0.8]
+[wt 0.2]
+[seStop ad527 0.1]
+[wt 0.6]
+
+＠A：声
+自害か。[r]道人の奥義を一度は修めた身で、無理をする。
+[k]
+
+＠A：声
+意味のないことは止めておきなさい。[r]蘆屋道満。
+[k]
+
+[messageOff]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.4 0,-50]
+[wt 0.4]
+
+＠蘆屋道満
+！
+[k]
+
+＠蘆屋道満
+晴明殿……[r]よもや、京にお戻りであったとは。
+[k]
+
+＠蘆屋道満
+或いはそうか、姿をお隠しになったと云うは偽り。[r]貴方ははじめからすべてを見越しておられたか。
+[k]
+[messageOff]
+
+[charaFaceFade E 11 0.3]
+[wt 1.0]
+
+[charaFaceFade E 6 0.3]
+
+＠蘆屋道満
+ならば、ならば拙僧の[#此度:こたび]の過ちのすべて、[r]何故止めてくださらなんだか……
+[k]
+
+＠A：安倍晴明
+なぜも何も。
+[k]
+
+＠A：安倍晴明
+かの蘆屋道満が[#己が影の欠片]如きに後れを取るとは、[r]流石の安倍晴明も予想の外だ。[#莫:ば][#迦:か]者。
+[k]
+
+＠A：安倍晴明
+そして、だ。[r]更に言うならば。
+[k]
+
+＠A：安倍晴明
+個人に執着するのはおまえの欠点だろうよ、道満。
+[k]
+
+[messageOff]
+[charaTalk E]
+[charaFaceFade E 5 0.3]
+[wt 1.0]
+
+＠蘆屋道満
+晴明殿[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 3.0]
+[bgmStop BGM_EVENT_95 3.0]
+[wait fade]
+
+[scene 10000]
+[charaFadeout E 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_EVENT_11 0.1]
+＠
+[line 6]汎人類史の伝説に、曰く。
+[k]
+
+[messageOff]
+[wt 1.0]
+＠
+某年某月……
+[k]
+
+＠
+京の都に下りたる大江の鬼の群れは、金品を奪い、[r]女子供を[#攫:さら]うに飽き足らず[line 3]
+[k]
+
+＠
+人を襲い、殺し、喰らい始める。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+＠
+鬼の活性化である。
+[k]
+
+＠
+大江山の鬼御殿には、[r]無数の女子供の人骨を捨てるための大穴があったとか。
+[k]
+[messageOff]
+[wt 1.0]
+＠
+事態を憂慮した安倍晴明は『大江の鬼征伐』を[#帝:みかど]に具申。[r]征伐の大将には源氏の[#棟梁:とうりょう]・源頼光が選ばれる。
+[k]
+
+＠
+[#此処:こ　こ]に、かの大江山の鬼退治伝説へと繋がる、[r]平安武者と鬼との最後の一大決戦が始まるのである。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+山中にて[#八幡:はちまん]・熊野・住吉の三神による[r]加護を受けし頼光四天王は大江の御山へと攻め入り、
+[k]
+
+＠
+酒呑童子、茨木童子、[r]金熊童子、熊童子、虎熊童子、星熊童子、
+[k]
+
+＠
+すべての有力な鬼は討ち果たされ……[r]酒呑童子は、源頼光の太刀の露に消えたという。
+[k]
+
+[messageOff]
+[wt 1.0]
+＠
+鬼には毒となる酒[line 3]
+[k]
+
+＠
+三神の加護の凝集たる神便鬼毒酒。[r]山伏に化けた頼光たちに[#是:これ]を振る舞われた酒呑童子は、
+[k]
+
+＠
+毒酒の威によって力を減衰させられて尚、[r]荒ぶり、頼光たちを苦しめたが、
+[k]
+
+＠
+最後には、首を[#刎:は]ねられたのだとか。
+[k]
+
+＠
+あらゆる酒精に通じる酒呑童子が、[r]何故、毒酒を飲んだのか？
+[k]
+
+＠
+三神の加護ゆえ飲まざるを得なかったのか？[r]それとも……
+[k]
+
+＠
+敢えて、飲み干したのか。
+[k]
+
+＠
+誰にも真相は分からない。
+[k]
+
+[messageOff]
+[wt 1.0]
+＠
+そして。[r]多くには知られざる異説によれば……[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+＠
+大江の鬼たちの活性化の直後、[r]源頼光は前にもまして冷血の殺戮装置と化したと云う。
+[k]
+
+＠
+理由は、鬼たちの外道ぶりに憤ったのだとも、[r]或いは、我が子と慈しむ金時が[line 3]
+[k]
+
+＠
+幼き頃より酒呑童子と出逢っていたのだと知るや否や、[r]鬼のすべてを“虫”と呼ぶようになったのだ、とも。
+[k]
+
+[messageOff]
+[wt 1.0]
+＠
+同異説では、こうも語られる。
+[k]
+
+＠
+大江山征伐大詰めの折、[r]山と[#見紛:み ま ご]う大怪異へ変じた酒呑を大具足にて打ち倒し、
+[k]
+
+＠
+元の姿となって[#微睡:ま ど ろ]む酒呑の首を[#刎:は]ねた者は、[r]源頼光ではなく。
+[k]
+
+＠
+[#主馬佑:しゅめのすけ]坂田金時、その人であり[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+＠
+更には。[r]茨木を討ったのは……
+[k]
+
+＠
+……[#内舎人:う ど ね り]渡辺綱であり……
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+…………如何なる理由か、茨木だけが一命を取り留める。
+[k]
+
+＠
+羅城門跡。[r]一条戻橋。
+[k]
+
+＠
+茨木は二度に渡り、渡辺綱を襲い[line 3]
+[k]
+
+＠
+一度は腕を落とされるも、[r][#是:これ]を取り戻し、[#何処:いずこ]かへ消えたという。
+[k]
+
+
+[messageOff]
+[wt 2.0]
+[fadeout black 1.0]
+[wait fade]
+
+[pictureFrame]
+[scene 101901]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+＠
+そして、[#暫:しばら]くの後。
+[k]
+
+[messageOff]
+[wt 1.0]
+＠
+かの法師陰陽師たる道満法師こと蘆屋道満、[r]死後に怨霊・悪霊左府と化した[#藤原顕光:ふじわらのあきみつ]と手を結び、
+[k]
+
+＠
+日本転覆のために大呪術を行使せんとするも、[r]安倍晴明に阻まれ……
+[k]
+
+＠
+逆賊として、京を追われることになるという。
+[k]
+
+＠
+或いは道満法師、安倍晴明に術比べを幾度挑むも[r]敗れ果て、最後には[#呪詛:じゅそ]返しを浴びて死するとも。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+いずれも[#此処:こ　こ]では語られぬ物語。
+[k]
+
+[messageOff]
+[wt 1.0]
+＠
+広大なる汎人類史の、[r]ほんのささやかな刹那の一幕である[line 3]
+[k]
+[messageOff]
+[wt 1.0]
+
+[fadeout black 3.0]
+[bgmStop BGM_EVENT_11 3.0]
+[wait fade]
+
+[scene 10000]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[messageOff]
+[effect bit_talk_07_02_fs]
+[se ad12]
+[wt 4.0]
+[fadeout white 1.0]
+[wait fade]
+[wt 2.0]
+
+[scene 104100]
+
+
+[charaSet I 9005001 1 ホームズ]
+[charaSet G 98001000 1 マシュ]
+
+[fadein white 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠マシュ
+先輩！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠風魔小太郎
+主殿！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠マシュ
+おかえりなさい！
+[k]
+
+＠マシュ
+本当にお疲れさまでした。[wt 1.0][charaFace G 12][r]……すみません、少しだけ動かないで下さいね。
+[k]
+
+[messageOff]
+[se ade357]
+[wt 0.8]
+[seStop ade357]
+[charaFace G 0]
+＠マシュ
+簡易メディカルチェック、完了です。[r]バイタルに問題等ありません。
+[k]
+
+[charaFace G 13]
+
+＠マシュ
+よかった……
+[k]
+
+？1：ただいま、マシュ
+
+[charaFace G 1]
+
+＠マシュ
+はい。改めて、おかえりなさい先輩。
+[k]
+
+？2：どこにも不調はないから安心して
+
+[charaFace G 3]
+
+＠マシュ
+は、はい。
+[k]
+
+[charaFace G 7]
+
+＠マシュ
+でも何があるか分かりませんし、[r]今のはあくまで簡易のメディカルチェックです。
+[k]
+
+
+？！
+
+[charaFace G 0]
+
+＠マシュ
+ひとまずのチェックなので、[r]この後、ネモ・ナースの診察は必須です。
+[k]
+
+＠マシュ
+診察室を空けてもらっていますので、[r]すぐに向かってくださいね。
+[k]
+
+[charaFace G 12]
+
+＠マシュ
+それと……[r]その……
+[k]
+
+[messageOff]
+[charaFace G 8]
+[wt 1.0]
+[charaFace G 12]
+
+＠マシュ
+今回は先輩の力になれず、[r]申し訳ありません……。
+[k]
+
+＠マシュ
+わたしが、レイシフトに失敗するなんて[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠風魔小太郎
+いえ、マシュ殿。[r]謝らねばならないのは僕の方です。
+[k]
+
+＠風魔小太郎
+レイシフト妨害の可能性に対して、[r]僕こそ、全力で対処すべきであったのです。
+[k]
+
+＠風魔小太郎
+リンボと浅からぬ縁を結んだであろう[r]この霊基を、お役に立てる機会だったのに……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠段蔵
+二人ともお気になさらず。[r]御覧ください。
+[k]
+
+[charaFace A 1]
+
+＠段蔵
+この通り、マスターはしっかりご無事です！[r]のみならずですね……
+[k]
+
+＠段蔵
+空想樹切除、特異点の聖杯回収、[r]一度の作戦でいずれも成功されておりまする。
+[k]
+
+[charaFace A 4]
+
+＠段蔵
+責めるべきはリンボでありましょう。[r]ですがお二人の無念、痛い程に分かります。
+[k]
+
+[charaFace A 2]
+
+＠段蔵
+……その無念、以後の作戦にて晴らしましょう。[r]是が非でも！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace G 6]
+[charaFace H 2]
+[charaFadeinFSR G 0.1 2]
+[charaFadeinFSL H 0.1 0]
+[wt 1.5]
+[charaTalk on]
+[charaFace G 1]
+＠マシュ
+はい！
+[k]
+
+[charaFace H 1]
+
+＠風魔小太郎
+承知！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 1.0]
+[se ad95]
+[seVolume ad95 0 0.4]
+[wt 1.0]
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.4 1]
+[wt 0.4]
+[seStop ad95]
+
+＠ダ・ヴィンチ
+やあ、おかえり二人とも。[r]簡易メディカルチェックはもう済んだみたいだね？
+[k]
+
+[charaFace J 1]
+
+＠ダ・ヴィンチ
+まずはお疲れさま！[r]それから、作戦成功おめでとう。そしてありがとう。
+[k]
+
+[charaFace J 25]
+
+＠ダ・ヴィンチ
+特異点は既に修復が開始されているし、[r]亜種空想樹の痕跡は完全に消えたのを確認済みだ。
+[k]
+
+＠ダ・ヴィンチ
+汎人類史は[#未:いま]だに白紙状態だけど、[r]でも、少なくとも新たな[#異聞帯:ロストベルト]の発生は阻んだし、
+[k]
+
+[charaFace J 24]
+
+＠ダ・ヴィンチ
+たとえば人理を取り戻した後に、[r]汎人類史が平安時代を基点に破壊されていた、
+[k]
+
+[charaFace J 10]
+
+＠ダ・ヴィンチ
+なんて事態も防ぐことができた。[r]まさに百点満点のミッション内容だ。
+[k]
+
+？1：ありがとう、ダ・ヴィンチちゃん
+
+[charaFace J 11]
+
+＠ダ・ヴィンチ
+いつもの二倍えらいから、[r]頭を撫でてあげよう。
+[k]
+
+＠ダ・ヴィンチ
+えらい！
+[k]
+
+？2：任務完了だね
+
+[messageOff]
+
+[charaFace J 11]
+[wt 1.5]
+
+？！
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 1]
+
+＠ホームズ
+アルターエゴ・リンボを撃破できたことも、[r]実に喜ばしい。
+[k]
+
+[charaFace I 0]
+
+＠ホームズ
+統一された意思の下で動いているようには[r]見受けられない存在ではあったが、そうだとしても、
+[k]
+
+＠ホームズ
+リンボは『異星の神』の配下である[r]アルターエゴ三騎のうち一騎だ。
+[k]
+
+[charaFace I 8]
+
+＠ホームズ
+僅かなりとも戦力を削いだと言えるだろう。[r]ゴルドルフ新所長もいたく喜んでいるよ。
+[k]
+
+[charaFace I 0]
+＠ホームズ
+通信途絶状態が長かった分、[r]レイシフト帰還から遅くとも二時間以内には、
+[k]
+
+＠ホームズ
+報告書を提出しろ、とか口では言っているがね。[wt 1.0][charaFace I 7][r]体の方はキミたちのために食事を準備中さ。
+[k]
+
+？1：後で挨拶をします
+
+＠ホームズ
+本当に後でいいさ。[r]まずは、休みたまえ。
+[k]
+
+？2：報告書見たら怒るんだろうなあ……
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠段蔵
+ご心配なく。[r]リンボの語った『異星の神』の秘密云々など、
+[k]
+
+＠段蔵
+何の意味もありませぬ。[r]所詮はリンボの虚言に違いなく。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠ホームズ
+アルターエゴ・リンボの語った言葉となれば、[r]確かに信憑性は薄いな[line 3]
+[k]
+
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 17]
+[charaFadein J 0.1 1]
+
+＠ダ・ヴィンチ
+はいはいそこまで、まずはメディカルチェック！[r]それから休養だ。いいね。
+[k]
+
+[charaFace J 0]
+
+＠ダ・ヴィンチ
+マシュ、悪いけど[r][%1]を送ってもらえる？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠マシュ
+は、はい。もちろんです！
+[k]
+
+[messageOff]
+[se ad95]
+[wt 0.2]
+[se ade74]
+[wipeout leftToRight 1.0 1]
+[bgm BGM_EVENT_77 1.0 0.5]
+[wait wipe]
+
+[charaSet B 7006001 1 坂田金時]
+[charaFadeout G 0.1]
+[scene 104200]
+[wt 1.0]
+
+[seStop ad95 0.5]
+[seStop ade74 0.5]
+[bgm BGM_EVENT_77 1.0 1.0]
+[wipein rightToLeft 1.0 1]
+[wait wipe]
+
+[cueSe Battle bac469]
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.4 0,-100]
+[charaMove K 0,0 0.4]
+[wt 0.4]
+
+＠フォウ
+フォウ、フォーウ！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 14]
+[charaFadein G 0.1 1]
+
+＠マシュ
+あっ、フォウさん。[r]いけません、先輩はお疲れなので[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+＠フォウ
+フォウ？
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠マシュ
+はい。いけません。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+＠坂田金時
+おっと。[r]じゃ、あんまり長話ってワケにゃいかねえな。
+[k]
+
+[messageOff]
+[se ad95]
+[wt 2.0]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+[seStop ad95]
+
+＠坂田金時
+よう大将！
+[k]
+
+＠坂田金時
+まずは一言だけくれや。[r]なあ、あっちのオイラたちはどうだった？
+[k]
+
+？1：それはもちろん
+
+？！
+
+[messageOff]
+[wt 0.5]
+
+？1：ゴールデン！　だったよ！
+
+？！
+
+[messageOff]
+[charaFace B 1]
+[wt 1.5]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+[wt 1.0]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se adm21]
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+[charaMoveReturn K 0,40 0.4]
+
+＠フォウ
+フォーーールデン！
+[k]
+
+
+
+
+
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 3.0]
+[bgmStop BGM_EVENT_77 3.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

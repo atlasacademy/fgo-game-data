@@ -1,0 +1,639 @@
+
+
+＄03-00-07-10-3-0
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 7006300 1 坂田金時]
+[charaSet B 6030000 1 段蔵]
+[charaSet D 1047001 1 渡辺綱]
+[charaSet F 98074000 1 源頼光]
+[charaSet G 1098201900 1 歳殺神・俵藤太]
+[charaSet H 1098202100 1 豹尾神・鈴鹿御前]
+[charaSet I 98115000 1 エフェクト用]
+[charaSet J 98115000 1 エフェクト用]
+
+[imageSet M back10000 1]
+[charaScale M 1.05]
+
+[cameraMove 0.1 0,0 1.01]
+
+[bgm BGM_EVENT_24 0.1]
+
+[wt 0.5]
+
+[scene 103200]
+
+
+[charaEffect J bit_talk_ereshki01]
+[se ad248]
+[seVolume ad248 0 0]
+[seVolume ad248 0.7 0.5]
+[fadein black 0.7]
+[wait fade]
+[seVolume ad248 1.5 0.1]
+[wt 1.5]
+
+
+[effect bit_talk_14]
+[se ad618]
+[wt 0.3]
+
+[se ad881]
+[effect bit_talk_14]
+[wt 0.8]
+
+[se ad609]
+[shake 0.05 3 2 5.0]
+[charaEffect I bit_talk_goltail01 0,0 H]
+[se ade393]
+[seVolume ade393 0 0.1]
+[seVolume ade393 1.0 0.6]
+[wt 1.0]
+[se ad891]
+[fadeout white 1.5]
+[wait fade]
+
+[seStop ad248 1.0]
+[charaEffectStop J bit_talk_ereshki01]
+[wt 0.8]
+
+[seStop ade393 2.0]
+[fadein white 2.0]
+[wait fade]
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.4 -100,0]
+[charaMove A -30,0 0.1]
+[wt 0.1]
+[charaMove A 1 0.2]
+[wt 0.3]
+[charaFace A 2]
+
+＠坂田金時
+おおおおおおおおッ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+[se ad39]
+[effect bit_talk_36]
+[wt 1.6]
+[effectStop bit_talk_36]
+
+＠歳殺神・俵藤太
+[#南無八幡大菩薩:な む は ち ま ん だ い ぼ さ つ]……！[r]願わくば、この矢を届け給え！
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+
+[se ad39]
+[effect bit_talk_36]
+[wt 1.6]
+[effectStop bit_talk_36]
+＠豹尾神・鈴鹿御前
+草紙枕を紐解けば、[r]音に聞こえし[#大通連:だいとうれん]！
+[k]
+
+＠豹尾神・鈴鹿御前
+いらかの如く八雲立ち、群がる悪鬼を[#雀刺:すずめざ]し、[r][#文殊智剣:もんじゅちけん][#大神通:だいしんとう][line 3]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace G 2]
+[charaFadeinFSR G 0.1 280,0]
+
+[charaFace H 2]
+[charaFadeinFSL H 0.1 -280,0]
+
+＠歳殺神・俵藤太
+[line 3]『八幡祈願・大妖……[line 3]
+[k]
+
+[charaFace H 5]
+
+＠豹尾神・鈴鹿御前
+[line 3]『天鬼……[line 3]
+[k]
+
+
+[messageOff]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaFace D 2]
+[charaFadein D 0.1 0]
+
+[charaFace F 2]
+[charaFadein F 0.1 2]
+
+[wt 0.2]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_24 2.0]
+
+[se ad678]
+[se ade8]
+[charaMove D -256,15 0.2]
+[charaMove F 256,15 0.2]
+[charaMoveScale D 1.1 0.2]
+[charaMoveScale F 1.1 0.2]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+[wt 0.2]
+[seStop ad166 0.2]
+
+[fadeout white 0.3]
+[wait fade]
+
+[blurOff motion 0.1]
+[scene 10001]
+[charaFadeout D 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaScale D 1.0]
+[charaScale F 1.0]
+
+[wt 0.1]
+[fadein white 0.1]
+[wait fade]
+
+＠歳殺神・俵藤太
+『[#八幡祈願・大妖射貫:なむはちまんだいぼさつ・このやにかごを]』！
+[k]
+
+＠豹尾神・鈴鹿御前
+『[#天鬼雨:てんきあめ]』！
+[k]
+
+
+[messageOff]
+[wt 0.5]
+
+[se ad715]
+[effect bit_talk_h_slash02_fs 0,0 V]
+[se bac308]
+[effect bit_talk_h_slash02_fs 0,0 F]
+
+[wt 3.0]
+
+
+
+[se ad863]
+
+[effect bit_talk_blood_splash_fs]
+[effect bit_talk_blood_splash_fs 0,0 H]
+[wt 2.5]
+
+[fadeout white 0.1]
+[wait fade]
+[charaSet G 1098202000 1 歳殺神・俵藤太]
+[charaSet H 1098202200 1 豹尾神・鈴鹿御前]
+[scene 103200]
+
+[fadein white 2.0]
+[wait fade]
+
+[se ad240]
+[wt 0.7]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.7 1]
+[charaShake H 0.05 2 2 0.5]
+[wt 1.8]
+
+[charaFace H 2]
+[charaMove H 0,-15 0.4]
+[wt 0.3]
+[se ad984]
+[wt 1.2]
+
+＠豹尾神・鈴鹿御前
+…………そう、きたか。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.4 1]
+[wt 1.5]
+
+[charaMove G 0,-15 0.4]
+[wt 0.3]
+[se ad984]
+[wt 1.2]
+
+＠歳殺神・俵藤太
+………………なんと。
+[k]
+
+＠歳殺神・俵藤太
+宝具、真名解放の刹那を狙う……[line 3]
+[k]
+
+＠歳殺神・俵藤太
+成る程……[r]我ら、英霊と化したが故に……
+[k]
+
+＠歳殺神・俵藤太
+当代の武者に敗れるとは……！
+[k]
+
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠渡辺綱
+然り。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠源頼光
+我ら武辺者に[#技の起こり]なし。
+[k]
+
+＠源頼光
+[#正々堂々:せいせいどうどう]の立ち合いなればこその、[r]唯一の勝機でした。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.8]
+[charaFace B 2]
+
+＠段蔵
+そうか！[r]宝具の……
+[k]
+
+？1：真名解放……！
+？2：その一瞬の隙を……狙った……！？
+
+？！
+
+[charaFace B 5]
+
+＠段蔵
+は。恐らくは！
+[k]
+
+＠段蔵
+真名という[#言の葉:キーワード]にて宝具を発動させる[r]英霊固有の特性を理解し、狙い、斬り伏せたと[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad997]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠坂田金時
+……。[r]……。
+[k]
+
+＠坂田金時
+……到底オイラにゃできねえ芸当だ。
+[k]
+
+＠坂田金時
+頼光サン、兄貴、[r]やっぱアンタたちはすげえや。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠渡辺綱
+刹那。ほんの僅かな……
+[k]
+
+＠渡辺綱
+星の瞬きが如き時の差のみが、我らが勝機。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠源頼光
+貴方たちが、英霊……[r]かつての貴方たちの影法師なるモノでなければ、
+[k]
+
+＠源頼光
+その[#僅かな隙]さえなかりせば、[r]我らの敗北と死は必定でした。
+[k]
+
+＠源頼光
+即ち[line 3]
+[k]
+
+[messageOff]
+[charaMove F 0,-6 0.8]
+[wt 1.0]
+[charaMove F 0,0 0.4]
+[wt 0.8]
+
+＠源頼光
+[#一度:ひとたび]、我らにその技の[#窮:きわ]みをお見せになった、[r]貴方がたの御心こそが[#此度:こたび]の勝利の鍵。
+[k]
+
+[bgmStop BGM_EVENT_70 2.0]
+
+＠源頼光
+故に、こう申し上げる。
+[k]
+
+[charaFace F 0]
+
+＠源頼光
+有り難うございました。[r]大いなる、そして誇りある先達の方々。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠坂田金時
+……………………。
+[k]
+
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+[charaEffect J bit_talk_06 0,-100]
+[wt 0.8]
+
+[charaFace G 2]
+
+＠歳殺神・俵藤太
+いいや。[r]見事、見事也！
+[k]
+
+[bgm BGM_EVENT_95 0.1]
+
+＠歳殺神・俵藤太
+そう云えばそうだ！[r]かつての[#吾:オレ]であれば、何をも云わずに弓を射た！
+[k]
+
+[charaFace G 0]
+＠歳殺神・俵藤太
+こと達人同士の斬り合いのさなかであれば、[r]左様、[#八幡:はちまん]様への祈りは心に在ればよい。
+[k]
+
+＠歳殺神・俵藤太
+それがどうにもままならぬ、英霊の身。
+[k]
+
+＠歳殺神・俵藤太
+正しくはそのまた[#骸:むくろ]……
+[k]
+
+[charaFace G 2]
+
+＠歳殺神・俵藤太
+やはり、[#吾:オレ]は[#吾:オレ]ではないのだと知らしめられた。[r]やれやれだ！
+[k]
+
+＠歳殺神・俵藤太
+贅沢を云えば……[r]同じ条件で刃交えてみたかったぞ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 2500,2500]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠源頼光
+お断りいたします。[r]それでは、私たちの勝ち目がなくなります。
+[k]
+
+[charaFace F 0]
+
+＠源頼光
+ですが、ええ。
+[k]
+
+＠源頼光
+御役目すべて終えた後であれば。きっと。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+[wt 1.0]
+
+
+＠歳殺神・俵藤太
+さらばだ、源氏武者とその一党！[r]いずれまた[#見:まみ]えた時には、旨い酒でも一献[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 2500,2500]
+
+[charaPut I 1]
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+[charaEffect I bit_talk_06 0,-100]
+
+＠豹尾神・鈴鹿御前
+ああ、待った待った。
+[k]
+
+＠豹尾神・鈴鹿御前
+そこは、第四天魔王の娘が告げるところじゃん。[r]あー……
+[k]
+
+
+[messageOff]
+[charaFace H 3]
+[wt 1.4]
+[charaFace H 5]
+
+＠豹尾神・鈴鹿御前
+…………うん。[r]いずれまた、何処かで。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaPut J 2]
+[charaFace G 2]
+[charaFadeinFSR G 0.1 280,0]
+
+[charaPut I 0]
+[charaFace H 5]
+[charaFadeinFSL H 0.1 -280,0]
+[wt 1.4]
+
+？1：（大きく頷く）
+
+？！
+
+[cameraMove 0.4 0,5 1.01]
+[wt 0.6]
+[cameraMove 0.4 0,0 1.01]
+[wt 1.0]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 2500,2500]
+[charaPut I 2500,2500]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠段蔵
+マスター、符を。
+[k]
+
+？1：（晴明の符を二枚、放る！）
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_95 2.0]
+
+[charaPut J 1]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+
+[se ad1054]
+[effect bit_talk_pentagram_06]
+[wt 3.9]
+[charaFaceFade G 2 0.3]
+[wt 1.0]
+[se ad598]
+[charaSpecialEffect G wipeTime 0 1.5 0 0.2]
+[wt 2.0]
+[seStop ad598 0.3]
+
+
+[charaTalk H]
+[charaFace H 3]
+[charaFadein H 0.1 1]
+
+[se ad1054]
+[effect bit_talk_pentagram_06]
+[wt 3.9]
+[charaFaceFade H 5 0.3]
+[wt 1.0]
+[se ad598]
+[charaSpecialEffect H wipeTime 0 1.5 0 0.2]
+[wt 2.0]
+[seStop ad598 0.3]
+[charaEffectStop J bit_talk_06]
+[wt 2.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠段蔵
+……対象の完全沈黙を確認。
+[k]
+
+＠段蔵
+更には、晴明殿から授かった符の同時発動による、[r]八将神二騎の霊核封印を確認いたしました。
+[k]
+
+＠段蔵
+[#是:これ]にて[line 3]
+[k]
+
+[messageOff]
+[charaFace B 4]
+[wt 1.2]
+[charaFace B 1]
+
+＠段蔵
+八将神、二騎の撃破となりまする！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
