@@ -1,0 +1,1077 @@
+
+＄91-60-36-02-1-0
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 1098159500 1 将軍]
+[charaSet B 6036400 1 李書文]
+[charaSet C 98001000 1 マシュ]
+[charaSet D 4039002 1 マンドリカルド]
+[charaSet E 6005001 1 ジャック]
+[charaSet F 1098205500 1 謎の姫]
+[charaSet G 1098205600 1 謎の象]
+[charaSet H 1098205700 1 謎の御前]
+[imageSet I back10000 1]
+[charaSet J 1098159300 1 武術家]
+[charaFilter A silhouette 00000080]
+[charaScale I 1.01]
+[cameraMove 0 0,0 1.01]
+[wt 0.1]
+
+[effect bit_sepia01]
+[scene 109200]
+[fadein black 2.0]
+[wait fade]
+
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.7]
+[fowardEffect bit_talk_13]
+[wt 0.1]
+[cueSe Battle bac10]
+[charaShake A 0.04 3 3 0.7]
+[wt 1.0]
+
+＠武術家
+かは……っ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[charaMove A 0,-7 0.4]
+[wt 0.3]
+[se ad144]
+[wt 1.5]
+
+[bgm BGM_EVENT_61 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+＠李書文
+…………。
+[k]
+
+＠将軍
+[line 3]見事。[r]実に見事なり。
+[k]
+
+＠将軍
+李書文。[r]あなたは八極拳をさらなる高みに押し上げた。
+[k]
+
+＠将軍
+もはやこの地に[line 3]いや、この世界に、[r]あなたに並ぶ武術家はいないだろう。
+[k]
+
+＠李書文
+…………。[r]そうでありましょうな。
+[k]
+
+＠将軍
+しかし、それだけに惜しい。[r]あなたの拳はあまりに完成されすぎている。
+[k]
+
+＠将軍
+あなたの技は、もはや余人が[r]到達できない域にまで達してしまった。
+[k]
+
+＠将軍
+これより10年後か、20年後か[line 3]
+[k]
+
+＠将軍
+そう遠くない未来、あなたの拳が失われることが、[r]惜しくて仕方ない。
+[k]
+
+＠李書文
+死は生物の必定なれば。[r]人間である以上、避けることは叶いますまい。
+[k]
+
+＠将軍
+わかっている。わかっているのです。[r]だがそれでも、思わずにはいられない。
+[k]
+
+＠将軍
+嗚呼、李よ。李書文よ。[r]あなたの才を受け継ぐ者が、一人でもいたならと[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_EVENT_61 1.5]
+[fadeout black 1.5]
+[wait fade]
+[effectDestroy bit_sepia01]
+[charaFadeout B 0.1]
+[charaSet B 6036001 1 李書文]
+[branchQuestNotClear lblNotClear01 3000303]
+[scene 104200]
+[branch lblConf01]
+[label lblNotClear01]
+[scene 105500]
+[label lblConf01]
+[wt 1.5]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[wt 0.4]
+
+[se ad60]
+[seVolume ad60 0 0]
+[seVolume ad60 0.7 1.0]
+[wt 1.0]
+[seStop ad60 0.4]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.7]
+[charaFace C 6]
+＠マシュ
+……おや？　あれは[line 3]
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-20]
+[wt 0.4]
+[wipein rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+＠李書文
+…………。[r]…………。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.4 0,-20]
+[charaShake D 0.04 2 2 0.7]
+＠マンドリカルド
+……き、きっつ……！
+[k]
+
+？1：うぐぐぐぐ……
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠マシュ
+おはようございます、先輩。[r]それに、李書文さん、マンドリカルドさんも。
+[k]
+
+＠マシュ
+朝からお揃いで、[r]一体何をしているのですか？
+[k]
+
+[charaFace C 13]
+＠マシュ
+手を前方に伸ばして、足を[#屈:かが]めて……[r]何やら不思議なポーズをしていますが。
+[k]
+
+？1：朝の鍛錬を、ちょっと
+？！
+
+[charaFace C 0]
+＠マシュ
+鍛錬、ですか。[r]もしかして李書文さんの？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-20]
+＠李書文
+[line 3]然り。
+[k]
+
+＠李書文
+この身に、時間の経過による衰えはない。
+[k]
+
+＠李書文
+それは充分理解しているつもりなのだが、[r]やはり生前の習慣は抜けぬものでな。
+[k]
+
+＠李書文
+それに、如何に身体は衰えずとも、[r]鍛錬を怠れば次第に心が錆び付いていく。
+[k]
+
+＠李書文
+そして心の錆は、容易に技を曇らせる。
+[k]
+
+[messageOff]
+[charaFace B 1]
+[wt 1.0]
+
+＠李書文
+魔術を扱えるわけでもない老いぼれが、技の冴えすら[r]失ったなら、もはや何の役にも立たんだろう？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+＠マシュ
+そんな、ご謙遜を。
+[k]
+
+[charaFace C 0]
+＠マシュ
+[line 3]李書文さんの鍛錬ということは、[r]これが噂に聞く[#站樁功:たんとうこう]ですか？
+[k]
+
+
+[charaFace C 1]
+＠マシュ
+確か、中国武術の基礎鍛錬ですね。
+[k]
+
+[charaFace C 0]
+＠マシュ
+足を深く曲げ、地に突き立った[r]杭のように姿勢を保つ……。
+[k]
+
+＠マシュ
+見た目以上に過酷な訓練だと[r]聞き及んでいます。
+[k]
+
+？1：正直……かなり……苦しい
+？2：汗が滝みたいに……
+？！
+
+[charaFace C 12]
+＠マシュ
+た、確かに凄い汗です。[r]水分補給はきちんとされていますか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-20]
+＠李書文
+最初は儂が勝手に場所を借りて、[r]日課を行っていただけなのだが。
+[k]
+
+＠李書文
+もうどれくらい前になるか[line 3]
+[k]
+
+＠李書文
+いつの間にやら儂の隣で、[r]マスターが鍛錬を真似るようになってな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠マシュ
+それは……[r]素晴らしい心がけだと思います！
+[k]
+
+＠マシュ
+あ。ということは、[r]マンドリカルドさんも？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-20]
+[charaShake D 0.04 2 2 0.7]
+＠マンドリカルド
+くぬぬぬぬぬぬぬぬ……！！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠マシュ
+す、すごい気迫です。[r]お邪魔してはいけませんね……。
+[k]
+
+？1：マンドリカルドはしばらく前に
+？2：誘ってみたら参加してくれて
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-10]
+[charaShake D 0.04 2 2 0.7]
+＠マンドリカルド
+くひぃぃいぃ…………！
+[k]
+
+[charaDepth I 1]
+[charaDepth D 2]
+[charaFadeTime I 0.1 0.5]
+[bgmStop BGM_EVENT_2 0.4]
+[wt 0.2]
+[charaFace D 6]
+＠マンドリカルド
+（仮にも英雄、[bgm BGM_EVENT_7 0.1 0.7][r]　これくらい楽勝だろと思っていたが……）
+[k]
+
+[charaFace D 4]
+＠マンドリカルド
+（サーヴァントは魔力の補助なしで、[r]　ハンデで[#錘:おもり]もつけるとなると……キッツい……！）
+[k]
+
+＠マンドリカルド
+（でも、一瞬妄想しちまったんだよなぁ……）
+[k]
+
+[charaFace D 3]
+＠マンドリカルド
+（リモンチョーチューとかテツザンコーとか[r]　できるようになっちゃうのかなぁ、なんて……）
+[k]
+
+[charaFace D 7]
+＠マンドリカルド
+（ああもう、馬鹿！　俺の馬鹿！[messageShake 0.05 4 4 1.0][r]　マンドリカルドの馬鹿！　スカポンタン！）
+[k]
+
+[messageShakeStop]
+[charaFace D 4]
+[charaMove D 0,-20 1.0]
+[charaShake D 0.04 1 1 1.0]
+＠マンドリカルド
+（などと考えている内にひいいいい、[r]　なんかまたずっしり来たぁぁぁ……！）
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.4 1.0]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-20]
+＠李書文
+マンドリカルド。[r]腰が浅くなっているぞ。
+[k]
+
+＠李書文
+[#馬歩站樁:まほたんとう]とはその名の通り、[r]馬に[#跨:また]がる姿勢を表す。
+[k]
+
+＠李書文
+お主は立って馬に乗るのか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-20]
+＠マンドリカルド
+えっ！？[r]そんなまさか……。
+[k]
+
+[charaFace D 7]
+[se ad7]
+[charaMove D 0,0 0.2]
+＠マンドリカルド
+いや、立って乗ってたわ俺！
+[k]
+
+[messageOff]
+[cueSe Battle bac151]
+[charaEffect D bit_talk_14]
+[charaShake D 0.04 2 2 0.7]
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,-20]
+＠李書文
+喝。[r]マナーがなっておらん。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,0]
+＠マンドリカルド
+ですよねー！[r]……っととと、うわっ！？
+[k]
+
+[messageOff]
+[charaMove D -5,0 0.2]
+[charaShake D 0.04 2 2 0.3]
+[wt 0.4]
+[charaMove D 5,0 0.4]
+[charaShake D 0.04 2 2 0.5]
+[wt 0.4]
+
+[charaMove D 5,-10 0.2]
+[charaFadeout D 0.2]
+[wt 0.1]
+[se ad775]
+[se ad144]
+[seVolume ad144 0 0.4]
+[wt 1.4]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+＠マシュ
+マンドリカルドさん！
+[k]
+
+？1：大丈夫？
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.4 0,-10]
+[charaMove D 0,0 0.4]
+[charaShake D 0.04 2 2 0.5]
+[wt 0.7]
+＠マンドリカルド
+……大丈夫っす。
+[k]
+
+＠マンドリカルド
+ただちょっと太股が大火事に遭ったみたいに熱くて、[r]しばらくまともに立てそうにないだけで……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠マシュ
+そ、それは大丈夫なのでしょうか……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-20]
+＠李書文
+何、大丈夫だ。明日は保証せぬが。
+[k]
+
+＠李書文
+とはいえ……ふむ、もうこんな時間か。
+[k]
+
+[messageOff]
+[charaMove B 0,0 0.7]
+[wt 1.0]
+
+＠李書文
+次は[#震脚:しんきゃく]の鍛錬に移りたいところだが、[r]生憎、施設内での震脚は禁じられていてな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠マシュ
+震脚……八極拳の歩法ですね。[r]なぜ禁止されているのですか？
+[k]
+
+？1：まあ、李書文の震脚は……
+？2：床をボコボコにしちゃうから……
+？！
+
+[charaFace C 8]
+＠マシュ
+な、なるほど……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠マンドリカルド
+じ、じゃあ今日はここまでっすね……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠李書文
+なのでシミュレーターに移動する。[r]あそこならば、思う存分できよう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠マンドリカルド
+ギャー！[messageShake 0.04 4 4 0.5]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 1.0]
+[wt 0.4]
+[se ad60]
+[seVolume ad60 0 0]
+[seVolume ad60 0.7 1.0]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[seStop ad60 0.4]
+[wt 0.7]
+[bgm BGM_EVENT_2 0.1]
+＠ジャック
+あ、[#おかあさーん:マスター]。[r]やっと見つけたー！
+[k]
+
+？1：どうしたの？
+？2：何か用？
+？！
+
+＠ジャック
+職員さんが呼んでたよ。[r]何とかについてお話があるんだって。
+[k]
+
+？1：なるほど、何とか……
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠李書文
+ふむ[line 3]
+[k]
+
+＠李書文
+さすがにマスターも忙しいようだな。[r]今日はここまでにしておこう。
+[k]
+
+？1：すみません……
+？2：またお願いしまーす
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠マンドリカルド
+うっひい……キツかった……。[r]まだ歩けるかな俺……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠李書文
+…………。[r]…………ふむ。
+[k]
+
+＠李書文
+二人とも、明日、時間はあるか？[r]少し別のことをしようと思うのだが。
+[k]
+
+？1：ぜひ！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠マンドリカルド
+お、おおう。別のことっすか。[r]それはええと……今日よりハードで……？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠李書文
+ははは。そう重く考えるな。
+[k]
+
+＠李書文
+その試練を見事乗り越えてみせたなら、[r]毎日の鍛錬からは卒業させてやろう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠マンドリカルド
+何と！
+[k]
+
+？1：やっぱり……今までより厳しい鍛錬なのでは……？
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠李書文
+[#呵々:かか]。[r]そう構えずともよい。
+[k]
+
+＠李書文
+[line 3]では明日、[r]同じ時間にシミュレーターで会おう。
+[k]
+
+[messageOff]
+[cameraMove 0.2 0,10 1.01]
+[wt 0.2]
+[cameraMove 0.2 0,0 1.01]
+[wt 0.3]
+[cameraMove 0.2 0,10 1.01]
+[wt 0.2]
+[cameraMove 0.2 0,0 1.01]
+[wt 0.3]
+
+[wt 0.4]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠マンドリカルド
+了解！
+[k]
+
+[messageOff]
+[charaFace D 8]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_2 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout D 0.1]
+[scene 109300]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.2]
+[se ade227]
+[wt 0.7]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+＠李書文
+[line 3]というわけで。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+[se ade226]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠李書文
+[f large]五重塔である。
+[k]
+
+？1：……なぜ？
+？！
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaFace B 1]
+＠李書文
+うむ。施設内での震脚を禁じられてから、[r]シミュレーターを用いるようになっていたのだが、
+[k]
+
+＠李書文
+せっかくシミュレーターを使わせてもらうなら、[r]もっと効果的な鍛錬ができないものかと考えてな。
+[k]
+
+＠李書文
+そこで[line 3]。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_62 1.0]
+[se ade84]
+[wipeout circleIn 1.0 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[pictureFrame cut063_cinema]
+[cameraFilter gray]
+[scene 106100]
+[wt 0.7]
+[wipein circleIn 1.0 1]
+[wait wipe]
+
+[wt 0.4]
+[bgm BGM_EVENT_27 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+＠謎の姫
+[line 3]えっ、シミュレーターを使って[r][#功夫:クンフー]の訓練を！？
+[k]
+
+＠謎の姫
+なら絶対あれしかないって[#姫:わたし]思います！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+＠謎の象
+っスよね！[r]絶対[#五重塔:あれ]しかないっス！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+＠謎の御前
+はい。各階層に待ち受ける強敵たち。[r]それらを乗り越え、最上階へと至ったとき、
+[k]
+
+＠謎の御前
+ぷれいやあ……もとい、武術家は、[r]必ずや成長を遂げていることでしょう！
+[k]
+
+＠謎の御前
+あと最上階に助けを待つ姫とかいると[r]なおいいと思われます。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 0,-50]
+＠謎の姫
+異議なし！[r]それ[#姫:わたし]やるー！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_27 1.0]
+[wipeout circleIn 1.0 1]
+[wait wipe]
+[pictureFrame]
+[cameraFilter normal]
+[charaFadeout F 0.1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[scene 109300]
+[wt 0.7]
+[bgm BGM_EVENT_62 1.0]
+[wipein circleIn 1.0 1]
+[wait wipe]
+
+＠李書文
+……と、識者たちに助言を受けてな。
+[k]
+
+＠李書文
+階層ごとに題目を変えて[#比武:ひぶ]を行う発想は[r]面白いと思い、採用させてもらった次第だ。
+[k]
+
+[charaFace B 0]
+＠李書文
+基礎鍛錬も無論重要だが、[r]技は実戦でこそ磨かれるものなれば。
+[k]
+
+＠李書文
+最上階の姫だけは、[r]意味がわからなかったので省いたが。
+[k]
+
+？1：人選に偏りがあったような……
+
+[charaFace B 1]
+＠李書文
+なに、肝要なのは発想をどう生かすかよ。
+[k]
+
+？2：その識者、三人中二人眼鏡じゃなかった？
+
+＠李書文
+うむ。よくわかったな。[r]マスターのスキルによる解析か？
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠マンドリカルド
+それにしても。[r]なんか物々しい雰囲気っすねぇ……。
+[k]
+
+＠マンドリカルド
+ま、いいか。[r]じゃあ始めるっすよ、マスター！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠李書文
+では、入るぞ。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_62 1.0 0.5]
+[wipeout rightToLeft 1.0 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[scene 109400]
+[wt 0.7]
+[se ad91]
+[wt 0.7]
+[bgm BGM_EVENT_62 1.0 1.0]
+[wipein leftToRight 1.0 1]
+[wait wipe]
+
+[wt 0.7]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠マンドリカルド
+んー……。[r]中はわりと普通っすね。
+[k]
+
+？1：でも……
+？！
+
+＠マンドリカルド
+何か？
+[k]
+
+？1：広さに対して柱が少ない気がする
+？2：大きな動きをしやすい造りになってる
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠李書文
+よく気づいたな。[r]まさに、そのように設定してもらった。
+[k]
+
+＠李書文
+戦場となる環境の把握は兵法の第一歩。[r][#殊:こと]に、皆の司令塔となるマスターにとってはな。
+[k]
+
+＠李書文
+お主の観察眼が勝敗を決することもあろう。[r]常にその感覚を忘れるな。
+[k]
+
+[messageOff]
+[cameraMove 0.3 0,15 1.01]
+[wt 0.3]
+[cameraMove 0.2 0,0 1.01]
+[wt 1.0]
+
+[charaFace B 0]
+＠李書文
+うむ。
+[k]
+
+＠李書文
+さて、では始めるか。[r]第一階層の敵が出てくるぞ。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_62 0.3]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.4 1]
+[wt 0.2]
+[se ad54]
+[wt 0.2]
+＠武術家
+おおッ！[bgm BGM_EVENT_3 0.1]
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠マンドリカルド
+うわっ、なんだコイツ！[r]急に湧いてきたんすけど！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+＠武術家
+[line 3]はいぃぃぃぃッ！
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[cueSe Battle bac145]
+[effect bit_talk_14]
+[wt 1.0]
+
+[se ad73]
+[charaScale D 1.05]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,-7]
+[charaMoveScale D 1.0 0.2]
+[charaMove D 0,0 0.1]
+＠マンドリカルド
+のわっ！？　あっぶね！
+[k]
+
+？1：いきなり襲ってきた！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠李書文
+[#常在戦場:じょうざいせんじょう]、奇襲不意打ちは[r]悪党の専門分野という訳ではないからな。
+[k]
+
+[charaFace B 1]
+＠李書文
+だが回避したのは上々だ。[r]さて[line 3]
+[k]
+
+[charaFace B 0]
+＠李書文
+儂は手を出さん。[r]お主たちだけで打倒してみせるがよい。
+[k]
+
+＠李書文
+呼吸と歩法を意識せよ。
+[k]
+
+＠李書文
+繰り返した基礎を、[r]自らの動きに落とし込むのだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠マンドリカルド
+基礎っつっても[r]拳技一つ学んでないっすけど！？
+[k]
+
+？1：行くよ、マンドリカルド！
+？！
+
+[charaFace D 7]
+＠マンドリカルド
+マスター張り切ってるぅー！[twt 1.0][charaFace D 1][r]よ、よーし！　やってやらぁっす……！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

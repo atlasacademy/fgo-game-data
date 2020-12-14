@@ -1,0 +1,416 @@
+
+
+
+
+
+＄91-90-08-01-4-1
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 9008001 1 アストライア]
+[charaSet B 1098205300 1 神霊アストライア]
+[charaSet C 11002002 1 巌窟王]
+[charaSet D 9008002 1 エフェクト用]
+[charaSet E 9008002 1 エフェクト用]
+[cameraMove 0 0,0 1.01]
+[wt 0.1]
+
+[scene 108500]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_24 0.1]
+
+[wt 0.4]
+[charaRoll D 0 0,280]
+[charaPutFSR D 200,-70]
+[charaEffect D bit_talk_arrow_back_y]
+[wt 0.2]
+[se bac150]
+[shake 0.03 3 3 0.7]
+[wt 0.2]
+[se bac149]
+[wt 0.4]
+[charaRoll E 140 0,280]
+[charaEffect E bit_bolg_01y 0,0 V]
+[wt 0.1]
+[se bac139]
+[wt 0.7]
+[charaEffectStop E bit_bolg_01y]
+
+[charaScale B 1.1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0,7]
+[se ad671]
+[charaShake B 0.04 3 3 0.4]
+[charaMoveScale B 1.0 0.4]
+[charaMove B 0,0 0.4]
+[wt 0.7]
+[bgmStop BGM_EVENT_24 1.5]
+
+＠神霊アストライア
+なんだと……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠アストライア
+本来ならば拮抗しえませんが、[r]本体の[#私:わたくし]も、すべてを現界してはいません。
+[k]
+
+＠アストライア
+そんなことができないからこそ、[r][%1]の夢に介入した。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale D 1.0]
+[charaRoll D 0 0,0]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[charaEffect D bit_talk_06]
+[wt 1.0]
+
+[bgm BGM_EVENT_6 0.1]
+
+＠神霊アストライア
+………最後まで、そのマスターの味方をする気か？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut D 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠アストライア
+あなたがやりたかったことでしょう？
+[k]
+
+？1：えっ？
+？2：神霊のアストライアが、やりたかったこと？
+？！
+
+[charaFace A 4]
+＠アストライア
+だって、[#私:わたくし]は人に価値があると思いたかった。[r]最後まで見捨てたくなんかなかった。
+[k]
+
+[charaFace A 0]
+＠アストライア
+なのに、あの鉄の時代に手放してしまった。
+[k]
+
+＠アストライア
+それは社会への罪ではありませんが、[r]本人に突き刺さったままの罪ではあります。
+[k]
+
+＠アストライア
+だから、[#私:わたくし]は[#私:わたくし]に裁かれる必要があったのです。
+[k]
+
+？1：個人のための、裁き………
+？！
+
+[charaFace A 1]
+＠アストライア
+よく覚えていましたわね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut D 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠神霊アストライア
+……………………。[r]ならば、こうしよう。
+[k]
+
+[messageOff]
+[se ad39]
+[charaEffect B bit_talk_36]
+[wt 1.0]
+
+＠神霊アストライア
+我は招く星の法廷。[r]我は掲げる断罪の剣。
+[k]
+
+＠神霊アストライア
+正しき裁きをここに。[r]正しき[#赦:ゆる]しをここに。
+[k]
+
+？1：それは
+？2：アストライアの第二宝具[line 2]！
+
+？！
+
+＠神霊アストライア
+『[#ここに秩序は帰還せり:ヤ ム ・ レ デ ィ ト ・ エ ト ・ ウ ィ ル ゴ]』……！
+[k]
+
+[messageOff]
+
+[se ad952]
+[bgmStop BGM_EVENT_6 1.5]
+[fadeout white 1.0]
+[wait fade]
+[charaFadeout B 0.1]
+[charaEffectDestroy B bit_talk_36]
+[charaEffectDestroy D bit_talk_06]
+[scene 10000]
+[effect bit_talk_rainbow01_fs 0,0]
+[wt 0.4]
+[fadein white 1.0]
+[wait fade]
+
+[wt 1.5]
+
+[fadeout black 1.0]
+[wait fade]
+[effectDestroy bit_talk_rainbow01_fs]
+[scene 108500]
+[shake 0.07 0 2 0.0]
+[wt 1.0]
+[se ad14]
+[seVolume ad14 0 0]
+[seVolume ad14 1.0 0.1]
+[fadein white 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠アストライア
+夢が、消えていきます………！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠神霊アストライア
+我の第二宝具は、あるべき形にすべてを戻す。[r]秩序は帰還し、罪は[#赦:ゆる]される。
+[k]
+
+＠神霊アストライア
+ああ、もうひとりの我の罪が本当に[#赦:ゆる]されるかなど、[r]この我にも分からないけれど。
+[k]
+
+＠神霊アストライア
+それでも、この夢から帰るが良い。[r]私と、そのマスター……
+[k]
+
+[messageOff]
+[blur lens 2.2 4 1]
+[wt 0.7]
+[charaMoveScale B 0.9 1.5]
+[charaMove B 0,-22 1.5]
+[wt 1.5]
+
+？1：神霊のアストライア[line 2]！
+
+？！
+
+＠神霊アストライア
+[%1]。
+[k]
+
+[charaFace B 1]
+＠神霊アストライア
+願わくば、もうひとりの我によくしてやってくれ。
+[k]
+
+[messageOff]
+[se ad743]
+[seVolume ad743 0 0]
+[seVolume ad743 0.4 1.0]
+[seStop ad14 1.5]
+[fadeout white 1.5]
+[wt 0.2]
+[wait fade]
+[charaFadeout B 0.1]
+[shakeStop]
+[blurOff]
+[scene 105800]
+[wt 4.5]
+[fadein white 1.5]
+[wait fade]
+
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠アストライア
+どうやら、帰ってきたようですわね。
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_95 0.1]
+[charaMove A 5,0 0.4]
+[wt 0.4]
+[se ad77]
+[seVolume ad77 0 0.2]
+[charaMove A -5,0 0.8]
+[wt 0.8]
+[charaMove A 0,0 0.4]
+[wt 1.0]
+
+＠アストライア
+マスターは………よく寝てらっしゃること。
+[k]
+
+[charaFace A 1]
+＠アストライア
+お疲れ様。[r]できれば、今度こそ良い夢を。
+[k]
+
+[charaTalk C]
+＠C：？？？
+……度しがたいな。天秤の女神アストライアに、[r]そんな戯れ言を口にさせるとは。
+[k]
+
+[charaFace A 0]
+＠アストライア
+お礼を言うべきかしら。[r]あなたが守ってくれたから、マスターは無事だった。
+[k]
+
+＠アストライア
+夢とはとても無防備なもの。
+[k]
+
+＠アストライア
+神霊なんて膨大な情報が強引に介入すれば、[r]人間の精神がどうなってもおかしくありません。
+[k]
+
+＠アストライア
+ひとつ間違えば処理しきれなくなり、[r]マスターが目覚めなくなる可能性もありました。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.4 1]
+＠巌窟王
+それが契約だ。
+[k]
+
+＠巌窟王
+奴が歩みを止めぬ限り、[r][#俺:オレ]は黒炎の[#残滓:ざんし]として奥底に在り続ける。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠アストライア
+でしたら、少し手伝って。
+[k]
+
+[messageOff]
+[se ad606]
+[fowardEffect bit_talk_30_fs]
+[wt 1.5]
+
+[charaFace A 0]
+＠アストライア
+さっきの夢。[r]余計な情報は、なるべく虚数に廃棄してしまいたいの。
+[k]
+
+＠アストライア
+せっかくの旅路を忘れられてしまうのは、[r]少しもったいないですけれど。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠巌窟王
+いいだろう。[r]それは[#俺:オレ]が連れて行く。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠アストライア
+ありがとう。
+[k]
+
+[charaFace A 0]
+＠アストライア
+ですけど、本当に不思議。
+[k]
+
+＠アストライア
+まさか疑似サーヴァントの身になって、[r]やり残した宿題が、ひとつ片付け終わるなんて。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠巌窟王
+裁きとは、罪だけに下されるモノではあるまい。[r]おまえが一番よく知っているはずだ。
+[k]
+
+[messageOff]
+[charaFadeout C 1.0]
+[wt 1.7]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.7]
+
+[charaFace A 3]
+＠アストライア
+………困りましたわね。
+[k]
+
+[charaFace A 1]
+＠アストライア
+こんな優しい裁きは、想像してなかったんですもの。
+[k]
+
+[messageOff]
+[charaFadeout A 0.7]
+[wt 1.4]
+
+＠アストライア
+ありがとう、[%1]。
+[k]
+
+[messageOff]
+[wt 1.2]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_95 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

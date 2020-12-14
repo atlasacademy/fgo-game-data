@@ -1,0 +1,373 @@
+
+
+
+
+＄91-90-08-01-2-0
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 9008001 1 アストライア]
+[charaSet B 1012001 1 ベディヴィエール]
+[charaSet C 9008001 1 エフェクト用]
+
+[scene 10000]
+[effect bit_talk_suspicious]
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_48 0.1]
+[wt 0.4]
+
+＠
+誰かが言った。
+[k]
+
+＠
+おまえは愚かだ。まだ気がついていないのか、と。
+[k]
+
+＠
+無理もない。[r]確かに、当時の自分は愚かだった。
+[k]
+
+＠
+いかなる言葉にも耳を傾けず、[r]あまりにも意固地で、[#頑:かたく]なであった。
+[k]
+
+＠
+そんな強がりでしか自分を守れないのだと、[r]覚悟を決めてしまっていたかのように。
+[k]
+
+＠
+ああ、あのときの自分は………
+[k]
+
+[messageOff]
+[wt 2.0]
+
+＠
+………どう、答えたのだったか？
+[k]
+
+[messageOff]
+[wt 2.0]
+
+[bgmStop BGM_EVENT_48 1.5]
+[fadeout black 1.5]
+[wait fade]
+[effectDestroy bit_talk_suspicious]
+[scene 10001]
+[wt 2.5]
+
+[wipeout cutVer 0.1 1.0]
+[wait wipe]
+[fadein black 0.1]
+[wait fade]
+
+[se ad91]
+[seStop ad91 3.0]
+[wipein cutVer 1.5 1.0]
+[wait wipe]
+[wt 0.4]
+
+＠アストライア
+扉を抜けたら………
+[k]
+
+[messageOff]
+[wt 0.4]
+[scene 108600 1.8]
+[wt 1.5]
+
+[se adm13]
+[seVolume adm13 0 0]
+[seVolume adm13 1.0 0.3]
+[wt 1.0]
+
+？1：夜空が
+？2：星で、いっぱい
+？！
+
+
+[charaTalk A]
+[charaFace A 1]
+[charaScale A 1.5]
+[charaPutFSL A -256,0]
+[charaFadeTime A 0.4 0.7]
+[wt 0.4]
+＠アストライア
+美しいですわね。
+[k]
+
+[charaFace A 0]
+＠アストライア
+神話での[#私:わたくし]は、あそこに帰ったそうです。
+[k]
+
+＠アストライア
+今の[#私:わたくし]は、むしろ後世の[#正義の女神:レディ・ジャスティス]としての[r]機能がメインですから、あまり覚えてないのですけど。
+[k]
+
+＠アストライア
+夢の中で、こんな星空を見られるなんて。
+[k]
+
+[messageOff]
+[seStop adm13 1.0]
+[wipeout rectangleStripUpToDown 0.7 1]
+[wait wipe]
+[charaScale A 1.0]
+[scene 107700]
+[charaFadeout A 0.1]
+[wt 0.7]
+[wipein rectangleStripDownToUp 0.7 1]
+[wait wipe]
+
+[wt 0.4]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠アストライア
+道が続いてますわね。[r]こちらに行けということでしょうか。
+[k]
+
+＠アストライア
+ええ、罪の香りもいたします。[r]いずれにせよ、選択の余地もありませんものね。
+[k]
+
+？1：行こう
+？！
+
+[messageOff]
+[se ad60]
+[bgm BGM_EVENT_70 0.7 0.5]
+[wipeout rightToLeft 0.7 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.7]
+[bgm BGM_EVENT_70 0.7 1.0]
+[wipein leftToRight 0.7 1]
+[wait wipe]
+
+[seStop ad60 0.7]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠アストライア
+ずいぶん続きますこと。[r]夢ならすぐに到着してもよろしいのに。
+[k]
+
+＠アストライア
+ところで、あなたは怖くありませんの？
+[k]
+
+？1：なんのこと？
+？！
+
+＠アストライア
+さっき話してましたわね。[#私:わたくし]が呼ばれたのは、[r]あなたを裁くためではないかって。
+[k]
+
+＠アストライア
+あなたは、罪に覚えがあるのではなくて？
+[k]
+
+[messageOff]
+[se ad592]
+[seVolume ad592 0 0.7]
+[fadeout white 0.4]
+[wait fade]
+[charaFadeout A 0.1]
+[cameraFilter gray]
+[scene 56800]
+[wt 0.3]
+[fadein white 0.4]
+[wait fade]
+
+[wt 1.4]
+
+[messageOff]
+[fadeout white 0.4]
+[wait fade]
+[scene 107700]
+[cameraFilter normal]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 0.3]
+[fadein white 0.4]
+[wait fade]
+
+[charaFace A 4]
+＠アストライア
+………そうですわね。[r]異聞帯を滅ぼすのは、大罪と言えるでしょう。
+[k]
+
+[charaFace A 0]
+＠アストライア
+あなたが望むなら、たとえ夢の中であろうと、[r][#私:わたくし]はふさわしい裁きを与えるでしょう。
+[k]
+
+＠アストライア
+いかが？[r]裁きを受けて、楽になりたいとは思いません？
+[k]
+
+？1：罪だけど
+？2：ここで折れてはいけないのだと思う
+
+？！
+
+＠アストライア
+それはただの強がりではないの？[r]裁きを引き延ばすためだけの、言い訳じゃない？
+[k]
+
+？1：………………
+？2：かも、しれないけど
+
+？！
+
+[messageOff]
+[wt 0.4]
+[charaFace A 5]
+[wt 1.0]
+[charaFace A 0]
+
+＠アストライア
+罪の香りが濃くなってきました。
+[k]
+
+＠アストライア
+新しい咎人が、近いようです。
+[k]
+
+[messageOff]
+[se ad60]
+[bgmStop BGM_EVENT_70 0.7]
+[wipeout rightToLeft 0.7 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.7]
+[wipein leftToRight 0.7 1]
+[wait wipe]
+
+[seStop ad60 0.7]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 1.0]
+
+？1：ベディ………
+
+？！
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaFace B 4]
+＠ベディヴィエール
+マスター………
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠アストライア
+ああ、知っています。[r]あなたは、[#あのベディヴィエール]ですね。
+[k]
+
+＠アストライア
+聖剣を還さなかった、円卓の騎士。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠ベディヴィエール
+ええ………その通りです。私は聖剣を還せなかった。[r]そのせいで、アーサー王は変わってしまった。
+[k]
+
+[charaFace B 6]
+＠ベディヴィエール
+あのような最後を迎える必要など、[r]どこにもなかった。
+[k]
+
+＠ベディヴィエール
+私が、罪さえ犯さなければ。
+[k]
+
+？1：でも、ベディヴィエールは
+？2：アーサー王を助けたかっただけで
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠アストライア
+そうでしょうね。カルデアの記録も閲覧しました。[r]ベディヴィエールは、間違いなく清廉なる騎士。
+[k]
+
+＠アストライア
+ですが、罪はあるのです。
+[k]
+
+＠アストライア
+たとえ、それが優しさゆえの行いだとしても、[r]やはり罪は罪なのですから。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠ベディヴィエール
+その通りです。罪は罪です、マスター。[r]私のそれは、[#雪:そそ]がれてはいない。
+[k]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaFace B 8]
+＠ベディヴィエール
+私を裁いてください。[#正義の女神:レディ・ジャスティス]。[r]きっと、今日の私はそのためにここにいる。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠アストライア
+よくぞ、言ってのけました！
+[k]
+
+[messageOff]
+[charaEffect C bit_talk_41_fs]
+[charaMoveScale A 1.2 0.4]
+[charaMove A 0,16 0.4]
+[charaFadeout A 0.4]
+[se bac2]
+
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

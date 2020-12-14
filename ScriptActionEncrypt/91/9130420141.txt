@@ -1,0 +1,950 @@
+
+＄91-30-42-01-4-1
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 3042002 1 ロムルス・クィリヌス]
+[charaSet B 1005001 1 ネロ]
+[charaSet C 7010001 1 カリギュラ]
+[charaSet D 1013001 1 カエサル]
+[charaSet E 4011001 1 ブーディカ]
+[charaSet F 99502600 1 マシュ]
+[charaSet G 3039000 1 ガレス]
+[charaSet H 1009002 1 モードレッド]
+[charaSet I 6008000 1 クレオパトラ]
+[charaSet J 2001000 1 エミヤ]
+[charaSet K 98104300 1 大怨霊]
+[charaSet L 6005001 1 ジャック]
+[charaSet M 5004001 1 ナーサリー・ライム]
+[charaSet N 3026000 1 ジャンヌ・オルタ・サンタ・リリィ]
+[charaSet O 7028000 1 バニヤン]
+[charaSet V 99502600 1 通信用]
+
+[cameraMove 0 0,0 1.01]
+[wt 0.1]
+
+[scene 107401]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+[wt 0.4]
+
+[se ad21]
+[wt 0.1]
+[shake 0.03 4 4 0.7]
+[wt 1.2]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[charaMoveScale A 1.05 0.3]
+[charaMove A 0,7 0.15]
+[wt 0.15]
+[se ad54]
+[wt 0.15]
+[charaFace A 2]
+＠ロムルス・クィリヌス
+我が四肢より今こそ出でよ！
+[k]
+
+＠ロムルス・クィリヌス
+神たる力、光なる力、いずれ星々の彼方へ届く力よ[line 3]
+[k]
+
+[se ad733]
+[se ad39]
+[seVolume ad39 0 0.5]
+
+＠ロムルス・クィリヌス
+[f large]『[#我らの腕はすべてを拓き、宙へ:ペ　　ル　　・　　ア　　ス　　ペ　　ラ　　・　　ア　　ド　　・　　ア　　ス　　ト　　ラ]』！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[effect bit_talk_light_rain2_fs]
+[se ad962]
+[wt 1.5]
+[se ad965]
+[se ad891]
+
+[fadeout white 2.0]
+[wait fade]
+
+[effectStop bit_talk_light_rain2_fs]
+
+[charaScale A 1.0]
+[se ad876]
+[se ad875]
+[se ad886]
+[seVolume ad886 0 0.4]
+[se ad864]
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+[charaPut K 0,0]
+[charaEffect K bit_talk_barrier]
+[se ade404]
+[seVolume ade404 0 0]
+[seVolume ade404 2.0 0.3]
+[wt 1.0]
+
+[seStop ad886 2.0]
+[fadein white 2.0]
+[wait fade]
+
+[wt 0.7]
+[charaFadeout K 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+[charaEffectDestroy K bit_talk_barrier]
+[seStop ade404 1.0]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠ブーディカ
+やああああッ！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+
+[effect bit_talk_x_slash01]
+[wt 0.2]
+[cueSe Battle bac139]
+[shake 0.03 3 3 0.4]
+[wt 0.7]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+＠ウェルキンゲトリクス・ゴースト
+オ、オオ、オ……
+[k]
+
+＠ウェルキンゲトリクス・ゴースト
+オオオオオオオオオオオオオ……[line 3]！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 1.0]
+[charaSpecialEffect K erasure 1 1.7]
+[se ad42]
+[wait charaSpecialEffect K]
+[charaFadeout K 0]
+[wt 1.5]
+
+[effect bit_talk_20]
+[cueSe Battle bac35]
+[cueSeVolume bac35 0 0]
+[cueSeVolume bac35 0.5 0.7]
+[wt 1.5]
+[effectStop bit_talk_20]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠ブーディカ
+……手応え、あり。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaEffect V bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠マシュ
+敵性体、消滅を確認！
+[k]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaFace F 0]
+＠マシュ
+５号聖杯が現出しています。[r]皆さん、回収は可能でしょうか？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ブーディカ
+うん、大丈夫だと思う。[r]マシュは保管の準備しておいてくれる？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut V 1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠マシュ
+了解しました。[r]先輩、皆さん、お願いします！
+[k]
+
+？1：ちゃんと回収しておくよ
+
+[charaFace F 13]
+＠マシュ
+こちらも、厳重に保管と封印を施しておくよう、[r]ダ・ヴィンチちゃんにお願いしておきますね。
+[k]
+
+？2：マシュもありがとう！
+
+[charaFace F 13]
+＠マシュ
+いえ！
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut V 1200,1200]
+
+[effect bit_talk_20]
+[wt 2.0]
+[effectStop bit_talk_20]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ブーディカ
+さて、どうやって回収しよう。
+[k]
+
+＠ブーディカ
+あたしは多分、触らない方がいいと思うんだ。[r]だから[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ロムルス・クィリヌス
+任せよ。
+[k]
+
+[messageOff]
+[fowardEffect bit_talk_20]
+[se ad733]
+[se ad39]
+[seVolume ad39 0 0.5]
+[wt 1.5]
+[seStop ad733 1.0]
+[seStop ad39 1.0]
+[fowardEffectStop bit_talk_20]
+[wt 1.0]
+
+＠ロムルス・クィリヌス
+我が魔力で包んだ。[r]外部からの干渉を受けることはあるまい。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ブーディカ
+うん。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFace E 4]
+＠ブーディカ
+……あり、がとう。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 1.2]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠ブーディカ
+……。[r]……。
+[k]
+
+＠ブーディカ
+……正直、あたしだけじゃどうにもならなかった。[r]聖杯のことだけじゃなくて、相手がね。
+[k]
+
+＠ブーディカ
+亡霊だったし……
+[k]
+
+[charaFace E 0]
+＠ブーディカ
+精神に働きかけてくる何か、あったでしょ？[r]あんたはソレを解除してくれた。
+[k]
+
+＠ブーディカ
+あたしだけじゃなく、[%1]のもね。[r]だから……
+[k]
+
+＠ブーディカ
+ありがとう。[r]今のは、助かったわ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ロムルス・クィリヌス
+いいや。
+[k]
+
+＠ロムルス・クィリヌス
+許す必要はない。[r]私を憎め。
+[k]
+
+＠ロムルス・クィリヌス
+おまえには、おまえたちにはその権利があり、[r]私にはそれを受け止める義務がある。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ブーディカ
+私、か。[r]ローマって言わないんだ？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ロムルス・クィリヌス
+ああ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ブーディカ
+そ。わかった。
+[k]
+
+？1：…………………………
+
+？！
+
+[charaFace E 4]
+＠ブーディカ
+…………はぁ。
+[k]
+
+＠ブーディカ
+そんな顔して見つめないの、[%1]。[r]もう暴れたりしないよ、今はもう冷静だから。
+[k]
+
+[charaFace E 0]
+＠ブーディカ
+でも、言っておく。[r]ロムルス・クィリヌス。
+[k]
+
+[charaFace E 5]
+＠ブーディカ
+ブリタニアのブーディカはあんたを許さない。[r]永遠に。
+[k]
+
+＠ブーディカ
+……。[r]……。
+[k]
+
+[charaFace E 0]
+＠ブーディカ
+…………………………でも。
+[k]
+
+＠ブーディカ
+あたしはカルデアのあたしだ。[r]よく似ているけど、どうしたって違う。
+[k]
+
+＠ブーディカ
+だから[line 3]
+[k]
+
+＠ブーディカ
+[#マスターの迷惑にならない範囲]で、[r]あんたを許さない。
+[k]
+
+＠ブーディカ
+あんただけは“敵の敵だから味方”とは思えない。[r]それでも……
+[k]
+
+[messageOff]
+[wt 0.7]
+
+[charaFace E 3]
+＠ブーディカ
+今のあたしは、まず第一に、[r][%1]のサーヴァントだからね。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.7]
+
+[charaFace A 1]
+＠ロムルス・クィリヌス
+[line 5]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠ブーディカ
+……何か言えっての。
+[k]
+
+[charaFace E 3]
+＠ブーディカ
+ううん。[r]やっぱり、言わなくていいや。
+[k]
+
+[messageOff]
+[wt 0.7]
+[bgmStop BGM_EVENT_2 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+[charaSet A 3042000 1 ロムルス・クィリヌス]
+[branchQuestNotClear lblNotClear01 3000303]
+[scene 105900]
+[branch lblConf01]
+[label lblNotClear01]
+[scene 105600]
+[label lblConf01]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ade396]
+[seVolume ade396 0 0]
+[seVolume ade396 0.5 0.6]
+[se adm75]
+[seVolume adm75 0 0]
+[seVolume adm75 0.5 1.0]
+[wt 2.0]
+[seStop ade396 1.4]
+[seStop adm75 1.4]
+[wt 1.4]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠ブーディカ
+はーい、腹減りさんたち！
+[k]
+
+＠ブーディカ
+お待たせ！[r]今晩は、とっておきのチキンパーティーだよ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth O 1]
+[charaDepth L 4]
+[charaDepth M 3]
+[charaDepth N 2]
+[charaFace O 1]
+[charaFace L 1]
+[charaFace M 1]
+[charaFace N 6]
+[charaFadein O 0.1 -380,0]
+[charaFadein L 0.1 -110,0]
+[charaFadein M 0.1 150,0]
+[charaFadein N 0.1 375,0]
+＠子供たち
+わーい！
+[k]
+
+[charaFadeout O 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaDepth G 1]
+[charaDepth H 2]
+[charaFace G 1]
+[charaFace H 1]
+[charaFadeinFSL G 0.1 0]
+[charaFadeinFSR H 0.1 2]
+＠子供たち？
+おおー！
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠カエサル
+何と香ばしい匂いであろうか……[r]なあクレオパトラ、脚一本と言わず四本はゆこうぞ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth I 1]
+[charaDepth D 2]
+[charaTalk I]
+[charaFace I 1]
+[charaFace D 1]
+[charaFadeinFSL I 0.1 0]
+[charaFadeinFSR D 0.1 2]
+＠クレオパトラ
+ええ、はい。とても食欲をそそる油の香りですが、[r]四本は食べ過ぎですからねカエサル様？
+[k]
+
+[charaFace D 4]
+＠カエサル
+ええ～～～。
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠カリギュラ
+ニワトリィイイイイイイイイイイイ！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠ネロ
+おお、おお！[r][#件:くだん]のニワトリがどうというモノだな！　何と！
+[k]
+
+＠ネロ
+今宵も美味を味わわせてくれるか、[r]ブーディカ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+＠ブーディカ
+はいはい、そうね。
+[k]
+
+＠ブーディカ
+最初の頃は多少は遠慮がちだったのに、[r]今じゃフッツーに食べてるんだから……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+＠エミヤ
+ブーディカ、[r]盛り付けは大皿で構わないか？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠ブーディカ
+ああごめん、お願い！[r]盛り付けまで頭回ってなかったわ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace O 5]
+[charaFace L 5]
+[charaFace M 5]
+[charaFace N 5]
+[charaFadein O 0.1 -380,0]
+[charaFadein L 0.1 -110,0]
+[charaFadein M 0.1 150,0]
+[charaFadein N 0.1 375,0]
+＠子供たち
+おなかすいたー！
+[k]
+
+[charaFadeout O 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk J]
+[charaFace J 4]
+[charaFadein J 0.1 1]
+＠エミヤ
+英霊に言葉通りの食欲はないはずだが……[r]まあいい、行儀良く座っていたまえ。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace O 1]
+[charaFace L 1]
+[charaFace M 1]
+[charaFace N 6]
+[charaFadein O 0.1 -380,0]
+[charaFadein L 0.1 -110,0]
+[charaFadein M 0.1 150,0]
+[charaFadein N 0.1 375,0]
+＠子供たち
+はーい！
+[k]
+
+[charaFadeout O 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠ブーディカ
+そうそう、お行儀良くね！[r]あんたも！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠ネロ
+余か？　むう、余のことか！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠カエサル
+いや、今のは私だな！[r][#智略:ちりゃく]を尽くして私はつまみ食いの算段を丁度[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk I]
+[charaFace I 2]
+[charaFace D 1]
+[charaFadeinFSL I 0.1 0]
+[charaFadeinFSR D 0.1 2]
+＠クレオパトラ
+カエサル様！
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[se ad5]
+[seVolume ad5 0 0]
+[seVolume ad5 0.7 0.5]
+[wt 1.5]
+[bgm BGM_EVENT_7 1.5 0.6]
+[seStop ad5 2.5]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+＠ロムルス・クィリヌス
+[line 3]うむ、佳きかな。
+[k]
+
+[messageOff]
+[charaFadeout A 0.7]
+[charaMove A 32,0 0.7]
+[wt 1.2]
+
+？1：あれ？
+？2：神祖、どこか行くの？
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠ロムルス・クィリヌス
+ん。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFace A 0]
+[charaFadeinFSL E 0.1 0]
+[charaFadeinFSR A 0.1 2]
+＠ブーディカ
+まったく、[r]今日の功労者がどこ行くのさ。
+[k]
+
+＠ロムルス・クィリヌス
+ん……
+[k]
+
+[charaFace E 0]
+＠ブーディカ
+そりゃ、あたしはあんたを許さないけど、[r]でもね。
+[k]
+
+＠ブーディカ
+いじめたりなんかしないよ。[r]ここには小さい子だっているんだし？
+[k]
+
+＠ブーディカ
+胸張ってできないことは、[r]誰もしやしない。
+[k]
+
+＠ブーディカ
+だから、そうさね。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFace E 1]
+＠ブーディカ
+いつか[#正々堂々:せいせいどうどう]、[r]人理も何もかもちゃんと無事に済んだ後で、
+[k]
+
+＠ブーディカ
+名乗りを上げて[line 3][r]その首を[#刎:は]ねてやるよ。神サマ。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace A 1]
+[wt 1.5]
+
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.5 1.0]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ネロ
+何を[#刎:は]ねると？[r]余の聞き間違いか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace O 0]
+[charaFace L 0]
+[charaFace M 0]
+[charaFace N 0]
+[charaFadein O 0.1 -380,0]
+[charaFadein L 0.1 -110,0]
+[charaFadein M 0.1 150,0]
+[charaFadein N 0.1 375,0]
+＠子供たち
+[FFFFFF]？？[-]
+[k]
+
+[charaFadeout O 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk depthOff]
+[charaTalk H]
+[charaFace G 0]
+[charaFace H 1]
+[charaFadeinFSL G 0.1 0]
+[charaFadeinFSR H 0.1 2]
+＠モードレッド
+なんだなんだ、食前の運動か？　いいぜ？
+[k]
+
+[charaFace G 1]
+＠ガレス
+そういう話をしてるんじゃないと思いますよ。[r]多分、付け合わせのお芋の話かと。
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ネロ
+芋とな。そうなのか？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.7]
+
+＠ロムルス・クィリヌス
+フッ。
+[k]
+
+＠ロムルス・クィリヌス
+…………それもまた、
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠ブーディカ
+ローマとか言うんじゃないよ？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 1.0]
+＠ロムルス・クィリヌス
+浪漫、である。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 1.0]
+
+[charaFace E 1]
+＠ブーディカ
+まったく！　これだから！
+[k]
+
+＠ブーディカ
+はいはい、浪漫結構！[r]出来たて熱々のうちにみんな食べちゃいなさい！
+[k]
+
+[se ad6]
+[seVolume ad6 0 0]
+[seVolume ad6 0.2 0.7]
+＠V：一同
+おおー！！[twt 0.2][seStop ad6 2.5]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 2.0]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

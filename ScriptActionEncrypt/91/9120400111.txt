@@ -1,0 +1,942 @@
+
+
+
+＄91-20-40-01-1-1
+
+[soundStopAll]
+
+[enableFullScreen]
+
+[charaSet A 2040000 1 清少納言]
+[charaSet B 1030000 1 鈴鹿御前]
+[charaSet C 2037000 1 ジェーン]
+[charaSet D 4039002 1 マンドリカルド]
+[charaSet E 4013001 1 メイヴ]
+[charaSet F 5039000 1 スカサハ＝スカディ]
+[charaSet G 5042000 1 紫式部]
+
+[imageSet H back10000_fs 1]
+[charaScale H 1.5]
+
+[charaSet I 98115000 1 エフェクト用]
+
+[charaDepth F 1]
+[charaDepth I 2]
+
+[charaDepth H 3]
+[charaDepth D 4]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+
+＠清少納言
+……ジェンジェン、起きて。[r]ほらパイセンも。
+[k]
+
+[messageOff]
+
+[fadeout black 0.5]
+[wait fade]
+
+[wt 0.5]
+
+[branchQuestNotClear lblNotClear1 3000303]
+[label lblClear1]
+
+[scene 105900]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+[scene 105600]
+
+[label lblConf1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[se ad77]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.4 0,-10]
+[charaMove C 0,0 1.0]
+＠ジェーン
+ん……あれぇ？[r]わたし寝ちゃってた？
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad77]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.4 0,-10]
+[charaMove B 0,0 1.0]
+＠鈴鹿御前
+今なんじ～～？[r]なんか、超寝た気分なんですけど。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,0]
+＠マンドリカルド
+……どうやら本体は、[r]意識を失った状態だったみたいっすね。
+[k]
+
+＠マンドリカルド
+見た感じ何ともなさそうだし、[r]ま、心配いらねえんじゃねえっすか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠清少納言
+とほほー。[r]もうチョコレートはコリゴリだよー。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠マンドリカルド
+まあ、こんな日もありますって。[r]あんまり気にしねえ事っすよ。
+[k]
+
+＠マンドリカルド
+それ言ったら、[r]俺なんかいっつも……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠清少納言
+でも安心しろリカっち！[r][#次は]ちゃんとした食材だけにするかんね！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠マンドリカルド
+……。[r]……。
+[k]
+
+＠マンドリカルド
+次？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_27 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠清少納言
+リカっちと、かおるっちと、あたしちゃん。[r]この３人でおごそかに……
+[k]
+
+[se ad139]
+[effect bit_talk_41_fs]
+
+[charaFace A 9]
+＠清少納言
+タコ茶会をやるんだよ！
+[k]
+
+[wt 0.3]
+[effectStop bit_talk_41_fs]
+
+[charaFace A 17]
+＠清少納言
+３人だけなら[#賑々:にぎにぎ]しくならんだろうし、[r]リカっちも大丈夫だって！　わはは！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaFadeTime H 0.1 0.5]
+
+[charaPut H 0,-200]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠マンドリカルド
+（…………）
+[k]
+
+＠マンドリカルド
+（一番賑やかな人がいるから、[r]　あんま変わらないっすね、たぶん……）
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+＠清少納言
+今なにか言ったかね！[r]マンドリカルド君！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠マンドリカルド
+た……
+[k]
+
+＠マンドリカルド
+楽しみにしてるっす……。
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_27 0.5]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[wt 0.6]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.4 1]
+[wt 0.4]
+＠メイヴ
+うわ、サイアク……うたた寝してたら[r]顔に変な跡ついちゃったじゃない。
+[k]
+
+[charaFace E 7]
+＠メイヴ
+ほら、スカサハも起きて。
+[k]
+
+＠メイヴ
+帰ったらお風呂……に……？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaPut I 1]
+[se adm19]
+[charaEffect I bit_talk_valentine_brilliant_fs]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠スカサハ＝スカディ
+うむ。
+[k]
+
+＠スカサハ＝スカディ
+何故かは分からぬが、生まれ変わった気分だ。[r]この、全身隅々まで行き渡る充足感……
+[k]
+
+＠スカサハ＝スカディ
+これが……たこぱの効果というものか。
+[k]
+
+[charaFace F 12]
+＠スカサハ＝スカディ
+よい！
+[k]
+
+[seStop adm19 0.5]
+
+[charaEffectDestroy I bit_talk_valentine_brilliant_fs]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠紫式部
+違うと思います……！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠清少納言
+ま、良き良き。
+[k]
+
+＠清少納言
+みんな、日頃のストレスも発散できたみたいだし、[r]これも結果オーライみたいな？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠紫式部
+貴方はまた、[r]いい加減な事を言って……。
+[k]
+
+[charaFace G 1]
+＠紫式部
+ですが、そうですね。
+[k]
+
+＠紫式部
+結果オーライ、です。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+＠清少納言
+てなわけで[#一件落着:いっけんらくちゃく]ゥ！[r]世界は今日もいとめでたし、だぜい！[wt 0.7][se ad186]
+[k]
+
+
+[messageOff]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[wt 1.5]
+[branchQuestNotClear lblNotClear2 3000303]
+
+[scene 104200]
+
+
+[branch lblConf2]
+[label lblNotClear2]
+
+[scene 105500]
+
+[label lblConf2]
+
+[wt 1.5]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠紫式部
+それではマスター、おやすみなさいませ。[r]お疲れでしょうから、ゆっくり休んでください。
+[k]
+
+[charaFace G 0]
+＠紫式部
+なぎこさんも……
+[k]
+
+＠紫式部
+夜くらいは、[r]大人しく休まれてはどうですか？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠清少納言
+たはは、気が向いたらねー。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠紫式部
+まったく、もう……
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[charaFace G 1]
+[wt 1.0]
+
+[se ad311]
+[charaFadeout G 0.4]
+[wt 1.0]
+
+[seStop ad311 1.0]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+＠清少納言
+さて、と……。
+[k]
+
+[charaFace A 0]
+＠清少納言
+ねえ、ちゃんマス？[r]もうこんな時間だけど……。
+[k]
+
+＠清少納言
+……。[r]……。
+[k]
+
+[messageOff]
+
+[se ad7]
+
+[charaFace A 10]
+[charaMove A 0,-5 0.2]
+[wt 0.2]
+＠清少納言
+後[messageShake 0.05 3 3 0.3]片付け！！[r]手伝ってください！！
+[k]
+
+？1：はいはい
+
+？！
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+[scene 105900]
+
+[branch lblConf3]
+[label lblNotClear3]
+
+[scene 105600]
+
+[label lblConf3]
+
+[wt 0.5]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_25 0.1]
+
+[se ade162]
+[wt 1.5]
+[seStop ade162 0.5]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠清少納言
+いよーし、終わった終わった！[r]おつかれちゃん！
+[k]
+
+＠清少納言
+なんかごめんねー、[r]こんなのに付き合わせちゃって。
+[k]
+
+＠清少納言
+あんな事の後だし、みんなに手伝わせるのも[r]悪いかなって思ってさ。
+[k]
+
+[charaFace A 8]
+＠清少納言
+まあ、結局ちゃんマスに頼ってたら[r]意味ないんだけど、わはは！
+[k]
+
+？1：いいよ、このくらい
+？2：どうってことないです
+
+？！
+
+[charaFace A 15]
+＠清少納言
+フッ、出たな……いつものやつが。
+[k]
+
+[charaFace A 13]
+＠清少納言
+自分も疲れてるだろうに、[r]ほんと、ちゃんマスはさぁ。
+[k]
+
+＠清少納言
+そういうとこだなー。[r]そういうとこだぞー。
+[k]
+
+[charaFace A 17]
+＠清少納言
+苦労を増やしてるあたしちゃんが言うな、[r]って話だけどな！
+[k]
+
+？1：…………
+
+？！
+
+？1：なぎこさんも、本当は……
+
+？2：しんどい時があるんじゃない？
+
+？！
+
+[charaFace A 2]
+＠清少納言
+お、おお？
+[k]
+
+＠清少納言
+なんだなんだちゃんマス。[r]いきなり突っ込んできたな。
+[k]
+
+[bgmStop BGM_EVENT_25 1.0]
+
+？1：だって、なぎこさんは
+
+？！
+
+？1：今でも……
+
+？！
+
+[charaFace A 6]
+＠清少納言
+……。[r]……。
+[k]
+
+[bgm BGM_EVENT_95 0.1]
+
+[charaFace A 16]
+＠清少納言
+やれやれ。
+[k]
+
+[charaFace A 1]
+＠清少納言
+さては今日、[r]図書館で変な本でも借りてきたな？
+[k]
+
+[charaFace A 15]
+＠清少納言
+でもま、そうだな。[r]しんどい時がないって言うと嘘になるけど。
+[k]
+
+＠清少納言
+あたしちゃんの場合、ちょっと違くて。[r]しんどいって思うよりも先に……。
+[k]
+
+[charaFace A 9]
+＠清少納言
+いつでもキラキラしてたいなって！
+[k]
+
+[charaFace A 3]
+＠清少納言
+はい、そこ笑わないー。[r]真面目な話ですー。
+[k]
+
+[charaFace A 0]
+＠清少納言
+えーと、このキラキラするってのは、[r]どういう意味かっていうとさ……。
+[k]
+
+[charaFace A 16]
+＠清少納言
+つまり……。
+[k]
+
+＠清少納言
+……。[r]……。
+[k]
+
+[charaFace A 13]
+＠清少納言
+うん……。[r]あたしはね、ちゃんマス。
+[k]
+
+＠清少納言
+また会えるかもって少し期待してたけど。[r]あの人は、英霊の座にはいなかった。
+[k]
+
+＠清少納言
+いなかった……んだと思う。
+[k]
+
+＠清少納言
+きっと今頃、[r]うんにゃ、１０００年も前からずっと、
+[k]
+
+[charaFace A 9]
+＠清少納言
+ここからもっとずっと遠く。[r][#十万億土:じゅうまんおくど]の彼方ってとこにいるんだよ。
+[k]
+
+[charaFace A 8]
+＠清少納言
+それでさ、たまにこっちを覗いて[r]『いとをかし』なんて笑ってるのかも。
+[k]
+
+＠清少納言
+でも、そう考えたらやばくね？
+[k]
+
+＠清少納言
+そのたまたまなタイミングで、[r]しんどい顔見られるとか絶対嫌くね？
+[k]
+
+[charaFace A 1]
+＠清少納言
+だったらさ、[r]しんどいなんて言ってらんないじゃん。
+[k]
+
+＠清少納言
+いつ見られても平気なように、
+[k]
+
+[charaFace A 9]
+＠清少納言
+どこにいても、[r]すぐに見つけてもらえるように、
+[k]
+
+＠清少納言
+あたしにはもう、[r]『枕草子』は書けないけど、
+[k]
+
+＠清少納言
+今いる[#此処:せかい]はこんなにもエモいんだって、[r]めいっぱい伝えられるように、
+[k]
+
+[charaFace A 16]
+＠清少納言
+あたしはいつだって、[r]キラキラしていたいんだ。
+[k]
+
+＠清少納言
+……。[r]……。
+[k]
+
+[bgmStop BGM_EVENT_95 1.0]
+
+[charaFace A 1]
+＠清少納言
+おわり。
+[k]
+
+[bgm BGM_EVENT_25 0.1]
+
+[charaFace A 10]
+＠清少納言
+って、オチはないんかーい！
+[k]
+
+[charaFace A 8]
+＠清少納言
+あーもー、自分でツッコんじゃった！[r]すっごい恥ずかてぃー！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.5]
+
+？1：…………
+
+？！
+
+？1：（なぎこさんの為に、なにか……）
+
+？！
+
+？1：（出来る事はあるだろうか？）
+
+？！
+
+
+
+[fadeout black 0.5]
+[bgm BGM_EVENT_25 0.5 0.5]
+[wait fade]
+
+[wt 0.5]
+
+[scene 10000]
+
+[wt 0.2]
+
+[fadein black 0.2]
+[wait fade]
+
+？1：（いや、出来る事なんて……）
+
+？！
+
+＠清少納言
+……。[r]……。
+[k]
+
+＠清少納言
+[f large]ほわっちゃあーーー！！
+[k]
+
+[messageOff]
+
+
+[se bac9]
+[wt 0.1]
+
+[fadeout black 0.2]
+[wait fade]
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+[scene 105900]
+
+[branch lblConf4]
+[label lblNotClear4]
+
+[scene 105600]
+
+[label lblConf4]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[wt 0.2]
+[bgm BGM_EVENT_25 0.5 1.0]
+
+[fadein black 0.5]
+[wait fade]
+
+
+＠清少納言
+なーに、おセンチになっちゃってるかな、[r]このちゃんマスは！
+[k]
+
+[charaFace A 13]
+＠清少納言
+まあ、でも……。
+[k]
+
+＠清少納言
+本当言うとさ、[r]時々考える事があるんだ。
+[k]
+
+＠清少納言
+もしもまた、ふとした事で[#躓:つまず]いて、[r]この足を止めてしまったとき、
+[k]
+
+＠清少納言
+自分はもう一度、前に進めるんだろうか。
+[k]
+
+＠清少納言
+夢から覚めるみたいに、だんだんと、[r]自分の体から熱が失われて……
+[k]
+
+＠清少納言
+目に映る景色はみんな[#色褪:いろあ]せて、[r]二度と戻らないんじゃないかって。
+[k]
+
+＠清少納言
+……[r]……
+[k]
+
+[charaFace A 7]
+＠清少納言
+だからさ。
+[k]
+
+＠清少納言
+そうなった時には、[r]ちゃんマスがあたしに伝えてよ。
+[k]
+
+
+＠清少納言
+一緒に、知らない場所に行って、[r]見た事もない物を見て[line 3]
+[k]
+
+＠清少納言
+誰かに伝えたくなるようなキラキラを、[r]めいっぱいに詰め込んで[line 3]
+[k]
+
+＠清少納言
+どこまで行こうと世界は美しいって事、[r]あたしに信じさせて。
+[k]
+
+
+＠清少納言
+ちゃんマスには、きっと、[r]それが出来る筈だから。
+[k]
+
+＠清少納言
+……[r]……
+[k]
+
+
+[charaFace A 11]
+＠清少納言
+んー。
+[k]
+
+
+＠清少納言
+正直、マスターとサーヴァントの関係って[r][#未:いま]だによくわかってないんだけどさ……。
+[k]
+
+
+＠清少納言
+こういうの、やっぱ変かな。
+[k]
+
+？1：いや……
+
+？！
+
+？1：すごく、いいと思うよ
+
+？！
+
+[charaFace A 6]
+＠清少納言
+……。[r]……。
+[k]
+
+[charaFace A 7]
+＠清少納言
+へへへ、そっか。
+[k]
+
+[charaFace A 8]
+＠清少納言
+それなら良き、だね！
+[k]
+
+[messageOff]
+
+[fadeout black 1.5]
+[bgm BGM_EVENT_25 1.5 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+
+[wt 1.5]
+[bgm BGM_EVENT_25 1.5 1.0]
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠清少納言
+……あーあ、話し込んでたらこんな時間。[r]そろそろ寝ないと、明日きっついよ。
+[k]
+
+[charaFace A 8]
+＠清少納言
+あたしちゃん、そこの椅子並べて寝るわ。[r]おやすみー。
+[k]
+
+？1：そこで！？
+
+？！
+
+＠清少納言
+エアコンってやつで快適だし、[r]朝になったらエミやんが叩き起こしてくれるし、
+[k]
+
+＠清少納言
+なかなか快適なんだなー、これが。
+[k]
+
+[charaFace A 9]
+＠清少納言
+あ、そうだ。[r]ちゃんマスもそっちに椅子並べなよ。
+[k]
+
+？1：[&自分も！？:わたしも！？]
+
+？！
+
+[charaFace A 8]
+＠清少納言
+わはは、お泊まり会みたいで[r]ちょっと楽しくね？
+[k]
+
+[charaFace A 9]
+＠清少納言
+ほら、そこの灯りも消して。
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+？1：……まあ
+
+？！
+
+？1：それもまた良き、かな
+
+？！
+
+[wt 0.5]
+
+[se ade302]
+
+[wt 0.5]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_25 2.0]
+[wait fade]
+[soundStopAll]
+[end]
+

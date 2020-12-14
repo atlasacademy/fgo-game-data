@@ -1,0 +1,378 @@
+
+
+＄91-40-34-01-2-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 4034001 1 バーソロミュー]
+[charaSet B 2025101 1 メアリー]
+[charaSet C 2025201 1 アン]
+[charaSet D 2025001 1 メアリー＆アン]
+[charaSet E 4008002 1 黒髭]
+
+[charaSet F 98104300 1 エネミー]
+[charaSet G 99502600 1 マシュ]
+[charaSet H 98111500 1 通信用エフェクト]
+
+[scene 107500]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.3]
+
+＠？？？
+ああ[line 3]あ、あ[line 3][r]でも、これで[line 3]やっと[line 3]
+[k]
+
+
+＠？？？
+らくに[line 3]なれ、る[line 3][r]かいほう、される[line 3]
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_3 2.0]
+
+[se ad42]
+
+[charaSpecialEffect F erasure]
+[wait charaSpecialEffect F erasure]
+[charaSpecialEffectStop F erasure]
+[wt 1.0]
+
+[seStop ad42 0.1]
+
+[charaFadeout F 0.1]
+[wt 0.5]
+
+
+＠？？？
+でも、おたから、ほしかったァ[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠バーソロミュー
+ふぅ。
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaPut H 1]
+[se ad13]
+[charaEffect H bit_talk_10_LowLevel]
+[wt 0.2]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠マシュ
+こちらカルデアです。[r]マスター、応答お願いします。
+[k]
+
+？1：はいはーい
+？！
+
+[charaFace G 1]
+
+＠マシュ
+特異点の修正、確認できました。[r]お疲れ様です。
+[k]
+
+＠マシュ
+もう少しで帰還準備が整いますので、[r]少々お待ちくださいね。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠バーソロミュー
+ああ、了解だ。
+[k]
+
+[messageOff]
+
+
+
+
+
+
+
+[se ad1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaEffectStop H bit_talk_10_LowLevel]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠バーソロミュー
+……ふむ。
+[k]
+
+？1：どうしたの？
+？！
+
+＠バーソロミュー
+いや、何だ。[r]先ほど言ったように、ここに財宝はない。
+[k]
+
+＠バーソロミュー
+けれど。[r]もしかしたら、財宝があったかもしれないのさ。
+[k]
+
+[messageOff]
+
+[se adm28]
+[seVolume adm28 0.0 0.5]
+[wt 0.5]
+[seStop adm28 0.1]
+
+＠バーソロミュー
+ほら、これを見てくれ。
+[k]
+
+？1：地図……？
+？！
+
+＠バーソロミュー
+かろうじて地図、と判別できる程度だがね。[r]この島の地図じゃない。
+[k]
+
+＠バーソロミュー
+あの悪霊が腰掛けていた、[r]岩の下にあったものだ。
+[k]
+
+[charaFace A 4]
+
+＠バーソロミュー
+……何十年経っても、[r]悪霊には気付けない場所だな。
+[k]
+
+[charaFace A 0]
+
+＠バーソロミュー
+まあ、ともかく。
+[k]
+
+[charaFace A 0]
+
+＠バーソロミュー
+ここに財宝がないからといって、[r]落胆する必要はないという訳さ。
+[k]
+
+
+＠バーソロミュー
+我々は夢を掴めずとも、[r]財宝を探して帆を張ることなら[line 3]
+[k]
+
+[charaFace A 1]
+
+＠バーソロミュー
+プロフェッショナルだからね。
+[k]
+
+？1：財宝……楽しそう……！
+？！
+
+[messageOff]
+
+[bgmStop BGM_EVENT_2 0.5]
+[wt 0.5]
+
+[se ad59]
+[seVolume ad59 0 0]
+[se ad60]
+[seVolume ad60 0 0]
+[seVolume ad59 1.5 1.0]
+[seVolume ad60 1.5 1.0]
+
+[charaFace A 1]
+
+＠バーソロミュー
+ははは。[wt 0.5][charaFace A 0][r]おや？　聞き慣れた足音が複数……。
+[k]
+
+[messageOff]
+
+[seStop ad59 0.5]
+[seStop ad60 0.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠黒髭
+ひい、ひい、ひい。[r]や、やっと到着したでござる……。
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠アン
+デストラップあり、怨霊あり、[r]仕掛け扉ありの大冒険でしたわ……。
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠メアリー
+でもまあ、これだけ苦労したんだ。[r]お宝ゲットだー！
+[k]
+
+[charaFace B 0]
+
+＠メアリー
+……って、あれ？[r]マスター？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠黒髭
+バーソロ？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠アン
+あら？[r]ここにあったはずの財宝は？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaDepth C 1]
+[charaDepth E 2]
+[charaDepth B 1]
+
+[charaFace C 2]
+[charaFace E 2]
+[charaFace B 2]
+[charaFadeinFSL C 0.1 0]
+[charaFadein E 0.1 1]
+[charaFadeinFSR B 0.1 2]
+
+＠三人
+[f large]どーこー？
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠バーソロミュー
+ふぅ、やれやれ。
+[k]
+
+[charaFace A 0]
+
+＠バーソロミュー
+さて、マスター。[r]次の難題だ。
+[k]
+
+＠バーソロミュー
+ここまで苦労して辿り着いた三人に、[r]財宝など最初から無かったと説明しなければね。
+[k]
+
+？1：こっちの方が難しそう……
+？！
+
+[charaFace A 1]
+
+＠バーソロミュー
+まったくだ。
+[k]
+
+[charaFace A 0]
+
+＠バーソロミュー
+仕方ないので、[r]次の財宝の話で連中の腹を膨らませるとしよう！
+[k]
+
+＠バーソロミュー
+夢叶えることができずとも、[r]目も[#眩:くら]むような財宝があれば[line 3]
+[k]
+
+[charaFace A 1]
+
+＠バーソロミュー
+海賊なんてのは、大抵何とかなるものなのさ！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
