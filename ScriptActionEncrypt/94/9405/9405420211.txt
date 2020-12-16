@@ -1,0 +1,754 @@
+
+
+
+＄94-05-42-02-1-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet B 1048000 1 サンタカルナ]
+[charaSet D 3046001 1 ヴリトラ]
+[imageSet E back10000_fs 1]
+[charaScale E 1.5]
+
+[imageSet F cut237_cutin_frame 1 1]
+[charaScale F 1.32]
+
+[charaSet G 1098205800 1 カットイン用サンタカルナ（フード）]
+
+[charaSet S 5009040 1 エフェクト用ダミー]
+[charaSet T 5009040 1 エフェクト用ダミー]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[charaSet A 1098124510 1 ダ・ヴィンチ]
+[charaSet C 8001400 1 マシュ]
+[branch lblConf]
+
+
+[label lblNotClear]
+[charaSet A 98111500 1 ダ・ヴィンチ]
+[charaSet C 8001000 1 マシュ]
+[label lblConf]
+
+
+[charaPutFSR S 1200,2000]
+[charaEffect S bit_talk_10_LowLevel]
+
+
+[bgm BGM_EVENT_80 0.1]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad33]
+[wt 0.1]
+[effect bit_talk_kengekiall04_fs]
+[wt 1.0]
+
+[se ad32]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+
+[effectDestroy bit_talk_kengekiall04_fs]
+
+[scene 105204]
+
+[charaScale C 1.2]
+
+[se ad671]
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0 0,15]
+[charaMove C 0,0 0.3]
+[charaMoveScale C 1.0 0.3]
+[charaShake C 0.03 4 4 0.6]
+[seStop ad671 0.6]
+[wt 1.0]
+
+＠マシュ
+くうっ！
+[k]
+
+？1：（神と戦う邪竜だけあって）
+？2：（強い……！）
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+＠ヴリトラ
+おお、苦しんどる、苦しんどる……[wt 0.9][r]そそるのぉ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+…………。サンタの拳は、[r]オレの拳は、まだ軽いというのか……！
+[k]
+
+[charaFace B 0]
+＠サンタカルナ
+…………？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ade410]
+[wt 0.2]
+[charaPut T 1]
+[charaEffect T bit_talk_20b]
+[wt 2.4]
+
+[charaPutFSR T 1200,2000]
+[charaEffectDestroy T bit_talk_20b]
+[wt 0.1]
+
+
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+カルナ！　キミの目の前にある[r]その[#歪:ゆが]みは、おそらくこの閉塞特異点の核だ！
+[k]
+
+＠ダ・ヴィンチ
+砕けばきっと解除される。
+[k]
+
+＠ダ・ヴィンチ
+ここはヴリトラが作り出したフィールドだ、[r]そうすれば相手を弱体化できるかもしれない！
+[k]
+
+[branch lblConf2]
+
+[label lblNotClear2]
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+カルナ！　キミの目の前にある[r]その[#歪:ゆが]みは、おそらくこの閉塞特異点の核だ！
+[k]
+
+＠ダ・ヴィンチ
+砕けばきっと解除される。
+[k]
+
+＠ダ・ヴィンチ
+ここはヴリトラが作り出したフィールドだ、[r]そうすれば相手を弱体化できるかもしれない！
+[k]
+
+[label lblConf2]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR S 1200,2000]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+わかった。やってみよう。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.3 1.0]
+[bgmStop BGM_EVENT_80 0.8]
+[wt 0.05]
+[se ba13]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+
+[charaTalk off]
+[charaDepth G 4]
+[charaDepth F 5]
+[charaDepth T 6]
+
+[scene 106900]
+
+[charaFadein F 0 -200,-200]
+[charaFace G 0]
+[charaFadein G 0 -200,0]
+[wt 0.15]
+
+[charaMove F 0,-200 0.15]
+[charaMove G 0,0 0.4]
+
+[wipein rectangleStripRightToLeft 0.3 1.0]
+[wait wipe]
+[wt 0.1]
+
+[se ad835]
+[seVolume ad835 0 0.4]
+[se bac30]
+[seVolume bac30 0 0.4]
+[charaPut T 187,215]
+[charaEffect T bit_talk_light_gathers]
+[wt 1.7]
+[charaCrossFade G 1098205810 0 0.4]
+[wait charaCrossFade G]
+[wt 0.8]
+
+[seStop ad835 0.4]
+[seStop bac30 0.4]
+[charaEffectStop T bit_talk_light_gathers]
+[wt 0.3]
+
+[charaFace G 1]
+[wt 0.3]
+
+[se ad7]
+[wipeout circleIn 0.1 1.0]
+[wait wipe]
+
+[charaPutFSR T 1200,2000]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+
+[scene 10000]
+[wt 0.1]
+
+[wipein circleIn 0.1 1.0]
+[wait wipe]
+
+[fowardEffect bit_talk_flash_g]
+[wt 0.1]
+[se ad80]
+[wt 0.3]
+[seStop ad80 0.2]
+[wt 0.4]
+
+
+[se ad149]
+[se ad216]
+[seVolume ad216 0 0]
+[se ad733]
+[seVolume ad733 0 0]
+[fadeout white 0.3]
+[seVolume ad216 0.3 1.0]
+[seVolume ad733 0.3 1.0]
+[wait fade]
+
+[seStop ad733 1.5]
+
+[scene 105200]
+[wt 1.0]
+
+[wt 1.5]
+
+[fadein white 2.0]
+[wait fade]
+[wt 1.0]
+
+？1：息苦しさがなくなった……
+？！
+
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠マシュ
+閉塞特異点が……ただの特異点に戻った、[r]ということでしょうか……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+＠ヴリトラ
+ほう。拳で砕くか、我が[#堰界:いかい]の理を。
+[k]
+
+[charaFace D 7]
+＠ヴリトラ
+……ああ、[#止:や]めよ[#止:や]めよ、[r]これ以上その味を期待させるでない。
+[k]
+
+＠ヴリトラ
+ほーんに、困った奴らじゃのーう。
+[k]
+
+[charaFace D 4]
+＠ヴリトラ
+しかし……まぁ、今日はここまでじゃな。[r]熟れる前に喰いきるわけにもいかん。
+[k]
+
+[charaFace D 1]
+＠ヴリトラ
+わえを思い通りに動かしたくば、[r]最高の餌となって皿の上に載ることじゃな。
+[k]
+
+[charaFace D 6]
+＠ヴリトラ
+そのときこそは…………[r]き、ひ、ひ！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 1.0]
+[wt 0.1]
+
+[se ade282]
+[wt 0.1]
+[charaSpecialEffect D wipeTime 0,0 1.0]
+[wait charaSpecialEffect D]
+[wt 1.1]
+
+
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+ヴリトラの反応、完全に消失……だね。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR S 1200,2000]
+
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+[se ad658]
+[charaCrossFade C 8001410 4 0.2]
+[wait charaCrossFade C]
+[wt 0.7]
+
+＠マシュ
+すみません、逃がしてしまいました……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 33]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+仕方ないさ。いきなりあんな大物の竜種が[r]出てくるとは思いもしなかった。
+[k]
+
+＠ダ・ヴィンチ
+主神クラスのインドラと[r]対比して語られるレベルの竜だよ？
+[k]
+
+[charaFace A 24]
+＠ダ・ヴィンチ
+どうもサーヴァント化しているようだったけど[line 3]
+[k]
+
+＠ダ・ヴィンチ
+つまりは疑似サーヴァントの神霊のように[r]発揮できる力は本来のほんの一部分なんだろうけど、
+[k]
+
+＠ダ・ヴィンチ
+それでも竜種の中では間違いなく大物だ。[r]少ない人数でよく頑張ったものさ。
+[k]
+
+[branch lblConf3]
+
+[label lblNotClear3]
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+ヴリトラの反応、完全に消失……だね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR S 1200,2000]
+
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠マシュ
+すみません、逃がしてしまいました……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+仕方ないさ。いきなりあんな大物の竜種が[r]出てくるとは思いもしなかった。
+[k]
+
+＠ダ・ヴィンチ
+主神クラスのインドラと[r]対比して語られるレベルの竜だよ？
+[k]
+
+[charaFace A 0]
+＠ダ・ヴィンチ
+どうもサーヴァント化しているようだったけど[line 3]
+[k]
+
+＠ダ・ヴィンチ
+つまりは疑似サーヴァントの神霊のように[r]発揮できる力は本来のほんの一部分なんだろうけど、
+[k]
+
+＠ダ・ヴィンチ
+それでも竜種の中では間違いなく大物だ。[r]少ない人数でよく頑張ったものさ。
+[k]
+
+[label lblConf3]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR S 1200,2000]
+
+
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+それで自らを慰めることなどできん。
+[k]
+
+＠サンタカルナ
+クリスマスを阻むいかなる障害も[r]その身一つで切り抜けるのが真のサンタクロース。
+[k]
+
+＠サンタカルナ
+そうできなかったオレは、やはり実力不足の[r]不完全なサンタクロースだということだ。
+[k]
+
+[charaFace B 4]
+＠サンタカルナ
+……まだまだだ。精進せねば……。
+[k]
+
+？1：これからどうしよう
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 24]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+うん、いくつか分かったことがある。
+[k]
+
+＠ダ・ヴィンチ
+ヴリトラをどうにかするのが一番手っ取り早い[r]方法ではあるだろうけど、他の道筋もありそうだ。
+[k]
+
+[charaFace A 25]
+＠ダ・ヴィンチ
+キミたちがいま解消し、[r]そしていくつか残っている閉塞特異点[line 3]
+[k]
+
+＠ダ・ヴィンチ
+あれはプレゼント干渉における核のような[r]働きをしている。
+[k]
+
+＠ダ・ヴィンチ
+影響力を及ぼすための道筋、ゲート、パイプライン……[r]みたいなニュアンスだと思ってくれていい。
+[k]
+
+[charaFace A 26]
+＠ダ・ヴィンチ
+つまり、それらを一つずつ潰していけば[r]ヴリトラの干渉ルートを封じることができるだろう。
+[k]
+
+[charaFace A 14]
+＠ダ・ヴィンチ
+ちなみに、トラッキング対策がされたのか[r]ヴリトラ本人の反応は追えなくなった。
+[k]
+
+＠ダ・ヴィンチ
+多分、その特異点のどこかにはいると思うけど。
+[k]
+
+[branch lblConf4]
+
+[label lblNotClear4]
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+うん、いくつか分かったことがある。
+[k]
+
+＠ダ・ヴィンチ
+ヴリトラをどうにかするのが一番手っ取り早い[r]方法ではあるだろうけど、他の道筋もありそうだ。
+[k]
+
+＠ダ・ヴィンチ
+キミたちがいま解消し、[r]そしていくつか残っている閉塞特異点[line 3]
+[k]
+
+＠ダ・ヴィンチ
+あれはプレゼント干渉における核のような[r]働きをしている。
+[k]
+
+＠ダ・ヴィンチ
+影響力を及ぼすための道筋、ゲート、パイプライン……[r]みたいなニュアンスだと思ってくれていい。
+[k]
+
+[charaFace A 3]
+＠ダ・ヴィンチ
+つまり、それらを一つずつ潰していけば[r]ヴリトラの干渉ルートを封じることができるだろう。
+[k]
+
+[charaFace A 0]
+＠ダ・ヴィンチ
+ちなみに、トラッキング対策がされたのか[r]ヴリトラ本人の反応は追えなくなった。
+[k]
+
+＠ダ・ヴィンチ
+多分、その特異点のどこかにはいると思うけど。
+[k]
+
+[label lblConf4]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR S 1200,2000]
+
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠マシュ
+なるほど……では、閉塞特異点を一つずつ[r]解消していくしかなさそうですね。
+[k]
+
+＠マシュ
+途中でまたヴリトラと出会うことも[r]あるかもしれませんが[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+そのときは倒す。[r]それだけだ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+[wt 0.4]
+
+[charaMove C 0,-7 0.3]
+[wt 0.3]
+[charaMove C 0,0 0.3]
+[wt 0.8]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk depthOff]
+[charaDepth A 6]
+[charaDepth E 4]
+
+[charaPut E 0,-200]
+
+[branchQuestNotClear lblNotClear5 3000303]
+
+
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 24]
+[charaFadein A 0.1 1]
+[charaFadeTime E 0.1 0.6]
+＠ダ・ヴィンチ
+（基本方針はそれでいいにしても、[r]　相手は邪竜ヴリトラ……）
+[k]
+
+[charaFace A 14]
+＠ダ・ヴィンチ
+（閉塞特異点のレイシフト制限が問題になるなあ）
+[k]
+
+＠ダ・ヴィンチ
+（勝算を高めるには、思い切った[r]　メンバー選考が必要になるかもしれない）
+[k]
+
+[charaFace A 27]
+＠ダ・ヴィンチ
+（[#うち:カルデア]にはインドラの関係者に加えて、[r]　名だたる[#竜殺し]たちもたくさんいる……）
+[k]
+
+＠ダ・ヴィンチ
+（その利点を活かした作戦を少し考えてみようかな！）
+[k]
+
+[branch lblConf5]
+
+[label lblNotClear5]
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-90]
+[charaFadeTime E 0.1 0.6]
+＠ダ・ヴィンチ
+（基本方針はそれでいいにしても、[r]　相手は邪竜ヴリトラ……）
+[k]
+
+＠ダ・ヴィンチ
+（閉塞特異点のレイシフト制限が問題になるなあ）
+[k]
+
+＠ダ・ヴィンチ
+（勝算を高めるには、思い切った[r]　メンバー選考が必要になるかもしれない）
+[k]
+
+[charaFace A 0]
+＠ダ・ヴィンチ
+（[#うち:カルデア]にはインドラの関係者に加えて、[r]　名だたる[#竜殺し]たちもたくさんいる……）
+[k]
+
+＠ダ・ヴィンチ
+（その利点を活かした作戦を少し考えてみようかな！）
+[k]
+
+[label lblConf5]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout E 0.1]
+[charaPutFSR S 1200,2000]
+[charaEffectStop S bit_talk_10_LowLevel]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+＠ヴリトラ
+うーん、楽しみじゃのう！[r]楽しみじゃのう！
+[k]
+
+[charaFace D 6]
+＠ヴリトラ
+水ではなく『クリスマスプレゼント』なる概念を[r]奪ってみたのは[#戯:たわむ]れであったが……
+[k]
+
+＠ヴリトラ
+あのように美味そうな者たちがおるとはの。[r]甲斐があったというものよ。
+[k]
+
+[charaFace D 4]
+＠ヴリトラ
+……そう言えばあの男以外にも、インドラそのものと[r]似通った気配を薄く感じた気がするが……
+[k]
+
+[charaFace D 1]
+＠ヴリトラ
+ま、明日からのお楽しみということかの。[r]ほんにワクワクじゃ。
+[k]
+
+[charaFace D 7]
+＠ヴリトラ
+ああ、苦しんでおくれ。もっともっと、[r]無残に惨めに醜く足掻いて、苦しんでおくれ。
+[k]
+
+＠ヴリトラ
+そうすれば、最後には……き、ひ、ひ！
+[k]
+
+[charaFace D 8]
+＠ヴリトラ
+それでは、明日からの下ごしらえのことは[r]また明日考えるとして[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaFace D 14]
+＠ヴリトラ
+よし。[r]水浴びでもしてくるかのーう？
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_70 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,1052 @@
+
+
+
+＄94-05-42-02-1-0
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet B 1048000 1 サンタカルナ]
+[charaSet C 1098128000 1 マシュ]
+[charaSet D 3046001 1 ヴリトラ]
+
+[imageSet E back10000_fs 1]
+[charaScale E 1.5]
+
+[charaSet T 5009040 1 エフェクト用ダミー]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[charaSet A 1098124510 1 ダ・ヴィンチ]
+
+
+[scene 105400]
+
+[se ad555]
+[seVolume ad555 0 0]
+[seVolume ad555 1.5 1.0]
+[fadein black 1.5]
+[wait fade]
+[wt 0.5]
+
+[se ad580]
+[wt 3.5]
+
+[seVolume ad555 1.0 0.3]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+[seStop ad580 0.1]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠サンタカルナ
+サンタと言えば冬。冬と言えば雪。
+[k]
+
+＠サンタカルナ
+つまりサンタのトレーニングとして[r]これほどふさわしいものはないだろう。
+[k]
+
+＠サンタカルナ
+雪の重みで体幹と足腰が鍛えられる。[r]鍛え……られる。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+＠マシュ
+大丈夫ですか、マスター？[r]ご無理はなさらずに！
+[k]
+
+？1：正直しんどい。……正直しんどい。
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+……む。[r]トレーナーには酷なロードワークだったか。
+[k]
+
+＠サンタカルナ
+徒歩はやめて自転車は……より困難か。
+[k]
+
+＠サンタカルナ
+では、雪山でのロードワークにふさわしい[r]トレーナーのスタイルとは何だ……？
+[k]
+
+＠サンタカルナ
+やはりソリか。オレには必要ないと考え、[r]発注しなかった事が悔やまれる……。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？2：カルナさんが２回言ってる……
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+？！
+
+[charaPut T 1]
+[charaEffect T bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+ごめんねー、できるだけターゲットに近い[r]位置座標を狙いはしたけど、
+[k]
+
+＠ダ・ヴィンチ
+さすがにピンポイントで目の前に、とはいかなくてね。[r]辛い自然環境の中を進ませることになって申し訳ない。
+[k]
+
+[charaFace A 14]
+＠ダ・ヴィンチ
+魔術的に事前準備していたから[r]高地順応などは考えなくていいにしても、
+[k]
+
+＠ダ・ヴィンチ
+本来ならそこはプロフェッショナルな[r]登山家でもなければ立ち入らない場所だ。
+[k]
+
+[charaFace A 25]
+＠ダ・ヴィンチ
+[#ヒマラヤ山脈][line 3][r]地球上で最も険しい山々の連なり。
+[k]
+
+＠ダ・ヴィンチ
+できる限りのフォローはするから、[r]けっして焦らず、慎重にね。
+[k]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠マシュ
+場所を聞いたときから心の準備はできていました。[r]問題はありません。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+オレへの助けは必要ない。リソースも注意力も、[r]全てをマスターに回すがいい。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠マシュ
+……すみません、全てとはいきませんが、[r]優先度はお言葉に甘えさせていただきます……！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_77 1.0 0.4]
+[seVolume ad555 1.0 0.1]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 105204]
+[wt 1.0]
+
+[bgm BGM_EVENT_77 1.0 1.0]
+[seVolume ad555 1.0 0.3]
+[fadein black 1.0]
+[wait fade]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 25]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+目的地はそのあたりだよ。[r]そろそろ警戒を厳にしてくれ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+[bgmStop BGM_EVENT_77 1.0]
+[seStop ad555 1.0]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+[line 6]。
+[k]
+
+＠サンタカルナ
+構えろ、マスター、マシュ。[r]何かがいる。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠マシュ
+！[messageShake 0.02 3 3 0.2]
+[k]
+
+？1：あの人影は……？
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.7 1]
+[wt 1.1]
+
+＠D：？？？
+ほう……？　[#わえ]の何かを辿られたか。[r]ま、そういう事もあろうの。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_71 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠マシュ
+サーヴァント……！？[r]マスター、下がってください！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 1.4]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠D：？？？
+はて。はてはて。
+[k]
+
+＠D：？？？
+そこの何か混じった[#女子:おなご]や[r]人間の[&小僧:小娘]のことはようは知らんが、
+[k]
+
+[charaFace D 0]
+＠D：？？？
+男、貴様からは匂いがするの。[r]薄くではあるが、それは[line 3]
+[k]
+
+[charaFace D 1]
+＠D：？？？
+[#インドラの匂い]じゃ。[r][#彼奴:きゃつ]めの武具でも持っておるか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+今のオレはインドラの槍を持たん。[r]オレはランサーではなくサンタだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠D：？？？
+き、ひ、ひ！　そうか、貴様がサンタとやらか！[r]わえの所業を[#咎:とが]めに来たか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+その通りだ。[#何故:なにゆえ]、オレのプレゼント配りの邪魔をする？[r]答えるがいい[line 3][#邪竜よ]。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 6]
+[charaDepth E 4]
+
+[charaPut E 0,-200]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+[charaFadeTime E 0.1 0.6]
+＠マシュ
+（邪竜……！？[r]　確かに、あの女性には尻尾のようなものが……！）
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 22]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+インドラと関係がある邪竜……？[r]カルナ、もしかしてだけど、あれは[line 3]！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+[charaEffectStop T bit_talk_10_LowLevel]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+ああ。[r][#あれはおそらくヴリトラだ]。
+[k]
+
+＠サンタカルナ
+インドラ神と幾度も戦いを繰り広げたという、[r][#干魃:かんばつ]を引き起こす蛇の魔神、あるいは邪竜。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠ヴリトラ
+いかにも。[r]わえはヴリトラである。
+[k]
+
+[charaFace D 0]
+＠ヴリトラ
+なんの因果でこのような姿に[r]なっておるのかはわからぬが……
+[k]
+
+＠ヴリトラ
+ま、[#蛇:わえ]は[#蛇:わえ]でしかない。[r]一時の姿なぞどうでもよかろう。
+[k]
+
+[charaFace D 1]
+＠ヴリトラ
+して、サンタなる役目の者よ。[r]貴様の名を聞いておこうか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+スーリヤの子、カルナ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠ヴリトラ
+ほほう、それはそれは。
+[k]
+
+？1：答えてほしい
+？2：どうして黒いプレゼントを出させてる[&んだ:の]？
+？！
+
+[charaFace D 8]
+＠ヴリトラ
+ふむ？　お前は匂いからして人間であろうが……[r]なかなか面白い目をしておる。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 0,0]
+[wt 1.0]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠ヴリトラ
+人であるようで人でないような、[r]そちらの[#女子:おなご]もな。
+[k]
+
+[charaFace D 6]
+＠ヴリトラ
+ああ、なかなかじゃ。うん。[r]なかなか、よいぞ……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+答えろ、と言っている。[r]なぜだ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠ヴリトラ
+[#急:せ]くのう。[r]言わずとも考えれば分かることであろうに。
+[k]
+
+[charaFace D 0]
+＠ヴリトラ
+わえが箱を閉じる理由か？[r]それは[line 3]無論、餌よ。
+[k]
+
+[charaFace D 7]
+＠ヴリトラ
+[#わえが丸呑みにする餌を皿に載せるための餌]よ。[r]ああ、なんとも美味しそうじゃのう？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+オレたちを[#誘:おび]き出すため、というわけか。
+[k]
+
+＠サンタカルナ
+[line 3]くだらん。無意味だ。
+[k]
+
+＠サンタカルナ
+そのような回りくどいことをせずとも、[r]サンタは誰の挑戦でも受ける。
+[k]
+
+＠サンタカルナ
+オレを喰らいたくば、かかってくるがいい。
+[k]
+
+[bgmStop BGM_EVENT_71 1.0]
+
+？1：[line 3]ふたりとも、戦闘準備！
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+
+[charaSet C 8001410 1 マシュ]
+
+[cueSe Battle bac375]
+[wt 0.6]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.3 1]
+[wt 0.7]
+
+[se ad658]
+[charaCrossFade C 8001400 7 0.2]
+[wait charaCrossFade C]
+[wt 0.6]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaFace C 2]
+＠マシュ
+はい！　敵個体、ヴリトラをブラックプレゼントの[r]原因と認定、交戦します！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branch lblConf]
+
+
+[label lblNotClear]
+[charaSet A 98111500 1 ダ・ヴィンチ]
+
+
+[scene 105400]
+
+[se ad555]
+[seVolume ad555 0 0]
+[seVolume ad555 1.5 1.0]
+[fadein black 1.5]
+[wait fade]
+[wt 0.5]
+
+[se ad580]
+[wt 3.5]
+
+[seVolume ad555 1.0 0.3]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+[seStop ad580 0.1]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠サンタカルナ
+サンタと言えば冬。冬と言えば雪。
+[k]
+
+＠サンタカルナ
+つまりサンタのトレーニングとして[r]これほどふさわしいものはないだろう。
+[k]
+
+＠サンタカルナ
+雪の重みで体幹と足腰が鍛えられる。[r]鍛え……られる。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+＠マシュ
+大丈夫ですか、マスター？[r]ご無理はなさらずに！
+[k]
+
+？1：正直しんどい。……正直しんどい。
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+……む。[r]トレーナーには酷なロードワークだったか。
+[k]
+
+＠サンタカルナ
+徒歩はやめて自転車は……より困難か。
+[k]
+
+＠サンタカルナ
+では、雪山でのロードワークにふさわしい[r]トレーナーのスタイルとは何だ……？
+[k]
+
+＠サンタカルナ
+やはりソリか。オレには必要ないと考え、[r]発注しなかった事が悔やまれる……。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+？2：カルナさんが２回言ってる……
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？！
+
+[charaPut T 1]
+[charaEffect T bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+すまない、できるだけターゲットに近い[r]位置座標を狙いはしたけど、
+[k]
+
+＠ダ・ヴィンチ
+さすがにピンポイントで目の前に、とはいかなくてね。[r]辛い自然環境の中を進ませることになって申し訳ない。
+[k]
+
+＠ダ・ヴィンチ
+魔術的に事前準備していたから[r]高地順応などは考えなくていいにしても、
+[k]
+
+＠ダ・ヴィンチ
+本来ならそこはプロフェッショナルな[r]登山家でもなければ立ち入らない場所だ。
+[k]
+
+[charaFace A 5]
+＠ダ・ヴィンチ
+[#ヒマラヤ山脈][line 3][r]地球上で最も険しい山々の連なり。
+[k]
+
+＠ダ・ヴィンチ
+できる限りのフォローはするから、[r]けっして焦らず、慎重にね。
+[k]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠マシュ
+場所を聞いたときから心の準備はできていました。[r]問題はありません。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+オレへの助けは必要ない。リソースも注意力も、[r]全てをマスターに回すがいい。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠マシュ
+……すみません、全てとはいきませんが、[r]優先度はお言葉に甘えさせていただきます……！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_77 1.0 0.4]
+[seVolume ad555 1.0 0.1]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 105204]
+[wt 1.0]
+
+[bgm BGM_EVENT_77 1.0 1.0]
+[seVolume ad555 1.0 0.3]
+[fadein black 1.0]
+[wait fade]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+目的地はそのあたりだよ。[r]そろそろ警戒を厳にしてくれ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+[bgmStop BGM_EVENT_77 1.0]
+[seStop ad555 1.0]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+[line 6]。
+[k]
+
+＠サンタカルナ
+構えろ、マスター、マシュ。[r]何かがいる。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠マシュ
+！[messageShake 0.02 3 3 0.2]
+[k]
+
+？1：あの人影は……？
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.7 1]
+[wt 1.1]
+
+＠D：？？？
+ほう……？　[#わえ]の何かを辿られたか。[r]ま、そういう事もあろうの。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_71 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠マシュ
+サーヴァント……！？[r]マスター、下がってください！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 1.4]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠D：？？？
+はて。はてはて。
+[k]
+
+＠D：？？？
+そこの何か混じった[#女子:おなご]や[r]人間の[&小僧:小娘]のことはようは知らんが、
+[k]
+
+[charaFace D 0]
+＠D：？？？
+男、貴様からは匂いがするの。[r]薄くではあるが、それは[line 3]
+[k]
+
+[charaFace D 1]
+＠D：？？？
+[#インドラの匂い]じゃ。[r][#彼奴:きゃつ]めの武具でも持っておるか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+今のオレはインドラの槍を持たん。[r]オレはランサーではなくサンタだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠D：？？？
+き、ひ、ひ！　そうか、貴様がサンタとやらか！[r]わえの所業を[#咎:とが]めに来たか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+その通りだ。[#何故:なにゆえ]、オレのプレゼント配りの邪魔をする？[r]答えるがいい[line 3][#邪竜よ]。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 6]
+[charaDepth E 4]
+
+[charaPut E 0,-200]
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+[charaFadeTime E 0.1 0.6]
+＠マシュ
+（邪竜……！？[r]　確かに、あの女性には尻尾のようなものが……！）
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+インドラと関係がある邪竜……？[r]カルナ、もしかしてだけど、あれは[line 3]！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+[charaEffectStop T bit_talk_10_LowLevel]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+ああ。[r][#あれはおそらくヴリトラだ]。
+[k]
+
+＠サンタカルナ
+インドラ神と幾度も戦いを繰り広げたという、[r][#干魃:かんばつ]を引き起こす蛇の魔神、あるいは邪竜。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠ヴリトラ
+いかにも。[r]わえはヴリトラである。
+[k]
+
+[charaFace D 0]
+＠ヴリトラ
+なんの因果でこのような姿に[r]なっておるのかはわからぬが……
+[k]
+
+＠ヴリトラ
+ま、[#蛇:わえ]は[#蛇:わえ]でしかない。[r]一時の姿なぞどうでもよかろう。
+[k]
+
+[charaFace D 1]
+＠ヴリトラ
+して、サンタなる役目の者よ。[r]貴様の名を聞いておこうか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+スーリヤの子、カルナ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠ヴリトラ
+ほほう、それはそれは。
+[k]
+
+？1：答えてほしい
+？2：どうして黒いプレゼントを出させてる[&んだ:の]？
+？！
+
+[charaFace D 8]
+＠ヴリトラ
+ふむ？　お前は匂いからして人間であろうが……[r]なかなか面白い目をしておる。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 0,0]
+[wt 1.0]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠ヴリトラ
+人であるようで人でないような、[r]そちらの[#女子:おなご]もな。
+[k]
+
+[charaFace D 6]
+＠ヴリトラ
+ああ、なかなかじゃ。うん。[r]なかなか、よいぞ……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+答えろ、と言っている。[r]なぜだ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠ヴリトラ
+[#急:せ]くのう。[r]言わずとも考えれば分かることであろうに。
+[k]
+
+[charaFace D 0]
+＠ヴリトラ
+わえが箱を閉じる理由か？[r]それは[line 3]無論、餌よ。
+[k]
+
+[charaFace D 7]
+＠ヴリトラ
+[#わえが丸呑みにする餌を皿に載せるための餌]よ。[r]ああ、なんとも美味しそうじゃのう？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+オレたちを[#誘:おび]き出すため、というわけか。
+[k]
+
+＠サンタカルナ
+[line 3]くだらん。無意味だ。
+[k]
+
+＠サンタカルナ
+そのような回りくどいことをせずとも、[r]サンタは誰の挑戦でも受ける。
+[k]
+
+＠サンタカルナ
+オレを喰らいたくば、かかってくるがいい。
+[k]
+
+[bgmStop BGM_EVENT_71 1.0]
+
+？1：[line 3]ふたりとも、戦闘準備！
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[charaSet C 8001000 1 マシュ]
+
+[cueSe Battle bac375]
+[wt 0.6]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.3 1]
+[wt 1.0]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaFace C 2]
+＠マシュ
+はい！　敵個体、ヴリトラをブラックプレゼントの[r]原因と認定、交戦します！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[label lblConf]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ヴリトラ
+まだ下ごしらえの時期ゆえ、[r]ここで喰らうつもりはなかったのじゃが。
+[k]
+
+[charaFace D 7]
+＠ヴリトラ
+……味見くらいはしてもよいかのう？
+[k]
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]
