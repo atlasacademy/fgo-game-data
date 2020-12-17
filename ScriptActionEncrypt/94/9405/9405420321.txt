@@ -1,0 +1,391 @@
+
+
+
+＄94-05-42-03-2-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+
+
+[charaSet B 3046001 1 ヴリトラ]
+[charaSet C 4006001 1 ゲオルギウス]
+[charaSet D 2015001 1 アルジュナ]
+[charaSet E 1048000 1 サンタカルナ]
+[charaSet F 1033002 1 シグルド]
+[charaSet G 99502600 1 マシュ]
+[charaSet H 6029002 1 望月千代女]
+
+[charaSet S 5009040 1 エフェクト用ダミー]
+[charaSet T 5009040 1 エフェクト用ダミー]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[charaSet A 1098124510 1 ダ・ヴィンチ]
+[branch lblConf]
+
+[label lblNotClear]
+[charaSet A 98111500 1 ダ・ヴィンチ]
+[label lblConf]
+
+
+[charaPutFSR S 1200,2000]
+[charaEffect S bit_talk_10_LowLevel]
+
+
+[scene 27001]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadeTime H 0.4 0.6]
+[wt 0.8]
+
+＠望月千代女
+うーん。正直、寒いところは苦手でござった。[r]眠くなるでござる。こたつこたつ……。
+[k]
+
+[messageOff]
+[se ad596]
+[wt 0.1]
+[charaSpecialEffect H erasure 0,0 1.5]
+[wait charaSpecialEffect H]
+[wt 0.9]
+
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut S 1]
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+＠マシュ
+たいへん申し訳ない気持ちでいっぱいですが…………
+[k]
+
+？1：帰ったら千代女とぬくぬく遊んであげよう……
+？！
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPutFSR S 1200,2000]
+
+[se ade410]
+[wt 0.2]
+[charaPut T 1]
+[charaEffect T bit_talk_20b]
+[wt 2.4]
+
+[charaPutFSR T 1200,2000]
+[charaEffectDestroy T bit_talk_20b]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠サンタカルナ
+これが核だな。では処理する。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.2]
+
+
+[se ad80]
+[wt 0.3]
+[seStop ad80 0.2]
+[wt 0.6]
+
+[se ad149]
+[se ad216]
+[seVolume ad216 0 0]
+[se ad733]
+[seVolume ad733 0 0]
+[fadeout white 0.3]
+[seVolume ad216 0.3 1.0]
+[seVolume ad733 0.3 1.0]
+[wait fade]
+
+[seStop ad733 1.5]
+[wt 1.5]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.5]
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+よし、お疲れ様！[r]核を破壊したことで閉塞特異点が解消されるよ。
+[k]
+
+[branch lblConf2]
+
+[label lblNotClear2]
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+よし、お疲れ様！[r]核を破壊したことで閉塞特異点が解消されるよ。
+[k]
+
+[label lblConf2]
+
+
+
+
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_77 1.0 0.1]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaPutFSR S 1200,2000]
+
+[scene 10000]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[criMovie talk_mov082]
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 106200]
+[wt 2.0]
+
+[bgm BGM_EVENT_77 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠シグルド
+任務完了である。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠アルジュナ
+氷が溶けて、元通りの光景に戻ったようですね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠サンタカルナ
+元通り、か。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠アルジュナ
+まさかとは思うが……[r]クリスマスらしくなくなって、不満なのか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠サンタカルナ
+いや。
+[k]
+
+＠サンタカルナ
+ロードワークの負荷が薄れたな、とは思うが、[r]氷がなくなってもまだまだ利用できる。
+[k]
+
+＠サンタカルナ
+あの土手など足腰を鍛えるのに実にいい感じだ。[r]思い出すな、ドローナ師の地獄の走り込みを。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠アルジュナ
+……ノーコメントだ。
+[k]
+
+？1：やっぱり桜、綺麗だね
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠シグルド
+そう言えばマスターの故郷では[r]ハナミなる風習があるのだったな。
+[k]
+
+[charaFace F 1]
+＠シグルド
+いつかブリュンヒルデと共に参加したいものだ。[r]当方が桜と彼女、どちらをより愛でるのかは明白だが。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ゲオルギウス
+おお、これは。[r]この光景は……（うずうず）
+[k]
+
+？1：一枚くらいアリなのでは？
+？2：特異点解消の記念ということで
+？！
+
+[charaFace C 1]
+＠ゲオルギウス
+そう、ですね。記録としても有用でしょう。[r]では、本当に一枚だけ……。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.4]
+
+[se ad41]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 1.0]
+
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ゲオルギウス
+……うん。いい[#画:え]が撮れました。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk G]
+[charaFace G 12]
+[charaFadein G 0.1 1]
+＠マシュ
+残念ながら、ヴリトラの反応は消失しています。[r]どこかへ行ってしまったみたいですね。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+
+[charaTalk A]
+[charaFace A 32]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+仕方ないさ。まぁ、これを繰り返していけば[r]いつかは追い詰められるだろう。
+[k]
+
+[charaFace A 0]
+＠ダ・ヴィンチ
+とにかく、お疲れ様！[r]今日のミッションは終わりだ。
+[k]
+
+＠ダ・ヴィンチ
+ひとまず帰って身体を休めておくれ！
+[k]
+
+[branch lblConf3]
+
+[label lblNotClear3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+仕方ないさ。まぁ、これを繰り返していけば[r]いつかは追い詰められるだろう。
+[k]
+
+[charaFace A 1]
+＠ダ・ヴィンチ
+とにかく、お疲れ様！[r]今日のミッションは終わりだ。
+[k]
+
+＠ダ・ヴィンチ
+ひとまず帰って身体を休めておくれ！
+[k]
+
+[label lblConf3]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaPutFSR S 1200,2000]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠ヴリトラ
+いやはや、面白いことになってきおった。[r]まさかインドラの血縁までおるとは。
+[k]
+
+＠ヴリトラ
+き、ひ、ひ。これはまだまだ、[r]予想以上に楽しめそうじゃのう……？
+[k]
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
