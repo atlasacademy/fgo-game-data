@@ -1,0 +1,702 @@
+
+
+
+＄94-05-42-04-1-0
+
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet B 1048000 1 サンタカルナ]
+[charaSet C 4006001 1 ゲオルギウス]
+[charaSet D 2015001 1 アルジュナ]
+[charaSet E 4019001 1 マルタ]
+[charaSet F 99502600 1 マシュ]
+
+
+[charaSet T 5009040 1 エフェクト用ダミー]
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[charaSet A 1098124510 1 ダ・ヴィンチ]
+[branch lblConf]
+
+[label lblNotClear]
+[charaSet A 98111500 1 ダ・ヴィンチ]
+[label lblConf]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 10000]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad12]
+[fowardEffect bit_talk_07_fs]
+[wt 4.0]
+
+
+[fadeout white 1.0]
+[wait fade]
+
+[fowardEffectDestroy bit_talk_07_fs]
+
+[scene 63703]
+[wt 2.0]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+
+＠サンタカルナ
+次の特異点はここか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ゲオルギウス
+どうやら海岸線を進まねばならないようですね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠アルジュナ
+目指すべきポイントは僅かに沖合いです。[r]ずっと浜を進むというわけにもいかないでしょう。
+[k]
+
+＠アルジュナ
+凍り付いた海の上を進む覚悟も必要そうです。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+＠マルタ
+水辺の街は慣れているつもりだったけれど、[r]ここまで凍ってると嫌な感じですね。
+[k]
+
+＠マルタ
+水音一つしないのがとても不自然に感じます。
+[k]
+
+
+？1：今日はマルタさんが助っ人ですね
+
+
+？2：（水辺なのに水着じゃない……）
+
+
+[charaFace E 5]
+＠マルタ
+ちょっと何ですか、その目は。[r]私に文句でもあるってわけ？　[wt 1.0][charaFace E 0]……おほん。今のなし、と。
+[k]
+
+？！
+
+[charaFace E 1]
+＠マルタ
+事情は聞いています。[r]お任せを。
+[k]
+
+＠マルタ
+私としては、何であれ、[r]聖女に相応しい働きをするまでのことです。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ゲオルギウス
+頼りにしていますよ、マルタ殿。
+[k]
+
+＠ゲオルギウス
+我らは同じ聖人であり、神の導きのもとに[r]竜を退治した者同士[line 3]
+[k]
+
+[bgmStop BGM_EVENT_77 2.0]
+
+＠ゲオルギウス
+力を合わせれば、きっといかなる困難をも[r]乗り越えられるでしょう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+＠マルタ
+ええと、退治とか倒すとか、そういう言い方は[r]ちょっと聖女的に、ねえ？
+[k]
+
+＠マルタ
+えいやっと穏やかに[#諭:さと]した、[r]という表現にしておきましょう。
+[k]
+
+
+＠マルタ
+そうでしょタラスク？
+[k]
+
+＠タラスク
+[charaTalk T]
+GuRuuu……（は、はぁ。最初に目が合った瞬間に[r]『あ、死んだ』と思った記憶はありますがのう）
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaPut T 1]
+[charaEffect T bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 1]
+＠マシュ
+マルタさんとゲオルギウス先生……竜退治の逸話を[r]お持ちである二大聖人さんの共闘です。
+[k]
+
+＠マシュ
+バックアップのわたしも興奮してきました！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+団体の垣根を越えたドリームマッチ、[r]統一王者決定戦……というわけだな。夢がある。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠マルタ
+いえ、別に雌雄を決したりはしませんけど！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+フフ。どうあれ、マルタよ、おまえは非常に[r]楽しみなスパーリングパートナーだ。
+[k]
+
+＠サンタカルナ
+オレの聖人拳とおまえの聖人拳、どちらが[#迅:はや]く[#靱:つよ]いか……[r]心ゆくまで確かめてみたいものだ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠マルタ
+だ[messageShake 0.02 3 3 0.6]から今日の私はそういうのじゃないのっ！[r]聖女！　聖女ですからね！？
+[k]
+
+[charaFace E 3]
+＠マルタ
+いえ、興味がないと言えば嘘になるので[r]そのお話はマスターのいないところでというか。
+[k]
+
+[charaFace E 4]
+＠マルタ
+最近、杖持ってるほうが珍しいイメージが[r]蔓延していると聞いて。
+[k]
+
+＠マルタ
+それを払拭するのにこの機会は逃せないわけで……
+[k]
+
+[charaFace E 0]
+＠マルタ
+とにかく、しばらく私は主婦の守護聖人、[r]あの人の教えを笑顔で広めるマルタです。
+[k]
+
+＠マルタ
+そうだ、ちょっと前に来た双子の妹さん、[r]ポルクスでしたっけ？
+[k]
+
+＠マルタ
+彼女は拳の達人と聞きますよ。[r]私などより彼女に試合を申し込んでみては？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+ああ。既に何度か手合わせしようとはしたのだが、[r]そのたびに兄のほうが乱入してきてな。
+[k]
+
+＠サンタカルナ
+１ラウンドも[#保:も]ったためしがない。[r]毎回必ずノーコンテストになる。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠マルタ
+ああー……でしょうね……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠アルジュナ
+マルタ殿。その半人前のサンタさんが言うことは[r]あまり真に受けないほうがいいでしょう。
+[k]
+
+＠アルジュナ
+ともかく、[r]今は任務の遂行を考えるべきかと。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠マルタ
+そうですね。いつまでも呑気に[r]お喋りしている場合ではありませんでした。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+うん、それじゃあ出発してくれ。
+[k]
+
+＠ダ・ヴィンチ
+ちなみに調査したところ、[r]その氷結した海面の強度はかなりのものだ。
+[k]
+
+＠ダ・ヴィンチ
+いきなり割れるということはないだろうけど、[r]何が起こるか分からない。気をつけて進んでおくれ。
+[k]
+
+[branch lblConf2]
+
+[label lblNotClear2]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+うん、それじゃあ出発してくれ。
+[k]
+
+＠ダ・ヴィンチ
+ちなみに調査したところ、[r]その氷結した海面の強度はかなりのものだ。
+[k]
+
+＠ダ・ヴィンチ
+いきなり割れるということはないだろうけど、[r]何が起こるか分からない。気をつけて進んでおくれ。
+[k]
+
+[label lblConf2]
+
+
+？1：了解！
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaPutFSR T 1200,2000]
+[charaEffectStop T bit_talk_10_LowLevel]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠マルタ
+ところで、ヴリトラって[r]どういうタイプの竜なのかしら？　デカいの？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ゲオルギウス
+今のところは尻尾の生えた人間体しか見ていませんね。[r]はたして竜体になれるのかどうか。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+やはり大きさは大事か？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠マルタ
+そりゃもう。[#重さ:ウェイト]は[#力:パワー]の源ですから。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ゲオルギウス
+しかし、どれだけ大きな竜を[r]相手にするときでも臆する必要はありません。
+[k]
+
+＠ゲオルギウス
+たとえば翼を持ち飛行する竜であっても、[r]肉体を支える四肢というのはやはり大事です。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠マルタ
+そうそう。だからまずは[#下:ロー]を攻めて[r]機動力を奪うってのは理に適ってるワケで[line 3]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+下半身は殴れんのでボディだな。[r]竜にもボディブローは効くだろうか……
+[k]
+
+？1：（竜殺しトークが弾んでいる……）
+？2：（マルタさん……）
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠アルジュナ
+………………。
+[k]
+
+？1：アルジュナも話に交ざったら？
+？2：警戒ありがとう。ちょっと休憩したら？
+？！
+
+＠アルジュナ
+いえ。何が起こるか分かりませんので。[r]気は抜けません。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+オレたちも気を抜いているわけではない。[r]警戒はしている。
+[k]
+
+＠サンタカルナ
+それと同時に、戦いについての知識を[r]深めるのも重要なことだ。
+[k]
+
+＠サンタカルナ
+座学も疎かにはするな、というのが[r]師の教えだっただろう。
+[k]
+
+＠サンタカルナ
+共に立派な[#戦士:サンタ]になれるよう[r]意見を交わそうではないか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠アルジュナ
+……。[r]……確かにその通りだな。
+[k]
+
+＠アルジュナ
+我が非を認め謝罪しよう、カルナ。[r]おまえの言う通り私も立派なサン[line 3]って、
+[k]
+
+[charaFace D 2]
+＠アルジュナ
+サンタさんになる気ないからな、私は！[r]何だその意外そうな顔！？
+[k]
+
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgm BGM_EVENT_2 1.0 0.4]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[wt 1.0]
+
+[bgm BGM_EVENT_2 1.0 1.0]
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠マルタ
+ちょっといいかしら？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠アルジュナ
+すみません、お見苦しいところを。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠マルタ
+いいのよ。気持ちは分かるわ……とは、[r][#軽々:けいけい]には言えないけれど。
+[k]
+
+＠マルタ
+何か話があるなら聞くわよ？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠アルジュナ
+特にはありません。[r]私はただ……混乱しているだけでしょう。
+[k]
+
+[charaFace D 0]
+＠アルジュナ
+マルタ殿はどうですか？[r]あのサンタカルナについて……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠マルタ
+別に混乱はしないけれど、そうね、[r]ちょっと普段と違うかな、とは思いますよ。
+[k]
+
+
+＠マルタ
+久しぶりに幼馴染に会って浮かれている感じ……[r]かしら？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠アルジュナ
+……きっと、だから、なのだと思います。
+[k]
+
+＠アルジュナ
+事実は事実です。私と奴は[line 3][r]立場は違えど共に学び、共に育った。
+[k]
+
+＠アルジュナ
+それは否定のしようもない。[r]……だが……。
+[k]
+
+[charaFace D 4]
+＠アルジュナ
+それ以外の部分が、私とあいつには、[r]いろいろありすぎたのでしょう。
+[k]
+
+＠アルジュナ
+だから、それを忘れてしまったかのように[r]振る舞う[#あれ]に、少々[#苛立:いらだ]っているのかもしれません。
+[k]
+
+＠アルジュナ
+自分でも[#些:いささ]か狭量だと思うのですが……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠マルタ
+うーん。それは違うかも。[r]忘れているんじゃなくて……
+[k]
+
+[charaFace E 1]
+＠マルタ
+私の見立て、ではありますが。
+[k]
+
+＠マルタ
+彼だって忘れていない。[r]何一つ、忘れても、なかったことにもしていない。
+[k]
+
+＠マルタ
+ただ、それはそれとして、[r][#素直に昔を懐かしんでいる]だけじゃないかしら？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠アルジュナ
+…………。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠マルタ
+[line 3]ふふ。ごめんなさい、気にしないで。[r]これはただのおせっかいです。
+[k]
+
+＠マルタ
+何しろ聖女ですので。[r]迷える若者の役に立たなくてはね？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠アルジュナ
+[line 3]私は[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.4]
+[se ad14]
+[shake 0.02 3 3 0]
+[wt 1.6]
+
+[charaFace D 5]
+＠アルジュナ
+！！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[seStop ad14 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

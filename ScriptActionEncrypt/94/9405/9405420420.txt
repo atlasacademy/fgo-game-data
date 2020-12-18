@@ -1,0 +1,1548 @@
+
+
+
+＄94-05-42-04-2-0
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet B 1048000 1 サンタカルナ]
+[charaSet C 4006001 1 ゲオルギウス]
+[charaSet D 2015001 1 アルジュナ]
+[charaSet E 4019001 1 マルタ]
+[charaSet F 99502600 1 マシュ]
+[charaSet G 3040000 1 ラムダ]
+[charaSet H 3046001 1 ヴリトラ]
+
+[sceneSet S 63703 1]
+[charaScale S 1.01]
+
+[charaSet T 5009040 1 エフェクト用ダミー]
+
+
+
+[imageSet U back10000_fs 1]
+[charaScale U 1.5]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[charaSet A 1098124510 1 ダ・ヴィンチ]
+[branch lblConf]
+
+[label lblNotClear]
+[charaSet A 98111500 1 ダ・ヴィンチ]
+[label lblConf]
+
+
+[charaPutFSR T 1200,2000]
+[charaEffect T bit_talk_10_LowLevel]
+
+[cameraMove 0 0,0 1.01]
+
+[scene 63703]
+
+[se ad14]
+[seVolume ad14 0 0]
+[shake 0.05 2 2 0]
+
+[seVolume ad14 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+[wt 1.5]
+
+[seVolume ad14 0.6 0.2]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠マルタ
+なに、この振動は！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠ゲオルギウス
+警戒を！[r]沖のほうから、何かが[line 3]来ます！
+[k]
+
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[shake 0.03 4 4 0]
+
+[charaScale S 1.2]
+[charaFadeinFSR S 0.1 -150,-300]
+
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+[seVolume ad14 0.4 1.0]
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+[se ade535]
+[seVolume ade535 0 0]
+[seVolume ade535 0.5 1.0]
+[effect bit_talk_ice_tidal_wave 0,50]
+[wt 1.4]
+[seVolume ade535 1.4 0.1]
+[wt 1.0]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[pictureFrame]
+[effectDestroy bit_talk_ice_tidal_wave]
+[shake 0.05 2 2 0]
+
+[charaFadeout S 0.1]
+
+[wt 0.5]
+
+[seVolume ad14 0.4 0.2]
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.5]
+
+？1：あれは！？
+？！
+
+[charaPut T 1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠マシュ
+接近する氷の大波のようなものが[r]観測されています！
+[k]
+
+＠マシュ
+幅は広く[line 3]速度も驚異的！[r]岸までの退避は間に合いません！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠マルタ
+だったら上しかないわね！[r]タラスク！
+[k]
+
+＠タラスク
+[charaTalk T]
+GuRuRRRR！[r]（乗ってくだせぇ、みなさん！）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+オレはタイミングを合わせて自分で跳ぶ。[r]気にするな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[seVolume ad14 1.5 0.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠マルタ
+そう？　じゃあ[line 3][r]来た来た来たわ！　今よ！
+[k]
+
+[messageOff]
+[charaMove E 0,15 0.4]
+
+
+[cueSe Battle bac30]
+[cueSeVolume bac30 0 0.8]
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[pictureFrame cut063_cinema]
+[cameraMove 0 0,-60 1.01]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+[wt 0.2]
+
+[effect bit_talk_ice_tidal_wave 0,-75]
+[seVolume ade535 0.6 1.0]
+[seVolume ad14 0.6 1.0]
+[wt 1.4]
+
+[seStop ade535 2.0]
+[seStop ad14 2.0]
+[wt 1.2]
+
+
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+[shakeStop]
+[effectDestroy bit_talk_ice_tidal_wave]
+[pictureFrame]
+[cameraMove 0 0,10 1.01]
+[wt 0.4]
+
+[effect bit_talk_impactlanding 0,-350]
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wt 0.2]
+[se ad608]
+[wait wipe]
+[seStop ad608 0.8]
+[cameraMove 0.3 0,0 1.01]
+[wt 1.6]
+
+
+？1：助かった……
+？！
+
+[charaPut T 1]
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+＠マシュ
+タラスクさんのおかげで[r]なんとか回避できましたね……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ゲオルギウス
+まずい、遠くにまた見えます。[r]第二波では！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+縄跳びトレーニングのようなものと思えば[r]どうということはない。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠マルタ
+もう一度よ、タラスク！　[#根性見せて:ガ ッ ツ オ ー ラ イ]！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_81 1.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[bgm BGM_EVENT_70 0.1]
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 34]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+うーん。定期的に来るよね、あの氷の波。[r]原因は何なのかな～？
+[k]
+
+[branch lblConf2]
+
+[label lblNotClear2]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+うーん。定期的に来るよね、あの氷の波。[r]原因は何なのかな？
+[k]
+
+[label lblConf2]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠マルタ
+もうずっと飛んでいきたいところだけど、[r]タラスク、あまり長持ちはしないのよね。
+[k]
+
+＠マルタ
+その都度回避していくしかないわ。
+[k]
+
+＠タラスク
+[charaTalk T]
+GuRrruu……（面目ない……）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠アルジュナ
+昨日の凍った桜と同じ、特有の自然現象でしょうか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ゲオルギウス
+ええ。感覚で言いますが[line 3][r]これは攻撃ではない気がしますね。
+[k]
+
+＠ゲオルギウス
+竜の悪意のようなものは感じません。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+ふむ？[r]キミがそう言うのならそうなんだろうけど、
+[k]
+
+＠ダ・ヴィンチ
+ただの自然現象でもないような周期性が[r]感じられるんだよなあ……。
+[k]
+
+[branch lblConf3]
+
+[label lblNotClear3]
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+ふむ？[r]キミがそう言うのならそうなんだろうけど、
+[k]
+
+＠ダ・ヴィンチ
+ただの自然現象でもないような周期性が[r]感じられるんだよなあ……。
+[k]
+
+[label lblConf3]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠マルタ
+あっ、また！　とにかく今は[r]氷の波を飛び越えながら進むしかありません！
+[k]
+
+＠マルタ
+ほらタラスク、キリキリと飛ぶ！
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgm BGM_EVENT_70 1.0 0.4]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[scene 10000]
+[wt 0.15]
+
+[wipein rollLeft 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[effect bit_talk_43h_fs]
+
+[pictureFrame cut063_cinema]
+[wt 1.0]
+
+[cueSe Battle bac30]
+[fadein black 0.5]
+[wait fade]
+[cueSeStop bac30 0.4]
+
+[wt 0.4]
+
+[bgm BGM_EVENT_70 0.8 1.0]
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+[effectDestroy bit_talk_43h_fs]
+
+[scene 63703]
+[pictureFrame]
+
+[cameraMove 0 0,10 1.01]
+[wt 0.2]
+
+[effect bit_talk_impactlanding 0,-350]
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wt 0.2]
+[se ad608]
+[wait wipe]
+[seStop ad608 0.8]
+[cameraMove 0.3 0,0 1.01]
+[wt 1.6]
+
+[charaTalk T]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠T：タラスク
+GRRu、Gruuu……[r]（す、少し休ませてください姐さん……）
+[k]
+
+[charaFace E 2]
+＠マルタ
+どうしてよ！？[r]そんなヤワな鍛え方はしていないでしょう！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[effectDestroy bit_talk_impactlanding]
+
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+いや[line 3]見えた！[r]発生源はあそこだ！
+[k]
+
+[branch lblConf4]
+
+[label lblNotClear4]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+いや[line 3]見えた！[r]発生源はあそこだ！
+[k]
+
+[label lblConf4]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaPutFSR T 1200,2000]
+
+[pictureFrame cut063_cinema]
+
+[charaScale S 1.01]
+[charaFadein S 0.1 0,-280]
+
+
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+
+[se ade526]
+[seVolume ade526 0 0.5]
+[wt 2.0]
+
+[seStop ade526 1.0]
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.7 0,-50]
+[wt 1.5]
+
+
+？1：あれは、ラムダ様……
+？2：あれは、ラムダリリス……
+？！
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+
+[pictureFrame]
+
+[charaFadeout S 0.1]
+
+[charaPut T 1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+[wt 0.3]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠マシュ
+そしてヴリトラです！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠マルタ
+あれが！？[r]……あんまりデカくないわね。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[pictureFrame cut063_cinema]
+
+[charaFadein S 0.1 0,-280]
+
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 0,-50]
+＠ヴリトラ
+おお、おお。よいぞ。氷の上で踊るなぞ[r]いかなるものかと思ったが、
+[k]
+
+[charaFace H 14]
+＠ヴリトラ
+くるくるっとしてぴゃーっとして、[r]なんとも[#絢爛:けんらん]な舞じゃの！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,-50]
+＠ラムダ
+これはただ氷の具合を確かめているだけ。[r]まだ本気にもなってないのに。
+[k]
+
+＠ラムダ
+ただのリハでそんなに興奮できるなんて[r]安上がりな観客にしてパトロンね。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ade526]
+[charaMove G -275,-50 1.0]
+[wt 0.2]
+[charaFadeout G 0.4]
+[wt 0.2]
+[seStop ade526 0.8]
+[wt 1.2]
+
+[se ade535]
+[seVolume ade535 0 0]
+[se ad14]
+[seVolume ad14 0 0]
+[seVolume ad14 0.4 1.0]
+[seVolume ade535 0.4 1.0]
+
+[effect bit_talk_ice_tidal_wave 0,50]
+[wt 1.4]
+
+[seVolume ade535 1.2 0.1]
+[seVolume ad14 1.2 0.2]
+[wt 0.8]
+
+[wipeout rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+
+[pictureFrame]
+[effectDestroy bit_talk_ice_tidal_wave]
+
+[charaFadeout S 0.1]
+[wt 0.4]
+
+[wipein rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠マルタ
+回避！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+
+[seVolume ade535 0.5 1.0]
+[seVolume ad14 0.5 1.0]
+[wt 1.2]
+
+[seStop ad14 1.6]
+[seStop ade535 1.6]
+[wt 2.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+成程。これまでの波は[r]あの滑りの余波だったか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear5 3000303]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+どういうスケーティング技術なのか意味不明だけど、[r]スピンやジャンプとかの派手な動きをすると、
+[k]
+
+＠ダ・ヴィンチ
+足下の氷が削れてあれが発生してたみたいだね……。
+[k]
+[branch lblConf5]
+
+[label lblNotClear5]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+どういうスケーティング技術なのか意味不明だけど、[r]スピンやジャンプとかの派手な動きをすると、
+[k]
+
+＠ダ・ヴィンチ
+足下の氷が削れてあれが発生してたみたいだね……。
+[k]
+
+[label lblConf5]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠ラムダ
+あら？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠ヴリトラ
+来たか。ま、ちょうどよく[r]身体も温まってきた頃合いじゃろう。
+[k]
+
+＠ヴリトラ
+わえは勿論、手出しはせんぞ。[r]見物しておるゆえ、存分に踊るがよい。ではな。
+[k]
+
+[messageOff]
+[se ad984]
+[charaMove H 50,0 0.4]
+[charaFadeout H 0.4]
+[wt 1.0]
+
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠ラムダ
+海そのものを凍らせた特製リンクを用意されて、[r]ただ滑って踊っていればいいと言われて……
+[k]
+
+＠ラムダ
+どういうことかと思っていたけど[line 3][r]ああ、そう、そういうこと。
+[k]
+
+＠ラムダ
+ちゃんとプレミアムな観客を呼び寄せているじゃない。[r]これなら、私の脚も弾むというものよ。
+[k]
+
+[charaFace G 11]
+＠ラムダ
+私の姿を写し取って働かせようとしているのは[r]気に食わないけれど……
+[k]
+
+＠ラムダ
+特別な舞台と、それなりに特別なお客様。[r]これだけあれば望み通り、一曲踊ってあげましょう。
+[k]
+
+？1：昨日の千代女の立場が
+？2：今日はラムダってこと……？
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠マシュ
+その通りです、マスター。[r]あれはラムダリリスさん本人ではありません。
+[k]
+
+＠マシュ
+ヴリトラによってエミュレートされた[r]複製存在であると考えられます。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠ラムダ
+やめてくれる？[r]コピーであろうとスタァはスタァよ。
+[k]
+
+[charaFace G 11]
+＠ラムダ
+何かの代役であっても、[r]私が踊る以上、それは[#唯一:ただひと]つの美しいもの。
+[k]
+
+＠ラムダ
+完全に完璧に定義されるのだもの。[r]どちらが真か偽かなんてくだらない話題ね。
+[k]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+[charaFace G 0]
+＠ラムダ
+というわけで、特別公演を始めてあげようかとも[r]思ったのだけれど……一ついいかしら？
+[k]
+
+＠ラムダ
+見過ごせないものがある気がするわ。[r]アナタのそれ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠マルタ
+それ？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠ラムダ
+アナタが尻に敷いてるそれよ！[r]それ……リヴァイアサン関係じゃない？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠マルタ
+確かにタラスクはリヴァイアサンの仔という話……[r]ですけど。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠ラムダ
+道理で。[r]私はリヴァイアサンベースのハイ・サーヴァントよ。
+[k]
+
+＠ラムダ
+何か特別なものを感じて当然だわ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠マルタ
+タラスク、何か感じる？
+[k]
+
+＠タラスク
+[charaTalk T]
+GuRuuu……[r]（えー？　いや、いきなりそんなこと言われても……）
+[k]
+
+＠タラスク
+[charaTalk T]
+（別にバブみとかは感じないっすわ。かと言って[r]　縁もゆかりもない感じかっていうと、うーん……）
+[k]
+
+[charaFace E 2]
+＠マルタ
+見なさいこのピンと来ていない顔！[r]テキトーなこと吹いてんじゃないわよ！
+[k]
+
+＠マルタ
+誰も言わないようだから言いますけど、
+[k]
+
+＠マルタ
+そもそもあなたのってリヴァイアサンじゃなくて[r]ペンギンモチーフなんじゃないの？
+[k]
+
+？1：（さすがマルタさん、ブッ込んだ！）
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth G 6]
+[charaDepth U 4]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠ラムダ
+は、はぁ？[r]どこからどう見てもリヴァイアサンなんですけど！？
+[k]
+
+[charaPut U 0,-200]
+[charaFace G 0]
+[charaFadeTime U 0.1 0.6]
+＠ラムダ
+（実際の姿なんて知らないけど。とにかく、[r]　リヴァイアサンベースのこの私に懐いてるんだし、）
+[k]
+
+＠ラムダ
+（魔力もこれを介して発生してるんだから、これはもう[r]　リヴァイアサンと考えるしかない……でしょう！？）
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout U 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ゲオルギウス
+リヴァイアサンと言えば確かに竜種。
+[k]
+
+＠ゲオルギウス
+その感覚はありますが、それが目の前の彼女からなのか、[r]それともあの可愛らしい生き物からなのかは
+[k]
+
+＠ゲオルギウス
+もう少し調べてみないことには[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠ラムダ
+お[messageShake 0.02 3 3 0.3]黙り！[r]あとキャストへのお触りも禁止！　常識でしょう！？
+[k]
+
+＠ラムダ
+とにかく、母たるリヴァイアサンとして[r]その子の扱いに私は異議を申し立てます。
+[k]
+
+[charaFace G 1]
+＠ラムダ
+[line 3]さ、おいでなさい。
+[k]
+
+＠ラムダ
+アナタの巨体を活かした新プログラムも[r]すぐに考えてあげるから。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk T]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠T：タラスク
+GuRu……？（へっ？）
+[k]
+
+[charaFace E 2]
+＠マルタ
+いきなり何よあなた！[wt 0.6][charaFace E 0][r]タラスクは私の……なんだろ、舎弟？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠ラムダ
+シャテイ……ふ、何よそれ、古くさい言葉ね。[r]もう少し、時代に合わせたフレーズがあるんじゃない？
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaMove G 100,0 0.3]
+[wt 0.2]
+[cueSe Battle bac11]
+[cueSeVolume bac11 0 0.4]
+[charaMove G 85,0 0.1]
+[wt 0.6]
+
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[wt 0.4]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠マルタ
+確かに私は一世紀の女ですけれど、[r]あなたに文句を言われる筋合いはありません！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaMove E -100,0 0.3]
+[wt 0.2]
+[cueSe Battle bac98]
+[cueSeVolume bac98 0 0.4]
+[cueSeStop bac98 0.5]
+
+[charaMove E -85,0 0.1]
+[wt 0.6]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 0.4]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+[wt 0.3]
+
+[charaMove G 100,0 0.3]
+[wt 0.3]
+[cueSe Battle bac11]
+[cueSeVolume bac11 0 0.4]
+[charaMove G 85,0 0.1]
+[wt 0.4]
+
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[wt 0.3]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[wt 0.3]
+
+[charaMove E -100,0 0.3]
+[wt 0.3]
+[cueSe Battle bac98]
+[cueSeVolume bac98 0 0.4]
+[cueSeStop bac98 0.5]
+[charaMove E -85,0 0.1]
+[wt 0.4]
+
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 0.3]
+
+[charaTalk off]
+[charaDepth G 6]
+[charaDepth E 4]
+
+[charaFace G 5]
+[charaFace E 5]
+[charaFadein E 0.1 326,0]
+[charaFadein G 0.1 -326,0]
+
+[charaMove E 226,0 0.4]
+[charaMove G -226,0 0.4]
+
+[wipein circleIn 0.4 1.0]
+[wait wipe]
+
+[se ad787]
+[charaShake E 0.03 2 3 0]
+[charaShake G 0.03 2 3 0]
+[wt 2.0]
+
+？1：タラスクを真ん中に挟んで……
+？2：その左右から、タラスクに……
+？！
+
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaShakeStop E]
+[charaShakeStop G]
+
+
+[charaTalk on]
+[charaPut T 1]
+[charaTalk F]
+[charaFace F 15]
+[charaFadein F 0.1 1]
+＠マシュ
+ラムダさんが蹴りを！[r]そしてマルタさんが拳を同時に押し入れて、
+[k]
+
+＠マシュ
+タラスクさんを相手側に吹き飛ばして[r]ぶつけようとしています！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠アルジュナ
+私が見る限り、完全に拮抗していますね。[r]力は互角です。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk G]
+[charaFace G 2]
+[charaFace E 0]
+[charaFadein G 0.1 -226,0]
+[charaFadein E 0.1 226,0]
+[charaShake G 0.02 3 3 0.6]
+＠ラムダ
+こ、のっ……リヴァイアサンの子なんだから、[r]私が保護して、当然でしょっ……！
+[k]
+
+
+[charaFace E 2]
+[charaShake E 0.02 3 3 0.6]
+＠マルタ
+ぽっと出の小娘が……[r]誰が、更生、させたと思ってっ……！
+[k]
+
+＠タラスク
+[charaTalk T]
+（姐さん、姐さーん！　ちょっと待ってくだせぇ、[r]　コレ、両方から、潰され、あばばば……）
+[k]
+
+＠タラスク
+[charaTalk T]
+（出ちゃう！　ワシの中身出ちゃうー！）
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad787]
+[charaShake G 0.02 2 4 0]
+[charaShake E 0.02 2 4 0]
+[wt 2.0]
+
+[charaFadeout G 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaShakeStop E]
+[charaShakeStop G]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+このような状況[line 3]知っているぞ。
+[k]
+
+＠サンタカルナ
+いや、サンタともボクシングともかつての教えとも[r]関係なく、ライブラリの資料でだが。
+[k]
+
+＠サンタカルナ
+その名は確か、大岡裁き……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+＠マシュ
+二人の母親が一人の子供の手を引っ張って、[r]というお話ですね。わたしも知っています。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear6 3000303]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+今回は逆に押し合ってるわけだけど、まあ、[r]状況は似たようなもの……かな？
+[k]
+
+[branch lblConf6]
+
+[label lblNotClear6]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+今回は逆に押し合ってるわけだけど、まあ、[r]状況は似たようなもの……かな？
+[k]
+
+[label lblConf6]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠マシュ
+ではその例に照らして考えますと、[r]これは、実は押し負けたほうに正当性が……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+[charaTalk depthOff]
+[charaTalk E]
+[charaFace E 2]
+[charaFace G 2]
+[charaFadein E 0.1 226,0]
+[charaFadein G 0.1 -226,0]
+＠マルタ
+せ[messageShake 0.02 3 3 0.3]い！
+[k]
+
+[messageOff]
+[charaMove E 196,0 0.1]
+[wt 0.05]
+[cueSe Battle bac10]
+[cueSeVolume bac10 0 0.8]
+[charaShake G 0.02 3 3 0.6]
+[wt 0.8]
+
+＠タラスク
+[charaTalk T]
+（あっ、姐さんの一撃でバランスが崩れて……[r]　ぐおおお、強制的なブッ込みが発生じゃー！）
+[k]
+
+
+[charaFace G 5]
+＠ラムダ
+くうっ！？
+[k]
+
+[messageOff]
+
+[se ad85]
+[seVolume ad85 0 0]
+[seVolume ad85 0.4 0.8]
+[wt 0.1]
+[charaMoveFSL G -480,0 0.4]
+[charaFadeout G 0.4]
+[wt 0.9]
+
+[cueSe Servants_401900 bac943]
+[cueSeVolume bac943 0 0.5]
+[shake 0.05 2 2 0.8]
+[wt 0.4]
+[cueSeStop bac943 0.8]
+[wt 1.0]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[charaTalk depthOff]
+[charaDepth G 6]
+[charaDepth U 4]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+[wt 0.4]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+＠ラムダ
+フ……フフフ……馬脚を現したわね。
+[k]
+
+＠ラムダ
+私はタラスクが苦しんでいることが[r]気になって全力を出せなかったのよ。
+[k]
+
+[charaFace G 10]
+[charaFadeTime U 0.1 0.6]
+＠ラムダ
+（ホントは単純にパワー負けしただけだけど[r]　そういうコトにしておきましょう）
+[k]
+
+[charaFace G 11]
+＠ラムダ
+（この嗜虐の舞姫たる私が苦しみを見かねて[r]　手加減なんてするはずないじゃない？）
+[k]
+
+[charaFace G 9]
+＠ラムダ
+（スタァに必要なのはパワーより優雅さだし。[r]　逆説的に美しさを証明したようなものね！）
+[k]
+
+[charaFace G 0]
+[charaFadeout U 0.1]
+＠ラムダ
+わかる？　硬そうな腹筋の女。[r]子の苦しみに気付かなかったアナタこそが……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 0.4]
+
+[charaTalk depthOn]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠マルタ
+笑[messageShake 0.02 3 3 0.3]止！[r]馬脚を現したのはそちらです！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠ラムダ
+は？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_4 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠マルタ
+手加減？[r]何をなまっちょろいことを。
+[k]
+
+[charaFace E 2]
+＠マルタ
+私はタラスクの頑丈さを信じた！[r]あなたは信じなかった！
+[k]
+
+＠マルタ
+そう、それは[line 3][r]ただの、タラスクへの信頼の差です！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 8]
+[charaFadein G 0.1 1]
+＠ラムダ
+！[messageShake 0.02 3 3 0.3]！？[r]（美しい声でなに言っているのあの女！？）
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠マルタ
+つまりどう解釈しても私の勝ち！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠ゲオルギウス
+信頼……信頼ですか。まぁ、良いように考えれば、[r]そう解釈できなくも……。
+[k]
+
+？1：経験の差が出たってことかな
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠タラスク
+GuRRuuu……（姐さんは、誰よりもワシの頑丈さを[r]知っとりますけえのう……いたたた……）
+[k]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠ラムダ
+っ……いいわ。[r]単純な力勝負なんて、私の趣味じゃないし。
+[k]
+
+[charaFace G 6]
+＠ラムダ
+氷上のスタァは勿論、凍った海上でもスタァ。
+[k]
+
+[charaFace G 0]
+＠ラムダ
+その美しさで貴方たちを叩きのめしたあと、
+[k]
+
+＠ラムダ
+ステージに投げ込まれるプレゼントとして[r]タラスクをいただきましょう！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_4 1.0]
+[charaFaceFade G 12 0.4]
+[wt 1.0]
+
+[se ad661]
+[charaCrossFade G 3040001 12 1.0]
+[wait charaCrossFade G]
+[wt 1.0]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+プレゼントか。痛いところをつかれた。[r]やるな。
+[k]
+
+＠サンタカルナ
+サンタクロースとして、オレはおまえの願いも[r]叶えてやるべきなのかもしれん。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠アルジュナ
+ええい、またもトンチキな発言を……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear7 3000303]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+さすがに彼女みたいな複製存在の願いまで[r]叶えてたらキリがないんじゃないかなー！
+[k]
+
+[branch lblConf7]
+
+[label lblNotClear7]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+さすがに彼女みたいな複製存在の願いまで[r]叶えてたらキリがないんじゃないかなー！
+[k]
+
+[label lblConf7]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+[charaEffectStop T bit_talk_10_LowLevel]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠サンタカルナ
+そうか。……そうだな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠マルタ
+まさかのサンタが裏切りかと一瞬焦りましたが、[r]納得してくれたのなら何より。
+[k]
+
+＠マルタ
+さあ、行くわよ[line 3]本当に[r]リヴァイアサンなのかどうかは知らないけれど！
+[k]
+
+[charaFace E 2]
+＠マルタ
+[#子供:タラスク]だけじゃなくて、[r]親の性根もこの拳で叩き直してやるわ！
+[k]
+
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,594 @@
+
+
+
+＄94-05-42-04-2-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet B 3040001 1 ラムダ]
+[charaSet C 3046001 1 ヴリトラ]
+[charaSet D 1048000 1 サンタカルナ]
+[charaSet E 2015001 1 アルジュナ]
+[charaSet F 4006001 1 ゲオルギウス]
+[charaSet G 4019001 1 マルタ]
+
+[imageSet H back10000 1 1]
+[charaScale H 1.01]
+[sceneSet I 106300 1 1]
+[charaScale I 1.0]
+
+[charaSet S 5009040 1 エフェクト用ダミー]
+[charaSet T 5009040 1 エフェクト用ダミー]
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[charaSet A 1098124510 1 ダ・ヴィンチ]
+[branch lblConf]
+
+[label lblNotClear]
+[charaSet A 98111500 1 ダ・ヴィンチ]
+[label lblConf]
+
+
+[charaPutFSR S 1200,2000]
+[charaEffect S bit_talk_10_LowLevel]
+
+
+[scene 63703]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaPut B 0,0]
+[charaFadeTime B 0.4 0.6]
+[wt 0.8]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠ラムダ
+ああ[line 3]ま、いいわよ。別にいいわ。[r]本物か虚像かなんて些細なこと。
+[k]
+
+＠ラムダ
+ステージ上のスタァは常に[r]手の届かない幻影のようなものなのだから。
+[k]
+
+[charaFace B 7]
+＠ラムダ
+それに……[r]観客にきちんと想いが届けられたのなら、
+[k]
+
+＠ラムダ
+それが予期せぬ引退ステージになったって悔いはない。[r]プロフェッショナルとはそういうものよ。
+[k]
+
+？1：とても綺麗だった
+？2：うん、知ってるよ
+？！
+
+[messageOff]
+[charaFaceFade B 10 0.4]
+[bgmStop BGM_EVENT_11 1.0]
+[wt 1.0]
+
+[se ad596]
+[wt 0.1]
+[charaSpecialEffect B erasure 0,0 1.5]
+[wait charaSpecialEffect B]
+[wt 1.1]
+
+＠タラスク
+GuRruuu……（すいませんなぁ……やっぱワシ、[r]踊るよりは暴れたほうがスカッとしますけぇ……）
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ad192]
+[wt 1.8]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ヴリトラ
+おうおう、良い踊りであった。
+[k]
+
+＠ヴリトラ
+ほどほどにして切り上げるつもりであったのに、[r]つい最後まで見入ってしまったぞ？
+[k]
+
+[charaFace C 4]
+＠ヴリトラ
+うーむ、こういうところがインドラに策として[r]利用されるのは分かっとるんじゃがのう。
+[k]
+
+[charaFace C 0]
+＠ヴリトラ
+まあよい、ひとまず気は済んだ。[r]ではこれで[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠サンタカルナ
+待て。今の戦いで、[r]オレは大事なことに気付かされた。
+[k]
+
+＠サンタカルナ
+せめて一つ問いに答えていけ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠ヴリトラ
+なんじゃ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠サンタカルナ
+オレの、サンタクロースの……[r]そしてクリスマスの邪魔をしているおまえの目的だ。
+[k]
+
+＠サンタカルナ
+直接オレを殺そうとするでもなく、[r]開けられない箱を発生させ、
+[k]
+
+＠サンタカルナ
+プレゼント配りに[#迂遠:うえん]な干渉をしているのならば、[r]そこにこそ意味があるのではないかと思った。
+[k]
+
+＠サンタカルナ
+今の軽量級スケーティングボクサーと同じように……[r][#おまえにも欲しいプレゼントがあるのではないのか]？
+[k]
+
+＠サンタカルナ
+あるいはそれが貰えぬことが不満で、[r]このようなことをしているのではないのか？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ヴリトラ
+………………。
+[k]
+
+[charaFace C 6]
+＠ヴリトラ
+そうじゃなあ。言うてしまえば、[r]そのようなことかもしれんなあ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠サンタカルナ
+そうか。ならば……
+[k]
+
+＠サンタカルナ
+オレは[#未:いま]だ修業が足りぬ身だが、[r]それでもサンタクロースとして問う。
+[k]
+
+＠サンタカルナ
+おまえの望むプレゼントは何だ。言え。
+[k]
+
+＠サンタカルナ
+そうすればオレは全力でプレゼント袋を探り、[r]可能な限りおまえにもクリスマスの福音を与えるだろう。
+[k]
+
+？1：さすがは施しの英雄
+？2：カルナらしい……
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠アルジュナ
+…………。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠ヴリトラ
+き、ひ、ひ！　愉快愉快！[r]予想外の発言じゃの、サンタよ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠サンタカルナ
+サンタとはそういうものだ。[r]……おそらくな。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠ヴリトラ
+じゃが、特別なものをその袋から探す必要などない。[r]わえの求めるものはそこには入っておらんからの。
+[k]
+
+＠ヴリトラ
+貴様らはただ、わえにクリスマスを奪われ[r]悶え苦しむ様を見せておればよいのよ。
+[k]
+
+＠ヴリトラ
+わえという魔が求めるのはそれだけじゃ！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 1.0]
+[se ade282]
+[wt 0.1]
+[charaSpecialEffect C wipeTime 0,0 1.0]
+[wait charaSpecialEffect C]
+[wt 1.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠サンタカルナ
+…………。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 32]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+うーん。ラムダリリスと同じように[r]生粋のドＳだってだけなのかなぁ。
+[k]
+
+[branch lblConf2]
+
+[label lblNotClear2]
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+うーん。ラムダリリスと同じように[r]生粋のドＳだってだけなのかなぁ。
+[k]
+
+[label lblConf2]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR S 1200,2000]
+[charaEffectStop S bit_talk_10_LowLevel]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ゲオルギウス
+私たちが苦しむ様を見ること自体が目的、[r]というわけでしょうか。
+[k]
+
+＠ゲオルギウス
+さすがは邪竜、度し難い。[r]その罪、この刃をもって必ず償わせましょう。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠マルタ
+私の仕事は終わったみたいですけど。[r]こちらにもおせっかい、していいでしょうか？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠サンタカルナ
+何だ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠マルタ
+そうですね。[r]戦っていて感じたことが一つ……
+[k]
+
+＠マルタ
+あなた、普段より他人と動きを合わせるのが苦手に[r]なっていませんか？　連携というか、呼吸というか。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠サンタカルナ
+……自覚はないが、そう言われればそうかもしれん。
+[k]
+
+＠サンタカルナ
+ボクサーとは一人で戦うものだ。[r]そしてサンタクロースも一人だ。
+[k]
+
+＠サンタカルナ
+だが、不都合はないと感じる。[r]そのぶん単体での戦闘力を高めているつもりだ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠マルタ
+そうまではっきり言い切れるのなら、[r]仕方ありません。
+[k]
+
+＠マルタ
+今はまだ考えるべき段階ではないのでしょう……[r][#流儀:スタイル]として認めるしかないわね。
+[k]
+
+[charaFace G 0]
+＠マルタ
+私も理由なく『杖は持たなくていい』と言われたら[r]え？　となりますし。
+[k]
+
+[charaFace G 1]
+＠マルタ
+……さて、と。[r]どうやら特異点の核が出てきたようですね。
+[k]
+
+
+＠マルタ
+安全な浜に移動してから壊しちゃいましょう。
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgm BGM_EVENT_77 1.0 0.4]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[wt 1.0]
+
+[bgm BGM_EVENT_77 1.0 1.0]
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[se ade410]
+[wt 0.2]
+[charaPut T 1]
+[charaEffect T bit_talk_20b]
+[wt 2.4]
+
+[charaPutFSR T 1200,2000]
+[charaEffectDestroy T bit_talk_20b]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.7]
+
+[wipeout circleIn 0.2 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[scene 10000]
+[wt 0.1]
+
+[wipein circleIn 0.1 1.0]
+
+[fowardEffect bit_talk_flash_g]
+[wt 0.1]
+[se ad80]
+[wt 0.3]
+[seStop ad80 0.2]
+[wt 0.5]
+
+
+[se ad149]
+[se ad216]
+[seVolume ad216 0 0]
+[se ad733]
+[seVolume ad733 0 0]
+[fadeout white 0.3]
+[bgm BGM_EVENT_77 0.8 0.1]
+[seVolume ad216 0.3 1.0]
+[seVolume ad733 0.3 1.0]
+[wait fade]
+
+[seStop ad733 1.5]
+[wt 1.0]
+
+[scene 10000]
+[wt 1.5]
+
+
+
+
+
+[criMovie talk_mov083 bgmPlay false]
+[wt 0.5]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+[wt 30.0]
+
+[charaTalk depthOff]
+[charaDepth H 4]
+[charaDepth I 5]
+[charaDepth D 6]
+[charaDepth F 7]
+
+[overlayFadein H 1.0 0,-200]
+[wt 1.0]
+
+
+[scene 106300]
+[wt 3.0]
+
+[bgm BGM_EVENT_77 1.0 1.0]
+[overlayFadein I 1.0 0,-200]
+[wt 1.0]
+[charaFadeout H 1.0]
+[wt 1.0]
+
+？1：うーん、すっきり！
+？2：リゾート感が取り戻せた[&ぞ:ね]
+？！
+[charaFadeout I 0.3]
+[wt 0.3]
+
+[charaTalk depthOn]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠サンタカルナ
+ああ。クリスマスだが、素晴らしい夏だ。[r]より素晴らしい夏だ。
+[k]
+
+＠サンタカルナ
+特に砂浜がいい。[r]ロードワークに最適だろう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠ゲオルギウス
+地上の楽園とはよく言ったものです。[r]一枚だけ、一枚だけ……。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+
+[charaFadeout F 0.1]
+[scene 10000]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_71 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠ヴリトラ
+なんと、今日は予想外のことがよく起こるのう。[r]このようなわえに[line 3][#協力の申し出]、とはな。
+[k]
+
+[charaFace C 0]
+＠ヴリトラ
+どれ、話くらいは聞いてやろうか。[r]同じようなモノの匂いがせんでもないしの。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠？？？
+[line 6]。[r][line 12]。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 1.4]
+
+[charaFace C 8]
+＠ヴリトラ
+ま、よかろう。
+[k]
+
+＠ヴリトラ
+[#楔:くさび]の全てがわえの魔というのも[r]工夫がないと思っておったところじゃ。
+[k]
+
+[charaFace C 6]
+＠ヴリトラ
+では、次は貴様に任せるとしよう。[r]わえは姿を見せぬほうが楽しそうじゃの。
+[k]
+
+＠ヴリトラ
+普段より遠くから、[r]しっかりと見物しておくことにするぞ[line 3]
+[k]
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_71 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
