@@ -1,0 +1,684 @@
+
+
+
+＄94-05-42-05-1-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet B 6037002 1 カーマ]
+[charaSet C 2033000 1 アシュヴァッターマン]
+[charaSet D 1048000 1 サンタカルナ]
+[charaSet E 4006001 1 ゲオルギウス]
+[charaSet F 2015001 1 アルジュナ]
+[charaSet G 3030000 1 パールヴァティー]
+
+[imageSet H back10001_fs 1]
+[charaScale H 1.5]
+
+[imageSet I back10000 1 1]
+[charaScale I 1.01]
+[sceneSet J 106400 1 1]
+[charaScale J 1.0]
+
+
+[charaSet S 5009040 1 エフェクト用ダミー]
+[charaSet T 5009040 1 エフェクト用ダミー]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[charaSet A 1098124510 1 ダ・ヴィンチ]
+[branch lblConf]
+
+[label lblNotClear]
+[charaSet A 98111500 1 ダ・ヴィンチ]
+[label lblConf]
+
+
+[charaPutFSR S 1200,2000]
+[charaEffect S bit_talk_10_LowLevel]
+
+
+[scene 37301]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+[wt 0.4]
+
+
+
+[charaTalk off]
+[charaDepth T 10]
+
+[charaScale T 2.0]
+[charaPut T 0,100]
+[charaEffect T bit_talk_29_blue]
+[wt 0.1]
+[se ad249]
+[seVolume ad249 0 0]
+[seVolume ad249 0.4 0.8]
+
+[wt 0.4]
+
+[flashin once 0.1 1.2 d6e0ffFF d6e0ff00]
+
+[charaCrossFade B 6037001 12 0.1]
+[wt 0.1]
+[wait charaCrossFade B]
+
+[charaEffectStop T bit_talk_29_blue]
+[seStop ad249 1.5]
+[wt 0.5]
+[charaPutFSR T 1200,2000]
+[wt 1.7]
+[charaScale T 1.0]
+
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk on]
+＠カーマ
+はぁ。もう少しくらい嫌がる様が[r]見られるかと思ったのに……
+[k]
+
+[charaFace B 11]
+＠カーマ
+機微のないシヴァ系が参加してた時点で[r]面白みは半減ですよ。まったくもう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠アシュヴァッターマン
+そりゃこっちの台詞だっつーの。[r]今からでもヴリトラ引っ張り出してこいや。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+＠カーマ
+私はあくまで自分の愉しみのために協力してみた[r]だけなんで、そんな強制力とかありません。
+[k]
+
+＠カーマ
+会いたきゃ別の特異点探すしかないんじゃないですか？
+[k]
+
+＠カーマ
+それじゃ、せいぜいメリクリでーす。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠サンタカルナ
+ああ。メリクリにはメリクリで返す。[r]それがサンタの教えだ。
+[k]
+
+＠サンタカルナ
+メリークリスマス。
+[k]
+
+＠サンタカルナ
+オレが一人前のサンタになった暁には、[r]きっとおまえにも最高のプレゼントが配られるだろう。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+[wt 0.4]
+
+
+＠カーマ
+はあ。[charaMoveReturn B 0,-4 0.9][wt 0.5]皮肉も通じない……。
+[k]
+
+[messageOff]
+[se ade527]
+[charaMove B -50,0 0.4]
+[charaFadeout B 0.4]
+[seStop ade527 1.2]
+[wt 1.6]
+
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+とにかく、我々の勝利だ。
+[k]
+
+＠ダ・ヴィンチ
+カーマの助力に何か深い意味があったのかは[r]わからないままだけど……
+[k]
+
+＠ダ・ヴィンチ
+特異点の核も残されているようだし、[r]さっさと済ませてしまおう。
+[k]
+
+[branch lblConf2]
+
+[label lblNotClear2]
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+とにかく、我々の勝利だ。
+[k]
+
+＠ダ・ヴィンチ
+カーマの助力に何か深い意味があったのかは[r]わからないままだけど……
+[k]
+
+＠ダ・ヴィンチ
+特異点の核も残されているようだし、[r]さっさと済ませてしまおう。
+[k]
+
+[label lblConf2]
+
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR S 1200,2000]
+
+
+[se ade410]
+[wt 0.2]
+[charaPut T 1]
+[charaEffect T bit_talk_20b]
+[wt 2.4]
+
+[charaPutFSR T 1200,2000]
+[charaEffectDestroy T bit_talk_20b]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.8]
+
+[wipeout circleIn 0.3 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[scene 10000]
+[wt 0.1]
+
+[wipein circleIn 0.1 1.0]
+[wait wipe]
+
+[fowardEffect bit_talk_flash_g]
+[wt 0.1]
+[se ad80]
+[wt 0.3]
+[seStop ad80 0.2]
+[wt 0.65]
+
+
+[se ad149]
+[se ad216]
+[seVolume ad216 0 0]
+[se ad733]
+[seVolume ad733 0 0]
+[fadeout white 0.3]
+[bgm BGM_EVENT_77 0.8 0.1]
+[seVolume ad216 0.3 1.0]
+[seVolume ad733 0.3 1.0]
+[wait fade]
+
+[seStop ad733 1.5]
+[wt 1.0]
+
+[scene 10000]
+[wt 1.5]
+
+
+
+
+
+[criMovie talk_mov084 bgmPlay false]
+[wt 0.5]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+[wt 29.5]
+
+[charaTalk depthOff]
+[charaDepth I 4]
+[charaDepth J 5]
+
+[overlayFadein I 1.0 0,-200]
+[wt 1.0]
+
+[scene 106400]
+[wt 3.0]
+
+[bgm BGM_EVENT_77 1.0 1.0]
+[overlayFadein J 1.0 0,-200]
+[wt 1.0]
+[charaFadeout I 1.0]
+[wt 1.0]
+
+
+？1：風が気持ちいい……
+？2：心が洗われるね……
+？！
+[charaFadeout J 0.3]
+[wt 0.3]
+[charaTalk depthOn]
+
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+森林浴……竹林浴でもして帰るかい？[r]少しくらいならリフレッシュタイムも取れるよ。
+[k]
+
+[branch lblConf3]
+
+[label lblNotClear3]
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+森林浴……竹林浴でもして帰るかい？[r]少しくらいならリフレッシュタイムも取れるよ。
+[k]
+
+[label lblConf3]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR S 1200,2000]
+[charaEffectStop S bit_talk_10_LowLevel]
+
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠ゲオルギウス
+いいですね。ベストな一枚を撮れるポジションを[r]少し探してみましょうか……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠アルジュナ
+……すみませんが、私は一足先に失礼します。[r]気になることがありますので。
+[k]
+
+[messageOff]
+[se ad527]
+[charaMoveFSR F 50,0 0.4]
+[charaFadeout F 0.4]
+[seStop ad527 1.0]
+[wt 1.6]
+
+？1：（気になること……？）
+？2：（何かあったのかな……？）
+？！
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠アシュヴァッターマン
+何がリフレッシュだ、[r]俺はまだ身体を動かし足りねぇんだぞコラ。
+[k]
+
+[charaFace C 2]
+＠アシュヴァッターマン
+まだここにいんだろ？　な？[r]よっしゃ、ならカルナ、組み手だ組み手！
+[k]
+
+＠アシュヴァッターマン
+寸止めなんて[#生温:なまぬる]いことは言わねえ、[r]全力で来やがれ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠サンタカルナ
+オレも今回は満足のいくロードワークではなかったと[r]思っていたところだ。
+[k]
+
+＠サンタカルナ
+行き止まりのある迷路はロードワークに向いていない。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 4]
+[charaDepth D 6]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFace D 0]
+[charaFadeinFSL C 0.1 0]
+[charaFadeinFSR D 0.1 2]
+＠アシュヴァッターマン
+ハハハ！[r]テメェも拳でぶち抜いていけばよかったのによ！
+[k]
+
+[charaFace D 6]
+＠サンタカルナ
+違いない[line 3]！
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[charaMoveFSR D 276,0 0.4]
+[charaMoveFSL C -276,0 0.4]
+[wt 0.8]
+
+[charaMoveFSR D 106,0 0.3]
+[charaMoveFSL C -106,0 0.3]
+
+[effect bit_talk_14]
+[wt 0.1]
+
+[se ad170]
+[fadeout white 0.2]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+
+[scene 10000]
+[wt 2.0]
+
+[fadein white 1.5]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+
+[fadeout black 0.5]
+[wait fade]
+
+[effectDestroy bit_talk_14]
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+[scene 105800]
+[branch lblConf4]
+
+[label lblNotClear4]
+[scene 106000]
+[label lblConf4]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 1.2]
+
+[se ad592]
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[charaSet B 6037002 1 カーマ]
+
+[charaPut S 1]
+[charaEffect S bit_sepia01_depth]
+[pictureFrame cut063_cinema]
+
+[scene 37301]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+[wt 0.8]
+
+[fadein white 0.5]
+[wait fade]
+[wt 1.2]
+
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaPutFSR S 1200,2000]
+[pictureFrame]
+
+[branchQuestNotClear lblNotClear5 3000303]
+
+[scene 105800]
+[branch lblConf5]
+
+[label lblNotClear5]
+[scene 106000]
+[label lblConf5]
+[wt 0.8]
+
+[fadein white 0.5]
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠アルジュナ
+[line 6]。
+[k]
+
+[charaFace F 4]
+＠アルジュナ
+おかしい。[r]やはり、何かが気にかかる。
+[k]
+
+[messageOff]
+[fadeout white 0.5]
+[bgm BGM_EVENT_11 0.5 0.4]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[charaPut S 1]
+[pictureFrame cut063_cinema]
+
+[scene 37301]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-50]
+[wt 0.7]
+
+[fadein white 0.5]
+[wait fade]
+[wt 0.1]
+
+＠カーマ
+基本的には望み通りで楽しいんですが、[r]嫌々な部分だってあるんですよ、ほんとに。
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaDepth B 5]
+[charaDepth S 6]
+[charaDepth H 7]
+
+[charaFadein H 0.5 0,-200]
+[wt 0.5]
+
+[charaFadeout B 0.1]
+
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+[wt 0.7]
+
+[charaFadeout H 0.5]
+[wt 0.5]
+
+[charaTalk on]
+＠サンタカルナ
+いや。あれは普段通りのカーマだろう。[r]嘘偽りのない本質のままだと感じる。
+[k]
+
+
+[messageOff]
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaPutFSR S 1200,2000]
+[charaEffectStop S bit_sepia01_depth]
+[pictureFrame]
+
+[branchQuestNotClear lblNotClear6 3000303]
+
+[scene 105800]
+[branch lblConf6]
+
+[label lblNotClear6]
+[scene 106000]
+[label lblConf6]
+[wt 0.8]
+
+[bgm BGM_EVENT_11 0.5 1.0]
+[fadein white 0.5]
+[wait fade]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠アルジュナ
+これは、矛盾だ。[r]であれば、そこにはどんな意味がある……？
+[k]
+
+[messageOff]
+[wt 1.2]
+
+[charaFace F 0]
+＠アルジュナ
+……可能性としては……いや違う。逆に……[r]仮に、そう考えると……
+[k]
+
+＠アルジュナ
+…………。[r]………………。
+[k]
+
+[charaFace F 5]
+＠アルジュナ
+とすれば。これを突き詰めていくと[line 3][r]問題はヴリトラの本質にも関わってくる、か？
+[k]
+
+
+[charaFace F 0]
+＠アルジュナ
+もしやパールヴァティー様が動かれないのは、[r]これを既にご存じだからでは……
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth G 4]
+[charaDepth F 6]
+
+[charaTalk G]
+[charaFace G 1]
+[charaPutFSL G -256,0]
+[charaFadeTime G 0.4 0.6]
+[wt 0.4]
+＠G：パールヴァティー（幻聴？）
+はい。でも今回、私は口出ししませんので。[r]自分たちの力で頑張ってくださいね？
+[k]
+
+[messageOff]
+[charaFadeout G 0.4]
+[wt 0.4]
+
+＠アルジュナ
+はっ、わかっております。
+[k]
+
+[charaFace F 4]
+＠アルジュナ
+さて、では、どうする……？
+[k]
+
+[charaFace F 5]
+＠アルジュナ
+決まっている。[r]本質を見抜き確かめる必要がある。
+[k]
+
+＠アルジュナ
+そのためには[line 3]
+[k]
+
+[messageOff]
+[charaFace F 4]
+[wt 1.2]
+
+[charaFace F 0]
+＠アルジュナ
+[#彼]に、振ってみるか。[r]その眼力に疑う余地はないし、それに……
+[k]
+
+[charaFace F 1]
+＠アルジュナ
+私ではもう付き合いきれないが。[r]彼にはまた、違う意味があるものかもしれない[line 3]
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_11 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
