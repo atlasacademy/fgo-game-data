@@ -1,0 +1,426 @@
+
+
+
+＄94-05-42-06-2-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet B 7033002 1 アルジュナ・オルタ]
+[charaSet C 4006001 1 ゲオルギウス]
+[charaSet D 1048000 1 サンタカルナ]
+[charaSet E 99502600 1 マシュ]
+[charaSet F 5038000 1 ジーク]
+[charaSet G 3005001 1 エリザベート・バートリー]
+
+[imageSet I back10000 1 1]
+[charaScale I 1.01]
+[sceneSet J 106500 1 1]
+[charaScale J 1.0]
+
+[charaSet S 5009040 1 エフェクト用ダミー]
+[charaSet T 5009040 1 エフェクト用ダミー]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[charaSet A 1098124510 1 ダ・ヴィンチ]
+[branch lblConf]
+
+[label lblNotClear]
+[charaSet A 98111500 1 ダ・ヴィンチ]
+[label lblConf]
+
+
+[charaPutFSR S 1200,2000]
+[charaEffect S bit_talk_10_LowLevel]
+
+
+[scene 44101]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+
+[charaTalk G]
+[charaFace G 2]
+[charaPut G 0,0]
+[charaFadeTime G 0.4 0.6]
+[wt 0.8]
+
+＠エリザベート
+え、待って、これで終わり？
+[k]
+
+＠エリザベート
+やっと喉が温まってきたところなのにーーー！[r]アンコールはないのーーー！？
+[k]
+
+[messageOff]
+[se ad596]
+[wt 0.1]
+[charaSpecialEffect G erasure 0,0 1.5]
+[wait charaSpecialEffect G]
+[wt 0.9]
+
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠アルジュナ・オルタ
+曲が……聞こえなくなりましたね……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠サンタカルナ
+カルデアに戻ればまたいつでも聞けるだろう。
+[k]
+
+＠サンタカルナ
+ローマの皇帝の歌声もおまえには届く気がするな。[r]ただの勘だが。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ゲオルギウス
+どうですか、ジーク殿。[r]立派に役目を果たされた感想は。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ジーク
+正直、わからないな。[r]立派に役目を果たせたのかどうかも。
+[k]
+
+＠ジーク
+日替わりドラゴンスレイヤー枠として来て、[r]求められた働きは一応できた気がするが……
+[k]
+
+[charaFace F 6]
+＠ジーク
+俺はジークフリートのような英雄ではない。
+[k]
+
+＠ジーク
+竜と竜殺し。どちらでもあり、どちらでもない……[r]それが俺だ。
+[k]
+
+[charaFace F 0]
+＠ジーク
+でも。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 26]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+……よーし、出てきたよ。やっちゃって！
+[k]
+
+[branch lblConf2]
+
+[label lblNotClear2]
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+……よーし、出てきたよ。やっちゃって！
+[k]
+
+[label lblConf2]
+
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR S 1200,2000]
+
+
+[se ade410]
+[wt 0.2]
+[charaPut T 1]
+[charaEffect T bit_talk_20b]
+[wt 2.4]
+
+[charaPutFSR T 1200,2000]
+[charaEffectDestroy T bit_talk_20b]
+[wt 0.1]
+
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.7]
+
+[wipeout circleIn 0.2 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[scene 10000]
+[wt 0.1]
+
+[wipein circleIn 0.1 1.0]
+[wait wipe]
+
+[fowardEffect bit_talk_flash_g]
+[wt 0.1]
+[se ad80]
+[wt 0.3]
+[seStop ad80 0.2]
+[wt 0.5]
+
+
+[se ad149]
+[se ad216]
+[seVolume ad216 0 0]
+[se ad733]
+[seVolume ad733 0 0]
+[fadeout white 0.3]
+[bgm BGM_EVENT_77 0.8 0.1]
+[seVolume ad216 0.3 1.0]
+[seVolume ad733 0.3 1.0]
+[wait fade]
+
+[seStop ad733 1.5]
+[wt 1.0]
+
+[scene 10000]
+[wt 1.5]
+
+
+
+
+
+[criMovie talk_mov085 bgmPlay false]
+[wt 0.6]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+[wt 30.0]
+
+[charaTalk depthOff]
+[charaDepth I 4]
+[charaDepth J 5]
+
+[overlayFadein I 1.0 0,-200]
+[wt 1.0]
+
+[scene 106500]
+[wt 3.0]
+
+[bgm BGM_EVENT_77 1.0 1.0]
+[overlayFadein J 1.0 0,-200]
+[wt 1.0]
+[charaFadeout I 1.0]
+[wt 1.0]
+
+[charaFadeout J 0.3]
+[wt 0.3]
+[charaTalk depthOn]
+
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠ジーク
+でも[line 3]こうしてマスターと、[r]あなたたちと一緒に戦えて、
+[k]
+
+＠ジーク
+少しだけ……[r]前より誇らしい気分になれたのは真実だと思う。
+[k]
+
+＠ジーク
+俺が俺であることに、自信が持てた……というかな。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ゲオルギウス
+ひょっとすると……ジークフリート殿はあなたに[r]それをプレゼントしたかったのかもしれませんね。
+[k]
+
+＠ゲオルギウス
+ほら、時期が時期ですから。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠サンタカルナ
+む……プレゼントと聞けば[r]サンタが負けるわけにはいかん。
+[k]
+
+[charaFace D 1]
+＠サンタカルナ
+だが今の言葉を聞く限り、[r]オレも最低限の働きはできたように思う。
+[k]
+
+＠サンタカルナ
+ボクサーの戦いは子供に勇気を与えるもの。[r]当然のプレゼントだ、受け取っておくがいい。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 1.0]
+
+[charaFace F 7]
+[wt 1.2]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+＠アルジュナ・オルタ
+…………。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut S 1]
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+＠マシュ
+マスター。アルジュナ・オルタさんが、[r]川をじっと見つめていらっしゃいます。
+[k]
+
+？1：綺麗な川を取り戻せてよかったね
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR S 1200,2000]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アルジュナ・オルタ
+マスター。[r]この光景は……普通ですか？
+[k]
+
+？1：普通になったと思うよ
+
+[charaFace B 1]
+＠アルジュナ・オルタ
+……そうですか。
+[k]
+
+＠アルジュナ・オルタ
+私には好きなものも嫌いなものもありません。[r]ですからこの光景への評価基準がなかったのですが……
+[k]
+
+[charaFace B 12]
+＠アルジュナ・オルタ
+マスターがそう言われるのであれば、[r]そうなのでしょう。
+[k]
+
+？2：むしろ最高だよ
+
+[charaFace B 1]
+＠アルジュナ・オルタ
+……そうですね。
+[k]
+
+＠アルジュナ・オルタ
+私に好き嫌いはありませんが、[r]あなたがそう微笑んでいるのであれば[line 3]
+[k]
+
+＠アルジュナ・オルタ
+この穏やかさは、きっと、[r]そのように善なるものなのでしょう。
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 26]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+よーし。次の閉塞特異点が最後の一つだ。[r]最終決戦の地となるかもしれないよ。
+[k]
+
+＠ダ・ヴィンチ
+気合いを入れて向かおうー！
+[k]
+
+[branch lblConf3]
+
+[label lblNotClear3]
+
+[charaPut S 1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+よーし。次の閉塞特異点が最後の一つだ。[r]最終決戦の地となるかもしれないよ。
+[k]
+
+＠ダ・ヴィンチ
+気合いを入れて向かおうー！
+[k]
+
+[label lblConf3]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

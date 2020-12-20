@@ -1,0 +1,1306 @@
+
+
+
+＄94-05-42-06-2-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+
+[charaSet B 7033002 1 アルジュナ・オルタ]
+[charaSet C 4006001 1 ゲオルギウス]
+[charaSet D 1048000 1 サンタカルナ]
+[charaSet E 99502600 1 マシュ]
+[charaSet F 5038000 1 ジーク]
+[charaSet G 3005001 1 エリザベート]
+[charaSet H 3046001 1 ヴリトラ]
+
+[sceneSet S 44101 1]
+[charaScale S 1.01]
+
+[charaSet T 5009040 1 エフェクト用ダミー]
+
+[imageSet U back10000_fs 1]
+[charaScale U 1.5]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[charaSet A 1098124510 1 ダ・ヴィンチ]
+[branch lblConf]
+
+[label lblNotClear]
+[charaSet A 98111500 1 ダ・ヴィンチ]
+[label lblConf]
+
+
+[charaPutFSR T 1200,2000]
+[charaEffect T bit_talk_10_LowLevel]
+
+[charaDepth S 1]
+
+[scene 44101]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠サンタカルナ
+まさか川が縦に割れるとはな。危ないところだった。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 31]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+ラムダリリスのような氷の波とは違う。
+[k]
+
+＠ダ・ヴィンチ
+何かの波動のようなものが上流から伝わってきて、[r]それで凍っていた川が一時的に割れたんだ。
+[k]
+
+[charaFace A 34]
+＠ダ・ヴィンチ
+ええい、これからは事前察知できるように[r]パラメータを追加しておかなきゃ。
+[k]
+
+[branch lblConf2]
+
+[label lblNotClear2]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+ラムダリリスのような氷の波とは違う。
+[k]
+
+＠ダ・ヴィンチ
+何かの波動のようなものが上流から伝わってきて、[r]それで凍っていた川が一時的に割れたんだ。
+[k]
+
+＠ダ・ヴィンチ
+ええい、これからは事前察知できるように[r]パラメータを追加しておかなきゃ。
+[k]
+
+[label lblConf2]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+＠マシュ
+マスター、皆さん、大丈夫ですか？
+[k]
+
+？1：なんとか横に避けたから大丈夫！
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠アルジュナ・オルタ
+またです。回避を。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+[se ad14]
+[seVolume ad14 0 0]
+
+[shake 0.05 2 2 0]
+
+[seVolume ad14 0.8 1.0]
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.9]
+
+
+[se ade536]
+[seVolume ade536 0 0]
+[seVolume ade536 0.6 1.0]
+[effect bit_talk_ice_crack_v]
+[wt 0.1]
+[se ad641]
+[se ad676]
+[seVolume ad676 0 0.1]
+[wt 0.2]
+[se ad641]
+[se ad676]
+[seVolume ad676 0 0.2]
+[wt 0.25]
+[se ad641]
+[se ad676]
+[seVolume ad676 0 0.4]
+[se ade187]
+[seVolume ade187 0 0.3]
+[wt 0.25]
+[se ad641]
+[se ad676]
+[seVolume ad676 0 0.6]
+[se ade187]
+[seVolume ade187 0 0.6]
+[wt 0.25]
+[se ad641]
+[se ad676]
+[seVolume ad676 0 1.0]
+[se ade187]
+[seVolume ade187 0 1.0]
+[seStop ade536 1.0]
+[wt 0.4]
+
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+
+[effectDestroy bit_talk_ice_crack_v]
+[pictureFrame]
+
+[charaFadein S 0.1 0,-200]
+[wt 0.5]
+
+[shake 0.05 1 1 0]
+
+[seVolume ad14 0.4 0.2]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠ゲオルギウス
+今度は左寄りに来ています！[r]右に退避！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[se ad7]
+[charaMoveFSL S -99,-240 0.3]
+[charaMoveScale S 1.3 0.3]
+[wt 0.5]
+
+[shake 0.05 2 2 0]
+[seVolume ad14 0.8 1.0]
+[wt 0.5]
+
+[se ade536]
+[seVolume ade536 0 0]
+[seVolume ade536 0.6 1.0]
+[effect bit_talk_ice_crack_v -850,0]
+[wt 0.1]
+[se ad641]
+[se ad676]
+[seVolume ad676 0 0.1]
+[wt 0.2]
+[se ad641]
+[se ad676]
+[seVolume ad676 0 0.2]
+[wt 0.25]
+[se ad641]
+[se ad676]
+[seVolume ad676 0 0.4]
+[se ade187]
+[seVolume ade187 0 0.3]
+[wt 0.25]
+[se ad641]
+[se ad676]
+[seVolume ad676 0 0.6]
+[se ade187]
+[seVolume ade187 0 0.6]
+[wt 0.25]
+[se ad641]
+[se ad676]
+[seVolume ad676 0 1.0]
+[se ade187]
+[seVolume ade187 0 1.0]
+[seStop ade536 1.8]
+[seStop ad14 1.8]
+[wt 0.45]
+[se ad641]
+[seVolume ad641 0 0.4]
+[se ad676]
+[seVolume ad676 0 0.3]
+[se ade187]
+[seVolume ade187 0 0.2]
+[wt 0.55]
+[se ad641]
+[seVolume ad641 0 0.1]
+[se ad676]
+[seVolume ad676 0 0.1]
+[se ade187]
+[seVolume ade187 0 0.1]
+[wt 0.8]
+
+[effectDestroy bit_talk_ice_crack_v]
+[wt 1.0]
+[shakeStop]
+
+[charaMove S 0,-200 0.5]
+[charaMoveScale S 1.01 0.5]
+[wt 0.7]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ゲオルギウス
+あの走り来るかの如き[#裂開:れっかい]そのものに[r]飲み込まれてしまえば、
+[k]
+
+＠ゲオルギウス
+確実にこの氷の下に落下し閉じ込められることに[r]なってしまうでしょう。致命的です。
+[k]
+
+＠ゲオルギウス
+ただ、川の割れ自体はほどなくして回復……というのも[r]おかしいですが、また凍り付いて確かに足場になります。
+[k]
+
+＠ゲオルギウス
+この狭い川の中、直撃を避けながら進む、[r]ということになりそうですね。
+[k]
+
+？1：なんか[#ＳＴＧ:シューティング]っぽい動き[&だ:だね]……
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠サンタカルナ
+ガネーシャ神が遊んでいるのを後ろで見たことはある。[r]動体視力の訓練に良さそうだったな。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠アルジュナ・オルタ
+マスターを死に至らしめる可能性を持つ、[r]攻撃は、悪……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ジーク
+待った。あなたの力なら真正面から迎撃もできる[r]だろうけど、間違いなく余波でもっと川が割れるぞ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠アルジュナ・オルタ
+成程。されど、ここで滅ぼすと、[r]マスターが進めなくなってしまう……と。
+[k]
+
+[charaFace B 0]
+＠アルジュナ・オルタ
+わかりました。今は……善を護るのみ。[r]この根幹を、断たなければ……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠ジーク
+タラスクがいたときは脅威を[r]飛んで避けたりしていたんだろう？
+[k]
+
+＠ジーク
+俺がもう少し気軽に竜の状態になれたのなら、[r]みんなを飛んで運ぶこともできたかもしれないが。
+[k]
+
+＠ジーク
+あの宝具は維持するのがあまりに難しいからな……。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ゲオルギウス
+構いませんよ。避けて済むならそれでいい。[r]本番の前に力を使い果たしてはコトです。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠ジーク
+そう言えば、聞くのを忘れていた。[r]これも大事なことだ。
+[k]
+
+＠ジーク
+俺は竜殺しの英雄ジークフリートの力を持ってはいるが、[r]同時に邪竜ファヴニールの要素も[#具:そな]えている。
+[k]
+
+[charaFace F 4]
+＠ジーク
+その……罪ありき、という感じにはならないのか？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ゲオルギウス
+ふふ。さすがに仲間に竜属性があるだけで[r]剣に手をかけたりはしませんよ。
+[k]
+
+＠ゲオルギウス
+先程も言いましたが、あれは概念のようなもの。
+[k]
+
+＠ゲオルギウス
+それをサーヴァントの身と化して[r]なお身に[#纏:まと]っているというのであれば、
+[k]
+
+＠ゲオルギウス
+それに足る理由が[line 3]
+[k]
+
+＠ゲオルギウス
+その者の人生や使命や運命に不可分のものとして[r]あったのだろう、と理解するだけです。
+[k]
+
+[charaFace C 0]
+＠ゲオルギウス
+まぁ私は私であるゆえ、[r]まず警戒はしてしまいますがね。
+[k]
+
+＠ゲオルギウス
+そう[line 3]ただし、です。
+[k]
+
+＠ゲオルギウス
+たとえ立場的には仲間として在ろうとも、
+[k]
+
+＠ゲオルギウス
+邪悪な竜で、私が[#それ]をせねば正義が守られぬと[r]判断したのであれば。
+[k]
+
+＠ゲオルギウス
+私は[#躊躇:ためら]いはしないでしょう。たとえ共に旅をし、[r]言葉を交わした間柄であったとしてもね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠ジーク
+……わかった。悪しきものにならないよう、[r]心に留めておくよ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ゲオルギウス
+そう自分から言えるのならば、[r]あなたは大丈夫ですよ。保証します。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠サンタカルナ
+また来たぞ。[r]サイドステップの鍛錬だ。気合いを入れろ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠アルジュナ・オルタ
+マスター、速やかに１０時の方向へ。[r]悪は見逃しません。
+[k]
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_81 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaFadeout S 0.1]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut T 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠マシュ
+それなりに目的地には近付いたはずですが……[r]何か変化はありませんか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠サンタカルナ
+……待て。何かが聞こえる。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[se ade529]
+[seVolume ade529 0 0]
+[seVolume ade529 0.4 0.1]
+[wt 2.4]
+
+[seStop ade529 0.8]
+[wt 1.2]
+
+？1：これは……覚えがある……
+？2：今までの振動の正体は、まさか
+？！
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 0,-50]
+＠ヴリトラ
+うむ、歌か。歌もいいものじゃ。[r]久しぶりに聞いたのう。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.4 0,-50]
+[wt 0.4]
+
+[bgm BGM_EVENT_13 0.1]
+
+＠エリザベート
+えー、どれだけ潤いのない生活を送ってきてたの？[r]可哀想ね。
+[k]
+
+[charaFace G 1]
+＠エリザベート
+でも、そんなところで久しぶりに聞く歌が[r]このスペシャルアイドルの楽曲だなんて！
+[k]
+
+＠エリザベート
+アナタ、輝けるほど幸運じゃない！[r]ゴールデンラッキーね！
+[k]
+
+[charaFace G 0]
+＠エリザベート
+いつもみたいに床を転げ回ったり全力で遠ざかったりして[r]ライブにノる[#観客:オーディエンス]と違って、
+[k]
+
+＠エリザベート
+静かに味わってくれるタイプは初め[line 3][r]ゴホンゴホン、久しぶりな気がするし！
+[k]
+
+＠エリザベート
+特別にリクエストでも[r]聞いてあげちゃおうかしら？
+[k]
+
+＠エリザベート
+身体中の体液という体液が流れ出す叙情的な[#洗脳曲:バ ラ ー ド]？[r]それとも嗜虐が溢れ出す不健康な[#破壊曲:メ タ ル]？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth H 4]
+[charaDepth G 6]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFace G 0]
+[charaFadeinFSR G 0.1 256,-50]
+[charaFadeinFSL H 0.1 -256,-50]
+＠ヴリトラ
+ふーむ。任せる。
+[k]
+
+[charaFace H 4]
+＠ヴリトラ
+わえは歌は好きじゃが、詳しくはない。[r]というか違いがよう分からん。
+[k]
+
+[charaFace H 0]
+＠ヴリトラ
+歌は歌であるだけでよいものじゃろう。[r]なんでも楽しくなれるぞ。
+[k]
+
+[charaFace G 5]
+＠エリザベート
+……ひょっとして今まで何曲か歌ってたのも、[r]曲調の違いとか分かってなかった？
+[k]
+
+
+[charaFace H 4]
+＠ヴリトラ
+正直、さっぱりじゃ。
+[k]
+
+[charaFace H 1]
+＠ヴリトラ
+いや、鱗で鋼を引っ掻くような歌じゃな、とか、[r]断末魔のようじゃな、というのはわかるぞ。安心せい。
+[k]
+
+[charaFace G 4]
+＠エリザベート
+……歌ならなんでもいいっていうのは[r]すんごーくレベルが低い審査員ってコト？
+[k]
+
+＠エリザベート
+浮かれてて大丈夫、[#私:アタシ]？[r]カラオケの採点機の方がマシじゃないかしら？
+[k]
+
+[charaFace G 2]
+＠エリザベート
+って、そうこうしてるうちに[&子イヌ:子ジカ]！
+[k]
+
+[charaFace G 0]
+＠エリザベート
+ステージっていうよりはＰＶの撮影現場みたいな[r]舞台だと思ってたけど、
+[k]
+
+＠エリザベート
+ちゃんと他の客も来るのね。安心したわ！
+[k]
+
+[charaFace H 6]
+＠ヴリトラ
+言うたであろう？
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[bgmStop BGM_EVENT_13 0.8]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[pictureFrame]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.4]
+
+？1：あれはエリちゃんの影かな
+？！
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk depthOn]
+[charaPut T 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠マシュ
+はい。これまでの閉塞特異点にいたものと同じ[r]複製存在だと思われます。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ジーク
+本物ではない、というわけだな。[r]加減を気にする必要はないか。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠エリザベート
+はぁ？　本物のアイドルを捕まえて何言ってんのアンタ？[r]さては音楽の良さがわからない系ね？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠ジーク
+そうだな。[r]すまない、よく分からない。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠エリザベート
+正直！　いいわ、許してあげる。[r]ようは初めてのライブ、初めての[#音楽体験:シ　ョ　ッ　ク]！　だものね？
+[k]
+
+＠エリザベート
+そういう子をアイドルに目覚めさせるのも[r]アイドルのディスタンスなディスティニー。
+[k]
+
+＠エリザベート
+で、他のアナタたちは？[r]どんなジャンルが好みなの？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ゲオルギウス
+賛美歌が一番かと。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠エリザベート
+賛美するってことは応援ソングね。
+[k]
+
+＠エリザベート
+オッケー、いつも自分に対して歌ってるし！[r]どんとこいよ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠サンタカルナ
+ロードワーク中、集中するためにイヤホンで[r]音楽を聞く……というスタイルもあるようだな。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠エリザベート
+ノリがよくてテンションが上がるやつね！[r]ＯＫ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠アルジュナ・オルタ
+音楽というものは、私には縁が無いもの。[r]理解もできぬと思っていましたが[line 3]
+[k]
+
+[charaFace B 0]
+＠アルジュナ・オルタ
+不思議なことに。先程のあなたの声には、[r]何かを、感じました。
+[k]
+
+[charaFace B 8]
+＠アルジュナ・オルタ
+あの抑揚の揺らぎ。言葉のリズム。[r]あれが……曲、というものなのですね。
+[k]
+
+[charaFace B 1]
+＠アルジュナ・オルタ
+使命に必要でない欲を切り捨て、戒めた私にも、[r]届く音があるとは。
+[k]
+
+＠アルジュナ・オルタ
+新鮮で、心地好いと言えます[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠エリザベート
+ち[messageShake 0.02 3 3 0.5]ょっとちょっと何よー！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk depthOff]
+[charaDepth G 6]
+[charaDepth B 4]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFace B 1]
+[charaFadein G 0.1 -230,0]
+[charaFadein B 0.1 230,0]
+
+[se ad168]
+[charaMoveReturn G -180,0 0.4]
+＠エリザベート
+真面目に褒められる客もいるんじゃない！[wt 0.3][se ad168][charaMoveReturn G -180,0 0.4][r]サインいる？　写真集も？[charaFace B 3][wt 0.4]
+[k]
+
+[se ad168]
+[charaMoveReturn G -180,0 0.4]
+＠エリザベート
+やだ、カンバッチコンプありがとー！[wt 0.3][se ad168][charaMoveReturn G -180,0 0.4][charaMove B 230,-10 0.6]
+[k]
+
+
+＠アルジュナ・オルタ
+これは……たくさんの品物……ですね。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk depthOn]
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 33]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+大量のグッズを押しつけられている……！[r]これも授かりの英雄の宿命ってヤツかな？
+[k]
+
+[branch lblConf3]
+
+[label lblNotClear3]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+大量のグッズを押しつけられている……！[r]これも授かりの英雄の宿命ってヤツかな？
+[k]
+
+[label lblConf3]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+
+
+
+
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 1]
+＠ヴリトラ
+んん？　なんじゃあやつは。
+[k]
+
+＠ヴリトラ
+おかしな匂いにも程があるの。[r]神の気配が強すぎる。
+[k]
+
+＠ヴリトラ
+あのような者まで影法師として使役するか。[r]難儀なことじゃ。
+[k]
+
+[charaFace H 1]
+＠ヴリトラ
+しかしまぁ、わえはまだ神と決戦する気はない。[r]ここもこやつに任せるとして[line 3]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ジーク
+待て、邪竜ヴリトラ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 1]
+＠ヴリトラ
+ほぅ？　貴様もおかしな気配じゃな、小僧。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ジーク
+俺も竜だ。[r]……竜でもある、と言ったほうが正しいが。
+[k]
+
+＠ジーク
+だから話をしよう。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk H]
+[charaFace H 11]
+[charaFadein H 0.1 1]
+＠ヴリトラ
+同族のよしみで言うことを聞け、[r]というような口ぶりじゃな。
+[k]
+
+＠ヴリトラ
+そのようなものは無意味よ。
+[k]
+
+[charaFace H 0]
+＠ヴリトラ
+この娘とて、因果を辿れたゆえこうして[r]形を模しておるというだけで、
+[k]
+
+＠ヴリトラ
+竜であるから選んだのではない。
+[k]
+
+[charaFace H 4]
+＠ヴリトラ
+いや……実際、こやつ、竜なのかのう？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠エリザベート
+ふふん。アイドルには秘密が多いもの、[r]つまりはノーコメントね。
+[k]
+
+＠エリザベート
+アイドルはみんなの幻想にならなくちゃ[r]いけないメタ存在、とだけ言っておくわ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+＠ジーク
+……知っている。彼女は[#無辜:むこ]の怪物だ。
+[k]
+
+＠ジーク
+その苛烈な在り方が後世の人々の間で[r]魔性の存在と結びつけられ、変質した[line 3]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+ウソかホントか知らないけど、[r]カルデアのデータベースには、
+[k]
+
+＠ダ・ヴィンチ
+『バートリー家の紋章がドラゴンの歯だったために[r]　竜の因子が入った』とか記されているよ。
+[k]
+
+＠ダ・ヴィンチ
+ま、個人的にはそれだけじゃないとは思うけどね。
+[k]
+
+[branch lblConf4]
+
+[label lblNotClear4]
+
+[charaPut T 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+ウソかホントか知らないけど、[r]カルデアのデータベースには、
+[k]
+
+＠ダ・ヴィンチ
+『バートリー家の紋章がドラゴンの歯だったために[r]　竜の因子が入った』とか記されているよ。
+[k]
+
+[charaFace A 4]
+＠ダ・ヴィンチ
+ま、個人的にはそれだけじゃないとは思うけどね。
+[k]
+
+[label lblConf4]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+＠ジーク
+……そうだな。俺が竜であることには理由があり、[r]彼女が竜であることにもまた理由がある。
+[k]
+
+[charaFace F 5]
+＠ジーク
+だとすれば[line 3]おまえにも理由があるんだろう。[r]邪竜ヴリトラ。
+[k]
+
+[charaFace F 4]
+＠ジーク
+確かに、竜として一括りにしようというのは[r]短絡的なことだったのかもしれない……。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+[wt 1.2]
+
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠サンタカルナ
+しかし竜であるかどうかはサンタの前には関係がない。[r]オレはそれを理由としてここにいるわけではない。
+[k]
+
+＠サンタカルナ
+クリスマスを取り戻すためだ。[r]真のサンタクロースとなるためだ。
+[k]
+
+＠サンタカルナ
+相手の事情を考えすぎるのは[r]戦士の拳を鈍らせるぞ、ジーク。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ジーク
+そういうものか。[r]そういうもの、なんだろうな……。
+[k]
+
+＠ジーク
+わかった。どうあれ、[r]今はすべきことをするしかないようだ。
+[k]
+
+＠ジーク
+俺は今日は竜ではなく、竜殺しとして[r]ここに来ているんだと思い出したからな。
+[k]
+
+[messageOff]
+[charaFace F 5]
+[wt 0.6]
+
+[se adm37]
+[charaMove F 0,8 0.6]
+[wt 1.6]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アルジュナ・オルタ
+私が、ここにいるのは……悪を裁くため。[r]邪竜、ヴリトラ……見定める……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠ヴリトラ
+だからやらんというに。せっかくなのじゃ、[r]ぎりぎりまで盛り上げてもらわんとの。
+[k]
+
+＠ヴリトラ
+なに、いずれわえが直接相手をするときは来る。[r]タイミングが重要なのじゃ、こういうのはな。
+[k]
+
+＠ヴリトラ
+そのときまで、[r]せいぜい自らを磨いておくがよいぞ？
+[k]
+
+[messageOff]
+[se ade282]
+[wt 0.1]
+[charaSpecialEffect H wipeTime 0,0 1.0]
+[wait charaSpecialEffect H]
+[wt 1.1]
+
+
+[charaPut T 1]
+[charaTalk E]
+[charaFace E 12]
+[charaFadein E 0.1 1]
+＠マシュ
+また逃げられてしまいましたね……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR T 1200,2000]
+[charaEffectStop T bit_talk_10_LowLevel]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠サンタカルナ
+問題はない。[r]一歩ずつコーナーに追い詰めていると感じる。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ジーク
+カルナがそう言うのならそうなんだろう。
+[k]
+
+＠ジーク
+閉塞特異点を解放し、サンタを助ける。[r]その目標のために、俺は今できることをするだけだ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ゲオルギウス
+それがいいでしょう。[r]いきなり竜の目を狙っても剣が届くとは限りません。
+[k]
+
+＠ゲオルギウス
+まずは手足を攻撃し体勢を崩す。[r]その組み立ても大事なことです。
+[k]
+
+＠ゲオルギウス
+そう、竜殺しとは何も結果のみが[r]形作るのではない。
+[k]
+
+＠ゲオルギウス
+強大なる竜を前にしてなお、逃げずに戦うという[r]意志を持ち続けることができたとき、
+[k]
+
+＠ゲオルギウス
+その先にただ待ち受けているものなのです。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ジーク
+意志か。俺にあるとすればそれだけだな。
+[k]
+
+＠ジーク
+大恩あるジークフリートに託された以上、[r]逃げるという選択肢だけはない。
+[k]
+
+＠ジーク
+自分にできるかどうかはわからないが。[r]自分なりの竜殺しを目指してみるさ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠エリザベート
+え、マジで？　[#私:アタシ]殺されちゃうの？
+[k]
+
+＠エリザベート
+痴情のもつれとかアイドル的に大スキャンダルだから[r]ゼッタイ駄目なんだけど。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 6]
+[charaDepth U 4]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+＠ジーク
+あ、いや、言葉のあやだ。[r]そういう心意気で、という話。
+[k]
+
+[charaPut U 0,-200]
+[charaFace F 4]
+[charaFadeTime U 0.1 0.6]
+＠ジーク
+（いや、でも、複製存在とはいえ、[r]　倒す以上はそういうコトになるのか……？）
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout U 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠エリザベート
+なーんだ。つまりライブは戦場っていう[r]心構え的なアレよね。当然だわ。
+[k]
+
+[charaFace G 2]
+＠エリザベート
+それじゃあ[line 3]魂震わせる[#私:アタシ]のライブ、[r]死ぬ気で楽しんでいってちょうだい！
+[k]
+
+？1：[#身:耳]を守るためにも、戦うしかない！
+？2：ライブの押し売りはノーセンキュー！
+？！
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]
