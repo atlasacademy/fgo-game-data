@@ -1,0 +1,1040 @@
+
+
+
+＄94-05-42-07-2-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+
+[charaSet A 1048000 1 サンタカルナ]
+[charaSet B 99502600 1 マシュ]
+[charaSet C 7008001 1 ベオウルフ]
+[charaSet D 4006001 1 ゲオルギウス]
+[charaSet E 7033002 1 アルジュナ・オルタ]
+[charaSet F 3046001 1 ヴリトラ]
+[charaSet G 1098124510 1 ダ・ヴィンチ]
+[charaSet H 98111500 1 ダ・ヴィンチ（術）_通信]
+[charaSet I 1098204700 1 アルジュナ]
+[charaSet J 98115000 1 通信用]
+
+[imageSet K back10000_fs 1]
+[charaScale K 1.5]
+
+[charaSet L 98115000 1 エフェクト用]
+[charaSet M 98115000 1 エフェクト用]
+
+[charaPutFSR J 1200,2000]
+[charaEffect J bit_talk_10_LowLevel]
+
+[charaDepth K 1]
+[charaDepth G 2]
+[charaDepth H 3]
+[charaDepth D 4]
+[charaDepth A 5]
+[charaDepth F 6]
+[charaDepth L 7]
+[charaDepth M 8]
+
+[scene 106600]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+？1：強い……！
+？！
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-12]
+[wt 0.4]
+
+[charaMove A 0,0 0.6]
+[charaShake A 0.05 1 1 0.6]
+[wt 0.6]
+
+＠サンタカルナ
+っ……まだ、だ。[r]オレは、何度でも、立ち上がる……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠アルジュナ・オルタ
+…………。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaPut K 0,-200]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaFadeTime K 0.1 0.6]
+＠ゲオルギウス
+（粘ってはいますが……皆のダメージは大きい。[r]　いえ、それだけではなく！）
+[k]
+
+[charaFadeout K 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠ベオウルフ
+つーか、これは、どうなってやがる。[r][#攻撃が届かねぇ]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ヴリトラ
+ふむ。これは誤算じゃの。[r]予想より早く、[#馴染んでしもうたか]。
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad39]
+[effect bit_talk_20]
+[wt 2.5]
+
+[effectDestroy bit_talk_20]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaPut J 0,0]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+＠マシュ
+あれは……聖杯……！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+
+[charaTalk G]
+[charaFace G 21]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+やはり聖杯を持っていたのか。[r]予想はできていたよ。
+[k]
+
+＠ダ・ヴィンチ
+サンタの力に根元から干渉し、
+[k]
+
+＠ダ・ヴィンチ
+さらに特異点をいくつも閉塞させるなんてことを[r]単体の力だけでやるのは、
+[k]
+
+＠ダ・ヴィンチ
+ヴリトラクラスの存在でも[r]なかなか骨の折れることだろうからね。
+[k]
+
+[charaFace G 34]
+＠ダ・ヴィンチ
+でも、この異様な防御力は……？
+[k]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 0,-90]
+＠H：ダ・ヴィンチ
+やはり聖杯を持っていたのか。[r]予想はできていたよ。
+[k]
+
+＠H：ダ・ヴィンチ
+サンタの力に根元から干渉し、
+[k]
+
+＠H：ダ・ヴィンチ
+さらに特異点をいくつも閉塞させるなんてことを[r]単体の力だけでやるのは、
+[k]
+
+＠H：ダ・ヴィンチ
+ヴリトラクラスの存在でも[r]なかなか骨の折れることだろうからね。
+[k]
+
+[charaFace H 4]
+＠H：ダ・ヴィンチ
+でも、この異様な防御力は……？
+[k]
+
+[label lblConf1]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ヴリトラ
+やはり自分以外のものを使うのは慣れんのう。[r]加減がわからん。
+[k]
+
+＠ヴリトラ
+が、一度こうなってしまえばもはや戻るまい。
+[k]
+
+＠ヴリトラ
+わえはインドラと戦うときのような、[r]真に力あるわえとなってしまい[line 3]
+[k]
+
+[charaFace F 4]
+＠ヴリトラ
+貴様らの攻撃はこの身には届かぬ、と。
+[k]
+
+＠ヴリトラ
+やれやれ。[r]となれば、これ以上続けても楽しみはないの。
+[k]
+
+[charaFace F 11]
+＠ヴリトラ
+つまらん。[r]本当に、つまらんが[line 3]仕方ない。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 1.0]
+[charaCrossFade F 1098204500 0 0.4]
+[wait charaCrossFade]
+[wt 1.2]
+
+＠ヴリトラ
+殺すか。
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ade391]
+[effect bit_talk_charge_blu]
+[wt 2.4]
+
+？1：………………！
+？！
+
+[seStop ade391 0.1]
+[effectDestroy bit_talk_charge_blu]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk on]
+[charaTalk depthOff]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[charaFadeTime K 0.1 0.6]
+＠ゲオルギウス
+（なんという殺気[line 3]ですが退却はありえません。[r]　せめてマスターを逃がす時間は稼がねば！）
+[k]
+
+[messageOff]
+[charaFadeout K 0.1]
+
+＠ゲオルギウス
+我[messageShake 0.02 3 3 0.6]が命に代えても！[r]『[#力屠る祝福の剣:ア　　ス　　カ　　ロ　　ン]』！！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 13]
+[charaFadein E 0.1 1]
+＠アルジュナ・オルタ
+[#廻剣:かいけん]、駆動[line 3]
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+
+[charaTalk off]
+[charaDepth D 6]
+[charaDepth E 5]
+
+[charaFace D 2]
+[charaFace E 13]
+[charaFadeinFSL D 0.1 0]
+[charaFadeinFSR E 0.1 2]
+
+[se ad39]
+[charaPutFSR L 256,0]
+[charaPutFSL M -256,0]
+[charaEffect L bit_talk_36]
+[charaEffect M bit_talk_36]
+[wt 1.6]
+
+[fadeout white 0.4]
+[seStop ad39 0.4]
+[wait fade]
+
+[charaPutFSR L 1200,2000]
+[charaPutFSR M 1200,2000]
+[charaEffectDestroy L bit_talk_36]
+[charaEffectDestroy M bit_talk_36]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+
+[wt 0.5]
+[scene 10000]
+
+[fadein white 0.4]
+[wait fade]
+
+[se ad171]
+[effect bit_talk_h_slash01_fs]
+[wt 0.5]
+
+[se ad85]
+[wt 0.1]
+[effect bit_talk_gram_slash_04_fs 0,0 H]
+[wt 0.5]
+
+[se ad170]
+[seVolume ad170 0 0.4]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFFFA]
+[wt 0.1]
+[effectDestroy bit_talk_h_slash01_fs]
+[effectDestroy bit_talk_gram_slash_04_fs]
+
+[scene 106600]
+
+[charaTalk on]
+[charaScale F 1.05]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0 0,8]
+[charaMove F 0,0 0.4]
+[charaMoveScale F 1.0 0.4]
+[wt 1.4]
+
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠アルジュナ・オルタ
+…………。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaFadeTime K 0.1 0.6]
+＠ゲオルギウス
+（我々の、あれだけの魔力量を込めた一撃でも[r]　通りませんか。これは一体[line 3]）
+[k]
+
+[charaFadeout K 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaPut J 0,0]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+＠マシュ
+お二人の宝具も効かない、なんて……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+限界だ！　一時撤退を要請するよ！[r]戦闘中止、全力で退避ー！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠ベオウルフ
+できるんならとっくの昔にやってらぁ……。[r]今はコイツに背は向けらんねぇぜ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+
+[charaTalk G]
+[charaFace G 22]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+でも、キミたちの攻撃は明らかに……
+[k]
+
+[branch lblConf2]
+[label lblNotClear2]
+
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 0,-90]
+＠H：ダ・ヴィンチ
+限界だ！　一時撤退を要請するよ！[r]戦闘中止、全力で退避ー！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠ベオウルフ
+できるんならとっくの昔にやってらぁ……。[r]今はコイツに背は向けらんねぇぜ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 0,-90]
+＠H：ダ・ヴィンチ
+でも、キミたちの攻撃は明らかに……
+[k]
+
+[label lblConf2]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠ベオウルフ
+それでもだ！　さっきも話してただろうが[line 3]
+[k]
+
+＠ベオウルフ
+やらなくちゃならんときは、[r]何はどうあれやらなくちゃならねぇんだよ！
+[k]
+
+[charaFace C 5]
+＠ベオウルフ
+ってな訳で、まあ結局はコイツに回帰すらぁな！[r]うっしゃあああっ！
+[k]
+
+
+[charaFace C 2]
+＠ベオウルフ
+[f large][messageShake 0.02 3 3 0.4]『[#源流闘争:グ レ ン デ ル ・ バ ス タ ー]』！！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+同感だ。オレは身体が動くかぎり、[r]拳を打ち続けるのみ。
+[k]
+
+＠サンタカルナ
+スーリヤの力よ、我が拳に宿れ！[r]『[#聖人連続拳:ウィニング・アルカプトラ]』！！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace C 2]
+[charaFadeinFSL C 0.1 -256,0]
+
+[charaFace A 2]
+[charaFadeinFSR A 0.1 256,0]
+
+
+[se ad39]
+[charaPutFSR L 256,0]
+[charaPutFSL M -256,0]
+[charaEffect L bit_talk_36]
+[charaEffect M bit_talk_36]
+[wt 1.6]
+
+[fadeout white 0.4]
+[seStop ad39 0.4]
+[wait fade]
+
+[charaPutFSR L 1200,2000]
+[charaPutFSR M 1200,2000]
+[charaEffectDestroy L bit_talk_36]
+[charaEffectDestroy M bit_talk_36]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+
+[wt 0.5]
+[scene 10000]
+
+[fadein white 0.4]
+[wait fade]
+
+[cueSe Battle bac134]
+[effect bit_talk_14 -150,40]
+[wt 0.45]
+
+[fowardEffect bit_talk_flash_g]
+[wt 0.1]
+[se ad80]
+[wt 0.3]
+[seStop ad80 0.2]
+[wt 0.25]
+
+
+[se ad170]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFFFA]
+[wt 0.1]
+[effectDestroy bit_talk_14]
+[fowardEffectDestroy bit_talk_flash_g]
+
+[scene 106600]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0 1]
+[charaShake F 0.02 3 3 0.8]
+[wt 1.2]
+
+[charaFace F 8]
+＠ヴリトラ
+ほう……？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaFadeTime K 0.1 0.6]
+[charaPut J 0,0]
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+
+[charaTalk G]
+[charaFace G 22]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+（微かにだけど[line 3]反応が！？）
+[k]
+
+
+[branch lblConf3]
+[label lblNotClear3]
+
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 0,-90]
+＠H：ダ・ヴィンチ
+（微かにだけど[line 3]反応が！？）
+[k]
+
+[label lblConf3]
+
+[charaFadeout K 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk depthOn]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ヴリトラ
+無駄じゃ。それも今のわえに届くほどではない。[r]諦めよ[line 3]
+[k]
+
+[messageOff]
+[charaMoveScale F 1.1 0.6]
+[charaMove F 0,16 0.4]
+[wt 0.4]
+[charaMove F 0,13 0.2]
+[se ad984]
+[wt 1.2]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaFace C 5]
+[charaFadeinFSL C 0.1 0]
+
+[charaFace A 5]
+[charaFadeinFSR A 0.1 2]
+
+[se ade103]
+[seVolume ade103 0 0.3]
+[wt 0.5]
+[seStop ade103]
+[wt 0.7]
+
+[se ade103]
+[seVolume ade103 0 0.6]
+[wt 0.5]
+[seStop ade103]
+[wt 0.9]
+
+[bgmStop BGM_EVENT_24 0.4]
+[charaTalk on]
+＠I：？？？
+待つがいい、邪竜よ。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.5]
+
+
+？1：この声は[line 3]？
+？！
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+…………！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaScale F 1.0]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ヴリトラ
+うん？
+[k]
+
+＠ヴリトラ
+おう。似ているような似ていないような者が増え、[r]代わりに途中から姿を見なくなっておったが……
+[k]
+
+＠ヴリトラ
+何じゃ、インドラの子よ。
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.4 1]
+
+[wt 1.6]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ヴリトラ
+この者たちの代わりに命乞いか？
+[k]
+
+[charaFace F 5]
+＠ヴリトラ
+[line 3]くだらん。[r]貴様らがすることとしては最高級にくだらん。
+[k]
+
+[charaFace F 11]
+＠ヴリトラ
+よって聞く気はないな。わえがつまらん者どもの命を[r]どうしようがわえの勝手よ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠アルジュナ
+命乞いではない。[r]私はただ伝えに来ただけだ。
+[k]
+
+＠アルジュナ
+私は[line 3]サンタさんからプレゼントを奪った、[r][#貴様の真の目的を知っている]、と。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+＠ヴリトラ
+………………ほぅ？
+[k]
+
+＠ヴリトラ
+わえの欲しいモノが分かっておるのか？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠アルジュナ
+当然だ。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠ヴリトラ
+わえはこのようになってしまったぞ。[r]遅いとは思わぬか？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠アルジュナ
+むしろ貴様の見切りが早すぎるのだ。
+[k]
+
+[messageOff]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 1.2]
+
+[charaFace F 6]
+＠ヴリトラ
+き、ひ、ひ！[r]よかろう、インドラの子よ！
+[k]
+
+[charaFace F 1]
+＠ヴリトラ
+ここは貴様に乗せられておくとしよう。
+[k]
+
+＠ヴリトラ
+確かに、ここで少し見切りを遅くしたところで[r]何が変わるということもない。
+[k]
+
+[charaFace F 0]
+＠ヴリトラ
+一日じゃ。退屈に耐えられるのは、の。
+[k]
+
+＠ヴリトラ
+そうじゃな……わえの雲の中で待つことにするか。[r]あまり待たせるでないぞ。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 1.0]
+
+[se ade282]
+[wt 0.1]
+[charaSpecialEffect F wipeTime 0,0 1.0]
+[wait charaSpecialEffect F]
+[wt 1.1]
+
+[charaPut J 0,0]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠マシュ
+ヴリトラの反応……完全に消失しました。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+＠アルジュナ
+申し訳ありません、マスター。[r]出過ぎた真似を。
+[k]
+
+？1：[&いや:ううん]、助かったけど……どういうこと？
+？！
+
+＠アルジュナ
+今はご容赦を。
+[k]
+
+＠アルジュナ
+伝えるべきこと、伝えるべきでないこと[line 3][r]それらが私の中に混在しております。
+[k]
+
+[charaFace I 0]
+＠アルジュナ
+勿論、伝えるべきことは必ずお伝えいたしますので。[r]あとでお時間をいただけたらと思います。
+[k]
+
+＠アルジュナ
+今はただ、[r]ヴリトラとの決戦が次に持ち越されたこと……
+[k]
+
+＠アルジュナ
+そして、これは今まで通りですが、[r]そこで奴に勝てば平穏が取り戻されるということ。
+[k]
+
+＠アルジュナ
+それだけを意識していただければ充分かと。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠ダ・ヴィンチ
+そう言うならキミにも理由があるんだろう。[r]無理に今すぐ聞き出したりはしないよ。
+[k]
+
+＠ダ・ヴィンチ
+あの状況から仕切り直しができたのは大きいからね。[r]とにかく助かった。
+[k]
+
+[branch lblConf4]
+[label lblNotClear4]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-90]
+＠H：ダ・ヴィンチ
+そう言うならキミにも理由があるんだろう。[r]無理に今すぐ聞き出したりはしないよ。
+[k]
+
+＠H：ダ・ヴィンチ
+あの状況から仕切り直しができたのは大きいからね。[r]とにかく助かった。
+[k]
+
+[label lblConf4]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠マシュ
+ですが[line 3]最後にヴリトラが言っていたのは[r]どういう意味でしょう？　雲の中で待つ、とは？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠アルジュナ
+ヴリトラは高き山に水を閉じ込め、[r][#干魃:かんばつ]を起こすとされています。
+[k]
+
+＠アルジュナ
+そしてその山とは天を覆う雲のことだとも[r]語られておりました。
+[k]
+
+＠アルジュナ
+つまりヴリトラの言う雲は、[r]奴が水を閉じ込める高き山と同義。
+[k]
+
+＠アルジュナ
+すなわち、ヒマラヤ山脈のことを[r]意味すると思われます[line 3]
+[k]
+
+[messageOff]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_70 1.5]
+[wait fade]
+
+[charaPutFSR J 1200,2000]
+
+[charaFadeout I 0.1]
+[wt 0.5]
+
+[wt 1.5]
+[fadein black 1.5]
+[wait fade]
+
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠アルジュナ・オルタ
+何かが……奇妙です……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠ベオウルフ
+まったくだ。何だあ、あの硬さは？[r]これだから竜は嫌いなんだよ。
+[k]
+
+＠ベオウルフ
+もちっとシンプルに[r]ケリつけさせちゃくんねぇかね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ゲオルギウス
+さすがはヴリトラ、神の好敵手たる竜。[r]生半可な強さではありませんでした。
+[k]
+
+＠ゲオルギウス
+しかし、私は決して……。
+[k]
+
+[messageOff]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[charaMove A 0,-7 0.8]
+
+[se ad421]
+[wt 1.0]
+
+[charaFace A 5]
+＠サンタカルナ
+オレの拳が、ああも届かぬとは。
+[k]
+
+＠サンタカルナ
+オレは……真のサンタとなるには、[r]まだ力不足だというのか[line 3]？
+[k]
+
+＠サンタカルナ
+鍛錬しても、鍛錬し続けても、なお……！
+[k]
+
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.6]
+
+[charaPut J 0,0]
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+＠アルジュナ
+……………………。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

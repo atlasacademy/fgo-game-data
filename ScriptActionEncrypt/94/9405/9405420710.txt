@@ -1,0 +1,1387 @@
+
+
+
+＄94-05-42-07-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 1048000 1 サンタカルナ]
+[charaSet B 99502600 1 マシュ]
+[charaSet C 7008001 1 ベオウルフ]
+[charaSet D 1098124510 1 ダ・ヴィンチ]
+[charaSet E 98111500 1 ダ・ヴィンチ（術）_通信]
+[charaSet F 4006001 1 ゲオルギウス]
+[charaSet G 7033002 1 アルジュナ・オルタ]
+[charaSet H 7013001 1 清姫]
+[charaSet I 3046001 1 ヴリトラ]
+[charaSet J 98115000 1 通信用]
+
+[charaSet K 98115000 1 エフェクト用１]
+[charaSet L 98115000 1 エフェクト用２]
+
+[imageSet M back10000_fs 1]
+[charaScale M 1.5]
+
+
+[charaDepth M 1]
+[charaDepth I 2]
+[charaDepth F 3]
+
+[scene 31901]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.5]
+
+[se ade393]
+[shake 0.05 1 2 1.8]
+[wt 1.0]
+[seStop ade393 0.8]
+
+[se ad541]
+[seVolume ad541 0 0]
+[seVolume ad541 0.4 0.1]
+[wt 0.8]
+
+[seStop ad541 0.1]
+[se ad685]
+[effect bit_talk_ice_geyser]
+[wt 1.9]
+
+[effectDestroy bit_talk_ice_geyser]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_62 0.1]
+
+＠ベオウルフ
+気をつけな、マスター！[r]下も上もまだまだ来るぜ！
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠マシュ
+なんとか予兆を割り出したいところですが……[r]どうしても直前になってしまいます、すみません！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+下からの氷の間欠泉は、８秒後！[r]２時方向５メートル先だ、退避ー！
+[k]
+
+
+[branch lblConf1]
+[label lblNotClear1]
+
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,-90]
+＠E：ダ・ヴィンチ
+下からの氷の間欠泉は、８秒後！[r]２時方向５メートル先だ、退避ー！
+[k]
+
+[label lblConf1]
+
+[messageOff]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[se ade393]
+[shake 0.05 1 2 1.8]
+[wt 1.0]
+[seStop ade393 0.8]
+
+[se ad541]
+[seVolume ad541 0 0]
+[seVolume ad541 0.4 0.1]
+[wt 0.8]
+
+[seStop ad541 0.1]
+[se ad685]
+[effect bit_talk_ice_geyser]
+[shake 0.05 3 3 0.3]
+[wt 1.9]
+[effectDestroy bit_talk_ice_geyser]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠マシュ
+次は飛来してくる火炎弾予報をお知らせします！
+[k]
+
+＠マシュ
+２０秒後から３０秒後、[r]ところにより氷山に当たって軌道が変わるでしょう！
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_62 1.0]
+[wait fade]
+
+[charaPutFSR J 1200,2000]
+[charaFadeout B 0.1]
+
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut J 0,0]
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+
+[charaTalk D]
+[charaFace D 32]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+……ひとまず落ち着いたかな？
+[k]
+
+
+
+[branch lblConf2]
+[label lblNotClear2]
+
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 0,-90]
+＠E：ダ・ヴィンチ
+……ひとまず落ち着いたかな？
+[k]
+
+[label lblConf2]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+＠マシュ
+そのようです。
+[k]
+
+＠マシュ
+下から噴き上がってくる氷柱の間欠泉に、[r]遠方より降り注いでくる火炎弾の同時攻撃……
+[k]
+
+[charaFace B 8]
+＠マシュ
+今回もなかなか厳しいフィールドですね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ゲオルギウス
+凍った溶岩地帯、という矛盾した立地ですからね。[r]何が起こっても不思議ではありません。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+だが、オレたちは前に進むのみだ。
+[k]
+
+＠サンタカルナ
+ロードワークで足を止めていいのは[r]シャドーを行っているときのみ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠アルジュナ・オルタ
+悪を断つことを阻む悪……[r]依然、世には悪が満ちているのですね……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠ベオウルフ
+つーかよ、本当に俺でよかったのか？
+[k]
+
+[charaFace C 0]
+＠ベオウルフ
+俺は確かに竜を退治はしたが、[r]この全盛期の俺にとっちゃあ、いささか[#遠い]。
+[k]
+
+＠ベオウルフ
+爺さんになってからの話だからな。
+[k]
+
+[charaFace C 4]
+＠ベオウルフ
+まあサーヴァントだから、[r]覚えてねぇってわけでもねえが……
+[k]
+
+[charaFace C 0]
+＠ベオウルフ
+竜を相手にすんのは面倒臭ぇって気分のほうが[r]強く残ってるレベルだぜ。
+[k]
+
+＠ベオウルフ
+有効活用できるかどうかはわからねえぞ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+いろいろな戦力値を総合的に判断した結果さ、[r]キミならきっと大丈夫だよ。
+[k]
+
+[charaFace D 19]
+＠ダ・ヴィンチ
+ここまで来て帰る気もないだろう？
+[k]
+
+
+[branch lblConf3]
+[label lblNotClear3]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-90]
+＠E：ダ・ヴィンチ
+いろいろな戦力値を総合的に判断した結果さ、[r]キミならきっと大丈夫だよ。
+[k]
+
+[charaFace E 1]
+＠E：ダ・ヴィンチ
+ここまで来て帰る気もないだろう？
+[k]
+
+[label lblConf3]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ベオウルフ
+当然だ。竜は嫌いだが、[r]こんな祭りに参加しねえでいられるかよ！
+[k]
+
+＠ベオウルフ
+一人じゃねぇなら、面倒臭ぇ部分は任して[r]俺は殴るのに専念できるかもしんねえしな。
+[k]
+
+＠ベオウルフ
+それに、今年のサンタクロースも楽しそうだ。[r]拳闘か……ああ、いいよな、拳。男なら拳だ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+ああ。男なら拳だ。
+[k]
+
+？1：闘気をバチバチさせて笑い合うのは
+？2：今はちょっと[#止:や]めときましょうね
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ゲオルギウス
+同感です。これを放置しておくと勝手に[r]スパーリングが始まってしまいそうですからね。
+[k]
+
+＠ゲオルギウス
+それはまた暇なときに。[r]今はこの障害に対処しつつ進まねばなりません。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+一応、今わかっていることを言っておこうかな。[r]氷の間欠泉は純粋な自然現象っぽい。
+[k]
+
+[charaFace D 24]
+＠ダ・ヴィンチ
+火炎弾のほうはおそらく何者かの攻撃だ。
+[k]
+
+＠ダ・ヴィンチ
+だいたいキミたちのところ目掛けて飛んできているし、[r]他の場所に落ちている様子もないからね。
+[k]
+
+[charaFace D 25]
+＠ダ・ヴィンチ
+火炎弾中心部の材質はおそらくこの場所の岩塊。
+[k]
+
+＠ダ・ヴィンチ
+凍ったそれを掘り出すか砕くかして、[r]それを超火力の炎で包んで、
+[k]
+
+＠ダ・ヴィンチ
+攻城兵器並みの速度で撃ち出してきている……[r]という感じかな。
+[k]
+
+＠ダ・ヴィンチ
+つまり火炎だけでなく、質量も持った危険物と言える。[r]一発でもくらうとヤバイね。
+[k]
+
+[branch lblConf4]
+[label lblNotClear4]
+
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0,-90]
+＠E：ダ・ヴィンチ
+一応、今わかっていることを言っておこうかな。[r]氷の間欠泉は純粋な自然現象っぽい。
+[k]
+
+＠E：ダ・ヴィンチ
+火炎弾のほうはおそらく何者かの攻撃だ。
+[k]
+
+＠E：ダ・ヴィンチ
+だいたいキミたちのところ目掛けて飛んできているし、[r]他の場所に落ちている様子もないからね。
+[k]
+
+＠E：ダ・ヴィンチ
+火炎弾中心部の材質はおそらくこの場所の岩塊。
+[k]
+
+＠E：ダ・ヴィンチ
+凍ったそれを掘り出すか砕くかして、[r]それを超火力の炎で包んで、
+[k]
+
+[charaFace E 0]
+＠E：ダ・ヴィンチ
+攻城兵器並みの速度で撃ち出してきている……[r]という感じかな。
+[k]
+
+＠E：ダ・ヴィンチ
+つまり火炎だけでなく、質量も持った危険物と言える。[r]一発でもくらうとヤバイね。
+[k]
+
+[label lblConf4]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠アルジュナ・オルタ
+問題はありません。少なくとも、マスターの身に[r]その邪悪が届くことはないでしょう。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ベオウルフ
+今の時点で攻撃を仕掛けてきてるっつうことは、[r]向こうにはやる気がありそうだ。そうこなくちゃな！
+[k]
+
+[charaFace C 0]
+＠ベオウルフ
+ところで、俺はヴリトラという竜のことは[r]よく知らねぇんだが……炎を吐くのか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+吐いていた気がする。[r]火の中から生まれたという話もあったかもしれん。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ベオウルフ
+ほう……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ゲオルギウス
+かつてあなたが倒したのも火竜という話でしたか。
+[k]
+
+＠ゲオルギウス
+あなたとはなかなか話をする機会も[r]ありませんでしたので、
+[k]
+
+＠ゲオルギウス
+これを機に知見を広めたいところではありますね。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ベオウルフ
+とは言ってもな。さっきも話したが、[r]それはこの俺の先にいる俺がやった竜殺しだ。
+[k]
+
+[charaFace C 3]
+＠ベオウルフ
+どんな気分で行ったのか。喜んで行ったのか。[r]楽しかったのか。恐れがあったのか……
+[k]
+
+＠ベオウルフ
+正直、今の俺はあのときのことを[r]一から十まではっきり覚えているわけじゃねえ。
+[k]
+
+[charaFace C 4]
+＠ベオウルフ
+ただ確かなのは[line 3]そうだな。
+[k]
+
+[charaFace C 0]
+＠ベオウルフ
+やらなくちゃなんなかったからやった。[r]それだけだろう。
+[k]
+
+[charaFace C 1]
+＠ベオウルフ
+別に望んで得た立場じゃなかったが……[r]そのとき、俺は確かに王だったからな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠アルジュナ・オルタ
+悪は裁かれねばならない。[r]そういうことでしょうか？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ベオウルフ
+理由がどうあれ、民が貪り食われるのを[r]王が黙って見ているのは違うってだけさ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠アルジュナ・オルタ
+なるほど……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ゲオルギウス
+そうですね。
+[k]
+
+＠ゲオルギウス
+私も、神の教えに従う者として、かの街を[r]毒竜が支配しているのは見過ごせなかった。
+[k]
+
+＠ゲオルギウス
+[#そうしない]という選択肢はありませんでした。[r]やらなくてはならなかったから、やるしかなかった……
+[k]
+
+＠ゲオルギウス
+大いなる流れに導かれ、そこに辿り着く。[r]竜退治にそういう側面があるのは否定できません。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+流れというのは余人には分からない感覚だが、[r]やらなくてはならないからやるというのは同意だ。
+[k]
+
+＠サンタカルナ
+オレはやらなくてはならない。[r]真なるサンタクロースとなるために。
+[k]
+
+＠サンタカルナ
+正常なるクリスマスを取り戻すために。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ベオウルフ
+さすがの施しの英雄も、開けられないプレゼントで[r]子供に泣かれるのはこたえるのかい？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+……求めるもの。[r]生きる為に、それをどうしても必要とするもの。
+[k]
+
+＠サンタカルナ
+そういう者に出会った時、持ち得る者であるオレが[r]彼らに与えるのは、当然の理だった。
+[k]
+
+＠サンタカルナ
+……故に。その後の顛末を考慮する事は[r]なかったが……そうかもしれない。
+[k]
+
+＠サンタカルナ
+与えた結果としてその者が笑顔にならず、悲しい顔に[r]なるのは、行いとして不適切なのではと思っている。
+[k]
+
+＠サンタカルナ
+『いったん期待を持たせて落とされるのが一番[r]　ダメージがデカいっス！』
+[k]
+
+＠サンタカルナ
+『特にカルナさんの真顔でやられると威力倍増っス！』[r]とガネーシャ神にも厳重注意を受けたばかりだ。
+[k]
+
+？1：それじゃあ、頑張って事態を解決しないとね
+？！
+
+[charaFace A 0]
+＠サンタカルナ
+もちろんだ。行くぞ。
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_62 0.1]
+
+[se ade393]
+[shake 0.05 1 2 1.8]
+[wt 1.0]
+[seStop ade393 0.8]
+
+[se ad541]
+[seVolume ad541 0 0]
+[seVolume ad541 0.4 0.1]
+[wt 0.8]
+
+[seStop ad541 0.1]
+[se ad685]
+[effect bit_talk_ice_geyser]
+[wt 1.4]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[seStop ad685 0.4]
+[wait wipe]
+
+[effectDestroy bit_talk_ice_geyser]
+
+[effect bit_talk_flame_bullet]
+[wt 0.4]
+
+[se ad439]
+[seVolume ad439 0 0]
+[seVolume ad439 0.4 1.0]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.15]
+
+[se ad85]
+[wt 0.4]
+[se ad85]
+[seVolume ad85 0 0.5]
+[wt 0.4]
+[se ad85]
+[seVolume ad85 0 0.2]
+[wt 0.3]
+[se ad85]
+[seVolume ad85 0 0.7]
+[wt 0.7]
+
+[wipeout rectangleStripRightToLeft 0.4 1.0]
+[seStop ad439 0.8]
+[wait wipe]
+
+[effectDestroy bit_talk_flame_bullet]
+[wt 0.4]
+
+[wipein rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠ベオウルフ
+ちっ、氷も炎も頻度が高まってきやがったな！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠アルジュナ・オルタ
+全て[line 3]断つ[line 3]！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠ゲオルギウス
+魔力配分に注意を！[r]本番前に息切れを起こしては何にもなりません！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+マスター。悪いがオレの背中に乗れ。[r]そのほうがステップと迎撃がやりやすい。
+[k]
+
+？1：じ、じゃあ失礼して！
+？！
+
+[messageOff]
+
+[charaMove A 0,-10 0.3]
+[wt 0.4]
+
+[se ad77]
+[wt 0.4]
+[seStop ad77 0.3]
+[wt 0.5]
+
+[charaMove A 0,0 0.5]
+[wt 0.9]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ベオウルフ
+なかなか前進できなくなってきやがったな。
+[k]
+
+＠ベオウルフ
+氷の間欠泉と火炎弾、[r]せめてどっちかに集中できりゃあいいんだが。
+[k]
+
+[messageOff]
+
+[effect bit_talk_flame_bullet]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad439]
+[seVolume ad439 0 0]
+[seVolume ad439 0.3 1.0]
+
+[wt 0.4]
+[se ad85]
+[seVolume ad85 0 0.5]
+[wt 0.4]
+[se ad85]
+[seVolume ad85 0 0.2]
+[wt 0.3]
+[se ad85]
+[seVolume ad85 0 0.7]
+[wt 0.7]
+
+[seStop ad439 0.1]
+[seStop ad85 0.1]
+
+[se ad419]
+[fowardEffect bit_talk_kengekiall03_fs]
+[wt 0.3]
+[se ad419]
+[wt 0.2]
+[se ad419]
+[wt 0.1]
+[effectDestroy bit_talk_flame_bullet]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠ベオウルフ
+オラァ！　ハッハ、熱ぃ熱ぃ！
+[k]
+
+＠ベオウルフ
+ったくよ、この尽きることねぇ火炎……[r]俺んとこの竜も同じだったのかねぇ。
+[k]
+
+[charaFace C 4]
+＠ベオウルフ
+……ああ、何か思い出してきそうだぜ。[r]俺んときゃ、どうやった？　どう乗り越えた？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠マシュ
+ベオウルフさん、何か対策が！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠ベオウルフ
+どうだかな。[r]だが、まあ、こんな感じだろ！
+[k]
+
+＠ベオウルフ
+まずはコイツをかわして[line 3]
+[k]
+
+[messageOff]
+
+[se ade393]
+[shake 0.05 1 2 2.2]
+[wt 1.0]
+[seStop ade393 0.8]
+
+[se ad541]
+[seVolume ad541 0 0]
+[seVolume ad541 0.4 0.1]
+[wt 0.8]
+
+[se ad7]
+[charaMoveFSR C 125,0 0.3]
+[charaFadeout C 0.3]
+[wt 0.4]
+
+[seStop ad541 0.1]
+[se ad685]
+[effect bit_talk_ice_geyser]
+[wt 1.5]
+
+＠ベオウルフ
+で、ぶった斬る！[r]『[#赤原猟犬:フルンティング]』[line 3]『[#鉄鎚蛇潰:ネ イ リ ン グ]』！！
+[k]
+
+[messageOff]
+
+[fowardEffect bit_talk_x_slash01]
+[fowardEffect bit_talk_x_slash02]
+[wt 0.2]
+[cueSe Battle bac81]
+[wt 0.25]
+
+
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF00]
+[wt 0.1]
+[effectDestroy bit_talk_ice_geyser]
+[fowardEffectDestroy bit_talk_x_slash01]
+[fowardEffectDestroy bit_talk_x_slash02]
+[wt 1.0]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠アルジュナ・オルタ
+…………？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-10]
+＠ベオウルフ
+で、コイツを抱えてだ……[wt 0.6][se ad575][charaMove C 0,0 0.5][r]ぬ[messageShake 0.05 3 3 0.3]ぅぅううううう！[wt 0.8][seStop ad575 0.5]
+[k]
+
+[messageOff]
+
+[effect bit_talk_flame_bullet]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad439]
+[seVolume ad439 0 0]
+[seVolume ad439 0.3 1.0]
+
+[wt 0.4]
+[se ad85]
+[seVolume ad85 0 0.5]
+[wt 0.4]
+[se ad85]
+[seVolume ad85 0 0.2]
+[wt 0.3]
+[se ad85]
+[seVolume ad85 0 0.7]
+[wt 0.8]
+
+[seStop ad439 0.1]
+[seStop ad85 0.1]
+
+
+[se ad641]
+[se ad34]
+[fowardEffect bit_talk_14 200,0]
+[wt 0.3]
+
+[se ad641]
+[se ad34]
+[fowardEffect bit_talk_14 -200,100]
+[wt 0.1]
+[effectDestroy bit_talk_flame_bullet]
+
+[wt 1.2]
+
+[charaPut J 0,0]
+
+[branchQuestNotClear lblNotClear5 3000303]
+
+
+[charaTalk D]
+[charaFace D 22]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+盛り上がった氷を割って、強引に盾を作り出したのか！[r]でもそれほとんど氷の塊だよね、重くない！？
+[k]
+
+
+[branch lblConf5]
+[label lblNotClear5]
+
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 0,-90]
+＠E：ダ・ヴィンチ
+盛り上がった氷を割って、強引に盾を作り出したのか！[r]でもそれほとんど氷の塊だよね、重くない！？
+[k]
+
+[label lblConf5]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠ベオウルフ
+重いに決まってんだろが！[r]だから急ぐぜ、進め！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠ゲオルギウス
+カルナ殿、マスターと共にベオウルフ殿の後方に！[r]私はオルタ殿と共にフォローに回ります！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+承知した。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ゲオルギウス
+マシュたちは間欠泉の警告を重点的にお願いします。[r]上の対処はこちらのアドリブでなんとかします！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+＠マシュ
+ですが、火炎弾の熱で[r]その氷の盾はすぐに溶けてしまいそうです！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠ベオウルフ
+だったらその都度作り直すまでよ！[r]いくぜぇっ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaPut M 0,-200]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+[charaFadeTime M 0.1 0.6]
+＠ゲオルギウス
+（荒々しいまでの若き力と、[r]　賢王の片鱗たる閃きが同居する……）
+[k]
+
+＠ゲオルギウス
+（やはりあなたは頼りになる竜殺しですよ、[r]　ベオウルフ殿[line 3]）
+[k]
+
+[messageOff]
+
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_62 1.0]
+[wait wipe]
+
+[charaFadeout M 0.1]
+[charaFadeout F 0.1]
+[wt 1.5]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk depthOn]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠ベオウルフ
+っしゃあ！　辿り着いたぜ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠マシュ
+いました！　あれは、ヴリトラと[line 3][r]清姫さんです！
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.4 1]
+[wt 0.4]
+[bgm BGM_EVENT_7 0.1]
+＠清姫
+いらっしゃいませ、ますたぁ♡[r]お待ちしておりました！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 12]
+[charaFadein I 0.1 1]
+＠ヴリトラ
+うーむ、こやつ、模倣させてはみたが[r]特に様子がおかしいの。
+[k]
+
+＠ヴリトラ
+バーサーカーというのはこういうものか？
+[k]
+
+？1：そういうものです
+？2：まあきよひーなので
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+＠清姫
+ああ、言葉を交わさずとも[r]全てを理解してくださっているこの感じ！
+[k]
+
+＠清姫
+まさに[wt 0.3][messageShake 0.05 3 3 0.2]愛！　[wt 0.5][messageShake 0.05 3 3 0.2]ラブ！　[wt 0.5][messageShake 0.05 3 3 0.4]ジュテーム！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+＠ヴリトラ
+うむ、やはりわからん。
+[k]
+
+＠ヴリトラ
+わえが特に何を言うでもなく、[r]自主的に火炎弾を貴様らに放っておったしな。
+[k]
+
+＠ヴリトラ
+もともと恨みでも買っておったのか？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+＠清姫
+まあ、わたくしは火炎なんて吐いていません！[r]あれは愛の道しるべ、名付けて好き好き弾です！
+[k]
+
+＠清姫
+ああすることで迷わずこの場所に[r]辿り着いていただけるという寸法！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠ゲオルギウス
+まあ、確かに道に迷うことはありませんでしたが。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠清姫
+まずは溢れる想いに身悶えしつつ氷塊を[#抉:えぐ]り！[r]喉の奥から溢れる灼熱の想いをそれに込め！
+[k]
+
+＠清姫
+そうしたのち、恋愛成就の願をかけつつも[r]えいっと腰を入れて愛する[#方:かた]のほうへ投げるだけです！
+[k]
+
+[charaFace H 3]
+＠清姫
+ええ、奥ゆかしくも乙女らしさに溢れた思いやり……[r]これは間違いなく明日あたり挙式なのでは？
+[k]
+
+＠清姫
+ちなみにこの作戦は以前、童話で光る小石を[r]目印として落とす話を聞いたことがありましたので、
+[k]
+
+[charaFace H 1]
+＠清姫
+それを参考にさせていただきました！[r]へんぜるとぐれえてる、でしたか？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠ベオウルフ
+[#ぐれんでる]だあ？[r]アイツまた何かしでかしやがったのか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠マシュ
+ベオウルフさんの宿敵とは[r]特に関係がない[#兄妹:きょうだい]の妹さんかと！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+＠ヴリトラ
+意味はよくわからんが、こやつの熱は[r]なるほど見事じゃ。
+[k]
+
+＠ヴリトラ
+貴様たちを骨まで[r]焼き尽くそうという気概に満ちておる。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+＠清姫
+それが愛！　ですので！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk I]
+[charaFace I 12]
+[charaFadein I 0.1 1]
+[charaFadeTime M 0.1 0.6]
+＠ヴリトラ
+（やっぱりわからん……）
+[k]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaFadeout M 0.1]
+[charaFace I 0]
+＠ヴリトラ
+ともあれ、そうじゃな。[r]この障害は最後の試練として充分。
+[k]
+
+＠ヴリトラ
+こやつを乗り越えられたなら、[r]丁度良い頃合いとなろう。
+[k]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaFace I 6]
+＠ヴリトラ
+わえがじきじきに相手をしてやろうかの？
+[k]
+
+＠ヴリトラ
+しかし、気をつけねばならんぞ。[r][#最適な時]というのは意外と短い。
+[k]
+
+[charaFace I 7]
+＠ヴリトラ
+少しでも甘えや油断、出し惜しみがあれば……[r]手遅れになってしまうかもしれん。
+[k]
+
+＠ヴリトラ
+それはわえにとっても楽しくない。[r]失望させるでないぞ？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+出し惜しみか。あるはずがない。
+[k]
+
+＠サンタカルナ
+オレは一刻も早くおまえを倒し、[r]真のサンタとならなくてはならない。
+[k]
+
+＠サンタカルナ
+でなければクリスマスが終わってしまう。
+[k]
+
+＠サンタカルナ
+……挑戦権獲得マッチが必要だというなら、[r]全力でこの拳の輝きを見せつけるだけだ。
+[k]
+
+？1：よし……今は全力で清姫を！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+＠清姫
+愛そう、というわけですね！[r]ああ、そんな大声で愛を誓っていただけるなんて！
+[k]
+
+[charaFace H 11]
+＠清姫
+でも『今は』という言葉が気になりますね。
+[k]
+
+＠清姫
+それではまるで未来に浮気をする予定が[r]あるみたいではないですか。
+[k]
+
+＠清姫
+大事なことですので、ますたぁ、[r]今から鐘の中で夫婦会議しましょう？
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+

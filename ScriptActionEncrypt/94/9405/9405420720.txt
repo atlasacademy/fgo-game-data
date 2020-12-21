@@ -1,0 +1,257 @@
+
+
+
+＄94-05-42-07-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1048000 1 サンタカルナ]
+[charaSet B 99502600 1 マシュ]
+[charaSet C 7008001 1 ベオウルフ]
+[charaSet D 4006001 1 ゲオルギウス]
+[charaSet E 7033002 1 アルジュナ・オルタ]
+[charaSet F 7013001 1 清姫]
+[charaSet G 3046001 1 ヴリトラ]
+[charaSet H 98115000 1 通信用]
+[charaSet I 98115000 1 エフェクト用]
+
+[imageSet J back10000 1 1]
+[charaScale J 1.01]
+[sceneSet K 106600 1 1]
+[charaScale K 1.0]
+
+[charaPutFSR H 1200,2000]
+[charaEffect H bit_talk_10_LowLevel]
+
+[charaDepth D 1]
+[charaDepth E 2]
+
+[scene 31901]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaPut F 0,0]
+[charaTalk F]
+[charaFace F 4]
+[charaFadeTime F 0.4 0.6]
+[wt 0.8]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠清姫
+ハッ。気付いてしまいました。[r]このわたくしは実はわたくしではない……
+[k]
+
+＠清姫
+つまりますたぁの浮気予定は本物のわたくしなのでは？
+[k]
+
+[charaFace F 11]
+＠清姫
+それならまあよし……と思いきや[r]やっぱり自分相手でも独り占めしたいのが乙女心です！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.0]
+
+[se ad596]
+[wt 0.1]
+[charaSpecialEffect F erasure 0,0 1.5]
+[wait charaSpecialEffect F]
+[wt 1.1]
+
+[se ade410]
+[wt 0.2]
+[charaPut I 1]
+[charaEffect I bit_talk_20b]
+[wt 2.2]
+
+[se ad80]
+[wt 0.3]
+[seStop ad80 0.2]
+[wt 0.6]
+
+
+
+[se ad149]
+[se ad216]
+[seVolume ad216 0 0]
+[se ad733]
+[seVolume ad733 0 0]
+[fadeout white 0.3]
+[seVolume ad216 0.3 1.0]
+[seVolume ad733 0.3 1.0]
+[wait fade]
+
+[seStop ad733 1.5]
+
+[charaPutFSR I 1200,2000]
+[charaEffectDestroy I bit_talk_20b]
+
+[scene 10000]
+[wt 2.5]
+
+
+
+
+
+[criMovie talk_mov086 bgmPlay false]
+[wt 0.5]
+
+[fadein white 1.5]
+[wait fade]
+
+[wt 31.0]
+
+
+[charaTalk depthOff]
+[charaDepth J 4]
+[charaDepth K 5]
+
+[overlayFadein J 1.0 0,-200]
+[wt 1.0]
+
+
+[scene 106600]
+[wt 3.0]
+
+[overlayFadein K 1.0 0,-200]
+[wt 1.0]
+[charaFadeout J 1.0]
+[wt 1.0]
+
+
+？1：よし……！
+？！
+[charaFadeout K 0.3]
+[wt 0.3]
+[charaTalk depthOn]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠ヴリトラ
+最後の障害を乗り越えたか。よいぞ。
+[k]
+
+＠ヴリトラ
+では、わえが戦うに憂いはない。[r]貴様らはそれに値する者たちじゃと認めよう。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠ベオウルフ
+へっ、そいつはどうもォ……！
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth D 4]
+[charaDepth E 6]
+
+[charaFace D 0]
+[charaFadeinFSR D 0.1 2]
+
+[charaFace E 0]
+[charaFadeinFSL E 0.1 0]
+
+[wt 1.2]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+もはや言葉は必要あるまい。
+[k]
+
+＠サンタカルナ
+逃がしはしない。[r]おまえを倒し、オレは真のサンタとなる。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 9]
+[charaFadein G 0.1 1]
+＠ヴリトラ
+おうおう、よい面構えじゃ。
+[k]
+
+＠ヴリトラ
+[line 3]先に言っておこう。
+[k]
+
+[charaFace G 6]
+＠ヴリトラ
+貴様らは悲鳴を上げてよい。泣いてもよい。[r]どれだけはしたない姿を見せてもよい。
+[k]
+
+＠ヴリトラ
+わえは一向に構わん。むしろそれは最高の調味料じゃ。[r]尻尾の先までぞくぞくする。
+[k]
+
+[bgmStop BGM_EVENT_62 1.0]
+
+[charaFace G 7]
+＠ヴリトラ
+だが……途中で折れるでないぞ。[r]それはつまらんからの？
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[charaTalk off]
+[se ade391]
+
+[effect bit_talk_charge_blu]
+[wt 2.0]
+
+[seStop ade391 0.5]
+[wt 0.5]
+
+[effectDestroy bit_talk_charge_blu]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaPut H 1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠マシュ
+ヴリトラの魔力パターン変化……戦闘態勢です！[r]マスター、気をつけてください！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+
