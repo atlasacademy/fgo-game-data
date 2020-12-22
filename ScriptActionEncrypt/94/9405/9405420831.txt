@@ -1,0 +1,1019 @@
+
+
+
+＄94-05-42-08-3-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+
+[charaSet A 1048000 1 サンタカルナ]
+[charaSet B 99502600 1 マシュ]
+[charaSet C 1098204500 1 ヴリトラ]
+[charaSet D 1098124510 1 ダ・ヴィンチ]
+[charaSet E 98111500 1 ダ・ヴィンチ（術）_通信]
+[charaSet F 4006001 1 ゲオルギウス]
+[charaSet G 6031000 1 刑部姫]
+[charaSet H 7033002 1 アルジュナ・オルタ]
+[charaSet I 5005001 1 アンデルセン]
+[charaSet J 5030001 1 シェヘラザード]
+[charaSet K 98115000 1 通信用]
+[imageSet L cut235_black_present 1]
+
+[charaSet M 98115000 1 エフェクト用]
+[charaSet N 98115000 1 エフェクト用１]
+
+[imageSet O cut237_cutin_frame 1 1]
+[charaScale O 1.32]
+[charaSet P 1098205800 1 カットイン用サンタカルナ（フード）]
+
+
+[charaSet S 98115000 1 エフェクト用２]
+
+
+[charaPutFSR K 1200,2000]
+[charaEffect K bit_talk_10_LowLevel]
+
+[charaPutFSR M 1200,2000]
+[charaEffect M bit_talk_radiallight02]
+
+[charaDepth M 1]
+[charaDepth L 2]
+
+
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 105201]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠ヴリトラ
+インドラの血縁でなく、[r]しかし縁はあるらしき貴様が[line 3]
+[k]
+
+＠ヴリトラ
+はたして、インドラの代わりに[r]このわえを倒せるか！？
+[k]
+
+＠ヴリトラ
+見定める時じゃ！[r]シャアアアアーーー！
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ade391]
+[se ad61]
+[seVolume ad61 0 0]
+[seVolume ad61 0.3 0.7]
+[effect bit_talk_charge_blu]
+[effect bit_talk_17_bl_03]
+[wt 2.0]
+
+[fowardEffect bit_talk_41_fs]
+[se ad859]
+[seVolume ad859 0 0.7]
+[seStop ad859 0.7]
+[seStop ade391 0.4]
+[seStop ad61 0.4]
+[charaMoveScale C 1.2 0.3]
+[charaMove C 0,20 0.3]
+[charaFadeout C 0.3]
+[wt 0.3]
+[effectDestroy bit_talk_charge_blu]
+[effectDestroy bit_talk_17_bl_03]
+[fowardEffectDestroy bit_talk_41_fs]
+[wt 0.2]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+
+[wt 0.2]
+
+[charaDepth P 4]
+[charaDepth O 5]
+
+[scene 106900]
+[charaFadein O 0 0,-200]
+[charaFace P 0]
+[charaFadein P 0 0,0]
+
+[wt 0.3]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠サンタカルナ
+倒すとも。[r]オレがオレであるがゆえに。
+[k]
+
+＠サンタカルナ
+[#おまえが何かを求めているのならば][line 3][r][#オレはそれを贈ろう]。
+[k]
+
+＠サンタカルナ
+オレはそういう存在。[r]すなわちサンタクロース。
+[k]
+
+[charaFace P 1]
+＠サンタカルナ
+おまえが求める、オレたちの凌駕を与えよう。[r]おまえへの贈り物として与えよう！
+[k]
+
+[messageOff]
+
+[se ad835]
+[seVolume ad835 0 0.4]
+[se bac30]
+[seVolume bac30 0 0.4]
+[effect bit_talk_light_gathers 187,215]
+
+[wt 1.7]
+
+[charaCrossFade P 1098205810 1 0.4]
+[wait charaCrossFade P]
+[wt 0.8]
+
+[effectStop bit_talk_light_gathers]
+[wt 0.8]
+
+[charaFace P 2]
+＠サンタカルナ
+喰らうがいい、[r]これこそが今のオレのもう一つの宝具。
+[k]
+
+＠サンタカルナ
+同じ名を持つゆえにサンタクロースの[r]必殺ブローとしてふさわしいと編み出した、
+[k]
+
+＠サンタカルナ
+一撃必殺の、[#サンタのクロスカウンター]……
+[k]
+
+[bgmStop BGM_EVENT_24 1.0]
+
+
+[charaFace P 1]
+＠サンタカルナ
+[f large]『[messageShake 0.02 3 3 0.5][#聖人交叉拳:グ ラ ハ ラ ー ジ ャ ・ サ ン タ ク ロ ス]』！！
+[k]
+
+
+[messageOff]
+
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+
+[scene 10000]
+[wt 0.2]
+
+[wipein rectangleStripRightToLeft 0.1 1.0]
+[wait wipe]
+[wt 0.05]
+
+[se ad855]
+[effect bit_talk_gram_slash_01_fs 0,0 H]
+[wt 0.5]
+
+[effect bit_talk_flash_g]
+[wt 0.1]
+[se ad80]
+[wt 0.3]
+[seStop ad80 0.2]
+[wt 0.2]
+
+
+[se ad878]
+[fadeout white 0.1]
+[wait fade]
+
+[effectDestroy bit_talk_gram_slash_01_fs 0,0 H]
+[effectDestroy bit_talk_flash_g]
+
+[scene 105201]
+[wt 2.7]
+
+[se ad951]
+[seVolume ad951 0 0]
+[seVolume ad951 1.5 0.8]
+[fadein white 1.5]
+[wait fade]
+
+[wt 1.5]
+
+[seVolume ad951 1.0 0.4]
+
+[charaTalk on]
+[charaScale C 1.0]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[charaShake C 0.05 2 2 0.3]
+＠ヴリトラ
+か、はッ……。
+[k]
+
+[messageOff]
+[se ad207]
+[seVolume ad207 0 0]
+[seVolume ad207 1.0 1.0]
+
+[charaMove C 0,-60 0.8]
+[charaFadeout C 0.8]
+[wt 0.8]
+[se ad144]
+
+[wt 2.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 1.8]
+
+
+[se ade89]
+[seVolume ade89 0 0.5]
+[wt 0.1]
+[charaFaceFade A 8 0.6]
+[wt 0.3]
+[seStop ade89 0.3]
+
+[wt 1.8]
+
+[seStop ad207 2.0]
+[seStop ad951 2.0]
+
+＠サンタカルナ
+これが……[r]おまえへのクリスマスプレゼントだ。
+[k]
+
+[messageOff]
+
+
+[wt 1.0]
+
+[bgm BGM_EVENT_4 0.1]
+
+？1：やったー！
+？2：ＫＯ勝利だ！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠ゲオルギウス
+終わりました……か。
+[k]
+
+＠ゲオルギウス
+見事。[r]新たなドラゴンスレイヤーの誕生です。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+
+[charaTalk D]
+[charaFace D 32]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+……ん、あれ？　何だこの反応？
+[k]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-90]
+＠E：ダ・ヴィンチ
+……ん、あれ？　何だこの反応？
+[k]
+
+[label lblConf1]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+ダ・ヴィンチちゃん、これは、ひょっとして[line 3]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR K 1200,2000]
+
+[se ade410]
+[wt 0.2]
+[charaPut S 1]
+[charaEffect S bit_talk_20b]
+[wt 2.4]
+
+
+
+[se ad149]
+[se ad216]
+[seVolume ad216 0 0]
+[se ad733]
+[seVolume ad733 0 0]
+[seVolume ad216 0.3 1.0]
+[seVolume ad733 0.3 1.0]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[charaPutFSR S 1200,2000]
+[charaEffectDestroy S bit_talk_20b]
+[wt 0.2]
+[seStop ad216 1.5]
+[seStop ad733 1.5]
+
+[wt 2.0]
+
+[charaPut K 0,0]
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+
+[charaTalk D]
+[charaFace D 22]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+何かが割れたぞ。
+[k]
+
+＠ダ・ヴィンチ
+もしかして、このヒマラヤの閉塞特異点の中に、[r][#もう一段階閉塞された何か]があったのかい？
+[k]
+
+[branch lblConf2]
+[label lblNotClear2]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0,-90]
+＠E：ダ・ヴィンチ
+何かが割れたぞ。
+[k]
+
+＠E：ダ・ヴィンチ
+もしかして、このヒマラヤの閉塞特異点の中に、[r][#もう一段階閉塞された何か]があったのかい？
+[k]
+
+[label lblConf2]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR K 1200,2000]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+ヴリトラは水をヒマラヤの山に閉じ込めたという。
+[k]
+
+＠サンタカルナ
+そもそもこの地に、奴が何かを[#堰:せ]き止め[r]封じるための場があったということだろう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠マシュ
+それが解放された、ということでしょうか？[r]つまり[line 2]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR K 1200,2000]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+ああ。つい今し方まで奴が封じていたもの。[r]それこそがオレの追い求めていたものだ……
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_4 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+
+[scene 106100]
+
+[pictureFrame cut063_cinema]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_25 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 0,-50]
+＠刑部姫
+あーうー。新刊、読みたい読みたい読みたーい！[r]一刻も早く読みたーい！
+[k]
+
+[charaFace G 2]
+＠刑部姫
+純粋に読みたいのもそうだけど、次のイベントに[r]なに描くかもそれで決まってくるんだから！
+[k]
+
+＠刑部姫
+せっかくなんだから一番ホットでアツアツな[r]二次創作を出したいじゃない？
+[k]
+
+[charaFace G 8]
+＠刑部姫
+イベント前のギリギリで読んじゃったら、[r]我慢できない溢れる気持ちがペーパーとか
+[k]
+
+＠刑部姫
+オマケ本とかになって[r]余計に締め切りを圧迫したりするし……！
+[k]
+
+[charaMoveReturn G 0,-55 0.4]
+＠刑部姫
+だから、おねがーい！[wt 0.2][charaMoveReturn G 0,-55 0.4][r]読ーまーせーてー！（箱にほっぺをすりすり）
+[k]
+
+[bgmStop BGM_EVENT_25 1.0]
+
+[charaFace G 4]
+＠刑部姫
+ってダダこねてたら、あれ？[r]黒いプレゼントが、なんだか光って[line 3]
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.2]
+
+[se ad39]
+
+[charaTalk off]
+[charaTalk M]
+[charaPut M 0,100]
+[charaFadein L 0.1 0,-250]
+
+[wt 1.5]
+
+[seStop ad39 2.5]
+[fadeout white 1.5]
+[wait fade]
+
+[charaPutFSR M 1200,2000]
+[charaFadeout L 0.1]
+
+[wt 0.5]
+
+[fadein white 1.5]
+[wait fade]
+
+[se ade301]
+[seStop ade301 0.3]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 0,-50]
+＠刑部姫
+あ、開いたー！　デジマ！？
+[k]
+
+[charaFace G 8]
+＠刑部姫
+では早速……いや、待って、ちょっと待って。[r]これって[line 3]
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[wait fade]
+
+
+[pictureFrame]
+[charaFadeout G 0.1]
+
+[scene 10000]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[criMovie talk_mov087]
+
+
+
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaSet C 3046001 1 ヴリトラ]
+
+[scene 105203]
+[wt 1.5]
+
+[bgm BGM_EVENT_78 1.5 1.0]
+
+[fadein black 1.5]
+[wait fade]
+[wt 1.0]
+
+
+[cameraMove 1.5 50,0 1.2]
+[wt 2.2]
+[cameraMove 1.5 -80,0 1.2]
+[wt 2.2]
+[cameraHome 1.5]
+[wt 2.2]
+
+？1：わ…………
+？！
+
+[charaPut K 0,0]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠マシュ
+さっきの閉塞が解消された結果でしょうか？[r]とても綺麗な空です……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR K 1200,2000]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+＠アルジュナ・オルタ
+やはり、そうですか。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+どうしたんだい？
+[k]
+
+[branch lblConf3]
+[label lblNotClear3]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-90]
+＠E：ダ・ヴィンチ
+どうしたんだい？
+[k]
+
+[label lblConf3]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR K 1200,2000]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠アルジュナ・オルタ
+私が邪悪ではないと判じたのは、[r]これも理由です。
+[k]
+
+＠アルジュナ・オルタ
+ヴリトラの[#堰界:いかい]化、[r]何かを[#堰:せ]き止め閉じ込める行為には、
+[k]
+
+＠アルジュナ・オルタ
+ある性質が付随していると感じます。
+[k]
+
+[charaFace H 4]
+＠アルジュナ・オルタ
+人としての多くを失った、神の子である私には……[r]なかなか言葉では言い表せないものですが。
+[k]
+
+[messageOff]
+
+[charaFadeout H 0.1]
+[wt 0.6]
+
+[se ad41]
+[flashin once 0.1 0.2 FFFFFFAF FFFFFF00]
+[wt 1.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ゲオルギウス
+正直に言えば[r]私も薄々は気付いていました。
+[k]
+
+＠ゲオルギウス
+私の手の中にある、数少ない[r]この旅の記録写真がその証拠です。
+[k]
+
+[charaFace F 1]
+＠ゲオルギウス
+これらは[#素晴らしすぎる]。
+[k]
+
+＠ゲオルギウス
+この写真がそう見えているのは、[r]私の腕ではありません。
+[k]
+
+＠ゲオルギウス
+見えていた光景自体が素晴らしいものだったのです。[r]普段以上に、どういうわけか、輝いていた……
+[k]
+
+＠ゲオルギウス
+つまり。ヴリトラが何かを閉じ込めたあとは、[r][#よりよきもの]が生まれる[line 3]
+[k]
+
+＠ゲオルギウス
+そういう性質があるのではないでしょうか。[r]ただの感覚なのですが、そう思えてならないのです。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+本当に、そんなことが……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR K 1200,2000]
+
+[charaPut N 1]
+[charaEffect N bit_talk_06]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ヴリトラ
+き、ひ、ひ。わえが望んでのことではないがな。[r]そういうものよ。
+[k]
+
+？1：ヴリトラ……
+？！
+
+[charaPutFSR N 1200,2000]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠マシュ
+霊基は確かに崩壊しつつあります。[r]……話をするくらいがせいぜいかと。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+神話において示される苦難や障害は、[r][#乗り越えて成長するためにある]とも言えるのかもしれない。
+[k]
+
+＠ダ・ヴィンチ
+乗り越えて後退すればその先が続かないからね。
+[k]
+
+[charaFace D 24]
+＠ダ・ヴィンチ
+水などの絶対必要なものが[#堰:せ]き止められ、[r]奪われるのは、人間にとってもちろん苦痛だ。
+[k]
+
+[charaFace D 25]
+＠ダ・ヴィンチ
+けれど[line 3]冬の間に溜め込んだエネルギーで、[r]春に植物たちが芽吹くように。
+[k]
+
+＠ダ・ヴィンチ
+一度[#堰:せ]き止めなくては生まれない勢い、[r]みたいなものがこの世には確かにあるんだろう。
+[k]
+
+＠ダ・ヴィンチ
+『障害を乗り越えた先には成長がある』[r]『先に進むための必要悪である壁』[line 3]
+[k]
+
+＠ダ・ヴィンチ
+それが、ヴリトラという概念が[r]本当に[#司:つかさど]っているものなのかもしれないね。
+[k]
+
+[charaFace D 16]
+＠ダ・ヴィンチ
+いやまあ、勝手な私の解釈だけど！
+[k]
+
+[branch lblConf4]
+[label lblNotClear4]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0,-90]
+＠E：ダ・ヴィンチ
+神話において示される苦難や障害は、[r][#乗り越えて成長するためにある]とも言えるのかもしれない。
+[k]
+
+＠E：ダ・ヴィンチ
+乗り越えて後退すればその先が続かないからね。
+[k]
+
+＠E：ダ・ヴィンチ
+水などの絶対必要なものが[#堰:せ]き止められ、[r]奪われるのは、人間にとってもちろん苦痛だ。
+[k]
+
+[charaFace E 0]
+＠E：ダ・ヴィンチ
+けれど[line 3]冬の間に溜め込んだエネルギーで、[r]春に植物たちが芽吹くように。
+[k]
+
+＠E：ダ・ヴィンチ
+一度[#堰:せ]き止めなくては生まれない勢い、[r]みたいなものがこの世には確かにあるんだろう。
+[k]
+
+＠E：ダ・ヴィンチ
+『障害を乗り越えた先には成長がある』[r]『先に進むための必要悪である壁』[line 3]
+[k]
+
+＠E：ダ・ヴィンチ
+それが、ヴリトラという概念が[r]本当に[#司:つかさど]っているものなのかもしれないね。
+[k]
+
+[charaFace E 1]
+＠E：ダ・ヴィンチ
+いやまあ、勝手な私の解釈だけど！
+[k]
+
+[label lblConf4]
+
+[messageOff]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR K 1200,2000]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaPut N 0,0]
+[wt 1.0]
+
+[charaFace C 1]
+＠ヴリトラ
+知るものか。わえはわえじゃ。とにかくわえ以外の[r]者たちが頑張る様を見るのが楽しいだけよ。
+[k]
+
+[charaFace C 15]
+＠ヴリトラ
+しかし……ま、そうじゃな。
+[k]
+
+＠ヴリトラ
+何度も繰り返すにあたっては、[r]より[#靱:つよ]くなってもらったほうが飽きん。
+[k]
+
+＠ヴリトラ
+それは確かじゃ。
+[k]
+
+[charaFace C 7]
+＠ヴリトラ
+なのでわえはこれからも[#苛:いじ]めるぞ、貴様らを。世界を。
+[k]
+
+＠ヴリトラ
+貴様らはただ、より[#靱:つよ]き様を見せるがよい。[r]さすればより強きわえが相手をするゆえ、見せるがよい。
+[k]
+
+？1：……また来る気がある、ってことだね
+？！
+
+[charaFace C 6]
+＠ヴリトラ
+無論。[r]わえは不滅の魔よ。[#神:インドラ]ですら滅ぼせぬ。
+[k]
+
+？1：今はちょっと忙しいので……
+？2：別の大問題と戦ってるところなので……
+？！
+
+[charaPutFSR N 1200,2000]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut K 0,0]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠マシュ
+はい。正直なところそちらで手一杯なので、[r]できれば邪魔はしないでいただけると助かります。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR K 1200,2000]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+[charaPut N 0,0]
+＠ヴリトラ
+ほーん。[r]わえ以外の、それほどまでに強大な障害のぅ。
+[k]
+
+[charaFace C 0]
+＠ヴリトラ
+人が、神が、世界が……[r]そうまで力を合わせて足掻いておるというのなら。
+[k]
+
+[charaFace C 1]
+＠ヴリトラ
+それを横で見るというのも、[r]意外と新鮮な楽しみがあるかもしれんのう……？
+[k]
+
+？1：味方になって手伝ってくれるなら歓迎するよ
+？！
+
+[charaFace C 6]
+＠ヴリトラ
+き、ひ、ひ！　わえは魔ぞ。[r]味方とは、おかしなことを言うやつよの。
+[k]
+
+＠ヴリトラ
+まあ縁は結ばれたゆえ、ことによると[r]近いうちに顔を合わせることも実際あるやもしれん。
+[k]
+
+[charaFace C 9]
+＠ヴリトラ
+弱く[#靱:つよ]き人間よ。[r]わえが見物に行くまで、負けるでないぞ。
+[k]
+
+？1：負けないよ
+？2：みんなと乗り越えてみせるよ
+？！
+
+[messageOff]
+[charaFaceFade C 1 0.6]
+[wt 1.6]
+
+
+[se ad52]
+[charaSpecialEffect C flashErasure 1 2.0]
+[wait charaSpecialEffect C]
+[charaEffectStop N bit_talk_06]
+[wt 1.0]
+[seStop ad52 0.2]
+[wt 0.8]
+[charaFadeout C 0.1]
+
+[charaPut K 0,0]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠マシュ
+ヴリトラの反応、完全消滅[line 3][r]ミッション完了です、マスター！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR K 1200,2000]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠ゲオルギウス
+お疲れ様です。やはり竜退治とは一筋縄ではいかぬもの。[r]私もいい経験になりました。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠アルジュナ・オルタ
+世に邪悪は、まだ[#蔓延:はびこ]っています。[r]けれど[line 3]
+[k]
+
+[charaFace H 12]
+＠アルジュナ・オルタ
+少なくとも、今この場所には、ない。[r]良いことです。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 3]
+[charaFadein J 0.1 1]
+＠シェヘラザード
+それは死なない保証と考えてもよいですか？[r]素敵なお話です……。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+＠アンデルセン
+最後の道具立てに協力しただけだが、[r]いい取材にはなったな。
+[k]
+
+＠アンデルセン
+竜殺しを実際に目にできるとは。まあ、[r]いつか冒険ものを書くときに役立つだろうよ。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+[line 3]では、帰るか。[r]オレにはしなくてはならないことがある。
+[k]
+
+？1：聞くまでもないけど
+？2：もちろん、アレだよね
+？！
+
+[charaFace A 9]
+＠サンタカルナ
+ああ[line 3]プレゼントを配るんだ。[r][#皆]にな。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_78 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

@@ -1,0 +1,1110 @@
+
+
+＄94-05-42-08-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 1048000 1 サンタカルナ]
+[charaSet B 98001000 1 マシュ]
+[charaSet C 1098204700 1 アルジュナ_通信]
+[charaSet D 98115000 1 通信用]
+[charaSet E 2015001 1 アルジュナ]
+[charaSet F 1098124500 1 ダ・ヴィンチ]
+[charaSet G 5009001 1 ダ・ヴィンチ（術）]
+[charaSet H 5005001 1 アンデルセン]
+[charaSet I 5030001 1 シェヘラザード]
+[charaSet J 4006001 1 ゲオルギウス]
+[charaSet K 7033002 1 アルジュナ・オルタ]
+[charaSet L 5009040 1 エフェクト用ダミー]
+
+[imageSet M back10000_fs 1]
+[charaScale M 1.5]
+
+[charaPutFSR L 1500,2000]
+[charaEffect L bit_sepia01_depth]
+
+[charaPutFSR D 1200,2000]
+[charaEffect D bit_talk_10_LowLevel]
+
+[charaDepth M 3]
+[charaDepth A 4]
+
+[pictureFrame cut063_cinema]
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+
+[scene 105800]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+[scene 106000]
+
+[label lblConf1]
+
+
+[fadein black 1.5]
+[wait fade]
+
+[se ade531]
+[wt 0.5]
+[seStop ade531 0.2]
+[wt 0.3]
+
+[se ade530]
+[wt 0.5]
+[seStop ade530 0.1]
+[wt 0.5]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠
+[line 3]身体を動かさねばならない。[r]もっと速く。もっと鋭く。
+[k]
+
+[se ade530]
+＠？？？
+シッ……シッ……。[wt 0.5][seStop ade530 0.1]
+[k]
+
+[messageOff]
+[wt 0.2]
+
+[se ade531]
+[wt 0.5]
+[seStop ade531 0.2]
+[wt 0.3]
+
+＠
+頭を真っ白に。ただ戦士としての肉体と[r]自分を同一化させる。
+[k]
+
+＠
+かつてのように。無心で自らの強さを[r]追い求めていたときのように。
+[k]
+
+＠
+だが、全てがあのときと同じわけではない。[r]むしろ状況はいいはずだ。
+[k]
+
+＠
+ここに身分の違いによる嘲りはない。[r]ここに立場の違いによる蔑視はない。
+[k]
+
+＠
+一方で、不思議なことに、[r]新鮮な焦燥が身の内にあるのを感じていた。
+[k]
+
+＠
+戦の時期が明確に決まってしまっているが故か。
+[k]
+
+＠
+サンタという戦士のピークは短い。[r]クリスマスが終わってしまえば意味がない。
+[k]
+
+＠
+だから、強く。[r]一刻も早く、強く、強くならなければ[line 3]
+[k]
+
+[messageOff]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.4 0,-50]
+[wt 0.5]
+[charaMoveReturn A 8,-50 0.2]
+[se ade531]
+[wt 0.3]
+[charaMoveReturn A -8,-50 0.2]
+[seStop ade531 0.2]
+[wt 0.4]
+
+[se ade530]
+[charaMove A 5,-46 0.1]
+[charaMoveScale A 1.05 0.1]
+[wt 0.15]
+[charaMove A -10,-40 0.1]
+[charaMoveScale A 1.1 0.1]
+[wt 0.4]
+[seStop ade530 0.1]
+
+[wt 0.6]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠
+心がざわついている。平常心が保てない。
+[k]
+
+＠
+身体を動かしていなければ、[r]何かが暴れ出しそうになる。
+[k]
+
+＠
+原因はわかっていた。[r]昨日の[line 3]あの男の言葉だ。
+[k]
+
+[messageOff]
+
+[se ad592]
+[fadeout white 0.6]
+[bgm BGM_EVENT_81 0.6 0.4]
+[wait fade]
+
+
+[charaPut L 1]
+
+[scene 106600]
+
+[wt 0.9]
+
+[fadein white 0.6]
+[wait fade]
+[wt 0.1]
+
+[charaPut D 0,0]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-50]
+＠C：アルジュナ
+ふん……情けない男だ、カルナ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPutFSR D 1200,2000]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+＠サンタカルナ
+……なんだと？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut D 0,0]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-50]
+＠C：アルジュナ
+その様子では、自分がなぜヴリトラに[r]届かぬかも分かっていないのだろう。
+[k]
+
+＠C：アルジュナ
+拳を握る貴様は普段よりも成長を求めているようだが、[r]その実、貴様はまったく何も変わっていない。
+[k]
+
+＠C：アルジュナ
+だから、なのだ。[r]貴様が真のサンタクロースになれないのも。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPutFSR D 1200,2000]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+＠サンタカルナ
+おまえにサンタの何が分かる？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut D 0,0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠C：アルジュナ
+少なくとも、私には分かっている。
+[k]
+
+＠C：アルジュナ
+施しの英雄であればサンタクロースになれる、
+[k]
+
+＠C：アルジュナ
+無私に無欲に、請われれば全てを差し出す男であれば[r]サンタクロースになれるなどというのは[line 3]
+[k]
+
+
+＠C：アルジュナ
+ただの幻想だとな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPutFSR D 1200,2000]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+＠サンタカルナ
+！[messageShake 0.05 3 3 0.2]！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut D 0,0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠C：アルジュナ
+サンタクロースはその先にある。[r]今の貴様では辿り着くことはできまい……
+[k]
+
+[messageOff]
+[wt 0.4]
+
+[se ad1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPutFSR D 1200,2000]
+[charaEffectStop D bit_talk_10_LowLevel]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-50]
+[wt 1.5]
+
+[fadeout white 0.6]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[charaPutFSR L 1500,2000]
+
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+[scene 105800]
+
+[branch lblConf2]
+[label lblNotClear2]
+
+[scene 106000]
+
+[label lblConf2]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 0,-50]
+[wt 0.9]
+
+[bgm BGM_EVENT_81 0.6 1.0]
+[fadein white 0.6]
+[wait fade]
+[wt 0.2]
+
+[charaMoveReturn A 8,-50 0.2]
+
+[se ade531]
+[wt 0.3]
+[charaMoveReturn A -8,-50 0.2]
+[seStop ade531 0.2]
+[wt 0.4]
+
+[se ade530]
+＠サンタカルナ
+シッ……シッ……！[wt 0.5][seStop ade530 0.2]
+[k]
+
+[messageOff]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_81 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[pictureFrame]
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+
+[scene 104200]
+
+
+[branch lblConf3]
+[label lblNotClear3]
+
+[scene 105500]
+
+[label lblConf3]
+
+
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+？1：さて……
+？！
+
+[se ade12]
+[wt 1.5]
+
+？1：カルナ、ちょっといい？
+？！
+
+＠サンタカルナ
+マスターか。構わない。
+[k]
+
+
+[messageOff]
+[wt 0.1]
+
+[se ad8]
+[wipeout leftToRight 1.0 1.0]
+[wait wipe]
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+[scene 105800]
+
+[branch lblConf4]
+[label lblNotClear4]
+
+[scene 106000]
+
+[label lblConf4]
+
+[wt 0.8]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[se ade531]
+[seVolume ade531 0 0.6]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+トレーニング中だが話は聞ける。何だ？
+[k]
+
+？1：気にしてたみたいだから、ちょっと
+？2：昨日のアルジュナが言ってたことだけど
+？！
+
+[messageOff]
+[wt 0.1]
+
+[seStop ade531 0.1]
+[wt 0.6]
+
+＠サンタカルナ
+……マスターには分かるのか？[r]奴の言っていたことの意味が。
+[k]
+
+[charaFace A 12]
+
+＠サンタカルナ
+オレには……残念だが、分からない。
+[k]
+
+＠サンタカルナ
+不出来なサンタであるオレを[#嘲笑:あざわら]ってはいたのだろう。[r]だが、それだけではない気もする[line 3]
+[k]
+
+？1：（あれは、[#嘲笑:あざわら]ってたというよりは……）
+？！
+
+[messageOff]
+
+[wipeout circleIn 1.0 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[pictureFrame cut063_cinema]
+
+[charaPut L 1]
+[wt 1.0]
+
+[wipein circleIn 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠アルジュナ
+本来ならば、マスターにこのような頼み事など[r]すべきではないと分かってはいるのですが。
+[k]
+
+[charaFace E 4]
+＠アルジュナ
+マスターしか、信頼して託せる方はいないのです。
+[k]
+
+[branchQuestNotClear lblNotClear10 91201502]
+
+＠アルジュナ
+私の……あまり表に見せるべきではない部分を知るのは、[r]マスターしかいないのですから。
+[k]
+
+[branch lblConf10]
+
+[label lblNotClear10]
+[label lblConf10]
+
+[charaFace E 0]
+＠アルジュナ
+私がカルナに語ったあの言葉は、紛れもない本心。
+[k]
+
+＠アルジュナ
+私は、奴はサンタさん失格だと思っています。[r]心の底から愚かだとも。
+[k]
+
+[charaFace E 4]
+＠アルジュナ
+ただ、今の状況では、[r]それだけで済ませることもできず[line 3]
+[k]
+
+[charaFace E 0]
+＠アルジュナ
+ですから、差し出がましいお願いなのですが……[r]確かめてはいただけないでしょうか、マスター。
+[k]
+
+＠アルジュナ
+もし気付かぬようであれば、[r]責任を持って私がヴリトラを倒します。
+[k]
+
+＠アルジュナ
+この身を流れるインドラの血にかけて……
+[k]
+
+
+[messageOff]
+[wipeout circleIn 1.0 1.0]
+[bgm BGM_EVENT_11 1.0 0.4]
+[wait wipe]
+
+[charaFadeout E 0.1]
+
+[pictureFrame]
+[charaPutFSR L 1500,2000]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_11 1.0 1.0]
+[wipein circleIn 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+オレが真のサンタクロースになれないのは、[r]修業が足りない以外の理由がある……
+[k]
+
+＠サンタカルナ
+と奴は言っていたのかもしれない。[r]だが、理解できない。
+[k]
+
+＠サンタカルナ
+施しの英雄というだけではなれないとは、[r]どういう意味なのだ。
+[k]
+
+[charaFace A 8]
+＠サンタカルナ
+オレは他のサンタクロースたちを見て学んだつもりだ。
+[k]
+
+＠サンタカルナ
+サンタとはプレゼントを配り、[r]クリスマスを支配する最強の存在なのだろう。
+[k]
+
+＠サンタカルナ
+……マスター、おまえは他のサンタクロースとも[r]長く触れ合っている。
+[k]
+
+＠サンタカルナ
+わかるのであれば教えてくれ。[r]オレと彼女ら、何が違う？
+[k]
+
+＠サンタカルナ
+そこに答えがあるのかもしれん。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+？1：…………そうだね、カルナは…………
+？！
+
+[charaFace A 13]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_11 1.0]
+
+？1：みんなにプレゼントをあげるのに必死すぎて
+？2：あんまり自分が楽しそうじゃない……かな
+？！
+
+＠サンタカルナ
+…[messageShake 0.05 2 2 0.4]………！
+[k]
+
+
+？1：今までのサンタさんは使命感もあったけど
+？2：最後にはみんな楽しそうだったよ
+？！
+
+[bgm BGM_EVENT_6 0.1]
+
+[charaFace A 8]
+＠サンタカルナ
+……そうか。サンタクロースにも、[r]喜びがあるものだったか。
+[k]
+
+＠サンタカルナ
+自分への対価。[r]自分への[line 3]プレゼント、というものが。
+[k]
+
+＠サンタカルナ
+自分自身にプレゼントを贈れないような男が、[r]世界中の子供たちにプレゼントを贈れるわけがない。
+[k]
+
+＠サンタカルナ
+そんな男がサンタを名乗るとは片腹痛い。[r]そういうことか、アルジュナよ……。
+[k]
+
+[charaFace A 12]
+＠サンタカルナ
+しかし、オレには[r]サンタの仕事を通しての喜びはない。
+[k]
+
+＠サンタカルナ
+あるのは、強く在りたい。[r]真のサンタになりたいという思いだけだ。
+[k]
+
+？1：じゃあ、それをプレゼントにしてもいいと思う
+？！
+
+[charaFace A 8]
+＠サンタカルナ
+矛盾している。不完全なオレの袋の中に[r]それは入っていない。だから自分には与えられない。
+[k]
+
+？1：だったら、他の人たちから仕入れよう
+？2：サンタが贈り物を貰っちゃいけないルールはないよ
+？！
+
+[charaFace A 13]
+＠サンタカルナ
+！！
+[k]
+
+
+[charaFace A 11]
+＠サンタカルナ
+……そうか。
+[k]
+
+＠サンタカルナ
+オレは、オレ自身への[#施し:プレゼント]として[line 3][r]求める。自らの成長を。
+[k]
+
+＠サンタカルナ
+そして自分自身に施すとは、[r]他者からの施しを許容することでもある。
+[k]
+
+＠サンタカルナ
+オレは、素直に[line 3][r]自らの袋にないものを他に求めるべきだったのか。
+[k]
+
+？1：今まではちょっとストイックすぎたかもね
+？！
+
+[charaFace A 8]
+＠サンタカルナ
+ああ。[r]サンタとは一人でやるものだと思っていた。
+[k]
+
+
+＠サンタカルナ
+だが、オレが欲しいのは『何者か』になるための強さだ。[r]ドローナ師の下で学んでいたときもそうだった。
+[k]
+
+＠サンタカルナ
+アシュヴァッターマン、ドゥリーヨダナ、[r]ユディシュティラ、ビーマ、アルジュナ……
+[k]
+
+＠サンタカルナ
+相容れぬ敵となった者たちもいたが。[r]オレは、奴らがいたから強くなれた、のかもしれん。
+[k]
+
+＠サンタカルナ
+だから[line 3]今のオレも、一人では無理なのだとしたら、[r]頼るべきなのだろう。
+[k]
+
+＠サンタカルナ
+オレを強くしてくれるかもしれない誰かに。
+[k]
+
+？1：いいと思うよ
+？2：自分もみんなに頼りっぱなしだよ
+？！
+
+
+[messageOff]
+[charaFace A 9]
+[wt 1.2]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_6 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[branchQuestNotClear lblNotClear5 3000303]
+
+[scene 104100]
+
+[branch lblConf5]
+[label lblNotClear5]
+
+[scene 105700]
+
+[label lblConf5]
+
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+というわけで、オレは考えを改めた。
+[k]
+
+＠サンタカルナ
+真のサンタになるという目的は変わらないが、[r]そのために必要なものがあれば遠慮はしない。
+[k]
+
+＠サンタカルナ
+プレゼントを配るだけではなく、[r]他者からのプレゼントも否定はしない。
+[k]
+
+＠サンタカルナ
+それが今ここにいるオレだ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear6 3000303]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠ダ・ヴィンチ
+うんうん、それがいいと思うよ。[r]私たちはそのためにいるのさ。
+[k]
+
+
+[branch lblConf6]
+[label lblNotClear6]
+
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 0,0]
+＠G：ダ・ヴィンチ
+うんうん、それがいいと思うよ。[r]私たちはそのためにいるのさ。
+[k]
+
+[label lblConf6]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠マシュ
+わたしも同感です。[r]引き続き、全力でサポートさせていただきます！
+[k]
+
+＠マシュ
+さしあたって、どうしましょう？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+必要なのはやはり、ヴリトラへの勝利だ。
+[k]
+
+＠サンタカルナ
+オレはヴリトラに勝ちたい。[r]力を貸してくれ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear7 3000303]
+
+
+[charaTalk F]
+[charaFace F 26]
+[charaFadein F 0.1 1]
+＠ダ・ヴィンチ
+勿論だとも。[r]次なるドラゴンスレイヤーの助っ人がお望みかな？
+[k]
+
+＠ダ・ヴィンチ
+いつでも声をかける準備はできているよ。これまで[r]出番がなかったジークフリートかな。それとも[line 3]
+[k]
+
+[branch lblConf7]
+[label lblNotClear7]
+
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 0,0]
+＠G：ダ・ヴィンチ
+勿論だとも。[r]次なるドラゴンスレイヤーの助っ人がお望みかな？
+[k]
+
+＠G：ダ・ヴィンチ
+いつでも声をかける準備はできているよ。これまで[r]出番がなかったジークフリートかな。それとも[line 3]
+[k]
+
+[label lblConf7]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+いや。思い出した。[r]……アルジュナも気付いたのだろうな。
+[k]
+
+＠サンタカルナ
+だからこそだ。聖杯の力を取り込んだヴリトラを倒すには、[r]こちらも策が必要となる。
+[k]
+
+＠サンタカルナ
+呼び集めてもらいたいのは[line 3]
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_82 1.0 0.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[bgm BGM_EVENT_82 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.4]
+＠アンデルセン
+作家は竜の出る物語を書くものであって、[r]退治に同行するものではないぞ。
+[k]
+
+＠アンデルセン
+ノンフィクション寄りの取材なら考えられなくもないが、[r][#生憎:あいにく]俺は童話作家だ。
+[k]
+
+＠アンデルセン
+ドラゴンの空腹が作家一人ぶん紛れるだけに[r]ならなければいいがな？
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.4 1]
+[wt 0.4]
+＠シェヘラザード
+ああ、竜とは、なんと恐ろしい……[r]死んでしまうのでは……？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+助っ人は、このお二人……なのですか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+ああ。申し分ない。[r]だが、ある程度は直接戦闘ができる者も必要だ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+＠ゲオルギウス
+ならば私も最後まで同行させていただきたく。
+[k]
+
+[charaFace J 1]
+＠ゲオルギウス
+旅の監督を任じられた者として、[r]そのゴールをしっかり見届けねばなりませんからね。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+＠アルジュナ・オルタ
+彼から託された、[r]邪悪を断つ使命は終わってはいません。
+[k]
+
+＠アルジュナ・オルタ
+粛清の剣振るうは当然のことかと……
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+
+[branchQuestNotClear lblNotClear8 3000303]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ダ・ヴィンチ
+目的地はもう閉塞特異点じゃないから、
+[k]
+
+＠ダ・ヴィンチ
+サーヴァントのレイシフトに関してのルールは[r]通常通りのものとなる。
+[k]
+
+[charaFace F 24]
+＠ダ・ヴィンチ
+まあ、それはいつも通り、分配できるリソース量や[r]相性などを考えて決めなくてはならないという意味だ。
+[k]
+
+[charaFace F 0]
+＠ダ・ヴィンチ
+多ければ多いほどいいというものでもないけど……[r]このメンバーでいいのかい？
+[k]
+
+[branch lblConf8]
+[label lblNotClear8]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,0]
+＠G：ダ・ヴィンチ
+目的地はもう閉塞特異点じゃないから、
+[k]
+
+＠G：ダ・ヴィンチ
+サーヴァントのレイシフトに関してのルールは[r]通常通りのものとなる。
+[k]
+
+[charaFace G 5]
+＠G：ダ・ヴィンチ
+まあ、それはいつも通り、分配できるリソース量や[r]相性などを考えて決めなくてはならないという意味だ。
+[k]
+
+＠G：ダ・ヴィンチ
+多ければ多いほどいいというものでもないけど……[r]このメンバーでいいのかい？
+[k]
+
+
+[label lblConf8]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+問題ない。
+[k]
+
+[charaPut M 0,-200]
+[charaFadeTime M 0.1 0.6]
+＠サンタカルナ
+（アルジュナは……おそらく来ないだろう。[r]　動くにしても、オレの戦いを見届けてからのはずだ）
+[k]
+
+[charaFace A 12]
+＠サンタカルナ
+（しかし……ならば、なぜ）
+[k]
+
+[messageOff]
+[charaFadeout M 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+[wt 1.0]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+[charaFadeTime M 0.1 0.6]
+＠サンタカルナ
+（もう一人のアルジュナを同行させている……？[r]　オレへの手助けのためではあるまい）
+[k]
+
+＠サンタカルナ
+（何か他に理由がありそうだが……）
+[k]
+
+[charaFadeout M 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠マシュ
+それでは、具体的なブリーフィングを開始しましょう。[r]カルナさん、いくつか質問させてください。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[charaMoveReturn A 0,-5 0.5]
+[wt 1.2]
+
+
+[bgm BGM_EVENT_82 1.0 0.4]
+[wipeout rollRight 1.0 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 1.5]
+
+[bgm BGM_EVENT_82 1.0 1.0]
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[branchQuestNotClear lblNotClear9 3000303]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ダ・ヴィンチ
+なるほどね。そういう理屈の作戦なら[r]確かに勝ち目もありそうだ。
+[k]
+
+[charaFace F 26]
+＠ダ・ヴィンチ
+よーし、それじゃあ行ってみよう[line 3]
+[k]
+
+＠ダ・ヴィンチ
+みんなのクリスマスプレゼントを取り戻すために。[r]邪竜ヴリトラの待つ、ヒマラヤ山脈へ！
+[k]
+
+[branch lblConf9]
+[label lblNotClear9]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 0,0]
+＠G：ダ・ヴィンチ
+なるほどね。そういう理屈の作戦なら[r]確かに勝ち目もありそうだ。
+[k]
+
+[charaFace G 1]
+＠G：ダ・ヴィンチ
+よーし、それじゃあ行ってみよう[line 3]
+[k]
+
+＠G：ダ・ヴィンチ
+みんなのクリスマスプレゼントを取り戻すために。[r]邪竜ヴリトラの待つ、ヒマラヤ山脈へ！
+[k]
+
+[label lblConf9]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_82 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

@@ -1,0 +1,833 @@
+
+
+
+＄94-05-42-09-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 6031000 1 刑部姫]
+[charaSet B 2015001 1 アルジュナ]
+[charaSet C 5004001 1 ナーサリー・ライム]
+[charaSet D 4031000 1 赤兎]
+[charaSet E 7028000 1 バニヤン]
+[charaSet F 6005001 1 ジャック]
+[charaSet G 2035000 1 パリス]
+[charaSet H 2040000 1 清少納言]
+[charaSet I 3014001 1 胤瞬]
+[charaSet J 6001001 1 小次郎]
+[charaSet K 6038002 1 コルデー]
+[charaSet L 2037000 1 ジェーン]
+[charaSet M 3039000 1 ガレス]
+[charaSet N 3036001 1 ブラダマンテ]
+[charaSet O 6037001 1 カーマ]
+
+[imageSet Q back10000_fs 1]
+[charaScale Q 1.5]
+
+[charaDepth Q 3]
+[charaDepth O 4]
+
+
+[scene 106100]
+
+[fadein black 1.5]
+[wait fade]
+
+[fowardEffect bit_talk_radiallight01 0,-270]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_94 0.1]
+
+＠刑部姫
+ひわわわわわ！　ウッソ、あれが伏線で、[r]しかもこーいう展開！？
+[k]
+
+[fowardEffectStop bit_talk_radiallight01]
+＠刑部姫
+そ、それに[line 3]この絵力よ！[r]線の一本一本から魂を感じるし、コマが輝いて見えるし！
+[k]
+
+[charaFace A 0]
+＠刑部姫
+あ。マジ無理。神。神すぎて死ぬ。
+[k]
+
+[messageOff]
+
+[charaShake A 0.01 1 1 1.0]
+[charaMove A 0,-30 1.0]
+
+[wt 1.5]
+
+[se ad7]
+[charaMove A 0,0 0.2]
+[charaFace A 2]
+＠刑部姫
+いや死んでる場合じゃなーい！[r]冬の締め切りまでまだ間がある！
+[k]
+
+＠刑部姫
+この溢れ出す衝動、今すぐ形にしないと爆発しちゃう！[r]ネーム、まずはネームから[line 3]
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_94 1.0 0.4]
+[wait fade]
+
+
+[fowardEffectDestroy bit_talk_radiallight01]
+[charaFadeout A 0.1]
+
+[scene 105300]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_94 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠ナーサリー・ライム
+わーい、開いたわ？
+[k]
+
+＠ナーサリー・ライム
+プレゼントの中身もとっても素敵……[r]待っていたからかしら、とっても輝いて見えるの！
+[k]
+
+
+[charaFace C 3]
+＠ナーサリー・ライム
+この前はひどいこと言ってごめんなさい。[r]あなたはいじわるなおじいさんなんかじゃないわ。
+[k]
+
+[charaFace C 1]
+＠ナーサリー・ライム
+[line 3]ありがとう、サンタさん！
+[k]
+
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_94 1.0 0.4]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+[scene 105900]
+
+[branch lblConf4]
+[label lblNotClear4]
+[scene 105600]
+[label lblConf4]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_94 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠赤兎
+………………。
+[k]
+
+[se ade117]
+[charaMoveReturn D 0,-5 0.5]
+[charaFace D 2]
+＠赤兎
+バリッ、ボリバリこれはかつてなく素晴らしいニンジンで[r]ありましてこの呂布も口が止まらボリボリムシャッ[line 3]
+[k]
+
+[seStop ade117 0.5]
+[messageOff]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_94 1.0 0.4]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+[scene 104200]
+
+[branch lblConf2]
+[label lblNotClear2]
+
+[scene 105500]
+
+[label lblConf2]
+
+[wt 1.0]
+
+[charaDepth E 1]
+[charaDepth F 2]
+
+[charaDepth H 3]
+[charaDepth G 4]
+
+[charaDepth I 5]
+[charaDepth J 6]
+
+[bgm BGM_EVENT_94 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[se ad413]
+[seVolume ad413 0 0]
+[seVolume ad413 0.8 0.7]
+
+
+[charaTalk off]
+
+[charaFace E 8]
+[charaFadein E 0.4 0,0]
+
+[charaFace F 1]
+[charaFadeinFSR F 0.4 250,0]
+
+[charaMoveFSL E -200,0 2.5]
+[charaMoveFSR F 50,0 2.5]
+
+[wt 1.0]
+
+[charaFadeout F 0.4]
+[charaFadeout E 0.4]
+[wt 1.0]
+
+[charaFace G 1]
+[charaFadeinFSR G 0.4 50,0]
+
+[charaFace H 7]
+[charaFadeinFSL H 0.4 -200,0]
+
+[charaMoveFSR G 250,0 2.5]
+[charaMove H 0,0 2.5]
+
+[wt 1.0]
+
+[charaFadeout H 0.4]
+[charaFadeout G 0.4]
+[wt 1.0]
+
+[charaDepth K 1]
+[charaDepth L 2]
+[charaDepth M 4]
+[charaDepth N 3]
+
+[charaFace I 1]
+[charaFadein I 0.4 0,0]
+
+[charaFace J 1]
+[charaFadeinFSR J 0.4 250,0]
+
+[charaMoveFSL I -200,0 2.5]
+[charaMoveFSR J 50,0 2.5]
+
+[wt 1.0]
+
+[charaFadeout J 0.4]
+[charaFadeout I 0.4]
+[wt 1.0]
+
+[charaFace K 7]
+[charaFadeinFSR K 0.4 50,0]
+
+[charaFace L 1]
+[charaFadeinFSL L 0.4 -200,0]
+
+[charaMoveFSR K 250,0 2.5]
+[charaMove L 0,0 2.5]
+
+[wt 1.0]
+
+[charaFadeout L 0.4]
+[charaFadeout K 0.4]
+[wt 1.0]
+
+[charaFace N 1]
+[charaFadein N 0.4 0,0]
+
+[charaFace M 1]
+[charaFadeinFSR M 0.4 250,0]
+
+[charaMoveFSL N -200,0 2.5]
+[charaMoveFSR M 50,0 2.5]
+
+[wt 1.0]
+
+[charaFadeout N 0.4]
+[charaFadeout M 0.4]
+
+[fadeout black 1.5]
+[seStop ad413 1.5]
+[bgmStop BGM_EVENT_94 1.5]
+[wait fade]
+
+
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk on]
+[charaTalk O]
+[charaFace O 10]
+[charaFadein O 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠カーマ
+はーあ。右を見ても左を見ても幸せそうな笑顔……[r]肩が凝っちゃいますよねぇ。
+[k]
+
+[charaFace O 15]
+＠カーマ
+そうは思いませんか、そこの人？
+[k]
+
+[messageOff]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[se ad95]
+[wt 1.2]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+[seStop ad95 0.1]
+[wt 0.6]
+
+＠アルジュナ
+いえ、[r]私には関係のないことですし。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 13]
+[charaFadein O 0.1 1]
+＠カーマ
+ふぅん？　うふふ、まあいいですけど。
+[k]
+
+＠カーマ
+あ、ついでに少し質問してもいいです？
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アルジュナ
+……私に答えられることであれば。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 1]
+[charaFadein O 0.1 1]
+＠カーマ
+パールヴァティーはパールヴァティーなので、ヴリトラの[r]こととか最初から分かってたのかもしれませんけれど。
+[k]
+
+＠カーマ
+どうして、いち早く貴方も分かったんですかね？
+[k]
+
+＠カーマ
+タイミング的には私のところだったような気がしますから。[r]そんなヘマしたのかなー、と気になったってわけです。
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠アルジュナ
+……カルナが『普段通りのカーマだ』と[r]貴女を評したからです。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 5]
+[charaFadein O 0.1 1]
+＠カーマ
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アルジュナ
+奴は嘘や[#欺瞞:ぎまん]に騙されず、[r]人となりの真実を見抜く目を持っている。
+[k]
+
+＠アルジュナ
+そんな者がそう評したなら、実際、
+[k]
+
+＠アルジュナ
+あそこにいたのはいかなる操作も受けていない、[r]ありのままの貴女だったのでしょう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 0]
+[charaFadein O 0.1 1]
+＠カーマ
+それはまあ、そうですよ。[r]私は私の意志でヴリトラに協力しました。
+[k]
+
+＠カーマ
+インドラ系にジャストタイミングな嫌がらせができる[r]最高の機会でしたからね。
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アルジュナ
+だが、貴女はこう言っていた[line 3]自分の行いに対して、[r]『嫌々な部分もある』と。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 4]
+[charaFadein O 0.1 1]
+＠カーマ
+そんなこと言いましたっけ？
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アルジュナ
+確かに。そして問題は、[r]何が嫌々だったのか、ということです。
+[k]
+
+＠アルジュナ
+我々と、マスターと敵対すること？[r][line 3]違う。
+[k]
+
+＠アルジュナ
+貴女がカルナの言う通りの、普段と同じ斜に構えた[r]貴女ならその程度のことを気にするはずがない。
+[k]
+
+＠アルジュナ
+皮肉としてなら言うかもしれませんが、[r]あのときはとてもそんな感じではなかった。
+[k]
+
+＠アルジュナ
+では……と考えて、[r]今の貴女が嫌々するような行為に思い至りました。
+[k]
+
+[messageOff]
+
+[wt 1.0]
+
+＠アルジュナ
+[#人を愛することです]。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 5]
+[charaFadein O 0.1 1]
+＠カーマ
+…………。
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アルジュナ
+神としての仕事をボイコットしている貴女がそう言った。[r][line 3]つまり、あの行為はある意味では愛であった。
+[k]
+
+[charaFace B 4]
+＠アルジュナ
+そこからです。ヴリトラの行為は果たして悪なのか、[r]という疑念が生まれたのは。
+[k]
+
+[charaFace B 0]
+
+＠アルジュナ
+貴女がヴリトラの手助けをすることが、[r]どこかに愛の意味を生むのだとしたら。
+[k]
+
+＠アルジュナ
+それはなぜだ[line 3]と。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 10]
+[charaFadein O 0.1 1]
+＠カーマ
+……試練を与えて乗り越えさせ、成長させる。[r]それも場合によっては愛と呼ばれる、ってところですね。
+[k]
+
+＠カーマ
+それこそが私にとっては必要悪でしたよ。
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アルジュナ
+しかし全ては想像。確証はありませんでした。[r]だから託す事にしたのです。
+[k]
+
+＠アルジュナ
+もう一人の私。神の子と化した、[r]超越の視点で善悪を見抜く彼に。
+[k]
+
+＠アルジュナ
+……以上ですね。まだ何かあるでしょうか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 13]
+[charaFadein O 0.1 1]
+＠カーマ
+別の意味もあったんじゃないですか？
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠アルジュナ
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 1]
+[charaFadein O 0.1 1]
+＠カーマ
+ほら私、愛の神ですから。愛には敏感なんです。[r]だからつついてみますけど。
+[k]
+
+＠カーマ
+貴方がもう一人の自分に同行役を交代したのは、[r]彼に何かを与えようという意味もあったのでは？
+[k]
+
+[charaFace O 15]
+＠カーマ
+そう、たとえば……昔のことを、人であった時のことを[r]すっかり忘れてしまった、もう一人の自分に。
+[k]
+
+＠カーマ
+あの中身が少し若くなっていた異父兄と触れ合わせて、[r]何かを思い出すような刺激を与えてあげたかったとか？
+[k]
+
+[charaFace O 7]
+＠カーマ
+ああ、それはもう一人の自分への、[r]素敵なクリスマスプレゼントですね？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 0.6]
+[charaFadeout O 0.1]
+[wt 0.1]
+
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 0.6]
+
+[se ade533]
+[seVolume ade533 0 0.8]
+[charaShake B 0.01 2 2 0.7]
+[charaMoveScale B 0.97 0.7]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaScale O 1.1]
+[charaTalk O]
+[charaFace O 2]
+[charaFadein O 0.1 0,10]
+
+[se ad7]
+[charaMoveScale O 1.0 0.3]
+[charaMove O 0,0 0.3]
+[wt 0.5]
+＠カーマ
+ちょっと、[#止:や]めてくださいガチな殺気！[r]こっちは神ですよ！
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠アルジュナ
+魔である可能性大。マスターに[#仇為:あだな]す魔なら[r]現場判断で滅しても問題はないでしょう。よし解決。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 11]
+[charaFadein O 0.1 1]
+＠カーマ
+問題ありますぅー。[r]今は悪戯ぐらいしかしないんですぅー。
+[k]
+
+[charaFace O 10]
+＠カーマ
+まったく、これだからシヴァ寄りの人間は。[r]とにかく[#灼:や]けばいいと思ってるんですから。
+[k]
+
+[charaFace O 14]
+＠カーマ
+はいはい、私はもう立ち去りますよ。[r]後ろから矢とか撃たないでくださいね？
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[pictureFrame cut063_cinema]
+
+[charaTalk depthOff]
+[charaPut Q 0,-200]
+[charaFadeTime Q 0.1 0.6]
+[charaMove O 0,-50 0.1]
+[charaFace O 11]
+
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠カーマ
+（うーん。鋭い推理でしたけど、[r]　最初の拠り所にしたのがアレでいいんでしょうかね）
+[k]
+
+＠カーマ
+（それって……結局、誰よりも彼の能力を[r]　信じていた、ってコトじゃないです？）
+[k]
+
+[charaFadeout Q 0.1]
+[wt 0.1]
+
+[charaFace O 14]
+＠カーマ
+……変なの、っと。
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[charaFadeout O 0.1]
+[pictureFrame]
+
+
+[wt 1.5]
+[fadein black 1.0]
+[wait fade]
+[wt 0.3]
+
+[se ad95]
+
+[wt 1.9]
+[seStop ad95 0.1]
+[wt 0.4]
+
+[se ad8]
+[wipeout leftToRight 1.0 1.0]
+[wait wipe]
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+[scene 105800]
+
+[branch lblConf3]
+[label lblNotClear3]
+
+[scene 106000]
+
+
+[label lblConf3]
+
+[wt 0.6]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.5]
+
+[bgm BGM_EVENT_45 0.1]
+
+＠
+喧騒をよそに、部屋に戻る。[r]決して心地好くないわけではない。
+[k]
+
+＠
+外の空気に満ちた穏やかな幸福感は[r]むしろ好ましいもので、思わず微笑が漏れる。
+[k]
+
+＠
+それでも、自分には関係がないのだ。
+[k]
+
+＠
+元々、クリスマスを祝う風習などない。[r]特にあの男がサンタクロースであれば尚更だ。
+[k]
+
+＠
+そうして一人、休もうとしたとき[line 3][r]テーブルの上に、メモが置かれているのに気付いた。
+[k]
+
+
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠アルジュナ
+む。[r]いったい誰が、いつのまに……？
+[k]
+
+
+[messageOff]
+[se ade96]
+[charaMoveReturn B 0,-6 0.8]
+[wt 1.3]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠
+書かれていたのは、[r]戦闘シミュレーターの予約時刻のみ。
+[k]
+
+＠
+それが何を意味しているのか。
+[k]
+
+＠
+自分に対する『何』であるのかは、[r]考えるまでもなくわかった。
+[k]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アルジュナ
+……………。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.6]
+
+＠
+ああ、そうだ……クリスマスなど関係がない。[r]クリスマスプレゼントなど求めない。
+[k]
+
+＠
+けれど[line 3]それでも。
+[k]
+
+[messageOff]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+＠
+欲しいものが、ないわけではなかった。
+[k]
+
+[messageOff]
+[wt 2.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_45 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
+

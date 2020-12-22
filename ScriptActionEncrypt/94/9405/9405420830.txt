@@ -1,0 +1,909 @@
+
+
+
+＄94-05-42-08-3-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1048000 1 サンタカルナ]
+[charaSet B 99502600 1 マシュ]
+[charaSet C 3046001 1 ヴリトラ]
+[charaSet D 1098124510 1 ダ・ヴィンチ]
+[charaSet E 98111500 1 ダ・ヴィンチ（術）_通信]
+[charaSet F 4006001 1 ゲオルギウス]
+[charaSet G 5005001 1 アンデルセン]
+[charaSet H 2015001 1 アルジュナ]
+[charaSet I 7033002 1 アルジュナ・オルタ]
+[charaSet J 98115000 1 通信用]
+
+[charaPutFSR J 1200,2000]
+[charaEffect J bit_talk_10_LowLevel]
+
+[imageSet K back10000_fs 1]
+[charaScale K 1.5]
+
+[charaSet L 98115000 1 エフェクト用]
+
+
+[charaSet N 98115000 1 エフェクト用]
+
+[charaPutFSR N 1500,2000]
+[charaEffect N bit_sepia01_depth]
+
+[charaDepth K 1]
+[charaDepth I 1]
+[charaDepth L 2]
+[charaDepth D 2]
+[charaDepth E 2]
+
+[charaDepth H 3]
+[charaDepth N 4]
+
+[charaMoveScale C 1.1 0.1]
+
+[scene 105201]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[effect bit_talk_kengekiall02_fs]
+[se bac11]
+[wt 0.2]
+[se bac10]
+[wt 0.2]
+[se bac7]
+[wt 0.4]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,10]
+
+[se ad581]
+[charaMoveScale C 1.0 0.3]
+[charaMove C 0,0 0.3]
+[wt 0.5]
+[effectDestroy bit_talk_kengekiall02_fs]
+
+＠ヴリトラ
+ちっ[line 3]！
+[k]
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaPut J 0,0]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠マシュ
+効いています！　戦況有利！
+[k]
+
+？1：このまま押し切ろう！
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[se ad39]
+[effect bit_talk_36]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[wt 2.0]
+
+[seStop ad39 0.4]
+[effectStop bit_talk_36]
+
+＠ゲオルギウス
+汝は竜[line 3]罪ありき！[r]『[#力屠る祝福の剣:ア　　ス　　カ　　ロ　　ン]』！
+[k]
+
+[messageOff]
+[wt 0.1]
+[effectDestroy bit_talk_36]
+
+[se ad386]
+[effect bit_talk_v_slash01]
+[wt 1.0]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+そこだ[line 3]そのコーナーからは逃れられん。[r]そのまま沈め！
+[k]
+
+[messageOff]
+[wipeout circleIn 0.2 1.0]
+[wait wipe]
+
+[charaMoveScale F 1.0 0.1]
+[charaFadeout A 0.1]
+
+[scene 10000]
+[wt 0.15]
+
+[wipein circleIn 0.1 1.0]
+
+[fowardEffect bit_talk_flash_g]
+[wt 0.1]
+[se ad80]
+[wt 0.3]
+[seStop ad80 0.2]
+[wt 0.4]
+[charaMoveScale C 1.1 0.1]
+
+[flashin once 0.1 0.1 FFFFFFFA FFFFFFFA]
+[se adm70]
+[seVolume adm70 0 0.6]
+[wt 0.05]
+[se ad671]
+[wt 0.05]
+[seStop adm70 0.3]
+[scene 105201]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0 0,10]
+[charaMoveScale C 1.0 0.3]
+[charaShake C 0.02 3 3 0.4]
+[charaMove C 0,0 0.3]
+[seStop ad671 0.7]
+[wt 0.9]
+
+＠ヴリトラ
+くぉぉぉぉ！　わえの、[r]鱗の下にまで、痛みを届かせるか……！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠ゲオルギウス
+残念ながら、浅い……ですが、体勢は崩れています！[r]とどめを！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 0,25]
+
+[charaMove I 0,0 0.8]
+[wt 1.2]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠ヴリトラ
+…………！
+[k]
+
+[messageOff]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 13]
+[charaFadein I 0.1 1]
+[wt 0.1]
+
+[se ade532]
+
+[charaPut L 0,300]
+[charaEffect L bit_talk_radiallight01]
+[wt 2.0]
+
+[seStop ade532 0.5]
+[se ad216]
+[wt 1.5]
+
+[bgmStop BGM_EVENT_80 0.5]
+
+[seStop ad216 0.5]
+
+[charaEffectStop L bit_talk_radiallight01]
+[wt 1.2]
+
+[charaFace I 3]
+＠アルジュナ・オルタ
+………………？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+何をしている、アルジュナ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 4]
+[charaFadein I 0.1 1]
+＠アルジュナ・オルタ
+違和感は、ありましたが。[r]今こうして、[#壊劫:えごう]の[#廻剣:かいけん]を振るうにあたって[line 3]
+[k]
+
+[charaFace I 0]
+＠アルジュナ・オルタ
+邪悪を断つ刃が[#彼:か]の者の命に触れるにあたって、[r]わかりました。
+[k]
+
+＠アルジュナ・オルタ
+であれば、私はマスターに伝えなくてはなりません。[r][line 3][#これは邪悪にあらず]。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+なんだと……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+い、いえ、ヴリトラは邪竜と伝承にありますが……
+[k]
+
+＠マシュ
+プレゼント配りを邪魔しているという行為からも、[r]それは明らかなのでは？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+[line 6]。
+[k]
+
+＠ダ・ヴィンチ
+一概に邪悪だと言えない部分もある、ということかな。
+[k]
+
+[charaFace D 0]
+＠ダ・ヴィンチ
+[%1][&君:ちゃん]、[r]キミはどう思う？
+[k]
+
+＠ダ・ヴィンチ
+あまり動揺していないことから見て、[r]キミは……
+[k]
+
+＠ダ・ヴィンチ
+アルジュナあたりに実はもう話を[r]聞いてたんじゃないかと推測するけれど。
+[k]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-90]
+＠E：ダ・ヴィンチ
+[line 6]。
+[k]
+
+＠E：ダ・ヴィンチ
+一概に邪悪だと言えない部分もある、ということかな。
+[k]
+
+＠E：ダ・ヴィンチ
+[%1][&君:ちゃん]、[r]キミはどう思う？
+[k]
+
+[charaFace E 1]
+＠E：ダ・ヴィンチ
+あまり動揺していないことから見て、[r]キミは……
+[k]
+
+＠E：ダ・ヴィンチ
+アルジュナあたりに実はもう話を[r]聞いてたんじゃないかと推測するけれど。
+[k]
+
+[label lblConf1]
+
+？1：さすがダ・ヴィンチちゃん、鋭い
+？2：実はその通りです
+？！
+
+[messageOff]
+
+[wipeout circleIn 1.0 1.0]
+[bgmStop BGM_EVENT_5 1.0]
+[wait wipe]
+
+[charaPutFSR J 1200,2000]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+
+[pictureFrame cut063_cinema]
+[charaPut N 0,0]
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+[scene 105800]
+
+
+[branch lblConf2]
+[label lblNotClear2]
+
+[scene 106000]
+
+[label lblConf2]
+
+[wt 1.0]
+
+[wipein circleIn 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 0,-50]
+＠アルジュナ
+これだけはお伝えしておきましょう。
+[k]
+
+＠アルジュナ
+ヴリトラとは[line 3]邪竜とはされていますが、[r]それと同時に、ある意味では[#ただの自然現象]です。
+[k]
+
+＠アルジュナ
+[#堰界竜:いかいりゅう]ヴリトラ。あれは『障害』という[r]概念の化身であり、世界を[#堰:せ]き止めるモノ。
+[k]
+
+＠アルジュナ
+いいですか、マスター。
+[k]
+
+＠アルジュナ
+あれは人の世にとっての障害であり試練なのです。[r]それ以上でも以下でもない。
+[k]
+
+＠アルジュナ
+伝承にあるように、ヴリトラは幾度となく水を奪って[r][#干魃:かんばつ]を起こし、そのたびにインドラに殺されるものです。
+[k]
+
+＠アルジュナ
+しかしあれはおそらく、[r]その行為で人間を絶滅させようとは考えていない。
+[k]
+
+＠アルジュナ
+苦しめはしますが、必ずインドラに倒される。[r]まるでそれが運命であるかのように。
+[k]
+
+＠アルジュナ
+これは私の推測ですが、奴は[line 3]
+[k]
+
+＠アルジュナ
+上から目線で、我々に、神に。障害を与えて、[r]試しているだけなのではないでしょうか？
+[k]
+
+＠アルジュナ
+そしてその中に、奴の本当に求める目的がある。[r]そう思います。
+[k]
+
+[charaFace H 4]
+＠アルジュナ
+……その目的は、ですか。
+[k]
+
+[charaFace H 1]
+＠アルジュナ
+マスターにならば分かるはずです。[r]人として、多くのものを見てきた[&貴方:貴女]であれば[line 3]
+[k]
+
+[messageOff]
+
+[wipeout circleIn 1.0 1.0]
+[bgmStop BGM_EVENT_70 1.0]
+[wait wipe]
+
+[charaFadeout H 0.1]
+
+[charaPutFSR N 1500,2000]
+[pictureFrame]
+
+[scene 105201]
+[wt 1.0]
+
+[wipein circleIn 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaPut J 0,0]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+そ、それで……マスターには、[r]ヴリトラの目的がおわかりになったのでしょうか？
+[k]
+
+
+？1：（今までの態度から、なんとなくわかる）
+？2：（信じられないけれど[line 3]）
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 1.0]
+
+
+？1：ヴリトラ、[&きみ:あなた]は……
+？！
+
+？1：人間や神が頑張る姿を見るのが好き、なのでは？
+？！
+
+[wt 0.8]
+
+[bgm BGM_EVENT_62 0.1]
+
+[charaFace C 6]
+＠ヴリトラ
+き、ひ、ひ！　その通りよ！
+[k]
+
+＠ヴリトラ
+わえは矮小な人間が、驕り高ぶる神が苦労し、努力し、[r]泥に[#塗:まみ]れ、泣き叫び、それでも立ち上がり[line 3]
+[k]
+
+＠ヴリトラ
+乗り越えねばならん障害を乗り越えるのを見るのが[r]好きじゃ。鱗の裏までぞくぞくする！
+[k]
+
+[charaFace C 7]
+＠ヴリトラ
+考えてもみよ。
+[k]
+
+＠ヴリトラ
+人のように小さく非力ですぐ死ぬものがじゃぞ？[r]神のように強く万能で威張り散らかすものがじゃぞ？
+[k]
+
+[charaFace C 10]
+＠ヴリトラ
+このわえの[#堰:せ]き止めたモノを求めて、生の全てを費やして、[r]ひいひいと息も絶え絶えに苦労する……
+[k]
+
+＠ヴリトラ
+それを見る以上に楽しい観劇があろうか！
+[k]
+
+＠ヴリトラ
+無論、一番の盛り上がりは障害を乗り越えた瞬間じゃ。
+[k]
+
+＠ヴリトラ
+障害は乗り越えなくてはならん。[r]負けるようでは話にならん。
+[k]
+
+＠ヴリトラ
+できるだけ苦しみ嘆き絶望し、[r]その果てに何かを手に入れる様を見せよ。
+[k]
+
+＠ヴリトラ
+そのためならば、ああ、わえという障害は[r]いくらでもその前に立ってやろう。
+[k]
+
+＠ヴリトラ
+殺されても殺されても、[r]何度でも蘇り立ち塞がってやろう！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+うーん、ドＳなのは間違いないんだろうけど……
+[k]
+
+＠ダ・ヴィンチ
+相手が自分を乗り越えることを期待する[r]サディストだったってわけかい？
+[k]
+
+＠ダ・ヴィンチ
+神や魔のような、不滅に近い存在だからこそ[r]許された特殊性癖かなぁ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠マシュ
+目的については分かりましたが……[r]ヴリトラが悪を行っているのは確かなのでは？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+難しいところだけど、悪の定義にも関わるからね。
+[k]
+
+[charaFace D 24]
+＠ダ・ヴィンチ
+自然の中で繰り返される『水不足』と『水の解放』の[r]サイクルをヴリトラが象徴しているのなら[line 3]
+[k]
+
+＠ダ・ヴィンチ
+それは誰にとっての悪なのか、という話になる。
+[k]
+
+＠ダ・ヴィンチ
+人の営みにとって悪でも、[r]世界にとって悪とは限らない。ただの仕組みだ。
+[k]
+
+[charaFace D 17]
+＠ダ・ヴィンチ
+アルジュナ・オルタはそういうものを悪とは認識しない……[r]のかもしれない。
+[k]
+
+＠ダ・ヴィンチ
+もっと別の理屈があるのかもしれないけれど、[r]あまり口数が多い方じゃないからね、彼。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠アルジュナ・オルタ
+………………。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaPut K 0,-200]
+[charaPut J 0,0]
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+[charaFadeTime K 0.1 0.6]
+＠ダ・ヴィンチ
+（うん、確かに、まだ別の理屈が潜んでる気がするなあ）
+[k]
+
+＠ダ・ヴィンチ
+（ヴリトラという存在の根幹について。[r]　私たちの知らない何かが、まだ[line 3]）
+[k]
+
+[branch lblConf3]
+[label lblNotClear3]
+
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-90]
+＠E：ダ・ヴィンチ
+うーん、ドＳなのは間違いないんだろうけど……
+[k]
+
+＠E：ダ・ヴィンチ
+相手が自分を乗り越えることを期待する[r]サディストだったってわけかい？
+[k]
+
+＠E：ダ・ヴィンチ
+神や魔のような、不滅に近い存在だからこそ[r]許された特殊性癖かなぁ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠マシュ
+目的については分かりましたが……[r]ヴリトラが悪を行っているのは確かなのでは？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-90]
+＠E：ダ・ヴィンチ
+難しいところだけど、悪の定義にも関わるからね。
+[k]
+
+[charaFace E 0]
+＠E：ダ・ヴィンチ
+自然の中で繰り返される『水不足』と『水の解放』の[r]サイクルをヴリトラが象徴しているのなら[line 3]
+[k]
+
+＠E：ダ・ヴィンチ
+それは誰にとっての悪なのか、という話になる。
+[k]
+
+＠E：ダ・ヴィンチ
+人の営みにとって悪でも、[r]世界にとって悪とは限らない。ただの仕組みだ。
+[k]
+
+＠E：ダ・ヴィンチ
+アルジュナ・オルタはそういうものを悪とは認識しない……[r]のかもしれない。
+[k]
+
+＠E：ダ・ヴィンチ
+もっと別の理屈があるのかもしれないけれど、[r]あまり口数が多い方じゃないからね、彼。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠アルジュナ・オルタ
+………………。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaPut K 0,-200]
+[charaPut J 0,0]
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-90]
+[charaFadeTime K 0.1 0.6]
+＠E：ダ・ヴィンチ
+（うん、確かに、まだ別の理屈が潜んでる気がするなあ）
+[k]
+
+＠E：ダ・ヴィンチ
+（ヴリトラという存在の根幹について。[r]　私たちの知らない何かが、まだ[line 3]）
+[k]
+
+[label lblConf3]
+
+[charaFadeout K 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk depthOn]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ゲオルギウス
+しかし、それでも……[#罪はある]。
+[k]
+
+＠ゲオルギウス
+邪悪でなくとも、倒さねばならぬときがある。[r]それが竜です。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+そうだ。意図がどうあれ、[r]おまえがもたらしているものは変わらない。
+[k]
+
+＠サンタカルナ
+オレがすべきことも。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠ヴリトラ
+ああ、その通り。
+[k]
+
+＠ヴリトラ
+わえが悪か悪でないか、[r]邪竜か邪竜でないかなぞどうでもよい。
+[k]
+
+＠ヴリトラ
+わえは強大なるわえとして在るだけよ。[r]手を抜きはせぬぞ。
+[k]
+
+＠ヴリトラ
+わえは必死に、本当に必死に、小さき者が[r]全ての力を尽くしてわえを打ち倒す姿を見たい。
+[k]
+
+＠ヴリトラ
+それは手加減のないわえが相手であってこそ。[r]八百長の筋書きなどは冷めるだけじゃ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠アンデルセン
+なかなかどうして、筋が通っている。[r]さながら連載作家のようじゃないか。
+[k]
+
+[charaFace G 0]
+＠アンデルセン
+考えうる限り強い敵を主人公たちにはぶつけるべきだ。[r]勝ち目がないように見えれば見えるほどいい。
+[k]
+
+[charaFace G 5]
+＠アンデルセン
+それをどう乗り越えるかなど知るか。
+[k]
+
+＠アンデルセン
+未来の主人公たちにとにかく乗り越えさせる[line 3][r]その流れにこそ真のドラマが生まれる、というわけだ。
+[k]
+
+[charaFace G 2]
+＠アンデルセン
+ま、乗り越えられなければ、[r]駄作が生まれるだけだがな！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_62 1.0]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+＠ヴリトラ
+それは許さん。
+[k]
+
+[charaFace C 0]
+＠ヴリトラ
+面白きものを見せよ。[r]素晴らしきものを見せよ。
+[k]
+
+＠ヴリトラ
+[#蛇:わえ]を打ち倒し、[r]涙ながらに欲しいものを取り戻す様を見せよ。
+[k]
+
+[charaFace C 5]
+＠ヴリトラ
+どうした、来るがいい、来るがいい！
+[k]
+
+[charaFace C 2]
+＠ヴリトラ
+降伏を待っておるなら[#生温:なまぬる]い[line 3]わえは[r]決して貴様のプレゼントから手を離しはせぬぞ！
+[k]
+
+
+[messageOff]
+
+[charaTalk off]
+[se ade391]
+[se ad61]
+[seVolume ad61 0 0]
+[seVolume ad61 0.3 0.7]
+[effect bit_talk_charge_blu]
+[effect bit_talk_17_bl_03]
+[charaCrossFade C 1098204500 2 1.0]
+[wait charaCrossFade]
+[wt 1.6]
+
+[seStop ade391 0.5]
+[seStop ad61 0.5]
+[wt 0.4]
+[charaFadeout C 0.1]
+[wt 0.1]
+[effectDestroy bit_talk_charge_blu]
+[effectDestroy bit_talk_17_bl_03]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+ならば倒す。[r]悪かどうかなど関係がない。
+[k]
+
+＠サンタカルナ
+オレは[#今年:ひとり]のサンタクロースとして[line 3]
+[k]
+
+＠サンタカルナ
+あるいは[%1]の[r]サーヴァントとして、おまえに[#敗北:K　O]を与えるのみだ。
+[k]
+
+[charaFace A 5]
+＠サンタカルナ
+今が神代ではなくとも。[r]奪われたのが水ではなくとも。
+[k]
+
+[charaFace A 2]
+＠サンタカルナ
+変わらず、人はおまえの障害を乗り越えられるのだと[r]いうことをこの拳で示してやろう！　ヴリトラ！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

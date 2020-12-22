@@ -1,0 +1,595 @@
+
+
+＄94-05-42-08-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1048000 1 サンタカルナ]
+[charaSet B 99502600 1 マシュ]
+[charaSet C 3046001 1 ヴリトラ]
+[charaSet D 1098124510 1 ダ・ヴィンチ]
+[charaSet E 98111500 1 ダ・ヴィンチ（術）_通信]
+[charaSet F 4006001 1 ゲオルギウス]
+[charaSet G 5005001 1 アンデルセン]
+[charaSet H 5030001 1 シェヘラザード]
+[charaSet I 7033002 1 アルジュナ・オルタ]
+[charaSet J 98115000 1 通信用]
+
+[charaSet K 98115000 1 エフェクト用]
+
+[imageSet L back10000_fs 1]
+[charaScale L 1.5]
+
+[charaSet M 98115000 1 エフェクト用]
+[charaScale M 0.1]
+
+[charaDepth L 1]
+[charaDepth B 3]
+[charaDepth A 1]
+[charaDepth K 2]
+[charaDepth M 4]
+
+[scene 105201]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 -150,0]
+＠ヴリトラ
+うーん、まだかのーう。[r]退屈じゃ、退屈じゃー。
+[k]
+
+[messageOff]
+
+
+[se ad110]
+[charaMove C -75,0 0.45]
+[charaFadeout C 0.45]
+[wt 0.45]
+
+[charaFadein C 0.45 -75,0]
+[charaMove C 0,0 0.45]
+[wt 0.45]
+
+[se ad110]
+[charaMove C 75,0 0.45]
+[charaFadeout C 0.45]
+[wt 0.45]
+
+[charaFadein C 0.45 75,0]
+[charaMove C 150,0 0.45]
+[wt 0.8]
+
+
+[se ad110]
+[charaMove C 75,0 0.45]
+[charaFadeout C 0.45]
+[wt 0.45]
+
+[charaFadein C 0.45 75,0]
+[charaMove C 0,0 0.45]
+[wt 0.45]
+
+[se ad110]
+[charaMove C -75,0 0.45]
+[charaFadeout C 0.45]
+[wt 0.45]
+
+[charaFadein C 0.45 -75,0]
+[charaMove C -150,0 0.45]
+[wt 1.0]
+
+[charaFace C 4]
+＠ヴリトラ
+早く来んかのーう。[r]待ちくたびれたのーう。
+[k]
+
+[messageOff]
+
+[se ad110]
+[charaMove C -75,0 0.45]
+[charaFadeout C 0.45]
+[wt 0.45]
+
+[charaFadein C 0.45 -75,0]
+[charaMove C 0,0 0.45]
+[wt 0.45]
+
+[se ad110]
+[charaMove C 75,0 0.45]
+[charaFadeout C 0.45]
+[wt 1.2]
+
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.3]
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+＠マシュ
+あの……マスター、あれは……？
+[k]
+
+
+？1：雪の上でごろごろしてる邪竜発見
+？2：子供みたいに右に左に転がっている……
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+[wt 0.1]
+
+[se ad478]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 0,-15]
+[charaMove C 0,0 0.3]
+[wt 0.4]
+
+＠ヴリトラ
+むおっ！[r]……来ておったのか。
+[k]
+
+＠ヴリトラ
+な、なんじゃその目は。[r]何もおかしなことはなかろう？
+[k]
+
+[charaFace C 1]
+＠ヴリトラ
+わえは綺麗好きじゃからの。これは水浴びの代わりじゃ。[r]ひやっこくて気持ちよいぞ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaPut J 0,0]
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+とりあえず、冬眠するタイプじゃなさそうだって[r]ことだけは分かったよ。
+[k]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 0,-90]
+＠E：ダ・ヴィンチ
+とりあえず、冬眠するタイプじゃなさそうだって[r]ことだけは分かったよ。
+[k]
+
+[label lblConf1]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠ヴリトラ
+おやあ？　同じ顔の神っぽい奴はおるが……[r]インドラの子はおらんのか。
+[k]
+
+＠ヴリトラ
+やつが言うたから待ってやったというのに。
+[k]
+
+＠ヴリトラ
+となると……貴様たちも、わえの求めるものを[r]知っておるということかのう？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+いや。ただオレたちはおまえに勝ちに来た。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ヴリトラ
+…………。[wt 0.4][charaFace C 11][r]ま、よかろう。
+[k]
+
+
+[charaFace C 6]
+＠ヴリトラ
+そう言うからには[line 3]聖杯とやらが馴染んだ[r]わえに勝つ方法は見つかったのであろうな？
+[k]
+
+
+[messageOff]
+[charaTalk off]
+
+[se ade391]
+[effect bit_talk_charge_blu]
+[wt 2.4]
+
+[seStop ade391 0.5]
+[wt 0.4]
+[effectDestroy bit_talk_charge_blu]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk depthOff]
+
+[charaPut L 0,-200]
+[charaPut J 0,0]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[charaFadeTime L 0.1 0.6]
+＠マシュ
+（凄まじい魔力量！　普通に戦えばあの護りが[r]　突破できないのは明白です。ですが[line 3]）
+[k]
+
+[charaFadeout L 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk depthOn]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+わかっている。[r]おまえに攻撃が通らぬ秘密……
+[k]
+
+＠サンタカルナ
+それは、聖杯の魔力によって表に引き出された、[r][#おまえ自身の伝承防御だ]。
+[k]
+
+＠サンタカルナ
+不完全な顕現では与えられなかったものでも、[r]聖杯によって活性化するということはありうる。
+[k]
+
+＠サンタカルナ
+それは元々おまえが持っていたものだからだ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+
+[charaTalk D]
+[charaFace D 24]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+『夜にも昼にも、石や木などの武器で、また濡れたもの、[r]　乾いたものによって殺されない[line 3]』
+[k]
+
+＠ダ・ヴィンチ
+ヴリトラは神とそういう契約を結んだエピソードがある。[r]同一視される悪魔ナムチの話が起源とも言われるけどね。
+[k]
+
+[branch lblConf2]
+[label lblNotClear2]
+
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0,-90]
+＠E：ダ・ヴィンチ
+『夜にも昼にも、石や木などの武器で、また濡れたもの、[r]　乾いたものによって殺されない[line 3]』
+[k]
+
+＠E：ダ・ヴィンチ
+ヴリトラは神とそういう契約を結んだエピソードがある。[r]同一視される悪魔ナムチの話が起源とも言われるけどね。
+[k]
+
+[label lblConf2]
+
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+オレたちの攻撃が通らなかったのは、[r]純然たる防御力や魔力障壁のためではない。
+[k]
+
+＠サンタカルナ
+その神話で語られる性質がゆえだ。[r]ならばやりようはある。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠ヴリトラ
+き、ひ、ひ。わえと神の契約のことを知っておったか。[r]ま、それはよい。
+[k]
+
+＠ヴリトラ
+しかし……もしや、その拳であれば勝てると[r]呑気に思っておるわけではなかろうな？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ゲオルギウス
+確かに昨日、私の剣は通りませんでしたが、彼や[r]ベオウルフ殿の拳はそれと比べれば効果はありました。
+[k]
+
+＠ゲオルギウス
+石や木などの武器でなく、濡れても乾いてもいない……[r]ルールに外れていたからでしょう。
+[k]
+
+＠ゲオルギウス
+だが、それでも届かなかった。[r]それを忘れてはいません。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+ならば、さらに合わせるまでだ。
+[k]
+
+＠サンタカルナ
+その契約に縛られた神が、[r]おまえを打ち倒したときの状況に。
+[k]
+
+＠サンタカルナ
+インドラが選んだのは、今のような[#黄昏時:たそがれどき]。[r]昼でも夜でもない時間。
+[k]
+
+＠サンタカルナ
+そして……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_63 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠アンデルセン
+…………ハ！[r]『[#濡れても乾いてもいない泡を用いて殺した]』か！
+[k]
+
+＠アンデルセン
+話の筋立てとしては伏線不足な気もするが、[r]そういう突飛な飛躍が効果的なときもある！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠シェヘラザード
+直接竜と戦うなどというのは恐ろしすぎるのですが。[r]これくらいなら……
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠アンデルセン
+シェイクスピアのようにはいかんにしても、[r]ただ[#纏:まと]わせるだけなら楽なものだ。[#推敲:すいこう]はいらんな。
+[k]
+
+[se ad39]
+[effect bit_talk_charge_blu]
+＠アンデルセン
+エンチャント！[r]持っていけ、悲劇の果ての泡だ！
+[k]
+
+[messageOff]
+
+[seStop ad39 0.6]
+[se ad300]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[effectDestroy bit_talk_charge_blu]
+[wt 0.9]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad474]
+[backEffect bit_talk_charge_ppl]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+＠シェヘラザード
+語らせていただきましょう。[r]蛇の女王ヤムリカは言いました。
+[k]
+
+＠シェヘラザード
+『私が煮られたなら、一番目の泡は瓶に詰めなさい。[r]　二番目の泡は貴方が飲みなさい[line 3]』
+[k]
+
+
+[messageOff]
+
+[seStop ad474 0.6]
+[se ad300]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[backEffectDestroy bit_talk_charge_ppl]
+[wt 0.9]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[se ad39]
+[seVolume ad39 0 0]
+[seVolume ad39 1.0 1.0]
+[effect bit_talk_release]
+[wt 0.8]
+[seStop ad39 1.0]
+[wt 0.6]
+
+
+[charaPut K 100,300]
+[charaEffect K bit_talk_22]
+
+[charaPut M 130,30]
+[charaEffect M bit_talk_17]
+
+[wt 0.1]
+
+[cueSe Battle ba2]
+[seVolume ba2 0 0.9]
+
+
+[wt 1.0]
+[wt 1.3]
+
+
+＠サンタカルナ
+ならばオレたちも、泡でおまえを倒そう。
+[k]
+
+[charaFace A 2]
+＠サンタカルナ
+武器でもなく、濡れても乾いてもいないもので、[r]おまえを倒そう！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut M 1200,2000]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠ゲオルギウス
+私の剣にもお願いします。
+[k]
+
+＠ゲオルギウス
+拳ほどの効果はないかもしれませんが……[r]無意味ではないはず！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠アルジュナ・オルタ
+悪なるものを断つに、形は関係ありません。[r]これもまた、粛清の刃なり[line 3]
+[k]
+
+[messageOff]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 1.2]
+
+[charaFace C 6]
+＠ヴリトラ
+き[messageShake 0.02 3 3 0.5]、ひ、ひ！[r]よい！　そうこなくてはな！
+[k]
+
+[charaFace C 7]
+＠ヴリトラ
+ああ、なれば、叶うかもしれん。
+[k]
+
+＠ヴリトラ
+見せてみよ。貴様らの苦悶を、泣き顔を、無様な[#嗚咽:おえつ]を。[r]矮小な貴様らの足掻く様を！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠マシュ
+アンデルセンさんとシェヘラザードさんによる[r]泡のエンチャント、前衛の皆さんに付与完了！
+[k]
+
+＠マシュ
+いけます、マスター！
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPutFSR J 1200,2000]
+[wt 0.1]
+
+？1：戦闘[line 3]開始！
+？2：みんなでプレゼントを取り戻そう！
+？！
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_63 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+
