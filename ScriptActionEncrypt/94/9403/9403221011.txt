@@ -1,0 +1,201 @@
+
+＄94-03-22-10-1-1
+[soundStopAll]
+
+
+[charaSet A 1035001 1 Diarmuid]
+[charaSet B 1017000 1 "Wicked Monster"]
+[charaSet C 3011000 1 "Fionn mac Cumhaill"]
+[charaSet D 1098162000 1 Mash]
+[charaSet E 1098123200 1 Goredolf]
+[charaSet F 1098161900 1 "Chief Snake"]
+[charaSet J 5009000 1 "Effect Dummy"]
+
+[scene 70100]
+
+[bgm BGM_EVENT_63 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Diarmuid
+Your dual-wielding style is defeated!
+[k]
+
+[messageOff]
+[effect bit_talk_v_slash01]
+[wt 0.1]
+[se bac308]
+[wt 0.3]
+[charaFadeout A 0.1]
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[charaShake B 0.05 4 4 0.4]
+
+＠Wicked Monster
+Gaaah! So close! You're very pretty,[sr]but if only you were a few years younger...!
+[k]
+
+[messageOff]
+[flashin once 0.2 0.2 FFFFFFFF FFFFFF80]
+[bgmStop BGM_EVENT_63 0.5]
+[se ad528]
+[charaSpecialEffect B enemyErasure 1 1.7]
+[wt 2.0]
+
+？1：It was just for a moment, but she let her true colors show...
+？2：What a fearsome opponent...
+
+？！
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠Diarmuid
+Huh!?
+[k]
+
+[messageOff]
+
+[wt 0.7]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[charaChange A 3002001 3 fade 0.1]
+[cueSe Battle bac384]
+[wt 1.0]
+
+＠Diarmuid
+Khh... I was careless... I can't believe she stripped me of both my armor...and my Spirit Origin...
+[k]
+
+＠Diarmuid
+It seems our dual-wielding skills...were equally...matched...
+[k]
+
+[messageOff]
+[charaFadeout A 0.4]
+[charaMove A 0,-30 0.4]
+[wt 0.4]
+[se ad144]
+[seVolume ad144 0 0.4]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠Fionn mac Cumhaill
+I guess I didn't need to be here after all...[sr]Well, at least the hot springs are open again.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠Mash
+We did it, Senpai![sr]We can finally use the hot springs now!
+[k]
+
+[charaFace D 3]
+
+＠Mash
+Oh... But first, we need to get[sr]Diarmuid to the break room!
+[k]
+
+＠Diarmuid
+Please, don't mind me...[sr]You two just...enjoy yourselves...
+[k]
+
+[charaFace D 2]
+
+＠Mash
+Absolutely not!
+[k]
+
+＠Mash
+Hang in there, Diarmuid![sr]I'll carry you out of here as quickly as I can!
+[k]
+
+[messageOff]
+[charaFadeout D 0.4]
+[wt 2.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Chief Snake
+Ooh, what's this!? Do my eyes deceive me,[sr]or are the hot springs finally open again!?
+[k]
+
+＠Chief Snake
+You mean you guys took out that fallen nioh!?[sr]Nooo waaay!
+[k]
+
+＠Chief Snake
+Why, this is just the best news I've heard all week![sr]Come on, Gordy-poo, have a drink with me!
+[k]
+
+＠Chief Snake
+There's nothing like having a glass[sr]of wine in a hot spring, you know!
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 17]
+[charaFadein E 0.1 1]
+
+＠Goredolf
+Oh yes, I've heard of that! It typically involves drinking in the bath while gazing up at the moon, yes?
+[k]
+
+[charaFace E 10]
+
+＠Goredolf
+Hmm. All that aside, I wonder why this[sr]snake-man has taken such a liking to me?
+[k]
+
+[messageOff]
+[charaFace F 0]
+[charaFadein F 0.4 196,0]
+[wt 0.5]
+
+[charaTalk off]
+[charaFace E 7]
+[charaMove E 10,0 0.1]
+[charaMove F 186,0 0.1]
+[wt 0.2]
+
+[se ad345]
+[seVolume ad345 0 0.3]
+[charaFace E 8]
+[charaMove E 202,0 2.0]
+[charaShake E 0.07 7 0 2.0]
+[charaMove F 378,0 2.0]
+[wt 1.6]
+[charaFadeout E 0.2]
+[charaFadeout F 0.2]
+[seStop ad345 0.2]
+[wt 0.1]
+
+
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 1.0]
+[soundStopAll]
+[end]

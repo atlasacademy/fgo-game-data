@@ -1,0 +1,269 @@
+
+
+＄94-03-22-06-1-0
+[soundStopAll]
+
+
+[charaSet A 1098162000 1 Mash]
+[charaSet B 1098161000 1 "Sparrow 1"]
+[charaSet C 1098161100 1 "Sparrow 2"]
+[charaSet D 1098161200 1 "Sparrow 3"]
+[charaSet E 98006200 1 ???]
+[charaSet F 1037001 1 Beni-Enma]
+[charaSet G 8001410 1 "Armored Mash (No Goggles)"]
+[imageSet H back10000 1]
+[imageSet I back10000 1]
+[charaSet J 5009000 1 "Effect Dummy"]
+
+[charaScale H 1.01]
+[charaPut H 1200,1200]
+[charaFadeTime H 0.1 0.4]
+[charaScale I 1.01]
+[charaPut I 1200,1200]
+[charaFadeTime I 0.1 0.0]
+
+[scene 69700]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Mash
+Phew. That takes care of the windows[sr]on the second floor, Senpai.
+[k]
+
+＠Mash
+It's lovely that the Enma-tei's windows are so big, giving us quite a view, but it does make cleaning them rather difficult.
+[k]
+
+？1：We had to break out a ladder and everything.
+？2：I'm jealous of the sparrows when it comes to things like this.
+
+？！
+
+[charaFace A 13]
+
+＠Mash
+I've never thought of how flight would[sr]make such things so much easier. ...Huh?[wt 1.5][bgmStop BGM_EVENT_77 0.3]
+[k]
+
+[messageOff]
+
+[se ad226]
+[shake 0.03 3 3 1.5]
+[wt 1.0]
+[wipeout rectangleStripRightToLeft 0.4 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[scene 45810]
+[wt 0.2]
+[wipein rectangleStripLeftToRight 0.4 1]
+[wt 0.2]
+[wait wipe]
+
+[charaTalk off]
+[charaFace B 0]
+[charaFadein B 0.1 -640,-800]
+[charaRollMoveEx B 3.0 -3600 0,200]
+[charaMove B 1200,300 2.0]
+[wt 0.6]
+[charaFace C 0]
+[charaFadein C 0.1 -512,-200]
+[charaRollMoveEx C 7.0 -3600 0,200]
+[charaMove C 1200,50 1.5]
+[wt 2.0]
+
+[wipeout rectangleStripLeftToRight 0.4 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[scene 69700]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 0.2]
+[wipein rectangleStripRightToLeft 0.4 1]
+[wt 0.2]
+[bgm BGM_EVENT_81 0.1]
+[wait wipe]
+[wt 0.3]
+
+[charaFace A 2]
+
+＠Mash
+What was that!?[sr]Did you just get thrown out of that guest room!?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Sparrow
+Oh, Ms. Mash! [&Mr.:Ms.] [%1]![sr]Chirp chirp, great timing!
+[k]
+
+＠Sparrow
+We need your help![sr]Please, come with us to the Thrush Hall!
+[k]
+
+＠Sparrow
+Magistrate Tiger is acting up again![sr]Chirp, you have to help the madam subdue him!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠Mash
+...! I don't know what this is all about,[sr]but I can tell it's an emergency!
+[k]
+
+＠Mash
+Master, hurry! The Thrush Hall is the one[sr]all the way in the back on the second floor!
+[k]
+
+[messageOff]
+[charaFadeout A 0.2]
+[se ad459]
+[wt 0.1]
+[wipeout rightToLeft 0.5 1]
+[wt 0.3]
+[seStop ad459 0.5]
+[wait wipe]
+
+[charaPut H 0,-200]
+[charaTalk depthOff]
+[charaDepth H 0]
+[charaDepth E 1]
+[charaDepth F 2]
+
+[scene 69900]
+[fadeMove black 0.1 0.4]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.2]
+[bgmStop BGM_EVENT_81 0.5]
+[wt 0.6]
+[wipein leftToRight 0.5 1]
+[bgm BGM_EVENT_80 0.1]
+[wt 0.1]
+[seStop ad59 0.2]
+[wait wipe]
+
+＠???
+Rrrrrr...[sr]Grrrrrr!
+[k]
+
+＠???
+So...hungry...[sr]I want...to eat...
+[k]
+
+＠???
+[f large]HUMAN TOOOES!
+[k]
+
+＠???
+I want to eat...the toes from the[sr]right foot...of a left-handed human!
+[k]
+
+[messageOff]
+
+[se ad7]
+[seVolume ad7 0 0.4]
+[se ad85]
+[charaMoveScale E 1.1 0.2]
+[charaMove E 0,7 0.2]
+[wt 0.1]
+[charaFadeout E 0.1]
+[effect bit_talk_claw]
+[wt 0.4]
+[fadeout black 0.2]
+[wait fade]
+[effectStop bit_talk_claw]
+[charaFadeout E 0]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0 1]
+[fadeMove black 0.1 0.4]
+[se bac136]
+[effect bit_talk_h_slash01]
+[wait fade]
+[wt 0.1]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[se ad32]
+[wt 0.4]
+[seStop ad32 0.5]
+[wt 0.5]
+
+[charaFace F 2]
+
+＠Beni-Enma
+I can't let you do that! Don't let everything you've worked for go to waste now!
+[k]
+
+？1：We're here to help!
+？2：That's an oddly specific request!
+
+？！
+
+[charaFace F 5]
+
+＠Beni-Enma
+Cheep, [&Mr.:Ms.] [%1]![sr]I'm glad you're here!
+[k]
+
+＠Beni-Enma
+Help me bring this guest back to his senses!
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠???
+I smell...humans...[sr]I knew it! You do have some here!
+[k]
+
+＠???
+You little tease![sr]Give me that human meat! Nooow!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠G：Mash
+That anonymous guest is attacking, Master![sr]Get ready to fight back!
+[k]
+
+
+[messageOff]
+
+[charaTalk depthOff]
+[charaDepth G 0]
+[charaDepth I 1]
+
+[bgmStop BGM_EVENT_80 0.4]
+[charaPut I 0,-200]
+[charaFadeTime I 0.5 1.0]
+[wt 0.5]
+[soundStopAll]
+[end]
