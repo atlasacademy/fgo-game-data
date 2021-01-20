@@ -1,0 +1,2552 @@
+
+
+
+
+＄94-05-53-01-3-0
+
+[soundStopAll]
+[enableFullScreen]
+
+
+
+
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 6041000 1 鬼一法眼]
+[charaSet C 3013001 1 スカサハ]
+[charaSet D 5042000 1 紫式部]
+[charaSet E 3006001 1 弁慶]
+[charaSet F 1038000 1 イアソン]
+
+[charaSet G 4014001 1 牛若丸]
+[charaSet H 1098206310 1 牛若丸シルエット]
+
+
+[charaSet I 1098206400 1 平景清第一シルエット]
+[charaSet J 1098206410 1 平景清第二シルエット]
+
+[charaSet K 1098206310 1 牛若丸シルエット2]
+
+[charaSet L 6041000 1 エフェクト用]
+
+[imageSet M back10000 1]
+[charaScale M 1.01]
+
+[charaSet R 98115000 1 エフェクト用ダミー]
+
+[imageSet S cut242_mallet 1]
+
+
+
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+[scene 104100]
+
+[branch lblConf1]
+
+[label lblNotClear1]
+
+
+[scene 105700]
+
+[label lblConf1]
+
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaDepth G 6]
+[charaDepth E 4]
+
+[effectPause bit_talk_v_slash01]
+[fowardEffectPause bit_talk_h_slash01_fs 0,0 F]
+
+[fadein black 0.5]
+[wait fade]
+
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+[wt 0.3]
+
+[fadeout white 0.3]
+[se bas1]
+[wait fade]
+
+[charaFadeout F 0.1]
+[charaTalk off]
+
+[charaFace E 0]
+[charaFace G 5]
+[charaFadeinFSL G 0.1 0]
+[charaFadeinFSR E 0.1 2]
+[wt 0.5]
+
+[fadein white 0.5]
+[seStop bas1 0.5]
+[wait fade]
+
+[charaEffect G bit_talk_attack_buf]
+[charaEffect E bit_talk_attack_buf]
+[se bas9]
+[wt 1.5]
+
+[charaMoveFSR G -206,-10 0.3]
+[charaMoveScale G 1.2 0.3]
+[se ad73]
+[wt 0.1]
+
+[charaFace E 2]
+[charaMoveFSL E 206,-10 0.3]
+[charaMoveScale E 1.2 0.3]
+
+[charaFadeout E 0.2]
+[charaFadeout G 0.2]
+
+[effectStart]
+[se bac4]
+[wt 0.3]
+
+[fowardEffectStart]
+[se bac6]
+[wt 0.5]
+
+[charaScale G 1.0]
+[charaScale E 1.0]
+
+[effect bit_talk_14 -306,150]
+[se ad1013]
+[wt 0.2]
+
+[fowardEffect bit_talk_14 306,-80]
+[se ad1014]
+[wt 0.3]
+
+[charaFadeout B 0.1]
+[effectDestroy]
+[fowardEffectDestroy]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[wt 0.1]
+
+[charaPut R 1]
+[fowardEffect bit_talk_pentagram_03]
+[wt 0.1]
+[se ad598]
+[wt 3.4]
+
+[se ade251]
+[fowardEffectStop bit_talk_pentagram_03]
+[wt 1.2]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[fowardEffectDestroy]
+
+[effect bit_talk_shelling_pink01]
+[se bac30]
+[wait effect]
+[wt 0.1]
+
+
+[charaScale B 1.2]
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 0,15]
+
+[se ad32]
+[flashin once 0.07 0.1 FFFFFFFF FFFFFF00]
+
+[charaMoveScale B 1.0 0.2]
+[charaMove B 0,0 0.2]
+[se ad671]
+[wt 1.5]
+
+[charaTalk on]
+
+＠鬼一法眼
+ふむ！
+[k]
+
+[charaFace B 8]
+
+＠鬼一法眼
+天晴れ、天晴れ。[r]この僕を相手によくぞ粘るもの！
+[k]
+
+＠鬼一法眼
+サーヴァントなるものを真似て現界したが、[r]うーん、[#鬼一:こ]の霊基では押し切れぬやもしれんなァ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+[se ad51]
+
+＠スカサハ
+ならばどうする。[r]鬼一法眼。
+[k]
+
+＠スカサハ
+いかに東洋の神の亜種であろうと、[r]単身でカルデアに乗り込むのは軽率だったぞ？
+[k]
+
+
+？1：単身、ではなく……
+？2：なんか[#天狗:てんぐ]っぽいのが色々いたような……
+
+？！
+
+[charaFace C 2]
+
+＠スカサハ
+使い魔は数えん！[wt 0.5][charaFace C 0][r]あいや、そうするとサーヴァントも数えられんか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+はっはっはっはっは！
+[k]
+
+[charaFace B 0]
+
+＠鬼一法眼
+まぁ、攻め落とすつもりで来たならそうだろう！[r]単身で乗り込むのは無謀極まるさ！
+[k]
+
+[charaFace B 2]
+
+＠鬼一法眼
+しかーし！
+[k]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaFace B 0]
+
+＠鬼一法眼
+僕は別に喧嘩を売りに来た訳じゃなくて、[r]むしろ、買いに来たというか[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 13]
+[charaFadein F 0.1 1]
+
+＠イアソン
+買いに来ただぁ？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+そうだとも。[r]な、遮那王？
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.1]
+
+
+[charaShake G 0.03 3 3 0.3]
+[wt 0.3]
+
+？1：牛若丸？
+
+？！
+
+[charaFace G 4]
+
+＠牛若丸
+は、はい。
+[k]
+
+
+？1：鬼一さんはああ言ってるけど、
+？2：もしかして、心当たりがあったりする？
+
+？！
+
+[charaFace G 3]
+
+
+＠牛若丸
+…………もごもご。
+[k]
+
+[charaFace G 4]
+
+＠牛若丸
+ええと、そのぅ……
+[k]
+
+[charaFace G 3]
+
+＠牛若丸
+なんというか……[r]う～ん……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……。[r]……。
+[k]
+
+[charaFace A 12]
+
+＠マシュ
+あ、あの、先輩……[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠弁慶
+いやマシュ殿。[r]此処は拙僧に任せられよ。
+[k]
+
+＠弁慶
+なんと云いますか、伝説に語られる通りなのです。[r]牛若丸様は確かに鬼一法眼殿の弟子であった。
+[k]
+
+＠弁慶
+その頃は既に名を遮那王と変えていたはずですが、[r]ともかく牛若丸様は、鬼一殿から武芸を学び……
+[k]
+
+[bgmStop BGM_EVENT_70 1.5]
+
+＠弁慶
+兵法の奥義を[#掠め取った]のです。
+[k]
+
+
+？1：ぱーどぅん？
+
+[bgm BGM_EVENT_7 0.1]
+
+＠弁慶
+兵法の奥義を[#掠め取った]のです。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+
+＠イアソン
+言い直した……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠弁慶
+牛若丸様は……
+[k]
+
+？2：かすめとった？
+
+[bgm BGM_EVENT_7 0.1]
+
+＠弁慶
+はい。[charaMoveReturn E 0,-10 0.3]
+[k]
+
+＠弁慶
+事もあろうに牛若丸様は、鬼一殿の娘御を[#誑:たぶら]かし、[r]兵法の奥義書を持ち出させ……
+[k]
+
+？！
+
+[charaFace E 0]
+
+＠弁慶
+勝手に読んでしまったのです。[r]一読すれば神通力が得られるとさえ伝わる、至宝を。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠スカサハ
+悪戯っ子め。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+あはは。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+あはは、じゃなァい！
+[k]
+
+
+[charaFace B 17]
+
+＠鬼一法眼
+21世紀こそ迎えたものの、[r]人界は随分大変なことになってるなァ……
+[k]
+
+[charaFace B 5]
+
+＠鬼一法眼
+と思っていたら、おまえの気配を感じ取ったのだ！
+[k]
+
+
+[charaFace B 0]
+
+＠鬼一法眼
+かつての昔はまァ、[r]罰を当てようにも奥州で[#義経:おまえ]は討たれていたし、
+[k]
+
+＠鬼一法眼
+彼岸までわざわざ行くのも面倒なので、[r]長らく放っておいたが……
+[k]
+
+[messageOff]
+
+[charaFace B 7]
+[wt 1.0]
+
+[charaFace B 5]
+
+＠鬼一法眼
+エーテルの身であろうと、[r]仮初めであろうと！
+[k]
+
+＠鬼一法眼
+たとえ人理がしっちゃかめっちゃかに[r]ひっくり返っていようとも！
+[k]
+
+＠鬼一法眼
+貴様が、遂に当世へ現界したなら話は別よ！
+[k]
+
+[charaFace B 6]
+
+
+＠鬼一法眼
+英霊？　座から降りたる人理の影？
+[k]
+
+＠鬼一法眼
+ええい、そんなモノは僕の知ったことではなァい！
+[k]
+
+
+[charaFace B 2]
+
+＠鬼一法眼
+[line 3]遮那王！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+は、[charaShake G 0.01 3 3 0.1]はいっ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+[#生前:か つ て]の不始末！
+[k]
+
+＠鬼一法眼
+罰のひとつも喰らわせてやるゆえ、[r]ええい、そこに直れッ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaDepth M 2]
+[charaDepth S 3]
+[charaDepth F 4]
+[charaDepth E 4]
+[charaDepth A 4]
+[charaDepth D 4]
+
+[charaFadeTime M 0.1 0.6]
+
+[charaTalk F]
+[charaFace F 19]
+[charaFadein F 0.1 1]
+[wt 0.1]
+
+[charaMoveReturn F 0,-10 0.5]
+[wt 1.0]
+
+＠イアソン
+（なるほど、こりゃしょうがない）
+[k]
+
+[messageOff]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.1]
+
+[charaMoveReturn E 0,-10 0.5]
+[wt 1.0]
+
+＠弁慶
+（なるほど、いちいちごもっとも）
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[charaMoveReturn A 0,-10 0.5]
+[wt 1.0]
+
+＠マシュ
+（なるほど、教育的指導なのですね）
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.1]
+
+[charaMoveReturn D 0,-10 0.5]
+[wt 1.0]
+
+
+＠紫式部
+（なるほど、勝手に持ち出すのはいけませんものね……）
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+
+＠スカサハ
+なるほど。分かった。[r]思う存分、仕置きをするといい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+スカサハ殿！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠スカサハ
+聞くだにおまえが悪かろう。[r]馬鹿弟子を持つ身として共感あまりある。
+[k]
+
+[charaFace C 5]
+
+＠スカサハ
+それとも反論があるのか？[r]あるのなら存分にするといい。
+[k]
+
+？1：そうだね
+？2：何かの理由があってそうしたのかも……
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+……。[r]……。
+[k]
+
+[charaFace G 3]
+
+＠牛若丸
+……………………。
+[k]
+
+[charaFace G 5]
+
+＠牛若丸
+……私は牛若です。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+うむ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+牛若ゆえ、遮那王以降のことはわかりません。
+[k]
+
+[charaFace G 2]
+
+＠牛若丸
+義経の頃のことも[r]勿論、わかりません！
+[k]
+
+[charaFace G 3]
+
+＠牛若丸
+……それではダメでしょうか？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+[line 4]。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠スカサハ
+鬼一法眼殿。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 12]
+[charaFadein F 0.1 1]
+
+＠イアソン
+いやダメだろそれじゃ。[r]確か、死ぬまでの記憶フツーにあるだろおまえ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠弁慶
+ううむ。牛若丸様らしいキレ味ある力技ですが、[r]駄目でしょうな。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠マシュ
+だめですか……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠紫式部
+だめそうですね……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 18]
+[charaFadein F 0.1 1]
+
+＠イアソン
+アレキサンダー少年だから、[r]イスカンダル大王の所業は知らん、的な話だろつまり。
+[k]
+
+[charaFace F 12]
+
+＠イアソン
+いや、そう表現するとアリな気もするな？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+＠鬼一法眼
+いや、駄目だね！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 21]
+[charaFadein F 0.1 1]
+
+＠イアソン
+やっぱなー！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+…………やっぱり駄目ですかぁ。とほほ。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 21]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_90 0.1]
+
+＠鬼一法眼
+……。
+[k]
+
+[charaFace B 6]
+
+＠鬼一法眼
+その……[r]云うだけ云ってみましたとばかりの、[#面:ツラ]ァ。
+[k]
+
+[charaFace B 5]
+
+＠鬼一法眼
+怒髪天を[#衝:つ]くとはこの事よなァ！[r]遮那王！
+[k]
+
+[messageOff]
+
+[fowardEffect bit_talk_charge_ppl]
+[se ad632 0.5]
+[seVolume ad632 0 0.3]
+[wt 0.5]
+[seVolume ad632 0.5 0.6]
+[wt 0.5]
+[seVolume ad632 0.5 1.0]
+[wt 1.5]
+
+
+？1：鬼一さん！？
+？2：[#懐:ふところ]から何かを取り出して……何[&だ:]アレ！？
+
+？！
+
+[fowardEffectDestroy]
+[seStop ad632 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaFadeTime M 0.4 0.6]
+[charaFadein S 0.4 0,-200]
+[se ad77]
+[seStop ad77 1.0]
+[wt 2.0]
+
+[charaFadeout M 0.1]
+[charaFadeout S 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.1 1]
+
+＠イアソン
+ちっさい木のハンマー？　何だ？
+[k]
+
+[messageOff]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+[charaFace A 2]
+
+＠マシュ
+そ、それはまさか、打ち出の[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠弁慶
+打ち出の[#小槌:こづち]！[r]言わば、日の本に於ける万能の願望機にて！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠スカサハ
+……何？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+多くの伝説に登場する日本のアーティファクト！[r]弁慶さんの言葉通り、願望機に近い力を持つモノです！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+そうれ！
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaDepth L 8]
+[charaDepth G 4]
+
+[bgmStop BGM_EVENT_90 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+[charaEffect G bit_talk_gavel_hit]
+[cueSe SE_21 21_ade539]
+[wt 1.2]
+
+[charaFace G 4]
+
+＠牛若丸
+あっ。
+[k]
+
+[messageOff]
+[charaDepth K 5]
+[charaDepth H 3]
+[charaDepth G 2]
+
+[charaScale K 1.1]
+
+[cueSe SE_21 21_ade540]
+[effect bit_talk_gavel_smoke]
+[wt 0.2]
+
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.1]
+[charaFadeout G 0.1]
+[wt 1.0]
+
+[charaPut K 0,15]
+[charaFadeTime K 0.1 0.5]
+[charaMoveScale K 1.05 0.3]
+[charaMove K 0,0 0.3]
+[wt 0.2]
+[charaFadeout K 0.2]
+[cueSe SE_21 21_ade541 1.3]
+[wt 1.3]
+
+[charaCrossFade H 1098206400 0 0.8]
+[wait charaCrossFade H]
+
+[charaCrossFade H 1098206310 0 0.8]
+[wait charaCrossFade H]
+
+[charaCrossFade H 1098206400 0 0.8]
+[wait charaCrossFade H]
+
+[seStop 21_ade541 0.5]
+
+
+[wt 1.0]
+
+
+＠牛若丸
+私の、姿が……！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_49 0.1]
+
+＠鬼一法眼
+打ち出の小槌、一振りすれば！
+[k]
+
+＠鬼一法眼
+大きくなあれ！[r]大きくなあれ！
+[k]
+
+
+＠鬼一法眼
+[#是:これ]、一寸法師の逸話のままに[line 3][r]牛若丸はこれで[#仕舞:し　ま]いよ、貴様は遮那王である！
+[k]
+
+＠鬼一法眼
+いやさせっかくだ！[r]もう一振りしてくれようぞ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut L 0,0]
+[charaEffect L bit_talk_gavel_hit]
+[cueSe SE_21 21_ade539]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+打ち出の小槌、それ、もう一振り！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut L 0,0]
+[charaEffect L bit_talk_gavel_hit]
+[cueSe SE_21 21_ade539]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+大きくなあれ！[r]大きくなあれ！
+[k]
+
+＠鬼一法眼
+牛若丸ならず、[r]遮那王ならず、
+[k]
+
+[charaFace B 5]
+[bgmStop BGM_EVENT_49 2.0]
+
+＠鬼一法眼
+貴様はそう[line 3]九郎[#判官:ほうがん]義経である！
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 0.5]
+
+[cueSe SE_21 21_ade541 1.3]
+
+[charaCrossFade I 1098206410 0 0.8]
+[wait charaCrossFade I]
+
+[charaCrossFade I 1098206400 0 0.8]
+[wait charaCrossFade I]
+
+[charaCrossFade I 1098206410 0 0.8]
+[wait charaCrossFade I]
+
+[seStop 21_ade541 0.5]
+
+
+＠牛若丸
+あ、[wt 0.3][charaShake I 0.01 3 3 0.5]ああ、ああああ……！
+[k]
+
+＠牛若丸
+こ、[wt 0.3][charaShake I 0.01 3 3 0.5]れは……[r]何か……！
+[k]
+
+＠牛若丸
+だめ、[wt 0.3][charaShake I 0.01 3 3 0.3]です……何か……妙な[wt 0.5][charaShake I 0.01 3 3 0.3]……！
+[k]
+
+＠牛若丸
+だめ、[wt 0.3][charaShake I 0.01 3 3 0.3]だめ、だめだめだめだめだめ[wt 0.5][charaShake I 0.01 3 3 0.3]……[#貴方は]……！
+[k]
+
+＠牛若丸
+だめ[wt 0.3][charaShake I 0.01 3 3 0.3]……[line 3]！
+[k]
+
+[messageOff]
+
+[se ad231]
+[wt 0.5]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠牛若丸
+あッ！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠スカサハ
+牛若丸！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 21]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+いつもの芝居であろう、大袈裟な……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠スカサハ
+奴の霊基、いや、霊核に異常が出ている！[r]よく[#視て]みろ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+そんな[#莫迦:ばか]なことが……
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[wt 0.5]
+
+[se ad231]
+[wt 1.5]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 19]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+あれ？　あれれ？[r]遮那王？
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+[wt 0.5]
+
+[se ad231]
+[wt 1.5]
+
+＠牛若丸
+あ……あ……ああ……[line 3]
+[k]
+
+＠牛若丸
+[f large]あ[charaShake J 0.01 5 5 1.0]あああああああああああああ！！
+[k]
+
+
+？1：牛若丸！？
+
+？！
+
+[messageOff]
+[charaPut L 0,0]
+[charaEffect L bit_talk_charge_ppl02]
+[se ad350]
+[wt 2.0]
+
+[fadeout white 0.3]
+[se ad641]
+[seStop ad350 0.3]
+[wait fade]
+
+[charaPut L 2400,2400]
+[charaEffectStop L bit_talk_charge_ppl02]
+
+[charaFadeout J 0.1]
+[wt 1.0]
+
+[fadein white 0.5]
+[seStop ad641 0.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+魔力反応、増大！[r]マスター、下がってください！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 19]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+確かに奴の霊核がおかしい！[r]霊基まで、やけに[#軋:きし]んでいるような……何故だ！？
+[k]
+
+[charaFace B 20]
+
+＠鬼一法眼
+僕は、霊核なんか弄ってないぞ！？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 0.4]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.4 1]
+[wt 0.4]
+
+＠牛若丸？
+……。[r]……。
+[k]
+
+＠牛若丸？
+フ[line 3]
+[k]
+
+[messageOff]
+
+[charaMoveScale J 1.2 0.2]
+[charaMove J 0,20 0.2]
+[wt 0.1]
+[charaFadeout J 0.2]
+
+[effect bit_talk_h_slash02_fs]
+[se bac6]
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.3 50,0]
+[charaMove E 1 0.1]
+[wt 0.1]
+
+[flashin once 0.07 0.1 FFFFFFFF FFFFFF00]
+[se ad32]
+[effect bit_talk_14]
+[charaShake E 0.01 3 3 0.5]
+[wt 0.5]
+
+＠弁慶
+……マスター殿！
+[k]
+
+[charaScale J 1.0]
+
+
+？1：弁慶、[&助かる！:ありがと！]
+
+？！
+
+＠弁慶
+いえ！
+[k]
+
+[se ad51]
+
+[charaFace E 2]
+
+＠弁慶
+牛若丸様！
+[k]
+
+＠弁慶
+いえ、九郎[#判官:ほうがん]義経様か！[r]事もあろうに主殿を……どうなされたのです、一体！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaScale J 1.0]
+
+[bgm BGM_EVENT_71 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠牛若丸？
+ふ、ふふ、ふふ……
+[k]
+
+＠牛若丸？
+ふふふふふふははははははははははははははは！[r]愉快、愉快！
+[k]
+
+＠牛若丸？
+為し得たぞ！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 20]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+何がおかしい！[r]って、うわ！？
+[k]
+
+[messageOff]
+
+[charaPutFSL J 0]
+[charaFace J 0]
+[charaMoveFSL J -80,0 0.3]
+[wt 0.1]
+[se ad183]
+[charaFadeTime J 0.2 1.0]
+[wt 0.5]
+[se ad168]
+[wt 0.1]
+[seStop ad168 0.1]
+[wt 0.3]
+
+[charaMoveFSL J -300,0 0.3]
+[wt 0.3]
+[se ad60]
+[wt 0.1]
+[seStop ad60 0.1]
+[charaFadeout J 0.2]
+[wt 0.5]
+
+＠鬼一法眼
+な、何だ急に抱きついたりして！？
+[k]
+
+[messageOff]
+
+[charaFace B 19]
+
+[charaMoveReturn B 0,10 0.3]
+[wt 0.6]
+
+[charaFace B 5]
+
+＠鬼一法眼
+って、ああ！　違う！[r]ない！　小槌……打ち出の小槌、貴様[#掠:かす]め取ったか！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠牛若丸？
+ふふふ、あはは、あははははは！
+[k]
+
+＠牛若丸？
+打ち出の小槌！[r]貰い受けた！
+[k]
+
+[messageOff]
+
+[se ad73]
+[charaEffect J bit_talk_quickmove]
+[charaMove J 0,10 0.3]
+[charaFadeout J 0.2]
+[wt 0.7]
+
+[charaTalk F]
+[charaFace F 9]
+[charaFadein F 0.1 1]
+
+＠イアソン
+おいおいおい逃げやがった！[r]これ、もしかしなくてもマズイんじゃねぇか！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠スカサハ
+追うぞ！
+[k]
+
+[messageOff]
+
+[wipeout rightToLeft 0.5 1.0]
+[se ad769]
+[bgmStop BGM_EVENT_71 0.5]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[charaSet G 4013001 1 メイヴ]
+[charaSet H 7020000 1 クー・フーリン・オルタ]
+[charaSet I 7020000 1 クー・フーリン・オルタシルエット]
+[charaFilter I silhouette 00000080]
+
+[charaSet K 98104010 1 クー・フーリン・オルタ]
+
+[charaSet E 1098206200 1 弁慶]
+[charaSet F 98104200 1 イアソン]
+
+[charaSet Q 1098124510 1 ダ・ヴィンチ（子）]
+
+[charaSet S 98111500 1 ダ・ヴィンチ（大）]
+
+[wt 1.0]
+[seStop ad769 1.0]
+
+
+
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+[scene 104200]
+
+[branch lblConf2]
+
+[label lblNotClear2]
+
+
+[scene 105500]
+
+[label lblConf2]
+
+
+[wt 1.0]
+
+[wipein leftToRight 0.5 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_49 0.1]
+
+[charaTalk off]
+
+[charaDepth H 2]
+[charaDepth I 4]
+
+[charaFace I 0]
+[charaFadein I 0.4 1]
+[wt 1.4]
+
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.1]
+[charaFadeout I 0.7]
+[wt 1.6]
+
+[charaTalk on]
+
+[charaTalk H]
+[charaFace H 0]
+
+＠クー・フーリン・オルタ
+…………騒がしいな。
+[k]
+
+[messageOff]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[se ad73]
+[charaEffect J bit_talk_quickmove 0,0 V]
+[charaFadein J 0.1 0,25]
+[charaMove J 0,0 0.2]
+[wt 1.2]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+
+
+＠クー・フーリン・オルタ
+何だ、おまえは。
+[k]
+
+＠クー・フーリン・オルタ
+[line 6]フッ！！
+[k]
+
+[messageOff]
+
+[fowardEffect bit_talk_v_slash02]
+[se ad171]
+[charaFadeout H 0.1]
+[wt 0.7]
+
+[effect bit_talk_14]
+[se ad32]
+[cueSe SE_21 21_ade539]
+[seVolume 21_ade539 0 0.6]
+[wt 0.5]
+
+[charaTalk J]
+[charaFace J 0]
+[charaScale J 1.2]
+[charaFadein J 0.1 0,20]
+[charaMoveScale J 1.0 0.2]
+[charaMove J 0,0 0.2]
+[se ad671]
+[wt 1.5]
+
+＠牛若丸？
+……。[r]……。
+[k]
+
+＠牛若丸？
+…………強い。だが。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠クー・フーリン・オルタ
+あ？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaScale J 1.0]
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠牛若丸？
+既に、[#小槌を振るった]。[r]貴様で三騎目だ。
+[k]
+
+＠牛若丸？
+くく。くくく。彼方の荒武者よ、さらば！
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_49 0.7]
+
+[se ad73]
+[charaEffect J bit_talk_quickmove]
+[charaMove J 0,10 0.3]
+[charaFadeout J 0.2]
+[wt 0.7]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+[se ad51]
+
+＠クー・フーリン・オルタ
+チッ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+
+＠メイヴ
+なに、なに？[r]廊下でバトったらゴッフに怒られるわよ？
+[k]
+
+[branch lblConf3]
+
+[label lblNotClear3]
+
+
+＠メイヴ
+なに、なに？[r]廊下でバトったらダ・ヴィンチに怒られるわよ？
+[k]
+
+[label lblConf3]
+
+
+[charaFace G 1]
+＠メイヴ
+って何だ、クーちゃんじゃない！
+[k]
+
+[charaFace G 12]
+
+＠メイヴ
+ん？
+[k]
+
+＠メイヴ
+あれ？
+[k]
+
+＠メイヴ
+あれれ？
+[k]
+
+＠メイヴ
+クーちゃん？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+＠クー・フーリン・オルタ
+ん。
+[k]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠メイヴ
+クーちゃん！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+＠クー・フーリン・オルタ
+うるせえ。
+[k]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠メイヴ
+クーちゃん！！！！
+[k]
+
+[messageOff]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad769]
+[wt 2.0]
+[seStop ad769 0.1]
+
+
+＠イアソン
+どうしたどうした。[r]ヤツはドコ行った？
+[k]
+
+＠弁慶
+どうしました、メイヴ殿。
+[k]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠メイヴ
+あなたたちまで！？[r]ど、どうしてそんな姿になってるの！
+[k]
+
+[messageOff]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+
+＠イアソン
+なに言ってんだ？[r]それよりヤツは……
+[k]
+
+[messageOff]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠弁慶
+お、おお、イアソン殿、背丈が！
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.4 1]
+[wt 0.4]
+
+＠クー・フーリン・オルタ
+うるせえな……
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠紫式部
+あ[charaShake D 0.01 3 3 0.3]わわわわ！？[r]み、皆様、縮んでおります！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠イアソン
+何ーーーー！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠弁慶
+い、いつの間に！　不覚！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠スカサハ
+見事に縮んでいるな……[r]打ち出の小槌、願望機の影響を受けたとみたぞ。
+[k]
+
+＠スカサハ
+元凶はどこへ行った？[r]姿が見えん。魔力も感じないが。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+魔力反応[line 3]
+[k]
+
+[charaFace A 2]
+
+＠マシュ
+はい、基地内には既に反応がありません！[r]基地周囲にも見当たりません！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+待て。探る。
+[k]
+
+[charaFace B 7]
+
+＠鬼一法眼
+ん～……
+[k]
+
+[messageOff]
+
+[fowardEffect bit_talk_pentagram_06]
+[se ad1054]
+[wt 3.5]
+
+[fowardEffectStop bit_talk_pentagram_06]
+[seStop ad1054 0.1]
+[se ade251]
+[wt 2.0]
+
+[fowardEffectDestroy]
+
+[charaFace B 6]
+
+＠鬼一法眼
+…………いた。小槌を使って彼方へ跳躍したな。
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 0.3]
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+
+[charaPut R 1]
+[se ad13]
+[charaEffect R bit_talk_10_LowLevel]
+[wt 0.2]
+
+[charaTalk Q]
+[charaFace Q 4]
+[charaFadein Q 0.4 1]
+[wt 0.4]
+
+＠ダ・ヴィンチ
+管制室が荒れてるんだけど、コレ何？
+[k]
+
+[charaFace Q 0]
+
+＠ダ・ヴィンチ
+それはそれとして、[r]うん、微小特異点が発生しちゃってるんだけど、
+[k]
+
+＠ダ・ヴィンチ
+理由とか[line 3]分かる？
+[k]
+
+[messageOff]
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaPut R 1200,1200]
+[charaEffectStop R bit_talk_10_LowLevel]
+[charaFadeout Q 0.1]
+
+[charaSet Q 1098124500 1 ダ・ヴィンチ]
+
+[scene 104100]
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+かんら、から、から！
+[k]
+
+[messageOff]
+
+[charaFace B 17]
+[wt 1.0]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaFace B 23]
+
+＠鬼一法眼
+……と大笑してはみたけれど。[r]すまん。コレはどう見ても僕の不手際だ。
+[k]
+
+＠鬼一法眼
+[#所謂:いわゆる][#灸:きゅう]を据えてやるつもりが、[r]とんだ火事を起こしてしまった。
+[k]
+
+＠鬼一法眼
+僕のせいだ。
+[k]
+
+[charaFace B 2]
+
+
+＠鬼一法眼
+なので、この[&坊主ども:娘たち]を責めるのは[#止:よ]すがいい。[r]責は僕にある！
+[k]
+
+[charaFace B 0]
+
+＠鬼一法眼
+ゆえに、ここは全面的に協力しよう。[r]僕のことは一時的な協力者だと考えてくれてよい。
+[k]
+
+？1：とりあえず、よろしくお願いします！
+
+？！
+
+[charaFace B 17]
+
+＠鬼一法眼
+うむ。
+[k]
+
+[charaFace B 22]
+
+＠鬼一法眼
+あ、ひとつだけ言っておこう。[r]まかり間違っても僕に弟子入りなど望まぬように。
+[k]
+
+＠鬼一法眼
+僕は天下万世の師であり、[r]僕の弟子となればおまえたちは力を得るだろう。
+[k]
+
+＠鬼一法眼
+たとえば、僕から奥義書を授かれば、[r]絶技と呼べる神通力が身に付く。確実に。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠スカサハ
+ほうほう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 22]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+しかし駄目だ。駄目だからな？
+[k]
+
+＠鬼一法眼
+ただの人の子なぞが僕の弟子になる資格、なし！
+[k]
+
+？1：わかりました
+
+[charaFace B 17]
+
+＠鬼一法眼
+うむうむ。
+[k]
+
+？2：とりあえず、力を借ります！
+
+[charaFace B 11]
+
+＠鬼一法眼
+そちらは任せよ！[r]力となろう！
+[k]
+
+？！
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk Q]
+[charaFace Q 25]
+[charaFadein Q 0.1 1]
+
+＠ダ・ヴィンチ
+打ち出の小槌[line 3]
+[k]
+
+＠ダ・ヴィンチ
+亜種願望機の影響を受けた牛若丸が暴走、[r]霊基と霊核を変化させた上で、何処かへと逃亡。
+[k]
+
+＠ダ・ヴィンチ
+時を同じくして微小特異点が発生。[r]おそらく、小槌を使って発生させたモノだろうね。
+[k]
+
+[charaFace Q 22]
+
+＠ダ・ヴィンチ
+すごいな、[r]逃走先として微小特異点を発生させるなんて。
+[k]
+
+[charaFace Q 14]
+
+＠ダ・ヴィンチ
+すごいけど、宜しくはない。[r]放っておけば英霊一騎を欠いてしまうし[line 3]
+[k]
+
+
+[charaFadeout Q 0.1]
+[wt 0.1]
+
+
+[branch lblConf4]
+
+
+
+[label lblNotClear4]
+
+
+[charaPut R 1]
+[se ad13]
+[charaEffect R bit_talk_10_LowLevel]
+[wt 0.2]
+
+[charaTalk S]
+[charaFace S 0]
+[charaFadein S 0.4 0,-90]
+[wt 0.4]
+
+＠ダ・ヴィンチ
+管制室が荒れてるんだけど、コレ何？
+[k]
+
+＠ダ・ヴィンチ
+それはそれとして、[r]うん、微小特異点が発生しちゃってるんだけど、
+[k]
+
+＠ダ・ヴィンチ
+理由とか[line 3]分かる？
+[k]
+
+[messageOff]
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaPut R 1200,1200]
+[charaEffectStop R bit_talk_10_LowLevel]
+[charaFadeout S 0.1]
+
+[charaSet S 5009001 1 ダ・ヴィンチ]
+
+[scene 105700]
+[wt 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+かんら、から、から！
+[k]
+
+[messageOff]
+
+[charaFace B 17]
+[wt 1.0]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaFace B 23]
+
+＠鬼一法眼
+……と大笑してはみたけれど。[r]すまん。コレはどう見ても僕の不手際だ。
+[k]
+
+＠鬼一法眼
+[#所謂:いわゆる][#灸:きゅう]を据えてやるつもりが、[r]とんだ火事を起こしてしまった。
+[k]
+
+＠鬼一法眼
+僕のせいだ。
+[k]
+
+[charaFace B 2]
+
+＠鬼一法眼
+なので、この[&坊主ども:娘たち]を責めるのは[#止:よ]すがいい。[r]責は僕にある！
+[k]
+
+[charaFace B 0]
+
+＠鬼一法眼
+ゆえに、ここは全面的に協力しよう。[r]僕のことは一時的な協力者だと考えてくれてよい。
+[k]
+
+？1：とりあえず、よろしくお願いします！
+
+？！
+
+[charaFace B 17]
+
+＠鬼一法眼
+うむ。
+[k]
+
+[charaFace B 22]
+
+＠鬼一法眼
+あ、ひとつだけ言っておこう。[r]まかり間違っても僕に弟子入りなど望まぬように。
+[k]
+
+＠鬼一法眼
+僕は天下万世の師であり、[r]僕の弟子となればおまえたちは力を得るだろう。
+[k]
+
+＠鬼一法眼
+たとえば、僕から奥義書を授かれば、[r]絶技と呼べる神通力が身に付く。確実に。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠スカサハ
+ほうほう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 22]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+しかし駄目だ。駄目だからな？
+[k]
+
+＠鬼一法眼
+ただの人の子なぞが僕の弟子になる資格、なし！
+[k]
+
+？1：わかりました
+
+[charaFace B 17]
+
+＠鬼一法眼
+うむうむ。
+[k]
+
+？2：とりあえず、力を借ります！
+
+[charaFace B 11]
+
+＠鬼一法眼
+そちらは任せよ！[r]力となろう！
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk S]
+[charaFace S 0]
+[charaFadein S 0.1 1]
+
+
+＠ダ・ヴィンチ
+打ち出の小槌[line 3]
+[k]
+
+＠ダ・ヴィンチ
+亜種願望機の影響を受けた牛若丸君が暴走、[r]霊基と霊核を変化させた上で、何処かへと逃亡。
+[k]
+
+＠ダ・ヴィンチ
+時を同じくして微小特異点が発生。[r]おそらく、小槌を使って発生させたモノだろうね。
+[k]
+
+[charaFace S 1]
+
+＠ダ・ヴィンチ
+すごいな、[r]逃走先として微小特異点を発生させるなんて。
+[k]
+
+[charaFace S 4]
+
+＠ダ・ヴィンチ
+すごいけど、宜しくはない。[r]放っておけば英霊一騎を欠いてしまうし[line 3]
+[k]
+
+
+[charaFadeout S 0.1]
+[wt 0.1]
+
+
+[label lblConf4]
+
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+
+＠イアソン
+オレたち縮んでるし！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠弁慶
+できれば元の霊基に戻りたく！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+
+＠クー・フーリン・オルタ
+……。
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠メイヴ
+クーちゃんはこのままでもいいわよね？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+＠クー・フーリン・オルタ
+よくねえ。
+[k]
+
+？1：もちろん追いかけるよ
+
+？！
+
+[bgm BGM_EVENT_62 0.1]
+
+？1：牛若丸もみんなも、元に[&戻さなきゃだ:戻さなきゃ]！
+
+？！
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+ふむ。
+[k]
+
+＠鬼一法眼
+ならば！
+[k]
+
+[charaFace B 2]
+
+＠鬼一法眼
+というか当然、僕も同行しよう！[r]弟子を暴れ回らせたままでは、師の名折れ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠スカサハ
+分かる、分かるぞ、うんうん。[r]そこまで言うなら連れて行ってやるといい。
+[k]
+
+＠スカサハ
+私は所用があるので手伝えんが、[r]この者は大きな力となるだろう。
+[k]
+
+[charaFace C 2]
+
+＠スカサハ
+共に発ち、共に戦うといい！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+かたじけない、スカサハ殿。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠スカサハ
+気にするな。[r]師には師の気苦労というものがあるのだ。な！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+う、うむ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠スカサハ
+では[line 3]行ってこい！[r][%1]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マシュ
+わたしはここからサポートを務めますね。[r]先輩、お気を付けて！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait fade]
+[skip false]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout K 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout Q 0.1]
+[charaFadeout S 0.1]
+[scene 10000]
+[wt 1.0]
+[fadein black 0.1]
+[wait fade]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[soundStopAllFade 0.4]
+
+[charaSet S 5009000 1 初期化用ダミー]
+[charaSet Q 5009000 1 初期化用ダミー]
+[charaSet K 5009000 1 初期化用ダミー]
+[charaSet I 5009000 1 初期化用ダミー]
+[charaSet H 5009000 1 初期化用ダミー]
+[charaSet G 5009000 1 初期化用ダミー]
+[charaSet F 5009000 1 初期化用ダミー]
+[charaSet E 5009000 1 初期化用ダミー]
+[charaSet D 5009000 1 初期化用ダミー]
+[charaSet C 5009000 1 初期化用ダミー]
+[charaSet B 5009000 1 初期化用ダミー]
+[charaSet A 5009000 1 初期化用ダミー]
+
+[maskout black 1.0]
+[wait mask]
+[scene 10000]
+[wt 0.1]
+
+[maskin black 0.1]
+[wait mask]
+
+[label selectBranch]
+
+[fowardEffect bit_queststart80309]
+[wait fowardEffect]
+[wt 1.0]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait fade]
+[soundStopAll]
+[end]
