@@ -5,7 +5,7 @@
 
 [soundStopAll]
 [bgm BGM_EVENT_5 0.1]
-[charaSet A 8001001 1 Mash]
+[charaSet A 8001000 1 Mash]
 [charaSet B 98103600 1 Ruby]
 [charaSet C 98103200 1 Sapphire]
 [charaSet D 98102400 1 Illya]
@@ -229,7 +229,6 @@ Oh, I've gotta explain it from there?[sr]Right, I guess I do.
 [k]
 
 [communicationCharaFace 0]
-
 ＠Dr. Roman
 A Reality Marble is one of the deepest secrets of magecraft.
 [k]
@@ -387,12 +386,12 @@ Can you let Illya take refuge in Chaldea too?[sr]Just temporarily?
 
 [communicationCharaFace 4]
 ＠Dr. Roman
-Hmm... Sorry, but that's impossible.
+Hmm... Sorry, but that's impossible. Given the way the Rayshift works, it just can't happen.
 [k]
 
 [communicationCharaFace 0]
 ＠Dr. Roman
-Given the way the Rayshift works, it just can't happen. Only [%1] and Mash can come back.
+Only [%1] and Mash can come back.
 [k]
 
 ＠Dr. Roman
@@ -794,10 +793,8 @@ Sorry. It's just that... Here. There's something I want to show you.
 [wipeout rectangleStripLeftToRight 0.5 2]
 [wait wipe]
 
-
-[charaChange A 98001000 0 fade 0.1]
+[charaSet A 98001000 1 Mash]
 [wt 0.1]
-[charaFadeout A 0.1]
 [charaFadeout F 0.1]
 
 [fowardEffect bit_talk_security]
@@ -818,8 +815,6 @@ It starts with you taking a nap here in the Command Room.
 [se ad8]
 [seVolume ad8 0 0.3]
 
-
-[charaTalk A]
 [charaFace A 0]
 [charaFadein A 0.4 1]
 [wt 0.5]
@@ -847,7 +842,8 @@ And then Mash comes by, spots you, and tries to wake you up.
 [messageOff]
 [shake 0.05 0 4 0]
 [se ad61]
-[charaChange A 8001001 6 fade 0]
+
+[charaChange A 8001000 6 fade 0]
 [wait charaChange A]
 [charaFadein A 0.2 -80,0]
 [wt 0.2]
@@ -855,7 +851,7 @@ And then Mash comes by, spots you, and tries to wake you up.
 [wait charaChange A]
 [charaFadein A 0.2 1]
 [wt 0.2]
-[charaChange A 8001001 6 fade 0]
+[charaChange A 8001000 6 fade 0]
 [wait charaChange A]
 [charaFadein A 0.2 -80,0]
 [wt 0.2]

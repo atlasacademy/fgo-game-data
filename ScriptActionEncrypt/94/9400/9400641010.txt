@@ -26,7 +26,6 @@
 [charaTalk E]
 [charaFace E 0]
 [charaFadein E 0.1 1]
-
 ＠Medea Lily
 This castle belongs to me and Lord Jason.[sr]Please come inside.
 [k]
@@ -295,7 +294,6 @@ He's saying to call off the sneak attack and talk with you instead.
 [charaTalk C]
 [charaFace C 6]
 [charaFadein C 0.1 1]
-
 ＠Illya
 Oh, uh... That's what we were planning from the start, so we can talk all you want.
 [k]
@@ -657,7 +655,6 @@ In the end, I'm going to rely on this jewel?
 [charaTalk E]
 [charaFace E 1]
 [charaFadein E 0.1 1]
-
 ＠Medea Lily
 Give up on this Miyu girl. If you want to know how to make friends, I'll happily teach you.
 [k]
@@ -782,7 +779,6 @@ Medea!? What is this dangerous aura around her?
 [charaTalk E]
 [charaFace E 2]
 [charaFadein E 0.1 1]
-
 ＠Medea Lily
 Half-assed hope! How many times do you have to get betrayed before they're satisfied?
 [k]
@@ -1069,13 +1065,15 @@ I didn't want to know that! And Medea looks like she really wants to fight!
 [fowardEffect bit_talk_tornado01]
 
 [wt 0.8]
-[charaChange A 8001001 0 fade 0.5]
+
+[charaChange A 8001000 0 fade 0.5]
 [wait charaChange A]
 
 [wt 1.0]
+[fowardEffectStop bit_talk_tornado01]
+[wt 0.5]
 
 [charaFadeout A 0.1]
-
 [bgm BGM_EVENT_24 0.1]
 
 [charaTalk C]
