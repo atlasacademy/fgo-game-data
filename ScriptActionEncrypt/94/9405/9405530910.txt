@@ -1,0 +1,1088 @@
+
+＄94-05-53-09-1-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 6041000 1 鬼一法眼]
+[charaSet C 4013300 1 メイヴ]
+[charaSet D 1098206200 1 弁慶]
+[charaSet E 98104200 1 イアソン]
+[charaSet F 98104010 1 クー・フーリン・オルタ]
+[charaSet G 1098206100 1 牛若丸]
+
+[charaSet H 1098204000 1 ディオスクロイ・カストロ]
+[charaSet I 1098204100 1 ディオスクロイ・ポルクス]
+[charaSet M 1098204000 1 ディオスクロイ・カストロ・シルエット]
+[charaFilter M silhouette 00000080]
+[charaSet N 1098204100 1 ディオスクロイ・ポルクス・シルエット]
+[charaFilter N silhouette 00000080]
+
+[charaSet J 11007000 1 織田信長]
+[charaSet K 11007000 1 織田信長・シルエット]
+[charaFilter K silhouette 00000080]
+
+[charaSet L 2041000 1 織田信勝]
+
+[imageSet Q cut243_text01 1]
+
+[charaSet R 98115000 1 エフェクト用ダミー]
+
+[charaEffect R bit_talk_10_LowLevel]
+[charaPut R 1200,1200]
+
+[fowardEffectPause bit_talk_gram_slash_03_fs]
+
+
+[scene 109700]
+
+[fadein black 1.5]
+[wait fade]
+[wt 1.5]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠イアソン
+悪牛若、いたか？
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.1]
+
+[charaMove D -20,0 0.2]
+[wt 0.2]
+[charaMove D 20,0 0.4]
+[wt 0.4]
+[charaMove D 0,0 0.2]
+[wt 0.3]
+
+＠弁慶
+残念ながら。そちらは如何です？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠クー・フーリン・オルタ
+いねえ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠メイヴ
+もう、何なのかしら。[r]余計なモノばっかり出てきちゃって[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+
+＠牛若丸
+なんとも逃げ足の速い私ですね。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+さて、どうかな。[r]雲上で何ひとつ悪さをしていないとも限らんぞ？
+[k]
+
+？1：確かに
+？2：何かまた罠を残してるかもしれない
+
+？！
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut R 0,0]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+待ってください、先輩！
+[k]
+
+[bgmStop BGM_EVENT_70 1.0]
+[charaFace A 7]
+
+＠マシュ
+魔力反応があります。[r]おそらく、カルデアのサーヴァントが何騎か……
+[k]
+
+[messageOff]
+
+[charaPut R 1200,1200]
+[charaFadeout A 0.1]
+[charaFadeout R 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaFace M 0]
+[charaFace N 0]
+[charaFadein M 0.4 -100,0]
+[charaFadein N 0.4 100,0]
+[wt 0.4]
+
+
+[fowardEffectStart]
+[se ad171]
+[wt 0.5]
+
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[wt 0.6]
+
+[fowardEffectDestroy]
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠鬼一法眼
+！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[se ad7]
+
+[charaFace M 0]
+[charaFace N 0]
+[charaFadein M 0.1 -100,0]
+[charaFadein N 0.1 100,0]
+[wt 0.3]
+
+[fowardEffect bit_talk_gram_slash_04_fs]
+[se ad171]
+[wt 0.4]
+
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[wt 0.3]
+
+[fowardEffect bit_talk_14]
+[se ad170]
+
+[charaTalk depthOn]
+
+[charaScale B 1.2]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 0,5]
+[se ad671]
+[charaMoveScale B 1.0 0.3]
+[charaMove B 0,0 0.3]
+[charaShake B 0.03 3 2 0.4]
+[wt 0.7]
+
+[charaFace B 5]
+
+＠鬼一法眼
+何奴！
+[k]
+
+＠鬼一法眼
+いやはや血気盛んなようで何より！[r]いるではないか、カルデアにも景気のいい者が！
+[k]
+
+[messageOff]
+[charaFace B 8]
+[wt 1.0]
+[charaFace B 6]
+
+＠鬼一法眼
+これまではマスターの手前か、[r]行儀のよい英霊がそこそこ多かったがゆえ、
+[k]
+
+[charaFace B 5]
+
+＠鬼一法眼
+なるほどなァと思いかけていたが、[r]何！　こう来なくてはな！
+[k]
+
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.6]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaFace M 0]
+[charaFace N 0]
+[charaFadein M 0.1 -100,0]
+[charaFadein N 0.1 100,0]
+[wt 0.5]
+
+[charaDepth H 2]
+[charaDepth I 3]
+[charaDepth M 4]
+[charaDepth N 4]
+
+[charaFace H 0]
+[charaFace I 0]
+[charaFadein H 0.1 -100,0]
+[charaFadein I 0.1 100,0]
+[wt 0.1]
+[charaFadeout M 0.7]
+[charaFadeout N 0.7]
+[wt 1.6]
+
+[charaTalk on]
+
+[charaFace H 2]
+[bgm BGM_EVENT_5 0.1]
+
+
+＠ディオスクロイ・カストロ
+ここで！　おまえたちの旅は終わりだ！
+[k]
+
+[charaFace I 4]
+
+＠ディオスクロイ・ポルクス
+この通り、兄様がやる気になってしまって。[r]ごめんなさいマスター。
+[k]
+
+[charaFace H 5]
+
+＠ディオスクロイ・カストロ
+謝る必要はない、ポルクス！
+[k]
+
+[charaFace I 0]
+
+
+＠ディオスクロイ・ポルクス
+でも兄様。
+[k]
+
+？1：ディオスクロイ！
+
+？！
+
+[charaFace H 2]
+
+＠ディオスクロイ・カストロ
+軽々しく名を呼ぶな！
+[k]
+
+[charaFace I 1]
+
+＠ディオスクロイ・ポルクス
+はい、マスター。
+[k]
+
+[charaFace H 5]
+
+＠ディオスクロイ・カストロ
+ポルクス！
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+
+＠クー・フーリン・オルタ
+道化は充分間に合ってる。[r]そこを[#退:ど]け。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠メイヴ
+わあお！　クーちゃん厳しい！　好き！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠イアソン
+ちょ、おま。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadein H 0.1 -100,0]
+[charaFadein I 0.1 100,0]
+
+＠ディオスクロイ・カストロ
+……英霊ごときが、神に向ける言の葉ではないぞ。
+[k]
+
+[charaTalk I]
+[charaFace I 0]
+
+＠ディオスクロイ・ポルクス
+まあまあ兄様、時代も地域も異なる方ですし……
+[k]
+
+[messageOff]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[se adm21]
+[charaMoveReturn E 0,25 0.3]
+[wt 0.6]
+
+
+＠イアソン
+なあおまえら。[r]ここはオレの顔に免じて、[#退:ど]いてくれないか？
+[k]
+
+＠イアソン
+悪牛若が何をしたいのかは知らんが、[r]アレを手伝ったって、おまえらに得はないだろ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk I]
+[charaFace H 0]
+[charaFace I 0]
+[charaFadein H 0.1 -100,0]
+[charaFadein I 0.1 100,0]
+
+＠ディオスクロイ・ポルクス
+イアソン。
+[k]
+
+[charaTalk H]
+[charaFace H 0]
+
+＠ディオスクロイ・カストロ
+英雄イアソン。[r]貴様の言の葉であれば、ある程度までは聞こう。
+[k]
+
+＠ディオスクロイ・カストロ
+だが、今回ばかりは駄目だ。[r]諦めろ。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠イアソン
+なにぃ！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk I]
+[charaFace H 0]
+[charaFace I 4]
+[charaFadein H 0.1 -100,0]
+[charaFadein I 0.1 100,0]
+
+＠ディオスクロイ・ポルクス
+ごめんなさい、イアソン。[r]兄様ったらすっかりやる気なんです。
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+[bgmStop BGM_EVENT_5 1.5]
+
+＠イアソン
+む、むむむむむ……[r]昔のよしみが効かないほどの条件を出されたのか！？
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.4 1]
+[wt 0.4]
+
+＠？？？
+やあやあその通り！[r]そこの双子神の片方はすっかり丸め込まれた！
+[k]
+
+＠？？？
+牛若丸だか九郎[#判官:ほうがん]義経だかわからんが、[r]それっぽい奴に頼まれてなあ！
+[k]
+
+＠？？？
+ここを通るマスターを邪魔すれば、[r]打ち出の小槌で願いを叶えてやろう、とな！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+
+＠牛若丸
+何者です！
+[k]
+
+[messageOff]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaDepth Q 4]
+[charaDepth K 4]
+[charaDepth J 3]
+[charaDepth L 2]
+
+[charaFace K 0]
+[charaFadein K 0.1 0,0]
+[wt 0.5]
+
+[charaFace J 1]
+[charaFadein J 0.1 0,0]
+[wt 0.1]
+[charaFadeout K 0.7]
+[wt 1.6]
+
+[charaTalk on]
+[charaTalk J]
+[charaFace J 1]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠織田信長
+わしじゃよ、わし！
+[k]
+
+？1：ノッブ！
+？！
+
+[messageOff]
+
+[charaTalk depthOff]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.4 330,0]
+[wt 1.4]
+
+？1：と、その後ろにいるのはまさか……
+？！
+
+[charaFadeout J 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+
+[charaTalk depthOn]
+
+[charaTalk L]
+[charaFace L 1]
+[charaFadein L 0.1 1]
+
+
+＠織田信勝
+あ、僕です。[r]姉上あるところ信勝ありですので！
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠弁慶
+ほう、弟君まで。[r]となると今回は兄弟英霊が行く手を阻む訳ですな？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+なんだなんだ。[r]仲良し兄弟英霊軍団が攻めて来た、と。
+[k]
+
+＠鬼一法眼
+どういうんだ、そりゃ？
+[k]
+
+[charaFace B 17]
+
+＠鬼一法眼
+ディオスクロイというからには双子の星だな？[r]それに加えて、日の本っぽい姉弟英霊が一組。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠織田信長
+第六天魔王、織田信長である！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+
+＠織田信勝
+どうも、弟の信勝です。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+ん？　織田？
+[k]
+
+[charaFace B 4]
+
+
+＠鬼一法眼
+僕はこう見えて随分長生きなので[r]色々と人間たちを見てきた方だが……
+[k]
+
+[charaFace B 18]
+
+
+＠鬼一法眼
+織田信長、そういう感じだったっけ？
+[k]
+
+
+？1：そういえば忘れがちだけど、
+？2：ノッブはぐだぐだ時空の人だから……かな？
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠イアソン
+なんて？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 19]
+[charaFadein B 0.1 1]
+
+
+＠鬼一法眼
+[FFFFFF]？？？[-]
+[k]
+
+[charaFace B 0]
+
+＠鬼一法眼
+まあ織田信長（？）は置いとくとして、[r]ここは空の彼方の雲の上、と。
+[k]
+
+[charaFace B 16]
+
+＠鬼一法眼
+……。[r]……。
+[k]
+
+[charaFace B 18]
+
+＠鬼一法眼
+…………わからん。何だこの状況？
+[k]
+
+？1：確かに不思議[&だ:だね]……
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠織田信長
+ほほう、分からんのか？[r]伝説の陰陽師とやらも大したことはないな。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+むむむむむぅ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠織田信長
+真相は単純だぞ。[r]ほれ、ディオスクロイは元は星の神じゃろ？
+[k]
+
+＠織田信長
+雲の上にいてもおかしくない。[r]そうであろうが。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠弁慶
+まあ確かに。
+[k]
+
+？1：でもノッブはどうして？
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+
+＠織田信長
+分からんか～。
+[k]
+
+？2：ノッブは雲の上とか関係なくない？
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+
+＠織田信長
+ふっふっふ！
+[k]
+
+？！
+
+[charaFace J 0]
+
+＠織田信長
+わしはほら、第六天魔王じゃし！[r]天の魔王じゃし！
+[k]
+
+[charaFace J 1]
+
+＠織田信長
+ならば天空、雲の上も我が領域ということでひとつ！[r]はいしっくり来た～！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+なるほど～？
+[k]
+
+？1：第六天の天てそういう意味でいいんだっけ？
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+仏道では、天とは梵語における提婆。[r]天人の住まう最勝の世を示す。
+[k]
+
+＠鬼一法眼
+第六天と言えば[#他化自在天:た け じ ざ い て ん]、[r]欲界の第六の天だが……
+[k]
+
+[charaFace B 17]
+
+＠鬼一法眼
+雲上の世かと言われると、[r]まー、あながち間違いとも言えん、のかなァ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+
+＠織田信長
+それみたことかー！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+
+＠鬼一法眼
+なにせ天には縁遠くてなァ。[r]なにせ僕、御山のアレのアレだからして。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠織田信長
+気分がいいので、[r]ついでに明かしてやろうではないか。
+[k]
+
+
+＠織田信長
+[#此度:こたび]の騒動、わしはどうあっても[r]奴の味方をせねばならんのよ。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠イアソン
+ほー？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+それは、何故？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+
+＠織田信長
+だってわし、一応、[#平家の血筋]じゃし！
+[k]
+
+[se ade178]
+[charaFadein Q 0.4 0,-90]
+[wt 1.9]
+
+[charaFadeout Q 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk L]
+[charaFace L 2]
+[charaFadein L 0.1 1]
+
+＠織田信勝
+ああっ！[r]姉上、それはちょっと堂々と言うような話では……
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaTalk J]
+[charaFace J 2]
+[charaFadein J 0.1 1]
+
+＠織田信長
+な、なにおう！[r]わし平家じゃもん！　平家の末裔じゃもん！
+[k]
+
+[se ade178]
+[charaFadein Q 0.4 0,-90]
+[wt 1.9]
+
+[charaFadeout Q 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+[FFFFFF]？[-]？？
+[k]
+
+[charaFace G 7]
+
+
+＠牛若丸
+何故、平家だのという話が出てくるのです？[r]確かに私は源氏、かつて平家と相争った身ですが、
+[k]
+
+[charaFace G 5]
+[bgmStop BGM_EVENT_7 1.3]
+
+
+＠牛若丸
+今は英霊。[r]同じマスターをいただく身[line 3]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad60]
+[seStop ad60 0.5]
+
+[charaTalk depthOff]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFace I 0]
+[charaFadein H 0.1 -100,0]
+[charaFadein I 0.1 100,0]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠ディオスクロイ・カストロ
+それ以上の問答は無用だ。[r]俺はおまえたちを薙ぎ払い、願いを叶える。
+[k]
+
+[se ad51]
+[charaFace H 2]
+
+＠ディオスクロイ・カストロ
+ゆくぞ、ポルクス！
+[k]
+
+[charaFace I 2]
+
+＠ディオスクロイ・ポルクス
+はい兄様！[r]ごめんなさい、マスター！
+[k]
+
+[se ad51]
+
+＠ディオスクロイ・ポルクス
+ちょっとお付き合いくださいね……！
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+
+
+＠織田信長
+わはははははははわしらもゆくぞ信勝！[r]そして出でよ、[#鴉天狗:からすてんぐ]軍団！
+[k]
+
+[messageOff]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[effect bit_talk_06_b3]
+[se adm30]
+[wt 2.0]
+
+[effectStop bit_talk_06_b3]
+[seStop adm30 1.5]
+[wt 1.0]
+
+[se ade159]
+[se ade437]
+[se ade4]
+[wt 1.5]
+[seStop ade159 0.5]
+[seStop ade4 0.5]
+[wt 0.5]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+
+＠弁慶
+むうっ、これまでも何度となく出てきた[#鴉天狗:からすてんぐ]！[r]打ち出の小槌と義経様の縁による召喚か！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+
+＠織田信長
+覚悟はできたか、カルデアの面々よ！
+[k]
+
+[charaFace J 2]
+
+＠織田信長
+では[line 3]いざ、本能寺！
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 2]
+[charaFadein L 0.1 1]
+
+
+＠織田信勝
+姉上それ負けるやつです！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+
