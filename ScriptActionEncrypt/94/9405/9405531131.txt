@@ -1,0 +1,320 @@
+
+
+
+＄94-05-53-11-3-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 6041000 1 鬼一法眼]
+[charaSet C 4013300 1 メイヴ]
+[charaSet D 1098206200 1 弁慶]
+[charaSet E 98104200 1 イアソン]
+[charaSet F 98104010 1 クー・フーリン・オルタ]
+[charaSet G 1098206100 1 牛若丸]
+
+[charaSet H 98114210 1 ヘラクレス]
+
+[imageSet M back10000 1]
+[charaScale M 1.01]
+
+[charaSet R 98115000 1 エフェクト用ダミー]
+[charaSet S 98115000 1 エフェクト用ダミー2]
+
+[scene 32501]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠ヘラクレス？
+……。[r]……。
+[k]
+
+[messageOff]
+[se ad52]
+[charaSpecialEffect H flashErasure 0 1.7]
+[wait charaSpecialEffect H]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠イアソン
+うお、マジで倒せた！？[r]まあ、本物じゃないから当然か！
+[k]
+
+[messageOff]
+
+[se ade393 0.5]
+[seVolume ade393 1.5 0.7]
+[shake 0.03 0 5 1.5]
+[wt 1.5]
+[shake 0.03 0 3 0]
+[seVolume ade393 0.5 0.3]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_49 0.1]
+
+＠鬼一法眼
+震動が始まった！[r]このヘラクレスは元通りになるぞ！
+[k]
+
+？1：脱出しよう！
+
+？！
+
+
+＠鬼一法眼
+ああ。[r]カルデアのマスター、僕にしっかり掴まっておけ！
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_49 0.5]
+[seStop ade393 1.0]
+[wait fade]
+
+[shakeStop]
+[charaFadeout B 0.1]
+
+[se ade458]
+
+[scene 112000]
+[wt 1.0]
+
+[seStop ade458 0.5]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.3 0,20]
+[wt 0.1]
+[cueSe SE_21 21_ade538]
+[charaMove B 0,-20 0.2]
+[wt 0.3]
+[seStop 21_ade538 0.1]
+[charaMove B 0,0 0.1]
+[wt 0.3]
+
+[charaFace B 18]
+[bgm BGM_EVENT_2 0.1]
+
+＠鬼一法眼
+……ふぅ。[r]これまでで一番の難敵だったな。
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.3 0,20]
+[wt 0.1]
+[se ad60]
+[charaMove G 0,-20 0.2]
+[wt 0.4]
+[seStop ad60 0.1]
+[charaMove G 0,0 0.1]
+[wt 0.3]
+
+
+[charaFace G 4]
+
+＠牛若丸
+ああもう、我ながら本当に[#迷惑千万:めいわくせんばん]です。[r]一体私は、何を考えているのか……！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.5]
+
+[charaCrossFade G 1098206110 5 0.5]
+[wait charaCrossFade G]
+[wt 0.5]
+[charaShake G 0.03 4 4 2.0]
+
+[cueSe SE_21 21_ade544]
+[wt 2.0]
+[seStop 21_ade544 0.1]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠鬼一法眼
+待て、針が……！？
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ade410]
+[charaEffect S bit_talk_warp_starry_sky]
+[wt 4.0]
+
+＠メイヴ
+ちょっと。[r]何が起きてるの！？
+[k]
+
+[messageOff]
+[charaPut S 2000,2000]
+[charaPut R 0,0]
+[wt 0.1]
+
+[se ad13]
+[charaEffect R bit_talk_10_LowLevel]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠マシュ
+マスター、応答お願いします。[r]特異点の反応があります。
+[k]
+
+[charaFace A 7]
+
+
+＠マシュ
+……いえ、[r]これまでの場所もすべて特異点の一種ですが。
+[k]
+
+＠マシュ
+最も特異点としての反応が強い場所が、[r]新たに形成されています。
+[k]
+
+[charaPut R 1200,1200]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut S 0,0]
+[wt 0.1]
+
+
+＠イアソン
+この穴みてえな何か、がキモだな。
+[k]
+
+[charaPut S 2000,2000]
+[charaFadeout S 0.1]
+[wt 0.1]
+
+[charaPut R 0,0]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+
+＠マシュ
+そちらに発生した空間の[#ひずみ]は、[r]新たな場所へと通じる扉のようです。
+[k]
+
+[charaPut R 1200,1200]
+[charaFadeout A 0.1]
+[charaFadeout R 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+
+＠牛若丸
+針の反応、今までの中で最も強いものです。[r]これは[line 3]
+[k]
+
+？1：悪牛若、かな？
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+
+＠鬼一法眼
+……そうだろう。[r]僕の勘もそうだと[#囁:ささや]いていることだし、
+[k]
+
+＠鬼一法眼
+この穴の向こう側が、[r]決戦場らしい。
+[k]
+
+[charaFace B 7]
+
+＠鬼一法眼
+さてさて。[r]悪牛若、別の遮那王が何を企んでいるのか[line 3]
+[k]
+
+[charaFace B 17]
+[bgmStop BGM_EVENT_5 1.0]
+
+＠鬼一法眼
+……。[r]……。
+[k]
+
+[charaFace B 2]
+[bgm BGM_EVENT_62 0.1]
+
+
+＠鬼一法眼
+よし。行こうじゃないか、皆の衆！
+[k]
+
+[charaFace B 9]
+
+＠鬼一法眼
+それと、カルデアのマスター。[r]おまえは僕がしっかり守ってやるから安心するといい！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+そ[messageShake 0.03 3 3 0.5]れは私の役割なのですが、師匠ーーー！
+[k]
+
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_62 2.0]
+[wait fade]
+[soundStopAll]
+[end]
