@@ -1,0 +1,767 @@
+
+＄94-05-53-12-2-0
+[soundStopAll]
+[enableFullScreen]
+
+
+
+
+
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 6041000 1 鬼一法眼]
+[charaSet C 4013300 1 メイヴ]
+[charaSet D 1098206200 1 弁慶]
+[charaSet E 98104200 1 イアソン]
+[charaSet F 98104010 1 クー・フーリン・オルタ]
+[charaSet G 1098206100 1 牛若丸]
+[charaSet H 11010001 1 平景清]
+[charaSet I 1098202300 1 平景清]
+
+[charaSet J 98115000 1 通信用]
+
+[charaPut J 2400,2400]
+[charaEffect J bit_talk_10_LowLevel]
+
+[scene 109901]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.4]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+[bgm BGM_EVENT_72 0.1]
+
+＠平景清
+[line 3]我が真名、平景清である！
+[k]
+
+[messageOff]
+[charaFace H 0]
+[wt 1.0]
+
+[branchQuestNotClear lblNotClear 3000716]
+
+[fadeout white 0.5]
+[se ad592]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+[effect bit_talk_noise02]
+[cameraFilter gray]
+
+[scene 103200]
+[wt 0.5]
+
+[fadein white 0.5]
+[wait fade]
+
+[wt 2.0]
+
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout I 0.1]
+[effectStop bit_talk_noise02]
+[cameraFilter normal]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+[scene 109901]
+[wt 0.5]
+
+[fadein white 0.5]
+[wait fade]
+
+？1：平景清！
+？！
+
+？1：牛若丸、いや義経と融合していた怨霊！
+？！
+
+[charaFace H 1]
+
+＠平景清
+ほう。
+[k]
+
+[charaFace H 0]
+
+＠平景清
+[line 3]既にこの姿と出逢っていたとは、奇縁よな。
+[k]
+
+＠平景清
+成る程。道理で。
+[k]
+
+
+＠平景清
+[#是:これ]なる義経の霊基。[r]どうにも馴染むので奇異であったが、
+[k]
+
+＠平景清
+そうか。既に、融合果たしていたか。[r]霊基にその記録は残されておらぬとはいえ、
+[k]
+
+[charaFace H 2]
+
+＠平景清
+縁は縁。[r]面白きこと！
+[k]
+
+[branch lblConf]
+
+[label lblNotClear]
+
+[label lblConf]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+
+＠マシュ
+平景清[line 3][r]平安時代末期、[#桓武平氏:か ん む へ い し]の武者とされる人物です。
+[k]
+
+＠マシュ
+平家を滅ぼして幕府を開いた源氏、[r]特に源頼朝を狙い、復讐を目指した伝説的人物。
+[k]
+
+[charaFace A 4]
+
+＠マシュ
+景清伝説は数多く伝わっていますが、[r]中でも驚異的なのは……不死の伝説でしょう。
+[k]
+
+[charaFace A 7]
+
+
+＠マシュ
+どんな魔術的機構なのかは分かりませんが、[r]『首を落とされても平景清は[#蘇:よみがえ]る』と。
+[k]
+
+[charaPut J 2400,2400]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠イアソン
+不死の英霊かよ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠弁慶
+む……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+
+＠メイヴ
+なんでソイツが牛若丸の顔してる訳？[r]そもそもあの[#霊基:からだ]、牛若丸のモノなんでしょーが。
+[k]
+
+＠メイヴ
+もしかして、あの霊基には[r]二つの英霊が同居してるってこと？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠平景清
+……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+うん、見えてきたぞ。[r][#伝説多き平景清]か。
+[k]
+
+[charaFace B 6]
+
+＠鬼一法眼
+多くの伝説に語られる『景清』。[r]多くの伝説に語られる『義経』。
+[k]
+
+＠鬼一法眼
+平家と源氏でありながら、[r]なんとも似た者同士。
+[k]
+
+[charaFace B 16]
+
+
+＠鬼一法眼
+異なるのは……[r]平景清なる者は牛若丸ほどの実態を持たぬ、か？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠マシュ
+は、はい。[r]その通りです。
+[k]
+
+[charaFace A 8]
+
+
+＠マシュ
+『平家物語』の[#惡七兵衛景清:あくしちびょうえかげきよ]はまだしも、[r]景清伝説で語られる平景清、となると……
+[k]
+
+[charaFace A 7]
+
+＠マシュ
+歴史的事実から発生した伝説というよりも、[r]英雄物語のために発生した伝説の存在、です。
+[k]
+
+[charaPut J 2400,2400]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+実態のなきモノ。[r]英霊としてはさして不思議もないが……
+[k]
+
+[charaFace B 17]
+
+＠鬼一法眼
+僕の感じるところではあの景清とかいう奴、[r]実態どころか、実体がない。
+[k]
+
+＠鬼一法眼
+英霊というよりは亡霊、怨霊の類とみたぞ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠平景清
+……。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+実体なき怨霊、平景清……[r]如何なる縁か、我が弟子に取り憑きおったな！
+[k]
+
+
+？1：……どうして、牛若丸に取り憑いたんだろう
+
+？！
+
+[charaFace B 6]
+
+＠鬼一法眼
+平景清。[r]貴様[line 3]
+[k]
+
+＠鬼一法眼
+遮那王、いや、[r]義経の[#霊基:からだ]を完全に支配するつもりだな？
+[k]
+
+[charaFace B 16]
+
+＠鬼一法眼
+そのために鎌倉を魔圏へと変えた。[r]てっきり、僕の命でも狙ったのかと思ったが……
+[k]
+
+[charaFace B 5]
+
+＠鬼一法眼
+足を踏み入れた者を己が獲物へと変える魔圏。[r]その狙いは！
+[k]
+
+[charaFace B 6]
+
+
+＠鬼一法眼
+[line 3][#カルデアのマスターを殺す]ため、と言う訳か。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+
+＠牛若丸
+……。
+[k]
+
+
+
+
+？1：[line 10]。
+？！
+
+
+
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠平景清
+然り。だ。
+[k]
+
+
+[charaFace H 0]
+
+＠平景清
+この義経の霊基、[r]見事なもの。
+[k]
+
+＠平景清
+儂とひとつになれば間違いなく、[r]我が使命を完遂できよう。
+[k]
+
+？1：源氏鏖殺
+
+？！
+
+[charaFace H 1]
+
+＠平景清
+左様。
+[k]
+
+[charaFace H 0]
+
+＠平景清
+あらゆる時代、[r]あらゆる地域の源氏を殺し尽くし、
+[k]
+
+＠平景清
+景清は復讐を成し、[r]義経も復讐を成す。
+[k]
+
+[charaFace H 7]
+
+＠平景清
+しかし……
+[k]
+
+＠平景清
+英霊・牛若丸から派生した[#是:これ]なる義経の霊基、[r]どうにも頑固でな。
+[k]
+
+[charaFace H 5]
+
+＠平景清
+儂には荷担せぬ、とうるさい。
+[k]
+
+＠平景清
+ならば仕方なし。[r]その頑固の源たる魂を儂は打ち砕く。
+[k]
+
+＠平景清
+義経、すなわちカルデアの牛若丸にとっての[r][#当世の頼朝]とも言うべき者……
+[k]
+
+[charaFace H 1]
+
+＠平景清
+カルデアのマスター、貴様を殺す。
+[k]
+
+？1：…………………………。
+
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+主なき忠犬は己を見失う。
+[k]
+
+
+＠鬼一法眼
+遮那王の魂はたちまち[#雲散霧消:うんさんむしょう]して、[r]殻のエーテルの肉体が残るのみとなろうなァ。
+[k]
+
+[charaFace B 16]
+
+＠鬼一法眼
+貴様は、そこを狙って……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠イアソン
+完全に乗っ取るつもり、ってか。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠メイヴ
+陰湿なやり口ねえ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ま、待って下さい！
+[k]
+
+[charaFace A 2]
+
+
+＠マシュ
+マスターという[#要石:かなめいし]を失えば、[r]ほぼすべての英霊は現界を維持できません！
+[k]
+
+[charaFace A 4]
+
+＠マシュ
+それを、あなたも分からないはずは……
+[k]
+
+[charaPut J 2400,2400]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+まあ待てマシュ。[r]打ち出の小槌があろう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+！
+[k]
+
+[charaPut J 2400,2400]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+
+＠平景清
+……其処まで語るつもりはなかったが。[r]手間は省けた、と考えよう。
+[k]
+
+[charaFace H 0]
+
+＠平景清
+さて。[r]種明かしも終えた。
+[k]
+
+[charaFace H 7]
+
+＠平景清
+では、カルデアのマスターに問う。
+[k]
+
+
+＠平景清
+貴様を殺すは容易い。[r]既に、此処は魔圏。
+[k]
+
+[charaFace H 5]
+
+＠平景清
+しかし……
+[k]
+
+[charaFace H 8]
+
+＠平景清
+些か[#惜しい]。
+[k]
+
+[charaFace H 0]
+
+＠平景清
+この霊基は貴様を主と認めている。[r]なればこそ、貴様。
+[k]
+
+＠平景清
+儂の[#僕:しもべ]となるならば、[r]命を取らず、生かしてやろう。
+[k]
+
+[charaFace H 5]
+[bgmStop BGM_EVENT_72 1.5]
+
+
+＠平景清
+ならぬのならば[line 3]此処で、貴様は、死ぬ。
+[k]
+
+？1：悪いけど
+？2：今のあなたの力にはなれない
+
+？！
+
+[charaFace H 0]
+
+＠平景清
+そうか。
+[k]
+
+[charaFace H 5]
+
+＠平景清
+ならば、やはり鏖殺の[line 3]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_67 0.1]
+
+＠鬼一法眼
+いいや駄目だね！
+[k]
+
+＠鬼一法眼
+これを殺させてやるものか！[r]これは、僕のものだ！
+[k]
+
+？1：え？
+？！
+
+？1：鬼一師匠？
+？！
+
+[charaFace B 7]
+
+＠鬼一法眼
+そう。そうだとも、今は僕の弟子にすぎないが……
+[k]
+
+[charaFace B 2]
+
+＠鬼一法眼
+僕は結構この子を気に入っている。[r]いずれ僕の養子か、嫁になるかもしれない相手だ！
+[k]
+
+＠鬼一法眼
+貴様なんぞに、殺されてなるものかよ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠イアソン
+なんて？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+
+＠メイヴ
+嫁？　[&婿じゃなくて？:嫁って言った？]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+突[messageShake 0.01 5 5 0.5]然何を血迷っているのですか師匠ーーー！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+え、だって、僕が先に見つけたし……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+
+＠イアソン
+思考パターンがだいぶおかしい！[r]やっぱ牛若の師匠なだけはあるな、おまえ！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠平景清
+…………くく。
+[k]
+
+＠平景清
+笑わせてくれる。[r]鬼一法眼、流石、天下万世の師。
+[k]
+
+[charaFace H 5]
+
+
+＠平景清
+[#嗤:わら]い[#噺:ばなし]も得意ときたか。[r]くく。ならば、儂も礼をせねばなるまいな！
+[k]
+
+[charaFace H 2]
+[bgmStop BGM_EVENT_67 0.5]
+
+＠平景清
+皆の衆！
+[k]
+
+[messageOff]
+[charaFace H 1]
+[wt 1.0]
+[charaFace H 2]
+
+[bgm BGM_EVENT_3 0.1]
+
+
+＠平景清
+[line 3]此処にて、鏖殺してしんぜよう！
+[k]
+
+[messageOff]
+[charaFace H 0]
+[charaMoveScale H 1.2 0.2]
+[charaMove H 0,18 0.2]
+[se bac1]
+[effect bit_talk_41]
+[charaFadeout H 0.2]
+
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+
+[wt 0.2]
+[effectStop bit_talk_41]
+[effectDestroy]
+[wt 0.1]
+
+[blurOff motion 0.1]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]

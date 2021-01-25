@@ -1,0 +1,833 @@
+
+＄94-05-53-12-1-0
+[soundStopAll]
+[enableFullScreen]
+
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[wt 1.5]
+
+[bgm BGM_EVENT_71 0.1]
+
+
+＠
+[align center]我、怨なり[align]
+[k]
+
+＠
+[align center]我、絶えぬ憤怒なり[align]
+[k]
+
+＠
+[align center]我、絶えぬ業火なり[align]
+[k]
+
+＠
+[align center]我、こそは[align]
+[k]
+
+[messageOff]
+[wt 1.5]
+
+＠
+[align center]景清なり[align]
+[k]
+
+[messageOff]
+[wt 1.5]
+
+＠
+[align center]片や、源氏[align][r][align center]片や、平家[align]
+[k]
+
+＠
+[align center]しかし我らは近きモノ[align]
+[k]
+
+＠
+[align center]ゆえに手を取り合おうぞ[align]
+[k]
+
+
+＠
+[align center]手に手を取って[align]
+[k]
+
+＠
+[align center]いざ[align]
+[k]
+
+＠
+[align center]いざ！[align]
+[k]
+
+＠
+[align center]いざ鎌倉！[align]
+[k]
+
+＠
+[align center][#おまえの頼朝]を殺すのだ、義経！[align]
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_71 1.5]
+[wait fade]
+
+[wait fade]
+[skip false]
+[effectDestroy]
+
+[scene 10000]
+[wt 1.5]
+[fadein black 0.1]
+[wait fade]
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[soundStopAllFade 0.4]
+[effectDestroy]
+
+[maskout black 1.0]
+[wait mask]
+[scene 10000]
+[wt 0.1]
+[maskin black 0.1]
+[wait mask]
+
+[label selectBranch]
+
+[fowardEffect bit_queststart80309]
+[wait fowardEffect]
+
+[fadeout black 1.0]
+[wait fade]
+
+
+[charaSet A 99502600 1 マシュ]
+[charaSet B 6041000 1 鬼一法眼]
+[charaSet C 4013300 1 メイヴ]
+[charaSet D 1098206200 1 弁慶]
+[charaSet E 98104200 1 イアソン]
+[charaSet F 98104010 1 クー・フーリン・オルタ]
+[charaSet G 1098206100 1 牛若丸]
+[charaSet H 11010001 1 景清]
+
+[charaSet I 11010001 1 景清第二シルエット]
+[charaFilter I silhouette 00000000]
+
+[charaSet J 98115000 1 通信用]
+[charaSet K 1001000 1 エフェクト用]
+
+[imageSet L back10000 1]
+[charaScale L 1.01]
+
+[charaPut J 2400,2400]
+[charaEffect J bit_talk_10_LowLevel]
+
+[charaDepth B 8]
+[charaDepth L 2]
+
+[scene 109900]
+[wt 1.5]
+
+[skip true]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+？1：ここは[line 3]
+？！
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠牛若丸
+鎌倉！？
+[k]
+
+＠牛若丸
+間違いありません、主殿。[r]ここは……
+[k]
+
+＠牛若丸
+鎌倉です、私のすべてが告げている……[r]かつての鎌倉ではないにせよ……
+[k]
+
+[charaFace G 6]
+
+＠牛若丸
+ここには、兄上の気配が残っている……！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠弁慶
+牛若丸様……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+座標、日本。関東南部の鎌倉のようです。[r]牛若丸さんの言葉通りですね。
+[k]
+
+[charaPut J 2400,2400]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠イアソン
+かまくら？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠メイヴ
+牛若丸、じゃなくて悪牛若は[r]ここで何しようとしてるのかしらね。
+[k]
+
+
+＠メイヴ
+牛若丸に縁深い場所なんでしょ？[r]なら、悪牛若は偶然逃げ込んだっていうより……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+最終目的地が鎌倉だった。[r]そう、考えるべきかもしれんな。
+[k]
+
+＠鬼一法眼
+で、何をしようとしているのか、だけど[line 3]
+[k]
+
+[charaFace B 0]
+
+＠鬼一法眼
+そりゃあ、破壊したいのじゃなかろうか。
+[k]
+
+？1：破壊……
+
+？！
+
+[charaFace B 7]
+
+＠鬼一法眼
+牛若丸ならず、遮那王ならず、[r]悪牛若は義経と化した状態で単独行動を始めた。
+[k]
+
+[charaFace B 6]
+
+＠鬼一法眼
+生前の[#恨みの対象]であろう鎌倉に、[r]悪さをしようと思ってもさほど不思議じゃない。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+……。[r]……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+
+＠鬼一法眼
+不可解があるとすれば、そうだな、[r]特異点というのは時間を[#遡:さかのぼ]れるんだろう？
+[k]
+
+
+[charaFace B 0]
+
+＠鬼一法眼
+どうせ破壊が目的なら、[r]頼朝が生きた時代の鎌倉を狙うだろうに、
+[k]
+
+＠鬼一法眼
+どう見積もっても、[r]当世からそう遠い時代じゃあるまいね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠マシュ
+微小特異点の例からすると、[r]現代に発生してもさほど奇妙ではないですが……
+[k]
+
+[charaPut J 2400,2400]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+ふーむ、そういうものか。
+[k]
+
+[charaFace B 18]
+
+
+＠鬼一法眼
+時代を[#遡:さかのぼ]るには、[r]さすがに打ち出の小槌では魔力の出力が足りんかな？
+[k]
+
+[charaFace B 4]
+
+
+＠鬼一法眼
+なら、どの時代でも構わんから[r]鎌倉を破壊できればいい、とかそういう……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 1.0]
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠？？？
+否、だ。[r]鬼一法眼。
+[k]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+[bgm BGM_EVENT_90 0.1]
+
+＠牛若丸
+！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠メイヴ
+来たわね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠クー・フーリン・オルタ
+やっとかよ。いい加減、待ちくたびれたぜ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+ほう！
+[k]
+
+＠鬼一法眼
+遂に逃げ隠れせず出てきたか！　遮那王！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.4 1]
+[wt 0.4]
+
+＠牛若丸？
+鎌倉憎し[line 3]
+[k]
+
+＠牛若丸？
+確かに。確かに、そればかりはな。
+[k]
+
+＠牛若丸？
+九郎[#判官:ほうがん]義経は兄頼朝に裏切られ、果てた。[r]確かに儂も鎌倉は憎い。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+儂？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+
+[charaFadeTime L 0.1 0.6]
+
+＠鬼一法眼
+（儂？）
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+[bgmStop BGM_EVENT_90 1.5]
+
+＠牛若丸？
+だが[line 3][r]まずは貴様だ、カルデアのマスター。
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[shake 0.03 0 5 1.5]
+[se ad14]
+[wt 1.0]
+[se ade153]
+[seStop ade153 1.5]
+
+[scene 109901 1.5]
+[wt 0.5]
+[seVolume ad14 0.5 0.5]
+[shake 0.03 0 3 1.0]
+[seStop ad14 1.0]
+[wt 3.0]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+[bgm BGM_EVENT_48 0.1]
+
+＠メイヴ
+なによこれ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+土地そのものが魔力を発しています！[r]地脈にアクセスしているようです、警戒を！
+[k]
+
+[charaFadeout A 0.1]
+[charaPut J 2400,2400]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠牛若丸？
+これぞ、打ち出の小槌によって儂が仕掛けた罠よ！[r]この鎌倉は魔圏となる！
+[k]
+
+
+＠牛若丸？
+気付かなんだか！[r]カルデアの者ども！
+[k]
+
+＠牛若丸？
+これまでの間に貴様らが巡ってきた地は、[r]真の世界各地にあらず。
+[k]
+
+
+＠牛若丸？
+すべて、[#すべて鎌倉領域]である！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠イアソン
+はぁ！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+
+＠牛若丸？
+すべては此処を魔圏とするための[#下拵:したごしら]え、[r]術の慣熟のための戯れ！
+[k]
+
+[messageOff]
+[fadeout white 0.5]
+[se ad592]
+[bgmStop BGM_EVENT_48 0.5]
+[wait fade]
+
+[charaFadeout I 0.1]
+[effect bit_talk_noise02]
+[cameraFilter gray]
+
+[scene 107600]
+[wt 0.5]
+
+[fadein white 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_71 0.1]
+
+
+[wt 1.0]
+
+
+＠牛若丸？
+第一の場所は、フランスにあらず。[r][#懐島:ふところじま]なり。
+[k]
+
+[messageOff]
+[scene 20503 0.7]
+[wt 2.2]
+
+＠牛若丸？
+第二の場所は、チェイテにあらず。[r]沼浜なり。
+[k]
+
+[messageOff]
+[scene 109600 0.7]
+[wt 2.2]
+
+＠牛若丸？
+第三の場所は、オーストラリアにあらず。[r]柄島なり。
+[k]
+
+[messageOff]
+[scene 109700 0.7]
+[wt 2.2]
+
+＠牛若丸？
+第四の場所は、地中海上空にあらず。[r]大船なり。
+[k]
+
+[messageOff]
+[scene 112000 0.7]
+[wt 2.2]
+
+＠牛若丸？
+第五の場所は、ニューヨークにあらず。[r]戸塚なり。
+[k]
+
+[messageOff]
+[fadeout white 0.5]
+[bgm BGM_EVENT_71 0.5 0.5]
+[wait fade]
+
+[effectStop bit_talk_noise02]
+[cameraFilter normal]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+[scene 109901]
+[wt 0.5]
+
+[fadein white 0.5]
+[bgm BGM_EVENT_71 0.5 1.0]
+[wait fade]
+
+
+＠牛若丸？
+鎌倉の周囲五箇所に[r]それぞれ異なる土地属性を与え……
+[k]
+
+＠牛若丸？
+カルデアのサーヴァントどもを引き込んだまで。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……！
+[k]
+
+[charaFace A 7]
+
+＠マシュ
+微小特異点の観測位置の表示までに[r]一瞬タイムラグがあったのは、まさか……
+[k]
+
+[charaPut J 2400,2400]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠牛若丸？
+ふふ。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠イアソン
+な、なんでそんな……[r]しちめんどくさいことを……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠牛若丸？
+申したであろう、慣れ、だ。
+[k]
+
+＠牛若丸？
+五度の戯れを経て、[r]小槌を用いた細工を遂に儂は会得した。
+[k]
+
+＠牛若丸？
+そして、鎌倉を魔圏へ変えた。
+[k]
+
+＠牛若丸？
+鎌倉に与えた土地属性こそは、[r]あらゆる侵入者にとある属性を与えるモノ！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠メイヴ
+属性？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠鬼一法眼
+己の攻撃が効きやすい属性を敵に与える、[r]といったあたりだろうなァ。違うか、悪牛若？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠牛若丸？
+然り。
+[k]
+
+
+＠牛若丸？
+既に貴様らすべて、[r]我が鏖殺対象と化した。
+[k]
+
+
+＠牛若丸？
+源氏鏖殺、逃れる[#術:すべ]はなし[line 3]
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 22]
+[charaFadein B 0.1 1]
+
+
+＠鬼一法眼
+はいはい、あーあーもう[#小癪:こしゃく]だなァ！[r]おまえらしくもない、遮那王！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠牛若丸
+いいえ師匠、あれは私ではありませぬ！
+[k]
+
+
+＠牛若丸
+私であって私でない！[r]私が、マスターを害するなどあり得ない！
+[k]
+
+[bgmStop BGM_EVENT_71 1.5]
+
+
+＠牛若丸
+名乗るがいい、[#小癪:こしゃく]な卑怯者め！[r]誰だ！　貴様は！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠牛若丸？
+ふ。ふふふふふ！
+[k]
+
+[bgm BGM_EVENT_72 0.1]
+
+＠牛若丸？
+見破ったな牛若丸、[r]いやさ牛若丸の欠片！
+[k]
+
+＠牛若丸？
+如何にも儂は、義経にして義経でない。
+[k]
+
+
+＠牛若丸？
+儂こそは怨の一文字、[r]儂こそは源氏鏖殺の[#志:こころざし]。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+
+[charaDepth K 8]
+[charaDepth I 7]
+[charaDepth H 5]
+
+[charaPut K 0,0]
+[charaEffect K bit_talk_charge_ppl02]
+[se ad153]
+[seVolume ad153 0 0.6]
+[se ad559]
+[seVolume ad559 0 0.4]
+[wt 2.0]
+
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[charaEffectStop K bit_talk_charge_ppl02]
+[seStop ad153 0.5]
+[seStop ad559 0.5]
+[wt 0.2]
+[se ade457]
+[charaFadeout I 0.8]
+[wt 2.5]
+
+[charaFace H 2]
+
+＠牛若丸？
+[line 3]我が真名、平景清である！
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_72 2.0]
+[wait fade]
+[soundStopAll]
+[end]
