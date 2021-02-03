@@ -1,0 +1,507 @@
+
+
+
+＄94-03-35-30-5-0
+
+[soundStopAll]
+
+[charaSet A 3033001 1 Hildr]
+[charaSet B 3033001 1 Hildr_Silhouette]
+[charaFilter B silhouette FFFFFFFF]
+
+[charaSet C 3033002 1 Thrúd]
+[charaSet D 3033002 1 Thrud_Silhouette]
+[charaFilter D silhouette FFFFFFFF]
+
+[charaSet E 3033000 1 Ortlinde]
+[charaSet F 3033000 1 Ortlinde_Silhouette]
+[charaFilter F silhouette FFFFFFFF]
+
+[equipSet H 9806950 1 "Valentine's CE"]
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66800]
+[branch lblConf]
+[label lblNotClear]
+[scene 10400]
+[label lblConf]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad8]
+[wt 1.5]
+
+[se ad95]
+[seVolume ad95 0 0.3]
+[wt 0.5]
+[seVolume ad95 1.5 0.5]
+[wt 2.0]
+[seStop ad95 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠Thrúd
+[tVoice ValVoice_303300 0_V010]
+...Master.[wait tVoice]
+[k]
+
+＠Thrúd
+[tVoice ValVoice_303300 0_V020]
+Could we talk to you for a bit?[wait tVoice]
+[k]
+
+＠Thrúd
+[tVoice ValVoice_303300 0_V030]
+We are aware that today is a day of celebration, and would like to ask you for a few minutes of your time.[wait tVoice]
+[k]
+
+＠Thrúd
+[tVoice ValVoice_303300 0_V040]
+What is your decision, Master?[wait tVoice]
+[k]
+
+？1：Sure, that's fine.
+
+[charaFace C 1]
+
+＠Thrúd
+[tVoice ValVoice_303300 0_V050]
+Thank you.[wait tVoice]
+[k]
+
+[charaFace C 0]
+
+？2：What do I say here? “Authorization granted” or something?
+
+＠Thrúd
+[tVoice ValVoice_303300 0_V060]
+That's fine. Thank you for approving our request.[wait tVoice]
+[k]
+
+？！
+
+＠Thrúd
+[tVoice ValVoice_303300 0_V070]
+Now, please excuse me.[wait tVoice]
+[k]
+
+[messageOff]
+[se bac24]
+[charaEffect C bit_talk_easy_spell_r]
+[wt 2.0]
+
+[wipeout openEye 0.5 0.7]
+[wait wipe]
+[wt 0.7]
+[wipein openEye 0.3 0.7]
+[wait wipe]
+[wt 0.1]
+[wipeout openEye 0.2 0.5]
+[wait wipe]
+[wt 0.5]
+[wipein openEye 0.5 0.7]
+[wait wipe]
+[wt 1.0]
+
+？1：So sleepy...
+？2：What happened...?
+
+？！
+
+＠Thrúd
+[tVoice ValVoice_303300 0_V080]
+I have inscribed you with a sleep rune. It is but a light one. However it will allow us to communicate in your sleep for a few minutes.[wait tVoice]
+[k]
+
+＠Thrúd
+[tVoice ValVoice_303300 0_V090]
+Sleep well, Master.[wait tVoice]
+[k]
+
+[messageOff]
+[wipeout openEye 1.0 0.7]
+[bgmStop BGM_EVENT_77 2.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[scene 10000]
+
+[wt 1.0]
+
+[wipein openEye 0.5 0.7]
+[wait wipe]
+[wt 1.0]
+
+[charaTalk off]
+
+[charaDepth F 2]
+[charaDepth E 1]
+
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 1.4]
+
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.1]
+[charaFadeout F 0.7]
+[wt 1.0]
+
+＠Ortlinde
+[tVoice ValVoice_303300 0_V100]
+...Master. Master?[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaDepth B 2]
+[charaDepth A 1]
+
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 1.4]
+
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[charaFadeout B 0.7]
+[wt 1.0]
+
+＠Hildr
+[tVoice ValVoice_303300 0_V110]
+Oh, there we go. Hey, Master![sr]Can you see us?[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth D 2]
+[charaDepth C 1]
+
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 1.4]
+
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.1]
+[charaFadeout D 0.7]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk C]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠Thrúd
+[tVoice ValVoice_303300 0_V120]
+...Sorry about that. You seem very busy, so I thought this would be the best way to make the most of our time.[wait tVoice]
+[k]
+
+＠Thrúd
+[tVoice ValVoice_303300 0_V130]
+In reality, while it is possible to divide our Spirit Origin into three, it places a heavy load on both you and the summoning system.[wait tVoice]
+[k]
+
+＠Thrúd
+[tVoice ValVoice_303300 0_V140]
+So I decided that meeting with you in your mind like this would be the best way to minimize magical energy usage. Also[line 2][wait tVoice]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Hildr
+[tVoice ValVoice_303300 0_V150]
+We don't have time for all that complicated stuff.[sr]Let's just give [&him:her] what we're here to give [&him:her]![wait tVoice]
+[k]
+
+＠Hildr
+[tVoice ValVoice_303300 0_V160]
+Don't forget we want to give Brynhild her gift, too![sr]Come on![wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠Ortlinde
+[tVoice ValVoice_303300 0_V170]
+Um, Master? Today is[line 2][wait tVoice]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Hildr
+[tVoice ValVoice_303300 0_V180]
+Valentine's Day. Right?[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+＠Ortlinde
+[tVoice ValVoice_303300 0_V190]
+...Right. We heard this is a day to tell those you care for how you feel about them.[wait tVoice]
+[k]
+
+
+＠Ortlinde
+[tVoice ValVoice_303300 0_V200]
+I don't know if you have the soul of a warrior,[sr]but at the very least[line 2][wait tVoice]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+
+＠Thrúd
+[tVoice ValVoice_303300 0_V210]
+You fight hard to clear a path forward for others,[sr]and we are proud to serve you.[wait tVoice]
+[k]
+
+＠Thrúd
+[tVoice ValVoice_303300 0_V220]
+So we want you to have this.[wait tVoice]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Hildr
+[tVoice ValVoice_303300 0_V230]
+It's a gift![wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠Ortlinde
+[tVoice ValVoice_303300 0_V240]
+Yes. It isn't much, but we hope you will accept it.[wait tVoice]
+[k]
+
+[messageOff]
+
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se bas2]
+[charaFace H 0]
+[charaFadein H 0.5 0,-70]
+[wt 2.0]
+
+[charaFadeout H 0.4]
+[wt 0.5]
+
+？1：Thank you.
+
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+[wt 1.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+[wt 1.5]
+
+
+？2：Is this Brynhild's...?
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠Ortlinde
+[tVoice ValVoice_303300 0_V250]
+...Yes. That's right.[wait tVoice]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Thrúd
+[tVoice ValVoice_303300 0_V260]
+We Valkyries do not have likes or dislikes the way humans do, and we have no way of ranking priorities.[wait tVoice]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠Hildr
+[tVoice ValVoice_303300 0_V270]
+But, if we absolutely had to choose,[sr]well, we know we love our sister![wait tVoice]
+[k]
+
+＠Hildr
+[tVoice ValVoice_303300 0_V280]
+So we made this sugar candy for her![sr]And just this once, we're giving some to you, too.[wait tVoice]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+？！
+
+＠Ortlinde
+[tVoice ValVoice_303300 0_V290]
+...That's all we had to say. We have placed this gift on the table in your room.[wait tVoice]
+[k]
+
+
+＠Ortlinde
+[tVoice ValVoice_303300 0_V300]
+Master. Thank you for making time for us.[wait tVoice]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠Thrúd
+[tVoice ValVoice_303300 0_V310]
+We hope you have a wonderful, fulfilling day.[wait tVoice]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠Hildr
+[tVoice ValVoice_303300 0_V320]
+See you later![wait tVoice]
+[k]
+
+[messageOff]
+[fadeout white 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[branchQuestNotClear lblNotClear2 3000303]
+[scene 66800]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 10400]
+[label lblConf2]
+
+[wt 0.1]
+
+[wipein openEye 2.0 1.0]
+[wait wipe]
+
+
+[wt 2.0]
+
+[se ad77]
+[wt 1.0]
+
+？1：(Check table)
+
+？！
+
+[se bas2]
+[charaFace H 0]
+[charaFadein H 0.5 0,-70]
+[wt 2.0]
+
+[charaFadeout H 0.4]
+[wt 0.5]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

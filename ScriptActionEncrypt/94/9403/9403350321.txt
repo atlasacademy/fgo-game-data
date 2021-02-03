@@ -1,0 +1,268 @@
+
+＄94-03-35-03-2-1
+
+
+[soundStopAll]
+
+[charaSet A 4031000 1 "Red Hare"]
+[charaSet B 1098160000 1 "Chen Gong"]
+[charaSet C 5042000 1 "Murasaki Shikibu"]
+[charaSet D 99502600 1 Mash]
+[charaSet E 5007001 1 Shakespeare]
+[charaSet F 1013001 1 Caesar]
+[charaSet G 5005001 1 Andersen]
+[sceneSet H 10000 1]
+[charaSet I 5009000 1 Effect]
+[charaSet J 98115000 1 Effect]
+
+[charaScale H 1.01]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_warp]
+
+[charaScale A 1.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 11010]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+
+[se ad171]
+[wt 0.2]
+[fowardEffect bit_talk_kengekiall02]
+[wt 0.2]
+[se ad32]
+[wt 0.3]
+[se ad170]
+[wt 0.2]
+[flashin once 0.1 0.3 FFFFFF80 FFFFFF00]
+[wt 0.4]
+
+[se bac18]
+[effect bit_talk_h_slash01 0,0 H]
+[wt 0.8]
+
+[se ad22]
+[wt 1.6]
+
+
+
+[se ad127]
+[charaMoveScale A 1.0 0.2]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[charaShake A 0.02 3 3 0.4]
+[seStop ad127 0.6]
+[wt 0.6]
+
+＠Red Hare
+Now's your chance, beautiful black-garbed lady!
+[k]
+
+
+[se ade250]
+[bgm BGM_EVENT_3 0.4 0.5]
+[charaTalk H]
+[charaFadeTime H 0.1 0.4]
+＠J：Commentary
+Update: Red Hare heard the commotion and came back to help in the interval! Meanwhile, the author Heroic Spirits were entirely wiped out!
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.4 1.0]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠Murasaki Shikibu
+Thank you, kind horse with the gallant,[sr]entirely unhorselike voice!
+[k]
+
+[charaFace C 2]
+＠Murasaki Shikibu
+Cursed Books, return to me!
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 1.0]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[se adm20]
+[charaPut I 1]
+[charaEffectStop I bit_talk_warp]
+[fowardEffect bit_talk_22]
+[wt 1.5]
+[seStop adm20 1.0]
+[wt 2.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠Mash
+You've recovered more of the Cursed Books! [wt 0.6][charaFace D 12]But...I'm afraid they don't have much magical energy either.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Murasaki Shikibu
+...Indeed.
+[k]
+
+＠Murasaki Shikibu
+Still, while they may not be the original Cursed Book, I can't let them run around doing whatever they please.
+[k]
+
+[charaFace C 1]
+＠Murasaki Shikibu
+Thank goodness I was able to recover them.[sr]Thank you all so much for your help.
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 2]
+[charaDepth B 4]
+[charaDepth F 6]
+[charaDepth E 8]
+
+[charaTalk off]
+[charaFace A 1]
+[charaFace B 1]
+[charaFadein A 0.1 2]
+[charaFadein B 0.1 0]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaFace E 0]
+[charaFace F 0]
+[charaFadein E 0.1 0]
+[charaFadein F 0.1 2]
+[wt 1.2]
+
+[charaFadeout F 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠Andersen
+Hmm. Books checked out from the underground library, huh...
+[k]
+
+＠Andersen
+You said it's possible this original Cursed Book could be mixed in among books like that, right?
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Murasaki Shikibu
+I did.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠Andersen
+Well, I remember seeing that girl carrying an armful of them.
+[k]
+
+？1：Which girl?
+？2：Who are you talking about?
+
+？！
+
+＠Andersen
+You know, that one with the glasses who's into manga and doujin and stuff.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠Mash
+Oh! I know who he means now, Senpai!
+[k]
+
+？1：Osakabehime!
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠Andersen
+Let's go pay her a visit then.
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[wt 1.2]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠Andersen
+What? Her room's not that far from my study,[sr]and the least I can do is show you the way.
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

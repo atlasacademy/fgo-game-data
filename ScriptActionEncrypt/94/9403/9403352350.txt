@@ -1,0 +1,178 @@
+
+＄94-03-35-23-5-0
+
+[charaSet A 1017000 1 Musashi]
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+
+[scene 27910]
+
+[fadein black 2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.4 1]
+＠Musashi
+[tVoice ValVoice_101700 0_V010]
+...And that's why I had you come all the way to this tea shop in the mountains![wait tVoice]
+[k]
+
+＠Musashi
+[tVoice ValVoice_101700 0_V020]
+Hehe, I'm pretty used to duels to the death by now, but I still had to sum up a lot of courage to ask you here! It's been a real learning experience![wait tVoice]
+[k]
+
+[charaFace A 0]
+＠Musashi
+[tVoice ValVoice_101700 0_V030]
+I love these Christian festivities! Anything that brings people closer together is a-okay in my book.[wait tVoice]
+[k]
+
+＠Musashi
+[tVoice ValVoice_101700 0_V040]
+And on that note, here! This is for you![wait tVoice]
+[k]
+
+＠Musashi
+[tVoice ValVoice_101700 0_V050]
+You've always been so nice to me even though I'm such an incorrigible ruffian, and today, I want to show you how grateful I am for that![wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[equipSet B 9805010 1 ]
+[wait equipSet B]
+[charaFace B 0]
+[charaFadein B 0.5 0,-70]
+[wt 2.0]
+[charaFadeout B 0.4]
+[wt 0.5]
+
+？1：Dumplings!
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠Musashi
+[tVoice ValVoice_101700 0_V060]
+Uh huh. Dumplings. I don't really know the first thing when it comes to chocolate.[wait tVoice]
+[k]
+
+＠Musashi
+[tVoice ValVoice_101700 0_V070]
+But I heard you're supposed to give your favorite treat, and dumplings are yummy.[wait tVoice]
+[k]
+
+？2：Udon...?
+[branch SelectUdon]
+
+？！
+
+[branch SelectEnd]
+
+[label SelectUdon]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠Musashi
+[tVoice ValVoice_101700 0_V080]
+That's right! Udon! Soba's fine and all, but nothing beats a hot bowl of udon![wait tVoice]
+[k]
+
+＠Musashi
+[tVoice ValVoice_101700 0_V090]
+You can learn pretty much everything you need to know from udon. How to extend your sword, how to stick close to an opponent, how to stay firm, how to stay yummy...everything![wait tVoice]
+[k]
+
+[charaFace A 0]
+
+[masterBranch lblBoy lblGirl]
+
+[label lblBoy]
+
+＠Musashi
+[tVoice ValVoice_101700 0_V100]
+So if you want to get stronger, [%1], you need to eat more rice, fish, and udon.[wait tVoice]
+[k]
+
+[branch lblConf]
+
+[label lblGirl]
+
+＠Musashi
+[tVoice ValVoice_101700 0_V110]
+So if you want to get stronger, [%1], you need to eat more rice, fish, and udon.[wait tVoice]
+[k]
+
+[label lblConf]
+
+＠Musashi
+[tVoice ValVoice_101700 0_V120]
+Ooh, I know. We should make our own udon sometime. Don't worry, I'll teach you everything you need to know![wait tVoice]
+[k]
+
+[label SelectEnd]
+
+
+[charaFace A 6]
+＠Musashi
+[tVoice ValVoice_101700 0_V130]
+But enough about that. Go on, eat up! Those dumplings aren't gonna enjoy themselves![wait tVoice]
+[k]
+
+＠Musashi
+[tVoice ValVoice_101700 0_V140]
+I sold a whole bunch of materials to Da Vinci to make sure I could buy you this special treat today![wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠Musashi
+[tVoice ValVoice_101700 0_V150]
+Don't worry, I didn't get rid of anything I couldn't afford to lose.[wait tVoice]
+[k]
+
+[charaFace A 3]
+＠Musashi
+[tVoice ValVoice_101700 0_V160]
+You know, I'm used to fighting other people's battles for them, but I've never saved money to treat anyone else before.[wait tVoice]
+[k]
+
+＠Musashi
+[tVoice ValVoice_101700 0_V170]
+I was a little worried I might not be able to pull it off, or that I might just end up making trouble for you...[wait tVoice]
+[k]
+
+[charaFace A 7]
+＠Musashi
+[tVoice ValVoice_101700 0_V180]
+...but it was all worth it to see you enjoying your gift so much! Now I'm glad I risked everything on this battle![wait tVoice]
+[k]
+
+＠Musashi
+[tVoice ValVoice_101700 0_V190]
+The dumplings are delicious, and it makes me super happy to see you smile! Let's come here again sometime, Master![wait tVoice]
+[k]
+
+
+
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+[soundStopAll]
+[end]

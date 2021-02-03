@@ -1,0 +1,323 @@
+
+
+＄94-03-35-30-2-0
+
+
+[soundStopAll]
+[charaSet A 5039000 1 Scáthach-Skadi]
+[charaSet B 5039000 1 Scáthach-Skadi_Silhouette]
+[charaFilter B silhouette 00000080]
+
+[equipSet H 9806940 1 "Valentine's CE"]
+
+
+[scene 60900]
+
+[se ad207]
+[seVolume ad207 0.0 0.5]
+[wt 1.0]
+
+[fadein black 2.0]
+[seVolume ad207 1.0 1.5]
+[wait fade]
+
+[wt 1.0]
+[seStop ad207 3.0]
+[wt 2.5]
+
+[bgm BGM_EVENT_95 0.1]
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V010]
+(...Oh?)[wait tVoice]
+[k]
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V020]
+(If it isn't [%1].)[wait tVoice]
+[k]
+
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V030]
+(What brings you all the way out here?[sr]Are you unaware of what sort of place this is?)[wait tVoice]
+[k]
+
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V040]
+(This is Scandinavia...)[wait tVoice]
+[k]
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V050]
+(My world...)[wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V060]
+(...Or rather, a miniature garden I had made in the simulator to resemble it. My own place in this new world.)[wait tVoice]
+[k]
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V070]
+(Of everything you can see here,[sr]this castle is the only place you can enter.)[wait tVoice]
+[k]
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V080]
+(...[sr]...Oh, very well.)[wait tVoice]
+[k]
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V090]
+(You may cross the great bridge if you wish.[sr]I grant you permission to enter my castle.)[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+
+[bgmStop BGM_EVENT_95 1.0]
+[wait fade]
+
+[scene 61000]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ade74]
+[seVolume ade74 0 0.1]
+[seVolume ade74 2.0 1.0]
+[wt 2.6]
+[seStop ade74 0.1]
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V100]
+...So, you have come, [%1].[wait tVoice]
+[k]
+
+[messageOff]
+[charaTalk off]
+
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.7]
+
+[charaTalk depthOff]
+[charaDepth B 2]
+[charaDepth A 1]
+
+[charaFace A 10]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[cueSe Battle bas5]
+[cueSeVolume bas5 0 0.4]
+
+[charaFadeout B 0.4]
+[wt 1.2]
+[charaTalk depthOn]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk on]
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V110]
+You must have a great deal of time on your hands to come all this way to visit me in the simulator.[wait tVoice]
+[k]
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V120]
+Were you expecting something from me?[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 9]
+[wt 1.0]
+[charaFace A 8]
+
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V130]
+Yes, I know all about why you are here.[sr]You humans are trivially easy to understand.[wait tVoice]
+[k]
+
+
+[charaFace A 1]
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V140]
+...Hehe. I'm just joking.[wait tVoice]
+[k]
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V150]
+The other me told me about this. I believe she said it has something to do with a man called Saint Valentinus?[wait tVoice]
+[k]
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V160]
+And that it is a foreign holiday in his honor?[sr]So if you have come all this way... Hmm...[wait tVoice]
+[k]
+
+[charaFace A 8]
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V170]
+I take it you are expecting[sr]something from me, [%1]?[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V180]
+Very well, I will allow it.[sr]This is what I shall give you.[wait tVoice]
+[k]
+
+[messageOff]
+[cueSe Battle bas5]
+[cueSeVolume bas5 0 0.4]
+[wt 1.0]
+
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[se bas2]
+[charaFace H 0]
+[charaFadein H 0.5 0,-70]
+[wt 2.0]
+
+[charaFadeout H 0.4]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V190]
+Yes, they're ice candy.[wait tVoice]
+[k]
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V200]
+Be sure to take your time and savor them. Worry not.[sr]I may have used my magical energy to create them out of thin air...[wait tVoice]
+[k]
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V210]
+...but I have already tasted them, and can vouch for their quality. Be grateful and enjoy them.[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V220]
+...[sr]...[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 4]
+[wt 1.0]
+[charaFace A 6]
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V230]
+...I'm sorry.[wait tVoice]
+[k]
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V240]
+I have no more words to offer you. The true Scáthach-Skadi left all of her love behind in Scandinavia.[wait tVoice]
+[k]
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V250]
+I heard this Valentinus festival is meant to celebrate love, but I...[wait tVoice]
+[k]
+
+
+[messageOff]
+[charaFace A 8]
+[wt 1.0]
+[charaFace A 6]
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V260]
+I have forgotten everything I once knew about love.[sr]I can take no pleasure in this festival.[wait tVoice]
+[k]
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V270]
+I am sure I could still speak of love,[sr]but they would merely be empty words.[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V280]
+So, I am sorry. Forgive me. I did make this ice candy with affection, but...[wait tVoice]
+[k]
+
+[charaFace A 11]
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V290]
+...[sr]...[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V300]
+...No, this is callous of me.[sr]Once again, I'm sorry![wait tVoice]
+[k]
+
+[charaFace A 2]
+
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V310]
+Now eat up! My ice candy is the product of countless refinements made by myself and my other self![wait tVoice]
+[k]
+
+？1：Thank you.
+？2：...Okay. I'll make sure to savor them.
+
+？！
+
+[messageOff]
+[charaFace A 1]
+[wt 1.0]
+[charaFaceFade A 12 0.7]
+[wt 1.2]
+
+＠Scáthach-Skadi
+[tVoice ValVoice_503900 0_V320]
+Hehe. Don't blame me if you never find anything else delicious again.[wait tVoice]
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[soundStopAll]
+[end]

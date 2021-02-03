@@ -1,0 +1,483 @@
+
+＄94-03-35-02-1-0
+
+[soundStopAll]
+
+[charaSet A 5042000 1 "Murasaki Shikibu"]
+[charaSet B 99502600 1 Mash]
+[charaSet C 98002000 1 Fou]
+[charaSet D 1098162300 1 Semiramis]
+[charaSet E 7016001 1 "Tamamo Cat"]
+[charaSet F 4011001 1 Boudica]
+[charaSet G 2001000 1 Emiya]
+[charaSet I 98115000 1 Effect]
+[charaSet J 98115000 1 Effect]
+
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_41]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66700]
+[branch lblConf]
+[label lblNotClear]
+[scene 60300]
+[label lblConf]
+
+
+[se ad413]
+[seVolume ad413 0 0.1]
+[seVolume ad413 1.0 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+[seStop ad413 1.0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+＠Murasaki Shikibu
+I see. This certainly is a lively place...
+[k]
+
+？1：First time at a cafeteria?
+
+＠Murasaki Shikibu
+In fact, yes.
+[k]
+
+＠Murasaki Shikibu
+Usually, I prefer to keep to myself, surrounded by nothing more than books and words.
+[k]
+
+＠Murasaki Shikibu
+I have no wish to boast, but even as a child, I would frequently read books meant for male scholars.
+[k]
+
+？2：I take it you don't usually leave the library much?
+
+＠Murasaki Shikibu
+No, I suppose I don't.[sr]My intention is not to be a shut-in, though...
+[k]
+
+＠Murasaki Shikibu
+...but I suppose I do usually end up perusing my library's collections whenever I have a spare moment.
+[k]
+
+[charaFace A 4]
+＠Murasaki Shikibu
+I was unaware just how much I had neglected to get to know so many others. This simply will not do.
+[k]
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[se ad13]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 0.3]
+＠Mash
+People often gather at the cafeteria, so it should be the perfect place to look for a lead on the Cursed Books!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Fou
+Fou???
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Mash
+Semiramis and I will be supporting you and Murasaki Shikibu from the Command Room, Senpai.
+[k]
+
+＠Mash
+Mr. Holmes is on break, and Da Vinci seems to be genuinely exhausted, so...
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+＠Semiramis
+Never mind Holmes.[sr]The reason for his indisposition is hardly a secret.
+[k]
+
+[charaFace D 0]
+＠Semiramis
+Da Vinci was actually having trouble walking straight, so it's clear that she should sit this one out.
+[k]
+
+＠Semiramis
+Now then, as for this “original Cursed Book”[sr]or whatev[line 2]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.4]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[wt 0.5]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.4 1]
+[wt 0.4]
+＠Tamamo Cat
+Oh? Is that yet another new face I spot?
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaFace E 0]
+＠Tamamo Cat
+At first glance you'd think you weren't getting enough to eat, but you've clearly been packing the pounds on in other places.
+[k]
+
+＠Tamamo Cat
+Welp, no matter how impossible your proportions might be, we cats don't turn away customers.
+[k]
+
+[charaFace E 1]
+＠Tamamo Cat
+So go ahead and help yourself to some of this cat's home cooking, woof! I'll even throw in a ninety-nine-percent newbie discount!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFace E 1]
+[charaFadein F 0.1 2]
+[charaFadein E 0.1 0]
+＠Boudica
+What's going on here?
+[k]
+
+[charaFace F 1]
+＠Boudica
+Oh, if it isn't [%1]...and the librarian![sr]What a nice surprise to see you here. I'm guessing you must be hungry.
+[k]
+
+
+[charaTalk E]
+[charaFace E 0]
+＠Tamamo Cat
+And the librarian lady looks real down in the dumps.[sr]How about a sandwich? Everyone loves sandwiches.
+[k]
+
+[charaFace E 4]
+＠Tamamo Cat
+Oh, wait. Sorry, lady with the beautiful hands,[sr]but we cats just aren't cut out to cook bookworms...
+[k]
+
+＠Tamamo Cat
+Not for lack of trying, mind. It's just that we can't find the buggers no matter how hard we look...
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠Murasaki Shikibu
+I, uh, I see...[sr]Um, do you all know this cat woman, or...?
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.4 1]
+[wt 0.4]
+＠Emiya
+Sorry 'bout that.[sr]Try not to pay too much attention to what she says.
+[k]
+
+[charaFace G 0]
+＠Emiya
+Nice to see you here in the cafeteria for once, Murasaki Shikibu. This your first time leaving the library?
+[k]
+
+？1：I see you know everyone besides Cat.
+？2：You're pretty famous, Murasaki.
+
+？！
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+[charaMoveReturn A -30,0 0.6]
+[wt 0.6]
+[charaMoveReturn A 30,0 0.5]
+[wt 0.5]
+
+[charaFace A 6]
+＠Murasaki Shikibu
+I-I-I'm so sorr[line 2]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠Semiramis
+Ahem. She and that Master there are looking for a book. One bound with an unusual type of magical energy.
+[k]
+
+＠Semiramis
+Would any of you know anything about such a book,[sr]Heroic Spirits of the kitchen?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Murasaki Shikibu
+(Lady Semiramis...)
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFace F 0]
+[charaFadein G 0.1 0]
+[charaFadein F 0.1 2]
+＠Emiya
+I mean, it's not like the ONLY thing we ever do is cook...
+[k]
+
+
+[charaTalk F]
+[charaFace F 4]
+＠Boudica
+I've definitely seen a lot of Servants reading books lately...but I can't say I've seen any quite like that.
+[k]
+
+
+[charaTalk G]
+[charaFace G 0]
+＠Emiya
+There was that one writer Servant.[sr]He's pretty much always got a book with him...
+[k]
+
+＠Emiya
+...but lately, he's been bringing whole stacks of them to the table. Did so just this morning, in fact.
+[k]
+
+
+[charaTalk F]
+[charaFace F 1]
+＠Boudica
+Oh, right! He has been reading even more than usual lately, hasn't he.
+[k]
+
+
+[charaTalk G]
+[charaFace G 0]
+＠Emiya
+Guess it's the new hotness.
+[k]
+
+
+[charaTalk F]
+[charaFace F 3]
+＠Boudica
+True. Heck, even we've been reading a lot lately.[sr]It's so much fun, learning all these new things.
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad127]
+[seVolume ad127 0 0.5]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 -350,0]
+[charaMove E 0,0 0.4]
+[wt 0.4]
+[seStop ad127 0.4]
+[wt 0.6]
+＠Tamamo Cat
+Thanks for waiting, ladies and germs![sr]Cat's back with an all-new entree!
+[k]
+
+＠Tamamo Cat
+This baby's overflowing with spice née intelligence, and is the perfect addition to any cafeteria kitchen!
+[k]
+
+[charaFace E 1]
+＠Tamamo Cat
+I give you...us kitchen Heroic Spirits' unsung hero!
+[k]
+
+[se ad186]
+[charaPut I 1]
+＠Tamamo Cat
+“Shirasagi's One Hundred Recipes:[sr]Cooking So Simple Even Batty Can Do It”!
+[k]
+
+？1：Hold up!
+？2：If this is going where I think it's going...!
+
+？！
+
+[bgmStop BGM_EVENT_7 1.0]
+[charaPut I 1200,1200]
+[charaEffectStop I bit_talk_41]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se adm21]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaMoveReturn C 0,40 0.5]
+＠Fou
+Fou fou!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+＠Tamamo Cat
+Huh? Is there something weird about this book I had Raikou borrow for me?
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠Murasaki Shikibu
+Pardon me, Lady Cat!
+[k]
+
+[messageOff]
+[fowardEffect bit_talk_pentagram_03]
+[wt 0.1]
+[se ad598]
+[wt 3.4]
+
+[se ade251]
+[fowardEffectStop bit_talk_pentagram_03]
+[wt 2.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+[charaShake E 0.03 4 4 0.4]
+[wt 0.6]
+
+[se adm21]
+[charaFace E 2]
+＠Tamamo Cat
+W[messageShake 0.03 3 3 0.4]hat the woof!? Why did my book jump outta my paws like a bunny outta hell!?
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk off]
+[charaFace G 5]
+[charaFace F 5]
+[charaFadein G 0.1 0]
+[charaFadein F 0.1 2]
+[wt 1.0]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠Murasaki Shikibu
+I knew it! This is one of the Cursed Books!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠Mash
+I'm picking up an unusual magical energy reading from that book! I'll call it a Cursed Book Signal for the time being!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠Murasaki Shikibu
+Pardon me, everyone![sr]I need to recover this book right away!
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

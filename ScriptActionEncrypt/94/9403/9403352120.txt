@@ -1,0 +1,249 @@
+
+＄94-03-35-21-2-0
+
+[charaSet A 2003001 1 "Robin Hood"]
+[charaSet B 98006000 1 Enemy]
+[charaSet C 98024100 1 Girl]
+
+[soundStopAll]
+
+
+[scene 20820]
+
+[fadein black 2]
+[wait fade]
+
+[se bac20]
+[charaPut B 0,0]
+[charaEffect B bit_shot_01]
+[wt 0.5]
+[se bac16]
+[shake 0.05 2 4 0.25]
+[wt 0.7]
+
+[wt 0.7]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+
+[wt 0.4]
+
+＠Robin Hood
+[tVoice ValVoice_200300 0_V010]
+There we go. That oughta take care of all the bandits around here.[wait tVoice]
+[k]
+
+＠Robin Hood
+[tVoice ValVoice_200300 0_V020]
+Gotta say though, Master, I don't know why you went outta your way to come along with me.[wait tVoice]
+[k]
+
+？1：Congrats on a job well done. Here.
+？2：Take this! Nutritional supplement!!!
+
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[charaFace A 0]
+＠Robin Hood
+[tVoice ValVoice_200300 0_V030]
+Hm? Where'd that come from? Don't get me wrong, I'm always happy to get stuff for free, but[line 2][wait tVoice]
+[k]
+
+＠Robin Hood
+[tVoice ValVoice_200300 0_V040]
+...[sr]...[wait tVoice]
+[k]
+
+？1：Uh... Hello?
+
+？！
+
+[charaFace A 1]
+＠Robin Hood
+[tVoice ValVoice_200300 0_V050]
+Whoops, sorry 'bout that. I was so surprised I kinda froze up for a second.[wait tVoice]
+[k]
+
+＠Robin Hood
+[tVoice ValVoice_200300 0_V060]
+Valentine's Day, was it? Hey, I enjoy the holidays as much as the next guy. I'll be glad to take this off your hands.[wait tVoice]
+[k]
+
+[charaFace A 4]
+＠Robin Hood
+[tVoice ValVoice_200300 0_V070]
+Though I guess now, I oughta get you something in return. Let's see, what could I give you that you'd like...[wait tVoice]
+[k]
+
+＠Robin Hood
+[tVoice ValVoice_200300 0_V080]
+...Hmm. It won't be much help in battle, but I guess you could always sell it for travel fare.[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠Robin Hood
+[tVoice ValVoice_200300 0_V090]
+Here ya go, a little something from your humble squire. It ain't much, but I hope you like it.[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[equipSet C 9805220 1 ]
+[wait equipSet C]
+[charaFace C 0]
+[charaFadein C 0.5 0,-70]
+[wt 2.0]
+[charaFadeout C 0.4]
+[wt 0.5]
+
+？1：...Silver coins?
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Robin Hood
+[tVoice ValVoice_200300 0_V100]
+Yup. A little something to commemorate the fall of a certain wicked feudal lord. Said they crushed all the other silver coins that'd been in circulation around there to make 'em.[wait tVoice]
+[k]
+
+＠Robin Hood
+[tVoice ValVoice_200300 0_V110]
+Nothin' to do with me, of course, but some village girl I'd happened to meet insisted I take it.[wait tVoice]
+[k]
+
+＠Robin Hood
+[tVoice ValVoice_200300 0_V120]
+It might've been fleeting, but these coins were still made to celebrate a victory, so I figure they oughta at least be a good luck charm.[wait tVoice]
+[k]
+
+？2：How come you got all quiet earlier?
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Robin Hood
+[tVoice ValVoice_200300 0_V130]
+I wasn't being quiet. I was just preoccupied with something. Like I said, you kinda took me by surprise.[wait tVoice]
+[k]
+
+＠Robin Hood
+[tVoice ValVoice_200300 0_V140]
+See, something kinda similar happened to me in the past.[wait tVoice]
+[k]
+
+
+[messageOff]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[charaSet A 98110700 1 "Robin Hood_Monotone"]
+[charaSet C 98024100 1 Girl]
+[charaFilter C silhouette 00000000]
+
+
+[fowardEffect bit_talk_rain01]
+
+[wipeFilter cinema 0.5 0]
+
+[scene 20823]
+
+[charaTalk C]
+[charaFadein C 0.4 1]
+
+
+[fadein black 1.0]
+[wait fade]
+
+
+[wt 2.0]
+[se ad59]
+[seVolume ad59 0 0.6]
+[charaFadeout C 0.7]
+[wt 0.5]
+[seStop ad59 1.0]
+[wt 1.0]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 1]
+[wt 2.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[wipeOff]
+[fowardEffectStop bit_talk_rain01]
+
+[charaFadeout A 0.1]
+
+[wt 1.0]
+
+[charaSet A 2003001 1 "Robin Hood"]
+[charaSet C 98024100 1 Girl]
+
+[scene 20820]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_2 0.5]
+
+[fadein black 1.5]
+[wait fade]
+
+＠Robin Hood
+[tVoice ValVoice_200300 0_V150]
+It was a special day then, too. I was just passing through when someone stopped me outta nowhere.[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 1]
+＠Robin Hood
+[tVoice ValVoice_200300 0_V160]
+But hey, what're we doing out here in the middle of the woods on Valentine's, anyway![wait tVoice]
+[k]
+
+＠Robin Hood
+[tVoice ValVoice_200300 0_V170]
+What say we head back to Chaldea? It's not a real celebration unless you're really living it up, after all.[wait tVoice]
+[k]
+
+＠Robin Hood
+[tVoice ValVoice_200300 0_V180]
+Then when you're done, you go back to your room and bask in the aftermath. That's the best way to enjoy these things, Master.[wait tVoice]
+[k]
+
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+[soundStopAll]
+[end]

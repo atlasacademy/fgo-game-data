@@ -1,0 +1,223 @@
+
+＄94-03-35-14-0-0
+
+[charaSet A 2006001 1 David]
+
+[soundStopAll]
+[bgm BGM_EVENT_5 1.0]
+[scene 10310]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 6]
+
+[fadein black 2]
+[wait fade]
+
+[wt 2.0]
+
+？1：Something seems off...
+？2：I can feel someone here...
+
+？！
+
+
+＠???
+[tVoice ValVoice_200600 0_V010]
+...[wait tVoice]
+[k]
+
+？1：There it is again...
+？2：It feels like someone's watching me...
+
+？！
+
+[charaFace A 4]
+
+＠???
+[tVoice ValVoice_200600 0_V020]
+I can't believe it. I never planned for a situation like this.[wait tVoice]
+[k]
+
+＠???
+[tVoice ValVoice_200600 0_V030]
+[&He:She] really is too modest for [&his:her] own good. Oh well, guess I'll just have to float [&him:her] a lifeboat.[wait tVoice]
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_5 0.3]
+
+[se ad60]
+[charaFadeout A 0.4]
+[wt 1.0]
+[seStop ad60 0.3]
+
+[bgm BGM_EVENT_2 0.3]
+
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠David
+[tVoice ValVoice_200600 0_V040]
+Hey there, [%1]. How's it going?[sr]You look like you're doing well.[wait tVoice]
+[k]
+
+[flag MALE false]
+[flag FEMALE false]
+
+[selectionUse masterMale]
+？1：Hello.
+[flag MALE true]
+？2：Today looks to be another great day.
+[flag MALE true]
+
+？！
+
+[selectionUse masterFemale]
+？1：Hello.
+[flag FEMALE true]
+？2：Today looks to be another great day.
+[flag FEMALE true]
+
+？！
+
+[charaFace A 0]
+＠David
+[tVoice ValVoice_200600 0_V050]
+No need to be so formal. Today is a wonderful day! It's commercialized, systematic... Everything I could ask for.[wait tVoice]
+[k]
+
+＠David
+[tVoice ValVoice_200600 0_V060]
+Valentine's, was it? It originated in the Mediterranean, and developed into a commercial endeavor in the Far East.[wait tVoice]
+[k]
+
+＠David
+[tVoice ValVoice_200600 0_V070]
+One could even call it a glorious fusion of cultures. I find it especially interesting how it centers on a sweet derived from South American cacao beans.[wait tVoice]
+[k]
+
+＠David
+[tVoice ValVoice_200600 0_V080]
+So all together, we have the Mediterranean...the Far East...and South America. What a greed[line 2]I mean, glorious holiday. It's practically taken the whole world by storm.[wait tVoice]
+[k]
+
+
+＠David
+[tVoice ValVoice_200600 0_V090]
+Huh? [tdelay 1 0.5 1][charaFace A 1][delay -]Of course I accept Valentine's Day. I think it's great. Really great.[wait tVoice]
+[k]
+
+[delayStop 1]
+
+＠David
+[tVoice ValVoice_200600 0_V100]
+Whether one chooses to express one's daily gratitude, or confess a love one's been harboring in secret...[wait tVoice]
+[k]
+
+＠David
+[tVoice ValVoice_200600 0_V110]
+It's a day to say how we really feel, right? It's so...efficient. Just the sort of systematic endeavor I like.[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠David
+[tVoice ValVoice_200600 0_V120]
+Honestly, I wouldn't mind if we celebrated it at least once a week, but oh well. Modesty in all things, as they say.[wait tVoice]
+[k]
+
+＠David
+[tVoice ValVoice_200600 0_V130]
+That goes for business, contracts, war, and of course, love.[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠David
+[tVoice ValVoice_200600 0_V140]
+Which is why, thoughtful as I am, I never forget to return a kindness. You gave me chocolate this morning, right? So I got this for you.[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[equipSet B 9805230 1 ]
+[wait equipSet B]
+[charaFace B 0]
+[charaFadein B 0.5 0,-70]
+[wt 2.0]
+[charaFadeout B 0.4]
+[wt 0.5]
+
+？1：Uh... Th-thank you, King David...
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠David
+[tVoice ValVoice_200600 0_V150]
+Oh wow, you're actually shaking in gratitude. Why, you're like a little lost lamb separated from [&his:her] herd.[wait tVoice]
+[k]
+
+？2：(Lost for words)
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠David
+[tVoice ValVoice_200600 0_V160]
+Hm? So moved you can't even speak, huh. I knew you were a model of modesty. Mmm, how virtuous.[wait tVoice]
+[k]
+
+？！
+
+＠David
+[tVoice ValVoice_200600 0_V170]
+But there's no need to make a big deal about it. Keeping it cool makes it easier for me to do the same.[wait tVoice]
+[k]
+
+[branch _branchEnd MALE 1]
+[branch _isFemale FEMALE 1]
+
+[label _isFemale]
+
+＠David
+[tVoice ValVoice_200600 0_V180]
+That said, if you insist on being my new Abishag, I'd have no problem with that whatsoever.[wait tVoice]
+[k]
+
+＠David
+[tVoice ValVoice_200600 0_V190]
+In that case, why don't we go somewhere a little more private? Hm? What's that? I'm as smooth a talker as ever, but I don't seem like I'm joking?[wait tVoice]
+[k]
+
+
+
+
+＠David
+[tVoice ValVoice_200600 0_V200]
+Hahaha, what a thing to say. Hahaha.[tdelay 1 4.2 1][charaFace A 1][se ad186][backEffect bit_talk_41 -23,168][delay -][sr]Of course I'm not joking![wait tVoice]
+[k]
+
+[delayStop 1]
+[label _branchEnd]
+
+
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,437 @@
+
+＄94-03-35-05-1-1
+
+[soundStopAll]
+
+[charaSet A 6031000 1 Osakabehime]
+[charaSet B 3033000 1 Ortlinde]
+[charaSet C 3033001 1 Hildr]
+[charaSet D 3033002 1 Thrúd]
+[charaSet E 99502600 1 Mash]
+[charaSet F 5042000 1 "Murasaki Shikibu"]
+[charaSet G 5005001 1 Andersen]
+[charaSet H 5009000 1 Effect]
+[charaSet I 5009000 1 Effect]
+[charaSet J 98115000 1 Effect]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_41]
+
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 70500]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.4]
+
+[se ad7]
+[charaPut H 1]
+[charaFace A 2]
+[charaMoveScale A 1.1 0.2]
+[charaMove A 0,10 0.2]
+[charaFadeout A 0.2]
+[wt 0.2]
+[charaPut H 1200,1200]
+[wt 0.3]
+
+[se bac52]
+[charaScale J 0.8]
+[charaPut J 245,30]
+[charaEffect J bit_talk_14]
+[wt 0.25]
+
+[se bac53]
+[charaScale I 0.8]
+[charaPut I -270,-170]
+[charaEffect I bit_talk_14]
+[wt 0.25]
+
+[se bac18]
+[flashin once 0.1 0.5 FFFFFF80 FFFFFF00]
+[wt 1.0]
+
+[charaPut I 1200,1200]
+[charaEffectStop I bit_talk_14]
+
+
+[charaTalk depthOff]
+[charaDepth B 6]
+[charaDepth C 4]
+
+[charaTalk off]
+[se ad54]
+[seStop ad54 0.4]
+[charaFace B 6]
+[charaFace C 2]
+[charaFadein B 0.1 -300,20]
+[charaFadein C 0.1 300,20]
+[charaMove B -300,10 0.4]
+[charaMove C 300,10 0.4]
+[wt 0.8]
+
+[se ad7]
+[charaPut H 1]
+[charaMoveScale B 1.2 0.2]
+[charaMoveScale C 1.2 0.2]
+[charaMove B -310,20 0.2]
+[charaMove C 310,20 0.2]
+[charaFadeout B 0.2]
+[charaFadeout C 0.2]
+[wt 0.4]
+
+
+[charaTalk on]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[wt 0.3]
+
+[se ad7]
+[charaMoveScale D 1.2 0.2]
+[charaMove D 0,10 0.2]
+[charaFadeout D 0.2]
+[wt 0.2]
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_41]
+[wt 0.4]
+
+
+[se bac141]
+[backEffect bit_bolg_01y]
+[wt 0.3]
+
+[se bac142]
+[effect bit_bolg_02y]
+[wt 0.3]
+
+[se bac143]
+[se bac18]
+[se bac7]
+[charaPut I 0,-50]
+[charaEffect I bit_bolg_03y]
+[wt 0.1]
+[flashin once 0.1 0.1 FFFF3380 FFFF3300]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+[se ad20]
+[wt 2.5]
+
+
+[charaPut J 1200,1200]
+[charaPut I 1200,1200]
+[charaEffectStop J bit_talk_14]
+[charaEffectStop I bit_bolg_03y]
+[charaEffect J bit_talk_10_LowLevel]
+
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaScale B 1.0]
+[charaScale C 1.0]
+[charaScale D 1.0]
+[charaScale H 1.0]
+[charaScale I 1.0]
+[charaScale J 1.0]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Ortlinde
+...Confirmed: The battle has concluded.[sr]Well done, everyone.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠Hildr
+Great work, team!
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[se ad39]
+[charaPut I 1]
+[charaEffect I bit_talk_warp]
+[wt 3.5]
+[seStop ad39 0.4]
+[wt 0.4]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠Mash
+Murasaki! The Cursed Book has taken physical form again!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠Murasaki Shikibu
+Right! Not to worry, I have this under control.[sr]Cursed Book, return to me!
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.2]
+
+
+[se adm20]
+[charaPut I 1]
+[charaEffectStop I bit_talk_warp]
+[fowardEffect bit_talk_22]
+[wt 1.5]
+[seStop adm20 1.0]
+[wt 2.5]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠Thrúd
+...It would seem the emergency has been resolved.[sr]Now then, if you will excuse us.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+＠Hildr
+Huh? I don't think it's completely resolved yet, Thrúd.
+[k]
+
+＠Hildr
+Andersen said this wasn't the right one, so doesn't that mean the original threat is still out there?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠Thrúd
+...[sr]...
+[k]
+
+[charaFace D 4]
+＠Thrúd
+...Then, the three of us will take a different route to search the library. We will report back if we detect any similar magical energy readings.
+[k]
+
+[charaFace D 0]
+＠Thrúd
+How does that sound, Master?
+[k]
+
+？1：It sounds great. Thanks!
+？2：That'd be a huge help.
+
+？！
+
+[messageOff]
+[charaFace D 1]
+[wt 1.2]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠Ortlinde
+Thrúd...
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠Hildr
+Did you just smile?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠Thrúd
+Of course not. Come, you two. Let's go.
+[k]
+
+[messageOff]
+[charaSpecialEffect D erasureReverse 1 1.0]
+[se ad677]
+[seVolume ad677 0 0.4]
+[wait charaSpecialEffect D]
+[seStop ad677 0.4]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+＠Hildr
+...Hmph. [wt 0.6][charaFace C 1]Well, see you later, Master!
+[k]
+
+[messageOff]
+[charaSpecialEffect C erasureReverse 1 1.0]
+[se ad677]
+[seVolume ad677 0 0.4]
+[wait charaSpecialEffect C]
+[seStop ad677 0.4]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.8]
+
+[charaFace B 1]
+[wt 1.0]
+
+[charaSpecialEffect B erasureReverse 1 1.0]
+[se ad677]
+[seVolume ad677 0 0.4]
+[wait charaSpecialEffect B]
+[seStop ad677 0.4]
+[wt 1.0]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠Andersen
+Splitting your forces, huh. Not a bad idea. I don't know if they'll be able to recover any cursed books...
+[k]
+
+＠Andersen
+...but I doubt those three will have any trouble neutralizing them if they turn into monsters again.
+[k]
+
+[charaFace G 4]
+＠Andersen
+All that aside...
+[k]
+
+＠Andersen
+If all three Valkyries are capable of materializing at the same time, why don't they do so more often?
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠Mash
+Oh, I think I can answer that one.
+[k]
+
+＠Mash
+It's because having all three of them materialize at once uses an excessive amount of magical energy, thanks to their unique Spirit Origin Ascension pattern.
+[k]
+
+＠Mash
+At least, that's what Da Vinci said.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠Andersen
+...I see. Well, we can't have them overexerting themselves, I suppose.
+[k]
+
+[messageOff]
+[charaFace G 4]
+[wt 1.0]
+
+[charaFace G 2]
+＠Andersen
+Well, come on then. We need to hurry up and check the books everyone else is returning too!
+[k]
+
+？1：Right on!
+
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+？2：It'd be great if the original's here in the library.
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠Mash
+Yes, it would...
+[k]
+
+＠Mash
+There's a distinct possibility that it's hiding among the books that were lent out from the library...
+[k]
+
+[charaFace E 7]
+＠Mash
+But if we check each and every one of them,[sr]we're bound to find it eventually!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+？！
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠Murasaki Shikibu
+Very well! Let us be on our way!
+[k]
+
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

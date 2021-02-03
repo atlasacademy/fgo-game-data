@@ -1,0 +1,474 @@
+
+
+＄94-03-35-32-9-0
+
+
+
+[soundStopAll]
+[charaSet A 11006001 1 Salieri_Animations]
+[charaSet C 11006001 1 Salieri]
+[charaSet D 4017001 1 Marie]
+[charaSet E 1026001 1 d'Eon]
+
+[equipSet H 9806850 1 "Valentine's CE"]
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66600]
+[branch lblConf]
+[label lblNotClear]
+[scene 10310]
+[label lblConf]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 1.4]
+
+
+？1：Salieri!
+？2：There you are!
+
+？！
+
+
+[charaFace C 7]
+＠Salieri
+[tVoice ValVoice_1100600 0_V010]
+...Master.[wait tVoice]
+[k]
+
+
+[charaFace C 0]
+
+＠Salieri
+[tVoice ValVoice_1100600 0_V020]
+If you are here to see me...then you must be in need of my power.[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace C 8]
+[bgmStop BGM_EVENT_77 1.0]
+[wt 1.0]
+[charaFace C 2]
+
+[se ad632]
+[charaEffect C bit_talk_lightning_01r]
+[wt 1.5]
+
+[se ad29]
+[charaChange C 11006000 0 fade 1.0]
+[wait charaChange C]
+[seStop ad632 1.5]
+[wt 1.5]
+
+[bgm BGM_EVENT_48 0.1]
+
+＠Salieri
+[tVoice ValVoice_1100600 0_V030]
+What would you have me kill?[wait tVoice]
+[k]
+
+＠Salieri
+[tVoice ValVoice_1100600 0_V040]
+Tell me what you wish dead and it is as good as done.[wait tVoice]
+[k]
+
+[charaFace C 1]
+
+
+＠Salieri
+[tVoice ValVoice_1100600 0_V050]
+Which far-off land are we going to today?[sr]Or will we be using that simulator device instead?[wait tVoice]
+[k]
+
+？1：Nothing like that.
+
+[charaFace C 0]
+
+＠Salieri
+[tVoice ValVoice_1100600 0_V060]
+Oh...?[wait tVoice]
+[k]
+
+？2：That's not what today is about...
+
+[charaFace C 0]
+
+＠Salieri
+[tVoice ValVoice_1100600 0_V070]
+I see.[wait tVoice]
+[k]
+
+？！
+
+[messageOff]
+[se ad596]
+[wt 0.5]
+[bgmStop BGM_EVENT_48 1.0]
+[charaEffectStop C bit_talk_lightning_01r]
+[wt 1.0]
+
+[charaPut A 1]
+[charaScale A 1.3]
+[se ad29]
+[charaEffect A bit_talk_31]
+[wt 0.7]
+
+[charaEffectStop A bit_talk_31]
+[charaChange C 11006001 0 fade 1.0]
+[wait charaChange C]
+[wt 2.0]
+[charaFace C 8]
+
+＠Salieri
+[tVoice ValVoice_1100600 0_V080]
+...[sr]...[wait tVoice]
+[k]
+
+[charaFace C 0]
+
+＠Salieri
+[tVoice ValVoice_1100600 0_V090]
+Then what is your business with me, Master?[wait tVoice]
+[k]
+
+？1：Here!
+？2：Happy Valentine's Day!
+
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[charaFace C 13]
+
+＠Salieri
+[tVoice ValVoice_1100600 0_V100]
+...?[wait tVoice]
+[k]
+
+[bgm BGM_EVENT_11 0.1]
+[charaFace C 9]
+
+＠Salieri
+[tVoice ValVoice_1100600 0_V110]
+Master?[wait tVoice]
+[k]
+
+＠Salieri
+[tVoice ValVoice_1100600 0_V120]
+What is this? Tell me, what is it?[wait tVoice]
+[k]
+
+
+＠Salieri
+[tVoice ValVoice_1100600 0_V130]
+Cioccolata?[wait tVoice]
+[k]
+
+＠Salieri
+[tVoice ValVoice_1100600 0_V140]
+I suppose it would provide some magical energy,[sr]but that can't be the only reason why you would give me something like this. Why did you do it?[wait tVoice]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.0]
+[charaFace C 8]
+[wt 1.0]
+[charaFace C 2]
+
+＠Salieri
+[tVoice ValVoice_1100600 0_V150]
+...Have you forgotten who I am?[wait tVoice]
+[k]
+
+＠Salieri
+[tVoice ValVoice_1100600 0_V160]
+I am death. I am darkness. I exist only to kill.[wait tVoice]
+[k]
+
+[bgm BGM_EVENT_49 0.1]
+
+＠Salieri
+[tVoice ValVoice_1100600 0_V170]
+I was given form solely to kill one man, yet now,[sr]I have materialized as a means for you to slaughter your enemies.[wait tVoice]
+[k]
+
+[branchQuestNotClear lblNotClear2 3000125 3]
+
+＠Salieri
+[tVoice ValVoice_1100600 0_V180]
+Perhaps things would have been different with the manifestation of me you met in that Lostbelt, but at any rate...[wait tVoice]
+[k]
+
+[label lblNotClear2]
+
+＠Salieri
+[tVoice ValVoice_1100600 0_V190]
+Cease this madness now, Master.[wait tVoice]
+[k]
+
+[messageOff]
+[se ad632]
+[charaEffect C bit_talk_lightning_01r]
+[wt 1.5]
+
+[se ad29]
+[charaChange C 11006000 0 fade 1.0]
+[wait charaChange C]
+[charaEffectStop C bit_talk_lightning_01r]
+[seStop ad632 1.5]
+[wt 1.5]
+
+＠Salieri
+[tVoice ValVoice_1100600 0_V200]
+I...[wait tVoice]
+[k]
+
+[charaFace C 1]
+
+＠Salieri
+[tVoice ValVoice_1100600 0_V210]
+I...[wait tVoice]
+[k]
+
+[messageOff]
+[se ad632]
+[charaEffect C bit_talk_charge_red]
+[wt 1.5]
+
+[se ad574]
+[flashin once 0.2 0.2 80000090 80000090]
+[wt 0.3]
+
+[charaChange C 11006002 0 fade 1.0]
+[wait charaChange C]
+[seStop ad632]
+[charaEffectStop C bit_talk_charge_red]
+[wt 2.0]
+
+[charaFace C 1]
+＠Salieri
+[tVoice ValVoice_1100600 0_V220]
+I am death! I am the one who will kill the man who was loved by God! That is how I MUST be![wait tVoice]
+[k]
+
+
+＠Salieri
+[tVoice ValVoice_1100600 0_V230]
+My very body is a bitter wail! It is a wildfire that has razed all to the ground. It is the darkness lurking within every disgraceful human![wait tVoice]
+[k]
+
+
+
+？1：Salieri[line 2]
+
+？！
+
+
+＠Salieri
+[f large][tVoice ValVoice_1100600 0_V240]Who is that?[wait tVoice]
+[k]
+
+＠Salieri
+[tVoice ValVoice_1100600 0_V250]
+O[messageShake 0.01 5 5 1.0]h, ohhh...![sr]Ohhhhhh...!!![wait tVoice]
+[k]
+
+＠Salieri
+[tVoice ValVoice_1100600 0_V260]
+Ohh, I...![wait tVoice]
+[k]
+
+＠Salieri
+[tVoice ValVoice_1100600 0_V270]
+Antonio Salieri is dead! Even now, not so much as a semblance of his soul will ever walk this Earth again![wait tVoice]
+[k]
+
+[messageOff]
+[charaFace C 0]
+[wt 1.0]
+
+＠Salieri
+[tVoice ValVoice_1100600 0_V280]
+...Do not make this mistake again, Master.[wait tVoice]
+[k]
+
+＠Salieri
+[tVoice ValVoice_1100600 0_V290]
+You cannot treat me like a person. It's not right.[wait tVoice]
+[k]
+
+[messageOff]
+[charaSpecialEffect C erasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect C]
+[bgmStop BGM_EVENT_49 1.5]
+[wt 1.5]
+
+＠Salieri
+[tVoice ValVoice_1100600 0_V300]
+That's the one thing...[wait tVoice]
+[k]
+
+＠Salieri
+[tVoice ValVoice_1100600 0_V310]
+...you cannot do...[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout C 0.1]
+
+
+[wt 2.0]
+
+
+
+[wipeFilter cinema 0.5 0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+＠
+Some time later...
+[k]
+
+[messageOff]
+[wt 1.0]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+
+[bgm BGM_EVENT_94 0.1]
+[wt 1.0]
+
+[charaFace D 1]
+[wt 1.0]
+
+[cameraMove 0.5 0,45 1.0]
+[wt 1.0]
+[cameraHome 1.0]
+[wait camera]
+[wt 1.3]
+
+[charaMoveReturn D 10,-50 0.5]
+[wait charaMoveReturn D]
+[charaMoveReturn D -10,-50 0.5]
+[wait charaMoveReturn D]
+[wt 1.0]
+
+[charaFace D 4]
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.4 0,-50]
+[wt 1.4]
+
+[charaFace E 2]
+[wt 1.0]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+[wt 1.1]
+
+[charaMoveReturn D 0,-60 0.3]
+[wt 0.5]
+
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFaceFade D 1 0.5]
+[wt 2.0]
+
+[bgmStop BGM_EVENT_94 1.0]
+[charaFadeout D 0.4]
+[wt 2.4]
+
+[bgm BGM_EVENT_29 0.1]
+
+
+＠
+You receive a strange and mysterious gift from Maria...
+[k]
+
+＠
+There is no particular reason for it,[sr]nor is it even clear who actually sent it.
+[k]
+
+
+＠
+On paper, it looks to be a gift from Maria, with her evasive tongue and outstandingly gleaming smile.
+[k]
+
+
+＠
+But, knowing you...I'm sure you'll understand.
+[k]
+
+
+[messageOff]
+[se bas2]
+[charaFace H 0]
+[charaFadein H 0.5 0,-70]
+[wt 2.0]
+
+
+＠
+It's a conductor's baton. One so inky black it looks as though it's been scorched by wildfire.
+[k]
+
+
+＠
+Maria would never give you anything like this.[sr]Neither would I. And there's the rub.
+[k]
+
+
+＠
+However it managed to get to you...
+[k]
+
+＠
+...you can tell it's a present from him.
+[k]
+
+
+＠
+Good grief. He couldn't have gone about it more roundabout way if he'd tried.
+[k]
+
+
+[messageOff]
+[wt 1.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_29 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

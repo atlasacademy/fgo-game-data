@@ -1,0 +1,220 @@
+
+＄94-03-35-21-3-0
+
+[charaSet A 3001002 1 "Cú Chulainn"]
+
+[soundStopAll]
+[bgm BGM_EVENT_2 0.1]
+
+[scene 10310]
+
+[fadein black 2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+＠Cú Chulainn
+[tVoice ValVoice_300100 0_V010]
+Hey, morning, Master. I heard you wanted to see me?[wait tVoice]
+[k]
+
+＠Cú Chulainn
+[tVoice ValVoice_300100 0_V020]
+No need to tell me what this is about. Today's that holiday where we show how much we appreciate each other with gifts, right?[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+＠Cú Chulainn
+[tVoice ValVoice_300100 0_V030]
+I got something for you too, so that makes us even. Heh, glad my gift's not gonna go to waste.[wait tVoice]
+[k]
+
+＠Cú Chulainn
+[tVoice ValVoice_300100 0_V040]
+Here you go, my gift to you. Not too heavy, not too light. Just the right size, don't you think?[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[equipSet B 9805390 1 ]
+[wait equipSet B]
+[charaFace B 0]
+[charaFadein B 0.5 0,-70]
+[wt 2.0]
+[charaFadeout B 0.4]
+[wt 0.5]
+
+[flag MALE false]
+[flag FEMALE false]
+
+[selectionUse masterMale]
+？1：You nailed it.
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[flag MALE true]
+
+＠Cú Chulainn
+[tVoice ValVoice_300100 0_V050]
+'Course I did. You don't last too long as a warrior if you can't tell what other people are thinking.[wait tVoice]
+[k]
+
+＠Cú Chulainn
+[tVoice ValVoice_300100 0_V060]
+'Sides, I might not be as crazy about 'em as Fergus, but as they say, there's three things heroes like: song, wine, and women.[wait tVoice]
+[k]
+
+？2：You're being real straightforward about this!
+
+[flag MALE true]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠Cú Chulainn
+[tVoice ValVoice_300100 0_V070]
+You think? I thought I was being pretty considerate, all things considered...[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠Cú Chulainn
+[tVoice ValVoice_300100 0_V080]
+Those earrings might not be much to look at, but I'm pretty attached to them.[wait tVoice]
+[k]
+
+＠Cú Chulainn
+[tVoice ValVoice_300100 0_V090]
+But, I guess you don't know about that. How could you?[wait tVoice]
+[k]
+
+？！
+
+[selectionUse masterFemale]
+？1：You nailed it.
+
+[flag FEMALE true]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Cú Chulainn
+[tVoice ValVoice_300100 0_V100]
+'Course I did. You don't last too long as a warrior if you can't tell what other people are thinking.[wait tVoice]
+[k]
+
+＠Cú Chulainn
+[tVoice ValVoice_300100 0_V110]
+'Sides, I might not be as crazy about 'em as Fergus, but as they say, there's three things heroes like: song, wine, and women.[wait tVoice]
+[k]
+
+？2：You're being real straightforward about this!
+
+[flag FEMALE true]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠Cú Chulainn
+[tVoice ValVoice_300100 0_V120]
+You think? I thought I was being pretty considerate, all things considered...[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠Cú Chulainn
+[tVoice ValVoice_300100 0_V130]
+Those earrings might not be much to look at, but I'm pretty attached to them.[wait tVoice]
+[k]
+
+＠Cú Chulainn
+[tVoice ValVoice_300100 0_V140]
+But, I guess you don't know about that. How could you?[wait tVoice]
+[k]
+
+？！
+
+[branch _isMale MALE 1]
+[branch _isFemale FEMALE 1]
+
+[label _isMale]
+[charaFace A 5]
+＠Cú Chulainn
+[tVoice ValVoice_300100 0_V150]
+But anyway, the real party's just getting started, partner. What do you say we head to the cafeteria![wait tVoice]
+[k]
+
+＠Cú Chulainn
+[tVoice ValVoice_300100 0_V160]
+Seems there's a bunch of ladies who'll be easy pickings up there. Let's see who can land the most![wait tVoice]
+[k]
+
+？1：You're on!
+
+？2：What if Scáthach's there?
+
+[charaFace A 1]
+＠Cú Chulainn
+[tVoice ValVoice_300100 0_V170]
+Hahahaha, seriously?[sr]...Then again, I guess it's not entirely impossible.[wait tVoice]
+[k]
+
+＠Cú Chulainn
+[tVoice ValVoice_300100 0_V180]
+Well, if it happens, it happens. If she is, we can go get shot down together.[wait tVoice]
+[k]
+
+＠Cú Chulainn
+[tVoice ValVoice_300100 0_V190]
+I'll be there to pick up your pieces when she's done with you. Well, after I pick up my own, anyway.[wait tVoice]
+[k]
+
+？！
+
+[branch _branchEnd]
+
+[label _isFemale]
+
+[charaFace A 1]
+＠Cú Chulainn
+[tVoice ValVoice_300100 0_V200]
+All right then, I'll make sure to savor this stuff later. Usually I prefer wine over sweets, but I'll make an exception just this once.[wait tVoice]
+[k]
+
+＠Cú Chulainn
+[tVoice ValVoice_300100 0_V210]
+A good Master deserves a good battlefield, and even without wine, this stuff oughta do the trick nicely.[wait tVoice]
+[k]
+
+＠Cú Chulainn
+[tVoice ValVoice_300100 0_V220]
+Guess I'll just have to pass on the wine until you're old enough to drink it yourself, huh?[wait tVoice]
+[k]
+
+[label _branchEnd]
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+[soundStopAll]
+[end]

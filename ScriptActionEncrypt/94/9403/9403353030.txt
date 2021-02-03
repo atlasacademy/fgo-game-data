@@ -1,0 +1,212 @@
+
+＄94-03-35-30-3-0
+
+[soundStopAll]
+[charaSet A 1035001 1 Diarmuid]
+[charaSet B 5012001 1 Effect]
+
+[equipSet H 9807030 1 "Valentine's CE"]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66700]
+[branch lblConf]
+[label lblNotClear]
+[scene 60300]
+[label lblConf]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠Diarmuid
+[tVoice ValVoice_103500 0_V010]
+Oh, [%1].[sr]There you are.[wait tVoice]
+[k]
+
+
+＠Diarmuid
+[tVoice ValVoice_103500 0_V020]
+I hope you do not mind that I have been looking for you. I, Diarmuid Ua Duibhne, come bearing gifts.[wait tVoice]
+[k]
+
+？1：Huh? Slow down.
+？2：I still haven't given you my[line 2]
+
+？！
+
+[messageOff]
+[charaFace A 3]
+[wt 0.5]
+[charaMoveReturn A 10,0 0.5]
+[wait charaMove A]
+[charaMoveReturn A -10,0 0.5]
+[wait charaMove A]
+[wt 1.0]
+
+[charaFace A 0]
+
+
+＠Diarmuid
+[tVoice ValVoice_103500 0_V030]
+Lady Da Vinci has told me about this day,[sr]and what it signifies.[wait tVoice]
+[k]
+
+＠Diarmuid
+[tVoice ValVoice_103500 0_V040]
+I am therefore honor bound to present you with a token of my loyalty, devotion, and affection. I hope you will accept it.[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠Diarmuid
+[tVoice ValVoice_103500 0_V050]
+...Here you are, my [&lord:lady].[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se bas2]
+[charaFace H 0]
+[charaFadein H 0.5 0,-70]
+[wt 2.0]
+
+[charaFadeout H 0.4]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Diarmuid
+[tVoice ValVoice_103500 0_V060]
+It is a Mystical fruit. Though perhaps[sr]“fae fruit” would be more fitting here.[wait tVoice]
+[k]
+
+
+＠Diarmuid
+[tVoice ValVoice_103500 0_V070]
+This is the very fruit that beautifully adorns the Otherworld, a place far beyond the sea, which is depicted in the immrama.[wait tVoice]
+[k]
+
+＠Diarmuid
+[tVoice ValVoice_103500 0_V080]
+It comes from a plant found by the hero Brân and his companions under the guidance of my adoptive father, the sea-god Manannán[line 2][wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠Diarmuid
+[tVoice ValVoice_103500 0_V090]
+...[sr]...[wait tVoice]
+[k]
+
+＠Diarmuid
+[tVoice ValVoice_103500 0_V100]
+...No, that was just a poem, wasn't it. Well, even if my father did not truly offer guidance...here.[wait tVoice]
+[k]
+
+？1：This apple looks delicious.
+？2：Thank you!
+
+？！
+
+[charaFace A 1]
+
+
+＠Diarmuid
+[tVoice ValVoice_103500 0_V110]
+I know you are always busy fighting one battle or another, my [&lord:lady], so I hope this gift brings you at least a moment's respite.[wait tVoice]
+[k]
+
+？1：Now I've got something for you! Here!
+
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[charaFace A 2]
+[wt 1.0]
+[charaFace A 3]
+
+＠Diarmuid
+[tVoice ValVoice_103500 0_V120]
+Oh... This is...[wait tVoice]
+[k]
+
+＠Diarmuid
+[tVoice ValVoice_103500 0_V130]
+I-I don't know what to say...[wait tVoice]
+[k]
+
+
+＠Diarmuid
+[tVoice ValVoice_103500 0_V140]
+I knew you would bestow a gift upon me, yet I still find myself overcome with gratitude.[wait tVoice]
+[k]
+
+＠Diarmuid
+[tVoice ValVoice_103500 0_V150]
+This is truly a far greater honor than I deserve.[sr]I cannot thank you enough for your kindness.[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 2]
+[bgmStop BGM_EVENT_77 0.1]
+[wt 1.0]
+
+[cameraMove 0.2 0,-60 1.2]
+[se ad186]
+[wt 0.2]
+[charaEffect B bit_talk_41]
+
+
+＠Diarmuid
+[tVoice ValVoice_103500 0_V160]
+[f large]...Now then![wait tVoice]
+[k]
+
+[bgm BGM_EVENT_94 0.1]
+
+
+＠Diarmuid
+[tVoice ValVoice_103500 0_V170]
+I shall be sure to eat this chocolate myself, no matter how many I must slay in its defense! Even if it should cost me my life![wait tVoice]
+[k]
+
+[charaEffectStop B bit_talk_41]
+
+？1：I told you not to overthink it!
+？2：Wait. Didn't we go through this same routine before...?
+
+？！
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_94 2.0]
+[wait fade]
+[soundStopAll]
+[end]

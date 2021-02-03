@@ -1,0 +1,282 @@
+
+＄94-03-35-19-0-0
+
+[charaSet A 7008001 1 Beowulf]
+[charaSet B 98006000 1 "P.A. System"]
+[charaSet C 98006000 1 Enemy]
+[charaSet D 98002000 1 Fou]
+
+[soundStopAll]
+[bgm BGM_EVENT_3 0.1]
+
+[scene 20800]
+
+[fadein black 2]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+＠Beowulf
+[tVoice ValVoice_700800 0_V010]
+Take that![wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.5]
+
+[se bac10]
+[effect bit_talk_13]
+[wt 0.1]
+[charaShake C 0.01 2 2 0.5]
+[wt 0.3]
+
+[charaSpecialEffect C enemyErasure]
+[wt 0.5]
+[se ad18]
+[wt 1.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wt 0.5]
+
+＠[51d4ff]P.A. System[-]
+[tVoice ValVoice_700800 0_V020]
+[51d4ff]Enemy, defeated.[-][sr][51d4ff]All targets eliminated.[-][wait tVoice]
+[k]
+
+[charaFadeout C 0.1]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Beowulf
+[tVoice ValVoice_700800 0_V030]
+All right, another one down.[sr]Hey, Master, isn't it about time for you to eat?[wait tVoice]
+[k]
+
+＠Beowulf
+[tVoice ValVoice_700800 0_V040]
+Don't you think you oughta call it a day?[wait tVoice]
+[k]
+
+？1：Good idea.
+？2：Nice job out there!
+？！
+
+[charaFace A 1]
+
+＠Beowulf
+[tVoice ValVoice_700800 0_V050]
+Thanks. You too.[wait tVoice]
+[k]
+
+？1：On a different subject...
+？2：Here. It's chocolate.
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+[charaFace A 0]
+
+＠Beowulf
+[tVoice ValVoice_700800 0_V060]
+Hm? The hell's this?[sr]Chocolate? Why're you giving me chocolate?[wait tVoice]
+[k]
+
+＠Beowulf
+[tVoice ValVoice_700800 0_V070]
+...[sr]...[wait tVoice]
+[k]
+
+[charaFace A 2]
+＠Beowulf
+[tVoice ValVoice_700800 0_V080]
+Ohhh, right! This is what all those other Servants were so excited about![wait tVoice]
+[k]
+
+＠Beowulf
+[tVoice ValVoice_700800 0_V090]
+Van... Valen...[sr]Valiant Death Day![wait tVoice]
+[k]
+
+？1：Not even close.
+？！
+
+[charaFace A 0]
+＠Beowulf
+[tVoice ValVoice_700800 0_V100]
+Huh, really? Ah, whatever. Let me see this chocolate![wait tVoice]
+[k]
+
+[charaFace A 1]
+＠Beowulf
+[tVoice ValVoice_700800 0_V110]
+Hahaha, I'm gonna try some right now![wait tVoice]
+[k]
+
+
+[se ad217]
+[seStop ad217 0.5]
+
+＠Beowulf
+[tVoice ValVoice_700800 0_V120]
+Damn, that's sweet! Good stuff![wait tVoice]
+[k]
+
+＠Beowulf
+[tVoice ValVoice_700800 0_V130]
+Hm? What, was I not supposed to have any now?[sr]Ah, who cares about that? Hahahaha, let's see...[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠Beowulf
+[tVoice ValVoice_700800 0_V140]
+Since it's a special occasion and all, I think I'll give you a present, too. Hmm... Got it. Go wait for me in your room![wait tVoice]
+[k]
+
+[messageOff]
+
+[wipeout leftToRight 1.0 1.0]
+[wait wipe]
+
+[charaFadeout A 0.4]
+
+[wt 1.0]
+
+[scene 10400]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+＠Fou
+[tVoice ValVoice_700800 0_V150]
+Fou...[wait tVoice]
+[k]
+
+？1：I'm hungry...
+？！
+
+＠Fou
+[tVoice ValVoice_700800 0_V160]
+...![sr]Fou! Fou, fou![wait tVoice]
+[k]
+
+[charaFadeout D 0.1]
+[messageOff]
+
+[se ad8]
+[wait se ad8]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠Beowulf
+[tVoice ValVoice_700800 0_V170]
+Hey there. Sorry it took longer than I thought.[sr]Here![wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant]
+[wt 1.0]
+
+
+？1：Steak!?
+？！
+
+＠Beowulf
+[tVoice ValVoice_700800 0_V180]
+Hell yeah. That Emiya guy handled the garnish stuff, but I grilled the meat myself.[wait tVoice]
+[k]
+
+[wt 0.3]
+
+？1：This is so good!
+
+[charaFace A 1]
+
+＠Beowulf
+[tVoice ValVoice_700800 0_V190]
+Right on. Go ahead and dig in. Makes the trouble of hunting this bad boy all worth it![wait tVoice]
+[k]
+
+？2：Talk about a pick-me-up!
+
+[charaFace A 1]
+
+＠Beowulf
+[tVoice ValVoice_700800 0_V200]
+Well, grilling the meat's all I did. Boudica's the one who made the sauce![wait tVoice]
+[k]
+
+？！
+
+＠Beowulf
+[tVoice ValVoice_700800 0_V210]
+There ya go. You're really tearing into that meat. Nice job.[wait tVoice]
+[k]
+
+？1：By the way, what cut of meat was it?
+？！
+
+
+＠Beowulf
+[tVoice ValVoice_700800 0_V220]
+That'd be the throat. It's the tastiest, most muscular part, thanks to their breath attacks.[wait tVoice]
+[k]
+
+？1：...Wait. Breath attacks?
+
+？2：Uhh... What animal was this from again?
+？！
+
+[charaFace A 0]
+＠Beowulf
+[tVoice ValVoice_700800 0_V230]
+Hm?[wait tVoice]
+[k]
+
+＠Beowulf
+[tVoice ValVoice_700800 0_V240]
+Dragons breathe fire and stuff, right? That's why their throats are the most muscular and best tasting.[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠Beowulf
+[tVoice ValVoice_700800 0_V250]
+Seeing how much you enjoyed it makes all that effort worthwhile![wait tVoice]
+[k]
+
+？1：Oh well.
+？2：I can't deny that it's yummy!
+？！
+
+＠Beowulf
+[tVoice ValVoice_700800 0_V260]
+Go on, eat up![wait tVoice]
+[k]
+
+[messageOff]
+[fadeout white 1]
+[bgmStop BGM_EVENT_2 0.9]
+[wait fade]
+[soundStopAll]
+[end]
+

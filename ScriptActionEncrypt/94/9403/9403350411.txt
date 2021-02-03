@@ -1,0 +1,375 @@
+
+＄94-03-35-04-1-1
+
+[soundStopAll]
+
+[charaSet A 5005001 1 Andersen]
+[charaSet B 98002000 1 Fou]
+[charaSet C 5042000 1 "Murasaki Shikibu"]
+[charaSet D 99502600 1 Mash]
+[charaSet E 6031000 1 Osakabehime]
+[sceneSet H 10000 1]
+[charaSet I 5009000 1 Effect]
+[charaSet J 98115000 1 Effect]
+
+[charaScale H 1.01]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 70400]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[se bac30]
+[fowardEffect bit_talk_14]
+[wt 0.6]
+[seStop bac30 0.1]
+[se bac18]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF00]
+[wt 0.8]
+
+
+[se ad7]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 30,0]
+[charaMove C 1 0.2]
+[wt 0.6]
+
+[charaDepth I 10]
+[charaPut I 0,0]
+[charaEffect I bit_talk_pentagram_03]
+[wt 0.1]
+[se ad598]
+[wt 3.5]
+[charaPut I 1200,1200]
+[charaEffectStop I bit_talk_pentagram_03]
+
+
+[effect bit_talk_shot_02]
+[se bac19]
+[se bac20]
+[wt 0.12]
+[se bac19]
+[se bac20]
+[wt 0.12]
+[se bac19]
+[se bac20]
+[wt 0.12]
+[se bac19]
+[se bac20]
+[wt 0.12]
+[se bac19]
+[se bac20]
+[wt 0.4]
+
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[se bac16]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_3 1.0]
+[se ad22]
+[wt 2.5]
+
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Andersen
+It's over. Eh, you keep writing about certain things long enough, you're bound to go a little crazy from time to time.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Fou
+Fou. Fooou.[sr](Special Translation: You call this a LITTLE crazy?)
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[se ad39]
+[charaPut I 1]
+[charaEffect I bit_talk_warp]
+[wt 3.5]
+[seStop ad39 0.4]
+[wt 0.4]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+＠Murasaki Shikibu
+Don't worry, Osakabehime! I'll do my best to keep the Cursed Book's title out of sight while I recover it!
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[se adm20]
+[charaPut I 1]
+[charaEffectStop I bit_talk_warp]
+[fowardEffect bit_talk_22]
+[wt 1.5]
+[seStop adm20 1.0]
+[wt 2.5]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠Mash
+I've confirmed that you've recovered the Cursed Book.[sr]It does have a lot of magical energy...
+[k]
+
+[charaFace D 4]
+＠Mash
+...but it's still less than a quarter of the energy that was stolen. Which means this isn't the original, either...
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[wt 0.5]
+
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠Osakabehime
+(Sniff)...[sr](Sniff)...
+[k]
+
+[messageOff]
+[charaShake E 0.03 4 4 0.4]
+[wt 1.0]
+
+[charaFace E 8]
+＠Osakabehime
+Waaah! This is a nightmare! Not only did I make a complete baka of myself, I didn't even put up a good fight...
+[k]
+
+＠Osakabehime
+As if being too similar to her wasn't bad enough... I'm not even a good writer. All I've ever made is doujin...
+[k]
+
+＠Osakabehime
+I've never written any historic novels, let alone any masterpieces or classics... (Sniff)...
+[k]
+
+＠Osakabehime
+Why would Ma-chan want to keep a pale imitation like me around when [&he:she] could have the real thing with Murasaki-senpai...
+[k]
+
+＠Osakabehime
+(Sob)
+[k]
+
+？1：It's okay. Really.
+
+？！
+
+[charaFace E 9]
+＠Osakabehime
+(Sob)[sr]Ma-chan...?
+[k]
+
+？1：Nobody could ever replace you.
+？2：You're not an imitation of her at all.
+
+？！
+
+
+[se ade250]
+[bgm BGM_EVENT_2 0.4 0.5]
+[charaTalk H]
+[charaFadeTime H 0.1 0.4]
+＠J：Commentary
+[%1] spoke from the heart, without a hint of dishonesty.
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_2 0.4 1.0]
+[charaTalk E]
+[charaFace E 3]
+＠Osakabehime
+![messageShake 0.03 3 3 0.3]
+[k]
+
+＠Osakabehime
+Is that...Murasaki-senpai's strange, sort of automatic commentary track technique? The one that only says things that are true...?
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk depthOff]
+[charaDepth C 4]
+[charaDepth E 6]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace E 3]
+[charaFadein C 0.1 230,0]
+[charaFadein E 0.1 0]
+＠Murasaki Shikibu
+I call it Taizan Commentary Fest. Osakabehime, [&Lord:Lady][sr][%1] is right. You and I are nothing alike.
+[k]
+
+＠Murasaki Shikibu
+We may both like to put pen to paper to express our thoughts and feelings...
+[k]
+
+[charaFace C 1]
+＠Murasaki Shikibu
+...but in my mind, that only makes us comrades, regardless of our different time periods.
+[k]
+
+
+[charaTalk E]
+[charaFace E 8]
+＠Osakabehime
+W[messageShake 0.03 3 3 0.8]aaah! Paisen! Ma-chan!
+[k]
+
+[messageOff]
+[charaMove E -35,0 0.3]
+[wt 0.2]
+[se ad7]
+[charaShake C 0.03 2 2 0.2]
+[wt 0.8]
+
+＠Osakabehime
+Gomenasorry! I should never have acted up like that! But I'm really, really glad Ma-chan never saw that book's title!
+[k]
+
+[charaFace E 9]
+＠Osakabehime
+If [&he:she] had, I think my poor little princess kokoro would have brokoro into a million pieces... (Sniff)
+[k]
+
+
+[charaTalk C]
+[charaFace C 1]
+＠Murasaki Shikibu
+There, there. You have nothing to apologize for.[sr]This was all my fault to begin with.
+[k]
+
+
+[charaTalk E]
+[charaFace E 9]
+＠Osakabehime
+(Sniff) Paisen...
+[k]
+
+
+[charaTalk C]
+[charaFace C 1]
+[charaMoveReturn C 220,0 0.5]
+＠Murasaki Shikibu
+There, there.[wt 0.5][charaMoveReturn C 220,0 0.5]
+[k]
+
+？1：I'm glad everything worked out.
+？2：You two really are good friends, aren't you?
+
+？！
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Andersen
+Hey. In case you've forgotten, we're a long way from happily ever after here. We still haven't found the original Cursed Book, and we don't even know where to look.
+[k]
+
+[charaFace A 5]
+＠Andersen
+So come on, let's get moving. We can start by checking all the books those other Servants came here to return!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠Mash
+It's so nice of you to help us like this, Andersen!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Andersen
+Believe me, if there was someone else you could ask, I'd be gone in a heartbeat. But, in for a penny, in for a pound, as my colleague might say.
+[k]
+
+[charaFace A 2]
+＠Andersen
+...All right, how long are you gonna keep cuddling each other!? Let's go already!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFace E 0]
+[charaFadein C 0.1 220,0]
+[charaFadein E 0.1 -35,0]
+＠Murasaki Shikibu
+Okay!
+[k]
+
+[charaTalk E]
+[charaFace E 2]
+＠Osakabehime
+I-I still don't know what's going on here,[sr]but I'll come along too!
+[k]
+
+
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

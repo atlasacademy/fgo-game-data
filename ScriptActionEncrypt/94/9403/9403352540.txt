@@ -1,0 +1,454 @@
+
+＄94-03-35-25-4-0
+[soundStopAll]
+
+
+[charaSet A 1029002 1 Arthur]
+[charaSet B 98006200 1 "Fodder Enemy"]
+[equipSet G 9806230 1 "Valentine Craft Essence"]
+[charaSet H 5009000 1 "Effect Dummy"]
+
+[scene 20802]
+
+[fadein black 1.5]
+[wt 0.5]
+[se adm13]
+[seVolume adm13 0 0.1]
+[seVolume adm13 1.0 1.0]
+[wait fade]
+
+[wt 2.0]
+
+？1：...
+
+？！
+
+[seVolume adm13 2.0 0.6]
+
+[se ad27]
+[seVolume ad27 0.1 0.2]
+[wt 0.2]
+[se ad27]
+[seVolume ad27 0.4 0.3]
+
+[wt 1.5]
+
+＠???
+[tVoice ValVoice_102900 0_V010]
+...Try not to make any noise.[wait tVoice]
+[k]
+
+＠???
+[tVoice ValVoice_102900 0_V020]
+Soul Eaters have sharp hearing, and they're very territorial.[wait tVoice]
+[k]
+
+＠???
+[tVoice ValVoice_102900 0_V030]
+I don't know too much about them myself, but there's no harm in being careful.[wait tVoice]
+[k]
+
+＠???
+[tVoice ValVoice_102900 0_V040]
+Even simulated enemies still have some kick to them...[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.5]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 -32,0]
+[charaMove A 1 0.5]
+[wt 1.0]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V050]
+At least, that's what I'm told. So I think we should take every precaution.[wait tVoice]
+[k]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V060]
+What do you think, Master?[wait tVoice]
+[k]
+
+？1：There you are!!!
+
+[charaFace A 10]
+[charaMoveReturn A 0,7 0.2]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V070]
+Aah! [%1]!?[wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace A 4]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V080]
+(Keep it down! There really are Soul Eaters arou[line 2])[wait tVoice]
+[k]
+
+[seStop adm13 0.2]
+[se ad19]
+
+[wt 1.2]
+
+[charaFace A 11]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V090]
+...So much for staying unnoticed. I guess I have no choice but to defend myself now.[wait tVoice]
+[k]
+
+[charaFace A 8]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V100]
+I'm counting on you to help me, Master![wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V110]
+...Understood?[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+[charaFadeout A 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 1.0]
+[fadein black 0.3]
+[wait fade]
+
+[se bac137]
+[charaScale H 5.0]
+[charaRoll H 30 center]
+[charaEffect H bit_talk_Slash_red_01_L 50,0]
+[charaShake B 0.05 4 2 0.5]
+[wt 0.5]
+
+[se ad19]
+[wt 0.7]
+
+[se bac139]
+[charaScale H 5.0]
+[charaRoll H 330 center]
+[charaEffect H bit_talk_Slash_red_01 -50,0]
+[charaShake B 0.05 4 2 0.5]
+
+[se ad20]
+[wt 0.7]
+
+[charaScale H 1.0]
+[charaPut H 1]
+[charaSpecialEffect B enemyErasure 1 3]
+[wt 1.0]
+[se ad42]
+[wait charaSpecialEffect B]
+[wt 1.0]
+
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_3 1.0]
+[wait fade]
+
+[wt 2.0]
+
+[branch select01_end]
+
+？2：(There you are!)
+
+＠Arthur
+[tVoice ValVoice_102900 0_V120]
+Hm...?[wait tVoice]
+[k]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V130]
+What did you say? “There you are”?[wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace A 6]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V140]
+Yes, you did. I did indeed hear you.[wait tVoice]
+[k]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V150]
+...I see. Then you were looking for me, Master.[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V160]
+I'm sorry for making you come all this way to the simulator. Especially when I'm sure you have your hands full.[wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace A 0]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V170]
+...Why don't we head back to the Command Room for now. Okay?[wait tVoice]
+[k]
+
+
+
+[branch select02]
+
+？！
+
+[label select02]
+
+？1：(Nod)
+
+[charaFace A 6]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V180]
+There's a good [&man:lady].[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 1.5]
+[seStop adm13 1.5]
+[wait fade]
+[charaFadeout A 0.1]
+[wt 2.0]
+
+？2：Okay!
+
+[charaFace A 10]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V190]
+Ah! Not so lou[line 2][wait tVoice]
+[k]
+
+[seStop adm13 0.2]
+[se ad19]
+
+[wt 1.2]
+
+[charaFace A 11]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V200]
+...So much for staying unnoticed. I guess I have no choice but to defend myself now.[wait tVoice]
+[k]
+
+[charaFace A 8]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V210]
+I'm counting on you to help me, Master![wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V220]
+...Understood?[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+[charaFadeout A 0.1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 1.0]
+[fadein black 0.3]
+[wait fade]
+
+[se bac137]
+[charaScale H 5.0]
+[charaRoll H 30 center]
+[charaEffect H bit_talk_Slash_red_01_L 50,0]
+[charaShake B 0.05 4 2 0.5]
+[wt 0.5]
+
+[se ad19]
+[wt 1.2]
+
+[se bac139]
+[charaScale H 5.0]
+[charaRoll H 330 center]
+[charaEffect H bit_talk_Slash_red_01 -50,0]
+[charaShake B 0.05 4 2 0.5]
+
+[se ad20]
+[wt 0.5]
+
+[charaScale H 1.0]
+[charaPut H 1]
+[charaSpecialEffect B enemyErasure 1 3]
+[wt 1.0]
+[se ad42]
+[wait charaSpecialEffect B]
+[wt 1.0]
+
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_3 1.0]
+[wait fade]
+
+[wt 2.0]
+
+？！
+
+[label select01_end]
+
+[scene 10200]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V230]
+Good, we made it back safe.[wait tVoice]
+[k]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V240]
+Yes, I know. I've heard that simulation programs aren't as dangerous as Rayshifts...[wait tVoice]
+[k]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V250]
+...but, I still can't have you getting hurt.[wait tVoice]
+[k]
+
+？1：So hey, now that we're back...
+？2：Here! Happy Valentine's Day!
+
+[charaFace A 10]
+
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[wt 1.0]
+[charaFace A 11]
+[wt 0.5]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V260]
+This is...for me?[wait tVoice]
+[k]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V270]
+This is...[sr]Ahh, I see. Valentine's Day...[wait tVoice]
+[k]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V280]
+February 14th. Now that you mention it, that is today, isn't it.[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V290]
+Even during that Holy Grail War, I[line 2][wait tVoice]
+[k]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V300]
+I, um, I'm sorry. I'm not quite sure what to say. I always thought this day had nothing to do with me.[wait tVoice]
+[k]
+
+[charaFace A 12]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V310]
+No, no. Forgive me. I understand I should say how I truly feel.[wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace A 1]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V320]
+...Thank you, Master. This is a wonderful gift.[wait tVoice]
+[k]
+
+[charaFace A 6]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V330]
+I can't repay your kindness right now, but tomorrow morning, I promise to give you something very special in return.[wait tVoice]
+[k]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V340]
+I hope you can give me at least until then.[wait tVoice]
+[k]
+
+＠Arthur
+[tVoice ValVoice_102900 0_V350]
+Can I ask that of you, Master?[wait tVoice]
+[k]
+
+？1：Of course!
+？2：I can't wait to see it!
+
+？！
+
+[messageOff]
+[charaFadeout A 0.4]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 1.5]
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+
+[se bas2]
+[charaFace G 0]
+[charaFadein G 0.5 0,-70]
+
+[wt 2.0]
+
+[charaFadeout G 0.4]
+
+
+
+
+[wt 1.0]
+[soundStopAll]
+[end]

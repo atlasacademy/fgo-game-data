@@ -1,0 +1,227 @@
+
+＄94-03-35-02-1-1
+
+[soundStopAll]
+
+[charaSet A 2001000 1 Emiya]
+[charaSet B 5042000 1 "Murasaki Shikibu"]
+[charaSet C 99502600 1 Mash]
+[charaSet D 4011001 1 Boudica]
+[charaSet E 7016001 1 "Tamamo Cat"]
+[charaSet F 98002000 1 Fou]
+[charaSet I 5009000 1 Effect]
+[charaSet J 98115000 1 Effect]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+
+[bgm BGM_EVENT_3 0.1]
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 66700]
+[branch lblConf]
+[label lblNotClear]
+[scene 60300]
+[label lblConf]
+
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.4]
+
+[se bac1]
+[charaFace A 2]
+[charaMoveScale A 1.1 0.2]
+[charaMove A 0,5 0.2]
+[charaFadeout A 0.2]
+[wt 0.35]
+
+[se bac136]
+[effect bit_talk_v_slash01 0,0 H]
+[wt 0.5]
+[se bac137]
+[fowardEffect bit_talk_h_slash01 0,0 H]
+[wt 0.8]
+
+[se ad22]
+[wt 2.0]
+
+[bgmStop BGM_EVENT_3 1.0]
+[se ad7]
+[charaMoveScale A 1.0 0.2]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.8]
+
+＠Emiya
+...That oughta do it.
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[se ad39]
+[charaPut I 1]
+[charaEffect I bit_talk_warp]
+[wt 3.5]
+[seStop ad39 0.4]
+
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠Murasaki Shikibu
+Cursed Book, return to me!
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+[se adm20]
+[charaPut I 1]
+[charaEffectStop I bit_talk_warp]
+[fowardEffect bit_talk_22]
+[wt 1.5]
+[seStop adm20 1.0]
+[wt 2.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠Mash
+The Cursed Book has been recovered! It doesn't have much magical energy, so I'm guessing[line 2]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠Murasaki Shikibu
+Yes. It seems this was not the original Cursed Book. Fortunately, we can at least be certain that it was one with which the original shared its magical energy.
+[k]
+
+＠Murasaki Shikibu
+I apologize once again for all the trouble I've caused you, kind chefs.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFace E 0]
+[charaFadein D 0.1 2]
+[charaFadein E 0.1 0]
+＠Boudica
+Hahaha, if you think this is trouble, you obviously haven't been in many cafeterias! I'm still not sure what's going on here, but don't worry about us.
+[k]
+
+[charaFace D 3]
+＠Boudica
+Compared to you-know-who seeing Nero's face and going wild, Salieri acting up, one of Phantom's episodes, or Berserkers you can't reason with...
+[k]
+
+＠Boudica
+Well, let's just say we're used to things not always running smoothly around here.
+[k]
+
+
+[charaTalk E]
+[charaFace E 0]
+＠Tamamo Cat
+For sure. There's pretty much always something on fire in the kitchen, figuratively and literally.
+[k]
+
+[charaFace E 1]
+＠Tamamo Cat
+It's gonna take way more than a little flying book action to make us bat an eye.
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Emiya
+There you have it.
+[k]
+
+＠Emiya
+If you're in a hurry, Murasaki Shikibu,[sr]we won't keep you here...
+[k]
+
+[charaFace A 1]
+＠Emiya
+...but I hope you'll come back sometime for a more leisurely cup of tea when you can.
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+[wt 1.0]
+
+[charaFace B 1]
+＠Murasaki Shikibu
+Thank you, everyone. That sounds lovely.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Fou
+Fou!
+[k]
+
+？1：Next stop: the writer Servants' room!
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠Mash
+Understood!
+[k]
+
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

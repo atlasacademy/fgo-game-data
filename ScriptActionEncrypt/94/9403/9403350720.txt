@@ -1,0 +1,374 @@
+
+＄94-03-35-07-2-0
+
+[soundStopAll]
+
+[charaSet A 5005001 1 Andersen]
+[charaSet B 5042000 1 "Murasaki Shikibu"]
+[charaSet C 98002000 1 Fou]
+[charaSet D 6031000 1 Osakabehime]
+[charaSet E 99502600 1 Mash]
+[sceneSet F 70600 1]
+[sceneSet G 70601 1]
+[charaSet I 5009000 1 "Effect Dummy"]
+[charaSet J 98115000 1 Effect]
+
+[charaPut I 2400,2400]
+[charaEffect I bit_talk_voice01]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+
+[scene 70601]
+
+[charaDepth F 0]
+[charaDepth G 1]
+
+[charaPut F 0,-200]
+[charaFadein F 0.1]
+
+
+[cameraMove 0.1 0,0 1.01]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[se ade74]
+[wt 1.5]
+[seStop ade74 0.5]
+[wt 1.0]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+＠Andersen
+...It's quiet. Too quiet.
+[k]
+
+＠Andersen
+Even after all those Cursed Books flooded the halls earlier, I don't see so much as a page now. Looks like their leader knows when to reign in the troops.
+[k]
+
+＠Andersen
+Where's the entrance to this archive?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Murasaki Shikibu
+Right over here. I usually keep it hidden with one of my spells...
+[k]
+
+[messageOff]
+[charaFace B 4]
+[wt 0.1]
+
+[fowardEffect bit_talk_pentagram_03]
+[wt 0.2]
+[se ad598]
+[wt 3.3]
+
+[se ade251]
+[fowardEffectStop bit_talk_pentagram_03]
+[wt 2.0]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaMoveScale F 1.3 1.0]
+[charaMove F 150,-280 1.0]
+
+[charaMoveScale G 1.3 0.1]
+
+[wt 1.2]
+
+[se ad547]
+[wt 1.0]
+[se ad619]
+[shake 0.05 3 3 3.4]
+[wt 0.4]
+[charaFadein G 3.0 150,-280]
+[wt 3.0]
+[seStop ad619 0.4]
+[wt 0.9]
+
+[charaFadeout F 1.0]
+[charaFadeout G 1.0]
+[wt 1.2]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Fou
+F[messageShake 0.03 3 3 0.4]ou!?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠Osakabehime
+Wow! To think there was a secret passageway behind those shelves! It's like a mage's workshop, or a masked vigilante's secret base...
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Murasaki Shikibu
+It's nothing special, really. Just an ordinary archive. All I do is try to keep it from drawing attention.
+[k]
+
+
+[charaFace B 7]
+＠Murasaki Shikibu
+...[sr]...
+[k]
+
+[charaFace B 0]
+＠Murasaki Shikibu
+...Thank you all so much for everything.[sr]You've been a tremendous help to me.
+[k]
+
+＠Murasaki Shikibu
+Now that my mess is almost cleaned up,[sr]I'll be doing this last part[line 2]
+[k]
+
+？1：With the rest of us, of course.
+？2：Nuh-uh. I'm not letting you do this alone.
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Andersen
+What [&he:she] said. It's not like [&he's:she's] got anything better to do, after all. Nor is [&he:she] the type to give up and go home after coming this far.
+[k]
+
+＠Andersen
+So you may as well give up and let [&him:her] keep helping you.
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Andersen
+What? You still feel sorry for getting us wrapped up in all this? Well too bad.
+[k]
+
+＠Andersen
+You're a Chaldean Heroic Spirit now, so you'd better get used to others getting in your business, whether you like it or not.
+[k]
+
+＠Andersen
+Besides, it's not like this is a Holy Grail War where lives are on the line. There's nothing wrong with a Servant leaning on their Master.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠Murasaki Shikibu
+...[wt 0.8][charaFace B 0]All right.
+[k]
+
+＠Murasaki Shikibu
+I won't resist your efforts to help me any longer.
+[k]
+
+[charaFace B 5]
+＠Murasaki Shikibu
+I would be glad to have you all accompany me to the very end...Master.
+[k]
+
+？1：...Let's go!
+
+？！
+
+[charaFace B 2]
+＠Murasaki Shikibu
+Okay!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Fou
+Fooou!
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_5 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 70700]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.5]
+
+[cueSe Battle bac428]
+[charaPut I 1]
+[shake 0.05 4 4 2.0]
+[wt 2.0]
+[charaPut I 2400,2400]
+[wt 0.1]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaPut J 1]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+＠Mash
+I'm picking up a large magical energy signal...! This is definitely the biggest Cursed Book we've seen to date!
+[k]
+
+＠Mash
+Everyone, please be careful!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠Murasaki Shikibu
+What an enormous Japanese-style bound book... It's as though it were the king of all books, or a dragon in book form.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠Osakabehime
+Wow, it's dekahuge! Super dekahuge![sr]I-I mean Mecha Eli-chan is bigger...!
+[k]
+
+[charaFace D 8]
+＠Osakabehime
+...[messageShake 0.03 2 2 0.6]but it's still really, really dekahuge![sr]Are you sure we can fight it at human scale!?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠Andersen
+Great! So now we're up against a Great Cursed Book that feeds on human feelings! Can WE really bring it down? We don't exactly have any heavy hitters here!
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[cueSe Battle bac428]
+[charaPut I 1]
+[shake 0.05 3 10 1.5]
+[wt 1.5]
+[charaPut I 2400,2400]
+[charaEffectStop I bit_talk_voice01]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠Murasaki Shikibu
+That's it. I'm certain this is the original Cursed Book!
+[k]
+
+？1：Only one thing left to do now!
+？2：Come on, everyone! Let's get it!
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace A 5]
+[charaFace D 5]
+[charaFadein A 0.1 0]
+[charaFadein D 0.1 2]
+[wt 1.2]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[charaMoveReturn C 0,50 0.4]
+＠Fou
+Fou fou! Kyaaau!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠Murasaki Shikibu
+Very well then! Let's bring this last Cursed Book to heel right now!
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]
