@@ -1,0 +1,430 @@
+＄94-03-35-62-4-0
+[enableFullScreen]
+
+[soundStopAll]
+
+
+[charaSet A 3046001 1 ヴリトラ]
+[charaSet B 1001000 1 エフェクト用]
+[equipSet C 9807930 1 バレンタイン礼装]
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+[scene 105800]
+
+[branch lblConf1]
+[label lblNotClear1]
+[scene 106000]
+
+[label lblConf1]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V010]
+おお、マスター。ここにおったか。[wait tVoice]
+[k]
+
+？1：何か用事かな？
+？！
+
+[charaFace A 6]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V020]
+うむ、まあな。[r]貴様に喰わせたいものがあってのう。[wait tVoice]
+[k]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V030]
+ほれ、これじゃ。[r]今日はバレンタインなる日なのじゃろう？[wait tVoice]
+[k]
+
+[charaFace A 7]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V040]
+遠慮せず、ぱくっといけ、ぱくっと。[wait tVoice]
+[k]
+
+？1：（遠慮も何も）
+？2：（たったの一欠片しかないけど……）
+？！
+
+[charaFace A 5]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V050]
+むっ、なんじゃその目は。[wait tVoice]
+[k]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V060]
+まさかわえがつまみ食いをしたとでも[r]思うておるのではなかろうな。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V070]
+違うぞ、これには理由が[line 3][r]いや、まあ、どうでもよい。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V080]
+とにかく気にせず喰え。ほれほれ。[wait tVoice]
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.2]
+
+？1：じゃあ、いただきます
+？！
+
+[se ad182]
+[wt 1.0]
+
+[charaPut B 0,0]
+[charaEffect B bit_talk_radiallight02]
+[se adm20]
+[wt 3.0]
+
+[fadeout white 1.0]
+[wait fade]
+
+[charaPut B 0,0]
+[charaEffectStop B bit_talk_radiallight02]
+[wt 1.2]
+
+[fadein white 0.4]
+[wait fade]
+
+？1：…………！！！？？？
+？2：（信じられない美味しさが口いっぱいに広がる）
+？！
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V090]
+き、ひ、ひ。どうじゃ？[r]もっと喰いたいか[wait tVoice]？
+[k]
+
+？1：最高に美味しい！　食べたーい！
+？2：もっとあるなら欲しい！
+？！
+
+[charaFace A 6]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V100]
+うんうん、素直でよい。それでこそじゃ。[wait tVoice]
+[k]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V110]
+というわけで、わえからのバレンタインチョコじゃ。[r]これを受け取るがよいぞ。[wait tVoice]
+[k]
+
+[messageOff]
+
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[charaFace C 0]
+[charaFadein C 0.5 0,-70]
+[wt 2.0]
+[charaFadeout C 0.4]
+
+[wt 0.5]
+
+？1：…………？
+？！
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V120]
+わかりやすく言えば、[r]先程食べさせたのは試食というやつよ。[wait tVoice]
+[k]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V130]
+この箱の中に、さっきのものと同じ[line 3]いや、[r]それ以上の出来栄えのチョコがたくさん入っておる。[wait tVoice]
+[k]
+
+？1：ありがとう！　でも……
+？2：この箱、全然開かないんだけど
+？！
+
+[charaFace A 15]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V140]
+うむうむ、そうじゃろう。[wait tVoice]
+[k]
+
+[charaFace A 6]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V150]
+貴様は知っておるか？　何でも人の世には[r]細工箱なるものがあるそうではないか。[wait tVoice]
+[k]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V160]
+押す、引く、滑らせる……決まった手順を踏まねば[r]けっして開かぬからくり箱じゃ。[wait tVoice]
+[k]
+
+？1：もしかして、これも？
+？！
+
+[charaFace A 13]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V170]
+うむ、その通り。わえが作った。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V180]
+ああ、箱自体の材質は無論わえの力よ。[wait tVoice]
+[k]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V190]
+物理的なものであろうと魔術的なものであろうと、[wait tVoice]
+[k]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V200]
+外からの力で強引に破壊したり開けたりすることは[r]不可能じゃと断言しておこう。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V210]
+とはいえ、正しき手順を見つければ必ず開くというのも[r]保証はしておくぞ。[wait tVoice]
+[k]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V220]
+貴様が[#全身全霊:ぜんしんぜんれい]を込めて知恵を振り絞り、考えに考え抜き、[r]全神経を集中させ、ありとあらゆる手を講じ、[wait tVoice]
+[k]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V230]
+そうしてようやく開く、かもしれん[line 3][r]というようなレベルに設定してある。[wait tVoice]
+[k]
+
+？1：なんでそんな面倒な……
+？！
+
+[charaFace A 4]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V240]
+なんで、じゃと？[wait tVoice]
+[k]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V250]
+貴様はわかっておると思うたが、[r]わえの見込み違いじゃったかのう。[wait tVoice]
+[k]
+
+
+[charaFace A 9]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V260]
+わえはまず最高の味のチョコを喰わせた。[wait tVoice]
+[k]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V270]
+ほんのちょっぴり、量としては物足りず、[r]もっと食べたいと必ず思うようなものをな。[wait tVoice]
+[k]
+
+[charaFace A 7]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V280]
+忘れられたり、もういいや、[r]と簡単に諦められたりしては困るからのう。[wait tVoice]
+[k]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V290]
+そしてそれがこの箱の中にあると教えれば、[r]貴様はどうしてもこれを解こうとするはずじゃ。[wait tVoice]
+[k]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V300]
+最高の美味のために、[r]この苦難を[line 3]乗り越えようとするはずじゃ。[wait tVoice]
+[k]
+
+[messageOff]
+
+[wt 0.7]
+
+[charaFace A 10]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V310]
+わえは、ただ。[r]貴様がそうして足掻く様が見たくてのう？[wait tVoice]
+[k]
+
+？1：あ、悪魔ー！
+？！
+
+[charaFace A 13]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V320]
+そう、それよ。やはり知っておったのではないか、[r]わえはそういうモノであるとな。[wait tVoice]
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[cueSe SE_21 21_ade554]
+[wt 5.0]
+
+？1：（さっぱり手順がわからないけど）
+？！
+
+[se ad441]
+[wt 2.0]
+
+？1：（舌にさっきのチョコの味が残ってて）
+？2：（どうしても諦められない……！）
+？！
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V330]
+おお、よいぞ、たまらんのう。[r]ヒントはやらんが応援はしてやるぞ。[wait tVoice]
+[k]
+
+[charaFace A 8]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V340]
+ええと…………[charaMove A -12,0 0.5][wt 0.5][charaMove A 12,0 1.0][wt 1.0][wait charaMoveReturn][charaMove A 0,0 0.5][wt 0.7]ここでよいか。[wait tVoice]
+[k]
+
+
+[messageOff]
+
+[charaFace A 13]
+[wt 0.1]
+
+[charaMove A 0,-15 1.0]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+[wt 1.0]
+
+[cueSe SE_21 21_ade553]
+[wt 1.0]
+
+？1：あの、なんでベッドに……？
+？！
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V350]
+ん？　わえは貴様が足掻く様を見たいから[r]その箱を用意したのじゃぞ。[wait tVoice]
+[k]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V360]
+特等席で見ねばどうする。[r]結果だけ知ってもつまらんではないか。[wait tVoice]
+[k]
+
+[charaFace A 6]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V370]
+というわけで、しばしここをわえの巣とする。[r]箱が開くまで観賞させてもらおう。[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V380]
+これ、手が止まっておるぞ。[r]わえのことは気にするな。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V390]
+わえは[#永遠不滅:えいえんふめつ]の魔、[r]時の流れなぞに縛られぬ邪竜。[wait tVoice]
+[k]
+
+[charaFace A 10]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V400]
+何十分でも何時間でも付き合ってやれるぞ。[r]ほれ、頑張れ、頑張れ……。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V410]
+ああ、もし本当に投げ出したくなったら言うがいい。[wait tVoice]
+[k]
+
+[charaFace A 13]
+
+＠ヴリトラ
+[tVoice ValVoice_304600 0_V420]
+またちょっぴり、爪の先ほどの量だけ食べさせて、[r]貴様の[#やる気:チョコ欲]を補充してやるからの！[wait tVoice]
+[k]
+
+？1：やっぱり悪魔だーーー！
+？！
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

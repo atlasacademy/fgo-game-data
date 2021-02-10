@@ -1,0 +1,495 @@
+
+＄94-03-35-61-1-0
+[enableFullScreen]
+
+[soundStopAll]
+
+
+[charaSet A 7038000 1 ブリュンヒルデ]
+[charaSet B 1001000 1 エフェクト用]
+[charaSet C 7038000 1 ブリュンヒルデ（シルエット）]
+[charaFilter C silhouette 00000080]
+[equipSet D 9807840 1 バレンタイン礼装]
+
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+[scene 105800]
+
+[branch lblConf1]
+[label lblNotClear1]
+[scene 106000]
+
+[label lblConf1]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.3]
+[se ad8]
+[wt 2.0]
+
+[se ade422]
+[seVolume ade422 0 0.1]
+[seVolume ade422 1.0 1.0]
+[wt 2.0]
+
+[seStop ade422 0.2]
+[wt 1.2]
+
+[charaTalk off]
+
+[charaDepth C 2]
+[charaDepth A 1]
+
+[charaFace C 0]
+[charaFadein C 0.4 1]
+
+[wt 1.2]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[charaFadeout C 0.7]
+
+[wt 1.0]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V010]
+[line 3]ああ。[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V020]
+出逢えましたね、マスター。[r]よかった。[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V030]
+今日は……[r]特別な日、ですよね。[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V040]
+バレンタインデー。[r]親しき人に、想い伝える日。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 20]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[wt 1.0]
+
+[charaFace A 10]
+
+＠ブリュンヒルデ
+[tVoiceUser ValVoice_703800 0_V050 ValVoice_703800 0_V060]
+サーヴァントの身ではありますが、[r]私も、[&貴方:貴女]に伝える想いがあります。[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V070]
+お時間、宜しいでしょうか？[wait tVoice]
+[k]
+
+？1：もちろん
+
+？！
+
+[messageOff]
+
+[charaFace A 1]
+[wt 1.0]
+[charaFace A 0]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V080]
+ありがとうございます。[wait tVoice][r]マスター。
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V090]
+大神に罰される罪の具現たる私が、[r]更に罪を深め……[line 3][wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V100]
+……いえ。
+[k]
+
+＠ブリュンヒルデ
+[tVoiceUser ValVoice_703800 0_V110 ValVoice_703800 0_V120]
+想い重ねることを、[r][&貴方:貴女]は[#咎:とが]めずにいてくださいました。[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V130]
+仮初めに仮初めを連ねた、[r]儚い霊基の身ではありますが、[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V140]
+この胸に生まれた想いは、[r]きっと、命あった過去のそれと変わりはしません。[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V150]
+ですから[line 3][wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 20]
+[wt 1.5]
+
+[charaFace A 10]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V160]
+せめてもの、気持ちです。[wait tVoice]
+[k]
+
+
+[messageOff]
+
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[charaFace D 0]
+[charaFadein D 0.5 0,-70]
+[wt 2.0]
+[charaFadeout D 0.4]
+
+[wt 0.5]
+
+
+？1：わ、すごい！
+[branch select01_01]
+
+？2：ウェディングケーキ！
+[branch select01_02]
+
+？！
+
+[label select01_01]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V170]
+ふふ。[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V180]
+妹たちと一緒に作ったのです。[r]一人でいいというのに、あの子たちったら……[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V190]
+手伝ってくれて。[r]気付けば、こんなに大きなケーキになりました。[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V200]
+本当に、大きな……[wait tVoice]
+[k]
+
+[charaFace A 10]
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V210]
+……。[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V220]
+マスター。[r]もらっていただけますか？[wait tVoice]
+[k]
+
+[branch select01_end]
+
+
+[label select01_02]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V230]
+ウェディングケーキ……？[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V240]
+というと……[r]何でしょう？[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V250]
+すみません、当世の文化には疎くて……[wait tVoice]
+[k]
+
+？1：えっと、結婚式とか[line 3]
+？2：結婚披露宴とかに出てくるケーキ！
+
+？！
+
+[messageOff]
+
+[charaFace A 6]
+[wt 1.0]
+
+[charaFace A 14]
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V260]
+！？[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V270]
+[f large]結婚！？[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V280]
+えっ、[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V290]
+い、いえ、その、私は、[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V300]
+妹たちと一緒に……[r]いえ、あの子たちのせいにするつもりはないですがっ、[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V310]
+でもですね、あの子たちが、[r]想いのぶんだけ大きなモノがいいよ、と言って、[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V320]
+も、もう、あの子たちったら[line 3]！[wait tVoice]
+[k]
+
+[charaFace A 15]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V330]
+……。[wait tVoice][r]……。
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V340]
+………………。[wait tVoice]
+[k]
+
+[charaFace A 16]
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V350]
+………………だ、大丈夫です。[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V360]
+……落ち着きました。[r]失礼しました。[wait tVoice]
+[k]
+
+[label select01_end]
+
+
+？1：雪山をイメージしてるのかな
+
+？！
+
+[charaFace A 0]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V370]
+はい。[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V380]
+ヒンダルフィヨル山を象ったものです。[r]その[line 3][wait tVoice]
+[k]
+
+[charaFace A 12]
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V390]
+あのひとと……[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V400]
+シグルドと、初めて……[r]出逢った山です。[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V410]
+山頂部分に小屋がありますよね。[r]本当は、燃える炎の館だったのですが、[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V420]
+私たち二人は、ここで出逢いました。[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V430]
+当世にはもうあの館はありません。[r]遠い、過去のこと[line 3][wait tVoice]
+[k]
+
+？1：……もらっちゃっていいのかな
+
+？！
+
+[charaFace A 8]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V440]
+[FFFFFF]？[-][wait tVoice]
+[k]
+
+？1：ケーキ、シグルドへ贈ったらきっと喜ぶよ
+
+？！
+
+[charaFace A 6]
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V450]
+！[wait tVoice]
+[k]
+
+[charaFace A 14]
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V460]
+い、いえ、それは[line 3][wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V470]
+その、ああっ……[wait tVoice]
+[k]
+
+
+[charaFace A 16]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V480]
+違うのです、私……[r]私は……[wait tVoice]
+[k]
+
+[charaFace A 19]
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V490]
+……。[r]……。[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V500]
+…………言葉が足らずにすみません。[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V510]
+シグルドにも[#同じもの]を作りました。[r]でも、ひとつ作っただけでは、私が納得できません。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V520]
+できるはずがない。[r]だって……[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoiceUser ValVoice_703800 0_V530 ValVoice_703800 0_V540]
+カルデア式召喚という奇跡の中で、[r][&貴方:貴女]は更なる奇跡をくれた。[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V550]
+[#再会]です。[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoiceUser ValVoice_703800 0_V560 ValVoice_703800 0_V570]
+あり得ないはずのモノを[&貴方:貴女]はくれた。[r]更なる出逢い、再会の機会を……[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoiceUser ValVoice_703800 0_V580 ValVoice_703800 0_V590]
+私たちにくれた[&貴方:貴女]へ、[r]私は、感謝をカタチにしたい。[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V600]
+ですから……[wait tVoice]
+[k]
+
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V610]
+[line 3]幾百、幾千万の感謝を込めて。[r]マスター。[wait tVoice]
+[k]
+
+[charaFace A 10]
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V620]
+どうか、受け取ってください。[wait tVoice]
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.4]
+[wt 0.1]
+
+[charaFace D 0]
+[charaFadein D 0.5 0,-70]
+[wt 2.0]
+[charaFadeout D 0.4]
+
+[wt 0.5]
+
+？1：ありがとう
+
+？！
+
+？1：遠慮なくいただきます！
+
+？！
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+[charaFace A 1]
+＠ブリュンヒルデ
+[tVoice ValVoice_703800 0_V630]
+はい！[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -2313,6 +2313,8 @@
     "BATTLE_DIALOG_RETIRE_ONLY_NPC": "エネミーの攻撃パターンをよく観察して\n戦略を練って\nクエストに再チャレンジしましょう",
     "BATTLE_DIALOG_USECOMMANDSPELL_ERROR_TITLE": "通信に失敗しました",
     "BATTLE_DIALOG_USECOMMANDSPELL_ERROR_CONF": "サーバーとの通信に\n失敗しました\n再度接続をおこないます",
+    "BATTLE_DIALOG_BATTLEUSEITEM_ERROR_TITLE": "通信に失敗しました",
+    "BATTLE_DIALOG_BATTLEUSEITEM_ERROR_CONF": "サーバーとの通信に\n失敗しました\n再度接続をおこないます",
 
     "BATTLE_DIALOG_RESULT_ERROR_TITLE": "通信に失敗しました",
     "BATTLE_DIALOG_RESULT_ERROR_CONF": "サーバーとの通信に\n失敗しました\n再度接続をおこないます",
@@ -2385,6 +2387,8 @@
 
     "BATTLE_DIALOG_CAN_NOT_REPLACE":"入れ替え不能",
     "BATTLE_MASTER_SKILL_CHARGE":"[ffdf00]チャージ{0}倍[-]",
+    "BATTLE_MASTER_SKILL_ADD_SPLIT":"・",
+    "BATTLE_MASTER_SKILL_ADD_NOT_OPEN_COND_COLOR":"[E60000]{0}[-]",
 
     // Select Sub
     "BATTLE_SELECTSUBERROR_NOSUB_TITLE": "",
@@ -2440,6 +2444,7 @@
     "BATTLE_RESULT_GET_EP80291": "獲得QPポイント",
     "BATTLE_RESULT_GET_EP80262": "獲得ポイント合計",
     "BATTLE_RESULT_GET_EP80276": "獲得ポイント合計",
+    "BATTLE_RESULT_GET_EP80313": "獲得ポイント合計",
     "BATTLE_RESULT_GET_DP": "取得DP",
     "BATTLE_RESULEVENTTITEM_AT_POINT": "次のEP報酬まであと",
     "BATTLE_RESULEVENTTITEM_AT_POINT80089": "次のチョコ製造報酬まであと",
@@ -2454,6 +2459,7 @@
     "BATTLE_RESULEVENTTITEM_AT_POINT8025103": "次の同人空想力報酬まであと",
     "BATTLE_RESULEVENTTITEM_AT_POINT80262": "次のおともだちポイント報酬まであと",
     "BATTLE_RESULEVENTTITEM_AT_POINT80276": "次のキラキラポイント報酬まであと",
+    "BATTLE_RESULEVENTTITEM_AT_POINT80313": "次のゴッド・ラブポイント報酬まであと",
 
     //BATTLE TURN SITUATION
     "BATTLE_TURN_SITUATTION_LABEL_WITH_RAIDNAME_2" : "他マスターの活躍により\n{0}を\n[FFEA00]{1:#}[-] 回撃退",
@@ -2992,11 +2998,27 @@
 
     "SUPPORTMAIL_BODY": "ユーザーID:{0}\nご利用OS:{1}\nご利用機種:{2}\n------------------------------\n以下に詳細をご記入ください。\n【】内は必要な情報を残し他を消してください。\n\n通信環境：【3G/LTE/Wi-Fi】\nキャリア：【DoCoMo/au/Softbank/その他】\n詳細：\n",
 
+	// 誕生日
+	"BIRTHDAY" : "{0}月 {1}日",
+
     // 誕生日設定
     "INPUT_BIRTHDAY_TITLE" : "誕生日の設定",
     "INPUT_BIRTHDAY_INFO" : "誕生日を入力すると、お気に入りサーヴァントが\n特別な反応をしてくれることがあります。",
-    "INPUT_BIRTHDAY_NOTICE" : "※誕生日は1度設定すると変更できません。",
+    "INPUT_BIRTHDAY_NOTICE" : "[FFFF00]※誕生日は1度設定すると変更できません。[-]",
     "BIRTHDAY_TEXT" : "誕生日",
+
+    // 誕生日設定の確認
+    "SET_BIRTHDAY_CONFIRM_TITLE" : "誕生日設定の確認",
+    "SET_BIRTHDAY_CONFIRM_MESSAGE" : "誕生日を{0}月{1}日に設定します。\n本当によろしいですか？",
+	"SET_BIRTHDAY_CONFIRM_NOTICE" : "[FFFF00]※決定後、変更することはできません。[-]",
+
+    // 誕生日再設定
+    "RESET_BIRTHDAY_TITLE" : "誕生日の再設定",
+    "RESET_BIRTHDAY_NOTICE" : "[FFFF00]※再設定は1回のみとなります。決定後、変更することはできません。[-]",
+
+    // 誕生日再設定の確認
+    "RESET_BIRTHDAY_CONFIRM_TITLE" : "誕生日再設定の確認",
+    "RESET_BIRTHDAY_CONFIRM_MESSAGE" : "誕生日を再設定します。\n\n変更前：{0}月{1}日\n\n↓\n\n変更後：{2}月{3}日\n\nよろしいですか？",
 
     // 性別変更
     "CHANGE_GENDER_TITLE" : "性別の設定",
@@ -3129,6 +3151,7 @@
     "EVENT_POINT_ITEM_REQUIRED_POINT80276" : "[ffe051]{0:N0}[-] ポイント達成で獲得",
     "EVENT_POINT_ITEM_REQUIRED_POINT80283" : "[ffe051]{0:N0}[-] 枚達成で獲得",
     "EVENT_POINT_ITEM_REQUIRED_POINT80305" : "[ffe051]{0:N0}[-] ポイント達成で獲得",
+    "EVENT_POINT_ITEM_REQUIRED_POINT80313" : "[ffe051]{0:N0}[-] ポイント達成で獲得",
 
     "EVENT_REWARD_CHANGE_INFO" : "報酬の種類を選択してください",
 
@@ -3148,6 +3171,26 @@
 	"NOT_HAVING_SHOP_ITEM_RECEIVABLE" : "既に交換済みのため、報酬のみ受け取ることができます",
 	"NOT_GET_COMMIT_AFTER_SCRIPT" : "チョコをもらえなかった……\n\nサーヴァントの想いにちゃんと応えられたのだろうか！？",
 	"NOT_GET_COMMIT_AFTER_SCRIPT_WARNING" : "[FFFF00]※イベント交換アイテムは消費されませんでした。",
+
+	// イベントショップチョコ礼装+特攻交換用
+	"ANOTHER_PAY_NORMAL_BUY" : "ロックオンチョコ\nを交換",
+	"ANOTHER_PAY_ANOTHER_BUY" : "スーパーロックオン\nチョコを交換",
+
+	"ANOTHER_PAY_INFO_TITLE" : "スーパーロックオンチョコについて",
+	"ANOTHER_PAY_CONFIRM_TITLE" : "スーパーロックオンチョコの交換確認",
+
+	"ANOTHER_PAY_PURCHASED_CONFIRM_MSG" : "「{0}×1」は\n既に所持しているため、受け取ることはできませんでした。\n\n「{1} {2}」は\nイベント期間限定の特効スキルを獲得しました。",
+	"ANOTHER_PAY_PURCHASED_EFFECT_CONFIRM_MSG" : "「{0}×1」を\nプレゼントボックスに送りました。\n\n「{1} {2}」は\nイベント期間限定の特効スキルを獲得しました。",
+
+	"ANOTHER_PAY_ITEM_CONFIRM_MSG" : "「{0}」を\n本当に交換してよろしいですか？",
+	"ANOTHER_PAY_ITEM_RECONFIRM_INFO" : "「{0}」を交換することで\n「{1} {2}」が\nイベント期間限定の特効スキルを獲得します。",
+	"ANOTHER_PAY_ITEM_CONFIRM_INFO" : "「{0}」を交換することで\n「{1} {2}」は\nイベント期間限定の特効スキルを獲得できますが、\n「{3}」は\n既に交換済みのため、新たに受け取ることはできません。",
+
+	"ANOTHER_PAY_ITEM_CONFIRM_CHOICES_MSG" : "交換する相手を慎重に選んで\nスーパーロックオンチョコを交換しましょう。",
+	"ANOTHER_PAY_ITEM_CONFIRM_CHOICES_INFO" : "「スーパーロックオンチョコ」はチョコの受け渡しに応じたサーヴァントが\nイベント期間限定の特効スキルを獲得できる特別なロックオンチョコです。",
+
+	"ANOTHER_PAY_ITEM_CONFIRM_WARN_MSG" : "[FFFF00]※「スーパーロックオンチョコ」は「チョコをもらう」用1個と\n「チョコをわたす」用1個の計2個しか獲得できません。ご注意ください。[-]",
+	"ANOTHER_PAY_PERIOD_END_MSG" : "[FFFF00]※イベントは終了しています。[-]",
 
     // フレンド画面
     "COPY_MY_ID" : "ユーザーIDをクリップボードにコピーしました。",

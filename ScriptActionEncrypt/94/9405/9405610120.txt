@@ -1,0 +1,489 @@
+
+
+
+＄94-05-61-01-2-0
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet B 2018001 1 子ギル]
+[charaSet C 3001000 1 クー・フーリン]
+[charaSet D 9011000 1 ？？？]
+[charaSet E 9011000 1 ？？？_シルエット]
+[charaFilter E silhouette 00000080]
+[charaSet F 1098206700 1 ジャンヌ]
+[charaSet G 1098206800 1 ジャンヌ・オルタ]
+[charaSet H 1098206900 1 ジャンヌ・オルタ・サンタ・リリィ]
+
+[charaSet I 98115000 1 エフェクト用]
+[charaSet J 98115000 1 エフェクト用]
+[charaSet K 98115000 1 エフェクト用]
+
+[imageSet L back10000 1]
+[charaScale L 1.05]
+
+[charaSet T 98115000 1 エフェクト用]
+
+[branchQuestNotClear lblNotClear 3000303]
+[charaSet A 8001410 1 マシュ]
+[charaSet Q 1098124510 1 ダ・ヴィンチ]
+[scene 110200]
+[branch lblConf]
+[label lblNotClear]
+[charaSet A 8001000 1 マシュ]
+[charaSet Q 98111500 1 ダ・ヴィンチ]
+[scene 105500]
+[label lblConf]
+
+[charaPut T 1200,1200]
+[charaEffect T bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[charaDepth F 1]
+[charaDepth G 2]
+[charaDepth H 3]
+
+[charaPutFSR I 256,-200]
+[charaPutFSL J -256,-200]
+[charaPut K 0,-200]
+[charaEffect I bit_talk_11]
+[charaEffect J bit_talk_11]
+[charaEffect K bit_talk_11]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFadeinFSR F 0.1 2]
+
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+[charaFace G 0]
+[charaFadeinFSL G 0.1 0]
+[wt 0.4]
+
+[fowardEffect bit_talk_kengekiall02_fs]
+[wt 0.1]
+[se bac12]
+[wt 0.1]
+[charaShake F 0.05 3 3 0.7]
+[charaShake G 0.05 3 3 0.7]
+[charaShake H 0.05 3 3 0.7]
+[wt 0.3]
+[se bac14]
+[wt 0.1]
+[se bac14]
+[wt 0.5]
+
+[se ad52]
+[charaSpecialEffect F enemyErasure 1 1.5]
+[charaSpecialEffect G enemyErasure 1 1.5]
+[charaSpecialEffect H enemyErasure 1 1.5]
+[wt 0.5]
+[charaEffectStop I bit_talk_11]
+[charaEffectStop J bit_talk_11]
+[charaEffectStop K bit_talk_11]
+[wait charaSpecialEffect F]
+[wait charaSpecialEffect G]
+[wait charaSpecialEffect H]
+[wt 1.0]
+
+[se ad42]
+[charaEffect I bit_talk_11]
+[charaEffect J bit_talk_11]
+[charaEffect K bit_talk_11]
+[charaSpecialEffect F appearance 1 1.5]
+[charaSpecialEffect G appearance 1 1.5]
+[charaSpecialEffect H appearance 1 1.5]
+[wt 0.5]
+
+[wait charaSpecialEffect F]
+[wait charaSpecialEffect G]
+[wait charaSpecialEffect H]
+
+[wt 1.5]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaEffectStop I bit_talk_11]
+[charaEffectStop J bit_talk_11]
+[charaEffectStop K bit_talk_11]
+
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+ああもう面倒くせぇ！[r]何度倒してもすぐに再生しやがる！
+[k]
+
+＠クー・フーリン
+クラン・カラティン並のしぶとさだ、[r]このままじゃカルデアぶっ壊しちまうぞ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠子ギル
+管制室に伝達でーす。[r]これ、何か対処法とかないですかー？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk Q]
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+[charaFace Q 12]
+[charaFadein Q 0.1 1]
+
+＠ダ・ヴィンチ
+ごめーん！[r]未知の現象なので解析がおいつかなーい！
+[k]
+
+＠ダ・ヴィンチ
+霊核もない、霊基も霧散、[r]キミたちの攻撃で完全に消滅している！
+[k]
+
+[charaFace Q 9]
+
+[branch lblConf2]
+[label lblNotClear2]
+
+[charaFace Q 1]
+[charaFadein Q 0.1 0,-90]
+
+＠ダ・ヴィンチ
+ごめーん！[r]未知の現象なので解析がおいつかなーい！
+[k]
+
+＠ダ・ヴィンチ
+霊核もない、霊基も霧散、[r]キミたちの攻撃で完全に消滅している！
+[k]
+
+[label lblConf2]
+
+＠ダ・ヴィンチ
+筈なんだけど、なぜ消えないのかなー！？[r]なんで復活するのかなーーー！？
+[k]
+
+[charaFadeout Q 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+……楽しんでんな、あの野郎。[r]人選ミスじゃねえのか、あれ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠子ギル
+後方支援の方が研究熱心なのはいいコトです。[r][#現場:こちら]は[#現場:こちら]でまじめにお仕事を[line 3]
+[k]
+
+[messageOff]
+[backEffect bit_talk_37 0,150]
+[charaFace B 2]
+[cueSe SE_21 21_ade565]
+[wt 1.8]
+
+＠子ギル
+待って、そこに誰かいませんか！？[r]めちゃくちゃ寒気が走りました！
+[k]
+
+＠？？？
+すばらしいレーダーセンスです。[r]これは、なんとしても助手役にほしいところ。
+[k]
+
+[charaShake B 0.05 3 3 0.5]
+
+＠子ギル
+うひゃあ、かつてない、いえ、[r]なんか覚えのある寒気ですよコレ！？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+
+＠？？？
+ボン・ジョルノ。[r]私は怪しい者ではありません。
+[k]
+
+＠？？？
+そして説明しましょう。[r]なぜその物体が消滅しないのか。
+[k]
+
+＠？？？
+それは彼らが……[r]シャドウサーヴァントではないからです。
+[k]
+
+？1：どちら様ですか！
+
+？！
+
+＠？？？
+闇の淵より生まれ出たものたちに、[r]暴力など無意味と知りなさい。
+[k]
+
+＠？？？
+彼らを消し去る手段は、ただひとつだけ。
+[k]
+
+＠？？？
+ふふ。ひとつだけ、とは、[r]我が言葉ながら大きく出ましたね。
+[k]
+
+＠？？？
+ですがそこは誇張表現でも何でもないので、[r]恥ずかしくはありません。
+[k]
+
+＠？？？
+そう[line 3]なぜなら。[r]彼らを消し去る手段とは、人類共通普遍のテーマ……
+[k]
+
+＠？？？
+[f large]『愛』
+[k]
+
+＠？？？
+なのですから。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_3 1.5]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+あ……愛だぁ……？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk off]
+
+[charaDepth E 2]
+[charaDepth D 1]
+
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+[charaFace D 15]
+[charaFadein D 0.1 1]
+[wt 0.1]
+
+[charaFadeout E 0.7]
+[wt 1.0]
+
+[charaTalk on]
+
+
+＠？？？
+……感度の悪い方ですね。[bgm BGM_EVENT_4 0.1][r]それでもケルトの誇るスパダリですか？
+[k]
+
+＠？？？
+行く先々で美女に手を出しながらも、[r]本命のお姫様には城をあてがってラブラブする。
+[k]
+
+[charaFace D 12]
+
+＠？？？
+……改めて口にすると頭にきますね。[r]下半身と上半身が別の生き物なのですか？
+[k]
+
+＠？？？
+アイフェさんに謝ってくださいね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+分[messageShake 0.05 4 4 0.2]かってんだよ、オレのせいだよ！[r]人の家庭事情に口出さないでくださいね！
+[k]
+
+？1：（初対面なのにこの圧力……何者[&だ:]……？）
+？2：（ケルトのスパダリだったんだー）
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠？？？
+ふふ。だいたいの雰囲気だけですが、[r]いい心の声が聞こえました。
+[k]
+
+[charaFace D 6]
+
+＠？？？
+合格です。[r]かつぎ上げるに相応しいマスターと認めます。
+[k]
+
+＠？？？
+こんにちは。ごきげんよう。[r]今朝の貴方の運勢は星五つのようですね。
+[k]
+
+＠？？？
+恋愛運は“突然の出逢いに備えよ”。[r]または“汝の隣人より目の前の女神を信じよ”。
+[k]
+
+[bgmStop BGM_EVENT_4 1.5]
+
+＠？？？
+そう、私こそは貴方の運命を盛り上げるため、[r]颯爽と現れた[line 3]
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaDepth F 1]
+[charaDepth G 2]
+[charaDepth H 3]
+
+[charaPutFSR I 256,-200]
+[charaPutFSL J -256,-200]
+[charaPut K 0,-200]
+[charaEffect I bit_talk_11]
+[charaEffect J bit_talk_11]
+[charaEffect K bit_talk_11]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFadeinFSR F 0.1 2]
+
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+[charaFace G 0]
+[charaFadeinFSL G 0.1 0]
+[wt 0.1]
+
+[se ad7]
+[charaMoveScale F 1.2 0.2]
+[charaMoveScale G 1.2 0.2]
+[charaMoveScale H 1.2 0.2]
+[charaMoveFSR F 256,20 0.2]
+[charaMoveFSL G -256,20 0.2]
+[charaMove H 0,20 0.2]
+
+[effect bit_talk_41_fs]
+[wt 0.6]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaEffectStop I bit_talk_11]
+[charaEffectStop J bit_talk_11]
+[charaEffectStop K bit_talk_11]
+[effectDestroy bit_talk_41_fs]
+
+[charaTalk on]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠？？？
+……空気を読まない方たちですね。[r]仕方ありません。
+[k]
+
+＠？？？
+まだ合意をとっていないのに[r]力をお貸しするのは主義に反するのですが[line 3]
+[k]
+
+[charaFace D 0]
+
+＠？？？
+これもセールスの一環と考えましょう。[r]どうぞご自由に指示を、マスター。
+[k]
+
+[charaFace D 6]
+
+＠？？？
+貴方のマスター力、そして私の恋愛力を、[r]存分にお試しください。
+[k]
+
+[messageOff]
+[wt 0.2]
+[flashin once 0.4 0.4 FFFFFFFF FFFFFF00]
+[se ad216]
+[seStop ad216 1.2]
+[wt 1.4]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+！[r]今のは仮契約のパス、でしょうか！？
+[k]
+
+？1：そうみたい……！
+？2：ともかく、応戦しよう！
+
+？！
+
+[messageOff]
+[wt 0.2]
+
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+

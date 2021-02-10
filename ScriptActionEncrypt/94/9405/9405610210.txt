@@ -1,0 +1,1450 @@
+
+
+
+
+
+＄94-05-61-02-1-0
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet B 2018001 1 子ギル]
+[charaSet C 3001000 1 クー・フーリン]
+[charaSet D 9011000 1 アムール]
+
+[charaSet E 98115000 1 エフェクト用1]
+[charaSet F 98115000 1 エフェクト用2]
+[charaSet G 98115000 1 エフェクト用3]
+[charaSet H 98115000 1 エフェクト用]
+[imageSet I back10000 1]
+[charaScale I 1.05]
+
+[branchQuestNotClear lblNotClear 3000303]
+[charaSet A 8001410 1 マシュ]
+[charaSet Q 1098124510 1 ダ・ヴィンチ]
+[scene 110200]
+[branch lblConf]
+[label lblNotClear]
+[charaSet A 8001000 1 マシュ]
+[charaSet Q 98111500 1 ダ・ヴィンチ]
+[scene 105500]
+[label lblConf]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_94 0.1]
+
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠アムール
+では、仕切り直しにもう一度、[r]自己紹介を。
+[k]
+
+[charaFace D 6]
+[fowardEffect bit_talk_valentine_brilliant_fs]
+[se adm19]
+
+＠アムール
+私はアムール。[r]愛の神、アムールです。
+[k]
+
+＠アムール
+もちろん、神霊を使い魔として召喚する事は[r]普通ありえないそうなので、
+[k]
+
+＠アムール
+この通り、奇跡のような美少女を依り代にした[r]疑似サーヴァント、というものですが。
+[k]
+
+[seStop adm19 0.5]
+[charaFadeout D 0.1]
+[wt 0.1]
+[fowardEffectDestroy bit_talk_valentine_brilliant_fs]
+
+[charaPut H 1]
+[charaTalk Q]
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+[charaFace Q 8]
+[charaFadein Q 0.1 1]
+
+＠ダ・ヴィンチ
+アムール……
+[k]
+
+[charaFace Q 2]
+
+＠ダ・ヴィンチ
+ローマ神話において愛を司るという、[r]あのアムール神か！
+[k]
+
+？1：知っているのか
+？2：ダ・ヴィンチちゃん！
+
+？！
+
+[charaFace Q 26]
+
+＠ダ・ヴィンチ
+うむ……！
+[k]
+
+[charaFace Q 7]
+
+[branch lblConf2]
+[label lblNotClear2]
+
+[charaFace Q 0]
+[charaFadein Q 0.1 0,-90]
+
+＠ダ・ヴィンチ
+アムール……
+[k]
+
+[charaFace Q 2]
+
+＠ダ・ヴィンチ
+ローマ神話において愛を司るという、[r]あのアムール神か！
+[k]
+
+？1：知っているのか
+？2：ダ・ヴィンチちゃん！
+
+？！
+
+[charaFace Q 5]
+
+＠ダ・ヴィンチ
+うむ……！
+[k]
+
+[label lblConf2]
+
+＠ダ・ヴィンチ
+これはあくまでも神話上の話、[r]と前置きしておくけど……
+[k]
+
+＠ダ・ヴィンチ
+アムールの起源は、[r]古代ギリシャの神話にある。
+[k]
+
+＠ダ・ヴィンチ
+世界の始まりに生まれた原初の神々、[r]その中に性愛を司る神、エロースがいた。
+[k]
+
+＠ダ・ヴィンチ
+けれど神話が構築されていくにつれて、[r]エロースはアフロディーテの息子となり、
+[k]
+
+＠ダ・ヴィンチ
+やがてローマ神話がギリシャ神話を[r]取り込んでいく過程で……
+[k]
+
+＠ダ・ヴィンチ
+ローマ由来の愛の神、アムールと[r]同一の存在とされるようになったんだ。
+[k]
+
+[charaFace Q 0]
+
+＠ダ・ヴィンチ
+……とまあ、なんだか複雑な経緯で[r]成立している神様なんだよね。
+[k]
+
+＠ダ・ヴィンチ
+それともうひとつ、[r]アムールには別の名前があって……
+[k]
+
+＠ダ・ヴィンチ
+みんな知ってる、あの愛らしい天使の……[r]ほら、アルテミス的な愛の矢を持った……
+[k]
+
+[charaFadeout Q 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠アムール
+[line 3]クピードー。
+[k]
+
+＠アムール
+愛の天使、キューピッドとして[r]皆さんもよくご存知でしょう。
+[k]
+
+[charaFace D 15]
+
+＠アムール
+ですが、そこは重要な要素ではありません。[r]私を成す霊核はアムールではありますが、
+[k]
+
+＠アムール
+[#私]にとって天上の主と呼べるのは[r]大いなる父だけです。
+[k]
+
+＠アムール
+ですので、アムールという名称も、[r]クピードーという名称も不適切です。
+[k]
+
+＠アムール
+私はギリシャ的な愛の神ではなく、[r]聖霊の代行者、あるいは愛の伝道師なので[line 3]
+[k]
+
+[charaFace D 1]
+
+＠アムール
+カレン・[#Ｃ:キューピッド]・オルテンシア。[r]そうお呼びください。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk Q]
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+[charaFace Q 23]
+[charaFadein Q 0.1 1]
+
+＠ダ・ヴィンチ
+……ふむ。大いなる父、と言ったね。
+[k]
+
+＠ダ・ヴィンチ
+その言い方からすると、[r]キミは聖堂教会の関係者らしい。
+[k]
+
+＠ダ・ヴィンチ
+今のキミの意識はアムール神ではなく、[r]人間側のそれが出ているようだ。
+[k]
+
+＠ダ・ヴィンチ
+依り代となった人間に主人格を委ねた、[r]疑似サーヴァントというわけか。
+[k]
+
+[charaFace Q 12]
+
+[branch lblConf3]
+[label lblNotClear3]
+
+[charaFace Q 0]
+[charaFadein Q 0.1 0,-90]
+
+＠ダ・ヴィンチ
+……ふむ。大いなる父、と言ったね。
+[k]
+
+＠ダ・ヴィンチ
+その言い方からすると、[r]キミは聖堂教会の関係者らしい。
+[k]
+
+＠ダ・ヴィンチ
+今のキミの意識はアムール神ではなく、[r]人間側のそれが出ているようだ。
+[k]
+
+＠ダ・ヴィンチ
+依り代となった人間に主人格を委ねた、[r]疑似サーヴァントというわけか。
+[k]
+
+[charaFace Q 7]
+
+[label lblConf3]
+
+＠ダ・ヴィンチ
+神様の依り代に選ばれる人間は、[r][#普通じゃない]のが相場だけれど……
+[k]
+
+＠ダ・ヴィンチ
+はてさて、キミはどうだろうね……？
+[k]
+
+[charaFadeout Q 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠カレン
+という訳で、はい、サービスタイム終了～。[r]普段着に戻らせていただきますね。
+[k]
+
+[messageOff]
+[fowardEffect bit_talk_magical_pon]
+[se ade217]
+
+[charaCrossFade D 9011001 1 0.4]
+[wait charaCrossFade D]
+
+[wt 2.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠マシュ
+うわあ、素敵なお召し物です！[r]アム……カレンさんは学生なのですか？
+[k]
+
+＠マシュ
+シックな制服はもちろんですが、[r]帽子がとても可愛らしく、格調高くて！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 17]
+[charaFadein D 0.1 1]
+
+＠カレン
+いえ、学生という訳ではないのですが……[r]これは今回用に新調したものなので。
+[k]
+
+[charaFace D 1]
+
+＠カレン
+とはいえ、褒めてもらえたのは嬉しいです。[r]帽子集めは私の数少ない趣味なので。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+数少ない趣味だあ……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠カレン
+ありがとうございます、マシェリさん。[r]お礼に愛の矢を一本、プレゼントしても？
+[k]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠マシュ
+い、いえ、結構です！
+[k]
+
+＠マシュ
+また、わたしのことはマシュ、でお願いします！[r]マシェリというのは……はい……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠カレン
+まあ。欲のない人。
+[k]
+
+＠カレン
+目の前のご馳走に飛びついてくれないのは[r]（面白みがなくて）残念ですが……
+[k]
+
+[charaFace D 1]
+
+＠カレン
+ではオルガン演奏はいかが？
+[k]
+
+
+＠カレン
+出逢いを祝してバッハのコラールBWV147など。[r]私の数少ない自慢の一つなのですが。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠子ギル
+数少ない自慢ですかぁ……？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 12]
+[charaFadein D 0.1 1]
+
+＠カレン
+スラップ。
+[k]
+
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace C 4]
+[charaFadeinFSR C 0.1 2]
+[charaFace B 4]
+[charaFadeinFSL B 0.1 0]
+[wt 0.1]
+
+[charaDepth E 10]
+[charaPutFSR E 256,0]
+[charaEffect E bit_talk_whip02]
+[se bac101]
+[se bac103]
+[charaShake C 0.05 3 3 0.2]
+[charaFace C 2]
+[wt 0.55]
+
+[charaPutFSL E -256,0]
+[se bac101]
+[se bac103]
+[charaShake B 0.05 3 3 0.2]
+[charaFace B 2]
+[wt 0.6]
+
+[charaTalk on]
+
+＠子ギル
+いたたたたた！？
+[k]
+
+＠クー・フーリン
+今なんで叩かれたんだよ！？
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.1 1]
+
+＠カレン
+失礼しました。[r]なにか、謂われのない中傷を感じたもので。
+[k]
+
+[charaFace D 12]
+
+＠カレン
+そして先ほどから私の言動に[r]一切の動揺を見せない貴方。
+[k]
+
+＠カレン
+よほどの大人物、[r]あるいはマイペースな方と見ました。
+[k]
+
+＠カレン
+やはり貴方が[%1]……[r]カルデアのマスターですね？
+[k]
+
+？1：[%1]です
+？2：よろしくです
+
+？！
+
+[charaFace D 6]
+
+＠カレン
+[line 3]ふふ。[r]これはまた、試し甲斐のある……。
+[k]
+
+[charaFace D 1]
+
+＠カレン
+先ほどは一方的に仮契約……のようなものを[r]迫ってしまい、失礼しました。
+[k]
+
+＠カレン
+あくまでマスターからの指示を[r]受け取るための繋がりですので、
+[k]
+
+＠カレン
+迷惑だと感じられたら、この繋がりは[r]切断していただいて結構です。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_94 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+あの、カレン・Ｃ・オルテンシアさん。
+[k]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠カレン
+[FFFFFF]？[-]　ああ、私の事ですか。[bgm BGM_EVENT_2 0.1][r]いざ呼ばれると長いですね。カレンで結構です。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+そ、そうですか。[r]では、カレンさん。
+[k]
+
+＠マシュ
+シャドウサーヴァント？　について、[r]何かご存じなのですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠カレン
+はい、あれは……[r]そうですね、簡単にご説明するならば。
+[k]
+
+[charaFace D 15]
+
+＠カレン
+[f large]エクトプラズムです。
+[k]
+
+？1：そうなんだ……
+
+？！
+
+＠カレン
+む、方向性が少々おかしかったですね。[r]あれを例えるなら、そう、
+[k]
+
+＠カレン
+人々の悪しき心に呼び寄せられた、[r]悪霊のようなもの……
+[k]
+
+
+＠カレン
+怨念、[#穢:けが]れ……そう言った物に例えれば[r]ご理解いただけるでしょうか。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠マシュ
+な、なるほど……？[r]ですが、それならばどうして、
+[k]
+
+＠マシュ
+このカルデアに突然、[r]あのようなものが発生したのでしょう？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠カレン
+……そうですね……発生理由に関しては[r]簡単に説明が思いつかないのですが……
+[k]
+
+[charaFace D 0]
+
+＠カレン
+まあ、バレンタイン的な何かでしょう。[r]だって私がいるのですから。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+というと……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠カレン
+私は[%1]に[r]召喚されたサーヴァントではありません。
+[k]
+
+＠カレン
+バレンタインという『愛』の祭りの場が[r]私を一時的に召喚したのです。
+[k]
+
+＠カレン
+すべてはバレンタインが原因。
+[k]
+
+＠カレン
+バレンタインがあのような[r]悪しき霊体を生み出し、
+[k]
+
+＠カレン
+バレンタインが愛の伝道師として[r]私のようなサーヴァントを召喚した。
+[k]
+
+[charaFace D 1]
+
+＠カレン
+つまり[line 3]わかりますね？
+[k]
+
+？1：なるほど、わかりません。
+？2：いや、ぜんぜん？
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+だよなあ。[r]何を言いたいのかまったく分からねえぞ、今の。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠子ギル
+結論ありきの説明はやめてほしいですよねぇ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠カレン
+…………。
+[k]
+
+[charaFace D 9]
+
+＠カレン
+コホン。[r]なぜ私が召喚されたのか、という話です。
+[k]
+
+＠カレン
+私はカルデアを救う伝道師。[r]迫りくるバレンタインの脅威[line 3]
+[k]
+
+[charaFace D 1]
+
+＠カレン
+悪しき霊体の発生を察知した私は、[r]その脅威から皆さんを救うために、
+[k]
+
+[fowardEffect bit_talk_valentine_brilliant_fs]
+[se adm19]
+[charaFace D 6]
+
+＠カレン
+主の名のもとに遣わされたのです。
+[k]
+
+[seStop adm19 0.5]
+[fowardEffectStop bit_talk_valentine_brilliant_fs]
+
+＠カレン
+多少、前後関係が入れ違っていますが、[r]おわかりいただけましたか？
+[k]
+
+？1：（なるほど、それでバズーカ……）
+？2：（バレンタインって脅威だったのか……）
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[charaFadeTime I 0.1 0.6]
+
+＠子ギル
+（マスター、マスター）
+[k]
+
+＠子ギル
+（あの人胡散臭いです、絶対何か隠してますよ）
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+（なんだよ、気が合うじゃねえか）
+[k]
+
+＠クー・フーリン
+（これに関しちゃオレも同意見だ、どうする？）
+[k]
+
+？1：ウソは言ってないみたいだし……
+？2：本物の愛の神みたいだし……
+
+？！
+
+[charaFadeout I 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk Q]
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+[charaFace Q 0]
+[charaFadein Q 0.1 1]
+
+＠ダ・ヴィンチ
+あのシャドウサーヴァント[line 3]いや、[r]別物ならこの呼び方はよくないね。
+[k]
+
+＠ダ・ヴィンチ
+よし、『ビター・シャドウ』と呼ぼう。[r]バレンタインらしくね。
+[k]
+
+[charaFace Q 34]
+
+＠ダ・ヴィンチ
+中々の強敵……というか、不死身性だ。[r]危険度も高い。
+[k]
+
+＠ダ・ヴィンチ
+先ほどは謎の助太刀（※バズーカ）のお陰で[r]なんとか殲滅は出来たけれど……
+[k]
+
+[charaFace Q 25]
+
+＠ダ・ヴィンチ
+カレンちゃん、ビター・シャドウは[r]再び発生するものと考えていいだろうか？
+[k]
+
+[charaFadeout Q 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠カレン
+[line 3]もう一度。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk Q]
+[charaFace Q 23]
+[charaFadein Q 0.1 1]
+
+＠ダ・ヴィンチ
+[FFFFFF]？[-]　もう一度って、なにが？[r]ビター・シャドウという名称はよくない？
+[k]
+
+[charaFadeout Q 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠カレン
+いえ。カレンちゃん、という呼称です。[r]今後はそちらで、是非。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk Q]
+[charaFace Q 0]
+[charaFadein Q 0.1 1]
+
+＠ダ・ヴィンチ
+そ、そう。わかったよ、カレン……ちゃん？[r]（愛の伝道師なのに愛に飢えているのかな？）
+[k]
+
+＠ダ・ヴィンチ
+とにかく、ビター・シャドウは[r]今回かぎりじゃないんだね？
+[k]
+
+[charaFadeout Q 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠カレン
+はい。バレンタインが続いているかぎり、[r]恐らくは。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk Q]
+[charaFace Q 26]
+[charaFadein Q 0.1 1]
+
+＠ダ・ヴィンチ
+……よし、わかった。
+[k]
+
+＠ダ・ヴィンチ
+事情を完全に把握したとは言えないけど、[r]彼女が対抗策を有しているのも確かだ。
+[k]
+
+＠ダ・ヴィンチ
+というか、彼女はビター・シャドウを[r]倒すために現れたと自称している。
+[k]
+
+[charaFace Q 0]
+
+＠ダ・ヴィンチ
+なので……[%1][&君:ちゃん]、[r]しばらく彼女と行動を共にしてもらえるかい。
+[k]
+
+＠ダ・ヴィンチ
+その間に、こちらの方でも[r]ビター・シャドウの解析を進めておくよ。
+[k]
+
+＠ダ・ヴィンチ
+それから[line 3]マシュ？
+[k]
+
+[charaFadeout Q 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+は、はい。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk Q]
+[charaFace Q 4]
+[charaFadein Q 0.1 1]
+
+[branch lblConf4]
+[label lblNotClear4]
+
+
+[charaFace Q 0]
+[charaFadein Q 0.1 0,-90]
+
+＠ダ・ヴィンチ
+あのシャドウサーヴァント[line 3]いや、[r]別物ならこの呼び方はよくないね。
+[k]
+
+＠ダ・ヴィンチ
+よし、『ビター・シャドウ』と呼ぼう。[r]バレンタインらしくね。
+[k]
+
+[charaFace Q 5]
+
+＠ダ・ヴィンチ
+中々の強敵……というか、不死身性だ。[r]危険度も高い。
+[k]
+
+＠ダ・ヴィンチ
+先ほどは謎の助太刀（※バズーカ）のお陰で[r]なんとか殲滅は出来たけれど……
+[k]
+
+＠ダ・ヴィンチ
+カレンちゃん、ビター・シャドウは[r]再び発生するものと考えていいだろうか？
+[k]
+
+[charaFadeout Q 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠カレン
+[line 3]もう一度。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk Q]
+[charaFace Q 7]
+[charaFadein Q 0.1 0,-90]
+
+＠ダ・ヴィンチ
+[FFFFFF]？[-]　もう一度って、なにが？[r]ビター・シャドウという名称はよくない？
+[k]
+
+[charaFadeout Q 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠カレン
+いえ。カレンちゃん、という呼称です。[r]今後はそちらで、是非。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk Q]
+[charaFace Q 0]
+[charaFadein Q 0.1 0,-90]
+
+＠ダ・ヴィンチ
+そ、そう。わかったよ、カレン……ちゃん？[r]（愛の伝道師なのに愛に飢えているのかな？）
+[k]
+
+＠ダ・ヴィンチ
+とにかく、ビター・シャドウは[r]今回かぎりじゃないんだね？
+[k]
+
+[charaFadeout Q 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠カレン
+はい。バレンタインが続いているかぎり、[r]恐らくは。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk Q]
+[charaFace Q 5]
+[charaFadein Q 0.1 0,-90]
+
+＠ダ・ヴィンチ
+……よし、わかった。
+[k]
+
+＠ダ・ヴィンチ
+事情を完全に把握したとは言えないけど、[r]彼女が対抗策を有しているのも確かだ。
+[k]
+
+＠ダ・ヴィンチ
+というか、彼女はビター・シャドウを[r]倒すために現れたと自称している。
+[k]
+
+[charaFace Q 0]
+
+＠ダ・ヴィンチ
+なので……[%1][&君:ちゃん]、[r]しばらく彼女と行動を共にしてもらえるかい。
+[k]
+
+＠ダ・ヴィンチ
+その間に、こちらの方でも[r]ビター・シャドウの解析を進めておくよ。
+[k]
+
+＠ダ・ヴィンチ
+それから[line 3]マシュ？
+[k]
+
+[charaFadeout Q 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+は、はい。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut H 1]
+[charaTalk Q]
+[charaFace Q 4]
+[charaFadein Q 0.1 0,-90]
+
+[label lblConf4]
+
+＠ダ・ヴィンチ
+すまないが、キミはこちらを手伝ってくれるかな。[r]どうしても人手がいる。
+[k]
+
+＠ダ・ヴィンチ
+みんながイベントを楽しんでいるこの時期に、[r]本当に申し訳ないのだけれど……
+[k]
+
+[charaFadeout Q 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マシュ
+ダ・ヴィンチちゃん……[r]いえ、大丈夫です。
+[k]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+[charaFace A 1]
+
+＠マシュ
+マスターにはギルくんとクー・フーリンさんも[r]付いていてくれますから。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth B 2]
+
+[charaTalk B]
+[charaFace C 2]
+[charaFadeinFSR C 0.1 2]
+[charaFace B 2]
+[charaFadeinFSL B 0.1 0]
+
+＠子ギル
+えっ。[bgm BGM_EVENT_7 0.1]
+[k]
+
+＠クー・フーリン
+えっ。
+[k]
+
+？1：えっ
+
+？！
+
+[charaFace B 1]
+
+＠子ギル
+あはは、すみません。[charaMoveFSL B -276,0 1.0][wt 1.1][r]ボクちょっと急用が……[charaMoveFSL B -306,0 1.0][wt 1.1]わぁっ！？[se ad7][charaFace C 0][charaMoveFSR C 0,0 0.2][wt 0.2][charaFace B 2][charaShake B 0.05 3 3 0.3][charaMoveFSL B -176,0 0.4][charaMoveFSR C 100,0 0.4]
+[k]
+
+
+[charaFace C 1]
+
+＠クー・フーリン
+ハハハ、どこに行こうと言うのかなぁ、[r]利発なギルガメッシュくぅん。
+[k]
+
+[charaFace C 4]
+
+＠クー・フーリン
+[f small]オレだって嫌な予感しかしねえけどよ。[r][f small]逃げようったって、そうはさせねえ……
+[k]
+
+[charaFace C 1]
+
+＠クー・フーリン
+嬢ちゃんにここまで頼りにされてんだ。
+[k]
+
+＠クー・フーリン
+サーヴァント歴の長い先輩として、[r]そいつに応えるのが男ってモンだよなぁ？
+[k]
+
+[charaFace B 4]
+
+＠子ギル
+……はあ。そういう“男らしさ”って考え、[r]頭悪くて嫌いですけどね。
+[k]
+
+[charaFace B 0]
+
+＠子ギル
+マシュお姉さんに頼まれたのなら仕方ありません。[r]ボクも手伝います。
+[k]
+
+＠クー・フーリン
+よーしそうこなくっちゃあ！[r]大人の時より物わかりいいじゃねぇか！
+[k]
+
+[charaFace B 4]
+
+＠子ギル
+はいはい。物わかり良すぎると何事にも[r]冷たくなるんですよ。覚えておいてくださいね。
+[k]
+
+＠クー・フーリン
+ま、聞いてのとおりだ。
+[k]
+
+＠クー・フーリン
+マスターの護衛はオレたちに任せて、嬢ちゃんは[r]ダ・ヴィンチの所でサポートにまわってくれ。
+[k]
+
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マシュ
+はい、お二人ともありがとうございます。[r]マスターの事を、よろしくお願いします！
+[k]
+
+？1：マシュもがんばって
+
+？！
+
+[charaFace A 13]
+
+＠マシュ
+……はい、マスターもどうかお気をつけて！
+[k]
+
+[messageOff]
+[branchQuestNotClear lblNotClear5 3000303]
+
+[se ad667]
+[seStop ad667 1.0]
+[charaFadeout A 0.4]
+[wt 1.5]
+
+[branch lblConf5]
+[label lblNotClear5]
+
+[se ad59]
+[seStop ad59 1.0]
+[charaFadeout A 0.4]
+[wt 1.5]
+
+[label lblConf5]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠カレン
+さて。
+[k]
+
+＠カレン
+話がまとまったようなのですが、[r]伝えそびれていた事がありまして……
+[k]
+
+
+＠カレン
+このような事実を伝えるのは、[r]たいへん心苦しいのですが……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+ぜんぜん苦しそうじゃねえけどな。[r]むしろ楽しそうだけどな。
+[k]
+
+＠クー・フーリン
+それで？[r]何かな、お嬢さん？
+[k]
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠カレン
+ええ、実は。
+[k]
+
+＠カレン
+先ほどのバズーカを使うには[r]特殊なカートリッジが必要になります。つまり、
+[k]
+
+＠カレン
+一発撃つごとに、『ある程度』の[r]使用料が計上されてしまうのです。
+[k]
+
+＠カレン
+では、ご覧ください。
+[k]
+
+[messageOff]
+[cueSe SE_21 21_ade555]
+[wt 2.4]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+た[messageShake 0.05 4 4 0.5]っ……高えぇーーーッ！！？？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠子ギル
+うわぁ……このＱＰ額、[r]さすがのボクもドン引きですよ。
+[k]
+
+？1：今ちょっと手持ちが……
+？2：これが『ある程度』……！？
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠カレン
+申し訳ありません、世俗には疎いもので……[r]もしや、日々の糧にもお困りなのでしょうか。
+[k]
+
+[charaFace D 10]
+
+＠カレン
+……ですが困りましたね……[r]……これでも勉強したのですが……
+[k]
+
+＠カレン
+……ビター退治にはバズーカは不可欠……[r]……でも絶対に自腹は切りたくないし……
+[k]
+
+＠カレン
+……うーん……うーん……[wt 1.0][charaFace D 0][r]……あ、ひらめきました。
+[k]
+
+[charaFace D 1]
+
+＠カレン
+こういうのはいかがでしょう。
+[k]
+
+＠カレン
+ゴッドバズーカの使用と引き換えに、[r]皆さんには換金できる素材[line 3]失礼、
+[k]
+
+＠カレン
+ゴッドなカートリッジを作るための[r]材料を集めていただく、というのは？
+[k]
+
+＠カレン
+幸いにも、これこのように……
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_7 0.5 0.5]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[charaPutFSL E 0]
+[charaPut F 1]
+[charaPutFSR G 2]
+
+[charaEffect E bit_talk_19]
+[charaEffect G bit_talk_19]
+[charaEffect F bit_talk_19]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_EVENT_7 0.5 1.0]
+[wait wipe]
+
+[wt 2.0]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_EVENT_7 0.5 0.5]
+[wait wipe]
+
+[charaPut E 2000,2000]
+[charaPut F 2000,2000]
+[charaPut G 2000,2000]
+[charaEffectStop E bit_talk_19]
+[charaEffectStop F bit_talk_19]
+[charaEffectStop G bit_talk_19]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_EVENT_7 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠カレン
+ビター・シャドウとなる事もできない、[r]矮小な魔力があちこちに漂っています。
+[k]
+
+＠カレン
+この程度ならバズーカは必要ありません。[r][#塵:ちり]も積もればなんとやら、ですので[line 3]
+[k]
+
+＠カレン
+休む事なく討伐して素材を集め、[r]私に寄付してください。
+[k]
+
+[charaFace D 6]
+
+＠カレン
+異論はありませんね？[r]すべてはカルデアの平和を守るため。
+[k]
+
+＠カレン
+素晴らしい奉仕を期待します、[r]カルデアの皆さん。
+[k]
+
+？1：バレンタインを守るため、だもん[&な:ね]
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+……だといいんだがな。[r]まあ、こうなったら最後まで付き合うが……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠子ギル
+ビター・シャドウ退治だけで[r]終わるとは思えませんよねー。
+[k]
+
+＠子ギル
+あーあ。戦士としての勘だけは[r]ピッタリ合うんですよね、ボクたち。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+

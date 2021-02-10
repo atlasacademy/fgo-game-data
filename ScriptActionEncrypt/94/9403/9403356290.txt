@@ -1,0 +1,705 @@
+
+
+＄94-03-35-62-9-0
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1049001 1 千子村正]
+[charaSet B 9011000 1 カレン]
+[imageSet C cut240_text 1]
+[equipSet M 9807980 1 バレンタイン礼装]
+[charaSet T 98115000 1 エフェクト用]
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 104200]
+[branch lblConf]
+[label lblNotClear]
+[scene 105500]
+[label lblConf]
+
+[se ad95]
+[seVolume ad95 0 0]
+[wt 0.2]
+[se ade422]
+[seVolume ade422 0 0]
+
+[fadein black 1.0]
+[seVolume ad95 1.0 1.0]
+[seVolume ade422 1.0 1.0]
+[wait fade]
+
+[wt 1.0]
+[seStop ad95 0.5]
+[seStop ade422 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V010]
+それでな、ランサーのヤロウ、ついに[bgm BGM_EVENT_2 0.1][r]『オレに怖いものはねえ』なんてほざきやがった。[wait tVoice]
+[k]
+
+[charaFace A 13]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V020]
+こりゃ『[#饅頭:まんじゅう]怖い』に違いねえ、[r]真面目に聞いているのも馬鹿らしい。[wait tVoice]
+[k]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V030]
+その手は桑名の焼き[#蛤:はまぐり]だって、[r]横になって適当に相づちをうっていたらよぉ、[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V040]
+『あ、いや、わりい。一つあったわ。[r]　師匠の無理目の霊衣が怖い』[wait tVoice]
+[k]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V050]
+なんて不吉なコト言い出しやがって、[r]おまえ、それを口にしたら本当にやって[line 3][wait tVoice]
+[k]
+
+[messageOff]
+[se ad193]
+[wipeout uzumaki 1.5 1.0]
+[bgmStop BGM_EVENT_2 1.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 110400]
+[wt 0.5]
+
+[wipein uzumaki 1.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+？1：おや。
+
+？！
+
+？1：とつぜん世界が
+？2：切り替わったぞ
+
+？！
+
+[bgm BGM_EVENT_3 0.1]
+[wt 0.1]
+
+＠？？？
+[tVoice ValVoice_901100 0_V060]
+目標発見、照準合わせ。[r]ゴッドパワー、充填10パーセント。[wait tVoice]
+[k]
+
+＠？？？
+[tVoice ValVoice_901100 0_V070]
+周囲に人の目なし、監視モニターなし。[r]道徳的にも問題なし。[wait tVoice]
+[k]
+
+＠？？？
+[tVoice ValVoice_901100 0_V080]
+もはや人類にまったなし。[r]このあたりで決めるとしますか。[wait tVoice]
+[k]
+
+＠？？？
+[tVoice ValVoice_901100 0_V090]
+てー。[wait tVoice]
+[k]
+
+[messageOff]
+[fowardEffect bit_talk_godbazooka]
+[cueSe SE_21 21_ade563]
+[wt 1.5]
+
+[charaEffect T bit_talk_impactlanding]
+[se ad609]
+[wt 1.5]
+[seStop ad147 0.5]
+[seStop ad609 1.0]
+[bgmStop BGM_EVENT_3 1.0]
+[wt 1.2]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠カレン
+[tVoice ValVoice_901100 0_V100]
+ごきげんよう、親愛なる三流マスター。[bgm BGM_EVENT_7 0.1][r]今日もしまりのない顔でたいへん無様です。[wait tVoice]
+[k]
+
+＠カレン
+[tVoice ValVoice_901100 0_V110]
+説明するまでもありませんが、[r]貴方の忠実な支配者、アムールちゃんです。[wait tVoice]
+[k]
+
+[charaFace B 0]
+
+＠カレン
+[tVoice ValVoice_901100 0_V120]
+……おっと。[r]すみません、間違えました。[wait tVoice]
+[k]
+
+＠カレン
+[tVoice ValVoice_901100 0_V130]
+この霊基の私はアムールではなく、[r]愛の伝道師カレン・Ｃ・オルテンシア。[wait tVoice]
+[k]
+
+[charaFace B 6]
+
+＠カレン
+[tVoice ValVoice_901100 0_V140]
+霊基ごとに特色のあるサーヴァントは面倒ですね。[r]人気商売である以上、仕方がないのですが。[wait tVoice]
+[k]
+
+[charaFace B 0]
+
+＠カレン
+[tVoice ValVoice_901100 0_V150]
+私の事はどうぞ、心の底から気兼ねなく本心で[r]カレンちゃん、あるいはカレンさま、とお呼びください。[wait tVoice]
+[k]
+
+[messageOff]
+
+？1：あの、カレンちゃん
+？2：あの、カレンさま
+
+？！
+
+？1：今のは、一体？
+
+？！
+
+[charaFace B 9]
+
+＠カレン
+[tVoice ValVoice_901100 0_V160]
+まだ[#他人行儀:たにんぎょうぎ]な壁を感じますが、いいでしょう。[r]将来性に期待して合格とします。[wait tVoice]
+[k]
+
+[charaFace B 0]
+
+＠カレン
+[tVoice ValVoice_901100 0_V170]
+さて。質問の答えになりますが、[r]今のは言うまでも無く[line 3][wait tVoice]
+[k]
+
+＠カレン
+[tVoice ValVoice_901100 0_V180]
+[f large][#無償愛:む し ょ う せ き]。[wait tVoice]
+[k]
+
+＠カレン
+[tVoice ValVoice_901100 0_V190]
+ですが、何か？[wait tVoice]
+[k]
+
+＠カレン
+[tVoice ValVoice_901100 0_V200]
+主の愛は[#遍:あまね]く人々に降りそそぐもの。[r]シャンパンのように。あるいは葡萄酒のように。[wait tVoice]
+[k]
+
+＠カレン
+[tVoice ValVoice_901100 0_V210]
+それをバレンタインデーの力で [r]可視化・物質化したものが今のチョコ弾です。[wait tVoice]
+[k]
+
+[charaFace B 15]
+
+＠カレン
+[tVoice ValVoice_901100 0_V220]
+どうせ他の方々からも受け取っているので、[r]大したインパクトにはならないでしょうが……[wait tVoice]
+[k]
+
+＠カレン
+[tVoice ValVoice_901100 0_V230]
+私への奉仕のごほ、失礼、本音が出ました。[wait tVoice]
+[k]
+
+[charaFace B 1]
+
+＠カレン
+[tVoice ValVoice_901100 0_V240]
+私からの、貴方の日頃の労働への返礼です。[r]受け取ってください。[wait tVoice]
+[k]
+
+？1：…………。
+？2：…………………………。
+
+？！
+
+[charaFace B 14]
+
+＠カレン
+[tVoice ValVoice_901100 0_V250]
+……どういう事でしょう。[r]予想と大きく違う展開です。[wait tVoice]
+[k]
+
+[charaFace B 24]
+
+＠カレン
+[tVoice ValVoice_901100 0_V260]
+私からのチョコを受け取った貴方は[r]喜びのあまり覚醒し、[wait tVoice]
+[k]
+
+＠カレン
+[tVoice ValVoice_901100 0_V270]
+盛りのついた犬のように[r]召喚部屋で召喚しまくると思ったのですが……[wait tVoice]
+[k]
+
+[charaFace B 8]
+
+＠カレン
+[tVoice ValVoice_901100 0_V280]
+……もしや……チョコレートが嫌い、という[r][#希有:けう]な例とか？　主人公体質のクセに？[wait tVoice]
+[k]
+
+？1：そうじゃなくて、もっとこう……
+？2：みんなに配ってるのじゃなくて……
+
+？！
+
+[messageOff]
+[charaFace B 16]
+[wt 1.2]
+
+[charaFace B 17]
+
+＠カレン
+[tVoice ValVoice_901100 0_V290]
+……つまり。[r][#有償愛:ゆうしょうせき]が、欲しいと。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 1.4]
+
+[charaFace B 3]
+
+＠カレン
+[tVoice ValVoice_901100 0_V300]
+……いいでしょう。[r]そちらの用意もないではありません。[wait tVoice]
+[k]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth C 2]
+
+[charaFadein C 0.3 -5,-90]
+
+＠カレン
+[tVoice ValVoice_901100 0_V310]
+しばらく待っていてください。[r]ステイ。アーンド、プレイ。[wait tVoice]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaFace B 0]
+
+＠カレン
+[tVoice ValVoice_901100 0_V320]
+あ。今のチョコはもう食べなくていいですから、[r]お返しください。それでは。[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_7 1.0 0.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaSet B 9011001 1 カレン]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_7 1.0 1.0]
+[wait fade]
+
+
+＠
+[align center]－体感時間にして３時間　経過－[align]
+[k]
+
+[messageOff]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠カレン
+[tVoice ValVoice_901100 0_V330]
+お待たせしました。[wait tVoice]
+[k]
+
+[charaFace B 0]
+
+＠カレン
+[tVoice ValVoice_901100 0_V340]
+数分で戻るつもりでしたが、予定より少しだけ[r]時間がかかってしまったようですね。[wait tVoice]
+[k]
+
+
+＠カレン
+[tVoice ValVoice_901100 0_V350]
+そして親しき仲にも礼儀あり。[r]本気チョコなら身だしなみ。[wait tVoice]
+[k]
+
+[charaFace B 3]
+
+＠カレン
+[tVoice ValVoice_901100 0_V360]
+改めて挨拶をするとしましょう。[wait tVoice]
+[k]
+
+＠カレン
+[tVoice ValVoice_901100 0_V370]
+貴方のサーヴァントにして精神的飼い主。[r]カレン・Ｃ・オルテンシアです。[wait tVoice]
+[k]
+
+[charaFace B 5]
+
+＠カレン
+[tVoice ValVoice_901100 0_V380]
+ではこちらをどうぞ。[r]私からのスペシャル！　をおくらいなさいませですわ。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+
+[charaFadeout B 0.4]
+
+[se bas2]
+[charaFace M 0]
+[charaFadein M 0.5 0,-70]
+[wt 2.0]
+[charaFadeout M 0.4]
+[wt 0.5]
+
+？1：これは……ウエハース？
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠カレン
+[tVoice ValVoice_901100 0_V390]
+はい。[#聖餅:せいへい]を私なりにアレンジしたものです。[r]せめて小麦粉を使おう、と。[wait tVoice]
+[k]
+
+＠カレン
+[tVoice ValVoice_901100 0_V400]
+デザインについての質問は却下します。[wait tVoice]
+[k]
+
+？2：これは……札束！
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠カレン
+[tVoice ValVoice_901100 0_V410]
+[line 6]。[wait tVoice]
+[k]
+
+[charaFace B 1]
+
+＠カレン
+[tVoice ValVoice_901100 0_V420]
+ほほほ。[r]カルデアでの生活はよほど即物的なのですね。[wait tVoice]
+[k]
+
+＠カレン
+[tVoice ValVoice_901100 0_V430]
+一見そのように見えるだけで、[r]中身はたいへん美味しいゴッドなお菓子です。[wait tVoice]
+[k]
+
+＠カレン
+[tVoice ValVoice_901100 0_V440]
+毎日毎晩、[#教会:わたし]に寄付などして悔い改めなさい。[r]目に見えるものだけが真実ではありません。[wait tVoice]
+[k]
+
+？！
+
+[charaFace B 7]
+
+＠カレン
+[tVoice ValVoice_901100 0_V450]
+……まあ、いい機会ですから、[r]私の[#性癖:せいかく]について説明しておきましょう。[wait tVoice]
+[k]
+
+[charaFace B 0]
+
+＠カレン
+[tVoice ValVoice_901100 0_V460]
+私は拝金主義者と勘違いされているようですが、[r]それは[#謂:いわ]れのない誤解です。[wait tVoice]
+[k]
+
+＠カレン
+[tVoice ValVoice_901100 0_V470]
+私がお金を集めるのは、お金が[r]『人々を支配するもの』『権力の象徴』であるからです。[wait tVoice]
+[k]
+
+＠カレン
+[tVoice ValVoice_901100 0_V480]
+神とは人々を愛し、[r]世界を善く運営するよう人々に望まれたもの。[wait tVoice]
+[k]
+
+＠カレン
+[tVoice ValVoice_901100 0_V490]
+即ち支配者です。[r]わかりやすいですね。[wait tVoice]
+[k]
+
+＠カレン
+[tVoice ValVoice_901100 0_V500]
+私にとって主の御心とはそのようなもの。[wait tVoice]
+[k]
+
+＠カレン
+[tVoice ValVoice_901100 0_V510]
+なので、[r]お金を積み重ねる事は歓びになるのです。[wait tVoice]
+[k]
+
+[charaFace B 4]
+
+＠カレン
+[tVoice ValVoice_901100 0_V520]
+……教会の教えには『地に富を築いてはならない』[r]というものがありますが……[wait tVoice]
+[k]
+
+＠カレン
+[tVoice ValVoice_901100 0_V530]
+私はお金を富とは考えていませんし、[r]集めた金銭に固執もしていません。[wait tVoice]
+[k]
+
+[charaFace B 1]
+
+＠カレン
+[tVoice ValVoice_901100 0_V540]
+たんに、力の象徴が積み重なっていく事に[r]興奮するだけです。[wait tVoice]
+[k]
+
+＠カレン
+[tVoice ValVoice_901100 0_V550]
+『好きな物を買おう』『贅沢をしよう』という考えは[r]私にはありませんので、あしからず。[wait tVoice]
+[k]
+
+？1：なるほど……なるほど？
+？2：ただそこにある集金装置……
+
+？！
+
+[charaFace B 6]
+
+＠カレン
+[tVoice ValVoice_901100 0_V560]
+まあ、大切なものを没収されて[r][#右往左往:うおうさおう]する姿がたまらない、というのも事実ですが。[wait tVoice]
+[k]
+
+[charaFace B 0]
+
+＠カレン
+[tVoice ValVoice_901100 0_V570]
+では、ごきげんよう。[r]このゴッド空間は外の時間とはかけ離れた空間。[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_7 4.0]
+
+＠カレン
+[tVoice ValVoice_901100 0_V580]
+食べ飽きたらウエハースは残して結構ですので、[r]適当に切り上げてください。[wait tVoice]
+[k]
+
+？1：あ、待って。プレゼント、ありがとう！
+
+？！
+
+[messageOff]
+[charaFace B 3]
+[wt 0.7]
+
+[charaFace B 0]
+
+＠カレン
+[tVoice ValVoice_901100 0_V590]
+お礼を言うのはこちらです。[bgm BGM_EVENT_2 0.1][r]それは有償愛、ですから。[wait tVoice]
+[k]
+
+＠カレン
+[tVoice ValVoice_901100 0_V600]
+私は無料で差し上げたのではありません。[r]ギブアンドテイク、です。[wait tVoice]
+[k]
+
+？1：？　でも、有償ってどうすれば？
+
+？！
+
+[charaFace B 1]
+
+＠カレン
+[tVoice ValVoice_901100 0_V610]
+それはもちろん。[r]貴方から、私にお返しをしてください。[wait tVoice]
+[k]
+
+[charaFace B 0]
+
+＠カレン
+[tVoice ValVoice_901100 0_V620]
+……そうね。[r]いつか貴方が世界を救った後。[wait tVoice]
+[k]
+
+＠カレン
+[tVoice ValVoice_901100 0_V630]
+くたびれた手足、失われた時間、[r]いくたび心に傷を負ったとしても[line 3][wait tVoice]
+[k]
+
+＠カレン
+[tVoice ValVoice_901100 0_V640]
+強がりであっても、今のような[r]晴れやかな笑顔を見せてくれれば、まあなんとか。[wait tVoice]
+[k]
+
+[charaFace B 1]
+
+＠カレン
+[tVoice ValVoice_901100 0_V650]
+それはとても価値のあるもので、[r]だからこそ値段のつけられない奇跡。[wait tVoice]
+[k]
+
+＠カレン
+[tVoice ValVoice_901100 0_V660]
+『本当の愛』というものは、[r]そういうものだと、私は知っていますから。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[se ade404]
+[seVolume ade404 0 0.1]
+[seVolume ade404 1.5 1.0]
+[fadeout white 1.5]
+[bgm BGM_EVENT_2 1.5 0.5]
+[wait fade]
+
+[seStop ade404 0.8]
+[charaFadeout B 0.1]
+
+[branchQuestNotClear lblNotClear2 3000303]
+[scene 104200]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 105500]
+[label lblConf2]
+[wt 1.5]
+
+[fadein white 1.5]
+[bgm BGM_EVENT_2 1.5 1.0]
+[wait fade]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V670]
+…………。[wait tVoice]
+[k]
+
+？1：山のようなウエハースを食べ終わると、
+？2：そこはいつものカルデア通路だった。
+
+？！
+
+[charaFace A 12]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V680]
+いきなり消えて現れたな……[r]おまえさん、こういうのはしょっちゅうなのか？[wait tVoice]
+[k]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V690]
+いや、[#儂:オレ]もなんとなく似たような[r]星回りの気もするが、さすがに神隠しはなあ？[wait tVoice]
+[k]
+
+[charaFace A 6]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V700]
+なに？　今回はまだ普通？[r]ウエハース美味しかった？[wait tVoice]
+[k]
+
+[charaFace A 7]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V710]
+ま、本人がいいならいいか。[r]んで、大切そうに持ってるソレが原因かい。[wait tVoice]
+[k]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V720]
+赤い心臓みたいなチョコレートだこと。[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_2 4.0]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V730]
+悪魔的な禍々しさだが、[r]気持ちがこもってンなら善いもんだろ。[wait tVoice]
+[k]
+
+[charaFace A 14]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V740]
+あ、いや、だが値札が貼ってあるな？[bgm BGM_EVENT_7 0.1][r]なになに……希望小売価格、１００億ＱＰ[line 3][wait tVoice]
+[k]
+
+[charaFace A 19]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V750]
+[line 3]よし、[#儂:オレ]は何も見なかった！[r]あばよ[%1]！[wait tVoice]
+[k]
+
+＠千子村正
+[tVoice ValVoice_901100 0_V760]
+悪魔[#祓:ばら]いは専門家に頼むんだな！[wait tVoice]
+[k]
+
+[messageOff]
+[se ade421]
+[seStop ade421 1.8]
+[charaFadeout A 0.4]
+[wt 2.0]
+
+？1：[line 3]値段、ついてるじゃん！
+
+？！
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

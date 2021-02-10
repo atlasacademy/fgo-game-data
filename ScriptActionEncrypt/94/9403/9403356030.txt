@@ -1,0 +1,374 @@
+
+＄94-03-35-60-3-0
+[enableFullScreen]
+
+[soundStopAll]
+
+
+
+[charaSet A 3041001 1 カイニス]
+[charaSet B 1001000 1 エフェクト用]
+[charaSet C 3041001 1 カイニス（シルエット）]
+[charaFilter C silhouette 00000080]
+[equipSet D 9807720 1 バレンタイン礼装]
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+[scene 105800]
+
+[branch lblConf1]
+[label lblNotClear1]
+[scene 106000]
+
+[label lblConf1]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[wt 0.3]
+[se ad8]
+[wt 2.0]
+
+[se ade422]
+[seVolume ade422 0 0.1]
+[seVolume ade422 1.0 1.0]
+[wt 2.0]
+
+[seStop ade422 0.2]
+[wt 1.2]
+
+[charaTalk off]
+
+[charaDepth C 2]
+[charaDepth A 1]
+
+[charaFace C 0]
+[charaFadein C 0.4 1]
+
+[wt 1.2]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[charaFadeout C 0.7]
+
+[wt 1.0]
+
+＠カイニス
+[tVoice ValVoice_304100 0_V010]
+よう。[wait tVoice]
+[k]
+
+？1：カイニス？
+
+？！
+
+[bgm BGM_EVENT_2 0.1]
+
+＠カイニス
+[tVoice ValVoice_304100 0_V020]
+おう。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 17]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+＠カイニス
+[tVoice ValVoice_304100 0_V030]
+……。[wait tVoice]
+[k]
+
+？1：どうしたの？
+
+？！
+
+＠カイニス
+[tVoice ValVoice_304100 0_V040]
+あー。[wait tVoice]
+[k]
+
+＠カイニス
+[tVoice ValVoice_304100 0_V050]
+朝、何か渡してきたろ。[r]甘いやつ。[wait tVoice]
+[k]
+
+？1：うん、チョコレート
+？2：今日はバレンタインだからね
+
+？！
+
+[charaFace A 9]
+
+＠カイニス
+[tVoice ValVoice_304100 0_V060]
+ん。[wait tVoice]
+[k]
+
+＠カイニス
+[tVoice ValVoice_304100 0_V070]
+よく知らねえけど、好きにすりゃいい。[r]それよりだ。[wait tVoice]
+[k]
+
+＠カイニス
+[tVoice ValVoice_304100 0_V080]
+貰いっぱなし、[r]ってのは気に障る。[wait tVoice]
+[k]
+
+？1：……怒ってる？
+
+？！
+
+＠カイニス
+[tVoice ValVoice_304100 0_V090]
+あ？[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 16]
+
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+
+＠カイニス
+[tVoice ValVoice_304100 0_V100]
+……面倒だ。[wait tVoice]
+[k]
+
+＠カイニス
+[tVoice ValVoice_304100 0_V110]
+ほらよ。[r]ここ、置いとくぜ。[wait tVoice]
+[k]
+
+[messageOff]
+
+[wt 0.3]
+[se ade253]
+[wt 0.5]
+
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+
+？1：それって[line 3]
+
+？！
+
+[charaTalk A]
+[charaFace A 1]
+
+＠カイニス
+[tVoice ValVoice_304100 0_V120]
+[#麺麭:パン]だ。[wait tVoice]
+[k]
+
+＠カイニス
+[tVoice ValVoice_304100 0_V130]
+今日は、アレだ。[r]なんか食い物を寄越してやる日なんだってな。[wait tVoice]
+[k]
+
+＠カイニス
+[tVoice ValVoice_304100 0_V140]
+だからくれてやる。[wait tVoice]
+[k]
+
+？1：ありがとう！
+
+[charaFace A 3]
+
+＠カイニス
+[tVoice ValVoice_304100 0_V150]
+……あ！？[wait tVoice]
+[k]
+
+＠カイニス
+[tVoice ValVoice_304100 0_V160]
+あー、いや。[r]怒るのは違ぇか。[wait tVoice]
+[k]
+
+＠カイニス
+[tVoice ValVoice_304100 0_V170]
+おう。ありがたく喰え。[wait tVoice]
+[k]
+
+？2：カイニスが作ってくれたの？
+
+[charaFace A 0]
+＠カイニス
+[tVoice ValVoice_304100 0_V180]
+…………悪いかよ。[wait tVoice]
+[k]
+
+？！
+
+[charaFace A 8]
+
+＠カイニス
+[tVoice ValVoice_304100 0_V190]
+アイツに作り方を聞いた。[r][#くそ面倒]だったぜ。[wait tVoice]
+[k]
+
+＠カイニス
+[tVoice ValVoice_304100 0_V200]
+あんなに面倒だって知ってりゃ、[r]そのままアイツに作らせてたのによ。[wait tVoice]
+[k]
+
+＠カイニス
+[tVoice ValVoice_304100 0_V210]
+あの野郎、[r]調子に乗ってあれこれとまあ[line 3][wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 9]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 1]
+
+＠カイニス
+[tVoice ValVoice_304100 0_V220]
+うるせえ！[r]つって殴り飛ばしてやってもよかったが、[wait tVoice]
+[k]
+
+＠カイニス
+[tVoice ValVoice_304100 0_V230]
+そこは何とか[#堪:こら]えてやったってワケだ。[wait tVoice]
+[k]
+
+＠カイニス
+[tVoice ValVoice_304100 0_V240]
+喜べマスター。[r]テメェのサーヴァントはお行儀がいいぜ？[wait tVoice]
+[k]
+
+
+
+
+
+
+
+
+
+
+
+[branchQuestNotClear lblNotClear2 3000628]
+
+
+？1：カイニスは無闇に人を殴ったりしないよね
+
+[charaFace A 8]
+
+＠カイニス
+[tVoice ValVoice_304100 0_V250]
+いや殴るだろ。[wait tVoice]
+[k]
+
+
+？2：新所長のこと、カイニス気に入ってるよね
+
+[messageOff]
+
+[charaFace A 22]
+
+[wt 2.0]
+
+[charaFace A 13]
+
+＠カイニス
+[tVoice ValVoice_304100 0_V260]
+ンな訳が！　あるか！[wait tVoice]
+[k]
+
+？！
+
+
+[branch lblConf2]
+[label lblNotClear2]
+
+？1：カイニスは無闇に人を殴ったりしないよね
+？！
+
+[charaFace A 8]
+
+＠カイニス
+[tVoice ValVoice_304100 0_V250]
+いや殴るだろ。[wait tVoice]
+[k]
+
+[label lblConf2]
+
+[charaFace A 0]
+
+＠カイニス
+[tVoice ValVoice_304100 0_V270]
+……つっても、まあ……[wait tVoice]
+[k]
+
+＠カイニス
+[tVoice ValVoice_304100 0_V280]
+……アイツの[#麺麭:パン]、なかなかの味だったからな。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠カイニス
+[tVoice ValVoice_304100 0_V290]
+テメェら喰ったことねえんだろ？[r]ソイツは勿体ねえ。[wait tVoice]
+[k]
+
+[charaFace A 16]
+＠カイニス
+[tVoice ValVoice_304100 0_V300]
+……。[r]……。[wait tVoice]
+[k]
+
+＠カイニス
+[tVoice ValVoice_304100 0_V310]
+……勿体ねえと思ったんだよ。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠カイニス
+[tVoice ValVoice_304100 0_V320]
+ま、気が向いたら喰え。残すなよ。[r]マシュにもくれてやれ。[wait tVoice]
+[k]
+
+＠カイニス
+[tVoice ValVoice_304100 0_V330]
+じゃあな。[wait tVoice]
+[k]
+
+[messageOff]
+
+[se ade422]
+[seStop ade422 1.5]
+[charaFadeout A 0.4]
+[wt 2.0]
+
+[se ad8]
+[wt 2.0]
+
+[se bas2]
+[charaFace D 0]
+[charaFadein D 0.5 0,-70]
+[wt 2.0]
+[wait touch]
+[charaFadeout D 0.4]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

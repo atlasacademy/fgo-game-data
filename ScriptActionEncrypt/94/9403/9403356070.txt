@@ -1,0 +1,469 @@
+
+＄94-03-35-60-7-0
+
+[enableFullScreen]
+
+[soundStopAll]
+
+
+[charaSet A 3043000 1 エリセ]
+[charaSet B 9011001 1 カレン（アムール）]
+[charaSet C 1001000 1 エフェクト用]
+[equipSet D 9807750 1 バレンタイン礼装]
+[charaSet E 98115000 1 エフェクト用]
+[imageSet F cut243_kar 1]
+
+[scene 21600]
+[se ad16]
+[seVolume ad16 0 0]
+[fadein black 1.5]
+[seVolume ad16 1.5 1.0]
+[wait fade]
+
+[seStop ad16 3.5]
+[wt 2.0]
+
+[charaTalk A]
+[charaFace A 20]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V010]
+[line 3]うん、そうだね。[r]バレンタインデーについてはもちろん知ってる。[wait tVoice]
+[k]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaFace A 0]
+
+＠エリセ
+[tVoiceUser ValVoice_304300 0_V020 ValVoice_304300 0_V030]
+他の英霊たちと比べれば、[r]私の出身地域は[&きみ:あなた]とそう変わらないのだし。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V040]
+つい相手の常識の守備範囲を気遣っちゃうの、わかるよ。[r]サーヴァントに囲まれてるとそういう癖、つくよね？[wait tVoice]
+[k]
+
+[charaFace A 20]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V050]
+[line 3]ヘイ、[#ＳＩＭ:シ ム]？[r]環境を『静かな市街』に変更。[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout white 1.0]
+[bgm BGM_EVENT_2 1.0 0.4]
+[wait fade]
+
+[scene 10801]
+[charaFadeout A 0.1]
+
+[se ade19]
+[seVolume ade19 0 0.6]
+[wt 1.0]
+[seStop ade19 0.4]
+[wt 0.4]
+
+[fadein white 1.0]
+[bgm BGM_EVENT_2 1.0 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V060]
+[#模擬戦闘:トレーニング]の最中に、関係ない話でごめん、って？[r]いいよ、全然。ちょうど休憩にしようと思ってた。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V070]
+ああそっか。バレンタインの起源といえば、[r]聖ウァレンティヌスはローマの司祭だった……。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V080]
+じゃあ、わりと関係あるのかもね？　フフ。[wait tVoice]
+[k]
+
+？1：コロッセウムの舞台で模擬戦とは本格的だね
+？！
+
+[charaFace A 12]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V090]
+そう……なるのかな。[r]そこは私の趣味みたいなものだけど。[wait tVoice]
+[k]
+
+？1：[&古代:古代の]ローマが好き[&なんだ:なの]？
+？！
+
+[charaFace A 23]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V100]
+え？　もちろん。当然。当たり前だよ。[wait tVoice]
+[k]
+
+[charaFace A 12]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V110]
+甘いモノに無関心な人は[r]それなりにいるとしてもさ、[wait tVoice]
+[k]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V120]
+“ローマ”に何の感銘も受けない[r]人間なんているのかな？[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V130]
+この背景映像モデルも出来がいいよね。[wait tVoice]
+[k]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V140]
+出身の英霊たちの印象が[r]フィードバックされてるみたいだし。[wait tVoice]
+[k]
+
+
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+[charaFace A 18]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V160]
+演出担当の技術者が、相当な凝り性だったのかな。[r]敵の戦闘パターンは少し単調で物足りないけれど……。[wait tVoice]
+[k]
+
+[branch lblConf1]
+
+[label lblNotClear1]
+[charaFace A 18]
+＠エリセ
+[tVoice ValVoice_304300 0_V150]
+演出担当の技術者が天才かつ変態的な凝り性っていうか。[r]敵の戦闘パターンは少し単調で物足りないけれど……。[wait tVoice]
+[k]
+[label lblConf1]
+
+？1：それなら模擬戦の対戦相手を募ってみれば？　
+？2：皇帝の誰かとか[&ね:さ]。きっと相手には事欠かない
+？！
+
+[charaFace A 23]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V170]
+対人形式で模擬戦を！？[r]こ、皇帝陛下の方々に！？[wait tVoice]
+[k]
+
+[charaFace A 18]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V180]
+そんな……お、畏れ多いから……。[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V190]
+あ～、えっとそれで、[r]バレンタインデーの話だった。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V200]
+知ってるって言っても、ただの知識としてだ。[r]私が知るバレンタインは[#復元品:レプリカ]だから。[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V210]
+私のいた世界は大きな戦争で……[r]聖杯戦争のせいで一度壊れてしまったからさ。[wait tVoice]
+[k]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V220]
+途絶えてしまった文化を取り返そうとして[r]必死に頑張った。残された大人たちがね。[wait tVoice]
+[k]
+
+[charaFace A 0]
+
+＠エリセ
+[tVoiceUser ValVoice_304300 0_V230 ValVoice_304300 0_V240]
+……でも[&きみ:あなた]はさ、本当のバレンタインを[r]知っているのでしょう。それは本物だもの。[wait tVoice]
+[k]
+
+[charaFace A 3]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V250]
+書物で読んだだけの英雄たちの物語と、[r]目の前にいるサーヴァントの在りようほども違う。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V260]
+生きた文化を知る人だ。[r]誇っていいと思う。貴重な証人だよ。[wait tVoice]
+[k]
+
+[charaFace A 3]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V270]
+[line 3]だから実は興味があって。[r]よければさ、[#模擬戦]……をさせてもらえないかな？[wait tVoice]
+[k]
+
+？1：ん？　模擬戦？
+？2：（いつもながら加減がおかしい）
+？！
+
+[charaFace A 12]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V280]
+貴重な機会だもの。ちゃんと知りたいんだ。[r]要するに、愛情表現の一種……なんでしょ？[wait tVoice]
+[k]
+
+[charaFace A 5]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V290]
+たしかお菓子とか、贈答品の交換をするんだよね。[r]ジェンダーの要素が重要だったはず。[wait tVoice]
+[k]
+
+[bgmStop BGM_EVENT_2 0.3]
+
+[charaFace A 1]
+
+＠エリセ
+[tVoiceUser ValVoice_304300 0_V300 ValVoice_304300 0_V310]
+じゃあさ仮にだ、私たちが互いに恋愛対象というフリで。[r][&そうすると……私からきみに何か贈るべきなのかな？:ひとまず、私からあなたに贈るってことでいい？][wait tVoice]
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaFace A 13]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V320]
+激辛サプライズチョコぉ？　まさか。[r]そんなの別にさぁ……誰も驚かない……でしょ？[wait tVoice]
+[k]
+
+[charaFace A 12]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V330]
+えっと……まずはチョコを咥えて、全裸になって、[r]自分の体をリボンで丁寧にラッピング……する？[wait tVoice]
+[k]
+
+[charaFace A 11]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V340]
+[line 3]というのは、か、かなり特殊な例なの？[r]し、知ってた。勿論、知ってましたぁ。じゃ、じゃあ、[wait tVoice]
+[k]
+
+[charaFace A 18]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V350]
+一枚の板チョコを二人で両端からねぶっていってぇ……[r][#涎:よだれ]を我慢した方が勝ちのチョコレートゲーム……[wait tVoice]
+[k]
+
+[charaFace A 11]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V360]
+て、いうのも、そ、そうだね、フィクション！[r]フィクションだよね。そんなのあるわけないものね。[wait tVoice]
+[k]
+
+
+
+
+
+
+
+
+
+
+[charaFadein F 0.5 300,-120]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V370]
+[f small]ちょ……先生ぇ……話が違うんですけど……。[twt 3.8][charaFadeout F 0.4][r]な、なんでもない。でも、もしかしてさ……。[wait tVoice]
+[k]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V380]
+歳の数だけベッドに麦チョコを[#撒:ま]いて文字を描くのも、[r]下着に隠した場所を探るチョコ当てゲームも[line 3][wait tVoice]
+[k]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V390]
+く、口からでまかせ？　みたいなものだったり？？？[wait tVoice]
+[k]
+
+？1：えーと、うちの人類史では初耳っぽい
+？2：エリセ……そんな冗談をすっかり信じてたの？
+？！
+
+[messageOff]
+
+[bgmStop BGM_EVENT_7 0.3]
+
+[se ad119]
+[charaShake A 0.0 6 5 0.5]
+[charaFace A 11]
+[wt 2.0]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V400]
+……ふぁぁ……？[wait tVoice]
+[k]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V410]
+ううっ……そんなぁ……。[r]恥ずかしすぎる……私の歴史観っていったい……。[wait tVoice]
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_6 0.1]
+[charaPut E 1]
+[charaEffect E bit_talk_06]
+[wt 0.5]
+
+？1：[&待った待った待った:待って待って待って]還らないで！
+？！
+
+[bgmStop BGM_EVENT_6 1.0]
+
+[charaEffectStop E bit_talk_06]
+[wt 0.5]
+
+[charaFace A 24]
+
+[wt 0.2]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V420]
+うう……そこまで言うなら[line 3][wait tVoice]
+[k]
+
+[charaFace A 2]
+[bgm BGM_EVENT_2 0.1]
+
+＠エリセ
+[tVoiceUser ValVoice_304300 0_V430 ValVoice_304300 0_V440]
+[&きみに:あなたから]直接、見せてもら[&うからね！:えない？][r]人類の伝統文化、真実のバレンタインの儀を！　さあ！[wait tVoice]
+[k]
+
+？1：と言われても……心を込めて渡すだけ、だよ
+？！
+
+[charaFace A 23]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V450]
+……え……それだけ？[r]ごく普通のチョコでいいの？[wait tVoice]
+[k]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V460]
+なんだか、じゃあ……とてもシンプルなんだね。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V470]
+そうだね。シンプルなものが、私は好きだ。[r]なのにハハ、私、カタチから入ってばかりで駄目だなぁ。[wait tVoice]
+[k]
+
+[charaFace A 4]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V480]
+それに……恋愛ってのもさ、私は経験が無くて、[r]だから本質的には理解できてない。たぶんね。[wait tVoice]
+[k]
+
+[charaFace A 1]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V490]
+だから今は……“[#友:とも]チョコ”っていうので[r]まだ精一杯、かな。それなら私も貰ったことがあって……。[wait tVoice]
+[k]
+
+[charaFace A 7]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V500]
+あの経験が、どれくらいバレンタインらしかったのやら[r]ちっともわからないけどね。[wait tVoice]
+[k]
+
+？1：ぜひその思い出話を聞きたいな。よかったら
+？！
+
+[charaFace A 1]
+
+＠エリセ
+[tVoiceUser ValVoice_304300 0_V510 ValVoice_304300 0_V520]
+そんな話でいいの……？[r]まあ、[&きみ:あなた]がそれでいいなら、いいけど。[wait tVoice]
+[k]
+
+[fadeout white 5.0]
+[bgmStop BGM_EVENT_2 5.0]
+
+＠エリセ
+[tVoice ValVoice_304300 0_V530]
+あれは……あいつがさ、私の数少ない友人の一人で、[r]まだ男の子みたいな格好をしてた頃で[line 3]。[wait tVoice]
+[k]
+
+[wait fade]
+
+[messageOff]
+[charaFadeout A 0.1]
+[scene 10000]
+[wt 1.5]
+
+[fadein white 1.5]
+[wait fade]
+
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+
+[se bas2]
+[charaFace D 0]
+[charaFadein D 0.5 0,-70]
+[wt 2.0]
+[charaFadeout D 0.4]
+
+[wt 1.5]
+[soundStopAll]
+[end]
+

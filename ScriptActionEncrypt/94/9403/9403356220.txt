@@ -1,0 +1,967 @@
+
+＄94-03-35-62-2-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+
+[charaSet A 1047001 1 渡辺綱]
+[charaSet B 6021001 1 酒呑童子]
+[charaSet D 4006001 1 ゲオルギウス]
+[charaSet E 2015001 1 アルジュナ]
+[charaSet F 4011001 1 ブーディカ]
+[charaSet G 2001000 1 エミヤ]
+[charaSet H 7016001 1 タマモキャット]
+[charaSet I 7022001 1 茨木童子]
+
+[imageSet J back10000 1 1]
+[charaScale J 1.32]
+
+[charaSet K 4031000 1 エフェクト用]
+
+[equipSet S 9807920 1 バレンタイン礼装]
+
+
+[charaPut K 2000,2500]
+[charaEffect K bit_sepia01_depth_fs]
+
+[cameraMove 0 0,0 1.01]
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[scene 105800]
+[branch lblConf]
+
+[label lblNotClear]
+[scene 106000]
+[label lblConf]
+
+
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠渡辺綱
+[tVoice ValVoice_104700 0_V010]
+[line 3]唐突だが、大変申し訳ない。[wait tVoice]
+[k]
+
+？1：本当に唐突だ！
+？！
+
+[charaFace A 4]
+＠渡辺綱
+[tVoice ValVoice_104700 0_V020]
+ああ、実はちょっと鬼の連中と、[r]その、少々過剰なる鍛錬に[#勤:いそ]しんでしまって。[wait tVoice]
+[k]
+
+[messageOff]
+[se ad592]
+[fadeout white 0.5]
+[bgm BGM_EVENT_7 0.5 0.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 27600]
+
+
+[charaPut K 1]
+
+[charaTalk off]
+[charaDepth K 9]
+[charaDepth J 8]
+[charaDepth E 8]
+[charaDepth D 7]
+[charaDepth A 6]
+[charaDepth B 4]
+
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[wt 0.8]
+
+[fadein white 0.5]
+[wait fade]
+[wt 0.3]
+
+[se ad73]
+[charaMove A -200,0 0.2]
+[charaFadeout A 0.2]
+[wt 0.3]
+
+[se ad171]
+[effect bit_talk_x_slash03 0,0 H]
+[wt 0.25]
+
+[seStop ad171 0.1]
+[se ad1013]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+
+[charaFace B 4]
+[charaFadein B 0 0,0]
+
+[se ad671]
+[charaShake B 0.03 3 3 0.5]
+[charaMove B -200,0 0.4]
+[wt 0.3]
+
+[seStop ad671 0.4]
+[wt 0.8]
+
+[charaFace B 5]
+[wt 0.1]
+
+[se ad73]
+[charaMove B 50,0 0.2]
+[charaFadeout B 0.2]
+[wt 0.3]
+
+[se ad85]
+[effect bit_talk_h_slash01_fs]
+[wt 0.5]
+
+[se ad171]
+[fowardEffect bit_talk_v_slash01]
+[wt 0.5]
+
+[se ad1053]
+[effect bit_talk_quick_slash]
+[wt 0.7]
+
+[se ad32]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+[effectDestroy bit_talk_h_slash01]
+[fowardEffectDestroy bit_talk_v_slash01]
+[effectDestroy bit_talk_quick_slash]
+
+
+[charaFace A 5]
+[charaFace B 4]
+[charaFadein A 0 1]
+[charaFadein B 0 0,0]
+
+[se ad671]
+[charaShake B 0.03 3 3 0.5]
+[charaShake A 0.03 3 3 0.5]
+[charaMove A 260,0 0.25]
+[charaMove B -260,0 0.25]
+[wt 0.3]
+[seStop ad671 0.4]
+[wt 0.8]
+
+
+[charaPut J 0,-200]
+[charaFadeTime J 0.7 0.6]
+[wt 0.7]
+
+＠渡辺綱
+[tVoice ValVoice_104700 0_V030]
+互いに燃える……ヒートアップ、[r]そう、ヒートアップしてしまってだな。[wait tVoice]
+[k]
+
+＠渡辺綱
+[tVoice ValVoice_104700 0_V040]
+挑発された瞬間に、よーしやるかと[r]首を狙ったのは悪いと思うのだが[line 3][wait tVoice]
+[k]
+
+？1：ちょ、大丈夫なの！？
+？！
+
+＠渡辺綱
+[tVoice ValVoice_104700 0_V050]
+ああ、幸いにも制止が入った。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFadeout J 0.4]
+[wt 0.5]
+
+[se ad984]
+[charaMove A 285,0 0.4]
+[wt 0.9]
+
+[se ad984]
+[charaMove B -285,0 0.4]
+[wt 0.9]
+
+[charaFace A 2]
+[charaFace B 5]
+[wt 0.1]
+
+[se ad7]
+[wt 0.05]
+[charaMove A 1 0.3]
+[charaMove B 0,0 0.3]
+[wt 0.2]
+
+[seStop ad7 0.1]
+[se ad32]
+[se ad170]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+
+
+[charaFace E 5]
+[charaFace D 5]
+[charaFadein E 0 100,0]
+[charaFadein D 0 -100,0]
+
+[charaFace A 5]
+[charaFace B 4]
+[charaPut B -300,0]
+[charaPut A 250,0]
+
+[charaShake B 0.03 3 3 0.5]
+[charaShake A 0.03 3 3 0.5]
+[charaMove B -450,0 0.25]
+[charaMove A 450,0 0.25]
+[wt 1.5]
+
+[messageOff]
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[charaPut K 2000,2500]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+[scene 105800]
+[branch lblConf2]
+
+[label lblNotClear2]
+[scene 106000]
+[label lblConf2]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[wt 0.8]
+
+[bgm BGM_EVENT_7 0.5 1.0]
+[fadein white 0.5]
+[wait fade]
+[wt 0.2]
+
+＠渡辺綱
+[tVoice ValVoice_104700 0_V060]
+アルジュナ殿とゲオルギウス殿がいなければ、[r][#些:いささ]か大変なことになっていた。[wait tVoice]
+[k]
+
+？1：つまり殺し合いになりかけた、と
+？！
+
+[charaFace A 4]
+＠渡辺綱
+[tVoice ValVoice_104700 0_V070]
+そうとも言う。[r]いや、そうとしか言わないか。[wait tVoice]
+[k]
+
+＠渡辺綱
+[tVoice ValVoice_104700 0_V080]
+[line 3]申し訳ない。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠渡辺綱
+[tVoice ValVoice_104700 0_V090]
+それで相談なのだが……。[wait tVoice]
+[k]
+
+＠渡辺綱
+[tVoice ValVoice_104700 0_V100]
+いかに挑発されたとはいえ、[r]火蓋を切ったのは間違いなく俺だ。[wait tVoice]
+[k]
+
+＠渡辺綱
+[tVoice ValVoice_104700 0_V110]
+ならば、彼女たちに謝罪せねばなるまい。[r]折しもまもなく祝祭の日だと聞く。[wait tVoice]
+[k]
+
+？1：祝祭？
+？！
+
+[charaFace A 3]
+＠渡辺綱
+[tVoice ValVoice_104700 0_V120]
+ああ……聖バレンタインデーだったか。[r]世話になった者の間でチョコを贈り合うのだろう？[wait tVoice]
+[k]
+
+＠渡辺綱
+[tVoice ValVoice_104700 0_V130]
+日本でいうところの、お中元のようなもの。[r]違うか？[wait tVoice]
+[k]
+
+＠渡辺綱
+[tVoice ValVoice_104700 0_V140]
+違わない、と。[r]よしよし。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠渡辺綱
+[tVoice ValVoice_104700 0_V150]
+ともあれ、その贈り物を通して、[r]謝罪の気持ちを伝えようと思う。[wait tVoice]
+[k]
+
+？1：いい考えじゃないかな！
+？！
+
+[charaFace A 1]
+＠渡辺綱
+[tVoice ValVoice_104700 0_V160]
+そうか……良かった。[wait tVoice]
+[k]
+
+＠渡辺綱
+[tVoice ValVoice_104700 0_V170]
+では、チョコレートを確保しなければ。[twt 5.0][charaFace A 0][r]む。マスター、どうした？[wait tVoice]
+[k]
+
+＠渡辺綱
+[tVoice ValVoice_104700 0_V180]
+……手作り？[wait tVoice]
+[k]
+
+＠渡辺綱
+[tVoice ValVoice_104700 0_V190]
+菓子を己が手で作る、か。[r]ふむ、なるほど。[wait tVoice]
+[k]
+
+＠渡辺綱
+[tVoice ValVoice_104700 0_V200]
+……そうだな。[r]そちらの方が心が籠もっている気がする。[wait tVoice]
+[k]
+
+？1：じゃあ一緒に作ろっか
+？！
+
+[charaFace A 1]
+＠渡辺綱
+[tVoice ValVoice_104700 0_V210]
+実にありがたい。[r]遠慮無く、その言葉に甘えるとしよう。[wait tVoice]
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_7 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+[scene 105900]
+[branch lblConf3]
+
+[label lblNotClear3]
+[scene 105600]
+[label lblConf3]
+
+[wt 1.0]
+
+
+
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaTalk off]
+[charaDepth G 6]
+[charaDepth F 5]
+[charaDepth H 4]
+
+[charaFace F 1]
+[charaFace G 1]
+[charaFace H 1]
+[charaFadeinFSL F 0.4 -350,0]
+[charaFadein G 0.4 1]
+[charaFadeinFSR H 0.4 270,0]
+[wt 1.5]
+
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠渡辺綱
+[tVoice ValVoice_104700 0_V220]
+では、よろしくお願いします。[wait tVoice]
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[wait wipe]
+
+[wt 0.3]
+
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠渡辺綱
+[tVoice ValVoice_104700 0_V230]
+色、形……。[r]そうだな、色はこれでいこうと思う。[wait tVoice]
+[k]
+
+＠渡辺綱
+[tVoice ValVoice_104700 0_V240]
+そして形だが……どうだろうか。[r]いける？　なるほど。[wait tVoice]
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[wait wipe]
+
+[charaFace A 4]
+[wt 0.3]
+
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠渡辺綱
+[tVoice ValVoice_104700 0_V250]
+すまない、焦げた。[r]やり直しだな。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠渡辺綱
+[tVoice ValVoice_104700 0_V260]
+いや、気落ちしてはいない。[r]大丈夫だ。[wait tVoice]
+[k]
+
+＠渡辺綱
+[tVoice ValVoice_104700 0_V270]
+一からやり直したい、いかがだろうか。[r]ではじっくりと……。[wait tVoice]
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.6 1.0]
+[bgm BGM_EVENT_94 0.8 0.4]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadeinFSL I 0.4 -500,-50]
+
+[charaMoveFSL I -450,-50 0.4]
+[wt 1.0]
+
+[charaFace I 2]
+[charaShake I 0.03 3 3 0.3]
+[wt 0.8]
+
+[charaMoveFSL I -600,-50 0.4]
+[charaFadeout I 0.4]
+[wt 0.6]
+
+[wipeout rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+
+[pictureFrame]
+[wt 0.5]
+
+[bgm BGM_EVENT_94 0.8 1.0]
+[wipein rectangleStripLeftToRight 0.6 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠渡辺綱
+[tVoice ValVoice_104700 0_V280]
+……？[r]気のせいか。[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_94 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠渡辺綱
+[tVoice ValVoice_104700 0_V290]
+あとはこれを冷やして……[twt 4.0][charaFace A 1][r]よし、上手くいったな。[wait tVoice]
+[k]
+
+[bgm BGM_EVENT_2 0.1]
+
+？1：よかったね！
+
+
+＠渡辺綱
+[tVoice ValVoice_104700 0_V300]
+ああ。[r]付き合ってくれて感謝する、マスター。[wait tVoice]
+[k]
+
+[charaFace A 4]
+＠渡辺綱
+[tVoice ValVoice_104700 0_V310]
+それでは[line 3][wait tVoice]
+[k]
+
+？2：鬼のみんなにあげるの？
+
+[charaFace A 4]
+＠渡辺綱
+[tVoice ValVoice_104700 0_V320]
+それはもちろんだが。[r]その前に……。[wait tVoice]
+[k]
+
+？！
+
+
+[messageOff]
+[wt 0.1]
+
+[charaFace A 0]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+
+[se bas2]
+[charaFace S 0]
+[charaFadein S 0.5 0,-70]
+[wt 2.5]
+
+
+[charaFadeout S 0.4]
+[wt 0.5]
+
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠渡辺綱
+[tVoice ValVoice_104700 0_V330]
+まずはあなたにこれを。[r]一番上手くできたものだからな。[wait tVoice]
+[k]
+
+＠渡辺綱
+[tVoice ValVoice_104700 0_V340]
+何より、生前は一度もやらなかったことを[r]やれたのは、あなたの提案のお陰だ。[wait tVoice]
+[k]
+
+[charaFace A 3]
+＠渡辺綱
+[tVoice ValVoice_104700 0_V350]
+菓子の手作り、か。[r]存外、剣に繋がる部分もあって面白いな。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠渡辺綱
+[tVoice ValVoice_104700 0_V360]
+よければまた今度、[r]付き合ってもらえると嬉しいが……。[wait tVoice]
+[k]
+
+？1：喜んで！
+？2：そして、これは[&自分:わたし]から！
+？！
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[effectDestroy bit_talk_valentinegift02]
+[wt 0.1]
+
+[charaFace A 1]
+＠渡辺綱
+[tVoice ValVoice_104700 0_V370]
+[line 3]ありがとう、マスター。[wait tVoice]
+[k]
+
+？1：どういたしまして！
+？！
+
+[messageOff]
+[wt 1.0]
+
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_2 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 10000]
+[wt 1.0]
+
+[fadein black 0.5]
+[wait fade]
+
+＠
+[line 3]そして当日。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+[scene 104200]
+[branch lblConf4]
+
+[label lblNotClear4]
+[scene 105500]
+[label lblConf4]
+
+[pictureFrame cut063_cinema]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk off]
+
+[charaFace A 0]
+[charaFace B 0]
+[charaFadein A 0.1 235,-50]
+[charaFadein B 0.1 -235,-50]
+[wt 0.8]
+
+[charaMoveReturn A 135,-50 0.8]
+[wt 0.3]
+
+[charaFace B 9]
+[charaMove B -255,-50 0.3]
+[wt 1.2]
+
+[charaFace A 4]
+[charaMove A 285,-50 0.4]
+[charaFadeout A 0.4]
+[wt 1.2]
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaFace B 9]
+[charaFadein B 0.1 0,-50]
+[wt 0.5]
+
+[charaMoveReturn B 0,-60 0.4]
+[wt 0.4]
+[charaMoveReturn B 0,-60 0.4]
+[wt 0.7]
+
+[charaFace B 3]
+[wt 1.0]
+
+[charaFace B 1]
+[wt 1.6]
+
+
+[charaDepth I 6]
+[charaFace I 0]
+[charaFadein I 0.4 -460,-50]
+[charaMove I -410,-50 0.4]
+[wt 0.5]
+
+[charaFace B 0]
+[wt 0.7]
+
+[charaMoveReturn B 0,-40 0.4]
+[wt 0.4]
+
+[charaMoveReturn B 0,-40 0.4]
+[wt 0.3]
+[charaFace I 5]
+[wt 0.4]
+
+[charaMoveReturn I -410,-30 0.2]
+[wt 0.2]
+[charaMoveReturn I -410,-30 0.2]
+[wt 0.55]
+
+[charaMove I 0,-50 0.3]
+[wt 0.15]
+
+[charaFace B 4]
+[charaMove B 260,-50 0.15]
+[wt 0.15]
+
+
+[charaFace I 2]
+[shake 0.03 3 3 0]
+[charaEffect I bit_talk_41_fs]
+[wt 2.0]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaFadeout I 0.1]
+[charaEffectStop I bit_talk_41_fs]
+[charaPut I 1200,2000]
+[shakeStop]
+
+
+[branchQuestNotClear lblNotClear5 3000303]
+
+[scene 105800]
+[branch lblConf5]
+
+[label lblNotClear5]
+[scene 106000]
+[label lblConf5]
+
+[pictureFrame]
+
+[wt 1.5]
+
+[se ad1048]
+[seVolume ad1048 0 0]
+
+[seVolume ad1048 1.0 0.1]
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+[seStop ad1048 0.4]
+[se ad85]
+[seVolume ad85 0 0.3]
+[wt 0.5]
+
+[se ad171]
+[seVolume ad171 0 0.3]
+[wt 0.4]
+
+[seStop ad171 0.1]
+[se ad170]
+[seVolume ad170 0 0.3]
+[se ad32]
+[seVolume ad32 0 0.3]
+[wt 0.8]
+
+[se ad8]
+[wt 1.0]
+[charaFace A 5]
+[charaFadein A 0.3 150,0]
+
+[se ad7]
+[charaMove A 0,0 0.3]
+[wt 0.3]
+[seStop ad8 0.4]
+[wt 0.4]
+
+＠渡辺綱
+[tVoice ValVoice_104700 0_V380]
+[line 3]唐突だが、大変本当に申し訳ない。[wait tVoice]
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+
+？1：今度は何があったの！？
+？！
+
+＠渡辺綱
+[tVoice ValVoice_104700 0_V390]
+以前渡したチョコがあっただろう。[r]あれを見た茨木が[line 3][wait tVoice]
+[k]
+
+[messageOff]
+[se ad592]
+[fadeout white 0.5]
+[bgm BGM_EVENT_7 0.5 0.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[branchQuestNotClear lblNotClear6 3000303]
+
+[scene 104200]
+[branch lblConf6]
+
+[label lblNotClear6]
+[scene 105500]
+[label lblConf6]
+
+[charaTalk I]
+[charaFace I 5]
+[charaFadein I 0.1 1]
+
+[charaPut K 1]
+
+[wt 0.8]
+
+[fadein white 0.5]
+[wait fade]
+[wt 0.2]
+
+＠渡辺綱
+『この菓子はつまり！　[#吾:われ]や酒呑の首を獲る[r]　予行演習ということではないか！』
+[k]
+
+[charaFace I 6]
+＠渡辺綱
+『その挑戦、うむ、鬼の[#頭:かしら]として（バリバリ）[wt 0.15][charaMoveReturn I 0,-10 0.3][r]　おのれ美味ではないか、受けてやろう！』[wt 0.15][charaMoveReturn I 0,-10 0.3]
+[k]
+
+[charaFace I 5]
+＠渡辺綱
+『よーし、酒呑！　ゆくぞ！』
+[k]
+
+[charaFace I 2]
+＠渡辺綱
+[f large]『綱の！　首を獲る！』
+[k]
+
+[messageOff]
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout I 0.1]
+[charaPut K 2000,2500]
+
+[branchQuestNotClear lblNotClear7 3000303]
+
+[scene 105800]
+[branch lblConf7]
+
+[label lblNotClear7]
+[scene 106000]
+[label lblConf7]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+[wt 0.8]
+
+[bgm BGM_EVENT_7 0.5 1.0]
+[fadein white 0.5]
+[wait fade]
+
+＠渡辺綱
+[tVoice ValVoice_104700 0_V400]
+となり。[r]後は流れるように斬り合いになった。[wait tVoice]
+[k]
+
+＠渡辺綱
+[tVoice ValVoice_104700 0_V410]
+贈り物とは難しいものだな……。[wait tVoice]
+[k]
+
+？1：悲しいすれ違いだね……
+？！
+
+[charaFace A 0]
+＠渡辺綱
+[tVoice ValVoice_104700 0_V420]
+うん？[r]いや、悲しくはないぞ。[wait tVoice]
+[k]
+
+＠渡辺綱
+[tVoice ValVoice_104700 0_V430]
+どちらも殺し合いではないと理解していたからな。[r]命懸けではあるが。[wait tVoice]
+[k]
+
+[charaFace A 3]
+＠渡辺綱
+[tVoice ValVoice_104700 0_V440]
+あれはあれで、なかなかに楽しいものだよ。[r]俺にとってはだが。[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠渡辺綱
+[tVoice ValVoice_104700 0_V450]
+……加えて。[r]全てが伝わらなかった訳ではない。[wait tVoice]
+[k]
+
+＠渡辺綱
+[tVoice ValVoice_104700 0_V460]
+全員、菓子については美味かった、[r]で意見が一致していた。[wait tVoice]
+[k]
+
+＠渡辺綱
+[tVoice ValVoice_104700 0_V470]
+俺が作ったことを知って、[r]全員が驚いたのも痛快だった。[wait tVoice]
+[k]
+
+[charaFace A 4]
+＠渡辺綱
+[tVoice ValVoice_104700 0_V480]
+まったく[line 3][r]作り手[#冥利:みょうり]に尽きるというものだ。[wait tVoice]
+[k]
+
+？1：良かったね！
+？！
+
+[messageOff]
+[charaFace A 1]
+[wt 1.0]
+
+
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

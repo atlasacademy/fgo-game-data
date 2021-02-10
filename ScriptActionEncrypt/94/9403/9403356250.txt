@@ -1,0 +1,687 @@
+
+＄94-03-35-62-5-0
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 1048000 1 サンタカルナ]
+[equipSet B 9807940 1 バレンタイン礼装]
+
+[charaSet T 5009040 1 エフェクト用ダミー]
+
+
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[scene 104200]
+[branch lblConf]
+[label lblNotClear]
+[scene 105500]
+[label lblConf]
+
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V010]
+マスター。準備はいいか？[wait tVoice]
+[k]
+
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V020]
+いや……何やら今日は周りが騒がしい気がする。[r]忙しいなら日を改めても構わないが。[wait tVoice]
+[k]
+
+？1：大丈夫、準備は万端！
+？2：気にせず行こう！
+？！
+
+[charaFace A 9]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V030]
+そうか。オレが見るに、[r]それはダ・ヴィンチ印のトレーナー用自転車だな。[wait tVoice]
+[k]
+
+
+[charaFace A 14]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V040]
+おまえも気合いが入っているようだ。[r]とても頼もしい。[wait tVoice]
+[k]
+
+[messageOff]
+[se ade89]
+[wt 0.1]
+[charaFaceFade A 6 0.6]
+[wt 0.3]
+[seStop ade89 0.3]
+[wt 0.8]
+
+
+[charaFace A 1]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V050]
+サンタの力がいつまた求められるか分からない。[r]鍛錬だけは続けておかなくてはな。[wait tVoice]
+[k]
+
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V060]
+行くぞ、マスター。[r][line 3]ロードワークの始まりだ！[wait tVoice]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 107600]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.2]
+
+[cueSe SE_21 21_ade550]
+[wt 1.6]
+
+[bgm BGM_EVENT_63 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[se ade530]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V070]
+シッ……シッ……。[wt 0.5][seStop ade530 0.1][wait tVoice]
+[k]
+
+[charaFace A 1]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V080]
+マスター、今日は身体が軽い。[r]専門用語で『キレている』というヤツだ。[wait tVoice]
+[k]
+
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V090]
+ストレートがジャブ並に打てる。[r]もう少し、ペースを上げてくれないか。[wait tVoice]
+[k]
+
+？1：了解！
+？！
+
+[messageOff]
+[wipeout leftToRight 0.5 1.0]
+[bgm BGM_EVENT_63 0.5 0.4]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 21803]
+[wt 0.6]
+
+[bgm BGM_EVENT_63 0.5 1.0]
+[wipein rightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+[cueSe SE_21 21_ade551]
+[wt 1.4]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V100]
+実にサンタらしいルートだ。[r]雪で滑りそうなぶん、フットワークが鍛えられる。[wait tVoice]
+[k]
+
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V110]
+身が引き締まる思いだ。[r]身が引き締まる思いだ。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V120]
+[line 3]む。[r]いかん、オレの都合ばかりだった。[wait tVoice]
+[k]
+
+[charaFace A 4]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V130]
+マスターは大丈夫か？[r]足腰にくるようなら言うがいい。[wait tVoice]
+[k]
+
+？1：ダ・ヴィンチちゃん特製のこのトレーナー用自転車
+？2：なんと除雪モードがついてるのですっごく楽……
+？！
+
+[charaFace A 1]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V140]
+そうか。見たところメガホンやミット、[r]ストップウォッチなども内蔵されている優れものだ。[wait tVoice]
+[k]
+
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V150]
+それならばどんな過酷なロードワークにも[r]ついてこられるだろう。頼りにしている。[wait tVoice]
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.5 1.0]
+[bgm BGM_EVENT_63 0.5 0.4]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 20700]
+[wt 0.6]
+
+[bgm BGM_EVENT_63 0.5 1.0]
+[wipein rightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+[cueSe SE_21 21_ade551]
+[wt 1.4]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V160]
+フッ、ハッ……。[wait tVoice]
+[k]
+
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V170]
+オレはこれほど疲れやすかったか？[r]汗が止まらない！　だがそれがいい！[wait tVoice]
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.5 1.0]
+[bgm BGM_EVENT_63 0.5 0.4]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 47000]
+[wt 0.6]
+
+[bgm BGM_EVENT_63 0.5 1.0]
+[wipein rightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+[cueSe SE_21 21_ade551]
+[wt 1.4]
+
+？1：下り道みたいなスピードで登れる！
+？2：この電動アシスト機能、すごい……
+？！
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V180]
+この坂道……。[r]良い負荷だ。良い負荷だ。[wait tVoice]
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.5 1.0]
+[bgm BGM_EVENT_63 0.5 0.4]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 106200]
+[wt 0.6]
+
+[bgm BGM_EVENT_63 0.5 1.0]
+[wipein rightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+[cueSe SE_21 21_ade551]
+[wt 1.4]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V190]
+よし。[r]このあたりでダッシュのメニューに移行しよう。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V200]
+トレーナー、ストップウォッチを。[wait tVoice]
+[k]
+
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V210]
+僅かでも規定タイムに遅れたら[r]本数にはカウントしないでくれ。[wait tVoice]
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.5 1.0]
+[bgm BGM_EVENT_63 0.5 0.4]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 109600]
+[wt 0.6]
+
+[bgm BGM_EVENT_63 0.5 1.0]
+[wipein rightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V220]
+次は砂浜でのフットワーク訓練だ。[wait tVoice]
+[k]
+
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V230]
+おそらくその自転車は[r]ピッチングマシンのようなものに変形する。[wait tVoice]
+[k]
+
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V240]
+そのあたりの位置に置いて、[r]ボールをセットし続けてほしい。[wait tVoice]
+[k]
+
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V250]
+設定は『最高速』だ。問題ない。[r]すべて防御テクニックで回避してみせる。[wait tVoice]
+[k]
+
+[messageOff]
+[charaFace A 5]
+[wt 0.3]
+
+[cueSe Battle bac23]
+[charaScale T 0.5]
+[charaPut T -60,-10]
+[charaEffect T bit_talk_14]
+[wt 0.15]
+
+[se ad7]
+[seVolume ad7 0 0.4]
+[charaMove A 75,5 0.15]
+[wt 0.5]
+
+
+[cueSe Battle bac23]
+[charaScale T 0.5]
+[charaPut T 150,-170]
+[charaEffect T bit_talk_14]
+[wt 0.15]
+
+
+[se ad7]
+[seVolume ad7 0 0.4]
+[charaMove A -85,-5 0.15]
+[wt 0.5]
+
+
+[cueSe Battle bac23]
+[charaScale T 0.5]
+[charaPut T -85,65]
+[charaEffect T bit_talk_14]
+[wt 0.15]
+
+
+[se ad7]
+[seVolume ad7 0 0.4]
+[charaMove A 10,-95 0.15]
+[wt 0.8]
+
+
+[wipeout rollRight 1.0 1.0]
+[bgmStop BGM_EVENT_63 1.0]
+[wait wipe]
+
+[charaPut T 1500,200]
+[charaEffectStop T bit_talk_14]
+[charaFadeout A 0.1]
+
+[scene 109601]
+[wt 1.5]
+
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V260]
+今日のロードワークはここまでとしておくか。[r]感謝するぞ、マスター。助かった。[wait tVoice]
+[k]
+
+？1：今日も頑張ってトレーニングを終えたカルナに
+？2：渡したいものがあります
+？！
+
+[charaFace A 0]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V270]
+[FFFFFF]？[-][wait tVoice]
+[k]
+
+[messageOff]
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift02]
+[wt 3.7]
+
+[effectDestroy bit_talk_valentinegift02]
+
+[charaFace A 3]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V280]
+これは……チョコ……？[wait tVoice]
+[k]
+
+？1：やっぱりプロテインとかのほうがよかった？
+？！
+
+
+[charaFace A 5]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V290]
+[line 3]いや。とんでもない。[wait tVoice]
+[k]
+
+[charaFace A 4]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V300]
+そうか。今日はバレンタインだったのか。[r]オレはやはり、自分の都合ばかり……[wait tVoice]
+[k]
+
+[charaFace A 1]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V310]
+すまない、気付いていなかったので驚いただけだ。[r]これはありがたく受け取っておこう。[wait tVoice]
+[k]
+
+[charaFace A 0]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V320]
+しかし……だとすると。[r]計画を早めねばなるまい。[wait tVoice]
+[k]
+
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V330]
+タイトルマッチは意外と近かった、ということだな。[wait tVoice]
+[k]
+
+？1：…………？
+？！
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_2 1.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+[scene 104200]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 105500]
+[label lblConf2]
+[wt 1.0]
+
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V340]
+マスター。少しいいだろうか。[wait tVoice]
+[k]
+
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V350]
+オレは以前より、マスターに[r]渡さなくてはならないものがあると思っていた。[wait tVoice]
+[k]
+
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V360]
+バレンタインのチョコでその思いはより一層強まった。[r]よって、今が渡すときだ。[wait tVoice]
+[k]
+
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V370]
+サンタが渡すプレゼントは、[r]それすなわちクリスマスプレゼントとなる。[wait tVoice]
+[k]
+
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V380]
+バレンタインのクリスマスプレゼントとして[r]遠慮なく受け取ってほしい。[wait tVoice]
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ad79]
+[wt 0.1]
+[effect bit_talk_valentinegift01]
+[backEffect bit_talk_valentine_brilliant_fs]
+[wt 3.0]
+[backEffectStop bit_talk_valentine_brilliant_fs]
+[wt 1.0]
+
+[charaFadeout A 0.4]
+
+[se bas2]
+[charaFace B 0]
+[charaFadein B 0.5 0,-70]
+[wt 2.0]
+
+？1：チャンピオン、トロフィー……？
+？！
+
+[charaFadeout B 0.4]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V390]
+ああ。[wait tVoice]
+[k]
+
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V400]
+マスターはトレーナーとしてオレの鍛錬に[r]付き合い、力を与えてくれている。[wait tVoice]
+[k]
+
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V410]
+その苦労、そしてオレがそれに対して[r]抱いている感謝の念はまさにチャンピオンクラス。[wait tVoice]
+[k]
+
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V420]
+チャンピオン。つまり王者というコトだ。[r]この上はおそらくない。ない筈だ。[wait tVoice]
+[k]
+
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V430]
+だから……王者にふさわしいこのトロフィーを[r]いつか贈らねば、と思っていた。[wait tVoice]
+[k]
+
+[charaFace A 12]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V440]
+勿論、本来ならチャンピオンベルトも[r]セットで渡すべきなのだが……[wait tVoice]
+[k]
+
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V450]
+面目ない。今回は間に合わなかった。[r]ケツァル・コアトルが手強くてな。[wait tVoice]
+[k]
+
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V460]
+それはまた、[r]別の機会ということにしてほしい。[wait tVoice]
+[k]
+
+[charaFace A 9]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V470]
+とはいえ、これも[r]間違いなくチャンピオンの証。[wait tVoice]
+[k]
+
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V480]
+さあ、遠慮せずに掲げてみてくれ。[wait tVoice]
+[k]
+
+[charaFace A 10]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V490]
+おまえが、おまえこそが……[r]チャンピオンだ！[wait tVoice]
+[k]
+
+[messageOff]
+[charaMoveScale A 1.1 0.5]
+[charaMove A 0,11 0.3]
+[wt 0.3]
+[charaMove A 0,9 0.2]
+[se ad95]
+[wt 0.3]
+[seStop ad95 0.1]
+[wt 0.6]
+
+[se ad77]
+[charaMoveReturn A 0,2 0.6]
+[wt 0.4]
+[seStop ad77 0.4]
+[wt 1.0]
+
+？1：意外とずっしり重いね
+？2：ずいぶん豪華だけど、材質は……？
+？！
+
+[charaFace A 8]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V500]
+マスターに渡すトロフィーだ。[r]下手なものは渡せん。[wait tVoice]
+[k]
+
+[charaFace A 12]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V510]
+しかし今のオレは財を持つ王でもなければ[r]発明家のサーヴァントでもない。[wait tVoice]
+[k]
+
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V520]
+いつだかと同じように、元々持ち合わせていた[r]武具のパーツを打ち直して作るしかなかった。[wait tVoice]
+[k]
+
+？1：（別の意味でまた重いものだった……！）
+？！
+
+[charaFace A 8]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V530]
+お[#古:ふる]……とも言えるのかもしれんが、[r]気持ちは込めた。[wait tVoice]
+[k]
+
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V540]
+その意味ではやはりこれも会心の出来だ。[r]材料は気にせず受け取ってくれると助かる。[wait tVoice]
+[k]
+
+？1：もちろん、嬉しいよ
+？2：ありがとう、大事にするね
+？！
+
+[messageOff]
+
+[charaFace A 9]
+[wt 1.5]
+
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V550]
+ところで、チャンピオンになった者は[r]トロフィーを掲げながら、[wait tVoice]
+[k]
+
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V560]
+トレーナーに肩車されて[r]リングの上を回るものだろう。[wait tVoice]
+[k]
+
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V570]
+カルデアを練り歩くのならば[r]オレが肩車を提供するぞ。[wait tVoice]
+[k]
+
+？1：それは遠慮しておきます……
+？！
+
+[charaFace A 12]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V580]
+……そうか。おまえのチャンピオンらしいところを[r]皆に見せられるいい機会だと思ったのだが。[wait tVoice]
+[k]
+
+[charaFace A 9]
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V590]
+それは、オレの引退試合までとっておこう。[wait tVoice]
+[k]
+
+＠サンタカルナ
+[tVoice ValVoice_104800 0_V600]
+無論、サンタクロース統一王座決定戦で、[r]頂点に立つ時だが。[wait tVoice]
+[k]
+
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
