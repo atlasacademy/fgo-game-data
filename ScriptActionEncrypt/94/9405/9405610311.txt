@@ -1,0 +1,247 @@
+
+
+
+
+＄94-05-61-03-1-1
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 9011000 1 カレン]
+[charaSet B 2018001 1 子ギル]
+[charaSet C 3001000 1 クー・フーリン]
+[charaSet D 98102400 1 イリヤ]
+[charaSet E 98103400 1 クロエ]
+[charaSet F 1098163400 1 美遊]
+[charaSet G 1098192500 1 エリセ]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 104200]
+[branch lblConf]
+[label lblNotClear]
+[scene 105500]
+[label lblConf]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[fowardEffect bit_talk_36_pink]
+[cueSe SE_21 21_ade562]
+[wt 1.5]
+
+＠カレン
+今です！[r]ゴッドバズーカ発射ー！
+[k]
+
+[messageOff]
+[fowardEffectStop bit_talk_36_pink]
+
+[fowardEffect bit_talk_godbazooka]
+[cueSe SE_21 21_ade563]
+[wt 1.3]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.4]
+
+[charaFace G 6]
+[charaShake G 0.05 3 3 1.5]
+[fowardEffect bit_talk_explosion_triple02]
+[se ad609]
+[wt 1.5]
+[bgmStop BGM_EVENT_3 1.5]
+[wt 1.2]
+[charaCrossFade G 3043000 19 0.7]
+[se ad42]
+[seVolume ad42 0 0.4]
+[seStop ad42 0.9]
+[wait charaCrossFade G]
+[wt 0.2]
+
+＠エリセ
+きゅうう……
+[k]
+
+[messageOff]
+[charaMove G 0,-20 0.4]
+[charaFadeout G 0.4]
+[wt 0.2]
+[se ad144]
+[wt 0.6]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.2]
+
+[fowardEffect bit_talk_magical_pon]
+[se ade217]
+
+[charaCrossFade A 9011001 0 0.4]
+[wait charaCrossFade A]
+[wt 0.5]
+
+[charaFace A 1]
+
+＠カレン
+ありがとうございます、エリセさん……
+[k]
+
+
+
+
+
+
+＠カレン
+貴方が協力してくれたお陰で、[bgm BGM_EVENT_7 0.1][r]カルデアの平和は守られました。
+[k]
+
+？1：協力とは一体……
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+すげえな、おい。[r]なに食ったらここまで面の皮が厚くなるんだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠子ギル
+イリヤさん、すみませんが、[r]彼女を医務室まで運んであげてください。
+[k]
+
+＠子ギル
+そして、そのまま戻ってこないでください。
+[k]
+
+＠子ギル
+犠牲は少ない方がいいですもんね……[r]いや、本当はボクだって嫌ですけど……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 1]
+[charaDepth D 3]
+[charaDepth F 2]
+
+[charaTalk D]
+[charaFace E 4]
+[charaFadeinFSL E 0.1 -300,0]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[charaFace F 4]
+[charaFadeinFSR F 0.1 300,0]
+
+＠イリヤ
+ぎ、ギルくん……！[r]えーとえーと、頑張ってね……！？
+[k]
+
+[charaFace E 2]
+
+＠クロエ
+死ぬんじゃないわよ……！
+[k]
+
+＠美遊
+いや、死なないと思うけど……
+[k]
+
+[messageOff]
+[charaFadeout D 0.4]
+[charaFadeout E 0.4]
+[charaFadeout F 0.4]
+[se ade422]
+[seStop ade422 1.5]
+[se ade423]
+[seStop ade423 1.5]
+[wt 2.0]
+
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠カレン
+ああ……行ってしまいましたか。[r]もう同じ手段は使えませんね。
+[k]
+
+＠カレン
+まあ、使う気もありませんでしたが。
+[k]
+
+？1：そうなの？
+
+？！
+
+[charaFace A 6]
+
+＠カレン
+ふふ。
+[k]
+
+＠カレン
+言ったでしょう。[r]ファッションセンスが最高だと。
+[k]
+
+＠カレン
+彼女はとても、私好みですから。[r]酷使するのは一日一回にとどめないと。
+[k]
+
+？1：（酷使の自覚はあるんだ[&な:ね]……）
+？2：（カレン先生はスパルタだったのかな？）
+
+？！
+
+[charaFace A 0]
+
+＠カレン
+ともあれ、このあたりにはもう[r]悪性の魔力はないようです。
+[k]
+
+＠カレン
+残念ですが、[r]少女たちとの楽しい休憩はここまで。
+[k]
+
+＠カレン
+すべては善きバレンタインのため。[r]休まず、探索を続けましょう。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
