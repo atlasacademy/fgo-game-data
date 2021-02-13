@@ -1,0 +1,1544 @@
+
+
+
+
+
+＄94-05-61-05-1-0
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 9011001 1 カレン]
+[charaSet B 2018001 1 子ギル]
+[charaSet C 3001000 1 クー・フーリン]
+[charaSet D 1038000 1 イアソン]
+[charaSet E 5001001 1 メディア]
+[charaSet F 99502600 1 マシュ]
+
+[imageSet G back10000 1]
+[charaScale G 1.05]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 105800]
+[branch lblConf]
+[label lblNotClear]
+[scene 106000]
+[label lblConf]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+[wt 0.3]
+
+[charaPut T 1]
+[se ad13]
+[charaEffect T bit_talk_10_LowLevel]
+[wt 0.2]
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+
+＠マシュ
+すみません、先輩。
+[k]
+
+＠マシュ
+ビター・シャドウについての解析は[r]まだ何も進んでいない状態です。
+[k]
+
+＠マシュ
+お役に立ちそうな情報を得られれば、[r]すぐにお知らせしますので……
+[k]
+
+[charaFace F 6]
+
+＠マシュ
+あ……[r]またエラーメッセージが……
+[k]
+
+？1：どうしたの？
+
+？！
+
+[charaFace F 0]
+
+＠マシュ
+あ、いえ。施設内の電力供給に、[r]多少のロスが発生していたようです。
+[k]
+
+＠マシュ
+とは言っても誤差の範囲内ですので、[r]どうぞご心配なく。
+[k]
+
+＠マシュ
+では先輩、[r]引き続き調査をよろしくお願いしますね。
+[k]
+
+？1：うん、そっちもよろしく
+
+？！
+
+[messageOff]
+[charaFace F 13]
+[wt 0.2]
+[charaMoveReturn F 0,-5 0.4]
+[wt 0.8]
+
+[se ad1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+[charaEffectStop T bit_talk_10_LowLevel]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+やれやれ、あっちの動きは無しか。[r]こっちも一日無駄骨だったがな。
+[k]
+
+＠クー・フーリン
+なあ、カレンさんよ。
+[k]
+
+＠クー・フーリン
+おまえさんの力で、次にビター・シャドウが[r]湧く場所がわからないもんかね？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠カレン
+自らの無能さを他人に押しつけて味わう[r]お茶は美味しいですか、クー・フーリン？
+[k]
+
+＠カレン
+獲物が見えている狩り場で暴れようだなんて、[r]決まったレールの上を走るトロッコのよう。
+[k]
+
+＠カレン
+貴方の堕落もここに極まれり、[r]といった所ですね。
+[k]
+
+[charaFace A 8]
+
+＠カレン
+……む、お茶が無くなりましたか。[r]マスター、淹れてきてください。
+[k]
+
+？1：はい
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+
+＠クー・フーリン
+思い切り他人に頼ってんじゃねーか！？
+[k]
+
+＠クー・フーリン
+ベッドに寝転がって説教したって、[r]まるで説得力ねえからな！
+[k]
+
+＠クー・フーリン
+あと、マスターも律儀に[r]茶ぁ淹れてんじゃねえよ！
+[k]
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠カレン
+安心したわ。[r]吠え声だけはまだ衰えていないようね。
+[k]
+
+[charaFace A 11]
+
+＠カレン
+私にかぎり、休息を取る事も仕事のうちです。
+[k]
+
+＠カレン
+なにしろ、この細腕でバズーカを[r]抱えるのも疲れますので。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[charaFadeTime G 0.1 0.6]
+
+＠子ギル
+（使って疲れるとかじゃないんですね……）
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠カレン
+とはいえ、当てのないまま捜し出すのも、[r]そろそろ厳しいものがあります。
+[k]
+
+＠カレン
+倒しても倒してもビター・シャドウは出現します。[r]おそらく、[#原因:ボス]がいるのでしょう。
+[k]
+
+[charaFace A 12]
+
+＠カレン
+原因は私です、などと[#懺悔:ざんげ]しつつ、[r]向こうから来てくれないものでしょうか。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad870]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠子ギル
+おや？[r]来客のようですよ、マスター。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？1：はーい、どうぞ
+
+？！
+
+[messageOff]
+[se ad8]
+[wt 1.0]
+
+[se ad95]
+[seVolume ad95 0 0.1]
+[seVolume ad95 0.5 1.0]
+[wt 1.2]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.4 1]
+[wt 0.4]
+[seStop ad95 0.2]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+＠イアソン
+やぁやぁ、親愛なる我がマスター！[r]突然押し掛けてすまないな。
+[k]
+
+[messageOff]
+[effect bit_talk_starshine 34,156]
+[se ade126]
+[wt 1.4]
+
+[charaFace D 1]
+
+＠イアソン
+おや？[bgm BGM_EVENT_7 0.1][r]そこにいるのは、もしかして……
+[k]
+
+＠イアソン
+クー・フーリンにギルガメッシュ。[r]二人ともそんなに仲が良かったのか？
+[k]
+
+[charaFace D 7]
+
+＠イアソン
+いや、仲が良くて結構！[r]なんといっても友は一生の宝だからな。
+[k]
+
+[messageOff]
+[effect bit_talk_starshine 34,156]
+[se ade126]
+[wt 1.4]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+……アンタ、何か悪い物でも食ったか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠子ギル
+今日のイアソンさん、[r]なんだか気持ち悪いですね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠イアソン
+アハハ、きついなぁ！
+[k]
+
+＠イアソン
+いやわかってる、わかってるとも。[r]憎まれ口も信頼があってこそだ！
+[k]
+
+[charaFace D 0]
+
+＠イアソン
+ところで、そちらのお嬢さんは……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠カレン
+はい、カレンちゃんですが、何か。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠イアソン
+……[r]……
+[k]
+
+＠イアソン
+どこかで会った事ある？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠カレン
+ＮＡＮＰＡにしては古くさいアプローチですね。[r]王道、とも言えますが。
+[k]
+
+＠カレン
+今は人類のため、こうして愛の神の役割を[r]請け負っている私ですが、
+[k]
+
+＠カレン
+疑似サーヴァントになろうと信仰は変わりません。[r]私は主にお仕えする身、どうかお引き取りを。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠イアソン
+あ、いや……まぁいいか。
+[k]
+
+[charaFace D 1]
+
+＠イアソン
+そんな事よりマスター、[r]今年もほら、バレンタインの時季だろう？
+[k]
+
+＠イアソン
+おまえにはどうしても、[r]受け取ってもらいたい物があってさ。
+[k]
+
+[messageOff]
+[se ad77]
+[charaMoveReturn D 0,-5 0.6]
+[wt 0.6]
+[charaMoveReturn D 0,-5 0.6]
+[wt 0.7]
+
+＠イアソン
+どうか受け取ってほしい、[r]これはオレが……
+[k]
+
+[charaFace D 7]
+
+＠イアソン
+長年集め続けてきた、我が盟友、[r]ヘラクレスのレアグッズ詰め合わせだ。
+[k]
+
+？1：うわぁ、[#漢:おとこ]くさいー
+
+？！
+
+[charaFace D 6]
+
+＠イアソン
+フフ……
+[k]
+
+＠イアソン
+日頃の感謝の気持ちを伝えるには、[r]これくらいしか思いつかなかった……
+[k]
+
+[charaFace D 0]
+
+＠イアソン
+どうか、これからもよろしく頼む。
+[k]
+
+[charaFace D 7]
+
+＠イアソン
+オレとおまえとヘラクレスの力を合わせて、[r]共に未来を取り戻そうぜ……！
+[k]
+
+＠イアソン
+じゃあな！
+[k]
+
+[messageOff]
+[se ad95]
+[seStop ad95 1.5]
+[charaFadeout D 0.4]
+[wt 0.8]
+
+[se ad8]
+[wt 2.0]
+
+？1：えっ、なにこれこわい
+
+？！
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠カレン
+あの方は、いつもあんな風なのですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth B 2]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadeinFSR C 0.1 2]
+[charaFace B 4]
+[charaFadeinFSL B 0.1 0]
+
+＠クー・フーリン
+いや、今日のアイツは、[r]なんかすごい気持ち悪かった……
+[k]
+
+＠子ギル
+この[#漢:おとこ]くさいコレクションにしても、[r]簡単に手放すとも思えませんよ。
+[k]
+
+[charaTalk off]
+
+＠二人
+……[r]……
+[k]
+
+＠二人
+……こわいなぁ。
+[k]
+
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad59]
+[seVolume ad59 0 0.1]
+[seVolume ad59 0.5 0.5]
+[wt 1.0]
+[seStop ad59 1.0]
+[wt 0.5]
+
+[se ad8]
+[wt 1.5]
+
+[charaTalk on]
+
+[se ad59]
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.4 1]
+[wt 0.4]
+[seStop ad59 0.2]
+
+＠メディア
+今ここにイアソン来なかった！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+なんなんだよ、もう。[r]今度はメディアの姉ちゃんかよ。
+[k]
+
+＠クー・フーリン
+お粥の姉ちゃんと言い、[r]なんでおまえらは落ち着きがねえんだ。
+[k]
+
+＠クー・フーリン
+イアソンなら今しがた、[r]ヘラクレスグッズ置いて帰ったぞ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+[charaShake E 0.05 3 3 0.3]
+
+＠メディア
+うわっ、[#漢:おとこ]くさ！
+[k]
+
+[charaFace E 4]
+
+＠メディア
+くっ……思っていた以上の効果だわ。[r]すぐに追いかけないと。
+[k]
+
+[charaFace E 2]
+
+＠メディア
+マスターには後で、話がありますから！
+[k]
+
+[messageOff]
+[se ad59]
+[seStop ad59 1.5]
+[charaFadeout E 0.4]
+[wt 0.8]
+
+[se ad8]
+[wt 2.0]
+
+？1：なんだった[&んだ:の]……
+
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-10]
+
+＠カレン
+……[r]……
+[k]
+
+[messageOff]
+[charaMove A 0,0 0.4]
+[wt 0.4]
+
+[charaFace A 1]
+
+＠カレン
+面白そうですね。[r]追いかけてみましょう。
+[k]
+
+[messageOff]
+[se ade422]
+[seStop ade422 1.5]
+[charaFadeout A 0.4]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+フッ……仕方ねえな。[r]おまえならそう言うと思ったぜ。
+[k]
+
+[messageOff]
+[se ad95]
+[seStop ad95 1.5]
+[charaFadeout C 0.4]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠子ギル
+ああ、駄目ですよ二人とも。[r]そんな[#興味本位:きょうみほんい]で立ち入っちゃ。
+[k]
+
+[messageOff]
+[se ade423]
+[seStop ade423 1.5]
+[charaFadeout B 0.4]
+[wt 2.0]
+
+？1：君たち本当は仲良いよね？
+
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_7 1.0 0.5]
+[wait fade]
+
+[branchQuestNotClear lblNotClear2 3000303]
+[scene 104200]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 105500]
+[label lblConf2]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_7 1.0 1.0]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+[wt 0.1]
+
+[se ad180]
+[charaShake D 0.05 3 3 0.7]
+[wt 1.0]
+
+＠イアソン
+ハハハ、術を解いてくれないかメディア。[r]後ろ手に極められた手首とかすっげ痛いし。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠メディア
+えい、スリープ。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+[wt 0.1]
+
+[se ad39]
+[effect bit_talk_easy_spell_r]
+[wt 2.0]
+
+[charaFace D 6]
+
+＠イアソン
+スヤァ……
+[k]
+
+[messageOff]
+[charaMove D 0,-20 0.4]
+[charaFadeout D 0.4]
+[wt 0.2]
+[se ad144]
+[wt 0.6]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠メディア
+ふぅ、手こずらせてくれたわね。[r]ひとまずこれで良しとして……
+[k]
+
+[bgmStop BGM_EVENT_7 1.2]
+
+＠メディア
+で、あなたたちは何でここにいるわけ？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+いや、どんな残虐ショーが始まるかと[bgm BGM_EVENT_2 0.1][r]思って来てみたんだが……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠子ギル
+意外とあっけなかったですね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠メディア
+あのねぇ……
+[k]
+
+？1：一体何事なんです？
+
+？！
+
+＠メディア
+ちょっと、あなたまで[r]のこのことやって来たわけ？
+[k]
+
+＠メディア
+まぁ、いいわ。[r]どうせ相談するつもりだったし……
+[k]
+
+＠メディア
+イアソンがおかしくなった原因はね、[r]これよ。
+[k]
+
+[messageOff]
+[se ad77]
+[charaMoveReturn E 0,-5 0.6]
+[wt 0.6]
+[charaMoveReturn E 0,-5 0.6]
+[wt 0.7]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠子ギル
+これは……[r]チョコレート、ですか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+
+＠メディア
+そう、カルデアで密かに流行している、[r]入手困難な幻のチョコレート。
+[k]
+
+＠メディア
+その名も[line 3]
+[k]
+
+[charaFace E 2]
+
+＠メディア
+[f large]『ゴッド・ラブ』。
+[k]
+
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+名前からして、[r]胡散臭さハンパねえな、おい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠メディア
+評判を聞き付けた私は、[r]やっとの思いでこれを手に入れたわ。
+[k]
+
+[charaFace E 4]
+
+＠メディア
+でも、手にしたチョコレートには[r]微量な魔力が含まれていた。
+[k]
+
+＠メディア
+その事を問いただそうとしたのだけれど、[r]これを売ってた女は逃げ足が速くて……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠子ギル
+ちなみにその人、どんな顔してました？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠メディア
+[FFFFFF]？[-]　わからないわよ。[r]紙袋かぶってたし。
+[k]
+
+＠メディア
+まあ、どうせ、ユニヴァース方面とかの[r]アレでアレなんだろうけど。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[charaFadeTime G 0.1 0.6]
+
+＠子ギル
+（環境に慣れすぎている……）
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠メディア
+売人は逃がしちゃったけど、[r]チョコレートは手元に残ったわけだし、
+[k]
+
+＠メディア
+じっくり調べてみようと思ったのよ。
+[k]
+
+＠メディア
+それで、食べた人間に何らかの作用を[r]もたらす事まではわかったんだけど……
+[k]
+
+＠メディア
+実際にどんな影響が出るのか、[r]そこまではわからなかった。
+[k]
+
+[charaFace E 0]
+
+＠メディア
+丁度その時、[r]たまたまイアソンが通りかかって。
+[k]
+
+？1：さらりと酷い事を……
+
+？！
+
+＠メディア
+後はまぁ、あなたたちも知っての通り。[r]綺麗なイアソンの出来上がりってわけね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+ちょっと待ってくれ、つまり……
+[k]
+
+＠クー・フーリン
+そのチョコレートは、[r]サーヴァントの性格を変えちまうのか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠子ギル
+ようやく話が見えてきました。
+[k]
+
+＠子ギル
+あちこちで見かけたフレンドリーな[r]雰囲気の人たちは、これが原因でしたか。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠メディア
+まぁ、イアソンに関してはね、
+[k]
+
+＠メディア
+別にこのままでもいいかなーなんて[r]思う所がなくもないけれど……
+[k]
+
+[charaFace E 4]
+
+＠メディア
+綺麗すぎても、[r]ちょっと気持ち悪いでしょう？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠カレン
+素晴らしい。
+[k]
+
+＠カレン
+どれほど自分を傷つけた相手であれ、[r]それを赦そうとする心[line 3]
+[k]
+
+＠カレン
+それこそが隣人への[#無償の愛:ア　ガ　ペ　ー]。[r]とても好ましい在り方です。
+[k]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+＠カレン
+まぁ、もう少し泥沼になってくれた方が[r]見ている分には楽しいのですが……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠メディア
+人の修羅場で楽しもうと[bgm BGM_EVENT_7 0.1][r]してるんじゃないわよ！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠カレン
+そんな……[r]私の心を読んだのですか……！？
+[k]
+
+[charaFace A 6]
+
+＠カレン
+ふふふ。少々恥ずかしいですが、[r]さすがは神代の魔術師。
+[k]
+
+＠カレン
+神秘の深さに感服するほかありません。[r]その読心の術、今度教えてくださいね？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠メディア
+思[messageShake 0.05 4 4 0.2]い切り口に出して言ってたでしょうが！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠子ギル
+わかります。[r]ツッコみたくなる気持ちわかります。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+コイツ本気なんだかボケてるんだか、[r]マジでわからねえ時あるよな……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠メディア
+まったく！
+[k]
+
+＠メディア
+どこの[#英霊:だれ]だか知らないけれど、[r]この私に知った風な口を……
+[k]
+
+＠メディア
+……[r]……
+[k]
+
+[charaFace E 5]
+
+＠メディア
+あなた、どこかで会った事ある？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠カレン
+さて、どうだったでしょうか。
+[k]
+
+＠カレン
+私はカレン・Ｃ・オルテンシア。[r]カレンと申します。
+[k]
+
+＠カレン
+そして、この私を依り代とする神霊の名は[r][#アムール]。
+[k]
+
+[bgmStop BGM_EVENT_7 1.5]
+
+＠カレン
+アムーーーー、ル。です。
+[k]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠メディア
+アムール……
+[k]
+
+[charaFace E 2]
+
+[bgm BGM_EVENT_3 0.1]
+
+＠メディア
+[#エロース:ア　ム　ー　ル]ですって！？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[effect bit_talk_throwing 0,100]
+[se bac17]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.2 -20,0]
+[charaMove A 0,0 0.2]
+[se ad7]
+[wt 0.2]
+
+[effect bit_talk_14]
+[charaShake A 0.05 3 3 0.5]
+[se bac148]
+[seVolume bac148 0 0.4]
+[wt 0.5]
+
+＠カレン
+[line 3]まあこわい。[r]いきなり光弾を飛ばしてくるなんて。
+[k]
+
+＠カレン
+どうやら……この愛の神とは、[r]よほどの因縁があるようですね？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠メディア
+当たり前よっ！[r]あなたたちのやらかした事のせいで、
+[k]
+
+＠メディア
+私の人生が、どれほど[r]狂わされたと思ってるの！？
+[k]
+
+＠メディア
+まさかこんな形で会えるとは[r]思ってもみなかったけれど……
+[k]
+
+＠メディア
+会ってしまった以上、[r]無事で済むとは思わない事ね！
+[k]
+
+？1：何したのカレンちゃん
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠カレン
+ええ、まあ。
+[k]
+
+＠カレン
+やらかしたのは私ではなく、[r]エロースと……アフロディーテなのですが。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠子ギル
+アフロディーテもギリシャ神の一柱でしたね。[r]エロースとの関わりが深い、とも聞きますが。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠カレン
+……[r]……
+[k]
+
+＠カレン
+それは、昔々のその昔……[r]地上がまだ、神秘に彩られていた時代のお話です。
+[k]
+
+＠カレン
+女神アフロディーテはエロースを従わせ、[r]神、人間を問わず、様々な相手を惑わせてきました。
+[k]
+
+＠カレン
+そして、その企みのひとつに[line 3]
+[k]
+
+＠カレン
+『王女メディアはイアソンにぞっこんＬＯＶＥ』。
+[k]
+
+＠カレン
+……というものがありまして。[r]ここまで言えば、もうお分かりですね？
+[k]
+
+＠カレン
+英雄イアソンに金羊毛皮を入手させるため、[r]その命を受けたエロースは、
+[k]
+
+＠カレン
+[#女神:アフロディーテ]の祝福と呪いをこめた矢を、[r]自慢の弓につがえて[line 3]
+[k]
+
+＠カレン
+こう、シャキッと一本。
+[k]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠メディア
+栄[messageShake 0.05 4 4 0.2]養ドリンクみたいに言うんじゃないわよ！！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[effect bit_talk_throwing -250,100]
+[se bac17]
+[wt 0.6]
+
+[effect bit_talk_throwing 250,100 H]
+[se bac17]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.2 0,0]
+[charaMove A -150,0 0.2]
+[se ad7]
+[wt 0.2]
+
+[effect bit_talk_14 -150,0]
+[charaShake A 0.05 3 3 0.2]
+[se bac148]
+[seVolume bac148 0 0.4]
+[wt 0.4]
+
+[charaMove A 150,0 0.4]
+[se ad7]
+[wt 0.4]
+
+[effect bit_talk_14 150,0]
+[charaShake A 0.05 3 3 0.5]
+[se bac148]
+[seVolume bac148 0 0.4]
+[wt 0.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+おまえ、自分から当たりにいってねえか！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+
+＠カレン
+……そんな事は……ありますが……[r]これはエロースへの罰なので……
+[k]
+
+＠カレン
+仕方なく、そう仕方なく……[r]受けているのです……趣味ではありません……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠メディア
+フン。そう、疑似サーヴァントといえど[r]自覚はあるようね。
+[k]
+
+[charaFace E 2]
+
+＠メディア
+そうよ、エロース！[r]あなたの、その矢が放たれなければ！
+[k]
+
+＠メディア
+[#全ては違っていたかもしれないのに]！
+[k]
+
+[messageOff]
+[charaPutFSL S 0]
+[charaPutFSR T 2]
+[charaEffect S bit_talk_19]
+[charaEffect T bit_talk_19]
+[se ad42]
+[wt 2.0]
+
+？1：あっ
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut S 2000,2000]
+[charaPut T 2000,2000]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+やべえぞ、アレは……！[r]ビター・シャドウの魔力だ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠子ギル
+あぁっ……[r]怒りにかられたメディアさんに、
+[k]
+
+＠子ギル
+魔力が引き寄せられてます！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPutFSL S 0]
+[charaPutFSR T 2]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+[wt 0.1]
+
+[se ad42]
+[charaMove S 0,0 2.0]
+[charaMove T 0,0 2.0]
+[wt 2.0]
+[charaEffectStop S bit_talk_19]
+[charaEffectStop T bit_talk_19]
+[charaEffect E bit_talk_11 0,-200]
+[wt 2.0]
+
+＠メディア
+！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut E 2000,2000]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠カレン
+まぁ、大変。
+[k]
+
+＠カレン
+メディアさんもビター・シャドウに[r]取り込まれてしまったのでしょうか。
+[k]
+
+？1：のんきか！
+
+？！
+
+[charaFace A 1]
+
+＠カレン
+やれやれ。怒りにまかせて思考を放棄すると[r]このようになる、という見本でした。
+[k]
+
+＠カレン
+さぁ、皆さん出番ですよ。
+[k]
+
+＠カレン
+暴走している彼女に意識はありません。[r]ひとまず大人しくさせて、
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠メディア
+……ふん。
+[k]
+
+[messageOff]
+[charaEffectStop E bit_talk_11]
+[se ade153]
+[wt 0.5]
+[seStop ade153 0.6]
+[wt 0.6]
+
+＠メディア
+ありますー。[r]意識くらいバリバリにありますー。
+[k]
+
+＠メディア
+神代の魔女をなめないでほしいわね！
+[k]
+
+＠メディア
+魔力である以上、[r]この程度は自在に扱って当然[line 3]
+[k]
+
+＠メディア
+ちょうどいいわ。[r]今ここにある、全ての力を使って……
+[k]
+
+[charaFace E 2]
+
+＠メディア
+カルデアが消し飛ぶほどの術を、[r]あなたにお見舞いしてあげる！！
+[k]
+
+？1：やめてください！？
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+……[r]……
+[k]
+
+＠クー・フーリン
+なぁ、この場合、[r]どっちに味方すりゃいいんだ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠子ギル
+ボクに聞かないでくださいよ。
+[k]
+
+＠子ギル
+だいたい、こういうのは他人が[r]口を挟む事じゃないでしょう。
+[k]
+
+
+[charaFace B 1]
+
+＠子ギル
+あっ、ボク急用を思い出しましたから[r]ちょっとログアウトしますね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+自分だけ逃げてんじゃねーよ！？
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+
