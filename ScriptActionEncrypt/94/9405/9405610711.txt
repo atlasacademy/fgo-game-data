@@ -1,0 +1,386 @@
+
+
+
+
+＄94-05-61-07-1-1
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 9011001 1 カレン]
+[charaSet B 2018001 1 子ギル]
+[charaSet C 3001000 1 クー・フーリン]
+[charaSet D 1098206500 1 エロース]
+[charaSet E 1098206500 1 アムール]
+[charaSet F 9011002 1 カレン第三シルエット]
+[charaFilter F silhouette 00000080]
+[charaSet G 9011002 1 カレン第三シルエット白]
+[charaFilter G silhouette FFFFFF80]
+[charaSet H 9011002 1 ゴッドカレン]
+
+[imageSet J back10001 1]
+[charaScale J 1.05]
+
+[branchQuestNotClear lblNotClear 3000303]
+[charaSet I 8001410 1 マシュ]
+[branch lblConf]
+[label lblNotClear]
+[charaSet I 8001000 1 マシュ]
+[label lblConf]
+
+[scene 110300]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth A 3]
+[charaDepth E 2]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadeinFSL D 0.1 -300,0]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[charaFace E 2]
+[charaFadeinFSR E 0.1 300,0]
+
+＠エロース
+きゃあー。[bgm BGM_EVENT_7 0.1]
+[k]
+
+[messageOff]
+[charaMoveFSL D -300,-20 0.4]
+[charaFadeout D 0.4]
+[wt 0.2]
+[se ad144]
+[wt 0.6]
+
+＠アムール
+きゃあー。
+[k]
+
+[messageOff]
+[charaMoveFSR E 300,-20 0.4]
+[charaFadeout E 0.4]
+[wt 0.2]
+[se ad144]
+[wt 0.6]
+
+＠カレン
+きゃあー。
+[k]
+
+[messageOff]
+[charaMove A 0,-20 0.4]
+[charaFadeout A 0.4]
+[wt 0.2]
+[se ad144]
+[wt 0.6]
+
+？1：か……勝ったー！？
+
+？！
+
+[charaTalk depthOn]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+どうだ、積年の恨みを思い知ったか！[r]いや覚えてねえけど！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠子ギル
+なんだかちょっぴりだけ、[r]スッとしたような気がします！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 12]
+[charaFadein I 0.1 1]
+
+＠マシュ
+え、ええと、カレンさん……
+[k]
+
+＠マシュ
+そういう事ですので、工房は閉鎖して[r]計画を中止していただけるでしょうか。
+[k]
+
+＠マシュ
+あとはゴッド・ラブの解毒方法も[r]教えてほしいのですが……
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+
+＠カレン
+ふふ……
+[k]
+
+＠カレン
+この程度で勝ったなどと……[r]私も甘く見られた物ですね。
+[k]
+
+？1：寝たまま喋ってる……
+
+？！
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+あのなぁ。おまえさん、これ以上どうするってんだよ。[r]大人しく負けとけ。
+[k]
+
+＠クー・フーリン
+誰が死んだワケでもねえし、[r]今なら謹慎室行きで赦してもらえるぞ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠カレン
+いいえ、クー・フーリン。
+[k]
+
+＠カレン
+そこがゴールだと認めないかぎり、[r]歩みを止めるべきではない……
+[k]
+
+＠カレン
+かつて……[r]貴方が私に言ってくれた言葉です。
+[k]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+えっ、マジで？[r]オレ、そんな恥ずかしいこと言ったの？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠カレン
+嘘ですが。
+[k]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+おまえふざけんなよぉーーー！！？？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 1.5]
+
+＠カレン
+ふふ、隙を見せましたね。[r][line 3]今です！
+[k]
+
+[charaTalk depthOff]
+[charaDepth J 1]
+[charaDepth D 2]
+[charaDepth A 4]
+[charaDepth E 3]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.2 0,-20]
+[charaMove A 0,0 0.2]
+[se ad7]
+
+＠カレン
+エロース、アムールの疑似霊基を解除！[r]三等分していた私の力が、今一つに！
+[k]
+
+＠カレン
+[f large]女神合体です！！[bgm BGM_EVENT_72 0.1]
+[k]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadeinFSL D 0.2 -300,-20]
+[charaMoveFSL D -300,0 0.2]
+[se ad7]
+
+＠エロース
+愛の神の真の力……！
+[k]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadeinFSR E 0.2 300,-20]
+[charaMoveFSR E 300,0 0.2]
+[se ad7]
+
+＠アムール
+今こそ見せる時！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaMoveFSL D 0,0 1.2]
+[charaMoveFSR E 0,0 1.2]
+[fowardEffect bit_talk_radiallight02]
+[charaFadein J 2.0 0,-200]
+[se ad216]
+[wt 0.6]
+[charaFadeout D 0.4]
+[charaFadeout E 0.4]
+[wt 0.8]
+
+
+[fadeout white 1.5]
+[bgm BGM_EVENT_72 1.5 0.5]
+[wait fade]
+
+[fowardEffectDestroy bit_talk_radiallight02]
+[charaFadeout A 0.1]
+[charaFadeout J 0.1]
+[charaFadeTime J 0.1 0.6]
+[wt 1.5]
+
+[fadein white 1.5]
+[bgm BGM_EVENT_72 1.5 1.0]
+[wait fade]
+[wt 0.3]
+
+？1：今の光は一体……！？
+
+？！
+
+[charaTalk depthOn]
+[charaTalk on]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+＠マシュ
+マスター、あそこを見てください！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠子ギル
+三人だったカレンさんが、[r]一人に……！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[messageOff]
+[charaTalk off]
+[charaDepth G 3]
+[charaDepth F 2]
+
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.8]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.1]
+
+[charaFadeout J 1.0]
+[charaFadeout G 0.7]
+[wt 1.0]
+
+＠？？？
+バレンタインの化身[line 3]
+[k]
+
+＠？？？
+善き恋人たちの守護者[line 3]
+[k]
+
+[bgmStop BGM_EVENT_72 1.5]
+
+＠？？？
+愛の神の姿が、今ここに現れたのです。
+[k]
+
+[messageOff]
+[charaDepth H 1]
+
+[charaFace H 6]
+[charaFadein H 0.1 1]
+[wt 0.1]
+
+[charaFadeout F 0.7]
+[wt 1.0]
+
+＠カレン？
+女神降臨！
+[k]
+
+[charaFace H 5]
+
+＠カレン？
+我が名は[line 3]ゴッドカレン！！
+[k]
+
+[messageOff]
+[se ade217]
+[effect bit_talk_magic_girl_light02]
+[wt 3.2]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaDepth C 2]
+[charaDepth B 3]
+[charaDepth I 1]
+
+[charaFace C 2]
+[charaFadeinFSL C 0.1 -300,0]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[charaFace I 2]
+[charaFadeinFSR I 0.1 300,0]
+
+＠クー・フーリン＆子ギル＆マシュ
+……[r]……
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠クー・フーリン＆子ギル＆マシュ
+[f large]悪[messageShake 0.05 4 4 0.4]魔だこれーーーー！！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
+
