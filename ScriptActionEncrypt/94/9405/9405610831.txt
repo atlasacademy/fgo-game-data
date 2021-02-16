@@ -1,0 +1,970 @@
+
+
+
+
+＄94-05-61-08-3-1
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 9011001 1 カレン]
+[charaSet B 2018001 1 子ギル]
+[charaSet C 3001000 1 クー・フーリン]
+[charaSet D 1098206500 1 エロース]
+[charaSet E 1098206500 1 アムール]
+[charaSet K 1098206600 0 1]
+[charaSet L 4013001 0 1]
+
+[imageSet S back10000 1]
+[charaScale S 1.05]
+
+[charaSet T 98115000 1 エフェクト用]
+
+[branchQuestNotClear lblNotClear 3000303]
+[charaSet F 8001410 1 マシュ]
+[charaSet Q 1098124510 1 ダ・ヴィンチ]
+[branch lblConf]
+[label lblNotClear]
+[charaSet F 8001000 1 マシュ]
+[charaSet Q 98111500 1 ダ・ヴィンチ]
+[label lblConf]
+
+[scene 110400]
+
+[bgm BGM_EVENT_24 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk K]
+[charaFace K 1]
+[charaFadein K 0.1 1]
+[wt 0.1]
+
+[fowardEffect bit_talk_kengekiall02_fs]
+[se ad32]
+[wt 0.1]
+[charaShake K 0.05 3 3 0.7]
+[wt 0.4]
+[se ad32]
+[wt 0.1]
+[se ad32]
+[wt 0.5]
+
+[fowardEffect bit_talk_x_slash01]
+[se bac14]
+[charaShake K 0.05 3 3 0.3]
+[wt 1.0]
+
+＠超ベイビィカレン
+ば、馬鹿な……！？[r][#無限の愛:ア  ガ  ペ  ー]たるわたちが、何故ここまで……！
+[k]
+
+[messageOff]
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect C appearance 1 0.25]
+[wt 0.4]
+
+
+＠クー・フーリン
+[line 3]！！
+[k]
+
+＠クー・フーリン
+おう、金ピカの若いヤツ！
+[k]
+
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠子ギル
+はい！！
+[k]
+
+[messageOff]
+[charaMoveReturn B 0,-10 0.5]
+[se adm51]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 1]
+[charaFadein K 0.1 1]
+[wt 0.1]
+[charaShake K 0.05 3 3 0.7]
+[se ad250]
+[seVolume ad250 0 0.6]
+[wt 0.7]
+[seStop ad250 0.5]
+[wt 0.5]
+
+＠超ベイビィカレン
+鎖による拘束……！[r]やりましゅね、ギルガメッシュ……
+[k]
+
+＠超ベイビィカレン
+別の世界でわたちに散々と縛られてきた、[r]そのお返しという事でしゅか……！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠子ギル
+ボクそんな事されてたんですか！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk K]
+[charaFace K 1]
+[charaFadein K 0.1 1]
+
+[se ad250]
+[seVolume ad250 0 0.6]
+[charaShake K 0.05 3 3 0.7]
+
+＠超ベイビィカレン
+でしゅが、いかに対神兵装と言えども、[seStop ad250 1.0][r]この程度の拘束……！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+いや……そいつで充分だ。
+[k]
+
+[charaFace C 5]
+
+＠クー・フーリン
+マスター、オレに魔力を回せ！[r]とっておきをぶちかますぜ！
+[k]
+
+？1：[&頼んだ:お願い]！
+
+？！
+
+[messageOff]
+[masterBranch _Male _Female]
+
+[label _Male]
+
+[charaEffect T bit_talk_CommandMantra_01 0,64]
+[charaEffectPause T bit_talk_CommandMantra_01 0,64]
+[wait charaEffectStart T]
+[charaEffectStart T]
+
+[branch _branchEnd]
+
+[label _Female]
+
+[charaEffect T bit_talk_CommandMantra_02 0,64]
+[charaEffectPause T bit_talk_CommandMantra_02 0,64]
+[wait charaEffectStart T]
+[charaEffectStart T]
+
+[branch _branchEnd]
+
+[label _branchEnd]
+
+[se bas16]
+[wait charaEffect T]
+[charaPut T 1200,1200]
+[charaEffectStop T]
+
+[charaEffect C bit_talk_charge_red]
+[se ad632]
+[wt 2.0]
+
+[seStop ad632 0.5]
+[wt 0.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut C 2000,2000]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠マシュ
+さ、下がってくださいマスター！
+[k]
+
+＠マシュ
+ギルくんは拘束の維持を！[r]私が前に出ます！
+[k]
+
+[charaFace F 2]
+
+＠マシュ
+ぼ……防御障壁[line 3]展開[line 3]！！
+[k]
+
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+[#おやすみだ:ハ ッ シ ャ バ イ]、カレン！[r]こいつを手向けに持って行け……！
+[k]
+
+＠クー・フーリン
+『[#突き穿つ:ゲ　　イ][line 3]
+[k]
+
+＠クー・フーリン
+[line 3][#死翔の槍:ボ　ル　ク]』！！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaPut C 2000,2000]
+[charaEffectStop C bit_talk_charge_red]
+[charaFadeout C 0.1]
+[scene 10000]
+[wt 0.2]
+
+[fadein black 0.1]
+[wait fade]
+
+[effect bit_talk_gaebolg]
+[cueSe SE_21 21_ade564]
+[wt 3.0]
+
+[messageOff]
+[fadeout black 0.1]
+[wait fade]
+
+[cameraMove 0.1 0,0 1.01]
+[scene 110400]
+[wt 0.2]
+
+[fadein black 0.5]
+[wait fade]
+
+[shake 0.05 2 2 0]
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+
+
+＠超ベイビィカレン
+ばば……ばばば……！！
+[k]
+
+＠超ベイビィカレン
+……ばっぶうううーーーーー！！？？
+[k]
+
+
+
+[messageOff]
+[fadeout white 2.0]
+[bgmStop BGM_EVENT_24 2.0]
+[wait fade]
+
+[se ad609]
+[shakeStop]
+[charaFadeout K 0.1]
+
+[charaPut T 2000,2000]
+[charaEffect T bit_talk_10_LowLevel]
+
+
+
+[scene 10000]
+[wt 3.0]
+
+[fadein white 2.0]
+[wait fade]
+[wt 2.0]
+
+
+＠クー・フーリン
+……[r]……
+[k]
+
+＠クー・フーリン
+いや、悪かったよ。
+[k]
+
+＠クー・フーリン
+流石にオレもやり過ぎだとは思った。[r]槍だけに。
+[k]
+
+＠クー・フーリン
+……[r]……
+[k]
+
+＠クー・フーリン
+けどよ……。
+[k]
+
+[messageOff]
+[scene 110400 1.0]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+なんで生きてんの、おまえ！？
+[k]
+
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠カレン
+……はあ。[bgm BGM_EVENT_2 0.1]
+[k]
+
+＠カレン
+どうやらここまでのようですね。
+[k]
+
+＠カレン
+いいです。[r][#今回だけは]負けを認めましょう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+おまえはよぉ……
+[k]
+
+＠クー・フーリン
+その口ぶりからすると、[r]まだ諦めてねえのかよ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠カレン
+当然です。[r]この程度で終わるつもりはありません。
+[k]
+
+＠カレン
+霊基が回復し次第、[r]次なる新商品の開発に取りかかり[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠子ギル
+まったく反省がありませんね……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠アムール
+……。[r]……もういいでしょう、カレン。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠カレン
+エロース。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠アムール
+アムールです。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 1.2]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+
+＠アムール
+あの時……
+[k]
+
+＠アムール
+私の手足がもぎ取られたとしても、[r]アフロディーテの心は痛まない、と。
+[k]
+
+＠アムール
+王女メディアは、そう言いました。
+[k]
+
+＠アムール
+はたして……そうなのでしょうか。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠カレン
+アムール……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut T 1]
+[charaTalk Q]
+[branchQuestNotClear lblNotClear7 3000303]
+
+[charaFace Q 25]
+[charaFadein Q 0.1 1]
+
+[branch lblConf7]
+[label lblNotClear7]
+
+[charaFace Q 0]
+[charaFadein Q 0.1 0,-90]
+
+[label lblConf7]
+
+＠ダ・ヴィンチ
+これは……
+[k]
+
+＠ダ・ヴィンチ
+今喋っているのは、[r]カレンが作った使い魔じゃない。
+[k]
+
+＠ダ・ヴィンチ
+存在の揺らぎを利用した疑似霊基、[r]その身体を使って[line 3]
+[k]
+
+＠ダ・ヴィンチ
+本来、表に出てこない筈の神霊が、[r]自ら言葉を発している……のか。
+[k]
+
+
+[charaFadeout Q 0.1]
+[wt 0.1]
+[charaPut T 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠アムール
+私はかつて、この[#愛の弓矢:ゴッドバズーカ]を、[r]玩具だと笑われた事があります。
+[k]
+
+＠アムール
+神性として授かったこの弓矢に、[r]そんな言葉を投げかけられた時、
+[k]
+
+＠アムール
+私の胸は、ざわめきました。
+[k]
+
+＠アムール
+きっと、悲しんでいたのでしょう。[r]私の仕事、私の存在意義……
+[k]
+
+＠アムール
+いえ。私の誇りである、[r]愛の弓矢を侮辱された事で。
+[k]
+
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠カレン
+……[r]……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[charaFadeTime S 0.1 0.6]
+
+＠クー・フーリン
+（その話と私に何の関係が？[r]　みたいな顔してんな、アイツ……）
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠子ギル
+（黙って聞いてましょうよう……）
+[k]
+
+[charaFadeout S 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠アムール
+カレン、貴方も同じです。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠カレン
+私と……その弓矢が同じ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠アムール
+はい。[r]貴方が傷付く所を見ていると[line 3]
+[k]
+
+＠アムール
+私の胸は、ざわめきます。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠カレン
+……[r]……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠エロース
+それに[line 3]
+[k]
+
+＠エロース
+貴方も本当は、[r]信じたいのではありませんか。
+[k]
+
+＠エロース
+貴方のいう低俗な愛が……[r]恋人たちの愛情が、永遠に続く事を。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠カレン
+アム……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠エロース
+エロースです。
+[k]
+
+＠エロース
+貴方の中に愛と欲望が広がった時、[r]私は記憶を見たのです。
+[k]
+
+＠エロース
+これまでの生涯に、一度……
+[k]
+
+＠エロース
+ただひとりに向けられた、[r]尊敬と恋慕の[line 3]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠カレン
+スラップ。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.1]
+
+[fowardEffect bit_talk_whip02]
+[se bac101]
+[se bac103]
+[charaShake D 0.05 3 3 0.2]
+[wt 0.55]
+[charaShake D 0.05 3 3 0.2]
+[se bac101]
+[se bac103]
+[wt 0.5]
+
+＠エロース
+きゃあー。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠カレン
+……まったく。[r]疑似サーヴァントというのは無粋なものですね。
+[k]
+
+＠カレン
+忘れたい記憶、捨てなければならない出来事まで、[r]明確に掘り起こすのですから。
+[k]
+
+[charaFace A 1]
+
+＠カレン
+ですが、確かに今の指摘は致命的でした。[r]今の私に、無償の愛を体現する資格はありません。
+[k]
+
+＠カレン
+せいぜい、愛を知らない者たちに[r]『歌』として聴かせる……といった程度でしょう。
+[k]
+
+？1：という事は……
+？2：改心した[&のか:の]、カレンちゃん？
+
+？！
+
+[charaFace A 15]
+
+＠カレン
+はい、まことに残念ですが、[r]カルデアの支配はあきらめましょう。
+[k]
+
+＠カレン
+その証として……[r]貴方には、これを。
+[k]
+
+[messageOff]
+[effect bit_talk_20 -30,0]
+[se ad39]
+[wt 2.5]
+[effectStop bit_talk_20]
+[wt 1.0]
+
+[charaFace A 0]
+[charaMoveScale A 1.1 0.4]
+[charaMove A 0,15 0.4]
+[wt 1.2]
+[charaMoveReturn A 0,10 0.4]
+[wt 1.0]
+
+[charaMoveScale A 1.0 0.4]
+[charaMove A 0,0 0.4]
+[wt 0.8]
+
+？1：聖杯……！
+
+？！
+
+[charaFace A 11]
+
+＠カレン
+私には、もはや不要の物です。
+[k]
+
+＠カレン
+ゴッド・ラブの解呪方法についても、[r]横にマジックで書いておきましたので。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠マシュ
+なんと豪快な……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠カレン
+そしてクー・フーリン、[r]ギルガメッシュ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+おう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠子ギル
+なんですか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠カレン
+貴方たちにも、世話になりましたね。
+[k]
+
+＠カレン
+[%1]を導き、[r]私を倒した事にお礼を言います。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 1.5]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠クー・フーリン
+おいおい、どうした。[r]急にしおらしくなりやがっ……て。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_6 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[charaEffect A bit_talk_06]
+[wt 2.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 2000,2000]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠子ギル
+またずいぶんと、急なんですね。[r]本当に、貴女ときたら……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠カレン
+ふふ……こう見えてプライドは高いので。[r]負け犬として長居はしませんよ。
+[k]
+
+＠カレン
+エロース、アムール……[r]そろそろ参りましょう。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 2000,2000]
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth E 3]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFadeinFSL D 0.1 0]
+[charaFace E 0]
+[charaFadeinFSR E 0.1 2]
+
+[charaEffect D bit_talk_06]
+[charaEffect E bit_talk_06]
+[wt 1.5]
+
+[charaTalk on]
+
+＠エロース
+それではごきげんよう、皆さん。
+[k]
+
+＠アムール
+これもまた、良き縁でありました。
+[k]
+
+？1：カレンちゃん……
+
+？！
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut D 2000,2000]
+[charaPut E 2000,2000]
+[charaEffectStop D bit_talk_06]
+[charaEffectStop E bit_talk_06]
+
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠カレン
+ああ、そういえば……[r]貴方の力になると約束をしましたね。
+[k]
+
+＠カレン
+それだけが……[r]心残りです……
+[k]
+
+[messageOff]
+[charaSpecialEffect A flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect A]
+[charaEffectStop A bit_talk_06]
+[wt 2.4]
+
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_6 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+
