@@ -1,4 +1,3 @@
-
 ＄94-01-19-17-3-0
 [soundStopAll]
 [charaSet A 1030000 1 "Suzuka Gozen"]
@@ -8,6 +7,9 @@
 [charaSet E 98113300 1 "Demon God Pillar"]
 [charaSet F 98017000 1 "Effect Demon God Pillar"]
 
+[charaSet G 98017000 1 Effect Dummy]
+[charaSet H 98017000 1 Effect Dummy]
+
 [scene 41000]
 [fadein black 1.5]
 [wait fade]
@@ -16,7 +18,7 @@
 [charaFace C 5]
 [charaFadein C 0.4 1]
 ＠Meltryllis
-...! No, this is...!
+...![sr]No, this is...!
 [k]
 
 [messageOff]
@@ -82,22 +84,26 @@
 [charaFace E 0]
 [charaFadein E 0.1 1]
 [wt 0.2]
-[charaEffect E bit_talk_hikari01]
+[charaEffect G bit_talk_hikari01]
 [se bac73]
 [wt 0.7]
 [charaFadeout E 0.1]
-[charaEffectStop E bit_talk_hikari01]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_hikari01]
 [wt 0.1]
+
 [charaTalk C]
 [charaFace C 0]
 [charaFadein C 0.1 1]
-[charaEffect C bit_talk_goltail01]
+
+[charaEffect H bit_talk_goltail01]
 [se bac74]
 [wt 0.7]
 [charaEffectStop C bit_talk_goltail01]
 [charaShake C 0.01 0 5 0.5]
 [se ad161]
 [wt 0.4]
+
 [charaFace C 5]
 ＠Meltryllis
 ...!
@@ -105,6 +111,8 @@
 
 [charaFadeout C 0.1]
 [wt 0.1]
+[charaPut H 2000,2000]
+
 [charaTalk D]
 [charaFace D 4]
 [charaFadein D 0.1 1]
