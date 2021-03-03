@@ -1,0 +1,343 @@
+
+
+
+
+＄94-05-65-02-3-0
+
+
+[soundStopAll]
+
+[enableFullScreen]
+
+[charaSet A 9002000 1 天草四郎]
+[charaSet B 1098207500 1 警備員]
+
+[charaSet C 1044001 1 ？？？]
+
+[imageSet D back10000_fs 1]
+[charaScale D 1.5]
+
+[charaSet E 98115000 1 エフェクト用]
+[charaSet F 1044001 1 ダミー]
+[charaFilter F silhouette 00000080]
+
+[charaDepth D 1]
+[charaDepth A 2]
+
+[charaDepth C 3]
+[charaDepth F 4]
+
+[scene 111202]
+
+[fadein black 0.5]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠天草四郎
+おっと！
+[k]
+
+[messageOff]
+
+[se ad7]
+[charaMove A -50,0 0.3]
+[charaFadeout A 0.4]
+[wt 0.5]
+
+[se ad96]
+[seStop ad96 2.0]
+[flashin loop 0.1 0.1 FFFFFFFF 2D2D2D80]
+[wt 0.7]
+[flashOff]
+[wt 0.7]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠警備員
+撃て撃て撃て！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠天草四郎
+いや、貴重な美術品なんですから、[r]少しは[#躊躇:ためら]いましょうよ、皆さん。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠警備員
+盗みに来たヤツに言われたくない！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠天草四郎
+ははは、正論です。
+[k]
+
+[messageOff]
+
+[se bac23]
+[fowardEffect bit_talk_threethrows 0,-170]
+[wt 0.08]
+[se bac23]
+[wt 0.08]
+[se bac23]
+[wt 0.8]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[fowardEffectDestroy bit_talk_threethrows]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠警備員
+う[messageShake 0.05 3 3 0.2]わ！
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.2]
+
+[charaMove A 30,0 0.3]
+[charaFadeout A 0.4]
+[seStop ade410 0.5]
+[wt 0.8]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠警備員
+くそ、消えた！[r]捜せ、どうせ聖杯展示室の扉は開けられない！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaPut D 0,-200]
+[charaFadeTime D 0.2 0.6]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠天草四郎
+（確かにその通りですが……）
+[k]
+
+[se ad91]
+
+＠天草四郎
+（開くでしょうね。[r]　彼らは知りたがっている）
+[k]
+
+
+＠天草四郎
+（私たちが、[r]　[#どこまでやれるのかを]）
+[k]
+
+[messageOff]
+
+[seStop ad91 0.5]
+[wipeout leftToRight 0.8 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[scene 111302]
+[wipein rightToLeft 0.8 1.0]
+[wait wipe]
+[wt 0.4]
+
+[se ad95]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.7 1]
+[wt 1.5]
+[seStop ad95]
+[wt 0.7]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠天草四郎
+……おや、出てくるのはお一人だけですか。
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.1]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.4]
+
+[charaFadeout F 0.7]
+[wt 1.2]
+
+[charaTalk on]
+[bgm BGM_EVENT_5 0.1]
+＠？？？
+あー、自己紹介とかいいだろ？[r]この格好を見ればわかる通り[line 3]
+[k]
+
+[charaFace C 9]
+＠？？？
+[#ただのサラリーマンだよ]、[#普通のね]。[r]ああ、サラリーサーヴァントかな？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠天草四郎
+ほうほう。[r]真名すら名乗らないとは。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠C：サラリーマン
+卑怯とか言っちゃうタイプ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠天草四郎
+ははは、まさか。
+[k]
+
+＠天草四郎
+日本の剣客であることがわかれば、[r]それで充分ですよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠C：サラリーマン
+……食えないねぇ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠天草四郎
+お互いに。[r]では、とりあえず斬り合いましょうか。
+[k]
+
+＠天草四郎
+折角ここまで来たのです。[r]置き土産の一つでも受け取っていただかないと[line 3]
+[k]
+
+＠天草四郎
+釣り合いが取れませんので。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠C：サラリーマン
+……自ら捨て石になりにきた、[r]ってことか？
+[k]
+
+[charaFace C 4]
+＠C：サラリーマン
+参ったねぇ。
+[k]
+
+＠C：サラリーマン
+オタクのマスター、[r]ちょっと非道が過ぎるんじゃないの？
+[k]
+
+＠C：サラリーマン
+まあ、勝利に貪欲と言えば[r]いいんだろうけどさ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠天草四郎
+いえまあ私の[#独断専行:どくだんせんこう]なんですけどね。[r]とりあえず、戦いましょう！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+＠C：サラリーマン
+やりづれえなぁ……。[r]ま、リーマンはリーマンらしく。
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaFace C 2]
+＠C：サラリーマン
+せっせとお仕事に励むとしますか！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+
+
