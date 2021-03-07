@@ -1,0 +1,1015 @@
+
+
+
+
+＄94-05-65-06-1-0
+
+
+[soundStopAll]
+
+[enableFullScreen]
+
+[charaSet A 9002300 1 天草四郎]
+[charaSet B 6011001 1 荊軻]
+[charaSet C 25005001 1 ボイジャー]
+[charaSet D 1098201600 1 渡辺綱]
+[charaSet E 1098207300 1 館長]
+[charaSet F 99502600 1 マシュ]
+[charaSet G 1098207400 1 スタッフ]
+
+[charaSet H 98115000 1 通信用]
+
+[imageSet I back10000_fs 1]
+[charaScale I 1.5]
+
+[charaSet J 6012000 1 サンソン]
+
+[charaPut H 1200,1200]
+[charaEffect H bit_talk_10_LowLevel]
+
+[charaDepth I 1]
+[charaDepth C 2]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠
+カルデアに召喚されて以来、[r]己に誓ったことがある。
+[k]
+
+＠
+冷めた感情を持ち込むのは[#止:や]めよう。
+[k]
+
+＠
+全てを本気でこなし、本気で捉え、[r]本気で動く。
+[k]
+
+＠
+そうでなくてはならない。
+[k]
+
+＠
+それこそが、私の誇りであり[#矜持:きょうじ]であり、[r]やるべきことなのだ。
+[k]
+
+[branchQuestNotClear lblNotClear1 91900201]
+[branch lblConf1]
+[label lblNotClear1]
+
+
+[branch lblNotClear_out1]
+[label lblConf1]
+
+＠
+[line 3]何しろ、約束したのだ。
+[k]
+
+＠
+わかり合えなくとも、[r]共に戦うことはできる。
+[k]
+
+＠
+今の自分には、[r]それがよくわかる。
+[k]
+
+＠
+だからこその、真剣だ。
+[k]
+
+[label lblNotClear_out1]
+
+[messageOff]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_11 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[scene 111200]
+
+[wt 1.5]
+[fadein black 1.5]
+[wait fade]
+[wt 0.4]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠スタッフ
+来たっ……！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ボイジャー
+ぐーてんたーく、こんにちは。[r]あるいははろー、ごきげんいかが？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠スタッフ
+……昨日は大変失礼いたしました！
+[k]
+
+＠スタッフ
+まさか高名な少年鑑定士、[r]ミスター・ボイジャーくんであるとは知らず……！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ボイジャー
+きにしなくていいよ、[r]ぼくはぜんぜん、きにしてない。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠スタッフ
+あれから、慌ててあなたの資料を集めました。
+[k]
+
+＠スタッフ
+古代遺跡の発掘、名画の[#真贋:しんがん]鑑定、[r]果ては文明で失われた技術の再現まで！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut I 0,-200]
+[charaFadeTime I 0.2 0.6]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠ボイジャー
+（もりすぎでは？）
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+？1：（どれだけ盛ったの？）
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠スタッフ
+当美術館の作品は、[r]いかがでしたでしょうか？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠ボイジャー
+えーと……ほんものがたくさんあるけど、[r]にせものも、すこしあるよね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+＠スタッフ
+美術館の歴史は[#贋作:がんさく]者との戦いですから。
+[k]
+
+[charaFace G 0]
+＠スタッフ
+ところで、果たして何が偽物なのか、[r]教えていただく訳には……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ボイジャー
+いいよ。りょうかいさ。[wt 0.3][charaFace C 0][r]えーと……。
+[k]
+
+[messageOff]
+[charaMoveReturn C 10,0 0.8]
+[wt 0.5]
+[charaMoveReturn C -10,0 0.8]
+[wt 1.2]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+？1：（ここで怪しまれたら後がない……けど）
+？！
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ボイジャー
+……あった。
+[k]
+
+＠ボイジャー
+にほんとう、『正宗』。[r]あそこにかざってあるやつ。
+[k]
+
+＠ボイジャー
+ちかくでみせてもらっていいかい？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 1.0]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠スタッフ
+はい、気を付けてください。
+[k]
+
+[messageOff]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[wt 0.3]
+
+[se adm37]
+[wt 1.8]
+
+[bgm BGM_EVENT_81 0.1]
+＠ボイジャー
+うん……やっぱりちがうね。
+[k]
+
+＠ボイジャー
+“らいれき”をかんがえると、[r]“とうしん”のからーがかなりちがう。
+[k]
+
+＠ボイジャー
+かすかにぶるーにみえるのは、[r]“がんゆう”したちたんかな。
+[k]
+
+＠ボイジャー
+きれいではあるけど、[r]『正宗』としょうするのはよくない。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠スタッフ
+な、なるほど……！
+[k]
+
+＠スタッフ
+……。[r]……。
+[k]
+
+[charaFace G 2]
+＠スタッフ
+申し訳ありません！[r]実はその刀は、館長があえて置いたもので。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ボイジャー
+へえ、そうなんだね。
+[k]
+
+[charaPut I 0,-200]
+[charaFadeTime I 0.2 0.6]
+
+＠ボイジャー
+（しっていたけど）
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+？1：（荊軻がちゃんと見張ってたからね……）
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠スタッフ
+ですが、これであなたの審美眼は本物だと[r]理解できました。
+[k]
+
+[bgmStop BGM_EVENT_81 1.0]
+＠スタッフ
+どうかこちらへ。[r]館長がお目に掛かりたいそうです。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+？1：行こうか、ボイジャー
+？！
+
+[charaFace C 1]
+＠ボイジャー
+うん。[r][&おにいちゃん:おねえちゃん]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠スタッフ
+ご[&兄:姉]弟なんですか？
+[k]
+
+？1：ええ、まあ……
+？！
+
+[charaFace G 1]
+＠スタッフ
+とすると、あなたもやはり[r]ミスター・ボイジャーのように、鑑定を？
+[k]
+
+？1：いえ、マネージャーです
+？！
+
+[charaFace G 4]
+＠スタッフ
+何だ、そうだったんですか……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠ボイジャー
+とってもだいじなきょうだいなんだ。[r]ね、[&おにいちゃん:おねえちゃん]。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_2 1.5]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wt 1.5]
+
+[scene 71500]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.4]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠館長
+[line 3]初めまして。[r]私が当美術館の館長です。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ボイジャー
+ボイジャー、だよ。
+[k]
+
+？1：[%1]です
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠館長
+早速ですが、ミスター・ボイジャー。[r]東洋の武器にはお詳しいでしょうか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ボイジャー
+うーん……ふつう？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠館長
+初見であの刀を見抜いた方が、[r]何を仰いますか。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ボイジャー
+おーけい、しょうじきにいうよ。[r][#とってもくわしい]。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠館長
+……なるほど。
+[k]
+
+[charaFace E 5]
+＠館長
+実は、始皇帝を暗殺しようとした際の短刀が、[r]当美術館に……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠ボイジャー
+あるのかい！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠館長
+い、いえ。
+[k]
+
+＠館長
+短刀を持ち込んできた者がいるのです。[r]ひとまず話をお伺いしただけですが。
+[k]
+
+＠館長
+……そのようなもの、[r]この世界にまだ存在するのですか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠ボイジャー
+……こほん、こほん。[wt 0.2][charaMoveReturn C 0,-5 0.2][wt 0.2][charaMoveReturn C 0,-5 0.2]
+[k]
+
+＠ボイジャー
+……もともと、『ケーカ』のないふは、[r]『[#秦:しん]の宝物庫』にきろくが、のこってた。
+[k]
+
+＠ボイジャー
+『[#秦:しん]』がほろんで、『後漢』のまえまで、[r]かくにんができている。
+[k]
+
+[charaFace C 11]
+＠ボイジャー
+そこからさきは、[r]もうすこし、くわしくしらべないと……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠館長
+ふむ……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+＠ボイジャー
+ただ……。
+[k]
+
+＠ボイジャー
+もし『真作』だったら、[r]ぼくがかいとりたいんだ。
+[k]
+
+＠ボイジャー
+ぜんざいさんをさしだしたって、[r]おしくない[#かち]があるっておもうなあ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠館長
+彼女は特に、[r]売却の意思はなさそうでしたが。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠ボイジャー
+そうなのかい？[r]それは[line 3]ざんねん。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠館長
+ありがとうございました。
+[k]
+
+＠館長
+もし、彼女が再び持ち込んできた場合、[r]鑑定をお願いしてもよろしいでしょうか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠ボイジャー
+『来歴』について、[r]もうちょっとしらべてからなら。
+[k]
+
+＠ボイジャー
+ぼくの[#すいり]がただしければ、[r]とんでもないところに『保管』されていたはずだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠館長
+……わかりました。[r]では、その日までお待ちしております。
+[k]
+
+[messageOff]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_70 1.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+[wt 1.5]
+
+[scene 100700]
+
+[fadein black 1.5]
+[wait fade]
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ボイジャー
+……ふぅ。
+[k]
+
+＠ボイジャー
+うまくいったかしら？
+[k]
+
+？1：怪しまれてはいなかったよね
+
+[charaFace C 1]
+＠ボイジャー
+うん。[r]そこはだいじょうぶ。
+[k]
+
+？2：カッコ良かったよ
+
+[charaFace C 1]
+＠ボイジャー
+おー……それはありがとう。[r]たいへんだった。
+[k]
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠天草四郎
+お疲れ様でした。
+[k]
+
+？1：[&自分:わたし]はただ立ってただけだし
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠荊軻
+そうは言っても、あの館長の視線は[r]なかなかにキツいだろう？
+[k]
+
+？1：今まで色んな人に出会ったから
+
+[charaFace B 1]
+＠荊軻
+……フフ、それもそうか。
+[k]
+
+[charaFadeout B 0.1]
+
+？2：王様とかよりは全然平気
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠天草四郎
+そうですね。
+[k]
+
+＠天草四郎
+[&貴方:貴女]の旅は長く険しい。[r]王様に会って臆さないだけの度胸も必要ですか。
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 1]
+[charaFadein J 0.1 1]
+＠サンソン
+二人ともお疲れ様。[r]よければホットチョコレートでもどうぞ。
+[k]
+
+？1：ありがとう、サンソン
+？！
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ボイジャー
+ありがとう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+＠サンソン
+……おっと、一応報告だ。[r]僕は変わらず医者の真似事をしたよ。
+[k]
+
+[charaFace J 4]
+＠サンソン
+熱中症は少なくなったけど、[r]貧血で倒れる人が多くなったな。
+[k]
+
+[charaFace J 0]
+＠サンソン
+あと、たまに聖杯展示室の近くに寄って、[r]魔力に[#あてられた]人もいる。
+[k]
+
+＠サンソン
+大抵は休んだらすぐに回復するけどね。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠天草四郎
+サーヴァントの警戒が強まっているようですね。[r]よきかなよきかな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 4]
+[charaFadein J 0.1 1]
+＠サンソン
+いいのかい？
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠天草四郎
+サーヴァントが疲弊するとすれば、[r]肉体的ではなく精神的な側面が大きいでしょう。
+[k]
+
+＠天草四郎
+予告状は出されたものの、[r][#来るかどうかもわからない]敵を警戒するのは……。
+[k]
+
+[charaFace A 1]
+＠天草四郎
+それなりに大変でしょうね。[r]ふふふ、同情します……ふふふふふ……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 4]
+[charaFadein J 0.1 1]
+＠サンソン
+悪い顔をしているなぁ、天草四郎……。
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠ボイジャー
+もりあーてぃせいぶんが、[r]まじってるよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠天草四郎
+おっと、マジですか。[r]コホンコホン。
+[k]
+
+[charaFace A 1]
+＠天草四郎
+……それでは報告を続けましょうー。
+[k]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠荊軻
+では、今度は私だな。
+[k]
+
+＠荊軻
+繰り返しになるが、[r]短刀を売るという提案はしなくていいのだな？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠天草四郎
+ええ。
+[k]
+
+＠天草四郎
+今から売る売らないの話になれば、[r]ビジネスの話になります。
+[k]
+
+＠天草四郎
+その場合、荊軻の[line 3][#林:リン][#梓雨:ズーユー]の[r]信用が問われ、そしてその信用はまだ皆無です。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠荊軻
+だが、売らないのにアプローチを仕掛けるのは[r]不自然では？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠天草四郎
+不自然です。[r]ですが、完璧な存在など有り得ません。
+[k]
+
+＠天草四郎
+特に人間の、感情や謎めいた部分は、[r][#人間らしさ]として必要ですよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠荊軻
+む？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠天草四郎
+彼らは必ず、[r]荊軻の隠し事を探し出すでしょう。
+[k]
+
+＠天草四郎
+そして、[r][#隠しているものこそが真実]。
+[k]
+
+＠天草四郎
+人間は納得したい生き物です。[r]疑念とは信用と[#表裏一体:ひょうりいったい]。
+[k]
+
+＠天草四郎
+疑念が強ければ強いほど、[r]納得したときの快感が強い。
+[k]
+
+＠天草四郎
+ですから、隠し続けてください。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠荊軻
+了解だ。
+[k]
+
+？1：となると……
+？2：彼の出番？
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠天草四郎
+ええ。
+[k]
+
+＠天草四郎
+突貫工事ですが、[r]何とかなったようですよ。
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_77 1.0]
+[wipeout rollFlashRight 1.0 1]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.7]
+
+[pictureFrame cut063_cinema]
+
+[scene 37311]
+
+[wipein rollFlashRight 1.0 1]
+[wait wipe]
+[wt 0.4]
+
+[bgm BGM_EVENT_62 0.1]
+
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+＠渡辺綱
+こちら、渡辺綱。準備完了。[r]マシュ殿、いつでも構わない。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut H 0,-50]
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 0,-50]
+＠マシュ
+はい、それでは！[r]シミュレーション、スタートします！
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_62 0.4]
+[wait fade]
+[pictureFrame]
+[soundStopAll]
+[end]
+
+
