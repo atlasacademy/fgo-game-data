@@ -1,0 +1,262 @@
+＄94-03-46-06-1-0
+
+
+
+[soundStopAll]
+
+[charaSet B 98002000 1 Fou]
+[charaSet C 5008001 1 "Mister Sheep"]
+
+[charaSet H 98115000 1 Effect]
+
+[scene 70900]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ade284]
+[wt 1.5]
+
+[bgm BGM_TEITO 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠Fou
+Foun, fou, fooou![sr](Special Translation: Orange! Cassis! Orange!)
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut H -700,0]
+[charaEffect H bit_talk_20]
+
+＠Bartender
+Oh, hello there. Just you and Sir Fou today?[sr]Can I get you your usual Black Beast Grease mix?
+[k]
+
+？1：(...Oh, uh... I have a bunch already...)
+？2：(...Sometimes, I just need to kick back and relax...)
+
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Fou
+Fou, fooou... (Special Translation:[sr]I hear you... That grease is addictive...)
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.5]
+[se ade252]
+[wt 0.8]
+[bgmStop BGM_TEITO 1.0]
+[seStop ade252 0.4]
+[wt 1.0]
+[charaPut H -500,0]
+
+[se ade291]
+[charaMove H 1 0.5]
+[wt 0.5]
+[se bas2]
+[wt 2.0]
+
+[charaEffectDestroy H bit_talk_20]
+
+[bgm BGM_EVENT_7 0.1]
+
+？1：The hell!?
+？2：Where'd this Holy Grail pop up from!?
+
+？！
+
+[charaPut H 0,-1200]
+[wt 1.0]
+
+？1：What's going on here, barkeep!?
+
+？！
+
+＠Bartender
+Courtesy of that customer over there.
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠C：That Customer Over There
+Mmm, I loved that reaction of yours! It's so nice[sr]to be able to take video so easily these days!
+[k]
+
+＠C：That Customer Over There
+Oh, don't worry, it's on me.[sr]Go ahead, take it!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace C 3]
+[charaFace B 0]
+[charaFadein C 0.1 0]
+[charaFadein B 0.1 2]
+
+＠Fou
+M[messageShake 0.05 3 3 0.3]erfooou! (Special Translation: You grand[sr]good-for-nothing! How are you still alive!?)
+[k]
+
+[messageOff]
+[charaMoveReturn B 0,70 0.3]
+[wt 0.1]
+[se bac8]
+[wt 0.4]
+[charaMoveReturn B 0,70 0.3]
+[wt 0.1]
+[se bac8]
+[wt 0.4]
+
+[charaFace C 1]
+
+[branchQuestClear ep2_user 01000822]
+
+
+＠C：That Customer Over There
+Hahahaha, you might want to cut that out...erm,[sr]Fou, before you get yourself banned!
+[k]
+
+[branch user_join]
+
+[label ep2_user]
+
+＠C：That Customer Over There
+Hahahaha, you might want to cut that out, Cath Palug,[sr]before you get yourself banned!
+[k]
+
+[branch user_join]
+
+[label user_join]
+
+？1：Y-you're...
+？2：(That's weird. I can't think of his name...)
+
+？！
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠C：That Customer Over There
+Well sure. You're still dreaming,[sr]so of course your mind is a bit hazy.
+[k]
+
+＠C：That Customer Over There
+As for me, I'm the greatest Caster that ever[sr]was or will be. Please, call me Mister Sheep.
+[k]
+
+[charaFace C 4]
+
+＠Mister Sheep
+I have to say, though... That was a great show.
+[k]
+
+＠Mister Sheep
+Regrets from the youthful days he can never go back to... Repentance in his twilight years... Homesickness...
+[k]
+
+[charaFace C 1]
+＠Mister Sheep
+Mmm, talk about hard-boiled. I'd love to try playing that sort of grizzled old man type myself someday!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Fou
+Golfou. Dofooou. (Special Translation: Well, you've got the “scum of the earth” part down pat.)
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Mister Sheep
+Anyway, consider that cocktail there[sr]my payment for the show I just attended.
+[k]
+
+＠Mister Sheep
+Hm? A Holy Grail's way too much, you say?
+[k]
+
+[charaFace C 3]
+
+＠Mister Sheep
+Ah, what's the harm? There's plenty more where that came from, right? Why not just go ahead and use them all on me?
+[k]
+
+[messageOff]
+[wt 0.5]
+[wipeout openEye 0.7 1]
+[wt 0.7]
+
+[wipein openEye 1.0 1]
+[wt 1.5]
+[charaFace C 1]
+
+＠Mister Sheep
+Whoops, it looks like you're about to wake up.[sr]All right, see you later, then!
+[k]
+
+＠Mister Sheep
+Hopefully we'll meet again at the[sr]next Golden Heroic Spirit Theater!
+[k]
+
+＠Mister Sheep
+Personally, I'm hoping for an Altria harem next time.[sr]Farewell, au revoir, and good night!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Fou
+Fou, fooou![sr](Special Translation: This prick never changes!)
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
