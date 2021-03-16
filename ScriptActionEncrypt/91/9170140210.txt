@@ -1,0 +1,1629 @@
+
+
+
+＄91-70-14-02-1-0
+
+[soundStopAll]
+[charaSet A 7014001 1 Nightingale]
+[charaSet B 98001000 1 Mash]
+[charaSet C 11002002 1 "Count of Monte Cristo"]
+[charaSet E 7022001 1 Ibaraki-Douji]
+
+[charaSet G 7014001 1 Silhouette_Nightingale]
+[charaFilter G silhouette 00000080]
+
+[charaSet D 5016001 1 Ibaraki_Effects]
+[charaSet F 1001000 1 Enemy_Effects]
+[charaSet H 98006200 1 Enemy]
+
+[scene 20700]
+
+[cameraMove 0.1 0,0 1.01]
+[charaTalk off]
+
+[bgm BGM_EVENT_3 0.1]
+[fadein black 1.0]
+[wait fade]
+
+
+[se ad671]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[charaMove A 20,-5 0.1]
+[charaShake A 0.05 1 1 0.6]
+[wt 0.1]
+[charaMove A 40,-1 0.3]
+[wt 1.1]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad33]
+[effect bit_talk_kengekiall03]
+
+[wt 1.0]
+
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.03 3 3 0.4]
+[wt 0.5]
+
+
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[wt 0.1]
+
+[se ad7]
+[charaPut D 1]
+[charaMoveScale E 1.2 0.2]
+[charaMove E 0,10 0.2]
+[charaEffect D bit_talk_41]
+[charaFadeout E 0.2]
+[wt 0.2]
+[charaPut D 1200,1200]
+[charaEffectStop D bit_talk_41]
+[wt 0.2]
+
+[charaTalk depthOff]
+[charaDepth F 2]
+[charaDepth H 1]
+
+[charaPut F 1]
+[charaEffect F bit_talk_explosion]
+[wt 0.2]
+[shake 0.05 3 3 0.7]
+[seStop ad439]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[se ad63]
+[wt 3.0]
+[se ad42]
+[bgmStop BGM_EVENT_3 2.0]
+[charaSpecialEffect H enemyErasure 1 1.3]
+[wt 3.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 10000]
+[cameraMove 0.1 0,0 1.00]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_07_02]
+[se ad12]
+
+[charaSet D 5016001 1 Geronimo]
+
+[scene 10000]
+[wt 6.5]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[fadeout black 0.1]
+[wait fade]
+
+[charaScale E 1.0]
+
+[scene 10200]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠Mash
+Welcome back, Senpai!
+[k]
+
+＠Mash
+Welcome back, everyone![sr]Great job out there!
+[k]
+
+[charaFace B 13]
+
+＠Mash
+I can see the minute Singularity shrinking even[sr]as we speak. That's one less to worry about.
+[k]
+
+？1：I'm glad we took care of it without things getting out of hand.
+
+[charaFace B 1]
+
+＠Mash
+Me too.
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[branch select01_end]
+
+？2：Great job, everyone!
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+
+＠Ibaraki-Douji
+Hmph, that was so easy I didn't[sr]even need to bother going! Hahaha!
+[k]
+
+＠Ibaraki-Douji
+But don't forget my tribute, all right? I don't have to tell you what you need to bring me so I'll spare your life, do I?
+[k]
+
+[charaFace E 1]
+
+＠Ibaraki-Douji
+Heh heh heh, you'd better not ever forget I'm an oni![sr]You can't just go ordering me around so easily!
+[k]
+
+[charaFace E 5]
+
+＠Ibaraki-Douji
+The moment you drop your guard, I'll eat your head and use your intestines to floss out any bits of skull that get stuck between my fangs. Don't forget that.
+[k]
+
+？！
+
+[branch select02]
+
+[label select02]
+
+？1：I won't.
+
+？！
+
+[charaFace E 1]
+
+
+＠Ibaraki-Douji
+Mwahaha, so you do know your place![sr]Not bad!
+[k]
+
+[messageOff]
+[charaFace E 4]
+[wt 1.0]
+[charaFace E 0]
+
+
+＠Ibaraki-Douji
+...Anyway, hurry up and do something about that one.[sr]She's been acting weird and it's bugging me.
+[k]
+
+
+
+[messageOff]
+[se ade146]
+[seStop ade146 1.5]
+[charaMove E -100,0 0.8]
+[charaFadeout E 0.7]
+[wt 1.5]
+
+[label select01_end]
+
+？！
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠Geronimo
+...Have you noticed, Master?
+[k]
+
+＠Geronimo
+I was watching while we were in battle,[sr]and she was far less active than usual.
+[k]
+
+？1：...I noticed.
+
+？！
+
+
+＠Geronimo
+Florence Nightingale.
+[k]
+
+＠Geronimo
+I've never seen her be so passive in battle before.[sr]I did not notice any affliction or wound that might explain it.
+[k]
+
+＠Geronimo
+There may be something wrong with her Spirit Origin.[sr]We should treat her at once.
+[k]
+
+＠Geronimo
+You should let Da Vinci know about this,[sr]just in case.
+[k]
+
+[messageOff]
+[se adm36]
+[seVolume adm36 0 0.2]
+[charaFadeout D 0.1]
+
+[bgmStop BGM_EVENT_2 1.2]
+[wt 0.3]
+[seVolume adm36 0.4 0.6]
+[wt 0.6]
+[seVolume adm36 0.4 1.0]
+[wt 0.8]
+[seStop adm36 0.1]
+
+[messageOff]
+[charaTalk off]
+
+[charaFace G 0]
+[charaFadein G 0.7 1]
+[wt 0.7]
+
+[charaTalk depthOff]
+[charaDepth G 2]
+[charaDepth A 1]
+
+
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+[charaFadeout G 0.1]
+
+＠Nightingale
+What are you talking about?
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[bgm BGM_EVENT_5 0.1]
+[charaTalk on]
+
+＠Nightingale
+I was?[sr]In that last battle?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Geronimo
+...That's right. Twice, there was an enemy right in front of you, and you didn't lift a finger to attack them.
+[k]
+
+
+＠Geronimo
+You would not normally allow yourself to be so passive.[sr]Are you aware you were acting like that?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠Nightingale
+...[sr]...
+[k]
+
+[messageOff]
+[charaFace A 6]
+[wt 1.0]
+[charaFace A 0]
+
+＠Nightingale
+I'm sorry, I don't understand what you mean.[sr]It's not my job to fight. I'm a nurse, not a soldier.
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[wt 1.3]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+
+[bgmStop BGM_EVENT_5 0.7]
+[wt 1.0]
+[charaFace A 0]
+[bgm BGM_EVENT_11 0.1]
+
+＠Nightingale
+Though of course, that doesn't mean I won't fight should it become necessary.
+[k]
+
+
+＠Nightingale
+There may well be times when I'm pinned down,[sr]unable to reach relief supplies right in front of me.
+[k]
+
+＠Nightingale
+So in circumstances like that...
+[k]
+
+
+＠Nightingale
+...I'm sure I would do whatever was necessary[sr]to remove the obstacles in my way.
+[k]
+
+＠Nightingale
+If it came down to it, I would have no hesitation about drawing a gun and pulling the trigger. Of that, I'm certain.
+[k]
+
+＠Nightingale
+But...
+[k]
+
+[messageOff]
+[charaFace A 4]
+[wt 1.0]
+[charaFace A 0]
+
+＠Nightingale
+...enemy or not, to do that would[sr]be to cause injury with my own hands.
+[k]
+
+＠Nightingale
+And nothing could be further from what I want.
+[k]
+
+＠Nightingale
+Listen, Commander, that others think of me as a small army unto myself does not make me an officer.
+[k]
+
+
+＠Nightingale
+I'm not here because I want to win wars.[sr]All I want is for the fighting to stop.
+[k]
+
+＠Nightingale
+I...
+[k]
+
+[charaFace A 5]
+
+＠Nightingale
+I want to save lives.
+[k]
+
+[charaFace A 4]
+
+＠Nightingale
+As long as I can do that,[sr]I don't care about the rest...
+[k]
+
+？1：Nightingale...
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.0]
+[charaFace A 7]
+[wt 1.0]
+
+[charaShake A 0.3 2 2 0.2]
+[charaFace A 2]
+[wt 0.2]
+
+＠Nightingale
+...(Gasp!)
+[k]
+
+＠Nightingale
+Nnn, I can't remember how I got here.[sr]Weren't we just fighting golems?
+[k]
+
+[charaFace A 4]
+
+＠Nightingale
+Are we back in Chaldea now? We are, aren't we?[sr]What have I been doing...?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠Geronimo
+You were telling us how you aren't a soldier.[sr]That is certainly true, of course, but... Hmm.
+[k]
+
+
+＠Geronimo
+I knew it. Something is wrong[sr]with her Spirit Origin, Master.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Nightingale
+I see.
+[k]
+
+＠Nightingale
+Yes, I must not be feeling well. I will go rest.
+[k]
+
+[messageOff]
+[charaFace A 4]
+[bgmStop BGM_EVENT_70 1.3]
+[charaAttack A normal 25,1 0.5]
+[wt 0.5]
+[charaAttack A normal -25,3 0.8]
+[wt 0.8]
+
+？1：Nightingale?
+
+？！
+
+[charaMove A 0,-50 0.4]
+[charaFadeout A 0.4]
+[wt 0.4]
+[se ad144]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠Mash
+Nightingale!?
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[charaSet H 98109900 1 "Sidney Herbert"]
+[charaFilter H silhouette 00000080]
+
+
+[scene 10901]
+
+[wt 1.5]
+
+[se adm35]
+[seVolume adm35 0 0.3]
+[wt 1.0]
+
+[fadein black 1.0]
+[seVolume adm35 1.0 1.0]
+[wait fade]
+
+[wt 2.0]
+[seVolume adm35 1.0 0.6]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.4]
+
+
+＠Gentleman
+...Are you listening to me, Florence?
+[k]
+
+[seStop adm35 1.0]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Nightingale
+Yes. I'm listening.
+[k]
+
+＠Nightingale
+We were just talking about the front line's medical supply situation. I need your help, Sidney.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠Sidney Herbert
+Oh for... I knew it! You aren't listening to me at[sr]all, Florence! Do you even realize where you are!?
+[k]
+
+＠Sidney Herbert
+This is London! The capital of the entire British Empire! You aren't on the battlefield anymore, Florence.
+[k]
+
+
+＠Sidney Herbert
+But it's clear to me that your heart is still there.[sr]Just look at you.
+[k]
+
+＠Sidney Herbert
+I can't believe you're wearing an army uniform.[sr]You don't even work for them...
+[k]
+
+＠Sidney Herbert
+I won't ask what happened while you were there,[sr]but this is London, Florence. London.
+[k]
+
+＠Sidney Herbert
+Do you understand?[sr]You can't go around behaving like this.
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠Nightingale
+...I dress this way for a reason.
+[k]
+
+[charaFace A 6]
+
+＠Nightingale
+You may find it strange. Maybe it is strange.[sr]But I'm fighting too, just like those soldiers.
+[k]
+
+＠Nightingale
+I'll never stop fighting against the illness and injury plaguing our world. This uniform is more than appropriate for that.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠Sidney Herbert
+You'll never stop fighting...?
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Nightingale
+That's right.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠Sidney Herbert
+Ahh...
+[k]
+
+＠Sidney Herbert
+Don't do this to yourself anymore, Florence.[sr]Please. I'm begging you.
+[k]
+
+＠Sidney Herbert
+You haven't been the Angel of Crimea for a long time now. You don't have to keep fighting any longer.
+[k]
+
+＠Sidney Herbert
+It's time to focus on your own life now.[sr]What about... What about marriage?
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠Nightingale
+Sidney?
+[k]
+
+[charaFace A 0]
+
+＠Nightingale
+What in the world are you talking about?[sr]You know nobody can get married on their own.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠Sidney Herbert
+...That's not what I mean, and you know it.
+[k]
+
+
+＠Sidney Herbert
+How long are you going to keep pretending not to know?
+[k]
+
+＠Sidney Herbert
+I haven't been helping solely out of the goodness of my heart, Florence. Everything I've done has been for you...
+[k]
+
+[bgmStop BGM_EVENT_70 1.0]
+
+＠Sidney Herbert
+For years now, I...
+[k]
+
+＠Sidney Herbert
+I've always lo[line 2]
+[k]
+
+[messageOff]
+
+[se adm35]
+[wt 2.0]
+
+[fadeout black 0.5]
+[seVolume adm35 0.5 0.3]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+[wipeFilter cinema 0.5 0]
+[cameraFilter gray]
+[wt 0.5]
+
+[seStop adm35 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.5]
+
+[bgm BGM_EVENT_41 0.1]
+
+
+＠
+No.[sr]This is wrong. It's a lie.
+[k]
+
+
+＠
+Sidney Herbert was my friend. He was already married.[sr]This conversation never happened. It couldn't have.
+[k]
+
+＠
+No. It's not just that.
+[k]
+
+＠
+In all my life, nobody ever told me they loved me...
+[k]
+
+[messageOff]
+[se ade74]
+[seVolume ade74 0 0.3]
+[wt 0.5]
+
+[seVolume ade74 0.5 0.7]
+[wt 0.5]
+
+[seVolume ade74 1.0 1.0]
+[wt 1.0]
+[seStop ade74]
+
+＠Voice
+I see.
+[k]
+
+
+＠Voice
+I always thought your way of life was...bizarre, but[sr]now, you've started seeing cracks in your own facade.
+[k]
+
+＠Voice
+Heh.[sr]Fascinating.
+[k]
+
+＠Voice
+But...I'm not about to let you dig your own grave.
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_41 1.0]
+[wait fade]
+
+[cameraFilter normal]
+[wipeOff]
+
+[scene 10420]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+[se ad77]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠Nightingale
+You have horrid taste in hobbies.
+[k]
+
+＠Nightingale
+Do you always go around spying[sr]on women while they're sleeping?
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠Count of Monte Cristo
+...Hmph.
+[k]
+
+
+＠Count of Monte Cristo
+Most Servants don't sleep at all, let alone dream.
+[k]
+
+＠Count of Monte Cristo
+That you are here, now, doing both makes plain[sr]that something is wrong with your Spirit Origin.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFace A 5]
+[charaFadein A 0.1 2]
+
+＠Nightingale
+...[sr]...
+[k]
+
+
+＠Count of Monte Cristo
+Generally speaking, all of Chaldea's Servants are linked to Master. It's no wonder that sometimes lines may get a little blurred.
+[k]
+
+[charaFace A 6]
+
+＠Nightingale
+How dare you say that to me?
+[k]
+
+＠Count of Monte Cristo
+Something like this has happened[sr]to you before, hasn't it?
+[k]
+
+[charaFace A 0]
+
+＠Nightingale
+That wasn't me. It was [%1] who...
+[k]
+
+[messageOff]
+[charaFace A 4]
+[wt 1.0]
+[charaFace A 0]
+
+＠Nightingale
+Yes. It has.
+[k]
+
+＠Count of Monte Cristo
+Nice to see you be direct about it.
+[k]
+
+＠Nightingale
+It's clear what is going on here.[sr]There's no point in denying it.
+[k]
+
+[charaFace A 6]
+
+＠Nightingale
+...I must be mentally injured.
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_70 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+
+
+[charaSet D 5009001 1 "Da Vinci"]
+[charaSet E 11002002 1 "Silhouette_Count of Monte Cristo"]
+[charaFilter E silhouette 00000080]
+[charaSet F 9005001 1 Holmes]
+
+[scene 10200]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_1 0.1]
+
+＠Holmes
+Heroic Spirits...
+[k]
+
+
+＠Holmes
+...are usually created when a human being ascends beyond their humanity. At this point, they have yet to be assigned a class.
+[k]
+
+
+＠Holmes
+For one thing, the very concept of classes only arose[sr]as a byproduct of the Heroic Spirit Summoning Ritual.
+[k]
+
+＠Holmes
+Naturally, Chaldea's summoning system follows the same principles, typically assigning each Heroic Spirit one of the seven classes.
+[k]
+
+＠Holmes
+But there are, of course, exceptions to this rule. Most potential problems can be avoided if there is an appropriate Extra class to which the Heroic Spirit can be assigned...
+[k]
+
+
+＠Holmes
+...but there may also be times when a Heroic Spirit is forced into a class for which they may not be fully suited.
+[k]
+
+＠Holmes
+Such cases can certainly become cause[sr]for distortion of one sort of another.
+[k]
+
+？1：Uh... And that means what, exactly?
+？2：Could you try that again, only way, waaay simpler?
+
+？！
+
+[messageOff]
+[charaFace F 6]
+[wt 1.0]
+[charaFace F 0]
+[wt 0.8]
+
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[charaTalk off]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+[wipeFilter cinema 0.5 0]
+[cameraFilter gray]
+[wt 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.5]
+
+＠Holmes
+...The Ms. Nightingale we know is a Berserker.
+[k]
+
+＠Holmes
+She is clearly a fighter, with her struggles to save lives as a nurse now manifesting in more literal terms.
+[k]
+
+＠Holmes
+But is that who she truly is? Was she always[sr]so obstinate during her life as a human woman?
+[k]
+
+
+＠Holmes
+Or is the fierce devotion we see in her a caricature of her true self, exaggerated to fit her Berserker class?
+[k]
+
+＠Holmes
+If the latter, she will continue to strain her mind and Spirit Origin for the length of her materialization.
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[cameraFilter normal]
+[wipeOff]
+
+[charaFadeout A 0.1]
+
+[charaTalk on]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+
+？1：...
+？2：Then, I've been forcing her to be something she's not all this time...
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠Mash
+N-not necessarily!
+[k]
+
+[charaFace B 12]
+
+
+＠Mash
+I know that in my case, I never[sr]felt like I was under any strain.
+[k]
+
+＠Mash
+So maybe it's similar for[line 2]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+
+＠Holmes
+As a Demi-Servant, Ms. Kyrielight,[sr]your circumstances are even more unusual.
+[k]
+
+＠Holmes
+Thus, I'm afraid your argument may[sr]not hold much water in this case.
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[bgmStop BGM_EVENT_1 1.6]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+[wt 1.3]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_2 0.1]
+
+
+＠Da Vinci
+Ugh, not again, Holmes. You really can be[sr]kind of a twat sometimes, you know that?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Holmes
+Can I now?
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Da Vinci
+You don't have to put it like that. Summoning a Heroic Spirit with a mind of their own has always been a huge deal.
+[k]
+
+＠Da Vinci
+And it's especially difficult to maintain[sr]a contract with a Berserker. This is KNOWN.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+＠Count of Monte Cristo
+...It makes no difference to me.
+[k]
+
+[messageOff]
+[se ad343]
+[effect bit_talk_06_b3]
+[wt 1.0]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFadein E 0.7 0,-70]
+[charaMove E 0,0 0.7]
+[wt 1.2]
+
+[seStop ad343 1.0]
+
+[charaTalk depthOff]
+[charaDepth E 2]
+[charaDepth C 1]
+
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 1.0]
+
+[effectStop bit_talk_06_b3]
+[charaFadeout E 0.1]
+[wt 1.0]
+
+＠Count of Monte Cristo
+Let's go, [%1].
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+[bgmStop BGM_EVENT_2 0.5]
+
+＠Mash
+Wha[line 2]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0]
+[charaFace B 6]
+[charaFadein B 0.1 2]
+
+＠Count of Monte Cristo
+Take care of [&his:her] body, girl.[sr]Er, Mash Kyrielight.
+[k]
+
+[charaFace B 12]
+
+＠Mash
+W-wait! What are you talking about, Count!?
+[k]
+
+[messageOff]
+[wipeout openEye 0.5 0.7]
+[wait wipe]
+[wt 0.7]
+[wipein openEye 0.3 0.7]
+[wait wipe]
+[wt 0.1]
+[wipeout openEye 0.2 0.5]
+[wait wipe]
+[wt 0.5]
+[wipein openEye 0.5 0.7]
+[wait wipe]
+[wt 1.0]
+
+[charaFace B 6]
+
+＠Mash
+Ah! Senpai!
+[k]
+
+[charaFace E 0]
+[charaFadein E 0.7 0]
+
+[messageOff]
+[wipeout openEye 1.5 0.7]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[charaFadeout B 0.1]
+
+
+[scene 10901]
+[wt 1.5]
+
+[se adm35]
+[seVolume adm35 0 0.3]
+[wt 1.0]
+
+[wipein openEye 0.5 0.7]
+[seVolume adm35 0.5 1.0]
+[wait wipe]
+
+[wt 2.0]
+
+[seStop adm35 2.4]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠Sidney Herbert
+Ah, [&Mr.:Miss] [%1]![sr]Excellent timing!
+[k]
+
+＠Sidney Herbert
+Please, would you say something to Florence?[sr]I can't seem to get through to her myself.
+[k]
+
+＠Sidney Herbert
+But maybe she'll listen to you,[sr]since you're one of her colleagues.
+[k]
+
+＠Sidney Herbert
+Go on! Please, say something!
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Nightingale
+...[sr]...
+[k]
+
+？1：J-just a minute!
+？2：What is this place...
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[se ad343]
+[effect bit_talk_06_b3]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.7 0,-70]
+[charaMove E 0,0 0.7]
+[wt 1.2]
+
+[seStop ad343 1.0]
+
+[charaTalk depthOff]
+[charaDepth E 2]
+[charaDepth C 1]
+
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 1.0]
+
+[effectStop bit_talk_06_b3]
+[charaFadeout E 0.1]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk C]
+
+
+＠Count of Monte Cristo
+You are seeing her mind as it is now.[sr]Normally you would only see this in your dreams.
+[k]
+
+？1：So this is Nightingale's...
+
+？！
+
+＠Count of Monte Cristo
+That's right.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠Sidney Herbert
+Are you all right, [&Mr.:Miss] [%1]?[sr]Your eyes seemed to glaze over for a moment.
+[k]
+
+＠Sidney Herbert
+Please, you have to talk to Florence.[sr]She needs to rest up and return to her normal life.
+[k]
+
+＠Sidney Herbert
+She only just got back from the war, and she's still intent on fighting. She can't keep going like this.
+[k]
+
+？1：Um...
+？2：I'm sorry, do I know you?
+
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Count of Monte Cristo
+He's nobody.
+[k]
+
+[messageOff]
+[charaFace C 1]
+[wt 1.0]
+[charaFace C 0]
+
+＠Count of Monte Cristo
+Remember, she's a Berserker. Most of her rational[sr]mind was sealed away when she materialized.
+[k]
+
+＠Count of Monte Cristo
+Ordinary people could never keep the fires of battle raging in their hearts at all times, but that's not the case for Berserkers.
+[k]
+
+[charaFace C 5]
+
+＠Count of Monte Cristo
+However, that of course comes at a cost.
+[k]
+
+＠Count of Monte Cristo
+There's something that builds up deep[sr]down inside Berserkers over time.
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 0.3]
+[se ad77]
+[wt 0.5]
+[seStop ad77 0.5]
+[bgm BGM_EVENT_72 0.1]
+
+[charaFace C 2]
+
+＠Count of Monte Cristo
+Especially in the ones who still[sr]speak with some semblance of sanity!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠Nightingale
+...[sr]...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+
+＠Count of Monte Cristo
+It becomes twisted, warped, distorted.[sr]At times, it can even manifest.
+[k]
+
+
+＠Count of Monte Cristo
+Sometimes, it appears as a monster who wants nothing more than to follow its destructive impulses and lay waste to everything around it...
+[k]
+
+＠Count of Monte Cristo
+...and sometimes, it embodies reason[sr]in the shape of an old friend!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠Sidney Herbert
+She needs to rest now.[sr]She shouldn't push herself anymore.
+[k]
+
+＠Sidney Herbert
+Come now, Florence, think about it.[sr]There's no reason to do this to yourself.
+[k]
+
+＠Sidney Herbert
+Don't you agree, [&Mr.:Miss] [%1]!?
+[k]
+
+？1：Maybe you're right.
+
+？！
+
+＠Sidney Herbert
+Of course I am!
+[k]
+
+＠Sidney Herbert
+So she should stop this right[line 2]
+[k]
+
+[bgmStop BGM_EVENT_72 1.0]
+
+？1：But not yet.
+？！
+
+＠Sidney Herbert
+What was that...?
+[k]
+
+？1：I want to keep fighting beside her until the very end.
+？！
+
+＠Sidney Herbert
+What!?
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Nightingale
+...[sr]...
+[k]
+
+[messageOff]
+[charaFaceFade A 8 1.0]
+[wt 2.0]
+[charaFace A 5]
+
+[bgm BGM_EVENT_63 0.1]
+
+
+＠Nightingale
+...So that's your wish, [%1]?
+[k]
+
+＠Nightingale
+Very well then, I accept your request. I will return[sr]to the battlefield to save as many lives as I can.
+[k]
+
+＠Nightingale
+If helping those in need requires[sr]me to do violence, then so be it.
+[k]
+
+[messageOff]
+
+[se ad39]
+[effect bit_talk_36_sl01]
+[wt 2.0]
+
+[effectStop bit_talk_36_sl01]
+
+[fadeout ffffcf 0.5]
+[wait fade]
+
+[charaChange A 7014002 0 fade 0.1]
+[seStop ad39 1.0]
+[wait charaChange A]
+[se ad29]
+[wt 0.5]
+
+[fadein ffffcf 0.5]
+[wait fade]
+
+[wt 2.0]
+
+＠Nightingale
+Good grief. I guess you're no better[sr]than me in some ways, Commander.
+[k]
+
+＠Nightingale
+Your desire to remain on the battlefield with me can't be healthy. I must cure you of it...some day.
+[k]
+
+？1：Works for me.
+
+？！
+
+[messageOff]
+[charaFace A 1]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Count of Monte Cristo
+I see your appearance has changed.[sr]Not bad.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠Nightingale
+So it has. I didn't mean for my hair to come[sr]undone...but perhaps it suits who I am now.
+[k]
+
+＠Nightingale
+If I'm to embrace my Berserker self...then I must admit this is who I am.
+[k]
+
+[charaFace A 5]
+
+＠Nightingale
+A wild woman, hair untamed, saving every life[sr]she can without regard for her own safety.
+[k]
+
+＠Nightingale
+This is who I truly am right now.
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_63 1.0]
+[charaFaceFade C 2 0.5]
+[wt 1.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠Nightingale
+All right then, Commander. No...Master.[sr]First, I'll need your help with something.
+[k]
+
+＠Nightingale
+The temporary excision of this fragment[sr]of rationality masquerading as an old friend.
+[k]
+
+？1：You got it!
+？2：Let the healing begin!
+
+？！
+
+[charaFace A 5]
+
+＠Nightingale
+Good. Very well then...
+[k]
+
+[charaFace A 7]
+
+＠Nightingale
+[f x-large]Start the treatment!!!
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.5]
+[wait fade]
+[soundStopAll]
+[end]

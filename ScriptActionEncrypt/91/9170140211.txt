@@ -1,0 +1,111 @@
+
+
+
+＄91-70-14-02-1-1
+
+[soundStopAll]
+[charaSet A 7014001 1 Nightingale]
+
+
+[scene 10400]
+
+[wipeout openEye 0.1 0.7]
+[wait wipe]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipein openEye 1.0 0.7]
+[wait wipe]
+
+[wt 0.5]
+
+[se ad77]
+[wt 2.0]
+
+[se ad8]
+
+[se adm36]
+[seVolume adm36 0 0.2]
+[wt 1.0]
+[seVolume adm36 0.5 0.6]
+[wt 1.5]
+[seVolume adm36 0.4 1.0]
+[wt 1.0]
+[seStop adm36 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠Nightingale
+Good morning.[sr]...I see you have more or less awoken on schedule today.
+[k]
+
+＠Nightingale
+It's been a week since your last morning exam, so I'd like you to come to the infirmary for a follow-up.
+[k]
+
+＠Nightingale
+Mash Kyrielight is already on standby there,[sr]so do try to hurry.
+[k]
+
+＠Nightingale
+Now, if you'll excuse me.
+[k]
+
+[messageOff]
+[se adm36]
+[seStop adm36 2.5]
+[charaMove A -50,0 0.5]
+[charaFadeout A 0.4]
+[wt 1.5]
+
+？1：Nightingale!
+？！
+
+[seStop adm36]
+
+[bgmStop BGM_EVENT_2 0.8]
+[se adm36]
+[seStop adm36 0.8]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.8]
+
+＠Nightingale
+Yes?
+[k]
+
+？1：...G-good morning.
+
+？！
+
+[messageOff]
+[bgm BGM_EVENT_6 0.1]
+[charaFaceFade A 8 1.0]
+[wt 2.0]
+[charaFace A 0]
+
+＠Nightingale
+Yes, it is a good morning.
+[k]
+
+[charaFace A 1]
+
+
+＠Nightingale
+...Thank you again for fighting by my side, Master.
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_6 2.0]
+[wait fade]
+[soundStopAll]
+[end]

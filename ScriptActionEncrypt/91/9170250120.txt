@@ -1,0 +1,629 @@
+
+
+
+
+
+＄91-70-25-01-2-0
+
+[soundStopAll]
+[charaSet A 7025000 1 Hijikata]
+[charaSet B 1098118900 1 "Enemy Soldier"]
+[charaSet C 98006300 1 Soldier]
+
+[imageSet D cut104_text27 1]
+[charaSet E 98111500 1 "Effect Dummy"]
+
+[charaEffect E bit_talk_41]
+[charaPut E 0,-2000]
+
+[bgm BGM_EVENT_3 0.1 0.7]
+
+[scene 47000]
+[fadein black 1.0]
+[wait fade]
+
+[se ad647]
+[seVolume ad647 0.3 0.7]
+[wt 1.5]
+[se bac7]
+[wt 0.3]
+[se bac6]
+[wt 0.4]
+[se bac5]
+[se ad161]
+
+[seStop ad647 1.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_3 0.5 1.0]
+
+＠Enemy Soldier
+How the hell are they this strong!?[sr]They told us these guys would be pushovers!
+[k]
+
+＠Enemy Soldier
+You're telling me they're supposed to be[sr]some mere shogunate stragglers to mop up!?
+[k]
+
+[messageOff]
+[wt 0.2]
+
+[se bac135]
+[effect bit_talk_h_slash01]
+
+[wt 0.9]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠Hijikata
+We're not the shogunate...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale A 1.2]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-10]
+
+[se ad35]
+
+[charaPut E 0,100]
+
+＠Hijikata
+[f large]We're the Shinsengumi!!!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut E 0,-2000]
+[charaScale A 1.0]
+
+＠Enemy Soldier
+The Sh-Shinsengumi!?
+[k]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠Hijikata
+The enemy's scattering![sr]Kill every last one of them!
+[k]
+
+＠Hijikata
+Advance, Shinsengumi!!!
+[k]
+
+[messageOff]
+[se ad647 0.3 0.5]
+
+[wt 2.0]
+
+[fadeout black 1.0]
+[seStop ad647 1.0]
+[bgmStop BGM_EVENT_3 1.0]
+[wait fade]
+[charaFadeout A 0.1]
+[wt 0.5]
+[scene 47001]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_50 0.1]
+
+[wt 0.5]
+
+[se ad413]
+[seVolume ad413 0 0.5]
+[seVolume ad413 1.0 0.8]
+[wt 2.5]
+
+[seStop ad413 1.0]
+[wt 1.0]
+
+＠Soldier
+That was our first big victory[sr]in a long time, Vice Commander!
+[k]
+
+＠Soldier
+Oh, right.[sr]It's Vice minister of the Army now, isn't it?
+[k]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠Hijikata
+Don't call me that. Sounds wrong to me.[sr]Vice Commander's fine.
+[k]
+
+＠Soldier
+I had my doubts when we came to Ezo, but the way things are going now, we might just be able to drive those SatChou bastards back after all.
+[k]
+
+＠Hijikata
+That's right. SatChou won't be getting through Futamataguchi while we're here defending it. Not a one of them's so much as setting foot in Hakodate.
+[k]
+
+＠Hijikata
+You've all been doing great,[sr]especially for how few of you there are.
+[k]
+
+＠Hijikata
+I wish I could give you a more fitting reward,[sr]but today you'll have to make do with booze.
+[k]
+
+＠Soldier
+Fine with me![sr]I couldn't ask for a better reward right now.
+[k]
+
+＠Hijikata
+Hey now, don't go getting so drunk you cause a ruckus.[sr]Keep it to one drink for today.
+[k]
+
+＠Soldier
+Hahaha! Even after a victory like this you're still so strict! No wonder they call you the Demon Vice Commander!
+[k]
+
+[messageOff]
+
+[wipeout rollRight 1.5 0.5]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.8]
+[wipein rollLeft 1.5 0.5]
+[wait wipe]
+[wt 0.4]
+
+
+[se ad413]
+[seVolume ad413 0.3 0.5]
+
+[wt 2.0]
+
+[seStop ad413 1.0]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠Hijikata
+Hey there, new [&guy:girl]. You boozing it up, too?
+[k]
+
+？1：You've really changed, Hijikata.
+？2：You haven't changed a bit, Hijikata.
+
+？！
+
+[charaFace A 0]
+＠Hijikata
+You think?
+[k]
+
+[charaFace A 4]
+＠Hijikata
+...
+[k]
+
+＠Hijikata
+...Maybe you're right.
+[k]
+
+[charaFace A 7]
+＠Hijikata
+Tomorrow, I'm heading back to[sr]Goryoukaku for reinforcements.
+[k]
+
+＠Hijikata
+You come too. There's a favor I want to ask you.
+[k]
+
+？1：Got it.
+？2：A favor...?
+
+？！
+
+[charaFace A 0]
+＠Hijikata
+You see, you and I are two of the last[sr]few Shinsengumi survivors out there.
+[k]
+
+＠Hijikata
+That's why I can only ask this of you.
+[k]
+
+[messageOff]
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_50 1.5]
+[wait fade]
+[charaFadeout A 0.1]
+[scene 10000]
+
+[charaFadein D 0.1 30,-210]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[wait touch]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+[charaSet A 7025001 1 Hijikata]
+
+[scene 46801]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠Hijikata
+...Go back to Edo.
+[k]
+
+＠Hijikata
+Find my family in Hino, and tell them everything that's happened with the war so far.
+[k]
+
+？1：You can't be serious...
+
+？！
+
+＠Hijikata
+You'll need this letter...[sr]Oh, and here, take this photograph with you, too.
+[k]
+
+[charaFace A 8]
+＠Hijikata
+Heh. You know, I look pretty good in this.[sr]These photograph things aren't half bad.
+[k]
+
+？1：I'm sticking with you to the very end!
+
+？！
+
+[charaFace A 9]
+＠Hijikata
+I'm giving you an order, dammit! One more word,[sr]and I'll cut you down where you stand!
+[k]
+
+？1：...
+
+？！
+
+[charaFace A 7]
+＠Hijikata
+...
+[k]
+
+[charaFace A 8]
+＠Hijikata
+My family in Hino'll take good care of you.[sr]Watch yourself out there, new [&guy:girl].
+[k]
+
+[charaFace A 0]
+＠Hijikata
+...No, you aren't really the[sr]new [&guy:girl] anymore, are you.
+[k]
+
+＠Hijikata
+Let's see, I think your name was Ichimura...
+[k]
+
+[charaFace A 7]
+＠Hijikata
+...
+[k]
+
+＠Hijikata
+No... It's you, [%1].
+[k]
+
+？1：You knew who I was all along?
+？2：Are these your memories, Hijikata...?
+
+？！
+
+[charaFace A 8]
+＠Hijikata
+Beats me... Servant minds are weird.
+[k]
+
+＠Hijikata
+I can't tell where the hell the[sr]memories begin and the illusions end.
+[k]
+
+＠Hijikata
+But at this point, it doesn't matter if[sr]these are my memories, or someone else's.
+[k]
+
+[charaFace A 0]
+＠Hijikata
+Whatever happened here happened a long time ago.
+[k]
+
+＠Hijikata
+Back when all I cared about was my vow of loyalty.
+[k]
+
+＠Hijikata
+...
+[k]
+
+＠Hijikata
+Still, as far as I'm concerned,[sr]my Shinsengumi hasn't died yet.
+[k]
+
+＠Hijikata
+...
+[k]
+
+[charaFace A 7]
+＠Hijikata
+Now, go on...
+[k]
+
+＠Hijikata
+This next part is my own personal hell.[sr]A Shinsengumi of me, and me alone.
+[k]
+
+？1：...You're still going?
+？2：But, isn't that part...
+
+？！
+
+[charaFace A 0]
+＠Hijikata
+...Yeah, I'm going.
+[k]
+
+＠Hijikata
+No matter how hellish the battlefield gets,[sr]my loyalties will never die.
+[k]
+
+[charaFace A 7]
+＠Hijikata
+...Wherever I go, so goes the Shinsengumi.
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_11 1.5]
+[wait fade]
+[charaFadeout A 0.1]
+[imageSet C cut104_text28 1]
+
+[imageSet D cut104_text29 1]
+
+[imageSet E cut104_text30 1]
+
+[imageSet F cut104_text31 1]
+
+[imageSet G cut104_text32 1]
+
+[imageSet H cut104_text33 1]
+
+[scene 10000]
+[wt 1.0]
+
+[charaFadein C 0.1 220,-300]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.5]
+[wait touch]
+
+[charaFadeout C 0.4]
+[wt 1.0]
+
+[charaFadein D 0.4 0,-210]
+
+[wt 1.5]
+[wait touch]
+
+[charaFadeout D 0.4]
+[wt 1.0]
+
+[charaFadein E 0.4 0,-210]
+
+[wt 1.5]
+[wait touch]
+
+[charaFadeout E 0.4]
+[wt 1.0]
+
+[charaFadein F 0.4 50,-210]
+
+[wt 1.0]
+[wait touch]
+
+[charaFadeout F 0.4]
+[wt 1.0]
+
+[charaFadein G 0.4 0,-210]
+
+[wt 1.0]
+[wait touch]
+
+[charaFadeout G 0.4]
+[wt 1.0]
+
+[charaFadein H 0.4 50,-210]
+
+[wt 1.0]
+[wait touch]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout H 0.1]
+
+[charaSet A 7025000 1 Hijikata]
+[charaSet C 98006200 1 Ghost]
+[charaSet D 98006200 1 "Ghost 1"]
+[charaSet E 98006200 1 "Ghost 2"]
+
+[scene 40800]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_24 0.1]
+
+＠Soldier
+It's too reckless, Hijikata![sr]There's no way we'll make it back alive!
+[k]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠Hijikata
+Shut it! If I lose now, I won't even be able to[sr]show my face at Kondou's grave!
+[k]
+
+＠Hijikata
+Listen up! If any of you turn tail[sr]on me, I'm cutting you down myself!
+[k]
+
+＠Hijikata
+Cut [messageShake 0.05 4 4 0.2]them up! [wt 0.5][messageShake 0.05 4 4 0.2]Advance! [wt 0.5][messageShake 0.05 4 4 0.2]Cut them up!!! [wt 0.5][messageShake 0.05 4 4 0.2]ADVANCE!!!
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[se ad647]
+[seVolume ad647 0.3 0.7]
+[wt 1.5]
+[seStop ad647 0.5]
+[wt 1.2]
+
+[charaTalk C]
+[charaFace C 0]
+[se ad354]
+[seVolume ad354 0.5 0.5]
+[charaFadein C 0.4 1]
+[wt 0.4]
+[seStop ad354 0.8]
+＠Ghost
+Shinsen...gumi...?
+[k]
+
+＠Ghost
+S[messageShake 0.05 4 4 0.4]hinsengumi...!
+[k]
+
+[messageOff]
+
+[charaTalk D]
+[charaFace D 0]
+[se ad354]
+[seVolume ad354 0.5 0.5]
+[charaFadein D 0.4 -300,0]
+[wt 0.4]
+[seStop ad354 0.8]
+＠D：Ghost
+Curse you, Shinsengumi... Curse you, Shinsengumi...!
+[k]
+
+[messageOff]
+[charaTalk E]
+[charaFace E 0]
+[se ad354]
+[seVolume ad354 0.5 0.5]
+[charaFadein E 0.4 300,0]
+[wt 0.4]
+[seStop ad354 0.8]
+＠E：Ghost
+You're... You're...!
+[k]
+
+[charaTalk off]
+＠Ghost
+[f large]Hell is too good for you!
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+＠Hijikata
+...Heh. Now that's more like it.
+[k]
+
+＠Hijikata
+I was made for battlefields like this.
+[k]
+
+＠Hijikata
+Keep your curses. I've heard it all before.
+[k]
+
+＠Hijikata
+This is how my battles always go.
+[k]
+
+＠Hijikata
+A losing fight, from start to finish.
+[k]
+
+[messageOff]
+[charaFace A 4]
+[bgmStop BGM_EVENT_24 0.1]
+
+[bgm BGM_EVENT_91 0.1]
+[charaFace A 9]
+＠Hijikata
+And yet! That doesn't matter!
+[k]
+
+＠Hijikata
+As long as I'm here, the Shinsengumi does not fall!
+[k]
+
+＠Hijikata
+No battlefield, no hellscape,[sr]can ever break my loyalties!
+[k]
+
+＠Hijikata
+All I can do is keep moving forward!
+[k]
+
+＠Hijikata
+All I can do is keep cutting my foes down!
+[k]
+
+[charaFace A 6]
+＠Hijikata
+...Let's go, Shinsengumi! Advance!
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_91 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

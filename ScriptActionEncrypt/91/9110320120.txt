@@ -1,0 +1,923 @@
+
+
+＄91-10-32-01-2-0
+
+[soundStopAll]
+
+[charaSet A 1035001 1 Diarmuid]
+[charaSet B 1098124510 1 "Da Vinci"]
+[charaSet C 99502600 1 Mash]
+[charaSet D 98006200 1 "Enemy 1"]
+[charaSet E 98006200 1 "Enemy 2"]
+[charaSet F 98006200 1 "Enemy 3"]
+[charaSet J 1098120900 1 Static]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[charaDepth D 1]
+[charaDepth E 2]
+[charaDepth F 3]
+
+[scene 46700]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk off]
+
+[charaFace D 0]
+[charaFace E 0]
+[charaFace F 0]
+
+[charaFadein D 0.1 -350,0]
+[charaFadein E 0.1 350,0]
+[charaFadein F 0.1 1]
+
+[wt 0.5]
+
+
+[fowardEffect bit_talk_kengekiall02]
+[se ad32]
+[charaShake D 0.05 3 3 0.7]
+[charaShake E 0.05 3 3 0.7]
+[charaShake F 0.05 3 3 0.7]
+[wt 0.5]
+[se ad32]
+[wt 0.1]
+[se ad32]
+[wt 0.5]
+[effect bit_talk_v_slash01]
+[wt 0.1]
+[se bac308]
+[wt 0.3]
+
+[se ad463]
+[wt 0.5]
+[seStop ad463 1.0]
+[wt 0.5]
+
+[se ad42]
+[charaSpecialEffect D enemyErasure 1 1.5]
+[charaSpecialEffect E enemyErasure 1 1.5]
+[charaSpecialEffect F enemyErasure 1 1.5]
+
+[wait charaSpecialEffect D]
+[wait charaSpecialEffect E]
+[wait charaSpecialEffect F]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+
+[charaTalk on]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[charaSet D 2021000 1 "Tomoe Gozen"]
+[charaSet E 6029001 1 Chiyome]
+[charaSet F 98110000 1 "Yagyu Tajima-no-kami"]
+
+[wt 1.5]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Diarmuid
+...That would seem to be the last of them, Master.
+[k]
+
+＠Diarmuid
+The people of this town are paying us no mind. That's better than having them “freak out,” of course, but still...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Tomoe Gozen
+It is a little unnerving, isn't it.[sr]Is this normal for the simulator?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Da Vinci
+Pretty much. The simulator's all set up[sr]for combat and not much else right now.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Mash
+Right. This way, enemies don't attack NPCs,[sr]and the NPCs don't even react to them.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Tomoe Gozen
+Live and let live, hm?
+[k]
+
+＠Tomoe Gozen
+So if Lord Tajima is not here, that must mean[sr]he did not come to do battle with these enemies.
+[k]
+
+[charaFace D 4]
+
+＠Tomoe Gozen
+But then, what did he come here for?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Diarmuid
+Perhaps he just enjoys sampling different[sr]foods from various eras and places?
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+[wt 1.0]
+[charaFaceFade E 0 0.5]
+[wt 0.5]
+
+＠Chiyome
+...I'll go look for him![sr]Excuse me!
+[k]
+
+[messageOff]
+[charaEffect E bit_talk_quickmove]
+[charaSpecialEffect E erasureReverse 1 0.3]
+[se ad73]
+[wt 1.5]
+
+[wipeout rollRight 1.0 0.5]
+[bgm BGM_EVENT_77 1.0 0.5]
+[wait wipe]
+[wt 1.0]
+[wipein rollLeft 1.0 0.5]
+[bgm BGM_EVENT_77 1.0 1.0]
+[wait wipe]
+
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect E appearance 1 0.25]
+[wt 0.4]
+
+＠Chiyome
+I have returned!
+[k]
+
+＠Chiyome
+And I have located Lord Tajima-no-kami, Master!
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth A 1]
+[charaDepth D 2]
+[charaFace A 2]
+[charaFace D 3]
+[charaFadein A 0.1 0]
+[charaFadein D 0.1 2]
+
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+？1：Way to go, Chiyome!
+
+＠Chiyome
+Thank you, Master.
+[k]
+
+？2：Great job!
+
+[charaFace E 3]
+
+＠Chiyome
+Hehe...
+[k]
+
+[messageOff]
+[wt 0.5]
+[charaFace E 0]
+[wt 0.5]
+
+＠Chiyome
+I mean, all in a day's work!
+[k]
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Tomoe Gozen
+So where is Lord Tajima?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Chiyome
+Well, it would seem he was hiding right under our noses. He is staying in a room at the inn right on the main street.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Tomoe Gozen
+Really?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Mash
+Assuming you mean the large street you're on right now, it looks like there are no more than one or two inns around here.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠Tomoe Gozen
+Is that it? The one right over there?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Chiyome
+Yes, that's it.[sr]How clever of him to hide where we would least suspect.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Diarmuid
+Haha, so he chose to stay in the town rather than the castle, did he? He certainly is a shrewd old man.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Chiyome
+Lord Tajima-no-kami is staying in a room on the second floor. I will scout ahead and see what I can learn.
+[k]
+
+？1：Be careful.
+？2：See you later!
+
+？！
+
+＠Chiyome
+Yes, Master.[sr]I shall return shortly!
+[k]
+
+[messageOff]
+[charaEffect E bit_talk_quickmove]
+[charaSpecialEffect E erasureReverse 1 0.3]
+[se ad73]
+[wt 1.0]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Tomoe Gozen
+Lady Chiyome never fails to impress me with her skill as a kunoichi. It is hard to imagine there were spies like that all over Japan during the Warring States period...
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Diarmuid
+So you are from a time before that of[sr]Lady Chiyome and Lord Tajima, Lady Tomoe?
+[k]
+
+＠Diarmuid
+Does that mean there were no ninja back then?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠Tomoe Gozen
+No, there weren't.
+[k]
+
+＠Tomoe Gozen
+We did have spies, of course, but I don't think I had ever heard the words “ninja” or “shinobi” before.
+[k]
+
+＠Tomoe Gozen
+I lived very, very long ago. It was a dreadful time,[sr]where brute strength ruled over all.
+[k]
+
+[charaFace D 4]
+
+＠Tomoe Gozen
+Although...
+[k]
+
+＠Tomoe Gozen
+...if you go back even further, perhaps to the Heian[sr]period, that would be an even more dreadful[line 2]
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_77 0.1]
+
+[se adm38]
+[wt 0.2]
+[seStop adm38]
+[wt 0.4]
+[se adm38]
+
+[wt 1.5]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaFace D 5]
+
+＠Tomoe Gozen
+Huh!?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Diarmuid
+What was that sound?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠Chiyome
+Eeyaaaaaaaaah!
+[k]
+
+＠Chiyome
+Masteee[line 2]
+[k]
+
+？1：Chiyome!?
+？2：Did he find her!?
+
+？！
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠Tomoe Gozen
+That came from the second floor of that inn![sr]Then...!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+＠Yagyu Tajima-no-kami
+Hahaha.
+[k]
+
+＠Yagyu Tajima-no-kami
+What an amusing turn of events. I never expected to have a Kouga Mochizuki kunoichi make an attempt on my life while I am staying at an inn.
+[k]
+
+＠Yagyu Tajima-no-kami
+It would be a waste not to make use of this second-floor room. Come, bring Master and the others and join me here.
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_81 1.0]
+[wait fade]
+
+[scene 40301]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_66 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Yagyu Tajima-no-kami
+...Hmm.
+[k]
+
+＠Yagyu Tajima-no-kami
+I have already told the madam to prepare enough meals for all of you. Come, there is no need to be modest. Sit. Eat.
+[k]
+
+＠Yagyu Tajima-no-kami
+We have an assortment of fish from Nansou today.
+[k]
+
+＠Yagyu Tajima-no-kami
+The horse mackerel sashimi is excellent. Usually it is cleaned on the ship when it is caught, but I am told they brought this mackerel here on their fastest horses while it was still alive.
+[k]
+
+＠Yagyu Tajima-no-kami
+The sillago has been made into tempura.[sr]The grated daikon makes for a perfect palate cleanser.
+[k]
+
+＠Yagyu Tajima-no-kami
+The sweetfish has been grilled with salt, and its simple flavor goes together wonderfully with freshly cooked rice.
+[k]
+
+＠Yagyu Tajima-no-kami
+And the mountain greens were all picked today.[sr]Go on, Master. Please, enjoy.
+[k]
+
+？1：Huh...?
+？2：Uh...thank you...?
+
+？！
+
+[messageOff]
+
+[charaFaceFade F 1 0.5]
+[wt 1.5]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Chiyome
+Oh my, this feast looks truly splendid...
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠Tomoe Gozen
+Lord Tajima, is this...
+[k]
+
+＠Tomoe Gozen
+Is this why you have been using the simulator every night? To sample delicacies from all manner of time and place?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠Yagyu Tajima-no-kami
+Perhaps.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Diarmuid
+Mmm, this is quite good. This butterbur sprout tempura has an especially rich flavor. If only I had some wine to go with it.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠Chiyome
+Ah! You are supposed to wait for[sr]the rest of us, Lord Diarmuid!
+[k]
+
+？1：Om nom nom.
+？2：This is yummy. Come on, Tomoe, join us.
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠Tomoe Gozen
+Not you too, Master!?[sr]Gnnnnnn!
+[k]
+
+[charaFace D 4]
+
+＠Tomoe Gozen
+W-well, if you insist, Master... Although, it, um...[sr]I am afraid it might be wasted on me...
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠Chiyome
+Lady Tomoe...
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Yagyu Tajima-no-kami
+Is something wrong, Lady Tomoe?
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠Tomoe Gozen
+My, um, tongue is, well... It is very sensitive to the heat that flows through my veins, you see...
+[k]
+
+＠Tomoe Gozen
+I think it may even burn with[sr]a fire of its own, somehow...
+[k]
+
+＠Tomoe Gozen
+All that is to say...there are times when I can appreciate flavor, and times when I simply cannot...
+[k]
+
+＠Tomoe Gozen
+And I'm afraid today is, well...the latter...
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Yagyu Tajima-no-kami
+There is more enjoyment to be had in food[sr]than merely in its taste, Lady Tomoe.
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[se adm40]
+[seVolume adm40 0 0.8]
+[wt 1.0]
+
+[charaFace F 1]
+
+＠Yagyu Tajima-no-kami
+Come, try this.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Tomoe Gozen
+This is...tokoroten jelly...
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠Yagyu Tajima-no-kami
+It has been chilled quite well.[sr]Go on.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Tomoe Gozen
+...[sr]...
+[k]
+
+＠Tomoe Gozen
+...If you insist, Lord Tajima,[sr]then I will not refuse.
+[k]
+
+[messageOff]
+
+[wt 0.5]
+[charaMoveReturn D 0,-3 0.3]
+[wt 0.5]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠Yagyu Tajima-no-kami
+Try eating it all in one bite.
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[wt 1.0]
+[se ad217]
+[seVolume ad217 0 0.5]
+[charaMoveReturn D 0,-6 0.3]
+[wt 0.3]
+[seStop ad217]
+[wt 0.7]
+
+[charaFace D 3]
+
+＠Tomoe Gozen
+...!
+[k]
+
+＠Tomoe Gozen
+It... It is so...refreshing...
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[wt 0.5]
+
+[charaFaceFade F 1 0.5]
+[wt 1.0]
+
+＠Yagyu Tajima-no-kami
+...This particular simulation happened to arrive[sr]at a time and place similar to my own.
+[k]
+
+＠Yagyu Tajima-no-kami
+At first, I dismissed it as merely a fleeting illusion, but what is this body if not an equally fleeting shadow?
+[k]
+
+＠Yagyu Tajima-no-kami
+Indeed, I can find no difference between this simulator and myself as a Servant, so I have rather enjoyed indulging my nostalgia in this manner.
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace D 1]
+[charaFace E 1]
+[charaFadein D 0.1 0]
+[charaFadein E 0.1 2]
+
+[wt 2.0]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[wt 0.5]
+[charaMoveReturn A 0,-5 0.4]
+
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？1：Yagyu...
+？2：So you've been using the simulator to go on a gourmet tour?
+
+？！
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Mash
+Then, the reason you've been setting[sr]the area randomly is because[line 2]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Da Vinci
+You wanted to enjoy traveling for its own sake, not just to get to a destination, huh? I like that. I like that a lot.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠Yagyu Tajima-no-kami
+I hope you can forgive me. It was not my intention to drag you along on this old man's whim. I must apologize to you, Master, and to all of you who assisted [&him:her].
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠Chiyome
+D-do not be ridiculous, Lord Tajima![sr]Please, do not bow your head in shame!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠Tomoe Gozen
+Chiyome is right! Many of us Heroic Spirits[sr]have enjoyed using the simulator!
+[k]
+
+＠Tomoe Gozen
+You have nothing at all to apologize for.[sr]You only need to tell someone before you use it!
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+[wt 1.0]
+
+[charaFaceFade F 1 0.5]
+[wt 0.5]
+
+＠Yagyu Tajima-no-kami
+Thank you for your kind understanding.[sr]Very well then, let us return to Chaldea Base at once.
+[k]
+
+[charaFace F 0]
+
+＠Yagyu Tajima-no-kami
+But first...
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_66 1.0]
+[wt 1.0]
+
+＠Yagyu Tajima-no-kami
+...there is a monstrous creature I must slay before I go.
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[wt 1.5]
+[soundStopAll]
+[end]

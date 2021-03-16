@@ -1,0 +1,904 @@
+
+＄91-10-32-01-1-0
+
+[soundStopAll]
+
+[charaSet A 98110000 1 "Yagyu Tajima-no-kami"]
+[charaSet B 6029001 1 Chiyome]
+[charaSet C 98001000 1 Mash]
+[charaSet D 1035001 1 Diarmuid]
+[charaSet E 2021000 1 "Tomoe Gozen"]
+[charaSet F 1098124510 1 "Da Vinci"]
+[charaSet J 1098120900 1 Static]
+
+[charaDepth D 1]
+[charaDepth B 3]
+[charaDepth E 2]
+
+[scene 66600]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[wt 1.0]
+
+[se ad452]
+[seVolume ad452 0 0.1]
+[seVolume ad452 1.0 1.0]
+[wt 1.0]
+[seStop ad452]
+
+＠Yagyu Tajima-no-kami
+...Oh, hello, Master.
+[k]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠Yagyu Tajima-no-kami
+Hmm.
+[k]
+
+＠Yagyu Tajima-no-kami
+I see you are in good health.
+[k]
+
+＠Yagyu Tajima-no-kami
+Then it would seem you are not suffering such adverse effects as I had feared...
+[k]
+
+？1：Yagyu?
+？2：Is something wrong?
+
+？！
+
+＠Yagyu Tajima-no-kami
+Ah, forgive me.
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[charaFaceFade A 1 0.5]
+[wt 1.0]
+
+＠Yagyu Tajima-no-kami
+I trust you have had time to adjust to this new “Chal-dee-uh?” From what I hear, your journey thus far has been long and arduous.
+[k]
+
+＠Yagyu Tajima-no-kami
+You may yet be young, but everyone has their limits.[sr]I implore you to rest while you can.
+[k]
+
+＠Yagyu Tajima-no-kami
+Now, if you will excuse me.
+[k]
+
+[messageOff]
+
+[se ad452]
+[charaFadeout A 0.4]
+[wt 0.4]
+[seStop ad452 0.4]
+
+[wt 1.5]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[scene 66400]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect B appearance 1 0.25]
+[wt 0.4]
+
+＠Chiyome
+Master!
+[k]
+
+[charaFace B 4]
+
+＠Chiyome
+There is something I need to tell you.[sr]It is, well...
+[k]
+
+[charaFace B 0]
+
+＠Chiyome
+It is about Lord Yagyu Tajima-no-kami.[sr]He has been acting strangely as of late.
+[k]
+
+？1：He has?
+？2：I just ran into him, and he seemed fine...
+
+？！
+
+＠Chiyome
+To elaborate, he has become an extremely...enthusiastic user of the combat simulator.
+[k]
+
+＠Chiyome
+He used to train in there no more than once or twice a month, but these last few days, he has been in there at all hours.
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+[se ad15]
+[wt 0.4]
+
+＠Mash
+Let's see...[sr]You're right; the logs bear that out.
+[k]
+
+＠Mash
+It looks as though he isn't doing combat training...
+[k]
+
+[charaFace C 7]
+
+＠Mash
+...so much as he's wandering around different areas and time periods at random.
+[k]
+
+＠Mash
+In fact, he just activated the simulator and set it to[sr]a completely random time and location not too long ago.
+[k]
+
+？1：Maybe we should just ask him what's up.
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branch select01_01]
+
+？2：...Let's go see what this is about.
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[branch select01_02end]
+
+？！
+
+[label select01_01]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Chiyome
+I...
+[k]
+
+[charaFace B 4]
+
+＠Chiyome
+I'm so sorry! I could not take it any longer,[sr]so I already spoke to him!
+[k]
+
+＠Chiyome
+When I asked Lord Tajima-no-kami directly why he has been spending so much time in the simulator, he said...
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_81 1.0 0.3]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 66400]
+[effect bit_sepia01]
+[wipeFilter cinema 0.5 0]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠Yagyu Tajima-no-kami
+Haha.
+[k]
+
+＠Yagyu Tajima-no-kami
+You need not concern yourself, Assassin of Paraíso[line 2]no, Lady Mochizuki Chiyome of the Kouga clan.
+[k]
+
+＠Yagyu Tajima-no-kami
+All that I do, I do for Master.
+[k]
+
+[messageOff]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_81 1.0 1.0]
+[wait fade]
+
+[wipeOff]
+[effectStop bit_sepia01]
+
+[charaFadeout A 0.1]
+
+[scene 66400]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠Chiyome
+And that was all he said...
+[k]
+
+？1：...Got it. Then let's go talk to him.
+
+？！
+
+
+[label select01_02end]
+
+[charaFace B 0]
+
+＠Chiyome
+Yes, Master!
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[se ad166]
+[wt 0.5]
+[seStop ad166 0.1]
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠Diarmuid
+Permit me to accompany you! Lord Tajima has[sr]always been a great help to me ever since my arrival.
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad59]
+[seVolume ad59 0 0.1]
+[seVolume ad59 0.3 1.0]
+[wt 0.7]
+[seStop ad59]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠Tomoe Gozen
+I heard what's going on! I'm coming too!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Chiyome
+Lady Inferno[line 2]I mean, Tomoe.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠Tomoe Gozen
+Lord Tajima has been very kind to me as well.[sr]If he is in trouble, I must do whatever I can to help him.
+[k]
+
+＠Tomoe Gozen
+Please, Master, allow me to accompany you as well.
+[k]
+
+？1：Okay, let's all go together!
+
+？！
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFace B 0]
+[charaFace E 1]
+[charaFadein D 0.1 -300,0]
+[charaFadein B 0.1 300,0]
+[charaFadein E 0.1 1]
+[wt 0.7]
+
+[charaMoveReturn D -300,-5 0.4]
+[charaMoveReturn B 300,-5 0.4]
+[charaMoveReturn E 0,-5 0.4]
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠Mash
+I'll keep an eye on the simulator from here!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠Diarmuid
+Thank you, Lady Mash. That will be most helpful.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠Chiyome
+Very well then! Let us activate the simulator!
+[k]
+
+[messageOff]
+
+[se ad15]
+[wt 0.4]
+[se ad15]
+[wt 0.4]
+[se ad1]
+[wt 1.0]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_81 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 46700]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad451]
+[seVolume ad451 0 0.1]
+[wt 0.1]
+[seVolume ad451 1.4 0.95]
+
+[wt 3.0]
+[seStop ad451 0.5]
+
+[se ad60]
+[wt 0.5]
+[seStop ad60 0.5]
+[se ad166]
+[seStop ad166 0.5]
+[wt 0.5]
+
+[bgm BGM_EVENT_66 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Diarmuid
+Hmm...
+[k]
+
+＠Diarmuid
+These virtual spaces the simulator[sr]presents never fail to amaze me.
+[k]
+
+＠Diarmuid
+From the look of these wooden buildings...I would say[sr]we are in the Far East, circa the sixteenth century.
+[k]
+
+[charaFace D 1]
+
+＠Diarmuid
+I believe you are familiar with this[sr]era of history, are you not, Master?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Chiyome
+...Could it be...?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Diarmuid
+Hm?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Tomoe Gozen
+I-I think it is. I have not seen it myself before...
+[k]
+
+＠Tomoe Gozen
+...but this place does seem very similar[sr]to the one I saw in Chaldea's archives.
+[k]
+
+？1：...It does, doesn't it.
+？2：This is the Toke castle town from a parallel Shimousa.
+
+？！
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaSet C 99502600 1 Mash]
+
+[charaPut J 1]
+[se ad13]
+[charaEffect J bit_talk_10_LowLevel]
+[wt 0.2]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Mash
+Can you hear me, Senpai?
+[k]
+
+＠Mash
+According to the simulator's log,[sr]Mr. Yagyu should still be in that area.
+[k]
+
+＠Mash
+This area was randomly generated, so there may be some external interference steering it towards[line 2]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Da Vinci
+That's possible, but extremely unlikely.[sr]Hey guys! Miss me?
+[k]
+
+[charaFace F 19]
+
+＠Da Vinci
+Looks like you're having fun in there.[sr]Hehe, I think I'll help you out too.
+[k]
+
+[messageOff]
+[se ad15]
+[wt 0.4]
+[se ad15]
+[wt 0.4]
+
+＠Da Vinci
+Aaand done!
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[wt 0.3]
+[charaEffect E bit_talk_np_buf]
+[charaFace E 3]
+[wt 0.2]
+[cueSe Battle bas7]
+[cueSeVolume bas7 0 0.5]
+[wt 1.0]
+
+＠Tomoe Gozen
+Ah!
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[wt 0.3]
+[charaEffect E bit_talk_np_buf]
+[wt 0.2]
+[cueSe Battle bas7]
+[cueSeVolume bas7 0 0.5]
+[wt 1.0]
+
+＠Chiyome
+This is...
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+[wt 0.3]
+[charaEffect E bit_talk_np_buf]
+[wt 0.2]
+[cueSe Battle bas7]
+[cueSeVolume bas7 0 0.5]
+[wt 1.0]
+
+＠Diarmuid
+...I see.
+[k]
+
+＠Diarmuid
+You've given us a kind of protective effect. I imagine it's something similar to an Assassin's Presence Concealment.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 26]
+[charaFadein F 0.1 1]
+
+＠Da Vinci
+Good eye, Diarmuid! That's right.[sr]You guys are pretending to be spies now, right?
+[k]
+
+＠Da Vinci
+Then you need some way of, well,[sr]concealing your presence.
+[k]
+
+[charaFace F 12]
+
+＠Da Vinci
+This might not be quite as good as an actual Assassin's skill, but it still ought to help keep you hidden.
+[k]
+
+＠Da Vinci
+Well, maybe it won't do much against[sr]a swordsman of Yagyu's skill...
+[k]
+
+＠Da Vinci
+...but it should at least be better than nothing, right!
+[k]
+
+？1：Thanks, Da Vinci!
+？2：This'll be a big help!
+
+？！
+
+[charaFace F 29]
+
+＠Da Vinci
+Hehe. Go ahead, really heap on the praise.[sr]It's okay, I can take it.
+[k]
+
+？1：I just wish we could use this all the time...
+
+？！
+
+[charaFace F 1]
+
+＠Da Vinci
+Ahaha, good point. But I'm afraid this[sr]exploit only works in the simulator.
+[k]
+
+[charaFace F 0]
+
+＠Da Vinci
+Of course, if there's a Heroic Spirit with that kind of ability around, then it's a different story. But in the meantime, this is what we've got, so good luck, guys!
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Chiyome
+Yes, my lady. I will do my very[sr]best to see this mission through.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Tomoe Gozen
+All right, now we need to figure out which[sr]way Lord Tajima went, so we can[line 2]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠Mash
+Ah. Wait! Something's not right!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_66 1.5]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠Da Vinci
+Huh, that's a surprise...
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaSet A 98006200 1 "Enemy 1"]
+[charaSet C 98006200 1 "Enemy 2"]
+[charaSet G 98006200 1 "Enemy 3"]
+
+[se ad433]
+[seVolume ad433 0 0.05]
+[wt 0.1]
+[seVolume ad433 1.0 0.6]
+[wt 1.5]
+[seStop ad433 1.0]
+
+[wt 1.5]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk off]
+
+[se ad463]
+
+[charaDepth A 1]
+[charaDepth C 2]
+[charaDepth G 3]
+
+[charaPut A -350,0]
+[charaFace A 0]
+[charaSpecialEffect A appearance 1 0.5]
+
+[charaPut C 350,0]
+[charaFace C 0]
+[charaSpecialEffect C appearance 1 0.5]
+
+[charaPut G 1]
+[charaFace G 0]
+[charaSpecialEffect G appearance 1 0.5]
+
+[wt 0.4]
+
+[seStop ad463 1.0]
+
+[wt 2.0]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠Tomoe Gozen
+!!!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠Chiyome
+Enemies! How did they find us with[sr]our Presence Concealment exploit!?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠Diarmuid
+Hmm. This could be a problem.
+[k]
+
+[messageOff]
+[charaFace D 2]
+[se adm37]
+[wt 1.5]
+
+＠Diarmuid
+We shall just have to eliminate them before we proceed.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠Da Vinci
+That's weird. It shouldn't be possible[sr]for these enemies to bypass my exploit...
+[k]
+
+[charaFace F 5]
+
+＠Da Vinci
+I'll look into this, but for now you're just going[sr]to have to take them out! Sorry about this, guys!
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk off]
+
+[charaFace A 0]
+[charaFace C 0]
+[charaFace G 0]
+
+[charaFadein A 0.1 -350,0]
+[charaFadein C 0.1 350,0]
+[charaFadein G 0.1 1]
+
+[wt 1.0]
+
+[se ad463]
+[wt 0.5]
+[seStop ad463 1.0]
+
+[wt 1.0]
+
+？1：Nothing we can do now but fight!
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠Chiyome
+Yes, Master! I shall cut a path through them!
+[k]
+
+？2：Prepare for battle!
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠Tomoe Gozen
+Yes, Master! I'm ready!
+[k]
+
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+
