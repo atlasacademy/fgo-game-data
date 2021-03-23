@@ -1,0 +1,832 @@
+
+
+＄94-03-50-23-1-1
+[soundStopAll]
+
+
+[charaSet A 3030000 1 Pārvatī]
+[charaSet B 6014001 1 "Mata Hari"]
+[charaSet C 98110000 1 "Yagyu Tajima-no-kami"]
+[charaSet D 5030001 1 Scheherazade]
+[charaSet E 1098163800 1 Kasuga-no-Tsubone]
+[charaSet F 10003000 1 "Sessyoin Kiara"]
+[charaSet G 1098164100 1 "Attendant 1"]
+[charaSet H 1098164100 1 "Attendant 2"]
+[charaSet J 5009000 1 "Effect Dummy"]
+
+[charaDepth G 4]
+[charaDepth H 6]
+
+[scene 71702]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk off]
+[charaFace G 0]
+[charaFadein G 0 0]
+[charaFace H 0]
+[charaFadein H 0 2]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut J 1]
+[charaEffect J bit_talk_kengekiall01]
+[wt 0.1]
+[se bac6]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaShake G 0.05 3 3 0.5]
+[wt 0.2]
+[seStop bac6 0.2]
+[charaMove G -256,-30 0.5]
+[wt 0.1]
+[charaFadeout G 0.4]
+[se bac6]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[charaShake H 0.05 3 3 0.5]
+[wt 0.2]
+[charaPut J 1024,1024]
+[seStop bac6 0.3]
+[charaMove H 256,-30 0.5]
+[wt 0.2]
+[bgmStop BGM_EVENT_3 1.0]
+[se ade41]
+[wt 0.4]
+[se ad144]
+[charaFadeout H 0.4]
+[charaEffectStop J bit_talk_kengekiall01]
+[charaFadeout J 0.1]
+[se ade41]
+[wt 0.4]
+[se ad144]
+[wt 1.2]
+
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Pārvatī
+They dropped a key![sr]This should get us through this door.
+[k]
+
+？1：Is it just me, or are there way too many locked doors on this floor...?
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠Mata Hari
+It's definitely not just you. It's great that it's easy to spot the attendants with keys, since they all keep them around their waists...
+[k]
+
+＠Mata Hari
+...but it's a real hassle to have to defeat them every time we just want to open a door.
+[k]
+
+[charaFace B 1]
+
+＠Mata Hari
+Well anyway, what do you say we just keep going for now?
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[scene 71702]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.5]
+
+？1：Not again...
+？！
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Yagyu Tajima-no-kami
+Wait... Look at the room next to us.
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+
+[scene 71800]
+
+[charaTalk off]
+[charaFace G 0]
+[charaFadein G 0.1 0]
+[charaFace H 0]
+[charaFadein H 0.1 2]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[wt 1.2]
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+[scene 71702]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠Pārvatī
+There are attendants working on something.[sr]They don't seem to have noticed us. And look...
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[scene 71800]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+
+[cameraMove 2.0 -80,15 1.2]
+[wt 3.0]
+
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout A 0.1]
+[scene 71702]
+[cameraHome 0.1]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Scheherazade
+It looks like...a key.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠Mata Hari
+If we can sneak past them and borrow it, maybe we could move on without having to fight them?
+[k]
+
+[charaFace B 3]
+
+＠Mata Hari
+...Then again, I guess that sort of underhanded trick goes against your honor, Mr. Swordsman?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Yagyu Tajima-no-kami
+There is more to the way of the sword than simply cutting. If one can win without drawing one's blade, all the better.
+[k]
+
+＠Yagyu Tajima-no-kami
+I do not think now is the time to cut off their heads.
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[wt 0.1]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth A 0]
+[charaDepth E 1]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+[wt 0.25]
+[fowardEffect bit_talk_tornado02]
+[se ad80]
+[seVolume ad80 0 0.5]
+[wt 0.3]
+
+[charaSpecialEffect A erasureReverse 1 0.3]
+[charaFace E 17]
+[charaFadein E 0.2 1]
+[wt 0.1]
+[seStop ad80 0.3]
+
+[wt 0.5]
+
+＠Kasuga-no-Tsubone
+That's samurai talk for “Doesn't bother me.” So then I guess the question is, how do we proceed from here?
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Mata Hari
+What if I use my Espionage skill?
+[k]
+
+＠Mata Hari
+I don't know how well it'll work on these dolls, but there's only one way to find out.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠Sessyoin Kiara
+Just a moment, please. Given how things are unfolding...[sr]I think this floor pertains to Fuchutoukai.
+[k]
+
+？1：I knew this had to be connected to a precept...
+？2：Another one of the five precepts, huh.
+？！
+
+[charaFace F 11]
+
+＠Sessyoin Kiara
+Yes.[sr]Fuchutoukai is the precept that forbids stealing.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠Kasuga-no-Tsubone
+Stealing? Well that's just common sense.
+[k]
+
+[charaFace E 7]
+
+＠Kasuga-no-Tsubone
+I've always made very sure that my charges know how wrong that sort of thing is!
+[k]
+
+＠Kasuga-no-Tsubone
+One can't possibly hope to become a respectable shogun or samurai without a strong moral foundation!
+[k]
+
+[charaFace E 11]
+＠Kasuga-no-Tsubone
+Still... Are you saying that taking a key from these dolls would still constitute stealing?
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Sessyoin Kiara
+Based on what we've seen thus far, I think it's safe to say that our enemies want us to break these precepts.
+[k]
+
+＠Sessyoin Kiara
+Though I still can't say what their purpose in doing so might be.
+[k]
+
+[charaFace F 7]
+
+＠Sessyoin Kiara
+This is just like the last floor.
+[k]
+
+＠Sessyoin Kiara
+Now that I've noticed this, I cannot help but feel that going along with what they want would be a bad idea...
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠Mata Hari
+Maybe it would, but I don't see what choice we have.
+[k]
+
+＠Mata Hari
+If things are structurally set up here so that we have to break these precepts to advance, what else can we do?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠Scheherazade
+I think our only option may be to find another way to advance without following our enemy's expectations...
+[k]
+
+＠Scheherazade
+...like how Mata Hari used her Noble Phantasm to intoxicate Master without requiring [&him:her] to drink.
+[k]
+
+[charaFace D 6]
+
+＠Scheherazade
+Because one way or another...we absolutely have to keep going.
+[k]
+
+＠Scheherazade
+There are still many people we need to rescue.
+[k]
+
+？1：Yeah...I think you're right.
+？2：Guess we'll just have to steel ourselves for whatever happens.
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Mata Hari
+Advancing in a way that goes against expectations is all well and good, but I can't think of many possible options.
+[k]
+
+＠Mata Hari
+We could take the keys by force, or we could take them sneakily, but we'd still be taking them either way.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠Scheherazade
+Not necessarily. We can go one step further removed.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Mata Hari
+How so?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Scheherazade
+I think it's a question of who exactly steals the keys and breaks the precept.
+[k]
+
+＠Scheherazade
+Master doing so is probably the most dangerous option, followed by having one of [&his:her] Servants do so in [&his:her] stead.
+[k]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+＠Scheherazade
+But, if a Servant had something else steal the keys...would that not go against Kama's expectations?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Sessyoin Kiara
+Now I see.[sr]You make an excellent point.
+[k]
+
+＠Sessyoin Kiara
+True, the further we are from breaking the precept ourselves, the safer it most likely is.
+[k]
+
+？1：Is this going where I think it's going!?
+？2：Does this mean we'll get to hear that famous story!?
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠Scheherazade
+Yes. Fortunately, I happen to know the story of a certain thief. Allow me to tell it to you now.
+[k]
+
+[charaFace D 7]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠Scheherazade
+Long, long ago, there were two brothers in the land of Persia. The elder brother was named Cassim, and the younger was named Ali Baba...
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[cueSe Battle bac441]
+[cueSeVolume bac441 0 0.5]
+[wt 0.3]
+[cueSeStop bac441 0.5]
+[wt 1.0]
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠Mata Hari
+Ooh, what are those? They kind of look like cute little girls... Is that Ali Baba?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Scheherazade
+No, this one will be playing one of his enemies.[sr]Very well, bandit leader, you know what to do...
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[scene 71800]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 65,0]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+[cameraMove 0.5 -22,-10 1.03]
+[wt 0.5]
+[cameraMove 1.2 -10,-20 1.15]
+[wt 1.2]
+[cameraMove 0.7 -15,-30 1.2]
+[wt 2.0]
+
+[fadeout black 0.5]
+[wait fade]
+[charaFadeout G 0.1]
+[scene 71702]
+[cameraHome 0.1]
+[wt 0.5]
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Yagyu Tajima-no-kami
+I can see that they are quite spry, and that they are adept at erasing their presence.
+[k]
+
+＠Yagyu Tajima-no-kami
+But there are no longer any blind spots for them to hide in. It will be difficult for them to carry out their task without the enemy's notice.
+[k]
+
+？1：Don't worry, they'll be fine.
+？2：Between all forty thieves, I'm sure they'll figure something out!
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+[wt 0.4]
+[charaMoveReturn D 0,-10 0.5]
+[wt 0.2]
+[cueSe Battle bac441]
+[cueSeVolume bac441 0 0.5]
+[wt 0.3]
+[cueSeStop bac441 0.5]
+[wt 1.0]
+
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Kasuga-no-Tsubone
+My, now something even smaller and cuter is rattling the sliding door in the next room...
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+[scene 71800]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 65,0]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+
+＠G：Attendant
+...? What was THAT noise.[sr]I'll go CHECK...
+[k]
+
+[messageOff]
+[charaMove G 95,0 0.4]
+[charaFadeout G 0.4]
+[wt 1.0]
+
+[cameraMove 2.0 -80,15 1.2]
+[wt 2.0]
+[cameraHome 2.0]
+[wt 1.5]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+
+[scene 71702]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ade281]
+[wt 1.0]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠Scheherazade
+...And they lived happily ever after...
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠Mata Hari
+We got the key! Hooray!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Sessyoin Kiara
+It does seem that we have no choice but to acquire these keys in order to proceed, so this is surely the next best way to do so.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Kasuga-no-Tsubone
+All right then, let's get moving before those dolls see us.
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ade278]
+[wt 0.6]
+[seStop ade278 0.1]
+[wt 0.3]
+
+[se ade279]
+[wt 0.8]
+
+[se ade295]
+[cameraMove 3.0 0,10 1.2]
+[wt 1.5]
+
+[fadeout black 1.5]
+[bgm BGM_EVENT_77 1.5 0.4]
+[seStop ade295 1.5]
+[wait fade]
+
+[scene 71900]
+[cameraHome 0.1]
+[wt 1.0]
+
+[fadein black 1.5]
+[bgm BGM_EVENT_77 1.5 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠Mata Hari
+Hehe, on a different subject, it was wonderful getting to hear the narrator of One Thousand and One Nights tell one of her stories in person.
+[k]
+
+＠Mata Hari
+I can't wait to hear what happens next. Actually, I'd love to hear another story, too. Oh, but, I guess we have to wait until tomorrow night for that, huh?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠Scheherazade
+Hehe. Thank you for your kind words.
+[k]
+
+＠Scheherazade
+Rest assured, I am no longer telling my stories so as to live for a thousand more nights, but to help end this Singularity's story as soon as possible.
+[k]
+
+[charaFace D 0]
+
+＠Scheherazade
+So I will be happy to tell as many tales as needed to...[wt 0.6]Oh?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.1 1]
+
+
+＠Kasuga-no-Tsubone
+This next door doesn't have a keyhole! There's just a pedestal with a very conspicuous hollow nearby!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Yagyu Tajima-no-kami
+There, in that room. Once again, there are a great number of attendants...but there is also an ornament in the panel that could easily be removed.
+[k]
+
+＠Yagyu Tajima-no-kami
+It seems as though it would be a perfect fit for the hollow in the pedestal.
+[k]
+
+？1：We don't need a key, we need a key item!
+？2：Now she's just giving us the runaround!
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠Mata Hari
+It looks like I won't have to wait long to hear another story from you after all.
+[k]
+
+[charaFace B 0]
+
+＠Mata Hari
+I'm glad I'll get to hear one again so soon, but I also feel bad about making you do all the work...
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+＠Scheherazade
+...Worry not. Please, let me handle this.
+[k]
+
+[charaFace D 5]
+
+＠Scheherazade
+Between Ali Baba, who made his way past forty cunning thieves... The deity of thievery, Ali al-Zaibak... The djinn's illusions...
+[k]
+
+＠Scheherazade
+Prince Ahmed ad-Danaf... Hasan Shuman... And Dalilah and her daughter, Zaynab... I have no end of characters to draw upon.
+[k]
+
+＠Scheherazade
+If my stories are needed to let us advance... If they are needed to rescue someone who needs help...
+[k]
+
+[charaFace D 7]
+
+＠Scheherazade
+Then I will gladly tell as many as I can, even if my throat should run as dry as the desert sands...
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

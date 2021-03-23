@@ -1,0 +1,670 @@
+
+＄94-03-50-07-1-1
+
+[soundStopAll]
+
+
+[charaSet A 1098164200 1 "Giant Ghost Attendant 1"]
+[charaSet B 99502600 1 Mash]
+[charaSet C 3030000 1 Pārvatī]
+[imageSet D cut103_item01 1]
+[charaSet E 10003000 1 "Sessyoin Kiara"]
+[charaSet F 1098163800 1 Kasuga-no-Tsubone]
+[charaSet G 1098158220 1 Sion]
+[charaSet H 1098158230 1 "Sion_Arm Raised_Transmission"]
+[charaSet I 98115000 1 "Effect 1"]
+[charaSet J 98115000 1 "Effect 2"]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+
+[scene 72000]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se bac26]
+[wt 0.1]
+[seStop bac41 0.5]
+[charaDepth I 9]
+[charaEffect I bit_talk_shelling_pink02]
+[wt 0.1]
+[fowardEffect bit_talk_14]
+[wt 0.5]
+
+[se bac18]
+[se bac25]
+[flashin once 0.1 0.2 e1a3ffFF e1a3ff50]
+[wt 0.1]
+[charaFadeout E 0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0 1]
+[charaShake A 0.02 5 5 0.6]
+[wt 1.0]
+
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[charaSpecialEffect A enemyErasure 1 2.0]
+[cueSe Battle ba6]
+[wt 3.0]
+[cueSeStop ba6 0.3]
+
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Mash
+The hostile entities have been eliminated![sr]But, I'm afraid[line 2]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠Pārvatī
+We let Kama get away.[sr]That's too bad... [wt 0.7][charaFace C 12]Huh?
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[cueSe Battle bas2]
+[wt 0.2]
+[charaFadein D 0.5 0,-200]
+[wt 2.2]
+
+[charaFadeout D 0.4]
+[wt 0.5]
+
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠Sessyoin Kiara
+Well now, what's this?[sr]It looks quite benign.
+[k]
+
+[messageOff]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[wt 0.1]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth F 0]
+[charaDepth C 1]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+[wt 0.25]
+[fowardEffect bit_talk_tornado02]
+[se ad80]
+[seVolume ad80 0 0.5]
+[wt 0.3]
+
+[charaSpecialEffect C erasureReverse 1 0.3]
+[charaFace F 15]
+[charaFadein F 0.2 1]
+[wt 0.1]
+[seStop ad80 0.3]
+
+[wt 0.5]
+＠Kasuga-no-Tsubone
+That's an inrou, a pillbox used as identification. And those three hollyhock leaves are the Tokugawa crest.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk on]
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠Sion
+The attendant dolls you have been seeing here are a type of familiar that Kama put together.
+[k]
+
+＠Sion
+Since that pillbox was inside of them, we should probably assume it was the catalyst used to create that ghostly attendant...
+[k]
+
+？1：(Huh? What is that...?)
+？2：(Is the pillbox glowing...?)
+？！
+
+
+
+[messageOff]
+[se ad592]
+[bgmStop BGM_EVENT_77 0.5]
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaPut I 1]
+[charaEffect I bit_talk_noise02]
+[scene 10001]
+[wt 1.5]
+
+[fadein white 0.5]
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_EVENT_1 0.1]
+
+
+＠Overlapping Whispers
+What happened to the shogun... Everything he says sounds like utter nonsense to me...
+[k]
+
+＠Overlapping Whispers
+Shh. You'll be finished if someone hears that...[sr]Along with the old dog-lover shogun himself...
+[k]
+
+＠Overlapping Whispers
+You can't say things like that... The shogun cares more about dogs than he does about his people, after all...
+[k]
+
+＠
+...[sr]...
+[k]
+
+＠
+Really? Is that what they think of me?[sr]Am I in the wrong?
+[k]
+
+＠
+I was just doing what I thought was right. I thought people are supposed to be kind and compassionate.
+[k]
+
+＠
+Please. Don't look at me like that. You all kiss up to me, but I know what you say about me behind my back.[sr]It hurts. Is there no one who understands me...?
+[k]
+
+＠Sweet Female Voice
+It's all right. It's okay. You didn't do anything wrong.[sr]It's wonderful that you love animals so much.
+[k]
+
+＠Sweet Female Voice
+You have nothing to worry about.[sr]Nothing to fret over.
+[k]
+
+＠Sweet Female Voice
+I understand you. I'm the only one who does.
+[k]
+
+＠Sweet Female Voice
+That's why I love you.[sr]I love how compassionate you are.
+[k]
+
+＠Sweet Female Voice
+And I always, always will...
+[k]
+
+
+[messageOff]
+[se ad592]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_1 0.5]
+[wait fade]
+
+[charaPut I 1200,1200]
+[charaEffectStop I bit_talk_noise02]
+[scene 72000]
+[wt 1.5]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+？1：(...What was that?)
+？2：(Did anyone else hear that...?)
+？！
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Mash
+Is something wrong, Master?
+[k]
+
+[charaFace B 6]
+＠Mash
+I see... You were just hearing voices?
+[k]
+
+＠Mash
+I'm afraid we didn't hear anything ourselves,[sr]and there isn't anything in the log either...
+[k]
+
+？1：Guess it was just my imagination then.
+？2：I'll just worry about the pillbox for now then.
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Kasuga-no-Tsubone
+I hope you don't mind if I open it.[sr][wt 0.6][charaFace F 13]Hmm. It looks like it's empty...
+[k]
+
+[charaFace F 11]
+＠Kasuga-no-Tsubone
+No, wait, there's something inscribed in it.[sr]I think it's the owner's name.
+[k]
+
+＠Kasuga-no-Tsubone
+Tsunayoshi...?
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠Mash
+There's an entry for that name in our database. It looks like...that was the name of the fifth Tokugawa shogun.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 14]
+[charaFadein F 0.1 1]
+＠Kasuga-no-Tsubone
+The fifth? But, the current shogun is the third Tokugawa, Lord Iemitsu.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠H：Sion
+Let me explain. To make a long story short, we members of the Indian goddess's entourage are all goddesses ourselves, so we happen to know a little bit about what happens in the future.
+[k]
+
+＠H：Sion
+Tsunayoshi is Iemitsu's fourth son.[sr]Apparently, he goes by “Tokumatsu” as a child.
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠Kasuga-no-Tsubone
+One of the shogun's children, you say!?[sr]Well, that's just wonderful!
+[k]
+
+＠Kasuga-no-Tsubone
+That must mean that the Tokugawa family will continue to preserve peace in Japan in the future. That's the best news I've heard in years.
+[k]
+
+＠Kasuga-no-Tsubone
+Now I can truly rest in peace!
+[k]
+
+[charaFace F 13]
+＠Kasuga-no-Tsubone
+Although... What's a pillbox belonging to a future shogun doing here?
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠Sion
+Good question. But just because it has his name on it does not necessarily mean it belonged to him.
+[k]
+
+＠Sion
+Let me take a closer look.
+[k]
+
+[charaFace G 15]
+＠Sion
+Hmm? This pillbox...[sr]There's something spiritual contained within it.
+[k]
+
+[charaFace G 0]
+＠Sion
+Furthermore, it is packaged in a way that limits its attributes. This may be a real find.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠Mash
+What do you mean?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+＠Sion
+I mean that we can easily use it for ourselves.
+[k]
+
+＠Sion
+If we pair it with an output device, we should be able to have it manifest magecraft.
+[k]
+
+[charaFace G 0]
+＠Sion
+Specifically, we can install[sr]it in [%1]'s Mystic Code...
+[k]
+
+＠Sion
+...and use it to rearrange the[sr]Mystic Code's capabilities.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Mash
+Are you sure that's safe?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠Sion
+It may have a particular inclination, but it is essentially nothing more than pure magical energy.
+[k]
+
+＠Sion
+There is no sign that it has been tampered with, so I think we should be able to make effective use of it.
+[k]
+
+[charaFace G 17]
+＠Sion
+So, what do you think? It could give you[sr]more ways to tackle this Ooku expedition.
+[k]
+
+？1：I think we should use whatever we can.
+？2：If it'll help us save everyone, then it's a no-brainer.
+？！
+
+[charaFace G 10]
+＠Sion
+Okay then, let's do it![sr]It is human nature to try new things, after all!
+[k]
+
+[charaFace G 0]
+＠Sion
+All right, hang on while I figure out how to install it.[sr]I will tell you how to do so once I am done.
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFace G 6]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+＠Sion
+There we go! You did it perfectly![sr]Just as I calculated!
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠Sessyoin Kiara
+Hehe. You're very good with your hands, aren't you, Lady Sion?
+[k]
+
+＠Sessyoin Kiara
+My area of expertise is the mind and spirit,[sr]so I am so very impressed.
+[k]
+
+[charaFace E 0]
+＠Sessyoin Kiara
+This Ooku is positively bristling with traps,[sr]just like a puzzle box.
+[k]
+
+＠Sessyoin Kiara
+Anything that can help keep Master safe[sr]is wonderful in my book. Well done, truly!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Kasuga-no-Tsubone
+All right then, what do you say we keep going?
+[k]
+
+[charaFace F 5]
+＠Kasuga-no-Tsubone
+Now that we know that girl is the one who turned my Ooku into...this, all we have to do is find her and defeat her!
+[k]
+
+＠Kasuga-no-Tsubone
+I understand she's an acquaintance of yours, Lady Par, but she is still my enemy. I can't go easy on her even if I wanted to!
+[k]
+
+[messageOff]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth C 0]
+[charaDepth F 1]
+
+[wt 0.25]
+[fowardEffect bit_talk_tornado02]
+[se ad80]
+[seVolume ad80 0 0.5]
+
+[wt 0.35]
+
+[charaSpecialEffect F erasureReverse 1 0.3]
+[charaFace C 9]
+[charaFadein C 0.15 1]
+[wt 0.05]
+[seStop ad80 0.3]
+
+[wt 0.5]
+＠Pārvatī
+Don't worry about holding back on my behalf. I'm sure you've figured this out by now, but she isn't exactly fond of me.
+[k]
+
+＠Pārvatī
+I can't blame her for that, seeing as how what happened to her is Shiva's and my fault, but I do think Indra and the other gods deserve some blame for fanning the[sr]fla[line 2]
+[k]
+
+[charaFace C 2]
+＠Pārvatī
+I-I mean, never mind that!
+[k]
+
+[charaFace C 5]
+＠Pārvatī
+No matter what she went through in her past, that doesn't give her the right to hurt innocent people who had nothing to do with it.
+[k]
+
+＠Pārvatī
+We can't let her get away with this.
+[k]
+
+＠Pārvatī
+I don't know what her true goal is, but we have to stop her if we're going to rescue everyone from both Edo Castle and Chaldea.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk on]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠Mash
+...Right.
+[k]
+
+[charaFace B 4]
+＠Mash
+Although, if she really does have everyone's lives in the palm of her hand, that's going to make things very difficult.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠Sion
+For the moment, I guess we do not have a choice but to take her at her word and make our way to the bottom floor.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠Mash
+She did say she wanted us to wander around this Ooku forever, so I'm sure the labyrinth is only going to become even harder to navigate from here on.
+[k]
+
+＠Mash
+I'm sorry to ask you to take on such a difficult mission, Master, but...we're counting on you to rescue everyone.
+[k]
+
+？1：I'll do my best. I promise.
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+＠Sion
+Hmm. All that said, there is still[sr]something bugging me about Kama.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠Pārvatī
+Me too. But at least in regards to that, I don't think it will come up again soon. I just hope it isn't related...
+[k]
+
+[charaFace C 9]
+＠Pārvatī
+...
+[k]
+
+[charaFace C 4]
+＠Pārvatī
+Anyway, yes, we should get going. I'm sure we still have a very long road ahead of us, after all...
+[k]
+
+
+
+
+
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[charaFadeout C 0.1]
+[wt 0.5]
+[soundStopAll]
+
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+
+[cueSe Battle bas2]
+[charaFace D 0]
+[charaFadein D 0.5 0,-200]
+[wt 1.4]
+
+＠
+[s 1000]
+[s 16]Acquired Fifth Shogun Tokugawa Tsunayoshi's inrou.
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[wait fade]
+[end]

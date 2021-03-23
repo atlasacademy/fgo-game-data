@@ -1,0 +1,792 @@
+
+
+＄94-03-50-18-1-0
+
+[soundStopAll]
+
+
+[charaSet A 6014001 1 "Mata Hari"]
+[charaSet B 5030001 1 Scheherazade]
+[charaSet C 1098163800 1 Kasuga-no-Tsubone]
+[charaSet D 3030000 1 Pārvatī]
+[charaSet E 98110000 1 "Yagyu Tajima-no-kami"]
+[charaSet F 10003000 1 "Sessyoin Kiara"]
+
+[charaSet I 98115000 1 Effect]
+[charaSet J 98115000 1 Effect]
+
+
+[scene 71700]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk off]
+[charaDepth A 4]
+[charaDepth B 6]
+
+[charaFace A 3]
+[charaFace B 3]
+[charaFadein A 0.1 2]
+[charaFadein B 0.1 0]
+[wt 2.0]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+[wt 0.5]
+[charaMoveReturn C 0,-5 1.5]
+[wt 2.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠Mata Hari
+Oh, gosh, I'm sorry. I can understand your concerns, but I really don't have any magical energy to spare on changing my outfit right now.
+[k]
+
+＠Mata Hari
+Not to mention I get the sense that the situation here is even tougher than I thought, so I'd really prefer to stick with the outfit I'm used to.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠Scheherazade
+As things stand now, there is no telling[sr]when or if we might receive aid.
+[k]
+
+＠Scheherazade
+I'm sorry, but I think it is only wise that I conserve my magical energy for matters of life and death.
+[k]
+
+＠Scheherazade
+After all, if I were to let my guard down,[sr]I could easily end up dead...
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+＠Kasuga-no-Tsubone
+Ahem. [wt 0.4][charaFace C 13]Well, in the end, I suppose[sr]this isn't really my Ooku anyway.
+[k]
+
+＠Kasuga-no-Tsubone
+And I do also feel like it would be wrong to impose my Ooku's customs on women from different cultures, especially when they're here to help in our hour of need.
+[k]
+
+[charaFace C 0]
+＠Kasuga-no-Tsubone
+So, it's all right. Yes, please don't worry about it.
+[k]
+
+[charaFace C 8]
+＠Kasuga-no-Tsubone
+...I am still concerned about the effect this could have on the young pages' education, should we happen to run into any of them here...
+[k]
+
+＠Kasuga-no-Tsubone
+...but I can cross that bridge if we come to it.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Scheherazade
+Thank you for your understanding...
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠Mata Hari
+And please, don't worry. If we end up visiting the real Ooku after we take care of things here, of course we'll be sure to dress appropriately.
+[k]
+
+＠Mata Hari
+It's like they say: When in Rome, do as the Romans do. Er, or the Japanese, in this case.
+[k]
+
+＠Mata Hari
+So if you want me to wear twelve layers of kimono when that time comes, I'll be glad to.
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth D 0]
+[charaDepth C 1]
+
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+[wt 0.25]
+[fowardEffect bit_talk_tornado02]
+[se ad80]
+[seVolume ad80 0 0.5]
+[wt 0.35]
+
+[charaSpecialEffect C erasureReverse 1 0.3]
+[charaFace D 0]
+[charaFadein D 0.15 1]
+[wt 0.05]
+[seStop ad80 0.3]
+
+[wt 0.5]
+[charaTalk on]
+＠Pārvatī
+At any rate, right now, we should focus on making our way through this labyrinth.
+[k]
+
+＠Pārvatī
+Don't worry, Tsubone. I'm sure Mata Hari and Scheherazade will be great additions to our team.
+[k]
+
+[charaFace D 4]
+＠Pārvatī
+All right, I think we'd better get back to... Hm?[sr]What's wrong, Master?
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[wt 0.3]
+[charaPut I 0,50]
+[charaEffect I bit_talk_liquor_communication01]
+[wt 1.5]
+
+？1：Nnn...
+？2：I think I'm starting to get a headache...
+？！
+
+[fadeout black 0.3]
+[bgm BGM_EVENT_77 0.3 0.4]
+[wait fade]
+[charaEffectStop I bit_talk_liquor_communication01]
+[charaPut I 1200,1200]
+[wt 1.0]
+[fadein black 0.5]
+[bgm BGM_EVENT_77 0.5 1.0]
+[wait fade]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Mata Hari
+Are you okay? Do you want some water?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠Scheherazade
+That's strange. We know Master hasn't had any alcohol.
+[k]
+
+＠Scheherazade
+This room does admittedly have some very strong fumes, but those alone shouldn't be enough to hurt you.
+[k]
+
+＠Scheherazade
+Your cheeks don't look flushed, and I'm sure your resistance to poison is still working fine. I don't see any way you could be intoxicated.
+[k]
+
+＠Scheherazade
+So then, why is this happening?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠Yagyu Tajima-no-kami
+...I believe it is time you came clean, Lady Sessyoin.
+[k]
+
+＠Yagyu Tajima-no-kami
+Earlier, you demonstrated that you know[sr]more about this Ooku than the rest of us.
+[k]
+
+＠Yagyu Tajima-no-kami
+Perhaps you can explain this[sr]change in Master's condition.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠Mata Hari
+Really? That's amazing![sr]Do you think you could tell me what's going on too?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠Sessyoin Kiara
+...I have no special knowledge, personally. Kama was quite clear with us about how this labyrinth works.
+[k]
+
+＠Sessyoin Kiara
+It just stood out to me more[sr]by virtue of my being a nun.
+[k]
+
+[charaFace F 4]
+＠Sessyoin Kiara
+If we continue on from the precepts against killing and falsehoods, then I think this floor's theme...is the precept against intoxication.
+[k]
+
+？1：Huh?
+？！
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaFace F 0]
+＠Sessyoin Kiara
+Kama mentioned those first two herself.
+[k]
+
+＠Sessyoin Kiara
+It should be safe to say that these are[sr]the themes of each of the Ooku's floors.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠Yagyu Tajima-no-kami
+Themes, you say?
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Sessyoin Kiara
+Yes. Each is the name of one of Buddhism's five precepts[line 2]doctrines that describe things one must not do if one wishes to attain enlightenment.
+[k]
+
+＠Sessyoin Kiara
+Fusesshoukai is the precept against killing. Fumougokai is the precept against lying. And Fuonjukai is the precept against drinking alcohol.
+[k]
+
+[charaFace F 7]
+＠Sessyoin Kiara
+So, if we keep that in mind, and think back[sr]to what we've done on each floor so far...
+[k]
+
+＠Sessyoin Kiara
+...You should clearly see that thinking at[sr]work in designing this version of the Ooku.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠Pārvatī
+Um, let's see... What did we do so far...
+[k]
+
+＠Pārvatī
+On the first floor, we just fought those attendants.[sr]Most of them weren't very strong, though.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠Yagyu Tajima-no-kami
+Hearing that brings to mind the fact that even if these attendants are inhuman dolls, destroying one could be construed as killing.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+＠Pārvatī
+On the last floor, we had to first lie to ourselves about wanting to move forward, then follow paths in places that falsely presented themselves as dead ends... So now, on this floor, we have to drink alcohol to progress...?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠Mata Hari
+I'm afraid we've already forgotten what our goal was earlier in trying to get you guys to drink, but...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠Scheherazade
+Yes, I think I can still vaguely remember that...we were trying to bring you somewhere...
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Sessyoin Kiara
+I still can't say with any certainty whether becoming intoxicated is necessary to penetrate to the next floor, but if it is...
+[k]
+
+＠Sessyoin Kiara
+...that would mean this Ooku wants us to[sr]proceed by breaking these precepts, no?
+[k]
+
+？1：Y-yeah, you might be right!
+？！
+
+＠Sessyoin Kiara
+By that token, it would be impossible for us to proceed if we DO follow these precepts.
+[k]
+
+＠Sessyoin Kiara
+So, applying that rule to our current situation would[line 2]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠Yagyu Tajima-no-kami
+...Would mean Master's current poor condition is a result of [&him:her] coming this far without imbibing.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Mata Hari
+That definitely sounds plausible. Though it does feel[sr]counterintuitive to think [&he:she]'s getting a hangover[sr]because [&he:she] HASN'T been drinking.
+[k]
+
+＠Mata Hari
+Though if that is the case, [&his:her] condition might[sr]get worse and worse the further we progress.
+[k]
+
+＠Mata Hari
+In the worst-case scenario, [&he:she] might no longer be[sr]able to stand, or start gushing blood from [&his:her] eyes[sr]and nose.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠Scheherazade
+That's awful.[sr][&He:She] could end up dead...!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Sessyoin Kiara
+I am uncertain why these are the constraints by which we are bound here, but if Kama did build the Ooku with them in mind, she must have had a reason for doing so.
+[k]
+
+＠Sessyoin Kiara
+If that is true, then I thought it might be dangerous to simply go along with whatever she has planned.
+[k]
+
+＠Sessyoin Kiara
+That is why I declined their invitations earlier.
+[k]
+
+[charaFace F 4]
+＠Sessyoin Kiara
+But we absolutely cannot let Master die.
+[k]
+
+＠Sessyoin Kiara
+I know it is dangerous to have [&him:her] drink to the point[sr]of intoxication, as there is no telling what might happen, but we may also have no alternative...
+[k]
+
+？1：I can handle a headache.
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠Scheherazade
+No, you mustn't! Headaches tend to be a sign of a much more serious condition! At the risk of repeating myself, you could end up dead...!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？2：Well, there's a bottle of sake right there. Bottoms up?
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠Mata Hari
+Oh no you don't!
+[k]
+
+＠Mata Hari
+It's too dangerous to just go along with our enemy's plan, especially when we still don't know what her goal is.
+[k]
+
+＠Mata Hari
+Times like this, our best bet is to stall and look for another way out. What do you think pillow talk is for?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠Pārvatī
+Maybe there's another way? One where we can safely make our way through without playing into Kama's hands?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠Mata Hari
+If there is, I'm not seeing one. Hmm...
+[k]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaFace A 5]
+＠Mata Hari
+...Mm?
+[k]
+
+[charaFace A 1]
+＠Mata Hari
+Wait, I just got an idea![sr]Master, do you mind if I try a little experiment?
+[k]
+
+？1：What'd you have in mind?
+？！
+
+[bgm BGM_EVENT_82 0.1]
+
+[charaFace A 0]
+＠Mata Hari
+I don't know if this will work, but...
+[k]
+
+＠Mata Hari
+When you think about it, what does[sr]it really mean to be intoxicated?
+[k]
+
+＠Mata Hari
+I mean, some people can feel tipsy without[sr]having so much as a drop of alcohol, right?
+[k]
+
+＠Mata Hari
+So I thought I'd try to replicate[sr]that with my Noble Phantasm.
+[k]
+
+？1：Your Noble Phantasm? You mean...
+
+？！
+
+
+＠Mata Hari
+That's right. The one that shares my name.[sr]It's a brainwashing Noble Phantasm.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠Scheherazade
+I see. So, since Master is unable to[sr]become intoxicated through drinking...
+[k]
+
+＠Scheherazade
+...you want to use your Noble Phantasm to[sr]replicate an intoxicated state in [&his:her] mind.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Mata Hari
+Right. Though I don't know if that will be enough[sr]to convince this Ooku that [&he:she]'s really drunk.
+[k]
+
+？1：It can't hurt to try.
+？2：Let's give it a shot!
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_82 1.0 0.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Mata Hari
+Okay, here goes. Just relax, open your eyes,[sr]and let yourself drown in me...
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[effect bit_talk_28]
+[wt 0.1]
+[se ade276]
+[wt 0.7]
+[fadeout ff8fbd 0.5]
+[wait fade]
+[wt 0.1]
+[fadein ff8fbd 0.5]
+[wt 1.5]
+
+
+[bgm BGM_EVENT_82 1.0 1.0]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+＠Pārvatī
+...How do you feel?
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[cueSe Servants_202900 bac655]
+[wipeout uzumaki 1.0 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[wipein uzumaki 1.0 1.0]
+[cueSeStop bac655 1.0]
+[wait wipe]
+[wt 0.5]
+
+？1：Uh... Yeah, I think I feel drunk...
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Mata Hari
+How are you doing? Does your head hurt?
+[k]
+
+？1：Nope. I actually feel great.
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠Sessyoin Kiara
+So you've helped Master become intoxicated without so much as a drop of liquor... Perfect! It seems you've found a loophole that will let us circumvent the rule.
+[k]
+
+＠Sessyoin Kiara
+And since you're using your Noble Phantasm to do it, you can also undo it the moment we leave this floor.[sr]This seems perfect.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠Yagyu Tajima-no-kami
+Nonetheless, given that Master is now effectively intoxicated, the rest of us must work harder than ever.
+[k]
+
+＠Yagyu Tajima-no-kami
+I implore all of you to remain vigilant.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠Sessyoin Kiara
+Of course. I will be so very sad to bid farewell to this delightful intoxication, but yes, we must remain on our guard.
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.2]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth C 0]
+[charaDepth D 1]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[wt 0.25]
+[fowardEffect bit_talk_tornado02]
+[se ad80]
+[seVolume ad80 0 0.5]
+[wt 0.3]
+
+[charaSpecialEffect D erasureReverse 1 0.3]
+[charaFace C 0]
+[charaFadein C 0.2 1]
+[wt 0.1]
+[seStop ad80 0.3]
+
+[wt 0.5]
+[charaTalk on]
+＠Kasuga-no-Tsubone
+I overheard the whole thing.
+[k]
+
+＠Kasuga-no-Tsubone
+I'm still not quite clear on how you did it,[sr]Lady Mata Hari, but I can tell that you have saved[sr][&Lord:Lady] [%1] from [&his:her] predicament.
+[k]
+
+[charaFace C 1]
+＠Kasuga-no-Tsubone
+Well done![sr]You did great! (Pat pat)
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠Mata Hari
+Oh, gosh, haha. I don't think I've been[sr]praised so directly since I was a child.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Kasuga-no-Tsubone
+I'm sure you've been through many hardships, but you're still young. That makes you a child in my eyes.
+[k]
+
+[charaFace C 13]
+＠Kasuga-no-Tsubone
+Now then... If this “you must be this drunk to proceed” rule really is the premise for this floor...
+[k]
+
+＠Kasuga-no-Tsubone
+...there may be other hidden aspects in line with that rule that could help us make our way through it.
+[k]
+
+＠Kasuga-no-Tsubone
+So let's all keep a close eye[sr]on our surroundings for clues...
+[k]
+
+＠Kasuga-no-Tsubone
+...as well as to make sure [&Lord:Lady] [%1] doesn't stumble into any trouble while [&he's:she's] inebriated!
+[k]
+
+
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_82 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

@@ -1,0 +1,197 @@
+
+＄94-03-50-03-1-1
+
+[soundStopAll]
+
+
+[charaSet A 10003000 1 "Sessyoin Kiara"]
+[charaSet B 3030000 1 Pārvatī]
+[charaSet C 99502600 1 Mash]
+[charaSet D 1098158220 1 Sion]
+[charaSet E 1098158230 1 "Sion_Arm Raised_Transmission"]
+[charaSet F 1098163800 1 Kasuga-no-Tsubone]
+[charaSet G 1098164000 1 "Matsudaira Nobutsuna"]
+[charaSet H 1098164100 1 "Ooku Attendant 1"]
+[charaSet J 98115000 1 Effect]
+
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 71700]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+[wt 0.4]
+
+[se ade295]
+[charaMove G -50,0 0.4]
+[charaFadeout G 0.4]
+[seStop ade295 0.8]
+[wt 1.2]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+[wt 0.4]
+
+[bgmStop BGM_EVENT_3 2.2]
+
+[se bac7]
+[effect bit_bolg_01y 0,0 H]
+[charaShake H 0.03 4 4 0.4]
+[wt 0.8]
+[charaMove H 0,-100 0.4]
+[charaFadeout H 0.4]
+[wt 0.3]
+[se ade41]
+[wt 0.4]
+[se ad144]
+[wt 1.2]
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠Pārvatī
+Phew. I'm glad that's over with.
+[k]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Mash
+I can confirm there are no more hostiles nearby.[sr]But, I'm afraid[line 2]
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Sessyoin Kiara
+It seems that man from before is gone as well.
+[k]
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[wt 0.1]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth F 0]
+
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+[wt 0.25]
+[fowardEffect bit_talk_tornado02]
+[se ad80]
+[seVolume ad80 0 0.5]
+[wt 0.3]
+[charaSpecialEffect B erasureReverse 1 0.3]
+
+[charaFace F 4]
+[charaFadein F 0.2 1]
+[wt 0.1]
+[seStop ad80 0.3]
+
+[wt 0.5]
+[charaTalk on]
+＠Kasuga-no-Tsubone
+Lord Nobutsuna...
+[k]
+
+＠Kasuga-no-Tsubone
+You were never the most sociable person, but I'm certain you cared for the shogun just as much as I did. You were his loyal retainer...
+[k]
+
+＠Kasuga-no-Tsubone
+Why would you do this...
+[k]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Sion
+At least we now know that whoever is behind[sr]this is working with people like that.
+[k]
+
+＠Sion
+As a high-ranking shogunate official second only to the shogun himself, he must know all about Edo Castle.
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠Mash
+And if he's working with whoever's behind this, maybe he knows where Director Goredolf and the others are, too.
+[k]
+
+＠Mash
+I hope we can get some information out[sr]of him the next time we see him...
+[k]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠Sion
+Either way, we will need to keep making our way through this labyrinth if we want answers.
+[k]
+
+＠Sion
+[%1], this is where[sr]the real dungeon crawl begins.
+[k]
+
+[charaFace D 14]
+＠Sion
+I know it looks impossible to navigate,[sr]but given that someone must have built it...
+[k]
+
+＠Sion
+...I would be very surprised if there were not some way to determine the correct route.
+[k]
+
+[charaFace D 11]
+＠Sion
+It could just be some kind of idiosyncrasy on the part of its creator during the building process...or it could be something they did intentionally.
+[k]
+
+[charaFace D 0]
+＠Sion
+Whichever it is, I want you to keep a close eye on your surroundings so you do not miss it!
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_81 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

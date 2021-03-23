@@ -1,0 +1,572 @@
+
+＄94-03-50-25-1-1
+[soundStopAll]
+
+
+[charaSet A 6037001 1 Kama]
+[charaSet B 1098164200 1 "Giant Ghost Attendant"]
+[charaSet C 3030000 1 Pārvatī]
+[charaSet D 6014001 1 "Mata Hari"]
+[charaSet E 98110000 1 "Yagyu Tajima-no-kami"]
+[charaSet F 5030001 1 Scheherazade]
+[charaSet G 10003000 1 "Sessyoin Kiara"]
+[charaSet H 1098163800 1 Kasuga-no-Tsubone]
+[imageSet I cut103_item01 1]
+[charaSet J 5009000 1 "Effect Dummy"]
+
+
+[scene 72000]
+
+[bgm BGM_EVENT_80 0.1]
+
+[effect bit_talk_06]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+
+＠Kama
+Too bad. I guess this bow and arrow I chose to save energy and piss off Indra really can't compare to the real thing.
+[k]
+
+＠Kama
+I guess this is just what happens when you hold back...
+[k]
+
+[messageOff]
+[wt 0.2]
+
+[effectStop bit_talk_06]
+[wt 0.4]
+[charaSpecialEffect A flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect A]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠Pārvatī
+We...beat her?[sr]That was easier than I thought...!
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_80 0.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.8]
+
+
+[charaSpecialEffect B enemyErasure 1 2.0]
+[cueSe Battle ba6]
+[wt 3.0]
+[cueSeStop ba6 0.3]
+
+
+[cueSe Battle bas2]
+[wt 0.2]
+[charaFadein I 0.7 0,-200]
+[wt 2.2]
+
+[se ad592]
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout I 0.1]
+[charaPut J 1]
+[charaEffect J bit_talk_noise02]
+[scene 10001]
+[wt 1.5]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+[bgm BGM_EVENT_1 0.1]
+
+＠Overlapping Whispers
+...How could he just leave the shogunate in Tanuma's hands? He may be smart, but he has no drive whatsoever...
+[k]
+
+＠Overlapping Whispers
+He doesn't care about his people or his country.[sr]All he cares about are his game pieces...
+[k]
+
+＠
+...[sr]...
+[k]
+
+＠
+I put a game piece down. Clack.[sr]Then...silence.
+[k]
+
+＠
+I put more game pieces down. Clack. Clack.[sr]And again...silence.
+[k]
+
+＠
+This is what I want. This is how it should be. I don't need to hear any noise. No talking, or shouting, or whispering.[sr]I wish it would all just go away.
+[k]
+
+＠
+The outside world is too big. You can't escape that noise out there. All I need is my game board.
+[k]
+
+＠Sweet Female Voice
+Hehe. What's wrong with pursuing[sr]your interests to their fullest?
+[k]
+
+＠Sweet Female Voice
+As the shogun, you're the most powerful man in the land. Why should you be forced to waste your time thinking about things you'd rather not?
+[k]
+
+＠Sweet Female Voice
+You have every right to spend your time how you see fit. I would never judge you for that.
+[k]
+
+＠Sweet Female Voice
+I love the sound of your game[sr]pieces just as much as you do.
+[k]
+
+＠Sweet Female Voice
+...You have a new shogi problem?[sr]Oh my, I can't wait to see it...
+[k]
+
+
+[messageOff]
+[se ad592]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_1 0.5]
+[wait fade]
+
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_noise02]
+[scene 72000]
+[wt 1.5]
+
+[charaSet B 6037001 1 "Kama 2"]
+[charaFilter B silhouette 00000080]
+
+[charaSet I 6037001 1 "Kama 3"]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.5]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠Mata Hari
+It looks like they dropped another pillbox.[sr]Does this mean we won?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠Yagyu Tajima-no-kami
+No. This is not over yet.[sr]...There.
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[charaTalk depthOff]
+[charaDepth B 0]
+[charaDepth A 1]
+
+[charaTalk off]
+[charaFace B 13]
+[charaFadein B 0.7 1]
+[wt 1.5]
+
+[charaFace A 13]
+[charaFadein A 0.7 1]
+[wt 1.0]
+[charaFadeout B 0.1]
+
+
+[bgm BGM_EVENT_71 0.1]
+
+＠Kama
+Hiii. It's me.
+[k]
+
+＠Kama
+Oh, wait. I should dial down the confidence, shouldn't I? I don't want to come off as some kind of Pārvatī.
+[k]
+
+＠Kama
+I should stick with my tried-and-true humble attitude. Let's try that one more time, shall we?
+[k]
+
+[charaFace A 15]
+
+＠Kama
+Aww, sorry. Maybe you didn't want to see me anymore, but here I am. It's okay, though. I still wanted to see you.
+[k]
+
+？1：Huh!? We defeated you! I know we did!
+
+[charaFace A 1]
+
+？2：Did you clone yourself!?
+
+[charaFace A 1]
+
+＠Kama
+Clone myself? Hehe...[sr]If I did, would that make me some kind of ninja?
+[k]
+
+？！
+
+＠Kama
+Anyway, congratulations on doing a[sr]killer job stealing the key from me.
+[k]
+
+＠Kama
+You want to get deep inside me that badly, huh?[sr]Then I guess I'd better get back to the final chamber.
+[k]
+
+＠Kama
+I still have to get things ready for the big party at the end of all this, after all.
+[k]
+
+[charaFace A 15]
+
+＠Kama
+Oh, and just as a heads-up, this next floor[sr]is a liiittle different from the others.
+[k]
+
+＠Kama
+Since it's the last one, I'm going to make it niiice and simple for you. All you have to do to get through it is go where your desire takes you.
+[k]
+
+[messageOff]
+[charaFilter B NORMAL FFFFFF00]
+[charaFace B 0]
+[charaFadein B 0.7 -320,0]
+[wt 1.0]
+[charaTalk on]
+
+＠B：Kama
+Yes, we'll keep it nice and simple for you.
+[k]
+
+[charaTalk depthOff]
+[charaDepth B 0]
+[charaDepth A 1]
+[charaDepth I 2]
+
+[messageOff]
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.7 320,0]
+[wt 1.0]
+
+＠I：Kama
+We'll help you all fall into blissful debauchery...
+[k]
+
+？1：I... Wha... Huh!?
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_71 1.0]
+[se ade282]
+[wt 0.05]
+[charaSpecialEffect A wipeTime 0,0 0.7]
+[charaSpecialEffect B wipeTime 0,0 0.7]
+[charaSpecialEffect I wipeTime 0,0 0.7]
+[wt 2.4]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠Scheherazade
+What...was that...?
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+
+＠Sessyoin Kiara
+Perhaps those three are just imposters, and the real Kama is still somewhere else...but I doubt things are quite that simple.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠Pārvatī
+...If nothing else, I can say I've never heard of Kama using powers like that before.
+[k]
+
+[charaFace C 7]
+
+＠Pārvatī
+Still, we are Divine Spirits. It's not too hard for us to make more of ourselves if we want to.
+[k]
+
+＠Pārvatī
+I do something similar when I fire my Noble Phantasm.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Mata Hari
+Maybe she's copying how ninjas do it. I know I was amazed when Kotarou showed me his clone technique.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Scheherazade
+I've also heard of a dollmaker ranked Grand among mages who can make puppets that look identical to people.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Yagyu Tajima-no-kami
+In the end, it would seem all we know for certain is that the manner in which she created copies of herself eludes us.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠Mata Hari
+Unfortunately, yeah.
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[wt 0.1]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth C 0]
+[charaDepth H 1]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+[wt 0.25]
+[fowardEffect bit_talk_tornado02]
+[se ad80]
+[seVolume ad80 0 0.5]
+[wt 0.3]
+
+[charaSpecialEffect C erasureReverse 1 0.3]
+[charaFace H 13]
+[charaFadein H 0.2 1]
+[wt 0.1]
+[seStop ad80 0.3]
+
+[wt 0.5]
+
+＠Kasuga-no-Tsubone
+Well, there's no point dwelling on it now.[sr]Why don't we keep moving on in the meantime?
+[k]
+
+＠Kasuga-no-Tsubone
+However many there are of her, there's still only one shogun being held prisoner.
+[k]
+
+[charaFace H 5]
+
+＠Kasuga-no-Tsubone
+Once we rescue him, then we can think of a way to smoke out these pests overrunning the Ooku once and for all.
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Scheherazade
+That's true.[sr]Rescuing the hostages should be our first priority.
+[k]
+
+[charaFace F 5]
+
+＠Scheherazade
+We certainly can't help them if they end up dead...
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠Sessyoin Kiara
+Then let's move on.[sr]This next floor should be the last.
+[k]
+
+？1：What's the final precept, Kiara?
+？！
+
+[charaFace G 7]
+
+＠Sessyoin Kiara
+Ah, yes. That one is extremely simple.
+[k]
+
+＠Sessyoin Kiara
+It's no surprise that Kama left it for last... It's almost like this has been one long tease leading up to it...
+[k]
+
+[charaFace G 3]
+
+＠Sessyoin Kiara
+This...really complicates matters. It's only by repressing that side of myself that I'm able to be here at all.
+[k]
+
+[charaFace G 7]
+
+＠Sessyoin Kiara
+But, then again, I'm sure it will be all right.[sr]I've held out this long, after all.
+[k]
+
+＠Sessyoin Kiara
+As appetizing as Master has looked, particularly up close, I've been able to resist all this time.
+[k]
+
+＠Sessyoin Kiara
+A little more temptation shouldn't push me over the edge now, no matter how delicious it may seem...
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠Mata Hari
+Um... Hello? Anyone home?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 10]
+[charaFadein G 0.1 1]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+＠Sessyoin Kiara
+Oh, yes, forgive me. I still haven't told[sr]you what the last precept is, have I?
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace G 0]
+
+＠Sessyoin Kiara
+The last precept...is called Fujainkai.
+[k]
+
+[charaFace G 1]
+
+＠Sessyoin Kiara
+I imagine you can guess what it forbids by now, no?
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[charaFadeout G 0.1]
+[imageSet I cut103_item01 1]
+[wt 0.5]
+[soundStopAll]
+
+[scene 10000]
+[fadein black 0.1]
+[wait fade]
+
+[cueSe Battle bas2]
+[charaFace I 0]
+[charaFadein I 0.5 0,-200]
+[wt 1.4]
+
+＠
+[s 1000]
+[s 16]Acquired Tenth Shogun Tokugawa Ieharu's inrou.
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[wait fade]
+[end]
+
+
+
+
+
+
+
+
+
+
+
+

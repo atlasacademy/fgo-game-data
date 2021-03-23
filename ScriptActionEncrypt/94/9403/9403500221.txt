@@ -1,0 +1,174 @@
+
+＄94-03-50-02-2-1
+[soundStopAll]
+
+
+[charaSet A 10003000 1 "Sessyoin Kiara"]
+[charaSet B 3030000 1 Pārvatī]
+[charaSet C 1098163800 1 Kasuga-no-Tsubone]
+[charaSet D 99502600 1 Mash]
+[charaSet E 1098158220 1 Sion]
+[charaSet F 1098158230 1 "Sion_Arm Raised_Transmission"]
+[charaSet G 1098164100 1 Attendant]
+
+[charaSet I 5009000 1 "Effect Dummy"]
+[charaSet J 5009000 1 "Effect Dummy 2"]
+
+[scene 10000]
+[scene 71702]
+
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se bac26]
+[wt 0.1]
+[seStop bac41 0.5]
+[charaDepth J 9]
+[charaEffect J bit_talk_shelling_pink01]
+[wt 0.1]
+[fowardEffect bit_talk_14]
+[wt 0.4]
+
+[se bac18]
+[se bac25]
+[flashin once 0.1 0.1 e1a3ffFF e1a3ff50]
+[wt 0.1]
+[charaShake G 0.03 4 4 0.8]
+
+
+[bgmStop BGM_EVENT_3 0.8]
+[wt 1.0]
+[charaMove G 0,-100 0.4]
+[charaFadeout G 0.4]
+[wt 0.3]
+[se ade41]
+[wt 0.4]
+[se ad144]
+
+
+[wt 1.2]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.1 1]
+
+＠Sessyoin Kiara
+...(Sigh) They looked so suspicious, and we were about to fight them anyway, so I didn't hesitate to exorcise them, but[line 2]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠Pārvatī
+They never actually attacked us, did they?[sr]Now I feel kind of bad.
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaDepth C 0]
+[charaDepth B 1]
+
+[wt 0.25]
+[fowardEffect bit_talk_tornado02]
+[se ad80]
+[seVolume ad80 0 0.5]
+[wt 0.3]
+
+[charaSpecialEffect B erasureReverse 1 0.3]
+[charaTalk off]
+[charaFace C 0]
+[charaFadein C 0.2 1]
+[wt 0.1]
+[seStop ad80 0.3]
+
+[wt 0.5]
+
+＠Kasuga-no-Tsubone
+They must have been too scared to fight back after seeing your divine glory, goddess! Oh, and, uh, I guess your...faith?...scared them off too, Lady Sessyoin.
+[k]
+
+[charaFace C 1]
+
+＠Kasuga-no-Tsubone
+Anyway, now there's no one left to get in our way.[sr]Come on, let's go!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk on]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠Mash
+Master, I suspect you're going to find an even stranger world past that passageway than what you're seeing now.
+[k]
+
+＠Mash
+It could be ruled by structures, laws, and theories that are completely different from the ones outside the Ooku.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠Sion
+Basically, there is no telling what might happen! Oh yes, this is what a good dungeon crawl should be like!
+[k]
+
+[charaFace E 3]
+
+＠Sion
+Oh, sorry, I slipped into spectator mode by mistake. I should take a page from Holmes' book when it comes to keeping my cool.
+[k]
+
+[charaFace E 0]
+
+＠Sion
+Anyway, be extra careful in there, everyone.[sr]This is where the expedition really begins!
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[wt 0.5]
+
+
+[se ade295]
+[bgmStop BGM_EVENT_81 2.0]
+[cameraMove 3.0 0,35 1.2]
+[wt 1.5]
+
+[messageOff]
+[fadeout black 2.0]
+[seStop ade295 2.0]
+[wait fade]
+[se ade269]
+[wt 1.0]
+[seStop ade269 1.0]
+[wt 2.0]
+[soundStopAll]
+[end]
