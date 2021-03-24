@@ -1,0 +1,170 @@
+
+＄94-05-71-01-2-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1005001 1 ネロ]
+[branchQuestNotClear lblNotClear00 3000303]
+[charaSet B 1098124510 1 ダ・ヴィンチ]
+[branch lblConf00]
+[label lblNotClear00]
+[charaSet B 98111500 1 ダ・ヴィンチ]
+[label lblConf00]
+[charaSet C 6031001 1 刑部姫]
+[charaSet D 7039001 1 ？？？]
+[charaSet E 98115000 1 通信用]
+[charaPut E 1200,1200]
+[charaEffect E bit_talk_10_LowLevel]
+
+[scene 114000]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠ネロ
+まったく。[r]どうして余が逃げねばならんのだ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear01 3000303]
+[charaPut E 1]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+[branch lblConf01]
+
+[label lblNotClear01]
+[charaPut E 1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf01]
+＠ダ・ヴィンチ
+仕方ないさ。あそこで騒ぎを起こして[r]得られるものは何もなかった。
+[k]
+
+＠ダ・ヴィンチ
+ええと、現在地は……[r]中央通りから一本入ったところだね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠刑部姫
+うう、せっかくアキバに来たというのに！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear02 3000303]
+[charaPut E 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[branch lblConf02]
+
+[label lblNotClear02]
+[charaPut E 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf02]
+＠ダ・ヴィンチ
+それなりに情報も集まってきたから、[r]ひとまず整理タイムといこう[line 3]
+[k]
+
+[charaFace B 2]
+＠ダ・ヴィンチ
+って、ちょっと待った！[r][#サーヴァント反応]だ、近い！
+[k]
+
+＠ダ・ヴィンチ
+北西方向、約２０メートル……[r]位置的には道向かいの店舗のあたり。
+[k]
+
+[branchQuestNotClear lblNotClear03 3000303]
+
+＠ダ・ヴィンチ
+サーヴァントらしいものがいないか、[r]目視で確認してみて！
+[k]
+
+[branch lblConf03]
+[label lblNotClear03]
+
+＠ダ・ヴィンチ
+サーヴァントらしいものがいないか、[r]目視で確認してみてくれ！
+[k]
+
+[label lblConf03]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.0]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+[pictureFrame cut063_cinema]
+[wt 0.3]
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 0,-50]
+＠？？？
+これは[line 3]非常に興味深い作品ですね。
+[k]
+
+＠？？？
+細部に至るまで手抜きのない、特に胸部と[#臀部:でんぶ]には[r]並々ならぬこだわりが感じられます。
+[k]
+
+[charaFace D 4]
+＠？？？
+……なんと、逆さにせねば見えない場所まで[r]この作り込み。[twt 1.0][charaFace D 1]素晴らしいとしか言いようがありません。
+[k]
+
+[charaFace D 1]
+＠？？？
+はい。評価的には花マルです。
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,0]
+[wt 0.1]
+[pictureFrame]
+[wt 0.3]
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+
+＠刑部姫
+えーと。店先の美少女フィギュアをめっさ真剣に[r]見てるヒトならいるけど……。
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

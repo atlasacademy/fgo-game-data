@@ -1,0 +1,263 @@
+
+＄94-05-71-12-1-1
+[soundStopAll]
+[enableFullScreen]
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[charaSet A 98001000 1 マシュ]
+[branch lblConf]
+
+[label lblNotClear]
+[charaSet A 8001000 1 マシュ]
+
+[label lblConf]
+
+
+[charaSet B 1098124510 1 ダ・ヴィンチ]
+[charaSet H 98111500 1 ダ・ヴィンチ]
+
+[charaSet C 1005001 1 ネロ]
+[charaSet D 3043000 1 エリセ]
+[charaSet E 6031001 1 刑部姫]
+[charaSet G 7039002 1 造形王]
+
+[charaSet I 98115000 1 通信用]
+[charaSet J 1001000 1 エフェクト用]
+[charaSet K 1001000 1 エフェクト用]
+
+[imageSet M back10000 1]
+[charaScale M 1.01]
+
+[charaEffect I bit_talk_10_LowLevel]
+[charaPut I 1200,1200]
+
+[charaDepth D 7]
+[charaDepth M 3]
+
+[scene 114300]
+
+[bgm BGM_EVENT_24 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut J 0,0]
+[charaPut K 0,0]
+[wt 0.1]
+
+[charaEffect J bit_talk_gram_slash_03_fs]
+[se bac39]
+[charaEffect K bit_talk_gram_slash_03_fs 0,0 H]
+[wt 0.8]
+[se ad170]
+[wt 0.1]
+
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+[charaShake D 0.04 4 4 0.3]
+[charaScale D 1.1]
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 0,0]
+[se ad671]
+[charaMoveScale D 1.0 0.3]
+[charaMove D 0,10 0.3]
+[wt 0.6]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[branch lblConf2]
+[label lblNotClear2]
+
+[charaShake A 0.04 4 4 0.3]
+[charaScale A 1.1]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 0,0]
+[se ad671]
+[charaMoveScale A 1.0 0.3]
+[charaMove A 0,10 0.3]
+[wt 0.6]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[label lblConf2]
+
+[effect bit_talk_gram_slash_04]
+[se bac39]
+[wt 0.6]
+[se ad471]
+[seStop ad471 0.4]
+[wt 0.1]
+
+[charaShake C 0.04 4 4 0.3]
+[charaScale C 1.1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,0]
+[se ad671]
+[bgmStop BGM_EVENT_24 0.8]
+[charaMoveScale C 1.0 0.3]
+[charaMove C 0,-15 0.3]
+[wt 0.8]
+
+[charaFace C 4]
+[charaShake C 0.05 2 1 0.5]
+[charaMove C 0,0 0.5]
+[wt 1.5]
+
+[charaFace C 2]
+[bgm BGM_EVENT_5 0.1]
+
+＠ネロ
+ええい……なんだ、この力は。[r]サーヴァント数騎がかりでも太刀打ちできぬだと！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+[charaFadeTime M 0.1 0.6]
+[bgm BGM_EVENT_5 0.4 0.6]
+
+＠エリセ
+（こっちのガラテアさんより……遥かに強い！）
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout M 0.1]
+[bgm BGM_EVENT_5 0.4 1.0]
+[wt 0.1]
+
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 22]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+っ……！？　特定終了！[r]わかったぞ、聖杯だ！
+[k]
+
+[charaFadeout B 0.1]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠刑部姫
+どーせそんなところだろうって思ってた！[r]聖杯を拾ってそのパワーで、ってコトでしょ！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 24]
+[charaFadein B 0.1 1]
+
+[wt 1.0]
+[charaFace B 25]
+
+＠ダ・ヴィンチ
+違う、持ってるんじゃない。[r]信じられないかもしれないが[line 3]
+[k]
+
+[charaFace B 2]
+
+＠ダ・ヴィンチ
+[#彼女のボディ自体が聖杯で出来ているんだ]！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[branch lblConf1]
+
+[label lblNotClear1]
+
+[charaPut I 0,0]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 0,-90]
+
+＠H：ダ・ヴィンチ
+っ……！？　特定終了！[r]わかったぞ、聖杯だ！
+[k]
+
+[charaFadeout H 0.1]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠刑部姫
+どーせそんなところだろうって思ってた！[r]聖杯を拾ってそのパワーで、ってコトでしょ！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut I 0,0]
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 0,-90]
+
+[wt 1.0]
+[charaFace H 0]
+
+＠H：ダ・ヴィンチ
+違う、持ってるんじゃない。[r]信じられないかもしれないが[line 3]
+[k]
+
+[charaFace H 2]
+
+＠H：ダ・ヴィンチ
+[#彼女のボディ自体が聖杯で出来ているんだ]！
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[label lblConf1]
+
+[charaEffectStop I bit_talk_10_LowLevel]
+[bgmStop BGM_EVENT_5 1.0]
+
+[charaDepth K 7]
+[charaDepth J 5]
+[charaDepth G 2]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+
+[charaEffect K bit_talk_20]
+[cueSe Battle bac35]
+[wt 3.0]
+
+
+[messageOff]
+[fadeout black 2.0]
+[wait fade]
+[soundStopAll]
+[end]

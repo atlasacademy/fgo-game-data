@@ -1,0 +1,273 @@
+
+＄94-05-71-03-1-1
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 6031001 1 刑部姫]
+[charaSet B 23003000 1 ガネーシャ]
+[charaSet C 1045000 1 巴御前]
+[charaSet D 98001000 1 マシュ]
+[charaSet E 7039001 1 ガラテア]
+[imageSet F back10000 1]
+[charaScale F 1.1]
+[charaDepth F 1]
+
+[scene 114500]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠刑部姫
+やっ……
+[k]
+
+[bgm BGM_EVENT_4 0.1]
+
+[charaFace A 8]
+＠刑部姫
+[f large]やったーーー！　優勝だー！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth A 4]
+[charaDepth C 3]
+[charaDepth B 2]
+
+[charaMoveReturn A 0,10 0.4]
+[wt 0.4]
+[charaMoveReturn A 0,10 0.4]
+[wt 0.7]
+
+[charaFace A 1]
+[charaFace C 1]
+[charaFadeinFSR C 0.4 276,0]
+[charaMoveFSR C 256,0 0.4]
+[charaFace B 1]
+[charaFadeinFSL B 0.4 -276,0]
+[charaMoveFSL B -256,0 0.4]
+[wt 0.4]
+
+[charaMoveReturn A 0,10 0.4]
+[charaMoveReturnFSL B -240,10 0.4]
+[charaMoveReturnFSR C 240,10 0.4]
+[wt 0.2]
+[se ade124]
+[wt 0.3]
+[charaMoveReturn A 0,10 0.4]
+[charaMoveReturnFSL B -240,10 0.4]
+[charaMoveReturnFSR C 240,10 0.4]
+[wt 0.2]
+[se ade124]
+[wt 0.3]
+[bgmStop BGM_EVENT_4 1.5]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠ガネーシャ
+ふいー。なんとかなったっスね～。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠巴御前
+辛勝ではございましたが、勝ちは勝ち！[r]この勝利、マスターに捧げます！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠刑部姫
+そーだよ勝ったよ～。[r]えへへ、マーちゃん、褒めて褒めて！
+[k]
+
+？1：えらい！　頑張ったね、本当におめでとう！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠マシュ
+はい、本当に凄いです。[r]おめでとうございます、皆さん！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[branch _sel01c]
+
+？2：もちろん。何かしたいこととかある？
+
+[branch _sel01b]
+
+？！
+
+[label _sel01b]
+[charaFace A 6]
+＠刑部姫
+むー……そうだね。[r]ここは定番だけど、頭撫でてみて！
+[k]
+
+？1：いいけど……いいの？
+？！
+
+＠刑部姫
+いいの！[r]さあさあ、やってみてやってみて！
+[k]
+
+？1：がんばってくれて、ありがとう
+？！
+
+[messageOff]
+[cameraMove 1.0 0,-20 1.1]
+[wt 1.5]
+
+[cameraMove 0.3 0,-15 1.1]
+[wt 0.3]
+[cameraMove 0.3 0,-20 1.1]
+[wt 0.3]
+[cameraMove 0.3 0,-15 1.1]
+[wt 0.3]
+[cameraMove 0.3 0,-20 1.1]
+[wt 1.0]
+
+[charaFace A 3]
+＠刑部姫
+あわわわわ……こ、これはいい……。[r]いいけど……。
+[k]
+
+[messageOff]
+[se ad7]
+[charaMoveScale A 0.95 0.1]
+[charaMove A 0,-7 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaScale A 0.9]
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠刑部姫
+ご、ごめん！[r][#姫:わたし]にはちょっと刺激が強すぎました！！
+[k]
+
+＠刑部姫
+あー、心臓やっばい……。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[cameraMove 0.7 0,0 1.0]
+[wt 1.0]
+[charaScale A 1.0]
+
+[label _sel01c]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠巴御前
+そして……縁の下の力持ち、大きな働きをしてくださった[r]ガラテアさまにも。深く御礼申し上げます。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠ガラテア
+いえ、私は何も。[r]元々が素晴らしい造形でございました。
+[k]
+
+＠ガラテア
+これほどまでに怠惰でふくよかで縁起がよさそうな像には[r]初めて触れさせていただきましたので。勉強になりました。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠ガネーシャ
+怠惰とふくよかは褒め言葉なのだろうか……まぁいいや。
+[k]
+
+[charaFace B 0]
+＠ガネーシャ
+で、これ、さすがに霊基の自己修復機能とかで[r]時間が経てば元に戻るっスよね？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+＠ガラテア
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠ガネーシャ
+首を傾げられている……[twt 0.7][charaFace B 2][se ade186][seVolume ade186 0 0][seVolume ade186 1.0 0.3][bgm BGM_EVENT_7 0.1][fowardEffect bit_talk_mirrorball01][wt 1.2]あー！[r]冷暖房のスイッチと混線した！？
+[k]
+
+＠ガネーシャ
+なんか発光機能が[#暴走して:バ　グ　っ　て]るんスけど！
+[k]
+
+＠ガネーシャ
+ずっとこのままはちょっとキツいっス、[r]こんなゲーミング神像は嫌だー！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[seStop ade186 0.4]
+[fowardEffectDestroy bit_talk_mirrorball01]
+[bgm BGM_EVENT_7 0.4 0.5]
+[charaFadeTime F 0.2 0.5]
+
+＠
+（※あとでちゃんと元の状態に戻してもらいました）[se ade178]
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

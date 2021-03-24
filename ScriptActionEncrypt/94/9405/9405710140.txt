@@ -1,0 +1,669 @@
+
+＄94-05-71-01-4-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1005001 1 ネロ]
+[charaSet B 98001000 1 マシュ]
+[charaSet C 6031001 1 刑部姫]
+[charaSet D 3043000 1 エリセ]
+[branchQuestNotClear lblNotClear00 3000303]
+[charaSet E 1098124510 1 ダ・ヴィンチ]
+[branch lblConf00]
+[label lblNotClear00]
+[charaSet E 98111500 1 ダ・ヴィンチ]
+[label lblConf00]
+[charaSet F 1098127000 1 アキバガードＡ]
+[charaSet G 98109200 1 アキバガードＢ]
+[charaSet O 98109200 1 アキバガードＤ]
+[charaSet H 99363000 1 アキバガードＣ]
+[charaSet I 1098154710 1 上級ウィッシュメンＡ]
+[charaSet J 1098154710 1 上級ウィッシュメンＢ]
+[charaSet K 7039001 1 ガラテア]
+[imageSet L back114100 1 1]
+[imageSet M back10000 1]
+[charaSet N 98115000 1 通信用]
+[charaPut N 1200,1200]
+[charaEffect N bit_talk_10_LowLevel]
+[charaScale M 1.1]
+[charaDepth M 1]
+[charaDepth C 2]
+
+[pictureFrame cut063_cinema]
+[scene 114000]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1 0.7]
+
+[charaTalk off]
+[charaFace I 0]
+[charaFadeinFSL I 0.1 -256,-50]
+[charaFace J 0]
+[charaFadeinFSR J 0.1 256,-50]
+[wt 0.7]
+[charaMoveReturnFSR J 256,-54 0.3]
+[wt 0.4]
+[charaMoveReturnFSR J 256,-54 0.3]
+[wt 1.0]
+[charaMoveReturnFSL I -266,-50 0.7]
+[wt 1.7]
+
+[bgm BGM_EVENT_77 1.0 0.2]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[pictureFrame]
+[wt 1.0]
+[bgm BGM_EVENT_77 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ネロ
+なんと、すぐにわかった。[r]本当に皆が知っておったようだな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠マシュ
+はい。しかも、どうやら非常にわかりやすい[r]場所のようで……
+[k]
+
+[charaFace B 6]
+＠マシュ
+あっ、あれではないでしょうか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠刑部姫
+っ、あれが……造形王が住まうという……
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.0]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[charaFadein L 0.1 0,200]
+[cameraMove 0.1 0,0 1.01]
+[wt 0.4]
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[scene 114100]
+
+[wt 1.0]
+[charaAttack L normal 0,-360 1.5]
+[wt 1.5]
+[se ad186]
+[effect bit_talk_41_fs]
+[wt 1.0]
+
+＠刑部姫
+[f x-large]秋葉原タワー会館！！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.7 1]
+[wait wipe]
+[charaFadeout L 0.1]
+[effectDestroy bit_talk_41_fs]
+[cameraMove 0.1 0,0 1.00]
+[wt 0.4]
+[wipein rectangleStripDownToUp 0.7 1]
+[wait wipe]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠刑部姫
+[f x-large]ちがう！！
+[k]
+
+[charaFace C 5]
+＠刑部姫
+これは違う。[r][#姫:わたし]の行きたかった秋葉原にあったのと違う。
+[k]
+
+＠刑部姫
+なんか資料でそれっぽい建物見た気はするけど[r]ゼッタイこんなんじゃなかった。
+[k]
+
+？1：わかる
+？2：こんな縦に長かったっけ……
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+＠エリセ
+何だろう、この……何？[r]トンチキ感っていうか……。
+[k]
+
+＠エリセ
+言うまでもないけど、[r]私の《秋葉原》にもこんなのなかったよ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear01 3000303]
+[charaPut N 1]
+[charaTalk E]
+[charaFace E 14]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+街並みとは違って、見覚えある建物だけど[r]形状がちょっと変わってる感じ？
+[k]
+
+[charaFace E 23]
+＠ダ・ヴィンチ
+ふむふむ……やっぱりここが秋葉原なのは[r]確かなようだね。
+[k]
+
+[branch lblConf01]
+
+[label lblNotClear01]
+[charaPut N 1]
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 0,-90]
+
+＠ダ・ヴィンチ
+街並みとは違って、見覚えある建物だけど[r]形状がちょっと変わってる感じ？
+[k]
+
+[charaFace E 4]
+＠ダ・ヴィンチ
+ふむふむ……やっぱりここが秋葉原なのは[r]確かなようだね。
+[k]
+
+[label lblConf01]
+
+＠ダ・ヴィンチ
+大本の秋葉原という街の在り方や構成要素は残したまま、[r]それがアレンジされている、というわけかな……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ネロ
+芸術的と言えなくもない、[r]調和と不調和の色彩で彩られた外観。
+[k]
+
+＠ネロ
+天を貫かんと積み上げられた[r]手加減のない高さ。
+[k]
+
+[charaFace A 2]
+＠ネロ
+あくまで目立とうというその姿勢、[r]嫌いではない。嫌いではないがっ……！
+[k]
+
+[bgmStop BGM_EVENT_7 0.7]
+
+[charaFace A 4]
+＠ネロ
+いや、今はこの塔の美的評価は置いておこう。
+[k]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaFace A 0]
+＠ネロ
+とにかく、ここの最上階に造形王はいる、[r]という話だな？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear02 3000303]
+[charaPut N 1]
+[charaTalk E]
+[charaFace E 24]
+[charaFadein E 0.1 1]
+＠ダ・ヴィンチ
+そうだね。
+[k]
+
+＠ダ・ヴィンチ
+ただ気になるのは、場所を教えてくれた彼らが口を揃えて[r]『簡単には入れない』って言ってたことで[line 3][twt 1.0][charaFace E 15]あっ。
+[k]
+
+[branch lblConf02]
+
+[label lblNotClear02]
+[charaPut N 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-90]
+＠ダ・ヴィンチ
+そうだね。
+[k]
+
+＠ダ・ヴィンチ
+ただ気になるのは、場所を教えてくれた彼らが口を揃えて[r]『簡単には入れない』って言ってたことで[line 3][twt 1.0][charaFace E 4]あっ。
+[k]
+
+[label lblConf02]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[fowardEffect bit_talk_41_fs]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠ネロ
+たのもう！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[fowardEffectDestroy bit_talk_41_fs]
+
+[charaTalk D]
+[charaFace D 23]
+[charaFadein D 0.1 1]
+＠エリセ
+皇帝陛下ーーーッ！？？[messageShake 0.05 4 4 0.5]
+[k]
+
+？1：（あれは聞いてなかったね）
+？2：（あれは忘れてるね）
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠ネロ
+余はこの塔の最上階まで登りたい。[r]速やかに扉を開き、道を空けよ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFadeinFSL F 0.4 0]
+[charaFace G 0]
+[charaFadeinFSR G 0.4 2]
+[wt 0.7]
+[charaTalk on]
+＠アキバガードＡ
+ああー、秋葉原初心者の方ですね？[r]たまにいらっしゃるんですよー。
+[k]
+
+＠アキバガードＢ
+ここは本当に上級者向けのビルなんです。[r]そのぶん、いいものは売ってますけど……。
+[k]
+
+＠アキバガードＢ
+初心者の方にとっては危険なので、[r]入場をお断りさせてもらっているんです。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ネロ
+馬鹿な。見た目は異様だが、その実、[r]ここはただの商業施設であると聞く。
+[k]
+
+＠ネロ
+中で行われるのはたかが買い物であろう。[r]危険などあるはずが[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 0.7]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[cueSe SE_21 21_ade579]
+[wt 1.0]
+
+[se ad69]
+[seStop ad69 1.5]
+[wt 1.0]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk depthOff]
+[charaDepth H 1]
+[charaDepth I 2]
+[charaDepth J 2]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.2]
+[charaFace I 3]
+[charaFadeinFSL I 0.4 -256,-50]
+[charaFace J 3]
+[charaFadeinFSR J 0.4 256,-50]
+＠アキバガードＣ
+救急、救急ー！　体力を使い果たして[r]お客様が倒れられた！　意識レベル１！
+[k]
+
+＠アキバガードＣ
+会館外へ搬送ののち救護を行う！
+[k]
+
+[charaFace I 3]
+＠上級ウィッシュメンＡ
+うう、嫌だ、嫌だ。僕は、まだ、あの限定版を、[r]買っていないんだ……サイン本も……！
+[k]
+
+[charaFace J 3]
+＠上級ウィッシュメンＢ
+ここに来るために仕事だって辞めてきたのに……[r]頼む、買わせて……金ならある……。
+[k]
+
+＠アキバガードＣ
+命のほうが大事ですよお客様！
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[charaFadeTime M 0.1 0.6]
+[bgm BGM_EVENT_3 0.4 0.6]
+＠刑部姫
+（ゴクリ。今、一瞬だけ開いた扉から漂ってきた[#もの]は）
+[k]
+
+[charaFace C 2]
+＠刑部姫
+（サバフェス会場と同じ……いや、あれ以上の。[r]　戦場の気配……！）
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ネロ
+……むう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadeinFSL F 0.1 0]
+[charaFace G 0]
+[charaFadeinFSR G 0.1 2]
+＠アキバガードＡ
+ほら、ご覧になったでしょう？　ここでの買い物は[r]遊びじゃないんで。下手に挑めば[#再起不能:さいきふのう]になりますよ。
+[k]
+
+＠アキバガードＡ
+上層階に行けば行くほど達人向けの店になって、[r]買い物難度も高くなっていきますし。
+[k]
+
+＠アキバガードＢ
+だからまずはカードを作って、レベルを上げて[r]上級ウィッシュメンになるのを目指してください。
+[k]
+
+＠アキバガードＢ
+これはその方がどれだけ秋葉原に慣れているかを[r]示す目安となるものです。
+[k]
+
+＠アキバガードＢ
+上級ウィッシュメンになれば[r]このビルにもお入りいただけますから。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+＠エリセ
+……レベル？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠アキバガードＢ
+はい。ええと……お客様は団体でのご利用ですかね。[r]それでは、これがウィッシュメンカード（団体用）です。
+[k]
+
+＠アキバガードＢ
+秋葉原の各店舗で買い物をするとポイントが貯まって[r]レベルが上がるようになっています。
+[k]
+
+＠アキバガードＢ
+お会計時に忘れず提示するようにしてくださいね。
+[k]
+
+＠アキバガードＢ
+あ、お店によっては何か特別なイベントを[r]やっていたりするかもしれません。
+[k]
+
+＠アキバガードＢ
+それをクリアすればボーナスポイントが[r]ゲットできるかもです。頑張ってください。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠刑部姫
+うーん。特典つきの[r]ポイントカードシステムみたいなものか……。
+[k]
+
+＠刑部姫
+たくさんお金を使ってプラチナ会員になったら[r]特別なサービスを受けられるとか、そういう感じの。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠ネロ
+なんと面倒臭い！[r]今すぐ力ずくで押し通ればよいのだ！
+[k]
+
+[charaFace A 4]
+＠ネロ
+……と、言いたいところではあるが。
+[k]
+
+＠ネロ
+余は学習できる皇帝。また一時の激情で動き、[r]マスターに迷惑をかけるわけにもいかぬ。
+[k]
+
+[charaFace A 0]
+＠ネロ
+仕方あるまい、ここは[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 0.4]
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+＠ガラテア
+わかりました。[r]力ずくで押し通りましょう。
+[k]
+
+＠ガラテア
+私にとっては王に会うことが最優先。[r]そのために手段は選びません。
+[k]
+
+＠ガラテア
+あのお方の手によるかもしれないものを壊すのは[r]心苦しいですが、ご安心ください。あとで直します。
+[k]
+
+＠ガラテア
+人形を作る技術を持っているものは、[r]それを直す技術も持っているものです。
+[k]
+
+[messageOff]
+[se ad51]
+[wt 1.0]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠アキバガードＡ
+むうっ、反抗的態度！
+[k]
+
+＠アキバガードＡ
+聞き分けがない初心者さんたちには、申し訳ないですが[r]痛い目を見てもらわなくてはなりません。
+[k]
+
+＠アキバガードＡ
+アキバガード、集合！
+[k]
+
+[messageOff]
+[wt 0.2]
+[charaTalk off]
+[charaDepth F 3]
+[charaFace O 0]
+[charaFadeinFSL O 0.4 -430,0]
+[charaFace G 0]
+[charaFadeinFSR G 0.4 430,0]
+[charaMoveFSL O -420,0 0.4]
+[charaMoveFSR G 420,0 0.4]
+[se ad70]
+[seStop ad70 1.0]
+[wt 1.5]
+
+[charaFadeout F 0.1]
+[charaFadeout O 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+＠刑部姫
+ガラテアちゃーん！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear03 3000303]
+[charaPut N 1]
+[charaTalk E]
+[charaFace E 17]
+[charaFadein E 0.1 1]
+[branch lblConf03]
+
+[label lblNotClear03]
+[charaPut N 1]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-90]
+
+[label lblConf03]
+＠ダ・ヴィンチ
+ちなみに彼女、普通に会話しているけど[r]バーサーカークラスだからね。
+[k]
+
+＠ダ・ヴィンチ
+ナイチンゲール女史みたいに[r]『我々とは違う論理でちゃんとしてる』系かもだ。
+[k]
+
+＠ダ・ヴィンチ
+そのつもりで気をつけて！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut N 1200,1200]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠刑部姫
+[#姫:わたし]、それは早く言ってほしかったなー！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠エリセ
+同感！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

@@ -1,0 +1,963 @@
+
+＄94-05-71-01-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 6031001 1 刑部姫]
+[branchQuestNotClear lblNotClear00 3000303]
+[charaSet B 1098124510 1 ダ・ヴィンチ]
+[branch lblConf00]
+[label lblNotClear00]
+[charaSet B 98111500 1 ダ・ヴィンチ]
+[label lblConf00]
+[charaSet C 98001000 1 マシュ]
+[charaSet D 3043000 1 エリセ]
+[charaSet E 1098154700 1 市民]
+[charaSet F 98108900 1 市民]
+[charaSet G 98108900 1 市民]
+[charaSet H 1098162800 1 市民]
+[charaSet I 1005001 1 ネロ]
+[charaSet J 1006001 1 ？？？]
+[charaSet K 98115000 1 通信用]
+[imageSet L back10000 1]
+[charaScale L 1.1]
+[charaDepth L 1]
+[charaDepth D 2]
+[charaDepth A 3]
+
+[scene 10000]
+[fadein black 1.0]
+[wait fade]
+
+[effect bit_talk_07_fs]
+[se ad12]
+[wt 4]
+[fadeout white 1.0]
+[wait fade]
+
+[scene 114000]
+[wt 1.5]
+[fadein white 1.0]
+[wait fade]
+
+[wt 0.4]
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 1]
+＠刑部姫
+ついに来たよ、秋葉原！
+[k]
+
+[charaFace A 0]
+＠刑部姫
+ん、でもなんだか街の様子が[r]想像してたものとは違うような……。
+[k]
+
+＠刑部姫
+いや、確かに秋葉原な感じはあるんだけど、[r]うーん？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear01 3000303]
+[charaEffect K bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[branch lblConf01]
+
+[label lblNotClear01]
+[charaEffect K bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf01]
+＠ダ・ヴィンチ
+キミたちが今いるのは[r]秋葉原のメインストリートとも言える場所だ。
+[k]
+
+＠ダ・ヴィンチ
+周囲の様子はどんな感じだい？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠マシュ
+そうですね、とても賑わっています。[r]大きな通りは歩行者天国になっているようですし。
+[k]
+
+＠マシュ
+脅威らしきものは見当たりません。むしろ[r]これまでになく平和な場所であるようにも思えます。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠エリセ
+まあ、予想通りか。[r]私の知ってる《秋葉原》とは違う、別物だった。
+[k]
+
+？1：実は同じような感想です
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠マシュ
+東京からいらっしゃった先輩もですか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠刑部姫
+だよね？　記録映像とかアニメの中で見てた秋葉原とは、[r]建物の感じとかがちょっと違う気がする。
+[k]
+
+＠刑部姫
+まあ時代とかが変われば街並みも変わるだろうから、[r]そのあたりでの誤差かなー。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear02 3000303]
+[charaPut K 1]
+[charaTalk B]
+[charaFace B 24]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+でも、ここは[%1][&君:ちゃん]が[r]暮らしてたのとほとんど時代的には同じだよ。
+[k]
+
+[charaFace B 14]
+＠ダ・ヴィンチ
+なのに……うーん、やっぱり記録にある[r]秋葉原の街並みとは一致していないね。
+[k]
+
+＠ダ・ヴィンチ
+この特異点ならではの変化かな……？
+[k]
+
+[branch lblConf02]
+
+[label lblNotClear02]
+[charaPut K 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+＠ダ・ヴィンチ
+でも、ここは[%1][&君:ちゃん]が[r]暮らしてたのとほとんど時代的には同じだよ。
+[k]
+
+[charaFace B 4]
+＠ダ・ヴィンチ
+なのに……うーん、やっぱり記録にある[r]秋葉原の街並みとは一致していないね。
+[k]
+
+＠ダ・ヴィンチ
+この特異点ならではの変化かな……？
+[k]
+
+[label lblConf02]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+＠エリセ
+ところで……なんだか私たち、見られてない？
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_77 0.7 0.2]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[pictureFrame cut063_cinema]
+[charaTalk E]
+[charaFace F 0]
+[charaFadeinFSL F 0.1 -256,-50]
+[charaFace E 0]
+[charaFadeinFSR E 0.1 256,-50]
+[wt 0.2]
+[bgm BGM_EVENT_77 0.7 0.6]
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+
+[charaTalk E]
+＠E：市民[FFFFFF]
+あ、おい。見ろよあれ。
+[k]
+
+[charaTalk F]
+＠F：[FFFFFF]市民
+ホントだ、よくできたコスプレだな。[r]……写真撮らせてもらおうかな？
+[k]
+
+[charaTalk E]
+＠E：市民[FFFFFF]
+中央通りはそういうの駄目なルールじゃなかったっけ。
+[k]
+
+[charaTalk F]
+＠F：[FFFFFF]市民
+そっか。残念だな。つーかそれなら[r]コスで歩くのも駄目なはずなんだけど。
+[k]
+
+[charaTalk E]
+＠E：市民[FFFFFF]
+すげー自然に歩いてるから[r]ガードもなかなか気付けないんじゃね？
+[k]
+
+＠E：市民[FFFFFF]
+あの日常的とも言える着こなし、[r]多分コスプレ上級者だ。
+[k]
+
+[charaTalk F]
+＠F：[FFFFFF]市民
+まあ怒られるとしてもあの人たちだし、俺たちは……。
+[k]
+
+[charaTalk E]
+＠E：市民[FFFFFF]
+ああ。心の中でイイネボタンを連打するぐらいしか[r]できないな。ありがとうございました！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.0]
+[wipeout rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[pictureFrame]
+[charaTalk off]
+[charaFace D 0]
+[charaFadeinFSL D 0.1 0]
+[charaFace A 0]
+[charaFadeinFSR A 0.1 2]
+[wt 0.2]
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[wt 0.2]
+[charaMoveFSR A 200,0 0.4]
+[wt 0.6]
+[charaMoveReturnFSR A 200,-4 0.2]
+[wt 0.1]
+[se ad579]
+[seVolume ad579 0 0.7]
+[seStop ad579 0.4]
+[se ad110]
+[seVolume ad110 0 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 9]
+＠刑部姫
+エリち……[r]（ぽん、と肩に手を置く）[twt 0.4][bgm BGM_EVENT_7 0.1]
+[k]
+
+[charaFace D 24]
+[charaShake D 0.04 3 3 0.6]
+＠エリセ
+何が！？　ち、違うし！
+[k]
+
+＠刑部姫
+否定しても無駄だよ。[r]あれは完全に邪馬台国系のコスプレとみなされてた。
+[k]
+
+＠刑部姫
+……合わせで卑弥呼ちゃんとか呼んでこようか？
+[k]
+
+[charaFace D 23]
+＠エリセ
+待って、待って？　場違いなのは認めるけどさ！[r]コスプレ扱いだなんて屈辱的だ。
+[k]
+
+＠エリセ
+この姿はサーヴァントとしての在り方だから。[r]みんなそうでしょ？　ちょ、なぜ目をそらすの？
+[k]
+
+[charaFace D 18]
+＠エリセ
+でもそっか……街中をサーヴァントが歩いているのは[r][#この秋葉原]では異常なわけで……ええっと、つまり？
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+＠ネロ
+ふっふっふ……ふーっふっふっふー！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+＠マシュ
+唐突な高笑い！？[r]ど、どうなされたのですかネロさん？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 8]
+[charaFadein I 0.1 1]
+＠ネロ
+いやなに、そろそろネタばらしの頃合いだと思ってな。
+[k]
+
+[bgm BGM_EVENT_27 0.1]
+
+[charaFace I 7]
+＠ネロ
+何を隠そう[line 3][r]今の視線は全てこの余に向けられたもの！
+[k]
+
+＠ネロ
+エリセも確かに余の認める美少女ではあるが、[r]この地は今や余の威光輝く地であるがゆえな！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+＠エリセ
+きょ、恐縮です。
+[k]
+
+[charaFadeTime L 0.1 0.6]
+[bgm BGM_EVENT_27 0.4 0.6]
+[wt 0.1]
+[charaFace D 24]
+＠エリセ
+（うわあ、ローマの皇帝陛下から[r]　そんな御言葉をいただく日が来ようとは……）
+[k]
+
+[charaFadeout L 0.1]
+[charaFadeout D 0.1]
+[bgm BGM_EVENT_27 0.4 1.0]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+＠ネロ
+見るがよい、答えはあそこにある！[r]まあそこにもここにもあるのだが！
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[cameraMove 1.0 -100,-60 1.2]
+[wt 1.4]
+
+[wt 0.5]
+[cameraMove 2.2 100,-60 1.2]
+[wt 3.0]
+
+[cameraMove 1.0 0,0 1.0]
+[wt 1.4]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+＠マシュ
+こ、これは！？[r]ネロさんのグッズの広告……のようなものでしょうか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠刑部姫
+よく見たら、あっちこっちのビル広告に[r]なってんじゃん！　なんで！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear03 3000303]
+[charaPut K 1]
+[charaTalk B]
+[charaFace B 17]
+[charaFadein B 0.1 1]
+[branch lblConf03]
+
+[label lblNotClear03]
+[charaPut K 1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf03]
+＠ダ・ヴィンチ
+えーと……これはどういうことかな？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+＠ネロ
+ふっふっふ。[r]それでは説明しよう。
+[k]
+
+＠ネロ
+ここは芸術と歌の都であり、[r]余は芸術と歌を愛でる皇帝である。
+[k]
+
+[charaFace I 8]
+＠ネロ
+であれば[line 3]余がその都を手に入れたいと[r]思うのは当然のことであろう？
+[k]
+
+[charaFace I 0]
+＠ネロ
+いや、無論余は[%1]の[r]サーヴァントであるからして、
+[k]
+
+＠ネロ
+特異点解消の邪魔などはできぬ。[r]物理的に手に入れるというのは不可能だ。
+[k]
+
+＠ネロ
+ではせめて[line 3]この名だたる芸術の都に、[r]余という至上の芸術を刻み込む。
+[k]
+
+[charaFace I 2]
+＠ネロ
+それもまた余がこの都を手に入れたということに[r]なるのではないかと、そう思ったわけだ！
+[k]
+
+[charaFace I 0]
+＠ネロ
+なので余はありとあらゆる力を用いて[r]この秋葉原に余というコンテンツを展開した。
+[k]
+
+＠ネロ
+最高の出来のフィギュアを流通させ、[r]コミック化・アニメ化を進行させ、
+[k]
+
+＠ネロ
+ＳＮＳでこれでもかというほどバズらせる……
+[k]
+
+＠ネロ
+無論のこと楽曲制作も進めているが、あれは[r]余のこだわりが強いゆえリリースに手間取っておる。
+[k]
+
+＠ネロ
+しばし待つがよい。
+[k]
+
+[charaFace I 2]
+＠ネロ
+とにかく、それらの結果がコレであーる！
+[k]
+
+＠ネロ
+目論見通り余のコンテンツ化は大成功！[r]今やこの秋葉原において、
+[k]
+
+＠ネロ
+余という存在は知らぬ者のいない[r]キャラクターとして認知されているのである！
+[k]
+
+[charaFace I 6]
+＠ネロ
+むふふふ。どうだどうだ、マスターよ。驚いたか？[r]……サプラーイズ！
+[k]
+
+？1：開いた口が塞がらない……
+？2：何やってるんですか皇帝陛下！
+？！
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear04 3000303]
+[charaPut K 1]
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+[branch lblConf04]
+
+[label lblNotClear04]
+[charaPut K 1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf04]
+＠ダ・ヴィンチ
+やれやれ、やっぱり密航レイシフトしてたのはキミか。
+[k]
+
+＠ダ・ヴィンチ
+まだ調査もしないうちから特異点内に[r]変化を与えてほしくはなかったんだけど……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+＠ネロ
+理屈はわかる。だが許せ！[r]余は[#即断即決:そくだんそっけつ]の皇帝であるがゆえな！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+＠マシュ
+しかし、特異点が発見された後にそれを[r]始めたのだとすると、あまり時間もなかったのでは？
+[k]
+
+＠マシュ
+よくこれほどまでに……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+＠ネロ
+うむ、ものの流行り[#廃:すた]りにおいて大事なのは[r]何よりも広告力だ。
+[k]
+
+＠ネロ
+皇帝特権とローママネーを湯水のように注げば[r]容易いこと。
+[k]
+
+＠ネロ
+当然、余というミューズと見紛うほどに[r]魅力ある存在の地力あってのことであるがな。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠刑部姫
+圧力と買収って翻訳した。[r]さすがの暴君ムーブ……。
+[k]
+
+[charaFace A 0]
+＠刑部姫
+じゃあ、ひょっとしてこの街並みも[r]自分好みに作り替えたりしたの？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+＠ネロ
+うん？　いや、街並み自体は[r]最初に余が見たときからこのようなものであったぞ？
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[se ad5]
+[seVolume ad5 0 0]
+[seVolume ad5 0.7 0.7]
+[wt 0.7]
+[charaTalk off]
+[charaFace G 2]
+[charaFadeinFSL G 0.4 0]
+[charaFace H 0]
+[charaFadeinFSR H 0.4 2]
+[wt 1.0]
+[seStop ad5 2.5]
+
+[charaTalk on]
+[charaTalk G]
+＠G：市民[FFFFFF]
+おい、あれ見ろ。[r][#ねろ]ちゃんじゃないか？（ざわざわ）
+[k]
+
+[charaTalk H]
+＠H：[FFFFFF]市民
+ほんとだ。[r]サインもらえないかな……（ざわざわ）
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 6]
+[charaFadein I 0.1 1]
+＠ネロ
+うむうむ、大人気コンテンツのモデルたる余。[r]注目を集めてしまって当然であろう。
+[k]
+
+[charaFace I 8]
+＠ネロ
+いやー、人気者は困るなー。なー！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠エリセ
+喜んでいる場合じゃなさそうです。[r]ここで注目を引くのは避けたほうが。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear05 3000303]
+[charaPut K 1]
+[charaTalk B]
+[charaFace B 24]
+[charaFadein B 0.1 1]
+[branch lblConf05]
+
+[label lblNotClear05]
+[charaPut K 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+[label lblConf05]
+＠ダ・ヴィンチ
+その通りだね。一旦場所を移そう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut K 1200,1200]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+＠ネロ
+おお、ならばついてくるがよい。[r]案内したいところがある。
+[k]
+
+＠ネロ
+実のところ、そこがサプライズの目玉なのだ！
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_27 1.0]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠刑部姫
+仕方ない、とりあえず陛下についていくことにしますか。[r]早く買い物とか行きたいんだけどな……。
+[k]
+
+[messageOff]
+[se ad60]
+[wipeout rightToLeft 1.0 1]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.7]
+[seStop ad60 1.0]
+[wipein leftToRight 1.0 1]
+[wait wipe]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+＠エリセ
+ここは……駅前広場、かな。[bgm BGM_EVENT_77 0.1]
+[k]
+
+？1：ここに何があるの？
+？2：サプライズの目玉って言ってたけど
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 7]
+[charaFadein I 0.1 1]
+＠ネロ
+ふふふ、何を隠そう！[r]この駅前の一等地には等身大余人形が置かれているのだ！
+[k]
+
+[charaFace I 8]
+＠ネロ
+まだこの目で確認してはおらんが、そういう手筈であった。
+[k]
+
+[charaFace I 6]
+＠ネロ
+この芸術都市秋葉原の象徴がごとく、[r]駅を出てすぐ皆が目にすることになるのは、
+[k]
+
+＠ネロ
+煌びやかでありながらフォーマルな花嫁衣装を[r]身に[#纏:まと]った余の似姿……。
+[k]
+
+＠ネロ
+誰しもがあれを見て余の威光に打ち震え、[r]余の美しさに魂を奪われる[line 3]
+[k]
+
+[charaFace I 2]
+＠ネロ
+すなわちその等身大人形こそが余の秋葉原ゲット計画の[r]トロフィーとも言えるものなのであーる！
+[k]
+
+＠ネロ
+さあここだ！　いざ見よ、[r]しかして聞くがいい、余の芸術的勝利宣言を！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.0]
+[charaFadeout I 0.1]
+[wt 0.2]
+
+[cameraMove 0.7 0,25 1.1]
+[wt 1.2]
+[cameraMove 0.7 -50,25 1.1]
+[wt 1.2]
+[cameraMove 1.4 50,25 1.1]
+[wt 1.9]
+[cameraMove 0.7 0,25 1.1]
+[wt 1.0]
+[cameraMove 0.7 0,0 1.0]
+[wt 1.5]
+
+？1：…………？
+？！
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+＠エリセ
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠刑部姫
+[FFFFFF]？[-]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+＠マシュ
+……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 1]
+[charaFadein I 0.1 1]
+＠ネロ
+どうした、皆して何を呆けた顔をしておる。[r]そこだぞ。駅を出れば必ず目に入る一等地、
+[k]
+
+＠ネロ
+真の大人気コンテンツのみが使用を許される[r]その展示ケースの中に[line 3]
+[k]
+
+[charaFace I 0]
+＠ネロ
+…………。
+[k]
+
+[fowardEffect bit_talk_41_fs]
+[charaFace I 2]
+＠ネロ
+[f x-large]ないではないか！[bgm BGM_EVENT_27 0.1]
+[k]
+
+[fowardEffectDestroy bit_talk_41_fs]
+[charaFace I 4]
+＠ネロ
+ななななぜだ？[r]余は確かに信頼できる業者に発注したぞ！？
+[k]
+
+＠ネロ
+予定ではとっくの昔に納品されて、[r]ここに飾られているはずだが[line 3]むむっ？
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[se ad940]
+[seVolume ad940 0 0]
+[seVolume ad940 1.0 0.7]
+[wt 1.5]
+[seStop ad940 1.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠刑部姫
+何の騒ぎ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠エリセ
+あのビルの大型ビジョンだ。[r]何か番組が始まるみたい。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+＠ネロ
+番組などどうでもよい！　今の大問題は[r]余の似姿の消失事件であって[line 3]
+[k]
+
+[bgmStop BGM_EVENT_27 2.0]
+
+＠ネロ
+って、なんだとぉぉぉぉっ！？[messageShake 0.04 4 4 0.6]
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[cameraMove 1.1 70,-70 1.2]
+[wt 0.3]
+[wipeout diaOut 0.7 1]
+[wait wipe]
+[wt 0.4]
+[cameraMove 0.1 0,0 1.0]
+[charaDepth I 10]
+[scene 116206]
+[charaTalk off]
+[se ad539]
+[wt 0.4]
+[seStop ad539 0.3]
+[fadeout black 0.1]
+[wait fade]
+[wipein diaOut 0.1 1]
+[wait wipe]
+[se ad562]
+[fadein black 1.0]
+[wt 0.2]
+[wait fade]
+
+[scene 116201 0.2]
+[wt 0.7]
+
+[bgm BGM_EVENT_65 0.1]
+
+＠？？？
+キラキラねろねろ夢の街～☆[r]秋葉の天使がやってくる～☆
+[k]
+
+＠？？？
+みんな～、元気～！？　余ちゃんだよ～！
+[k]
+
+＠？？？
+秋葉原公認アイドル兼応援団長、[r][#秋葉ねろ]のゲリラ生放送[line 3]はっじまっるぞー！
+[k]
+
+[messageOff]
+
+[charaFace I 5]
+[charaFadeinFSL I 0.1 -460,-180]
+[wt 1.0]
+
+[bgm BGM_EVENT_65 0.7 0.6]
+[charaFace I 2]
+＠ネロ
+[f x-large][messageShake 0.04 4 4 1.0]余ではないかー！？
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_65 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

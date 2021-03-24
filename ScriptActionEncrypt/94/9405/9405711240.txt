@@ -1,0 +1,1668 @@
+
+＄94-05-71-12-4-0
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet O 98108900 1 東京男]
+[charaSet D 1098154710 1 パイケット兵]
+[charaSet R 98109000 1 モヒカン]
+
+
+[scene 114000]
+[fadein black 2.0]
+[wait fade]
+
+[effect bit_talk_liquor_communication04]
+[se ad928]
+[seVolume ad928 0 0.6]
+[wt 3.5]
+[effectStop bit_talk_liquor_communication04]
+[seStop ad928 2.8]
+[wt 2.5]
+[se adm20]
+[wt 4.0]
+
+[bgm BGM_EVENT_1 0.1]
+
+＠買ったばかりの人形
+私を迎えてくれてありがとう！　これから[r]お家に帰るのかな？　どんな家なのかな、楽しみ！
+[k]
+
+[charaTalk O]
+[charaFace O 2]
+[charaFadein O 0.1 1]
+
+＠市民
+ああ……ああ！　喋ってる、喋ってくれてる！[r]ずっとバイトして金貯めた甲斐があったよ！
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.7 1.0]
+[bgm BGM_EVENT_1 0.7 0.5]
+[wait wipe]
+
+[charaFadeout O 0.1]
+
+[scene 114400]
+[wt 1.0]
+
+[wipein rightToLeft 0.7 1.0]
+[bgm BGM_EVENT_1 0.7 1.0]
+[wait wipe]
+
+[effect bit_talk_liquor_communication04]
+[se ad928]
+[seVolume ad928 0 0.6]
+[wt 3.5]
+[effectStop bit_talk_liquor_communication04]
+[seStop ad928 2.8]
+[wt 2.5]
+[se adm20]
+[wt 4.0]
+
+＠人形
+へへ、いつも大事にしてくれてサンキューな！[r]おかげであたしはずっとカッコイイままだぜ！
+[k]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠市民
+と、当然だろ！？　キミは最強なんだから！[r]これからもずっと大切にするよ。ずっと、ずっと！
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.7 1.0]
+[bgm BGM_EVENT_1 0.7 0.5]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[scene 114200]
+[wt 1.0]
+
+[wipein rightToLeft 0.7 1.0]
+[bgm BGM_EVENT_1 0.7 1.0]
+[wait wipe]
+
+＠超合金
+子供のころから、君と共にいられて嬉しかった。[r]ありがとう。大人になったな。
+[k]
+
+[charaTalk R]
+[charaFace R 1]
+[charaFadein R 0.1 1]
+
+＠市民
+う、うぉぉぉ！　ごめん！　すまない！[r]手放すつもりだったけどやっぱり[#止:や]める！
+[k]
+
+[charaFace R 0]
+＠市民
+もうお前は俺の家族なんだッ！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_1 1.0]
+[wait fade]
+
+[charaFadeout R 0.1]
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 1098124510 1 ダ・ヴィンチ]
+[branch lblConf]
+
+[label lblNotClear]
+[charaSet A 8001000 1 マシュ]
+[charaSet B 98111500 1 ダ・ヴィンチ]
+[label lblConf]
+
+[charaSet C 1005001 1 ネロ]
+[charaSet D 3043000 1 エリセ]
+[charaSet E 6031001 1 刑部姫]
+[charaSet F 7039001 1 ガラテア]
+[charaSet G 7039002 1 造形王]
+[charaSet L 5001001 1 メディア]
+[charaSet N 1006001 1 秋葉ねろ]
+
+[imageSet M back10000 1]
+[charaScale M 1.01]
+
+[charaSet I 98115000 1 通信用]
+[charaSet J 1001000 1 エフェクト用]
+[charaSet K 1001000 1 エフェクト用]
+
+[charaEffect I bit_talk_10_LowLevel]
+[charaPut I 1200,1200]
+
+[scene 114300]
+[wt 1.0]
+
+[fadein black 0.7]
+[wait fade]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+[bgm BGM_EVENT_95 0.1]
+
+＠造形王
+ああ、力が……ピグマリオン王のための、愛がっ……！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠ガラテア
+[#私:あなた]も既にわかっているはず。[r]他人から集めた愛でブーストしても無意味です。
+[k]
+
+[charaFace F 2]
+
+＠ガラテア
+ピグマリオン王を追い求める、私の真実の愛は[line 3][r]ただ、私の内側からしか彫り出されない！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+[wt 0.1]
+
+[charaEffect J bit_talk_Slash_white_01_L]
+[se ad682]
+[wt 0.2]
+[charaShake G 0.03 4 4 0.3]
+[wt 0.5]
+
+＠造形王
+あ……ああ……
+[k]
+
+[messageOff]
+[charaFadeout G 0.4]
+[charaMove G 0,-50 0.5]
+[wt 0.5]
+[se ad144]
+[wt 1.0]
+
+[charaScale J 1.0]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マシュ
+やりました！　造形王の霊核に損傷確認[line 3][r]動作停止です！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 26]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+よーし、人形愛エネルギーは無事に分散を確認した。[r]もう爆発なんかは起こらないよ！
+[k]
+
+[charaFace B 25]
+
+＠ダ・ヴィンチ
+造形王も……たとえ聖杯製であろうと、[r]サーヴァントの形をとっていた以上、
+[k]
+
+＠ダ・ヴィンチ
+霊核が砕ければおしまいだ。[r]最終的にはただの聖杯として回収できるはずだ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[branch lblConf1]
+
+[label lblNotClear1]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-90]
+
+＠ダ・ヴィンチ
+よーし、人形愛エネルギーは無事に分散を確認した。[r]もう爆発なんかは起こらないよ！
+[k]
+
+[charaFace B 0]
+
+＠ダ・ヴィンチ
+造形王も……たとえ聖杯製であろうと、[r]サーヴァントの形をとっていた以上、
+[k]
+
+＠ダ・ヴィンチ
+霊核が砕ければおしまいだ。[r]最終的にはただの聖杯として回収できるはずだ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[label lblConf1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+[charaEffect J bit_talk_06]
+[wt 1.5]
+
+＠造形王
+間違えました、か。私は。
+[k]
+
+[charaFadeout G 0.1]
+[charaPut J 1200,1200]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠ガラテア
+はい。ピグマリオン王に会いたいという願いを想うあまり、[r]大切にするものの順番を間違えました。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠造形王
+あなたが、哀しそうな顔をする、必要は……[r]ないでしょう。
+[k]
+
+[charaFadeout G 0.1]
+[charaPut J 1200,1200]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠ガラテア
+いいえ。あなたは私です。それはつまり、[r]私も間違える可能性があるということです。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠造形王
+そうですね。けれど……それなら、同様に、[r]私たちは共に気付いたのだとも言えます。
+[k]
+
+＠造形王
+私たちに本当に必要なのは、ただ、[r]愛を持って彫ることなのだと。
+[k]
+
+[charaFadeout G 0.1]
+[charaPut J 1200,1200]
+[wt 0.1]
+
+[charaEffectStop J bit_talk_06]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠ガラテア
+はい。それは大いなる気付きです。[r]忘れてはならないものです。
+[k]
+
+＠ガラテア
+それが証明となるのですから。
+[k]
+
+＠ガラテア
+人に愛されて生まれた彫像の中にも[line 3][r]真実の愛は芽生えるのだと。
+[k]
+
+＠ガラテア
+それは私という彫刻家が追い求め続けねばならない[#主題:テーマ]。[r]削り、完成を目指し続けなければならないモチーフ……。
+[k]
+
+[charaFace F 4]
+
+＠ガラテア
+この気付きを……座に持ち帰れればいいですね。
+[k]
+
+[charaFace F 1]
+
+＠ガラテア
+いえ。全てではないかもしれませんが……
+[k]
+
+＠ガラテア
+私という[#彫像:人間]に新しく刻まれるものは、[r]きっと、あるでしょう。
+[k]
+
+＠ガラテア
+なにせ、二人ぶんの記録なのですから。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_95 1.0]
+[charaPut J 0,0]
+[charaEffect J bit_talk_06]
+[wt 2.5]
+
+[charaFadeout F 0.1]
+[charaPut J 1200,1200]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+[bgm BGM_EVENT_6 0.1]
+
+＠刑部姫
+えっ、ガラテアちゃんも！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut J 0,0]
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠ガラテア
+元々が、私も壊れかけのつぎはぎでした。[r]こうなるのは必然でございます。
+[k]
+
+＠ガラテア
+哀しまれる必要はございません。
+[k]
+
+＠ガラテア
+皆様のお力添えのおかげで、[r]私は大切なものを思い出せました。
+[k]
+
+＠ガラテア
+皆様には感謝の気持ちでいっぱいです。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth G 8]
+[charaDepth F 9]
+[charaTalk G]
+[charaFace G 0]
+[charaFadeinFSL G 0.1 0]
+[charaFace F 0]
+[charaFadeinFSR F 0.1 2]
+
+＠造形王
+私は……より正しい形での夢を、願いを、[r]次の私に託せる。そう考えてもいいのでしょうか。
+[k]
+
+[charaFace F 1]
+
+＠ガラテア
+ええ、たぶん……きっと。
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout F 0.1]
+[charaPut J 1200,1200]
+[wt 0.1]
+[charaTalk depthOn]
+
+
+[branchQuestNotClear lblNotClear2 3000303]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+そうだね。縁はしっかりと結ばれたことだろう。
+[k]
+
+＠ダ・ヴィンチ
+キミが[%1][&君:ちゃん]の[r]サーヴァントとしてカルデアに召喚されるのも、
+[k]
+
+＠ダ・ヴィンチ
+これからは充分考えられる未来さ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[branch lblConf2]
+
+[label lblNotClear2]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+＠ダ・ヴィンチ
+そうだね。縁はしっかりと結ばれたことだろう。
+[k]
+
+＠ダ・ヴィンチ
+キミが[%1][&君:ちゃん]の[r]サーヴァントとしてカルデアに召喚されるのも、
+[k]
+
+＠ダ・ヴィンチ
+これからは充分考えられる未来さ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[label lblConf2]
+
+[charaTalk off]
+
+[charaPut J 0,0]
+[charaFace F 1]
+[charaFadeinFSR F 0.1 2]
+[charaFace G 0]
+[charaFadeinFSL G 0.1 0]
+[wt 1.0]
+[charaFace G 1]
+[wt 1.0]
+
+？1：また会いましょう
+
+[charaTalk on]
+
+＠ガラテア
+はい。
+[k]
+
+＠ガラテア
+そちらには芸術家の方々もたくさんいらっしゃる[r]ようですから、よい刺激を受けられそうです……。
+[k]
+
+？2：あなたの作品、また見せて[&ほしい:ね]
+
+[charaTalk on]
+
+＠ガラテア
+はい。[r]王と比べればまだまだ未熟者ですが、是非。
+[k]
+
+＠ガラテア
+そちらには芸術家の方々もたくさんいらっしゃる[r]ようですから、よい刺激を受けられそうです……。
+[k]
+
+？！
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaPut J 1200,1200]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マシュ
+お待ちしています。カルデアにはガラテアさんと[r]お話の合いそうな方々がたくさんいらっしゃいますので、
+[k]
+
+＠マシュ
+こうご期待、といったところです！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠エリセ
+ぽやぽやした宇宙船の男の子とかね。[r]ま、今度紹介するよ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠刑部姫
+[#姫:わたし]の部屋にも招待するから。[r]自慢のフィギュアとか見てよ～。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ネロ
+余は優れた芸術家に目がない。[r]他の者をパトロンとするなど許さぬからな。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 4]
+[charaFadein L 0.1 1]
+
+＠メディア
+貴方とは流派が違うとは思うんだけど……ま、そうね。[r]またおいでなさい。
+[k]
+
+[charaFace L 1]
+
+＠メディア
+貴方に似合う素敵な着せ替えドレスくらいは[r]作っておいてあげるわ。
+[k]
+
+[messageOff]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaPut J 0,0]
+[charaFace F 1]
+[charaFadeinFSR F 0.1 2]
+[charaFace G 1]
+[charaFadeinFSL G 0.1 0]
+[wt 1.5]
+
+[charaSpecialEffect F flashErasure 1 1.7]
+[charaSpecialEffect G flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect F]
+[wait charaSpecialEffect G]
+[charaEffectStop J bit_talk_06]
+[bgmStop BGM_EVENT_6 1.7]
+[wt 2.0]
+
+[charaTalk on]
+
+
+[branchQuestNotClear lblNotClear3 3000303]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠ダ・ヴィンチ
+……さて、これで聖杯も回収できた。[r]特異点の異変もそのうち解消されるはずだけど……
+[k]
+
+[charaFace B 17]
+
+＠ダ・ヴィンチ
+あっちの功労者クンが気になるなぁ？
+[k]
+
+[charaFadeout B 0.1]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[branch lblConf3]
+
+[label lblNotClear3]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠ダ・ヴィンチ
+……さて、これで聖杯も回収できた。[r]特異点の異変もそのうち解消されるはずだけど……
+[k]
+
+[charaFace B 1]
+
+＠ダ・ヴィンチ
+あっちの功労者クンが気になるなぁ？
+[k]
+
+[charaFadeout B 0.1]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[label lblConf3]
+
+[charaTalk N]
+[charaFace N 1]
+[charaFadein N 0.1 1]
+
+＠秋葉ねろ
+あ、じゃあそろそろお開きだねー☆
+[k]
+
+＠秋葉ねろ
+お任せお任せ、こういうのは勢いでドーンって[r]言っちゃったほうがいいんだー♪
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[charaFadeout N 0.1]
+
+[scene 116201]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_65 0.1]
+
+＠秋葉ねろ
+はーい、そんなこんなで特別企画の配信はここまで！[r]みんなー、奇跡を堪能できたかな～？
+[k]
+
+[messageOff]
+[scene 116200 0.1]
+[wt 1.0]
+[scene 116201 0.1]
+
+＠秋葉ねろ
+……うんうん、みんなの喜びの声、届いたよ！[r]そしてここで最後に重大発表ー！
+[k]
+
+＠秋葉ねろ
+余ちゃんの配信はこれで最後！[r]つまりこれは引退配信ってことになりまーす☆
+[k]
+
+＠秋葉ねろ
+みんな、今までありがと～！　ヒューヒュー！[r]らぶらぶ大感謝！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[bgmStop BGM_EVENT_65 0.4]
+[wait wipe]
+
+[charaSet D 1098154710 1 パイケット兵]
+[charaSet L 1098212400 1 現代女性]
+[charaSet O 98108900 1 東京男]
+
+[pictureFrame cut063_cinema]
+
+[scene 114000]
+[wt 0.5]
+
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[charaDepth L 4]
+[charaDepth O 5]
+[charaDepth D 4]
+[charaDepth R 3]
+[charaTalk off]
+
+[charaFace L 3]
+[charaFadeinFSL L 0.1 -356,-50]
+[charaFace O 1]
+[charaFadeinFSL O 0.1 -56,-50]
+[charaFace D 1]
+[charaFadeinFSR D 0.1 91,-50]
+[charaFace R 1]
+[charaFadeinFSR R 0.1 356,-50]
+[wt 1.0]
+
+＠市民たち
+[f large]え[messageShake 0.03 6 6 0.5]ええええええええええ！？
+[k]
+
+[messageOff]
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+[pictureFrame]
+[charaFadeout O 0.1]
+[charaFadeout L 0.1]
+[charaFadeout D 0.1]
+[charaFadeout R 0.1]
+
+[scene 116200]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+＠秋葉ねろ
+あと、フィーバータイムは終わっちゃったから、
+[k]
+
+＠秋葉ねろ
+この配信で命を持った子はそのうちみんな[r]元に戻っちゃうと思うのであしからず。
+[k]
+
+＠秋葉ねろ
+ああ、今まで街にいた人形の子たちは……[r]聖杯の力も加わって生まれたものだから、
+[k]
+
+＠秋葉ねろ
+もう現時点で動かなくなっちゃってるかな。
+[k]
+
+[bgm BGM_EVENT_45 0.1]
+
+＠秋葉ねろ
+……でもね、哀しむ必要なんてないよ。[r]喋れなくなっても、動かなくなっても。
+[k]
+
+＠秋葉ねろ
+その子たちが[line 3]キミたちが心から愛した人形である[r]ってことだけは、一緒のはずだから。でしょ？
+[k]
+
+[scene 116201 0.1]
+
+＠秋葉ねろ
+哀しまないで、引き続き愛してあげてよ！
+[k]
+
+＠秋葉ねろ
+そしたらまた、神様が奇跡を起こして[r]その子を人間にしてくれるかもしれないからさ！
+[k]
+
+＠秋葉ねろ
+そんじゃーねー☆　余ちゃんもみんなのこと愛してるよ、[r]あっきーば！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_45 1.5]
+[wt 0.5]
+[scene 116208 0.2]
+[se ad562]
+[wt 2.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaSet C 1005001 1 ネロ]
+[charaSet D 3043000 1 エリセ]
+[charaSet E 6031001 1 刑部姫]
+[charaSet L 5001001 1 メディア]
+[charaSet O 2009201 1 アルテミス]
+[charaSet P 1098190010 1 アフロディーテ]
+
+[scene 114300]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk on]
+
+[charaTalk N]
+[charaFace N 1]
+[charaFadein N 0.1 1]
+
+＠秋葉ねろ
+とまあ、こんなところだよね？[bgm BGM_EVENT_7 0.1]
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠刑部姫
+乱暴なエンディングだったけど、[r]まあしょうがないかな。
+[k]
+
+[charaFace E 2]
+
+＠刑部姫
+投げ銭とか生きがいにして[r]ハマってた子たちよ……がんばって生きろ……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 5]
+[charaFadein L 0.1 1]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+＠メディア
+待ちなさい。[r]なぜ貴方はまだ動けるの？
+[k]
+
+[messageOff]
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+[wt 1.0]
+
+[charaFace N 1]
+[bgm BGM_EVENT_2 0.1]
+
+
+＠秋葉ねろ
+……第１号だからじゃないかな？[r]まあ結局のところ、時間の問題だよ。
+[k]
+
+＠秋葉ねろ
+余ちゃんはしんみりするのイヤだから、[r]静かなところでおやすみしまーす。捜さないでね？
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ネロ
+待て待て、貴様は余だ。[r]元々余が発注して作らせたものだ。
+[k]
+
+＠ネロ
+一人で、どことも知れぬ場所で眠りにつくなど勿体ない。[r]余が引き受けるぞ。ずっと余の部屋にいるがいい。
+[k]
+
+＠ネロ
+あるいは食堂にでも飾らせるか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 1]
+[charaFadein N 0.1 1]
+
+＠秋葉ねろ
+キミってば……うふふ～？
+[k]
+
+[messageOff]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk off]
+[charaDepth C 7]
+[charaDepth N 6]
+
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+[charaFace N 6]
+[charaFadein N 0.1 -306,0]
+[charaMove N -256,0 0.5]
+[wt 0.5]
+
+[se ad748]
+[se ad458]
+[seVolume ad458 0 0]
+[seVolume ad458 0.4 0.4]
+[charaMoveReturn C -5,0 0.5]
+[wait charaMove C]
+[charaMoveReturn C 5,0 0.5]
+[wait charaMove C]
+[charaMoveReturn C -5,0 0.5]
+[wait charaMove C]
+[seStop ad458 0.6]
+[charaMoveReturn C 5,0 0.5]
+[wait charaMove C]
+[wt 0.6]
+
+[charaTalk on]
+[charaFace C 5]
+
+＠ネロ
+むわ、何だ。頭を撫でるな、不敬者！[r]余は皇帝であるぞ！
+[k]
+
+[charaFace C 4]
+
+＠ネロ
+いや、余の顔をしているゆえか、[r]腹が立つほどでもないのが不思議ではあるが……。
+[k]
+
+[charaFace N 1]
+
+＠秋葉ねろ
+ありがたい申し出だけど諸事情によりパース！[r]大丈夫、ちゃんと悪用はされないようにするから。
+[k]
+
+＠秋葉ねろ
+それじゃね～。お疲れさまでしたっ☆
+[k]
+
+[messageOff]
+[se ade423]
+[seStop ade423 1.0]
+[charaMove N -306,0 0.5]
+[charaFadeout N 0.4]
+[wt 1.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[branchQuestNotClear lblNotClear4 3000303]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+まあ、聖杯はきちんと回収したし、[r]彼女の活動停止が近いのもデータから真実だとわかる。
+[k]
+
+＠ダ・ヴィンチ
+好きなようにさせても問題はないだろうさ。
+[k]
+
+[charaFace B 1]
+
+＠ダ・ヴィンチ
+というわけで今回のミッションは完了だ！[r]みんな、お疲れ様！
+[k]
+
+[charaFadeout B 0.1]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠刑部姫
+えーと、そのさ？[r]ちょっとお願いがあるんですけども……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+はいはい、わかってるとも。特異点が[r]完全に解消されるまでにはまだ時間がある。
+[k]
+
+＠ダ・ヴィンチ
+買い物するなり観光に行くなり、[r]しばらく秋葉原で英気を養うことを許可するよ。
+[k]
+
+[charaFadeout B 0.1]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[branch lblConf4]
+
+[label lblNotClear4]
+
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-90]
+
+＠ダ・ヴィンチ
+まあ、聖杯はきちんと回収したし、[r]彼女の活動停止が近いのもデータから真実だとわかる。
+[k]
+
+＠ダ・ヴィンチ
+好きなようにさせても問題はないだろうさ。
+[k]
+
+[charaFace B 1]
+
+＠ダ・ヴィンチ
+というわけで今回のミッションは完了だ！[r]みんな、お疲れ様！
+[k]
+
+[charaFadeout B 0.1]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 8]
+[charaFadein E 0.1 1]
+
+＠刑部姫
+えーと、そのさ？[r]ちょっとお願いがあるんですけども……。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut I 0,0]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-90]
+
+＠ダ・ヴィンチ
+はいはい、わかってるとも。特異点が[r]完全に解消されるまでにはまだ時間がある。
+[k]
+
+＠ダ・ヴィンチ
+買い物するなり観光に行くなり、[r]しばらく秋葉原で英気を養うことを許可するよ。
+[k]
+
+[charaFadeout B 0.1]
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[label lblConf4]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠刑部姫
+やたー！　それじゃ、いってきまーす！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マシュ
+今までも、空いた時間にそれなりに[r]買い物などはされていたと思うのですが……
+[k]
+
+＠マシュ
+やはり刑部姫さんたちにとっては聖地のようなもの。[r]そう簡単に巡りきれるものではないということでしょう。
+[k]
+
+？1：こっちもちょっとぶらついてみる？
+？！
+
+＠マシュ
+はい、勿論です。[r]お供させていただきます、先輩！
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 115000]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+
+＠秋葉ねろ
+…………。
+[k]
+
+[messageOff]
+[fadeout white 1.0]
+[se ad592]
+[wait fade]
+
+[charaFadeout N 0.1]
+
+[effect bit_sepia01_depth_fs]
+[wipeFilter cinema 0.5 0]
+[charaEffect J bit_talk_06]
+[charaTalk off]
+
+[charaPut J 0,25]
+[charaFace F 0]
+[charaFadeinFSR F 0.1 256,-50]
+[charaFace G 0]
+[charaFadeinFSL G 0.1 -256,-50]
+
+[scene 114300]
+[wt 0.5]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[charaFace F 1]
+[charaFace G 1]
+[wt 1.0]
+
+[charaSpecialEffect F flashErasure 1 1.7]
+[charaSpecialEffect G flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect F]
+[wait charaSpecialEffect G]
+[charaEffectStop J bit_talk_06]
+[wt 2.0]
+
+[messageOff]
+[fadeout white 1.0]
+[wait fade]
+
+[effectStop bit_sepia01_depth_fs]
+[wipeOff]
+
+[charaDepth K 7]
+[charaDepth O 6]
+[charaDepth P 5]
+
+[charaTalk on]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+
+[scene 115000]
+[wt 0.5]
+
+[fadein white 1.0]
+[wait fade]
+
+[charaFace N 1]
+[bgm BGM_EVENT_11 0.1]
+
+＠秋葉ねろ
+……ふふ。見たいものは見れたから、まあいっか。[r]元気に笑ってればいいよ、ほんとに。
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+＠？？？
+うーん、風が気持ちいいね。[r]ここ、お邪魔していいかな～？
+[k]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.1 1]
+
+＠秋葉ねろ
+[FFFFFF]？[-]
+[k]
+
+[messageOff]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 0]
+[charaFadein O 0.4 1]
+[wt 0.4]
+
+＠アルテミス
+や。
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 1]
+[charaFadein N 0.1 1]
+
+＠秋葉ねろ
+うーん、やばいかなっ☆　アイドルの余ちゃんが[r]こんなところで[#黄昏:たそが]れてるのを見られちゃったら……
+[k]
+
+＠秋葉ねろ
+メランコリーな魅力が新発見されて[r]もっと人気が出てみんなに愛されちゃうかも！
+[k]
+
+＠秋葉ねろ
+困ったなー、もう引退しちゃったんだけどなー？
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 1]
+[charaFadein O 0.1 1]
+
+＠アルテミス
+別にまだやっててもいいんだけどさー、[r]テンションそれで大丈夫？
+[k]
+
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 1]
+[charaFadein N 0.1 1]
+
+＠秋葉ねろ
+大丈夫ってなに？　余ちゃんは[line 3]
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaTalk off]
+
+[bgmStop BGM_EVENT_11 0.3]
+
+[charaPut K 0,0]
+[se ad437]
+[charaEffect K bit_talk_noise_gr]
+[wt 0.3]
+[charaEffectStop K bit_talk_noise_gr]
+[wt 1.0]
+
+[se ad539]
+[charaEffect K bit_talk_noise_gr]
+[wt 0.2]
+[charaCrossFade N 1098190010 8 0.3]
+[wait charaCrossFade N]
+[charaEffectStop K bit_talk_noise_gr]
+[wt 0.5]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+[charaFace N 1]
+
+＠？？？
+余ちゃんはみんなの夢の応援隊☆
+[k]
+
+＠？？？
+引退しちゃっても、その夢を壊すような態度を[r]見せちゃうわけにはいかないのダ！
+[k]
+
+＠？？？
+……[wt 0.3]……………[wt 0.5]……………。
+[k]
+
+[charaFace N 3]
+[bgm BGM_EVENT_27 0.1]
+
+＠？？？
+[f large]～[messageShake 0.03 5 5 0.8]～～～～～～～！？
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+
+[charaTalk O]
+[charaFace O 0]
+[charaFadeinFSR O 0.1 2]
+[charaFace P 3]
+[charaFadeinFSL P 0.1 0]
+
+＠アルテミス
+[line 3]だから、そろそろ[#そのガワ壊れちゃうんじゃない]？[r]っていう忠告だったんだけど。アフロディーテ。
+[k]
+
+[charaFace P 5]
+
+＠アフロディーテ
+ああもう。最っ低。[r]やっぱりわかってたのね、アルテミス。
+[k]
+
+[charaFace O 1]
+
+＠アルテミス
+まあ、ここまで近付けば、さすがにね～？
+[k]
+
+[charaFace O 0]
+
+＠アルテミス
+で、聞いちゃうけど。[r]……なんで？
+[k]
+
+[charaFace P 3]
+
+＠アフロディーテ
+言っておくけど私、[r][#造形王:あ の 子]がこの街でしていたことには関係ないわよ。
+[k]
+
+[charaFace P 5]
+
+＠アフロディーテ
+言ってしまえば、ほとんど私も被害者。[r]召喚された側でしかないんだから。
+[k]
+
+＠アルテミス
+ああ……あの子は聖杯の力を込めて、神の[#鑿:のみ]で、[r]あなたの血族ともされるローマ皇帝の似姿に命を与えた。
+[k]
+
+[charaFace O 1]
+
+＠アルテミス
+そりゃ神霊の切れ端が宿るくらいの因果は[r]繋がっちゃったりするかー。
+[k]
+
+[bgmStop BGM_EVENT_27 1.0]
+
+＠アルテミス
+じゃあ聞き方を変えるね。[r]もうちょっと具体的に。
+[k]
+
+[charaFace O 0]
+
+＠アルテミス
+ただの、命を与えられた人形のふりして、[r]正体を隠して近くで見ていた[line 3]
+[k]
+
+＠アルテミス
+ううん、見守ってたのは、どうして？
+[k]
+
+[charaFace P 9]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠アフロディーテ
+それは……
+[k]
+
+＠アフロディーテ
+わかりきってるでしょう。[r]まがりなりにも私の関係者、だからよ。
+[k]
+
+＠アルテミス
+アフロディーテ。私はあの子と[line 3][r]ガラテアと[#直:じか]に会ったし、触ったよ。
+[k]
+
+＠アルテミス
+気付かないわけないじゃない。
+[k]
+
+＠アルテミス
+[#あの子の中にはあなたがいる]。[r]そうだよね？
+[k]
+
+[charaFace P 5]
+
+＠アフロディーテ
+…………。
+[k]
+
+＠アルテミス
+まあ部分的なものだろうし、少なくともここにいる[r]あなた自身じゃないのは確かだけどね。
+[k]
+
+＠アルテミス
+残酷な戦闘回路に由来する[#あなた:パンデモス]とは真逆の性質をした、[r]もう一つのあなた。
+[k]
+
+＠アルテミス
+高貴で愛深き回路に由来するあなた……識別名称は[r]『アフロディーテ・ウラーニア』とか言ってたっけ？
+[k]
+
+[charaFace P 4]
+
+＠アフロディーテ
+欠片よ、ほんの欠片。
+[k]
+
+＠アフロディーテ
+キプロス島であれこれやったっていうのも、[r]この状態の私は、具体的に何をどうしたか覚えていない。
+[k]
+
+＠アルテミス
+じゃあ……あの子の中にあるのが何なのか、[r]詳しいことはわからないってこと？
+[k]
+
+[charaFace P 8]
+
+＠アフロディーテ
+そうよ。わかるもんですか、あんなちっぽけな霊体の[r]構成要素の奥の奥なんて。詳しく調べる気にもならない。
+[k]
+
+＠アルテミス
+まあでも、とにかく家族みたいなものではあるよね～。
+[k]
+
+＠アルテミス
+子供なのか双子なのか自分自身なのかはわからないけど。[r]だから見守ってたんだ？
+[k]
+
+[charaFace P 8]
+
+＠アフロディーテ
+………………。
+[k]
+
+[charaFace P 9]
+
+＠アフロディーテ
+私ではないし、詳しいことは覚えていないけれど、[r]キプロスで何をやったのかは知ってるわ。
+[k]
+
+＠アフロディーテ
+あんな……[#ロマンチック]な、[r]随分と恥ずかしいことをやったのよ。
+[k]
+
+[charaFace P 0]
+
+＠アフロディーテ
+だったら[line 3]責任を取って、[r]こうするしかないじゃない。
+[k]
+
+＠アルテミス
+ふーん。お茶を濁された気もするけど、[r]まあいいや、だいたいわかったし。
+[k]
+
+[charaFace P 3]
+
+＠アフロディーテ
+最後にとんだ恥をかいたわ、まったく。[r]そもそも何をしに来たの、あなた。
+[k]
+
+＠アルテミス
+別に？　懐かしい気配を感じたから[r]ちょっとお喋りに来ただけだよ～？
+[k]
+
+＠アルテミス
+もっとお喋りする？　それとも殴り合う？
+[k]
+
+[charaFace P 0]
+
+＠アフロディーテ
+どちらもお断りよ。私はもうすぐ消えるわ。
+[k]
+
+＠アフロディーテ
+そもそも私がここにいるのは、[r][#あの子:ガラテア]のついでのようなもの。
+[k]
+
+＠アフロディーテ
+人形に与えられた命とはまた別に、[r]私自身の現界も向こうに引っ張られて当たり前よ。
+[k]
+
+＠アルテミス
+私はカルデアに戻るから、ひょっとしたら[r]ガラテアとはまた会うかもね。何か伝言でもしとく？
+[k]
+
+[charaFace P 6]
+
+＠アフロディーテ
+いいわよ別に。
+[k]
+
+＠アフロディーテ
+あの子はあの子。[r]美神アフロディーテじゃない……ガラテアよ。
+[k]
+
+[messageOff]
+[charaFace P 8]
+[se ad312]
+[wt 1.0]
+
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+[charaFadeout O 0.1]
+[charaFadeout P 0.1]
+
+[charaSet P 1098190000 1 アフロディーテ]
+
+[scene 110101]
+[wt 0.5]
+
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[wt 1.0]
+
+[scene 115000 0.8]
+[wt 1.3]
+
+[charaTalk P]
+[charaFace P 1]
+[charaFadein P 0.1 1]
+
+＠アフロディーテ
+ふぅ……。
+[k]
+
+＠アフロディーテ
+ま、意外に楽しかったわよ。[r]嫌いじゃない街だわ、ここ。
+[k]
+
+[bgmStop BGM_EVENT_11 1.0]
+
+＠アフロディーテ
+そうそう、あなたの趣味の悪い彼氏によろしく。
+[k]
+
+[charaFadeout P 0.1]
+[wt 0.1]
+
+[charaTalk O]
+[charaFace O 2]
+[charaFadein O 0.1 1]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠アルテミス
+は[messageShake 0.03 5 5 0.5]ああああ！？[r]最高のダーリンなんですけどぉぉぉ！？
+[k]
+
+＠アルテミス
+ちょっと待ちなさい、今から数日掛けて[r]ダーリンの素晴らしさを叩き込んであげるわ！
+[k]
+
+[messageOff]
+[wt 0.5]
+[charaFace O 5]
+
+＠アルテミス
+……って、もういないや。
+[k]
+
+＠アルテミス
+久しぶりに会ったのに最後にムカムカさせるとか[r]最高にアフロディーテって感じ！　ふんだ！
+[k]
+
+[charaFace O 1]
+
+＠アルテミス
+早く帰っていっぱいダーリンとラブラブしよ[line 3]
+[k]
+
+[charaFace O 2]
+
+＠アルテミス
+[f x-large]浮気検知！！
+[k]
+
+[messageOff]
+
+[cueSe SE_21 21_ade576]
+[charaMove O 0,25 0.2]
+[charaFadeout O 0.2]
+[wt 0.2]
+[effect bit_talk_impactlanding 0,-250]
+[wt 0.7]
+[cueSeVolume 21_ade576 0.4 0.4]
+[wt 0.8]
+[cueSeStop 21_ade576 1.5]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

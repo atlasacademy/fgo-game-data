@@ -1,0 +1,583 @@
+
+＄94-05-71-09-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 1005001 1 ネロ]
+[charaSet C 3043000 1 エリセ]
+[charaSet D 6031001 1 刑部姫]
+[charaSet E 7039001 1 ガラテア]
+[branchQuestNotClear lblNotClear00 3000303]
+[charaSet F 1098124510 1 ダ・ヴィンチ]
+[branch lblConf00]
+[label lblNotClear00]
+[charaSet F 98111500 1 ダ・ヴィンチ]
+[label lblConf00]
+[charaSet G 25006000 1 ゴッホ]
+[charaSet H 25002000 1 葛飾北斎]
+[charaSet I 98115000 1 通信用]
+[charaSet J 1098127000 1 アキバガード]
+[charaSet K 98109200 1 アキバガード_]
+[charaSet L 1098208400 1 人形メイド]
+
+[scene 114200]
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+＠マシュ
+さすがに少しだけ人の密度も薄れてきましたね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ネロ
+その代わりに[r]顔色の悪い奴らが増えてきた気がするがな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠エリセ
+倒れる前に帰ればいいのに。[r]あれじゃゾンビじゃない。
+[k]
+
+[messageOff]
+[charaTalk B]
+[se ade472]
+[seVolume ade472 0 0.5]
+[wt 2.2]
+
+[charaFace C 23]
+＠エリセ
+……呻き声まで聞こえてきた！？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠刑部姫
+レアものがあるお店の前まで来て帰れるかっていうと、[r]同類として気持ちはわかる。
+[k]
+
+＠刑部姫
+まさに歩く屍……がんばれ……。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠ガラテア
+……？
+[k]
+
+？1：きょろきょろして、どうかした？
+？2：何か気になるものでもあった？
+？！
+
+＠ガラテア
+はい。[r]これは……腕の良い芸術家の気配……？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 1.5]
+
+[branchQuestNotClear lblNotClear01 3000303]
+[charaPut I 1]
+[charaEffect I bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk F]
+[charaFace F 17]
+[charaFadein F 0.1 1]
+[branch lblConf01]
+
+[label lblNotClear01]
+[charaPut I 1]
+[charaEffect I bit_talk_10_LowLevel]
+[wt 0.3]
+[se ad13]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 0,-90]
+
+[label lblConf01]
+＠ダ・ヴィンチ
+どういう気配でどう探知したかは興味が尽きないけれど、[r]こっちもサーヴァント反応を検知だ。前方注意！
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth E 4]
+[charaDepth G 2]
+[charaDepth H 3]
+[charaFace G 0]
+[charaFadeinFSL G 0.4 0]
+[charaFace H 0]
+[charaFadeinFSR H 0.4 2]
+[wt 1.5]
+
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ネロ
+む、あれは北斎とゴッホ。[r]余も認める至高の[#芸術家:アーティスト]であるな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠ゴッホ
+ど、どうも……ゴッホです。エヘヘ、今日はホクサイと[r]お買い物デデデデート、みたいな感じで。
+[k]
+
+[charaFace G 7]
+＠ゴッホ
+ゴッホとホクサイは仲良しなので当然ですよ……[r]なーんて、ウフフ、ゴッホジョーク……。
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 6]
+[charaFadein H 0.1 1]
+＠葛飾北斎
+オウ、そうさァ！[r]ごっほサンとは絵描き同士、ウマが合いまくるねぇ！
+[k]
+
+＠葛飾北斎
+技で学ぶところも多い。[r]新作絵の着想だってトォーンとくらぁ。
+[k]
+
+＠葛飾北斎
+茶飲み語りに[#日車:ヒグルマ]咲かせてるだけで、[r]時間も忘れ、しっぽり楽しめるとくりゃ……
+[k]
+
+[charaFace H 14]
+＠葛飾北斎
+なるほど、こりゃあ確かに、[r][#でぇと]って奴かもしれねえなァ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+＠ゴッホ
+ハウッ……！　ウフフ、エヘヘ……。[messageShake 0.04 3 3 0.4]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadeinFSL H 0.1 0]
+[charaFace E 0]
+[charaFadeinFSR E 0.1 2]
+＠葛飾北斎
+サテどれどれ？　ホゥ……それが噂の、[r]彫り物から人になったってぇ美人さんかい？
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.7]
+
+[charaFace H 12]
+[charaFadeinFSL H 0.4 -215,0]
+[charaMoveFSL H -225,0 0.4]
+[wt 0.7]
+[charaFadeout H 0.4]
+[wt 0.4]
+
+[charaFace H 7]
+[charaFadeinFSR H 0.4 215,0]
+[charaMoveFSR H 225,0 0.4]
+[wt 0.7]
+
+[charaTalk on]
+＠葛飾北斎
+いや、こりゃたまげた。てえしたモンだ。[r]まさに珠玉だ。どの角度から見ても隙がねえ。
+[k]
+
+[charaFace H 13]
+＠葛飾北斎
+すまねぇ、細けぇ細工も確かめときてえ。[r]ちょいと触らせてくんな。[charaMoveReturnFSR H 225,-7 0.6][cueSe SE_21 21_ade578][twt 0.7][charaFace H 7]ふむふむ……へぇ……？
+[k]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadeinFSL G 0.1 -225,0]
+＠ゴッホ
+ゴッホもよろしければ、気持ち悪くなければ……[twt 0.7][charaMoveReturnFSL G -225,-7 0.6][cueSe SE_21 21_ade578][r]エ、エヘヘ、神造形……ぺたぺた……。
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 0.4]
+[charaFace H 1]
+[charaMoveReturnFSL G -225,-7 0.6]
+[charaMoveReturnFSR H 225,-7 0.6]
+[cueSe SE_21 21_ade578]
+[wt 0.7]
+[charaMoveReturnFSL G -225,-7 0.6]
+[charaMoveReturnFSR H 225,-7 0.6]
+[cueSe SE_21 21_ade578]
+[wt 1.5]
+
+[charaTalk on]
+[charaFace E 3]
+＠ガラテア
+恐縮です。[r]お褒めの言葉はピグマリオン王へ。
+[k]
+
+[charaFace E 0]
+＠ガラテア
+お二方も芸術に携わる方でいらっしゃいますか。
+[k]
+
+[charaFace H 13]
+＠葛飾北斎
+芸といっても、[#此方:こちら]はもっぱら筆を振るっての[r]アレやコレやだがねぇ。
+[k]
+
+＠葛飾北斎
+[#彫刻刀:こがたな]を携えて[#彫師:ほりし]の真似事を[r]させてもらってた覚えもあるしな。
+[k]
+
+[charaFace G 0]
+＠ゴッホ
+ウフフ。油絵も浮世絵も、[r]三次元のものを描き出してる、ので……
+[k]
+
+＠ゴッホ
+バランスとか見え方とか、[r]考えないわけじゃ、なかったり……です。
+[k]
+
+[charaFace H 14]
+＠葛飾北斎
+ああ、となりゃァ、[#彫刻物:ほりもの]の善し悪しを[r]見極める目くらいは持ってるサ。
+[k]
+
+＠葛飾北斎
+[#運慶:うんけい][#快慶:かいけい]作の仏像を前に、[r]素通りなんざしねぇくらいの目利きはナ。
+[k]
+
+[charaFace H 6]
+＠葛飾北斎
+あんたがまさにそれだ。[r]ありがたくって朝晩拝みてえ心境ヨ。
+[k]
+
+[charaFace E 3]
+＠ガラテア
+……恐縮です。
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 1.5]
+
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ネロ
+えーい、話が進まんのでとにかく離れろ。
+[k]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaFace B 5]
+＠ネロ
+素敵な造形のものを撫で回したいのはわかるが。というか[r]余もさんざんガラテアを撫で回しながらここまで来たが！
+[k]
+
+？1：二人で買い物なのはわかったけど
+？2：二人でデートなのはわかったけど
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠マシュ
+……こんなところまで、ですか。[r]ただ画材を買いに来ただけとも思えませんが。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+＠葛飾北斎
+ふうーん。[r]どこから話したもんか……。
+[k]
+
+＠葛飾北斎
+なあ、ますたあ殿、周りを見てみな？
+[k]
+
+？1：……？
+？！
+
+[messageOff]
+[bgm BGM_EVENT_77 0.7 0.2]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+[charaFadeout H 0.1]
+[pictureFrame cut063_cinema]
+[wt 0.4]
+[bgm BGM_EVENT_77 0.7 0.6]
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[charaTalk off]
+[charaFace J 0]
+[charaFadeinFSR J 0.4 20,-50]
+[charaMoveFSL J -20,-50 1.2]
+[wt 0.8]
+[charaFadeout J 0.4]
+[wt 0.8]
+
+[charaFace K 0]
+[charaFadeinFSL K 0.4 -20,-50]
+[charaMoveFSR K 20,-50 1.2]
+[wt 0.8]
+[charaFadeout K 0.4]
+[wt 0.8]
+
+[bgm BGM_EVENT_77 0.7 0.2]
+[wipeout rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+[charaTalk on]
+[pictureFrame]
+[wt 0.4]
+[bgm BGM_EVENT_77 0.7 1.0]
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠エリセ
+今気付いたけど。買い物客が少なくなってる代わりに、[r]人形が増えてるね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 14]
+[charaFadein H 0.1 1]
+＠葛飾北斎
+そう、ソイツさあ！
+[k]
+
+[messageOff]
+[bgm BGM_EVENT_77 0.7 0.2]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+[charaFadeout H 0.1]
+[pictureFrame cut063_cinema]
+[wt 0.4]
+[bgm BGM_EVENT_77 0.7 0.6]
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadeinFSR L 0.4 20,-50]
+[charaMoveFSL L -20,-50 1.2]
+[wt 0.8]
+[charaFadeout L 0.4]
+[wt 0.8]
+
+[bgm BGM_EVENT_77 0.7 0.2]
+[wipeout rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+[charaTalk H]
+[charaFace H 13]
+[charaFadein H 0.1 1]
+[pictureFrame]
+[wt 0.4]
+[bgm BGM_EVENT_77 0.7 1.0]
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+＠葛飾北斎
+道行く人形連中の出来映え！　それに頭数も！[r]こいつはワクワクするじゃねえか？
+[k]
+
+[charaFace H 6]
+＠葛飾北斎
+まだまだ本気じゃねえのはわかるが、[r]抜きん出た腕前は伝わっちまうんでなァ。
+[k]
+
+＠葛飾北斎
+腕と速さ、即ち生産力もあるとくりゃ尚更だ。[r]会いたいと願うのは当然だろ？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠ゴッホ
+エ、エヘヘ。命を与える造形。[r]そんなの、芸術家として見過ごせるわけもなく……。
+[k]
+
+[charaFace G 7]
+＠ゴッホ
+こっちに応用できたら、ひょっとして、[r]命を与える絵とか描けたり……？　みたいな！
+[k]
+
+＠ゴッホ
+興味が、そう、ゴッホキョーミがあるのです……！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk H]
+[charaFace G 7]
+[charaFadeinFSL G 0.1 0]
+[charaFace H 6]
+[charaFadeinFSR H 0.1 2]
+＠葛飾北斎
+てなわけで、ここは先に譲っちゃくれねぇかい？[r]いろいろ相談してぇ案件があるのさ。
+[k]
+
+＠葛飾北斎
+浮世絵にゃ[#版木:はんぎ]がつきものだ。[r]彫師として[#すかうと]もしなくちゃなんねぇしさァ！
+[k]
+
+[charaFace G 8]
+＠ゴッホ
+これ、マスターさまの意に沿わぬこと、ですか？[r]ウフフ、ホクサイとマスターさまに、板挟み……
+[k]
+
+[charaFace G 6]
+＠ゴッホ
+人気者になった気分……違う？　すみませんすみません、[r]戦っておしおきされるにしても令呪を使われるにしても、
+[k]
+
+[charaFace G 3]
+＠ゴッホ
+どっちみち少し痛そうで刺激的でラッキーとか[r]思っててすみません……！
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 1.0]
+
+[charaTalk depthOn]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠刑部姫
+一歩も退かなーい！
+[k]
+
+？1：芸術家サーヴァントはそういうとこあるよねー
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[branchQuestNotClear lblNotClear02 3000303]
+[charaPut I 1]
+[charaTalk F]
+[charaFace F 17]
+[charaFadein F 0.1 1]
+＠ダ・ヴィンチ
+どうやら向こうの意志は強いみたいだ。[r]令呪を切るのもコストパフォーマンス的に避けたい。
+[k]
+
+[charaFace F 0]
+＠ダ・ヴィンチ
+仕方ない、オシオキ戦闘の開始といこう！
+[k]
+
+[branch lblConf02]
+
+[label lblNotClear02]
+[charaPut I 1]
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 0,-90]
+＠ダ・ヴィンチ
+どうやら向こうの意志は強いみたいだ。[r]令呪を切るのもコストパフォーマンス的に避けたい。
+[k]
+
+[charaFace F 0]
+＠ダ・ヴィンチ
+仕方ない、オシオキ戦闘の開始といこう！
+[k]
+
+[label lblConf02]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

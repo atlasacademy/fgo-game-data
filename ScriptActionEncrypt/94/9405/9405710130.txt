@@ -1,0 +1,1042 @@
+
+＄94-05-71-01-3-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[branchQuestNotClear lblNotClear00 3000303]
+[charaSet A 1098124510 1 ダ・ヴィンチ]
+[branch lblConf00]
+[label lblNotClear00]
+[charaSet A 98111500 1 ダ・ヴィンチ]
+[label lblConf00]
+[charaSet B 98001000 1 マシュ]
+[charaSet C 7039001 1 ガラテア]
+[charaSet D 6031001 1 刑部姫]
+[charaSet E 3043000 1 エリセ]
+[charaSet F 1005001 1 ネロ]
+[charaSet G 98115000 1 通信用]
+[imageSet H back10000 1]
+[charaSet I 1098190000 1 アフロディーテ]
+[charaPut G 1200,1200]
+[charaEffect G bit_talk_10_LowLevel]
+[charaScale H 1.1]
+[charaDepth H 1]
+[charaDepth D 2]
+[charaDepth E 2]
+[charaDepth C 10]
+
+[scene 114000]
+[fadein black 2.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[branchQuestNotClear lblNotClear01 3000303]
+[charaPut G 1]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[branch lblConf01]
+
+[label lblNotClear01]
+[charaPut G 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-90]
+
+[label lblConf01]
+＠ダ・ヴィンチ
+見過ごすという手はないだろうね。[r]とりあえず警戒しながら接触してみよう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠マシュ
+了解です。では……
+[k]
+
+[messageOff]
+[se ad60]
+[charaFadeout B 0.4]
+[charaMove B -50,0 0.4]
+[bgm BGM_EVENT_77 1.0 0.2]
+[wipeout rightToLeft 1.0 1]
+[wait wipe]
+[wt 0.4]
+[seStop ad60 1.0]
+[bgm BGM_EVENT_77 1.0 1.0]
+[wipein leftToRight 1.0 1]
+[wait wipe]
+
+[charaTalk B]
+[charaFace C 0]
+[charaFadeinFSL C 0.1 0]
+[charaFace B 7]
+[charaFadeinFSR B 0.4 2]
+＠マシュ
+あの、すみません。[r]少しよろしいでしょうか？
+[k]
+
+＠C：？？？
+はい、なんでしょうか。[r]絵画ならば買いませんが。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaFadeTime H 0.1 0.6]
+[bgm BGM_EVENT_77 0.4 0.6]
+＠刑部姫
+（アキバに慣れている人の受け流し方だ……）
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout H 0.1]
+[bgm BGM_EVENT_77 0.4 1.0]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace C 0]
+[charaFadeinFSL C 0.1 0]
+[charaFace B 12]
+[charaFadeinFSR B 0.1 2]
+＠マシュ
+絵画……？[r]いえ、その、サーヴァントの方とお見受けします。
+[k]
+
+[charaFace B 0]
+＠マシュ
+わたしたちは[line 3][r]この特異点を解消しようとしている者です。
+[k]
+
+＠マシュ
+あなたがなぜここにいるのか、ここで何をしようと[r]しているのか、お話を伺ってもよろしいでしょうか？
+[k]
+
+[charaFace C 0]
+＠C：？？？
+ここにいる理由ですか。それは私にもわかりません。[r]気付いたらここにいた、というだけですので。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaFadeTime H 0.1 0.6]
+[bgm BGM_EVENT_77 0.4 0.6]
+＠エリセ
+（土地に召喚されたはぐれサーヴァント、ってやつかな。[r]　……嘘を言ってなければ、だけど）
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout H 0.1]
+[bgm BGM_EVENT_77 0.4 1.0]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠C：？？？
+ですが、私が求めるものは明確です。[r]私はそのために存在しています。
+[k]
+
+？1：……それは？
+？！
+
+[charaFace C 1]
+＠C：？？？
+私が愛する、ただ一人の王[line 3][#ピグマリオン王]。[r][#彼:か]の方との再会でございます。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear02 3000303]
+[charaPut G 1]
+[charaTalk A]
+[charaFace A 22]
+[charaFadein A 0.1 1]
+[branch lblConf02]
+
+[label lblNotClear02]
+[charaPut G 1]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-90]
+
+[label lblConf02]
+＠ダ・ヴィンチ
+ピグマリオン王、だって？　それは……ギリシャ神話の[r]あるエピソードで語られる、キプロスの王だ。
+[k]
+
+＠ダ・ヴィンチ
+じゃあ、キミは、つまり？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠C：？？？
+はい。私の名はガラテア。
+[k]
+
+＠C：？？？
+ピグマリオン王の手で彫られた彫像であり、そして、[r][#彼の愛によって人間となった者です][line 3]
+[k]
+
+[messageOff]
+[wt 0.7]
+[bgmStop BGM_EVENT_77 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaFadeout C 0.1]
+[wt 1.0]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[branchQuestNotClear lblNotClear03 3000303]
+[charaPut G 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[branch lblConf03]
+
+[label lblNotClear03]
+[charaPut G 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-90]
+
+[label lblConf03]
+＠ダ・ヴィンチ
+[%1][&君:ちゃん]はどうかな、[r]ピグマリオン王の物語については？
+[k]
+
+？1：聞いたことある！
+
+[charaFace A 1]
+＠ダ・ヴィンチ
+うん、さすがだ。それじゃあ基本的な知識は[r]持っているものとして進めさせてもらうよ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠マシュ
+詳しい話はともかく、ピグマリオンという言葉や[r]おおよその流れはわたしも聞いたことがあります。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear04 3000303]
+[charaPut G 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[branch lblConf04]
+
+[label lblNotClear04]
+[charaPut G 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-90]
+
+[label lblConf04]
+＠ダ・ヴィンチ
+ああ。ピグマリオンコンプレックスとか[r]ピュグマリオニズムとか、
+[k]
+
+＠ダ・ヴィンチ
+名前自体は人形愛に関する用語として[r]現在でも使われているものだからね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ネロ
+余もだいたいのところは知っておるぞ。
+[k]
+
+？2：ごめんだけど知らない……
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠マシュ
+わたしも詳しくは……。
+[k]
+
+＠マシュ
+ピグマリオンという言葉は[r]聞いたことがある気もするのですが。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear05 3000303]
+[charaPut G 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[branch lblConf05]
+
+[label lblNotClear05]
+[charaPut G 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-90]
+
+[label lblConf05]
+＠ダ・ヴィンチ
+ああ。ピグマリオンコンプレックスとか[r]ピュグマリオニズムとか、
+[k]
+
+＠ダ・ヴィンチ
+名前自体は人形愛に関する用語として[r]現在でも使われているものだからね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ネロ
+よし、ならば余が簡単なあらすじを教えてやろう。[r]芸術を愛する皇帝として当然の教養である。
+[k]
+
+？！
+
+＠ネロ
+……あるとき、彫刻家でもあったキプロスの王は[r]一体の素晴らしい彫像を作った。
+[k]
+
+＠ネロ
+そして王は理想の女として彫り上げた[r]その像を心から愛するようになってしまう。
+[k]
+
+＠ネロ
+だが所詮は物言わぬ像。報われぬ愛に飯も喉を通らず、[r]衰弱死しそうになるほどであったが、
+[k]
+
+＠ネロ
+見かねた神が王の願いを聞き届け、その彫像に[r]命を与えて人間に変えた……というようなものだ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace C 0]
+[charaFadeinFSL C 0.1 0]
+[charaFace D 6]
+[charaFadeinFSR D 0.1 2]
+＠刑部姫
+へー、それがあなたなんだー。
+[k]
+
+＠刑部姫
+確かにお肌とかマジ綺麗だよね。見るからに[r]つるつるですべすべで、ホントにお人形さんみたい……
+[k]
+
+[charaFace D 8]
+[se ad78]
+[charaMoveReturnFSR D 256,-15 0.2]
+＠刑部姫
+ってごめんなさい、思わず！[r]こんなこと言うのは失礼だったかも！
+[k]
+
+[charaFace C 0]
+＠ガラテア
+構いません、お気になさらず。
+[k]
+
+＠ガラテア
+どうやらサーヴァントとしての私は[r]『彫像でもあり人間でもある』という状態のようです。
+[k]
+
+＠ガラテア
+そこに優劣や上下は認識していません。
+[k]
+
+＠ガラテア
+結局のところ私には『ピグマリオン王に愛された私』[r]という定義さえあれば問題ありませんので。
+[k]
+
+＠ガラテア
+私の材質に興味がおありならば、[r]触られますか？
+[k]
+
+[charaFace D 2]
+＠刑部姫
+マジで！？　いいの！？[r]それじゃあ失礼して……。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace D 0]
+[charaMoveFSR D 50,0 1.2]
+[wt 1.5]
+[charaMoveReturnFSR D 50,-4 0.4]
+[wt 0.2]
+[cueSe SE_21 21_ade578]
+[wt 0.5]
+[charaMoveReturnFSR D 50,-4 0.4]
+[wt 0.2]
+[cueSe SE_21 21_ade578]
+[wt 0.8]
+
+[charaTalk on]
+[charaFace D 3]
+＠刑部姫
+うおおお。コイツぁすげぇ。[r]確かに人間の柔らかさなんだけど、
+[k]
+
+＠刑部姫
+それでいて人ならざる滑らかさと重みがあるような……！[r]とにかくずっと触っていたい感触……！
+[k]
+
+[charaFace D 2]
+＠刑部姫
+そんでやっぱ触ってわかるボディラインもすっごい！[r]パーフェクツ！
+[k]
+
+[charaFace C 1]
+＠ガラテア
+恐縮です。ですが私の造形に関するお褒めの言葉は[r]私ではなくピグマリオン王へどうぞ。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠エリセ
+でもその……水着みたいな露出度の服は、いいのかな。[r]ホラ、神話の原典的にさ、問題ない？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaFadeTime H 0.1 0.6]
+[bgm BGM_EVENT_2 0.4 0.6]
+＠刑部姫
+（水着みたいな[line 3]露出度の[line 3]服？）[r]　　　　　　《姫は[#訝:いぶか]しんだ》
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout H 0.1]
+[bgm BGM_EVENT_2 0.4 1.0]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadeinFSL C 0.1 0]
+[charaFace E 0]
+[charaFadeinFSR E 0.1 2]
+＠ガラテア
+これもピグマリオン王に着せていただいたものです。
+[k]
+
+＠ガラテア
+私という像は最初は裸だったのですが、それを[r]不憫に思った王がわざわざ彫り加えてくださいました。
+[k]
+
+[charaFace C 5]
+＠ガラテア
+つまりこれも我が王の愛の証。[r]否定的見解には断固として戦う所存です。
+[k]
+
+[charaFace E 11]
+＠エリセ
+あ、別に、ケチつけてるわけじゃなく！
+[k]
+
+＠エリセ
+ごめんなさいっ、本人納得済みならマスト尊重します！[r]お美しいです！
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠刑部姫
+いやー、ちょっと怒った顔も綺麗じゃのう。
+[k]
+
+？1：服装というか
+？2：装備品にメカ要素があるのはなんで……？
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ガラテア
+メカというのはよくわかりませんが……[r]私はピグマリオン王の愛に加え、
+[k]
+
+＠ガラテア
+その愛に感銘を受けた女神アフロディーテ様の力で[r]人間となった者です。
+[k]
+
+[branchQuestNotClear lblNotClear06 3000628]
+
+？1：アフロディーテ？
+？！
+
+[messageOff]
+[se ad592]
+[bgm BGM_EVENT_2 0.7 0.2]
+[wipeout sideBlind 0.7 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[scene 91800]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[effect bit_sepia01_depth_fs]
+[wt 0.4]
+[bgm BGM_EVENT_2 0.7 0.4]
+[wipein sideBlind 0.7 1]
+[wait wipe]
+
+[wt 1.5]
+
+[bgm BGM_EVENT_2 0.7 0.2]
+[wipeout sideBlind 0.7 1]
+[wait wipe]
+[charaFadeout I 0.1]
+[scene 114000]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[effectDestroy bit_sepia01_depth_fs]
+[wt 0.4]
+[bgm BGM_EVENT_2 0.7 1.0]
+[wipein sideBlind 0.7 1]
+[wait wipe]
+
+[branch lblConf06]
+
+[label lblNotClear06]
+
+[label lblConf06]
+
+＠ガラテア
+その女神の加護が今の私には[r]働いているのかもしれません。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ネロ
+余たちが言うところの[#美神:ヴィナス]だな。[r]言われてみれば何か馴染みがあるような気も……。
+[k]
+
+＠ネロ
+その武器も女神ゆかりのものか？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ガラテア
+武器というか、これは彫刻道具です。
+[k]
+
+＠ガラテア
+私は彫刻によって生まれ、また、[r]ピグマリオン王は偉大なる彫刻家でありました。
+[k]
+
+＠ガラテア
+ならば生まれた私も彫刻というものに親しむのは[r]当然のこと。
+[k]
+
+＠ガラテア
+かつてはキプロスの王宮、その作業場で[r]王に教えられながら[#鑿:のみ]を振るったものです。
+[k]
+
+＠ガラテア
+アフロディーテ様の力が込められたこの[#神鑿:しんさく]、
+[k]
+
+＠ガラテア
+王が用いられていた[#鑿:のみ]が[r]私の手にある理由はわかりませんが……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear07 3000303]
+[charaPut G 1]
+[charaTalk A]
+[charaFace A 24]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+まあ、配偶者や仇に関係するアイテムを持って[r]現界するサーヴァントも少なくないからね。
+[k]
+
+＠ダ・ヴィンチ
+そうなるだけの縁があった、ってことだろう。
+[k]
+
+[charaFace A 26]
+＠ダ・ヴィンチ
+それよりも……[r]やっぱりこれは、気になる一致だ。
+[k]
+
+[branch lblConf07]
+
+[label lblNotClear07]
+[charaPut G 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+まあ、配偶者や仇に関係するアイテムを持って[r]現界するサーヴァントも少なくないからね。
+[k]
+
+＠ダ・ヴィンチ
+そうなるだけの縁があった、ってことだろう。
+[k]
+
+[charaFace A 1]
+＠ダ・ヴィンチ
+それよりも……[r]やっぱりこれは、気になる一致だ。
+[k]
+
+[label lblConf07]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠マシュ
+そうですね。人形が命を持つ、この秋葉原。[r]それを為しているという造形王。
+[k]
+
+＠マシュ
+そして、彫像から人間になった逸話を[r]お持ちのガラテアさん……。無関係とは思えません。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠ガラテア
+……造形王……？
+[k]
+
+[charaFace C 0]
+＠ガラテア
+[line 3]申し訳ございません。
+[k]
+
+＠ガラテア
+お手数ですが、あなた様がたがお持ちの情報を[r]教えてはいただけないでしょうか。
+[k]
+
+[charaFace C 3]
+＠ガラテア
+お恥ずかしながら、[r]今まで私は情報収集どころではありませんでした。
+[k]
+
+＠ガラテア
+この街には気になる人形があまりにも多すぎまして。[r]皆、素晴らしく出来がよく……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠刑部姫
+うんうん、わかるよ。わかる。
+[k]
+
+？1：もちろんです
+？2：情報共有しましょう
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_2 1.0]
+[wipeout rollRight 1.0 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.7]
+[wipein rollLeft 1.0 1]
+[wait wipe]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠ガラテア
+なるほど。人形に命を与える、造形王。[r]そう呼ばれる存在が、この街にいる……と。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear08 3000303]
+[charaPut G 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[branch lblConf08]
+
+[label lblNotClear08]
+[charaPut G 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-90]
+
+[label lblConf08]
+＠ダ・ヴィンチ
+何か心当たりは……って、聞くまでもないかな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ガラテア
+はい。私は私であるがゆえに。造形王とは、[r]ピグマリオン王のことではないかと考えます。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear09 3000303]
+[charaPut G 1]
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+[branch lblConf09]
+
+[label lblNotClear09]
+[charaPut G 1]
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-90]
+
+[label lblConf09]
+＠ダ・ヴィンチ
+だよねぇ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+＠ガラテア
+……私の願いは、愛しきピグマリオン王と[r]再会することです。それ以外の望みはありません。
+[k]
+
+[charaFace C 0]
+＠ガラテア
+だから私は造形王と会い、[r]それが我が王なのかどうか確かめなくてはならない。
+[k]
+
+＠ガラテア
+ただ、私はこの地には不慣れです。
+[k]
+
+[charaFace C 4]
+＠ガラテア
+ですから……初対面である皆様に、このようなことを[r]申し上げるのは失礼かと存じますが……
+[k]
+
+？1：協力して一緒に見つけましょう
+？！
+
+[charaFace C 2]
+＠ガラテア
+……！[r]よろしいのですか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠マシュ
+もちろんです。わたしたちも[r]造形王に会う必要があるのは確かだと思いますので。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠エリセ
+まあ……[r]もし本当にそれがピグマリオン王だっていうなら、
+[k]
+
+＠エリセ
+関係者と一緒に行ったほうが話は早いよね、絶対。[r]だって妻だし。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠ネロ
+造形王とやらに会ってどうするかはさておき、[r]余も異論はないぞ。
+[k]
+
+＠ネロ
+[#美神:ヴィナス]の香りがする麗しき美少女。[r]同行者として不足はない。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠刑部姫
+旅は道連れ、世は情けってね。よろしく～。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ガラテア
+……感謝申し上げます、皆様。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear10 3000303]
+[charaPut G 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+さて、じゃあ次の問題は、もちろん造形王が[r]どこにいるかっていうことになるんだけど。
+[k]
+
+[charaFace A 26]
+＠ダ・ヴィンチ
+さっき駅前で会った、あの……ウィッシュメンの彼は[r]『それならみんな知ってる』なんて言ってたね。
+[k]
+
+＠ダ・ヴィンチ
+そこらのウィッシュメンたちに追加で聞き込みをすれば[r]意外とすぐわかったりするかもだ。
+[k]
+
+[branch lblConf10]
+
+[label lblNotClear10]
+[charaPut G 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+さて、じゃあ次の問題は、もちろん造形王が[r]どこにいるかっていうことになるんだけど。
+[k]
+
+[charaFace A 1]
+＠ダ・ヴィンチ
+さっき駅前で会った、あの……ウィッシュメンの彼は[r]『それならみんな知ってる』なんて言ってたね。
+[k]
+
+＠ダ・ヴィンチ
+そこらのウィッシュメンたちに追加で聞き込みをすれば[r]意外とすぐわかったりするかもだ。
+[k]
+
+[label lblConf10]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠エリセ
+そんなにわかりやすい場所にいるのかな。
+[k]
+
+＠エリセ
+それなのに、会ったことはない、[r]って言ってたのも不思議な感じではあるけど。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠刑部姫
+確かに。どういうことなんだろね？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[branchQuestNotClear lblNotClear11 3000303]
+[charaPut G 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ダ・ヴィンチ
+とりあえず行ってみればわかるさ。[r]それじゃあ、まずは聞き込みをよろしく～。
+[k]
+
+[charaFace A 17]
+＠ダ・ヴィンチ
+……店先のフィギュアとかに[r]気を取られすぎないようにね。買い物は後だよ、後。
+[k]
+
+[branch lblConf11]
+
+[label lblNotClear11]
+[charaPut G 1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-90]
+＠ダ・ヴィンチ
+とりあえず行ってみればわかるさ。[r]それじゃあ、まずは聞き込みをよろしく～。
+[k]
+
+[charaFace A 4]
+＠ダ・ヴィンチ
+……店先のフィギュアとかに[r]気を取られすぎないようにね。買い物は後だよ、後。
+[k]
+
+[label lblConf11]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+
+[charaTalk D]
+[charaFace C 4]
+[charaFadeinFSL C 0.1 0]
+[charaFace D 8]
+[charaFadeinFSR D 0.1 2]
+＠刑部姫
+ぎくり。
+[k]
+
+＠ガラテア
+ぎくり。
+[k]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+＠ガラテア
+……申し訳ございません。[r]そんな場合ではないと理解してはいるのですが、
+[k]
+
+＠ガラテア
+出来のいい人形を見ると[r]どうしても目を奪われてしまい。
+[k]
+
+＠ガラテア
+いえ、別に嫉妬しているわけではなく。[r]純粋に彫刻技能持ちとしての興味が、ですね……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+[charaFadeTime H 0.1 0.6]
+[bgm BGM_EVENT_77 0.4 0.6]
+＠刑部姫
+（ああもう、照れ顔も可愛いなあ！[r]　これは王様の趣味もわかる！）
+[k]
+
+＠刑部姫
+（[#姫:わたし]もできたらこの子部屋に連れ帰りたーい！[r]　いろいろ着せ替えとかさせたーい！）
+[k]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[soundStopAll]
+[end]
