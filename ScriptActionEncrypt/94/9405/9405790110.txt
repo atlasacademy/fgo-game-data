@@ -1,0 +1,359 @@
+
+
+＄94-05-79-01-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 98001000 1 マシュ]
+[charaSet B 1098230010 1 派手な姿の少女]
+[charaSet C 3011000 1 フィン・マックール]
+[charaSet D 5046001 1 神秘的な美女]
+
+[sceneSet F 112200 1 1]
+[sceneSet G 112200 1 1]
+
+[charaSet T 98002000 1 エフェクト用ダミー]
+
+[scene 10000]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad12]
+[effect bit_talk_07_fs]
+[wt 4.0]
+
+[fadeout white 1.0]
+[wait fade]
+[wt 1.0]
+
+[seStop ad12 1.0]
+[effectDestroy bit_talk_07_fs]
+
+[scene 112200]
+[bgm BGM_MAP_72 0 0]
+[se ad5]
+[seVolume ad5 0 0]
+[wt 2.0]
+
+[charaTalk off]
+[charaDepth F 4]
+[charaDepth G 6]
+
+[charaScale F 2.0]
+[charaFadein F 0.1 -660,-620]
+
+[charaMove F -660,-720 5.5]
+
+[bgm BGM_MAP_72 1.5 0.4]
+[seVolume ad5 1.5 0.4]
+[fadein white 1.5]
+[wait fade]
+[wt 2.5]
+
+[charaScale G 2.0]
+[charaFadein G 1.5 570,-730]
+[charaMove G 670,-730 5.5]
+[charaFadeout F 1.5]
+[wt 4.0]
+
+[charaFadeout G 1.5]
+[wt 2.5]
+
+[bgm BGM_MAP_72 0.6 1.0]
+
+[seStop ad5 0.6]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠マシュ
+目標特異点への到着を確認。[r]無事に到着できましたね、先輩。
+[k]
+
+＠マシュ
+残念ながら、カルデアとの通信は[r]断たれてしまっています。
+[k]
+
+＠マシュ
+風景は、現代日本の都市部と酷似。[r]異なる点を挙げるなら[line 3]
+[k]
+
+？1：歌がたくさん聞こえる
+？！
+
+＠マシュ
+はい。あらゆる方向から様々な歌が流れてきます。[r]まるで、競い合うように……。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+＠派手な姿の少女
+ねぇねぇ！　そこの人！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠マシュ
+わたしたちのことでしょうか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFace A 0]
+[charaFadeinFSR A 0.1 2]
+[charaFadeinFSL B 0.1 0]
+＠派手な姿の少女
+そう！　あなたたちのこと！[r]素敵なカップルさんですねっ♪
+[k]
+
+
+[charaFace A 3]
+＠マシュ
+カ、カップル……！
+[k]
+
+[charaFace B 1]
+＠派手な姿の少女
+見たカンジ、ふたりとも[#ＦＩＮ:フ ィ ン]レスだよね？[r]こんな場所でフリーの子が見つかるなんてラッキー♪
+[k]
+
+[charaFace A 0]
+＠マシュ
+フィンレス？
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth A 6]
+[charaDepth C 5]
+
+[charaPutFSR C 400,0]
+[charaFace C 1]
+[charaFadeTime C 0.4 0.6]
+[wt 0.6]
+
+[charaTalk on]
+＠フィン・マックール
+いないいないばー、だとも！
+[k]
+
+？1：いや違うなコレ
+？！
+
+[messageOff]
+[charaFace C 4]
+[wt 1.0]
+
+[charaFadeout C 0.4]
+[wt 0.6]
+
+[charaTalk depthOn]
+[charaFace B 0]
+＠派手な姿の少女
+フリーなら、あたしのコト推させてあげまーす。
+[k]
+
+＠マシュ
+『おさせる』とはどのような意味でしょう。[r]何の話かわかりかねるのですが……。
+[k]
+
+[charaFace B 1]
+＠派手な姿の少女
+わぉ、クールな反応！　焦らすなぁもう！
+[k]
+
+[charaFace A 12]
+＠マシュ
+先輩、どうしましょう。[r]話が噛み合いません……。
+[k]
+
+？1：とりあえず落ち着いて話し合いを[line 3]
+？！
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_MAP_72 1.0]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠派手な姿の少女
+いいからいいから！[r]さっさとあたしのファンになれってば！
+[k]
+
+＠派手な姿の少女
+キラキラのアイドルちゃんが誘ってるの！[r]光栄なことだよ？　恩に思ってくれて良いくらい。
+[k]
+
+[messageOff]
+[charaTalk off]
+[wt 0.1]
+
+[se ade391]
+[effect bit_talk_charge_ppl]
+[wt 2.0]
+
+[seStop ade391 0.5]
+[wt 0.5]
+
+[effectDestroy bit_talk_charge_ppl]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+敵性反応……！[r]凄まじい魔力の高まりです！
+[k]
+
+[charaFace A 7]
+＠マシュ
+しかし、見た目には完全に民間人です。[r]ど、どうしましょうマスター！
+[k]
+
+
+？1：さすがに戦う訳には！
+
+＠マシュ
+はい、その通りです。[r]傷をつけるわけにはいきません。
+[k]
+
+[charaFace A 15]
+＠マシュ
+ただ……魔力反応的には[r]サーヴァントに匹敵するレベルです！
+[k]
+
+？2：逃げられるか[&:な]……！？
+
+＠マシュ
+わかりません。[r]ただ、いわゆる殺意のようなものは感じません。
+[k]
+
+
+＠マシュ
+果たして何をしようとしているのでしょう……。
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠派手な姿の少女
+ファンがもっと欲しかったんだよね～。[r]さあ！　あたしの魅力で[line 3]
+[k]
+
+[bgmStop BGM_EVENT_3 1.0]
+
+＠？？？
+[charaTalk T]
+お待ちなさい！　未熟なるアイドルよ！
+[k]
+
+[charaFace B 2]
+＠派手な姿の少女
+！[messageShake 0.03 3 3 0.3]？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ade422]
+[wt 1.0]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+[seStop ade422 0.1]
+[wt 1.4]
+
+[charaFace D 2]
+
+[bgm BGM_EVENT_4 0.1]
+
+[charaFace D 2]
+
+＠神秘的な美女
+希望に輝く街角で、事情もわからぬ若者たちを誘い惑わす[r][#不埒:ふらち]な所業。それを恩だなどと、お姉さんは許しません！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠派手な姿の少女
+なんですってぇ……！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠マシュ
+この反応は……。[r]先輩！　あの方はサーヴァントのようです！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠派手な姿の少女
+あたしを止めようだなんてイイ度胸！[r]ＯＫ……今からここがステージよ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+＠神秘的な美女
+おいでなさい。[r]アナタの輝き、私が確かめてあげましょう。
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_4 0.4]
+[wait fade]
+[soundStopAll]
+[end]

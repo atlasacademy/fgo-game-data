@@ -264,6 +264,7 @@
     "SELECT_FP_NUM_UP" : "サポート時\n獲得FP{0}倍",
     "SELECT_PUSH" : "プッシュ！",
     "SELECT_BONUS_SKILL_INVALID" : "特効スキル無効",
+    "SELECT_PROTECTED_EVENT_SVT" : "選択不可\n2021/05/10\nまで",
 
     "SVT_HP" : "[FFB900]HP[-] {0}",     // フォーマットが異なるため作成→確定次第削除
     "SVT_ATK" : "[FFB900]ATK[-] {0}",   // フォーマットが異なるため作成→確定次第削除
@@ -901,6 +902,8 @@
 
 	"SHOP_ITEM_TIME_LIMIT" : "期間終了まで",
 
+	"SHOP_EVENT_NO_ITEMS_REQUIRED" : "アイテム不要",
+
 	// RARE_PRI SHOP : QUEST
 	"SHOP_QUEST_ALREADY_CLEARED" : "クリア済み",
 	"SHOP_QUEST_OPEN" : "現在開放中",
@@ -924,6 +927,7 @@
 	"SHOP_HELP_STONE_SHOP_EXPLANATION" : "聖晶石を様々なアイテムに交換できます。",
 	"SHOP_HELP_SPECIAL_ITEM_SHOP_EXPLANATION" : "イベント限定サーヴァントの霊基再臨素材を\n売却できます。",
 	"SHOP_HELP_GRAIL_FRAGMENTS_SHOP_EXPLANATION" : "聖杯の雫を聖杯に交換できます。",
+	"SHOP_HELP_SHOP04_SHOP_EXPLANATION" : "マナプリズムやレアプリズムを\nサーヴァントの霊衣開放権に交換できます。",
 
     // CombineHelp
     "COMBINE_HELP_COMBINE" : "サーヴァント同士を合成することで経験値を獲得しレベルを\n上げることができます。",
@@ -1371,6 +1375,8 @@
 	"PARTY_ORGANIZATION_SERVANT_QUEST_RESTRICTION_SERVANT_NUM_FREE" : "[FFFF00]{0}騎まで\n出撃可能",
 	"PARTY_ORGANIZATION_SERVANT_QUEST_RESTRICTION_FIXED_NPC_ONLY" : "[FFFF00]サポートのみ\n出撃可能",
 	"PARTY_ORGANIZATION_SERVANT_QUEST_RESTRICTION_FIXED_NPC" : "[FFD500]出撃固定",
+    "PARTY_ORGANIZATION_SERVANT_QUEST_RESTRICTION_SELECT_MY_SERVANT_OR_NPC" : "[FFFF00]編成制限\n\n{0}\n\n所持サーヴァント\nまたはサポートから\n編成できます。[-]",
+    "PARTY_ORGANIZATION_SERVANT_QUEST_RESTRICTION_SELECT_NPC" : "[FFFF00]編成制限\n\n{0}\n\n該当サーヴァントを\n所持していないため\nサポートから\n編成してください。[-]",
 
     "PARTY_ORGANIZATION_PARTY_SELECT_EXPLANATION" : "[00FFFF]入れ替えたいサーヴァント、概念礼装をタッチしてください",
     "PARTY_ORGANIZATION_SUPPORT_ONLY_EXPLANATION" : "",
@@ -1387,6 +1393,11 @@
     "PARTY_ORGANIZATION_SERVANT_SELECT_EXPLANATION_PUSH" : "アイコンをタッチする事で\n『プッシュ！サーヴァント』を\n設定できます。",
 
 	"PARTY_ORGANIZATION_SERVANT_SWAP_EXPLANATION_FIXED_MY_SERVANT_POSITION_MAIN_DIALOG" : "{0}はサブメンバーに配置できません。",
+
+    "PARTY_ORGANIZATION_SERVANT_SELECT_MY_SERVANT_OR_NPC_DAIALOG_TITLE" : "[FFFF00]編成元の選択[-]",
+    "PARTY_ORGANIZATION_SERVANT_SELECT_MY_SERVANT_OR_NPC_DAIALOG_MESSAGE" : "「{0}」を\n所持サーヴァントとサポートの\nどちらから編成するか選択してください。",
+    "PARTY_ORGANIZATION_SERVANT_SELECT_MY_SERVANT_OR_NPC_DAIALOG_MY_SERVANT_BUTTON" : "所持サーヴァント\nから編成",
+    "PARTY_ORGANIZATION_SERVANT_SELECT_MY_SERVANT_OR_NPC_DAIALOG_NPC_BUTTON" : "サポートから編成",
 
     "PARTY_ORGANIZATION_INPUT_DECK_NAME_TITLE" : "パーティ名の変更",
     "PARTY_ORGANIZATION_INPUT_DECK_NAME_EXPLANATION" : "パーティ名を入力してください\n※最大20文字まで入力できます。",
@@ -2391,6 +2402,7 @@
     "BATTLE_COMMANDDIALOG_NOFUNC": "宝具は封印されています\n真名を思い出すことで使用可能になります",
     "BATTLE_COMMANDDIALOG_DONTTD": "宝具は使用できません",
 	"BATTLE_COMMANDDIALOG_DONTTD_COND": "宝具の使用条件を満たしていないため\n宝具を使用できません",
+	"BATTLE_COMMANDDIALOG_DONTTD_SHORTAGE_CRITICAL_STAR": "宝具の使用に必要なクリティカルスター数を\n所持していないため宝具を使用できません",
     "BATTLE_COMMANDDIALOG_DONTACT": "行動不能のため\n宝具を使用できません",
     "BATTLE_COMMANDDIALOG_DONTACTTYPE": "宝具は使用できません",
     "BATTLE_COMMANDDIALOG_DONTUSE": "宝具は使用できません",
@@ -3170,6 +3182,7 @@
     "EVENT_POINT_ITEM_REQUIRED_POINT80283" : "[ffe051]{0:N0}[-] 枚達成で獲得",
     "EVENT_POINT_ITEM_REQUIRED_POINT80305" : "[ffe051]{0:N0}[-] ポイント達成で獲得",
     "EVENT_POINT_ITEM_REQUIRED_POINT80313" : "[ffe051]{0:N0}[-] ポイント達成で獲得",
+	"EVENT_POINT_ITEM_REQUIRED_POINT80319" : "[ffe051]{0:N0}[-] ポイント達成で獲得",
 
     "EVENT_REWARD_CHANGE_INFO" : "報酬の種類を選択してください",
 
@@ -3497,6 +3510,12 @@
 	"EVENT_REWARD_ASSIST_SKILL_LV" : "Lv.[FFFF00]{0}[-]",
 	"EVENT_REWARD_ASSIST_SKILL_RESULT" : "『{0}』\nを強化しました。\n",
 
+	// イベントコマンドバフポイント
+	"EVENT_COMMAND_BUFF_POINT_COUNT_STOP" : "----",
+
+	// イベント共通のポイントフォーマット
+	"EVENT_POINT_COMMON_FORMAT" : "{0:#,0}",
+
 	// サーバー証明書エラー時に表示する文言
 	"SERVER_CERTIFICATE_ERROR_TITLE" : "アプリバージョンエラー",
 	"SERVER_CERTIFICATE_ERROR_IOS" : "アプリが更新されましたのでストアから\nダウンロードの上、再接続をお願いします。\n\nストアのアップデートタブで情報を更新し、\nアップデートボタン（更新）が表示されない場合、\n時間をおいて再度お試しください。\niOSの更新についてはこちら",
@@ -3603,4 +3622,8 @@
 	"SERVANT_STATUS_EXPLANATION_PORTRAIT_LIMIT_COUNT_SEALED_MSG" : "\n[00FFFF]※『霊基解放クエスト 蘆屋道満』を\nクリアすることで第3段階のステータスアイコンの封印が解放されます。[-]",
 	"SERVANT_STATUS_BATTLE_EXPLANATION_LIMIT_COUNT_SEALED_MSG" : "\n[00FFFF]※『霊基解放クエスト 蘆屋道満』を\nクリアすることで第3段階のバトルキャラの封印が解放されます。[-]",
 	"LIMIT_COUNT_SELECT_SEALED" : "封印中",
+
+	// センター効果詳細ダイアログ
+	"CENTER_EFFECT_DETAIL_DIALOG_TITLE" : "センター効果詳細",
+	"CENTER_EFFECT_DETAIL_DIALOG_MESSAGE" : "\nこのバトルにはライブバトルがあります。\nライブバトルではフィールドの中央\n(スターティングメンバ―〔2nd〕の位置)\nにいるサーヴァントにセンター効果が発動します。",
 }
