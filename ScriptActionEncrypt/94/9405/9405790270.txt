@@ -1,0 +1,404 @@
+
+
+＄94-05-79-02-7-0
+
+
+[bgmStop BGM_MAP_72 0.3]
+[wt 0.3]
+
+[enableFullScreen]
+
+[charaSet A 7016300 1 タマモキャット]
+[charaSet B 4013400 1 メイヴ]
+[charaSet C 25008000 1 Ｘ・オルタ]
+[charaSet D 1098230200 1 ファンＡ]
+[charaSet E 1098230200 1 ファンＢ]
+
+[charaSet O 4031000 1 エフェクト用]
+
+[sceneSet F 106800 1]
+[sceneSet G 113100 1]
+
+[charaScale F 1.15]
+[charaScale G 1.15]
+[charaScale O 1.15]
+
+[scene 112700]
+[se ad6]
+[seVolume ad6 0 0]
+[wt 0.1]
+
+[seVolume ad6 1.5 1.0]
+[fadein black 1.5]
+[wait fade]
+
+＠観客
+ワァァァァーーーーッ！[seStop ad6 3.0]
+[k]
+
+[charaTalk depthOff]
+[charaDepth O 1]
+[charaDepth C 7]
+[charaDepth A 8]
+[charaDepth B 9]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFace A 0]
+[charaFadeinFSR B 0.1 2]
+[charaFadeinFSL A 0.1 0]
+
+[bgm BGM_EVENT_65 0.1]
+
+＠メイヴ
+そうよ、その声！[r]もっと捧げなさい！　愛してあげる！
+[k]
+
+＠タマモキャット
+思い切りダイブしてこそ浮かぶ瀬もあれ恋心。[r]募る想いはシャウトせよ！　愛してますと！
+[k]
+
+＠観客
+[charaTalk O]
+愛[messageShake 0.05 4 3 0.3]してます！[wt 0.5]　愛[messageShake 0.05 4 3 0.3]してます！[wt 0.5]　愛[messageShake 0.05 4 3 0.3]してます！
+[k]
+
+[bgmStop BGM_EVENT_65 1.0]
+
+[charaFace B 14]
+＠メイヴ
+ＯＫ！[r]なら、私からも応えてあげる！
+[k]
+
+[messageOff]
+[wt 0.2]
+
+[bgm BGM_BATTLE_160 0.1]
+
+[wipeout rectangleStripUpToDown 0.4 0.5]
+[wait wipe]
+
+[scene 10000]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaDepth O 9]
+[charaDepth F 3]
+[charaDepth G 4]
+
+[wipein rectangleStripUpToDown 0.1 0.5]
+[wait wipe]
+
+[se ad889]
+[seStop ad889 3.0]
+
+[fadeout white 1.7]
+[wait fade]
+
+[charaPut O 1]
+[charaEffect O bit_talk_diremond_dust]
+
+[charaFadein F 0.1 80,-200]
+[charaMove F -80,-200 5.0]
+
+[fadein white 2.4]
+[wait fade]
+
+[charaFadein G 1.5 -80,-200]
+[charaMove G 80,-200 5.0]
+
+[wt 2.4]
+[charaFadeout F 0.7]
+
+[fadeout white 2.2]
+[wait fade]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[scene 112700]
+
+[cameraMove 0.1 0,-30 1.15]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+[cameraMove 2.0 0,0 1.0]
+
+[fadein white 1.5]
+[wait fade]
+[wt 0.4]
+
+[charaFace B 1]
+＠メイヴ
+[speed 10]♪見上げたアイツの 無愛想な横顔[r][speed 10]♪気に入らない 空っぽの右手
+[k]
+
+[messageOff]
+[charaMove B 50,0 0.4]
+[charaFadeout B 0.4]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.4 -50,0]
+[charaMove A 0,0 0.4]
+[wt 0.4]
+＠タマモキャット
+[speed 10]♪ワタシの血の色 トキメク恋模様[r][speed 10]♪奪い取りたい その左手を
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_BATTLE_160 0.4 0.4]
+[cueSe SE_21 21_ade586]
+[wt 1.9]
+
+[charaFace B 10]
+＠メイヴ＆タマモキャット
+！[messageShake 0.04 3 2 0.3]？
+[k]
+
+
+[messageOff]
+[wt 0.1]
+
+[bgm BGM_BATTLE_160 0.4 1.0]
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.4 1]
+[wt 0.4]
+＠Ｘ・オルタ
+[speed 10]♪他の男の横にいても アイツを欲しがる鼓動[r][speed 10]♪躾が足りない きっと遠くのままじゃ 物足りない
+[k]
+
+[se ad889]
+[seVolume ad889 0 0.1]
+
+＠観客
+[charaTalk O]
+オ[seVolume ad889 0.2 1.0]オオオオーーーッ！？[wt 0.5][seStop ad889 3.0]
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[bgm BGM_BATTLE_160 0.5 0.4]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[charaPut O 2000,2500]
+
+[scene 112710]
+[wt 0.5]
+
+[bgm BGM_BATTLE_160 0.5 1.0]
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFace E 2]
+[charaFadeinFSR D 0.1 2]
+[charaFadeinFSL E 0.1 0]
+＠ファンＡ
+なんだあれは！？[r]ムゲジョの舞台に３人目のアイドルが立っているぞ！
+[k]
+
+＠ファンＢ
+あの立ち姿を見ろ！[r]まるで女王に立ち向かう気高き反逆者のようだ！
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_BATTLE_160 0.5 0.4]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+
+[scene 112700]
+[charaPut O 1]
+
+[charaTalk A]
+[charaFace B 12]
+[charaFace A 2]
+[charaFadeinFSR B 0.1 2]
+[charaFadeinFSL A 0.1 0]
+[wt 0.5]
+
+[bgm BGM_BATTLE_160 0.5 1.0]
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠タマモキャット
+なななんと！　なんと何者！？
+[k]
+
+＠メイヴ
+♪アイツのくせに……フフッ、なんなの？[r]ここに立てるのは、この世でふたりだけの筈だけど。
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Ｘ・オルタ
+挑戦者です。[r]あなたにゾッコンＬＯＶＥの[line 3]
+[k]
+
+[charaFace C 1]
+＠Ｘ・オルタ
+アイドル。[r]新人アイドル、えっちゃんです。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+[wt 1.2]
+[charaFace B 1]
+
+＠メイヴ
+みんな、聞いた？[r]挑戦者が現れたわ！　私の玉座を狙って！
+[k]
+
+＠観客
+[charaTalk O]
+ク[messageShake 0.05 4 3 0.3]ィーンはメイヴ！[wt 0.6]　メ[messageShake 0.05 4 3 0.3]イヴはクィーン！
+[k]
+
+[se ad6]
+[seVolume ad6 0 0]
+[charaFace B 14]
+＠メイヴ
+そうよ、私は女王。すべてを愛する女。[r]だからこの挑戦も……抱きとめてあげる！
+[k]
+
+[seVolume ad6 0.2 1.0]
+＠観客
+[charaTalk O]
+オオオーーーーッ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[seStop ad6 0.6]
+
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0.1 1]
+＠Ｘ・オルタ
+玉座は要りません。[r]私が求めるのは、グレイルライブの参加権です。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFace A 0]
+[charaFadeinFSR B 0.1 2]
+[charaFadeinFSL A 0.1 0]
+＠メイヴ
+同じことよ！　ねぇ、キャット？
+[k]
+
+[charaFace A 1]
+＠タマモキャット
+うむ、勝者はすべてを得る故な。[r]厳しきアイドルサバンナの掟なり。ワオーン！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠Ｘ・オルタ
+ならば、その通りといたしましょう。[wt 1.2][charaFace C 2][r]偉大なるアイドル・[#∞ＱＵＥＥＮ:インフィニット・クィーン]！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠メイヴ
+いいわね。好きよ、その野心。[r]来なさい！　『愛しき私の敵対者』！
+[k]
+
+
+
+
+
+[messageOff]
+[se ad889]
+[seVolume ad889 0 0]
+[wt 0.1]
+[seVolume ad889 0.2 1.0]
+[wt 0.5]
+[fadeout white 1.5]
+[wt 0.5]
+[seStop ad889 1.5]
+[wait fade]
+[wt 1.0]
+
+[charaPut O 2000,2500]
+[charaEffectStop O bit_talk_diremond_dust]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[scene 10000]
+
+[fadein white 1.0]
+[wait fade]
+
+[fadeout black 0.1]
+[wait fade]
+
+[input selectBranch]
+
+[seStop ad6 0.4]
+[seStop ad889 0.4]
+
+[bgmStop BGM_EVENT_65 0.4]
+
+[effectDestroy]
+
+[label selectBranch]
+
+[wt 0.5]
+
+[branchMaterial lblMaterial]
+
+[bgm BGM_BATTLE_160 0.1]
+
+[branch lblBranchMaterialEnd]
+
+[label lblMaterial]
+
+[bgmStop BGM_BATTLE_160 0.5]
+[wt 0.5]
+
+[label lblBranchMaterialEnd]
+
+[end]
+

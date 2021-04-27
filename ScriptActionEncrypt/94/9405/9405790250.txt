@@ -1,0 +1,313 @@
+
+
+
+＄94-05-79-02-5-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 1098230100 1 ファンＡ]
+[charaSet B 1098230200 1 ファンＢ]
+[charaSet C 98001000 1 マシュ]
+[charaSet D 5046001 1 ミス・クレーン]
+[charaSet E 1098230000 1 Ｘ・オルタ]
+[charaSet F 98115900 1 護衛スタッフＡ]
+[charaSet G 98109900 1 護衛スタッフＢ]
+
+
+
+[scene 113100]
+
+[se ad3]
+[seVolume ad3 0 0]
+[wt 0.1]
+
+[seVolume ad3 1.5 1.0]
+[fadein black 1.5]
+[wait fade]
+[wt 1.0]
+
+
+[seStop ad3 1.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_65 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFace B 0]
+[charaFadeinFSR A 0.1 2]
+[charaFadeinFSL B 0.1 0]
+＠ファンＡ
+今日のムゲジョライブは[r]いつも以上に何か起こるって気がするな！
+[k]
+
+＠ファンＢ
+ああ。きっと、アレの件……[r]グレイルライブ参加を表明するって噂だもんな。
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+＠マシュ
+開演前からすごい熱気ですね……。[r]ファンの皆さんの期待が感じられます。
+[k]
+
+[charaFace C 0]
+
+＠マシュ
+メディアのクルーも、[#忙:せわ]しなく行き来しています。[r]それだけ注目されているということですね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠ミス・クレーン
+それは、私たちにとっても絶好のチャンスです。[r]勝利の目撃者は、多いに越したことはありません。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.4]
+
+？1：えっちゃん、心の準備は良い？
+？！
+
+
+[charaFace E 5]
+＠Ｘ・オルタ
+……はい。私の相棒・邪聖弦るみのかりばーも[r]かき鳴らされる瞬間を待ち望んでいます。
+[k]
+
+＠Ｘ・オルタ
+あとは、ステージに乱入し、決闘を申し込むのみ！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaMoveReturn E 0,-10 0.3]
+[wt 0.1]
+[se adm43]
+[wt 1.9]
+
+[charaFace E 2]
+＠Ｘ・オルタ
+私の音。私の歌。[r]それでムゲジョのハートを、刺し貫きます。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+[charaShake D 0.03 4 4 0.3]
+＠ミス・クレーン
+はうっ、凛々しさがカワイイ……！[r]とっても希望を感じます。
+[k]
+
+？1：それじゃあ、開演だ！
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth E 6]
+[charaDepth C 5]
+[charaDepth D 4]
+
+[charaFace C 7]
+[charaFace D 1]
+[charaFace E 2]
+[charaFadein C 0.1 300,0]
+[charaFadein D 0.1 -350,0]
+[charaFadein E 0.1 1]
+＠一同
+はいっ！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_65 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+
+[scene 113200]
+[wt 2.0]
+
+[se adm36]
+[wt 0.1]
+[se ad311]
+[wt 0.15]
+[se ade74]
+
+[fadein black 1.5]
+[wait fade]
+
+[seStop adm36 0.1]
+[seStop ad311 0.4]
+[seStop ade74 0.4]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠マシュ
+ミス・クレーンの幻術で、ここまでは[r]無事に入り込むことができましたね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠ミス・クレーン
+問題はここからです。[r][#強面:こわもて]の方が、あちこち見張っておられます。
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadeinFSR F 0.1 256,-50]
+[charaFadeinFSL G 0.1 -256,-50]
+
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 1.2]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+
+[charaTalk on]
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+
+[pictureFrame]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+＠ミス・クレーン
+ほら、さっそくお出ましですよ。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[se ad95]
+[wt 0.1]
+[se ade421]
+[wt 0.3]
+[charaTalk off]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadeinFSR F 0.4 2]
+[charaFadeinFSL G 0.4 0]
+[wt 0.4]
+[seStop ad95 0.2]
+[seStop ade421 0.2]
+[wt 0.6]
+
+[charaTalk on]
+＠護衛スタッフＡ
+お前たち、何をしている？[bgm BGM_EVENT_81 0.1][r]いや……[#訊:たず]ねるまでもないか。
+[k]
+
+＠護衛スタッフＢ
+ああ、この手合いは久しぶりだ。[r]メイヴ様への挑戦者だな。
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠Ｘ・オルタ
+話が早くて助かります。[r]さすが、手慣れたものですね。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFace G 0]
+[charaFadeinFSR F 0.1 2]
+[charaFadeinFSL G 0.1 0]
+＠護衛スタッフＡ
+我らが愛しき女王は、争いをも[#嗜:たしな]まれるのだ。[r]一応、確認しよう[line 3]通行証は？
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 1.0]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.2]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[wt 0.4]
+
+
+[charaMoveReturn E 0,-10 0.3]
+[wt 0.1]
+[se adm43]
+[wt 1.9]
+
+[bgm BGM_EVENT_3 0.1]
+
+[charaFace E 2]
+＠Ｘ・オルタ
+この音が、私たちの通行証です！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

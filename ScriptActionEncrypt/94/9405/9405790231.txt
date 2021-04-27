@@ -1,0 +1,774 @@
+
+
+
+＄94-05-79-02-3-1
+
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098230000 1 Ｘ・オルタ]
+[charaSet B 98001000 1 マシュ]
+[charaSet C 5046001 1 ミス・クレーン]
+[charaSet D 1098230100 1 ファンＡ]
+[charaSet E 1098230300 1 ファンＢ]
+[charaSet F 1098230200 1 ファンＣ]
+[charaSet G 7016300 1 タマモキャット]
+[charaSet H 4013400 1 メイヴ]
+
+
+[charaSet O 4031000 1 エフェクト用]
+
+[scene 112400]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Ｘ・オルタ
+ふぅ……。レッスン、バトル、レッスン、バトル、[r]バトルレッスンレッスンバトル。
+[k]
+
+＠Ｘ・オルタ
+これまでにないハードスケジュールです。
+[k]
+
+？1：えっちゃん、疲れた[&かい:]？
+？！
+
+[charaFace A 1]
+＠Ｘ・オルタ
+いえ、さほどのことは。この霊衣を着ていると[r]無限にパフォーマンスを続けられる気がします。
+[k]
+
+[charaFace A 18]
+＠Ｘ・オルタ
+私のオルトリアクターもきゅんきゅんと[r]大回転しっ放しです。あんりみてっどぅ……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad6]
+[seVolume ad6 0 0]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ミス・クレーン
+フフッ、えっちゃんは褒め上手ですね。[r]さぁ、休憩にしましょう。美味しいお菓子を[line 3]
+[k]
+
+[bgmStop BGM_EVENT_2 1.0]
+[seVolume ad6 0.3 0.2]
+
+＠人々の歓声
+[charaTalk O]
+わああああああっ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+な、なんの騒ぎでしょう？
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[pictureFrame cut063_cinema]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[seVolume ad6 0.5 1.0]
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.5]
+
+[charaTalk depthOff]
+[charaDepth D 6]
+[charaDepth E 5]
+[charaDepth F 4]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFace E 1]
+[charaFace F 2]
+[charaFadeinFSR D 0.1 256,-50]
+[charaFadein E 0.1 0,-50]
+[charaFadeinFSL F 0.1 -256,-50]
+
+[seStop ad6 2.0]
+
+＠ファンＡ
+うわああっ！　ムゲジョだ！[r]ムゲジョのふたりがいるぞーーーっ！
+[k]
+
+＠ファンＢ
+見て！　メイヴよ！[r]今、私を視線で抱きしめてくれたわ！
+[k]
+
+＠ファンＣ
+キャットーーーーッ！[r]俺を甘噛みしてくれーーーーっ！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.2]
+
+[charaTalk depthOn]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 0,-50]
+[wt 0.8]
+
+[bgm BGM_MAP_72 0.1 0.8]
+
+＠タマモキャット
+ファンよ散るがいい！　後で存分に愛でてやるぞ！[r]今から我らは御用事なのだ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaTalk D]
+[charaFace D 1]
+[charaFace E 1]
+[charaFace F 1]
+[charaFadeinFSR D 0.1 256,-50]
+[charaFadein E 0.1 0,-50]
+[charaFadeinFSL F 0.1 -256,-50]
+＠ファンＡ
+は、はいっ！[wt 0.5][charaFace D 2][r]みんな、ムゲジョのお言葉だ！　控えるぞ！
+[k]
+
+[charaTalk off]
+[charaFace F 2]
+＠ファン一同
+応ッ！　解散ッ！
+[k]
+
+[messageOff]
+[se ade210]
+[charaMoveFSR D 356,-50 0.4]
+[charaMoveFSL F -356,-50 0.4]
+[charaFadeout D 0.4]
+[charaFadeout E 0.4]
+[charaFadeout F 0.4]
+[wt 0.4]
+[seStop ade210 1.0]
+[wt 0.6]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[bgm BGM_MAP_72 1.0 0.4]
+[wait wipe]
+
+[pictureFrame]
+[wt 0.7]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[wt 0.2]
+
+[bgm BGM_MAP_72 1.0 0.8]
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠マシュ
+とても盛り上がっている様子ですが、[r]『ムゲジョ』とはなんでしょう？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠Ｘ・オルタ
+アイドルユニット・[#∞ＱＵＥＥＮ:インフィニット・クィーン]。[r]意味は『無限の女王』……故に愛称は『ムゲジョ』。
+[k]
+
+＠Ｘ・オルタ
+実力、ファン数、売り上げ、その全てがエリアトップ。[r]押しも押されもせぬ、強アイドルの一角です。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ミス・クレーン
+お詳しいのですね、えっちゃん。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠Ｘ・オルタ
+……ええ、まあ。[r]肝心の構成メンバーは[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ade198]
+[wt 0.8]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 -80,0]
+[charaMove G 0,0 0.6]
+[wt 0.4]
+[seStop ade198 0.4]
+[wt 0.6]
+
+＠タマモキャット
+むにゃっ！　レーダーに感あり！[r]見つめるキャットアイはキャッチ・ザ・レインボウ。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad173]
+[wt 0.8]
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.4]
+[seStop ad173 0.5]
+[wt 0.4]
+
+＠メイヴ
+こっちにいるのね？[wt 0.5][charaFace H 10][r]……あら、マスター。それにマシュ。
+[k]
+
+[charaFace H 0]
+＠メイヴ
+そちらも元気なようで何よりね。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠タマモキャット
+ある晴れた昼下がり、市場へとは続かない公園にて[r]ニャンとワンだふるな再会であろうかピョン！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+メイヴさんとキャットさんは、[r]この特異点でアイドルになっていたのですか……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 12]
+[charaFadein H 0.1 1]
+＠メイヴ
+美の女王たる私なら当然のことよ。[r]あなたたちも小さなプロダクションをやってるそうね。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+は、はい。[r]そんなことまでご存知なんですね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 14]
+[charaFadein H 0.1 1]
+＠メイヴ
+当然でしょ。このエリアを支配するトップアイドルは、[r]私たち[#∞ＱＵＥＥＮ:インフィニット・クィーン]ですもの。
+[k]
+
+＠メイヴ
+どんな出来事だって、私のアンテナは逃さないわ。
+[k]
+
+[se ad173]
+[charaMoveScale H 1.1 0.4]
+[charaMove H 0,15 0.4]
+[charaFace H 12]
+
+＠メイヴ
+ま、そんなことより。[r]報告にあったのは、『ソイツ』ね。[seStop ad173 0.5]
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[charaScale H 1.0]
+
+[wt 0.4]
+[cameraMove 0.6 0,30 1.1]
+[wt 1.0]
+[charaFaceFade A 16 0.2]
+[cameraMove 1.2 0,-15 1.1]
+[wt 1.8]
+[cameraMove 0.5 0,0 1.0]
+[wt 0.8]
+
+＠Ｘ・オルタ
+…………。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_MAP_72 2.0]
+
+[charaTalk H]
+[charaFace H 12]
+[charaFadein H 0.1 1]
+
+＠メイヴ
+ふう……ん。なるほどなるほど。[r]良いじゃない。合格よ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+
+＠Ｘ・オルタ
+えっ？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠メイヴ
+気に入ったわ、[#その衣装]。[r]それを作製したスタッフは誰？
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ミス・クレーン
+はーい、私です。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠メイヴ
+ＯＫ、今日からうちに入りなさい。[r]細かい条件についてはマネージャーと話しといて。
+[k]
+
+[charaFace H 12]
+
+[bgm BGM_EVENT_48 0.1]
+
+＠メイヴ
+最高の衣装は、最高のアイドルに着られるべきでしょ。[r]つまり、私たちのことよ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+＠タマモキャット
+カエサルの物はカエサルに、[r]カエルの物はカエルに返せば無事帰るという奴であるな。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+[wt 1.4]
+[charaFace C 7]
+[wt 0.4]
+
+＠ミス・クレーン
+『最高の衣装は、最高のアイドルに着られるべき』[r]……良い言葉ですね。私も全面的に同意します。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[charaShake A 0.05 0 3 0.2]
+[wt 0.8]
+
+[charaFaceFade A 4 0.3]
+[wt 1.4]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 12]
+[charaFadein H 0.1 1]
+＠メイヴ
+好きよ、話が早くて賢い人って。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠マシュ
+ミス・クレーン……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠Ｘ・オルタ
+…………。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_48 1.0]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠ミス・クレーン
+というわけですのでメイヴちゃん。[r]私の衣装は、えっちゃんのものです。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+＠メイヴ
+……は？
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠ミス・クレーン
+だって、『最高のアイドル』とは彼女のことですもの。[bgm BGM_EVENT_82 0.1]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠Ｘ・オルタ
+…[messageShake 0.05 4 3 0.4]………！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 10]
+[charaFadein H 0.1 1]
+[wt 1.2]
+[charaFaceFade H 5 0.1]
+[wt 0.1]
+
+＠メイヴ
+あなた、服のセンスは良いのにジョークの才はないのね。[r]つまらないし、笑えないわよ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠ミス・クレーン
+冗談に聞こえました？[r]うふふ、誤解させたならごめんなさい。
+[k]
+
+[charaFace C 8]
+＠ミス・クレーン
+では、はっきりと申し上げましょう。
+[k]
+
+[charaFace C 2]
+＠ミス・クレーン
+ノン・メルシィ！[r]アナタの勧誘は、お断り申し上げます。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 1]
+＠メイヴ
+ッ……！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠タマモキャット
+おお、申請するもフランス語にてリジェクト。[r]メイヴの反応これいかに？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+＠メイヴ
+……別にいいわ。[r]私に着られたがってる服は幾らでもあるもの。
+[k]
+
+[charaFace H 2]
+＠メイヴ
+せっかくのチャンスをフイにしたわね、デザイナー。[r]今度出るグレイルライブで着るつもりだったのに。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+＠マシュ
+グレイルライブ……！　メイヴさんたちは、[r]エントリーチケットをお持ちなのですか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠メイヴ
+私なのよ？　当然でしょ。そして優勝するの。[wt 1.0][charaFace H 13][r]さ、レッスンに戻るわよキャット。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠タマモキャット
+アイアイ相棒！
+[k]
+
+[messageOff]
+[wt 0.1]
+[se ad173]
+[se ade198]
+[seStop ad173 2.0]
+[seStop ade198 2.0]
+[charaMoveFSL G 50,0 0.4]
+[charaFadeout G 0.4]
+[bgmStop BGM_EVENT_82 1.5]
+[wt 2.0]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+＠Ｘ・オルタ
+……………………。[r]『当然』ですか……強い、ですね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+＠ミス・クレーン
+…………[wt 0.4][charaFace C 13][messageShake 0.04 3 3 0.4]ぷはっ！　あ、あ、あ～……[wt 0.6][charaFace C 3][r]生ムゲジョ、超カワ……心臓止まるかと思いました。
+[k]
+
+[charaFace C 2]
+＠ミス・クレーン
+あの至近距離！　[wt 0.6][charaFace C 8]思い出すだけでヤバッ……結婚かよ。[r]情緒やられるかと。よくぞ耐えましたね、私。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Ｘ・オルタ
+あの、ミス・クレーン。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠ミス・クレーン
+どうしました、えっちゃん。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠Ｘ・オルタ
+上手いお礼のフレーズが思いつかないのですが[line 3]。[r]メイヴさんのスカウトを断ってくれたことに感謝します。
+[k]
+
+[charaFace A 9]
+
+＠Ｘ・オルタ
+その……ありがとうございます。嬉しかったです。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 12]
+[charaFadein C 0.1 1]
+
+＠ミス・クレーン
+ッ[messageShake 0.04 3 2 0.5]～～～！！！
+[k]
+
+[charaFace C 3]
+＠ミス・クレーン
+んもう、可愛らしいっ！　当たり前のことですよ！[r]私の一途さを甘く見てはいけません！
+[k]
+
+[se ad775]
+[charaMove C 0,-10 0.4]
+[charaFace C 4]
+＠ミス・クレーン
+ちょっと失礼、ベンチに座ります。[r]はぁ、この幸福感……百年浸れる……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Ｘ・オルタ
+そのポジティブな反応はいつもながら嬉しいのですが、[r]さすがに百年待ってはいられません。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad7]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 0,-10]
+[charaMove C 1 0.4]
+
+＠ミス・クレーン
+はっ、そうでした！
+[k]
+
+[charaFace C 8]
+＠ミス・クレーン
+ムゲジョはグレイルライブのチケットを持っている……[r]この重大な情報を基に、作戦会議ですね！
+[k]
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
