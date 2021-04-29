@@ -1,0 +1,573 @@
+
+
+
+＄94-05-79-04-1-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5046001 1 ミス・クレーン]
+[charaSet B 4013400 1 メイヴ]
+[charaSet C 1098230000 1 Ｘ・オルタ]
+[charaSet D 98001000 1 マシュ]
+[charaSet E 7016300 1 タマモキャット]
+[charaSet F 7029000 1 織田信長]
+
+[charaSet T 4031000 1 エフェクト用]
+
+[scene 113300]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ミス・クレーン
+さて、２回戦まではスケジュールにやや余裕があります。[r]そこで、強化合宿をしようと思います。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠メイヴ
+いいんじゃない？[r]レッスンに集中できる環境って大事よ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 13]
+[charaFadein D 0.1 1]
+＠マシュ
+既に合宿所は手配してあります。[r]海の綺麗な温泉旅館ですよ。
+[k]
+
+？1：空中都市に、海？
+？！
+
+[charaFace D 1]
+＠マシュ
+はい。しかも、ビーチは常夏だとか。[r]特異点には不思議がいっぱいです。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠タマモキャット
+アイドルと夏のビーチは切っても切れぬ。[r]故に海があってもおかしくないのだな。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 19]
+[charaFadein C 0.1 1]
+＠Ｘ・オルタ
+夏……かき氷やアイスキャンディーの本領発揮ですね。[r]グッド。[#ＡＳＡＰ:光るような速さ]で行きましょう。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_77 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 106800]
+
+[charaPut T 0,0]
+[charaEffect T bit_talk_lens_flare_fs]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+＠一同
+[f large]夏だ！[se ade227]
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.4 1.0]
+[wait wipe]
+
+[charaPut T 2000,2500]
+[charaEffectStop T bit_talk_lens_flare_fs]
+
+[scene 109600]
+
+[wt 0.6]
+
+[wipein rightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.1]
+
+＠一同
+[f large]ビーチだ！[se ade227]
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.4 1.0]
+[wait wipe]
+
+[scene 115400]
+
+[se ad429]
+[seVolume ad429 0 0]
+[se ade24]
+[seVolume ade24 0 0]
+[wt 0.6]
+
+[seVolume ad429 0.4 0.8]
+[seVolume ade24 0.4 0.8]
+
+[wipein rightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.1]
+
+＠一同
+[f large]炎上だーっ！[se ade226]
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.5]
+[seStop ad429 1.5]
+[seStop ade24 1.5]
+[wait fade]
+
+[scene 10001]
+[wt 0.6]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[input selectBranch]
+
+[messageOff]
+[skip false]
+
+[bgmStop BGM_EVENT_77 0.4]
+[seStop ad429 0.4]
+[seStop ade24 0.4]
+
+[charaSet A 5046001 1 ミス・クレーン]
+[charaSet B 4013400 1 メイヴ]
+[charaSet C 1098230000 1 Ｘ・オルタ]
+[charaSet D 98001000 1 マシュ]
+[charaSet E 7016300 1 タマモキャット]
+[charaSet F 7029000 1 織田信長]
+
+[charaSet T 4031000 1 エフェクト用]
+
+[scene 10001]
+[wt 0.4]
+[soundStopAll]
+[maskin black 1]
+[wait mask]
+[wt 0.1]
+[label selectBranch]
+
+[skip false]
+
+[wt 0.6]
+
+[fowardEffect bit_guda_queststart]
+
+[wt 2.5]
+[scene 10000]
+
+[wt 4.0]
+
+[fadeout black 0.5]
+[wait fade]
+
+[scene 115400]
+[wt 1.0]
+
+[skip true]
+
+[se ad429]
+[seVolume ad429 0 0]
+[se ade24]
+[seVolume ade24 0 0]
+
+[wt 1.0]
+
+[seVolume ad429 1.5 0.8]
+[seVolume ade24 1.5 0.8]
+[fadein black 1.5]
+[wait fade]
+[wt 0.5]
+
+？1：燃えてるーっ！？
+？！
+
+[bgm BGM_EVENT_7 0.1]
+[seVolume ad429 1.0 0.2]
+[seVolume ade24 1.0 0.2]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+＠マシュ
+火事です！[r]凄まじい勢いで燃え盛っています！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠メイヴ
+ちょっとクレーン！　本当にここなの！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+＠ミス・クレーン
+お、おかしいですね。[r]公式サイトには、確かにこの場所だと[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[seStop ad429 2.0]
+[seStop ade24 2.0]
+
+[se ad60]
+[charaTalk F]
+[charaFace F 10]
+[charaFadein F 0.4 1]
+[wt 0.4]
+[seStop ad60 0.1]
+[wt 0.4]
+
+＠織田信長
+よくぞ来た！[r]果てしなく遠いアイドル坂を登る勇者たちよ！
+[k]
+
+[charaFace F 1]
+＠織田信長
+ここは、ノッブリゾート・織田信長の本能閣じゃ！[r]ゆったりたっぷりデストロイ、電話は[#４:ヨ][#６:ロ][#４:シ][#９:ク][#Ｅ:イー][#２:フ][#６:ロ]！
+[k]
+
+？1：火事なんだけど！？
+？！
+
+[charaFace F 0]
+＠織田信長
+いかにも！　せっかくのお客様じゃからな。[r]ロックに出迎えねば失礼というもの！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠メイヴ
+くっ、よりによって[r][#バーサーカー:バ　　　　カ]の旅館だったとはね……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+＠織田信長
+ちょっと？[r]今、バカって言わなんだか？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+＠タマモキャット
+ノッブファイヤーは是非もなし、[r]ノッブの心は火事模様、であるか。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠織田信長
+うむ！　わかっておるのう猫猫キャット！[r]貴様ロックの見込みありじゃな！
+[k]
+
+[charaFace F 12]
+＠織田信長
+とはいえマジ燃えだと当然焼け死ぬ。わしも死ぬ。[r]それも困るので、あくまでも演出に留めてある。
+[k]
+
+[charaFace F 1]
+＠織田信長
+だから安心して泊まってほしい。[r]さぁ、カルデアプロ御一行をおもてなしじゃ！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[scene 115500]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_28 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠メイヴ
+クラシックな和室スタイルの部屋。[r]何だ、ちゃんとしてるじゃないの。
+[k]
+
+＠メイヴ
+最初はアレかと思ったけど……[r]まあ、悪くないんじゃない？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ミス・クレーン
+オーナー曰く、滞在中のレッスン場として[r]宴会場を開放してくれるとのことですよ。
+[k]
+
+＠ミス・クレーン
+舞台つきの畳敷き大広間に、カラオケセット完備。[r]実に古式ゆかしい、オールドスクールな宴会場ですね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 19]
+[charaFadein C 0.1 1]
+＠Ｘ・オルタ
+テーブルには、ウェルカムご当地まんじゅうつき。[r]素晴らしい文化です。早速、食べましょう。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠メイヴ
+そんなのあとあと！[r]日が高い内に、ビーチに行くわよ！
+[k]
+
+[messageOff]
+[wipeout leftToRight 1.0 1.0]
+[bgm BGM_EVENT_28 1.0 0.4]
+[wait wipe]
+
+[charaFadeout B 0.1]
+
+[scene 109600]
+
+[charaSet D 1098199300 1 マシュ]
+[charaSet B 1034001 1 メイヴ]
+
+[se ad218]
+[seVolume ad218 0 0]
+[wt 1.0]
+
+[seVolume ad218 1.0 1.0]
+[bgm BGM_EVENT_28 1.0 1.0]
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 1.5]
+
+[seStop ad218 1.0]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+＠タマモキャット
+ドキドキビーチである！[r]熱い！　砂い！　これぞピーカン、サマーシーズン到来！
+[k]
+
+＠タマモキャット
+夏といえば、夜はオバケで肝試し！[r]ならば昼のうちに海を堪能せよ！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 1]
+[wt 0.4]
+＠マシュ
+夏真っ盛りですね。[r]まさか、海まで楽しめるとは思いもよりませんでした。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.4 1]
+[wt 0.4]
+＠メイヴ
+あら？　オルタは水着を着ないの？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠Ｘ・オルタ
+私、ＤＮＡレベルからのインドア勢につき。[r]夏の浜辺に相応しい服は持ってないのです。
+[k]
+
+[charaFace C 3]
+＠Ｘ・オルタ
+それに……合宿というからには[r]ずっとレッスンをするものかと思ってました。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠メイヴ
+ぐーたらそうに見えて、そういうとこ真面目よね。[r]ま、美点だとは思うけど。
+[k]
+
+＠メイヴ
+でも、アイドルは派手に遊ぶことも仕事のうちよ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+＠Ｘ・オルタ
+遊ぶことが、仕事……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠メイヴ
+そ。超一流たらんとするなら、[r]遊び楽しむ姿でファンを魅了してみなさいな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠ミス・クレーン
+メイヴちゃんらしい金言ですね。[r]まったくもって、全面的に同意いたします。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠Ｘ・オルタ
+……なるほど、理解しました。[r]では、私もそのアイドル哲学に沿って遊びましょう。
+[k]
+
+[charaFace C 5]
+＠Ｘ・オルタ
+ファンを魅了するほどの遊び方。[r]私の答えは……これです！
+[k]
+
+[messageOff]
+[se ad7]
+[charaMove C 100,0 0.4]
+[charaFadeout C 0.2]
+[wt 0.8]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFadein D 0.1 1]
+＠マシュ
+ああっ！　えっちゃんが超スピードでビーチパラソルを[r]展開し、氷あずき片手にくつろぎモードに！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0.1 1]
+＠Ｘ・オルタ
+あとはこの姿を自撮りして、ＳＮＳに自動投稿します。[r]……こんなところでいかがでしょうか。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+＠メイヴ
+……[wt 0.8][charaFace B 12]ま、いっか！
+[k]
+
+[charaFace B 1]
+＠メイヴ
+バカンスを楽しんでいるなら、[r]アイドルとしては充分よ！
+[k]
+
+
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_28 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
