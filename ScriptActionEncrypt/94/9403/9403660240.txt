@@ -1,0 +1,548 @@
+
+
+
+＄94-03-66-02-4-0
+
+[soundStopAll]
+
+[charaSet A 4032000 1 Reines]
+[charaSet B 5004000 1 Book]
+[charaSet C 5004002 1 "Nursery Rhyme"]
+
+[imageSet D back10000 1]
+[imageSet E cut107_paper 1]
+[charaScale D 1.01]
+[charaScale E 1.01]
+[charaDepth E 10]
+
+[charaSet J 98115000 1 Effect]
+
+[scene 73000]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Reines
+Oho, the library, hm. I see, I see.[sr]Not a bad eye you've got there.
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 -200,0]
+[charaMove A -256,0 0.5]
+[wt 0.6]
+
+＠Reines
+Hm hm.
+[k]
+
+[messageOff]
+[charaFadeout A 0.2]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 200,0]
+[charaMove A 256,0 0.5]
+[wt 0.6]
+
+
+＠Reines
+Oho.
+[k]
+
+[messageOff]
+[charaFadeout A 0.2]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.4]
+
+＠Reines
+Hmm.
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_48 1.0]
+[wt 1.0]
+
+[se ad155]
+[seStop ad54 0.25]
+[charaChange A 1098165100 0 fade 0.5]
+[wt 2.0]
+
+[charaChange A 4032000 0 fade 0.5]
+[wt 0.75]
+
+[wt 0.7]
+
+[bgm BGM_EVENT_94 0.1]
+
+？1：What just happened to your neck!?
+？2：Did you just turn your head all the way around!?
+
+？！
+
+[charaFace A 1]
+
+＠Reines
+Hm, how odd.
+[k]
+
+＠Reines
+I'm quite sure I could never do that before. Strangely, I felt like I could pull it off here, and I was right.
+[k]
+
+[charaFace A 0]
+[bgmStop BGM_EVENT_94 2.0]
+
+＠Reines
+And now I believe we've found our missing person.
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.4]
+
+[cameraMove 1.5 -75,0 1.2]
+[wt 1.8]
+
+？1：What, there?
+？2：All I see are books.
+
+？！
+
+[cameraHome 1.0]
+[wt 1.2]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Reines
+Exactly.[bgm BGM_EVENT_81 0.1][sr]Go on, try pulling out that third book from the right.
+[k]
+
+？1：Uh, okay...
+
+？！
+
+[messageOff]
+[charaFadeout A 0.1]
+[se ad77]
+[wt 0.9]
+
+[se ad7]
+
+[shake 0.05 2 3 0.5]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.2 1]
+[wt 0.3]
+
+＠Book
+Eek!
+[k]
+
+？1：Aah!
+
+？！
+
+＠Book
+Wh-what's the big idea!?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Reines
+I knew it! You were turned into a book![sr]No, wait. You actually ARE a book!
+[k]
+
+＠Reines
+You Servants really are fascinating, I must say.
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 1.2]
+
+[messageOff]
+
+[wipeout openEye 0.8 0.5]
+[bgm BGM_EVENT_81 1.0 0.5]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[scene 10000]
+
+[wipein openEye 0.1 0.5]
+[wait wipe]
+
+[wipeFilter openEye 0.2 0.7]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 10916]
+[effect bit_sepia01]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+＠Nursery Rhyme
+...Nursery...Rhyme...
+[k]
+
+[charaFace C 4]
+
+＠Nursery Rhyme
+No, wait.[sr]That's not my name, MY name is Alice.
+[k]
+
+
+[messageOff]
+[fadeout white 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[effectStop bit_sepia01]
+[wt 0.1]
+
+[scene 10000]
+[wipeOff]
+
+[fadein white 1.0]
+[wait fade]
+
+[effectStop bit_sepia01]
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+
+[scene 73000]
+[wt 1.5]
+
+[bgm BGM_EVENT_81 1.0 0.5]
+
+[wipein openEye 1.0 0.5]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Reines
+Are you all right? You were spacing out again.
+[k]
+
+？1：Uh, yes! I'm fine!
+？2：No problems here!
+
+？！
+
+＠Reines
+It looks like our new papery friend[sr]here is coming to her senses too.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_81 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Book
+I... I...
+[k]
+
+[messageOff]
+[charaSpecialEffect B flash]
+[se ad39]
+[wt 3.0]
+[fadeout white 1.0]
+[se ad606]
+[wait fade]
+[charaSpecialEffectStop B flash]
+[charaFadeout B 0.4]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+
+[fadein white 0.5]
+[wait fade]
+
+[wt 1.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Reines
+Oho, so you can assume a human form as well.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+
+＠Book?
+I can move... I can talk...[bgm BGM_EVENT_101 0.1]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Reines
+Just as I suspected.[sr]You forgot what you really were.
+[k]
+
+？1：What do you mean?
+
+？！
+
+[charaFace A 0]
+
+＠Reines
+Oh come now, it's obvious why[sr]she's been hiding all this time.
+[k]
+
+＠Reines
+None of those other three could remember who went[sr]missing, or even when they went missing, right?
+[k]
+
+[charaFace A 1]
+
+＠Reines
+So what if the same was true for the ones in hiding?
+[k]
+
+？1：Oh, yeah!
+？2：Right. If people forget who they are here...
+
+？！
+
+＠Reines
+It seems you've arrived at the answer for yourself. We were in much the same predicament with our own amnesia at first.
+[k]
+
+[charaFace A 0]
+
+＠Reines
+And given that we have a giant in the form of Bunyan here, it only stands to reason that these missing persons might have special abilities of their own.
+[k]
+
+＠Reines
+From there, we can deduce that they must have either gone missing somewhere other than the museum, or are otherwise wandering the museum aimlessly, waiting to be found.
+[k]
+
+＠Reines
+Of course, they could have been hidden in a secret room as well, but as Trimmau said, there were no such rooms to be found here.
+[k]
+
+＠Reines
+So I knew then that they were most likely invisible,[sr]or transformed into something else.
+[k]
+
+[charaFace A 1]
+
+＠Reines
+That's why I decided to try something[sr]that was sure to cause a bit of surprise.
+[k]
+
+[charaFace A 8]
+
+
+＠Reines
+I'm glad I didn't have to twist my head around more than once. It's not exactly the most becoming trick.
+[k]
+
+[charaFace A 0]
+
+＠Reines
+Now, can I ask your name?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Book?
+Me? I'm...Nursery Rhyme.[sr]A book of collected stories.
+[k]
+
+[messageOff]
+[wt 0.4]
+[charaFace C 4]
+[wt 0.8]
+
+＠Nursery Rhyme
+Um... Do you think Bunyan and Kintoki will remember me?
+[k]
+
+＠Nursery Rhyme
+I saw Jack and Kintoki looking for me,[sr]but I still couldn't remember them...
+[k]
+
+？1：Don't worry. It'll be fine.
+？2：Jack and Kintoki were turning this place upside down looking for you.
+
+？！
+
+[charaFace C 1]
+
+＠Nursery Rhyme
+...Great!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Reines
+Go on then, your friends should be waiting for you at the entrance. I'm sure you won't have any trouble making your way there.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Nursery Rhyme
+Okay! Thanks, nice lady!
+[k]
+
+[messageOff]
+[se ad59]
+[charaFadeout C 0.4]
+[bgmStop BGM_EVENT_101 1.5]
+[wt 0.4]
+[seStop ad59 0.5]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.4 1]
+[wt 0.7]
+
+＠Reines
+Well, that might have been a bit unusual as far as these things go, but at least it was a relatively easy first case to solve.
+[k]
+
+＠Reines
+Still, this sort of work isn't going to...[twt 0.8][charaFace A 6] Hm?
+[k]
+
+？1：What's up?
+？2：Is there something behind that wall?
+
+？！
+
+
+＠Reines
+There, on the shelf where that book Servant was...
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaEffect J bit_talk_blight_02]
+[wt 1.5]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_blight_02]
+
+[charaFadeTime D 0.3 0.5]
+[wt 0.4]
+[se ade96]
+[charaFadein E 0.7 0,-200]
+[wt 2.5]
+
+[charaFadeout E 0.3]
+[charaFadeout D 0.3]
+[wt 0.4]
+
+[bgm BGM_EVENT_90 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠Reines
+What...is this...
+[k]
+
+[charaFace A 0]
+
+＠Reines
+“Mnemosyne”...? Is this what “M” stands for?[sr]But, how is this[line 2]
+[k]
+
+
+[charaFace A 9]
+[charaShake A 0.05 1 2 0.2]
+
+＠Reines
+Ghh!
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_90 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

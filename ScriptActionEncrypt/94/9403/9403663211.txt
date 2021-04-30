@@ -1,0 +1,371 @@
+
+
+
+
+＄94-03-66-32-1-1
+
+
+
+
+[soundStopAll]
+
+[charaSet A 1098166200 1 Trimmau]
+[charaSet B 4032000 1 Reines]
+[charaSet C 5019001 1 "El-Melloi II"]
+[charaSet D 6015001 1 Kerry]
+[charaSet E 6039000 1 Gray]
+[charaSet F 9008000 1 Astraea]
+
+
+
+[scene 10000]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.5]
+[fowardEffect bit_talk_noise_gr]
+[se ad31]
+[wt 0.1]
+[fowardEffectStop bit_talk_noise_gr]
+[seStop ad31]
+[wt 0.3]
+
+[fowardEffect bit_talk_noise_gr]
+[se ad31]
+[wt 0.2]
+[fowardEffectStop bit_talk_noise_gr]
+[seStop ad31]
+[wt 0.2]
+
+[fowardEffect bit_talk_noise_gr]
+[se ad31]
+[wt 0.5]
+
+[fadeout black 0.5]
+[wait fade]
+
+[fowardEffectStop bit_talk_noise_gr]
+
+[scene 10922]
+[wt 0.1]
+
+[fadein black 1.0]
+[seStop ad31 1.0]
+[wait fade]
+
+[wt 0.5]
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Trimmau
+I've collected the scraps.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Reines
+Were those...homunculi connected to the Holy Grail?[sr]A recreation of the alternative Fourth Holy Grail War?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠El-Melloi II
+Illyasviel von Einzbern...
+[k]
+
+？1：You know her?
+
+？2：That last girl seemed different from the others somehow.
+
+？！
+
+[charaFace C 0]
+
+＠El-Melloi II
+I'm aware of the name from relevant documentation about the event, not from meeting her personally.
+[k]
+
+＠El-Melloi II
+The Einzberns are one of the three magecraft families involved in the Fuyuki Holy Grail War.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Reines
+My brother's been investigating Fuyuki's Holy Grail War for a long time now. This recreation was too close for comfort, really.
+[k]
+
+[charaFace B 6]
+
+＠Reines
+You know, you seemed to be lost in thought for a while there. Were you involved with Fuyuki back then or something?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Kerry
+...
+[k]
+
+＠Kerry
+I'm sorry, I don't know anything about that.
+[k]
+
+[messageOff]
+[charaEffect D bit_talk_quickmove]
+[charaSpecialEffect D erasureReverse 1 0.3]
+[se ad73]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠Reines
+Hey, he ran away!
+[k]
+
+[charaFace B 0]
+
+＠Reines
+I can't shake the feeling that he was called to this Singularity for a reason.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Gray
+...Me neither.
+[k]
+
+＠Gray
+The memories in these scraps are so strange. I shouldn't know anything about them, but they still feel oddly familiar.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaChange B 1098164900 0 fade 0.1]
+[wait charaChange B]
+
+＠Reines
+You fought in the Fourth Holy Grail War when you were young, right, brother? How do you feel about this?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+
+
+[branchQuestClear fgozero 94003118]
+[branch another]
+[label another]
+
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠El-Melloi II
+...No, this is a different world. It may closely resemble the one I'm from, or even my vision of an ideal world, but it just isn't the same.
+[k]
+
+＠El-Melloi II
+[charaFace C 1]Still, that's all the more reason why I'm[sr]glad I managed to get a glimpse of it here.
+[k]
+
+[branch user_join]
+
+[branch lblNotClear isClear false]
+[label fgozero]
+
+
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠El-Melloi II
+...To be honest, I took part in that alternate world, too. Or at least a world very close to it, I should say.
+[k]
+
+＠El-Melloi II
+I expect you know what I'm talking about quite well,[sr]Master. Ah, I'm glad I got to see this.
+[k]
+
+[branch user_join]
+
+
+[label user_join]
+
+？1：Isn't it hard for you?
+
+[charaFace C 0]
+
+＠El-Melloi II
+Hmm. I suppose I would be lying[sr]if I said it was perfectly easy.
+[k]
+
+
+？2：Do you ever think about what it'd be like if your world was like that?
+
+[charaFace C 0]
+
+＠El-Melloi II
+Don't be ridiculous. Of course I do.
+[k]
+
+？！
+
+
+＠El-Melloi II
+But regardless, it just goes to show that[sr]my actions can end up changing the world.
+[k]
+
+[charaFace C 1]
+
+＠El-Melloi II
+Win or lose, that's who I am. I'm fortunate[sr]to have had a chance to learn that.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠Astraea
+If I were you, I'd try learning to lighten up.[sr]Now come on, let's get to the next one![charaFace F 0]
+[k]
+
+[messageOff]
+[se ad60]
+[wt 0.1]
+[se ad95]
+[wipeout rightToLeft 1.0 1.0]
+[bgmStop BGM_EVENT_70 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[scene 10000]
+[wt 0.6]
+
+[seStop ad95 1.0]
+[seStop ad60 1.0]
+[wt 1.0]
+
+[wipein rightToLeft 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[wipeFilter cinema 0.5 0]
+
+[scene 10922]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_95 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+
+＠Kerry
+...Good, they're gone.
+[k]
+
+[charaFace D 4]
+
+＠Kerry
+I don't remember anything. There's no possible way I could. I didn't even have a connection to any of you.
+[k]
+
+[charaFace D 0]
+
+＠Kerry
+But, I think I can at least get away with this much.[sr]You're strangers to me. You don't know me, and you don't need to.
+[k]
+
+＠Kerry
+Flowers would suit you much better.
+[k]
+
+[messageOff]
+
+[charaMove D 0,-60 0.4]
+[wt 0.3]
+[se ad27]
+[seVolume ad27 0 0.5]
+[wt 0.6]
+[charaMove D 0,-50 0.4]
+
+[wt 2.0]
+
+[charaFadeout D 0.4]
+[wt 2.0]
+
+
+
+
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.4 -350,-50]
+[wt 0.4]
+
+＠Astraea
+...Ugh, I swear.
+[k]
+
+[charaFace F 0]
+
+＠Astraea
+I'm your client. You could have at least told me.[sr]I've never met such a stubborn Assassin.
+[k]
+
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_95 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

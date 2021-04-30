@@ -1,0 +1,230 @@
+
+
+
+＄94-03-66-07-4-0
+
+[soundStopAll]
+
+[charaSet A 4032000 1 Reines]
+[charaSet B 6039000 1 Gray]
+[charaSet C 1098166200 1 Trimmau]
+[charaSet D 98104300 1 Ghost]
+[charaSet E 98104300 1 Ghost]
+[charaSet F 1098165900 1 "Steam Ghost"]
+[charaSet G 98115000 1 Effect]
+
+[sceneSet I 74600 1]
+[charaScale I 1.4]
+
+[scene 74600]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[charaFadein I 0.1 145,-270]
+
+[se ade287]
+[seVolume ade287 0 0.1]
+[se ad229]
+[seVolume ad229 0 0.1]
+
+[fadein black 0.5]
+[seVolume ade287 1.0 0.3]
+[seVolume ad229 1.0 0.8]
+[wait fade]
+
+[wt 0.5]
+[wt 1.0]
+
+[se ad22]
+[seVolume ad22 0 0.5]
+[seStop ad22 1.0]
+
+[wt 1.6]
+
+[se ad21]
+[seVolume ad21 0 0.5]
+[seStop ad21 1.0]
+
+[charaFadeout I 0.7]
+
+[wt 1.9]
+
+[seVolume ade287 0.5 0.07]
+[seVolume ad229 0.5 0.15]
+[wt 0.5]
+
+＠Reines
+...Are those ghosts being sucked[sr]into a giant steam engine?[bgm BGM_EVENT_72 0.1]
+[k]
+
+[messageOff]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.6]
+[se ade287]
+[seVolume ade287 0 0.1]
+[seVolume ade287 0.5 0.3]
+[wt 1.0]
+[se ad22]
+[seStop ad22 1.0]
+[charaSpecialEffect D erasure 1 1.2]
+[wt 1.0]
+[seStop ade287 0.5]
+[wt 1.0]
+
+[wipeout rectangleStripRightToLeft 0.3 1.0]
+[wait wipe]
+
+[scene 74000]
+
+[seStop ade287 0.5]
+[seStop ad229 0.5]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.3 1.0]
+[wait wipe]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠Gray
+It's not just that... Their magical energy[sr]is being transferred to the engine, too.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Reines
+Does that mean this steam engine[sr]runs on...dead spirits?
+[k]
+
+[charaFace A 2]
+
+＠Reines
+That's ridiculous! It's not even a steam engine at this point! Sir Babbage was right. This sort of thing shouldn't exist in the first place!
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad130]
+[charaTalk C]
+[charaFace C 0]
+[charaSpecialEffect C appearance 1 0.4]
+[wt 0.7]
+
+＠Trimmau
+Master, I have the measurements. There was a slip of the kind of paper we are looking for inside that engine.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Reines
+There is!?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Trimmau
+Was. I believe someone must have taken it.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Reines
+Someone took it!? Then...does that mean this engine used to run on the magical energy in that paper, and it's now sucking up the energy from ghosts to compensate for its loss...?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[messageOff]
+
+[bgmStop BGM_EVENT_72 1.0]
+[wt 0.5]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFace E 0]
+[charaFadein D 0.1 0]
+[charaFadein E 0.1 2]
+[se ade287]
+[seVolume ade287 0 0.1]
+[seVolume ade287 0.5 0.3]
+[wt 2.0]
+[se ad22]
+[seStop ad22 1.0]
+[charaSpecialEffect D erasure 1 1.2]
+[charaSpecialEffect E erasure 1 1.2]
+[charaEffect G bit_talk_celebro]
+[wt 2.5]
+[seStop ade287 0.5]
+[wt 0.3]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 0]
+[flashin once 0.5 0.5 FFFFFFAF FFFFFF00]
+[se ad68]
+[wt 0.3]
+[charaSpecialEffect F appearanceReverse 1 0.7]
+[wait charaSpecialEffect F]
+[wt 1.0]
+[bgm BGM_EVENT_80 0.1]
+
+[shake 0.02 5 5 0.8]
+[se ad21]
+[wt 1.5]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut G 1200,1200]
+[charaEffectStop G bit_talk_celebro]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Reines
+So these ghosts are being made to incorporate that steam to make up for the magical energy that's taken from them!?
+[k]
+
+[charaFace A 2]
+
+＠Reines
+Dammit! It looks like we need to deal with these steam ghosts before we can do anything else!
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

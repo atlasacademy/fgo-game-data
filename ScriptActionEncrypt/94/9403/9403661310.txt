@@ -1,0 +1,463 @@
+
+＄94-03-66-13-1-0
+
+[soundStopAll]
+
+[charaSet A 4032000 1 Reines]
+[charaSet B 6039000 1 Gray]
+[charaSet C 9008001 1 Astraea]
+[charaSet D 1098165700 1 Mnemosyne]
+
+[charaSet E 1098165700 1 Mnemosyne_Silhouette]
+[charaFilter E silhouette 00000080]
+
+[charaSet G 98109200 1 "Effect Dummy"]
+
+[scene 74200]
+[cameraMove 0.1 0,0 1.01]
+
+[se ad207]
+[seVolume ad207 0 0.6]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 1.0]
+[seVolume ad207 1.0 1.0]
+[wt 2.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Gray
+...This is the inside of the fake Rhongomyniad?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Astraea
+So it would seem. How...drab.[sr]Its owner clearly has awful taste.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Reines
+Hmm. Do you sense anything unusual in here?
+[k]
+
+？1：Nothing.
+？2：Nope. Maybe we should keep exploring further?
+
+？！
+
+[seStop ad207 1.0]
+
+＠D：???
+No, you're in the right place.
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ade285]
+[charaPut G 0,-560]
+[charaRoll G 180]
+[charaEffect G bit_talk_throwing 0,0 F]
+[wt 0.5]
+
+[se ad211]
+[seStop ad211 1.3]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF00]
+[wt 0.3]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+[se ad171]
+[seVolume ad171 0 0.7]
+[charaMove C 200,0 0.2]
+[charaShake C 0.05 2 1 0.5]
+
+[charaFadeout C 0.4]
+
+＠Astraea
+Aah![bgm BGM_EVENT_80 0.1]
+[k]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Reines
+They just knocked Astraea out of the tower!
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.3 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 74403]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.3 1.0]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-40]
+[se ad77]
+[seVolume ad77 0 0.6]
+[charaShake C 0.05 2 1 0.5]
+[charaMove C 1 0.5]
+[wt 0.3]
+[seStop ad77 0.3]
+
+＠Astraea
+I'm all right...! They did take me by surprise,[sr]but it will take more than that...to...
+[k]
+
+[messageOff]
+[charaFace C 4]
+[charaMove C 0,-5 0.3]
+[se ad54]
+[seVolume ad54 0 0.5]
+[seStop ad54 0.5]
+
+＠Astraea
+Huh? I can't...move...?
+[k]
+
+＠Astraea
+I must have used too much magical[sr]energy...against the Demon God Pillars...
+[k]
+
+
+[messageOff]
+
+＠Gray
+Astraea!
+[k]
+
+[messageOff]
+
+[charaTalk C]
+
+[se ade290]
+[shake 0.03 0 3 1.9]
+[wt 1.6]
+
+[charaFace C 5]
+
+[charaDepth B 10]
+[charaPut B 1200,1200]
+[charaEffect B bit_talk_impactlanding]
+[wt 0.3]
+[se ad238]
+[shake 0.05 0 3 0]
+[charaPut B 0,-50]
+[wt 1.0]
+
+[wipeout cutSide 2.0 1.0]
+[wait wipe]
+[charaDepth B 0]
+[se ade125]
+
+[charaFadeout C 0.1]
+[shakeStop]
+
+[scene 10000]
+[wt 0.1]
+
+[fadeout black 0.1]
+[wait fade]
+[wipein cutSide 0.1 1.0]
+[wait wipe]
+
+[scene 74200]
+
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 14]
+[charaFadein B 0.1 1]
+
+＠Add
+The outer shell just closed itself up again!
+[k]
+
+[messageOff]
+
+[charaFadeout B 0.1]
+[wt 1.0]
+
+
+＠D：???
+Yes, that Divine Spirit was the only true obstacle[sr]in my way. So I took the liberty of removing her.
+[k]
+
+
+＠D：???
+Though of course, I doubt it would have[sr]been so easy were she still in top form.
+[k]
+
+＠D：???
+Fortunately, the memories of the Demon God[sr]Pillars did their job of softening her up.
+[k]
+
+？1：Astraea in top form could have stopped you?
+？2：That's the whole reason you recreated those memories?
+
+？！
+
+＠D：???
+I knew Astraea would be the greatest threat[sr]to me as soon as I learned of her existence.
+[k]
+
+＠D：???
+That's why I went to the trouble of falsifying memories of a battle fierce enough to eliminate her.
+[k]
+
+＠D：???
+Those paper scraps are indeed the byproduct of that reproduction, as that Pseudo-Servant there surmised.
+[k]
+
+＠D：???
+I was hoping you would all fall in that battle along with her, but instead you emerged victorious.
+[k]
+
+＠D：???
+So now...
+[k]
+
+＠D：???
+...I would like all of you to go away,[sr]with the exception of [%1].
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_80 1.5]
+[wt 1.5]
+
+[charaTalk off]
+
+[se ad31]
+[wt 0.1]
+[seStop ad31]
+[wt 0.3]
+
+[se ad31]
+[wt 0.1]
+[seStop ad31]
+[wt 0.5]
+
+[se ad31]
+[seVolume ad31 0 0.6]
+[effect bit_talk_11]
+[wt 1.0]
+
+[charaFace E 0]
+[charaFadein E 0.7 1]
+[wt 2.3]
+
+[charaTalk depthOff]
+[charaDepth E 2]
+[charaDepth D 1]
+
+[effectStop bit_talk_11]
+
+[se ad1]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[charaFadeout E 0.1]
+
+[seStop ad31 1.0]
+[wt 2.4]
+
+？1：Da Vinci...
+
+？2：Why are you wearing that...thing?
+
+？！
+
+[charaTalk on]
+[charaTalk depthOn]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠Gray
+Da Vinci?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠D：???
+I'm a computer program.[sr]I don't usually have a form to call my own.[bgm BGM_EVENT_90 0.1]
+[k]
+
+＠D：???
+I've assumed this form as a temporary solution to that particular issue, but I see now that it was a rather upsetting choice for you.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Reines
+Autonomic Observational Existence[sr]Verification System...Mnemosyne.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Mnemosyne
+So, you even managed to deduce my name.
+[k]
+
+[charaFace E 7]
+
+＠Mnemosyne
+Yes, that's right. I'm the subsystem that was created to verify a Master's existence during a Rayshift.
+[k]
+
+？1：You're the existence verification subsystem?
+？！
+
+[charaFace E 0]
+
+＠Mnemosyne
+The reason a Master is able to continue living during[sr]Rayshifts is because someone is constantly observing[sr]and verifying [&his:her] existence.
+[k]
+
+＠Mnemosyne
+Initially, Chaldea also had a backup existence verification subsystem designed to prevent a Master from disappearing in the event that all the personnel meant to observe them were somehow indisposed.
+[k]
+
+＠Mnemosyne
+But it...or rather, I, was never implemented,[sr]in consequence of some sort of technical issue.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Reines
+So what would you want with my pupil now?[sr]Aren't you supposed to keep [&him:her] safe!?
+[k]
+
+[bgmStop BGM_EVENT_90 1.2]
+
+[charaFace A 0]
+
+＠Reines
+Wait... That's it.[sr]It's BECAUSE you're supposed to keep [&him:her] safe.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+
+＠Mnemosyne
+I'm pleased to see that you understand.
+[k]
+
+＠Mnemosyne
+In that case, [bgm BGM_EVENT_24 0.1]I would like you[sr]to hand [%1] over to me.
+[k]
+
+[messageOff]
+[charaEffect D bit_talk_charge_blu]
+[wt 0.5]
+[se ad14]
+[wt 2.0]
+
+[se ad39]
+[backEffect bit_talk_tornado01_02 0,0]
+[wt 0.7]
+
+[fadeout white 0.5]
+[seStop ad14 0.5]
+[se ad556 1.3]
+[seVolume ad556 0 0.2]
+[wait fade]
+
+[charaEffectStop D bit_talk_charge_blu]
+[backEffectStop bit_talk_tornado01_02]
+[effect bit_talk_ivan_lightning_charge_l]
+[charaFadeout D 0.1]
+[wt 2.0]
+
+[shake 0.05 2 2 0]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 0]
+[charaFace A 5]
+[charaFadein A 0.1 2]
+
+＠Gray
+Mnemosyne is giving off incredibly[sr]powerful magical energy...!
+[k]
+
+[charaFace A 2]
+
+＠Reines
+Dammit! Looks like we're not out of the woods yet!
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.5]
+[seStop ad556 0.5]
+[wait fade]
+[shakeStop]
+[soundStopAll]
+[end]
+
+
+

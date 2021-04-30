@@ -1,0 +1,579 @@
+
+
+＄94-03-66-08-3-1
+
+[soundStopAll]
+
+[charaSet A 4032000 1 Reines]
+[charaSet B 99502600 1 Mash]
+[charaSet C 1012001 1 Bedivere]
+[charaSet D 5009001 1 "Da Vinci"]
+[charaSet E 1098165700 1 Mnemosyne]
+
+[charaSet F 5019001 1 "El-Melloi II"]
+[charaSet G 5019001 1 "El-Melloi II"]
+
+[charaFilter D silhouette 00000080]
+[charaFilter E silhouette 00000080]
+[charaFilter G silhouette 00000080]
+
+[charaSet H 98115000 1 Effect]
+[charaSet J 1098120900 1 Static]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[scene 10711]
+
+[se ad59]
+[seVolume ad59 0 0.5]
+[se ad60]
+[seVolume ad60 0 0.5]
+[seVolume ad59 0.5 1.0]
+[seVolume ad60 0.5 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[seStop ad59 1.0]
+[seStop ad60 1.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Reines
+There! We made it through!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Mash
+Senpai, get the Mnemosyne paper!
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaEffect H bit_talk_blight_02]
+[wt 1.5]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_blight_02]
+[wt 0.3]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠Mash
+That's it, Senpai!
+[k]
+
+？1：On it!
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[wt 0.5]
+[cameraMove 0.5 1 1.2]
+[wt 0.2]
+[se ad7]
+[wt 0.5]
+
+[se ad193]
+[distortionstart 0.8 0.5 0.5 1.5 0.1 8.0]
+[wt 0.6]
+[distortionstart 1.2 0.5 0.5 2.2 0.4 15.0]
+[wipeout uzumaki 1.5 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait wipe]
+
+[wait distortion]
+[cameraHome 0]
+[distortionstop 0.1]
+
+[scene 10000]
+[wt 0.5]
+
+[fadeout black 0.1]
+[wait fade]
+[wipein uzumaki 0.1 0.5]
+[wait wipe]
+
+[fadein black 1.5]
+[seStop ad193 1.5]
+[wait fade]
+
+[wipeout noise 0.1 1.0]
+[wait wipe]
+
+[effect bit_sepia01]
+[pictureFrame cut063_cinema]
+
+[charaSet B 8001001 1 Mash]
+
+[scene 28400]
+
+[se ad31]
+[wt 0.2]
+[seStop ad31]
+
+[se ad31]
+[wt 0.3]
+[seStop ad31]
+
+[se ad31]
+[wt 0.5]
+
+[wipein noise 2.0 1.0]
+[seStop ad31 1.0]
+[wait wipe]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.4 0,-50]
+[wt 0.4]
+
+＠Mash
+Enemy units are moving faster! I count forty in total![sr]They'll catch up to us, Master!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 -256,-50]
+[charaFace B 15]
+[charaFadein B 0.1 256,-50]
+
+＠Bedivere
+If push comes to shove, then I'll...
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+
+
+
+＠Da Vinci
+[effectmessage bit_talk_rewind_text01 440,177 1.0 54]
+No, you can't possibly handle that many, Sir Bedivere.
+[k]
+
+[effectmessageStop bit_talk_rewind_text01]
+[wt 0.7]
+[se ad31]
+[seVolume ad31 0 0.7]
+[wt 2.3]
+[seStop ad31 0.5]
+[wt 1.0]
+[messageOff]
+
+？1：Huh?
+
+？！
+
+
+＠Da Vinci
+[effectmessage bit_talk_rewind_text02 440,177 1.2 73]
+Pity. I'd have let you deal with it if that Round Table knight was alone.
+[k]
+
+[effectmessageStop bit_talk_rewind_text02]
+[wt 0.7]
+[se ad31]
+[seVolume ad31 0 0.7]
+[wt 2.3]
+[seStop ad31 0.5]
+[wt 1.0]
+[messageOff]
+
+
+？1：What's going on?
+
+？！
+
+[wipeout noise 0.5 1.0]
+[bgm BGM_EVENT_5 0.5 0.3]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[scene 10001]
+
+[se ad31]
+[wt 0.2]
+[seStop ad31]
+
+[se ad31]
+[wt 0.3]
+[seStop ad31]
+
+[se ad31]
+[wt 0.5]
+
+[wipein noise 0.5 1.0]
+[seStop ad31 0.5]
+[wait wipe]
+
+[wt 0.5]
+
+＠???
+Don't worry about it. Everything's fine.[sr]These are your memories.
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[se ad31]
+[wipeout noise 0.5 1.0]
+[seStop ad31 0.5]
+[bgm BGM_EVENT_5 0.5 1.0]
+[wait wipe]
+
+
+[scene 51500]
+
+[charaSet B 98001000 1 Mash]
+
+[se ad31]
+[wt 0.2]
+[seStop ad31]
+
+[se ad31]
+[wt 0.3]
+[seStop ad31]
+
+[se ad31]
+[wt 0.5]
+
+[wipein noise 1.0 1.0]
+[seStop ad31 1.0]
+[wait wipe]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 0,-50]
+
+＠Mash
+The enemy Servant's closing in![sr]I'll fight her off, Master!
+[k]
+
+＠Mash
+If I don't stop her here, everyone who fled to[sr]the container will suffer the consequences...!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,-50]
+
+[charaDepth D 10]
+
+
+
+＠Da Vinci
+[effectmessage bit_talk_rewind_text03 440,177 1.2 60]
+No need for that![sr]They'll never catch up to us at this pace!
+[k]
+
+[effectmessageStop bit_talk_rewind_text03]
+[wt 0.7]
+[se ad31]
+[seVolume ad31 0 0.7]
+[wt 2.3]
+[seStop ad31 0.5]
+[wt 0.5]
+
+
+＠Da Vinci
+[effectmessage bit_talk_rewind_text04 440,177 1.4 75]
+One more step and victory is ours![sr]I'll bring up the rear. The rest of you[line 2]
+[k]
+
+[effectmessageStop bit_talk_rewind_text04]
+[wt 0.7]
+[se ad31]
+[seVolume ad31 0 0.7]
+[wt 2.3]
+[seStop ad31 0.5]
+[wt 1.2]
+
+[fadeout black 0.1]
+
+
+[messageOff]
+[charaFadeout D 0.1]
+[scene 10000]
+[wt 0.4]
+
+[wt 0.1]
+
+[fadein black 0.3]
+[wait fade]
+
+[se bac142]
+[se ad240]
+[effect bit_talk_35]
+[wt 1.5]
+
+[fadeout black 0.3]
+[wait fade]
+
+[scene 51908]
+[cameraMove 0 0,0 2.0]
+[wt 0.3]
+
+[fadein black 0.3]
+[wait fade]
+[se ad231]
+[wt 1.5]
+
+[fadeout black 0.5]
+[wait fade]
+
+[cameraHome 0]
+[scene 51908]
+[wt 1.0]
+
+[fadein black 0.3]
+[wait fade]
+
+[se ad231]
+[wt 2.5]
+
+[scene 51909 1.5]
+[wt 1.5]
+
+[scene 10001 1.5]
+[wt 2.0]
+
+
+
+？1：These aren't...my memories...
+
+？！
+
+
+[messageOff]
+[wipeout noise 0.5 1.0]
+[bgmStop BGM_EVENT_5 1.0]
+[wait wipe]
+
+[charaFadeout D 0.1]
+
+[scene 10001]
+
+[se ad31]
+[wt 0.2]
+[seStop ad31]
+
+[se ad31]
+[wt 0.3]
+[seStop ad31]
+
+[se ad31]
+[wt 0.5]
+
+[wipein noise 0.5 1.0]
+[seStop ad31 0.5]
+[wait wipe]
+
+[wt 0.5]
+
+＠???
+Oh, but they are.[sr]Your memories were always like this.
+[k]
+
+[messageOff]
+[wt 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.7 0,-50]
+[wt 1.0]
+
+[bgm BGM_EVENT_90 0.1]
+
+＠???
+These are exactly what your memories are supposed[sr]to be. You yourself have accepted these as truth.
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠???
+At this point, they are the only truth. Accept them,[sr]and your grief and suffering will all go[line 2]
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.5]
+
+[bgmStop BGM_EVENT_90 0.1]
+
+＠F：???
+Stop [messageShake 0.02 4 4 0.3]that!
+[k]
+
+[messageOff]
+
+[se ade285]
+[effect bit_talk_magicbullet]
+[wt 0.8]
+
+
+[wipeFilter cinema 0.5 0]
+[se ade60]
+[flashin once 0.1 0.1 FFFFFF80 FFFFFF80]
+[wt 0.1]
+[se ad641]
+[effect bit_talk_break]
+[wt 1.7]
+[wipeOff]
+
+[se ad31]
+[wipeout noise 0.3 1.0]
+[wait wipe]
+
+[effectStop bit_talk_break]
+[charaFadeout E 0.1]
+[pictureFrame]
+[effectStop bit_sepia01]
+
+[charaSet C 1098164800 1 Gray]
+[charaSet D 9008001 1 Astraea]
+
+[scene 10711]
+
+[wt 2.0]
+
+[seStop ad31 0.3]
+[wt 0.3]
+[se ad539]
+[wt 0.5]
+
+[fadeout black 0.1]
+[wait fade]
+[wipein noise 0.1 0.1]
+[wait wipe]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Reines
+What the!?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[messageOff]
+[se ad95]
+[wt 1.5]
+[seStop ad95]
+
+＠F：???
+That was close... If you'd collected all of that[sr]Mnemosyne, [bgm BGM_MAP_6 0.1]it would've been curtains for us.
+[k]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠Reines
+It can't be...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠Gray
+Huh... How...?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠Astraea
+You're...
+[k]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[messageOff]
+[wt 0.5]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.7 1]
+[wt 1.0]
+
+＠???
+Too bad. I was hoping to lay low for a little longer.
+[k]
+
+
+[messageOff]
+[charaTalk off]
+
+[charaDepth G 2]
+[charaDepth F 1]
+
+[wt 0.5]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.1]
+
+[charaFadeout G 0.7]
+
+[wt 3.0]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_6 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

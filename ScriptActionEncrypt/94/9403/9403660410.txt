@@ -1,0 +1,623 @@
+
+
+
+＄94-03-66-04-1-0
+[soundStopAll]
+
+[charaSet A 4032000 1 Reines]
+
+[charaSet B 1098166200 1 Trimmau]
+[charaSet C 1098165400 1 "Shakespeare Masked"]
+[charaSet D 1098165300 1 M]
+[charaSet E 6015001 1 Assassin]
+[charaSet F 1002000 1 Queen]
+[charaSet G 6015001 1 Silhouette]
+[charaSet H 98015000 1 Effect]
+[charaSet I 98015000 1 Effect]
+
+[scene 73500]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_90 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Reines
+There goes the queen and her guards...
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Trimmau
+Yes. And they've taken M and[sr]Shakespeare along with them.
+[k]
+
+？1：So, do you actually have a plan in mind?
+？2：Did you find a clue or something?
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Reines
+Of course. I wouldn't have gone[sr]out on a limb like that otherwise.
+[k]
+
+[charaFace A 5]
+
+＠Reines
+Admittedly my lead is...flimsy at best right now.
+[k]
+
+＠Reines
+For the moment, let's go over the key figures involved.
+[k]
+
+＠Reines
+There's that queen.[charaFace F 0][charaPut F 260,0][charaFadeTime F 0.4 0.75]
+[k]
+
+[charaFadeout F 0.4]
+
+＠Reines
+That shady older man who calls himself “M.”[charaFace D 0][charaPut D -260,0][charaFadeTime D 0.4 0.75]
+[k]
+
+[charaFadeout D 0.4]
+
+＠Reines
+And Shakespeare.[charaFace C 0][charaPut C 260,0][charaFadeTime C 0.4 0.75]
+[k]
+
+[charaFadeout C 0.4]
+
+[charaFace A 0]
+
+＠Reines
+But then again, maybe we don't need to bother with things like that. At least not when we have much simpler and more effective options available to us.
+[k]
+
+[bgmStop BGM_EVENT_90 0.5]
+
+[charaFace A 2]
+
+＠Reines
+For example... Ha!
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ade285]
+[effect bit_talk_magicbullet]
+[wt 0.6]
+
+[se bac316]
+[flashin once 0.1 1.5 FFFFFFAA 00000000]
+[shake 0.05 3 2 1.0]
+[fowardEffect bit_talk_14]
+[wt 1.5]
+
+？1：Huh?
+？2：There was someone hiding in the piano's shadow?
+
+？！
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Reines
+So, you're using Presence Concealment.[sr]That must make you an Assassin.
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[charaFilter G silhouette 00000080]
+
+[charaTalk off]
+[charaDepth E 0]
+[charaDepth G 1]
+[charaFace G 0]
+
+[charaFadein G 0.7 1]
+[wt 1.5]
+
+[charaFace E 0]
+[charaFadein E 0 1]
+[wt 0.1]
+[charaFadeout G 0.7]
+[wt 0.8]
+
+[charaTalk on]
+
+＠Assassin
+...How did you know?
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Trimmau
+Master noticed there was something off about the magical energy in this vicinity, so she had me analyze all relevant factors.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Reines
+There you have it. I figured exposing you with the queen around would only complicate things further, so I kept my mouth shut until it was just us.
+[k]
+
+＠Reines
+I don't suppose you're the one behind all this, are you? It would make things nice and simple if you were.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Assassin
+I'm not, but I have no reason to explain myself to you.
+[k]
+
+[messageOff]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect E erasureReverse 1 0.3]
+[wt 0.4]
+[se ade187]
+[wt 0.4]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Reines
+Stop! Shit, he went out the window![sr]Come on, pupil, we're going after him!
+[k]
+
+？1：Again with the window!?
+？！
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad59]
+[cameraMove 0.7 80,-60 1.2]
+[wt 0.3]
+
+[seStop ad59]
+
+[wt 0.4]
+
+[se ad7]
+[wipeout rectangleStripDownToUp 0.3 1.0]
+[wait wipe]
+
+[cameraHome 0.1]
+[wait camera]
+
+[charaDepth A 0]
+[charaDepth B 1]
+
+[scene 10000]
+[effect bit_talk_43h]
+[wt 0.1]
+
+[se ad75]
+[wt 1.5]
+
+[wipein rectangleStripUpToDown 0.3 1.0]
+[wait wipe]
+
+[wipeout rectangleStripDownToUp 0.3 1.0]
+[wait wipe]
+
+[effectStop bit_talk_43h]
+
+[charaSet C 6015001 1 "Emiya Effects Silhouette"]
+
+[charaSet D 6015001 1 "Emiya Effects Silhouette"]
+
+[scene 73200]
+[se ad77]
+[seStop ad77 1.0]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,15]
+
+[wipein rectangleStripUpToDown 0.3 1.0]
+[shake 0.05 0 3 0.9]
+
+[charaPut I 1]
+[charaEffect I bit_talk_impactlanding 0,-550]
+[cameraMove 0.3 0,0 1.0]
+[charaMove B 0,-20 0.3]
+[se ad222]
+[wait wipe]
+[wt 0.8]
+
+[charaFadeout B 0.1]
+[charaPut I 2000,2000]
+[wt 0.9]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.7]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect E erasureReverse 1 0.3]
+[wt 0.7]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Reines
+Damn, he's fast![sr]Don't let him get away, Trimmau!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Trimmau
+Understood. Activating combat functions.
+[k]
+
+[messageOff]
+[se ad386]
+[fowardEffect bit_talk_attack_buf]
+
+[wt 2.0]
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect B erasureReverse 1 0.3]
+[wt 0.7]
+
+[wipeout rectangleStripLeftToRight 0.3 1.0]
+[wait wipe]
+
+[wipein rectangleStripRightToLeft 0.3 1.0]
+[wait wipe]
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 80,0]
+[charaMove E 1 0.2]
+[wt 0.4]
+[seStop ad671 0.5]
+
+＠Assassin
+Damn, that's a good familiar. Whoever made that Mystic Code knew what they were doing. All right, in that case...
+[k]
+
+[messageOff]
+
+[charaTalk depthOff]
+
+[charaDepth E 3]
+[charaDepth C 2]
+[charaDepth D 1]
+
+[charaPut C 50,0]
+[charaPut D -50,0]
+
+[se ad681]
+[wt 0.2]
+[charaPut H 1]
+[charaShake E 0.05 6 0 0.6]
+[charaFadeTime C 0.2 0.6]
+[wt 0.1]
+[charaFadeTime D 0.2 0.6]
+[wt 0.1]
+[charaFadeout C 0.2]
+[wt 0.1]
+[charaFadeout D 0.2]
+
+[se bac52]
+[effect bit_talk_Slash_white_01_L]
+[wt 0.1]
+[effect bit_talk_Slash_white_01]
+[wt 0.1]
+
+[charaMove E 0,15 0.1]
+[charaMoveScale E 1.1 0.1]
+[charaFadeout E 0.2]
+[wt 0.2]
+
+[charaScale E 1.0]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Reines
+He can move even faster!?
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[fowardEffect bit_talk_kengekiall02]
+[se ad170]
+[wt 0.2]
+[se ad32]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.1]
+[shake 0.05 3 3 0.4]
+[wt 0.7]
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 -80,0]
+[charaMove A -20,0 0.2]
+[charaShake A 0.05 2 1 0.5]
+[wt 0.2]
+[charaMove A 1 0.2]
+[wt 0.4]
+[seStop ad671 0.5]
+
+＠Reines
+So he moves faster than the eye can see, AND he's got Presence Concealment paired with more standard stealth-oriented magecraft, huh.
+[k]
+
+＠Reines
+Even Trim and me working together can barely keep up. We don't even have time to let you summon anyone!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se bac56]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Assassin
+Got you.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Trimmau
+Master!
+[k]
+
+[messageOff]
+
+[charaTalk off]
+
+[se ad7]
+[charaMove B 50,0 0.3]
+[charaFadeout B 0.1]
+[wt 0.3]
+
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[wt 0.2]
+[se ad563]
+[wt 0.1]
+
+[charaFace B 4]
+[charaFadein B 0.1 -256,0]
+[charaMove B -150,0 0.2]
+
+[wt 0.2]
+
+[se ad618]
+[fowardEffect bit_talk_13 -200,0]
+[charaShake B 0.05 4 4 0.4]
+[wt 0.1]
+[fowardEffect bit_talk_14 -100,0]
+[wt 0.9]
+
+[se ad178]
+[charaSpecialEffect B erasure 1 0.7]
+[wt 1.4]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Reines
+Oh come on, what kind of Servant uses a gun? If it wasn't for Trim, my Spirit Core would be blown to bits right now.
+[k]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaFace A 0]
+
+＠Reines
+...Looks like I don't have any other choice.
+[k]
+
+＠Reines
+I really didn't want to use this since it takes a ton of magical energy, and I expect Sima Yi won't be too thrilled about it either, but oh well.
+[k]
+
+[messageOff]
+
+[bgm BGM_EVENT_63 0.1]
+
+[se ad39]
+[charaEffect A bit_talk_36]
+
+[wt 1.5]
+[charaFace A 8]
+
+＠Reines
+Seven holes are bored into primordial chaos. There are poisonous women to great men. Never is there a time when neither sun nor moon is set.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[se bac56]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Assassin
+Did you really think I'd let[sr]you use your Noble Phantasm!?
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut A 1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Reines
+Behold my tactics! Unspoken Formation!
+[k]
+
+[messageOff]
+
+[se ad29]
+[flashin once 0.1 1.0 FFFFFFAF FFFFFF00]
+[charaEffectStop A bit_talk_36]
+[wt 1.2]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad170]
+[charaEffect E bit_talk_14]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaShake E 0.05 2 1 0.3]
+[wt 0.8]
+
+＠Assassin
+What the!?
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠Reines
+My Noble Phantasm's a little unusual, you see.[sr]It doesn't have a predefined form.
+[k]
+
+[charaFace A 0]
+
+＠Reines
+What it does do is produce an illusory moon and sun that eliminate any advantages the target may have and instead exposes their weaknesses.
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad61]
+[charaEffect E bit_talk_restraint]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[charaShake E 0.05 2 1 0.3]
+[wt 0.8]
+[charaMove E 0,-10 0.2]
+[se ad54]
+
+＠Assassin
+Ghh... I can barely move...!
+[k]
+
+？1：I can see him much more easily now!
+？2：He's moving way slower now!
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaPut E 1200,1200]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠Reines
+As luck would have it, it works especially well on opponents who tend to rely on powerful skills and Noble Phantasms.
+[k]
+
+[charaFace A 2]
+
+＠Reines
+All right, pupil![sr]Let's make him cough up everything he knows!
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_63 0.5]
+[wait fade]
+[soundStopAll]
+[end]
