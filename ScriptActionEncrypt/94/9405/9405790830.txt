@@ -1,0 +1,235 @@
+
+
+
+＄94-05-79-08-3-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5046001 1 ミス・クレーン]
+[charaSet B 7024000 1 Ｘ・オルタ]
+[charaSet C 98001000 1 マシュ]
+
+
+[charaSet T 4031000 1 エフェクト用]
+
+
+[scene 112601]
+
+[se ad93]
+
+[fadein black 2.0]
+[wait fade]
+[se ad94]
+
+[wt 1.1]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+＠ミス・クレーン
+ふ[messageShake 0.05 4 3 0.3]はっ！　アイドルの部屋にお持ち帰りされちゃった私。[r]これはもはや恩義！　必ずや報いなければ……！
+[k]
+
+？1：令呪を使おう
+？2：彼女にも思い出してもらえるといいんだけど
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Ｘ・オルタ
+よろしくお願いします、マスターさん。[r]それではミス・クレーン、体を楽にしてください。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠ミス・クレーン
+まあまあまあ！　目の前にアイドルのご尊顔が！[r]私、ドキドキしてしま[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 3.0]
+[wt 0.1]
+
+[masterBranch _Male _Female]
+
+[label _Male]
+
+[charaEffect T bit_talk_CommandMantra_06 0,64]
+[charaEffectPause T bit_talk_CommandMantra_06 0,64]
+[wait charaEffectStart T]
+[charaEffectStart T]
+
+[branch _branchEnd]
+
+[label _Female]
+
+[charaEffect T bit_talk_CommandMantra_09 0,64]
+[charaEffectPause T bit_talk_CommandMantra_09 0,64]
+[wait charaEffectStart T]
+[charaEffectStart T]
+
+[branch _branchEnd]
+
+[label _branchEnd]
+
+[se bas16]
+[wait charaEffect T]
+[charaPut T 2000,2500]
+[charaEffectStop T]
+[wt 0.5]
+
+[charaFace A 5]
+[wt 1.0]
+
+＠ミス・クレーン
+………………。
+[k]
+
+[se ad806]
+
+＠ミス・クレーン
+『警告。《端末体》への干渉は禁じられている』
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠Ｘ・オルタ
+おや。ミス・クレーンが突然ロボットボイスに。[r]それに、《端末体》とは一体……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠マシュ
+危ないっ！
+[k]
+
+[messageOff]
+[se ad7]
+[charaFadeout C 0.1]
+[wt 0.3]
+
+[se ad598]
+[fowardEffect bit_talk_easy_spell_r]
+[wt 1.6]
+
+[fowardEffectDestroy bit_talk_easy_spell_r]
+[wt 0.1]
+
+[se ad85]
+[fowardEffect bit_talk_h_slash01_fs]
+[wt 0.4]
+
+[se ad32]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+[fowardEffectDestroy bit_talk_h_slash01_fs]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0 1]
+[charaShake B 0.03 3 3 0.5]
+[wt 1.2]
+
+[bgm BGM_EVENT_80 0.1]
+
+＠Ｘ・オルタ
+魔力的なエナジーのライトニングが一閃。[r]間一髪でした。マシュさん、ありがとうございます。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+＠マシュ
+これは、自動反撃の魔術……。[wt 0.7][charaFace C 2][r]発生源は、ミス・クレーンのスケッチブックです！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad216]
+[blur motion 2.0 4 10 0.5 0.6 0.05 100]
+[fadeout white 0.4]
+[wait fade]
+
+[fadein white 0.4]
+[wait fade]
+
+[fadeout white 0.4]
+[wait fade]
+
+[fadein white 0.4]
+[wait fade]
+
+[blurOff motion 0.8]
+[wt 0.8]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠Ｘ・オルタ
+スケッチブックが、ふわりと宙に浮き……[wt 0.8][charaFace B 2]わ[messageShake 0.04 3 2 0.3]わっ！？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad85]
+[fowardEffect bit_talk_v_slash01]
+[wt 0.4]
+
+[se ad7]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[charaMove B 150,0 0.2]
+[wt 0.8]
+[fowardEffectDestroy bit_talk_v_slash01]
+
+＠Ｘ・オルタ
+容赦なく攻撃してきますね。なぜなのかスケッチブック。[r]ともかく、今はこの脅威に対処せねば！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠マシュ
+はいっ。[r]えっちゃん、よろしくお願いします！
+[k]
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

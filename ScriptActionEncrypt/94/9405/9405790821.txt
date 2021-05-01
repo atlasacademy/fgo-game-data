@@ -1,0 +1,210 @@
+
+
+
+＄94-05-79-08-2-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 3005001 1 エリザベート]
+[charaSet B 98001000 1 マシュ]
+[charaSet C 5046001 1 ミス・クレーン]
+[charaSet D 7024000 1 Ｘ・オルタ]
+
+[charaSet T 4031000 1 エフェクト用]
+
+[scene 112400]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[charaShake A 0.05 2 2 2.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.5]
+
+[se ad7]
+[seVolume ad7 0 0.7]
+[charaMove A 0,-50 0.3]
+[charaFadeout A 0.3]
+[wt 1.0]
+
+[se ad788]
+
+＠エリザベート
+ぐ・や・じ・い～！[r]（号泣）
+[k]
+
+＠エリザベート
+悔しくて！　悔しくて！　尻尾に来たわ！[r]このままじゃ引っ込みつくもんですか！
+[k]
+
+＠エリザベート
+意地悪にはウルトラ意地悪で返してあげる！[r]マスター、覚悟しなさ[line 3]
+[k]
+
+[seStop ad788 1.5]
+
+？1：……今度ライブにつきあうよ
+？！
+
+[messageOff]
+[se ad7]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.4 0,-50]
+[charaMove A 0,0 0.4]
+[wt 1.2]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠マシュ
+えっ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_136 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠エリザベート
+……ホント！？　約束する？[r][#私:アタシ]だけのソロライブ、一日つきあってくれるの？
+[k]
+
+？1：……………………もちろん！
+？2：楽しみだなぁ！！！
+？！
+
+[charaFace A 3]
+＠エリザベート
+……ＯＫ！　契約成立ね！[r]その約束に免じて、今は譲ってあげる。
+[k]
+
+[charaFace A 2]
+
+＠エリザベート
+言っておくけど、これは[&子イヌ:子ジカ]だからよ。[r]特別に、ト・ク・ベ・ツに！　許してあげるの。
+[k]
+
+[charaFace A 1]
+＠エリザベート
+じゃあね～。[r][#私:アタシ]はひとりでこの特異点を満喫してくから！
+[k]
+
+[messageOff]
+[se ad60]
+[seStop ad60 1.0]
+[charaMove A -50,0 0.4]
+[charaFadeout A 0.4]
+[wt 1.4]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+＠マシュ
+……先輩の覚悟に感動しました。[r]ライブの際は、わたしもお供します！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+＠ミス・クレーン
+あのー……。[r]目まぐるしい展開で、状況が掴めていないのですが……。
+[k]
+
+[charaFace C 9]
+
+＠ミス・クレーン
+アナタたちは、いったい何者なのですか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+＠マシュ
+あ……。残念ですが、ミス・クレーンも[r]記憶を失くしているようです。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+＠Ｘ・オルタ
+……今は、出会えたことだけでも良しとしましょう。[r]とりあえず場所を変えますよ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+＠ミス・クレーン
+あの……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠Ｘ・オルタ
+大丈夫、信じてついてきてください。[r]私は……アイドルです！
+[k]
+
+[messageOff]
+[se ad79]
+[seVolume ad79 0 0]
+[effect bit_talk_valentine_brilliant_fs]
+[wt 0.1]
+[seVolume ad79 0.2 1.0]
+[wt 3.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[effectDestroy bit_talk_valentine_brilliant_fs]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+＠ミス・クレーン
+ひ[messageShake 0.05 4 3 0.5]ぃぃ～～～っ！　かっ、可愛い！[r]ええ、ええ、信じますとも。ついていきますとも！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠マシュ
+この反応、間違いなくミス・クレーンですね！
+[k]
+
+[messageOff]
+[wt 0.5]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_136 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
