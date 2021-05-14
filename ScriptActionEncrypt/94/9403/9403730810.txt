@@ -1,0 +1,330 @@
+
+
+＄94-03-73-08-1-0
+
+[soundStopAll]
+
+[charaSet A 2023001 1 Moriarty]
+[charaSet B 4012000 1 Ozymandias]
+[charaSet C 1098168200 1 Salazar]
+[charaSet D 98109700 1 "Jeanne Alter"]
+[charaSet E 2008000 1 Tristan]
+[charaSet F 98104300 1 Ghost]
+
+[charaSet J 98115000 1 Effect]
+
+[scene 23000]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 0.1 2]
+[charaFadein C 0.1 0]
+
+＠Ozymandias
+This place seems much bigger than it needs to be.
+[k]
+
+＠Salazar
+That's partly because there is also an emergency shelter here. One never knows when one might need it.
+[k]
+
+＠Salazar
+We're prepared for anything here.[sr]We have food and medicine alike in ample supply.
+[k]
+
+＠Ozymandias
+I see. So where is this medicine we need?
+[k]
+
+＠Salazar
+I think it was on this shelf...[wt 1.0][charaFace C 2][sr]Oops!
+[k]
+
+[messageOff]
+
+[wipeout rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+＠Moriarty
+(There goes the bottle...)
+[k]
+
+[charaFace A 2]
+
+＠Moriarty
+(Now!)
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_2 0.7]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ade245]
+[wt 0.7]
+[seStop ade245 0.5]
+[se ad609]
+[wt 1.5]
+[seStop ad609 0.5]
+[wt 1.5]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Moriarty
+(Perfect timing!)
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+
+[bgm BGM_EVENT_5 0.1]
+
+＠Salazar
+Ngh... My head...
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠Ozymandias
+Salazar? What's wrong?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠Salazar
+I... I just remembered...
+[k]
+
+[charaTalk A]
+
+＠Moriarty
+That's it, Salazar... Now you go into assassin mode.
+[k]
+
+[messageOff]
+[charaTalk C]
+[wt 1.0]
+
+？1：Wait. Something's not right.
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠Ozymandias
+Are you all right, Salazar?
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_5 0.7]
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠Salazar
+That... That is not my name!
+[k]
+
+
+[messageOff]
+[bgm BGM_EVENT_3 0.1]
+[se adm15]
+[effect bit_talk_h_slash01]
+[wt 0.4]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se bac210]
+[wt 1.0]
+[effect bit_talk_35]
+[se ad240]
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠Ozymandias
+Wha... How dare you!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠Salazar
+Gaaaaaah!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠Moriarty
+A truly riveting performance, but I do think he's taking it a bit too far. It's as though he truly has lost his mind. Ugh, method actors.
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+[charaPut J 0,0]
+[se ad690]
+[charaEffect J bit_talk_charge_blu]
+[wt 1.0]
+[charaDepth F 10]
+[charaPut F 0,30]
+[charaFadeTime F 1.5 0.5]
+[wt 1.5]
+[seStop ad690 1.0]
+[wt 1.0]
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠Jeanne Alter
+...Forget his mind. He's lost his freakin' humanity![sr]Can't you tell!?
+[k]
+
+＠Jeanne Alter
+His Servant Spirit Origin is falling[sr]apart like a house of cards.
+[k]
+
+[charaFace D 2]
+
+＠Jeanne Alter
+He's practically a goddamn vengeful spirit now!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠Tristan
+Oh my, that won't do at all. Then it is time this great detective brought the case to a close!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠Ozymandias
+No! This is still my scene!
+[k]
+
+＠Ozymandias
+Leave him to me! All you need concern yourselves with is capturing my glorious combat prowess on film.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠Tristan
+But, this great detective needs to[line 2]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠Jeanne Alter
+Sorry, birdbrain, you snooze, you lose! I'm gonna see how this ghost likes a punch to the face and getting roasted alive! Er, dead! Whatever!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠Tristan
+Ahh... How very sad...
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]
