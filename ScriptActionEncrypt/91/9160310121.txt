@@ -1,0 +1,135 @@
+＄91-60-31-01-2-1
+
+[soundStopAll]
+
+[charaSet A 7013001 1 Kiyohime]
+
+[charaSet B 1098169900 1 Osakabehime]
+[charaSet C 98111500 1 Static]
+
+[scene 48900]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se bac82]
+
+[flashin once 0.1 0.1 AF0000AF 00000080]
+[wt 0.4]
+[se bac27]
+[effect bit_talk_29]
+[shake 0.05 4 4 1.0]
+[wait effect]
+[effectStop bit_talk_29]
+[bgmStop BGM_EVENT_3 1.0]
+[se ad528]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[charaMove A 0,-50 0.5]
+[wt 0.8]
+[se ade96]
+[wt 0.3]
+[charaMove A 0,0 0.3]
+[wt 0.8]
+
+[bgm BGM_EVENT_2 0.1]
+
+
+＠Kiyohime
+What is this writing?
+[k]
+
+[charaPut C 1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaEffect C bit_talk_10_LowLevel]
+[wt 0.1]
+[se ad13]
+[wt 0.2]
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0 1]
+[wt 0.3]
+
+＠Osakabehime
+Ah! That's my[line 2]!
+[k]
+
+[charaPut C 1200,1200]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Kiyohime
+Oh.
+[k]
+
+？1：Is something wrong?
+？！
+
+[charaFace A 0]
+
+＠Kiyohime
+...No, everything's fine. Now that its magical energy is gone, it's just a plain old bit of text.
+[k]
+
+＠Kiyohime
+I'll just put it in this box over[sr]here and leave it by the wall.
+[k]
+
+[messageOff]
+[se ad452]
+[seStop ad452 1.3]
+[charaMove A 50,0 0.5]
+[charaFadeout A 0.4]
+[wt 0.8]
+
+[charaPut C 1]
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0 1]
+
+＠Osakabehime
+Phew.
+[k]
+
+[charaPut C 1200,1200]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut C 0]
+
+[charaTalk A]
+[charaFace B 9]
+[charaFadein B 0 0]
+[charaFace A 1]
+[charaFadein A 0.1 2]
+
+＠Kiyohime
+You owe me one, Batty.
+[k]
+
+[charaFace B 3]
+
+＠Osakabehime
+...I'll do my best to make it up to you.
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[soundStopAll]
+[end]
