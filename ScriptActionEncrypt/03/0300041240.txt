@@ -1,0 +1,736 @@
+
+
+＄03-00-04-12-4-0
+
+
+[soundStopAll]
+
+[charaSet A 8001400 1 Mash]
+[charaSet B 1039001 1 Lakshmi]
+[charaSet C 98115300 1 Holmes]
+[charaSet D 23003001 1 Ganesha]
+[charaSet E 1098176100 1 Asclepius]
+[charaSet F 98006100 1 "Enemy 1"]
+[charaSet G 98006100 1 "Enemy 2"]
+[charaSet H 1098167300 1 Child]
+[charaSet I 1098124510 1 "Da Vinci"]
+[charaSet J 98115000 1 Effect]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[scene 10000]
+
+[bgm BGM_EVENT_80 0.1]
+[fadein black 1.0]
+[wait fade]
+
+
+[se ad171]
+[effect bit_talk_v_slash01]
+[wt 0.4]
+[effect bit_talk_14 100,-100]
+[se ad170]
+[wt 0.3]
+
+[scene 75500 0.5]
+[wt 0.5]
+
+[charaTalk off]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.2]
+[se bac167]
+[fowardEffect bit_talk_14]
+[charaShake F 0.05 3 2 0.8]
+[wt 0.8]
+[charaMove F 0,-15 0.3]
+[charaFadeout F 0.4]
+[wt 0.2]
+[se ad144]
+[wt 1.0]
+
+[se ad575]
+[wt 0.6]
+[charaPut F 0]
+[charaSpecialEffect F appearance 1 1.0]
+[wt 0.1]
+[seStop ad575 0.5]
+[se ad463]
+[charaPut G 2]
+[charaSpecialEffect G appearance 1 1.0]
+[wait charaSpecialEffect G]
+[wt 1.2]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[se ade18]
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+＠Mash
+They just keep coming, no matter how[sr]many we take down... Wait. What's that!?
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+[charaFadeout A 0.1]
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+[charaShake H 0.05 2 1 0]
+[wt 0.1]
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[wt 1.5]
+
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaPut J 1]
+[charaTalk I]
+[charaFace I 2]
+[charaFadein I 0.1 1]
+
+＠Da Vinci
+Shit, it's a kid! Most of the town's residents hid after you started fighting...but he must've been left behind!
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[wt 0.1]
+
+？1：Kid, get out of here! It's not safe!
+？2：We need to protect him no matter what!
+？！
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+[charaShake H 0.05 2 1 0]
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+＠Child
+A-aaahhh...
+[k]
+
+[messageOff]
+[charaMove H 80,0 0.3]
+[wt 0.2]
+[se bac344]
+[charaShakeStop H]
+
+[se bac345]
+[charaMove H 100,-10 0.3]
+[wt 0.5]
+[charaFace H 4]
+
+＠Child
+(Sniff) O-ow ow ow...
+[k]
+
+＠Ganesha
+Crap, he tripped. And he's too far away to...[sr]Huh?[bgmStop BGM_EVENT_80 1.5]
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Asclepius
+What's wrong? You fell down?[sr]Hmm, your knee is injured. Let me see it.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 2]
+
+[charaFace E 0]
+[charaFadein E 0.1 0]
+
+＠Child
+G-god...?
+[k]
+
+[charaFace E 4]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠Asclepius
+So you cut it on a rock. Even in the middle of town,[sr]the roads really need more work.
+[k]
+
+＠Asclepius
+That's why a fall at that speed can produce lacerations like this... Now I see.
+[k]
+
+＠Asclepius
+I'll have to remember the size and depth of his wound, so I can comprehend similar situations in the future with just a glance.
+[k]
+
+[charaMove E -200,0 0.4]
+
+＠Asclepius
+As for your wound, there's nothing unusually wrong with it. To treat it, first we wash it with clean water.
+[k]
+
+＠Asclepius
+Then we apply some of these medicinal herbs.
+[k]
+
+[messageOff]
+[se ad738]
+[wt 1.0]
+[charaFace H 6]
+
+＠Child
+It's not bleeding anymore...?
+[k]
+
+[charaFace E 0]
+
+＠Asclepius
+Of course not. I just stopped it.
+[k]
+
+[charaFace E 5]
+
+＠Asclepius
+Now listen to me. Don't take that off until the pain is all gone. Doctor's orders.
+[k]
+
+＠Asclepius
+If you can't listen to them, that will mean your thick skull is the real problem. Don't make me give up on you.
+[k]
+
+[charaFace H 1]
+
+＠Child
+I-I won't! I promise! Thank you, god!
+[k]
+
+[charaFace E 0]
+
+＠Asclepius
+That's a good patient. Take care.
+[k]
+
+
+[messageOff]
+[charaTalk off]
+
+[se ad132]
+[charaMove H 300,0 0.5]
+[charaFadeout H 0.4]
+
+[wt 1.5]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaSet H 1019001 1 Rama]
+
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠Ganesha
+Whaaa? What the heck, guy!? Are you one of those gruff, curmudgeonly doctors who hides his heart of gold beneath his prickly exterior?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Asclepius
+What are you talking about?
+[k]
+
+＠Asclepius
+I heal those who need healing, and show no mercy to those who would interfere with my medicinal pursuits.
+[k]
+
+＠Asclepius
+That's all there is to it. It couldn't be simpler.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠Lakshmi
+That dedication is not a bad thing in itself.
+[k]
+
+[charaFace B 5]
+
+＠Lakshmi
+But why do you insist on prioritizing that over all else?
+[k]
+
+＠Lakshmi
+How can you so casually dismiss everything else wrong with this world, or the suffering of its people?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Asclepius
+You're asking my reasons? ...That's a new one. They're so blindingly obvious that I don't even have an answer ready.
+[k]
+
+＠Asclepius
+To tell you that, I'd have to pay attention to things I usually ignore, and bring my thinking down to the level of my most idiotic of patients.
+[k]
+
+[charaFace E 4]
+
+＠Asclepius
+...
+[k]
+
+[charaFace E 0]
+[bgmStop BGM_EVENT_70 1.5]
+
+＠Asclepius
+Never mind. There's no point. I'm just going to keep working on kicking you interlopers out of my exam room.
+[k]
+
+[messageOff]
+
+[charaTalk off]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[se ad575]
+[wt 0.6]
+[se ad463]
+[charaPut F 0]
+[charaSpecialEffect F appearance 1 1.0]
+[wt 0.2]
+[seStop ad575 0.5]
+[charaPut G 2]
+[charaSpecialEffect G appearance 1 1.0]
+[wait charaSpecialEffect G]
+[wt 1.2]
+[bgm BGM_EVENT_80 0.1]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠Rama
+First you help a child, and now you're back to raising the dead... Which are you looking for, praise or revulsion?
+[k]
+
+[messageOff]
+
+[charaFace H 2]
+[charaMoveScale H 1.1 0.2]
+[charaMove H 0,10 0.1]
+[effect bit_talk_v_slash01]
+[wt 0.1]
+[charaMove H 5,12 0.1]
+[se bac263]
+[wt 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.2]
+[se bac403]
+[fowardEffect bit_talk_14]
+[flashin once 0.2 0.2 FFFFFF80 FFFFFF80]
+
+[charaShake F 0.05 3 2 0.8]
+[wt 0.8]
+[charaMove F 0,-15 0.3]
+[charaFadeout F 0.4]
+[wt 0.2]
+[se ad144]
+[wt 1.0]
+[charaScale H 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Asclepius
+I have no need for either. Now will you stop acting up? You are the very worst sort of patient, aren't you?
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠Rama
+It doesn't matter how many dead you throw at us. If I can defeat a great rakshasa, I can defeat you too.
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Asclepius
+It never fails. It's always the most ignorant patients who make things worse.
+[k]
+
+＠Asclepius
+You should simply have resigned yourselves to assisting me in my study of medicine.
+[k]
+
+[charaFace E 6]
+
+＠Asclepius
+Now this has taken long enough that he's shown up.[bgmStop BGM_EVENT_80 1.0]
+[k]
+
+？1：...?
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad659]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠Holmes
+I'll explain later! All of you, cease combat and get away from there immediately!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 22]
+[charaFadein I 0.1 1]
+
+＠Da Vinci
+I knew this was a possibility, but I didn't think it would actually happen now!
+[k]
+
+＠Da Vinci
+And by “this,” I mean the worst-goddamn-case scenario we can think of. Talk about luck not being on our side!
+[k]
+
+[charaFadeout I 0.1]
+[seStop ad659 1.0]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[se ad246]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠Lakshmi
+...[seStop ad246 3.0]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Mash
+Master! Over there, in the sky![sr]It's...!
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[scene 10000]
+
+[charaSet F 1098176300 1 "God Arjuna"]
+[charaSet G 1098127610 1 Peperoncino]
+
+[wipein rectangleStripUpToDown 0.1 1.0]
+[wait wipe]
+
+[se ade8]
+[wt 0.4]
+[fadeout white 1.5]
+[wait fade]
+
+[scene 75600]
+[wt 0.2]
+
+[fadein white 1.0]
+[wait fade]
+[bgm BGM_EVENT_24 0.1]
+[wt 2.2]
+
+
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[scene 75500]
+[wt 0.1]
+[se bac256]
+
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.5 0,60]
+[charaMove F 0,0 0.7]
+[wt 2.5]
+
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠Rama
+Arjuna!
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠Ganesha
+Whaaa...!? I thought he spent his time flying around the Tree of Emptiness!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Asclepius
+I swear, there's nothing worse[sr]than amateurish home remedies.
+[k]
+
+＠Asclepius
+With his kind of power, and Vimana's mobility, there's no need for him to stand around guarding that tree.
+[k]
+
+[charaFace E 4]
+
+＠Asclepius
+Especially now that no one besides him can even get close to it, thanks to that ocean growing bigger.
+[k]
+
+[charaFace E 0]
+
+＠Asclepius
+The only reason he usually stays there is because he typically has no need to go anywhere else.
+[k]
+
+＠Asclepius
+Which of course means that if he does have a need to go somewhere else, he will.
+[k]
+
+[charaFace E 5]
+
+＠Asclepius
+Of course, in this particular case, he only knows because I informed him when I found you, as he ordered me to do.
+[k]
+
+＠Asclepius
+I guess he's actually taken a rare interest in you.
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.8]
+
+？1：(We can't get away from him!)
+？2：(They've got us surrounded!)
+？！
+
+＠God Arjuna
+...
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠Lakshmi
+So...you are the sole god of this world. The one they say absorbed every other Divinity in India!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠God Arjuna
+So...you are...a god, too?[sr]Ah, but...you are a tiny, insignificant one...
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠Lakshmi
+Shut up! You are nothing but a shadow of a once-great hero! Don't you dare compare me to your stolen Divinities!
+[k]
+
+＠Lakshmi
+Your insolence is unforgivable. Now release every god you have within you! Immediately!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 2]
+[charaFadein H 0.1 1]
+
+＠Rama
+I couldn't agree more. I'm sure you have a Divinity linked to this world's Sita. I'm not letting you get away!
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk I]
+[charaFace I 31]
+[charaFadein I 0.1 1]
+
+＠Da Vinci
+Okay, but maybe you could not let him get away later!? Haven't I told you guys that you don't stand a chance against him yet!?
+[k]
+
+[charaFace I 2]
+
+＠Da Vinci
+In fact, I'm pretty sure we told you to get out of there! Did you not hear us or something!?
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk G]
+[charaFace G 7]
+[charaFadein G 0.1 1]
+
+＠Peperoncino
+Oh, we heard you just fine![sr]But it's not that simple!
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠Mash
+I don't think we can avoid combat at this point.
+[k]
+
+？1：We'll get through this! Somehow!
+？2：Let's find our chance and get out of here!
+？！
+
+[charaFace A 7]
+
+＠Mash
+Yes, Master! We can't let our mission end here...[sr]Awaiting your orders!
+[k]
+
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.5]
+[wait fade]
+[soundStopAll]
+[end]
+

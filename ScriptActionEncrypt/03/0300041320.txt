@@ -1,0 +1,206 @@
+
+
+＄03-00-04-13-2-0
+
+[soundStopAll]
+[skip false]
+[charaSet A 8001410 1 Mash]
+[charaSet B 1039001 1 Lakshmi]
+[charaSet C 1019001 1 Rama]
+[charaSet D 1098167500 1 Woman]
+[charaSet E 1098167700 1 "Sacred Beast"]
+[charaSet F 1098167700 1 "Sacred Beast"]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[se ad761]
+[seVolume ad761 0 0.6]
+[effect bit_talk_yuga_clock_10]
+[wt 2.3]
+[se ad756]
+[wt 3.7]
+
+[fadeout black 1.0]
+[seStop ad761 1.0]
+[seStop ad756 1.0]
+[wait fade]
+[effectStop bit_talk_yuga_clock_10]
+[effectDestroy bit_talk_yuga_clock_10]
+
+[wt 0.5]
+[scene 74901]
+[skip true]
+[fadein black 1.0]
+[wait fade]
+
+
+[shake 0.05 0 2 2.0]
+[se ad628]
+[seVolume ad628 0 0.4]
+
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+[wt 0.8]
+[charaFace A 15]
+[wt 0.8]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+[wt 1.5]
+
+[charaFace B 5]
+
+
+[se ad444]
+[charaMove B -80,0 0.4]
+[charaFadeout B 0.4]
+
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[cameraMove 0.1 -75,0 1.2]
+[wt 0.8]
+
+
+[scene 75202]
+
+
+[wipein rectangleStripRightToLeft 1.0 1.0]
+[seStop ad444 0.5]
+[wait wipe]
+[wt 0.8]
+
+[bgm BGM_EVENT_81 0.1]
+
+[wt 0.8]
+[cameraMove 1.5 75,0 1.2]
+[wt 2.0]
+[cameraMove 1.0 0,0 1.01]
+[wt 1.2]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠Lakshmi
+What the... What happened here!?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0]
+
+[charaFace B 2]
+[charaFadein B 0.1 2]
+
+＠Woman
+Lady Lakshmi! You're back! Thank goodness!
+[k]
+
+[charaFace B 5]
+
+＠Lakshmi
+I'm glad you're all right. What in the world...[sr]No, wait. I know what happened here now. It's them!
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1.0]
+[bgmStop BGM_EVENT_81 1.0]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+
+[wipein rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk off]
+
+[charaFace E 0]
+[charaFadein E 0.1 0]
+
+[charaFace F 0]
+[charaFadein F 0.1 2]
+
+[shake 0.05 4 3 1.0]
+[se ade246]
+[wt 1.0]
+
+[bgm BGM_EVENT_80 0.1]
+
+[wt 1.8]
+
+[charaTalk on]
+
+＠Woman
+Yes, it's the sacred beasts! A number of them suddenly showed up all at once, even though no one had died and the kali weren't attacking us!
+[k]
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1.0]
+[wait wipe]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[wipein rectangleStripLeftToRight 0.5 1.0]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Rama
+We can figure out why later. Right now, there are buildings being destroyed, and people being attacked!
+[k]
+
+[charaFace C 2]
+
+＠Rama
+I'm sure you know what it is we need to do, Master!
+[k]
+
+？1：We have to help them!
+？2：We have to drive the beasts away!
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠Lakshmi
+Dammit...I knew it. Does this mean[sr]you won't let me forget after all...?
+[k]
+
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

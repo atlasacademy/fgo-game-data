@@ -1,0 +1,252 @@
+
+＄03-00-04-14-4-1
+
+
+[soundStopAll]
+
+[charaSet A 8001400 1 Mash]
+[charaSet B 1098127610 1 Peperoncino]
+[charaSet C 1019001 1 Rama]
+[charaSet D 98115300 1 Holmes]
+[charaSet E 2034000 1 Tell]
+[charaSet F 23003001 1 Ganesha]
+[charaSet G 1039001 1 Lakshmi]
+[charaSet H 1098167400 1 Man]
+
+[charaSet J 98115000 1 Effect]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_80 0.1]
+[wt 0.1]
+
+[scene 75007]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠Ganesha
+Dammit! None of my attacks are landing!
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠Peperoncino
+Every time I think we have him, he slips out of reach again! He's just too damn good at controlling the positioning of this fight!
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+[se ade8]
+[seVolume ade8 0 0.6]
+[effect bit_talk_rarrow01or]
+[wt 1.0]
+
+[wt 0.1]
+
+[se ad170]
+[se ad686]
+[fowardEffect bit_talk_14]
+
+[charaShake A 0.05 3 2 0.8]
+[wt 1.0]
+
+[charaFace A 15]
+
+＠Mash
+I can't read his arrows' trajectory! It's taking everything I have just to defend against them!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠Lakshmi
+He must be using the wind god's power to control their flight path. We can't even tell where he's firing from.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠Rama
+This must be what it is like to be a cornered animal,[sr]but we can't let him bring us down.
+[k]
+
+＠Rama
+It bears asking, I think... Can you draw his fire toward you like you did before?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠Lakshmi
+I don't think so. The situation is too different.
+[k]
+
+＠Lakshmi
+(At this point, there's no way I could reverse-concentrate all the different possibilities, no matter how hard I pushed the goddess's Divine Core...)
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Rama
+I see. I'm not sure why that is,[sr]but I'm glad to hear it all the same.
+[k]
+
+＠Rama
+At least now, we won't have to rely on a cowardly strategy where you end up hurt...
+[k]
+
+＠Rama
+...and all I can do is stand back and watch,[sr]angry at myself for being so helpless.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 11]
+[charaFadein G 0.1 1]
+
+＠Lakshmi
+There you go again...
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ad443]
+[wt 0.6]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.3]
+[seStop ad443 0.1]
+[wt 0.1]
+[se bac56]
+
+＠Man
+Hang on, Lady Lakshmi! I'll help you!
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠Lakshmi
+Stop! That won't work on him![sr]Any non-Mystic attacks will just[line 2]
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+[se bac19]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[wait wipe]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[fowardEffect bit_shot_01 60,0]
+[charaMove E -120,0 0.3]
+[se ad7]
+[wt 0.4]
+[se bac56]
+[wt 0.4]
+[fowardEffectStop bit_shot_01 60,0]
+
+[cueSe Servants_203000 bac724]
+[fowardEffect bit_talk_37 0,0 V]
+[wt 0.4]
+[se bac403]
+
+＠Man
+A[messageShake 0.05 2 2 0.3]rgh...
+[k]
+
+[charaFace E 4]
+
+＠Tell
+Damn, sorry about that.[sr]I wasn't ordered to hurt any civilians...
+[k]
+
+＠Tell
+...but I couldn't help the reflex to return fire when he shot at me.
+[k]
+
+[charaFace E 1]
+＠Tell
+I have to say though, that's pretty[sr]impressive for a homemade crossbow.
+[k]
+
+＠Tell
+Even so, you shouldn't go around[sr]firing it at a real hunter.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 1]
+
+＠Rama
+Dammit! There has to be some way we can defeat him!
+[k]
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

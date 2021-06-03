@@ -1,0 +1,906 @@
+
+＄03-00-04-06-2-1
+
+
+[soundStopAll]
+
+[charaSet A 1098127610 1 Peperoncino]
+[charaSet B 1098176200 1 Aśvatthāman]
+[charaSet C 8001400 1 Mash]
+[charaSet D 1098124510 1 "Da Vinci"]
+[charaSet E 3004001 1 Karna]
+[charaSet F 98115300 1 Holmes]
+[charaSet G 3004002 1 "Karna_Third Spirit Origin"]
+[charaSet I 1019001 1 Rama]
+[charaSet J 5009000 1 "Effect Dummy"]
+[charaSet H 5009000 1 "Effect Dummy 2"]
+
+[scene 75007]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+[fadein black 0.5]
+[wait fade]
+
+[wt 0.5]
+
+[cueSe Battle bac109]
+[charaFadeout A 0.2]
+[wt 0.07]
+
+[charaPut J 1]
+[charaScale J 1.5]
+[charaPut J -40,-30]
+[se bac136]
+[charaEffect J bit_talk_Slash_white_01]
+[wt 0.2]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 128,0]
+[wt 0.2]
+
+[cueSe Battle bac109]
+[charaFadeout A 0.2]
+[wt 0.07]
+
+[se bac136]
+[charaPut J 88,0]
+[charaEffect J bit_talk_Slash_white_01_L]
+[wt 1.0]
+
+[charaPut J 1200,1200]
+[charaEffectDestroy I]
+[charaScale J 1.0]
+[charaEffect J bit_talk_10_LowLevel]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠Aśvatthāman
+Rrrgh! Stand still, dammit!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠Mash
+Pepe's using magecraft to help us! He's not doing any damage, but he's moving so fast that the enemy can't focus on us. Now's our chance!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Da Vinci
+Hmm, can't say I've seen a spell to speed you up quite like that. It looks like it just lets you move around really quickly, plain and simple.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Peperoncino
+Hehe, want to know how it works?
+[k]
+
+＠Peperoncino
+Well, like its name suggests...I use the power of love to bend space around me!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 22]
+[charaFadein D 0.1 1]
+
+＠Da Vinci
+Oh for...! He's obviously lying, but we'll just have to leave it at that for the moment! The important thing is, the enemy's vulnerable now!
+[k]
+
+＠Da Vinci
+There're no life-forms nearby, and you're a good distance away from the town now, so don't worry about holding back!
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[wt 0.5]
+
+[charaEffect E bit_talk_36]
+[se ad39]
+[wt 1.5]
+[charaEffectStop E bit_talk_36]
+[cueSe NoblePhantasm_300400 NP_300400_3]
+[fadeout white 0.6]
+[effect bit_talk_29]
+[wait fade]
+
+[effectStop bit_talk_29]
+[charaFadeout E 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+[wt 0.5]
+
+[cueSeStop NP_300400_3 0.6]
+[fadein white 1.2]
+[wait fade]
+
+[cueSe NoblePhantasm_300400 NP_300400_6]
+
+[seStop ad39 0.2]
+[wt 0.8]
+
+[charaFace G 2]
+
+＠G：Karna
+[f large][messageShake 0.05 6 4 0.4]Vasavi Shakti!!!
+[k]
+
+[messageShakeStop]
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+
+[fadeout ff4500 2.0]
+[effect bit_talk_shock_wave]
+[cueSe NoblePhantasm_300400 NP_300400_11]
+[shake 0.03 4 6 0]
+[wt 1.0]
+[cueSe NoblePhantasm_300400 NP_300400_12]
+[wait fade]
+[effectDestroy bit_talk_shock_wave]
+[charaFadeout B 0.1]
+[wt 1.0]
+[cueSeStop NP_300400_4 0.5]
+[wt 0.5]
+[shakeStop]
+[fadein ff4500 0.2]
+[wait fade]
+
+[charaPut H 2000,2000]
+[charaEffect H bit_talk_lightning_01r]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠Mash
+It's a direct hit! That should do[line 2]
+[k]
+
+[bgmStop BGM_EVENT_80 0.5]
+
+[charaFace C 15]
+
+＠Mash
+...What!?
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[charaPut H 1]
+[se ad137]
+[se ad61]
+[wt 1.5]
+
+＠Aśvatthāman
+Rrgh, rrrgh, rrrghhh...!
+[k]
+
+[messageOff]
+[seStop ad137 1.0]
+[seStop ad61 1.0]
+[charaEffectStop H bit_talk_lightning_01r]
+[wt 1.0]
+
+[bgm BGM_EVENT_24 0.1]
+[charaFace B 2]
+
+＠Aśvatthāman
+What was that, Karna!? It's gonna take[sr]a hell of a lot more than that to kill me!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut H 2000,2000]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠Holmes
+The attack did hurt him, that much is certain. But he's recovering from the damage at an alarming rate!
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠G：Karna
+...I see you've changed since I last saw you, Aśvatthāman.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠Aśvatthāman
+Ha! What'd you expect? You're the one who died first...
+[k]
+
+＠Aśvatthāman
+Losing to Arjuna, of all people...!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠G：Karna
+...I did. I won't deny it.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Peperoncino
+Hey now, slow your roll there, people.[sr]You don't have to finish him off just yet, okay?
+[k]
+
+＠Peperoncino
+The important thing is, he's hurt enough for us to get past him now! So come on, hurry!
+[k]
+
+？1：He's right. Let's go!
+？2：Everyone run for it as fast as you can!
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠Aśvatthāman
+Dammit! Get back here...!
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgm BGM_EVENT_24 1.5 0.2]
+[se ad668]
+[se ad59]
+[se ad443]
+[wait fade]
+[charaFadeout B 0.1]
+[scene 74903]
+[wt 0.2]
+[seStop ad668 0.6]
+[seStop ad59 0.56]
+[seStop ad443 0.54]
+[wt 1.0]
+
+[charaSet B 1098123210 1 Goredolf]
+[charaSet C 8001410 1 Mash]
+[charaSet E 3004002 1 Karna]
+[charaSet H 23003001 1 Ganesha]
+[charaSet G 98002000 1 Fou]
+
+[fadein black 1.2]
+[bgm BGM_EVENT_24 1.2 0.6]
+
+[se ad668]
+[seVolume ad668 0 0.0]
+[se ad59]
+[seVolume ad59 0 0.0]
+[se ad443]
+[seVolume ad443 0 0.0]
+[seVolume ad668 1.0 0.5]
+[seVolume ad59 1.0 0.5]
+[seVolume ad443 1.0 0.5]
+[wait fade]
+
+[wt 2.0]
+
+[seStop ad668 1.0]
+[seStop ad59 1.0]
+[seStop ad443 1.0]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠Fou
+Fou, fou fou!
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+
+＠Ganesha
+(Huff, huff) J-just so you guys know...!
+[k]
+
+[charaFace H 0]
+
+＠Ganesha
+Since I'm Ganesha and all, I can actually run faster than you'd think. Way faster than any ordinary human.
+[k]
+
+＠Ganesha
+I don't even get tired that easily.
+[k]
+
+[charaFace H 7]
+
+＠Ganesha
+But I do FEEL tired, and for a NEET like me,[sr]that is the worst thing of all!
+[k]
+
+[charaFace H 5]
+
+＠Ganesha
+There's no one else in the whole world who hates running as much as we do!
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 0]
+[charaDepth H 1]
+
+[charaTalk E]
+[charaFace H 5]
+[charaFadein H 0.1 0]
+[charaFace E 0]
+[charaFadein E 0.1 2]
+
+＠Karna
+Complaining about it won't make it any easier.[sr]Just be quiet and keep running.
+[k]
+
+[charaFace H 3]
+
+＠Ganesha
+I only said that because I was hoping[sr]you'd take the hint and carry me!
+[k]
+
+＠Karna
+I can't. I would be crushed under your weight. Perhaps that is owed to the weight of Ganesha's divine power?
+[k]
+
+[charaFace H 2]
+
+＠Ganesha
+Hey, I'm not THAT heavy!
+[k]
+
+[charaFadeout H 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠Rama
+By the way, why are you running away with us?[sr]I thought you were our enemy.
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Peperoncino
+I have my reasons!
+[k]
+
+[charaFace A 4]
+
+＠Peperoncino
+Arjuna didn't see me as an enemy before now,[sr]so I was fine as long as I was just laying low...
+[k]
+
+＠Peperoncino
+But since Nezha found me in the mountains,[sr]and especially now that I've helped all of you...
+[k]
+
+＠Peperoncino
+...I'm pretty sure he's decided[sr]I don't have a place in this world!
+[k]
+
+＠Peperoncino
+Basically, now I'm qualified to be collateral damage!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Mash
+Um, Pepe, I'm still not sure what that mea[line 2]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠Peperoncino
+Sorry, Mashie, but you really need to focus on moving those legs, not your mouth. We need to HURRY, honey!
+[k]
+
+＠Peperoncino
+If we don't get away in time,[sr]it's curtains for all of us!
+[k]
+
+？1：So how far away do we need to run?
+？！
+
+
+[charaFace A 3]
+
+＠Peperoncino
+You're kidding me! You really don't even know that!?
+[k]
+
+[charaFace A 4]
+
+＠Peperoncino
+All right, fine. I'll just have to explain as we run.
+[k]
+
+
+＠Peperoncino
+Arjuna there is about to destroy and remake everything in this Lostbelt.
+[k]
+
+＠Peperoncino
+Dissolution and rebirth... Destruction and reconstruction... Cataclysm and genesis... As the last god of this world, all of that is within his capability.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠Mash
+...Huh?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Peperoncino
+The reason he's taking so long to charge up is because he needs time to gather the ridiculous amount of energy he needs to pull all that off.
+[k]
+
+＠Peperoncino
+And if any of us get caught in the destruction and rebirth of this world, we'll end up disappearing completely.
+[k]
+
+＠Peperoncino
+One hundred percent, absolutely guaranteed.[sr]No recourse, no way out...nothing.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Holmes
+That's quite difficult to believe.
+[k]
+
+＠Holmes
+But, if that enormous mass of energy were to keep growing at an accelerated rate...I suppose it's not impossible...
+[k]
+
+＠Holmes
+But then, if that's true, what happens to the world after it's been recreated? What about the life-forms?
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Peperoncino
+I'll fill you in on that later!
+[k]
+
+[charaFace A 0]
+
+＠Peperoncino
+Right now, I'm just answering [%1]'s[sr]question of how far we need to run!
+[k]
+
+＠Peperoncino
+So now that you know, I'm sure you can figure out what you have to do to avoid a massive Noble Phantasm capable of destroying the entire world, right?
+[k]
+
+[charaFace A 7]
+
+＠Peperoncino
+You're the only ones with an evasive measure that can get around that. I'm counting on it to save my skin, too...
+[k]
+
+？1：...The Border's Zero Sail!
+？！
+
+[charaFace A 1]
+
+＠Peperoncino
+Exactly! I'm glad you worked it out!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk D]
+[charaFace D 26]
+[charaFadein D 0.1 1]
+
+＠Da Vinci
+Naturally, I figured that might be the case, so I've got the engine all warmed up and ready to go☆
+[k]
+
+＠Da Vinci
+Let's figure out where to rendezvous, and we'll head there right now and come pick you guys up!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠Peperoncino
+I'll admit, it's still risky. I'm not sure what will happen if Arjuna becomes aware of the Border too...
+[k]
+
+＠Peperoncino
+But right now, it's the only hope we have!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠Goredolf
+Hold it, hold it! Just a damn minute!
+[k]
+
+＠Goredolf
+You want us to let a Crypter onto the Border?[sr]And let him experience a Zero Sail on top of that!?
+[k]
+
+[charaFace B 6]
+
+＠Goredolf
+Preposterous! Absolutely out of the question!
+[k]
+
+＠Goredolf
+I know we've had a Crypter on board before, but that was strictly as a prisoner. Not to mention there were extenuating circumstan[line 2]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Holmes
+Naturally, neither Da Vinci nor I have discounted the risks in this course of action.
+[k]
+
+＠Holmes
+But right now, the most important thing[sr]by far is ensuring [%1]'s safety.
+[k]
+
+＠Holmes
+All other considerations are secondary at best.[sr]Besides...
+[k]
+
+？1：...
+？！
+
+[charaFace F 6]
+
+＠Holmes
+Just look at [&him:her]. Once [&he:she] makes up [&his:her] mind to trust[sr]someone, there's nothing any of us can say to persuade[sr][&him:her] otherwise.
+[k]
+
+＠Holmes
+Especially since [&he's:she's] the one out[sr]there doing all the heavy lifting.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠Peperoncino
+Ugh, I thought we'd been over this already.
+[k]
+
+＠Peperoncino
+At this point, I'm just a single, powerless mage.[sr]I don't even have a Servant anymore.
+[k]
+
+＠Peperoncino
+I'd say that more than qualifies[sr]me as a prisoner, personally.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠Goredolf
+Hmm. A prisoner, huh... I do still regret how Kadoc Zemlupus ended up getting away...
+[k]
+
+＠Goredolf
+If I look at this as another chance to gain some valuable information about the Crypters...
+[k]
+
+＠Goredolf
+...maybe the reward is worth the risk?
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaFace B 0]
+
+＠Goredolf
+...All right, I'll make a special exception just this once! But he's to be kept under tight security at all times!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠Mash
+Thank you, Director Goredolf!
+[k]
+
+[messageOff]
+[se ad15]
+[wt 0.8]
+[charaFace C 2]
+[wt 0.2]
+
+＠Mash
+...I've got the Border's rendezvous point coordinates![sr]Let's get there as fast as we can, Master!
+[k]
+
+？1：Just gotta hang in there a little longer!
+？2：Come on guys, let's run for it!
+？！
+
+[charaSet D 1098176300 1 "God Arjuna"]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠Fou
+Fou, fooou!
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[shake 0.05 0 2 0]
+[se ad668]
+[seVolume ad668 0 0]
+[seVolume ad668 0.5 0.4]
+[se ad59]
+[seVolume ad59 0 0]
+[seVolume ad59 0.5 0.4]
+[se ad443]
+[seVolume ad59 0 0]
+[seVolume ad59 0.5 0.4]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 2.0]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 2.0]
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 4]
+[charaFadein H 0.1 1]
+[wt 2.0]
+
+[fadeout black 0.7]
+[seStop ad668 0.7]
+[seStop ad59 0.7]
+[seStop ad443 0.7]
+[bgmStop BGM_EVENT_24 1.5]
+[wait fade]
+
+[shakeStop]
+
+[charaFadeout H 0.1]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+[wt 0.1]
+[pictureFrame cut063_cinema]
+[fadein black 0.7]
+[wait fade]
+
+＠Peperoncino
+(Sheesh. I've finally got a chance to survive.[sr]All that's left now is one simple question...)
+[k]
+
+
+[messageOff]
+[se ad750]
+[seVolume ad750 0 0]
+[wipeout rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[scene 75601]
+[charaPut J 210,-20]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 -150,-50]
+[charaEffect J bit_talk_arjuna_np_charge01]
+
+[wt 0.3]
+
+[seVolume ad750 0.5 0.8]
+
+[wipein rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+
+[wt 3.0]
+
+[wipeout rectangleStripDownToUp 0.5 1.0]
+[wait wipe]
+[cueSeStop NP_201500_1 0.5]
+
+[charaFadeout D 0.1]
+[charaPut J 3000,3000]
+
+[scene 74903]
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 0,-50]
+[wt 0.3]
+
+[seStop ad750 0.5]
+
+[wipein rectangleStripUpToDown 0.5 1.0]
+[wait wipe]
+
+＠Peperoncino
+(...Will we make it in time...?)
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[wait fade]
+[pictureFrame]
+[wt 1.0]
+[soundStopAll]
+[end]

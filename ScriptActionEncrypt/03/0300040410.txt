@@ -1,0 +1,251 @@
+
+
+
+
+
+＄03-00-04-04-1-0
+
+[soundStopAll]
+[skip false]
+
+[charaSet A 8001410 1 Mash]
+[charaSet B 1019001 1 Rama]
+[charaSet C 98115300 1 Holmes]
+[charaSet D 3004001 1 Karna]
+[charaSet E 98002000 1 Fou]
+[charaSet F 3031001 1 Nezha]
+[charaSet G 1098124510 1 "Da Vinci"]
+[charaSet J 5009000 1 "Effect Dummy"]
+
+[scene 10000]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad761]
+[seVolume ad761 0 0.6]
+[effect bit_talk_yuga_clock_01]
+[wt 6.5]
+
+[fadeout black 1.0]
+[seStop ad761 1.0]
+[wait fade]
+[effectStop bit_talk_yuga_clock_01]
+[effectDestroy bit_talk_yuga_clock_01]
+
+[scene 27710]
+[wt 0.5]
+
+[skip true]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠Mash
+This is the mountain Asha told us about.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠Rama
+So far...I'm not seeing the god we're looking for.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut J 1]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Holmes
+I don't detect a Servant reading from here.[sr]What can you sense?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_10_LowLevel]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠Karna
+I think I can sense something akin to divine aura...but it's too faint to be certain.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Rama
+I sense it too. At least we would seem to be on the right track. Let's keep looking around.
+[k]
+
+[charaFace B 2]
+
+＠Rama
+Heeey! Is anyone heeere!?[sr]Siiitaaa! It's me, Rama!
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+？1：Is anybody heeere!?
+？！
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠Fou
+Fou fooou, fou fooou?
+[k]
+
+[messageOff]
+[wipeout rollRight 1.5 1.0]
+[bgm BGM_EVENT_77 1.5 0.4]
+[wait wipe]
+[charaFadeout E 0.1]
+[wt 1.0]
+[wipein rollLeft 1.5 1.0]
+[bgm BGM_EVENT_77 1.5 1.0]
+[wait wipe]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠Rama
+Ugh, this is getting us nowhere.[sr]We should split up and cover more ground.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠Nezha
+That is. Very true. I can. Fly by. Using my. Wind Fire Wheels. I will search. From the. Skies above.
+[k]
+
+[messageOff]
+[charaPut J 1]
+[charaEffect J bit_talk_43l]
+[charaMove F 0,64 1.1]
+[cueSe NoblePhantasm_303100 NP_303100_3]
+[cueSeVolume NP_303100_3 0 0.5]
+[wt 0.7]
+[wipeout rectangleStripUpToDown 0.3 1.0]
+[wait wipe]
+
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_43l]
+[charaFadeout F 0.1]
+[cueSeStop NP_303100_3 1.0]
+[wt 1.0]
+[wipein rectangleStripDownToUp 0.2 1.0]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠Mash
+Ah! P-please don't go off too far, Nezha![sr]We don't know what else might be here!
+[k]
+
+[charaFace A 12]
+
+＠Mash
+...Do you think she'll be okay...?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaEffect J bit_talk_10_LowLevel]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠Rama
+Don't worry, she's a venerated hero in her own right. I'm sure she'll be fine.
+[k]
+
+＠Rama
+She said it herself, she's somewhat similar to us in certain ways.
+[k]
+
+＠Rama
+I do agree that her tendency to rush headlong toward her goals with a single-minded earnestness has the potential to cause trouble...
+[k]
+
+＠Rama
+...but I also doubt there are few who can keep up with her sheer airborne maneuverability.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_77 0.5]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠Karna
+Besides, it seems we have our[sr]own things to worry about.
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.5]
+
+[charaTalk B]
+[se ad564]
+[wt 1.0]
+[seStop ad564 0.5]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠Da Vinci
+Yeah, figures there'd be a monster or two hanging around the mountain where that god lives. Think you guys could take these things out quickly so you can get back to looking for them, please?
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

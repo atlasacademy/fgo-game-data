@@ -1,0 +1,336 @@
+
+＄03-00-04-12-5-1
+
+
+[soundStopAll]
+
+[charaSet A 8001400 1 "Mash with Goggles"]
+[charaSet B 1039001 1 Lakshmi]
+[charaSet C 1019001 1 Rama]
+[charaSet D 1098127610 1 Peperoncino]
+[charaSet E 1098176100 1 Asclepius]
+[charaSet F 23003001 1 Ganesha]
+[charaSet G 98115300 1 Holmes]
+[charaSet H 8001410 1 Mash]
+[charaSet I 98002000 1 Fou]
+[charaSet J 98115000 1 Effect]
+
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_10_LowLevel]
+
+[bgm BGM_EVENT_80 0.1]
+[wt 0.5]
+
+[se ad171]
+[wt 0.1]
+[se ad170]
+[wt 0.3]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad686]
+[effect bit_talk_14]
+[wt 0.8]
+
+[wipeout rectangleStripRightToLeft 0.1 1.0]
+[wait wipe]
+
+[scene 75500]
+
+[charaTalk E]
+[charaFace E 7]
+[charaFadein E 0.4 65,0]
+[charaMove E 1 0.4]
+
+[se ad671]
+[wipein rectangleStripRightToLeft 0.6 1.0]
+[wait wipe]
+[wt 0.8]
+
+
+＠Asclepius
+Dammit. Can a doctor really accept his death at the hands of a violent patient? No. Definitely not.
+[k]
+
+[messageOff]
+[charaFace E 0]
+[se ad60]
+[charaMove E 0,-6 0.3]
+[wt 0.3]
+[seStop ad60 0.1]
+[wt 0.2]
+[se ad73]
+[charaMove E 0,15 0.3]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect E erasureReverse 1 0.3]
+[wt 1.4]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠A：Mash
+Asclepius is making an escape!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_80 1.5]
+
+[charaPut J 1]
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠Holmes
+I'd prefer not to let him get away, given how he's our current priority target. Can you go after him?
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+[charaPut J 1200,1200]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠Ganesha
+N-no way.[sr]I'm so exhausted I can barely move as it is...
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Rama
+We still haven't recovered from the wounds Arjuna inflicted on us. We'll just have to call this one a draw.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠Lakshmi
+Good grief... Now that the battle is over, I expect the townspeople will come out of hiding soon.
+[k]
+
+[charaFace B 0]
+
+＠Lakshmi
+It would be a lot of trouble to explain what just happened to them. I say we leave now.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠Peperoncino
+Sounds good to me. Why don't we head back to your walled village[line 2]Dival, was it?[line 2]And plan our next course of action on the way?
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Lakshmi
+...You seem awfully pleased about all this.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠Peperoncino
+Do I? I didn't think I was[sr]acting any different than usual.
+[k]
+
+？1：Something's definitely up, Myourenji.
+？2：You're definitely pleased, Myourenji.
+？！
+
+[charaFace D 3]
+
+＠Peperoncino
+Wh[messageShake 0.05 3 2 0.5]a...!? Don't...!
+[k]
+
+[charaFace D 4]
+
+＠Peperoncino
+(Sigh)... Okay, you win. If you want to know about that stuff so badly, I'll tell you on the way.
+[k]
+
+＠Peperoncino
+Let's just leave before the locals start throwing stones at us for assaulting an agent of god or something.
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 2.0]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth A 2]
+[charaDepth H 1]
+
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+[wt 0.1]
+
+[se ade18]
+[seVolume ade18 0.0 0.5]
+
+[wt 0.5]
+[seStop ade18 0.8]
+[wt 1.5]
+
+[charaFace H 4]
+[charaFadein H 0.1 1]
+[wt 0.1]
+[charaFadeout A 0.4]
+[wt 0.2]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+
+[charaDepth A 0]
+[charaDepth H 0]
+
+[charaTalk on]
+
+＠Mash
+...
+[k]
+
+？1：You okay, Mash?
+？！
+
+[bgm BGM_EVENT_70 0.1]
+[charaFace H 3]
+
+＠Mash
+Oh, uh, yes, I'm fine.
+[k]
+
+[charaFace H 4]
+
+＠Mash
+Well, not FINE fine. I'm just as exhausted and hurt as everyone else is.
+[k]
+
+＠Mash
+I was just...thinking about something else.
+[k]
+
+[charaFace H 12]
+
+＠Mash
+Now that we've faced Arjuna directly, it's clear just how overwhelmingly powerful he is.
+[k]
+
+＠Mash
+And not just as a lone fighter.
+[k]
+
+＠Mash
+I could tell he was on a completely different scale...almost like he was competing with the ground itself to see who was stronger.
+[k]
+
+[charaFace H 7]
+
+＠Mash
+Oh, but please don't misunderstand me, Master![sr]I'm not about to give up by any means!
+[k]
+
+[charaFace H 0]
+
+＠Mash
+I'm just saying, analytically speaking, that Arjuna is undoubtedly the most powerful god in this world.
+[k]
+
+[charaFace H 8]
+
+＠Mash
+And...the more I think about how we could hold our own against him, the more I come up blank...
+[k]
+
+[charaFace H 7]
+
+＠Mash
+Even if we succeed at defeating the Lōkapāla and reducing his power, would it really make any difference...?
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+
+＠Fou
+Fou...
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_70 1.0]
+[charaFadeout I 0.1]
+[wt 0.2]
+
+？1：We'll come up with something if we all brainstorm together.
+？2：Don't worry. We'll figure something out. I know it.
+？！
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk H]
+[charaFace H 13]
+[charaFadein H 0.1 1]
+
+＠Mash
+Yes... You're right. I'm sure it'll be fine.
+[k]
+
+＠Mash
+Okay, Master, shall we start heading back? Our first order of business: get Pepe to tell us his full name.
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠Peperoncino
+N[messageShake 0.05 3 3 0.5]ot you too, Mashie!?
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[soundStopAll]
+[end]
