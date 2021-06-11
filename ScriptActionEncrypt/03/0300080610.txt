@@ -1,0 +1,439 @@
+
+
+＄03-00-08-06-1-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5045000 1 アルトリア]
+[charaSet B 2008002 1 トリスタン]
+[charaSet C 1098124500 1 ダ・ヴィンチ]
+
+[charaSet D 1098209610 1 オベロン]
+
+[charaSet E 4031000 1 レッドラ・ビット]
+[charaSet F 98115000 1 エフェクト用]
+
+[sceneSet G 10000 1]
+[charaScale G 1.01]
+
+[sceneSet H 10000 1]
+[charaScale H 1.01]
+
+[sceneSet I 10000 1]
+[charaScale I 1.01]
+
+[charaTalk depthOff]
+
+[charaDepth A 7]
+[charaDepth C 6]
+[charaDepth D 6]
+[charaDepth E 4]
+[charaDepth H 5]
+[charaDepth I 5]
+
+[charaFadein H 0.1 -1100,0]
+[charaFadein I 0.1 1100,0]
+
+[scene 117400]
+
+[se ad646]
+[seVolume ad646 0 0]
+[seVolume ad646 1.0 1.0]
+
+[se ad995]
+[seVolume ad995 0 0]
+[seVolume ad995 1.0 0.4]
+
+[shake 0.05 0 2 3.0]
+[fadein black 2.0]
+[wait fade]
+
+[wt 1.5]
+[seStop ad646 2.0]
+[seStop ad995 2.0]
+[wt 1.0]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠オベロン
+……そうか。[r]トリスタンは牧場に残ったのか。
+[k]
+
+＠オベロン
+彼は優れた騎士だ。[r]戦闘オンチの僕の目から見てもね。
+[k]
+
+＠オベロン
+その彼が判断した事だ。[r]最善の行為だったのだろうけど……
+[k]
+
+？1：…………
+？2：（[&オレ:わたし]が、もっとしっかりしていれば……）
+
+？！
+
+＠オベロン
+…………。
+[k]
+
+[charaFace D 0]
+
+＠オベロン
+どうする、[%1]。[r]牧場に戻るかい？
+[k]
+
+＠オベロン
+もう何もないだろうけど、追悼はできる。
+[k]
+
+＠オベロン
+牧場は廃墟になった。妖精騎士も帰還している。[r]戻っても危険はないよ。
+[k]
+
+？1：……いや。今はできる事をやらないと
+？2：追悼は、マシュと合流した後に
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+そうだね。トリスタンは我々を[r]後退させるために死力を尽くしたんじゃない。
+[k]
+
+＠ダ・ヴィンチ
+前に進ませるために戦ってくれたんだ。[r]彼への報告はマシュと合流してからがいい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠アルトリア
+…………。
+[k]
+
+[bgmStop BGM_EVENT_70 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠オベロン
+そうか。君たちがそう言うのなら、[r]今の提案は忘れておくれ。
+[k]
+
+[bgm BGM_EVENT_77 0.1]
+[charaFace D 1]
+
+＠オベロン
+ところで！　それにしても、[r]狙い澄ましたようなタイミングだったろう？
+[k]
+
+＠オベロン
+白馬で駆けつけるのは王子の特権だからね。[r]オーロラから無理を言って馬車を借り受けたんだ。
+[k]
+
+＠オベロン
+問題があるとしたら、
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ade231]
+[wt 0.4]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.2 250,0]
+[charaMove E 200,0 0.2]
+＠レッドラ・ビット
+ブルルン。私の毛並みに、何か疑問点が？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠オベロン
+……まあ、彼も光の加減によっては[r]白く見えない事もないか……
+[k]
+
+[charaFace D 7]
+
+＠オベロン
+はい。[r]そういう事にして、この話はおしまいです。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace C 1]
+[charaFace A 10]
+[charaFadeinFSL C 0.1 -240,0]
+[charaFadeinFSR A 0.1 270,0]
+[wt 1.5]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk on]
+
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+[wt 0.5]
+
+？1：ふふ
+？2：気を遣ってくれて、ありがとう
+
+？！
+
+[charaFace D 1]
+
+＠オベロン
+元気が戻った？[r]ならもう一押ししようか。
+[k]
+
+＠オベロン
+ここから北に１日ほど走れば[r]グロスターの街がある。
+[k]
+
+＠オベロン
+あそこでは毎日のように珍品・希少品の[r]オークションが行われているんだけど、
+[k]
+
+＠オベロン
+そこにとびきりの新商品が入ったらしい。[r]『鉄で武装した珍しい妖精』だそうだ。
+[k]
+
+＠オベロン
+『名なしの森』からやってきた商人が[r]連れて来た妖精で、
+[k]
+
+＠オベロン
+早ければ明日にでもオークションに[r]出されるらしい。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 22]
+[charaFadein A 0.1 1]
+
+＠アルトリア
+！　『名なしの森』で、『鉄で武装した妖精』とか！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 22]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+ああ、間違いない！[r]今度こそマシュだ！
+[k]
+
+？1：すぐにグロスターに行かなきゃ！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+？2：ところで、連れてきた商人たちは？
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 1]
+
+＠オベロン
+……なんでも妖精を安値では[r]売りたくなかったらしくてね。
+[k]
+
+＠オベロン
+“その値段では売れない”と[r]グロスターの[#長:トップ]に逆らったのはいいが、
+[k]
+
+＠オベロン
+以前の窃盗や詐欺、[r]おまけに反女王思想まで発覚して捕まったよ。
+[k]
+
+＠オベロン
+グロスターの[#長:トップ]は犯罪行為には極刑であたる。[r]昨夜、みんな縛り首になったそうだ。
+[k]
+
+[charaFace D 3]
+
+？！
+
+＠オベロン
+僕もこの情報を聞きつけて、[r]急いでソールズベリーに戻ったんだ。
+[k]
+
+＠オベロン
+そうしたら君たちがもう出かけたと聞いて、[r]悪い予感がしてね。
+[k]
+
+＠オベロン
+オーロラにひとつ借りを作って、[r]移動用の馬車で駆けつけたのさ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠アルトリア
+なるほど、それでこんな貴重品を。[r]素晴らしい機転でした。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠オベロン
+ああ。ホントは秋の森で休みたいところだけど、[r]時は金なり、だ。
+[k]
+
+＠オベロン
+このままグロスターに直行でいいんだろ？[r]ソールズベリーさらばなり、ってね。
+[k]
+
+？1：もちろん！
+？2：いざ、グロスターへ！
+
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.5]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace C 1]
+[charaFace A 1]
+[charaFadeinFSL C 0.1 -240,0]
+[charaFadeinFSR A 0.1 270,0]
+[wt 1.5]
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaTalk on]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.3 250,0]
+[charaMove E 200,0 0.3]
+[wt 0.4]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠レッドラ・ビット
+すみません。[r]その前にひとつよろしいでしょうかブルルン。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 15]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+な、なにかな馬くん。[r]こっちはとてもいい雰囲気だったんだけど……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 200,0]
+
+＠レッドラ・ビット
+はい。私は誇り高い妖精馬、[r]ブリテンでもっとも紳士的な暴れ馬です。
+[k]
+
+＠レッドラ・ビット
+私は私が主と認めた者にのみ背中を預けます。
+[k]
+
+＠レッドラ・ビット
+ここまではオーロラ様のご命令で[r]牽引しましたが、
+[k]
+
+＠レッドラ・ビット
+グロスターに行くのであれば[line 3][r]そう、わかりますね？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠アルトリア
+ニンジンですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 200,0]
+
+＠レッドラ・ビット
+バトルです！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

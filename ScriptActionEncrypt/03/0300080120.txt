@@ -1,0 +1,841 @@
+
+
+
+
+＄03-00-08-01-2-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 8001410 1 マシュ]
+[charaSet B 4037000 1 ネモ]
+[charaSet C 2008002 1 トリスタン]
+[charaSet D 1098124500 1 ダ・ヴィンチ]
+[charaSet E 1098123200 1 ゴルドルフ]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[scene 86202]
+[cameraFilter gray]
+[pictureFrame cut063_cinema]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk E]
+[charaFace E 18]
+[charaFadein E 0.1 0,-50]
+
+＠ゴルドルフ
+ぐっ、む、むぅぅぅ……！[r]確かに……理に[#適:かな]っている……！
+[k]
+
+＠ゴルドルフ
+う、ぐぐぐ……仕方、あるまい……[r]技術顧問の同行を、許可、しよう……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+
+＠ネモ
+……いいだろう。海岸までなら僕が送る。[r]ふたりを頼んだよ、ダ・ヴィンチ。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_70 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 117100]
+[pictureFrame]
+[cameraFilter normal]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+というワケで、[r]やっとブリテン島に上陸だ～～！
+[k]
+
+[charaFace D 35]
+
+＠ダ・ヴィンチ
+すっごい、めっちゃ霧ふかーい！[r]なのに気温はあったかーい！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFace D 35]
+[charaFadeinFSL B 0.1 0]
+[charaFadeinFSR D 0.1 2]
+
+＠ネモ
+そこ、はしゃがない。
+[k]
+
+＠ネモ
+今まで五つの異聞帯を攻略してきたんだ。[r][#不可思議:ふ　か　し　ぎ]な土地なんて、今更珍しくもないだろう。
+[k]
+
+[charaFace D 27]
+
+＠ダ・ヴィンチ
+私にとっては初冒険みたいなものだからね。[r]気合いが入るのは当然さ。
+[k]
+
+[charaFace D 26]
+
+＠ダ・ヴィンチ
+さ、キャプテンはストーム・ボーダーに[r]戻った戻った。無理してるんだろ？
+[k]
+
+＠ダ・ヴィンチ
+ここからは私たち現地調査隊の仕事だ。[r]出番が来るまで歯ぎしりして待っていたまえ。
+[k]
+
+[charaFace B 4]
+
+＠ネモ
+やれやれ。[r]……まあ、それだけ元気なら心配はいらないか。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ネモ
+[%1]。マシュ。[r]任務ついでにダ・ヴィンチのお守りもよろしく。
+[k]
+
+[charaFace B 6]
+
+＠ネモ
+管制室で僕らの意識が落ちる寸前、[r]わずかだがブリテン島の様子が目視できた。
+[k]
+
+＠ネモ
+この海岸から東は霧に包まれていたけど、[r]その先には街らしきものがあった。
+[k]
+
+＠ネモ
+距離にして200キロメートルほど先だ。[r]邪魔が入らなければ、キミたちなら２、３日で辿り着ける。
+[k]
+
+＠ネモ
+まずはそこを目指すといい。[r]……この霧が気になるが、迂回できなそうだし。
+[k]
+
+？1：だいじょうぶ、慎重に行くよ
+？2：伊達にここまできてないよ
+
+？！
+
+[charaFace B 1]
+
+＠ネモ
+そうだったね。では幸運を、[r][%1]、マシュ、ダ・ヴィンチ。
+[k]
+
+＠ネモ
+期待して、吉報を待っているよ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[se ad122]
+[seVolume ad122 0 0.5]
+[se ad746]
+[cueSe SE_21 21_ad1063]
+[seVolume 21_ad1063 0 0.5]
+[wt 1.0]
+[seStop ad746 1.5]
+[seStop 21_ad1063 1.5]
+[wt 1.5]
+
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠マシュ
+装備の点検、完了していますマスター。[r]サバイバルキット、携帯食料90日分、不備なしです。
+[k]
+
+[messageOff]
+[se ad574]
+[seVolume ad574 0 0.3]
+[charaPut H 1]
+[effect bit_talk_simple_summon]
+[wt 2.5]
+[seStop ad574 0.5]
+[charaFadeout A 0.1]
+[charaEffectStop H bit_talk_simple_summon]
+[wt 0.5]
+[charaPut H 1200,1200]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+うんうん。私は[#魔力:マ ナ]さえあればお腹は[r]減らないから、食料はふたり分でいい。
+[k]
+
+＠ダ・ヴィンチ
+あれ？　そういえばフォウは？
+[k]
+
+＠ダ・ヴィンチ
+マシュにも[%1][&君:ちゃん]にも[r]ついてきてないけど。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠マシュ
+それが……今回、フォウさんは[r]ストーム・ボーダーには搭乗されていなくて……
+[k]
+
+？1：なんか、そっぽむいて隠れちゃった
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 32]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+え～。それはちょっと[#淋:さみ]しいなあ。[r]人理修復の旅の時、フォウも一緒だったんだろ？
+[k]
+
+＠ダ・ヴィンチ
+大人の私と同じ体験をしたかったのになぁ。[r]フォウ、ブリテンは嫌いなのかな？
+[k]
+
+[charaFace D 0]
+
+＠ダ・ヴィンチ
+ま、そこはしょうがない。[r]みんなで旅をする機会はまだあるだろうしね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠マシュ
+もちろんです。[r]その時はホームズさん、ゴルドルフ新所長、
+[k]
+
+＠マシュ
+シオンさん、ムニエルさん、フォウさん、[r]皆さんで冒険しましょう！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+[wt 1.5]
+
+[charaFadeout D 0.1]
+[wt 1.0]
+
+？1：よし。いよいよ出発だ！
+
+？！
+
+[bgm BGM_MAP_2 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+ああ。目指すは東に200キロメートルの街！[r]らしいもの！
+[k]
+
+＠ダ・ヴィンチ
+長い道のりになるけど、ファイトー！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠トリスタン
+はい、ファイトがよいでしょう。[r]なにしろ先は長い……そう感じますので。
+[k]
+
+[messageOff]
+[se ad151]
+[wt 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgmStop BGM_MAP_2 1.0]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth D 2]
+
+[charaTalk off]
+[charaFace D 22]
+[charaFace A 2]
+[charaFadeinFSL D 0.1 -270,0]
+[charaFadeinFSR A 0.1 2]
+
+＠ダ・ヴィンチ＆マシュ
+[line 3]え゛゛゛？
+[k]
+
+？1：[line 6]はい？
+
+？！
+
+[bgm BGM_EVENT_7 0.1]
+[charaTalk on]
+[charaFace D 4]
+
+＠ダ・ヴィンチ
+……信じられない……なんだろうこれ……
+[k]
+
+＠ダ・ヴィンチ
+せっかくの初めての冒険なのに、[r]いきなりヘンな幻覚が見えるなんて……
+[k]
+
+[charaFace A 8]
+
+＠マシュ
+……ショックです。マスターにも[r]ダ・ヴィンチちゃんにも見えているのですね……
+[k]
+
+＠マシュ
+わたしだけの目の錯覚なら、極度の緊張から[r]幻視したイマジナリー英霊と流せたのですが……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 1.0]
+
+？1：控えめにいってもトリスタン……
+
+？！
+
+[charaFace C 3]
+
+＠トリスタン
+…………何でしょう、この[#敵地:アウェイ]な空気は。[r]私は悲しい……。
+[k]
+
+[charaFace C 4]
+
+＠トリスタン
+確かに、これといって迫力のない、[r]風が吹いたので風見鶏が回るような、
+[k]
+
+＠トリスタン
+極めて自動的な、[r]お手軽な召喚であったのは事実ですが……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+あ。すみません、報告です！[r][#円卓の盾:ラウンドシールド]が召喚後の余熱を帯びています！
+[k]
+
+？1：（そういえばさっき、マシュに見覚えのある光が……）
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 23]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+え、ほんとに？　幻じゃなくて？[r]あ[line 3]ほんとに霊基が実体化してる！
+[k]
+
+＠ダ・ヴィンチ
+本物のトリスタン卿だ！　でもどうして！？[r]汎人類史の英霊は拒絶されている筈なのに！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠トリスタン
+……ふむ。
+[k]
+
+＠トリスタン
+どうやら私がダメ出しされているのではなく、[r]英霊の召喚自体が意外な事だったようですね。
+[k]
+
+＠トリスタン
+私も自らの意思で召喚に応じた訳ではありません。[r]気がついたら皆さんの前にいた、という次第です。
+[k]
+
+＠トリスタン
+無論、人理側の英霊として、[r]貴方がたカルデアの事は存じていますが……
+[k]
+
+＠トリスタン
+右も左も分からないのは私も同じです。[r]どうか、説明をしていただけませんか？
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+
+[wt 1.5]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+？1：[line 3]という訳なんだ
+？2：英霊、召喚できない。でも召喚できた。ＯＫ？
+
+？！
+
+[bgm BGM_EVENT_77 0.1]
+[charaFace C 1]
+
+＠トリスタン
+なるほど。ここが異聞帯……[r]あり得ざるイフのブリテン島なのですね。
+[k]
+
+＠トリスタン
+私にも、騎士トリスタンがこの異聞帯に[r]“あり”と認められた理由は分かりませんが……
+[k]
+
+＠トリスタン
+おそらく、ここがコーンウォールの[r]海岸だからでしょう。
+[k]
+
+＠トリスタン
+土地の縁、というヤツです。
+[k]
+
+＠トリスタン
+たとえ歴史が違えど、[r]島そのものは同じの筈……ですから。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+あ[line 3]そうでした。
+[k]
+
+＠マシュ
+トリスタン卿はブリテン島の南西、[r]コーンウォールの出身と言われています。
+[k]
+
+＠マシュ
+だから召喚が可能だった……いえ、土地そのものが、[r]救援を求めた……という事でしょうか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+あるいは、未知の土地を踏破するにあたり、[r]不安になっていた[%1][&君:ちゃん]が
+[k]
+
+＠ダ・ヴィンチ
+無意識のうちに召喚を願った、とかね。
+[k]
+
+＠ダ・ヴィンチ
+なんにせよ、トリスタン卿がいてくれるのは心強い。[r]同時に希望もできた！
+[k]
+
+＠ダ・ヴィンチ
+たとえこの異聞帯に『人間の英雄』が存在しなくても、[r]縁があれば汎人類史の英霊を召喚できる。
+[k]
+
+＠ダ・ヴィンチ
+たとえばオークニーのガウェイン卿。[r]あるいは、キャメロットのアーサー王本人もだ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠トリスタン
+アーサー王に、直接……？[r]それは……
+[k]
+
+[charaFace C 1]
+
+＠トリスタン
+いえ。喜ばしい事です。[r][#彼:か]の王であれば、必ずや皆さんの力になりましょう。
+[k]
+
+＠トリスタン
+無論、微力ながらこの私も。[r]それが円卓の騎士としての務めです。
+[k]
+
+＠トリスタン
+マスター・[%1]。
+[k]
+
+＠トリスタン
+互いに無意識の召喚ではありましたが、[r]我が[#妖弦:ようげん]、存分にお使いください。
+[k]
+
+＠トリスタン
+[#嘆:なげ]きのトリスタン、[r]これより貴方のサーヴァントとなりましょう。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth D 2]
+
+[charaTalk off]
+[charaFace A 1]
+[charaFace D 10]
+[charaFadeinFSR A 0.1 2]
+[charaFadeinFSL D 0.1 -270,0]
+[wt 1.5]
+
+[charaFadeout A 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk on]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠トリスタン
+では、私が先導を。
+[k]
+
+＠トリスタン
+ブリテン南西部の事なら私にお任せを。[r]土地勘がありますので。
+[k]
+
+＠トリスタン
+このあたりからなら、[r]いくつか山を越えればすぐに丘陵地帯です。
+[k]
+
+＠トリスタン
+おおよそ２時間もあれば街道に出られます。[r]行きましょう、マスター。
+[k]
+
+？1：うん。よろしく、トリスタン！
+？2：頼りになるトリスタン卿！
+
+？！
+
+[messageOff]
+[charaFace C 6]
+[wt 1.0]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_77 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+[wt 2.0]
+
+
+
+
+[fadein black 1.0]
+[wait fade]
+
+＠
+[align center]－移動開始から　１時間　経過－[align]
+[k]
+
+[messageOff]
+[se ade429]
+[se ad173]
+[wt 2.0]
+[seStop ade429 1.0]
+[seStop ad173 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠トリスタン
+…………。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 24]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+…………。
+[k]
+
+？1：………………
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠マシュ
+あの……トリスタン卿。[r]まことに言いづらいのですが……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 0.5]
+
+？1：ねえこれ、まよっ[line 3]
+
+？！
+
+[bgm BGM_EVENT_7 0.1]
+[charaFace C 2]
+＠トリスタン
+[f large]迷ってはいません。
+[k]
+
+[charaFace C 8]
+
+＠トリスタン
+確かに……目に頼る皆さんであれば、[r]そのように感じられるでしょう。
+[k]
+
+＠トリスタン
+ですが、我々は確実に前進しています。[r]すでに４キロは歩いている。進んでいます。
+[k]
+
+＠トリスタン
+これは『どう進んでも海岸から抜け出せない』[r]というだけの話。
+[k]
+
+＠トリスタン
+ベディヴィエール卿であれば、
+[k]
+
+＠トリスタン
+『気にすることはありませんトリスタン。[r]　ここからは私が先導します寝ていてください』
+[k]
+
+＠トリスタン
+と、代案を出してくれるところです。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+それ迷ってるじゃん！[r]あとベディヴィエール呆れてるじゃん！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠トリスタン
+……やはり……そうでしたか……。[r]ベディヴィエール卿は呆れていたと……
+[k]
+
+[se ad151]
+[charaFace C 4]
+＠トリスタン
+私は悲しい……はっきり言ってくだされば、[r]卿に[#励:はげ]ましの曲を奏でたというのに……。
+[k]
+
+？1：（それされてたらベディでもキレる）よくない状況だ
+？2：でも、さすがにおかしいですよね……
+
+？！
+
+[bgmStop BGM_EVENT_7 1.0]
+[charaFace C 2]
+
+＠トリスタン
+……それは確かに。[r]この霧のせいでしょうか……
+[k]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠トリスタン
+同じところを回らないよう、[r]来た道に妖弦を張っているのですが……
+[k]
+
+＠トリスタン
+いつのまにか、弦が途切れているのです。[r]誰かが切った訳ではありません。
+[k]
+
+＠トリスタン
+私が自分の手で、妖弦を手放している。
+[k]
+
+＠トリスタン
+まるで……一分前の自分がしようとした『考え』を、[r]忘れてしまっているような[line 3]
+[k]
+
+＠トリスタン
+[line 3]！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_81 1.0]
+[charaFadeout C 0.1]
+[wt 0.1]
+[se ade153]
+[seVolume ade153 0 0.2]
+[effect bit_talk_white_fog01]
+[wt 2.0]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠マシュ
+……！[r]マスター、前方に高密度の魔力反応！
+[k]
+
+＠マシュ
+ボーダーの解析が届かないので詳細は[r]分かりませんが、これは[line 3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[se ad85]
+[effect bit_talk_v_slash02]
+[wt 0.4]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+[wt 0.1]
+[se ad32]
+[effect bit_talk_14]
+[charaShake A 0.05 3 3 0.2]
+＠マシュ
+っ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+
+＠ダ・ヴィンチ
+攻撃された、[r]迎撃の準備だ[%1][&君:ちゃん]！
+[k]
+
+＠ダ・ヴィンチ
+ブリテン異聞帯ではじめての戦闘になる、[r]注意して戦おう！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

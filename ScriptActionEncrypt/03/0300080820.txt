@@ -1,0 +1,853 @@
+
+
+
+＄03-00-08-08-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5045000 1 アルトリア]
+[charaSet B 1098124500 1 ダ・ヴィンチ]
+
+[charaSet C 1098209640 1 オベロン]
+
+[charaSet D 1049000 1 千子村正]
+
+[charaSet E 4031000 1 レッドラ・ビット]
+
+[charaSet F 1098211500 1 ウェールズの妖精Ａ]
+[charaSet G 1098211600 1 ウェールズの妖精Ｂ]
+
+[charaSet I 1098211500 1 ウェールズの妖精_人型]
+[charaSet J 1098211600 1 ウェールズの妖精_虫型]
+
+[charaSet N 98115000 1 エフェクト用]
+
+[sceneSet H 10000 1]
+[charaScale H 1.01]
+
+[sceneSet K 118600 1]
+[charaScale K 1.4]
+
+[scene 118600]
+[charaFadein K 0.1 200,-400]
+
+[se ad462]
+[seVolume ad462 0 0]
+[seVolume ad462 1.0 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+[charaMove K -200,-200 8.0]
+[wt 7.0]
+[charaFadeout K 1.0]
+[seStop ad462 2.0]
+[wt 2.0]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠オベロン
+到着したよ。[r]ここが僕の領地、ウェールズの『秋の森』だ！
+[k]
+
+？1：確かに一面の紅葉だ……！
+？2：（街も、村もないようだ……）
+
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaSet C 1098209600 1 オベロン]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 2]
+[charaDepth I 3]
+[charaDepth G 4]
+[charaDepth J 5]
+
+[cueSe SE_21 21_ad1094]
+[seVolume 21_ad1094 0 0.5]
+[charaTalk off]
+[charaFace F 1]
+[charaFace G 1]
+[charaFace I 1]
+[charaFace J 1]
+[charaFadeinFSSideR F 0.4 450,0]
+[charaFadein G 0.4 200,-50]
+[charaFadeinFSSideL I 0.4 -450,0]
+[charaFadein J 0.4 -200,-50]
+
+[charaMoveFSSideR F 350,0 0.4]
+[charaMove G 150,0 0.4]
+[charaMoveFSSideL I -350,0 0.4]
+[charaMove J -150,0 0.4]
+
+[wt 1.5]
+
+[charaTalk on]
+
+[cueSe Servants_603100 bac554]
+[seVolume bac554 0 0.5]
+[charaMoveReturnFSSideR F 350,10 0.2]
+＠F：ウェールズの妖精Ａ
+[image npc_language_5:！　オベロン様だ、オベロン様だ！][wt 0.2][charaMoveReturnFSSideR F 350,10 0.2][r][image npc_language_5:みんな、オベロン様が帰ってきたぞーーー！][seStop bac554 1.0]
+[k]
+
+[charaMoveReturn J -150,10 0.2]
+＠J：ウェールズの妖精Ｂ
+[image npc_language_5:聞かせて！　聞かせて！][wt 0.2][charaMoveReturn J -150,10 0.2][r][image npc_language_5:外のみんなの話を聞かせて！]
+[k]
+
+
+[messageOff]
+[cueSe Servants_603100 bac554]
+[seVolume bac554 0 0.5]
+[charaTalk off]
+[charaMoveReturnFSSideR F 350,10 0.25]
+[wt 0.2]
+[charaMoveReturn J -150,10 0.25]
+[wt 0.2]
+[seStop bac554 1.0]
+
+[charaMoveReturnFSSideL I -350,10 0.25]
+[wt 0.2]
+[charaMoveReturn G 150,10 0.25]
+[wt 0.8]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠オベロン
+みんな、ただいま。[r]今日はお客様を連れて来たよ。
+[k]
+
+＠オベロン
+僕と同じ立ち位置、[r]見届ける者、[%1]。
+[k]
+
+＠オベロン
+万能の天才にして可憐な女の子、ダ・ヴィンチ。[r]たぶんみんなに色々作ってくれる親切な村正。
+[k]
+
+＠オベロン
+そして『予言の子』、アルトリア。
+[k]
+
+＠オベロン
+どうだい？　どんなにここが見放された土地でも、[r]『予言の子』は来てくれるんだ。
+[k]
+
+＠オベロン
+僕は嘘つきじゃなかっただろう？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[cueSe SE_21 21_ad1094]
+[seVolume 21_ad1094 0 0.5]
+[charaFadeinFSSideR F 0.1 350,0]
+[charaFadein G 0.1 150,0]
+[charaFadeinFSSideL I 0.1 -350,0]
+[charaFadein J 0.1 -150,0]
+[charaMoveReturnFSSideR F 350,10 0.25]
+[wt 0.1]
+[charaMoveReturn J -150,10 0.25]
+[wt 0.1]
+[charaMoveReturnFSSideL I -350,10 0.25]
+[wt 0.1]
+[charaMoveReturn G 150,10 0.25]
+[wt 0.8]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth F 2]
+[charaDepth I 3]
+[charaDepth G 4]
+[charaDepth J 5]
+
+[charaFace F 1]
+[charaFace G 0]
+[charaFace I 0]
+[charaFace J 1]
+[charaFadeinFSSideR F 0.4 350,0]
+[charaFadein G 0.4 220,-50]
+[charaFadeinFSSideL I 0.4 -350,0]
+[charaFadein J 0.4 -220,-50]
+
+[charaMoveFSSideR F 300,0 0.4]
+[charaMove G 180,0 0.4]
+[charaMoveFSSideL I -300,0 0.4]
+[charaMove J -180,0 0.4]
+[wt 0.5]
+[cueSe Servants_603100 bac554]
+[seVolume bac554 0 0.5]
+[charaMoveReturn J -180,10 0.2]
+[wt 0.2]
+[seStop bac554 1.0]
+[charaMoveReturn J -180,10 0.2]
+[charaTalk on]
+[charaFace A 3]
+
+＠アルトリア
+わ、わ……！[r]オベロン、この子たち、どうすれば！？
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠オベロン
+何もしなくていいさ。[r]ただ、君が来てくれただけで嬉しいんだ。
+[k]
+
+[charaFaceFade C 0 0.2]
+
+＠オベロン
+ああ、でも、可愛いからって[r]抱きしめたりしちゃダメだよ。
+[k]
+
+＠オベロン
+みんな、触れられるのに慣れてないんだ。[r]外の妖精には特に、ね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 36]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+絵に描いたような妖精じゃないか。[r]いよいよ『妖精の国』に来たって感じがするね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth G 2]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠千子村正
+いや、どんな妖精でも妖精だろう？[r]別段、ここのが特別な[line 3]
+[k]
+
+[messageOff]
+
+[charaTalk off]
+[charaFace G 0]
+[charaFadein G 0.2 -250,0]
+[charaMove G -200,0 0.4]
+[wt 1.0]
+[cueSe Servants_603100 bac554]
+[seVolume bac554 0 0.5]
+
+[charaMoveReturn G -190,0 0.25]
+[wt 0.4]
+[seStop bac554 1.0]
+[charaMoveReturn G -190,0 0.25]
+[wt 0.4]
+
+[charaTalk on]
+
+＠G：ウェールズの妖精
+[image npc_language_5:つくって！　つくって！　カブトをつくって！][r][image npc_language_5:兵隊になりたいんだ、兵隊になりたいんだ！]
+[k]
+
+[charaFace D 14]
+
+＠千子村正
+……いや、ちょいと違うか。[r]なに言ってるか分からねぇが、まあ……
+[k]
+
+＠千子村正
+おまえさん、自分に合う[r]かぶり物が欲しいのかい？
+[k]
+
+[messageOff]
+[charaTalk G]
+[charaFace G 1]
+[charaMoveReturn G -200,-10 0.3]
+[wt 0.8]
+
+＠千子村正
+確かに、[r]そのナリじゃあ人間合わせの武具は使えねえ。
+[k]
+
+[charaFace D 7]
+＠千子村正
+オベロン、空いてる場所に作業台作っていいか？
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠オベロン
+もちろん。好きに使ってくれ。[r]ああ、でも素材は木の枝と葉っぱにしておいて。
+[k]
+
+＠オベロン
+みんな兵隊ごっこがしたいだけなんだ。[r]カタチだけで頼むよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 19]
+[charaFadein D 0.1 1]
+[charaFace G 0]
+[charaFadein G 0.1 -200,0]
+
+＠千子村正
+分かってる、本物は作らねえよ！[r]ままごとみたいなもんだからな！
+[k]
+
+
+[messageOff]
+[charaTalk off]
+[se ad527]
+[charaMove D -50,0 0.4]
+[charaFadeout D 0.4]
+[wt 1.0]
+[seStop ad527 1.0]
+[charaFace G 1]
+[charaMove G -250,0 0.4]
+[charaFadeout G 0.4]
+[wt 1.5]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[cueSe SE_21 21_ad1094]
+[seVolume 21_ad1094 0 0.3]
+
+＠F：ウェールズの妖精
+[image npc_language_5:あなたは？　あなたは？][r][image npc_language_5:オベロンのオトモダチ？　本当のオトモダチ？][seStop 21_ad1094 1.0]
+[k]
+
+[charaFace F 1]
+
+＠F：ウェールズの妖精
+[image npc_language_5:ならわたしたちのトモダチね！][r][image npc_language_5:オベロンを助けてあげてね！　オベロンをよろしくね！]
+[k]
+
+[messageOff]
+[cueSe SE_21 21_ad1094]
+[seVolume 21_ad1094 0 0.3]
+
+[charaMove F -50,50 0.2]
+[wt 0.1]
+[charaMove F 0,75 0.2]
+[wt 0.1]
+[charaMove F 50,50 0.2]
+[wt 0.1]
+[charaMove F 100,0 0.2]
+[wt 0.1]
+[charaMove F 50,-50 0.2]
+[wt 0.1]
+[charaMove F 0,-75 0.2]
+[wt 0.1]
+[charaMove F -50,-50 0.2]
+[wt 0.1]
+[charaMove F -100,-0 0.2]
+[wt 0.1]
+[charaMove F -50,50 0.2]
+[wt 0.1]
+[charaMove F 0,0 0.2]
+[wt 0.2]
+
+
+？1：わわ、わわわ……！
+？2：（とても歓迎されているのは分かるけど、分からない！）
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 9]
+[charaFadein C 0.1 1]
+
+＠オベロン
+君たちを歓迎しているんだよ。
+[k]
+
+＠オベロン
+森に流れ着いたみんなは、[r]他人を疑うことを知らないからね。
+[k]
+
+＠オベロン
+ここには人間の文化の模倣はないけど、[r]テントぐらいは用意できる。
+[k]
+
+＠オベロン
+君たちはしばらく休んでいるといい。[r]外の情報は僕が集めてこよう。
+[k]
+
+[charaFaceFade C 8 0.2]
+
+＠オベロン
+みんな、お客様の相手は任せたよ。
+[k]
+
+＠オベロン
+だいじょうぶ、キミたちを傷つける者は[r]ここには誰もいない。
+[k]
+
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth F 2]
+[charaDepth I 3]
+[charaDepth G 4]
+[charaDepth J 5]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFace G 1]
+[charaFace I 1]
+[charaFace J 0]
+[charaFadeinFSSideR F 0.1 300,0]
+[charaFadein G 0.1 150,0]
+[charaFadeinFSSideL I 0.1 -300,0]
+[charaFadein J 0.1 -150,0]
+[wt 0.5]
+[charaMoveFSSideR F 300,-30 0.5]
+[charaMove G 150,-15 0.5]
+[charaMoveFSSideL I -300,-30 0.5]
+[charaMove J -150,-15 0.5]
+[wt 1.2]
+
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠オベロン
+よし。[r]ではしばしの別れだ、諸君！
+[k]
+
+＠オベロン
+でも夜には帰ってくるから、[r]僕の分の夕食は残しておくように！
+[k]
+
+[messageOff]
+[se ad527]
+[charaMove C -100,0 0.4]
+[charaFadeout C 0.4]
+[wt 1.0]
+[seStop ad527 1.0]
+[wt 1.0]
+
+[charaTalk B]
+[charaFace B 31]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+え、ちょっと待ってオベロン、[r]せめて言葉の分かる[line 3]
+[k]
+
+[charaFace B 14]
+
+＠ダ・ヴィンチ
+……行っちゃった。
+[k]
+
+＠ダ・ヴィンチ
+いや、妖精たちが歓迎してくれてるのは[r]分かるんだけど……
+[k]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth E 2]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.2 550,0]
+[charaMove E 500,0 0.2]
+
+＠レッドラ・ビット
+そうですね。ウェールズの妖精たちは[r]ちょっとなに言ってるか分かりませんからね。
+[k]
+
+＠レッドラ・ビット
+あと私の紹介はしてくれませんでしたね。[r]こういうの地味に効きますよね。
+[k]
+
+＠レッドラ・ビット
+オベロン様はアレかな？[r]おっちょこちょいなのかな？
+[k]
+
+？1：いや、たまたまだと……思うよ？
+？2：（しまった……[&オレ:わたし]も忘れてた……）
+
+？！
+
+[charaFadeout B 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[cueSe SE_21 21_ad1094]
+[seVolume 21_ad1094 0 0.3]
+
+＠ウェールズの妖精
+[image npc_language_6:おなかは減ってる？　おなかは減ってる？][r][image npc_language_6:オベロン様と一緒なら、きっとおなか減ってるよね？][seStop 21_ad1094 1.0]
+[k]
+
+[charaFace F 1]
+
+＠ウェールズの妖精
+[image npc_language_5:ごちそうするよ、ごちそうするよ！][r][image npc_language_5:ウェールズのマロンは美味しいよ！]
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaFace A 5]
+
+＠アルトリア
+みんな、彼らが食事を振る舞ってくれるそうです。[r]なんとマロン！　マロンがあるんだって！
+[k]
+
+[charaFace A 13]
+
+＠アルトリア
+すごーい、ご禁制じゃん！
+[k]
+
+＠アルトリア
+“甘いもの”は制限がかけられていて[r]南部じゃ希少品なのに、ここ、法の抜け道なんだ！
+[k]
+
+？1：制限……？
+？2：ご禁制……？
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+あ、マイクも言ってたなぁ。[r]『お菓子』は上級妖精でないと手に入らないって。
+[k]
+
+＠ダ・ヴィンチ
+果物とかを加工するのは女王が禁じているらしくてね。[r]砂糖は希少品なんだよ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠レッドラ・ビット
+私もオーロラ様に、なにやら黒い板のようなものを[r]一切れいただいた事がありますが……
+[k]
+
+＠レッドラ・ビット
+正直、ニンジンの方が好みでしたね。[r]甘みの自然さが違う。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+[cueSe SE_21 21_ad1094]
+[seVolume 21_ad1094 0 0.3]
+
+＠ウェールズの妖精
+[image npc_language_5:こっちだよ！　こっちだよ！][r][image npc_language_5:オベロンの話を聞かせて！　オベロンの話を聞かせて！][seStop 21_ad1094 1.0]
+[k]
+
+[messageOff]
+[charaMove F -100,0 0.4]
+[charaFadeout F 0.4]
+
+[wt 1.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+どうやらあっちに食卓があるようだ。
+[k]
+
+＠ダ・ヴィンチ
+言葉は分からないけど、厚意に甘えようか[r][%1][&君:ちゃん]。
+[k]
+
+？1：そうですね
+？2：甘い物だけに！
+
+？！
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 1.2]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_94 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.5]
+
+
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+
+＠アルトリア
+ごちそうさまでした！
+[k]
+
+？1：ごちそうさまでした！
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+うん、とっても美味しかった！[r]とくに葡萄がすっっっごくゴージャス！
+[k]
+
+[charaFace B 0]
+
+＠ダ・ヴィンチ
+しかも果物にさえ神秘が宿ってる。
+[k]
+
+＠ダ・ヴィンチ
+サーヴァントの身としては、[r]なかなか馬鹿に出来ない魔力補充手段だ。
+[k]
+
+[charaFace B 26]
+
+＠ダ・ヴィンチ
+緊急時用に何個かもらってきちゃおっかな……[r]それともホームズたちに届けてあげるか……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠レッドラ・ビット
+ごわっしゅ。[r]ごわっしゅ。（梨をひと噛みで平らげている）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠千子村正
+しかしまあ、一皿多かったな。[r]オベロンの分か？　これ残しておけばいいのか？
+[k]
+
+[bgmStop BGM_EVENT_77 1.0]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[cueSe SE_21 21_ad1094]
+[seVolume 21_ad1094 0 0.5]
+
+[charaTalk off]
+[charaFace F 2]
+[charaFace G 2]
+[charaFace I 2]
+[charaFace J 2]
+[charaFadeinFSSideR F 0.1 300,0]
+[charaFadein G 0.1 150,0]
+[charaFadeinFSSideL I 0.1 -300,0]
+[charaFadein J 0.1 -150,0]
+
+＠ウェールズの妖精たち
+[image npc_language_7:きたぞ、きたぞ、黒犬だ！][r][image npc_language_7:かくれろかくれろ、早いもの勝ち、さあかくれろ！]
+[k]
+
+[messageOff]
+[charaMoveFSSideR F 200,0 0.4]
+[charaMove G 50,0 0.4]
+[charaMoveFSSideL I -400,0 0.4]
+[charaMove J -250,0 0.4]
+[charaFadeout F 0.4]
+[charaFadeout G 0.4]
+[charaFadeout I 0.4]
+[charaFadeout J 0.4]
+[wt 1.0]
+
+
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+[FFFFFF]？　なんだろ、みんなとつぜん木の上に登ったり、[-][r]木のウロに飛び込んだり[line 3]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠レッドラ・ビット
+ごわっしゅ。あちらにブラックドッグが見えます。[r]ごわっしゅ。おそらく皆さん、隠れたのでは？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠アルトリア
+！　追い払いましょう！[r]ご馳走をしていただいたお返しです！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠レッドラ・ビット
+私もそう思っていまっしゅ。[r]失礼。思っていました。
+[k]
+
+＠レッドラ・ビット
+ブラックドッグは恐ろしいですが、[r]ここの妖精たちは戦う手段を持っていません。
+[k]
+
+＠レッドラ・ビット
+今までは為す術なく犠牲を出していたでしょうが、[r]我々がいる以上そうはいきません。
+[k]
+
+[charaFace E 2]
+
+＠レッドラ・ビット
+思い知らせてやりましょう、皆さん。[r]犬なぞ！　[#兎:ウサギ]の！　敵ではない、と！
+[k]
+
+？1：きみ、ほんとはサーヴァントじゃない？
+？2：人類史の収束ってこういう事なのかな？
+
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

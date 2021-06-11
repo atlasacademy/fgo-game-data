@@ -1,0 +1,799 @@
+
+
+＄03-00-08-04-7-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5045000 1 アルトリア]
+[charaSet B 2008002 1 トリスタン]
+[charaSet C 1098124500 1 ダ・ヴィンチ]
+
+[charaSet D 1098209700 1 モルガン兵]
+[charaSet E 1098209700 1 モルガン兵2]
+[charaSet F 1098209700 1 モルガン兵3]
+
+[charaSet G 98016000 1 円卓軍の兵士]
+[charaSet I 98016000 1 円卓軍の兵士2]
+[charaSet J 98016000 1 円卓軍の兵士3]
+
+[charaSet H 98115000 1 エフェクト用]
+[sceneSet K 10000 1]
+[charaScale K 1.01]
+
+[charaSet L 1050000 1 妖精騎士ガウェイン_シルエット]
+[charaFilter L silhouette 00000080]
+[charaSet M 1050000 1 妖精騎士ガウェイン]
+[charaSet N 1098231400 1 ヒトイヌ]
+
+
+[charaSet O 1098209300 1 土の氏族]
+[charaSet P 1098209300 1 土の氏族2]
+
+
+[scene 118500]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad5]
+[seVolume ad5 0 0]
+[seVolume ad5 1.0 0.5]
+[wt 2.5]
+[seStop ad5 1.0]
+
+[bgm BGM_EVENT_77 0.1]
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠アルトリア
+……いやぁ。
+[k]
+
+＠アルトリア
+……さっすが女王直下の施設と言いますか……[r]魔力錠も超一流で……ちっくしょう……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠トリスタン
+ひとつ開けている間に、円卓軍の方々が[r]他の29棟、すべて開放してしまいましたね……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠アルトリア
+その残り１棟も、いま円卓軍の人が[r]開けてくれたんですけど……ははは……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+そう落ち込まなくていいよアルトリア。[r]いや、技術者として気持ちは分かるけどね？
+[k]
+
+＠ダ・ヴィンチ
+結果的に、住居に幽閉されていた[r]すべての人間を解放できたんだ。
+[k]
+
+[charaFace C 14]
+
+＠ダ・ヴィンチ
+マシュがいなかったのは残念だったけど……[r]かといって無駄骨だった訳じゃない。
+[k]
+
+[charaFace C 0]
+
+＠ダ・ヴィンチ
+少なくともマシュは捕まっていなかった。[r]見ようによってはこっちの方が喜ばしい。
+[k]
+
+？1：[line 3][&はい:うん]。マシュなら、きっと無事[&です:だよ]
+？！
+
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[se ad940]
+[seVolume ad940 0 0]
+[seVolume ad940 1.0 0.6]
+
+＠円卓軍の兵士
+みなさん、どうぞこちらへ。[r]充分な数の上着と、食料を用意しています。
+[k]
+
+＠円卓軍の兵士
+全員の名前と健康状態を確認した後、[r]すぐに移動します。
+[k]
+
+[seVolume ad940 1.0 0.3]
+＠円卓軍の兵士
+収容された人間は他にいませんか？[r]まだ心当たりがある方はお知らせください。
+[k]
+
+＠収容されていた男性
+信じられない……人間の軍隊だ。[r]人間の軍隊が、女王の兵を打ち倒した！
+[k]
+
+＠収容されていた男性
+円卓軍の噂は本当だったんだ！[r]もうアイツらの言いなりにならなくて済むんだな！
+[k]
+
+＠収容されていた子供
+外に出ていいの……？
+[k]
+
+＠収容されていた子供
+でも外は危なくて人間はすぐ死んじゃうから、[r]大人になるまで勉強していろって、騎士さまが。
+[k]
+
+＠収容されていた少女
+２年……２年ぶりの外だわ……[r]早くグロスターに戻らないと……
+[k]
+
+＠収容されていた少女
+大切なヒトを残しているの。[r]離ればなれにされてしまったの。
+[k]
+
+＠収容されていた少女
+あの子……[r]私なしでやっていけてるのかしら？
+[k]
+
+＠縛られたモルガン兵
+…………。
+[k]
+
+[messageOff]
+[seStop ad940 3.0]
+[wipeout rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[wt 0.5]
+
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠トリスタン
+……しかし。円卓軍の兵士たちは、[r]見事に統率が取れていますね。
+[k]
+
+＠トリスタン
+倒した騎士も、一命を取り留めたものは[r]殺さずに拘束しています。
+[k]
+
+＠トリスタン
+殺戮集団ではなく、[r]軍隊として規律が行き届いている。
+[k]
+
+＠トリスタン
+……円卓軍を結成した人間最強の騎士、[r]パーシヴァル……
+[k]
+
+[charaFace B 1]
+
+＠トリスタン
+……私は嬉しい。
+[k]
+
+＠トリスタン
+私の知るパーシヴァル卿ではないでしょうが、[r]彼と同じ名を持つ者なら、それも納得です……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠円卓軍の兵士
+ああ、君たち。[r]先ほどはありがとう。助かったよ。
+[k]
+
+＠円卓軍の兵士
+ここ数ヶ月綿密に調査をして、[r]今日がもっとも手薄な日だと知っていたが……
+[k]
+
+＠円卓軍の兵士
+まさか先客がいたとは。[r]しかもたった４人で[#女王:モルガン]の騎士を倒してくれた。
+[k]
+
+＠円卓軍の兵士
+二割の犠牲を覚悟していたが、[r]おかげでこちらの被害は数えるほどだ。
+[k]
+
+[charaFace G 0]
+
+＠円卓軍の兵士
+それで、どこの街の反乱軍なのかな？[r]南部では見ない顔だが……もしや、北部からの？
+[k]
+
+[charaFace G 4]
+
+＠円卓軍の兵士
+そうか……シェフィールドで一波乱あったとは[r]聞いているが……
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 36]
+[charaFadein A 0.1 1]
+
+＠アルトリア
+[line 6]。
+[k]
+
+？1：アルトリア……？
+
+？！
+
+＠アルトリア
+[line 6]あの。[r]あなたたちは、本当に……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFace A 10]
+[charaFadeinFSL G 0.1 0]
+[charaFadeinFSR A 0.1 2]
+
+＠円卓軍の兵士
+[FFFFFF]？[-]　ああ、そうか。[r]妖精を『人』と言うのはまだ我々だけだった。
+[k]
+
+＠円卓軍の兵士
+円卓軍では妖精も人間も、[r]みんな一緒に『人』と呼ぶんだ。
+[k]
+
+＠円卓軍の兵士
+それで君たちを４人と言ったんだが……[r]失礼だったかな？
+[k]
+
+[charaFace A 3]
+
+＠アルトリア
+い、いえ、そんな事は。[r]………………。
+[k]
+
+＠アルトリア
+[line 3]あの。円卓軍って、[r]みなさんあなたのような方なんでしょうか？
+[k]
+
+[charaFace G 1]
+
+＠円卓軍の兵士
+ははは。いやぁ、どうかなぁ。[r]みんな思惑は違うしね。考え方はそれぞれさ。
+[k]
+
+[charaFace G 0]
+
+＠円卓軍の兵士
+でも、団長を信じる気持ちは共通している。[r]パーシヴァルが掲げた理想は、戦うに足る理由だ。
+[k]
+
+＠円卓軍の兵士
+“必ず『予言の子』は現れる。[r][f small]  [f -]その時に備えて同志を集める”
+[k]
+
+＠円卓軍の兵士
+“重責を背負う『予言の子』を支えるため、[r][f small]  [f -]反女王の下地を築くのだ”
+[k]
+
+＠円卓軍の兵士
+それが団長の口癖でね。[r]……と、お喋りが過ぎたな。
+[k]
+
+＠円卓軍の兵士
+点呼も終わったようだ。[r]我々はロンディニウムまで人々を護衛する。
+[k]
+
+＠円卓軍の兵士
+君たちもどうかな？[r]優れた戦士はいつだって歓迎だからね。
+[k]
+
+[charaFace A 4]
+
+＠アルトリア
+………それは………。
+[k]
+
+？1：すみませんが、遠慮します
+？2：今は他にやる事があるので
+
+？！
+
+[messageOff]
+[charaFace A 10]
+[wt 0.8]
+[charaFace A 7]
+
+＠アルトリア
+はい。お誘いは光栄ですが、[r]わたしたち、人捜しの途中なんです。
+[k]
+
+[charaFace G 4]
+
+＠円卓軍の兵士
+そうか……残念だけど、[r]はっきり断られたのならしょうがない。
+[k]
+
+[charaFace G 1]
+
+＠円卓軍の兵士
+では気をつけて、みなさん。[r]捜し人と無事再会できるよう、祈っています。
+[k]
+
+[messageOff]
+[se ade428]
+[charaMoveFSL G -316,0 0.4]
+[charaFadeout G 0.4]
+[wt 1.0]
+[seStop ade428 0.5]
+[wt 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+行っちゃったか……けど、今回はこれが正解だ。[r]よく断ったね、[%1][&君:ちゃん]。
+[k]
+
+？1：……まあ、アルトリアがイヤそうだったから
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 1.2]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠トリスタン
+円卓軍に興味がない、と言えば嘘になりますが……
+[k]
+
+＠トリスタン
+我々の最優先事項はマシュとの合流です。[r]今はまだ縁がなかった、という事でしょう。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+うん、その通り！[r]さっすがオリジナル円卓、[#紳士的:いっけてる]ー！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠トリスタン
+フッ……私は嘆きのトリスタン、[r]大義にのみ生きる騎士ではありませんので……
+[k]
+
+＠トリスタン
+とはいえ、もしここにベディヴィエール卿が[r]いたのなら、卿の手前、厳粛な選択も[line 3]
+[k]
+
+[bgmStop BGM_EVENT_77 0.8]
+[charaFace B 2]
+
+＠トリスタン
+[line 3]！[r]お下がりを、[%1]！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaPut K 1]
+[charaFadeTime K 0.5 0.4]
+[wt 1.0]
+[se ad963]
+[wt 0.8]
+[se ad960]
+[se ad961]
+[effect bit_talk_fire_wall]
+[wt 0.5]
+
+[se ad429]
+[seVolume ad429 0 0.3]
+[fowardEffect bit_talk_fire_wall]
+[fowardEffect bit_talk_gouka 0,-300]
+[fowardEffect bit_talk_sparks_fs]
+[wt 1.0]
+[charaFadeout K 0.1]
+[se ad828]
+[shake 0.05 3 3 1.5]
+[fadeout white 1.5]
+[wait fade]
+
+
+[wt 2.0]
+[shake 0.05 3 3 3.5]
+[fadein white 3.5]
+[wait fade]
+
+[se ad777]
+[wt 1.0]
+[se ad195]
+[wt 1.5]
+
+[bgm BGM_EVENT_71 0.1]
+
+[charaTalk L]
+[charaFace L 0]
+[charaFadein L 0.4 1]
+[wt 0.4]
+
+＠？？？
+警備の隙をついての襲撃とはな。[r][#小賢:こざか]しい智恵だけは回る。
+[k]
+
+＠？？？
+だがあまりに小さい。[r]人間らしい、[#軟弱:なんじゃく]にして[#貧弱:ひんじゃく]な信念だ。
+[k]
+
+＠？？？
+[#物陰:ものかげ]に隠れて盗みを働くというのなら、[r]踏み[#潰:つぶ]されても文句はあるまい？
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 21]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+異様な魔力反応……！[r]計測できない、なんだコレ[line 3]！？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se adm12]
+[wt 1.0]
+
+[charaTalk N]
+[charaFace N 0]
+[charaFadein N 0.4 1]
+[se ad526]
+[seVolume ad526 0 0.6]
+[wt 2.0]
+
+？1：（……生き物を、鎖で繋いでいる……！？）
+？2：（……今の炎で、円卓軍の人たちが[line 3]）
+
+？！
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠円卓軍の兵士
+第二、第三隊、無事か……！？[r]くそ、何人[#呑:の]み込まれた！？
+[k]
+
+＠円卓軍の兵士
+助かったのは我々だけか！？[r]まさか、この炎の壁は[line 3]
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth M 5]
+[charaDepth L 2]
+
+[charaTalk off]
+[charaFace L 0]
+[charaFace M 0]
+[charaFadein L 0.4 1]
+[wt 1.2]
+[se adm12]
+[charaFadein M 0.7 1]
+[wt 1.0]
+[charaFadeout L 0.4]
+[wt 1.0]
+[charaTalk on]
+[charaTalk depthOn]
+
+＠？？？
+ふん。数人残ったか。[r]ここが平原であれば、貴様らなど一[#呑:の]みだったが……
+[k]
+
+＠？？？
+この牧場はモルガン陛下の財産である。[r]焼け野原にする事はできない。
+[k]
+
+＠？？？
+残りは我が[#角:けん]で潰す。[r]抵抗するがいい、人間。
+[k]
+
+＠？？？
+臆病者に用はない。[r]勇敢であれば慈悲をくれてやる。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+
+＠円卓軍の兵士
+そんな筈は……なぜヤツがここにいる……？
+[k]
+
+＠円卓軍の兵士
+黒い炎の大剣と白銀の甲冑……[r]妖精食いの[#黒犬公:くろいぬこう]……
+[k]
+
+[charaFace G 2]
+
+＠円卓軍の兵士
+妖精騎士ガウェイン！[r]女王の[#懐刀:ふところがたな]が、なぜ！？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 10]
+[charaFadein M 0.1 1]
+
+＠妖精騎士ガウェイン
+[line 3]貴様。
+[k]
+
+[messageOff]
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaTalk depthOff]
+[charaDepth G 5]
+[charaDepth I 4]
+[charaDepth J 3]
+
+[charaFace G 2]
+[charaFace I 5]
+[charaFace J 5]
+[charaFadein G 0.1 1]
+[charaFadeinFSR I 0.1 2]
+[charaFadeinFSL J 0.1 0]
+
+[wt 0.6]
+[se ad963]
+[se ad429]
+[seVolume ad429 0 0.3]
+[fowardEffect bit_talk_fire_wall]
+[wt 1.0]
+[se ad828]
+[shake 0.05 3 3 1.5]
+[fadeout white 1.5]
+[wait fade]
+
+[wt 1.5]
+
+[charaFilter G silhouette 00000080]
+[charaFilter I silhouette 00000080]
+[charaFilter J silhouette 00000080]
+
+[shake 0.05 3 3 3.5]
+[fadein white 3.5]
+[wait fade]
+
+[se ad227]
+[charaEffect G bit_talk_atomization]
+[charaEffect I bit_talk_atomization]
+[charaEffect J bit_talk_atomization]
+[wt 0.5]
+[charaFadeout G 2.0]
+[charaFadeout I 2.0]
+[charaFadeout J 2.0]
+
+[wt 4.0]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 1]
+
+＠妖精騎士ガウェイン
+能書きばかりで剣を取らぬのであれば、[r]我が[#角:けん]と交えるまでもない。
+[k]
+
+[messageOff]
+[se ade210]
+[charaTalk depthOff]
+[charaFace O 0]
+[charaFace P 0]
+[charaFadein O 0.2 -400,0]
+[charaFadein P 0.2 400,0]
+[wt 0.2]
+[seStop ade210 0.2]
+＠O：ガウェインの兵士・Ａ
+ガウェイン様。[r]逃げ出した人間どもはすべて捕らえました。
+[k]
+
+＠P：ガウェインの兵士・Ｂ
+残りの賊は我々で捕らえます。[r]人間ひとりに妖精[#３翅:さんし]、敵ではありません。
+[k]
+
+＠妖精騎士ガウェイン
+……いや。[r]アレは私の獲物だ。下がっていろ。
+[k]
+
+[messageOff]
+[se ade210]
+[charaFadeout O 0.2]
+[charaFadeout P 0.2]
+[wt 0.2]
+[seStop ade210 0.2]
+[wt 0.5]
+[charaMoveScale M 1.05 0.4]
+[charaMove M 0,10 0.4]
+[wt 0.2]
+[cueSe SE_21 21_ad1064]
+[wt 0.8]
+
+？1：（この威圧感、聖都のガウェインと同じ……！）
+
+[charaFace M 10]
+
+＠妖精騎士ガウェイン
+……貴様もか。[r]他の人間とは違うはずだと、少しは期待したが。
+[k]
+
+＠妖精騎士ガウェイン
+妖精國の家畜と何も変わらないな。[r]軟弱な肉では[#食欲:ハ　ラ]の足しにもならん。
+[k]
+
+？2：（……[#呑:の]まれちゃダメだ……まず話を……！）
+
+[charaFace M 12]
+＠妖精騎士ガウェイン
+[line 3]少しは[#丹田:ハ　ラ]が据わっているか。[r]いいぞ、食欲が出てきた。舌が躍る。
+[k]
+
+？！
+
+[charaFace M 0]
+
+＠妖精騎士ガウェイン
+名乗らずともいい。[r]私の興味はそこにはないからな。
+[k]
+
+＠妖精騎士ガウェイン
+女王陛下から聞いている。[r][&男:娘]。おまえが汎人類史のマスターか。
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 22]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 0]
+[charaFadein M 0.1 1]
+
+＠妖精騎士ガウェイン
+驚く事はない。[r]外の世界……汎人類史という異界の情報を、
+[k]
+
+＠妖精騎士ガウェイン
+我ら妖精騎士はみな陛下より[#賜:たまわ]っている。[r][line 3]機会があれば捕らえよ、とな。
+[k]
+
+[bgmStop BGM_EVENT_71 1.0]
+
+＠妖精騎士ガウェイン
+……ふん。[r]捕らえよ、とは、まこと陛下らしくない。
+[k]
+
+[bgm BGM_EVENT_24 0.1]
+[charaFace M 5]
+
+＠妖精騎士ガウェイン
+恥知らずな侵入者ども。
+[k]
+
+＠妖精騎士ガウェイン
+霊長を[#驕:おご]る下等生物どもが、[r]よくも妖精國ブリテンに足を踏み入れた。
+[k]
+
+＠妖精騎士ガウェイン
+[#賓:まれびと]であれば歓迎するのが、[r]おまえたちの世界での礼節なのだろう？
+[k]
+
+[charaFace M 2]
+
+＠妖精騎士ガウェイン
+いいだろう、剣を取れ！[r]望み通り、存分に歓迎してくれる！
+[k]
+
+＠妖精騎士ガウェイン
+私の名はガウェイン！[r]妖精円卓のひとり、ブリテンを守護するもの！
+[k]
+
+＠妖精騎士ガウェイン
+陛下より与えられたこの名で、[r]貴様らを[#蹂躙:じゅうりん]する！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[seStop ad429 0.4]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

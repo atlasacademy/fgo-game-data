@@ -1,0 +1,381 @@
+
+＄03-00-08-09-4-1
+
+
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 1098231510 1 マシュ]
+[charaSet B 1098216200 1 ハベトロット]
+[charaSet C 1098231100 1 妖精騎士ランスロット]
+[charaSet D 5021000 1 賢人グリム]
+
+[imageSet F back10000 1]
+[charaScale F 1.05]
+[charaSet H 98115000 1 エフェクト用]
+
+[charaPut H 2000,2000]
+[charaEffect H bit_talk_shield_light 15,-15]
+
+[scene 119503]
+
+[bgm BGM_EVENT_24 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaPut H 1]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+
+＠マシュ
+く、ぅぅぅう……！！！！
+[k]
+
+[charaFace A 8]
+
+＠マシュ
+だめ……なにひとつ、通じない……[r]……力が、もう……
+[k]
+
+[messageOff]
+[se ad598]
+[charaEffectStop H bit_talk_shield_light]
+[wt 1.5]
+[charaMove A 0,-15 0.4]
+[wt 0.2]
+[cueSe SE_21 21_ad1074]
+[seVolume 21_ad1074 0 0.4]
+[wt 0.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠妖精騎士ランスロット
+……そう。[r]少しはやると思ったけど、その盾。
+[k]
+
+＠妖精騎士ランスロット
+円卓の護りは、僕には意味をなさない。[r]神秘としての格が違う。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+
+[se ad882]
+[seVolume ad882 0 0.8]
+[se ad609]
+[seVolume ad609 0 0.8]
+[shake 0.05 2 2 2.0]
+[wt 2.5]
+[seStop ad609 1.0]
+
+[fadeout black 0.5]
+[bgm BGM_EVENT_24 0.5 0.5]
+[wait fade]
+[scene 119102]
+[wt 0.5]
+[fadein black 0.5]
+[wait fade]
+
+[wt 1.0]
+
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+[cameraMove 0.1 150,-142 2.0]
+[wt 0.3]
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+[wt 0.3]
+
+＠シェフィールドの衛士
+！　今の爆発は、城の天守[line 3][r]ボガード様の身に何が！？
+[k]
+
+[messageOff]
+[wt 0.3]
+[fadeout black 0.5]
+[wait fade]
+
+[cameraMove 0.1 0,0 1.0]
+
+[scene 119503]
+[wt 0.5]
+
+[fadein black 0.5]
+[bgm BGM_EVENT_24 0.5 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 0,-15]
+[wt 1.2]
+[charaFace A 7]
+[wt 0.8]
+[charaMove A 1 0.4]
+[se bac170]
+[wt 0.8]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth B 5]
+[charaDepth F 1]
+
+[charaPut F 1]
+[charaFadeTime F 0.2 0.5]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠ハベトロット
+（！　諦めから復活したのはいいけど、その顔！[r]　ああもう、助けに行く気だなーー！？）
+[k]
+
+[charaFadeout F 0.2]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠妖精騎士ランスロット
+……元気になったのか。[r]頑丈なんだね、きみ。
+[k]
+
+＠妖精騎士ランスロット
+ギャラハッドを名乗るだけはある、というコトか。
+[k]
+
+＠妖精騎士ランスロット
+でも諦めて。[r]ここまでだ、『予言の子』。
+[k]
+
+＠妖精騎士ランスロット
+きみは何処にも行けない。[r]『予言の子』は、ふたりもいらない。
+[k]
+
+[se ade321]
+
+＠妖精騎士ランスロット
+さよなら。妖精騎士を名乗るのも、[r]ギャラハッドを[#騙:かた]るのも早かったね。
+[k]
+
+[messageOff]
+[charaMoveScale C 1.05 0.4]
+[charaMove C 0,15 0.4]
+[se ad60]
+[seStop ad60 0.4]
+[wt 0.2]
+
+[cueSe Servants_303300 bac753]
+[wt 0.2]
+
+[bgmStop BGM_EVENT_24 0.5]
+
+[se ad963]
+[seVolume ad963 0 0.8]
+[wt 0.4]
+[seStop ad963 0.3]
+[cueSe Servants_301200 bac768]
+[wt 0.4]
+[se ad960]
+[se ad961]
+[fowardEffect bit_talk_fire_wall 0,0 H]
+[wt 0.5]
+[se ad7]
+[seVolume ad7 0 0.8]
+[charaFace C 2]
+[charaMoveScale C 1.0 0.1]
+[charaMove C 0,0 0.1]
+[wt 3.5]
+[charaFace C 3]
+
+＠妖精騎士ランスロット
+[line 3]誰。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaScale C 1.0]
+
+[se ad60]
+[wt 1.5]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.7 1]
+[seStop ad60 0.4]
+[wt 1.5]
+
+[bgm BGM_MAP_1 0.1]
+
+＠？？？
+悪いね。[r]そのお嬢ちゃんはオレの知り合いでな。
+[k]
+
+＠？？？
+手を出したくはなかったんだが、[r]ここで死なれるのはちと都合が悪い。
+[k]
+
+＠？？？
+退いてくれランスロット。[r]そうすりゃお互い、早く住みかに帰れるってもんだ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠マシュ
+あなたは[line 3][r]もしや、いつも見守っていてくれた狼さんの……？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠？？？
+なんだよ、モロバレじゃねえか。
+[k]
+
+＠？？？
+勘がいい、いや、[r]相変わらずいい洞察力だ、お嬢ちゃん。
+[k]
+
+＠？？？
+コイツはオレに任せて逃げな。[r]時間かせぎくらいなら何とかなる。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マシュ
+は、はい、お言葉に甘えます！[r]ありがとうございます、ローブのひと！
+[k]
+
+[messageOff]
+[se ad7]
+[charaMove A -50,0 0.2]
+[charaFadeout A 0.2]
+[wt 0.2]
+[se ade427]
+[seStop ade427 1.5]
+[wt 2.0]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠？？？
+ってなんだァ、外じゃねえのか！？[r]城に戻ってどうすんだオーーーイ！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ハベトロット
+やっぱりなぁ……
+[k]
+
+[charaFace B 6]
+＠ハベトロット
+でもまあ仕方ない、それがマシュなんだわ！
+[k]
+
+＠ハベトロット
+グリム！　オマエ、グリムだろ！[r]久しぶりで悪いけど、ここよろしく！
+[k]
+
+[messageOff]
+[charaMove B -50,0 0.5]
+[charaFadeout B 0.4]
+[se ad59]
+[seStop ad59 1.5]
+[wt 2.0]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠賢人グリム
+おう、任せな。[r]相手がコイツじゃ間違いなく殺されるけどな！
+[k]
+
+[charaFace D 0]
+
+＠賢人グリム
+そういうワケなんで相手をしてくれるかい？[r]相討ち覚悟で城の外までぶっ飛ばしてやるからよ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠妖精騎士ランスロット
+……グリム。[r]そう、きみが賢人グリム……。
+[k]
+
+＠妖精騎士ランスロット
+妖精暦を生きた、救世主の使い魔。[r]懲りもせず、[#女王暦:い　　ま]になって召喚されたサーヴァント。
+[k]
+
+[charaFace C 0]
+
+＠妖精騎士ランスロット
+女王陛下から処理していい、と言われている。[r]……一応聞くけど、遺言はある？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠賢人グリム
+長すぎてとても言えねえよ。[r]ま、お互い妖精國じゃあよそ者だ。
+[k]
+
+＠賢人グリム
+周りを気にせず、好き放題暴れようぜ！
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_1 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

@@ -1,0 +1,167 @@
+
+
+＄03-00-08-04-6-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5045000 1 アルトリア]
+[charaSet B 2008002 1 トリスタン]
+[charaSet D 1098124500 1 ダ・ヴィンチ]
+[charaSet E 1098209700 1 甲冑を着た妖精]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[charaSet L 98006200 1 ？？？]
+[charaSet M 98006200 1 エネミー2]
+[charaSet N 98006200 1 エネミー3]
+
+[scene 118500]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk off]
+[se ad138]
+[charaFace L 0]
+[charaFadein L 0.1 1]
+[wt 0.8]
+
+[se ad138]
+[charaFace M 0]
+[charaFadeinFSL M 0.4 0]
+[wt 0.2]
+[se ad138]
+[charaFace N 0]
+[charaFadeinFSR N 0.4 2]
+[wt 1.0]
+
+
+
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 18]
+[charaFadein D 0.1 1]
+＠ダ・ヴィンチ
+倒しても倒してもキリがない！[r]どこかに使い魔の[#本:もと]になっている妖精がいるはずだ！
+[k]
+
+＠ダ・ヴィンチ
+[%1][&君:ちゃん]、探せるかい！？[r]こっちは使い魔を止めるので手一杯だ！
+[k]
+
+？1：[line 3]まかせて[line 3]！
+？2：（冷静に、よく見るんだ……！）
+
+？！
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[cameraMove 1.0 50,0 1.2]
+[wt 1.5]
+[cameraMove 1.5 -50,0 1.2]
+[wt 2.0]
+[cameraMove 0.5 -120,40 1.3]
+[wt 0.8]
+
+
+？1：いた！　あそこの建物の陰に、なんかいる！
+
+？！
+
+[cameraHome 0.5]
+[wt 0.5]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠トリスタン
+……確かにそこだけ音がありませんね。[r]物陰に隠れているようですが[line 3]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad151]
+[wt 1.0]
+[se bac127]
+[effect bit_talk_Slash_white_01_L 300,0]
+[wt 0.2]
+[se bac127]
+[effect bit_talk_Slash_white_01 310,0]
+[wt 0.2]
+[se bac128]
+[effect bit_talk_ichimon01wh 300,0]
+[wt 0.5]
+[effectDestroy bit_talk_ichimon01wh]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠トリスタン
+我が幻奏の前に遮蔽物など盾にもならず……[r]胴を四つに切断しましたが、いかが？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 1]
+[wt 0.4]
+
+＠甲冑を着た妖精
+お、のれ[line 3]貴様ら、何者だ。[r]今の不思議の技……人間でも妖精でもない。
+[k]
+
+＠甲冑を着た妖精
+そしてモースでも、円卓軍でもない……[r]もしや、『予言の子』か？
+[k]
+
+＠甲冑を着た妖精
+は。はははは！[r]それはいい、私にも運が向いてきた！
+[k]
+
+＠甲冑を着た妖精
+我が名はグラント、騎士グラント！[r]『予言の子』の魔術なぞ、陛下に及ぶべくもない！
+[k]
+
+＠E：騎士グラント
+モルガン陛下から戴いたこの甲冑、[r]一度や二度の刃で壊れると思うなよ……！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 26]
+[charaFadein A 0.1 1]
+
+＠アルトリア
+……！[r]なにあの中身、ただの妖精じゃない……！？
+[k]
+
+＠アルトリア
+気をつけて、みんな！[r]たぶん、あいつが噂の妖精騎士だ……！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

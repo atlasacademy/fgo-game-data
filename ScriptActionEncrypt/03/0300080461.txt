@@ -1,0 +1,295 @@
+
+
+＄03-00-08-04-6-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5045000 1 アルトリア]
+[charaSet B 2008002 1 トリスタン]
+[charaSet C 1098124500 1 ダ・ヴィンチ]
+
+[charaSet D 1098209700 1 モルガン兵]
+[charaSet E 1098209700 1 モルガン兵2]
+[charaSet F 1098209700 1 モルガン兵3]
+
+[charaSet G 98016000 1 武装した兵士]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+[wt 0.5]
+
+[se ad1053]
+[effect bit_talk_quick_slash]
+[wt 0.4]
+[se bac308]
+[wt 0.8]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 118500]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+[charaShake D 0.05 2 2 0.8]
+
+[fadein black 0.7]
+[wait fade]
+
+＠D：騎士グラント
+ガッ[line 3]…………。
+[k]
+
+[messageOff]
+[se ad240]
+[fowardEffect bit_talk_35]
+[wt 1.5]
+
+＠D：騎士グラント
+無念……キャメロットの騎士が、[r]このような、小兵どもに、敗れるとは[line 3]
+[k]
+
+[messageOff]
+[charaMove D 0,-50 0.4]
+[charaFadeout D 0.4]
+[wt 0.4]
+[cueSe SE_21 21_ad1074]
+[wt 1.5]
+
+？1：倒れたまま動かない……
+？2：倒した……[&のか:の]？
+
+？！
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠アルトリア
+…………。
+[k]
+
+[charaFace A 1]
+[bgm BGM_EVENT_77 0.1]
+
+＠アルトリア
+やりました、勝利です！[r]めっちゃくちゃ強かったけど、妖精騎士を倒しました！
+[k]
+
+＠アルトリア
+これもみなさんのおかげですね！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠トリスタン
+……いえ。[r]今のはおそらく、ただの騎士です。
+[k]
+
+＠トリスタン
+グラントというのは円卓の騎士の名ではありません。[r]それに、あちらを。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad769]
+[seVolume ad769 0 0]
+[seVolume ad769 1.0 1.0]
+[wt 1.5]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth D 5]
+[charaDepth E 4]
+[charaDepth F 3]
+
+[charaFace D 0]
+[charaFace E 0]
+[charaFace F 0]
+[charaFadein D 0.2 1]
+[wt 0.2]
+[charaFadeinFSR E 0.2 300,0]
+[wt 0.2]
+[charaFadeinFSL F 0.2 -300,0]
+[seStop ad769 0.2]
+[bgm BGM_EVENT_80 0.1]
+[wt 1.5]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 31]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+うわ、さっきと同じ魔力量の騎士が、[r]まだ３騎も残ってる～～！
+[k]
+
+[charaFace C 2]
+
+＠ダ・ヴィンチ
+一騎でもきつかったんだ、[r]さすがに我々の手に余る！
+[k]
+
+＠ダ・ヴィンチ
+一旦逃げよう、[%1]！
+[k]
+
+？1：でも[line 3]
+？2：まだ、マシュが[line 3]！
+
+？！
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad882]
+[seVolume ad882 0 0.3]
+[se ad728]
+[seVolume ad728 0 0.3]
+[se ade393]
+[seVolume ade393 0 0.3]
+[shake 0.05 1 1 1.0]
+
+[se ad726]
+[seVolume ad726 0 0.1]
+[seVolume ad726 1.5 1.0]
+[wt 1.5]
+
+[seStop ad726 3.0]
+[seStop ade393 3.0]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠武装した兵士
+よし、城門を抜いたぞーーー！[r]一番隊、三番隊、私と共に正面のモルガン兵を叩け！
+[k]
+
+＠武装した兵士
+二番隊は工場を制圧しろ！[r]処理される前に中の同志たちを解放する！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠モルガン兵
+城門から援軍だと！？[r]おのれ、『予言の子』は陽動か……！
+[k]
+
+＠モルガン兵
+ええい、まずは城門を取り戻す！[r]やつらはロンディニウムの反乱軍だ！
+[k]
+
+＠モルガン兵
+何人かモースの毒鉄で武装している！[r]手強いぞ、侮るなよ！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_80 1.5]
+[charaFadeout D 0.1]
+[wt 0.1]
+[se ad726]
+[seVolume ad726 0 0.1]
+[se ade393]
+[seVolume ade393 0 0.3]
+[seVolume ad726 1.5 1.0]
+[wt 1.5]
+[seStop ad726 3.0]
+[seStop ade393 3.0]
+[wt 1.0]
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠トリスタン
+これは……予期せぬ援軍のようですね。[r]話に聞いていた反乱軍……でしょうか。
+[k]
+
+＠トリスタン
+個々の能力では劣っているものの、[r]数では圧倒的に勝っています。
+[k]
+
+＠トリスタン
+……あれは時間の問題ですね。[r]３騎の妖精は、もはや[#斃:たお]される運命かと。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 25]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+……ああ、そのようだね。[r]間一髪のところ、助かったけど……
+[k]
+
+＠ダ・ヴィンチ
+[#反乱軍:か　れ　ら]が妖精たちを倒した後、[r]我々に友好的とはかぎらない。
+[k]
+
+＠ダ・ヴィンチ
+今のうちにマシュを捜そう[r][%1][&君:ちゃん]。
+[k]
+
+＠ダ・ヴィンチ
+反乱軍と接触するのはその後にするべきだ。[r]アルトリア、先導を頼めるかい？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+[wt 0.8]
+[charaFace A 2]
+
+＠アルトリア
+そ、そうだった！[r]任せて、ドアの鍵開けは得意分野です！
+[k]
+
+[charaFace A 5]
+
+＠アルトリア
+ダ・ヴィンチちゃんの言う通り、[r]反乱軍だからといって味方じゃないし、
+[k]
+
+＠アルトリア
+何かある前にマシュさんを捜し出して、[r]見つからずに脱出しましょう！
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_70 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
