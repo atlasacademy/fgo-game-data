@@ -1,0 +1,328 @@
+
+
+＄94-03-85-07-1-1
+
+[soundStopAll]
+
+[charaSet A 98001000 1 "Chief Retainer Mash"]
+[charaSet B 7035001 1 "Mori Nagayoshi"]
+[charaSet C 6002000 1 "Momochi Hassandayu"]
+[charaSet D 1098118800 1 Hostage]
+[charaSet E 1098173100 1 "Man Dressed Like a Warrior Monk"]
+[charaSet H 98115000 1 Effect]
+
+[imageSet I back10001 1]
+[charaScale I 1.01]
+
+[charaDepth E 1]
+[charaDepth D 3]
+[charaDepth I 2]
+
+[scene 20110]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk depthOff]
+
+[charaFace E 2]
+[charaFace D 2]
+[charaFadein E 0.1 1]
+[wt 0.4]
+
+[charaMoveReturn E 10,0 0.3]
+[se ad7]
+[seVolume ad7 0 0.5]
+
+[charaFadein D 0.3 150,-30]
+[charaMove D 120,-30 0.3]
+[wt 0.1]
+
+[charaShake D 0.04 2 2 0.25]
+[wt 0.2]
+[se ad51]
+[seVolume ad51 0 0.6]
+[wt 0.8]
+
+[charaTalk E]
+
+
+＠Man Dressed Like a Warrior Monk
+S-stay back! One more step, and they're dead!
+[k]
+
+＠Hostage
+P-please, help me...
+[k]
+
+？1：That's playing dirty!
+
+？2：Dammit! Now what do we do?
+
+？！
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+
+＠Mori Nagayoshi
+Oh? Now you're taking hostages, huh?
+[k]
+
+[charaFace B 11]
+
+＠Mori Nagayoshi
+And that's s'posed to stop us how, exactly!?
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se bac5]
+[charaScale H 1.5]
+[charaPut H 1]
+[charaEffect H bit_talk_Slash_red_01_L]
+[wt 0.6]
+
+[se ad7]
+
+[charaTalk off]
+
+[charaFace E 3]
+[charaFace D 2]
+[charaFadein E 0.1 1]
+[charaFadein D 0.1 120,-30]
+[wt 0.3]
+[charaShake E 0.05 2 2 0.2]
+[charaShake D 0.05 2 2 0.2]
+[wt 0.4]
+
+[charaTalk on]
+[charaTalk E]
+
+＠Man Dressed Like a Warrior Monk
+Wha!? Don't you care if they live or die!?
+[k]
+
+[charaFace E 2]
+
+＠Man Dressed Like a Warrior Monk
+I can't believe this! All right, fine! Kill them all!
+[k]
+
+[messageOff]
+[charaTalk D]
+[charaFace D 2]
+[bgm BGM_EVENT_3 0.1 0.5]
+[wt 0.7]
+
+[charaFace D 0]
+
+＠Hostage
+Heh. I see you don't hesitate for a moment, Lord Mori. If these villains are going to resort to cowardly tricks, it's only fair that we not let the law constrain us either.
+[k]
+
+[messageOff]
+
+[se ade153]
+[seStop ad72 1.0]
+[fowardEffect bit_talk_40 0,-130]
+[wt 0.2]
+
+[charaFadein I 0.7 0,-200]
+[wt 0.5]
+
+[fadeout white 0.3]
+[wait fade]
+
+[charaTalk depthOn]
+
+[se ade310]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.4]
+
+[charaPut C 1]
+[charaTalk C]
+[charaFace C 0]
+
+[fadein white 0.3]
+[wait fade]
+
+[charaSpecialEffect C appearance 1 0.5]
+[wait charaSpecialEffect C]
+
+[charaFadeout I 1.0]
+[fowardEffectStop bit_talk_40]
+[wt 0.5]
+
+[bgm BGM_EVENT_3 0.5 1.0]
+[wt 1.0]
+
+[charaFace C 5]
+
+＠Momochi Hassandayu
+And of course, my shadowless ninjutsu surpasses cowardice and lawlessness alike. I already freed the hostages shortly after the fighting began.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 3]
+[charaFadein E 0.1 1]
+
+＠Man Dressed Like a Warrior Monk
+Wh-what? Then...
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Chief Retainer Mash
+Well done, Lord Mochi Mochi Hassan![sr]Now go ahead and take them into custody!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠Momochi Hassandayu
+M[messageShake 0.03 4 4 0.1]ochi Mochi!?
+[k]
+
+[messageOff]
+[wt 0.3]
+
+[wipeout rollRight 1.0 0.5]
+[bgmStop BGM_EVENT_3 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[wt 1.0]
+
+[wipein rollLeft 1.0 0.5]
+[wait wipe]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠Mori Nagayoshi
+Hahahahaha! That worked out perfectly, Master![sr]Nice job on your end too, shinobi!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Momochi Hassandayu
+Not at all. I could never have done it without your help. If I hadn't known you were acting, I would have been taken in just as much as they were.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Chief Retainer Mash
+Senpai, may I suggest we invite Lord Hassandayu to help the Chaldea clan in a more official capacity?
+[k]
+
+？1：Just what I was thinking.
+
+？2：How about it, Hassandayu?
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Momochi Hassandayu
+Very well. Now that fate has brought us together, I am happy to employ my shinobi skills in your service.
+[k]
+
+
+
+
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_2 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 82500]
+[wt 2.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_MEIJI 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+＠Momochi Hassandayu
+I am Momochi Hassandayu, wandering shinobi.
+[k]
+
+＠Momochi Hassandayu
+I do have some leadership experience, so I would be happy to take charge of your shinobi brigade.
+[k]
+
+
+[charaFace C 1]
+
+＠Momochi Hassandayu
+What did you say they were called? The Mini Nobu Ninja Army? Hahaha, I look forward to training them.
+[k]
+
+[messageOff]
+[charaFadeout C 0.4]
+[wt 0.7]
+
+Momochi Hassandayu pledged his loyalty to you.[sr](You can now choose him as an NPC.)
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 2.0]
+[bgmStop BGM_MEIJI 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

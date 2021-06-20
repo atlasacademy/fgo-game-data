@@ -1,0 +1,566 @@
+
+
+
+
+＄94-03-84-01-1-1
+
+[soundStopAll]
+
+
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[branch lblConf]
+[label lblNotClear]
+
+[charaSet A 8001000 1 Mash]
+
+
+[branch lblNotClear_out]
+[label lblConf]
+
+[charaSet A 8001410 1 Mash]
+
+
+
+[label lblNotClear_out]
+
+
+[charaSet B 1098173200 1 Soldier?]
+[charaSet C 1098170800 1 Otora]
+[charaSet D 1098172700 1 Villager]
+
+[charaSet H 98115000 1 Effect]
+
+[scene 78700]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.4 -80,0]
+[charaShake A 0.05 2 1 0.6]
+[charaMove A -20,0 0.2]
+[wt 0.2]
+[charaMove A 1 0.2]
+[wt 0.2]
+[seStop ad671 0.5]
+
+＠Mash
+Khh! There really are a lot of them! I don't think I can handle them all on my own after all!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Soldier?
+...Commanding officer detected.[sr]Proceeding to capture and eliminate.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠Mash
+M[messageShake 0.05 4 4 0.2]aster!!!
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+[se ad270]
+[seStop ad270 0.5]
+[charaMoveScale B 1.1 0.1]
+[charaMove B 0,15 0.1]
+[charaEffect H bit_talk_41]
+[wt 0.4]
+
+[fadeout black 0.1]
+[bgmStop BGM_EVENT_3 0.1]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_41]
+
+[scene 10000]
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[se ad32]
+[effect bit_talk_Slash_white_01]
+[effect bit_talk_14]
+[wt 1.0]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 78700]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,15]
+
+[wt 0.1]
+
+[fadein black 0.1]
+[wait fade]
+
+[wt 0.5]
+
+[se ade48]
+[seStop ade48 1.0]
+[charaShake B 0.05 3 3 0.7]
+[charaMove B 0,-50 0.4]
+[charaFadeout B 0.4]
+[wt 1.5]
+
+[charaTalk C]
+[charaFace C 5]
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect C appearance 1 0.25]
+[wt 0.4]
+
+＠Otora
+The weak have been threatened, and I am here to help them.[bgm BGM_EVENT_4 0.1]
+[k]
+
+[charaFace C 6]
+
+＠Otora
+Truly, this is Bisha[line 2]I mean, the heavens at work!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠Mash
+O-Otora!?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠Otora
+I assumed you knew your way around a battlefield, but I never thought you would just charge in headfirst.
+[k]
+
+[charaFace C 1]
+
+＠Otora
+Surely you could have tried to locate a weak point in the enemy formation, or waited for a better opportunity to strike.
+[k]
+
+＠Otora
+You'd both be dead right now if I hadn't been around, you know.
+[k]
+
+？1：You're right. I'm sorry, and thank you!
+
+？！
+
+[charaFace C 16]
+
+＠Otora
+...!
+[k]
+
+[charaFace C 14]
+
+＠Otora
+Ahahahahahaha![sr]Even now, you're still thanking me!?
+[k]
+
+＠Otora
+Ahahaha! You two are very unusual, aren't you?
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+[se ad7]
+[charaMoveScale B 1.1 0.1]
+[charaMove B 0,15 0.1]
+[charaPut H 1]
+[charaEffect H bit_talk_41]
+[wt 0.4]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_41]
+
+[se ad32]
+[fowardEffect bit_talk_ichimon01wh 0,-100]
+[fowardEffect bit_talk_14]
+[wt 0.1]
+[charaShake B 0.05 3 3 0.3]
+[wt 0.5]
+
+[charaShake B 0.05 3 3 0.7]
+[charaMove B 0,-50 0.4]
+[charaFadeout B 0.2]
+[wt 0.3]
+[fowardEffectDestroy bit_talk_ichimon01wh]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠Otora
+Yes, yes, I haven't forgotten about you.[sr]Just be quiet and stay out of our way for a bit.
+[k]
+
+[charaFace C 0]
+
+＠Otora
+All right, first order of business, we send these thugs to kingdom come. I'll cut through their ranks, while you defend [%1]!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠Mash
+R-right! Get behind me, Senpai!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠Otora
+Excellent. I'm glad you're so agreeable.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠Soldier?
+Enemy reinforcements detected. Enemy force strength unknown. Querying backup possibilities.
+[k]
+
+[messageOff]
+
+[se ad473]
+[seStop ad473 0.5]
+[fowardEffect bit_talk_Slash_white_01_L]
+[fowardEffect bit_talk_14]
+[wt 0.1]
+[charaShake B 0.05 3 3 0.3]
+[wt 0.4]
+
+[charaShake B 0.05 3 3 0.7]
+[charaMove B 0,-50 0.5]
+[charaFadeout B 0.3]
+[wt 0.4]
+
+[charaTalk C]
+[charaFace C 14]
+[charaFadein C 0.1 1]
+
+＠Otora
+What are you talking about? This is a battlefield. If you're going to retreat, then retreat. If you're going to fight, then fight!
+[k]
+
+[charaFace C 5]
+
+＠Otora
+I don't know which clan you're from, but anyone who would torment civilians like this deserves no mercy!
+[k]
+
+[charaFace C 13]
+
+＠Otora
+Since Bishamo[line 2]the heavens can't punish you themselves, I'll have to do it in their stead!
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_4 1.0 0.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[charaScale B 1.0]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+
+
+[se ad170]
+[wt 0.5]
+
+[se ad33]
+[wt 1.5]
+
+[se ad32]
+[wt 0.5]
+
+[fadein black 1.0]
+[bgmStop BGM_EVENT_4 1.0]
+[wait fade]
+
+＠Soldier?
+Operation...aborted...
+[k]
+
+[messageOff]
+
+[se ad471]
+[seStop ad471 1.0]
+[effect bit_talk_v_slash01]
+[wt 0.4]
+[charaShake B 0.05 3 3 0.7]
+[wt 0.5]
+
+[se ade48]
+[seStop ade48 1.0]
+[charaMove B 0,-50 0.4]
+[charaFadeout B 0.4]
+[wt 0.4]
+[charaShakeStop B]
+[wt 1.2]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Otora
+Hmm, well that's disappointing. I thought they would put up a little more fight than that.
+[k]
+
+＠Otora
+And then there's the strange armor they're wearing...
+[k]
+
+？1：W-wow, she's really strong...
+
+？2：She took them all out on her own in no time flat!
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠Mash
+I didn't realize you were a Servant too, Otora.[bgm BGM_EVENT_2 0.1]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Otora
+Sorry for keeping that from you. I wanted to see what kind of people you were before I said anything.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠Villager
+I don't know who you are, but thank you![sr]You saved our lives!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 7]
+[charaFadein C 0.1 1]
+
+＠Otora
+Please, pay it no mind.[sr]The strong are obligated to protect the weak.
+[k]
+
+[charaFace C 1]
+
+＠Otora
+Besides, it's these two who really deserve your thanks. I was just following their lead.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠Villager
+Yes, we can't thank you two enough either. I've never seen clothes like yours before. Are you travelers?
+[k]
+
+？1：Uh, yeah, something like that... So, what is this place?
+
+？2：Basically. By the way, can you tell us where we are?
+
+？！
+
+＠Villager
+Oh yes, where are my manners? You must be exhausted. Why not stay in our village today? We'd love to have you, and you'd be right as rain by tomorrow.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+
+＠Otora
+That sounds great. Why don't we take him[sr]up on his kind offer, Mash and [%1]?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Mash
+I second that, Senpai.[sr]Let's stay here and rest for the night.
+[k]
+
+＠Mash
+...By the way, you don't seem to have a Master, Otora. May I ask why?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠Otora
+...You're a sharp one, aren't you? No, I've been summoned to this land, but don't have a Master to call my own.
+[k]
+
+＠Otora
+At this rate, it'll probably just be a matter of time until my magical energy runs out and I disappear...
+[k]
+
+[charaFace C 8]
+
+＠Otora
+I know! Maybe there's a reason that we met, and maybe we could form a temporary contract while we're here?
+[k]
+
+？1：Fine with me.
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠Mash
+Just like that!? Your ability to roll with the punches always surprises me, Senpai, and today is no exception!
+[k]
+
+？2：What do you think, Mash?
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠Mash
+Y-you're asking me?
+[k]
+
+＠Mash
+Well...we just saw how strong Otora is for ourselves, so I know I would feel reassured by having her accompany us.
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+
+＠Otora
+Then it's settled! Don't worry, I'm at least a little better at fighting than I look.
+[k]
+
+[charaFace C 14]
+
+＠Otora
+So please rest assured that you're in good hands with Naga[line 2]Er, Otora!
+[k]
+
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

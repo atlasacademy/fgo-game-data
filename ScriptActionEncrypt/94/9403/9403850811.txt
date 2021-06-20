@@ -1,0 +1,183 @@
+
+
+＄94-03-85-08-1-1
+
+[soundStopAll]
+
+[charaSet A 98001000 1 "Chief Retainer Mash"]
+[charaSet B 5001001 1 "Restaurant Owner Medea"]
+[charaSet C 1098118800 1 Employee]
+[charaSet D 3038000 1 "Nagao Kagetora"]
+
+[scene 40600]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+[wt 0.2]
+
+[fowardEffect bit_talk_kengekiall02]
+[se ad470]
+[seStop ad470 0.5]
+[wt 0.3]
+
+[charaShake B 0.02 3 3 1.1]
+
+[se ad470]
+[seStop ad470 0.5]
+[wt 0.2]
+[se ad471]
+[seStop ad471 0.5]
+[wt 0.4]
+[fowardEffect bit_talk_ichimon01wh]
+[fowardEffect bit_talk_14]
+[se ad471]
+[wt 1.0]
+[bgmStop BGM_EVENT_3 1.0]
+[seStop ad471 0.5]
+
+[fowardEffectDestroy bit_talk_ichimon01wh]
+
+[se ad144]
+[charaFace B 4]
+[charaShake B 0.02 3 3 0.7]
+[charaMove B 0,-30 0.5]
+[charaFadeout B 0.4]
+
+[wt 2.0]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.4 0,-30]
+[charaMove B 1 0.4]
+[wt 0.4]
+
+＠Restaurant Owner Medea
+I lost... Now I'm going to go broke, what with all the extra stock of kykeon I have left over...
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠Nagao Kagetora
+Huh, so this is kykeon? [bgm BGM_EVENT_2 0.1]It's really good.
+[k]
+
+[charaFace D 1]
+
+＠Nagao Kagetora
+Maybe we really could use this to feed the Chaldea[sr]clan's army, [%1]. It's definitely tasty,[sr]and it seems to be rich in nutrients too.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠Restaurant Owner Medea
+Um... Who are you again? Eh, doesn't matter.[sr]What matters is that you are a man of taste.
+[k]
+
+＠Restaurant Owner Medea
+It's true. Kykeon can even be taken as medicine! It's that good for you! And I'm sure you could all use a steady source of nutritious meals, since you're fighting a nearly endless war.
+[k]
+
+？1：If you like it that much, Kagetora, then it's fine with me.
+
+？2：All right Medea, you've got yourself a deal.
+
+？！
+
+[charaFace B 0]
+
+＠Restaurant Owner Medea
+Phew! That takes care of this month's stock.[sr]Now I can finally relax and[line 2]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_2 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠Employee
+Excuse me, Boss, but we just got another shipment of kykeon in from the main office.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠Restaurant Owner Medea
+S[messageShake 0.01 4 4 0.8]end it back, dammit! [bgm BGM_EVENT_7 0.1]Argh! I swear,[sr]Auntie always goes overboard with these things!
+[k]
+
+
+
+
+
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_7 1.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 82500]
+[wt 2.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_MEIJI 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+＠Restaurant Owner Medea
+I'm Medea, the owner of the local kykeon restaurant. I'll make sure Chaldea's kitchens are shipshape from now on.
+[k]
+
+＠Restaurant Owner Medea
+Now, if you'll excuse me,[sr]this kykeon stock isn't going to carry itself...
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[wt 0.7]
+
+Restaurant Owner Medea pledged her loyalty to you.[sr](You can now choose her as an NPC.)
+[k]
+
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 2.0]
+[bgmStop BGM_MEIJI 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
+

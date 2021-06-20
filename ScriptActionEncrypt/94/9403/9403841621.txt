@@ -1,0 +1,310 @@
+
+
+
+
+＄94-03-84-16-2-1
+
+[soundStopAll]
+
+[charaSet A 3038000 1 "Nagao Kagetora"]
+[charaSet B 1098173500 1 "God of Makuzu"]
+[charaSet C 7035001 1 "Mori Nagayoshi"]
+[charaSet D 1098138000 1 "Sakamoto Ryouma"]
+[charaSet E 1098139000 1 Oryou]
+[charaSet F 1098173900 1 "High Priest of Makuzu"]
+[charaSet G 98001000 1 "Chief Retainer Mash"]
+[charaSet H 98115000 1 Effect]
+[charaSet I 98115000 1 Effect]
+[charaSet J 98115000 1 Effect]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[branch lblConf]
+[label lblNotClear]
+
+[charaSet G 8001000 1 Mash]
+
+
+[branch lblNotClear_out]
+[label lblConf]
+
+[charaSet G 8001410 1 Mash]
+
+
+
+[label lblNotClear_out]
+
+
+
+
+[charaDepth D 10]
+[charaDepth E 1]
+
+[charaDepth J 1]
+[charaScale J 2.0]
+[charaPut J 1200,1200]
+[charaEffect J bit_talk_blackhole_gate]
+
+
+[scene 79401]
+
+[bgm BGM_EVENT_63 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaPut I 0,100]
+
+[charaTalk A]
+[charaFace A 13]
+[charaFadein A 0.1 1]
+[charaEffect I bit_talk_radiallight02_big]
+[charaEffect A bit_talk_diremond_dust]
+
+＠Nagao Kagetora
+Gallop, Houshou Tsukige![sr]Bishamonten's protection is with us!
+[k]
+
+＠Nagao Kagetora
+Bishamonten's...Eight Aspect Rotating Formation!
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+[charaPut A 1200,1200]
+[charaEffectStop I bit_talk_radiallight02_big]
+[charaEffectStop A bit_talk_diremond_dust]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[charaPut J 0,350]
+[wt 0.1]
+
+[charaScale H 1.5]
+[charaPut H 0,150]
+[charaEffect H bit_talk_Slash_white_01]
+[fowardEffect bit_talk_14]
+[se ad470]
+[seStop ad470 0.5]
+[charaShake B 0.05 3 3 0.3]
+[wt 0.4]
+
+[charaEffect H bit_talk_Slash_white_01_L]
+[fowardEffect bit_talk_14]
+[charaShake B 0.05 3 3 0.3]
+[se ad471]
+[seStop ad471 0.5]
+[wt 0.4]
+
+[fowardEffect bit_talk_kengekiall02]
+[se ad470]
+[wt 0.3]
+[se ad470]
+[seStop ad470 0.5]
+[charaShake B 0.05 3 3 0.6]
+[wt 0.2]
+[se ad471]
+[seStop ad471 0.5]
+[wt 0.4]
+
+[se ad471]
+[effect bit_talk_h_slash01]
+[wt 0.3]
+[charaShake B 0.05 3 3 0.5]
+[wt 1.2]
+
+[charaShake B 0.05 3 3 0.8]
+
+＠God of Makuzu
+RRRAAAaaahhh...
+[k]
+
+[messageOff]
+[se ad42]
+[charaEffect B bit_talk_06b2]
+[wt 2.5]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut B 1200,1200]
+[charaPut J 1200,1200]
+[charaEffectStop B bit_talk_06b2]
+[charaEffectStop J bit_talk_blackhole_gate]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠Nagao Kagetora
+How's that!?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠Mori Nagayoshi
+Damn, war god, way to go![sr]That thing's really disappearing!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 10]
+[charaFace E 5]
+[charaFadein D 0.1 1]
+[charaFadein E 0.1 1]
+
+＠Sakamoto Ryouma
+She literally is an avatar of Bishamonten, isn't she? No wonder Uesugi Kenshin was known as the strongest daimyo of the Warring States period.
+[k]
+
+[charaFace E 1]
+
+＠Oryou
+Even Oryou is surprised by how strong she is.[sr]Are we sure she's even human?
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠High Priest of Makuzu
+This can't be happening! Bishamonten can't possibly have possessed you! He can't!
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠Nagao Kagetora
+...Maybe he has, maybe he hasn't. What matters is that your dreams of “paradise” have come to an end.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_63 2.0]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠High Priest of Makuzu
+No! I refuse to accept this! There are no gods or Buddha in this world! None! If there were, they should have shown up when[line 2]
+[k]
+
+＠High Priest of Makuzu
+No matter! All I know for sure is,[sr]there are no gods in this world! None!
+[k]
+
+[messageOff]
+
+[se ad39]
+[charaScale H 1.0]
+[charaPut H 1]
+[charaPut I 1200,1200]
+[charaEffect H bit_talk_20]
+[charaEffect I bit_talk_20]
+[wt 2.5]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaEffectDestroy H bit_talk_20]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+
+＠Chief Retainer Mash
+I-is that...the light from a Holy Grail!?[bgm BGM_EVENT_24 0.1]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+
+＠High Priest of Makuzu
+That's right! I still have this! Now, return, Lord Makuzu! Use the power of the Holy Grail to return to glorious life!
+[k]
+
+＠High Priest of Makuzu
+As long as I have the Holy Grail and Maxwell's Demon, my true, glorious god will return as many times as I wish!
+[k]
+
+[messageOff]
+[charaEffectStop I bit_talk_20]
+
+[se ad95]
+[seVolume ad95 0 0.1]
+[seVolume ad95 0.5 1.0]
+
+[wt 0.6]
+[charaFadeout F 0.1]
+
+[charaSet H 1098174900 1 "Nobbu-Head Silhouette"]
+[wt 1.0]
+
+[bgmStop BGM_EVENT_24 1.0]
+[wt 0.5]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.4 1]
+[wt 0.4]
+[seStop ad95]
+
+＠H：???
+Not if I have anything to say about it.
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠High Priest of Makuzu
+Wh-who are you!?
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠Chief Retainer Mash
+It's...!
+[k]
+
+[messageOff]
+[fadeout black 2.0]
+
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

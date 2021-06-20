@@ -1,0 +1,953 @@
+
+
+
+
+＄94-03-84-16-2-0
+
+[soundStopAll]
+
+[charaSet A 1098131000 1 "Dark Giant"]
+[charaSet B 7035001 1 "Mori Nagayoshi"]
+[charaSet C 1098173900 1 "High Priest of Makuzu"]
+[charaSet D 1098138000 1 "Sakamoto Ryouma"]
+[charaSet E 1098139000 1 Oryou]
+
+[charaSet G 1098171500 1 Maxwell]
+[charaSet H 3038000 1 "Nagao Kagetora"]
+[charaSet I 1098173500 1 "God of Makuzu"]
+
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[branch lblConf]
+[label lblNotClear]
+
+[charaSet F 8001000 1 Mash]
+
+
+[branch lblNotClear_out]
+[label lblConf]
+
+[charaSet F 8001410 1 Mash]
+
+
+
+[label lblNotClear_out]
+
+
+[charaDepth D 10]
+[charaDepth E 1]
+
+[scene 79800]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.3]
+
+[effect bit_talk_kengekiall03]
+[wt 0.1]
+[se bac14]
+[charaShake A 0.05 3 3 0.5]
+[wt 0.3]
+[flashin once 0.1 0.3 CC3300AF CC330000]
+[se ad32]
+[wt 0.2]
+[se ad32]
+[wt 0.4]
+
+[se bac7]
+[effect bit_talk_Slash_red_01_L]
+[flashin once 0.1 0.3 CC3300AF CC330000]
+[charaShake A 0.05 3 3 0.5]
+[wt 0.5]
+
+
+
+＠Dark Giant
+RRRAAAHHH...!
+[k]
+
+[messageOff]
+[wt 0.5]
+[charaSpecialEffect A enemyErasure 1 1.2]
+[se ba6]
+[se ad161]
+[wait charaSpecialEffect A]
+[wt 1.0]
+
+[se ade50]
+[se ad414]
+[se ade112]
+[fowardEffect bit_talk_grail_mud]
+[shake 0.04 4 4 2.5]
+
+[charaTalk A]
+[charaFace A 0]
+[se ade50]
+[se ad414]
+[se ade112]
+[charaSpecialEffect A appearance 1 1.7]
+[wait charaSpecialEffect A]
+
+[fowardEffectStop bit_talk_grail_mud]
+
+[seStop ade50 1.0]
+[seStop ad414 1.0]
+[seStop ade112 1.0]
+[wt 1.0]
+
+[shake 0.02 4 4 0.5]
+
+＠Dark Giant
+RRRAAAAAAHHH!!!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠Mori Nagayoshi
+What's with these things?[sr]Every time you kill one, more pop up in its place!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠High Priest of Makuzu
+Are you truly so surprised?
+[k]
+
+＠High Priest of Makuzu
+After all, Lord Makuzu's limitless magical energy can make as many of them as I wish.
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFace E 5]
+[charaFadein D 0.1 1]
+[charaFadein E 0.1 1]
+
+＠Sakamoto Ryouma
+Hmm, I don't like how this is going. Let's fall back for now. This place is too cramped to give them a real fight.
+[k]
+
+＠Oryou
+It's frogshit that these guys get infinite respawns. Tomoe would go ballistic on no good cheating cheaters like them!
+[k]
+
+？1：You heard Sakamoto, guys! Let's all fall back for now!
+
+？2：Let's come back once we've come up with a plan!
+
+？！
+
+[messageOff]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad59]
+[wt 0.5]
+[seStop ad59 1.0]
+
+[wipeout rightToLeft 0.5 1.0]
+[bgmStop BGM_EVENT_3 0.5]
+[wait wipe]
+
+[wt 1.0]
+
+[fadeout black 0.1]
+[wait fade]
+
+[wipein leftToRight 0.1 1.0]
+[wait wipe]
+
+[pictureFrame cut063_cinema]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+[fadein black 1.0]
+[wait fade]
+
+＠High Priest of Makuzu
+...You poor fools. You still don't realize there is no escape from my paradise.
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_3 1.0]
+[wait fade]
+
+[pictureFrame]
+
+[charaFadeout C 0.1]
+
+[scene 79401]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_72 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[shake 0.02 4 4 0.5]
+
+＠Dark Giant
+RRRAAAAAAHHH!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠Mori Nagayoshi
+The hell!?[sr]Those things are all over the place even out here!?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠Chief Retainer Mash
+Does this mean they're popping up across the entire Singularity?
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠Maxwell
+Afraid so. They're essentially magical energy distortions that emerge as byproducts of my Noble Phantasm.
+[k]
+
+＠Maxwell
+To put it another way, they're like a chain of fatal errors in the system keeping this world running.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 16]
+[charaFadein H 0.1 1]
+
+＠Nagao Kagetora
+What you're saying is that they signify the fast-approaching end of this world... I see what they mean when they speak of lands where even the gods fear to tread...
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_72 1.0]
+[wt 0.5]
+
+[se ad60]
+[seVolume ad60 0 0.1]
+[seVolume ad60 1.0 1.0]
+[wt 0.5]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+[seStop ad60]
+
+＠High Priest of Makuzu
+You see? As I said, there is no escape.
+[k]
+
+[charaFace C 5]
+
+＠High Priest of Makuzu
+Now, behold Lord Makuzu's true form!
+[k]
+
+[messageOff]
+
+[se ad29]
+[fowardEffect bit_talk_31]
+[wt 0.5]
+
+[fadeout white 0.5]
+[wait fade]
+[charaFadeout C 0.1]
+[wt 1.0]
+[fadein white 0.5]
+[wait fade]
+
+[shake 0.02 4 4 0]
+[se ad14]
+[wt 0.5]
+
+[se ade50]
+[se ad414]
+[fowardEffect bit_talk_blackfire_all]
+[fowardEffectStop bit_talk_blackfire_all]
+[wt 1.0]
+
+[fowardEffect bit_talk_06_b3]
+
+[se ade189]
+[seVolume ade189 0 0.8]
+[charaTalk I]
+[charaFace I 0]
+[charaSpecialEffect I appearance 1 1.7]
+[wait charaSpecialEffect I]
+
+[charaDepth A 1]
+[charaScale A 2.0]
+[charaPut A 0,350]
+[charaEffect A bit_talk_blackhole_gate]
+
+[shakeStop]
+
+[seStop ade50 1.0]
+[seStop ad414 1.0]
+[seStop ad14 1.0]
+[seStop ade189 1.0]
+
+[fadeout white 0.5]
+[wait fade]
+[fowardEffectDestroy bit_talk_blackfire_all]
+[fadein white 0.5]
+[fowardEffectStop bit_talk_06_b3]
+[wait fade]
+[wt 1.0]
+
+[shake 0.02 4 4 0]
+
+＠God of Makuzu
+RRRAAAAAAHHH!!![bgm BGM_EVENT_24 0.1]
+[k]
+
+[shakeStop]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠Chief Retainer Mash
+This giant's magical energy signal is even stronger than the others! And what's that behind it? Is that...a hole?
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠High Priest of Makuzu
+This is the god of Makuzu's true form!
+[k]
+
+＠High Priest of Makuzu
+With a heart of infinity embedded within his flesh, he can make any wish come true, even as it remains unfulfilled.
+[k]
+
+[charaFace C 5]
+
+＠High Priest of Makuzu
+Now, there is nothing and no one left who can stop me! Go on, my lord! Squash them like the insects they are!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[charaPut A 0,350]
+[wt 0.1]
+
+[shake 0.02 4 4 0.3]
+
+＠God of Makuzu
+RRRAAAAAAHHH!
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠Maxwell
+We're too late...
+[k]
+
+＠Maxwell
+There's no stopping this now.
+[k]
+
+＠Maxwell
+What you see there is a truly omnipotent demon, able to remake every aspect of this world at will thanks to his inexhaustible magical energy.
+[k]
+
+＠Maxwell
+That...is Maxwell's Demon.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[charaPut A 0,350]
+[wt 0.1]
+
+[shake 0.02 4 4 0.3]
+
+＠God of Makuzu
+RRRAAAAAAHHH!
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠Mori Nagayoshi
+I don't give a rat's ass about that crap!
+[k]
+
+[messageOff]
+[se ad73]
+[charaMove B -30,0 0.2]
+[charaFadeout B 0.1]
+[wt 0.4]
+
+[fowardEffect bit_talk_v_slash02]
+[wt 0.1]
+[se bac139]
+[wt 0.4]
+
+[charaPut A 0,350]
+[charaTalk I]
+[charaFace I 0]
+[charaFadein I 0.1 1]
+[wt 0.1]
+[charaEffect I bit_talk_14]
+[se ad170]
+[wt 1.2]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaPut A 1200,1200]
+[charaEffectStop A bit_talk_blackhole_gate]
+[wt 0.2]
+
+[se ad7]
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 -20,0]
+[charaMove B 1 0.15]
+[wt 0.4]
+
+＠Mori Nagayoshi
+Dammit! My Ningen Mukotsu isn't even scratching it!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 15]
+[charaFadein H 0.1 1]
+
+＠Nagao Kagetora
+...
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaSet G 1098171510 1 "Caster of Makuzu"]
+
+[charaTalk G]
+[charaFace G 6]
+[charaFadein G 0.1 1]
+
+＠Maxwell
+Now what do I do? It's even stronger than I'd calculated... No, it's worse than that.
+[k]
+
+＠Maxwell
+The reactor core is already going haywire.[sr]There's nothing we can do to stop it...
+[k]
+
+[messageOff]
+
+[charaFadeout G 0.1]
+
+[bgm BGM_EVENT_24 0.7 0.5]
+[wt 0.7]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+
+＠Nagao Kagetora
+...Get out of here, [%1].[sr]I'll handle this.
+[k]
+
+＠Nagao Kagetora
+Don't worry, I'm sure I can at least take it down with me. Remember, I'm still the avatar of Bishamonten.
+[k]
+
+
+？1：I can't just leave you behind, Kagetora!
+
+？2：But we still have to save the children!
+
+？！
+
+[charaFace H 8]
+
+＠Nagao Kagetora
+...?
+[k]
+
+＠Nagao Kagetora
+Come on now, don't be silly.
+[k]
+
+[charaFace H 10]
+
+＠Nagao Kagetora
+Surely you can see that there's nothing you alone can do against such an immeasurably powerful being as that.
+[k]
+
+＠Nagao Kagetora
+And there is no shame in the weak allowing the strong to sacrifice so that they may live.
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠Chief Retainer Mash
+Kagetora, Senpai doesn't[line 2]
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+
+＠Nagao Kagetora
+That high priest person there has a point.
+[k]
+
+＠Nagao Kagetora
+At times...small sacrifices must be made for the greater good.
+[k]
+
+＠Nagao Kagetora
+As a leader, your job is to decide what those sacrifices will be. Now is the time to make a small sacrifice to fulfill your greater obligation.
+[k]
+
+？1：...I don't agree with that.
+
+？2：When it's about people's lives, there's no such thing as a small sacrifice.
+
+？！
+
+[bgmStop BGM_EVENT_24 1.0]
+
+[charaFace H 10]
+
+＠Nagao Kagetora
+...
+[k]
+
+＠Nagao Kagetora
+You know, I've been wondering this about you ever since we met.
+[k]
+
+＠Nagao Kagetora
+Why do you go so far to save others without any regard for your own well-being?
+[k]
+
+＠Nagao Kagetora
+Especially given how you're just an ordinary, weak, powerless human.
+[k]
+
+？1：I mean, it's just more fun having more friends around, right?
+
+？2：Because I know everyone else has my back.
+
+？！
+
+
+[charaFace H 10]
+
+＠Nagao Kagetora
+...?
+[k]
+
+[charaFace H 2]
+
+＠Nagao Kagetora
+...Ahaha! Ahahahaha![bgm BGM_EVENT_48 0.1]
+[k]
+
+＠Nagao Kagetora
+Is that a joke? Have your allies truly left you so blind to your own weakness?
+[k]
+
+＠Nagao Kagetora
+Ahahahahaha! You do know this is a world where the weak die off and the strong thrive, right?
+[k]
+
+＠Nagao Kagetora
+You actually believe that accomplishing nothing on your own and relying on others for everything is all right?
+[k]
+
+＠Nagao Kagetora
+Ahahahahahaha!
+[k]
+
+[charaFace H 11]
+
+＠Nagao Kagetora
+I've never seen a human so weak and pathetic![sr]It's painful just to look at you!
+[k]
+
+＠Nagao Kagetora
+You can't do anything without[sr]relying on others to help you!
+[k]
+
+＠Nagao Kagetora
+You expose your weakness for all to see, and have the audacity to proclaim your lack of power for all to hear!
+[k]
+
+＠Nagao Kagetora
+And on top of that, you say you want to save everyone around you? Ahahahaha!
+[k]
+
+＠Nagao Kagetora
+I've never seen such arrogance![sr]I've never seen such impertinence!
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFace E 5]
+[charaFadein D 0.1 1]
+[charaFadein E 0.1 1]
+
+＠Sakamoto Ryouma
+...
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠Mori Nagayoshi
+Hey! Where the hell do you get off talking down to my Master like that all of a sudden!?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_48 0.7]
+
+[charaTalk H]
+[charaFace H 15]
+[charaFadein H 0.1 1]
+
+＠Nagao Kagetora
+Indeed, yours is a tremendous,[sr]impossibly audacious wish.
+[k]
+
+[charaFace H 13]
+
+＠Nagao Kagetora
+[bgm BGM_EVENT_63 0.1]One that is worth risking[sr]everything I have to fulfill!
+[k]
+
+？1：Kagetora...!
+
+？2：You won't have to do it alone! We'll all help!
+
+？！
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠Mori Nagayoshi
+Couldn't you have just led with that, huh!? 'Sides, everyone here knows full well how amazing our Master is!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 14]
+[charaFadein H 0.1 1]
+
+＠Nagao Kagetora
+I'm sorry, I was just making a clean break. It's important to go into these things fresh, after all.
+[k]
+
+[charaFace H 15]
+
+＠Nagao Kagetora
+...Brother...
+[k]
+
+＠Nagao Kagetora
+...I think I finally understand[sr]what it is that makes people human.
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠Chief Retainer Mash
+Kagetora...!
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠Nagao Kagetora
+Now then, high priest...this Lord Makuzu is supposed to be a god, yes?
+[k]
+
+＠Nagao Kagetora
+Even with all that incredibly arrogant nonsense you've been spouting since we first met, I trust you still remember who it is you're up against?
+[k]
+
+＠Nagao Kagetora
+Just to be sure, let me remind you now.[sr]I am Nagao Kagetora, Echigo's god of war!
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠High Priest of Makuzu
+Is that meant to impress me? You've already introduced yourself. Why bother doing it again?
+[k]
+
+＠High Priest of Makuzu
+You really are just a hopeless Echigo bumpkin of a daimyo, aren't you?
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 7]
+[charaFadein H 0.1 1]
+
+[charaEffect H bit_talk_36_sl01]
+[se ad474]
+[wt 1.5]
+
+＠Nagao Kagetora
+As Himezuru flies, Sanchoumou plays...
+[k]
+
+＠Nagao Kagetora
+As Tanikiri crosses, Gokotai falls back...
+[k]
+
+[seStop ad474 0.5]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠Chief Retainer Mash
+It...it looks like several different swords are gathering around Kagetora!
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 15]
+[charaFadein H 0.1 1]
+
+＠Nagao Kagetora
+As Saiken worships and Shichisei flies by...
+[k]
+
+＠Nagao Kagetora
+What Taimatsu lights up is the treasured spear of Biten...
+[k]
+
+[messageOff]
+
+[se ad476]
+[charaEffectStop H bit_talk_36_sl01]
+[wt 1.0]
+[charaEffect H bit_talk_diremond_dust]
+
+[charaScale A 1.0]
+[charaPut A 0,100]
+[charaEffect A bit_talk_radiallight02_big]
+[wt 1.0]
+[seStop ad476 1.5]
+[wt 1.5]
+
+[charaPut A 1200,1200]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk C]
+[charaFace C 3]
+[charaFadein C 0.1 1]
+
+＠High Priest of Makuzu
+Wh-what's going on? What is that behind you!?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 14]
+[charaFadein H 0.1 1]
+[charaPut A 0,100]
+
+＠Nagao Kagetora
+Oh? I'm surprised you can see. Guess you are a follower of the Buddha, no matter how rotten you've become.
+[k]
+
+[charaFace H 6]
+
+＠Nagao Kagetora
+This is Biten, my guardian. Thanks to them, I have accumulated countless invaluable blades to vanquish enemies of the Buddha with my Noble Phantasm[line 2]
+[k]
+
+[charaFace H 13]
+
+＠Nagao Kagetora
+The Eight-Bladed Guardian, Touhachi Bishamonten!!!
+[k]
+
+[charaPut A 1200,1200]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut H 1200,1200]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠Mori Nagayoshi
+Whoa, the hell is that thing? I can see it too!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠High Priest of Makuzu
+I-impossible! Th-the gods and the Buddha would never appear in this world!
+[k]
+
+＠High Priest of Makuzu
+This cannot be happening!
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 17]
+[charaFadein H 0.1 1]
+[charaPut A 0,100]
+
+＠Nagao Kagetora
+Fear me, god of Makuzu, for I am Bishamonten![sr]Now have at you!
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_63 0.4]
+[wait fade]
+[soundStopAll]
+[end]

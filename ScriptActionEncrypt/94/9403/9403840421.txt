@@ -1,0 +1,587 @@
+
+
+＄94-03-84-04-2-1
+
+[soundStopAll]
+
+[charaSet A 11007001 1 "Oda Kippoushi"]
+[charaSet B 11007000 1 "Infantrywoman Nobbu"]
+[charaSet C 1098172300 1 "Kai Soldier"]
+[charaSet D 6036002 1 "Li Shuwen"]
+[charaSet E 7035001 1 "Mori Nagayoshi"]
+[charaSet F 98001000 1 "Chief Retainer Mash"]
+[charaSet G 3038000 1 "Nagao Kagetora"]
+
+[charaSet J 98115000 1 Effect]
+
+
+[bgm BGM_EVENT_3 0.1]
+
+[scene 78601]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.4 80,0]
+[charaShake A 0.05 2 1 0.6]
+[charaMove A 20,0 0.2]
+[wt 0.2]
+[charaMove A 1 0.2]
+[wt 0.2]
+[seStop ad671 0.5]
+
+[charaFace A 4]
+
+＠Oda Kippoushi
+Dammit! I guess this is it...
+[k]
+
+＠Oda Kippoushi
+I should've known the same Okehazama[sr]trick wouldn't work on me.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+＠Chief Retainer Mash
+It looks like this battle is ours, Senpai.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+＠Infantrywoman Nobbu
+Phew... Kagetora cut it too damn close for comfort, if you ask me.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 16]
+[charaFadein G 0.1 1]
+＠Nagao Kagetora
+...! It's not over yet!
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_3 0.4]
+[charaFadeout G 0.1]
+[wt 0.6]
+
+
+[se ad73]
+[fowardEffect bit_talk_quickmove]
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,-40]
+[charaMove D 0,0 0.1]
+[wt 0.4]
+＠Li Shuwen
+It's too late. By the time you realize what's happened, my strike will already have ended this. Don't worry, I'll make it fast.
+[k]
+
+＠Li Shuwen
+This may not be the cleanest solution,[sr]but it's certainly effective!
+[k]
+
+[messageOff]
+[se ad7]
+[charaMoveScale D 1.1 0.1]
+[charaMove D 0,15 0.1]
+[charaPut J 1]
+[charaEffect J bit_talk_41]
+[wt 0.2]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_41]
+[wt 0.1]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+＠Chief Retainer Mash
+Senpai!?
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.2]
+
+[se bac23]
+[effect bit_talk_14]
+[wt 0.3]
+
+[se bac11]
+[se bac13]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF80]
+[wt 0.1]
+
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0 1]
+[charaShake E 0.02 5 5 0.8]
+[wt 1.2]
+
+＠Mori Nagayoshi
+Damn, that smarts... Felt like my insides[sr]were about to become my outsides.
+[k]
+
+？1：You took the blow for me, Mori!?
+
+？2：Mori, you saved my life!
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_5 0.1]
+
+[charaScale D 1.0]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠Li Shuwen
+Oho, so you shielded your lord with your own bulk. I see you know how to make good use of that oversized body of yours.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+＠Mori Nagayoshi
+Nobody tries to lay a finger on my Master and gets away with it, old man! You're dead!
+[k]
+
+[messageOff]
+[se ad7]
+[charaMoveScale E 1.1 0.1]
+[charaMove E 0,10 0.1]
+[charaPut J 1]
+[charaEffect J bit_talk_41]
+[wt 0.2]
+[charaPut J 1200,1200]
+[charaEffectStop J bit_talk_41]
+[wt 0.1]
+
+[charaFadeout E 0.1]
+[wt 0.3]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.2]
+
+[se ad170]
+[charaScale J 1.5]
+[charaPut J 1]
+[charaEffect J bit_talk_Slash_red_01]
+[flashin once 0.1 0.1 e60025FF e6002580]
+[wt 0.2]
+[charaFace D 5]
+[charaShake D 0.02 5 5 0.8]
+[wt 1.4]
+
+[charaScale J 1.0]
+[charaFadeout D 0.1]
+[wt 0.2]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠Infantrywoman Nobbu
+Nice one, Katsuzou! All that's left now is to take care of my Kai sel[line 2]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_5 0.6]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠Oda Kippoushi
+Okay, we're done here! Everyone, stand down![sr]Call your soldiers off, Echigo me. We surrender!
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 5]
+[charaFadein G 0.1 1]
+＠Nagao Kagetora
+Err, are you sure about this?
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_50 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+＠Oda Kippoushi
+Hey, I knew I was up against Nagao Kagetora of Echigo, not to mention my own damn self.
+[k]
+
+＠Oda Kippoushi
+You defended against my ambush, so I don't even have the element of surprise anymore.
+[k]
+
+＠Oda Kippoushi
+I can't ask my soldiers to keep[sr]risking their lives for me now.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+＠Infantrywoman Nobbu
+I'm surprised you're not more stubborn,[sr]being me and all.
+[k]
+
+＠Infantrywoman Nobbu
+By the way, is it just me, or is that me a lot more versatile than, uh, me?
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.2]
+
+
+[se ad347]
+[fowardEffect bit_talk_kengekiall03]
+[wt 1.0]
+
+[charaTalk off]
+[seStop ad347 0.1]
+[se ad170]
+[flashin once 0.1 0.1 e60025FF e6002580]
+[wt 0.1]
+[charaScale E 1.0]
+[charaFace E 10]
+[charaFace D 5]
+[charaFadein E 0 -75,0]
+[charaFadein D 0 75,0]
+[charaMove E 300,0 0.2]
+[charaMove D -300,0 0.2]
+[charaShake E 0.02 5 5 0.6]
+[charaShake D 0.02 5 5 0.6]
+[wt 1.2]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.2]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠Chief Retainer Mash
+Senpai! Mori and Li Shuwen are still fighting!
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+
+＠Mori Nagayoshi
+Y[messageShake 0.02 3 3 0.8]ou're dead, old man![sr]Nobody attacks my Master and lives to talk about it!
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 1]
+＠Li Shuwen
+Well, well, well... What am I going to do with you?
+[k]
+
+＠Li Shuwen
+Strange as this may sound coming from me, but if you insist, I am quite happy to keep this up until you're dead.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 10]
+[charaFadein E 0.1 1]
+＠Mori Nagayoshi
+W[messageShake 0.02 3 3 0.6]hat are you, senile!?[sr]You're the one who's dying today!
+[k]
+
+？1：Okay, break it up!
+
+？2：That's enough, Mori!
+
+？！
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_50 1.5]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[scene 79000]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_66 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠Oda Kippoushi
+Huh, so this is your castle, huh. Not bad.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠Nagao Kagetora
+Well sure. It used to be mine, after all.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+＠Infantrywoman Nobbu
+Hey, how come we're letting our prisoner walk around unrestrained?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠Oda Kippoushi
+Ah, don't be like that, me. I'll go back to my cell as soon as I've had a look around.
+[k]
+
+＠Oda Kippoushi
+Oh, right. Would you mind getting the old man some tea?
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+＠Chief Retainer Mash
+Li Shuwen? Understood.
+[k]
+
+＠Chief Retainer Mash
+You know, I'm still surprised Li Shuwen has been in Kai with you this whole time.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠Oda Kippoushi
+He's one of you guys, right?[sr]I hope you can forgive him.
+[k]
+
+[charaFace A 7]
+＠Oda Kippoushi
+He doesn't work for me or anything.[sr]He was just trying to pay me back for my hospitality.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+
+＠Infantrywoman Nobbu
+First you have him try to kill our leader, and now you want us to turn the other cheek? Yep, you're me. No one else could say something like that with a straight face.
+[k]
+
+[charaFace B 11]
+
+＠Infantrywoman Nobbu
+Hm? Say, what happened to Katsuzou?
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_66 1.0]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠Chief Retainer Mash
+Oh no. Now that you mention it, I saw him heading for the jail cells earlier!
+[k]
+
+＠Chief Retainer Mash
+Do you think he's still mad at Li Shuwen!?
+[k]
+
+？1：We'd better go after him!
+
+？2：This can't end well for either of them!
+
+？！
+
+
+[messageOff]
+[se ad459]
+[wipeout leftToRight 1.0 1.0]
+[seStop ad459 1.0]
+[wait wipe]
+
+[charaFadeout F 0.1]
+
+[scene 79100]
+[wt 1.0]
+
+[wipein rightToLeft 1.0 1.0]
+[wait wipe]
+[wt 0.5]
+
+[bgm BGM_EVENT_7 0.1]
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+
+＠Mori Nagayoshi
+What do you think, old man!?[sr]My tea's damn good stuff, right?
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠Li Shuwen
+Heh. I don't think I've been[sr]quite so amazed in decades.
+[k]
+
+＠Li Shuwen
+Your talent for tea is really something. I guess you can't judge a book by its cover after all.
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+＠Chief Retainer Mash
+...They appear to be enjoying[sr]a nice cup of tea together...
+[k]
+
+？1：I had no idea Mori was so into tea...
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 15]
+[charaFadein B 0.1 1]
+
+＠Infantrywoman Nobbu
+Even Rikyu the tea lover praised his skill. And believe it or not, Katsuzou's a great writer, too.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+？2：They almost seem like a grandfather and his grandson.
+
+[charaFace F 1]
+＠Chief Retainer Mash
+I'm surprised to see them getting along so well now,[sr]but it's also very heartwarming.
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+？！
+
+[charaTalk E]
+[charaFace E 9]
+[charaFadein E 0.1 1]
+＠Mori Nagayoshi
+All right! Now that we've each had a cup, what do you say we get back to killing each other?
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠Li Shuwen
+Fine by me. This time, we won't stop until one or both of us are dead!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+＠Infantrywoman Nobbu
+C[messageShake 0.05 4 4 0.2]ut it out already!!!
+[k]
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

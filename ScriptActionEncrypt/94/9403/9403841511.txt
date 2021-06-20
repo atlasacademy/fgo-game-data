@@ -1,0 +1,318 @@
+
+
+＄94-03-84-15-1-1
+
+[soundStopAll]
+
+[charaSet A 1098173200 1 "Armored Warrior Monk 1"]
+[charaSet B 1098173200 1 "Armored Warrior Monk 2"]
+[charaSet C 1098173200 1 "Armored Warrior Monk 3"]
+[charaSet D 7035001 1 "Mori Nagayoshi"]
+[charaSet E 1098173900 1 "High Priest of Makuzu"]
+
+[charaSet G 1098171500 1 "Caster of Makuzu"]
+[charaSet H 3038000 1 "Nagao Kagetora"]
+[charaSet I 98115000 1 Effect]
+[charaSet J 98115000 1 Effect]
+
+
+
+[branchQuestNotClear lblNotClear 3000303]
+
+[branch lblConf]
+[label lblNotClear]
+
+[charaSet F 8001000 1 Mash]
+
+
+[branch lblNotClear_out]
+[label lblConf]
+
+[charaSet F 8001410 1 Mash]
+
+
+
+[label lblNotClear_out]
+
+
+[charaPut I 1200,1200]
+[charaEffect I bit_talk_lightning_01t]
+
+[scene 79700]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk off]
+
+[charaFace A 0]
+[charaFace B 0]
+[charaFace C 0]
+[se ad270]
+[seStop ad270 0.5]
+[charaFadein A 0.4 1]
+[wt 0.3]
+[se ad270]
+[seStop ad270 1.0]
+[charaFadein B 0.4 -300,0]
+[wt 0.1]
+
+[charaFadein C 0.4 300,0]
+[wt 1.0]
+
+[charaTalk on]
+
+[charaTalk A]
+
+＠A：Armored Warrior Monk
+Calling in reinforcements.[sr]Proceeding to surround and destroy.
+[k]
+
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[se ad61]
+[charaPut I 1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadein D 0.1 0,-10]
+[charaShake D 0.05 3 3 0.4]
+[charaMove D 1 0.4]
+[wt 0.4]
+
+＠Mori Nagayoshi
+Dammit! I could handle these punks no[sr]problem if I could just move freely![seStop ad61 0.5]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠High Priest of Makuzu
+What's wrong? If you need more Armored Warrior Monks to play with, I have plenty more where those came from.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk H]
+[charaFace H 16]
+[charaFadein H 0.1 1]
+
+＠Nagao Kagetora
+Now I see... This hall is designed to restrict Servants' movements!
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠High Priest of Makuzu
+What did I tell you? Lord Makuzu's magical energy is utterly without limits.
+[k]
+
+＠High Priest of Makuzu
+As such, there is no wish he cannot grant.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠Chief Retainer Mash
+That's impossible... Every source of magical energy has a limit, no matter how strong that energy might be!
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠High Priest of Makuzu
+So you still refuse to believe even after experiencing his divine power for yourselves? You are even greater fools than I thought...
+[k]
+
+＠High Priest of Makuzu
+That's enough, Caster. Take these godless peons into custody and turn them into Armored Warrior Monks or something.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 3]
+[charaFadein G 0.1 1]
+
+＠Caster of Makuzu
+Are you sure, my lord?
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠High Priest of Makuzu
+Now that Demon King Nobunaga is gone,[sr]there is no one left to defy our god.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+＠Nagao Kagetora
+Khh! Not if I have anything to say about[line 2]
+[k]
+
+[messageOff]
+
+[charaPut I 1200,1200]
+[wt 0.1]
+
+[se ad475]
+[seStop ad475 1.0]
+[se ad473]
+[seStop ad473 1.0]
+[fowardEffect bit_talk_31]
+[wt 0.5]
+
+[charaTalk H]
+[charaFace H 5]
+[charaFadein H 0.1 1]
+
+[se ad14]
+[seStop ad14 0.5]
+[charaScale J 4.5]
+[charaPut J 1]
+[charaEffect J bit_talk_43l]
+[shake 0.05 0 3 1.7]
+
+[se ad472]
+[seVolume ad472 0 0.7]
+[seStop ad472 0.5]
+[wt 0.4]
+
+[charaFace H 16]
+
+[charaEffectStop J bit_talk_43l]
+[wt 0.5]
+[charaScale J 1.0]
+
+[se ad61]
+[charaPut I 1]
+[charaShake H 0.05 3 3 0.4]
+[charaMove H 0,-10 0.4]
+[wt 0.4]
+[seStop ad61 0.5]
+
+＠Nagao Kagetora
+Gah! I can't move at all now!
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠Caster of Makuzu
+Sorry. Like my Master said, our magical energy here in this hall is limitless.
+[k]
+
+＠Caster of Makuzu
+Not even the avatar of Bishamonten can move about freely in here unless we let her.
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk H]
+[charaFace H 16]
+[charaFadein H 0.1 1]
+
+＠Nagao Kagetora
+What about Chaldea's army!? If we don't return when we said we would, they'll all be here demanding answers!
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠High Priest of Makuzu
+No matter. Once true paradise arrives in this land,[sr]the very idea of soldiers will cease to hold meaning.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[charaTalk H]
+[charaFace H 16]
+[charaFadein H 0.1 1]
+
+＠Nagao Kagetora
+True...paradise?
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+
+[charaSet G 1098171510 1 "Caster of Makuzu"]
+
+[charaTalk G]
+[charaFace G 4]
+[charaFadein G 0.1 1]
+
+＠Caster of Makuzu
+Well, everyone, I'm very sorry about this, but I'm afraid I need to have you all sit tight for a while.
+[k]
+
+
+[messageOff]
+[fadeout white 1.5]
+[bgmStop BGM_EVENT_3 1.5]
+[wait fade]
+[scene 10000]
+[charaFadeout G 0.1]
+[wt 1.5]
+[fadein white 1.0]
+[wait fade]
+[fadeout black 0.1]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

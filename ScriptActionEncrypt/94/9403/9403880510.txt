@@ -1,0 +1,229 @@
+
+
+＄94-03-88-05-1-0
+
+[soundStopAll]
+
+[charaSet A 98001000 1 "Chief Retainer Mash"]
+[charaSet B 4014000 1 "Minamoto Yoshitsune"]
+[charaSet C 11007000 1 Nobbu]
+[charaSet D 7035001 1 "Mori Nagayoshi"]
+[charaSet E 3038000 1 "Nagao Kagetora"]
+[charaSet F 1001000 1 Effect]
+
+[scene 79900]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠Minamoto Yoshitsune
+Since my brother isn't here, I decided to go ahead and rebuild the Kamakura shogunate from 1192 without him.
+[k]
+
+＠Minamoto Yoshitsune
+It was much easier than I thought it[sr]would be, thanks to my natural genius.
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠Chief Retainer Mash
+Um, actually, I believe modern history textbooks say the Kamakura shogunate was established in 1185.
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠Minamoto Yoshitsune
+T[messageShake 0.03 4 4 0.3]hey do!?
+[k]
+
+[charaFace B 3]
+
+＠Minamoto Yoshitsune
+So he started it seven years earlier than I thought... Impressive. No wonder he was the pride of the Genji.
+[k]
+
+？1：By the way, I can't help but notice you don't look very Alterish...
+
+？2：So what happened to the Alter who's supposed to be here?
+
+？！
+
+[charaFace B 4]
+
+＠Minamoto Yoshitsune
+Oh, right, my apologies. Hold on just a minute.
+[k]
+
+[messageOff]
+
+[se ad77]
+[charaMove B 0,-50 0.5]
+[charaFadeout B 0.5]
+[wt 0.5]
+
+＠Minamoto Yoshitsune
+...How's this?
+[k]
+
+[messageOff]
+[charaSet B 98107400 1 "Minamoto Yoshitsune Alter-Style"]
+
+[bgmStop BGM_EVENT_7 1.0]
+
+[se ad500]
+[seVolume ad500 0 0.3]
+[wt 0.5]
+[se ad500]
+[seVolume ad500 0 0.3]
+[wt 1.3]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 0,-50]
+[charaMove B 0,0 0.5]
+[charaPut F 1200,1200]
+[charaEffect F bit_talk_41]
+[wt 0.6]
+[charaPut F 0,0]
+[se ade211]
+[wt 1.4]
+[charaPut F 1200,1200]
+[charaEffectStop F bit_talk_41]
+
+[charaFace B 2]
+
+＠Minamoto Yoshitsune Alter-Style
+Now, then, let us begin the battle to determine[sr]whether the Genji or the Taira clans survive...[bgm BGM_EVENT_3 0.1]
+[k]
+
+＠Minamoto Yoshitsune Alter-Style
+The All Genji Assault Final Genpei War 2021!
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 16]
+[charaFadein C 0.1 1]
+
+＠Nobbu
+I'm with the Taira clan. Anyone else?
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 6]
+[charaFadein E 0.1 1]
+
+＠Nagao Kagetora
+I am too, though I'm not sure[sr]I buy your claim that you are.
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+＠Mori Nagayoshi
+Crap, my family's loyal to the Seiwa Genji.
+[k]
+
+＠Mori Nagayoshi
+Sorry Boss, looks like I'll be going over to the enemy side this time.
+[k]
+
+[charaFace D 1]
+
+＠Mori Nagayoshi
+Oh, but don't worry, Master.[sr]I'd never betray you for anything.
+[k]
+
+[messageOff]
+[se ad60]
+[seStop ad60 1.5]
+[charaMove D -50,0 0.5]
+[charaFadeout D 0.4]
+[wt 1.2]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠Nobbu
+I can't believe my Taira clan attribute backfired on me like this...
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 1.0]
+
+
+[charaTalk D]
+[charaFace D 11]
+[charaFadein D 0.4 1]
+[wt 0.4]
+
+＠Mori Nagayoshi
+All right! Going up against the boss oughta be a damn good time! I don't know anything about this Alter stuff, but who cares! I'm gonna go all out for this one!
+[k]
+
+[messageOff]
+[se ad474]
+[charaEffect D bit_talk_charge_red]
+[wt 1.5]
+
+[charaChange D 7035002 2 fade 1.0]
+[wait charaChange D]
+[charaEffectStop D bit_talk_charge_red]
+[charaEffect D bit_talk_attack_buf]
+[se ade43]
+[se ad270]
+[seStop ad474 0.5]
+[wt 1.8]
+
+＠Mori Nagayoshi
+Hahahahaha! This is the outfit made for the Mori clan's last stand! Come at me with everything you got, Boss!
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠Minamoto Yoshitsune Alter-Style
+Ooh, you remind me of the wild oni warriors I used to see in the Heian period! Anyway, let's do this thing!
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.5]
+[wait fade]
+[soundStopAll]
+[end]
