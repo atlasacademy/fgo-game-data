@@ -1,0 +1,131 @@
+
+
+
+＄91-50-35-02-2-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+
+
+
+
+[charaSet A 11005001 1 ヘシアン]
+[charaSet B 1098153900 1 アレクセイ]
+[charaFilter B silhouette 00000080]
+
+
+[imageSet O back10000 1 1]
+[charaScale O 1.32]
+
+[charaSet T 98115000 1 エフェクト用]
+
+
+
+[bgm BGM_EVENT_77 0.1]
+
+[scene 54102]
+
+[fadein black 1.0]
+[wait fade]
+
+
+
+
+[branch INPUT_SELECT_BRANCH_2 INPUT_SELECT_BRANCH 1]
+[label INPUT_SELECT_BRANCH_1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ヘシアン
+『やれやれ。夢の中でまで[#刃傷沙汰:にんじょうざた]とか。[r]　どうなっているんですかね、彼女』
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アレクセイ
+仕方ないだろ。[r]これはアナの防衛機構だ。
+[k]
+
+＠アレクセイ
+異物が紛れ込んだら排除するのは、[r]人体も同じだろ。
+[k]
+
+
+
+
+[branch INPUT_SELECT_BRANCH_3]
+[label INPUT_SELECT_BRANCH_2]
+
+
+
+
+？1：今の魔眼は……？
+？！
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アレクセイ
+残念ながら僕の力じゃなくて、[r]アナの力を借りただけだ。
+[k]
+
+＠アレクセイ
+……僕は魔術師じゃなかったからな。[r]アナもそうだけど。
+[k]
+
+[branch INPUT_SELECT_BRANCH_3]
+[label INPUT_SELECT_BRANCH_3]
+
+
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ヘシアン
+『どうして彼女は俺たちを[r]　敵と見なしているんです？』
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アレクセイ
+そりゃ当然だ。[r][#微睡:まどろ]みを破壊しにきた侵入者だからな。
+[k]
+
+＠アレクセイ
+それもこれも、おまえが悪いんだぞ。[r][%1]。
+[k]
+
+？1：どうして？
+？！
+
+＠アレクセイ
+……それは、本人に聞け。[r]よし、もうそろそろ到着だ。
+[k]
+
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_77 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

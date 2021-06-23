@@ -1,0 +1,432 @@
+
+
+
+＄91-11-06-01-3-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 11006002 1 サリエリ]
+
+[charaSet B 99502600 1 マシュ]
+[charaSet C 98111500 1 通信用エフェクト]
+
+[charaSet D 9938200 1 魔神柱アムドゥシアス]
+
+[charaSet E 98111500 1 エフェクト用ダミー1]
+[charaSet F 98111500 1 エフェクト用ダミー2]
+[charaSet G 98111500 1 エフェクト用ダミー3]
+
+[charaPut C 1200,1200]
+[charaEffect C bit_talk_10_LowLevel]
+
+[scene 107400]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+[charaEffect A bit_talk_41_fs]
+
+＠サリエリ
+[f large]オオオオオオオオオ！
+[k]
+
+[messageOff]
+
+[charaPut A 1200,1200]
+[charaEffectStop A bit_talk_41_fs]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.1]
+[charaShake D 0.01 3 3 1.5]
+
+
+[fowardEffect bit_talk_x_slash_bk_01]
+[wt 0.1]
+[se bac6]
+[wt 0.3]
+[fowardEffect bit_talk_x_slash_bk_02]
+[wt 0.1]
+[se bac5]
+[wt 0.7]
+[fowardEffect bit_talk_x_slash_bk_03]
+[wt 0.1]
+[se bac7]
+[wt 1.0]
+
+
+[cueSeStop Battle bac18 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠サリエリ
+オオオォオ！[r]ゴットリープ・モーツァルトォオオオ！
+[k]
+
+[messageOff]
+
+[se ad39]
+[effect bit_talk_36]
+[wt 1.0]
+
+＠サリエリ
+[f large]『[#至高の神よ、我を憐れみたまえ:デ　ィ　オ　・　サ　ン　テ　ィ　シ　モ　・　ミ　ゼ　ル　コ　デ　ィ　ア　・　デ　ィ　・　ミ]』！
+[k]
+
+[messageOff]
+
+
+[se ad153]
+[fadeout white 1.5]
+[wait fade]
+
+[se ad14]
+[effectStop bit_talk_36]
+[charaFadeout A 0.1]
+[wt 1.0]
+[se ad285]
+[wt 0.5]
+
+[shake 0.01 3 4 0]
+[se ad619]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+
+[seStop ad14 1.5]
+[seStop ad153 1.5]
+[fadein white 1.5]
+[wait fade]
+[wt 1.0]
+
+
+[se ad64]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.4]
+[se ad64]
+[flashin once 0.1 0.3 FFFFFFAF FFFFFF00]
+[wt 0.8]
+[se ad64]
+[seStop ad619]
+[bgmStop BGM_EVENT_24 1.0]
+[flashin once 0.3 0.8 FFFFFFAF FFFFFF00]
+[wt 1.0]
+
+
+[effect bit_talk_36_sl02]
+[wt 1.0]
+
+[fadeout white 2.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[seStop ad619 0.5]
+[shakeStop]
+
+[scene 10001]
+
+[fadein white 1.0]
+[effectDestroy bit_talk_36_sl02]
+[wait fade]
+
+＠マシュ
+仮想魔神柱、消滅を確認！
+[k]
+
+＠マシュ
+アマデウスさんの霊基が安定化していきます！[r]サリエリさんの、霊基も……
+[k]
+
+＠マシュ
+安定……[r]通常通りの各種数値に……
+[k]
+
+＠マシュ
+戻って、いきます……[line 3]！
+[k]
+
+[messageOff]
+
+
+[fadeout black 1.5]
+[wait fade]
+
+[charaSet A 5015001 1 アマデウス]
+[charaSet B 4017001 1 マリー]
+[charaSet C 1098123200 1 ゴルドルフ]
+[charaSet D 1098124500 1 ダ・ヴィンチ]
+[charaSet E 9005001 1 ホームズ]
+[charaSet F 1098123000 1 ムニエル]
+[charaSet G 1098158200 1 シオン]
+
+[pictureFrameTop cut063_cinema]
+[wt 0.1]
+
+[scene 104100]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+[wt 1.0]
+
+[charaTalk off]
+[charaFace C 0]
+[charaFace D 0]
+[charaFadein C 0.4 -250,-50]
+[charaFadein D 0.4 250,-50]
+[wt 0.8]
+
+[charaFace C 5]
+[charaMove C -250,30 0.2]
+[wt 0.2]
+[charaMove C -250,-50 0.2]
+[wt 1.0]
+
+[charaFace D 12]
+[charaMoveReturn D 250,-60 0.5]
+[wt 0.5]
+[charaMoveReturn D 250,-60 0.5]
+[wt 1.0]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 0,-50]
+[wt 0.4]
+
+[charaFace E 6]
+[wt 0.1]
+
+[charaMoveScale E 1.05 0.5]
+[charaMove E 0,-60 0.5]
+[wt 1.5]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace F 5]
+[charaFace G 11]
+[charaFadein F 0.4 -300,-50]
+[charaFadein G 0.4 300,-50]
+[wt 0.4]
+
+[charaFace F 2]
+[wt 1.0]
+[charaFace F 5]
+[wt 1.0]
+
+[charaFace G 2]
+[wt 1.0]
+[charaFace G 5]
+[wt 1.0]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaFace C 6]
+[charaFadein C 0.1 0,-50]
+[wt 0.1]
+[charaMove C 0,30 0.2]
+[wt 0.25]
+[charaMove C 0,-50 0.2]
+[wt 1.0]
+
+[wipeout rollRight 1.0 1.0]
+[wait wipe]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[pictureFrame]
+[wt 0.1]
+
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠アマデウス
+……いやあ、怒られた怒られた。あっはっはっは。
+[k]
+
+[charaFace A 3]
+
+＠アマデウス
+やれやれ、うまくいかないものだなぁ。[r]動機はまったき善意のつもりだったんだけどねえ。
+[k]
+
+＠アマデウス
+何もかもが裏目に出てしまった！[r]ごめんよマリア、君にも迷惑を掛けたよね。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠マリー
+わたしはいいの、気にしないで。[r]でもね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アマデウス
+うん？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠マリー
+何もかも裏目、ではないかもしれないわ。[r]よかったこともあるの。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アマデウス
+ん……
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+[wt 0.5]
+
+＠マリー
+久しぶりに、[r]先生とちゃんとお話しできたのではなくて？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アマデウス
+ああ[line 3]
+[k]
+
+[charaFace A 1]
+
+＠アマデウス
+そうだ、そうだね。[r]あははは、それはそうだ！
+[k]
+
+＠アマデウス
+そればっかりは君の言う通りだ！
+[k]
+
+＠アマデウス
+あればかりは奇跡と言わずしてなんと言おう！[r]本当の本当に、[#サリエリ先生だった]！
+[k]
+
+[charaFace A 3]
+
+＠アマデウス
+そう言われると、うん、[r]暗がりで痛みに耐えた甲斐はあったかもしれないな。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠マリー
+もしも、次があるなら……
+[k]
+
+＠マリー
+先生の、楽しい音楽の時間。[r]貴方も交ざってみたいんじゃなくて？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+
+＠アマデウス
+さあ、どうかな。
+[k]
+
+[charaFace A 1]
+
+＠アマデウス
+むしろ、僕の音楽の時間に招待して差し上げるさ。[r][%1]君ともどもね！
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+[wt 2.0]
+
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_2 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

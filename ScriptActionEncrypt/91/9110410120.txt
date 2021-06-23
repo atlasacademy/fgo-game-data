@@ -1,0 +1,840 @@
+
+
+＄91-10-41-01-2-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1041002 1 アストルフォ]
+[charaSet B 7013001 1 清姫]
+[charaSet C 2018001 1 子ギル]
+[charaSet D 2038001 1 オリオン]
+[sceneSet E 10001 1]
+[charaScale E 1.01]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 104200]
+[branch lblConf]
+[label lblNotClear]
+[scene 105500]
+[label lblConf]
+
+
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_2 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アストルフォ
+つまりだね。[r]私ってば、普段は理性蒸発してるだろう？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠清姫
+まあ……そうですわね……。
+[k]
+
+？1：まあ……大変だからね……
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アストルフォ
+ところが今日は新月。
+[k]
+
+＠アストルフォ
+そして私は何やら頭脳が冴え渡っている。[r]おまけに理性と良識に満ち[#溢:あふ]れている。
+[k]
+
+[charaFace A 4]
+＠アストルフォ
+要するに、これは……。
+[k]
+
+[charaFace A 2]
+
+＠アストルフォ
+[#皆の理性が私に集まったのではないか]、[r]そう結論せざるを得ないんだ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠清姫
+ダイナミックですね……。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+？1：……根拠は？
+？！
+
+[charaFace A 9]
+
+
+＠アストルフォ
+新月になったから、私が賢くなった分、[r]他の人の理性が勝手に私に集まったんじゃないかな。
+[k]
+
+[charaFace A 0]
+
+＠アストルフォ
+実はこの間の話なのだけど[line 3]
+[k]
+
+[messageOff]
+[wipeout diaOut 1.5 1.0]
+[bgmStop BGM_EVENT_2 1.5]
+[se ade84]
+[wait wipe]
+[wt 0.5]
+[effect bit_sepia01_depth_fs]
+[charaFadeout A 0.1]
+[wt 1.0]
+[branchQuestNotClear lblNotClear2 3000303]
+[scene 105900]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 105600]
+[label lblConf2]
+
+
+[wipein diaOut 1.0 1.0]
+[wait wipe]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠子ギル
+へー、理性を集めた瓶ですか。[r]それがアストルフォの触媒なんですね。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠アストルフォ
+そーそー。
+[k]
+
+[charaFace A 21]
+
+＠アストルフォ
+それがあれば、ボクもそれなりに理性ある[r]サーヴァントになるんだけどねー。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠子ギル
+ふーん、それなら[r]ちょっと探してみましょうか。
+[k]
+
+[messageOff]
+[charaPut H 1]
+[se bac24]
+[charaEffect H bit_talk_gate_of_babylone]
+[wt 1.5]
+[charaEffectStop H bit_talk_gate_of_babylone]
+[wt 0.8]
+[charaPut H 2000,2000]
+
+[charaFace C 4]
+＠子ギル
+えーと、これでもないあれでもない。[wt 1.2][charaFace C 0][r]……あ、ありました。
+[k]
+
+＠子ギル
+こんな感じの瓶ですか？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 11]
+[charaFace C 0]
+[charaFadeinFSR A 0.1 2]
+[charaFadeinFSL C 0.1 0]
+
+＠アストルフォ
+わ！
+[k]
+
+[charaFace A 1]
+＠アストルフォ
+そうそう、そんな感じそんな感じ！[r]え、それ貰っていいの？
+[k]
+
+[charaFace C 1]
+
+＠子ギル
+いいですよ。[r]特に使い道もない物です。
+[k]
+
+＠子ギル
+これで理性が取り戻せるなら、[r]面白いことになりそうですしね。
+[k]
+
+[charaFace A 21]
+
+＠アストルフォ
+何か裏があるかもしれないけど、[r]特に気にしないボクは、当然戴くのであった！
+[k]
+
+＠子ギル
+はい。
+[k]
+
+[charaFace C 0]
+＠子ギル
+伝説とは少し異なりますが……。
+[k]
+
+＠子ギル
+新月にこの瓶を使えば、[r]理性を取り戻せるはずですよ。
+[k]
+
+[charaFace A 1]
+
+＠アストルフォ
+わーい、サンキュー！[r]新月まだかなー！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_7 1.0 0.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaFadeout C 0.1]
+[wt 1.0]
+[branchQuestNotClear lblNotClear3 3000303]
+[scene 105800]
+[branch lblConf3]
+[label lblNotClear3]
+[scene 106000]
+[label lblConf3]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_7 1.0 1.0]
+[wait fade]
+
+＠
+[line 3]そして、新月。
+[k]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠アストルフォ
+さてさて。[r]暦の上では、今日が新月のはず。
+[k]
+
+＠アストルフォ
+瓶の蓋を開けて、と……。
+[k]
+
+[charaFace A 8]
+
+＠アストルフォ
+……。[r]……。
+[k]
+
+＠アストルフォ
+ん？　特に何も変わってない気がするな。[r]んー、んー、んー？
+[k]
+
+[messageOff]
+[se ad579]
+[wt 1.0]
+
+＠アストルフォ
+はて？
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth E 2]
+[se ad39]
+[effect bit_talk_36]
+[wt 1.5]
+[charaFace A 12]
+＠アストルフォ
+わ、わ、わ……。
+[k]
+[messageOff]
+[se adm20]
+[se ad732]
+[se ad730]
+[seVolume ad730 0 0.5]
+[charaFadein E 1.0 0,-200]
+[wt 1.5]
+
+
+＠
+[line 3]光あった、と聖騎士は後に語る。[r]かくして、[#理性が集まった]。
+[k]
+
+[messageOff]
+[wipeout diaOut 1.5 1.0]
+[bgmStop BGM_EVENT_7 1.5]
+[se ade84]
+[wait wipe]
+[charaTalk depthOn]
+[effectStop bit_talk_36]
+[effectStop bit_sepia01_depth_fs]
+
+[charaFadeout E 0.1]
+[charaFadeout A 0.1]
+
+[branchQuestNotClear lblNotClear7 3000303]
+[scene 104200]
+[branch lblConf7]
+[label lblNotClear7]
+[scene 105500]
+[label lblConf7]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+[wt 1.0]
+
+[wipein diaOut 1.0 1.0]
+[wait wipe]
+
+
+[bgm BGM_EVENT_2 0.1]
+
+＠清姫
+なるほど最悪ですね……。
+[k]
+
+？1：（頭を抱える）
+？2：（胃薬を飲む）
+
+＠清姫
+はいこちらお水です。[r]ごっくんと。
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠アストルフォ
+まったく清姫の言う通り。
+[k]
+
+＠アストルフォ
+普段から理性と節度ある態度を[r]取っていれば、こんなことにはならなかった。
+[k]
+
+[charaFace A 2]
+
+＠アストルフォ
+おのれ私！！
+[k]
+
+？1：あれ？　でも清姫は……
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠清姫
+ですね。[r]わたくし、特に普段と変わりがないようです。
+[k]
+
+＠清姫
+わたくしだけではなく、[r]他の方々も何人か……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アストルフォ
+ああ、それは簡単だ。[r][#奪えるだけの理性が残ってなかっただけ]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠清姫
+……。[r]……。
+[k]
+
+＠清姫
+今、なんと？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+
+＠アストルフォ
+どうもこの瓶、[r]理性を七割くらい奪うみたいなんだよね。
+[k]
+
+＠アストルフォ
+だから最低でも三割ほど残るということ。[r]で、元々平均の三割しか理性の残ってないサーヴァントは[line 3]
+[k]
+
+＠アストルフォ
+その理性がそのまま残される。[r]一種のセーフティ機能だね。
+[k]
+
+？1：なるほどー……
+？！
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 1]
+
+＠清姫
+シギャー！
+[k]
+
+＠清姫
+……わたくしに！　手袋があれば！[r]今すぐ！　投げつけているところです！
+[k]
+
+＠清姫
+言うに事欠いて三割とは！
+[k]
+
+[charaFace B 4]
+
+＠清姫
+ますたぁ。[r]わたくしってば、理性ありますよね？
+[k]
+
+？1：……あると思うよ！
+？2：まだ大丈夫！
+？！
+
+＠清姫
+ちょっと[#婉曲:えんきょく]的な答えに、[r]複雑な心情が垣間見えますが……。
+[k]
+
+＠清姫
+うう、嘘はついていらっしゃいませんね……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠アストルフォ
+では、この状況を解決するため、[r]出発しよう。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠清姫
+それは……賛成でございますが、[r]でも、どこへ？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+＠アストルフォ
+当然、持ち主のところに向かうべきじゃないか。[r]英雄王ギルガメッシュ……
+[k]
+
+[charaFace A 2]
+＠アストルフォ
+の少年ver.のところへ！
+[k]
+
+[messageOff]
+[wipeout leftToRight 0.7 1]
+[bgm BGM_EVENT_2 0.7 0.4]
+[wait wipe]
+[charaFadeout A 0.1]
+[wt 0.5]
+[branchQuestNotClear lblNotClear4 3000303]
+[scene 105900]
+[branch lblConf4]
+[label lblNotClear4]
+[scene 105600]
+[label lblConf4]
+
+
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+[wt 1.5]
+
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+
+
+[wt 0.5]
+[branchQuestNotClear lblNotClear5 3000303]
+[scene 105800]
+[branch lblConf5]
+[label lblNotClear5]
+[scene 106000]
+[label lblConf5]
+
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+[wt 1.5]
+
+[wipeout leftToRight 0.7 1]
+[wait wipe]
+
+
+[wt 0.5]
+[branchQuestNotClear lblNotClear6 3000303]
+[scene 104100]
+[branch lblConf6]
+[label lblNotClear6]
+[scene 105700]
+[label lblConf6]
+
+[wipein rightToLeft 0.7 1]
+[bgm BGM_EVENT_2 0.7 1.0]
+[wait wipe]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠アストルフォ
+いないねー……。
+[k]
+
+[charaFace A 5]
+
+＠アストルフォ
+うむ、これはどうやらシミュレーターに[r]隠れていると見た。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠清姫
+そうなりますと、シミュレーターを隅から隅まで[r]調べていくしかなさそうですね……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠アストルフォ
+千里の道も一歩から。[r]さあ、始めよう！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+[scene 107802]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[bgm BGM_EVENT_70 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+＠アストルフォ
+シミュレーターの[#記録:ログ]を[r]チェックしてみた。
+[k]
+
+＠アストルフォ
+サーヴァントの反応があったのは[line 3]
+[k]
+
+＠アストルフォ
+森林、海岸、美術館、ワイキキストリート、[r]アメリカの街、洞窟、それから玉座の間か。
+[k]
+
+[charaFace A 2]
+＠アストルフォ
+まずはこの森から調べてみよう。[r]さあ、探索だ！
+[k]
+
+？1：やる気あるのは、いつもなんだけど
+？2：微妙に調子が狂う……！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠清姫
+はい。[r]心なしか声も凜々しく……。
+[k]
+
+[charaFace B 4]
+＠清姫
+いえ、決して普段はアホっぽいとか、[r]そんなことを思っては……いますが……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠アストルフォ
+いるのか。[r]ふむ。まあ仕方ないか、理性がないのだし！
+[k]
+
+[charaFace A 5]
+
+＠アストルフォ
+というところで、[r]どうやらサーヴァントだ。
+[k]
+
+[bgmStop BGM_EVENT_70 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠？？？
+……。[r]……。
+[k]
+
+[messageOff]
+[wt 1.0]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[se ade255]
+
+
+[wt 1.5]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠清姫
+まあ、オリオン（人型）様。[r]……はっ。
+[k]
+
+[bgm BGM_EVENT_5 0.1]
+[charaFace B 5]
+
+＠清姫
+いけません。[r]彼もまた、恐らくは理性蒸発組。
+[k]
+
+[charaFace B 2]
+
+＠清姫
+お下がりくださいませ、ますたぁ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠オリオン
+そこの二人のサーヴァント。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFace B 4]
+[charaFadeinFSR A 0.1 2]
+[charaFadeinFSL B 0.1 0]
+
+＠アストルフォ
+[FFFFFF]？[-][r]私か？
+[k]
+
+[bgmStop BGM_EVENT_5 1.0]
+
+＠清姫
+わたくしも？
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_7 0.1]
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+＠オリオン
+[f large]好き！！（挨拶）
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠清姫
+[f large]パクられました！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 24]
+[charaFadein A 0.1 1]
+
+＠アストルフォ
+フッ。
+[k]
+
+＠アストルフォ
+理性が蒸発している以上、[r]話し合う余地はなさそうだ。
+[k]
+
+[bgmStop BGM_EVENT_7 1.0]
+[charaFace A 5]
+＠アストルフォ
+彼が見境なしにナンパし、[r]アルテミス様を[#激怒:ボルケーノ]させる前に[line 3]
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+[charaFace A 2]
+
+＠アストルフォ
+私たちで止めるぞ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+
+＠清姫
+はい！
+[k]
+
+？1：よし、やるよ！
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠アストルフォ
+どれほど状況が不利でも、[r]私が屈することはないぞー！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]

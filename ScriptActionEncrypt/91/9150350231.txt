@@ -1,0 +1,939 @@
+
+
+
+＄91-50-35-02-3-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 11005002 1 ヘシアン]
+[charaSet B 5035000 1 アナスタシア]
+[charaSet C 5035002 1 獣国の皇女]
+[charaSet D 1098124500 1 ダ・ヴィンチ]
+[charaSet E 9005001 1 ホームズ]
+[charaSet F 1098123200 1 ゴルドルフ]
+[charaSet G 5001001 1 メディア]
+
+
+[imageSet O back10000 1 1]
+[charaScale O 1.32]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+
+[cameraMove 0 0,0 1.01]
+
+[bgm BGM_EVENT_24 0.1]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.3]
+
+[se ad85]
+[effect bit_talk_x_slash_bk_03 0,20 H]
+[wt 0.55]
+
+[cueSe Battle bac139]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF80]
+[wt 0.1]
+
+[scene 54102]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0 1]
+[charaShake C 0.04 4 4 0.5]
+[wt 0.8]
+
+[charaMove C 0,-50 0.4]
+[charaFadeout C 0.4]
+[wt 0.4]
+
+[se ad144]
+[wt 1.2]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ヘシアン
+『首を斬って仕留めたはずですが……！[r]　む！』
+[k]
+
+[charaTalk off]
+[se ad334]
+＠ロボ
+[i berserker_language_3]
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[se ad890]
+[seVolume ad890 0 0]
+[wt 0.2]
+
+[charaTalk on]
+[charaDepth S 6]
+[charaDepth C 5]
+
+[charaPut S 1]
+[charaEffect S bit_talk_spell_r]
+[wt 0.3]
+[seVolume ad890 0.3 0.4]
+[wt 0.7]
+
+[se ad447]
+[charaPut C 0,0]
+[charaFace C 5]
+[charaSpecialEffect C appearance 0,0 1.0]
+[wt 0.4]
+[seStop ad890 1.2]
+[wt 1.6]
+
+＠獣国の皇女
+残念、まだよ。
+[k]
+
+？1：ここまでやっても……！？
+？！
+
+[charaPut S 2000,2500]
+[charaEffectStop S bit_talk_spell_r]
+
+＠獣国の皇女
+夢の世界である以上、[r][#私:わたくし]は不死。
+[k]
+
+[charaFace C 2]
+＠獣国の皇女
+さあ、氷塊に圧し潰されなさい。
+[k]
+
+[messageOff]
+[charaTalk off]
+[se ad900]
+[charaPut S 0,-50]
+[charaEffect S bit_talk_06b2]
+[charaPut T 0,-50]
+[charaEffect T bit_talk_charge_ppl]
+[wt 2.0]
+[seStop ad900 1.0]
+[wt 1.0]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+[charaEffectDestroy S bit_talk_06b2]
+[charaPut T 2000,2500]
+[charaEffectDestroy T bit_talk_charge_ppl]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ヘシアン
+『マスター、後ろへ！』
+[k]
+
+[messageOff]
+[charaPut S 1]
+[charaEffect S bit_talk_41_fs]
+[charaFace A 2]
+[se ad359]
+[shake 0.03 4 4 3.2]
+[wt 2.8]
+[charaEffectStop S bit_talk_41_fs]
+[wt 0.6]
+
+？1：……アナスタシア
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠獣国の皇女
+[FFFFFF]？[-]
+[k]
+
+＠獣国の皇女
+[#私:わたくし]は[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_24 1.0]
+[charaFadeout C 0.1]
+[wt 0.8]
+
+[se ad78]
+[seVolume ad78 0 0.8]
+[wt 0.4]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 1.0]
+
+＠アナスタシア
+……もう、いいわ。[r]消えてちょうだいな。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ヘシアン
+『二人目ですと……！[r]　いえ、アレが本物でしょうか？』
+[k]
+
+＠ヘシアン
+『本物？　やはり』
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFace B 0]
+[charaFadeinFSL C 0.1 0]
+[charaFadeinFSR B 0.1 2]
+＠獣国の皇女
+あら、いいのかしらアナスタシア。
+[k]
+
+＠獣国の皇女
+[#私:わたくし]は罪業を押しつけられた[r][#無辜:むこ]の怪物……。
+[k]
+
+＠獣国の皇女
+[#私:わたくし]がいなければ、[r]あなたの心は潰れてしまうかもしれないわよ？
+[k]
+
+
+＠アナスタシア
+……それでも、いいわ。[r]最後くらい、ちゃんと話しておきたいし。
+[k]
+
+
+＠獣国の皇女
+そう。[r]なら、最後に。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaDepth S 6]
+[charaDepth C 5]
+
+[charaPut S 1]
+[charaEffect S bit_talk_06]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+[wt 1.8]
+
+[charaFace C 1]
+＠獣国の皇女
+[#私:わたくし]、あなたがやっぱり嫌いよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut S 2000,2500]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠アナスタシア
+そう。[r][#私:わたくし]はあなたを許せないから、おあいこね。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 1.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaPut S 1]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+[wt 1.2]
+
+
+[charaSpecialEffect C flashErasure 1 1.7]
+[se ad52]
+[wait charaSpecialEffect C]
+[charaEffectStop S bit_talk_06]
+[wt 2.0]
+
+[charaPut S 2000,2500]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+＠ヘシアン
+『マスター……』
+[k]
+
+？1：二人にして欲しい
+？！
+
+＠ヘシアン
+『……了解です』
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaMove A 0,-10 0.3]
+[wt 0.45]
+
+[se ad678]
+[charaPut S 1]
+[charaEffect S bit_talk_quickmove]
+[charaMove A 0,45 0.4]
+[charaFadeout A 0.4]
+[wt 0.4]
+[charaPut S 2000,2500]
+[charaEffectStop S bit_talk_quickmove]
+[wt 1.3]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠アナスタシア
+……。[r]……。
+[k]
+
+[bgm BGM_EVENT_95 0.1]
+
+＠アナスタシア
+どうして、ここに来たの？[r][#私:わたくし]は助けを求めてなんかいません。
+[k]
+
+？1：放ってはおけない
+
+[charaFace B 4]
+＠アナスタシア
+……そう。[r]いつだって、マスターはそうなのね。
+[k]
+
+？2：助けたいと思ったから
+
+[charaFace B 4]
+＠アナスタシア
+思わないで。[r][#私:わたくし]にそんな資格はありません。
+[k]
+
+？！
+
+＠アナスタシア
+[line 3][#私:わたくし]は、あなたに想われる資格はありません。
+[k]
+
+＠アナスタシア
+[line 3]あなたに、恩を返せません。[r][line 3]あなたに、触れる資格がありません。
+[k]
+
+[charaFace B 12]
+＠アナスタシア
+[#私:わたくし]は、あなたにとって……[r]獣国の皇女に他ならないのですから。
+[k]
+
+？1：[line 3]それは違う
+？！
+
+[charaFace B 2]
+＠アナスタシア
+違[messageShake 0.04 3 2 0.4]わない！[r]違わない、違わない、違わないの！
+[k]
+
+＠アナスタシア
+何をやっても、何をしても[r]償えない、[#贖:あがな]えない……！
+[k]
+
+＠アナスタシア
+なのに、あなたはいつも笑顔で！[r][#私:わたくし]を受け入れてくれて！
+[k]
+
+[charaFace B 4]
+＠アナスタシア
+……奥底で、怖がっていても憎んでいても、[r]それを表に出そうとしないで……！
+[k]
+
+＠アナスタシア
+それに安堵してしまう自分が、[r]それに寄りかかってしまう[#私:わたくし]が、
+[k]
+
+[charaFace B 12]
+＠アナスタシア
+本当に、心の底から嫌だった……！！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaMove B 0,-25 0.4]
+[wt 0.3]
+[se ad581]
+[seVolume ad581 0 0.5]
+[wt 1.4]
+
+
+[se ad580]
+[cameraMove 0.4 0,-18 1.08]
+[wt 0.4]
+[cameraMove 0.5 0,-25 1.15]
+[wt 0.5]
+[seStop ad580 0.2]
+[wt 0.4]
+
+[charaFace B 2]
+＠アナスタシア
+絆[messageShake 0.04 3 3 0.5]を結ばないで！[r]寄り添わないで！　手を繋がないで！
+[k]
+
+[charaFace B 12]
+＠アナスタシア
+もう、これ以上は……ダメなの。[r]お願い……このまま、死なせて……！
+[k]
+
+[messageOff]
+[wt 1.2]
+
+[bgmStop BGM_EVENT_95 1.5]
+
+？1：[line 3]アナスタシア
+？！
+
+[cameraMove 0.4 0,-7 1.15]
+[wt 0.2]
+[se ad78]
+[wt 0.9]
+
+[cameraMove 0.6 0,-10 1.2]
+[wt 0.2]
+[se ad183]
+[wt 0.1]
+[charaShake B 0.01 1 1 0.5]
+[wt 0.4]
+[charaFace B 3]
+[wt 0.4]
+
+＠アナスタシア
+あ[line 3]マスター[line 3]？[r]おねがい、はなれて……。
+[k]
+
+？1：離さない
+？2：死なせない
+？！
+
+[messageOff]
+[charaFaceFade B 10 0.6]
+[wt 1.2]
+
+＠アナスタシア
+ああ……。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_78 0.1]
+
+＠
+体中の細胞が、嬉しいと悲鳴を上げている。[r]抱き締められて、快感を[#迸:ほとばし]らせている。
+[k]
+
+＠
+逆らえ、引き離せ。[r][#私:わたくし]にその資格はない。
+[k]
+
+＠
+ないはず、なのに。
+[k]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 0,-20]
+＠アナスタシア
+[#私:わたくし]のこと……怖いでしょう？
+[k]
+
+？1：怖いよ、でも……
+？！
+
+＠アナスタシア
+でも……？
+[k]
+
+？1：[&きみ:あなた]に罪を着せる気はない
+？2：それは、あの皇女に対しても失礼だ
+？！
+
+[charaFace B 10]
+＠アナスタシア
+[line 3]！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠
+予想外の、答えがきた。[r]理解するのに、少しの時間を要したほどに。
+[k]
+
+[messageOff]
+[charaTalk B]
+[charaFace B 10]
+[charaFadein B 0.1 0,-20]
+[wt 0.5]
+
+？1：あの皇女のやったことは絶対に許せない
+？2：でも、あの行動は彼女のものだから
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠
+彼女はどうあれ、[r]マスターである青年のために動いた。
+[k]
+
+＠
+彼のために獣国の皇女となり、[r]その身で彼を庇うほどに。
+[k]
+
+＠
+それが恋なのか、愛なのか、[r]あるいはそれ以上の、それ以外の何かなのか。
+[k]
+
+＠
+それは、[#私:わたくし]には永遠にわからないし、[r]理解できないだろう。
+[k]
+
+＠
+[line 3]それでも。
+[k]
+
+＠
+彼女は彼女の抱いたものを信じて、[r]戦ったのだ。
+[k]
+
+＠
+……それを、その罪を、その想いを、[r]身勝手に強奪してはいけなかった。
+[k]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,-20]
+＠アナスタシア
+……マスター。[r][#私:わたくし]、恐らくとても面倒ですよ？
+[k]
+
+＠アナスタシア
+うじうじして、陰気で、身勝手で、[#我:わ]が[#侭:まま]で、[r]依存心が強いと来ています。
+[k]
+
+＠アナスタシア
+あなたの言葉で揺り動かされましたが、[r]それでも[#一朝一夕:いっちょういっせき]でこの性格が変わるはずもなく。
+[k]
+
+＠アナスタシア
+また、こんなことをやらかすかもしれません。[r]それでも、あなたは[line 3]
+[k]
+
+＠アナスタシア
+また、[#私:わたくし]を守ってくれますか？
+[k]
+
+？1：自分にできる範囲でなら
+？2：精一杯、がんばってみるよ
+？！
+
+[messageOff]
+[charaFaceFade B 6 0.6]
+[wt 1.4]
+
+＠アナスタシア
+……はい、マスター。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠
+ああ[line 3]喜んでいる。[r]体が歓喜して、心が浮き立っている。
+[k]
+
+＠
+一生、この罪悪感は拭い去れないけど。[r]離別の日まで、忘れることはできないけど。
+[k]
+
+＠
+それでも。[r][#私:わたくし]は、[&彼:彼女]の言葉を信じたい。
+[k]
+
+＠
+[line 3]つまるところ、[#私:わたくし]は弱虫だから。[r]マスターの言葉を信じなくては、生きていけないのだ。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[scene 10000]
+
+[cameraMove 0 0,0 1.0]
+[wt 1.0]
+
+[fadein black 0.5]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠獣国の皇女
+……そう。
+[k]
+
+＠獣国の皇女
+[#私:わたくし]には、[&彼:彼女]の良さなんて、[r]さっぱりわからないけれど。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠アナスタシア
+そうでしょうね。
+[k]
+
+＠アナスタシア
+[#私:わたくし]もあなたのマスターより、[r]自分のマスターの方がいいのだもの。
+[k]
+
+＠アナスタシア
+お互い様、というやつね。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠
+……結局のところ、人は結びついてこそ、[r]人を魅力的に思うのだ。
+[k]
+
+＠
+関係を持ち、言葉を費やし、[r]思想に共感し、あるいは反発し、互いを慈しみ[line 3]
+[k]
+
+＠
+そして、恋や愛を育むのだろう。
+[k]
+
+＠
+それは赤の他人であっても家族であっても、[r]きっと変わりはない。
+[k]
+
+＠
+[line 3][#翻:ひるがえ]れば。[r]関係性を持ち得ない他人は、敵に等しい時もある。
+[k]
+
+＠
+[#私:わたくし]は、家族を愛した。[r]家族もまた、[#私:わたくし]を愛した。
+[k]
+
+＠
+……けれど、ロシアの大地は愛さなかった。[r]大地もまた、[#私:わたくし]たちを愛さなかった。
+[k]
+
+＠
+関係がないと、そう思っていたから。[r]だから、[#ああなった]のだろう。
+[k]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+＠獣国の皇女
+……永遠にさようなら、[r]アナスタシア・ニコラエヴナ・ロマノヴァ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠アナスタシア
+さようなら。
+[k]
+
+[charaFace B 6]
+＠アナスタシア
+どうか金輪際、蘇らないで。[r][line 3]アナスタシア・ニコラエヴナ・ロマノヴァ。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 6]
+[charaFadein C 0.1 1]
+[wt 1.2]
+
+[se ad95]
+[seStop ad95 1.6]
+[charaMove C -80,0 0.8]
+[charaFadeout C 0.8]
+[wt 2.4]
+
+
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_78 1.5]
+[wait fade]
+
+
+[charaSet A 11005001 1 ヘシアン・ロボ]
+
+[scene 104600]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+＠
+[line 3]そして、目覚めた後には。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.4 1]
+[wt 0.8]
+
+＠アナスタシア
+……皆様、おはようございます……。[r]そして、あのう……ごめんなさい……。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+
+[charaTalk off]
+[charaDepth F 6]
+[charaDepth G 5]
+[charaDepth E 4]
+[charaDepth D 3]
+[charaDepth A 2]
+
+[charaScale F 0.9]
+[charaScale G 0.9]
+[charaScale E 0.9]
+[charaScale D 0.9]
+[charaScale A 0.9]
+
+
+[charaFace D 5]
+[charaFace E 5]
+[charaFace F 15]
+[charaFace G 5]
+[charaFace A 0]
+[charaFadein A 0.1 70,-24]
+[charaFadeinFSR D 0.1 220,-24]
+[charaFadeinFSL E 0.1 -450,-24]
+[charaFadeinFSL F 0.1 -250,-24]
+[charaFadeinFSR G 0.1 430,-24]
+[wt 1.2]
+
+
+＠
+怒濤のような説教が待っていた。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[wait fade]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout A 0.1]
+
+[scene 109601]
+
+[se ad37]
+[seVolume ad37 0 0]
+[wt 1.0]
+
+
+[seVolume ad37 1.5 1.0]
+[fadein black 1.5]
+[wait fade]
+[wt 1.5]
+
+
+[bgm BGM_EVENT_2 0.1]
+[seStop ad37 1.0]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+＠アナスタシア
+……という訳で、[r]しばらくはシミュレーターに軟禁状態よ。
+[k]
+
+＠アナスタシア
+……まあ、しょうがありませんけど。
+[k]
+
+？1：まあまあ……
+？！
+
+[charaFace B 0]
+＠アナスタシア
+それにしても。[r]……今、思い出すと……。
+[k]
+
+＠アナスタシア
+……。[r]……ヘシアンさんって、物凄い喋るのね……。
+[k]
+
+？1：それは本当にビックリだった！
+？！
+
+＠アナスタシア
+本人曰く、夢の中だからであって、[r]普段は無口な方らしいけど。
+[k]
+
+[charaFace B 4]
+＠アナスタシア
+……口が無いから無口と言いたいだけじゃ……。
+[k]
+
+？1：かもね……
+？！
+
+[charaFace B 1]
+＠アナスタシア
+ふふ。[r]……なんて、他愛のないやりとりかしら。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠
+[line 3]今でも瞼を閉じると。[r]彼女が犯した罪が、脳裏に浮かぶ。
+[k]
+
+＠
+辛くて苦しくて、誰のせいにもできない。[r][#私:わたくし]じゃない[#私:わたくし]の罪。
+[k]
+
+[bgmStop BGM_EVENT_2 1.5]
+＠
+……でも、もうコレを自分のものとして[r]受け止めるのはやめる。
+[k]
+
+＠
+これは、彼女の罪、彼女の責任、[r]彼女が……全てを捧げたもの。
+[k]
+
+＠
+見返りがなくとも。[r]彼女はそれを自己の生命に値すると判断したのだ。
+[k]
+
+＠
+だから、[#私:わたくし]は罪を背負わない。[r]背負ってはならないのだ。
+[k]
+
+[bgm BGM_EVENT_107 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+＠アナスタシア
+ねえ、マスター。
+[k]
+
+＠アナスタシア
+[#私:わたくし]の傍にいて。[r]どうか、握った手を離さないで。
+[k]
+
+＠アナスタシア
+もう、大切な人を失いたくないけれど。[r]同じくらい、大切な人の傍にいたいの。
+[k]
+
+？1：……約束する[&:よ]
+？！
+
+[messageOff]
+[charaFace B 6]
+[wt 1.2]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+＠
+あなたは少し照れたように、[r]そっぽを向いて頬を掻いた。
+[k]
+
+＠
+それを見る度、[r]くすぐったくてたまらなくなる。
+[k]
+
+＠
+この感情がどうあれ、何であれ。[r]今はこの一時を噛み締めよう。
+[k]
+
+＠
+ああ。[r]罪深き[#私:わたくし]をお許しください。
+[k]
+
+＠
+どんな財宝よりも貴重な、[r][&彼:彼女]との時間だけは……。
+[k]
+
+＠
+決して失ってはならないもの。
+[k]
+
+＠
+迷い続けた魂が漂着する、[r]狂おしいほど愛おしい場所なのだから。
+[k]
+
+
+
+[messageOff]
+[wt 1.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_107 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

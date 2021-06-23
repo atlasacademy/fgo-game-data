@@ -1,0 +1,884 @@
+
+
+＄91-50-35-02-2-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+
+[charaSet A 98006000 1 魔獣]
+[charaSet B 11005001 1 ヘシアン]
+[charaSet C 5035000 1 アナスタシア]
+[charaSet D 1098153800 1 ？？？]
+[charaFilter D silhouette 00000080]
+[charaSet E 5035002 1 アナスタシア（？）]
+[charaSet F 1098153900 1 アレクセイ]
+[charaFilter F silhouette 00000080]
+[charaSet G 1098127900 1 カドック]
+[charaSet H 1098123600 1 オプリチニキ1]
+[charaSet I 1098123600 1 オプリチニキ2]
+[charaSet J 1098123600 1 オプリチニキ3]
+
+[imageSet O back10000 1 1]
+[charaScale O 1.32]
+
+[charaSet T 98115000 1 エフェクト用]
+
+[charaPut T 2000,2500]
+[charaEffect T bit_sepia01_depth_fs]
+
+
+[scene 54102]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.6]
+
+[bgmStop BGM_EVENT_80 1.0]
+
+[se ad42]
+[charaSpecialEffect A enemyErasure 0,0 1.4]
+[wt 2.6]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ヘシアン
+『夢の世界ですからね。[r]　案の定、溶けて消えましたか』
+[k]
+
+＠ヘシアン
+『では、彼女の臭跡を辿りましょう。[r]　マスター』
+[k]
+
+？1：ロボ、[&頼む:お願い]
+？2：狼王、[&頼む:お願い]
+？！
+
+[charaTalk off]
+[se ad334]
+＠ロボ
+[i berserker_language_4]
+[k]
+
+[messageOff]
+[se ade168]
+[charaFadeout B 0.6]
+[wt 0.1]
+[se ad78]
+[seVolume ad78 0 0.5]
+[wt 0.5]
+[se ad78]
+[seVolume ad78 0 0.5]
+[wt 0.3]
+
+[seStop ade168 0.2]
+[wt 0.8]
+
+[charaTalk on]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ヘシアン
+『ついてこい、だそうです』
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_81 1.0 0.4]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[se ad555]
+[seVolume ad555 0 0]
+
+[seVolume ad555 1.0 1.0]
+
+[bgm BGM_EVENT_81 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+[wt 1.5]
+
+？1：それにしても
+？2：吹雪が激しい……
+？！
+
+[seVolume ad555 1.0 0.2]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ヘシアン
+『今の彼女の[#心象風景:しんしょうふうけい]なのか。[r]　それとも思い出深い地なのか』
+[k]
+
+＠ヘシアン
+『いずれにせよ、羨ましいことです。[r]　我々は、故郷もロクに思い出せないので』
+[k]
+
+＠ヘシアン
+『……まあ、俺は大して[r]　故郷に未練がある訳ではないのですが！』
+[k]
+
+＠ヘシアン
+『むしろもっと大事なものに未練があります！』
+[k]
+
+＠ヘシアン
+『それは！　実は！』
+[k]
+
+＠ヘシアン
+[f large]『頭！』
+[k]
+
+？1：それは……そうだろうね……
+？！
+
+＠ヘシアン
+『頭のないデュラハンなんて[line 3][r]　肉球のない猫のようなものだ』
+[k]
+
+＠ヘシアン
+『そう思いません？』
+[k]
+
+＠ヘシアン
+『食事できないし会話できないし[r]　鼻毛伸びてても指摘できないんですよ！』
+[k]
+
+＠ヘシアン
+『いや他人の鼻毛見たくないですけど！』
+[k]
+
+＠ヘシアン
+『ああ、そうそう。これが終わったら[r]　ナーサリーちゃんに伝言お願いします』
+[k]
+
+＠ヘシアン
+『ハロウィンもうすぐだから、とか言って[r]　カボチャを上に載せるの止めて！』
+[k]
+
+＠ヘシアン
+『しかもくりぬいたカボチャにロウソク[r]　立ててるから、チカチカするんですよ！』
+[k]
+
+？1：見えてるの？
+？！
+
+＠ヘシアン
+『いえ全然。[r]　俺、肌感覚で戦ってますので』
+[k]
+
+[messageOff]
+[charaTalk off]
+[bgmStop BGM_EVENT_81 1.0]
+[seStop ad555 1.0]
+[se ad334]
+＠ロボ
+[i berserker_language_4]
+[k]
+
+[charaTalk on]
+＠ヘシアン
+『おや？[r]　誰かいるみたいですね』
+[k]
+
+？1：アナスタシア……！？
+？！
+
+＠F：？？？
+[line 3]おい。違うぞ。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+
+[scene 39100]
+
+[pictureFrame cut063_cinema]
+[wt 1.5]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 0,-50]
+[wt 0.4]
+
+[bgm BGM_EVENT_47 0.1]
+
+＠アナスタシア
+……？[r]あら、アレクセイはどうしたのですか？
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 0,-50]
+[wt 0.4]
+＠？？？
+アレクセイはお休みよ。[r]体調を崩してしまったから。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+
+[charaTalk C]
+[charaFace C 1]
+[charaFace D 0]
+[charaFadeinFSR C 0.1 256,-50]
+[charaFadeinFSL D 0.1 -256,-50]
+＠アナスタシア
+……[#私:わたくし]、[r]アレクセイのところへ参りますわ。
+[k]
+
+＠アナスタシア
+ひとりぼっちで、心細いでしょうし。
+[k]
+
+＠？？？
+あ、ズルいわよ。わたしだって、[r]早くこのパーティーから抜け出したいのに。
+[k]
+
+[charaFace C 6]
+＠アナスタシア
+早い者勝ちでしょう？
+[k]
+
+＠？？？
+……もう。[r]仕方がないから、交代にしましょう。
+[k]
+
+＠？？？
+ちゃんと戻ってきなさい。
+[k]
+
+[charaFace C 1]
+＠アナスタシア
+はいはい。[r]お姉様の仰る通りに。
+[k]
+
+[messageOff]
+[se ad95]
+[seStop ad95 1.2]
+[charaMoveFSR C 306,-50 0.4]
+[charaFadeout C 0.4]
+[wt 1.8]
+
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_47 1.0]
+[wait fade]
+
+[charaFadeout D 0.1]
+
+[scene 54600]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠
+[line 3]もちろん理解している。
+[k]
+
+＠
+これは夢ですらない。
+[k]
+
+＠
+ただの願望の充足であり、[r]永遠に終わらない幸福な日々だ。
+[k]
+
+＠
+……それでもいい。[r]もう、カルデアには戻らない。戻りたくない。
+[k]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+＠アナスタシア
+ヴィイ。
+[k]
+
+＠アナスタシア
+お願い、もっと見せて。[r]もっともっと見せて。
+[k]
+
+＠アナスタシア
+幸福な時間を、幸福な一瞬を。[r][#微睡:まどろ]みの中で、ずっと。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠
+……ヴィイの瞼が開く。[r][#私:わたくし]は茨のような幻惑に巻きつかれる。
+[k]
+
+＠
+ああ、なんて平穏。[r]もう[#蔑:さげす]みを恐れることはなく。
+[k]
+
+＠
+[&彼:彼女]の一挙手一投足に[r]身を[#竦:すく]ませる必要もなく。
+[k]
+
+＠
+このまま静かに、緩やかに破滅を待てばいい。
+[k]
+
+＠
+[#異聞帯:ロストベルト]のように。[r]ある日突然、ぶつりと断線して[line 3]それで終わり。
+[k]
+
+＠
+償えない、[#贖:あがな]えない、[r]そもそも、罪ですらない。
+[k]
+
+＠
+けれど、[r][#私:わたくし]には[#私:わたくし]であるという罪がある。
+[k]
+
+＠
+……どうして、[r]あんなに結びついてしまったのだろう。
+[k]
+
+＠
+いっそ、ただの主従であれば良かった。[r]何の思い入れもなく、機械のように扱ってくれれば。
+[k]
+
+＠
+……なのに、どうしてあの人は、[r]そうしてくれなかったのか。
+[k]
+
+＠
+[line 3][#私:わたくし]の顔を見るだけで、[r]きっと辛かっただろうに。
+[k]
+
+＠
+どうして、という言葉ばかりが[r]浮かんでは消えていく。
+[k]
+
+＠
+……こちらの味方だったサーヴァントが、[r]敵に回る事例は、いくらでもあった。
+[k]
+
+＠
+でも、あの時。あの瞬間。あの場所にいたのは。[r]アナスタシア・ニコラエヴナ・ロマノヴァただ一人。
+[k]
+
+[messageOff]
+[wt 0.2]
+
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 0,-50]
+[wt 0.8]
+＠アナスタシア（？）
+[line 3]仕方ないでしょう。[r]だって[#私:わたくし]、人間が嫌いなのだもの。
+[k]
+
+＠アナスタシア（？）
+[#私:わたくし]を殺した軍人も、[r][#私:わたくし]を恨んだ市民も。
+[k]
+
+＠アナスタシア（？）
+[#私:わたくし]を見殺しにすると決定した政治家も。[r]誰も彼も全部……嫌いで憎くて疎ましいわ。
+[k]
+
+
+＠
+[charaTalk T]
+なのに、皇帝になろうとしたのね。
+[k]
+
+＠アナスタシア（？）
+ええ、マスターの願いだったもの。[r]……かわいいひとの、大切な願いだったもの。
+[k]
+
+＠
+[charaTalk T][line 3][#私:わたくし]、あなたが大嫌いよ。
+[k]
+
+[charaFace E 1]
+＠アナスタシア（？）
+ありがとう。[r][#私:わたくし]も、あなたが心底嫌いだから。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_70 1.0]
+[wait fade]
+
+[charaFadeout E 0.1]
+
+[pictureFrame]
+
+[scene 54102]
+
+[wt 1.5]
+
+[se ad555]
+[seVolume ad555 0 0]
+
+[seVolume ad555 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+？1：[&きみ:あなた]は……誰かな？
+？！
+
+
+[seVolume ad555 1.0 0.2]
+
+[messageOff]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_77 0.1]
+
+＠F：？？？
+誰でもいいだろ。[r]僕は、彼女を助けたいんだ。
+[k]
+
+＠F：？？？
+アンタたちも、そのために[r]こんな夢の中に来たんだろ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ヘシアン
+『まあ、もちろん助けに来たのですが。[r]　どちら様です？』
+[k]
+
+＠ヘシアン
+『罠だったら首斬りますよ。[r]　俺か彼のどちらかが』
+[k]
+
+＠ヘシアン
+『あ、首を載せるなんて猟奇的なことはしないです。[r]　その辺は傭兵の名誉に懸けて誓いましょう』
+[k]
+
+？1：名前を、教えて欲しい
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠F：？？？
+……。[r]……アレクセイ。
+[k]
+
+？1：アレクセイ……？
+
+＠アレクセイ
+何にも知らないんだな！[r]アナの弟だよ！！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ad334]
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ロボ
+[i berserker_language_4]
+[k]
+
+[charaTalk on]
+＠ヘシアン
+『あ、大声出すと機嫌悪くなるので、[r]　止めてくれますか？』
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠アレクセイ
+あ、うん。[r]わかった。
+[k]
+
+＠アレクセイ
+……ってぎゃあ化け物！！[messageShake 0.04 3 3 0.5]
+[k]
+
+？2：アレクセイというと確か弟の……
+
+＠アレクセイ
+そうだ、ちゃんと調べてたのか。[r]……まあ、マスターとしては当たり前だけどな！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ヘシアン
+『当たりキツいですねアレクセイ君』
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠アレクセイ
+ほっとけ！[r]そのくらいの権利はあるだろ！
+[k]
+
+＠アレクセイ
+……って、うわあ化け物！！[messageShake 0.04 3 3 0.5]
+[k]
+
+？！
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ヘシアン
+『ははは、失敬な。それはともかく、具体的に[r]　教えてくださいよ。あなたの姉を救う[#術:すべ]を』
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠アレクセイ
+……わ、わかった。
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 1.0]
+[bgm BGM_EVENT_77 1.0 0.4]
+[seVolume ad555 1.0 0.1]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[wt 1.0]
+
+[se ad580]
+[seVolume ad580 0 0]
+
+[seVolume ad555 1.0 0.2]
+[seVolume ad580 1.0 1.0]
+[bgm BGM_EVENT_77 1.0 1.0]
+[wipein rollLeft 1.0 1.0]
+[wait wipe]
+[wt 1.5]
+
+[seStop ad580 1.0]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠アレクセイ
+……アナは一人、あの城に閉じこもってる。
+[k]
+
+＠アレクセイ
+都合のいい[#配役:キャスト]を、[r]都合のいいように動かして、ずっと過ごしているんだ。
+[k]
+
+＠アレクセイ
+体感時間だと、二年くらいかな？
+[k]
+
+？1：アナスタシアは事情を把握しているの？
+？！
+
+＠アレクセイ
+している。
+[k]
+
+＠アレクセイ
+このままだと自分が滅ぶことも、[r]再召喚の芽が断たれることも、全部覚悟の上だ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠ヘシアン
+『なぜそんなことを？』
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠アレクセイ
+……アナは、違うマスターのサーヴァントだったからだよ。[r]こう言えば、わかるだろ。
+[k]
+
+[messageOff]
+[se ad592]
+[seVolume ad592 0 0.6]
+[fadeout white 0.5]
+[bgmStop BGM_EVENT_77 0.8]
+[seVolume ad555 1.0 0]
+[wait fade]
+
+[charaFadeout F 0.1]
+
+[scene 54202]
+
+[charaTalk off]
+[charaFace C 0]
+[charaFace G 0]
+[charaFadeinFSR C 0.1 2]
+[charaFadeinFSL G 0.1 0]
+
+[charaPut T 1]
+[wt 0.8]
+
+[fadein white 0.5]
+[wait fade]
+[wt 1.2]
+
+[fadeout white 0.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[charaFadeout G 0.1]
+[charaPut T 2000,2500]
+
+[scene 54102]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.8]
+
+[fadein white 0.5]
+[wait fade]
+[wt 0.5]
+
+？1：それは[line 3]
+？2：わかる、けれど
+？！
+
+[bgm BGM_EVENT_70 0.1]
+[seVolume ad555 1.0 0.2]
+
+＠アレクセイ
+ああ、知っている。知っているよ。[r]おまえはちゃんとやってたってことくらい。
+[k]
+
+＠アレクセイ
+でも、アナもわかってるんだよ。
+[k]
+
+＠アレクセイ
+……やっぱ、怖かっただろ。[r]おまえ。
+[k]
+
+？1：……
+？！
+
+＠アレクセイ
+仕方ないさ。[r]しょうがない。
+[k]
+
+＠アレクセイ
+サーヴァントなんだから、そういうこともある。[r]割り切って考えられるなら、そりゃいいさ。
+[k]
+
+＠アレクセイ
+でも[line 3]
+[k]
+
+＠アレクセイ
+ああ、くそ。[r]おまえが悪いんだぞ。
+[k]
+
+＠アレクセイ
+おまえが、もうちょっと親身に[r][#付き合わなければ]……こうはならなかったのに。
+[k]
+
+[messageOff]
+[charaTalk T]
+[bgmStop BGM_EVENT_70 1.0]
+[seStop ad555 1.0]
+
+[se ad83]
+[seVolume ad83 0 0.3]
+[wt 2.2]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+[se ad334]
+＠B：ロボ
+[i berserker_language_4]
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠アレクセイ
+……ちぇっ。[r][#殺戮猟兵:オ プ リ チ ニ キ]まで動員したか。
+[k]
+
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth H 6]
+[charaDepth I 5]
+[charaDepth J 4]
+
+[se ad601]
+[wt 0.5]
+[charaFace H 0]
+[charaFace I 0]
+[charaFace J 0]
+[charaFadein H 0.4 1]
+[wt 0.2]
+[charaFadeinFSR I 0.4 2]
+[wt 0.2]
+[charaFadeinFSL J 0.4 0]
+[seStop ad601 0.5]
+[wt 1.2]
+[charaFadeout H 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk on]
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠アレクセイ
+僕は当然戦えないからな。[r]とりあえず任せるぞ。
+[k]
+
+
+[input selectBranch]
+[seStop ad42 0.1]
+[seStop ad78 0.1]
+[seStop ad83 0.1]
+[seStop ad95 0.1]
+[seStop ad334 0.1]
+[seStop ad555 0.1]
+[seStop ad580 0.1]
+[seStop ad592 0.1]
+[seStop ad601 0.1]
+[seStop ade168 0.1]
+
+[charaSet A 1098183600 1 魔獣（四足歩行）]
+[charaSet B 11005001 1 ヘシアン・ロボ]
+[charaSet C 5035000 1 アナスタシア]
+[charaSet D 1098153800 1 ？？？]
+[charaFilter D silhouette 00000080]
+[charaSet E 5035002 1 アナスタシア（？）]
+[charaSet F 1098153900 1 アレクセイ]
+[charaFilter F silhouette 00000080]
+[charaSet G 1098127900 1 カドック]
+[charaSet H 1098123600 1 オプリチニキ1]
+[charaSet I 1098123600 1 オプリチニキ2]
+[charaSet J 1098123600 1 オプリチニキ3]
+
+[scene 54102]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[messageOff]
+[maskin black 1.0]
+[wait mask]
+[label selectBranch]
+
+
+？1：了解、後ろに下がってて！
+
+＠アレクセイ
+あ、うん。[r]まあ、それなら手出しはしない。
+[k]
+
+＠アレクセイ
+自分で頑張れよ。
+[k]
+
+？2：何か補助的なもの、できない？
+
+＠アレクセイ
+何だ、欲しいのか。[r]いいぞ、少しくらいなら手助けする。
+[k]
+
+＠アレクセイ
+[#魔眼起動]。[r]……そら、惑え惑え！
+[k]
+
+？！
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

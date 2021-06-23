@@ -1,0 +1,1088 @@
+
+＄91-70-34-01-1-1
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 7034001 1 サロメ]
+[charaSet B 99502600 1 マシュ]
+[charaSet C 3006001 1 弁慶]
+[charaSet D 7006001 1 坂田金時]
+[charaSet E 98104300 1 怨霊]
+[charaSet F 98006100 1 ダミーエフェクト１]
+[charaSet G 5030001 1 シェヘラザード]
+[imageSet H back10000 1]
+[charaScale H 1.05]
+[charaSet I 7034001 1 サロメ]
+[charaFilter I silhouette 00000080]
+[charaSet T 98115000 1 エフェクト用]
+
+[charaPut F 2000,2000]
+[charaEffect F bit_talk_10_LowLevel]
+
+[scene 107600]
+
+[bgm BGM_EVENT_3 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+[wt 0.2]
+
+[effect bit_talk_41_fs]
+[charaMoveScale C 1.1 0.1]
+[charaMove C 0,15 0.1]
+[se ad7]
+[wt 0.2]
+[charaFadeout C 0.1]
+[wt 0.1]
+[effectDestroy bit_talk_41_fs]
+[charaScale C 1.0]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.1]
+
+[se bac13]
+[effect bit_talk_x_slash02]
+[wt 0.1]
+[charaShake E 0.05 3 3 0.2]
+[wt 0.1]
+
+[se bac14]
+[effect bit_talk_x_slash01]
+[wt 0.1]
+[effect bit_talk_14]
+[charaShake E 0.05 3 3 0.2]
+[wt 0.3]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+[wt 0.2]
+
+[effect bit_talk_41_fs]
+[charaMoveScale D 1.1 0.1]
+[charaMove D 0,15 0.1]
+[se bac1]
+[wt 0.2]
+[charaFadeout D 0.1]
+
+[se ad1010]
+[wt 0.3]
+[charaScale D 1.0]
+
+[effectDestroy bit_talk_41_fs]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+[wt 0.1]
+[fowardEffect bit_talk_x_slash_gl_03]
+[wt 0.2]
+[charaShake E 0.05 3 3 0.7]
+[wt 0.8]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.4 -300,0]
+[charaMove D 20,0 0.4]
+
+[se ad671]
+[seVolume ad671 0 0.6]
+[wt 0.4]
+[charaMove D 0,0 0.2]
+[seStop ad671 0.5]
+[wt 0.5]
+
+＠坂田金時
+頼んだぜ、お姫さん！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad463]
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[effect bit_talk_41_fs]
+
+[wt 1.5]
+
+[seStop ad463 0.5]
+[wt 0.4]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[effectDestroy bit_talk_41_fs]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠サロメ
+ああ[line 3]
+[k]
+
+＠サロメ
+なんということでしょう！
+[k]
+
+[charaFace A 3]
+
+＠サロメ
+なんと優しき、異郷の戦士たち！[r]あたしのために、首をとっておいてくださるなんて！
+[k]
+
+＠サロメ
+嬉しいわ、嬉しいわ！
+[k]
+
+＠サロメ
+あんまり嬉しいものだから、あたし……
+[k]
+
+＠サロメ
+期待に応えてしまうわね！[wt 1.0][charaFace A 2][r]ヨカナーン！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+[wt 0.1]
+
+[effect bit_talk_lightning_01t]
+[se ad61]
+[seVolume ad61 0 0.5]
+[wt 1.6]
+[seStop ad61 0.5]
+[effectStop bit_talk_lightning_01t]
+
+[charaPut T 1]
+[charaScale T 2.0]
+
+[charaEffect T bit_talk_fangtrap]
+[wt 0.1]
+[se ad191]
+[charaShake E 0.05 3 3 0.4]
+[wt 1.0]
+
+[charaShake E 0.05 3 3 1.5]
+[cueSe SE_21 21_ade582]
+[wt 0.7]
+
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF00]
+[wt 0.2]
+[flashin once 0.1 0.1 FFFFFFFF FFFFFF00]
+[wt 0.2]
+
+[bgmStop BGM_EVENT_3 1.5]
+[charaSpecialEffect E enemyErasure 1 1.5]
+[se ad42]
+[wait charaSpecialEffect E]
+[wt 0.4]
+
+[charaPut F 1]
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠マシュ
+魔力反応、消滅！[r]聖杯の欠片が実体化します[line 3]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut F 2000,2000]
+
+[effect bit_talk_20]
+[wt 0.6]
+[se bac35]
+[wt 1.4]
+[effectStop bit_talk_20]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠サロメ
+まあ、綺麗……[bgm BGM_EVENT_2 0.1]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠弁慶
+お気を付けくだされ、サロメ殿。金時殿も。[r]欠片とはいえ聖杯ですからな。
+[k]
+
+＠弁慶
+扱いには細心の注意を……[r]これ、このように。
+[k]
+
+[messageOff]
+[se ad39]
+[effect bit_talk_20]
+[wt 2.0]
+
+[charaMoveReturn C 0,-5 0.4]
+[wt 0.4]
+
+[effectStop bit_talk_20]
+[wt 1.5]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠坂田金時
+へえ、やるねえ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠弁慶
+マシュ殿の盾のように鮮やかな手並みではないまでも、[r]我が念仏もなんとかお役に立てる模様。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠マシュ
+聖杯の欠片、回収を確認しました。[r]作戦完了です！
+[k]
+
+＠マシュ
+お疲れさまです、皆さん。[r]まもなくレイシフトが開始されます。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut F 2000,2000]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠サロメ
+ふふふふふふふふ。
+[k]
+
+[charaFace A 1]
+
+＠サロメ
+マシュも、ナビゲートお疲れさま。[r]お陰で順調に作戦を進められたわ、そうよねマスター？
+[k]
+
+？1：うん！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠マシュ
+お役に立てれば幸いです！
+[k]
+
+？2：ありがとう、マシュ
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaTalk B]
+[charaFace B 3]
+[charaFadein B 0.1 1]
+
+＠マシュ
+い、いえ！[r]お役に立てましたら……
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut F 2000,2000]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠サロメ
+ふふ。ふふふふふふふふふふふ。
+[k]
+
+＠サロメ
+本当に。[r]仲が良いのね、マスターとマシュ。素敵。
+[k]
+
+＠サロメ
+きらきら。きらきら。[r]まるで夜空の星々のように輝いて、嗚呼[line 3]
+[k]
+
+[charaFace A 3]
+
+＠サロメ
+どうにかしてしまいたくなるくらいに、きらきら。[r]ふふ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠弁慶
+[line 3]サロメ殿。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠サロメ
+なあに？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠弁慶
+いえ。
+[k]
+
+[charaTalk depthOff]
+[charaDepth C 5]
+[charaDepth H 1]
+
+[charaFace C 5]
+[charaFadeTime H 0.2 0.5]
+
+＠弁慶
+（鬼女の、気配）
+[k]
+
+＠弁慶
+（バーサーカーという霊基ゆえか？[r]　それとも、彼女自身の存在に由来するものか）
+[k]
+
+＠弁慶
+（金時殿も気付いておられよう。[r]　成る程、シェヘラザード殿が気に掛ける訳ですな）
+[k]
+
+＠弁慶
+（とはいえ、マスター殿のご指示を守り、[r]　連携も申し分ない。[#意思疎通:い  し  そ  つ  う]も叶っている）
+[k]
+
+[charaFace C 0]
+
+＠弁慶
+（ふうむ）
+[k]
+
+＠弁慶
+（何とも、業深いものよな……）
+[k]
+
+[charaFadeout H 0.2]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠サロメ
+じゃあ、またね二人とも。[r]いつかもう一度同じチームになったら[line 3]
+[k]
+
+[charaFace A 1]
+
+＠サロメ
+精一杯、頑張りましょうね！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠坂田金時
+おう！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠サロメ
+マシュも、よろしくね！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut F 1]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠マシュ
+はい！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaPut F 2000,2000]
+[charaEffectStop F bit_talk_10_LowLevel]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 1.5]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_2 1.5]
+[wait fade]
+
+[branchQuestNotClear lblNotClear1 3000303]
+
+[scene 105800]
+
+[branch lblConf1]
+[label lblNotClear1]
+
+[scene 106000]
+
+[label lblConf1]
+
+[charaFadeout A 0.1]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.4 1]
+[wt 0.4]
+
+＠シェヘラザード
+[line 3][#彼女:サロメ]の様子は、いかがでしょうか？
+[k]
+
+？1：カルデアのみんなとは馴染んでると思う
+？2：バトルでも、暴走するような気配はないね
+？！
+
+＠シェヘラザード
+それはようございました。
+[k]
+
+？1：でも……
+
+？！
+
+[charaFace G 4]
+
+＠シェヘラザード
+それは……
+[k]
+
+＠シェヘラザード
+心の何処かに引っかかるものがある、でしょうか。
+[k]
+
+？1：（頷く）
+？！
+
+[charaFace G 6]
+
+＠シェヘラザード
+……。[r]……。
+[k]
+
+[charaFace G 0]
+
+＠シェヘラザード
+……はい。
+[k]
+
+＠シェヘラザード
+彼女はカルデアによく馴染んで、[r]どなたを前にしても笑っています。
+[k]
+
+＠シェヘラザード
+戦いのさなかも、そうです。[r]水晶の[#髑髏:どくろ]を駆りながら、よく笑います。
+[k]
+
+
+＠シェヘラザード
+そして、夜に[line 3]
+[k]
+
+[charaFace G 1]
+
+＠シェヘラザード
+私とお話をしている時にも。[r]よく笑ってくれるのです。
+[k]
+
+＠シェヘラザード
+心配いらない。[r]大丈夫、と言っているかのような穏やかで美しい笑顔。
+[k]
+
+＠シェヘラザード
+そこには嘘などないと私は信じます。[r]けれど……
+[k]
+
+[charaFace G 4]
+
+＠シェヘラザード
+私は……
+[k]
+
+＠シェヘラザード
+何故だか、感じてしまうのです。[r]魔力とはまた異なる何らかの気配によって。
+[k]
+
+＠シェヘラザード
+彼女はまるで[line 3]
+[k]
+
+＠シェヘラザード
+召喚されてから、ずっと……ずっと……[r]ずうっと……
+[k]
+
+[messageOff]
+[charaFace G 6]
+[wt 1.0]
+
+＠シェヘラザード
+[#何かに耐えているかのよう]、と。
+[k]
+
+[charaFace G 0]
+
+＠シェヘラザード
+[#裡:うち]から[#溢:あふ]れるモノに耐えているのか、[r]外から決壊させようとするモノに耐えているのか、
+[k]
+
+＠シェヘラザード
+そこまでは分かりません。[r]何を耐えているのかさえも、分からない。
+[k]
+
+＠シェヘラザード
+ただ……
+[k]
+
+＠シェヘラザード
+あの笑顔はきっと[#彼女が耐えている証]です。[r]それだけは、分かります。
+[k]
+
+？1：……耐えている……
+
+？！
+
+＠シェヘラザード
+はい。
+[k]
+
+[charaFace G 4]
+
+＠シェヘラザード
+いつか、砕けて、崩れて、[r]何もかもが[#溢:あふ]れてしまったら……
+[k]
+
+＠シェヘラザード
+その時……[r]彼女は……どうなってしまうか……
+[k]
+
+＠シェヘラザード
+私は、不安に想うのです。マスター。
+[k]
+
+？1：[&自分:わたし]も同じ気持ちだよ、シェヘラザード
+
+[charaFace G 0]
+
+＠シェヘラザード
+…………はい。
+[k]
+
+？2：ありがとう、少し話をしてみる
+
+[charaFace G 6]
+
+＠シェヘラザード
+……。[r]……。
+[k]
+
+[charaFace G 0]
+
+＠シェヘラザード
+……はい。
+[k]
+
+＠シェヘラザード
+……どうか、お気を付けて。
+[k]
+
+？！
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_11 1.5]
+[wait fade]
+
+
+[scene 21501]
+
+[charaFadeout G 0.1]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+[wt 0.5]
+
+[se ade422]
+[seVolume ade422 0 0.1]
+[seVolume ade422 1.0 1.0]
+[wt 1.5]
+
+[charaTalk off]
+
+[charaDepth I 2]
+[charaDepth A 1]
+
+[charaFace I 0]
+[charaFadein I 0.4 1]
+
+[wt 0.8]
+[seStop ade422 0.2]
+[wt 0.4]
+
+[charaFace A 0]
+[charaFadein A 0.1 1]
+[wt 0.1]
+
+[charaFadeout I 0.7]
+[wt 1.0]
+
+[charaTalk on]
+
+[bgm BGM_EVENT_1 0.1]
+
+＠サロメ
+…………まあ、マスター。
+[k]
+
+＠サロメ
+素敵ね。[r]とっても広くて、静かだわ。どこかのお城の跡かしら。
+[k]
+
+[charaFace A 4]
+
+＠サロメ
+でも……
+[k]
+
+＠サロメ
+あたしとお話をするなら、[r]べつに、シミュレーターを使わなくてもいいのよ？
+[k]
+
+＠サロメ
+食堂で皆と楽しく語らうのもいいし、[r]部屋に呼んでくれるだけでもいいし。
+[k]
+
+＠サロメ
+そうでしょう？
+[k]
+
+[charaFace A 0]
+
+＠サロメ
+でも、ええ、そうじゃないのでしょうね。[r]今夜は。
+[k]
+
+[messageOff]
+[charaFace A 1]
+[wt 1.0]
+
+＠サロメ
+ねえマスター。[r]お話って、なあに？
+[k]
+
+[messageOff]
+[wt 0.1]
+
+？1：サロメ
+？！
+
+？1：無理を、してない？
+？！
+
+[charaFace A 4]
+
+＠サロメ
+無理？
+[k]
+
+＠サロメ
+そんなもの[line 3]
+[k]
+
+[messageOff]
+[charaFace A 1]
+[wt 0.7]
+
+＠サロメ
+ふふ、そんなもの。決まっているじゃないマスター！
+[k]
+
+[charaFace A 6]
+
+＠サロメ
+[#当然しているわ]。
+[k]
+
+？1：……！
+？！
+
+＠サロメ
+毎日、毎日。[r]朝も昼も夜もずっと。
+[k]
+
+[charaFace A 2]
+
+＠サロメ
+ずっと、ずっと、ずっと、ずっと、ずうっと！
+[k]
+
+＠サロメ
+ずううううううううううっと我慢しているわ、あたし。[r]そんなの当たり前じゃない、そうでしょう？
+[k]
+
+＠サロメ
+きらきら輝くヨカナーンのようなひとがいたら、[r]あたし、好きになってしまいそうになるの。
+[k]
+
+[charaFace A 4]
+
+＠サロメ
+好きになってしまったら……
+[k]
+
+＠サロメ
+あたし、欲しくなるわ。首が。
+[k]
+
+＠サロメ
+清いひと。[r]尊いひと。
+[k]
+
+＠サロメ
+聖なるひと[line 3]
+[k]
+
+＠サロメ
+ああいう方々を前にしたら、[r]あたし、どうしたって、そうなってしまう。
+[k]
+
+＠サロメ
+ヨカナーンのことを、思い出して[line 3]
+[k]
+
+[messageOff]
+[wt 0.8]
+
+＠サロメ
+……。[r]……。
+[k]
+
+[charaFace A 0]
+
+＠サロメ
+でも、でもね。
+[k]
+
+＠サロメ
+[#我慢しているの]。[r]ずっと、ずっとずっと、ずうっと、我慢しているわ。
+[k]
+
+[charaFace A 1]
+
+＠サロメ
+だって[line 3]あなたがそう望むんだもの。
+[k]
+
+？1：[&自分:わたし]のために……
+？！
+
+[charaFace A 7]
+
+＠サロメ
+ええ、そうよ。
+[k]
+
+＠サロメ
+カルデアでは、[r]大人しくしていて欲しいでしょう？
+[k]
+
+＠サロメ
+戦う時には、[r]皆に迷惑を掛けないでいて欲しいのよね？
+[k]
+
+＠サロメ
+聖なる方々のことは、[r]好きにならないで欲しいのよね？
+[k]
+
+＠サロメ
+マシュとも、仲良くして欲しい。
+[k]
+
+＠サロメ
+そう、そうよねマスター。
+[k]
+
+[charaFace A 1]
+
+＠サロメ
+あなたがあたしに望んでくれるのだから、[r]あたしはあなたに応えるわ。
+[k]
+
+？1：………………
+？！
+
+[charaFace A 0]
+
+＠サロメ
+どうしたの？
+[k]
+
+？1：あまり、無理はして欲しく[&ないんだ:ないよ]
+？！
+
+[charaFace A 4]
+
+＠サロメ
+そんなの無理よ。
+[k]
+
+＠サロメ
+だって、[%1]。[r]あなたがマスターなのよ？
+[k]
+
+＠サロメ
+あなたが無理をするのだもの。[r]あなた、ずっと、困難に立ち向かって歩み続けるのだもの。
+[k]
+
+＠サロメ
+あなたと繋がった[#しもべ:サーヴァント]も、[r]あなたのように無理をするわ。
+[k]
+
+＠サロメ
+そうでしょう？
+[k]
+
+[charaFace A 7]
+
+＠サロメ
+……ふふ。
+[k]
+
+＠サロメ
+心配いらないわ、優しいあなた。[r]ヨカナーンとはちがう、あなた。
+[k]
+
+＠サロメ
+ふふふ。そんな顔をしないでいいの、大丈夫よ。
+[k]
+
+＠サロメ
+あたしが駄目になる時は、[r]あなたが駄目になる時だもの。
+[k]
+
+＠サロメ
+だから、心配なんかいらないの。
+[k]
+
+？1：それは……
+
+[charaFace A 1]
+
+＠サロメ
+ふふ。
+[k]
+
+？2：責任重大だね
+
+[charaFace A 1]
+
+＠サロメ
+ええ、そうですとも。
+[k]
+
+？！
+
+[charaFace A 7]
+
+＠サロメ
+あたしのことなんか構わずに、[r]あなたはあなた自身のことだけ気に掛けたほうがいいわ。
+[k]
+
+[charaFace A 6]
+
+＠サロメ
+ねえ、マスター。
+[k]
+
+＠サロメ
+あなたがあなたのままでいる限りには、[r]きっと……
+[k]
+
+＠サロメ
+あなたは、ヨカナーンではないのでしょうけど……
+[k]
+
+[messageOff]
+[charaFace A 4]
+[wt 1.2]
+
+[charaFace A 0]
+
+＠サロメ
+でも。でもね？
+[k]
+
+＠サロメ
+険しい道を歩き続ける、あなた。[r]戦い続けるあなた。
+[k]
+
+＠サロメ
+この先のあなたが、[r]あなた自身を飛び越して……
+[k]
+
+＠サロメ
+いつか、ヨカナーンのようなひとになっていたら[line 3]
+[k]
+
+[messageOff]
+[charaMoveScale A 1.1 0.5]
+[charaMove A 0,15 0.5]
+[se ade422]
+[wt 0.5]
+[seStop ade422 0.2]
+[wt 0.4]
+
+[charaFace A 1]
+
+＠サロメ
+首を貰うわ。
+[k]
+
+？1：それなら大丈夫
+
+[charaFace A 6]
+
+＠サロメ
+ふふふふふ。そう？
+[k]
+
+？2：[&自分:わたし]はきっと、聖者様にはなれないよ
+
+[charaFace A 0]
+
+＠サロメ
+ええ、ええ、きっとそうね。
+[k]
+
+？！
+
+[charaFace A 7]
+
+＠サロメ
+そうだといいわ[line 3]
+[k]
+
+＠サロメ
+本当に、心の底からそう思う。[r]マスター。
+[k]
+
+＠サロメ
+あたしはあたしで頑張っているから……
+[k]
+
+＠サロメ
+どうか[line 3]あなたは、あなたのままで頑張ってね？
+[k]
+
+[messageOff]
+[charaFace A 1]
+[wt 2.0]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_1 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

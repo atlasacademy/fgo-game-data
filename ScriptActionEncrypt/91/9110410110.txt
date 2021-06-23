@@ -1,0 +1,840 @@
+
+
+＄91-10-41-01-1-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1041002 1 アストルフォ]
+[charaSet B 7013001 1 清姫]
+[charaSet C 1098162100 1 荊軻]
+[charaSet D 2008000 1 トリスタン]
+[charaSet E 1098198100 1 巴御前]
+[charaSet F 2038001 1 オリオン]
+[charaSet G 11007000 1 織田信長]
+[charaSet H 2041000 1 織田信勝]
+[charaSet I 6028000 1 ニトクリス]
+[charaSet J 1098178800 1 メジェド1]
+[charaSet K 1098178800 1 メジェド2]
+[charaSet L 1098178800 1 メジェド3]
+[charaSet M 1098178800 1 メジェド4]
+[charaSet N 2011001 1 ニコラ・テスラ]
+[charaSet O 5025001 1 エジソン]
+[charaSet P 4009201 1 アン]
+[charaSet Q 4009101 1 メアリー]
+
+[charaSet R 98115000 1 エフェクト用]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad189]
+[wt 1.5]
+[seStop ad189]
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 105800]
+[branch lblConf]
+[label lblNotClear]
+[scene 106000]
+[label lblConf]
+
+[charaScale B 1.5]
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 0,20]
+[wt 0.5]
+
+[wipein openEye 1.0 1.0]
+[wait wipe]
+[wt 0.5]
+
+[bgm BGM_EVENT_2 0.1]
+
+＠清姫
+おはようございます、[r]ま・す・た・ぁ♡
+[k]
+
+？1：……近い……
+？！
+
+＠清姫
+いつもいつでもお側に。[r]貴方の清姫でございます。
+[k]
+
+[charaFace B 0]
+＠清姫
+……と、いつもであれば、[r]ここでマシュさんがいらっしゃるのですが。
+[k]
+
+[charaFace B 4]
+
+＠清姫
+唐突で申し訳ありません。[r]……今、カルデアは大変なことになっております。
+[k]
+
+？1：え……！？
+？！
+
+[charaFace B 0]
+
+＠清姫
+そうですね。[r]一言でわかりやすく言うのは簡単なのですが……。
+[k]
+
+＠清姫
+ますたぁ。[r]関東風と関西風、どちらがお好みでしょうか？
+[k]
+
+？1：えーと……関東風？
+
+＠清姫
+はい。
+[k]
+
+＠清姫
+簡単に申し上げれば。[r]皆さま[line 3]
+[k]
+
+[charaFace B 2]
+＠清姫
+[f large]馬鹿
+[k]
+
+[charaFace B 0]
+
+＠清姫
+になっております。
+[k]
+
+？2：じゃ、じゃあ……関西風？
+
+＠清姫
+はい。
+[k]
+
+＠清姫
+簡単に申し上げれば。[r]皆さま[line 3]
+[k]
+
+[charaFace B 2]
+
+＠清姫
+[f large]阿呆
+[k]
+
+[charaFace B 0]
+
+＠清姫
+になっております。
+[k]
+
+？！
+
+＠清姫
+百聞は一見に、とも申します。[r]ひとまず着替えて廊下に出てくださいませ。
+[k]
+
+[charaFace B 1]
+
+＠清姫
+わたくしがお手伝いいたしますので。
+[k]
+
+？1：はい外に出てー
+？！
+
+[charaFace B 4]
+
+＠清姫
+ちぇー。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaScale B 1.0]
+[wt 1.0]
+[branchQuestNotClear lblNotClear2 3000303]
+[scene 104200]
+[branch lblConf2]
+[label lblNotClear2]
+[scene 105500]
+[label lblConf2]
+
+
+[fadein black 1.0]
+[se ad8]
+[wait fade]
+
+[wt 0.5]
+
+？1：お待たせ清ひ……
+？！
+
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 1]
+[bgm BGM_EVENT_27 0.1]
+
+＠荊軻
+[f large]ボエ～♪
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+[charaShake D 0.1 0 10 0]
+＠トリスタン
+（激しくも美しいヘッドバンギング）
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+[charaMove E -20,5 0.2]
+[wt 0.2]
+[charaMove E -40,0 0.2]
+[wt 0.3]
+[charaMove E -20,5 0.2]
+[wt 0.2]
+[charaMove E 0,0 0.2]
+[wt 0.3]
+
+[charaMove E 20,5 0.2]
+[wt 0.2]
+[charaMove E 40,0 0.2]
+[wt 0.3]
+[charaMove E 20,5 0.2]
+[wt 0.2]
+[charaMove E 0,0 0.2]
+[wt 0.3]
+＠巴御前
+（剣という名のペンライトを振っている）
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+[charaMoveReturn F 0,-20 0.2]
+[wt 0.4]
+[charaMoveReturn F 0,-20 0.2]
+＠オリオン
+（棍棒を振っている）
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+＠織田信長
+[#次鋒:じほう]、ノッブ！[r]物真似をやる！
+[k]
+
+[charaFace G 6]
+
+＠織田信長
+んんー。[r]んー、んー。
+[k]
+
+[messageOff]
+[se ad236]
+[charaChange G 1098173600 0 fade 0.2]
+[effect bit_talk_magical_pon]
+[wait charaChange G]
+[wt 0.5]
+
+
+＠織田信長
+織田信長です（甲高い声）
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[se ade77]
+[seVolume ade77 0 0.5]
+[wt 2.0]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+＠織田信勝
+さすが姉上！[r]本物になってもカッコいい！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth I 5]
+[charaDepth J 4]
+[charaDepth K 3]
+[charaDepth L 2]
+[charaDepth M 1]
+
+[charaTalk off]
+[charaFace I 0]
+[charaFace J 0]
+[charaFace K 0]
+[charaFadein I 0.1 1]
+[charaFadeinFSR J 0.1 2]
+[charaFadeinFSL K 0.1 0]
+
+＠メジェドｓ
+めーじぇーどー
+[k]
+
+＠メジェドｓ
+めーじぇーどー
+[k]
+
+＠メジェドｓ
+めーじぇーどーがーふーえーるー
+[k]
+
+＠メジェドｓ
+めーじぇーどーがーふーえーるー
+[k]
+
+
+[messageOff]
+[charaFace L 0]
+[charaFace M 0]
+[charaFadeinFSR L 0.1 2]
+[charaMoveFSR J 156,0 0.4]
+[charaMoveFSR L 356,0 0.4]
+
+[charaFadeinFSL M 0.1 0]
+[charaMoveFSL K -156,0 0.4]
+[charaMoveFSL M -356,0 0.4]
+
+＠メジェドｓ
+ふーえーてー[r]めーざーすーはー
+[k]
+
+＠メジェドｓ
+ぶらっくほーぅーるー
+[k]
+
+＠メジェドｓ
+でゅーわー
+[k]
+
+[messageOff]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[charaFadeout K 0.1]
+[charaFadeout L 0.1]
+[charaFadeout M 0.1]
+[se ad335]
+[seVolume ad335 0 0.5]
+[wt 2.5]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠清姫
+……。[r]……。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_27 1.0]
+[se ad8]
+[wait fade]
+
+[charaFadeout B 0.1]
+[branchQuestNotClear lblNotClear3 3000303]
+[scene 105800]
+[branch lblConf3]
+[label lblNotClear3]
+[scene 106000]
+[label lblConf3]
+[wt 0.5]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[wt 1.0]
+
+[bgm BGM_EVENT_7 0.1]
+
+？1：……ヤバい
+？！
+
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠清姫
+はい。[r]マジヤバでございます、ますたぁ。
+[k]
+
+＠清姫
+マシュさんは部屋を出た途端、[r]あまりの衝撃で寝込んでしまいました。
+[k]
+
+？1：寝かせてあげて！
+？2：マシュは多分むーりー！
+？！
+
+＠清姫
+わたくしもそう思いましたので、[r]ベッドから出てこないように助言いたしました。
+[k]
+
+[charaFace B 0]
+
+＠清姫
+……さて。
+[k]
+
+＠清姫
+当然でございますが、[r]皆さまが……アレになった原因があるはずです。
+[k]
+
+＠清姫
+幸い、ますたぁは無事なようですし……。
+[k]
+
+＠清姫
+ひとまず、深呼吸して廊下に出て、[r]真っ当な方々を探し、解決に動きませんか？
+[k]
+
+？1：そうしよう！
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_7 1.0 0.4]
+[wait fade]
+
+[branchQuestNotClear lblNotClear4 3000303]
+[scene 104200]
+[branch lblConf4]
+[label lblNotClear4]
+[scene 105500]
+[label lblConf4]
+
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_7 1.0 1.0]
+[wait fade]
+
+＠清姫
+あそこにいらっしゃるのは[r]エジソン様とテスラ様。
+[k]
+
+[charaFace B 5]
+
+＠清姫
+科学者であるお二人であれば、[r]もしかすると……！
+[k]
+
+？1：よし、話しかけてみよう
+？！
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth O 2]
+[charaDepth N 1]
+[charaTalk O]
+[charaFace O 2]
+[charaFace N 0]
+[charaFadein O 0.1 2]
+[charaFadein N 0.1 0]
+[wt 0.2]
+
+[wipein rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+
+
+＠エジソン
+[f large]交流最高！
+[k]
+
+[charaFace N 2]
+
+＠ニコラ・テスラ
+[f large]直流最高！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaFace O 1]
+[charaFace N 1]
+
+[charaMoveReturn O 256,-5 0.4]
+[wt 0.2]
+[se ade139]
+[wt 0.2]
+[charaMoveReturn O 256,-5 0.4]
+[wt 0.2]
+[se ade139]
+[wt 0.4]
+[charaMoveReturn N -256,-5 0.4]
+[wt 0.2]
+[se ade139]
+[wt 0.2]
+[charaMoveReturn N -256,-5 0.4]
+[wt 0.2]
+[se ade139]
+[wt 0.4]
+
+？1：よし、ダメだ
+？！
+
+[messageOff]
+[wipeout rectangleStripRightToLeft 0.5 1]
+[wait wipe]
+
+[charaFadeout N 0.1]
+[charaFadeout O 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+[wt 0.4]
+
+[wipein rectangleStripLeftToRight 0.5 1]
+[wait wipe]
+
+
+＠清姫
+はい。[r]次へ参りましょう。
+[k]
+
+[charaFace B 2]
+
+＠清姫
+……！[r]ますたぁ！
+[k]
+
+？1：はい？
+？！
+
+[messageOff]
+[bgmStop BGM_EVENT_7 0.5]
+[wipeout upToDown 0.3 1]
+[wt 0.1]
+[se ad796]
+[wait wipe]
+[seStop ad796 0.3]
+
+[charaFadeout B 0.1]
+[scene 10000]
+[wt 0.4]
+
+[wipein downToUp 0.1 1]
+[wait wipe]
+
+
+[fadeout black 0.1]
+[wait fade]
+
+[branchQuestNotClear lblNotClear5 3000303]
+[scene 104200]
+[branch lblConf5]
+[label lblNotClear5]
+[scene 105500]
+[label lblConf5]
+
+[pictureFrame cut063_cinema]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth P 1]
+[charaDepth Q 2]
+[charaFace P 1]
+[charaFace Q 1]
+[charaFadein P 0.1 -256,-50]
+[charaFadein Q 0.1 256,-50]
+[wt 0.5]
+
+[fadein black 0.5]
+[wait fade]
+＠アン＆メアリー
+わっはっは！[r]マスター、いただいたー！
+[k]
+
+[messageOff]
+[charaFadeout P 0.4]
+[charaFadeout Q 0.4]
+[charaMove P -456,-50 0.4]
+[charaMove Q 56,-50 0.4]
+[se ad348]
+[wt 1.0]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 0,-50]
+
+＠清姫
+おのれアン様メアリー様！[r]何てけしからうらやましいことを！
+[k]
+
+[charaFace B 5]
+
+＠清姫
+ですがわたくしも伊達に長年、ますたぁのストーキングに[r]磨きを掛けてきた訳ではありません！
+[k]
+
+[charaFace B 2]
+
+＠清姫
+たーっ！
+[k]
+
+[messageOff]
+[charaFadeout B 0.4]
+[charaMove B -300,-50 0.4]
+[se ade101]
+[seVolume ade101 0 0.5]
+[fadeout black 1.0]
+[wait fade]
+
+[pictureFrame]
+
+[charaFadeout B 0.1]
+[wt 1.0]
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipeout downToUp 0.1 1]
+[wait wipe]
+
+[scene 107200]
+[wt 0.4]
+
+[wipein upToDown 0.3 1]
+[se ad7]
+[wait wipe]
+
+
+[wt 0.5]
+[se ad144]
+[seVolume ad144 0 0.3]
+[cameraMove 0.3 0,30 1.05]
+[wt 0.3]
+[shake 0.05 3 3 0.3]
+[wt 0.5]
+[cameraHome 1.0]
+[wt 1.5]
+
+
+？1：……さて、と
+？2：どうしたものかなぁ……
+？！
+
+[bgm BGM_EVENT_7 0.1]
+[charaTalk depthOff]
+[charaDepth Q 2]
+[charaDepth P 1]
+[charaTalk P]
+[charaFace P 1]
+[charaFace Q 1]
+[charaFadein P 0.1 0]
+[charaFadein Q 0.1 2]
+
+＠アン
+うーふーふーふーふー。[r]マースーター♡
+[k]
+
+＠メアリー
+マースーター♡
+[k]
+
+？1：二人とも落ち着いて話をしよう
+？！
+
+＠アン
+ええ、ええ。
+[k]
+
+＠アン
+普段ならそれにお付き合いして、[r]ライコーやマシュちゃんが来て難を逃れる……。
+[k]
+
+＠メアリー
+そもそも。[r]僕もアンも、普段はアレがあるからね。
+[k]
+
+？1：……アレ？
+？！
+
+＠アン
+それは英霊にとって、サーヴァントにとって、[r]そして何より人間にとって大切なもの。
+[k]
+
+＠アン
+ふふ……でもそれが存在しない今、[r]私たちに怖いものはありませんわ。
+[k]
+
+＠メアリー
+まー、無くした理由はわからないけど、[r]そんなことはどうでもいいや！
+[k]
+
+＠メアリー
+さ、さ。[r]皆で獣のように[#爛:ただ]れた時間を[line 3]
+[k]
+
+[bgmStop BGM_EVENT_7 0.5]
+
+＠A：？？？
+残念だけど！[r]そうは問屋が卸さない！
+[k]
+
+[charaTalk off]
+[charaFace P 2]
+[charaFace Q 2]
+
+＠二人
+……何者ッ！
+[k]
+
+[messageOff]
+[wipeout rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[charaTalk on]
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[scene 106800]
+[wt 0.1]
+
+[wipein rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+[effect bit_talk_43h_fs 0,0 F]
+[se ad75]
+[seVolume ad75 0 0]
+[seVolume ad75 1.0 1.0]
+[wt 1.0]
+
+[wipeout rectangleStripDownToUp 0.4 1.0]
+[wait wipe]
+
+[effectStop bit_talk_43h_fs]
+[scene 107200]
+[seStop ad75 0.5]
+[wt 0.1]
+
+[wipein rectangleStripUpToDown 0.4 1.0]
+[wait wipe]
+
+[charaPut A 1]
+[charaTalk A]
+[charaFace A 5]
+[se ad223]
+[fowardEffect bit_talk_quickmove]
+[charaSpecialEffect A appearance 1 0.25]
+[wt 0.4]
+
+＠アストルフォ
+シャルルマーニュ十二勇士が[#一騎:ひとり]、[r]我が名はアストルフォ。
+[k]
+
+＠アストルフォ
+マスターを害する者、[r]マスターに[#仇:あだ]なす者、そして[line 3]
+[k]
+
+＠アストルフォ
+マスターを誘惑しようなどという[r]不届き者を！
+[k]
+
+[bgm BGM_EVENT_3 0.1]
+[charaFace A 2]
+
+＠アストルフォ
+[f large]成敗！！
+[k]
+
+[charaFace A 5]
+
+＠アストルフォ
+する[#聖騎士:パ ラ デ ィ ン]だ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk P]
+[charaFace P 5]
+[charaFace Q 5]
+[charaFadein P 0.1 0]
+[charaFadein Q 0.1 2]
+
+＠アン
+……何か妙な感じですが、[r]ともかく敵ですわね。
+[k]
+
+＠メアリー
+今の僕たちにブレーキはない！[r]君を迎え撃ってマスター[#と:を][#イチャイチャする:も　　て　　あ　　そ　　ぶ]！！
+[k]
+
+[charaFadeout P 0.1]
+[charaFadeout Q 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠アストルフォ
+正義執行！[r]いっくぞーーー！
+[k]
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_3 0.4]
+[wait fade]
+[soundStopAll]
+[end]
+

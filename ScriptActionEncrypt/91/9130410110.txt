@@ -1,0 +1,1712 @@
+
+
+
+＄91-30-41-01-1-0
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 3041001 1 カイニス]
+[charaSet B 1098123200 1 ゴルドルフ]
+[charaSet C 7016001 1 タマモキャット]
+[charaSet D 2001000 1 エミヤ]
+[charaSet E 4011001 1 ブーディカ]
+[imageSet F back10000 1]
+[charaScale F 1.01]
+
+[equipSet G 9807720 1 クロワッサン]
+
+[charaSet H 98115000 1 エフェクト用]
+
+[cameraMove 0.1 0,0 1.01]
+[scene 105900]
+
+
+[pictureFrame cut063_cinema]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[se ad511]
+[wt 2.0]
+[se ad882]
+[wt 0.5]
+[seStop ad882 0.5]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.4 0,-50]
+[wt 0.4]
+
+＠カイニス
+ふう……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad511]
+[wt 2.0]
+
+
+[se ad882]
+[wt 0.5]
+[seStop ad882 0.5]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 21]
+[charaFadein A 0.1 0,-50]
+
+＠カイニス
+ぜえ、はあ……
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[se ad882]
+[wt 0.5]
+[seStop ad882 0.5]
+[wt 1.0]
+
+[bgm BGM_EVENT_48 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 0,-50]
+
+＠カイニス
+駄目か。
+[k]
+
+[charaFace A 16]
+
+＠カイニス
+んー。
+[k]
+
+[charaFace A 5]
+
+＠カイニス
+あー。
+[k]
+
+＠カイニス
+なんなんだ？
+[k]
+
+[charaFace A 17]
+
+＠カイニス
+たかがよォ……[r]小麦をちっっとばかし焼くだけだろうが……
+[k]
+
+[branchNotHaveSvtEquip lblNotHave 9807720]
+
+
+＠カイニス
+こないだは出来たじゃねえか。
+[k]
+
+[branch lblConf_have]
+
+[label lblNotHave]
+
+[label lblConf_have]
+
+[charaFace A 5]
+
+＠カイニス
+あァ？
+[k]
+
+＠カイニス
+いつまでもいつまでも、[r]オレの前に立ちはだかりやがって……
+[k]
+
+＠カイニス
+クソが……
+[k]
+
+[messageOff]
+[se ad532]
+[charaFace A 11]
+[wt 0.5]
+[seStop ad532 0.5]
+[wt 1.0]
+[charaFace A 16]
+
+＠カイニス
+……。[r]……。
+[k]
+
+[charaFace A 15]
+
+＠カイニス
+調子にィ、
+[k]
+
+＠カイニス
+乗ってンじゃァ、
+[k]
+
+[charaFace A 2]
+
+＠カイニス
+ねェ、ぞ……[line 3]？
+[k]
+
+[messageOff]
+[charaPut H 0,-50]
+[se ad64]
+[charaEffect H bit_talk_kaineus]
+[wt 1.0]
+[shake 0.05 3 3 3.0]
+[wt 2.0]
+[wipeout rectangleStripRightToLeft 0.7 1]
+[bgmStop BGM_EVENT_48 1.0]
+[wait wipe]
+
+[cameraHome 0.1]
+[charaPut H 1200,1200]
+[charaEffectStop H bit_talk_kaineus]
+[charaFadeout A 0.1]
+[wt 1.5]
+
+
+
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.4 0,-50]
+
+[charaShake B 0.05 3 3 1.5]
+[wt 1.5]
+
+[bgm BGM_EVENT_7 0.1]
+＠ゴルドルフ
+えぇ……？
+[k]
+
+[messageOff]
+[charaMove B -60,-50 0.4]
+[wt 0.6]
+[charaMove B 60,-50 0.8]
+[wt 1.2]
+[charaMove B 0,-50 0.4]
+[wt 0.6]
+＠ゴルドルフ
+な、何をしとるのかねあれは？
+[k]
+
+＠ゴルドルフ
+厨房から見えるはずのない、[r]魔力光の類がチラっと見えたのは……
+[k]
+
+＠ゴルドルフ
+私の気のせいかね？
+[k]
+
+＠ゴルドルフ
+あと、小さな爆発音も数度あったような！
+[k]
+
+[charaFace B 14]
+
+＠ゴルドルフ
+というか、現在時刻！　深夜０時過ぎ！
+[k]
+
+＠ゴルドルフ
+こんな遅くに、[r]なぜあれが厨房なぞにいる！？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 0,-50]
+[wt 0.4]
+
+＠タマモキャット
+貸したのでアール！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 0,-50]
+
+＠ゴルドルフ
+貸した！？[r]貸しちゃったの！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+＠タマモキャット
+手伝い無用の一人旅希望とくれば、さもありなん！[r]さすがに余人が邪魔をする訳にはいかないワン。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 0,-50]
+
+＠ゴルドルフ
+パードゥン？
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.4 0,-50]
+
+＠エミヤ
+朝まで、厨房を借りたいと言われてね。
+[k]
+
+＠エミヤ
+丁度、明日の仕込みは終えていたので、[r]我々としては断る理由もない。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.4 0,-50]
+[wt 0.4]
+＠ブーディカ
+[#麺麭:パン]作りをしたいみたいだから、[r]手伝ったげようかとは言ったんだけどね？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 0,-50]
+[charaPut F 0,0]
+[charaFadeTime F 0.2 0.5]
+
+＠ゴルドルフ
+（む。パン？）
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,-50]
+＠ブーディカ
+でもね、[#僭主:せんしゅ]殿ってば、[r]誰の助力も無用だーって言うからさ。
+[k]
+
+＠ブーディカ
+あたしたちはこうして、[r]遠巻きに見守り中ってワケ。
+[k]
+
+[charaFace E 3]
+＠ブーディカ
+なるべく厨房のモノは壊さないでほしいけど、[r]あはは。この分だとどうかなー。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-50]
+
+＠タマモキャット
+ドンウォーリーだワン！[r]案じることはない！
+[k]
+
+[charaFace C 0]
+
+＠タマモキャット
+いざとなればエミヤンがトレースオンだぞ？[r]フルカウルだぞ？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠エミヤ
+まあ……[r]ある程度までは補修も可能だろう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 0,-50]
+
+＠ゴルドルフ
+ええと、つまり？[r]あの神霊カイニスめは[line 3]
+[k]
+
+＠ゴルドルフ
+パンを作るから厨房を貸せ、と。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 1]
+[charaFadein C 0.1 0,-50]
+[wt 0.1]
+[charaMoveReturn C 0,-60 0.3]
+＠タマモキャット
+うむ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 0,-50]
+
+＠ゴルドルフ
+一人でやるからほっとけ、と。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,-50]
+[wt 0.1]
+[charaMoveReturn E 0,-60 0.3]
+
+＠ブーディカ
+だね。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 0,-50]
+[se ade116]
+[wt 1.0]
+[charaFace B 17]
+＠ゴルドルフ
+[line 6]！
+[k]
+
+＠ゴルドルフ
+そ……
+[k]
+
+＠ゴルドルフ
+そうか。
+[k]
+
+[charaFace B 1]
+[charaFadeTime F 0.2 0.5]
+
+＠ゴルドルフ
+（これは……[r]　アレか……！）
+[k]
+
+[charaFace B 11]
+
+＠ゴルドルフ
+（分かってしまった。[r]　分かってしまったぞ、世界のすべてが分かった！）
+[k]
+
+＠ゴルドルフ
+（いや世界のすべてまでは分からんが、[r]　個人的にはそれぐらいの爽快感があるぞ！）
+[k]
+
+[charaFace B 1]
+
+＠ゴルドルフ
+（唐突に！[r]　私は理解した！）
+[k]
+
+＠ゴルドルフ
+（神霊カイニスは……[line 3]）
+[k]
+
+[charaFace B 2]
+
+＠ゴルドルフ
+（[#私のクロワッサンを作ろうとしているのだな]？）
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[wt 0.5]
+
+[se ad94]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.4 0,-50]
+[wt 0.5]
+
+＠カイニス
+[f large]やーめた！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 0,-50]
+＠ゴルドルフ
+[f large]！？
+[k]
+
+[charaFace B 4]
+
+＠ゴルドルフ
+え？
+[k]
+
+[charaFace B 12]
+
+＠ゴルドルフ
+あれ……
+[k]
+
+[charaFace B 4]
+＠ゴルドルフ
+やめ……ちゃう？[r]まさかの爆速でやめちゃったの、カイニス君？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 0,-50]
+
+＠カイニス
+あ？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 9]
+[charaFadein B 0.1 0,-50]
+[charaShake B 0.05 3 3 0.5]
+[wt 1.0]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠カイニス
+何だ、ゴルドルフ新所長殿じゃねーか。
+[k]
+
+[charaFace A 15]
+＠カイニス
+おう、やめだやめだ。[r]ンなもんハナから作れる訳がねーんだ。
+[k]
+
+＠カイニス
+あろうことか血迷っちまったぜ。[r]厨房のいろはを何も知らねえ訳でもないってのに、
+[k]
+
+[charaFace A 8]
+
+＠カイニス
+つい、思っちまった。
+[k]
+
+＠カイニス
+オレなら[#何となく]でやれるかも、ってな[line 3]
+[k]
+
+[charaFace A 4]
+
+＠カイニス
+……。[r]……。
+[k]
+
+[charaFace A 16]
+
+＠カイニス
+ま、無理なもンは無理だ。[r]やれやれ。
+[k]
+
+[charaFace A 0]
+＠カイニス
+ここらで霊体化して退散するぜ。[r]邪魔したな、キャット。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 0,-50]
+
+＠タマモキャット
+もういいのかワン？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠カイニス
+ああ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 0,-50]
+
+＠ブーディカ
+あたしたちが手伝おうか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 0,-50]
+
+＠カイニス
+いや、いい。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠エミヤ
+片付けは、こちらでやっておこう。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 0,-50]
+
+＠カイニス
+おう、頼むぜ。
+[k]
+
+[messageOff]
+[charaFace A 16]
+[wt 1.0]
+[charaFace A 0]
+
+＠カイニス
+[line 3]じゃ、またな。
+[k]
+
+
+[messageOff]
+[se ad52]
+[charaSpecialEffect A erasure 1 1.2]
+[wt 1.5]
+
+[bgmStop BGM_EVENT_7 1.0]
+[wt 0.5]
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 0,-50]
+
+＠ゴルドルフ
+[f large]まだだ！
+[k]
+
+＠ゴルドルフ
+戻れ、神霊カイニス！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaPut A 0,-50]
+[charaFace A 17]
+[charaSpecialEffect A appearance 1 1.0]
+[se ad595]
+[wt 1.5]
+
+＠カイニス
+………………あ？
+[k]
+
+[charaFace A 21]
+＠カイニス
+テメェ、もしかしてオレを呼び捨てにしたか？[r]新所長殿よォ。
+[k]
+
+＠カイニス
+どういうつもりで言ったかは知らねえが、[r]いやいい。つもりなんざ知るか。
+[k]
+
+[charaFace A 16]
+
+＠カイニス
+オレを舐めたなら[line 3]
+[k]
+
+[bgm BGM_EVENT_80 0.1]
+[charaFace A 18]
+
+＠カイニス
+殺す。
+[k]
+
+[messageOff]
+[effect bit_talk_v_slash01]
+[se ad85]
+[charaMoveScale A 1.05 0.2]
+[charaMove A 0,-40 0.2]
+[wt 0.1]
+[charaFadeout A 0.1]
+[wt 0.3]
+
+[charaScale A 1.0]
+
+[charaTalk depthOff]
+[charaDepth B 1]
+[charaDepth E 3]
+[charaDepth D 2]
+
+[charaTalk off]
+
+[charaFace B 9]
+[charaFadein B 0.1 0,-50]
+[wt 0.4]
+
+[charaFace D 5]
+[charaFadein D 0.1 -256,-50]
+[charaFace E 5]
+[charaFadein E 0.1 256,-50]
+[se ad7]
+[charaMove D -180,-50 0.1]
+[charaMove E 180,-50 0.1]
+[wt 0.1]
+[se ad32]
+[effect bit_talk_14]
+[wt 0.5]
+
+[charaFadeout B 0.1]
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 0,-50]
+
+＠カイニス
+へえ！
+[k]
+
+＠カイニス
+オレとやるかよ、エミヤ！　ブーディカ！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk D]
+[charaFace D 5]
+[charaFadeinFSL D 0.1 -256,-50]
+[charaFace E 5]
+[charaFadeinFSR E 0.1 256,-50]
+[se ad694]
+＠エミヤ
+さて。
+[k]
+
+＠ブーディカ
+そーいうつもりじゃないんだけどね！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 0,-50]
+
+＠カイニス
+ハハッ！
+[k]
+
+[bgmStop BGM_EVENT_80 0.5]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 0,-50]
+
+＠ゴルドルフ
+[f large]え[messageShake 0.05 3 3 0.4]えい全員やめんかー！
+[k]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠ゴルドルフ
+ちょっと呼び止めただけで何なのその態度は君ィ！[r]呼び捨てっぽくなったのは本当ごめんなさいね！
+[k]
+
+＠ゴルドルフ
+でも頭に神霊ってつけたでしょうが！[r]なので、尊称ってことで理解してほしいぞ！
+[k]
+
+[charaFace B 9]
+＠ゴルドルフ
+どうかしら！？
+[k]
+
+[charaPut F 1]
+[charaFadeTime F 0.2 0.5]
+＠ゴルドルフ
+（というか！[r]　虫の居所が悪いにしても喧嘩っ早すぎるだろう！）
+[k]
+
+＠ゴルドルフ
+（名前ひとつでここまでの激怒なぞ、[r]　前にはなかったろう、多分。うん多分そう）
+[k]
+
+[charaFace B 18]
+
+＠ゴルドルフ
+（まったく、何をそんなにイラついて……）
+[k]
+
+[messageOff]
+[charaFace B 7]
+[wt 1.0]
+[charaFace B 10]
+
+＠ゴルドルフ
+（ああ）
+[k]
+
+＠ゴルドルフ
+（思うようにパンが焼けないから、か）
+[k]
+
+[messageOff]
+[charaFace B 4]
+[wt 1.0]
+[charaFace B 7]
+
+＠ゴルドルフ
+（！）
+[k]
+
+＠ゴルドルフ
+（そ……[r]　そうか、そうだったのか……）
+[k]
+
+[charaFace B 8]
+
+＠ゴルドルフ
+（神霊カイニス、いやカイニス君！[r]　ええいもはや心の中で呼び捨てるぞカイニス！）
+[k]
+
+＠ゴルドルフ
+（貴様そんなにも、そんなにも！）
+[k]
+
+[charaFace B 17]
+
+＠ゴルドルフ
+（あの日、口にしたクロワッサンのことが……！）
+[k]
+
+＠ゴルドルフ
+（忘れられないのだな！[r]　そうかそうか、はははなるほど！）
+[k]
+
+[branchNotHaveSvtEquip lblNotHave2 9807720]
+
+
+＠ゴルドルフ
+（バレンタインにも一度作ったろうに……[r]　そうかそうか、もう一度作りたくなったか！）
+[k]
+
+[branch lblConf_have2]
+
+[label lblNotHave2]
+
+[label lblConf_have2]
+
+[charaFace B 2]
+
+＠ゴルドルフ
+（はははこいつめ！）
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 0,-50]
+
+＠カイニス
+……。
+[k]
+
+＠カイニス
+…………。
+[k]
+
+[charaFace A 9]
+
+＠カイニス
+……………………尊称。
+[k]
+
+[messageOff]
+
+[bgmStop BGM_EVENT_7 0.7]
+[wipeout rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[pictureFrame]
+[wt 1.0]
+
+[wipein rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+？1：話はすべて聞かせてもらいました！
+？2：尊称ってことでいいと思います！
+？！
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠カイニス
+お、[%1]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+おお、そういえば！[r][%1]。
+[k]
+
+＠ゴルドルフ
+深夜まで管制室で編成がどうのと唸っていたので、[r]いい加減寝なさいよと所長命令を下して……
+[k]
+
+[charaFace B 4]
+
+＠ゴルドルフ
+……なぜ自室に戻っていない？
+[k]
+
+？1：ちょっと小腹がすいて
+？2：ちょっと温かい飲み物が欲しくて
+
+？！
+
+＠ゴルドルフ
+あ、そういう……。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+[wt 1.0]
+＠カイニス
+……ったく。
+[k]
+
+＠カイニス
+気が削がれちまった。[r]そこのゴッフをぶっ殺すのはやめだ。
+[k]
+
+＠カイニス
+遊んでやれなくて悪いな、エミヤ。ブーディカ。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+
+[charaFace D 0]
+[charaFace E 0]
+[charaFadeinFSL D 0.1 0]
+[charaFadeinFSR E 0.1 2]
+[wt 0.5]
+[charaMoveReturnFSL D -256,-5 0.4]
+[charaMoveReturnFSR E 256,-5 0.4]
+[wt 1.0]
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠カイニス
+さて[line 3]
+[k]
+
+＠カイニス
+尊称っつーのは認めてやるが、それで？
+[k]
+
+[charaFace A 7]
+＠カイニス
+オレを呼び止めた理由はなんだ？[r]ゴルドルフ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 4]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+それは……
+[k]
+
+＠ゴルドルフ
+なんというか……
+[k]
+
+[charaFace B 12]
+
+＠ゴルドルフ
+……。[r]……。
+[k]
+
+＠ゴルドルフ
+そこまで大袈裟なことではないというか、[r]こうして改まられると、とっても言い難いのだが、
+[k]
+
+[charaFace B 6]
+
+＠ゴルドルフ
+言わないと殺されそうなので言うぞ！[r]私は！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.0]
+[charaFace B 18]
+[wt 1.0]
+[charaFace B 6]
+＠ゴルドルフ
+私が手伝おう！[r]貴様の、パン作りを！
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+[wt 2.0]
+
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 16]
+[charaFadein B 0.1 1]
+＠ゴルドルフ
+貴様の、パン作りを！[r]私が手伝おう！
+[k]
+
+？1：新所長……
+
+[charaFace B 6]
+
+＠ゴルドルフ
+……。[r]……。
+[k]
+
+？2：なぜ言い直したんです……？
+
+[charaFace B 18]
+
+＠ゴルドルフ
+私にも……[r]分からん……！
+[k]
+
+？！
+
+[charaFace B 5]
+
+[bgm BGM_EVENT_63 0.1]
+＠ゴルドルフ
+ええい、こうなれば道連れだ。[r]貴様にも手伝ってもらうぞ、[%1]！
+[k]
+
+？1：了解！
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+＠タマモキャット
+厨房、のぞいてきたワン！[r]オーブン壊れてないからパン作りできるゾ！
+[k]
+
+[charaFace C 1]
+＠タマモキャット
+がんばれ若人！[r]ドンスリープ！　ドンストップ！
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+うむ！[wt 0.6][charaFace B 8][r]って、寝るなと言ったのか今！？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+＠カイニス
+はははははそりゃあいい！[r]途中で寝ちまった奴ァ、オレが首を[#刎:は]ねるぞ！
+[k]
+
+[charaFace A 7]
+＠カイニス
+それでもいいなら来な！[r]ゴルドルフ・ムジーク！　[%1]！
+[k]
+
+＠カイニス
+[line 3]オレの[#麺麭:パン]作り、手伝ってもらうぜ！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_63 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+
+
+
+[fadein black 1.0]
+[wait fade]
+
+[se adm19]
+[effect bit_talk_valentine_brilliant_fs]
+[charaFadein G 0.4 0,-70]
+[wt 2.0]
+[seStop adm19 1.0]
+
+
+
+？1：でーきた！
+
+？！
+
+[effectStop bit_talk_valentine_brilliant_fs]
+
+[charaFadeout G 0.1]
+[wt 0.6]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+うむ、うむ！　これにて完成だ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth D 2]
+[charaDepth E 3]
+
+[se ad55]
+[seVolume ad55 0 0.3]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[charaFace C 1]
+[charaFadeinFSL C 0.4 -400,0]
+[charaMoveFSR C 400,0 1.2]
+
+＠エミヤ
+む、これは[line 3][wt 0.5][charaFadeout C 0.4][seStop ad55 0.4]
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad55]
+[seVolume ad55 0 0.3]
+[charaTalk E]
+[charaFace C 1]
+[charaFadeinFSL C 0.4 400,0]
+[charaMoveFSR C -400,0 1.2]
+
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠ブーディカ
+はー、また綺麗に焼き上がったねえ。[r]いい感じ！[charaFadeout C 0.4][seStop ad55 0.4]
+[k]
+
+[se ad55]
+[seVolume ad55 0 0.3]
+[charaFace C 1]
+[charaFadeinFSL C 0.4 -400,0]
+[charaMoveFSR C 400,0 1.2]
+＠ブーディカ
+いいね、キャットもご機嫌に走り回ってるし！[wt 0.5][charaFadeout C 0.4][seStop ad55 0.4]
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 11]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+試食はまだだが……[r]ああ、私には分かる。分かってしまうぞ諸君。
+[k]
+
+[charaFace B 2]
+
+＠ゴルドルフ
+完璧！　完璧だ！[r]さあ神霊カイニス、今こそぜひ試食を[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.0]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+[wt 1.2]
+[bgm BGM_EVENT_7 0.1]
+[charaFace A 13]
+＠カイニス
+[f large]クロワッサンかよ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+[FFFFFF]？[-]
+[k]
+
+[charaFace B 0]
+
+＠ゴルドルフ
+そうだぞ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠カイニス
+堂々と……
+[k]
+
+[charaFace A 13]
+
+＠カイニス
+ク、クロワッサンだろこれは。
+[k]
+
+？1：クロワッサンだよ
+
+[charaFace A 8]
+
+＠カイニス
+おう。
+[k]
+
+[charaFace A 9]
+
+＠カイニス
+まあ、そりゃあ見れば分かる……って……あー。
+[k]
+
+＠カイニス
+成る程、そっか。
+[k]
+
+？2：えっ、もしかして……違うパン……？
+
+[charaFace A 0]
+
+＠カイニス
+そりゃ当然[line 3]
+[k]
+
+[charaFace A 9]
+
+＠カイニス
+って、あー。
+[k]
+
+[charaFace A 12]
+
+＠カイニス
+はいはい。[r]はいはいはい、成る程な！
+[k]
+
+？！
+
+[charaFace A 1]
+
+＠カイニス
+ははは。そういやオレ、言ってなかったな！
+[k]
+
+＠カイニス
+[#クロワッサンじゃねえんだ]！
+[k]
+
+[charaFace A 12]
+＠カイニス
+コイツじゃ流石に上品すぎるっつーか……[r]フワッフワすぎるし甘すぎるっつーか……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+！？
+[k]
+
+[charaFace B 18]
+
+＠ゴルドルフ
+上品でフワッフワで甘くて何が悪いというのかー！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+
+＠カイニス
+泣くな泣くな。[r]悪いなおっさん。いや、そうじゃねえんだ。
+[k]
+
+＠カイニス
+旨すぎるっつーか……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 8]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+そういうダメ出しある！？
+[k]
+
+[messageOff]
+[charaShake B 0.05 3 3 0.5]
+[wt 1.0]
+
+[charaFace B 4]
+＠ゴルドルフ
+と、ともかく……[r]そうか……
+[k]
+
+＠ゴルドルフ
+作ろうとしていたのはクロワッサンでは、ない……
+[k]
+
+[charaFace B 18]
+
+＠ゴルドルフ
+あ、あああ……[r]ああああ……なんということだ……おおお……
+[k]
+
+＠ゴルドルフ
+……。[r]……。
+[k]
+
+[charaFadeTime F 0.2 0.5]
+[charaFace B 13]
+
+＠ゴルドルフ
+（は[line 3]）
+[k]
+
+＠ゴルドルフ
+（恥ずかしいーッ！）
+[k]
+
+＠ゴルドルフ
+（ぶざまな自信過剰の露呈ーッ！）
+[k]
+
+＠ゴルドルフ
+（哀しきピエロ……ッ！）
+[k]
+
+[charaFace B 18]
+
+＠ゴルドルフ
+（いや耐えろ、耐えろゴッフ！[r]　十二歳の誕生日に比べればどうということはない！）
+[k]
+
+＠ゴルドルフ
+（冷静に、冷静に、冷静に。[r]　私はクールにパン作りを助ける機械が如き存在……）
+[k]
+
+[messageOff]
+[charaFadeout F 0.2]
+[wt 1.0]
+
+[charaFace B 0]
+
+＠ゴルドルフ
+……………………理解した。
+[k]
+
+[charaFace B 15]
+
+＠ゴルドルフ
+私はとんだ早合点をしていたようだ。[r]ならば、一から情報収集をする必要がある！
+[k]
+
+[charaFace B 16]
+＠ゴルドルフ
+神霊カイニスよ！[r]貴様の求めるパンは、固いパンか、柔らかいパンか！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 8]
+[charaFadein A 0.1 1]
+
+＠カイニス
+ん？
+[k]
+
+[charaFace A 16]
+
+＠カイニス
+ん～……そう、だなあ……[line 3]
+[k]
+
+＠カイニス
+[#どっちだろうなァ]？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 7]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+……。[r]……。
+[k]
+
+[charaFadeTime F 0.2 0.5]
+[charaFace B 8]
+
+＠ゴルドルフ
+（スッゴイ曖昧だこれ！）
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_7 1.0 0.4]
+[wait fade]
+
+[charaFadeout F 0.1]
+[charaFadeout B 0.1]
+[wt 1.0]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_7 1.0 1.0]
+[wait fade]
+
+[charaTalk B]
+[charaFace B 18]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+ぜえ、[charaMoveReturn B 0,-7 0.6][wt 0.6]はあ。[charaMoveReturn B 0,-7 0.6][wt 0.6]
+[k]
+
+＠ゴルドルフ
+手がかりが……[r]まるでない……
+[k]
+
+＠ゴルドルフ
+一応の[#指標:ガイド]は神霊カイニスの中にある……[r]何となくこうじゃない、と言える程度には……
+[k]
+
+＠ゴルドルフ
+なんとも、雲を掴むかのようだ！
+[k]
+
+？1：でも、ほんの少しずつでも進んでます！
+
+[charaFace B 10]
+
+＠ゴルドルフ
+うむ。そのはずだ！
+[k]
+
+[charaFace B 16]
+
+＠ゴルドルフ
+あまり凝ったパンではなさそうだ、[r]というのはまず間違いないと言えるところまでは、来た！
+[k]
+
+？2：掴みましょう、雲を！
+
+[charaFace B 16]
+
+＠ゴルドルフ
+勝利を！[r]我らの手に！
+[k]
+
+？！
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+＠カイニス
+とりあえず焼いてみようぜ？[r]偶然、当たりを引くかもしれねーし。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 13]
+[charaFadein B 0.1 1]
+
+＠ゴルドルフ
+ん～～～適当！
+[k]
+
+[charaFace B 10]
+＠ゴルドルフ
+だが、口頭での情報収集に限界を感じるのも確か。[r]ちょっと手を動かしたりしてみるか。
+[k]
+
+[charaFace B 16]
+
+＠ゴルドルフ
+うおおおおおお！[r]ゆくぞ[%1]！
+[k]
+
+[messageOff]
+[fadeout white 1.0]
+[bgmStop BGM_EVENT_7 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 1.0]
+[scene 10000]
+
+[fadein white 1.0]
+[wait fade]
+
+[wt 1.0]
+[bgm BGM_MAP_58 0.1]
+
+＠
+手探りのパン作り[line 3]
+[k]
+
+＠
+果たして、自分たちは何を作ろうとしているのか？
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+分からない。[r]何も。
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+それは、もはや戦いであった。[r]死闘であった。
+[k]
+
+＠
+ゴルドルフ新所長は後に、このパン作りの苦難を、[r]かつての異聞帯での決死の戦いに[#喩:たと]えたという。
+[k]
+
+＠
+すなわち[line 3]
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+『スーパーカルナのいないアルジュナとの戦い』
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+あるいは、
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠
+『クィリヌスのいないゼウスとの戦い』
+[k]
+
+＠
+である、と[line 3]
+[k]
+
+
+[messageOff]
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_MAP_58 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

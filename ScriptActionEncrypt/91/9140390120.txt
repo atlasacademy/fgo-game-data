@@ -1,0 +1,745 @@
+
+
+
+＄91-40-39-01-2-0
+
+[enableFullScreen]
+
+[soundStopAll]
+
+[charaSet A 4039002 1 マンドリカルド]
+[charaSet B 98002000 0 フォウ]
+[charaSet C 1098124510 1 ダ・ヴィンチ]
+[charaSet D 98006000 1 魔獣]
+[charaSet E 8001400 1 アーマードマシュ]
+[charaSet F 8001410 1 マシュ]
+[charaSet G 98025100 1 シャドウサーヴァント]
+[imageSet H back10000 1]
+[charaSet I 98006100 1 ダミーエフェクト１]
+[charaSet J 98006000 1 魔獣]
+[charaSet K 98006000 1 魔獣]
+[charaScale H 1.05]
+[charaSet L 98006100 1 エフェクト用１]
+[charaSet M 98006100 1 エフェクト用２]
+[charaScale L 1.5]
+[charaScale M 1.5]
+
+[scene 10000]
+
+[wipeout openEye 0.1 1.0]
+[wait wipe]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad189]
+[seVolume ad189 0 0.1]
+[seVolume ad189 2.0 1.0]
+
+[scene 105800]
+[wt 0.1]
+
+[wipein openEye 1.2 1.0]
+[wait wipe]
+
+[wipeout openEye 0.8 1.0]
+[wait wipe]
+
+[wipein openEye 1.4 1.0]
+[wt 0.5]
+[seStop ad189 0.5]
+[wait wipe]
+[wt 0.8]
+
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+
+＠フォウ
+フォウー。
+[k]
+
+？1：おはよー！
+？！
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_77 1.0 0.5]
+[wait fade]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ade113]
+[seVolume ade113 0 0.1]
+[seVolume ade113 1.0 1.0]
+[wt 2.5]
+[se ade114]
+[seVolume ade113 0.3 0.5]
+[wt 0.6]
+[se ade114]
+[seStop ade113 0.5]
+[wt 1.5]
+
+[se ad77]
+[wt 1.5]
+
+
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.0]
+
+[wipeout rightToLeft 1.0 1.0]
+[wait wipe]
+
+[scene 104200]
+[wt 0.5]
+
+[se ad8]
+[seVolume ad8 0 0.6]
+[seStop ad8 1.2]
+
+[wipein leftToRight 1.0 1.0]
+[bgm BGM_EVENT_77 1.0 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マンドリカルド
+おはようっす。
+[k]
+
+？1：おはよう
+？！
+
+[charaFace A 4]
+
+＠マンドリカルド
+あー、マスター。
+[k]
+
+[charaFace A 0]
+
+＠マンドリカルド
+今日もトレーニングに付き合って[r]くれねえっすか。
+[k]
+
+＠マンドリカルド
+昨日の一件で話したいことも[line 3]
+[k]
+
+[messageOff]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaPut I 1]
+[se ad13]
+[charaEffect I bit_talk_10_LowLevel]
+[wt 0.2]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠ダ・ヴィンチ
+おはよう。[r]少しいいかな？
+[k]
+
+＠ダ・ヴィンチ
+ああ、マンドリカルドもいるのか。[r]丁度いい。
+[k]
+
+[charaFace C 24]
+
+＠ダ・ヴィンチ
+微小特異点が発生した。
+[k]
+
+＠ダ・ヴィンチ
+今回は本当に小さめだけど、[r]とりあえず早めに潰しておこう。
+[k]
+
+？1：了解！
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaPut I 1200,1200]
+[charaEffectStop I bit_talk_10_LowLevel]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マンドリカルド
+了解っす。
+[k]
+
+？1：あ、マンドリカルド
+？2：話したいことって何？
+？！
+
+＠マンドリカルド
+……ああいや、大したことじゃねえっす。[r]それより、まずは解決しに行きましょうか。
+[k]
+
+[bgmStop BGM_EVENT_77 1.0]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠
+[line 3]もちろん、逃げた訳ではない。[r]訳ではないのだが。
+[k]
+
+＠
+……なんかこう……タイミングが[r]噛み合わないなー……。
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+
+[wait fade]
+
+[scene 107801]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マンドリカルド
+うっらぁ！
+[k]
+
+[messageOff]
+[se ad7]
+[charaPut I 1]
+[charaFadeout A 0.4]
+[charaMove A 0,10 0.2]
+[charaMoveScale A 1.1 0.2]
+[charaEffect I bit_talk_41]
+[wt 0.2]
+[charaPut I 2000,2000]
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaScale A 1.0]
+
+
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+[wt 0.3]
+
+[se bac150]
+[effect bit_talk_14 -80,50]
+[wt 0.1]
+[charaShake D 0.04 3 4 0.2]
+[wt 0.1]
+
+[se bac149]
+[effect bit_talk_14 100,-130]
+[wt 0.1]
+[charaShake D 0.04 4 3 0.2]
+[wt 0.4]
+
+
+
+[se ad42]
+[charaSpecialEffect D enemyErasure 0,0 1.5]
+
+[wait charaSpecialEffect D]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+[wt 0.4]
+
+
+？1：マンドリカルド、押して！
+
+
+[charaFace A 1]
+
+＠マンドリカルド
+うっす！[r]まだまだ行くぞ……！
+[k]
+
+？2：マンドリカルド、一旦引いて！
+
+[charaFace A 6]
+
+＠マンドリカルド
+了解、一旦戻るっす！
+[k]
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠E：マシュ
+こちら、フォローに入ります！[r]やあああ！
+[k]
+
+[messageOff]
+[se ad667]
+[charaMoveScale E 1.1 0.2]
+[charaMove E 0,10 0.2]
+[wt 0.1]
+[charaFadeout E 0.1]
+[wt 0.1]
+[seStop ad667 0.2]
+[charaScale E 1.0]
+
+[charaTalk off]
+[charaFace D 0]
+[charaFace J 0]
+[charaFadein D 0.1 0]
+[charaFadein J 0.1 2]
+[wt 0.3]
+
+[se ad686]
+[charaPut L -100,0]
+[charaEffect L bit_talk_x_slash01]
+[wt 0.1]
+
+[effect bit_talk_14 -200,0]
+[charaShake D 0.05 3 3 0.2]
+
+[wt 0.4]
+
+[se ad687]
+[charaPut M 100,0]
+[charaEffect M bit_talk_x_slash02 0,0 F]
+[wt 0.4]
+[effect bit_talk_14 200,0]
+[charaShake J 0.05 3 3 0.2]
+[wt 0.8]
+
+[se ad42]
+[charaSpecialEffect D enemyErasure 0,0 1.5]
+[charaSpecialEffect J enemyErasure 0,0 1.5]
+
+[wait charaSpecialEffect D]
+[wait charaSpecialEffect J]
+[charaFadeout D 0.1]
+[charaFadeout J 0.1]
+
+[wt 0.5]
+
+[bgmStop BGM_EVENT_80 1.2]
+
+[charaTalk depthOff]
+
+[charaDepth F 1]
+[charaDepth E 2]
+
+[se ade18]
+[seVolume ade18 0.0 0.5]
+
+[charaFace E 12]
+[charaFadein E 0.1 1]
+
+[wt 0.5]
+[seStop ade18 0.8]
+[wt 1.5]
+
+[charaFace F 0]
+[charaFadein F 0.1 1]
+[wt 0.1]
+[charaFadeout E 0.4]
+[wt 0.2]
+[se ade57]
+[seVolume ade57 0.0 1.0]
+[seStop ade57 0.14]
+[wt 0.1]
+[se ad658]
+[wt 0.3]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[charaTalk F]
+[charaFace F 1]
+
+＠マシュ
+掃討完了です！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+
+
+＠マンドリカルド
+うっし。
+[k]
+
+？1：よし、やった！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+
+＠マシュ
+それでは帰還まで少々待機を。[r]調整に時間が掛かっているようです。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マンドリカルド
+そうっすか……。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠
+[line 3]よし、良いタイミングかもしれない。
+[k]
+
+
+＠
+いや、待てよ。[r]今はマシュがいる。
+[k]
+
+＠
+マシュもマスターと話をしたいようだし、[r]マンドリカルドは大人しくしていよう……。
+[k]
+
+＠
+……決して、へたれた訳ではない。[r]へたれた訳ではないのだ。
+[k]
+
+＠
+そう自分に言い訳しつつ、[r]そっと距離を置こうとする俺マンドリカルド。
+[k]
+
+[bgmStop BGM_EVENT_77 1.0]
+[charaFace A 0]
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠マンドリカルド
+……ん？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+
+＠
+[line 3]殺気！
+[k]
+
+[messageOff]
+
+[se ad193]
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 1.0 1]
+[wt 2.0]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFadein F 0.1 1]
+
+＠マシュ
+マンドリカルドさん！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth A 5]
+[charaDepth H 1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 1]
+
+[charaFadeTime H 0.2 0.6]
+
+＠マンドリカルド
+（シャドウサーヴァント……背後を取られた！[r]　くそ、『気配遮断』……アサシンクラスか！）
+[k]
+
+[messageOff]
+[charaFadeout H 0.2]
+[wt 0.4]
+
+[charaTalk depthOn]
+
+？1：緊急回避！
+？！
+
+[se bas9]
+[effect bit_talk_release]
+[wt 0.4]
+[flashin once 0.2 0.2 FFFFFFFF FFFFFF00]
+[charaFadeTime A 0.2 0.6]
+[wt 0.2]
+[effectDestroy bit_talk_release]
+
+[se ad171]
+[fowardEffect bit_talk_Slash_white_01_L -50,0]
+[wt 0.1]
+
+
+[charaMove A 15,0 0.1]
+[wt 0.4]
+[charaFadeTime A 0.2 1.0]
+[wt 0.2]
+
+[charaFace A 2]
+
+＠マンドリカルド
+っと、ありがたいっす！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠
+[line 3]その時、不意に理解した。
+[k]
+
+＠
+確かこういうのを『サトリ』と[r]言うのだっけか。
+[k]
+
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+
+＠E：マシュ
+こちら、前に出ます！
+[k]
+
+[messageOff]
+[charaFace E 7]
+[messageOff]
+[se ad667]
+[charaMoveScale E 1.1 0.1]
+[charaMove E 0,10 0.1]
+[wt 0.2]
+[seStop ad667 0.2]
+[wt 0.1]
+
+[effect bit_talk_14]
+[se ad32]
+[charaFace E 15]
+[charaShake E 0.05 3 3 0.2]
+
+[wt 0.3]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaScale E 1.0]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マンドリカルド
+マスター！
+[k]
+
+＠マンドリカルド
+こんな時に唐突で申し訳ねえっすけど！
+[k]
+
+？1：いいよ、何！
+？！
+
+[bgm BGM_EVENT_80 1.0 0.5]
+
+＠マンドリカルド
+やっぱ俺、[r]アンタの友達にはなれねぇと思うっす！
+[k]
+
+？1：……！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠
+俺も、マスターも。
+[k]
+
+＠
+何の屈託もない友人になるには、[r]あまりに、あまりに隔絶する過去がある。
+[k]
+
+＠
+俺じゃない俺が、[r][&彼:彼女]の友人になれたように。
+[k]
+
+＠
+俺にも、カルデアで召喚されて[r]これまで戦ってきたという自負がある。
+[k]
+
+＠
+それは捨ててはならない、[r]奪ってもならない大切な記憶で記録なのだから。
+[k]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マンドリカルド
+でも！[r]だけどっすよ！
+[k]
+
+＠マンドリカルド
+[#友達だけが人間にとって大切な関係じゃねえ]！
+[k]
+
+＠マンドリカルド
+俺はアンタを信じて、[r]アンタと共に戦うサーヴァントだ！
+[k]
+
+＠マンドリカルド
+そこは絶対に譲れねえ！[r]っす！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠
+[line 3]ようやく、[r]想いを言葉という形にできた。
+[k]
+
+＠
+正体不明の怪物のようだった想いは、[r]説明することで不明でなくなった。
+[k]
+
+＠
+なら、もう恐れる必要はない。
+[k]
+
+＠
+大切なことを、[r]言葉にできたのだから。
+[k]
+
+[messageOff]
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+？1：……そうだね！
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠
+[line 3]マスターは朗らかに笑って頷いた。
+[k]
+
+＠
+ああ、前を向いている。[r]人間ってヤツは、いやはや[#逞:たくま]しい。
+[k]
+[messageOff]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 1]
+[wt 0.4]
+
+？1：よし、行くよマンドリカルド！
+？！
+
+[bgm BGM_EVENT_80 1.0 1.0]
+[charaFace A 1]
+
+＠マンドリカルド
+うっす！[r]マシュ、交代だ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠E：マシュ
+はい、お任せします。[r]マンドリカルドさん！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠マンドリカルド
+カルデア切り込み隊長、マンドリカルド。[r]行くぞ！
+[k]
+
+
+？1：……切り込み隊長？
+？！
+
+[charaFace A 7]
+
+＠マンドリカルド
+そこに疑問を持つのは止めてくだせえ！！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.5]
+[wait fade]
+[soundStopAll]
+[end]

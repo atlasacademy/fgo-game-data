@@ -1,0 +1,781 @@
+
+＄91-25-04-01-3-0
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 25004001 1 楊貴妃]
+[charaSet B 1098162100 1 荊軻]
+[charaSet C 4032002 1 李白]
+[charaFilter C silhouette 00000080]
+[charaSet D 3035001 1 秦良玉]
+[charaSet E 6036000 1 李書文]
+[charaSet F 7010000 1 カリギュラ]
+[charaSet G 4002000 1 イスカンダル]
+[charaSet H 2031000 1 ナポレオン]
+[charaSet I 4028000 1 イヴァン雷帝]
+
+[charaSet S 98115000 1 エフェクト用]
+[imageSet T back10000 1]
+[charaScale T 1.05]
+
+[branchQuestNotClear lblNotClear 3000303]
+[scene 105900]
+[branch lblConf]
+[label lblNotClear]
+[scene 105600]
+[label lblConf]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad59]
+[seVolume ad59 0 0.1]
+[seVolume ad59 1.0 1.0]
+[wt 1.0]
+
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.4 1]
+[charaShake A 0.1 3 3 0]
+[wt 0.4]
+
+[seStop ad59 0.5]
+[wt 0.5]
+
+＠楊貴妃
+ハヒ、ハヒ、ハヒィ……[bgm BGM_EVENT_2 0.1]
+[k]
+
+＠楊貴妃
+ど、どこかに、隠れられる場所は！？[r]ノコギリ怖い……ノコギリ怖い……。
+[k]
+
+[charaShakeStop A]
+
+＠B：？？？
+おーい。おーいってば。
+[k]
+
+[charaFace A 16]
+
+＠楊貴妃
+……ハイ？　声はすれども霊基は見えず？
+[k]
+
+＠B：？？？
+どうした。こちらだ！
+[k]
+
+[messageOff]
+[se ad538]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_2 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[scene 51400]
+[wt 0.52]
+[se ade125]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 18]
+[charaFadein A 0.1 1]
+
+＠楊貴妃
+……やややや？[r]食堂の陰にこのようなシークレットベースが？
+[k]
+
+＠楊貴妃
+薄暗くて……幾分ぶっそうな雰囲気です……？[r]そこにいらっしゃるのは[line 3][#荊軻:けいか]さん？
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_7 0.1]
+
+
+＠荊軻
+おや、誰かと思えば、[#楊:よう]家の姫様だったか。
+[k]
+
+[charaFace B 1]
+
+＠荊軻
+これは願ってもない[#僥倖:ぎょうこう]！[r]雪見酒ならぬ、月見酒ならぬ、花見酒だ！　乾杯！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 22]
+[charaFadein A 0.1 1]
+
+＠楊貴妃
+よ、よく見たら酒瓶が床一面に転がって……[r]これぜんぶ、お一人で飲んじゃったんですかぁー？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠荊軻
+ふふっ、滅相もない。[r]一人酒の飲み方くらいは心得ているさ。
+[k]
+
+＠荊軻
+他にお二方の飲み仲間と一緒に[r]愉快にやっていたところだ。なのだが……
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth E 2]
+[charaDepth B 3]
+
+[charaFace D 0]
+[charaFadein D 0.4 -220,0]
+[charaFadeTime D 0.4 0.6]
+
+[charaFace E 0]
+[charaFadein E 0.4 -400,0]
+[charaFadeTime E 0.4 0.6]
+[wt 1.0]
+
+[charaFace D 4]
+
+＠荊軻
+秦良玉は切れた酒を調達してくる、と言い[line 3][charaFadeout D 0.4][wt 1.2][r]李書文は何か[#肴:さかな]を[#漁:あさ]ってくる、と言い残して出て行った。[charaFadeout E 0.4][wt 0.4]
+[k]
+
+[charaFace B 1]
+
+＠荊軻
+[line 3]が、待てども、舞えども、枕を濡らせども、[r]二人とも一向に帰ってこん。寂しいもんだなー！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk on]
+
+[charaDepth A 5]
+[charaDepth T 1]
+
+[charaTalk A]
+[charaFace A 23]
+[charaFadein A 0.1 1]
+[charaFadeTime T 0.2 0.5]
+
+＠楊貴妃
+[f large]（逃げたー！？）
+[k]
+
+[charaFadeout T 0.2]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠荊軻
+されどそれも杞憂、杞憂。どうにか酒は探し当てた。[r]酒の肴も、こうして向こうからやって来た。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 1]
+
+＠楊貴妃
+はい？　おさかな？
+[k]
+
+[charaFace A 8]
+
+＠楊貴妃
+あのぅ、実は私、こそこそと隠れているところでして、[r]あまり大きな物音を立てて見つかりたくなくって……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠荊軻
+む？　そうか、それは失礼を。[r]しんみりと酌み交わすのもまた一興だ……。
+[k]
+
+＠荊軻
+さて、[#楊:よう]家の姫[line 3]知っているぞ。[r][#貴女:きじょ]も割合、[#イケる口:おおざけのみ]だと耳に挟んだぞ。
+[k]
+
+＠荊軻
+こうしてカルデアの片隅で遭遇したのも何かの縁。[r]共に[#一献:いっこん]いかがか？
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 19]
+[charaFadein A 0.1 1]
+
+＠楊貴妃
+でも……一献で済むんですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠荊軻
+よもや私を、ただの酔いどれへべれけの[r]お姉さんと思ってはいるまいな……？
+[k]
+
+[charaFace B 1]
+
+＠荊軻
+合ってるぞ！　一献で済むわけがあるまい！[wt 1.0][charaShake B 0.1 0 5 1.2][r]ハハハハハハハ（ぐいぐいバンバンバン）！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+[charaShakeStop B]
+
+[charaTalk depthOff]
+[charaDepth A 5]
+[charaDepth T 1]
+
+[charaTalk A]
+[charaFace A 25]
+[charaFadein A 0.1 1]
+[charaFadeTime T 0.2 0.5]
+
+＠楊貴妃
+（あれっ？　これお酒の拷問かな？）
+[k]
+
+[charaFadeout T 0.2]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaFace A 4]
+
+＠楊貴妃
+あの、あの、なるべくお静かに……[r]ううう仕方がない、ちょっとだけですからね！？
+[k]
+
+[charaFace A 15]
+
+＠楊貴妃
+[line 6]（キュッ）。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠荊軻
+ほー、いい飲みっぷりだ！[r]傾国！　傾国！　傾国！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠楊貴妃
+傾国って呼ばないでくださーい！！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[effect bit_talk_salamander]
+[se ad267]
+[seVolume ad267 0 0.4]
+[wt 0.7]
+[se ad450]
+[seVolume ad450 0 0.4]
+[effectStop bit_talk_salamander]
+[wt 0.8]
+
+＠
+[charaTalk S]
+[f small][align right][00ffff]【貴妃様】【加油】【加油】[align][r][f small][align right][00ffff]【加油】【立旗】【大丈夫萌大奶】[align]
+[k]
+
+[seStop ad450]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠荊軻
+それは鬼火か！[r]侍女たちの霊が宿るというアレだな！？
+[k]
+
+＠荊軻
+これはいい、ぜひとも後宮の舞を見せてくれ！[r][#筑:ちく]を撃てー！　ジャンジャカ奏でよー！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠楊貴妃
+[#筑:ちく]じゃなくて[#琵琶:びわ]と[#龍笛:りゅうてき]ですけどー！
+[k]
+
+[messageOff]
+[wipeout rollRight 1.0 0.5]
+[bgm BGM_EVENT_7 1.0 0.5]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[wt 1.0]
+
+[wipein rollLeft 1.0 0.5]
+[bgm BGM_EVENT_7 1.0 1.0]
+[wait wipe]
+[wt 0.3]
+
+[charaTalk A]
+[charaFace A 20]
+[charaFadein A 0.1 1]
+
+＠楊貴妃
+あははは、あははははは！[r]ヤン、ユン、ヤヤーン♪　ヤン・ユゥファーン♪
+[k]
+
+[charaFace A 25]
+
+＠楊貴妃
+[#好好:ハオハオ]～～たーのしーですねー！[r]えへへ、せっかくの酒宴ですから[line 3]
+[k]
+
+[charaFace A 12]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth F 1]
+[charaDepth G 2]
+[charaDepth A 9]
+
+[charaFace G 0]
+[charaFace F 0]
+[charaFadein F 0.4 -330,0]
+[charaFadeTime F 0.4 0.6]
+
+
+[branchQuestNotClear lblNotClear2 3000218]
+
+[branch lblConf2]
+[label lblNotClear2]
+
+＠楊貴妃
+か、カリギュラ陛下に、[wt 1.0][charaFadeout F 0.4][wt 0.4]イスカンダル陛下もっ！[charaFadein G 0.4 -310,0][charaFadeTime G 0.4 0.6][r]ぜひぜひここにお呼びしましょう！　ねっ！
+[k]
+
+[branch lblNotClear_out2]
+[label lblConf2]
+
+[charaDepth H 3]
+[charaDepth I 4]
+
+[charaFace I 0]
+[charaFace H 0]
+
+＠楊貴妃
+か、カリギュラ陛下に[wt 1.0][charaFadeout F 0.4][wt 0.4]イヴァン雷帝陛下[charaFadein I 0.4 -310,0][charaFadeTime I 0.4 0.6][wt 1.0][charaFadeout I 0.4][wt 0.4]ナポレオン陛下！[charaFadein H 0.4 -310,0][charaFadeTime H 0.4 0.6][wt 1.0][charaFadeout H 0.4][wt 0.4][charaFadein G 0.4 -310,0][charaFadeTime G 0.4 0.6][r]それからイスカンダル陛下もぜひぜひお呼びしましょう！
+[k]
+
+[charaFadeout I 0.1]
+[charaFadeout H 0.1]
+
+
+[label lblNotClear_out2]
+
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk on]
+[charaTalk depthOn]
+
+[charaTalk B]
+[charaFace B 1]
+[charaFadein B 0.1 1]
+
+＠荊軻
+それはまた妙に暑苦しいな！[r]いいぞぉ！　皇帝は刺す刺せ刺そう刺させろーー！！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[se ad450]
+[seVolume ad450 0 0.4]
+
+＠
+[charaTalk S]
+[f small][align right][00ffff]【完全悪酔】【即刻中止】【鴨梨山大】[align][r][f small][align right][00ffff]【救命阿】【旗回収】【有生之年】[align]
+[k]
+
+[messageOff]
+[seStop ad450]
+
+
+
+[wipeout fire 2.0 1.0]
+[bgmStop BGM_EVENT_7 2.0]
+[wait wipe]
+
+[scene 10001]
+[wt 0.1]
+[fadeout black 0.1]
+[wait fade]
+[wipein fire 0.1 1.0]
+[wait wipe]
+
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[scene 116900 1.5]
+[wt 1.6]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_1 0.1]
+
+＠？？？
+[#玉環:ユーファン]……[#玉環:ユーファン]よ……[r]あんたの心に語りかけてるよ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 22]
+[charaFadein A 0.1 1]
+
+＠楊貴妃
+……ハッ……あ、あなたは……[r]も、もしかして……
+[k]
+
+[charaFace A 21]
+
+＠楊貴妃
+[f large]イマジナリー[#李白:りはく]さん！？
+[k]
+
+[charaFace A 18]
+
+＠楊貴妃
+私が泥酔してると、いつの間にか現れて[r]やさぐれたくだを巻く、イマジナリー[#李白:りはく]さん！？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠李白
+はっはっは、そうだ、そうだとも。[r]イマジナリー[#李白:りはく]さんだ。
+[k]
+
+＠李白
+余人は私を[#盛唐:せいとう]の“詩仙”と呼ぶ。[r][#酒客:しゅかく][#飲中八仙:いんちゅうはっせん]が一人[line 3][#太白:たいはく]・[#李白:りはく]、その人だ。
+[k]
+
+＠李白
+まあ、あんたの思い描くマボロシなんだがね？
+[k]
+
+＠李白
+たかだか数年の付き合いだったこの私の有り様が、[r]サーヴァント楊貴妃の霊基に刻まれているのなら光栄だ。
+[k]
+
+＠李白
+というわけで酒をちょっと分けてくれ。[r]ああ、[#謝謝:シエシエ][#謝謝:シエシエ]。
+[k]
+
+[messageOff]
+[fowardEffect bit_talk_yuge]
+[wt 1.0]
+
+[fadeout white 1.5]
+[bgmStop BGM_EVENT_1 1.5]
+[wait fade]
+
+[fowardEffectDestroy bit_talk_yuge]
+[charaFadeout C 0.1]
+[scene 116800]
+[wt 1.0]
+
+[fadein white 1.5]
+[wait fade]
+
+[wt 0.2]
+
+[bgm BGM_EVENT_11 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠李白
+相変わらずの[#娘子:ニャンヅー]ぶりじゃないか、[#玉環:ユーファン]や？[r]ふふっ……。
+[k]
+
+＠李白
+一杯　一杯　また一杯。[r]明朝意あらば　琴を抱きて来たれ、だ（クイッ）。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 12]
+[charaFadein A 0.1 1]
+
+＠楊貴妃
+も、もう深酒はしません！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠李白
+またまた、出来もしない約束を口にして。
+[k]
+
+＠李白
+いいじゃないか。いくらでも呑め、呑むがいい。[r]呑んで[#憂:うれ]いなど流してしまえよ。
+[k]
+
+＠李白
+あんたに説教するなど、冗談じゃあないからね。[r]私は感じたことをそのまま言葉にする、それだけだ。
+[k]
+
+＠李白
+さて、時に……
+[k]
+
+＠李白
+今はカルデアの[#主人:マスター]を独占したいが[r][#則天武后:そくてんぶこう]の手前、そうもいかないのだろ？
+[k]
+
+＠李白
+カルデアは宮廷とは違うからなぁ。[r]玄奘三蔵が言おうとしたことも察知して逃げたか？
+[k]
+
+＠李白
+血のつながりばかりが家族ではない、とかなんとか。[r]あんたはそんな取り繕った[#建前:タテマエ]には耐えられんのだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 14]
+[charaFadein A 0.1 1]
+
+＠楊貴妃
+…………。
+[k]
+
+[charaFace A 15]
+
+＠楊貴妃
+……思い出します。無性に。[r]私に笛を教えてくださった、あの方を[line 3]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠李白
+ああ、李隆基の異母兄、[#李憲:りけん]かい？
+[k]
+
+＠李白
+まさしく、[#類:たぐ]い[#希:まれ]なる笛の名手だった。[r]皇位を弟にタダで譲った馬鹿な男だった……。
+[k]
+
+＠李白
+私はあの男をことのほか気に入っていたよ。[r]李憲の長子、[#汝陽王李璡:じょようおう りしん]もまた突き抜けて楽しい奴だった。
+[k]
+
+＠李白
+あんたの天子様の李隆基が、兄や[#甥:おい]へと向ける[r]優しい眼差しを、あんたは羨望していたっけね。
+[k]
+
+＠李白
+[#娘子:ニャンヅー]、きっとあんたは[line 3]
+[k]
+
+＠李白
+そんな見返りを求めない無私の愛が、この世にあるのだと、[r][#安禄山:あんろくざん]で確かめたかったのだろうなあ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠楊貴妃
+………………っ……。
+[k]
+
+[charaFace A 14]
+
+＠楊貴妃
+………………。
+[k]
+
+[charaFace A 8]
+
+＠楊貴妃
+……そ、その頃って、もう[#李白:りはく]さんは[r]宮廷にいなかったじゃないですかあ……。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠李白
+私を宮廷から追い出したのは誰だったっけねえ？[r]まあ、そんなの別にいいんだけどさ。
+[k]
+
+＠李白
+なあに、カルデアがどうした。[r]慣れてしまえよ。すぐに何も感じなくなる。
+[k]
+
+＠李白
+何処でだって、あんたは自分を殺して[r]我慢するのは得意じゃないか。
+[k]
+
+＠李白
+あんたは則天武后に難儀を掛けて困らせる。[r]則天武后はあんたを[#嬉々:きき]として[#折檻:せっかん]する。
+[k]
+
+＠李白
+不器用なもの同士、お似合いの愛情表現だ。[r]理想の家族なんてものは、思い出の中にしかない。
+[k]
+
+＠李白
+しかも則天は、たとえ相手が身内の武氏一族であっても[r]遠慮容赦なく鞭をくらわす女傑だ。
+[k]
+
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth T 9]
+
+[charaPut T 1]
+[charaFadeTime T 2.0 0.6]
+
+＠李白
+派手に血肉は飛び散ろうが、実に公平な愛だ。[r]違うかねえ、[#娘子:ニャンヅー]？
+[k]
+
+[charaFadeTime T 2.0 0.8]
+
+＠李白
+[#誰:た]が家の[#玉笛:ぎょくてき]ぞ　暗に声を飛ばす[r][#何人:なんびと]か　故園の情を起こさざらん[line 3]
+[k]
+
+
+[messageOff]
+[fadeout black 1.5]
+[bgm BGM_EVENT_11 1.5 0.5]
+[wait fade]
+
+[charaFadeout T 0.1]
+[charaFadeout C 0.1]
+[scene 10000]
+[wt 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+＠楊貴妃
+いやです……[r]そんなのは……いや……。
+[k]
+
+＠楊貴妃
+マスターも……[#奶奶:ナイナイ]も……大切だから……。
+[k]
+
+＠楊貴妃
+せっかくこうして……[r]……出会えたのに……。
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_11 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]
