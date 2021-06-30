@@ -1005,7 +1005,8 @@
 [charaFadeout E 0.1]
 [charaFadeout F 0.1]
 [wt 1.0]
-[scene 10204]
+
+[scene 10200]
 
 [charaSet A 7022001 1 茨木童子]
 [charaSet B 6005001 1 ジャック]
@@ -3542,14 +3543,18 @@
 [cameraMove 1.0 0,-20 1.2]
 [fadeout white 2.0]
 [wait fade]
+
 [charaPut F 1200,1200]
 [charaScale F 1.0]
 [charaEffectStop F bit_talk_magicalchange_front]
 
+[charaCrossFade E 2028001 0 0.1]
+[wait charaCrossFade]
+
+[cameraHome 0.1]
+
 [wt 0.7]
 
-[charaChange E 2028001 1 fade 0]
-[cameraHome 0.1]
 [fadein white 2.0]
 [wait fade]
 
