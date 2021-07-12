@@ -43,13 +43,14 @@
 [effect bit_bolg_01b]
 [seStop ade157 0.7]
 [wt 0.5]
+[effectDestroy bit_bolg_01b]
 
 [charaShake D 0.03 4 4 0.4]
 [wt 1.0]
 
 [se ad52]
 [charaChange D 1098125600 2 fade 0.4]
-[wt 0.4]
+[wait charaChange]
 
 [charaTalk D]
 [charaFadein D 0.1 1]
@@ -104,6 +105,9 @@ None of your business! Die, Foreigner!
 [messageShake 0.01 3 3 0.4]
 Aaaaaaaaahhh!
 [k]
+
+[effectDestroy bit_bolg_01b]
+[effectDestroy bit_bolg_02b]
 
 [messageOff]
 [charaSpecialEffect D flashErasure 1 1.7]

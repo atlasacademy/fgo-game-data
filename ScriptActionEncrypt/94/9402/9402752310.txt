@@ -26,54 +26,51 @@
 
 [scene 10000]
 
+[revivalBranch lblNormal lblRevival]
 
-
-[branchQuestNotClear _bqc01b 94027523 1]
-
-[label _bqc01a]
+[label lblNormal]
 
 [flag isQueSkip true]
-[branch _bqc01c]
 
-[label _bqc01b]
+[branch lblRevivalConf]
+
+[label lblRevival]
+
+[branchQuestNotClear lblNoClear 94039123 1]
+
+[flag isQueSkip true]
+
+[branch lblClearCheckConf]
+
+[label lblNoClear]
 
 [flag isQueSkip false]
-[branch _bqc01c]
 
-[label _bqc01c]
+[label lblClearCheckConf]
 
-[branch _noQuestion isQueSkip false]
+[label lblRevivalConf]
+
+[branch lblQueSkipConf isQueSkip false]
 
 [messageOff]
-
 [fadein black 0.1]
 [wait fade]
-
 
 [charaFadein H 0.1 -600,-300]
 [charaMove H -400,-300 0.7]
 [wait charaMove]
 [wt 0.4]
+
 [charaMoveReturn H -400,-250 0.2]
 [se ad673]
 [wait charaMove]
+
 [charaMoveReturn H -400,-250 0.2]
 [se ad673]
 [wait charaMove]
 [wt 0.5]
 
-
 ？1：Skip
-[flag isSkip true]
-
-？2：Don't skip
-[flag isSkip false]
-
-[branch _end2 isSkip false]
-
-？！
-
-
 [charaMove H -420,-300 0.3]
 [wait charaMove]
 [charaMove H 800,-300 1.0]
@@ -81,29 +78,29 @@
 [wait charaMove]
 [wt 0.5]
 
-[branch _end isSkip true]
+[flag isSkip true]
 
-
-[label _end2]
-[label _noQuestion]
-
+？2：Don't skip
 [charaMove H -520,-300 0.7]
 [charaFadeout H 0.7]
 [wait charaMove]
 [wt 0.5]
 
+[flag isSkip false]
+？！
 
+[branch lblEnd isSkip true]
 
 [fadeout black 0.1]
 [wait fade]
 
-
+[label lblQueSkipConf]
 
 [scene 63501]
 [wt 1.0]
-
 [fadein black 1.5]
 [wait fade]
+
 [wt 0.2]
 
 [bgm BGM_EVENT_2 0.1 1.0]
@@ -112,6 +109,7 @@
 [charaFace A 4]
 [charaFadein A 0.4 1]
 [wt 0.4]
+
 ＠Jeanne Alter
 Damn, day's almost over... We've still got a little time left, but at this point, I think we can call it.
 [k]
@@ -122,6 +120,7 @@ Damn, day's almost over... We've still got a little time left, but at this point
 [charaTalk B]
 [charaFace B 13]
 [charaFadein B 0.1 1]
+
 ＠Mash
 Still, we did pretty well for ourselves.
 [k]
@@ -144,6 +143,7 @@ And then there's all the other[sr]people who bought a copy.
 [charaFace C 0]
 [charaFadein C 0.4 1]
 [wt 0.4]
+
 ＠Santa Island Kamen
 Phew, made it just in time. One, please.
 [k]
@@ -179,6 +179,7 @@ Here you go. Thank you.
 [charaTalk B]
 [charaFace B 1]
 [charaFadein B 0.1 1]
+
 ＠Mash
 ...And then there's[line 2]
 [k]
@@ -189,6 +190,7 @@ Here you go. Thank you.
 [charaTalk A]
 [charaFace A 16]
 [charaFadein A 0.1 1]
+
 ＠Jeanne Alter
 Wait, hold up. Who the hell was that weirdo?
 [k]
@@ -196,6 +198,7 @@ Wait, hold up. Who the hell was that weirdo?
 ？1：Don't worry, we see guys like that all the time.
 
 [charaFace A 2]
+
 ＠Jeanne Alter
 Uh, no!? If that were common, it wouldn't be weird!
 [k]
@@ -203,6 +206,7 @@ Uh, no!? If that were common, it wouldn't be weird!
 ？2：He often shows up at Christmas.
 
 [charaFace A 2]
+
 ＠Jeanne Alter
 How's a guy like that a staple of your Christmas!?
 [k]
@@ -217,6 +221,7 @@ How's a guy like that a staple of your Christmas!?
 [charaFace D 0]
 [charaFadein D 0.4 1]
 [wt 0.4]
+
 ＠Jeanne
 Hi, Alter.
 [k]
@@ -225,35 +230,36 @@ Hi, Alter.
 [wt 0.1]
 
 [charaTalk A]
-[charaFace A 15]
 [charaFace D 0]
-[charaFadein A 0.1 2]
 [charaFadein D 0.1 0]
+[charaFace A 15]
+[charaFadein A 0.1 2]
+
 ＠Jeanne Alter
 Great. What do you want?[sr]Here to laugh at how pitifully our club did?
 [k]
 
-[charaTalk D]
 [charaFace D 5]
+
 ＠Jeanne
 No, I'm just here to say hello. You do know that not everyone's out to get you, right?
 [k]
 
 
-[charaTalk A]
 [charaFace A 13]
+
 ＠Jeanne Alter
 ...So? You take the sales crown again this year?
 [k]
 
-[charaTalk D]
 [charaFace D 4]
+
 ＠Jeanne
 No, I'm afraid not.
 [k]
 
-[charaTalk A]
 [charaFace A 8]
+
 ＠Jeanne Alter
 You didn't!? But your dolphin book was so good it made me want to barf! How could it possibly lose!?
 [k]
@@ -269,20 +275,20 @@ Not even Medb's photo album should[line 2]
 [charaTalk B]
 [charaFace B 12]
 [charaFadein B 0.1 1]
+
 ＠Mash
 W-well, as it turns out...
 [k]
 
 [messageOff]
-[bgmStop BGM_EVENT_2 1.5]
 [wipeout rollRight 1.5 1.0]
+[bgmStop BGM_EVENT_2 1.5]
 [wait wipe]
-
 [charaFadeout B 0.1]
 [wt 1.0]
-
 [wipein rollLeft 1.5 1.0]
 [wait wipe]
+
 [wt 0.5]
 
 [bgm BGM_EVENT_7 0.1 1.0]
@@ -290,6 +296,7 @@ W-well, as it turns out...
 [charaTalk A]
 [charaFace A 9]
 [charaFadein A 0.1 1]
+
 ＠Jeanne Alter
 ...Hmph. Sneaky bitch.
 [k]
@@ -300,11 +307,13 @@ W-well, as it turns out...
 [charaTalk E]
 [charaFace E 5]
 [charaFadein E 0.1 1]
+
 ＠Medb
 What do you mean, sneaky!?
 [k]
 
 [charaFace E 8]
+
 ＠Medb
 I HAD to start issuing raffle tickets,[sr]or the whole con was going to riot!
 [k]
@@ -315,6 +324,7 @@ I HAD to start issuing raffle tickets,[sr]or the whole con was going to riot!
 [charaTalk F]
 [charaFace F 5]
 [charaFadein F 0.1 1]
+
 ＠Robin Hood
 Great, just what we need right now.
 [k]
@@ -325,6 +335,7 @@ Great, just what we need right now.
 [charaTalk E]
 [charaFace E 2]
 [charaFadein E 0.1 1]
+
 ＠Medb
 Listen up! There's three things you guys lack!
 [k]
@@ -334,6 +345,7 @@ Trendiness, social media presence,[sr]motivation, and most importantly, beauty!
 [k]
 
 [charaFace E 7]
+
 ＠Medb
 Specifically, me!
 [k]
@@ -341,14 +353,15 @@ Specifically, me!
 ？1：Isn't that four things?
 ？！
 
-
 [charaFace E 2]
+
 ＠Medb
 [messageShake 0.01 3 3 0.6]
 ...Like I was saying,[sr]there's four things you guys lack!
 [k]
 
 [charaFace E 7]
+
 ＠Medb
 Trendiness, social media presence,[sr]motivation, and me in all my beautiful glory!
 [k]
@@ -359,6 +372,7 @@ Trendiness, social media presence,[sr]motivation, and me in all my beautiful glo
 [charaTalk B]
 [charaFace B 8]
 [charaFadein B 0.1 1]
+
 ＠Mash
 Why does it feel like the list is growing?
 [k]
@@ -369,11 +383,13 @@ Why does it feel like the list is growing?
 [charaTalk E]
 [charaFace E 0]
 [charaFadein E 0.1 1]
+
 ＠Medb
 The point is, I'm taking first place here as well.
 [k]
 
 [charaFace E 12]
+
 ＠Medb
 Honestly, I'm so beautiful I scare myself sometimes...[sr]Maybe I'll make another statue.
 [k]
@@ -382,6 +398,7 @@ Honestly, I'm so beautiful I scare myself sometimes...[sr]Maybe I'll make anothe
 ？！
 
 [charaFace E 10]
+
 ＠Medb
 ...True. I'm not sure even I could take[sr]having a third statue of myself destroyed.
 [k]
@@ -391,6 +408,7 @@ So I guess I can settle for just taking first place[sr]in sales. That Holy Grail
 [k]
 
 [charaFace E 8]
+
 ＠Medb
 Aaanyway, good luck trying to[sr]enjoy the rest of your summer.
 [k]
@@ -400,6 +418,7 @@ It might not compare to my beautifully elegant vacation, but then, what could?
 [k]
 
 [charaFace E 1]
+
 ＠Medb
 Hooohohoho!
 [k]
@@ -416,6 +435,7 @@ Hooohohoho!
 [charaTalk A]
 [charaFace A 16]
 [charaFadein A 0.1 1]
+
 ＠Jeanne Alter
 Damn, she actually walked away laughing[sr]like some kind of stuck-up evil rich girl.
 [k]
@@ -429,25 +449,29 @@ For a lady not making her own manga, she sure seems like she's read too damn man
 
 [charaTalk D]
 [charaFace D 0]
-[charaFace A 0]
 [charaFadein D 0.1 0]
+[charaFace A 0]
 [charaFadein A 0.1 2]
+
 ＠Jeanne
 Personally, she reminds me of that salesman who's always laughing.
 [k]
 
 [charaFace D 11]
+
 ＠Jeanne
 ...Anyway, I sure had a lot of fun again this year.
 [k]
 
 [charaTalk A]
 [charaFace A 13]
+
 ＠Jeanne Alter
 I don't know. Think it might've been[sr]a whole lot of work for nothing.
 [k]
 
 [charaFace A 15]
+
 ＠Jeanne Alter
 ...Hmph. Next time, I'm gonna[sr]hand you your ass for sure.
 [k]
@@ -464,12 +488,7 @@ Wonderful! I look forward to it![sr]Okay, I'm going to go back to my own table.
 Great work, everyone!
 [k]
 
-
-
-[label _end]
-
-
-
+[label lblEnd]
 
 [messageOff]
 [bgmStop BGM_EVENT_2 2.5]
