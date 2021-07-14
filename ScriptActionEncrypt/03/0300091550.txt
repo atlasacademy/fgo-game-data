@@ -1,0 +1,156 @@
+
+＄03-00-09-15-5-0
+
+
+
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1049000 1 千子村正]
+[charaSet B 1098124500 1 ダ・ヴィンチ]
+[charaSet C 5045001 1 アルトリア]
+[charaSet D 1098216200 1 ハベトロット]
+[charaSet E 1098209500 1 白い狼]
+[charaSet F 5021000 1 賢人グリム]
+
+[imageSet J back10000 1 1]
+[charaScale J 1.05]
+
+[charaSet S 98115000 1 エフェクト用]
+
+[charaPut S 1]
+[charaEffect S bit_talk_fog_side]
+
+[scene 121500]
+[wt 0.1]
+
+
+
+[fadein black 1.5]
+[wait fade]
+
+？1：すごい霧だ……
+？2：（……今の亡霊は……）
+
+？！
+
+[bgm BGM_EVENT_142 0.1]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠賢人グリム
+[#逸:はや]るな。いまさら[#鐘撞:かねつ]き堂は逃げねえよ。[r]この霧だ、急ぐとはぐれる。落ち着いて進みな。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 15]
+[charaFadein A 0.1 1]
+＠千子村正
+……おいグリム。[r]歩いた距離ならもう[#鐘撞:かねつ]き堂には着いてるぞ。
+[k]
+
+＠千子村正
+さっき大階段をあがりきったしな。[r]だっていうのに、コイツは[line 3]
+[k]
+
+[messageOff]
+[se ad592]
+[seVolume ad592 0 0.5]
+[fadeout white 0.4]
+[wait fade]
+
+[charaFadeout A 0.1]
+[charaPut S 2000,2500]
+
+[scene 120700]
+[cameraFilter gray]
+[wt 0.6]
+
+[fadein white 0.4]
+[wait fade]
+[wt 1.0]
+
+[fadeout white 0.4]
+[wait fade]
+
+[scene 121500]
+[charaPut S 1]
+[cameraFilter normal]
+[wt 0.6]
+
+[fadein white 0.4]
+[wait fade]
+
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠賢人グリム
+……まあ、そういうコトもあらあな。[r]死者の声を聞くのはドルイドの仕事じゃねえんだが……
+[k]
+
+[charaFace F 5]
+＠賢人グリム
+『資格はあるか』だとよ。[r]どうにも、この先には行かせたくないらしい。
+[k]
+
+＠賢人グリム
+どうする[%1]？[r]霧が晴れるまで待ってみるか？
+[k]
+
+？1：……この霧はたぶん、ずっと晴れない
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+[wt 1.2]
+
+？2：[line 3]資格はない。でも進む！
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0.1 1]
+[wt 1.2]
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+＠賢人グリム
+だそうだぜ、お歴々のダンナがた。[r]忠告はありがたいが無駄ってワケだ。
+[k]
+
+＠賢人グリム
+そもそも、魂は転生するもの。留まってどうする。[r]さっさと先に進んでもらうか！
+[k]
+
+
+
+
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_142 1.0]
+[wait fade]
+[soundStopAll]
+[end]

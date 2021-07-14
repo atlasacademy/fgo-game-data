@@ -1,0 +1,257 @@
+
+＄03-00-09-05-4-0
+
+
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098124500 1 ダ・ヴィンチ]
+[charaSet B 1098209600 1 オベロン]
+[charaSet C 1049000 1 千子村正]
+[charaSet D 1098209710 1 女王軍・騎士]
+
+[charaSet G 5045000 1 アルトリア]
+[charaSet N 98115000 1 エフェクト用]
+
+[scene 122400]
+
+[se ad646]
+[seVolume ad646 0 0]
+[seVolume ad646 1.0 1.0]
+
+[se ad995]
+[seVolume ad995 0 0]
+[seVolume ad995 1.0 0.4]
+
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+[scene 122401 1.0]
+[wt 2.0]
+[seStop ad646 1.0]
+[seStop ad995 1.0]
+
+[fadeout black 1.0]
+[wait fade]
+
+[scene 117401]
+
+[pictureFrame cut063_cinema]
+[wt 1.0]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_126 0.1]
+
+[charaTalk A]
+[charaFace A 22]
+[charaFadein A 0.1 0,-50]
+＠ダ・ヴィンチ
+見えた、ウェールズだ！[r]でも[line 3]森が燃えてる……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 0,-50]
+＠オベロン
+まだだ……！[r]みんな、きっとうまく隠れている！
+[k]
+
+＠オベロン
+二手に分かれよう！[r]敵を排除して、火を止める！
+[k]
+
+＠オベロン
+アルトリア、ダ・ヴィンチ、[r][%1]！　こっちだ、来てくれ！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 5]
+[charaFadein C 0.1 0,-50]
+＠千子村正
+[#儂:オレ]たちは逆側だな！[r]パーシヴァル、ガレス、行くぞ！
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgmStop BGM_EVENT_126 1.0]
+[wait fade]
+
+[charaFadeout C 0.1]
+
+[scene 118601]
+
+[charaDepth N 9]
+[charaPut N 1]
+[charaEffect N bit_talk_sparks_fs]
+
+[se ade24]
+[seVolume ade24 0 0]
+[se ad429]
+[seVolume ad429 0 0]
+
+[wt 1.0]
+
+[seVolume ade24 1.0 1.0]
+[seVolume ad429 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+[wt 1.0]
+
+[seVolume ade24 0.6 0.4]
+[seVolume ad429 0.6 0.4]
+
+[bgm BGM_EVENT_72 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+＠女王軍・騎士
+女王陛下の命令だ、火を使え！[r]不浄な『腐りの森』だ、すべて燃やせ！
+[k]
+
+＠女王軍・騎士
+妖精王を名乗る不届き者め……！[r]思い知るがいい！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[cueSe Servants_603100 bac554]
+[seVolume bac554 0 0.5]
+
+＠ウェールズの妖精
+[image npc_language_5:いたい。いたい。いたい。][r][image npc_language_5:ねえ　やめて　やめて。][seStop bac554 1.0]
+[k]
+
+＠ウェールズの妖精
+[image npc_language_5:森を燃やさないで。][r][image npc_language_5:オベロンの家を　こわさないで。]
+[k]
+
+[cueSe SE_21 21_ad1094]
+[seVolume 21_ad1094 0 0.3]
+＠ウェールズの妖精
+[image npc_language_5:みんなをいじめないで。][r][image npc_language_5:ボクたちをいじめないで。][seStop 21_ad1094 1.0]
+[k]
+
+＠ウェールズの妖精
+[image npc_language_5:いたいよ。いたいよ。いたいよ。][r][image npc_language_5:死んじゃうよ。死んじゃうよ。死んじゃう、よ][line 3]
+[k]
+
+[messageOff]
+[fadeout black 1.0]
+[bgm BGM_EVENT_72 1.0 0.4]
+[seVolume ade24 1.0 0.2]
+[seVolume ad429 1.0 0.2]
+[wait fade]
+
+
+[pictureFrame]
+[wt 0.5]
+
+[se ad769]
+[seVolume ade24 1.0 0.4]
+[seVolume ad429 1.0 0.4]
+[bgm BGM_EVENT_72 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+[seStop ad769 0.5]
+[wt 0.5]
+
+？1：……！
+？2：（……これは……もう……）
+
+？！
+[seStop ade24 1.0]
+[seStop ad429 1.0]
+
+[charaTalk G]
+[charaFace G 26]
+[charaFadein G 0.1 1]
+＠アルトリア
+[line 6]、あ。
+[k]
+
+＠アルトリア
+あ、ぁ[line 6]
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠女王軍・騎士
+いたぞ、妖精王だ！[r]捕らえよ、陛下の前まで連行してくれる！
+[k]
+
+＠女王軍・騎士
+……ん？[r]横にいるのは『予言の子』か？
+[k]
+
+＠女王軍・騎士
+いや、しかし……キャメロットで見た時は[r]あんな凶悪な魔力では[line 3]
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_72 1.0]
+[charaFadeout D 0.1]
+[wt 1.2]
+
+[bgm BGM_EVENT_24 0.1]
+
+[charaTalk G]
+[charaFace G 33]
+[charaFadein G 0.1 1]
+＠アルトリア
+あ[messageShake 0.05 4 4 0.6]ああああああああ！[r]おまえたち、おまえたちーーーーー！
+[k]
+
+[messageOff]
+[se ad7]
+[charaMove G -80,0 0.3]
+[charaFadeout G 0.3]
+[se ad443]
+[wt 0.5]
+[seStop ad443 0.5]
+[wt 0.5]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+＠オベロン
+アルトリア……！？[r][line 3]そうか、ティンタジェルの時の……！
+[k]
+
+＠オベロン
+[%1]、[r]アルトリアを追いかけろ！
+[k]
+
+＠オベロン
+今の彼女は我を忘れている！[r]下手をするとここで死ぬぞ！
+[k]
+
+？1：わかった、任せて！
+
+？！
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

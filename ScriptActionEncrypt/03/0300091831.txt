@@ -1,0 +1,455 @@
+
+＄03-00-09-18-3-1
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098211010 1 ガレス]
+[charaSet B 98084000 1 騎士Ａ]
+[charaSet C 98084000 1 騎士Ｂ]
+[charaSet D 1098211900 1 ロンディニウムの少年]
+[charaSet E 98115000 1 エフェクト用ダミー]
+[charaSet S 98115000 1 エフェクト用]
+
+[charaPut E 1]
+[charaEffect E bit_talk_sparks_fs]
+
+[charaPut S 2000,2500]
+[charaEffect S bit_sepia01_depth_fs]
+
+[charaDepth E 9]
+
+[scene 120702]
+
+[bgm BGM_MAP_74 0.1]
+
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.6 0,-15]
+[charaShake A 0.1 1 1 0.6]
+[charaMove A 0,0 0.6]
+[wt 0.6]
+[se ad984]
+[seVolume ad984 0 0.5]
+[wt 0.2]
+
+＠ガレス
+はぁ……はぁ……！[r]まだ、まだやるかぁ……！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadeinFSR B 0.1 2]
+[charaFadeinFSL C 0.1 0]
+＠騎士Ａ
+ええい、なんとしつこい！[r]不死身か、こいつ！
+[k]
+
+＠騎士Ｂ
+放っておけ！　どうせすぐに死ぬ！[r]もたもたしていると円卓軍が来るぞ！　撤退だ！
+[k]
+
+＠騎士Ａ
+チィ……気に食わん、気に食わん！
+[k]
+
+[messageOff]
+[se ad166]
+[wt 0.1]
+[seStop ad166 1.2]
+[charaFadeout B 0.4]
+[charaFadeout C 0.4]
+
+[charaSet A 1098211000 1 ガレス]
+
+[wt 1.8]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠ガレス
+は……はぁ、ぁ……[r]やった……やった……！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[charaMove A 0,-15 0.4]
+[charaFadeout A 0.4]
+[wt 0.3]
+
+[se ade273]
+[wt 0.4]
+[seStop ade273 0.3]
+[wt 1.2]
+
+＠ガレス
+……あとは、あとは……[r]パーシヴァルさんを、待って[line 3]
+[k]
+
+[messageOff]
+[se ad592]
+[seVolume ad592 0 0.5]
+[fadeout white 0.4]
+[wait fade]
+
+[pictureFrame cut063_cinema]
+[charaPut S 1]
+
+[charaTalk off]
+[charaDepth S 9]
+[charaDepth B 6]
+[charaDepth C 5]
+
+[charaFace B 0]
+[charaFace C 0]
+[charaFadeinFSR B 0.1 256,-50]
+[charaFadeinFSL C 0.1 -256,-50]
+[wt 0.6]
+
+[fadein white 0.4]
+[wait fade]
+[wt 0.2]
+
+＠騎士たちの話
+“[#油樽:あぶらたる]は仕掛けたな？[r][f small]  [f -]念入りに爆破する[line 3]”
+[k]
+
+[messageOff]
+[fadeout white 1.0]
+[wait fade]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+
+[charaPut S 2000,2500]
+[pictureFrame]
+[wt 0.6]
+
+[fadein white 1.0]
+[wait fade]
+[wt 0.4]
+
+[charaTalk on]
+＠ガレス
+はあ……はあ……よっと！
+[k]
+
+[messageOff]
+
+[se ad984]
+[seVolume ad984 0 0.5]
+[charaTalk A]
+[charaFace A 11]
+[charaFadein A 0.6 0,-20]
+[charaMove A 0,0 0.6]
+[charaShake A 0.1 1 1 0.6]
+[wt 0.4]
+[se bac170]
+[seVolume bac170 0 0.5]
+[wt 0.6]
+
+＠ガレス
+あともう、ひとふんばり……
+[k]
+
+＠ガレス
+わたしは、ロンディニウムの騎士、だもん。[r]みんなの居場所を、守らなくちゃ。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ade428]
+[charaMove A -50,0 0.6]
+[wt 0.4]
+[seStop ade428 0.1]
+[wt 1.2]
+
+[se ade428]
+[charaMove A -100,0 0.6]
+[wt 0.4]
+[seStop ade428 0.1]
+[wt 0.2]
+
+[wipeout leftToRight 1.0 1.0]
+[bgm BGM_MAP_74 1.0 0.4]
+[wait wipe]
+
+[charaFadeout A 0.1]
+[charaPut E 2000,2000]
+[charaEffectStop E bit_talk_sparks_fs]
+
+[scene 10000]
+[wt 0.1]
+
+[wipein rightToLeft 0.1 1.0]
+[wait wipe]
+
+[fadeout black 0.1]
+[wait fade]
+
+[scene 120801]
+
+[wt 1.0]
+
+[cueSe SE_21 21_ad1114]
+[seVolume 21_ad1114 0 0]
+[seVolume 21_ad1114 1.0 0.7]
+
+[bgm BGM_MAP_74 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+[wt 0.5]
+
+[seVolume 21_ad1114 3.0 0.3]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+＠ガレス
+はあ……はあ……げほっ、ごべっ……！[r]あ……はあ……あ……
+[k]
+
+[charaFace A 9]
+＠ガレス
+あ……ホントにあるじゃん……爆弾とか、[r]なに考えてるんだか、もう。
+[k]
+
+＠ガレス
+導火線って、これかな……いやでも、[r]火が来たらまずいから……
+[k]
+
+[messageOff]
+[charaFace A 5]
+[charaMove A 0,-10 0.6]
+[wt 1.0]
+[cueSe Servants_103800 bac1229]
+[wt 0.2]
+[charaMove A 0,0 0.6]
+[wt 0.8]
+
+[charaFace A 2]
+＠ガレス
+よっせい！
+[k]
+
+[messageOff]
+
+[se ad171]
+[charaMove A -60,0 0.1]
+[wt 0.3]
+
+[se ad75]
+[seVolume ad75 0 0.2]
+[wt 2.6]
+
+[charaFace A 16]
+[se ad609]
+[seVolume ad609 0 0.3]
+[shake 0.05 1 1 2.0]
+[wt 2.4]
+
+
+＠ガレス
+ひゃー。すっごい。あ、逃げてくアイツらに当たった。[r]やったね！
+[k]
+
+[seStop 21_ad1114 3.0]
+
+[charaFace A 4]
+＠ガレス
+あ、いたたた……[r]さすがに、もう、動けない、や。
+[k]
+
+＠ガレス
+でもここなら、あんぜん……[r]火の勢いも、そこまでじゃ、ないし……
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[bgm BGM_MAP_74 3.0 0.4]
+[cueSe SE_21 21_ad1109]
+[seVolume 21_ad1109 0 0.3]
+[wt 2.0]
+
+[charaFace A 16]
+＠ガレス
+あ……鐘が、鳴ってる……
+[k]
+
+[charaFace A 18]
+＠ガレス
+帰ってきたんだ！[r]やったね、アルトリアさん！
+[k]
+
+[charaFace A 11]
+＠ガレス
+良かった……。[r]あとは、あとは[line 3]そっか。
+[k]
+
+＠ガレス
+結局、予言通りになっちゃうんだ。[r]でも不思議。今回は悲しくないや。
+[k]
+
+＠ガレス
+負けないでね、アルトリア。[r]……それと……
+[k]
+
+＠ガレス
+みんな、ごめんね。[r]こんな立派な、鎧を、贈ってもらったのに。
+[k]
+
+
+[messageOff]
+
+[charaFadeout A 0.7]
+[wt 1.0]
+
+[bgm BGM_MAP_74 4.0 0.1]
+[fadeout black 2.0]
+[seStop 21_ad1114 2.0]
+[seStop 21_ad1109 2.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[charaSet F 1098211010 1 ガレス_うつむき]
+[scene 10000]
+[wt 2.0]
+
+[fadein black 0.1]
+[wait fade]
+
+＠ロンディニウムの少年
+なに謝ってんだよ。[r]オレたち、みんな感謝してるのにさ。
+[k]
+
+[messageOff]
+[fadeout black 0.1]
+[wait fade]
+
+[wipeFilter openEye 0.6 0.2]
+
+[charaPut D 1]
+[charaTalk D]
+[charaFace D 0]
+[charaFadeTime D 0.1 0.5]
+
+[blur lens 0.1 2 10]
+[scene 120801]
+[wt 0.5]
+
+[fadein black 2.0]
+[wait fade]
+
+[wt 1.0]
+
+[fadeout black 0.6]
+[wait fade]
+
+[blurOff lens 0.1]
+[charaFadeout D 0.1]
+[wipeOff]
+[wt 0.1]
+
+[scene 10000]
+
+[fadein black 0.1]
+[wait fade]
+
+[wipeout openEye 0.1 0.5]
+[wait wipe]
+
+[scene 120801]
+
+[charaFadeTime D 0.1 0.5]
+[wt 0.1]
+
+[charaFadeTime D 2.5 1.0]
+[wipein openEye 1.5 0.5]
+[wait wipe]
+[wt 2.0]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_MAP_74 2.0 1.0]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.1 1]
+＠ガレス
+[line 3]。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_MAP_74 1.0 1.0]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+＠ロンディニウムの少年
+へへ。最後まで助けてくれて、ありがとうな！[r]すごかったぜ、ガレス姉ちゃん！
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+[wt 1.0]
+
+[charaFaceFade A 12 0.3]
+[wt 1.2]
+＠ガレス
+でしょ？　悪いヤツには負けないぞ！[r]なんてったって、わたし、円卓の騎士だから！
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaTalk depthOn]
+[charaDepth A 1]
+[charaDepth F 2]
+
+[charaPut A 1]
+[wt 0.5]
+[charaMove A 0,-4 0.8]
+[wt 0.5]
+[charaFaceFade A 11 0.3]
+[wt 0.5]
+[charaMove A 0,-40 0.4]
+[charaFadeout A 0.4]
+[wt 0.4]
+[cueSe SE_21 21_ad1074]
+[wt 0.2]
+[cueSe SE_21 21_ad1119]
+[wt 0.3]
+[seStop 21_ad1119 0.3]
+[wt 1.5]
+
+
+
+[fadeout black 2.0]
+[bgmStop BGM_MAP_74 2.0]
+[seStop ade24 2.0]
+[seStop ad429 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

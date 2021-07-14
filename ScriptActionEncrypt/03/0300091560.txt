@@ -1,0 +1,228 @@
+
+＄03-00-09-15-6-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1049000 1 村正]
+[charaSet B 1098124500 1 ダ・ヴィンチ]
+[charaSet C 5045001 1 アルトリア]
+[charaSet D 1098216200 1 ハベトロット]
+[charaSet E 1098209500 1 白い狼]
+[charaSet F 5021000 1 賢人グリム]
+
+[charaSet G 98006200 1 雑魚エネミー煙状]
+[charaSet H 98006200 1 雑魚エネミー煙状]
+
+[imageSet J back10000 1 1]
+[charaScale J 1.05]
+
+[imageSet K back10000 1 1]
+[charaFilter K silhouette 72777DFF]
+[charaScale K 1.01]
+
+[sceneSet L 129400 1]
+[charaScale L 1.4]
+
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+
+[charaPut S 1]
+[charaEffect S bit_talk_fog_side]
+
+
+[scene 10001]
+
+[charaFadein K 0.1 0,-200]
+[wt 0.1]
+
+[fadein black 1.5]
+[wait fade]
+[wt 0.3]
+
+[charaEffectStop S bit_talk_fog_side]
+[wt 0.1]
+
+[se ad951]
+[se ade283]
+[seVolume ade283 0 0.4]
+[wt 1.8]
+
+[fadeout white 0.8]
+[wait fade]
+
+[effect bit_talk_snow]
+[wt 2.0]
+
+[seStop ad951 3.0]
+[fadein white 3.0]
+[wait fade]
+[wt 1.0]
+
+[effectStop bit_talk_snow]
+[wt 0.5]
+
+[scene 120001 2.0]
+[charaFadeout K 2.0]
+[wt 2.5]
+
+
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠ダ・ヴィンチ
+屋上に出た……！[r]確かに[#鐘撞:かねつ]き堂がある！　それに[line 3]
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_142 1.5]
+
+[charaFadein L 1.5 0,-150]
+[charaMove L 0,-380 7.0]
+[wt 3.0]
+[scene 129400]
+[wt 2.0]
+[charaFadeout L 2.0]
+
+[wt 3.0]
+
+？1：マシュ！
+？2：あれは……氷で封印されている……？
+
+？！
+
+[scene 120001 1.5]
+[wt 1.9]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+
+＠ハベトロット
+[line 6]。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 0]
+[charaFadein F 0.1 1]
+＠賢人グリム
+ああ。妖精暦400年から今まで。[r]2400年間、ここにあった『棺』だ。
+[k]
+
+？1：2400年間！？　いったいどうして！？
+
+？！
+
+＠賢人グリム
+それはお嬢ちゃん本人に聞きな。[r]オレにもそのあたりの事情は伝わっていねえ。
+[k]
+
+＠賢人グリム
+初代グリムが残した[#情報:メ　モ]によると、[r]マスターが触れれば『棺』の魔術は解ける。
+[k]
+
+＠賢人グリム
+おまえさんがここに着いた時点で[r]お嬢ちゃんとの合流は完了だ。
+[k]
+
+[bgmStop BGM_EVENT_142 1.0]
+
+＠賢人グリム
+だが[line 3]
+[k]
+
+[messageOff]
+[charaFadeout F 0.1]
+[wt 0.6]
+
+[charaTalk off]
+[charaDepth S 4]
+[charaDepth T 5]
+[charaDepth G 6]
+[charaDepth H 7]
+
+[cueSe SE_21 21_ade582]
+[seVolume 21_ade582 0 0.5]
+[charaFadeinFSR G 1.0 2]
+[charaFadeinFSL H 1.0 0]
+[wt 1.0]
+
+[se ad951]
+[seVolume ad951 0 0]
+[seVolume ad951 1.0 1.0]
+[wt 1.6]
+
+[charaFadeout G 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaPutFSR S 2000,2500]
+[charaPutFSL T 2000,2500]
+[charaEffectStop S bit_talk_06b]
+[charaEffectStop T bit_talk_06b]
+
+[charaTalk on]
+
+[charaTalk F]
+[charaFace F 5]
+[charaFadein F 0.1 1]
+＠賢人グリム
+あと一つ、障害があるようだ。[r]アレを何とかしねえと『棺』にも鐘にも近寄れない。
+[k]
+
+＠賢人グリム
+本気でいけよ、アルトリア。[r]おまえさんじゃないと、どうにもならない相手だ。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 24]
+[charaFadein C 0.1 1]
+＠アルトリア
+[line 6]。
+[k]
+
+[charaFace C 25]
+＠アルトリア
+……いいんですね、ハベトロット。[r]あなたの名前を呼んでいますが。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 1]
+＠ハベトロット
+ただの聞き間違いだ。[r]やっつけてくれ、アルトリア。
+[k]
+
+[seStop ad951 3.0]
+
+＠ハベトロット
+ここはオークニーの聖域。[r][#心穏:こころおだ]やかな妖精たちが愛したテラスだ。
+[k]
+
+＠ハベトロット
+いつまでも亡霊が居座っていい場所じゃない。[r][#昔々:むかしむかし]、はもう終わりだ。
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+[soundStopAll]
+[end]

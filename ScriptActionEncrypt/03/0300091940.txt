@@ -1,0 +1,991 @@
+
+＄03-00-09-19-4-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1049000 1 千子村正]
+[charaSet B 1098124500 1 ダ・ヴィンチ]
+[charaSet C 5045001 1 アルトリア]
+[charaSet D 1098209610 1 オベロン]
+
+[se ade24]
+[seVolume ade24 0 0]
+[seVolume ade24 1.0 0.7]
+[scene 120601]
+[fadein black 1.0]
+[wait fade]
+
+[wt 0.7]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth B 2]
+[charaFace A 7]
+[charaFadeinFSL A 0.1 0]
+[charaFace B 0]
+[charaFadeinFSR B 0.1 2]
+[wt 1.5]
+
+[seStop ade24 1.0]
+
+
+？1：ふたりだけ？
+？2：アルトリアは？
+
+？！
+
+[charaTalk on]
+
+[bgm BGM_EVENT_77 0.1]
+
+[charaFace A 7]
+
+＠千子村正
+アルトリアならさっきまでいたんだがな。[r]夜風にあたってくる、って野営地の外に行ったぜ。
+[k]
+
+[charaFace B 12]
+
+＠ダ・ヴィンチ
+敵陣の前だし、ひとりで行動するのは軽率だけどね。[r]今のアルトリアなら妖精騎士に襲われても問題ないさ。
+[k]
+
+[charaFace B 14]
+
+＠ダ・ヴィンチ
+とはいえ、なぜ外に行ったのかは問題だね。[r]大所帯になったから気疲れしているのかな。
+[k]
+
+[charaFace A 0]
+
+＠千子村正
+……まあ、なんだ。[r]あいつは人混みが苦手なんだろ。
+[k]
+
+＠千子村正
+というより、妖精が苦手なんだよ。[r]人間もあまり得意そうじゃねえけどな。
+[k]
+
+
+[input selectBranch]
+[seStop ade24 0.1]
+
+
+[charaSet A 1049000 1 千子村正]
+[charaSet B 1098124500 1 ダ・ヴィンチ]
+[charaSet C 5045001 1 アルトリア]
+[charaSet D 1098209610 1 オベロン]
+
+
+[scene 120601]
+
+[charaTalk depthOff]
+[charaDepth A 1]
+[charaDepth B 2]
+[charaTalk A]
+[charaFace A 0]
+[charaFace B 14]
+[charaFadeinFSL A 0.1 0]
+[charaFadeinFSR B 0.1 2]
+
+[bgm BGM_EVENT_77 0.1]
+
+[messageOff]
+[maskin black 1.0]
+[wait mask]
+[label selectBranch]
+
+
+？1,1050,saveMaterial：そうかなー？
+
+[flag SEL01 true]
+
+？2,2050,saveMaterial：……アルトリアには、他人の嘘が見えるから？
+
+[flag SEL01 false]
+
+？！
+
+[branch _sel01a SEL01]
+[branch _sel01b]
+
+[label _sel01a]
+
+[charaFace B 23]
+
+＠ダ・ヴィンチ
+村正には彼女はそう見えるのかい？[r]確かにちょっと苦手そうだけど、
+[k]
+
+[charaFace B 26]
+
+＠ダ・ヴィンチ
+自分よりまわりの意見を尊重しがちなだけさ。[r]傲慢になるよりずっといい。
+[k]
+
+[charaFace B 15]
+
+＠ダ・ヴィンチ
+だってここだけの話、今のアルトリア、[r]本気でヤバいよ？　異聞帯の王レベルだよ？
+[k]
+
+＠ダ・ヴィンチ
+とつぜん[#癇癪:かんしゃく]おこして属性・悪になったら、[r]私たち、全員倒されちゃうからね？
+[k]
+
+[charaFace B 16]
+
+＠ダ・ヴィンチ
+そんな事態になったら村正をイケニエにして[r]私たちは逃げるから、よろしくね！
+[k]
+
+[charaFace A 13]
+
+＠千子村正
+そん時ゃ一緒にあの世行きだよ。[r]三途の川で助けてやらねえからな？
+[k]
+
+[branch _sel01c]
+
+[label _sel01b]
+
+[charaFace B 23]
+[bgmStop BGM_EVENT_77 1.0]
+
+＠ダ・ヴィンチ
+[FFFFFF]？[-]　他人の嘘が見える？[r]アルトリアが？
+[k]
+
+[bgm BGM_EVENT_70 0.1]
+[charaFace A 11]
+
+＠千子村正
+…………妖精眼、ってヤツだろうな。
+[k]
+
+[charaFace A 0]
+
+＠千子村正
+“本来、妖精に嘘は通じない。[r][f small]  [f -]感情が実際に見えていたから”
+[k]
+
+＠千子村正
+ムリアンはそう言っていた。[r]あいつ自身も少しは[#妖精眼:ち　か　ら]が残っているようだがな。
+[k]
+
+[charaFace B 32]
+
+＠ダ・ヴィンチ
+待ってくれ。[r]人間社会の模倣をするようになってから、
+[k]
+
+＠ダ・ヴィンチ
+ブリテンの妖精に妖精眼の神秘は[r]もうないってオベロンが[line 3]
+[k]
+
+[charaFace B 22]
+
+＠ダ・ヴィンチ
+そっか、アルトリアはブリテンの妖精じゃない！[r]アヴァロンから来た妖精だ。だから[line 3]
+[k]
+
+[charaFace A 0]
+
+＠千子村正
+嘘が見える。他人の本音が分かる。[r]いや、もっと本質的なものが見えているのかもだ。
+[k]
+
+[charaFace A 9]
+
+＠千子村正
+悪性。因果。宿業。生涯かけてそういったモンに[r]固執した[#村正:オ　レ]が言うのもなんだが……
+[k]
+
+＠千子村正
+もし業が見えてしまう者がいるなら、[r]それは[#酷:ひど]い、いや[#惨:むご]い話だ。
+[k]
+
+[charaFace A 15]
+
+＠千子村正
+汎人類史において妖精が姿を消した理由は[r]文明の発展もあるだろうが……
+[k]
+
+＠千子村正
+実際は『人間の悪意』ってヤツが、[r]見るに堪えなくなったからじゃねえのか。
+[k]
+
+[charaFace A 0]
+
+＠千子村正
+言葉を発明して、学問を開いて、知識を分け与える。[r]知識は特権階級から下層まで広がっていく。
+[k]
+
+＠千子村正
+そうして人間は賢くなった。[r]同時に他人を[#騙:だま]す話術……[#詐称:さしょう]、本音と[#建前:たてまえ]ができた。
+[k]
+
+＠千子村正
+妖精たちには[#それ]が耐えられなかった。[r]だから人間と関わる事はなくなっていった。
+[k]
+
+[charaFace A 11]
+
+＠千子村正
+そして、この異聞帯じゃあ妖精も[r]人間と同じように『本音と建前』を持っている。
+[k]
+
+＠千子村正
+嘘を見せつけられ、[r]それを醜いものと感じたのはふたりだけ。
+[k]
+
+＠千子村正
+アルトリアとモルガンだけが、[r][#汎人類史:オ　レ　た　ち]の言う『妖精』だったんだよ。
+[k]
+
+[charaFace B 14]
+
+＠ダ・ヴィンチ
+…………そうか。[r]嘘を見抜くのと、嘘が見えるのは別の話だったね。
+[k]
+
+＠ダ・ヴィンチ
+私たちは嘘だと分かっていても[#騙:だま]されたい時がある。[r]“それで話が円滑に進むのなら”と目をつむれる。
+[k]
+
+＠ダ・ヴィンチ
+でも妖精眼を持つ者はそれができない。[r][#目をつむれない]。その嘘と、本音と向き合うしかない。
+[k]
+
+？1：誠実な人とだけ付き合えば……
+？2：嘘を禁止にすれば……
+
+？！
+
+[charaFace B 25]
+
+＠ダ・ヴィンチ
+それでも解決はしないよ。[r]どんな正直者であれ、発言と思考には差異が生じる。
+[k]
+
+＠ダ・ヴィンチ
+相手を[#貶:おとし]めるために嘘をつくのはまだいい。[r]分かっているから対処のしようがある。
+[k]
+
+＠ダ・ヴィンチ
+でも見えている者にとって、[r]一番辛いのは『相手を気遣って嘘をつく』場合だ。
+[k]
+
+＠ダ・ヴィンチ
+善意で動いているとしても、それは詐称だ。
+[k]
+
+＠ダ・ヴィンチ
+『思いやり』『気遣い』ですら、[r]妖精眼には[#濁:にご]ったものに見えてしまうとしたら……
+[k]
+
+＠ダ・ヴィンチ
+『楽園の妖精』にとって、[r]今のブリテンは人間社会と変わらない。
+[k]
+
+＠ダ・ヴィンチ
+そんなブリテンを、『楽園の妖精』は[r]救いたいと考えるだろうか……？
+[k]
+
+[charaFace A 16]
+
+＠千子村正
+そりゃ考えるさ。[r]そのあたり、あのお嬢ちゃんは筋金入りだ。
+[k]
+
+＠千子村正
+今まで逃げていないのが何よりの証拠だ。[r]なんだってそこまで頑固なのかは知らねえが[line 3]
+[k]
+
+[charaFace A 19]
+
+＠千子村正
+ありゃあ最後まで曲がらねえ鋼だぜ！[r]なんだかんだ言って、[#手前:てめえ]の信念に生きるヤツな！
+[k]
+
+[branch _sel01c]
+
+[label _sel01c]
+
+[messageOff]
+[bgmStop BGM_EVENT_77 1.0]
+[bgmStop BGM_EVENT_70 1.0]
+[fadeout black 1.0]
+[wait fade]
+[charaFadeout A 0.1]
+[charaFadeout B 0.1]
+
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+[bgm BGM_EVENT_25 0.1]
+
+＠千子村正
+しかし人生分からねえもんだ。[r]いや、サーヴァント生、か？
+[k]
+
+[charaFace A 9]
+
+＠千子村正
+命の値段分だけ働いたら、さっさと『異星の神』の[r]ところに戻るつもりだったが……
+[k]
+
+[charaFace A 11]
+
+＠千子村正
+思いのほか、長くなっちまった。
+[k]
+
+＠千子村正
+あれよあれよと話が進んで、[r]気がつけば城攻めまであと半日ときた。
+[k]
+
+[charaFace A 1]
+
+＠千子村正
+しかもカルデアのマスターと一緒にな。[r]こんな縁もあるのかねぇ。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 12]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+確かに。言われてみればすごい状況だ。
+[k]
+
+＠ダ・ヴィンチ
+報告書には書いているけど、[r]ゴルドルフ新所長は頭を抱えてるだろうね。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 1]
+[charaFadein A 0.1 1]
+[wt 0.7]
+
+？1：いっそ仲間になれば？
+
+？！
+
+[charaFace A 18]
+[wt 1.0]
+
+[charaFace A 19]
+
+＠千子村正
+ああ、そいつも悪かねぇな！
+[k]
+
+？1：できるの！？
+
+？！
+
+[charaFace A 16]
+
+＠千子村正
+できるとも。『異星の神』はサーヴァントを[r][#喚:よ]んで、役割を与えただけだ。
+[k]
+
+＠千子村正
+“もっとも強い者が目をかけているんだから、[r][f small]  [f -]離反する道理がない。よって裏切らない”ってな。
+[k]
+
+[charaFace A 15]
+
+＠千子村正
+仕事の向き不向き、好き嫌い……そういうの？[r]人間の機微が分からないんだよ。
+[k]
+
+＠千子村正
+損得だけで物事を運んでやがる。[r]……今は違うかもしれねえが。
+[k]
+
+[charaFace A 19]
+
+＠千子村正
+だがまあ、その話は他の[#村正:オ　レ]に譲っとこう。[r]そっちの縁はなかった、ってヤツだ。
+[k]
+
+？1：残念……
+
+？！
+
+[charaFace A 20]
+
+＠千子村正
+ああ。おまえさんも、今の感じを大切にな。[r]嘘も気負いもない、いい言葉だった。
+[k]
+
+＠千子村正
+アルトリアがここまで旅を続けられたのは、[r]おまえさんのそういうところがあったからだよ。
+[k]
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_EVENT_25 1.5]
+[fadeout black 1.5]
+[wait fade]
+[charaTalk depthOn]
+[charaFadeout A 0.1]
+[pictureFrame cut063_cinema]
+
+[scene 65501]
+[wt 1.5]
+[fadein black 1.5]
+[wait fade]
+
+[bgm BGM_EVENT_92 0.1]
+
+[charaTalk C]
+[charaFace C 30]
+[charaFadein C 0.1 0,-50]
+
+＠アルトリア
+あ～～～、つっかれたぁ…………
+[k]
+
+＠アルトリア
+兵士のひとりひとりにまで指令書[r]作るんだもんなあ、ノクナレア。
+[k]
+
+＠アルトリア
+ああいうのって部隊長に任せるものなのにね。
+[k]
+
+＠アルトリア
+北の妖精って難しいこと考えないから、[r]頭脳労働はできるヤツに集中しちゃうのかぁ。
+[k]
+
+[charaFace C 6]
+
+＠アルトリア
+でも、そのぶん素直で、色が統一されてる。[r]ノクナレアへの忠誠心でいっぱい。
+[k]
+
+＠アルトリア
+円卓軍の人たちも持ち直したし、[r]これなら明日の戦いも、
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 0,-50]
+
+＠オベロン
+無事、予言通りにコトが運ぶ。[r]なんの犠牲もなくモルガンは倒されるとも。
+[k]
+
+＠オベロン
+『巡礼の旅』はうまくいった。[r]旅の仲間からも脱落者はでなかった。
+[k]
+
+＠オベロン
+それと同じように反乱軍の仕上がりも万全だ。[r]女王軍のように隠し事をする者はひとりもいない。
+[k]
+
+＠オベロン
+これならめでたし、めでたし、で終わる筈さ。[r]そうだろう、アルトリア？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_92 1.0]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠アルトリア
+……。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_MAP_75 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+
+＠オベロン
+……ガレスの事を気にしているんだね。[r]彼女の結末は、予言に記されていた。
+[k]
+
+＠オベロン
+“丸い砦はもえつきる。水の鐘はあらわれる”
+[k]
+
+＠オベロン
+君のせいでもないし、脱落した訳でもない。[r]なるべくしてなった運命だよ、あれは。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth C 1]
+[charaDepth D 2]
+
+[charaTalk C]
+[charaFace D 4]
+[charaFadeinFSL D 0.1 -256,-50]
+[charaFace C 4]
+[charaFadeinFSR C 0.1 256,-50]
+
+＠アルトリア
+………………本当に、そう思ってる？
+[k]
+
+[charaFace D 1]
+
+＠オベロン
+もちろん。[r]そうでもなければガレスは浮かばれない。
+[k]
+
+[charaFace C 25]
+
+＠アルトリア
+ガレスのことじゃない。[r]いま、“なんの犠牲もなく”って言ったけど。
+[k]
+
+＠アルトリア
+……[#反乱軍:わたしたち]の勝ち目は薄い。[r]円卓軍のみんな、とくに人間は戦死する。
+[k]
+
+＠アルトリア
+そう思っているのに、[r]“犠牲はない”って、わたしを安心させている。
+[k]
+
+[messageOff]
+
+[charaTalk D]
+[charaFace D 0]
+[wt 1.0]
+
+[charaFace C 25]
+
+＠アルトリア
+それに……“女王軍のように”って。
+[k]
+
+＠アルトリア
+オベロン、本当はノクナレアと[r]ずっと前から顔見知りでしょ。
+[k]
+
+＠アルトリア
+謁見の帰り、ノクナレアに捕まった時に[r]初対面のフリしていたけど。
+[k]
+
+[charaFace D 3]
+
+＠オベロン
+うんまあ、実はね。
+[k]
+
+＠オベロン
+ノクナレアと交友関係があったと知ったら、[r]君、僕を信用しなかっただろ？
+[k]
+
+[charaFace C 27]
+
+＠アルトリア
+それだけじゃないよ。
+[k]
+
+＠アルトリア
+ノリッジで、はじめてマシュを見た時。
+[k]
+
+[messageOff]
+[bgm BGM_MAP_75 1.0 0.4]
+[wipeout circleIn 1.0 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[charaSet C 5045000 1 アルトリア]
+[charaSet D 1098209600 1 オベロン]
+[effect bit_sepia01_depth_fs]
+[scene 119702]
+[wt 1.0]
+[wipein circleIn 1.0 1]
+[wait wipe]
+
+＠[%1]
+あれは、マシュだ[line 3]！
+[k]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,-50]
+
+＠オベロン
+なんだってーー！？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 0,-50]
+
+＠アルトリア
+[line 6]。
+[k]
+
+[messageOff]
+[wipeout circleIn 1.0 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaSet C 5045001 1 アルトリア]
+[charaSet D 1098209610 1 オベロン]
+[charaTalk C]
+[charaFace C 25]
+[charaFadein C 0.1 0,-50]
+[effectDestroy bit_sepia01_depth_fs]
+[scene 65501]
+[wt 1.0]
+[bgm BGM_MAP_75 1.0 1.0]
+[wipein circleIn 1.0 1]
+[wait wipe]
+
+＠アルトリア
+あなたはマシュを知っていた。[r]知っていて、初めて見るフリをした。
+[k]
+
+＠アルトリア
+シェフィールドにマシュがいた事を[r]知っていたのに、あなたは黙っていた。
+[k]
+
+＠アルトリア
+[%1]が知ったらシェフィールドに[r]行ってしまうから、そうならないように隠していた。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 0,-50]
+
+＠オベロン
+うんまあ、実はね。
+[k]
+
+＠オベロン
+[%1]には[r]カルデアの使命からではなく、
+[k]
+
+＠オベロン
+あくまで自分の意思で、[r]『予言の子』に協力してほしかったんだ。
+[k]
+
+[charaFace D 4]
+
+＠オベロン
+不誠実だったのは認めるよ。
+[k]
+
+＠オベロン
+マシュが強力な妖精騎士であるのを考慮しても、[r]ひとりで北部にいるのは危険だからね。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠アルトリア
+それと……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠オベロン
+それと？
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[bgm BGM_MAP_75 1.0 0.4]
+[wipeout circleIn 1.0 1]
+[wait wipe]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaSet C 5045000 1 アルトリア]
+[charaSet D 1098209600 1 オベロン]
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 0,-50]
+[effect bit_sepia01_depth_fs]
+[scene 117500]
+[wt 1.0]
+[wipein circleIn 1.0 1]
+[wait wipe]
+
+＠オベロン
+僕が必要以上にブリテンに肩入れしているのは、[r]彼らがいたからでもある。
+[k]
+
+＠オベロン
+価値がないから何もできない、なんてとんでもない。[r]無力なものたちだけが、僕を祝福してくれた。
+[k]
+
+[charaFace D 10]
+
+＠オベロン
+なら、受けた恩は返さないとね☆[r]モルガン打倒に精を出すのは、そういう事なんだ。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0.1 0,-50]
+[wt 1.0]
+
+[messageOff]
+[wipeout circleIn 1.0 1]
+[wait wipe]
+[charaFadeout C 0.1]
+[wt 0.1]
+[charaSet C 5045001 1 アルトリア]
+[charaSet D 1098209610 1 オベロン]
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+[effectDestroy bit_sepia01_depth_fs]
+[scene 65501]
+[wt 1.0]
+[bgm BGM_MAP_75 1.0 1.0]
+[wipein circleIn 1.0 1]
+[wait wipe]
+
+[wt 1.2]
+
+＠アルトリア
+……それと、ウッドワス軍との戦いの朝、[r]どこかに行っていたでしょ。
+[k]
+
+＠アルトリア
+あの時、女王軍の援軍がなかったから[r]わたしたちは勝てたけど……
+[k]
+
+[charaFace C 0]
+
+＠アルトリア
+あれも、あなたが[#何か]をした結果だった。[r]あなたは[line 3]
+[k]
+
+＠アルトリア
+あなたは正直で誠実だけど、本当の事を口にしない。[r]大事なことは誰にも話さない。
+[k]
+
+＠アルトリア
+それはどうして？[r]どうして何度も嘘をついたの？
+[k]
+
+＠アルトリア
+あなたはもしかして[line 3][r]本当は、モルガンを倒したくないんじゃない？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠オベロン
+[line 6]。
+[k]
+
+[charaFace D 1]
+
+＠オベロン
+そんなことはないさ。僕ほどモルガン打倒に[r]力を尽くしてきた妖精は他にはいない。
+[k]
+
+＠オベロン
+僕は[#全身全霊:ぜんしんぜんれい]で妖精國を打倒する。[r]そのためなら嘘もつく。だいたい[line 3]
+[k]
+
+[bgmStop BGM_MAP_75 1.0]
+[charaFace D 0]
+
+＠オベロン
+嘘つきなのはキミも同じだろ、アルトリア。
+[k]
+
+[messageOff]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0.1 0,-50]
+[wt 1.6]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_95 0.1]
+
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.1 0,-50]
+
+＠オベロン
+君がここまでやってきた理由。[r]ブリテンを救う、という動機の話だ。
+[k]
+
+＠オベロン
+僕だけじゃない。[%1]だって[r]薄々わかっているさ。
+[k]
+
+＠オベロン
+君は人間のためにとか、妖精のためにとか、[r]そんな理由で戦ったことは一度もない。
+[k]
+
+＠オベロン
+本心は別のところにある。[r]ただ、それを口にしないだけで。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 0,-50]
+
+＠アルトリア
+……なにを、バカなことを。
+[k]
+
+＠アルトリア
+わたしはブリテンを救うために遣わされた、[r]『楽園の妖精』で、
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+
+＠オベロン
+それが君の後ろめたさだ。[r]そもそも“救い”とは何を指しているのか。
+[k]
+
+＠オベロン
+村正が言っていたよ。
+[k]
+
+＠オベロン
+“妖精はみな許しを求めている”[r]“誰も彼も、滅びたがっている”
+[k]
+
+＠オベロン
+どの街にいっても、どんな妖精であっても、[r]心の底にある願いは同じだったって。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 18]
+[charaFadein C 0.1 0,-50]
+
+＠アルトリア
+村正さんがそんな事を……？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 4]
+[charaFadein D 0.1 0,-50]
+
+＠オベロン
+彼には僕らのように妖精眼はないけどね。[r]心の痛みに敏感なのさ、きっと。
+[k]
+
+[charaFace D 0]
+
+＠オベロン
+アルトリア。[r]君の迷いはここに起因するものなんだろ。
+[k]
+
+＠オベロン
+君は決定的な事実を口にしない。[r]それは口にしても仕方がない事だからだ。
+[k]
+
+[charaFace D 1]
+
+＠オベロン
+僕も同じだよ。やりたくもない事でも、[r]モルガンを倒すために必要ならやるしかない。
+[k]
+
+＠オベロン
+今はそれで済ませておこう。[r]明日の戦いで最後なんだから。
+[k]
+
+＠オベロン
+隠していた事、[r]大事なことを打ち明けられる時は、きっとくる。
+[k]
+
+＠オベロン
+そのための『巡礼の旅』だっただろう？
+[k]
+
+＠オベロン
+なに。打ち明けてみれば、[r]案外みんな笑って流してくれるかも、さ。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_95 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

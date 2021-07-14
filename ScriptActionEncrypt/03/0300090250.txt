@@ -1,0 +1,750 @@
+
+＄03-00-09-02-5-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 5045000 1 アルトリア]
+[charaSet B 1098124500 1 ダ・ヴィンチ]
+[charaSet C 4031001 1 レッドラ・ビット]
+[charaSet D 1098209600 1 オベロン]
+[charaSet E 3039000 1 ガレス]
+[charaSet F 3047001 1 パーシヴァル]
+[charaSet G 98016000 1 人間の兵士]
+
+[charaSet H 98021100 1 中年女性]
+[charaSet I 98016000 1 訓練中の兵士]
+[charaSet J 98016000 1 訓練中の兵士2]
+[charaSet K 1098211900 1 鍛冶手伝いの少年]
+[charaSet L 1049000 1 千子村正]
+[charaSet M 1098216200 1 ハベトロット]
+[charaSet N 98016000 1 駆けつけてきた兵士]
+[charaSet O 1098211300 1 ロンディニウムの住人]
+
+[sceneSet P 10000 1]
+[charaScale P 1.01]
+
+[charaSet Q 1098209300 1 妖精の兵士2]
+
+[sceneSet R 120900 1]
+[charaScale R 1.01]
+
+[scene 118100]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk depthOff]
+[charaDepth A 2]
+[charaDepth P 1]
+[charaTalk A]
+[charaFace A 27]
+[charaFadein A 0.1 1]
+[charaPut P 1]
+[charaFadeTime P 0.2 0.5]
+
+[bgm BGM_EVENT_70 0.1]
+
+＠アルトリア
+（ガレスちゃん、遅いなあ……[r]　余計な心配かな……でも気になるな……）
+[k]
+
+[charaFadeout P 0.2]
+[charaFace A 7]
+
+＠アルトリア
+すみません、わたしも水[#汲:く]みに行ってきます。[r]丘を越えるのはその後で。
+[k]
+
+？1：それなら一緒に……おや？
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+[charaTalk depthOn]
+
+[bgmStop BGM_EVENT_70 1.5]
+
+[charaTalk B]
+[charaFace B 23]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+ぴょんぴょん飛び跳ねながらガレスが戻ってきたね？[r]両手もぶんぶん振ってる。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠レッドラ・ビット
+となりに長身の人影があります。[r]中々の美丈夫のようですが……
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 1]
+
+＠オベロン
+！　あの、やたらゴツいブレストアーマーは！
+[k]
+
+[messageOff]
+[wipeout rectangleStripLeftToRight 0.7 1]
+[wait wipe]
+
+[charaFadeout D 0.1]
+[pictureFrame cut063_cinema]
+[wt 0.5]
+
+[wipein rectangleStripRightToLeft 0.7 1]
+[wait wipe]
+
+[bgm BGM_EVENT_94 0.1]
+
+[charaTalk E]
+[charaFace E 18]
+[charaFadein E 0.1 0,-50]
+
+＠ガレス
+おーい、おーーい！[r]みんなーーー、聞いて聞いてーーー！
+[k]
+
+＠ガレス
+パーシヴァル、パーシヴァル！
+[k]
+
+＠ガレス
+人類最強、円卓軍のリーダー！[r]パーシヴァルくんだよーーーーー！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 0,-50]
+
+＠パーシヴァル
+………………。
+[k]
+
+[messageOff]
+[wt 1.0]
+[fadeout black 1.0]
+[bgm BGM_EVENT_94 1.0 0.4]
+[wait fade]
+
+[charaFadeout F 0.1]
+[pictureFrame]
+[wt 1.0]
+
+
+[fadein black 1.0]
+[bgm BGM_EVENT_94 1.0 1.0]
+[wait fade]
+
+[charaTalk depthOff]
+[charaDepth F 2]
+[charaDepth C 1]
+
+[charaTalk F]
+[charaFace F 11]
+[charaFadein F 0.1 1]
+
+[charaFace C 2]
+[charaFadein C 0.2 -200,0]
+
+＠パーシヴァル
+すみません。[charaMoveReturn C -200,10 0.2][r]なんというか、ぶしつけなご挨拶になってしまって。[charaMoveReturn C -200,10 0.2]
+[k]
+
+[charaFadeout C 0.2]
+[charaFace F 7]
+
+＠パーシヴァル
+お会いできて光栄です、『予言の子』。[r]そして『異邦の魔術師』殿。
+[k]
+
+[charaFace F 0]
+[charaFace C 2]
+[charaFadein C 0.2 300,0]
+
+＠パーシヴァル
+私はパーシヴァル。[charaMoveReturn C 300,10 0.2][r]代理として、円卓軍のまとめ役を務めています。[charaMoveReturn C 300,10 0.2]
+[k]
+
+[charaFadeout C 0.2]
+
+＠パーシヴァル
+騎士の姿をしてはいますが、[r]礼節を学んだ身ではありません。
+[k]
+
+[charaFace C 2]
+[charaFadein C 0.2 -200,0]
+
+＠パーシヴァル
+田舎者ゆえの無作法をお見せするでしょうが、[charaMoveReturn C -200,10 0.2][r]なにとぞ、よろしくお願いします。[charaMoveReturn C -200,10 0.2]
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 36]
+[charaFadein A 0.1 1]
+[wt 1.2]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+？1：こちらこそ、よろしくお願いします！
+
+[bgmStop BGM_EVENT_94 1.0]
+[charaTalk F]
+[charaFace F 7]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+はい。元気いっぱいで何よりです。
+[k]
+
+？2：ところで、なんでレッドラはそんなに荒ぶってるの？
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+
+＠レッドラ・ビット
+何故も何も！[r]パーシヴァルと言えば妖精國でただひとり、
+[k]
+
+＠レッドラ・ビット
+ただひとり、妖精馬の背に乗って戦うという[r]あまりにもスピリチュアルな最強人間……ッッ！
+[k]
+
+[charaFace C 0]
+
+＠レッドラ・ビット
+息の合ったコンビネーション、[r]互いの命を[#預:あず]けあう姿はまさに[#全馬号泣:エモーショナル]……
+[k]
+
+[charaFace C 1]
+＠レッドラ・ビット
+いいですよね。人馬一体。[#奇跡:ユ　メ]のようで。[r]その言葉、とても惹かれます。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 8]
+[charaFadein F 0.1 1]
+＠パーシヴァル
+そう言っていただけると[#彼女:クントリー]も喜びます。[r]私も、つねづね助けられていますので。
+[k]
+
+[charaFace F 4]
+[bgmStop BGM_EVENT_94 1.0]
+＠パーシヴァル
+……と。いけない、話の途中でした。[r]頼もしい[#相棒:と　も]の話になったので、つい……
+[k]
+
+
+？！
+
+[bgm BGM_EVENT_77 0.1]
+[charaFace F 0]
+
+＠パーシヴァル
+お話は分かりました。
+[k]
+
+＠パーシヴァル
+女王軍との対決に備えて、[r]安全な拠点が必要なのですね。
+[k]
+
+＠パーシヴァル
+そういう事でしたら、[r]どうぞロンディニウムにご滞在ください。
+[k]
+
+[charaFace F 4]
+
+＠パーシヴァル
+内部の修繕が間に合わず、『予言の子』を[r]お迎えするには心苦しいのですが……
+[k]
+
+[charaFace F 11]
+
+＠パーシヴァル
+防衛拠点としてはブリテンでも屈指の城塞です。[r]総員をあげて、御身をお守りいたします。
+[k]
+
+[messageOff]
+[wt 0.5]
+[bgmStop BGM_EVENT_77 1.0]
+[wipeout leftToRight 1.0 1]
+[wait wipe]
+
+[charaFadeout F 0.1]
+[charaFadein R 0.1 0,-200]
+[wt 1.0]
+
+[scene 120900]
+
+[wipein rightToLeft 1.0 1]
+[wait wipe]
+
+[wt 1.0]
+
+[cueSe SE_21 21_ad1065]
+
+[charaMove R 0,-230 3.0]
+[charaMoveScale R 1.2 3.0]
+[wt 2.0]
+[seStop 21_ad1065 1.0]
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout R 0.1]
+[wt 1.0]
+[scene 120700]
+
+[fadein black 1.0]
+[wait fade]
+
+
+[bgm BGM_EVENT_92 0.1]
+
+[cueSe SE_21 21_ad1079]
+[seVolume 21_ad1079 0 0]
+[seVolume 21_ad1079 0.7 1.0]
+[wt 2.0]
+[seStop 21_ad1079 2.5]
+
+[charaTalk G]
+[charaFace G 1]
+[charaFadein G 0.1 1]
+
+＠人間の兵士
+補給部隊から木材が届いたぞー！[r]いそいで城壁の修復にとりかかろう！
+[k]
+
+＠人間の兵士
+八割は[#城壁:そ　と]に、二割は[#城内:な　か]に、だ！[r]子供たちの家を優先して直してくれー！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk Q]
+[charaFace Q 0]
+[charaFadein Q 0.1 1]
+
+＠Q：妖精の兵士
+午後になったら偽装商人がノリッジに買い付けに行く！[r]必要なものがあればリストに書いてくれ！
+[k]
+
+[charaFace Q 1]
+
+＠Q：妖精の兵士
+伯爵からの支援があるんだ、遠慮はいらない！[r]でもまあ、嗜好品はほどほどにな！
+[k]
+
+[charaFadeout Q 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth G 3]
+[charaDepth I 2]
+[charaDepth J 1]
+
+[charaTalk off]
+[charaFace G 2]
+[charaFace I 2]
+[charaFace J 2]
+[charaFadein G 0.1 1]
+[charaFadeinFSR I 0.1 2]
+[charaFadeinFSL J 0.1 0]
+
+＠訓練中の兵士
+イェーヤ！[r]イェーヤ！
+[k]
+
+[charaFadeout G 0.1]
+[charaFadeout I 0.1]
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 2]
+[charaFadein G 0.1 1]
+＠教官
+『牙の氏族』の動きは我々では追いつけない！[r]対応より対策が重要だ！
+[k]
+
+＠教官
+槍は一息待って、おっかける！[r]先に突き出してもたやすく[#躱:かわ]されるぞ！
+[k]
+
+＠教官
+盾は来ると感じたら前に出す！[r]剣は同時に横腹に刺さるように置いておく！
+[k]
+
+＠教官
+弓はまず当たらない！[r]狙いをつけた時点で感づかれてもう目の前だ！
+[k]
+
+＠教官
+城壁から10人一組で掃射、当たれば幸運だ！[r]妨害としては有効なんだ、腐るなよ！
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+
+[charaTalk K]
+[charaFace K 0]
+[charaFadein K 0.1 1]
+
+＠鍛冶手伝いの少年
+[#研:と]ぎしかできないけど、役に立たせて！[r]そこの兄ちゃん、槍の穂先が欠けてるよ！
+[k]
+
+＠鍛冶手伝いの少年
+それじゃあヤツらの牙に負けちまう、[r]少しでいいから寄っていきな！
+[k]
+
+[charaFadeout K 0.1]
+[wt 0.1]
+
+[charaTalk L]
+[charaFace L 8]
+[charaFadein L 0.1 1]
+
+＠千子村正
+こいつはまた、おんぼろだが賑やかだな。[r]どいつもこいつも忙しく走りまわりやがって。
+[k]
+
+[charaFadeout L 0.1]
+[wt 0.1]
+
+[charaTalk M]
+[charaFace M 6]
+[charaFadein M 0.1 1]
+
+＠ハベトロット
+ざっと見て戦える兵士は300人くらいかな？[r]もうちょっと多い？
+[k]
+
+＠ハベトロット
+避難している人間をいれたら倍になりそうだ。[r]体の弱い人間は奥で針仕事かな？
+[k]
+
+[charaFace M 1]
+
+＠ハベトロット
+いいね、すごくイイ！[r]軍隊というより復興した街じゃんか！
+[k]
+
+＠ハベトロット
+ちょっと花嫁探しに行ってみようかな！
+[k]
+
+[charaFadeout M 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠ダ・ヴィンチ
+うん。壁も道もボロボロなのに、[r]今までのどの街より活気がある。
+[k]
+
+＠ダ・ヴィンチ
+汎人類史では首都ロンドンになった土地だ。[r]なんていうか、生きる力に溢れてる！
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 36]
+[charaFadein A 0.1 1]
+
+＠アルトリア
+[line 6]。
+[k]
+
+？1：アルトリア……？
+？2：何かおかしなところでも？
+
+？！
+
+＠アルトリア
+いえ[line 3]そうでは、なくて。
+[k]
+
+＠アルトリア
+[line 3]こんな綺麗な場所が、どうして。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠ガレス
+……アルトリアさん？
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad59]
+[wt 0.5]
+[charaTalk N]
+[charaFace N 2]
+[charaFadein N 0.2 50,0]
+[charaMove N 0,0 0.2]
+[seStop ad59 0.5]
+
+＠駆けつけてきた兵士
+困ります、団長！[r]とつぜん城壁から飛び降りて森に走って……！
+[k]
+
+＠駆けつけてきた兵士
+貴方は円卓軍の[#要:かなめ]、[r]ロンディニウムに集まった者の希望！
+[k]
+
+＠駆けつけてきた兵士
+今までのように“気になったから”などと[r]軽率な理由で行動しないでください！
+[k]
+
+[charaFace N 0]
+
+＠駆けつけてきた兵士
+[line 3]と。[r]コホン、失礼しました。
+[k]
+
+[charaFace N 1]
+＠駆けつけてきた兵士
+そちらの方々は新しい入団希望者ですか？[r]それでしたらまず広場の登録所に、
+[k]
+
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠パーシヴァル
+いや、それには及ばないよマガレ。[r][&彼:彼女]らは入団希望者じゃない。
+[k]
+
+＠パーシヴァル
+とても大切なお客様だ。[r]そうだろ、オベロン？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.1 1]
+
+＠オベロン
+ああ。今はまだ、ね。[r]円卓軍に参加するかどうかはアルトリア次第だ。
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 3]
+[charaFadein N 0.1 1]
+
+＠駆けつけてきた兵士
+オベロン？　うわっ、オベロンだ！[r]おまえ、いつロンディニウムに！？
+[k]
+
+[charaFace N 2]
+
+＠駆けつけてきた兵士
+おーい、みんな、オベロンだーー！[r]にっくきオベロンが来たぞーーーー！
+[k]
+
+[messageOff]
+[charaFadeout N 0.1]
+[wt 0.1]
+
+[se ad518]
+[seVolume ad518 0 0]
+[seVolume ad518 1.0 0.5]
+[se ad4]
+[seVolume ad4 0 0]
+[seVolume ad4 1.0 0.5]
+[wt 0.6]
+
+[charaTalk off]
+[charaFace G 1]
+[charaFace I 1]
+[charaFace H 0]
+[charaFace Q 1]
+[charaFadeinFSL G 0.4 -300,0]
+[charaFadeinFSR I 0.4 100,0]
+[charaFadeinFSL H 0.4 -50,0]
+[charaFadeinFSR Q 0.4 300,0]
+[wt 1.2]
+
+＠G：ロンディニウムの住人
+ほんとだ、オベロンだ！[r]薄情者のオベロンだーーー！[seVolume ad4 1.0 0.3][seVolume ad518 1.0 0.3]
+[k]
+
+＠Q：[FFFFFF]ロンディニウムの住人[-]
+こいつ、またひょっこり現れやがった！[r]今までどこいってやがった！
+[k]
+
+＠I：ロンディニウムの住人
+今回はちゃんと長居するんだろうな！？[r]たのむからガキどもを泣かすなよ！
+[k]
+
+＠I：ロンディニウムの住人
+おまえがいなくなった途端、[r]みんなしょんぼりして後がタイヘンなんだ！
+[k]
+
+＠H：[FFFFFF]ロンディニウムの住人[-]
+女たちもだよ！　アンタの甘い言葉にほだされて、[r]お姫さまかなんかだと夢みちゃってまあ！
+[k]
+
+＠H：[FFFFFF]ロンディニウムの住人[-]
+優しく扱うのはいいけどね、後始末もしとくれよ！[r]まだまだ働かなくちゃいけないんだ！
+[k]
+
+？1：ここでも……
+？2：オベロン……
+
+？！
+
+[charaFadeout G 0.1]
+[charaFadeout I 0.1]
+[charaFadeout H 0.1]
+[charaFadeout Q 0.1]
+[wt 0.1]
+[charaTalk on]
+
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.1 1]
+
+＠オベロン
+いや、違うけどね？[r]誓ってロンディニウムでは真面目だよ？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk N]
+[charaFace N 1]
+[charaFadein N 0.1 1]
+
+＠駆けつけてきた兵士
+ああ、真面目だよ。[r]真面目に演劇はじめるもんな。
+[k]
+
+＠駆けつけてきた兵士
+おまえが来たら円卓軍もただの市民に戻っちまう。[r]いっときのお祭りってヤツだ。
+[k]
+
+＠駆けつけてきた兵士
+そういう日があるからみんな[r]笑っていられるんだけど……って、待った。
+[k]
+
+[charaFace N 3]
+
+＠駆けつけてきた兵士
+おまえ、次に来るときは『予言の子』を[r]連れてくるって言ってたけど……
+[k]
+
+[charaFace N 2]
+
+＠駆けつけてきた兵士
+まさか……まさか……
+[k]
+
+[messageOff]
+[seStop ad4]
+[bgmStop BGM_EVENT_92 1.0]
+[seStop ad518 1.0]
+[charaFadeout N 0.1]
+[wt 1.0]
+
+
+[charaDepth A 2]
+[charaDepth P 1]
+[charaPut P 1]
+[charaFadeTime P 0.2 0.5]
+
+[charaTalk A]
+[charaFace A 7]
+[charaFadein A 0.1 1]
+
+＠アルトリア
+（あ。やば）
+[k]
+
+[charaFadeout P 0.2]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_139 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠オベロン
+そうだよ。彼女が噂のアルトリア。[r]ノリッジを救った救世主。
+[k]
+
+＠オベロン
+パーシヴァルの持つ『選定の槍』と同じ、[r]楽園から送られた『選定の杖』を持つ妖精。
+[k]
+
+[charaFace D 10]
+
+＠オベロン
+平たく言って、君たちが待ち続けた、[r]ブリテンを救う『予言の子』だ。
+[k]
+
+[messageOff]
+[wt 0.4]
+[se ad647]
+[seVolume ad647 0 0]
+[seVolume ad647 0.2 0.4]
+[se ad889]
+[seVolume ad889 0 0]
+[seVolume ad889 0.2 1.0]
+[wt 1.5]
+
+[seStop ad647 2.0]
+[seStop ad889 2.0]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_139 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

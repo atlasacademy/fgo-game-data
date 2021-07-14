@@ -1,0 +1,687 @@
+
+＄03-00-09-18-2-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 3039001 1 ガレス]
+[charaSet B 98016000 1 円卓軍の兵士]
+[charaSet C 98016000 1 反乱軍の兵士]
+[charaSet D 98016000 1 円卓軍の兵士]
+[charaSet E 1098154100 1 ロンディニウムの少女]
+[charaSet F 1098211900 1 ロンディニウムの少年]
+[charaSet G 1098231110 1 妖精騎士ランスロット]
+[charaFilter G silhouette 00000080]
+
+[charaSet H 1098211300 1 ロンディニウムの住人]
+[charaSet I 1098211400 1 ロンディニウムの住人]
+
+[imageSet J back10000 1 1]
+[charaScale J 1.05]
+
+[charaSet S 98115000 1 エフェクト用]
+[charaSet T 98115000 1 エフェクト用]
+
+[scene 120900]
+
+[bgm BGM_EVENT_24 0.1]
+
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 1]
+＠ガレス
+はぁ、はぁ[line 3][r]倒しちゃった……殺しちゃった、けど[line 3]
+[k]
+
+[charaFace A 2]
+＠ガレス
+お城！　ロンディニウムが襲われてる！[r]考えるのは後だ、急げ、わたし……！
+[k]
+
+[messageOff]
+[se ad166]
+[wipeout rectangleStripLeftToRight 0.4 1.0]
+[bgm BGM_EVENT_24 0.4 0.4]
+[seStop ad166 0.4]
+[wait wipe]
+
+[charaFadeout A 0.1]
+
+[scene 120700]
+[wt 0.6]
+
+[bgm BGM_EVENT_24 0.4 1.0]
+
+[se ad1048]
+[seVolume ad1048 0 0]
+[seVolume ad1048 1.0 0.1]
+[se ad726]
+[seVolume ad726 0 0]
+[seVolume ad726 1.0 1.0]
+[wipein rectangleStripRightToLeft 0.4 1.0]
+[wait wipe]
+[wt 0.2]
+
+[charaTalk depthOff]
+[charaDepth B 5]
+[charaDepth S 6]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+＠円卓軍の兵士
+なんで……こんな……[r]オレたちは……ともに戦う、なか、ま[line 3]
+[k]
+
+[messageOff]
+[seStop ad1048 2.0]
+[seStop ad726 2.0]
+
+[cueSe Servants_102800 bac657]
+[charaPutFSL S 70,0]
+[charaEffect S bit_talk_x_slash02]
+[wt 0.1]
+[effect bit_talk_35]
+[charaShake B 0.03 4 4 0.6]
+[wt 0.8]
+
+[charaMove B 0,-50 0.4]
+[charaFadeout B 0.4]
+[wt 0.3]
+[se ad144]
+[wt 1.4]
+
+[charaEffectDestroy S bit_talk_x_slash01]
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠反乱軍の兵士
+はっ、誰が仲間だ、馬鹿馬鹿しい！[r]乞食の軍隊は頭までみすぼらしい！
+[k]
+
+＠反乱軍の兵士
+[#第３小隊:こ 　い　 つ 　ら]は衛生兵の部隊だ、[r]戦闘訓練を続けてきた我々の敵ではない！
+[k]
+
+＠反乱軍の兵士
+ロンディニウムにいる者はひとりも逃すな！
+[k]
+
+＠反乱軍の兵士
+女子供もだ！[r]傷ものなぞ、我らのブリテンに不要である！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace H 3]
+[charaFace I 3]
+[charaFadeinFSR H 0.1 256,0]
+[charaFadeinFSL I 0.1 -256,0]
+[wt 0.3]
+
+[cueSe Servants_102800 bac658]
+[charaPutFSR S 256,0]
+[charaEffect S bit_talk_x_slash01]
+[wt 0.1]
+[charaShake H 0.03 4 4 0.6]
+[wt 0.2]
+
+[cueSe Servants_102800 bac657]
+[charaPutFSL T -256,0]
+[charaEffect T bit_talk_x_slash02]
+[wt 0.1]
+[charaShake I 0.03 4 4 0.6]
+[wt 0.4]
+
+[charaMoveFSR H 256,-50 0.4]
+[charaFadeout H 0.4]
+[wt 0.3]
+[se ad144]
+
+[charaMoveFSL I -256,-50 0.4]
+[charaFadeout I 0.4]
+[wt 0.3]
+[se ad144]
+[wt 1.3]
+
+[charaPut S 2000,2500]
+[charaPut T 2000,2500]
+[charaEffectDestroy S bit_talk_x_slash01]
+[charaEffectDestroy T bit_talk_x_slash02]
+
+
+[charaTalk C]
+[charaFace C 2]
+[charaFadein C 0.1 1]
+＠反乱軍の兵士
+思い知れ、落ちこぼれの寄せ集めども！
+[k]
+
+＠反乱軍の兵士
+パーシヴァルが戻ってきた時、[r]ヤツが見るのは希望ではない！　絶望だ！
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.2]
+
+[se ad671]
+[seVolume ad671 0 0.5]
+[wt 0.2]
+[charaTalk A]
+[charaFace A 2]
+[charaFadeinFSR A 0.4 156,0]
+[charaMove A 10,0 0.3]
+[wt 0.2]
+[charaMove A 0,0 0.2]
+[wt 0.8]
+
+[charaFace A 9]
+＠ガレス
+おまえたち[line 3]
+[k]
+
+[se bac170]
+[charaFace A 20]
+
+＠ガレス
+おまえたちはぁ[line 3]！
+[k]
+
+[messageOff]
+[wt 0.1]
+[bgm BGM_EVENT_24 1.5 0.5]
+
+[se ad678]
+[se ad166]
+[seVolume ad166 0 0.6]
+[charaMove A 0,30 0.2]
+[charaMoveScale A 1.2 0.2]
+[charaFadeout A 0.2]
+[wt 0.1]
+[seStop ad166 0.3]
+[fadeout black 0.6]
+[wait fade]
+
+[wt 0.2]
+[se bac432]
+
+[wt 1.0]
+
+[scene 120700]
+[pictureFrame cut063_cinema]
+[wt 1.5]
+
+[fadein black 1.5]
+[wait fade]
+
+
+[charaTalk off]
+
+[se ad137]
+[seVolume ad137 0 0.4]
+[charaFace E 2]
+[charaFace F 3]
+[charaFadeinFSR E 0.1 256,-50]
+[charaFadeinFSL F 0.1 -256,-50]
+[wt 1.8]
+
+[charaTalk on]
+＠ロンディニウムの少女
+……おばあちゃん、おばあちゃん……！[r]セム、おばあちゃんが、おばあちゃんが！
+[k]
+
+＠ロンディニウムの少年
+しっ！　黙って、ここに隠れてろサマリア！[r]すぐ助けがくるからな……！
+[k]
+
+＠ロンディニウムの少年
+……う、うう……うぐ……！[r]ばあちゃん、チクショウ、サマリアをかばって……！
+[k]
+
+
+＠ロンディニウムの少女
+セム、ほかのみんなは！？[r]ユーリは？　オッドは？　カムリは？
+[k]
+
+＠ロンディニウムの少女
+ねえ、だいじょうぶかな？[r]みんな、みんなだいじょうぶかな！？
+[k]
+
+＠ロンディニウムの少年
+っ……[wt 0.6][charaFace F 1]も、もちろん、大丈夫だ。[r]さっき、お城の外に、逃げていった、から。
+[k]
+
+＠ロンディニウムの少年
+みんな、大丈夫[line 3]大丈夫だ。[r]う、うう……だから、オレたちも、隠れないと……！
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[se ad60]
+[wt 1.2]
+[seStop ad60 0.5]
+
+＠兵士の声Ａ
+ひとつ、ふたつ、みっつ……おい、数が足りないぞ。[r]ここのガキどもは５人だったろ。
+[k]
+
+＠兵士の声Ａ
+あと２人、どこかにいるはずだ。[r]捜すぞ。目撃者はひとりも出せないからな。
+[k]
+
+＠兵士の声Ａ
+……かまどの火が消えているな。[r]中を覗き込んでみろ。
+[k]
+
+＠兵士の声Ｂ
+なに言ってんだ、近くにいるだけで熱いんだぜ？[r]中に入ったら肌が焼かれる。
+[k]
+
+＠兵士の声Ｂ
+そんなところに隠れる阿呆がいるか？
+[k]
+
+＠兵士の声Ａ
+だからだよ。頭の足りない乞食どもだ。[r]追い詰められればなんだってする。
+[k]
+
+＠兵士の声Ａ
+いい、オレが見る。[r]……さて、中の様子は、と……[se ad984]
+[k]
+
+[charaTalk depthOff]
+[charaDepth J 2]
+[charaDepth E 5]
+[charaDepth F 6]
+[charaDepth A 7]
+
+[charaPut J 1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFace E 2]
+[charaFadeinFSL F 0.1 -256,-50]
+[charaFadeinFSR E 0.1 256,-50]
+＠ロンディニウムの少年
+…………！[wt 0.5][charaFadeTime J 0.2 0.5][r]（誰か、助けて……！）
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[charaFadeout J 0.1]
+[wt 0.2]
+
+[se ad209]
+[wt 1.0]
+
+＠兵士の声Ｂ
+がっ！？
+[k]
+
+＠兵士の声Ａ
+[FFFFFF]？[-]　剣を落としたのか？[r]いったいどうし[line 3]
+[k]
+
+[bgm BGM_EVENT_24 1.0 1.0]
+
+＠ガレス
+あ[messageShake 0.05 4 3 0.6]あああああああああ！
+[k]
+
+[messageOff]
+[wt 0.2]
+
+[se bac432]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[shake 0.05 2 2 0.8]
+[wt 1.4]
+
+[se ad144]
+[wt 1.4]
+
+[charaScale A 1.0]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 0,-50]
+＠ガレス
+セム、サマリア、無事！？[r]どこ、生きてるなら返事をして！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 2]
+[charaFace E 2]
+[charaFadeinFSL F 0.1 -256,-50]
+[charaFadeinFSR E 0.1 256,-50]
+＠ロンディニウムの少年
+ガレスだ！[r]助かった、サマリア、ガレスが来てくれたぞ！
+[k]
+
+
+[charaFace E 3]
+＠ロンディニウムの少女
+！　けほっ、ごほっ……ほんとだ、きしさまだ！
+[k]
+
+[charaFace E 1]
+＠ロンディニウムの少女
+ひとりでアイツらをやっつけたの？[r]すごい、すごーい！
+[k]
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 17]
+[charaFadein A 0.1 0,-50]
+＠ガレス
+良かった、ふたりとも無事で[line 3]
+[k]
+
+[messageOff]
+[charaShake A 0.01 1 1 0.3]
+[charaFace A 9]
+[wt 1.0]
+
+
+[charaPut J 1]
+[charaFadeTime J 0.2 0.5]
+
+[charaFace A 4]
+＠ガレス
+（無事なんかじゃない、ひどい火傷……[r]　はやく手当をしないと持たない……）
+[k]
+
+[charaFadeout J 0.1]
+
+[charaFace A 2]
+＠ガレス
+早く外に[line 3][r]ううん、もう門からは出られない。
+[k]
+
+＠ガレス
+司令室に行こう！[r]あそこなら安全だし、傷薬もある！
+[k]
+
+＠ガレス
+すぐにパーシヴァルたちが来るから！[r]それまで司令室に立てこもるよ！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 0,-50]
+＠ロンディニウムの少年
+うん、うん……！[r]ありがとう、ありがとうガレス姉ちゃん！
+[k]
+
+＠ロンディニウムの少年
+サマリア、行くぞ！[r]姉ちゃんの足を引っ張るなよな！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 0,-50]
+＠ロンディニウムの少女
+うん、だいじょうぶ！[r]みんな、だいじょうぶだったんだもんね！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 25]
+[charaFadein A 0.1 0,-50]
+＠ガレス
+…………。
+[k]
+
+[charaFace A 19]
+＠ガレス
+突破するから、付いてきて！
+[k]
+
+[messageOff]
+[se ad166]
+[fadeout black 1.0]
+[bgm BGM_EVENT_24 1.0 0.4]
+[seStop ad166 1.0]
+[wait fade]
+
+[charaFadeout A 0.1]
+
+[scene 120700]
+[pictureFrame]
+[wt 1.0]
+
+[bgm BGM_EVENT_24 1.0 1.0]
+[fadein black 1.0]
+[wait fade]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFadein B 0.1 1]
+＠B：反乱軍の兵士Ａ
+！　まだ妖精がいたか！[r]こっちだ、兵を回せ！　包囲して始末しろ！
+[k]
+
+[messageOff]
+[se ad1025]
+
+[charaTalk off]
+[charaDepth B 6]
+[charaDepth C 5]
+[charaDepth D 4]
+
+[charaFace C 0]
+[charaFace D 0]
+[charaFadeinFSR C 0.4 300,0]
+[charaFadeinFSL D 0.4 -300,0]
+[wt 0.4]
+[seStop ad1025 0.4]
+[wt 0.6]
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaFace A 19]
+[charaFadein A 0.1 1]
+[wt 0.5]
+
+[se ad171]
+[charaFace A 2]
+[charaMove A 0,30 0.2]
+[charaMoveScale A 1.2 0.2]
+[charaFadeout A 0.2]
+[wt 0.2]
+
+[charaScale A 1.0]
+[charaFadein B 0.1 1]
+[charaFadeinFSR C 0.1 300,0]
+[charaFadeinFSL D 0.1 -300,0]
+[wt 0.2]
+[cueSe Servants_104800 m42623]
+[fowardEffect bit_talk_14]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 0.1]
+[charaFace B 5]
+[charaShake B 0.03 4 4 0.5]
+[wt 0.5]
+[seStop m42623 0.3]
+[wt 0.3]
+
+[charaTalk on]
+＠B：反乱軍の兵士Ａ
+ぐはっ[line 3]！？
+[k]
+
+[messageOff]
+[charaMove B 0,-50 0.4]
+[charaFadeout B 0.4]
+[wt 0.3]
+
+[se ad144]
+[wt 1.2]
+
+[charaFace C 3]
+＠C：反乱軍の兵士Ｂ
+オイ、こいつ強いぞ！？[r]主戦力級がなぜ残っている！？
+[k]
+
+[charaFace D 2]
+＠D：反乱軍の兵士Ｃ
+知ってるぜ、そいつはハンパ者のガレスだ！
+[k]
+
+＠D：反乱軍の兵士Ｃ
+『予言の子』についていかず、[r]ロンディニウムに戻ってきた臆病者だ！
+[k]
+
+[se ad171]
+
+＠D：反乱軍の兵士Ｃ
+どうせすぐに音を上げる、[r]全員でかかれば敵じゃあな、[wt 0.6][charaFace C 2][charaTalk off][fowardEffect bit_talk_x_slash_03][se bac315][flashin once 0.1 0.1 FFFFFFFA FFFFFF50][fowardEffect bit_talk_35][charaShake C 0.03 3 4 0.5][charaShake D 0.03 4 3 0.5]ぐはぁ！？
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[fowardEffectDestroy bit_talk_x_slash_bl_03]
+
+[charaMoveFSR C 300,-50 0.4]
+[charaMoveFSL D -300,-50 0.4]
+
+[charaFadeout C 0.4]
+[charaFadeout D 0.4]
+[wt 0.3]
+
+[se ad144]
+[wt 1.4]
+
+[charaTalk on]
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+＠ガレス
+臆病者はおまえたちだ！[r]不意打ちでみんなを殺した卑怯者！
+[k]
+
+[cueSe SE_21 21_ad1097]
+[seVolume 21_ad1097 0 0]
+[seVolume 21_ad1097 1.0 0.2]
+
+[bgmStop BGM_EVENT_24 1.0]
+
+＠ガレス
+おまえたちなんて何十人こようと敵じゃない！[r]命が惜しかったら、尻尾を巻いてさっさと逃げ[line 3]
+[k]
+
+[messageOff]
+[charaFace A 9]
+[wt 1.0]
+
+[charaFadeout A 0.1]
+[wt 0.2]
+
+[se ad695]
+[seVolume ad695 0 0.3]
+[cueSe SE_21 21_ade546]
+[se ade8]
+[seVolume ade8 0 0.3]
+[wt 1.5]
+
+[effect bit_talk_mgn_light]
+[se ad696]
+[seVolume ad696 0 0.6]
+[se ade393]
+[seVolume ade393 0 0.3]
+[wt 0.3]
+[se ad914]
+[effect bit_talk_impactlanding]
+[se ad322]
+[shake 0.05 3 3 3.0]
+[wt 1.5]
+[seStop ade393 3.0]
+[wt 2.5]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.6 1]
+[wt 0.8]
+
+＠？？？
+…………。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[se ad859]
+[seVolume ad859 0 0.4]
+[charaPut S 1]
+[charaScale S 1.1]
+[charaEffect S bit_talk_41_fs]
+
+[charaMove G 0,30 0.2]
+[charaMoveScale G 1.2 0.2]
+[blur motion 0.3 4 10 0.5 0.6 0.05 100]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 9]
+[charaFadein A 0.1 20,0]
+[cameraMove 0.2 0,-45 1.2]
+
+[wipeout circleIn 0.2 1.0]
+[seStop ad859 0.6]
+[wait wipe]
+
+[cameraHome 0.1]
+[charaFadeout A 0.1]
+[charaPut S 2000,2500]
+[charaEffectStop S bit_talk_41_fs]
+[blurOff]
+
+[scene 10000]
+[wt 0.2]
+
+[wipein circleIn 0.3 1.0]
+[wait wipe]
+
+[se ad171]
+[cueSe Servants_102800 bac658]
+[cueSe Battle bac263]
+[se ad85]
+[wt 1.0]
+
+
+
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

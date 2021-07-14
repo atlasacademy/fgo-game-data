@@ -1,0 +1,441 @@
+
+＄03-00-09-18-3-0
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 1098211010 1 ガレス]
+[charaSet B 98084000 1 騎士]
+[charaSet C 98115000 1 エフェクト用ダミー]
+
+
+[sceneSet J 10000 1]
+[charaScale J 1.01]
+[sceneSet K 10000 1]
+[charaScale K 1.01]
+
+[charaSet S 98115000 1 兵士の声]
+[charaSet T 98115000 1 騎士の声]
+
+[sceneSet L 118501 1 1]
+[charaScale L 1.35]
+
+
+[overlayFadein J 0.1 -1100,0]
+[overlayFadein K 0.1 1100,0]
+
+
+[scene 10000]
+[cueSe SE_21 21_ad1114]
+[wt 0.1]
+
+[seVolume 21_ad1114 1.5 1.0]
+[fadein black 1.5]
+[wait fade]
+[wt 1.0]
+
+[seVolume 21_ad1114 2.0 0.3]
+[wt 0.5]
+
+＠兵士の声
+みな殺しだ！[r][#尊:とうと]き方の温情を無視し続けた罪である！
+[k]
+
+[messageOff]
+[wt 0.1]
+[se bac387]
+[wt 1.4]
+
+＠兵士の声
+何が『人間と妖精の共存』だ！[r]どこまでいっても家畜根性の奴隷どもめ！
+[k]
+
+[messageOff]
+[wt 0.1]
+[se bac388]
+[wt 1.6]
+
+＠騎士の声
+……あらかた終わったようだな。
+[k]
+
+＠騎士の声
+ウッドワスも攻めあぐんでいたロンディニウムだが、[r]中からなら[#脆:もろ]いものよ。
+[k]
+
+＠騎士の声
+[#人間]であればたやすく信頼する。[r]愚か者に相応しい末路だ。
+[k]
+
+＠騎士の声
+落ちこぼれに故郷など必要ない。[r]燃やし尽くせ。
+[k]
+
+＠騎士の声
+ロンディニウムがなくなれば円卓軍の寄る辺も、[r]『予言の子』の威信も落ちる。
+[k]
+
+＠騎士の声
+司令室は念入りに破壊しろ。[r]生意気なパーシヴァルに思い知らせてやれ。
+[k]
+
+[messageOff]
+[wipeout openEye 0.5 1.0]
+[wait wipe]
+
+[charaTalk depthOff]
+
+[charaDepth L 1]
+[charaDepth A 2]
+[charaDepth C 3]
+[charaDepth J 4]
+[charaDepth K 5]
+
+[charaMove J 0,-745 0.5]
+[charaMove K 0,745 0.5]
+
+[charaFadein L 0.1 0,-450]
+[wt 0.5]
+
+[charaPut C 1]
+[charaEffect C bit_talk_sparks_fs]
+
+[wipein openEye 2.0 1.0]
+[wait wipe]
+
+[wt 0.5]
+
+[se ad228]
+[seVolume ad228 0 0.4]
+[seStop ad228 2.0]
+[se ad892]
+[seVolume ad892 0 0.4]
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.7 0,-50]
+[wt 1.0]
+
+＠ガレス
+…………あ、れ。[r]わたし……どうして……
+[k]
+
+＠ガレス
+右目、開かない、みたい……[r]おかしい、な……おか、し[line 3]
+[k]
+
+＠ガレス
+街は、どうなっ、って[line 3]
+[k]
+
+[messageOff]
+[seStop 21_ad1114 2.0]
+[charaCrossFade A 1098211000 9 0.7]
+[wt 1.5]
+
+＠ガレス
+[line 6]。
+[k]
+
+[bgm BGM_EVENT_41 0.1]
+
+[charaFace A 6]
+＠ガレス
+あ[line 3]あ、あ[line 3]
+[k]
+
+[charaFace A 7]
+＠ガレス
+うあ[line 3]ああ[line 3]
+[k]
+
+＠ガレス
+また[line 3]また、こんな[line 3][r]何度、何度、見れば[line 3]
+[k]
+
+＠ガレス
+あれ、でも……何度も、見たの？[r]わたし、こんな風景を、何度、も[line 3]あ。
+[k]
+
+[messageOff]
+[wt 1.2]
+
+[charaFace A 8]
+＠ガレス
+……そっか。そうだったんだ。[r]……分かっちゃった。わたし[line 3]
+[k]
+
+＠ガレス
+『鏡の氏族』、なんだ。
+[k]
+
+＠ガレス
+みんなを、滅びの未来から、守ろうとして[line 3][r]結局、誰も救えなかった、エインセル[line 3]
+[k]
+
+＠ガレス
+ごめん……ごめんね、ミラー……[r]せっかく、わたしの代わりになってくれたのに……
+[k]
+
+＠ガレス
+わたし、今度も[line 3]
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+＠兵士の声
+おい、子供が他にいただろう？[r]アイツらはどこにいった？
+[k]
+
+＠兵士の声
+捜せ、例外はない！[r]じき円卓軍が戻ってくる、それまでに捜して殺せ！
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_41 2.0]
+
+[charaTalk A]
+[charaFace A 16]
+[charaFadein A 0.1 0,-50]
+[wt 1.2]
+
+[charaFace A 15]
+＠ガレス
+…………まだだ。[r]まだ、なくなって、ない。
+[k]
+
+[charaFace A 14]
+＠ガレス
+いくぞ、わたし……！[r]セムを、サマリアを守るんだ……！
+[k]
+
+[messageOff]
+
+[cueSe SE_21 21_ad1114]
+[seVolume 21_ad1114 0 0]
+[seVolume 21_ad1114 1.0 0.5]
+
+[charaMove A -50,-50 0.6]
+[charaFadeout A 0.4]
+[se ade428]
+[wt 0.4]
+[seStop ade428 0.1]
+[wt 0.8]
+[se ade428]
+[wt 0.4]
+[seStop ade428 0.1]
+
+[fadeout black 1.0]
+[wait fade]
+
+[charaFadeout L 0.1]
+
+[scene 122400]
+[wt 1.5]
+
+[seStop 21_ad1114 4.0]
+[fadein black 3.0]
+[wait fade]
+
+[bgm BGM_EVENT_95 0.1]
+
+＠ガレス
+……でもね、ミラー。わたし、次の代に[r]生まれ変わって、良かった、よ。
+[k]
+
+＠ガレス
+……ロンディニウムの日々は、理想だった。[r]夢のような、世界だった。
+[k]
+
+
+＠ガレス
+誰もが助け合い、認め合って、許し合って。
+[k]
+
+＠ガレス
+自分を大切にして、[r]まわりのひとたちも大切にする、そんなひとたちで。
+[k]
+
+＠ガレス
+……それが、[%1]には、[r]当たり前、なんだって。
+[k]
+
+＠ガレス
+だからわたしたちのブリテンも、[r]そうなるんだって。
+[k]
+
+
+＠ガレス
+……ふふ。そんな世界、本当に来るのかな。[r]そんな未来を持つ妖精は、でてくるのかな。
+[k]
+
+＠ガレス
+[%1]を見るのが好きだったよ。[r]あっちの世界には、沢山の、幸福があって[line 3]
+[k]
+
+＠ガレス
+“何をしてもここで終わり”なんて、[r]残酷な未来像は、ないみたいなの。
+[k]
+
+
+＠ガレス
+……いいなあ。[r]わたしたちには、そういうの、無かったよね。
+[k]
+
+＠ガレス
+守るべきものは、分かっていたの。[r]『予言の子』を、導くということだけは。
+[k]
+
+＠ガレス
+けど……そのために、それ以外のものが[r]失われるのがイヤだった。
+[k]
+
+＠ガレス
+氏族のみんなが、死んじゃうのがイヤだった。
+[k]
+
+＠ガレス
+分からず屋のガレス。[r]分からず屋のエインセル。
+[k]
+
+＠ガレス
+[#未来:うんめい]が見えているのに、[r]なぜ未来を受け入れないの。
+[k]
+
+[messageOff]
+[wt 0.1]
+
+[bgmStop BGM_EVENT_95 2.0]
+[wt 1.5]
+
+
+＠ガレス
+……なんて。[r]そんなの、なぜもなにも、ないよねぇ？
+[k]
+
+[messageOff]
+[wt 0.5]
+
+[fadeout black 1.0]
+[wait fade]
+
+[overlayFadein J 0.1 0,-1100]
+[overlayFadein K 0.1 0,1100]
+
+[scene 120702]
+
+[charaSet A 1098211010 1 ガレス]
+
+[wt 1.0]
+[cueSe SE_21 21_ad1114]
+[seVolume ade24 0 0]
+[seVolume 21_ad1114 1.0 0.4]
+[fadein black 1.0]
+[wait fade]
+
+[se ade428]
+[wt 0.4]
+[seStop ade428 0.1]
+[wt 0.8]
+
+[se ade428]
+[wt 0.4]
+[seStop ade428 0.1]
+[wt 0.8]
+
+[charaTalk A]
+[charaFace A 3]
+[charaFadein A 0.4 0,-10]
+[wt 0.4]
+
+＠ガレス
+はあ……はあ……
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠騎士
+司令室はこの上だ。[r][#油樽:あぶらたる]は仕掛けたな？　念入りに爆破するぞ。
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[seStop 21_ad1114 3.0]
+
+[charaTalk A]
+[charaFace A 6]
+[charaFadein A 0.1 0,-10]
+＠ガレス
+そこまでだ、女王軍！[r]それ以上はわたしが許さない！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+＠騎士
+[line 3]まだ生き残りがいたか。[r]もはや虫の息、相手をするまでもないが……
+[k]
+
+＠騎士
+ひとりで逃げる分にはまだ可愛げがあるものを。[r]その姿といい、騎士の真似事か。
+[k]
+
+＠騎士
+目障りだ、ここで死ね。[r]パーシヴァルの兵士風情が、騎士を語るな。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 5]
+[charaFadein A 0.1 0,-10]
+[wt 0.7]
+[charaCrossFade A 1098211000 14 0.6]
+[wait charaCrossFade A]
+[wt 1.0]
+[charaShake A 0.1 1 1 0.6]
+[charaMove A 0,0 0.6]
+[se bac170]
+[seVolume bac170 0 0.4]
+[wt 1.1]
+
+[bgm BGM_MAP_74 0.1]
+
+[charaFace A 17]
+＠ガレス
+うるさい……！[r]おまえたちのどこが騎士だ……！
+[k]
+
+＠ガレス
+わたしはガレス、円卓軍の騎士、ガレス！
+[k]
+
+＠ガレス
+がんばる『予言の子』の一番の従者で、[r]誉れ高い、パーシヴァルの一番弟子だ！
+[k]
+
+
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_MAP_74 0.5]
+[seStop ade24 0.4]
+[seStop ad429 0.4]
+[wait fade]
+[soundStopAll]
+[end]

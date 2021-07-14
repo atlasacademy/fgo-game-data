@@ -1,0 +1,223 @@
+
+＄03-00-09-17-4-0
+
+
+
+[enableFullScreen]
+[soundStopAll]
+
+[charaSet A 5045001 1 アルトリア]
+[charaSet B 1098231510 1 マシュ]
+[charaSet C 1098210900 1 ペペロン伯爵]
+[charaSet D 1098210400 0 1]
+[charaSet E 1098210400 0 1]
+[charaSet F 1098210400 0 1]
+
+[scene 21410]
+
+[cameraMove 0.1 0,0 1.01]
+[wt 0.1]
+
+[se ade426]
+[seVolume ade426 0 0]
+[se ade427]
+[seVolume ade427 0 0]
+[seVolume ade426 1.0 0.8]
+[seVolume ade427 1.0 0.8]
+[fadein black 1.5]
+[wait fade]
+[seStop ade426 1.0]
+[seStop ade427 1.0]
+[wt 0.8]
+
+[se ad14]
+[shake 0.02 2 2 0.5]
+[seStop ad14 1.0]
+[wt 1.2]
+
+[bgm BGM_EVENT_81 0.1]
+
+[charaTalk B]
+[charaFace B 6]
+[charaFadein B 0.1 1]
+
+＠マシュ
+いま、かすかに揺れませんでしたか？[r]まるで地震の前兆のような……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 27]
+[charaFadein A 0.1 1]
+
+＠アルトリア
+地震ですか？[r]ブリテンで地震は滅多に起きませんが……
+[k]
+
+？1：急ごう。イヤな予感がする
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 8]
+[charaFadein C 0.1 1]
+
+＠ペペロン伯爵
+………………。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.1 1]
+
+＠マシュ
+ペペさん？[r]……あの、体調が優れないのですか？
+[k]
+
+[charaFace B 12]
+
+＠マシュ
+先ほどから、[r]どこか様子がおかしい気がしますが……
+[k]
+
+[charaFadeout B 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠ペペロン伯爵
+もう。[r]こんな時でもよく見てるんだから。
+[k]
+
+＠ペペロン伯爵
+気にしないで。少し悲しくなっただけ。[r]『あら、そうなの？』くらいの、虫の知らせ。
+[k]
+
+[charaFace C 6]
+
+＠ペペロン伯爵
+でも嬉しいわ。気を利かせてくれて。[r][line 3]ありがとう、マシュちゃん。
+[k]
+
+[charaFace C 0]
+
+＠ペペロン伯爵
+さあ、あの扉を抜けて広間に出れば[r]迷路は終わり、あとは地上まで一直線。
+[k]
+
+＠ペペロン伯爵
+駆け抜けましょう。[r]まだ途中だものね、アナタたちは。
+[k]
+
+[messageOff]
+[fadeout black 1.5]
+[bgmStop BGM_EVENT_81 1.5]
+[wait fade]
+
+[charaFadeout C 0.1]
+[scene 21400]
+[wt 1.0]
+
+[fadein black 1.5]
+[wait fade]
+
+[se ad768]
+[seVolume ad768 0 0.4]
+[cueSe SE_21 21_ad1071]
+[seVolume 21_ad1071 0 0.6]
+[charaTalk D]
+[charaFace D 0]
+[charaFadein D 0.4 1]
+[wt 0.4]
+[seStop ad768 0.6]
+
+＠？？？
+あー……あああー……[r]うああああー……
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth D 5]
+[charaDepth E 4]
+[charaDepth F 3]
+
+[charaTalk off]
+
+[se ad768]
+[seVolume ad768 0 0.4]
+[charaFace E 0]
+[charaFadeinFSL E 0.4 -350,0]
+[wt 0.2]
+[charaFace F 0]
+[charaFadeinFSR F 0.4 350,0]
+[wt 0.4]
+[seStop ad768 0.6]
+
+[bgm BGM_EVENT_80 0.1]
+
+＠？？？
+はあ……あああ……あーーーー……
+[k]
+
+？1：！？
+？2：この人たちは、一体……！？
+
+？！
+
+[charaFadeout D 0.1]
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk depthOn]
+[charaTalk on]
+
+[charaTalk A]
+[charaFace A 2]
+[charaFadein A 0.1 1]
+
+＠アルトリア
+！　この人たち、体が腐ってる……！[r]ダーリントンの[#屍:しかばね]です！
+[k]
+
+＠アルトリア
+100年前、ダーリントンを襲った『厄災』、[r][#蘇:よみがえ]りの[#屍人:しびと]たち……！
+[k]
+
+＠アルトリア
+そっか、ここ人間たちの墓地だったんだ……！
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk B]
+[charaFace B 5]
+[charaFadein B 0.1 1]
+[wt 1.2]
+[charaFace B 7]
+
+[se bac170]
+
+＠マシュ
+[line 3]襲ってくる以上、戦うしかありません！[r]戦闘は最小限におさえて、上階に続く道を確保します！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]

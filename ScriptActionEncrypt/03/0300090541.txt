@@ -1,0 +1,110 @@
+
+＄03-00-09-05-4-1
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5045000 1 アルトリア]
+[charaSet B 1050000 1 妖精騎士ガウェイン]
+[charaSet N 98115000 1 エフェクト用]
+
+[charaDepth N 9]
+
+[charaPut N 1]
+[charaEffect N bit_talk_sparks_fs]
+
+[scene 118601]
+
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_72 0.1]
+
+[charaTalk A]
+[charaFace A 32]
+[charaFadein A 0.1 1]
+＠アルトリア
+はぁ……はぁ……はぁ……！[r]逃げるのか、ここまでして逃げるのか！
+[k]
+
+＠アルトリア
+許さない、忘れない……！[r]みんな、みんな殺しておいて[line 3]！
+[k]
+
+？1：落ち着いて、アルトリア……！
+？2：今はウェールズのみんなを助けるん[&だろ:でしょ]！？
+
+？！
+
+[charaFace A 33]
+＠アルトリア
+放して、あいつらが逃げる！[r]かならず、かならず[#償:つぐな]わせて[line 3]！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_72 1.0]
+
+[cueSe SE_21 21_ad1111]
+[flashin once 0.1 0.1 FFFFFFFA FFFFFF50]
+[wt 0.1]
+[seStop ad500 0.2]
+[charaFace A 19]
+[charaShake A 0.02 3 3 0.4]
+[wt 1.6]
+
+
+＠アルトリア
+[line 6]あ。
+[k]
+
+＠アルトリア
+……ごめんなさい。[r]わたし、目の前が真っ赤になって[line 3]
+[k]
+
+？1：……いいんだ。こっちこそ、ごめん
+？2：今は生き残りを捜そう
+
+？！
+
+[charaFace A 4]
+＠アルトリア
+……はい。[r]以前彼らが逃げていた木の上なら、もしかして、
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.5]
+
+[cueSe SE_21 21_ad1119]
+[se adm12]
+[wt 1.0]
+[se ad195]
+[wt 1.0]
+[seStop 21_ad1119 0.5]
+[wt 0.5]
+
+
+[charaTalk B]
+[charaFace B 0]
+[charaFadein B 0.4 1]
+[wt 0.4]
+
+[bgm BGM_EVENT_81 0.1]
+
+＠妖精騎士ガウェイン
+無駄だ。掃討はとうに終わった。[r]あとは森を焼き払うのみ。
+[k]
+
+＠妖精騎士ガウェイン
+救援に来るには半日遅い。[r]これが、おまえが鐘を鳴らした結果だ、『予言の子』。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+[bgmStop BGM_EVENT_81 2.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

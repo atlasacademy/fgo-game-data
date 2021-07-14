@@ -1,0 +1,401 @@
+
+＄03-00-09-03-4-0
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5045000 1 アルトリア]
+[charaSet B 98016000 1 円卓軍の兵士Ａ]
+[charaSet C 98016000 1 円卓軍の兵士Ｂ]
+[charaSet D 3047001 1 パーシヴァル]
+[charaSet E 3039000 1 ガレス]
+[charaSet F 1098216200 1 ハベトロット]
+[charaSet G 1049000 1 千子村正]
+[charaSet H 1098210900 1 ペペロン伯爵]
+[charaSet I 1098124500 1 ダ・ヴィンチ]
+[charaSet J 98006200 1 妖精亡主]
+
+[scene 119700]
+[pictureFrame cut063_cinema]
+
+[se ad16]
+[seVolume ad16 0 0]
+[seVolume ad16 1.5 0.5]
+[fadein black 1.5]
+[wait fade]
+
+[seStop ad16 2.0]
+
+[bgm BGM_EVENT_80 0.1]
+
+
+[charaTalk B]
+[charaFace B 2]
+[charaFace C 0]
+[charaFadein B 0.1 256,-50]
+[charaFadein C 0.1 -256,-50]
+
+＠円卓軍の兵士Ａ
+ランドン隊長より報告！[r]南区の制圧、完了しました！
+[k]
+
+[charaFace B 0]
+[charaFace C 2]
+
+＠円卓軍の兵士Ｂ
+オーラリア隊長より報告！
+[k]
+
+＠円卓軍の兵士Ｂ
+正門周辺の女王軍、[r]２割の損害を出し撤退したとのこと！
+[k]
+
+[charaFadeout B 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 2]
+[charaFadein D 0.1 0,-50]
+
+＠パーシヴァル
+よし、引き続き北区の制圧に移れ！[r]我々は金庫城に向かう！
+[k]
+
+＠パーシヴァル
+投降した者は拘束し、[r]オーラリアの部隊に預けるように！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaFace B 0]
+[charaFace C 0]
+[charaFadein B 0.1 256,-50]
+[charaFadein C 0.1 -256,-50]
+
+＠円卓軍の兵士
+は！　承知いたしました！
+[k]
+
+[messageOff]
+[se ad166]
+[seStop ad166 1.5]
+[charaMove B 206,-50 0.4]
+[charaMove C -306,-50 0.4]
+[charaFadeout B 0.4]
+[charaFadeout C 0.4]
+[wt 2.0]
+
+[charaTalk on]
+
+[fadeout black 1.0]
+[bgm BGM_EVENT_80 1.0 0.5]
+[wait fade]
+
+[pictureFrame]
+[wt 0.5]
+
+[fadein black 1.0]
+[bgm BGM_EVENT_80 1.0 1.0]
+[wait fade]
+
+[charaTalk E]
+[charaFace E 4]
+[charaFadein E 0.1 1]
+
+＠ガレス
+はぁ……はぁ……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 4]
+[charaFadein F 0.1 1]
+
+＠ハベトロット
+…………まいった。[r]思ったより……しんどい……ぜ……
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠パーシヴァル
+ガレス、ハベトロットはここで待機。
+[k]
+
+＠パーシヴァル
+村正、アルトリア、[r]ダ・ヴィンチ、[%1]。
+[k]
+
+＠パーシヴァル
+金庫城への侵入は我々で行います。[r]いいですね？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 13]
+[charaFadein G 0.1 1]
+
+＠千子村正
+いいも悪いもねえ、意地でもついてくぜ。[r]スプリガンには一撃くれてやりてえからな。
+[k]
+
+？1：[&ああ:うん]、あともうひとがんばり……！
+
+？！
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠ペペロン伯爵
+まあ元気。[r]苦労して侵入経路を用意しておいて良かった。
+[k]
+
+＠ペペロン伯爵
+金庫城に女王軍は駐在していないわ。[r]今なら中にいるスプリガンの衛士を倒して……
+[k]
+
+[charaFace H 8]
+
+＠ペペロン伯爵
+[line 3]待って。[r]金庫城の扉、開いてない？
+[k]
+
+＠ペペロン伯爵
+っていうか中に兵士の気配もない。[r][#鐘撞:かねつ]き堂までがら空きじゃないかしら、アレ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠パーシヴァル
+！
+[k]
+
+？1：罠……とか？
+
+？！
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 1]
+
+＠ペペロン伯爵
+……まあ、[#十中八九:じゅっちゅうはっく]そうね。[r]ただ、私たちに対しての罠じゃあない。
+[k]
+
+＠ペペロン伯爵
+これはアルトリアへの……[r]『予言の子』と女王モルガンへの罠。
+[k]
+
+＠ペペロン伯爵
+スプリガンのヤツ、ホント食えない。[r]自分から鐘を差し出してきたわ。
+[k]
+
+＠ペペロン伯爵
+ま、考えてみれば鐘を守ったところで[r]アイツに利益なんて何もないし。
+[k]
+
+＠ペペロン伯爵
+降伏のつもりなんでしょう。[r]それでいて女王には逆らわないスタンス。
+[k]
+
+＠ペペロン伯爵
+鐘を鳴らしたのは『予言の子』であって、[r]自分は関係ない、と言いたいのよ。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 9]
+[charaFadein D 0.1 1]
+
+＠パーシヴァル
+……予想外ですね。
+[k]
+
+＠パーシヴァル
+鐘を鳴らさないかぎりノリッジは落とせない、と[r]考えましたが……
+[k]
+
+＠パーシヴァル
+スプリガンは兵を撤退させています。[r]もう戦う意志はない、と示している。
+[k]
+
+＠パーシヴァル
+ノリッジ制圧だけならもう終わっている。[r]鐘を鳴らす必要はなくなってしまった。
+[k]
+
+＠パーシヴァル
+ですが……
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 8]
+[charaFadein H 0.1 1]
+
+＠ペペロン伯爵
+この先は『予言の子』の判断ってワケ。
+[k]
+
+＠ペペロン伯爵
+鳴らせばもう後戻りはできない。[r]本格的に戦争が始まる。
+[k]
+
+＠ペペロン伯爵
+……アイツの思惑に乗るのは癪だけど、[r]これ以上ない機会ではあるのよねぇ。
+[k]
+
+[messageOff]
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+[wt 1.0]
+[charaFace A 5]
+
+＠アルトリア
+……行きましょう。[r]鐘はともかく、中にはスプリガンがいます。
+[k]
+
+＠アルトリア
+『厄災』への対応といい、今回の事といい、[r]彼を野放しにはできません。
+[k]
+
+＠アルトリア
+『土の氏族』を率いる者として何を考えているのか……[r]それをはっきりさせなくては。
+[k]
+
+[messageOff]
+[se ad769]
+[wipeout leftToRight 0.7 1]
+[bgmStop BGM_EVENT_80 0.7]
+[wait wipe]
+
+
+[charaFadeout A 0.1]
+[scene 120000]
+[effect bit_talk_40_fs 0,-100]
+[wt 1.0]
+[seStop ad769 0.7]
+
+[wipein rightToLeft 0.7 1]
+[wait wipe]
+
+[wt 1.0]
+
+[charaTalk I]
+[charaFace I 14]
+[charaFadein I 0.1 1]
+
+＠ダ・ヴィンチ
+スプリガンどころか兵士もいない。[r]あっさり[#鐘撞:かねつ]き堂まで上がって来られたね。
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠千子村正
+……[#厭:いや]な寒気は感じるがな。[r]こりゃ何かいるぞ。気をつけな。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 1.0]
+
+[cueSe SE_21 21_ade582]
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.4 1]
+[wt 0.4]
+[bgm BGM_EVENT_24 0.1]
+
+＠？？？
+オオ……[r]オオ……オオオオオ……
+[k]
+
+＠？？？
+キャップレス……キャップレス……[r]どこにいる……キャップレス……
+[k]
+
+＠？？？
+楽園の匂いがする……アヴァロンの音がする……[r]そうか……ついに、やって来たのだな……
+[k]
+
+[charaFadeout J 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 15]
+[charaFadein D 0.1 1]
+
+＠パーシヴァル
+！　天井に魔力が収束していきます！[r]この濃度は……[#妖精亡主:ナ イ ト コ ー ル]！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk J]
+[charaFace J 0]
+[charaFadein J 0.1 1]
+
+＠妖精亡主
+……我らを救うもの……[r]……ブリテンを[#解:ほど]くもの……
+[k]
+
+＠妖精亡主
+オオ……死した我が身が呪わしい……[r]『土の氏族』は、よろこんで魂を差し出そう……
+[k]
+
+＠妖精亡主
+……そう。[r]　　おまえの、その忌まわしい血肉と引き換えに！
+[k]
+
+[messageOff]
+[se ad85]
+[seStop ad85 0.7]
+[effect bit_talk_41_fs]
+[charaMoveScale J 1.5 0.8]
+[charaMove J 0,70 0.8]
+[wt 0.2]
+
+
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_24 0.4]
+[wait fade]
+[soundStopAll]
+[end]

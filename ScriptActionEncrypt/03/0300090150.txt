@@ -1,0 +1,893 @@
+
+＄03-00-09-01-5-0
+
+
+[soundStopAll]
+[enableFullScreen]
+[charaSet A 5045000 1 アルトリア]
+[charaSet B 1098209700 1 書記官メルディック]
+[charaSet C 1098213600 1 モルガン]
+[charaSet D 1098124210 1 ベリル]
+[charaSet E 1098124500 1 ダ・ヴィンチ]
+[charaSet F 1098209200 1 玉座に集まった妖精_牙]
+[charaSet G 1098209300 1 玉座に集まった妖精_土]
+[charaSet H 1098209710 1 モルガン兵]
+[charaSet I 1098209400 1 玉座に集まった妖精_風]
+[charaFilter F silhouette 00000080]
+[charaFilter G silhouette 00000080]
+[charaFilter I silhouette 00000080]
+
+[charaSet N 98115000 1 エフェクト用]
+
+[scene 10000]
+
+[fadein black 1.0]
+[wait fade]
+
+[se ad311]
+[wt 2.0]
+[seStop ad311]
+
+[se ad832]
+[effect bit_talk_door_open_fs]
+[scene 10001]
+[wt 1.0]
+
+[se ad578]
+[wt 2.5]
+[seStop ad578 1.0]
+[wt 6.5]
+[scene 118700 2.0]
+[wt 3.0]
+
+
+？1：（１時間近く、階段を上らされたけど[line 3]）
+？2：（ここが、キャメロットの天守……女王の玉座……！）
+
+？！
+
+[charaTalk A]
+[charaFace A 0]
+[charaFadein A 0.1 1]
+
+＠アルトリア
+………………。
+[k]
+
+[messageOff]
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaDepth B 5]
+[charaDepth H 4]
+
+[cueSe SE_21 21_ad1119]
+
+[charaFace B 0]
+[charaFace H 0]
+[charaFadeinFSR B 0.1 2]
+[charaFadeinFSL H 0.1 0]
+[wt 0.2]
+[seStop 21_ad1119 0.2]
+[wt 0.8]
+[charaTalk on]
+[bgm BGM_EVENT_143 0.1]
+
+＠書記官メルディック
+平伏せよ。[r]献上せよ。
+[k]
+
+＠書記官メルディック
+[#礼拝:れいはい]せよ。[r]従属せよ。
+[k]
+
+＠書記官メルディック
+玉座に参じた使者は息を止めよ。[r]30の大使、100の官司は口を閉じよ。
+[k]
+
+＠書記官メルディック
+[#疆界:きょうかい]を拡げる王。[r]妖精國を築きし王。
+[k]
+
+＠書記官メルディック
+モルガン女王陛下の御前である。[r]モルガン女王陛下の威光である。
+[k]
+
+＠書記官メルディック
+『予言の子』『異邦の魔術師』は心得よ。
+[k]
+
+＠書記官メルディック
+これは女王陛下の[#恩寵:おんちょう]である。[r]これは女王陛下の恩赦である。
+[k]
+
+[messageOff]
+[charaFadeout B 0.1]
+[charaFadeout H 0.1]
+[wt 0.1]
+[charaTalk on]
+
+[se ade422]
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.4 1]
+[wt 0.4]
+[seStop ade422]
+
+＠モルガン
+[line 3]ご苦労。[r]みな、呼びもしないというのに、よく集まった。
+[k]
+
+＠モルガン
+大使、官司は一切の発言を禁じる。
+[k]
+
+＠モルガン
+この場で言葉を交える資格のある者は[r]私と、そこな来客と、
+[k]
+
+[messageOff]
+[charaTalk depthOff]
+[charaDepth D 1]
+[charaDepth C 2]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.2 -200,0]
+[wt 0.2]
+
+＠ベリル
+このオレ、女王の夫であるベリル・ガットだけだ。[r]すまないねぇ、上級妖精のお歴々。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[se ad4]
+[seVolume ad4 0 0]
+[seVolume ad4 1.0 1.0]
+[wt 1.5]
+[seStop ad4 2.5]
+
+[charaTalk E]
+[charaFace E 22]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+（ベリル・ガット……！[r]　やっぱりキャメロットにいた……！）
+[k]
+
+＠ダ・ヴィンチ
+（しかも夫！　モルガンの夫だって……！？）
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 6]
+[charaFace C 0]
+[charaFadein D 0.1 -200,0]
+[charaFadein C 0.1 1]
+
+＠ベリル
+よう、オリュンポス以来だな後輩！[r]ん？　なんだいその顔は。
+[k]
+
+[charaFace D 3]
+
+＠ベリル
+おいおい、オレがモルガンの[#いい男]ってコト、[r]マシュに聞いてなかったのかよ！
+[k]
+
+？1：おまえがここにいる、というコトは……
+？2：女王モルガンは、まさか……
+
+？！
+
+[charaFace D 7]
+
+＠ベリル
+だよなあ？　マスターであるなら[r]そう思うよなあ、[%1]？
+[k]
+
+＠ベリル
+ああ、白状するぜ。[r]何を隠そう、オレがモルガンのマスター。
+[k]
+
+＠ベリル
+妖精國を支配する女王のパートナー、ってヤツだ。
+[k]
+
+＠モルガン
+[line 3]。
+[k]
+
+？1：いや、それはおかしい！
+
+[charaFace D 3]
+
+＠ベリル
+おかしかないさ、事実だって！
+[k]
+
+＠ベリル
+いやあ、逆玉すぎて[r]オレもまだ実感湧かないんだけどさぁ！
+[k]
+
+？2：（……女王の前だ、[#迂闊:うかつ]な発言はできない……）
+
+＠モルガン
+………………。
+[k]
+
+？！
+
+＠モルガン
+[line 3]アルトリア。[r]許す。前に出よ。顔をあげよ。
+[k]
+
+[charaFadeout D 0.1]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 10]
+[charaFadein A 0.1 1]
+
+＠アルトリア
+は、はい！
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠モルガン
+…………なるほど。『予言の子』か。[r]確かに本物のようだ。
+[k]
+
+＠モルガン
+そして、そちらが『異邦の魔術師』。
+[k]
+
+＠モルガン
+汎人類史を取り戻そうと躍起になっている、[r]カルデアのマスターか。
+[k]
+
+？1：…………
+？2：……はい。その通りです
+
+？！
+
+＠モルガン
+ノリッジでの働きを認める。[r]余分な手間ではあるが、よくぞ厄災を[#退:しりぞ]けた。
+[k]
+
+＠モルガン
+褒美を取らす。[r]本来であれば我が妖精國の貨幣で報いるところだが……
+[k]
+
+＠モルガン
+おまえたちの魔力資源は魔素を量子に見立てた[r]空間魔力占有値……[#ＱＰ:クォンタム・ピース]、だったか？
+[k]
+
+＠モルガン
+１億もあれば充分であろう。[r]もっていくがいい。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 21]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+そんなに！？[r]あ、いや、ＱＰの造幣所でもあるの、ここ！？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠モルガン
+あるものか。おまえたちの魔術体系を見て取り、[r]錬成してやるだけだ。
+[k]
+
+＠モルガン
+私からの話は終わりだ。[r]他に何もなければ、接見はここまでになる。
+[k]
+
+＠モルガン
+アルトリア。[%1]。[r]この女王モルガンに投げかける問いはあるか？
+[k]
+
+＠モルガン
+心して口にするがいい。[r]内容次第では、賓客としての扱いは取り下げる。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 26]
+[charaFadein A 0.1 1]
+
+＠アルトリア
+…………！
+[k]
+
+？1：（アルトリア、さすがに萎縮してるな……）
+？2：（ここは、自分が先に言わなくちゃ……！）
+
+？！
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠モルガン
+そちらが先か。[r]よい。命知らずとは笑わぬ。
+[k]
+
+＠モルガン
+五つの異聞帯を越え、我が前に立った者よ。[r]望みを語るがいい。
+[k]
+
+？1：カルデアは白紙化地球を解決するのが目的だ
+
+？！
+
+＠モルガン
+ああ、ベリル・ガットから聞いている。[r]外の世界の状況も分かっている。
+[k]
+
+？1：その前に、この異聞帯から異常が検出された
+
+？！
+
+＠モルガン
+ほう。それはどのような？
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 25]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+『崩落』という未来観測結果だ。[r]エインセルの予言と同じものと思ってくれればいい。
+[k]
+
+＠ダ・ヴィンチ
+ブリテンから拡がる『崩落』が惑星全土に[#伝播:でんぱ]し、[r]地球は崩壊するとのことだ。
+[k]
+
+＠ダ・ヴィンチ
+その理由、理屈はまったく分からないけどね。
+[k]
+
+＠ダ・ヴィンチ
+我々カルデアはこの崩落現象を解明、解決するため、[r]あなたの妖精國に上陸した。
+[k]
+
+＠ダ・ヴィンチ
+また、空想樹が燃え尽きている[r]この異聞帯に敵対する意図はない。
+[k]
+
+＠ダ・ヴィンチ
+我々の目的はあくまで『世界の崩落』を止める事だ。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠モルガン
+なるほど。侵略ではなく救助にきたと。[r]用件はそれだけか？
+[k]
+
+？1：……『異星の神』に対抗できる、神造兵装を手に入れたい
+
+？！
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 24]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+そう。あなたがオリュンポスに向けて放った[r]超抜級の大魔術、聖槍ロンゴミニアド。
+[k]
+
+＠ダ・ヴィンチ
+この魔術を可能とする礼装、あるいは魔術理論を、[r]あなたに提供してもらいたい。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[se ad4]
+[seVolume ad4 0 0]
+[seVolume ad4 1.0 1.0]
+[wt 1.5]
+[seStop ad4 2.5]
+
+[charaTalk off]
+[charaFace F 0]
+[charaFace G 0]
+[charaFace I 0]
+[charaFadeinFSR F 0.1 300,0]
+[charaFadeinFSL G 0.1 -300,0]
+[charaFadein I 0.1 1]
+
+＠玉座に集まった妖精たち
+（オリュンポス……イセイノカミ？[r]　なにを言っているのだ、あのよそ者は……？）
+[k]
+
+＠玉座に集まった妖精たち
+（いや、命知らずにも程がある！[r]　こともあろうに、女王陛下に“提供しろ”とは！）
+[k]
+
+[charaFadeout F 0.1]
+[charaFadeout G 0.1]
+[charaFadeout I 0.1]
+[wt 0.1]
+[charaTalk on]
+
+[charaTalk C]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+
+＠モルガン
+[line 3]フッ。[r]確かに、おまえたちが望む[#武器:も　の]を、私は知っている。
+[k]
+
+＠モルガン
+ブリテンを救いに来た、という発言も[r]虚言ではないと認めよう。
+[k]
+
+＠モルガン
+その上で断じる。[r][#おまえたち汎人類史は]、[#この上なく無様に滅びよ]。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+[wt 1.2]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+？1：！
+
+？！
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠モルガン
+外の世界……[r]白紙化した地球へと[#伝播:でんぱ]する“崩落”とは、
+[k]
+
+＠モルガン
+これより始める我が領土の拡大に他ならない。[r]おまえたちの歴史を否定するのは、この私だ。
+[k]
+
+＠モルガン
+私はおまえたちの敵である。[r]であれば、神造兵装を渡す道理もない。
+[k]
+
+＠モルガン
+[%1]。[r]そして、[#驕:おご]りから生まれた[#嬰児:みどりご]よ。
+[k]
+
+＠モルガン
+おまえたちの世界を救いたければ、私を倒せ。[r]それ以外、汎人類史を救う[#術:すべ]はない。
+[k]
+
+[messageOff]
+[charaTalk D]
+[charaFace D 3]
+[charaFadein D 0.2 -200,0]
+[wt 1.2]
+
+[charaFadeout C 0.1]
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 24]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+……[#宣戦布告:せんせんふこく]、と取っていいのかな、女王モルガン。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠モルガン
+そう言った。私と汎人類史は分かり合えない。[r]欲しければ、力で奪え。
+[k]
+
+？1：（……話し合えたのに……戦うしかないなんて……）
+
+？！
+
+＠モルガン
+それはおまえも同じだ、アルトリア。[r]忌まわしいエインセルの『予言の子』。
+[k]
+
+＠モルガン
+この年の終わり[line 3]『大厄災』によって[r]ブリテンに[#棲:す]む妖精は[#また]滅びるだろう。
+[k]
+
+＠モルガン
+だが、妖精など何度死のうが[r]懲りずに生まれるもの。
+[k]
+
+＠モルガン
+ブリテン全土が炎に包まれようと、[r]我が城が健在であれば、妖精國は何度でも[#蘇:よみがえ]る。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 27]
+[charaFadein A 0.1 1]
+
+＠アルトリア
+女王陛下は……ブリテンの民ではなく、[r]ご自分の妖精國を守る、というのですか？
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 13]
+[charaFadein C 0.1 1]
+
+＠モルガン
+そうだ。私は妖精どもを救わぬ。[r]守るのは[#己:おの]が国のみ。
+[k]
+
+＠モルガン
+この玉座に貯蔵された魔力量であれば、[r]『大厄災』など恐るるに足りぬ。
+[k]
+
+＠モルガン
+[line 3]そして。[r]この玉座を[#御:ぎょ]しえるのは、選ばれた妖精のみ。
+[k]
+
+[charaFace C 10]
+
+＠モルガン
+おまえは選ばれた。[r]他の妖精とも、そこの異邦人とも違う。
+[k]
+
+＠モルガン
+反逆者でもなく、侵略者でもない。[r]選定の杖に選ばれた調停者だ。
+[k]
+
+＠モルガン
+私の招待に応じた事で、おまえは真実、[r]『予言の子』である事を証明した。
+[k]
+
+＠モルガン
+[line 3]楽園から[#遣:つか]わされた妖精よ。[r]おまえであれば、私を[#糾:ただ]す正当性はある。
+[k]
+
+＠モルガン
+私と戦い、多くの血を流すとしても、[r]おまえには何の罪も生じない。
+[k]
+
+[charaFace C 11]
+
+＠モルガン
+ブリテンを救いたいのなら、[r]私を倒し、玉座を奪え。
+[k]
+
+＠モルガン
+あの愚かな予言を果たしてみせるがいい。[r]おまえは誰よりも、[#それしかない]と知っている筈だ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk A]
+[charaFace A 4]
+[charaFadein A 0.1 1]
+
+＠アルトリア
+………………。
+[k]
+
+[charaFadeout A 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠モルガン
+話は終わりのようだな。[r]互いの立場を理解しあえたようで、なによりだ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 1]
+[charaFadein D 0.2 1]
+
+＠ベリル
+だよなー！　話し合いで仲良しこよし、[r]血も流さずに解決なんて興ざめもいいところだ！
+[k]
+
+[charaFace D 7]
+[bgm BGM_EVENT_143 1.0 0]
+
+＠ベリル
+さて。人間の善意とか理性とか、[r]都合のいいものを信じてやってきたご一行。
+[k]
+
+[charaFace D 8]
+
+＠ベリル
+交渉は決裂したんだ。[r]無事に帰れるとは思ってないよな？
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+！　ああ、もちろん！
+[k]
+
+＠ダ・ヴィンチ
+[%1][&君:ちゃん]、アルトリア、[r]私の後ろに！　こんな事もあろうかと、
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[bgm BGM_EVENT_143 1.0 1.0]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠モルガン
+黙れ。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 8]
+[charaFadein D 0.1 1]
+
+[se ad875]
+[se ad14]
+[seVolume ad14 0 0.4]
+[shake 0.05 0 2 1.2]
+[charaPut N 1]
+[charaEffect N bit_talk_pressure_fs]
+[wt 0.3]
+[charaFace D 10]
+[charaMove D 0,-10 0.3]
+[wt 0.3]
+[se ad812]
+[wt 1.5]
+
+
+＠ベリル
+！？　！！！！　、！？[r]（何事か叫んでいるベリル）
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut N 2000,2000]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠モルガン
+キャメロットを出るまで、[r]その者たちは私が招いた賓客だ。
+[k]
+
+＠モルガン
+指先ひとつ、[#矜持:きょうじ]ひとつ、傷つける事は許さぬ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaPut N 1]
+[charaTalk D]
+[charaFace D 10]
+[charaFadein D 0.1 1]
+
+＠ベリル
+！！！！　！！　、！！！！　……！[r]（そりゃないぜ！？　と叫んでいるベリル）
+[k]
+
+[seStop ad875 1.0]
+[seStop ad14 1.0]
+[charaFadeout D 0.1]
+[wt 0.1]
+[charaPut N 2000,2000]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠モルガン
+我が夫の無礼、[r]許すがよい[%1]、嬰児。
+[k]
+
+＠モルガン
+ティンタジェルの娘。[r]おまえがアルトリアでいるうちは、我が敵とは認めぬ。
+[k]
+
+＠モルガン
+巡礼の鐘を鳴らさぬうちは、[r]諸侯にはおまえたちへの攻撃を禁じよう。
+[k]
+
+＠モルガン
+だが[line 3]
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 25]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+……巡礼の鐘を鳴らして、[r]『予言の子』として立ち上がったのなら……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 0]
+[charaFadein C 0.1 1]
+
+＠モルガン
+そうだ。[r]カルデアともども私の敵として認め、兵を挙げる。
+[k]
+
+＠モルガン
+よく考える事だ。[r]勝算のない戦いに身を投じるか否かを。
+[k]
+
+＠モルガン
+では下がるがよい。[r]これ以上、交わす言葉はない筈だ。
+[k]
+
+？1：…………。
+
+？！
+
+＠モルガン
+……何か？
+[k]
+
+？1：……マシュを、どこに連れて行った[&んだ:んですか]
+
+？！
+
+＠モルガン
+[line 3]マシュ？[r]なんだ、それは。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 24]
+[charaFadein E 0.1 1]
+
+＠ダ・ヴィンチ
+あなたが厄災を飛ばすために使った魔術……[r]暗雲の収束に飲まれた、私たちの仲間だ。
+[k]
+
+＠ダ・ヴィンチ
+盾の騎士ギャラハッドの霊基を持つ[r]デミ・サーヴァント。
+[k]
+
+＠ダ・ヴィンチ
+妖精騎士に円卓の名を与えたあなたなら、[r]ギャラハッドの名も分かるはずだが。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk C]
+[charaFace C 4]
+[charaFadein C 0.1 1]
+
+＠モルガン
+[line 9][wt 1.0]そうか。[r]あれは、そういう事だったのか。
+[k]
+
+＠モルガン
+盾の騎士は、確かに私が捕らえている。
+[k]
+
+？1：どこに！？
+
+？！
+
+[charaFace C 0]
+
+＠モルガン
+貴様たちに答える義理はない。[r]私の戦利品だからな。
+[k]
+
+＠モルガン
+だが無事は保証しよう。誰であれ[line 3][r]私でさえ、彼女を傷つける事はできぬと。
+[k]
+
+[messageOff]
+[charaFadeout C 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 23]
+[charaFadein E 0.1 1]
+[wt 1.0]
+
+？1：……？
+
+？！
+
+
+[messageOff]
+[fadeout black 2.0]
+[bgmStop BGM_EVENT_143 2.0]
+[wait fade]
+[wt 0.5]
+[soundStopAll]
+[end]

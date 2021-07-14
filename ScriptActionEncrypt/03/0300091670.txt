@@ -1,0 +1,208 @@
+
+＄03-00-09-16-7-0
+
+
+[bgmStop BGM_MAP_73 0.3]
+[bgmStop BGM_MAP_74 0.3]
+[bgmStop BGM_MAP_75 0.3]
+[bgmStop BGM_MAP_79 0.3]
+[wt 0.3]
+
+[enableFullScreen]
+
+[charaSet A 1049000 1 村正]
+[charaSet B 1098124500 1 ダ・ヴィンチ]
+[charaSet C 1098210400 1 モース人間]
+[charaSet D 1098231510 1 マシュ]
+[charaSet E 5045001 1 アルトリア]
+[charaSet F 2043001 1 バーヴァン・シー]
+[charaSet G 2043001 1 バーヴァン・シーs]
+[charaFilter G silhouette 00000080]
+
+[imageSet H back10000 1]
+[charaScale H 1.05]
+
+[scene 117502]
+[fadein black 1.0]
+[wait fade]
+
+[bgm BGM_EVENT_80 0.1]
+
+[wt 0.7]
+[se ad1048]
+[seVolume ad1048 0 0.2]
+[wt 2.0]
+[seStop ad1048 1.0]
+
+[charaTalk D]
+[charaFace D 14]
+[charaFadein D 0.1 1]
+
+＠マシュ
+マスター、こちらへ！[r]いったん馬車から離れましょう！
+[k]
+
+[charaFace D 15]
+
+＠マシュ
+あの敵性個体ですが……おそらく……[r]モースの呪いに侵された、生きた人間です……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 3]
+[charaDepth H 1]
+
+[charaPut H 1]
+[charaFadeTime H 0.2 0.5]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadein E 0.1 1]
+
+＠アルトリア
+（モースの呪いが人間に……？[r]　そんなの、自然ではあり得な[line 3]）[wt 0.8][cueSe SE_21 21_ad1081]
+[k]
+
+[charaFadeout H 0.2]
+[charaFace E 2]
+[bgmStop BGM_EVENT_80 1.0]
+
+＠アルトリア
+危ない！
+[k]
+
+[messageOff]
+[charaFadeout E 0.2]
+[charaMoveFSL E -64,0 0.2]
+[se ad73]
+[seVolume ad73 0 0.7]
+[seStop ad73 1.5]
+[wt 0.4]
+
+[charaTalk E]
+[charaFace E 5]
+[charaFadeinFSR E 0.2 16,0]
+[charaMove E 0,0 0.2]
+[wt 0.2]
+[se ad171]
+[effect bit_talk_blood_nail]
+[wt 0.1]
+[fowardEffect bit_talk_14]
+[se ad32]
+[charaShake E 0.04 3 3 0.4]
+[wt 0.3]
+[effectDestroy bit_talk_blood_nail]
+[wt 1.1]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+[charaTalk off]
+[charaDepth G 2]
+[charaDepth F 1]
+
+[charaFace G 0]
+[charaFadein G 0.1 1]
+[wt 0.1]
+[charaFace F 22]
+[charaFadein F 0 1]
+[wt 1.0]
+[charaFadeout G 0.4]
+[wt 1.4]
+
+[charaTalk on]
+[bgm BGM_BATTLE_167 0.1]
+
+＠バーヴァン・シー
+あはは……すごい、すごぉーい！[r]アイツ、また私の魔術ふせいじゃったぁ……！
+[k]
+
+＠バーヴァン・シー
+ねえ、どうやったのぅ……？[r]いまの、どうしてわかったのぅ？
+[k]
+
+＠バーヴァン・シー
+せっかくゴミ人間どもバラまいたのにさぁ……[r]なんでオマエたちだけ安全圏に逃げてんのぅ……？
+[k]
+
+？1：妖精騎士トリスタン……！
+
+[charaFace F 1]
+
+？2：バーヴァン・シー……！
+
+[charaFace F 14]
+
+＠バーヴァン・シー
+きやすく口にしないで……！[r]私のせいじゃない、私のせいじゃないの……！
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk D]
+[charaFace D 7]
+[charaFadein D 0.1 1]
+
+＠マシュ
+あなたは[line 3]！[r]妖精騎士トリスタン……！
+[k]
+
+[charaFadeout D 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 1]
+[charaFadein F 0.1 1]
+
+？！
+
+
+＠バーヴァン・シー
+そう、そうなの！　私がお母様の娘！[r]妖精國でただひとり、お母様の魔術を引き継ぐ妖精！
+[k]
+
+＠バーヴァン・シー
+だから[line 3]
+[k]
+
+[charaFace F 14]
+
+＠バーヴァン・シー
+ここで死んどけ、クソガキども！[r][#妖精:オマエ]たちなんかに、私の居場所を奪わせるかぁ！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[wait fade]
+
+[input selectBranch]
+[seStop ad32 0.4]
+[seStop ad73 0.4]
+[seStop ad171 0.4]
+[seStop ad1048 0.4]
+[cueSeStop 21_ad1081 0.4]
+
+[bgmStop BGM_EVENT_80 0.4]
+
+[label selectBranch]
+
+[wt 0.5]
+
+[branchMaterial lblMaterial]
+
+[bgm BGM_BATTLE_167 0.1]
+
+[branch lblBranchMaterialEnd]
+
+[label lblMaterial]
+
+[bgmStop BGM_BATTLE_167 0.5]
+[wt 0.5]
+
+[label lblBranchMaterialEnd]
+
+[end]

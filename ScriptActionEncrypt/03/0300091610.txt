@@ -1,0 +1,582 @@
+
+＄03-00-09-16-1-0
+
+
+
+
+[soundStopAll]
+[enableFullScreen]
+
+[charaSet A 5045001 1 アルトリア]
+[charaSet B 5045000 1 予言の歌]
+[charaSet C 1098213600 1 モルガン]
+[charaSet D 1098215200 1 モルガン2]
+[charaSet E 4031001 1 レッドラ・ビット]
+[charaSet F 1098231510 1 マシュ]
+[charaSet G 1098124500 1 ダ・ヴィンチ]
+[charaSet H 5021001 1 賢人グリム]
+[charaSet I 1049000 1 千子村正]
+[imageSet J back10000 1]
+[charaScale J 1.01]
+
+[imageSet K back10001 1]
+[charaScale K 1.01]
+
+[sceneSet L 115100 1]
+[charaScale L 1.01]
+
+[charaSet N 98115000 1 エフェクト用]
+[charaScale N 1.1]
+
+[charaPut N 2000,2500]
+[charaEffect N bit_talk_noise_gr]
+
+[scene 10000]
+
+[se ad556]
+[seVolume ad556 0 0]
+[wt 0.1]
+
+[seVolume ad556 1.5 0.8]
+[fadein black 1.5]
+[wait fade]
+
+[scene 123102 2.5]
+[wt 2.9]
+
+[seStop ad556 2.0]
+[wt 1.5]
+
+[cueSe SE_21 21_ad1109]
+[seVolume 21_ad1109 0 0.6]
+[wt 2.5]
+[seStop 21_ad1109 2.0]
+[wt 2.0]
+
+[bgm BGM_EVENT_11 0.1]
+
+
+＠アルトリア
+鐘の[#音:ね]が聞こえる。[r]……骨の[#音:ね]が聞こえる。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+
+＠予言の歌
+“[#港:みなと]は[#渚:なぎさ]に戻るけれど、厄災は遙かな空へ”
+[k]
+
+
+＠アルトリア
+妖精たちの謝罪の証。[r]罪を受け入れる魂の[#音:おと]。
+[k]
+
+
+[messageOff]
+[wt 1.0]
+
+＠予言の歌
+“丸い砦はもえつきる。水の鐘はあらわれる”
+[k]
+
+
+＠アルトリア
+[line 3]その全てが鳴った時、
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠予言の歌
+“罪を認めた罪人に、落とされるのは首切り刃”
+[k]
+
+
+＠アルトリア
+[line 3]楽園の妖精は、
+[k]
+
+[messageOff]
+[wt 1.0]
+
+＠予言の歌
+“役目を終えた『予言の子』、元いた場所にさようなら”
+[k]
+
+
+[messageOff]
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 1.5 0.8]
+[effect bit_talk_storm_atc]
+[se ad664]
+[seVolume ad664 0 0]
+[seVolume ad664 0.7 0.7]
+[wt 3.0]
+[seStop ad556 2.0]
+[seStop ad664 2.0]
+[fadeout black 1.0]
+[wait fade]
+[effectDestroy bit_talk_storm_atc]
+[cameraFilter gray]
+[scene 118700]
+[wt 2.0]
+[fadein black 1.5]
+[wait fade]
+
+[charaTalk D]
+[charaFace D 25]
+[charaFadein D 0.4 1]
+[wt 0.5]
+
+[bgm BGM_EVENT_11 0.1]
+
+＠D：モルガン
+そうだ。私は妖精どもを救わぬ。[r]守るのは[#己:おの]が国のみ。
+[k]
+
+＠
+わ[charaTalk B]たしは[#妖精:か れ ら]を救います。[r]与えられた使命を守るのです。
+[k]
+
+＠D：モルガン
+この玉座に貯蔵された魔力量であれば、[r]『大厄災』など恐るるに足りぬ。
+[k]
+
+＠D：モルガン
+[line 3]そして。[r]この玉座を[#御:ぎょ]しえるのは、選ばれた妖精のみ。
+[k]
+
+[charaTalk B]
+
+＠
+『[charaTalk B]巡礼』を終えた証。[r]あの玉座こそ、ブリテンを維持する要。
+[k]
+
+[charaTalk B]
+
+＠
+楽[charaTalk B]園の[#楔:くさび]、アヴァロン・ル・フェ。
+[k]
+
+[messageOff]
+[charaTalk off]
+[charaDepth N 3]
+[charaDepth D 2]
+[charaDepth C 1]
+
+[se ad539]
+[se ad31]
+[charaPut N 0,30]
+[wt 0.2]
+
+
+[charaFadeout D 0.1]
+[charaFace C 10]
+[charaFadein C 0.1 1]
+[wt 0.1]
+
+[seStop ad539 0.1]
+[seStop ad31 0.1]
+[charaPut N 2000,2500]
+[charaEffectStop N bit_talk_noise_gr]
+
+[wt 0.7]
+
+[charaTalk on]
+
+＠モルガン
+おまえは選ばれた。[r]他の妖精とも、そこの異邦人とも違う。
+[k]
+
+＠モルガン
+反逆者でもなく、侵略者でもない。[r]選定の杖に選ばれた調停者だ。
+[k]
+
+＠モルガン
+おまえであれば私を[#倒]す正当性はある。[r]私と戦い、多くの血を流す事に、何の罪も生じない。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠
+わたしは選ばれた。[r]ブリテンの妖精とも、汎人類史の[#騎士王:わ　た　し]とも違う。
+[k]
+
+＠
+反逆者でもないし侵略者でもない。[r]戦いを起こし、妖精たちを殺す事に、何の罪も生じない。
+[k]
+
+[charaTalk C]
+[charaFace C 11]
+[charaFadein C 0.1 1]
+
+＠モルガン
+ブリテンを救いたいのなら、[r]私を倒し、玉座を奪え。
+[k]
+
+＠モルガン
+あの愚かな予言を果たしてみせるがいい。[r]おまえは誰よりも、[#それしかない]と知っている筈だ。
+[k]
+
+[charaFadeout C 0.1]
+[wt 0.1]
+
+＠
+そう。ブリテンを救うにはそれしかない。[r]使命を放棄した[#楽園の妖精:モ　　ル　　ガ　　ン]を倒すしかない。
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_11 2.0]
+[fadeout black 2.0]
+[wait fade]
+[wt 1.5]
+
+＠アルトリア
+……でもその後は？
+[k]
+
+＠アルトリア
+やりたくもないことをやって、[r]のぞまれてもいないことをやったあと。
+[k]
+
+＠アルトリア
+[#楽園の妖精:わ　　 た　　 し]は、[r]何処に帰ればいいのでしょう……？
+[k]
+
+[messageOff]
+[cameraFilter]
+[scene 123102]
+[se ad556]
+[seVolume ad556 0 0]
+[seVolume ad556 1.5 0.8]
+[fadein black 1.5]
+[wait fade]
+
+[wt 2.5]
+
+[seStop ad556 2.5]
+[fadeout black 1.5]
+[wait fade]
+
+[scene 122401]
+[wt 2.0]
+[fadein black 1.0]
+[wait fade]
+
+[wt 1.5]
+[scene 122400 1.0]
+[wt 3.0]
+
+[fadeout black 1.0]
+[wait fade]
+[scene 117502]
+[wt 1.0]
+[fadein black 1.0]
+[wait fade]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+[bgm BGM_EVENT_7 0.1]
+
+＠レッドラ・ビット
+皆さんこんにちは！[r]思いのほか早い合流、なによりです！
+[k]
+
+？1：街道の真ん中には
+？2：ベンケイのようにレッドラ・ビットが待っていた
+
+？！
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 6]
+[charaFadein F 0.1 1]
+
+＠マシュ
+！？　先輩、ダ・ヴィンチちゃん！[r]この赤兎馬さんにそっくりな方はいったい！？
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ダ・ヴィンチ
+ああ、彼はレッドラ・ビット。妖精國の妖精だ。[r]今は我々の頼れる仲間だ。噛んだりしないから安心して。
+[k]
+
+[messageOff]
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 2]
+[charaFadein E 0.1 1]
+[wt 1.0]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠マシュ
+そ、そうでしたか。[r]はじめまして、レッドラ・ビットさん。
+[k]
+
+[charaFace F 13]
+
+＠マシュ
+マシュ・キリエライトと申します。[r]今後ともよろしくお願いします。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 1]
+[charaFadein E 0.1 1]
+
+＠レッドラ・ビット
+こちらこそ、はにかむレディ。[r]丁寧なご挨拶、美味しいです。
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk G]
+[charaFace G 0]
+[charaFadein G 0.1 1]
+
+＠ダ・ヴィンチ
+でもキミ、エディンバラで[r]待ってるんじゃなかったっけ？
+[k]
+
+[charaFadeout G 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠レッドラ・ビット
+そうなのですが、私、走っていないと[r]落ち着かないたちなので。
+[k]
+
+[charaFace E 1]
+
+＠レッドラ・ビット
+灰の海岸の出口付近で待っていれば合流できるかな？[r]と、軽い気持ちでここまで。ははは。
+[k]
+
+＠レッドラ・ビット
+さあ荷車にお乗りください。[r][#女王都市:エ デ ィ ン バ ラ]まで快適な時間を約束しましょう！
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 1]
+[charaFadein H 0.1 1]
+
+＠賢人グリム
+そいつはいい、いいかげん歩き疲れてたところだ！[r]魔術師クラスになると足腰が弱っていけねえよな！
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠レッドラ・ビット
+む？　お待ちください。[r]そこの貴方。見ない顔ですが、どなたですか？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk H]
+[charaFace H 0]
+[charaFadein H 0.1 1]
+
+＠賢人グリム
+オレの名はグリム。[r][%1]の知り合いだ。よろしくな。
+[k]
+
+[charaFadeout H 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠レッドラ・ビット
+[%1]の知り合い……[r]ほら、なんでしたか。[#斑:はん]、斑[#蕁麻疹:じ ん ま し ん]の……
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk depthOff]
+[charaDepth E 2]
+[charaDepth F 1]
+[charaTalk F]
+[charaFace E 0]
+[charaFadeinFSL E 0.1 0]
+[charaFace F 13]
+[charaFadeinFSR F 0.1 2]
+
+＠マシュ
+汎人類史、ですか？
+[k]
+
+[charaFace E 1]
+
+＠レッドラ・ビット
+そうです、汎人類史。ありがとうマシュさん。[r][#巧:たく]みなお気遣い、夢中になってしまいそうです。
+[k]
+
+？1：マシュはちょっとこっちに来てね
+？2：あんまりレッドラを甘やかさないでね
+
+？！
+
+[charaFadeout E 0.1]
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk F]
+[charaFace F 3]
+[charaFadein F 0.1 1]
+
+＠マシュ
+は、はい。まだ皆さんの距離感を[r]把握していませんが、注意します。
+[k]
+
+[charaFadeout F 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠レッドラ・ビット
+汎人類史からの旧知の仲、というのであれば、[r]村正様とグリム様は同類、という事ですね？
+[k]
+
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk I]
+[charaFace I 12]
+[charaFadein I 0.1 1]
+
+＠千子村正
+[FFFFFF]？[-]　ああ、まあカテゴリー的にはな？[r]それがどうした？
+[k]
+
+[charaFadeout I 0.1]
+[wt 0.1]
+
+[charaTalk E]
+[charaFace E 0]
+[charaFadein E 0.1 1]
+
+＠レッドラ・ビット
+いえ。野生の直感でお二人はたいへん仲が良いと[r]見抜いていますので、意味の無い疑問なのですが……
+[k]
+
+[bgm BGM_EVENT_7 1.0 0]
+
+＠レッドラ・ビット
+村正様とグリム様。[r]戦ったらどちらが強いのかな、と。
+[k]
+
+[messageOff]
+[charaFadeout E 0.1]
+[wt 0.1]
+
+[charaTalk off]
+[charaTalk depthOff]
+[charaDepth H 4]
+[charaDepth I 3]
+[charaDepth K 1]
+[charaDepth L 2]
+
+[charaFace H 5]
+[charaFadeinFSL H 0.1 0]
+[charaFace I 13]
+[charaFadeinFSR I 0.1 2]
+[wt 0.1]
+[se bac40]
+[wt 0.1]
+
+[charaPut K 0,-200]
+[charaFadeTime K 0.2 0.8]
+[charaFadeTime L 0.2 0.6]
+[wt 0.4]
+[seStop ade346 1.0]
+[charaFadeout K 0.3]
+[charaFadeout L 0.3]
+[wt 1.5]
+
+[charaTalk on]
+[bgm BGM_EVENT_7 1.0 1.0]
+[charaFace I 19]
+
+＠千子村正
+なんだそりゃ、わかりきったコト聞きやがって！[r]そりゃあ当然[#儂:オレ]だろう！
+[k]
+
+[charaFace H 1]
+
+＠賢人グリム
+ああ、まったくだ！　バカらしくて話にならねえ！[r]十人中十人、グリムが上だって答えるぜ！
+[k]
+
+＠千子村正
+そうだよなぁ！　馬鹿がなんかほざいてらあ！[r]よしこっち来い、峰打ちで勘弁してやるよ！
+[k]
+
+＠賢人グリム
+いいねえ！　どうせナマクラだ、[#鈍器:ド ン キ]として使った方が[r]幾分マシってな！　分かってるじゃねえか！
+[k]
+
+[messageOff]
+[bgmStop BGM_EVENT_7 1.0]
+[charaTalk off]
+
+＠最強のふたり
+ははははははは！[r]はははははははははは！
+[k]
+
+[bgm BGM_EVENT_80 0.1]
+
+[charaFace H 5]
+[charaFace I 15]
+
+＠最強のふたり
+よぅし、いっちょブチのめすか！
+[k]
+
+
+[messageOff]
+[fadeout black 0.5]
+[bgmStop BGM_EVENT_80 0.4]
+[wait fade]
+[soundStopAll]
+[end]
